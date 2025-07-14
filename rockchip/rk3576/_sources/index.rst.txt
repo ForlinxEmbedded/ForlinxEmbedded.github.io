@@ -11,13 +11,13 @@
 RK3576 Manuals
 ================
 
-OK3576-C_Linux6.1.84_User's Manual_1.0
+Software Manual
 =======================================
 
 .. toctree::
-   :caption: Table of Contents
+   :caption: OK3576-C_Linux6.1.84
    :numbered:
-   :maxdepth: 1
+   :maxdepth: 2
 
    OK3576-C_Linux_use
 
