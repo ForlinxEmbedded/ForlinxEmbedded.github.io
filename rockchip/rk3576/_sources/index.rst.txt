@@ -16,7 +16,6 @@ Software Manual
 
 .. toctree::
    :caption: OK3576-C_Linux6.1.84
-   :numbered:
    :maxdepth: 2
 
    OK3576-C_Linux_use
@@ -26,7 +25,6 @@ Hardware Manual and Hardware Design Guide
 
 .. toctree::
    :caption: Hardware
-   :numbered:
    :maxdepth: 2
 
    OK3576-C_hardware
