@@ -3,7 +3,7 @@
 
    📌 To return to the **main Forlinx documentation site**, visit: 
      
-     `Forlinx Documentation Main Page <https://docs.forlinx.net/>`_
+     `Forlinx Documentation Main Page <https://forlinxembedded.github.io/>`_
 
 
 
@@ -21,12 +21,12 @@ OK3576-C_Linux6.1.84_User's Manual_1.0
 
    OK3576-C_Linux_use
 
-OK3576-C Hardware
-=======================================
+Hardware Manual and Hardware Design Guide
+==========================================
 
 .. toctree::
-   :caption: Table of Contents
+   :caption: Hardware
    :numbered:
-   :maxdepth: 1
+   :maxdepth: 2
 
    OK3576-C_hardware
