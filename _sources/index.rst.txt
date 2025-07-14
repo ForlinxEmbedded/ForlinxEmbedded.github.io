@@ -29,10 +29,10 @@ Allwinner Series
 Documentation Features
 -----------------------
 
-- Supports both Markdown and reStructuredText
-- Comprehensive BSP, driver, and software configuration details
-- Rich examples and development tool guides
-- Continuously updated with official technical support
+- Covers BSP setup, peripheral drivers, and system configuration in detail
+- Includes practical examples and development tool walkthroughs
+- Maintained by Forlinx engineers with regular updates and official support
+
 
 Contact Us
 -----------
