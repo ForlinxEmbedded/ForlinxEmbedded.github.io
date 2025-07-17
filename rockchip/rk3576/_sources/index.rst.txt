@@ -32,3 +32,22 @@ Hardware Manual and Hardware Design Guide
    :maxdepth: 2
 
    OK3576-C_hardware
+
+
+
+
+
+
+Contact Us
+-----------
+
+If you have any questions, please contact us at:
+
+- Email: support@forlinx.com
+- Website: https://www.forlinx.net
+
+----
+
+*Wish you smooth development and thank you for choosing Forlinx Embedded!*
+
+----
