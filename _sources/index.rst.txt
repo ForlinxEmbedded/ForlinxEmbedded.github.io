@@ -39,7 +39,8 @@ Contact Us
 
 If you have any questions, please contact us at:
 
-- Email: support@forlinx.com
+- Contact Sales: sales@forlinx.com
+- Technical Support: support@forlinx.com
 - Website: https://www.forlinx.net
 
 ----
