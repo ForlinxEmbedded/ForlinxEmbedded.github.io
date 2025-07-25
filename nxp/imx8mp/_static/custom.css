@@ -31,18 +31,6 @@
 }
 
 
-/* 保证 caption 自动换行 */
-.caption {
-  white-space: normal !important;
-  word-break: break-word;
-  line-height: 1.4;
-  margin-bottom: 0.5em;
-}
 
-/* 关键修复点：为 toctree-wrapper 增加 padding-top */
-.wy-menu .toctree-wrapper {
-  overflow: visible !important;
-  padding-top: 1.5em;  /* 增加上边距，避免被 caption 遮挡 */
-}
 
 
