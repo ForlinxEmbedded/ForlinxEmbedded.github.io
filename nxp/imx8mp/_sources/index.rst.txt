@@ -21,8 +21,8 @@ OKMX8MPQ-SMARC Manual
 
 
 .. toctree::
-   :caption: OKMX8MPQ-SMARC Manual
-   :maxdepth: 2
+   :caption: OKMX8MPQ-SMARC Hardware Manual
+   :maxdepth: 1
 
    OK-MX8MPQ-SMARC_Hardware_Manual
 
