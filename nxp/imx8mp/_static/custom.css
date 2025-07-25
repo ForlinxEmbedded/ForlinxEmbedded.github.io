@@ -31,8 +31,16 @@
 }
 
 
+/* 让 caption 正常换行 */
 .caption {
   white-space: normal !important;
   word-break: break-word;
   line-height: 1.4;
+  padding-bottom: 0.3em;
 }
+
+/* 让 toctree 区块自动撑开高度 */
+.wy-menu .toctree-wrapper {
+  overflow: visible !important;
+}
+
