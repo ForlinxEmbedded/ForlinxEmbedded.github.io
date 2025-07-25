@@ -15,21 +15,22 @@
 iMX8M Plus Manuals
 ==================
 
-Software Manual
-=================
+OKMX8MPQ-SMARC Manual
+=======================
 
 
-
-Hardware Manual and Hardware Design Guide
-==========================================
 
 .. toctree::
-   :caption: OK-MX8MPQ-SMARC_User's Hardware Manual_V1.0
-   :maxdepth: 1
+   :caption: OKMX8MPQ-SMARC Manual
+   :maxdepth: 2
 
    OK-MX8MPQ-SMARC_Hardware_Manual
 
 
+
+
+OKMX8MP-C Manual
+==========================================
 
 
 
