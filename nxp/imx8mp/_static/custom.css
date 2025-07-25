@@ -31,16 +31,18 @@
 }
 
 
-/* 让 caption 正常换行 */
+/* 保证 caption 自动换行 */
 .caption {
   white-space: normal !important;
   word-break: break-word;
   line-height: 1.4;
-  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
-/* 让 toctree 区块自动撑开高度 */
+/* 关键修复点：为 toctree-wrapper 增加 padding-top */
 .wy-menu .toctree-wrapper {
   overflow: visible !important;
+  padding-top: 1.5em;  /* 增加上边距，避免被 caption 遮挡 */
 }
+
 
