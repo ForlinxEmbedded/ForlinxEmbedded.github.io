@@ -7,7 +7,7 @@
 
    🔗 Official product overview: 
      
-     `RK3576 System on Module on forlinx.net <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
+     `FET-MX8MPQ-SMARC System on Module on forlinx.net <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
 
 
 
@@ -25,7 +25,7 @@ Hardware Manual and Hardware Design Guide
 
 .. toctree::
    :caption: OK-MX8MPQ-SMARC_User's Hardware Manual_V1.0
-   :maxdepth: 2
+   :maxdepth: 1
 
    OK-MX8MPQ-SMARC_Hardware_Manual
 
