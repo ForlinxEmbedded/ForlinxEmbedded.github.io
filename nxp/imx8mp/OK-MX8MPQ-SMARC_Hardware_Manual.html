@@ -6,12 +6,13 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>01_Overview &mdash; NXP IMX8MP Documentation  documentation</title>
+  <title>01_Overview &mdash; NXP IMX8MP SMARC Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=e1c0ea0a" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d5412799" />
 
   
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
@@ -19,7 +20,12 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="iMX8M Plus Manuals" href="index.html" />
+   
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,238 +48,238 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">01_Overview</a></li>
-<li><a class="reference internal" href="#som-function-description">1.1 SoM Function Description</a></li>
-<li><a class="reference internal" href="#i-mx8mp-series-processors">1.2 i.MX8MP Series Processors</a></li>
-<li><a class="reference internal" href="#fet-mx8mpq-smarc-description">02_FET-MX8MPQ-SMARC Description</a></li>
-<li><a class="reference internal" href="#som-appearance">2.1 SoM Appearance</a></li>
-<li><a class="reference internal" href="#technical-specifications">2.2 Technical Specifications</a></li>
-<li><a class="reference internal" href="#fet-mx8mpq-smarc-module-structure">2.3 FET-MX8MPQ-SMARC Module Structure</a></li>
-<li><a class="reference internal" href="#fet-mx8mpq-smarc-block-diagram">2.4 FET-MX8MPQ-SMARC Block Diagram</a></li>
-<li><a class="reference internal" href="#fet-mx8mpq-smarc-interface-description">03_FET-MX8MPQ-SMARC Interface Description</a></li>
-<li><a class="reference internal" href="#som-connector">3.1 SoM Connector</a><ul>
-<li><a class="reference internal" href="#golden-finger">3.1.1 Golden-finger</a></li>
-<li><a class="reference internal" href="#mxm-3-0-connector">3.1-2 MXM 3.0 Connector</a></li>
-<li><a class="reference internal" href="#wi-fi-bt-antenna-connector">3.1.3 Wi-Fi &amp; BT Antenna Connector</a></li>
-<li><a class="reference internal" href="#jtag-connector">3.1.4 JTAG  Connector</a></li>
+              <p class="caption" role="heading"><span class="caption-text">OK-MX8MPQ-SMARC_User's Hardware Manual_V1.0</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">01_Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#som-function-description">1.1 SoM Function Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#i-mx8mp-series-processors">1.2 i.MX8MP Series Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet-mx8mpq-smarc-description">02_FET-MX8MPQ-SMARC Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#som-appearance">2.1 SoM Appearance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#technical-specifications">2.2 Technical Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet-mx8mpq-smarc-module-structure">2.3 FET-MX8MPQ-SMARC Module Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet-mx8mpq-smarc-block-diagram">2.4 FET-MX8MPQ-SMARC Block Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet-mx8mpq-smarc-interface-description">03_FET-MX8MPQ-SMARC Interface Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#som-connector">3.1 SoM Connector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#golden-finger">3.1.1 Golden-finger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mxm-3-0-connector">3.1-2 MXM 3.0 Connector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wi-fi-bt-antenna-connector">3.1.3 Wi-Fi &amp; BT Antenna Connector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jtag-connector">3.1.4 JTAG  Connector</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#fet-mx8mpx-smarc-connector-pin-out">3.2 FET-MX8MPx-SMARC Connector Pin Out</a><ul>
-<li><a class="reference internal" href="#smarc-p-pin-connector-output-list">3.2. 1 SMARC P-PIN Connector Output List</a></li>
-<li><a class="reference internal" href="#smarc-s-pin-connector-pin-out-list"><font style="color:rgb(51, 51, 51);">3.2.2 SMARC S-PIN Connector Pin Out List</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet-mx8mpx-smarc-connector-pin-out">3.2 FET-MX8MPx-SMARC Connector Pin Out</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#smarc-p-pin-connector-output-list">3.2. 1 SMARC P-PIN Connector Output List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#smarc-s-pin-connector-pin-out-list"><font style="color:rgb(51, 51, 51);">3.2.2 SMARC S-PIN Connector Pin Out List</font></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#hardware-interface">04_Hardware Interface</a></li>
-<li><a class="reference internal" href="#hdmi">4.1 HDMI</a><ul>
-<li><a class="reference internal" href="#hdmi-tx-controller">4.1.1 HDMI TX Controller</a><ul>
-<li><a class="reference internal" href="#id1">4.1.1.1 Overview</a></li>
-<li><a class="reference internal" href="#features">4.1.1.2 Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#hardware-interface">04_Hardware Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#hdmi">4.1 HDMI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hdmi-tx-controller">4.1.1 HDMI TX Controller</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">4.1.1.1 Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">4.1.1.2 Features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#hdmi-tx-phy">4.1.2 HDMI TX PHY</a><ul>
-<li><a class="reference internal" href="#id2">4.1.2.1 Overview</a></li>
-<li><a class="reference internal" href="#id3">4.1.2.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hdmi-tx-phy">4.1.2 HDMI TX PHY</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.1.2.1 Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">4.1.2.2 Features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#hdmi-external-signal">4.1.3 HDMI External Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hdmi-external-signal">4.1.3 HDMI External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#lvds-interface">4.2 LVDS Interface</a><ul>
-<li><a class="reference internal" href="#id4">4.2.1 Overview</a></li>
-<li><a class="reference internal" href="#id5">4.2.2 Features</a></li>
-<li><a class="reference internal" href="#id6">4.2.3 SoM Function Description</a></li>
-<li><a class="reference internal" href="#lvds-external-signal">4.2.4 LVDS External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#lvds-interface">4.2 LVDS Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id4">4.2.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">4.2.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">4.2.3 SoM Function Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lvds-external-signal">4.2.4 LVDS External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mipi-interface">4.3 MIPI Interface</a><ul>
-<li><a class="reference internal" href="#id7">4.3.1 Overview</a></li>
-<li><a class="reference internal" href="#block-diagram">4.3.2 Block Diagram</a></li>
-<li><a class="reference internal" href="#id8">4.3.3 Features</a></li>
-<li><a class="reference internal" href="#mipi-dsi-external-signal">4.3.4 MIPI DSI External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#mipi-interface">4.3 MIPI Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id7">4.3.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#block-diagram">4.3.2 Block Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">4.3.3 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mipi-dsi-external-signal">4.3.4 MIPI DSI External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mipi-csi">4.4  MIPI CSI</a><ul>
-<li><a class="reference internal" href="#id9">4.4.1 Overview</a></li>
-<li><a class="reference internal" href="#id10">4.4.2 Features</a></li>
-<li><a class="reference internal" href="#mipi-csi-external-signal">4.4.3 MIPI CSI External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#mipi-csi">4.4  MIPI CSI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id9">4.4.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">4.4.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mipi-csi-external-signal">4.4.3 MIPI CSI External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#audio">4.5 Audio</a><ul>
-<li><a class="reference internal" href="#sai-overview">4.5.1 SAI Overview</a></li>
-<li><a class="reference internal" href="#id11">4.5.2 Features</a></li>
-<li><a class="reference internal" href="#i2s-external-signal">4.5.3 I2S External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#audio">4.5 Audio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sai-overview">4.5.1 SAI Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">4.5.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i2s-external-signal">4.5.3 I2S External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pcie">4.6 PCIe</a><ul>
-<li><a class="reference internal" href="#id12">4.6.1 Overview</a></li>
-<li><a class="reference internal" href="#id13">4.6.2 Features</a></li>
-<li><a class="reference internal" href="#pcie-x-1-external-signal">4.6.3 PCIe x 1 External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#pcie">4.6 PCIe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id12">4.6.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">4.6.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pcie-x-1-external-signal">4.6.3 PCIe x 1 External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ethernet">4.7 Ethernet</a><ul>
-<li><a class="reference internal" href="#id14">4.7.1 Overview</a></li>
-<li><a class="reference internal" href="#ethernet-external-signal">4.7.2 Ethernet External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ethernet">4.7 Ethernet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id14">4.7.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ethernet-external-signal">4.7.2 Ethernet External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#usb">4.8 USB</a><ul>
-<li><a class="reference internal" href="#id15">4.8.1 Overview</a></li>
-<li><a class="reference internal" href="#id16">4.8.2 Features</a></li>
-<li><a class="reference internal" href="#usb-external-signal">4.8.3 USB External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usb">4.8 USB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id15">4.8.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">4.8.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usb-external-signal">4.8.3 USB External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#uart">4.9 UART</a><ul>
-<li><a class="reference internal" href="#id17">4.9.1 Overview</a></li>
-<li><a class="reference internal" href="#id18">4.9.2 Features</a></li>
-<li><a class="reference internal" href="#uart-external-signal">4.9.3 UART External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#uart">4.9 UART</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id17">4.9.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">4.9.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uart-external-signal">4.9.3 UART External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#flexcan">4.10 FlexCAN</a><ul>
-<li><a class="reference internal" href="#id19">4.10.1 Overview</a></li>
-<li><a class="reference internal" href="#id20">4.10.2 Features</a></li>
-<li><a class="reference internal" href="#flexcan-external-signals">4.10.3 FlexCAN External Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#flexcan">4.10 FlexCAN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id19">4.10.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">4.10.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flexcan-external-signals">4.10.3 FlexCAN External Signals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#usdhc">4.11 uSDHC</a><ul>
-<li><a class="reference internal" href="#id21">4.11.1 Overview</a></li>
-<li><a class="reference internal" href="#id22">4.11.2 Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usdhc">4.11 uSDHC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id21">4.11.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">4.11.2 Features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#usdhc-external-signal">4.12 uSDHC External Signal</a></li>
-<li><a class="reference internal" href="#i2c">4.13 I2C</a><ul>
-<li><a class="reference internal" href="#id23">4.13.1 Overview</a><ul>
-<li><a class="reference internal" href="#id24">4.13.2 Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usdhc-external-signal">4.12 uSDHC External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#i2c">4.13 I2C</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id23">4.13.1 Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">4.13.2 Features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#i2c-external-signal">4.13.3 I2C External Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i2c-external-signal">4.13.3 I2C External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ecspi-flexspi">4.14 ECSPI &amp; FlexSPI</a><ul>
-<li><a class="reference internal" href="#id25">4.14.1 Overview</a></li>
-<li><a class="reference internal" href="#ecspi-features">4.14.2 ECSPI Features</a></li>
-<li><a class="reference internal" href="#flexspi-overview">4.14.3 FlexSPI Overview</a></li>
-<li><a class="reference internal" href="#flexspi-features">4.14.4 FlexSPI Features</a></li>
-<li><a class="reference internal" href="#flexspi-external-signals">4.14.5 FlexSPI External Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ecspi-flexspi">4.14 ECSPI &amp; FlexSPI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id25">4.14.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ecspi-features">4.14.2 ECSPI Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flexspi-overview">4.14.3 FlexSPI Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flexspi-features">4.14.4 FlexSPI Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flexspi-external-signals">4.14.5 FlexSPI External Signals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pwm">4.15 PWM</a><ul>
-<li><a class="reference internal" href="#id26">4.15.1 Overview</a></li>
-<li><a class="reference internal" href="#id27">4.15.2 Features</a></li>
-<li><a class="reference internal" href="#pwm-external-signal">4.15.3 PWM External Signal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#pwm">4.15 PWM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id26">4.15.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">4.15.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pwm-external-signal">4.15.3 PWM External Signal</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#gpio">4.16 GPIO</a><ul>
-<li><a class="reference internal" href="#gpio-signals">4.16.1 GPIO Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#gpio">4.16 GPIO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gpio-signals">4.16.1 GPIO Signals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#management-io">4.17 Management IO</a><ul>
-<li><a class="reference internal" href="#io-external-signal-management">4.17.1 IO External Signal Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#management-io">4.17 Management IO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#io-external-signal-management">4.17.1 IO External Signal Management</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#jtag">4.18 JTAG</a><ul>
-<li><a class="reference internal" href="#id28">4.18.1 Overview</a></li>
-<li><a class="reference internal" href="#jtag-external-signals">4.18.2 JTAG External Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#jtag">4.18 JTAG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id28">4.18.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jtag-external-signals">4.18.2 JTAG External Signals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#rtc">4.19 RTC</a><ul>
-<li><a class="reference internal" href="#id29">4.19.1 Overview</a></li>
-<li><a class="reference internal" href="#id30">4.19.2 Features</a></li>
-<li><a class="reference internal" href="#rtc-power">4.19.3 RTC Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rtc">4.19 RTC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id29">4.19.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id30">4.19.2 Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rtc-power">4.19.3 RTC Power</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#wi-fi-bt">4.20 Wi-Fi &amp; BT</a></li>
-<li><a class="reference internal" href="#power-supply">4.21 Power Supply</a><ul>
-<li><a class="reference internal" href="#power-signals">4.21.1 Power Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#wi-fi-bt">4.20 Wi-Fi &amp; BT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#power-supply">4.21 Power Supply</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#power-signals">4.21.1 Power Signals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#general-system-control">4.22 General System Control</a><ul>
-<li><a class="reference internal" href="#general-system-control-signals">4.22. 1 General System Control Signals</a></li>
-<li><a class="reference internal" href="#boot-configuration">4.22.2 Boot Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#general-system-control">4.22 General System Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-system-control-signals">4.22. 1 General System Control Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boot-configuration">4.22.2 Boot Configuration</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#soc-to-connector-pin-fan-out">05_SoC to Connector Pin Fan-out</a></li>
-<li><a class="reference internal" href="#power-consumption-of-the-whole-development-board">06_Power Consumption of the Whole Development Board</a></li>
-<li><a class="reference internal" href="#environmental-specification">07_Environmental Specification</a></li>
-<li><a class="reference internal" href="#ok-mx8mpq-smarx-development-board-description">08_OK-MX8MPQ-SMARX Development Board Description</a></li>
-<li><a class="reference internal" href="#development-board-interface-diagram">8.1 Development Board Interface Diagram</a></li>
-<li><a class="reference internal" href="#development-board-dimension">8.2 Development Board Dimension</a></li>
-<li><a class="reference internal" href="#development-board-naming-rules">8.3 Development Board Naming Rules</a></li>
-<li><a class="reference internal" href="#development-board-resources">8.4 Development Board  Resources</a></li>
-<li><a class="reference internal" href="#development-board-resources-block-diagram">8.5 Development Board  Resources Block Diagram</a></li>
-<li><a class="reference internal" href="#ok-mx8mpq-smarc-schematic-diagram">09_OK-MX8MPQ-SMARC Schematic Diagram</a></li>
-<li><a class="reference internal" href="#development-board-power">9.1 Development Board Power</a><ul>
-<li><a class="reference internal" href="#power-connector-pin-description">9.1. 1 Power Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#soc-to-connector-pin-fan-out">05_SoC to Connector Pin Fan-out</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#power-consumption-of-the-whole-development-board">06_Power Consumption of the Whole Development Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#environmental-specification">07_Environmental Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ok-mx8mpq-smarx-development-board-description">08_OK-MX8MPQ-SMARX Development Board Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#development-board-interface-diagram">8.1 Development Board Interface Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#development-board-dimension">8.2 Development Board Dimension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#development-board-naming-rules">8.3 Development Board Naming Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#development-board-resources">8.4 Development Board  Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#development-board-resources-block-diagram">8.5 Development Board  Resources Block Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ok-mx8mpq-smarc-schematic-diagram">09_OK-MX8MPQ-SMARC Schematic Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#development-board-power">9.1 Development Board Power</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#power-connector-pin-description">9.1. 1 Power Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#control-key">9.2 Control Key</a></li>
-<li><a class="reference internal" href="#id31">3.5.9.3 Boot Configuration</a></li>
-<li><a class="reference internal" href="#debugging-serial-port">9.4 Debugging Serial Port</a><ul>
-<li><a class="reference internal" href="#debug-connector-pin-description">9.4.1 Debug Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#control-key">9.2 Control Key</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id31">3.5.9.3 Boot Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#debugging-serial-port">9.4 Debugging Serial Port</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#debug-connector-pin-description">9.4.1 Debug Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#usb-3-0">9.5 USB 3.0</a><ul>
-<li><a class="reference internal" href="#usb3-0-connector-pin-description">9.5.1 USB3.0 Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usb-3-0">9.5 USB 3.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usb3-0-connector-pin-description">9.5.1 USB3.0 Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#usb2-0">9.6 USB2.0</a><ul>
-<li><a class="reference internal" href="#usb2-0-connector-pin-description">9.6.1 USB2.0 Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usb2-0">9.6 USB2.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usb2-0-connector-pin-description">9.6.1 USB2.0 Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#usb2-0-otg">9.7 USB2.0 OTG</a></li>
-<li><a class="reference internal" href="#g-5g-module">9.8 4G/ 5G Module</a></li>
-<li><a class="reference internal" href="#gigabit-network-port">9.9. Gigabit Network Port</a><ul>
-<li><a class="reference internal" href="#gigabit-ethernet-rj45-connector">9.9.1 Gigabit Ethernet RJ45 Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usb2-0-otg">9.7 USB2.0 OTG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#g-5g-module">9.8 4G/ 5G Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#gigabit-network-port">9.9. Gigabit Network Port</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gigabit-ethernet-rj45-connector">9.9.1 Gigabit Ethernet RJ45 Connector</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id32">9.10 Audio</a><ul>
-<li><a class="reference internal" href="#audio-connector-pin-description">9.10.1 Audio Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id32">9.10 Audio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#audio-connector-pin-description">9.10.1 Audio Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id33">9.11 RTC</a></li>
-<li><a class="reference internal" href="#lvds">9.12 LVDS</a><ul>
-<li><a class="reference internal" href="#lvds-connector-pin-description">9.12.1 LVDS Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id33">9.11 RTC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#lvds">9.12 LVDS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lvds-connector-pin-description">9.12.1 LVDS Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mipi-dsi-lvds">9.13 MIPI DSI &amp; LVDS</a><ul>
-<li><a class="reference internal" href="#mipi-dsi-lvds-connector-pin-description">9.13.1 MIPI DSI &amp; LVDS Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#mipi-dsi-lvds">9.13 MIPI DSI &amp; LVDS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mipi-dsi-lvds-connector-pin-description">9.13.1 MIPI DSI &amp; LVDS Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id34">9.14×MIPI CSI</a><ul>
-<li><a class="reference internal" href="#mipi-cs-connector-pin-description">9.14.1 MIPI CS Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id34">9.14×MIPI CSI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mipi-cs-connector-pin-description">9.14.1 MIPI CS Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pcie-x-1">9.15 PCIe x 1</a><ul>
-<li><a class="reference internal" href="#pcie-x1-connector-pin-description">9.15.1 PCIe x1 Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#pcie-x-1">9.15 PCIe x 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pcie-x1-connector-pin-description">9.15.1 PCIe x1 Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#canfd-rs485">9.16 CANFD &amp; RS485</a><ul>
-<li><a class="reference internal" href="#canfd-rs485-connector-pin-description">9.16.1 CANFD &amp; RS485 Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#canfd-rs485">9.16 CANFD &amp; RS485</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#canfd-rs485-connector-pin-description">9.16.1 CANFD &amp; RS485 Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id35">9.17 HDMI</a><ul>
-<li><a class="reference internal" href="#hdmi-connector-pin-description">9.17.1 HDMI Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id35">9.17 HDMI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hdmi-connector-pin-description">9.17.1 HDMI Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tf-card">9.18 TF CARD</a><ul>
-<li><a class="reference internal" href="#tf-card-connector-pin-description">9.18.1 TF Card Connector Pin Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#tf-card">9.18 TF CARD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tf-card-connector-pin-description">9.18.1 TF Card Connector Pin Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#qspi-spi">9.19 QSPI &amp; SPI</a></li>
-<li><a class="reference internal" href="#id36">9.20 PWM</a></li>
-<li><a class="reference internal" href="#i-o-expand">9.21 I/O expand</a></li>
-<li><a class="reference internal" href="#fan">9.22 FAN</a></li>
-<li><a class="reference internal" href="#ok-mx8mpq-smarc-hardware-design-guide">10_OK-MX8MPQ-SMARC Hardware Design Guide</a></li>
-<li><a class="reference internal" href="#connector-dimension-diagram">11_Connector Dimension Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#qspi-spi">9.19 QSPI &amp; SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id36">9.20 PWM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#i-o-expand">9.21 I/O expand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fan">9.22 FAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ok-mx8mpq-smarc-hardware-design-guide">10_OK-MX8MPQ-SMARC Hardware Design Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#connector-dimension-diagram">11_Connector Dimension Diagram</a></li>
 </ul>
-</div>
+
         </div>
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">NXP IMX8MP Documentation</a>
+          <a href="index.html">NXP IMX8MP SMARC Documentation</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -283,7 +289,6 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">01_Overview</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/OK-MX8MPQ-SMARC_User&#39;s Hardware Manual_V1.0.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -8678,20 +8683,38 @@ default</strong></p>
 
            </div>
           </div>
-          <footer>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
 
-  <hr/>
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
 
-  <div role="contentinfo">
-    <p>&#169; Copyright Forlinx Embedded.</p>
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
   </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+</div>
         </div>
       </div>
     </section>
