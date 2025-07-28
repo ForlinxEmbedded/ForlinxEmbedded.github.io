@@ -1840,7 +1840,7 @@ Perform accurate evaluation and develop suitable thermal solutions accordingly.
 Forlinx can provide a heatsink for the FET-MX8MP-SMARC module, but please keep in mind that its usage must be accurately evaluated within the final system and that it should only be considered as part of a more comprehensive cooling solution.
 
 
-## 8. OK-MX8MPQ-SMARX Development Board Description
+## 8. OK-MX8MPQ-SMARC Development Board Description
 
 ### 8.1 Development Board Interface Diagram
 
