@@ -21,7 +21,6 @@ OKMX8MPQ-SMARC Manual
 
 
 .. toctree::
-   :caption: 
    :maxdepth: 2
 
    OK-MX8MPQ-SMARC_Hardware_Manual
