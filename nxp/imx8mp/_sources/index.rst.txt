@@ -23,6 +23,8 @@ iMX8M Plus Manuals
    OK-MX8MPQ-SMARC_Hardware_Manual
 
 
+
+
 .. toctree::
    :caption: OKMX8MP-C Manual
    :maxdepth: 2
