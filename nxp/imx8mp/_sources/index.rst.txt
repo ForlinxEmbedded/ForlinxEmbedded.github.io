@@ -15,12 +15,12 @@
 iMX8M Plus Manuals
 ==================
 
-OKMX8MPQ-SMARC Manual
-=======================
+
 
 
 
 .. toctree::
+   :caption: OKMX8MPQ-SMARC Manual
    :maxdepth: 2
 
    OK-MX8MPQ-SMARC_Hardware_Manual
