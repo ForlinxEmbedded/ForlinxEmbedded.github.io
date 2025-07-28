@@ -1,25 +1,28 @@
-﻿# 01_Overview
+﻿# OK-MX8MPQ-SMARC_User's Hardware Manual_V1.0
 
-## 1.1 SoM Function Description
+## 1. Overview
 
-The FET-MX8MPQ-SMARC is a module compliant with the SMARC 2.1 standard, featuring the high-performance i.MX 8M Plus processor. It combines advanced multimedia capabilities with optimized low-power consumption, making it suitable for machine learning applications.
+### 1.1 SoM Function Description
 
-It pairs with the OK-MX8MPQ-SMARC carrier board and connects to the mainboard via a 314-pin MXM connector.
+The FET-MX8MPQ-SMARC is a module that complies with the SMARC 2.1 standard and features the high-performance i.MX 8M Plus processor. It combines advanced multimedia capabilities with optimized low power consumption, making it ideal for machine learning applications.
 
-It integrates a wide range of functional interfaces and is widely used in fields such as smart cities, industrial IoT, smart healthcare, and intelligent transportation, meeting the diverse needs of various applications.
+This module pairs with the OK-MX8MPQ-SMARC carrier board and connects to the mainboard using a 314-pin MXM connector.
 
-## 1.2 i.MX8MP Series Processors
+It includes a wide range of functional interfaces and is widely utilized in various fields such as smart cities, industrial IoT, smart healthcare, and intelligent transportation, effectively meeting the diverse needs of multiple applications.
+
+### 1.2 i.MX8MP Series Processors
 
 The i.MX 8M Plus series processors focus on machine learning, vision, advanced multimedia, and industrial automation, offering high reliability. They are designed to meet the needs of smart home, building, city, and Industry 4.0 applications.   
-· Featuring powerful quad-core or dual-core Arm® Cortex®-A53 processors and an integrated Neural Processing Unit (NPU) capable of up to 2.3 TOPS.   
-·Dual Image Signal Processors (ISP) and support for two camera inputs enable efficient, advanced vision systems.   
-·Multimedia capabilities include video encoding (including H.265) and decoding, 3D/2D graphics acceleration, and a wide range of audio and voice features.   
-·Real-time control is handled by a Cortex-M7 core, supporting dual CAN FD, dual Gigabit Ethernet, and Time-Sensitive Networking (TSN) functionality.   
-·Designed for high industrial reliability, supporting DRAM inline ECC.
+
+- Powerful quad-core or dual-core Arm® Cortex®-A53 processors and an integrated Neural Processing Unit (NPU) capable of up to 2.3 TOPS；   
+- Dual Image Signal Processors (ISP) and support for two camera inputs enable efficient, advanced vision systems；   
+- Multimedia capabilities include video encoding (including H.265) and decoding, 3D/2D graphics acceleration, and a wide range of audio and voice features；  
+- Real-time control is handled by a Cortex-M7 core, supporting dual CAN FD, dual Gigabit Ethernet, and Time-Sensitive Networking (TSN) functionality；  
+- Designed for high industrial reliability, supporting DRAM inline ECC.
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/6e9c9552c17a4110894efeba569b442a.png)
 
-The FET-MX8MPQ-SMARC core board is compatible with the CPU models listed in the table below, with the default model being MIMX8ML8CVNKZAB:
+The FET-MX8MPQ-SMARC SoM is compatible with the CPU models listed in the table below, with the default model being MIMX8ML8CVNKZAB:
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/93f7664592494313ab7b0f44df8085b2.png)
 
@@ -28,9 +31,9 @@ For more details about the MX8M Plus series, please visit the official NXP websi
 [https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimediaand-industrial-iot:IMX8MPLUS](https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimediaand-industrial-iot:IMX8MPLUS)
 
 
-# 02_FET-MX8MPQ-SMARC Description
+## 2. FET-MX8MPQ-SMARC Description
 
-## 2.1 SoM Appearance
+### 2.1 SoM Appearance
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/56cb26ad7a75406fab91666674e3fa58.png)
 
@@ -40,7 +43,7 @@ Front
 
 Back
 
-## 2.2 Technical Specifications
+### 2.2 Technical Specifications
 
 Processors  
 i.MX 8M Plus Quad
@@ -81,15 +84,18 @@ Neutral Processing Unit (NPU)
 + Image recognition (i.e. ResNet-50)
 
 Image Sensor Processor (ISP)  
-375 Mpixel/s HDR ISP, supporting 12Mp@30fps, 4kp45 or 2x 1080p80 etc.
+
+- 375 Mpixel/s HDR ISP, supporting 12Mp@30fps, 4kp45 or 2x 1080p80 etc.
 
 Memory (Memory) 
 
- Soldered LPDDR4-4266 memory, 32-bit interface, optional 2GB and 4GB
+- Soldered LPDDR4-4266 memory, 32-bit interface, optional 2GB and 4GB
+
 
 Storage 
 
- Solder eMMC 5.1 with 16GB and 32GB options
+- Solder eMMC 5.1 with 16GB and 32GB options
+
 
 Video output Interfaces（Video output connector）  
 1 x HDMI 2.0a Tx
@@ -99,80 +105,94 @@ Video output Interfaces（Video output connector）
 + Maximum resolution limited by a 250 MHz pixel clock and an effective pixel rate of 200 Mpixel/s for 24-bit RGB.
 + Supported resolutions include:
 
-• 1080 p60  
-• WUXGA (1920x1200) at 60 Hz  
-• 1920x1440 at 60 Hz  
-• UWHD (2560x1080) at 60 Hz  
-• MIPI DSI: WQHD (2560x1440)                                Supported by reducing blanking intervals
+  • 1080 p60  
+
+  • WUXGA (1920x1200) at 60 Hz  
+
+  • 1920x1440 at 60 Hz  
+
+  • UWHD (2560x1080) at 60 Hz  
+
+  • MIPI DSI: WQHD (2560x1440), supported by reducing blanking intervals
 
 Camera  
-1 x 4-lanes CSI camera interfaces  
-1 x 2-lanes CSI camera interfaces
+
+- 1 x 4-lanes CSI camera interfaces  
+- 1 x 2-lanes CSI camera interfaces
 
 Audio Interfaces  
-Cadence® Tensilica® HiFi 4 DSP, maximum support 800 MHz
+
+- Cadence® Tensilica® HiFi 4 DSP, maximum support 800 MHz
 
 2 x I2S Audio interface
 
 + All ports support 49.152 MHz BCLK
 
 Connectivity （Communication interface）  
-1 x PCIe Express (PCIe) single chanel, supports PCIe Gen3
+
+- 1 x PCIe Express (PCIe) single chanel, supports PCIe Gen3
 
 Networking 
 
- 2 x Gigabit Ethernet interface 
+-  2 x Gigabit Ethernet interface 
 
- On-board IEEE 802.11 2X2 WiFi 5 MIMO Wireless LAN + Bluetooth 5 3 Combo LGA Module (factory optional)
+
+On-board IEEE 802.11 2X2 WiFi 5 MIMO Wireless LAN + Bluetooth 5 3 Combo LGA Module (factory optional)
 
 USB  
-1 x USB2.0 OTG (directly to CPU)  
-3 x USB2.0 Host  
-2 x USB3.0 Host
+
+- 1 x USB2.0 OTG (directly to CPU)  
+- 3 x USB2.0 Host  
+- 2 x USB3.0 Host
 
 Serial ports  
-2 x UART Tx / Rx / RTS / CTS  
-2 x UART Tx / Rx
 
-2 x CAN Bus
+- 2 x UART Tx / Rx / RTS / CTS  
+- 2 x UART Tx / Rx
+
+- 2 x CAN Bus
 
 - The communication controller supports the CAN FD protocol and the CAN 2.0B protocol specification.
 
 Other Interfaces  
-1 x SD 1-bit/4-bit SDIO 3.0 interface  
-5 x I2C Bus  
-1 x SPI interface  
-1 x QuadSPI interface  
-14 x GPIOs  
+
+- 1 x SD 1-bit/4-bit SDIO 3.0 interface  
+- 5 x I2C Bus  
+- 1 x SPI interface  
+- 1 x QuadSPI interface  
+- 14 x GPIOs  
+
 Startup option configuration signal 
 
- Power management signal
+Power management signal
 
 Power Voltage: +5VDC  
 RTC Voltage: 3.3V  
-Operating Temperature: Industrial version -40 ° C ~ + 85 ° C  
+Operating Temperature: Industrial level -40 ° C ~ + 85 ° C  
 
- Size: 50 x82 mm  
-The actual temperature will be widely dependent on the application, enclosure, and/or environment. **Customers should consider application-specific cooling solutions for the final system to maintain the heatsink temperature within the specified range.**
+Size: 50 x82 mm  
+**Note: The actual temperature will largely depend on the application, enclosure, and/or environment. Please consider an application - specific cooling solution for the final system to maintain the radiator temperature within the specified range.**
 
-## 2.3 FET-MX8MPQ-SMARC Module Structure
+### 2.3 FET-MX8MPQ-SMARC Module Structure
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/d93d62070e6847f48e0bb8ee3ef0f68d.png)Figure 2-3：FET-MX8MPQ-SMARC (Top)
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/ee16e760f47d4028b9b19c68ae64d37d.png)Figure 2-4：FET-MX8MPQ-SMARC 
 
-To prevent board warping, a 6mm diameter pad connected to the GND network is reserved inside the bottom layer of the board.   
-When designing the carrier board, users can add appropriate standoffs at the specified pad location to support the core module.
+To prevent the board from warping, a solder pad with a diameter of 6 mm is reserved inside the bottom layer of the board and connected to the GND network.
 
-SoM Dimension: 82mm x 50mm
+When designing the carrier board, appropriate fixing posts can be added at the specified solder pads to support the SoM.
 
-Fixing hole spacing: 74mm x 34mm
+- SoM Dimension: 82mm x 50mm
 
-Fixing hole diameter: 2.7mm
+- Fixing hole spacing: 74mm x 34mm
 
-PCB Layers: 10 layer PCB
+- Fixing hole diameter: 2.7mm
 
-PCB thickness: 1.2mm
+- PCB Layers: 10 layer PCB
+
+- PCB thickness: 1.2mm
+
 
 Connector 314p Gold Finger for detailed dimensions of the module structure, refer to “SMARC 2.1.1 Specification 2020-05-20” 5.3 Module Outline – 82x50mm Module.![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a565f2b0773f46318987b18ca2c550fd.png)
 
@@ -180,24 +200,24 @@ Figure 2-5: SMARC 2.1.1 82 x 50mm Module Outline
 
 When using connectors of different heights, please consider that according to the SMARC specification, the maximum component height on the bottom side of the module is 1.3mm. When selecting the height of the MXM connector, please pay attention to the above point if you need to place components on the carrier board below the SMARC module. 
 
-## 2.4 FET-MX8MPQ-SMARC Block Diagram
+### 2.4 FET-MX8MPQ-SMARC Block Diagram
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/b4f4c260ef204d758137ccba4c89c1dc.png)
 
 Figure 2-6: FET-MX8MPQ-SMARC Block Diagram
 
 
-# 03_FET-MX8MPQ-SMARC Interface Description
+## 3. FET-MX8MPQ-SMARC Interface Description
 
-## 3.1 SoM Connector
+### 3.1 SoM Connector
 
-### 3.1.1 Golden-finger
+#### 3.1.1 Golden-finger
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/14a63d1ed6f14b07868cf61865c400ad.png)
 
 Figure 3-1 SoM Connector
 
-### 3.1.2 MXM 3.0 Connector
+#### 3.1.2 MXM 3.0 Connector
 
 The carrier board connector is a 314-pin, 0.5mm pitch right-angle component, designed for use with a 1.2mm thick PCB and features an appropriate edge finger pattern. This connector is commonly used in MXM3 graphics cards. The SMARC module uses this connector differently than the MXM3 standard.
 
@@ -205,7 +225,7 @@ The carrier board connector is a 314-pin, 0.5mm pitch right-angle component, des
 
 Figure 3-2 MXM 3.0 Carrier Board Connector
 
-### 3.1.3 Wi-Fi \& BT Antenna Connector
+#### 3.1.3 Wi-Fi \& BT Antenna Connector
 
 I-PEX MHF4 Connector Socket (20449) Main： Wi-Fi --> TX/RX  
 Aux： Wi-Fi/Bluetooth --> TX/RX
@@ -218,7 +238,7 @@ Figure 3-3 Module Antenna Configuration
 
 Figure 3-4 Module Antenna Configuration
 
-### 3.1.4 JTAG  Connector
+#### 3.1.4 JTAG  Connector
 
 The processor’s JTAG interface is connected via a 7Pin, 1mm pitch connector.   
 The JTAG IO voltage level is 1.8V.
@@ -227,9 +247,9 @@ The JTAG IO voltage level is 1.8V.
 
 Figure 3-5 JTAG Connector Line Sequence
 
-## 3.2 FET-MX8MPx-SMARC Connector Pin Out
+### 3.2 FET-MX8MPx-SMARC Connector Pin Out
 
-### 3.2.1 SMARC P-PIN Connector Output List
+#### 3.2.1 SMARC P-PIN Connector Output List
 
 Table 3-1 SMARC P-PIN Connector Signal Output
 
@@ -395,7 +415,7 @@ Table 3-1 SMARC P-PIN Connector Signal Output
 | <font style="color:rgb(51, 51, 51);">P155</font>| <font style="color:rgb(51, 51, 51);">VDD\_IN</font>| <font style="color:rgb(51, 51, 51);">Analog</font>| <font style="color:rgb(51, 51, 51);">5V</font>| <font style="color:rgb(51, 51, 51);">-</font>
 | <font style="color:rgb(51, 51, 51);">P156</font>| <font style="color:rgb(51, 51, 51);">VDD\_IN</font>| <font style="color:rgb(51, 51, 51);">Analog</font>| <font style="color:rgb(51, 51, 51);">5V</font>| <font style="color:rgb(51, 51, 51);">-</font>
 
-### <font style="color:rgb(51, 51, 51);">3.2.2 SMARC S-PIN Connector Pin Out List</font>
+#### <font style="color:rgb(51, 51, 51);">3.2.2 SMARC S-PIN Connector Pin Out List</font>
 
 Table 3-2 SMARC S-PIN Connector Pin Output
 
@@ -563,24 +583,23 @@ Table 3-2 SMARC S-PIN Connector Pin Output
 | <font style="color:rgb(51, 51, 51);">S157</font>| <font style="color:rgb(51, 51, 51);">TEST#</font>| <font style="color:rgb(51, 51, 51);">I OD CMOS</font>| <font style="color:rgb(51, 51, 51);">1.8to5V</font>| <font style="color:rgb(51, 51, 51);">PU 10k</font>
 | <font style="color:rgb(51, 51, 51);">S158</font>| <font style="color:rgb(51, 51, 51);">GND</font>| <font style="color:rgb(51, 51, 51);">-</font>| <font style="color:rgb(51, 51, 51);">-</font>| <font style="color:rgb(51, 51, 51);">-</font>
 
-<font style="color:rgb(51, 51, 51);">1: Configuring this pin for the output function requires adding an additional pull-up resistor to the 3.3 V supply. The resistance value depends on the IO drive capability required by the receiver. When the pin is configured as an input function, the CPU needs to be internally configured as a pull-up.</font>
+<font style="color:rgb(51, 51, 51);">1: Configuring this pin for the output function requires adding an additional pull-up resistor to the 3.3 V supply. The resistance value depends on the IO drive capability required by the receiver. When the pin is configured as an input function, the CPU needs to be internally configured as a pull-up；</font>
 
-<font style="color:rgb(51, 51, 51);">2 : Depending on the internal pull-up of the i.MX8 MP SOC, the module itself has no pull-up or pull-down resistor.</font>
+<font style="color:rgb(51, 51, 51);">2 : Depending on the internal pull-up of the i.MX8 MP SOC, the module itself has no pull-up or pull-down resistor.</font；
 
-<font style="color:rgb(51, 51, 51);">3 : 在模块上，此引脚通过0Ω电阻器连接到MX8MP SOC的HDMI-CEC，默认为0Ω电阻器的空焊。</font>
+<font style="color:rgb(51, 51, 51);">3 :On the module, this pin is connected to the HDMI - CEC of the MX8MP SOC through a 0Ω resistor. By default, the 0Ω resistor is left un - soldered；</font>
 
-<font style="color:rgb(51, 51, 51);">4 : Depending on the internal pull-up of the i.MX8 MP SOC, the module itself has no pull-up or pull-down resistor.</font>
+<font style="color:rgb(51, 51, 51);">4 : Depending on the internal pull-up of the i.MX8 MP SOC, the module itself has no pull-up or pull-down resistor.</font；
 
 <font style="color:rgb(51, 51, 51);">5 ：This set of I2S signals can be configured as PCM signals to communicate with the WIFI \& BT module on the SoM, and by default, they are routed to the gold fingers of the FET-MX8MP-SMARC.</font>
 
 <font style="color:rgb(51, 51, 51);">These two sets of USB 2.0 and USB 3.0 TX/RX interfaces can be combined separately to form a fully functional USB 3.0 connection.</font>
 
+## 4. Hardware Interface
 
-# 04_Hardware Interface
+### 4.1 HDMI
 
-## 4.1 HDMI
-
-### 4.1.1 HDMI TX Controller
+#### 4.1.1 HDMI TX Controller
 
 4.1.1.1 Overview
 
@@ -588,12 +607,14 @@ High-Definition Multimedia Interface (HDMI) TX is a wired digital interconnectio
 
 4.1.1.2 Features
 
-Compatible with HDMI v2.0 a specification Refer to i.MX 8M Plus Applications Processor Reference Manual.
+Compatible with HDMI v2.0 a specification. 
 
-**NOTE:**   
+Refer to i.MX 8M Plus Applications Processor Reference Manual.
+
+**Note:**   
 **The HDCP function is not supported.**
 
-### 4.1.2 HDMI TX PHY
+#### 4.1.2 HDMI TX PHY
 
 4.1.2.1 Overview
 
@@ -601,13 +622,13 @@ The HDMI (High-Definition Multimedia Interface) TX PHY is compatible with the HD
 
 4.1.2.2 Features
 
-+ Supports 25 MHz to 594 MHz TMDS clock.
-+ 20-bit parallel data interface with transfer frequencies up to 297 MHz.
++ Supports 25 MHz to 594 MHz TMDS clock;
++ 20-bit parallel data interface with transfer frequencies up to 297 MHz;
 + All DTV video formats for PC up to 1080p/12-bit, 3D, 4K X 2K/60 Hz and VGA/XGA/SXGA/UXGA formats).
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.1.3 HDMI External Signal
+#### 4.1.3 HDMI External Signal
 
 Table 4-1 HDMI Interface Signal
 
@@ -628,24 +649,24 @@ Table 4-1 HDMI Interface Signal
 
 \* 1 P107 is NC (not connected) by default. If you want to configure it for HDMI-CEC function, please contact Forlinx and select HDMI-CEC version.
 
-## 4.2 LVDS Interface
+### 4.2 LVDS Interface
 
 The FET-MX8MP-SMARC SoM supports LVDS0 and LVDS1. LVDS0 and DSI0 are optional and cannot be used together. The default configuration is LVDS0. If DSI0 is required, please contact Forlinx and select the DSI0 version.
 
-### 4.2.1 Overview
+#### 4.2.1 Overview
 
 The LVDS display bridge (LDB) is connected to an external LVDS display interface. The function of LDB is to support the synchronous transmission of RGB data streams to external display devices via the LVDS interface.
 
-### 4.2.2 Features
+#### 4.2.2 Features
 
-+ Connect to display-related devices with an LVDS receiver.
++ Connect to display-related devices with an LVDS receiver;
 + Arrange the data according to the requirements of the external display receiver and LVDS display standard;
-+ Synchronization and control functions;
++ Synchronization and control functions.
 
-### 4.2.3 SoM Function Description
+#### 4.2.3 SoM Function Description
 
-+ Single-channel (4-channel) output, with pixel clock and LVDS clock up to 80 MHz. This supports resolutions up to 1366×768p60.
-+ For 4-channel LVDS, either Channel 0 or Channel 1 can be used.
++ Single-channel (4-channel) output, with pixel clock and LVDS clock up to 80 MHz. It supports resolutions up to 1366×768p60;
++ Either Channel 0 or Channel 1 can be used for 4-channel LVDS;
 + Dual asynchronous channels (8 data, 2 clock). This is used for a single panel with two interfaces, transmitting data through two channels (even pixels / odd pixels). It is supported with a pixel clock up to 160 MHz (with LVDS clock up to 80 MHz, as each LVDS clock transmits 2 pixels), enabling resolutions higher than 1366×768p60, up to 1080p60.
 
 The pixel mapper divides and reorders pixels from a single LCDIF display output to form odd and even pixel streams. This division and reordering are designed to match the speed and channel requirements of LVDS displays. Both VESA and JEIDA pixel mapping are supported.
@@ -661,7 +682,7 @@ Table 4-2 Pixel Mapping Modes.
 | Dual| Display Interface(DI) of LCDIF| Display Interface(DI) of LCDIF
 | Split| Display Interface(DI) of LCDIF| Display Interface(DI) of LCDIF
 
-### 4.2.4 LVDS External Signal
+#### 4.2.4 LVDS External Signal
 
 Table 4-3 LVDS0 Interface Signals
 
@@ -701,21 +722,21 @@ Table 4-4 LVDS1 Interface Signals
 | **S139**| I2C\_LCD\_CK| DDC  Clock Line Used for Flat Panel Detection and Control
 | **S140**| I2C\_LCD\_DAT| DDC  Data Line Used for Flat Panel Detection and Control
 
-## 4.3 MIPI Interface
+### 4.3 MIPI Interface
 
 The FET-MX8MP-SMARC does not support MIPI DSI functionality by default. A selection must be made between MIPI DSI0 and LVDS0.
 
-### 4.3.1 Overview
+#### 4.3.1 Overview
 
 The MIPI Display Serial Interface (DSI) is a flexible, high-performance core that enables communication with peripherals compliant with the MIPI DSI standard.
 
-### 4.3.2 Block Diagram
+#### 4.3.2 Block Diagram
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e89c58ae65c9434baa8281dcc0ced4f6.png)
 
 Figure 4-1 MIPI DSI Master System Block Diagram
 
-### 4.3.3 Features
+#### 4.3.3 Features
 
 + Compliant with MIPI DSI standard specification V1.01r11
 + The maximum resolution supported can reach up to WQHD (2560×1440).
@@ -725,7 +746,7 @@ Figure 4-1 MIPI DSI Master System Block Diagram
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.3.4 MIPI DSI External Signal
+#### 4.3.4 MIPI DSI External Signal
 
 Table 4-5 MIPI DSI0 Interface Signals
 
@@ -742,26 +763,26 @@ Table 4-5 MIPI DSI0 Interface Signals
 | **S137**| DSI0\_D3+| MIPI  DSI0 Positive Data3 Signal
 | **S138**| DSI0\_D3-| MIPI  DSI0 Negative Data3 Signal
 
-## 4.4  MIPI CSI
+### 4.4  MIPI CSI
 
-### 4.4.1 Overview
+#### 4.4.1 Overview
 
 The MIPI Camera Serial Interface (MIPI\_CSI2) is the camera interface of this chip. It works in conjunction with the MIPI DPHY module and connects to the host processor. When used in conjunction with output to the ISI (Image Sensor Interface) or ISP (Image Signal Processor), MIPI\_CSI2 supports RAW, YUV, and RGB image formats.
 
-### 4.4.2 Features
+#### 4.4.2 Features
 
-+ Compliant with the MIPI D-PHY V1.2 specification.
-+ Compliant with the MIPI CSI2 Specification V1.3, except for C-PHY functionality.
-+ Supports primary and secondary image formats.
-  - YUV420, YUV420 (Legacy), YUV420 (CSPS), YUV422 of 8-bits and 10-bits
-  - RGB565, RGB666, RGB888
-  - RAW6, RAW7, RAW8, RAW10, RAW12, RAW14
-+ Supports up to 4 lanes of D-PHY.
-+ Compatible with the PPI (Protocol to PHY Interface) defined in the MIPI D-PHY specification.
++ Compliant with the MIPI D-PHY V1.2 specification;
++ Compliant with the MIPI CSI2 Specification V1.3, except for C-PHY functionality;
++ Supports primary and secondary image formats;
+  - YUV420, YUV420 (Legacy), YUV420 (CSPS), YUV422 of 8-bits and 10-bits ;
+  - RGB565, RGB666, RGB888;
+  - RAW6, RAW7, RAW8, RAW10, RAW12, RAW14;
++ Supports up to 4 lanes of D-PHY;
++ Compatible with the PPI (Protocol to PHY Interface) defined in the MIPI D-PHY specification;
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.4.3 MIPI CSI External Signal
+#### 4.4.3 MIPI CSI External Signal
 
 Table 4-6 MIPI CSI0 Interface Signals
 
@@ -797,24 +818,24 @@ Table 4-7 MIPI CSI1 Interface Signals
 | **P16**| CSI1\_RX3+| Positive  MIPI CSI1 Differential Data3
 | **P17**| CSI1\_RX3-| Negative MIPI CSI1 Differential Data3
 
-## 4.5 Audio
+### 4.5 Audio
 
-### 4.5.1 SAI Overview
+#### 4.5.1 SAI Overview
 
 The Synchronous Audio Interface (SAI) provides an interface that supports a full-duplex serial connection, featuring frame-synchronized formats such as I2S, AC97, TDM, as well as codec/DSP interfaces.
 
 The FET-MX8MP-SMARC has two audio interfaces, I2S0 and I2S2. The I2S0 interface is managed by the SAI3 signal group of the SoC and the I2S2 interface is managed by the SAI5 signal group of the SoC.
 
-### 4.5.2 Features
+#### 4.5.2 Features
 
-+ The transmitter features independent bit clock and frame synchronization.
-+ The receiver is equipped with independent bit clock and frame synchronization.
-+ Each data line supports a maximum frame size of 32 words.
-+ 8- to 32-bit word size
++ The transmitter features independent bit clock and frame synchronization;
++ The receiver is equipped with independent bit clock and frame synchronization;
++ Each data line supports a maximum frame size of 32 words;
++ 8- to 32-bit word size.
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.5.3 I2S External Signal
+#### 4.5.3 I2S External Signal
 
 Table 4-7 I2S0 Interface Signals
 
@@ -836,21 +857,21 @@ Table 4-8 I2S2 Interface Signals
 | **S52**| I2S2\_SDIN| I2S2  Digital Audio Input
 | **S53**| I2S2\_CK| I2S2  Digital Audio Clock
 
-## 4.6 PCIe
+### 4.6 PCIe
 
-### 4.6.1 Overview
+#### 4.6.1 Overview
 
 The PCI Express interface complies with the PCI Express™ Base Specification Revision 4.0, Version 0.7 (available at http://www.pcisig.com). This manual does not cover the complex details of the PCI Express protocol.
 
-### 4.6.2 Features
+#### 4.6.2 Features
 
-+ Supports Root Complex (RC) and Endpoint (EP) configurations
-+ Maximum link speed up to Gen3 (8 GT/s)
-+ x1 link width
++ Supports Root Complex (RC) and Endpoint (EP) configurations;
++ Maximum link speed up to Gen3 (8 GT/s);
++ x1 link width.
 
 Refer to  i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.6.3 PCIe x 1 External Signal
+#### 4.6.3 PCIe x 1 External Signal
 
 Table 4-9 PCIe x1 Interface Signals
 
@@ -866,15 +887,15 @@ Table 4-9 PCIe x1 Interface Signals
 | **P78**| PCIE\_A\_CKREQ#| PCIe  Port A clock request
 | **S146**| PCIE\_WAKE#| PCIe  wake up interrupt to host – common to PCIe links A
 
-## 4.7 Ethernet
+### 4.7 Ethernet
 
-### 4.7.1 Overview
+#### 4.7.1 Overview
 
 The iMX 8M Plus implements two Ethernet controllers, both capable of running simultaneously. It features a tri-speed 10/100/1000-Mbit/s Ethernet MAC compliant with the IEEE 802.3-2002 standard.
 
 The FET-MX8MP-SMARC module includes 2 x on-board gigabit Ethernet transceivers. Highly integrated Ethernet transceivers comply with 10BASE-Te, 100BASE-TX, and 1000BASE-T IEEE 802.3 standards. It provides all the physical layer functions necessary for sending and receiving Ethernet packets over CAT.5E unshielded twisted-pair cables.
 
-### 4.7.2 Ethernet External Signal
+#### 4.7.2 Ethernet External Signal
 
 Table 4-10 GBE0 Interface Signals
 
@@ -910,9 +931,9 @@ Table 4-11 GBE1 Interface Signals
 | **S31**| GBE1\_LINK\_ACT#| Link  / Activity Indication LED Driven Low on Link (10, 100 or 1000 Mbps) Blinks on  Activity
 | **P5**| GBE1\_SDP| IEEE  1588 Trigger Signal for Hardware Implementation of PTP (Precision Time  Protocol)
 
-## 4.8 USB
+### 4.8 USB
 
-### 4.8.1 Overview
+#### 4.8.1 Overview
 
 The USB interfaces supported by FET-MX8MP-SMARC are as follows:
 
@@ -920,22 +941,22 @@ The USB interfaces supported by FET-MX8MP-SMARC are as follows:
 + 3 x USB 2.0 HOST
 + 2 x USB 3.0 HOST
 
-### 4.8.2 Features
+#### 4.8.2 Features
 
 The USB 3.0 module includes the following features:
 
-+ Comply with USB specification rev 3.0
-+ Super-speed (5 Gbit/s), high-speed (480 Mbit/s), full-speed (12 Mbit/s), and low speed (1.5 Mbit/s) operations
++ Comply with USB specification rev 3.0;
++ Super-speed (5 Gbit/s), high-speed (480 Mbit/s), full-speed (12 Mbit/s), and low speed (1.5 Mbit/s) operations.
 
 The USB 2.0 module includes the following features:
 
-+ Comply with USB specification rev 2.0
-+ High-speed (480 Mbit/s), full-speed (12 Mbit/s), and low speed (1.5 Mbit/s) operations
-+ USB 2.0 OTG supports dual-role operation and can be configured as a host or device
++ Comply with USB specification rev 2.0;
++ High-speed (480 Mbit/s), full-speed (12 Mbit/s), and low speed (1.5 Mbit/s) operations;
++ USB 2.0 OTG supports dual-role operation and can be configured as a host or device.
 
 USB \[0:5] \_ EN \_ OC # is the muxing function pin, which is pulled up to the 3.3 V power rail on the SoM. The carrier board can realize the OC # (over-current) overcurrent detection function through the open-drain driver.
 
-### 4.8.3 USB External Signal
+#### 4.8.3 USB External Signal
 
 Table 4-12 USB0 Port Signals
 
@@ -995,25 +1016,25 @@ Table 4-17 USB5 Port Signals
 | **S60**| USB5-| USB PHY Data Minus for Port 5
 | **S55**| USB5\_EN\_OC#| USB  Over-Current Sense for Port 5
 
-## 4.9 UART
+### 4.9 UART
 
-### 4.9.1 Overview
+#### 4.9.1 Overview
 
 The Universal Asynchronous Receiver/Transmitter (UART) provides the serial communication capability with external devices. It offers low-speed IrDA compatibility through a level shifter and an RS - 232 cable, or by using an external circuit that converts infrared signals into electrical signals (for receiving) or converts electrical signals into signals to drive an infrared LED (for sending). 
 
 UART supports NRZ encoding format, RS485 compatible 9-bit data format, and IrDA-compatible infrared Slow Infrared (SIR) data rates.
 
-### 4.9.2 Features
+#### 4.9.2 Features
 
-+ High-speed TIA/EIA-232-F compatible
-+ Serial IR interface at low speed, IrDA compatible (up to 115.2 Kbit/s)
-+ Supports 9-bit or multi-point mode (RS-485) with automatic slave address detection
-+ RS-232 characters support 7 or 8-bit data, or RS-485 format supports 9-bit data
-+ 1 or 2 stop bits
++ High-speed TIA/EIA-232-F compatible;
++ Serial IR interface at low speed, IrDA compatible (up to 115.2 Kbit/s);
++ Supports 9-bit or multi-point mode (RS-485) with automatic slave address detection;
++ RS-232 characters support 7 or 8-bit data, or RS-485 format supports 9-bit data;
++ 1 or 2 stop bits.
 
-_Refer to_  i.MX 8M Plus Applications Processor Reference Manual for more details.
+Refer to  i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.9.3 UART External Signal
+#### 4.9.3 UART External Signal
 
 Table 4-18 UART Interface Signal
 
@@ -1032,15 +1053,15 @@ Table 4-18 UART Interface Signal
 | **P140**| SER3\_TX| Asynchronous Serial Data Output Port 3
 | **P141**| SER3\_RX| Asynchronous  Serial Data Input Port 3
 
-## 4.10 FlexCAN
+### 4.10 FlexCAN
 
-### 4.10.1 Overview
+#### 4.10.1 Overview
 
 The FlexCAN module is a communication controller implementing the CAN protocol according to the ISO 11898-1 standard and the CAN 2.0 B protocol specification.
 
 The CAN protocol is primarily designed as a serial data bus for vehicles, meeting specific real-time processing and reliable operation requirements in the vehicle’s electromagnetic interference environment. The FlexCAN module fully implements the CAN protocol specification, Flexible Data-rate CAN (CAN FD) protocol, and CAN 2.0 protocol, supporting both standard and extended message frames as well as long data payloads.
 
-### 4.10.2 Features
+#### 4.10.2 Features
 
 + Fully implements the Flexible Data-Rate CAN (CAN FD) protocol specification and the CAN protocol specification version 2.0 B.
   - Standard Data Frames
@@ -1051,7 +1072,7 @@ The CAN protocol is primarily designed as a serial data bus for vehicles, meetin
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.10.3 FlexCAN External Signals
+#### 4.10.3 FlexCAN External Signals
 
 Table 4-19 CAN- FD Port Signal
 
@@ -1062,9 +1083,9 @@ Table 4-19 CAN- FD Port Signal
 | **P145**| CAN1\_TX| CAN  Port 1 Transmit Output
 | **P146**| CAN1\_RX| CAN  Port1 Receive Input
 
-## 4.11 uSDHC
+### 4.11 uSDHC
 
-### 4.11.1 Overview
+#### 4.11.1 Overview
 
 The FET-MX8MP-SMARC exposes a 4-bit interface of the uSDHC2 controller to support communication between the host system and SD/SDIO/MMC cards.
 
@@ -1076,7 +1097,7 @@ Key Features of uSDHC2:
 + 1-bit/4-bit SD and SDIO modes, as well as 1-bit/4-bit MMC mode.
 + Supports up to SDR104 baud rate.
 
-### 4.11.2 Features
+#### 4.11.2 Features
 
 + Compliant with SD Host Controller Standard Specification version 2.0/3.0.
 + Compatible with MMC System Specification versions 4.2/4.3/4.4/4.41/4.5/5.0/5.1.
@@ -1086,7 +1107,7 @@ Key Features of uSDHC2:
 + Card bus clock frequency up to 208 MHz.
 + Supports 1-bit/4-bit SD and SDIO modes, as well as 1-bit/4-bit MMC mode
 
-## 4.12 uSDHC External Signal
+### 4.12 uSDHC External Signal
 
 Table 4-20 TF Interface Signal
 
@@ -1102,13 +1123,13 @@ Table 4-20 TF Interface Signal
 | **P36**| SDIO\_CK| SDIO  Clock
 | **P37**| SDIO\_PWR\_EN| SDIO  Power Enable
 
-## 4.13 I2C
+### 4.13 I2C
 
-### 4.13.1 Overview
+#### 4.13.1 Overview
 
 I2C is a two-wire bidirectional serial bus that provides a simple, efficient method of data exchange that minimizes interconnections between devices. The bus is suitable for applications that require occasional communication over short distances between multiple devices. The flexible I2C standard allows additional devices to be connected to the bus for expansion and system development.
 
-### 4.13.2 Features
+#### 4.13.2 Features
 
 + Compatible with I2C bus standard.
 + Multi-host operation.
@@ -1119,7 +1140,7 @@ I2C is a two-wire bidirectional serial bus that provides a simple, efficient met
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.13.3 I2C External Signal
+#### 4.13.3 I2C External Signal
 
 Table 4-21 I2C\_PM Interface Signals
 
@@ -1156,17 +1177,17 @@ Table 4-25 I2C\_LCD Interface Signals
 | **S139**| I2C\_LCD\_CK| DDC  Clock Line Used for Flat Panel Detection and Control
 | **S140**| I2C\_LCD\_DAT| DDC  Data Line Used for Flat Panel Detection and Control
 
-## 4.14 ECSPI \& FlexSPI
+### 4.14 ECSPI \& FlexSPI
 
-### 4.14.1 Overview
+#### 4.14.1 Overview
 
 The Enhanced Configurable Serial Peripheral Interface (ECSPI) is a full-duplex, synchronous, four-wire serial communication module.
 
 ECSPI includes a 64×32 receive buffer (RXFIFO) and a 64×32 transmit buffer (TXFIFO). By leveraging a data FIFO (First-In-First-Out) buffer, the Enhanced Configurable Serial Peripheral Interface (ECSPI) can achieve high-speed data communication while significantly reducing software interrupt frequency.
 
-### 4.14.2 ECSPI Features
+#### 4.14.2 ECSPI Features
 
-+ Full-duplex synchronous serial interface.
++ Full-duplex synchronous serial interface
 + Can be configured as master/slave
 + A chip select (SS) signal
 + The continuous transfer feature allows data transmission of unlimited length.
@@ -1175,12 +1196,12 @@ ECSPI includes a 64×32 receive buffer (RXFIFO) and a 64×32 transmit buffer (TX
 + Supports Direct Memory Access (DMA)
 + Data rates up to 52 Mbit/s.
 
-### 4.14.3 FlexSPI Overview
+#### 4.14.3 FlexSPI Overview
 
-+ FlexSPI lanes support single/dual/quad mode data transfer (1/2/4 bidirectional data lines).
++ FlexSPI lanes support single/dual/quad mode data transfer (1/2/4 bidirectional data lines)
 + FlexSPI supports communication with serial flash and serial RAM devices
 
-### 4.14.4 FlexSPI Features
+#### 4.14.4 FlexSPI Features
 
 + Flexible timing (LUT table) supports various vendor devices:
   - Serial NOR Flash or other devices with SPI protocol similar to Serial NOR Flash
@@ -1193,7 +1214,7 @@ ECSPI includes a 64×32 receive buffer (RXFIFO) and a 64×32 transmit buffer (TX
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.14.5 FlexSPI External Signals
+#### 4.14.5 FlexSPI External Signals
 
 Table 4-26 SPI0 Interface Signals
 
@@ -1217,24 +1238,24 @@ Table 4-27 QSPI Interface Signal
 | **S56**| QSPI\_IO\_2| QSPI  Data2 input / output
 | **S57**| QSPI\_IO\_3| QSPI  Data3 input / output
 
-## 4.15 PWM
+### 4.15 PWM
 
-### 4.15.1 Overview
+#### 4.15.1 Overview
 
 The Pulse Width Modulation (PWM) has a 16-bit counter and is optimized to generate sound from stored sample audio images or to produce tones. It uses 16-bit resolution and a 4 × 16 data FIFO.
 
-### 4.15.2 Features
+#### 4.15.2 Features
 
-+ 16-bit up counter with selectable clock source.
-+ 4×16 FIFO to minimize interrupt overhead.
++ 16-bit up counter with selectable clock source
++ 4×16 FIFO to minimize interrupt overhead
 + 12-bit prescaler for clock division
 + Sound and melody generation
-+ Configurable for active-high or active-low output.
-+ Programmable to operate in low-power mode.
++ Configurable for active-high or active-low output
++ Programmable to operate in low-power mode
 
 Refer to i.MX 8M Plus Applications Processor Reference Manual for more details.
 
-### 4.15.3 PWM External Signal
+#### 4.15.3 PWM External Signal
 
 Table 4-28 PWM Interface Signal
 
@@ -1244,11 +1265,11 @@ Table 4-28 PWM Interface Signal
 | **S122**| LCD1\_BKLT\_PWM| Secondary  LVDS Channel Brightness Control
 | **S141**| LCD0\_BKLT\_PWM| Primary  LVDS Channel Brightness Control
 
-## 4.16 GPIO
+### 4.16 GPIO
 
 The FET-MX8MP-SMARC provides IO pins that can be used as GPIO.
 
-### 4.16.1 GPIO Signals
+#### 4.16.1 GPIO Signals
 
 Table 4-29 GPIO Interface Signal
 
@@ -1269,11 +1290,11 @@ Table 4-29 GPIO Interface Signal
 | **S142**| GPIO12| GPIO Pin 12 Preferred Output
 | **S123**| GPIO13| GPIO Pin 13 Preferred Output
 
-## 4.17 Management IO
+### 4.17 Management IO
 
 Management IO complies with the SMARC specification and is used for power management and other functions on the carrier board.
 
-### 4.17.1 IO External Signal Management 
+#### 4.17.1 IO External Signal Management 
 
 Table 4-30 GPIO Interface Signal
 
@@ -1289,15 +1310,15 @@ Table 4-30 GPIO Interface Signal
 | **S156**| BATLOW#| Low battery indication for the module
 | **S157**| TEST#| The carrier board pulls this signal low to enter the test mode (no such mode by default, which can be customized according to the requirements).
 
-## 4.18 JTAG
+### 4.18 JTAG
 
-### 4.18.1 Overview
+#### 4.18.1 Overview
 
 The SJC provides a JTAG interface to the internal logic (designed to be compatible with the JTAG TAP standard). The i.MX 8M Plus series processors use the JTAG port for production, testing, and system debugging. In addition, the SJC provides standard support for Boundary Scan Registers (BSR), with a design compatible with the IEEE 1149.1 and IEEE 1149.6 standards.
 
 During initial platform lab debugging, manufacturing testing, troubleshooting, and software debugging by authorized entities, access to the JTAG port must be available. The i.MX 8M Plus SJC integrates three security modes to prevent unauthorized access. These modes are selected through eFUSE configuration.
 
-### 4.18.2 JTAG External Signals
+#### 4.18.2 JTAG External Signals
 
 Table 4-31 JTAG Interface Signal
 
@@ -1311,13 +1332,13 @@ Table 4-31 JTAG Interface Signal
 | **U22-6**| JTAG\_TRST#| JTAG  reset, active low
 | **U22-7**| GND| GND
 
-## 4.19 RTC
+### 4.19 RTC
 
-### 4.19.1 Overview
+#### 4.19.1 Overview
 
 The FET-MX8MPQ-SMARC uses a low-power real-time clock chip that supports programmable clock outputs, interrupt outputs, and low voltage detection. All addresses and data are transferred serially via a two-wire bidirectional I2C bus at a maximum speed of 400 kbps. After each data byte is read or written, the register address is automatically incremented.
 
-### 4.19.2 Features
+#### 4.19.2 Features
 
 + Based on a 32.768 kHz crystal oscillator, it provides year, month, day, weekday, hour, minute, and second timekeeping.
 + Century Logo
@@ -1325,7 +1346,7 @@ The FET-MX8MPQ-SMARC uses a low-power real-time clock chip that supports program
 + Low standby current; typical 0.25 μA（VDD = 3.0 V，Tamb = 25 °C）
 + Alarm and timer functions.
 
-### 4.19.3 RTC Power
+#### 4.19.3 RTC Power
 
 Table 4- 32 RTC Power
 
@@ -1333,7 +1354,7 @@ Table 4- 32 RTC Power
 |----------|----------|----------
 | **S147**| VDD\_RTC| Low  current RTC circuit backup power – 3.0V nominal
 
-## 4.20 Wi-Fi \& BT
+### 4.20 Wi-Fi \& BT
 
 Table 4-33 General Specifications
 
@@ -1383,9 +1404,9 @@ Table 4-36 Operating Conditions
 | Human Body Model| +-2kV
 | Changed Device Model| +-500V
 
-## 4.21 Power Supply
+### 4.21 Power Supply
 
-### 4.21.1 Power Signals
+#### 4.21.1 Power Signals
 
 Table 4- 37 Power
 
@@ -1395,9 +1416,9 @@ Table 4- 37 Power
 | **S147**| VDD\_RTC| 
 | **P2**  **P9**  **P12**  **P15**  **P18**  **P32**  **P38**  **P47**  **P50**  **P53**  **P59**  **P68**  **P79**  **P82**  **P85**  **P88**  **P91**  **P94**  **P97**  **P100**  **P103**  **P120**  **P133**  **P142**  **S3**  **S10**  **S13**  **S16**  **S25**  **S34**  **S47**  **S61**  **S64**  **S67**  **S70**  **S73**  **S80**  **S83**  **S86**  **S89**  **S92**  **S101**  **S110**  **S119**  **S124**  **S130**  **S136**  **S143**  **S158**| GND| 
 
-## 4.22 General System Control
+### 4.22 General System Control
 
-### 4.22. 1 General System Control Signals
+#### 4.22. 1 General System Control Signals
 
 Table 4-38 General System Control Signals
 
@@ -1409,7 +1430,7 @@ Table 4-38 General System Control Signals
 | **P128**| POWER\_BTN#| Power-button  input from Carrier Board
 | **S150**| VIN\_PWR\_BAD#| Power  bad indication from Carrier Board
 
-### 4.22.2 Boot Configuration
+#### 4.22.2 Boot Configuration
 
 The SMARC hardware specification defines three SMARC pins, named BOOT\\\_SEL0# to BOOT\\\_SEL2#, which are used to indicate from which physical device the module should boot. The SMARC BOOT\\\_SELx# pins are used to abstract SoC-specific definitions into a universal SMARC standard. The following table is taken from the SMARC Hardware Specification document.
 
@@ -1442,7 +1463,7 @@ Table 4- 40 Boot Configuration
 
 
 
-# 05_SoC to Connector Pin Fan-out
+## 5. SoC to Connector Pin Fan-out
 
 Based on the pin multiplexing capabilities of the i.MX 8M, some signals available on the SMARC edge connector can be reprogrammed to support different functions.
 
@@ -1780,7 +1801,7 @@ Table 5-2 SMARC S-PIN Connector Pin Fan-out
 
 
 
-# 06_Power Consumption of the Whole Development Board
+## 6. Power Consumption of the Whole Development Board
 
 | Status:| Configuration| 
 |----------|----------|----------
@@ -1793,7 +1814,7 @@ Table 5-2 SMARC S-PIN Connector Pin Fan-out
 
 
 
-# 07_Environmental Specification
+## 7. Environmental Specification
 
 Table 7- 1 Environment Specification
 
@@ -1819,15 +1840,15 @@ Perform accurate evaluation and develop suitable thermal solutions accordingly.
 Forlinx can provide a heatsink for the FET-MX8MP-SMARC module, but please keep in mind that its usage must be accurately evaluated within the final system and that it should only be considered as part of a more comprehensive cooling solution.
 
 
-# 08_OK-MX8MPQ-SMARX Development Board Description
+## 8. OK-MX8MPQ-SMARX Development Board Description
 
-## 8.1 Development Board Interface Diagram
+### 8.1 Development Board Interface Diagram
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/8d46fa22b58145f0b488f8c226c771e2.png)
 
 Figure 8-1  OK-MX8MPQ-SMARC Embedded Development Platform Interface Diagram
 
-## 8.2 Development Board Dimension
+### 8.2 Development Board Dimension
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/c7588ee02b324c128a13d38e6542d629.png)
 
@@ -1838,7 +1859,7 @@ Mounting hole dimensions: spacing 120 mm × 180 mm, hole diameter 3.2 mm. Plate 
 
 Supply voltage: DC 12 V;
 
-## 8.3 Development Board Naming Rules
+### 8.3 Development Board Naming Rules
 
 | Field| Field Description| Value| Description
 |----------|----------|----------|----------
@@ -1855,7 +1876,7 @@ Supply voltage: DC 12 V;
 | xx| Vx.x| | 
 | :M| Manufacturer's Internal Logo| :X| It is manufacturer's internal logo without influence on use.
 
-## 8.4 Development Board  Resources
+### 8.4 Development Board  Resources
 
 The interface functions and quantities used on the OK-MX8MPQ-SMARC development board are determined based on a combination of the SMARC specification requirements and the resources provided by the processor.
 
@@ -1887,19 +1908,19 @@ The interface functions and quantities used on the OK-MX8MPQ-SMARC development b
 
 Note: The parameters in the table are the theoretical values of hardware design or CPU;
 
-## 8.5 Development Board  Resources Block Diagram
+### 8.5 Development Board  Resources Block Diagram
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/5b6f3c29e63a4196a856db02410d7ac1.png)
 
 Figure 8-3 OK-MX8MPQ-SMARC Development Board Resources Block Diagram
 
-# 09_OK-MX8MPQ-SMARC Schematic Diagram
+## 9. OK-MX8MPQ-SMARC Schematic Diagram
 
 This chapter presents the schematic diagrams of the module interfaces and the connector pin assignments for the OK-MX8MPQ-SMARC development board, along with explanatory notes and important information that requires attention.   
 **Note: The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  
 default**
 
-## 9.1 Development Board Power
+### 9.1 Development Board Power
 
 DC 12V Power Supply: A 12V adapter is connected via P5, and after being switched on by S1, power passes through a TVS diode, resettable fuse, reverse protection diode, and filter capacitors to supply power to the subsequent circuits, as shown in the figure.
 
@@ -1931,7 +1952,7 @@ The VCC\_3V3 voltage passes through the low-dropout linear regulator U1 to gener
 
 Figure 9-5: LDO Switch Output VCC\_1V8 to Provide Pull-up Power for Carrier Board Peripherals
 
-### 9.1. 1 Power Connector Pin Description
+#### 9.1.1 Power Connector Pin Description
 
 Table 9-1 P5 Interface Pin Function Description
 
@@ -1943,7 +1964,7 @@ Table 9-1 P5 Interface Pin Function Description
 
 **Note: The 12 V supplied by the adapter supplies 12 V to the PCIe device through the PMOS power switch, so try to use the power adapter provided with the development board.**
 
-## 9.2 Control Key
+### 9.2 Control Key
 
 The OK-MX8MPQ-SMARC development board is configured with a reset button and a power control button. Press the reset button for a short time to reset the whole machine after power failure.
 
@@ -1961,7 +1982,7 @@ Figure 9.2-2 On/off Button
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/00d1f8e71d8f486384793740df83d9f2.png)
 
-## 9.3 Boot Configuration
+### 9.3 Boot Configuration
 
 ![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/8b4feb6bb7c74a8f8bf49c46b90b94ed.png)
 
@@ -1985,7 +2006,7 @@ The OK-MX8MPQ-SMARC development board supports the following device boot modes:
 | Module SPI| Float| Float| Float| Float
 | USB Serial Download| X| X| X| GND
 
-## 9.4 Debugging Serial Port
+### 9.4 Debugging Serial Port
 
 The i.MX8M Plus has multiple Cortex-A53 cores and 1 x Cortex-M7 core, so each core uses its own serial port for debugging.
 
@@ -2005,7 +2026,7 @@ The development board converts two common debug serial ports into USB signals th
 
 Figure 9.4-2 Dual TTL Serial Port to USB
 
-### 9.4.1 Debug Connector Pin Description
+#### 9.4.1 Debug Connector Pin Description
 
 Table 9.4-1 P2 Interface Pin Function Description
 
@@ -2026,7 +2047,7 @@ Table 9.4-1 P2 Interface Pin Function Description
 | **E3**| GND| P| SHIELD  pin reference
 | **E4**| GND| P| SHIELD  pin reference
 
-## 9.5 USB 3.0
+### 9.5 USB 3.0
 
 The OK-MX8MPQ-SMARC development board supports 1 x USB 3.0 Type-A interface P18, as shown in Figure 6.5-1. Only used for HOST function. Add TVS devices to the USB signal cable and USB power supply for electrostatic protection and plug and unplug protection, as shown in the figure.
 
@@ -2044,7 +2065,7 @@ The external power supply voltage of the USB3.0 Type-A interface on the developm
 
 Figure 9.5.3 USB Load Switch
 
-### 9.5.1 USB3.0 Connector Pin Description
+#### 9.5.1 USB3.0 Connector Pin Description
 
 Table 9.5-1 P18 Interface Pin Function Description
 
@@ -2062,7 +2083,7 @@ Table 9.5-1 P18 Interface Pin Function Description
 | **SH**| GND| P| SHIELD  pin reference
 | **SH**| GND| P| SHIELD  pin reference
 
-## 9.6 USB2.0
+### 9.6 USB2.0
 
 The OK-MX8 MPQ-SMARC development board supports 3 x USB2.0 Type-A interfaces P20, P21, and P22, and is only used for the HOST function. Add TVS devices to USB signal cables and USB power supplies for electrostatic protection and plug and unplug protection.
 
@@ -2092,7 +2113,7 @@ Figure 9.6-5 USB 2.0-5 Type-A Interface
 
 Figure 9.6-6 USB 2.0-5 USB Load Switch
 
-### 9.6.1 USB2.0 Connector Pin Description
+#### 9.6.1 USB2.0 Connector Pin Description
 
 Table 9.6-1 P20 Interface Pin Function Description
 
@@ -2133,7 +2154,7 @@ Table 9.6-3 P22 Interface Pin Function Description
 | **7**| GND| P| SHIELD  pin reference
 | **8**| GND| P| SHIELD  pin reference
 
-## 9.7 USB2.0 OTG
+### 9.7 USB2.0 OTG
 
 The OK-MX8MPQ-SMARC development board supports 1 x USB 2.0 OTG connection to a micro USB interface. Add TVS devices to USB signal cables and USB power supplies for electrostatic protection and plug and unplug protection. As shown in the figure below:
 
@@ -2155,7 +2176,7 @@ Figure 9.7-4 VBUS Voltage Detection
 
 CARRIER\_PWR\_ON\_1.8V is the power enable pin for the development board. When the board is powered normally, both switch transistors Q18 and Q19 are turned on. The USB0\_VBUS\_DET pin of the SoM reads the VBUS\_TYPEC voltage to detect the current power status and supply voltage of the USB 2.0 Type-C port
 
-## 9.8 4G/ 5G Module
+### 9.8 4G/ 5G Module
 
 The OK-MX8MPQ-SMARC development board provides 1 x M.2 B-KEY slot for optional 4G/5G modules. The board uses DIP switch S4 and NMOS switch Q26 to adjust the feedback resistance ratio of U13, thereby changing the power output voltage
 
@@ -2177,7 +2198,7 @@ Figure 9.8-2 4G/5G Module M.2 \_ B-KEY Slot
 
 Figure 9.8-3 Micro SIM Card Slot
 
-## 9.9 Gigabit Network Port
+### 9.9 Gigabit Network Port
 
 The OK-MX8MPQ-SMARC development board supports dual 1000M/100M/10M network ports, and the PHY of the Gigabit network port is integrated on the SoM. Therefore, only the differential pair of the MDI interface needs to be led out through the RJ45 interface with its own isolation transformer, and TVS devices need to be added for electrostatic protection.
 
@@ -2195,7 +2216,7 @@ According to the SMARC protocol, the 2 x LED on the RJ45 connector are the link 
 
 Figure 9.9-3: Ethernet Port Connection in the SMARC Design Guide
 
-### 9.9.1 Gigabit Ethernet RJ45 Connector
+#### 9.9.1 Gigabit Ethernet RJ45 Connector
 
 Table 9.9-1 P4 Interface Pin Function Description
 
@@ -2247,7 +2268,7 @@ The OK - MX8MPQ - SMARC development board is equipped with the NAU88C22 24 - bit
 
 Figure 9.10-1 Audio Circuit Diagram
 
-### 9.10.1 Audio Connector Pin Description
+#### 9.10.1 Audio Connector Pin Description
 
 Table 9.10-1 P31 Interface Pin Function Description
 
@@ -2278,7 +2299,7 @@ Table 9.10-3 P29 Interface Pin Function Description
 | **3**| RSPKOUT| O| Speaker right channel output
 | **4**| GND| P| Digital  Ground
 
-## 9.11 RTC
+### 9.11 RTC
 
 In accordance with the SMARC specification, the development board is only required to provide the RTC backup power supply, VDD\_RTC. Both the RTC chip and the crystal oscillator are installed on the SoM.
 
@@ -2286,7 +2307,7 @@ In accordance with the SMARC specification, the development board is only requir
 
 Figure 9.11-1: CR2032 Battery Holder
 
-## 9.12 LVDS
+### 9.12 LVDS
 
 The OK-MX8MPQ-SMARC development board supports dual LVDS outputs routed to 2.0mm pitch dual-row headers, compatible with the Forlinx 10.1-inch LVDS display, and supports screen brightness adjustment and capacitive touch.
 
@@ -2298,7 +2319,7 @@ The other 4-lane LVDS0 channel shares the data path with DSI0 and switches betwe
 
 Figure 9.12-1 Independent 4-lane LVDS Connector
 
-### 9.12.1 LVDS Connector Pin Description
+#### 9.12.1 LVDS Connector Pin Description
 
 Table 9.12-1 P15 Interface Pin Function Description
 
@@ -2343,7 +2364,7 @@ Table 9.12-1 P15 Interface Pin Function Description
 | **37**| I2C\_GP\_DAT\_3.3V| IO| I2C  Data
 | **38**| I2C\_GP\_CK\_3.3V| O| I2C  Clock
 
-## 9.13 MIPI DSI \& LVDS
+### 9.13 MIPI DSI \& LVDS
 
 According to the SMARC protocol specification, DSI0 and LVDS0 share a set of channels and can only use one peripheral at a time. In order to fully verify the peripheral performance of the CPU, the OK-MX8 MPQ-SMARC development board separates the DSI0 signal from the LVDS0 signal through a Switch chip U18, which can be used to verify their respective peripherals.
 
@@ -2369,7 +2390,7 @@ The separated DSI0 differential signal group is connected to the FPC seat to ada
 
 Figure 9.13-4 Separated 4-lane DS0 Connector
 
-### 9.13.1 MIPI DSI \& LVDS Connector Pin Description
+#### 9.13.1 MIPI DSI \& LVDS Connector Pin Description
 
 Table 9.13-1 P16 LVDS0 Interface Pin Function Description
 
@@ -2449,7 +2470,7 @@ Table 9.13-2 P17 MIPI DSI0 Interface Pin Function Description
 | **29**| GPIO\_P14\_DSI0\_RST| O| DSI0 Reset,  active low
 | **30**| GPIO\_P06\_DSI0\_INT| O| DSI0 Touch Interrupt, active low
 
-## 9.14×MIPI CSI
+### 9.14×MIPI CSI
 
 The OK-MX8 MPQ-SMARC development board complies with the SMARC protocol and has two sets of MIPI CSI interfaces The main control chip supports 2 x ISP. A single ISP can support up to 12MP (4096x3072) @ 30fps. When dual ISPs are used, it can support up to 1080p (1936x1188) @ 80fps;
 
@@ -2467,7 +2488,7 @@ Figure 9.14-1 MIPI CSI0 Connector Schematic
 
 Figure 9.14-2 IMX8MP-EVK Camera Module Connector
 
-### 9.14.1 MIPI CS Connector Pin Description
+#### 9.14.1 MIPI CS Connector Pin Description
 
 Table 9.14-1 P12 MIPI CSI0 Interface Pin Function Description
 
@@ -2547,7 +2568,7 @@ Table 9.14-2 P13 MIPI CSI1 Interface Pin Function Description
 | **SH5**| PE| P| EARTH
 | **SH6**| PE| P| EARTH
 
-## 9.15 PCIe x 1
+### 9.15 PCIe x 1
 
 The OK-MX8MPQ-SMARC development board is equipped with a standard PCIe x1 slot, supporting PCI Express Gen3. It features an independent DC-DC power supply configuration, making it convenient for users to connect various PCIe devices.
 
@@ -2567,12 +2588,12 @@ Figure 9.15-3 MOSFET Used as a Switch to Output 12V Power for PCIe Module
 
 Note:
 
-+ For PCIe 3.0 TX/RX, AC coupling capacitors are required to be between 180nF and 265nF, with 0.22µF commonly selected. The TX coupling capacitors are placed on the SoC side, while the RX coupling capacitors are placed on the device side.
-+ PCIe uses stripline routing with an impedance requirement of 100 Ohms, and the length matching should be controlled within 10 mils. If signal traces change layers, two ground vias should accompany each of the TX\_P/N and RX\_P/N pairs.
-+ If multiple connectors are cascaded in a PCIe connection, special attention must be paid to impedance continuity and signal integrity; otherwise, it will severely affect the PCIe signals. If the PCIe signals pass through multiple connector transitions, it may prevent the signals from achieving the 8Gbps data rate required for PCIe 3.0.
++ For PCIe 3.0 TX/RX, AC coupling capacitors are required to be between 180nF and 265nF, with 0.22µF commonly selected. The TX coupling capacitors are placed on the SoC side, while the RX coupling capacitors are placed on the device side;
++ PCIe uses stripline routing with an impedance requirement of 100 Ohms, and the length matching should be controlled within 10 mils. If signal traces change layers, two ground vias should accompany each of the TX\_P/N and RX\_P/N pairs;
++ If multiple connectors are cascaded in a PCIe connection, special attention must be paid to impedance continuity and signal integrity; otherwise, it will severely affect the PCIe signals. If the PCIe signals pass through multiple connector transitions, it may prevent the signals from achieving the 8Gbps data rate required for PCIe 3.0;
 + When connecting PCIe interfaces, it is especially important to avoid connecting TX to TX. The correct connection is TX to RX, with clear identification of which side is the host and which is the device.
 
-### 9.15.1 PCIe x1 Connector Pin Description
+#### 9.15.1 PCIe x1 Connector Pin Description
 
 Table 9.15-1 P11 PCIe x1 Interface Pin Function Description
 
@@ -2615,7 +2636,7 @@ Table 9.15-1 P11 PCIe x1 Interface Pin Function Description
 | **B17**| GPIO\_P02\_PCIE\_PRSNT| I| Hot-Plug presence detect
 | **B18**| GND| P| Digital  Ground
 
-## 9.16 CANFD \& RS485
+### 9.16 CANFD \& RS485
 
 The OK-MX8MPQ-SMARC development board is equipped with 2 x CANFD converters and 2 x RS485 converters with quarantine power supply, which are connected side by side to the 2EDGRC-3.81 green terminal through 120 ohm matching resistors, common mode inductors, TVS, resettable fuse, and anti-detonator.
 
@@ -2635,7 +2656,7 @@ Figure 9.16-2 RS485 Module Circuit Diagram
 
 Figure 9.16-3 2EDGRC-3.81 Connector Outputting CANFD and RS485 Signals
 
-### 9.16.1 CANFD \& RS485 Connector Pin Description
+#### 9.16.1 CANFD \& RS485 Connector Pin Description
 
 Table 9.16-1 P27 CANFD \& RS485 Interface Pin Function Description
 
@@ -2655,7 +2676,7 @@ Table 9.16-1 P27 CANFD \& RS485 Interface Pin Function Description
 | **12**| CAN0\_H| IO| CAN  High Differential signal
 | **13**| GND\_CAN\_0| P| GND\_CAN
 
-## 9.17 HDMI
+### 9.17 HDMI
 
 The OK-MX8MPQ-SMARC development board provides 1 x HDMI output via P14, supporting HDMI 2.0a. Compatible with the HDMI v2.0a specification, it supports decoding/encoding of the following video modes. All 2D video formats are described in the CEA-861-F specification, with resolutions up to 4K\\@30fps.
 
@@ -2665,7 +2686,7 @@ Although the MIMX8ML8CVNKZAB processor's HDMI interface supports the HDMI 2.1 eA
 
 Figure 9.17-1 HDMI Interface and Protection Circuit
 
-### 9.17.1 HDMI Connector Pin Description
+#### 9.17.1 HDMI Connector Pin Description
 
 Table 9.17-1 P14 HDMI Interface Pin Function Description
 
@@ -2692,7 +2713,7 @@ Table 9.17-1 P14 HDMI Interface Pin Function Description
 | **19**| HDMI\_HPD\_5V| I| HDMI  Hot Plug Detect
 | **20**| PE| P| SHIELD  pin reference
 
-## 9.18 TF CARD
+### 9.18 TF CARD
 
 The OK-MX8MPQ-SMARC development board reserves a TF card slot, with added electrostatic protection components. Signal lines include reserved 0Ω resistors for debugging purposes.
 
@@ -2706,7 +2727,7 @@ The 3.3V power supply for the TF card is controlled by two sets of MOSFET switch
 
 Figure 9.18-2 TF Card Power Supply Circuit
 
-### 9.18.1 TF Card Connector Pin Description
+#### 9.18.1 TF Card Connector Pin Description
 
 Table 9.18-1 P27 TF Card Interface Pin Function Description
 
@@ -2726,7 +2747,7 @@ Table 9.18-1 P27 TF Card Interface Pin Function Description
 | **PAD**| GND| P| SHIELD  pin reference
 | **PAD**| GND| P| SHIELD  pin reference
 
-## 9.19 QSPI \& SPI
+### 9.19 QSPI \& SPI
 
 The OK-MX8MPQ-SMARC development board is equipped with 2 x 16MB FLASH memory chips, using QSPI and SPI interfaces respectively.
 
@@ -2738,7 +2759,7 @@ Figure 9.19-1 QSPI Module Circuit Diagram
 
 Figure 9.19-2 SPI Module Circuit Diagram
 
-## 9.20 PWM
+### 9.20 PWM
 
 The OK-MX8MPQ-SMARC development board outputs a PWM breathing light signal through the GPIO5\_PWM\_OUT\_1.8V pin to control an NPN transistor that lights an LED. The LED brightness can be adjusted by changing the PWM duty cycle.
 
@@ -2746,7 +2767,7 @@ The OK-MX8MPQ-SMARC development board outputs a PWM breathing light signal throu
 
 Figure 9.20-1 PWM LED Circuit Diagram
 
-## 9.21 I/O expand
+#### 9.21 I/O expand
 
 The soM's available I/O pins are insufficient to meet the development board's pin requirements, so a GPIO expansion chip is used on the SoM.
 
@@ -2754,7 +2775,7 @@ The soM's available I/O pins are insufficient to meet the development board's pi
 
 Figure 9.21-1 GPIO Expansion Chip
 
-## 9.22 FAN
+### 9.22 FAN
 
 The FAN speed is controlled using the GPIO5\_PWM\_OUT\_1.8V pin.
 
@@ -2763,7 +2784,7 @@ The FAN speed is controlled using the GPIO5\_PWM\_OUT\_1.8V pin.
 Figure 9.22-1 FAN Control Circuit
 
 
-# 10_OK-MX8MPQ-SMARC Hardware Design Guide
+## 10. OK-MX8MPQ-SMARC Hardware Design Guide
 
 1\. Power Design
 
@@ -2800,7 +2821,7 @@ Figure 9.22-1 FAN Control Circuit
 + If CLK is selected for grounding, it is necessary to add ground vias at least within a certain interval.
 
 
-# 11_Connector Dimension Diagram
+## 11. Connector Dimension Diagram
 
 Carrier Board Connector Model: AS0B821-S78B, SoM Dimension:
 
