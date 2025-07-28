@@ -7,7 +7,7 @@
 
    🔗 Official product overview: 
      
-     `FET-MX8MPQ-SMARC System on Module on forlinx.net <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
+     `FET-MX8MPQ-SMARC System on Module <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
 
 
 
@@ -21,16 +21,20 @@ OKMX8MPQ-SMARC Manual
 
 
 .. toctree::
-   :caption: OKMX8MPQ-SMARC Hardware Manual
+   :caption: OKMX8MPQ-SMARC Hardware
    :maxdepth: 1
 
    OK-MX8MPQ-SMARC_Hardware_Manual
 
+.. toctree::
+   :caption: OKMX8MPQ-SMARC Software
+   :maxdepth: 1
 
+   
 
 
 OKMX8MP-C Manual
-==========================================
+==================
 
 
 
