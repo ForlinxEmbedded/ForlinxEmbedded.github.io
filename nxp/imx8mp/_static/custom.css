@@ -30,6 +30,43 @@
   max-width: 1200px;  /* 默认是 800px，你可以调到 1000~1400px */
 }
 
+/* Google Fonts 引入 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&family=Fira+Code&display=swap');
+
+/* 正文字体 */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2c2c2c;
+  background-color: #ffffff;
+}
+
+/* 标题字体 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Lato', sans-serif;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* 代码字体 */
+code, pre {
+  font-family: 'Fira Code', monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #e01e5a;
+}
+
+/* 链接样式 */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 
 
