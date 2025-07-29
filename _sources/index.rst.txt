@@ -35,13 +35,13 @@ Documentation Features
 
 
 Contact Us
------------
+----------
 
 If you have any questions, please contact us at:
 
-- Contact Sales: sales@forlinx.com
-- Technical Support: support@forlinx.com
-- Website: https://www.forlinx.net
+- **Contact Sales**: `sales@forlinx.com <mailto:sales@forlinx.com>`_
+- **Technical Support**: `support@forlinx.com <mailto:support@forlinx.com>`_
+- **Website**: `www.forlinx.net <https://www.forlinx.net>`_
 
 ----
 
