@@ -124,9 +124,9 @@ Before login, ensure the network connection between the computer and the develop
 
 2\. Close the computer firewall (General computer operations, not described here in detail), then open the computer's run command.
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/0ddb4a6af9e74c2da69a786786ff152d.png)
+**![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/0ddb4a6af9e74c2da69a786786ff152d.png)**
 
-3\. Use cmd to open the computer administrator interface, and use the ping command to test the network connection status of the computer and the development board. ![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/c52686a86ab84f85a682a667b78cb6b9.png)
+3\. Use cmd to open the computer administrator interface, and use the ping command to test the network connection status of the computer and the development board.                 ![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/c52686a86ab84f85a682a667b78cb6b9.png)
 
 The data is returned, and the network connection is normal.
 
