@@ -33,10 +33,6 @@ iMX8M Plus Manuals
 
 
 
-
-
-
-
 ===========
 Contact Us
 ===========
@@ -45,12 +41,12 @@ Contact Us
 
 If you have any questions, please contact us at:
 
-- Contact Sales: sales@forlinx.com
-- Technical Support: support@forlinx.com
-- Website: https://www.forlinx.net
+- **Contact Sales**: `sales@forlinx.com <mailto:sales@forlinx.com>`_
+- **Technical Support**: `support@forlinx.com <mailto:support@forlinx.com>`_
+- **Website**: `www.forlinx.net <https://www.forlinx.net>`_
 
 ----
 
-*Wish you smooth development and thank you for choosing Forlinx Embedded!*
+*Thank you for choosing Forlinx Embedded. We're committed to supporting your development journey.*
 
 ----

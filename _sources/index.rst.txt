@@ -47,6 +47,6 @@ If you have any questions, please contact us at:
 
 ----
 
-*Wish you smooth development and thank you for choosing Forlinx Embedded!*
+*Thank you for choosing Forlinx Embedded. We're committed to supporting your development journey.*
 
 ----
