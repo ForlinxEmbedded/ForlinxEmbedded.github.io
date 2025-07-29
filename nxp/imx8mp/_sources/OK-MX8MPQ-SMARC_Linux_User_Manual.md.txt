@@ -2300,7 +2300,7 @@ Freeing pipeline ...
 
 After using the above command, turn on the camera preview and recording. After recording 300 frames, stop recording, and the file usb.mp4 will be generated in the current directory.
 
-### 5.7.2 OV5645 Test
+#### 5.7.2 OV5645 Test
 
 Check whether the OV5645 device node is identified, as shown in the following figure/dev/video2 node, and check the format and resolution supported by the camera:
 
@@ -2447,7 +2447,7 @@ Freeing pipeline ...
 
 After using the above command, turn on the camera preview and recording. After recording 300 frames, stop recording, and the file 5645.mp4 will be generated in the current directory.
 
-### 5.7.3 BASLER CAMERA Test
+#### 5.7.3 BASLER CAMERA Test
 
 Forlinx has adapted a BASLER CAMERA on the MIPI CSI1 of the carrier board. It is a MIPI camera without an ISP.   
 

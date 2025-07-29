@@ -157,10 +157,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#npu-test">5.6 NPU Test</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id7">5.7 Camera Test</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#usb-camera-test">5.7.1 USB Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ov5645-test">5.7.2 OV5645 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basler-camera-test">5.7.3 BASLER CAMERA Test</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ov5645-test">5.7.2 OV5645 Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#basler-camera-test">5.7.3 BASLER CAMERA Test</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#system-settings">6. System Settings</a><ul>
@@ -2576,9 +2576,8 @@ Freeing pipeline ...
 </div>
 <p>After using the above command, turn on the camera preview and recording. After recording 300 frames, stop recording, and the file usb.mp4 will be generated in the current directory.</p>
 </section>
-</section>
 <section id="ov5645-test">
-<h3>5.7.2 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h3>
+<h4>5.7.2 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h4>
 <p>Check whether the OV5645 device node is identified, as shown in the following figure/dev/video2 node, and check the format and resolution supported by the camera:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok-mx8mpq-smarc:~# v4l2-ctl --list-devices
  ():
@@ -2720,7 +2719,7 @@ Freeing pipeline ...
 <p>After using the above command, turn on the camera preview and recording. After recording 300 frames, stop recording, and the file 5645.mp4 will be generated in the current directory.</p>
 </section>
 <section id="basler-camera-test">
-<h3>5.7.3 BASLER CAMERA Test<a class="headerlink" href="#basler-camera-test" title="Link to this heading"></a></h3>
+<h4>5.7.3 BASLER CAMERA Test<a class="headerlink" href="#basler-camera-test" title="Link to this heading"></a></h4>
 <p>Forlinx has adapted a BASLER CAMERA on the MIPI CSI1 of the carrier board. It is a MIPI camera without an ISP.</p>
 <ol class="arabic simple">
 <li><p>Check if the BASLER device node is recognized; check the formats and resolutions supported by the camera.</p></li>
@@ -2867,6 +2866,7 @@ Freeing pipeline ...
 </pre></div>
 </div>
 <p>After using the above command, turn on the camera preview and recording. After recording 300 frames, stop recording, and the file basler.mp4 will be generated in the current directory. Because the encoder only supports 1080p, the imxvideoconvert _ g2d plugin was used for image scaling.</p>
+</section>
 </section>
 </section>
 <section id="system-settings">
