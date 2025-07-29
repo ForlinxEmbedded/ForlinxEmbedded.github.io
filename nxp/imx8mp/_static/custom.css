@@ -54,7 +54,7 @@ code, pre {
 
 /* 链接样式 */
 a {
-  color: #1a73e8;
+  color: #0071e3;
   text-decoration: none;
 }
 a:hover {
@@ -67,24 +67,22 @@ a:hover {
 .rst-content .toctree-wrapper li,
 .rst-content .toctree-wrapper a {
   font-family: 'Lato', Arial, sans-serif !important;
-  font-size: 17px !important;             /* 字号适中 */
+  font-size: 16px !important;             /* 字号适中 */
   color: #333333 !important;              /* 深灰，接近苹果正文主色 */
   line-height: 1.5 !important;
-  font-weight: 400 !important;
   text-decoration: none !important;
 }
 
 /* 鼠标悬浮时链接颜色 */
 .rst-content .toctree-wrapper a:hover {
-  color: #0071e3 !important;              /* 苹果蓝色悬浮效果 */
-  text-decoration: underline !important;
+  color: #0071e3 !important;     
 }
 
 /* 正文内页面目录标题 */
 .rst-content .toctree-wrapper > p {
   font-family: 'Montserrat', 'Lato', sans-serif !important;
   font-weight: 600 !important;
-  font-size: 20px !important;
-  color: #1d1d1f !important;              /* 极深灰，几乎黑 */
+  font-size: 24px !important;
+  color: #0071e3 !important;             
   margin-bottom: 0.5em !important;
 }
