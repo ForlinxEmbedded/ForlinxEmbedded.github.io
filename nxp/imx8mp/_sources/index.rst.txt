@@ -10,6 +10,9 @@
      `FET-MX8MPQ-SMARC System on Module <https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html>`_
 
 
+====================
+i.MX 8M Plus Manuals
+====================
 
 ===============
 OKMX8MPQ-SMARC
