@@ -11,13 +11,9 @@
 
 
 
-==================
-iMX8M Plus Manuals
-==================
-
-
+===============
 OKMX8MPQ-SMARC
----------------
+===============
 
 .. toctree::
    :caption: OKMX8MPQ-SMARC Manual
@@ -28,14 +24,13 @@ OKMX8MPQ-SMARC
    OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual
 
 
+===========
 OKMX8MP-C
-----------
+===========
 
 .. toctree::
    :caption: OKMX8MP-C Manual
    :maxdepth: 2
-
-
 
 
 
