@@ -27,9 +27,9 @@ OKMX8MPQ-SMARC
    OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual
 
 
-===========
+==========
 OKMX8MP-C
-===========
+==========
 
 .. toctree::
    :caption: OKMX8MP-C Manual
