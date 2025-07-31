@@ -22,6 +22,7 @@ iMX8M Plus Manuals
 
    OK-MX8MPQ-SMARC_Hardware_Manual
    OK-MX8MPQ-SMARC_Linux_User_Manual
+   OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual
 
 
 
