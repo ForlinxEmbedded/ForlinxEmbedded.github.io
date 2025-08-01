@@ -21,6 +21,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="OK-MX8MPQ-SMARC_Linux6.1.36_User’s Compilation Manual_V1.0" href="OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual.html" />
+    <link rel="prev" title="OK-MX8MPQ-SMARC_User’s Hardware Manual_V1.0" href="OK-MX8MPQ-SMARC_Hardware_Manual.html" />
    
   <!-- Load Font Awesome from CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -50,6 +52,158 @@
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Hardware_Manual.html">OK-MX8MPQ-SMARC_User’s Hardware Manual_V1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OK-MX8MPQ-SMARC_Linux6.1.36_User’s Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#development-board-description">1. Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok-mx8mpq-smarc-development-board-description">1.1 OK-MX8MPQ-SMARC Development Board Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#introduction-to-linux-6-1-36-system-software-resources">1.2 Introduction to Linux 6.1.36 System Software Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-and-boot-settings">1.3 Flashing and Boot Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-login">2.2 Serial Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">2.2.1 Serial Login</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-login-common-problems">2.2.2 Serial Login Common Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#network-login-methods">2.3 Network Login Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#network-connection-test">2.3.1 Network Connection Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ssh-server">2.3.2 SSH server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#system-partition">2.4 System Partition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#emmc-version">2.4.1 eMMC Version</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#system-shutdown">2.5 System Shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#platform-interface-function-use-and-test">3. Platform Interface Function Use and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction-to-interface-function">3.1 Introduction to Interface Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#network-configuration-test">3.2 Network Configuration Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opengl-test">3.3 OpenGL Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-5g-test">3.4 4G/5G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uart-test">3.5 UART Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-test">3.6 WIFI Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc-test">3.7 RTC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#watchdog-test">3.8 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ping-test">3.9 Ping Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-test">3.10 Camera Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backlight-test">3.11 Backlight Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#play-record-test">3.12 Play/Record Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#music-play-test">3.13 Music Play Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qml-video-playback-test">3.14 Qml Video Playback Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser-test">3.15 Browser Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-tool-application-and-test">4. Command Line Tool Application and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-information-query">4.1 System Information Query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frequency-test">4.2 Frequency Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#temperature-test">4.3 Temperature Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ddr-bandwidth-test">4.4 DDR Bandwidth Test:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.5 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc-function-test">4.6 RTC Function Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">4.7 UART Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcie">4.8 PCIE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-test">4.9 TF Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-test">4.10 EMMC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb">4.11 USB</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usb2-0">4.11.1 USB2.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb3-0">4.11.2 USB3.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#micro-usb">4.11.3 Micro-USB</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet-configuration">4.12 Ethernet Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gigabit-ethernet-static-ip-configuration">4.12.1 Gigabit Ethernet Static IP Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet-speed-test">4.12.2 Ethernet Speed Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#network-services">4.13 Network Services</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#web-services">4.13.1 Web Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sftp">4.13.2 SFTP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-bluetooth-test">4.14 WIFI Bluetooth Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-sta-mode">4.14.1 WIFI STA Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-ap-mode">4.14.2 WIFI AP Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bluetooth-test">4.14.3 Bluetooth Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">4.15 4G/5G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">4.16 Play/Record Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#closing-the-desktop">4.17 Closing the Desktop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led-test">4.18 LED Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sqlite3-test">4.19 SQLite3 Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pwm-test">4.20 PWM Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#screen-backlight-test">4.20.1 Screen Backlight Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#can-test">4.21 CAN Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">4.21.1 CAN Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-common-commands">4.21.2 Other Common Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#spi-test">4.22 SPI Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">4.23 GPIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-wake-up-test">4.24 Sleep Wake-up Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ipv6-test">4.25 IPv6 Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#multimedia-test">5. Multimedia Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#audio-and-video-playback">5.1 Audio and Video Playback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-hardware-encoding">5.2 Video Hardware Encoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-hardware-decoding">5.3 Video Hardware Decoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-conversion-color-space-conversion-and-rotation-scaling">5.4 Video Conversion (Color Space Conversion and Rotation Scaling)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-compositing">5.5 Video Compositing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#npu-test">5.6 NPU Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">5.7 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usb-camera-test">5.7.1 USB Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ov5645-test">5.7.2 OV5645 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basler-camera-test">5.7.3 BASLER CAMERA Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-settings">6. System Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#updating-logo">6.1 Updating Logo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#self-starting-program-settings">6.2 Self-starting Program Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eeprom-test">6.3 EEPROM Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#starting-the-watchdog-under-uboot">6.4 Starting the Watchdog Under Uboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kernel-and-device-tree-loading-via-uboot">6.5 Kernel and Device Tree Loading via Uboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-settings">6.6 Display Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dual-lvds-display-configuration">6.6.1 Dual LVDS Display Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#separate-compilation-of-u-boot-and-kernel">6.7 Separate Compilation of U-Boot and Kernel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-flashing">7. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#image-required-for-flashing">7.1 Image Required for Flashing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-u-boot-via-usb">7.2 Flashing U-Boot via USB</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-uboot-to-emmc">7.2.1 Flashing Uboot to eMMC.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-uboot-to-sd">7.2.2 Flashing Uboot to SD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-uboot-to-qspiflash">7.2.3 Flashing Uboot to QSPIFLASH</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-the-file-system-via-usb">7.3 Flashing the File System via USB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-uboot-in-file-system">7.4 Flashing Uboot in File System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-uboot-to-spiflash">7.4.1 Flashing Uboot to SPIFLASH</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-via-tf-card">7.5 Flashing via TF Card</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#making-flashing-card">7.5.1 Making Flashing Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#copying-the-required-image-to-the-flashing-card">7.5.2 Copying the Required Image to The Flashing Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-emmc-with-tf-card">7.5.3 Flashing EMMC With TF Card</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Linux_User_Compilation_Manual.html">OK-MX8MPQ-SMARC_Linux6.1.36_User’s Compilation Manual_V1.0</a></li>
 </ul>
 
         </div>
