@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK-MX8MPQ-SMARC_Linux6.1.36_User’s Compilation Manual_V1.0 &mdash; NXP IMX8MP Documentation  documentation</title>
+  <title>Linux6.1.36_User’s Compilation Manual_V1.0 &mdash; NXP IMX8MP Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=80d5ce09" />
@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="OK-MX8MPQ-SMARC_Linux6.1.36_User’s Manual_V1.0" href="OK-MX8MPQ-SMARC_Linux_User_Manual.html" />
+    <link rel="prev" title="Linux6.1.36_User’s Manual_V1.0" href="OK-MX8MPQ-SMARC_Linux_User_Manual.html" />
    
   <!-- Load Font Awesome from CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -50,26 +50,26 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Hardware_Manual.html">OK-MX8MPQ-SMARC_User’s Hardware Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Hardware_Manual.html">User’s Hardware Manual_V1.0</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Linux_User_Manual.html">OK-MX8MPQ-SMARC_Linux6.1.36_User’s Manual_V1.0</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">OK-MX8MPQ-SMARC_Linux6.1.36_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-SMARC_Linux_User_Manual.html">Linux6.1.36_User’s Manual_V1.0</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.36_User’s Compilation Manual_V1.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#preparation-before-compilation">1. Preparation Before Compilation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#description-of-the-environment">1.1 Description of the Environment</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#source-code-description">1.1.1 Source Code Description</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#compilation">1.2 Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rootfs-preparation">1.2.1 Rootfs Preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uboot-compilation">1.2.2 Uboot Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernel-compilation">1.2.3 Kernel Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extra-of-kernel-compilation">1.2.4 Extra of Kernel Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-program-compilation">1.2.5 Test Program Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#packaging-flashed-image">1.2.6 Packaging Flashed Image</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#compilation">1.2 Compilation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#rootfs-preparation">1.2.1 Rootfs Preparation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uboot-compilation">1.2.2 Uboot Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#kernel-compilation">1.2.3 Kernel Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#extra-of-kernel-compilation">1.2.4 Extra of Kernel Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#test-program-compilation">1.2.5 Test Program Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#packaging-flashed-image">1.2.6 Packaging Flashed Image</a></li>
 </ul>
 </li>
 </ul>
@@ -90,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">OK-MX8MPQ-SMARC_Linux6.1.36_User’s Compilation Manual_V1.0</li>
+      <li class="breadcrumb-item active">Linux6.1.36_User’s Compilation Manual_V1.0</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -99,8 +99,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok-mx8mpq-smarc-linux6-1-36-user-s-compilation-manual-v1-0">
-<h1>OK-MX8MPQ-SMARC_Linux6.1.36_User’s Compilation Manual_V1.0<a class="headerlink" href="#ok-mx8mpq-smarc-linux6-1-36-user-s-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+  <section id="linux6-1-36-user-s-compilation-manual-v1-0">
+<h1>Linux6.1.36_User’s Compilation Manual_V1.0<a class="headerlink" href="#linux6-1-36-user-s-compilation-manual-v1-0" title="Link to this heading"></a></h1>
 <section id="preparation-before-compilation">
 <h2>1. Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h2>
 <p>This chapter mainly describes the compilation methods for the source code related to the development board, including the separate compilation of the kernel source code, the compilation of application programs, and the packaging of the flashing image, etc., providing references for users.</p>
@@ -149,11 +149,10 @@
 <p>Files with the md5sum suffix: The md5 value of the file is stored for validation.</p>
 </section>
 </section>
-</section>
 <section id="compilation">
-<h2>1.2 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h2>
+<h3>1.2 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h3>
 <section id="rootfs-preparation">
-<h3>1.2.1 Rootfs Preparation<a class="headerlink" href="#rootfs-preparation" title="Link to this heading"></a></h3>
+<h4>1.2.1 Rootfs Preparation<a class="headerlink" href="#rootfs-preparation" title="Link to this heading"></a></h4>
 <p>Forlinx provides the rootfs package compiled with yocto:<br />
 forlinx-image-qt6-full-fet-mx8mp-smarc-20240229060101.rootfs.tar.zst ，<br />
 Plus, it offers customized modification contents based on the rootfs, okmx8mp-smarc-rootfs-overlay.tar.zst.<br />
@@ -178,7 +177,7 @@ Refer to Sections 1.2. 3, 1.2. 4, 1.2. 5 for this step.<br />
 <p>5. At this point, the rootfs directory is the root file system that will be used.</p>
 </section>
 <section id="uboot-compilation">
-<h3>1.2.2 Uboot Compilation<a class="headerlink" href="#uboot-compilation" title="Link to this heading"></a></h3>
+<h4>1.2.2 Uboot Compilation<a class="headerlink" href="#uboot-compilation" title="Link to this heading"></a></h4>
 <p>Uboot is configured as follows:</p>
 <p>Config：okmx8mp-smarc_defconfig</p>
 <p>Cross compilation chain: aarch64-linux-gnu-gcc Arch：arm</p>
@@ -190,7 +189,7 @@ root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/uboo
 <p>The final generated image file is flash.bin.</p>
 </section>
 <section id="kernel-compilation">
-<h3>1.2.3 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h3>
+<h4>1.2.3 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h4>
 <p>The kernel is configured as follows:<br />
 config：ok-mx8mp-smarc_defconfig<br />
 dts：ok-mx8mp-smarc.dts、ok-mx8mp-smarc-2gb.dts<br />
@@ -207,7 +206,7 @@ INSTALL_MOD_PATH=${OVERLAY_DIR}
 <p>The overlay directory is used to overwrite the rootfs directory, making it easier to replace existing directories and files in the rootfs directory.</p>
 </section>
 <section id="extra-of-kernel-compilation">
-<h3>1.2.4 Extra of Kernel Compilation<a class="headerlink" href="#extra-of-kernel-compilation" title="Link to this heading"></a></h3>
+<h4>1.2.4 Extra of Kernel Compilation<a class="headerlink" href="#extra-of-kernel-compilation" title="Link to this heading"></a></h4>
 <p>The reference compilation commands are shown below:<br />
 Environment variables need to be pre-configured KERNEL_DIR，OVERLAY_DIR.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>#cryptodev_1.12-r0
@@ -236,7 +235,7 @@ root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/extr
 </div>
 </section>
 <section id="test-program-compilation">
-<h3>1.2.5 Test Program Compilation<a class="headerlink" href="#test-program-compilation" title="Link to this heading"></a></h3>
+<h4>1.2.5 Test Program Compilation<a class="headerlink" href="#test-program-compilation" title="Link to this heading"></a></h4>
 <p>There are two kinds of test programs provided by Forlinx: Command line and QT.<br />
 Compile the command line test program. The reference command is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/appsrc/forlinx-cmd#  export CC=aarch64-linux-gnu-gcc
@@ -265,7 +264,7 @@ root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk/apps
 <p>The install default installation directory is target. path =./././overlay/usr/bin/, which is written in the.pro file of each QT test program. Please modify it according to the actual situation.</p>
 </section>
 <section id="packaging-flashed-image">
-<h3>1.2.6 Packaging Flashed Image<a class="headerlink" href="#packaging-flashed-image" title="Link to this heading"></a></h3>
+<h4>1.2.6 Packaging Flashed Image<a class="headerlink" href="#packaging-flashed-image" title="Link to this heading"></a></h4>
 <p>The following files and directories are required to package the burn image:<br />
 Kernel image and device tree：Image ok-mx8mp-smarc.dtb ok-mx8mp-smarc-2gb.dtb<br />
 Display logo under Uboot ：pic/logo-1280x800.bmp pic/logo-1024x600.bmp<br />
@@ -311,6 +310,7 @@ root@5d90dd71f33a:/mnt/zzy/smarc_8mp/develop/sdk_20240506/okmx8mp-smarc-sdk#  fa
 </pre></div>
 </div>
 <p>The generated burn image ok8mp-linux-fs.sdcard.a * is stored in the IMAGE PATH/images directory. Please refer to the user manual for the burn image.</p>
+</section>
 </section>
 </section>
 </section>
