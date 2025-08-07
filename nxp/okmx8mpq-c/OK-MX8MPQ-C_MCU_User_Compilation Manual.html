@@ -70,7 +70,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#program-load">3. Program Load</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#manually-loading">3.1 Manually Loading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#manual-loading">3.1 Manual Loading</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tcm">3.1.1 TCM</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ddr">3.1.2 DDR</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#flash">3.1.3 FLASH</a></li>
@@ -275,8 +275,8 @@
 <p>There are generally two ways to load M-core programs on multi-core heterogeneous processors: Uboot loading and Remoteproc framework loading.</p>
 <p>The uboot loading is to load the M-core program first and then load the A-core program in the uboot phase. There are manual loading and automatic loading. Remoteproc framework loading refers to a method where, after the A-core Linux system is fully booted, the M-core program can be manually run or stopped using commands.</p>
 <p>The Linux version of the OKMX8MPQ - C development board is lower than 5.10, so it does not currently support the Remoteproc framework for loading the M-core program. This chapter mainly introduces the two methods of manual and automatic loading through U-Boot. When the Linux version is upgraded to above 5.10, we will elaborate on the method of loading the M-core program using the Remoteproc framework.</p>
-<section id="manually-loading">
-<h3>3.1 Manually Loading<a class="headerlink" href="#manually-loading" title="Link to this heading"></a></h3>
+<section id="manual-loading">
+<h3>3.1 Manual Loading<a class="headerlink" href="#manual-loading" title="Link to this heading"></a></h3>
 <p>There are three ways of M core loading and running: TCM, DDR and Flash, and the corresponding loading commands in the uboot stage are also different. Manually load the M-core program, but do not load the A-core program later to avoid the same pin initializing in both the M-core and A-core at the same time, which may cause functional abnormalities. It is suitable for debugging programs during the development phase.</p>
 <section id="tcm">
 <h4>3.1.1 TCM<a class="headerlink" href="#tcm" title="Link to this heading"></a></h4>
