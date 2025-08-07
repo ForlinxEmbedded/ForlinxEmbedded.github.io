@@ -53,8 +53,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">MCU_User’s Manual_V1.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#application-scope"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">Application Scope</font></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#revision-history"><strong><font style="color:rgb(0,0,0);">Revision History</font></strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application">Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nxp-i-mx-8m-plus-series-description">1. NXP i.MX 8M Plus Series Description</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">1.1 Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#features">1.2  Features</a></li>
@@ -249,12 +249,12 @@
 </tbody>
 </table>
 </section>
-<section id="application-scope">
-<h2><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">Application Scope</font><a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<section id="application">
+<h2>Application<a class="headerlink" href="#application" title="Link to this heading"></a></h2>
 <p><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">This software manual is applicable to the OKMX8MPQ-C platform Linux 5.4.70 operating system of Forlinx.</font></p>
 </section>
 <section id="revision-history">
-<h2><strong><font style="color:rgb(0,0,0);">Revision History</font></strong><a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><font style="color:rgb(0,0,0);">Date</font></p></th>
@@ -283,7 +283,7 @@
 <p>• 32 KB instruction cache</p>
 <p>• 32 KB data cache</p>
 <p>• 256 KB TCM</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524448856-a538cec5-0ecd-4a52-842b-bf0a44a9a6c3.png" /></p>
+<p><img alt="Image" src="_images/a538cec50ecd4a52842bbf0a44a9a6c3.png" /></p>
 </section>
 </section>
 <section id="okmx8mpq-c-development-board-m-core-description">
@@ -378,8 +378,8 @@
 <section id="hardware-connection">
 <h4>3.1.1 Hardware Connection<a class="headerlink" href="#hardware-connection" title="Link to this heading"></a></h4>
 <p>The demo does not have any special hardware connections, only utilizing the carrier board’s 2 x LED.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524604087-336fee04-0e81-4eca-9b53-3580e32df38a.png" /></p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524604390-1af0fda2-b3b6-444f-b0d2-7b49664e49ec.png" /></p>
+<p><img alt="Image" src="_images/336fee040e814eca9b533580e32df38a.png" /></p>
+<p><img alt="Image" src="_images/1af0fda2b3b6444fb0d27b49664e49ec.png" /></p>
 </section>
 <section id="software-implementation">
 <h4>3.1.2 Software Implementation<a class="headerlink" href="#software-implementation" title="Link to this heading"></a></h4>
@@ -416,7 +416,7 @@
 <h4>3.1.3 Experimental Phenomena<a class="headerlink" href="#experimental-phenomena" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
 <p>(2) M-core debugging serial port displays the information shown below, and you will observe 2 LEDs blinking at the same time.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524604844-2abff7e1-7314-460b-bf74-08f027b38413.png" /></p>
+<p><img alt="Image" src="_images/2abff7e17314460bbf7408f027b38413.png" /></p>
 </section>
 </section>
 <section id="uart">
@@ -424,7 +424,7 @@
 <p>In the M-core SDK package, there are 7 serial port examples. These include “auto_baudrate_detect” for automatic baud rate detection, “polling” for polling-based sending and receiving, and “sdma_transfer” and “idle_detect_sdma_transfer” for DMA-based sending and receiving. Interrupt, interrupt _ transfer, and interrupt _ rb _ transfer are interrupt methods to complete the sending and receiving routine. We primarily introduce interrupt routines.</p>
 <section id="id3">
 <h4>3.2.1 Hardware Connection<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
-<p>By using a USB to Type-C connection, you can connect the debug port of a computer and a development board. The computer’s Device Manager will generate two serial ports. One serial port is for debugging the A-core Linux, and the other one is for debugging the M-core. Serial port configuration: Baud rate is 115200, data bits are 8, no flow control, stop bits are 1.<img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524605139-b8c47dd1-0f40-45e2-88d6-2591a5e6008f.png" /></p>
+<p>By using a USB to Type-C connection, you can connect the debug port of a computer and a development board. The computer’s Device Manager will generate two serial ports. One serial port is for debugging the A-core Linux, and the other one is for debugging the M-core. Serial port configuration: Baud rate is 115200, data bits are 8, no flow control, stop bits are 1.<img alt="Image" src="_images/b8c47dd10f4045e288d62591a5e6008f.png" /></p>
 </section>
 <section id="id4">
 <h4>3.2.2 Software Implementation<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
@@ -460,7 +460,7 @@
 <h4>3.2.3 Experimental Phenomena<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot；</p>
 <p>(2) Input any character in the M core debugging serial port, trigger the receiving interrupt, and then send it out. The typed character can be seen in the M core debugging serial port.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524605428-2d1b818c-dc49-4e31-b563-e6c972716dca.png" /></p>
+<p><img alt="Image" src="_images/2d1b818cdc494e31b563e6c972716dca.png" /></p>
 </section>
 </section>
 <section id="i2c">
@@ -469,7 +469,7 @@
 <section id="id6">
 <h4>3.3.1 Hardware Connection<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <p>This routine mainly uses the RTC chip PCF8563 on the development board, and there is no other special connection.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524605613-a3b1c215-51b3-4991-b36c-b6713010deb5.png" /></p>
+<p><img alt="Image" src="_images/a3b1c21551b34991b36cb6713010deb5.png" /></p>
 </section>
 <section id="id7">
 <h4>3.3.2 Software Implementation<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
@@ -509,7 +509,7 @@
 <h4>3.3.3 Experimental Phenomena<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
 <p>(2) Debugging via the M-core serial port, after entering ‘’s’’, you can set the time. Enter the command ‘’2023-01-18 15:34:06’’ to successfully set the time;</p>
-<p>(3) Debugging via the M-core serial port, after entering ‘’r’’, you can read the time, observing it continuously running.<img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524605828-22616a2c-a86a-4f28-88d5-884699507480.png" /></p>
+<p>(3) Debugging via the M-core serial port, after entering ‘’r’’, you can read the time, observing it continuously running.<img alt="Image" src="_images/22616a2ca86a4f2888d5884699507480.png" /></p>
 </section>
 </section>
 <section id="can">
@@ -518,7 +518,7 @@
 <section id="id9">
 <h4>3.4.1 Hardware Connection<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
 <p>This routine demonstrates the process of CAN master-slave communication, which requires two 8mp development boards, using DuPont cables to connect the H and L of CAN1.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524606113-6b01d0b6-056f-4ff5-98d6-698ac6109e59.png" /></p>
+<p><img alt="Image" src="_images/6b01d0b6056f4ff598d6698ac6109e59.png" /></p>
 </section>
 <section id="id10">
 <h4>3.4.2 Software Implementation<a class="headerlink" href="#id10" title="Link to this heading"></a></h4>
@@ -565,9 +565,9 @@
 <h4>3.4.3 Experimental Phenomena<a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
 <p>（1）After the compilation is completed, as described in Section 3.1.1 of the “OKMX8MPQ-C_MCU - User Compilation Manual - V1.0”, manually load the M-core program in U-Boot;</p>
 <p>（2）Debug the serial port in the M core. Input data B into the serial port of the development board which will act as the CAN slave station and wait for incoming data. Once data receiving is complete, print a message and return the received data;</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524606409-d65aad04-b95a-400c-8af1-9a270179817d.png" /></p>
+<p><img alt="Image" src="_images/d65aad04b95a400c8af19a270179817d.png" /></p>
 <p>（3）Debug the serial port in the M core, input A in the serial port of the other development board, input any key as the active transmission of the CAN master station, and then receive the return data from the slave station. After completing a transfer, enter any key to trigger the next transfer.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524606696-a16145f6-d56e-48e5-88d7-be200395cc75.png" /></p>
+<p><img alt="Image" src="_images/a16145f6d56e48e588d7be200395cc75.png" /></p>
 </section>
 </section>
 <section id="can-fd">
@@ -576,7 +576,7 @@
 <section id="id12">
 <h4>3.5.1 Hardware Connection<a class="headerlink" href="#id12" title="Link to this heading"></a></h4>
 <p>This routine demonstrates the process of CAN-FD master-slave communication. Two 8mp development boards are required, and DuPont cable is used to connect the H and L of the two development boards CAN1.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524607027-82652b8f-9fe6-4d09-a410-f1a040b45c1d.png" /></p>
+<p><img alt="Image" src="_images/82652b8f9fe64d09a410f1a040b45c1d.png" /></p>
 </section>
 <section id="id13">
 <h4>3.5.2 Software Implementation<a class="headerlink" href="#id13" title="Link to this heading"></a></h4>
@@ -627,9 +627,9 @@
 <h4>3.5.3 Experimental Phenomena<a class="headerlink" href="#id14" title="Link to this heading"></a></h4>
 <p>（1）After the compilation is completed, as described in Section 3.1.1 of the “OKMX8MPQ-C_MCU - User Compilation Manual - V1.0”, manually load the M-core program in U-Boot;</p>
 <p>（2）Debug the serial port in the M core. Input data B into the serial port of the development board which will act as the CAN-FD slave station and wait for incoming data. Once data receiving is complete, print a message and return the received data.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524607352-070133bd-8d9e-4604-9702-5da4777c07a4.png" /></p>
+<p><img alt="Image" src="_images/070133bd8d9e460497025da4777c07a4.png" /></p>
 <p>（3）Debug the serial port in the M core, input A in the serial port of the other development board, and then input any key as the active transmission of the CAN-FD master station, and then receive the return data from the slave station. After completing a transfer, enter any key to trigger the next transfer.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524607580-fdc12c7a-fd3d-4cbb-8eb2-c4d3b05e0390.png" /></p>
+<p><img alt="Image" src="_images/fdc12c7afd3d4cbb8eb2c4d3b05e0390.png" /></p>
 </section>
 </section>
 <section id="spi">
@@ -638,7 +638,7 @@
 <section id="id15">
 <h4>3.6.1 Hardware Connection<a class="headerlink" href="#id15" title="Link to this heading"></a></h4>
 <p>This routine demonstrates the process of SPI master-slave communication. Two 8 MP development boards are required. Connect the two development boards SPI with Dupont cable.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524607888-258e2c0e-fab5-40f7-866e-b153e71c91e5.png" /></p>
+<p><img alt="Image" src="_images/258e2c0efab540f7866eb153e71c91e5.png" /></p>
 <p>Connect the SPI of the two development boards one-to-one using DuPont wires with the followingwire sequence:</p>
 <p>| <font style="color:#0000FF;">Development Board 1-SPI Master Mode</font>| | <font style="color:#FF0000;">Development Board 2-SPI Slave Mode</font>|
 |:———-:|———-|:———-:|———-
@@ -711,9 +711,9 @@
 <p>（2）Board 2 is powered on first. The M-core program starts, initializes the SPI, and enters a waiting state for receiving;</p>
 <p>（3）Board 1 is powered on later. The M-core program starts, initializes the SPI, and actively sends 64 bytes of data;</p>
 <p>（4）Board 2 receives the data through the SPI, prints the received data through the serial port, and then sends the received data again;</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524608167-828aed05-6c6e-43fb-a75a-df2d7e51866b.png" /></p>
+<p><img alt="Image" src="_images/828aed056c6e43fba75adf2d7e51866b.png" /></p>
 <p>（5） Board 1 receives the feedback information through the SPI, prints the received data through the serial port; Compare it with the sent data and output the result.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524608347-9437d89e-2da9-46b4-989a-b40471855f2c.png" /></p>
+<p><img alt="Image" src="_images/9437d89e2da946b4989ab40471855f2c.png" /></p>
 <p>（6）At this time, enter any key in the development board 1 debugging serial port, and it will start a new round of the SPI send and receive process.</p>
 </section>
 </section>
@@ -759,7 +759,7 @@
 <h4>3.7.3 Experimental Phenomena<a class="headerlink" href="#id20" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
 <p>(2) After powering on the development board, the M-core program starts and completes the initialization of the timer interrupt. Press any key, and you will see the timer interrupt output printing information on the M-core’s debug serial port.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524608535-04d130eb-70cf-4417-b986-8994582d51f5.png" /></p>
+<p><img alt="Image" src="_images/04d130eb70cf4417b9868994582d51f5.png" /></p>
 </section>
 </section>
 <section id="gpt-capture">
@@ -768,7 +768,7 @@
 <section id="id21">
 <h4>3.8.1 Hardware Connection<a class="headerlink" href="#id21" title="Link to this heading"></a></h4>
 <p>Channel 1 pin capture near resistor R206, defaulting to high level on the WM8960 audio chip attachment.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524608784-b97a2e7e-0b72-4ce2-b2ea-2f67b6e5a0f3.png" /></p>
+<p><img alt="Image" src="_images/b97a2e7e0b724ce2b2ea2f67b6e5a0f3.png" /></p>
 </section>
 <section id="id22">
 <h4>3.8.2 Software Implementation<a class="headerlink" href="#id22" title="Link to this heading"></a></h4>
@@ -803,7 +803,7 @@
 <h4>3.8.3 Experimental Phenomena<a class="headerlink" href="#id23" title="Link to this heading"></a></h4>
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
 <p>(2) To wait for a rising edge interrupt after timer capture initialization. When shorting the R206 pin to the GND pin repeatedly, you will observe the timer count at the moment of capturing the rising edge in the debugging serial port of the M core.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524609070-b4f8684c-1235-4f25-aac1-72f7bbb10d49.png" /></p>
+<p><img alt="Image" src="_images/b4f8684c12354f25aac172f7bbb10d49.png" /></p>
 </section>
 </section>
 <section id="pwm">
@@ -812,7 +812,7 @@
 <section id="id24">
 <h4>3.9.1 Hardware Connection<a class="headerlink" href="#id24" title="Link to this heading"></a></h4>
 <p>Use a DuPont wire to extend pin U36-4 (PWM4) on the development board, and connect an oscilloscope to this pin and GND.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524609441-1fa57ee3-6281-4926-8a04-0912e48cd169.png" /></p>
+<p><img alt="Image" src="_images/1fa57ee3628149268a040912e48cd169.png" /></p>
 </section>
 <section id="id25">
 <h4>3.9.2 Software Implementation<a class="headerlink" href="#id25" title="Link to this heading"></a></h4>
@@ -871,7 +871,7 @@
 <p>(1) After the compilation is completed, as described in Chapter 3.1.1 of “OKMX8MPQ-C_MCU _ User’s Compilation Manual-V1.0”, manually load the M-core program in uboot;</p>
 <p>(2) After the M-core program starts and completes PWM initialization, PWM begins outputting a waveform with continuously changing duty cycle;</p>
 <p>(3) On the oscilloscope, you can observe the waveform, and if you look closely, you will see that the frequency is 1 kHz and the duty cycle is continuously changing.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524609750-a2df94d7-af41-490a-b36d-f86f86c1f4b9.png" /></p>
+<p><img alt="Image" src="_images/a2df94d7af41490ab36df86f86c1f4b9.png" /></p>
 </section>
 </section>
 <section id="audio-sai">
@@ -880,7 +880,7 @@
 <section id="id27">
 <h4>3.10.1 Hardware Connection<a class="headerlink" href="#id27" title="Link to this heading"></a></h4>
 <p>Insert the headphones into the headphone jack and plug the speaker into the left or right speaker.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/jpeg/43555360/1728524609980-05f72624-1132-4b56-9c23-979b560482e4.jpeg" /></p>
+<p><img alt="Image" src="_images/05f7262411324b569c23979b560482e4.jpeg" /></p>
 </section>
 <section id="id28">
 <h4>3.10.2 Software Implementation<a class="headerlink" href="#id28" title="Link to this heading"></a></h4>
@@ -961,7 +961,7 @@
 <section id="id30">
 <h4>3.11.1 Hardware Connection<a class="headerlink" href="#id30" title="Link to this heading"></a></h4>
 <p>Insert the headphones.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/jpeg/43555360/1728524610321-bf0b5e66-f2b4-4bf9-918f-ffd34b676f3d.jpeg" /></p>
+<p><img alt="Image" src="_images/bf0b5e66f2b44bf9918fffd34b676f3d.jpeg" /></p>
 </section>
 <section id="id31">
 <h4>3.11.2 Software Implementation<a class="headerlink" href="#id31" title="Link to this heading"></a></h4>
@@ -1017,7 +1017,7 @@
 <h4>3.11.3 Experimental Phenomena<a class="headerlink" href="#id32" title="Link to this heading"></a></h4>
 <p>(1) After compilation, as described in Section 3.1.2 of the “OKMX8MPQ-C_MCU-User Compilation Manual-V1.0,” manually load the M-core program in Uboot;</p>
 <p>(2) After the CPU completes the initialization of audio and ASRC, log the source audio information via the serial port, then play the sound at the original sampling rate. Next, start the ASRC to complete the audio sampling rate conversion, generating a new audio file. Finally, output the new source audio information via the serial port and play the sound at the converted sampling rate. <strong>Two beeps can be heard through the headset.</strong></p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524610614-a34355a1-c8a6-401b-9f02-40e6f3c6ed09.png" /></p>
+<p><img alt="Image" src="_images/a34355a1c8a6401b9f0240e6f3c6ed09.png" /></p>
 </section>
 </section>
 <section id="watchdog">
@@ -1105,11 +1105,11 @@
 <h4>3.12.3 Experimental Phenomena<a class="headerlink" href="#id35" title="Link to this heading"></a></h4>
 <p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot;</p>
 <p>(2) Upon device power-up, it resets due to power-up, forcing a software reset.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524610822-b0062dc7-10c5-475d-8504-896c954afc0e.png" /></p>
+<p><img alt="Image" src="_images/b0062dc710c5475d8504896c954afc0e.png" /></p>
 <p>After the program restarts due to a software reset, the watchdog is configured but not fed, causing a timeout and restart.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524611023-67d69a15-56c7-46d7-87fa-0111c1513223.png" /></p>
+<p><img alt="Image" src="_images/67d69a1556c746d787fa0111c1513223.png" /></p>
 <p>After the program resets, the reset reason is a watchdog timeout. At this point, the watchdog is being fed properly, and the program runs normally.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524611266-aaa42f30-7098-4dff-9126-535bff6b6990.png" /></p>
+<p><img alt="Image" src="_images/aaa42f3070984dff9126535bff6b6990.png" /></p>
 </section>
 </section>
 <section id="temperature-monitor-tmu">
@@ -1154,7 +1154,7 @@
 <p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot；</p>
 <p>(2) After the M core program completes the TMU initialization, read the average temperature and display it；</p>
 <p>(3) After waiting for the temperature to exceed 50°C, display the current temperature, trigger the interrupt, and disable the interrupt.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524611535-55ffc744-c0ca-4c8b-a1bb-c2f62c1a8c34.png" /></p>
+<p><img alt="Image" src="_images/55ffc744c0ca4c8ba1bbc2f62c1a8c34.png" /></p>
 </section>
 </section>
 <section id="sdma">
@@ -1198,7 +1198,7 @@
 <h4>3.14.3 Experimental Phenomena<a class="headerlink" href="#id41" title="Link to this heading"></a></h4>
 <p>(1) Compilation program, as introduced in Section 3.1.1 of the “OKMX8MPQ-C_MCU User Compilation Manual V1.0”, manually loads M core program in U-Boot；</p>
 <p>(2) After the CPU completes the DMA initialization, the serial port prints the value of the destination memory, initiates the transfer process, completes the copying of data from the source address to the destination address in the DDR memory, and then prints the value of the destination memory from the serial port.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524611747-15499862-8bab-44f8-9c93-e32563a0d465.png" /></p>
+<p><img alt="Image" src="_images/154998628bab44f89c93e32563a0d465.png" /></p>
 </section>
 </section>
 <section id="rdc">
@@ -1261,7 +1261,7 @@
 <p>(2) The M7 core is configured to not access GPIO5. Attempting to control GPIO5 output triggers a hardware error. The access rights to GPIO5 are restored afterwards；</p>
 <p>(3) The M7 core is configured with Sema42 mutex. When GPIO5 is not locked, attempting to control GPIO5 output triggers a hardware error. Locking GPIO5 restores access rights to GPIO5；</p>
 <p>(4) The M7 core configuration cannot access the memory. At this time, accessing this segment of memory triggers a hardware error and restores the access right to this segment of memory.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524612024-3495fdc0-5ce7-4aee-b400-16f5b9f6fb83.png" /></p>
+<p><img alt="Image" src="_images/3495fdc05ce74aeeb40016f5b9f6fb83.png" /></p>
 </section>
 </section>
 <section id="ipc">
@@ -1328,14 +1328,14 @@
 <p>① Enter the<font style="color:#0000FF;">boot</font>command in the A-core debugging serial port to start the A-core.</p>
 <p>② In the shell interface, enter:</p>
 <p><font style="color:#0000FF;">insmod /lib/modules/5.4.70-2.3.0-00009-gd79f62857237/kernel/drivers/rpmsg/imx_rpmsg_tty.ko</font>，This operation is required only once and is not required after subsequent power-up. (Where 5.4.70-2.3.0-00009-gd79f62857237 is the kernel version number, it may vary with Linux version upgrades, requiring users to synchronize and adjust commands accordingly.)</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524612244-4058a06e-6d5f-48d7-b231-fe67dc9cc4d2.png" /></p>
+<p><img alt="Image" src="_images/4058a06e6d5f48d7b231fe67dc9cc4d2.png" /></p>
 <p>③ After power-on, you can directly enter or automatically run the script  <font style="color:#0000FF;">modprobe imx_rpmsg_tty</font>. Enter the command <font style="color:#0000FF;">ls /dev</font>, and you can see the device file ttyRPMSG30.</p>
 <p>④ Copy the rpmsg _ pingpang to/home/root, and enter the c<font style="color:#0000FF;">chmod 777 rpmsg_pingpang</font>command to modify the permissions.</p>
 <p>⑤Enter<font style="color:#0000FF;">./rpmsg_pingpang</font>Command, the A-core will send hello world! To the M-core! There are 12 characters in total, and the M core carries out ping-pong sending and receiving processing synchronously.</p>
 <p>At this time, when debugging the serial port in the M core, you will see the receiving and sending information.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524612500-ad4f316e-5b42-47f6-94b7-45f02a679837.png" /></p>
+<p><img alt="Image" src="_images/ad4f316e5b4247f694b745f02a679837.png" /></p>
 <p>At this time, when debugging the serial port in the A core, you will see the receiving and sending information.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728524612823-ea74d6a6-edf6-4109-bc62-f460e6098adb.png" /></p>
+<p><img alt="Image" src="_images/ea74d6a6edf64109bc62f460e6098adb.png" /></p>
 </section>
 </section>
 </section>
@@ -1481,7 +1481,7 @@
 <p>(2) Queue: Every 200ms, the queue send task sends data, and the queue receive task retrieves data. It transitions from a blocked state to a running state, and prints the count；</p>
 <p>(3) Software timer: Every 1s, when the time expires, the callback function is called, and the count is printed；</p>
 <p>(4) Semaphore: Every 5ms, the system clock tick interrupt calls a function. After exceeding 500 times, the semaphore is released. Semaphore task acquires the semaphore, transitions from the blocked state to the running state, and prints the count.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728525369307-0bf91e12-2bd4-4eec-a4f7-33a717176616.png" /></p>
+<p><img alt="Image" src="_images/0bf91e122bd44eeca4f733a717176616.png" /></p>
 </section>
 </section>
 <section id="freertos-peripheral">
@@ -1588,7 +1588,7 @@
 <h4>4.2.3 Experimental Phenomena<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
 <p>(1) Compile the program, as described in Chapter 3.1.1 of OKMX8MPQ-C _ MCU-User Compilation Manual-V1.0, and manually load the M core program in uboot;</p>
 <p>(2) After the device is powered on, it prints program information through the serial port. Then, by entering four characters through the keyboard, the M-core debugging serial port will echo those characters. The process is repeated to demonstrate that the program is running successfully.</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2024/png/43555360/1728525369504-a619473b-714a-43c2-8647-5104878fae78.png" /></p>
+<p><img alt="Image" src="_images/a619473b714a43c286475104878fae78.png" /></p>
 </section>
 </section>
 </section>
