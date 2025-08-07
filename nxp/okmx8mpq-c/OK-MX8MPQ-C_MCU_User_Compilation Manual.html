@@ -55,18 +55,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application">Application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#environment-setup">1. Environment Setup</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#iar">1.1 IAR</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installation-of-j-link-driver">1.2 Installation of J-Link Driver</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#development-environment-validation">1.3 Development Environment Validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-setup">1. Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#iar">1.1 IAR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-of-j-link-driver">1.2 Installation of J-Link Driver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment-validation">1.3 Development Environment Validation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#program-compilation-download">2. Program Compilation &amp; Download</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#compilation-program">2.1 Compilation Program</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#program-download">2.2 Program Download</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#program-compilation-download">2. Program Compilation &amp; Download</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#compilation-program">2.1 Compilation Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#program-download">2.2 Program Download</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#program-load">3. Program Load</a><ul>
@@ -182,13 +180,14 @@
 </tr>
 </tbody>
 </table>
+</section>
 <section id="environment-setup">
-<h3>1. Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading"></a></h3>
+<h2>1. Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading"></a></h2>
 <p>IAR’s Embedded Workbench series is an enhanced integrated development platform that integrates file editing, project management, compilation, linking, and debugging tools required for developing embedded systems. IAR’s distinctive CSPY debugger not only allows for pure software simulation without target hardware during the early stages of system development but also enables real-time on-line simulation and debugging in conjunction with the J-Link/J-Trace hardware emulator.</p>
 <p>J-Link is an open source project of SEGGER. Its goal is to enable embedded developers to burn, verify and debug with open hardware and software systems through JTAG interfaces.</p>
 <p>For M-core development of the i.MX 8M Plus processor, IAR is used to manage program configuration, compilation, and software simulation, while J-Link is integrated for hardware emulation capabilities.</p>
 <section id="iar">
-<h4>1.1 IAR<a class="headerlink" href="#iar" title="Link to this heading"></a></h4>
+<h3>1.1 IAR<a class="headerlink" href="#iar" title="Link to this heading"></a></h3>
 <p>Users can download the IAR used by OKMX8MPQ-C development board routines, or use the installation package under the M-core SDK package tool file. Please select to use 9.20.1 and above.</p>
 <p>Step1: In the M Core SDK package tools file， double-click the IAR installer to install it<font style="color:#222222;">.</font></p>
 <p><img alt="Image" src="_images/bc1479c81f604cbb8464d01073cb18bf.png" /></p>
@@ -204,7 +203,7 @@
 <p><img alt="Image" src="_images/ff3ce445ae024bcbbca2d3463fafccde.png" /></p>
 </section>
 <section id="installation-of-j-link-driver">
-<h4>1.2 Installation of J-Link Driver<a class="headerlink" href="#installation-of-j-link-driver" title="Link to this heading"></a></h4>
+<h3>1.2 Installation of J-Link Driver<a class="headerlink" href="#installation-of-j-link-driver" title="Link to this heading"></a></h3>
 <p>Step 1: In the M core SDK package tool-&gt;- file, double-click the- installer to install it. The J-Link version should be above 7.56<font style="color:#222222;">.</font></p>
 <p><img alt="Image" src="_images/3241cc8f623041e99e5a4a0678141c8d.png" /></p>
 <p>Step 2: <font style="color:#222222;">Click the “Next”</font>.</p>
@@ -222,7 +221,7 @@
 <p>After completing the above steps, the IAR software and J-link have been installed and updated, and the M7 core of 8MP can use IAR to compile and simulate programs like other microcontrollers.</p>
 </section>
 <section id="development-environment-validation">
-<h4>1.3 Development Environment Validation<a class="headerlink" href="#development-environment-validation" title="Link to this heading"></a></h4>
+<h3>1.3 Development Environment Validation<a class="headerlink" href="#development-environment-validation" title="Link to this heading"></a></h3>
 <p>Step 1: As shown in the figure below, open the hello-world routine project in the SDK, and double-click to open the IAR project.</p>
 <p><img alt="Image" src="_images/6adb69d755c84c35a84490b96ea2c116.png" /></p>
 <p>Step 2: Click the Compile button on the toolbar or press the shortcut key F7 to finish compiling the program.</p>
@@ -236,9 +235,9 @@
 </section>
 </section>
 <section id="program-compilation-download">
-<h3>2. Program Compilation &amp; Download<a class="headerlink" href="#program-compilation-download" title="Link to this heading"></a></h3>
+<h2>2. Program Compilation &amp; Download<a class="headerlink" href="#program-compilation-download" title="Link to this heading"></a></h2>
 <section id="compilation-program">
-<h4>2.1 Compilation Program<a class="headerlink" href="#compilation-program" title="Link to this heading"></a></h4>
+<h3>2.1 Compilation Program<a class="headerlink" href="#compilation-program" title="Link to this heading"></a></h3>
 <p>There are three ways to load the M-core program for the i.MX 8M Plus processor, on-chip memory TCM, off-chip memory DDR, and off-chip Flash. The on-chip memory TCM has the highest execution efficiency but a relatively small capacity; the off-chip memory DDR has the second-highest efficiency and a larger capacity; the off-chip Flash has the lowest efficiency.</p>
 <p>The Forlinx OKMX8MPQ - C development board does not have an externally expanded NorFlash, so it only supports the first two loading methods. Most of the programs in the SDK package use the TCM method. Only the ASRC example involves audio files with different sampling rates, which exceed the size of the TCM, so the DDR method is used instead.</p>
 <p>The following details how to use IAR to generate executable files for the three different loading methods.</p>
@@ -258,7 +257,7 @@
 <p><img alt="Image" src="_images/c092b57f4a3a4832aa3c45509952086a.png" /></p>
 </section>
 <section id="program-download">
-<h4>2.2 Program Download<a class="headerlink" href="#program-download" title="Link to this heading"></a></h4>
+<h3>2.2 Program Download<a class="headerlink" href="#program-download" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>You can use the IAR software to compile the program of the Forlinx M-core software development kit to generate *.bin and files in the project directory /IAR/debug directory.</p></li>
 </ol>
@@ -267,7 +266,6 @@
 <li><p>Use various methods such as serial port Xmodem, network FTP, SCP, USB flash drive, TF card, etc., to copy the *.bin file from the computer to the /run/media/mmcblk2p1/ directory of the SoM. Then, enter the <font style="color:#0000FF;">sync </font>command to synchronize the program to the eMMC.</p></li>
 </ol>
 <p>Power cycle the development board. The A-core U-Boot can load the M-core program either manually or automatically.</p>
-</section>
 </section>
 </section>
 <section id="program-load">
