@@ -652,14 +652,40 @@
 <p>This routine demonstrates the process of SPI master-slave communication. Two 8 MP development boards are required. Connect the two development boards SPI with Dupont cable.</p>
 <p><img alt="Image" src="_images/258e2c0efab540f7866eb153e71c91e5.png" /></p>
 <p>Connect the SPI of the two development boards one-to-one using DuPont wires with the followingwire sequence:</p>
-<p>| <font style="color:#0000FF;">Development Board 1-SPI Master Mode</font>| | <font style="color:#FF0000;">Development Board 2-SPI Slave Mode</font>|
-|:———-:|———-|:———-:|———-
-| <font style="color:#0000FF;">Pin name</font>| <font style="color:#0000FF;">Development board location</font>| <font style="color:#FF0000;">Pin name</font>| <font style="color:#FF0000;">Development board location</font>
-| <font style="color:#0000FF;">MISO</font>| <font style="color:#0000FF;">P40-10</font>| <font style="color:#FF0000;">MISO</font>| <font style="color:#FF0000;">P40-10</font>
-| <font style="color:#0000FF;">MOSI</font>| <font style="color:#0000FF;">P40-8</font>| <font style="color:#FF0000;">MOSI</font>| <font style="color:#FF0000;">P40-8</font>
-| <font style="color:#0000FF;">SCK</font>| <font style="color:#0000FF;">P40-1</font>| <font style="color:#FF0000;">SCK</font>| <font style="color:#FF0000;">P40-1</font>
-| <font style="color:#0000FF;">SS0</font>| <font style="color:#0000FF;">P40-3</font>| <font style="color:#FF0000;">SS0</font>| <font style="color:#FF0000;">P40-3</font>
-| <font style="color:#0000FF;">GND</font>| <font style="color:#0000FF;">P40-4/P40-7</font>| <font style="color:#FF0000;">GND</font>| <font style="color:#FF0000;">P40-4/P40-7</font></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><font style="color:#0000FF;">Development Board 1–SPI Mast Mode</font></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><font style="color:#FF0000;">Development Board 2–SPI Slave Mode</font></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><font style="color:#0000FF;">Pin Name</font></p></td>
+<td><p><font style="color:#0000FF;">Development Board Location</font></p></td>
+<td class="text-center"><p><font style="color:#FF0000;">Pin Name</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#0000FF;">MISO</font></p></td>
+<td><p><font style="color:#0000FF;">P40-10</font></p></td>
+<td class="text-center"><p><font style="color:#FF0000;">MISO</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#0000FF;">MOSI</font></p></td>
+<td><p><font style="color:#0000FF;">P40-8</font></p></td>
+<td class="text-center"><p><font style="color:#FF0000;">MOSI</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#0000FF;">SCK</font></p></td>
+<td><p><font style="color:#0000FF;">P40-1</font></p></td>
+<td class="text-center"><p><font style="color:#FF0000;">SCK</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#0000FF;">SS0</font></p></td>
+<td><p><font style="color:#0000FF;">P40-3</font></p></td>
+<td class="text-center"><p><font style="color:#FF0000;">SS0</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#0000FF;">GND</font></p></td>
+<td><p><font style="color:#0000FF;">P40-4/P40-7</font></p></td>
+<td class="text-center"><p><font style="color:#FF0000;">GND</font></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="id16">
 <h4>3.6.2 Software Implementation<a class="headerlink" href="#id16" title="Link to this heading"></a></h4>
