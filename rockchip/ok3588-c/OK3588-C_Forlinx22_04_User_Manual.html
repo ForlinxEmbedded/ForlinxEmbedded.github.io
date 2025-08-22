@@ -102,13 +102,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ok527-platform-interface-function-use-and-test">3. OK527 Platform Interface Function Use and Test</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#desktop-function-test">3.1 Desktop Function Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#virtual-keyboard-test">3.1.1 Virtual Keyboard Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#audio-and-video-playback">3.1.2 Audio and Video Playback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#network-configuration-test">3.1.3 Network Configuration Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#multi-screen-mirror-and-joint-displays">3.1.4 Multi-screen Mirror and Joint Displays</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wifi-test">3.1.5 WIFI Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bluetooth-test">3.1.6 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#desktop-function-test">3.1 Desktop Function Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#virtual-keyboard-test">3.1.1 Virtual Keyboard Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio-and-video-playback">3.1.2 Audio and Video Playback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#network-configuration-test">3.1.3 Network Configuration Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#multi-screen-mirror-and-joint-displays">3.1.4 Multi-screen Mirror and Joint Displays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-test">3.1.5 WIFI Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bluetooth-test">3.1.6 Bluetooth Test</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#qt-tests">3.2 Qt Tests</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#g-5g-test">3.2.1 4G/5G Test</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#uart-test">3.2.2 UART Test</a></li>
@@ -855,15 +857,14 @@ Select  display
 <p>Forlinx Desktop 22.04 system is a desktop operating system built by Forlinx on the basis of Ubuntu. It is fully compatible with Ubuntu 22.04 and supports apt-get. Compared with the traditional Linux system, it is easier to use.</p>
 <p>After the development board boots, the desktop display is as follows:</p>
 <p><u><font style="color:#000000;"> </font></u><img alt="" src="_images/1718953718829-090c44bc-6edb-4666-a947-de50c3c5b2cd.png" /></p>
-</section>
 <section id="virtual-keyboard-test">
-<h3>3.1.1 Virtual Keyboard Test<a class="headerlink" href="#virtual-keyboard-test" title="Link to this heading"></a></h3>
+<h4>3.1.1 Virtual Keyboard Test<a class="headerlink" href="#virtual-keyboard-test" title="Link to this heading"></a></h4>
 <p>In the desktop environment, to facilitate text input when there is no physical keyboard, a virtual keyboard is installed in the OK3588 Forlinx Ubuntu desktop environment. You can swipe up from the bottom of the screen to access it.</p>
 <p><u><font style="color:#000000;"> </font></u><img alt="" src="_images/1718953719177-718bd926-d19f-4624-b704-88f99f662c22.png" /></p>
 <p><strong>Note: The virtual keyboard is disabled when a USB keyboard is connected.</strong></p>
 </section>
 <section id="audio-and-video-playback">
-<h3>3.1.2 Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h3>
+<h4>3.1.2 Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h4>
 <p><font style="color:#000000;">Click</font><u><font style="color:#000000;"> </font></u><font style="color:#000000;">the icon to enter the video player, which can play music and video.</font></p>
 <p><img alt="" src="_images/1718953719526-dd9bfa74-9f28-4d0a-8876-96e6424c03d6.png" /></p>
 <p><img alt="" src="_images/1718953719885-5fda53de-ae9f-4940-8040-918aa8f62280.png" /></p>
@@ -871,7 +872,7 @@ Select  display
 <p><img alt="" src="_images/1718953720104-4e01cdbb-1d64-4456-b767-d0e57d5f7d08.png" /></p>
 </section>
 <section id="network-configuration-test">
-<h3>3.1.3 Network Configuration Test<a class="headerlink" href="#network-configuration-test" title="Link to this heading"></a></h3>
+<h4>3.1.3 Network Configuration Test<a class="headerlink" href="#network-configuration-test" title="Link to this heading"></a></h4>
 <p><font style="color:#000000;">When OK3588 is started, dhclient starts the network card eth0 by default. If you want to set it to a static IP, you can set it as follows:</font></p>
 <p><font style="color:#000000;">Click the network settings icon in the upper right corner:</font></p>
 <p><img alt="" src="_images/1718953720403-e60ad920-fe55-4c02-b61b-fdb2df26b649.png" /></p>
@@ -884,7 +885,7 @@ Select  display
 <p>Click “Apply” and restart the board to change to the static IP.</p>
 </section>
 <section id="multi-screen-mirror-and-joint-displays">
-<h3>3.1.4 Multi-screen Mirror and Joint Displays<a class="headerlink" href="#multi-screen-mirror-and-joint-displays" title="Link to this heading"></a></h3>
+<h4>3.1.4 Multi-screen Mirror and Joint Displays<a class="headerlink" href="#multi-screen-mirror-and-joint-displays" title="Link to this heading"></a></h4>
 <p><strong>Note: The current version only supports the combination of two HDMI and DP, as well as two MIPI screens for mirror display; if there are more than two screens, they will be forcibly configured as join displays.</strong></p>
 <ol class="arabic simple">
 <li><p>Mirrored configuration</p></li>
@@ -909,7 +910,7 @@ Select  display
 <p><img alt="" src="_images/1718953722400-24c8d868-a4ab-4a3d-a265-4df42a873029.png" /></p>
 </section>
 <section id="wifi-test">
-<h3>3.1.5 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
+<h4>3.1.5 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h4>
 <p>OK3588 platform supports 2 x WIFI Bluetooth 2-in-1 modules: AW-XM458. WIFI supports 2.4 G and 5G bands.</p>
 <p>Right click “Display Settings” in the blank space and select “Wi-Fi”.</p>
 <p><img alt="" src="_images/1718953722663-5b7cd2ba-de07-4459-ac53-a7b8d6a15496.png" /></p>
@@ -919,7 +920,7 @@ Select  display
 <p><img alt="" src="_images/1718953723226-44a2c96b-9e4f-4f50-b2d4-d9a3a07e7b66.png" /></p>
 </section>
 <section id="bluetooth-test">
-<h3>3.1.6 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h3>
+<h4>3.1.6 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h4>
 <p>OK3588 supports two models of AW-XM458 modules and integrates Bluetooth functions. This section demonstrates the use of Bluetooth for data transmission between the mobile phone and the development board and supports Bluetooth 5.0.</p>
 <p>1. Loading module drivers</p>
 <p>Plug in the module when the power is off, and start when the power is on.</p>
@@ -936,6 +937,7 @@ Select  display
 <p>Select “Accept File” on the phone:</p>
 <p><img alt="" src="_images/1718953724251-9d7a6cf1-bc5b-4b39-9dd4-316bb12d7d8f.jpeg" /></p>
 <p><img alt="" src="_images/1718953724507-6ceb6112-817d-4f2b-bcbd-eb133c4fbf5e.png" /></p>
+</section>
 </section>
 <section id="qt-tests">
 <h3>3.2 Qt Tests<a class="headerlink" href="#qt-tests" title="Link to this heading"></a></h3>
