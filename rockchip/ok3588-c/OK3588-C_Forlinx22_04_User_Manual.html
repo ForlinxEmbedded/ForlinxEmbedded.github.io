@@ -336,7 +336,7 @@ mlan                  466944  1 moal
 <p>The connection of OK3588 SoM and the carrier board is board-to-board, and the main interfaces are as follows:</p>
 <p><img alt="" src="_images/1718953695308-3a5d8690-eee1-46cd-b38f-15e12e2cf6bb.png" /></p>
 <p><strong>Front</strong></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953695772-11285dc1-45d5-45b5-b467-4bc5e3a4e2d6.png" /></p>
+<p><img alt="" src="_images/1718953695772-11285dc1-45d5-45b5-b467-4bc5e3a4e2d6.png" /></p>
 <p><strong>Back</strong></p>
 <p><strong>Note：</strong></p>
 <p>The software manual no longer includes hardware parameter details. Prior to software development, please read the “OK3588-C_Hardware User’s Manual” located at “Hardware Information\User Manual” path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.</p>
@@ -383,7 +383,7 @@ mlan                  466944  1 moal
 </ul>
 <p>To switch to “normal mode”, you need to add the following to the reference in the kernel device tree #include “rk3588j.dtsi”,</p>
 <p>path: OK3588_Linux_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953696103-03432661-8fbd-4519-b42f-5c27f8638daa.png" /></p>
+<p><img alt="" src="_images/1718953696103-03432661-8fbd-4519-b42f-5c27f8638daa.png" /></p>
 <p><strong>RK3588 commercial grade SoM frequencies are described below:</strong></p>
 <p>Refer to “Rockchip RK3588 Datasheet V1.7-17/11/2023.pdf ”</p>
 <p>Table 3-2 Recommended operating conditions</p>
@@ -587,7 +587,7 @@ mlan                  466944  1 moal
 <li><p>Network cable (for network login)</p></li>
 <li><p>Screen: Connect the screen according to the development board interface (optional if display is not needed).</p></li>
 </ul>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953705899-d5052341-1cda-43db-953c-82585b4e2d0d.png" /></p>
+<p><img alt="" src="_images/1718953705899-d5052341-1cda-43db-953c-82585b4e2d0d.png" /></p>
 </section>
 <section id="debugging-serial-driver-installation">
 <h3>2.2 Debugging Serial Driver Installation<a class="headerlink" href="#debugging-serial-driver-installation" title="Link to this heading"></a></h3>
@@ -607,11 +607,11 @@ mlan                  466944  1 moal
 </ul>
 <p>In the following, take the putty terminal software as an example to introduce the serial port login method:</p>
 <p>Step 1: Connect the serial port number of the computer—check the serial port number from the device manager (Based on the port actually recognized by the computer );</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953706270-24c98826-635c-4567-a11a-7a286872d1a2.png" /></p>
+<p><img alt="" src="_images/1718953706270-24c98826-635c-4567-a11a-7a286872d1a2.png" /></p>
 <p>Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953706472-0b8ecdd7-3a37-495c-a85c-4b705514b0c5.png" /></p>
+<p><img alt="" src="_images/1718953706472-0b8ecdd7-3a37-495c-a85c-4b705514b0c5.png" /></p>
 <p>Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM3 as an example, save the settings, open the serial port again later, and click on the saved port number;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953706654-ed79f3d7-0f94-4f4d-ad43-d699760223fa.png" /></p>
+<p><img alt="" src="_images/1718953706654-ed79f3d7-0f94-4f4d-ad43-d699760223fa.png" /></p>
 <p>Step 4: Turn on the power switch of the development board, and the serial port will output the print information until the login interface appears;</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Ubuntu 22.04.3 LTS ok3588 ttyFIQ0
 
@@ -650,9 +650,9 @@ root@ok3588:~#
 <p>Before logging into the network, ensure that the network connection between the computer and the development board is functioning properly. The connection status can be tested using the ping command. The specific method is as follows:</p>
 <p>1. Connect the development board’s eth0 interface to the computer using an Ethernet cable. Power on the board and boot the kernel. Confirm the blue heartbeat LED is blinking. Check the network card connection, ensuring its LED flashes rapidly. Once confirmed, proceed with testing the network connection;</p>
 <p>2. Close the computer firewall (General computer operations, not described here in detail), then open the computer’s run command;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953706869-aa1cdad7-d570-41c3-99d2-1eb1bddc8ec2.png" /></p>
+<p><img alt="" src="_images/1718953706869-aa1cdad7-d570-41c3-99d2-1eb1bddc8ec2.png" /></p>
 <p>3. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953707089-8e908752-89df-4cc3-8205-f869c4a51516.png" /></p>
+<p><img alt="" src="_images/1718953707089-8e908752-89df-4cc3-8205-f869c4a51516.png" /></p>
 <p>A data return indicates a normal network connection.</p>
 </section>
 <section id="ssh-server">
@@ -664,9 +664,9 @@ root@ok3588:~#
 <li><p><strong>If using root login, we need to change the password before using ssh login and scp for file transfer.</strong></p></li>
 </ul>
 <p>1. Use ssh to log in the development board;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953707283-28b724e2-6103-4b40-a4de-b078988d2b9f.png" /></p>
+<p><img alt="" src="_images/1718953707283-28b724e2-6103-4b40-a4de-b078988d2b9f.png" /></p>
 <p>Click “Open”, the following dialog box will appear, click “Accept” to enter the login interface;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953707495-2454bed7-e0e9-4068-963f-973e1133976d.png" /></p>
+<p><img alt="" src="_images/1718953707495-2454bed7-e0e9-4068-963f-973e1133976d.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>login as: forlinx
 forlinx@192.168.8.156&#39;s password:                     //Enter the password forlinx for the forlinx account
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.10.160 aarch64)
@@ -703,9 +703,9 @@ forlinx@ok3588:~$
 <p>The OK3588 development board supports SFTP service and it is automatically enabled at startup, so it can be used as an SFTP server after setting the IP address. The following describes how to utilize the FTP tool for file transfer.</p>
 <p>Install the FileZilla tool on Windows and follow the steps shown in the image below to configure it. Use “forlinx” as both the username and password.</p>
 <p>Open the filezilla tool, click on File and select Site Manager.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953707682-177b053a-ac16-43fc-99d1-99e7844d8dad.png" /></p>
+<p><img alt="" src="_images/1718953707682-177b053a-ac16-43fc-99d1-99e7844d8dad.png" /></p>
 <p>After successful login, you can upload and download.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953707897-7c73d3b9-c501-44df-951c-593100a0fdcc.png" /></p>
+<p><img alt="" src="_images/1718953707897-7c73d3b9-c501-44df-951c-593100a0fdcc.png" /></p>
 </section>
 </section>
 <section id="screen-switching">
@@ -771,7 +771,7 @@ Select  display
 <p><strong>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
 <p>The device tree path :kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</p>
 <p>In the kernel source code, open the device dtsi file and find the following node:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953708187-1ad4fbec-d772-4b30-849f-14c22e3f7385.png" /></p>
+<p><img alt="" src="_images/1718953708187-1ad4fbec-d772-4b30-849f-14c22e3f7385.png" /></p>
 <p>The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.</p>
 <p><strong>Parameter Description:</strong></p>
 <table class="docutils align-default">
@@ -835,7 +835,7 @@ Select  display
 <p><strong>For the display interface set to “OFF”, blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.</strong></p>
 <p><strong>Examples</strong>:</p>
 <p>Assign VP0 to HDMI0, VP1 to HDMI1, VP2 unused, and VP3 for RGB use. Set the main screen to HDMI0.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953708390-7604cfd4-12a6-43bd-a854-d3fa1126f35b.png" /></p>
+<p><img alt="" src="_images/1718953708390-7604cfd4-12a6-43bd-a854-d3fa1126f35b.png" /></p>
 <p>After saving, recompile to generate the image.</p>
 </section>
 </section>
@@ -854,33 +854,33 @@ Select  display
 <h3>3.1 Desktop Function Test<a class="headerlink" href="#desktop-function-test" title="Link to this heading"></a></h3>
 <p>Forlinx Desktop 22.04 system is a desktop operating system built by Forlinx on the basis of Ubuntu. It is fully compatible with Ubuntu 22.04 and supports apt-get. Compared with the traditional Linux system, it is easier to use.</p>
 <p>After the development board boots, the desktop display is as follows:</p>
-<p><u><font style="color:#000000;"> </font></u><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953718829-090c44bc-6edb-4666-a947-de50c3c5b2cd.png" /></p>
+<p><u><font style="color:#000000;"> </font></u><img alt="" src="_images/1718953718829-090c44bc-6edb-4666-a947-de50c3c5b2cd.png" /></p>
 </section>
 <section id="virtual-keyboard-test">
 <h3>3.1.1 Virtual Keyboard Test<a class="headerlink" href="#virtual-keyboard-test" title="Link to this heading"></a></h3>
 <p>In the desktop environment, to facilitate text input when there is no physical keyboard, a virtual keyboard is installed in the OK3588 Forlinx Ubuntu desktop environment. You can swipe up from the bottom of the screen to access it.</p>
-<p><u><font style="color:#000000;"> </font></u><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953719177-718bd926-d19f-4624-b704-88f99f662c22.png" /></p>
+<p><u><font style="color:#000000;"> </font></u><img alt="" src="_images/1718953719177-718bd926-d19f-4624-b704-88f99f662c22.png" /></p>
 <p><strong>Note: The virtual keyboard is disabled when a USB keyboard is connected.</strong></p>
 </section>
 <section id="audio-and-video-playback">
 <h3>3.1.2 Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">Click</font><u><font style="color:#000000;"> </font></u><font style="color:#000000;">the icon to enter the video player, which can play music and video.</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953719526-dd9bfa74-9f28-4d0a-8876-96e6424c03d6.png" /></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953719885-5fda53de-ae9f-4940-8040-918aa8f62280.png" /></p>
+<p><img alt="" src="_images/1718953719526-dd9bfa74-9f28-4d0a-8876-96e6424c03d6.png" /></p>
+<p><img alt="" src="_images/1718953719885-5fda53de-ae9f-4940-8040-918aa8f62280.png" /></p>
 <p>Click on the icon SMPlayer as shown in the picture, and select the path of your music or video file such as /home/forlinx/test.wav, then you can play the audio and video; ubuntu system default configuration SMPlayer is<font style="color:#000000;">SPKOUT</font>output; plug your headphones or speakers into the<font style="color:#000000;">SPKOUT</font>interface, you can hear the sound. At this time, video soft solution is used for video playback.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953720104-4e01cdbb-1d64-4456-b767-d0e57d5f7d08.png" /></p>
+<p><img alt="" src="_images/1718953720104-4e01cdbb-1d64-4456-b767-d0e57d5f7d08.png" /></p>
 </section>
 <section id="network-configuration-test">
 <h3>3.1.3 Network Configuration Test<a class="headerlink" href="#network-configuration-test" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">When OK3588 is started, dhclient starts the network card eth0 by default. If you want to set it to a static IP, you can set it as follows:</font></p>
 <p><font style="color:#000000;">Click the network settings icon in the upper right corner:</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953720403-e60ad920-fe55-4c02-b61b-fdb2df26b649.png" /></p>
+<p><img alt="" src="_images/1718953720403-e60ad920-fe55-4c02-b61b-fdb2df26b649.png" /></p>
 <p>Click the “Wired Settings” button.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953720701-bb7f9b23-912c-476f-ac72-1434b7d19aa5.png" /></p>
+<p><img alt="" src="_images/1718953720701-bb7f9b23-912c-476f-ac72-1434b7d19aa5.png" /></p>
 <p>Set and configure in the Network option interface, and click the “IPv4” tab.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953720922-3efa50a0-6ea9-4daf-bb67-8324e306b11d.png" /></p>
+<p><img alt="" src="_images/1718953720922-3efa50a0-6ea9-4daf-bb67-8324e306b11d.png" /></p>
 <p>The “Manual” interface is configured as follows.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953721120-c051d866-5de6-4137-a195-4b1a70ab6cfe.png" /></p>
+<p><img alt="" src="_images/1718953721120-c051d866-5de6-4137-a195-4b1a70ab6cfe.png" /></p>
 <p>Click “Apply” and restart the board to change to the static IP.</p>
 </section>
 <section id="multi-screen-mirror-and-joint-displays">
@@ -890,33 +890,33 @@ Select  display
 <li><p>Mirrored configuration</p></li>
 </ol>
 <p>Open “Displays” in the settings, select “Mirror” and click “Apply”.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953721342-07157eef-171f-4b3d-be34-9ed3bf310c27.png" /></p>
+<p><img alt="" src="_images/1718953721342-07157eef-171f-4b3d-be34-9ed3bf310c27.png" /></p>
 <ol class="arabic simple" start="2">
 <li><p>Extended configuration</p></li>
 </ol>
 <p>Select “Join Displays” and click “Apply”.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953721618-018f5c2d-4b03-41cf-9ba3-d025e7b932fe.png" /></p>
+<p><img alt="" src="_images/1718953721618-018f5c2d-4b03-41cf-9ba3-d025e7b932fe.png" /></p>
 <p><strong>Note: If there are more than two screens, they will be forcibly configured as join displays.</strong></p>
 <ol class="arabic simple" start="3">
 <li><p>Single Display</p></li>
 </ol>
 <p>The option “Single Display” can be selected to specify the display interface.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953722097-dd40bc4e-8dc2-4019-a229-7cb55f85939e.png" /></p>
+<p><img alt="" src="_images/1718953722097-dd40bc4e-8dc2-4019-a229-7cb55f85939e.png" /></p>
 <ol class="arabic simple" start="4">
 <li><p>Primary and Secondary Display Settings</p></li>
 </ol>
 <p>Click “Primary Display “ on the Displays screen.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953722400-24c8d868-a4ab-4a3d-a265-4df42a873029.png" /></p>
+<p><img alt="" src="_images/1718953722400-24c8d868-a4ab-4a3d-a265-4df42a873029.png" /></p>
 </section>
 <section id="wifi-test">
 <h3>3.1.5 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
 <p>OK3588 platform supports 2 x WIFI Bluetooth 2-in-1 modules: AW-XM458. WIFI supports 2.4 G and 5G bands.</p>
 <p>Right click “Display Settings” in the blank space and select “Wi-Fi”.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953722663-5b7cd2ba-de07-4459-ac53-a7b8d6a15496.png" /></p>
+<p><img alt="" src="_images/1718953722663-5b7cd2ba-de07-4459-ac53-a7b8d6a15496.png" /></p>
 <p>Select the name of the hotspot to connect to.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953722928-8483f822-fff8-4193-9c7c-b90bb337be40.png" /></p>
+<p><img alt="" src="_images/1718953722928-8483f822-fff8-4193-9c7c-b90bb337be40.png" /></p>
 <p>Enter the password and click the connect button.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953723226-44a2c96b-9e4f-4f50-b2d4-d9a3a07e7b66.png" /></p>
+<p><img alt="" src="_images/1718953723226-44a2c96b-9e4f-4f50-b2d4-d9a3a07e7b66.png" /></p>
 </section>
 <section id="bluetooth-test">
 <h3>3.1.6 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h3>
@@ -928,14 +928,14 @@ Select  display
 </div>
 <p>2. Test Method:</p>
 <p>Click “Bluetooth:” in the settings.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953723408-b3fea96d-b600-4eaf-a7ba-d0dc4194d56e.png" /></p>
+<p><img alt="" src="_images/1718953723408-b3fea96d-b600-4eaf-a7ba-d0dc4194d56e.png" /></p>
 <p>Click “Confirm”, and the PC prompts that the connection is successful.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953723613-4dd8c875-ee02-41a2-8faf-5b0f8f8eb6b7.png" /></p>
+<p><img alt="" src="_images/1718953723613-4dd8c875-ee02-41a2-8faf-5b0f8f8eb6b7.png" /></p>
 <p>Click the name of the Bluetooth device to be sent and click “Send files …” Button to perform a file sending test.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953723835-72fb8361-511e-42ed-b19b-e7a50d837508.png" />      <img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953724054-bfad77db-b6cb-4614-b7f6-5fddc463f897.png" /></p>
+<p><img alt="" src="_images/1718953723835-72fb8361-511e-42ed-b19b-e7a50d837508.png" />      <img alt="" src="_images/1718953724054-bfad77db-b6cb-4614-b7f6-5fddc463f897.png" /></p>
 <p>Select “Accept File” on the phone:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953724251-9d7a6cf1-bc5b-4b39-9dd4-316bb12d7d8f.jpeg" /></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953724507-6ceb6112-817d-4f2b-bcbd-eb133c4fbf5e.png" /></p>
+<p><img alt="" src="_images/1718953724251-9d7a6cf1-bc5b-4b39-9dd4-316bb12d7d8f.jpeg" /></p>
+<p><img alt="" src="_images/1718953724507-6ceb6112-817d-4f2b-bcbd-eb133c4fbf5e.png" /></p>
 </section>
 <section id="qt-tests">
 <h3>3.2 Qt Tests<a class="headerlink" href="#qt-tests" title="Link to this heading"></a></h3>
@@ -944,13 +944,13 @@ Select  display
 <li><p>Test Qt program.</p></li>
 </ul>
 <p>1. Open the Xterm on the Ubuntu desktop</p>
-<p><u><font style="color:#000000;"> </font></u><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953724811-ddea4ef3-16ec-4be4-a0bd-eec782783582.png" /></p>
+<p><u><font style="color:#000000;"> </font></u><img alt="" src="_images/1718953724811-ddea4ef3-16ec-4be4-a0bd-eec782783582.png" /></p>
 <p>2. Enter the command in the Xterm</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~$ sudo fltest_qt_backlight                            //Example running qt program
 </pre></div>
 </div>
 <p><strong>Note: You need to add sudo to run QT.</strong></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953725265-ec93b56a-7e8c-4de6-838d-3197654956c9.png" /></p>
+<p><img alt="" src="_images/1718953725265-ec93b56a-7e8c-4de6-838d-3197654956c9.png" /></p>
 <section id="g-5g-test">
 <h4>3.2.1 4G/5G Test<a class="headerlink" href="#g-5g-test" title="Link to this heading"></a></h4>
 <p>“4G/5G” test program is used to test the OK3588 external 4G module (EM05)/5G module (RM500U, RM500Q). Before the test, please power off the development board, connect the 4G/5G module, and insert the SIM card.</p>
@@ -958,9 +958,9 @@ Select  display
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~$ sudo fltest_qt_4g                          //Run qt program
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953725576-aa4c006f-9ad2-4720-8447-5de910908571.png" /></p>
+<p><img alt="" src="_images/1718953725576-aa4c006f-9ad2-4720-8447-5de910908571.png" /></p>
 <p>Click the “connect” button, the program will automatically enter the dial-up process and get the IP settings DNS, etc., wait a few seconds, and click the ping button to test. After obtaining the IP address successfully, click the ping button to test.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953725888-8c4321b6-041e-4e6f-b7c0-67fa4b857b91.png" /></p>
+<p><img alt="" src="_images/1718953725888-8c4321b6-041e-4e6f-b7c0-67fa4b857b91.png" /></p>
 </section>
 <section id="uart-test">
 <h4>3.2.2 UART Test<a class="headerlink" href="#uart-test" title="Link to this heading"></a></h4>
@@ -992,17 +992,17 @@ Select  display
 </tbody>
 </table>
 <p>Use the command fltest_qt_terminal to open the uart’s qt test program (refer to Setup at the beginning of this section for qt test method). This test uses UART4 (ttyS4) to perform serial port test by sending and receiving data between the development board’s UART and the computer’s serial port tool software.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953726118-abd20c1f-2699-405a-bf07-9591cba71440.png" /></p>
+<p><img alt="" src="_images/1718953726118-abd20c1f-2699-405a-bf07-9591cba71440.png" /></p>
 <p>1. After connecting the development board and the computer via a TTL to USB module, power on the development board. Check in the computer’s device manager, it should be recognized as COM4 (please adjust the settings according to the actual COM port recognized);</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953726353-e9051e27-f925-495c-9aa3-21ec14cd7471.png" /></p>
+<p><img alt="" src="_images/1718953726353-e9051e27-f925-495c-9aa3-21ec14cd7471.png" /></p>
 <p>2. Open the computer serial port tool, set the serial port parameters: baud rate 115200, 8 data bits, 1 stop bit, no parity, no flow control, and open the serial port;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1721640402624-81ac8d26-61d4-46c4-ac9d-f9f209ab2b73.png" /></p>
+<p><img alt="" src="_images/1721640402624-81ac8d26-61d4-46c4-ac9d-f9f209ab2b73.png" /></p>
 <p>3. Run the command fltest_qt_terminal on the command line terminal to open the test application.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~$ sudo fltest_qt_terminal                        //Run qt program
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953727062-9d7bf29f-91fc-4e29-b038-d8645b7e922e.png" /></p>
-<p>Click the Setup button in the upper left corner<img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953727264-ff3f6038-06dc-4e83-bc82-4596f997fd6b.png" />to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:</p>
+<p><img alt="" src="_images/1718953727062-9d7bf29f-91fc-4e29-b038-d8645b7e922e.png" /></p>
+<p>Click the Setup button in the upper left corner<img alt="" src="_images/1718953727264-ff3f6038-06dc-4e83-bc82-4596f997fd6b.png" />to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Relevant Parameter</strong></p></th>
@@ -1030,14 +1030,14 @@ Select  display
 </tr>
 </tbody>
 </table>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953727493-5e2da8a4-28aa-4c90-9f51-b9baa3799ae5.png" /></p>
-<p>After setting the serial port parameters, click<img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953727713-b799d74f-aacc-437a-9151-5cccbf0e7eb6.png" />. Connect button. At this time, the test program can carry out data receiving and sending test.</p>
+<p><img alt="" src="_images/1718953727493-5e2da8a4-28aa-4c90-9f51-b9baa3799ae5.png" /></p>
+<p>After setting the serial port parameters, click<img alt="" src="_images/1718953727713-b799d74f-aacc-437a-9151-5cccbf0e7eb6.png" />. Connect button. At this time, the test program can carry out data receiving and sending test.</p>
 <p>4. The serial port tool of the computer sends: “forlinx_uart_test.1234567890…”, the test interface will receive the data:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953727910-acc81b1d-c2a2-4801-8fdd-6e77cd852981.jpeg" /></p>
+<p><img alt="" src="_images/1718953727910-acc81b1d-c2a2-4801-8fdd-6e77cd852981.jpeg" /></p>
 <p>Click the test interface to pop up the soft keyboard, enter “abcdefg”, press Enter on the soft keyboard to send data to the serial port tool on the computer side:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953728197-d2d74592-f8da-4f5f-924e-db8815620e33.jpeg" /></p>
+<p><img alt="" src="_images/1718953728197-d2d74592-f8da-4f5f-924e-db8815620e33.jpeg" /></p>
 <p>Data received by the serial port tool on the computer side:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1721640413247-c3de87ab-7023-4f22-a484-ca80c454e3ec.png" /></p>
+<p><img alt="" src="_images/1721640413247-c3de87ab-7023-4f22-a484-ca80c454e3ec.png" /></p>
 </section>
 <section id="database-test">
 <h4>3.2.3 Database Test<a class="headerlink" href="#database-test" title="Link to this heading"></a></h4>
@@ -1045,7 +1045,7 @@ Select  display
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~$ sudo fltest_qt_books                       //Run qt program
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953728843-8388b9e5-9ab7-4bd0-b949-74dcb79ccd0d.png" /></p>
+<p><img alt="" src="_images/1718953728843-8388b9e5-9ab7-4bd0-b949-74dcb79ccd0d.png" /></p>
 </section>
 <section id="opengl-test">
 <h4>3.2.4 OpenGL Test<a class="headerlink" href="#opengl-test" title="Link to this heading"></a></h4>
@@ -1054,18 +1054,18 @@ Select  display
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~$ sudo fltest_qt_deform                     //Run qt program
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953729080-ee133ba6-2c98-43a4-ae23-091b0746ed27.png" /></p>
+<p><img alt="" src="_images/1718953729080-ee133ba6-2c98-43a4-ae23-091b0746ed27.png" /></p>
 </section>
 <section id="rtc-test">
 <h4>3.2.5 RTC Test<a class="headerlink" href="#rtc-test" title="Link to this heading"></a></h4>
 <p>OK3588 platform has a PCF8563 RTC chip onboard, but Ubuntu defaults to network time sync. To use RTC time, follow these steps:</p>
 <p>In the settings, choose “Date &amp; Time,” click “Unlock,” enter the user password, and select to disable automatic time updates. By default, automatic time updates are already disabled.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953729440-d53d8fec-0253-4cac-a7ba-0a34b4ad0e45.png" /></p>
+<p><img alt="" src="_images/1718953729440-d53d8fec-0253-4cac-a7ba-0a34b4ad0e45.png" /></p>
 <p>Run the command at the command line terminal fltest_qt_rtc to open the test application.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~# sudo fltest_qt_rtc
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953729687-722a13cb-46c9-471d-8bb4-9db5cf740e15.png" /></p>
+<p><img alt="" src="_images/1718953729687-722a13cb-46c9-471d-8bb4-9db5cf740e15.png" /></p>
 <p>Click the set button, modify the time, and click save.</p>
 <p>Power-off and restart to verify writing to the RTC.</p>
 </section>
@@ -1076,7 +1076,7 @@ Select  display
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~# sudo fltest_qt_keypad
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953729923-3624b27a-682e-4460-b068-1af23065a0be.png" /></p>
+<p><img alt="" src="_images/1718953729923-3624b27a-682e-4460-b068-1af23065a0be.png" /></p>
 <p>The OK3588 platform has five physical buttons VOL-, VOL +, HOME and ESC corresponding to V +, V-, Home and ESC respectively. When the button is pressed, the corresponding button in the test application will turn blue, indicating that the button is normal.</p>
 </section>
 <section id="watchdog-tests">
@@ -1086,13 +1086,13 @@ Select  display
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~# sudo fltest_qt_watchdog
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953730141-58674496-ffe3-4c73-86da-f4d5b04bc08e.png" /></p>
+<p><img alt="" src="_images/1718953730141-58674496-ffe3-4c73-86da-f4d5b04bc08e.png" /></p>
 <p>Check feed dog and click the open watchdog key, then the watchdog will be activated, the program will carry out the feeding operation, and the system will not reboot under normal circumstances; when unchecking feed dog and clicking open watchdog key, the watchdog function will be activated, the program will not carry out the feeding operation, and the system enters into a reboot after the watchdog is activated for about 10s, which indicates that the watchdog function is normal.</p>
 </section>
 <section id="backlight-test">
 <h4>3.2.8 Backlight Test<a class="headerlink" href="#backlight-test" title="Link to this heading"></a></h4>
 <p>“fltest_qt_backlight” is the lcd backlight adjustment application; click to open the interface as follows (qt test method refer to the beginning of this section settings):</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953730338-2eb4a1a4-e5c4-4ffe-b8cd-905a69eb919a.png" /></p>
+<p><img alt="" src="_images/1718953730338-2eb4a1a4-e5c4-4ffe-b8cd-905a69eb919a.png" /></p>
 <p>Drag the slider in the interface to set the Lcd backlight brightness, level 0 is no backlight, level 255 is the highest level.</p>
 </section>
 </section>
@@ -1312,11 +1312,11 @@ key158 Released                                                        // ESC re
 </tbody>
 </table>
 <p>In this test, UART4 (ttyS4) is used. According to the development board schematic diagram, short - circuit the send and receive pins of UART4, which correspond to PIN7 and PIN10 respectively. Serial port testing is performed by sending and receiving data between the development board’s UART and the computer’s serial port tool software.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953736254-d1bc4527-2651-4ac0-85c7-2fccbb3cbb42.png" /></p>
+<p><img alt="" src="_images/1718953736254-d1bc4527-2651-4ac0-85c7-2fccbb3cbb42.png" /></p>
 <p>1. After connecting the development board and the computer via a TTL to USB module, power on the development board. Check in the computer’s device manager, it should be recognized as COM4 (please adjust the settings according to the actual COM port recognized);</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953736444-879dbfa6-d3ba-4247-971b-32f4d59b6c28.png" /></p>
+<p><img alt="" src="_images/1718953736444-879dbfa6-d3ba-4247-971b-32f4d59b6c28.png" /></p>
 <p>2. Open the computer serial port tool, set the serial port parameters: baud rate 115200, 8 data bits, 1 stop bit, no parity, no flow control, and open the serial port;</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1721640486709-b133d533-829e-4b29-9c93-069139664aea.png" /></p>
+<p><img alt="" src="_images/1721640486709-b133d533-829e-4b29-9c93-069139664aea.png" /></p>
 <p>Enter the following command into the serial port of the development board (the test program has a fixed baud rate of 115200):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# fltest_uarttest  -d /dev/ttyS4
 </pre></div>
@@ -1328,7 +1328,7 @@ forlinx_uart_test.1234567890...                                             //Se
 </pre></div>
 </div>
 <p>The test program automatically se”forlinx_uart_test.1234567890…”. The message is received when the serial aide is viewed:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1721640505539-74bd3e53-9876-4698-879c-91f177b0cd77.png" /></p>
+<p><img alt="" src="_images/1721640505539-74bd3e53-9876-4698-879c-91f177b0cd77.png" /></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The computer serial port tool sends &quot;forlinx_uart_test.1234567890...&quot;. At this time, the development board receives the information, and the relevant printed information is as follows:
 </pre></div>
 </div>
@@ -1343,7 +1343,7 @@ forlinx_uart_test.1234567890...                                             //Re
 <section id="adc-test">
 <h3>4.9 ADC Test<a class="headerlink" href="#adc-test" title="Link to this heading"></a></h3>
 <p>OK3588-C development board provides an internal 8-channel ADC. An adjustable resistor connects to the saradc2, saradc4, saradc5, saradc6, and saradc7 channels, and saradc2 is selected for testing. The ADC pin hardware diagram is shown below, and the voltage is inputted at pin 1 of P12. The current chip uses a 1.8V reference voltage corresponding to a 12-bit ADC maximum of 4096.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953737086-3573e476-0782-4a6a-a4df-4148235a2092.png" /></p>
+<p><img alt="" src="_images/1718953737086-3573e476-0782-4a6a-a4df-4148235a2092.png" /></p>
 <p>Test adjustable resistance value</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# cd /sys/bus/iio/devices/iio:device0
 root@ok3588:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
@@ -1358,7 +1358,7 @@ root@ok3588:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 <li><p><strong>The SD card mount directory is /run/media/ and supports hot-swapping.</strong></p></li>
 </ul>
 <p>1. Insert the TF card into the TF card slot on the carrier board before powe-up . Then power up and start, run the command dmesg, and the terminal will have the following printed information:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953737349-9a6bc964-0701-456a-87d8-f324f724f246.png" /></p>
+<p><img alt="" src="_images/1718953737349-9a6bc964-0701-456a-87d8-f324f724f246.png" /></p>
 <p>2. Check the mount directory:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# mount | grep &quot;mmcblk1p1&quot;
 /dev/mmcblk1p1 on /run/media/mmcblk1p1 type vfat 
@@ -1408,7 +1408,7 @@ root@ok3588:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 <section id="usb-mouse-test">
 <h3>4.12 USB Mouse Test<a class="headerlink" href="#usb-mouse-test" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">Connect the USB mouse to the USB interface of the OK3588 platform and use the dmesg command, the serial terminal prints the following information:</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953737586-643bc46a-3547-4d0e-9827-9c27747ddf1a.png" /></p>
+<p><img alt="" src="_images/1718953737586-643bc46a-3547-4d0e-9827-9c27747ddf1a.png" /></p>
 <p><font style="color:#000000;">At this time, the arrow cursor appears on the screen, the mouse can work normally.</font></p>
 </section>
 </section>
@@ -1417,7 +1417,7 @@ root@ok3588:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 <p>OK3588 supports 1 x USB 2.0 interface. Users can connect a USB mouse, USB keyboard, USB flash drive ,and other devices on any of the on-board USB HOST ports, and it supports hot-swapping of the above devices. Here’s a demo using the example of mounting a USB disk.</p>
 <p>The terminal shows USB flash drive info, which can vary due to the many types available.</p>
 <ol class="arabic simple">
-<li><p>After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. You can use the dmesg command to view and find information about the U disk; <img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953737789-26fedfd6-b6b7-4565-a720-b8a2eb9c1a45.png" /></p></li>
+<li><p>After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. You can use the dmesg command to view and find information about the U disk; <img alt="" src="_images/1718953737789-26fedfd6-b6b7-4565-a720-b8a2eb9c1a45.png" /></p></li>
 <li><p>View the mount directory:</p></li>
 </ol>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# mount | grep &quot;sda1&quot;
@@ -1459,10 +1459,10 @@ drwxrwx--- 2 root disk 8192 Sep 23  2021 &#39;System Volume Information&#39;
 <p>OK3588-C contains 2 TYPE-C interfaces, TPYE-C0, and HOST/DEVICE mode automatic recognition of TYPE-C1.</p>
 <p>Device mode can flash, transfer ADB file, debug, and Host mode can plug in a normal USB device.</p>
 <p>Device Mode<font style="color:#000000;">：</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953737975-a180f7a2-c511-4abd-8841-195540ab49be.png" /></p>
+<p><img alt="" src="_images/1718953737975-a180f7a2-c511-4abd-8841-195540ab49be.png" /></p>
 <p>Host Mode:</p>
 <p>View the insertion information via demsg.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953738229-0fb5e78d-ab26-42db-a4f8-2c2b21c316e4.png" /></p>
+<p><img alt="" src="_images/1718953738229-0fb5e78d-ab26-42db-a4f8-2c2b21c316e4.png" /></p>
 </section>
 <section id="ethernet-configuration">
 <h3>4.15 Ethernet Configuration<a class="headerlink" href="#ethernet-configuration" title="Link to this heading"></a></h3>
@@ -1647,7 +1647,7 @@ Default agent request successful
 </div>
 <p>2. Development Board Passive Pairing;</p>
 <p>At this time, open the PC Bluetooth search, and a “ok3588” device will appear. Select pairing.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953738429-5137413f-86e5-40a1-908f-17ff63486cc9.png" /></p>
+<p><img alt="" src="_images/1718953738429-5137413f-86e5-40a1-908f-17ff63486cc9.png" /></p>
 <p>At the same time the printing message displays on the development board as follows, enter yes</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[bluetooth]# 
 Default agent request successful
@@ -1713,7 +1713,7 @@ Request confirmation
 <p>4. Development board to receive documents;</p>
 <p>After successful pairing, on the PC side, Bluetooth can send files to the OK3588-C.</p>
 <p>Ubuntu will prompt you to accept or not, click “accept”</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953738630-b428afac-6119-482b-932a-d797f6b98a5b.png" /></p>
+<p><img alt="" src="_images/1718953738630-b428afac-6119-482b-932a-d797f6b98a5b.png" /></p>
 <p>Received files are saved in the /home/forlinx home directory</p>
 <p>5. The development board to send files;</p>
 <p>Similarly, the OK3588-C can send files to a cell phone, test is as follows:</p>
@@ -1729,7 +1729,7 @@ Connection successful
 [C4:E1:A1:BA:A4:9E]# send /home/forlinx/test.mp3	         //Send the files
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953739015-a7a0f460-32a5-411b-9702-136a65033a6a.png" /></p>
+<p><img alt="" src="_images/1718953739015-a7a0f460-32a5-411b-9702-136a65033a6a.png" /></p>
 <p><font style="color:#000000;">The phone will receive the incoming file request, click Accept to transfer the file.</font></p>
 </section>
 <section id="g-5g">
@@ -1887,15 +1887,15 @@ backlight-dsi0  backlight-dsi1  backlight-edp1     //Display the currently suppo
 <h3>4.21 ON/OFF Test<a class="headerlink" href="#on-off-test" title="Link to this heading"></a></h3>
 <p><font style="color:#000000;">The OK3588 Ubuntu platform supports power on and off.</font></p>
 <p><font style="color:#000000;">Long press the power button PWRON to turn off; the result is as follows:</font></p>
-<p><u><font style="color:#000000;"> </font></u><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953739879-76d0c395-408d-4554-86ed-4f16d37f706a.png" /></p>
+<p><u><font style="color:#000000;"> </font></u><img alt="" src="_images/1718953739879-76d0c395-408d-4554-86ed-4f16d37f706a.png" /></p>
 <p>Long press the power button to boot:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953740181-e1080c0f-53c9-40b9-8b76-1e4a5633767b.png" /></p>
+<p><img alt="" src="_images/1718953740181-e1080c0f-53c9-40b9-8b76-1e4a5633767b.png" /></p>
 </section>
 <section id="pcie-test">
 <h3>4.22 PCIE Test<a class="headerlink" href="#pcie-test" title="Link to this heading"></a></h3>
 <p>OK3588-C board has 1×PCIE 2.0 and 1×PCIE 3.0 x4 interface.</p>
 <p>Before powering up the system, insert the PCIE module into the PCIE card slot on the carrier board. After powering up and booting ubuntu, from lspci we can see that the corresponding device enumeration is successful.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953740407-a3c4b0ee-236e-4d0f-9066-91b0759f75f5.png" /></p>
+<p><img alt="" src="_images/1718953740407-a3c4b0ee-236e-4d0f-9066-91b0759f75f5.png" /></p>
 <p>Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.</p>
 <p>Take the E1000 PCIe card as an example, the Linux kernel already includes this driver by default. After plugging in the NIC, powering up, and booting, we can see the enumeration information with the Ethernet interface.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# dmesg | grep e100e 
@@ -1926,8 +1926,8 @@ eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
 </pre></div>
 </div>
 <p><font style="color:#000000;">Test bandwidth with iperf3</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953740647-ae9414b7-79ed-4c2c-8fd2-f031e1299dbd.png" /></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953740835-e50e22c4-0440-42dc-b2bf-06f4f9d92276.png" /></p>
+<p><img alt="" src="_images/1718953740647-ae9414b7-79ed-4c2c-8fd2-f031e1299dbd.png" /></p>
+<p><img alt="" src="_images/1718953740835-e50e22c4-0440-42dc-b2bf-06f4f9d92276.png" /></p>
 </section>
 <section id="rknpu-test">
 <h3>4.23 RKNPU Test<a class="headerlink" href="#rknpu-test" title="Link to this heading"></a></h3>
@@ -1959,7 +1959,7 @@ person @ (213 232 288 510) 0.848530
 </pre></div>
 </div>
 <p><font style="color:#000000;">Open out.jpg file</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953741133-39d97c03-b44e-44de-860c-fefa1a4249f5.png" /></p>
+<p><img alt="" src="_images/1718953741133-39d97c03-b44e-44de-860c-fefa1a4249f5.png" /></p>
 </section>
 </section>
 <section id="ok3588-platform-multimedia-test">
@@ -2183,7 +2183,7 @@ Format Video Capture:
 <ol class="arabic simple" start="5">
 <li><p>Viewed with the YUV player.exe tool;</p></li>
 </ol>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953752006-f2ef1cb7-4bc1-4ea9-92c1-c35d545fa0e8.png" /></p>
+<p><img alt="" src="_images/1718953752006-f2ef1cb7-4bc1-4ea9-92c1-c35d545fa0e8.png" /></p>
 <p><strong>Note: YUVplayer needs to set the pixel format, resolution, and frame rate in the same format as when recording.</strong></p>
 <ol class="arabic simple" start="6">
 <li><p>Preview using the gst-launch command.</p></li>
@@ -2195,7 +2195,7 @@ Format Video Capture:
 <section id="ov13855-test">
 <h4>5.4.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h4>
 <p>For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953752523-6ec8572a-9c72-4df2-baae-9334701b8352.png" /></p>
+<p><img alt="" src="_images/1718953752523-6ec8572a-9c72-4df2-baae-9334701b8352.png" /></p>
 <p><strong>Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.</strong></p>
 <p><strong>Self Path, refers to an output node of Rockchip ISP, which can only output up to 1080p resolution and is usually used for preview.</strong></p>
 <p><strong>Statistics 3A</strong></p>
@@ -2287,7 +2287,7 @@ Format Video Capture Multiplanar:
 </pre></div>
 </div>
 <p>Viewed with the YUV player.exe tool</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953752006-f2ef1cb7-4bc1-4ea9-92c1-c35d545fa0e8.png" /></p>
+<p><img alt="" src="_images/1718953752006-f2ef1cb7-4bc1-4ea9-92c1-c35d545fa0e8.png" /></p>
 <p><strong>Note: YUVplayer needs to set the pixel format, resolution, and frame rate in the same format as when recording.</strong></p>
 <ol class="arabic simple" start="5">
 <li><p>Preview using gst-launch command (CAM1 camera as an example)</p></li>
@@ -2448,14 +2448,14 @@ Format Video Capture Multiplanar:
 <ol class="arabic simple" start="5">
 <li><p>View with the YUV player.exe tool;</p></li>
 </ol>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953753593-f84c46dc-d243-45bd-b1d8-f717a479d764.png" /></p>
+<p><img alt="" src="_images/1718953753593-f84c46dc-d243-45bd-b1d8-f717a479d764.png" /></p>
 <ol class="arabic simple" start="6">
 <li><p>Preview using the gst-launch command.</p></li>
 </ol>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video73 io-mode=2 ! videoconvert ! video/x-raw, format=NV12, width=3840, height=2160 ! autovideosink
 </pre></div>
 </div>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953754130-7f5ec3fe-c8f3-4099-aa39-50448200112e.png" /></p>
+<p><img alt="" src="_images/1718953754130-7f5ec3fe-c8f3-4099-aa39-50448200112e.png" /></p>
 </section>
 </section>
 <section id="system-flashing">
@@ -2468,9 +2468,9 @@ Format Video Capture Multiplanar:
 <p>Path: OK3588-C (Ubuntu) User Profile \ Ubuntu \ Tools \ DriverAssitant _ v5.11.zip</p>
 <p>Extract the above path file to any directory and run it with administrator privileges</p>
 <p>Open DriverInstall.exe</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953759721-b7bc8d1e-b28c-46d3-8808-6a05c1d52677.png" /></p>
+<p><img alt="" src="_images/1718953759721-b7bc8d1e-b28c-46d3-8808-6a05c1d52677.png" /></p>
 <p>Click “Driver Installation”</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953759972-9d2f8586-ac3e-4097-8be1-262963fa949b.png" /></p>
+<p><img alt="" src="_images/1718953759972-9d2f8586-ac3e-4097-8be1-262963fa949b.png" /></p>
 </section>
 <section id="otg-flashing-test">
 <h4>6.1.2 OTG Flashing Test<a class="headerlink" href="#otg-flashing-test" title="Link to this heading"></a></h4>
@@ -2481,18 +2481,18 @@ Format Video Capture Multiplanar:
 <p><strong>Note: The condition for recognition is that the development board is powered up and the recovery key is in the pressed state.</strong></p>
 <p><strong>Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn’t match the following figure, please consider unzipping it in an English directory.</strong></p>
 <p>Open the Rockchip development tool:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953760200-05a7e740-a9ed-40f2-a759-f9ebe9bc09d7.png" /></p>
+<p><img alt="" src="_images/1718953760200-05a7e740-a9ed-40f2-a759-f9ebe9bc09d7.png" /></p>
 <p>Click the “Upgrade Firmware” tab, click the “Firmware” button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953760405-aabbb3fb-a82c-4e15-ab40-5302b6e63e39.png" /></p>
+<p><img alt="" src="_images/1718953760405-aabbb3fb-a82c-4e15-ab40-5302b6e63e39.png" /></p>
 <p>Click the “Upgrade” button to upgrade.</p>
 <p><strong>Introduction to MASKROM mode</strong></p>
 <p><font style="color:#000000;">If the loader is damaged and cannot enter the Loader mode, press and hold the Maskrom key and then press the reset key to enter the maskrom mode for flashing.</font></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953760653-a71b3dd1-9deb-4c54-9016-2a290a5778da.png" /></p>
+<p><img alt="" src="_images/1718953760653-a71b3dd1-9deb-4c54-9016-2a290a5778da.png" /></p>
 <p>At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.</p>
 <p><strong>Note: Don’t click “Device Partition Table” in maskrom mode, it is invalid. A separate burn in maskrom mode will not clear the UBOOT environment variables.</strong></p>
 <p><strong>Introduction to Downloading the Individual Image Function</strong></p>
 <p>This feature is useful when you need to download a separate image. This function is only applicable in loader flashing mode.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953760900-a1678999-0a95-4658-9346-713ef338f62f.png" /></p>
+<p><img alt="" src="_images/1718953760900-a1678999-0a95-4658-9346-713ef338f62f.png" /></p>
 <ol class="arabic simple">
 <li><p>Click ① Download image tab</p></li>
 <li><p>Click ② Device partition table to read the mirror partition location</p></li>
@@ -2508,10 +2508,10 @@ Format Video Capture Multiplanar:
 <p><strong>Note: The condition for recognition is that the development board is powered up and the RECOVER key is in the pressed state.</strong></p>
 <p><strong>Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn’t match the following figure, please consider unzipping it in an English directory.</strong></p>
 <p>Open the Rockchip development tool:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953761182-fdf274a1-bc10-4e5b-aad6-e173bb38ac6f.png" /></p>
+<p><img alt="" src="_images/1718953761182-fdf274a1-bc10-4e5b-aad6-e173bb38ac6f.png" /></p>
 <p>Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953761585-17fd705a-6ea4-4df0-b6c4-a63fb1504767.png" /></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953761950-ca035ba4-0b2c-465e-82e2-47cb59d204bd.png" /></p>
+<p><img alt="" src="_images/1718953761585-17fd705a-6ea4-4df0-b6c4-a63fb1504767.png" /></p>
+<p><img alt="" src="_images/1718953761950-ca035ba4-0b2c-465e-82e2-47cb59d204bd.png" /></p>
 </section>
 </section>
 </section>
@@ -2520,10 +2520,10 @@ Format Video Capture Multiplanar:
 <p>TF card production, flashing and testing</p>
 <p><strong>Note: The maximum tested capacity of the TF card is 16G. Using a TF card with 32G or above may result in a flashing failure.</strong></p>
 <p>Copy SDDiskTool_v1.69.zip from the user profile tools directory to any directory on windows. Run SD_Firmware_Tool.exe with administrator privileges.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953762215-2b6b3766-91df-4348-af37-4e08125582f5.png" /></p>
+<p><img alt="" src="_images/1718953762215-2b6b3766-91df-4348-af37-4e08125582f5.png" /></p>
 <p>Select the disk device, check “Firmware Upgrade” and select update.img. Click Start Creating.</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953762451-9ae38f37-8b33-454a-8144-032af23d983c.png" /></p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953762724-802af6f3-a918-4d64-a6e5-cb7cff1c334c.png" /></p>
+<p><img alt="" src="_images/1718953762451-9ae38f37-8b33-454a-8144-032af23d983c.png" /></p>
+<p><img alt="" src="_images/1718953762724-802af6f3-a918-4d64-a6e5-cb7cff1c334c.png" /></p>
 <p>Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:</p>
 <p>Please remove SD CARD!!!, wait for reboot.</p>
 <p>At this time, pull out the TF card, the system automatically restarts (please do not power down directly).</p>
@@ -2535,7 +2535,7 @@ Format Video Capture Multiplanar:
 <li><p>Flashing completion phase: Heartbeat light mode, regular intermittent flashes.</p></li>
 </ol>
 <p>Serial port information during the burning process:</p>
-<p><img alt="" src="images/OK3588-C_Forlinx22_04_User_Manual/1718953762906-7bebf186-ecfd-4978-b70e-bdf2d33d002e.png" /></p>
+<p><img alt="" src="_images/1718953762906-7bebf186-ecfd-4978-b70e-bdf2d33d002e.png" /></p>
 <p>If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.</p>
 </section>
 </section>
