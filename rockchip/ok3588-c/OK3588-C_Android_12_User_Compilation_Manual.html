@@ -13,7 +13,7 @@
 
   
     <link rel="shortcut icon" href="_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3588-c/OK3588-C_Android_12_User_Compilation_Manual_local.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3588-c/OK3588-C_Android_12_User_Compilation_Manual.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
@@ -22,6 +22,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Android 12.0_User’s Manual_V 1.3" href="OK3588-C_Android_12_User_Manual.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -63,12 +64,58 @@
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_User_Hardware_Manual.html">User’s Hardware Manual_V1.3</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html">Linux5.10.209_User’s Manual_V1.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html">Linux5.10.209_User’s Compilation Manual_V1.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html">Forlinx Desktop22.04_User’s Manual_V1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html">Forlinx Desktop22.04_User’s Compilation Manual_V1.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html">Android 12.0_User’s Manual_V 1.3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Android 12.0_User’s Compilation Manual_V 1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-downloads-and-purchase"><font style="color:#000000;">1.1 VMware Software Downloads and Purchase</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation"><font style="color:#000000;">1.2 VMware Software Installation</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-basic-configuration">3.1.3 Ubuntu Basic Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#network-settings-for-virtual-machines">3.1.4 Network Settings for Virtual Machines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-the-library-needed-to-compile-android">3.2 Installation of the Library Needed to Compile Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#android-system-compilation">4. Android System Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#software-configuration-file-path">4.1 Software Configuration File Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-compilation">4.2 System Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#preparation-before-compilation">4.2.1 Preparation Before Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#source-code-copy-and-release">4.2.2 Source Code Copy and Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">4.2.3 Android System Compilation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#android-application-development">5. Android Application Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#android-application-development-environment-setup">5.1 Android Application Development Environment Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#jdk-java-se-development-kit-download-and-installation">5.1.1 JDK（Java SE Development Kit）Download and Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#android-studio-installation">5.1.2 Android Studio Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#helloworld-project-creation">5.1.3 Helloworld Project Creation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#apk-platform-signature">5.2 Apk Platform Signature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-installation-method-of-apk-in-system">5.3 Pre - installation Method of APK in System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#method-for-app-to-obtain-root-permission">5.4 Method for App to Obtain Root Permission</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
