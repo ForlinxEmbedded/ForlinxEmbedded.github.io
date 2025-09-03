@@ -61,7 +61,7 @@ OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.
 
 ## 1\. Development Board Description
 
-### **<font style="color:rgb(51, 51, 51);">1.1 OK3506-S/OK3506-C Development Board Description</font>**
+### **<font style="color:rgb(51, 51, 51);">1.1 OK3506J-S/OK3506J-C Development Board Description</font>**
 
 <font style="color:rgb(51, 51, 51);">The RK3506J is a high - performance triple - core Cortex - A7 application processor, specifically designed for intelligent voice interaction, audio input/output processing, image output processing, and other digital multimedia applications. It is equipped with a 2D hardware engine and a display output engine, which are used to minimize CPU overhead to meet image display requirements. It has a rich set of peripheral interfaces, such as SAI, PDM, SPDIF, Audio DSM, Audio ADC, USB2 OTG, RMII, CAN, etc., which can meet different application development needs, reducing the complexity and cost of hardware development. It also features a high - performance external memory interface (DDR2/DDR3/DDR3L), capable of maintaining the demanding memory bandwidth.</font>
 
@@ -69,11 +69,11 @@ Connection method for is OK3506-S edging connection, and for OK3506-C is board-t
 
 The main interfaces are shown in the figure below:
 
-**<font style="color:rgb(51, 51, 51);">OK3506-S Front</font>**
+**<font style="color:rgb(51, 51, 51);">OK3506J-S Front</font>**
 
 ![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1747882782209_3892a1c7_5a1a_4780_8419_04ea72a306ed.jpeg)
 
-**<font style="color:rgb(51, 51, 51);">OK3506-C Front</font>**
+**<font style="color:rgb(51, 51, 51);">OK3506J-C Front</font>**
 
 ![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1753926502435_9040b0e0_b493_4910_985a_5c90ec4b9183.jpeg)
 
@@ -133,7 +133,7 @@ The following table shows the NAND memory partition information for the Linux op
 
 ### <font style="color:rgb(51, 51, 51);">2.1 Preparation Before Startup</font>
 
-OK3506-S/OK3506-C development board has two system login methods, serial and network login. 
+OK3506J-S/OK3506J-C development board has two system login methods, serial and network login. 
 
 Hardware preparation before system startup:
 
@@ -147,7 +147,7 @@ The debug serial port on the development board is a Type-C USB jack, so you can 
 
 ![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735029237085_da123d7a_635a_4358_8599_42f463467e5e.jpeg)
 
-**Note: OK3506-S/OK3506-C The positions of the above interfaces are consistent.**
+**Note: OK3506J-S/OK3506J-C The positions of the above interfaces are consistent.**
 
 ### <font style="color:rgb(51, 51, 51);">2.2 Related Driver Installation</font>
 
@@ -157,7 +157,7 @@ The debug serial port on the development board is a Type-C USB jack, so you can 
 
 ### <font style="color:rgb(51, 51, 51);">2.3 Serial Login</font>
 
-OK3506-S/OK3506-C platform uses a Type-C interface for debugging serial port, with an on-board USB to UART chip. You do not need to purchase USB to serial debugging tools; it is extremely simple and convenient to use.
+OK3506J-S/OK3506J-C platform uses a Type-C interface for debugging serial port, with an on-board USB to UART chip. You do not need to purchase USB to serial debugging tools; it is extremely simple and convenient to use.
 
 #### <font style="color:rgb(51, 51, 51);">2.3.1 Serial Port Connection Settings</font>
 
