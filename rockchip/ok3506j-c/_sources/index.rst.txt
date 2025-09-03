@@ -33,7 +33,7 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
-
+   OK3506J-C_Linux6_1_99_User_Manual
 
 APPLICATION NOTE
 -----------------
