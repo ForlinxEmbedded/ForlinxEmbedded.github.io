@@ -22,7 +22,7 @@ There are total five chapters:
 
 ● Chapter 3. is mainly about the QT function test of the product;
 
-● Chapter 4. mainly introduces the comma
+● Chapter 4. mainly introduces the command functions;
 
 ● Chapter 5. is about the image update of the product, mainly describing the method of updating the image to the storage device. You can choose the corresponding flashing method according to the actual situation.
 
@@ -1741,4 +1741,4 @@ Click the "Device Partition Table" button, which will automatically read the par
 
 ![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
 
-Clicking the "Execute" button will automatically burn and restart.</font>
+Clicking the "Execute" button will automatically burn and restart.</font> 
