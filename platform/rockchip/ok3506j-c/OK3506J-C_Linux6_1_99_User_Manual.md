@@ -71,11 +71,11 @@ The main interfaces are shown in the figure below:
 
 **<font style="color:rgb(51, 51, 51);">OK3506-S Front</font>**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpeg/49874024/1747882782209-3892a1c7-5a1a-4780-8419-04ea72a306ed.jpeg)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1747882782209_3892a1c7_5a1a_4780_8419_04ea72a306ed.jpeg)
 
 **<font style="color:rgb(51, 51, 51);">OK3506-C Front</font>**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpeg/49874024/1753926502435-9040b0e0-b493-4910-985a-5c90ec4b9183.jpeg)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1753926502435_9040b0e0_b493_4910_985a_5c90ec4b9183.jpeg)
 
 **Note: The hardware parameters will not be described in this software manual. Before referring to this manual for software development, please read the “OK3506 - S/OK3506 - C Hardware Manual” to understand the product naming rules and the hardware configuration information of the product you are using. This will be helpful for your use of the product.**
 
@@ -145,7 +145,7 @@ The debug serial port on the development board is a Type-C USB jack, so you can 
 + <font style="color:rgb(51, 51, 51);">Network cable (for network login)</font>
 + Screen: Connect the screen according to the development board interface (optional if display is not needed).
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/40567561/1735029237085-da123d7a-635a-4358-8599-42f463467e5e.jpeg)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735029237085_da123d7a_635a_4358_8599_42f463467e5e.jpeg)
 
 **Note: OK3506-S/OK3506-C The positions of the above interfaces are consistent.**
 
@@ -171,15 +171,15 @@ OK3506-S/OK3506-C platform uses a Type-C interface for debugging serial port, wi
 
 **Step 1:** Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735029360193-d064cec3-c29b-4931-93d7-837a464359d5.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
 
 **Step 2:** Open and set up putty, then set the“ serial line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40567561/1736730512384-873b6eed-2f4f-4c7e-a0c6-74559ee3ba64.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1736730512384_873b6eed_2f4f_4c7e_a0c6_74559ee3ba64.png)
 
 **Step 3:** After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM85 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40567561/1736730550283-79cf2052-3505-4631-828e-5f7c6735f691.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1736730550283_79cf2052_3505_4631_828e_5f7c6735f691.png)
 
 **Step 4:** Turn on the power switch of the development board, then there will be a print message output from the serial port (no need to login).
 
@@ -210,9 +210,9 @@ Before logging into the network, ensure that the direct network connection betwe
 
 3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653045-77232463-9341-42e0-99fd-fff6c8c185f3.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653364-4f5e0630-f435-4a4d-9c88-23a027ea9bcb.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 A data return indicates a normal network connection.
 
@@ -225,11 +225,11 @@ A data return indicates a normal network connection.
 
 1\. Use ssh to log in the development board;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735030561381-30515e56-282f-4641-9f6e-3ab5bc5e3a99.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735030561381_30515e56_282f_4641_9f6e_3ab5bc5e3a99.png)
 
 Click "Open", the following dialog box will appear, click "Yes" to enter the login screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654059-94355051-1e28-4cfd-8a4b-f559d4ff136a.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
 
 ```plain
 Login as：root
@@ -248,11 +248,11 @@ Install the FileZilla tool on Windows and follow the steps shown in the image be
 
 Open the filezilla tool, click on File and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/40567561/1736821815147-143e5974-7597-4afc-8d80-0717468acfee.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
 
 After successful login, you can upload and download.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654928-2b604387-bb81-4ac6-a13d-02437d5c0800.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switching
 
@@ -285,7 +285,7 @@ This method does not require the connection of a serial terminal, and the system
 
 In the kernel source code, open the device dtsi file and find the forlinx-control node as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735267237067-055b5f5b-9a27-4bba-9e6e-25c8d373b549.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735267237067_055b5f5b_9a27_4bba_9e6e_25c8d373b549.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -302,7 +302,7 @@ Settings can be changed as needed, and after saving, recompilation is required t
 
 Use the RGB screen display.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735267291478-382e2a8e-cdb8-4837-abfc-f679a91eae4c.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735267291478_382e2a8e_cdb8_4837_abfc_f679a91eae4c.png)
 
 After saving, recompile to generate the image.
 
@@ -324,29 +324,29 @@ It supports 4G module (EC20). Insert the 4G module and SIM card while the power 
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778140-61034987-41b2-463c-818b-eb546567686d.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778140_61034987_41b2_463c_818b_eb546567686d.png)
 
 Click the connect button, the program will automatically enter the dial-up process and get IP to set DNS, etc.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778210-47542d01-eed0-42d8-b578-29ab5cdc5c66.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778210_47542d01_eed0_42d8_b578_29ab5cdc5c66.png)
 
 Click the ping to test.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778276-ea4c18bc-2761-4b7c-a95f-67acb06b5bb6.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778276_ea4c18bc_2761_4b7c_a95f_67acb06b5bb6.png)
 
 ### 3.2 WIFI Test
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778345-17963653-d4c2-4724-afb1-bf02e625e7f9.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778345_17963653_d4c2_4724_afb1_bf02e625e7f9.png)
 
 Select wlan0, enter the router name (the one connected to wifi) in the SSID column, enter the router password in the PAWD column, click CONNECT to the router via wifi, enter a valid ip in the IP column, and then click ping to see if the currently used wifi network is smooth.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778409-d2228127-f2ab-4535-972b-9bf2174c0735.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778409_d2228127_f2ab_4535_972b_9bf2174c0735.png)
 
 Click ping to test the network after a successful connection.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778486-37f39c91-727a-4122-a4ee-7005ab4f3401.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778486_37f39c91_727a_4122_a4ee_7005ab4f3401.png)
 
 ### 3.3 Network Configuration Test
 
@@ -354,13 +354,13 @@ Execute:
 
 The DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778559-a8571e8e-1b3a-4344-bd6a-7f49434514c1.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778559_a8571e8e_1b3a_4344_bd6a_7f49434514c1.png)
 
 Check DHCP, select the NIC device needing to be configured, and click Apply and Restart Network at the bottom of the interface to restart the network and get the ip automatically.
 
 The STATIC mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778626-7fa06d67-ae1c-4a6b-bde3-8018c7b19744.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778626_7fa06d67_ae1c_4a6b_bde3_8018c7b19744.png)
 
 Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.
 
@@ -372,13 +372,13 @@ Execute:
 
 Write the target IP address in the "hostname" column. Click the "ping" button, and the "result" column will display the ping outcome. Click "stop" to end the ping test, and "clear" to erase the information in the "result" column.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778716-bdf4cec5-95eb-4c16-a89d-dbc171d203f2.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778716_bdf4cec5_95eb_4c16_a89d_dbc171d203f2.png)
 
 ### 3.5 Watchdog Test
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778788-81724e42-fce5-4a4b-aa3e-a6b641657bbd.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778788_81724e42_fce5_4a4b_aa3e_a6b641657bbd.png)
 
 Check feed dog and click the open watchdog key, then the watchdog will be activated, the program will carry out the feeding operation, and the system will not reboot under normal circumstances; when unchecking feed dog and clicking open watchdog key, the watchdog function will be activated, the program will not carry out the feeding operation, and the system enters into a reboot after the watchdog is activated for about 10s, which indicates that the watchdog function is normal.
 
@@ -386,7 +386,7 @@ Check feed dog and click the open watchdog key, then the watchdog will be activa
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778849-6d481a85-0490-402a-b8a8-8e1ee9ff4543.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778849_6d481a85_0490_402a_b8a8_8e1ee9ff4543.png)
 
 The corresponding key in the test application will turn blue when pressing the key, indicating that the key is in normal status.
 
@@ -394,7 +394,7 @@ The corresponding key in the test application will turn blue when pressing the k
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778935-ad58dfe0-3a18-4864-bf69-d8f3a8348fc2.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778935_ad58dfe0_3a18_4864_bf69_d8f3a8348fc2.png)
 
 After Set, you can set the time and click Save to finish the setting.
 
@@ -406,7 +406,7 @@ In this test, two boards (hereinafter referred to as Board A and Board B) are us
 
 Board A execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750778997-22c3eb3d-7194-49b1-8af7-8e7aa7c2c2ee.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750778997_22c3eb3d_7194_49b1_8af7_8e7aa7c2c2ee.png)
 
 Click the settings button (the third small gear) in the upper - left corner and set the serial port parameters to be consistent with those of Board B, as shown in the following figure:
 
@@ -419,7 +419,7 @@ Click the settings button (the third small gear) in the upper - left corner and 
 | Stop bits| Set stop bit (1 bit)
 | Flow control| Set flow control (no flow control)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750779072-51e0bd3a-8d0a-4def-aca6-8ee94ab8b5b9.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750779072_51e0bd3a_8d0a_4def_aca6_8ee94ab8b5b9.png)
 
 After setting the serial port parameters, click the connection button (the first button) in the upper - left corner. At this time, the test program can perform data sending and receiving tests.
 
@@ -430,7 +430,7 @@ root@ok3506-buildroot:/# fltest_uarttest -d /dev/ttyS2 -w
 tx_0: jaBZgUQxZ5FSxFqQSBqVXHTROSfRZzqJ
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750779145-46bbc6b4-f30f-4fd8-80db-be3866dc1f05.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750779145_46bbc6b4_f30f_4fd8_80db_be3866dc1f05.png)
 
 Run fltest\_uarttest on Board B to receive data. Click on the black - screen area in the middle of the screen on Board A, and a soft keyboard will pop up. After continuously entering 32 characters, the information printed on the command - line terminal of Board B is the data sent by the Qt program on Board A.
 
@@ -439,19 +439,19 @@ root@ok3506-buildroot:/# fltest_uarttest -d /dev/ttyS2 -r
 rx_0: 12345678901234567890123456789012
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750779218-05c204c6-f7aa-417e-a886-f2f6bdd2c474.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750779218_05c204c6_f7aa_417e_a886_f2f6bdd2c474.png)
 
 ### 3.9 Database Test
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750779305-7647b5c6-11c4-4b71-93b1-2a5781fd991a.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750779305_7647b5c6_11c4_4b71_93b1_2a5781fd991a.png)
 
 ### 3.10 Backlight Test
 
 Execute:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1746750779388-6776ccd4-4b2d-4568-8fc4-30360c6b2a9c.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1746750779388_6776ccd4_4b2d_4568_8fc4_30360c6b2a9c.png)
 
 Adjust the brightness of the LCD backlight by sliding the slider in the interface; level 0 is the lowest brightness, and level 255 is the highest brightness.
 
@@ -731,7 +731,7 @@ OK3506-S/ OK3506-C development board is equipped with 2 x UART, which are labele
 
 The UART2 test is used in this test. Connect 485 \_ A1, 485 \_ B1 and GND \_ 485 \_ 1 in the P25 port to the computer through the USB to 485 module, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731476692246-f0d61523-da10-4ae6-b6e5-a404c239372c.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731476692246_f0d61523_da10_4ae6_b6e5_a404c239372c.png)
 
 Enter the following command in the serial port of the development board for UART receiving test:
 
@@ -743,7 +743,7 @@ root@ok3506-buildroot:/# rx_0: forlinxforlinxforlinxforlinxforl
 
 Enter the send information on the PC side:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731479246005-405d8865-c1fd-4cf1-99f5-30c51e5eab15.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731479246005_405d8865_c1fd_4cf1_99f5_30c51e5eab15.png)
 
 Enter the following command in the serial port of the development board for UART sending test:
 
@@ -754,7 +754,7 @@ tx_0: KaLKchczYFbc21YbhV5xYf2SotoVobK8
 
 Observe the received information on the PC side:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731479131378-e4020ca2-1068-415e-91f1-e89b9f7c7bfd.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731479131378_e4020ca2_1068_415e_91f1_e89b9f7c7bfd.png)
 
 ### 4.9 TF Test
 
@@ -988,7 +988,7 @@ root@ok3506-buildroot:/# ls /dev/ttyXRUSB*
 
 3\. The mapping between the four extended serial ports and their corresponding device nodes is shown in the diagram below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684392-b4febc8c-5724-401d-a9a4-20165a269a9c.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
 
 4\. Refer to “4.8 UART Port Test” for the test methods.
 
@@ -1079,7 +1079,7 @@ root@ok3506-buildroot:/# umount /run/media/sda1
 
 Rockchip Development Tool displays "An ADB device was found". Debugging can be done using the ADB tool.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731548994367-66e6de27-538b-4c85-846f-8b31ffcf140d.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
 
 ### 4.14 Ethernet Configuration
 
@@ -1246,7 +1246,7 @@ Changing discoverable on succeeded
 
 At this time, open the mobile phone Bluetooth search, a "BlueZ 5.77" device will appear, and select pairing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731916438329-0c67448f-cbc7-4119-85ef-ac6a1f1613b8.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731916438329_0c67448f_cbc7_4119_85ef_ac6a1f1613b8.png)
 
 At the same time the printing message displays on the development board as follows, enter yes.
 
@@ -1322,7 +1322,7 @@ Request confirmation
 
 After successful pairing, on the mobile side, you can use Bluetooth to send files to OK3506-S/OK3506-C.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731916038621-bc0da84e-7397-409d-8dcd-4d0fdcadec53.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731916038621_bc0da84e_7397_409d_8dcd_4d0fdcadec53.png)
 
 Received files are saved in the /tmp directory.
 
@@ -1343,7 +1343,7 @@ Connection successful
 [14:99:3E:03:1B:E4]# send /tmp/1731915958275.png	        //Send files
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731916344487-6958d5b0-b1f6-4e79-8c45-fed0eec2b2fb.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731916344487_6958d5b0_b1f6_4e79_8c45_fed0eec2b2fb.png)
 
 The phone will receive the incoming file request and click “Receive” to transfer the file.
 
@@ -1519,7 +1519,7 @@ The OK3506-S/OK3506-C platform has two CAN bus interfaces, and the CAN connectio
 
 Short circuit CAN0 and CAN1, short circuit CAN1\_L and CAN0\_L, CAN1\_H and CAN0\_H, GND\_CAN1 and GND\_CAN0 pins in port P25, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1731476692246-f0d61523-da10-4ae6-b6e5-a404c239372c.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1731476692246_f0d61523_da10_4ae6_b6e5_a404c239372c.png)
 
 Execute the following command in the development board terminal:
 
@@ -1671,11 +1671,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735267645818-f515fa0c-ce94-4d61-a5a0-664ed7c0640a.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735267645818_f515fa0c_ce94_4d61_a5a0_664ed7c0640a.png)
 
 Click "Driver Installation”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735267671413-d07d1e53-8b6f-4559-969f-0d921a473a55.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735267671413_d07d1e53_8b6f_4559_969f_0d921a473a55.png)
 
 #### 5.1.2 OTG Full Burning Test
 
@@ -1689,11 +1689,11 @@ It is a development tool provided by Rockchip. Before use, please unzip it to a 
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735267787698-646f1b57-da67-431b-b28c-ad14f616217a.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735267787698_646f1b57_da67_431b_b28c_ad14f616217a.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735267965892-2e0b0d71-79d8-463f-b66a-0f429fabe1a1.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735267965892_2e0b0d71_79d8_463f_b66a_0f429fabe1a1.png)
 
 Click the "Upgrade" button to upgrade.
 
@@ -1701,7 +1701,7 @@ Click the "Upgrade" button to upgrade.
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the red Maskrom key and then press the reset key to enter the maskrom mode for flashing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735268040103-4347a6c1-4838-4159-a130-c2190284c7e2.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735268040103_4347a6c1_4838_4159_a130_c2190284c7e2.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -1717,13 +1717,13 @@ Note: The operation of the identification device is that the recovery button is 
 
 **<font style="color:rgb(51, 51, 51);">** Note: Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374138-b6613de5-c4e7-4c57-ab8b-6d41d165e5c3.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374490-7567e660-737f-4218-8cfa-3b7c9be57d3e.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374807-bd102591-2c43-41da-83b9-2f7307977ca3.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png)
 
 #### 5.1.3 OTG Step Programming Test
 
@@ -1739,6 +1739,6 @@ Use the Type-C cable to connect the development board to the host. Press and hol
 
 Click the "Device Partition Table" button, which will automatically read the partition address, and prompt you to update the download address, click "Yes", will be reported to read the partition table successfully, click on the partition of the right test area to select the partition image, and check the partition.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/40567561/1735268293437-d10c6629-d1b4-437f-9503-0f35995b4bf9.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
 
 Clicking the "Execute" button will automatically burn and restart.</font>
