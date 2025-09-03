@@ -210,9 +210,9 @@ Before logging into the network, ensure that the direct network connection betwe
 
 3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1.png)
 
-![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
+![Image](./images/OK3506J-C_Linux6_1_99_User_Manual/2.png)
 
 A data return indicates a normal network connection.
 
