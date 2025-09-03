@@ -22,7 +22,7 @@ There are total five chapters:
 
 ● Chapter 3. is mainly about the QT function test of the product;
 
-● Chapter 4. mainly introduces the command functions;
+● Chapter 4. mainly introduces the command function tests;
 
 ● Chapter 5. is about the image update of the product, mainly describing the method of updating the image to the storage device. You can choose the corresponding flashing method according to the actual situation.
 
