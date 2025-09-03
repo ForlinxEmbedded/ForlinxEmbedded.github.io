@@ -366,7 +366,7 @@ Select the NIC device to be configured in the interface, and enter the ip to be 
 
 **Note: In STATIC mode, the information such as the IP address you set will be saved in the relevant configuration files of the system. Therefore, the network information you set this time will be used every time the system is restarted. However, when configuring network information in DHCP mode, you don't need to worry about this. Every time the system restarts, an IP address will be dynamically assigned.**
 
-### 3.4 Ping test
+### 3.4 Ping Test
 
 Execute:
 
