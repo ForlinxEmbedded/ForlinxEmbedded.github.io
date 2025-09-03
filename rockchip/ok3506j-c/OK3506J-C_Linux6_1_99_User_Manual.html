@@ -70,7 +70,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#overview"><font style="color:#000000;">Overview</font></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#development-board-description">1. Development Board Description</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ok3506-s-ok3506-c-development-board-description"><strong><font style="color:rgb(51, 51, 51);">1.1 OK3506-S/OK3506-C Development Board Description</font></strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3506j-s-ok3506j-c-development-board-description"><strong><font style="color:rgb(51, 51, 51);">1.1 OK3506J-S/OK3506J-C Development Board Description</font></strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#introduction-to-linux-6-1-99-system-software-resources"><strong><font style="color:rgb(51, 51, 51);">1.2 Introduction to Linux 6.1.99 System Software Resources</font></strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table">1.3 EMMC Memory Partition Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nand-memory-partition-table">1.4 NAND Memory Partition Table</a></li>
@@ -276,14 +276,14 @@ OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.
 </section>
 <section id="development-board-description">
 <h2>1. Development Board Description<a class="headerlink" href="#development-board-description" title="Link to this heading"></a></h2>
-<section id="ok3506-s-ok3506-c-development-board-description">
-<h3><strong><font style="color:rgb(51, 51, 51);">1.1 OK3506-S/OK3506-C Development Board Description</font></strong><a class="headerlink" href="#ok3506-s-ok3506-c-development-board-description" title="Link to this heading"></a></h3>
+<section id="ok3506j-s-ok3506j-c-development-board-description">
+<h3><strong><font style="color:rgb(51, 51, 51);">1.1 OK3506J-S/OK3506J-C Development Board Description</font></strong><a class="headerlink" href="#ok3506j-s-ok3506j-c-development-board-description" title="Link to this heading"></a></h3>
 <p><font style="color:rgb(51, 51, 51);">The RK3506J is a high - performance triple - core Cortex - A7 application processor, specifically designed for intelligent voice interaction, audio input/output processing, image output processing, and other digital multimedia applications. It is equipped with a 2D hardware engine and a display output engine, which are used to minimize CPU overhead to meet image display requirements. It has a rich set of peripheral interfaces, such as SAI, PDM, SPDIF, Audio DSM, Audio ADC, USB2 OTG, RMII, CAN, etc., which can meet different application development needs, reducing the complexity and cost of hardware development. It also features a high - performance external memory interface (DDR2/DDR3/DDR3L), capable of maintaining the demanding memory bandwidth.</font></p>
 <p>Connection method for is OK3506-S edging connection, and for OK3506-C is board-to-board.</p>
 <p>The main interfaces are shown in the figure below:</p>
-<p><strong><font style="color:rgb(51, 51, 51);">OK3506-S Front</font></strong></p>
+<p><strong><font style="color:rgb(51, 51, 51);">OK3506J-S Front</font></strong></p>
 <p><img alt="Image" src="_images/1747882782209_3892a1c7_5a1a_4780_8419_04ea72a306ed.jpeg" /></p>
-<p><strong><font style="color:rgb(51, 51, 51);">OK3506-C Front</font></strong></p>
+<p><strong><font style="color:rgb(51, 51, 51);">OK3506J-C Front</font></strong></p>
 <p><img alt="Image" src="_images/1753926502435_9040b0e0_b493_4910_985a_5c90ec4b9183.jpeg" /></p>
 <p><strong>Note: The hardware parameters will not be described in this software manual. Before referring to this manual for software development, please read the “OK3506 - S/OK3506 - C Hardware Manual” to understand the product naming rules and the hardware configuration information of the product you are using. This will be helpful for your use of the product.</strong></p>
 </section>
@@ -493,7 +493,7 @@ OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.
 <h2>2. Fast Startup<a class="headerlink" href="#fast-startup" title="Link to this heading"></a></h2>
 <section id="preparation-before-startup">
 <h3><font style="color:rgb(51, 51, 51);">2.1 Preparation Before Startup</font><a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h3>
-<p>OK3506-S/OK3506-C development board has two system login methods, serial and network login.</p>
+<p>OK3506J-S/OK3506J-C development board has two system login methods, serial and network login.</p>
 <p>Hardware preparation before system startup:</p>
 <ul class="simple">
 <li><p><font style="color:rgb(51, 51, 51);">12V3A DC power</font></p></li>
@@ -505,7 +505,7 @@ OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.
 <li><p>Screen: Connect the screen according to the development board interface (optional if display is not needed).</p></li>
 </ul>
 <p><img alt="Image" src="_images/1735029237085_da123d7a_635a_4358_8599_42f463467e5e.jpeg" /></p>
-<p><strong>Note: OK3506-S/OK3506-C The positions of the above interfaces are consistent.</strong></p>
+<p><strong>Note: OK3506J-S/OK3506J-C The positions of the above interfaces are consistent.</strong></p>
 </section>
 <section id="related-driver-installation">
 <h3><font style="color:rgb(51, 51, 51);">2.2 Related Driver Installation</font><a class="headerlink" href="#related-driver-installation" title="Link to this heading"></a></h3>
@@ -517,7 +517,7 @@ OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.
 </section>
 <section id="serial-login">
 <h3><font style="color:rgb(51, 51, 51);">2.3 Serial Login</font><a class="headerlink" href="#serial-login" title="Link to this heading"></a></h3>
-<p>OK3506-S/OK3506-C platform uses a Type-C interface for debugging serial port, with an on-board USB to UART chip. You do not need to purchase USB to serial debugging tools; it is extremely simple and convenient to use.</p>
+<p>OK3506J-S/OK3506J-C platform uses a Type-C interface for debugging serial port, with an on-board USB to UART chip. You do not need to purchase USB to serial debugging tools; it is extremely simple and convenient to use.</p>
 <section id="serial-port-connection-settings">
 <h4><font style="color:rgb(51, 51, 51);">2.3.1 Serial Port Connection Settings</font><a class="headerlink" href="#serial-port-connection-settings" title="Link to this heading"></a></h4>
 <p><strong>Description:</strong></p>
