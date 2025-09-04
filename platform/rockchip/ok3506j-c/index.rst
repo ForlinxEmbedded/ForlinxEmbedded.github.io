@@ -34,6 +34,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK3506J-C_Linux6_1_99_User_Manual
+   OK3506J-C_Linux6_1_99_User_Compilation_Manual
 
 APPLICATION NOTE
 -----------------
