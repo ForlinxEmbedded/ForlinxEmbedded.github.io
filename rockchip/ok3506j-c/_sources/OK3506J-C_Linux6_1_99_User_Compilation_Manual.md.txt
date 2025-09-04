@@ -286,7 +286,7 @@ When the VMware virtual NIC device is in bridge mode, the host NIC and the virtu
 
 ![Image](./images/OK3506J-C_Linux6_1_99_User_Compilation_Manual/1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
 
-### 4\. Related Code Compilation
+## 4\. Related Code Compilation
 
 ### 4.1 Preparation Before Compilation
 
