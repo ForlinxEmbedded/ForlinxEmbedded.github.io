@@ -335,7 +335,7 @@ Go to the /home/forlinx/ -11.0. 3/bin/ directory of the actual qtcreator install
 ```plain
 forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-11.0.3/bin/
 forlinx@ubuntu: ~/qtcreator-11.0.3/bin$ sudo ./qtcreator
-[sudo] password for forlinx: forlinx                         //输入forlinx用户的密码，无回显
+[sudo] password for forlinx: forlinx                         //Enter the password for the Forlinx user without display
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
@@ -370,7 +370,7 @@ Step 1: Navigate to the actual installation directory of Qt Creator, which is /h
 ```plain
 forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-11.0.3/bin
 forlinx@ubuntu: ~/qtcreator-11.0.3/bin $ sudo ./qtcreator
-[sudo] password for forlinx: forlinx                         //输入forlinx用户的密码，无回显
+[sudo] password for forlinx: forlinx                         //Enter the password for the Forlinx user without display
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
@@ -469,8 +469,6 @@ Solution:
 
 Solution:   
 The virtual machine does not have enough memory to run the image's maximum requirements; increase the virtual machine's memory and reboot the virtual machine.
-
-![Image](./images/OK_MX8MPQ-C_Linux6_1_36_User_Compilation_Manual/1745908655178_2fb6d560_8178_4dd1_a06b_28a3af6b7dbb.png)
 
 ## 4\. Related Code Compilation
 
