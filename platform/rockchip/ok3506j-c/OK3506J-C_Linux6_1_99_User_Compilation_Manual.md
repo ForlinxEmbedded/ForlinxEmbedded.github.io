@@ -1,4 +1,4 @@
-# OK3506J-C\_Linux6.1.99_User’s Compilation Manual\_V1.0
+# OK3506J-S/OK3506J-C\_Linux6.1.99_User’s Compilation Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
