@@ -22,6 +22,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK3576-C Manual" href="index.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -58,99 +59,95 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">OK3576-C_User’s Hardware Manual_V1.3</a><ul>
-<li><a class="reference internal" href="#copyright">Copyright</a></li>
-<li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#application-scope">Application Scope</a></li>
-<li><a class="reference internal" href="#revision-history">Revision History</a></li>
-<li><a class="reference internal" href="#rk3576-description">1. RK3576 Description</a></li>
-<li><a class="reference internal" href="#fet3588-c-som-description">2. FET3588-C SoM Description</a><ul>
-<li><a class="reference internal" href="#fet3576-c-som">2.1 FET3576-C SoM</a></li>
-<li><a class="reference internal" href="#fet3576-c-som-dimension-diagram">2.2 FET3576-C SoM Dimension Diagram</a></li>
-<li><a class="reference internal" href="#id1">2.3 FET3576-C SoM Dimension Diagram</a></li>
-<li><a class="reference internal" href="#performance-parameters">2.4 Performance Parameters</a><ul>
-<li><a class="reference internal" href="#system-main-frequency">2.4.1 System Main Frequency</a></li>
-<li><a class="reference internal" href="#power-parameter">2.4.2 Power Parameter</a></li>
-<li><a class="reference internal" href="#operating-environment">2.4.3 Operating Environment</a></li>
-<li><a class="reference internal" href="#som-interface-speed">2.4.4 SoM Interface Speed</a></li>
-<li><a class="reference internal" href="#esd-features">2.4.5 ESD  Features</a></li>
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OK3576-C_User’s Hardware Manual_V1.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rk3576-description">1. RK3576 Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fet3588-c-som-description">2. FET3588-C SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som">2.1 FET3576-C SoM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som-dimension-diagram">2.2 FET3576-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.3 FET3576-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameters">2.4 Performance Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-main-frequency">2.4.1 System Main Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.4.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-environment">2.4.3 Operating Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#som-interface-speed">2.4.4 SoM Interface Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esd-features">2.4.5 ESD  Features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id2">2.5 SoM Interface Speed</a></li>
-<li><a class="reference internal" href="#fet3576-c-som-pins-definition">2.6  FET3576-C SoM Pins Definition</a><ul>
-<li><a class="reference internal" href="#fet3576-c-som-pins-schematic">2.6.1  FET3576-C SoM Pins Schematic</a></li>
-<li><a class="reference internal" href="#fet3576-c-som-pins-description">2.6.2 FET3576-C SoM Pins Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2.5 SoM Interface Speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som-pins-definition">2.6  FET3576-C SoM Pins Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet3576-c-som-pins-schematic">2.6.1  FET3576-C SoM Pins Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fet3576-c-som-pins-description">2.6.2 FET3576-C SoM Pins Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#fet3576-c-som-pin-description-divided-by-function">2.7 FET3576-C SoM Pin Description (Divided by Function)</a><ul>
-<li><a class="reference internal" href="#power-pin">2.7.1 Power Pin</a></li>
-<li><a class="reference internal" href="#reset-control-pin">2.7.2 Reset Control Pin</a></li>
-<li><a class="reference internal" href="#flashing-control-pin">2.7.3 Flashing Control Pin</a></li>
-<li><a class="reference internal" href="#function-key-control-pin">2.7.4 Function Key Control Pin</a></li>
-<li><a class="reference internal" href="#usb-data-control-pin">2.7.5 USB Data/Control Pin</a></li>
-<li><a class="reference internal" href="#sd-interface-control-pin">2.7.6 SD Interface Control Pin</a></li>
-<li><a class="reference internal" href="#wifi-interface-control-pin">2.7.7 WIFI Interface Control Pin</a></li>
-<li><a class="reference internal" href="#uart-interface-control-pin">2.7.8 UART Interface Control Pin</a></li>
-<li><a class="reference internal" href="#iic-interface-control-pin">2.7.9 IIC Interface Control Pin</a></li>
-<li><a class="reference internal" href="#ethernet-interface-control-pin">2.7.10 Ethernet Interface Control Pin</a></li>
-<li><a class="reference internal" href="#mipi-csi-interface-control-pin">2.7.11 MIPI_CSI Interface Control Pin</a></li>
-<li><a class="reference internal" href="#mipi-dsi-interface-control-pin">2.7.12  MIPI_DSI Interface Control Pin</a></li>
-<li><a class="reference internal" href="#pcie-interface-control-pin">2.7.13 PCIE Interface Control Pin</a></li>
-<li><a class="reference internal" href="#hdmi-interface-control-pin">2.7.14 HDMI Interface Control Pin</a></li>
-<li><a class="reference internal" href="#i2s-audio-interface-control-pin">2.7.15 I2S AUDIO Interface Control Pin</a></li>
-<li><a class="reference internal" href="#can-interface-control-pin">2.7.16 CAN Interface Control Pin</a></li>
-<li><a class="reference internal" href="#g-5g-module-control-pin">2.7.17 4G/ 5G Module Control Pin</a></li>
-<li><a class="reference internal" href="#adc-interface-control-pin">2.7.18 ADC Interface Control Pin</a></li>
-<li><a class="reference internal" href="#other-control-pin">2.7.19 Other Control Pin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som-pin-description-divided-by-function">2.7 FET3576-C SoM Pin Description (Divided by Function)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#power-pin">2.7.1 Power Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reset-control-pin">2.7.2 Reset Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-control-pin">2.7.3 Flashing Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#function-key-control-pin">2.7.4 Function Key Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-data-control-pin">2.7.5 USB Data/Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sd-interface-control-pin">2.7.6 SD Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-interface-control-pin">2.7.7 WIFI Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uart-interface-control-pin">2.7.8 UART Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#iic-interface-control-pin">2.7.9 IIC Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet-interface-control-pin">2.7.10 Ethernet Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-csi-interface-control-pin">2.7.11 MIPI_CSI Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-dsi-interface-control-pin">2.7.12  MIPI_DSI Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcie-interface-control-pin">2.7.13 PCIE Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hdmi-interface-control-pin">2.7.14 HDMI Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i2s-audio-interface-control-pin">2.7.15 I2S AUDIO Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-interface-control-pin">2.7.16 CAN Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-5g-module-control-pin">2.7.17 4G/ 5G Module Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adc-interface-control-pin">2.7.18 ADC Interface Control Pin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-control-pin">2.7.19 Other Control Pin</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#som-hardware-design-description">2.8 SoM Hardware Design Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.8 SoM Hardware Design Description</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#ok3576-c-development-platform-description">3. OK3576-C Development Platform Description</a><ul>
-<li><a class="reference internal" href="#ok3576-c-development-board-interface-diagram">3.1 OK3576-C Development Board Interface Diagram</a></li>
-<li><a class="reference internal" href="#ok3576-c-som-dimension-diagram">3.2 OK3576-C SoM Dimension Diagram</a></li>
-<li><a class="reference internal" href="#carrier-board-naming-rules">3.3 Carrier Board Naming Rules</a></li>
-<li><a class="reference internal" href="#carrier-board-resources">3.4 Carrier Board Resources</a></li>
-<li><a class="reference internal" href="#ok3576-c-carrier-board-description">3.5 OK3576-C Carrier Board Description</a><ul>
-<li><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
-<li><a class="reference internal" href="#reset-and-startup-shutdown-signal">3.5.2 Reset and Startup/Shutdown Signal</a></li>
-<li><a class="reference internal" href="#boot-configuration">3.5.3 Boot Configuration</a></li>
-<li><a class="reference internal" href="#system-initialization-configuration-signal">3.5.4 System Initialization Configuration Signal</a></li>
-<li><a class="reference internal" href="#jtag-uart-debug-circuit">3.5.5  JTAG &amp; UART Debug Circuit</a></li>
-<li><a class="reference internal" href="#iic-extending-io">3.5.6 IIC Extending IO</a></li>
-<li><a class="reference internal" href="#saradc">3.5.7 SARADC</a></li>
-<li><a class="reference internal" href="#tf-card">3.5.8 TF Card</a></li>
-<li><a class="reference internal" href="#rtc-circuit">3.5.9 RTC Circuit</a></li>
-<li><a class="reference internal" href="#ethernet-circuit">3.5.10 Ethernet Circuit</a></li>
-<li><a class="reference internal" href="#rs485-interface">3.5.11 RS485 Interface</a></li>
-<li><a class="reference internal" href="#can-interface">3.5.12 CAN Interface</a></li>
-<li><a class="reference internal" href="#audio">3.5.13 Audio</a></li>
-<li><a class="reference internal" href="#g-5g-interface">3.5.14 4G&amp;5G Interface</a></li>
-<li><a class="reference internal" href="#usb2-0-usb3-0-a-type-c-usb3-0-circuit">3.5.15 USB2.0/USB3.0_A/Type - C USB3.0 Circuit</a></li>
-<li><a class="reference internal" href="#sata3-1-interface">3.5.16 SATA3.1 Interface</a></li>
-<li><a class="reference internal" href="#pcie2-1-circuit">3.5.17 PCIE2.1 Circuit</a></li>
-<li><a class="reference internal" href="#video-input-interface">3.5.18 Video Input Interface</a></li>
-<li><a class="reference internal" href="#video-output-interface">3.5.19  Video Output Interface</a><ul>
-<li><a class="reference internal" href="#mipi-dsi-interface"><strong>3.5.19.1 MIPI_DSI Interface</strong></a></li>
-<li><a class="reference internal" href="#hdmi-tx-interface"><strong>3.5.19.2 HDMI_TX Interface</strong></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#wifi-bt-module-circuit">3.5.20  WIFI/BT Module Circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3576-c-development-platform-description">3. OK3576-C Development Platform Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok3576-c-development-board-interface-diagram">3.1 OK3576-C Development Board Interface Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3576-c-som-dimension-diagram">3.2 OK3576-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-naming-rules">3.3 Carrier Board Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-resources">3.4 Carrier Board Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3576-c-carrier-board-description">3.5 OK3576-C Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reset-and-startup-shutdown-signal">3.5.2 Reset and Startup/Shutdown Signal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-configuration">3.5.3 Boot Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-initialization-configuration-signal">3.5.4 System Initialization Configuration Signal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jtag-uart-debug-circuit">3.5.5  JTAG &amp; UART Debug Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#iic-extending-io">3.5.6 IIC Extending IO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#saradc">3.5.7 SARADC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.8 TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc-circuit">3.5.9 RTC Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet-circuit">3.5.10 Ethernet Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rs485-interface">3.5.11 RS485 Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-interface">3.5.12 CAN Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">3.5.13 Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-5g-interface">3.5.14 4G&amp;5G Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb2-0-usb3-0-a-type-c-usb3-0-circuit">3.5.15 USB2.0/USB3.0_A/Type - C USB3.0 Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sata3-1-interface">3.5.16 SATA3.1 Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcie2-1-circuit">3.5.17 PCIE2.1 Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-input-interface">3.5.18 Video Input Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-output-interface">3.5.19  Video Output Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-bt-module-circuit">3.5.20  WIFI/BT Module Circuit</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#hardware-design-guide">4. Hardware Design Guide</a></li>
-<li><a class="reference internal" href="#connector-dimension-diagram">5. Connector Dimension Diagram</a></li>
-<li><a class="reference internal" href="#ok3576-c-development-board-power-consumption-table">6. OK3576-C Development Board Power Consumption Table</a></li>
-<li><a class="reference internal" href="#minimum-system-schematic">7. Minimum System Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-design-guide">4. Hardware Design Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connector-dimension-diagram">5. Connector Dimension Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3576-c-development-board-power-consumption-table">6. OK3576-C Development Board Power Consumption Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-system-schematic">7. Minimum System Schematic</a></li>
 </ul>
 </li>
 </ul>
-</div>
+
         </div>
       </div>
     </nav>
