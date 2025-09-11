@@ -1625,7 +1625,7 @@ root@ok3576-buildroot:/run/media/sda1# reboot
 
 After restarting, you can find that the LOGO has been replaced.
 
-## 4\. OK3576 Platform Multimedia Test
+## 5\. OK3576 Platform Multimedia Test
 
 Some application layer software for audio and video on the OK3576 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form. If users need a player with an interface, they can also use qt's multimedia classes, which also support codecs, see the Qt Tests chapter.
 
@@ -1647,9 +1647,9 @@ Table of hardware codec parameters for the OK3576 platform:
 | Video Encoder| H.264| multi-stream| 4K@60fps
 | | H.265| multi-stream| 4K@60fps
 
-### 4.1 Audio and Video Playback Experience
+### 5.1 Audio and Video Playback Experience
 
-#### 4.1.1 Playing Audio and Video with Gst-play
+#### 5.1.1 Playing Audio and Video with Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
@@ -1683,7 +1683,7 @@ Redistribute latency...
 Reached end of play list.
 ```
 
-#### 4.1.2 Playing Video with Gst-launch
+#### 5.1.2 Playing Video with Gst-launch
 
 ```plain
 root@ok3576-buildroot:/#<font style="color:#0000FF;"> gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink</font>
@@ -1719,7 +1719,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 4.1.3 Playing Audio with Gst-launch
+#### 5.1.3 Playing Audio with Gst-launch
 
 ```plain
 root@ok3576-buildroot:/#<font style="color:#0000FF;"> gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0</font>
@@ -1751,7 +1751,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 4.1.4 Playing Video and Audio with Gst-launch
+#### 5.1.4 Playing Video and Audio with Gst-launch
 
 ```plain
 root@ok3576-buildroot:/#<font style="color:#0000FF;"> gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0</font>
@@ -1791,9 +1791,9 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 4.2 Video Hardware Encoding
+### 5.2 Video Hardware Encoding
 
-#### 4.2.1 Video Hardware Encoding H.264
+#### 5.2.1 Video Hardware Encoding H.264
 
 ```plain
 root@ok3576-buildroot:/#<font style="color:#0000FF;"> gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=3840,height=2160 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4</font>
@@ -1823,7 +1823,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 4.2.2 Video Hardware Encoding H.265
+#### 5.2.2 Video Hardware Encoding H.265
 
 ```plain
 root@ok3576-buildroot:/#<font style="color:#0000FF;"> gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=3840,height=2160 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4</font>
@@ -1849,9 +1849,9 @@ New clock: GstSystemClock
 
 ```
 
-### 4.3 Video Hardware Decoding
+### 5.3 Video Hardware Decoding
 
-#### 4.3.1 Decoding and Playing H.264 Format Video
+#### 5.3.1 Decoding and Playing H.264 Format Video
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;">gst-launch-1.0 filesrc location=/userdata/1080p_30fps_h264-30S.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink</font>
@@ -1885,7 +1885,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 4.3.2 Decoding and Playing H264 Format Video with Audio
+#### 5.3.2 Decoding and Playing H264 Format Video with Audio
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;">gst-launch-1.0 filesrc location=/userdata/1080p_30fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0</font>
@@ -1923,7 +1923,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 4.3.3 Decoding and Playing H.265 Format Video
+#### 5.3.3 Decoding and Playing H.265 Format Video
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;">gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink</font>
@@ -1957,7 +1957,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 4.3.4 Decoding and Playing H265 Format Video with Audio
+#### 5.3.4 Decoding and Playing H265 Format Video with Audio
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;"> gst-launch-1.0 filesrc location=/userdata/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink</font>
@@ -1981,7 +1981,7 @@ New clock: GstAudioSinkClock
 0:00:01.4 / 0:00:30.0 (4.8 %)
 ```
 
-#### 4.3.5 Decoding and Playing VP9 Format Video
+#### 5.3.5 Decoding and Playing VP9 Format Video
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;">gst-launch-1.0 filesrc location=/userdata/1080p_60fps_vp9-30S.mp4  ! qtdemux ! vp9parse ! mppvideodec ! waylandsink</font>
@@ -2007,7 +2007,7 @@ Interrupt: Stopping pipeline ...
 Execution ended after 0:00:03.189342028
 ```
 
-#### 4.3.6 Decoding and Playing VP9 Format Video with Audio
+#### 5.3.6 Decoding and Playing VP9 Format Video with Audio
 
 ```plain
 root@ok3576-buildroot:/#  <font style="color:#0000FF;">gst-launch-1.0 filesrc location=/userdata/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:2,0</font>
@@ -2039,13 +2039,13 @@ Interrupt: Stopping pipeline ...
 Execution ended after 0:00:00.451334462
 ```
 
-### 4.4 Camera Test
+### 5.4 Camera Test
 
 OK3576 supports OV13855 MIPI camera and UVC camera. First, test the UVC camera with Logitech C270 process. Insert the USB camera into the development board, and the UVC driver will be installed automatically.
 
-#### 4.4.1 UVC Camera Test
+#### 5.4.1 UVC Camera Test
 
-##### **4.4.1.1 Camera Recognition Detection and Format Support Queries**
+##### **5.4.1.1 Camera Recognition Detection and Format Support Queries**
 
 Camera Recognition Detection
 
@@ -2131,7 +2131,7 @@ ioctl: VIDIOC\_ENUM\_FMT
                     Interval: Discrete 0.200s (5.000 fps)
 ```
 
-##### **4.4.1.2 Camera Capture Format Queries and Modifications**
+##### **5.4.1.2 Camera Capture Format Queries and Modifications**
 
 Camera Capture Format Queries
 
@@ -2161,7 +2161,7 @@ Format Video Capture:
     Flags             :
 ```
 
-##### **4.4.1.3 Camera Image Preview and Taking Pictures**
+##### **5.4.1.3 Camera Image Preview and Taking Pictures**
 
 Camera Image Preview
 
@@ -2211,11 +2211,11 @@ Freeing pipeline ...
 //After the execution, view the pic. jpg file generated under the root directory
 ```
 
-#### 4.4.2 OV13855 Test
+#### 5.4.2 OV13855 Test
 
 When the ov13855 camera is called in the current data, the image is displayed in green. It is currently being improved. Please choose carefully.
 
-##### 4.4.2.1 Camera Recognition Detection and Format Support Queries
+##### 5.4.2.1 Camera Recognition Detection and Format Support Queries
 
 root@ok3576-buildroot:/#   v4l2-ctl --list-devices
 
@@ -2267,7 +2267,7 @@ rkisp\_mainpath (platform:rkisp-vir0): //cam1
     /dev/media5
 ```
 
-##### **4.4.2.2 Camera Previews**
+##### **5.4.2.2 Camera Previews**
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;">gst-launch-1.0 v4l2src device=/dev/video55 ! video/x-raw, format=NV12, width=1920, height=1080, framerate=30/1 ! waylandsink</font>
@@ -2305,7 +2305,7 @@ Redistribute latency...
 0:00:02.0 / 99:99:99.
 ```
 
-##### **4.4.2.3 Camera to Take Pictures**
+##### **5.4.2.3 Camera to Take Pictures**
 
 ```plain
 root@ok3576-buildroot:/# <font style="color:#0000FF;">gst-launch-1.0 v4l2src device=/dev/video5 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg</font>
@@ -2375,7 +2375,7 @@ bin               data  etc   lib    linuxrc     media  oem  pic.jpg  rockchip-t
 busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root           sbin  sys     tmp     userdata  var
 ```
 
-#### 4.2.3 OV5645 Test
+#### 5.2.3 OV5645 Test
 
 **Camera Corresponding Nodes**
 
@@ -2389,7 +2389,7 @@ CAM5 ：rkcif-mipi-lvds3
 
 Take testing CAM5 as an example.
 
-##### **4.2.3.1. Camera Recognition Detection**
+##### **5.2.3.1. Camera Recognition Detection**
 
 root@rk3576-buildroot:/#   v4l2-ctl --list-devices
 
@@ -2421,7 +2421,7 @@ rkcif (platform:rkcif-mipi-lvds4):
     /dev/media4
 ```
 
-##### **4.2.3.2. View Supported Formats**
+##### **5.2.3.2. View Supported Formats**
 
 root@ok3576-buildroot:/#  v4l2-ctl --list-formats-ext -d /dev/video44
 
@@ -2465,7 +2465,7 @@ ioctl: VIDIOC\_ENUM\_FMT
             Size: Stepwise 64x64 - 1920x1080 with step 8/8
 ```
 
-##### **4.2.3.3. Camera Previews**
+##### **5.2.3.3. Camera Previews**
 
 root@ok3576-buildroot:/#   gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
 
@@ -2485,7 +2485,7 @@ Redistribute latency...
 
 0:00:06.3 / 99:99:99.
 
-## 5\. OK3576 Platform Multimedia Test
+## 6\. OK3576 Platform Multimedia Test
 
 Some application layer software for audio and video on the OK3576 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form. If users need a player with an interface, they can also use qt's multimedia classes, which also support codecs, see the Qt Tests chapter.
 
@@ -2507,9 +2507,9 @@ Table of hardware codec parameters for the OK3576 platform:
 | Video Encoder| H.264| multi-stream| 4K@60fps
 | | H.265| multi-stream| 4K@60fps
 
-## 5.1 Audio and Video Playback
+### 6.1 Audio and Video Playback
 
-#### 5.1.1 Playing Audio and Video with Gst-play
+#### 6.1.1 Playing Audio and Video with Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
@@ -2543,7 +2543,7 @@ Redistribute latency...
 Reached end of play list.
 ```
 
-#### 5.1.2 Playing Video with Gst-launch
+#### 6.1.2 Playing Video with Gst-launch
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
@@ -2579,7 +2579,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.1.3 Playing Audio with Gst-launch
+#### 6.1.3 Playing Audio with Gst-launch
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
@@ -2611,7 +2611,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.1.4 Playing Video and Audio with Gst-launch
+#### 6.1.4 Playing Video and Audio with Gst-launch
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
@@ -2651,9 +2651,9 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.2 Video Hardware Encoding
+### 6.2 Video Hardware Encoding
 
-#### 5.2.1 Video Hardware Encoding H.264
+#### 6.2.1 Video Hardware Encoding H.264
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=3840,height=2160 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
@@ -2683,7 +2683,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.2.2 Video Hardware Encoding H.265
+#### 6.2.2 Video Hardware Encoding H.265
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=3840,height=2160 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
@@ -2709,9 +2709,9 @@ New clock: GstSystemClock
 
 ```
 
-### 5.3 Video Hardware Decoding
+### 6.3 Video Hardware Decoding
 
-#### 5.3.1 Decoding and Playing H.264 Format Video
+#### 6.3.1 Decoding and Playing H.264 Format Video
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_30fps_h264-30S.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
@@ -2745,7 +2745,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.3.2 Decoding and Playing H264 Format Video with Audio
+#### 6.3.2 Decoding and Playing H264 Format Video with Audio
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_30fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0
@@ -2783,7 +2783,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.3.3 Decoding and Playing H.265 Format Video
+#### 6.3.3 Decoding and Playing H.265 Format Video
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
@@ -2817,7 +2817,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.3.4 Decoding and Playing H265 Format Video \& Audio 
+#### 6.3.4 Decoding and Playing H265 Format Video \& Audio 
 
 ```plain
 root@ok3576-buildroot:/#  gst-launch-1.0 filesrc location=/userdata/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
@@ -2841,7 +2841,7 @@ New clock: GstAudioSinkClock
 0:00:01.4 / 0:00:30.0 (4.8 %)
 ```
 
-#### 5.3.5 Decoding and Playing VP9 Format Video
+#### 6.3.5 Decoding and Playing VP9 Format Video
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_60fps_vp9-30S.mp4  ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
@@ -2867,7 +2867,7 @@ Interrupt: Stopping pipeline ...
 Execution ended after 0:00:03.189342028
 ```
 
-#### 5.3.6 Decoding and Playing VP9 Format Video with Audio
+#### 6.3.6 Decoding and Playing VP9 Format Video with Audio
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 filesrc location=/userdata/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:2,0
@@ -2899,13 +2899,13 @@ Interrupt: Stopping pipeline ...
 Execution ended after 0:00:00.451334462
 ```
 
-### 5.4 Camera Test
+### 6.4 Camera Test
 
 OK3576 supports OV13855 MIPI camera and UVC camera. First, test the UVC camera with Logitech C270 process. Insert the USB camera into the development board, and the UVC driver will be installed automatically.
 
-#### 5.4.1 UVC Camera Test
+#### 6.4.1 UVC Camera Test
 
-##### **5.4.1.1 Camera Recognition Detection and Format Support Queries**
+##### **6.4.1.1 Camera Recognition Detection and Format Support Queries**
 
 Camera Recognition Detection
 
@@ -2988,7 +2988,7 @@ root@ok3576-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video20 	//View for
                     Interval: Discrete 0.200s (5.000 fps)
 ```
 
-##### **5.4.1.2 Camera Capture Format Queries and Modifications**
+##### **6.4.1.2 Camera Capture Format Queries and Modifications**
 
 Camera Capture Format Queries
 
@@ -3018,7 +3018,7 @@ Camera Capture Format Queries
     Flags             :
 ```
 
-##### **5.4.1.3 Camera Image Preview and Taking Pictures**
+##### **6.4.1.3 Camera Image Preview and Taking Pictures**
 
 Camera Image Preview
 
@@ -3068,11 +3068,11 @@ Freeing pipeline ...
 //After the execution, check the pic. jpg file generated under the root directory
 ```
 
-#### 5.4.2 OV13855 Test
+#### 6.4.2 OV13855 Test
 
 When the ov13855 camera is called in the current data, the image is displayed in green. It is currently being improved. Please choose carefully.
 
-##### 5.4.2.1 Camera Recognition Detection and Format Support Queries
+##### 6.4.2.1 Camera Recognition Detection and Format Support Queries
 
 ```plain
    root@ok3576-buildroot:/#   v4l2-ctl --list-devices
@@ -3124,7 +3124,7 @@ When the ov13855 camera is called in the current data, the image is displayed in
     /dev/media5
 ```
 
-##### **5.4.2.2. Camera Previews**
+##### **6.4.2.2. Camera Previews**
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video55 ! video/x-raw, format=NV12, width=1920, height=1080, framerate=30/1 ! waylandsink
@@ -3162,7 +3162,7 @@ Redistribute latency...
 0:00:02.0 / 99:99:99.
 ```
 
-##### **5.4.2.3 Camera to Take Pictures**
+##### **6.4.2.3 Camera to Take Pictures**
 
 ```plain
 root@ok3576-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video5 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
@@ -3232,7 +3232,7 @@ bin               data  etc   lib    linuxrc     media  oem  pic.jpg  rockchip-t
 busybox.fragment  dev   info  lib64  lost+found  mnt    opt  proc     root           sbin  sys     tmp     userdata  var
 ```
 
-#### 5.4.3 OV5645 Test
+#### 6.4.3 OV5645 Test
 
 **Camera Corresponding Nodes**
 
@@ -3246,7 +3246,7 @@ CAM5 ：rkcif-mipi-lvds3
 
 Take testing CAM5 as an example.
 
-##### **5.4.3.1 Camera Recognition Detection**
+##### **6.4.3.1 Camera Recognition Detection**
 
 ```plain
   root@rk3576-buildroot:/#   v4l2-ctl --list-devices
@@ -3278,7 +3278,7 @@ Take testing CAM5 as an example.
     /dev/media4
 ```
 
-##### **5.4.3.2 View Supported Formats**
+##### **6.4.3.2 View Supported Formats**
 
 root@ok3576-buildroot:/#  v4l2-ctl --list-formats-ext -d /dev/video44
 
@@ -3325,7 +3325,7 @@ ioctl: VIDIOC_ENUM_FMT
             Size: Stepwise 64x64 - 1920x1080 with step 8/8
 ```
 
-##### **5.4.3.3 Camera Previews**
+##### **6.4.3.3 Camera Previews**
 
 ```plain
 root@ok3576-buildroot:/#   gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
@@ -3347,15 +3347,15 @@ Redistribute latency...
 0:00:06.3 / 99:99:99.
 ```
 
-## 5\. System Flashing
+## 7\. System Flashing
 
 ```plain
 OK3576-C development board currently supports OTG programming mode. Corresponding programming tools are provided in the user profile.
 ```
 
-### 5.1 OTG System Flashing
+### 7.1 OTG System Flashing
 
-#### 5.1.1 OTG Driver Installation
+#### 7.1.1 OTG Driver Installation
 
 + Path: OK3576-C (Linux) User Profile \\ Linux \\ Tools DriverAssitant \_ v5.11.zip
 
@@ -3369,9 +3369,9 @@ Click "Driver Installation”
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251723-98517c31-82d2-4e6d-9c09-9a214f28b101.png)
 
-#### 5.1.2 OTG Full Flashing Test
+#### 7.1.2 OTG Full Flashing Test
 
-##### **5.1.2.1 RKDevTool Flashing Test**
+##### **7.1.2.1 RKDevTool Flashing Test**
 
 + Path: OK3576-C (Linux) User Profile\\Linux\\Tool\\RKDevTool\_Release\_v3.31.zip
 
@@ -3397,7 +3397,7 @@ Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319645988-ab89d472-d74b-4ef3-abdd-44fb5ac64af7.png)
 
-#### 5.1.3 OTG Step Flashing Test
+#### 7.1.3 OTG Step Flashing Test
 
 In the development phase, it is very time-consuming to burn all of them every time, so here is the method of using OTG burning tool to burn in separate partitions.
 
@@ -3437,7 +3437,7 @@ At this time, the system will prompt the discovery of a maskrom device. The flas
 
 **Note: Don't click "Device Partition Table" in maskrom mode, it is invalid.**
 
-### 5.2 TF Card Flashing
+### 7.2 TF Card Flashing
 
 TF card flashing and testing 
 
@@ -3477,15 +3477,15 @@ Serial port information during the burning process:
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.
 
-## 6\. System Flashing
+## 7\. System Flashing
 
 ```plain
 OK3576-C development board currently supports OTG programming mode. Corresponding programming tools are provided in the user profile.
 ```
 
-### 6.1 OTG System Flashing
+### 7.1 OTG System Flashing
 
-#### 6.1.1 OTG Driver Installation
+#### 7.1.1 OTG Driver Installation
 
 + Path: OK3576-C (Linux) User Profile \\ Linux \\ Tools DriverAssitant \_ v5.11.zip
 
@@ -3499,9 +3499,9 @@ Click "Driver Installation”
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251723-98517c31-82d2-4e6d-9c09-9a214f28b101.png)
 
-#### 6.1.2 OTG Full Flashing Test
+#### 7.1.2 OTG Full Flashing Test
 
-##### **6.1.2.1 RKDevTool Flashing Test**
+##### **7.1.2.1 RKDevTool Flashing Test**
 
 + Path: OK3576-C (Linux) User Profile\\Linux\\Tool\\RKDevTool\_Release\_v3.31.zip
 
@@ -3529,7 +3529,7 @@ Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319645988-ab89d472-d74b-4ef3-abdd-44fb5ac64af7.png)
 
-#### 6.1.3 OTG Step Programming Test
+#### 7.1.3 OTG Step Programming Test
 
 In the development phase, it is very time-consuming to burn all of them every time, so here is the method of using OTG burning tool to burn in separate partitions.
 
@@ -3571,7 +3571,7 @@ At this time, the system will prompt the discovery of a maskrom device. The flas
 
 **Note: Don't click "Device Partition Table" in maskrom mode, it is invalid.**
 
-### 6.2 TF Card Flashing
+### 7.2 TF Card Flashing
 
 TF card flashing and testing 
 
