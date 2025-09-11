@@ -31,7 +31,7 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
-
+   OK3576-C_Linux6_1_84_User_Manual
 
 APPLICATION NOTE
 -----------------
