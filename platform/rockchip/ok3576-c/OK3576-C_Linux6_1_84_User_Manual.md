@@ -148,15 +148,15 @@ In the following, take the putty terminal software as an example to introduce th
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214204730-e2277f30-f460-4c2b-8965-b807e4ac62ef.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214204934-9bb8a98b-75fb-4a89-bba4-b1acbe4a0c5c.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214204934_9bb8a98b_75fb_4a89_bba4_b1acbe4a0c5c.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM3 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214205145-e2882ae8-1022-497a-95ea-aa583a02e011.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214205145_e2882ae8_1022_497a_95ea_aa583a02e011.png)
 
 Step 4: Turn on the development board's power switch. The serial port will print out the information output, including the username and password for Linux (no root privileges). If you need to use the root login, then the username and password are root and root, respectively.
 
@@ -190,13 +190,13 @@ OK3576 platform has excellent support for Qt, here is the demo desktop.
 
 The desktop is displayed as follows after the development board is booted:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214226389-cb589c33-ad7c-4423-92a9-ae02f7955765.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214226389_cb589c33_ad7c_4423_92a9_ae02f7955765.png)
 
 ### 3.2 Browser Test
 
 "DemoBrowser" is a simple and practical web browser. When using it, please make sure that the network is smooth, and make sure that the dns is available before accessing the external network; when the browser starts, it will visit the official website of Forlinx Embedded by default, and the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214226648-2771740f-da63-4879-9913-03ba40e64139.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214226648_2771740f_da63_4879_9913_03ba40e64139.png)
 
 Application Icons
 
@@ -204,7 +204,7 @@ Application Icons
 
 The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214227148-b3d55721-3e49-4baf-b4b8-6415384ef5af.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214227148_b3d55721_3e49_4baf_b4b8_6415384ef5af.png)
 
 Exit this browser via the upper navigation bar File->Quit.
 
@@ -212,11 +212,11 @@ Exit this browser via the upper navigation bar File->Quit.
 
 “Musicplayer” is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214227676-b80f741f-452d-458d-8b73-d80b67053e45.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214227676_b80f741f_452d_458d_8b73_d80b67053e45.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214228013-710720e8-1751-4c57-b4cb-7c801412097f.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214228013_710720e8_1751_4c57_b4cb_7c801412097f.png)
 
 Click the button in the lower left corner to select Test Audio/userdata/piano2-CoolEdit.mp3.
 
@@ -224,11 +224,11 @@ Click the button in the lower left corner to select Test Audio/userdata/piano2-C
 
 Click the desktop icon to open the video player qplayer
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214228266-4c65bcfc-5268-4aa0-9b4e-5d9913205fc3.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214228266_4c65bcfc_5268_4aa0_9b4e_5d9913205fc3.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214228557-40aa5a3f-c5e1-479f-9558-d3a78ec57c54.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214228557_40aa5a3f_c5e1_479f_9558_d3a78ec57c54.png)
 
 **Note: The directory where the test video file is located:**/media/forlinx/video/\*.mp4
 
@@ -240,11 +240,11 @@ Application Icons
 
 Meanwhile, the test supports the 4G module (EM05-CE), inserts the 4G module and SIM card in the case of power failure, and opens the test application after powering up the system to start.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214229267-90283dfc-46f2-4a86-93d8-f0620660106c.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214229267_90283dfc_46f2_4a86_93d8_f0620660106c.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214229500-fe39daaa-66ac-4378-9bda-993ee8294768.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214229500_fe39daaa_66ac_4378_9bda_993ee8294768.png)
 
 Click the "Start" button, and the program will automatically enter the dialing process, obtain the IP address, and set the DNS, etc. After patiently waiting for a few seconds, when the IP address is displayed on the screen, exit the current application. Enter the DemoBrowser web browser to test. If the application can be opened to access the official website of the embedded system, it indicates that the connection is successful.
 
@@ -252,11 +252,11 @@ Click the "Start" button, and the program will automatically enter the dialing p
 
 "WatchDog" is an application used to test the watchdog status.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214229698-74c9df3e-0602-4147-b1cc-a78adc7a5c61.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214229698_74c9df3e_0602_4147_b1cc_a78adc7a5c61.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214229918-4d39d3e9-aa5a-4323-8c0e-e6d3c8ff0a3f.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214229918_4d39d3e9_aa5a_4323_8c0e_e6d3c8ff0a3f.png)
 
 Click start to open the dog feeding function by default and feed the dog regularly. At this time, the system will not restart. When unchecking feed dog, count down 10s and the system enters reboot. It indicates that the Watchdog function is normal.
 
@@ -264,11 +264,11 @@ Click start to open the dog feeding function by default and feed the dog regular
 
 Click on the desktop icon to use it to test the OK3576 on-board UART interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214230115-11c45bee-6ecb-4993-8d4e-c9a0ac17a51e.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214230115_11c45bee_6ecb_4993_8d4e_c9a0ac17a51e.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214230309-3fe6406d-9503-40ef-a055-282f3bdbd8c9.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214230309_3fe6406d_9503_40ef_a055_282f3bdbd8c9.png)
 
 Interface Display
 
@@ -276,31 +276,31 @@ The schematic diagram of the OK3576 platform carrier board indicates the presenc
 
 Testing will use two RS485 ports, UART5 and UART6. Before testing, ensure proper connection of the two RS485 interfaces: connect A to A and B to B. The two RS485 carrier board interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214230529-fa0dbbaf-c747-4962-8628-29af59f43202.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214230529_fa0dbbaf_c747_4962_8628_29af59f43202.png)
 
 Test method：
 
 Set ttyS6,baud rate 9600, 8 data bits and1 stop bit in the interface. At last click Open.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214230752-3a35164e-683b-4c99-887d-cb0951b95a68.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214230752_3a35164e_683b_4c99_887d_cb0951b95a68.png)
 
 And use the serial port to log in to the development board, input in the serial port terminal echo “forlinx\_uart\_test.1234567890...” > /dev/ttyS5. The test interface receives the data:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214230952-56ab484c-f51f-440e-ab6d-e99b08f789f0.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214230952_56ab484c_f51f_440e_ab6d_e99b08f789f0.png)
 
 Output cat/dev/ttyS5 on the serial port terminal, click the input box under send on the page, use the keyboard to input "abcdefg", and click send. At this point, ttyS5 can receive the message.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231146-3cc00089-94c7-4f31-b058-143861a549f5.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214231146_3cc00089_94c7_4f31_b058_143861a549f5.png)
 
 ### 3.8 Backlight Test
 
 BackLight is an LCD backlight adjustment application:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231371-bcbdb36a-6185-48fa-befb-cc14ebce017b.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214231371_bcbdb36a_6185_48fa_befb_cc14ebce017b.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231609-eaeb0450-b247-4a59-890e-7fe5e532e70a.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214231609_eaeb0450_b247_4a59_890e_7fe5e532e70a.png)
 
 Application Interfaces
 
@@ -310,11 +310,11 @@ Drag the slider in the interface to set the LCD backlight brightness.
 
 The "Keypad" is used to test whether the platform's own keys are available:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214231838-9a47e29c-e792-46a9-ad17-e8ee94d589f0.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214231838_9a47e29c_e792_46a9_ad17_e8ee94d589f0.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232058-ea621e14-d934-45f2-bc82-10b11e44676d.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214232058_ea621e14_d934_45f2_bc82_10b11e44676d.png)
 
 By default, OK3576 platform configures 4 physical keys V +, V-, MENU and ESC as volume + key, volume- key, Menu and back key respectively. The corresponding key in the test application will turn blue when pressing the key, indicating that the key is in normal status.
 
@@ -322,11 +322,11 @@ By default, OK3576 platform configures 4 physical keys V +, V-, MENU and ESC as 
 
 Through the "RTC" application, the current system time can be viewed and set:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232233-c20b7acc-55c0-45d7-b50a-3149c846ea40.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214232233_c20b7acc_55c0_45d7_b50a_3149c846ea40.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232428-d0707edd-590d-4183-a9ec-dc06b348e84e.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214232428_d0707edd_590d_4183_a9ec_dc06b348e84e.png)
 
 After selecting Manual, you can set the time manually. Select date and time, and click apply to complete the setting. When the RTC backup battery is installed, the time will not be lost after power failure and restart.
 
@@ -336,7 +336,7 @@ Click Auto to perform network timing, and click apply to perform timing successf
 
 OK3568 can select DHCP and static modes through "Network" network configuration application, and static mode can configure IP address, subnet mask, gateway and DNS.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232653-722a1602-c466-446c-9b06-565a0da24c53.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214232653_722a1602_c466_446c_9b06_565a0da24c53.png)
 
 Applications Icons
 
@@ -348,7 +348,7 @@ Enter Gateway in the DNS column and DNS in the DNS column.
 
 After entering the URL and clicking the ping key, the result of the ping will be prompted in the prompt box on the left, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214232912-42a916f1-8e9e-44f6-b6e9-459b1193a296.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214232912_42a916f1_8e9e_44f6_b6e9_459b1193a296.png)
 
 **Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
@@ -356,21 +356,21 @@ After entering the URL and clicking the ping key, the result of the ping will be
 
 Click the desktop icon to test the database using Sqlite.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233115-c6117ccb-4349-43f0-a2b9-4dce83d63b3f.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214233115_c6117ccb_4349_43f0_a2b9_4dce83d63b3f.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233314-9eec2afa-69fb-475e-8c48-2d07a32cbf70.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214233314_9eec2afa_69fb_475e_8c48_2d07a32cbf70.png)
 
 ### 3.13 System Information Test
 
 Click the desktop icon to display information about the system.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233537-637e2d41-ae39-4173-b3d6-2e064206ac66.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214233537_637e2d41_ae39_4173_b3d6_2e064206ac66.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233785-3ccdd89b-058f-4c5d-bd50-9d1df40873c6.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214233785_3ccdd89b_058f_4c5d_bd50_9d1df40873c6.png)
 
 ## 4\. OK3576 Command Line Tool Application and Test
 
@@ -658,7 +658,7 @@ root@ok3576-buildroot:/# ifup -a
 
 Streaming Test
 
-![](https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943410-b812b136-2db4-42a4-ba63-223022d3ab38.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1737683943410_b812b136_2db4_42a4_ba63_223022d3ab38.png)
 
 ### 4.9 UART 485 Test
 
@@ -673,7 +673,7 @@ The schematic diagram of the OK3576 platform carrier board indicates the presenc
 
 Testing will use two RS485 ports, UART5 and UART6. Before testing, ensure proper connection of the two RS485 interfaces: connect A to A and B to B. The two RS485 carrier board interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214233983-62fe5bd5-29ce-453f-966d-ada949156ff8.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214233983_62fe5bd5_29ce_453f_966d_ada949156ff8.png)
 
 Use two terminals to log in to the board, one UART0 debug port and the other using SSH.
 
@@ -698,7 +698,7 @@ root@ok3576-buildroot:~# echo 111111 > /dev/ttyS6     //Send data
 
 OK3576-C development board provides 8 x ADC internally, with saradc2, saradc4, saradc5, saradc6, and saradc7 accessible at port P18. These channels can be tested by connecting jumpers to the adjacent variable resistors. The hardware diagram of the ADC pins is as follows. The current chip uses a 1.8V reference voltage corresponding to a maximum value of 4096 for the 12-bit ADC. Select saradc4 for testing and use jumper caps to connect pins 3 and 4 of port P18.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214234240-0c30d0ad-ed41-40ae-aaa4-96e802c801ef.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214234240_0c30d0ad_ed41_40ae_aaa4_96e802c801ef.png)
 
 Test adjustable resistance value
 
@@ -714,7 +714,7 @@ root@ok3576-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 
 1\. Insert the TF card into the TF card slot on the carrier board before powe-up . Then power up and start, run the command dmesg, and the terminal will have the following printed information:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214234484-c664b3fe-2108-4d7d-8599-2eeb49db3c72.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214234484_c664b3fe_2108_4d7d_8599_2eeb49db3c72.png)
 
 2\. Check the mount directory:
 
@@ -779,7 +779,7 @@ root@ok3576-buildroot:/# dd if=/test of=/dev/null bs=1M
 
 Connect the USB mouse to the USB interface of the OK3576 platform and use the dmesg command, the serial terminal prints the following information:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214234692-556d9d00-2631-418f-8313-eac623091c54.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214234692_556d9d00_2631_418f_8313_eac623091c54.png)
 
 At this time, the arrow cursor appears on the screen, the mouse can work normally.
 
@@ -791,7 +791,7 @@ The terminal prints information about the USB flash drive, and since many types 
 
 1\. After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. Use the dmesg command to view and get information about the USB flash drive.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214234931-671886f6-14fa-43dc-abe3-35fbacf9a1fb.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214234931_671886f6_14fa_43dc_abe3_35fbacf9a1fb.png)
 
 2\. Check the mount directory:
 
@@ -836,13 +836,13 @@ OK3576-C includes 1 TYPE-C interface with TYPE-C HOST/DEVICE mode auto recogniti
 
 Device Mode:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214235121-28bd722d-f2f4-4e7f-8f27-7b7e00f4a327.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214235121_28bd722d_f2f4_4e7f_8f27_7b7e00f4a327.png)
 
 Host Mode:
 
 Connect the USB drive to check the inserted information.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214235339-827c7321-d7c6-4cf1-8168-b3b267af2053.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214235339_827c7321_d7c6_4cf1_8168_b3b267af2053.png)
 
 ### 4.16 WIFI Test
 
@@ -1314,7 +1314,7 @@ The OK3576-C platform has two CAN bus interfaces and connection methods: Connect
 
 Short-circuit CAN0 and CAN1, as shown：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214235546-083fb982-828e-4f08-98bb-8f9e5a3b1438.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214235546_083fb982_828e_4f08_98bb_8f9e5a3b1438.png)
 
 Execute the following command in the development board terminal:
 
@@ -1446,23 +1446,23 @@ OK3576-C board has 1 PCIE2.0 interface.
 
 Before powering up the system, insert the PCIE module into the PCIE card slot on the carrier board. After powering up and booting, from lspci we can see that the corresponding device enumeration is successful.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943487-9822bb85-9d61-4acb-8392-9d56dbe2f1da.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1737683943487_9822bb85_9d61_4acb_8392_9d56dbe2f1da.png)
 
 Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.
 
 Taking the pcie hard disk as an example, you can see the following nvme nodes in ls/dev :
 
-![](https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943561-c1891b41-8f1d-4106-a550-cfbfdea82f9c.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1737683943561_c1891b41_8f1d_4106_a550_cfbfdea82f9c.png)
 
 Use dd to test the hard disk speed
 
 Write:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943623-7362eb72-4803-4688-81df-628d2e36bd15.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1737683943623_7362eb72_4803_4688_81df_628d2e36bd15.png)
 
 Read:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/49874024/1737683943687-2e1ba45a-1e18-4388-a558-1a0de2c05aa7.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1737683943687_2e1ba45a_1e18_4388_a558_1a0de2c05aa7.png)
 
 ### 4.23 RKNPU Test
 
@@ -1560,7 +1560,7 @@ root@rk3576-buildroot:/#
 
 OK3576 platform carrier board schematic draws out the expansion IO pins, located on carrier board P17.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214236474-4de50a3c-a5f8-4478-bf1f-e47929ad1cc0.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214236474_4de50a3c_a5f8_4478_bf1f_e47929ad1cc0.png)
 
 Take GPIO\_P17 PIN as an example for test
 
@@ -3363,11 +3363,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251487-8975ec46-6ec0-47ed-9a87-15161a370c5e.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214251487_8975ec46_6ec0_47ed_9a87_15161a370c5e.png)
 
 Click "Driver Installation”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251723-98517c31-82d2-4e6d-9c09-9a214f28b101.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214251723_98517c31_82d2_4e6d_9c09_9a214f28b101.png)
 
 #### 7.1.2 OTG Full Flashing Test
 
@@ -3379,23 +3379,23 @@ It is a development tool provided by Rockchip Micro. Unzip it to a full English 
 
 **Note: The condition for recognition is that the development board is powered up and the RECOVER key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. During OTG flashing, it is necessary to link the OTG cable to the typeC port of the board, as shown in the following figure:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750318796237-22e349ae-0114-48aa-9d91-8d325204fb91.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750318796237_22e349ae_0114_48aa_9d91_8d325204fb91.png)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319091973-df49a9b7-0487-45bb-ae0f-e17c6d58fb45.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319091973_df49a9b7_0487_45bb_ae0f_e17c6d58fb45.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319339986-e8e6060c-5e99-4928-a142-e56dfd22b0f1.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319339986_e8e6060c_5e99_4928_a142_e56dfd22b0f1.png)
 
 Click "Advanced Functions"-> "Erase All" to erase.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319533424-f65d5c86-78e3-4a0d-849b-f8900eb94eb0.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319533424_f65d5c86_78e3_4a0d_849b_f8900eb94eb0.png)
 
 Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319645988-ab89d472-d74b-4ef3-abdd-44fb5ac64af7.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319645988_ab89d472_d74b_4ef3_abdd_44fb5ac64af7.png)
 
 #### 7.1.3 OTG Step Flashing Test
 
@@ -3409,29 +3409,29 @@ Take separate programming boot.img (including device tree and startup logo) as a
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321145954-e538cc24-efea-42d3-ac79-f4dea297807d.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321145954_e538cc24_efea_42d3_ac79_f4dea297807d.png)
 
 Click the "Device Partition Table" button to automatically read the partition address.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321169101-0b9fd528-7444-4dfd-80bf-8a3667939d1e.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321169101_0b9fd528_7444_4dfd_80bf_8a3667939d1e.png)
 
 The prompt asks if you want to update the download address. Clicking "Yes" will result in a successful reading of the partition table.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321192039-f765e1ab-4b15-4520-977d-a882316605d1.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321192039_f765e1ab_4b15_4520_977d_a882316605d1.png)
 
 Click the right test area of the partition to select the partition mirror, and check the partition.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321827091-49476e2a-c84f-428e-864a-ef66d28f5e78.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321827091_49476e2a_c84f_428e_864a_ef66d28f5e78.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321680514-c4f87f44-cc37-4eea-9f59-8a19405c108f.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321680514_c4f87f44_cc37_4eea_9f59_8a19405c108f.png)
 
 **Introduction to MASKROM mode**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the Maskrom key (On the right side of the RTC batter) and then press the reset key to enter the maskrom mode for flashing.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321945719-2ce43c88-a38d-42ca-9fc3-53eae15b4000.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321945719_2ce43c88_a38d_42ca_9fc3_53eae15b4000.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -3447,13 +3447,13 @@ Copy SDDiskTool \_ v1.76.zip from the user profile tool directory to any windows
 
 SD\_Firmware\_Tool.exe.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214252666-a91fc93c-b5bf-476b-bff2-ebe975b5ea7b.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214252666_a91fc93c_b5bf_476b_bff2_ebe975b5ea7b.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214252868-8740d473-a961-43fe-8444-8cc7f9e007ac.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214252868_8740d473_a961_43fe_8444_8cc7f9e007ac.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214253092-fcfe76c3-478e-41b5-bf25-b53b68a368d6.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214253092_fcfe76c3_478e_41b5_bf25_b53b68a368d6.png)
 
 Insert the TF card into the development board and start it, and the system will automatically enter the flashing process. After the programming is completed, the screen and serial port will prompt: 
 
@@ -3473,7 +3473,7 @@ When mass production, you can judge whether the burn-in is completed or not acco
 
 Serial port information during the burning process:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214253365-d2c3acc8-5556-408b-9a88-7b9305caf707.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214253365_d2c3acc8_5556_408b_9a88_7b9305caf707.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.
 
@@ -3493,11 +3493,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251487-8975ec46-6ec0-47ed-9a87-15161a370c5e.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214251487_8975ec46_6ec0_47ed_9a87_15161a370c5e.png)
 
 Click "Driver Installation”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214251723-98517c31-82d2-4e6d-9c09-9a214f28b101.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214251723_98517c31_82d2_4e6d_9c09_9a214f28b101.png)
 
 #### 7.1.2 OTG Full Flashing Test
 
@@ -3507,27 +3507,27 @@ Click "Driver Installation”
 
 It is a development tool provided by Rockchip Micro. Unzip it to a full English path before use, connect the TYPE-C0 port of the development board and the host computer with a Type-C cable, press and hold the recovery key of the development board and don't release it, then press the reset key to reset the system, and release the recovery key after about two seconds. There will be prompts on the Rockchip development tool : loader device found
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753348198195-8aa2eddc-e547-41b7-9d83-c30324af1575.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1753348198195_8aa2eddc_e547_41b7_9d83_c30324af1575.png)
 
 **Note: The condition for recognition is that the development board is powered up and the RECOVER key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. During OTG flashing, it is necessary to link the OTG cable to the typeC port of the board, as shown in the following figure:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750318796237-22e349ae-0114-48aa-9d91-8d325204fb91.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750318796237_22e349ae_0114_48aa_9d91_8d325204fb91.png)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319091973-df49a9b7-0487-45bb-ae0f-e17c6d58fb45.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319091973_df49a9b7_0487_45bb_ae0f_e17c6d58fb45.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319339986-e8e6060c-5e99-4928-a142-e56dfd22b0f1.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319339986_e8e6060c_5e99_4928_a142_e56dfd22b0f1.png)
 
 Click "Advanced Functions"-> "Erase All" to erase.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319533424-f65d5c86-78e3-4a0d-849b-f8900eb94eb0.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319533424_f65d5c86_78e3_4a0d_849b_f8900eb94eb0.png)
 
 Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750319645988-ab89d472-d74b-4ef3-abdd-44fb5ac64af7.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750319645988_ab89d472_d74b_4ef3_abdd_44fb5ac64af7.png)
 
 #### 7.1.3 OTG Step Programming Test
 
@@ -3541,31 +3541,31 @@ Take separate programming boot.img (including device tree and startup logo) as a
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321145954-e538cc24-efea-42d3-ac79-f4dea297807d.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321145954_e538cc24_efea_42d3_ac79_f4dea297807d.png)
 
 Click the "Device Partition Table" button to automatically read the partition address.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321169101-0b9fd528-7444-4dfd-80bf-8a3667939d1e.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321169101_0b9fd528_7444_4dfd_80bf_8a3667939d1e.png)
 
 The prompt asks if you want to update the download address. Clicking "Yes" will result in a successful reading of the partition table.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321192039-f765e1ab-4b15-4520-977d-a882316605d1.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321192039_f765e1ab_4b15_4520_977d_a882316605d1.png)
 
 Click the right test area of the partition to select the partition mirror, and check the partition.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321827091-49476e2a-c84f-428e-864a-ef66d28f5e78.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321827091_49476e2a_c84f_428e_864a_ef66d28f5e78.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321680514-c4f87f44-cc37-4eea-9f59-8a19405c108f.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321680514_c4f87f44_cc37_4eea_9f59_8a19405c108f.png)
 
 **Introduction to MASKROM mode**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the Maskrom key (On the right side of the RTC batter) and then press the reset key to enter the maskrom mode for flashing.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753348268538-3803338d-4526-4661-ae3c-2fc0c9a41306.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1753348268538_3803338d_4526_4661_ae3c_2fc0c9a41306.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555823/1750321945719-2ce43c88-a38d-42ca-9fc3-53eae15b4000.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1750321945719_2ce43c88_a38d_42ca_9fc3_53eae15b4000.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -3581,13 +3581,13 @@ Copy SDDiskTool \_ v1.76.zip from the user profile tool directory to any windows
 
 SD\_Firmware\_Tool.exe.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214252666-a91fc93c-b5bf-476b-bff2-ebe975b5ea7b.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214252666_a91fc93c_b5bf_476b_bff2_ebe975b5ea7b.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214252868-8740d473-a961-43fe-8444-8cc7f9e007ac.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214252868_8740d473_a961_43fe_8444_8cc7f9e007ac.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214253092-fcfe76c3-478e-41b5-bf25-b53b68a368d6.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214253092_fcfe76c3_478e_41b5_bf25_b53b68a368d6.png)
 
 Insert the TF card into the development board and start it, and the system will automatically enter the flashing process. After the programming is completed, the screen and serial port will prompt: 
 
@@ -3607,6 +3607,6 @@ When mass production, you can judge whether the burn-in is completed or not acco
 
 Serial port information during the burning process:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726214253365-d2c3acc8-5556-408b-9a88-7b9305caf707.png)
+![Image](./images/OK3576-C_Linux6_1_84_User_Manual/1726214253365_d2c3acc8_5556_408b_9a88_7b9305caf707.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.
