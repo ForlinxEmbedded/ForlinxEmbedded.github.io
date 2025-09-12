@@ -53,17 +53,17 @@ forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating t
 
 kernel-6.1.tar.bz2: The black font at the bottom is the output information after the input command, and the bold font is the key information. Here is the packaged file system.
 
-## **Application Scope**
+## Application Scope
 
 This manual is mainly applicable to the Linux6.1.84 operating system on the Forlinx OK3576-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
 
-## **Revision History**
+## Revision History
 
 | **Date** | **Manual Version** | **Revision History** |
 |:----------:|:----------:|----------|
 | **23/01/2025** | **V1.0** | **OK3576-C Linux6.1.84 User’s Compilation Manual Initial Version** |
 
-## **1\. VMware Virtual Machine Software Installation**
+## 1\. VMware Virtual Machine Software Installation
 
 This chapter mainly introduces the installation of VMware virtual machines, using VMware Workstation 15 Pro v15.1.0 as an example to demonstrate the installation and configuration process of the operating system.
 
@@ -111,7 +111,7 @@ Wait for the installation to complete.
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
-## **2\. Loading the Existing Ubuntu Development Environment**
+## 2\. Loading the Existing Ubuntu Development Environment
 
 **Note: **
 
@@ -143,7 +143,7 @@ The account of the development environment is forlinx, and the password is forli
 
 **![Image](./images/OK3576-C_Linux6_1_84_User_Compilation_Manual/1726291991069_fefb2fc8_71c7_4c5c_a7da_48ca3f224c1e.png)**
 
-## **3\. New Ubuntu Development Environment Setup**
+## 3\. New Ubuntu Development Environment Setup
 
 **Note: Beginners are not recommended to build the system by themselves. It is suggested to use the existing virtual machine environment. If you do not need to build the environment, you can skip this section. This section mainly explains the process of building the ubuntu system.**
 
@@ -491,7 +491,7 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$  ./qtcreator &
 
 The Qt Creator tool screen appears. Qt Creator is installed.
 
-## **4\. Related Code Compilation**
+## 4\. Related Code Compilation
 
 This chapter mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation. Note: Currently only the kernel source code is available, this section only describes how to compile the kernel and applications.
 
