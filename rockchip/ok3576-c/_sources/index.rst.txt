@@ -32,6 +32,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK3576-C_Linux6_1_84_User_Manual
+   OK3576-C_Linux6_1_84_User_Compilation_Manual
 
 APPLICATION NOTE
 -----------------
