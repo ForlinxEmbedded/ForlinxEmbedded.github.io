@@ -209,11 +209,9 @@ Specify the disk file, the default one here is fine.
 
 Click "Finish" by default.
 
-**![Image](./images/OK3576-C_Linux6_1_84_User_Compilation_Manual/1726291999684_58604469_ab8c_47cb_b122_510b20e26c4e.png)**
+The virtual machine creation is now complete.
 
-**The virtual machine creation is now complete.**
-
-**In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.**
+In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.
 
 #### **3.1.2 System Installation**
 
@@ -223,7 +221,7 @@ Go to the Ubuntu official website to download ubuntu-22.04.4-desktop-amd64.iso. 
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-**![Image](./images/OK3576-C_Linux6_1_84_User_Compilation_Manual/1726292000133_a5ddc130_e7db_4665_bc87_2eac0727de05.png)**
+**![Image](./1726292000834_30c3dc16_166f_4def_ad82_6963dc34a49a-1757660780425-1.png)**
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
