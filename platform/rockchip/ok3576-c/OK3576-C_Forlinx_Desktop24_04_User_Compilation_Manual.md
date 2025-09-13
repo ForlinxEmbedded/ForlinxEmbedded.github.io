@@ -70,7 +70,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292018801-8230a6f7-bdc2-4fd7-a6ac-9b9051a28f3d.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -78,35 +78,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292019102-966a3de3-90e4-43c5-8d09-638579d0a5ad.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
 
 Click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292019326-bbe7eaef-ef8c-420c-9a24-c318002f625b.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292019516-d327a170-62c9-4921-8243-13806619bec3.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292019727-ca602d71-8eb8-479d-836a-433822d8404f.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
 
 Check and click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292019978-f50a4b96-86f6-4b81-b46a-24aeb5e39e8f.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292020296-68686b42-4114-438d-bd79-cc171fa88b02.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
 
 Click "Installation".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292020500-b5aec052-b5fe-4a5a-84a0-cf4630dec74d.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292020748-89dabfcd-6ac8-48a9-85db-74c39c551c00.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -125,23 +125,23 @@ Select the zip file to unzip together.
 
 After decompression, a 3576 standard environment folder appears, where .vmx is the file that the virtual machine needs to open.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291989704-d40b3337-f04a-45a5-8056-f6118bda4b1f.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291989704_d40b3337_f04a_45a5_8056_f6118bda4b1f.png)
 
 Open the virtual machine and select the extracted OK3576.vmx.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291989979-2b8d681a-40e2-4572-8cb0-35d6320a4abc.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291989979_2b8d681a_40e2_4572_8cb0_35d6320a4abc.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990280-09eace25-36da-4f07-8e8e-f479dd385778.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291990280_09eace25_36da_4f07_8e8e_f479dd385778.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990450-b1f74516-c288-4574-baf3-ab9f4d6c3ebd.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291990450_b1f74516_c288_4574_baf3_ab9f4d6c3ebd.png)
 
 The account providing the development environment is forlinx, and the password is forlinx. After filling in the password, select Sign in to log in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291990738-f09dadaa-6483-4668-9eae-edc0ac839c47.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291990738_f09dadaa_6483_4668_9eae_edc0ac839c47.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291991069-fefb2fc8-71c7-4c5c-a7da-48ca3f224c1e.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291991069_fefb2fc8_71c7_4c5c_a7da_48ca3f224c1e.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -153,63 +153,63 @@ The account providing the development environment is forlinx, and the password i
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291996421-80355a1a-1a92-46e3-9818-8b3496d88bb9.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
 
 Choose custom, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291996662-59902e0c-a9fd-4a7c-aebb-9c825cc1a759.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291996662_59902e0c_a9fd_4a7c_aebb_9c825cc1a759.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click Next.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291996865-5c88406f-2ad2-4afe-9f13-e6096bcc0e4e.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e.png)
 
 Select Install the operating system later and click Next.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291997184-5eaf907f-a1c1-4c4b-8283-6b5da7471afa.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291997184_5eaf907f_a1c1_4c4b_8283_6b5da7471afa.png)
 
 Leave the default and click Next.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291997449-e9665fd6-38ca-490b-ab72-91f7c783eb18.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291997449_e9665fd6_38ca_490b_ab72_91f7c783eb18.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291997629-8dbe5f95-19c8-45f5-af0a-f3b373534742.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291997629_8dbe5f95_19c8_45f5_af0a_f3b373534742.png)
 
 Set the number of processors as appropriate.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291997860-f391be4d-7d2f-4d92-a1db-90dd94208b7f.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291997860_f391be4d_7d2f_4d92_a1db_90dd94208b7f.png)
 
 Also set the memory size according to the actual situation (it is recommended to adjust the memory size to 20g or more).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291998076-65147b0e-e965-47f5-9b9c-5d3815292955.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998076_65147b0e_e965_47f5_9b9c_5d3815292955.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291998283-b3431f5b-4dbf-4775-abf7-333e6e29413c.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998283_b3431f5b_4dbf_4775_abf7_333e6e29413c.png)
 
 The default selection for the IO controller type here is LSI
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291998524-8ae2b9e4-31b7-4720-b517-8649ff9fe0b9.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9.png)
 
 The default selection here is also SCSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291998756-bdaa4dd0-eb22-423f-b558-4bb3f8f07563.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998756_bdaa4dd0_eb22_423f_b558_4bb3f8f07563.png)
 
 Choose to create a new virtual disk here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291998967-827fe271-3974-4f53-becf-0be10af4a52a.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998967_827fe271_3974_4f53_becf_0be10af4a52a.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click Next to finish.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291999188-8e9fadd5-d4f3-4219-87fb-ca2236450bc4.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291999188_8e9fadd5_d4f3_4219_87fb_ca2236450bc4.png)
 
 Specify the disk file, the default one here is fine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291999485-de6c555b-c557-4f25-8b33-44810fdc22cc.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291999485_de6c555b_c557_4f25_8b33_44810fdc22cc.png)
 
 Click Finish by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291999684-58604469-ab8c-47cb-b122-510b20e26c4e.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291999684_58604469_ab8c_47cb_b122_510b20e26c4e.png)
 
 The virtual machine creation is now complete.
 
@@ -219,65 +219,65 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 Go to the Ubuntu official website to download ubuntu-22.04.4-desktop-amd64.iso. Download address is: [https://releases.ubuntu.com/22.04/?\_gl=1\_9cp3d2\_\_gcl\_au\*MjA2NTM4NTAwNy4xNzIyMzEwNTA2\&\_ga=2.183316389.2088500894.1722310494-245248835.1722310494](https://releases.ubuntu.com/22.04/?_gl=1*9cp3d2*_gcl_au*MjA2NTM4NTAwNy4xNzIyMzEwNTA2&_ga=2.183316389.2088500894.1722310494-245248835.1722310494)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726291999942-fee95f13-8639-4990-8fa3-afbb15de10de.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291999942_fee95f13_8639_4990_8fa3_afbb15de10de.png)
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292000133-a5ddc130-e7db-4665-bc87-2eac0727de05.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292000133_a5ddc130_e7db_4665_bc87_2eac0727de05.png)
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292000353-217e0d76-7354-4cbe-8efe-c3f035d93cf9.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292000353_217e0d76_7354_4cbe_8efe_c3f035d93cf9.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292000560-e3d861c0-9ed3-4480-9f55-0e683232d196.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292000560_e3d861c0_9ed3_4480_9f55_0e683232d196.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292000834-30c3dc16-166f-4def-ad82-6963dc34a49a.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292000834_30c3dc16_166f_4def_ad82_6963dc34a49a.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292001022-ed024429-fb62-4157-bfd7-ef4377237625.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292001022_ed024429_fb62_4157_bfd7_ef4377237625.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292001288-733ef9b3-54a9-4716-894d-b72f474b1b62.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292001288_733ef9b3_54a9_4716_894d_b72f474b1b62.png)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292001544-6b3065b3-c359-48ea-8d0a-8c6d44864443.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292001544_6b3065b3_c359_48ea_8d0a_8c6d44864443.png)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292001765-bd510418-c151-493b-99c9-df8fa2743c57.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292001765_bd510418_c151_493b_99c9_df8fa2743c57.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292001954-2bfe5f45-e2f9-4603-b6d6-6ecdd2eb1f1c.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292001954_2bfe5f45_e2f9_4603_b6d6_6ecdd2eb1f1c.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292002173-2d36ed67-6b29-41d8-8ca7-ec1aa50d8a84.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292002173_2d36ed67_6b29_41d8_8ca7_ec1aa50d8a84.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292002407-35cf418a-79b0-46e1-99d7-1611216b9b12.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292002407_35cf418a_79b0_46e1_99d7_1611216b9b12.png)
 
 After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292002667-ede40fd9-d5cb-4e86-b604-08dd0f80eee8.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292002667_ede40fd9_d5cb_4e86_b604_08dd0f80eee8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292002889-8980f712-6552-4894-bf5c-33d2b51ba7cf.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292002889_8980f712_6552_4894_bf5c_33d2b51ba7cf.png)
 
 After the reboot, you need to log in with your username and password, and the system interface is shown below after logging in:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292003099-a75fed1f-f6d4-45b4-b286-1f603f685384.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292003099_a75fed1f_f6d4_45b4_b286_1f603f685384.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292003353-f6c7f186-d3e8-4032-81c5-b06fcf6191cc.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292003353_f6c7f186_d3e8_4032_81c5_b06fcf6191cc.png)
 
 Above, after shutting down the virtual machine, restore the CD settings, configure it as shown below, click “OK”, and then reopen the virtual machine to see if you can boot Ubuntu normally.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292003563-ef1f0816-9727-475a-9115-1f2df7b52969.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292003563_ef1f0816_9727_475a_9115_1f2df7b52969.png)
 
 #### 3.1.3 Basic Ubuntu Installation
 
@@ -287,21 +287,21 @@ After installing the Ubuntu22.04 operating system, there are a few configuration
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292003779-6baa64f8-28d4-4824-b40b-e387d58f43f5.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292003779_6baa64f8_28d4_4824_b40b_e387d58f43f5.png)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292004000-d9b6aad0-b305-4f3e-ae71-b0cbe331f7aa.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292004000_d9b6aad0_b305_4f3e_ae71_b0cbe331f7aa.png)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292004276-217dc0b2-b933-4db0-8cb5-74e76356e758.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292004276_217dc0b2_b933_4db0_8cb5_74e76356e758.png)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292004513-7fc77843-abea-455d-aa38-fd19042fb215.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292004513_7fc77843_abea_455d_aa38_fd19042fb215.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292004759-2c08eaa3-47d8-473d-b005-abf1cdd1fcba.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292004759_2c08eaa3_47d8_473d_b005_abf1cdd1fcba.png)
 
 Press the keyboard \[Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the sudo command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):
 
@@ -339,13 +339,13 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292005046-4ae15ccc-dc17-4409-8ab1-e8759109c85a.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292005046_4ae15ccc_dc17_4409_8ab1_e8759109c85a.png)
 
 + **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292005306-c6a3b048-302b-4ab7-866c-8f19fd7f5460.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292005306_c6a3b048_302b_4ab7_866c_8f19fd7f5460.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -353,31 +353,31 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292005593-68072555-c721-42bf-94e9-ae7b9a7623a6.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292005593_68072555_c721_42bf_94e9_ae7b9a7623a6.png)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292005833-ce6a8ba3-1497-4b73-85ff-975feb14156c.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292005833_ce6a8ba3_1497_4b73_85ff_975feb14156c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292006018-e0d1e16c-ff96-4d66-b7f9-69176c2e2016.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292006018_e0d1e16c_ff96_4d66_b7f9_69176c2e2016.png)
 
 The network is set to dynamic ip.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292006241-d5076fa9-a2fa-4ea8-a13c-b7403d1ec41a.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292006241_d5076fa9_a2fa_4ea8_a13c_b7403d1ec41a.png)
 
 + **Bridge Mode:**
 
 If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292006438-728a31b9-a0fe-4bd7-860c-a58fd2eaefb4.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292006438_728a31b9_a0fe_4bd7_860c_a58fd2eaefb4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292006617-7239178f-ce4e-4376-85ae-65cc8bf188d5.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292006617_7239178f_ce4e_4376_85ae_65cc8bf188d5.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292006785-937aa108-f7ef-4db9-94a4-35cea41c4334.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292006785_937aa108_f7ef_4db9_94a4_35cea41c4334.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292006964-455c03ff-fb5d-4aaa-b1bb-2b5c0bc32a72.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292006964_455c03ff_fb5d_4aaa_b1bb_2b5c0bc32a72.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -385,13 +385,13 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292007208-01f651ae-3e11-444a-8d5f-f90577c66be8.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292007208_01f651ae_3e11_444a_8d5f_f90577c66be8.png)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292007385-06234740-73df-42f1-82a7-b6ab21226a15.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292007385_06234740_73df_42f1_82a7_b6ab21226a15.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1726292007604-f6a8b8e4-95fb-48da-a676-e97f0a0f88a0.png)
+![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726292007604_f6a8b8e4_95fb_48da_a676_e97f0a0f88a0.png)
 
 #### 3.1.6 Virtual Machine Basic Library Installation
 
