@@ -6,7 +6,7 @@
 
    🔗 Official product overview:
    
-   `FETMX8MP-C System On Module <https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
+   `FET-MX9352-C System On Module <https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
 
 ====================
