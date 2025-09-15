@@ -1,4 +1,4 @@
-# OK3576-C\_Android14\_User’s Manual_V1.0
+# OK3576-C\_Android14.0\_User’s Manual_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
