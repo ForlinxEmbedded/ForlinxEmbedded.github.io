@@ -187,7 +187,7 @@ Set the network type, the default is NAT mode, click Next. Keep the default valu
 
 ![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998283_b3431f5b_4dbf_4775_abf7_333e6e29413c.png)
 
-The default selection for the IO controller type here is LSI
+The default selection for the IO controller type here is LSI.
 
 ![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9.png)
 
@@ -208,8 +208,6 @@ Specify the disk file, the default one here is fine.
 ![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291999485_de6c555b_c557_4f25_8b33_44810fdc22cc.png)
 
 Click Finish by default.
-
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual/1726291999684_58604469_ab8c_47cb_b122_510b20e26c4e.png)
 
 The virtual machine creation is now complete.
 
@@ -315,8 +313,8 @@ After executing the extract command, use ls to view the file directory vmware-to
 ```plain
 forlinx@ubuntu:~$ ls
 Desktop   examples.desktop   nfs   snap   tftp   VMwareTools-10.3.10-12406962.tar.gz  vmware-tools-distrib   work
-forlinx@ubuntu:~$ cd vmware-tools-distrib/	                      //使用cd命令进入该目录
-forlinx@ubuntu:~/vmware-tools-distrib$ ls                         //查看该目录下的文件
+forlinx@ubuntu:~$ cd vmware-tools-distrib/	                      //Use the CD command to enter the directory
+forlinx@ubuntu:~/vmware-tools-distrib$ ls                         //View the files in this directory
 bin   caf   doc   etc   FILES   INSTALL   installer   lib   vgauth   vmware-install.pl
 ```
 
@@ -324,7 +322,7 @@ In the current directory, enter sudo ./vmware-install.pl to install, enter the p
 
 ```plain
 forlinx@ubuntu:~/vmware-tools-distrib$ sudo ./vmware-install.pl
-[sudo] password for forlinx: 		     //输入forlinx账户的密码，无回显，无法看到输入内容
+[sudo] password for forlinx: 		     //Enter the password of the forlinx account, no display, cannot see the input content
 ```
 
 The installation process information is long, here omitted.
@@ -333,7 +331,7 @@ The installation process information is long, here omitted.
 open-vm-tools packages are available from the OS vendor and VMware recommends 
 using open-vm-tools packages. See http://kb.vmware.com/kb/2073803 for more 
 information.
-Do you still want to proceed with this installation? [no] yes			//输入yes
+Do you still want to proceed with this installation? [no] yes			//Enter yes
 ... ...		
 ```
 

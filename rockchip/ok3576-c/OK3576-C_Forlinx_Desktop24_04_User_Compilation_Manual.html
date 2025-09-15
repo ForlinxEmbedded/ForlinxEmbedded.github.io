@@ -307,7 +307,7 @@ OK3576-linux-source  OK3588-linux-source.tar.bz2
 <p><img alt="Image" src="_images/1726291998076_65147b0e_e965_47f5_9b9c_5d3815292955.png" /></p>
 <p>Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.</p>
 <p><img alt="Image" src="_images/1726291998283_b3431f5b_4dbf_4775_abf7_333e6e29413c.png" /></p>
-<p>The default selection for the IO controller type here is LSI</p>
+<p>The default selection for the IO controller type here is LSI.</p>
 <p><img alt="Image" src="_images/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9.png" /></p>
 <p>The default selection here is also SCSI.</p>
 <p><img alt="Image" src="_images/1726291998756_bdaa4dd0_eb22_423f_b558_4bb3f8f07563.png" /></p>
@@ -318,7 +318,6 @@ OK3576-linux-source  OK3588-linux-source.tar.bz2
 <p>Specify the disk file, the default one here is fine.</p>
 <p><img alt="Image" src="_images/1726291999485_de6c555b_c557_4f25_8b33_44810fdc22cc.png" /></p>
 <p>Click Finish by default.</p>
-<p><img alt="Image" src="_images/1726291999684_58604469_ab8c_47cb_b122_510b20e26c4e.png" /></p>
 <p>The virtual machine creation is now complete.</p>
 <p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
 </section>
@@ -379,21 +378,21 @@ OK3576-linux-source  OK3588-linux-source.tar.bz2
 <p>After executing the extract command, use ls to view the file directory vmware-tools-distrib, and go to the directory</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ls
 Desktop   examples.desktop   nfs   snap   tftp   VMwareTools-10.3.10-12406962.tar.gz  vmware-tools-distrib   work
-forlinx@ubuntu:~$ cd vmware-tools-distrib/	                      //使用cd命令进入该目录
-forlinx@ubuntu:~/vmware-tools-distrib$ ls                         //查看该目录下的文件
+forlinx@ubuntu:~$ cd vmware-tools-distrib/	                      //Use the CD command to enter the directory
+forlinx@ubuntu:~/vmware-tools-distrib$ ls                         //View the files in this directory
 bin   caf   doc   etc   FILES   INSTALL   installer   lib   vgauth   vmware-install.pl
 </pre></div>
 </div>
 <p>In the current directory, enter sudo ./vmware-install.pl to install, enter the password after pressing Enter, and then start the installation. When you encounter [yes]/[no], enter yes, and press Enter for the rest to install by default.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/vmware-tools-distrib$ sudo ./vmware-install.pl
-[sudo] password for forlinx: 		     //输入forlinx账户的密码，无回显，无法看到输入内容
+[sudo] password for forlinx: 		     //Enter the password of the forlinx account, no display, cannot see the input content
 </pre></div>
 </div>
 <p>The installation process information is long, here omitted.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>open-vm-tools packages are available from the OS vendor and VMware recommends 
 using open-vm-tools packages. See http://kb.vmware.com/kb/2073803 for more 
 information.
-Do you still want to proceed with this installation? [no] yes			//输入yes
+Do you still want to proceed with this installation? [no] yes			//Enter yes
 ... ...		
 </pre></div>
 </div>
