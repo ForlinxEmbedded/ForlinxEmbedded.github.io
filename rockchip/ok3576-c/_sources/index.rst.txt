@@ -35,6 +35,7 @@ SOFTWARE
    OK3576-C_Linux6_1_84_User_Compilation_Manual
    OK3576-C_Forlinx_Desktop24_04_User_Manual
    OK3576-C_Forlinx_Desktop24_04_User_Compilation_Manual
+   OK3576-C_Android_14_User_Manual
 
 APPLICATION NOTE
 -----------------
