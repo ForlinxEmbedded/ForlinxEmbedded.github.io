@@ -110,9 +110,19 @@ i.MX8M Plus Series
 
 i.MX93 Series
 -------------
-- OKMX9352-C Manual
-  ⏳ Documentation coming soon.
 
+.. raw:: html
+
+   <div class="product-card">
+     <a href="nxp/ok-mx9352-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/nxp/OK-MX9352-C.png" alt="OK-MX9352-C" class="product-image" />
+     </a>
+     <h3 class="product-title">OK-MX9352-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="nxp/ok-mx9352-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
 
 LS1046A Series
 -----------------
