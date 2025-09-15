@@ -160,7 +160,7 @@ Step 1: Connect the serial port number of the computer---check the serial port n
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
 
-Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200
+Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793550889_bac1185f_f1dd_415f_b4bf_d93afae08225.png)
 
@@ -291,13 +291,15 @@ Click Play Music to enter the play interface.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793553406_e7ede4f5_3bfc_4622_a85d_e25ba6ba5bbf.png)
 
-The volume can be adjusted by pressing the physical buttons VOL + and VOL- on the backplane of the board.
+The volume can be adjusted by pressing the physical buttons VOL + and VOL- on the carrier board of the board.
 
 ### 3.6 Recording (Mic input Support)
 
 Open the Recorder app in the App Drawer interface.
 
-Click the round button to start recording: (Note: the pointer will swing according to the sound level during normal recording)
+Click the round button to start recording: 
+
+**Note: the pointer will swing according to the sound level during normal recording.**
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793553485_b0c67714_47e7_49c5_b143_b4bd61998220.png)
 
@@ -317,13 +319,13 @@ Open the "Settings" app in the application drawer interface, and click "Tone and
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793553821_b6088547_e46a_4b58_b651_b15473fd8d50.png)
 
-This interface allows you to adjust each section's volume and supports media volume adjustment using the physical buttons VOL- and VOL+ on the base plate.
+This interface allows you to adjust each section's volume and supports media volume adjustment using the physical buttons VOL- and VOL+ on the carrier board.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793553979_a43c885d_5372_4b9d_a925_ca4b454bdc38.png)
 
 ### 3.8 Display Settings
 
-Open the "Settings" app in the application drawer interface, and click "Display" to enter the display settings interface
+Open the "Settings" app in the application drawer interface, and click "Display" to enter the display settings interface.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793554081_74b123f7_8fb5_4e9c_968a_0d6201bd4a3f.png)
 
@@ -337,7 +339,7 @@ The default setting of OK3576 is to never turn off the screen. If you need to tu
 
 If there is no operation on the interface within the set timeout period, the screen will enter the sleep mode. Short press of the "PWRON" button on the carrier board will wake up the screen.
 
-### 3.9 Time Setting（RTC）
+### 3.9 Time Settings（RTC）
 
 Open the "Settings" app in the application drawer interface and click "System".
 
@@ -367,15 +369,15 @@ Click "Ethernet":
 
 The default method for obtaining an IP address is “dhcp.”
 
-If you want to set a static IP address, click "EthernetIp mode" "and select" static "to set a static IP address. Only IPV4 is supported
+If you want to set a static IP address, click "EthernetIp mode" "and select" static "to set a static IP address. Only IPV4 is supported.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793554894_bea8217c_d889_4396_acc1_04abaac94511.png)
 
 Click CONNECT to complete the configuration:
 
-After successful connection, open the "Lightning" app in the app drawer interface
+After successful connection, open the "Lightning" app in the app drawer interface.
 
-Test the network by entering the [www.forlinx.net](http://www.forlinx.com进行网络测试)in the address bar
+Test the network by entering the [www.forlinx.net](http://www.forlinx.com进行网络测试) in the address bar.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793554973_6db0f40e_ace8_47c3_a7e8_b7b1099c215d.png)
 
@@ -519,7 +521,7 @@ Open the "Settings" app in the application drawer interface and click "Storage" 
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793556715_3ea077b9_1d4f_498e_a4bb_27f8317e892c.png)
 
-Select TF card
+Select TF card.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793556828_69dd204e_f5a7_48c2_ab82_04d7d9478483.png)
 
@@ -579,7 +581,7 @@ Set Device to ttyS5.
 
 Set the Baud rate "to 115200.
 
-Set Display format "to char
+Set Display format "to char.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793558062_b3253ec7_5dbc_4645_9b74_1ffd9a42fe33.png)
 
@@ -653,7 +655,7 @@ Open the "Settings" app in the app drawer and click "Display".
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793559053_5cbce303_afc3_402a_a2af_0f5c23ad6d7c.png)
 
-Click “HDMI“
+Click “HDMI“.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793559222_079b57bf_abec_4e08_a63c_72d3727f04dc.png)
 
@@ -691,7 +693,7 @@ Allow apps from this source.
 
 ### 3.24 ROOT Permission Test
 
-Open the "Settings" app in the app drawer interface and click "About Tablet”
+Open the "Settings" app in the app drawer interface and click "About Tablet”.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793560151_161a89d3_c264_46b9_9b37_ee6ed0c8ee32.png)
 
@@ -749,7 +751,7 @@ OK3576-C has two can buses and supports CANFD.
 
 Parameters related to can can be set in the "Settings" app or through the "can" app.
 
-Open "Settings" in the application drawer and click "Network and Internet"
+Open "Settings" in the application drawer and click "Network and Internet".
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793561733_71af9355_d6e6_4b38_bab7_1e6350a37e60.png)
 
@@ -805,7 +807,7 @@ Set the timeout time, click “Start”to start the watchdog, and click “Feed�
 
 ### **3.28 ADC Test**
 
-Open "Settings" in the app drawer and click "Security \& Privacy"
+Open "Settings" in the app drawer and click "Security \& Privacy".
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793563106_dfc810b1_5ec2_46ba_9345_444b90088861.png)
 
