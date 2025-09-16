@@ -44,7 +44,7 @@ A description of some of the symbols and formats in the manual:
 Example: Search the Docker-CE version:
 
 ```plain
-forlinx@ubuntu:~$ apt-cache madison docker-ce                   //查找 Docker-CE 的版本
+forlinx@ubuntu:~$ apt-cache madison docker-ce                   //Find the version of Docker-CE
 docker-ce | 18.06.3~ce~3-0~ubuntu | http://mirrors.aliyun.com/docker-ce/linux/ubuntu/trusty/stable amd64 Packages
 ```
 
