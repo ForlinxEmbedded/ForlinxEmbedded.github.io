@@ -998,4 +998,4 @@ Click "Yes".
 
 Finally, you can verify that the android system has been modified.
 
-**Note: The firmware upgrade prompt after system reboot is normal, wait a few minutes and the prompt will appear. After deleting the update.zip file, this prompt will no longer pop up. After deleting update.zip, the firmware prompt dialogue box will no longer pop up.**
+**Note**: **After the system restarts, the prompt to perform a firmware upgrade is a normal prompt. Since the update.zip file exists, the system will pop up a prompt after waiting for a few minutes. After deleting the update.zip file, the firmware upgrade prompt dialog box will no longer appear.** 
