@@ -391,11 +391,7 @@ Open the "Settings" app in the app drawer and click "Network and Internet".
 
 Click on "Internet".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555159_19c2f3f0_78ef_4308_9500_859166c03f91.png)
-
 Turn on the "WLAN" switch, select ssid, and enter the password.
-
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555248_cf1793e3_9d25_4b7a_a0eb_37558bdd9c22.png)
 
 After successful connection, open the "Lightning" app in the app drawer interface.
 
@@ -437,9 +433,7 @@ Open the "Settings" app in the app drawer and click "Network and Internet".
 
 Now you can see that you have successfully connected to China Unicom.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793555999_5499af7a_0075_4c2f_90b0_949c3056597e.png)
-
-After successful connection, open the "Lightning" app in the app drawer interface.
+After successful connection, open the "Lighting" app in the app drawer interface.
 
 Test the network by entering the [www.forlinx.net](http://www.forlinx.com进行网络测试) in the address bar.
 
@@ -545,19 +539,17 @@ The Typec of the development board is connected to the computer, and the compute
 
 Open the "Settings" app in the app drawer interface and click "Connected Devices".
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557419_a6e37a6c_2ceb_4673_8350_afc68f690c99.png)
+![1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31](./1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.png)
 
 Click “USB“.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557572_03417c79_73ea_4335_81f2_6fa77f3191a3.png)
+![Image](./1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
 
 Click "File Transfer".
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793557669_0b94ea97_8387_412a_a1e7_602ddf166380.png)
 
 Open “This PC” on your computer, and you will see “ok3576\_c”. This allows file transfer via the computer.
-
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793557797_3e11e663_bf01_48d3_82a1_84d3653a9188.jpg)
 
 ### **3.19 Serial Port Test**
 
@@ -701,8 +693,6 @@ Click "Build" 7 times in a row.
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793560294_35b28567_cd91_4a13_a2fb_631d16ac6ae3.png)
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560386_e15ea36f_b757_45bf_92f9_6907993509bf.png)
-
 Return to the previous menu and click "System".
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793560486_c2d6392d_ed5a_4823_b56b_adca9b606f29.png)
@@ -711,9 +701,7 @@ Click "Developer Options".
 
 ![Image](./images/OK3576-C_Android_14_User_Manual/1730793560588_ac300f3b_dbdb_4d1e_8fce_e7fa0cbc4147.png)
 
-Locate Root Authorization.
-
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793560813_40896be2_6de5_4432_947d_3b0137b552ab.png)
+Locate Root Authorization. 
 
 This switch controls root privileges including the following:
 
