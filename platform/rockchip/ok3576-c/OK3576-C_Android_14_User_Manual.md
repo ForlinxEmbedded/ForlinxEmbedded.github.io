@@ -539,11 +539,11 @@ The Typec of the development board is connected to the computer, and the compute
 
 Open the "Settings" app in the app drawer interface and click "Connected Devices".
 
-![1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31](./1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.png)
+![Image](./images/OK3576-C_Android_14_User_Manual/1730793557249_c60e9a9f_4c67_43d4_bdae_0e2bed42fb31.png)
 
 Click “USB“.
 
-![Image](./1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
+![Image](./images/OK3576-C_Android_14_User_Manual/1730793556196_80eaf4e4_b491_4d45_b69a_281bc5dadc6c.png)
 
 Click "File Transfer".
 
