@@ -129,7 +129,7 @@ Open the installed virtual machine, select the`OK3576-VM15.1.0-Ubuntu22.04.vmx`j
 
 ![Image](./images/OK3576-C_Android14_User_Compilation_Manual/1730964225763_2ea7d704_144d_4bd2_ba79_b2f2f603524c.png)
 
-After loading, click`Open the virtual`to run and enter the system interface.
+After loading, click `Open the virtual`to run and enter the system interface.
 
 The development environment has forlinx user and root user.
 
@@ -202,7 +202,7 @@ Specify the disk file, the default one here is fine.
 
 Click “Finish” by default.
 
-![Image](./images/OK3576-C_Android14_User_Compilation_Manual/1730964228887_db2d16d9_88f0_4027_af79_fedbc0080eef.png)
+![Image](./1730964229273_3d038bb3_f89a_4502_a3e8_e10a15a13cca.png)
 
 At this point, virtual machine creation is complete.
 
