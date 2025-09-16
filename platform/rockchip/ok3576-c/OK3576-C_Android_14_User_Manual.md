@@ -590,8 +590,6 @@ console:/ #
 
 At this time, app receives data from ttyS6, as shown in the figure;
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793558153_f9fe96b5_63e8_4c25_808a_c36fa8551466.png)
-
 Open ttyS6 in the command line terminal to receive data;
 
 ```plain
@@ -980,7 +978,7 @@ After uploading the upgrade package using ADB, it is necessary to restart the de
 
 Click "Installation”.
 
-![Image](./images/OK3576-C_Android_14_User_Manual/1730793568347_35138ed0_9b5d_4ac1_bb52_230f851c2067.jpg)
+![Image](./1730793568347_35138ed0_9b5d_4ac1_bb52_230f851c2067.png)
 
 The debugging window prints the following information:
 
