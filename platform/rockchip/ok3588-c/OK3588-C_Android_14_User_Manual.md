@@ -1514,7 +1514,7 @@ Add the content to obtain input - phy and configure phys in the touch device dri
 
 Note: If you want to verify whether the multi - touch function is set correctly, each display device should display a different app, and then click on them respectively. You can also click the “Display on this screen” button to display the app on the specified screen and perform touch operations.
 
-### **6.4 DPI Custom Settings **
+### 6.4 DPI Custom Settings 
 
 For the main displays with different resolutions and sizes, the display effects are different even with the same DPI. Therefore, a function to customize the system DPI is provided.
 
