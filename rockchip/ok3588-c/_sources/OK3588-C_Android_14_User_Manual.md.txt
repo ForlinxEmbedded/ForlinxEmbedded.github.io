@@ -1238,7 +1238,7 @@ Click "Driver Installation”.
 
 #### **4.1.2 OTG Flashing Test**
 
-##### **4.1.2.1 RKDevTool Flashing Test**
+**4.1.2.1 RKDevTool Flashing Test**
 
 Path: 3-Tools \\ RKDevTool\_v3.30\_for\_window.zip
 
