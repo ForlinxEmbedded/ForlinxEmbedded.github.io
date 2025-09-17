@@ -158,18 +158,18 @@
 <li class="toctree-l3"><a class="reference internal" href="#ota-network-upgrade"><strong>5.3 OTA Network Upgrade</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#asynchronous-display-and-asynchronous-touch">6. Asynchronous Display and Asynchronous Touch</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#multi-display-with-independent-touch-control">6. Multi-display with Independent Touch Control</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#primary-and-secondary-screens-settings"><strong>6.1 Primary and Secondary Screens Settings</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#binding-between-display-and-vop-settings"><strong>6.2 Binding between Display and VOP Settings</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#binding-between-display-and-touch-input-devices"><strong>6.3 Binding between Display and Touch (Input) Devices</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dpi-settings-customization"><strong>6.4 DPI Settings Customization</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dpi-custom-settings">**6.4 DPI Custom Settings **</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#app-display-on-different-screens"><strong>6.5 App Display on Different Screens</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#root-permission-management">7. Root Permission Management</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#shell-permission-control"><strong>7.1 Shell Permission Control</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adb-permission-control"><strong>7.2 ADB Permission Control</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#app-permission-control"><strong>7.3 App Permission Control</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app-permission-control"><strong>7.3 APP Permission Control</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -1442,9 +1442,9 @@ Rename either ok3588_c - ota - eng.root.zip or ok3588_c - target_files - eng.roo
 <p>Note: If prompted to upgrade again, click “No”, because OK3588 can get the remote 1.0.1.zip upgrade package through the network, so it will remind you whether you need to upgrade or not.</p>
 </section>
 </section>
-<section id="asynchronous-display-and-asynchronous-touch">
-<h2>6. Asynchronous Display and Asynchronous Touch<a class="headerlink" href="#asynchronous-display-and-asynchronous-touch" title="Link to this heading"></a></h2>
-<p>The asynchronous display and touch function enables users to use the DisplayHwConfig app to set the main and secondary screens, the binding relationship between the display and VOP, the binding relationship between the display and touch (input) devices, customize the DPI settings, and display the app itself on different screens.</p>
+<section id="multi-display-with-independent-touch-control">
+<h2>6. Multi-display with Independent Touch Control<a class="headerlink" href="#multi-display-with-independent-touch-control" title="Link to this heading"></a></h2>
+<p>The multi-display with independent touch control function enables you to use the DisplayHwConfig app to set the main and secondary screens, the binding relationship between the display and VOP, the binding relationship between the display and touch (input) devices, customize the DPI settings, and display the app itself on different screens.</p>
 <p>After the parameter settings are completed, restart the device for the settings to take effect.</p>
 <p>The source code of the app is located in vendor/forlinx/DisplayHwConfig.</p>
 <section id="primary-and-secondary-screens-settings">
@@ -1496,8 +1496,8 @@ You can refer to the following methods:</p>
 </div>
 <p>Note: If you want to verify whether the multi - touch function is set correctly, each display device should display a different app, and then click on them respectively. You can also click the “Display on this screen” button to display the app on the specified screen and perform touch operations.</p>
 </section>
-<section id="dpi-settings-customization">
-<h3><strong>6.4 DPI Settings Customization</strong><a class="headerlink" href="#dpi-settings-customization" title="Link to this heading"></a></h3>
+<section id="dpi-custom-settings">
+<h3>**6.4 DPI Custom Settings **<a class="headerlink" href="#dpi-custom-settings" title="Link to this heading"></a></h3>
 <p>For the main displays with different resolutions and sizes, the display effects are different even with the same DPI. Therefore, a function to customize the system DPI is provided.</p>
 <p>Enter the specified DPI value in the “Display DPI” input box, then click “Save”. The settings will take effect after restarting.</p>
 </section>
@@ -1532,7 +1532,7 @@ adbd<span class="w"> </span>cannot<span class="w"> </span>run<span class="w"> </
 </div>
 </section>
 <section id="app-permission-control">
-<h3><strong>7.3 App Permission Control</strong><a class="headerlink" href="#app-permission-control" title="Link to this heading"></a></h3>
+<h3><strong>7.3 APP Permission Control</strong><a class="headerlink" href="#app-permission-control" title="Link to this heading"></a></h3>
 <p>Select “Enable APP” to grant root permission to the app.</p>
 <p>When the root permission of the app is enabled, opening RootCheck will show that the app root permission is enabled.</p>
 <p>When the root permission of the app is disabled, opening RootCheck will show that the app root permission is disabled.</p>

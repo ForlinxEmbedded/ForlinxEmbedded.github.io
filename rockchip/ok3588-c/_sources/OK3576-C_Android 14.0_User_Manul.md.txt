@@ -1445,9 +1445,9 @@ Click “Yes”.
 
 Note: If prompted to upgrade again, click "No", because OK3588 can get the remote 1.0.1.zip upgrade package through the network, so it will remind you whether you need to upgrade or not.
 
-## 6\. Asynchronous Display and Asynchronous Touch
+## 6\. Multi-display with Independent Touch Control
 
-The asynchronous display and touch function enables users to use the DisplayHwConfig app to set the main and secondary screens, the binding relationship between the display and VOP, the binding relationship between the display and touch (input) devices, customize the DPI settings, and display the app itself on different screens.
+The multi-display with independent touch control function enables you to use the DisplayHwConfig app to set the main and secondary screens, the binding relationship between the display and VOP, the binding relationship between the display and touch (input) devices, customize the DPI settings, and display the app itself on different screens.
 
 After the parameter settings are completed, restart the device for the settings to take effect.
 
@@ -1514,7 +1514,7 @@ Add the content to obtain input - phy and configure phys in the touch device dri
 
 Note: If you want to verify whether the multi - touch function is set correctly, each display device should display a different app, and then click on them respectively. You can also click the “Display on this screen” button to display the app on the specified screen and perform touch operations.
 
-### **6.4 DPI Settings Customization**
+### **6.4 DPI Custom Settings **
 
 For the main displays with different resolutions and sizes, the display effects are different even with the same DPI. Therefore, a function to customize the system DPI is provided.
 
@@ -1558,7 +1558,7 @@ C:\Users\forlinx>adb root
 adbd cannot run as root
 ```
 
-### **7.3 App Permission Control**
+### **7.3 APP Permission Control**
 
 Select “Enable APP” to grant root permission to the app.
 
