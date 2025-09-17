@@ -1,4 +1,4 @@
-# OK3588-C\_Android14.0\_User's Manual\_V1.0
+# Android14.0\_User's Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
