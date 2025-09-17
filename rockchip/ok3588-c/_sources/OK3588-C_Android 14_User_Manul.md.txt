@@ -1459,7 +1459,7 @@ Click the “PRIMARY DISPLAY” button to specify the primary screen.
 
 Select the display you want to set as the primary screen from the menu and click “OK”.
 
-Note: When setting the primary screen, make sure the selected display is bound to a VOP (Video Output Processor) and the relevant DTS (Device Tree Source) nodes are enabled. Otherwise, the Android system will indicate that the primary screen does not exist.
+**Note: When setting the primary screen, make sure the selected display is bound to a VOP (Video Output Processor) and the relevant DTS (Device Tree Source) nodes are enabled. Otherwise, the Android system will indicate that the primary screen does not exist.**
 
 The currently opened display device, excluding the primary screen, is the secondary screen. The configuration of secondary screens is adaptive and does not require manual settings.
 
