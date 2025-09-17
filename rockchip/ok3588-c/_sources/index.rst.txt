@@ -35,7 +35,7 @@ SOFTWARE
    OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual
    OK3588-C_Android_12_User_Manual
    OK3588-C_Android_12_User_Compilation_Manual.md
-   OK3576-C_Android 14_User_Manul
+   OK3588-C_Android 14_User_Manul
 APPLICATION NOTE
 -----------------
 
