@@ -233,11 +233,11 @@ Number  Start   End     Size    File system  Name      Flags
 <section id="modify-etc-fstab">
 <h3>Modify /etc/fstab:<a class="headerlink" href="#modify-etc-fstab" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# vi /etc/fstab
-屏蔽掉下列两条命令：
+Block the following two commands:
 /dev/mmcblk0p7                  /oem                    ext4            defaults                0       0
 /dev/mmcblk0p8                  /userdata               ext4            defaults                0       0
 
-Linux 则屏蔽掉：
+Linux block:
 PARTLABEL=oem   /oem    ext4    defaults        0 2
 PARTLABEL=userdata      /userdata       ext4    defaults        0 2
 </pre></div>
@@ -245,7 +245,7 @@ PARTLABEL=userdata      /userdata       ext4    defaults        0 2
 <p>Note: If the above two lines are not commented out in Ubuntu before restarting, it will cause the system to fail to boot. At this time, you can use Linux to boot, then read the contents of the TF boot card, and thus operate the Ubuntu file system.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# cd /media/sdcard2/etc/			// or/mnt/sdcard/etc/
 root@ok3588:/media/sdcard2/etc# vi fstab
-屏蔽掉：
+Block：
 /dev/mmcblk0p7                  /oem                    ext4            defaults                0       0
 /dev/mmcblk0p8                  /userdata               ext4            defaults                0       0
 root@ok3588:/media/sdcard2/etc# sync

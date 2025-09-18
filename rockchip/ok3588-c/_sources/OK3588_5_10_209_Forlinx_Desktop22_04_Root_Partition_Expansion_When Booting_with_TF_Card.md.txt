@@ -111,11 +111,11 @@ It can be seen that partition 6 has been expanded. Press ctrl + d to exit parted
 
 ```plain
 root@ok3588:~# vi /etc/fstab
-屏蔽掉下列两条命令：
+Block the following two commands:
 /dev/mmcblk0p7                  /oem                    ext4            defaults                0       0
 /dev/mmcblk0p8                  /userdata               ext4            defaults                0       0
 
-Linux 则屏蔽掉：
+Linux block:
 PARTLABEL=oem   /oem    ext4    defaults        0 2
 PARTLABEL=userdata      /userdata       ext4    defaults        0 2
 ```
@@ -125,7 +125,7 @@ Note: If the above two lines are not commented out in Ubuntu before restarting, 
 ```plain
 root@ok3588:~# cd /media/sdcard2/etc/			// or/mnt/sdcard/etc/
 root@ok3588:/media/sdcard2/etc# vi fstab
-屏蔽掉：
+Block：
 /dev/mmcblk0p7                  /oem                    ext4            defaults                0       0
 /dev/mmcblk0p8                  /userdata               ext4            defaults                0       0
 root@ok3588:/media/sdcard2/etc# sync
