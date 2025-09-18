@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK3588-C_Android14.0_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded RK3588 Documentation  documentation</title>
+  <title>Android14.0_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded RK3588 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=30170994" />
@@ -72,7 +72,7 @@
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html">Android 12.0_User’s Manual_V 1.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html">Android 12.0_User’s Compilation Manual_V 1.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html">Android14.0_User’s Manual_V1.0</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">OK3588-C_Android14.0_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Android14.0_User’s Compilation Manual_V1.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
@@ -104,17 +104,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#id2">4.2.3 Android System Compilation</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#android-application-development">5. Android Application Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-the-android-application-development-environment">5.1 Setting up the Android Application Development Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#jdk-java-se-development-kit-download-and-installation">5.1.1 JDK（Java SE Development Kit）Download and Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#android-studio-installation">5.1.2 Android Studio Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#helloworld-project-creation">5.1.3 Helloworld Project Creation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#android-application-development">5. Android Application Development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#setting-up-the-android-application-development-environment">5.1 Setting up the Android Application Development Environment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#jdk-java-se-development-kit-download-and-installation">5.1.1 JDK（Java SE Development Kit）Download and Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#android-studio-installation">5.1.2 Android Studio Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#helloworld-project-creation">5.1.3 Helloworld Project Creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apk-platform-signature">5.2 Apk Platform Signature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-installation-method-of-apk-in-system">5.3 Pre - installation Method of APK in System</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#apk-platform-signature">5.2 Apk Platform Signature</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pre-installation-method-of-apk-in-system">5.3 Pre - installation Method of APK in System</a></li>
 </ul>
 </li>
 </ul>
@@ -133,7 +133,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">OK3588-C_Android14.0_User’s Compilation Manual_V1.0</li>
+      <li class="breadcrumb-item active">Android14.0_User’s Compilation Manual_V1.0</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -142,8 +142,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok3588-c-android14-0-users-compilation-manual-v1-0">
-<h1>OK3588-C_Android14.0_User’s Compilation Manual_V1.0<a class="headerlink" href="#ok3588-c-android14-0-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+  <section id="android14-0-users-compilation-manual-v1-0">
+<h1>Android14.0_User’s Compilation Manual_V1.0<a class="headerlink" href="#android14-0-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright-notice">
 <h2>Copyright Notice<a class="headerlink" href="#copyright-notice" title="Link to this heading"></a></h2>
@@ -605,14 +605,13 @@ forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
 <p>The compiled boot. img is /out/target/product/ok3588_c$.</p>
 </section>
 </section>
-</section>
 <section id="android-application-development">
-<h1>5. Android Application Development<a class="headerlink" href="#android-application-development" title="Link to this heading"></a></h1>
+<h2>5. Android Application Development<a class="headerlink" href="#android-application-development" title="Link to this heading"></a></h2>
 <p>This chapter explains how to set up the Android application development environment, including downloading and installing the Android SDK and Android Studio integrated development environment, as well as using the OK3588 development board for on-device debugging. It is highly suitable for Android beginners to learn from and refer to.</p>
 <section id="setting-up-the-android-application-development-environment">
-<h2>5.1 Setting up the Android Application Development Environment<a class="headerlink" href="#setting-up-the-android-application-development-environment" title="Link to this heading"></a></h2>
+<h3>5.1 Setting up the Android Application Development Environment<a class="headerlink" href="#setting-up-the-android-application-development-environment" title="Link to this heading"></a></h3>
 <section id="jdk-java-se-development-kit-download-and-installation">
-<h3>5.1.1 JDK（Java SE Development Kit）Download and Installation<a class="headerlink" href="#jdk-java-se-development-kit-download-and-installation" title="Link to this heading"></a></h3>
+<h4>5.1.1 JDK（Java SE Development Kit）Download and Installation<a class="headerlink" href="#jdk-java-se-development-kit-download-and-installation" title="Link to this heading"></a></h4>
 <p>Since the Android application code is written in Java, you need to install the JDK on Windows first. The JDK can be downloaded as follows:</p>
 <p>It is recommended to install Java 8, visit the website <a class="reference external" href="https://www.oracle.com/java/technologies/downloads">https://www.oracle.com/java/technologies/downloads</a>, and select the Windows x64 version of Java 8 in the page. You can also directly visit the website <a class="reference external" href="https://www.oracle.com/java/technologies/downloads/#java8-windows">https://www.oracle.com/java/technologies/downloads/#java8-windows</a> to enter the download page.</p>
 <p><img alt="Image" src="_images/1718948582611_6f4ec5ad_d1dd_41c7_a5a3_501af900752a.png" /></p>
@@ -644,7 +643,7 @@ forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
 <p>The correct display of the Java version indicates a successful installation.</p>
 </section>
 <section id="android-studio-installation">
-<h3>5.1.2 Android Studio Installation<a class="headerlink" href="#android-studio-installation" title="Link to this heading"></a></h3>
+<h4>5.1.2 Android Studio Installation<a class="headerlink" href="#android-studio-installation" title="Link to this heading"></a></h4>
 <p>Android Studio is a new development tool for Android launched by Google at I/O 2013. Please visit http://www.android-studio.org/ww.android-studio.org to download. It is recommended to download version 3.5.2.</p>
 <p><img alt="Image" src="_images/1718948584195_ab7ea8fd_78ff_42c6_be79_0a1ad3a92f84.png" /></p>
 <p>After downloading, follow the prompts to install it. When the installation is complete, the following figure appears:</p>
@@ -668,7 +667,7 @@ forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
 <p>When the installation is complete, click“Finish”.</p>
 </section>
 <section id="helloworld-project-creation">
-<h3>5.1.3 Helloworld Project Creation<a class="headerlink" href="#helloworld-project-creation" title="Link to this heading"></a></h3>
+<h4>5.1.3 Helloworld Project Creation<a class="headerlink" href="#helloworld-project-creation" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p>Select “start a new android studio project”：</p></li>
 </ol>
@@ -705,7 +704,7 @@ forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
 </section>
 </section>
 <section id="apk-platform-signature">
-<h2>5.2 Apk Platform Signature<a class="headerlink" href="#apk-platform-signature" title="Link to this heading"></a></h2>
+<h3>5.2 Apk Platform Signature<a class="headerlink" href="#apk-platform-signature" title="Link to this heading"></a></h3>
 <p>Note: If there is no OpenSSL command in your windows system, please go to<a class="reference external" href="http://slproweb.com/products/Win32OpenSSL.html">http://slproweb.com/products/Win32OpenSSL.html</a> to down load and install it, and set environment variables.</p>
 <p>In the Android platform, SELinux divides apps into three types, including untrusted_app which has no platform signature and system privileges, platform_app which has platform signature and no system privileges, and system_app which has platform signature and system privileges. This chapter will introduce how to sign the apk and obtain system permissions.</p>
 <ol class="arabic simple">
@@ -749,7 +748,7 @@ android:sharedUserId<span class="o">=</span><span class="s2">&quot;android.uid.s
 <p>Solution: Uninstall the APP in the system, restart the board, and reinstall and run it.</p>
 </section>
 <section id="pre-installation-method-of-apk-in-system">
-<h2>5.3 Pre - installation Method of APK in System<a class="headerlink" href="#pre-installation-method-of-apk-in-system" title="Link to this heading"></a></h2>
+<h3>5.3 Pre - installation Method of APK in System<a class="headerlink" href="#pre-installation-method-of-apk-in-system" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Create a new directory in Android system:</p></li>
 </ol>
@@ -794,6 +793,7 @@ helloworld
 <ol class="arabic simple" start="4">
 <li><p>Recompile the image</p></li>
 </ol>
+</section>
 </section>
 </section>
 
