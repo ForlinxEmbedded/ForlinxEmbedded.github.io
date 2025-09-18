@@ -96,12 +96,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#android-system-compilation">4. Android System Compilation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#software-configuration-file-path">4.1 Software Configuration File Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">4.2 Android System Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#preparation-before-compilation">4.2.1 Preparation Before Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#source-code-copy-and-release">4.2.2 Source Code Copy and Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">4.2.3 Android System Compilation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">4.2 Android System Compilation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.2.1 Preparation Before Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#source-code-copy-and-release">4.2.2 Source Code Copy and Release</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">4.2.3 Android System Compilation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#android-application-development">5. Android Application Development</a><ul>
@@ -488,11 +488,10 @@ forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<spa
 </tbody>
 </table>
 </section>
-</section>
 <section id="id1">
-<h2>4.2 Android System Compilation<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h3>4.2 Android System Compilation<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <section id="preparation-before-compilation">
-<h3>4.2.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
+<h4>4.2.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h4>
 <p>Please confirm the size of the swap partition of the current system. If the swap partition is insufficient, the compilation of the Android source code will fail. 32G is recommended. It is recommended to adjust the development environment memory to 16G.</p>
 <p>1. View the swap partition:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>cat<span class="w">  </span>/proc/swaps
@@ -516,7 +515,7 @@ forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>vim<span cl
 <p>The source code package of the Android 14 system is placed in the data in the form of a volume compression package. Copy all the compression packages to the/home/forlinx/work/directory of the development environment, which is described below.</p>
 </section>
 <section id="source-code-copy-and-release">
-<h3>4.2.2 Source Code Copy and Release<a class="headerlink" href="#source-code-copy-and-release" title="Link to this heading"></a></h3>
+<h4>4.2.2 Source Code Copy and Release<a class="headerlink" href="#source-code-copy-and-release" title="Link to this heading"></a></h4>
 <p>Source Code Path: Software\ 2-Image and Source \ 1-Source Code</p>
 <p>The source code in the data is a volume compression package, which needs to be merged first, and then decompressed and released.</p>
 <ol class="arabic simple">
@@ -580,7 +579,7 @@ export MAVEN_OPTS=&quot;-Xms5120m -Xmx5120m&quot;
 </div>
 </section>
 <section id="id2">
-<h3>4.2.3 Android System Compilation<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<h4>4.2.3 Android System Compilation<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
 <p>The android system compilation part of OK3588 platform supports full and partial compilation. All contents will be automatically compiled and packaged into an image that can be directly used for flashing. Part of the compilation is mainly used in the product development phase to compile the Linux kernel device tree or android system.</p>
 <p>1. Enter docker environment</p>
 <p>To compile this system, you need to switch to the forlinx account</p>
@@ -603,6 +602,7 @@ forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
 </pre></div>
 </div>
 <p>The compiled boot. img is /out/target/product/ok3588_c$.</p>
+</section>
 </section>
 </section>
 <section id="android-application-development">
