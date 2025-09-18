@@ -1,4 +1,4 @@
-# OK3588-C\_Android14.0\_User’s Compilation Manual\_V1.0
+# Android14.0\_User’s Compilation Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -596,13 +596,13 @@ forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
 
 The compiled boot. img is /out/target/product/ok3588\_c$.
 
-# 5\. Android Application Development
+## 5\. Android Application Development
 
 This chapter explains how to set up the Android application development environment, including downloading and installing the Android SDK and Android Studio integrated development environment, as well as using the OK3588 development board for on-device debugging. It is highly suitable for Android beginners to learn from and refer to.
 
-## 5.1 Setting up the Android Application Development Environment
+### 5.1 Setting up the Android Application Development Environment
 
-### 5.1.1 JDK（Java SE Development Kit）Download and Installation
+#### 5.1.1 JDK（Java SE Development Kit）Download and Installation
 
 Since the Android application code is written in Java, you need to install the JDK on Windows first. The JDK can be downloaded as follows:
 
@@ -649,7 +649,7 @@ javac -version
 
 The correct display of the Java version indicates a successful installation.
 
-### 5.1.2 Android Studio Installation
+#### 5.1.2 Android Studio Installation
 
 Android Studio is a new development tool for Android launched by Google at I/O 2013. Please visit http://www.android-studio.org/ww.android-studio.org to download. It is recommended to download version 3.5.2.
 
@@ -693,7 +693,7 @@ Click “Finish”.
 
 When the installation is complete, click“Finish”.
 
-### 5.1.3 Helloworld Project Creation
+#### 5.1.3 Helloworld Project Creation
 
 1. Select “start a new android studio project”：
 
@@ -741,7 +741,7 @@ After compiling, link the OTG cable to the USB port of your PC and click the gre
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948588919-30a0549d-2330-4329-982d-e148a5b086ed.png)
 
-## 5.2 Apk Platform Signature
+### 5.2 Apk Platform Signature
 
 Note: If there is no OpenSSL command in your windows system, please go to[http://slproweb.com/products/Win32OpenSSL.html](http://slproweb.com/products/Win32OpenSSL.html) to down load and install it, and set environment variables.
 
@@ -808,7 +808,7 @@ If the app prints the following error when running:
 
 Solution: Uninstall the APP in the system, restart the board, and reinstall and run it.
 
-## 5.3 Pre - installation Method of APK in System
+### 5.3 Pre - installation Method of APK in System
 
 1. Create a new directory in Android system:
 
