@@ -36,6 +36,7 @@ SOFTWARE
    OK3588-C_Android_12_User_Manual
    OK3588-C_Android_12_User_Compilation_Manual.md
    OK3588-C_Android_14_User_Manual
+   OK3588-C_Android_14_User_Compilation_Manual
 -----------------
 
 .. toctree::
