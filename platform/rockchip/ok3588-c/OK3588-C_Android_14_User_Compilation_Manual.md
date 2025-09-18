@@ -441,9 +441,9 @@ OK3588-C platform, the software configuration file path is as follows:
 | Device tree file| arch/arm64/boot/dts/rockchip/FET3588.dtsi   arch/arm64/boot/dts/rockchip/OK3588-C-Common.dtsi   arch/arm64/boot/dts/rockchip/OK3588-C-Camera.dtsi   arch/arm64/boot/dts/rockchip/OK3588-C-Android.dts
 | android| device/rockchip/rk3588/ok3588\_c/
 
-## 4.2 Android System Compilation
+### 4.2 Android System Compilation
 
-### 4.2.1 Preparation Before Compilation
+#### 4.2.1 Preparation Before Compilation
 
 Please confirm the size of the swap partition of the current system. If the swap partition is insufficient, the compilation of the Android source code will fail. 32G is recommended. It is recommended to adjust the development environment memory to 16G.
 
@@ -476,7 +476,7 @@ Adding the following at the end of the/etc/fstab file:
 
 The source code package of the Android 14 system is placed in the data in the form of a volume compression package. Copy all the compression packages to the/home/forlinx/work/directory of the development environment, which is described below.
 
-### 4.2.2 Source Code Copy and Release
+#### 4.2.2 Source Code Copy and Release
 
 Source Code Path: Software\\ 2-Image and Source \\ 1-Source Code
 
@@ -561,7 +561,7 @@ Note: The development environment we provide modifies the.bashrc file as a hidde
 forlinx@ubuntu:~$ source ~/.bashrc
 ```
 
-### 4.2.3 Android System Compilation
+#### 4.2.3 Android System Compilation
 
 The android system compilation part of OK3588 platform supports full and partial compilation. All contents will be automatically compiled and packaged into an image that can be directly used for flashing. Part of the compilation is mainly used in the product development phase to compile the Linux kernel device tree or android system.
 
