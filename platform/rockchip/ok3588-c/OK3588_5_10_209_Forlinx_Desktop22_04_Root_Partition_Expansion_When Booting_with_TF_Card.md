@@ -120,7 +120,7 @@ PARTLABEL=oem   /oem    ext4    defaults        0 2
 PARTLABEL=userdata      /userdata       ext4    defaults        0 2
 ```
 
-Note: If the above two lines are not commented out in Ubuntu before restarting, it will cause the system to fail to boot. At this time, you can use Linux to boot, then read the contents of the TF boot card, and thus operate the Ubuntu file system.
+**Note: If the above two lines are not commented out in Ubuntu before restarting, it will cause the system to fail to boot. At this time, you can use Linux to boot, then read the contents of the TF boot card, and thus operate the Ubuntu file system.**
 
 ```plain
 root@ok3588:~# cd /media/sdcard2/etc/			// or/mnt/sdcard/etc/
