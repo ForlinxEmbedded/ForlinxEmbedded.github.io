@@ -71,7 +71,7 @@ This manual is mainly applicable to the Android14.0 operating system on the Forl
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45535139/1718948545093-9dfd51bc-1a99-41bc-99b3-053234377703.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545093_9dfd51bc_1a99_41bc_99b3_053234377703.jpeg)
 
 <font style="color:#000000;">After the download is complete, double-click the startup file to start the installer.</font>
 
@@ -79,35 +79,35 @@ Go to the VMware website https://www.vmware.com/cn.html to download Workstation 
 
 <font style="color:#000000;">Double-click the startup program to enter the installation wizard, and click on "Next".</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948545321-a8938217-413f-4f39-8728-e0bb2f11d936.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545321_a8938217_413f_4f39_8728_e0bb2f11d936.png)
 
 <font style="color:#000000;">Check I accept the terms in the license agreement and click "Next".</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948545596-4f2db847-98e0-4a93-8729-26810c065011.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545596_4f2db847_98e0_4a93_8729_26810c065011.png)
 
 <font style="color:#000000;">Modify the installation location to the partition of your computer where the software is installed, and click "Next".</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45535139/1718948545912-32ece1c4-38bb-4496-a961-be28f2b192f4.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545912_32ece1c4_38bb_4496_a961_be28f2b192f4.jpeg)
 
 <font style="color:#000000;">Uncheck and click on "Next".</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45535139/1718948546191-989f0fb8-4b86-4527-ba8a-035475471f42.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546191_989f0fb8_4b86_4527_ba8a_035475471f42.jpeg)
 
 <font style="color:#000000;">Check Add Shortcut and click "Next".</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45535139/1718948546475-ae0e753a-3dfb-4551-8267-7e2f830ce5c1.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546475_ae0e753a_3dfb_4551_8267_7e2f830ce5c1.jpeg)
 
 <font style="color:#000000;">Click "Installation"</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948546646-6eabb168-6de5-4706-9f07-3eba1f84e441.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546646_6eabb168_6de5_4706_9f07_3eba1f84e441.png)
 
 <font style="color:#000000;">Wait for the installation to complete.</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948546913-f2399faf-3dc1-4bcd-bc17-072f0e314be5.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546913_f2399faf_3dc1_4bcd_bc17_072f0e314be5.png)
 
 <font style="color:#000000;">Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45535139/1718948547140-943cc6ed-c801-4dd3-9a0b-649bf99ce7cb.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948547140_943cc6ed_c801_4dd3_9a0b_649bf99ce7cb.jpeg)
 
 ## 2\. Loading the Existing Ubuntu Development Environment
 
@@ -121,11 +121,11 @@ There are two ways to use a virtual machine environment in VMware: one is to dir
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948550732-b0ad6ff0-1657-4c0b-8551-ef5345c5c093.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948550732_b0ad6ff0_1657_4c0b_8551_ef5345c5c093.png)
 
 Select all compressed files, right-click and extract to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948550929-05258903-2f86-4eb2-8161-73f85bc48237.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948550929_05258903_2f86_4eb2_8161_73f85bc48237.png)
 
 After the extraction is complete, you will obtain the development environment OK3588-VM16.2.3-ubuntu20.04.
 
@@ -133,19 +133,19 @@ The file "3588 development environment.vmx" in the OK3588-VM16.2.3-ubuntu20.04 f
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948551186-78129138-2117-434c-9ae3-b561afd8aedb.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948551186_78129138_2117_434c_9ae3_b561afd8aedb.png)
 
 Navigate to the directory where the recently extracted OK3588-VM16.2.3-ubuntu20.04 virtual machine file is located, and double-click on the startup file to open it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948551405-0730c09a-c36a-4e68-b187-6ec418d05eca.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948551405_0730c09a_c36a_4e68_b187_6ec418d05eca.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948551605-a94211f2-1285-4ecc-9a4d-d43152b574a8.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948551605_a94211f2_1285_4ecc_9a4d_d43152b574a8.png)
 
 The default login account for automatic login in the development environment is "forlinx".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948551892-df5d5e75-8ee6-4487-8740-9ab0415003c9.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948551892_df5d5e75_8ee6_4487_8740_9ab0415003c9.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -159,63 +159,63 @@ The default login account for automatic login in the development environment is 
 
 Step 1: Open the VMware software and click \[File]/ \[New Virtual Machine]. Enter the following interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948557881-bf708ddf-4635-4d44-bddb-4e6ee048ccda.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948557881_bf708ddf_4635_4d44_bddb_4e6ee048ccda.png)
 
 Step 2: Select Custom and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948558086-a3cc9a3f-e24e-4638-bfae-215772d6dee8.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948558086_a3cc9a3f_e24e_4638_bfae_215772d6dee8.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948558261-9926dd9b-2063-45e4-962c-53ddd58f4545.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948558261_9926dd9b_2063_45e4_962c_53ddd58f4545.png)
 
 Select Install the operating system later and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948558474-60cdcb0c-a58d-4701-a9e9-f47f57fc96f6.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948558474_60cdcb0c_a58d_4701_a9e9_f47f57fc96f6.png)
 
 Keep the default settings and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948558651-6ca43874-078f-4ffa-bbc6-6dded8ec796a.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948558651_6ca43874_078f_4ffa_bbc6_6dded8ec796a.png)
 
 Modify the name and installation location of your virtual machine, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948558907-86549cf9-bfa6-4420-9236-555456013b4f.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948558907_86549cf9_bfa6_4420_9236_555456013b4f.png)
 
 Configure the number of CPU based on your computer's actual specifications.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948559153-c05ea6ce-e22e-4c6f-8172-3b1309704eb9.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948559153_c05ea6ce_e22e_4c6f_8172_3b1309704eb9.png)
 
 The memory size is also set according to the actual situation, and 32g is recommended for Android 14 compilation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948559336-54b5e834-b27f-4d7b-b855-a534a87ed45a.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948559336_54b5e834_b27f_4d7b_b855_a534a87ed45a.png)
 
 Set the network type, default to NAT mode then click “Next”. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948559534-7164f982-b61d-4bf1-879c-b66baa06e287.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948559534_7164f982_b61d_4bf1_879c_b66baa06e287.png)
 
 The default selection for the IO controller type here is LSI
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948559715-6334de6e-e394-4a9f-b0fe-24eff3f73d46.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948559715_6334de6e_e394_4a9f_b0fe_24eff3f73d46.png)
 
 The default selection here is also SCSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948559891-50108085-5316-4e45-b257-349fdee11cf2.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948559891_50108085_5316_4e45_b257_349fdee11cf2.png)
 
 Choose to create a new virtual disk here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948560078-080f6b13-f306-4c35-94f6-0fbe879c9a00.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948560078_080f6b13_f306_4c35_94f6_0fbe879c9a00.png)
 
 Set the disk size to 500G, select the disk provisioning format, and then click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948560319-b9944e6e-19be-4b1e-81a9-537e0f57ba08.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948560319_b9944e6e_19be_4b1e_81a9_537e0f57ba08.png)
 
 Specify the disk file, the default one here is fine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948560495-155c1f47-6244-4630-abbc-bfbfcc24ce7f.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948560495_155c1f47_6244_4630_abbc_bfbfcc24ce7f.png)
 
 Click “Finish” by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948560717-1721904f-d97e-4f6a-aabd-0c462446af69.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948560717_1721904f_d97e_4f6a_aabd_0c462446af69.png)
 
 The virtual machine creation is now complete.
 
@@ -233,65 +233,65 @@ Because the source code is compiled and verified on the 20.04, select and instal
 
 Download “ubuntu-20.04.3-desktop-amd64.iso”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948560905-6e03158d-9008-4aa1-8d57-88d858267a33.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948560905_6e03158d_9008_4aa1_8d57_88d858267a33.png)
 
 After downloading the mirror image, you can proceed with the system installation operation.
 
 Right-click on the created virtual machine name and select “Settings” from the pop-up menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948561135-b4afd6e5-7b4a-474e-9038-9a3782698f4f.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948561135_b4afd6e5_7b4a_474e_9038_9a3782698f4f.png)
 
 The “Virtual Machine Settings” menu will pop up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948561409-2794c64a-b0ee-4974-8358-5e7262fa4826.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948561409_2794c64a_b0ee_4974_8358_5e7262fa4826.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948561614-0cb88dd3-caa2-4de9-b8c4-0fe6b3cd51d2.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948561614_0cb88dd3_caa2_4de9_b8c4_0fe6b3cd51d2.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948561827-18b5e8f2-8f95-4e23-99db-b57f83dcdffa.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948561827_18b5e8f2_8f95_4e23_99db_b57f83dcdffa.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948562058-73d10201-e76e-4dde-b9f6-dce958518eaf.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948562058_73d10201_e76e_4dde_b9f6_dce958518eaf.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. The default language of Ubuntu is English, but of course, you can also choose Others.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948562248-f2b8d3fe-26bf-49c7-93d3-f2b7ec605a7a.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948562248_f2b8d3fe_26bf_49c7_93d3_f2b7ec605a7a.png)
 
 The default selected language can also be reset at a later stage, after the selection is complete continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948562447-e4af3607-9e21-42e4-9748-484b1f77646f.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948562447_e4af3607_9e21_42e4_9748_484b1f77646f.png)
 
 Next, select "Continue" as the default option to proceed with the installation. The installation process might be slow. Then, click "Continue" again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948562639-f53fa9c6-7cab-4a0a-94df-d258431986e9.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948562639_f53fa9c6_7cab_4a0a_94df_d258431986e9.png)
 
 By default, when you click on "Install Now", a dialog box will appear as shown in the image. Simply click "Continue" to proceed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948562843-36141fa1-34eb-4474-94ba-2c4bc801e5ba.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948562843_36141fa1_34eb_4474_94ba_2c4bc801e5ba.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed.
 
 Finally, set your username and password. You can choose either automatic login or login with a username and password. Click "Continue" to start the automatic installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948563096-f829e292-e91d-4feb-9181-a3b5d00594cf.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948563096_f829e292_e91d_4feb_9181_a3b5d00594cf.png)
 
 If the internet connection is poor, you can Skip without affecting the installation process.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948563438-497b3c2d-04e3-406f-9b69-4ac67fddf5d1.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948563438_497b3c2d_04e3_406f_9b69_4ac67fddf5d1.png)
 
 Click “Restart Now”  to reboot.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948563746-c0b4fa3c-b545-4ee7-a02e-a07756a13c53.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948563746_c0b4fa3c_b545_4ee7_a02e_a07756a13c53.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948564045-db7ddaad-404e-4dd1-923a-d44121347b23.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948564045_db7ddaad_404e_4dd1_923a_d44121347b23.png)
 
 The system interface after the reboot is complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948564312-58bdec72-3b40-4fb9-81d9-827839eb9d0b.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948564312_58bdec72_3b40_4fb9_81d9_827839eb9d0b.png)
 
 The ubuntu system installation is complete.
 
@@ -303,15 +303,15 @@ VMware Tools Installation:
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machine" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948564622-9cc5d329-9b59-4caa-9b50-a9ca8d3567f9.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948564622_9cc5d329_9b59_4caa_9b50_a9ca8d3567f9.png)
 
 Once done, enter Ubuntu and the VMware Tools CD will appear on your desktop and click into it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948564828-c95a8738-342d-48cf-aa0d-2ce9f0688ce1.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948564828_c95a8738_342d_48cf_aa0d_2ce9f0688ce1.png)
 
 Enter and see a compressed file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions); copy the file under the home directory (i.e. the directory with the home personal username)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948565047-f7eb41f4-04f9-44cf-83d4-9ae26e6c0727.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948565047_f7eb41f4_04f9_44cf_83d4_9ae26e6c0727.png)
 
 Press \[Ctrl+Alt+T] to bring up the Terminal Command Interface and enter the command:
 
@@ -319,17 +319,17 @@ Press \[Ctrl+Alt+T] to bring up the Terminal Command Interface and enter the com
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.10-12406962.tar.gz
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948565286-1ef6065e-3d24-4e5f-8897-873d80375ae1.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948565286_1ef6065e_3d24_4e5f_8897_873d80375ae1.png)
 
 After the extraction is complete, a file named “vmware-tools-distrib" will appear.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948565577-9b5c7d23-ba69-4450-ae68-7c64bbc7fb63.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948565577_9b5c7d23_ba69_4450_ae68_7c64bbc7fb63.png)
 
 Go back to the terminal and type cd vmware-tools-distrib to enter the directory.
 
 Enter: sudo ./vmware-install.pl followed by pressing Enter. Then, enter your password and the installation process will begin. When prompted, you can input "yes" and press Enter to proceed. For any other inquiries, simply press Enter to go with the default installation settings.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948565768-0d4f434b-99f4-4fa1-8626-6f88a32aa91a.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948565768_0d4f434b_99f4_4fa1_8626_6f88a32aa91a.png)
 
 Once the VMware tools is complete, we can implement file copy and paste between Windows and Ubuntu.
 
@@ -337,17 +337,17 @@ The virtual machine is displayed full screen:
 
 If the virtual machine is not able to be displayed in full screen, you can resolve this issue by clicking on "View" and selecting "Autofit Guest." This will adjust the display to fit the screen automatically, enabling you to have a full-screen experience in the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948565963-6aadd47e-76b8-4541-91fd-27310afed0e3.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948565963_6aadd47e_76b8_4541_91fd_27310afed0e3.png)
 
 Make most of the system settings in the location shown. A lot of the setup requirements on Ubuntu can be done here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948566192-9b3cc384-6683-448d-8b69-1d46a054caf7.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948566192_9b3cc384_6683_448d_8b69_1d46a054caf7.png)
 
 Virtual machine hibernation settings:
 
 Also, the default hibernation is 5min, if you don't want to set hibernation, just set it to Never by setting Power->Blank screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948566454-b4fe4dc1-abf2-45b9-b36d-96835a98ba1c.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948566454_b4fe4dc1_abf2_45b9_b36d_96835a98ba1c.png)
 
 #### 3.1.4 Virtual Machine Network Settings 
 
@@ -357,13 +357,13 @@ By default, after the virtual machine is installed, the network connection metho
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. In this mode the virtual NAT device and the host NIC are connected to communicate for Internet access. This is the most common way to access the external network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948566750-83c42de6-a1a6-45e1-800c-1d7a628c5826.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948566750_83c42de6_a1a6_45e1_800c_1d7a628c5826.png)
 
 ##### 3.1.4.2 Bridge Connection
 
 When the VMware virtual NIC device is in bridge mode, the host NIC and the virtual machine NIC communicate through the virtual bridge, and the network IP and the host need to be set in the same network segment in the Ubuntu environment. If accessing an external network, you need to set the DNS to be consistent with the host NIC. If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948566942-a5dee5ef-e480-446b-a0b5-ec244a4a9d8c.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948566942_a5dee5ef_e480_446b_a0b5_ec244a4a9d8c.png)
 
 ### 3.2 Installation of the Necessary Libraries for Android Compilation
 
@@ -415,13 +415,13 @@ To view the installed version:
 forlinx@ubuntu:~$ update-java-alternatives -l
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948567133-412cc33e-dd69-4c60-8a0e-745e504cf5a5.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948567133_412cc33e_dd69_4c60_8a0e_745e504cf5a5.png)
 
 ```bash
 forlinx@ubuntu:~$ sudo update-alternatives --config java
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948567350-9c68b1d9-c5b7-4f82-b1a3-1d872d448cf9.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948567350_9c68b1d9_c5b7_4f82_b1a3_1d872d448cf9.png)
 
 Enter the option corresponding to java8 and press Enter to confirm.
 
@@ -472,7 +472,7 @@ Adding the following at the end of the/etc/fstab file:
 
 2\. It is recommended to adjust the memory of the development environment to 16G. Low memory may cause the compilation to fail.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948574809-2e6c95da-4b96-42a9-b331-10cea2161e7d.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948574809_2e6c95da_4b96_42a9_b331_10cea2161e7d.png)
 
 The source code package of the Android 14 system is placed in the data in the form of a volume compression package. Copy all the compression packages to the/home/forlinx/work/directory of the development environment, which is described below.
 
@@ -490,11 +490,11 @@ There are many kinds of file transfers between ubuntu and Windows hosts. After i
 
 Click "Virtual Machine" on the menu bar and select "Settings".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948575021-2620975b-90cb-401c-859a-0e075730c818.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948575021_2620975b_90cb_401c_859a_0e075730c818.png)
 
 Click "Options", enable "Shared Folders", set the shared directory on the Windows host, and click "OK".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948575253-85157bd2-ec8d-4580-8b2e-9ee03380e1a9.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948575253_85157bd2_ec8d_4580_8b2e_9ee03380e1a9.png)
 
 After the file-sharing setup of the virtual machine is complete, place the source zip in the shared folder of the Windows host, here we name it “share”.
 
@@ -608,11 +608,11 @@ Since the Android application code is written in Java, you need to install the J
 
 It is recommended to install Java 8, visit the website [https://www.oracle.com/java/technologies/downloads](https://www.oracle.com/java/technologies/downloads), and select the Windows x64 version of Java 8 in the page. You can also directly visit the website [https://www.oracle.com/java/technologies/downloads/#java8-windows](https://www.oracle.com/java/technologies/downloads/#java8-windows) to enter the download page.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948582611-6f4ec5ad-d1dd-41c7-a5a3-501af900752a.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948582611_6f4ec5ad_d1dd_41c7_a5a3_501af900752a.png)
 
 Accept the agreement and proceed with the download.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948582902-63d904bc-7040-4b76-881a-5d31c8398ac3.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948582902_63d904bc_7040_4b76_881a_5d31c8398ac3.png)
 
 Currently, download JDK from the official Oracle website requires registration for an Oracle account. You may also choose alternative download methods.
 
@@ -627,15 +627,15 @@ After the installation is complete, you need to add the JDK command to the Path 
 
 The following is a screenshot of the win7 system:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948583119-8a2fe105-af4f-47e9-b00e-fd5ad79ab321.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948583119_8a2fe105_af4f_47e9_b00e_fd5ad79ab321.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948583326-dfa375b4-106b-41d2-899d-050d28e61753.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948583326_dfa375b4_106b_41d2_899d_050d28e61753.png)
 
 The following is a screenshot of the win10 system:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948583552-08df0653-3c4f-4351-915a-8b6caf1af6c8.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948583552_08df0653_3c4f_4351_915a_8b6caf1af6c8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948583772-8cff969a-88fb-4eec-b2cd-aa70ba58df5a.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948583772_8cff969a_88fb_4eec_b2cd_aa70ba58df5a.png)
 
 5. Check that the installation was successful.
 
@@ -645,7 +645,7 @@ After completing the above settings, restart the computer, open the command prom
 javac -version
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948583993-8adb117c-a468-4a0b-a527-2be49055cb95.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948583993_8adb117c_a468_4a0b_a527_2be49055cb95.png)
 
 The correct display of the Java version indicates a successful installation.
 
@@ -653,43 +653,43 @@ The correct display of the Java version indicates a successful installation.
 
 Android Studio is a new development tool for Android launched by Google at I/O 2013. Please visit http://www.android-studio.org/ww.android-studio.org to download. It is recommended to download version 3.5.2.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948584195-ab7ea8fd-78ff-42c6-be79-0a1ad3a92f84.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948584195_ab7ea8fd_78ff_42c6_be79_0a1ad3a92f84.png)
 
 After downloading, follow the prompts to install it. When the installation is complete, the following figure appears:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948584513-90b1a4e6-f502-4c46-b745-73650892bbcb.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948584513_90b1a4e6_f502_4c46_b745_73650892bbcb.png)
 
 Select “Do not import settings ":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948584712-2d71f708-7bc5-4889-b1b8-a3d663364b0e.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948584712_2d71f708_7bc5_4889_b1b8_a3d663364b0e.png)
 
 Select “Cancel ":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948584951-0ed6797c-efe4-4b0c-94ea-b1df944f8386.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948584951_0ed6797c_efe4_4b0c_94ea_b1df944f8386.png)
 
 Click "Next" to go to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948585186-509f50d1-8ed7-4670-9ed0-a3bcbcb5465d.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948585186_509f50d1_8ed7_4670_9ed0_a3bcbcb5465d.png)
 
 Select "custom" here:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948585402-861b5b20-9309-4813-bf4d-7cf8007f261f.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948585402_861b5b20_9309_4813_bf4d_7cf8007f261f.png)
 
 Choose a UI theme based on your personal preference:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948585661-057124d7-8242-4388-81f4-e220f1e144f4.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948585661_057124d7_8242_4388_81f4_e220f1e144f4.png)
 
 Select the installation path of Android SDK according to the actual situation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948585864-49669f8a-caba-4c0c-8808-3d4d5a5ebd52.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948585864_49669f8a_caba_4c0c_8808_3d4d5a5ebd52.png)
 
 Select the memory size for the emulator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948586052-4ba843fc-2083-4273-b3c1-915a012fc7e2.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948586052_4ba843fc_2083_4273_b3c1_915a012fc7e2.png)
 
 Click “Finish”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948586400-a78b7c9f-cf97-45d4-a052-066f8efb8a41.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948586400_a78b7c9f_cf97_45d4_a052_066f8efb8a41.png)
 
 When the installation is complete, click“Finish”.
 
@@ -697,17 +697,17 @@ When the installation is complete, click“Finish”.
 
 1. Select “start a new android studio project”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948586698-3732ed46-d7f8-4d79-9e2a-c34d5dafe3b2.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948586698_3732ed46_d7f8_4d79_9e2a_c34d5dafe3b2.png)
 
 2. Choose “Empty Activity”:
 
 Click "Next" to modify the project name and select the minimum supported android version:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948587142-715898f0-4813-4651-bc32-9dbc2d5449b4.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948587142_715898f0_4813_4651_bc32_9dbc2d5449b4.png)
 
 Click “Finish”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948587335-41f4a149-2660-4a15-9b7b-d936729b190c.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948587335_41f4a149_2660_4a15_9b7b_d936729b190c.png)
 
 Tools such as Gradle will be downloaded for the first use, so please be patient.
 
@@ -715,21 +715,21 @@ Tools such as Gradle will be downloaded for the first use, so please be patient.
 
 Click "File"-> "settings" to search SDK and open the interface as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1756801277243-0e6463b1-1761-4ec8-8a2f-eb4e88512f41.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1756801277243_0e6463b1_1761_4ec8_8a2f_eb4e88512f41.png)
 
 Check "Android API 34" and click "OK" to install.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948587843-6238498e-379c-4b79-8231-4f388d67da02.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948587843_6238498e_379c_4b79_8231_4f388d67da02.png)
 
 4\. Modify "build. Gradle" ":
 
 Modify all 32 in the file to 34, and press Ctrl + s to save the modified file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948588079-60aacc2f-b3c4-45f9-94d4-8f4cdec5974c.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948588079_60aacc2f_b3c4_45f9_94d4_8f4cdec5974c.png)
 
 5. Compilation
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948588354-d3b996bd-a60a-48be-8982-b6e2b029778e.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948588354_d3b996bd_a60a_48be_8982_b6e2b029778e.png)
 
 Click "build"-> "Make Project" to recompile.
 
@@ -737,9 +737,9 @@ Click "build"-> "Make Project" to recompile.
 
 After compiling, link the OTG cable to the USB port of your PC and click the green triangle icon in the menu bar.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948588649-d50c64b6-cf0f-447d-8f5c-4b9d8160802d.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948588649_d50c64b6_cf0f_447d_8f5c_4b9d8160802d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948588919-30a0549d-2330-4329-982d-e148a5b086ed.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948588919_30a0549d_2330_4329_982d_e148a5b086ed.png)
 
 ## 5.2 Apk Platform Signature
 
@@ -778,33 +778,33 @@ android:sharedUserId="android.uid.system">
 
 Click “File”->“project structure”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948589137-bad4b3b6-84de-4a2d-9325-e2cf9c6eb817.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948589137_bad4b3b6_84de_4a2d_9325_e2cf9c6eb817.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948589345-4d3f3932-29d0-467a-abd9-804f9ccccb1d.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948589345_4d3f3932_29d0_467a_abd9_804f9ccccb1d.png)
 
 Click “OK”.
 
 To add the signature configuration for the debug and release versions, click "Build"in the Android Studio menu bar and "Edit Build Type...".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948589537-c9c1a980-f795-4b64-a59f-794b82f7c997.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948589537_c9c1a980_f795_4b64_a59f_794b82f7c997.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948589799-4ccc5a8d-775a-40a7-a1a6-9c1a2d1442c2.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948589799_4ccc5a8d_775a_40a7_a1a6_9c1a2d1442c2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948590074-e933ce81-efb5-4df3-9dfc-ef6c52cf3e7b.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948590074_e933ce81_efb5_4df3_9dfc_ef6c52cf3e7b.png)
 
 Click "OK" when the modification is completed.
 
-Click the run button "" of android studio to ![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948590265-8244c674-804b-41c8-8afd-60cf9d268109.png) start the app. Enter in the serial port:
+Click the run button "" of android studio to ![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948590265_8244c674_804b_41c8_8afd_60cf9d268109.png) start the app. Enter in the serial port:
 
 ps –AZ
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948590452-aa7095d5-6885-459a-9d4a-8d7f368a6904.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948590452_aa7095d5_6885_459a_9d4a_8d7f368a6904.png)
 
 Confirm whether your app has become system \_ app.
 
 If the app prints the following error when running:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718948590687-a118cc80-b7a6-48fb-9eff-76e31db29af8.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948590687_a118cc80_b7a6_48fb_9eff_76e31db29af8.png)
 
 Solution: Uninstall the APP in the system, restart the board, and reinstall and run it.
 
