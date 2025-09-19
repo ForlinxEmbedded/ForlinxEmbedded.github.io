@@ -71,7 +71,7 @@ This manual is mainly applicable to the Android14.0 operating system on the Forl
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545093_9dfd51bc_1a99_41bc_99b3_053234377703.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545093_9dfd51bc_1a99_41bc_99b3_053234377703.png)
 
 <font style="color:#000000;">After the download is complete, double-click the startup file to start the installer.</font>
 
@@ -83,23 +83,23 @@ Go to the VMware website https://www.vmware.com/cn.html to download Workstation 
 
 <font style="color:#000000;">Check I accept the terms in the license agreement and click "Next".</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545596_4f2db847_98e0_4a93_8729_26810c065011.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545093_9dfd51bc_1a99_41bc_99b3_053234377703_1.png)
 
 <font style="color:#000000;">Modify the installation location to the partition of your computer where the software is installed, and click "Next".</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545912_32ece1c4_38bb_4496_a961_be28f2b192f4.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545912_32ece1c4_38bb_4496_a961_be28f2b192f4.png)
 
 <font style="color:#000000;">Uncheck and click on "Next".</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546191_989f0fb8_4b86_4527_ba8a_035475471f42.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546191_989f0fb8_4b86_4527_ba8a_035475471f42.png)
 
 <font style="color:#000000;">Check Add Shortcut and click "Next".</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546475_ae0e753a_3dfb_4551_8267_7e2f830ce5c1.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546475_ae0e753a_3dfb_4551_8267_7e2f830ce5c1.png)
 
-<font style="color:#000000;">Click "Installation"</font>
+<font style="color:#000000;">Click "Install".</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546646_6eabb168_6de5_4706_9f07_3eba1f84e441.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948546913_f2399faf_3dc1_4bcd_bc17_072f0e314be5.png)
 
 <font style="color:#000000;">Wait for the installation to complete.</font>
 
@@ -107,7 +107,7 @@ Go to the VMware website https://www.vmware.com/cn.html to download Workstation 
 
 <font style="color:#000000;">Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948547140_943cc6ed_c801_4dd3_9a0b_649bf99ce7cb.jpeg)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948547140_943cc6ed_c801_4dd3_9a0b_649bf99ce7cb.png)
 
 ## 2\. Loading the Existing Ubuntu Development Environment
 
@@ -327,7 +327,7 @@ After the extraction is complete, a file named “vmware-tools-distrib" will app
 
 Go back to the terminal and type cd vmware-tools-distrib to enter the directory.
 
-Enter: sudo ./vmware-install.pl followed by pressing Enter. Then, enter your password and the installation process will begin. When prompted, you can input "yes" and press Enter to proceed. For any other inquiries, simply press Enter to go with the default installation settings.
+Enter: sudo ./images/OK3588-C_Android_14_User_Compilation_Manual/vmware-install.pl followed by pressing Enter. Then, enter your password and the installation process will begin. When prompted, you can input "yes" and press Enter to proceed. For any other inquiries, simply press Enter to go with the default installation settings.
 
 ![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948565768_0d4f434b_99f4_4fa1_8626_6f88a32aa91a.png)
 
@@ -581,7 +581,7 @@ Enter the longan directory and execute the following command:
 ```plain
 forlinx@4d199700bc75:/$ cd /home/forlinx/work/OK3588-android14-source/
 forlinx@4d199700bc75:~/OK3588-android14-source/$ source build/envsetup.sh;lunch ok3588_c-userdebug
-forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -KAuop
+forlinx@4d199700bc75:~/OK3588-android14-source/$ ./images/OK3588-C_Android_14_User_Compilation_Manual/build.sh -KAuop
 ```
 
 Because the android system is too large, the compilation time is slightly longer. Please wait patiently for the compilation to be completed. The compiled image is located in the rockdev/Image-ok3588\_c/directory. The image file is a update. img
@@ -591,7 +591,7 @@ Because the android system is too large, the compilation time is slightly longer
 ```plain
 forlinx@4d199700bc75:/$ cd /home/forlinx/work/OK3588-android14-source/
 forlinx@4d199700bc75:~/OK3588-android14-source/$ source build/envsetup.sh;lunch ok3588_c-userdebug
-forlinx@4d199700bc75:~/OK3588-android14-source/$ ./build.sh -Ku
+forlinx@4d199700bc75:~/OK3588-android14-source/$ ./images/OK3588-C_Android_14_User_Compilation_Manual/build.sh -Ku
 ```
 
 The compiled boot. img is /out/target/product/ok3588\_c$.
