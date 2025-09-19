@@ -83,7 +83,7 @@ Go to the VMware website https://www.vmware.com/cn.html to download Workstation 
 
 <font style="color:#000000;">Check I accept the terms in the license agreement and click "Next".</font>
 
-![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545093_9dfd51bc_1a99_41bc_99b3_053234377703-1.png)
+![Image](./images/OK3588-C_Android_14_User_Compilation_Manual/1718948545093_9dfd51bc_1a99_41bc_99b3_053234377703_1.png)
 
 <font style="color:#000000;">Modify the installation location to the partition of your computer where the software is installed, and click "Next".</font>
 
