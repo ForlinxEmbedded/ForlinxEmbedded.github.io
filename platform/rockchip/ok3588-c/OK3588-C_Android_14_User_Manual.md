@@ -178,7 +178,7 @@ The following table is the eMMC memory partition information of Android operatin
 
 The debug serial port on the development board is a Type-C socket, allowing connecting the development board to a PC using a USB to Type-C cable to monitor the status of the development board.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940829853_11e7dc47_93fa_44b4_84f9_15099a646a85.jpeg)
+![Image](./1718940829853_11e7dc47_93fa_44b4_84f9_15099a646a85-1758250579851-2.png)
 
 ### **2.2 Debugging Serial Driver Installation**
 
@@ -630,8 +630,6 @@ Enable the WLAN hotspot and set the hot spot name and password:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940865552_3edf1119_4227_4773_b99d_f1b423821f31.png)
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940865744_55c09c8a_c8a8_43f2_8b56_5c7d833ed5b4.png)
-
 First set the hotspot name:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940865940_f3c112e2_fb81_4de8_8c7f_76816fcc9c45.png)
@@ -786,8 +784,6 @@ Click "Storage" to view the internal storage device and the inserted U disk devi
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940871279_a555155e_52a4_4185_8863_ebc78eb1dc95.png)
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940871476_2674f20f_093b_417e_bc51_6252843cbc27.png)
-
 Click "MASS U disk" to view the contents of the U disk for reading and writing:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940871673_d7d698ea_f8c2_42f7_8b23_ed63fab415d6.png)
@@ -912,8 +908,6 @@ Swipe the screen to the right to open the options for switching between photo an
 
 Tap on the settings button in the top right corner to adjust settings such as resolution and image quality.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940882838_fbcf12eb_6b6f_43ee_893c_03667a9b02ce.png)
-
 Click the video button to enter the video preview interface:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1721891447795_3b70ab31_8401_4a6c_8f12_aa6a6fc3468b.png)
@@ -1034,8 +1028,6 @@ The current release supports showing/hiding the navigation and status bars.
 
 Select Show Navigation Bar and Show Status Bar to control whether they are hidden.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1756801260226_a50747d0_9e9f_4773_aab7_038176e44bb2.png)
-
 Restart OK3588.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940892015_6867ac9f_a1d8_491d_8910_98572d2654a2.png)
@@ -1061,8 +1053,6 @@ OK3588 does not lock the screen by default. If you need to lock the screen, you 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1756801260353_a9446aaa_658f_4096_a471_ecf25114d0de.png)
 
 Select a screen lock method.
-
-![Image](./images/OK3588-C_Android_14_User_Manual/1756801260474_79b2ff1b_e29f_4752_bbe0_21c78df87bce.png)
 
 ### **3.29 NPU Test**
 
