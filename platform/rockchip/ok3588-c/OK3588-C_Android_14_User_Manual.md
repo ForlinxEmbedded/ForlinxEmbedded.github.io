@@ -1413,7 +1413,7 @@ Disable apache-tomcat.
 
 Connect network and power up OK3588 board, and the prompt dialog box will pop up to prompt system upgrading.
 
-![image](./images/OK3588-C_Android_14_User_Manual/152.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/152.png)
 
 Click "Yes", the upgrade 1.0.1.zip file will be downloaded via http protocol.
 
@@ -1445,11 +1445,11 @@ The source code of the app is located in vendor/forlinx/DisplayHwConfig.
 
 Click the “PRIMARY DISPLAY” button to specify the primary screen.
 
-![1](./images/OK3588-C_Android_14_User_Manual/1.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/1.png)
 
 Select the display you want to set as the primary screen from the menu and click “OK”.
 
-![2](./images/OK3588-C_Android_14_User_Manual/2.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/2.png)
 
 **Note: When setting the primary screen, make sure the selected display is bound to a VOP (Video Output Processor) and the relevant DTS (Device Tree Source) nodes are enabled. Otherwise, the Android system will indicate that the primary screen does not exist.**
 
@@ -1459,11 +1459,11 @@ The currently opened display device, excluding the primary screen, is the second
 
 Click the non - “PRIMARY DISPLAY” button to set the binding relationship between supported displays and VOP.
 
-![3](./images/OK3588-C_Android_14_User_Manual/3.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/3.png)
 
 Click the button to enter the VOP selection page, and click “OK” to save the changes.
 
-![4](./images/OK3588-C_Android_14_User_Manual/4.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/4.png)
 
 **Note: The red text below shows the rules for binding VOP. Also, ensure that the same VOP is not bound to multiple devices.** 
 
@@ -1471,11 +1471,11 @@ Click the button to enter the VOP selection page, and click “OK” to save the
 
 This function can dynamically bind the display and touch devices together to achieve the asynchronous touch function. 
 
-![5](./images/OK3588-C_Android_14_User_Manual/5.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/5.png)
 
 The display information will be presented according to the binding relationship between the display and VOP. The drop - down menu shows the information of the current touch (input) devices. Select one and click “Save” to establish the binding relationship.
 
-![6](./images/OK3588-C_Android_14_User_Manual/6.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/6.png)
 
 The displayed information will be presented according to the binding relationship between the display and VOP. The drop - down menu shows the information of the current touch (input) devices. Select one of them and click “Save” to establish the binding relationship.
 
@@ -1520,7 +1520,7 @@ Add the content to obtain input - phy and configure phys in the touch device dri
 
 For the main displays with different resolutions and sizes, the display effects are different even with the same DPI. Therefore, a function to customize the system DPI is provided.
 
-![7](./images/OK3588-C_Android_14_User_Manual/7.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/7.png)
 
 Enter the specified DPI value in the “Display DPI” input box, then click “Save”. The settings will take effect after restarting.
 
@@ -1528,7 +1528,7 @@ Enter the specified DPI value in the “Display DPI” input box, then click “
 
 By clicking the “Display on this screen” button, the app can be displayed on different displays.
 
-![8](./images/OK3588-C_Android_14_User_Manual/8.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/8.png)
 
 ## 7\. Root Permission Management
 
@@ -1542,7 +1542,7 @@ Root permission management can control the shell, ADB, and apps separately or un
 
 Select “Enable shell” to grant root permission to the shell.
 
-![9](./images/OK3588-C_Android_14_User_Manual/9.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/9.png)
 
 When the root permission of the shell is enabled, executing su in the serial terminal can successfully obtain root permission.
 
@@ -1557,7 +1557,7 @@ su: not allowed
 
 Select “Enable ADB” to grant root permission to ADB.
 
-![10](./images/OK3588-C_Android_14_User_Manual/10.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/10.png)
 
 When the root permission of ADB is enabled, executing adb root in the PC terminal can successfully obtain root permission.
 
@@ -1572,14 +1572,14 @@ adbd cannot run as root
 
 Select “Enable APP” to grant root permission to the app.
 
-![11](./images/OK3588-C_Android_14_User_Manual/11.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/11.png)
 
 When the root permission of the app is enabled, opening RootCheck will show that the app root permission is enabled.
 
-![12](./images/OK3588-C_Android_14_User_Manual/12.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/12.png)
 
 When the root permission of the app is disabled, opening RootCheck will show that the app root permission is disabled.
 
-![13](./images/OK3588-C_Android_14_User_Manual/13.png)
+![Image](./images/OK3588-C_Android_14_User_Manual/13.png)
 
 RootCheck is not pre - installed in the system and needs to be installed manually. The source code is in “Software materials\\2 - Images and source code\\2 - Test programs”.
