@@ -1428,14 +1428,14 @@ Rename either ok3588_c - ota - eng.root.zip or ok3588_c - target_files - eng.roo
 </div>
 <p>2. Network Upgrade Test</p>
 <p>Connect network and power up OK3588 board, and the prompt dialog box will pop up to prompt system upgrading.</p>
-<p><img alt="152" src="152.png" /></p>
+<p><img alt="Image" src="_images/1521.png" /></p>
 <p>Click “Yes”, the upgrade 1.0.1.zip file will be downloaded via http protocol.</p>
 <p><img alt="Image" src="_images/1718940989332_9bba55e7_29ef_495d_a30c_0954b33d3f70.png" /></p>
-<p><img alt="Image" src="1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1.png" /></p>
+<p><img alt="Image" src="1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1-1758268600056-7.png" /></p>
 <p>The system will restart automatically, and the serial port terminal will print as follows:</p>
 <p><img alt="Image" src="_images/1718940989800_a5e943d3_bfd7_486e_b27d_d35c0637c2251.png" /></p>
 <p>After this reboot, the android interface prompts that the upgrade is complete.</p>
-<p><img alt="Image" src="1718940988320_ee782346_fe3b_46ca_a2be_d170ee657211-1758265816197-3.png" /></p>
+<p><img alt="Image" src="_images/1718940988320_ee782346_fe3b_46ca_a2be_d170ee657211.png" /></p>
 <p>Click “Yes”.</p>
 <p><strong>Note: If prompted to upgrade again, click “No”, because OK3588 can get the remote 1.0.1.zip upgrade package through the network, so it will remind you whether you need to upgrade or not.</strong></p>
 </section>
@@ -1448,19 +1448,26 @@ Rename either ok3588_c - ota - eng.root.zip or ok3588_c - target_files - eng.roo
 <section id="primary-and-secondary-screens-settings">
 <h3><strong>6.1 Primary and Secondary Screens Settings</strong><a class="headerlink" href="#primary-and-secondary-screens-settings" title="Link to this heading"></a></h3>
 <p>Click the “PRIMARY DISPLAY” button to specify the primary screen.</p>
+<p><img alt="Image" src="_images/15.png" /></p>
 <p>Select the display you want to set as the primary screen from the menu and click “OK”.</p>
+<p><img alt="Image" src="_images/210.png" /></p>
 <p><strong>Note: When setting the primary screen, make sure the selected display is bound to a VOP (Video Output Processor) and the relevant DTS (Device Tree Source) nodes are enabled. Otherwise, the Android system will indicate that the primary screen does not exist.</strong></p>
 <p>The currently opened display device, excluding the primary screen, is the secondary screen. The configuration of secondary screens is adaptive and does not require manual settings.</p>
 </section>
 <section id="binding-between-display-and-vop-settings">
 <h3><strong>6.2 Binding between Display and VOP Settings</strong><a class="headerlink" href="#binding-between-display-and-vop-settings" title="Link to this heading"></a></h3>
 <p>Click the non - “PRIMARY DISPLAY” button to set the binding relationship between supported displays and VOP.</p>
+<p><img alt="Image" src="_images/310.png" /></p>
 <p>Click the button to enter the VOP selection page, and click “OK” to save the changes.</p>
+<p><img alt="Image" src="_images/410.png" /></p>
 <p><strong>Note: The red text below shows the rules for binding VOP. Also, ensure that the same VOP is not bound to multiple devices.</strong></p>
 </section>
 <section id="binding-between-display-and-touch-input-devices">
 <h3><strong>6.3 Binding between Display and Touch (Input) Devices</strong><a class="headerlink" href="#binding-between-display-and-touch-input-devices" title="Link to this heading"></a></h3>
-<p>This function can dynamically bind the display and touch devices together to achieve the asynchronous touch function. The display information will be presented according to the binding relationship between the display and VOP. The drop - down menu shows the information of the current touch (input) devices. Select one and click “Save” to establish the binding relationship.</p>
+<p>This function can dynamically bind the display and touch devices together to achieve the asynchronous touch function.</p>
+<p><img alt="Image" src="_images/510.png" /></p>
+<p>The display information will be presented according to the binding relationship between the display and VOP. The drop - down menu shows the information of the current touch (input) devices. Select one and click “Save” to establish the binding relationship.</p>
+<p><img alt="Image" src="_images/610.png" /></p>
 <p>The displayed information will be presented according to the binding relationship between the display and VOP. The drop - down menu shows the information of the current touch (input) devices. Select one of them and click “Save” to establish the binding relationship.</p>
 <p>The driver of the touch (input) device needs to support the phys parameter so that the app can obtain the information of the touch device.<br />
 In the driver, the content of the phys parameter of the struct input_dev structure needs to be added.<br />
@@ -1497,11 +1504,13 @@ You can refer to the following methods:</p>
 <section id="dpi-custom-settings">
 <h3>6.4 DPI Custom Settings<a class="headerlink" href="#dpi-custom-settings" title="Link to this heading"></a></h3>
 <p>For the main displays with different resolutions and sizes, the display effects are different even with the same DPI. Therefore, a function to customize the system DPI is provided.</p>
+<p><img alt="Image" src="_images/76.png" /></p>
 <p>Enter the specified DPI value in the “Display DPI” input box, then click “Save”. The settings will take effect after restarting.</p>
 </section>
 <section id="app-display-on-different-screens">
 <h3><strong>6.5 APP Display on Different Screens</strong><a class="headerlink" href="#app-display-on-different-screens" title="Link to this heading"></a></h3>
 <p>By clicking the “Display on this screen” button, the app can be displayed on different displays.</p>
+<p><img alt="Image" src="_images/83.png" /></p>
 </section>
 </section>
 <section id="root-permission-management">
@@ -1512,6 +1521,7 @@ You can refer to the following methods:</p>
 <section id="shell-permission-control">
 <h3><strong>7.1 Shell Permission Control</strong><a class="headerlink" href="#shell-permission-control" title="Link to this heading"></a></h3>
 <p>Select “Enable shell” to grant root permission to the shell.</p>
+<p><img alt="Image" src="_images/910.png" /></p>
 <p>When the root permission of the shell is enabled, executing su in the serial terminal can successfully obtain root permission.</p>
 <p>When the root permission of the shell is disabled, executing su in the serial terminal will have the following behavior:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>console:/<span class="w"> </span>$<span class="w"> </span>su
@@ -1522,6 +1532,7 @@ su:<span class="w"> </span>not<span class="w"> </span>allowed
 <section id="adb-permission-control">
 <h3><strong>7.2 ADB Permission Control</strong><a class="headerlink" href="#adb-permission-control" title="Link to this heading"></a></h3>
 <p>Select “Enable ADB” to grant root permission to ADB.</p>
+<p><img alt="Image" src="_images/1010.png" /></p>
 <p>When the root permission of ADB is enabled, executing adb root in the PC terminal can successfully obtain root permission.</p>
 <p>When the root permission of ADB is disabled, executing adb root in the PC terminal will have the following behavior:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\U</span>sers<span class="se">\f</span>orlinx&gt;adb<span class="w"> </span>root
@@ -1532,8 +1543,11 @@ adbd<span class="w"> </span>cannot<span class="w"> </span>run<span class="w"> </
 <section id="app-permission-control">
 <h3><strong>7.3 APP Permission Control</strong><a class="headerlink" href="#app-permission-control" title="Link to this heading"></a></h3>
 <p>Select “Enable APP” to grant root permission to the app.</p>
+<p><img alt="Image" src="_images/113.png" /></p>
 <p>When the root permission of the app is enabled, opening RootCheck will show that the app root permission is enabled.</p>
+<p><img alt="Image" src="_images/121.png" /></p>
 <p>When the root permission of the app is disabled, opening RootCheck will show that the app root permission is disabled.</p>
+<p><img alt="Image" src="_images/132.png" /></p>
 <p>RootCheck is not pre - installed in the system and needs to be installed manually. The source code is in “Software materials\2 - Images and source code\2 - Test programs”.</p>
 </section>
 </section>
