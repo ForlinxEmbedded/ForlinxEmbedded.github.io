@@ -178,7 +178,7 @@ The following table is the eMMC memory partition information of Android operatin
 
 The debug serial port on the development board is a Type-C socket, allowing connecting the development board to a PC using a USB to Type-C cable to monitor the status of the development board.
 
-![Image](./1718940829853_11e7dc47_93fa_44b4_84f9_15099a646a85.png)
+![Image](./1718940829853_11e7dc47_93fa_44b4_84f9_15099a646a85-1758266325264-2.png)
 
 ### **2.2 Debugging Serial Driver Installation**
 
