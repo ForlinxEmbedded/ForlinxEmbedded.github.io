@@ -935,8 +935,6 @@ Swipe the screen to the right to open the options for switching between photo an
 
 Tap on the settings button in the top right corner to adjust settings such as resolution and image quality.
 
-![Image](./images/OK3588-C_Android_12_User_Manual/1718940882838_fbcf12eb_6b6f_43ee_893c_03667a9b02ce.png)
-
 Click the video button to enter the video preview interface:
 
 ![Image](./images/OK3588-C_Android_12_User_Manual/1721891447795_3b70ab31_8401_4a6c_8f12_aa6a6fc3468b.png)
@@ -1542,4 +1540,4 @@ After this reboot, the android interface prompts that the upgrade is complete.
 
 Click “Yes”.
 
-Note: If prompted to upgrade again, click "No", because OK3588 can get the remote 1.0.1.zip upgrade package through the network, so it will remind you whether you need to upgrade or not.
+**Note: If prompted to upgrade again, click "No", because OK3588 can get the remote 1.0.1.zip upgrade package through the network, so it will remind you whether you need to upgrade or not.**

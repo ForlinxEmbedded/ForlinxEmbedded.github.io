@@ -178,7 +178,7 @@ The following table is the eMMC memory partition information of Android operatin
 
 The debug serial port on the development board is a Type-C socket, allowing connecting the development board to a PC using a USB to Type-C cable to monitor the status of the development board.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/18940829853_11e7dc47_93fa_44b4_84f9_15099a646a85_1758250579851_2.png)
+![Image](./1718940829853_11e7dc47_93fa_44b4_84f9_15099a646a85.png)
 
 ### **2.2 Debugging Serial Driver Installation**
 
@@ -1361,8 +1361,6 @@ After waiting for a while, the interface prompts whether to install the upgrade 
 
 Click "Installation”.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1.png)
-
 The debugging window prints the following information:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940988058_b6600e05_17e9_432f_a9da_6a20ad4dd171.png)
@@ -1379,7 +1377,7 @@ Click "Yes".
 
 Finally, you can verify that the android system has been modified.
 
-Note: The prompt for firmware upgrade operation after the system reboot is the correct prompt because the file /data/media/0/update.zip exists, so it will wait for a few minutes to pop up the prompt. The Firmware Prompt dialog will not pop up after deleting the/data/media/0/update.zip.
+**Note: The prompt for firmware upgrade operation after the system reboot is the correct prompt because the file /data/media/0/update.zip exists, so it will wait for a few minutes to pop up the prompt. The Firmware Prompt dialog will not pop up after deleting the/data/media/0/update.zip.**
 
 ### **5.3 OTA Network Upgrade**
 
@@ -1396,16 +1394,16 @@ The directories of the generated files are rockdev/Image-ok3588\_c/ and IMAGE/OK
 Among them, ok3588\_c-ota-eng.root.zip is the full upgrade package, and ok3588\_c-target\_files-eng.root.zip is the incremental upgrade package.   
 Rename either ok3588\_c - ota - eng.root.zip or ok3588\_c - target\_files - eng.root.zip to update.zip, and it can be used for a full OTA upgrade.
 
-Extract apache-tomcat-7.0.29.tar.gz to PC Ubuntu home directory, copy update.zip to /home/forlinx/apache-tomcat-7.0.29/webapps/OtaUpdater/WEB-INF/packages/ ok3588\_c/1.0.0/1.0.1.zip
+Extract apache-tomcat-7.0.29.tar.gz to PC Ubuntu home directory, copy update.zip to /home/forlinx/apache-tomcat-7.0.29/webapps/OtaUpdater/WEB-INF/packages/ ok3588\_c/1.0.0/1.0.1.zip.
 
-Enable apache-tomcat
+Enable apache-tomcat.
 
 ```bash
 cd /home/forlinx/apache-tomcat-7.0.29
 ./bin/startup.sh
 ```
 
-Disable apache-tomcat
+Disable apache-tomcat.
 
 ```bash
 ./bin/shutdown.sh
@@ -1415,13 +1413,13 @@ Disable apache-tomcat
 
 Connect network and power up OK3588 board, and the prompt dialog box will pop up to prompt system upgrading.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940988950_b3846c51_d570_4984_8566_1373ab3935d1.png)
+![152](./152.png)
 
 Click "Yes", the upgrade 1.0.1.zip file will be downloaded via http protocol.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940989332_9bba55e7_29ef_495d_a30c_0954b33d3f70.png)
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940989619_f0f6cf3d_d7e0_46c8_8041_dd916ab2ac8f.png)
+![Image](./1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1.png)
 
 The system will restart automatically, and the serial port terminal will print as follows:
 
@@ -1429,7 +1427,7 @@ The system will restart automatically, and the serial port terminal will print a
 
 After this reboot, the android interface prompts that the upgrade is complete.
 
-![Image](./images/OK3588-C_Android_14_User_Manual/1718940990071_4e00375e_f946_46e2_ae36_4891f4fdfe70.png)
+![Image](./1718940988320_ee782346_fe3b_46ca_a2be_d170ee657211-1758265816197-3.png)
 
 Click “Yes”.
 

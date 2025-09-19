@@ -572,7 +572,7 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 <li><p>Debugging serial cable</p></li>
 </ul>
 <p>The debug serial port on the development board is a Type-C socket, allowing connecting the development board to a PC using a USB to Type-C cable to monitor the status of the development board.</p>
-<p><img alt="Image" src="_images/18940829853_11e7dc47_93fa_44b4_84f9_15099a646a85_1758250579851_2.png" /></p>
+<p><img alt="Image" src="1718940829853_11e7dc47_93fa_44b4_84f9_15099a646a85.png" /></p>
 </section>
 <section id="debugging-serial-driver-installation">
 <h3><strong>2.2 Debugging Serial Driver Installation</strong><a class="headerlink" href="#debugging-serial-driver-installation" title="Link to this heading"></a></h3>
@@ -1397,7 +1397,6 @@ adb<span class="w"> </span>push<span class="w"> </span>updata.zip<span class="w"
 <p>After waiting for a while, the interface prompts whether to install the upgrade package window.</p>
 <p><img alt="Image" src="_images/1718940987481_f2223664_f0ed_475e_998d_f428c7e2b1db.png" /></p>
 <p>Click “Installation”.</p>
-<p><img alt="Image" src="_images/1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1.png" /></p>
 <p>The debugging window prints the following information:</p>
 <p><img alt="Image" src="_images/1718940988058_b6600e05_17e9_432f_a9da_6a20ad4dd1711.png" /></p>
 <p>After that, it will automatically restart and enter the Recovery system to automatically complete the OTA package upgrade. At this time, it cannot be powered off and wait for the upgrade.</p>
@@ -1406,7 +1405,7 @@ adb<span class="w"> </span>push<span class="w"> </span>updata.zip<span class="w"
 <p><img alt="Image" src="_images/1718940988320_ee782346_fe3b_46ca_a2be_d170ee657211.png" /></p>
 <p>Click “Yes”.</p>
 <p>Finally, you can verify that the android system has been modified.</p>
-<p>Note: The prompt for firmware upgrade operation after the system reboot is the correct prompt because the file /data/media/0/update.zip exists, so it will wait for a few minutes to pop up the prompt. The Firmware Prompt dialog will not pop up after deleting the/data/media/0/update.zip.</p>
+<p><strong>Note: The prompt for firmware upgrade operation after the system reboot is the correct prompt because the file /data/media/0/update.zip exists, so it will wait for a few minutes to pop up the prompt. The Firmware Prompt dialog will not pop up after deleting the/data/media/0/update.zip.</strong></p>
 </section>
 <section id="ota-network-upgrade">
 <h3><strong>5.3 OTA Network Upgrade</strong><a class="headerlink" href="#ota-network-upgrade" title="Link to this heading"></a></h3>
@@ -1417,26 +1416,26 @@ adb<span class="w"> </span>push<span class="w"> </span>updata.zip<span class="w"
 <p>The directories of the generated files are rockdev/Image-ok3588_c/ and IMAGE/OK3588_C_USERDEBUG_OK3588-C-ANDROID__xxxxxxxxxx/IMAGES/.</p>
 <p>Among them, ok3588_c-ota-eng.root.zip is the full upgrade package, and ok3588_c-target_files-eng.root.zip is the incremental upgrade package.<br />
 Rename either ok3588_c - ota - eng.root.zip or ok3588_c - target_files - eng.root.zip to update.zip, and it can be used for a full OTA upgrade.</p>
-<p>Extract apache-tomcat-7.0.29.tar.gz to PC Ubuntu home directory, copy update.zip to /home/forlinx/apache-tomcat-7.0.29/webapps/OtaUpdater/WEB-INF/packages/ ok3588_c/1.0.0/1.0.1.zip</p>
-<p>Enable apache-tomcat</p>
+<p>Extract apache-tomcat-7.0.29.tar.gz to PC Ubuntu home directory, copy update.zip to /home/forlinx/apache-tomcat-7.0.29/webapps/OtaUpdater/WEB-INF/packages/ ok3588_c/1.0.0/1.0.1.zip.</p>
+<p>Enable apache-tomcat.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/apache-tomcat-7.0.29
 ./bin/startup.sh
 </pre></div>
 </div>
-<p>Disable apache-tomcat</p>
+<p>Disable apache-tomcat.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./bin/shutdown.sh
 </pre></div>
 </div>
 <p>2. Network Upgrade Test</p>
 <p>Connect network and power up OK3588 board, and the prompt dialog box will pop up to prompt system upgrading.</p>
-<p><img alt="Image" src="images/OK3588-C_Android_14_User_Manual/1718940988950_b3846c51_d570_4984_8566_1373ab3935d1.png" /></p>
+<p><img alt="152" src="152.png" /></p>
 <p>Click “Yes”, the upgrade 1.0.1.zip file will be downloaded via http protocol.</p>
 <p><img alt="Image" src="_images/1718940989332_9bba55e7_29ef_495d_a30c_0954b33d3f70.png" /></p>
-<p><img alt="Image" src="_images/1718940989619_f0f6cf3d_d7e0_46c8_8041_dd916ab2ac8f.png" /></p>
+<p><img alt="Image" src="1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1.png" /></p>
 <p>The system will restart automatically, and the serial port terminal will print as follows:</p>
 <p><img alt="Image" src="_images/1718940989800_a5e943d3_bfd7_486e_b27d_d35c0637c2251.png" /></p>
 <p>After this reboot, the android interface prompts that the upgrade is complete.</p>
-<p><img alt="Image" src="images/OK3588-C_Android_14_User_Manual/1718940990071_4e00375e_f946_46e2_ae36_4891f4fdfe70.png" /></p>
+<p><img alt="Image" src="1718940988320_ee782346_fe3b_46ca_a2be_d170ee657211-1758265816197-3.png" /></p>
 <p>Click “Yes”.</p>
 <p><strong>Note: If prompted to upgrade again, click “No”, because OK3588 can get the remote 1.0.1.zip upgrade package through the network, so it will remind you whether you need to upgrade or not.</strong></p>
 </section>
