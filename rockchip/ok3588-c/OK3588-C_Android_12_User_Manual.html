@@ -1188,7 +1188,7 @@ S
 <section id="root-permission-test">
 <h3><strong>3.26 ROOT Permission Test</strong><a class="headerlink" href="#root-permission-test" title="Link to this heading"></a></h3>
 <p>Follow the previous sections to enter developer mode.</p>
-<p><img alt="Image" src="_images/113.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/113.png" /></p>
 <p>Click “Root Authorization” to restart the OK 3588 board.</p>
 <p>️<font style="color:#000000;">Path: OK3588-C（Android）User Profile\Android\Tool\RootChecker.apk</font></p>
 <p>Copy the RootChecker. Apk to any directory, open a window command window, and use ADB to install the RootChecker. Apk.</p>
@@ -1200,7 +1200,7 @@ S
 <h3><strong>3.27 Navigation Bar and Dropdown Bar Settings</strong><a class="headerlink" href="#navigation-bar-and-dropdown-bar-settings" title="Link to this heading"></a></h3>
 <p>The current version supports showing/hiding navigation bar and slide bar.</p>
 <p>Follow the previous sections to enter developer mode.</p>
-<p><img alt="Image" src="_images/113.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/113.png" /></p>
 <p>Select “Allow navigation bar to be hidden” and “Allow top slide bar to be hidden”.</p>
 <p>Restart OK3588.</p>
 <p><img alt="Image" src="_images/1718940892015_6867ac9f_a1d8_491d_8910_98572d2654a2.png" /></p>
@@ -1230,7 +1230,7 @@ S
 <h3><strong>3.30 Locking Screen Test</strong><a class="headerlink" href="#locking-screen-test" title="Link to this heading"></a></h3>
 <p><strong>Note</strong>: By default, Android will not lock the screen when it is started for the first time. If it is not modified, it will be opened in the lock screen state after restarting.</p>
 <p>OK3588 does not lock the screen by default. If you need to lock the screen, you can modify it through Settings-&gt; Security-&gt; Screen Lock, as follows:</p>
-<p><img alt="Image" src="_images/116.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/116.png" /></p>
 <p>Under Screen Lock, you can specify how to lock the screen.</p>
 </section>
 <section id="npu-test">
@@ -1373,9 +1373,9 @@ export LD_LIBRARY_PATH=./lib
 <p>️Path: OK3588-C（Android）User Profile\Android\Tool\DriverAssitant_v5.11.zip</p>
 <p>Extract the above path file to any directory and run it with administrator privileges</p>
 <p>Open DriverInstall.exe</p>
-<p><img alt="Image" src="_images/130.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/130.png" /></p>
 <p>Click “Driver Installation”</p>
-<p><img alt="Image" src="_images/131.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/131.png" /></p>
 </section>
 <section id="otg-flashing-test">
 <h4><strong>4.1.2 OTG Flashing Test</strong><a class="headerlink" href="#otg-flashing-test" title="Link to this heading"></a></h4>
@@ -1424,10 +1424,10 @@ export LD_LIBRARY_PATH=./lib
 <p>TF card production, flashing and testing</p>
 <p><strong>Note: The tested TF card capacity is up to 16G, using 32G and above TF card may fail to burn.</strong></p>
 <p>Copy SDDiskTool_v1.69.zip from the user profile tools directory to any directory on windows. Run SD_Firmware_Tool.exe with administrator privileges.</p>
-<p><img alt="Image" src="_images/147.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/147.png" /></p>
 <p>Select the disk device, check “Firmware Upgrade” and select update.img. Click Start Creating.</p>
-<p><img alt="Image" src="_images/148.png" /></p>
-<p><img alt="Image" src="_images/149.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/148.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/149.png" /></p>
 <p>Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:</p>
 <p>Please remove SD CARD!!!, wait for reboot.</p>
 <p>At this time, pull out the TF card, the system automatically restarts (please do not power down directly).</p>
@@ -1465,14 +1465,14 @@ adb push updata.zip /data/media/0/
 </pre></div>
 </div>
 <p>After waiting for a while, the interface prompts whether to install the upgrade package window.</p>
-<p><img alt="Image" src="_images/150.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/150.png" /></p>
 <p>Click “Installation”.</p>
 <p>The debugging window prints the following information:</p>
 <p><img alt="Image" src="_images/1718940988058_b6600e05_17e9_432f_a9da_6a20ad4dd171.png" /></p>
 <p>After that, it will automatically restart and enter the Recovery system to automatically complete the OTA package upgrade. At this time, it cannot be powered off and wait for the upgrade.</p>
 <p>When completed, it will automatically restart to the main Android interface.</p>
 <p>After the system restarts, a dialog box pops up on the interface to prompt congratulations on the success of the upgrade.</p>
-<p><img alt="Image" src="_images/151.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/151.png" /></p>
 <p>Click “Yes”.</p>
 <p>Finally, you can verify that the android system has been modified.</p>
 <p>Note: The prompt for firmware upgrade operation after the system reboot is the correct prompt because the file /data/media/0/update.zip exists, so it will wait for a few minutes to pop up the prompt. The Firmware Prompt dialog will not pop up after deleting the/data/media/0/update.zip.</p>
@@ -1495,10 +1495,10 @@ adb push updata.zip /data/media/0/
 </div>
 <p>2. Network Upgrade Test</p>
 <p>Connect network and power up OK3588 board, and the prompt dialog box will pop up to prompt system upgrading.</p>
-<p><img alt="Image" src="_images/152.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/152.png" /></p>
 <p>Click “Yes”, the upgrade 1.0.1.zip file will be downloaded via http protocol.</p>
-<p><img alt="Image" src="_images/153.png" /></p>
-<p><img alt="Image" src="_images/154.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/153.png" /></p>
+<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/154.png" /></p>
 <p>The system will restart automatically, and the serial port terminal will print as follows:</p>
 <p><img alt="Image" src="_images/1718940989800_a5e943d3_bfd7_486e_b27d_d35c0637c225.png" /></p>
 <p>After this reboot, the android interface prompts that the upgrade is complete.</p>
