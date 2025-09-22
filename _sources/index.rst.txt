@@ -1,16 +1,16 @@
 Welcome to Forlinx Embedded Documentation
 ==========================================
 
-**Forlinx Embedded** is a trusted embedded solution provider specializing in the design and production of high-performance **System on Modules (SoMs)**, **Single Board Computers** and **Embedded Computers**. Our SoMs are widely used in industrial automation, smart transportation, energy, medical, and edge AI applications.
+.. raw:: html
 
-This online documentation portal offers comprehensive technical resources to help developers quickly get started with our products.
+  <section class="banner">
+    <div class="banner-content-left">
+      <h1>High-Performance Embedded Solutions</h1>
+      <p>System on Modules, Single Board Computers & Embedded Computers for industrial automation, smart transportation, energy, medical, and edge AI applications.</p>
+      <a href="https://www.forlinx.net/product_index.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" class="btn-banner">View Products</a>
+    </div>
+  </section>
 
-
-**Documentation Highlights**
-
-- Covers BSP setup, peripheral drivers, and system configuration in detail
-- Includes practical examples and development tool walkthroughs
-- Maintained and updated regularly by Forlinx engineers
 
 ----
 
