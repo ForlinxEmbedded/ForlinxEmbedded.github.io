@@ -250,3 +250,95 @@ body {
     min-width: 120px;
   }
 }
+
+
+/* ================== banner 容器（基础） ================== */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 500px;  /* PC 高度 */
+  height: 50vh;       /* 移动端自适应 */
+  background: url('images/banner/banner-bg.png') center/cover no-repeat;
+  overflow: hidden;
+}
+
+/* 文字和按钮放在左侧 */
+.banner-content-left {
+  position: absolute;
+  top: 50%;
+  left: 60px; /* 距离左边 60px，可调整 */
+  transform: translateY(-50%);
+  max-width: 600px;
+  color: white;
+  text-align: left;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+/* 半透明遮罩，让文字更清晰 */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.1);
+  z-index: 1;
+}
+.banner-content-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  color: white !important;
+}
+.banner-content-left p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  color: #F3F4F6; /* p 为灰白色 */
+}
+
+
+
+.btn-banner {
+  background-color: #ff7f00 !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none !important;
+}
+.btn-banner:active,
+.btn-banner:focus {
+  color: white !important;
+  background-color: #ff7f00 !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+
+/* 响应式优化 */
+@media (max-width: 1200px) {
+  .banner-content-left h1 { font-size: 2.2rem; }
+  .banner-content-left p { font-size: 1rem; }
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh;          /* 移动端自适应高度 */
+    min-height: 300px;     /* 保证不太小 */
+    background-size: cover; /* 显示完整图片 */
+    background-position: 60% center;
+  }
+  .banner-content-left {
+    left: 10%;
+    max-width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner-content-left h1 { font-size: 1.8rem; }
+  .banner-content-left p { font-size: 0.9rem; }
+  .btn-banner { padding: 10px 20px; font-size: 0.9rem; }
+}
