@@ -196,11 +196,11 @@ FET-MX9352/ 9131-C SoM integrates the power supply, reset monitoring circuit, an
 
 ![Image](./images/OK9352-C_User_Hardware_Manual/1720506267390_55c6cd9f_42c8_4a1d_854d_affd9d1cadfa.png)
 
-Please refer to “Appendix VI.” for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, the user can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
+Please refer to “Appendix VI.” for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, you can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
 Please refer to section “3.5 OK- MX93xx/ 91xx Carrier Board Description” for the peripheral circuits.
 
-## 3\. OK-MX9352 \& 9131-C Embedded Platform Description
+## 3\. OK-MX9352 & 9131-C Embedded Platform Description
 
 ### 3.1 OK-MX9352/9131-C Development Board Interface Diagram
 
@@ -214,7 +214,7 @@ The connection method between carrier board and SoM is board to board. The carri
 
 **Back**
 
-### 3.2 OK-MX9352/ 9131-C Development Board Dimension Diagram
+### 3.2 OK-MX9352/9131-C Development Board Dimension Diagram
 
 OK-MX9352/ 9131-C SoM Dimension Diagram
 
