@@ -61,11 +61,7 @@ Commercial level　　　
 
 ![Image](./images/OK9352-C_User_Hardware_Manual/1720506153070_12aebba0_3836_4c0b_959d_3dd2804b7c95.png)
 
-**i.MX 91** **Processor Block Diagram**
 
-![](01_%20%20Freescale%20i.MX93%E3%80%8191%E7%AE%80%E4%BB%8B/Image_20250117151330.png)
-
-## 2\. FET-MX9352 \& 9131-C SoM Description
 
 ### 2.1  FET-MX9352/9131-C SoM
 
