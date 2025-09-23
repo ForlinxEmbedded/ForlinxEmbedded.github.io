@@ -20,6 +20,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK9352-C_User_Hardware_Manual
 SOFTWARE 
 ---------
 .. toctree::
