@@ -180,7 +180,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 
 ### 2.5 FET-MX9352/9131-C SoM Pins Definition
 
-#### 2.4.1 FET-MX9352/9131-C SoM Pins Schematic
+#### 2.5.1 FET-MX9352/9131-C SoM Pins Schematic
 
 ![Image](./images/OK9352-C_User_Hardware_Manual/1720506266725_218a8831_455d_4174_9653_217349cd4997.png)
 
@@ -188,7 +188,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 
 **Note: The 93 and 91 models share the same schematic package, but the 91 model does not have the MIPI DSI/MIPI CSI/LVDS functions.**
 
-#### 2.4.2 FET-MX9352/9131- C Pin Function Description
+#### 2.5.2 FET-MX9352/9131- C Pin Function Description
 
 When you have various functional expansion requirements, you can refer to the user document “Pin Multiplexing Table for FET - MX93xx - C and FET - MX91xx - C”. However, if you need more detailed information, it is recommended to consult relevant documents, chip data sheets, and reference manuals.
 
