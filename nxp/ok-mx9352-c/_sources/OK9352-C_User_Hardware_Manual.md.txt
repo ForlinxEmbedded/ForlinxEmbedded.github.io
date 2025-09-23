@@ -67,7 +67,7 @@ Commercial level　　　
 
 
 
-### 2.1  FET-MX9352/9131-C SoM
+## 2. FET-MX9352/9131-C SoM Description
 
 ![Image](./images/OK9352-C_User_Hardware_Manual/1720506265114_73958db5_2e30_44a7_ab99_914c59ca8565.png)
 
@@ -77,7 +77,7 @@ Front (CPU model shown is 9352; the 9131 model differs only in CPU, with identic
 
 Back (CPU model shown is 9352; the 9131 model differs only in CPU, with identical configurations for all other components).
 
-### 2.2 FET-MX9352/ 9131-C SoM Dimension Diagram
+### 2.1 FET-MX9352/ 9131-C SoM Dimension Diagram
 
 FET-MX9352/9131-C SoM Dimension Diagram
 
@@ -97,9 +97,9 @@ Connectors: Double-row 0.4mm pitch, 100pin board-to-board connectors. The model 
 
 The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 
-### 2.3 Performance Parameters
+### 2.2 Performance Parameters
 
-#### 2.3.1 System Main Frequency
+#### 2.2.1 System Main Frequency
 
 | **Name**| **Specification**| | | | **Description**
 |:----------:|:----------:|----------|----------|----------|:----------:
@@ -107,7 +107,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 | Main Frequency| —| —| 1.7| GHz| —
 | RTC clock| —| 32.768| —| KHz| —
 
-#### 2.3.2 Power Parameter
+#### 2.2.2 Power Parameter
 
 | **Parameter**| **Pin Number**| **Specification**| | | | **Description**
 |:----------:|:----------:|:----------:|----------|----------|----------|:----------:
@@ -116,7 +116,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 | No-load current| VSYS| —| 125| —| mA| 265mA maximum during start-up
 | High-load current| VSYS| 175| 180| 185| mA| CPU load 100%
 
-#### 2.3.3 Operating Environment
+#### 2.2.3 Operating Environment
 
 | **Parameter**| | **Specification**| | | | **Description**
 |:----------:|----------|:----------:|----------|----------|----------|:----------:
@@ -126,7 +126,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 | Humidity| Operating Environment| 10| —| 90| ％RH| No condensation
 | | Storage Environment| 5| —| 95| ％RH| 
 
-#### 2.3.4 SoM Interface Speed
+#### 2.2.4 SoM Interface Speed
 
 | **Parameter**| **Specification**| | | | **Description**
 |:----------:|:----------:|----------|----------|----------|:----------:
@@ -137,7 +137,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 | USB interface speed| —| —| 480| Mbps| —
 | CAN-FD Communication speed| —| —| 8| Mbps| —
 
-#### 2.3.5 SoM ESD  Features
+#### 2.2.5 SoM ESD  Features
 
 | **Parameter**| **Specification**| | | | **Description**
 |:----------:|:----------:|----------|----------|----------|:----------:
@@ -145,7 +145,7 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 | Human Body Model (HBM)| —| ±1000| —| V| —
 | Charged Device Model (CDM)| —| ±250| —| V| —
 
-### 2.4 SoM Interface Speed
+### 2.3 SoM Interface Speed
 
 |                 Function                  | Quantity | Parameter                                                    |
 | :---------------------------------------: | :------: | ------------------------------------------------------------ |
@@ -176,9 +176,9 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 
 **3\. "TBD" means the function is not yet developed.** 
 
-### 2.5 FET-MX9352/9131-C SoM Pins Definition
+### 2.4 FET-MX9352/9131-C SoM Pins Definition
 
-#### 2.5.1 FET-MX9352/9131-C SoM Pins Schematic
+#### 2.4.1 FET-MX9352/9131-C SoM Pins Schematic
 
 ![Image](./images/OK9352-C_User_Hardware_Manual/1720506266725_218a8831_455d_4174_9653_217349cd4997.png)
 
@@ -186,11 +186,11 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 
 **Note: The 93 and 91 models share the same schematic package, but the 91 model does not have the MIPI DSI/MIPI CSI/LVDS functions.**
 
-#### 2.5.2 FET-MX9352/9131- C Pin Function Description
+#### 2.4.2 FET-MX9352/9131- C Pin Function Description
 
 When you have various functional expansion requirements, you can refer to the user document “Pin Multiplexing Table for FET - MX93xx - C and FET - MX91xx - C”. However, if you need more detailed information, it is recommended to consult relevant documents, chip data sheets, and reference manuals.
 
-### 2.6 FET-MX9352/9131-C SoM Hardware Design Description
+### 2.5 FET-MX9352/9131-C SoM Hardware Design Description
 
 FET-MX9352/ 9131-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:
 
