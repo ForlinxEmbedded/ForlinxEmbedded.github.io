@@ -63,7 +63,7 @@ Commercial level　　　
 
 **i.MX 91** **Processor Block Diagram**
 
-![1](./images/OK9352-C_User_Hardware_Manual/1.png)
+![Image](./images/OK9352-C_User_Hardware_Manual/1.png)
 
 
 
