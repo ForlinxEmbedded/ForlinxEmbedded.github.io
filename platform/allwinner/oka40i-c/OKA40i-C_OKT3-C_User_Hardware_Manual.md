@@ -856,6 +856,7 @@ The CPU supports Single/dual link, up to 1920 \* 1080 @ 60fps. The board is led 
 **Note：**
 
 **1. Multiplexed with LCD;**
+
 **2. LVDS Differential Trace Requirements;**
 
 - **1080P: The length difference within the differential pair should be within 10 mil, and the length difference between differential pairs should be within 180 mils；**
@@ -1112,7 +1113,7 @@ The CPU supports RGMII and MII interfaces, and all are led out from the SoM. The
 
 **Note:** 
 
-**1\. The PHY chip reads the external level during power - on reset for relevant configurations, including the operating mode and PHY address. Therefore, the network part must refer to the development board design. The default PHY address is 00001. **
+**1\. The PHY chip reads the external level during power - on reset for relevant configurations, including the operating mode and PHY address. Therefore, the network part must refer to the development board design. The default PHY address is 00001.** 
 
 **2\. Ensure that the PHY chip has a complete ground during PCB design;**
 
@@ -1133,6 +1134,7 @@ The OKA40i - C/OKT3 - C board is equipped with a MINI PCIE interface with a latc
 **Note:** 
 
 **1. The development board uses a voltage - adjustable DC\_DC to power the 4G module to be compatible with various 4G modules. You can adjust R26 according to different 4G modules to obtain the optimal power supply voltage;**
+
 **2. The following list is for reference only:**
 
 | | **VCC\_3V67**| | | **R22（KΩ）**| **R26（KΩ）**
@@ -1241,6 +1243,7 @@ The specifications of the baseboard connector are as follows:
 **Note：**
 
 **1. Test conditions: The SoM configuration is 1G memory+8GB eMMC, and the screen and DVP camera are Forlinx optional products. SoM power supply is 5V and development board is 5V;**
+
 **2. Power consumption is for reference only.**
 
 ## 6\. Minimum System Schematic
