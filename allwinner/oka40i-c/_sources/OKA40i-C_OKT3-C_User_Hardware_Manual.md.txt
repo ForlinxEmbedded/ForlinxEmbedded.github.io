@@ -96,15 +96,15 @@ Target Applications:
 
 ![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595712668_94792151_4006_4438_b89e_4ad5d37b4dc0.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595712928_ef5d2bef_baae_46d9_85d5_2ec8c59a8ada.png)
 
-**Top **
+**Top** 
 
 ![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595713127_4673b1d4_edeb_49cf_bb98_81b18e034efe.png)
 
-**Perspective **
+**Perspective** 
 
 ![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1728464195859_46634829_4573_4c13_bf3b_8b5c50aad8cd.png)
 
-**Side **
+**Side** 
 
 Structure size: 45mm×68mm, dimensional tolerance ±0.15mm.
 
