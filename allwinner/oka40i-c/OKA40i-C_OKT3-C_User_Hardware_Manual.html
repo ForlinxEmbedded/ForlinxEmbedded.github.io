@@ -3603,12 +3603,12 @@ default</strong></p>
 <p>3. USB _ VBUS power supply: You can directly supply power to the SoM through the carrier board MICRO _ USB interface. The power supply voltage is 5V and the current is 500ma. Since the USB_VBUS pin of the PMIC has limited power - receiving capacity, it is not recommended to use it as the main power supply.</p>
 <p><img alt="Image" src="_images/1721370920943_027cd32b_a1cc_4219_a795_1c343ac7bf7b.png" /></p>
 <p><strong>Note：</strong></p>
-<p><strong>1. When designing the circuit independently, the OVP protection circuit can be removed if the power supply is stable;</strong>
-<strong>2. The power - supply sequence of the three power - supply schemes is as follows:</strong>
-<strong>3. When only a lithium - ion battery is connected without an external power input, the device is powered by the lithium - ion battery alone;</strong>
-<strong>4. When an external power source (USB_VBUS or ACIN) is connected, the external power source is used preferentially for power supply;</strong>
-<strong>5. When the battery is connected and the external power source is removed, the device immediately switches to the lithium - ion battery for power supply “seamlessly”;</strong>
-<strong>6. When both USB_VBUS and ACIN are connected, ACIN is used preferentially for power supply, and the lithium - ion battery is charged at the same time;</strong></p>
+<p><strong>1. When designing the circuit independently, the OVP protection circuit can be removed if the power supply is stable;</strong></p>
+<p><strong>2. The power - supply sequence of the three power - supply schemes is as follows:</strong></p>
+<p><strong>3. When only a lithium - ion battery is connected without an external power input, the device is powered by the lithium - ion battery alone;</strong></p>
+<p><strong>4. When an external power source (USB_VBUS or ACIN) is connected, the external power source is used preferentially for power supply;</strong></p>
+<p><strong>5. When the battery is connected and the external power source is removed, the device immediately switches to the lithium - ion battery for power supply “seamlessly”;</strong></p>
+<p><strong>6. When both USB_VBUS and ACIN are connected, ACIN is used preferentially for power supply, and the lithium - ion battery is charged at the same time;</strong></p>
 <p><strong>If the driving capacity of ACIN is insufficient at this time, the USB_VBUS path will be opened in due course to achieve simultaneous power supply from ACIN/USB_VBUS;</strong></p>
 <p><strong>If the driving capacity is still insufficient, the charging current will be reduced to 0 A, and then the battery will be used to supplement the power supply.</strong></p>
 <p><strong>7. It is recommended to use a 5V 3A adapter for DC5V power supply. The USB_VBUS power supply provides 5V with a current of 500mA, and the power supply voltage of VBAT ranges from 3.5V to 4.2V;</strong>
