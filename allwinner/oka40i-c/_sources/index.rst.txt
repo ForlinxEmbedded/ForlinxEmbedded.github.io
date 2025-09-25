@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OKA40i-C_OKT3-C_User_Hardware_Manual
+
    
    
 
