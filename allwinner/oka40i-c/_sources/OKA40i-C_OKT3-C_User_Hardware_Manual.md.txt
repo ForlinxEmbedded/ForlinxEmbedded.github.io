@@ -30,11 +30,9 @@ This software manual is applicable to the OKA40i-C platform Linux 5.10 operating
 
 ## Revision History
 
-| <font style="color:rgb(51, 51, 51);">Version</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(51, 51, 51);">Date</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(51, 51, 51);">Modification</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(51, 51, 51);">修改人</font><font style="color:rgb(38, 38, 38);">   </font> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <font style="color:rgb(51, 51, 51);">V1.0</font><font style="color:rgb(38, 38, 38);">   </font> | 11/06/2024                                                   | On-line initial version                                      | <font style="color:rgb(51, 51, 51);">xxx</font><font style="color:rgb(38, 38, 38);">   </font> |
-
-
+| Version | Date       | Modification            |
+| ------- | ---------- | ----------------------- |
+| V1.0    | 11/06/2024 | On-line initial version |
 
 ## 1\. A40iT3 Description
 
