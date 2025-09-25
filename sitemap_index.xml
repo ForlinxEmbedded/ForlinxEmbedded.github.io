@@ -30,4 +30,7 @@
   <sitemap>
     <loc>https://docs.forlinx.net/rockchip/ok3588-c/sitemap.xml</loc>
   </sitemap>
+  <sitemap>
+    <loc>https://docs.forlinx.net/rockchip/rk-development-manual/sitemap.xml</loc>
+  </sitemap>
 </sitemapindex>
