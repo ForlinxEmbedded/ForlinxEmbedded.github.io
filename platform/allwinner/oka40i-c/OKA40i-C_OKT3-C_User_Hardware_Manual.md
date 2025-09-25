@@ -711,6 +711,7 @@ The carrier board is compatible with three power supply modes:
 **Note：**
 
 **1. When designing the circuit independently, the OVP protection circuit can be removed if the power supply is stable;**
+
 **2. The power - supply sequence of the three power - supply schemes is as follows:**
 **3. When only a lithium - ion battery is connected without an external power input, the device is powered by the lithium - ion battery alone;**
 **4. When an external power source (USB\_VBUS or ACIN) is connected, the external power source is used preferentially for power supply;**
