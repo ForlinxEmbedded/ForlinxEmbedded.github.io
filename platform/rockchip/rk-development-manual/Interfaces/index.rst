@@ -8,6 +8,6 @@ Interface Category
    :maxdepth: 2
 
    Uboot/index
-   BSP(Kernel)/index
+   BSP/index
   
 
