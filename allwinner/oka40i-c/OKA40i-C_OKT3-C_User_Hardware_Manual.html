@@ -3670,7 +3670,7 @@ default</strong></p>
 <p>The debug UART is a standard 9-pin RS-232 interface using a DB9 male connector to connect to a PC. If the computer does not have an RS-232 serial port, you can use the USB to serial port module to export the serial port.</p>
 <p>UART0 is the debug serial port, which has 3 wires and a 3.3V level. It is converted to the RS - 232 level by MAX3232 (U17) and led out through the P20 DB9 socket.</p>
 <p><img alt="Image" src="_images/1721370971852_7e0da9bb_de26_460c_bbde_7a2b7b3f454f.png" /></p>
-<p><strong>Note: 1. For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board.</strong></p>
+<p><strong>Note: For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board.</strong></p>
 </section>
 <section id="jtag-interface">
 <h4>3.5.5 JTAG Interface<a class="headerlink" href="#jtag-interface" title="Link to this heading"></a></h4>
@@ -3831,7 +3831,7 @@ default</strong></p>
 <p>The development board supports SD card burning. When using an SD card for burning, after the burning is completed, you must remove the SD card and then restart the development board.</p>
 <p>It is recommended to add 10K pull - up resistors to SDC0_D0 - SDC0_D3 and SDC0_CMD during the design to increase the driving capability of the bus. The SDC0_CMD must have a pull - up resistor.</p>
 <p><img alt="Image" src="_images/1721371559555_ba53ecb1_5bd4_42f1_be87_0a0ffe947755.png" /></p>
-<p>**Note: **</p>
+<p><strong>Note:</strong></p>
 <p><strong>1. Place the series resistor of the CLK close to the main controller. The trace distance between the series resistor and the CLK of the main controller should be ≤ 300 mil;</strong></p>
 <p><strong>2. Place the ESD device close to the Device;</strong></p>
 <p><strong>3. Do not place through - hole components on the back of the card socket to prevent the pins of the through - hole components from interfering with the card insertion and removal;</strong></p>
