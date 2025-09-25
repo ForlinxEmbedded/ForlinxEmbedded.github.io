@@ -781,7 +781,7 @@ UART0 is the debug serial port, which has 3 wires and a 3.3V level. It is conver
 
 ![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370971852_7e0da9bb_de26_460c_bbde_7a2b7b3f454f.png)
 
-**Note: 1. For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board.**
+**Note: For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board.**
 
 #### 3.5.5 JTAG Interface
 
@@ -1022,7 +1022,7 @@ It is recommended to add 10K pull - up resistors to SDC0\_D0 - SDC0\_D3 and SDC0
 
 ![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371559555_ba53ecb1_5bd4_42f1_be87_0a0ffe947755.png)
 
-**Note: **
+**Note:** 
 
 **1. Place the series resistor of the CLK close to the main controller. The trace distance between the series resistor and the CLK of the main controller should be ≤ 300 mil;**
 
