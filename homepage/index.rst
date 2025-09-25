@@ -180,7 +180,25 @@ T527 Series
 
    </div>
  
+A40i Series
+-------------
 
+.. raw:: html
+
+   <div class="products-container">
+
+   <div class="product-card">
+     <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/allwinner/OKA40i-C.png" alt="oka40i-c" class="product-image" />
+     </a>
+     <h3 class="product-title">OKA40i-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/a40i-system-on-module-58.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+   </div>
 
 ----
 
