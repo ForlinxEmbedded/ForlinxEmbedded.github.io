@@ -64,11 +64,11 @@ Target Applications:
 
 **A40i Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595747805-d7ffd497-22dd-4a46-af8f-4dba0a7cad56.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595747805_d7ffd497_22dd_4a46_af8f_4dba0a7cad56.png)
 
 **T3 Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595748111-daeb5510-ee28-4937-9f4b-c0eb6271f6c1.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595748111_daeb5510_ee28_4937_9f4b_c0eb6271f6c1.png)
 
 ## 2\. FETA40i &T3-C SoM Description
 
@@ -76,35 +76,35 @@ Target Applications:
 
 **FETA40i** 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595709058-b64d6f45-b4df-41f5-8db5-e96897949c7d.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595709058_b64d6f45_b4df_41f5_8db5_e96897949c7d.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595710153-a489d6d3-e34e-42c0-9497-7dbc61e655bb.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595710153_a489d6d3_e34e_42c0_9497_7dbc61e655bb.png)
 
 **Back**
 
 **T3-C**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595711170-ec8a9d99-c770-43f4-842d-3510ffaa7fb0.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595711170_ec8a9d99_c770_43f4_842d_3510ffaa7fb0.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595712247-d186b806-99d1-4b89-ba3e-8b167c538d21.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595712247_d186b806_99d1_4b89_ba3e_8b167c538d21.png)
 
 **Back**
 
 ### 2.2 FETA40i/T3-C SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595712668-94792151-4006-4438-b89e-4ad5d37b4dc0.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595712928-ef5d2bef-baae-46d9-85d5-2ec8c59a8ada.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595712668_94792151_4006_4438_b89e_4ad5d37b4dc0.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595712928_ef5d2bef_baae_46d9_85d5_2ec8c59a8ada.png)
 
 **Top **
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595713127-4673b1d4-edeb-49cf-bb98-81b18e034efe.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595713127_4673b1d4_edeb_49cf_bb98_81b18e034efe.png)
 
 **Perspective **
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1728464195859-46634829-4573-4c13-bf3b-8b5c50aad8cd.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1728464195859_46634829_4573_4c13_bf3b_8b5c50aad8cd.png)
 
 **Side **
 
@@ -211,7 +211,7 @@ See the appendix for the connector dimension drawing.
 
 #### 2.5.1 FETA40i/T3-C SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370539812-30c914b4-5b2f-48c5-9b71-7b98f8d0a0cb.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370539812_30c914b4_5b2f_48c5_9b71_7b98f8d0a0cb.png)
 
 #### 2.5.2 FETA40i/T3-C SoM Pins Description
 
@@ -608,7 +608,7 @@ Table1 \*\* LEFT\_UP（P1） Connector Interface(Odd) Pin Definition
 
 The FETA40i-C/FETT3-C SoM supports three power supply modes: external power supply, USB and lithium battery. The SoM has integrated power path selection, lithium battery charging and discharging management, reset monitoring circuit and storage circuit into a compact module. The required external circuit is very simple, and a minimum system can be operated only by power supply, reset button and startup configuration, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370615433-178e1f2d-d857-4fc0-b11d-f76c6d82a00f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370615433_178e1f2d_d857_4fc0_b11d_f76c6d82a00f.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, the user can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -620,11 +620,11 @@ Please refer to section 3.5 in “Chapter 3. OKA40i/T3-C Carrier Board Descripti
 
 The connection between SoM and the carrier board is board-to-board, and OKA40i-C/OKT3-C share one carrier board, and the main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533232/1720595732997-569924cf-83c0-4687-b01d-b4986f3ddd6c.jpeg)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595732997_569924cf_83c0_4687_b01d_b4986f3ddd6c.jpeg)
 
 ### 3.2 OKA40i/ T3-C Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595733367-bf84f913-9faf-4b4e-aad0-bc0568579f91.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595733367_bf84f913_9faf_4b4e_aad0_bc0568579f91.png)
 
 PCB Size: 130mm × 190mm
 
@@ -700,15 +700,15 @@ The carrier board is compatible with three power supply modes:
 
 1\. DC5V power supply: 5V adapter is input through P23 or P22 terminal, and power is preferentially supplied to the SoM after passing through the resettable fuse, anti-reverse diode and overvoltage protection circuit; The VCC \_ 3V3 output by the PMIC of the SoM controls the power supply of the carrier board VCC5V and supplies the carrier board 3.3 V network with a maximum load current of 1A. This circuit is to ensure that the SoM is powered on first, and followed by the carrier board, so as to prevent the damage to the CPU caused by latch-up effects.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370709435-891d749d-e523-459e-8146-a5c92e29121f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370709435_891d749d_e523_459e_8146_a5c92e29121f.png)
 
 2\. Lithium - ion Battery Power Supply: Connect the positive terminal of the battery to Pin 1 of P21, the negative terminal of the battery to Pin 2, and the temperature - sensitive resistor of the battery to Pin 3. The lithium - ion battery directly supplies power to the SoM. The VCC\_3V3 output from the SoM’s PMIC supplies power to the 3.3V network on the carrier board. The power supply voltage of the lithium - ion battery ranges from 3.5V to 4.2V. If a larger current is required, it is recommended that directly boost the lithium - ion battery power supply network to 5V to power the peripherals on the carrier board. They can solder the MT3608 chip and its peripheral circuits on the carrier board and use VCC\_3V3 as the chip’s enable signal. The maximum output current is 1A. When using lithium battery power supply, you need to press the switch button for a long time to start the machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370902088-932a20c8-d379-467c-acb0-2f157d101e6e.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370902088_932a20c8_d379_467c_acb0_2f157d101e6e.png)
 
 3\. USB \_ VBUS power supply: You can directly supply power to the SoM through the carrier board MICRO \_ USB interface. The power supply voltage is 5V and the current is 500ma. Since the USB\_VBUS pin of the PMIC has limited power - receiving capacity, it is not recommended to use it as the main power supply.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370920943-027cd32b-a1cc-4219-a795-1c343ac7bf7b.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370920943_027cd32b_a1cc_4219_a795_1c343ac7bf7b.png)
 
 **Note：**
 
@@ -726,7 +726,7 @@ The carrier board is compatible with three power supply modes:
 **7. It is recommended to use a 5V 3A adapter for DC5V power supply. The USB\_VBUS power supply provides 5V with a current of 500mA, and the power supply voltage of VBAT ranges from 3.5V to 4.2V;**
 **8. In scenarios where the battery is not used for power supply, short - circuiting ACIN and PS can prevent the SoM from being locked due to voltage drops.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595734388-c1b6828f-ac82-4dc9-9182-8909fb5e9944.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595734388_c1b6828f_ac82_4dc9_9182_8909fb5e9944.png)
 
 #### 3.5.2 Switch Key \& Reset Key
 
@@ -746,7 +746,7 @@ Power - off Sources:
 3. High input voltage (higher than 7V), triggering over - voltage protection;
 4. Pressing K6 for more than the “OFFLEVEL” time (default is 6 seconds), and the system will automatically turn off all outputs except VCC\_RTC.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370938772-5a7400b9-f64d-44d4-899f-55bd9c652234.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370938772_5a7400b9_f64d_44d4_899f_55bd9c652234.png)
 
 K7 on the upper left of the carrier board is the power-off reset pin of the development board. When pressed, the whole development board is powered off and reset.
 
@@ -766,7 +766,7 @@ When using the SD card burning method, you need to switch S1 to OFF. After the b
 | eMMC| H| ON
 | SD| H| OFF
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595734695-20574c39-9dac-4793-85f6-6b5f67adbb13.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595734903-ffa2420f-b851-4545-bd70-f8f44015d7aa.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595734695_20574c39_9dac_4793_85f6_6b5f67adbb13.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595734903_ffa2420f_b851_4545_bd70_f8f44015d7aa.png)
 
 **Note: L indicates that the key is pressed, and H indicates that the key is released.**
 
@@ -776,7 +776,7 @@ The debug UART is a standard 9-pin RS-232 interface using a DB9 male connector t
 
 UART0 is the debug serial port, which has 3 wires and a 3.3V level. It is converted to the RS - 232 level by MAX3232 (U17) and led out through the P20 DB9 socket.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370971852-7e0da9bb-de26-460c-bbde-7a2b7b3f454f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370971852_7e0da9bb_de26_460c_bbde_7a2b7b3f454f.png)
 
 **Note: 1. For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board.**
 
@@ -784,13 +784,13 @@ UART0 is the debug serial port, which has 3 wires and a 3.3V level. It is conver
 
 The CPU JTAG interface is led out through P17, which is convenient for debugging.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370984887-7acac3f7-dc25-46d1-b41e-0a5ce7c02c74.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370984887_7acac3f7_dc25_46d1_b41e_0a5ce7c02c74.png)
 
 #### 3.5.6 SDIO Interface
 
 The SDIO interface on the carrier board is the SDC1 channel of the CPU, supporting SDIO 2.0. It is led out through P26 and can be connected to relevant modules with Forlinx SDIO interface for debugging.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721370993783-2ff52177-521b-4ed1-874d-b52dd2c1142f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721370993783_2ff52177_521b_4ed1_874d_b52dd2c1142f.png)
 
 **Note: Refer to the SD card section for PCB wiring details.**
 
@@ -798,13 +798,13 @@ The SDIO interface on the carrier board is the SDC1 channel of the CPU, supporti
 
 The development board provides 2 LED indicators, namely LED5 and LED6. Both lights are lit when the level is low and extinguished when the level is high.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371073353-63870ff5-9cee-46b0-b9e0-8046377a43c6.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371073353_63870ff5_9cee_46b0_b9e0_8046377a43c6.png)
 
 #### 3.5.8 RTC
 
 The development board supports CPU - built - in and external RTC chips. Due to high power consumption of the built - in one, the external chip is default. The factory - included RTC battery is CR2032, replaceable with the same model when depleted.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371081974-b897ec1f-34f2-452a-9b66-193fe43dfbbf.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371081974_b897ec1f_34f2_452a_9b66_193fe43dfbbf.png)
 
 #### 3.5.9 KEYADC
 
@@ -824,7 +824,7 @@ The voltage difference of KEYADC must be ≥0.15V when any two buttons are press
 
 The voltage range of the KEYADC network after a button is pressed is 0 - 1.35V.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371090247-ab327d91-6fcd-4af2-9368-3b81afa16201.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371090247_ab327d91_6fcd_4af2_9368_3b81afa16201.png)
 
 **Note: KEYADC needs to be connected to 100K pull-up processing when not in use.**
 
@@ -832,7 +832,7 @@ The voltage range of the KEYADC network after a button is pressed is 0 - 1.35V.
 
 The CPU supports parallel 24-bit LCD, maximum RGB 888 24-bit, and supports up to 1920 \* 1080 @ 60fps. The development board provides a universal LCD interface, which can be connected to resistive touch screens and capacitive touch screens of different specifications and sizes produced by Forlinx through a 0.5mm pitch 54P FPC socket (P15). The LCD interface is connected in RGB 888 24bit mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371107402-c96e4513-80eb-4cc5-8bac-03f8281fa6fd.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371107402_c96e4513_80eb_4cc5_8bac_03f8281fa6fd.png)
 
 **Note:**
 
@@ -848,7 +848,7 @@ The CPU supports parallel 24-bit LCD, maximum RGB 888 24-bit, and supports up to
 
 The CPU supports Single/dual link, up to 1920 \* 1080 @ 60fps. The board is led out by a single 38 Pin dual row pin.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371122465-3c0744f7-7e7c-4ce1-9455-21f693d40aae.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371122465_3c0744f7_7e7c_4ce1_9455_21f693d40aae.png)
 
 **Note：**
 
@@ -884,7 +884,7 @@ Supported audio formats
 
 - IEC-61937 compressed audio format
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1728523592959-f043c6a1-ca6b-4a5f-a5f2-54667f0d310f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1728523592959_f043c6a1_ca6b_4a5f_a5f2_54667f0d310f.png)
 
 **Note：**
 
@@ -914,7 +914,7 @@ The CPU supports 4 lanes MIPI DSI with a resolution up to 1080p@60fps.
 
 ·Supported pixel formats: RGB888, RGB666, RGB666 packed, RGB565.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371146201-376bf866-7a51-4689-b02a-5668f9ce97e8.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371146201_376bf866_7a51_4689_b02a_5668f9ce97e8.png)
 
 #### 3.5.14 TVIN Interface
 
@@ -934,7 +934,7 @@ The CPU integrates a TV Decoder (TVD) internally. The TVD converts CVBS to YUV d
 
 ·10 bit ADC.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371155341-e1ba1500-8e57-439c-b81a-60e672c2b68a.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371155341_e1ba1500_8e57_439c_b81a_60e672c2b68a.png)
 
 **Note：**
 
@@ -966,7 +966,7 @@ TV Encoder is integrated inside the CPU with the following features:
 
 All 4 x TVOUT are led out from the SoM, and 1 x CVBS is led out from the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371163194-3bad424b-3832-4dc2-a62a-e65628fa3dc4.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371163194_3bad424b_3832_4dc2_a62a_e65628fa3dc4.png)
 
 **Note：**
 
@@ -980,19 +980,19 @@ All 4 x TVOUT are led out from the SoM, and 1 x CVBS is led out from the carrier
 
 UART2 and UART3 are 5 - wire serial ports with a 3.3V level, led out through P6 and P8 respectively. UART4 and UART7 are 3 - wire serial ports with a 3.3V level, led out through P10. All of the above interfaces can be connected to Feiling’s serial port modules.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371170995-5f228aab-e40c-4723-a385-6fae9c58cad1.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371175093-7c676b20-210a-4bf0-8fef-7a7f73fb862e.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371179999-82b5618e-b130-43fe-9c01-7ea744cc483e.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371170995_5f228aab_e40c_4723_a385_6fae9c58cad1.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371175093_7c676b20_210a_4bf0_8fef_7a7f73fb862e.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371179999_82b5618e_b130_43fe_9c01_7ea744cc483e.png)
 
 #### 3.5.17 RS485
 
 There is 1 x RS485 on the carrier board. The UART5 of the SoM is isolated by the isolation chip ISO7221AD (U8), and VCC5V is isolated by the DC - DC - B0505S - 1WR3. The isolated signals are connected to the 485 transceiver control chip MAX13487EESA+ (U6), and the 485 differential signals are connected to P1. A jumper cap can be used to select whether to add a 120Ω termination resistor. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1728464722205-83eaf172-1c25-424a-babf-a4581d624863.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1728464722205_83eaf172_1c25_424a_babf_a4581d624863.png)
 
 #### 3.5.18 TWI Interface
 
 The CPU supports 4 x TWI, all of which are led out from the SoM. 2 x led out  through P30 for users. They can work in the standard mode (100kbit/s) or the fast mode (400kbit/s).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371535567-3067e493-88c4-4553-b6d1-3be0d34c0df3.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371535567_3067e493_88c4_4553_b6d1_3be0d34c0df3.png)
 
 **Note：When using these two TWI interfaces, please ensure that there is no address conflict with the TWI devices on the carrier board. The addresses of the TWI devices on the carrier board can be found in the carrier board schematic diagram.**
 
@@ -1000,13 +1000,13 @@ The CPU supports 4 x TWI, all of which are led out from the SoM. 2 x led out  th
 
 1 x SPI interface is led out via P29, which can be connected to Forlinx’s SPI module.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371543451-032a69e3-fad1-4384-9e8d-4026c42309bf.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371543451_032a69e3_fad1_4384_9e8d_4026c42309bf.png)
 
 #### 3.5.20 SPI Nor Flash
 
 The OKA40i - C/OKT3 - C development board is equipped with a SPI - interface Nor Flash on - board. The SPIO interface is multiplexed with the Nandflash pins of the SoM, so this interface can only be used with the SoM configured with eMMC. The eMMC on the SoM is compatible with 1.8V and 3.3V power supplies, so the SPI NorFlash on the carrier board also needs to be compatible with both voltages. When the eMMC operates at 3.3V, solder R86 on the carrier board and leave R96 unsoldered, and select a Flash chip with a 3.3V pin level. When the eMMC operates at 1.8V, solder R96 on the carrier board and leave R86 unsoldered, and select a Flash chip with a 1.8V pin level.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371551961-216b4de1-0876-4330-b9b3-b431b1116bb2.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371551961_216b4de1_0876_4330_b9b3_b431b1116bb2.png)
 
 #### 3.5.21 SD Card
 
@@ -1016,7 +1016,7 @@ The development board supports SD card burning. When using an SD card for burnin
 
 It is recommended to add 10K pull - up resistors to SDC0\_D0 - SDC0\_D3 and SDC0\_CMD during the design to increase the driving capability of the bus. The SDC0\_CMD must have a pull - up resistor.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371559555-ba53ecb1-5bd4-42f1-be87-0a0ffe947755.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371559555_ba53ecb1_5bd4_42f1_be87_0a0ffe947755.png)
 
 **Note: **
 
@@ -1044,7 +1044,7 @@ It is recommended to add 10K pull - up resistors to SDC0\_D0 - SDC0\_D3 and SDC0
 
 The TF card socket on the carrier board is connected to the SDC3 channel of the CPU and supports TF cards. TF card burning is not supported. Similarly, it is recommended to add 10K pull - up resistors to SDC3\_D0 - SDC3\_D3 and SDC3\_CMD to increase the driving capability of the bus. The SDC3\_CMD must have a pull - up resistor.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371568773-e2abebfb-5227-441a-a77d-87cc356358ee.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371568773_e2abebfb_5227_441a_a77d_87cc356358ee.png)
 
 **Note: For PCB design considerations, please refer to the SD card section.**
 
@@ -1052,15 +1052,15 @@ The TF card socket on the carrier board is connected to the SDC3 channel of the 
 
 The CPU supports one SMART card interface, which is led out through U3 of the development board. The interface form is a flip - type SIM card socket. Supports ISO/IEC 7816-3:1997(E) and EMV2000(4.0)Specifications protocol; D21\_SMC\_DET is the card detection pin, which is active low. The default interface package does not support this function, so the carrier board performs a pull - down operation; E18\_SMC\_EN is the SMART card power enable pin.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371596488-c6066952-91f3-4f30-a950-45cd5845e426.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371596488_c6066952_91f3_4f30_a950_45cd5845e426.png)
 
 #### 3.5.24 Camera Interface
 
 The CPU supports an 8 - bit parallel interface (DVP), with a maximum support of 5 - Megapixel and a maximum shooting resolution of 1080p@30fps. The development board supports the Forlinx OV5640\_DVP camera module by default. See the following figure for the specific pinout and power supply voltage.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371605734-32c41faf-244d-4fbd-b031-f811b0390f12.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371605734_32c41faf_244d_4fbd_b031_f811b0390f12.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371618703-f55e0ecc-4632-4050-a50a-6b8baf6fefbd.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371618703_f55e0ecc_4632_4050_a50a_6b8baf6fefbd.png)
 
 **Note: The filtering magnetic beads and filtering capacitors for VCC\_2V8 and VCC\_1V8 are very necessary. It is recommended to keep them, and the capacitors and magnetic beads should be placed as close to the module as possible.**
 
@@ -1089,9 +1089,9 @@ The A40i/T3 Internal Audio Codec is a high-quality stereo audio codec with headp
 
 All three audio input interfaces and two audio outputs are led out from the SoM. The P3 interface on the carrier board is for microphone input, the P2 interface is for headphone output, and the P4 is for speaker output. The differential PHONEOUT is amplified by the AW8735 chip and then output to P4. The AW8735 is a powerful audio amplifier that supports AB/D class output modes.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371635037-96134ef8-73c9-48fa-9259-026dacf88e50.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371639650-09f00e16-1d2d-4723-ac95-265b6507a7ce.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371635037_96134ef8_73c9_48fa_9259_026dacf88e50.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371639650_09f00e16_1d2d_4723_ac95_265b6507a7ce.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371645454-6853f6dd-364d-41b1-aeaa-34f3cefb06e8.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371645454_6853f6dd_364d_41b1_aeaa_34f3cefb06e8.png)
 
 **Note:**
 
@@ -1121,11 +1121,11 @@ The CPU supports RGMII and MII interfaces, and all are led out from the SoM. The
 
 The OKA40i - C/OKT3 - C board is equipped with a MINI PCIE interface with a latch and provides a SIM card socket. To meet the normal use of high - power modules, the carrier board uses an MP2161 DCDC voltage - stabilizing circuit, which can provide a maximum continuous output current of 2A.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371669280-afdb224b-8b42-44f2-bf5b-ed944e0b3178.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371669280_afdb224b_8b42_44f2_bf5b_ed944e0b3178.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371676116-d50e3914-0d47-4baa-8b60-d3ab59958af3.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371676116_d50e3914_0d47_4baa_8b60_d3ab59958af3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371681068-444bb9f7-6866-43c5-85ba-bc37554a4955.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371681068_444bb9f7_6866_43c5_85ba_bc37554a4955.png)
 
 **Note:** 
 
@@ -1142,7 +1142,7 @@ The OKA40i - C/OKT3 - C board is equipped with a MINI PCIE interface with a latc
 
 The model of the WiFi - Bluetooth combo module is BL - M8723DU1. It complies with the IEEE 802.11b/g/n standard and the Bluetooth standard BT V2.1/BT V4.2.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1728464875458-d3f9d487-6f78-416e-86ee-40a0e907142e.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1728464875458_d3f9d487_6f78_416e_86ee_40a0e907142e.png)
 
 In the schematic diagram, the J23\_WIFI\_EN pin is the power switch pin of the module, which is active low.
 
@@ -1154,7 +1154,7 @@ The antenna interfaces are located at the upper - right corner of the PCB front.
 
 The CPU supports 3 x USB 2.0, 1 x OTG and 2 x HOST. The OTG interface is led out as a standard OTG interface. See the OTG section for details. 1 x HOST is led out through a standard USB interface (P33) for expanding. The other is expanded into 4 x USB 2.0 HOST interfaces through the USB2514 chip. Two of them are led out through standard USB interfaces, namely P32 and P34; one is used to mount the on - board WiFi \& Bluetooth (see the WiFi \& Bluetooth section); the last one is used to mount the 4G module through a mini pcie socket (see the 4G section).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371702643-b0a2a35a-d4bb-4246-9056-3c14ba06a942.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371702643_b0a2a35a_d4bb_4246_9056_3c14ba06a942.png)
 
 **Note:** 
 
@@ -1184,7 +1184,7 @@ When a host device (such as a computer) is inserted into the Micro USB socket th
 
 When a slave device (such as a USB flash drive) is inserted into the Micro USB socket through a cable, the ID pin inside the Micro USB plug of the cable is short - circuited to ground. The CPU detects that the D19\_USB\_ID network is at a low level, and the A40i will automatically configure itself to the master mode and set V21\_USB0\_DRVVBUS to a high level. The two P - channel MOSFET are turned on, and the development board supplies power to the slave device through VCC5V.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371715719-34522000-e45c-41ae-83b0-fc66ef85eace.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371715719_34522000_e45c_41ae_83b0_fc66ef85eace.png)
 
 **Note:**
 
@@ -1206,23 +1206,23 @@ The OKA40i - C/OKT3 - C development board leads out a SATA interface, which supp
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721371741800-223bfc4b-ad5e-4ec1-854c-0bb3ce158fec.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721371741800_223bfc4b_ad5e_4ec1_854c_0bb3ce158fec.png)
 
 #### 3.5.32 EEPROM
 
 **The carrier board provides an EEPROM for you, which is left unsoldered by default, providing a storage device for you.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1728464941250-1306ef7d-cb07-49ef-82f0-ca3ab44c0a6f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1728464941250_1306ef7d_cb07_49ef_82f0_ca3ab44c0a6f.png)
 
 ## 4\. Connector Dimension Diagram
 
 The specifications of the SoM connector are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595768568-70a4e10f-cc85-47fe-bfdf-94be0d19527f.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595768568_70a4e10f_cc85_47fe_bfdf_94be0d19527f.png)
 
 The specifications of the baseboard connector are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720595768908-182345f9-f27c-4866-a48f-2fa60709c2b7.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595768908_182345f9_f27c_4866_a48f_2fa60709c2b7.png)
 
 ## 5\. OKA40iT3 - C Development Board Linux System Whole - Machine Power Consumption Table
 
@@ -1246,13 +1246,13 @@ The specifications of the baseboard connector are as follows:
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721372898104-d71bae27-f577-4d00-8591-f7bc5dcf34b2.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721372898104_d71bae27_f577_4d00_8591_f7bc5dcf34b2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721372907138-ff630491-8ee6-454a-9554-44c99f296fc9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721372920050-016ddee7-56c2-43a4-a37f-2b50fe81cd6b.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721372907138_ff630491_8ee6_454a_9554_44c99f296fc9.png)![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721372920050_016ddee7_56c2_43a4_a37f_2b50fe81cd6b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721372926845-5ee2b044-1615-43eb-9d52-b87799f22fce.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721372926845_5ee2b044_1615_43eb_9d52_b87799f22fce.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721372933709-e815a293-9730-4638-b0b7-c8e58b0b4af8.png)
+![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1721372933709_e815a293_9730_4638_b0b7_c8e58b0b4af8.png)
 
 ## 7\. Hardware Design Guide
 
