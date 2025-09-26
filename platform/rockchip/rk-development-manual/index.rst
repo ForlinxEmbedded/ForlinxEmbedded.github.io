@@ -6,21 +6,21 @@
 
    🔗 Official product overview:
    
-   `LS10XX Series System On Module <https://www.forlinx.net/product-list-170.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
+   `Rockchip Series System On Module <https://www.forlinx.net/product-index-92.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
 
 ======================
-LS Development Manual
+RK Development Manual
 ======================
 
-OK104XA Ubuntu18.04 
+Interfaces 
 ----------------------
 
 .. toctree::
-   :caption: OK104XA Ubuntu18.04
+   :caption: Interfaces
    :maxdepth: 3
 
-   OK104XA_Ubuntu18_04/index
+   Interfaces/index
 
 ===========
 Contact Us
