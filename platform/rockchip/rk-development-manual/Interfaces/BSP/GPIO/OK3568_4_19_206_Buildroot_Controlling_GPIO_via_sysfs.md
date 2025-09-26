@@ -33,7 +33,7 @@ dma            mem          regulator       tpmrm
 
 If this folder does not exist in the system, find >-Device Drivers>-GPIO Support in the kernel configuration and select to compile /sys/class/gpio/... (sysfs interface) into the kernel.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722069835979-31f07985-6067-4a7e-8f8a-43233fbb785d.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_21%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722069835979_31f07985_6067_4a7e_8f8a_43233fbb785d.png)
 
 #### 2.1.1 Instructions for Using /sys/class/gpio
 
@@ -56,15 +56,15 @@ The naming rule for GPIO is GPIOn\_xy, where x has four forms: A, B, C, and D. I
 
 The calculation formula is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722072304675-3e6d0e60-a0dd-4094-8e5c-c7f8928119c3.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_17%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722072304675_3e6d0e60_a0dd_4094_8e5c_c7f8928119c3.png)
 
 Take GPIO3\_B0 as an example to calculate its GPIO number.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722072476109-6f750090-5d97-4aa8-83ee-345b26b123cc.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_20%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722072476109_6f750090_5d97_4aa8_83ee_345b26b123cc.png)
 
-2）Hardware Principle![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722075277293-5f731339-dee2-448d-8e66-79749969ece2.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_27%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+2）Hardware Principle![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075277293_5f731339_dee2_448d_8e66_79749969ece2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722075291170-9a50c4d2-a112-4152-b2e0-733639024fd7.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_24%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075291170_9a50c4d2_a112_4152_b2e0_733639024fd7.png)
 
 You can see that GPIO3\_B0 can control the D9 diode. When GPIO3\_B0 is at a high level, D9 is cut off and does not emit light. When GPIO3\_B0 is at a low level, D9 is turned on and emits light.
 
@@ -85,7 +85,7 @@ gpio104  gpiochip0  gpiochip32   gpiochip64   unexport
 
 When GPIO3\_B0 outputs a high level, D9 does not light up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722074760568-4c304eb1-ee52-45a6-9517-70b983bca84e.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_22%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722074760568_4c304eb1_ee52_45a6_9517_70b983bca84e.png)
 
 ```plain
 [root@ok3568:/sys/devices/platform/fe760000.gpio/gpiochip3/gpio/gpio104]# echo 0 > value	    //Set IO to output low level
@@ -95,7 +95,7 @@ When GPIO3\_B0 outputs a high level, D9 does not light up.
 
 When GPIO3\_B0 outputs a low level, D9 lights up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722075173860-8f28969f-995d-4cf4-8d1c-a55675901354.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_22%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_sysfs/1722075173860_8f28969f_995d_4cf4_8d1c_a55675901354.png)
 
 ```plain
 
