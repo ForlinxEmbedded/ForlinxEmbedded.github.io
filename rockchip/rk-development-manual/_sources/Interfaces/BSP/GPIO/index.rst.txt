@@ -1,5 +1,5 @@
 
-BSP (Kernel)
+GPIO
 ======================
 
 
@@ -7,8 +7,7 @@ BSP (Kernel)
 .. toctree::
    :maxdepth: 2
 
-   SATA/index
-   GPIO/index
+
 
 
   
