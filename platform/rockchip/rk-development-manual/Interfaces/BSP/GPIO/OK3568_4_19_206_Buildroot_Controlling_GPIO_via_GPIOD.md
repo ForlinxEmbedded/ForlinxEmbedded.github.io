@@ -8,9 +8,9 @@ Libgpiod is a user-space API for the Linux kernel GPIO (General-Purpose Input/Ou
 
 Open the graphical configuration interface of buildroot and select the following options.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722301092309-7029d794-3257-411c-b64c-49b5893f2843.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_GPIOD/1722301092309_7029d794_3257_411c_b64c_49b5893f2843.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722301035162-9b486b13-de81-4505-bca3-0f6541559ff5.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Controlling_GPIO_via_GPIOD/1722301035162_9b486b13_de81_4505_bca3_0f6541559ff5.png)
 
 After regenerating and flashing the new file system, open the development board debugging tool.
 
