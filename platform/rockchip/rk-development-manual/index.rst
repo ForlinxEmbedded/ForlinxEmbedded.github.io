@@ -13,7 +13,8 @@
 RK Development Manual
 ======================
 
-
+RK Platform Developer Guide
+----------------------------
 
 .. toctree::
    :caption: RK Development Manual
