@@ -6,11 +6,11 @@
 
    🔗 Official product overview:
    
-   `FET-MX9352-C System On Module <https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
+   `FET62xx-C System On Module <https://www.forlinx.net/product/am625x-system-on-module-127.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
 
 ====================
-OK-MX9352-C Manual
+OK62xx-C Manual
 ====================
 
 HARDWARE
@@ -20,7 +20,9 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   OK9352-C_User_Hardware_Manual
+  
+
+
 SOFTWARE 
 ---------
 .. toctree::
