@@ -66,8 +66,19 @@ RK3506 Series
 
 RK3568 Series
 --------------
-- OK3568-C Manual
-  ⏳ Documentation coming soon.
+
+.. raw:: html
+
+   <div class="product-card">
+     <a href="rockchip/ok3568-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/rockchip/OK3568-C.png" alt="ok3568-c" class="product-image" />
+     </a>
+     <h3 class="product-title">OK3568-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/rk3568-som-125.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="rockchip/ok3568-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
 
 ----
 
@@ -151,8 +162,18 @@ Texas Instruments Series
 
 AM62x Series
 -------------
-- OK62xx-C Manual
-  ⏳ Documentation coming soon.
+.. raw:: html
+
+   <div class="product-card">
+     <a href="ti/ok62xx-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/ti/OK62xx-C.png" alt="OK62xx-C" class="product-image" />
+     </a>
+     <h3 class="product-title">OK62xx-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/am625x-system-on-module-127.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="ti/ok62xx-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
 
 
 ----

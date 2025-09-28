@@ -25,6 +25,9 @@
     <loc>https://docs.forlinx.net/rockchip/ok3506j-c/sitemap.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://docs.forlinx.net/rockchip/ok3568-c/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://docs.forlinx.net/rockchip/ok3576-c/sitemap.xml</loc>
   </sitemap>
   <sitemap>
@@ -32,5 +35,8 @@
   </sitemap>
   <sitemap>
     <loc>https://docs.forlinx.net/rockchip/rk-development-manual/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://docs.forlinx.net/ti/ok62xx-c/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>
