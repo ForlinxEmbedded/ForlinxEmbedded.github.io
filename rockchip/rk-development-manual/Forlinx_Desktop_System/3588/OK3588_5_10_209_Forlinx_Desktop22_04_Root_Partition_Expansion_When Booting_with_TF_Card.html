@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.10.209_Forlinx_Desktop22.04_Root Partition Expansion When Booting with TF Card (Modifying File System Partitions after System Boot) &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=562fc538" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Forlinx_Desktop_System/3588/OK3588_5_10_209_Forlinx_Desktop22_04_Root_Partition_Expansion_When%20Booting_with_TF_Card.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Android OS" href="../../Android_OS/index.html" />
+    <link rel="prev" title="3588" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Buildroot_System/index.html">Buildroot System</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Forlinx Desktop System</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3588</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5.10.209_Forlinx_Desktop22.04_Root Partition Expansion When Booting with TF Card (Modifying File System Partitions after System Boot)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modification-method">Modification Method</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Forlinx Desktop System</a></li>
+          <li class="breadcrumb-item"><a href="index.html">3588</a></li>
+      <li class="breadcrumb-item active">5.10.209_Forlinx_Desktop22.04_Root Partition Expansion When Booting with TF Card (Modifying File System Partitions after System Boot)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="forlinx-desktop22-04-root-partition-expansion-when-booting-with-tf-card-modifying-file-system-partitions-after-system-boot">
+<h1>5.10.209_Forlinx_Desktop22.04_Root Partition Expansion When Booting with TF Card (Modifying File System Partitions after System Boot)<a class="headerlink" href="#forlinx-desktop22-04-root-partition-expansion-when-booting-with-tf-card-modifying-file-system-partitions-after-system-boot" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright-notice">
+<h2>Copyright Notice<a class="headerlink" href="#copyright-notice" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Date</strong></p></th>
+<th class="head"><p><strong>Manual Version</strong></p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>4/17/2025</p></td>
+<td><p>V1.0</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>This document mainly introduces the method of directly deleting the oem and userdata partitions on the OK3588 development board and expanding them to the root partition. There is no need to modify the source code, re - compile and flash.</p>
+</section>
+<section id="modification-method">
+<h2>Modification Method<a class="headerlink" href="#modification-method" title="Link to this heading"></a></h2>
+<p>When using a 64G TF card for card boot, it is found that the actual root directory is only 15G, and the entire space of the TF card is not fully utilized. Data still needs to be stored in the userdata. Therefore, the following partition expansion methods are provided.</p>
+<p><strong>Note: Operations need to be performed on the debug serial port or on the development board as the root user.</strong></p>
+<p>Linux 5.10.66 has no parted command</p>
+<section id="view-partitions-in-parted">
+<h3>View partitions in parted:<a class="headerlink" href="#view-partitions-in-parted" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# parted /dev/mmcblk1
+GNU Parted 3.4
+Using /dev/mmcblk1
+Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+
+(parted) print		// View the partition                                                        
+Model: SD SD64G (sd/mmc)
+Disk /dev/mmcblk1: 63.9GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name      Flags
+ 1      8389kB  12.6MB  4194kB               uboot
+ 2      12.6MB  16.8MB  4194kB               misc
+ 3      16.8MB  83.9MB  67.1MB               boot
+ 4      83.9MB  218MB   134MB                recovery
+ 5      218MB   252MB   33.6MB               backup
+ 6      252MB   15.3GB  15.0GB  ext4         rootfs
+ 7      15.3GB  15.4GB  134MB   ext4         oem
+ 8      15.4GB  63.9GB  48.4GB  ext4         userdata
+</pre></div>
+</div>
+</section>
+<section id="delete-partitions-7-and-8">
+<h3>Delete partitions 7 and 8:<a class="headerlink" href="#delete-partitions-7-and-8" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(parted) rm 8                                                         
+Warning: Partition /dev/mmcblk1p8 is being used. Are you sure you want to continue?
+Yes/No? yes                                                           
+Error: Partition(s) 8 on /dev/mmcblk1 have been written, but we have been unable to inform the kernel of the change, probably because it/they
+are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
+Ignore/Cancel? ignore                                                 
+(parted) rm 7                                                         
+Warning: Partition /dev/mmcblk1p7 is being used. Are you sure you want to continue?
+Yes/No? yes                                                           
+Error: Partition(s) 7, 8 on /dev/mmcblk1 have been written, but we have been unable to inform the kernel of the change, probably because
+it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.                                                       
+Ignore/Cancel? ignore
+</pre></div>
+</div>
+</section>
+<section id="expand-partition-6">
+<h3>Expand partition 6:<a class="headerlink" href="#expand-partition-6" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(parted) resizepart 6
+Warning: Partition /dev/mmcblk1p6 is being used. Are you sure you want to continue?
+Yes/No? yes                                                           
+End?  [15.3GB]? 100%                                                  
+Error: Error informing the kernel about modifications to partition /dev/mmcblk1p6 -- Device or resource busy.  This means Linux won&#39;t know
+about any changes you made to /dev/mmcblk1p6 until you reboot -- so you shouldn&#39;t mount it or use it in any way before rebooting.
+Ignore/Cancel? ignore                                                 
+Error: Partition(s) 7, 8 on /dev/mmcblk1 have been written, but we have been unable to inform the kernel of the change, probably because
+it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
+Ignore/Cancel? ignore
+</pre></div>
+</div>
+</section>
+<section id="view-partitions-again">
+<h3><strong>View partitions again:</strong><a class="headerlink" href="#view-partitions-again" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(parted) print                                                        
+Model: SD SD64G (sd/mmc)
+Disk /dev/mmcblk1: 63.9GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name      Flags
+ 1      8389kB  12.6MB  4194kB               uboot
+ 2      12.6MB  16.8MB  4194kB               misc
+ 3      16.8MB  83.9MB  67.1MB               boot
+ 4      83.9MB  218MB   134MB                recovery
+ 5      218MB   252MB   33.6MB               backup
+ 6      252MB   63.9GB  63.6GB  ext4         rootfs
+</pre></div>
+</div>
+<p>It can be seen that partition 6 has been expanded. Press ctrl + d to exit parted.</p>
+</section>
+<section id="modify-etc-fstab">
+<h3>Modify /etc/fstab:<a class="headerlink" href="#modify-etc-fstab" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# vi /etc/fstab
+Block the following two commands:
+/dev/mmcblk0p7                  /oem                    ext4            defaults                0       0
+/dev/mmcblk0p8                  /userdata               ext4            defaults                0       0
+
+Linux block:
+PARTLABEL=oem   /oem    ext4    defaults        0 2
+PARTLABEL=userdata      /userdata       ext4    defaults        0 2
+</pre></div>
+</div>
+<p><strong>Note: If the above two lines are not commented out in Ubuntu before restarting, it will cause the system to fail to boot. At this time, you can use Linux to boot, then read the contents of the TF boot card, and thus operate the Ubuntu file system.</strong></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# cd /media/sdcard2/etc/			// or/mnt/sdcard/etc/
+root@ok3588:/media/sdcard2/etc# vi fstab
+Block：
+/dev/mmcblk0p7                  /oem                    ext4            defaults                0       0
+/dev/mmcblk0p8                  /userdata               ext4            defaults                0       0
+root@ok3588:/media/sdcard2/etc# sync
+</pre></div>
+</div>
+</section>
+<section id="save-and-restart">
+<h3>Save and restart:<a class="headerlink" href="#save-and-restart" title="Link to this heading"></a></h3>
+</section>
+<section id="id1">
+<h3>Expand partition 6:<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# resize2fs /dev/mmcblk1p6
+resize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/mmcblk1p6 is mounted on /run/media/mmcblk1p6; on-line resizing required
+old_desc_blocks = 2, new_desc_blocks = 8
+The filesystem on /dev/mmcblk1p6 is now 15530491 (4k) blocks long.
+</pre></div>
+</div>
+<p>View partitions:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        59G  5.8G   50G  11% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           768M  2.6M  766M   1% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           1.9G   12K  1.9G   1% /tmp
+tmpfs           384M   84K  384M   1% /run/user/1000
+tmpfs           384M   56K  384M   1% /run/user/0
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
