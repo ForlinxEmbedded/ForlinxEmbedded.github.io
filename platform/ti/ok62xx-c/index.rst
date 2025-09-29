@@ -6,38 +6,37 @@
 
    🔗 Official product overview:
    
-   `Rockchip Series System On Module <https://www.forlinx.net/product-index-92.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
+   `FET62xx-C System On Module <https://www.forlinx.net/product/am625x-system-on-module-127.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
 
-======================
-RK Development Manual
-======================
+====================
+OK62xx-C Manual
+====================
 
-RK Platform Developer Guide
-----------------------------
+HARDWARE
+---------
 
 .. toctree::
-   :caption: RK Development Manual
-   :maxdepth: 3
+   :caption: HARDWARE
+   :maxdepth: 2
 
-   Common_Commands/index
-   Interfaces/index
-   Buildroot_System/index
-   Forlinx_Desktop_System/index
-   Android_OS/index
-   Debian_OS/index
-   General_Platform_Skills_Knowledge/index
+  
 
 
-
+SOFTWARE 
+---------
+.. toctree::
+   :caption: SOFTWARE
+   :maxdepth: 2
 
 
 
+APPLICATION NOTE
+-----------------
 
-
-
-
-
+.. toctree::
+   :caption: APPLICATION NOTE
+   :maxdepth: 2
 
 
 
