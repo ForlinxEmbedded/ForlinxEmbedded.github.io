@@ -21,7 +21,6 @@ Rockchip Series
 .. raw:: html
 
   <div class="products-container">
-
    <div class="product-card">
      <a href="rockchip/ok3588-c/index.html" target="_blank" rel="noopener noreferrer">
        <img src="_static/images/rockchip/OK3588-C.png" alt="ok3588-c" class="product-image" />
@@ -195,9 +194,6 @@ T527 Series
        <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
-
-
-
 
    </div>
  
