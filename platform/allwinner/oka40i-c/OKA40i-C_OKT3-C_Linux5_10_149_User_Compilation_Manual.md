@@ -29,7 +29,7 @@ This software manual is applicable to the OKA40i platform Linux 5.10 operating s
 
 ## Revision History
 
-1. | Date| User Manual Version| Revision History|
+| Date| User Manual Version| Revision History|
    |----------|:----------:|----------|
    | 15/04/2025| V1.0| OKA40i\_Linux5.10.149+Qt5.15.8\_User’s Compilation Manual Initial Version|
    | 07/11/2023 | V1.1| 1\. Modifying the path of common source code files;<br/> 2. Adding a separate compilation method for the application;<br/> 3. Adding an adding method for the application. |
