@@ -85,7 +85,7 @@ Wait for the installation to complete.
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
-### 2\. Loading the Existing Ubuntu Development Environment
+## 2\. Loading the Existing Ubuntu Development Environment
 
 **Note:**
 
@@ -557,7 +557,7 @@ forlinx@ubuntu:~/work$ md5sum OKA40i-linux-sdk.tar.bz2		//Verify the source code
 forlinx@ubuntu:~/work$ tar xvf OKA40i-linux-sdk.tar.bz2
 ```
 
-### 4.1.3 Source Code Directory Structure
+#### 4.1.3 Source Code Directory Structure
 
 + Structure
 

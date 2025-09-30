@@ -74,9 +74,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#vmware-software-download-and-purchase">1.1 VMware Software Download and Purchase</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
@@ -93,9 +93,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#versions">4.1.1 Versions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#source-code-copy-and-release">4.1.2 Source Code Copy and Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#source-code-directory-structure">4.1.3 Source Code Directory Structure</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#source-code-directory-structure">4.1.3 Source Code Directory Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#source-code-compilation">4.2 Source Code Compilation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#configuration-compilation-options">4.2.1 Configuration Compilation Options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#full-compilation-test">4.2.2 Full Compilation Test</a></li>
@@ -241,8 +241,9 @@
 <p><img alt="Image" src="_images/1718955854740_73ae8b27_8cdc_48f4_82ff_aeb01a6be7a5.png" /></p>
 <p>Click “Finish” to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.</p>
 </section>
+</section>
 <section id="loading-the-existing-ubuntu-development-environment">
-<h3>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h3>
+<h2>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h2>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>It is recommended for beginners to directly use the pre-built virtual machine environment provided by Forlinx, which already includes installed cross-compiler and Qt environment. After understanding this chapter, you can directly jump to the compilation chapter for further study;</strong></p></li>
@@ -262,7 +263,6 @@
 <p><img alt="Image" src="_images/1718955861916_fc9726a4_44a0_4736_a4cf_75db7ee249fb.png" /></p>
 <p>The default login account for automatic login in the development environment is “forlinx”.</p>
 <p><img alt="Image" src="_images/1718955862254_6f0531dd_b252_431c_b950_2028de48b256.png" /></p>
-</section>
 </section>
 <section id="new-ubuntu-development-environment-setup">
 <h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
@@ -534,9 +534,8 @@ forlinx@ubuntu:~/work$ tar xvf OKA40i-linux-sdk.tar.bz2
 </pre></div>
 </div>
 </section>
-</section>
 <section id="source-code-directory-structure">
-<h3>4.1.3 Source Code Directory Structure<a class="headerlink" href="#source-code-directory-structure" title="Link to this heading"></a></h3>
+<h4>4.1.3 Source Code Directory Structure<a class="headerlink" href="#source-code-directory-structure" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Structure</p></li>
 </ul>
@@ -611,6 +610,7 @@ device/config/chips/a40i_h/configs/OKA40i-C/uboot // Storage path for uboot scre
 </pre></div>
 </div>
 <p>Other files are less likely to be modified and can be viewed by yourself.</p>
+</section>
 </section>
 <section id="source-code-compilation">
 <h3>4.2 Source Code Compilation<a class="headerlink" href="#source-code-compilation" title="Link to this heading"></a></h3>
