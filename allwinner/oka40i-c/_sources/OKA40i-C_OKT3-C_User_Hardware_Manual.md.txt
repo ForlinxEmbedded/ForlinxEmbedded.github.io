@@ -34,7 +34,7 @@ This software manual is applicable to the OKA40i-C platform Linux 5.10 operating
 | ------- | ---------- | ----------------------- |
 | V1.0    | 11/06/2024 | On-line initial version |
 
-## 1\. A40iT3 Description
+## 1\. A40i/T3 Description
 
 The Allwinner A40i is a high - performance and ultra - efficient processor in the field of intelligent industrial control. The A40i features an ARM Cortex - A7 core with an operating frequency of up to 1.2 GHz. It is equipped with a Mali400 MP2 graphics processor and various display interfaces, and also has a rich array of industry application interfaces. It is mainly used in various industrial control industries that require video output. The PMIC (Power Management Integrated Circuit) used in conjunction with the A40i supports three power supply methods: external power, USB, and lithium - ion batteries. It also integrates power path selection and lithium - ion battery charge - discharge management functions, which greatly simplifies the design of end - products. The T3 is a quad - core in - vehicle navigation processor from Allwinner. Its functions and pins are fully compatible with those of the A40i. The T3 is an automotive - grade chip, capable of adapting to harsher working environments. 
 
