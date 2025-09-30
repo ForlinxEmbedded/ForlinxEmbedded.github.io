@@ -45,7 +45,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Visit Vmware official website [https://www.vmware.com/cn.html](https://www.vmware.com/cn.html) for downloading Workstation Pro and obtaining the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955852144-1098ddb4-a89e-4250-a2f3-9f8996653ddd.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955852144_1098ddb4_a89e_4250_a2f3_9f8996653ddd.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -53,35 +53,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955852506-7a56d2f3-fce5-4c35-8ae4-de9d48859758.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955852506_7a56d2f3_fce5_4c35_8ae4_de9d48859758.png)
 
 Click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955852903-6616208d-8229-442f-9d66-f51c9b53183c.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955852903_6616208d_8229_442f_9d66_f51c9b53183c.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955853225-500c7e5b-da2f-4e84-a10e-898529816248.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955853225_500c7e5b_da2f_4e84_a10e_898529816248.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955853614-ac2af311-9771-4cca-a0f4-b2d72dadd502.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955853614_ac2af311_9771_4cca_a0f4_b2d72dadd502.png)
 
 Check and click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955853947-9ceb1cf6-66ad-42e8-99a2-902e70053444.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955853947_9ceb1cf6_66ad_42e8_99a2_902e70053444.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955854230-c72a072d-830c-4a30-8f47-0a132acd673f.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955854230_c72a072d_830c_4a30_8f47_0a132acd673f.png)
 
 Click "Installation".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955854544-10472fff-95b5-4870-b279-c0faa0993997.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955854544_10472fff_95b5_4870_b279_c0faa0993997.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955854740-73ae8b27-8cdc-48f4-82ff-aeb01a6be7a5.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955854740_73ae8b27_8cdc_48f4_82ff_aeb01a6be7a5.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -96,29 +96,29 @@ There are two ways to use a virtual machine environment in VMware: one is to dir
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955860898-5cd1fec1-9e01-4d8e-8899-e28205da078c.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955860898_5cd1fec1_9e01_4d8e_8899_e28205da078c.png)
 
 Select all compressed files, right-click and extract to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955861255-44ef4d46-c5a6-4825-abb1-2405e059e62b.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955861255_44ef4d46_c5a6_4825_abb1_2405e059e62b.png)
 
 Unzip it and get the development environment 18.04. Ubuntu 64-bit.vmx in the 18.04 folder is the file to open for the virtual machine.
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955861467-c0ae5534-31d1-4031-a118-b4d288854395.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955861467_c0ae5534_31d1_4031_a118_b4d288854395.png)
 
 Select the directory where the 18.04 virtual machine file just extracted is located, and double-click to open the startup file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955861677-43f42161-940a-4833-abf0-5358e0a7fa01.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955861677_43f42161_940a_4833_abf0_5358e0a7fa01.png)
 
 After loading, click to open the virtual machine to run and enter the system interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955861916-fc9726a4-44a0-4736-a4cf-75db7ee249fb.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955861916_fc9726a4_44a0_4736_a4cf_75db7ee249fb.png)
 
 The default login account for automatic login in the development environment is "forlinx".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955862254-6f0531dd-b252-431c-b950-2028de48b256.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955862254_6f0531dd_b252_431c_b950_2028de48b256.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -132,59 +132,59 @@ This chapter mainly explains the process of setting up the Ubuntu system and ins
 
 Step 1: Open the VMware software and click \[File]/ \[New Virtual Machine]. Enter the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955871290-0b8eedce-1c60-465f-8eeb-8f9b0a3a2ad9.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955871290_0b8eedce_1c60_465f_8eeb_8f9b0a3a2ad9.png)
 
 Step 2: Select Custom and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955871629-700231bc-97ae-4772-bd6a-13cdb71361bf.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955871629_700231bc_97ae_4772_bd6a_13cdb71361bf.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955871999-e7c4c335-bb06-42fd-9f35-6dace9c09788.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955871999_e7c4c335_bb06_42fd_9f35_6dace9c09788.png)
 
 Select Install the operating system later and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955872325-d619ecd8-a96b-4e86-85ff-dd3acd4c5659.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955872325_d619ecd8_a96b_4e86_85ff_dd3acd4c5659.png)
 
 Keep the default settings and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955872708-4349d847-8151-4ed7-813b-28d66978c5ea.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955872708_4349d847_8151_4ed7_813b_28d66978c5ea.png)
 
 Modify the name and installation location of your virtual machine, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955872990-37aebe96-45df-4448-92f2-ee5c1c677cf8.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955872990_37aebe96_45df_4448_92f2_ee5c1c677cf8.png)
 
 Configure the number of CPU based on your computer's actual specifications.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955873226-677c6787-a757-4ee7-930a-56b53953fb75.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955873226_677c6787_a757_4ee7_930a_56b53953fb75.png)
 
 Set the memory size according to your actual specifications (For Linux kernel compilation, a memory size of 4GB is sufficient, while Android source code compilation requires higher memory requirements).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955873511-cf2584b7-9280-4f88-8aae-6eee26c16c53.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955873511_cf2584b7_9280_4f88_8aae_6eee26c16c53.png)
 
 Set the network type, default to NAT mode then click “Next”. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955873833-2eff1b93-d71e-49db-9762-39d1d4eb73a6.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955873833_2eff1b93_d71e_49db_9762_39d1d4eb73a6.png)
 
 The default selection for the IO controller type here is LSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955874165-ca8894d9-facd-47cc-92c7-bf05303967c9.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955874165_ca8894d9_facd_47cc_92c7_bf05303967c9.png)
 
 The default selection here is also SCSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955874400-736be129-b033-440b-9102-017bbcb1d58f.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955874400_736be129_b033_440b_9102_017bbcb1d58f.png)
 
 Choose to create a new virtual disk here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955874758-c542d266-3ddf-4336-b164-292da62e9d80.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955874758_c542d266_3ddf_4336_b164_292da62e9d80.png)
 
 Set the disk size to 200GB, select the disk provisioning format, and then click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955875118-075776d4-b623-4538-a057-3c61c9c708ef.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955875118_075776d4_b623_4538_a057_3c61c9c708ef.png)
 
 Specify the disk file, the default one here is fine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955875413-ffbf7a80-26b6-40dc-ad99-5088375bfae6.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955875413_ffbf7a80_26b6_40dc_ad99_5088375bfae6.png)
 
 By default, you can click “Finish” and wait for the installation to complete, so that the virtual machine creation is complete.
 
@@ -200,61 +200,61 @@ The installed Ubuntu version is 18.04. One of the reasons for choosing 18.04 is 
 
 Download address: [http://releases.ubuntu.com/18.04/](http://releases.ubuntu.com/18.04/)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955875705-d8ebaa7a-084c-462c-8483-c4effedaa633.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955875705_d8ebaa7a_084c_462c_8483_c4effedaa633.png)
 
 Download “ubuntu-18.04.5-desktop-amd64.iso”. After downloading the mirror image, you can proceed with the system installation operation.
 
 Right-click on the created virtual machine name and select “Settings” from the pop-up menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955875924-d83985d4-ac8a-4e0e-93ad-c522ed9d4662.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955875924_d83985d4_ac8a_4e0e_93ad_c522ed9d4662.png)
 
 The “Virtual Machine Settings” menu will pop up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955876231-3922f5d7-a3f8-400e-b8b5-d90f9fbe8d19.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955876231_3922f5d7_a3f8_400e_b8b5_d90f9fbe8d19.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955876544-029037c6-634e-4d6d-890d-e648e0a314ab.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955876544_029037c6_634e_4d6d_890d_e648e0a314ab.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955876797-961567cd-d17a-443b-ae5d-3a8db54cb3ca.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955876797_961567cd_d17a_443b_ae5d_3a8db54cb3ca.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955877076-ceab67b8-9c4d-41ab-84d7-f8a5dbe5a494.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955877076_ceab67b8_9c4d_41ab_84d7_f8a5dbe5a494.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. The default language of Ubuntu is English, but of course, you can also choose Others.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955877293-263a494f-fb32-4c47-a26b-22db62bbab69.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955877293_263a494f_fb32_4c47_a26b_22db62bbab69.png)
 
 The default selected language can also be reset at a later stage, after the selection is complete continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955877500-2630c936-7a0a-49c2-a2eb-280c7f75514b.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955877500_2630c936_7a0a_49c2_a2eb_280c7f75514b.png)
 
 Next, select "Continue" as the default option to proceed with the installation. The installation process might be slow. Then, click "Continue" again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955877731-0bdf0dee-4f58-4456-add4-6c12b1226c25.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955877731_0bdf0dee_4f58_4456_add4_6c12b1226c25.png)
 
 By default, when you click on "Install Now", a dialog box will appear as shown in the image. Simply click "Continue" to proceed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955877936-25d0090d-96c6-4154-b083-79b87f5601bb.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955877936_25d0090d_96c6_4154_b083_79b87f5601bb.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password. You can choose either automatic login or login with a username and password. Click "Continue" to start the automatic installation.
 
 If the internet connection is poor, you can Skip without affecting the installation process.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955878429-920ac9a2-2102-444a-bd9d-0177f0de88c5.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955878429_920ac9a2_2102_444a_bd9d_0177f0de88c5.png)
 
 Click “Restart” Now to reboot.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955878736-e7577fdd-ebe2-48ff-a684-4f13a3ca4a4f.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955878736_e7577fdd_ebe2_48ff_a684_4f13a3ca4a4f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955879017-bec36ffe-6cf4-404f-a9d0-744428b97d17.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955879017_bec36ffe_6cf4_404f_a9d0_744428b97d17.png)
 
 The system interface after the reboot is complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955879308-6909ab33-9f2a-46d0-abea-2804109901af.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955879308_6909ab33_9f2a_46d0_abea_2804109901af.png)
 
 The ubuntu system installation is complete.
 
@@ -266,15 +266,15 @@ VMware Tools Installation:
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machine" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955879647-84ac6b41-7c96-47a3-8497-53e7e4d7c5ef.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955879647_84ac6b41_7c96_47a3_8497_53e7e4d7c5ef.png)
 
 Once done, enter Ubuntu and the VMware Tools CD will appear on your desktop and click into it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955879949-d23f7ed0-497f-4fde-8900-5b321d9de0e1.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955879949_d23f7ed0_497f_4fde_8900_5b321d9de0e1.png)
 
 Enter and see a compressed file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions); copy the file under the home directory (i.e. the directory with the home personal username)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955880149-3dfaa63c-9a38-451a-b6a6-de5ac513aadf.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955880149_3dfaa63c_9a38_451a_b6a6_de5ac513aadf.png)
 
 Press \[Ctrl+Alt+T] to bring up the Terminal Command Interface and enter the command:
 
@@ -282,17 +282,17 @@ Press \[Ctrl+Alt+T] to bring up the Terminal Command Interface and enter the com
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.10-12406962.tar.gz
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955880355-500bafa7-4ad6-4884-8b35-45077444380a.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955880355_500bafa7_4ad6_4884_8b35_45077444380a.png)
 
 After the extraction is complete, a file named “vmware-tools-distrib" will appear
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955880598-fca0e081-a6e0-417d-b92c-a40acaa4b80a.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955880598_fca0e081_a6e0_417d_b92c_a40acaa4b80a.png)
 
 Go back to the terminal and type cd vmware-tools-distrib to enter the directory.
 
 Enter: sudo ./vmware-install.pl followed by pressing Enter. Then, enter your password and the installation process will begin. When prompted, you can input "yes" and press Enter to proceed. For any other inquiries, simply press Enter to go with the default installation settings.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955880797-f7161cfa-530b-4087-a3dc-e9845ad0b587.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955880797_f7161cfa_530b_4087_a3dc_e9845ad0b587.png)
 
 Once the VMware tools is complete, we can implement file copy and paste between Windows and Ubuntu.
 
@@ -300,17 +300,17 @@ The virtual machine is displayed full screen:
 
 If the virtual machine is not able to be displayed in full screen, you can resolve this issue by clicking on "View" and selecting "Autofit Guest." This will adjust the display to fit the screen automatically, enabling you to have a full-screen experience in the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955880980-2f8e90cc-ff16-4578-9f0e-f7e5cbd66419.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955880980_2f8e90cc_ff16_4578_9f0e_f7e5cbd66419.png)
 
 Make most of the system settings in the location shown. A lot of the setup requirements on Ubuntu can be done here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955881181-f7e58fb6-af55-4d49-bc19-8746442012f4.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955881181_f7e58fb6_af55_4d49_bc19_8746442012f4.png)
 
 Virtual machine hibernation settings:
 
 Also, the default hibernation is 5min, if you don't want to set hibernation, just set it to Never by setting Power->Blank screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955881370-8afb5807-cb30-4d34-9aaf-dc0642e3d194.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955881370_8afb5807_cb30_4d34_9aaf_dc0642e3d194.png)
 
 #### 3.1.4 Network Settings for Virtual Machine
 
@@ -320,13 +320,13 @@ By default, after the virtual machine is installed, the network connection metho
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. In this mode the virtual NAT device and the host NIC are connected to communicate for Internet access. This is the most common way for our VM to access the external network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955881655-be494039-559d-4b12-a2a8-282cd8a76fe7.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955881655_be494039_559d_4b12_a2a8_282cd8a76fe7.png)
 
 ##### 3.1.4.2 Connections for Bridges
 
 When the VMware virtual NIC device is in bridge mode, the host NIC and the virtual machine NIC communicate through the virtual bridge, and the network IP and the host need to be set in the same network segment in the Ubuntu environment. If accessing an external network, you need to set the DNS to be consistent with the host NIC. If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955881979-f0278279-78c8-453a-9613-2bd97457826d.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955881979_f0278279_78c8_453a_9613_2bd97457826d.png)
 
 ### 3.2 Toolkit Installation
 
@@ -347,11 +347,11 @@ forlinx@ubuntu:~$ ./setup_env.sh
 
 The following prompts appear during the installation process, and you need to take corresponding actions:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/22851183/1718955882238-3e5c19ac-b84a-4164-8825-e40f03df41c8.jpeg)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955882238_3e5c19ac_b84a_4164_8825_e40f03df41c8.jpeg)
 
 Press Enter at this prompt.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/22851183/1718955882435-e0118ed6-6dea-4e78-9f28-5e2196496490.jpeg)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955882435_e0118ed6_6dea_4e78_9f28_5e2196496490.jpeg)
 
 Enter "Y" at this prompt and press Enter.
 
@@ -368,35 +368,35 @@ forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.5.2.run
 
 The following screen will pop up, click "Next" to proceed to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955882676-a50cd8ff-23f3-4dbb-bae3-f588f2a8b996.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955882676_a50cd8ff_23f3_4dbb_bae3_f588f2a8b996.png)
 
 In the following screen, register or log in to your account and click "Next" to proceed to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955882866-299de589-cc08-484b-b06e-57bd7c2e4065.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955882866_299de589_cc08_484b_b06e_57bd7c2e4065.png)
 
 In the following screen, click "Next" to proceed to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955883068-348cfafd-4888-41c4-ad3d-33b77452369a.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955883068_348cfafd_4888_41c4_ad3d_33b77452369a.png)
 
 In the following interface, click "Browse..." to select the installation path of Qtcreator, after the selection is complete, click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955883293-3263d020-b0b1-4ed8-8fb4-5c8fcf781896.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955883293_3263d020_b0b1_4ed8_8fb4_5c8fcf781896.png)
 
 In the following screen, check the first item and click "Next" to proceed to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955883503-111e0899-17d5-4b72-b270-3798b1112291.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955883503_111e0899_17d5_4b72_b270_3798b1112291.png)
 
 Select the radio box "I have read and agree to the terms contained in the license agreement" button in the following screen, before clicking "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955883685-4035034e-8bce-44fe-a4f1-e02b9b52c530.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955883685_4035034e_8bce_44fe_a4f1_e02b9b52c530.png)
 
 In the following screen, click "Install" to install Qt.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955883881-ea67f737-5f66-4eef-be69-b938c8f72e33.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955883881_ea67f737_5f66_4eef_be69_b938c8f72e33.png)
 
 After the installation is complete, the following interface will be displayed, uncheck the option "Launch Qt Creator" and click "Finish" to complete the installation of Qtcreator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955884134-f3287178-dfdf-4a20-ac65-198832b5d19b.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955884134_f3287178_dfdf_4a20_ac65_198832b5d19b.png)
 
 When opening the software, execute:
 
@@ -409,48 +409,48 @@ forlinx@ubuntu:~/qtcreator-4.5.2/bin$ ./qtcreator
 
 Error 1: Unable to connect to MKS. Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955884406-29abb00c-dd78-4b90-b470-32ceff8b1e0f.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955884406_29abb00c_dd78_4b90_b470_32ceff8b1e0f.png)
 
 Solution: My Computer-> Right click-> Manage-> Services and Applications-> Services: Turn on all services related to VMware
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955884709-bebdf44e-5df1-4879-b670-477de83886ee.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955884709_bebdf44e_5df1_4879_b670_477de83886ee.png)
 
 After the service starts successfully, restart the virtual machine; or hang the virtual machine first, and when the service starts, continue to run the hung virtual machine;
 
 Error 2: Internal error
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955884990-49e34f35-ab85-451a-97ed-3c5bd7734475.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955884990_49e34f35_ab85_451a_97ed_3c5bd7734475.png)
 
 Solution: Refer to solution 1
 
 Error 3: Unable to install service VMware Authorization Service (VMAuthdService)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955885240-1ad1d24f-f1aa-48a8-a340-96d11c0587e9.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955885240_1ad1d24f_f1aa_48a8_a340_96d11c0587e9.png)
 
 Solution: win+R Enter the services. Msc.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955885422-3ea7587c-49b9-4891-9de6-d34d945e3140.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955885422_3ea7587c_49b9_4891_9de6_d34d945e3140.png)
 
 Then find the service and start it up as an authorization and authentication service for starting and accessing virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955885646-b5e6fbc7-c879-4479-9599-15362971fe8e.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955885646_b5e6fbc7_c879_4479_9599_15362971fe8e.png)
 
 WMI must start first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955886013-5b703cb9-3527-4e6f-9926-feb249602716.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955886013_5b703cb9_3527_4e6f_9926_feb249602716.png)
 
 ****
 
 
 Error 4：Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955886331-019f50d5-6376-49a7-8969-2d606de8aca9.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955886331_019f50d5_6376_49a7_8969_2d606de8aca9.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 
 Error 5: Intel VT-x in disabled state
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955886547-1f1921b7-b150-4c20-9c90-1b43389ae61d.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955886547_1f1921b7_b150_4c20_9c90_1b43389ae61d.png)
 
 Solution:
 
@@ -463,7 +463,7 @@ Solution:
 
 Error 6: The virtual machine appears to be in use... Acquiring Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955886776-ed34d87b-2176-4b70-932b-eaa849660372.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955886776_ed34d87b_2176_4b70_932b_eaa849660372.png)
 
 Solution:
 
@@ -471,7 +471,7 @@ Solution:
 + Enter the storage directory of the virtual machine and delete the \*.lck file. The lck represents the locked file;
 + Open the Windows Task Manager and kill the VMware process.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955886965-a22c4d91-c150-41d1-bd1c-c05332cec932.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955886965_a22c4d91_c150_41d1_bd1c_c05332cec932.png)
 
 + Restart the virtual machine.
 
@@ -480,7 +480,7 @@ Solution:
 
 Error 7: Failed to lock file
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955887222-283b7a59-653d-4ab4-a6cc-4c65fce63b83.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955887222_283b7a59_653d_4ab4_a6cc_4c65fce63b83.png)
 
 Solution:
 
@@ -495,7 +495,7 @@ Error 8：The virtual machine could not be started because there was not enough 
 
 Solution: The virtual machine does not have enough memory to run the maximum requirement of the image. Increase the memory of the virtual machine and restart the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955887468-307bc58b-69b7-4741-9721-94b583f64c86.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955887468_307bc58b_69b7_4741_9721_94b583f64c86.png)
 
 ## 4\. Linux Compilation
 
@@ -536,11 +536,11 @@ There are many kinds of file transfers between ubuntu and Windows hosts. After i
 
 Click "Virtual Machine" on the menu bar and select "Settings".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955891157-792c9964-0a2c-4ce6-b497-c3a07a5ee4fc.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955891157_792c9964_0a2c_4ce6_b497_c3a07a5ee4fc.png)
 
 Click "Options", enable "Shared Folders", set the shared directory on the Windows host, and click "OK".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955891444-42f0e11b-459a-4279-8e69-9f65b11c5af9.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955891444_42f0e11b_459a_4279_8e69_9f65b11c5af9.png)
 
 After the file sharing setup of the virtual machine is complete, put the source package OKA40i-linux-sdk.tar.bz2 into the shared folder of the Windows host; here please name it share.
 
@@ -746,7 +746,7 @@ forlinx@ubuntu:~/work/OKA40i-linux-sdk$ ./build.sh pack
 
 Generated image location:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955891648-706090f8-c426-4407-a41b-fbebaa6aaf7e.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955891648_706090f8_c426_4407_a41b_fbebaa6aaf7e.png)
 
 #### 4.2.6 Boot Image Modification
 
@@ -802,7 +802,7 @@ The Forlinx forum provides virtual machines with installed environments for user
 
 Click the qtcreator icon in the left startup menu, or click show applications in the lower left corner to find the qtcreator icon and open it.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/22851183/1718955901665-709a919b-a8a0-4de3-a42d-d0ced3227d33.jpeg)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955901665_709a919b_a8a0_4de3_a42d_d0ced3227d33.jpeg)
 
 ### 5.2 QT Compilation Environment Configuration
 
@@ -812,21 +812,21 @@ If you set up the environment by yourself, the cross - compiler, Qt libraries, r
 
 #### 5.2.1 Cross Compiler Configuration
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955901971-ba711fc0-ff19-4117-b603-a8ab4209f6a7.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955901971_ba711fc0_ff19_4117_b603_a8ab4209f6a7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955902286-ef5434e4-e977-45b7-93d6-3aa3152d45d3.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955902286_ef5434e4_e977_45b7_93d6_3aa3152d45d3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955902544-7799cf61-2f5e-46c0-a283-22e77fc3bae9.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955902544_7799cf61_2f5e_46c0_a283_22e77fc3bae9.png)
 
 #### 5.2.2 QT Version Library Configuration 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955902879-f5134359-b51d-474e-804a-2984b702a0da.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955902879_f5134359_b51d_474e_804a_2984b702a0da.png)
 
 #### 5.2.3 Kit Configuration
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955903107-f3b8ade9-115f-4b62-88a7-9c89cf57dff1.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955903107_f3b8ade9_115f_4b62_88a7_9c89cf57dff1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955903444-eba4adac-8200-4386-8ce0-981913a9a17d.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955903444_eba4adac_8200_4386_8ce0_981913a9a17d.png)
 
 ### 5.3 Application Compilation and Operation
 
@@ -838,29 +838,29 @@ This chapter uses the backlight test program provided by Forlinx as an example t
 + Copy the backlight \_ gui to the ~/Desktop directory;
 + Click "File" -> "Open File or Project" in Qt Creator. In the pop - up window, select "~/Desktop/backlight/backlight.pro". Click open. The principle is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955903723-8f792216-543f-4fb5-9f1a-683670eab76d.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955903723_8f792216_543f_4fb5_9f1a_683670eab76d.png)
 
 + A pop-up window will appear to indicate whether to keep the original environment settings, select no, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955903920-6ad8799e-1d62-4ecc-b4f8-f91564f65675.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955903920_6ad8799e_1d62_4ecc_b4f8_f91564f65675.png)
 
 + The Configure Project window pops up, check the kit: arm (or the name defined by yourself) just configured, and click Configure Project to automatically enter the Edit interface, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955904113-23c1bcd6-c72d-481b-8ef5-c3247e98a4b6.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955904113_23c1bcd6_c72d_481b_8ef5_c3247e98a4b6.png)
 
 + Click projects on the left side, add the version of Qt used according to the actual situation, and select the path to generate the compiled file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955904370-f7f86f0d-ee03-46c3-9234-271feb548fb6.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955904370_f7f86f0d_ee03_46c3_9234_271feb548fb6.png)
 
 + Click Build->Build All to compile, or click the hammer icon in the lower left corner.
 
 The Build progress bar in the lower right corner indicates that the compilation is complete, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955904678-f6b9dad6-ffae-40ef-baf8-d6bc4811a3c2.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955904678_f6b9dad6_ffae_40ef_baf8_d6bc4811a3c2.png)
 
 At this point, you will see the newly generated binary file backlight\_gui under the file generation path:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955904934-5f834c1f-d5c6-484d-be60-a9e43426385b.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955904934_5f834c1f_d5c6_484d_be60_a9e43426385b.png)
 
 ## 6\. Terminal Cross-compilation Environment Setup
 
@@ -868,7 +868,7 @@ At this point, you will see the newly generated binary file backlight\_gui under
 
 If you are only engaged in application development, there is no need to copy the SDK to the virtual machine. You can configure the cross-compilation environment by following the operations shown in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718955910541-931fbbe0-635f-4a5d-a376-4c6cbca85823.png)
+![Image](./images/OKA40i-C_OKT3-C_Linux5_10_149_User_Compilation_Manual/1718955910541_931fbbe0_635f_4a5d_a376_4c6cbca85823.png)
 
 ### 6.2 Setting up the Environment Manually
 
