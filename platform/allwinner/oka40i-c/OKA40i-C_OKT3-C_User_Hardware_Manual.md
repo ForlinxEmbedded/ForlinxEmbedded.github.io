@@ -1229,7 +1229,7 @@ The specifications of the baseboard connector are as follows:
 
 ![Image](./images/OKA40i-C_OKT3-C_User_Hardware_Manual/1720595768908_182345f9_f27c_4866_a48f_2fa60709c2b7.png)
 
-## 5\. OKA40iT3 - C Development Board Linux System Whole - Machine Power Consumption Table
+## 5\. OKA40i/T3 - C Development Board Linux System Whole - Machine Power Consumption Table
 
 | **No.**| **Test Item**| **SoM Power (W)**| Development Board Power (including SoM) (W)
 |:----------:|----------|:----------:|:----------:
