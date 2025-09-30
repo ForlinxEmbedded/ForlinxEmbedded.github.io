@@ -1,0 +1,1791 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux5.10.149_User’s Manual_V1.2 &mdash; Forlinx Embedded A40i Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=562fc538" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="User’s Hardware Manual" href="OKA40i-C_OKT3-C_User_Hardware_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OKA40i-C_OKT3-C_User_Hardware_Manual.html">User’s Hardware Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.10.149_User’s Manual_V1.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oka40i-development-board-description">1. OKA40i Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux5-10-149-system-software-resources-features">1.1 Linux5.10.149 System Software Resources Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dip-switches-and-flashing-modes">1.2 DIP Switches and Flashing Modes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-login-mode">2.2 Serial Port Login Mode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-printing-information-view">2.2.1. Serial Port Printing Information View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-login">2.2.2 Serial Port Login</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#network-login-methods">2.3 Network Login Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#use-of-telnet-services">2.3.1 Use of Telnet Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sshd-services-use">2.3.2 SSHD Services Use</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-options">2.4 Screen Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-calibration">2.5 Screen Calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-partition">2.6 System Partition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-shutdown">2.7 System Shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-function-test">3. Command Line Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-bluetooth-test">3.1 WIFI/Bluetooth Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sta-mode">3.1.1 STA Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ap-mode">3.1.2 AP Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bluetooth">3.1.3 Bluetooth</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sdhc-tf-driver-test">3.2 SDHC/TF Driver Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-interface-test">3.3 USB Interface Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usb-host-interface-storage-test">3.3.1 USB Host Interface Storage Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-test">3.3.2 OTG Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet-drive-test">3.4 Ethernet Drive Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#manual-configuration-of-eth0">3.4.1 Manual Configuration of Eth0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamically-setting-ip-address">3.4.2 Dynamically Setting IP Address</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet-related-services">3.5 Ethernet Related Services</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sftp-server-file-service">3.5.1 Sftp-server File Service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vsftp">3.5.2 VSFTP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#watchdog-test">3.6 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#play-record-test">3.7 Play/Record Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-test">3.8 Camera Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc-clock-drive-test">3.9 RTC Clock Drive Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-module-test">3.10 4G Module Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uart-serial-port-test">3.11 UART Serial Port Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rs485-test">3.12 RS485 Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#database-test">3.13 Database Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spi-test">3.14 SPI Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-test">3.15 Key Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-test">3.16 Display Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#backlight-test">3.16.1 Backlight Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#touch-test">3.16.2 Touch Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#video-play-test">3.17 Video Play Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led-test">3.18 LED Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frequency-test">3.19 Frequency Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#temperature">3.20 Temperature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sata-hard-drive-support">3.21 SATA Hard Drive Support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#qt-platform-function-test">4. QT Platform Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#network-test">4.1 Network Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-test">4.2 4G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ping-test">4.3 Ping Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-test">4.4 WiFi Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser-test">4.5 Browser Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc-test">4.6 RTC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">4.7 Key Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opengl-test">4.8 OpenGL Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.9 Backlight Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sqlite3-database-test">4.10 SQLite3 Database Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#watchdog">4.11 Watchdog</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#image-flashing">5. Image Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-with-sd-card">5.1 Flashing with SD Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-with-otg">5.2 Flashing with OTG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#separate-firmware-update-for-development-board">5.3 Separate Firmware Update for Development Board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-frequently-asked-q-a">5.4 Flashing Frequently Asked Q&amp;A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sd-card-flashing-problems">5.4.1 SD Card Flashing Problems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-flashing-problems">5.4.2 OTG Flashing Problems</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded A40i Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Linux5.10.149_User’s Manual_V1.2</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="linux5-10-149-users-manual-v1-2">
+<h1>Linux5.10.149_User’s Manual_V1.2<a class="headerlink" href="#linux5-10-149-users-manual-v1-2" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate your understanding, mainly for practical use. Please refer to OKA40i-C_Linux5.10.149+Qt5.15.8 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction.</p>
+<p>There are total five chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;</p></li>
+<li><p>Chapter 2. is the fast boot/startup of the product, which can use two ways of serial port login and network login;</p></li>
+<li><p>Chapter 3. mainly serves as an introduction to the product’s usage features and is divided into multiple sections, including the function test;</p></li>
+<li><p>Chapter 4. is the image update, which mainly describes the method of updating the image to the storage device. You can select the corresponding flashing mode according to the actual situation;</p></li>
+<li><p>Chapter 5. is about the image flashing.</p></li>
+</ul>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This software manual is applicable to the <font style="color:rgb(0,0,0);">OKA40i platform Linux 5.10 operating system of Forlinx.</font></p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><font style="color:black;">Date</font></p></th>
+<th class="head text-center"><p><font style="color:black;">User Manual Version</font></p></th>
+<th class="head"><p><font style="color:black;">Revision History</font></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>15/04/2023</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>OKA40i_Linux5. 10.149+Qt5.15.8_User’s Manual Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td><p>21/03/2024</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>1. Adding Qt test content;<br/> 2. Fixing OpenGL test command.</p></td>
+</tr>
+<tr class="row-even"><td><p>19/06/2024</p></td>
+<td class="text-center"><p>V1.2</p></td>
+<td><p>1. Replacing some pictures in the manual;<br/> 2. Correcting the layout of the manual.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="oka40i-development-board-description">
+<h2>1. OKA40i Development Board Description<a class="headerlink" href="#oka40i-development-board-description" title="Link to this heading"></a></h2>
+<p>The OKA40i development board uses a structure of a carrier board + SoM. It is designed based on the Allwinner’s quad - core Cortex - A7 A40i processor for the industrial control industry platform. The processor has a main frequency of 1.2 GHz, integrates a Mali400MP2 GPU, and comes with 1GB/2GB DDR3L memory and 8GB EMMC storage. It supports the decoding of most currently popular video and image formats. It has the advantages of stable and reliable industrial - grade product performance, high cost - effectiveness, and low power consumption. It is suitable for industrial control products based on visual interaction. The target applications include embedded devices, intelligent terminals, industrial control, data acquisition, machine vision, industrial Internet of Things, mobile Internet devices, digital signage, etc.</p>
+<p><img alt="Image" src="_images/1718954456770_de1768f1_af69_4877_9d14_04f3fd54238b.jpeg" /></p>
+<p><strong>Note：</strong></p>
+<p><strong>Hardware parameters are not described in this software manual. Before referring to this manual for software development, please read the “Hardware Manual” under the path of “Hardware Data \ User Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
+<section id="linux5-10-149-system-software-resources-features">
+<h3>1.1 Linux5.10.149 System Software Resources Features<a class="headerlink" href="#linux5-10-149-system-software-resources-features" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Device</strong></p></th>
+<th class="head"><p><strong>Location of driver source code in the kernel</strong></p></th>
+<th class="head"><p><strong>Device Name</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NIC Driver（emac）</p></td>
+<td><p>bsp/drivers/emac</p></td>
+<td><p>/sys/class/net/eth*</p></td>
+</tr>
+<tr class="row-odd"><td><p>LCD Backlight Driver</p></td>
+<td><p>bsp/video/sunxi/disp2/disp/</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>LED Driver</p></td>
+<td><p>kernel/linux-5.10/drivers/leds/leds-gpio.c</p></td>
+<td><p>/sys/class/leds/</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB Port</p></td>
+<td><p>kernel/linux-5.10/drivers/usb/storage/</p></td>
+<td><p>/dev/sdx</p></td>
+</tr>
+<tr class="row-even"><td><p>USB 3G</p></td>
+<td><p>kernel/linux-5.10/drivers/usb/serial/</p></td>
+<td><p>/dev/ttyUSB*</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB Camera</p></td>
+<td><p>kernel/linux-5.10/drivers/media/usb/uvc/uvc_video.c</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>SD Driver</p></td>
+<td><p>bsp/drivers/mmc/</p></td>
+<td><p>/dev/block/mmcblk0pX</p></td>
+</tr>
+<tr class="row-odd"><td><p>LCD FrameBuffer</p></td>
+<td><p>bsp/drivers/video/sunxi/disp2/disp</p></td>
+<td><p>/dev/fb0</p></td>
+</tr>
+<tr class="row-even"><td><p>ft5x06 capacitive touch</p></td>
+<td><p>kernel/linux-5.10/drivers/input/touchscreen/edt-ft5x06.c</p></td>
+<td><p>/dev/input/eventx</p></td>
+</tr>
+<tr class="row-odd"><td><p>gt9xx capacitive touch</p></td>
+<td><p>bsp/drivers/input/ctp/gt9xxnew</p></td>
+<td><p>dev/input/eventx</p></td>
+</tr>
+<tr class="row-even"><td><p>Resistor touch control drive<sup>TDB</sup></p></td>
+<td><p>bsp/drivers/rtp/sunxi-rtp.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>RTC Real Time Clock Driver</p></td>
+<td><p>kernel/linux-5.10/drivers/rtc/rtc-rx8010.c<br/>bsp/drivers/rtc/rtc-sunxi.c /no loading/</p></td>
+<td><p>/dev/rtc0<br/>/dev/rtc0</p></td>
+</tr>
+<tr class="row-even"><td><p>serial port driver</p></td>
+<td><p>bsp/drivers/uart/sunxi-uart.c</p></td>
+<td><p>/dev/tty*</p></td>
+</tr>
+<tr class="row-odd"><td><p>watchdog driver</p></td>
+<td><p>bsp/drivers/watchdog/sunxi_wdt.c</p></td>
+<td><p>/dev/watchdog</p></td>
+</tr>
+<tr class="row-even"><td><p>WIFI</p></td>
+<td><p>kernel/linux-5.10/drivers/net/wireless/</p></td>
+<td><p>wlan0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Audio Driver</p></td>
+<td><p>bsp/drivers/sound</p></td>
+<td><p>/dev/snd/</p></td>
+</tr>
+<tr class="row-even"><td><p>SPI Controller</p></td>
+<td><p>bsp/drivers/spi/spi-sunxi.c</p></td>
+<td><p>/dev/spidev0.0 etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key Driver</p></td>
+<td><p>bsp/drivers/input/keyboard/sunxi-keyboard.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>smart card reader</p></td>
+<td><p>bsp/drivers/smc/sunxi-smc.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Camera ov5640</p></td>
+<td><p>bsp/drivers/vfe/</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>tvin</p></td>
+<td><p>bsp/drivers/tvd/</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>twi drive</p></td>
+<td><p>bsp/drivers/i2c/i2c-sunxi.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>sata driver</p></td>
+<td><p>bsp/drivers/ata/ahci_sunxi.c</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dip-switches-and-flashing-modes">
+<h3>1.2 DIP Switches and Flashing Modes<a class="headerlink" href="#dip-switches-and-flashing-modes" title="Link to this heading"></a></h3>
+<p>A40i supports two boot modes: EMMC boot and SD card boot, and two burn modes: OTG and SD card.</p>
+<ul class="simple">
+<li><p><strong>DIP switch</strong></p></li>
+</ul>
+<p>Please find the figure below to see the DIP switches. When the DIP switch is in the on position, the device will start up using the EMMC (default) state. Conversely, when the DIP switch is in the off position, the device will start up using the SD card burning (startup) state. Additionally, it’s possible to do OTG burning in either of the two states.</p>
+<p><img alt="Image" src="_images/1718954457115_8dd274ab_b68f_4df4_8d6b_a6079fac1512.png" /></p>
+<ul class="simple">
+<li><p><strong>Flashing key</strong></p></li>
+</ul>
+<p>The mode for OTG burning is determined by the state of the K3 key when the device is powered on. If the K3 key is pressed during power-up, it indicates the OTG burning mode. Conversely, if the K3 key is released during power-up, it indicates the EMMC or SD card boot mode. To restart the device, you can press the K7 key. During OTG burning, you can hold the K3 key, press the K7 key once and then release the K3 key. You do not need to press the K3 key to burn the SD card. Refer to Chapter 4. for the specific flashing process.</p>
+<p><img alt="Image" src="_images/1718954457380_f8a9d656_d8da_411e_94e3_50b5f071f43c.png" /></p>
+</section>
+</section>
+<section id="fast-startup">
+<h2>2. Fast Startup<a class="headerlink" href="#fast-startup" title="Link to this heading"></a></h2>
+<section id="preparation-before-startup">
+<h3>2.1 Preparation Before Startup<a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Prepare a 5V 3A power supply and connect it to the 5V IN connector on the left side of the board;</p></li>
+<li><p>Debug the serial port line, connect the computer to the DEBUG interface on the left side of the development board (view the print information, please ignore if you do not need to view the print information);</p></li>
+<li><p>Connect the screen according to the interface of the development board, and burn the corresponding mirror image (if the display is not required, it is not required to connect);</p></li>
+<li><p>Check the boot mode DIP switch, see previous section <strong>“1.3 DIP Switches and Flashing Modes”</strong>.</p></li>
+</ul>
+</section>
+<section id="serial-port-login-mode">
+<h3>2.2 Serial Port Login Mode<a class="headerlink" href="#serial-port-login-mode" title="Link to this heading"></a></h3>
+<section id="serial-port-printing-information-view">
+<h4>2.2.1. Serial Port Printing Information View<a class="headerlink" href="#serial-port-printing-information-view" title="Link to this heading"></a></h4>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Serial port settings: baud rate 115200, data bit 8, stop bit 1, no parity bit, no flow control;</strong></p></li>
+<li><p><strong>The serial terminal login uses the root user with no password. To change the password, see “2.3.2 Use of SSHD Services”;</strong></p></li>
+<li><p><strong>The PC Windows system is required to install the serial port terminal software, a set of USB to RS232 and a cross serial port line.</strong></p></li>
+</ul>
+<p>First, connect the DEBUG port of the PC and the development board through the USB to RS232 and the cross serial port line. You need to confirm the serial port number of the connected computer. Open your computer’s device manager:</p>
+<p><img alt="Image" src="_images/1718954460822_25b03970_f166_40e7_bcb4_226a022b6250.png" /></p>
+<p>Open the terminal debugging software installed on the computer and select putty.</p>
+<p>The specific settings are as follows:</p>
+<p>Serial port setting: First select Serial, then enter the port number recognized on the computer, here is com21, enter the baud rate of 115 200, and finally click open. The operation contents are shown in the figure below:</p>
+<p><img alt="Image" src="_images/1718954461070_20ee644e_322a_4380_a596_cc18124813c2.png" /></p>
+<p>After the setup is completed, you can start to see the debugging information. As shown in the figure below:</p>
+<p><img alt="Image" src="_images/1718954461364_8b73fb78_49dc_45c7_8012_30acafe65c1f.png" /></p>
+</section>
+<section id="serial-port-login">
+<h4>2.2.2 Serial Port Login<a class="headerlink" href="#serial-port-login" title="Link to this heading"></a></h4>
+<p>After the boot information is printed, you can log in.</p>
+<p>The login information of the development board is as follows, the account is root, and there is no password by default.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Welcome to Allwinner Tina5.0 Platform
+Tina5.0 login: root
+#
+</pre></div>
+</div>
+</section>
+</section>
+<section id="network-login-methods">
+<h3>2.3 Network Login Methods<a class="headerlink" href="#network-login-methods" title="Link to this heading"></a></h3>
+<p>In addition to using the debug serial port to log in, OKA40i also supports Telnet and SSH network login to the development board, as well as FTP file transfer. Note that you can only see the printed information after the network has booted (i.e. after the development board has booted).</p>
+<ul class="simple">
+<li><p>The default ip 192.168.0.232;</p></li>
+<li><p>The development board account is root and has no password by default;</p></li>
+<li><p>Before testing, please ensure that the development board and the computer have been connected through the network cable, turn off the computer firewall, the computer IP and the development board are in the same network segment and the data is smooth.</p></li>
+</ul>
+<section id="use-of-telnet-services">
+<h4>2.3.1 Use of Telnet Services<a class="headerlink" href="#use-of-telnet-services" title="Link to this heading"></a></h4>
+<p>The OKA40i-C development board has already started the telnet service in the /etc/init.d/S50telnet file, and can be used as a telnet server after setting the IP address.</p>
+<p>To access the development board, follow these steps: Right-click the Windows Start menu and select “Run”. In the “Run” window, type “cmd” and press enter. In the open command prompt window, type “telnet 192.168.0.232” and press enter. Enter “root” as the username (you can modify the default IP address if needed), and leave the password field blank.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>C:\Users\Administrator&gt; telnet 192.168.0.232
+</pre></div>
+</div>
+<p>To log in:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>A40i login: root
+#
+</pre></div>
+</div>
+</section>
+<section id="sshd-services-use">
+<h4>2.3.2 SSHD Services Use<a class="headerlink" href="#sshd-services-use" title="Link to this heading"></a></h4>
+<p>The OKA40i-C development board has started the ssh service in the /etc/init.d/ S50sshd file, and can be used as an sshd sftp-server after setting the IP address.</p>
+<ul class="simple">
+<li><p>Set the time;</p></li>
+<li><p>Password needs to be added;</p></li>
+<li><p>Modify the configuration file.</p></li>
+</ul>
+<p>Before testing, you first need to set the board to the current UTC time. Secondly, by default, the development board only has the root user and does not set the password. If you use the root to log in to the sshd service, you need to modify the sshd configuration file and set the password. If you use the common user to log in, you need to add the user and set the password. See below for the method.</p>
+<p><strong>Set the account password method:</strong></p>
+<p>Modify/add a password:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># passwd root
+Changing password for root
+New password: 123
+Bad password: too short
+Retype password: 123
+passwd: password for root changed by root
+</pre></div>
+</div>
+<p><strong>Add the account method:</strong></p>
+<p>adduser username, add forlinx, password: forlinx.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># adduser forlinx
+Changing password for forlinx
+New password: forlinx
+Bad password: similar to username
+Retype password: forlinx
+passwd: password for forlinx changed by root
+</pre></div>
+</div>
+<p><strong>Remove the password:</strong></p>
+<p>passwd username -d. Remove root password</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># passwd root -d
+passwd: password for root changed by root
+</pre></div>
+</div>
+<p><strong>Modify the configuration (root login):</strong></p>
+<p>Modify the configuration file/etc/ssh/sshd_config of sshd to allow root login.</p>
+<p>Change #PermitRootLogin prohibit-password to <strong>PermitRootLogin yes</strong>, save and exit.</p>
+<p>Then restart the service or board afterward to make the changes take effect.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p># <font style="color:#0000FF;">/etc/init.d/S50sshd restart							</font>//Restart the sshd service</p></th>
+</tr>
+</thead>
+</table>
+<p><strong>ssh login：</strong></p>
+<p>The IP address of the development board is 192.168.0.232. Open putty in Windows, and the IP address is 192.168.0.232. After entering the command window, enter the user name root and the password 123, as shown in the following figure. After logging in, you can view the development board information.</p>
+<p><img alt="Image" src="_images/1718954461600_820240cb_c250_4866_87e5_24bbe2390af1.png" /></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>login as : root
+root@192.168.0.232’s password : 123
+#
+</pre></div>
+</div>
+</section>
+</section>
+<section id="screen-options">
+<h3>2.4 Screen Options<a class="headerlink" href="#screen-options" title="Link to this heading"></a></h3>
+<p>The OKA40i-C platform supports the display of multiple screens, corresponding to different images, subject to the final programming. The default is a 7-inch 1024x600 capacitive screen. Please burn the corresponding image of the screen to meet the display requirements.</p>
+<p>OKA40i-C image comparison table:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Screen</strong></p></th>
+<th class="head"><p><strong>Image</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>7-inch LCD-1024x600</p></td>
+<td><p>sun8iw11p1_linux_OKA40i_C_uart0-1024x600.img</p></td>
+</tr>
+<tr class="row-odd"><td><p>7-Inch mipi-1024x600</p></td>
+<td><p>sun8iw11p1_linux_OKA40i_C_uart0-1024x600mipi.img</p></td>
+</tr>
+<tr class="row-even"><td><p>10.1吋LVDS-1280x800</p></td>
+<td><p>sun8iw11p1_linux_OKA40i_C_uart0-1280x800.img</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="screen-calibration">
+<h3>2.5 Screen Calibration<a class="headerlink" href="#screen-calibration" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ts_calibrate
+# sync
+</pre></div>
+</div>
+<p><strong>Note: Close the QT program during calibration to prevent the QT program from affecting the screen calibration.</strong></p>
+</section>
+<section id="system-partition">
+<h3>2.6 System Partition<a class="headerlink" href="#system-partition" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Partition</strong></p></th>
+<th class="head text-center"><p><strong>Name</strong></p></th>
+<th class="head text-center"><p><strong>Partition size:</strong></p></th>
+<th class="head text-center"><p><strong>File system</strong></p></th>
+<th class="head"><p><strong>Content</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Boot partition</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">16MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">RAW</font></p></td>
+<td><p><font style="color:#000000;">gpt</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p1</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Boot resources</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">16MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">RAW</font></p></td>
+<td><p><font style="color:#000000;">boot-resource</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p2</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Environment variables</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">16MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">RAW</font></p></td>
+<td><p><font style="color:#000000;">env</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p3</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Kernel</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">96MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">RAW</font></p></td>
+<td><p><font style="color:#000000;">BootA</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p4</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Kernel backup partition</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">96MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">RAW</font></p></td>
+<td><p><font style="color:#000000;">BootB</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p5</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Root file system</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">256MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Ext4</font></p></td>
+<td><p><font style="color:#000000;">rootfsA</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p6</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Root file system backup partition</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">256MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Ext4</font></p></td>
+<td><p><font style="color:#000000;">rootfsB</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p7</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Private data partition</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">16MB</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">RAW</font></p></td>
+<td><p><font style="color:#000000;">private</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">/dev/mmcblk0p8</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Data partition</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">Remaining space</font></p></td>
+<td class="text-center"><p><font style="color:#000000;">vfat</font></p></td>
+<td><p><font style="color:#000000;">UDISK</font></p></td>
+</tr>
+</tbody>
+</table>
+<p><font style="color:#FF0000;">Note: There are two partitions for the kernel and the file system in the partition table, which are used for the A/B system upgrade. Currently, this function is not supported. In actual use, you can remove the backup partitions from the partition table, and the generated image will be smaller.</font></p>
+<p>Use the df command to view disk usage on the system as follows.</p>
+<p>Here are the parameters of the factory image. There are no external devices.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root               158.0M    134.1M     12.7M  91% /
+tmpfs                   422.9M         0    422.9M   0% /dev/shm
+tmpfs                   488.5M     72.0K    488.5M   0% /tmp
+tmpfs                   488.5M    192.0K    488.3M   0% /run
+devtmpfs                422.9M         0    422.9M   0% /dev
+/dev/by-name/UDISK        6.5G      4.0K      6.5G   0% /mnt/UDISK
+</pre></div>
+</div>
+<p><font style="color:#FF0000;">Note: The size of the root partition does not match that in the partition table because the root partition is not fully allocated. When building the file system, as long as the total size of the root file system does not exceed the size specified in the partition table, there will be no error when packaging the file system, and the size of the root partition will increase as the file system grows.</font></p>
+<p>Use the free command to view memory usage.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># free
+        total			used		free			shared		buffers		cached
+Mem:		768528		58928		709600		0					4168			14516
+-/+ buffers/cache:			40244		728284		
+Swap:		0			0			0			
+</pre></div>
+</div>
+</section>
+<section id="system-shutdown">
+<h3>2.7 System Shutdown<a class="headerlink" href="#system-shutdown" title="Link to this heading"></a></h3>
+<p>In general, you can simply turn off the power directly. If there is a data storage operation, to ensure that the data is completely written, enter the sync command and turn off the power after completing data synchronization.</p>
+<p>The command ‘reboot’ can be used to restart the development board. You can also restart the hardware by pressing the K7 (reset) key or directly power off and restart.</p>
+</section>
+</section>
+<section id="command-line-function-test">
+<h2>3. Command Line Function Test<a class="headerlink" href="#command-line-function-test" title="Link to this heading"></a></h2>
+<p>This section describes how to use the external expansion interface of the development board. The test program is for testing purposes only and may have bugs.</p>
+<p>The test program used in the test in this section has been integrated in the Demo provided by Forlinx for direct command operation.</p>
+<section id="wifi-bluetooth-test">
+<h3>3.1 WIFI/Bluetooth Test<a class="headerlink" href="#wifi-bluetooth-test" title="Link to this heading"></a></h3>
+<p>No support for RTL8723bu; the USB WIFI of RTL8723du is used as follows:</p>
+<p><strong>Note: In this section, the WiFi connection tests are all examples of connecting to a WiFi router. The network environment is different, so please set it according to the actual situation when you do this experiment.</strong></p>
+<p><strong>If the development board has an on-board WIFI wireless LAN card, it should be soldered to the evaluation board as shown in the figure. At present, Forlinx provides 8723du, but not 8723bu.</strong></p>
+<p><img alt="Image" src="_images/1718954468422_f789af0e_2a56_45e3_ad3f_cc649f0146eb.png" /></p>
+<p>After the board is powered on, the 8723du module is already powered on. The power - on control is in the /etc/init.d/S98bluetoothd file.</p>
+<p><img alt="Image" src="_images/1718954468775_3bb89946_3318_4982_b1f6_e2c74e51ce24.png" /></p>
+<p>The power supply of the module is controlled by GPIO. The development board uses PB10 to control the power supply of the 8723du module.</p>
+<p>The calculation formula for the GPIO number is:</p>
+<p>port*32+num（PA：0，PB：1， PC：2 …）</p>
+<p>PB10 = 1 * 32 + 10</p>
+<section id="sta-mode">
+<h4>3.1.1 STA Mode<a class="headerlink" href="#sta-mode" title="Link to this heading"></a></h4>
+<p>Before using the WiFi function, you need to use the ssid and password. The ssid name of the WiFi hotspot in the test environment is: forlinx, and the password is: test.</p>
+<ol class="arabic simple">
+<li><p>Enter the following command in the development board terminal:</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_wifi.sh -i wlan0 -s forlinx -p test 
+wifi wlan0
+ssid forlinx
+pasw test
+wpa connect status:SCANNING
+wpa connect status:ASSOCIATING
+wpa connect status:ASSOCIATING
+connect ok
+udhcpc: started, v1.35.0
+udhcpc: broadcasting discover
+udhcpc: broadcasting select for 192.168.81.64, server 192.168.80.1
+udhcpc: lease of 192.168.81.64 obtained from 192.168.80.1, lease time 28800
+deleting routers
+adding dns 222.222.202.202
+adding dns 222.222.222.222
+</pre></div>
+</div>
+<p>Among them, -i: 8723du, -s: wifi ssid (account), -p: wifi password or NONE (no password).</p>
+<ol class="arabic simple" start="2">
+<li><p>Check whether it can ping the external network and enter the following command in the terminal:</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ping -c 6 www.baidu.com 
+PING www.a.shifen.com (220.181.38.150) from 192.168.4.156 mlan0: 56(84) bytes of data. 
+64 bytes from 220.181.38.150 (220.181.38.150): icmp_seq=1 ttl=50 time=58.3 ms
+64 bytes from 220.181.38.150 (220.181.38.150): icmp_seq=2 ttl=50 time=73.2 ms 
+64 bytes from 220.181.38.150 (220.181.38.150): icmp_seq=3 ttl=50 time=2334 ms 
+64 bytes from 220.181.38.150 (220.181.38.150): icmp_seq=4 ttl=50 time=1320 ms 
+64 bytes from 220.181.38.150 (220.181.38.150): icmp_seq=5 ttl=50 time=296 ms 
+64 bytes from 220.181.38.150 (220.181.38.150): icmp_seq=6 ttl=50 time=68.4 ms 
+--- www.a.shifen.com ping statistics --- 
+6 packets transmitted, 6 received, 0% packet loss, time 5055ms 
+rtt min/avg/max/mdev = 58.260/691.673/2334.468/858.506 ms, pipe 3
+</pre></div>
+</div>
+</section>
+<section id="ap-mode">
+<h4>3.1.2 AP Mode<a class="headerlink" href="#ap-mode" title="Link to this heading"></a></h4>
+<p><strong>Note: Before testing this function, you need to ensure that the eth0 network communication is normal.</strong></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_wifiap.sh							//Turn on the wifi hotspot
+</pre></div>
+</div>
+<p>Generate an AP node with the ssid of “test” and the password of “12345678”. Mobile phones can connect to “test” and access the Internet.</p>
+<p>If you need to modify the ssid and password, you can find the “ssid” and “wpa_passphrase” fields in the /etc/hostapd.conf file and make modifications.</p>
+</section>
+<section id="bluetooth">
+<h4>3.1.3 Bluetooth<a class="headerlink" href="#bluetooth" title="Link to this heading"></a></h4>
+<p>This section demonstrates file transfer between a mobile phone and the development board via Bluetooth.</p>
+<ol class="arabic simple">
+<li><p>Bluetooth Configuration</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># bluetoothctl             // Open the bluez Bluetooth device
+Agent registered
+[CHG] Controller 30:7B:C9:4E:8E:D1 Pairable: yes
+[bluetooth]# power on            // Start the Bluetooth device
+Changing power on succeeded
+[CHG]  Controller F0:C8:14:48:08:85 Powered: yes
+[bluetooth]# pairable on           // Set to pairing mode
+Changing pairable on succeeded
+[bluetooth]# discoverable on             // Set to discoverable mode
+Changing discoverable on succeeded
+[CHG] Controller 30:7B:C9:4E:8E:D1 Discoverable: yes
+[bluetooth]# agent on            // Start the agent
+Agent is already registered
+[bluetooth]# default-agent    // Set the current agent as the default
+Default agent request successful
+</pre></div>
+</div>
+<p>When the following error message is printed during the “power on” operation, you can use “rfkill” to unlock the Bluetooth module.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[bluetooth]# power on
+Failed to set power on: org.bluez.Error.Blocked
+[bluetooth]# exit
+# rfkill unblock bluetooth
+# bluetoothctl
+Agent registered
+[CHG] Controller 30:7B:C9:4E:8E:D1 Pairable: yes
+[bluetooth]# power on
+Changing power on succeeded
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Development Board Passive Pairing.</p></li>
+</ol>
+<p>After the above settings, open the mobile phone Bluetooth search, a “BlueZ 5.54” device will appear, click this Bluetooth to pair:</p>
+<p><img alt="Image" src="_images/1718954469022_60478357_edf1_4b70_9019_df9718339922.png" /></p>
+<p>At the same time, the information printed on the development board is as follows, enter yes.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[NEW] Device 14:16:9E:62:39:BD zzy
+Request confirmation
+[agent] Confirm passkey 083886 (yes/no): yes
+</pre></div>
+</div>
+<p>Then, tap on Bluetooth on your phone to initiate pairing.</p>
+<p>View and remove connected devices:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[zzy]# devices     //View connected Bluetooth device
+Device 14:16:9E:62:39:BD zzy
+[zzy]# remove 14:16:9E:62:39:BD   //Remove the device
+[bluetooth]# remove 14:16:9E:62:39:BD
+[DEL] Device 14:16:9E:62:39:BD zzy
+Device has been removed
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Active pairing of development boards</p></li>
+</ol>
+<p>In addition to passive pairing, it is also possible to send an active pairing request from the development board terminal.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[bluetooth]# scan on            //Search for discoverable Bluetooth
+Discovery started
+[CHG] Controller 30:7B:C9:4E:8E:D1 Discovering: yes
+[NEW] Device 14:16:9E:62:39:BD zzy
+[NEW] Device 70:AC:D6:3C:76:93 70-AC-D6-3C-76-93
+[NEW] Device FC:E8:00:CF:42:E3 EDIFIER BLE
+[NEW] Device C0:0B:06:01:0A:38 Mi Smart Band 5
+[NEW] Device 2C:DB:07:C7:4F:F6 DESKTOP-VND9V1F
+[CHG] Device 2C:DB:07:C7:4F:F6 RSSI: -60
+[bluetooth]# scan off     //Stop searching
+Discovery stopped
+[bluetooth]# pair 14:16:9E:62:39:BD          //Pair the bluetooth
+Attempting to pair with 14:16:9E:62:39:BD
+[CHG] Device 14:16:9E:62:39:BD Connected: yes
+Request confirmation
+[agent] Confirm passkey 732814 (yes/no): yes
+[CHG] Device 14:16:9E:62:39:BD Modalias: bluetooth:v000Fp1200d1436
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001105-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 0000110a-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 0000110c-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 0000110e-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001112-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001115-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001116-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 0000111f-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 0000112f-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001132-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001200-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001800-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00001801-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: 00009955-0000-1000-8000-00805f9b34fb
+[CHG] Device 14:16:9E:62:39:BD UUIDs: fa88c0d0-afac-11de-8a99-0800200c9a67
+[CHG] Device 14:16:9E:62:39:BD ServicesResolved: yes
+[CHG] Device 14:16:9E:62:39:BD Paired: yes
+Pairing successful
+</pre></div>
+</div>
+<p>At the same time, the pairing request appears on the mobile phone interface. Click the pairing button, and the board end prints and inputs yes. The pairing on the mobile phone end is successful.</p>
+<ol class="arabic simple" start="4">
+<li><p>The development board receives the file.</p></li>
+</ol>
+<p>After successful pairing, on the mobile side, you can use Bluetooth to send files to OKA40i.</p>
+<p><img alt="Image" src="_images/1718954469283_3c5a61f1_3238_4737_8c81_f301cda70934.png" /></p>
+<p>Received files are saved in the /tmp directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ls /tmp/ -l
+total 4848
+-rw------- 1 root root 2783349 Nov 28 04:24 V21128-113836.mp4
+-rw------- 1 root root 2173285 Nov 28 04:26 V21128-113851.mp4
+-rw------- 1 root root       4 Nov 28 04:23 a-1.txt
+drwx------ 3 root root      60 Nov 28 04:12 systemd-private-20d4637b1f714e57a55c3a86bfc8c0a5-bluetooth.service-7BzjIT
+drwx------ 3 root root      60 Nov 28 04:12 systemd-private-20d4637b1f714e57a55c3a86bfc8c0a5-ninfod.service-JXVulf
+drwx------ 3 root root      60 Nov 28 04:12 systemd-private-20d4637b1f714e57a55c3a86bfc8c0a5-rdisc.service-IR8ZR4
+drwx------ 3 root root      60 Nov 28 04:12 systemd-private-20d4637b1f714e57a55c3a86bfc8c0a5-systemd-logind.service-gV7bXk
+drwx------ 3 root root      60 Nov 28 04:12 systemd-private-20d4637b1f714e57a55c3a86bfc8c0a5-systemd-timesyncd.service-NTarpLAgent 39:BD zzy
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>The development board sends files.</p></li>
+</ol>
+<p>Similarly, the OKA40i can send files to a cell phone, test is as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># bluetoothctl
+Agent registered
+[[CHG] Controller 30:7B:C9:4E:8E:D1 Pairable: yes
+[zzy]# paired-devices     //View the MAC of a device that has been paired
+Device 14:16:9E:62:39:BD zzy
+[zzy]# exit
+# obexctl
+[NEW] Client /org/bluez/obex 
+[obex]# connect  14:16:9E:62:39:BD  //Connect to the Bluetooth MAC that needs to communicate. Please use paired-devices in bluetoot hctl to check. Before connecting, make sure that Bluetooth is poweron.
+Attempting to connect to 14:16:9E:62:39:BD
+[NEW] Session /org/bluez/obex/client/session0 [default]
+[NEW] ObjectPush /org/bluez/obex/client/session0 
+Connection successful
+[14:16:9E:62:39:BD]# send /home/root/aaa.txt   //Send files
+Attempting to send /home/root/aaa.txt to /org/bluez/obex/client/session0
+[NEW] Transfer /org/bluez/obex/client/session0/transfer0 
+Transfer /org/bluez/obex/client/session0/transfer0
+        Status: queued
+        Name: aaa.txt
+        Size: 4
+        Filename: /home/root/aaa.txt
+        Session: /org/bluez/obex/client/session0
+[CHG] Transfer /org/bluez/obex/client/session0/transfer0 Status: complete
+[DEL] Transfer /org/bluez/obex/client/session0/transfer0 
+[14:16:9E:62:39:BD]# 
+</pre></div>
+</div>
+<p>After that, the mobile phone will receive the file sent by the board.</p>
+<p><img alt="Image" src="_images/1718954469500_97cc6027_4dc8_458d_871e_4b6a6679acc8.png" /></p>
+</section>
+</section>
+<section id="sdhc-tf-driver-test">
+<h3>3.2 SDHC/TF Driver Test<a class="headerlink" href="#sdhc-tf-driver-test" title="Link to this heading"></a></h3>
+<p>The development board supports hot-swappable SD or TF cards. After inserting an SD or TF card, the system will automatically mount it to the /run/media/mmcblk1p1 or /run/media/mmcblk3p1 directory. When removing it, unmount the SD card or TF card.</p>
+<p>View the files on the SD card with the following commands:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ls -la /run/media/mmcblk1p1/
+total 5
+drw-rw-rw-		2 root		root		4096	Jan		1	00:00	.
+drwxrwxrwx		4 root		root		1024	Jan		1	00:30	..
+-rw-rw-rw-		1 root		root		   0	Jul		5	2019	sdcard.txt
+</pre></div>
+</div>
+<p>Write a file to the SD card with the following command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># echo 1 &gt; /run/media/mmcblk1p1/test.txt			//Write 1 to the test. txt films
+# sync																				//Save the modifications
+</pre></div>
+</div>
+<p>Read the test.txt file from the SD card with the following command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /run/media/mmcblk1p1/test.txt
+1
+</pre></div>
+</div>
+<p>It will read the 1 that just wrote.</p>
+<p><strong>Note: Do not pull out the SD card in the SD card path. It will affect the use of SD card.</strong></p>
+</section>
+<section id="usb-interface-test">
+<h3>3.3 USB Interface Test<a class="headerlink" href="#usb-interface-test" title="Link to this heading"></a></h3>
+<section id="usb-host-interface-storage-test">
+<h4>3.3.1 USB Host Interface Storage Test<a class="headerlink" href="#usb-host-interface-storage-test" title="Link to this heading"></a></h4>
+<p>Demonstration with a mounting USB flash drive; the current USB flash drive test support up to 32G, but no test for 32G or above. The physical connection between the USB flash drive and the development board is as shown in the diagram:</p>
+<p><img alt="Image" src="_images/1718954469930_7e61e93d_1773_48b2_b0cf_c46e4f40e48f.png" /></p>
+<p>At the same time, the terminal will print the information about the USB flash disk. As there are many kinds of USB flash disks, the displayed information may be different.</p>
+<p>Step 1: Connect a USB flash drive to the USB host interface. It will be automatically mounted to the /run/media/sdx1 directory;</p>
+<p>Step 2: Check the USB storage device;</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># df -h
+Filesystem				Size			Used		Available	Use%	Mounted on
+none							851.4M		0				851.4M		0%		/dev
+/dev/mmcblk0p7		6.8G			501.6M	6.3G			7%		/
+tmpfs							882.3M		0				882.3M		0%		/dev/shm
+tmpfs							882.3M		12.0K		882.3M		0%		/tmp
+tmpfs							882.3M		204.0K	882.1M		0%		/run
+/dev/mmcblk0p1		191.6M		1.8M		175.7M		1%		/extp
+/dev/sda1					7.4G			2.1G		5.3G			29%		/run/media/sda1
+# ls -l /run/media/sda1/
+total 5
+drwxrwxrwx		2	root		root		4096	Jan	1	00:41	.
+drwxrwxrwx		5	root		root		1024	Jan	1	00:38	..
+-rwxrwxrwx		1	root		root		0			Jul	5	2019	sdcard.txt
+</pre></div>
+</div>
+<p>Step 3: Write a file to the USB flash disk;</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># echo 1 &gt; /run/media/sda1/test.txt				//Write 1 to test. txt films
+# sync											//Synchronize contents from memory to USB disk
+</pre></div>
+</div>
+<p>Step 4: Read the contents of the USB flash drive.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /run/meida/sda1/test.txt
+1
+</pre></div>
+</div>
+<p>It will read the 1 that just wrote.</p>
+<p><strong>Note: When pulling out the USB flash drive, do not pull it in the USB flash drive path. It will affect the use of U disk.</strong></p>
+</section>
+<section id="otg-test">
+<h4>3.3.2 OTG Test<a class="headerlink" href="#otg-test" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>The ADB service is enabled by default on the development board, and the Micro USB data cable is used to connect the ADB on the PC side;</p></li>
+</ol>
+<p><img alt="Image" src="_images/1718954470235_ace801fc_729a_4edd_8301_ca8f40c3e55a.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Use the otg to host line to connect to the otg port, insert the U disk, and enter the following command to read the contents of the U disk. Mount the USB flash drive to the/run/media/sdx1 directory.</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /sys/bus/platform/devices/soc@1c00000:usbc0@0/usb_host   	// Execute this command to manually convert OTG to USB_HOST, so that the USB flash drive can be recognized.
+# cat /sys/bus/platform/devices/soc@1c00000:usbc0@0/usb_device  // Execute this command to manually convert OTG to USB_DEVICE, so that ADB connection can be used.
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1718954470466_25ccefd4_3d1b_4b04_8df0_bd5cceef993b.jpeg" /></p>
+</section>
+</section>
+<section id="ethernet-drive-test">
+<h3>3.4 Ethernet Drive Test<a class="headerlink" href="#ethernet-drive-test" title="Link to this heading"></a></h3>
+<p>The network usage environment may vary for each development board. In this test example, the network environment is as follows. In actual use, please configure according to the actual network environment.</p>
+<p>The following takes eth0 as an example for command description.</p>
+<section id="manual-configuration-of-eth0">
+<h4>3.4.1 Manual Configuration of Eth0<a class="headerlink" href="#manual-configuration-of-eth0" title="Link to this heading"></a></h4>
+<p><strong>Note: The OKA40i defaults to the eth0 NIC. The boot has set the default eth0 IP address to 192.168.0.232. If you want to modify the default IP, please modify /etc/network/interfaces.</strong></p>
+<p>1. In Linux systems, the “ifconfig” command is used to display or configure network devices. The commonly used command format is as follows:</p>
+<p>#ifconfig network port ip address hw<HW> ether MAC address netmask mask address broadcast broadcast address [up|down]</p>
+<p>2. Set the IP address</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 192.168.1.120			// Set the IP address of eth0 to 192.168.1.120
+# ifconfig eth0 						// Check the current network status
+</pre></div>
+</div>
+<p>3. Modify the mac address</p>
+<p>i. Turn off the network card device first</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 down
+</pre></div>
+</div>
+<p>ii.Modify MAC</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 hw ether 36:C9:E3:F1:B8:05
+</pre></div>
+</div>
+<p>iii.Re-open the network card</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 up
+</pre></div>
+</div>
+<p>4. Set the subnet mask</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 netmask 255.255.255.0
+</pre></div>
+</div>
+<p>5. Set the broadcast address</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 broadcast 192.168.0.255
+</pre></div>
+</div>
+<p>After setting the above information, the contents are as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0
+eth0      Link encap:Ethernet  HWaddr 36:C9:E3:F1:B8:05
+          inet addr:192.168.0.232  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::34c9:e3ff:fef1:b805/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:11404 errors:0 dropped:47 overruns:0 frame:0
+          TX packets:9 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:1458748 (1.3 MiB)  TX bytes:606 (606.0 B)
+          Interrupt:87 Base address:0xb000
+</pre></div>
+</div>
+<p>6. Add/remove default gateway</p>
+<p>Add a default gateway:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># route add default gw 192.168.0.1
+# route
+Kernel IP routing table
+Destination		Gateway				Genmask				Flags	Metric	Ref		Use		Iface
+default				192.168.0.1		0.0.0.0				UG		0				0			0			eth0
+192.168.0.0		*							255.255.255.0	U			0				0			0			eth0
+</pre></div>
+</div>
+<p>To delete a default gateway:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># route del default gw 192.168.0.1
+</pre></div>
+</div>
+<p>7. Turn off and on the network card</p>
+<p>Turn off the eth0 network card:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 down
+</pre></div>
+</div>
+<p>Turn on the eth0 network card:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 up
+</pre></div>
+</div>
+<p>8. ethtool View network information</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ethtool eth0
+Settings for eth0:
+	Supported ports: [ TP MII ]
+	Supported link modes:		10baseT/Half 10baseT/Full
+            							100baseT/Half 100baseT/Full
+	Supports auto-negotiation: Yes
+	Advertised link modes:	10baseT/Half 10baseT/Full
+            							100baseT/Half 100baseT/Full
+	Advertised pause frame use:	No
+	Advertised auto-negotiation:	Yes
+	Speed:	100Mb/s
+	Duplex:	Full
+	Port:	MII
+	PHYAD:	1
+	Transceiver:	external
+	Auto-negotiation:	on
+	Link detected:	yes
+</pre></div>
+</div>
+</section>
+<section id="dynamically-setting-ip-address">
+<h4>3.4.2 Dynamically Setting IP Address<a class="headerlink" href="#dynamically-setting-ip-address" title="Link to this heading"></a></h4>
+<p>If your development board is connected to the router and the router supports DHCP automatic IP address assignment, you can enter the command in Hyper Terminal:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># udhcpc -i eth0
+</pre></div>
+</div>
+<p>It is used to dynamically obtain an IP address, the “-i” parameter is used to specify the network interface name. The network interface name for the wired network on the development board is eth0.</p>
+<p>The DNS server information in the/etc/resolv. conf file is automatically added.</p>
+</section>
+</section>
+<section id="ethernet-related-services">
+<h3>3.5 Ethernet Related Services<a class="headerlink" href="#ethernet-related-services" title="Link to this heading"></a></h3>
+<p>The OKA40i-C development board already starts the following four services in the /etc/init.d/rcS file, and no additional configuration is required. Before testing the Ethernet related services, make sure that the IP has been set and the network port can communicate normally. Please refer to the Ethernet driver test section for setting the IP.</p>
+<p>For the use of Telnet and ssh services, please refer to Section 2.2.2 of the Manual</p>
+<section id="sftp-server-file-service">
+<h4>3.5.1 Sftp-server File Service<a class="headerlink" href="#sftp-server-file-service" title="Link to this heading"></a></h4>
+<p>Open WinSCP in Windows based on the following information:</p>
+<ul class="simple">
+<li><p>Password needs to be added;</p></li>
+<li><p>Modify the configuration file;</p></li>
+<li><p>The default IP address is 192.168.0.232.</p></li>
+</ul>
+<p>Refer to “2.3.2 SSHD Services Use” to modify the configuration file, user name and password.</p>
+<p>Assuming the password is set as “root” and selecting the SFTP protocol, input the IP address and the username/password as “root” and “root” respectively, as shown in the following image:</p>
+<p><img alt="Image" src="_images/1718954470725_5e35e2aa_6dc7_48cc_b459_db8d9043be22.png" /></p>
+<p>The interface after successful login is as shown below:</p>
+<p><img alt="Image" src="_images/1718954471084_e8c1bc51_2acc_4749_8f30_d056147272de.png" /></p>
+</section>
+<section id="vsftp">
+<h4>3.5.2 VSFTP<a class="headerlink" href="#vsftp" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>The development board acts as a server.</strong></p></li>
+</ul>
+<p>When the system is started, the FTP service has been automatically started. You can use the FTP software on the computer to access it. The user name is root, and the password is set to root (before the test, you need to use the password command to set the password, which is set to root here). The default IP of the development board is 192.168.0.232.</p>
+<p>The following figure shows the operation of using FileZilla to access the ftp of the development board on a PC. Open the File/Site Manager and make the following settings.</p>
+<p>Here the computer is the client and the development board is the server.</p>
+<p><img alt="Image" src="_images/1718954471297_a8398978_502b_4985_894e_0bd0ea6babc7.png" /></p>
+<p>After the connection is completed, you can see the development board file.</p>
+<p><img alt="Image" src="_images/1718954471488_b6d4a1ec_4d5f_48c5_adb7_1389967b698c.png" /></p>
+<ul class="simple">
+<li><p><strong>The development board acts as a client.</strong></p></li>
+</ul>
+<p>Assuming the FTP server’s IP address is 192.168.0.72, you can use the following command to transfer and download files using the FTP command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ftpput -u root -p root 192.168.0.72 test.mp4 test.mp4	// Transfer the file from the development board to the FTP server.
+# ftpget -u root -p root 192.168.0.72 test.mp4 test.mp4	// Download the file from the server to the development board.
+</pre></div>
+</div>
+</section>
+</section>
+<section id="watchdog-test">
+<h3>3.6 Watchdog Test<a class="headerlink" href="#watchdog-test" title="Link to this heading"></a></h3>
+<p>Watchdog is a frequently used feature in embedded systems. The watchdog driver specifies a maximum of 16s countdown reboot for the system. To prevent the system from resetting, you can write a reset command to the watchdog within a counting period of 16 seconds to reset the timer. The following commands cannot be used simultaneously.</p>
+<p>Parameter Description:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Parameter</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>settimeout</p></td>
+<td><p>Turn on the watchdog, set the reset time, and do not feed the dog</p></td>
+<td><p>Reset time setting shall be greater than 2S.</p></td>
+</tr>
+<tr class="row-odd"><td><p>keepalive</p></td>
+<td><p>Turn on the watchdog, set the reset time, and feed the dog at a timer of 2s.</p></td>
+<td><p>Reset time setting shall be greater than 2S.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: During testing, only one of the two parameters can be used. You can use the “ps” command to check the processes and ensure that there is only one watchdog process running. Turn on the watchdog and set the reset time to test.</strong></p>
+<p>Execute the 10s reset command (the minimum reset time interval can be set as 2S), and the development board will be reset after 10s:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_watchdog /dev/watchdog settimeout 10 &amp;				//10s reset command
+[1] 1377
+# HELLO! BOOT0 is starting!								//Restart 10s later
+[     0.35]HELLO! BOOT0 is starting!
+[     0.39]boot0 commit : 74581757d98a20b111500764817c436cdafbdae3
+[     0.46]boot0 version : 4.0
+[     0.50]set pll start
+</pre></div>
+</div>
+<p>Turn on the watchdog, set the reset time, and conduct the dog feeding test at a fixed time of 2S.</p>
+<p>The parameter keepalive of watchdog is to set the reset time and feed the dog for 2 seconds, and 10 is to set the reset time for 10 seconds.</p>
+<p>After closing the watchdog background process, it will stop feeding the dog and reset after 10s.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_watchdog /dev/watchdog keepalive 10 &amp;		//2s watchdog feeding command
+[1] 1374
+# ps
+1374 root     /usr/bin/watchdog /dev/watchdog keepalive 10
+# kill 1374																				//Kill the process
+# HELLO! BOOT0 is starting!												//Restart 10s later
+[     0.35]HELLO! BOOT0 is starting!
+[     0.39]boot0 commit : 74581757d98a20b111500764817c436cdafbdae3
+</pre></div>
+</div>
+</section>
+<section id="play-record-test">
+<h3>3.7 Play/Record Test<a class="headerlink" href="#play-record-test" title="Link to this heading"></a></h3>
+<p><font style="color:#000000;">The A40i’s internal Audio Codec is a high-quality stereo audio codec with a headphone amplifier. Users can use the ALSA audio recording, playback, and configuration tools included in the file system for testing.</p>
+<p>1. Playback test</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># aplay -Dhw:0,0 /root/wo.wav						//Play the audio file wo.wav
+Playing WAVE &#39;/usr/bin/Rear_Center.wav&#39; : Signed 16 bit Little Endian, Rate 22050 Hz, Stereo
+</pre></div>
+</div>
+<p>2. Recording Test</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># arecord -Dhw:0,0 -r 44100 -f S16_LE -d 10 record.wav	//Record the sound 
+Recording WAVE &#39;record.wav&#39; : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
+</pre></div>
+</div>
+<p>Play the recording:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># aplay -Dhw:0,0 record.wav								//Play the recording
+Playing WAVE &#39;record.wav&#39; : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
+</pre></div>
+</div>
+</section>
+<section id="camera-test">
+<h3>3.8 Camera Test<a class="headerlink" href="#camera-test" title="Link to this heading"></a></h3>
+<p><strong>Note: This function is not supported at present.</strong></p>
+</section>
+<section id="rtc-clock-drive-test">
+<h3>3.9 RTC Clock Drive Test<a class="headerlink" href="#rtc-clock-drive-test" title="Link to this heading"></a></h3>
+<p><strong>Note: Make sure that the coin cell battery has been installed on the board before testing.</strong></p>
+<p>RTC test mainly involves setting and checking software and hardware time using the “date” and “hwclock” tools. The test verifies whether the software clock reads the RTC clock correctly when the operating system restarts.</p>
+<p>Set the time as follows command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># date -s 2015.05.29-09:47:13
+Fri May 29 09:47:13 UTC 2015
+</pre></div>
+</div>
+<p><strong>Description: format set by date: [YYYY.]MM.DD-hh:mm[:ss], the year can be written as 2-digit YYY or 4-digit YYYYY, MM is the month, DD is the day, hh is the hour, mm is the minute, and seconds can be expressed as ss.</strong></p>
+<p>Save time to clock chip:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># hwclock -w		//Without this step, the system time will not be updated at the next boot
+</pre></div>
+</div>
+<p>If the time zone has been modified, execute the following command to save the time.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># hwclock -wu		//Save to RTC chip at UTC time
+</pre></div>
+</div>
+<p>Power off and restart to check whether the time is saved:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># date 
+</pre></div>
+</div>
+<p>More usage of the data and hwclock commands are as follows:</p>
+<p>The set time command help is as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># date -help
+Usage: date [OPTIONS] [+FMT] [TIME]
+
+Display time (using +FMT), or set time
+
+	[-s,--set] TIME Set time to TIME
+	-u,--utc							Work in UTC (don&#39;t convert to local time)
+	-R,--rfc-2822					Output RFC-2822 compliant date string
+	-I[SPEC]							Output ISO-8601 compliant date string
+              					SPEC=&#39;date&#39; (default) for date only,
+              					&#39;hours&#39;, &#39;minutes&#39;, or &#39;seconds&#39; for date and
+              					time to the indicated precision
+	-r,--reference FILE		Display last modification time of FILE
+	-d,--date TIME				Display TIME, not &#39;now&#39;
+	-D FMT								Use FMT for -d TIME conversion
+
+Recognized TIME formats:
+	hh:mm[:ss]
+	[YYYY.]MM.DD-hh:mm[:ss]
+	YYYY-MM-DD hh:mm[:ss]
+	[[[[[YY]YY]MM]DD]hh]mm[.ss]
+	&#39;date TIME&#39; form accepts MMDDhhmm[[YY]YY][.ss] instead 
+</pre></div>
+</div>
+<p>The help command for hwclock is as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># date -help
+Usage: hwclock [-r|--show] [-s|--hctosys] [-w|--systohc] [-t|--systz] [-l|--localtime] [-u|--utc] [-f|--rtc FILE]
+
+Query and set hardware clock (RTC)
+
+	-r				Show hardware clock time
+	-s				Set system time from hardware clock
+	-w				Set hardware clock from system time
+	-t				Set in-kernel timezone, correct system time
+      			if hardware clock is in local time
+	-u				Assume hardware clock is kept in UTC
+	-l				Assume hardware clock is kept in local time
+	-f	FILE 	Use specified device (e.g. /dev/rtc2)
+</pre></div>
+</div>
+</section>
+<section id="g-module-test">
+<h3>3.10 4G Module Test<a class="headerlink" href="#g-module-test" title="Link to this heading"></a></h3>
+<p><strong>Note: 4G module is optional. If necessary, please contact Forlinx Sales.</strong></p>
+<p>Prepare a 4G SIM card, a 4G EC20 module, and a 4G antenna. Insert the module into the 4G module slot and secure it. Insert the SIM card into the adjacent slot. Connect the antenna to the main ipex antenna connector. Power on the device. (The EC20 module supports IoT cards, and for some IoT cards, it may require configuring a user name and password).</p>
+<p>1. Check whether the node under/dev exists:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ls -la /dev/qcqmi0
+/dev/qcqmi0
+</pre></div>
+</div>
+<p>If the qcqmi0 node is present, the 4G module is correctly identified and loaded.</p>
+<p>2. Dialing</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># quectel-CM &amp;
+[01-01_00:33:08:257] WCDMA&amp;LTE_QConnectManager_Linux&amp;Android_V1.1.34
+[01-01_00:33:08:258] quectel-CM profile[1] = (null)/(null)/(null)/0, pincode = (null)
+[01-01_00:33:08:263] Find /sys/bus/usb/devices/1-1.3 idVendor=2c7c idProduct=0125
+[01-01_00:33:08:263] Find /sys/bus/usb/devices/1-1.3:1.4/net/usb0
+[01-01_00:33:08:263] Find usbnet_adapter = usb0
+[01-01_00:33:08:264] Find /sys/bus/usb/devices/1-1.3:1.4/GobiQMI/qcqmi0
+[01-01_00:33:08:264] Find qmichannel = /dev/qcqmi0
+[01-01_00:33:08:288] Get clientWDS = 7
+[01-01_00:33:08:320] Get clientDMS = 8
+[01-01_00:33:08:351] Get clientNAS = 9
+[01-01_00:33:08:385] Get clientUIM = 10
+[01-01_00:33:08:416] Get clientWDA = 11
+[01-01_00:33:08:448] requestBaseBandVersion EC20CEHDLGR06A06M1G	//Actual firmware version of the module
+[01-01_00:33:08:545] requestGetSIMStatus SIMStatus: SIM_READY		//SIM card identification
+[01-01_00:33:08:576] requestGetProfile[1] ctnet///0						//Operator
+[01-01_00:33:08:608] requestRegistrationState2 MCC: 460, MNC: 11, PS: Attached, DataCap: LTE
+[01-01_00:33:08:640] requestQueryDataCall ipv4ConnectionStatus: DISCONNECTED
+[01-01_00:33:08:704] requestRegistrationState2 MCC: 460, MNC: 11, PS: Attached, DataCap: LTE
+[01-01_00:33:08:736] requestSetupDataCall WdsConnectionipv4Handle: 0x86ad3a90
+[01-01_00:33:08:832] requestQueryDataCall ipv4ConnectionStatus: CONNECTED
+[01-01_00:33:08:865] ifconfig usb0 up
+[01-01_00:33:08:884] busybox udhcpc -f -n -q -t 5 -i usb0
+[01-01_00:33:08:898] udhcpc (v1.18.3) started
+[01-01_00:33:08:970] Sending discover...
+[01-01_00:33:09:071] Sending select for 10.51.194.11...
+[01-01_00:33:09:190] Lease of 10.51.194.11 obtained, lease time 7200
+[01-01_00:33:09:210] deleting routers
+route: SIOCDELRT: No such process
+[01-01_00:33:09:225] adding dns 222.222.222.222
+[01-01_00:33:09:226] adding dns 222.222.202.202
+</pre></div>
+</div>
+<p><strong>Note: In addition, the above test is based on ordinary mobile phones, and the Internet of Things card needs special configuration. Consult the service hall for details.</strong></p>
+<p>3. Test network connection and disconnection</p>
+<p>Input command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ifconfig eth0 down
+# ping -c 3 www.baidu.com
+ping www.baidu.com -c 3
+PING www.baidu.com (220.181.38.149): 56 data bytes
+64 bytes from 220.181.38.149: seq=0 ttl=51 time=44.181 ms
+64 bytes from 220.181.38.149: seq=1 ttl=51 time=58.372 ms
+64 bytes from 220.181.38.149: seq=2 ttl=51 time=66.671 ms
+--- www.baidu.com ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 44.181/56.408/66.671 ms
+</pre></div>
+</div>
+<p>4. 4G Hotspot</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># /usr/bin/quectel-CM &amp;                                               // 4G dialing
+# echo 1 &gt; /proc/sys/net/ipv4/ip_forward                               // Enable IP forwarding
+# iptables -t nat -A POSTROUTING -o usb0 -j MASQUERADE    // usb0 is the network card recognized by the 4G module. Set forwarding rules.
+# insmod /lib/modules/$(uname -r)/8723bu.ko                           // Mount the driver module
+# ifconfig wlan0 192.168.18.1                                                     // Set the IP address
+# udhcpd -f /etc/udhcpd.conf &amp;                                                   // Configure WiFi address, gateway, etc.
+# /usr/sbin/hostapd -d /etc/hostapd.conf &amp;                         // Set encryption method, username, password, etc.
+</pre></div>
+</div>
+<p>Generate an AP node with the ssid of “test” and the password of “12345678”. Mobile phones can connect to “test” and access the Internet.</p>
+</section>
+<section id="uart-serial-port-test">
+<h3>3.11 UART Serial Port Test<a class="headerlink" href="#uart-serial-port-test" title="Link to this heading"></a></h3>
+<p>1. Interface description</p>
+<p>The OKA40I-C development board is provided with 6 UART ports, as shown in the following table:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>serial port</p></th>
+<th class="head"><p>uart0</p></th>
+<th class="head"><p>uart2</p></th>
+<th class="head"><p>uart3</p></th>
+<th class="head"><p>uart4</p></th>
+<th class="head"><p>uart5</p></th>
+<th class="head"><p>uart7</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>DEGUG(RS232)</p></td>
+<td><p>TTL five-wire serial port</p></td>
+<td><p>TTL five-wire serial port</p></td>
+<td><p>TTL</p></td>
+<td><p>RS485</p></td>
+<td><p>TTL</p></td>
+</tr>
+<tr class="row-odd"><td><p>Node</p></td>
+<td><p>/dev/ttyS0</p></td>
+<td><p>/dev/ttyS2</p></td>
+<td><p>/dev/ttyS3</p></td>
+<td><p>/dev/ttyS4</p></td>
+<td><p>/dev/ttyS5</p></td>
+<td><p>/dev/ttyS7</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: UART0 is a debug serial port and cannot be used as a normal serial port test.</strong></p>
+<p>2. Hardware connection</p>
+<p>Connect the Forlinx TTL to RS232 module to the development board UART2 (ttyS2) or UART3 (ttyS3), connect the serial line to the RS232 device, connect the hardware, and power up the development board.</p>
+<p>3. Software test</p>
+<p>Take UART3 as an example to conduct the test. Enter the following command in the terminal, tty _ test will continuously send out “abcdefg” after it is started, and the computer receives the data.</p>
+<p>The UART2 port is similar and can be modified to the corresponding equipment number.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_uart /dev/ttyS3 9600			//The device is/dev/ttyS3, which is serial port 3, and the baud rate is 9600
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1718954471730_d01c81c7_c359_4888_a634_90c0d9b6f27c.png" /></p>
+<p>Take UART2 as an example, the triangle arrow points to the first pin, the third pin is TX, and the eighth pin is RX.</p>
+<p><img alt="Image" src="_images/1718954472060_97987b08_430f_4d29_9512_1a891fc50903.png" /></p>
+</section>
+<section id="rs485-test">
+<h3>3.12 RS485 Test<a class="headerlink" href="#rs485-test" title="Link to this heading"></a></h3>
+<p>The default UART5 is used for the RS485 function, and the corresponding node is/dev/ttyS5. The RS485 to 232 module is used to connect with the computer.</p>
+<p>Enter the following command in the terminal, and the UART program will continuously send out “abcdefg” after it is started.</p>
+<p><strong>Note: The RS485 transceiver direction is controlled by the hardware circuit, and the software is not involved.</strong></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_uart /dev/ttyS5 9600		//The device is/dev/ttyS5, which is serial port 5, and the baud rate is 9600
+</pre></div>
+</div>
+<p>Computer serial port assistant (in User Profile \ Tools \ Serial Port Assistant), after sending abcdefg, receive the abcdefg sent by RS485.</p>
+<p><img alt="Image" src="_images/1718954472279_5c35ae99_5d44_42e8_8b62_94f4a8d8be54.png" /></p>
+</section>
+<section id="database-test">
+<h3>3.13 Database Test<a class="headerlink" href="#database-test" title="Link to this heading"></a></h3>
+<p>SQLite3 is a lightweight embedded database with a very low resource footprint, fast processing speeds, and no database server processes to install. The ported version is 3.38.5, which can be used directly.</p>
+<p>Open the database and enter sqlite3 as follows:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># sqlite3
+SQLite version 3.15.0 2016-10-14 10:20:30
+Enter &quot;.help&quot; for usage hints.
+Connected to a transient in-memory database.
+Use &quot;.open FILENAME&quot; to reopen on a persistent database.
+sqlite&gt; create table tbl1 (one varchar(10), two smallint);	//Create a database table named tbl1
+sqlite&gt; insert into tbl1 values(&#39;hello!&#39;,10);								//Insert the data &#39;hello!|10&#39; into the database
+sqlite&gt; insert into tbl1 values(&#39;goodbye&#39;, 20);							//Insert the data &#39;goodbye|20&#39; into the database
+sqlite&gt; select * from tbl1; 												//Read the contents of the database table tbl1
+	hello!|10
+	goodbye|20
+sqlite&gt; .quit 																							//Exit
+</pre></div>
+</div>
+</section>
+<section id="spi-test">
+<h3>3.14 SPI Test<a class="headerlink" href="#spi-test" title="Link to this heading"></a></h3>
+<p>1-way SPI chip select is supported by default, corresponding to node /dev/spidev2.0 respectively.</p>
+<p>Short MOSI and MISO, corresponding to pins 8 and 10 of the SPI2 interface</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_spi -D /dev/spidev2.0				//The SPI program runs, and -D specifies the device spi2
+spi mode: 0
+bits per word: 8
+max speed: 500000 Hz (500 KHz)
+
+FF FF FF FF FF FF
+40 00 00 00 00 95
+FF FF FF FF FF FF
+FF FF FF FF FF FF
+FF FF FF FF FF FF
+DE AD BE EF BA AD
+F0 0D
+</pre></div>
+</div>
+</section>
+<section id="key-test">
+<h3>3.15 Key Test<a class="headerlink" href="#key-test" title="Link to this heading"></a></h3>
+<p>The key test refers to the three keys K1, K2 and K5 in the lower right corner of the carrier board from left to right (there is a problem with the printed information in the program, only the usability is verified).</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_keytest
+Input driver version is 1.0.1
+Input device ID: bus 0x19 vendor 0x1 product 0x1 version 0x100
+Input device name: &quot;sunxi-keyboard&quot;
+Supported events:
+	Event type 0 (Sync)
+	Event type 1 (Key)
+		Event code 28 (K5)
+		Event code 102 (Home)
+		Event code 114 (K1)
+Key, K1(114, 01)			//K1	按下
+Key, K1(114, 00)			//K1	抬起
+
+Key, K5(28, 01)				//K2	按下
+Key, K5(28, 00)				//K2	抬起
+
+Key, Home(102, 01)		//K5按下
+Key, Home(102, 00)		//K5抬起
+</pre></div>
+</div>
+</section>
+<section id="display-test">
+<h3>3.16 Display Test<a class="headerlink" href="#display-test" title="Link to this heading"></a></h3>
+<p>The screen display currently supports Forlinx’s LCD 7-inch 1024x600 capacitive touch screen, LVDS 10.1-inch 1280x800 capacitive touch screen, and mipi 1024x600 capacitive touch screen.</p>
+<p><strong>Note: The development board supports ft5x06 and gt911 touch drivers. Calibrate before testing the touch function. Refer to “2.5 Screen Calibration” for the calibration method.</strong></p>
+<p>The desktop displayed at startup is only used as a QT demonstration and has no corresponding function.</p>
+<section id="backlight-test">
+<h4>3.16.1 Backlight Test<a class="headerlink" href="#backlight-test" title="Link to this heading"></a></h4>
+<p><strong>Backlight Adjustment</strong></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># killall Launcher
+# fbinit 0
+# fltest_backlight_gui
+</pre></div>
+</div>
+<p>Slide the progress bar to adjust the backlight.</p>
+</section>
+<section id="touch-test">
+<h4>3.16.2 Touch Test<a class="headerlink" href="#touch-test" title="Link to this heading"></a></h4>
+<p>Tslib test program test touch</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ts_print
+1434592025.966377:    560    446    255		//Press
+1434592025.976749:    560    446      0		//Release
+</pre></div>
+</div>
+<p>Touch any point to check whether the reported coordinate value is correct.</p>
+</section>
+</section>
+<section id="video-play-test">
+<h3>3.17 Video Play Test<a class="headerlink" href="#video-play-test" title="Link to this heading"></a></h3>
+<p><font style="color:#FF0000;">Note: The 2G memory SoM is not supported to play videos.</font></p>
+<p>Before the test, please close the desktop and clear the screen display to avoid interference with the image.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># killall Launcher
+# fbinit 0
+</pre></div>
+</div>
+<p>Enable video player</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># xplayerdemo
+……
+demoPlayer# set url:/root/translate.mp4		//Set the video path
+……
+info: prepare ok.
+preparing...
+demoPlayer# play  //Playback
+……
+</pre></div>
+</div>
+<p>Play the video file translate.mp4 at this point.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>demoPlayer# quit  //Exit
+</pre></div>
+</div>
+<p>When playback is complete, type quit to exit.</p>
+</section>
+<section id="led-test">
+<h3>3.18 LED Test<a class="headerlink" href="#led-test" title="Link to this heading"></a></h3>
+<p>LED5 and LED6 on the OKA40I carrier board and D1 on the SoM are user LEDs.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># echo 1 &gt; /sys/class/leds/led6/brightness				//led6 on
+# echo 0 &gt; /sys/class/leds/led6/brightness	      //led6 off
+
+# echo 1 &gt; /sys/class/leds/led5/brightness				//led5 on
+# echo 0 &gt; /sys/class/leds/led5/brightness	      //led5 off
+
+# echo 1 &gt; /sys/class/leds/core/brightness				//D1 off
+# echo 0 &gt; /sys/class/leds/core/brightness	      //D1 on
+# echo heartbeat &gt; /sys/class/leds/core/trigger   //Restore D1 to heartbeat state
+</pre></div>
+</div>
+</section>
+<section id="frequency-test">
+<h3>3.19 Frequency Test<a class="headerlink" href="#frequency-test" title="Link to this heading"></a></h3>
+<p>1. All cpufreq governor types supported in the current kernel:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+conservative ondemand userspace powersave performance schedutil
+</pre></div>
+</div>
+<p>The userspace indicates user mode, in which other users’ programs can adjust the CPU frequency.</p>
+<p>2. View the frequency gear supported by the current CPU:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies
+480000 600000 720000 912000 1008000 1104000 1200000
+</pre></div>
+</div>
+<p>3. Set to user mode, and the modification frequency is 480000:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># echo userspace &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+# echo 480000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+</pre></div>
+</div>
+<p>4. View the current frequency:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
+480000
+</pre></div>
+</div>
+</section>
+<section id="temperature">
+<h3>3.20 Temperature<a class="headerlink" href="#temperature" title="Link to this heading"></a></h3>
+<p>View the temperature value:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># cat /sys/class/thermal/thermal_zone0/temp
+44472
+</pre></div>
+</div>
+<p>The temperature value is 44°C.</p>
+</section>
+<section id="sata-hard-drive-support">
+<h3>3.21 SATA Hard Drive Support<a class="headerlink" href="#sata-hard-drive-support" title="Link to this heading"></a></h3>
+<p>The hard disk is formatted as ext4, connected to the development board, and the SATA hard disk is mounted in the/run/media/sdx1/directory to read and write data.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># df -Th
+Filesystem			Type			Size		Used		Available	Use%	Mounted on
+none						devtmpfs	344.4M	0				344.4M		0%		/dev
+/dev/mmcblk0p7	ext4			7.0G		474.6M	6.2G			7%		/
+tmpfs						tmpfs			375.3M	0				375.3M		0%		/dev/shm
+tmpfs						tmpfs			375.3M	12.0K		375.2M		0%		/tmp
+tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
+/dev/mmcblk0p1	ext4			8.7M		172.0K	7.8M			2%		/extp
+/dev/sda1				ext4			915.9G	4.1G		865.2G		0%		/run/media/sda1
+</pre></div>
+</div>
+</section>
+</section>
+<section id="qt-platform-function-test">
+<h2>4. QT Platform Function Test<a class="headerlink" href="#qt-platform-function-test" title="Link to this heading"></a></h2>
+<section id="network-test">
+<h3>4.1 Network Test<a class="headerlink" href="#network-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_network_gui
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>STATIC mode</strong></p></li>
+</ul>
+<p>After clicking on the network configuration icon, select the STATIC mode as shown in the figure. You can then configure the IP address, subnet mask, gateway, and DNS settings. Once you have set the parameters,</p>
+<p>Click “Apply and Restart Network”.</p>
+<p><img alt="Image" src="_images/1718954482147_bcede650_b9a1_46a5_87e2_afb858453ce2.png" /></p>
+<p><img alt="Image" src="_images/1718954482385_cde78491_b9ad_4760_b16a_d5b2d51bc61d.png" /></p>
+<ul class="simple">
+<li><p><strong>DHCP mode</strong></p></li>
+</ul>
+<p><strong>Note: Testing must be done on a router that supports automatic IP</strong></p>
+<p>Check DHCP, select the NIC device needing to be configured, and click “Apply and Restart Network” at the bottom of the interface to restart the network and get the IP.</p>
+<p><img alt="Image" src="_images/1718954482617_429036af_3739_4425_ae24_a12c0c3ef765.png" /></p>
+</section>
+<section id="g-test">
+<h3>4.2 4G Test<a class="headerlink" href="#g-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_4g_gui
+</pre></div>
+</div>
+<p>The “4G” test program is used to test the OKA40i external 4G module (EC20). Before testing, power off the development board, insert the SIM card into the 4G module (ensure correct SIM direction), and launch the test application. This test employs the EC20 module as a reference.</p>
+<p><img alt="Image" src="_images/1718954482836_43c41331_9369_4500_a406_c32fcaf85499.png" /></p>
+<p><img alt="Image" src="_images/1718954483201_1bee571d_e668_467a_8f6d_3ec926226129.png" /></p>
+<p>Click the “connect” button, the program will automatically enter the dial-up process and get the IP settings DNS, etc., wait a few seconds, and click the ping test buttons.</p>
+</section>
+<section id="ping-test">
+<h3>4.3 Ping Test<a class="headerlink" href="#ping-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_ping_gui
+</pre></div>
+</div>
+<p>“Ping” is a graphical tool for network testing, offering a user-friendly interface for ping operations.</p>
+<p><img alt="Image" src="_images/1718954483462_c4f45941_d8ba_42ed_b1ea_f0438e6744ee.png" /></p>
+<p>Write the target ip needing ping in the hostname field; after clicking the ping button, the RESULT column will indicate the result, click stop to end the ping test and clear to clean the information in the result.</p>
+<p>As shown in the figure, the network connection is smooth.</p>
+<p><img alt="Image" src="_images/1718954483780_daa84607_9603_4275_a421_339315182d8d.png" /></p>
+</section>
+<section id="wifi-test">
+<h3>4.4 WiFi Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_wifi_gui
+</pre></div>
+</div>
+<p><strong><font style="color:#000000;">Descriptions:</font></strong></p>
+<p>Solder USB BL-M8723DU wifi 2.4G chip on OKA40i carrier board.</p>
+<p>“WIFI” is a tool for configuring and testing the STA (station) mode of Wi-Fi.</p>
+<p>1. Click icon to enter test interface, select module from dropdown, enter SSID for Wi-Fi connection.</p>
+<p>Enter router name &amp; password in PAWD, click “connect” to WiFi；</p>
+<p><img alt="Image" src="_images/1718954484116_69f905b7_2855_4c18_98ca_dabf577ac25f.png" /></p>
+<p>2. After the connection is successful, click “ping” to test the network after setting the IP.</p>
+<p><img alt="Image" src="_images/1718954484338_0dd9d6df_0669_4d6c_92ba_c16165867ce7.png" /></p>
+</section>
+<section id="browser-test">
+<h3>4.5 Browser Test<a class="headerlink" href="#browser-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_browser_gui
+</pre></div>
+</div>
+<p>Click the browser icon to enter the browser. Please ensure that the network is smooth. Before accessing the external network, you need to ensure that the DNS is available. When the browser is started, the default access is to the official website of Forlinx embedded. The interface is as follows:</p>
+<p><img alt="Image" src="_images/1718954484782_6ff63353_405b_45e6_b894_fd19a0e64cbe.png" /></p>
+<p>Note: If the time of the development board is abnormal, it will cause problems with the certificate.</p>
+</section>
+<section id="rtc-test">
+<h3>4.6 RTC Test<a class="headerlink" href="#rtc-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_rtc_gui
+</pre></div>
+</div>
+<p><strong>Note: Make sure that the coin cell battery has been installed on the board and that the battery voltage is normal.</strong></p>
+<p>RTC test includes setting time, power cycling, rerunning test software, and verifying RTC sync.</p>
+<p>Run the RTC test software to view and set the current system time with the following interface:</p>
+<p><img alt="Image" src="_images/1718954485150_8e827c1a_66d4_4211_87c2_965a97793f95.png" /></p>
+<p>Click “set” to adjust the time settings, then click “save” to finish the settings. Then power off and power on after a period of time. Run the RTC test software again to read the time automatically. It can be seen that the RTC time has been synchronized and the RTC test is normal.</p>
+</section>
+<section id="id1">
+<h3>4.7 Key Test<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_keypad_gui
+</pre></div>
+</div>
+<p>The “Keypad” is used to test whether the built - in keys of the platform are available. By detecting whether the corresponding keys turn blue after being pressed, you can check whether the key functions are normal. The interface is as follows:</p>
+<p><img alt="Image" src="_images/1718954485347_dbbc2f93_4aae_4bd6_8cac_4a84f863e48b.png" /></p>
+<p>The OKA40i platform has five physical keys: VOL-, VOL+, and HOME, which correspond to V-, V+, and Home respectively. When a key is pressed, the corresponding key in the test application will turn blue, indicating that the key function is normal.</p>
+<p><strong>Note:</strong> <strong>The application can only report the key value when the key is pressed.</strong></p>
+</section>
+<section id="opengl-test">
+<h3>4.8 OpenGL Test<a class="headerlink" href="#opengl-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_opengl_gui
+</pre></div>
+</div>
+<p>Click the OpenGL icon to test.</p>
+<p><img alt="Image" src="_images/1718954485540_6c6f238e_c6e9_4abf_9b02_4a641a5569d3.png" /></p>
+<p>Click on “File” in the top left corner and select “Exit” and return to the main interface.</p>
+</section>
+<section id="id2">
+<h3>4.9 Backlight Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_backlight_gui
+</pre></div>
+</div>
+<p>“BackLight” is an LCD backlight adjustment App with a left-right progress bar for brightness control. Click to open the interface as follows:</p>
+<p><img alt="Image" src="_images/1718954485767_d398e588_1ccb_422f_b5ae_c084197d6a4b.png" /></p>
+<p>Drag the slider in the interface to set the LCD backlight brightness. Level 0 is no backlight and level 255（150） is the highest level.</p>
+</section>
+<section id="sqlite3-database-test">
+<h3>4.10 SQLite3 Database Test<a class="headerlink" href="#sqlite3-database-test" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_books_gui
+</pre></div>
+</div>
+<p>Click on the icon to access the database testing interface.</p>
+<p><img alt="Image" src="_images/1718954486017_389d4e64_a290_49f1_ae39_f3940b3fac47.png" /></p>
+<p>Select the column that needs to be modified, and click on an empty area after making the changes.</p>
+<p><img alt="Image" src="_images/1718954486280_98982cef_5439_4c59_a022_829502d1bd0a.png" /></p>
+</section>
+<section id="watchdog">
+<h3>4.11 Watchdog<a class="headerlink" href="#watchdog" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_watchdog_gui
+</pre></div>
+</div>
+<p>“WatchDog” tests the functionality of the watchdog feature. Interface as follows:</p>
+<p><img alt="Image" src="_images/1718954486574_9fe4e9eb_e165_4888_994d_44f4e04f4b9d.png" /></p>
+<p>Check “feed dog” and click the “open watchdog” button. At this time, the watchdog function will start, and the program will feed the dog. Under normal circumstances, the system will not restart.</p>
+<p>When unchecking “feed dog”, click the “open watchdog” button, the watchdog function will be started, and the program will not feed the dog. After opening the watchdog for about 10 seconds, the system will restart, indicating that the watchdog function is normal.</p>
+</section>
+</section>
+<section id="image-flashing">
+<h2>5. Image Flashing<a class="headerlink" href="#image-flashing" title="Link to this heading"></a></h2>
+<p>The default image of the development board is 1024x600. If you need to burn the image, you can do it as follows:</p>
+<p>At present, the board supports OTG and SD card flashing. If only a certain part of the debugging process needs to be burned, an online individual update of the development board firmware can also be used.</p>
+<p>See Section 2.4 for the name of the flashed image. Storage location: User Profile \ Linux \ image \</p>
+<p>OKA40i-C image comparison table:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Screen</strong></p></th>
+<th class="head"><p><strong>Image</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>7-inch LCD-1024x600</p></td>
+<td><p>a40i_h_linux_OKA40i-C_uart0_1024x600.img</p></td>
+</tr>
+<tr class="row-odd"><td><p>7-inch mipi-1024x600</p></td>
+<td><p>a40i_h_linux_OKA40i-C_uart0_1024x600mipi.img</p></td>
+</tr>
+<tr class="row-even"><td><p>10.1-inch LVDS-1280x800</p></td>
+<td><p>a40i_h_linux_OKA40i-C_uart0_1280x800.img</p></td>
+</tr>
+</tbody>
+</table>
+<section id="flashing-with-sd-card">
+<h3>5.1 Flashing with SD Card<a class="headerlink" href="#flashing-with-sd-card" title="Link to this heading"></a></h3>
+<p>After the SD card tool (Linux\tools\PhoenixCard4.2.4.7z.rar) is unzipped and installed under Windows, double click the card-making tool PhoenixCard.exe to open the tool.</p>
+<p><img alt="Image" src="_images/1718954495275_44d256b6_000b_4785_984b_84894c3bbb85.png" /></p>
+<p>Insert the SD card reader into the USB port of the computer, click [Firmware], select the firmware image of the A40i, select [Card Mass Production], and click [Burn Card].</p>
+<p><img alt="Image" src="_images/1718954495479_0352e97d_0c6d_4056_8298_9db5d24d5f81.png" /></p>
+<p>After making the SD card, insert the SD card into the card slot of the development board and power up. Wait for the programming to be completed.</p>
+<p><strong>Note: Set the DIP switch to “SD card boot”(OFF) for flashing, and after the flashing process is complete, switch it back to “EMMC boot” (ON)</strong></p>
+<p>After the flashing process is complete, the status is as follows:</p>
+<p><img alt="Image" src="_images/1718954495656_6c18fe3b_c3f6_4d17_b212_e436a8f06486.png" /></p>
+</section>
+<section id="flashing-with-otg">
+<h3>5.2 Flashing with OTG<a class="headerlink" href="#flashing-with-otg" title="Link to this heading"></a></h3>
+<p>Unzip the OTG programming tool (Linux \ Tools \ Phoenix Suit. Zip) on the computer, and double-click the installer to run the installation. After installation, double-click the PhoenixSuit. exe to open the OTG programming tool, as shown in the following figure:</p>
+<p><img alt="Image" src="_images/1718954495918_42e23e05_a9ea_4bcc_ad5a_b4200cb77ee6.png" /></p>
+<p>Click [One-click Flash], click [Browse], and select the image of the firmware to be flashed;</p>
+<p>Connect the OTG port of the development board to the USB port of the computer using a data cable. When powering on, you need to press and hold the FEL (K3) key. Then, click the RESET (K7) button. The burning tool will pop up a window indicating that the SoM has entered the OTG burning mode. After that, release the FEL (K3) key to start the burning process. The burning tool will pop up a window prompting you to click “Yes”. After the burning is completed, the situation is as follows:</p>
+<p><img alt="Image" src="_images/1718954496242_6526646b_b2a4_4a0f_98bc_1faee1514964.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. If the programming tool cannot identify the device, please check the device manager to see if there is a problem with the driver. If there is a yellow exclamation mark, you need to reinstall the driver. If there is no identification, please install the driver or check the programming line;</strong></p>
+<p><strong>2. During the test, it was found that some Windows PCs cannot complete the burning process after installing the OTG burning tool. You can try replacing the computer for testing. Alternatively, open any virtual system in the computer’s VMware and then use PhoenixSuit.exe, and the burning process should work properly.</strong></p>
+</section>
+<section id="separate-firmware-update-for-development-board">
+<h3>5.3 Separate Firmware Update for Development Board<a class="headerlink" href="#separate-firmware-update-for-development-board" title="Link to this heading"></a></h3>
+<p><strong>Note: The path of the firmware used for the separate update of the development board: OKA40i-linux-sdk/out/pack _ out/, which is the path in the source code and can be used only after the source code is compiled to generate an image. The compilation process is described in OKA40i_C-C-linux-3.10 Compilation Manual.doc, and the firmware is as follows:</strong></p>
+<p>boot_package.fex   uboot</p>
+<p>Boot.fex            kernel</p>
+<p>env.fex        #uboot Environment variables</p>
+<p>Once the board boots, assume that the firmware is stored under/root:</p>
+<p>Uboot location: The image file is located at the EMMC offset 32800, and the 24576 is the uboot backup address.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># dd if=boot_package.fex  of=/dev/mmcblk0  bs=512 seek=32800
+# dd if=boot_package.fex  of=/dev/mmcblk0  bs=512 seek=24576
+# sync
+</pre></div>
+</div>
+<p>env environment variable partition:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># dd if=env.fex of=/dev/mmcblk0p2  bs=512
+# sync
+</pre></div>
+</div>
+<p>Boot partition: (kernel)</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># dd if=boot.fex of=/dev/mmcblk0p3 bs=512
+# dd if=boot.fex of=/dev/mmcblk0p4 bs=512
+# sync
+</pre></div>
+</div>
+<p>Replace the boot logo separately:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># mkdir  boot-resource
+# mount -t vfat /dev/mmcblk0p1 boot-resource
+</pre></div>
+</div>
+<p>Replace boot-resource/bootlogo.bmp</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># sync
+</pre></div>
+</div>
+</section>
+<section id="flashing-frequently-asked-q-a">
+<h3>5.4 Flashing Frequently Asked Q&amp;A<a class="headerlink" href="#flashing-frequently-asked-q-a" title="Link to this heading"></a></h3>
+<section id="sd-card-flashing-problems">
+<h4>5.4.1 SD Card Flashing Problems<a class="headerlink" href="#sd-card-flashing-problems" title="Link to this heading"></a></h4>
+<p>Common precautions include the following:</p>
+<ol class="arabic simple">
+<li><p>Currently, the selected SD card needs to be in the FAT32 format. Please choose SD cards with a capacity of 8GB, 16GB, or 32GB;</p></li>
+<li><p>Currently, TF card programming is not supported. Please do not use a TF card or a TF card with an adapter instead of an SD card;</p></li>
+<li><p>If card creation fails, you can try changing the USB port or using another computer to create the card. There are many Windows versions available now, and they may not be very compatible with the card creation software.</p></li>
+</ol>
+</section>
+<section id="otg-flashing-problems">
+<h4>5.4.2 OTG Flashing Problems<a class="headerlink" href="#otg-flashing-problems" title="Link to this heading"></a></h4>
+<p>If the flashing tool fails to recognize the device, you should pay attention to three points:</p>
+<ol class="arabic simple">
+<li><p>The selected USB cable must be a data cable. All data cables have a trident logo. If it has a lightning logo, you need to replace it with a data cable;</p></li>
+<li><p>Check the Device Manager to see if there are any problems with the driver. If the driver cannot be recognized or there is an abnormal indicator, you need to reinstall the driver. You can reinstall the programming tool. On some computers, reinstalling the programming tool can automatically install the driver. If this method doesn’t work, you can download the driver and manually reinstall it. After entering the programming mode, the driver is as follows:</p></li>
+</ol>
+<p><img alt="Image" src="_images/1718954496600_f3258060_26b7_4108_8df1_a4ff0a921712.png" /></p>
+<p>If there is a problem with the driver, it can be installed as follows:</p>
+<p>Extract the driver file, (USBDriver_64.zip or USBDriver.rar in the Linux\Tools\ directory)</p>
+<p>Open windows device manager and find an unknown device with a yellow exclamation mark (or a recognized driver with a yellow exclamation mark).</p>
+<p>As shown in the following interface:</p>
+<p><img alt="Image" src="_images/1718954496871_743c3953_488a_4783_bef0_02e99fafcaef.png" /></p>
+<p>Right click on “Unknown Device” and”Update Driver”.</p>
+<p>In the following interface, click on “Browse my computer for drivers”.</p>
+<p><img alt="Image" src="_images/1718954497072_6df206df_ec15_4bc6_84dc_c815ef3d8e94.png" /></p>
+<p>In the following interface, select the previously extracted directory “USBDriver_64”.</p>
+<p><img alt="Image" src="_images/1718954497255_fea0ca2c_3b4d_49aa_9299_6d93e31114fa.png" /></p>
+<p>Click on “Next” and wait for the driver installation to complete. After the installation is completed, the following interface is shown:</p>
+<p><img alt="Image" src="_images/1718954497472_47e8ecc6_c155_495f_87fa_4a46cc714162.png" /></p>
+<p>You can change the PC settings if the following problems occur.</p>
+<p><img alt="Image" src="_images/1718954497703_bf6e86b4_ca61_45c1_ba8c_ad1e01d2b063.png" /></p>
+<p>First press and hold Shift + to restart.</p>
+<p><img alt="Image" src="_images/1718954497917_e6a2c8a2_c67b_4e5e_9381_9fb8f3887487.png" /></p>
+<p>At startup, select Troubleshooting – Advanced Options – Startup Settings,</p>
+<p><img alt="Image" src="_images/1718954498336_e828897d_38e9_4dbd_b7bc_8cf029954392.png" /> <img alt="Image" src="_images/1718954498804_e8d57893_60df_45b0_b176_1fb114827c05.png" /></p>
+<p>In the startup setting interface, click Restart in the lower right corner.</p>
+<p>Restart to enter the startup settings. You can disable the driver forced signature through the number key 7 or the function key F7.</p>
+<p><img alt="Image" src="_images/1718954499397_1ed661d3_1d53_43f0_a0f0_faf74059e0eb.png" /></p>
+<p>After the system is started, reinstall the driver according to the previous steps.</p>
+<ol class="arabic simple" start="3">
+<li><p>If you cannot enter the programming mode, please check your operation. Press the keys K3 (FEL) and K7 (RESET) on the development board. When operating, ensure that the K3 key is pressed and not released. At this time, power on (power dial on) or power on again (press K7). After entering the programming mode, release K3.</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
