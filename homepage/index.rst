@@ -165,8 +165,6 @@ Texas Instruments Series
 Allwinner Series
 ==================
 
-T527 Series
--------------
 
 .. raw:: html
 
