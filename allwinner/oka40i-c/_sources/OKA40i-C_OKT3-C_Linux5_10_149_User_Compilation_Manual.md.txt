@@ -562,18 +562,18 @@ forlinx@ubuntu:~/work$ tar xvf OKA40i-linux-sdk.tar.bz2
 + Structure
 
 ```plain
-OKA40i-linux-sdk								// Unzipped source code folder
-├── brandy										// Contains source code related to boot0 and uboot (currently not open-sourced)
+OKA40i-linux-sdk					// Unzipped source code folder
+├── brandy							// Contains source code related to boot0 and uboot (currently not open-sourced)
 ├── bsp								// Tina5.0 independent repository architecture, which includes most of Allwinner's drivers
-├── build														// Compilation script directory
-├── buildroot												// buildroot version 202205
+├── build							// Compilation script directory
+├── buildroot						// buildroot version 202205
 ├── build.sh -> build/top_build.sh 
-├── device													// Mainly contains board-level configuration files
-├── kernel													// Linux kernel
-├── platform												// Allwinner application layer software packages
+├── device							// Mainly contains board-level configuration files
+├── kernel							// Linux kernel
+├── platform						// Allwinner application layer software packages
 ├── prebuilt
 ├── test
-└── tools														// Compilation and packaging tools
+└── tools							// Compilation and packaging tools
 ```
 
 + Introduction to Main Directories and Files
@@ -582,15 +582,15 @@ buildroot
 
 ```plain
 buildroot/config/buildroot	// Storage path for configuration files of some source codes in the file system
-├──custom										// Files added by Forlinx to the file system (these files will be included in the image)
-├──forlinx									// Compilation configurations of software packages added by Forlinx
-└──allwinner								// Compilation configurations of software packages added by Allwinner
+├──custom								// Files added by Forlinx to the file system (these files will be included in the image)
+├──forlinx								// Compilation configurations of software packages added by Forlinx
+└──allwinner							// Compilation configurations of software packages added by Allwinner
 
 buildroot/package						// Storage path for application source codes
-├──auto											// Self-developed software packages of Allwinner buildroot
-├──cedarx										// Allwinner aw multimedia cedarx framework code
-├──libcedarc								// Allwinner aw multimedia cedarc framework code
-└──forlinx									// Forlinx test demos
+├──auto									// Self-developed software packages of Allwinner buildroot
+├──cedarx								// Allwinner aw multimedia cedarx framework code
+├──libcedarc						    // Allwinner aw multimedia cedarc framework code
+└──forlinx								// Forlinx test demos
 ```
 
 device:
@@ -598,7 +598,7 @@ device:
 ```plain
 device/config/chips/a40i_h/bin // Storage path for uboot files
 
-device/config/chips/a40i_h/boot-resource/boot-resource/bootlogo.bmp // Boot logo
+device/config/chips/a40i_h/boot-resource/boot-resource/bootlogo.bmp  // Boot logo
 
 device/config/chips/a40i_h/configs/OKA40i-C/buildroot // Storage path for buildroot solution configurations
 ├──BoardConfig.mk // Board type configuration for the buildroot solution
