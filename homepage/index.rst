@@ -27,7 +27,7 @@ RK3588 Series
      </a>
      <h3 class="product-title">OK3588-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/rk3588-som-134.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/rk3588-som-134.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="rockchip/ok3588-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -43,7 +43,7 @@ RK3576 Series
      </a>
      <h3 class="product-title">OK3576-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/rk3576-c-system-on-module-156.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/rk3576-c-system-on-module-156.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="rockchip/ok3576-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -59,7 +59,7 @@ RK3506 Series
      </a>
      <h3 class="product-title">OK3506J-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/rk3506j-c-system-on-module-168.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/rk3506j-c-system-on-module-168.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="rockchip/ok3506j-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -75,7 +75,7 @@ RK3568 Series
      </a>
      <h3 class="product-title">OK3568-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/rk3568-som-125.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/rk3568-som-125.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="rockchip/ok3568-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -98,7 +98,7 @@ i.MX8M Plus Series
      </a>
      <h3 class="product-title">OKMX8MP-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/fetmx8mp-c-system-on-module-119.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/fetmx8mp-c-system-on-module-119.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="nxp/okmx8mpq-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -109,7 +109,7 @@ i.MX8M Plus Series
      </a>
      <h3 class="product-title">OK-MX8MPQ-SMARC</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/imx8mpq-smarc-system-on-module-153.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -130,7 +130,7 @@ i.MX93 Series
      </a>
      <h3 class="product-title">OK-MX9352-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="nxp/ok-mx9352-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -146,7 +146,7 @@ LS1046A Series
      </a>
      <h3 class="product-title">OK1046A-C2</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/ls1046a-system-on-module-21.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/ls1046a-system-on-module-21.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -170,7 +170,7 @@ AM62x Series
      </a>
      <h3 class="product-title">OK62xx-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/am625x-system-on-module-127.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/am625x-system-on-module-127.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="ti/ok62xx-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -194,7 +194,7 @@ T527 Series
      </a>
      <h3 class="product-title">OK527N-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/t527-c-system-on-module-149.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/t527-c-system-on-module-149.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="allwinner/ok527n-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -214,7 +214,7 @@ A40i Series
      </a>
      <h3 class="product-title">OKA40i-C/OKT3-C</h3>
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/a40i-system-on-module-58.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Website</a>
+       <a href="https://www.forlinx.net/product/a40i-system-on-module-58.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
