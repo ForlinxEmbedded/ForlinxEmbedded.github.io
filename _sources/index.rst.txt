@@ -70,14 +70,12 @@ Rockchip Series
      </div>
    </div>
    </div>
-   
+
 ----
 
 NXP Series
 ==============
 
-i.MX8M Plus Series
-------------------
 
 .. raw:: html
 
@@ -104,16 +102,6 @@ i.MX8M Plus Series
        <a href="nxp/okmx8mpq-smarc/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
-   </div>
-
-
-
-
-
-i.MX93 Series
--------------
-
-.. raw:: html
 
    <div class="product-card">
      <a href="nxp/ok-mx9352-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -126,10 +114,6 @@ i.MX93 Series
      </div>
    </div>
 
-LS1046A Series
------------------
-
-.. raw:: html
 
    <div class="product-card">
      <a href="nxp/ok1046a-c2/index.html" target="_blank" rel="noopener noreferrer">
@@ -146,14 +130,23 @@ LS1046A Series
 
 
 
+   </div>
+
+
+
+
+
+
+
 ----
 
 Texas Instruments Series
 ==========================
 
-AM62x Series
--------------
+
 .. raw:: html
+
+   <div class="products-container">
 
    <div class="product-card">
      <a href="ti/ok62xx-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -164,6 +157,7 @@ AM62x Series
        <a href="https://www.forlinx.net/product/am625x-system-on-module-127.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="ti/ok62xx-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
+   </div>
    </div>
 
 
@@ -190,14 +184,6 @@ T527 Series
      </div>
    </div>
 
-   </div>
- 
-A40i Series
--------------
-
-.. raw:: html
-
-   <div class="products-container">
 
    <div class="product-card">
      <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -210,7 +196,19 @@ A40i Series
      </div>
    </div>
 
+
+
+
    </div>
+ 
+
+
+
+
+ 
+
+
+
 
 ----
 
