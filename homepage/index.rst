@@ -17,9 +17,10 @@ Welcome to Forlinx Embedded Documentation
 Rockchip Series
 ================
 
-RK3588 Series
---------------
+
 .. raw:: html
+
+  <div class="products-container">
 
    <div class="product-card">
      <a href="rockchip/ok3588-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -32,10 +33,7 @@ RK3588 Series
      </div>
    </div>
 
-RK3576 Series
-----------------
 
-.. raw:: html
 
    <div class="product-card">
      <a href="rockchip/ok3576-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -48,10 +46,6 @@ RK3576 Series
      </div>
    </div>
 
-RK3506 Series
-----------------
-
-.. raw:: html
 
    <div class="product-card">
      <a href="rockchip/ok3506j-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -64,10 +58,6 @@ RK3506 Series
      </div>
    </div>
 
-RK3568 Series
---------------
-
-.. raw:: html
 
    <div class="product-card">
      <a href="rockchip/ok3568-c/index.html" target="_blank" rel="noopener noreferrer">
@@ -79,7 +69,8 @@ RK3568 Series
        <a href="rockchip/ok3568-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
-
+   </div>
+   
 ----
 
 NXP Series
