@@ -29,7 +29,7 @@ The FET-MX9352-C SoM is designed and developed based on the NXP-i.MX93 processor
 
 **OK-MX9352-C development board interfaces:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721877705012-aedc04c1-4853-4cb6-b2eb-fc300fd7f5f9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1721877705012_aedc04c1_4853_4cb6_b2eb_fc300fd7f5f9.png)
 
 **Note: This software manual will no longer describe the hardware parameters. Before referring to this manual for software development, you need to read the "OK-MX9352-C Hardware Manual" under the path of "Hardware Materials/User Manual" (the download method is the same as that of the software materials) to understand the product naming rules and the hardware configuration information of the product you are using. This will help you use this product.**
 
@@ -69,7 +69,7 @@ The FET-MX9352-C SoM is designed and developed based on the NXP-i.MX93 processor
 
 The OK-MX9352-C supports TF card burning and OTG burning, as well as eMMC and TF card booting. The DIP switch shown in the figure below is for eMMC booting.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721719203380-c2d8f4c4-99d6-4354-bc64-ff86f9aa5a86.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1721719203380_c2d8f4c4_99d6_4354_bc64_ff86f9aa5a86.png)
 
 | | **A core**| | | | **M core**|
 |:----------:|:----------:|----------|----------|----------|:----------:|
@@ -93,7 +93,7 @@ Hardware preparation before system startup:
 
 Please check the black DIP switch on your board to make sure they are set to the desired boot mode, please refer to "1.3 Flashing and Booth Configuration" for boot mode settings.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721877705012-aedc04c1-4853-4cb6-b2eb-fc300fd7f5f9.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_825%2Climit_0)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1721877705012_aedc04c1_4853_4cb6_b2eb_fc300fd7f5f9.png)
 
 ### 2.1 Hyper Terminal Settings
 
@@ -109,13 +109,13 @@ Here is an example using Putty to explain how to configure the terminal:
 
 Step1: Use the serial cable to connect the development board and PC, confirm the serial port number of the connected computer, check the serial port number from the "Device Manager", and take the actual port number recognized by the computer as the standard, SERIAL-A is the A-core serial port, and SERIAL-B is the M-core serial port;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868285685-12ed1a25-4652-4965-8f94-a3d556fa75d9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868285685_12ed1a25_4652_4965_8f94_a3d556fa75d9.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868286151-4eb32799-9a45-4fb4-bf70-f66126e54be6.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868286151_4eb32799_9a45_4fb4_bf70_f66126e54be6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868286352-9ecfe6ec-ab95-4ea7-ba01-5bac40654b07.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868286352_9ecfe6ec_ab95_4ea7_ba01_5bac40654b07.png)
 
 Step 3: The login account name is root, and no password. Click “Enter”.
 
@@ -185,15 +185,15 @@ Before logging into the network, ensure that the direct network connection betwe
 
 1. Connect eth0 of the development board to the computer through the network and power up the development board. A blue light on the SoM will blink after the kernel starts, and the network card connected to the computer will blink quickly after normal startup. At this point, you can test the network connection;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868286577-a8b3eadf-0ae8-497e-9f69-5e6a551074e4.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868286577_a8b3eadf_0ae8_497e_9f69_5e6a551074e4.png)
 
   2\. Close the computer firewall (General computer operations, not described here in detail), then open the computer's run command;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868286939-52aef679-ddf1-49fc-b2ae-d5df7bb4f2f7.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868286939_52aef679_ddf1_49fc_b2ae_d5df7bb4f2f7.png)
 
  3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287145-7c25d76b-b8c7-46f2-b049-341cbb75c810.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868287145_7c25d76b_b8c7_46f2_b049_341cbb75c810.png)
 
 A data return indicates a normal network connection.
 
@@ -207,11 +207,11 @@ The OK-MX9352-C development board supports SSH service, and the SSH service is a
 + **The default factory IP for eth0 is 192.168.0.232;**
 + **File transfers can be performed with scp.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287408-0765c77b-cc50-44fe-b5ac-d3f4e96f3ab9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868287408_0765c77b_cc50_44fe_b5ac_d3f4e96f3ab9.png)
 
 Click "Open", the following dialog box will appear, click "Yes" to enter the login screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287652-adac51d6-d52d-4606-8e8f-3e3b866af200.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868287652_adac51d6_d52d_4606_8e8f_3e3b866af200.png)
 
 ```plain
 login as: root //Enter the board root account as prompted
@@ -220,19 +220,19 @@ root@ok-mx93:~#
 
 When logging in with putty, the following error is reported. It is a problem with the putty version. You need to update the putty version:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287828-39612725-1534-4b5f-bd71-c829bb7852d5.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868287828_39612725_1534_4b5f_bd71_c829bb7852d5.png)
 
 You can use WinSCP (please install the software by yourself) to copy the file and login as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288045-335115f4-af04-4c9f-8f46-9e3de611c25c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868288045_335115f4_af04_4c9f_8f46_9e3de611c25c.png)
 
 The successful login is/home/root, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288245-ed83e1aa-0697-4a69-85de-1695527126fa.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868288245_ed83e1aa_0697_4a69_85de_1695527126fa.png)
 
 Change to the home directory as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288489-c59e5ebf-7a7c-48ef-955b-ed86ecf9e1f7.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868288489_c59e5ebf_7a7c_48ef_955b_ed86ecf9e1f7.png)
 
 On a windows system, the command line is as follows:
 
@@ -240,7 +240,7 @@ On a windows system, the command line is as follows:
 C:\Users\Administrator>ssh root@192.168.0.232
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288709-ea693b29-fc26-47a9-b264-7e69f748e3be.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868288709_ea693b29_fc26_47a9_b264_7e69f748e3be.png)
 
 When logging in for the first time, you need to enter yes to confirm the connection according to the prompt, and when exiting, enter exit.
 
@@ -250,13 +250,13 @@ For example, to copy the current directory image to the root directory of the de
 C:\Users\Administrator>ssh root@192.168.0.232
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288930-1004e89d-727f-4ccc-8553-c6a76141098c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868288930_1004e89d_727f_4ccc_8553_c6a76141098c.png)
 
 **Note: If SSH is not supported on your PC, please install it yourself.**
 
 If an error is reported as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868289152-0d7f0fe6-3994-4dce-93fe-7df96abda5ce.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868289152_0d7f0fe6_3994_4dce_93fe_7df96abda5ce.png)
 
 This situation indicates that you have used SSH to log in to another development board with the same IP address before, so the above error will be reported when you log in to the development board of another platform. At this time, the solution is to enter the following two commands:
 
@@ -275,11 +275,11 @@ The OK-MX9352-C development board supports FTP service, and the FTP service is a
 
 Install FileZilla tool on Windows and follow the steps shown in the image below to set it up. The user name and password are both forlinx. You can also log in with the user name root and an empty password.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868289463-85b091a2-d53c-4775-8a06-7533fb7ece0e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868289463_85b091a2_d53c_4775_8a06_7533fb7ece0e.png)
 
 After successful login, you can upload and download.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868289767-f854a82f-6f89-4ec5-8d95-40673e32c187.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868289767_f854a82f_6f89_4ec5_8d95_40673e32c187.png)
 
 ### 2.4 EMMC System Partition Table
 
@@ -390,7 +390,7 @@ Device tree path: OKMX93-linux-sdk/OKMX93-linux-kernel/arch/arm64/boot/dts/frees
 
 This method can set the system default screen display to the desired way without connecting the serial terminal selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again This method has higher priority than the U-boot menu dynamica control.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868289997-a23611c1-51a6-4e4e-870f-9b6737e3cac9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868289997_a23611c1_51a6_4e4e_870f_9b6737e3cac9.png)
 
 In the kernel source code, open the OK-MX9352-C.dts file and find the forlinx\_control node:
 
@@ -452,13 +452,13 @@ The Qt routines provided by Forlinx are mainly for hardware interface call refer
 
 The desktop is displayed as follows after the development board is booted:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868396012-57b0747c-c3cf-46ce-9a30-f34221beff31.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868396012_57b0747c_c3cf_46ce_9a30_f34221beff31.png)
 
 ### 3.2 Audio Record Test
 
 This is a desktop "audiorecorder" sound effect, you can use it to hear whether the microphone function is normal, the interface is as follows.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868396563-f2b01764-a817-46e9-88d9-2c93d998a96e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868396563_f2b01764_a817_46e9_88d9_2c93d998a96e.png)
 
 Configure AudioCodec as Wave and File Container as Wave file.
 
@@ -474,11 +474,11 @@ Click Exit to exit the application.
 
 "Musicplayer" is a simple audio test application that can be used to test if the sound card is functioning properly or as a simple audio player with the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397002-3058accc-9de8-4876-b59c-9a92a64c2548.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868397002_3058accc_9de8_4876_b59c_9a92a64c2548.png)
 
 Click the Open button in the lower left corner and select test audio/home/forlinx/audio/test.mp3
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397230-09bc2642-3332-498b-8deb-64e573bb69b1.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868397230_09bc2642_3332_498b_8deb_64e573bb69b1.png)
 
 **Note: If there is no sound from the earphone or speaker, please refer to “4.15 Audio Test” to enable the earphone and increase the volume.**
 
@@ -488,11 +488,11 @@ The "4G" test procedure is used to test the OK-MX93 External 4G Module (EC20). B
 
 Click the connect button, and the program will automatically enter the dialing process and obtain IP settings, DNS, etc.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397722-a468965f-bea0-4af7-87ec-07965e64993e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868397722_a468965f_bea0_4af7_87ec_07965e64993e.png)
 
 After successful dialing, you can click the ping button to perform a ping test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397956-87533dbb-24e9-41d4-bf0e-febd549f4faa.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868397956_87533dbb_24e9_41d4_bf0e_febd549f4faa.png)
 
 Click the Exit button to exit the test.
 
@@ -502,17 +502,17 @@ Click the Exit button to exit the test.
 
 The WiFi module will exist in the system in the form of wlan node. Take the test of wlan0 as an example. The application interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868398404-ae720a48-17ed-48ae-8404-37c05adc620c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868398404_ae720a48_17ed_48ae_8404_37c05adc620c.png)
 
 Check wlan0, enter the name of the router you need to connect to using WiFi in the SSID field, enter the router password in the PAWD field, and click CONNECT to connect to the router via wifi.
 
 You can display the current connection status by clicking the status button, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868398612-31a0e209-a5e3-40ed-8726-73162a231b26.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868398612_31a0e209_a5e3_40ed_8726_73162a231b26.png)
 
 After successful connection, you can click ping to perform network testing. Enter the IP address to be pinged in the IP field and click ping, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868398822-52b98fab-8cb7-4aec-9585-f1f3f81bc480.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868398822_52b98fab_8cb7_4aec_9585_f1f3f81bc480.png)
 
 ### 3.6 Network Configuration Test
 
@@ -522,13 +522,13 @@ When OK-MX9352 starting, the network card is set to DHCP by default, and DHCP an
 
 The DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868399308-f144db19-3bbc-46e6-96e9-749adea6d2c3.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868399308_f144db19_3bbc_46e6_96e9_749adea6d2c3.png)
 
 Check DHCP, select the NIC device needing to be configured, and click Apply and Restart Network at the bottom of the interface to restart the network and get the ip automatically.
 
 The STATIC mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868399538-7b5503a7-7a21-487a-9424-caf24cffeb2b.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868399538_7b5503a7_7a21_487a_9424_caf24cffeb2b.png)
 
 Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field. After the above contents are filled, click the Apply and Restart Network at the bottom of the interface to configure the static IP according to the above settings.
 
@@ -536,7 +536,7 @@ Select the NIC device to be configured in the interface, and enter the ip to be 
 
 “Ping” is the interface version application of the common network test command ping, and the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868400078-165cdd99-c534-4fb8-bc15-17f171696af9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868400078_165cdd99_c534_4fb8_bc15_17f171696af9.png)
 
 In the "hostname" field, enter the IP address of the target you want to ping. After clicking the "ping" button, the "result" field will display the ping result. As shown in the figure, if it indicates a smooth network connection, you can click "stop" to end the ping test or click "clear" to clear. Click “Stop” to stop the ping test, and click “Clear” to clear the information in result.
 
@@ -544,7 +544,7 @@ In the "hostname" field, enter the IP address of the target you want to ping. Af
 
 “WatchDog” is an application used to test whether the watchdog function is normal or not, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868400567-9509a9ab-6fe9-4c35-8948-c053f2023e75.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868400567_9509a9ab_6fe9_4c35_8948_c053f2023e75.png)
 
 Check the feed dog and click the open watchdog button, at this time the watchdog function will be activated, the program will carry out the feed dog operation, and the system will not reboot under normal circumstances; click the close watchdog button. At this time, the program will stop the dog feeding operation, but will not stop the watchdog. The system will restart after 10 seconds.
 
@@ -564,22 +564,22 @@ With the RTC backup battery installed, you can restart the board to confirm that
 
 The OK-MX93 carrier board integrates the XR21V1414IM48 chip, which supports USB-to-serial function. XR21V1414IM48 leads out 4 serial ports ttyUSB0, ttyUSB1, ttyUSB2 and ttyUSB3, wherein ttyUSB0 and ttyUSB3 are designed as 485 serial ports, and ttyUSB1 and ttyUSB2 are led out to carrier board P19, as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868401660-81a767c7-d835-425c-9191-7ee237b351d4.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868401660_81a767c7_d835_425c_9191_7ee237b351d4.png)
 
 Connect RXB and TXB of P19. After the connection is complete, open Terminal.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868401885-e20a88d2-00a2-4b50-ab69-7a75195bbd0c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868401885_e20a88d2_00a2_4b50_ab69_7a75195bbd0c.png)
 
 Click[](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868402126-20458398-477f-417e-b732-5a12a75ef0d6.png)Follow the steps below to set up, as RXB corresponds to the serial port ttyUSB1, select ttyUSB1 in the following figure and set the baud rate:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868402393-ec96c046-2913-4e1b-95bc-0bc94069accf.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868402393_ec96c046_2913_4e1b_95bc_0bc94069accf.png)
 
 After setting up, click Apply
 Click ( https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868402599-843919c0-2e15-4031-a7b8-17828e21f5cd.png ）on the main interface! Open the serial port.
 
 Click on the black window to pop up the virtual keyboard or use the USB interface keyboard to enter the characters forlinx. Found serial print ffoorrlliinnxx. This indicates that the serial port loopback test was successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868402807-8f987911-99cd-4b3f-82ea-bf557efcb56d.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868402807_8f987911_99cd_4b3f_82ea_bf557efcb56d.png)
 
 After the test is completed, click "Call ->quit" to exit the testing program.
 
@@ -587,7 +587,7 @@ After the test is completed, click "Call ->quit" to exit the testing program.
 
 “BackLight” is the LCD backlight adjustment application. Click to open the interface as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403263-bad3aa15-055c-4b12-8db0-b61da44985b9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868403263_bad3aa15_055c_4b12_8db0_b61da44985b9.png)
 
 Drag the slider in the interface to adjust the screen backlight brightness. Level 0 represents the lowest brightness, with a backlight value of 1, while level 255 represents the highest brightness."
 
@@ -599,15 +599,15 @@ Click Camera video to select the camera device.
 
 **Note: If there is no MIPI camera, the device corresponding to the UVC camera is/dev/video0. If there is a MIPI camera, the device corresponding to the UVC camera is/dev/video1. Please select the corresponding device according to the actual situation.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403696-e9f1287c-3416-4b9b-84c0-1e6fefde29a4.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868403696_e9f1287c_3416_4b9b_84c0_1e6fefde29a4.png)
 
 Click camera resolution to make selection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403920-dbf1663d-f8d9-4477-82e9-4c53f96c52ae.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868403920_dbf1663d_f8d9_4477_82e9_4c53f96c52ae.png)
 
 After setting the device and resolution, click Start to start the preview. The preview effect is shown in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868404244-b3a07a74-7ec7-4a2d-8096-39aab5cb05ee.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868404244_b3a07a74_7ec7_4a2d_8096_39aab5cb05ee.png)
 
 Click PICTURE to take a picture, and the photo will be saved in the /home/root/ directory.
 
@@ -623,7 +623,7 @@ In the UBOOT menu configuration test program, LCD screen resolution, lvds screen
 
 The display screen configuration interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868404755-e4ecabf8-ede0-4789-b79c-6a11fad79586.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868404755_e4ecabf8_ede0_4789_b79c_6a11fad79586.png)
 
 When lvds is set, the desktop is displayed on lvds. After configuration, click Exit to exit, and the configuration will take effect after restart.
 
@@ -751,7 +751,7 @@ Tap the serial port to wake up
 
 The development board provides 4 x ADC, which can be connected to the same sliding rheostat R171 through the P16 pin of the carrier board. Refer to the schematic diagram. The principle is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868577881-350f14db-cec0-4483-8b33-0365cc098b09.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868577881_350f14db_cec0_4483_8b33_0365cc098b09.png)
 
 Take ADC0 as an example, according to the silk-screen on the right side of P16 and the schematic diagram, short circuit pin 1 and pin 6. At the command line, enter the following command:
 
@@ -776,7 +776,7 @@ OK-MX93 SoM has one controllable blue LED, which functions as a heartbeat light 
 
 If the user disables this function, need to modify the device tree file in the source code: OKMX93-linux-sdk/OKMX93-linux-kernel/arch/arm64/boot/dts/freescale/OK-MX9352-C.dts, change the attribute of the led-0 node state="on" to "off", linux,default-trigger = "heartbeat" to "none". "on" to "off" and Linux,default-trigger = "heartbeat" to "none".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868578167-7ab24bc5-9087-41a4-9ef5-d6d720ce4135.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868578167_7ab24bc5_9087_41a4_9ef5_d6d720ce4135.png)
 
 The user can also manually modify the led lamp status as follows:
 
@@ -836,7 +836,7 @@ root@ok-mx93:~# echo 0 > /sys/class/leds/led1/brightness              //Control 
 
 The OK-MX93 carrier board integrates the XR21V1414IM48 chip, which supports USB-to-serial function. XR21V1414IM48 leads out 4 serial ports ttyUSB0, ttyUSB1, ttyUSB2 and ttyUSB3, wherein ttyUSB0 and ttyUSB3 are designed as 485 serial ports, and ttyUSB1 and ttyUSB2 are led out to carrier board P19, as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868578372-25c0d29a-c354-4a77-92ee-eea2b65c5c32.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868578372_25c0d29a_c354_4a77_92ee_eea2b65c5c32.png)
 
 **Note: The test program provided by Forlinx provides a string of random characters of length 30, which can be modified by the user according to their own needs.**
 
@@ -878,7 +878,7 @@ TtyUSB1 has received the data sent by ttyUSB2, and the test is successful.
 
 TtyUSB0 and ttyUSB3 are designed as 485 serial ports. To connect two 485 serial ports, pin A shall be connected with pin A, and pin B shall be connected with pin B, that is, pin 8 of P27 shall be connected with pin 11, and pin 9 shall be connected with pin 12.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868578613-8a6ecc5f-8893-4636-aad6-5f8ae3eb4bf9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868578613_8a6ecc5f_8893_4636_aad6_5f8ae3eb4bf9.png)
 
 Set ttyUSB0 to receive mode:
 
@@ -1325,7 +1325,7 @@ Changing power on succeeded
 
 After the above settings, open the cell phone Bluetooth search, and an "ok-mx93" device will appear, click on the Bluetooth to try to pair.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868578830-39fc138d-b18f-4be3-a9be-77bbb3ca2d4e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868578830_39fc138d_b18f_4be3_a9be_77bbb3ca2d4e.png)
 
 At the same time the printing message displays on the development board as follows, enter yes
 
@@ -1394,7 +1394,7 @@ At the same time, the pairing request appears on the mobile phone interface. Cli
 
 After successful pairing, you can use Bluetooth to send files to ok-mx93 on the mobile phone.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868579072-9b3d59c9-2841-40da-98ce-ea24a9cf7367.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868579072_9b3d59c9_2841_40da_98ce_ea24a9cf7367.png)
 
 Received files are saved in the /tmp directory.
 
@@ -1446,7 +1446,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 After that, the mobile phone will receive the file sent by the board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868579362-4c769a16-8682-4996-8cc5-a1a65d9ad3db.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868579362_4c769a16_8682_4996_8cc5_a1a65d9ad3db.png)
 
 ### 4.12 USB Interface Test
 
@@ -1598,11 +1598,11 @@ root@ok-mx93:~# modprobe g_mass_storage file=/dev/mmcblk0p1 removable=1
 
 The PC recognizes that the mmcblk0p1 partition of the emmc on the OK-MX9352-C development board is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868579563-31f3037b-d2d1-4e87-8429-3c08820d4fe3.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868579563_31f3037b_d2d1_4e87_8429_3c08820d4fe3.png)
 
 After opening, the file contents are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868579759-e6b41f09-ff2f-49fd-a466-12efc183c2ad.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868579759_e6b41f09_ff2f_49fd_a466_12efc183c2ad.png)
 
 ### 4.13 LCD Backlight Adjustment
 
@@ -2131,7 +2131,7 @@ DHCP=yes
 
 The OK-MX93 board comes with the lighttpd (Web server) pre-installed，and the lighttpd service is automatically started at boot time. Enter the IP address of the board into the PC browser (the IP address should be in the same network segment) to browse the web pages in the webserver of the board, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580021-087a9622-28f6-43db-9694-28bd181b2bed.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868580021_087a9622_28f6_43db_9694_28bd181b2bed.png)
 
 ### 4.20 4G
 
@@ -2350,7 +2350,7 @@ Led out gpio from the OK-MX9352-C carrier board P6, as shown in the following fi
 
 **Note: GPIO pins on P6 conflict with the RGB display pins.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580341-081cea7a-a3bf-4de0-965c-90a899d4ae1b.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868580341_081cea7a_a3bf_4de0_965c_90a899d4ae1b.png)
 
 Since the GPIO pins on P6 are already occupied by the RGB display driver, change the ''status'’ of the ‘'board\_gpio'’ in the OK-MX9352-C.dts file to ‘'okay''. After recompiling and replacing the device tree, you can proceed with the following tests. Please note that during this time, the RGB screen should not be used. Please either disable the display or switch to using LVDS or MIPI display.
 
@@ -2368,9 +2368,9 @@ gpiochip3 [47400080.gpio] (32 lines)
 
 2. From the device tree pinout, the GPIO corresponding to P6 is gpio@43810080, gpiochip0, in the device tree;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580603-5ff07df5-e8d1-49c8-86a9-6199226813af.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868580603_5ff07df5_e8d1_49c8_86a9_6199226813af.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580824-cc7d1166-c089-46c6-b5f6-c67f375924ee.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Manual/1718868580824_cc7d1166_c089_46c6_b5f6_c67f375924ee.png)
 
 3. As you can see from the schematic, GPIO0 is pin 28 of P6. Use the following command to set GPIO0 high.
 
