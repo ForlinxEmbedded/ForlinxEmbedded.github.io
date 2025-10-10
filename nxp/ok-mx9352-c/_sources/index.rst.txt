@@ -20,14 +20,14 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   OK9352-C_User_Hardware_Manual
+   OK-MX9352-C_User_Hardware_Manual
 SOFTWARE 
 ---------
 .. toctree::
    :caption: SOFTWARE
    :maxdepth: 2
 
-
+   OK-MX9352-C_Linux6_1_36_User_Manual
 
 APPLICATION NOTE
 -----------------

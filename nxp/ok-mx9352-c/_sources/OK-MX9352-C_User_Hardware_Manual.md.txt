@@ -59,11 +59,11 @@ Commercial level　　　
 
 **i.MX 93** **Processor Block Diagram**
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506153070_12aebba0_3836_4c0b_959d_3dd2804b7c95.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506153070_12aebba0_3836_4c0b_959d_3dd2804b7c95.png)
 
 **i.MX 91** **Processor Block Diagram**
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1.png)
 
 
 
@@ -71,11 +71,11 @@ Commercial level　　　
 
 ### 2.1 SoM Appearance
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506265114_73958db5_2e30_44a7_ab99_914c59ca8565.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506265114_73958db5_2e30_44a7_ab99_914c59ca8565.png)
 
 Front (CPU model shown is 9352; the 9131 model differs only in CPU, with identical configurations for all other components).
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506265802_c719882d_6adf_4dd1_86b2_89c75826ace5.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506265802_c719882d_6adf_4dd1_86b2_89c75826ace5.png)
 
 Back (CPU model shown is 9352; the 9131 model differs only in CPU, with identical configurations for all other components).
 
@@ -83,11 +83,11 @@ Back (CPU model shown is 9352; the 9131 model differs only in CPU, with identica
 
 FET-MX9352/9131-C SoM Dimension Diagram
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506266186_2198d5d3_a0d1_4308_8461_794c989196ff.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506266186_2198d5d3_a0d1_4308_8461_794c989196ff.png)
 
 **Front**
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506266455_ac1f8760_bc2a_43e3_ae71_3d49527fc725.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506266455_ac1f8760_bc2a_43e3_ae71_3d49527fc725.png)
 
 **Back**
 
@@ -182,9 +182,9 @@ The patch nut M2 \* 1.5 is used to fix the SoM and the carrier board.
 
 #### 2.5.1 FET-MX9352/9131-C SoM Pins Schematic
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506266725_218a8831_455d_4174_9653_217349cd4997.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506266725_218a8831_455d_4174_9653_217349cd4997.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506267041_074ff72e_ee1a_4cef_bc8c_056cbc3a1361.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506267041_074ff72e_ee1a_4cef_bc8c_056cbc3a1361.png)
 
 **Note: The 93 and 91 models share the same schematic package, but the 91 model does not have the MIPI DSI/MIPI CSI/LVDS functions.**
 
@@ -196,7 +196,7 @@ When you have various functional expansion requirements, you can refer to the us
 
 FET-MX9352/ 9131-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506267390_55c6cd9f_42c8_4a1d_854d_affd9d1cadfa.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506267390_55c6cd9f_42c8_4a1d_854d_affd9d1cadfa.png)
 
 Please refer to “Appendix VI.” for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, you can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -208,11 +208,11 @@ Please refer to section “3.5 OK- MX93xx/ 91xx Carrier Board Description” for
 
 The connection method between carrier board and SoM is board to board. The carrier board supports several SoMs from the MX93 and MX91 series. As a result, the PCB silkscreen and the development board names will show “OK - MX93xx - C” and “OK - MX91xx - C” to indicate compatible CPU series. The main interfaces are shown in the figure below:
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506280181_34d53681_cf14_49c9_9d50_2925d988dabc.jpeg)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506280181_34d53681_cf14_49c9_9d50_2925d988dabc.jpeg)
 
 **Front**
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506280913_aa9f584e_94f8_4ff9_a46d_660a97a34adf.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506280913_aa9f584e_94f8_4ff9_a46d_660a97a34adf.png)
 
 **Back**
 
@@ -220,7 +220,7 @@ The connection method between carrier board and SoM is board to board. The carri
 
 OK-MX9352/ 9131-C SoM Dimension Diagram
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506281374_1450527c_8402_4850_9c1a_305072b302b8.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506281374_1450527c_8402_4850_9c1a_305072b302b8.png)
 
 PCB Size: 130mm × 190mm
 
@@ -232,7 +232,7 @@ Power supply voltage: DC 12V
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board OK-MX93xx/91xx-C V2.1 You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506281706_79b776bd_66c5_4096_93a5_b79dae17ad8a.jpeg)![Image](./images/OK9352-C_User_Hardware_Manual/1720506281936_90207f1f_ff58_4465_905d_258bccd2ff2c.jpeg)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506281706_79b776bd_66c5_4096_93a5_b79dae17ad8a.jpeg)![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506281936_90207f1f_ff58_4465_905d_258bccd2ff2c.jpeg)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -286,9 +286,9 @@ A-B-C+DEF:G-H
 
 #### 3.5.1 Carrier Board Power
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506282224_790aafcb_a07e_4ef9_bc78_4dcfa690951d.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506282224_790aafcb_a07e_4ef9_bc78_4dcfa690951d.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506282474_cbdd0228_5f90_445d_8d83_96eb56b80444.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506282474_cbdd0228_5f90_445d_8d83_96eb56b80444.png)
 
 Carrier board power supply is DC 12V, led in through DC-005 socket (P14). The 12V DC power supply passes through a self - recovering fuse and an anti - reverse connection diode, and then is stepped down to 5V by the MP8765. This power supply is uncontrolled, and its network name is VDD\_5V. Then it is stepped down to 3.3V by the MP1605. This power supply is controlled, and its network name is VCC\_3V3. Finally, it is stepped down to 1.8V by the RT9013. This power supply is also controlled, and its network name is VCC\_1V8.
 
@@ -302,9 +302,9 @@ K3 in the upper - left corner of the development board is the power - on/off key
 
 K2 in the upper - left corner of the development board is the hard - reset key of the development board. After pressing it, all the power supplies on the SoM can be turned off to achieve the function of power - off reset for the whole board.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506282698_083d79f1_e1a1_4a0a_8247_90f750b4623c.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506282698_083d79f1_e1a1_4a0a_8247_90f750b4623c.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506282913_64e3cf32_17a0_4b61_aae1_f77a3c33be02.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506282913_64e3cf32_17a0_4b61_aae1_f77a3c33be02.png)
 
 #### 3.5.3 Boot Configuration
 
@@ -346,7 +346,7 @@ The system boot configuration switch on the development board is S3: right for o
 | eMMC| Cortex-M33| OFF| OFF| OFF| ON
 | TF Card| Cortex-M33| ON| OFF| OFF| ON
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506283130_77b6ee7f_f1c4_43f3_ae84_dfb98f3e85d9.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506283130_77b6ee7f_f1c4_43f3_ae84_dfb98f3e85d9.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -356,7 +356,7 @@ UART1 is the Cortex - A55 debugging serial port, with 2 lines and a 3.3V level. 
 
 The debugging serial port signal of the SoM first passes through a buffer chip and then an adapter chip before reaching the TYPE - C interface. This setup ensures that there is no electrical leakage between the SoM and the carrier board when the debugging serial port is plugged in while the carrier board is unpowered. 
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506283388_75419134_1509_454b_8436_73f6e192b6ee.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506283388_75419134_1509_454b_8436_73f6e192b6ee.png)
 
 **Note: To facilitate subsequent debugging, please lead out this debugging serial port when designing the carrier board by yourself. It is not recommended to use it as a general serial port.**
 
@@ -364,7 +364,7 @@ The debugging serial port signal of the SoM first passes through a buffer chip a
 
 The SoM supports 4 x native ADC. The development board is led out via pins with a 2.54 mm pitch and is configured with a slide potentiometer. The ADC acquisition function can be achieved by connecting the middle pin of the slide potentiometer to the ADC pin. Among them, pins 1 and 2 of P16 are the middle pins of the sliding potentiometer, and the remaining four pins are all ADC pins, with corresponding silkscreen markings on the PCB.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506283596_2e8274b0_5068_4068_b3e7_f362da2e6a74.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506283596_2e8274b0_5068_4068_b3e7_f362da2e6a74.png)
 
 #### 3.5.6 Audio
 
@@ -374,17 +374,17 @@ The audio chip NAU88C22 is equipped with a class-D power amplifier output termin
 
 **Note: The power of the speakers is a Class D amplifier (Not analog amplifier). Connect a speaker to each socket, and not to share the speaker wire, nor connect the speaker to the ground wire.**
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506283868_6371b633_5e0e_4d23_8076_8c1df07ae9d6.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506283868_6371b633_5e0e_4d23_8076_8c1df07ae9d6.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506284127_0dbe1800_3344_4b22_a98f_e256cc41b96a.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506284127_0dbe1800_3344_4b22_a98f_e256cc41b96a.png)
 
 #### 3.5.7 Dual Gigabit Ethernet
 
 The SoM supports up to 2 x Gigabit Ethernet ports. The development board provides two Gigabit Ethernet interfaces, both of which are connected to the PHY chip RTL8211 in the RGMII interface form and led out by RJ45 sockets, namely P8 and P7. The socket model is FC - H021LNL, with a built - in isolation transformer. Among them, ENET1/ETH1 supports the TSN function.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506284383_c5a746d1_bdeb_4ffa_b3a6_b9aec7b56d2b.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506284383_c5a746d1_bdeb_4ffa_b3a6_b9aec7b56d2b.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506284793_4bc0b692_1012_4736_8c5e_51f09d0e3799.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506284793_4bc0b692_1012_4736_8c5e_51f09d0e3799.png)
 
 **Note: When designing the PCB, ensure that the PHY chip has a complete ground.**
 
@@ -392,13 +392,13 @@ The SoM supports up to 2 x Gigabit Ethernet ports. The development board provide
 
 The development board provides a JTAG debugging interface (P15), which is convenient for users to simulate and debug i.MX93x.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506285097_a00e31d1_0335_4fa6_9203_b492ab649806.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506285097_a00e31d1_0335_4fa6_9203_b492ab649806.png)
 
 #### 3.5.9 LCD Display Interface
 
 The SoM supports a parallel 24 - bit LCD, with a maximum of RGB888 24 - bit and a maximum resolution of 1366x768p60 or 1280x800p60. The development board provides a general liquid crystal display interface, which is led out through a 54P FPC socket P4 with a 0.5mm pitch and can be connected to resistive touch screens and capacitive touch screens of different specifications and sizes produced by Forlinx. The LCD interface is connected in RGB 888 24bit mode.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506285388_c28eb743_d9c5_4708_8b60_f4b7396c1bd8.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506285388_c28eb743_d9c5_4708_8b60_f4b7396c1bd8.png)
 
 **Note:**
 
@@ -412,39 +412,39 @@ USB1 is an interface with OTG function. The master - slave mode can be switched 
 
 In slave mode, when the master device (such as a computer) is connected to the TYPE - C socket via a cable, the USB1 \_ ID signal cuts off the power supply from the carrier board to the TYPE - C interface, ensuring that the 5V from the master device does not conflict with the 5V of the development board. In master mode, when the slave device is connected to the TYPE - C socket via a cable, the USB1 \_ ID signal turns on the power supply of the carrier board to ensure normal power supply to the slave device. 
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506285645_7df19bc6_7fbd_48e9_b88a_763a4663ac7a.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506285645_7df19bc6_7fbd_48e9_b88a_763a4663ac7a.png)
 
 #### 3.5.11 TF Card Interface
 
 There is a TF card interface on the development board, which uses the SD2 bus, and supports the SD Card 3.0 protocol. The SoM can autonomously switch the level of the high and low speed cards and manage the power supply. When designing, please use the special power supply pin VSD \_ 3V3 of the SoM to supply power to the TF card. It is not recommended to use other power supplies.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506285859_6795976b_c294_4359_abb3_f4b9b6c6c045.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506285859_6795976b_c294_4359_abb3_f4b9b6c6c045.png)
 
 #### 3.5.12 RTC Interface
 
 The development board has a RTC circuit, which is connected to the I2C3 bus. The CR2032 button battery can be used to save the time when the development board is not powered on, and the time will be saved in real time. After the development board is powered on, the existing time will be read from the RTC again and written into the system.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506286127_0fa8d9a2_d80f_4eca_a7f0_83dbc6c6ad45.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506286127_0fa8d9a2_d80f_4eca_a7f0_83dbc6c6ad45.png)
 
 #### 3.5.13 UART Interface
 
 There are 2 x UART interfaces on the development board, which are not the native UART interfaces of the SoM, but are transferred through the USB2 interface. The 3.3 V TTL level and two-wire serial port are led out through the P19 pin with a pitch of 2.54 mm.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506286353_c55288aa_91d6_4ca5_b443_90cedba98bf3.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506286353_c55288aa_91d6_4ca5_b443_90cedba98bf3.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506286590_70f7be5b_c575_4cc0_a31b_94de387d2826.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506286590_70f7be5b_c575_4cc0_a31b_94de387d2826.png)
 
 #### 3.5.14  MIPI DSI Interface
 
 The SoM supports MIPI DSI 4 channels, with a maximum support of 1920x1200p60. The development board provides a universal LCD interface, which can be connected to the MIPI capacitive touch screen produced by Forlinx through a 0.5mm FPC seat P3 with a pitch of 30 P. The LCD interface uses MIPI DSI 4-channel connection with a resolution of 1280 \* 800. (91 doesn’t have this function)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506286824_6f6a3211_7aab_462c_9653_ea0ada5aa7de.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506286824_6f6a3211_7aab_462c_9653_ea0ada5aa7de.png)
 
 #### 3.5.15 LVDS Interface
 
 The SoM supports a single eight - channel LVDS, with a maximum support for 1366x768p60 or 1280x800p60. The development board provides a general LCD display interface, which is led out through a double - row pin header P5 with a 2.0mm pitch and 38 pins, and can be connected to the LVDS capacitive touch screen produced by Forlinx. This LCD display interface uses a single eight - channel connection method, with a resolution of 1280\*800. (91 doesn’t have this function)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506287033_ea53a323_f4b9_40e5_8281_8200fc2a5285.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506287033_ea53a323_f4b9_40e5_8281_8200fc2a5285.png)
 
 #### 3.5.16 Touch Interface
 
@@ -457,59 +457,59 @@ When designing the touch function of the System on Module (SoM), a multiplexing 
 | LVDS| OFF| ON| ON| OFF| OFF| OFF| OFF| \-
 | MIPI| OFF| OFF| OFF| ON| ON| OFF| OFF| \-
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506287258_48050143_02be_4c43_b8e9_cbfab20762c6.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506287258_48050143_02be_4c43_b8e9_cbfab20762c6.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506287462_366e33b7_e7d2_4a11_9b2c_b9de550adda0.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506287462_366e33b7_e7d2_4a11_9b2c_b9de550adda0.png)
 
 #### 3.5.17 GPIO Interface
 
 To ensure the expandability of the SoM, a set of GPIO interfaces is reserved on the development board, which are led out through double - row pins with a 2.54mm pitch. These interfaces are fully multiplexed with the LCD function, and only one can be used at a time. This set of pins can be multiplexed for many functions. For details, please refer to the pin multiplexing comparison table in the hardware documentation.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506287688_83fcf7eb_d6f1_4db2_bb26_7277b534de1c.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506287688_83fcf7eb_d6f1_4db2_bb26_7277b534de1c.png)
 
 #### 3.5.18 4G Interface
 
 The development board is equipped with a Mini - PCIe interface and has a USB protocol cable, which can support Mini - PCIe interface devices with USB protocols such as 4G modules. By default, the development board comes with the EC20 module, enabling 4G Internet access. This interface is powered by an independent power supply, currently providing 3.3V3A, which can meet the requirements of most modules.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506287916_5217752a_3972_458c_9a0d_84ac26a6118e.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506287916_5217752a_3972_458c_9a0d_84ac26a6118e.png)
 
 #### 3.5.19 USB HUB
 
 The SoM natively supports two USB interfaces. To ensure its expandability, the development board uses the USB2.0 HUB chip FE1.1S to expand the native USB interfaces. The USB2 bus is used, and after expansion, they are respectively connected to the USB - to - serial port, USB - A female socket, WiFi/BT, and 4G.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506288165_9b516442_a218_44e5_ab76_56a80b3da924.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506288165_9b516442_a218_44e5_ab76_56a80b3da924.png)
 
 #### 3.5.20 RS-485 Interface
 
 The two serial ports expanded by the development board using USB lead out two RS - 485 interfaces through the circuit. Based on the RS - 485 standard protocol, it has the function of automatic transceiver control and also adds a protection circuit. It can pass the national standard’s four - level ESD/EFT/SURGE test level, with high security.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506288379_66d9e791_e554_4147_8f35_c0e5a463e5e0.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506288379_66d9e791_e554_4147_8f35_c0e5a463e5e0.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506288611_50877a04_d6de_40fb_bad1_9cde508dde39.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506288611_50877a04_d6de_40fb_bad1_9cde508dde39.png)
 
 #### 3.5.21 CAN FD Interface
 
 The development board uses the native CAN FD to lead out two CAN FD interfaces. Based on the CAN 2.0B protocol specification, it also adds a protection circuit. It can pass the national standard’s four - level ESD/EFT/SURGE test level, with high security.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506288806_7ae920ac_f409_46e0_b678_afb894af010d.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506288806_7ae920ac_f409_46e0_b678_afb894af010d.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506289032_d0e0fe4d_12b7_4610_8b5a_efaa1db9b3da.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506289032_d0e0fe4d_12b7_4610_8b5a_efaa1db9b3da.png)
 
 #### 3.5.22  WiFi/BT Interface
 
 The development board uses the USB interface to expand the WiFi/BT function. It is on - board with BL - M8723DU, supporting 2.4G WiFi and Bluetooth 2.1/4.2, and is equipped with an independent antenna interface and a separate power supply control function.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506289384_6fa5434b_6cee_4b44_96f2_0bf8f2917a06.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506289384_6fa5434b_6cee_4b44_96f2_0bf8f2917a06.png)
 
 #### 3.5.23 MIPI CSI Interface
 
 The SoM natively supports MIPI CSI, with 2 channels and a maximum rate of 1.5Gbps, complying with the V1.2 protocol specification. The development board features a MIPI CSI function that is led out through a 26PIN FPC connector. This function interface is powered by an independent power supply and supports connection with the Forlinx OV5645 camera module. (91 doesn’t have this function)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506289592_91bcdc43_b07f_427a_8856_26d6aaff1779.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506289592_91bcdc43_b07f_427a_8856_26d6aaff1779.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506289821_30a65124_d731_4866_bf10_a805dbf77056.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506289821_30a65124_d731_4866_bf10_a805dbf77056.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506290018_5d1c22c6_6923_4988_9908_a5da7a61aab5.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506290018_5d1c22c6_6923_4988_9908_a5da7a61aab5.png)
 
 #### 3.5.24 I2C Interface
 
@@ -523,7 +523,7 @@ As the I2C bus on the camera requires a level of 1.8V, I2C3 is connected to the 
 
 The carrier board reserves a user - defined indicator light D6 and a user - defined button K1 through two IO respectively.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1751439213326_e53501d9_b5e4_450c_8ffa_04f49d62ae2e.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1751439213326_e53501d9_b5e4_450c_8ffa_04f49d62ae2e.png)
 
 **Note：**
 
@@ -580,11 +580,11 @@ FET-MX91xx-C SoM V1.3+OK-MX91xx-C Carrier board V2.1+Linux6.1.36 System
 
 The model of the SoM connector is DF40C-100 DP-0.4 V (51), male seat, 100P, 0.4mm, and the specifications of the SoM connector are as follows:
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1721802084067_720f72db_0c17_4f6b_aac3_fddb000c6683.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1721802084067_720f72db_0c17_4f6b_aac3_fddb000c6683.png)
 
 The model of the corresponding carrier board connector is DF40C-100DS-0.4 V (51), female, 100 P, 0.4mm, with a height of 1.5mm. The specifications of the carrier board connector are as follows:
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1721802087841_219f4d62_5a71_4b99_b09c_96a83eea2d88.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1721802087841_219f4d62_5a71_4b99_b09c_96a83eea2d88.png)
 
 ## 6\. Minimum System Schematic
 
@@ -592,6 +592,6 @@ The model of the corresponding carrier board connector is DF40C-100DS-0.4 V (51)
 
 The SoM is designed to support power - on startup. It can be started as long as there is a 5V main power supply for the SoM. However, to ensure that the SoM can be programmed and print information can be viewed, it is recommended to retain the startup item circuit, USB programming circuit or TF card programming circuit, DEBUG circuit, and reset button. Note that no pull - up resistors should be added in the design of the reset button.
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506375257_55718d55_d617_4f3d_9041_f7d6ca86474b.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506375257_55718d55_d617_4f3d_9041_f7d6ca86474b.png)
 
-![Image](./images/OK9352-C_User_Hardware_Manual/1720506375629_7d273e0f_7f22_4b5f_8931_36f32b76d4ae.png)
+![Image](./images/OK-MX9352-C_User_Hardware_Manual/1720506375629_7d273e0f_7f22_4b5f_8931_36f32b76d4ae.png)
