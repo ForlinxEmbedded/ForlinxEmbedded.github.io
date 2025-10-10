@@ -1,4 +1,4 @@
-# OK-MX9352-C_Linux6.1.36_User's Manual_V1.1
+# Linux6.1.36_User's Manual_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
