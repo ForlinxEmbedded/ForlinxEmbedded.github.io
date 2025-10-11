@@ -53,7 +53,7 @@ Common virtual machine software includes VMware(VMWare ACE), Virtual Boxand Virt
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869388755-5131c433-6e67-401b-b5b4-c170c04079d5.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -61,43 +61,43 @@ After the download is complete, double-click the installation file to start the 
 
 Step 1: Double-click the startup program to enter the installation wizard, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389043-f74bf566-192f-491f-ba86-ba89ac4d3387.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869389043_f74bf566_192f_491f_ba86_ba89ac4d3387.png)
 
 Step 2: Check "I accept the terms in the license agreement (A)" and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389490-5a3d20ca-4d31-48be-8616-ab0a75e3ec49.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869389490_5a3d20ca_4d31_48be_8616_ab0a75e3ec49.png)
 
 Step 3: You can modify the installation location, install it to the partition where your computer installs the software, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389680-112bd577-2c6d-49d7-a926-14c37f5cf801.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869389680_112bd577_2c6d_49d7_a926_14c37f5cf801.png)
 
 Step 4: Decide whether to check the two check boxes and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389918-74426b44-42fd-43f9-9d6b-fb9233a1f8e7.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869389918_74426b44_42fd_43f9_9d6b_fb9233a1f8e7.png)
 
 Step 5: Check the option to add the shortcuts and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869390105-1692ed6e-6a20-4ea9-96c7-34b88610d161.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869390105_1692ed6e_6a20_4ea9_96c7_34b88610d161.png)
 
 Step 6: Click "Install";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869390345-53dd7b59-4eb1-4675-93af-06dfe3f840d6.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869390345_53dd7b59_4eb1_4675_93af_06dfe3f840d6.png)
 
 Step 7: Wait for the installation to complete;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869391636-8bdb6e34-2add-4c4f-bb15-ba7e6d267c51.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
 
 Step 8: After the installation is completed, you can click "Finish" for trial. If users need to use it for a long time, they need to buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869391907-b9518f16-956c-46bd-b992-1b861689c91a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869391907_b9518f16_956c_46bd_b992_1b861689c91a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869392115-6aa81085-4ef3-4290-a489-4bd4b65ae433.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869392115_6aa81085_4ef3_4290_a489_4bd4b65ae433.png)
 
 You can also click Skip. After completion, open the VMware software, click Help in the status card above, and enter the license key in the pop-up window.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869393116-048ac61f-998e-4c35-9c13-033f04e39e01.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869393116_048ac61f_998e_4c35_9c13_033f04e39e01.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869393464-5f491171-240d-4973-8247-732c7e0c02a9.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869393464_5f491171_240d_4973_8247_732c7e0c02a9.png)
 
 ### 1.3 VMware Network Connection
 
@@ -105,7 +105,7 @@ By default, after the virtual machine is installed, the network connection metho
 
 In a virtual machine, when the VMware virtual network card is set to NAT mode, the network in Ubuntu environment can be set to dynamic IP. In this mode, the virtual NAT device is connected to the host network card for communication and internet access. This is the most commonly used method for external networking on the virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869393704-9ebd2008-6f6b-4d92-b0f0-f0a80afd18db.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869393704_9ebd2008_6f6b_4d92_b0f0_f0a80afd18db.png)
 
 ## 2\. Forlinx Development Environment Import
 
@@ -119,29 +119,29 @@ Forlinx provides an installed Ubuntu development environment, which you can dire
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480341-fd356203-20ec-4038-9252-fcfd7d8b07e6.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869480341_fd356203_20ec_4038_9252_fcfd7d8b07e6.png)
 
 Select all the compressed packages and right click to extract them to the ok-mx93 development environment:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480561-28a51d86-9c7a-4ee1-8669-47c154e57a72.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869480561_28a51d86_9c7a_4ee1_8669_47c154e57a72.png)
 
 After decompression, the "ok-mx93 development environment.vmx" in the "ok-mx93 development environment" folder is the file to be opened by the virtual machine.
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480763-8f97fe83-3047-4f3a-8ff2-dbcdb1a3e088.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869480763_8f97fe83_3047_4f3a_8ff2_dbcdb1a3e088.png)
 
 Select the directory where the "ok-mx93 development environment" virtual machine file just extracted is located, and double-click to open the startup file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480974-13f1ba72-0ea4-4d9b-b2de-1565bd59fdc1.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869480974_13f1ba72_0ea4_4d9b_b2de_1565bd59fdc1.png)
 
 After loading, click to start the virtual machine to run. Enter the interface of the system.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869481174-f9c5f34e-7fbc-47de-9f8e-a0191695a3de.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869481174_f9c5f34e_7fbc_47de_9f8e_a0191695a3de.png)
 
 The account of the development environment is forlinx, and the password is forlinx. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869481385-39aa46fb-8fd4-43d8-a799-58da81ec3f3d.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869481385_39aa46fb_8fd4_43d8_a799_58da81ec3f3d.png)
 
 So far, you have successfully entered the development environment provided by Forlinx, and you can put the source code in the user information folder into the development environment to start compiling and other operations. **See 4. Linux Compilation**
 
@@ -163,7 +163,7 @@ The version of Ubuntu selected for installation is 22.04 and the introduction an
 
 Download "Ubuntu-22.04.1-desktop-amd64.iso" (you can download the version that you actually need; this is just an example with 22.04.1).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583250-18390b4b-1196-4c82-8307-9f22c4e71d8f.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869583250_18390b4b_1196_4c82_8307_9f22c4e71d8f.png)
 
 #### 3.1.1 Vmware Ubuntu Image Installation
 
@@ -171,79 +171,79 @@ If you want to build your own virtual machines, you can choose to install new vi
 
 Step 1: Open the VMware software and click on "Create New Virtual Machine". Enter the following interface, check "Customize (Advanced)" and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583459-8dfde8cf-89c3-42ef-b2b5-7f7ce4d7a604.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869583459_8dfde8cf_89c3_42ef_b2b5_7f7ce4d7a604.png)
 
 Step 2: Select the compatibility of the corresponding VMware version. The version can be viewed in Help-> About VMware Workstation. Click "Next" after confirmation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583744-1f8c88f2-57f3-4baa-b596-74af1fb215f1.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869583744_1f8c88f2_57f3_4baa_b596_74af1fb215f1.png)
 
 Select “Install program from disc image file”, then click “Next”；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584192-6793524b-482b-43e1-aeb3-db1dec72da60.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869584192_6793524b_482b_43e1_aeb3_db1dec72da60.png)
 
 Enter the virtual machine name and configuration installation location, and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584398-5d249503-a64d-4a3f-8489-e54a4a9eb694.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694.png)
 
 Configure the number of cores, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584636-4fe029f5-73d3-42cf-8d01-5d8266c5aefe.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869584636_4fe029f5_73d3_42cf_8d01_5d8266c5aefe.png)
 
 Configure appropriate memory space and select "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584848-750d03fd-581d-4130-9966-9ef1025939cb.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869584848_750d03fd_581d_4130_9966_9ef1025939cb.png)
 
 Set the network type, use the default NAT for networking, and click "Next". Subsequent steps remain at the default values until the disk capacity step is specified.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585093-76b7f0ed-f7a1-40e9-8509-7e6039bea53a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869585093_76b7f0ed_f7a1_40e9_8509_7e6039bea53a.png)
 
 Use the recommended I/O controller, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585428-016b5a4f-3818-4a68-a631-d2498120bc8f.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869585428_016b5a4f_3818_4a68_a631_d2498120bc8f.png)
 
 Use the recommended disk type, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585713-c06b7cbe-d288-4f2a-af55-7d6e99107012.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869585713_c06b7cbe_d288_4f2a_af55_7d6e99107012.png)
 
 Use the default options, create a new virtual disk and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585907-c658e5b0-f32e-4662-a9fe-c5ffb3748d94.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869585907_c658e5b0_f32e_4662_a9fe_c5ffb3748d94.png)
 
 Allocate a disk size of 80G and divide the virtual disk into multiple files, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586141-7e8a4dab-0ff2-4645-84e9-323fd7008529.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869586141_7e8a4dab_0ff2_4645_84e9_323fd7008529.png)
 
 Click "Next" by default:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586324-4ae2f79f-159f-4d43-901d-a38b1efba18b.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869586324_4ae2f79f_159f_4d43_901d_a38b1efba18b.png)
 
 Click "Finish":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586503-50bcaff6-9a7f-4ac5-a5ce-a3a1c9638117.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869586503_50bcaff6_9a7f_4ac5_a5ce_a3a1c9638117.png)
 
 Once the virtual machine is powered on, select Try to Install Ubuntu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586970-cffad2de-72c1-4f4e-a8af-eb5808a32729.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869586970_cffad2de_72c1_4f4e_a8af_eb5808a32729.png)
 
 Select the language and select install Ubuntu
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587201-dffb2ce0-3826-49ec-8ff8-1e8505780671.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869587201_dffb2ce0_3826_49ec_8ff8_1e8505780671.png)
 
 Select a keyboard layout.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587425-cd6dfdfd-fb60-4bb3-a9ac-1ceddaa0360c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869587425_cd6dfdfd_fb60_4bb3_a9ac_1ceddaa0360c.png)
 
 Select to upgrade and install the software, and continue by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587693-96841510-6f1d-4cbb-8226-5f6b08b525fb.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869587693_96841510_6f1d_4cbb_8226_5f6b08b525fb.png)
 
 Select the installation method and hard disk partition. The default is to install now and continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587952-9463364d-3878-4b10-9ce8-295d6494a33c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869587952_9463364d_3878_4b10_9ce8_295d6494a33c.png)
 
 Enter the account no.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869588554-7e9e7f72-e56f-4f8b-a02e-bdcf739a95fb.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869588554_7e9e7f72_e56f_4f8b_a02e_bdcf739a95fb.png)
 
 After that, the virtual machine starts to install the image and wait patiently.
 
@@ -251,21 +251,21 @@ After that, the virtual machine starts to install the image and wait patiently.
 
 **Error 1**: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869588749-a1495548-d40f-4bae-904f-8bbbc2fe79c3.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
 
 Solution: Right click on my computer to manage services and application services, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589005-ef1fc363-0dd2-4630-9776-43ba22bbf91c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
 
 **Error 2**: Internal error.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589342-acc3167f-f1bc-4e26-ab17-5e9f35b7591e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869589342_acc3167f_f1bc_4e26_ab17_5e9f35b7591e.png)
 
 Solution: Refer to error 1.
 
 **Error 3**: Unable to install service VMware Authorization Service (VMAuthdService):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589591-d34021d8-fca9-461e-a9e0-cb7d0e3a072f.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869589591_d34021d8_fca9_461e_a9e0_cb7d0e3a072f.png)
 
 Solution:
 
@@ -273,25 +273,25 @@ win+R
 
 Enter services.msc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589803-7188217b-8454-464a-8b10-89f5dcfdc279.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869589803_7188217b_8454_464a_8b10_89f5dcfdc279.png)
 
 Then find the service and start it, because this service is the authorization and authentication service used to start and access the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590078-8aef4460-79c2-4763-8e7d-118c2d5983cc.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869590078_8aef4460_79c2_4763_8e7d_118c2d5983cc.png)
 
 WMI must be started first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590418-2f8e53a5-c2fc-4757-9953-c9e4fb189590.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869590418_2f8e53a5_c2fc_4757_9953_c9e4fb189590.png)
 
 **Error 4**: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590665-c36e2101-6100-454f-8aa5-3ca6957f749a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869590665_c36e2101_6100_454f_8aa5_3ca6957f749a.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 
 **Error 5**: Intel VT-x is disabled.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591003-b756d65f-933d-4574-8baf-f6cfe2aeabb5.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
 
 Solution:
 
@@ -303,7 +303,7 @@ If that doesn't work, just turn the firewall off and reopen the VM. (varies by m
 
 Error 6: The virtual machine appears to be in use... Acquiring Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591243-c7dee38e-bc9a-4e75-b107-7cf10d254f4f.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869591243_c7dee38e_bc9a_4e75_b107_7cf10d254f4f.png)
 
 Solution:
 
@@ -311,13 +311,13 @@ Solution:
 2. Enter the storage directory of the virtual machine and delete the *.lck file. The lck represents the locked file; 
 3. Open Windows Task Manager and kill the VMware process.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591535-d122dbda-6632-4026-9d63-23db9d4537f2.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869591535_d122dbda_6632_4026_9d63_23db9d4537f2.png)
 
 4. Restart the virtual machine.
 
 Error 7: Failed to lock file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591887-144b4cd3-ddb0-449d-a2f2-f40a3001899e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869591887_144b4cd3_ddb0_449d_a2f2_f40a3001899e.png)
 
 Solution:
 
@@ -331,7 +331,7 @@ Solution:
 
 The virtual machine does not have enough memory to run the maximum requirement of the image. Increase the memory of the virtual machine and restart the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592129-f2e6097d-9937-4a53-b0b3-1bbe72566871.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869592129_f2e6097d_9937_4a53_b0b3_1bbe72566871.png)
 
 ### 3.2 Ubuntu Common Software Installation
 
@@ -339,17 +339,17 @@ The virtual machine does not have enough memory to run the maximum requirement o
 
 Click the icon similar to a package on the left side of the desktop to see some tools. You can also search for the tools you want. For example, download a VScode tool, which is very convenient for the daily coding.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592379-88da66b9-82c5-4005-8e7f-edb58d0aa2ea.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869592379_88da66b9_82c5_4005_8e7f_edb58d0aa2ea.png)
 
 Please search for the tool you need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click "Launch" to run it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592679-2fb3764d-0037-41e4-9af4-58ea85585a1b.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869592679_2fb3764d_0037_41e4_9af4_58ea85585a1b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592939-3b9a36d8-33cd-41b2-91fc-c6a49f4e81d7.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869592939_3b9a36d8_33cd_41b2_91fc_c6a49f4e81d7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593272-13fb8849-88df-47ef-85a3-4acb70beaee3.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869593272_13fb8849_88df_47ef_85a3_4acb70beaee3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593542-98dcaa2a-5828-4e6c-823d-050f711a226e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869593542_98dcaa2a_5828_4e6c_823d_050f711a226e.png)
 
 #### 3.2.2 NFS Installation
 
@@ -359,7 +359,7 @@ The terminal executes the following command:
 forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593819-49fb6680-cb15-4789-b1ea-4743a3407d96.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
 
 #### 3.2.3 FTP server
 
@@ -392,19 +392,19 @@ forlinx@ubuntu:~$ sudo /etc/init.d/vsftpd restart
 
 After the installation is completed, open the client and the following interface appears:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594191-62172235-1998-4ed9-a19c-e134416074e6.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png)
 
 Click File-Site Management.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594367-8db7e0ba-7198-4c04-86e7-c07b526c2c82.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869594367_8db7e0ba_7198_4c04_86e7_c07b526c2c82.png)
 
 Add the IP address under the Ubuntu system to the host, user name: forlinx, password: forlinx. Click Connection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594622-0a022d2f-e436-4806-afe1-7800463e9bae.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png)
 
 After a successful connection, you can display the directory structure under the Ubuntu system and transfer files from the Windows system to the Ubuntu system via network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594908-3a664d89-3204-4023-92fa-5e5222d18baf.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869594908_3a664d89_3204_4023_92fa_5e5222d18baf.png)
 
 ### 3.3 Cross-compilation Environment
 
@@ -455,11 +455,11 @@ forlinx@ubuntu:~$ sudo vi /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-p
 QtGui/qtgui-config.h
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721784641202-09bd3467-efd3-4e0c-9b45-d3eb95fa7076.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1721784641202_09bd3467_efd3_4e0c_9b45_d3eb95fa7076.png)
 
 Modify to
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721784664032-02aaf006-3d2f-431d-82fb-cdc8b20643ee.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1721784664032_02aaf006_3d2f_431d_82fb_cdc8b20643ee.png)
 
 #### 3.3.2 Environment Variables Settings
 
@@ -514,35 +514,35 @@ forlinx@ubuntu:~/ok-mx93$ ./qt-creator-opensource-linux-x86_64-8.0.2.run
 
 The following interface will pop up, enter the QT account, and click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595129-2c47b18c-f7d4-44de-aa48-f85bc89b896a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869595129_2c47b18c_f7d4_44de_aa48_f85bc89b896a.png)
 
 Agree to the agreement, click "Next" to go to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595340-47905606-270f-46e2-8ef2-e76eb9d09968.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869595340_47905606_270f_46e2_8ef2_e76eb9d09968.png)
 
 Click "Next" to go to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595613-4820d0e4-d6ba-4615-a58a-42bfa5aad177.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869595613_4820d0e4_d6ba_4615_a58a_42bfa5aad177.png)
 
 In the following screen, click "Browse …" Select the installation path of Qt creator, and then click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595845-430e2d1a-8db2-4da7-917e-219b156a9e49.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869595845_430e2d1a_8db2_4da7_917e_219b156a9e49.png)
 
 Click "Next" in the following interface to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596171-be3b6e90-527a-4cb3-b106-9e32f482ff4a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869596171_be3b6e90_527a_4cb3_b106_9e32f482ff4a.png)
 
 Agree to the agreement and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596399-0e3ea346-20de-45ef-917e-91d3202ec93b.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869596399_0e3ea346_20de_45ef_917e_91d3202ec93b.png)
 
 Click Install to install:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596646-6b25adf6-0c2c-46c5-99b2-9ac0dddef58a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869596646_6b25adf6_0c2c_46c5_99b2_9ac0dddef58a.png)
 
 After the installation is completed, the following interface will be displayed. Uncheck the option "Launch Qt Creator" "and click" Finish "to complete the installation steps of Qt Creator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596923-f2d87052-c711-4661-ac02-b5adf1160842.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869596923_f2d87052_c711_4661_ac02_b5adf1160842.png)
 
 Enter the qtcreator actual installation directory/home/forlinx/qtcreator-8.0.2//Tools/QtCreator/bin/directory:
 
@@ -558,7 +558,7 @@ forlinx@ubuntu: ~/qtcreator-8.0.2/bin $ sudo ./qtcreator
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869597142-13b4d91d-fe35-418a-9e8c-35cdf1ebd754.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869597142_13b4d91d_fe35_418a_9e8c_35cdf1ebd754.png)
 
 The Qt Creator tool screen appears. Qt Creator is installed.
 
@@ -575,21 +575,21 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 Start Qt Creator, and the Qt development interface will appear. Click Tools-> external-> Configure option:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869597448-dcfa9764-a5a2-4057-91c8-b22fde2be1fe.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869597448_dcfa9764_a5a2_4057_91c8_b22fde2be1fe.png)
 
 Enter the Preference interface, click "Kits" on the left, then click the "Compilers" tab on the top of the middle, and click "Add-> GCC-> C + +" on the right, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869597838-fc8c102d-51cf-4da6-aa1b-7c6218ddc4c6.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869597838_fc8c102d_51cf_4da6_aa1b_7c6218ddc4c6.png)
 
 The following window pops up, click Browser in the Compiler path option to find “aarch64-poky-linux-g++” in /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux of SDK package, then click Open, and change Name to “G++”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598033-636f6325-1185-4e4b-be0b-6dcfd263a22c.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869598033_636f6325_1185_4e4b_be0b_6dcfd263a22c.png)
 
 Add the GCC compiler using the same method, click on "Add>GCC ->C" on the right, as shown in the figure:
 
 Find “aarch64-poky-linux-gcc” in SDK package/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux then click Open, and change Name to “G++”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598324-0cf95d69-e7e0-4b9d-a96a-cfbfd9363658.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869598324_0cf95d69_e7e0_4b9d_a96a_cfbfd9363658.png)
 
 ##### 3.4.2.2 Debuggers Configuration
 
@@ -597,7 +597,7 @@ Click on the debuggers tab, the following interface will pop up, click Add:
 
 The following window will pop up, find “aarch64-poky-linux-gdb” in SDK package/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux, then click Open, and change Name to “debuggers”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598620-474a8c3a-7648-48f5-a95e-060630110d41.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869598620_474a8c3a_7648_48f5_a95e_060630110d41.png)
 
 ##### 3.4.2.3 Qt Version Configuration
 
@@ -605,17 +605,17 @@ Click on the Qt Versions tab and select Add:
 
 Find qmake in /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin, then select and click open. After adding, it will display as follows. Click Apply.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598822-b09b53a1-5215-46b0-85dc-7add81077c41.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869598822_b09b53a1_5215_46b0_85dc_7add81077c41.png)
 
 If the environment variables are configured correctly, it will show configured as follows：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869599056-689d1e1b-e71b-4c82-9f9f-ed6aa233a3af.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869599056_689d1e1b_e71b_4c82_9f9f_ed6aa233a3af.png)
 
 ##### 3.4.2.4 Kits Configuration
 
 Click on the "Kits" tab, click on "Add" on the right, add a new Kit, modify it according to the content shown in the figure below, and click "Apply".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869599282-a044f438-f7a0-4ab9-bc84-5ae4497cf0e8.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869599282_a044f438_f7a0_4ab9_bc84_5ae4497cf0e8.png)
 
 ## 4\. Linux Compilation
 
@@ -1039,21 +1039,21 @@ forlinx@ubuntu: ~/ok-mx93/qtcreator-8.0.2//bin $ sudo ./qtcreator
 
 Click File->Open File or Project in Qt Creator, a pop-up window will appear, select /home/forlinx/ok-mx93/OKMX93-linux-sdk/appsrc/forlinx-qt/fltest\_qt\_backlight/fltest\_qt\_ backlight.pro, click open to bring up the Configure Project window, select the previously configured okmx93 as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869651633-bd12e26c-79fe-4765-997f-545c616d4246.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869651633_bd12e26c_79fe_4765_997f_545c616d4246.png)
 
 Then click Configure Project, and the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869651904-d30a8d4e-114a-405e-885d-836fb30f2c38.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869651904_d30a8d4e_114a_405e_885d_836fb30f2c38.png)
 
-Select fltest\_qt\_backlight right click Clean to clear. The clean progress bar in the lower right corner turns green indicating that clean is complete.![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652121-925ead7a-9924-4c6f-abf9-92b116b8b512.png)
+Select fltest\_qt\_backlight right click Clean to clear. The clean progress bar in the lower right corner turns green indicating that clean is complete.![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869652121_925ead7a_9924_4c6f_abf9_92b116b8b512.png)
 
 Select fltest\_qt\_backlight and right click Build to compile.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652425-acda70ff-6b4c-4472-9224-239ac9ed1b5a.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869652425_acda70ff_6b4c_4472_9224_239ac9ed1b5a.png)
 
 The Build progress bar in the lower right corner means that the compilation is complete, at this time in the path /home/forlinx/ok-mx93/OKMX93-linux-sdk/appsrc/forlinx-qt/fltest\_qt\_backlight/ directory, you will see the new binary file fltest\_qt\_backlight. backlight, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652755-8d906d62-fba5-4476-a6b9-755e16202fce.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869652755_8d906d62_fba5_4476_a6b9_755e16202fce.png)
 
 Replace the method of running QT program in the desktop
 
@@ -1139,39 +1139,39 @@ forlinx@ubuntu:~ /qtcreator-8.0.2/bin $ sudo ./qtcreator
 
 Start the Qt Creator program, enter the Qt Creator interface, click "Create Project" to create a new project:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652979-8c049000-bb2c-43f7-9fe0-c4a92d63dd68.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869652979_8c049000_bb2c_43f7_9fe0_c4a92d63dd68.png)
 
 Select "Application"->"Qt Widgets Application", and then click "Choose" in the lower right corner:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653265-35d0f946-a53a-43ae-9938-91b46c0c0405.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869653265_35d0f946_a53a_43ae_9938_91b46c0c0405.png)
 
 Change the name of the newly created project to "Hello World" in the following interface, select the installation path and choose/home/worldinx, then click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653494-318f883a-f096-4c67-aa84-9dff77203007.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869653494_318f883a_f096_4c67_aa84_9dff77203007.png)
 
 Select qmake and click Next to continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653686-ee02a772-e1e4-4df2-aec7-23dac4728d54.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869653686_ee02a772_e1e4_4df2_aec7_23dac4728d54.png)
 
 In the following screen, change the class name to "helloworld", select the base class to "Qwidget", and then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653934-e470b647-6b89-4496-b428-c94022a99646.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869653934_e470b647_6b89_4496_b428_c94022a99646.png)
 
 The following interface does not need to be configured. Click "Next" directly:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654119-4cf5f0f7-1892-4115-b0fa-b17c1beac3f5.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869654119_4cf5f0f7_1892_4115_b0fa_b17c1beac3f5.png)
 
 In the following interface, select the previously added "okmx93" as the kit for the current project, and then click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654359-f2861d6d-ecf6-46e9-8aba-a08f5c335c4f.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869654359_f2861d6d_ecf6_46e9_8aba_a08f5c335c4f.png)
 
 In the following interface, click "Finish" to complete the creation of the project:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654592-4449be79-f33b-4387-ba29-ef42598d69f8.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869654592_4449be79_f33b_4387_ba29_ef42598d69f8.png)
 
 After the creation of the new project is completed, the following window will be displayed:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654859-08bbaf5b-340e-457e-a2c3-d8d341ee4ff7.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869654859_08bbaf5b_340e_457e_a2c3_d8d341ee4ff7.png)
 
 After the program is written, click on the hammer icon in the bottom left corner to perform cross compilation. Copy the compiled executable program Hello World to the development board for application testing. The testing method is the same as the Qt application testing method in 4.4.2.1.
 
@@ -1201,15 +1201,15 @@ Start to make burning TF card
 $sudo ./mksdboot.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869723016-c7c3eeca-4246-4569-9357-826d0303e8d4.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869723016_c7c3eeca_4246_4569_9357_826d0303e8d4.png)
 
 Select the TF card device, here take 1 for example, enter 1 to select the sdb device.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869723715-f5eb1df9-6c15-486a-8f69-a8d5f84e9121.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869723715_f5eb1df9_6c15_486a_8f69_a8d5f84e9121.png)
 
 Enter y to confirm and allow the TF card to be repartitioned and formatted.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869724369-18f4178d-458d-45e4-8a81-b4655d30fb11.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869724369_18f4178d_458d_45e4_8a81_b4655d30fb11.png)
 
 Production is complete.
 
@@ -1221,7 +1221,7 @@ You can use the same name image compiled by the customer in the OKMX93-linux-sdk
 
 1\. Set the OK-MX93 DIP switch to SD card boot mode, insert the flashed TF card, and power on the device;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869724736-4d18ba0e-76ff-4eb5-9589-bc01c7582ea2.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869724736_4d18ba0e_76ff_4eb5_9589_bc01c7582ea2.png)
 
 2\. If a TF card is inserted, the ramdisk.img.gz and kernel image from the TF card will be loaded by default, and the kernel will be booted through the virtual file system; After ramdisk has finished booting, it will automatically flash the filesystem ok-mx93-linux-fs.sdcard.a\* to emmc. If not automatically flashed, manually execute /update.sh.
 
@@ -1260,19 +1260,19 @@ forlinx@ubuntu:/usr/bin$ sudo chmod 777 uuu                       //Give uuu exe
 
 Step 2: Plug the OTG cable into the USB interface of the Linux host. Set the DIP switch to OTG startup, set the OTG DIP switch to slave mode, and start the development board. Dial as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869725185-5dc71a39-927e-4b06-b5bf-0cd8ed44e726.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869725185_5dc71a39_927e_4b06_b5bf_0cd8ed44e726.png)
 
 The OTG interface locations are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869726077-958b3019-56a7-4f37-945a-8e2f11e968da.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869726077_958b3019_56a7_4f37_945a_8e2f11e968da.png)
 
 Start the development board and mount it in the development environment.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869726866-2f3588d8-65cb-4382-b5cd-f97e45bf05cd.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869726866_2f3588d8_65cb_4382_b5cd_f97e45bf05cd.png)
 
 It is recommended that you check the box "Remember my choice and don't ask again".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869727168-e7e138ad-8ae3-4ae0-b0ef-fdffef545296.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869727168_e7e138ad_8ae3_4ae0_b0ef_fdffef545296.png)
 
 Step 3: Enter the command to flash in the Linux host.
 
@@ -1285,7 +1285,7 @@ forlinx@ubuntu:~/OKMX93-linux-image$ cat ok-mx93-linux-fs.sdcard.a* > rootfs.bin
 forlinx@ubuntu:~/OKMX93-linux-image$ sudo uuu -b emmc_all ok-mx93-uboot.bin rootfs.bin                         
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869727379-0588556f-c863-4ce8-9f77-f483e6958b23.png)Successful flashing is shown in the following figure:
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869727379_0588556f_c863_4ce8_9f77_f483e6958b23.png)Successful flashing is shown in the following figure:
 
 2\. Flash u-boot to eMMC.
 
@@ -1295,7 +1295,7 @@ forlinx@ubuntu:~/OKMX93-linux-image$ sudo uuu -b emmc ok-mx93-uboot.bin
 
 <font style="color:#000000;">Successful flashing is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869727813-026b43fd-0b55-48c6-b254-13fcd59eb4a6.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869727813_026b43fd_0b55_48c6_b254_13fcd59eb4a6.png)
 
 #### 5.2.2 Use of UUU Tool in Windows
 
@@ -1307,11 +1307,11 @@ Copy the uuu. exe from the CD material to the uuu directory of the D drive.
 
 Step 2: Use the TYPE-C cable to connect the USB port of the computer host and the OTG port of the development board, set the dip switch to OTG startup, set the OTG dialing code to slave mode, and start the development board. Dial as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869728438-f4e09a95-e210-47df-8371-8d96073ba08e.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869728438_f4e09a95_e210_47df_8371_8d96073ba08e.png)
 
 The OTG interface locations are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869728997-002aaf89-bcb5-406d-b11b-2651ac9b8888.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869728997_002aaf89_bcb5_406d_b11b_2651ac9b8888.png)
 
 Step 3: Copy image.
 
@@ -1325,7 +1325,7 @@ forlinx@ubuntu:~/OKMX93-linux-image$ cat ok-mx93-linux-fs.sdcard.a* > rootfs.bin
 
 After copying, the file under the uuu path is as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869729608-ce3bdca8-7909-441a-aa3c-7f762c865836.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869729608_ce3bdca8_7909_441a_aa3c_7f762c865836.png)
 
 Flash U-Boot, kernel, and the file system to the eMMC:
 
@@ -1340,7 +1340,7 @@ D:\uuu>uuu.exe -b emmc_all ok-mx93-uboot.bin rootfs.bin
 
 Successful flashing is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721804454203-4be12765-a6ae-4cf4-ba01-967583707784.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1721804454203_4be12765_a6ae_4cf4_ba01_967583707784.png)
 
 Flash u-boot to eMMC:
 
@@ -1355,7 +1355,7 @@ D:\uuu>uuu.exe -b emmc ok-mx93-uboot.bin
 
 Successful flashing is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721804563797-7a891711-6e29-4ccf-a053-41157446f6c2.png)
+![Image](./images/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1721804563797_7a891711_6e29_4ccf_a053_41157446f6c2.png)
 
 ### **5.3 Separate Image Updating**
 
