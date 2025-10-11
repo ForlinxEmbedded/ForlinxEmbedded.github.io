@@ -10,7 +10,7 @@
 
 
 ====================
-OK-MX9352-C Manuals
+OK-MX9352-C Manual
 ====================
 
 HARDWARE
