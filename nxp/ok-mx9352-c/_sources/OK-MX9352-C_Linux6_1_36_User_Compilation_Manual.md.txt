@@ -1372,7 +1372,7 @@ root@ok-mx93:/run/media/Boot-mmcblk0p1# cp /run/media/boot-sda1/Image ./
 root@ok-mx93:/run/media/Boot-mmcblk0p1# sync            //Sync Save
 ```
 
-## 5.4 Updating Logo Separately
+### 5.4 Updating Logo Separately
 
 Make a PNG image with a resolution of 1280x800 and rename it logo2-1280x800.png
 
