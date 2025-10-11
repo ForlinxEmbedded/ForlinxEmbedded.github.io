@@ -7,7 +7,7 @@ author = 'Forlinx Embedded'
 copyright = 'Forlinx Embedded'
 
 extensions = [
-    'myst_parser',
+    'myst_parser',    
 ]
 
 
@@ -24,6 +24,7 @@ html_static_path = ['_static']
 
 html_css_files = [
     'custom.css',
+    'theme-switcher.css',
 ]
 
 # Logo 文件放在 _static 文件夹，确保路径正确
@@ -48,3 +49,7 @@ html_sidebars = {
 }
 
 html_show_sourcelink = False
+
+html_js_files = [
+    'theme-switcher.js',
+]
