@@ -28,6 +28,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK-MX9352-C_Linux6_1_36_User_Manual
+   OK-MX9352-C_Linux6_1_36_User_Compilation_Manual
 
 APPLICATION NOTE
 -----------------
