@@ -4,17 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // ------------------- 自动获取当前项目路径 -------------------
     // 例：https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3576-c/
     // 提取出 /forlinx-docs-HT/rockchip/ok3576-c/
-    const pathParts = window.location.pathname.split("/");
-    // 找到 "_static" 之前的层级
-    // 例： /forlinx-docs-HT/rockchip/ok3576-c/some-page.html → /forlinx-docs-HT/rockchip/ok3576-c/
-    let projectBase = "/";
-    const idx = pathParts.indexOf("_static");
-    if (idx > 1) {
-        projectBase = pathParts.slice(0, idx).join("/") + "/";
-    } else if (pathParts.length > 3) {
-        // 一般 Sphinx 子项目深度：/repo/brand/model/
-        projectBase = pathParts.slice(0, 4).join("/") + "/";
-    }
+    // ------------------- 自动获取当前项目路径 -------------------
+    let projectBase = window.location.pathname.replace(/[^/]+$/, "");
+    if (!projectBase.endsWith("/")) projectBase += "/";
+    console.log("projectBase =", projectBase); // 调试用，可删
+    
+
 
     // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
