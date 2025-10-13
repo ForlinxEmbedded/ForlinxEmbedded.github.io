@@ -4,16 +4,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ------------------- 自动获取当前项目根路径 -------------------
     // 目标：保证始终返回包含 "_static" 的上级目录路径（例如 /rockchip/rk-development-manual/）
-    let pathParts = window.location.pathname.split("/").filter(Boolean);
+    // ------------------- 智能自动获取项目根路径 -------------------
+function findProjectBase() {
+    let path = window.location.pathname;
+    let segments = path.split("/").filter(Boolean);
 
-    // 自动截断路径到第三级，例如：/forlinx-docs-HT/rockchip/rk-development-manual/
-    let projectBase = "/";
-    if (pathParts.length >= 3) {
-    projectBase = "/" + pathParts.slice(0, 3).join("/") + "/";
-    } else {
-    projectBase = window.location.pathname.replace(/[^/]+$/, "");
+    for (let i = segments.length; i >= 1; i--) {
+        let candidate = "/" + segments.slice(0, i).join("/") + "/";
+        let testPath = candidate + "_static/forlinx-logo.png";
+
+        let xhr = new XMLHttpRequest();
+        try {
+            xhr.open("HEAD", testPath, false);
+            xhr.send();
+            if (xhr.status >= 200 && xhr.status < 400) {
+                console.log("✅ Found logo base:", candidate);
+                return candidate;
+            }
+        } catch (e) {
+            continue;
+        }
     }
-    console.log("projectBase =", projectBase);
+    console.warn("⚠️ No logo found, fallback to current path");
+    return path.replace(/[^/]+$/, "");
+}
+
+let projectBase = localStorage.getItem("logo-base") || findProjectBase();
+localStorage.setItem("logo-base", projectBase);
+console.log("projectBase =", projectBase);
+
 
     
 
