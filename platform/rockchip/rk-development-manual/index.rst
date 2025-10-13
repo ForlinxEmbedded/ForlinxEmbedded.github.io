@@ -10,7 +10,7 @@
 
 
 ======================
-RK Development Manual
+RK Development Manuals
 ======================
 
 RK Platform Developer Guide
