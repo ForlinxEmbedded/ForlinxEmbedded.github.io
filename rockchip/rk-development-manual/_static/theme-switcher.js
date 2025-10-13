@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-    // ------------------- 自动获取当前项目路径 -------------------
-    // 例：https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3576-c/
-    // 提取出 /forlinx-docs-HT/rockchip/ok3576-c/
-    // ------------------- 自动获取当前项目路径 -------------------
-    let projectBase = window.location.pathname.replace(/[^/]+$/, "");
-    if (!projectBase.endsWith("/")) projectBase += "/";
-    console.log("projectBase =", projectBase); // 调试用，可删
+
+    // ------------------- 自动获取当前项目根路径 -------------------
+    // 目标：保证始终返回包含 "_static" 的上级目录路径（例如 /rockchip/rk-development-manual/）
+    let pathParts = window.location.pathname.split("/").filter(Boolean);
+
+    // 自动截断路径到第三级，例如：/forlinx-docs-HT/rockchip/rk-development-manual/
+    let projectBase = "/";
+    if (pathParts.length >= 3) {
+    projectBase = "/" + pathParts.slice(0, 3).join("/") + "/";
+    } else {
+    projectBase = window.location.pathname.replace(/[^/]+$/, "");
+    }
+    console.log("projectBase =", projectBase);
+
     
 
 
