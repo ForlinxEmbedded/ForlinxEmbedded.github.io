@@ -16,9 +16,9 @@ This hardware manual is applicable to the development boards of OKT507-C V1.0 an
 
 ## **Revision History**
 
-| Version | Date       | Modification |
-| ------- | ---------- | ------------ |
-| V1.0    | 11/06/2024 |              |
+| Version | Date       | Modification                           |
+| ------- | ---------- | -------------------------------------- |
+| V1.0    | 11/06/2024 | User's Hardware Manual Initial Version |
 
 ## Overview 
 
