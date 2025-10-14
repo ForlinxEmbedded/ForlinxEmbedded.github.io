@@ -181,6 +181,16 @@ Allwinner Series
      </div>
    </div>
 
+   <div class="product-card">
+     <a href="allwinner/okt507-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/allwinner/OKT507-C.png" alt="okt507-c" class="product-image" />
+     </a>
+     <h3 class="product-title">OKT507-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/t507-system-on-module-115.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="allwinner/okt507-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
 
    <div class="product-card">
      <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer">
