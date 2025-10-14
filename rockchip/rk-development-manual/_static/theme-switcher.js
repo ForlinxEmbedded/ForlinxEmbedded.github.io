@@ -1,9 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-
-    // ------------------- 自动获取当前项目根路径 -------------------
-    // 目标：保证始终返回包含 "_static" 的上级目录路径（例如 /rockchip/rk-development-manual/）
     // ------------------- 智能自动获取项目根路径 (异步) -------------------
     async function findProjectBase() {
         let cached = localStorage.getItem("logo-base");
@@ -34,30 +31,23 @@ document.addEventListener("DOMContentLoaded", function () {
         return fallback;
     }
 
+    // ✅ await 才会生效
     let projectBase = await findProjectBase();
     console.log("projectBase =", projectBase);
 
-
-    
-
-
     // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
-        // 切换 body class
         document.body.className = document.body.className.replace(/theme-\w+/g, "");
         document.body.classList.add(`theme-${theme}`);
 
-        // 更新按钮文字
         updateButtonLabel();
 
-        // 动态切换 logo
         const logo = document.querySelector(".wy-side-nav-search img");
         if (logo) {
             const lightLogo = projectBase + "_static/forlinx-logo.png";
             const darkLogo = projectBase + "_static/forlinx-logo-dark.png";
 
             if (theme === "dark") {
-                // 先检测 dark logo 是否存在
                 const testImg = new Image();
                 testImg.onload = function () {
                     logo.src = darkLogo;
@@ -74,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // 平滑过渡
         document.body.style.transition = "background-color 0.3s, color 0.3s";
     }
 
