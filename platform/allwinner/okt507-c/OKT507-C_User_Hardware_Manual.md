@@ -170,7 +170,7 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 | OWA| 1| -1 x OWA Send |
 | I2S| ≤4| -1 x built - in audio HUB;<br/>-Supports 2 x Digital Audio MIXER (DAM); <br/>-Supports 3 x I2S/PCM to connect external devices and 1 x I2S/PCM to connect to the internal HDMI;<br/>-Supports left - aligned, right - aligned, standard I2S, PCM, and TDM modes;<br/>-The I2S supports 8 channels with a 32 - bit/192kbit sampling rate;<br/>-The I2S and TMD modes support a maximum of 16 channels with a 32 - bit/96kbit sampling rate. |
 
-**Note: **
+**Note:** 
 
 **1. The parameters in the table are the theoretical values for hardware design or the CPU;** 
 **2. TBD "indicates that the functionality has not yet been developed at this stage.**
