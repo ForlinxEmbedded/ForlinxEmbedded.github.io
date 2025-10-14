@@ -39,7 +39,7 @@ html_theme_options = {
 }
 
 html_css_files = [
-    'custom.css',
+    'theme-switcher.css',
 ]
 
 html_sidebars = {
@@ -53,3 +53,8 @@ html_sidebars = {
 }
 
 html_show_sourcelink = False
+
+html_js_files = [
+    'theme-switcher.js',
+    'logo-link.js',
+]

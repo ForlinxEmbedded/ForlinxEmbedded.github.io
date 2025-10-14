@@ -54,7 +54,7 @@ Target Applications:
 
 **T5 Series Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596355181-ec3d7f4e-8c5d-4086-be56-b08980dd306a.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596355181_ec3d7f4e_8c5d_4086_be56_b08980dd306a.png)
 
 ## 2\. FET507-C SoM Description
 
@@ -62,11 +62,11 @@ Target Applications:
 
 **FETT507 SoM**
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533232/1720596336183-0f6a82c6-6953-44e2-b79a-b997f35e0683.jpeg)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596336183_0f6a82c6_6953_44e2_b79a_b997f35e0683.jpeg)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533232/1720596336560-4ea6ab28-900e-43cc-bebd-f1c1e3dfa85e.jpeg)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596336560_4ea6ab28_900e_43cc_bebd_f1c1e3dfa85e.jpeg)
 
 **Back**
 
@@ -74,11 +74,11 @@ Target Applications:
 
 FETT507 SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596336980-c76241e7-6f9d-4933-ba3d-2201407fa677.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596337315-1058cea4-dc92-417b-957c-97333a9a43e6.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596336980_c76241e7_6f9d_4933_ba3d_2201407fa677.png)![Image](./images/OKT507-C_User_Hardware_Manual/1720596337315_1058cea4_dc92_417b_957c_97333a9a43e6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596337539-df0533c0-ffd0-4978-bf23-d771ce4cae94.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596337539_df0533c0_ffd0_4978_bf23_d771ce4cae94.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596337773-3ca53873-22ae-4770-85ef-652882bc2ced.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596337773_3ca53873_22ae_4770_85ef_652882bc2ced.png)
 
 Structure size: 40mm×70mm, dimensional tolerance ±0.15mm.
 
@@ -179,7 +179,7 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 #### 2.5.1  FETT507-C SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596338029-d371dba6-17f7-4947-ba89-2e1cc2e5ebf0.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596338333-9209afc2-b0f2-4bb2-80fe-1910062585b8.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596338621-a72173b8-9bb4-4b26-b483-92b8df90012f.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596338029_d371dba6_17f7_4947_ba89_2e1cc2e5ebf0.png)![Image](./images/OKT507-C_User_Hardware_Manual/1720596338333_9209afc2_b0f2_4bb2_80fe_1910062585b8.png)![Image](./images/OKT507-C_User_Hardware_Manual/1720596338621_a72173b8_9bb4_4b26_b483_92b8df90012f.png)
 
 #### 2.5.2 FETT507-C SoM Pins Description
 
@@ -485,7 +485,7 @@ Please refer to “Appendix IV. for the minimal system schematic diagram However
 
 The connection of OKT507-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596346933-3c7c412e-5d57-4806-aa5a-83c5cc056c8e.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596346933_3c7c412e_5d57_4806_aa5a_83c5cc056c8e.png)
 
 **OKT507 Development Board Interfaces**
 
@@ -565,9 +565,9 @@ Carrier board power supply is DC 12V, led in through DC-005 socket (P8). The 12V
 
 This circuit is to ensure that the SoM is powered on first, and followed by the carrier board, so as to prevent the damage to the CPU caused by latch-up effects. If the power supply is not controlled in time sequence, the PMIC of the SoM detects the leakage of electricity and fails to start up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382182301-cc07e63c-c1d3-4e1d-a753-a33d99eb36bb.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382182301_cc07e63c_c1d3_4e1d_a753_a33d99eb36bb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382189538-5b7eb0ed-730e-45ca-9f2b-453797a055dc.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382189538_5b7eb0ed_730e_45ca_9f2b_453797a055dc.png)
 
 **Note:**
 
@@ -579,19 +579,19 @@ This circuit is to ensure that the SoM is powered on first, and followed by the 
 
 The K8 button at the lower - left corner of the carrier board is the reset button of the development board. The name of the connected network is SOC - RESET. It is recommended to keep the capacitor and TVS device to prevent the system reset from being interfered during electrostatic testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382198712-554b8e0d-0e28-4444-ac25-c184e491a7f0.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382198712_554b8e0d_0e28_4444_ac25_c184e491a7f0.png)
 
 The K1 at the bottom left of the carrier board is the firmware forced burning pin, which is connected to the computer via microUSB to burn firmware. When the hardware system is not powered on, press and hold the button to ground the FEL; after powering on, release the FEL and the hardware system enters firmware upgrade mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382205724-f3f5078c-69eb-40a3-8d36-18ad258dd835.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382205724_f3f5078c_69eb_40a3_8d36_18ad258dd835.png)
 
 The PWRON button at the lower - right corner of the carrier board is a switch - controlled pin. Long - pressing it turns the system on/off, and short - pressing it puts the system into sleep/wake - up mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382212716-ef1df85c-8110-445f-b78e-a6395ef8aa6f.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382212716_ef1df85c_8110_445f_b78e_a6395ef8aa6f.png)
 
 The five buttons at the lower - right corner of the carrier board are implemented by the LRADC of the CPU. The LRADC on the core board has a 51K resistor pulled up to 1.8V. The LRADC has a 6 - bit resolution and is used for button voltage identification. The maximum sampling rate is 2kHz, and the sampling voltage ranges from 0 to 1.35V. It is recommended that the voltage - dividing resistors have an accuracy of 1%. Leave the pins floating when the carrier board is not in use.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382219281-e4ae9e19-d112-49be-8cf8-8ac87c9cbb73.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382219281_e4ae9e19_d112_49be_8cf8_8ac87c9cbb73.png)
 
 **Note: It is recommended to add ESD devices to the keys to prevent electrostatic damage to the SoM devices.**
 
@@ -601,7 +601,7 @@ The FETT507 SoM supports connecting to a computer via microUSB to burn the firmw
 
 The FETT507 SoM also supports burning the firmware through the TF card and supports booting from the built - in eMMC and the external SPI NOR FALSH. After setting the correct DIP switches, power on the hardware to enter the system.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596348577-cb837ff3-26d1-49e0-bbd4-17d5f8f11320.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382226926-f66ab4f8-65bf-403c-9882-a397acf43c16.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596348577_cb837ff3_26d1_49e0_bbd4_17d5f8f11320.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382226926_f66ab4f8_65bf_403c_9882_a397acf43c16.png)
 
 **Note: The SPI boot function is reserved on the hardware, and the subsequent support status depends on the release of the software and hardware. If you need to boot with the SPI NOR FLASH, please add a FLASH chip of the same model on the carrier board.**
 
@@ -611,13 +611,13 @@ The TTL level of the debug serial port is led out using a 2.54mm pin header (P10
 
 The conversion circuits of Q2 and Q3 are used to prevent the serial port from leaking electricity, which may cause the system to fail to start.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382237017-493fc3db-b6c4-4a84-918f-7dfdbd6836f2.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382237017_493fc3db_b6c4_4a84_918f_7dfdbd6836f2.png)
 
 #### 3.5.5 TF Card
 
 There is a self - ejecting TF card socket on the development board. The maximum data rate is SDR Mode 150MHz@1.8V IO. The software system can be flashed via the TF card. It is recommended to keep this socket when designing the carrier board. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382246539-3a92513f-8fbb-4349-b6a0-0011e501c43e.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382246539_3a92513f_8fbb_4349_b6a0_0011e501c43e.png)
 
 **Note:**
 
@@ -631,9 +631,9 @@ The FETT507 - C SoM contains 4 groups of USB2.0. Among them, USB0 supports the O
 
 USB2 has the sleep - wake function, which is used in the USB standby or 4G standby scenarios. When applied in the standby scenario, the VCC - USB2 needs to be continuously powered.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382256129-2f67712c-a7ff-4406-a368-5caaf18e7c2a.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382256129_2f67712c_a7ff_4406_a368_5caaf18e7c2a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382264383-0e2ce5e0-768e-411c-9373-3acefd6dfe43.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382264383_0e2ce5e0_768e_411c_9373_3acefd6dfe43.png)
 
 #### 3.5.7 4G
 
@@ -641,11 +641,11 @@ The OKT507 - C board has an on - board mini PCIE slot with a latch, which suppor
 
 The hardware design of the development board has the 4G standby function. When the SoM is in sleep mode, the 4G module is continuously powered, and VCC - USB2 is continuously powered. The system can be woken up through 4G - WAKEUP - SOC, and the wake - up function requires software release support.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382274263-81a22875-0e2a-44d5-b23f-6fe427e56155.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382274263_81a22875_0e2a_44d5_b23f_6fe427e56155.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382280491-4c348daf-c0c1-4d87-a1f2-8156b098a53c.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382280491_4c348daf_c0c1_4d87_a1f2_8156b098a53c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382285840-c65bd37f-3e65-4164-aa44-cfafbc11bca7.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382285840_c65bd37f_3e65_4164_aa44_cfafbc11bca7.png)
 
 **Note: The support status of the 4G standby wake - up function depends on the software release.**
 
@@ -653,7 +653,7 @@ The hardware design of the development board has the 4G standby function. When t
 
 The OKT507 - C board has an on - board integrated Wifi \& Bluetooth module U19, and the module model is FG6221ASRC - 00. WIFI uses the SDIO interface. The 2.4GHz frequency band complies with IEEE 802.11b/g/n \& Wi - Fi compliant, and the 5GHz frequency band complies with IEEE 802.11a/n/ac \& Wi - Fi compliant. Bluetooth uses the UART \& PCM interfaces and complies with the BT 5.0 Module. 2.4GHz \& 5GHz antenna P30 is used.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382293779-36d4cc83-a159-429c-a13c-e62cd7a8b051.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382293779_36d4cc83_a159_429c_a13c_e62cd7a8b051.png)
 
 **Note:**
 
@@ -675,9 +675,9 @@ OKT507 offers four 3.5mm audio jacks and two XH-2.54mm speaker connectors. The L
 
 The carrier board uses the NAU88C22YG audio chip, which supports left and right channels to play sound and MIC recording. NAU88C22YG chip has a built-in Class D amplifier, and the Speaker interface can drive an 8Ω speaker with a maximum output power of 1W. If you need to connect a larger amplifier, you can only obtain the signal from the headphone jack, and not from the speaker interface. The power supply of the audio chip is controlled by CODEC\_PWR\_EN, and it is enabled at a high level.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382302833-c068fc78-bb2d-4d25-a20f-9358f6d985f0.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382302833_c068fc78_bb2d_4d25_a20f_9358f6d985f0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45533232/1739502104265-c23c528c-7e91-4dfd-836c-0bf2c4d8391a.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1739502104265_c23c528c_7e91_4dfd_836c_0bf2c4d8391a.png)
 
 **Note:**
 
@@ -691,7 +691,7 @@ The carrier board uses the NAU88C22YG audio chip, which supports left and right 
 
 #### 3.5.10 RTC
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382333800-aaac4668-6e33-4c18-9fb9-db1f215bb929.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382333800_aaac4668_6e33_4c18_9fb9_db1f215bb929.png)
 
 There is an external real - time clock chip PCF8563T/5 (U9) on the carrier board, which reads and writes time via the I2C bus. There is a button battery CR1220 on the board.
 
@@ -713,15 +713,15 @@ The RTL8211FSI chip supports 10/100/1000Mbps network auto - negotiation and real
 
 **4\. The RGMII and MDIO/MDC levels led out from the SoM can be automatically set according to the PHY model. The RTL8211FSI has a default level of 3.3V. Please select an appropriate working mode for the PHY chip.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382344464-ea253599-c1ed-4233-8c01-c98ef711e9e3.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382344464_ea253599_c1ed_4233_8c01_c98ef711e9e3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382356316-dde04af3-bb40-4bdb-bfdb-46ce6de0e046.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382356316_dde04af3_bb40_4bdb_bfdb_46ce6de0e046.png)
 
 The 100m Ethernet port is connected to the PHY chip YT8512H (U14) through RMII, and is led out from the RJ45 socket (P20). The socket model is FC62115 BNL, and the quarantine transformer is built in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382362586-a676a8f5-58f3-4edd-83bc-d1cd1e855424.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382362586_a676a8f5_58f3_4edd_83bc_d1cd1e855424.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382371308-d18da0bf-368d-4f76-9291-8f38723565d1.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382371308_d18da0bf_368d_4f76_9291_8f38723565d1.png)
 
 #### 3.5.12 Digital Camera
 
@@ -737,15 +737,15 @@ The parallel CSI level led out from the FETT507 is 2.8V. When designing the carr
 
 **3\. Set the differential impedance of the MIPI to 100Ω ± 10%.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382399654-bb4659e2-6399-445b-b289-bfbe9e3feaab.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382399654_bb4659e2_6399_445b_b289_bfbe9e3feaab.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382405237-f0d89951-71c6-4864-adb6-dac0cdd5ac26.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382405237_f0d89951_71c6_4864_adb6_dac0cdd5ac26.png)
 
 #### 3.5.13 HDMI
 
 The OKT507 - C development board provides an HDMI interface, which supports 4K video output.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382412059-f6b87e59-c82e-4f22-a8cd-15388599241b.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382412059_f6b87e59_c82e_4f22_a8cd_15388599241b.png)
 
 **Note: **
 
@@ -769,7 +769,7 @@ The RGB888 is led out through a 54pin 0.5mm pitch FPC socket (P16). It can be co
 
 The 4 - wire resistive touch TX + -/TY + - in the interface is converted by the TSC2007.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382426932-88de21f8-7f2c-4162-9db1-04f6c7d096c7.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382426932_88de21f8_7f2c_4162_9db1_04f6c7d096c7.png)
 
 **Note: The TSC2007 chip has special requirements for power - on and power - off. Please refer to the development board or chip manual for design. Otherwise, there is a probability of I2C bus lock - up.**
 
@@ -781,7 +781,7 @@ Single LVDS supports a maximum of 1920x720@60fps, and dual LVDS supports a maxim
 
 The LVDS signals are led out  through a 38P\_2.0mm pin header. Please check the wire sequence before connecting to the screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382436145-4ace4bce-5785-4b4d-83bc-af8c7ce9c048.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382436145_4ace4bce_5785_4b4d_83bc_af8c7ce9c048.png)
 
 **Note:**
 
@@ -792,7 +792,7 @@ The LVDS signals are led out  through a 38P\_2.0mm pin header. Please check the 
 
 There is a TV CVBS output on the development board, which is led out using an RCA phono plug (P17). It supports NTSC and PAL modes.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382444409-eea2d89f-c7d3-4327-87da-b1168de1d59e.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382444409_eea2d89f_c7d3_4327_87da_b1168de1d59e.png)
 
 **Note:**
 
@@ -806,19 +806,19 @@ There is a TV CVBS output on the development board, which is led out using an RC
 
 The development board provides one infrared interface, which can only receive signals.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382451823-c3538aac-4f30-468d-b531-58499bf2f597.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382451823_c3538aac_4f30_468d_b531_58499bf2f597.png)
 
 #### 3.5.18 ADC
 
 There are 4 x GPADC on the development board, which is demonstrated using variable resistors. The ADC voltage sampling range is 0~1.8V.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382459252-7263dc72-f3a9-4f4a-84a1-03dc945eef44.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382459252_7263dc72_f3a9_4f4a_84a1_03dc945eef44.png)
 
 #### 3.5.19  SPI NOR FLASH
 
 There is a SPI NOR FLASH on the carrier board. Pay attention to the power - supply timing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382465949-209de2b1-6115-4bf6-85e1-c80b53707ae6.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382465949_209de2b1_6115_4bf6_85e1_c80b53707ae6.png)
 
 **Note:**
 
@@ -833,23 +833,23 @@ There is a SPI NOR FLASH on the carrier board. Pay attention to the power - supp
 3. All unused GPIOs can be left floating or grounded. Unused LRADC and GPADC can be left floating;
 4. When the SoM is reset and restarted, if there are devices on the carrier board that are not powered off, resulting in GPIO leakage on the SoM, a voltage can be measured on DCDC1. The voltage of DCDC1 will prevent the carrier board from powering off. Since the carrier board cannot power off, causing GPIO leakage, the SoM will fall into a dead - loop where it cannot start! The solution is to use a voltage monitoring chip TLV809ED29 (U8) to monitor the voltage of DCDC1. When the voltage of DCDC1 is lower than 2.93V, turn off Q1 to power off the carrier board. Please refer to our development board design.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382520518-cf93110d-f2a0-457c-8ccd-3ab826af7ca2.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382520518_cf93110d_f2a0_457c_8ccd_3ab826af7ca2.png)
 
 5. SoM heat dissipation consideration:
 
 After actual testing, without a heat sink on the SoM, the main frequency will be reduced to 480MHz when operating at a high temperature of 85°C; if a small heat sink is added, it will not be down - clocked at 85°C. Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. The size of the heat sink is shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596374612-a3a63ceb-7525-4a56-88e7-23ea87136bee.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596374804-32a3eb61-eefe-44e5-8d9d-5540ba5f5b58.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596375044-f7ae8f47-306f-45ea-a1fa-7e67a3ad7da9.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596374612_a3a63ceb_7525_4a56_88e7_23ea87136bee.png)![Image](./images/OKT507-C_User_Hardware_Manual/1720596374804_32a3eb61_eefe_44e5_8d9d_5540ba5f5b58.png)![Image](./images/OKT507-C_User_Hardware_Manual/1720596375044_f7ae8f47_306f_45ea_a1fa_7e67a3ad7da9.png)
 
 ## 5\. Connector Dimension Diagram
 
 The specifications of the SoM connector are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596359918-1ccd3f99-c522-4724-9666-b24c84ef03ba.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596359918_1ccd3f99_c522_4724_9666_b24c84ef03ba.png)
 
 The specifications of the baseboard connector are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1720596360333-1099fda7-5c31-46b3-a633-2b043ab4cd6c.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1720596360333_1099fda7_5c31_46b3_a633_2b043ab4cd6c.png)
 
 ## 6\. OKT507-C Development Board Power Consumption Table
 
@@ -870,8 +870,8 @@ The specifications of the baseboard connector are as follows:
 
 ## 7\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382600804-3bf5d882-90e6-4fe2-9f42-0f95e1c5a736.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382600804_3bf5d882_90e6_4fe2_9f42_0f95e1c5a736.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382606527-366a8a26-05df-4ffa-9e91-b543c329d423.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382610944-7fdc07d7-6fb5-4e02-af81-d7d1c7e15adf.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382622511-1be8c821-2988-4196-ac15-36509b44156a.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382615417-4248acad-4ace-44b1-a825-1a6ae5cdaaa8.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382627466-2bdfe331-4dd9-411d-8b2b-762365c75320.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382634467-5ba906c0-64b3-4b19-96f1-be78c69bc791.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382638914-761cca14-2e4c-4656-8771-ba097b9267f9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533232/1721382645009-3ebfa10d-858e-4c3d-bac7-994803d40ca2.png)
+![Image](./images/OKT507-C_User_Hardware_Manual/1721382606527_366a8a26_05df_4ffa_9e91_b543c329d423.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382610944_7fdc07d7_6fb5_4e02_af81_d7d1c7e15adf.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382622511_1be8c821_2988_4196_ac15_36509b44156a.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382615417_4248acad_4ace_44b1_a825_1a6ae5cdaaa8.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382627466_2bdfe331_4dd9_411d_8b2b_762365c75320.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382634467_5ba906c0_64b3_4b19_96f1_be78c69bc791.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382638914_761cca14_2e4c_4656_8771_ba097b9267f9.png)![Image](./images/OKT507-C_User_Hardware_Manual/1721382645009_3ebfa10d_858e_4c3d_bac7_994803d40ca2.png)
 
 To meet the normal operation of the SoM, in addition to the power supply DCIN, the SOC-RESET key is also required to facilitate debugging; the BOOT configuration circuit is convenient for system programming and startup; the UART0 circuit is convenient for confirming whether the system works normally and for debugging; the OTG and TF Card circuits are convenient for system programming.
