@@ -1,33 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-    // ------------------- 自动获取当前项目路径 -------------------
-    // 例：https://hellotangle.github.io/forlinx-docs-HT/rockchip/ok3576-c/
-    // 提取出 /forlinx-docs-HT/rockchip/ok3576-c/
-    // ------------------- 自动获取当前项目路径 -------------------
-    let projectBase = window.location.pathname.replace(/[^/]+$/, "");
-    if (!projectBase.endsWith("/")) projectBase += "/";
-    console.log("projectBase =", projectBase); // 调试用，可删
-    
+    // ------------------- 智能自动获取项目根路径 (异步) -------------------
+    async function findProjectBase() {
+        let cached = localStorage.getItem("logo-base");
+        if (cached) return cached;
 
+        let path = window.location.pathname;
+        let segments = path.split("/").filter(Boolean);
+
+        for (let i = segments.length; i >= 1; i--) {
+            let candidate = "/" + segments.slice(0, i).join("/") + "/";
+            let testPath = candidate + "_static/forlinx-logo.png";
+
+            try {
+                let response = await fetch(testPath, { method: "HEAD" });
+                if (response.ok) {
+                    console.log("✅ Found logo base:", candidate);
+                    localStorage.setItem("logo-base", candidate);
+                    return candidate;
+                }
+            } catch (e) {
+                // ignore, try upper level
+            }
+        }
+
+        console.warn("⚠️ No logo found, fallback to current path");
+        let fallback = path.replace(/[^/]+$/, "");
+        localStorage.setItem("logo-base", fallback);
+        return fallback;
+    }
+
+    // ✅ await 才会生效
+    let projectBase = await findProjectBase();
+    console.log("projectBase =", projectBase);
 
     // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
-        // 切换 body class
         document.body.className = document.body.className.replace(/theme-\w+/g, "");
         document.body.classList.add(`theme-${theme}`);
 
-        // 更新按钮文字
         updateButtonLabel();
 
-        // 动态切换 logo
         const logo = document.querySelector(".wy-side-nav-search img");
         if (logo) {
             const lightLogo = projectBase + "_static/forlinx-logo.png";
             const darkLogo = projectBase + "_static/forlinx-logo-dark.png";
 
             if (theme === "dark") {
-                // 先检测 dark logo 是否存在
                 const testImg = new Image();
                 testImg.onload = function () {
                     logo.src = darkLogo;
@@ -44,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // 平滑过渡
         document.body.style.transition = "background-color 0.3s, color 0.3s";
     }
 
