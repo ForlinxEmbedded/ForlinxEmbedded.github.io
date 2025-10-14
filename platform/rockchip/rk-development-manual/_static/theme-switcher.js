@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const btn = document.getElementById("theme-switcher-btn");
         if (!btn) return;
         btn.textContent = currentTheme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode";
-    }
+    } 
 
     // ------------------- 创建切换按钮 -------------------
     function createButton() {
