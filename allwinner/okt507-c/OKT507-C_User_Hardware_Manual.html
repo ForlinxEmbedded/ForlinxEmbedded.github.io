@@ -1,0 +1,3126 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User’s Hardware Manual &mdash; Forlinx Embedded T507 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=5deaee90" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/allwinner/okt507-c/OKT507-C_User_Hardware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OKT507-C Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history"><strong>Revision History</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#t5-series-processors">1. T5 Series Processors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fet507-c-som-description">2. FET507-C SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fett507-c-som-appearance">2.1 FETT507-C SoM Appearance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fett507-c-som-dimension-diagram">2.2 FETT507-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameters">2.3 Performance Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-main-frequency">2.3.1 System Main Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-environment">2.3.3 Operating Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#som-interface-speed">2.3.4 SoM Interface Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esd-features">2.3.5 ESD Features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.4 SoM Interface Speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fett507-c-som-pins-definition">2.5  FETT507-C SoM Pins Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fett507-c-som-pins-schematic">2.5.1  FETT507-C SoM Pins Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fett507-c-som-pins-description">2.5.2 FETT507-C SoM Pins Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.6 SoM Hardware Design Description</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#okt507-c-development-platform-description">3. OKT507-C Development Platform Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#okt507-c-development-board-interface-diagram">3.1 OKT507-C Development Board Interface Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#okt507-c-som-dimension-diagram">3.2 OKT507-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-naming-rules">3.3 Carrier Board Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-resources">3.4 Carrier Board Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#okt507-c-carrier-board-description">3.5 OKT507-C Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#keys">3.5.2 Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-configuration">3.5.3 BOOT Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging-serial-port">3.5.4 Debugging Serial Port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.5 TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb">3.5.6 USB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g">3.5.7 4G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-bluetooth">3.5.8 Wifi＆Bluetooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">3.5.9 Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc">3.5.10 RTC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gigabit-ethernet">3.5.11 Gigabit Ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#digital-camera">3.5.12 Digital Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hdmi">3.5.13 HDMI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lcd-display-interface">3.5.14 LCD Display Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lvds-display-interface">3.5.15 LVDS Display Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tv-out-display-interface">3.5.16 TV- OUT Display Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ir-infrared-interface">3.5.17 IR Infrared Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adc">3.5.18 ADC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spi-nor-flash">3.5.19  SPI NOR FLASH</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-design-guide">4. Hardware Design Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connector-dimension-diagram">5. Connector Dimension Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#okt507-c-development-board-power-consumption-table">6. OKT507-C Development Board Power Consumption Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-system-schematic">7. Minimum System Schematic</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded T507 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">User’s Hardware Manual</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="users-hardware-manual">
+<h1>User’s Hardware Manual<a class="headerlink" href="#users-hardware-manual" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This hardware manual is applicable to the development boards of OKT507-C V1.0 and above and the SoM of OKT507-C V1.0 and above.</p>
+</section>
+<section id="revision-history">
+<h2><strong>Revision History</strong><a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Version</p></th>
+<th class="head"><p>Date</p></th>
+<th class="head"><p>Modification</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>V1.0</p></td>
+<td><p>11/06/2024</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help you quickly familiarize yourselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “OKT507-C Pin Multiplexing Comparison Table” and “OKT507-C Design Guide.”</p>
+<p>There are total four chapters:</p>
+<p>Chapter 1. is CPU overview, briefly introducing its performance and applications;</p>
+<p>Chapter 2. is comprehensive introduction to the SoM, including connector pins explanations and function introductions;</p>
+<p>Chapter 3. is comprehensive introduction to the development board, divided into multiple chapters, including both hardware principles and simple design ideas;</p>
+<p>Chapter 4. mainly describes the board’s power consumption performance and other considerations.</p>
+</section>
+<section id="t5-series-processors">
+<h2>1. T5 Series Processors<a class="headerlink" href="#t5-series-processors" title="Link to this heading"></a></h2>
+<p>The T5 series is a high - performance quad - core Cortex™ – A53 processor suitable for the new - generation automotive market. The T5 series meets the automotive AEC – Q100 test requirements. This chip integrates a quad - core Cortex™ – A53 CPU, a G31 MP2 GPU, multiple video output interfaces (RGB/2*LVDS/HDMI/CVBS OUT), and multiple video input interfaces (MIPI CSI/BT656/BT1120). It supports 4K&#64;60fps H.265 decoding and 4K&#64;25fps H.264 decoding. The DI, 3D noise reduction, automatic color adjustment system, and trapezoidal correction module can provide a smooth user experience and professional visual effects.</p>
+<p>Target Applications:</p>
+<p>·Embedded in in - vehicle entertainment systems</p>
+<p>·Embedded in digital trunking systems</p>
+<p>·Embedded in high - definition panoramic imaging systems</p>
+<p>·Head - up displays and others</p>
+<p>·Intelligent cockpit products</p>
+<p>……</p>
+<p><strong>T5 Series Block Diagram</strong></p>
+<p><img alt="Image" src="_images/1720596355181_ec3d7f4e_8c5d_4086_be56_b08980dd306a.png" /></p>
+</section>
+<section id="fet507-c-som-description">
+<h2>2. FET507-C SoM Description<a class="headerlink" href="#fet507-c-som-description" title="Link to this heading"></a></h2>
+<section id="fett507-c-som-appearance">
+<h3>2.1 FETT507-C SoM Appearance<a class="headerlink" href="#fett507-c-som-appearance" title="Link to this heading"></a></h3>
+<p><strong>FETT507 SoM</strong></p>
+<p><img alt="Image" src="_images/1720596336183_0f6a82c6_6953_44e2_b79a_b997f35e0683.jpeg" /></p>
+<p><strong>Front</strong></p>
+<p><img alt="Image" src="_images/1720596336560_4ea6ab28_900e_43cc_bebd_f1c1e3dfa85e.jpeg" /></p>
+<p><strong>Back</strong></p>
+</section>
+<section id="fett507-c-som-dimension-diagram">
+<h3>2.2 FETT507-C SoM Dimension Diagram<a class="headerlink" href="#fett507-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p>FETT507 SoM Dimension Diagram</p>
+<p><img alt="Image" src="_images/1720596336980_c76241e7_6f9d_4933_ba3d_2201407fa677.png" /><img alt="Image" src="_images/1720596337315_1058cea4_dc92_417b_957c_97333a9a43e6.png" /></p>
+<p><img alt="Image" src="_images/1720596337539_df0533c0_ffd0_4978_bf23_d771ce4cae94.png" /></p>
+<p><img alt="Image" src="_images/1720596337773_3ca53873_22ae_4770_85ef_652882bc2ced.png" /></p>
+<p>Structure size: 40mm×70mm, dimensional tolerance ±0.15mm.</p>
+<p>Plate making process: 1.6mm thickness, 8-layer immersion gold PCB.</p>
+<p>Connectors: Three 0.5mm pitch, 80pin board-to-board connectors.               See the appendix for the connector dimension drawing.</p>
+<p>Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facilitate the installation of fixing screws and to improve the reliability of the product connection so that the product can be used in vibration environments.</p>
+<p><strong>Note: For more detailed dimensions, please refer to the user information SoM DXF file.</strong></p>
+</section>
+<section id="performance-parameters">
+<h3>2.3 Performance Parameters<a class="headerlink" href="#performance-parameters" title="Link to this heading"></a></h3>
+<section id="system-main-frequency">
+<h4>2.3.1 System Main Frequency<a class="headerlink" href="#system-main-frequency" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Name</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Frequency</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>1500</p></td>
+<td><p>MHz</p></td>
+<td class="text-center"><p>Industrial-grade</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RTC clock</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="power-parameter">
+<h4>2.3.2 Power Parameter<a class="headerlink" href="#power-parameter" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Pin Number</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Power Supply Voltage</p></td>
+<td class="text-center"><p>DCIN</p></td>
+<td class="text-center"><p>3.0</p></td>
+<td><p>5</p></td>
+<td><p>5.5</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operating-environment">
+<h4>2.3.3 Operating Environment<a class="headerlink" href="#operating-environment" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Operating temperature</p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+85</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>Industrial-grade</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Humidity</p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p>No condensation</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="som-interface-speed">
+<h4>2.3.4 SoM Interface Speed<a class="headerlink" href="#som-interface-speed" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Serial Port Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>4</p></td>
+<td><p>Mbit/s</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>100</p></td>
+<td><p>MHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>IIC Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>100</p></td>
+<td><p>400</p></td>
+<td><p>Kbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD/MMC/SDIO</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>800</p></td>
+<td><p>Mbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB interface speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>480</p></td>
+<td><p>Mbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="esd-features">
+<h4>2.3.5 ESD Features<a class="headerlink" href="#esd-features" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Parameter</p></th>
+<th class="head text-center"><p>Specification</p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p>Unit</p></th>
+<th class="head text-center"><p>Application Scope</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p>Minimum</p></td>
+<td><p>Maximum</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ESD HBM(ESDA/JEDEC JS-001-2017)</p></td>
+<td class="text-center"><p>-2000</p></td>
+<td><p>2000</p></td>
+<td class="text-center"><p>V</p></td>
+<td class="text-center"><p>Signals exported from SoM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>ESD CDM(ESDA/JEDEC JS-002-2018)</p></td>
+<td class="text-center"><p>-500</p></td>
+<td><p>500</p></td>
+<td class="text-center"><p>V</p></td>
+<td class="text-center"><p>Signals exported from SoM</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note：</strong></p>
+<p><strong>1. The above data is provided by Allwinner;</strong></p>
+<p><strong>2. As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.</strong></p>
+</section>
+</section>
+<section id="id1">
+<h3>2.4 SoM Interface Speed<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>TVOUT</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>CVBS output, supporting NTSC and PAL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>HDMI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Video:<br/> -2D video supports up to 4K&#64;60fps;<br> -3D video supports up to 4K&#64;30fps.<br> Audio: <br/> -Supports the IEC60985 L -PCM uncompressed audio format, with a maximum support of 192 kHz; <br/> -Supports the IEC61937 compressed audio format, with a maximum support of 1536 kHz.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LCD/LVDS</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>LCD and LVDS are multiplexed;<br/>LCD：<br/>-The RGB interface (DE/SYNC mode) supports up to 1920x1080&#64;60fps;<br/>-The Serial RGB/dummy RGB interface supports up to 800x480&#64;fps;<br/>-The i8080 interface supports up to 800x480&#64;60fps;<br/>-The BT656 interface supports 1280x720&#64;60fps or 1920x1080&#64;30fps;<br/>-It supports RGB888, RGB565, and RGB666 modes;<br/>-It supports Gamma correction for the independence of R/G/B channels;<br/>LVDS：-The dual - channel supports up to 1920x1080&#64;60fps;<br/>-The single - channel supports up to 1366x768&#64;60fps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI_CSI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports the image cropping function;<br/>Supports MIPI Version 1.0,with a maximum support of 1.0Gbps/Lane;<br/>The maximum video capture rate is 8M&#64;30fps or 4*1080p&#64;25fps.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CSI_DVP</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports 8/10/12/16 bit DC interfaces;<br/>Supports BT656, BT601, and BT1120 interfaces;<br/>Supports the ITU - R BT.656 time - division multiplexing format, with a maximum support of 4*720p&#64;30fps in DDR sampling mode;<br/>Supports progressive and interlaced video input;<br/>The maximum video capture rate is 5M&#64;15fps and 1080p&#64;30fps;<br/>The maximum pixel clock is 148.5MHz.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB2.0</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>OTG:<br/>-Supports 1 x;<br/>-In the main mode, supports High-Speed (HS,482), Full-Speed (FS,12Mbit/s) and Low-Speed (LS,1.5Mbit/s)；<br/>-In the slave mode, supports High-Speed (HS,482 Mbit/s) and Full-Speed  (FS,12Mbit/s)HOST:<br/>-Supports 3 x;<br/>-Supports High-Speed (HS,482 Mbit/s), Full-Speed (FS,12Mbit/s) and Low-Speed (LS,1.5Mbit/s) device.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>SDHC0（SD3.0）:<br/>- 4bit bus width;<br/>- SDR mode 50MHz&#64;3.3V IO pad;<br/>- SDR mode150MHz&#64;1.8V IO pad;<br/>- DDR mode 50MHz&#64;3.3V IO padSDHC1(SDIO3.0)：<br/>- 4bit bus width;<br/>- SDR mode 50MHz&#64;3.3V IO pad;<br/>- DDR mode 50MHz&#64;3.3V IO pad</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RMII</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-10/100Mbps adaptive;</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RGMII</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-10/100/1000 Mbps adaptive; RGMII can be multiplexed as RMII to achieve dual 100Mbps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>≤6</p></td>
+<td><p>UART0, UART5: <br/>-2 lines, UART1, UART2, UART3, UART4: 4 lines;<br/>-Compatible with industry standard 16550 UART;<br/>-Supports a maximum speed of 4Mbit/s;<br/>-Supports 5-8 data bits and 1/1.5/2 stop bits;<br/>-Supports RS-485/9-bit mode.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>TWI</p></td>
+<td class="text-center"><p>≤5</p></td>
+<td><p>-Supports standard mode (up to 100kbit/s) and fast mode (up to 400kbit/s)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPI</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>-Supports 3-wire/4-wire SPI; maximum transfer rate of 100MHz</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SCR</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Supports ISO/IEC 7816-3:1997（E）and EMV2000(4.0) specification</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>≤6</p></td>
+<td><p>Three PWM pairs: PWM01 is composed of PWM0 and PWM1, PWM23 is composed of PWM2 and PWM3, and PWM45 is composed of PWM4 and PWM5;<br/>-Supports pulse (configurable), periodic and complementary pair outputs;<br/>-Supports capture inputs;<br/>-Programmable dead - zone output;<br/>-Built - in programmable dead - time generator for controllable dead time;<br/>-Three output waveforms: continuous waveform, pulse waveform, and complementary waveform;<br/>-Output reference range 0 - 24MHz/100MHz;<br/>-The duty cycle ranges from 0% to 100%;<br/>-The minimum resolution is 1/65536;<br/>-Supports PWM output and input interrupts.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>CIR</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Supports NEC format data;<br/>-Supports CIR with remote control or wireless keyboard;<br/>-Supports 64x8 bit FIFO used for data buffering;<br/>-Sampling clock up to 1MHz.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>GPADC</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>-Supports 4 x general-purpose ADC with 12 - bit resolution;<br/>-The maximum sampling rate is 1MHz;<br/>-Supports data comparison and interrupts, and DMA transmission;<br/>-The signal input range is 0 - 1.8V;<br/>-Supports three working modes: single conversion, continuous conversion, and burst conversion.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LRADC</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-6-bit resolution;<br/>-Sampling rate up to 2kHz; <br/>-Supports hole keys and general keys;<br/>-Supports normal, continuous, and single working modes;<br/>-Supply voltage is 1.8V, the power supply reference voltage is 1.35V. For analog input, the detection voltage range is 0 - LEVELB (the maximum value is 1.266V).</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LINEIN TBD</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Some pins are reserved and not yet developed.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LINEOUT</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Supports dynamic range controller adjustment for DAC playback;<br/>-2 x audio DAC;<br/>-Supports 16 - bit and 20 - bit sampling rates;<br/>-Sampling rate ranges from 8kHz to 192kHz;<br/>- 95±2dB SNR&#64;A - weight, - 80±3dB THD + N, and the maximum output amplitude is 0.55Vrms;<br/>-1 x audio output: One differential LINEOUTP/N or single - ended LINEOUTL/R.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>DMIC</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Supports a maximum of 8 digital PDM microphones;<br/>-Supports sampling rate ranging from 8kHz to 48kHz.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>OWA</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-1 x OWA Send</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>I2S</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td><p>-1 x built - in audio HUB;<br/>-Supports 2 x Digital Audio MIXER (DAM); <br/>-Supports 3 x I2S/PCM to connect external devices and 1 x I2S/PCM to connect to the internal HDMI;<br/>-Supports left - aligned, right - aligned, standard I2S, PCM, and TDM modes;<br/>-The I2S supports 8 channels with a 32 - bit/192kbit sampling rate;<br/>-The I2S and TMD modes support a maximum of 16 channels with a 32 - bit/96kbit sampling rate.</p></td>
+</tr>
+</tbody>
+</table>
+<p>**Note: **</p>
+<p><strong>1. The parameters in the table are the theoretical values for hardware design or the CPU;</strong>
+<strong>2. TBD “indicates that the functionality has not yet been developed at this stage.</strong></p>
+</section>
+<section id="fett507-c-som-pins-definition">
+<h3>2.5  FETT507-C SoM Pins Definition<a class="headerlink" href="#fett507-c-som-pins-definition" title="Link to this heading"></a></h3>
+<section id="fett507-c-som-pins-schematic">
+<h4>2.5.1  FETT507-C SoM Pins Schematic<a class="headerlink" href="#fett507-c-som-pins-schematic" title="Link to this heading"></a></h4>
+<p><img alt="Image" src="_images/1720596338029_d371dba6_17f7_4947_ba89_2e1cc2e5ebf0.png" /><img alt="Image" src="_images/1720596338333_9209afc2_b0f2_4bb2_80fe_1910062585b8.png" /><img alt="Image" src="_images/1720596338621_a72173b8_9bb4_4b26_b483_92b8df90012f.png" /></p>
+</section>
+<section id="fett507-c-som-pins-description">
+<h4>2.5.2 FETT507-C SoM Pins Description<a class="headerlink" href="#fett507-c-som-pins-description" title="Link to this heading"></a></h4>
+<p><strong>Note1:</strong></p>
+<p><strong>Num ——SoM connector pin no.:</strong></p>
+<p><strong>Ball —— CPU pin ball no.</strong></p>
+<p><strong>GPIO ——CPU pin general I/O port serial number</strong></p>
+<p><strong>Vol  ——Pin signal level</strong></p>
+<p><strong>Note2:</strong></p>
+<p><strong>Signal Name——SoM connector network name</strong></p>
+<p><strong>Pin Description—— SoM Pin Signal Descriptions</strong></p>
+<p><strong>Default Function——Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. Please contact us with any questions in time.</strong></p>
+<p><strong>Note3: The pins marked with “Do not use for carrier board” in the “Pin Description” are those used by the SoM, and should not be used in the carrier board design.</strong></p>
+<p><strong>Table 1 LEFT_UP（P1） Connector Interface(Odd) Pin Definition</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Num</strong></p></th>
+<th class="head text-center"><p><strong>Ball</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>GPIO</strong></p></th>
+<th class="head text-center"><p><strong>Vol</strong></p></th>
+<th class="head text-center"><p><strong>Pin Description</strong></p></th>
+<th class="head text-center"><p><strong>Default Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LU_1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>TV-OUT</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Analog video output</p></td>
+<td class="text-center"><p>TV-OUT</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_5</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_7</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LRADC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0-1.35V</p></td>
+<td class="text-center"><p>Carrier board sampling rate(used for the keys)</p></td>
+<td class="text-center"><p>LRADC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_9</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_11</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEINR</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEIN right channel input</p></td>
+<td class="text-center"><p><font style="color:rgb(255, 0, 0);">TBD</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_13</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEINL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEIN left channel input</p></td>
+<td class="text-center"><p><font style="color:rgb(255, 0, 0);">TBD</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_15</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEOUTR</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEOUT right channel output</p></td>
+<td class="text-center"><p>LINEOUTR</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_17</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEOUTL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>LINEOUT left channel output</p></td>
+<td class="text-center"><p>LINEOUTL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_19</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_21</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB0-DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB0 signal-</p></td>
+<td class="text-center"><p>USB0-DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_23</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB0-DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB0 signal+</p></td>
+<td class="text-center"><p>USB0-DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_25</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_27</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB1-DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB1 signal+</p></td>
+<td class="text-center"><p>USB1-DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_29</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB1-DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB1 signal-</p></td>
+<td class="text-center"><p>USB1-DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_31</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_33</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC-USB2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB2 power supply pin (floating by default)</p></td>
+<td class="text-center"><p>VCC-USB2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_35</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB2-DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB2 signal+</p></td>
+<td class="text-center"><p>USB2-DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_37</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB2-DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB2 signal-</p></td>
+<td class="text-center"><p>USB2-DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_39</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_41</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB3-DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB3 signal+</p></td>
+<td class="text-center"><p>USB3-DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_43</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB3-DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB3 signal-</p></td>
+<td class="text-center"><p>USB3-DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_45</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_47</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HHPD</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI hot plug signal (refer to EVK design)</p></td>
+<td class="text-center"><p>HHPD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_49</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HSDA</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI serial data (refer to EVK design)</p></td>
+<td class="text-center"><p>HSDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_51</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HSCL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI serial clock (reference EVK design)</p></td>
+<td class="text-center"><p>HSCL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_53</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HCEC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI CEC signal (refer to EVK design)</p></td>
+<td class="text-center"><p>HCEC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_55</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_57</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTXCN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential clock signal-</p></td>
+<td class="text-center"><p>HTXCN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_59</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTXCP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential clock signal+</p></td>
+<td class="text-center"><p>HTXCP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_61</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_63</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTX0N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential data 0 -</p></td>
+<td class="text-center"><p>HTX0N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_65</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTX0P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential data 0 +</p></td>
+<td class="text-center"><p>HTX0P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_67</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_69</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTX1N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential data 1 -</p></td>
+<td class="text-center"><p>HTX1N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_71</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTX1P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential data 1 +</p></td>
+<td class="text-center"><p>HTX1P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_73</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_75</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTX2N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential data 2 -</p></td>
+<td class="text-center"><p>HTX2N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_77</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HTX2P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>HDMI TMDS differential data 2 +</p></td>
+<td class="text-center"><p>HTX2P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_79</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2 LEFT_UP（P1） Connector Interface(Even) Pin Definition</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Num</strong></p></th>
+<th class="head text-center"><p><strong>Ball</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>GPIO</strong></p></th>
+<th class="head text-center"><p><strong>Vol</strong></p></th>
+<th class="head text-center"><p><strong>Pin Description</strong></p></th>
+<th class="head text-center"><p><strong>Default Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LU_2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_4</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D0N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 0-</p></td>
+<td class="text-center"><p>MCSI-D0N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_6</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D0P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 0 +</p></td>
+<td class="text-center"><p>MCSI-D0P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_8</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_10</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D1N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 1-</p></td>
+<td class="text-center"><p>MCSI-D1N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_12</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D1P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 1 +</p></td>
+<td class="text-center"><p>MCSI-D1P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_14</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_16</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-CLKN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential clock signal-</p></td>
+<td class="text-center"><p>MCSI-CLKN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-CLKP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential clock signal+</p></td>
+<td class="text-center"><p>MCSI-CLKP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_20</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_22</p></td>
+<td class="text-center"><p>E7</p></td>
+<td class="text-center"><p>E7_MCSI-MCLK</p></td>
+<td class="text-center"><p>PG19</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>MIPI_CSI clock</p></td>
+<td class="text-center"><p>MCSI-MCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_24</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D2N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 2-</p></td>
+<td class="text-center"><p>MCSI-D2N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_26</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D2P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 2 +</p></td>
+<td class="text-center"><p>MCSI-D2P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_28</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_30</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D3N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 3-</p></td>
+<td class="text-center"><p>MCSI-D3N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_32</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MCSI-D3P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>MIPI _ CSI differential data 3 +</p></td>
+<td class="text-center"><p>MCSI-D3P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_34</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_36</p></td>
+<td class="text-center"><p>B4</p></td>
+<td class="text-center"><p>B4_PG-MCSI-SCK</p></td>
+<td class="text-center"><p>PG17</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p><font style="color:rgb(255, 0, 0);">CCI control the clock signal</font></p></td>
+<td class="text-center"><p>MCSI-SCK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_38</p></td>
+<td class="text-center"><p>D7</p></td>
+<td class="text-center"><p>D7_PG-MCSI-SDA</p></td>
+<td class="text-center"><p>PG18</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CCI control data signal</p></td>
+<td class="text-center"><p>MCSI-SDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_40</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_42</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GPADC0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0-1.8V</p></td>
+<td class="text-center"><p>General ADC0</p></td>
+<td class="text-center"><p>GPADC0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_44</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GPADC1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0-1.8V</p></td>
+<td class="text-center"><p>General ADC1</p></td>
+<td class="text-center"><p>GPADC1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_46</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GPADC2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0-1.8V</p></td>
+<td class="text-center"><p>General ADC2</p></td>
+<td class="text-center"><p>GPADC2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_48</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GPADC3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0-1.8V</p></td>
+<td class="text-center"><p>General ADC3</p></td>
+<td class="text-center"><p>GPADC3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_50</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_52</p></td>
+<td class="text-center"><p>E20</p></td>
+<td class="text-center"><p>E20_RMII-TXEN</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII send enable</p></td>
+<td class="text-center"><p>RMII-TXEN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_54</p></td>
+<td class="text-center"><p>A18</p></td>
+<td class="text-center"><p>A18_RMII-TXD1</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII send data 1</p></td>
+<td class="text-center"><p>RMII-TXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_56</p></td>
+<td class="text-center"><p>B18</p></td>
+<td class="text-center"><p>B18_RMII-TXD0</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII send data 0</p></td>
+<td class="text-center"><p>RMII-TXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_58</p></td>
+<td class="text-center"><p>D20</p></td>
+<td class="text-center"><p>D20_RMII-TXCK</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII send clock</p></td>
+<td class="text-center"><p>RMII-TXCK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_60</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_62</p></td>
+<td class="text-center"><p>D19</p></td>
+<td class="text-center"><p>D19_RMII-RXD1</p></td>
+<td class="text-center"><p>PA0</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII receive data 1</p></td>
+<td class="text-center"><p>RMII-RXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_64</p></td>
+<td class="text-center"><p>D18</p></td>
+<td class="text-center"><p>D18_RMII-RXD0</p></td>
+<td class="text-center"><p>PA1</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII receive data 0</p></td>
+<td class="text-center"><p>RMII-RXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_66</p></td>
+<td class="text-center"><p>E18</p></td>
+<td class="text-center"><p>E18_RMII-CRS-RXDV</p></td>
+<td class="text-center"><p>PA2</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII carrier sense/receive data valid</p></td>
+<td class="text-center"><p>RMII-CRS-RXDV</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_68</p></td>
+<td class="text-center"><p>D17</p></td>
+<td class="text-center"><p>D17_RMII-RXER</p></td>
+<td class="text-center"><p>PA3</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII receive error</p></td>
+<td class="text-center"><p>RMII-RXER</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_70</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_72</p></td>
+<td class="text-center"><p>C19</p></td>
+<td class="text-center"><p>C19_RMII-MDC</p></td>
+<td class="text-center"><p>PA8</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII management data reference clock</p></td>
+<td class="text-center"><p>RMII-MDC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_74</p></td>
+<td class="text-center"><p>C20</p></td>
+<td class="text-center"><p>C20_RMII-MDIO</p></td>
+<td class="text-center"><p>PA9</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RMII manages data input/output</p></td>
+<td class="text-center"><p>RMII-MDIO</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_76</p></td>
+<td class="text-center"><p>F20</p></td>
+<td class="text-center"><p>F20_RESET-N2</p></td>
+<td class="text-center"><p>PA12</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>PHY chip reset signal</p></td>
+<td class="text-center"><p>RESET-N2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LU_78</p></td>
+<td class="text-center"><p>F12</p></td>
+<td class="text-center"><p>4G-WAKEUP-SOC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>4G module replacement signal</p></td>
+<td class="text-center"><p>4G-WAKEUP-SOC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LU_80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 3 RIGHT_UP（P2） Connector Interface(Odd) Pin Definition</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Num</strong></p></th>
+<th class="head text-center"><p><strong>Ball</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>GPIO</strong></p></th>
+<th class="head text-center"><p><strong>Vol</strong></p></th>
+<th class="head text-center"><p><strong>Pin Description</strong></p></th>
+<th class="head text-center"><p><strong>Default Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>RU_1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_3</p></td>
+<td class="text-center"><p>D2</p></td>
+<td class="text-center"><p>D2_NCSI0-D2</p></td>
+<td class="text-center"><p>PE6</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 2</p></td>
+<td class="text-center"><p>NCSI0-D2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_5</p></td>
+<td class="text-center"><p>E3</p></td>
+<td class="text-center"><p>E3_NCSI0-D1</p></td>
+<td class="text-center"><p>PE5</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 1</p></td>
+<td class="text-center"><p>NCSI0-D1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_7</p></td>
+<td class="text-center"><p>D1</p></td>
+<td class="text-center"><p>D1_NCSI0-D3</p></td>
+<td class="text-center"><p>PE7</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 3</p></td>
+<td class="text-center"><p>NCSI0-D3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_9</p></td>
+<td class="text-center"><p>E2</p></td>
+<td class="text-center"><p>E2_NCSI0-D0</p></td>
+<td class="text-center"><p>PE4</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 0</p></td>
+<td class="text-center"><p>NCSI0-D0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_11</p></td>
+<td class="text-center"><p>D3</p></td>
+<td class="text-center"><p>D3_NCSI0-D4</p></td>
+<td class="text-center"><p>PE8</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 4</p></td>
+<td class="text-center"><p>NCSI0-D4</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_13</p></td>
+<td class="text-center"><p>C3</p></td>
+<td class="text-center"><p>C3_NCSI0-PCLK</p></td>
+<td class="text-center"><p>PE0</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI pixel clock</p></td>
+<td class="text-center"><p>NCSI0-PCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_15</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_17</p></td>
+<td class="text-center"><p>C1</p></td>
+<td class="text-center"><p>C1_NCSI0-D5</p></td>
+<td class="text-center"><p>PE9</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 5</p></td>
+<td class="text-center"><p>NCSI0-D5</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_19</p></td>
+<td class="text-center"><p>C2</p></td>
+<td class="text-center"><p>C2_NCSI0-D6</p></td>
+<td class="text-center"><p>PE10</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 6</p></td>
+<td class="text-center"><p>NCSI0-D6</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_21</p></td>
+<td class="text-center"><p>E6</p></td>
+<td class="text-center"><p>E6_NCSI0-MCLK</p></td>
+<td class="text-center"><p>PE1</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI master clock</p></td>
+<td class="text-center"><p>NCSI0-MCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_23</p></td>
+<td class="text-center"><p>B2</p></td>
+<td class="text-center"><p>B2_NCSI0-D7</p></td>
+<td class="text-center"><p>PE11</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI input data 7</p></td>
+<td class="text-center"><p>NCSI0-D7</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_25</p></td>
+<td class="text-center"><p>D6</p></td>
+<td class="text-center"><p>D6_NCSI0-HSYNC</p></td>
+<td class="text-center"><p>PE2</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI line synchronization signal</p></td>
+<td class="text-center"><p>NCSI0-HSYNC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_27</p></td>
+<td class="text-center"><p>D5</p></td>
+<td class="text-center"><p>D5_NCSI0-VSYNC</p></td>
+<td class="text-center"><p>PE3</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Parallel CSI column synchronization signal</p></td>
+<td class="text-center"><p>NCSI0-VSYNC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_29</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_31</p></td>
+<td class="text-center"><p>A3</p></td>
+<td class="text-center"><p>A3_PE-TWI2-SCK</p></td>
+<td class="text-center"><p>PE20</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>TWI2 serial clock signal</p></td>
+<td class="text-center"><p>TWI2-SCK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_33</p></td>
+<td class="text-center"><p>B3</p></td>
+<td class="text-center"><p>B3_PE-TWI2-SDA</p></td>
+<td class="text-center"><p>PE21</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>TWI2 serial data signal</p></td>
+<td class="text-center"><p>TWI2-SDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_35</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_37</p></td>
+<td class="text-center"><p>G6</p></td>
+<td class="text-center"><p>G6_PE12</p></td>
+<td class="text-center"><p>PE12</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO PE12</p></td>
+<td class="text-center"><p>PE12</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_39</p></td>
+<td class="text-center"><p>G5</p></td>
+<td class="text-center"><p>G5_PE13</p></td>
+<td class="text-center"><p>PE13</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE13</p></td>
+<td class="text-center"><p>PE13</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_41</p></td>
+<td class="text-center"><p>G4</p></td>
+<td class="text-center"><p>G4_PE14</p></td>
+<td class="text-center"><p>PE14</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE14</p></td>
+<td class="text-center"><p>PE14</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_43</p></td>
+<td class="text-center"><p>F4</p></td>
+<td class="text-center"><p>F4_PE15</p></td>
+<td class="text-center"><p>PE15</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE15</p></td>
+<td class="text-center"><p>PE15</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_45</p></td>
+<td class="text-center"><p>F5</p></td>
+<td class="text-center"><p>F5_PE16</p></td>
+<td class="text-center"><p>PE16</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE16</p></td>
+<td class="text-center"><p>PE16</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_47</p></td>
+<td class="text-center"><p>E5</p></td>
+<td class="text-center"><p>E5_PE17</p></td>
+<td class="text-center"><p>PE17</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE17</p></td>
+<td class="text-center"><p>PE17</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_49</p></td>
+<td class="text-center"><p>E4</p></td>
+<td class="text-center"><p>E4_PE18</p></td>
+<td class="text-center"><p>PE18</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE18</p></td>
+<td class="text-center"><p>PE18</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_51</p></td>
+<td class="text-center"><p>D4</p></td>
+<td class="text-center"><p>D4_PE19</p></td>
+<td class="text-center"><p>PE19</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE19</p></td>
+<td class="text-center"><p>PE19</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_53</p></td>
+<td class="text-center"><p>F6</p></td>
+<td class="text-center"><p>F6_PE22</p></td>
+<td class="text-center"><p>PE22</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>General IO FE22</p></td>
+<td class="text-center"><p>PE22</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_55</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_57</p></td>
+<td class="text-center"><p>F9</p></td>
+<td class="text-center"><p>F9_PG-TWI4-SCK</p></td>
+<td class="text-center"><p>PG15</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>TWI4 serial clock signal</p></td>
+<td class="text-center"><p>TWI4-SCK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_59</p></td>
+<td class="text-center"><p>E9</p></td>
+<td class="text-center"><p>E9_PG-TWI4-SDA</p></td>
+<td class="text-center"><p>PG16</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>TWI4 serial data signal</p></td>
+<td class="text-center"><p>TWI4-SDA</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_61</p></td>
+<td class="text-center"><p>A11</p></td>
+<td class="text-center"><p>A11_IR-RX</p></td>
+<td class="text-center"><p>PH10</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>IR receiver signal input</p></td>
+<td class="text-center"><p>IR-RX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_63</p></td>
+<td class="text-center"><p>B19</p></td>
+<td class="text-center"><p>B19_PA-TWI3-SCK</p></td>
+<td class="text-center"><p>PA10</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>TWI3 serial clock signal</p></td>
+<td class="text-center"><p>TWI3-SCK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_65</p></td>
+<td class="text-center"><p>E17</p></td>
+<td class="text-center"><p>E17_PA-TWI3-SDA</p></td>
+<td class="text-center"><p>PA11</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>TWI3 serial data signal</p></td>
+<td class="text-center"><p>TWI3-SDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_67</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_69</p></td>
+<td class="text-center"><p>C17</p></td>
+<td class="text-center"><p>C17_PH4</p></td>
+<td class="text-center"><p>PH4</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General IO PH4</p></td>
+<td class="text-center"><p>PH4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_71</p></td>
+<td class="text-center"><p>B13</p></td>
+<td class="text-center"><p>B13_UART5-RX</p></td>
+<td class="text-center"><p>PH3</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART5 data sending</p></td>
+<td class="text-center"><p>UART5-RX</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_73</p></td>
+<td class="text-center"><p>B12</p></td>
+<td class="text-center"><p>B12_UART5-TX</p></td>
+<td class="text-center"><p>PH2</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART5 data receiving</p></td>
+<td class="text-center"><p>UART5-TX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_75</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>FEL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>FEL signal (used to identify system programming)</p></td>
+<td class="text-center"><p>FEL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_77</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>JTAG-SEL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>JTAG channel selection signal (low level JTAG part signal can only be multiplexed to PG, high level JTAG part signal is multiplexed to PF or PG by software selection, default is PF).</p></td>
+<td class="text-center"><p>JTAG-SEL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_79</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4 Definition of RIGHT (P2) connector interface (even) pins</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Num</strong></p></th>
+<th class="head text-center"><p><strong>Ball</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>GPIO</strong></p></th>
+<th class="head text-center"><p><strong>Vol</strong></p></th>
+<th class="head text-center"><p><strong>Pin Description</strong></p></th>
+<th class="head text-center"><p><strong>Default Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>RU_2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_4</p></td>
+<td class="text-center"><p>P3</p></td>
+<td class="text-center"><p>P3_SDC0-D2</p></td>
+<td class="text-center"><p>PF5</p></td>
+<td class="text-center"><p>1.8/3.3V</p></td>
+<td class="text-center"><p>SDC0 data signal 2</p></td>
+<td class="text-center"><p>SDC0-D2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_6</p></td>
+<td class="text-center"><p>R3</p></td>
+<td class="text-center"><p>R3_SDC0-D3</p></td>
+<td class="text-center"><p>PF4</p></td>
+<td class="text-center"><p>1.8/3.3V</p></td>
+<td class="text-center"><p>SDC0 data signal 3</p></td>
+<td class="text-center"><p>SDC0-D3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_8</p></td>
+<td class="text-center"><p>R2</p></td>
+<td class="text-center"><p>R2_SDC0_CMD</p></td>
+<td class="text-center"><p>PF3</p></td>
+<td class="text-center"><p>1.8/3.3V</p></td>
+<td class="text-center"><p>SDC0 command signal</p></td>
+<td class="text-center"><p>SDC0_CMD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_10</p></td>
+<td class="text-center"><p>R1</p></td>
+<td class="text-center"><p>R1_SDC0-CLK</p></td>
+<td class="text-center"><p>PF2</p></td>
+<td class="text-center"><p>1.8/3.3V</p></td>
+<td class="text-center"><p>SDC0 clock signal</p></td>
+<td class="text-center"><p>SDC0-CLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_12</p></td>
+<td class="text-center"><p>T3</p></td>
+<td class="text-center"><p>T3_SDC0-D0</p></td>
+<td class="text-center"><p>PF1</p></td>
+<td class="text-center"><p>1.8/3.3</p></td>
+<td class="text-center"><p>SDC0 data signal 0</p></td>
+<td class="text-center"><p>SDC0-D0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_14</p></td>
+<td class="text-center"><p>T2</p></td>
+<td class="text-center"><p>T2_SDC0-D1</p></td>
+<td class="text-center"><p>PF0</p></td>
+<td class="text-center"><p>1.8/3.3V</p></td>
+<td class="text-center"><p>SDC0 data signal 0</p></td>
+<td class="text-center"><p>SDC0-D1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_16</p></td>
+<td class="text-center"><p>T4</p></td>
+<td class="text-center"><p>T4_SDC0-DET</p></td>
+<td class="text-center"><p>PF6</p></td>
+<td class="text-center"><p>1.8/3.3V</p></td>
+<td class="text-center"><p>SDC0 card detection signal</p></td>
+<td class="text-center"><p>SDC0-DET</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_20</p></td>
+<td class="text-center"><p>P2</p></td>
+<td class="text-center"><p>P2_RGMII-CLKIN-125M</p></td>
+<td class="text-center"><p>PI13</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII external clock input</p></td>
+<td class="text-center"><p>RGMII-CLKIN-125M</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_22</p></td>
+<td class="text-center"><p>N5</p></td>
+<td class="text-center"><p>N5_RGMII-RXD3</p></td>
+<td class="text-center"><p>PI0</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 3</p></td>
+<td class="text-center"><p>RGMII-RXD3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_24</p></td>
+<td class="text-center"><p>L3</p></td>
+<td class="text-center"><p>L3_RGMII-RXD2</p></td>
+<td class="text-center"><p>PI1</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 2</p></td>
+<td class="text-center"><p>RGMII-RXD2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_26</p></td>
+<td class="text-center"><p>M4</p></td>
+<td class="text-center"><p>M4_RGMII-RXD1</p></td>
+<td class="text-center"><p>PI2</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 1</p></td>
+<td class="text-center"><p>RGMII-RXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_28</p></td>
+<td class="text-center"><p>M3</p></td>
+<td class="text-center"><p>M3_RGMII-RXD0</p></td>
+<td class="text-center"><p>PI3</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 0</p></td>
+<td class="text-center"><p>RGMII-RXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_30</p></td>
+<td class="text-center"><p>L2</p></td>
+<td class="text-center"><p>L2_RGMII-RXCTL</p></td>
+<td class="text-center"><p>PI5</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send control signal</p></td>
+<td class="text-center"><p>RGMII-RXCTL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_32</p></td>
+<td class="text-center"><p>R6</p></td>
+<td class="text-center"><p>R6_RGMII-RXCK</p></td>
+<td class="text-center"><p>PI4</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send reference clock</p></td>
+<td class="text-center"><p>RGMII-RXCK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_34</p></td>
+<td class="text-center"><p>N4</p></td>
+<td class="text-center"><p>N4_PHYRSTB</p></td>
+<td class="text-center"><p>PI6</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>PHY chip reset signal</p></td>
+<td class="text-center"><p>PHYRSTB</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_36</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_38</p></td>
+<td class="text-center"><p>R5</p></td>
+<td class="text-center"><p>R5_RGMII-TXCTL</p></td>
+<td class="text-center"><p>PI12</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send control signal</p></td>
+<td class="text-center"><p>RGMII-TXCTL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_40</p></td>
+<td class="text-center"><p>N2</p></td>
+<td class="text-center"><p>N2_RGMII-TXCK</p></td>
+<td class="text-center"><p>PI11</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send reference clock</p></td>
+<td class="text-center"><p>RGMII-TXCK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_42</p></td>
+<td class="text-center"><p>R4</p></td>
+<td class="text-center"><p>R4_RGMII-TXD0</p></td>
+<td class="text-center"><p>PI10</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 0</p></td>
+<td class="text-center"><p>RGMII-TXD0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_44</p></td>
+<td class="text-center"><p>M1</p></td>
+<td class="text-center"><p>M1_RGMII-TXD1</p></td>
+<td class="text-center"><p>PI9</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 1</p></td>
+<td class="text-center"><p>RGMII-TXD1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_46</p></td>
+<td class="text-center"><p>N6</p></td>
+<td class="text-center"><p>N6_RGMII-TXD2</p></td>
+<td class="text-center"><p>PI8</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 2</p></td>
+<td class="text-center"><p>RGMII-TXD2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_48</p></td>
+<td class="text-center"><p>M2</p></td>
+<td class="text-center"><p>M2_RGMII-TXD3</p></td>
+<td class="text-center"><p>PI7</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII send data 3</p></td>
+<td class="text-center"><p>RGMII-TXD3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_50</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_52</p></td>
+<td class="text-center"><p>T5</p></td>
+<td class="text-center"><p>T5_RGMII-MDIO</p></td>
+<td class="text-center"><p>PI15</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII manages data input/output</p></td>
+<td class="text-center"><p>RGMII-MDIO</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_54</p></td>
+<td class="text-center"><p>R7</p></td>
+<td class="text-center"><p>R7_RGMII-MDC</p></td>
+<td class="text-center"><p>PI14</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>RGMII management data reference clock</p></td>
+<td class="text-center"><p>RGMII-MDC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_56</p></td>
+<td class="text-center"><p>T6</p></td>
+<td class="text-center"><p>T6_EPHY-CLK-25M</p></td>
+<td class="text-center"><p>PI16</p></td>
+<td class="text-center"><p>2.8V</p></td>
+<td class="text-center"><p>Output 25Mhz to EPHY</p></td>
+<td class="text-center"><p>EPHY-CLK-25M</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_58</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_60</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SPI0-CLK</p></td>
+<td class="text-center"><p>PC0</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>SPI0 reference clock (floating by default)</p></td>
+<td class="text-center"><p>SPI0-CLK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_62</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SPI0-MOSI</p></td>
+<td class="text-center"><p>PC2</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>SPI0 master-out and slave-in (floating processing by default)</p></td>
+<td class="text-center"><p>SPI0-MOSI</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_64</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT-SEL1</p></td>
+<td class="text-center"><p>PC3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT Configuration 1</p></td>
+<td class="text-center"><p>BOOT-SEL1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_66</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT-SEL2</p></td>
+<td class="text-center"><p>PC4</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT Configuration 2</p></td>
+<td class="text-center"><p>BOOT-SEL2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_68</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT-SEL3</p></td>
+<td class="text-center"><p>PC5</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT Configuration 3</p></td>
+<td class="text-center"><p>BOOT-SEL3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_70</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT-SEL4</p></td>
+<td class="text-center"><p>PC6</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT Configuration 4</p></td>
+<td class="text-center"><p>BOOT-SEL4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_72</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT-SEL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT Configuration</p></td>
+<td class="text-center"><p>BOOT-SEL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_74</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT0 signal</p></td>
+<td class="text-center"><p>BOOT0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_76</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT1 signal</p></td>
+<td class="text-center"><p>BOOT1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RU_78</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>BOOT2 signal</p></td>
+<td class="text-center"><p>BOOT2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RU_80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 5 Left _ DOWN (P3) Connector Interface (Odd) Pin Definition</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Num</strong></p></th>
+<th class="head text-center"><p><strong>Ball</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>GPIO</strong></p></th>
+<th class="head text-center"><p><strong>Vol</strong></p></th>
+<th class="head text-center"><p><strong>Pin Description</strong></p></th>
+<th class="head text-center"><p><strong>Default Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LD_1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_3</p></td>
+<td class="text-center"><p>J19</p></td>
+<td class="text-center"><p>J19_LCD-CLK</p></td>
+<td class="text-center"><p>PD24</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD clock signal</p></td>
+<td class="text-center"><p>LCD-CLK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_5</p></td>
+<td class="text-center"><p>K19</p></td>
+<td class="text-center"><p>K19_LCD-DE</p></td>
+<td class="text-center"><p>PD25</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data enable signal</p></td>
+<td class="text-center"><p>LCD-DE</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_7</p></td>
+<td class="text-center"><p>K18</p></td>
+<td class="text-center"><p>K18_LCD-VSYNC</p></td>
+<td class="text-center"><p>PD27</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD field sync signal</p></td>
+<td class="text-center"><p>LCD-VSYNC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_9</p></td>
+<td class="text-center"><p>G20</p></td>
+<td class="text-center"><p>G20_LCD-HSYNC</p></td>
+<td class="text-center"><p>PD26</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD line synchronization signal</p></td>
+<td class="text-center"><p>LCD-HSYNC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_11</p></td>
+<td class="text-center"><p>F19</p></td>
+<td class="text-center"><p>F19_LCD-D23</p></td>
+<td class="text-center"><p>PD23</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD Data 23</p></td>
+<td class="text-center"><p>LCD-D23</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_13</p></td>
+<td class="text-center"><p>M20</p></td>
+<td class="text-center"><p>M20_LCD-D22</p></td>
+<td class="text-center"><p>PD22</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD Data 22</p></td>
+<td class="text-center"><p>LCD-D22</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_15</p></td>
+<td class="text-center"><p>G19</p></td>
+<td class="text-center"><p>G19_LCD-D21</p></td>
+<td class="text-center"><p>PD21</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD Data 21</p></td>
+<td class="text-center"><p>LCD-D21</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_17</p></td>
+<td class="text-center"><p>K20</p></td>
+<td class="text-center"><p>K20_LCD-D20</p></td>
+<td class="text-center"><p>PD20</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD Data 20</p></td>
+<td class="text-center"><p>LCD-D20</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_19</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_21</p></td>
+<td class="text-center"><p>E21</p></td>
+<td class="text-center"><p>E21_LCD-D19<br/>LVDS1-D3N</p></td>
+<td class="text-center"><p>PD19</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 19<br/>LVDS1 differential data 3-</p></td>
+<td class="text-center"><p>LCD-D19<br/>LVDS1-D3N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_23</p></td>
+<td class="text-center"><p>E22</p></td>
+<td class="text-center"><p>E22_LCD-D18<br/>LVDS1-D3P</p></td>
+<td class="text-center"><p>PD18</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 18<br/>LVDS1 differential data 3+</p></td>
+<td class="text-center"><p>LCD-D18<br/>LVDS1-D3P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_25</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_27</p></td>
+<td class="text-center"><p>E23</p></td>
+<td class="text-center"><p>E23_LCD-D17<br/>LVDS1-CLKN</p></td>
+<td class="text-center"><p>PD17</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 17<br/>LVDS1 differential clock-</p></td>
+<td class="text-center"><p>LCD-D17<br/>LVDS1-CLKN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_29</p></td>
+<td class="text-center"><p>F21</p></td>
+<td class="text-center"><p>F21_LCD-D16<br/>LVDS1-CLKP</p></td>
+<td class="text-center"><p>PD16</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 16<br/>LVDS1 differential clock+</p></td>
+<td class="text-center"><p>LCD-D16<br/>LVDS1-CLKP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_31</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_33</p></td>
+<td class="text-center"><p>F22</p></td>
+<td class="text-center"><p>F22_LCD-D15<br/>LVDS1-D2N</p></td>
+<td class="text-center"><p>PD15</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 15<br/>LVDS1 differential data 2-</p></td>
+<td class="text-center"><p>LCD-D15<br/>LVDS1-D2N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_35</p></td>
+<td class="text-center"><p>G21</p></td>
+<td class="text-center"><p>G21_LCD-D14<br/>LVDS1-D2P</p></td>
+<td class="text-center"><p>PD14</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 14<br/>LVDS1 differential data 2+</p></td>
+<td class="text-center"><p>LCD-D14<br/>LVDS1-D2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_37</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_39</p></td>
+<td class="text-center"><p>G22</p></td>
+<td class="text-center"><p>G22_LCD-D13<br/>LVDS1-D1N</p></td>
+<td class="text-center"><p>PD13</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 13<br/>LVDS1 differential data 1-</p></td>
+<td class="text-center"><p>LCD-D13<br/>LVDS1-D1N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_41</p></td>
+<td class="text-center"><p>G23</p></td>
+<td class="text-center"><p>G23_LCD-D12<br/>LVDS1-D1P</p></td>
+<td class="text-center"><p>PD12</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 12<br/>LVDS1 differential data 1+</p></td>
+<td class="text-center"><p>LCD-D12<br/>LVDS1-D1P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_43</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_45</p></td>
+<td class="text-center"><p>H21</p></td>
+<td class="text-center"><p>H21_LCD-D11<br/>LVDS1-D0N</p></td>
+<td class="text-center"><p>PD11</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 11<br/>LVDS1 differential data 0-</p></td>
+<td class="text-center"><p>LCD-D11<br/>LVDS1-D0N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_47</p></td>
+<td class="text-center"><p>H22</p></td>
+<td class="text-center"><p>H22_LCD-D10<br/>LVDS1-D0P</p></td>
+<td class="text-center"><p>PD10</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 10<br/>LVDS1 differential data 0+</p></td>
+<td class="text-center"><p>LCD-D10<br/>LVDS1-D0P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_49</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_51</p></td>
+<td class="text-center"><p>A20</p></td>
+<td class="text-center"><p>A20_LCD-D9<br/>LVDS0-D3N</p></td>
+<td class="text-center"><p>PD9</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 9<br/>LVDS0 differential data 3-</p></td>
+<td class="text-center"><p>LCD-D9<br/>LVDS0-D3N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_53</p></td>
+<td class="text-center"><p>B20</p></td>
+<td class="text-center"><p>B20_LCD-D8<br/>LVDS0-D3P</p></td>
+<td class="text-center"><p>PD8</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 8<br/>LVDS0 differential data 3+</p></td>
+<td class="text-center"><p>LCD-D8<br/>LVDS0-D3P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_55</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_57</p></td>
+<td class="text-center"><p>A21</p></td>
+<td class="text-center"><p>A21_LCD-D7<br/>LVDS0-CLKN</p></td>
+<td class="text-center"><p>PD7</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 7<br/>LVDS0 differential clock-</p></td>
+<td class="text-center"><p>LCD-D7<br/>LVDS0-CLKN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_59</p></td>
+<td class="text-center"><p>B21</p></td>
+<td class="text-center"><p>B21_LCD-D6<br/>LVDS0-CLKP</p></td>
+<td class="text-center"><p>PD6</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 6<br/>LVDS0 differential clock+</p></td>
+<td class="text-center"><p>LCD-D6<br/>LVDS0-CLKP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_61</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_63</p></td>
+<td class="text-center"><p>C21</p></td>
+<td class="text-center"><p>C21_LCD-D5<br/>LVDS0-D2N</p></td>
+<td class="text-center"><p>PD5</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 5<br/>LVDS0 differential data 2-</p></td>
+<td class="text-center"><p>LCD-D5<br/>LVDS0-D2N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_65</p></td>
+<td class="text-center"><p>B22</p></td>
+<td class="text-center"><p>B22_LCD-D4<br/>LVDS0-D2P</p></td>
+<td class="text-center"><p>PD4</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 4<br/>LVDS0 differential data 2+</p></td>
+<td class="text-center"><p>LCD-D4<br/>LVDS0-D2P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_67</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_69</p></td>
+<td class="text-center"><p>C22</p></td>
+<td class="text-center"><p>C22_LCD-D3<br/>LVDS0-D1N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 3<br/>LVDS0 differential data 1-</p></td>
+<td class="text-center"><p>LCD-D3<br/>LVDS0-D1N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_71</p></td>
+<td class="text-center"><p>C23</p></td>
+<td class="text-center"><p>C23_LCD-D2<br/>LVDS0-D1P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 2<br/>LVDS0 differential data 1+</p></td>
+<td class="text-center"><p>LCD-D2<br/>LVDS0-D1P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_73</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_75</p></td>
+<td class="text-center"><p>D21</p></td>
+<td class="text-center"><p>D21_LCD-D1<br/>LVDS0-D0N</p></td>
+<td class="text-center"><p>PD1</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 1<br/>LVDS0 differential data 0-</p></td>
+<td class="text-center"><p>LCD-D1<br/>LVDS0-D0N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_77</p></td>
+<td class="text-center"><p>D22</p></td>
+<td class="text-center"><p>D22_LCD-D0<br/>LVDS0-D0P</p></td>
+<td class="text-center"><p>PD0</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>LCD data 0<br/>LVDS0 differential data 0+</p></td>
+<td class="text-center"><p>LCD-D0<br/>LVDS0-D0P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_79</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 6 Left _ DOWN (P3) Connector Interface (Even) Pin Definition</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Num</strong></p></th>
+<th class="head text-center"><p><strong>Ball</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>GPIO</strong></p></th>
+<th class="head text-center"><p><strong>Vol</strong></p></th>
+<th class="head text-center"><p><strong>Pin Description</strong></p></th>
+<th class="head text-center"><p><strong>Default Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LD_2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>DCIN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5V</p></td>
+<td class="text-center"><p>SoM power input</p></td>
+<td class="text-center"><p>DCIN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_4</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>DCIN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5V</p></td>
+<td class="text-center"><p>SoM power input</p></td>
+<td class="text-center"><p>DCIN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_6</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>DCIN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5V</p></td>
+<td class="text-center"><p>SoM power input</p></td>
+<td class="text-center"><p>DCIN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_8</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>DCIN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5V</p></td>
+<td class="text-center"><p>SoM power input</p></td>
+<td class="text-center"><p>DCIN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_10</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>DCIN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5V</p></td>
+<td class="text-center"><p>SoM power input</p></td>
+<td class="text-center"><p>DCIN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_12</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_14</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_16</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_20</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>DCDC1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SoM controls carrier board power-on timing signal</p></td>
+<td class="text-center"><p>DCDC1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_22</p></td>
+<td class="text-center"><p>J20</p></td>
+<td class="text-center"><p>J20_LCD-PWM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Screen backlight adjustment signal</p></td>
+<td class="text-center"><p>LCD-PWM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_24</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PMU-PWRON</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>System power-on/power-off/sleep wake-up signal</p></td>
+<td class="text-center"><p>PMU-PWRON</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_26</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SOC-RESET</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>System reset signal</p></td>
+<td class="text-center"><p>SOC-RESET</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_28</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_30</p></td>
+<td class="text-center"><p>C8</p></td>
+<td class="text-center"><p>C8_WL-SDIO-D2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SDIO Data 2</p></td>
+<td class="text-center"><p>SDIO-D2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_32</p></td>
+<td class="text-center"><p>B8</p></td>
+<td class="text-center"><p>B8_WL-SDIO-D3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>SDIO Data 3</p></td>
+<td class="text-center"><p>SDIO-D3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_34</p></td>
+<td class="text-center"><p>A9</p></td>
+<td class="text-center"><p>A9_WL-SDIO-CMD</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SDIO command signal</p></td>
+<td class="text-center"><p>SDIO-CMD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_36</p></td>
+<td class="text-center"><p>B10</p></td>
+<td class="text-center"><p>B10_WL-SDIO-CLK</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SDIO clock signal</p></td>
+<td class="text-center"><p>SDIO-CLK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_38</p></td>
+<td class="text-center"><p>B9</p></td>
+<td class="text-center"><p>B9_WL-SDIO-D0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SDIO Data 0</p></td>
+<td class="text-center"><p>SDIO-D0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_40</p></td>
+<td class="text-center"><p>C9</p></td>
+<td class="text-center"><p>C9_WL-SDIO-D1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>SDIO Data 1</p></td>
+<td class="text-center"><p>SDIO-D1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_42</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_44</p></td>
+<td class="text-center"><p>C7</p></td>
+<td class="text-center"><p>C7_AP-CK32KO</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>32.768KHz clock output (floating by default)</p></td>
+<td class="text-center"><p>CK32KO</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_46</p></td>
+<td class="text-center"><p>C6</p></td>
+<td class="text-center"><p>C6_BT-PCM-DIN</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>PCM data input</p></td>
+<td class="text-center"><p>PCM-DIN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_48</p></td>
+<td class="text-center"><p>D9</p></td>
+<td class="text-center"><p>D9_BT-PCM-CLK</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>PCM clock signal</p></td>
+<td class="text-center"><p>PCM-CLK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_50</p></td>
+<td class="text-center"><p>C5</p></td>
+<td class="text-center"><p>C5_BT-PCM-DOUT</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PCM data output</p></td>
+<td class="text-center"><p>PCM-DOUT</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_52</p></td>
+<td class="text-center"><p>B5</p></td>
+<td class="text-center"><p>B5_BT-PCM-SYNC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>PCM synchronization signal</p></td>
+<td class="text-center"><p>PCM-SYNC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_54</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_56</p></td>
+<td class="text-center"><p>B6</p></td>
+<td class="text-center"><p>B6_BT-UART-CTS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 data clear signal</p></td>
+<td class="text-center"><p>UART1-CTS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_58</p></td>
+<td class="text-center"><p>B7</p></td>
+<td class="text-center"><p>B7_BT-UART-RX</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>UART1 data sending</p></td>
+<td class="text-center"><p>UART1-RX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_60</p></td>
+<td class="text-center"><p>A7</p></td>
+<td class="text-center"><p>A7_BT-UART-TX</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 data receiving</p></td>
+<td class="text-center"><p>UART1-TX</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_62</p></td>
+<td class="text-center"><p>A5</p></td>
+<td class="text-center"><p>A5_BT-UART-RTS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 data request signal</p></td>
+<td class="text-center"><p>UART1-RTS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_64</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_66</p></td>
+<td class="text-center"><p>B14</p></td>
+<td class="text-center"><p>B14_PH-I2S3-MCLK</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2S3 main clock</p></td>
+<td class="text-center"><p>I2S3-MCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_68</p></td>
+<td class="text-center"><p>A13</p></td>
+<td class="text-center"><p>A13_PH-I2S3-BCLK</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>I2S3 Bit clock</p></td>
+<td class="text-center"><p>I2S3-BCLK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_70</p></td>
+<td class="text-center"><p>E12</p></td>
+<td class="text-center"><p>E12_PH-I2S3-LRCK</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2S3 sample synchronization signal</p></td>
+<td class="text-center"><p>I2S3-LRCK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_72</p></td>
+<td class="text-center"><p>B11</p></td>
+<td class="text-center"><p>B11_PH-I2S3-DOUT0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2S3 Data output</p></td>
+<td class="text-center"><p>I2S3-DOUT0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_74</p></td>
+<td class="text-center"><p>C11</p></td>
+<td class="text-center"><p>C11_PH-I2S3-DIN0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2S3 data input</p></td>
+<td class="text-center"><p>I2S3-DIN0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_76</p></td>
+<td class="text-center"><p>C15</p></td>
+<td class="text-center"><p>C15_UART0-RX</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>UART0 receiving</p></td>
+<td class="text-center"><p>UART0-RX</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LD_78</p></td>
+<td class="text-center"><p>C14</p></td>
+<td class="text-center"><p>C14_UART0-TX</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART0 sending</p></td>
+<td class="text-center"><p>UART0-TX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LD_80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="som-hardware-design-description">
+<h3>2.6 SoM Hardware Design Description<a class="headerlink" href="#som-hardware-design-description" title="Link to this heading"></a></h3>
+<p>FETT507-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:</p>
+<p>Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting flashing information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.</p>
+</section>
+</section>
+<section id="okt507-c-development-platform-description">
+<h2>3. OKT507-C Development Platform Description<a class="headerlink" href="#okt507-c-development-platform-description" title="Link to this heading"></a></h2>
+<section id="okt507-c-development-board-interface-diagram">
+<h3>3.1 OKT507-C Development Board Interface Diagram<a class="headerlink" href="#okt507-c-development-board-interface-diagram" title="Link to this heading"></a></h3>
+<p>The connection of OKT507-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:</p>
+<p><img alt="Image" src="_images/1720596346933_3c7c412e_5d57_4806_aa5a_83c5cc056c8e.png" /></p>
+<p><strong>OKT507 Development Board Interfaces</strong></p>
+</section>
+<section id="okt507-c-som-dimension-diagram">
+<h3>3.2 OKT507-C SoM Dimension Diagram<a class="headerlink" href="#okt507-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p>PCB size: 190mm×130mm, dimensional tolerance ±0.15mm.</p>
+<p>Fixed hole size: spacing: 120mm × 180mm, hole diameter: 3.2mm.</p>
+<p>Plate making process: thickness 1.6mm, 4-layer PCB.</p>
+<p>Power supply voltage: DC 12V.</p>
+<p><strong>Note: For more detailed dimensions, please refer to the user information carrier board DXF file.</strong></p>
+</section>
+<section id="carrier-board-naming-rules">
+<h3>3.3 Carrier Board Naming Rules<a class="headerlink" href="#carrier-board-naming-rules" title="Link to this heading"></a></h3>
+<p>ABC-D+IK:M</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Field</strong></p></th>
+<th class="head text-center"><p><strong>Field Description</strong></p></th>
+<th class="head text-center"><p><strong>Value</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>A</p></td>
+<td class="text-center"><p>Qualification level</p></td>
+<td class="text-center"><p>PC</p></td>
+<td><p>Prototype Sample</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>Blank</p></td>
+<td><p>Mass Production</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>B</p></td>
+<td class="text-center"><p>Product line identification</p></td>
+<td class="text-center"><p>OK</p></td>
+<td><p>Forlinx Embedded development board</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>C</p></td>
+<td class="text-center"><p>CPU Name</p></td>
+<td class="text-center"><p>T507</p></td>
+<td><p>T507</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Segment Identification</p></td>
+<td class="text-center"><p>-</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>D</p></td>
+<td class="text-center"><p>Connection</p></td>
+<td class="text-center"><p>Cx</p></td>
+<td><p>Board-to-board Connector</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>+</p></td>
+<td class="text-center"><p>Segment Identification</p></td>
+<td class="text-center"><p>+</p></td>
+<td><p>The configuration parameter section follows this identifier.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I</p></td>
+<td class="text-center"><p>Operating temperature</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>-40 to 85℃   industrial  level</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>K</p></td>
+<td class="text-center"><p>PCB Version</p></td>
+<td class="text-center"><p>11</p></td>
+<td><p>V1.1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>xx</p></td>
+<td><p>Vx.x</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>:M</p></td>
+<td class="text-center"><p>Internal Identification of the Manufacturer</p></td>
+<td class="text-center"><p>:X</p></td>
+<td><p>This is the internal identification of the manufacturer and has no impact on the use.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="carrier-board-resources">
+<h3>3.4 Carrier Board Resources<a class="headerlink" href="#carrier-board-resources" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LCD</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>RGB888 interface, up to 1920x1080&#64;60fps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LVDS</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Multiplexed with LCD;<br/>-Single channel 1366x768 &#64; 60fps;<br/>-Dual channel 1920x1080 &#64; 60fps</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>HDMI</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Compliant with HDCP 2.2 and HDCP 1.4; <br/>-Supports HDR10; 4K&#64;60fps;<br/>-supports 2D video and 4K&#64;30fps for 3D video.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TV-OUT</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Analog video output supporting NTSC and PAL modes.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI_CSI</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-4 lanes, up to 1.0Gbps/lane;<br/>-Maximum video capture resolution 8m &#64; 30fps or 4 * 1080p &#64; 25fps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>DVP_CSI</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-8-bit, pixel clock up to 148.5MHz;<br/>-Maximum video capture resolution 5m &#64; 15 fps or 1080p &#64; 30fps</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Audio</p></td>
+<td><p>LINE IN<sup>TBD</sup></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Some pins are reserved and not yet developed.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td><p>LINE OUT</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-CPU built-in codec, differential output or single-ended output</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>MIC</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Carrier board external codec, analog MIC input</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td><p>headphone</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Carrier board external codec, analog output</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Speaker</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>-Carrier board external codec, Class D power amplifier can directly drive the speaker</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB2.0</p></td>
+<td><p></p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>-USB2.0 Type-A female, host mode, 480Mbit/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>OTG</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-microUSB, master/slave mode, writable system</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4G</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Supports 4G module via a mini PCIe interface</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Ethernet</p></td>
+<td><p></p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>-1 Gigabit, 100 Megabit, downward adaptive rate, dual RJ45 ports can be used simultaneously.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>WiFi &amp; Bluetooth</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Module model: FG6221ASRC-00<br/>-WLAN： IEEE 802.11b/g/n &amp; Wi-Fi compliant 2.4GHz<br/>                IEEE 802.11a/n/ac&amp; Wi-Fi compliant 5GHz<br/>-bluetooth: BT 5.0 Module</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>TF Card</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Compatible with SD3.0.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>KEY</p></td>
+<td><p></p></td>
+<td class="text-center"><p>6</p></td>
+<td><p>-Key function: VOL+, VOL-, MENU, ENTER, HOME, PWRON</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>JTAG</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPI</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-The default eMMC version SoM does not support SPI0, and SPI1 can be multiplexed from the I2S3 signal</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>ADC</p></td>
+<td><p></p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>-1.8 V level, 8 bit effective SAR analog-to-digital conversion, 1MHz Max sample rate, 1 adjustable resistor on board</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Backlight adjustment for liquid crystal</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>IR</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-Infrared receiving</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RTC</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-External RTC chip on carrier board, powered by CR1220 coin cell</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-TTL level is led out with 10 P simple horn</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART Debug</p></td>
+<td><p></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>-TTL is led out by 2.54 mm pitch pins, and RS232 is led out by DB9 male.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<p><strong>1. The parameters in the table are the theoretical values for hardware design or the CPU;</strong>
+<strong>2. TBD “indicates that the functionality has not yet been developed at this stage.</strong></p>
+</section>
+<section id="okt507-c-carrier-board-description">
+<h3>3.5 OKT507-C Carrier Board Description<a class="headerlink" href="#okt507-c-carrier-board-description" title="Link to this heading"></a></h3>
+<p><strong>Note: The following screenshot is only for the carrier board function description, which may be inconsistent with the actual principle. Please refer to the source file of the schematic diagram; the component UID with “_DNP” mark in the diagram below represents it is not soldered by default.</strong></p>
+<section id="carrier-board-power">
+<h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
+<p>Carrier board power supply is DC 12V, led in through DC-005 socket (P8). The 12V DC power supply passes through a self - recovering fuse and an anti - reverse connection diode, and then is stepped down to DCIN by the MP2307 switching circuit. This 5V voltage directly powers the SoM. After the SoM is powered on, the PMIC inside the SoM outputs DCDC1, which controls the power - on of VCC5V and VCC3V3 to supply power to the electrical circuits on the carrier board.</p>
+<p>This circuit is to ensure that the SoM is powered on first, and followed by the carrier board, so as to prevent the damage to the CPU caused by latch-up effects. If the power supply is not controlled in time sequence, the PMIC of the SoM detects the leakage of electricity and fails to start up.</p>
+<p><img alt="Image" src="_images/1721382182301_cc07e63c_c1d3_4e1d_a753_a33d99eb36bb.png" /></p>
+<p><img alt="Image" src="_images/1721382189538_5b7eb0ed_730e_45ca_9f2b_453797a055dc.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. DCDC1 on the carrier board is only used to control the power - on sequence and BOOT startup. It is not recommended to use DCDC1 to power other circuits;</strong></p>
+<p><strong>2. The DCDC of the PMU inside the SoM has a leakage detection function; When the PMU is not powered on and operating, if leakage is detected on its DCDC, the corresponding DCDC channel with leakage will not output. As a result, the system will not boot up. Please read the “SOC Anti - Leakage Application Design Guide” in the user documentation before designing the carrier board.</strong></p>
+</section>
+<section id="keys">
+<h4>3.5.2 Keys<a class="headerlink" href="#keys" title="Link to this heading"></a></h4>
+<p>The K8 button at the lower - left corner of the carrier board is the reset button of the development board. The name of the connected network is SOC - RESET. It is recommended to keep the capacitor and TVS device to prevent the system reset from being interfered during electrostatic testing.</p>
+<p><img alt="Image" src="_images/1721382198712_554b8e0d_0e28_4444_ac25_c184e491a7f0.png" /></p>
+<p>The K1 at the bottom left of the carrier board is the firmware forced burning pin, which is connected to the computer via microUSB to burn firmware. When the hardware system is not powered on, press and hold the button to ground the FEL; after powering on, release the FEL and the hardware system enters firmware upgrade mode.</p>
+<p><img alt="Image" src="_images/1721382205724_f3f5078c_69eb_40a3_8d36_18ad258dd835.png" /></p>
+<p>The PWRON button at the lower - right corner of the carrier board is a switch - controlled pin. Long - pressing it turns the system on/off, and short - pressing it puts the system into sleep/wake - up mode.</p>
+<p><img alt="Image" src="_images/1721382212716_ef1df85c_8110_445f_b78e_a6395ef8aa6f.png" /></p>
+<p>The five buttons at the lower - right corner of the carrier board are implemented by the LRADC of the CPU. The LRADC on the core board has a 51K resistor pulled up to 1.8V. The LRADC has a 6 - bit resolution and is used for button voltage identification. The maximum sampling rate is 2kHz, and the sampling voltage ranges from 0 to 1.35V. It is recommended that the voltage - dividing resistors have an accuracy of 1%. Leave the pins floating when the carrier board is not in use.</p>
+<p><img alt="Image" src="_images/1721382219281_e4ae9e19_d112_49be_8cf8_8ac87c9cbb73.png" /></p>
+<p><strong>Note: It is recommended to add ESD devices to the keys to prevent electrostatic damage to the SoM devices.</strong></p>
+</section>
+<section id="boot-configuration">
+<h4>3.5.3 BOOT Configuration<a class="headerlink" href="#boot-configuration" title="Link to this heading"></a></h4>
+<p>The FETT507 SoM supports connecting to a computer via microUSB to burn the firmware. When the hardware system is not powered on, press and hold the K1 button to ground the FEL; after power - on, release the FEL, and the hardware system enters the firmware upgrade mode.</p>
+<p>The FETT507 SoM also supports burning the firmware through the TF card and supports booting from the built - in eMMC and the external SPI NOR FALSH. After setting the correct DIP switches, power on the hardware to enter the system.</p>
+<p><img alt="Image" src="_images/1720596348577_cb837ff3_26d1_49e0_bbd4_17d5f8f11320.png" /><img alt="Image" src="_images/1721382226926_f66ab4f8_65bf_403c_9882_a397acf43c16.png" /></p>
+<p><strong>Note: The SPI boot function is reserved on the hardware, and the subsequent support status depends on the release of the software and hardware. If you need to boot with the SPI NOR FLASH, please add a FLASH chip of the same model on the carrier board.</strong></p>
+</section>
+<section id="debugging-serial-port">
+<h4>3.5.4 Debugging Serial Port<a class="headerlink" href="#debugging-serial-port" title="Link to this heading"></a></h4>
+<p>The TTL level of the debug serial port is led out using a 2.54mm pin header (P10), and the RS232 level is connected to the computer using a DB9 male elbow connector (P11). If the computer does not have a serial port, you can use a USB - to - serial module to lead out the serial port.</p>
+<p>The conversion circuits of Q2 and Q3 are used to prevent the serial port from leaking electricity, which may cause the system to fail to start.</p>
+<p><img alt="Image" src="_images/1721382237017_493fc3db_b6c4_4a84_918f_7dfdbd6836f2.png" /></p>
+</section>
+<section id="tf-card">
+<h4>3.5.5 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
+<p>There is a self - ejecting TF card socket on the development board. The maximum data rate is SDR Mode 150MHz&#64;1.8V IO. The software system can be flashed via the TF card. It is recommended to keep this socket when designing the carrier board.</p>
+<p><img alt="Image" src="_images/1721382246539_3a92513f_8fbb_4349_b6a0_0011e501c43e.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. TF card is easy to introduce static electricity, so it is recommended to add TVS protection;</strong></p>
+<p><strong>2. Place the series resistor of SDC0 - CLK close to the source nd and the capacitor close to the card socket.</strong></p>
+</section>
+<section id="usb">
+<h4>3.5.6 USB<a class="headerlink" href="#usb" title="Link to this heading"></a></h4>
+<p>The FETT507 - C SoM contains 4 groups of USB2.0. Among them, USB0 supports the OTG function, and the other three groups of USB2.0 interfaces only support the host mode.</p>
+<p>USB2 has the sleep - wake function, which is used in the USB standby or 4G standby scenarios. When applied in the standby scenario, the VCC - USB2 needs to be continuously powered.</p>
+<p><img alt="Image" src="_images/1721382256129_2f67712c_a7ff_4406_a368_5caaf18e7c2a.png" /></p>
+<p><img alt="Image" src="_images/1721382264383_0e2ce5e0_768e_411c_9373_3acefd6dfe43.png" /></p>
+</section>
+<section id="g">
+<h4>3.5.7 4G<a class="headerlink" href="#g" title="Link to this heading"></a></h4>
+<p>The OKT507 - C board has an on - board mini PCIE slot with a latch, which supports the 4G module and uses the USB2 channel. There is a microSIM card slot beside the module. To ensure a stable power supply for the module, the 4G_VCC power supply can output 3A current. Install the 4G antenna using the matching ipex extension cable. One end is connected to the 4G module, and the other end is connected to P39 at the lower - left corner of the development board. P21 is connected to the 4G dedicated small suction - cup antenna.</p>
+<p>The hardware design of the development board has the 4G standby function. When the SoM is in sleep mode, the 4G module is continuously powered, and VCC - USB2 is continuously powered. The system can be woken up through 4G - WAKEUP - SOC, and the wake - up function requires software release support.</p>
+<p><img alt="Image" src="_images/1721382274263_81a22875_0e2a_44d5_b23f_6fe427e56155.png" /></p>
+<p><img alt="Image" src="_images/1721382280491_4c348daf_c0c1_4d87_a1f2_8156b098a53c.png" /></p>
+<p><img alt="Image" src="_images/1721382285840_c65bd37f_3e65_4164_aa44_cfafbc11bca7.png" /></p>
+<p><strong>Note: The support status of the 4G standby wake - up function depends on the software release.</strong></p>
+</section>
+<section id="wifi-bluetooth">
+<h4>3.5.8 Wifi＆Bluetooth<a class="headerlink" href="#wifi-bluetooth" title="Link to this heading"></a></h4>
+<p>The OKT507 - C board has an on - board integrated Wifi &amp; Bluetooth module U19, and the module model is FG6221ASRC - 00. WIFI uses the SDIO interface. The 2.4GHz frequency band complies with IEEE 802.11b/g/n &amp; Wi - Fi compliant, and the 5GHz frequency band complies with IEEE 802.11a/n/ac &amp; Wi - Fi compliant. Bluetooth uses the UART &amp; PCM interfaces and complies with the BT 5.0 Module. 2.4GHz &amp; 5GHz antenna P30 is used.</p>
+<p><img alt="Image" src="_images/1721382293779_36d4cc83_a159_429c_a13c_e62cd7a8b051.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. The RF wiring requires 50 - ohm impedance matching. Minimize the on - board RF wiring as much as possible, and there should be no 90 - degree bends. There needs to be a complete metal copper pour under the RF wiring as a reference ground;</strong></p>
+<p><strong>2. The SDIO wiring connecting the CPU end and the module should be as equal in length and parallel as possible;</strong></p>
+<p><strong>3. Please select an inductor L5 with a current specification of 1A or above;</strong></p>
+<p><strong>4. There are 3 test points at the bottom of this module, which have no practical use. To avoid short - circuits, it is recommended to remove the copper on the surface here;</strong></p>
+<p><strong>5. The RTC_CLK_WIFI clock signal is essential and cannot be deleted;</strong></p>
+<p><strong>6. The pF - level capacitor on the clock line can effectively reduce noise.</strong></p>
+</section>
+<section id="audio">
+<h4>3.5.9 Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h4>
+<p>OKT507 offers four 3.5mm audio jacks and two XH-2.54mm speaker connectors. The LINE IN and LINE OUT interfaces are derived from the CPU’s built-in codec. The MIC and HeadPhone and speaker jacks are led from an external codec on the carrier board.</p>
+<p>The carrier board uses the NAU88C22YG audio chip, which supports left and right channels to play sound and MIC recording. NAU88C22YG chip has a built-in Class D amplifier, and the Speaker interface can drive an 8Ω speaker with a maximum output power of 1W. If you need to connect a larger amplifier, you can only obtain the signal from the headphone jack, and not from the speaker interface. The power supply of the audio chip is controlled by CODEC_PWR_EN, and it is enabled at a high level.</p>
+<p><img alt="Image" src="_images/1721382302833_c068fc78_bb2d_4d25_a20f_9358f6d985f0.png" /></p>
+<p><img alt="Image" src="_images/1739502104265_c23c528c_7e91_4dfd_836c_0bf2c4d8391a.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. The power of the speaker comes from a class-D power amplifier, not a traditional analog power amplifier;</strong></p>
+<p><strong>2. Connect a speaker to each socket, and not to share the speaker wire, nor connect the speaker to the ground wire;</strong></p>
+<p><strong>3. The 31st pin VDDA of NAU88C22YG is an analog power supply pin. When designing the carrier board, please filter this circuit thoroughly. It is recommended to use a separate LDO for power supply to distinguish between digital and analog power supplies. Otherwise, there will be significant background noise during recording and playback;</strong></p>
+<p><strong>4. The T507 has no built - in audio ADC. If the LINE IN pin is connected to an analog audio input, it cannot convert the analog signal into digital audio for the CPU to process. Instead, it directly outputs the signal from the LINE OUT.</strong></p>
+</section>
+<section id="rtc">
+<h4>3.5.10 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
+<p><img alt="Image" src="_images/1721382333800_aaac4668_6e33_4c18_9fb9_db1f215bb929.png" /></p>
+<p>There is an external real - time clock chip PCF8563T/5 (U9) on the carrier board, which reads and writes time via the I2C bus. There is a button battery CR1220 on the board.</p>
+</section>
+<section id="gigabit-ethernet">
+<h4>3.5.11 Gigabit Ethernet<a class="headerlink" href="#gigabit-ethernet" title="Link to this heading"></a></h4>
+<p>There are 2 x Ethernet interfaces, P19 is gigabit and P20 is 100m.</p>
+<p>The Gigabit network port is connected to the PHY chip RTL8211FSI (U15) via RGMII and is led out by an RJ45 socket (P19). The socket model is FC - H021LNL, which has a built - in isolation transformer.</p>
+<p>The RTL8211FSI chip supports 10/100/1000Mbps network auto - negotiation and realizes automatic MDI/MDIX crossover during the auto - negotiation period.</p>
+<p>**Note: **</p>
+<p><strong>1. When designing the PCB, ensure that the PHY chip has a complete reference ground. It is recommended to use at least a 4 - layer board for Gigabit network design;</strong></p>
+<p><strong>2. The bottom EPAD of the RTL8211FSI needs to be connected to GND;</strong></p>
+<p>**3.  Place the PHY chip close to the network transformer. Make the RGMII line group have equal lengths; set the differential impedance of the MDI analog differential pair signal to 100Ω; **</p>
+<p><strong>4. The RGMII and MDIO/MDC levels led out from the SoM can be automatically set according to the PHY model. The RTL8211FSI has a default level of 3.3V. Please select an appropriate working mode for the PHY chip.</strong></p>
+<p><img alt="Image" src="_images/1721382344464_ea253599_c1ed_4233_8c01_c98ef711e9e3.png" /></p>
+<p><img alt="Image" src="_images/1721382356316_dde04af3_bb40_4bdb_bfdb_46ce6de0e046.png" /></p>
+<p>The 100m Ethernet port is connected to the PHY chip YT8512H (U14) through RMII, and is led out from the RJ45 socket (P20). The socket model is FC62115 BNL, and the quarantine transformer is built in.</p>
+<p><img alt="Image" src="_images/1721382362586_a676a8f5_58f3_4edd_83bc_d1cd1e855424.png" /></p>
+<p><img alt="Image" src="_images/1721382371308_d18da0bf_368d_4f76_9291_8f38723565d1.png" /></p>
+</section>
+<section id="digital-camera">
+<h4>3.5.12 Digital Camera<a class="headerlink" href="#digital-camera" title="Link to this heading"></a></h4>
+<p>The OKT507 - C development board is designed with two camera interfaces. By default, P13 uses an OV5640DVP camera, and P14 uses an OV5640MIPI camera. The OV5640 supports a maximum image size of 13.2MP (4224x3136).</p>
+<p>The parallel CSI level led out from the FETT507 is 2.8V. When designing the carrier board, pay attention to matching the level with the camera.</p>
+<p><strong>Note:</strong></p>
+<p><strong>1. Use ground lines to enclose the MIPI signal lines;</strong></p>
+<p><strong>2. When setting the delay of the MIPI signal routing, try to keep it close to the SoM end;</strong></p>
+<p><strong>3. Set the differential impedance of the MIPI to 100Ω ± 10%.</strong></p>
+<p><img alt="Image" src="_images/1721382399654_bb4659e2_6399_445b_b289_bfbe9e3feaab.png" /></p>
+<p><img alt="Image" src="_images/1721382405237_f0d89951_71c6_4864_adb6_dac0cdd5ac26.png" /></p>
+</section>
+<section id="hdmi">
+<h4>3.5.13 HDMI<a class="headerlink" href="#hdmi" title="Link to this heading"></a></h4>
+<p>The OKT507 - C development board provides an HDMI interface, which supports 4K video output.</p>
+<p><img alt="Image" src="_images/1721382412059_f6b87e59_c82e_4f22_a8cd_15388599241b.png" /></p>
+<p>**Note: **</p>
+<p><strong>1. The T507 HDMI CEC and I2C have built - in level conversion and support direct connection to devices;</strong></p>
+<p><strong>2. The routing reference plane of the HDMI signal needs to be a continuous and complete reference plane without segmentation. Otherwise, it will cause discontinuity of the differential line impedance and introduce external noise;</strong></p>
+<p><strong>3. The HDMI signal lines need to have equal lengths and a differential impedance of 100Ω ± 10%;</strong></p>
+<p><strong>4. The equal - length error within the differential line pair should be less than about 10mil; the equal - length error between differential pairs should be less than about 100mil; the length of the HDMI signal line should be less than 3000mil;</strong></p>
+<p><strong>5. Since the HDMI has a high data rate, select an appropriate ESD device and place the ESD close to the HDMI socket;</strong></p>
+<p><strong>6. During testing, it is found that some HDMI cables do not support 4K resolution output. Please choose high - quality cables that meet the specifications.</strong></p>
+</section>
+<section id="lcd-display-interface">
+<h4>3.5.14 LCD Display Interface<a class="headerlink" href="#lcd-display-interface" title="Link to this heading"></a></h4>
+<p>The RGB interface of the T507 processor can reach a maximum resolution of 1920*1080&#64;60fps.</p>
+<p>The RGB888 is led out through a 54pin 0.5mm pitch FPC socket (P16). It can be connected to the display screen supplied by Forlinx.</p>
+<p>The 4 - wire resistive touch TX + -/TY + - in the interface is converted by the TSC2007.</p>
+<p><img alt="Image" src="_images/1721382426932_88de21f8_7f2c_4162_9db1_04f6c7d096c7.png" /></p>
+<p><strong>Note: The TSC2007 chip has special requirements for power - on and power - off. Please refer to the development board or chip manual for design. Otherwise, there is a probability of I2C bus lock - up.</strong></p>
+</section>
+<section id="lvds-display-interface">
+<h4>3.5.15 LVDS Display Interface<a class="headerlink" href="#lvds-display-interface" title="Link to this heading"></a></h4>
+<p>LVDS and RGB have pin multiplexing, and only one of them can be used at a time.</p>
+<p>Single LVDS supports a maximum of 1920x720&#64;60fps, and dual LVDS supports a maximum of 1920x1080&#64;60fps.</p>
+<p>The LVDS signals are led out  through a 38P_2.0mm pin header. Please check the wire sequence before connecting to the screen.</p>
+<p><img alt="Image" src="_images/1721382436145_4ace4bce_5785_4b4d_83bc_af8c7ce9c048.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. Impedance requirements: 50Ω for single - ended and 100Ω for differential;</strong>
+<strong>2. Both RGB and LVDS are led out from the development board. For the convenience of wiring, the LVDS is not designed with equal lengths. When you design your own carrier boards, please follow the specifications.</strong></p>
+</section>
+<section id="tv-out-display-interface">
+<h4>3.5.16 TV- OUT Display Interface<a class="headerlink" href="#tv-out-display-interface" title="Link to this heading"></a></h4>
+<p>There is a TV CVBS output on the development board, which is led out using an RCA phono plug (P17). It supports NTSC and PAL modes.</p>
+<p><img alt="Image" src="_images/1721382444409_eea2d89f_c7d3_4327_87da_b1168de1d59e.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. The 75Ω resistor at the CVBS port needs to be of a large package because the CVBS outputs current. If the package is too small, the resistor will overheat and burn out;</strong>
+<strong>2. It is recommended to add TVS protection to the CVBS port;</strong>
+<strong>3. Place the 75Ω resistor, TVS, and filtering resistors and capacitors close to the socket;</strong>
+<strong>4. Use a 37.5Ω impedance for the TVOUT signal line;</strong>
+<strong>5. The TVOUT signal line needs a complete ground plane.</strong></p>
+</section>
+<section id="ir-infrared-interface">
+<h4>3.5.17 IR Infrared Interface<a class="headerlink" href="#ir-infrared-interface" title="Link to this heading"></a></h4>
+<p>The development board provides one infrared interface, which can only receive signals.</p>
+<p><img alt="Image" src="_images/1721382451823_c3538aac_4f30_468d_b531_58499bf2f597.png" /></p>
+</section>
+<section id="adc">
+<h4>3.5.18 ADC<a class="headerlink" href="#adc" title="Link to this heading"></a></h4>
+<p>There are 4 x GPADC on the development board, which is demonstrated using variable resistors. The ADC voltage sampling range is 0~1.8V.</p>
+<p><img alt="Image" src="_images/1721382459252_7263dc72_f3a9_4f4a_84a1_03dc945eef44.png" /></p>
+</section>
+<section id="spi-nor-flash">
+<h4>3.5.19  SPI NOR FLASH<a class="headerlink" href="#spi-nor-flash" title="Link to this heading"></a></h4>
+<p>There is a SPI NOR FLASH on the carrier board. Pay attention to the power - supply timing.</p>
+<p><img alt="Image" src="_images/1721382465949_209de2b1_6115_4bf6_85e1_c80b53707ae6.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>1. The default eMMC version of the SoM does not support SPI0;</strong>
+<strong>2. If you need to use the ordinary SPI interface function, please design the carrier board by yourself. The SPI1 can be multiplexed on the I2S3 signal;</strong>
+<strong>3. The SPI boot - loading system has not been released yet.</strong></p>
+</section>
+</section>
+</section>
+<section id="hardware-design-guide">
+<h2>4. Hardware Design Guide<a class="headerlink" href="#hardware-design-guide" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>The PMIC model used on the FETT507 - C SoM is AXP853T. All DCDC of the AXP853T have leakage detection functions. When the AXP853T &amp; T507 hardware system is not powered on, if a peripheral chip leaks electricity to the DCDC power rails of the AXP853T through a pull - up resistor or internal leakage of the peripheral chip, and the leakage voltage exceeds 0.5V, the AXP853T will not start and will wait for the leakage abnormality to be resolved. For anti - leakage design, please refer to the “SOC Anti - Leakage Application Design Guide”;</p></li>
+<li><p>In the USB Standby scenario, VCC - USB2 needs to be externally powered constantly. If there is no USB Standby application scenario, VCC - USB2 can be connected to the PMU DCDC1;</p></li>
+<li><p>All unused GPIOs can be left floating or grounded. Unused LRADC and GPADC can be left floating;</p></li>
+<li><p>When the SoM is reset and restarted, if there are devices on the carrier board that are not powered off, resulting in GPIO leakage on the SoM, a voltage can be measured on DCDC1. The voltage of DCDC1 will prevent the carrier board from powering off. Since the carrier board cannot power off, causing GPIO leakage, the SoM will fall into a dead - loop where it cannot start! The solution is to use a voltage monitoring chip TLV809ED29 (U8) to monitor the voltage of DCDC1. When the voltage of DCDC1 is lower than 2.93V, turn off Q1 to power off the carrier board. Please refer to our development board design.</p></li>
+</ol>
+<p><img alt="Image" src="_images/1721382520518_cf93110d_f2a0_457c_8ccd_3ab826af7ca2.png" /></p>
+<ol class="arabic simple" start="5">
+<li><p>SoM heat dissipation consideration:</p></li>
+</ol>
+<p>After actual testing, without a heat sink on the SoM, the main frequency will be reduced to 480MHz when operating at a high temperature of 85°C; if a small heat sink is added, it will not be down - clocked at 85°C. Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. The size of the heat sink is shown in the figure below:</p>
+<p><img alt="Image" src="_images/1720596374612_a3a63ceb_7525_4a56_88e7_23ea87136bee.png" /><img alt="Image" src="_images/1720596374804_32a3eb61_eefe_44e5_8d9d_5540ba5f5b58.png" /><img alt="Image" src="_images/1720596375044_f7ae8f47_306f_45ea_a1fa_7e67a3ad7da9.png" /></p>
+</section>
+<section id="connector-dimension-diagram">
+<h2>5. Connector Dimension Diagram<a class="headerlink" href="#connector-dimension-diagram" title="Link to this heading"></a></h2>
+<p>The specifications of the SoM connector are as follows:</p>
+<p><img alt="Image" src="_images/1720596359918_1ccd3f99_c522_4724_9666_b24c84ef03ba.png" /></p>
+<p>The specifications of the baseboard connector are as follows:</p>
+<p><img alt="Image" src="_images/1720596360333_1099fda7_5c31_46b3_a633_2b043ab4cd6c.png" /></p>
+</section>
+<section id="okt507-c-development-board-power-consumption-table">
+<h2>6. OKT507-C Development Board Power Consumption Table<a class="headerlink" href="#okt507-c-development-board-power-consumption-table" title="Link to this heading"></a></h2>
+<p><strong>Linux system power consumption</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>No.</strong></p></th>
+<th class="head"><p><strong>Test Item</strong></p></th>
+<th class="head text-center"><p><strong>SoM Power (W)</strong></p></th>
+<th class="head text-center"><p>Development Board Power (including SoM) (W)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td><p>No-load starting peak power</p></td>
+<td class="text-center"><p>1.1</p></td>
+<td class="text-center"><p>1.7</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>2</p></td>
+<td><p>CPU with full load</p></td>
+<td class="text-center"><p>2.0</p></td>
+<td class="text-center"><p>2.7</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>3</p></td>
+<td><p>10.1-Inch LVDS+4 analog camera</p></td>
+<td class="text-center"><p>1.2</p></td>
+<td class="text-center"><p>4.6</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>4</p></td>
+<td><p>HDMI and LCD display</p></td>
+<td class="text-center"><p>1.2</p></td>
+<td class="text-center"><p>3.12</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note：</strong></p>
+<p><strong>1. Test conditions: The SoM configuration is 2G memory + 8GB eMMC, the 4G module is Quectel EC20, and the screen and 4 analog cameras are optional products of Forlinx. SoM power supply is 5V and development board is 12V;</strong><br />
+<strong>2. Power consumption is for reference only.</strong></p>
+</section>
+<section id="minimum-system-schematic">
+<h2>7. Minimum System Schematic<a class="headerlink" href="#minimum-system-schematic" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1721382600804_3bf5d882_90e6_4fe2_9f42_0f95e1c5a736.png" /></p>
+<p><img alt="Image" src="_images/1721382606527_366a8a26_05df_4ffa_9e91_b543c329d423.png" /><img alt="Image" src="_images/1721382610944_7fdc07d7_6fb5_4e02_af81_d7d1c7e15adf.png" /><img alt="Image" src="_images/1721382622511_1be8c821_2988_4196_ac15_36509b44156a.png" /><img alt="Image" src="_images/1721382615417_4248acad_4ace_44b1_a825_1a6ae5cdaaa8.png" /><img alt="Image" src="_images/1721382627466_2bdfe331_4dd9_411d_8b2b_762365c75320.png" /><img alt="Image" src="_images/1721382634467_5ba906c0_64b3_4b19_96f1_be78c69bc791.png" /><img alt="Image" src="_images/1721382638914_761cca14_2e4c_4656_8771_ba097b9267f9.png" /><img alt="Image" src="_images/1721382645009_3ebfa10d_858e_4c3d_bac7_994803d40ca2.png" /></p>
+<p>To meet the normal operation of the SoM, in addition to the power supply DCIN, the SOC-RESET key is also required to facilitate debugging; the BOOT configuration circuit is convenient for system programming and startup; the UART0 circuit is convenient for confirming whether the system works normally and for debugging; the OTG and TF Card circuits are convenient for system programming.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

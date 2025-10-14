@@ -19,6 +19,8 @@ HARDWARE
 .. toctree::
    :caption: HARDWARE
    :maxdepth: 2
+
+   OKT507-C_User_Hardware_Manual
    
 SOFTWARE
 ------------
