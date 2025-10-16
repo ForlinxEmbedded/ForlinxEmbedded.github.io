@@ -327,7 +327,7 @@ pre, code {
 @media (max-width: 768px) {
     #theme-switcher {
         top: auto !important;
-        bottom: 60px !important;
+        bottom: 48px !important;
         right: 16px !important;
     }
     #theme-switcher-btn {
