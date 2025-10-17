@@ -30,6 +30,7 @@ SOFTWARE
    :maxdepth: 2
 
    OKT507-C_Linux4_9_170_User_Manual
+   OKT507-C_Linux4_9_170_User_Compilation_Manual.md
 
 
 
