@@ -19,8 +19,8 @@ This software manual is applicable to the<font style="color:rgb(51, 51, 51);">OK
 |                        **Date**                        | **User Manual Version** | **<font style="color:rgb(51, 51, 51);">SoM Version</font>** | **<font style="color:rgb(51, 51, 51);">Carrier Board Version</font>** | **Revision History**                                         |
 | :----------------------------------------------------: | :---------------------: | :---------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------- |
 |                       05/06/2024                       |          V1.0           |                            V1.0                             |                          V1.1/V2.1                           | SDK2.0 User’s Manual Initial Version.                        |
-|                       19/06/2024                       |          V1.1           |                            V1.0                             |                          V1.1/V2.1                           | 1\. Replacing some pictures in the manual;     2. Correcting the layout of the manual. |
-|                       04/01/2025                       |          V1.2           |                            V1.0                             |                        V1.1/V2.1/V3.1                        | 1\. Adding support for rotation, scaling, and offset in video playback, as well as video playback on a specified screen in dual-screen display;                                                                          2. Adding support for audio chip NAU88C22. |
+|                       19/06/2024                       |          V1.1           |                            V1.0                             |                          V1.1/V2.1                           | 1\. Replacing some pictures in the manual;<br />2. Correcting the layout of the manual. |
+|                       04/01/2025                       |          V1.2           |                            V1.0                             |                        V1.1/V2.1/V3.1                        | 1. Adding support for rotation, scaling, and offset in video playback, as well as video playback on a specified screen in dual-screen display;<br /> 2. Adding support for audio chip NAU88C22. |
 | <font style="color:rgb(51, 51, 51);">06/08/2025</font> |          V1.3           |                            V1.0                             |                          V2.1/V3.1                           | Adding TP2855MIPI to 4 analog camera module adapter.         |
 
 ## Overview
@@ -1878,8 +1878,8 @@ get current brightness 125                                           //Backlight
 ### 4.22 Closing the Desktop
 
 ```plain
-root@forlinx~/$ /etc/init.d/S60Matrix_Browser stop                     //关闭桌面
-root@forlinx~/$ fbinit 0                                               //清屏操作
+root@forlinx~/$ /etc/init.d/S60Matrix_Browser stop                    //Close the desktop
+root@forlinx~/$ fbinit 0                                      //Screen clearing operation
 cleanning /dev/fb0 ...
 clean /dev/fb0 finish
 root@forlinx~/$ fbinit 1
