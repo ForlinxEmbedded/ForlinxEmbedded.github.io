@@ -19,7 +19,7 @@ This software manual is applicable to the<font style="color:rgb(0,0,0);">OKT507-
 | Date       | User Manual Version | Revision History                                             |
 | ---------- | :-----------------: | ------------------------------------------------------------ |
 | 05/06/2024 |        V1.0         | SDK2.0 User’s Compilation Manual Initial Version             |
-| 20240619   |        V1.1         | 1\. Replacing some pictures in the manual;<br /> 2. Correcting the layout of the manual. |
+| 20240619   |        V1.1         | 1\. Replacing some pictures in the manual;<br />2. Correcting the layout of the manual. |
 | 09/07/2025 |        V1.2         | Improving the source code and releasing part of the content. |
 
 ## Overview
