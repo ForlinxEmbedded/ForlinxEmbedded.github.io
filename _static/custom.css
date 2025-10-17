@@ -252,6 +252,33 @@ body {
 }
 
 
+/* ======================= 暗色主题适配：产品卡 ======================= */
+.theme-dark .product-card {
+  background-color: #1e1e1e !important; /* 柔和深灰背景 */
+  color: #e0e0e0 !important;            /* 浅灰文字，保持对比度 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6); /* 略深阴影 */
+}
+
+.theme-dark .product-title {
+  color: #f5f5f5 !important;  /* 保持标题清晰 */
+}
+
+.theme-dark .btn-group {
+  background-color: #2a2a2a !important; /* 按钮组区域略深背景 */
+  border-top: 1px solid #333 !important;
+}
+
+.theme-dark .btn {
+  box-shadow: 0 3px 8px rgba(255,255,255,0.05);
+}
+
+/* 图片在暗色模式下稍提亮 */
+.theme-dark .product-image:hover {
+  filter: brightness(1.15) drop-shadow(0 8px 15px rgba(255,255,255,0.1));
+}
+
+
+
 /* ================== banner 容器（基础） ================== */
 .banner {
   position: relative;
