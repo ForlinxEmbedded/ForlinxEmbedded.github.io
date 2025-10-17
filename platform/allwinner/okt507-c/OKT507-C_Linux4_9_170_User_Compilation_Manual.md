@@ -135,7 +135,7 @@ This chapter mainly explains the process of setting up the Ubuntu system and ins
 
 #### 3.1.1 Ubuntu Virtual Machine Setup
 
-Step 1: Open the VMware software and click \[File]/ \[New Virtual Machine]. Enter the following interface
+Step 1: Open the VMware software and click \[File]/ \[New Virtual Machine]. Enter the following interface.
 
 ![Image](./images/OKT507-C_Linux4_9_170_User_Compilation_Manual/1718937103373_51b62e84_9619_4d62_ab3c_745095a342af.png)
 
@@ -187,7 +187,7 @@ Set the disk size to 500G, select the disk provisioning format, and then click â
 
 ![Image](./images/OKT507-C_Linux4_9_170_User_Compilation_Manual/1718937107372_b533d0b8_2b2d_418f_818e_1b19835ba3e0.png)
 
-Specify the disk file, the default one here is fine
+Specify the disk file, the default one here is fine.
 
 ![Image](./images/OKT507-C_Linux4_9_170_User_Compilation_Manual/1718937107592_3a647f4d_fa1f_4ed1_a3b0_520e4b901984.png)
 
