@@ -10,6 +10,19 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This software manual is applicable to the<font style="color:rgb(51, 51, 51);">OKT507-C platform Linux4.9.170 operating system of Forlinx.</font>
+
+## Revision History
+
+|                        **Date**                        | **User Manual Version** | **<font style="color:rgb(51, 51, 51);">SoM Version</font>** | **<font style="color:rgb(51, 51, 51);">Carrier Board Version</font>** | **Revision History**                                         |
+| :----------------------------------------------------: | :---------------------: | :---------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------- |
+|                       05/06/2024                       |          V1.0           |                            V1.0                             |                          V1.1/V2.1                           | SDK2.0 User’s Manual Initial Version.                        |
+|                       19/06/2024                       |          V1.1           |                            V1.0                             |                          V1.1/V2.1                           | 1\. Replacing some pictures in the manual;     2. Correcting the layout of the manual. |
+|                       04/01/2025                       |          V1.2           |                            V1.0                             |                        V1.1/V2.1/V3.1                        | 1\. Adding support for rotation, scaling, and offset in video playback, as well as video playback on a specified screen in dual-screen display;                                                                          2. Adding support for audio chip NAU88C22. |
+| <font style="color:rgb(51, 51, 51);">06/08/2025</font> |          V1.3           |                            V1.0                             |                          V2.1/V3.1                           | Adding TP2855MIPI to 4 analog camera module adapter.         |
+
 ## Overview
 
 This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the your understanding, mainly for practical use. Please refer to “OKT507-C\_Linux4.9.170+Qt5.12 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction.
@@ -28,19 +41,6 @@ Chapter 5. is the multimedia test of the product, including the playback test of
 
 Chapter 6. is the image update of the product, which mainly describes the method of updating the image to the storage device. Users can choose the corresponding flashing mode according to the actual situation.
 
-## Application Scope
-
-This software manual is applicable to the<font style="color:rgb(51, 51, 51);">OKT507-C platform Linux4.9.170 operating system of Forlinx.</font>
-
-## Revision History
-
-|                        **Date**                        | **User Manual Version** | **<font style="color:rgb(51, 51, 51);">SoM Version</font>** | **<font style="color:rgb(51, 51, 51);">Carrier Board Version</font>** | **Revision History**                                         |
-| :----------------------------------------------------: | :---------------------: | :---------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------- |
-|                       05/06/2024                       |          V1.0           |                            V1.0                             |                          V1.1/V2.1                           | SDK2.0 User’s Manual Initial Version.                        |
-|                       19/06/2024                       |          V1.1           |                            V1.0                             |                          V1.1/V2.1                           | 1\. Replacing some pictures in the manual;     2. Correcting the layout of the manual. |
-|                       04/01/2025                       |          V1.2           |                            V1.0                             |                        V1.1/V2.1/V3.1                        | 1\. Adding support for rotation, scaling, and offset in video playback, as well as video playback on a specified screen in dual-screen display;                                                                          2. Adding support for audio chip NAU88C22. |
-| <font style="color:rgb(51, 51, 51);">06/08/2025</font> |          V1.3           |                            V1.0                             |                          V2.1/V3.1                           | Adding TP2855MIPI to 4 analog camera module adapter.         |
-
 ## 1\. OKT507 Development Board Description
 
 The OKT507-C development board adopts SoM+carrier board structure. It is designed and developed based on Allwinner T507 quad-core automotive-grade processor, Cortex with Cortex-A53 architecture, running at a frequency of 1.5GHz. It integrates a G31 GPU, 2GB DDR3L memory, and 8GB eMMC storage. The OKT507-C development board provides a rich set of functional interfaces, including dual Ethernet, CPU-integrated audio codec, IIS external audio codec, ADC, TF Card, LVDS, RGB, HDMI, WIFI, Bluetooth, 4G, MIPI\_CSI, DVP\_CSI, and other interfaces. It also reserves interfaces for installing 4-channel AHD camera to MIPI\_CSI module, and optional modules designed by Forlinx, facilitating the development and verification of AHD camera functions.
@@ -49,7 +49,7 @@ The OKT507-C development board adopts SoM+carrier board structure. It is designe
 
 **Note: The software manual no longer includes hardware parameter details. Prior to software development, please read the "OKT507-C\_Hardware User’s Manual" located at "Hardware Information\\User Manual" path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.**
 
-## 1.1 Linux 4.9.170 Software Resources
+### 1.1 Linux 4.9.170 Software Resources
 
 | **Device**           | **Location of driver source code in the kernel**             | **Device Name**                                          |
 | -------------------- | ------------------------------------------------------------ | -------------------------------------------------------- |
@@ -84,7 +84,7 @@ The OKT507-C development board adopts SoM+carrier board structure. It is designe
 
 **Description: The driver tp2815 adapts both the TP2855 MIPI to 4 analog camera module and the TP2855 MIPI to 4 analog camera module.**
 
-### 1.3 Flashing and Booth Configuration
+### 1.2 Flashing and Booth Configuration
 
 The OKT507 board is equipped with a BOOT DIP switch, which supports system flashing via TF card and USB OTG, and boot modes of eMMC and TF. The DIP switch is used to distinguish between these modes (The position of the DIP switch for eMMC boot is shown in the figure below). For the specific flashing operation process, please refer to the section "[System Flashing](https://forlinx-book.yuque.com/pxh4d1/ngtapw/zq4ceyo7z4iw07xi)".
 
