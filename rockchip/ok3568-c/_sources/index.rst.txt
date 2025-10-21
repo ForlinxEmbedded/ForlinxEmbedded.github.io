@@ -31,6 +31,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK3568-C_Linux5_10_160_User_Manual
+
 
 
 APPLICATION NOTE
