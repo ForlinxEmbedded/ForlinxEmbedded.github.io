@@ -1,105 +1,102 @@
-﻿# 00_OK3568-C_Linux5.10.160+QT5.15.8用户使用手册
+# Linux5.10.160\_User’s Manual
 
-# <font style="color:#000000;">免责声明</font>
-<font style="color:#000000;">本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。</font>
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
-<font style="color:#000000;">保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。 </font>
+## Copyright
 
-# <font style="color:#000000;">概述</font>
-<font style="color:#000000;">OK3568-C/C2C开发板目前提供了Linux操作系统的软件资料，本文为Linux软件手册，针对Linux5.10.160内核进行相关功能测试和说明，用户要选择与开发板中的镜像一致的资料进行操作。用户可通过本公司提供的网盘链接获取软件和硬件的文档及源码。资料下载网站为：</font>[**http://bbs.witech.com.cn/forum.php?mod=forumdisplay&fid=130**](http://bbs.witech.com.cn/forum.php?mod=forumdisplay&fid=130)**<font style="color:#000000;"> </font>**<font style="color:#000000;">，用户需要通过销售获取下载权限，方可自行下载。</font>
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-+ **注意：**
-+ <font style="color:#000000;">OK3568-C/C2C开发板出厂默认烧写的为Linux镜像，用户在进行操作前确认是否为Linux系统，若不是需要重新烧写Linux的镜像</font><font style="color:#000000;">，烧写方法参考“</font>**<font style="color:#000000;">烧</font>****<font style="color:#000000;">写</font>****<font style="color:#000000;">系统</font>**<font style="color:#000000;">”，烧录完成后可通过“</font>**<font style="color:#000000;">串</font>****<font style="color:#000000;">口登录</font>**<font style="color:#000000;">”中步骤查看内</font><font style="color:#000000;">核版本信息</font>
-+ <font style="color:#000000;">详细资料参看OK3568-C/C2C用户资料,本文中提到用户资料的所在目录以OK3568-C/C2C用户资料为根目录。</font>
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
 
-**<font style="color:rgb(38, 38, 38);">更新记录</font>**<font style="color:rgb(38, 38, 38);">  
-</font>
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-| **<font style="color:rgb(0, 0, 0);">日期</font>**<font style="color:rgb(38, 38, 38);">   </font> | **<font style="color:rgb(0, 0, 0);">手册版本</font>**<font style="color:rgb(38, 38, 38);">   </font> | **<font style="color:rgb(0, 0, 0);">更新内容</font>**<font style="color:rgb(38, 38, 38);">   </font> |
-| --- | --- | --- |
-| <font style="color:rgb(38, 38, 38);">20231124</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(38, 38, 38);">V1.0</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(38, 38, 38);">OK3568-C Linux5.10.160+QT5.15.8用户使用手册初版。</font><font style="color:rgb(38, 38, 38);">   </font> |
-| <font style="color:rgb(38, 38, 38);">20231211</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(38, 38, 38);">V1.1</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(38, 38, 38);">1</font><font style="color:rgb(38, 38, 38);">去掉FTP 的forlinx用户，文件系统暂时未添加。</font><font style="color:rgb(38, 38, 38);">   </font><font style="color:rgb(38, 38, 38);">2</font><font style="color:rgb(38, 38, 38);">视频硬编码，RGA 只支持0-4G，增加说明。</font><font style="color:rgb(38, 38, 38);">   </font> |
-| <font style="color:rgb(38, 38, 38);">20240515</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(38, 38, 38);">V2.0</font><font style="color:rgb(38, 38, 38);">   </font> | <font style="color:rgb(38, 38, 38);">1</font><font style="color:rgb(38, 38, 38);">新增FET3568-C2、OK3568-C2C配置。</font><font style="color:rgb(38, 38, 38);">   </font><font style="color:rgb(38, 38, 38);">2</font><font style="color:rgb(38, 38, 38);">修正手册勘误。</font><font style="color:rgb(38, 38, 38);">   </font> |
-| <font style="color:rgb(38, 38, 38);">20250704</font> | <font style="color:rgb(38, 38, 38);"> V2.1</font> | <font style="color:rgb(38, 38, 38);">4.2.22 休眠唤醒测试章节添加长鑫内存已将休眠唤醒功能去掉内容。</font> |
-| <font style="color:rgb(38, 38, 38);">20251015</font> | V2.2 | WIFI测试章节和快速启动章节添加注意项，启动必须接入天线，否则有可能影响启动 |
+## Application Scope
 
+This manual is mainly applicable to the Linux5.10.160 operating system on the Forlinx OK3568-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
 
-<font style="color:rgb(38, 38, 38);">  
-</font><font style="color:rgb(38, 38, 38);">  
-</font><font style="color:rgb(38, 38, 38);">  
-</font>
+## Revision History
 
-<font style="color:#000000;">  
-</font><font style="color:#000000;"> </font>
+| Date                                                         | User Manual Version                               | Revision History  </font>                                    |
+| ------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |
+| 24/11/2023                                                   | V1.0                                              | <font style="color:rgb(38, 38, 38);">OK3568-C Linux5.10.160+QT5.15.8\_User’s Manual Initial Version</font><font style="color:rgb(38, 38, 38);">  </font> |
+| <font style="color:rgb(38, 38, 38);">11/12/2023</font><font style="color:rgb(38, 38, 38);">   </font> | V1.1                                              | 1. Removing the Forlinx user from FTP, and the file system has not been added yet; <br />2. Video hardcoding; RGA only supports 0-4G; adding description. |
+| <font style="color:rgb(38, 38, 38);">15/05/2024</font><font style="color:rgb(38, 38, 38);">   </font> | V2.0                                              | <font style="color:rgb(38, 38, 38);">1.</font>  Adding FET3568-C2, OK3568-C2C configuration;<br />2. Correcting the errors in the manual. |
+| 04/07/2025                                                   | <font style="color:rgb(38, 38, 38);"> V2.1</font> | <font style="color:rgb(38, 38, 38);">4.2.22 休眠唤醒测试章节添加长鑫内存已将休眠唤醒功能去掉内容。</font> |
+| <font style="color:rgb(38, 38, 38);">15/10/2025</font>       | V2.2                                              | Adding notes in the WIFI test chapter and the quick startup chapter (The antenna must be connected for startup, otherwise the startup may be affected). |
 
+## <font style="color:#000000;">Overview</font>
 
+OK3568-C/C2C development board currently provides software documentation for the Linux operating system. This document is the Linux software manual, focusing on relevant functionality testing and explanations for the Linux5.10.160 kernel. Please choose the documentation that matches the image installed on the development board for the operations. You can access the documentation and source code of the software and hardware through the web link provided by Forlinx. Please ask your sales representative for the download link.
 
-# 01_OK3568开发板介绍
+**Note:**
 
-## 1.1 OK3568-C/C2C开发板简介
-<font style="color:#000000;">RK3568 是基于ARM64架构的低功耗高性能处理器，它包括4 核Cortex-A55以及独立的 NEON 协处理器和神经网络加上处理器NPU，可应用于计算机、手机、个人移动互联网，数字多媒体设备。</font>
++ **The OK3568 - C/C2C development board is pre - flashed with a Linux image by default at the factory. Before operating, please confirm whether the system is Linux. If not, please re - flash the Linux image. Refer to the "System Flashing" section for the flashing method. After the flashing is completed, you can check the kernel version information through the steps in the "Serial Port Login" section;**
+  
++ **For detailed information, refer to the OK3568 - C/C2C user documentation. In this document, the directory of the user documentation mentioned is based on the root directory of the OK3568 - C/C2C user documentation.** 
 
-FET3568-C和FET3568-C2核心板引脚定义相同，可共用一块底板，当FET3568-C与OK3568-C底板组合时，开发板名称为OK3568-C开发板；当FET3568-C2与OK3568-C底板组合时，则开发板名称为OK3568-C2C开发板。
+## 1. OK3568-C/C2C Development Board Description
 
-<font style="color:#000000;">飞凌OK3568-C/C2C开发平台核心板和底板采用接插件的连接方式，主要接口如下图所示：</font>
+RK3568 is a low-power high-performance processor based on ARM64 architecture. It includes 4-core Cortex-A55 and independent NEON co-processor and neural network plus processor NPU. It can be applied to computers, mobile phones, personal mobile Internet and digital multimedia devices.
+
+FET3568-C and FET3568-C2 SoM have the same pin definition and can share a common carrier board. When FET3568-C is combined with the OK3568-C carrier board, the development board name is OK3568-C development board; when FET3568-C2 is combined with the OK3568-C carrier board, the development board name is OK3568-C2C development board.
+
+The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
 
-OK3568-C底板接口正面视图
+Front
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
 
-OK3568-C底板接口反面视图
+Back
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">📚</font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font>**请阅读：**
+**Note:**
 
-	本软件手册中不再对硬件参数进行叙述，在参考本手册进行软件开发前请阅读“硬件资料\用户手册”路径下的“OK3568-C&OK3568-C2C_硬件手册”，以了解产品命名规则和您所使用产品的硬件配置信息，这样有助于您对本产品的使用。
+**This software manual does not describe the hardware parameters. Before referring to this manual for software development, please read "OK3568-C & OK3568-C2C _ Hardware Manual" under the path of "Hardware Data \ User Manual" to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.**
 
-## 1.2 Linux 5.10.160系统软件资源特性
-| **设备** | **驱动程序源代码在内核中的位置** | **设备名** |
-| --- | --- | --- |
-| LCD 背光驱动 | drivers/video/backlight/pwm_bl.c | /sys/class/backlight |
-| USB接口U盘 | drivers/usb/storage/ |  |
-| USB鼠标 | drivers/hid/usbhid/ | /dev/input/mice |
-| 以太网 | drivers/net/ethernet/stmicro/stmmac |  |
-| SD/micro TF卡驱动 | drivers/mmc/host/dw_mmc-rockchip.c | /dev/block/mmcblk1pX |
-| EMMC驱动 | drivers/mmc/host/dw_mmc-rockchip.c | /dev/block/mmcblk2pX |
-| OV13850 | drivers/media/i2c/ov13850.c | /dev/videoX |
-| LCD 控制器 | drivers/gpu/drm/rockchip/rockchip_drm_vop.c |  |
-| MIPI CSI | drivers/phy/rockchip/phy-rockchip-mipi-rx.c |  |
-| MIPI DSI | drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c |  |
-| LCD触摸驱动 | drivers/input/touchscreen/gt9xx/*<br/>drivers/input/touchscreen/edt-ft5x06.c | /dev/input/eventX |
-| RTC实时时钟驱动 | drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c | /dev/rtc0 |
-| 串口 | drivers/tty/serial/8250/8250_dw.c | /dev/ttySX |
-| 按键驱动 | drivers/input/keyboard/adc-keys.c | /dev/input/eventX |
-| LED | drivers/leds/leds-gpio.c |  |
-| I2S | sound/soc/rockchip/rockchip_i2s.c |  |
-| 音频驱动 | sound/soc/codecs/rk817_codec.c | /dev/snd/ |
-| PMIC | drivers/mfd/rk808.c |  |
-| PCIE | drivers/pci/controller/pcie-rockchip.c |  |
-| 看门狗 | drivers/watchdog/dw_wdt.c |  |
-| SPI | drivers/spi/spi-rockchip.c |  |
+### 1.1 Linux 5.10.160 System Software Resources Features
 
+| **Device**                 | **Location of driver source code in the kernel**             | **Device Name**      |
+| -------------------------- | ------------------------------------------------------------ | -------------------- |
+| LCD Backlight Driver       | drivers/video/backlight/pwm\_bl.c                            | /sys/class/backlight |
+| USB Port                   | drivers/usb/storage/                                         |                      |
+| USB Mouse                  | drivers/hid/usbhid/                                          | /dev/input/mice      |
+| Ethernet                   | drivers/net/ethernet/stmicro/stmmac                          |                      |
+| SD/micro TF card driver    | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/block/mmcblk1pX |
+| EMMC Driver                | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/block/mmcblk2pX |
+| OV13850                    | drivers/media/i2c/ov13850.c                                  | /dev/videoX          |
+| LCD Controller             | drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c                |                      |
+| MIPI CSI                   | drivers/phy/rockchip/phy-rockchip-mipi-rx.c                  |                      |
+| MIPI DSI                   | drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c           |                      |
+| LCD Touch Driver           | drivers/input/touchscreen/gt9xx/\*<br/>drivers/input/touchscreen/edt-ft5x06.c | /dev/input/eventX    |
+| RTC Real Time Clock Driver | drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c       | /dev/rtc0            |
+| Serial Port                | drivers/tty/serial/8250/8250\_dw.c                           | /dev/ttySX           |
+| Key Driver                 | drivers/input/keyboard/adc-keys.c                            | /dev/input/eventX    |
+| LED                        | drivers/leds/leds-gpio.c                                     |                      |
+| I2S                        | sound/soc/rockchip/rockchip\_i2s.c                           |                      |
+| Audio Driver               | sound/soc/codecs/rk817\_codec.c                              | /dev/snd/            |
+| PMIC                       | drivers/mfd/rk808.c                                          |                      |
+| PCIE                       | drivers/pci/controller/pcie-rockchip.c                       |                      |
+| Watchdog                   | drivers/watchdog/dw\_wdt.c                                   |                      |
+| SPI                        | drivers/spi/spi-rockchip.c                                   |                      |
 
+### 1.2 EMMC Memory Partition Table
 
+The following table shows the eMMC memory partition information for the Linux operating system (calculated with a block size of 512bit):
 
-## 1.3 eMMC存储器分区表
-下面表格是Linux操作系统的eMMC存储器分区信息（计算时一个块大小为512bit）：
+| **Partition Index** | **Name** | **Offset / block** | **Size/block** | **content**       |
+| ------------------- | -------- | ------------------ | -------------- | ----------------- |
+| N/A                 | loader   | 0x00000000         | 0x00003fc0     | MiniLoaderAll.bin |
+| 1                   | uboot    | 0x00004000         | 0x00002000     | uboot.img         |
+| 2                   | misc     | 0x00006000         | 0x00002000     | misc.img          |
+| 3                   | boot     | 0x00008000         | 0x00020000     | boot.img          |
+| 4                   | recovery | 0x00028000         | 0x00040000     | recovery.img      |
+| 5                   | backup   | 0x00068000         | 0x00010000     | backup.img        |
+| 6                   | rootfs   | 0x00078000         | 0x00c00000     | rootfs.img        |
+| 7                   | oem      | 0x00c78000         | 0x00040000     | oem.img           |
+| 8                   | userdata | 0x00cb8000         | the all left   | userdata.img      |
 
-| **分区索引** | **名称** | **偏移/block** | **大小/block** | **内容** |
-| --- | --- | --- | --- | --- |
-| N/A | loader | 0x00000000 | 0x00003fc0 | MiniLoaderAll.bin |
-| 1 | uboot | 0x00004000 | 0x00002000 | uboot.img |
-| 2 | misc | 0x00006000 | 0x00002000 | misc.img |
-| 3 | boot | 0x00008000 | 0x00020000 | boot.img |
-| 4 | recovery | 0x00028000 | 0x00040000 | recovery.img |
-| 5 | backup | 0x00068000 | 0x00010000 | backup.img |
-| 6 | rootfs | 0x00078000 | 0x00c00000 | rootfs.img |
-| 7 | oem | 0x00c78000 | 0x00040000 | oem.img |
-| 8 | userdata | 0x00cb8000 | 剩余全部 | userdata.img |
-
-
-可在开发板中使用fdisk -l命令查看分区大小：
+The partition size can be viewed on the development board using the fdisk -l command:
 
 ```markdown
 root@OK3568-buildroot:/# fdisk –l
@@ -122,112 +119,119 @@ Number  Start (sector)    End (sector)  Size Name
      8        13336576        15269854  943M userdata
 ```
 
+## 2\. Fast Startup
 
+### 2.1 Preparation Before Startup
 
++ 12V2A or 12V3A DC Power Cable
++ Debugging serial cable
 
-
-
-
-# 02_快速开机启动
-
-## 2.1 开机前准备
-+ 12V2A或者12V3A DC电源线
-+ 调试串口线
-
-⚠️ **注意：开机务必安装好Wifi天线**
+**Note: Be sure to install the Wifi antenna when startup.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278320996_e105caf3_f44c_4236_9713_8a433603e88c.png)
 
+### 2.2 Debugging Serial Driver Installation
 
+The debugging serial port of the OK3568-C - C platform uses a Type - C interface. There is an on - board USB to UART chip, so there's no need to purchase a USB to serial port debugging tool. It is extremely simple and convenient to use.
 
-## 2.2 调试串口驱动安装
-OK3568-C平台调试串口使用的是Type-C接口，板载USB转UART芯片，无需客户购买USB转串口调试工具，使用极其简单方便。
+To install the driver, please use the driver package CP210x \_ VCP \_ Windows \_ XP \_ Vista. Zip provided in the \\ Linux \\ Tools \\ directory of the user profile.
 
-安装驱动请使用用户资料\Linux\工具\目录下提供的驱动包CP210x_VCP_Windows_XP_Vista.zip进行安装。
+Select to run CP210xVCPInstaller \_ x86.exe for 32-bit operating system and CP210xVCPInstaller \_ x64.exe for 64-bit operating system after decompression.
 
-解压完成后32位操作系统选择运行CP210xVCPInstaller_x86.exe，64位操作系统选择运行CP210xVCPInstaller_x64.exe即可。
+### 2.3 Serial Port Login
 
-## 2.3 串口登录
-### 2.3.1 串口连接设置
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">📚</font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font>**说明：**
+#### 2.3.1 Serial Port Connection Settings
 
-+ **串口****终端登陆用户：串口终端自动登录root用户，密码root。**
-+ **串口设置：波特率115200、数据位8、停止位1、无校验位、无流控制。**
-+ **硬件需求：需要Type-C线连接PC和开发板**
-+ **软件需求：PC端Windows系统需要安装超级终端软件，超级终端软件有多种，可自行使用自己熟悉的串口终端软件；**
+**Description:**
 
-以下我们以putty终端软件为例介绍串口的登录方式：
++ **Serial port terminal login user: serial port terminal automatically logs in (user: root, password root);**
++ **Serial port settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity bit, no flow control;**
++ **Hardware Requirements: Type-C cable required to connect PC and development boards;**
++ **Software requirements: PC Windows system needs to install the super terminal software. Because the terminal software has many types, users can choose their familiar one.**
 
-**步骤1：**首先需要确认连接电脑的串口端口号，从设备管理器中查看串口端口号，以电脑实际识别的端口号为准。
+In the following, we take the putty terminal software as an example to introduce the serial port login method:
+
+Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321359_fa8fcd47_98f8_4f39_a06e_20c985639e64.png)
 
-**步骤2：**打开putty并设置，serial line根据使用的电脑COM口设置，波特率115200。
+Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321563_33878f07_57ca_425b_9f07_0f6ad5325c03.png)
 
-**步骤3：**上述设置完成后可以在Saved Sessions输入电脑使用的COM口，下图以COM24为例，将设置保存，之后再打开串口时，直接点击保存的端口号即可。
+Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321755_7f70b87a_57c6_4aab_ae10_4e27e83acf4d.png)
 
-### 2.3.2 串口登录
-PC端终端软件设置好后，通过串口线连接PC机和开发板，接好电源后开机上电。可以通过终端软件看到启动信息。
+#### 2.3.2 Serial Login
 
-启动信息如下表示启动成功，可以输入回车新建命令行：
+After the terminal software on the PC side is set, connect the PC and the development board through the serial port cable, and power on after connecting the power supply. The startup information can be seen through the terminal software.
+
+The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png)
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：**如果是[root@buildroot]#则是第一次烧写完成后第一次重启，在写入一些信息，这时不要进行操作，等它自行再次重启才算是烧写完成。[root@OK3568-buildroot]#才是正常状态。可通过uboot启动信息进行查看。
+**Note: If the prompt shows \[root@buildroot]#, it indicates that this is the first reboot after the initial flashing is completed, and the system is currently writing some information. During this process, please do not perform any operations. Only when the system reboots automatically again does it mean the flashing is finished. \[root@OK3568-buildroot]#That's the normal state. This can be viewed through the uboot boot information.**
 
-第一次启动，recovery 模式：
+First boot, recovery mode:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322192_c1627636_d731_4ba9_9f9c_95a77b1fa479.png)
 
-正常启动：
+Normal boot:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322394_e0b77e8e_c261_48a1_9048_2aa975640069.png)
 
-## 2.4 网络登录
-OK3568除了使用调试串口登录以外，支持SSH网络方式登录开发板，同时支持FTP文件传输。下面**<font style="color:#000000;">以开发板IP为172.16.0.76为例</font>**，介绍网络工具的使用。修改网络IP可通过ifconfig eth0 172.16.0.76实现，然后将开发板和PC接在同一交换机上或者直接通过网线直连。
+### 2.4 Network Login
 
-### 2.4.1 SSH
-OK3568开发板支持 SSH 服务并启动时已自动开启，设置好 IP 地址后就可以作为一台 SSH 服务器。可以利用SSH登录开发板进行开发调试，也可用scp进行文件传输。
+In addition to logging in via the debugging serial port, the OK3568 supports SSH network login to the development board and also supports FTP file transfer. The following example uses an IP address of 172.16.0.76 for the development board to illustrate the use of network tools. To modify the network IP, use the command "ifconfig eth0 172.16.0.76". The development board and PC should be connected to the same switch or directly connected via an Ethernet cable.
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意**：登录时根据提示输入**用户名root密码root**。若想通过SSH登录root用户，则需要先给root用户设置登陆密码，先使用串口登录开发板，使用passwd “用户名”来更改对应用户的登陆密码。会有密码强弱提示，可以无视，对密码修改没有影响。
+#### 2.4.1 SSH
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意**：以下以开发板ip 172.16.0.76进行测试，请根据实际情况进行修改，在调试串口终端使用ifconfig eth0 172.16.0.76进行更改
+OK3568 development board supports SSH service and automatically starts it during boot up. After setting the IP address, the board can be used as an SSH server. You can log in to the development board via SSH for development and debugging, as well as use scp for file transfer.
+
+**Note:** 
+
+- **When logging in, enter the root username and the root password as prompted. If you wish to log in as the root user via SSH, you must first set a login password for the root user. To do this, log in to the development board via the serial port and use the passwd "username" command to change the login password for the specified user. There will be a password strength prompt, which can be ignored and has no effect on password changes;**
+
+- **The following test is based on the development board IP address 172.16.0.76. Please modify it according to your actual situation. Use the command “ifconfig eth0 172.16.0.76” on the debugging serial terminal to make the change.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322647_f6dd874b_e614_4e71_b207_c4a903394ef8.png)
 
-	在打开putty软件进行如下设置（IP以实际为准）：
+Open the putty software and make the following settings (the actual IP shall prevail):
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322854_2cc112b3_b2c3_47a4_9ba3_4f72e0948f19.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png)
 
-### 2.4.2 FTP
-OK3568开发板支持 FTP 服务并启动时已自动开启，设置好 IP 地址后就可以作为一台 FTP 服务器。下面介绍如何利用FTP工具进行文件传输。
+#### 2.4.2 FTP
 
-+ <font style="color:#000000;">路径：OK3568-C（Linux）用户资料\工具\FileZilla*</font>
+OK3568 development board supports FTP service and automatically starts when powered on. Once you’ve set the IP address, it can be used as an FTP server. The following describes how to utilize the FTP tool for file transfer.
 
-		在 windows上安装好filezilla工具，并按照下图所示步骤进行设置。
+Path: OK3568-C (Linux) user profile\\tool\\FileZilla\*
 
-+ **注意**：此功能需要给开发板连接网线，主机IP设置和客户端处于同一网段，确保主机与客户端在同一局域网内，**用户名root，密码root,**登录成功后便可以对文件系统任意位置上传下载删除。一般情况不建议使用root登录ftp，请根据实际情况设置用户登录。
-+ **注意**：以下以开发板ip 172.16.0.76进行测试，请根据实际情况进行修改，在调试串口终端使用ifconfig eth0 172.16.0.76进行更改
+Install the file Zilla tool on windows and set it up as shown in the following figure.
+
+**Note: **
+
+- **This function requires the development board to be connected to the network cable; the host IP is set in the same network segment as the client, ensuring that the host and the client are in the same LAN; username root, password root; after successful login, you can upload, download and delete files anywhere in the file system. In general, it is not recommended to use root to log in to FTP. Please set the user login according to the actual situation;**
+
+- **The following test is based on the development board IP address 172.16.0.76. Please modify it according to your actual situation. Use the command 'ifconfig eth0 172.16.0.76' on the debugging serial terminal to make the change.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
-## 2.5屏幕切换
-OK3568支持LVDS/LCD、MIPI DSI/eDP、HDMI等多种屏幕接口，同时可以进行三个屏幕的同显和异显。目前屏幕切换控制方式有三种：uboot菜单动态控制；内核设备树指定，qt应用ubootmenu控制。
+### 2.5 Screen Switching
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：屏幕切换涉及到触摸切换，出厂镜像默认LVDS、MIPI、HDMI三个接口都输出视频画面，默认触摸位于LVDS屏，使用MIPI触摸请在选屏阶段将LVDS屏幕输出关闭。
+The OK3568 supports multiple screen interfaces such as LVDS/LCD, MIPI DSI/eDP, and HDMI, enabling the same or different content to be displayed on three screens simultaneously. Currently, there are three ways to control screen switching: first, dynamic control via the U-Boot menu; second, specification in the kernel device tree; third, control using the Qt application Ubootmenu.
 
-### 2.5.1 uboot菜单动态控制
-该方式在现有已支持屏幕的基础上不需要重新编译和烧写，即可切换屏幕。
+**Note: Screen switching involves touch - screen switching. In the factory - installed image, the LVDS, MIPI, and HDMI interfaces all output video images by default. The touch function is set to the LVDS screen by default. If you want to use the MIPI touch screen, please turn off the LVDS screen output during the screen selection stage.**
 
-在uboot自启动过程中串口终端按下ctrl+c，即可弹出控制选项：
+#### 2.5.1 Dynamic Control of Uboot Menu
+
+This method switches screens without recompiling and flashing in existing supported screens.
+
+Press ctrl + C at the serial port terminal in the uboot self-starting process to pop up the control options:
 
 ```plain
 Hit key to stop autoboot('CTRL+C'):  0
@@ -238,7 +242,7 @@ Hit key to stop autoboot('CTRL+C'):  0
 ---------------------------------------------
 ```
 
-终端输入2，进入屏幕控制子菜单：
+Enter 2 at the terminal to access the Screen Control sub-menu:
 
 ```plain
 ---------------------------------------------
@@ -251,17 +255,16 @@ Select  display
 ---------------------------------------------
 ```
 
-其中可以选择HDMI、MIPI-DSI、eDP、Lvds四种类型的屏幕。对选项按下可切换是否开启，MIPI-DSI和eDP在选项2处切换选择。选项参数信息表如下：
+You can choose from four types of screens: HDMI, MIPI-DSI, eDP, and Lvds. Press the options to switch whether to turn them on. You can switch and select between MIPI - DSI and eDP at Option 2. The option parameter information table is as follows:
 
-| **终端输入** | **屏幕选择参数** | **参数对应含义** |
-| --- | --- | --- |
-| 0 | Exit | 返回上一级菜单 |
-| 1 | hdmi display off | 打开HDMI屏幕信号输出 |
-| 2 | mipi_edp display off | 打开MIPI-DSI/eDP屏幕信号输出 |
-| 3 | lvds_rgb display off | 打开LVDS屏幕信号输出 |
+| **Terminal input** | **Screen selection parameters ** | **Corresponding meanings for the parameters** |
+| ------------------ | -------------------------------- | --------------------------------------------- |
+| 0                  | Exit                             | Return to the previous menu                   |
+| 1                  | hdmi display off                 | Turn on HDMI screen signal output             |
+| 2                  | mipi\_edp display off            | Turn on MIPI-DSI/eDP screen signal output     |
+| 3                  | lvds\_rgb display off            | Turn on LVDS screen signal output             |
 
-
-以下以打开eDP屏幕为例，按下数字2，打印信息变化：
+The following is an example of opening the eDP screen, pressing the number 2, and printing the information change:
 
 ```plain
 ---------------------------------------------
@@ -274,7 +277,7 @@ Select  display
 ---------------------------------------------
 ```
 
-可见上述加粗字体切换为mipi屏幕信号输出，再次按下数字2，打印信息变化：
+It can be seen that the above bold font is switched to mipi screen signal output. Press the number 2 again, and the print information changes:
 
 ```plain
 ---------------------------------------------
@@ -287,7 +290,7 @@ Select  display
 ---------------------------------------------
 ```
 
-可见上述加粗字体切换为eDP屏幕信号输出，选择完成后，按照菜单提示选项退出进行重启，按下数字0打印信息变化：
+It can be seen that the above bold font is switched to eDP screen signal output. After the selection is completed, exit according to the menu prompt option to restart, and press the number 0 to print the information change:
 
 ```plain
 ---------------------------------------------
@@ -297,395 +300,389 @@ Select  display
 ---------------------------------------------
 ```
 
-按下数字1，执行重启操作，uboot阶段操作的屏幕选项重启后生效。
+Press the number 1 to perform the reboot operation. The screen option for the uboot phase operation takes effect after the reboot.
 
-屏幕选择完成后也可按下开发板复位键重新启动，自启动后生效。
+After the screen selection is completed, you can also press the reset key of the development board to restart, and it will take effect after starting.
 
-### 2.5.2 内核设备树指定
-<font style="color:#000000;">该方式不需要连接串口终端，系统镜像默认为所期望的配置选择，适合量产</font>。但需要手工修改设备树，重新生成一次系统镜像。
+#### 2.5.2 Kernel Device Tree Specification
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：<font style="color:#000000;">该方式优先级高于uboot屏幕选择，在设备树修改后，uboot的选择不会生效</font>。
+This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again
 
-设备树路径为：kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi 
+**Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.**
 
-内核源码中，打开设备dtsi文件，找到如下节点：
+The device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi
+
+In the kernel source code, open the device dtsi file and find the following node:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323616_495a2d74_afea_4779_9f50_cd95a9a2031e.png)
 
-该节点默认disabled状态，需要改为okay使能节点。根据屏幕需求更改。
+The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
-举例:
+Examples:
 
-将hdmi、lvds屏幕关闭，属性更改为”off”,使用edp将对应属性修改为edp即可。
+Close the hdmi, lvds screens, change the attribute to "off", and use edp to change the corresponding attribute to edp.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323856_10f207f4_f416_4e2b_ac95_c93d21937917.png)
 
-保存后，重新编译生成镜像。
+After saving, recompile to generate the image.
 
-对于MIPI屏幕种类多，可能现有时序和控制字不能满足要求，需要自行更改dsi节点下的display-timings。但任何和显示相关的节点status属性，均按照默认处理，程序会自动控制。
+There are many types of MIPI screens, and the existing timing and control words may not meet the requirements, so it is necessary to change the display-timings under the dsi node. However, any node status attribute related to display is handled by default, and the program will automatically control it.
 
-## 2.6系统关闭
-一般情况下直接关闭电源即可，如果有数据存储、功能使用等操作，操作过程中不要随意断电，以防出现文件不可逆损坏，只能重新烧写固件。未确保数据完全写入，可输入 sync 命令完成数据同步后再关闭电源。
+### 2.6 System Shutdown
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> </font><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：用户依据核心板设计的产品，若在使用中存在意外掉电导致系统异常关闭的情景，可在设计中加入掉电保护等措施。
+In general, you can turn off the power directly, but avoid doing so during important operations like data storage or usage to prevent irreversible file damage. Damaged files may require firmware rewrite. To ensure that data is not completely written, enter the sync command to complete data synchronization before turning off the power.
 
+**Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.**
 
+## 3. OK3568 Platform Function Test
 
+OK3568 platform has perfect support for Qt, especially for multimedia related classes, such as video decoding and playback, camera, video recording, etc., which can be combined with hardware codec and OpenGL to achieve the best results.
 
+### 3.1 Interface Function Test
 
+#### 3.1.1 Introduction to Interface Functions
 
-
-
-
-# 03_OK3568平台功能测试
-
-OK3568平台对Qt的支持非常完善，特别是多媒体相关的类，例如视频解码播放、摄像头、视频录制等，均能结合硬件编解码以及OpenGL达到最佳效果。
-
-## 3.1界面功能测试
-### 3.1.1 界面功能简介
-开发板启动后桌面显示如下：
+The desktop is displayed as follows after the development board booting:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png)
 
-### 3.1.2 触摸功能简介
-开发板连接LVDS和MIPI屏幕可以正常显示和触摸，如果需要关闭一个显示触摸，请参考手册2.5.1 uboot菜单动态控制章节，将对应的显示输出关闭掉。
+#### 3.1.2 Introduction to Touch Functions
 
+The LVDS and MIPI screen connected to the development board can be displayed and touched normally. If it is necessary to turn off a display touch, please refer to the manual 2.5.1 Uboot Menu Dynamic Control to turn off the corresponding display output.
 
+#### 3.1.3 Hardware Decoding Experience
 
-### 3.1.3 硬件解码体验
-	点击桌面图标进入打开视频播放器video player。
+Click the desktop icon to open the video player.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278339578_041f1a51_7337_42e4_ab0c_8556cd86437f.png)
 
-应用界面
+Application Interfaces
 
-### 3.1.4 Camera测试
-点击桌面图标进入打开视频播放器qcamera，该测试程序支持USB Camera也支持OV13850。插入USB Camera，这里以RMONCAM 720P为例。
+#### 3.1.4 Camera Test
 
-+ 注意：该应用需要连接摄像头后再打开。
+Click the desktop icon to open the video player qcamera. The test program supports USB Camera and OV13850. Plug in a USB Camera, using the RMONCAM 720P as an example.
+
+**Note: The app needs to be connected to the camera before opening.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340062_4cee86c6_56eb_4b90_9157_7277150a77ec.jpeg)
 
-应用界面
+Application Interfaces
 
-打开应用后点击UVC Carmera，即可启动摄像头预览。
+After opening the application, click UVC Camera to start the camera preview.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1722222638366_57fd39ef_cb1c_44bf_8d6d_3a5f4e4f575f.png)
 
-Video Mode模式下可以点击record按钮进行录像操作，点击recording按钮即可停止录像，生成的视频文件位于/userdata/VIDEO0.MOV
+In Video Mode, you can click the record button to record, and click the recording button to stop recording. The generated video file is located in /userdata/VIDEO0.MOV.
 
-可以使用gst-play-1.0 /userdata/VIDEO0.mov 命令进行播放测试。
+Playback tests can be performed using the gst-play-1.0/userdata/VIDEO0.mov command.
 
-点击Video Mode按钮，可以切换到拍照模式，点击Capture可以进行拍照操作。
+Click the Video Mode button to switch to the photo mode, and click Capture to take a photo.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png)
 
-生成的文件位在/userdata路径下：
+The generated file is located in the/userdata path:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
 
-对于OV13850 等raw sensor，每一个sensor对应5个设备节点：
+For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
 
-Mainpath,指 Rockchip ISP的一个输出节点，可输出全分辨率图像，一般用来拍照，抓取 Raw 图。
+Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.
 
-Self Path,指 Rockchip ISP的一个输出节点，最高只能输出1080p分辨率，一般用作预览。
+Self Path, refers to an output node of Rockchip ISP, which can only output up to 1080p resolution and is usually used for preview.
 
-Statistics，用于3A 统计。
+Statistics for 3A statistics.
 
-Input-params，用于3A 参数设置。
+Input-params for 3A parameter setting.
 
-### 3.1.5 OpenGL测试
-OK3568支持OpenGL ES3.2，点击桌面图标进行OpenGL测试。
+#### 3.1.5 OpenGL Test
+
+OK3568 supports OpenGL ES3.2; click the desktop icon for OpenGL test.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341344_c3dbc479_6fe5_4eef_ab2d_734ac48de168.png)
 
-应用界面
+Application Interfaces
 
-### 3.1.6 播放音乐测试
-“musicplayer”是一款简单的音频测试应用，可用来测试声卡功能是否正常，也可用来作为一款简单的音频播放器。
+#### 3.1.6 Music Play Test
+
+“music player" is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341744_96af593c_422a_4247_8683_76aa15092b2d.jpeg)
 
-应用界面
+Application Interfaces
 
-点击左下角的按钮，选择测试音频 /userdata/media/test.mp3
+Click the button in the lower left corner and select test audio /userdata/media/test.mp3
 
-+ 注意：默认声卡输出为rk809输出，若要使用HDMI输出请在串口使用命令：
+**Note: The default sound card output is rk809. If using HDMI output, please use the command on the serial port:**
 
 ```markdown
 root@OK3568-buildroot:/# gst-play-1.0/userdata/media/test.mp3 --audiosink="alsasink device=hw:1,0"
 ```
 
-### 3.1.7 录音测试
-“Audiorecorder”是录音测试应用，可用来测试声卡录音功能是否正常：
+#### 3.1.7 Record Test
+
+The Audio recorder "is a recording test application that can be used to test whether the recording function of the sound card is normal:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342179_1c23083c_05e4_4330_b895_61fb77073d28.png)
 
-应用界面
+Application Interfaces
 
-	点击下拉菜单选择输入设备和音频格式、音频通道，点击output file dir文本框输入录音文件的输出路径及名称，File Container选择audio/ogg， Channels选择通道数1，其余设置默认即可，点击Record开始录音。录制的音频文件可以使用gst-play-1.0进行播放。
+Click the drop-down menu to select the input device, audio format and audio channel, click the output file dir text box to input the output path and name of the recording file, select audio/ogg for File Container, select channel number 1 for Channels, and set the rest by default. Click Record to start recording. Recorded audio files can be played using gst-play-1.0.  Click Exit to exit the test.
 
-	点击Exit可退出本测试。
+#### 3.1.8 4G/5G Test
 
-### 3.1.8 4G/5G测试
-+ 注意：此测试需要插入可上网的SIM卡，具体操作描述可以参考本手册的命令行功能测试 5G章节。
+This test requires an Internet-capable SIM card, a description of which can be found in the Command Line Functional Tests 5G section of this manual.
 
-“4G/5G”测试程序用于测试OK3568外置5G模块(RM500U)。测试前请将开发板断电，接入5G模块，插入SIM卡，启动开发板打开测试应用。
+The "4G/5G" test program is used to test the OK3568 external 5G module (RM500U). Before testing, please power off the development board, access the 5G module, insert the SIM card, start the development board, and open the test application.
 
-同时该测试支持4G模组（EM05-CE），在断电情况下插入4G模组和SIM卡，上电系统启动后打开测试应用。
+Meanwhile, the test supports the 4G module (EM05-CE), inserts the 4G module and SIM card in the case of power failure, and opens the test application after powering up the system to start.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342568_ac49bc27_e9a0_4a3e_9d9d_9531859e9dc1.jpeg)
 
-应用界面
+Application Interfaces
 
-	点击connect按钮，程序将自动进入拨号流程并获取IP设置DNS等，耐心等待几秒钟后，点击ping按钮进行测试。
+Click the connect button, the program will automatically enter the dialing process and get the IP settings, DNS, etc. Wait patiently for a few seconds, and then click the ping button to test.
 
-### 3.1.9 WIFI测试
-“WIFI”是一款配置wifi的工具，OK3568平台默认板载AW-CM358模块。wifi模块在系统中会以mlan结点的形式存在，此测试对应mlan0（多设备时使用其它对应节点）：
+#### 3.1.9 WIFI Test
 
-**⚠️**** 注意：开机务必安装好Wifi天线**
+"WIFI" is a tool to configure wifi. The OK3568 platform has the AW-CM358 module on board by default. The wifi module exists in the system as a mlan node, and this test corresponds to mlan0 (other corresponding nodes are used for multiple devices):
+
+**Note: Be sure to install the Wifi antenna when startup.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342968_2427f6a6_d21b_4a30_a759_482fda9f802f.jpeg)
 
-应用界面
+Application Interfaces
 
-选中mlan0，在SSID栏中输入需要使用wifi连接的路由器名称，PAWD栏输入路由器密码，点击connect，即可通过wifi连接路由器，在IP栏中输入有效ip后，点击ping，可查看当前使用wifi网络是否畅通。
+Select mlan0, enter the router name (the one connected to wifi) in the SSID column, enter the router password in the PAWD column, click CONNECT to the router via wifi, enter a valid ip in the IP column, and then click ping to see if the currently used wifi network is smooth.
 
-默认情况下OK3568底板焊接了AW-CM358模块，只有mlan0节点，以mlan0为例演示wifi工具的使用。
+By default, the AW-CM358 module is soldered to the OK3568 backplane, and only the mlan0 node is soldered. Take mlan0 as an example to demonstrate the use of the wifi tool.
 
-打开Wifi测试应用，输入正确的网络名称及密码，点击connect，等待5秒后点击status查看连接窗台。
+Open the Wifi test app, enter the correct network name and password, click CONNECT, wait 5 seconds, and click STATUS to view the connection ledge.
 
-	连接成功后可点击ping进行网络测试
+After the connection is successful, click ping to test the network.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg)
 
-### 3.1.10 网络配置测试
-OK3568启动时网卡默认设置为dhcp，可通过“Network”网络配置应用来选择 dhcp和static两种模式，static模式可配置ip地址、子网掩码、网关、DNS。
+#### 3.1.10 Network Configuration Test
+
+When the OK3568 starts up, the default setting of the NIC is dhcp. The two modes of dhcp and static can be selected through the "Network" configuration application, and the static mode can be configured with ip address, subnet mask, gateway, and DNS.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png)
 
-应用图标
+Application Icons
 
-界面如下：
-
-
+The interface is as follows:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343711_d466a46d_345d_4d4c_a18c_a69c2871d95d.png)
 
-选中eth0或者eth1，再选中DHCP，点击界面下方“应用”，即可重启网络并自动获取到ip。
+Select eth0 or eth1, then select DHCP, and click "Application" at the bottom of the interface to restart the network and automatically obtain IP.
 
-点击STATIC，选择设置静态IP，在ip栏中输入要设定的ip，netmask栏中输入子网掩码，geteway栏中输入网关，dns栏中输入DNS。
+Click STATIC, select Set Static IP, enter the IP to be set in the IP column, enter the subnet mask in the netmask column, enter the gateway in the getaway column, and enter the DNS in the DNS column.
 
-输入网址，点击ping键后，左侧提示框中会提示ping的结果，如下：
+After entering the URL and clicking the ping key, the result of the ping will prompt on the left, as follows:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343972_0afb76db_63cb_45da_a6e5_d22b08cfd289.png)
 
-注：在STATIC模式下设置的ip等信息会被保存至系统的相关配置文件中，因此每次重启都会使用本次设置的网络信息；而在DHCP模式下配置的网络信息则不需注意这一点，每次重新启动都会动态分配一次ip地址。
+**Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
+#### 3.1.11 Browser Tests
 
-
-### 3.1.11 浏览器测试
-“simplebrowser”是一款简单实用的网络浏览器，在使用时请保证网络通畅，访问外网前需保证dns可用，浏览器启动时默认访问飞凌嵌入式官方网站，点击图标：
+"Simplebrowser" is a simple and practical web browser. Please ensure smooth network connection when using it, and make sure DNS is available before accessing external websites. By default, the browser launches and accesses the official website of Forlinx Embedded. Click the icon:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png)
 
-界面如下：
+The interface is as follows:
 
-+ 注意：如果开发板的时间异常会导致证书问题。使用浏览器后不可以立即关闭电源或者在关闭电源前在命令行使用sync命令，否则可能导致浏览器异常退出，无法正常运行，只能重新烧录解决。
+**Note: If the development board time is abnormal,  it will cause certificate problems. Do not shut down the power immediately after using the browser or the sync command at the command line. Otherwise, it may cause the browser to exit abnormally and not work properly, and can only be solved by re-burning.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
 
-通过上方导航栏File->Quit退出该浏览器。
+Exit this browser via the upper navigation bar File->Quit.
 
-### 3.1.12 看门狗测试
-“WatchDog”是用来测试看门狗功能是否正常的应用
+#### 3.1.12 Watchdog Tests
+
+"WatchDog" is an application used to test the watchdog status.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345098_b4ecb513_38b6_4d9a_9d25_a8fadb05bd75.png)
 
-应用界面
+Application Interfaces
 
-点击start，默认打开喂狗功能，定时喂狗，此时系统不会重启。
+Click start to open the dog feeding function by default and feed the dog regularly. At this time, the system will not restart.
 
-取消勾选feed dog时，倒计时6s，系统进入重启。说明看门狗功能正常。
+When unchecking feed dog, count down 6s and the system enters reboot. It indicates that the Watchdog function is normal.
 
-### 3.1.13 按键测试
-“Keypad”用于测试平台自带按键是否可用：
+#### 3.1.13 Key Tests
+
+The "Keypad" is used to test whether the platform's own keys are available:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345454_3ec0497f_b53c_4d1b_b29b_3262851f300b.jpeg)
 
-应用界面
+Application Interfaces
 
-OK3568平台默认将4个物理按键V+、V-、Home、ESC分别配置为音量+键、音量-键，Home、返回键。当按下按键时测试应用中的对应按键会变为蓝色，说明按键功能正常。
+By default, OK3568 platform configures the four physical buttons V+, V-, Home, and ESC as the Volume + and Volume - keys, Home, and Return keys, respectively. The corresponding key in the test application will turn blue when pressing the key, indicating that the key is in normal status.
 
-按“X”退出当前例程，返回到系统桌面。
+Press "X" to exit the current routine and return to the system desktop.
 
-### 3.1.14 RTC测试
-通过“RTC”应用，可查看和设置当前的系统时间：
+#### 3.1.14 RTC Test
+
+The "RTC" application allows you to view and set the current system time:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345878_2faee878_578c_4126_b6e7_ad04ae576bb2.png)
 
-应用界面
+Application Interfaces
 
-选择Manual 之后，可手动设置时间，选择date和time，点击apply，设置完成，安装好RTC备用电池的情况下，时间断电重启不丢失。
+After selecting "Manual," you can manually set the time by choosing "date" and "time," then click "apply" to complete the settings. With the RTC backup battery installed, the time will not be lost in case of a power outage and reboot.
 
-点击 Auto，网络对时，点击apply，对时成功。
+Click Auto to perform network timing, and click apply to perform timing successfully.
 
-### 3.1.15 SPI测试
-点击桌面图标可以使用它来测试OK3568板载SPI接口。spi0具有一个cs接口，对应/dev/spidev0.0；spi2具有两个cs，分别对应/dev/spidev2.0，/dev/spidev2.1。
+#### 3.1.15 SPI Test
 
-根据开发板原理图，短接spi2收发引脚。短接测试不需要考虑cs接口；如果外加设备通信，需要考虑对应的dev接口。
+Click on the desktop icon to use it to test the OK3568 on-board SPI interface. Spi0 has one CS interface, corresponding to the/dev/spidev 0.0; spi2 has two CS interfaces, corresponding to/dev/spidev2.0 and/dev/spidev2.1, respectively.
 
-
+Short the spi2 T/R pins according to the board schematic. The short circuit test does not need to consider the CS interface; if additional equipment is used for communication, the corresponding dev interface needs to be considered.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346060_8972ef99_0fee_40b3_b2e0_2559ce1d6f11.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346331_1852b31a_992b_4f43_84c8_40a466716f67.png)
 
-短接完成后打开测试程序，点击send按钮，进行收发测试。
+Open the test program after the completion of short circuit, and click the send button to conduct the sending and receiving test.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346635_2b8f1646_2a6e_48b9_a713_15eada1cc349.png)
 
-应用界面
+Application Interfaces
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346917_8e2caf6d_2081_430d_b4dd_369f0e4671b4.png)
 
-点击Exit按钮退出该测试。
+Click the Exit button to exit the test.
 
-### 3.1.16 UART测试
-点击桌面图标可以使用它来测试OK3568板载UART接口。
+#### 3.1.16 UART Test
+
+Click on the desktop icon to use it to test the OK3568 on-board UART interface.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png)
 
-应用图标
+Application Icons
 
-OK3568 串口支持奇、偶校验，8 位数据位和1 位停止位。
+OK3568 serial port supports odd and even parity, 8 data bits and 1 stop bit.
 
-在进行串口回环测试前，请先将需要测试的串口短接。OK3568平台底板原理图中标示引出的UART3、UART4、UART5、UART8共4路串口，其中UART2为调试串口，UART8为蓝牙串口。UART3和UART4、UART5在开发板中的默认设备名称分别为ttyS3、ttyS4，ttyS5在此以测试UART4串口为例，按照开发板原理图短接UART4的收发引脚，分别对应PIN29,PIN30。
+Please short the serial port to be tested before the serial port loopback test. UART3, UART4, UART5 and UART8 serial ports are indicated in the schematic diagram of OK3568 platform carrier board, in which UART2 is the debugging serial port and UART8 is the Bluetooth serial port. The default device names of UART3, UART4 and UART5 in the development board are ttyS3, ttyS4 and ttyS5 respectively. Here, take the test of UART4 serial port as an example. According to the schematic diagram of the development board, the transceiver pins of UART4 are short-circuited, corresponding to PIN29 and PIN30 respectively.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278347360_b24c7a70_e419_4bd6_8b07_25e3e8813f42.png)
 
-短接完成后打开测试程序。
+Turn on the test program after the short circuit is completed.
 
-点击右侧设置，选择串口与波特率等参数，点击apply。设置参数成功。再单击右侧第一个按钮进行连接。
+Click Settings on the right, select parameters such as serial port and baud rate, and click apply. Set parameter successfully. Then click the first button on the right to connect.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png)
 
-应用界面
+Application Interfaces
 
-点击键盘”1”自动发送，由于短接的问题，回将收到的“1”也显示在终端上。
-
-
+Click the keyboard "1" to send automatically. Due to the problem of short circuit, the received "1" will also be displayed on the terminal.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png)
 
-### 3.1.17 背光测试
-“BackLight”是lcd背光调整应用：
+#### 3.1.17 Backlight Test
+
+"BackLight" is the lcd backlight adjustment application:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png)
 
-应用图标
+Application Icons
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348704_ba67c57c_27b1_40c3_8206_4f722163f1ca.jpeg)
 
-应用界面
+Application Interfaces
 
-拖动界面中的滑块即可设置Lcd背光亮度，0级为无背光，255级为最高亮度。
+Drag the slider in the interface to set the Lcd backlight brightness, level 0 is no backlight, level 255 is the highest level.
 
-### 3.1.18 CPU频率配置测试
-	点击桌面图标进入下一级菜单：
+#### 3.1.18 CPU Frequency Configuration Test
+
+Click the desktop icon to enter the next menu:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png)**->**![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png)
 
-应用图标
+Application Icons
 
-	OK3568 CPU主频最大1.9Ghz，默认情况下CPU会根据负载动态调整主频，也可以通过设置固定CPU主频率。
-
-	点击桌面 Power 图标进入CPU主频设置页面：
+The main frequency of OK3568 CPU is up to 1.9 Ghz. By default, the CPU will dynamically adjust the main frequency according to the load. The main frequency of the CPU can also be fixed by setting.  Click the desktop Power icon to enter the CPU frequency setting page: 
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349339_bced7ad8_3cb7_438d_bc00_e5cf2f7ba5ba.jpeg)
 
-	Set Userspace Governor：用户态设置主频
+Set Userspace Governor: Set the main frequency in the user mode
 
-Set Frequency A55：设置主频
+Set Frequency A55: Set the main frequency
 
-	以设置主频频率为例，如果需要设置固定频率，请先点击Set Userspace Governor，点击run，再返回上图操作界面，点击Set Frequency A55进行设置。
+Take the setting of main frequency as an example. If it is necessary to set a fixed frequency, please click Set Userspace Governor, click run, return to the operation interface as shown in the figure above, and click Set Frequency A55 to set.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349538_3585a87e_e5ad_43fb_934a_f97477b071d2.jpeg)
 
-	根据需求选择对应的频率进行设置。
+Select the corresponding frequency for setting according to the requirements.
 
+## 4. OK3568 Command Line Function Test
 
+### 4.1 Command Line Function Test
 
-## 
+The OK3568 platform has various built-in command line tools available to users.
 
+#### 4.1.1 System Information Query
 
-
-
-# 04_OK3568命令行功能测试
-
-## 4.2 命令行功能测试
-OK3568平台内置了丰富的命令行工具可供用户使用。
-
-### 4.2.1 系统信息查询
-查看内核和cpu信息：
+To view kernel and CPU information:
 
 ```shell
 root@OK3568-buildroot:/# uname -a
 Linux OK3568-buildroot 5.10.160 #1 SMP Fri Oct 13 08:48:42 HKT 2023 aarch64 GNU/Linux
 ```
 
-查看操作系统信息：
+View operating system information:
 
 ```shell
 root@OK3568-buildroot:/# cat /etc/issue
 Welcome to RK3566_RK3568 Buildroot
 ```
 
-查看环境变量信息
+View environment variable information:
 
 ```shell
 root@OK3568-buildroot:/# env
@@ -738,78 +735,70 @@ _=/usr/bin/env
 OLDPWD=/root
 ```
 
-### 4.2.2 调频测试
-+ **说明：此过程以cpu0为例操作，实际过程cpu1、cpu2、cpu3会同时改变。**
+#### 4.1.2 FM Test
 
-1、当前内核中支持的所有cpufreq governor类型：
+**Note: This process takes cpu0 as an example, and the actual process of cpu1, cpu2, and cpu3 will be changed at the same time.**
+
+1\.  All cpufreq governor types supported in the current kernel:
 
 ```shell
 root@OK3568-buildroot:/# cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
 conservative ondemand userspace powersave interactive performance
 ```
 
+The userspace indicates user mode, in which other users' programs can adjust the CPU frequency.
 
-
-其中userspace表示用户模式，在此模式下允许其他用户程序调节CPU频率。
-
-2、查看当前CPU支持的频率档位
+2.\ To view the frequency gear supported by the current CPU;
 
 ```shell
 root@OK3568-buildroot:/# cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies
 408000 600000 816000 1104000 1416000 1608000 1800000 1992000
 ```
 
-
-
-3、设置为用户模式，修改频率为1800000：
+3\. Set to user mode and modify the frequency to 1800000:
 
 ```shell
 root@OK3568-buildroot:/# echo userspace > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 root@OK3568-buildroot:/# echo 1800000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
 ```
 
-
-
-查看修改后当前频率：
+View the modified current frequency:
 
 ```shell
 root@OK3568-buildroot:/# cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq
 1800000
 ```
 
+#### 4.1.3 Temperature Test
 
-
-### 4.2.3 温度测试
-查看温度值：
+View the temperature value:
 
 ```shell
 root@OK3568-buildroot:/# cat /sys/class/thermal/thermal_zone0/temp
 56111
 ```
 
+The temperature value is 56°C.
 
+#### 4.1.4 DDR Bandwidth Test
 
-温度值即为56℃。
-
-### 4.2.4 DDR带宽测试
 ```shell
 root@OK3568-buildroot:/# memory_bandwidth.sh
 ```
 
-
-
-以下以OK3568-C为例，打印信息如下：
+Take OK3568-C as an example. As follows：
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349807_b0062ff0_42e9_4dc0_953c_c6e41b1ddf7f.png)
 
-OK3568-C的DDR4写带宽大约1480M/s，读带宽大约5100M/s。
+The OK3568-C has a DDR4 write bandwidth of about 1480M/s and a read bandwidth of about 5100M/s.
 
-### 4.2.5 按键测试
+#### 4.1.5 Key Tests
+
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350041_69289c78_69d0_4604_9725_f359e0d01c07.png)
 
-使用keytest命令行工具进行按键测试，目前keytest支持底板上四个按键V+、V-、Home、ESC的测试，键码分别为115、114、139、158。此时依次按下抬起按键，终端上可输出如下内容：
+Use the keytest command line tool to test the keys. At present, keytest supports the test of the four keys V +, V-, Home and ESC on the backplane, and the key codes are 115, 114, 139 and 158 respectively. At this point, press the lift button in sequence, and the following can be output on the terminal:
 
-执行如下命令：
+Execute the following command:
 
 ```shell
 root@OK3568-buildroot:/#  fltest_keytest
@@ -825,14 +814,15 @@ key158 Presse
 key158 Released
 ```
 
-### 4.2.6 串口测试
-OK3568 串口支持奇、偶校验，8 位数据位和1 位停止位。
+#### 4.1.6 Serial Port Test
 
-在进行串口回环测试前，请先将需要测试的串口短接。OK3568平台底板原理图中标示引出的UART2、UART3、UART4、UART5、UART8共5路串口，其中UART2为调试串口，UART8为蓝牙串口。用户可用串口分别为UART3和UART4、UART5，在开发板中对应设备名称分别为ttyS3、ttyS4，ttyS5。在此以测试UART4串口为例，按照开发板原理图短接UART4的收发引脚，分别对应PIN29,PIN30。
+OK3568 serial port supports odd and even parity, 8 data bits and 1 stop bit.
+
+Please short the serial port to be tested before the serial port loopback test. In the schematic diagram of the OK3568 platform, UART2, UART3, UART4, UART5, and UART8 are indicated as 5 serial ports, with UART2 being the debug port and UART8 being the Bluetooth port. The serial ports available to the user are UART3, UART4 and UART5, and the corresponding device names in the development board are ttyS3, ttyS4 and ttyS5. Take the test of UART4 serial port as an example, short-circuit the receiving and transmitting pins of UART4 according to the schematic diagram of the development board, corresponding to PIN29 and PIN30 respectively.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350392_6790a64b_37c7_4cda_95b6_f8ce5d08686a.png)
 
-短接完成后打开测试程序。
+Turn on the test program after the short circuit is completed.
 
 ```shell
 root@OK3568-buildroot:/# fltest_uarttest -d /dev/ttyS4
@@ -843,14 +833,15 @@ Read Test Data finished,Read:
 forlinx_uart_test.1234567890...
 ```
 
-执行后串口打印如上内容，则说明串口通信基本正常。
+If the serial port prints the above content after execution, it indicates that the serial port communication is basically normal.
 
-### 4.2.7 SPI 测试
-OK3568底板上引出2路SPI接口，默认软件上将其配置为spidev用于回环测试。测试时，请参考原理图短接 MOSI (PIN15)与MISO (PIN16)，然后分别使用下面的命令进行测试。
+#### 4.1.7 SPI Test
+
+2 x SPI interfaces are led out from the OK3568 carrier board, which are configured as spidev in the default software for loopback test. When testing, refer to the schematic for shorting MOSI (PIN15) and MISO (PIN16), and then use the commands below to test each.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350643_b70444ce_bf67_4e70_8a94_831eb688b494.png)
 
-未短接 SPI2_MOSI 与 SPI2_MISO，执行测试指令：
+Without shorting the SPI 2\_ MOSI and the SPI 2\_ MISO, execute the test command:
 
 ```shell
 root@OK3568-buildroot:/# fltest_spidev_test -D /dev/spidev2.0
@@ -866,7 +857,7 @@ FF FF FF FF FF FF
 FF FF
 ```
 
-短接 SPI2_MOSI 与 SPI2_MISO，执行测试指令：
+Short circuit the SPI 2\_ MOSI to the SPI 2\_ MISO and execute the test command:
 
 ```shell
 root@OK3568-buildroot:/# fltest_spidev_test -D /dev/spidev2.0
@@ -882,59 +873,64 @@ DE AD BE EF BA AD
 F0 0D
 ```
 
-### 4.2.8 看门狗测试
-看门狗是嵌入式系统中经常用到的功能，OK3568中看门狗的设备结点为/dev/watchdog。本测试提供了两种测试程序，用户根据实际情况选择其中一种进行测试。
+#### 4.1.8 Watchdog Tests
 
-#### 4.2.8.1 启动 fltest_watchdog，设置符为时间10s，并定时喂狗。
+Watchdog is a function often used in embedded systems. The device node of watchdog in OK3568 is/dev/watchdog. This test provides two test procedures, and the user can choose one of them to test according to the actual situation.
+
+##### 4.1.8.1 Start the fltest \_ watchdog, set the time as 10s, and feed the dog regularly.
+
 ```shell
 root@OK3568-buildroot:/# fltest_watchdog
 Watchdog Ticking Away!
 ```
 
-此命令会打开看门狗并执行喂狗操作，因此系统不会重启。
+This command turns on the watchdog and performs a feed, so the system does not reboot.
 
-+ <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：使用ctrl+c结束测试程序时，10s后系统会复位，如不想复位请在ctrl+c之后10s内输入:
+**Note: When ctrl + C is used to end the test program, the system will reset after 10 seconds. If you do not want to reset, please input within 10 seconds after ctrl + C:**
 
 ```shell
 root@OK3568-buildroot:/# fltest_watchdog -d
-Watchdog card disabled.   //关闭看门狗
+Watchdog card disabled.   //Turn off the watchdog
 ```
 
-#### 4.2.8.2 启动fltest_watchdogrestart，设置复位时间为10s，不喂狗。
+##### 4.1.8.2 Start the fltest \_ watchdog restart, set the reset time to 10 s, and do not feed the dog.
+
 ```shell
 root@OK3568-buildroot:/# fltest_watchdogrestart
 Restart after 10 seconds
 ```
 
-此命令会打开看门狗，但不执行喂狗操作，系统会在10s后重启。
+This command turns on the watchdog, but does not feed the dog, and the system reboots after 10 seconds.
 
-### 4.2.9 WIFI测试 
-OK3568默认支持板载AW-CM358，支持STA和AP模式。
+#### 4.1.9 WIFI Test
 
-#### 4.2.9.1  STA模式
-使用wifi功能前需要用如下步骤配置：
+The OK3568 supports the onboard AW-CM358 by default and supports STA and AP modes.
 
-步骤1：
+##### 4.1.9.1 STA Mode
 
-假设Wifi热点的SSID名称为：ChinaNet-Jvgv密码为：asdasd123
+Before using the wifi function, the following steps are required for configuration:
 
-开发板终端中输入如下命令：
+Step 1:
+
+Assume that the SSID name of the Wifi hotspot is ChinaNet-Jvgv and the password is asdasd123
+
+Enter the following command in the development board terminal:
 
 ```shell
 root@OK3568-buildroot:/# fltest_wifi.sh -i mlan0 -s "ChinaNet-Jvgv" -p asdasd123
 ```
 
-在如上命令中，
+In the above command,
 
--i wlan0或wlan1，具体哪个结点对应哪个模块需要使用前确定，以实际情况为准；
+The specific assignment of “wlan0” or “wlan1” to a particular module needs to be determined before use, and it depends on the actual situation.
 
--s连接的实际wifi热点名称；
+-s The actual wifi hotspot name of the connection;
 
--p 后接参数Password指要连接的实际wifi热点的密码，如果当前热点没有密码，-p后参数写NONE
+-p followed by the parameter Password refers to the password of the actual wifi hotspot to be connected. If the current hotspot does not have a password, the parameter after -p is NONE.
 
-步骤2：
+Step 2:
 
-检查是否能ping外网，在终端中输入如下命令：
+Check whether it can ping the external network and enter the following command in the terminal:
 
 ```shell
 root@OK3568-buildroot:/# ping www.forlinx.com
@@ -947,10 +943,11 @@ PING www.forlinx.com (220.181.111.188): 56 data bytes
 64 bytes from 220.181.111.188: seq=5 ttl=57 time=3.798 ms
 ```
 
-想要停止需按下Ctrl+C,能够ping通，说明此时网络已经可以正常使用
+If you want to stop, you need to press Ctrl + C to ping, indicating that the network can be used normally at this time.
 
-#### 4.2.9.2  AP模式
-使用热点功能前需要先连接配置好网口，确保网口可以联网。配置热点指令，第一遍运行指令AP变为DISABLED，第二遍运行时，为ENABLE，如下：
+##### 4.1.9.2 AP Mode
+
+Before using the hotspot function, you need to connect and configure the network port to ensure that the network port can be connected to the Internet. Configure the hotspot command. The command AP becomes DISABLED in the first pass, and becomes ENABLE in the second pass, as shown below:
 
 ```shell
 root@OK3568-buildroot:/# fltest_hostapd.sh
@@ -992,66 +989,65 @@ uap0: AP-ENABLED
 [   82.903627] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
 ```
 
-WiFi热点名称：forlinx
+WiFi Hotspot Name: forlinx
 
-密码：12345678
+Password: 12345678
 
-此时手机可连接此热点，上外网。
+At this time, the mobile phone can connect to this hotspot and connect to the Internet.
 
-### 4.2.10 蓝牙测试
-OK3568开发板底板的AW-CM358集成了蓝牙功能，本节演示使用手机与开发板之间通过蓝牙进行文件传输。
+#### 4.1.10 Bluetooth Test
+
+The AW-CM358 of the OK3568 carrier board has integrated Bluetooth. This section demonstrates the use of Bluetooth for file transfer between the phone and the development board.
 
 ```shell
-root@OK3568-buildroot:/# bluetoothctl								//打开bluez蓝牙工具
+root@OK3568 - buildroot:/# bluetoothctl 				// Open the BlueZ Bluetooth tool
 Agent registered
-[bluetooth]# power on										//启动蓝牙设备
+[bluetooth]# power on 										// Start the Bluetooth device
 [CHG] Controller 36:DC:25:54:7C:CB Class: 0x00100000
 Changing power on succeeded
 [CHG] Controller 36:DC:25:54:7C:CB Powered: yes
-[bluetooth]# pairable on									//设置为配对模式
+[bluetooth]# pairable on 									// Set to pairing mode
 Changing pairable on succeeded
-[bluetooth]# discoverable on								 //设置为可发现模式
+[bluetooth]# discoverable on 								 // Set to discoverable mode
 Changing discoverable on succeeded
 [CHG] Controller 36:DC:25:54:7C:CB Discoverable: yes
-[bluetooth]# agent on										//启动代理
+[bluetooth]# agent on 										// Start the agent
 Agent is already registered
-[bluetooth]# default-agent
+[bluetooth]# default - agent
 Default agent request successful
-//此时，打开手机蓝牙进行扫描，如果长时间未扫描到请重复执行
-[bluetooth]# discoverable on								//设置当前代理为默认
-//点击BlueZ 5.50进行配对，手机端和开发板分别进行密码验证，选择“YES”。
-[NEW] Device C4:FE:5B:17:C7:78 OPPO Reno3 元气版 5G
+// At this time, turn on the Bluetooth on your phone to scan. If it fails to scan for a long time, please repeat the operation.
+[bluetooth]# discoverable on 								// Set the current agent as the default
+// Click on "BlueZ 5.50" to pair. Perform password verification on both the phone and the development board, and select "YES".
+[NEW] Device C4:FE:5B:17:C7:78 OPPO Reno3 Youth Edition 5G
 Request confirmation
 [agent] Confirm passkey 508432 (yes/no): yes
 [CHG] Device C4:FE:5B:17:C7:78 Modalias: bluetooth:v001Dp1200d1436
-[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001105-0000-1000-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000110a-0000-1000-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000110c-0000-1000-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000110e-0000-1000-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001112-0000-1000-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001115-0000-1000-8000-00805f9b34fb
-E:5B:17:C7:78 UUIDs: 0000111f-0000-1000-8000-00805f9b34fbb34fb
-[CHG] Device C4:FE:5B:17:C7:78 UUI-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:78-1000-8000-00805f9b34fb
-[CHG] Device C4:FE:5B:17:C7:700-1000-8000-00805f9b34fb
-[OPPO Reno3 元气版 5G]#vice C4:FE:5B:17:C7:78 UUIDs: 0000aa15-0000-1000-8000-008[CHG] Device C4:FE:5B:17:C7:95c-9f4f-bb80a90cdf00
-ice C4:FE:5B:17:C7:78 ServicesResolved: yes
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001105 - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000110a - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000110c - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000110e - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001112 - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001115 - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000111f - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 0000aa15 - 0000 - 1000 - 8000 - 00805f9b34fb
+[CHG] Device C4:FE:5B:17:C7:78 UUIDs: 00001235 - 95c - 9f4f - bb80a90cdf00
+[CHG] Device C4:FE:5B:17:C7:78 ServicesResolved: yes
 [CHG] Device C4:FE:5B:17:C7:78 Paired: yes
 [CHG] Controller 36:DC:25:54:7C:CB Discoverable: no
 [CHG] Device C4:FE:5B:17:C7:78 ServicesResolved: no
 [CHG] Device C4:FE:5B:17:C7:78 Connected: no
-配对成功后，可以将手机端的文件通过蓝牙分享到开发板。
+After successful pairing, you can share files from your phone to the development board via Bluetooth.
 ```
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350913_df9c333d_0740_4ed5_931c_c055cae5b122.png)
 
-输入quit退出bluetoothctl,接收到的文件位于/root目录。
+Type quit to exit bluetoothctl. The received file is located in the/root directory.
 
 ```shell
 [bluetooth]# quit
 root@OK3568-buildroot:/#  ls /root/
 wx_camera_1581992646090.jpg
-同时，我们也可以将开发板上的文件发送到手机端。
+At the same time, you can also send the files on the development board to the mobile phone.
 root@OK3568-buildroot:/# fltest_obexctl.sh
 [obex]# connect C4:FE:5B:17:C7:78
 Attempting to connect to C4:FE:5B:17:C7:78
@@ -1073,28 +1069,30 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351113_a7ae10ff_6f83_4923_8783_10849f874870.png)
 
-+ <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：部分厂家手机接收的文件必须有后缀名，否则会被Android系统拒绝。因此测试时请尽量使用带有后缀名的文件进行测试。
+**Note: The files received by some manufacturers' mobile phones must have suffixes, otherwise they will be rejected by the Android system. Therefore, when testing, please try to use files with suffix names for testing.**
 
-### 4.2.11 RTC功能测试
-RTC 测试，主要通过使用 date 和 hwclock 工具设置软、硬件时间，测试当开发板断电再上电的时候，软件时钟读取RTC 时钟是否同步（注意：确保板子上已经安装了纽扣电池）。
+#### 4.1.11 RTC Function Test
+
+RTC testing is mainly done by using the date and hwclock tools to set the software and hardware time. The test checks if the software clock can read and synchronize with the RTC clock when the development board is powered off and on again (Note: Make sure that the button battery is already installed on the board).
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351323_70952562_19f7_4ff3_b7d6_77c0f64f0936.png)
 
 ```shell
-root@OK3568-buildroot:/# date -s "2022-2-9 10:50:00"		//设置时间
+root@OK3568-buildroot:/# date -s "2022-2-9 10:50:00"		// Set the time
 Wed Feb  9 10:50:00 UTC 2022 
-root@OK3568-buildroot:/#date							            	//读取时间
+root@OK3568-buildroot:/# date							        // Read the time
 Wed Feb  9 10:51:00 UTC 2022 
-root@OK3568-buildroot:/#hwclock -r					            //查看硬件时间
+root@OK3568-buildroot:/# hwclock -r					            // Check the hardware time
 Wed Feb  9 02:50:14 2022  0.000000 seconds 
-root@OK3568-buildroot:/#hwclock -w -u				           //将系统时间，计算时区，写入到RTC
-//重启开发板，进入系统后读取系统时间，查看是否与设置的时间相同，注意不要接入外网，不然会自动对时。
+root@OK3568-buildroot:/# hwclock -w -u				           // Calculate the time zone based on the system time and write it to the RTC
+// Restart the development board. After entering the system, read the system time and check if it is the same as the set time. Note that you should not connect to the Internet, otherwise the time will be automatically synchronized.
 root@OK3568-buildroot:/# date
 Wed Feb  9 10:52:00 UTC 2022
 ```
 
-### 4.2.12 USB鼠标测试
-将USB鼠标接入OK3568平台的usb接口，串口终端的打印信息如下：
+#### 4.1.12 USB Mouse Test
+
+Connect the USB mouse to the USB interface of the OK3568 platform, and the print information of the serial port terminal is as follows:
 
 ```shell
 root@OK3568-buildroot:/#  [ 1513.413310] usb 3-1.2: new low-speed USB device number 4 using ehci-platform
@@ -1105,32 +1103,31 @@ root@OK3568-buildroot:/#  [ 1513.413310] usb 3-1.2: new low-speed USB device num
 [ 1513.564896] hid-generic 0003:192F:0916.0002: input,hidraw0: USB HID v1.11 Mouse [USB Optical Mouse] on usb-fe380000.usb-1.2/input0
 ```
 
-此时在屏幕上出现箭头光标，鼠标已可正常使用。
+At this time, the arrow cursor appears on the screen, the mouse can work normally.
 
-当拔掉usb鼠标时，串口终端打印如下：
+When the USB mouse is disconnected, the printout in the serial terminal is as follows:
 
 ```shell
 [root@ rk3568/]# [ 1583.443782] usb 3-1.2: USB disconnect, device number 4
 ```
 
-此时屏幕上箭头光标消失，鼠标已成功去除。
+The arrow cursor on the screen disappears and the mouse is successfully removed.
 
-### 4.2.13 USB 2.0/USB3.0
-OK3568支持两个USB2.0和一个USB3.0接口用户可以在任何一个板载USB HOST接口上连接USB鼠标、USB键盘、U盘等设备，并支持以上设备的热插拔。这里用挂载U盘为例进行演示，目前U盘测试支持到128G，128G以上并未测试。
+#### 4.1.13 USB 2.0/USB3.0
+
+OK3568 supports two USB 2.0 and one USB 3.0 interfaces. You can connect USB devices such as a mouse, keyboard, or USB flash drive to any of the onboard USB host interfaces. The board also supports hot-plugging for the mentioned devices. Demonstration with a mounting USB flash drive; the current USB flash drive test support up to 128G, but no test for 128G or above.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351657_3fda5e10_b4c0_4a51_898b_6feff96a376a.png)
 
-USB3.0和OTG复用，通过拨码开关切换使用，使用USB3.0接口时请确认拨码开关在ON位置：
+USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
 
+The terminal prints information about the USB flash drive, and since many types of USB flash drives exist, the information displayed may vary:
 
+Step 1: After the development board has started, connect the USB flash drive to the USB host interface on the development board.
 
-终端会打印关于U盘的信息，由于存在很多种U盘，显示的信息可能会有差别：
-
-步骤1：开发板启动后，连接USB接口u盘到开发板的USB host接口。
-
-串口信息：
+Serial port information:
 
 ```shell
 root@OK3568-buildroot:/#  [ 1771.366204] usb 8-1: new SuperSpeed Gen 1 USB device number 2 using xhci-hcd
@@ -1152,35 +1149,35 @@ root@OK3568-buildroot:/#  [ 1771.366204] usb 8-1: new SuperSpeed Gen 1 USB devic
 [ 1772.949198] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
 ```
 
-步骤2：查看挂载目录：
+Step 2: View the mount directory
 
 ```shell
 root@OK3568-buildroot:/# ls /run/media/
 ```
 
-**sda1 **//sda1为第一个插入的USB存储设备，依次类推
+sda1 //sda1 is the first USB storage device inserted, and so on.
 
-步骤3：查看U盘内容：
+Step 3: View the contents of the USB flash disk:
 
 ```shell
 [root@ ok3568:/]# ls -l /run/media/sda1
 drwxrwx--- 3 root disk      8192 Mar  4  2021  Music
 ```
 
-进行读写测试前，需要关注CPU的频率。
+Before reading and writing, you need to pay attention to the frequency of the CPU.
 
-写入测试：
+Write test:
 
 ```shell
 root@OK3568-buildroot:/# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
 500+0 records in
 500+0 records out
-524288000 bytes (524 MB, 500 MiB) copied, 37.3332 s, 14.0 MB/s//写入速度受限于具体的存储设备。
+524288000 bytes (524 MB, 500 MiB) copied, 37.3332 s, 14.0 MB/s//The write speed is limited to the specific storage device.
 ```
 
-读取测试：
+Read test：
 
-+ <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：为确保数据准确，请重启开发板后测试读取速度。
+**Note: To ensure the accuracy of the data, please restart the development board to test the reading speed.**
 
 ```shell
 root@OK3568-buildroot:/# dd if=/run/media/sda1/test of=/dev/null bs=1M
@@ -1189,38 +1186,40 @@ root@OK3568-buildroot:/# dd if=/run/media/sda1/test of=/dev/null bs=1M
 524288000 bytes (524 MB, 500 MiB) copied, 20.0277 s, 26.2 MB/s   
 ```
 
-### 4.2.14 屏幕背光调节
-背光的亮度设置范围为（0--255），255表示亮度最高，0表示关闭背光亮度。进入系统后在终端输入如下命令进行背光测试。
+#### 4.1.14 Screen Backlight Adjustment
 
-1. **查看当前屏幕背光值：**
+Backlight level range (0--255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test.
+
+**1. View the current screen backlight values:**
 
 ```shell
-root@OK3568-buildroot:/# cat /sys/class/backlight/lvds-backlight/brightness		//查看LVDS屏幕背光值
+root@OK3568 - buildroot:/# cat /sys/class/backlight/lvds - backlight/brightness		// Check the backlight value of the LVDS screen
 200
-root@OK3568-buildroot:/# cat /sys/class/backlight/dsi1-backlight/brightness		 //查看dsi屏幕背光值
+root@OK3568 - buildroot:/# cat /sys/class/backlight/dsi1 - backlight/brightness		 // Check the backlight value of the DSI screen
 200
-root@OK3568-buildroot:/# cat /sys/class/backlight/edp-backlight/brightness		//查看edp屏幕背光值
+root@OK3568 - buildroot:/# cat /sys/class/backlight/edp - backlight/brightness		// Check the backlight value of the eDP screen
 200
 ```
 
-**2、背光熄灭：**
+**2\. Backlight is off:**
 
 ```shell
-root@OK3568-buildroot:/# echo 0 >/sys/class/backlight/lvds-backlight/brightness      	//熄灭LVDS屏幕背光
-root@OK3568-buildroot:/# echo 0 >/sys/class/backlight/dsi1-backlight/brightness        	 //熄灭dsi屏幕背光
-root@OK3568-buildroot:/# echo 0 > /sys/class/backlight/edp-backlight/brightness			//熄灭edp屏幕背光
+root@OK3568-buildroot:/# echo 0 >/sys/class/backlight/lvds-backlight/brightness // Turn off the backlight of the LVDS screen
+root@OK3568-buildroot:/# echo 0 >/sys/class/backlight/dsi1-backlight/brightness // Turn off the backlight of the DSI screen
+root@OK3568-buildroot:/# echo 0 > /sys/class/backlight/edp-backlight/brightness // Turn off the backlight of the eDP screen
 ```
 
-**3、LCD背光亮起：**
+**3\. LCD backlight is on:**
 
 ```shell
-root@OK3568-buildroot:/# echo 255 >/sys/class/backlight/lvds-backlight/brightness       //点亮LVDS屏幕背光
-root@OK3568-buildroot:/# echo 255 >/sys/class/backlight/dsi1-backlight/brightness         //点亮dsi屏幕背光
-root@OK3568-buildroot:/# echo 255> /sys/class/backlight/edp-backlight/brightness		//点亮edp屏幕背光
+root@OK3568-buildroot:/# echo 255 >/sys/class/backlight/lvds-backlight/brightness // Turn on the backlight of the LVDS screen
+root@OK3568-buildroot:/# echo 255 >/sys/class/backlight/dsi1-backlight/brightness // Turn on the backlight of the DSI screen
+root@OK3568-buildroot:/# echo 255> /sys/class/backlight/edp-backlight/brightness // Turn on the backlight of the eDP screen
 ```
 
-### 4.2.15 TF卡测试
-将TF卡插入开发板底板上的TF卡插槽，正常情况下开发板终端有如下打印信息：
+#### 4.1.15 TF Card Test
+
+Insert the TF card into the TF card slot on the development board’s carrier board. In normal circumstances, the development board’s terminal will display the following information:
 
 ```shell
 root@OK3568-buildroot:/#  [  294.166421] mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 100000000Hz, actual 50000000HZ div = 0)
@@ -1236,14 +1235,14 @@ root@OK3568-buildroot:/#  [  294.166421] mmc_host mmc1: Bus speed (slot 0) = 500
 [  295.073331] FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
 ```
 
-默认情况下TF卡挂载到文件系统 /run/media/目录
+By default, the TF card is mounted to the file system/run/media/directory
 
 ```shell
-root@OK3568-buildroot:/# mount | grep mmcblk1             //查看挂载目录
+root@OK3568-buildroot:/# mount | grep mmcblk1             //View the mount directory
 /dev/mmcblk1p1 on /run/media/mmcblk1p1 type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro)
 ```
 
-写入测试
+Write test:
 
 ```shell
 root@OK3568-buildroot:/# dd if=/dev/zero of=/run/media/mmcblk1p1/test bs=1M count=500 conv=fsync
@@ -1252,80 +1251,82 @@ root@OK3568-buildroot:/# dd if=/dev/zero of=/run/media/mmcblk1p1/test bs=1M coun
 524288000 bytes (524 MB, 500 MiB) copied, 24.6959 s, 21.2 MB/s 
 ```
 
-读取测试
+Read test：
 
-+ 注意：为确保数据准确，请重启开发板后测试读取速度。
+**Note: To ensure the accuracy of the data, please restart the development board to test the reading speed.**
 
 ```shell
-root@OK3568-buildroot:/# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M//读取测试
+root@OK3568-buildroot:/# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M//Read test
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 8.31059 s, 63.1 MB/s 	
 ```
 
-### 4.2.16 eMMC 测试
-OK3568平台eMMC默认运行于HS400模式200MHz时钟，下面简单测试eMMC的读写速度，以读写ext4文件系统为例。
+#### 4.1.16 EMMC Test
 
-+ 注意：为确保数据准确，请重启开发板后测试读取速度。
+The OK3568 platform eMMC runs in HS400 mode 200MHz clock by default. The following is a simple eMMC read/write speed test: taking the read/write ext4 file system as an example.
+
+**Note: To ensure the accuracy of the data, please restart the development board to test the reading speed.**
 
 ```shell
-root@OK3568-buildroot:/# dd if=/dev/zero of=/test bs=1M count=500 conv=fsync//写入测试
+root@OK3568-buildroot:/# dd if=/dev/zero of=/test bs=1M count=500 conv=fsync//Write test
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 6.73418 s, 77.9 MB/s
-root@OK3568-buildroot:/# dd if=/test of=/dev/null bs=1M //读取测试
+root@OK3568-buildroot:/# dd if=/test of=/dev/null bs=1M //Read test
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 3.05486 s, 172 MB/s       
 ```
 
-### 4.2.17 以太网配置
-OK3568板载两个千兆网卡，插入网线连接网络的情况下，OK3568开发板启动时将启动获取IP
+#### 4.1.17 Ethernet Configuration
 
-#### 4.2.17.1  固定IP方法
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：该方法为固定网络IP的方法，使用该方法后网卡可以获取对应网络IP即为正常，若网络ping不通，需注意Linux系统下多网卡同网段问题，按场景需求配置路由，或默认使用不同网段即可。
+OK3568 has two Gigabit NIC on board, if you plug in a network cable to connect to the network, the OK3568 development board will acquire IP when it starts up.
 
+##### 4.1.17.1 Fixed IP Method
 
+**Note: This method fixes network IP. After use, network card gets normal IP. If ping fails, check multiple network cards in same Linux segment. Adjust routing or use distinct segments.**
 
-开发板IP：192.168.1.151
+Development Board IP: 192.168.1.151
 
-路由器IP：192.168.1.1 
+Router IP: 192.168.1.1
 
-子网掩码：255.255.255.0 
+Subnet mask: 255.255.255.0
 
-开发板上电，执行如下命令
+Power up the development board and execute the following command
 
 ```shell
-root@OK3568-buildroot:/# vi /etc/network/interfaces   //打开配置文件
+root@OK3568-buildroot:/# vi /etc/network/interfaces   // Open the configuration file
 # interface file auto-generated by buildroot
 auto lo
 iface lo inet loopback
-//以下为需要添加的内容
+// The following is the content to be added
 auto eth0
-iface eth0 inet static       										  //指定需要固定IP的网卡
-address 192.168.1.151      									    	//指定需要固定的IP地址
-netmask 255.255.255.0     									    	//指定需要固定的子网掩码
-gateway 192.168.1.1      										      //指定网关
-//保存退出后重启板子或者重新启停配置：
-root@OK3568-buildroot:/# ifdown -a									  //停止使用配置
-root@OK3568-buildroot:/# ifup -a											//启用配置
+iface eth0 inet static       					// Specify the network card that needs a fixed IP
+address 192.168.1.151      						// Specify the fixed IP address
+netmask 255.255.255.0     					// Specify the fixed subnet mask
+gateway 192.168.1.1      								// Specify the gateway
+// After saving and exiting, restart the board or restart the configuration:
+root@OK3568-buildroot:/# ifdown -a					// Stop using the configuration
+root@OK3568-buildroot:/# ifup -a						// Enable the configuration
 [  646.969888] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
 root@OK3568-buildroot:/#  [  651.976934] rk_gmac-dwmac fe300000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
 [  651.977798] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 ```
 
-#### 4.2.17.2  自动获取IP方法
+##### 4.1.17.2  Automatic IP Acquisition Method
+
 ```shell
-root@OK3568-buildroot:/# vi /etc/network/interfaces   	  //打开配置文件
+root@OK3568-buildroot:/# vi /etc/network/interfaces   	  // Open the configuration file
 # interface file auto-generated by buildroot
 auto lo
 iface lo inet loopback
-//以下为需要添加的内容，去掉address、netmask、gateway属性。
+// The following is the content to be added. Remove the address, netmask, and gateway attributes.
 auto eth0
 iface eth0 inet dhcp
-//保存退出后重启板子或者重新启停配置
-root@OK3568-buildroot:/#  ifdown -a											//停止使用配置
-root@OK3568-buildroot:/#  ifup -a												//启用配置
+// After saving and exiting, restart the board or restart the configuration.
+root@OK3568-buildroot:/#  ifdown -a						// Stop using the configuration
+root@OK3568-buildroot:/#  ifup -a							// Enable the configuration
 [  971.278624] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
 udhcpc: started, v1.27.2
 udhcpc: sending discover
@@ -1334,38 +1335,40 @@ udhcpc: sending discover
 [  975.285828] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 ```
 
-### 4.2.18 Web服务
-OK3568开发板预装了lighttpdweb服务器，并且系统启动时已经自动启动了lighttpd服务，在PC端的浏览器中输入开发板的IP 地址即可浏览开发板webserver 中的网页，如下图所示：
+#### 4.1.18 Web Services
+
+The OK3568 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png)
 
-+ 注意：开发板的网络ip需要和PC机的网络IP在同一网段下才可以正常使用该功能，或者PC在开发板所处网络的子网下。
+**Note: To use this function properly, the network IP of the development board needs to be the same network segment as the network IP of the PC, or the PC is under the subnet of the network where the development board is located.**
 
-### 4.2.19 放/录音测试
-开发板上提供了<font style="color:#000000;">标准 3.5mm 音频插座1 个XH2.54-2P 白色插座 P25 引出,可驱动8Ω 喇叭，最高输出功率为 1.3W，</font>在进行放音测试前，请将准备好的耳机插入听筒接口，或将扬声器插入底板上的对应插槽上，使用如下命令进行测试：
+#### 4.1.19 Play/Record Test
+
+Development board provides a standard 3.5mm audio jack and a XH2.54-2P white socket P25 for driving an 8Ω speaker with a maximum output power of 1.3W. Before conducting sound playback testing, please insert your headphones into the earpiece interface or plug the speaker into the corresponding slot on the carrier board. To perform the test, use the following command:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278352613_65d7016b_8ddc_45f2_925a_a4b172267b26.png)
 
-+ 注意：在进行录音测试前，请将准备好的麦克插入3.5mm耳机接口。
+**Note: Plug the prepared microphone into the 3.5mm headphone jack before performing the recording test.**
 
 ```shell
 root@OK3568-buildroot:/# gst-play-1.0 /userdata/media/test.mp3    
-//耳机或扬声器音频播放测试
+// Headphone or speaker audio playback test
 Press 'k' to see a list of keyboard shortcuts.
 Now playing /home/forlinx/audio/test.mp3
 Redistribute latency...
 0:00:05.8 / 0:05:00.0
 root@OK3568-buildroot:/# gst-play-1.0 /userdata/media/test.mp3 --audiosink="alsasink device=hw:1,0"
-// HDMI播放音频测试
+// HDMI audio playback test
 Press 'k' to see a list of keyboard shortcuts.						
 Now playing /home/forlinx/audio/test.mp3
 Redistribute latency...
 0:00:05.3 / 0:05:00.0
 root@OK3568-buildroot:/# arecord -c 2 -r 44100 -f cd mic.wav		
-//录音测试，ctrl + c键停止录音。
+// Recording test. Press Ctrl + c to stop recording.
 Recording WAVE 'mic.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 Aborted by signal Interrupt...
-root@OK3568-buildroot:/# ls						//在当前目录下即可看到生成的录音文件mic.wav
+root@OK3568-buildroot:/# ls						// You can see the generated recording file mic.wav in the current directory
 bin	            home    lost+found   oem         	run     	timestamp  var
 busybox.config	init     	 media       opt            sbin    	tmp
 data	lib          mic.wav	 proc         sdcard        udisk
@@ -1373,16 +1376,15 @@ dev	            lib64   	 misc         rockchip_test  	sys      userdata
 etc	            linuxrc   mnt          root           system  usr
 ```
 
-### 4.2.20 4G EM05-CE模块测试
-	OK3568支持4G模块，开发板启动前接入4G模块，并插入SIM卡，启动开发板。
+#### 4.1.20 4G EM05-CE Module Test
 
-+ **注意：测试时请注意SIM插入方向，在底板上有丝印标识，接入天线，使用中卡进行测试。**
+OK3568 supports the 4G module. Connect the 4G module before starting the development board, and insert the SIM card to start the development board.
+
+**Note: When testing, please pay attention to the direction of SIM insertion, there is a silkscreen marking on the carrier board, access to the antenna, and use the medium card for testing.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278352941_05f448d6_c980_4ea0_add9_ac501ceaeead.png)           ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278353750_da665f9c_b6f0_40f5_a903_9f960f23925f.png)
-
-
 
 ```shell
 root@OK3568-buildroot:/# quectelCM &
@@ -1429,23 +1431,22 @@ PING s-526319.gotocdn.com (211.149.226.120) 56(84) bytes of data.
 rtt min/avg/max/mdev = 434.376/932.642/1430.909/498.267 ms, pipe 2
 ```
 
+#### 4.1.21 5G Quectel RM500U Module
 
+The default model of the 5G module is the Remote RM500U.
 
-### 4.2.21 5G移远RM500U 5G模块
-默认支持5G模块型号为移远RM500U。
-
-+ <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：测试时请注意SIM插入方向，在底板上有丝印标识，接入天线，使用中卡进行测试。**
+**Note: When testing, please pay attention to the direction of SIM insertion, there is a silkscreen marking on the carrier board, access to the antenna, and use the medium card for testing.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278354286_e6598aea_92d6_4f12_9470_9d461beb46e9.png)     ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278354610_75f79799_93f9_40e0_ae84_0061bb80b8a9.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355063_66e3ac36_7487_4bf5_b45b_051b87b454f7.png)5G转接卡搭载移远RM500U5G模块，与OK3568连接，测试方法如下：
+![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355063_66e3ac36_7487_4bf5_b45b_051b87b454f7.png)The 5G adapter card is equipped with RM500U5G module and connected with OK3568. The test method is as follows:
 
-在OK3568 的控制台查看移远RM500U 5G 模块是否识别成功：
+Check the OK3568 console to see if the Remote RM500U 5G module is recognized successfully:
 
 ```shell
-root@OK3568-buildroot:/#  lsusb											//查看usb挂载的设备
+root@OK3568-buildroot:/#  lsusb									//View USB mounted device
 Bus 003 Device 002: ID 0424:2514
-Bus 004 Device 003: ID 2c7c:0900							        //RM500U 5G模块节点
+Bus 004 Device 003: ID 2c7c:0900							  //RM500U 5G Module Node
 Bus 001 Device 001: ID 1d6b:0002
 Bus 002 Device 001: ID 1d6b:0001
 Bus 003 Device 001: ID 1d6b:0002
@@ -1454,14 +1455,14 @@ Bus 005 Device 001: ID 1d6b:0002
 Bus 006 Device 001: ID 1d6b:0001
 ```
 
-查看是否产生dev下的结点:
+Check whether the node under dev is generated:
 
 ```shell
 root@OK3568-buildroot:/# ls /dev/ttyUSB*									
-/dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2  /dev/ttyUSB3	        //这四个结点都是5G模块产生
+/dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2  /dev/ttyUSB3	        //These four nodes are generated by the 5G module.
 ```
 
-联网测试
+Network Test.
 
 ```shell
 root@OK3568-buildroot:/# quectelCM &
@@ -1566,10 +1567,10 @@ udhcpc: lease of 192.168.42.2 obtained from 192.168.42.1, lease time 86400
 [10-19_08:39:08:015] AT< +QNETDEVSTATUS: 10.130.122.198,255.255.255.0,10.130.122.1,,202.99.160.68,202.99.166.4,2408:841e:52f0:a2f4:178f:7578:4e3d:7937,,,,2408:8888:0000:8888:0000:0000:0000:0008,2408:8899:0000:8899:0000:0000:0000:0008
 [10-19_08:39:08:015] AT< OK
 [10-19_08:39:08:015] requestQueryDataCall err=0, call_state=2
-root@OK3568-buildroot:/# ifconfig			//查看网络节点
+root@OK3568-buildroot:/# ifconfig			//View network nodes
 root@OK3568-buildroot:/# ifconfig
 ……
-usb0      Link encap:Ethernet  HWaddr 16:3B:47:30:6C:4E  //5G模块网口名称为usb0
+usb0      Link encap:Ethernet  HWaddr 16:3B:47:30:6C:4E  //The network port name of 5G module is usb0
           inet addr:192.168.42.2  Bcast:192.168.42.255  Mask:255.255.255.0
           inet6 addr: fe80::143b:47ff:fe30:6c4e/64 Scope:Link
           inet6 addr: 2408:841e:52f0:a2f4:143b:47ff:fe30:6c4e/64 Scope:Global
@@ -1580,15 +1581,7 @@ usb0      Link encap:Ethernet  HWaddr 16:3B:47:30:6C:4E  //5G模块网口名称�
           RX bytes:9388 (9.1 KiB)  TX bytes:7059 (6.8 KiB)
 ```
 
-
-
-
-
-
-
-
-
-ping测试
+Ping test
 
 ```shell
 root@OK3568-buildroot:/# ping www.forlinx.com								
@@ -1597,16 +1590,17 @@ PING s-526319.gotocdn.com (211.149.226.120) 56(84) bytes of data.
 64 bytes from 211.149.226.120 (211.149.226.120): icmp_seq=2 ttl=49 time=60.8 ms
 64 bytes from 211.149.226.120 (211.149.226.120): icmp_seq=3 ttl=49 time=81.4 ms
 64 bytes from 211.149.226.120 (211.149.226.120): icmp_seq=4 ttl=49 time=59.5 ms
-^C																//可以ping通，5G联网成功。
+^C									//It can be pinged, and 5G networking is successful.
 --- s-526319.gotocdn.com ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3001ms
 rtt min/avg/max/mdev = 47.205/62.253/81.403/12.274 ms
 ```
 
-### 4.2.22 休眠唤醒测试
-OK3568 Linux 平台支持休眠唤醒。目前长鑫内存，已经将休眠唤醒功能去掉。请核实核心板配置。其他核心板休眠唤醒测试方法如下：
+#### 4.1.22 Sleep Wake-up Test
 
-短按电源键进入休眠，打印信息如下：
+OK3568 Linux platform supports sleep wakeup Currently, Changxin memory products have removed the sleep/wake-up functionality. Please verify and confirm the configuration of the SoM. The test methods for the sleep/wake-up functionality of other SoMs are as follows:
+
+Press the power button for a short time to enter hibernation, and the printed information is as follows:
 
 ```shell
 root@OK3568-buildroot:/# [  146.005510] PM: suspend entry 2019-01-01 00:02:23.751546568 UTC
@@ -1631,7 +1625,7 @@ INFO:    GPIO POWER INFO:
 INFO:           GPIO1_C1
 INFO:           GPIO1_B6
 INFO:    PMU_MODE_CONG: 0x1477bf51
-短按电源键进行唤醒：
+Short press the power button to wake up:
 [   23.308000] bcmsdh_sdmmc_suspend Enter func->num=2
 [   23.308006] dhdsdio_suspend Enter
 [   23.308014] bcmsdh_sdmmc_suspend Exit
@@ -1651,10 +1645,11 @@ INFO:    PMU_MODE_CONG: 0x1477bf51
 [   26.774360] rk_gmac-dwmac fe300000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
 ```
 
-另外当前测试发现蓝牙休眠唤醒之后有问题。休眠之前，可将WIFI/蓝牙模块驱动卸载，唤醒之后，再加载WIFI/蓝牙模块驱动。
+In addition, the current test found that there is a problem after the Bluetooth sleep wakes up. Before hibernation, the WIFI/Bluetooth module driver can be unloaded, and after awakening, the WIFI/Bluetooth module driver can be loaded.
 
-### 4.2.23 NPU OpenCV测试
-OK3568平台默认编译了OpenCV4-4.5.43的库，可以使用如下的命令进行OpenCV的测试。
+#### 4.1.23 NPU OpenCV Test
+
+The OK3568 platform compiles the OpenCV4-4.5.43 library by default, and you can use the following command to test OpenCV.
 
 ```shell
 root@OK3568-buildroot:/# rknn_common_test  /usr/share/model/RK3566_RK3568/mobilenet_v1.rknn  /usr/share/model/cat_224x224.jpg
@@ -1675,16 +1670,15 @@ Begin perf ...
 0.019531 - 264
 ```
 
-	瑞芯微提供了丰富的测试用例，可参考应用笔记中NPU，进行编译测试。
+Rockchip provides a wide range of test cases. You can refer to the NPU section in the application notes for compilation and testing.
 
+#### 4.1.24 CAN Test
 
+OK3568-C platform has two CAN bus interfaces and connection methods: Connect the H terminal of CAN to the H terminal of other CAN devices; connect the L terminal of CAN to the L terminal of other CAN devices.
 
-### 4.2.24 CAN测试
-OK3568-C平台有两路CAN总线接口，CAN 连线方式： CAN 的 H 端子与其它 CAN 设备 H 端连接；CAN的 L 端子与其它 CAN 设备 L 端子连接。
+Short CAN0 and CAN1, and execute the following command at the development board terminal:
 
-短接CAN0和CAN1，在开发板终端执行如下命令：
-
-设置CAN0/CAN1,波特率为500K。
+Set CAN0/CAN1 to 500K baud rate.
 
 ```shell
 root@OK3568-buildroot:/# ifconfig can0 down
@@ -1693,81 +1687,82 @@ root@OK3568-buildroot:/# ip link set can0 type can bitrate 500000
 root@OK3568-buildroot:/# ip link set can1 type can bitrate 500000 
 root@OK3568-buildroot:/# ifconfig can0 up
 root@OK3568-buildroot:/# ifconfig can1 up
-can0设备当服务端（服务端先执行以下命令）
+The can0 device acts as the server (the server should execute the following command first).
 root@OK3568-buildroot:/#  candump can0&
-can1设备当客户端（客户端发送数据）
-root@OK3568-buildroot:/# cansend can1 123#1122334aabbccd			\\发送标准帧
+The can1 device acts as the client (the client sends data).
+root@OK3568-buildroot:/# cansend can1 123#1122334aabbccd			\\ Send a standard frame
 can0  123   [7]  11 22 33 4A AB BC CD
-root@OK3568-buildroot:/# cansend can1 00895441#1122334aabbccd		\\发送扩展帧
+root@OK3568-buildroot:/# cansend can1 00895441#1122334aabbccd		\\ Send an extended frame
 can0  000   [0]  remote request
 can0  00895441   [7]  11 22 33 4A AB BC CD
 ```
 
-+ 注意：发送扩展帧时，由驱动补充一帧标准远程帧来引导扩展帧的正确性，如此操作是为了规避rk3568芯片本身的CAN控制器IP层设计问题，在快速、大量发送扩展帧时，有3%的概率会丢失扩展帧ID，导致丢数据，为确保数据的准确性，原厂提供了两种规避方案，我司默认采用workround帧+扩展帧的方案，workround帧内容可修改，原厂该解决方案存在快速发送扩展帧时ID与内容错乱问题，我司优化了驱动，已修复该问题，经测试验证可正常使用，所以在用户实际项目中需要人为规定一帧无效帧来保证通讯正常，理论上CAN总线可以容忍workround帧的存在，该方案下CAN总线500k波特率下完全由3568发送扩展帧时1s内理论极限值为2900帧，若产品需要1s内发送更多帧，请采用扩展CAN方案。
-+ 关于CAN控制器IP层设计问题详见:
-+ 	原厂资料/Rockchip RK3568&RK3568B2&RK3568J Application Notice-RKAN18055.pdf
-+ 关于workround帧内容修改及使用问题详见:
+**Note:** 
 
-原厂资料/Rockchip_Develop_Guide_Can_CN.pdf
+- **When sending extended frames, the driver supplements a standard remote frame to guide the correctness of the extended frame. This operation is designed to avoid a design issue in the IP layer of the CAN controller of the rk3568 chip. There is a 3% chance of losing the extended frame ID when sending a large quantity of extended frames quickly, leading to data loss. To ensure data accuracy, the manufacturer provides two avoidance schemes. Our company defaults to the solution of using a workround frame and an extended frame. The content of the work round frame can be modified. The original solution has the problem of ID and content disorder when sending the extended frame quickly. Our company has optimized the driver and fixed the problem. After testing, it can be used normally. Therefore, in the actual project of the user, it is necessary to specify an invalid frame artificially to ensure normal communication. Theoretically, the CAN bus can tolerate the existence of work round frames. In this scheme, the theoretical limit value within 1 s is 2900 frames when the extended frame is completely sent by 3568 under the CAN bus 500k baud rate. If the product needs to send more frames within 1 s, please use the extended CAN scheme;**
 
-### 4.2.25 LED测试
-OK3568-C核心板有一个可控蓝色LED灯，板卡上电启动时OKT3568核心板蓝色LED灯闪烁。用户可以关闭该功能，只需要修改设备树文件arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi将leds节点属性default-state = "on"改成”off”, linux,default-trigger 改成"none";
++ **For details about the design of the IP layer of the CAN controller, see:**
++ **Original information/Rockchip RK3568\&RK3568B2\&RK3568J Application Notice-RKAN18055.pdf;**
++ **For more information on the modification and use of workround frames, see: Original information/Rockchip\_Develop\_Guide\_Can\_CN.pdf.**
+
+#### 4.1.25 LED Test
+
+The OK3568-C SoM has a controllable blue LED, and the OKT3568 SoM blue LED blinks when the board is powered up and started. The user can turn off the function, Just modify the device tree arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi to change the LEDs node attribute default-state = "on" to "off", linux,default-trigger to "none";
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355433_91bd1dd1_566c_4971_bf66_11d6dbe10ee2.png)
 
-测试方法如下：
+The testing method is as follows:
 
-1、将蓝色LED灯更改成普通GPIO LED
+1\. Change the blue LED to normal GPIO LED
 
 ```shell
 root@OK3568-buildroot:/# cd /sys/class/leds/work/
 [root@ok3568:/sys/devices/platform/leds/leds/work]# echo gpio > trigger
-点亮LED灯测试
-[root@ok3568:/sys/devices/platform/leds/leds/work]# echo 1 >brightness
-熄灭LED灯测试
-[root@ok3568:/sys/devices/platform/leds/leds/work]# echo 0 >brightness
+LED lighting test
+[root@ok3568:/sys/devices/platform/leds/leds/work]# echo 1 > brightness
+LED extinguishing test
+[root@ok3568:/sys/devices/platform/leds/leds/work]# echo 0 > brightness
 ```
 
-2、将蓝色LED灯更改成心跳灯
+2\. Change the blue LED to heartbeat lights
 
 ```shell
 [root@ok3568:/sys/devices/platform/leds/leds/work]# echo heartbeat > trigger
 ```
 
-3、底板USER LED两个绿灯操作
+3\. Carrier board USER LED (two green lights operation)
 
-将两个绿灯点亮
+Turn on two green lights
 
 ```shell
 root@OK3568-buildroot:/# fltest_userled.sh GPIO3_A7 0
 root@OK3568-buildroot:/# fltest_userled.sh GPIO3_B0 0
 ```
 
-将两个绿灯熄灭
+Turn off two green lights
 
 ```shell
 root@OK3568-buildroot:/# fltest_userled.sh GPIO3_A7 1
 root@OK3568-buildroot:/# fltest_userled.sh GPIO3_B0 1
 ```
 
-### 4.2.26 TYPEC测试
-OK3568-C 包含一个TYPE-C接口，Device模式可以用它来进行刷机，Host模式可以插入普通的USB设备。断电将S2拨码开关拨成OFF，使用Type-C线连接OK3568-C至PC时，配置成Device 模式；断电将S2拨码开关拨成ON，配置成Host模式，插入U盘等设备。
+#### 4.1.26 TYPEC Test
 
-USB3.0和OTG复用，通过拨码开关切换使用，使用USB3.0接口时请确认拨码开关在ON位置：
+The OK3568-C includes a TYPE-C port, which can be used in Device mode for brushing, and Host mode for plugging in regular USB devices. Set the S2 dip switch to OFF when power is off, and configure it to Device mode when connecting the OK3568-C to a PC using a Type-C cable; set the S2 dip switch to ON when power is off, and configure it to Host mode when inserting a device such as a USB flash drive.
+
+USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355735_c0770c7c_23e1_412b_ae35_f136feef044c.png)
 
+**Note: The current SDK version does not support the simultaneous use of Host/Device mode. Please do not insert the USB flash disk and Type-C cable into the USB 3.0 OTG at the same time**.
 
-
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>注意：当前SDK版本不支持Host/Device模式同时使用，请不要同时在USB3.0 OTG插入U盘和Type-C线。
-
-Host模式：
+Host Mode:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png)
 
-Device模式：
+Device Mode:
 
-将文件系统为FAT32格式TF卡插入板卡，在OK3568-C板卡终端输入
+Insert the TF card with the file system in FAT32 format into the card, and input from the OK3568-C card terminal
 
 ```shell
 root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stall=0 removable=1
@@ -1775,23 +1770,25 @@ root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stal
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356261_13231759_c2d6_4b52_985f_fcbaeb92f13c.png)
 
-在window此电脑没有出现盘符，重新插拔一下Type-C线。
+The drive letter does not appear on this computer in the window. Plug and unplug the Type-C cable again.
 
-### 4.2.27 PCIE测试
-系统上电前将minipcie模块插入底板minipcie卡槽。上电后启动linux后，通过lspci可以看到对应设备枚举成功。
+#### 4.1.27 PCIE Test
+
+Insert the minipcie module into the carrier board minipcie card slot before powering up the system. After powering on and starting Linux, you can see that the corresponding device is enumerated successfully through lspci.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png)
 
-由于pcie设备类型较多，有可能默认不被内核支持需自行添加编译设备对应的驱动程序。
+Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.
 
-以E1000 pcie网卡举例，linux内核默认已经包含该驱动。插入网卡后上电启动可以看到枚举信息，并出现以太网接口：
+Take the E1000 PCIe card as an example, the Linux kernel already includes this driver by default. After plugging in the NIC, powering up, and booting, we can see the enumeration information with the Ethernet interface.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356661_e14347c6_4d21_4d8a_aca1_bb52a3a00591.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
 
-### 4.2.28 SQLite3测试
-SQLite3是一款轻型的数据库，是遵守ACID的关系型数据库管理系统，占用资源低。OK3568-C开发板移植的是3.21.0版本的sqlit3。
+#### 4.1.28 SQLite3 Test
+
+SQLite3 is a lightweight database that is ACID compliant relational database management system with low resource usage. OK3568-C development board is ported with version 3.21.0 of sqlit3.
 
 ```shell
 root@OK3568-buildroot:/# sqlite3
@@ -1799,59 +1796,57 @@ SQLite version 3.21.0 2017-10-24 18:55:49
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
-sqlite> create table tbl1 (one varchar(10), two smallint);//创建表tbl1
-sqlite> insert into tbl1 values('hello!',10);//tbl1表内插入数据
+sqlite> create table tbl1 (one varchar(10), two smallint); // Create table tbl1
+sqlite> insert into tbl1 values('hello!', 10); // Insert data into table tbl1
 hello!|10
-sqlite> insert into tbl1 values('goodbye', 20);//tbl1表内插入数据goodbye|20
-sqlite> select * from tbl1;//查询表tbl1中内容
+sqlite> insert into tbl1 values('goodbye', 20); // Insert data into table tbl1
+goodbye|20
+sqlite> select * from tbl1; // Query the contents of table tbl1
 hello!|10
 goodbye|20
-sqlite> delete from tbl1 where one = 'hello!';//删除数据
-sqlite> select * from tbl1;//查询表tbl1中内容
+sqlite> delete from tbl1 where one = 'hello!'; // Delete data
+sqlite> select * from tbl1; // Query the contents of table tbl1
 goodbye|20
-sqlite> .quit			                                //退出数据库（或使用.exit命令）
-root@OK3568-buildroot:/# 
+sqlite> .quit // Exit the database (or use the .exit command)
+root@OK3568-buildroot:/#
 ```
 
+## 5\. OK3568 Platform Multimedia Test
 
+Some application layer software for audio and video on the OK3568 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form. If users need a player with an interface, they can also use qt's multimedia classes, which also support codecs, see the Qt Tests chapter.
 
+OK3568 platform has an internal video processing unit, the VPU, which supports hard codecs for video in the following formats:
 
+Video Decoding: H264, H265, VP8, VP9, etc., max support 4Kx2K@60fps
 
-# 05_OK3568平台多媒体测试
+Video Encoding: H264, H.265, maximum support 1080p@60fps
 
-OK3568平台音视频部分应用层软件采用的是Gstreamer，支持硬件编解码。本节所有的示例均是基于Gstreamer命令行的形式。如果您需要带界面的播放器，您也可以使用qt的多媒体类，同样支持硬编解，可以参考Qt测试章节。
+Table of hardware codec parameters for the OK3568 platform:
 
-OK3568平台内部有一个视频处理单元VPU，支持以下格式的视频硬编解：
+| Video Decoder | Format | Profile           | Resolution | Frame rate |
+| ------------- | ------ | ----------------- | ---------- | ---------- |
+|               | HEVC   | main 10           | 4096x2304  | 60 fps     |
+|               | H.265  | main 10           | 4096x2304  | 60 fps     |
+|               | H.264  | main 10           | 4096x2304  | 30 fps     |
+|               | VP9    | Profile 0/2       | 4096x2304  | 60 fps     |
+|               | VP8    | version2          | 1920x1080  | 60 fps     |
+|               | VC1    |                   | 1920x1080  | 60 fps     |
+|               | MPEG-4 |                   | 1920x1080  | 60 fps     |
+|               | MPEG-2 |                   | 1920x1080  | 60 fps     |
+|               | MPEG-1 |                   | 1920x1080  | 60 fps     |
+|               | H.263  |                   | 720x576    | 60 fps     |
+| Video Encoder | H.264  | BP/MP/HP@level4.2 | 1920x1080  | 60 fps     |
+|               | H.265  | MP@level4.1       | 1920x1080  | 60 fps     |
 
-视频解码： H264, H265, VP8, VP9等，最大支持4Kx2K@60fps
+### 5.1 Audio and Video Playback
 
-视频编码： H264、H.265，最大支持1080p@60fps
+#### 5.1.1 Playing Audio and Video with Gst-play
 
-OK3568平台硬件编解码参数表：
-
-| Video Decoder | Format | Profile | Resolution | Frame rate |
-| --- | --- | --- | --- | --- |
-| | HEVC | main 10 | 4096x2304 | 60 fps |
-| | H.265 | main 10 | 4096x2304 | 60 fps |
-| | H.264 | main 10 | 4096x2304 | 30 fps |
-| | VP9 | Profile 0/2 | 4096x2304 | 60 fps |
-| | VP8 | version2  | 1920x1080 | 60 fps |
-| | VC1 |  | 1920x1080 | 60 fps |
-| | MPEG-4 |  | 1920x1080 | 60 fps |
-| | MPEG-2 |  | 1920x1080 | 60 fps |
-| | MPEG-1 |  | 1920x1080 | 60 fps |
-| | H.263 |  | 720x576 | 60 fps |
-| Video Encoder | H.264 | BP/MP/HP@level4.2 | 1920x1080 | 60 fps |
-| | H.265 | MP@level4.1 | 1920x1080 | 60 fps |
-
-
-## 5.1 音频和视频播放体验
-### 5.1.1使用gplay播放器播放视频和音频
-Gplay 是基于 Gstreamer 实现的音视频播放器，能够自动根据硬件自动选择合适的插件进行音视频播放，运行也十分简单。
+Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
 ```plain
 root@OK3568-buildroot:/# gst-play-1.0 /userdata/media/1080p_30fps_h265.mp4
-//播放带声音视频文件，由耳机放音测试
+//Play the video file with sound, and test the sound by the earphone
 Press 'k' to see a list of keyboard shortcuts.
 Now playing /video/1080p_30fps_h265.mp4
 mpp[884]: mpp_rt: NOT found ion allocator
@@ -1864,10 +1859,11 @@ Redistribute latency...
 0:00:14.3 / 0:00:30.6
 ```
 
-### 5.1.2使用gst-launch 播放视频
+#### 5.1.2 Playing Video with gst-launch
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
-//仅播放视频
+//Play video only
 Setting pipeline to PAUSED ...
 mpp[921]: mpp_rt: NOT found ion allocator
 mpp[921]: mpp_rt: found drm allocator
@@ -1888,10 +1884,11 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.1.3使用gst-launch 播放音频
+#### 5.1.3 Playing Audio with Gst-launch
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/test.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink
-//仅播放音频，由耳机放音测试，
+//Play audio only, test by earphone
 Setting pipeline to PAUSED ...
 Pipeline is PREROLLING ...
 Redistribute latency...
@@ -1907,10 +1904,11 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.1.4使用gst-launch 播放视频和音频
+#### 5.1.4 Playing Video and Audio with gst-launch
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec.! queue ! decodebin ! alsasink
-//播放带声音视频文件，由耳机放音测试
+//Play the video file with sound, and test the sound by the earphone
 mpp[934]: mpp_rt: NOT found ion allocator
 mpp[934]: mpp_rt: found drm allocator
 mpp[934]: mpp_info: mpp version: unknown mpp version for missing VCS info
@@ -1931,10 +1929,12 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 5.2 视频硬编码
-OK3568最大支持1080P@60fps的H.264/H.265视频编码，以及高质量的JPEG编解码。此节命令只适合于内存4G以下的核心板。
+### 5.2 Video Hardware Encoding
 
-### 5.2.1视频硬编码H.264
+OK3568 supports up to 1080p @ 60fps H.264/H.265 video encoding, as well as high-quality JPEG encoding and decoding. This section of commands is only suitable for core boards with less than 4G of memory.
+
+#### 5.2.1 Video Hardware Encoding H.264
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 mp4mux name=mux ! filesink location=test.mp4  videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=1920,height=1080,format=NV12 ! mpph264enc ! h264parse !  mux.video_0 -e
 Setting pipeline to PAUSED ...
@@ -1958,7 +1958,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.2.2视频硬编码H.265
+#### 5.2.2 Video Hardware Encoding H.265
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 mp4mux name=mux ! filesink location=test.mp4 videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=1920,height=1080,format=NV12 ! mpph265enc ! h265parse !  mux.video_0 -e 
 Setting pipeline to PAUSED ...
@@ -1982,12 +1983,14 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 5.3 视频硬解码
-OK3568支持 H264，H265、VP8、VP9视频硬解码，H264解码器支持4K@30fps，H265解码器支持4K@60fps。
+### 5.3 Video Hardware Decoding
 
-OK3568使用mppvideodec组件进行视频硬解码，它的输出格式为：NV12，I420，YV12。
+OK3568 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 4K at 30fps, while the H.265 decoder supports 4K at 60fps.
 
-### 5.3.1解码并播放H264格式视频
+OK3568 uses the mppvideodec component for video hard decoding, and its output formats are: NV12, I420, YV12.
+
+#### 5.3.1 Decoding and Playing H.264 Format Video
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_h264.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
@@ -2011,7 +2014,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.2解码并播放H264格式视频带音频
+#### 5.3.2 Decoding and Playing H264 Format Video with Audio
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_h264.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec  ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 Setting pipeline to PAUSED ...
@@ -2036,7 +2040,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.3解码并播放H265格式视频
+#### 5.3.3 Decoding and Playing H.265 Format Video
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
@@ -2059,7 +2064,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.4解码并播放H265格式视频带音频
+#### 5.3.4 Decoding and Playing Video\&Audio in H265 format
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec  ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 Setting pipeline to PAUSED ...
@@ -2083,7 +2089,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.5解码并播放VP8格式视频
+#### 5.3.5 Decoding and Playing VP8 Format Video
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.webm ! matroskademux ! queue ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
@@ -2105,7 +2112,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.6解码并播放VP8格式视频带音频
+#### 5.3.6 Decoding and Playing VP8 Format Video with Audio
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.webm typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink
 Setting pipeline to PAUSED ...
@@ -2128,7 +2136,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.7解码并播放VP9格式视频
+#### 5.3.7 Decoding and Playing VP9 Format Video
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp9.webm  ! matroskademux ! queue ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
@@ -2151,7 +2160,8 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.8解码并播放VP9格式视频带音频
+#### 5.3.8 Decoding and Playing VP9 Format Video with Audio
+
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp9.webm typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec.! queue ! decodebin ! audioconvert ! audioresample ! alsasink
 Setting pipeline to PAUSED ...
@@ -2175,16 +2185,18 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 5.4 摄像头测试
-OK3568支持OV13850 MIPI摄像头，同时也支持UVC摄像头。首先来测试一下UVC摄像头，这里以RMONCAM FHD 1080P进行测试，将USB摄像头插入开发板，将自动安装uvc驱动。
+### 5.4 Camera Test
 
-### 5.4.1 UVC Camera测试
-**5.4.1.1摄像头识别检测和格式支持查询**
+The OK3568 supports the OV13850 MIPI camera as well as the UVC camera. First of all, let's test the UVC camera. Here we use RMONCAM FHD 1080P to test. Insert the USB camera into the development board, and the UVC driver will be installed automatically.
 
-摄像头识别检测
+#### 5.4.1 UVC Camera Test
+
+##### **5.4.1.1 Camera Recognition Detection and Format Support Queries**
+
+Camera Recognition Detection
 
 ```plain
-root@OK3568-buildroot:/# v4l2-ctl --list-devices		//查看设备结点，可见/dev/video9&10为USB摄像头结点
+root@OK3568-buildroot:/# v4l2-ctl --list-devices		//View the device node, see/dev/video9&10 is USB camera node
 rkisp-statistics (platform: rkisp):
         /dev/video7
         /dev/video8
@@ -2201,10 +2213,10 @@ RMONCAM FHD 1080P: RMONCAM FHD  (usb-fd800000.usb-1):
         /dev/video10
 ```
 
-格式支持查询
+Format Support Queries
 
 ```plain
-root@OK3568-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video9		//查看摄像头支持的格式
+root@OK3568-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video9		//View formats supported by the camera
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture
         [0]: 'MJPG' (Motion-JPEG, compressed)
@@ -2221,9 +2233,9 @@ Size: Discrete 320x240
                         Interval: Discrete 0.033s (30.000 fps)
 ```
 
-**5.4.1.2摄像头采集格式查询和修改**
+##### **5.4.1.2 Camera Capture Format Queries and Modifications**
 
-摄像头采集格式查询
+Camera Capture Format Queries
 
 ```markdown
 root@OK3568-buildroot:/# v4l2-ctl -V -d /dev/video9
@@ -2239,11 +2251,11 @@ Format Video Capture:
         Quantization      : Default (maps to Full Range)
 ```
 
-摄像头采集格式修改
+Camera acquisition format modification
 
 ```plain
-root@OK3568-buildroot:/# v4l2-ctl -v width=640,height=480,pixelformat=YUYV -d /dev/video9 //修改为YUYV
-root@OK3568-buildroot:/# v4l2-ctl -V -d /dev/video9								       //采集格式查询
+root@OK3568-buildroot:/# v4l2-ctl -v width=640,height=480,pixelformat=YUYV -d /dev/video9 //Modify to YUYV
+root@OK3568-buildroot:/# v4l2-ctl -V -d /dev/video9				//Acquisition format query
 Format Video Capture:
         Width/Height      : 640/480
         Pixel Format      : 'YUYV' (YUYV 4:2:2)
@@ -2256,9 +2268,9 @@ Format Video Capture:
         Quantization      : Default (maps to Limited Range)
 ```
 
-**5.4.1.3摄像头图像预览和拍照**
+##### **5.4.1.3 Camera Image Preview and Taking Pictures**
 
-摄像头图像预览
+Camera image preview.
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video9 ! videoconvert ! waylandsink
@@ -2276,7 +2288,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-摄像头拍照
+Camera to take pictures.
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video9 num-buffers=1 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=/pic.jpg
@@ -2295,11 +2307,12 @@ Setting pipeline to READY ...
 [ 9397.089150] uvcvideo: Failed to resubmit video URB (-1).
 Setting pipeline to NULL ...
 Freeing pipeline ...
-//执行完成后查看根目录下生成的pic.jpg文件即可
+//After the execution, check the pic. jpg file generated under the root directory
 ```
 
-### 5.4.2 OV13850 测试
-对于OV13850 等raw sensor，每一个sensor对应5个设备节点：
+#### 5.4.2 OV13850 Test
+
+For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:
 
 ```plain
 root@OK3568-buildroot:/# grep '' /sys/class/video4linux/video*/name
@@ -2316,19 +2329,19 @@ root@OK3568-buildroot:/# grep '' /sys/class/video4linux/video*/name
 /sys/class/video4linux/video9/name:USB Camera: rmoncam 720P
 ```
 
-Mainpath,指 Rockchip ISP的一个输出节点，可输出全分辨率图像，一般用来拍照，抓取 Raw 图。
+Main path, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.
 
-Self Path，指 Rockchip ISP的一个输出节点，最高只能输出1080p分辨率，一般用作预览。
+Self Path refers to an output node of Rockchip ISP, which can only output up to 1080p resolution and is generally used as a preview.
 
-Statistics 用于3A 统计。
+Statistics for 3A statistics.
 
-Input-params 用于3A 参数设置。
+Input-params for 3A parameter setting.
 
-**5.4.2.1摄像头识别检测和格式支持查询**
+##### **5.4.2.1 Camera Recognition Detection and Format Support  Queries**
 
 ```plain
 root@OK3568-buildroot:/# v4l2-ctl --list-devices
-//查看设备节点
+//View device node
 rkisp-statistics (platform: rkisp):
         /dev/video7
         /dev/video8
@@ -2343,7 +2356,7 @@ rkisp_mainpath (platform:rkisp-vir0):
         /dev/video6
         /dev/media0
 root@OK3568-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video0
-//查看摄像头支持的格式与分辨率
+//View the formats and resolutions supported by the camera
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture Multiplanar
 
@@ -2371,18 +2384,16 @@ ioctl: VIDIOC_ENUM_FMT
                 Size: Stepwise 32x32 - 2112x1568 with step 8/8
 ```
 
-
-
-**5.4.2.2摄像头预览**
+##### **5.4.2.2 Camera Preview**
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=NV12, width=640, height=480, framerate=30/1 ! waylandsink	
-//摄像头预览
+//Camera preview
 Setting pipeline to PAUSED ...
 Pipeline is live and does not need PREROLL ...
 Setting pipeline to PLAYING ...
-New clock: GstSystemClock					//可在屏幕上看到摄像头预览画面
-^C									    //Ctrl+C   退出摄像头预览
+New clock: GstSystemClock					//Camera preview can be seen on the screen
+^C									    //Ctrl+C  Exit camera preview
 handling interrupt.
 Interrupt: Stopping pipeline ...
 Execution ended after 0:00:02.667462376
@@ -2392,11 +2403,11 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-**5.4.2.3摄像头拍照**
+**5.4.2.3 Camera to Take Pictures**
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
-//摄像头拍照
+//Camera to take pictures
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info
 mpp_rt: NOT found ion allocator
@@ -2412,7 +2423,7 @@ Setting pipeline to READY ...
 Setting pipeline to NULL ...
 Freeing pipeline ...
 root@OK3568-buildroot:/# ls
-//查看是否生成pic.jpg，可拷贝到pc查看
+//Check whether the pic. jpg is generated, which can be copied to PC for viewing
 bin             init        misc     rockchip_test  system     
 busybox.config  lib         mnt      root           timestamp  var
 data            lib64       oem      run            tmp
@@ -2421,11 +2432,11 @@ etc             lost+found  pic.jpg  sdcard         userdata
 home            media       proc     sys            usr
 ```
 
-**5.4.2.4录制H264格式视频**
+**5.4.2.4 Recording H264 Format Video**
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13850_h264.mp4 t. ! queue ! waylandsink
-//摄像头预览时编码H264
+//Encode H264 during camera preview
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info
 mpp_rt: NOT found ion allocator
@@ -2442,7 +2453,7 @@ Setting pipeline to READY ...
 Setting pipeline to NULL ...
 Freeing pipeline ...
 root@OK3568-buildroot:/#  ls
-//查看是否生成H264文件
+//Check to see if an H264 file is generated
 13850_h264.mp4  home        media    proc           sys        usr
 bin             init        misc     rockchip_test  system     uvc_h264.mp4
 busybox.config  lib         mnt      root           timestamp  var
@@ -2451,11 +2462,11 @@ dev             linuxrc     opt      sbin           udisk
 etc             lost+found  pic.jpg  sdcard         userdata
 ```
 
-**5.4.2.5播放H264格式视频**
+**5.4.2.5 Playing H264 Format Video**
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=13850_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
-//播放H264视频
+//Play the H264 video
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info
 Pipeline is PREROLLING ...
@@ -2474,167 +2485,166 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 5.5 waylandsink定点测试
-本章的测试显示部分均使用的是gstreamer中的waylandsink插件，默认情况下，视频或者Camera窗口随机弹出在桌面上，如果您需要它显示到特定的位置可以指定坐标参数。
+### 5.5 Waylandsink Point Test
 
-坐标（0,0），宽320，高240。
+The test display part of this chapter uses the waylandsink plug-in in gstreamer. By default, the video or Camera window pops up randomly on the desktop. If you need it to display to a specific location, you can specify the coordinate parameters.
+
+Coordinates (0,0), width 320, height 240.
 
 ```plain
 root@OK3568-buildroot:/#
 gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink  "render-rectangle=<0,0,480,360>"
 ```
 
+## 6\. System Flashing
 
+### 6.1 OTG System Flashing
 
+#### 6.1.1 OTG Driver Installation
 
++ Path: OK3568-C (Linux) User Profile\\Linux\\Tool\\DriverAssitant\_v5.12.zip
 
-# 06_烧写系统
+Extract the above path file to any directory and run it with administrator privileges
 
-## 6.1 OTG烧写系统
-### 6.1.1 OTG驱动安装
-+ <font style="color:#000000;">路径：OK3568-C（Linux）用户资料\Linux\工具\</font>DriverAssitant_v5.12.zip
-
-将上述路径文件解压到任意目录，以管理员权限运行
-
-打开DriverInstall.exe 程序。
+Open DriverInstall.exe
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
-点击“驱动安装”。
+Click "Driver Installation”
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
-### 6.1.2 OTG完全烧写测试
-#### 6.1.2.1 RKDevTool烧写测试
-+ <font style="color:#000000;">路径：OK3568-C（Linux）用户资料\Linux\工具\</font> RKDevTool_Release_v3.18.zip
+#### 6.1.2 OTG Full Flashing Test
 
-这是瑞芯微提供的一款开发工具，使用前将其解压到全英文路径下，用Type-C线连接开发板和主机，按住开发板的recovery键不要松开，然后按一下reset键系统复位，大约两秒后松开recovery键。瑞芯微开发工具上将提示发现loader设备。
+##### 6.1.2.1 RKDevTool Flashing Test
 
-+ 注意：识别设备的操作是开发板上电时recover按键是按下的状态。
-+ 注意：理论上瑞芯微开发工具解压目录随意，但有用户反馈瑞芯微开发工具解压目录需为全英文，若打开开发工具后与下图不一致，请考虑解压其在全英文目录下。
-+ 注意：进行OTG烧写时需要注意两点：1、链接OTG线。2、OTG与USB3.0复用，需修改拨码开关，如下图：
++ Path: OK3568-C (Linux) User Profile\\Linux\\Tool\\\</> RKDevTool\_Release\_v3.18.zip
+
+It is a development tool provided by Rockchip. Before use, please unzip it to a directory with an all-English path. Connect the development board to the host using a Type-C cable. Press and hold the recovery key on the development board without releasing it, then press the reset key to reset the system. Release the recovery key approximately two seconds later. The Rockchip development tool will prompt the discovery of the loader device. There will be prompts on the Rockchip development tool : loader device found.
+
+**Note: **
+
+**The condition for recognition is that the development board is powered up and the recover key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. Pay attention to two points during OTG programming: 1. Link the OTG line. 2\. If OTG is multiplexed with the USB 3.0, it is necessary to modify the DIP switch, as shown in the following figure:**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
 
-打开瑞芯微开发工具：
+Open the Rockchip development tool:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
-点击“升级固件”选项卡，点击“固件”按钮选择完整的升级镜像update.img。程序将对固件进行解析，因此需要等待一会。
+Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
 
-点击“高级功能”->“擦除所有”进行擦除操作。
+Click "Advanced Functions"-> "Erase All" to erase.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
 
-点击“升级固件”按钮->“升级”进行升级。
+Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
-+ 注意：升级完成后系统将自动重启两次，第一次重启更新一些信息，操作用户为**[root@buildroot]**，需耐心等待，第二次重启才可以正常使用,操作用户为**[root@OK3568-buildroot:/]**。
+**Note: After the upgrade is completed, the system will automatically restart twice. The first restart updates some information. The operating user is \[root @ buildroot]. Please wait patiently. The second restart can be used normally. The operating user is \[root @ OK3568-buildroot:/].**
 
-#### 6.1.2.2 FactoryTool烧写测试
-FactoryTool是工厂批量OTG烧写时使用到的工具，其不需要读取镜像，可以批量烧写，另外其可烧写某些较大的镜像文件，若RKDevTool兼容性不满足时，亦可尝试该方式，使用前将其解压到全英文路径下，用Type-C线连接开发板和主机，按住开发板的recover键不要松开，然后按一下reset键系统复位，大约两秒后松开recover键。瑞芯微开发工具上将提示发现loader设备。
+##### 6.1.2.2 Factory Tool Flashing Test
 
-+ 注意：识别设备的操作是开发板上电时recover按键是按下的状态。
-+ 注意：理论上解压目录随意，但有用户反馈瑞芯微开发工具解压目录需为全英文，若打开开发工具后与下图不一致，请考虑解压其在全英文目录下。
+FactoryTool is a factory batch OTG burning tool. It does not need to read the image and can do batch burning. In addition, it can burn some larger image files. If RKDevTool compatibility is not satisfied, you can try this method. Before using it, unzip it to a full English path, connect the development board and host computer with a Type-C cable, press and hold the recover button of the development board and don't release it, then press the reset button to reset the system, and release the recover button after about two seconds. There will be prompts on the Rockchip development tool : loader device found
+
+**Note: The condition for recognition is that the development board is powered up and the recover key is in the pressed state.**
+
+**Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
+
+Open the Rockchip development tool:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
-点击选择固件，点击“启动”，此时识别到loader设备将自动开始烧写。
+Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start flashing.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
-正在下载固件：
+Download firmware:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373048_22012107_58e4_4093_85ac_ca9726722f00.png)
 
-升级成功，系统不会重启，需要重新上电启动，如下：
+If the upgrade is successful, the system will restart, and it needs to be powered on again, as shown below:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
+#### 6.1.3 OTG Step-by-step Flashing Test
 
+In the development phase, it is very time-consuming to burn all of them every time, so here is the method of using OTG burning tool to burn in separate partitions.
 
-### 6.1.3 OTG分步烧写测试
-在研发阶段每次都进行全部烧写是非常耗时的，因此这里介绍一下使用OTG烧写工具进行单独分区烧写的方法。
+**Note: The operation of identifying the device is the state in which the recover button is pressed when the development board is powered up.**
 
-+ 注意：识别设备的操作是开发板上电时recover按键是按下的状态。
-
-首先，在OK3568-linux-release编译完成后，在rockdev目录可以找到单独的分区镜像。
+First, after OK3568-linux-release is compiled, a separate partition image can be found in the rockdev directory.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373500_27a1231c_b0f0_4bf8_87d9_7276d40b3ce0.png)
 
-以单独烧写oem和userdata分区为例，演示烧写方法。
+Take the separate flashing of the OEM and userdata partitions as examples to demonstrate the flashing method.
 
-使用Type-C线连接开发板和主机，按住recover键然不要松开然后按reset键系统复位，大约两秒后松开recover键。系统将提示发现loader设备。
+Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
-点击“设备分区表”按钮，将自动读取分区地址。。
+Click the "Device Partition Table" button, and the partition address will be read automatically.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
-提示是否更新下载地址，点击“是”，会报读分区表成功：
+The prompt asks if you want to update the download address. Clicking "Yes" will result in a successful reading of the partition table.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
-点击分区右测区域选择分区镜像，并勾选分区。
+Click the right test area of the partition to select the partition mirror, and check the partition.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
-点击“执行”按钮将自动烧写并重新启动。
+Click the "Execute" button will automatically burn and restart.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
-**MASKROM模式介绍**
+**Introduction to MASKROM mode**
 
-<font style="color:#000000;">如果loader损坏无法进入Loader模式时，可以按住Maskrom键然后按复位键进入maskrom模式进行烧写。</font>
+If the loader is damaged and cannot enter the Loader mode, press and hold the red Maskrom key and then press the reset key to enter the maskrom mode for flashing.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
-此时系统将提示发现一个maskrom设备，烧写流程与loader模式一致，最好使用update.img烧写。
+At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
-+ 注意：maskrom模式下不要点击“设备分区表”，为无效操作。
+**Note: Don't click "Device Partition Table" in maskrom mode, it is invalid.**
 
-## 6.2 TF卡烧写系统
-TF卡制作与烧写测试
+### 6.2 TF Card Flashing
 
-+ 注意：经测试TF卡容量最大为16G，使用32G及以上TF卡可能会烧写失败。
-+ 注意：TF卡烧写时也会进入命令行，为root@buildroot用户，请耐心等待烧写完成
+TF Card Creation and Flashing Test
 
-将用户资料工具目录的SDDiskTool_v1.69.zip拷贝到windows任意目录。以管理员权限运行SD_Firmware_Tool.exe。
+**Note: After testing, the maximum capacity of TF card is 16G, and the TF card of 32G and above may fail to be burned.  When flashing the TF card, it will also enter the command line as the root@buildroot user. Please wait patiently for the flashing to complete.**
+
+Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
-选择磁盘设备，勾选“固件升级”，并选择update.img。点击开始创建。
+Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
-将TF卡插入开发板并启动，系统将自动进入烧写流程。烧写完成后屏幕和串口都将提示：
+Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 
 Please remove SD CARD!!!, wait for reboot.
 
-此时，拔出TF卡，系统自动重新启动(请勿直接断电)。
+At this time, pull out the TF card, the system automatically restarts (please do not power down directly).
 
-批量生产时，可以根据核心板的心跳灯来判断烧写是否完成，烧写过程中的心跳灯变化如下：
+During mass production, check the flashing status by SoM heartbeat light.  Heartbeat light modes are as follows:
 
-1. 内核启动阶段：心跳灯模式，规律的间歇性闪烁。
-2. 烧写准备阶段：EMMC指示灯，熄灭。
-3. 烧写进行阶段：EMMC指示灯，常亮。
-4. 烧写完成阶段：心跳灯模式，规律的间歇性闪烁。
+1. Kernel startup phase: Heartbeat light mode, regular intermittent flashes.
+2. Flashing preparation phase: EMMC indicator light, off.
+3. Flashing in progress phase: EMMC indicator light, on.
+4. Flashing completion phase: Heartbeat light mode, regular intermittent flashes.
 
-烧写状态串口信息：
+Serial port information during the burning process:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png)
 
-若移除TF未自动重启，手动重启也可完成烧写。由上图可见烧写大概持续7分钟，烧写过程中请耐心等待。
-
-
-
-
-
+If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. As shown in the figure above, the burning process takes about 7 minutes. Please wait patiently during the burning process.
