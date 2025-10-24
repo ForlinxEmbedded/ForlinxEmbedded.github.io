@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK3568-C_User_Hardware_Manual
+
    
 
    
