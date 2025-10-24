@@ -1,4 +1,4 @@
-# Linux5.10.160\_User’s Manual
+Linux5.10.160\_User’s Manual
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -21,7 +21,7 @@ This manual is mainly applicable to the Linux5.10.160 operating system on the Fo
 | 24/11/2023                                                   | V1.0                                              | <font style="color:rgb(38, 38, 38);">OK3568-C Linux5.10.160+QT5.15.8\_User’s Manual Initial Version</font><font style="color:rgb(38, 38, 38);">  </font> |
 | <font style="color:rgb(38, 38, 38);">11/12/2023</font><font style="color:rgb(38, 38, 38);">   </font> | V1.1                                              | 1. Removing the Forlinx user from FTP, and the file system has not been added yet; <br />2. Video hardcoding; RGA only supports 0-4G; adding description. |
 | <font style="color:rgb(38, 38, 38);">15/05/2024</font><font style="color:rgb(38, 38, 38);">   </font> | V2.0                                              | <font style="color:rgb(38, 38, 38);">1.</font>  Adding FET3568-C2, OK3568-C2C configuration;<br />2. Correcting the errors in the manual. |
-| 04/07/2025                                                   | <font style="color:rgb(38, 38, 38);"> V2.1</font> | <font style="color:rgb(38, 38, 38);">4.2.22 休眠唤醒测试章节添加长鑫内存已将休眠唤醒功能去掉内容。</font> |
+| 04/07/2025                                                   | <font style="color:rgb(38, 38, 38);"> V2.1</font> | Adding Changxin memory description and removing sleep&wake-up function description in the related section. |
 | <font style="color:rgb(38, 38, 38);">15/10/2025</font>       | V2.2                                              | Adding notes in the WIFI test chapter and the quick startup chapter (The antenna must be connected for startup, otherwise the startup may be affected). |
 
 ## <font style="color:#000000;">Overview</font>
@@ -44,11 +44,11 @@ The connection between SoM and the carrier board is board-to-board, and the main
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
 
-Front
+**Front**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
 
-Back
+**Back**
 
 **Note:**
 
@@ -211,7 +211,7 @@ Path: OK3568-C (Linux) user profile\\tool\\FileZilla\*
 
 Install the file Zilla tool on windows and set it up as shown in the following figure.
 
-**Note: **
+**Note:**
 
 - **This function requires the development board to be connected to the network cable; the host IP is set in the same network segment as the client, ensuring that the host and the client are in the same LAN; username root, password root; after successful login, you can upload, download and delete files anywhere in the file system. In general, it is not recommended to use root to log in to FTP. Please set the user login according to the actual situation;**
 
@@ -257,12 +257,12 @@ Select  display
 
 You can choose from four types of screens: HDMI, MIPI-DSI, eDP, and Lvds. Press the options to switch whether to turn them on. You can switch and select between MIPI - DSI and eDP at Option 2. The option parameter information table is as follows:
 
-| **Terminal input** | **Screen selection parameters ** | **Corresponding meanings for the parameters** |
-| ------------------ | -------------------------------- | --------------------------------------------- |
-| 0                  | Exit                             | Return to the previous menu                   |
-| 1                  | hdmi display off                 | Turn on HDMI screen signal output             |
-| 2                  | mipi\_edp display off            | Turn on MIPI-DSI/eDP screen signal output     |
-| 3                  | lvds\_rgb display off            | Turn on LVDS screen signal output             |
+| **Terminal input** | Screen selection parameters | **Corresponding meanings for the parameters** |
+| ------------------ | --------------------------- | --------------------------------------------- |
+| 0                  | Exit                        | Return to the previous menu                   |
+| 1                  | hdmi display off            | Turn on HDMI screen signal output             |
+| 2                  | mipi\_edp display off       | Turn on MIPI-DSI/eDP screen signal output     |
+| 3                  | lvds\_rgb display off       | Turn on LVDS screen signal output             |
 
 The following is an example of opening the eDP screen, pressing the number 2, and printing the information change:
 
@@ -350,7 +350,7 @@ The desktop is displayed as follows after the development board booting:
 
 The LVDS and MIPI screen connected to the development board can be displayed and touched normally. If it is necessary to turn off a display touch, please refer to the manual 2.5.1 Uboot Menu Dynamic Control to turn off the corresponding display output.
 
-#### 3.1.3 Hardware Decoding Experience
+#### 3.1.3 Hardware Decoding 
 
 Click the desktop icon to open the video player.
 
@@ -514,7 +514,7 @@ After entering the URL and clicking the ping key, the result of the ping will pr
 
 **Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
-#### 3.1.11 Browser Tests
+#### 3.1.11 Browser Test
 
 "Simplebrowser" is a simple and practical web browser. Please ensure smooth network connection when using it, and make sure DNS is available before accessing external websites. By default, the browser launches and accesses the official website of Forlinx Embedded. Click the icon:
 
@@ -528,7 +528,7 @@ The interface is as follows:
 
 Exit this browser via the upper navigation bar File->Quit.
 
-#### 3.1.12 Watchdog Tests
+#### 3.1.12 Watchdog Test
 
 "WatchDog" is an application used to test the watchdog status.
 
@@ -544,7 +544,7 @@ Click start to open the dog feeding function by default and feed the dog regular
 
 When unchecking feed dog, count down 6s and the system enters reboot. It indicates that the Watchdog function is normal.
 
-#### 3.1.13 Key Tests
+#### 3.1.13 Key Test
 
 The "Keypad" is used to test whether the platform's own keys are available:
 
@@ -748,7 +748,7 @@ conservative ondemand userspace powersave interactive performance
 
 The userspace indicates user mode, in which other users' programs can adjust the CPU frequency.
 
-2.\ To view the frequency gear supported by the current CPU;
+2\. To view the frequency gear supported by the current CPU;
 
 ```shell
 root@OK3568-buildroot:/# cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies
@@ -792,7 +792,7 @@ Take OK3568-C as an example. As follows：
 
 The OK3568-C has a DDR4 write bandwidth of about 1480M/s and a read bandwidth of about 5100M/s.
 
-#### 4.1.5 Key Tests
+#### 4.1.5 Key Test
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350041_69289c78_69d0_4604_9725_f359e0d01c07.png)
 
@@ -1581,7 +1581,7 @@ usb0      Link encap:Ethernet  HWaddr 16:3B:47:30:6C:4E  //The network port name
           RX bytes:9388 (9.1 KiB)  TX bytes:7059 (6.8 KiB)
 ```
 
-Ping test
+Ping Test.
 
 ```shell
 root@OK3568-buildroot:/# ping www.forlinx.com								
@@ -1859,7 +1859,7 @@ Redistribute latency...
 0:00:14.3 / 0:00:30.6
 ```
 
-#### 5.1.2 Playing Video with gst-launch
+#### 5.1.2 Playing Video with Gst-launch
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
@@ -2522,9 +2522,7 @@ Click "Driver Installation”
 
 It is a development tool provided by Rockchip. Before use, please unzip it to a directory with an all-English path. Connect the development board to the host using a Type-C cable. Press and hold the recovery key on the development board without releasing it, then press the reset key to reset the system. Release the recovery key approximately two seconds later. The Rockchip development tool will prompt the discovery of the loader device. There will be prompts on the Rockchip development tool : loader device found.
 
-**Note: **
-
-**The condition for recognition is that the development board is powered up and the recover key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. Pay attention to two points during OTG programming: 1. Link the OTG line. 2\. If OTG is multiplexed with the USB 3.0, it is necessary to modify the DIP switch, as shown in the following figure:**
+**Note: The condition for recognition is that the development board is powered up and the recover key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. Pay attention to two points during OTG programming: 1. Link the OTG line. 2\. If OTG is multiplexed with the USB 3.0, it is necessary to modify the DIP switch, as shown in the following figure:**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
 
@@ -2552,9 +2550,11 @@ Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
 FactoryTool is a factory batch OTG burning tool. It does not need to read the image and can do batch burning. In addition, it can burn some larger image files. If RKDevTool compatibility is not satisfied, you can try this method. Before using it, unzip it to a full English path, connect the development board and host computer with a Type-C cable, press and hold the recover button of the development board and don't release it, then press the reset button to reset the system, and release the recover button after about two seconds. There will be prompts on the Rockchip development tool : loader device found
 
-**Note: The condition for recognition is that the development board is powered up and the recover key is in the pressed state.**
+**Note: **
 
-**Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
+- **The condition for recognition is that the development board is powered up and the recover key is in the pressed state;**
+
+- **Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
 
 Open the Rockchip development tool:
 
@@ -2564,9 +2564,7 @@ Click to select the firmware, and click to start. At this time to recognize the 
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
-Download firmware:
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373048_22012107_58e4_4093_85ac_ca9726722f00.png)
+Download firmware.
 
 If the upgrade is successful, the system will restart, and it needs to be powered on again, as shown below:
 
@@ -2600,7 +2598,7 @@ Click the right test area of the partition to select the partition mirror, and c
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
-Click the "Execute" button will automatically burn and restart.
+Click the "Run" button will automatically burn and restart.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
@@ -2638,9 +2636,9 @@ At this time, pull out the TF card, the system automatically restarts (please do
 
 During mass production, check the flashing status by SoM heartbeat light.  Heartbeat light modes are as follows:
 
-1. Kernel startup phase: Heartbeat light mode, regular intermittent flashes.
-2. Flashing preparation phase: EMMC indicator light, off.
-3. Flashing in progress phase: EMMC indicator light, on.
+1. Kernel startup phase: Heartbeat light mode, regular intermittent flashes;
+2. Flashing preparation phase: EMMC indicator light, off;
+3. Flashing in progress phase: EMMC indicator light, on;
 4. Flashing completion phase: Heartbeat light mode, regular intermittent flashes.
 
 Serial port information during the burning process:
