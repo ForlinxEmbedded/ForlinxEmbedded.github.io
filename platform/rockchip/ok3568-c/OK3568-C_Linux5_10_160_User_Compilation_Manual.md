@@ -1,423 +1,429 @@
-﻿# 00_OK3568-C_Linux5.10.160+QT5.15.8用户编译手册
+# Linux5. 10.160\_User’s Compilation Manual
 
-<font style="color:#000000;">免责声明</font>
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
-<font style="color:#000000;">本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。</font>
+## Copyright
 
-<font style="color:#000000;">保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。 </font>
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-# <font style="color:#000000;">概  述</font>
-<font style="color:#333333;">本手册是为了让使用飞凌嵌入式开发板的人员能够快速了解飞凌产品的编译过程，熟悉飞凌产品的编译方式。应用程序需要在</font><font style="color:#000000;">linux操作系统</font><font style="color:#333333;">上先进行交叉编译，才能在开发板上运行，</font><font style="color:#000000;">按照编译手册上的方法，通过实际操作，用户能够完成自己软件代码的编译。</font>
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
 
-<font style="color:#000000;">手册会从环境搭建进行说明，环境搭建过程可能会出现一些不可预见的问题，建议初学者直接使用我们搭建好的开发环境，可以快速上手，缩短开发时间。</font>
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-<font style="color:#000000;">Linux系统通常情况下有三种安装方式：真机双系统、真机单系统、虚拟机。不同安装方式都有其优缺点，本文仅提供在虚拟机中搭建ubuntu的方法。</font><font style="color:#000000;">计算机硬件要求：建议内存至少在6GB及以上，这样在给虚拟机分一部内存运行的同时（虚拟机建议2GB以上），还可以在Windows做其他操作，否则会影响到Windows的操作。</font>
+## Application Scope
 
-+ <font style="color:#000000;">在内容上手册主要分为4个章节描述：</font>
-+ <font style="color:#000000;">第一章主要是VMware的安装，选用的版本为VMware</font>®<font style="color:#000000;"> Workstation 15 Pro15.1.0，用户在使用ubuntu开发环境之前要先安装VMware 。</font>
-+ <font style="color:#000000;">第二章主要是加载飞凌提供的ubuntu开发环境的方法，开发环境为64位ubuntu20.04。</font>
-+ <font style="color:#000000;">第三章主要是搭建新的ubuntu开发环境的方法。本节选用的64位ubuntu20.04为例，描述了ubuntu的创建，由于电脑配置不同，搭建过程可能会出现预料之外的问题，建议初学者直接使用我们搭建好的环境。</font>
-+ <font style="color:#000000;">第四章主要是开发板相关源码编译方法。</font>
-+ <font style="color:#000000;">本手册中一些符号及格式的相关说明：</font>
+This manual is mainly applicable to the Linux5.10.160 operating system on the Forlinx OK3568-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
 
-| **表现形式** | **含义** |
-| :---: | --- |
-|  ⁉️ | <font style="color:#000000;">注意或者是需要特别关注的信息，一定要仔细阅读</font> |
-| 📚 | <font style="color:#000000;">对测试章节做的相关说明</font> |
-| 🛤️ | <font style="color:#000000;">表示相关路径</font> |
-| <font style="color:blue;">蓝色字体</font> | <font style="color:#000000;">指在命令行输入的命令，需要手动输入</font> |
-| <font style="color:black;">黑色字体</font> | 输入命令后的串口输出信息 |
-| **<font style="color:black;">黑色加粗</font>** | <font style="color:#000000;">串口输出信息中的关键信息</font> |
-| <font style="color:#000000;">//</font> | <font style="color:#000000;">对输入指令或输出信息的解释内容</font> |
-| <font style="color:#000000;">用户名@主机名</font> | <font style="color:#000000;">root@ok3568 ：开发板串口登录账户信息，</font><br/><font style="color:#000000;">forlinx@ok3568：开发板网络登录账户信息</font><br/><font style="color:#000000;">forlinx@ubuntu  ：开发环境ubuntu账户信息</font><br/><font style="color:#000000;">用户可通过该信息确定功能操作的环境</font> |
+## Revision History
 
+|    Date    | User Manual Version | Revision History                                             |
+| :--------: | :-----------------: | ------------------------------------------------------------ |
+| 21/10/2023 |        V1.0         | OK3568 User’s Compilation Manual (Version 1.0);<br />**Note: This Compilation Manual is only applicable to the OK3568 development board.** |
+| 11/12/2023 |        V1.1         | Updating the instructions for compiling buildroot separately. |
+| 01/03/2024 |        V1.2         | Fixing in-manual path problem                                |
 
-<font style="color:#000000;">例：打包文件系统后，使用ls查看生成文件的操作</font>
+## Overview
+
+This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application program needs to be cross-compiled on the Linux operating system before it can run on the development board. According to the method in the compilation manual, you can compile your own software code through practical operation.
+
+The manual will provide instructions for setting up the environment but there may be some unforeseen issues during the environment setup process. For beginners, it is recommended to use the pre-configured development environment provided by us. This will allow you to quickly get started and reduce development time.
+
+Linux systems are typically installed in three ways: dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine. Computer hardware requirements: It is recommended to have at least 6GB of memory or more, so that you can allocate some memory to run the virtual machine (the virtual machine is recommended to have more than 2GB) and still do other operations on Windows, otherwise it will affect the performance of Windows.
+
+The manual is mainly divided into four chapters:
+
++ Chapter 1. is mainly about the installation of VMware, and the version used is VMware Workstation 15 Pro15.1.0. You need to install VMware before using the ubuntu development environment;
+
++ Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu20.04;
+
++ Chapter 3. mainly introduces the method of building a new ubuntu development environment; This section uses 64-bit Ubuntu 20.04 as an example to describe the creation of Ubuntu. Due to different computer configurations, there may be unexpected problems in the building process. It is recommended that beginners directly use the environment we have built.
+
++ Chapter 4. mainly introduces the methods of compiling the source code related to the development board.
+
+A description of some of the symbols and formats associated with this manual:
+
+|                          **Format**                          | **Meaning**                                                  |
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+|                             Note                             | Note or information that requires special attention, be sure to read carefully. |
+|                                                              | Relevant notes on the test chapters.                         |
+|                               ️                               | Indicates the related path.                                  |
+| <font style="color:blue;">Blue font on gray background</font> | <font style="color:#000000;">Refers to commands entered at the command line (Manual input required).</font> |
+|         <font style="color:black;">Black font</font>         | Serial port output message after entering a command          |
+|       **<font style="color:black;">Bold black</font>**       | <font style="color:#000000;">Key information in the serial port output message</font> |
+|            <font style="color:#000000;">//</font>            | <font style="color:#000000;">Interpretation of input instructions or output information</font> |
+|                      Username@Hostname                       | <font style="color:#000000;">root@ok3568: development board serial port login account information,</font><br/><font style="color:#000000;">forlinx @ ok3568: development board network login account information</font><br/><font style="color:#000000;">forlinx @ Ubuntu: development environment Ubuntu account information</font><br/>You can determine the environment for function operation through this information. |
+
+<font style="color:#000000;">After packaging the file system, you can use the “ls” command to view the generated files.</font>
 
 ```markdown
-forlinx@ubuntu:~/3568$ ls                                  //列出该目录下的文件
+forlinx@ubuntu:~/3568$ ls                              //List the files in this directory
 OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Linux_fs.tar.bz2.02 OK3568_Linux_fs.tar.bz2.03
 ```
 
++ <font style="color:#000000;">forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu.</font>
++ <font style="color:#000000;">// : Explanation of operation commands is required, but command input is not needed.</font>
++ <font style="color:#0000FF;">ls:</font> <font style="color:#000000;">blue font on a gray background, indicating relevant commands that need to be entered manually.</font>
++ **OK3568\_Linux\_fs:** The bottom black font represents the output information after entering the command, with the bold font indicating the key information, and the packed file system is here.
 
+## 1\. VMware Virtual Machine Software Installation
 
-+ <font style="color:#000000;">forlinx@ubuntu：用户名为forlinx，主机名为ubuntu，表示在开发环境ubuntu中进行操作。</font>
-+ <font style="color:#000000;">// ：对操作指令的解释说明内容，不需要输入</font>
-+ <font style="color:#0000FF;">ls</font><font style="color:#000000;">：灰底蓝色字体，表示需要手动输入的相关命令</font>
-+ **OK3568_Linux_fs：**<font style="color:#000000;">底黑色字体为输入命令后的输出信息，加粗字体为关键信息，此处为打包后的文件系统。</font>
+This chapter mainly introduces the installation of VMware virtual machines, using VMware Workstation 15 Pro v15.1.0 as an example to demonstrate the installation and configuration process of the operating system.
 
-# <font style="color:#000000;">更新记录</font>
-| <font style="color:#000000;">日期</font> | <font style="color:#000000;">手册版本</font> | <font style="color:#000000;">更新记录</font> |
-| :---: | :---: | --- |
-| <font style="color:#000000;">2023.10.21</font> | <font style="color:#000000;">V1.0</font> | <font style="color:#000000;">OK3568用户编译手册第一版；</font><br/><font style="color:#000000;">注：本编译手册只适用于飞凌公司的OK3568 开发板</font> |
-| <font style="color:#000000;">2023.12.11</font> | <font style="color:#000000;">V1.1</font> | <font style="color:#000000;">更新单独编译buildroot 的指令</font> |
-| <font style="color:#000000;">2024.03.01</font> | <font style="color:#000000;">V1.2</font> | <font style="color:#000000;">修复手册内路径问题</font> |
+### 1.1 VMware Software Download and Purchase
 
+Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513268-e1e3d73c-ea58-4db6-86b2-2bcb430bf195.png)
 
+After the download is complete, double-click the installation file to start the installation program.
 
-# 01_VMware虚拟机软件安装
+### 1.2 VMware Software Installation
 
-本章主要介绍VMware虚拟机的安装，以VMware workstation 15 Pro v15.1.0为例展示操作系统的安装配置过程。
+Double-click the startup program to enter the installation wizard.
 
-## 1.1 VMware软件的下载与购买
-[登陆VMware官网https://www.vmware.com/cn.h](https://www.vmware.com/cn.html)[tml下载](https://www.vmware.com/cn.html)Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者使用VMware提供的试用版本。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513453-fcba4324-b61c-4700-a5a0-0dffae59dbbd.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
+Click on "Next".
 
-等待下载完成后双击启动文件启动安装程序。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513616-4d573560-c60f-4f95-a2bf-7b0a38394f83.png)
 
-## 1.2 VMware软件的安装
-双击启动程序进入安装向导。
+Check the terms in the license agreement that I accept, then click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513807-4fea4ba5-6c3f-4774-9046-4ac308ae7838.png)
 
-点击“下一步”。
+Modify the installation location to the partition where you want to install the software on your computer, then click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513983-81c57db7-35b1-4416-bb29-36120e02a747.png)
 
-勾选我接受许可协议中的条款，点击“下一步”。
+Check and click on "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514135-8b46b82c-621d-44fc-89d8-d33018b427f4.png)
 
-修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。
+Check the box to add a shortcut, then click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514310-369d17b9-d01f-4d95-a676-04fb377558fd.png)
 
-勾选，点击“下一步”。
+Click "Installation".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514482-82865f12-b42f-4c32-aca1-30a96a2fa309.png)
 
-勾选添加快捷方式，点击“下一步”。
+Wait for the installation to complete.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514655-325d6ab7-c6cd-4de5-a879-6248cd24fcde.png)
 
-点击“安装”。
+Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
+## 2\. Loading the Existing Ubuntu Development Environment
 
-等待安装完成。
+**Note:**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
++ **It is recommended that beginners use the virtual machine environment built by Forlinx directly. After understanding this chapter, you can directly jump to the compilation chapter for further study;**
++ **The development environment provided is: forlinx (username), forlinx (password).**
 
-点击完成后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。
+There are two ways to use a virtual machine environment in VMware: one is to directly load an existing environment, and the other is to create a new environment. Let's first talk about how to load an existing environment.
 
+First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
+Select the zip file to unzip together
 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548687-41fb4543-911d-4ce3-9b88-09f7fb114c01.png)
 
+Select .vmx as the file to be opened by the virtual machine after the complete decompression.
 
-# 02_加载已有ubuntu开发环境
+Open the virtual machine and select the extracted 3588 development environment.vmx
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：**
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548894-5a126d86-d30f-4f1c-906b-1d615fdf2e0a.png)
 
-+ **建议初学者直接使用飞凌搭建好的虚拟机环境。了解完该章节后可以直接跳转到编译章节。**
-+ **提供开发环境的账户为：forlinx，密码为：forlinx**
+Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549103-fbe0d3f1-43ad-4b37-aa46-27fd9fc4a526.png)
 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549304-2128d94e-45fa-4091-83c8-678157602b7b.png)
 
-在VMware下使用虚拟机的环境有两种方式，一种是直接加载已有的环境，另一种是新建一个环境，我们先来说说如何加载一个已经存在的环境。
+Development environment account no.: forlinx, password: forlinx; after filling in, select Sign in to log in.
 
-首先，下载飞凌提供的开发环境，开发环境资料中有MD5校验文件，用户下载完开发环境资料，先对开发环境压缩包进行MD5校验（MD5校验可以在网络上选择MD5在线工具校验，也可以下载MD5校验工具进行校验，可根据实际情况选择），查看校验码和校验文件中校验码是否一致，若一致则下载文件正常；若不一致，则文件可能有破损，需要重新下载。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549464-41fc41e5-d024-4e97-a993-d6b193bc8aae.png)
 
-选中压缩包一起解压
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549733-cae28152-e433-4a1e-90ab-8a2479049af5.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
+## 3\. New Ubuntu Development Environment Setup
 
-解压完成后选中.vmx为虚拟机要打开的文件。
+**Note: Beginners are not recommended to build the system by themselves. It is suggested to use the existing virtual machine environment. If you do not need to build the environment, you can skip this section. This section mainly explains the process of building the ubuntu system.**
 
-打开虚拟机，选择解压出来的3588开发环境.vmx
+### 3.1 Ubuntu System Setup
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
+#### 3.1.1 Ubuntu Virtual Machine Setup
 
-加载完成后点击开启此虚拟机，即可运行，进入系统的界面。
+Open the VMware software, click on create a new virtual machine. Enter the following interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278531825-28237039-37c8-4a5f-8597-f64b71e7e312.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
+Choose custom, and click “Next”.
 
-	提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532008-920d71ea-3371-425c-9b27-a15b1789fdf9.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
+Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532173-48b35578-2a3d-4aff-9888-513f9b66eaaf.png)
 
+Select Install the operating system later and click “Next”.
 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532371-cd7442c7-21c1-4c8a-8463-24ea3de5f6c1.png)
 
-# 03_搭建新的ubuntu开发环境
+Leave the default and click “Next”.
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：初学者不建议自己搭建系统，建议使用已有虚拟机环境，不需要搭建环境的此节可以跳过本章节主要讲解了ubuntu系统的搭建过程。**
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532534-39687568-6ee3-4284-b373-2104df01f0fb.png)
 
-## 3.1 ubuntu系统搭建
-### 3.1.1 创建ubuntu虚拟机
-打开VMware软件，点击创建新的虚拟机。进入以下界面：
+Modify the virtual machine name and installation location, click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532718-2cd2ea2a-0f97-46d5-ad8b-4f004e889a20.png)
 
-选择自定义，点击“下一步”。
+Set the number of processors as appropriate.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532900-dd3f7357-07c5-4dc4-9fd1-7d367c7a7111.png)
 
-选择对应VMware版本的兼容性，版本可在帮助->关于VMware Workstation中查看，点击“下一步”。
+Set the memory size according to the actual situation. It is recommended to use 16g
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533112-8f49bb5a-64b5-47df-8798-044888bfa83b.png)
 
-选择稍后安装操作系统，点击“下一步”。
+Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533381-8dc68236-561d-4840-abb7-3512def5cecf.png)
 
-保持默认，点击“下一步”。
+The default selection for the IO controller type here is LSI.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533635-d54cda44-50e2-4643-b3d3-54dc41a1bfa6.png)
 
-修改虚拟机名称及安装位置，点击“下一步”。
+The default selection here is also SCSI.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533807-86b2d601-916f-4f7d-b7c0-4a672e97d659.png)
 
-按照实际情况设置处理器数量。
+Choose to create a new virtual disk here.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534036-c400a9dc-bdac-4dde-bd52-d4e721fb4ccd.png)
 
-同样按照实际情况设置内存大小，建议使用16G。
+Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534210-b2fc7391-1c76-4148-80c8-855cd9174698.png)
 
-设置网络类型，默认为NAT模式，点击下一步。后面的步骤保持默认值，直到指定磁盘容量步骤。
+Specify the disk file, the default one here is fine.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534358-9585162d-5c54-42eb-be37-f9361aebf91d.png)
 
-IO控制器类型这里默认选择LSI就可以：
+Click Finish by default.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534538-0cb90337-6bc8-4fc5-8009-267ab1d2617c.png)
 
-这里同样是默认选择SCSI。
+The virtual machine creation is now complete.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.
 
-这里选择创建新的虚拟磁盘：
+#### 3.1.2 System Installation
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+The version of Ubuntu to install is 20.04. First of all, go to the official website of Ubuntu to get the Ubuntu 20.04 64-bit image. The download address is "ubuntu-20.04.6-desktop-amd64.iso" version.
 
-设置磁盘大小为200G，并选择磁盘的存在形式，然后点击“下一步”完成。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534726-3aa57e5a-99a5-4638-a835-5b80b82fc03d.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
+Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-指定磁盘文件，这里默认即可。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534926-94943ef2-c4d9-4ddd-91e9-50c5088dfacc.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
+The "Virtual Machine Settings Menu" pops up as shown below:
 
-默认点击“完成”即可。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535121-beaef4c9-b729-4a86-8299-02e28a716d2d.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
+Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-至此，虚拟机创建完成。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535409-a8fcb60d-f0a2-428c-8be7-0e124dcbc137.png)
 
-下一小节中我们介绍Ubuntu系统在虚拟机中的安装，其在真机中的安装方法与虚拟机类似。这里我们介绍在虚拟机中安装Ubuntu系统的方法。
+After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535587-6fcfdee5-51f1-4e1c-9906-d39fc0048711.png)
 
+After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-### 3.1.2 系统安装
-我们选择安装的Ubuntu 版本是20.04，首先去Ubuntu官网获取Ubuntu20.04 64位镜像，下载地址为：[http://sources.ubuntu](http://sources.ubuntu.com/20.04/)[.com/20.04/](http://sources.ubuntu.com/20.04/)下载“ubuntu-20.04.6-desktop-amd64.iso”这个版本。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535793-fd516f0e-e8ab-4dee-9119-5ad4232b0450.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
+After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-右击刚创建完成的Ubuntu64位 在弹出菜单中选择设置：
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
+Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-弹出“虚拟机设置菜单”根据如下图： 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-点击CD/DVD（SATA），选择使用ISO映像文件，浏览选择前面下载的Ubuntu镜像，然后确定。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
 
-设置好镜像后，保证网络可用，然后开启虚拟机，进行Ubuntu镜像的安装。
+Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537143-ccb45ffe-9c1d-42e6-a4ae-0da143112cbf.png)
 
-开启虚拟机后，等待出现安装界面如下：
+The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537449-a7f018e6-bdb2-4867-9e95-42fa1c7d2cb1.png)
 
-如图左侧选择语言后,点击“Install  Ubuntu”后弹出选择语言界面。Ubuntu默认语言是英文的，当然，也可以选择中文，默认选择的语言在后期也是可以重新设置的，选择完成后continue。
+After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537830-e34fbcf1-8a51-4008-af9d-7f58d0899130.png)
 
-接下来，默认选择continue继续安装，安装过程会很慢，然后点击“continue”：
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538153-32d91128-59b7-4c50-9745-84b3186f5a51.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
+The system interface after the reboot is complete as shown below:
 
-默认，点击Install Now，会弹出下图，点击“continue”即可。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538378-ec2e5454-98ce-4802-820d-82c55f5ae9a8.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
+#### 3.1.3 Basic Ubuntu Installation
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
+After installing the Ubuntu20.04 operating system, there are a few configurations to make.
 
-接下来选择时区，这里点击上海时区或输入Shanghai即可（不同时区根据实际情况选择即可），点击“继续”。最后设置用户名和密码，点击“continue”就会自动安装：
++ **VMware Tools Installation:**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
+Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-安装过程下图，网络不好可以Skip跳过，不影响安装。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538688-9700b495-f48a-4190-9391-8d970fdb36ec.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
+Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-安装完成后显示如下图，点击“Restart Now”重启（或者点击“重新启动客户机”）：
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538895-1625dbb7-305b-4f49-ac94-850a3b19510e.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
+Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539134-a41b7a36-aa5c-4523-a560-8cfce32569f6.png)
 
-重启完成登录后系统界面如下图：
+Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539323-74442df4-84e4-492a-8633-8ed6f333949c.png)
 
-### 3.1.3 Ubuntu的基本配置
-安装好Ubuntu20.04操作系统后，要进行一些配置。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539510-050c7a0a-ec54-4cd5-85a1-9f5e81e426fa.png)
 
-+ **VMware Tools安装：**
-
-接下来安装VMware Tools，如果不安装该工具，在Windows主机和虚拟机之间无法使用复制粘贴、文件拖拽。首先点击VMware 导航栏上的“虚拟机”，然后在下拉框中点击“安装VMware Tools”：
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
-
-完成后进入Ubuntu，桌面会出现VMware Tools的光盘图标，点击进入其中：
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
-
-双击VMwareTools图标，进入后看到一个压缩文件VMwareTools-10.3.10-12406962.tar.gz（不同的虚拟机版本可能会不同），
-
-
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
-
-复制文件到主目录下面（即home 个人用户名的目录下）：
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
-
-按键盘【Ctrl+Alt+T】调出终端命令界面，使用tar命令对VMwareTools安装包解压（使用sudo命令会提示输入密码，根据提示直接输入密码回车即可，Linux系统密码输入无回显，确保输入的密码正确后按回车确认即可）：
+Press the keyboard \[Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the sudo command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):
 
 ```plain
 forlinx@ubuntu:~$ sudo tar -xvf VMwareTools-10.3.10-12406962.tar.gz 
 [sudo] password for forlinx:
 ```
 
-执行完解压命令后，使用ls查看，会出现一个vmware-tools-distrib的文件目录， 进入到该目录
+After executing the extract command, use ls to view the file directory vmware-tools-distrib, and go to the directory
 
 ```plain
 forlinx@ubuntu:~$ ls
 Desktop   examples.desktop   nfs   snap   tftp   VMwareTools-10.3.10-12406962.tar.gz  vmware-tools-distrib   work
-forlinx@ubuntu:~$ cd vmware-tools-distrib/	                      //使用cd命令进入该目录
-forlinx@ubuntu:~/vmware-tools-distrib$ ls                         //查看该目录下的文件
+forlinx@ubuntu:~$ cd vmware-tools-distrib/	  //Use the CD command to enter the directory
+forlinx@ubuntu:~/vmware-tools-distrib$ ls             //View the files in this directory
 bin   caf   doc   etc   FILES   INSTALL   installer   lib   vgauth   vmware-install.pl
 ```
 
-在当前目录下，输入sudo ./vmware-install.pl，进行安装，回车后输入密码，然后就开始安装，遇到[yes]/[no]就输入yes，其他一律回车默认安装就可以。
+In the current directory, enter sudo ./vmware-install.pl to install, enter the password after pressing Enter, and then start the installation. When you encounter \[yes]/\[no], enter yes, and press Enter for the rest to install by default.
 
 ```plain
 forlinx@ubuntu:~/vmware-tools-distrib$ sudo ./vmware-install.pl
-[sudo] password for forlinx: 		     //输入forlinx账户的密码，无回显，无法看到输入内容
+[sudo] password for forlinx: 		     //Enter the password of the forlinx account, no display, cannot see the input content
 ```
 
-安装过程信息较长，此处省略
+The installation process information is long, here omitted.
 
 ```plain
 open-vm-tools packages are available from the OS vendor and VMware recommends 
 using open-vm-tools packages. See http://kb.vmware.com/kb/2073803 for more 
 information.
-Do you still want to proceed with this installation? [no] yes			//输入yes
+Do you still want to proceed with this installation? [no] yes			//Enter yes
 ... ...		
 ```
 
-VMware tools工具完成后，可以实现Windows和Ubuntu之间的文件复制粘贴，虚拟机自适应全显等功能。如果虚拟机不能够全屏显示，可以通过点击查看，选择自动调整大小，点击自动适应客户机，即可实现虚拟的全屏问题，VMware tools安装成功。
+After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539710-8c366a71-823a-4180-8309-32189be7ce07.png)
 
-+ **基本设置：**
++ **Basic Settings:**
 
-在下图位置进行大部分的系统设置。Ubuntu上很多设置的需求都可以在这里完成。
+Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539972-31f94d63-6f34-4904-846e-cd72975c7e99.png)
 
-### 3.1.4 Ubuntu的网络设置
-+ **NAT模式**
+#### 3.1.4 Ubuntu Network Settings
 
-在使用网络前，先确保我们的虚拟机能连接互联网，打开虚拟机设置，网络适配器中的网络桥接模式改为“NAT模式”：
++ **NAT Mode**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
+Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通。这是我们虚拟机上外网最常用的方式。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540173-d56c3ec8-1d83-49da-99f7-6bbd9a9b6830.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png)
+When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540394-95e15661-d1d0-427e-93ed-e365eb39c296.png)
 
-网络设置为动态ip。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540571-3d28eb06-aea3-4fda-8397-e821b2b7fca1.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+The network is set to dynamic ip.
 
-+ **桥接模式：**
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540815-009829ab-476a-45b8-b02e-d7f42bfbe34f.png)
 
-如果在使用TFTP，SFTP等服务器时则需要设置虚拟机的网络联系方式为桥接方式。VMware虚拟网卡设置为桥接模式时，主机网卡和虚拟机网卡通过虚拟网桥进行通信，需要将Ubuntu的IP与主机IP设置在同一个网段。
++ **Bridge Mode:**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541083-4d9634db-a591-45be-ad82-f0c7b1e12e3e.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541277-05740351-022e-45fc-96c7-06caac0e068d.png)
 
- 	设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541434-9c36b6f6-6539-4295-8eec-4df165beb02c.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png)
+Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-+ <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：网络设置部分涉及到的IP以及DNS请按照用户自身的实际环境来设置，手册为举例说明。**
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541630-bf5fd69d-adc1-407d-915f-2503b2055225.png)
 
-### 3.1.5 U盘的加载
-打开虚拟机设置，USB控制器，在兼容性里面选择USB3.0，然后确定。如下图，因为目前大多数电脑都支持USB3.0的接口，如果不设置，当我们插入USB3.0接口，是不能连接到虚拟机的。如下图：
+**Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
+#### 3.1.5 U Disk Loading
 
-虚拟机启动后，插入U盘，虚拟机右下角会多出一个类似“U盘”的图标，右击-->连接即可，然后就可以在文件系统看到多一个目录，说明U盘加载成功，如图：
+Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541851-33d6ec29-11c4-499b-867c-528314eef0ca.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
+After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-### 3.1.6 虚拟机基本库安装
-在进行开发之前，还需要一些其他的必要库，我们使用以下命令逐一安装，安装前需保证网络可正常使用，能上外网：
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542123-ad4e8176-1557-40a0-b545-a4aa290b16d2.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542337-c0fe4886-515f-4fe1-9446-22882a83577e.png)
+
+#### 3.1.6 Virtual Machine Basic Library Installation
+
+Before development, there are some other necessary libraries, we use the following commands to install them one by one, before installation, you need to ensure that the network can be used normally, you can get on the extranet:
 
 ```plain
-forlinx@ubuntu:~$ sudo apt-get update                             //更新下载源信息
-forlinx@ubuntu:~$ sudo apt-get install build-essential            //提供编译程序必须软件包的列表信息
-forlinx@ubuntu:~$ sudo apt-get install libncurses*                //用于生成基于文本的用户界面
-forlinx@ubuntu:~$ sudo apt-get install lzop                       //基于Lzo库的压缩解压工具
-forlinx@ubuntu:~$ sudo apt-get install net-tools                  //网络配置工具
+forlinx@ubuntu:~$ sudo apt-get update                             // Update the information of the download sources
+forlinx@ubuntu:~$ sudo apt-get install build-essential            // Provide the list information of software packages necessary for compiling programs
+forlinx@ubuntu:~$ sudo apt-get install libncurses*                // Used to generate text-based user interfaces
+forlinx@ubuntu:~$ sudo apt-get install lzop                       // A compression and decompression tool based on the Lzo library
+forlinx@ubuntu:~$ sudo apt-get install net-tools                  // Network configuration tools
 ```
 
-### 3.1.7 编译OK3568 Linux源码必要库安装
+#### 3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code
+
 ```shell
-forlinx@ubuntu:~$ sudo apt-get update                                         //更新apt-get下载源
-forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot        //必备工具包的安装
+forlinx@ubuntu:~$ sudo apt-get update                   //Update apt-get download sources
+forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot        //Necessary toolkit installation
 forlinx@ubuntu:~$ sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python-pip libncurses5-dev
 forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmainutils
 ```
 
-这些库文件是自行搭建3568 Linux编译环境时，准备编译Linux源码需要下载的库文件，若不是搭建OK3568 Linux开发环境，可跳过此步骤。
+These library files are the ones that need to be downloaded when compiling the Linux source code by building the 3568 Linux compilation environment by yourself. If you are not building the OK3568 Linux development environment, you can skip this step.
 
-### 3.1.8 增大交换分区
-请确认当前系统 swap 分区大小，若 swap 分区不足会造成编译源码失败，推荐 16G。开发环境内存建议调整到 16G。
+#### 3.1.8 Increasing the Swap Partition
 
-1、 查看 swap 分区情况：
+Please confirm swap partition size of the current system. If the swap partition is insufficient, the compilation of the source code will fail. 16G is recommended. It is recommended to adjust the development environment memory to 16G.
+
+1\. Confirm the swap partition：
 
 ```plain
 forlinx@ubuntu:~$ cat /proc/swaps
 ```
 
-
-
-飞凌提供的虚拟机默认已经配置好 swap 分区，如果您使用其它虚拟机，可通过创建 swap 文件的方式来增加 swap 分区大小：
+The virtual machine provided by Forlinx has been configured with the swap partition by default. If you use other virtual machines, you can increase the size of the swap partition by creating a swap file:
 
 ```plain
 forlinx@ubuntu:~$ sudo swapoff /swapfile
@@ -428,133 +434,129 @@ forlinx@ubuntu:~$ sudo swapon /swapfile
 forlinx@ubuntu:~$ sudo vim /etc/fstab
 ```
 
-<font style="color:#000000;"></font>
-
-<font style="color:#000000;">在 /etc/fstab 文件最后添加如下内容：</font>
+Adding the following at the end of the/etc/fstab file:
 
 ```plain
 forlinx@ubuntu:~$ /swapfile none swap sw 0 0
 ```
 
-2、建议调整开发环境内存至 16G，内存低可能导致编译不通过。
+2\. It is recommended to adjust the memory of the development environment to 16g. Low memory may cause the compilation to fail.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542580-d0fd91fe-bf0c-47fd-aa6f-774dad1fd478.png)
 
+### 3.2 Qt Creator Installation
 
+Copy qt-creator-opensource-linux-x86\_64-4.7.0.run to any directory within the current user’s home directory, and then run the following command.
 
-## 3.2 Qt Creator安装
-将qt-creator-opensource-linux-x86_64-4.7.0.run拷贝至当前用户家目录下的任意目录下，执行下面命令。
-
-+ 路径：OK3568-C（Linux）用户资料\Linux\源码\qt-creator-opensource-linux-x86_64-4.7.0.run
++ Path: OK3568-C（Linux）User's Manual\\Linux\\source code \\qt-creator-opensource-linux-x86\_64-4.7.0.run
 
 ```plain
 forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run                   
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542788-a08554d9-9ff7-485a-a499-6a5b274fd48f.png)
 
-然后会弹出图形界面的安装窗口，按照提示进行安装：
+Then the installation window of the graphical interface will pop up, and install according to the instructions:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)		 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542977-d1772186-fa60-442a-8cf2-6e5cffefaae2.png)		 ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543199-cbc234c5-2d49-43aa-864e-4daf0abe7a4c.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) 	![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543389-eaacabb8-9343-4e45-8626-9a68c043e0a0.png) 	![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543608-c9d367f7-56c3-44b6-829c-04f29286f63d.png)
 
-在线安装的用户需要自己注册测Qt账户，已有Qt账户的直接登录即可，Qt密码要求为：包含大写字母、小写字母、数字，注册登陆成功后，点击next。
+Users who install online need to register their own Qt account. Those who already have a Qt account can log in directly. Qt password requirements are: including capital letters, lowercase letters and numbers. After successful registration and login, click next.
 
-离线安装的用户点击跳过即可。
+Users who install offline can skip it.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543830-11d43ecf-8d67-4bd0-a472-fc52383a77b1.png)
 
-点击next
+Click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544047-02ae511b-f6df-49fc-94ad-50606afa9ac1.png)
 
-用户可根据自己习惯设置安装路径，这边直接默认，点击next
+Users can set the installation path according to their own habits. It is set by default here, so click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544274-25984f38-7e0d-4029-97ec-25fc13e82651.png)
 
-完全安装，点击next
+To fully install, click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544480-43ea98bb-67e7-4632-a1cf-b917e22a17eb.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544690-a23e2f5f-b76b-46c9-8ebc-ef0ddc395677.png)
 
-点击install，等待安装完成。
+Click Install and wait for the installation to complete.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544902-6e395fac-45b1-428e-b5ed-dd3045ed1597.png)
 
-安装完成，点击finish。这时将自动打开Qt界面，也可以通过命令行启动，执行以下命令，以后台方式打开Qt Creator，用户打开时以自己实际安装路径为准：
+When the installation is complete, click Finish. At this time, the Qt interface will be opened automatically. You can also start it through the command line. Execute the following command to open Qt Creator in the backstage. When the user opens it, the actual installation path shall prevail:
 
 ```plain
 forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 forlinx@ubuntu:~$ ./qtcreator &
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278545088-f7954df3-4aa6-40d1-9046-723786b916af.png)
 
-出现Qt Creator工具界面。Qt Creator安装完毕。
+The Qt Creator tool screen appears. Qt Creator is installed.
 
+## 4\. Related Code Compilation
 
+This chapter mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.
 
+### 4.1. Preparation Before Compilation
 
+#### 4.1.1 Description of the Environment
 
-# 04_相关代码编译
++ Development environment OS: Ubuntu22.04 64-bit version
++ Cross-toolchain: aarch64-linux-gnu
++ The board uses the Bootloader version: u-boot-2017.09.
++ Development Board Kernel: Linux-5.10.160
++ Development board porting QT version: qt5.15.8
 
-本章节主要描述开发板相关源码的编译方法，包括内核源码编译、应用程序编译方法。
+#### 4.1.2 Source Code Copy
 
-## 4.1编译前准备
-### 4.1.1 环境说明
-+ 开发环境操作系统：Ubuntu22.04  64位版
-+ 交叉工具链：aarch64-linux-gnu
-+ 开发板使用Bootloader 版本：u-boot-2017.09
-+ 开发板内核版本：linux-5.10.160
-+ 开发板移植QT版本：qt5.15.8
++ Source Code: User Information \\ Linux \\ Source Code \\OK3568\_Linux\_fs.tar.bz2.0\*
 
-### 4.1.2 拷贝源码 
-+ 程序源码：用户资料\Linux\源码\ OK3568_Linux_fs.tar.bz2.0*
-
-创建工作目录
+Create a working directory
 
 ```plain
-forlinx@ubuntu:~$ mkdir -p /home/forlinx/3568							//按照顺序创建工作目录
+forlinx@ubuntu:~$ mkdir -p /home/forlinx/3568	//Create the working directory in order
 ```
 
-将用户资料中的源码文件OK3568_Linux_fs.tar.bz2.0*拷贝到虚拟机/home/forlinx/3568目录。
+Copy the source code file OK3568\_Linux\_fs.tar.bz2.0\* in the user data to the/home/forlinx/3568 directory of the virtual machine.
 
 ```plain
-forlinx@ubuntu:~$ cd /home/forlinx/3568									//切换到工作目录
+forlinx@ubuntu:~$ cd /home/forlinx/3568					//Switch to the working directory
 forlinx@ubuntu:~/3568$ cat OK3568_Linux_fs.tar.bz2.0* > OK3568_Linux_fs.tar.bz2
-forlinx@ubuntu:~/3568$ tar -xvf OK3568_Linux_fs.tar.bz2				//在当然位置解压压缩包
+forlinx@ubuntu:~/3568$ tar -xvf OK3568_Linux_fs.tar.bz2				//Decompress the compressed package in the natural location
 ```
 
-运行命令后等待完成即可。
+Just run the command and wait for it to complete.
 
-+ 工具包路径：OK3568-Linux5.10.160-用户资料\Linux\源码\dl.tar.bz2
++ Toolkit Path: OK3568-Linux5.10.160-User Profile\\Linux\\Source\\dl.tar.bz2
 
-编译buildroot时会根据配置从官网上下载工具包，将用户资料中的dl.tar.bz2下载解压到buildroot目录中，可以减少编译时间。
+When compiling buildroot, you will download the toolkit from the official website according to the configuration, download and extract dl.tar.bz2 from the user profile to the buildroot directory, which can reduce the compilation time.
 
-## 4.2 内核编译
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：**
+### 4.2 Kernel Compilation
 
-+ **初次解压内核源码后，需要先对源码进行整体编译**
-+ **整体编译过后，可根据实际情况再进行单独编译**
-+ **该源码编译需要开发环境运行内存16G及以上，请不要修改我们提供的VM虚拟机镜像配置**
-+ **为缩短首次编译时间，默认全编译直接使用编译好的文件系统镜像，未重新制作文件系统。**
+**Note:**
 
-### 4.2.1 全编译测试
-在终端切换到解压出来的源码路径：
++ **After the kernel source code is decompressed for the first time, the source code needs to be compiled as a whole;**
++ **After compiling as a whole, you can compile separately according to the actual situation;**
++ **The source code compilation requires a development environment with a running memory of 16G or above. Please do not modify the VM virtual machine image configuration provided by us;**
++ **In order to shorten the first compilation time, the default full compilation directly uses the compiled file system image without remaking the file system.**
+
+#### 4.2.1 Full Compilation Test
+
+Switch to the extracted source code path at the terminal:
 
 ```plain
 forlinx@ubuntu:~$ cd /home/forlinx/3568/OK3568_Linux_fs
 ```
 
-
-
-以下操作需要在源码目录下操作，第一遍编译需要指定使用的chip：
+The following operations need to be done in the source directory, and the first compilation needs to specify the chip to use:
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh chip
-/*执行后会有选项输入，如下：*/
+/* Options will be entered after execution，as follows：*/
 Log saved at /home/forlinx/work/3568/OK3568_Linux_fs/output/sessions/2023-10-21_16-45-26
 
 Pick a chip:
@@ -562,7 +564,7 @@ Pick a chip:
 1. OK3568
 2. rk3566_rk3568
 3. rk3588
-Which would you like? [1]: 1 /*输入1后按回车继续。*/
+Which would you like? [1]: 1 /*Enter 1 and press Enter to continue.*/
 Switching to defconfig: /home/forlinx/work/3568/OK3568_Linux_fs/device/rockchip/.chip/OK3568-C-linux_defconfig
 make: Entering directory '/home/forlinx/work/3568/OK3568_Linux_fs/device/rockchip/common'
 #
@@ -571,90 +573,88 @@ make: Entering directory '/home/forlinx/work/3568/OK3568_Linux_fs/device/rockchi
 make: Leaving directory '/home/forlinx/work/3568/OK3568_Linux_fs/device/rockchip/common'
 ```
 
-
-
-之后可进行编译。默认采用的linuxfs 下的文件系统，直接打包的。如果需要重新编译buildroot，需要按单独编译部分单独编译。
+Afterwards, it can be compiled. The file system under linuxfs is used by default, which is directly packaged. If you need to recompile the buildroot, you need to compile it separately as part of the separate compilation.
 
 ```plain
 forlinx@forlinx-ubuntu:~/work/3568/OK3568_Linux_fs$ ./build.sh
 ```
 
-最终的编译效果如下图，（根据实际情况，路径可能会有不同）：
+The final compilation effect is shown in the following figure (the path may be different according to the actual situation):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519464-b89aebf0-bcc5-4f08-85d7-7a0e0cea8f6a.png)
 
-编译成功后，将在OK3568_Linux_fs/rockdev文件夹下生成对应编译工程结果文件，找到其中的镜像文件。
+After successful compilation, the corresponding compilation project result file will be generated under the OK3568\_Linux\_fs/rockdev folder, find the image file there.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519744-a17e751c-a98e-4d42-baa3-928eee7838b6.png)
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：update.img为打包好用于OTG或者TF卡完全烧写用，其它文件为分步烧写使用。**
+**Note:** 
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：3568 5.10SDK中放置了一套提前编译完成的文件系统，在OK3568_Linux_fs/linuxfs目录下，直接执行全编译脚本时会将linuxfs/rootfs.img 拷贝buildroot/output/OK3568/images目录下直接生成编译文件系统的结果以此缩短首次编译生成update.img的时间。需要编译文件系统时，需单独编译，编译完成后会将生成的rootfs.img替换linuxfs/rootfs.img文件，后续执行build.sh仍然使用linuxfs/rootfs.img文件。**
+- **The update. img is packaged for full programming of OTG or TF card, and other files are programmed step by step;**
+- **In the 3568 5.10 SDK, there is a set of pre-compiled file systems located in the OK3568\_Linux\_fs/linuxfs directory. When the full-compile script is run, it automatically copies the linuxfs/rootfs.img file to the buildroot/output/OK3568/images directory, and then generates the result of compiling the file system using this pre-compiled file system. This process is designed to significantly reduce the time needed to produce the update.img file during the initial compilation. When compiling the filesystem, it should be compiled separately. After the compilation is complete, replace the linuxfs/rootfs.img file with the newly generated rootfs.img file. In subsequent executions of build.sh, the linuxfs/rootfs.img file will still be used.**
 
-### 4.2.2 单独编译测试
-进行单独编译前需进行过全编译，在内核源码路径下进行操作。
+#### 4.2.2 Individual Compilation Test
 
-单独编译buildroot 之前，需要将OK3568_Linux_fs/buildroot/package/forlinx/flapp/Config.in
+Full compilation is required before individual compilation, which is done under the kernel source path.
 
-和OK3568_Linux_fs/buildroot/package/forlinx/flapp/flapp.mk如下修改：
+Before you can build buildroot separately, you need to modify OK3568\_Linux\_fs/buildroot/package/forlinx/flapp/Config.in
 
-OK3568_Linux_fs/buildroot/package/forlinx/flapp/Config.in中将depends on BR2_PACKAGE_DWKEYBOARD 去掉并保存退出。
+and OK3568\_Linux\_fs/buildroot/package/forlinx/flapp/flapp.mk as follows:
 
-OK3568_Linux_fs/buildroot/package/forlinx/flapp/flapp.mk 中将FLAPP_DEPENDENCIES的参数中去掉DWKeyboard 保存退出。
+Remove "depends on BR2\_PACKAGE\_DWKEYBOARD" from OK3568\_Linux\_fs/buildroot/package/forlinx/flapp/Config.in and then save and exit.
+
+Remove the DWKeyboard in the parameters of FLAPP\_DEPENDENCIES from OK3568\_Linux\_fs/buildroot/package/forlinx/flapp/flapp.mk
 
 ```plain
-forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh uboot        //单独编译uboot
-//生成uboot.img，生成路径为/OK3568_Linux_fs/u-boot/uboot.img
-forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh kernel        //单独编译内核
-//生成boot.img，生成路径为/OK3568_Linux_fs/kernel/boot.img
-forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh buildroot    //单独编译buildroot文件系统
-//生成rootfs.ext2，生成路径为/OK3568_Linux_fs/buildroot/output/OK3568/image/rootfs.ext2路径下
-//注意3568 5.10 SDK 中在linuxfs目录下内置了出厂的rootfs.img，单独编译buildroot会将其覆盖，若对出厂文件系统有回滚要求的用户，执行单独编译文件系统前，请备份。
-//重新编译制作文件系统时间较长，一般为4~6小时若没有报错退出的信息，请耐心等待。
-forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh recovery     //单独编译recovery文件系统
-//生成rootfs.cpio.gz，生成路径为/OK3568_Linux_fs/output/recovery/ rootfs.cpio.gz
-forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh updateimg    //单独生成update.img
-//使用上述路径的uboot.img、boot.img、rootfs.ext2 生成update.img 路径为 rockdev/update.img
+forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh uboot        // Compile the U-Boot independently
+// Generate uboot.img, and the generation path is /OK3568_Linux_fs/u-boot/uboot.img
+forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh kernel        // Compile the kernel independently
+// Generate boot.img, and the generation path is /OK3568_Linux_fs/kernel/boot.img
+forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh buildroot    // Compile the Buildroot file system independently
+// Generate rootfs.ext2, and the generation path is /OK3568_Linux_fs/buildroot/output/OK3568/image/rootfs.ext2.
+// Note that in the 3568 5.10 SDK, the factory rootfs.img is built - in under the linuxfs directory. Compiling Buildroot independently will overwrite it. If users need to roll back to the factory file system, please back it up before performing the independent compilation of the file system.
+// Re - compiling and making the file system takes a long time, generally 4 - 6 hours. If there is no error exit message, please wait patiently.
+forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh recovery     // Compile the recovery file system independently
+// Generate rootfs.cpio.gz, and the generation path is /OK3568_Linux_fs/output/recovery/ rootfs.cpio.gz
+forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh updateimg    // Generate update.img independently
+// Use uboot.img, boot.img, and rootfs.ext2 from the above paths to generate update.img, and the path is rockdev/update.img 
 ```
 
+The kernel in the update. img is not updated after successful compilation. Please flash /OK3568\_Linux\_fs/kernel/boot.img file step by step; refer to 6.1.3 OTG Flashing Test
 
+**Note: After the user graphical interface configuration modifies the kernel configuration, such as adding the usb-to-serial ch340 driver, execute ./build.sh kernel, burn the boot.img image, and start the development board to find that the graphical configuration does not take effect. You can use one of the following methods to solve it:**
 
-编译成功后update.img里的内核不更新。请分步烧写/OK3568_Linux_fs/kernel/boot.img文件，分步烧写步骤请参考 用户使用手册 “6.1.3 OTG分步烧写测试”章节。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519952-52a94c0e-c1cd-4712-ace8-93361052f010.png)
 
-+ **注意：用户图形界面配置修改过内核配置后，例如增加usb转串口ch340驱动，执行./build.sh kernel，烧写boot.img镜像，启动开发板后发现图形配置未生效，可以使用其中一个方法解决：**
+Method 1: Write the configuration directly to the kernel default configuration file/OK3568\_Linux\_fs/kernel/arch/arm64/configs/OK3568-C-
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
-
-方法1：直接将配置写到内核默认配置文件/OK3568_Linux_fs/kernel/arch/arm64/configs/OK3568-C-
-
-linux_defconfig中：
+linux\_defconfig:
 
 ```plain
 CONFIG_USB_SERIAL_CH341=y
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh kernel
 ```
 
-方法2：图形化配置内核，注释掉源码device/rockchip/common/scripts/mk-kernel.sh下图命令，如下图。
+Method 2: Configure the kernel graphically, and comment out the source code device/rockchip/common/scripts/mk-kernel. sh the commands shown in the following figure.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729748971129-8aaac971-6fc6-46b9-82b1-07ec208f8250.png)
 
-编辑kernel/ Makefile文件
+Compile kernel/ Makefile file.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729748796793-7588d772-02d0-4b6e-a597-68abe1e049a6.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/kernel$ make ARCH=arm64 menuconfig
 ```
 
-用户根据需求配置内核，将配置写到.config文件后，保存退出。
+The user configures the kernel as required, writes the configuration to the .config file and then saves and exits.
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh kernel
 ```
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：用户图形界面配置修改过buildroot配置后，例如增加python3支持，执行./build.sh buildroot，烧写rootfs.ext2镜像，启动开发板后发现图形配置未生效，可以使用其中一个方法解决：**
+**Note: After the user graphical interface configuration modifies the buildroot configuration, such as adding python3 support, execute ./build.sh buildroot, burn the rootfs.ext2 image, and start the development board to find that the graphical configuration does not take effect. You can use one of the following methods to solve it:**
 
-方法1：直接将配置写到buildroot默认配置文件/OK3568_Linux_fs/buildroot/configs/OK3568_defconfig中：
+Method 1: Write the configuration directly to the buildroot default configuration file/OK3568\_Linux\_fs/buildroot/configs/OK3568\_defconfig:
 
 ```plain
 BR2_PACKAGE_PYTHON3=y	
@@ -662,107 +662,113 @@ BR2_PACKAGE_PYTHON3_PY_PYC=y
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh buildroot
 ```
 
-编译过程中弹出以下提示： 
+The following prompt pops up during compilation:
 
-Found old config, override it? (y/n):<font style="color:#0000FF;">y</font>选择y，表示覆盖之前的.config文件。
+Found old config, override it? (y/n):y Select y to override the previous .config file.
 
-方法2：图形化配置buildroot，注释掉device/rockchip/common/scripts/mk-buildroot.sh中下图位置：
+Method 2: Graphically configure the buildroot, and comment out the device/rockchip/common/scripts/mk-the location of the following figure in the buildroot. sh:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729133678368-3f66e00b-a5eb-4e60-9d18-12bfe4052b4b.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/buildroot/output/OK3568$ make menuconfig
 ```
 
-用户根据需求配置buildroot，将配置写到.config文件后，保存退出。
+The user configures buildroot according to requirements, writes the configuration to the .config file, and then saves and exits.
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh buildroot
 ```
 
-**Tips：如单独编译文件系统，并单独烧写后，发现显示界面中程序并没有正确添加，在显示界面中点击无法正确打开，可将源码目录下，buildroot/configs/OK3568_defconfig 中，BR2_PACKAGE_DWKEYBOARD=n 配置项修改为y，重新编译即可恢复正常。**
+**Tips: If you compile the file system separately and flash it separately, and then find that the programs in the display interface are not added correctly and cannot be opened properly when clicked in the display interface, you can change the configuration item BR2\_PACKAGE\_DWKEYBOARD=n to y in buildroot/configs/OK3568\_defconfig under the source code directory, and then re - compile to restore normal operation.**
 
-### 4.2.3 交叉编译链位置
-驱动编译链的源码路径：
+#### 4.2.3 Location of the Cross - compilation Toolchain
+
+The source code path of the driver compilation toolchain:
 
 ```shell
 OK3568-linux-sdk5.10/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
 ```
 
-文件系统应用（QT等）编译链的源码路径：
+The source code path of the compilation toolchain for file system applications (such as QT):
 
 ```shell
 OK3568-linux-sdk5.10/buildroot/output/OK3568/host/bin/aarch64-linux-
 ```
 
-以上路径是已经执行过./build.sh buildroot后的编译链生成位置，如果您使用预置**host.tar.bz2**的方式来编译整包则在编译完后再在以上路径解开**host.tar.bz2**即可获得编译链**。**
+The above paths are the locations where the compilation toolchain is generated after executing ./build.sh buildroot. If you use the pre - set host.tar.bz2 method to compile the entire package, you can obtain the compilation toolchain by unpacking host.tar.bz2 in the above paths after the compilation is completed.
 
-## 4.3 Image文件的使用
-update.img为打包好用于OTG或者TF卡完全烧写用，其它文件为分步烧写使用。单独编译生成的Image文件不会在update.img文件中更新，需使用单步烧写来烧录（详见用户使用手册OTG烧写）。
+### 4.3 Image File Use
 
-## 4.4 Qt Creator环境配置
-Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前需要对Qt Creator的编译环境进行配置。
+The update. img is packaged for full programming of OTG or TF card, and other files are programmed step by step. The Image file, generated by a separate compilation, will not be updated in the update.img file. And it needs to be burned using single-step burn (see user manual OTG burn for details).
 
-### 4.4.1 交叉编译器配置
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：Qt Creator所用的交叉编译器所在路径需全编译源码后生成，为了使用方便，我们在/OK3568-C（Linux）用户资料/工具目录下放置了host.tar.bz2压缩包，可以查看其中/host/bin/qt.conf文件中记录的HostPrefix路径，然后使用我们的开发环境创建绝对路径和HostPrefix记录一致即可 将host.tar.bz2解压到对应的绝对路径后，继续本章节的操作。强烈建议全编译源码后再进行本章节操作。**
+### 4.4. Qt Creator Environment Configuration
 
-1、点击Qt Creator 的Tools ->Options->Kits->Compilers， 然后点击Add ->GCC->C；
+Qt is a cross-platform graphics development library, which supports many operating systems. Before compiling, you need to configure the compiling environment of Qt Creator.
 
-2、Name输入GCC；
+#### 4.4.1 Cross Compiler Configuration
 
-3、Compiler Path点击Browse 选择交叉编译器的路径为：aarch64-linux-gcc和aarch64-linux-g++，如下图所示：
+**Note: The Qt Creator cross-compiler path needs to be generated after source code full compilation. The host.tar.bz2 is provided for convenience under/OK3568-C (Linux) User Materials/Tools. You can see the HostPrefix path recorded in /host/bin/qt.conf. Then use forlinx development environment to create an absolute path that is consistent with the HostPrefix record. After extracting the host. Tar. Bz2 to the corresponding absolute path, continue with the operations in this chapter. It is highly recommended to fully compile the source code before proceeding with this section.**
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">🛤️</font><font style="color:#0000FF;">路径：OK3568_Linux_fs/buildroot/output/OK3568/host/bin</font>
+1\. Click Tools-> Options-> Kits-> Compilers in Qt Creator, and then click Add-> GCC-> C;
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：buildroot下output目录需要源码经过全编译后才可生成。**
+2\. Name enters GCC;
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
+3\. Compiler Path Click Browse to select the cross-compiler path for: aarch64-linux-gcc and aarch64-linux-g++, as shown below:
 
-4、按照同样的方法添加GCC编译器，点击右侧“Add->GCC->C++”，如图所示：
+<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">️</font><font style="color:#0000FF;">Path: OK3568\_Linux\_fs/buildroot/output/OK3568/host/bin</font>
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
+**Note: The output directory under buildroot needs the source code to be fully compiled before it can be generated.**
 
-### 4.4.2 Qt Versions 配置
-1、点击Qt Creator 的Tools ->Options->Qt Versions， 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278520399-97607db9-0b25-4da5-a25f-627035faf646.png)
 
-2、然后点击Add，弹出对话框选择OK3568_Linux_fs/buildroot/output/OK3568/host/bin/qmake
+4\. Follow the same method to add the GCC compiler, click “Add->GCC->C++” on the right, as shown in the figure:
 
-3、点击open添加。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278520769-d05d050c-d4eb-41fe-8191-f158b073c500.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
+#### 4.4.2 Qt Versions Configuration
 
-4、然后会返回 Qt Version配置框，Version name可以自行更改。
+1\. Click Tools- > Options- > Qt Versions in Qt Creator;
 
-5、然后点击Apply及OK。
+2\. Click Add, and select OK3568\_Linux\_fs/buildroot/output/OK3568/host/bin/qmake;
 
-### 4.4.3 Kits 配置
-Kits是一个构建套件，用来构建和选择开发编译环境，对于有多种QT库的项目很有用。将之前添加的交叉编译器和QT Version添加到Kits中，构建适合开发板的编译环境。
+3\. Click open to add;
 
-1、点击Qt Creator 的Tools ->Options->Kits， 然后点击Add，出现配置部分。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521034-d7cf7714-3105-4689-9683-c4a8ed6c6efd.png)
 
-2、Name自行更改。
+4\. Then it will return to the Qt Version configuration box, and the Version name can be changed by itself;
 
-3、Compiler选择GCC。
+5\. Then click Apply and OK.
 
-4、Qt version选择Qt version创建时输入的名字。
+#### 4.4.3 Kits Configuration
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
+Kits is a build kit for building and selecting development build environments useful for projects with multiple QT libraries. Add the previously added cross-compiler and QT Version to Kits to build a compilation environment suitable for the development board.
 
-5、然后点击Apply及OK。
+1\. Click Tools- > Options- > Kits in Qt Creator, and then click Add to display the configuration section;
 
-## 4.5 应用程序编译及运行
-### 4.5.1 编译并运行命令行应用
-本小节使用看门狗测试程序，默认程序拷贝到/home/forlinx/3568目录。 
+2\. Name changes by itself;
 
-1、使用cd命令进入/home/forlinx/work目录
+3\. Compiler selects GCC;
+
+4\. Qt version selects the name entered when the Qt version was created.
+
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521412-b439e3bd-e015-4425-affc-02a52c66f43c.png)
+
+5\. Then click Apply and OK.
+
+### 4.5 Application Compilation and Operation
+
+#### 4.5.1 Command Line Application Compilation and Operation
+
+This subsection uses the watchdog test program, the default program is copied to the /home/forlinx/3568 directory.
+
+1\. Use the cd command to enter the /home/forlinx/work directory;
 
 ```plain
 forlinx@ubuntu:~$ cd /home/forlinx/3568/OK3568_Linux_fs/app/forlinx/forlinx_cmd/fltest_watchdog
 ```
 
-
-
-2、添加交叉编译器路径，使用make进行交叉编译
+2\. Add the cross-compiler path and use make to cross-compile.
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/app/forlinx/forlinx_cmd/fltest_watchdog$ export PATH=/home/forlinx/3568/OK3568_Linux_fs/buildroot/output/OK3568/host/bin/:$PATH
@@ -771,9 +777,7 @@ aarch64-linux-gcc watchdog.c -o fltest_watchdog
 generate fltest_watchdog success!!!
 ```
 
-
-
-用file命令查看生成的文件信息
+Use the file command to view the generated file information
 
 ```plain
 forlinx@ubuntu:~/3568/OK3568_Linux_fs/app/forlinx/forlinx_cmd/fltest_watchdog$ 
@@ -781,11 +785,9 @@ file fltest_watchdog
 fltest_watchdog: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, not stripped
 ```
 
+From the result, you can see that the compiled 64-bit ARM file.
 
-
-通过结果可以看到编译生成的是64位、ARM的文件。
-
-3、将编译生成的fltest_watchdog通过U盘或者ftp等方式拷贝到板子上，比如/forlinx路径下，下述以tf卡为例，拷贝到开发板，运行测试。
+3\. Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/forlinx path. Take the TF card as an example, and copy it to the development board and run the test.
 
 ```plain
 [root@ok3568:/]# cp /run/media/mmcblk1p1/fltest_watchdog /home/forlinx
@@ -794,42 +796,36 @@ fltest_watchdog: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynam
 Watchdog Ticking Away!
 ```
 
+4\. Refer to the chapter "Watchdog Test" in the user's manual for the test;
 
+#### 4.5.2 QT Application Compilation and Running
 
-4、参考用户使用手册“看门狗测试”章节测试。
+Open Qt Creator in the development environment (users open it according to their actual path), click File->Open File or Project in Qt Creator, a pop-up window will appear, select /3568/OK3568\_Linux\_fs/app/forlinx/forlinx\_qt/watchdog/ watchdog.pro
 
-### 4.5.2 编译并运行QT应用程序
-在开发环境打开Qt Creator（用户根据自己的实际路径打开），点击Qt Creator 的File->Open File or Project，弹出窗口，选择/3568/OK3568_Linux_fs/app/forlinx/forlinx_qt/watchdog/watchdog.pro
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521691-446f0d66-a6de-4eb4-b2b9-adbac3c23ffb.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
+After opening the project, the interface is as follows: (If the page is not automatically changed, please select as shown in the screenshot).
 
-打开项目后界面如下：（若没有自动改变页面，请按照截图所示选择）。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521907-882537ff-aab0-4987-a170-8c64515f8de1.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
+Click Configure Project to adapt to the build environment described in the “Qt Creator Environment Configuration” section of this manual.
 
-点击Configure Project后将适配本手册《Qt Creator环境配置》章节中构建的编译环境。
+After selection, the interface is as follows:
 
-选择后界面如下：
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522180-76d20235-a09d-4dff-9cb2-0135a93d5442.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
+Click Build->Clean All to clear it. (If the intermediate file is not cleared, it can be deleted manually).
 
-点击Build->Clean All进行清空。（如果没有清除中间文件可以手动删除）。
+Click Projects to uncheck Shadow build.
 
-点击Projects 取消选中Shadow build。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522421-8c6a5ab7-a9ce-4a72-88be-0902f222e58d.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
+Then click Build-> Build All to compile.
 
-然后点击Build->Build All进行编译。
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522722-eccde718-c389-4662-ba54-bad05baaceb2.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
+After the Build progress bar in the lower right corner is finished, it means that the compilation is finished. At this time, you will see the newly generated binary file fltest\_qt\_watchdog in the /app/forlinx/forlinx\_qt/watchdog directory, as follows:
 
-右下角Build进度条走完之后代表编译完成，此时在路径/app/forlinx/forlinx_qt/watchdog目录下会看到新生成的二进制文件fltest_qt_watchdog，如下：
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278523014-cd2cfd24-0659-4cda-be02-d2ebfe309ef1.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
-
-将编译生成的可执行文件通过U盘或者ftp等方式拷贝到板子上，拷贝到开发板，运行测试即可。
-
-
-
-
-
+Copy the executable file generated by compiling to the board through U disk or FTP, copy it to the development board, and run the test.
