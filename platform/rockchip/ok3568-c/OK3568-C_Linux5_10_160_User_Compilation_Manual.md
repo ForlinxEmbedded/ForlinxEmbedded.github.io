@@ -368,7 +368,7 @@ If TFTP, SFTP and other servers are used, the network contact mode of the virtua
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1-1761282627880.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
@@ -612,7 +612,9 @@ forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh kernel        // Compile the k
 // Generate boot.img, and the generation path is /OK3568_Linux_fs/kernel/boot.img
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh buildroot    // Compile the Buildroot file system independently
 // Generate rootfs.ext2, and the generation path is /OK3568_Linux_fs/buildroot/output/OK3568/image/rootfs.ext2.
-// Note that in the 3568 5.10 SDK, the factory rootfs.img is built - in under the linuxfs directory. Compiling Buildroot independently will overwrite it. If users need to roll back to the factory file system, please back it up before performing the independent compilation of the file system.
+// Note that in the 3568 5.10 SDK, the factory rootfs.img is built - in under the linuxfs
+directory. Compiling Buildroot independently will overwrite it. If users need to roll
+back to the factory file system, please back it up before performing the independent compilation of the file system.
 // Re - compiling and making the file system takes a long time, generally 4 - 6 hours. If there is no error exit message, please wait patiently.
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh recovery     // Compile the recovery file system independently
 // Generate rootfs.cpio.gz, and the generation path is /OK3568_Linux_fs/output/recovery/ rootfs.cpio.gz
