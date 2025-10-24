@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Copyright &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
+  <title>Linux5.10.160_User’s Manual_V2.2 &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -68,159 +68,137 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#application-scope">Application Scope</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#revision-history">Revision History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#overview"><font style="color:#000000;">Overview</font></a></li>
-<li class="toctree-l1"><a class="reference internal" href="#ok3568-c-c2c-development-board-description">1. OK3568-C/C2C Development Board Description</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#linux-5-10-160-system-software-resources-features">1.1 Linux 5.10.160 System Software Resources Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#emmc-memory-partition-table">1.2 EMMC Memory Partition Table</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.10.160_User’s Manual_V2.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview"><font style="color:#000000;">Overview</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568-c-c2c-development-board-description">1. OK3568-C/C2C Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux-5-10-160-system-software-resources-features">1.1 Linux 5.10.160 System Software Resources Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table">1.2 EMMC Memory Partition Table</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#debugging-serial-driver-installation">2.2 Debugging Serial Driver Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#serial-port-login">2.3 Serial Port Login</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#serial-login">2.3.2 Serial Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging-serial-driver-installation">2.2 Debugging Serial Driver Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-login">2.3 Serial Port Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-login">2.3.2 Serial Login</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#network-login">2.4 Network Login</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ssh">2.4.1 SSH</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ftp">2.4.2 FTP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#network-login">2.4 Network Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ssh">2.4.1 SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftp">2.4.2 FTP</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#screen-switching">2.5 Screen Switching</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#dynamic-control-of-uboot-menu">2.5.1 Dynamic Control of Uboot Menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#kernel-device-tree-specification">2.5.2 Kernel Device Tree Specification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-switching">2.5 Screen Switching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-control-of-uboot-menu">2.5.1 Dynamic Control of Uboot Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernel-device-tree-specification">2.5.2 Kernel Device Tree Specification</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#system-shutdown">2.6 System Shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-shutdown">2.6 System Shutdown</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#ok3568-platform-function-test">3. OK3568 Platform Function Test</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#interface-function-test">3.1 Interface Function Test</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction-to-interface-functions">3.1.1 Introduction to Interface Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#introduction-to-touch-functions">3.1.2 Introduction to Touch Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hardware-decoding">3.1.3 Hardware Decoding</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#camera-test">3.1.4 Camera Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#opengl-test">3.1.5 OpenGL Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#music-play-test">3.1.6 Music Play Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#record-test">3.1.7 Record Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#g-5g-test">3.1.8 4G/5G Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wifi-test">3.1.9 WIFI Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#network-configuration-test">3.1.10 Network Configuration Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#browser-test">3.1.11 Browser Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#watchdog-test">3.1.12 Watchdog Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#key-test">3.1.13 Key Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rtc-test">3.1.14 RTC Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spi-test">3.1.15 SPI Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uart-test">3.1.16 UART Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#backlight-test">3.1.17 Backlight Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cpu-frequency-configuration-test">3.1.18 CPU Frequency Configuration Test</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#ok3568-command-line-function-test">4. OK3568 Command Line Function Test</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#command-line-function-test">4.1 Command Line Function Test</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#system-information-query">4.1.1 System Information Query</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fm-test">4.1.2 FM Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#temperature-test">4.1.3 Temperature Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ddr-bandwidth-test">4.1.4 DDR Bandwidth Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">4.1.5 Key Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#serial-port-test">4.1.6 Serial Port Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">4.1.7 SPI Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#watchdog-tests">4.1.8 Watchdog Tests</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#start-the-fltest-watchdog-set-the-time-as-10s-and-feed-the-dog-regularly">4.1.8.1 Start the fltest _ watchdog, set the time as 10s, and feed the dog regularly.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#start-the-fltest-watchdog-restart-set-the-reset-time-to-10-s-and-do-not-feed-the-dog">4.1.8.2 Start the fltest _ watchdog restart, set the reset time to 10 s, and do not feed the dog.</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">4.1.9 WIFI Test</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sta-mode">4.1.9.1 STA Mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ap-mode">4.1.9.2 AP Mode</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#bluetooth-test">4.1.10 Bluetooth Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rtc-function-test">4.1.11 RTC Function Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usb-mouse-test">4.1.12 USB Mouse Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usb-2-0-usb3-0">4.1.13 USB 2.0/USB3.0</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#screen-backlight-adjustment">4.1.14 Screen Backlight Adjustment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tf-card-test">4.1.15 TF Card Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#emmc-test">4.1.16 EMMC Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ethernet-configuration">4.1.17 Ethernet Configuration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fixed-ip-method">4.1.17.1 Fixed IP Method</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#automatic-ip-acquisition-method">4.1.17.2  Automatic IP Acquisition Method</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#web-services">4.1.18 Web Services</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#play-record-test">4.1.19 Play/Record Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#g-em05-ce-module-test">4.1.20 4G EM05-CE Module Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#g-quectel-rm500u-module">4.1.21 5G Quectel RM500U Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sleep-wake-up-test">4.1.22 Sleep Wake-up Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#npu-opencv-test">4.1.23 NPU OpenCV Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#can-test">4.1.24 CAN Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led-test">4.1.25 LED Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#typec-test">4.1.26 TYPEC Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pcie-test">4.1.27 PCIE Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sqlite3-test">4.1.28 SQLite3 Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568-platform-function-test">3. OK3568 Platform Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#interface-function-test">3.1 Interface Function Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction-to-interface-functions">3.1.1 Introduction to Interface Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#introduction-to-touch-functions">3.1.2 Introduction to Touch Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hardware-decoding">3.1.3 Hardware Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#camera-test">3.1.4 Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opengl-test">3.1.5 OpenGL Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#music-play-test">3.1.6 Music Play Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#record-test">3.1.7 Record Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-5g-test">3.1.8 4G/5G Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-test">3.1.9 WIFI Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#network-configuration-test">3.1.10 Network Configuration Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#browser-test">3.1.11 Browser Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#watchdog-test">3.1.12 Watchdog Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key-test">3.1.13 Key Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc-test">3.1.14 RTC Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spi-test">3.1.15 SPI Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uart-test">3.1.16 UART Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#backlight-test">3.1.17 Backlight Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cpu-frequency-configuration-test">3.1.18 CPU Frequency Configuration Test</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#ok3568-platform-multimedia-test">5. OK3568 Platform Multimedia Test</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#audio-and-video-playback">5.1 Audio and Video Playback</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#playing-audio-and-video-with-gst-play">5.1.1 Playing Audio and Video with Gst-play</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#playing-video-with-gst-launch">5.1.2 Playing Video with Gst-launch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#playing-audio-with-gst-launch">5.1.3 Playing Audio with Gst-launch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#playing-video-and-audio-with-gst-launch">5.1.4 Playing Video and Audio with gst-launch</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#video-hardware-encoding">5.2 Video Hardware Encoding</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#video-hardware-encoding-h-264">5.2.1 Video Hardware Encoding H.264</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#video-hardware-encoding-h-265">5.2.2 Video Hardware Encoding H.265</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#video-hardware-decoding">5.3 Video Hardware Decoding</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-h-264-format-video">5.3.1 Decoding and Playing H.264 Format Video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-h264-format-video-with-audio">5.3.2 Decoding and Playing H264 Format Video with Audio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-h-265-format-video">5.3.3 Decoding and Playing H.265 Format Video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-video-audio-in-h265-format">5.3.4 Decoding and Playing Video&amp;Audio in H265 format</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-vp8-format-video">5.3.5 Decoding and Playing VP8 Format Video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-vp8-format-video-with-audio">5.3.6 Decoding and Playing VP8 Format Video with Audio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-vp9-format-video">5.3.7 Decoding and Playing VP9 Format Video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#decoding-and-playing-vp9-format-video-with-audio">5.3.8 Decoding and Playing VP9 Format Video with Audio</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">5.4 Camera Test</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#uvc-camera-test">5.4.1 UVC Camera Test</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#camera-recognition-detection-and-format-support-queries"><strong>5.4.1.1 Camera Recognition Detection and Format Support Queries</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#camera-capture-format-queries-and-modifications"><strong>5.4.1.2 Camera Capture Format Queries and Modifications</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#camera-image-preview-and-taking-pictures"><strong>5.4.1.3 Camera Image Preview and Taking Pictures</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ov13850-test">5.4.2 OV13850 Test</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id5"><strong>5.4.2.1 Camera Recognition Detection and Format Support  Queries</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#camera-preview"><strong>5.4.2.2 Camera Preview</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568-command-line-function-test">4. OK3568 Command Line Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line-function-test">4.1 Command Line Function Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-information-query">4.1.1 System Information Query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fm-test">4.1.2 FM Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#temperature-test">4.1.3 Temperature Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ddr-bandwidth-test">4.1.4 DDR Bandwidth Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">4.1.5 Key Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-test">4.1.6 Serial Port Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">4.1.7 SPI Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#watchdog-tests">4.1.8 Watchdog Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">4.1.9 WIFI Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bluetooth-test">4.1.10 Bluetooth Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc-function-test">4.1.11 RTC Function Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-mouse-test">4.1.12 USB Mouse Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-2-0-usb3-0">4.1.13 USB 2.0/USB3.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#screen-backlight-adjustment">4.1.14 Screen Backlight Adjustment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card-test">4.1.15 TF Card Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#emmc-test">4.1.16 EMMC Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet-configuration">4.1.17 Ethernet Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#web-services">4.1.18 Web Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#play-record-test">4.1.19 Play/Record Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-em05-ce-module-test">4.1.20 4G EM05-CE Module Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-quectel-rm500u-module">4.1.21 5G Quectel RM500U Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sleep-wake-up-test">4.1.22 Sleep Wake-up Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#npu-opencv-test">4.1.23 NPU OpenCV Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-test">4.1.24 CAN Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#led-test">4.1.25 LED Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typec-test">4.1.26 TYPEC Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcie-test">4.1.27 PCIE Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sqlite3-test">4.1.28 SQLite3 Test</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#waylandsink-point-test">5.5 Waylandsink Point Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568-platform-multimedia-test">5. OK3568 Platform Multimedia Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#audio-and-video-playback">5.1 Audio and Video Playback</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#playing-audio-and-video-with-gst-play">5.1.1 Playing Audio and Video with Gst-play</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#playing-video-with-gst-launch">5.1.2 Playing Video with Gst-launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#playing-audio-with-gst-launch">5.1.3 Playing Audio with Gst-launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#playing-video-and-audio-with-gst-launch">5.1.4 Playing Video and Audio with gst-launch</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#system-flashing">6. System Flashing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#otg-system-flashing">6.1 OTG System Flashing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#otg-driver-installation">6.1.1 OTG Driver Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#otg-full-flashing-test">6.1.2 OTG Full Flashing Test</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#rkdevtool-flashing-test">6.1.2.1 RKDevTool Flashing Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#factory-tool-flashing-test">6.1.2.2 Factory Tool Flashing Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-hardware-encoding">5.2 Video Hardware Encoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#video-hardware-encoding-h-264">5.2.1 Video Hardware Encoding H.264</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-hardware-encoding-h-265">5.2.2 Video Hardware Encoding H.265</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#otg-step-by-step-flashing-test">6.1.3 OTG Step-by-step Flashing Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-hardware-decoding">5.3 Video Hardware Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h-264-format-video">5.3.1 Decoding and Playing H.264 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h264-format-video-with-audio">5.3.2 Decoding and Playing H264 Format Video with Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h-265-format-video">5.3.3 Decoding and Playing H.265 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-video-audio-in-h265-format">5.3.4 Decoding and Playing Video&amp;Audio in H265 format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-vp8-format-video">5.3.5 Decoding and Playing VP8 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-vp8-format-video-with-audio">5.3.6 Decoding and Playing VP8 Format Video with Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-vp9-format-video">5.3.7 Decoding and Playing VP9 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-vp9-format-video-with-audio">5.3.8 Decoding and Playing VP9 Format Video with Audio</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#tf-card-flashing">6.2 TF Card Flashing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">5.4 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uvc-camera-test">5.4.1 UVC Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ov13850-test">5.4.2 OV13850 Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#waylandsink-point-test">5.5 Waylandsink Point Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-flashing">6. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#otg-system-flashing">6.1 OTG System Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#otg-driver-installation">6.1.1 OTG Driver Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-full-flashing-test">6.1.2 OTG Full Flashing Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-step-by-step-flashing-test">6.1.3 OTG Step-by-step Flashing Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-card-flashing">6.2 TF Card Flashing</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="OK3568-C_Linux5_10_160_User_Compilation_Manual.html">Linux5. 10.160_User’s Compilation Manual</a></li>
@@ -240,7 +218,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Copyright</li>
+      <li class="breadcrumb-item active">Linux5.10.160_User’s Manual_V2.2</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -249,20 +227,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>Linux5.10.160_User’s Manual</p>
+  <section id="linux5-10-160-users-manual-v2-2">
+<h1>Linux5.10.160_User’s Manual_V2.2<a class="headerlink" href="#linux5-10-160-users-manual-v2-2" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
-<h1>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h1>
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
 <p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
 <section id="application-scope">
-<h1>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h1>
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
 <p>This manual is mainly applicable to the Linux5.10.160 operating system on the Forlinx OK3568-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
 </section>
 <section id="revision-history">
-<h1>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h1>
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Date</p></th>
@@ -295,7 +274,7 @@
 </table>
 </section>
 <section id="overview">
-<h1><font style="color:#000000;">Overview</font><a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
+<h2><font style="color:#000000;">Overview</font><a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>OK3568-C/C2C development board currently provides software documentation for the Linux operating system. This document is the Linux software manual, focusing on relevant functionality testing and explanations for the Linux5.10.160 kernel. Please choose the documentation that matches the image installed on the development board for the operations. You can access the documentation and source code of the software and hardware through the web link provided by Forlinx. Please ask your sales representative for the download link.</p>
 <p><strong>Note:</strong></p>
 <ul class="simple">
@@ -304,7 +283,7 @@
 </ul>
 </section>
 <section id="ok3568-c-c2c-development-board-description">
-<h1>1. OK3568-C/C2C Development Board Description<a class="headerlink" href="#ok3568-c-c2c-development-board-description" title="Link to this heading"></a></h1>
+<h2>1. OK3568-C/C2C Development Board Description<a class="headerlink" href="#ok3568-c-c2c-development-board-description" title="Link to this heading"></a></h2>
 <p>RK3568 is a low-power high-performance processor based on ARM64 architecture. It includes 4-core Cortex-A55 and independent NEON co-processor and neural network plus processor NPU. It can be applied to computers, mobile phones, personal mobile Internet and digital multimedia devices.</p>
 <p>FET3568-C and FET3568-C2 SoM have the same pin definition and can share a common carrier board. When FET3568-C is combined with the OK3568-C carrier board, the development board name is OK3568-C development board; when FET3568-C2 is combined with the OK3568-C carrier board, the development board name is OK3568-C2C development board.</p>
 <p>The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:</p>
@@ -315,7 +294,7 @@
 <p><strong>Note:</strong></p>
 <p><strong>This software manual does not describe the hardware parameters. Before referring to this manual for software development, please read “OK3568-C &amp; OK3568-C2C _ Hardware Manual” under the path of “Hardware Data \ User Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
 <section id="linux-5-10-160-system-software-resources-features">
-<h2>1.1 Linux 5.10.160 System Software Resources Features<a class="headerlink" href="#linux-5-10-160-system-software-resources-features" title="Link to this heading"></a></h2>
+<h3>1.1 Linux 5.10.160 System Software Resources Features<a class="headerlink" href="#linux-5-10-160-system-software-resources-features" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Device</strong></p></th>
@@ -412,7 +391,7 @@
 </table>
 </section>
 <section id="emmc-memory-partition-table">
-<h2>1.2 EMMC Memory Partition Table<a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h2>
+<h3>1.2 EMMC Memory Partition Table<a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h3>
 <p>The following table shows the eMMC memory partition information for the Linux operating system (calculated with a block size of 512bit):</p>
 <table class="docutils align-default">
 <thead>
@@ -504,9 +483,9 @@ Number  Start (sector)    End (sector)  Size Name
 </section>
 </section>
 <section id="fast-startup">
-<h1>2. Fast Startup<a class="headerlink" href="#fast-startup" title="Link to this heading"></a></h1>
+<h2>2. Fast Startup<a class="headerlink" href="#fast-startup" title="Link to this heading"></a></h2>
 <section id="preparation-before-startup">
-<h2>2.1 Preparation Before Startup<a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h2>
+<h3>2.1 Preparation Before Startup<a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>12V2A or 12V3A DC Power Cable</p></li>
 <li><p>Debugging serial cable</p></li>
@@ -515,15 +494,15 @@ Number  Start (sector)    End (sector)  Size Name
 <p><img alt="Image" src="_images/1719278320996_e105caf3_f44c_4236_9713_8a433603e88c.png" /></p>
 </section>
 <section id="debugging-serial-driver-installation">
-<h2>2.2 Debugging Serial Driver Installation<a class="headerlink" href="#debugging-serial-driver-installation" title="Link to this heading"></a></h2>
+<h3>2.2 Debugging Serial Driver Installation<a class="headerlink" href="#debugging-serial-driver-installation" title="Link to this heading"></a></h3>
 <p>The debugging serial port of the OK3568-C - C platform uses a Type - C interface. There is an on - board USB to UART chip, so there’s no need to purchase a USB to serial port debugging tool. It is extremely simple and convenient to use.</p>
 <p>To install the driver, please use the driver package CP210x _ VCP _ Windows _ XP _ Vista. Zip provided in the \ Linux \ Tools \ directory of the user profile.</p>
 <p>Select to run CP210xVCPInstaller _ x86.exe for 32-bit operating system and CP210xVCPInstaller _ x64.exe for 64-bit operating system after decompression.</p>
 </section>
 <section id="serial-port-login">
-<h2>2.3 Serial Port Login<a class="headerlink" href="#serial-port-login" title="Link to this heading"></a></h2>
+<h3>2.3 Serial Port Login<a class="headerlink" href="#serial-port-login" title="Link to this heading"></a></h3>
 <section id="serial-port-connection-settings">
-<h3>2.3.1 Serial Port Connection Settings<a class="headerlink" href="#serial-port-connection-settings" title="Link to this heading"></a></h3>
+<h4>2.3.1 Serial Port Connection Settings<a class="headerlink" href="#serial-port-connection-settings" title="Link to this heading"></a></h4>
 <p><strong>Description:</strong></p>
 <ul class="simple">
 <li><p><strong>Serial port terminal login user: serial port terminal automatically logs in (user: root, password root);</strong></p></li>
@@ -540,7 +519,7 @@ Number  Start (sector)    End (sector)  Size Name
 <p><img alt="Image" src="_images/1719278321755_7f70b87a_57c6_4aab_ae10_4e27e83acf4d.png" /></p>
 </section>
 <section id="serial-login">
-<h3>2.3.2 Serial Login<a class="headerlink" href="#serial-login" title="Link to this heading"></a></h3>
+<h4>2.3.2 Serial Login<a class="headerlink" href="#serial-login" title="Link to this heading"></a></h4>
 <p>After the terminal software on the PC side is set, connect the PC and the development board through the serial port cable, and power on after connecting the power supply. The startup information can be seen through the terminal software.</p>
 <p>The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:</p>
 <p><img alt="Image" src="_images/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png" /></p>
@@ -552,10 +531,10 @@ Number  Start (sector)    End (sector)  Size Name
 </section>
 </section>
 <section id="network-login">
-<h2>2.4 Network Login<a class="headerlink" href="#network-login" title="Link to this heading"></a></h2>
+<h3>2.4 Network Login<a class="headerlink" href="#network-login" title="Link to this heading"></a></h3>
 <p>In addition to logging in via the debugging serial port, the OK3568 supports SSH network login to the development board and also supports FTP file transfer. The following example uses an IP address of 172.16.0.76 for the development board to illustrate the use of network tools. To modify the network IP, use the command “ifconfig eth0 172.16.0.76”. The development board and PC should be connected to the same switch or directly connected via an Ethernet cable.</p>
 <section id="ssh">
-<h3>2.4.1 SSH<a class="headerlink" href="#ssh" title="Link to this heading"></a></h3>
+<h4>2.4.1 SSH<a class="headerlink" href="#ssh" title="Link to this heading"></a></h4>
 <p>OK3568 development board supports SSH service and automatically starts it during boot up. After setting the IP address, the board can be used as an SSH server. You can log in to the development board via SSH for development and debugging, as well as use scp for file transfer.</p>
 <p><strong>Note:</strong></p>
 <ul class="simple">
@@ -568,7 +547,7 @@ Number  Start (sector)    End (sector)  Size Name
 <p><img alt="Image" src="_images/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png" /></p>
 </section>
 <section id="ftp">
-<h3>2.4.2 FTP<a class="headerlink" href="#ftp" title="Link to this heading"></a></h3>
+<h4>2.4.2 FTP<a class="headerlink" href="#ftp" title="Link to this heading"></a></h4>
 <p>OK3568 development board supports FTP service and automatically starts when powered on. Once you’ve set the IP address, it can be used as an FTP server. The following describes how to utilize the FTP tool for file transfer.</p>
 <p>Path: OK3568-C (Linux) user profile\tool\FileZilla*</p>
 <p>Install the file Zilla tool on windows and set it up as shown in the following figure.</p>
@@ -582,11 +561,11 @@ Number  Start (sector)    End (sector)  Size Name
 </section>
 </section>
 <section id="screen-switching">
-<h2>2.5 Screen Switching<a class="headerlink" href="#screen-switching" title="Link to this heading"></a></h2>
+<h3>2.5 Screen Switching<a class="headerlink" href="#screen-switching" title="Link to this heading"></a></h3>
 <p>The OK3568 supports multiple screen interfaces such as LVDS/LCD, MIPI DSI/eDP, and HDMI, enabling the same or different content to be displayed on three screens simultaneously. Currently, there are three ways to control screen switching: first, dynamic control via the U-Boot menu; second, specification in the kernel device tree; third, control using the Qt application Ubootmenu.</p>
 <p><strong>Note: Screen switching involves touch - screen switching. In the factory - installed image, the LVDS, MIPI, and HDMI interfaces all output video images by default. The touch function is set to the LVDS screen by default. If you want to use the MIPI touch screen, please turn off the LVDS screen output during the screen selection stage.</strong></p>
 <section id="dynamic-control-of-uboot-menu">
-<h3>2.5.1 Dynamic Control of Uboot Menu<a class="headerlink" href="#dynamic-control-of-uboot-menu" title="Link to this heading"></a></h3>
+<h4>2.5.1 Dynamic Control of Uboot Menu<a class="headerlink" href="#dynamic-control-of-uboot-menu" title="Link to this heading"></a></h4>
 <p>This method switches screens without recompiling and flashing in existing supported screens.</p>
 <p>Press ctrl + C at the serial port terminal in the uboot self-starting process to pop up the control options:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Hit key to stop autoboot(&#39;CTRL+C&#39;):  0
@@ -669,7 +648,7 @@ Select  display
 <p>After the screen selection is completed, you can also press the reset key of the development board to restart, and it will take effect after starting.</p>
 </section>
 <section id="kernel-device-tree-specification">
-<h3>2.5.2 Kernel Device Tree Specification<a class="headerlink" href="#kernel-device-tree-specification" title="Link to this heading"></a></h3>
+<h4>2.5.2 Kernel Device Tree Specification<a class="headerlink" href="#kernel-device-tree-specification" title="Link to this heading"></a></h4>
 <p>This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again</p>
 <p><strong>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
 <p>The device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi</p>
@@ -684,27 +663,27 @@ Select  display
 </section>
 </section>
 <section id="system-shutdown">
-<h2>2.6 System Shutdown<a class="headerlink" href="#system-shutdown" title="Link to this heading"></a></h2>
+<h3>2.6 System Shutdown<a class="headerlink" href="#system-shutdown" title="Link to this heading"></a></h3>
 <p>In general, you can turn off the power directly, but avoid doing so during important operations like data storage or usage to prevent irreversible file damage. Damaged files may require firmware rewrite. To ensure that data is not completely written, enter the sync command to complete data synchronization before turning off the power.</p>
 <p><strong>Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.</strong></p>
 </section>
 </section>
 <section id="ok3568-platform-function-test">
-<h1>3. OK3568 Platform Function Test<a class="headerlink" href="#ok3568-platform-function-test" title="Link to this heading"></a></h1>
+<h2>3. OK3568 Platform Function Test<a class="headerlink" href="#ok3568-platform-function-test" title="Link to this heading"></a></h2>
 <p>OK3568 platform has perfect support for Qt, especially for multimedia related classes, such as video decoding and playback, camera, video recording, etc., which can be combined with hardware codec and OpenGL to achieve the best results.</p>
 <section id="interface-function-test">
-<h2>3.1 Interface Function Test<a class="headerlink" href="#interface-function-test" title="Link to this heading"></a></h2>
+<h3>3.1 Interface Function Test<a class="headerlink" href="#interface-function-test" title="Link to this heading"></a></h3>
 <section id="introduction-to-interface-functions">
-<h3>3.1.1 Introduction to Interface Functions<a class="headerlink" href="#introduction-to-interface-functions" title="Link to this heading"></a></h3>
+<h4>3.1.1 Introduction to Interface Functions<a class="headerlink" href="#introduction-to-interface-functions" title="Link to this heading"></a></h4>
 <p>The desktop is displayed as follows after the development board booting:</p>
 <p><img alt="Image" src="_images/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png" /></p>
 </section>
 <section id="introduction-to-touch-functions">
-<h3>3.1.2 Introduction to Touch Functions<a class="headerlink" href="#introduction-to-touch-functions" title="Link to this heading"></a></h3>
+<h4>3.1.2 Introduction to Touch Functions<a class="headerlink" href="#introduction-to-touch-functions" title="Link to this heading"></a></h4>
 <p>The LVDS and MIPI screen connected to the development board can be displayed and touched normally. If it is necessary to turn off a display touch, please refer to the manual 2.5.1 Uboot Menu Dynamic Control to turn off the corresponding display output.</p>
 </section>
 <section id="hardware-decoding">
-<h3>3.1.3 Hardware Decoding<a class="headerlink" href="#hardware-decoding" title="Link to this heading"></a></h3>
+<h4>3.1.3 Hardware Decoding<a class="headerlink" href="#hardware-decoding" title="Link to this heading"></a></h4>
 <p>Click the desktop icon to open the video player.</p>
 <p><img alt="Image" src="_images/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png" /></p>
 <p>Application Icons</p>
@@ -712,7 +691,7 @@ Select  display
 <p>Application Interfaces</p>
 </section>
 <section id="camera-test">
-<h3>3.1.4 Camera Test<a class="headerlink" href="#camera-test" title="Link to this heading"></a></h3>
+<h4>3.1.4 Camera Test<a class="headerlink" href="#camera-test" title="Link to this heading"></a></h4>
 <p>Click the desktop icon to open the video player qcamera. The test program supports USB Camera and OV13850. Plug in a USB Camera, using the RMONCAM 720P as an example.</p>
 <p><strong>Note: The app needs to be connected to the camera before opening.</strong></p>
 <p><img alt="Image" src="_images/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png" /></p>
@@ -735,7 +714,7 @@ Select  display
 <p>Input-params for 3A parameter setting.</p>
 </section>
 <section id="opengl-test">
-<h3>3.1.5 OpenGL Test<a class="headerlink" href="#opengl-test" title="Link to this heading"></a></h3>
+<h4>3.1.5 OpenGL Test<a class="headerlink" href="#opengl-test" title="Link to this heading"></a></h4>
 <p>OK3568 supports OpenGL ES3.2; click the desktop icon for OpenGL test.</p>
 <p><img alt="Image" src="_images/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png" /></p>
 <p>Application Icons</p>
@@ -743,7 +722,7 @@ Select  display
 <p>Application Interfaces</p>
 </section>
 <section id="music-play-test">
-<h3>3.1.6 Music Play Test<a class="headerlink" href="#music-play-test" title="Link to this heading"></a></h3>
+<h4>3.1.6 Music Play Test<a class="headerlink" href="#music-play-test" title="Link to this heading"></a></h4>
 <p>“music player” is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.</p>
 <p><img alt="Image" src="_images/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png" /></p>
 <p>Application Icons</p>
@@ -756,7 +735,7 @@ Select  display
 </div>
 </section>
 <section id="record-test">
-<h3>3.1.7 Record Test<a class="headerlink" href="#record-test" title="Link to this heading"></a></h3>
+<h4>3.1.7 Record Test<a class="headerlink" href="#record-test" title="Link to this heading"></a></h4>
 <p>The Audio recorder “is a recording test application that can be used to test whether the recording function of the sound card is normal:</p>
 <p><img alt="Image" src="_images/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png" /></p>
 <p>Application Icons</p>
@@ -765,7 +744,7 @@ Select  display
 <p>Click the drop-down menu to select the input device, audio format and audio channel, click the output file dir text box to input the output path and name of the recording file, select audio/ogg for File Container, select channel number 1 for Channels, and set the rest by default. Click Record to start recording. Recorded audio files can be played using gst-play-1.0.  Click Exit to exit the test.</p>
 </section>
 <section id="g-5g-test">
-<h3>3.1.8 4G/5G Test<a class="headerlink" href="#g-5g-test" title="Link to this heading"></a></h3>
+<h4>3.1.8 4G/5G Test<a class="headerlink" href="#g-5g-test" title="Link to this heading"></a></h4>
 <p>This test requires an Internet-capable SIM card, a description of which can be found in the Command Line Functional Tests 5G section of this manual.</p>
 <p>The “4G/5G” test program is used to test the OK3568 external 5G module (RM500U). Before testing, please power off the development board, access the 5G module, insert the SIM card, start the development board, and open the test application.</p>
 <p>Meanwhile, the test supports the 4G module (EM05-CE), inserts the 4G module and SIM card in the case of power failure, and opens the test application after powering up the system to start.</p>
@@ -776,7 +755,7 @@ Select  display
 <p>Click the connect button, the program will automatically enter the dialing process and get the IP settings, DNS, etc. Wait patiently for a few seconds, and then click the ping button to test.</p>
 </section>
 <section id="wifi-test">
-<h3>3.1.9 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
+<h4>3.1.9 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h4>
 <p>“WIFI” is a tool to configure wifi. The OK3568 platform has the AW-CM358 module on board by default. The wifi module exists in the system as a mlan node, and this test corresponds to mlan0 (other corresponding nodes are used for multiple devices):</p>
 <p><strong>Note: Be sure to install the Wifi antenna when startup.</strong></p>
 <p><img alt="Image" src="_images/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png" /></p>
@@ -790,7 +769,7 @@ Select  display
 <p><img alt="Image" src="_images/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg" /></p>
 </section>
 <section id="network-configuration-test">
-<h3>3.1.10 Network Configuration Test<a class="headerlink" href="#network-configuration-test" title="Link to this heading"></a></h3>
+<h4>3.1.10 Network Configuration Test<a class="headerlink" href="#network-configuration-test" title="Link to this heading"></a></h4>
 <p>When the OK3568 starts up, the default setting of the NIC is dhcp. The two modes of dhcp and static can be selected through the “Network” configuration application, and the static mode can be configured with ip address, subnet mask, gateway, and DNS.</p>
 <p><img alt="Image" src="_images/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png" /></p>
 <p>Application Icons</p>
@@ -803,7 +782,7 @@ Select  display
 <p><strong>Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.</strong></p>
 </section>
 <section id="browser-test">
-<h3>3.1.11 Browser Test<a class="headerlink" href="#browser-test" title="Link to this heading"></a></h3>
+<h4>3.1.11 Browser Test<a class="headerlink" href="#browser-test" title="Link to this heading"></a></h4>
 <p>“Simplebrowser” is a simple and practical web browser. Please ensure smooth network connection when using it, and make sure DNS is available before accessing external websites. By default, the browser launches and accesses the official website of Forlinx Embedded. Click the icon:</p>
 <p><img alt="Image" src="_images/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png" /></p>
 <p>The interface is as follows:</p>
@@ -812,7 +791,7 @@ Select  display
 <p>Exit this browser via the upper navigation bar File-&gt;Quit.</p>
 </section>
 <section id="watchdog-test">
-<h3>3.1.12 Watchdog Test<a class="headerlink" href="#watchdog-test" title="Link to this heading"></a></h3>
+<h4>3.1.12 Watchdog Test<a class="headerlink" href="#watchdog-test" title="Link to this heading"></a></h4>
 <p>“WatchDog” is an application used to test the watchdog status.</p>
 <p><img alt="Image" src="_images/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png" /></p>
 <p>Application Icons</p>
@@ -822,7 +801,7 @@ Select  display
 <p>When unchecking feed dog, count down 6s and the system enters reboot. It indicates that the Watchdog function is normal.</p>
 </section>
 <section id="key-test">
-<h3>3.1.13 Key Test<a class="headerlink" href="#key-test" title="Link to this heading"></a></h3>
+<h4>3.1.13 Key Test<a class="headerlink" href="#key-test" title="Link to this heading"></a></h4>
 <p>The “Keypad” is used to test whether the platform’s own keys are available:</p>
 <p><img alt="Image" src="_images/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png" /></p>
 <p>Application Icons</p>
@@ -832,7 +811,7 @@ Select  display
 <p>Press “X” to exit the current routine and return to the system desktop.</p>
 </section>
 <section id="rtc-test">
-<h3>3.1.14 RTC Test<a class="headerlink" href="#rtc-test" title="Link to this heading"></a></h3>
+<h4>3.1.14 RTC Test<a class="headerlink" href="#rtc-test" title="Link to this heading"></a></h4>
 <p>The “RTC” application allows you to view and set the current system time:</p>
 <p><img alt="Image" src="_images/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png" /></p>
 <p>Application Icons</p>
@@ -842,7 +821,7 @@ Select  display
 <p>Click Auto to perform network timing, and click apply to perform timing successfully.</p>
 </section>
 <section id="spi-test">
-<h3>3.1.15 SPI Test<a class="headerlink" href="#spi-test" title="Link to this heading"></a></h3>
+<h4>3.1.15 SPI Test<a class="headerlink" href="#spi-test" title="Link to this heading"></a></h4>
 <p>Click on the desktop icon to use it to test the OK3568 on-board SPI interface. Spi0 has one CS interface, corresponding to the/dev/spidev 0.0; spi2 has two CS interfaces, corresponding to/dev/spidev2.0 and/dev/spidev2.1, respectively.</p>
 <p>Short the spi2 T/R pins according to the board schematic. The short circuit test does not need to consider the CS interface; if additional equipment is used for communication, the corresponding dev interface needs to be considered.</p>
 <p><img alt="Image" src="_images/1719278346060_8972ef99_0fee_40b3_b2e0_2559ce1d6f11.png" /></p>
@@ -855,7 +834,7 @@ Select  display
 <p>Click the Exit button to exit the test.</p>
 </section>
 <section id="uart-test">
-<h3>3.1.16 UART Test<a class="headerlink" href="#uart-test" title="Link to this heading"></a></h3>
+<h4>3.1.16 UART Test<a class="headerlink" href="#uart-test" title="Link to this heading"></a></h4>
 <p>Click on the desktop icon to use it to test the OK3568 on-board UART interface.</p>
 <p><img alt="Image" src="_images/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png" /></p>
 <p>Application Icons</p>
@@ -870,7 +849,7 @@ Select  display
 <p><img alt="Image" src="_images/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png" /></p>
 </section>
 <section id="backlight-test">
-<h3>3.1.17 Backlight Test<a class="headerlink" href="#backlight-test" title="Link to this heading"></a></h3>
+<h4>3.1.17 Backlight Test<a class="headerlink" href="#backlight-test" title="Link to this heading"></a></h4>
 <p>“BackLight” is the lcd backlight adjustment application:</p>
 <p><img alt="Image" src="_images/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png" /></p>
 <p>Application Icons</p>
@@ -879,7 +858,7 @@ Select  display
 <p>Drag the slider in the interface to set the Lcd backlight brightness, level 0 is no backlight, level 255 is the highest level.</p>
 </section>
 <section id="cpu-frequency-configuration-test">
-<h3>3.1.18 CPU Frequency Configuration Test<a class="headerlink" href="#cpu-frequency-configuration-test" title="Link to this heading"></a></h3>
+<h4>3.1.18 CPU Frequency Configuration Test<a class="headerlink" href="#cpu-frequency-configuration-test" title="Link to this heading"></a></h4>
 <p>Click the desktop icon to enter the next menu:</p>
 <p><img alt="Image" src="_images/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png" /><strong>-&gt;</strong><img alt="Image" src="_images/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png" /></p>
 <p>Application Icons</p>
@@ -894,12 +873,12 @@ Select  display
 </section>
 </section>
 <section id="ok3568-command-line-function-test">
-<h1>4. OK3568 Command Line Function Test<a class="headerlink" href="#ok3568-command-line-function-test" title="Link to this heading"></a></h1>
+<h2>4. OK3568 Command Line Function Test<a class="headerlink" href="#ok3568-command-line-function-test" title="Link to this heading"></a></h2>
 <section id="command-line-function-test">
-<h2>4.1 Command Line Function Test<a class="headerlink" href="#command-line-function-test" title="Link to this heading"></a></h2>
+<h3>4.1 Command Line Function Test<a class="headerlink" href="#command-line-function-test" title="Link to this heading"></a></h3>
 <p>The OK3568 platform has various built-in command line tools available to users.</p>
 <section id="system-information-query">
-<h3>4.1.1 System Information Query<a class="headerlink" href="#system-information-query" title="Link to this heading"></a></h3>
+<h4>4.1.1 System Information Query<a class="headerlink" href="#system-information-query" title="Link to this heading"></a></h4>
 <p>To view kernel and CPU information:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>uname<span class="w"> </span>-a
 Linux<span class="w"> </span>OK3568-buildroot<span class="w"> </span><span class="m">5</span>.10.160<span class="w"> </span><span class="c1">#1 SMP Fri Oct 13 08:48:42 HKT 2023 aarch64 GNU/Linux</span>
@@ -963,7 +942,7 @@ Welcome<span class="w"> </span>to<span class="w"> </span>RK3566_RK3568<span clas
 </div>
 </section>
 <section id="fm-test">
-<h3>4.1.2 FM Test<a class="headerlink" href="#fm-test" title="Link to this heading"></a></h3>
+<h4>4.1.2 FM Test<a class="headerlink" href="#fm-test" title="Link to this heading"></a></h4>
 <p><strong>Note: This process takes cpu0 as an example, and the actual process of cpu1, cpu2, and cpu3 will be changed at the same time.</strong></p>
 <p>1.  All cpufreq governor types supported in the current kernel:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>cat<span class="w"> </span>/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
@@ -988,7 +967,7 @@ root@OK3568-buildroot:/#<span class="w"> </span><span class="nb">echo</span><spa
 </div>
 </section>
 <section id="temperature-test">
-<h3>4.1.3 Temperature Test<a class="headerlink" href="#temperature-test" title="Link to this heading"></a></h3>
+<h4>4.1.3 Temperature Test<a class="headerlink" href="#temperature-test" title="Link to this heading"></a></h4>
 <p>View the temperature value:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>cat<span class="w"> </span>/sys/class/thermal/thermal_zone0/temp
 <span class="m">56111</span>
@@ -997,7 +976,7 @@ root@OK3568-buildroot:/#<span class="w"> </span><span class="nb">echo</span><spa
 <p>The temperature value is 56°C.</p>
 </section>
 <section id="ddr-bandwidth-test">
-<h3>4.1.4 DDR Bandwidth Test<a class="headerlink" href="#ddr-bandwidth-test" title="Link to this heading"></a></h3>
+<h4>4.1.4 DDR Bandwidth Test<a class="headerlink" href="#ddr-bandwidth-test" title="Link to this heading"></a></h4>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>memory_bandwidth.sh
 </pre></div>
 </div>
@@ -1006,7 +985,7 @@ root@OK3568-buildroot:/#<span class="w"> </span><span class="nb">echo</span><spa
 <p>The OK3568-C has a DDR4 write bandwidth of about 1480M/s and a read bandwidth of about 5100M/s.</p>
 </section>
 <section id="id1">
-<h3>4.1.5 Key Test<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<h4>4.1.5 Key Test<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
 <p><img alt="Image" src="_images/1719278350041_69289c78_69d0_4604_9725_f359e0d01c07.png" /></p>
 <p>Use the keytest command line tool to test the keys. At present, keytest supports the test of the four keys V +, V-, Home and ESC on the backplane, and the key codes are 115, 114, 139 and 158 respectively. At this point, press the lift button in sequence, and the following can be output on the terminal:</p>
 <p>Execute the following command:</p>
@@ -1025,7 +1004,7 @@ key158<span class="w"> </span>Released
 </div>
 </section>
 <section id="serial-port-test">
-<h3>4.1.6 Serial Port Test<a class="headerlink" href="#serial-port-test" title="Link to this heading"></a></h3>
+<h4>4.1.6 Serial Port Test<a class="headerlink" href="#serial-port-test" title="Link to this heading"></a></h4>
 <p>OK3568 serial port supports odd and even parity, 8 data bits and 1 stop bit.</p>
 <p>Please short the serial port to be tested before the serial port loopback test. In the schematic diagram of the OK3568 platform, UART2, UART3, UART4, UART5, and UART8 are indicated as 5 serial ports, with UART2 being the debug port and UART8 being the Bluetooth port. The serial ports available to the user are UART3, UART4 and UART5, and the corresponding device names in the development board are ttyS3, ttyS4 and ttyS5. Take the test of UART4 serial port as an example, short-circuit the receiving and transmitting pins of UART4 according to the schematic diagram of the development board, corresponding to PIN29 and PIN30 respectively.</p>
 <p><img alt="Image" src="_images/1719278350392_6790a64b_37c7_4cda_95b6_f8ce5d08686a.png" /></p>
@@ -1041,7 +1020,7 @@ forlinx_uart_test.1234567890...
 <p>If the serial port prints the above content after execution, it indicates that the serial port communication is basically normal.</p>
 </section>
 <section id="id2">
-<h3>4.1.7 SPI Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<h4>4.1.7 SPI Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
 <p>2 x SPI interfaces are led out from the OK3568 carrier board, which are configured as spidev in the default software for loopback test. When testing, refer to the schematic for shorting MOSI (PIN15) and MISO (PIN16), and then use the commands below to test each.</p>
 <p><img alt="Image" src="_images/1719278350643_b70444ce_bf67_4e70_8a94_831eb688b494.png" /></p>
 <p>Without shorting the SPI 2_ MOSI and the SPI 2_ MISO, execute the test command:</p>
@@ -1074,10 +1053,10 @@ F0<span class="w"> </span>0D
 </div>
 </section>
 <section id="watchdog-tests">
-<h3>4.1.8 Watchdog Tests<a class="headerlink" href="#watchdog-tests" title="Link to this heading"></a></h3>
+<h4>4.1.8 Watchdog Tests<a class="headerlink" href="#watchdog-tests" title="Link to this heading"></a></h4>
 <p>Watchdog is a function often used in embedded systems. The device node of watchdog in OK3568 is/dev/watchdog. This test provides two test procedures, and the user can choose one of them to test according to the actual situation.</p>
 <section id="start-the-fltest-watchdog-set-the-time-as-10s-and-feed-the-dog-regularly">
-<h4>4.1.8.1 Start the fltest _ watchdog, set the time as 10s, and feed the dog regularly.<a class="headerlink" href="#start-the-fltest-watchdog-set-the-time-as-10s-and-feed-the-dog-regularly" title="Link to this heading"></a></h4>
+<h5>4.1.8.1 Start the fltest _ watchdog, set the time as 10s, and feed the dog regularly.<a class="headerlink" href="#start-the-fltest-watchdog-set-the-time-as-10s-and-feed-the-dog-regularly" title="Link to this heading"></a></h5>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>fltest_watchdog
 Watchdog<span class="w"> </span>Ticking<span class="w"> </span>Away!
 </pre></div>
@@ -1090,7 +1069,7 @@ Watchdog<span class="w"> </span>card<span class="w"> </span>disabled.<span class
 </div>
 </section>
 <section id="start-the-fltest-watchdog-restart-set-the-reset-time-to-10-s-and-do-not-feed-the-dog">
-<h4>4.1.8.2 Start the fltest _ watchdog restart, set the reset time to 10 s, and do not feed the dog.<a class="headerlink" href="#start-the-fltest-watchdog-restart-set-the-reset-time-to-10-s-and-do-not-feed-the-dog" title="Link to this heading"></a></h4>
+<h5>4.1.8.2 Start the fltest _ watchdog restart, set the reset time to 10 s, and do not feed the dog.<a class="headerlink" href="#start-the-fltest-watchdog-restart-set-the-reset-time-to-10-s-and-do-not-feed-the-dog" title="Link to this heading"></a></h5>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>fltest_watchdogrestart
 Restart<span class="w"> </span>after<span class="w"> </span><span class="m">10</span><span class="w"> </span>seconds
 </pre></div>
@@ -1099,10 +1078,10 @@ Restart<span class="w"> </span>after<span class="w"> </span><span class="m">10</
 </section>
 </section>
 <section id="id3">
-<h3>4.1.9 WIFI Test<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<h4>4.1.9 WIFI Test<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
 <p>The OK3568 supports the onboard AW-CM358 by default and supports STA and AP modes.</p>
 <section id="sta-mode">
-<h4>4.1.9.1 STA Mode<a class="headerlink" href="#sta-mode" title="Link to this heading"></a></h4>
+<h5>4.1.9.1 STA Mode<a class="headerlink" href="#sta-mode" title="Link to this heading"></a></h5>
 <p>Before using the wifi function, the following steps are required for configuration:</p>
 <p>Step 1:</p>
 <p>Assume that the SSID name of the Wifi hotspot is ChinaNet-Jvgv and the password is asdasd123</p>
@@ -1129,7 +1108,7 @@ PING<span class="w"> </span>www.forlinx.com<span class="w"> </span><span class="
 <p>If you want to stop, you need to press Ctrl + C to ping, indicating that the network can be used normally at this time.</p>
 </section>
 <section id="ap-mode">
-<h4>4.1.9.2 AP Mode<a class="headerlink" href="#ap-mode" title="Link to this heading"></a></h4>
+<h5>4.1.9.2 AP Mode<a class="headerlink" href="#ap-mode" title="Link to this heading"></a></h5>
 <p>Before using the hotspot function, you need to connect and configure the network port to ensure that the network port can be connected to the Internet. Configure the hotspot command. The command AP becomes DISABLED in the first pass, and becomes ENABLE in the second pass, as shown below:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>fltest_hostapd.sh
 killall:<span class="w"> </span>hostapd:<span class="w"> </span>no<span class="w"> </span>process<span class="w"> </span>killed
@@ -1176,7 +1155,7 @@ uap0:<span class="w"> </span>AP-ENABLED
 </section>
 </section>
 <section id="bluetooth-test">
-<h3>4.1.10 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h3>
+<h4>4.1.10 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h4>
 <p>The AW-CM358 of the OK3568 carrier board has integrated Bluetooth. This section demonstrates the use of Bluetooth for file transfer between the phone and the development board.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568<span class="w"> </span>-<span class="w"> </span>buildroot:/#<span class="w"> </span>bluetoothctl<span class="w"> 				</span>//<span class="w"> </span>Open<span class="w"> </span>the<span class="w"> </span>BlueZ<span class="w"> </span>Bluetooth<span class="w"> </span>tool
 Agent<span class="w"> </span>registered
@@ -1246,7 +1225,7 @@ Transfer<span class="w"> </span>/org/bluez/obex/client/session0/transfer0
 <p><strong>Note: The files received by some manufacturers’ mobile phones must have suffixes, otherwise they will be rejected by the Android system. Therefore, when testing, please try to use files with suffix names for testing.</strong></p>
 </section>
 <section id="rtc-function-test">
-<h3>4.1.11 RTC Function Test<a class="headerlink" href="#rtc-function-test" title="Link to this heading"></a></h3>
+<h4>4.1.11 RTC Function Test<a class="headerlink" href="#rtc-function-test" title="Link to this heading"></a></h4>
 <p>RTC testing is mainly done by using the date and hwclock tools to set the software and hardware time. The test checks if the software clock can read and synchronize with the RTC clock when the development board is powered off and on again (Note: Make sure that the button battery is already installed on the board).</p>
 <p><img alt="Image" src="_images/1719278351323_70952562_19f7_4ff3_b7d6_77c0f64f0936.png" /></p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>date<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;2022-2-9 10:50:00&quot;</span><span class="w">		</span>//<span class="w"> </span>Set<span class="w"> </span>the<span class="w"> </span><span class="nb">time</span>
@@ -1263,7 +1242,7 @@ Wed<span class="w"> </span>Feb<span class="w">  </span><span class="m">9</span><
 </div>
 </section>
 <section id="usb-mouse-test">
-<h3>4.1.12 USB Mouse Test<a class="headerlink" href="#usb-mouse-test" title="Link to this heading"></a></h3>
+<h4>4.1.12 USB Mouse Test<a class="headerlink" href="#usb-mouse-test" title="Link to this heading"></a></h4>
 <p>Connect the USB mouse to the USB interface of the OK3568 platform, and the print information of the serial port terminal is as follows:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w">  </span><span class="o">[</span><span class="w"> </span><span class="m">1513</span>.413310<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">3</span>-1.2:<span class="w"> </span>new<span class="w"> </span>low-speed<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">4</span><span class="w"> </span>using<span class="w"> </span>ehci-platform
 <span class="o">[</span><span class="w"> </span><span class="m">1513</span>.503041<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">3</span>-1.2:<span class="w"> </span>New<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>found,<span class="w"> </span><span class="nv">idVendor</span><span class="o">=</span>192f,<span class="w"> </span><span class="nv">idProduct</span><span class="o">=</span><span class="m">0916</span>
@@ -1281,7 +1260,7 @@ Wed<span class="w"> </span>Feb<span class="w">  </span><span class="m">9</span><
 <p>The arrow cursor on the screen disappears and the mouse is successfully removed.</p>
 </section>
 <section id="usb-2-0-usb3-0">
-<h3>4.1.13 USB 2.0/USB3.0<a class="headerlink" href="#usb-2-0-usb3-0" title="Link to this heading"></a></h3>
+<h4>4.1.13 USB 2.0/USB3.0<a class="headerlink" href="#usb-2-0-usb3-0" title="Link to this heading"></a></h4>
 <p>OK3568 supports two USB 2.0 and one USB 3.0 interfaces. You can connect USB devices such as a mouse, keyboard, or USB flash drive to any of the onboard USB host interfaces. The board also supports hot-plugging for the mentioned devices. Demonstration with a mounting USB flash drive; the current USB flash drive test support up to 128G, but no test for 128G or above.</p>
 <p><img alt="Image" src="_images/1719278351657_3fda5e10_b4c0_4a51_898b_6feff96a376a.png" /></p>
 <p>USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.</p>
@@ -1336,7 +1315,7 @@ drwxrwx---<span class="w"> </span><span class="m">3</span><span class="w"> </spa
 </div>
 </section>
 <section id="screen-backlight-adjustment">
-<h3>4.1.14 Screen Backlight Adjustment<a class="headerlink" href="#screen-backlight-adjustment" title="Link to this heading"></a></h3>
+<h4>4.1.14 Screen Backlight Adjustment<a class="headerlink" href="#screen-backlight-adjustment" title="Link to this heading"></a></h4>
 <p>Backlight level range (0–255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test.</p>
 <p><strong>1. View the current screen backlight values:</strong></p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568<span class="w"> </span>-<span class="w"> </span>buildroot:/#<span class="w"> </span>cat<span class="w"> </span>/sys/class/backlight/lvds<span class="w"> </span>-<span class="w"> </span>backlight/brightness<span class="w">		</span>//<span class="w"> </span>Check<span class="w"> </span>the<span class="w"> </span>backlight<span class="w"> </span>value<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>LVDS<span class="w"> </span>screen
@@ -1361,7 +1340,7 @@ root@OK3568-buildroot:/#<span class="w"> </span><span class="nb">echo</span><spa
 </div>
 </section>
 <section id="tf-card-test">
-<h3>4.1.15 TF Card Test<a class="headerlink" href="#tf-card-test" title="Link to this heading"></a></h3>
+<h4>4.1.15 TF Card Test<a class="headerlink" href="#tf-card-test" title="Link to this heading"></a></h4>
 <p>Insert the TF card into the TF card slot on the development board’s carrier board. In normal circumstances, the development board’s terminal will display the following information:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w">  </span><span class="o">[</span><span class="w">  </span><span class="m">294</span>.166421<span class="o">]</span><span class="w"> </span>mmc_host<span class="w"> </span>mmc1:<span class="w"> </span>Bus<span class="w"> </span>speed<span class="w"> </span><span class="o">(</span>slot<span class="w"> </span><span class="m">0</span><span class="o">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>50000000Hz<span class="w"> </span><span class="o">(</span>slot<span class="w"> </span>req<span class="w"> </span>100000000Hz,<span class="w"> </span>actual<span class="w"> </span>50000000HZ<span class="w"> </span><span class="nv">div</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="o">)</span>
 <span class="o">[</span><span class="w">  </span><span class="m">294</span>.186093<span class="o">]</span><span class="w"> </span>dwmmc_rockchip<span class="w"> </span>fe2b0000.dwmmc:<span class="w"> </span>Successfully<span class="w"> </span>tuned<span class="w"> </span>phase<span class="w"> </span>to<span class="w"> </span><span class="m">360</span>
@@ -1398,7 +1377,7 @@ root@OK3568-buildroot:/#<span class="w"> </span><span class="nb">echo</span><spa
 </div>
 </section>
 <section id="emmc-test">
-<h3>4.1.16 EMMC Test<a class="headerlink" href="#emmc-test" title="Link to this heading"></a></h3>
+<h4>4.1.16 EMMC Test<a class="headerlink" href="#emmc-test" title="Link to this heading"></a></h4>
 <p>The OK3568 platform eMMC runs in HS400 mode 200MHz clock by default. The following is a simple eMMC read/write speed test: taking the read/write ext4 file system as an example.</p>
 <p><strong>Note: To ensure the accuracy of the data, please restart the development board to test the reading speed.</strong></p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/test<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">500</span><span class="w"> </span><span class="nv">conv</span><span class="o">=</span>fsync//Write<span class="w"> </span><span class="nb">test</span>
@@ -1413,10 +1392,10 @@ root@OK3568-buildroot:/#<span class="w"> </span>dd<span class="w"> </span><span 
 </div>
 </section>
 <section id="ethernet-configuration">
-<h3>4.1.17 Ethernet Configuration<a class="headerlink" href="#ethernet-configuration" title="Link to this heading"></a></h3>
+<h4>4.1.17 Ethernet Configuration<a class="headerlink" href="#ethernet-configuration" title="Link to this heading"></a></h4>
 <p>OK3568 has two Gigabit NIC on board, if you plug in a network cable to connect to the network, the OK3568 development board will acquire IP when it starts up.</p>
 <section id="fixed-ip-method">
-<h4>4.1.17.1 Fixed IP Method<a class="headerlink" href="#fixed-ip-method" title="Link to this heading"></a></h4>
+<h5>4.1.17.1 Fixed IP Method<a class="headerlink" href="#fixed-ip-method" title="Link to this heading"></a></h5>
 <p><strong>Note: This method fixes network IP. After use, network card gets normal IP. If ping fails, check multiple network cards in same Linux segment. Adjust routing or use distinct segments.</strong></p>
 <p>Development Board IP: 192.168.1.151</p>
 <p>Router IP: 192.168.1.1</p>
@@ -1442,7 +1421,7 @@ root@OK3568-buildroot:/#<span class="w">  </span><span class="o">[</span><span c
 </div>
 </section>
 <section id="automatic-ip-acquisition-method">
-<h4>4.1.17.2  Automatic IP Acquisition Method<a class="headerlink" href="#automatic-ip-acquisition-method" title="Link to this heading"></a></h4>
+<h5>4.1.17.2  Automatic IP Acquisition Method<a class="headerlink" href="#automatic-ip-acquisition-method" title="Link to this heading"></a></h5>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>vi<span class="w"> </span>/etc/network/interfaces<span class="w">   	  </span>//<span class="w"> </span>Open<span class="w"> </span>the<span class="w"> </span>configuration<span class="w"> </span>file
 <span class="c1"># interface file auto-generated by buildroot</span>
 auto<span class="w"> </span>lo
@@ -1464,13 +1443,13 @@ udhcpc:<span class="w"> </span>sending<span class="w"> </span>discover
 </section>
 </section>
 <section id="web-services">
-<h3>4.1.18 Web Services<a class="headerlink" href="#web-services" title="Link to this heading"></a></h3>
+<h4>4.1.18 Web Services<a class="headerlink" href="#web-services" title="Link to this heading"></a></h4>
 <p>The OK3568 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board’s webserver, as shown in the following figure:</p>
 <p><img alt="Image" src="_images/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png" /></p>
 <p><strong>Note: To use this function properly, the network IP of the development board needs to be the same network segment as the network IP of the PC, or the PC is under the subnet of the network where the development board is located.</strong></p>
 </section>
 <section id="play-record-test">
-<h3>4.1.19 Play/Record Test<a class="headerlink" href="#play-record-test" title="Link to this heading"></a></h3>
+<h4>4.1.19 Play/Record Test<a class="headerlink" href="#play-record-test" title="Link to this heading"></a></h4>
 <p>Development board provides a standard 3.5mm audio jack and a XH2.54-2P white socket P25 for driving an 8Ω speaker with a maximum output power of 1.3W. Before conducting sound playback testing, please insert your headphones into the earpiece interface or plug the speaker into the corresponding slot on the carrier board. To perform the test, use the following command:</p>
 <p><img alt="Image" src="_images/1719278352613_65d7016b_8ddc_45f2_925a_a4b172267b26.png" /></p>
 <p><strong>Note: Plug the prepared microphone into the 3.5mm headphone jack before performing the recording test.</strong></p>
@@ -1500,7 +1479,7 @@ etc<span class="w">	            </span>linuxrc<span class="w">   </span>mnt<span
 </div>
 </section>
 <section id="g-em05-ce-module-test">
-<h3>4.1.20 4G EM05-CE Module Test<a class="headerlink" href="#g-em05-ce-module-test" title="Link to this heading"></a></h3>
+<h4>4.1.20 4G EM05-CE Module Test<a class="headerlink" href="#g-em05-ce-module-test" title="Link to this heading"></a></h4>
 <p>OK3568 supports the 4G module. Connect the 4G module before starting the development board, and insert the SIM card to start the development board.</p>
 <p><strong>Note: When testing, please pay attention to the direction of SIM insertion, there is a silkscreen marking on the carrier board, access to the antenna, and use the medium card for testing.</strong></p>
 <p><img alt="Image" src="_images/1719278352941_05f448d6_c980_4ea0_add9_ac501ceaeead.png" />           <img alt="Image" src="_images/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png" /></p>
@@ -1551,7 +1530,7 @@ rtt<span class="w"> </span>min/avg/max/mdev<span class="w"> </span><span class="
 </div>
 </section>
 <section id="g-quectel-rm500u-module">
-<h3>4.1.21 5G Quectel RM500U Module<a class="headerlink" href="#g-quectel-rm500u-module" title="Link to this heading"></a></h3>
+<h4>4.1.21 5G Quectel RM500U Module<a class="headerlink" href="#g-quectel-rm500u-module" title="Link to this heading"></a></h4>
 <p>The default model of the 5G module is the Remote RM500U.</p>
 <p><strong>Note: When testing, please pay attention to the direction of SIM insertion, there is a silkscreen marking on the carrier board, access to the antenna, and use the medium card for testing.</strong></p>
 <p><img alt="Image" src="_images/1719278354286_e6598aea_92d6_4f12_9470_9d461beb46e9.png" />     <img alt="Image" src="_images/1719278354610_75f79799_93f9_40e0_ae84_0061bb80b8a9.png" /></p>
@@ -1705,7 +1684,7 @@ rtt<span class="w"> </span>min/avg/max/mdev<span class="w"> </span><span class="
 </div>
 </section>
 <section id="sleep-wake-up-test">
-<h3>4.1.22 Sleep Wake-up Test<a class="headerlink" href="#sleep-wake-up-test" title="Link to this heading"></a></h3>
+<h4>4.1.22 Sleep Wake-up Test<a class="headerlink" href="#sleep-wake-up-test" title="Link to this heading"></a></h4>
 <p>OK3568 Linux platform supports sleep wakeup Currently, Changxin memory products have removed the sleep/wake-up functionality. Please verify and confirm the configuration of the SoM. The test methods for the sleep/wake-up functionality of other SoMs are as follows:</p>
 <p>Press the power button for a short time to enter hibernation, and the printed information is as follows:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span><span class="o">[</span><span class="w">  </span><span class="m">146</span>.005510<span class="o">]</span><span class="w"> </span>PM:<span class="w"> </span><span class="nb">suspend</span><span class="w"> </span>entry<span class="w"> </span><span class="m">2019</span>-01-01<span class="w"> </span><span class="m">00</span>:02:23.751546568<span class="w"> </span>UTC
@@ -1753,7 +1732,7 @@ Short<span class="w"> </span>press<span class="w"> </span>the<span class="w"> </
 <p>In addition, the current test found that there is a problem after the Bluetooth sleep wakes up. Before hibernation, the WIFI/Bluetooth module driver can be unloaded, and after awakening, the WIFI/Bluetooth module driver can be loaded.</p>
 </section>
 <section id="npu-opencv-test">
-<h3>4.1.23 NPU OpenCV Test<a class="headerlink" href="#npu-opencv-test" title="Link to this heading"></a></h3>
+<h4>4.1.23 NPU OpenCV Test<a class="headerlink" href="#npu-opencv-test" title="Link to this heading"></a></h4>
 <p>The OK3568 platform compiles the OpenCV4-4.5.43 library by default, and you can use the following command to test OpenCV.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>rknn_common_test<span class="w">  </span>/usr/share/model/RK3566_RK3568/mobilenet_v1.rknn<span class="w">  </span>/usr/share/model/cat_224x224.jpg
 rknn_api/rknnrt<span class="w"> </span>version:<span class="w"> </span><span class="m">1</span>.5.0<span class="w"> </span><span class="o">(</span>e6fe0c678@2023-05-25T08:09:20<span class="o">)</span>,<span class="w"> </span>driver<span class="w"> </span>version:<span class="w"> </span><span class="m">0</span>.9.0
@@ -1776,7 +1755,7 @@ Begin<span class="w"> </span>perf<span class="w"> </span>...
 <p>Rockchip provides a wide range of test cases. You can refer to the NPU section in the application notes for compilation and testing.</p>
 </section>
 <section id="can-test">
-<h3>4.1.24 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h3>
+<h4>4.1.24 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h4>
 <p>OK3568-C platform has two CAN bus interfaces and connection methods: Connect the H terminal of CAN to the H terminal of other CAN devices; connect the L terminal of CAN to the L terminal of other CAN devices.</p>
 <p>Short CAN0 and CAN1, and execute the following command at the development board terminal:</p>
 <p>Set CAN0/CAN1 to 500K baud rate.</p>
@@ -1807,7 +1786,7 @@ can0<span class="w">  </span><span class="m">00895441</span><span class="w">   <
 </ul>
 </section>
 <section id="led-test">
-<h3>4.1.25 LED Test<a class="headerlink" href="#led-test" title="Link to this heading"></a></h3>
+<h4>4.1.25 LED Test<a class="headerlink" href="#led-test" title="Link to this heading"></a></h4>
 <p>The OK3568-C SoM has a controllable blue LED, and the OKT3568 SoM blue LED blinks when the board is powered up and started. The user can turn off the function, Just modify the device tree arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi to change the LEDs node attribute default-state = “on” to “off”, linux,default-trigger to “none”;</p>
 <p><img alt="Image" src="_images/1719278355433_91bd1dd1_566c_4971_bf66_11d6dbe10ee2.png" /></p>
 <p>The testing method is as follows:</p>
@@ -1837,7 +1816,7 @@ root@OK3568-buildroot:/#<span class="w"> </span>fltest_userled.sh<span class="w"
 </div>
 </section>
 <section id="typec-test">
-<h3>4.1.26 TYPEC Test<a class="headerlink" href="#typec-test" title="Link to this heading"></a></h3>
+<h4>4.1.26 TYPEC Test<a class="headerlink" href="#typec-test" title="Link to this heading"></a></h4>
 <p>The OK3568-C includes a TYPE-C port, which can be used in Device mode for brushing, and Host mode for plugging in regular USB devices. Set the S2 dip switch to OFF when power is off, and configure it to Device mode when connecting the OK3568-C to a PC using a Type-C cable; set the S2 dip switch to ON when power is off, and configure it to Host mode when inserting a device such as a USB flash drive.</p>
 <p>USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.</p>
 <p><img alt="Image" src="_images/1719278355735_c0770c7c_23e1_412b_ae35_f136feef044c.png" /></p>
@@ -1853,7 +1832,7 @@ root@OK3568-buildroot:/#<span class="w"> </span>fltest_userled.sh<span class="w"
 <p>The drive letter does not appear on this computer in the window. Plug and unplug the Type-C cable again.</p>
 </section>
 <section id="pcie-test">
-<h3>4.1.27 PCIE Test<a class="headerlink" href="#pcie-test" title="Link to this heading"></a></h3>
+<h4>4.1.27 PCIE Test<a class="headerlink" href="#pcie-test" title="Link to this heading"></a></h4>
 <p>Insert the minipcie module into the carrier board minipcie card slot before powering up the system. After powering on and starting Linux, you can see that the corresponding device is enumerated successfully through lspci.</p>
 <p><img alt="Image" src="_images/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png" /></p>
 <p>Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.</p>
@@ -1862,7 +1841,7 @@ root@OK3568-buildroot:/#<span class="w"> </span>fltest_userled.sh<span class="w"
 <p><img alt="Image" src="_images/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png" /></p>
 </section>
 <section id="sqlite3-test">
-<h3>4.1.28 SQLite3 Test<a class="headerlink" href="#sqlite3-test" title="Link to this heading"></a></h3>
+<h4>4.1.28 SQLite3 Test<a class="headerlink" href="#sqlite3-test" title="Link to this heading"></a></h4>
 <p>SQLite3 is a lightweight database that is ACID compliant relational database management system with low resource usage. OK3568-C development board is ported with version 3.21.0 of sqlit3.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#<span class="w"> </span>sqlite3
 SQLite<span class="w"> </span>version<span class="w"> </span><span class="m">3</span>.21.0<span class="w"> </span><span class="m">2017</span>-10-24<span class="w"> </span><span class="m">18</span>:55:49
@@ -1888,7 +1867,7 @@ root@OK3568-buildroot:/#
 </section>
 </section>
 <section id="ok3568-platform-multimedia-test">
-<h1>5. OK3568 Platform Multimedia Test<a class="headerlink" href="#ok3568-platform-multimedia-test" title="Link to this heading"></a></h1>
+<h2>5. OK3568 Platform Multimedia Test<a class="headerlink" href="#ok3568-platform-multimedia-test" title="Link to this heading"></a></h2>
 <p>Some application layer software for audio and video on the OK3568 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form. If users need a player with an interface, they can also use qt’s multimedia classes, which also support codecs, see the Qt Tests chapter.</p>
 <p>OK3568 platform has an internal video processing unit, the VPU, which supports hard codecs for video in the following formats:</p>
 <p>Video Decoding: H264, H265, VP8, VP9, etc., max support 4Kx2K&#64;60fps</p>
@@ -1979,9 +1958,9 @@ root@OK3568-buildroot:/#
 </tbody>
 </table>
 <section id="audio-and-video-playback">
-<h2>5.1 Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h2>
+<h3>5.1 Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h3>
 <section id="playing-audio-and-video-with-gst-play">
-<h3>5.1.1 Playing Audio and Video with Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h3>
+<h4>5.1.1 Playing Audio and Video with Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h4>
 <p>Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-play-1.0 /userdata/media/1080p_30fps_h265.mp4
 //Play the video file with sound, and test the sound by the earphone
@@ -1999,7 +1978,7 @@ Redistribute latency...
 </div>
 </section>
 <section id="playing-video-with-gst-launch">
-<h3>5.1.2 Playing Video with Gst-launch<a class="headerlink" href="#playing-video-with-gst-launch" title="Link to this heading"></a></h3>
+<h4>5.1.2 Playing Video with Gst-launch<a class="headerlink" href="#playing-video-with-gst-launch" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
 //Play video only
 Setting pipeline to PAUSED ...
@@ -2024,7 +2003,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="playing-audio-with-gst-launch">
-<h3>5.1.3 Playing Audio with Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h3>
+<h4>5.1.3 Playing Audio with Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/test.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink
 //Play audio only, test by earphone
 Setting pipeline to PAUSED ...
@@ -2044,7 +2023,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="playing-video-and-audio-with-gst-launch">
-<h3>5.1.4 Playing Video and Audio with gst-launch<a class="headerlink" href="#playing-video-and-audio-with-gst-launch" title="Link to this heading"></a></h3>
+<h4>5.1.4 Playing Video and Audio with gst-launch<a class="headerlink" href="#playing-video-and-audio-with-gst-launch" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec.! queue ! decodebin ! alsasink
 //Play the video file with sound, and test the sound by the earphone
 mpp[934]: mpp_rt: NOT found ion allocator
@@ -2070,10 +2049,10 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="video-hardware-encoding">
-<h2>5.2 Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h2>
+<h3>5.2 Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h3>
 <p>OK3568 supports up to 1080p &#64; 60fps H.264/H.265 video encoding, as well as high-quality JPEG encoding and decoding. This section of commands is only suitable for core boards with less than 4G of memory.</p>
 <section id="video-hardware-encoding-h-264">
-<h3>5.2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h3>
+<h4>5.2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 mp4mux name=mux ! filesink location=test.mp4  videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=1920,height=1080,format=NV12 ! mpph264enc ! h264parse !  mux.video_0 -e
 Setting pipeline to PAUSED ...
 mpp[809]: mpp_rt: NOT found ion allocator
@@ -2098,7 +2077,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="video-hardware-encoding-h-265">
-<h3>5.2.2 Video Hardware Encoding H.265<a class="headerlink" href="#video-hardware-encoding-h-265" title="Link to this heading"></a></h3>
+<h4>5.2.2 Video Hardware Encoding H.265<a class="headerlink" href="#video-hardware-encoding-h-265" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 mp4mux name=mux ! filesink location=test.mp4 videotestsrc num-buffers=600 ! video/x-raw,framerate=60/1,width=1920,height=1080,format=NV12 ! mpph265enc ! h265parse !  mux.video_0 -e 
 Setting pipeline to PAUSED ...
 mpp[828]: mpp_rt: NOT found ion allocator
@@ -2124,11 +2103,11 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="video-hardware-decoding">
-<h2>5.3 Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h2>
+<h3>5.3 Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h3>
 <p>OK3568 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 4K at 30fps, while the H.265 decoder supports 4K at 60fps.</p>
 <p>OK3568 uses the mppvideodec component for video hard decoding, and its output formats are: NV12, I420, YV12.</p>
 <section id="decoding-and-playing-h-264-format-video">
-<h3>5.3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h3>
+<h4>5.3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_h264.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
 mpp[839]: mpp_rt: NOT found ion allocator
@@ -2153,7 +2132,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-h264-format-video-with-audio">
-<h3>5.3.2 Decoding and Playing H264 Format Video with Audio<a class="headerlink" href="#decoding-and-playing-h264-format-video-with-audio" title="Link to this heading"></a></h3>
+<h4>5.3.2 Decoding and Playing H264 Format Video with Audio<a class="headerlink" href="#decoding-and-playing-h264-format-video-with-audio" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_h264.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec  ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 Setting pipeline to PAUSED ...
 mpp[862]: mpp_rt: NOT found ion allocator
@@ -2179,7 +2158,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-h-265-format-video">
-<h3>5.3.3 Decoding and Playing H.265 Format Video<a class="headerlink" href="#decoding-and-playing-h-265-format-video" title="Link to this heading"></a></h3>
+<h4>5.3.3 Decoding and Playing H.265 Format Video<a class="headerlink" href="#decoding-and-playing-h-265-format-video" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
 mpp[873]: mpp_rt: NOT found ion allocator
@@ -2203,7 +2182,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-video-audio-in-h265-format">
-<h3>5.3.4 Decoding and Playing Video&amp;Audio in H265 format<a class="headerlink" href="#decoding-and-playing-video-audio-in-h265-format" title="Link to this heading"></a></h3>
+<h4>5.3.4 Decoding and Playing Video&amp;Audio in H265 format<a class="headerlink" href="#decoding-and-playing-video-audio-in-h265-format" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec  ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 Setting pipeline to PAUSED ...
 mpp[886]: mpp_rt: NOT found ion allocator
@@ -2228,7 +2207,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-vp8-format-video">
-<h3>5.3.5 Decoding and Playing VP8 Format Video<a class="headerlink" href="#decoding-and-playing-vp8-format-video" title="Link to this heading"></a></h3>
+<h4>5.3.5 Decoding and Playing VP8 Format Video<a class="headerlink" href="#decoding-and-playing-vp8-format-video" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.webm ! matroskademux ! queue ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
 mpp[896]: mpp_rt: NOT found ion allocator
@@ -2251,7 +2230,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-vp8-format-video-with-audio">
-<h3>5.3.6 Decoding and Playing VP8 Format Video with Audio<a class="headerlink" href="#decoding-and-playing-vp8-format-video-with-audio" title="Link to this heading"></a></h3>
+<h4>5.3.6 Decoding and Playing VP8 Format Video with Audio<a class="headerlink" href="#decoding-and-playing-vp8-format-video-with-audio" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.webm typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink
 Setting pipeline to PAUSED ...
 mpp[985]: mpp_rt: NOT found ion allocator
@@ -2275,7 +2254,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-vp9-format-video">
-<h3>5.3.7 Decoding and Playing VP9 Format Video<a class="headerlink" href="#decoding-and-playing-vp9-format-video" title="Link to this heading"></a></h3>
+<h4>5.3.7 Decoding and Playing VP9 Format Video<a class="headerlink" href="#decoding-and-playing-vp9-format-video" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp9.webm  ! matroskademux ! queue ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
 mpp[1005]: mpp_rt: NOT found ion allocator
@@ -2299,7 +2278,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="decoding-and-playing-vp9-format-video-with-audio">
-<h3>5.3.8 Decoding and Playing VP9 Format Video with Audio<a class="headerlink" href="#decoding-and-playing-vp9-format-video-with-audio" title="Link to this heading"></a></h3>
+<h4>5.3.8 Decoding and Playing VP9 Format Video with Audio<a class="headerlink" href="#decoding-and-playing-vp9-format-video-with-audio" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp9.webm typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec.! queue ! decodebin ! audioconvert ! audioresample ! alsasink
 Setting pipeline to PAUSED ...
 mpp[1022]: mpp_rt: NOT found ion allocator
@@ -2325,12 +2304,12 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="id4">
-<h2>5.4 Camera Test<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<h3>5.4 Camera Test<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>The OK3568 supports the OV13850 MIPI camera as well as the UVC camera. First of all, let’s test the UVC camera. Here we use RMONCAM FHD 1080P to test. Insert the USB camera into the development board, and the UVC driver will be installed automatically.</p>
 <section id="uvc-camera-test">
-<h3>5.4.1 UVC Camera Test<a class="headerlink" href="#uvc-camera-test" title="Link to this heading"></a></h3>
+<h4>5.4.1 UVC Camera Test<a class="headerlink" href="#uvc-camera-test" title="Link to this heading"></a></h4>
 <section id="camera-recognition-detection-and-format-support-queries">
-<h4><strong>5.4.1.1 Camera Recognition Detection and Format Support Queries</strong><a class="headerlink" href="#camera-recognition-detection-and-format-support-queries" title="Link to this heading"></a></h4>
+<h5><strong>5.4.1.1 Camera Recognition Detection and Format Support Queries</strong><a class="headerlink" href="#camera-recognition-detection-and-format-support-queries" title="Link to this heading"></a></h5>
 <p>Camera Recognition Detection</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# v4l2-ctl --list-devices		//View the device node, see/dev/video9&amp;10 is USB camera node
 rkisp-statistics (platform: rkisp):
@@ -2369,7 +2348,7 @@ Size: Discrete 320x240
 </div>
 </section>
 <section id="camera-capture-format-queries-and-modifications">
-<h4><strong>5.4.1.2 Camera Capture Format Queries and Modifications</strong><a class="headerlink" href="#camera-capture-format-queries-and-modifications" title="Link to this heading"></a></h4>
+<h5><strong>5.4.1.2 Camera Capture Format Queries and Modifications</strong><a class="headerlink" href="#camera-capture-format-queries-and-modifications" title="Link to this heading"></a></h5>
 <p>Camera Capture Format Queries</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# v4l2-ctl -V -d /dev/video9
 Format Video Capture:
@@ -2401,7 +2380,7 @@ Format Video Capture:
 </div>
 </section>
 <section id="camera-image-preview-and-taking-pictures">
-<h4><strong>5.4.1.3 Camera Image Preview and Taking Pictures</strong><a class="headerlink" href="#camera-image-preview-and-taking-pictures" title="Link to this heading"></a></h4>
+<h5><strong>5.4.1.3 Camera Image Preview and Taking Pictures</strong><a class="headerlink" href="#camera-image-preview-and-taking-pictures" title="Link to this heading"></a></h5>
 <p>Camera image preview.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video9 ! videoconvert ! waylandsink
 Setting pipeline to PAUSED ...
@@ -2441,7 +2420,7 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="ov13850-test">
-<h3>5.4.2 OV13850 Test<a class="headerlink" href="#ov13850-test" title="Link to this heading"></a></h3>
+<h4>5.4.2 OV13850 Test<a class="headerlink" href="#ov13850-test" title="Link to this heading"></a></h4>
 <p>For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# grep &#39;&#39; /sys/class/video4linux/video*/name
 /sys/class/video4linux/video0/name:rkisp_mainpath
@@ -2462,7 +2441,7 @@ Freeing pipeline ...
 <p>Statistics for 3A statistics.</p>
 <p>Input-params for 3A parameter setting.</p>
 <section id="id5">
-<h4><strong>5.4.2.1 Camera Recognition Detection and Format Support  Queries</strong><a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
+<h5><strong>5.4.2.1 Camera Recognition Detection and Format Support  Queries</strong><a class="headerlink" href="#id5" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# v4l2-ctl --list-devices
 //View device node
 rkisp-statistics (platform: rkisp):
@@ -2509,7 +2488,7 @@ ioctl: VIDIOC_ENUM_FMT
 </div>
 </section>
 <section id="camera-preview">
-<h4><strong>5.4.2.2 Camera Preview</strong><a class="headerlink" href="#camera-preview" title="Link to this heading"></a></h4>
+<h5><strong>5.4.2.2 Camera Preview</strong><a class="headerlink" href="#camera-preview" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=NV12, width=640, height=480, framerate=30/1 ! waylandsink	
 //Camera preview
 Setting pipeline to PAUSED ...
@@ -2606,7 +2585,7 @@ Freeing pipeline ...
 </section>
 </section>
 <section id="waylandsink-point-test">
-<h2>5.5 Waylandsink Point Test<a class="headerlink" href="#waylandsink-point-test" title="Link to this heading"></a></h2>
+<h3>5.5 Waylandsink Point Test<a class="headerlink" href="#waylandsink-point-test" title="Link to this heading"></a></h3>
 <p>The test display part of this chapter uses the waylandsink plug-in in gstreamer. By default, the video or Camera window pops up randomly on the desktop. If you need it to display to a specific location, you can specify the coordinate parameters.</p>
 <p>Coordinates (0,0), width 320, height 240.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/#
@@ -2616,11 +2595,11 @@ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux !
 </section>
 </section>
 <section id="system-flashing">
-<h1>6. System Flashing<a class="headerlink" href="#system-flashing" title="Link to this heading"></a></h1>
+<h2>6. System Flashing<a class="headerlink" href="#system-flashing" title="Link to this heading"></a></h2>
 <section id="otg-system-flashing">
-<h2>6.1 OTG System Flashing<a class="headerlink" href="#otg-system-flashing" title="Link to this heading"></a></h2>
+<h3>6.1 OTG System Flashing<a class="headerlink" href="#otg-system-flashing" title="Link to this heading"></a></h3>
 <section id="otg-driver-installation">
-<h3>6.1.1 OTG Driver Installation<a class="headerlink" href="#otg-driver-installation" title="Link to this heading"></a></h3>
+<h4>6.1.1 OTG Driver Installation<a class="headerlink" href="#otg-driver-installation" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Path: OK3568-C (Linux) User Profile\Linux\Tool\DriverAssitant_v5.12.zip</p></li>
 </ul>
@@ -2631,9 +2610,9 @@ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux !
 <p><img alt="Image" src="_images/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png" /></p>
 </section>
 <section id="otg-full-flashing-test">
-<h3>6.1.2 OTG Full Flashing Test<a class="headerlink" href="#otg-full-flashing-test" title="Link to this heading"></a></h3>
+<h4>6.1.2 OTG Full Flashing Test<a class="headerlink" href="#otg-full-flashing-test" title="Link to this heading"></a></h4>
 <section id="rkdevtool-flashing-test">
-<h4>6.1.2.1 RKDevTool Flashing Test<a class="headerlink" href="#rkdevtool-flashing-test" title="Link to this heading"></a></h4>
+<h5>6.1.2.1 RKDevTool Flashing Test<a class="headerlink" href="#rkdevtool-flashing-test" title="Link to this heading"></a></h5>
 <ul class="simple">
 <li><p>Path: OK3568-C (Linux) User Profile\Linux\Tool\&lt;/&gt; RKDevTool_Release_v3.18.zip</p></li>
 </ul>
@@ -2652,7 +2631,7 @@ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux !
 <p><strong>Note: After the upgrade is completed, the system will automatically restart twice. The first restart updates some information. The operating user is [root &#64; buildroot]. Please wait patiently. The second restart can be used normally. The operating user is [root &#64; OK3568-buildroot:/].</strong></p>
 </section>
 <section id="factory-tool-flashing-test">
-<h4>6.1.2.2 Factory Tool Flashing Test<a class="headerlink" href="#factory-tool-flashing-test" title="Link to this heading"></a></h4>
+<h5>6.1.2.2 Factory Tool Flashing Test<a class="headerlink" href="#factory-tool-flashing-test" title="Link to this heading"></a></h5>
 <p>FactoryTool is a factory batch OTG burning tool. It does not need to read the image and can do batch burning. In addition, it can burn some larger image files. If RKDevTool compatibility is not satisfied, you can try this method. Before using it, unzip it to a full English path, connect the development board and host computer with a Type-C cable, press and hold the recover button of the development board and don’t release it, then press the reset button to reset the system, and release the recover button after about two seconds. There will be prompts on the Rockchip development tool : loader device found</p>
 <p>**Note: **</p>
 <ul class="simple">
@@ -2669,7 +2648,7 @@ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux !
 </section>
 </section>
 <section id="otg-step-by-step-flashing-test">
-<h3>6.1.3 OTG Step-by-step Flashing Test<a class="headerlink" href="#otg-step-by-step-flashing-test" title="Link to this heading"></a></h3>
+<h4>6.1.3 OTG Step-by-step Flashing Test<a class="headerlink" href="#otg-step-by-step-flashing-test" title="Link to this heading"></a></h4>
 <p>In the development phase, it is very time-consuming to burn all of them every time, so here is the method of using OTG burning tool to burn in separate partitions.</p>
 <p><strong>Note: The operation of identifying the device is the state in which the recover button is pressed when the development board is powered up.</strong></p>
 <p>First, after OK3568-linux-release is compiled, a separate partition image can be found in the rockdev directory.</p>
@@ -2693,7 +2672,7 @@ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux !
 </section>
 </section>
 <section id="tf-card-flashing">
-<h2>6.2 TF Card Flashing<a class="headerlink" href="#tf-card-flashing" title="Link to this heading"></a></h2>
+<h3>6.2 TF Card Flashing<a class="headerlink" href="#tf-card-flashing" title="Link to this heading"></a></h3>
 <p>TF Card Creation and Flashing Test</p>
 <p><strong>Note: After testing, the maximum capacity of TF card is 16G, and the TF card of 32G and above may fail to be burned.  When flashing the TF card, it will also enter the command line as the root&#64;buildroot user. Please wait patiently for the flashing to complete.</strong></p>
 <p>Copy SDDiskTool_v1.69.zip from the user profile tools directory to any directory on windows. Run SD_Firmware_Tool.exe with administrator privileges.</p>
@@ -2714,6 +2693,7 @@ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265.mp4 ! qtdemux !
 <p>Serial port information during the burning process:</p>
 <p><img alt="Image" src="_images/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png" /></p>
 <p>If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. As shown in the figure above, the burning process takes about 7 minutes. Please wait patiently during the burning process.</p>
+</section>
 </section>
 </section>
 
