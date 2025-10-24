@@ -404,7 +404,8 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                  // Network con
 forlinx@ubuntu:~$ sudo apt-get update                   //Update apt-get download sources
 forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot        //Necessary toolkit installation
 forlinx@ubuntu:~$ sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool
-expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python-pip libncurses5-dev
+expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static
+live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python-pip libncurses5-dev
 forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmainutils
 ```
 
