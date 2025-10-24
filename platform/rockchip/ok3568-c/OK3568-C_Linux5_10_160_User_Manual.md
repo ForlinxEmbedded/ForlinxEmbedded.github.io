@@ -16,7 +16,7 @@ This manual is mainly applicable to the Linux5.10.160 operating system on the Fo
 
 ## Revision History
 
-| Date                                                         | User Manual Version                               | Revision History  </font>                                    |
+| Date                                                         | User Manual Version                               | Revision History                                             |
 | ------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------ |
 | 24/11/2023                                                   | V1.0                                              | <font style="color:rgb(38, 38, 38);">OK3568-C Linux5.10.160+QT5.15.8\_User’s Manual Initial Version</font><font style="color:rgb(38, 38, 38);">  </font> |
 | <font style="color:rgb(38, 38, 38);">11/12/2023</font><font style="color:rgb(38, 38, 38);">   </font> | V1.1                                              | 1. Removing the Forlinx user from FTP, and the file system has not been added yet; <br />2. Video hardcoding; RGA only supports 0-4G; adding description. |
