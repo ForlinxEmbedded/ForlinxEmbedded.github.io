@@ -215,7 +215,7 @@ Install the file Zilla tool on windows and set it up as shown in the following f
 
 - **This function requires the development board to be connected to the network cable; the host IP is set in the same network segment as the client, ensuring that the host and the client are in the same LAN; username root, password root; after successful login, you can upload, download and delete files anywhere in the file system. In general, it is not recommended to use root to log in to FTP. Please set the user login according to the actual situation;**
 
-- **The following test is based on the development board IP address 172.16.0.76. Please modify it according to your actual situation. Use the command 'ifconfig eth0 172.16.0.76' on the debugging serial terminal to make the change.**
+- **The following test is based on the development board IP address 172.16.0.76. Please modify it according to your actual situation. Use the command ''ifconfig eth0 172.16.0.76" on the debugging serial terminal to make the change.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
@@ -472,7 +472,7 @@ Click the connect button, the program will automatically enter the dialing proce
 
 "WIFI" is a tool to configure wifi. The OK3568 platform has the AW-CM358 module on board by default. The wifi module exists in the system as a mlan node, and this test corresponds to mlan0 (other corresponding nodes are used for multiple devices):
 
-**Note: Be sure to install the Wifi antenna when startup.**
+**Note: Be sure to install the WiFi antenna when startup.**
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
 
@@ -1017,6 +1017,7 @@ Agent is already registered
 Default agent request successful
 // At this time, turn on the Bluetooth on your phone to scan. If it fails to scan for a long time, please repeat the operation.
 [bluetooth]# discoverable on 								// Set the current agent as the default
+
 // Click on "BlueZ 5.50" to pair. Perform password verification on both the phone and the development board, and select "YES".
 [NEW] Device C4:FE:5B:17:C7:78 OPPO Reno3 Youth Edition 5G
 Request confirmation
@@ -1193,11 +1194,11 @@ Backlight level range (0--255), maximum level 255, 0 indicating turn off. Enter 
 **1. View the current screen backlight values:**
 
 ```shell
-root@OK3568 - buildroot:/# cat /sys/class/backlight/lvds - backlight/brightness		// Check the backlight value of the LVDS screen
+root@OK3568 - buildroot:/# cat /sys/class/backlight/lvds - backlight/brightness	// Check the backlight value of the LVDS screen
 200
-root@OK3568 - buildroot:/# cat /sys/class/backlight/dsi1 - backlight/brightness		 // Check the backlight value of the DSI screen
+root@OK3568 - buildroot:/# cat /sys/class/backlight/dsi1 - backlight/brightness	// Check the backlight value of the DSI screen
 200
-root@OK3568 - buildroot:/# cat /sys/class/backlight/edp - backlight/brightness		// Check the backlight value of the eDP screen
+root@OK3568 - buildroot:/# cat /sys/class/backlight/edp - backlight/brightness	// Check the backlight value of the eDP screen
 200
 ```
 
@@ -1302,10 +1303,11 @@ auto lo
 iface lo inet loopback
 // The following is the content to be added
 auto eth0
-iface eth0 inet static       					// Specify the network card that needs a fixed IP
-address 192.168.1.151      						// Specify the fixed IP address
+iface eth0 inet static       			// Specify the network card that needs a fixed IP
+address 192.168.1.151      			  // Specify the fixed IP address
 netmask 255.255.255.0     					// Specify the fixed subnet mask
-gateway 192.168.1.1      								// Specify the gateway
+gateway 192.168.1.1      		        // Specify the gateway
+
 // After saving and exiting, restart the board or restart the configuration:
 root@OK3568-buildroot:/# ifdown -a					// Stop using the configuration
 root@OK3568-buildroot:/# ifup -a						// Enable the configuration
@@ -1635,7 +1637,7 @@ Short press the power button to wake up:
 [   23.477563] PM: suspend of devices complete after 837.115 msecs
 [   23.481929] PM: late suspend of devices complete after 3.344 msecs
 [   23.484390] PM: noirq suspend of devices complete after 2.447 msecs
-/********************************此处省略部分打印信息********************************/
+/****************** Some print information is omitted here*****************************/
 [   23.989994] usb usb6: root hub lost power or was reset
 [   24.249974] usb 5-1: reset high-speed USB device number 2 using ehci-platform
 [   24.470421] PM: resume of devices complete after 839.550 msecs
