@@ -1,4 +1,4 @@
-# Linux5. 10.160\_User’s Compilation Manual
+# Linux5. 10.160\_User’s Compilation Manual_V1.2
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -136,8 +136,6 @@ Open the virtual machine and select the extracted 3588 development environment.v
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
-
 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 Development environment account no.: forlinx, password: forlinx; after filling in, select Sign in to log in.
@@ -210,7 +208,7 @@ Specify the disk file, the default one here is fine.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
-Click Finish by default.
+Click "Finish" by default.
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
@@ -354,9 +352,7 @@ Before using the network, make sure that our virtual machine can connect to the 
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png)
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
 
 The network is set to dynamic ip.
 
@@ -368,13 +364,13 @@ If TFTP, SFTP and other servers are used, the network contact mode of the virtua
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png)
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1-1761282627880.png)
+
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -441,8 +437,6 @@ forlinx@ubuntu:~$ /swapfile none swap sw 0 0
 ```
 
 2\. It is recommended to adjust the memory of the development environment to 16g. Low memory may cause the compilation to fail.
-
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png)
 
 ### 3.2 Qt Creator Installation
 
