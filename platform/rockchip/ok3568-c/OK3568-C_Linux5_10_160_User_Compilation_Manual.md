@@ -73,7 +73,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513268-e1e3d73c-ea58-4db6-86b2-2bcb430bf195.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -81,35 +81,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513453-fcba4324-b61c-4700-a5a0-0dffae59dbbd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
 
 Click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513616-4d573560-c60f-4f95-a2bf-7b0a38394f83.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513807-4fea4ba5-6c3f-4774-9046-4ac308ae7838.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513983-81c57db7-35b1-4416-bb29-36120e02a747.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
 
 Check and click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514135-8b46b82c-621d-44fc-89d8-d33018b427f4.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514310-369d17b9-d01f-4d95-a676-04fb377558fd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
 
 Click "Installation".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514482-82865f12-b42f-4c32-aca1-30a96a2fa309.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514655-325d6ab7-c6cd-4de5-a879-6248cd24fcde.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -126,25 +126,25 @@ First, download the development environment provided by Forlinx. In the developm
 
 Select the zip file to unzip together
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548687-41fb4543-911d-4ce3-9b88-09f7fb114c01.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
 
 Select .vmx as the file to be opened by the virtual machine after the complete decompression.
 
 Open the virtual machine and select the extracted 3588 development environment.vmx
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548894-5a126d86-d30f-4f1c-906b-1d615fdf2e0a.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549103-fbe0d3f1-43ad-4b37-aa46-27fd9fc4a526.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549304-2128d94e-45fa-4091-83c8-678157602b7b.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 Development environment account no.: forlinx, password: forlinx; after filling in, select Sign in to log in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549464-41fc41e5-d024-4e97-a993-d6b193bc8aae.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549733-cae28152-e433-4a1e-90ab-8a2479049af5.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -156,63 +156,63 @@ Development environment account no.: forlinx, password: forlinx; after filling i
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278531825-28237039-37c8-4a5f-8597-f64b71e7e312.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 Choose custom, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532008-920d71ea-3371-425c-9b27-a15b1789fdf9.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532173-48b35578-2a3d-4aff-9888-513f9b66eaaf.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 Select Install the operating system later and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532371-cd7442c7-21c1-4c8a-8463-24ea3de5f6c1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 Leave the default and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532534-39687568-6ee3-4284-b373-2104df01f0fb.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532718-2cd2ea2a-0f97-46d5-ad8b-4f004e889a20.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Set the number of processors as appropriate.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532900-dd3f7357-07c5-4dc4-9fd1-7d367c7a7111.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Set the memory size according to the actual situation. It is recommended to use 16g
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533112-8f49bb5a-64b5-47df-8798-044888bfa83b.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533381-8dc68236-561d-4840-abb7-3512def5cecf.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 The default selection for the IO controller type here is LSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533635-d54cda44-50e2-4643-b3d3-54dc41a1bfa6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 The default selection here is also SCSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533807-86b2d601-916f-4f7d-b7c0-4a672e97d659.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Choose to create a new virtual disk here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534036-c400a9dc-bdac-4dde-bd52-d4e721fb4ccd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534210-b2fc7391-1c76-4148-80c8-855cd9174698.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 Specify the disk file, the default one here is fine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534358-9585162d-5c54-42eb-be37-f9361aebf91d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 Click Finish by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534538-0cb90337-6bc8-4fc5-8009-267ab1d2617c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 The virtual machine creation is now complete.
 
@@ -222,59 +222,59 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 The version of Ubuntu to install is 20.04. First of all, go to the official website of Ubuntu to get the Ubuntu 20.04 64-bit image. The download address is "ubuntu-20.04.6-desktop-amd64.iso" version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534726-3aa57e5a-99a5-4638-a835-5b80b82fc03d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534926-94943ef2-c4d9-4ddd-91e9-50c5088dfacc.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535121-beaef4c9-b729-4a86-8299-02e28a716d2d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535409-a8fcb60d-f0a2-428c-8be7-0e124dcbc137.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535587-6fcfdee5-51f1-4e1c-9906-d39fc0048711.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535793-fd516f0e-e8ab-4dee-9119-5ad4232b0450.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537143-ccb45ffe-9c1d-42e6-a4ae-0da143112cbf.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537449-a7f018e6-bdb2-4867-9e95-42fa1c7d2cb1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
 
 After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537830-e34fbcf1-8a51-4008-af9d-7f58d0899130.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538153-32d91128-59b7-4c50-9745-84b3186f5a51.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 The system interface after the reboot is complete as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538378-ec2e5454-98ce-4802-820d-82c55f5ae9a8.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
 
 #### 3.1.3 Basic Ubuntu Installation
 
@@ -284,21 +284,21 @@ After installing the Ubuntu20.04 operating system, there are a few configuration
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538688-9700b495-f48a-4190-9391-8d970fdb36ec.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538895-1625dbb7-305b-4f49-ac94-850a3b19510e.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539134-a41b7a36-aa5c-4523-a560-8cfce32569f6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539323-74442df4-84e4-492a-8633-8ed6f333949c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539510-050c7a0a-ec54-4cd5-85a1-9f5e81e426fa.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
 
 Press the keyboard \[Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the sudo command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):
 
@@ -336,13 +336,13 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539710-8c366a71-823a-4180-8309-32189be7ce07.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
 
 + **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539972-31f94d63-6f34-4904-846e-cd72975c7e99.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -350,31 +350,31 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540173-d56c3ec8-1d83-49da-99f7-6bbd9a9b6830.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540394-95e15661-d1d0-427e-93ed-e365eb39c296.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540571-3d28eb06-aea3-4fda-8397-e821b2b7fca1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png)
 
 The network is set to dynamic ip.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540815-009829ab-476a-45b8-b02e-d7f42bfbe34f.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 + **Bridge Mode:**
 
 If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541083-4d9634db-a591-45be-ad82-f0c7b1e12e3e.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541277-05740351-022e-45fc-96c7-06caac0e068d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541434-9c36b6f6-6539-4295-8eec-4df165beb02c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541630-bf5fd69d-adc1-407d-915f-2503b2055225.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -382,13 +382,13 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541851-33d6ec29-11c4-499b-867c-528314eef0ca.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542123-ad4e8176-1557-40a0-b545-a4aa290b16d2.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542337-c0fe4886-515f-4fe1-9446-22882a83577e.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
 #### 3.1.6 Virtual Machine Basic Library Installation
 
@@ -442,7 +442,7 @@ forlinx@ubuntu:~$ /swapfile none swap sw 0 0
 
 2\. It is recommended to adjust the memory of the development environment to 16g. Low memory may cause the compilation to fail.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542580-d0fd91fe-bf0c-47fd-aa6f-774dad1fd478.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png)
 
 ### 3.2 Qt Creator Installation
 
@@ -454,37 +454,37 @@ Copy qt-creator-opensource-linux-x86\_64-4.7.0.run to any directory within the c
 forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run                   
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542788-a08554d9-9ff7-485a-a499-6a5b274fd48f.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
 
 Then the installation window of the graphical interface will pop up, and install according to the instructions:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542977-d1772186-fa60-442a-8cf2-6e5cffefaae2.png)		 ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543199-cbc234c5-2d49-43aa-864e-4daf0abe7a4c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)		 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543389-eaacabb8-9343-4e45-8626-9a68c043e0a0.png) 	![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543608-c9d367f7-56c3-44b6-829c-04f29286f63d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) 	![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 Users who install online need to register their own Qt account. Those who already have a Qt account can log in directly. Qt password requirements are: including capital letters, lowercase letters and numbers. After successful registration and login, click next.
 
 Users who install offline can skip it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543830-11d43ecf-8d67-4bd0-a472-fc52383a77b1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
 
 Click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544047-02ae511b-f6df-49fc-94ad-50606afa9ac1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 Users can set the installation path according to their own habits. It is set by default here, so click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544274-25984f38-7e0d-4029-97ec-25fc13e82651.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
 To fully install, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544480-43ea98bb-67e7-4632-a1cf-b917e22a17eb.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544690-a23e2f5f-b76b-46c9-8ebc-ef0ddc395677.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
 
 Click Install and wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544902-6e395fac-45b1-428e-b5ed-dd3045ed1597.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
 
 When the installation is complete, click Finish. At this time, the Qt interface will be opened automatically. You can also start it through the command line. Execute the following command to open Qt Creator in the backstage. When the user opens it, the actual installation path shall prevail:
 
@@ -493,7 +493,7 @@ forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 forlinx@ubuntu:~$ ./qtcreator &
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278545088-f7954df3-4aa6-40d1-9046-723786b916af.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
 
 The Qt Creator tool screen appears. Qt Creator is installed.
 
@@ -581,11 +581,11 @@ forlinx@forlinx-ubuntu:~/work/3568/OK3568_Linux_fs$ ./build.sh
 
 The final compilation effect is shown in the following figure (the path may be different according to the actual situation):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519464-b89aebf0-bcc5-4f08-85d7-7a0e0cea8f6a.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
 
 After successful compilation, the corresponding compilation project result file will be generated under the OK3568\_Linux\_fs/rockdev folder, find the image file there.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519744-a17e751c-a98e-4d42-baa3-928eee7838b6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
 
 **Note:** 
 
@@ -623,7 +623,7 @@ The kernel in the update. img is not updated after successful compilation. Pleas
 
 **Note: After the user graphical interface configuration modifies the kernel configuration, such as adding the usb-to-serial ch340 driver, execute ./build.sh kernel, burn the boot.img image, and start the development board to find that the graphical configuration does not take effect. You can use one of the following methods to solve it:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519952-52a94c0e-c1cd-4712-ace8-93361052f010.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
 
 Method 1: Write the configuration directly to the kernel default configuration file/OK3568\_Linux\_fs/kernel/arch/arm64/configs/OK3568-C-
 
@@ -636,11 +636,11 @@ forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh kernel
 
 Method 2: Configure the kernel graphically, and comment out the source code device/rockchip/common/scripts/mk-kernel. sh the commands shown in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729748971129-8aaac971-6fc6-46b9-82b1-07ec208f8250.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
 
 Compile kernel/ Makefile file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729748796793-7588d772-02d0-4b6e-a597-68abe1e049a6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/kernel$ make ARCH=arm64 menuconfig
@@ -668,7 +668,7 @@ Found old config, override it? (y/n):y Select y to override the previous .config
 
 Method 2: Graphically configure the buildroot, and comment out the device/rockchip/common/scripts/mk-the location of the following figure in the buildroot. sh:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729133678368-3f66e00b-a5eb-4e60-9d18-12bfe4052b4b.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/buildroot/output/OK3568$ make menuconfig
@@ -720,11 +720,11 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 **Note: The output directory under buildroot needs the source code to be fully compiled before it can be generated.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278520399-97607db9-0b25-4da5-a25f-627035faf646.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
 
 4\. Follow the same method to add the GCC compiler, click “Add->GCC->C++” on the right, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278520769-d05d050c-d4eb-41fe-8191-f158b073c500.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
 
 #### 4.4.2 Qt Versions Configuration
 
@@ -734,7 +734,7 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 3\. Click open to add;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521034-d7cf7714-3105-4689-9683-c4a8ed6c6efd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
 
 4\. Then it will return to the Qt Version configuration box, and the Version name can be changed by itself;
 
@@ -752,7 +752,7 @@ Kits is a build kit for building and selecting development build environments us
 
 4\. Qt version selects the name entered when the Qt version was created.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521412-b439e3bd-e015-4425-affc-02a52c66f43c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
 
 5\. Then click Apply and OK.
 
@@ -802,30 +802,30 @@ Watchdog Ticking Away!
 
 Open Qt Creator in the development environment (users open it according to their actual path), click File->Open File or Project in Qt Creator, a pop-up window will appear, select /3568/OK3568\_Linux\_fs/app/forlinx/forlinx\_qt/watchdog/ watchdog.pro
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521691-446f0d66-a6de-4eb4-b2b9-adbac3c23ffb.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
 
 After opening the project, the interface is as follows: (If the page is not automatically changed, please select as shown in the screenshot).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521907-882537ff-aab0-4987-a170-8c64515f8de1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
 
 Click Configure Project to adapt to the build environment described in the “Qt Creator Environment Configuration” section of this manual.
 
 After selection, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522180-76d20235-a09d-4dff-9cb2-0135a93d5442.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
 
 Click Build->Clean All to clear it. (If the intermediate file is not cleared, it can be deleted manually).
 
 Click Projects to uncheck Shadow build.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522421-8c6a5ab7-a9ce-4a72-88be-0902f222e58d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
 
 Then click Build-> Build All to compile.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522722-eccde718-c389-4662-ba54-bad05baaceb2.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
 
 After the Build progress bar in the lower right corner is finished, it means that the compilation is finished. At this time, you will see the newly generated binary file fltest\_qt\_watchdog in the /app/forlinx/forlinx\_qt/watchdog directory, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278523014-cd2cfd24-0659-4cda-be02-d2ebfe309ef1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
 
 Copy the executable file generated by compiling to the board through U disk or FTP, copy it to the development board, and run the test.
