@@ -63,42 +63,42 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 ## 1.1 VMware软件的下载与购买
 [登陆VMware官网https://www.vmware.com/cn.h](https://www.vmware.com/cn.html)[tml下载](https://www.vmware.com/cn.html)Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者使用VMware提供的试用版本。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513268-e1e3d73c-ea58-4db6-86b2-2bcb430bf195.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
 
 等待下载完成后双击启动文件启动安装程序。
 
 ## 1.2 VMware软件的安装
 双击启动程序进入安装向导。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513453-fcba4324-b61c-4700-a5a0-0dffae59dbbd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
 
 点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513616-4d573560-c60f-4f95-a2bf-7b0a38394f83.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
 
 勾选我接受许可协议中的条款，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513807-4fea4ba5-6c3f-4774-9046-4ac308ae7838.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
 
 修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278513983-81c57db7-35b1-4416-bb29-36120e02a747.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
 
 勾选，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514135-8b46b82c-621d-44fc-89d8-d33018b427f4.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
 
 勾选添加快捷方式，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514310-369d17b9-d01f-4d95-a676-04fb377558fd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
 
 点击“安装”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514482-82865f12-b42f-4c32-aca1-30a96a2fa309.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
 
 等待安装完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278514655-325d6ab7-c6cd-4de5-a879-6248cd24fcde.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
 
 点击完成后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。
 
@@ -121,25 +121,25 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 
 选中压缩包一起解压
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548687-41fb4543-911d-4ce3-9b88-09f7fb114c01.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
 
 解压完成后选中.vmx为虚拟机要打开的文件。
 
 打开虚拟机，选择解压出来的3588开发环境.vmx
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548894-5a126d86-d30f-4f1c-906b-1d615fdf2e0a.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 加载完成后点击开启此虚拟机，即可运行，进入系统的界面。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549103-fbe0d3f1-43ad-4b37-aa46-27fd9fc4a526.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549304-2128d94e-45fa-4091-83c8-678157602b7b.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 	提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549464-41fc41e5-d024-4e97-a993-d6b193bc8aae.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549733-cae28152-e433-4a1e-90ab-8a2479049af5.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
 
 
 
@@ -151,63 +151,63 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 ### 3.1.1 创建ubuntu虚拟机
 打开VMware软件，点击创建新的虚拟机。进入以下界面：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278531825-28237039-37c8-4a5f-8597-f64b71e7e312.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 选择自定义，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532008-920d71ea-3371-425c-9b27-a15b1789fdf9.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 选择对应VMware版本的兼容性，版本可在帮助->关于VMware Workstation中查看，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532173-48b35578-2a3d-4aff-9888-513f9b66eaaf.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 选择稍后安装操作系统，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532371-cd7442c7-21c1-4c8a-8463-24ea3de5f6c1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 保持默认，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532534-39687568-6ee3-4284-b373-2104df01f0fb.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 修改虚拟机名称及安装位置，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532718-2cd2ea2a-0f97-46d5-ad8b-4f004e889a20.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 按照实际情况设置处理器数量。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532900-dd3f7357-07c5-4dc4-9fd1-7d367c7a7111.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 同样按照实际情况设置内存大小，建议使用16G。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533112-8f49bb5a-64b5-47df-8798-044888bfa83b.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 设置网络类型，默认为NAT模式，点击下一步。后面的步骤保持默认值，直到指定磁盘容量步骤。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533381-8dc68236-561d-4840-abb7-3512def5cecf.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 IO控制器类型这里默认选择LSI就可以：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533635-d54cda44-50e2-4643-b3d3-54dc41a1bfa6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 这里同样是默认选择SCSI。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533807-86b2d601-916f-4f7d-b7c0-4a672e97d659.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 这里选择创建新的虚拟磁盘：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534036-c400a9dc-bdac-4dde-bd52-d4e721fb4ccd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 设置磁盘大小为200G，并选择磁盘的存在形式，然后点击“下一步”完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534210-b2fc7391-1c76-4148-80c8-855cd9174698.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 指定磁盘文件，这里默认即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534358-9585162d-5c54-42eb-be37-f9361aebf91d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 默认点击“完成”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534538-0cb90337-6bc8-4fc5-8009-267ab1d2617c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 至此，虚拟机创建完成。
 
@@ -218,59 +218,59 @@ IO控制器类型这里默认选择LSI就可以：
 ### 3.1.2 系统安装
 我们选择安装的Ubuntu 版本是20.04，首先去Ubuntu官网获取Ubuntu20.04 64位镜像，下载地址为：[http://sources.ubuntu](http://sources.ubuntu.com/20.04/)[.com/20.04/](http://sources.ubuntu.com/20.04/)下载“ubuntu-20.04.6-desktop-amd64.iso”这个版本。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534726-3aa57e5a-99a5-4638-a835-5b80b82fc03d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
 
 右击刚创建完成的Ubuntu64位 在弹出菜单中选择设置：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534926-94943ef2-c4d9-4ddd-91e9-50c5088dfacc.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
 
 弹出“虚拟机设置菜单”根据如下图： 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535121-beaef4c9-b729-4a86-8299-02e28a716d2d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 点击CD/DVD（SATA），选择使用ISO映像文件，浏览选择前面下载的Ubuntu镜像，然后确定。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535409-a8fcb60d-f0a2-428c-8be7-0e124dcbc137.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 设置好镜像后，保证网络可用，然后开启虚拟机，进行Ubuntu镜像的安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535587-6fcfdee5-51f1-4e1c-9906-d39fc0048711.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 开启虚拟机后，等待出现安装界面如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278535793-fd516f0e-e8ab-4dee-9119-5ad4232b0450.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
 
 如图左侧选择语言后,点击“Install  Ubuntu”后弹出选择语言界面。Ubuntu默认语言是英文的，当然，也可以选择中文，默认选择的语言在后期也是可以重新设置的，选择完成后continue。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 接下来，默认选择continue继续安装，安装过程会很慢，然后点击“continue”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 默认，点击Install Now，会弹出下图，点击“continue”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 接下来选择时区，这里点击上海时区或输入Shanghai即可（不同时区根据实际情况选择即可），点击“继续”。最后设置用户名和密码，点击“continue”就会自动安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537143-ccb45ffe-9c1d-42e6-a4ae-0da143112cbf.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
 
 安装过程下图，网络不好可以Skip跳过，不影响安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537449-a7f018e6-bdb2-4867-9e95-42fa1c7d2cb1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
 
 安装完成后显示如下图，点击“Restart Now”重启（或者点击“重新启动客户机”）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278537830-e34fbcf1-8a51-4008-af9d-7f58d0899130.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538153-32d91128-59b7-4c50-9745-84b3186f5a51.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 重启完成登录后系统界面如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538378-ec2e5454-98ce-4802-820d-82c55f5ae9a8.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
 
 ### 3.1.3 Ubuntu的基本配置
 安装好Ubuntu20.04操作系统后，要进行一些配置。
@@ -279,23 +279,23 @@ IO控制器类型这里默认选择LSI就可以：
 
 接下来安装VMware Tools，如果不安装该工具，在Windows主机和虚拟机之间无法使用复制粘贴、文件拖拽。首先点击VMware 导航栏上的“虚拟机”，然后在下拉框中点击“安装VMware Tools”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538688-9700b495-f48a-4190-9391-8d970fdb36ec.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
 
 完成后进入Ubuntu，桌面会出现VMware Tools的光盘图标，点击进入其中：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538895-1625dbb7-305b-4f49-ac94-850a3b19510e.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
 
 双击VMwareTools图标，进入后看到一个压缩文件VMwareTools-10.3.10-12406962.tar.gz（不同的虚拟机版本可能会不同），
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539134-a41b7a36-aa5c-4523-a560-8cfce32569f6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
 
 复制文件到主目录下面（即home 个人用户名的目录下）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539323-74442df4-84e4-492a-8633-8ed6f333949c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539510-050c7a0a-ec54-4cd5-85a1-9f5e81e426fa.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
 
 按键盘【Ctrl+Alt+T】调出终端命令界面，使用tar命令对VMwareTools安装包解压（使用sudo命令会提示输入密码，根据提示直接输入密码回车即可，Linux系统密码输入无回显，确保输入的密码正确后按回车确认即可）：
 
@@ -333,57 +333,57 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 
 VMware tools工具完成后，可以实现Windows和Ubuntu之间的文件复制粘贴，虚拟机自适应全显等功能。如果虚拟机不能够全屏显示，可以通过点击查看，选择自动调整大小，点击自动适应客户机，即可实现虚拟的全屏问题，VMware tools安装成功。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539710-8c366a71-823a-4180-8309-32189be7ce07.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
 
 + **基本设置：**
 
 在下图位置进行大部分的系统设置。Ubuntu上很多设置的需求都可以在这里完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278539972-31f94d63-6f34-4904-846e-cd72975c7e99.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 ### 3.1.4 Ubuntu的网络设置
 + **NAT模式**
 
 在使用网络前，先确保我们的虚拟机能连接互联网，打开虚拟机设置，网络适配器中的网络桥接模式改为“NAT模式”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540173-d56c3ec8-1d83-49da-99f7-6bbd9a9b6830.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通。这是我们虚拟机上外网最常用的方式。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540394-95e15661-d1d0-427e-93ed-e365eb39c296.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540571-3d28eb06-aea3-4fda-8397-e821b2b7fca1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png)
 
 网络设置为动态ip。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278540815-009829ab-476a-45b8-b02e-d7f42bfbe34f.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 + **桥接模式：**
 
 如果在使用TFTP，SFTP等服务器时则需要设置虚拟机的网络联系方式为桥接方式。VMware虚拟网卡设置为桥接模式时，主机网卡和虚拟机网卡通过虚拟网桥进行通信，需要将Ubuntu的IP与主机IP设置在同一个网段。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541083-4d9634db-a591-45be-ad82-f0c7b1e12e3e.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541277-05740351-022e-45fc-96c7-06caac0e068d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541434-9c36b6f6-6539-4295-8eec-4df165beb02c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png)
 
  	设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541630-bf5fd69d-adc1-407d-915f-2503b2055225.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png)
 
 + <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：网络设置部分涉及到的IP以及DNS请按照用户自身的实际环境来设置，手册为举例说明。**
 
 ### 3.1.5 U盘的加载
 打开虚拟机设置，USB控制器，在兼容性里面选择USB3.0，然后确定。如下图，因为目前大多数电脑都支持USB3.0的接口，如果不设置，当我们插入USB3.0接口，是不能连接到虚拟机的。如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278541851-33d6ec29-11c4-499b-867c-528314eef0ca.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 虚拟机启动后，插入U盘，虚拟机右下角会多出一个类似“U盘”的图标，右击-->连接即可，然后就可以在文件系统看到多一个目录，说明U盘加载成功，如图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542123-ad4e8176-1557-40a0-b545-a4aa290b16d2.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542337-c0fe4886-515f-4fe1-9446-22882a83577e.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
 ### 3.1.6 虚拟机基本库安装
 在进行开发之前，还需要一些其他的必要库，我们使用以下命令逐一安装，安装前需保证网络可正常使用，能上外网：
@@ -438,7 +438,7 @@ forlinx@ubuntu:~$ /swapfile none swap sw 0 0
 
 2、建议调整开发环境内存至 16G，内存低可能导致编译不通过。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542580-d0fd91fe-bf0c-47fd-aa6f-774dad1fd478.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png)
 
 
 
@@ -451,37 +451,37 @@ forlinx@ubuntu:~$ /swapfile none swap sw 0 0
 forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run                   
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542788-a08554d9-9ff7-485a-a499-6a5b274fd48f.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
 
 然后会弹出图形界面的安装窗口，按照提示进行安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542977-d1772186-fa60-442a-8cf2-6e5cffefaae2.png)		 ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543199-cbc234c5-2d49-43aa-864e-4daf0abe7a4c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)		 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543389-eaacabb8-9343-4e45-8626-9a68c043e0a0.png) 	![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543608-c9d367f7-56c3-44b6-829c-04f29286f63d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) 	![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 在线安装的用户需要自己注册测Qt账户，已有Qt账户的直接登录即可，Qt密码要求为：包含大写字母、小写字母、数字，注册登陆成功后，点击next。
 
 离线安装的用户点击跳过即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543830-11d43ecf-8d67-4bd0-a472-fc52383a77b1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
 
 点击next
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544047-02ae511b-f6df-49fc-94ad-50606afa9ac1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 用户可根据自己习惯设置安装路径，这边直接默认，点击next
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544274-25984f38-7e0d-4029-97ec-25fc13e82651.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
 完全安装，点击next
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544480-43ea98bb-67e7-4632-a1cf-b917e22a17eb.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544690-a23e2f5f-b76b-46c9-8ebc-ef0ddc395677.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
 
 点击install，等待安装完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544902-6e395fac-45b1-428e-b5ed-dd3045ed1597.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
 
 安装完成，点击finish。这时将自动打开Qt界面，也可以通过命令行启动，执行以下命令，以后台方式打开Qt Creator，用户打开时以自己实际安装路径为准：
 
@@ -490,7 +490,7 @@ forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 forlinx@ubuntu:~$ ./qtcreator &
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278545088-f7954df3-4aa6-40d1-9046-723786b916af.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
 
 出现Qt Creator工具界面。Qt Creator安装完毕。
 
@@ -581,11 +581,11 @@ forlinx@forlinx-ubuntu:~/work/3568/OK3568_Linux_fs$ ./build.sh
 
 最终的编译效果如下图，（根据实际情况，路径可能会有不同）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519464-b89aebf0-bcc5-4f08-85d7-7a0e0cea8f6a.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
 
 编译成功后，将在OK3568_Linux_fs/rockdev文件夹下生成对应编译工程结果文件，找到其中的镜像文件。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519744-a17e751c-a98e-4d42-baa3-928eee7838b6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
 
 <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：update.img为打包好用于OTG或者TF卡完全烧写用，其它文件为分步烧写使用。**
 
@@ -623,7 +623,7 @@ forlinx@ubuntu: ~/3568/OK3568_Linux_fs$./build.sh updateimg    //单独生成upd
 
 + **注意：用户图形界面配置修改过内核配置后，例如增加usb转串口ch340驱动，执行./build.sh kernel，烧写boot.img镜像，启动开发板后发现图形配置未生效，可以使用其中一个方法解决：**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278519952-52a94c0e-c1cd-4712-ace8-93361052f010.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
 
 方法1：直接将配置写到内核默认配置文件/OK3568_Linux_fs/kernel/arch/arm64/configs/OK3568-C-
 
@@ -636,11 +636,11 @@ forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh kernel
 
 方法2：图形化配置内核，注释掉源码device/rockchip/common/scripts/mk-kernel.sh下图命令，如下图。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729748971129-8aaac971-6fc6-46b9-82b1-07ec208f8250.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
 
 编辑kernel/ Makefile文件
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729748796793-7588d772-02d0-4b6e-a597-68abe1e049a6.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/kernel$ make ARCH=arm64 menuconfig
@@ -668,7 +668,7 @@ Found old config, override it? (y/n):<font style="color:#0000FF;">y</font>选择
 
 方法2：图形化配置buildroot，注释掉device/rockchip/common/scripts/mk-buildroot.sh中下图位置：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1729133678368-3f66e00b-a5eb-4e60-9d18-12bfe4052b4b.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/buildroot/output/OK3568$ make menuconfig
@@ -716,11 +716,11 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 
 <font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);">⁉️</font>**注意：buildroot下output目录需要源码经过全编译后才可生成。**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278520399-97607db9-0b25-4da5-a25f-627035faf646.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
 
 4、按照同样的方法添加GCC编译器，点击右侧“Add->GCC->C++”，如图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278520769-d05d050c-d4eb-41fe-8191-f158b073c500.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
 
 ### 4.4.2 Qt Versions 配置
 1、点击Qt Creator 的Tools ->Options->Qt Versions， 
@@ -729,7 +729,7 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 
 3、点击open添加。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521034-d7cf7714-3105-4689-9683-c4a8ed6c6efd.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
 
 4、然后会返回 Qt Version配置框，Version name可以自行更改。
 
@@ -746,7 +746,7 @@ Kits是一个构建套件，用来构建和选择开发编译环境，对于有�
 
 4、Qt version选择Qt version创建时输入的名字。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521412-b439e3bd-e015-4425-affc-02a52c66f43c.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
 
 5、然后点击Apply及OK。
 
@@ -801,31 +801,31 @@ Watchdog Ticking Away!
 ### 4.5.2 编译并运行QT应用程序
 在开发环境打开Qt Creator（用户根据自己的实际路径打开），点击Qt Creator 的File->Open File or Project，弹出窗口，选择/3568/OK3568_Linux_fs/app/forlinx/forlinx_qt/watchdog/watchdog.pro
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521691-446f0d66-a6de-4eb4-b2b9-adbac3c23ffb.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
 
 打开项目后界面如下：（若没有自动改变页面，请按照截图所示选择）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278521907-882537ff-aab0-4987-a170-8c64515f8de1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
 
 点击Configure Project后将适配本手册《Qt Creator环境配置》章节中构建的编译环境。
 
 选择后界面如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522180-76d20235-a09d-4dff-9cb2-0135a93d5442.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
 
 点击Build->Clean All进行清空。（如果没有清除中间文件可以手动删除）。
 
 点击Projects 取消选中Shadow build。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522421-8c6a5ab7-a9ce-4a72-88be-0902f222e58d.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
 
 然后点击Build->Build All进行编译。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278522722-eccde718-c389-4662-ba54-bad05baaceb2.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
 
 右下角Build进度条走完之后代表编译完成，此时在路径/app/forlinx/forlinx_qt/watchdog目录下会看到新生成的二进制文件fltest_qt_watchdog，如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278523014-cd2cfd24-0659-4cda-be02-d2ebfe309ef1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
 
 将编译生成的可执行文件通过U盘或者ftp等方式拷贝到板子上，拷贝到开发板，运行测试即可。
 
