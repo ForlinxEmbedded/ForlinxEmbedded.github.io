@@ -22,7 +22,7 @@ This manual is mainly applicable to the Linux5.10.160 operating system on the Fo
 | <font style="color:rgb(38, 38, 38);">11/12/2023</font><font style="color:rgb(38, 38, 38);">   </font> | V1.1                                              | 1. Removing the Forlinx user from FTP, and the file system has not been added yet; <br />2. Video hardcoding; RGA only supports 0-4G; adding description. |
 | <font style="color:rgb(38, 38, 38);">15/05/2024</font><font style="color:rgb(38, 38, 38);">   </font> | V2.0                                              | <font style="color:rgb(38, 38, 38);">1.</font>  Adding FET3568-C2, OK3568-C2C configuration;<br />2. Correcting the errors in the manual. |
 | 04/07/2025                                                   | <font style="color:rgb(38, 38, 38);"> V2.1</font> | Adding Changxin memory description and removing sleep&wake-up function description in the related section. |
-| <font style="color:rgb(38, 38, 38);">15/10/2025</font>       | V2.2                                              | Adding notes in the WIFI test chapter and the quick startup chapter (The antenna must be connected for startup, otherwise the startup may be affected). |
+| <font style="color:rgb(38, 38, 38);">15/10/2025</font>       | V2.2                                              | Adding notes in the WIFI test chapter and the quick startup chapter<br /> (The antenna must be connected for startup, otherwise the startup may be affected). |
 
 ## <font style="color:#000000;">Overview</font>
 
