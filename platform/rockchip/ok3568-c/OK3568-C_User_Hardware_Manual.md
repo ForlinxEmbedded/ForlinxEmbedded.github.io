@@ -79,7 +79,7 @@ The RK3568 supports five types of display interfaces, namely HDMI2.0, eDP, LVDS,
 
 **RK3568 Series Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720057089524-621b13ae-d324-4cf3-ac91-0a649076a0c1.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720057089524_621b13ae_d324_4cf3_ac91_0a649076a0c1.png)
 
 ## 2\. FET3568-C\&C2 SoM Description
 
@@ -89,17 +89,17 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **FET3568-C SoM**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055811011-982c1cc1-28c1-48de-8804-e652ac6eb636.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055811011_982c1cc1_28c1_48de_8804_e652ac6eb636.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055811708-fa436e60-f73b-46b6-a35a-61b622779042.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055811708_fa436e60_f73b_46b6_a35a_61b622779042.png)
 
 **Back**
 
 **FET3568-C2 SoM**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055812226-055763b0-79c6-42cb-8691-d626bbf1a8ef.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055812226_055763b0_79c6_42cb_8691_d626bbf1a8ef.png)
 
 **Front**
 
@@ -113,7 +113,7 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **Front, Top, Perspective**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055813597-4d529188-7fef-4a33-8a7b-be5adc068455.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055813597_4d529188_7fef_4a33_8a7b_be5adc068455.png)
 
 **FET3568-C2 SoM Dimension Diagram**
 
@@ -133,9 +133,9 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the design of the development board and use M2, L=2mm patch nuts on the carrier board. The fixed screw specifications used between the SoM and the carrier board are M2, L=4mm. The specifications of the patch nuts are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055814219-26674965-242f-4a82-9c44-743672b7717c.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055814219_26674965_242f_4a82_9c44_743672b7717c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055814420-353fd943-ed70-45df-8c14-83919a1deea6.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055814420_353fd943_ed70_45df_8c14_83919a1deea6.png)
 
 ### 2.3 Performance Parameters
 
@@ -224,13 +224,13 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 **The multiplexing relationships of the 3 groups of SerDes are illustrated in the following diagram:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055814650-80c626c6-c591-4273-a70b-b9c301d7e7cb.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055814650_80c626c6_c591_4273_a70b_b9c301d7e7cb.png)
 
 ****
 
 **The RK3568 chip has a built-in VOP controller with three Port outputs, that is, the SoM can support up to three display outputs at the same time. The VOP and video interface output paths are shown in the following figure:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055814977-2715ef71-89f4-45b6-9cd0-c478644d9053.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055814977_2715ef71_89f4_45b6_9cd0_c478644d9053.png)
 
 ****
 
@@ -240,13 +240,13 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 #### 2.5.1 FET3568-C/C2 SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055815350-281be05b-aa10-411d-a1c4-fac875ede454.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055815350_281be05b_aa10_411d_a1c4_fac875ede454.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055815662-0279c640-4e3e-44c2-a28f-9b2f757ae97e.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055815662_0279c640_4e3e_44c2_a28f_9b2f757ae97e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055815963-a74b25c0-0c5b-4a1b-ada2-0986512bbfc0.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055815963_a74b25c0_0c5b_4a1b_ada2_0986512bbfc0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055816273-8b778d3a-edc5-4564-add2-8292135341d2.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055816273_8b778d3a_edc5_4564_add2_8292135341d2.png)
 
 #### 2.5.2 FET3568-C/C2 SoM Pins Description
 
@@ -636,7 +636,7 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 FET3568-C/C2 SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721358510479-6de22372-53c5-47fc-877e-452391ec39e8.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721358510479_6de22372_53c5_47fc_877e_452391ec39e8.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting flashing information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -648,11 +648,11 @@ FET3568-C and FET3568-C2 SoM have the same pin definition and can share a common
 
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533430/1720055883947-faf5d185-e74b-4f7f-8681-812d14c0793f.jpeg)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055883947_faf5d185_e74b_4f7f_8681_812d14c0793f.jpeg)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533430/1720055884357-c2893879-6d7c-42ec-9494-531f2ae04d86.jpeg)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055884357_c2893879_6d7c_42ec_9494_531f2ae04d86.jpeg)
 
 **Back**
 
@@ -660,7 +660,7 @@ The connection between SoM and the carrier board is board-to-board, and the main
 
 OK3568-C/ C2C development board and antenna board are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055884688-12e11c0e-1fad-4fee-aedb-6677bc501623.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055884688_12e11c0e_1fad_4fee_aedb_6677bc501623.png)
 
 Carrier board PCB size: 155mm × 155mm. For more detailed dimensions, please refer to the user information DXF file;
 
@@ -674,7 +674,7 @@ The antenna board is used for the installation and fixation of 4G and 5G antenna
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759195100202-a81a281d-c3f9-4b99-9310-f01947573173.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -737,13 +737,13 @@ A B-C+D E F :G-H
 
 #### 3.5.1 Carrier Board Power
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360040584-2294d578-9da4-423a-ba16-6d6d3301f71c.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360040584_2294d578_9da4_423a_ba16_6d6d3301f71c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360057361-83dc4542-b2db-4663-86c6-ee16de7b8238.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360057361_83dc4542_b2db_4663_86c6_ee16de7b8238.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360079834-f59ac409-4102-4a4a-86df-ea864d03a85e.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360079834_f59ac409_4102_4a4a_86df_ea864d03a85e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360106785-2b8a708a-3c3b-473e-bb4b-9dd48fde8b90.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360106785_2b8a708a_3c3b_473e_bb4b_9dd48fde8b90.png)
 
 As shown in the figure above, the 12V adapter supplies power to the development board through the power socket P34. The VCC12V is stepped down to VDD5V via U24 to power the SoM. After the SoM is powered on, it outputs EXT\_EN to control the power - on of VCC5V on the carrier board.
 
@@ -755,7 +755,7 @@ If removing the S1 DIP switch due to structural requirements, you can solder the
 
 #### 3.5.2 Keys
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360607997-db8b99e6-922c-42cf-8e13-87767e5cd68f.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360607997_db8b99e6_922c_42cf_8e13_87767e5cd68f.png)
 
 As shown in the figure, RESETn is the system reset button. Pressing it will cause the development board to power down and reset. RK809 \_ PWRON is the power on/off key. Short press it to enter the sleep state, and then short press it to wake up the system. Long press, the system shuts down. 
 
@@ -779,19 +779,19 @@ There are three methods for flashing the development board:
 
 3\. Before powering on, insert the prepared TF card for flashing into the OK3568-C carrier board, then power on to enter TF card flashing mode;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360654539-6941aa73-4931-4278-8eb3-c5cd9db0216d.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360654539_6941aa73_4931_4278_8eb3_c5cd9db0216d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360753557-f6c67e57-cf88-404a-906a-f23b26a28f11.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360753557_f6c67e57_cf88_404a_906a_f23b26a28f11.png)
 
 Currently, the development board does not support FSPI Flash booting. Please do not connect storage devices to the FSPI controller to avoid system boot abnormalities. If users need to use the FSPI booting method, please contact a software engineer for configuration modifications.
 
 #### 3.5.4 Debugging Serial Port
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360803353-1ef632a3-bc65-4052-840f-84217619c88b.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360803353_1ef632a3_bc65_4052_840f_84217619c88b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360828353-438a0c68-e585-4eee-acba-7d2aa87018d3.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360828353_438a0c68_e585_4eee_acba_7d2aa87018d3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360842636-e4cd0f55-2283-402f-888e-b365a6e9511e.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360842636_e4cd0f55_2283_402f_888e_b365a6e9511e.png)
 
 UART2 serves as the debug serial port for the SoM, with its TTL level signals routed through P19. For the convenience, the development board employs a USB-to-serial chip CP2102 to convert the debug serial port to a USB Type C interface.
 
@@ -809,13 +809,13 @@ You can also prepare your own UART-to-serial conversion cable for the computer s
 
 #### 3.5.5 General Serial Ports
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361016509-d3831f01-30f5-4b21-bbbc-22de0af28a41.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361016509_d3831f01_30f5_4b21_bbbc_22de0af28a41.png)
 
 As shown in the figure above, the UART3/4/5 are functionally multiplexed with the LCD pins, which are led out through the carrier board P7 2.54 mm double row of pins.
 
 #### 3.5.6 CAN
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360942167-37104b20-47de-43e9-a9ac-f046ac7ff7f4.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360942167_37104b20_47de_43e9_a9ac_f046ac7ff7f4.png)
 
 The development board provides 2 x CAN with a maximum speed of 1 Mbps, 1500 VDC electrical isolation, and Level 4 electrostatic protection.
 
@@ -825,7 +825,7 @@ P23 and P41 wiring terminals are led out, and it is recommended to ground the eq
 
 #### 3.5.7 FSPI
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721360978145-66243adf-9c69-45e6-a731-400d63b8a704.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721360978145_66243adf_9c69_45e6_a731_400d63b8a704.png)
 
 The development board provides 1 x FSPI interface, which can be externally connected with NOR FLASH chip.
 
@@ -835,15 +835,15 @@ By default, when the SoM starts from the eMMC, the FSPI \_ D2 signal line is not
 
 #### 3.5.8 SPI
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361030745-191edf38-e6c4-43e5-9b98-6be1774c8338.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361030745_191edf38_e6c4_43e5_9b98_6be1774c8338.png)
 
 As shown in the figure above, SPI0 and SPI2 are multiplexed with the LCD pin function and are led out through a P7 2.54 mm pitch double row of pins.
 
 #### 3.5.9 TF Card
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361131738-97339069-a56c-477d-9a22-ffe54fea9658.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361131738_97339069_a56c_477d_9a22_ffe54fea9658.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361183973-ac8d4047-20c9-45aa-9544-1442f2ab9d83.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361183973_ac8d4047_20c9_45aa_9544_1442f2ab9d83.png)
 
 As shown in the figure above, the TF Card of the development board is the SD0 channel of the CPU, which supports the TF card of UHS-I up to 104MB/s.
 
@@ -869,7 +869,7 @@ It supports the x 2 lane + x2 lane mode. The data of MIPI\_CSI\_RX\_D\[1:0] refe
 
 The MIPI \_ CSI on the development board is x4 lane mode, which is led out through P16 and can be connected to the OV13850 camera module.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361222187-99c0dabf-4d0b-4e3d-b736-e1f192d65881.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361222187_99c0dabf_4d0b_4e3d_b736_e1f192d65881.png)
 
 **Note:**
 
@@ -880,7 +880,7 @@ The MIPI \_ CSI on the development board is x4 lane mode, which is led out throu
 
 The SoM supports 2 x MIPI DSI. Among them, MIPI\_DSI0 is used for LVDS output, and MIPI\_DSI1 is output through the P6 terminal. Its maximum output resolution can reach 1920\*1080@60Hz. It is suitable for the 7-inch MIPI screen of Forlinx by default, and supports screen brightness adjustment and capacitive touch.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361306457-49b7529b-0e0e-40d4-a1c6-49edd3bffff4.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361306457_49b7529b_0e0e_40d4_a1c6_49edd3bffff4.png)
 
 **Note:** 
 
@@ -892,13 +892,13 @@ The SoM supports 2 x MIPI DSI. Among them, MIPI\_DSI0 is used for LVDS output, a
 
 The MIPI\_DSI0 led out from the SoM is a MIPI\_DSI\_TX0 and LVDS\_TX Combo PHY. The development board uses it for LVDS output, which is led out through the P11 terminal. The pin - to - pin spacing is 2.0mm, and it can be adapted to the Forlinx 10.1 - inch LVDS screen, supporting screen brightness adjustment and capacitive touch.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361350129-0dad6cff-7fab-430d-8ab4-c634092e4a5b.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361350129_0dad6cff_7fab_430d_8ab4_c634092e4a5b.png)
 
 **Note: For LVDS, the data and clock lines need to be of equal length, and the differential impedance should be controlled at 100Ω.**
 
 #### 3.5.13 HDMI Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721361391040-ca594c65-f3f6-43c5-a596-d96ea7838049.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721361391040_ca594c65_f3f6_43c5_a596_d96ea7838049.png)
 
 As shown in the figure above, 1 x HDMI is led out through P5 on the carrier board, supporting HDMI 2.0 with a display resolution up to 4096\*2160@60. The HDMI circuit includes a level - conversion circuit. Please refer to the development - board design.
 
@@ -912,7 +912,7 @@ As shown in the figure above, 1 x HDMI is led out through P5 on the carrier boar
 
 #### 3.5.14 eDP Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443569487-25ef0f31-a725-4457-ad6f-6d18d0ecff58.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443569487_25ef0f31_a725_4457_ad6f_6d18d0ecff58.png)
 
 There is an eDP interface on the development board, which is led out through the P8 terminal and is adapted to the Forlinx 10.1 - inch eDP screen. The backlight of the screen is provided by the P9 terminal.
 
@@ -924,15 +924,15 @@ The 3.5mm audio socket P32 is designed according to the CTIA standard. If an OMT
 
 The maximum power of the Speaker is 1.3W (8Ω). If you need to connect an external larger power amplifier, you can only obtain the signal from the headphone socket, not from the speaker interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443606989-f0ef7912-e4c9-4be1-b2fe-14745f9a9fac.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443606989_f0ef7912_e4c9_4be1_b2fe_14745f9a9fac.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443639643-6e732654-e63b-45e8-9330-2ca72ef6acbb.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443639643_6e732654_e63b_45e8_9330_2ca72ef6acbb.png)
 
 **Note:** 
 
 - **HP\_SNS serves as an internal offset reference. This pin needs to be externally connected to GND for reference. When HPOUT is used as LINEOUT to connect an external power amplifier, HPSNS can be grounded near RK809 - 5. In the case of headphone output, HPSNS needs to be routed separately to the headphone socket and connected to GND to reduce the level difference with the headphone GND. When routing, it should be routed between HPR/HPL to avoid interference from other signals. The routing is shown in the figure below;**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055887569-933f811a-4b95-438a-a176-593a576f8132.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055887569_933f811a_4b95_438a_a176_593a576f8132.png)
 
 - **In addition, ESD devices need to be added to HPR\_OUT and HPL\_OUT to enhance the anti - static ability;**
 
@@ -945,17 +945,17 @@ The maximum power of the Speaker is 1.3W (8Ω). If you need to connect an extern
 
 #### 3.5.16 4G/5G
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443709979-e93f1b08-3068-4b5d-b929-f345590e38c1.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443709979_e93f1b08_3068_4b5d_b929_f345590e38c1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443879846-b2fdfe6d-e6c8-4422-a798-4127b37b80e3.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443879846_b2fdfe6d_e6c8_4422_a798_4127b37b80e3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443891826-5312d1c6-4016-45e5-806d-e1f94ff019be.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443891826_5312d1c6_4016_45e5_806d_e1f94ff019be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443797850-c8151e04-dbf8-4cdb-972b-fd9e789a4b44.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443797850_c8151e04_dbf8_4cdb_972b_fd9e789a4b44.png)
 
 The development board can be externally connected with either a 4G module or a 5G module (choose one of the two). It supports the use of 4G/5G modules with an M.2 B-key socket. By default, the Quectel EM05 or RM500U modules are used. When you opt for Forlinx optional 4G module EM05, just connect the two provided 4G antennas to the Main and Rx-diversity ports.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720055888088-bd9ec9ad-be89-4b81-8888-b253dd01172f.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720055888088_bd9ec9ad_be89_4b81_8888_b253dd01172f.png)
 
 The 4G and 5G modules share a DCDC power supply and a SIM card holder. Please install the module first and then power on the development board.
 
@@ -965,7 +965,7 @@ The RM500U is prone to unstable connections when operating at a low supply volta
 
 #### 3.5.17 WiFi\&Bluetooth
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443952450-53dc291d-f1e5-4920-89d3-133ab5031db3.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443952450_53dc291d_f1e5_4920_89d3_133ab5031db3.png)
 
 Development board onboard WIFI\&BT module set, default welding AW-CM358SM, WLAN: IEEE 802.11 a/b/g/n/ac dual-band WIFI, up to 433.3 Mbps transceiver rate; Bluetooth: Bluetooth 5, up to 3Mbps speed. To enhance signal quality, use a 2.4 \& 5GHz dual-band antenna.
 
@@ -981,7 +981,7 @@ AW - CM358SM needs to configure registers through the SDIO bus. Even if only the
 
 #### 3.5.18 PCIE2.1 Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721443996809-7c8a7bad-375b-4f02-a274-4d3197b3be0c.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721443996809_7c8a7bad_375b_4f02_a274_4d3197b3be0c.png)
 
 The development board supports one PCIE 2.1 X1 interface, which is led out through a PCIE X1 standard adapter card socket, making it convenient for you to connect various PCIE devices.
 
@@ -1003,7 +1003,7 @@ Since PCIE devices do not support hot - plug and have high requirements for powe
 
 #### 3.5.19 PCIE3.0 Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444036958-2ebceff6-2dce-4689-a51a-c48e6ee33d89.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444036958_2ebceff6_2dce_4689_a51a_c48e6ee33d89.png)
 
 The development board supports one PCIE 3.0 X2 interface, which is led out through a PCIE X4 standard adapter card socket, making it convenient for you to connect various PCIE devices.
 
@@ -1023,7 +1023,7 @@ Since PCIE devices do not support hot - plug and have high requirements for powe
 
 #### 3.5.20 USB HOST Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444072549-68827f9e-6296-4136-b8b7-acf37827ca31.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444072549_68827f9e_6296_4136_b8b7_acf37827ca31.png)
 
 The development board provides two USB2.0 interfaces, which are led out through the USB Type-A socket with A current limit of 0.5A.
 
@@ -1035,7 +1035,7 @@ The development board provides two USB2.0 interfaces, which are led out through 
 
 #### 3.5.21 USB3.0 Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444105086-2e1a3497-a4b7-4715-b5cc-09e0f1ad34a8.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444105086_2e1a3497_a4b7_4715_b5cc_09e0f1ad34a8.png)
 
 As shown in the figure above, the USB 2.0 signal line in the USB3.0 interface is multiplexed with the download interface. Before the SoM is started, the USB3.0 OTG defaults to the device mode. When the USB 2.0 signal line is used to flash the image, the USB-TYPE-C line is connected to the P13 socket of the development board. There is no need to configure the ID pin. Press and hold the K2/K8 button and power on to enter the recovery/maskrom mode programming system.
 
@@ -1055,9 +1055,9 @@ After the SoM starts, you can switch between the host and device modes through S
 
 The development board supports 2 x Ethernet with 10/100/1000Mbps adaptive speed, which are led out through P14 and P15 respectively.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444165974-c48e096d-0e75-4a6b-a64a-ca6b216abef0.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444165974_c48e096d_0e75_4a6b_a64a_ca6b216abef0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444187332-cd1ce4b1-a430-4224-ae43-5bfbf2da6358.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444187332_cd1ce4b1_a430_4224_ae43_5bfbf2da6358.png)
 
 **Note:**
 
@@ -1085,13 +1085,13 @@ The development board supports 2 x Ethernet with 10/100/1000Mbps adaptive speed,
 
 #### 3.5.23 LED
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444245770-e76ffa48-3ac1-42d3-8fc2-a7e712405ee6.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444245770_e76ffa48_3ac1_42d3_8fc2_a7e712405ee6.png)
 
 The development board is designed with two LED lights, which are multiplexed with the LCD pins. You can customize their functions.
 
 #### 3.5.24 RTC
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444271391-8e840141-6da4-49a3-887e-0b738f582dd1.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444271391_8e840141_6da4_49a3_887e_0b738f582dd1.png)
 
 As shown in the figure above, the carrier board is externally connected to the RTC device through I2C3, and the VCC3V3 and the button battery are compatible for power supply through D4, that is, after the carrier board is powered off, the button battery can maintain power supply for the RTC chip. The hardware is designed to be compatible with both RX8010SJ and PCF8563T/5. When using PCF8563T/5, pay attention to connect the OSCO pin to the external capacitor for empty soldering, otherwise, the probability that the time is not saved may occur.
 
@@ -1099,7 +1099,7 @@ As shown in the figure above, the carrier board is externally connected to the R
 
 #### 3.5.25 ADC
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444298143-9825bcc2-56e1-4a51-8e05-cf4cca3823e0.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444298143_9825bcc2_56e1_4a51_8e05_cf4cca3823e0.png)
 
 There are 8 x ADC with a sampling range of 0-1.8 V and a sampling resolution of 10 bits. ADC\_VIN0 is used as the key - value input sampling port and the Recovery mode button by default (cannot be modified). 
 
@@ -1169,7 +1169,7 @@ SoM Connector Dimension:
 
 Carrier board Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720056471223-bd273a9e-e8cf-4493-957d-d306fe2c752e.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1720056471223_bd273a9e_e8cf_4493_957d_d306fe2c752e.png)
 
 ## 6\. OK3568-C\&C2C Development Board Power Consumption Table
 
@@ -1216,28 +1216,28 @@ Table 3. Power Consumption of the Whole Machine Under OK3568-C2C Linux System
 
 ## 7\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444490486-bf948b60-a2ea-4c3c-a64b-952149dd981d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444495881-9988a9bf-d0cf-4adb-b3e6-0b6b06fbd9c0.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444490486_bf948b60_a2ea_4c3c_a64b_952149dd981d.png)![Image](./images/OK3568-C_User_Hardware_Manual/1721444495881_9988a9bf_d0cf_4adb_b3e6_0b6b06fbd9c0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444501023-709ca76e-7056-4e5f-aede-e238d8e08b26.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444501023_709ca76e_7056_4e5f_aede_e238d8e08b26.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444508022-73b5dc7f-215b-47dc-8849-f989a85ab731.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444508022_73b5dc7f_215b_47dc_8849_f989a85ab731.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444550702-37b6f5df-9dd0-4c4f-b0c1-55c06c3aea5b.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444550702_37b6f5df_9dd0_4c4f_b0c1_55c06c3aea5b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444628191-a77b6455-2820-493d-b9e4-e276f331d508.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444628191_a77b6455_2820_493d_b9e4_e276f331d508.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444646908-78c687fa-c6d7-4f9a-8f4f-fa91555f3603.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444646908_78c687fa_c6d7_4f9a_8f4f_fa91555f3603.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444652805-e16e79cf-a50b-4118-a5d4-e8fe678642d7.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444652805_e16e79cf_a50b_4118_a5d4_e8fe678642d7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444694839-36ec7fec-db42-4a09-9be0-5806d2881184.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444694839_36ec7fec_db42_4a09_9be0_5806d2881184.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444701944-d23ce42e-7d20-417b-9267-88e02359df42.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444701944_d23ce42e_7d20_417b_9267_88e02359df42.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444708677-88e13805-dabc-4373-90e7-4d136408fff0.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444708677_88e13805_dabc_4373_90e7_4d136408fff0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444742436-4f182d29-b827-40d6-b394-b1849acce925.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444742436_4f182d29_b827_40d6_b394_b1849acce925.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1721444763102-d96e05f6-1d8e-4946-8a2d-9c5e6c4e6b1b.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1721444763102_d96e05f6_1d8e_4946_8a2d_9c5e6c4e6b1b.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. To ensure the normal operation of the SoM, in addition to the power supply VDD5V, the following components are also required: the RESETn, RECOVERY, and EMMC\_BOOT buttons; a USB3\_OTG0\_ID DIP switch; either a USB3OTG0 interface or a TF card for convenient system flashing and booting; and a portion of the UART2 circuitry for verifying the proper functioning of the system and facilitating debugging.
