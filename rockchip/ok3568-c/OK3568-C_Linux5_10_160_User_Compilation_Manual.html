@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux5. 10.160_User’s Compilation Manual &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
+  <title>Linux5. 10.160_User’s Compilation Manual_V1.2 &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -68,7 +68,7 @@
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="OK3568-C_Linux5_10_160_User_Manual.html">Linux5.10.160_User’s Manual_V2.2</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5. 10.160_User’s Compilation Manual</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5. 10.160_User’s Compilation Manual_V1.2</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
@@ -138,7 +138,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Linux5. 10.160_User’s Compilation Manual</li>
+      <li class="breadcrumb-item active">Linux5. 10.160_User’s Compilation Manual_V1.2</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -147,8 +147,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="linux5-10-160-users-compilation-manual">
-<h1>Linux5. 10.160_User’s Compilation Manual<a class="headerlink" href="#linux5-10-160-users-compilation-manual" title="Link to this heading"></a></h1>
+  <section id="linux5-10-160-users-compilation-manual-v1-2">
+<h1>Linux5. 10.160_User’s Compilation Manual_V1.2<a class="headerlink" href="#linux5-10-160-users-compilation-manual-v1-2" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -288,7 +288,6 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 <p>Open the virtual machine and select the extracted 3588 development environment.vmx</p>
 <p><img alt="Image" src="_images/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png" /></p>
 <p>Turn on this virtual machine after loading is complete to run it and enter the system’s interface.</p>
-<p><img alt="Image" src="_images/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png" /></p>
 <p><img alt="Image" src="_images/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png" /></p>
 <p>Development environment account no.: forlinx, password: forlinx; after filling in, select Sign in to log in.</p>
 <p><img alt="Image" src="_images/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png" /></p>
@@ -329,7 +328,7 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 <p><img alt="Image" src="_images/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png" /></p>
 <p>Specify the disk file, the default one here is fine.</p>
 <p><img alt="Image" src="_images/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png" /></p>
-<p>Click Finish by default.</p>
+<p>Click “Finish” by default.</p>
 <p><img alt="Image" src="_images/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png" /></p>
 <p>The virtual machine creation is now complete.</p>
 <p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
@@ -422,8 +421,7 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 <p>Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:</p>
 <p><img alt="Image" src="_images/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png" /></p>
 <p>When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.</p>
-<p><img alt="Image" src="_images/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png" /></p>
-<p><img alt="Image" src="_images/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png" /></p>
+<p><img alt="Image" src="_images/1.png" /></p>
 <p>The network is set to dynamic ip.</p>
 <p><img alt="Image" src="_images/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png" /></p>
 <ul class="simple">
@@ -431,10 +429,10 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 </ul>
 <p>If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.</p>
 <p><img alt="Image" src="_images/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png" /></p>
-<p><img alt="Image" src="_images/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png" /></p>
-<p><img alt="Image" src="_images/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png" /></p>
+<p><img alt="Image" src="_images/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png" /></p>
 <p>Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.</p>
-<p><img alt="Image" src="_images/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png" /></p>
+<p><img alt="Image" src="images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1-1761282627880.png" /></p>
+<p><img alt="Image" src="_images/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png" /></p>
 <p><strong>Note: The IP and DNS involved in the network settings section should be set according to the user’s own actual environment, the manual is an example.</strong></p>
 </section>
 <section id="u-disk-loading">
@@ -487,7 +485,6 @@ forlinx@ubuntu:~$ sudo vim /etc/fstab
 </pre></div>
 </div>
 <p>2. It is recommended to adjust the memory of the development environment to 16g. Low memory may cause the compilation to fail.</p>
-<p><img alt="Image" src="_images/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png" /></p>
 </section>
 </section>
 <section id="qt-creator-installation">
