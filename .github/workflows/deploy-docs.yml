@@ -145,6 +145,13 @@ jobs:
 
         echo '</sitemapindex>' >> docs_build/sitemap_index.xml
 
+    # 9.5 添加 robots.txt 到部署根目录
+    - name: Add robots.txt
+      run: |
+        cp homepage/_static/robots.txt docs_build/robots.txt
+        echo "✅ robots.txt added to deployment root"
+        
+
     # 10 添加 CNAME 文件（绑定自定义域名）
     - name: Add CNAME file
       run: echo "docs.forlinx.net" > ./docs_build/CNAME
