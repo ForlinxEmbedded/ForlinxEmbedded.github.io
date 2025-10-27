@@ -125,13 +125,7 @@ NXP Series
      </div>
    </div>
 
-
-
-
-
    </div>
-
-
 
 
 
@@ -205,11 +199,35 @@ Allwinner Series
 
    </div>
  
+----
 
+Nuvoton Series
+==================
 
+.. raw:: html
+
+   <div class="products-container">
+
+   <div class="product-card">
+     <a href="nuvoton/ok-ma35-s21/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/ti/OK-MA35-S21.png" alt="ok-ma35-s21" class="product-image" />
+     </a>
+     <h3 class="product-title">OK-MA35-S21</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/ma35-s-system-on-module-160.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="nuvoton/ok-ma35-s21/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+   </div>
 
 
  
+
+
+
+
+
+
 
 
 
