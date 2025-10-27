@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Forlinx Embedded RK3506 Documentation'
+project = 'Forlinx Embedded i.MX9596 Documentation'
 author = 'Forlinx Embedded'
 copyright = 'Forlinx Embedded'
 # -- General configuration ---------------------------------------------------
@@ -15,7 +15,8 @@ extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3506j-s/"
+html_baseurl = "https://forlinxembedded.github.io/nxp/ok-mx9596-c/"
+
 
 
 templates_path = ['_templates']
@@ -54,6 +55,7 @@ html_sidebars = {
 }
 
 html_show_sourcelink = False
+
 
 html_js_files = [
     'theme-switcher.js',

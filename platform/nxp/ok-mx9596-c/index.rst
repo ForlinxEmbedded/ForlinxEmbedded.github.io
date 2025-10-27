@@ -6,11 +6,11 @@
 
    🔗 Official product overview:
    
-   `FET3506J-S System On Module <https://www.forlinx.net/product/rk3506j-s-system-on-module-162.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
+   `FET-MX9596-C System On Module <https://www.forlinx.net/product/imx95-c-system-on-module-151.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
 
 ====================
-OK3506J-S Manual
+OK-MX9596-C Manual
 ====================
 
 HARDWARE
@@ -20,11 +20,6 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-
-
-
-
-   
 
 
 SOFTWARE 
