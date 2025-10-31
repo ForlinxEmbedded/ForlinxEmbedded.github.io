@@ -1,608 +1,635 @@
-﻿# 00_OK-MA35-S21 硬件手册
+# User’s Hardware Manual\_V1.0
 
-发布版本：V1.0  
-日期：2024-12-10  
-文件密级：□绝密 □秘密 □内部资料 ■公开
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
-# 免责声明
-本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。
+## Copyright Notice
 
-保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。	
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-# 概 述
-<font style="color:#333333;">本手册以使用户快速熟悉产品，了解接口功能和功能配置为目的，主要讲述了开发板接口功能，接口介绍，产品功耗，以及使用过程中出现的一些问题如何排查。在说明过程中，对一些命令进行了注释，方便</font>用户理解，以实用够用为主。涉及到引脚功能复用、硬件问题排查方法等请参考飞凌提供的《OK-MA35-S21引脚复用对照表》和《OK-MA35-S21设计指南》。
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
 
-+ 本手册一共分为4部分：
-+ 第一部分CPU整体概述，简单介绍了CPU性能和应用行业；
-+ 第二部分核心板的整体介绍，包括连接器引脚的相关说明和功能介绍；
-+ 第三部分开发板的整体介绍，分为多个章节介绍，包括了硬件原理和简单的设计思路两大部分；
-+ 第四部分产品的功耗及其他说明，主要描述板子的功耗方面表现和其他注意事项。
-+ 本手册中一些符号及格式的相关说明：
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-| **表现形式** | **含义** |
-| :---: | --- |
-| ⁉️ | 注意或者是需要特别关注的信息，一定要仔细阅读 |
-| 📚 | 对测试章节做的相关说明 |
-| 🛤️ | 表示相关路径 |
+## Revision History
 
+|    Date    | Manual Version | SoM Version | Carrier Board Version | Revision History |
+| :--------: | :------------: | :---------: | :-------------------: | ---------------- |
+| 10/12/2024 |      V1.0      |    V1.0     |    V1.1 and Above     | Initial Version  |
 
-# 更新记录
-| 日期 | 手册版本 | 核心板版本 | 底板版本 | 更新内容 |
-| :---: | :---: | :---: | :---: | --- |
-| 20241210 | V1.0 | V1.0 | V1.1及以上版本 | 初版 |
+## Application Scope
 
+This manual is mainly applicable to the Forlinx OK-MA35-S21 platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
 
+## Overview
 
+This manual is designed to help you quickly familiarize yourselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “OK-MA35-S21 Pin Multiplexing Comparison Table” and “OK-MA35-S21 Design Guide.”
 
-# 01_新唐 MA35D1简介
+There are total four chapters:
 
-NuMicro MA35D1系列是Nuvoton面向工业控制和边缘网关推出的一款高端异构多核微处理器。它基于双64位ARM Cortex-A35内核，主频高达1GHz，并搭载一颗180MHz的ARM Cortex-M4内核，旨在满足Tiny AI/ML 边缘计算。
++ Chapter 1. is CPU overview, briefly introducing its performance and applications;
 
-MA35D1 系列支持 16 位 DDR2/ DDR3 和 DDR3L SDRAM。
++ Chapter 2. is comprehensive introduction to the SoM, including connector pins explanations and function introductions;
 
-MA35D1 系列是一个可信任的系统，可以满足物联网产品的安全需求。它包括多个进阶的安全机制，例如新唐 TSI（Trusted Secure Island）一个独立的安全硬件单元、TrustZone、安全启动 (secure boot)、篡改检测、内建 AES、SHA、ECC、RSA 和 SM2/3/4 加解密加速器、及一个真随机数产生器 (TRNG)，并包含密钥储存 (Key Store) 和一次编程内存 (OTP memory)。所有安全相关的操作都在 TSI 中执行，保护具有敏感性和高价值的数据。这些安全特性也可以满足用户在 IEC 62443 认证方面的要求。
++ Chapter 3. is comprehensive introduction to the development board, divided into multiple chapters, including both hardware principles and simple design ideas;
 
-为满足高端 Edge IIoT Gateway 需求，MA35D1 系列集成 PDMA，其能够直接存取系统内存，无需 CPU 介入提升系统性能。同时，MA35D1 系列提供多组进阶和高速的通讯接口，如千兆以太网、SDIO3.0、高速 USB 2.0、CAN FD 等，可以应用于高端 Edge Gateway及新能源等应用需求。
++ Chapter 4. mainly describes the board’s power consumption performance and other considerations.
 
-对于人机接口应用，MA35D1 系列提供 LCD 显示控制器，分辨率可达 1920 x 1080 每秒 60 帧，及一个 2D 图形加速器、JPEG 和 H.264 译码器等，带来更好的图形人机接口效果和视频播放。
+A description of some of the symbols and formats in the manual:
 
+| **Format** | **Meaning**                                                  |
+| :--------: | ------------------------------------------------------------ |
+|  **Note**  | Note or information that requires special attention, be sure to read carefully |
+|     📚      | Relevant notes on the test chapters                          |
+|     🛤️      | Indicates the related path                                   |
 
+## 1. MA35D1 Description
 
-**MA35D1处理器框图**
+NuMicro MA35D1 series is a high-end heterogeneous multi-core microprocessor from Nuvoton for industrial control and edge gateways. It is based on dual 64-bit ARM Cortex-A35 cores up to 1GHz and a 180MHz ARM Cortex-M4 core designed to meet Tiny AI/ML edge computing.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794127829_e6fe8cb6_0ab1_4f24_a28e_60b362c726da.jpg)
+The MA35D1 series supports 16-bit DDR2/ DDR3 and DDR3L SDRAM.
+
+MA35D1 series is a trusted system that meets the security requirements of IoT products. It includes advanced security mechanisms such as Nuvoton TSI (Trusted Secure Island), an independent secure hardware unit, TrustZone, secure boot, tamper detection, built-in AES, SHA, ECC, RSA, and SM2/3/4 encryption/decryption accelerators, a true random number generator (TRNG), and key storage (Key Store) and one-time programmable memory (OTP memory). All security-related operations are performed in the TSI, protecting sensitive and high-value data. These security features can also meet the users’ requirements for IEC 62443 certification.
+
+To meet the needs of high - end Edge IIoT Gateways, the MA35D1 series integrates PDMA, which can directly access the system memory without CPU intervention, thereby enhancing the system performance. Meanwhile, the MA35D1 series offers multiple sets of advanced and high - speed communication interfaces, such as Gigabit Ethernet, SDIO3.0, high - speed USB 2.0, CAN FD, etc., which can be applied to high - end Edge Gateways and new energy applications.
+
+For human interface applications, the MA35D1 series offers an LCD display controller with a resolution of 1920 X 1080 at 60 frames per second, a 2D graphics accelerator, JPEG and H.264 decoders, etc., for better graphical human interface effects and video playback.
+
+**MA35D1 Processor Block Diagram**
+
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794127829-e6fe8cb6-0ab1-4f24-a28e-60b362c726da.jpg)
 
 ---
 
+## 2. FET-MA35-S2 SoM Description
 
+### 2.1 FET-MA35-S2 SoM Appearance
 
-# 02_FET-MA35-S2核心板介绍
+![](https://cdn.nlark.com/yuque/0/2024/gif/50461850/1733794129356-c5b027f9-06d6-4e7f-a3b5-d81e4aa82722.gif)
 
-## 2.1  FET-MA35-S2核心板外观图
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129356_c5b027f9_06d6_4e7f_a3b5_d81e4aa82722.gif)
+**Front**
 
-核心板正面图
+![](https://cdn.nlark.com/yuque/0/2024/gif/50461850/1733794129432-b3176672-b078-4574-ab99-3393d228c632.gif)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129432_b3176672_b078_4574_ab99_3393d228c632.gif)
+**Back**
 
-核心板背面图
+### 2.2 FET-MA35-S2 SoM Dimension Diagram
 
-## 2.2  FET-MA35-S2核心板尺寸图
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129512_2ec7e08f_d9a6_4af9_87a0_663658dee809.jpg)
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794129512-2ec7e08f-d9a6-4af9-87a0-663658dee809.jpg)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129629_a8ec0585_61ed_4bba_830d_b69c540e5751.jpg)
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794129629-a8ec0585-61ed-4bba-830d-b69c540e5751.jpg)
 
-结构尺寸：48mm×40mm，尺寸公差±0.13mm，更多尺寸信息参见DXF文件。
+Structure size: 48mm × 40mm, dimensional tolerance ± 0.13mm, refer to DXF file for more dimensional information.
 
-制版工艺：厚度1.2mm，12层沉金PCB。
+Plate making process: 1.2mm thickness, 12-layer immersion gold PCB.
 
-核心板采用邮票孔+LGA封装形式，共引出260个引脚；邮票孔的引脚中心间距为1mm，单个引脚尺寸：1.4*0.6mm，LGA的球间距为1.5 mm，单个球直径为1mm。
+SoM uses edge connector +LGA packaging, with a total of 260 pins led out. The center - to - center spacing of the edging connecting pins is 1 mm, and the size of each individual pin is 1.4 \* 0.6 mm. The ball pitch of the LGA is 1.5 mm, and the diameter of each individual ball is 1 mm.
 
-核心板封装尺寸图见附录。
+Refer to Appendix for the connector packaging diagram.
 
-## 2.3 性能参数
-### 2.3.1  系统主频
-| **名称** | **规格** |  |  |  | **说明** |
-| :---: | :---: | --- | --- | --- | :---: |
-|  | **最小** | **典型** | **最大** | **单位** |  |
-| 系统主频 | — | 800 | 800 | MHz | — |
-| 系统RTC时钟 | — | 32.768 | — | KHz | — |
+### 2.3 Performance Parameters
 
+#### 2.3.1 System Main Frequency
 
-### 2.3.2  供电参数
-| **参数**<br/> | **引脚标号**<br/> | **规格** | | | | **说明**<br/> |
-| :---: | :---: | :---: | --- | --- | --- | :---: |
-| | | **最小** | **典型** | **最大** | **单位** |
-| 主电源电压 | VSYS | 4.5 | 5 | 5.5 | V | — |
-| 空载电流 | — |  | 442 |  | mA | 请见附录功耗表 |
-| 重载电流 | — |  | 512 |  | mA | 请见附录功耗表 |
+|    **Name**    | **Specification** |             |             |          | **Description** |
+| :------------: | :---------------: | ----------- | ----------- | -------- | :-------------: |
+|                |    **Minimum**    | **Typical** | **Maximum** | **Unit** |                 |
+| Main Frequency |         —         | 800         | 800         | MHz      |        —        |
+|   RTC clock    |         —         | 32.768      | —           | KHz      |        —        |
 
+#### 2.3.2 Power Parameter
 
-### 2.3.3  工作环境
-| **参数描述**<br/> | | **规格** | | | | **说明**<br/> |
-| :---: | --- | :---: | --- | --- | --- | :---: |
-| | | **最小** | **典型** | **最大** | **单位** |
-| <br/>工作温度<br/> | 存储环境 | -40 | 25 | +125 | ℃ |  |
-| | 工作环境 | -40 | 25 | +85 | ℃ | 工业级 |
-| | 存储环境 | -40 | 25 | +125 | ℃ |  |
-| 湿度<br/> | 工作环境 | 10 | — | 90 | ％RH | 无凝露 |
-| | 存储环境 | 5 | — | 95 | ％RH |  |
+|         Parameter         | Pin Number | **Specification** |             |             |          |           Description<br/>           |
+| :-----------------------: | :--------: | :---------------: | ----------- | ----------- | -------- | :----------------------------------: |
+|                           |            |    **Minimum**    | **Typical** | **Maximum** | **Unit** |                                      |
+| Main Power Supply Voltage |    VSYS    |        4.5        | 5           | 5.5         | V        |                  —                   |
+|      No-load current      |     —      |                   | 442         |             | mA       | See Appendix Power Consumption Table |
+|     High-load current     |     —      |                   | 512         |             | mA       | See Appendix Power Consumption Table |
 
+#### 2.3.3 Operating Environment
 
-## 2.4  核心板接口资源
-| **功能** | **数量** | **参数** |
-| --- | --- | --- |
-| USB 2.0 | 2 | 1路USB2.0 Host  1路USB 2.0 OTG |
-| RGB | ≤1 | 支持RGB888，最大分辨率1920*1080 |
-| CSI | ≤2 | 最大支持3M像素 |
-| Ethernet | ≤2 | 10/100/1000 Mbit/s 以太网支持 RGMII 和 RMII 接口 |
-| UART | ≤17 | 支持的最大波特率为9.5Mbps |
-| ISO7816 | ≤2 | 支持ISO-7816-3 |
-| QSPI | ≤2 | 可配置主从模式，支持最大时钟频率100MHz |
-| SPI | ≤4 | 可配置主从模式，支持最大时钟频率100MHz |
-| I2S | ≤2 | 可配置主从模式 |
-| I2C | ≤5 | 支持7bits和10bits地址模式，最高速率可达1 Mbit/s |
-| CANFD | ≤4 | 支持CAN-FD V1.0和CAN2.0 A/B； |
-| EPWM | ≤18 | 最多支持18通道EPWM |
-| SDIO | ≤1 | SD0，4-bit，仅支持3.3V接口 |
-| ADC | ≤8 | 8路单端输入，12bit，500K SPS，支持4线或5线触摸 |
-| EADC | ≤8 | 8路单端或4路差分输入，12bit，4.7M SPS |
+|   Parameter Description<br/>    |                       | **Specification** |             |             |          | Description<br/> |
+| :-----------------------------: | --------------------- | :---------------: | ----------- | ----------- | -------- | :--------------: |
+|                                 |                       |    **Minimum**    | **Typical** | **Maximum** | **Unit** |                  |
+| <br/>Operating Temperature<br/> | Storage Environment   |        -40        | 25          | +125        | ℃        |                  |
+|                                 | Operating Environment |        -40        | 25          | +85         | ℃        | Industrial-grade |
+|                                 | Storage Environment   |        -40        | 25          | +125        | ℃        |                  |
+|          Humidity<br/>          | Operating Environment |        10         | —           | 90          | ％RH     | No condensation  |
+|                                 | Storage Environment   |         5         | —           | 95          | ％RH     |                  |
 
+### 2.4 SoM Interface Speed
 
-+ **注：**
-+ **表中参数为硬件设计或CPU理论值；**
-+ **数量标注为最大。**
+| **Function** | **Quantity** | **Parameter**                                                |
+| ------------ | ------------ | ------------------------------------------------------------ |
+| USB 2.0      | 2            | 1 x USB2.0 Host, 1 x USB 2.0 OTG                             |
+| RGB          | ≤1           | RGB888 support, resolution up to 1920\*1080                  |
+| CSI          | ≤2           | Supports up to 3m pixels                                     |
+| Ethernet     | ≤2           | 10/100/1000 Mbit/s Ethernet, RGMII and RMII support          |
+| UART         | ≤17          | Baud rate up to 9.5Mbps                                      |
+| ISO7816      | ≤2           | ISO-7816-3 support                                           |
+| QSPI         | ≤2           | Configurable master-slave mode, clock up to100MHz            |
+| SPI          | ≤4           | Configurable master-slave mode, clock up to100MHz            |
+| I2S          | ≤2           | Supports both master and slave mode                          |
+| I2C          | ≤5           | Supports 7bits and 10bits address modes up to 1 Mbit/s       |
+| CANFD        | ≤4           | Supports CAN-FD V1.0 and CAN2.0 A/B；                        |
+| EPWM         | ≤18          | Supports up to 18 channels of EPWM                           |
+| SDIO         | ≤1           | SD0，4-bit， only support 3.3V                               |
+| ADC          | ≤8           | 8 x single-ended inputs, 12 bit, 500K SPS, 4-wire or 5-wire touch |
+| EADC         | ≤8           | 8 x single-ended or 4 x differential inputs, 12 bit, 4.7 M SPS |
 
+**Note：**
 
++ **The parameters in the table are the theoretical values of hardware design or CPU;**
++ **The quantity is marked as the maximum.**
 
+### 2.5  FET-MA35-S2 SoM Pins Definition
 
+#### 2.5.1  FET-MA35-S2 SoM Pins Schematic
 
-## 2.5  FET-MA35-S2核心板引脚定义
-### 2.5.1  FET-MA35-S2核心板引脚原理图
-<font style="color:#ff0000;">（核心板引脚原理图）</font>
+<font style="color:#ff0000;">（ SoM Pins Schematic）</font>
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129715_3754c393_a715_43a7_954c_f6eb5f624b74.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794129715-3754c393-a715-43a7-954c-f6eb5f624b74.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129799_ecc52539_ef75_4854_985c_6ae21f2d6278.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794129799-ecc52539-ef75-4854-985c-6ae21f2d6278.png)
 
-### 2.5.2  FET-MA35-S2核心板引脚功能说明
-用户在有多种功能扩展需求时可参阅用户资料《FET-MA35-S2引脚复用表格》,但若需了解更详细的信息，建议用户查阅相关资料文档及芯片数据手册及参考手册。
+#### 2.5.2 FET-MA35-S2 SoM Pins Description
 
-## 2.6  核心板硬件设计说明
-**电源引脚**
+When users have multiple functional expansion requirements, they can refer to the user guide "FET-MA35-S2 Pin Multiplexing Table". However, for more detailed information, it is recommended to consult relevant documents, the chip datasheet, and the reference manual.
 
-| **功能** | **信号名称** | **I/O** | **默认功能** | **引脚号** |
-| :---: | :---: | :---: | --- | :---: |
-| 电源 | VDD5V | 电源输入 | 核心板电源供电引脚5V，底板提供电流不少于2.5A | 1,2 |
-|  | VBAT | 电源输入 | 核心板RTC供电3V | 166 |
-|  | GND | 地 | 核心板电源地和信号地，所有GND引脚都需要连接 |  |
+### 2.6 SoM Hardware Design Description
 
+**Power Pin**
 
-**功能控制引脚**
+| **Function** | **Signal Name** |   **I/O**   | **Default Function**                                         | **Pin Number** |
+| :----------: | :-------------: | :---------: | ------------------------------------------------------------ | :------------: |
+|    Power     |      VDD5V      | Power Input | The power supply pin for the SoM is 5V, and the carrier board provides a current of no less than 2.5A. |      1.2       |
+|              |      VBAT       | Power Input | SoM RTC power supply 3V                                      |      166       |
+|              |       GND       |   Ground    | SoM power ground and signal ground, all GND pins need to be connected |                |
 
-| **功能** | **信号名称** | **I/O** | **默认功能** | **引脚号** |
-| :---: | :---: | :---: | --- | :---: |
-| CPU复位 | nRESET | I | 核心板电源复位，低电平有效，用户不要在该引脚添加额外的容性负载，以免影响核心板正常启动 | 5 |
-| 电源使能 | EXTP_EN | O | 控制底板外部电源的使能信号，由核心板输出，3.3V电平 | 46 |
-| BOOT选择 | K1_PG0/L1_PG1/L4_PG2/M1_PG3   L3_PG4/N1_PG5/M4_PG6/M2_PG7 | I | 核心板boot启动选项，底板不做处理时，核心板默认从emmc启动 | 6,7,8,9   10,11,12,13 |
-| 调试串口 | W1_UART0_TXD/U6_UART0_RXD   G5_UART16_TXD/G3_UART16_RXD | I/O | A35调试串口   M4调试串口   建议用户保留对应端口功能 | 148,149   136,137 |
+**Function Control Pin**
 
+|     **Function**      |                       **Signal Name**                        | **I/O** | **Default Function**                                         |    **Pin Number**     |
+| :-------------------: | :----------------------------------------------------------: | :-----: | ------------------------------------------------------------ | :-------------------: |
+|       CPU reset       |                            nRESET                            |    I    | SoM power reset, active low, users should not add additional capacitive loads on this pin, so as not to affect the normal startup of the SoM. |           5           |
+|     Power enable      |                           EXTP\_EN                           |    O    | Enable signal to control the external power supply of the carrier board, output from the SoM, 3.3V level |          46           |
+|  BOOT mode selection  | K1\_PG0/L1\_PG1/L4\_PG2/M1\_PG3   L3\_PG4/N1\_PG5/M4\_PG6/M2\_PG7 |    I    | SoM boot option. When the carrier board is not processed, the SoM is booted from the emmc by default. | 6,7,8,9   10,11,12,13 |
+| Debugging serial port | W1\_UART0\_TXD/U6\_UART0\_RXD   G5\_UART16\_TXD/G3\_UART16\_RXD |   I/O   | A35 Debugging Serial Port M4 Debugging Serial Port. It is recommended that the user keep the corresponding port function. |   148,149   136,137   |
 
-<font style="color:#ff0000;">（包含最小系统框图）</font>
+It includes the minimum system block diagram.
 
-   FET-MA35-S2核心板已经将电源、复位监控电路、存储电路集成于一个小巧的模块上，所需的外部电路非常简洁,构成一个最小系统只需要 5V 电源即可运行,如下图所示:
+FET-MA35-S2 SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, as shown in the following figure:
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129884_a42777f2_6019_4c88_95c5_30f27e1f2d3d.gif)
+![](https://cdn.nlark.com/yuque/0/2024/gif/50461850/1733794129884-a42777f2-6019-4c88-95c5-30f27e1f2d3d.gif)
 
-最小系统原理图可以参见附录四。不过一般情况下，除最小系统外建议连接上一些外部设备，例如调试串口，镜像烧写端口，否则用户无法判断系统是否启动。做好这些后，再在此基础上根据飞凌提供的核心板默认接口定义来添加用户需要的功能。
+Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, image flashing port, otherwise, users can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
+Please refer to section 3.5 in “Chapter 3. OK-MA35-S2 Carrier Board Description” for the peripheral circuits.
 
+## 3\. OK-MA35-S21 Development Platform Description
 
-核心板外围电路的设计可参见第三章的3.5节“OK-MA35-S2底板说明”。
+### 3.1 OK-MA35-S21 Development Board Interface Diagram
 
+The connection of OK-MA35-S21 SoM and the carrier board is edging connection +LGA, and the main interfaces are as follows:
 
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794131533-d8f7a569-79ff-4590-83d0-306f5f209e4d.jpg)
 
-# 03_飞凌OK-MA35-S21嵌入式开发平台介绍
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794131639-4399171b-050e-42f6-ab2d-b8fce99fc265.jpg)
 
-## 3.1  OK-MA35-S21开发板接口图
-飞凌OK-MA35-S21开发平台核心板和底板采用邮票孔+LGA的连接方式，主要接口如下图所示：
+### 3.2 OK-MA35-S21 SoM Dimension Diagram
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131533_d8f7a569_79ff_4590_83d0_306f5f209e4d.jpg)
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794131771-01dde045-a64a-4bc1-b422-c7f9f911e33a.jpg)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131639_4399171b_050e_42f6_ab2d_b8fce99fc265.jpg)
+PCB Size: 130mm × 190mm
 
-## 3.2  OK-MA35-S21开发板尺寸图
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131771_01dde045_a64a_4bc1_b422_c7f9f911e33a.jpg)
+Fixed hole size: spacing: 120mm × 180mm, hole diameter: 3.2mm.
 
-PCB尺寸：130mm×190mm。
+Plate making process: thickness 1.6mm, 4-layer PCB.
 
-固定孔尺寸：间距：120mm×180mm，孔径：3.2mm。
+Power supply voltage: DC 12V.
 
-制版工艺：厚度1.6mm，4层PCB。
+Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-电源电压：直流12V。 
+![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759202030508-6466ec90-e963-4931-a863-6a8311f36399.png)
 
-OK-MA35-S21底板预留了2个直径3.2mm散热片的安装孔，用户可以根据现场环境选配安装散热片，散热片和核心板接触面请加一层绝缘的导热硅胶垫。飞凌自选的核心板散热片尺寸为：38mm×38mm×10mm，更多详细尺寸参见下图：
+### 3.3 Carrier Board Naming Rules
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1759202030508_6466ec90_e963_4931_a863_6a8311f36399.png)
-
-## 3.3  底板命名规范
 ABC-D+IK:M
 
-| 字段 | 字段描述 | 值 | 说明 |
-| --- | --- | --- | --- |
-| A | 合格等级 | PC | 原型样品 |
-|  |  | 空白 | 大规模生产 |
-| B | 产品线标识 | OK | 飞凌嵌入式开发板 |
-| C | CPU名称 | MA35 | MA35 |
-| - | 分段标识 | - |  |
-| D | 连接方式 | Sx | 邮票孔 |
-| + | 分段标识 | + | 此标识之后为配置参数部分 |
-| I | 运行温度 | I | -40 to 85℃     工业级 |
-| K | PCB版本号 | 11 | V1.1 |
-|  |  | xx | Vx.x |
-| :M | 厂家内部标识 | :X | 此内容为厂家内部标识，对客户使用无影响 |
+| Field | Field Description                           | Value | Description                                                  |
+| ----- | ------------------------------------------- | ----- | ------------------------------------------------------------ |
+| A     | Qualification level                         | PC    | Prototype Sample                                             |
+|       |                                             | Blank | Mass Production                                              |
+| B     | Product line identification                 | OK    | Forlinx Embedded development board                           |
+| C     | CPU Name                                    | MA35  | MA35                                                         |
+| \-    | Segment Identification                      | \-    |                                                              |
+| D     | Connection                                  | Sx    | Edge Connector                                               |
+| \+    | Segment Identification                      | \+    | The configuration parameter section follows this identifier. |
+| I     | Operating temperature                       | I     | -40 to 85℃ Industrial-grade                                  |
+| K     | PCB Version                                 | 11    | V1.1                                                         |
+|       |                                             | xx    | Vx.x                                                         |
+| :M    | Internal Identification of the Manufacturer | :X    | This is the internal identification of the manufacturer and has no impact on the use. |
 
+### 3.4 Carrier Board Resources
 
-## 3.4  底板资源
-| **功能** | **数量** | **参数** |
-| --- | --- | --- |
-| USB 2.0 | 2 | 1个USB HOST，USB Type A座子引出  1个USB OTG，USB Type-C座子引出，仅用作Device |
-| LCD | 1 | 支持RGB888，最大分辨率1920*1080@60fps |
-| LVDS | 1 | 通过LCD转换而来，通过DVI-I座子引出 |
-| Ethernet | 2 | 1千兆，1百兆，可向下自适应速率，双网口可以同时使用 |
-| TF Card | 1 | 开发板支持1路TF Card，兼容SD3.0 |
-| 4G | 1 | 可外接mini  PCIE接口的4G模块。 |
-| WiFi | 1 | RL-UM02WBS-8723DU-V1.2  标准:IEEE 802.11b/g/n,  BT V2.1/BT V3.0/BT V4.0。 |
-| Bluetooth | 1 |  |
-| Audio | 1 | 默认板载NAU88C22YG芯片；  支持耳机输出和MIC输入，分别在2个3.5mm 三段式耳机接口上引出；  支持2路1W8Ω喇叭输出，通过XH2.54白色端子引出 |
-| I2C | 4 | 2个用于挂载底板LCD触摸、音频  2个通过2 x 4 Pin 2.54mm间距插装插针引出，供用户外挂设备 |
-| PWM | 7 | 2个分别用于LCD调节背光亮度和BUZZER  5个通过2 x 4 Pin 2.54mm间距插装插针引出，供用户外挂设备 |
-| RTC | 1 | 板载独立RTC芯片，底板断电后可通过纽扣电池记录时间。 |
-| UART | 3 | 通过2 x 6Pin 2.54mm间距插装插针引出，供用户外挂设备 |
-| RS485 | 6 | 电气隔离，通过GPIO控制收发方向 |
-| CAN | 4 | 电气隔离，支持  CAN-FD，速率最高支持5Mbps |
-| SPI | 2 | 开发板通过2 x 6Pin  2.54mm间距插装插针引出，供用户外挂设备 |
-| QSPI | 1 | 板载 16MB QSPI NOR  FLASH |
-| DEBUG UART | 2 | A核UART0和M核UART16转成USB信号，通过Type-C接口引出，默认波特率115200 |
-| ADC | 8 | 8路单端输入，12bit，500K SPS，支持4线或5线触摸 |
-| EADC | 8 | 8路单端或4路差分输入，12bit，4.7M SPS |
-| KEY | 1 | 复位按键 |
-| SWD | 1 | 通过1 x 5Pin单排2.54mm间距插装插针引出 |
+| Function** | **Quantity** | **Parameter**                                                |
+| ---------- | ------------ | ------------------------------------------------------------ |
+| USB 2.0    | 2            | 1 x USB HOST led out via USB Type A socket; 1 x USB OTG led out via USB Type-C socket, only used as a Device |
+| LCD        | 1            | Supports RGB 888, maximum resolution 1920 \* 1080@ 60fps     |
+| LVDS       | 1            | Converted through LCD and extended via DVI-I socket          |
+| Ethernet   | 2            | 1 Gigabit, 100 Megabit, downward adaptive rate, dual RJ45 ports can be used<br />simultaneously. |
+| TF Card    | 1            | 1 x TF Card slot, compatible with SD3.0                      |
+| 4G         | 1            | Supports 4G module via a mini PCIe interface                 |
+| WiFi       | 1            | RL-UM02WBS-8723DU-V1.2 Standard: IEEE 802.11b/g/n, BT V2.1/BT V3.0/BT V4.0. |
+| Bluetooth  | 1            | Bluetooth                                                    |
+| Audio      | 1            | Default on-board NAU88C22YG chip; supports headphone output and MIC<br />input, each accessed through separate 3.5mm 3-segment headphone jacks;<br />it supports 2x1W 8Ω speaker output via XH2.54 white terminals. |
+| I2C        | 4            | 2 x for mounting carrier board LCD touch and audio；2 x led out via 2 X 4<br />Pin 2.54 mm spacing insertion pins for mounting external devices. |
+| PWM        | 7            | 2 for LCD backlight brightness adjustment and BUZZER respectively, and 5<br />for 2 X 4 Pin 2.54mm spacing plug-in pins for users to plug-in equipment. |
+| RTC        | 1            | On-board independent RTC chip, which can record time via a button battery when the carrier board is powered off |
+| UART       | 3            | 2 x 6Pin 2.54mm spacing header pins for mounting external devices |
+| RS485      | 6            | Galvanic isolation, controlled via GPIO for transmit and receive direction |
+| CAN        | 4            | Electrical quarantine supporting CAN-FD, speed up to 5Mbps   |
+| SPI        | 2            | 2 x 6Pin 2.54mm pitch for mounting external devices          |
+| QSPI       | 1            | On-board 16MB QSPI NOR FLASH                                 |
+| DEBUG UART | 2            | A-core UART0 and M-core UART16 are converted into USB signals, which are led out through the Type-C interface. The default baud rate is 115200. |
+| ADC        | 8            | 8 x single-ended inputs, 12 bit, 500K SPS, 4-wire or 5-wire touch |
+| EADC       | 8            | 8 x single-ended or 4 x differential inputs, 12 bit, 4.7 M SPS |
+| KEY        | 1            | Reset key                                                    |
+| SWD        | 1            | 1 x 5Pin single-row 2.54mm pitch for exporting               |
 
+**Note: The parameters in the table are the theoretical values of hardware design or CPU.**
 
-+ 注：表中参数为硬件设计或CPU理论值；
+### 3.5 OK-MA35-S21 Carrier Board Description
 
-## 3.5  OK-MA35-S21底板说明
-**注：下图中元件位号有“_DNP”标识的，代表此元器件默认不焊接。**
+**Note: The component UID with "\_DNP" mark in the diagram below represents it is not soldered by default. The schematic diagrams in this manual are only for interface description. When users conduct hardware design, please refer to the source file materials.**
 
-**注：本手册中原理图仅做接口说明，用户做硬件设计请参考源文件资料。**
+#### 3.5.1 Carrier Board Power
 
-### 3.5.1  底板电源
-开发板使用12V电源适配器供电，电源接口为DC005的插座。拨动开关S1为开发板的电源开关，按照底板丝印指示进行拨动。S1后级有TVS管进行静电防护，F1进行过流保护，D1与F1配合进行防反接保护。
+It uses a 12V power adapter for the power supply, and the power connector is a DC005 socket. S1(dip switch) is the power switch, which moves according to the screen printing indication on the board. The rear of S1 has TVS for electrostatic protection, F1 for over-current protection, and D1 and F1 cooperate for anti-reverse connection protection.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131888_ec74bbcb_bf0d_4a2f_9355_8b10ee93bda7.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794131888-ec74bbcb-bf0d-4a2f-9355-8b10ee93bda7.png)
 
-VCC_12V通过U1降压至DCIN（5V）。DCIN直接给核心板供电，确保核心板能够先上电。
+VCC\_12V is stepped down to DCIN (5V) through U1. DCIN directly powers the SoM to ensure that it can be powered on first.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131960_8176532c_7d48_4a3a_be43_dc3ca8f308a7.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794131960-8176532c-7d48-4a3a-be43-dc3ca8f308a7.png)
 
-DCIN（5V）通过U2受控输出VCC_5V。U2受控于EXTP_EN，在核心板完成上电后，U2导通。VCC_5V为底板的部分5V供电设备供电。
+DCIN (5V) outputs VCC\_5V in a controlled manner through U2. U2 is controlled by EXTP\_EN. After the SoM is powered on, U2 is turned on VCC\_5V powers some 5V - powered devices on the carrier board.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132029_dcc186be_4834_4397_8d5e_cf08597886b7.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132029-dcc186be-4834-4397-8d5e-cf08597886b7.png)
 
-VCC_5V通过U6降压至VCC_3V3，给底板所有的3.3V供电设备供电。
+VCC\_5V is stepped down to VCC\_3V3 through U6 to power all 3.3V - powered devices on the carrier board.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132111_01a476eb_8f22_4fb4_b297_a51f58aefd7a.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132111-01a476eb-8f22-4fb4-b297-a51f58aefd7a.png)
 
-**注意：**
+**Note:**
 
-**1.用户自行设计时，务必保证电源的上电时序即核心板输出的EXTP_EN作为底板DCDC电源的使能，从而保证核心板先上电，底板后上电。**
+- **When designing independently, it is essential to ensure the power - on sequence of the power supply. Specifically, the EXTP\_EN output from the SoM should be used as the enable signal for the DCDC power supply of the carrier board, so as to ensure that the SoM is powered on first and the carrier board is powered on later;**
 
-**2.升降压芯片的器件选型及外部布局需要参考对应的芯片手册，确保良好的电源回路。**
+- **Refer to the corresponding chip manual for the component selection and external layout of the step-up and step-down chip to ensure a good power circuit.**
 
-### 3.5.2  复位按键
-底板的K1为开发板的复位键，按下后可复位核心板上电源，实现给整板断电复位的功能。
+#### 3.5.2 Reset Button
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132196_ffd9f850_368c_4f66_b3e6_51bfb4e5aa82.png)
+K1 on the carrier board is the development board reset key. Pressing it can realize the whole board power off and reset.
 
-**注：nRESET引脚不用时，请悬空，不要做上下拉处理。**
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132196-ffd9f850-368c-4f66-b3e6-51bfb4e5aa82.png)
 
-### 3.5.3 BOOT配置
-底板使用8位拨码开关S2来选择系统启动方式。请调整好选项之后再给开发板上电。
+**Note: When the nRESET pin is not used, please float it and do not pull it up or down.**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132394_da8a9b1c_caff_4f29_a454_2fce8327e41d.png)
+#### 3.5.3 BOOT Configuration
 
-启动方式：
+The carrier board uses an 8-bit DIP switch S2 to select the system boot mode. Please adjust the options before powering up the development board.
 
-eMMC，开发板程序从核心板板载EMMC启动；
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132394-da8a9b1c-caff-4f29-a454-2fce8327e41d.png)
 
-TF，开发板使用TF卡引导系统，可以利用此种方式实现TF卡烧写镜像；
+**Boot mode:**
 
-USB，一般是用来OTG下载镜像，开发板使用P11接口USB Type-C转接线连接电脑USB口，使用电脑上的程序给开发板刷写镜像；
+eMMC: The development board program starts from the on - board eMMC of the SoM.
 
-Secure是安全启动，确保系统映像的真实性和完整性，避免执行植入系统的恶意软件或未经授权的软件。目前默认禁用此功能。
+TF: The development board uses a TF card to boot the system. You can use this method to flash an image to the TF card.
 
-**注：**
+USB: Generally, it is used for OTG to download images. The development board is connected to the computer’s USB port via a USB Type - C adapter cable at the P11 interface. You can use the program on the computer to flash an image to the development board.
 
-**1. PG0-PG7为启动相关引脚，这些引脚在CPU内部为默认下拉，与此同时，核心板上的PG0,PG2,PG6,PG7引脚添加10K进行上拉**
+Secure is secure boot, which ensures the authenticity and integrity of the system image and prevents the execution of malicious or unauthorized software implanted in the system. Currently, this function is disabled by default.
 
-**2. 目前默认禁用secure boot 功能，且在只供电的情况下可从eMMC启动。用户需要根据自己的烧写、启动情况对底板的相关引脚进行处理。**
+**Note：**
 
-**3. 因这些引脚与启动相关，不建议用作GPIO，若需用作GPIO，注意引脚电平，不能影响启动项。**
+- **PG0 - PG7 are pins related to startup. These pins are pulled down by default inside the CPU. Meanwhile, the PG0, PG2, PG6, and PG7 pins on the SoM are pulled up with 10K resistors;**
 
-### 3.5.4 调试串口
-核心板有2个调试串口，UART0用于A35调试，UART16用于M4调试。  
-为方便用户使用，使用USB转串口芯片CH342F将2个调试串口集成在1个USB接口上。
+- **Currently, the secure boot function is disabled by default, and the system can be started from the eMMC when only powered on. Please handle the relevant pins on the carrier board according to the flashing and startup situations;**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132475_74e8db05_515a_4360_92ce_2d840fe536d2.png)
+- **Since these pins are related to startup, it is not recommended to use them as GPIO. If they need to be used as GPIO, pay attention to the pin levels to avoid affecting the startup items.**
 
-要使用调试串口，请首先在电脑上安装CH342F驱动，驱动下载链接：[http://www.wch.cn/products/CH342.html](http://www.wch.cn/products/CH342.html。然后使用USB转Type-C线将开发板P6和电脑USB口连接，在电脑的设备管理器中，会生成2个COM口，其中A端口是A35调试串口，B端口是M4调试串口。)
+#### 3.5.4 Debugging Serial Port
 
-然后使用USB转Type-C线将开发板P6和电脑USB口连接，在电脑的设备管理器中，会生成2个COM口，其中A端口是A35调试串口，B端口是M4调试串口。
+There are two debug serial ports on the SoM. UART0 is used for A35 debugging, and UART16 is used for M4 debugging.   
+To facilitate users, the two debug serial ports are integrated into one USB interface using the USB - to - serial chip CH342F.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132566_d687cff5_0fab_4356_a0ba_d722cfba8859.jpg)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132475-74e8db05-515a-4360-92ce-2d840fe536d2.png)
 
-在电脑上打开调试终端工具，例如Putty，设置波特率115200，数据位8，无校验位，停止位1，选择正确的COM口，给开发板上电启动，就可以看到调试串口信息。  
-**注：**
+To use the debug serial ports, first install the CH342F driver on your computer. The driver download links are: http://www.wch.cn/products/CH342.html
 
-1. **为方便后期调试，请用户在自行设计底板时将此调试串口引出；**
-2. **底板调试串口做了防漏电设计，建议用户参考此设计。**
+Then connect the P6 port of the development board to the computer’s USB port using a USB - to - Type - C cable. Two COM ports will be generated in the computer’s Device Manager. Among them, Port A is the A35 debug serial port, and Port B is the M4 debug serial port.
 
-### 3.5.5  TF卡
-开发板 TF Card 为 CPU 的 SD0 通道。
+![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794132566-d687cff5-0fab-4356-a0ba-d722cfba8859.jpg)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132679_b3b36aae_b1ed_4145_af69_146e7e5bac1e.png)
+Open a debug terminal tool on the computer, such as Putty. Set the baud rate to 115200, the data bits to 8, no parity bit, and the stop bits to 1. Select the correct COM port, power on the development board, and you can see the debug serial port information.   
+**Note：**
 
-**注：**
+- **To facilitate later debugging, please lead out these debug serial ports when users design the carrier board by themselves；**
 
-1.    **强烈建议总线预留上拉电阻，否则可能影响TF卡烧写；**
-2.    **SD0_CLK引脚建议预留串阻及对地电容，电容默认空焊；**
-3.    **TF属于可热插拔设备，请做ESD防护；**
-4.    **SD信号需要做等长。**
+- **The debug serial ports on the carrier board are designed to prevent electric leakage. It is recommended that users refer to this design.**
 
-### **3.5.6 USB OTG接口**
-底板支持USB烧写，目前开发板电路只支持device模式，使用USB0时，注意HSUSB0_VBUSVLD参考开发板设计，OTG_ID为高时，USB0做device。  
-如用户只需要USB0做HOST，将OTG_ID拉到GND上，USB座子电源VBUS引脚需要供电5V，另外HSUSB0_VBUSVLD可以做普通IO使用。
+#### 3.5.5 TF Card
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132759_8b193b8b_d533_4638_b72d_a89e5396c1d6.png)
+The TF Card on the development board uses the SD0 channel of the CPU.
 
-**注：**  
-**1.仅核心板原生的USB0支持USB烧写系统；**  
-**2.USB数据线都需要做90Ω差分阻抗；**  
-**3.请选择合适的ESD器件；**
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132679-b3b36aae-b1ed-4145-af69-146e7e5bac1e.png)
 
-**4.HSUSB0_VBUSVLD需要检测到电压才能正常启用USB功能。**
+**Note: It is strongly recommended to reserve pull - up resistors on the bus; otherwise, it may affect the flashing of the TF card. It is recommended to reserve a series resistor and a capacitor to ground for the SD0\_CLK pin. The capacitor is left un - soldered by default. Since the TF card is a hot - swappable device, ESD protection should be provided. SD signals must be length-matched.**
 
-### 3.5.7 LCD接口
-开发板将RGB888通过54pin 0.5mm间距的FPC座引出（P23），最高分辨率可达1920*1080@60fps，默认适配飞凌7寸LCD屏。
+#### **3.5.6 USB OTG Interfaces**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132828_3914eafa_311f_4bc8_bd2b_ed3ca4a0da03.png)
+The carrier board supports USB flashing. Currently, the development board circuit only supports the device mode. When using USB0, pay attention to the design reference of HSUSB0\_VBUSVLD on the development board. When OTG\_ID is high, USB0 functions as a device.   
+If only USB0 is used as the HOST, pull the OTG \_ ID to GND, and the USB socket power supply VBUS pin needs to supply 5V power. In addition, HSUSB0 \_ VBUSVLD can be used as a common IO.
 
-### 3.5.8 LVDS接口
-LVDS是由RGB888转换而来，只能二选一使用。  
-开发板将LVDS的信号用DVI-I（24+5引脚）座子引出，支持USB触摸。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132759-8b193b8b-d533-4638-b72d-a89e5396c1d6.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132922_56d6b1a0_23dd_447e_bf2e_c6fd8ae032cc.png)
+**Note: Only the native USB0 of the SoM supports the USB programming system. USB data lines are required to make 90Ω differential impedance. Please select the appropriate ESD device. The HSUSB0\_VBUSVLD needs to detect voltage to enable the USB function normally.**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133010_0acae7ad_632c_43da_ab2d_bdbdee30f22b.png)
+#### 3.5.7 LCD Interface
 
-**注：**  
+The RGB 888 is led out from the development board through the FPC seat with 54pin and 0.5mm pitch (P23). The maximum resolution can reach 1920 \* 1080 @ 60fps. It is suitable for the Forlinx 7-inch LCD.
 
-1.    **LVDS需要数据与时钟做等长.**
-2.    **阻抗要求：单端50Ω，差分100Ω.**
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132828-3914eafa-311f-4bc8-bd2b-ed3ca4a0da03.png)
 
-### 3.5.9 Ethernet 接口
-底板提供2路以太网接口，P46是千兆，P1是百兆。  
-千兆网口以RGMII与PHY芯片YT8521SH-CA（位号U31）相连，由RJ45插座引出（位号P46），插座型号为 FC-H021LNL，内置隔离变压器。
+#### 3.5.8 LVDS Interface
 
-**注：**  
-**1.RGMII信号的TX组和RX组需要在组内做等长；**  
-**2.RGMII和MDIO/MDC电平一致，可由CFG_LDO[1:0]配置；**  
-**3.需额外注意YT8521SH-CA的几路电源，电压不稳定会导致芯片不工作；**  
-**4.网络的模拟差分线需要做100Ω差分阻抗，组间等长要求≤1000mil；**  
-**5.建议至少使用4层板设计，保证走线有完整的参考层，否则会导致网络通讯失败；**  
-**6.建议该部分原理图和PCB直接复制开发板设计。**
+LVDS is converted from RGB888, and only one of them can be used.   
+The development board leads out the LVDS signals through a DVI - I (24 + 5 pins) socket and supports USB touch.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133084_a2101fb2_c6ab_40b3_b862_ca79f3158a37.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132922-56d6b1a0-23dd-447e-bf2e-c6fd8ae032cc.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133178_c8093cca_3b1a_415e_a413_808cac60e95d.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133010-0acae7ad-632c-43da-ab2d-bdbdee30f22b.png)
 
-百兆网口以RMII与PHY芯片IP101GRI（位号U32）相连，由RJ45插座引出（位号P1），插座型号为FC-SH105GYNL，内置隔离变压器。
+**Note: The data and clock of LVDS need to have equal lengths. Impedance requirements: 50Ω for single - ended and 100Ω for differential.**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133250_6ce5eba0_49bd_4691_9b1e_2dcd4ab54101.png)
+#### 3.5.9 Ethernet Interface
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133470_c6ef9745_22e6_448d_905e_29c1b12635cb.png)
+There are 2 x Ethernet interfaces, P46 is gigabit and P1 is 100m.   
+The Gigabit network port is connected to the PHY chip YT8521SH-CA (U31) via RGMII and is led out by an RJ45 socket (P46). The socket model is FC - H021LNL, which has a built - in isolation transformer.
 
-### 3.5.10 USB HOST 接口
-开发板使用USB2.0HUB（FE1.1s-BQFN24BT）将CPU原生的一路USB2.0扩展为4路USB2.0，并将其中的1路以USB2.0Type-A座子引出（P16），另外3路分别接到了WiFi&蓝牙、miniPCIE和LVDS上。
+**Note:**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133534_6214ac63_a94b_425c_a720_6418e0ae6a73.png)
+- **The TX group and RX group of the RGMII signals need to have equal lengths within each group;**
 
-**注：**  
-**1.USB数据线都需要做90Ω差分阻抗;**  
-**2.请选择合适的ESD器件。**
+- **The RGMII and MDIO/MDC have the same level, which can be configured by CFG\_LDO\[1:0];**
 
-### 3.5.11 WiFi&Bluetooth
-WiFi蓝牙二合一模块的型号是：BL-M8723DU1，标准:IEEE802.11b/g/n，蓝牙标准：TV2.1/BTV3.0/BTV4.0。
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133614_1640395a_a85d_404d_bf6f_62706f19d14d.png)
+- **Special attention should be paid to several power supplies of YT8521SH - CA. Unstable voltage will cause the chip to malfunction;**
 
-原理图中，WIFI_EN引脚是模块的电源开关引脚，输出低电平时，给模块供电。  
-天线接口在PCB正面右下角，P22是WIFI的天线，天线可发送和接收数据。
 
-### 3.5.12 4G
-开发板支持使用miniPCIE插座的4G模组，默认使用移远EC20。
+- **The analog differential lines of the network need to have a differential impedance of 100Ω, and the equal - length requirement between groups should be ≤1000 mil;**
 
-使用MicroSIM卡，请注意插卡方向。
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133691_56e636fe_ea68_4d3d_aef6_919078844208.png)
+- **It is recommended to use at least a 4 - layer board design to ensure that the traces have a complete reference plane. Otherwise, network communication will fail;**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133758_fc362c67_dc18_4213_88be_2a0cdd180ed1.png)
 
-### 3.5.13 音频
-开发板通过I2S0挂载NAU88C22YG芯片，提供一个标准3.5mm音频插座（P43，绿色），一个标准3.5mm麦克风插座（P42，粉色），NAU88C22YG内部自带的D类功放，输出端由两个XH2.54-2P白色插座P38、P40引出,可驱动两只8Ω喇叭，最高输出功率为1W，如果需要外接更大的功放，只能从耳机插座获取信号，不能从喇叭接口获取信号，片上耳机驱动器的输出功率为40mW（16Ω）。音频芯片电源受CODEC_PWREN控制，高电平有效。
+- **It is recommended to directly copy the schematic and PCB design of the development board for this part.** 
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133839_cb80d3c6_e280_4f94_b57e_a97b29c0ad87.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133914_f874db1a_7ef6_4f04_962e_5a9452ec778e.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133084-a2101fb2-c6ab-40b3-b862-ca79f3158a37.png)
 
-**注：**  
-**1.喇叭的功率来自D类功放，不是传统的模拟功放。**  
-**2.NAU88C22YG芯片分为数字区和模拟区，用户自行设计底板时请注意器件布局；**  
-**3.请将芯片的供电电源处理干净，对降低音频底噪有帮助**
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133178-c8093cca-3b1a-415e-a413-808cac60e95d.png)
 
-### 3.5.14 CAN
-开发板提供4路CAN，支持CAN-FD。2pin-2.54mm间距的插针是接短路跳线帽，用于CAN总线上的120Ω端接电阻，与插针并联0R空焊的电阻为预留设计，有稳定性要求的用户可以焊接此电阻代替跳线帽。  
-P44接线端子引出，使用CAN通讯时建议将设备共地。
+The 100m Ethernet port is connected to the PHY chip IP101GRI (U32) through RMII, and is led out from the RJ45 socket (P1). The socket model is FC-SH105GYNL, and the quarantine transformer is built in.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134004_4e21b581_5f00_4749_9f6f_18a6463093c3.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133250-6ce5eba0-49bd-4691-9b1e-2dcd4ab54101.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134084_35ff1fda_6b21_4426_bf51_4b3f5685ed83.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133470-c6ef9745-22e6-448d-905e-29c1b12635cb.png)
 
-### 3.5.15 RS485
-开发板提供6路RS485。2pin-2.54mm间距的插针是接短路跳线帽，用于RS485总线上的120Ω端接电阻，与插针并联0R空焊的电阻为预留设计，有稳定性要求的用户可以焊接此电阻代替跳线帽。  
-P29接线端子引出，使用RS485通讯时建议将设备共地。
+#### 3.5.10 USB HOST Interface
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134178_d2b500ee_0311_4a52_89c6_b14601d70e7f.png)
+The development board uses a USB2.0 HUB (FE1.1s - BQFN24BT) to expand the native USB2.0 port of the CPU into 4 x USB2.0. One of them is led out through a USB2.0 Type - A socket (P16), and the other 3 x are connected to WiFi \& Bluetooth, miniPCIE, and LVDS respectively.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134250_591b3560_c8a6_4268_ba5c_aee805ae65cb.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133534-6214ac63-a94b-425c-a720-6418e0ae6a73.png)
 
-**注：**  
-**1．MAX3485AEASA+需要手动控制收发方向，流控引脚最好选用对应UART的RTS引脚，流控在驱动层就已经集成好了，如果选择GPIO，需要在应用层做工作。**  
-**2．开发板UART2和UART11流控引脚使用串口对应的RTS，串口UART1、UART10、UART14、UART15的流控引脚使用的GPIO。**
+**Note：** 
 
-### 3.5.16 普通串口
-底板引出3个普通串口，电平为3.3V，使用2*6pin-2.54mm间距的插装插针引出，供用户外挂设备。
+- **USB data lines are required to make 90Ω differential impedance;** 
+- **Please select the appropriate ESD device.**
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134335_5fa0dd9f_b19d_47f3_a536_a30bbc70c2f9.png)
+#### 3.5.11 WiFi\&Bluetooth
 
-### 3.5.17 SWD 接口
-底板通过P13将SWD接口引出，引脚间距2.54mm，如果不使用此功能，将该部分引脚悬空处理即可。
+The model of WiFi Bluetooth 2-in-1 module is: BL-M8723DU1, standard: IEEE802.11b/G/n, Bluetooth standard: TV 2.1/BTV3.0/BTV4.0.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134416_f5ceb038_ddeb_4b0f_ab30_7c29e49d640d.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133614-1640395a-a85d-404d-bf6f-62706f19d14d.png)
 
-### 3.5.18 RTC
-底板通过I2C2外挂RTC设备，并通过D4实现VCC_3V3和纽扣电池兼容供电，即在底板断电后，纽扣电池可以为RTC芯片保持供电。硬件做了RX8010SJ和PCF8563T/5兼容设计。
+In the schematic diagram, the WIFI\_EN pin is the power switch pin of the module. When it outputs a low level, the module is powered.   
+The antenna interface is at the lower - right corner of the front side of the PCB. P22 is the WIFI antenna, which can send and receive data.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134490_d2691e54_cec3_48eb_b2fb_26e34e7a5d89.png)
+#### 3.5.12 4G
 
-**注：**  
-**当使用核心板板载RTC功能时，需在VBAT（166）引脚提供3.3V电源，且此电源断电可保持。**
+The development board supports 4G modules using the miniPCIE socket. By default, the Quectel EC20 is used.
 
-### 3.5.19  SPI
-开发板提供2路SPI，通过P9使用2*6pin-2.54mm间距的插装插针引出，供用户外挂设备。
+It uses a MicroSIM card. Please pay attention to the card insertion direction.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134577_93c4f767_9e3f_4465_9eea_fbc4c539fd71.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133691-56e636fe-ea68-4d3d-aef6-919078844208.png)
 
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133758-fc362c67-dc18-4213-88be-2a0cdd180ed1.png)
 
+#### 3.5.13 Audio
 
+The development board mounts the NAU88C22YG chip through I2S0, providing a standard 3.5mm audio socket (P43, green) and a standard 3.5mm microphone socket (P42, pink). The NAU88C22YG has a built - in Class D power amplifier. The output is led out through two XH2.54 - 2P white sockets, P38 and P40, which can drive two 8Ω speakers with a maximum output power of 1W. If you need to connect an external larger power amplifier, you can only obtain the signal from the headphone socket, not from the speaker interface. The output power of the on - chip headphone driver is 40mW (16Ω). The power supply of the audio chip is controlled by CODEC\_PWR\_EN, and it is enabled at a high level.
 
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133839-cb80d3c6-e280-4f94-b57e-a97b29c0ad87.png)
 
-### 3.5.20  ADC
-开发板提供8路ADC，使用可调电阻来演示。ADC电压采样范围0~3.3V，支持12bit，500K SPS。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133914-f874db1a-7ef6-4f04-962e-5a9452ec778e.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134671_a75c4b12_8d8b_4e72_988a_95b611934b56.png)
+**Note：** 
 
+- **The power of the speaker comes from a class-D power amplifier, not a traditional analog power amplifier;**   
+- **NAU88C22YG chip is divided into a digital area and an analog area, and please pay attention to the device layout when designing the carrier board by yourselves; **
+- **Please clean power supply of the chip, which is helpful to reduce the audio noise.** 
 
+#### 3.5.14 CAN
 
-### 3.5.21 EADC
-开发板提供8路EADC，使用可调电阻来演示。ADC电压采样范围0~3.3V，支持12bit，4.7M SPS。
+The development board provides 4 x CAN supporting CAN-FD. The 2pin-2.54mm is used to connect short - circuit jumper caps, which are for the 120Ω termination resistors on the CAN bus. The 0R resistors (with empty soldering pads) connected in parallel with the pins are a reserved design. Users with stability requirements can solder these resistors instead of using the jumper caps.   
+The connection is led out through the P44 terminal block. It is recommended to connect the devices to a common ground when using CAN communication.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134807_7daf4e89_b477_49cd_a0b6_cb7e2c22e035.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134004-4e21b581-5f00-4749-9f6f-18a6463093c3.png)
 
-### 3.5.22 BUZZER
-开发板设计1个蜂鸣器，由EPWM控制，用户可以自定义其功能。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134084-35ff1fda-6b21-4426-bf51-4b3f5685ed83.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134936_182df0c0_10c4_4250_8a24_60684c6b01f3.png)
+#### 3.5.15 RS485
 
-### 3.5.23 QSPI NorFlash
-底板板载一颗QSPI_NorFlash。
+The development board provides 6 x RS485. The 2pin-2.54mm is used to connect short - circuit jumper caps, which are for the 120Ω termination resistors on the RS485 bus. The 0R resistors (with empty soldering pads) connected in parallel with the pins are a reserved design. Users with stability requirements can solder these resistors instead of using the jumper caps.   
+The connection is led out through the P29 terminal block. It is recommended to connect the devices to a common ground when using RS485 communication.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794135039_8f3e9f84_a3c1_4087_8773_d6827810ae77.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134178-d2b500ee-0311-4a52-89c6-b14601d70e7f.png)
 
-### 3.5.24 EPWM
-底板板载引出5个EPWM，电平为3.3V，使用2*4pin-2.54mm间距的插装插针引出，用户可以自定义其功能。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134250-591b3560-c8a6-4268-ba5c-aee805ae65cb.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794135166_11dfc03e_6484_45a6_985b_204724e656b7.png)
+**Note：** 
 
+- **The MAX3485AEASA+ requires manual control of the send - receive direction. It is advisable to select the RTS pin corresponding to the UART as the flow - control pin. The flow control has already been integrated at the driver level. If a GPIO is selected, work needs to be done at the application layer;**
+- **On the development board, the flow - control pins of UART2 and UART11 use the corresponding RTS pins of the serial ports, while the flow - control pins of UART1, UART10, UART14, and UART15 use GPIO.**
 
+#### 3.5.16 General Serial Ports
 
-### 3.5.25 GPIO
-底板板载引出部分GPIO，电平为3.3V，使用2.54mm间距的插装插针引出，用户可以自定义其功能。调试过程中通过插针取电源时，注意电平。
+Three general serial ports, each at 3.3V, are led out from the carrier board using 2\*6pin-2.54mm for users to connect external devices.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794135281_3eda4a59_a80b_4e1e_805b_f25c9e3bf8d7.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134335-5fa0dd9f-b19d-47f3-a536-a30bbc70c2f9.png)
 
+#### 3.5.17 SWD Interface
 
+SWD interface led out from the carrier board through P13 with a pin pitch of 2.54mm. If this function is not used, simply leave these pins floating.
 
-# 04_硬件设计指南
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134416-f5ceb038-ddeb-4b0f-ab30-7c29e49d640d.png)
 
-1. **I2C要求**  
-一组I2C总线上可以挂载多个从设备，请保证地址无冲突；  
-I2C总线上需要加上拉电阻，但不要使用多个电阻上拉；  
-请注意核心板端的I2C和从设备的I2C做电平匹配。
-2. **VBAT引脚处理**  
-当使用核心板板载RTC功能时，需在VBAT引脚提供3.3V电源，且此电源断电可保持。
-3. **上电时序**  
-强烈建议用户设计底板时使用核心板输出的EXTP_EN作为底板上电的使能，严格控制上电时序。否则可能会造成以下影响：  
-·通电阶段电流过大；  
-·设备无法启动；  
-·最坏情况，对处理器造成不可逆转的损坏。
-4. **核心板不使用的信号引脚可以悬空，但请务必将所有的GND连接。**
-5. **关于引脚IO漏电问题说明**  
-在核心板上电之前，如果核心板信号引脚上有高电平灌电流，会给核心板上串电，最直观的现象就是能看到核心板的红色指示灯微亮，会导致上电顺序不对，最典型的就是串口漏电，所以与CPU直连的外设部分需要做防漏电设计。
-6. **PG0-PG7启动相关引脚要求**  
-PG0-PG7为启动相关引脚，这些引脚在CPU内部为默认下拉，与此同时，核心板上的PG0,PG2,PG6,PG7引脚添加10K进行上拉，默认禁用secureboot功能，且在只供电的情况下可从eMMC启动。用户需要根据自己的烧写、启动情况对底板的相关引脚进行处理。此外，因这些引脚与启动相关，不建议用作GPIO，若需用作GPIO，注意引脚电平，不能影响启动项。
+#### 3.5.18 RTC
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794136938_fca55f55_d91e_4658_b8f9_d9105c707099.png)
+The carrier board is externally provided with RTC equipment through I2C2, and is supplied with power through D4 compatible with VCC \_ 3V3 and the button cell. After the carrier board is powered off, the button cell can maintain power supply for the RTC chip. The hardware is designed to be compatible with both RX8010SJ and PCF8563T/5.
 
-7. **调试串口硬件设计说明**  
-UART0为A核调试串口，为方便后期调试，建议引出，做好防漏电措施；若使用M核，需引出UART16_TXD方便调试。
-8. **SD卡硬件设计要求**  
-SD卡的各路信号线需要加电阻上拉至3.3V，否则可能影响SD卡烧写；SD0_CLK引脚建议预留串阻及对地电容，电容默认空焊。
-9. **HSUSB0_VBUSVLD引脚要求**  
-D6_PF15引脚默认为HSUSB0_VBUSVLD功能，USB0用作device时，此引脚必须保持高电平，比如通过USB0烧写时；如果USB0用作host，此引脚可用作GPIO。
-10. **T13_PJ5引脚要求**  
-T13_PJ5引脚需要加10K电阻进行下拉。该T13_PJ5引脚禁止上拉，否则影响eMMC正常启动。
-11. **RS485要求**  
-当使用RS485，其流控引脚最好选用对应UART的RTS引脚，流控在驱动层就已经集成好了，如果选择GPIO，需要在应用层做工作。
-12. **ADC/EADC要求**  
-ADC0-7及EADC0-7默认输入范围为0-3.3V，需注意输入电压范围。
-13. **自制底板的PCB布局要求**  
-为保证核心板邮票孔焊盘的爬锡良率，底板钢网制作时外扩了邮票孔的开孔区域以保证锡膏量，如下图灰色部分所示。因此底板布局时，需注意其他器件焊盘远离核心板钢网外扩区域，同时，核心板钢网外扩区域不允许打孔，以免漏锡，影响焊接质量。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134490-d2691e54-cec3-48eb-b2fb-26e34e7a5d89.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794137064_bec5363b_398b_4a4b_b1d5_698a109a1fb3.png)
+**Note: When using the on - board RTC function of the SoM, a 3.3V power supply needs to be provided at the VBAT (166) pin, and this power supply should remain available even after power - off.**
 
-14. **自制底板PCB的表面处理工艺要求**  
-底板表面处理工艺建议化学沉金，因为核心板和底板采用邮票孔+LGA的连接方式，采用化学沉金工艺，底板单独存储后，可以降低焊接难度，强烈建议核心板与底板贴片器件同步送入贴片机焊接，如果底板是双面布件，则建议用户核心板的所在面最后再过炉，避免核心板在底板上二次过炉。
-15. **自制底板的钢网要求**  
-告知工厂：图片标识出核心板的钢网不需要处理，补偿等已经做好，其他区域可以修改。  
-例如：
+#### 3.5.19 SPI
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794137144_b456c4c8_217d_4128_8082_89191135f91c.png)
+The development board provides 2 x SPI , which are led out through P9 using 2\*6pin-2.54mm for users to connect external devices.
 
-16. **核心板抗振动要求**  
-如果客户产品有抗振动要求，建议客户增加核心板所在区域与外壳的硬连接，避免振动时核心板所在区域发生形变，焊点因应力疲劳发生断裂，进而影响产品稳定运行。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134577-93c4f767-9e3f-4465-9eea-fbc4c539fd71.png)
 
+#### 3.5.20 ADC
 
+There are 8 x ADC on the development board, which is demonstrated using variable resistors. The ADC voltage sampling range is 0 - 3.3V, supporting 12 - bit resolution and 500K SPS.
 
-# 05_OK-MA35-S21开发板Linux系统整机功耗表
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134671-a75c4b12-8d8b-4e72-988a-95b611934b56.png)
 
-| **编号** | **测试项目** | **核心板功率**（W） | **开发板功率**   **（含核心板）**（W） |
-| :---: | --- | :---: | :---: |
-| 1 | 无负载启动峰值功率 | 2.21W | 3.7W |
-| 2 | CPU压力+内存+emmc读写压力测试 | 2.06W | 4.55W |
-| 3 | 带载LVDS+4G+视频编码 | 2.02W | 5.03W |
-| 4 | 带载LVDS+4G+视频编码+CPU压力+内存+emmc读写压力测试 | 2.56W | 5.56W |
+#### 3.5.21 EADC
 
+There are 8 x EADC on the development board, which is demonstrated using variable resistors. The ADC voltage sampling range is 0 - 3.3V, supporting 12bit resolution and 4.7M SPS.
 
-+ **注：**
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134807-7daf4e89-b477-49cd-a0b6-cb7e2c22e035.png)
 
-1、峰值电流:启动过程中的最大电流值； 
+#### 3.5.22 BUZZER
 
-2、稳定值电流:启动后停留在开机界面时的电流值 ；
+The development board is designed with 1 x buzzer, controlled by EPWM. Users can customize its functions.
 
-3、功耗仅供参考。
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134936-182df0c0-10c4-4250-8a24-60684c6b01f3.png)
 
+#### 3.5.23 QSPI NorFlash
 
+The baseboard has an on - board QSPI\_NorFlash.
 
-# 06_最小系统原理图
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794135039-8f3e9f84-a3c1-4087-8773-d6827810ae77.png)
 
-**最小系统包括核心板，电源，调试串口，系统镜像烧写接口，boot启动项电路。** 
+#### 3.5.24 EPWM
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140568_620754af_3ed1_4bd2_b8fe_45b9d7f2de72.png)
+Five EPWM signals with a level of 3.3V are led out from the carrier board using 2\*4pin-2.54mm . Users can customize their functions.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140072_15dd9652_37fd_4015_9a0c_f9d5d1996c1f.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794135166-11dfc03e-6484-45a6-985b-204724e656b7.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140169_c21f7155_0641_4f93_9e9b_0eb81d814bbb.png)
+#### 3.5.25 GPIO
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140270_a38fc323_4441_41dd_8ee8_906f584e5b55.png)
+Some GPIO are led out with a level of 3.3V, using headers with a 2.54mm pitch. Users can customize their functions. When taking power from the headers during debugging, pay attention to the voltage level.
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140384_0a5b5f6f_e70b_4c3d_b95f_015669d1916c.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794135281-3eda4a59-a80b-4e1e-805b-f25c9e3bf8d7.png)
 
-![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140469_51340710_a9ea_41da_b68a_e0c9df73b6ca.png)
+## 4\. Hardware Design Guide
 
-上图仅为示意图，具体连接情况请见源文件原理图。为满足核心板的正常工作，除电源VDD5V外，还需要HSUSB0，方便进行系统烧写；UART0部分电路，方便确认系统是否工作正常，同时方便调试；BOOT部分电路进行系统启动。
+**1. I2C requirements  **
 
+- **Multiple slave devices can be mounted on a set of I2C buses, please ensure that there are no address conflicts;  **
+- **A pull-up resistor needs to be added to the I2C bus, but do not use multiple resistors for pull-up;  **
+- **Please pay attention to level matching between the I2C on the SoM and the I2C on the slave device.**
 
+**2. VBAT pin processing  
+When using the RTC function on the SoM, a 3.3V power supply must be provided at the VBAT pin, and this power supply can be maintained when it is powered off.**
 
+**3. Power-up sequence  
+It is strongly recommended that users use the EXTP\_EN output from the SoM as the power on enable when designing the carrier board, and strictly control the power on timing. Or it may have the following influences:   
+·Excessive current during the power on stage;  
+·The device cannot start;  
+·The worst-case scenario is irreversible damage to the processor.**
+
+**4. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins;**
+
+**5. Explanation on the Issue of pin IO Leakage**
+
+Before the SoM is powered on, if there is a high - level in - flowing current on the signal pins of the SoM, it will cause electrical leakage to the SoM. The most obvious phenomenon is that the red indicator light on the SoM can be seen slightly lit. This will lead to an incorrect power - on sequence. The most typical case is serial port leakage. Therefore, the peripheral parts directly connected to the CPU need to be designed with anti - leakage measures.
+
+**6. Requirements for the Startup - related Pins PG0 - PG7**
+
+PG0 - PG7 are startup - related pins. These pins are pulled down by default inside the CPU. Meanwhile, on the SoM, the pins PG0, PG2, PG6, and PG7 are pulled up with a 10K resistor. By default, the secureboot function is disabled, and the system can be started from the eMMC when only power is supplied. Please handle the relevant pins on the carrier board according to the flashing and startup situations. In addition, these pins are not recommended to be used as GPIO because they are related to startup. If they are used as GPIO, pay attention to the pin level and do not affect the startup item.
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794136938-fca55f55-d91e-4658-b8f9-d9105c707099.png)
+
+**7. Debug Serial Port Hardware Design Instructions**
+
+UART0 serves as the debug serial port for the A - core. To facilitate later debugging, it is recommended to lead it out and take proper anti - leakage measures. If the M - core is used, UART16\_TXD needs to be led out for debugging convenience.
+**8. SD Card Hardware Design Requirements**
+
+All signal lines of the SD card need to be pulled up to 3.3V through resistors. Otherwise, it may affect the SD card programming. For the SD0\_CLK pin, it is recommended to reserve a series resistor and a capacitor to ground, and the capacitor is left un - soldered by default.
+**9. Requirements for the HSUSB0\_VBUSVLD Pin**
+
+The D6\_PF15 pin is set to the HSUSB0\_VBUSVLD function by default. When USB0 is used as a device, this pin must be kept at a high level, such as during programming via USB0. If USB0 is used as a host, this pin can be used as a GPIO.
+**10. T13\_PJ5 Pin Requirements**
+
+The T13\_PJ5 pin needs to be pulled down with a 10K resistor. Pulling up this pin is prohibited, otherwise, it will affect the normal startup of the eMMC.
+**11. RS485 Requirements**
+
+When using RS485, it is recommended to select the RTS pin of the corresponding UART as the flow - control pin. The flow control has already been integrated at the driver layer. If a GPIO is selected, work needs to be done at the application layer.
+**12. ADC/EADC Requirements**
+
+The default input range of ADC0 - 7 and EADC0 - 7 is 0 - 3.3V. Attention should be paid to the input voltage range.
+**13. PCB Layout Requirements for Self - Made Carrier Board**
+
+To ensure the solder climbing yield of the stamp holes on the SoM, when manufacturing the stencil for the carrier below:, the opening area of the stamp holes is expanded to ensure the amount of solder paste, as shown in the gray part in the following figure. Therefore, when laying out the carrier board, it is necessary to ensure that the pads of other components are kept away from the enlarged area of the SoM stencil. Meanwhile, no holes are allowed to be drilled in the enlarged area of the SoM stencil to prevent solder leakage, which may affect the soldering quality.
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794137064-bec5363b-398b-4a4b-b1d5-698a109a1fb3.png)
+
+**14. Surface Treatment Process Requirements for Self - Made Carrier Board PCB**
+
+It is recommended to use the electroless nickel immersion gold (ENIG) process for the surface treatment of the carrier board. Since the SoM and the carrier board are connected by stamp holes + LGA, using the ENIG process can reduce the soldering difficulty after the carrier board is stored separately. It is strongly recommended to send the SoM and the SMD components on the carrier board to the pick - and - place machine for soldering simultaneously. If the carrier board has components on both sides, it is recommended that the side with the SoM pass through the reflow oven last to avoid the SoM passing through the oven twice on the baseboard.
+**15. Stencil Requirements for Self - Made Carrier Board**
+
+Inform the factory that the stencil for the SoM area does not need to be processed as the compensation has already been done, and other areas can be modified.   
+e.g.:
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794137144-b456c4c8-217d-4128-8082-89191135f91c.png)
+
+**16. SoM Vibration - Resistance Requirements**
+
+If the your product has vibration - resistance requirements, it is recommended to add a rigid connection between the area where the SoM is located and the housing to avoid deformation of the area where the SoM is located during vibration. This can prevent the solder joints from breaking due to stress fatigue, which could otherwise affect the stable operation of the product.
+
+## 5\. OK-MA35-S21 Development Board Linux System Power Consumption Table
+
+| **No.** | **Test Item**                                                | SoM Power (W) | Development Board Power (including SoM) (W) |
+| :-----: | ------------------------------------------------------------ | :-----------: | :-----------------------------------------: |
+|    1    | No-load starting peak power                                  |     2.21W     |                    3.7W                     |
+|    2    | CPU Stress + Memory + eMMC Read/Write Stress Test            |     2.06W     |                    4.55W                    |
+|    3    | On-board LVDS + 4G + video encoding                          |     2.02W     |                    5.03W                    |
+|    4    | On-board LVDS + 4G + video encoding + CPU stress + memory + eMMC read/write stress test |     2.56W     |                    5.56W                    |
+
+**Note：**
+
+- **Peak current: the maximum current value during startup;**
+- **Stable Value: Current value stays on the boot screen after booting;**
+- **Power consumption is for reference only.**
+
+## 6\. Minimum System Schematic
+
+**The minimum system includes the SoM, power supply, debugging serial port, system image flashing interface, and boot startup circuits.**
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140568-620754af-3ed1-4bd2-b8fe-45b9d7f2de72.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140072-15dd9652-37fd-4015-9a0c-f9d5d1996c1f.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140169-c21f7155-0641-4f93-9e9b-0eb81d814bbb.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140270-a38fc323-4441-41dd-8ee8-906f584e5b55.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140384-0a5b5f6f-e70b-4c3d-b95f-015669d1916c.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140469-51340710-a9ea-41da-b68a-e0c9df73b6ca.png)
+
+The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. In order to meet the normal operation of the SoM, in addition to the power supply VDD5V, HSUSB0 is also required to facilitate the system flashing; UART0 circuit is convenient to confirm whether the system works normally and to facilitate debugging; BOOT circuit is used to start the system.
