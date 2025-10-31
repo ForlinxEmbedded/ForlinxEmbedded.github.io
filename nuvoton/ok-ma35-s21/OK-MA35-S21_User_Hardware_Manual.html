@@ -1,0 +1,1119 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>00_OK-MA35-S21 硬件手册 &mdash; Forlinx Embedded MA35D1 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nuvoton/ok-ma35-s21/OK-MA35-S21_User_Hardware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK-MA35-S21 Manuals" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">00_OK-MA35-S21 硬件手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">免责声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">概 述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">更新记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ma35d1">01_新唐 MA35D1简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet-ma35-s2">02_FET-MA35-S2核心板介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id4">2.1  FET-MA35-S2核心板外观图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2.2  FET-MA35-S2核心板尺寸图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">2.3 性能参数</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">2.3.1  系统主频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2.3.2  供电参数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">2.3.3  工作环境</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">2.4  核心板接口资源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">2.5  FET-MA35-S2核心板引脚定义</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">2.5.1  FET-MA35-S2核心板引脚原理图</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">2.5.2  FET-MA35-S2核心板引脚功能说明</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">2.6  核心板硬件设计说明</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id15">03_飞凌OK-MA35-S21嵌入式开发平台介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id16">3.1  OK-MA35-S21开发板接口图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">3.2  OK-MA35-S21开发板尺寸图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">3.3  底板命名规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">3.4  底板资源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">3.5  OK-MA35-S21底板说明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">3.5.1  底板电源</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">3.5.2  复位按键</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boot">3.5.3 BOOT配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">3.5.4 调试串口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf">3.5.5  TF卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-otg"><strong>3.5.6 USB OTG接口</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lcd">3.5.7 LCD接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lvds">3.5.8 LVDS接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet">3.5.9 Ethernet 接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-host">3.5.10 USB HOST 接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-bluetooth">3.5.11 WiFi&amp;Bluetooth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g">3.5.12 4G</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">3.5.13 音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can">3.5.14 CAN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rs485">3.5.15 RS485</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">3.5.16 普通串口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#swd">3.5.17 SWD 接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc">3.5.18 RTC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spi">3.5.19  SPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adc">3.5.20  ADC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eadc">3.5.21 EADC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#buzzer">3.5.22 BUZZER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qspi-norflash">3.5.23 QSPI NorFlash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#epwm">3.5.24 EPWM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">3.5.25 GPIO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id26">04_硬件设计指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ok-ma35-s21linux">05_OK-MA35-S21开发板Linux系统整机功耗表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id27">06_最小系统原理图</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded MA35D1 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">00_OK-MA35-S21 硬件手册</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok-ma35-s21">
+<h1>00_OK-MA35-S21 硬件手册<a class="headerlink" href="#ok-ma35-s21" title="Link to this heading"></a></h1>
+<p>发布版本：V1.0<br />
+日期：2024-12-10<br />
+文件密级：□绝密 □秘密 □内部资料 ■公开</p>
+</section>
+<section id="id1">
+<h1>免责声明<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。</p>
+<p>保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。</p>
+</section>
+<section id="id2">
+<h1>概 述<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<p><font style="color:#333333;">本手册以使用户快速熟悉产品，了解接口功能和功能配置为目的，主要讲述了开发板接口功能，接口介绍，产品功耗，以及使用过程中出现的一些问题如何排查。在说明过程中，对一些命令进行了注释，方便</font>用户理解，以实用够用为主。涉及到引脚功能复用、硬件问题排查方法等请参考飞凌提供的《OK-MA35-S21引脚复用对照表》和《OK-MA35-S21设计指南》。</p>
+<ul class="simple">
+<li><p>本手册一共分为4部分：</p></li>
+<li><p>第一部分CPU整体概述，简单介绍了CPU性能和应用行业；</p></li>
+<li><p>第二部分核心板的整体介绍，包括连接器引脚的相关说明和功能介绍；</p></li>
+<li><p>第三部分开发板的整体介绍，分为多个章节介绍，包括了硬件原理和简单的设计思路两大部分；</p></li>
+<li><p>第四部分产品的功耗及其他说明，主要描述板子的功耗方面表现和其他注意事项。</p></li>
+<li><p>本手册中一些符号及格式的相关说明：</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>表现形式</strong></p></th>
+<th class="head"><p><strong>含义</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>⁉️</p></td>
+<td><p>注意或者是需要特别关注的信息，一定要仔细阅读</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>对测试章节做的相关说明</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>🛤️</p></td>
+<td><p>表示相关路径</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id3">
+<h1>更新记录<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>日期</p></th>
+<th class="head text-center"><p>手册版本</p></th>
+<th class="head text-center"><p>核心板版本</p></th>
+<th class="head text-center"><p>底板版本</p></th>
+<th class="head"><p>更新内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>20241210</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1及以上版本</p></td>
+<td><p>初版</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ma35d1">
+<h1>01_新唐 MA35D1简介<a class="headerlink" href="#ma35d1" title="Link to this heading"></a></h1>
+<p>NuMicro MA35D1系列是Nuvoton面向工业控制和边缘网关推出的一款高端异构多核微处理器。它基于双64位ARM Cortex-A35内核，主频高达1GHz，并搭载一颗180MHz的ARM Cortex-M4内核，旨在满足Tiny AI/ML 边缘计算。</p>
+<p>MA35D1 系列支持 16 位 DDR2/ DDR3 和 DDR3L SDRAM。</p>
+<p>MA35D1 系列是一个可信任的系统，可以满足物联网产品的安全需求。它包括多个进阶的安全机制，例如新唐 TSI（Trusted Secure Island）一个独立的安全硬件单元、TrustZone、安全启动 (secure boot)、篡改检测、内建 AES、SHA、ECC、RSA 和 SM2/3/4 加解密加速器、及一个真随机数产生器 (TRNG)，并包含密钥储存 (Key Store) 和一次编程内存 (OTP memory)。所有安全相关的操作都在 TSI 中执行，保护具有敏感性和高价值的数据。这些安全特性也可以满足用户在 IEC 62443 认证方面的要求。</p>
+<p>为满足高端 Edge IIoT Gateway 需求，MA35D1 系列集成 PDMA，其能够直接存取系统内存，无需 CPU 介入提升系统性能。同时，MA35D1 系列提供多组进阶和高速的通讯接口，如千兆以太网、SDIO3.0、高速 USB 2.0、CAN FD 等，可以应用于高端 Edge Gateway及新能源等应用需求。</p>
+<p>对于人机接口应用，MA35D1 系列提供 LCD 显示控制器，分辨率可达 1920 x 1080 每秒 60 帧，及一个 2D 图形加速器、JPEG 和 H.264 译码器等，带来更好的图形人机接口效果和视频播放。</p>
+<p><strong>MA35D1处理器框图</strong></p>
+<p><img alt="Image" src="_images/1733794127829_e6fe8cb6_0ab1_4f24_a28e_60b362c726da.jpg" /></p>
+</section>
+<hr class="docutils" />
+<section id="fet-ma35-s2">
+<h1>02_FET-MA35-S2核心板介绍<a class="headerlink" href="#fet-ma35-s2" title="Link to this heading"></a></h1>
+<section id="id4">
+<h2>2.1  FET-MA35-S2核心板外观图<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1733794129356_c5b027f9_06d6_4e7f_a3b5_d81e4aa82722.gif" /></p>
+<p>核心板正面图</p>
+<p><img alt="Image" src="_images/1733794129432_b3176672_b078_4574_ab99_3393d228c632.gif" /></p>
+<p>核心板背面图</p>
+</section>
+<section id="id5">
+<h2>2.2  FET-MA35-S2核心板尺寸图<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1733794129512_2ec7e08f_d9a6_4af9_87a0_663658dee809.jpg" /></p>
+<p><img alt="Image" src="_images/1733794129629_a8ec0585_61ed_4bba_830d_b69c540e5751.jpg" /></p>
+<p>结构尺寸：48mm×40mm，尺寸公差±0.13mm，更多尺寸信息参见DXF文件。</p>
+<p>制版工艺：厚度1.2mm，12层沉金PCB。</p>
+<p>核心板采用邮票孔+LGA封装形式，共引出260个引脚；邮票孔的引脚中心间距为1mm，单个引脚尺寸：1.4*0.6mm，LGA的球间距为1.5 mm，单个球直径为1mm。</p>
+<p>核心板封装尺寸图见附录。</p>
+</section>
+<section id="id6">
+<h2>2.3 性能参数<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id7">
+<h3>2.3.1  系统主频<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>名称</strong></p></th>
+<th class="head text-center"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>系统主频</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>800</p></td>
+<td><p>800</p></td>
+<td><p>MHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>系统RTC时钟</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id8">
+<h3>2.3.2  供电参数<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>参数</strong><br/></p></th>
+<th class="head text-center"><p><strong>引脚标号</strong><br/></p></th>
+<th class="head text-center"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>说明</strong><br/></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>主电源电压</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>4.5</p></td>
+<td><p>5</p></td>
+<td><p>5.5</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>空载电流</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p>442</p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>请见附录功耗表</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>重载电流</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p>512</p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>请见附录功耗表</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id9">
+<h3>2.3.3  工作环境<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>参数描述</strong><br/></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>说明</strong><br/></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><br/>工作温度<br/></p></td>
+<td><p>存储环境</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>工作环境</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+85</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>工业级</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td><p>存储环境</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>湿度<br/></p></td>
+<td><p>工作环境</p></td>
+<td class="text-center"><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p>无凝露</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td><p>存储环境</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id10">
+<h2>2.4  核心板接口资源<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>功能</strong></p></th>
+<th class="head"><p><strong>数量</strong></p></th>
+<th class="head"><p><strong>参数</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>USB 2.0</p></td>
+<td><p>2</p></td>
+<td><p>1路USB2.0 Host  1路USB 2.0 OTG</p></td>
+</tr>
+<tr class="row-odd"><td><p>RGB</p></td>
+<td><p>≤1</p></td>
+<td><p>支持RGB888，最大分辨率1920*1080</p></td>
+</tr>
+<tr class="row-even"><td><p>CSI</p></td>
+<td><p>≤2</p></td>
+<td><p>最大支持3M像素</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ethernet</p></td>
+<td><p>≤2</p></td>
+<td><p>10/100/1000 Mbit/s 以太网支持 RGMII 和 RMII 接口</p></td>
+</tr>
+<tr class="row-even"><td><p>UART</p></td>
+<td><p>≤17</p></td>
+<td><p>支持的最大波特率为9.5Mbps</p></td>
+</tr>
+<tr class="row-odd"><td><p>ISO7816</p></td>
+<td><p>≤2</p></td>
+<td><p>支持ISO-7816-3</p></td>
+</tr>
+<tr class="row-even"><td><p>QSPI</p></td>
+<td><p>≤2</p></td>
+<td><p>可配置主从模式，支持最大时钟频率100MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI</p></td>
+<td><p>≤4</p></td>
+<td><p>可配置主从模式，支持最大时钟频率100MHz</p></td>
+</tr>
+<tr class="row-even"><td><p>I2S</p></td>
+<td><p>≤2</p></td>
+<td><p>可配置主从模式</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C</p></td>
+<td><p>≤5</p></td>
+<td><p>支持7bits和10bits地址模式，最高速率可达1 Mbit/s</p></td>
+</tr>
+<tr class="row-even"><td><p>CANFD</p></td>
+<td><p>≤4</p></td>
+<td><p>支持CAN-FD V1.0和CAN2.0 A/B；</p></td>
+</tr>
+<tr class="row-odd"><td><p>EPWM</p></td>
+<td><p>≤18</p></td>
+<td><p>最多支持18通道EPWM</p></td>
+</tr>
+<tr class="row-even"><td><p>SDIO</p></td>
+<td><p>≤1</p></td>
+<td><p>SD0，4-bit，仅支持3.3V接口</p></td>
+</tr>
+<tr class="row-odd"><td><p>ADC</p></td>
+<td><p>≤8</p></td>
+<td><p>8路单端输入，12bit，500K SPS，支持4线或5线触摸</p></td>
+</tr>
+<tr class="row-even"><td><p>EADC</p></td>
+<td><p>≤8</p></td>
+<td><p>8路单端或4路差分输入，12bit，4.7M SPS</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>注：</strong></p></li>
+<li><p><strong>表中参数为硬件设计或CPU理论值；</strong></p></li>
+<li><p><strong>数量标注为最大。</strong></p></li>
+</ul>
+</section>
+<section id="id11">
+<h2>2.5  FET-MA35-S2核心板引脚定义<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<section id="id12">
+<h3>2.5.1  FET-MA35-S2核心板引脚原理图<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p><font style="color:#ff0000;">（核心板引脚原理图）</font></p>
+<p><img alt="Image" src="_images/1733794129715_3754c393_a715_43a7_954c_f6eb5f624b74.png" /></p>
+<p><img alt="Image" src="_images/1733794129799_ecc52539_ef75_4854_985c_6ae21f2d6278.png" /></p>
+</section>
+<section id="id13">
+<h3>2.5.2  FET-MA35-S2核心板引脚功能说明<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>用户在有多种功能扩展需求时可参阅用户资料《FET-MA35-S2引脚复用表格》,但若需了解更详细的信息，建议用户查阅相关资料文档及芯片数据手册及参考手册。</p>
+</section>
+</section>
+<section id="id14">
+<h2>2.6  核心板硬件设计说明<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<p><strong>电源引脚</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>信号名称</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>默认功能</strong></p></th>
+<th class="head text-center"><p><strong>引脚号</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>电源</p></td>
+<td class="text-center"><p>VDD5V</p></td>
+<td class="text-center"><p>电源输入</p></td>
+<td><p>核心板电源供电引脚5V，底板提供电流不少于2.5A</p></td>
+<td class="text-center"><p>1,2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p>VBAT</p></td>
+<td class="text-center"><p>电源输入</p></td>
+<td><p>核心板RTC供电3V</p></td>
+<td class="text-center"><p>166</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>地</p></td>
+<td><p>核心板电源地和信号地，所有GND引脚都需要连接</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>功能控制引脚</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>信号名称</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>默认功能</strong></p></th>
+<th class="head text-center"><p><strong>引脚号</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>CPU复位</p></td>
+<td class="text-center"><p>nRESET</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>核心板电源复位，低电平有效，用户不要在该引脚添加额外的容性负载，以免影响核心板正常启动</p></td>
+<td class="text-center"><p>5</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>电源使能</p></td>
+<td class="text-center"><p>EXTP_EN</p></td>
+<td class="text-center"><p>O</p></td>
+<td><p>控制底板外部电源的使能信号，由核心板输出，3.3V电平</p></td>
+<td class="text-center"><p>46</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>BOOT选择</p></td>
+<td class="text-center"><p>K1_PG0/L1_PG1/L4_PG2/M1_PG3   L3_PG4/N1_PG5/M4_PG6/M2_PG7</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>核心板boot启动选项，底板不做处理时，核心板默认从emmc启动</p></td>
+<td class="text-center"><p>6,7,8,9   10,11,12,13</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>调试串口</p></td>
+<td class="text-center"><p>W1_UART0_TXD/U6_UART0_RXD   G5_UART16_TXD/G3_UART16_RXD</p></td>
+<td class="text-center"><p>I/O</p></td>
+<td><p>A35调试串口   M4调试串口   建议用户保留对应端口功能</p></td>
+<td class="text-center"><p>148,149   136,137</p></td>
+</tr>
+</tbody>
+</table>
+<p><font style="color:#ff0000;">（包含最小系统框图）</font></p>
+<p>FET-MA35-S2核心板已经将电源、复位监控电路、存储电路集成于一个小巧的模块上，所需的外部电路非常简洁,构成一个最小系统只需要 5V 电源即可运行,如下图所示:</p>
+<p><img alt="Image" src="_images/1733794129884_a42777f2_6019_4c88_95c5_30f27e1f2d3d.gif" /></p>
+<p>最小系统原理图可以参见附录四。不过一般情况下，除最小系统外建议连接上一些外部设备，例如调试串口，镜像烧写端口，否则用户无法判断系统是否启动。做好这些后，再在此基础上根据飞凌提供的核心板默认接口定义来添加用户需要的功能。</p>
+<p>核心板外围电路的设计可参见第三章的3.5节“OK-MA35-S2底板说明”。</p>
+</section>
+</section>
+<section id="id15">
+<h1>03_飞凌OK-MA35-S21嵌入式开发平台介绍<a class="headerlink" href="#id15" title="Link to this heading"></a></h1>
+<section id="id16">
+<h2>3.1  OK-MA35-S21开发板接口图<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<p>飞凌OK-MA35-S21开发平台核心板和底板采用邮票孔+LGA的连接方式，主要接口如下图所示：</p>
+<p><img alt="Image" src="_images/1733794131533_d8f7a569_79ff_4590_83d0_306f5f209e4d.jpg" /></p>
+<p><img alt="Image" src="_images/1733794131639_4399171b_050e_42f6_ab2d_b8fce99fc265.jpg" /></p>
+</section>
+<section id="id17">
+<h2>3.2  OK-MA35-S21开发板尺寸图<a class="headerlink" href="#id17" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1733794131771_01dde045_a64a_4bc1_b422_c7f9f911e33a.jpg" /></p>
+<p>PCB尺寸：130mm×190mm。</p>
+<p>固定孔尺寸：间距：120mm×180mm，孔径：3.2mm。</p>
+<p>制版工艺：厚度1.6mm，4层PCB。</p>
+<p>电源电压：直流12V。</p>
+<p>OK-MA35-S21底板预留了2个直径3.2mm散热片的安装孔，用户可以根据现场环境选配安装散热片，散热片和核心板接触面请加一层绝缘的导热硅胶垫。飞凌自选的核心板散热片尺寸为：38mm×38mm×10mm，更多详细尺寸参见下图：</p>
+<p><img alt="Image" src="_images/1759202030508_6466ec90_e963_4931_a863_6a8311f36399.png" /></p>
+</section>
+<section id="id18">
+<h2>3.3  底板命名规范<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<p>ABC-D+IK:M</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>字段</p></th>
+<th class="head"><p>字段描述</p></th>
+<th class="head"><p>值</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>合格等级</p></td>
+<td><p>PC</p></td>
+<td><p>原型样品</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>空白</p></td>
+<td><p>大规模生产</p></td>
+</tr>
+<tr class="row-even"><td><p>B</p></td>
+<td><p>产品线标识</p></td>
+<td><p>OK</p></td>
+<td><p>飞凌嵌入式开发板</p></td>
+</tr>
+<tr class="row-odd"><td><p>C</p></td>
+<td><p>CPU名称</p></td>
+<td><p>MA35</p></td>
+<td><p>MA35</p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>分段标识</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>连接方式</p></td>
+<td><p>Sx</p></td>
+<td><p>邮票孔</p></td>
+</tr>
+<tr class="row-even"><td><p>+</p></td>
+<td><p>分段标识</p></td>
+<td><p>+</p></td>
+<td><p>此标识之后为配置参数部分</p></td>
+</tr>
+<tr class="row-odd"><td><p>I</p></td>
+<td><p>运行温度</p></td>
+<td><p>I</p></td>
+<td><p>-40 to 85℃     工业级</p></td>
+</tr>
+<tr class="row-even"><td><p>K</p></td>
+<td><p>PCB版本号</p></td>
+<td><p>11</p></td>
+<td><p>V1.1</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx</p></td>
+<td><p>Vx.x</p></td>
+</tr>
+<tr class="row-even"><td><p>:M</p></td>
+<td><p>厂家内部标识</p></td>
+<td><p>:X</p></td>
+<td><p>此内容为厂家内部标识，对客户使用无影响</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id19">
+<h2>3.4  底板资源<a class="headerlink" href="#id19" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>功能</strong></p></th>
+<th class="head"><p><strong>数量</strong></p></th>
+<th class="head"><p><strong>参数</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>USB 2.0</p></td>
+<td><p>2</p></td>
+<td><p>1个USB HOST，USB Type A座子引出  1个USB OTG，USB Type-C座子引出，仅用作Device</p></td>
+</tr>
+<tr class="row-odd"><td><p>LCD</p></td>
+<td><p>1</p></td>
+<td><p>支持RGB888，最大分辨率1920*1080&#64;60fps</p></td>
+</tr>
+<tr class="row-even"><td><p>LVDS</p></td>
+<td><p>1</p></td>
+<td><p>通过LCD转换而来，通过DVI-I座子引出</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ethernet</p></td>
+<td><p>2</p></td>
+<td><p>1千兆，1百兆，可向下自适应速率，双网口可以同时使用</p></td>
+</tr>
+<tr class="row-even"><td><p>TF Card</p></td>
+<td><p>1</p></td>
+<td><p>开发板支持1路TF Card，兼容SD3.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>4G</p></td>
+<td><p>1</p></td>
+<td><p>可外接mini  PCIE接口的4G模块。</p></td>
+</tr>
+<tr class="row-even"><td><p>WiFi</p></td>
+<td><p>1</p></td>
+<td><p>RL-UM02WBS-8723DU-V1.2  标准:IEEE 802.11b/g/n,  BT V2.1/BT V3.0/BT V4.0。</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bluetooth</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Audio</p></td>
+<td><p>1</p></td>
+<td><p>默认板载NAU88C22YG芯片；  支持耳机输出和MIC输入，分别在2个3.5mm 三段式耳机接口上引出；  支持2路1W8Ω喇叭输出，通过XH2.54白色端子引出</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C</p></td>
+<td><p>4</p></td>
+<td><p>2个用于挂载底板LCD触摸、音频  2个通过2 x 4 Pin 2.54mm间距插装插针引出，供用户外挂设备</p></td>
+</tr>
+<tr class="row-even"><td><p>PWM</p></td>
+<td><p>7</p></td>
+<td><p>2个分别用于LCD调节背光亮度和BUZZER  5个通过2 x 4 Pin 2.54mm间距插装插针引出，供用户外挂设备</p></td>
+</tr>
+<tr class="row-odd"><td><p>RTC</p></td>
+<td><p>1</p></td>
+<td><p>板载独立RTC芯片，底板断电后可通过纽扣电池记录时间。</p></td>
+</tr>
+<tr class="row-even"><td><p>UART</p></td>
+<td><p>3</p></td>
+<td><p>通过2 x 6Pin 2.54mm间距插装插针引出，供用户外挂设备</p></td>
+</tr>
+<tr class="row-odd"><td><p>RS485</p></td>
+<td><p>6</p></td>
+<td><p>电气隔离，通过GPIO控制收发方向</p></td>
+</tr>
+<tr class="row-even"><td><p>CAN</p></td>
+<td><p>4</p></td>
+<td><p>电气隔离，支持  CAN-FD，速率最高支持5Mbps</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI</p></td>
+<td><p>2</p></td>
+<td><p>开发板通过2 x 6Pin  2.54mm间距插装插针引出，供用户外挂设备</p></td>
+</tr>
+<tr class="row-even"><td><p>QSPI</p></td>
+<td><p>1</p></td>
+<td><p>板载 16MB QSPI NOR  FLASH</p></td>
+</tr>
+<tr class="row-odd"><td><p>DEBUG UART</p></td>
+<td><p>2</p></td>
+<td><p>A核UART0和M核UART16转成USB信号，通过Type-C接口引出，默认波特率115200</p></td>
+</tr>
+<tr class="row-even"><td><p>ADC</p></td>
+<td><p>8</p></td>
+<td><p>8路单端输入，12bit，500K SPS，支持4线或5线触摸</p></td>
+</tr>
+<tr class="row-odd"><td><p>EADC</p></td>
+<td><p>8</p></td>
+<td><p>8路单端或4路差分输入，12bit，4.7M SPS</p></td>
+</tr>
+<tr class="row-even"><td><p>KEY</p></td>
+<td><p>1</p></td>
+<td><p>复位按键</p></td>
+</tr>
+<tr class="row-odd"><td><p>SWD</p></td>
+<td><p>1</p></td>
+<td><p>通过1 x 5Pin单排2.54mm间距插装插针引出</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>注：表中参数为硬件设计或CPU理论值；</p></li>
+</ul>
+</section>
+<section id="id20">
+<h2>3.5  OK-MA35-S21底板说明<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
+<p><strong>注：下图中元件位号有“_DNP”标识的，代表此元器件默认不焊接。</strong></p>
+<p><strong>注：本手册中原理图仅做接口说明，用户做硬件设计请参考源文件资料。</strong></p>
+<section id="id21">
+<h3>3.5.1  底板电源<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p>开发板使用12V电源适配器供电，电源接口为DC005的插座。拨动开关S1为开发板的电源开关，按照底板丝印指示进行拨动。S1后级有TVS管进行静电防护，F1进行过流保护，D1与F1配合进行防反接保护。</p>
+<p><img alt="Image" src="_images/1733794131888_ec74bbcb_bf0d_4a2f_9355_8b10ee93bda7.png" /></p>
+<p>VCC_12V通过U1降压至DCIN（5V）。DCIN直接给核心板供电，确保核心板能够先上电。</p>
+<p><img alt="Image" src="_images/1733794131960_8176532c_7d48_4a3a_be43_dc3ca8f308a7.png" /></p>
+<p>DCIN（5V）通过U2受控输出VCC_5V。U2受控于EXTP_EN，在核心板完成上电后，U2导通。VCC_5V为底板的部分5V供电设备供电。</p>
+<p><img alt="Image" src="_images/1733794132029_dcc186be_4834_4397_8d5e_cf08597886b7.png" /></p>
+<p>VCC_5V通过U6降压至VCC_3V3，给底板所有的3.3V供电设备供电。</p>
+<p><img alt="Image" src="_images/1733794132111_01a476eb_8f22_4fb4_b297_a51f58aefd7a.png" /></p>
+<p><strong>注意：</strong></p>
+<p><strong>1.用户自行设计时，务必保证电源的上电时序即核心板输出的EXTP_EN作为底板DCDC电源的使能，从而保证核心板先上电，底板后上电。</strong></p>
+<p><strong>2.升降压芯片的器件选型及外部布局需要参考对应的芯片手册，确保良好的电源回路。</strong></p>
+</section>
+<section id="id22">
+<h3>3.5.2  复位按键<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<p>底板的K1为开发板的复位键，按下后可复位核心板上电源，实现给整板断电复位的功能。</p>
+<p><img alt="Image" src="_images/1733794132196_ffd9f850_368c_4f66_b3e6_51bfb4e5aa82.png" /></p>
+<p><strong>注：nRESET引脚不用时，请悬空，不要做上下拉处理。</strong></p>
+</section>
+<section id="boot">
+<h3>3.5.3 BOOT配置<a class="headerlink" href="#boot" title="Link to this heading"></a></h3>
+<p>底板使用8位拨码开关S2来选择系统启动方式。请调整好选项之后再给开发板上电。</p>
+<p><img alt="Image" src="_images/1733794132394_da8a9b1c_caff_4f29_a454_2fce8327e41d.png" /></p>
+<p>启动方式：</p>
+<p>eMMC，开发板程序从核心板板载EMMC启动；</p>
+<p>TF，开发板使用TF卡引导系统，可以利用此种方式实现TF卡烧写镜像；</p>
+<p>USB，一般是用来OTG下载镜像，开发板使用P11接口USB Type-C转接线连接电脑USB口，使用电脑上的程序给开发板刷写镜像；</p>
+<p>Secure是安全启动，确保系统映像的真实性和完整性，避免执行植入系统的恶意软件或未经授权的软件。目前默认禁用此功能。</p>
+<p><strong>注：</strong></p>
+<p><strong>1. PG0-PG7为启动相关引脚，这些引脚在CPU内部为默认下拉，与此同时，核心板上的PG0,PG2,PG6,PG7引脚添加10K进行上拉</strong></p>
+<p><strong>2. 目前默认禁用secure boot 功能，且在只供电的情况下可从eMMC启动。用户需要根据自己的烧写、启动情况对底板的相关引脚进行处理。</strong></p>
+<p><strong>3. 因这些引脚与启动相关，不建议用作GPIO，若需用作GPIO，注意引脚电平，不能影响启动项。</strong></p>
+</section>
+<section id="id23">
+<h3>3.5.4 调试串口<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+<p>核心板有2个调试串口，UART0用于A35调试，UART16用于M4调试。<br />
+为方便用户使用，使用USB转串口芯片CH342F将2个调试串口集成在1个USB接口上。</p>
+<p><img alt="Image" src="_images/1733794132475_74e8db05_515a_4360_92ce_2d840fe536d2.png" /></p>
+<p>要使用调试串口，请首先在电脑上安装CH342F驱动，驱动下载链接：<a class="reference external" href="http://www.wch.cn/products/CH342.html%E3%80%82%E7%84%B6%E5%90%8E%E4%BD%BF%E7%94%A8USB%E8%BD%ACType-C%E7%BA%BF%E5%B0%86%E5%BC%80%E5%8F%91%E6%9D%BFP6%E5%92%8C%E7%94%B5%E8%84%91USB%E5%8F%A3%E8%BF%9E%E6%8E%A5%EF%BC%8C%E5%9C%A8%E7%94%B5%E8%84%91%E7%9A%84%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8%E4%B8%AD%EF%BC%8C%E4%BC%9A%E7%94%9F%E6%88%902%E4%B8%AACOM%E5%8F%A3%EF%BC%8C%E5%85%B6%E4%B8%ADA%E7%AB%AF%E5%8F%A3%E6%98%AFA35%E8%B0%83%E8%AF%95%E4%B8%B2%E5%8F%A3%EF%BC%8CB%E7%AB%AF%E5%8F%A3%E6%98%AFM4%E8%B0%83%E8%AF%95%E4%B8%B2%E5%8F%A3%E3%80%82">http://www.wch.cn/products/CH342.html</a></p>
+<p>然后使用USB转Type-C线将开发板P6和电脑USB口连接，在电脑的设备管理器中，会生成2个COM口，其中A端口是A35调试串口，B端口是M4调试串口。</p>
+<p><img alt="Image" src="_images/1733794132566_d687cff5_0fab_4356_a0ba_d722cfba8859.jpg" /></p>
+<p>在电脑上打开调试终端工具，例如Putty，设置波特率115200，数据位8，无校验位，停止位1，选择正确的COM口，给开发板上电启动，就可以看到调试串口信息。<br />
+<strong>注：</strong></p>
+<ol class="arabic simple">
+<li><p><strong>为方便后期调试，请用户在自行设计底板时将此调试串口引出；</strong></p></li>
+<li><p><strong>底板调试串口做了防漏电设计，建议用户参考此设计。</strong></p></li>
+</ol>
+</section>
+<section id="tf">
+<h3>3.5.5  TF卡<a class="headerlink" href="#tf" title="Link to this heading"></a></h3>
+<p>开发板 TF Card 为 CPU 的 SD0 通道。</p>
+<p><img alt="Image" src="_images/1733794132679_b3b36aae_b1ed_4145_af69_146e7e5bac1e.png" /></p>
+<p><strong>注：</strong></p>
+<ol class="arabic simple">
+<li><p><strong>强烈建议总线预留上拉电阻，否则可能影响TF卡烧写；</strong></p></li>
+<li><p><strong>SD0_CLK引脚建议预留串阻及对地电容，电容默认空焊；</strong></p></li>
+<li><p><strong>TF属于可热插拔设备，请做ESD防护；</strong></p></li>
+<li><p><strong>SD信号需要做等长。</strong></p></li>
+</ol>
+</section>
+<section id="usb-otg">
+<h3><strong>3.5.6 USB OTG接口</strong><a class="headerlink" href="#usb-otg" title="Link to this heading"></a></h3>
+<p>底板支持USB烧写，目前开发板电路只支持device模式，使用USB0时，注意HSUSB0_VBUSVLD参考开发板设计，OTG_ID为高时，USB0做device。<br />
+如用户只需要USB0做HOST，将OTG_ID拉到GND上，USB座子电源VBUS引脚需要供电5V，另外HSUSB0_VBUSVLD可以做普通IO使用。</p>
+<p><img alt="Image" src="_images/1733794132759_8b193b8b_d533_4638_b72d_a89e5396c1d6.png" /></p>
+<p><strong>注：</strong><br />
+<strong>1.仅核心板原生的USB0支持USB烧写系统；</strong><br />
+<strong>2.USB数据线都需要做90Ω差分阻抗；</strong><br />
+<strong>3.请选择合适的ESD器件；</strong></p>
+<p><strong>4.HSUSB0_VBUSVLD需要检测到电压才能正常启用USB功能。</strong></p>
+</section>
+<section id="lcd">
+<h3>3.5.7 LCD接口<a class="headerlink" href="#lcd" title="Link to this heading"></a></h3>
+<p>开发板将RGB888通过54pin 0.5mm间距的FPC座引出（P23），最高分辨率可达1920*1080&#64;60fps，默认适配飞凌7寸LCD屏。</p>
+<p><img alt="Image" src="_images/1733794132828_3914eafa_311f_4bc8_bd2b_ed3ca4a0da03.png" /></p>
+</section>
+<section id="lvds">
+<h3>3.5.8 LVDS接口<a class="headerlink" href="#lvds" title="Link to this heading"></a></h3>
+<p>LVDS是由RGB888转换而来，只能二选一使用。<br />
+开发板将LVDS的信号用DVI-I（24+5引脚）座子引出，支持USB触摸。</p>
+<p><img alt="Image" src="_images/1733794132922_56d6b1a0_23dd_447e_bf2e_c6fd8ae032cc.png" /></p>
+<p><img alt="Image" src="_images/1733794133010_0acae7ad_632c_43da_ab2d_bdbdee30f22b.png" /></p>
+<p><strong>注：</strong></p>
+<ol class="arabic simple">
+<li><p><strong>LVDS需要数据与时钟做等长.</strong></p></li>
+<li><p><strong>阻抗要求：单端50Ω，差分100Ω.</strong></p></li>
+</ol>
+</section>
+<section id="ethernet">
+<h3>3.5.9 Ethernet 接口<a class="headerlink" href="#ethernet" title="Link to this heading"></a></h3>
+<p>底板提供2路以太网接口，P46是千兆，P1是百兆。<br />
+千兆网口以RGMII与PHY芯片YT8521SH-CA（位号U31）相连，由RJ45插座引出（位号P46），插座型号为 FC-H021LNL，内置隔离变压器。</p>
+<p><strong>注：</strong><br />
+<strong>1.RGMII信号的TX组和RX组需要在组内做等长；</strong><br />
+<strong>2.RGMII和MDIO/MDC电平一致，可由CFG_LDO[1:0]配置；</strong><br />
+<strong>3.需额外注意YT8521SH-CA的几路电源，电压不稳定会导致芯片不工作；</strong><br />
+<strong>4.网络的模拟差分线需要做100Ω差分阻抗，组间等长要求≤1000mil；</strong><br />
+<strong>5.建议至少使用4层板设计，保证走线有完整的参考层，否则会导致网络通讯失败；</strong><br />
+<strong>6.建议该部分原理图和PCB直接复制开发板设计。</strong></p>
+<p><img alt="Image" src="_images/1733794133084_a2101fb2_c6ab_40b3_b862_ca79f3158a37.png" /></p>
+<p><img alt="Image" src="_images/1733794133178_c8093cca_3b1a_415e_a413_808cac60e95d.png" /></p>
+<p>百兆网口以RMII与PHY芯片IP101GRI（位号U32）相连，由RJ45插座引出（位号P1），插座型号为FC-SH105GYNL，内置隔离变压器。</p>
+<p><img alt="Image" src="_images/1733794133250_6ce5eba0_49bd_4691_9b1e_2dcd4ab54101.png" /></p>
+<p><img alt="Image" src="_images/1733794133470_c6ef9745_22e6_448d_905e_29c1b12635cb.png" /></p>
+</section>
+<section id="usb-host">
+<h3>3.5.10 USB HOST 接口<a class="headerlink" href="#usb-host" title="Link to this heading"></a></h3>
+<p>开发板使用USB2.0HUB（FE1.1s-BQFN24BT）将CPU原生的一路USB2.0扩展为4路USB2.0，并将其中的1路以USB2.0Type-A座子引出（P16），另外3路分别接到了WiFi&amp;蓝牙、miniPCIE和LVDS上。</p>
+<p><img alt="Image" src="_images/1733794133534_6214ac63_a94b_425c_a720_6418e0ae6a73.png" /></p>
+<p><strong>注：</strong><br />
+<strong>1.USB数据线都需要做90Ω差分阻抗;</strong><br />
+<strong>2.请选择合适的ESD器件。</strong></p>
+</section>
+<section id="wifi-bluetooth">
+<h3>3.5.11 WiFi&amp;Bluetooth<a class="headerlink" href="#wifi-bluetooth" title="Link to this heading"></a></h3>
+<p>WiFi蓝牙二合一模块的型号是：BL-M8723DU1，标准:IEEE802.11b/g/n，蓝牙标准：TV2.1/BTV3.0/BTV4.0。</p>
+<p><img alt="Image" src="_images/1733794133614_1640395a_a85d_404d_bf6f_62706f19d14d.png" /></p>
+<p>原理图中，WIFI_EN引脚是模块的电源开关引脚，输出低电平时，给模块供电。<br />
+天线接口在PCB正面右下角，P22是WIFI的天线，天线可发送和接收数据。</p>
+</section>
+<section id="g">
+<h3>3.5.12 4G<a class="headerlink" href="#g" title="Link to this heading"></a></h3>
+<p>开发板支持使用miniPCIE插座的4G模组，默认使用移远EC20。</p>
+<p>使用MicroSIM卡，请注意插卡方向。</p>
+<p><img alt="Image" src="_images/1733794133691_56e636fe_ea68_4d3d_aef6_919078844208.png" /></p>
+<p><img alt="Image" src="_images/1733794133758_fc362c67_dc18_4213_88be_2a0cdd180ed1.png" /></p>
+</section>
+<section id="id24">
+<h3>3.5.13 音频<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p>开发板通过I2S0挂载NAU88C22YG芯片，提供一个标准3.5mm音频插座（P43，绿色），一个标准3.5mm麦克风插座（P42，粉色），NAU88C22YG内部自带的D类功放，输出端由两个XH2.54-2P白色插座P38、P40引出,可驱动两只8Ω喇叭，最高输出功率为1W，如果需要外接更大的功放，只能从耳机插座获取信号，不能从喇叭接口获取信号，片上耳机驱动器的输出功率为40mW（16Ω）。音频芯片电源受CODEC_PWREN控制，高电平有效。</p>
+<p><img alt="Image" src="_images/1733794133839_cb80d3c6_e280_4f94_b57e_a97b29c0ad87.png" /></p>
+<p><img alt="Image" src="_images/1733794133914_f874db1a_7ef6_4f04_962e_5a9452ec778e.png" /></p>
+<p><strong>注：</strong><br />
+<strong>1.喇叭的功率来自D类功放，不是传统的模拟功放。</strong><br />
+<strong>2.NAU88C22YG芯片分为数字区和模拟区，用户自行设计底板时请注意器件布局；</strong><br />
+<strong>3.请将芯片的供电电源处理干净，对降低音频底噪有帮助</strong></p>
+</section>
+<section id="can">
+<h3>3.5.14 CAN<a class="headerlink" href="#can" title="Link to this heading"></a></h3>
+<p>开发板提供4路CAN，支持CAN-FD。2pin-2.54mm间距的插针是接短路跳线帽，用于CAN总线上的120Ω端接电阻，与插针并联0R空焊的电阻为预留设计，有稳定性要求的用户可以焊接此电阻代替跳线帽。<br />
+P44接线端子引出，使用CAN通讯时建议将设备共地。</p>
+<p><img alt="Image" src="_images/1733794134004_4e21b581_5f00_4749_9f6f_18a6463093c3.png" /></p>
+<p><img alt="Image" src="_images/1733794134084_35ff1fda_6b21_4426_bf51_4b3f5685ed83.png" /></p>
+</section>
+<section id="rs485">
+<h3>3.5.15 RS485<a class="headerlink" href="#rs485" title="Link to this heading"></a></h3>
+<p>开发板提供6路RS485。2pin-2.54mm间距的插针是接短路跳线帽，用于RS485总线上的120Ω端接电阻，与插针并联0R空焊的电阻为预留设计，有稳定性要求的用户可以焊接此电阻代替跳线帽。<br />
+P29接线端子引出，使用RS485通讯时建议将设备共地。</p>
+<p><img alt="Image" src="_images/1733794134178_d2b500ee_0311_4a52_89c6_b14601d70e7f.png" /></p>
+<p><img alt="Image" src="_images/1733794134250_591b3560_c8a6_4268_ba5c_aee805ae65cb.png" /></p>
+<p><strong>注：</strong><br />
+<strong>1．MAX3485AEASA+需要手动控制收发方向，流控引脚最好选用对应UART的RTS引脚，流控在驱动层就已经集成好了，如果选择GPIO，需要在应用层做工作。</strong><br />
+<strong>2．开发板UART2和UART11流控引脚使用串口对应的RTS，串口UART1、UART10、UART14、UART15的流控引脚使用的GPIO。</strong></p>
+</section>
+<section id="id25">
+<h3>3.5.16 普通串口<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p>底板引出3个普通串口，电平为3.3V，使用2*6pin-2.54mm间距的插装插针引出，供用户外挂设备。</p>
+<p><img alt="Image" src="_images/1733794134335_5fa0dd9f_b19d_47f3_a536_a30bbc70c2f9.png" /></p>
+</section>
+<section id="swd">
+<h3>3.5.17 SWD 接口<a class="headerlink" href="#swd" title="Link to this heading"></a></h3>
+<p>底板通过P13将SWD接口引出，引脚间距2.54mm，如果不使用此功能，将该部分引脚悬空处理即可。</p>
+<p><img alt="Image" src="_images/1733794134416_f5ceb038_ddeb_4b0f_ab30_7c29e49d640d.png" /></p>
+</section>
+<section id="rtc">
+<h3>3.5.18 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h3>
+<p>底板通过I2C2外挂RTC设备，并通过D4实现VCC_3V3和纽扣电池兼容供电，即在底板断电后，纽扣电池可以为RTC芯片保持供电。硬件做了RX8010SJ和PCF8563T/5兼容设计。</p>
+<p><img alt="Image" src="_images/1733794134490_d2691e54_cec3_48eb_b2fb_26e34e7a5d89.png" /></p>
+<p><strong>注：</strong><br />
+<strong>当使用核心板板载RTC功能时，需在VBAT（166）引脚提供3.3V电源，且此电源断电可保持。</strong></p>
+</section>
+<section id="spi">
+<h3>3.5.19  SPI<a class="headerlink" href="#spi" title="Link to this heading"></a></h3>
+<p>开发板提供2路SPI，通过P9使用2*6pin-2.54mm间距的插装插针引出，供用户外挂设备。</p>
+<p><img alt="Image" src="_images/1733794134577_93c4f767_9e3f_4465_9eea_fbc4c539fd71.png" /></p>
+</section>
+<section id="adc">
+<h3>3.5.20  ADC<a class="headerlink" href="#adc" title="Link to this heading"></a></h3>
+<p>开发板提供8路ADC，使用可调电阻来演示。ADC电压采样范围0~3.3V，支持12bit，500K SPS。</p>
+<p><img alt="Image" src="_images/1733794134671_a75c4b12_8d8b_4e72_988a_95b611934b56.png" /></p>
+</section>
+<section id="eadc">
+<h3>3.5.21 EADC<a class="headerlink" href="#eadc" title="Link to this heading"></a></h3>
+<p>开发板提供8路EADC，使用可调电阻来演示。ADC电压采样范围0~3.3V，支持12bit，4.7M SPS。</p>
+<p><img alt="Image" src="_images/1733794134807_7daf4e89_b477_49cd_a0b6_cb7e2c22e035.png" /></p>
+</section>
+<section id="buzzer">
+<h3>3.5.22 BUZZER<a class="headerlink" href="#buzzer" title="Link to this heading"></a></h3>
+<p>开发板设计1个蜂鸣器，由EPWM控制，用户可以自定义其功能。</p>
+<p><img alt="Image" src="_images/1733794134936_182df0c0_10c4_4250_8a24_60684c6b01f3.png" /></p>
+</section>
+<section id="qspi-norflash">
+<h3>3.5.23 QSPI NorFlash<a class="headerlink" href="#qspi-norflash" title="Link to this heading"></a></h3>
+<p>底板板载一颗QSPI_NorFlash。</p>
+<p><img alt="Image" src="_images/1733794135039_8f3e9f84_a3c1_4087_8773_d6827810ae77.png" /></p>
+</section>
+<section id="epwm">
+<h3>3.5.24 EPWM<a class="headerlink" href="#epwm" title="Link to this heading"></a></h3>
+<p>底板板载引出5个EPWM，电平为3.3V，使用2*4pin-2.54mm间距的插装插针引出，用户可以自定义其功能。</p>
+<p><img alt="Image" src="_images/1733794135166_11dfc03e_6484_45a6_985b_204724e656b7.png" /></p>
+</section>
+<section id="gpio">
+<h3>3.5.25 GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
+<p>底板板载引出部分GPIO，电平为3.3V，使用2.54mm间距的插装插针引出，用户可以自定义其功能。调试过程中通过插针取电源时，注意电平。</p>
+<p><img alt="Image" src="_images/1733794135281_3eda4a59_a80b_4e1e_805b_f25c9e3bf8d7.png" /></p>
+</section>
+</section>
+</section>
+<section id="id26">
+<h1>04_硬件设计指南<a class="headerlink" href="#id26" title="Link to this heading"></a></h1>
+<ol class="arabic simple">
+<li><p><strong>I2C要求</strong><br />
+一组I2C总线上可以挂载多个从设备，请保证地址无冲突；<br />
+I2C总线上需要加上拉电阻，但不要使用多个电阻上拉；<br />
+请注意核心板端的I2C和从设备的I2C做电平匹配。</p></li>
+<li><p><strong>VBAT引脚处理</strong><br />
+当使用核心板板载RTC功能时，需在VBAT引脚提供3.3V电源，且此电源断电可保持。</p></li>
+<li><p><strong>上电时序</strong><br />
+强烈建议用户设计底板时使用核心板输出的EXTP_EN作为底板上电的使能，严格控制上电时序。否则可能会造成以下影响：<br />
+·通电阶段电流过大；<br />
+·设备无法启动；<br />
+·最坏情况，对处理器造成不可逆转的损坏。</p></li>
+<li><p><strong>核心板不使用的信号引脚可以悬空，但请务必将所有的GND连接。</strong></p></li>
+<li><p><strong>关于引脚IO漏电问题说明</strong><br />
+在核心板上电之前，如果核心板信号引脚上有高电平灌电流，会给核心板上串电，最直观的现象就是能看到核心板的红色指示灯微亮，会导致上电顺序不对，最典型的就是串口漏电，所以与CPU直连的外设部分需要做防漏电设计。</p></li>
+<li><p><strong>PG0-PG7启动相关引脚要求</strong><br />
+PG0-PG7为启动相关引脚，这些引脚在CPU内部为默认下拉，与此同时，核心板上的PG0,PG2,PG6,PG7引脚添加10K进行上拉，默认禁用secureboot功能，且在只供电的情况下可从eMMC启动。用户需要根据自己的烧写、启动情况对底板的相关引脚进行处理。此外，因这些引脚与启动相关，不建议用作GPIO，若需用作GPIO，注意引脚电平，不能影响启动项。</p></li>
+</ol>
+<p><img alt="Image" src="_images/1733794136938_fca55f55_d91e_4658_b8f9_d9105c707099.png" /></p>
+<ol class="arabic simple" start="7">
+<li><p><strong>调试串口硬件设计说明</strong><br />
+UART0为A核调试串口，为方便后期调试，建议引出，做好防漏电措施；若使用M核，需引出UART16_TXD方便调试。</p></li>
+<li><p><strong>SD卡硬件设计要求</strong><br />
+SD卡的各路信号线需要加电阻上拉至3.3V，否则可能影响SD卡烧写；SD0_CLK引脚建议预留串阻及对地电容，电容默认空焊。</p></li>
+<li><p><strong>HSUSB0_VBUSVLD引脚要求</strong><br />
+D6_PF15引脚默认为HSUSB0_VBUSVLD功能，USB0用作device时，此引脚必须保持高电平，比如通过USB0烧写时；如果USB0用作host，此引脚可用作GPIO。</p></li>
+<li><p><strong>T13_PJ5引脚要求</strong><br />
+T13_PJ5引脚需要加10K电阻进行下拉。该T13_PJ5引脚禁止上拉，否则影响eMMC正常启动。</p></li>
+<li><p><strong>RS485要求</strong><br />
+当使用RS485，其流控引脚最好选用对应UART的RTS引脚，流控在驱动层就已经集成好了，如果选择GPIO，需要在应用层做工作。</p></li>
+<li><p><strong>ADC/EADC要求</strong><br />
+ADC0-7及EADC0-7默认输入范围为0-3.3V，需注意输入电压范围。</p></li>
+<li><p><strong>自制底板的PCB布局要求</strong><br />
+为保证核心板邮票孔焊盘的爬锡良率，底板钢网制作时外扩了邮票孔的开孔区域以保证锡膏量，如下图灰色部分所示。因此底板布局时，需注意其他器件焊盘远离核心板钢网外扩区域，同时，核心板钢网外扩区域不允许打孔，以免漏锡，影响焊接质量。</p></li>
+</ol>
+<p><img alt="Image" src="_images/1733794137064_bec5363b_398b_4a4b_b1d5_698a109a1fb3.png" /></p>
+<ol class="arabic simple" start="14">
+<li><p><strong>自制底板PCB的表面处理工艺要求</strong><br />
+底板表面处理工艺建议化学沉金，因为核心板和底板采用邮票孔+LGA的连接方式，采用化学沉金工艺，底板单独存储后，可以降低焊接难度，强烈建议核心板与底板贴片器件同步送入贴片机焊接，如果底板是双面布件，则建议用户核心板的所在面最后再过炉，避免核心板在底板上二次过炉。</p></li>
+<li><p><strong>自制底板的钢网要求</strong><br />
+告知工厂：图片标识出核心板的钢网不需要处理，补偿等已经做好，其他区域可以修改。<br />
+例如：</p></li>
+</ol>
+<p><img alt="Image" src="_images/1733794137144_b456c4c8_217d_4128_8082_89191135f91c.png" /></p>
+<ol class="arabic simple" start="16">
+<li><p><strong>核心板抗振动要求</strong><br />
+如果客户产品有抗振动要求，建议客户增加核心板所在区域与外壳的硬连接，避免振动时核心板所在区域发生形变，焊点因应力疲劳发生断裂，进而影响产品稳定运行。</p></li>
+</ol>
+</section>
+<section id="ok-ma35-s21linux">
+<h1>05_OK-MA35-S21开发板Linux系统整机功耗表<a class="headerlink" href="#ok-ma35-s21linux" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>编号</strong></p></th>
+<th class="head"><p><strong>测试项目</strong></p></th>
+<th class="head text-center"><p><strong>核心板功率</strong>（W）</p></th>
+<th class="head text-center"><p><strong>开发板功率</strong>   <strong>（含核心板）</strong>（W）</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td><p>无负载启动峰值功率</p></td>
+<td class="text-center"><p>2.21W</p></td>
+<td class="text-center"><p>3.7W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td><p>CPU压力+内存+emmc读写压力测试</p></td>
+<td class="text-center"><p>2.06W</p></td>
+<td class="text-center"><p>4.55W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td><p>带载LVDS+4G+视频编码</p></td>
+<td class="text-center"><p>2.02W</p></td>
+<td class="text-center"><p>5.03W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4</p></td>
+<td><p>带载LVDS+4G+视频编码+CPU压力+内存+emmc读写压力测试</p></td>
+<td class="text-center"><p>2.56W</p></td>
+<td class="text-center"><p>5.56W</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>注：</strong></p></li>
+</ul>
+<p>1、峰值电流:启动过程中的最大电流值；</p>
+<p>2、稳定值电流:启动后停留在开机界面时的电流值 ；</p>
+<p>3、功耗仅供参考。</p>
+</section>
+<section id="id27">
+<h1>06_最小系统原理图<a class="headerlink" href="#id27" title="Link to this heading"></a></h1>
+<p><strong>最小系统包括核心板，电源，调试串口，系统镜像烧写接口，boot启动项电路。</strong></p>
+<p><img alt="Image" src="_images/1733794140568_620754af_3ed1_4bd2_b8fe_45b9d7f2de72.png" /></p>
+<p><img alt="Image" src="_images/1733794140072_15dd9652_37fd_4015_9a0c_f9d5d1996c1f.png" /></p>
+<p><img alt="Image" src="_images/1733794140169_c21f7155_0641_4f93_9e9b_0eb81d814bbb.png" /></p>
+<p><img alt="Image" src="_images/1733794140270_a38fc323_4441_41dd_8ee8_906f584e5b55.png" /></p>
+<p><img alt="Image" src="_images/1733794140384_0a5b5f6f_e70b_4c3d_b95f_015669d1916c.png" /></p>
+<p><img alt="Image" src="_images/1733794140469_51340710_a9ea_41da_b68a_e0c9df73b6ca.png" /></p>
+<p>上图仅为示意图，具体连接情况请见源文件原理图。为满足核心板的正常工作，除电源VDD5V外，还需要HSUSB0，方便进行系统烧写；UART0部分电路，方便确认系统是否工作正常，同时方便调试；BOOT部分电路进行系统启动。</p>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
