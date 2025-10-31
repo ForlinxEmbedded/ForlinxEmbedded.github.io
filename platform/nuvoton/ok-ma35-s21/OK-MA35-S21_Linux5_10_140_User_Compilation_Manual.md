@@ -400,10 +400,14 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network conf
 #### 3.1.7 Installation of Necessary Libraries for Compiling OKMA35 Linux Source Code
 
 ```plain
-forlinx@ubuntu:~$ sudo apt-get update                                       //Update apt-get download sources
+forlinx@ubuntu:~$ sudo apt-get update                   //Update apt-get download sources
 forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot           //Installation of essential toolkits
-forlinx@ubuntu:~$ sudo apt-get install git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python3-pip libncurses5-dev
-forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmainutils expect
+forlinx@ubuntu:~$ sudo apt-get install git ssh make gcc libssl-dev liblz4-tool expect
+g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static
+live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler
+python3-pip libncurses5-dev
+forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmainutils
+expect
 ```
 
 These library files are the ones that need to be downloaded when compiling the Linux source code by building the MA35 Linux compilation environment by yourself. If you are not building the MA35 Linux development environment, you can skip this step.
