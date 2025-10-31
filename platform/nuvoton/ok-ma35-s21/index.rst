@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK-MA35-S21_User_Hardware_Manual
+
   
 
 
