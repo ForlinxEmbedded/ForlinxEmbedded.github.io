@@ -47,7 +47,7 @@ A description of some of the symbols and formats associated with this manual:
 |         <font style="color:black;">Black font</font>         | <font style="color:#000000;">Serial port output message after entering a command</font> |
 |       **<font style="color:black;">Bold black</font>**       | <font style="color:#000000;">Key information in the serial port output message</font> |
 |            <font style="color:#000000;">//</font>            | <font style="color:#000000;">Interpretation of input instructions or output information</font> |
-|                      Username@Hostname                       | root@ok3568: development board serial port login account information <font style="color:#000000;">forlinx @ ok3568: development board network login account information</font>   <font style="color:#000000;">forlinx@ubuntu: development environment Ubuntu account information</font>   <font style="color:#000000;">You can determine the environment for function operation through this information.</font> |
+|                      Username@Hostname                       | root@ok3568: development board serial port login account information<br /><font style="color:#000000;">forlinx @ ok3568: development board network login account information</font><br />forlinx@ubuntu: development environment Ubuntu account information<br /> You can determine the environment for function operation through this information. |
 
 ## 1\. OK- MA35-S21 Development Board Description
 
