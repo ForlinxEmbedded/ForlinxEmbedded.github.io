@@ -536,11 +536,11 @@ Some GPIO are led out with a level of 3.3V, using headers with a 2.54mm pitch. U
 
 ## 4\. Hardware Design Guide
 
-**1. I2C requirements  **
+**1. I2C requirements** 
 
-- **Multiple slave devices can be mounted on a set of I2C buses, please ensure that there are no address conflicts;  **
-- **A pull-up resistor needs to be added to the I2C bus, but do not use multiple resistors for pull-up;  **
-- **Please pay attention to level matching between the I2C on the SoM and the I2C on the slave device.**
+**- Multiple slave devices can be mounted on a set of I2C buses, please ensure that there are no address conflicts;**
+**-A pull-up resistor needs to be added to the I2C bus, but do not use multiple resistors for pull-up;  **
+**-Please pay attention to level matching between the I2C on the SoM and the I2C on the slave device.**
 
 **2. VBAT pin processing  
 When using the RTC function on the SoM, a 3.3V power supply must be provided at the VBAT pin, and this power supply can be maintained when it is powered off.**
@@ -566,21 +566,27 @@ PG0 - PG7 are startup - related pins. These pins are pulled down by default insi
 **7. Debug Serial Port Hardware Design Instructions**
 
 UART0 serves as the debug serial port for the A - core. To facilitate later debugging, it is recommended to lead it out and take proper anti - leakage measures. If the M - core is used, UART16\_TXD needs to be led out for debugging convenience.
+
 **8. SD Card Hardware Design Requirements**
 
 All signal lines of the SD card need to be pulled up to 3.3V through resistors. Otherwise, it may affect the SD card programming. For the SD0\_CLK pin, it is recommended to reserve a series resistor and a capacitor to ground, and the capacitor is left un - soldered by default.
+
 **9. Requirements for the HSUSB0\_VBUSVLD Pin**
 
 The D6\_PF15 pin is set to the HSUSB0\_VBUSVLD function by default. When USB0 is used as a device, this pin must be kept at a high level, such as during programming via USB0. If USB0 is used as a host, this pin can be used as a GPIO.
+
 **10. T13\_PJ5 Pin Requirements**
 
 The T13\_PJ5 pin needs to be pulled down with a 10K resistor. Pulling up this pin is prohibited, otherwise, it will affect the normal startup of the eMMC.
+
 **11. RS485 Requirements**
 
 When using RS485, it is recommended to select the RTS pin of the corresponding UART as the flow - control pin. The flow control has already been integrated at the driver layer. If a GPIO is selected, work needs to be done at the application layer.
+
 **12. ADC/EADC Requirements**
 
 The default input range of ADC0 - 7 and EADC0 - 7 is 0 - 3.3V. Attention should be paid to the input voltage range.
+
 **13. PCB Layout Requirements for Self - Made Carrier Board**
 
 To ensure the solder climbing yield of the stamp holes on the SoM, when manufacturing the stencil for the carrier below:, the opening area of the stamp holes is expanded to ensure the amount of solder paste, as shown in the gray part in the following figure. Therefore, when laying out the carrier board, it is necessary to ensure that the pads of other components are kept away from the enlarged area of the SoM stencil. Meanwhile, no holes are allowed to be drilled in the enlarged area of the SoM stencil to prevent solder leakage, which may affect the soldering quality.
@@ -590,6 +596,7 @@ To ensure the solder climbing yield of the stamp holes on the SoM, when manufact
 **14. Surface Treatment Process Requirements for Self - Made Carrier Board PCB**
 
 It is recommended to use the electroless nickel immersion gold (ENIG) process for the surface treatment of the carrier board. Since the SoM and the carrier board are connected by stamp holes + LGA, using the ENIG process can reduce the soldering difficulty after the carrier board is stored separately. It is strongly recommended to send the SoM and the SMD components on the carrier board to the pick - and - place machine for soldering simultaneously. If the carrier board has components on both sides, it is recommended that the side with the SoM pass through the reflow oven last to avoid the SoM passing through the oven twice on the baseboard.
+
 **15. Stencil Requirements for Self - Made Carrier Board**
 
 Inform the factory that the stencil for the SoM area does not need to be processed as the compensation has already been done, and other areas can be modified.   

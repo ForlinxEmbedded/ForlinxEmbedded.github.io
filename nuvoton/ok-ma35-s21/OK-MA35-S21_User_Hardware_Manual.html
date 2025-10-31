@@ -968,12 +968,10 @@ The connection is led out through the P29 terminal block. It is recommended to c
 </section>
 <section id="hardware-design-guide">
 <h2>4. Hardware Design Guide<a class="headerlink" href="#hardware-design-guide" title="Link to this heading"></a></h2>
-<p>**1. I2C requirements  **</p>
-<ul class="simple">
-<li><p>**Multiple slave devices can be mounted on a set of I2C buses, please ensure that there are no address conflicts;  **</p></li>
-<li><p>**A pull-up resistor needs to be added to the I2C bus, but do not use multiple resistors for pull-up;  **</p></li>
-<li><p><strong>Please pay attention to level matching between the I2C on the SoM and the I2C on the slave device.</strong></p></li>
-</ul>
+<p><strong>1. I2C requirements</strong></p>
+<p><strong>- Multiple slave devices can be mounted on a set of I2C buses, please ensure that there are no address conflicts;</strong>
+**-A pull-up resistor needs to be added to the I2C bus, but do not use multiple resistors for pull-up;  **
+<strong>-Please pay attention to level matching between the I2C on the SoM and the I2C on the slave device.</strong></p>
 <p><strong>2. VBAT pin processing<br />
 When using the RTC function on the SoM, a 3.3V power supply must be provided at the VBAT pin, and this power supply can be maintained when it is powered off.</strong></p>
 <p><strong>3. Power-up sequence<br />
@@ -988,23 +986,23 @@ It is strongly recommended that users use the EXTP_EN output from the SoM as the
 <p>PG0 - PG7 are startup - related pins. These pins are pulled down by default inside the CPU. Meanwhile, on the SoM, the pins PG0, PG2, PG6, and PG7 are pulled up with a 10K resistor. By default, the secureboot function is disabled, and the system can be started from the eMMC when only power is supplied. Please handle the relevant pins on the carrier board according to the flashing and startup situations. In addition, these pins are not recommended to be used as GPIO because they are related to startup. If they are used as GPIO, pay attention to the pin level and do not affect the startup item.</p>
 <p><img alt="Image" src="_images/1733794136938_fca55f55_d91e_4658_b8f9_d9105c707099.png" /></p>
 <p><strong>7. Debug Serial Port Hardware Design Instructions</strong></p>
-<p>UART0 serves as the debug serial port for the A - core. To facilitate later debugging, it is recommended to lead it out and take proper anti - leakage measures. If the M - core is used, UART16_TXD needs to be led out for debugging convenience.
-<strong>8. SD Card Hardware Design Requirements</strong></p>
-<p>All signal lines of the SD card need to be pulled up to 3.3V through resistors. Otherwise, it may affect the SD card programming. For the SD0_CLK pin, it is recommended to reserve a series resistor and a capacitor to ground, and the capacitor is left un - soldered by default.
-<strong>9. Requirements for the HSUSB0_VBUSVLD Pin</strong></p>
-<p>The D6_PF15 pin is set to the HSUSB0_VBUSVLD function by default. When USB0 is used as a device, this pin must be kept at a high level, such as during programming via USB0. If USB0 is used as a host, this pin can be used as a GPIO.
-<strong>10. T13_PJ5 Pin Requirements</strong></p>
-<p>The T13_PJ5 pin needs to be pulled down with a 10K resistor. Pulling up this pin is prohibited, otherwise, it will affect the normal startup of the eMMC.
-<strong>11. RS485 Requirements</strong></p>
-<p>When using RS485, it is recommended to select the RTS pin of the corresponding UART as the flow - control pin. The flow control has already been integrated at the driver layer. If a GPIO is selected, work needs to be done at the application layer.
-<strong>12. ADC/EADC Requirements</strong></p>
-<p>The default input range of ADC0 - 7 and EADC0 - 7 is 0 - 3.3V. Attention should be paid to the input voltage range.
-<strong>13. PCB Layout Requirements for Self - Made Carrier Board</strong></p>
+<p>UART0 serves as the debug serial port for the A - core. To facilitate later debugging, it is recommended to lead it out and take proper anti - leakage measures. If the M - core is used, UART16_TXD needs to be led out for debugging convenience.</p>
+<p><strong>8. SD Card Hardware Design Requirements</strong></p>
+<p>All signal lines of the SD card need to be pulled up to 3.3V through resistors. Otherwise, it may affect the SD card programming. For the SD0_CLK pin, it is recommended to reserve a series resistor and a capacitor to ground, and the capacitor is left un - soldered by default.</p>
+<p><strong>9. Requirements for the HSUSB0_VBUSVLD Pin</strong></p>
+<p>The D6_PF15 pin is set to the HSUSB0_VBUSVLD function by default. When USB0 is used as a device, this pin must be kept at a high level, such as during programming via USB0. If USB0 is used as a host, this pin can be used as a GPIO.</p>
+<p><strong>10. T13_PJ5 Pin Requirements</strong></p>
+<p>The T13_PJ5 pin needs to be pulled down with a 10K resistor. Pulling up this pin is prohibited, otherwise, it will affect the normal startup of the eMMC.</p>
+<p><strong>11. RS485 Requirements</strong></p>
+<p>When using RS485, it is recommended to select the RTS pin of the corresponding UART as the flow - control pin. The flow control has already been integrated at the driver layer. If a GPIO is selected, work needs to be done at the application layer.</p>
+<p><strong>12. ADC/EADC Requirements</strong></p>
+<p>The default input range of ADC0 - 7 and EADC0 - 7 is 0 - 3.3V. Attention should be paid to the input voltage range.</p>
+<p><strong>13. PCB Layout Requirements for Self - Made Carrier Board</strong></p>
 <p>To ensure the solder climbing yield of the stamp holes on the SoM, when manufacturing the stencil for the carrier below:, the opening area of the stamp holes is expanded to ensure the amount of solder paste, as shown in the gray part in the following figure. Therefore, when laying out the carrier board, it is necessary to ensure that the pads of other components are kept away from the enlarged area of the SoM stencil. Meanwhile, no holes are allowed to be drilled in the enlarged area of the SoM stencil to prevent solder leakage, which may affect the soldering quality.</p>
 <p><img alt="Image" src="_images/1733794137064_bec5363b_398b_4a4b_b1d5_698a109a1fb3.png" /></p>
 <p><strong>14. Surface Treatment Process Requirements for Self - Made Carrier Board PCB</strong></p>
-<p>It is recommended to use the electroless nickel immersion gold (ENIG) process for the surface treatment of the carrier board. Since the SoM and the carrier board are connected by stamp holes + LGA, using the ENIG process can reduce the soldering difficulty after the carrier board is stored separately. It is strongly recommended to send the SoM and the SMD components on the carrier board to the pick - and - place machine for soldering simultaneously. If the carrier board has components on both sides, it is recommended that the side with the SoM pass through the reflow oven last to avoid the SoM passing through the oven twice on the baseboard.
-<strong>15. Stencil Requirements for Self - Made Carrier Board</strong></p>
+<p>It is recommended to use the electroless nickel immersion gold (ENIG) process for the surface treatment of the carrier board. Since the SoM and the carrier board are connected by stamp holes + LGA, using the ENIG process can reduce the soldering difficulty after the carrier board is stored separately. It is strongly recommended to send the SoM and the SMD components on the carrier board to the pick - and - place machine for soldering simultaneously. If the carrier board has components on both sides, it is recommended that the side with the SoM pass through the reflow oven last to avoid the SoM passing through the oven twice on the baseboard.</p>
+<p><strong>15. Stencil Requirements for Self - Made Carrier Board</strong></p>
 <p>Inform the factory that the stencil for the SoM area does not need to be processed as the compensation has already been done, and other areas can be modified.<br />
 e.g.:</p>
 <p><img alt="Image" src="_images/1733794137144_b456c4c8_217d_4128_8082_89191135f91c.png" /></p>
