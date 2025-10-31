@@ -55,9 +55,9 @@ The MA35D1 is a heterogeneous multi-core microprocessor featuring a dual-core 64
 
 The connection of OK-MA35-S21 SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790807368-763eab9e-a421-4e9c-a5f3-036717d918be.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790807368_763eab9e_a421_4e9c_a5f3_036717d918be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790807464-bc99e647-18f3-426a-8e54-5e5c51114703.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790807464_bc99e647_18f3_426a_8e54_5e5c51114703.png)
 
 **Note: This software manual does not describe the hardware parameters. Before referring to this manual for software development, please read the "OK-MA35-S21 Hardware Manual" under the "Hardware Data \ User Manual" path to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.**
 
@@ -96,7 +96,7 @@ The connection of OK-MA35-S21 SoM and the carrier board is board-to-board, and t
 
 The OK-MA35-S21 supports TF card and OTG flashing and eMMC boot. As shown in the figure below, the DIP switch is set for eMMC boot.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790807533-be1f1685-47f9-4002-8a80-7ae40a2aaefc.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790807533_be1f1685_47f9_4002_8a80_7ae40a2aaefc.png)
 
 | DIP Switch  | **1**  | **2** | **3** | **4**  | **5** | **6** | **7**  |
 | ----------- | ------ | ----- | ----- | ------ | ----- | ----- | ------ |
@@ -124,7 +124,7 @@ The OK-MA35-S21 development board has two system login methods, serial and netwo
 
 Please check the DIP switch on your development board to ensure it is set to the desired boot mode. The debug serial port on the development board is a Type-C socket, allowing users to connect the development board to a PC using a USB to Type-C cable to monitor the status of the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809107-bf82575d-e4ca-472e-9c13-283270b4803f.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809107_bf82575d_e4ca_472e_9c13_283270b4803f.png)
 
 ### 2.2 Serial Port Login
 
@@ -144,15 +144,15 @@ In the following, we take the putty terminal software as an example to introduce
 
 **Step 1:** Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer ). SERIAL-A is the A-core debug serial port, and SERIAL-B is the M-core debug serial port.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809202-51ee503e-e5ab-4f2c-a1e2-5b02b7ebf2b3.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809202_51ee503e_e5ab_4f2c_a1e2_5b02b7ebf2b3.png)
 
 **Step 2:** Open and set up putty, then set the serial line according to the COM port of the computer used, baud rate 115200
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809267-4671b6a1-5a2b-4f7d-b343-c4ba72b6ac7c.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809267_4671b6a1_5a2b_4f7d_b343_c4ba72b6ac7c.png)
 
 **Step 3:** After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settingss, open the serial port again later, and click on the saved port number.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809328-abaac24c-4d53-4c28-ab2c-7655c43501d5.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809328_abaac24c_4d53_4c28_ab2c_7655c43501d5.png)
 
 #### 2.2.2 Serial Login
 
@@ -160,7 +160,7 @@ After the terminal software on the PC side is set, connect the PC and the develo
 
 The following startup information indicates that the startup is successful, and you can enter Enter to create a new command line:
 
-                               ![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809410-a7fdf6dd-275b-48c3-b647-eeb9d24090fc.png)
+                               ![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809410_a7fdf6dd_275b_48c3_b647_eeb9d24090fc.png)
 
 ### 2.3 Network Login
 
@@ -174,13 +174,13 @@ Note: When logging in, enter the root username and the root password as prompted
 
 Note: The following is tested with the development board ip 172.20.0.143, please change it according to the actual situation, and use ifconfig eth0 172.20.0.143 to change it in the debugging serial port terminal.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809483-c9d0a8b4-53ef-4a26-b05a-0f8c957de77d.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809483_c9d0a8b4_53ef_4a26_b05a_0f8c957de77d.png)
 
 Open the putty software to make the following settings (the actual IP shall prevail):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809563-485fb11f-9ac8-44b8-b9b4-ad7c241b75d8.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809563_485fb11f_9ac8_44b8_b9b4_ad7c241b75d8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809701-d950faec-2844-496e-98fc-e9d0754e12b9.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809701_d950faec_2844_496e_98fc_e9d0754e12b9.png)
 
 #### 2.3.2 FTP
 
@@ -203,9 +203,9 @@ Note: This function requires the development board to be connected to the networ
 
 Test with the development board IP 172.20.0.143. Please modify the development board IP according to the actual situation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809768-7fdceba2-c1f0-4cd2-9d72-8b0eb5b73ff7.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809768_7fdceba2_c1f0_4cd2_9d72_8b0eb5b73ff7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790809836-ab3b91e5-2379-4f0d-a15e-34e38fa41fab.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790809836_ab3b91e5_2379_4f0d_a15e_34e38fa41fab.png)
 
 3\. Once connected successfully, you can perform upload and download operations.
 
@@ -223,7 +223,7 @@ In general, the power can be turned off directly. If there is data storage, func
 
 The desktop is displayed as follows after the development board booting:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811258-aabeaa41-ab70-481a-90fd-69fa6cd843f9.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811258_aabeaa41_ab70_481a_90fd_69fa6cd843f9.png)
 
 #### 3.1.2 Introduction to Touch Functions
 
@@ -233,11 +233,11 @@ The development board can display and support touch functionality normally when 
 
 Click the desktop icon to open the video player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811330-96f44d1f-3b11-400f-ae1b-4ed401da3837.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811330_96f44d1f_3b11_400f_ae1b_4ed401da3837.png)
 
 After entering, automatically play the video files in the/home/forlinx/video folder. Click the lower left corner of the video to exit.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811405-9dfaba8c-f0f9-45dd-9421-4fffd0a31fd3.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811405_9dfaba8c_f0f9_45dd_9421_4fffd0a31fd3.png)
 
 **Note: Since the vc8k decoding output is set to full screen, the exit button is covered (located in the bottom left corner). Additionally, the video progress bar may flicker due to competition between video playback and Qt.**
 
@@ -245,9 +245,9 @@ After entering, automatically play the video files in the/home/forlinx/video fol
 
 “music player" is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811475-8edd659d-024f-49d7-8385-bd668ba0113f.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811475_8edd659d_024f_49d7_8385_bd668ba0113f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811561-d1afa2b4-529c-4f79-b812-4088ce0e8071.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811561_d1afa2b4_529c_4f79_b812_4088ce0e8071.png)
 
 Click the bottom left button, select /home/forlinx/audio/forlinx.mp3, and click the play button to start audio playback for testing.
 
@@ -257,9 +257,9 @@ Click the bottom left button, select /home/forlinx/audio/forlinx.mp3, and click 
 
 The "4G" test program is used to test the external 4G module (EC20) of the OK-MA35-S21. Insert the 4G module and SIM card while the power is off, then power on the system and open the test application.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811665-dae9e735-8bd3-42ec-b366-6315a8286da8.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811665_dae9e735_8bd3_42ec_b366_6315a8286da8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811737-28641313-2d14-4296-9308-c9c89c643743.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811737_28641313_2d14_4296_9308_c9c89c643743.png)
 
 Click the start button, and the program will automatically begin the dialing process and obtain the IP, DNS, and other settings. After waiting for a few seconds, use the \*\*ping\*\* command in the terminal to perform the test.
 
@@ -267,9 +267,9 @@ Click the start button, and the program will automatically begin the dialing pro
 
 "WIFI" is a tool to configure wifi. The OK-MA35-S21 platform has the 8723du module on board by default. The wifi module exists in the system as a mean node, and this test corresponds to wlan0 (other corresponding nodes are used for multiple devices):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811809-def738cb-c2fd-4cb0-8eb7-857d33476148.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811809_def738cb_c2fd_4cb0_8eb7_857d33476148.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811873-e7678d51-3890-47c4-945d-4827e6826ae9.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811873_e7678d51_3890_47c4_945d_4827e6826ae9.png)
 
 Select wlan0, enter the router name(the one connected to wifi) in the SSID column, enter the router password in the PAWD column, click CONNECT to the router via wifi, enter a valid ip in the IP column, and then click ping to see if the currently used wifi network is smooth.
 
@@ -279,15 +279,15 @@ Open the Wifi test app, enter the correct network name and password, click CONNE
 
 After the connection is successful, you can click ping to test the network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790811939-50de7619-9198-4d3d-809e-c4ecf43c7696.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790811939_50de7619_9198_4d3d_809e_c4ecf43c7696.png)
 
 #### 3.1.7 Network Configuration Test
 
 When the OK-MA35-S21 starts up, the default setting of the NIC is dhcp. The two modes of dhcp and static can be selected through the "Network" configuration application, and the static mode can be configured with ip address, subnet mask, gateway, and DNS.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812035-1b89c560-9984-4ed6-a531-8d3a4d75d8c4.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812035_1b89c560_9984_4ed6_a531_8d3a4d75d8c4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812129-17787f88-f269-49ed-a91b-4173ad56326a.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812129_17787f88_f269_49ed_a91b_4173ad56326a.png)
 
 Select eth0 or eth1, then select DHCP, and click “Setting" at the bottom of the interface to restart the network and automatically obtain IP.
 
@@ -295,7 +295,7 @@ Click STATIC, select Set Static IP, enter the IP to be set in the IP column, ent
 
 After entering the URL and clicking the ping key, the result of the ping will prompt on the left, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812202-198f494f-15c7-46f3-9e56-e04b9bf3c66c.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812202_198f494f_15c7_46f3_9e56_e04b9bf3c66c.png)
 
 **Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
@@ -303,9 +303,9 @@ After entering the URL and clicking the ping key, the result of the ping will pr
 
 "WatchDog" is an application used to test the watchdog status.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812271-ae8a1693-c2cd-4c59-91dd-973d880259a3.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812271_ae8a1693_c2cd_4c59_91dd_973d880259a3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812336-c7718c13-3eaf-42f8-ac00-09f64254f7bc.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812336_c7718c13_3eaf_42f8_ac00_09f64254f7bc.png)
 
 Click start to open the dog feeding function by default and feed the dog regularly. At this time, the system will not restart.
 
@@ -317,9 +317,9 @@ Note: watchdog only supports three timeout settings: 0.5, 2, and 8 seconds. Sett
 
 The "RTC" application allows you to view and set the current system time:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812402-8f3b9cfd-b8ef-4d94-8dbf-43dd97e00d3c.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812402_8f3b9cfd_b8ef_4d94_8dbf_43dd97e00d3c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812527-1169b35d-e597-4e4d-878b-bd7bf14a24eb.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812527_1169b35d_e597_4e4d_878b_bd7bf14a24eb.png)
 
 After selecting "Manual," you can manually set the time by choosing "date" and "time," then click "apply" to complete the settings. With the RTC backup battery installed, the time will not be lost in case of a power outage and reboot.
 
@@ -337,15 +337,15 @@ Click on the desktop icon to use it to test the OK-MA35-S21 on-board SPI interfa
 
 Short the spi1 T/R pins according to the board schematic. The short circuit test does not need to consider the cs interface; if additional equipment is used for communication, the corresponding dev interface needs to be considered.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812597-29da48c5-5232-475b-9ea7-714c0a67e1e3.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812597_29da48c5_5232_475b_9ea7_714c0a67e1e3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812677-e6e69b34-71e6-4e57-bd50-09b89570ed78.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812677_e6e69b34_71e6_4e57_bd50_09b89570ed78.png)
 
 Open the test program after the completion of short circuit, and click the send button to conduct the sending and receiving test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812744-2c6eba53-7997-4de0-a459-53494b9035e5.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812744_2c6eba53_7997_4de0_a459_53494b9035e5.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812814-d4834a2f-3f79-488c-93b7-6379b4af0999.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812814_d4834a2f_3f79_488c_93b7_6379b4af0999.png)
 
 Click the Exit button to exit the test.
 
@@ -353,7 +353,7 @@ Click the Exit button to exit the test.
 
 Click on the desktop icon to use it to test the OKMA35 on-board UART interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812885-dff7e973-c8c7-4291-82e4-2e3367939677.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812885_dff7e973_c8c7_4291_82e4_2e3367939677.png)
 
 OK-MA35-S21 serial port supports odd and even parity, 8 data bits, and 1 stop bit.
 
@@ -363,23 +363,23 @@ The available serial ports are UART1, UART10, UART11, UART14, UART15, UART13, UA
 
 **Note: The 485 level serial port cannot be short-circuited for testing.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790812969-ddd325bd-1228-4ad4-99eb-5d431f9d8749.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790812969_ddd325bd_1228_4ad4_99eb_5d431f9d8749.png)
 
 Turn on the test program after the short circuit is completed. 1\. Click the third button on the second row in the top-left corner to open the settings, select the serial port and parameters such as baud rate, here choose ttyS8; 2. Click ''Apply'' to successfully set the parameters. 3\. Then click the first button on the second row in the top-left corner to connect. At this point, the setup is complete and testing can begin.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813044-cdc3045d-e342-4a55-bf89-c4d49074673a.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813044_cdc3045d_e342_4a55_bf89_c4d49074673a.png)
 
 Click the keyboard button to send automatically. Since this is a short-circuit test, the data received by the receiving end is also displayed on the terminal. Therefore, after entering the letter ''r'', the terminal will display two ''r''.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813157-7b0b5fae-ca71-43e2-b76b-d852ea34b17c.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813157_7b0b5fae_ca71_43e2_b76b_d852ea34b17c.png)
 
 #### 3.1.12 Database Test
 
 “Sqlite" is the sqlite3 database application:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813228-914bdcf7-d981-4219-bbb0-dcf6a7fe6597.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813228_914bdcf7_d981_4219_bbb0_dcf6a7fe6597.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813292-a3c93bf1-c9bb-4c8e-a451-9d631157d212.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813292_a3c93bf1_c9bb_4c8e_a451_9d631157d212.png)
 
 Click to enter the database test interface, where you can see the example program books that uses sqlite in Qt.
 
@@ -387,9 +387,9 @@ Click to enter the database test interface, where you can see the example progra
 
 "BackLight" is the backlight adjustment application:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813363-857c561e-c5e0-4a63-a58f-13c8c2859343.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813363_857c561e_c5e0_4a63_a58f_13c8c2859343.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813426-3a0d0d02-0c25-4cf6-8c1d-ce62dde80a5b.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813426_3a0d0d02_0c25_4cf6_8c1d_ce62dde80a5b.png)
 
 Lcd backlight brightness can be set by dragging the slider in the interface. Level 0 is no backlight (top micro screen level 0 is the highest brightness), level 1 is the highest brightness, and level 5 is the lowest brightness.
 
@@ -397,19 +397,19 @@ Lcd backlight brightness can be set by dragging the slider in the interface. Lev
 
 Click the “Camera” icon on the desktop to test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813506-2d62e82f-ffb4-4322-9da1-26033a074427.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813506_2d62e82f_ffb4_4322_9da1_26033a074427.png)
 
 Click Camera video to select the camera device.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813568-4428910c-ef5b-44d4-bb17-2f69cfdcc9a9.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813568_4428910c_ef5b_44d4_bb17_2f69cfdcc9a9.png)
 
 Click camera resolution to make selection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813640-959ea412-487d-45d3-88aa-9dea5aeadc22.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813640_959ea412_487d_45d3_88aa_9dea5aeadc22.png)
 
 After setting the device and resolution, click Start to start the preview. The preview effect is shown in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813701-3148e599-61ec-452c-bc8f-cb9faea2c053.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813701_3148e599_61ec_452c_bc8f_cb9faea2c053.png)
 
 Click picture to take a picture, and the picture will be saved in the/root/directory.
 
@@ -477,7 +477,7 @@ The available serial ports are UART1, UART10, UART11, UART14, UART15, UART13, UA
 
 The test process requires 2 x 485 interfaces to be tested. The 485 level is short-circuited to port A and port B. Take 485 \_ 1 and 485 \_ 2 as an example to test. Short circuit 485 \_ A1 and 485 \_ A2 as well as 485 \_ B1 and 485 \_ B2. Open the test program after the completion of short circuit.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813786-8e7efdd5-695c-4eac-bbd7-929995ea71e3.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813786_8e7efdd5_695c_4eac_bbd7_929995ea71e3.png)
 
 ```plain
 root@OKMA35-S2/# fltest_485test /dev/ttyS15 /dev/ttyS2   //485_1进行发送，485_2进行接受
@@ -526,11 +526,11 @@ If the serial port prints the above content after execution, it indicates that t
 
 UART12 and UART13 are led out from the carrier board as RS232 levels.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813849-dccfeeb3-6d3c-4859-a587-11d7142debad.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813849_dccfeeb3_6d3c_4859_a587_11d7142debad.png)
 
 UART4, UART5 and UART8 are led out from the carrier board as TTL levels:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813913-22c85138-c7eb-4b65-853e-966d084e71fa.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813913_22c85138_c7eb_4b65_853e_966d084e71fa.png)
 
 TTL level and RS232 level need to short TX and RX pins. Take UART5 as an example for TTL test. Short UART5 \_ RX (PIN2) and UART5 \_ TX (PIN4). Open the test program after short circuit.
 
@@ -551,7 +551,7 @@ If the above content is printed after execution, it indicates that the serial co
 
 For testing with SPI0, refer to the schematic to short SPI0\_MOSI (PIN1) with SPI0\_MISO (PIN2), and then use the following commands for testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790813996-41ab1ac2-ca2c-4ab0-bfd9-c8b9b6341ec9.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813996_41ab1ac2_ca2c_4ab0_bfd9_c8b9b6341ec9.png)
 
 Without shorting the SPI0\_ MOSI and the SPI0\_ MISO, execute the test command:
 
@@ -736,7 +736,7 @@ Default agent request successful
 
 After the above settings, open the mobile phone Bluetooth search, a "BlueZ 5.55" device will appear, click this Bluetooth to try to pair:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814065-ce664368-96ce-47a4-9fb3-532fb77952d7.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814065_ce664368_96ce_47a4_9fb3_532fb77952d7.png)
 
 Meanwhile, the following information will appear on the development board. Enter ''yes''.
 
@@ -874,7 +874,7 @@ Thu May 23 10:51:40 UTC 2024
 
 The OK-MA35-S21 supports a USB 2.0 interface and supports hot swapping of devices. Here's a demo using the example of mounting a USB disk.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814128-2ba13bb3-8df2-4c19-9b96-0ec7d0d28ec1.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814128_2ba13bb3_8df2_4c19_9b96_0ec7d0d28ec1.png)
 
 The terminal shows USB flash drive info, which can vary due to the many types available.
 
@@ -1073,7 +1073,7 @@ udhcpc: sending discover
 
 The OK-MA35-S21 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814209-eff1e24f-b075-4933-94ef-c649309f386e.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814209_eff1e24f_b075_4933_94ef_c649309f386e.png)
 
 **Note: To use this function properly, the network IP of the development board needs to be the same network segment as the network IP of the PC, or the PC is under the subnet of the network where the development board is located.**
 
@@ -1083,7 +1083,7 @@ The OK-MA35-S21 development board provides two 3.5mm audio jacks and two XH2.54-
 
 Before performing the audio playback test, please insert a prepared headset into the headphone jack or connect a speaker to the corresponding slot on the carrier board. Use the following command to test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814281-44ac4da6-0760-45ea-abe4-f469db151908.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814281_44ac4da6_0760_45ea_abe4_f469db151908.png)
 
 **Note: The green port is the headphone jack, and the pink port is the microphone jack. Note: Plug the prepared microphone into the 3.5mm headphone jack before performing the recording test.**
 
@@ -1239,7 +1239,7 @@ sqlite> .quit			                          // Exit the database (or use the .exit
 
 OK-MA35-S21 development board provides a GPIO interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814357-608ee8b4-aa9e-4c7e-af03-4aee1848a902.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814357_608ee8b4_aa9e_4c7e_af03_4aee1848a902.png)
 
 GPIO can be controlled in the application layer through sysfs to set the output level of GPIO. 
 
@@ -1259,7 +1259,7 @@ The calculation formula is: corresponding group number \_ 16 + label, for exampl
 
 Take PA4 as an example for control, the pin number corresponding to PA4 is pin 4 of P35 terminal, and PA4 is GPIO 4 of Group A GPIO.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814436-dfd43f0c-c803-46e5-abbe-8da8f5a9882e.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814436_dfd43f0c_c803_46e5_abbe_8da8f5a9882e.png)
 
 ```plain
 root@OKMA35-S2/# cd /sys/class/gpio/  
@@ -1275,9 +1275,9 @@ During the test, a multimeter can be used to measure the PA4 pin to determine wh
 
 OK-MA35-S21 development board provides a 5 x PWM interface and a buzzer controlled by PWM:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814502-4ea74873-d77d-4ec6-8cb2-e984f99fd893.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814502_4ea74873_d77d_4ec6_8cb2_e984f99fd893.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814578-38279eb8-14a5-4e4d-bb7c-3f6d74f55015.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814578_38279eb8_14a5_4e4d_bb7c_3f6d74f55015.png)
 
 EPWM0 path is /sys/devices/platform/40580000.epwm0/pwm/pwmchip0；
 
@@ -1304,9 +1304,9 @@ EADC0 path is /sys/devices/platform/40430000.eadc0/iio:device1，
 
 The path of ADC0 is/sys/devices/platform/40420000.adc/iio: device0, where the in \_ voltage \* \_ raw is the sample value of the corresponding channel, 0 indicates 0 V, and 4095 indicates 3.3 V.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814650-3adcf59c-e1ee-44c6-878a-45b5a07902ba.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814650_3adcf59c_e1ee_44c6_878a_45b5a07902ba.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790814714-f5eb4541-963b-478a-8dfa-6d312e771479.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790814714_f5eb4541_963b_478a_8dfa_6d312e771479.png)
 
 EADC0\_CH7 and ADC0\_CH2 measure the voltage of the sliding potentiometer on the test board. By adjusting the resistance value of the corresponding sliding potentiometer, you can observe whether the sampling values of the two channels change. Take ADC0\_CH2 as an example:
 
@@ -1589,7 +1589,7 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open MA35D1\_NuWriter-master\\driver\\WinUSB4NuVCOM.exe.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790817856-623ea522-8757-4e81-9ac9-16e948c803e5.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790817856_623ea522_8757_4e81_9ac9_16e948c803e5.png)
 
 Click Next to install.
 
@@ -1599,7 +1599,7 @@ Path: OK-MA35-S21 \_Linux5.10.140+Qt5.12.8\_User Profile\\3-Tools\\MA35D1\_NuWri
 
 This is a development tool provided by Nuvoton. Unzip it into a full English path before use, connect the OTG port of the development board and the host computer with a Type-C cable, and turn on the computer by flipping the dip switch 4 to ON.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790817924-7d4085a3-9897-47ad-aa12-108a7659bcc3.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790817924_7d4085a3_9897_47ad_aa12_108a7659bcc3.png)
 
 Open MA35D1\_NuWriter-master\\EXE\\NuWriter\_MA35\_UI.exe：
 
@@ -1607,29 +1607,29 @@ Click on the "Attach" tab, then click on the "Browser" button to select the bin 
 
 **Note: If a connection timeout occurs, please power off and restart the development board.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818030-0c8c1a96-9f75-4ce6-88bf-4e0e12d29e02.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818030_0c8c1a96_9f75_4ce6_88bf_4e0e12d29e02.png)
 
 Go to the SD/EMMC tab under the Download tab, click the Browser button in the Write box, select OK-MA35-S21 \_ Linux5.10.140+Qt5.12.8\_ User Information \\ 2- Images and Source Code \\ 0- Image Files \\ images\_512m (1g version in images\_1g) \\ pack-image-OKMA35-S2-emmc-sdcard.bin, select Pack in the Image type radio button, click write at the bottom to start burning. When "Successfully" appears at the end, it indicates that the flashing was successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818143-cbabc089-6008-4af4-b783-22e22f085acc.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818143_cbabc089_6008_4af4_b783_22e22f085acc.png)
 
 #### 5.1.3 USB Step-by-step Flashing Test
 
 During the development, performing a full flash every time is very time-consuming. Therefore, this section introduces the method of using the NuWriter flashing tool for individual flashing. The following image shows the compiled output folder: buildroot/output/images.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818214-9096b5d2-c4db-49d8-a534-206bd4b8405c.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818214_9096b5d2_c4db_49d8_a534_206bd4b8405c.png)
 
 To demonstrate the flashing method, perform an individual flash of the kernel.
 
 Connect the development board to the host using a Type-C cable. All steps are the same as full flashing except for the final step. The offsets for each part are shown in the diagram below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818329-96015956-448d-46a6-9574-e859fc9eb354.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818329_96015956_448d_46a6_9574_e859fc9eb354.png)
 
 The red box highlights the kernel, and its offset is 0x300000. Remember this number, as it will be used later.
 
 After attaching the board, follow the steps shown in the diagram to individually replace the kernel.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818445-1d0f8d55-a62e-45f3-87aa-8daf34981e10.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818445_1d0f8d55_a62e_45f3_87aa_8daf34981e10.png)
 
 ### 5.2 TF Card Flashing
 
@@ -1651,7 +1651,7 @@ forlinx@ubuntu:~$ cd en-us--MA35_SWriter_V1.03/MA35D1_NuWriter-master/
 forlinx@ubuntu:~/en-us--MA35_SWriter_V1.03/MA35D1_NuWriter-master$ vi pack.json
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818531-90873545-f3e6-4108-8a47-0892e0c8a450.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818531_90873545_f3e6_4108_8a47_0892e0c8a450.png)
 
 For 1GB of memory, change the 15th line to: "file": "./ddrimg/MA35D16A087C\_NonMCP\_WBDDR3L\_1GB.bin".
 
@@ -1667,7 +1667,7 @@ For 512MB of memory, change the 23rd line to: "file": "./ddrimg/MA35D16A087C\_No
 forlinx@ubuntu:~/en-us--MA35_SWriter_V1.03/MA35D1_NuWriter-master$ vi header.json
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818601-9598c0fb-af3f-48f1-9412-f27d9f90c7fe.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818601_9598c0fb_af3f_48f1_9412_f27d9f90c7fe.png)
 
 4\. After making the modifications, execute the following commands:
 
@@ -1690,19 +1690,19 @@ forlinx@ubuntu:~/en-us--MA35_SWriter_V1.03/MA35D1_NuWriter-master$pip install cr
 
 5\. Insert the prepared TF card into the computer and open the Windows built-in disk management tool (right-click on the start button\&\&usually on the win icon in the bottom left corner of the computer).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818715-2c1c5a63-ed22-4d6e-8ada-621cd8c8daa5.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818715_2c1c5a63_ed22_4d6e_8ada_621cd8c8daa5.png)
 
 Select the disk for the TF card (as shown in the diagram below, Disk 2 at the bottom), right-click and choose Delete Volume to remove the existing volume.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818845-3478e2ce-9aeb-4470-bc18-6c80dfdaa941.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818845_3478e2ce_9aeb_4470_bc18_6c80dfdaa941.png)
 
 After deleting, open VMware, click on the virtual machine, select Removable Devices, find the TF device, and click Connect (disconnect from the host) to connect the TF card to the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790818955-bbc425f1-25bc-4ada-b46c-da8917d75313.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790818955_bbc425f1_25bc_4ada_b46c_da8917d75313.png)
 
 If the following prompt appears, click OK.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819022-06915ac8-82c2-49ae-9270-628df5b57376.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819022_06915ac8_82c2_49ae_9270_628df5b57376.png)
 
 7\. Then, enter the virtual machine, go back to the previous directory, and execute the following command:
 
@@ -1717,19 +1717,19 @@ forlinx@ubuntu:~/en-us--MA35_SWriter_V1.03/MA35D1_NuWriter-master/pack$ sudo dd 
 
 After execution is complete, click VM -> Removable Devices, find the TF card device, and select Disconnect (connect to the host) to reconnect the TF card to the host.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819085-2e720a81-4e6d-423a-9768-960aaa12920a.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819085_2e720a81_4e6d_423a_9768_960aaa12920a.png)
 
 A prompt will appear at this point; click Cancel and do not format.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819154-a97f9295-f641-4691-9831-efb8eafc4a60.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819154_a97f9295_f641_4691_9831_efb8eafc4a60.png)
 
 In My Computer, find the USB drive, right-click, and select Format.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819216-6648a982-6c8d-4b3d-b846-f1435132d9d9.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819216_6648a982_6c8d_4b3d_b846_f1435132d9d9.png)
 
 A capacity of 1GB is normal. Choose FAT as the file system, select the default allocation unit size, enable Quick Format, and click Start.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819294-37924ed9-e388-4d0c-abce-3f873fc8b54f.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819294_37924ed9_e388_4d0c_abce_3f873fc8b54f.png)
 
 Once the formatting is complete, the card creation process is finished.
 
@@ -1737,8 +1737,8 @@ Once the formatting is complete, the card creation process is finished.
 
 Enter the virtual machine and navigate to the ~/en-us--MA35\_SWriter\_V1.03/Release/disk-content directory. Copy the config file to the TF card. Go to the images directory of the SDK and compile the bl2.bin, bl2.dtb, fip.bin-sdcard, header-image-OKMA35-S2\_emmc-sdcard.bin, Image, Image.dtb, MBR.sdcard.bin, rootfs.ext4, uboot-env.bin-sdcard, then put it on the TF card, then rename header-image-OKMA35-S2-emmc-sdcard.bin to header.bin to complete the production of the flash card. The files on the created flashing card are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819375-b3d67519-802f-488d-aba5-70a016dd3c8c.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819375_b3d67519_802f_488d_aba5_70a016dd3c8c.png)
 
 Insert the TF card into the development board, power off the board, set the DIP switch to TF card boot mode, then power it on. If the following information is displayed, it indicates that the flashing was successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790819437-1aeaab6a-390c-4123-854c-db0d20c5a966.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790819437_1aeaab6a_390c_4123_854c_db0d20c5a966.png)
