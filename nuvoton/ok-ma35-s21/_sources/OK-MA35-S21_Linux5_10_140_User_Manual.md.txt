@@ -199,7 +199,7 @@ root@OKMA35-S2/# ifconfig eth0 172.20.0.143          // Configure the IP accordi
 
 2\. Install the FileZilla tool on Windows and set it up as shown in the figure below.
 
-Note: This function requires the development board to be connected to the network cable; the host IP is set in the same network segment as the client, ensuring that the host and the client are in the same LAN; username root, password root; after successful login, you can upload, download and delete files anywhere in the file system.
+**Note: This function requires the development board to be connected to the network cable; the host IP is set in the same network segment as the client, ensuring that the host and the client are in the same LAN; username root, password root; after successful login, you can upload, download and delete files anywhere in the file system.**
 
 Test with the development board IP 172.20.0.143. Please modify the development board IP according to the actual situation.
 
@@ -311,7 +311,7 @@ Click start to open the dog feeding function by default and feed the dog regular
 
 When unchecking feed dog, count down 6s and the system enters reboot. It indicates that the Watchdog function is normal.
 
-Note: watchdog only supports three timeout settings: 0.5, 2, and 8 seconds. Setting other times will automatically adjust to these three times.
+**Note: watchdog only supports three timeout settings: 0.5, 2, and 8 seconds. Setting other times will automatically adjust to these three times.**
 
 #### 3.1.9 RTC Test
 
@@ -325,7 +325,7 @@ After selecting "Manual," you can manually set the time by choosing "date" and "
 
 Click Auto to perform network timing, and click apply to perform timing successfully.
 
-**Note: **
+**Note:**
 
 - **If "Unable to access the network by DNS name" pops up during network synchronization, please replace the DNS and restart the application before network synchronization;**
 
@@ -480,7 +480,7 @@ The test process requires 2 x 485 interfaces to be tested. The 485 level is shor
 ![Image](./images/OK-MA35-S21_Linux5_10_140_User_Manual/1733790813786_8e7efdd5_695c_4eac_bbd7_929995ea71e3.png)
 
 ```plain
-root@OKMA35-S2/# fltest_485test /dev/ttyS15 /dev/ttyS2   //485_1进行发送，485_2进行接受
+root@OKMA35-S2/# fltest_485test /dev/ttyS15 /dev/ttyS2   //485 _ 1 sends, 485 _ 2 receives
 opening serial port:/dev/ttyS15
 rs485conf_bak.flags 0x3.
 rs485conf_bak.delay_rts_before_send 0x0.
@@ -499,7 +499,7 @@ rs485conf_bak.delay_rts_after_send 0x80.
  uart2 compare correct!!
 
  uart2 test done!!
-root@OKMA35-S2/# fltest_485test /dev/ttyS2 /dev/ttyS15   //485_2进行发送，485_1进行接受
+root@OKMA35-S2/# fltest_485test /dev/ttyS2 /dev/ttyS15   //485_2 sends，485_1 receives
 opening serial port:/dev/ttyS2
 rs485conf_bak.flags 0x3.
 rs485conf_bak.delay_rts_before_send 0x0.
@@ -917,7 +917,7 @@ Write test:
 root@OKMA35-S2/# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=100 conv=fsync oflag=direct
 100+0 records in
 100+0 records out
-104857600 bytes (105 MB, 100 MiB) copied, 135.662 s, 773 kB/s //写入速度受限于具体的存储设备。
+104857600 bytes (105 MB, 100 MiB) copied, 135.662 s, 773 kB/s //The write speed is limited to the specific storage device.
 ```
 
 Read Test: To make sure the data is accurate, please restart the development board and test the reading speed.
@@ -1139,7 +1139,7 @@ udhcpc: lease of 10.69.128.161 obtained, lease time 7200
 [02-11_16:35:45:947] deleting routers
 [02-11_16:35:45:992] adding dns 111.11.1.3
 [02-11_16:35:45:992] adding dns 111.11.11.3
-root@OKMA35-S2/# ping www.forlinx.com		//进行ping测试
+root@OKMA35-S2/# ping www.forlinx.com		//Perform ping test
 PING www.forlinx.com (211.149.226.120): 56 data bytes
 64 bytes from 211.149.226.120: seq=0 ttl=48 time=76.262 ms
 64 bytes from 211.149.226.120: seq=1 ttl=48 time=60.788 ms
