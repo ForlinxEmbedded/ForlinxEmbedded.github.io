@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>00_OK-MA35-S21_Linux5.10.140_用户编译手册 &mdash; Forlinx Embedded MA35D1 Documentation  documentation</title>
+  <title>Linux5.10.140_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded MA35D1 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -68,62 +68,58 @@
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="OK-MA35-S21_Linux5_10_140_User_Manual.html">Linux5.10.140_User’s Manual_V1.0</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">00_OK-MA35-S21_Linux5.10.140_用户编译手册</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id1">免责声明</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id2">概述</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id3">更新记录</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#vmware">01_VMware虚拟机软件安装</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id4">1.1 VMware软件的下载与购买</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">1.2 VMware软件的安装</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.10.140_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-download-and-purchase">1.1 VMware Software Download and Purchase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#ubuntu">02_加载已有ubuntu开发环境</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id6">03_搭建新的ubuntu开发环境</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id7">3.1  ubuntu系统搭建</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id8">3.1.1. 创建ubuntu虚拟机</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">3.1.2 系统安装</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">3.1.3 Ubuntu的基本配置</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">3.1.4 Ubuntu的网络设置</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#u">3.1.5 U盘的加载</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">3.1.6 虚拟机基本库安装</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#okma35-linux">3.1.7 编译OKMA35 Linux源码必要库安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-creation">3.1 Ubuntu System Creation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basic-ubuntu-installation">3.1.3 Basic Ubuntu Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-network-settings">3.1.4 Ubuntu Network Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#u-disk-loading">3.1.5 U Disk Loading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#virtual-machine-basic-library-installation">3.1.6 Virtual Machine Basic Library Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installation-of-necessary-libraries-for-compiling-okma35-linux-source-code">3.1.7 Installation of Necessary Libraries for Compiling OKMA35 Linux Source Code</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id13">3.2 Ubuntu常用软件安装</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#vscode">3.2.1 VScode工具安装软件工具</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#apt">3.2.2 apt命令指定国内源</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nfs">3.2.3 安装NFS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-common-software-installation">3.2 Ubuntu Common Software Installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vscode">3.2.1 VScode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nfs-installation">3.2.3 NFS Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#qt">3.3 QT环境的搭建与使用</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#qt-creator">3.3.1 Qt creator环境搭建</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id14">3.3.2 环境配置</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id15">3.3.2.1 交叉编译器的配置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debuggers">3.3.2.2 Debuggers配置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#qt-version">3.3.2.3 Qt Version 配置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#kits">3.3.2.4 Kits配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qt-environment-setup-and-use">3.3 QT Environment Setup and Use</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#qt-creator-environment-setup">3.3.1 Qt Creator Environment Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#environment-configuration">3.3.2 Environment Configuration</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#linux-compilation">4. Linux Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description-of-the-environment">4.1.1 Description of the Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code-copy">4.1.2 Source Code Copy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">4.1.3 Configuration of the Cross-compiler</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#linux">04_linux编译篇</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id16">4.1 编译前准备</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id17">4.1.1 环境说明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id18">4.1.2 拷贝源码</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id19">4.1.3 交叉编译工具链配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code-compilation">4.2 Source Code Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#full-compilation-test">4.2.1 Full Compilation Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#individual-compilation-tests">4.2.2 Individual Compilation Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clearance-of-files-generated-by-the-compilation">4.2.3 Clearance of Files Generated by the Compilation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id20">4.2 源码编译</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id21">4.2.1 全编译测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">4.2.2 单独编译测试</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id23">4.2.3 清除编译生成的文件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application-compilation-and-operation">4.3 Application Compilation and Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#command-line-application-compilation-and-operation">4.3.1 Command Line Application Compilation and Operation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qt-application-compilation-and-application">4.3.2 Qt Application Compilation and Application</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id24">4.3 应用程序编译及运行</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id25">4.3.1 编译并运行命令行应用</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id26">4.3.2 编译并运行Qt应用</a></li>
 </ul>
 </li>
 </ul>
@@ -144,7 +140,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">00_OK-MA35-S21_Linux5.10.140_用户编译手册</li>
+      <li class="breadcrumb-item active">Linux5.10.140_User’s Compilation Manual_V1.0</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -153,446 +149,425 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok-ma35-s21-linux5-10-140">
-<h1>00_OK-MA35-S21_Linux5.10.140_用户编译手册<a class="headerlink" href="#ok-ma35-s21-linux5-10-140" title="Link to this heading"></a></h1>
-<p>发布版本：V1.0<br />
-日期：2024-12-10<br />
-文件密级：□绝密 □秘密 □内部资料 ■公开</p>
+  <section id="linux5-10-140-users-compilation-manual-v1-0">
+<h1>Linux5.10.140_User’s Compilation Manual_V1.0<a class="headerlink" href="#linux5-10-140-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright-notice">
+<h2>Copyright Notice<a class="headerlink" href="#copyright-notice" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
-<section id="id1">
-<h1>免责声明<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<p><font style="color:#000000;">本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。</font></p>
-<p><font style="color:#000000;">保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。 </font></p>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK-MA35-S21 platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
 </section>
-<section id="id2">
-<h1>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
-<p>本手册是为了让使用飞凌嵌入式开发板的人员能够快速了解飞凌产品的编译过程，熟悉飞凌产品的编译方式。应用程序需要在Linux操作系统上先进行交叉编译，才能在开发板上运行，按照编译手册上的方法，通过实际操作，用户能够完成自己软件代码的编译。</p>
-<p>手册会从环境搭建进行说明，环境搭建过程可能会出现一些不可预见的问题，建议初学者直接使用我们搭建好的开发环境，可以快速上手，缩短开发时间。</p>
-<p>Linux系统通常情况下有三种安装方式：真机双系统、真机单系统、虚拟机。不同安装方式都有其优缺点，本文仅提供在虚拟机中搭建ubuntu的方法。计算机硬件要求：建议内存至少在6GB及以上，这样在给虚拟机分一部内存运行的同时（虚拟机建议2GB以上），还可以在Windows做其他操作，否则会影响到Windows的操作。</p>
-<p>在内容上手册主要分为4个章节描述：</p>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p>Manual Version</p></th>
+<th class="head text-center"><p><strong>SoM Version</strong></p></th>
+<th class="head text-center"><p><strong>Carrier Board Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>10/12/2024</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1 and Above</p></td>
+<td><p>OK-MA35-S21 User’s Compilation Manual Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to enable users of the Forlinx Embedded development board to quickly understand the compilation process of the products and familiarize themselves with the compilation methods of Forlinx products. The application program needs to be cross-compiled on the Linux operating system before it can run on the development board. According to the method in the compilation manual, users can compile their own software code through practical operation.</p>
+<p>The manual will provide instructions for setting up the environment but there may be some unforeseen issues during the environment setup process. For beginners, it is recommended to use the pre-configured development environment provided by us. This will allow you to quickly get started and reduce development time.</p>
+<p>Linux systems are typically installed in three ways: dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine. Computer hardware requirements: It is recommended to have at least 6GB of memory or more, so that you can allocate some memory to run the virtual machine (the virtual machine is recommended to have more than 2GB) and still do other operations on Windows, otherwise it will affect the performance of Windows.</p>
+<p>The manual is mainly divided into four chapters:</p>
 <ul class="simple">
-<li><p>第一章主要是VMware的安装，选用的版本为VMware® Workstation 15 Pro15.1.0，用户在使用ubuntu开发环境之前要先安装VMware ；</p></li>
-<li><p>第二章主要是加载飞凌提供的ubuntu开发环境的方法，开发环境为64位ubuntu20.04；</p></li>
-<li><p>第三章主要是搭建新的ubuntu开发环境的方法。本节选用的64位ubuntu20.04为例，描述了ubuntu的创建，由于电脑配置不同，搭建过程可能会出现预料之外的问题，建议初学者直接使用我们搭建好的环境；</p></li>
-<li><p>第四章主要是开发板相关源码编译方法。</p></li>
-<li><p>本手册中一些符号及格式的相关说明：</p></li>
+<li><p>Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment.</p></li>
+<li><p>Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu20.04.</p></li>
+<li><p>Chapter 3. mainly introduces the method of building a new ubuntu development environment. It takes 64-bit Ubuntu 20.04 as an example to describe the creation process of Ubuntu. Due to different computer configurations, unexpected problems may arise during the setup process. It is recommended for beginners to use the environment that we have set up directly.</p></li>
+<li><p>Chapter 4. mainly introduces the methods of compiling the source code related to the development board.</p></li>
 </ul>
+<p>A description of some of the symbols and formats in the manual:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>表现形式</strong></p></th>
-<th class="head"><p><strong>含义</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>灰底蓝色字体</p></td>
-<td><p>指在命令行输入的命令，需要手动输入</p></td>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
+<td><p>Note or information that requires special attention, be sure to read carefully.</p></td>
 </tr>
-<tr class="row-odd"><td><p>灰底黑色字体</p></td>
-<td><p>输入命令后的串口输出信息</p></td>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>Relevant notes on the test chapters.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>灰底黑色加粗</strong></p></td>
-<td><p>串口输出信息中的关键信息</p></td>
+<tr class="row-even"><td class="text-center"><p>️🛤️</p></td>
+<td><p>Indicates the related path.</p></td>
 </tr>
-<tr class="row-odd"><td><p>//</p></td>
-<td><p>对输入指令或输出信息的解释内容</p></td>
+<tr class="row-odd"><td class="text-center"><p><font style="color:blue;">Blue font on gray background</font></p></td>
+<td><p><font style="color:#000000;">Refers to commands entered at the command line (Manual input required).</font></p></td>
 </tr>
-<tr class="row-even"><td><p>用户名&#64;主机名</p></td>
-<td><p><strong>root&#64;okmx8mm</strong>:开发板串口登录账户信息， <strong>forlinx&#64;ubuntu</strong>：开发环境<strong>ubuntu</strong>账户信息， 用户可通过该信息确定功能操作的环境</p></td>
+<tr class="row-even"><td class="text-center"><p><font style="color:black;">Black font</font></p></td>
+<td><p>Serial port output message after entering a command</p></td>
 </tr>
-</tbody>
-</table>
-</section>
-<section id="id3">
-<h1>更新记录<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>日期</strong></p></th>
-<th class="head"><p>手册版本</p></th>
-<th class="head"><p><strong>更新内容</strong></p></th>
+<tr class="row-odd"><td class="text-center"><p><strong><font style="color:black;">Bold black</font></strong></p></td>
+<td><p><font style="color:#000000;">Key information in the serial port output message</font></p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>20241210</p></td>
-<td><p>V1.0</p></td>
-<td><p>OK-MA35-S21 用户编译手册初版。</p></td>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">//</font></p></td>
+<td><p><font style="color:#000000;">Interpretation of input instructions or output information</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Username&#64;Hostname</p></td>
+<td><p><font style="color:#000000;">root&#64;ok3568: development board serial port login account information,</font><br/><font style="color:#000000;">forlinx &#64; ok3568: development board network login account information</font><br/><font style="color:#000000;">forlinx &#64; Ubuntu: development environment Ubuntu account information</font><br/>You can determine the environment for function operation through this information.</p></td>
 </tr>
 </tbody>
 </table>
+<p>You can determine the operating environment for functional operations based on this information.</p>
 </section>
-<section id="vmware">
-<h1>01_VMware虚拟机软件安装<a class="headerlink" href="#vmware" title="Link to this heading"></a></h1>
-<p>本章主要介绍VMware虚拟机的安装，以VMware workstation 15 Pro v15.1.0为例展示操作系统的安装配置过程。</p>
-<section id="id4">
-<h2>1.1 VMware软件的下载与购买<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://www.vmware.com/cn.html">登陆VMware官网https://www.vmware.com/cn.html下载</a>Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者使用VMware提供的试用版本。</p>
+<section id="vmware-virtual-machine-software-installation">
+<h2>1. VMware Virtual Machine Software Installation<a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h2>
+<p>This chapter mainly introduces the installation of VMware virtual machines, using VMware Workstation 15 Pro v15.1.0 as an example to demonstrate the installation and configuration process of the operating system.</p>
+<section id="vmware-software-download-and-purchase">
+<h3>1.1 VMware Software Download and Purchase<a class="headerlink" href="#vmware-software-download-and-purchase" title="Link to this heading"></a></h3>
+<p>Visit Vmware official website <a class="reference external" href="https://www.vmware.com/cn.html">https://www.vmware.com/cn.html</a> for downloading Workstation Pro and obtaining the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.</p>
 <p><img alt="Image" src="_images/1733790822205_af9e963f_ead8_498e_92e7_3208486f2c24.jpg" /></p>
-<p>等待下载完成后双击启动文件启动安装程序。</p>
+<p>After the download is complete, double-click the installation file to start the installation program.</p>
 </section>
-<section id="id5">
-<h2>1.2 VMware软件的安装<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
-<p>双击启动程序进入安装向导。</p>
+<section id="vmware-software-installation">
+<h3>1.2 VMware Software Installation<a class="headerlink" href="#vmware-software-installation" title="Link to this heading"></a></h3>
+<p>Double-click the startup program to enter the installation wizard.</p>
 <p><img alt="Image" src="_images/1733790822295_9e42dc0e_e466_46d8_ac13_d11d067644dc.jpg" /></p>
-<p>点击“下一步”。</p>
+<p>Click on “Next”.</p>
 <p><img alt="Image" src="_images/1733790822398_c3a35e52_7e01_4953_a7ed_15c823179813.jpg" /></p>
-<p>勾选我接受许可协议中的条款，点击“下一步”。</p>
+<p>Check the terms in the license agreement that I accept, then click “Next”.</p>
 <p><img alt="Image" src="_images/1733790822485_b4af7e60_11ed_400a_b4a7_0609d58dd838.jpg" /></p>
-<p>修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。</p>
+<p>Modify the installation location to the partition where you want to install the software on your computer, then click ‘“Next”.</p>
 <p><img alt="Image" src="_images/1733790822582_4f1e9473_4183_4c27_835d_82748f3a8dfb.jpg" /></p>
-<p>勾选，点击“下一步”。</p>
+<p>Check and click on “Next”.</p>
 <p><img alt="Image" src="_images/1733790822696_9a6dd1b2_65ba_4241_b28e_306266f27c99.jpg" /></p>
-<p>勾选添加快捷方式，点击“下一步”。</p>
+<p>Check the box to add a shortcut, then click “Next”.</p>
 <p><img alt="Image" src="_images/1733790822823_bc603fa8_6bc1_4a7f_823c_35f4d5a5a888.jpg" /></p>
-<p>点击“安装”。</p>
+<p>Click “Installation”.</p>
 <p><img alt="Image" src="_images/1733790822917_ba292b16_0c89_4caa_9335_aed18a8a9b08.jpg" /></p>
-<p>等待安装完成。</p>
+<p>Wait for the installation to complete.</p>
 <p><img alt="Image" src="_images/1733790822998_86a6e012_0c30_4c20_86fc_c38b92bb0249.jpg" /></p>
-<p>点击完成后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。</p>
+<p>Click “Finish” to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.</p>
 </section>
 </section>
-<section id="ubuntu">
-<h1>02_加载已有ubuntu开发环境<a class="headerlink" href="#ubuntu" title="Link to this heading"></a></h1>
-<p><strong>建议初学者直接使用飞凌搭建好的虚拟机环境。了解完该章节后可以直接跳转到编译章节。</strong></p>
-<p><strong>提供开发环境的账户为：forlinx，密码为：forlinx</strong></p>
-<p>在VMware下使用虚拟机的环境有两种方式，一种是直接加载已有的环境，另一种是新建一个环境，我们先来说说如何加载一个已经存在的环境。</p>
-<p>首先，下载飞凌提供的开发环境，开发环境资料中有MD5校验文件，用户下载完开发环境资料，先对开发环境压缩包进行MD5校验（MD5校验可以在网络上选择MD5在线工具校验，也可以下载MD5校验工具进行校验，可根据实际情况选择），查看校验码和校验文件中校验码是否一致，若一致则下载文件正常；若不一致，则文件可能有破损，需要重新下载。</p>
-<p>选中所有压缩包，右键解压到Nuvoton-Ubuntu 20.04，如下图所示：</p>
+<section id="loading-the-existing-ubuntu-development-environment">
+<h2>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h2>
+<p>It is recommended that beginners use the virtual machine environment built by Forlinx directly. After understanding this chapter, you can directly jump to the compilation chapter for further study.</p>
+<p>The development environment provided is: forlinx (username), forlinx (password).</p>
+<p>There are two ways to use a virtual machine environment in VMware: one is to directly load an existing environment, and the other is to create a new environment. Let’s first talk about how to load an existing environment.</p>
+<p>First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don’t match, it suggests that the file may be corrupt, and you should consider downloading it again.</p>
+<p>Select all compressed files and right-click to extract them to Nuvoton Ubuntu 20.04, as shown in the following figure:</p>
 <p><img alt="Image" src="_images/1733790824390_7eae1b4b_6fbe_40af_ae12_a5c82c76742d.jpg" /></p>
-<p>解压完成后出现 MA35标准环境文件夹，其中.vmx为虚拟机要打开的文件。</p>
+<p>The MA35 Standard Environment folder appears after the decompression is complete, where .vmx is the file to be opened by the virtual machine.</p>
 <p><img alt="Image" src="_images/1733790824469_8696b737_a3dd_496a_91b6_d37b642868a8.png" /></p>
-<p>打开虚拟机，选择解压出来的MA35开发环境中文件：Nuvoton- Ubuntu 20.04.vmx</p>
+<p>Open the virtual machine and select the extracted file in the MA35 development environment: Nuvoton-Ubuntu 20.04.vmx</p>
 <p><img alt="Image" src="_images/1733790824572_6a93c8bd_36d1_4013_b38b_a3af7a72c349.jpg" /></p>
-<p>加载完成后点击开启此虚拟机，即可运行，进入系统的界面。</p>
+<p>Turn on this virtual machine after loading is complete to run it and enter the system’s interface.</p>
 <p><img alt="Image" src="_images/1733790824657_b2aeea91_7cc4_4f8e_bc60_75a70b9766a7.png" /></p>
 <p><img alt="Image" src="_images/1733790824726_abecd732_3912_4234_b0bf_6b10a1dec667.png" /></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
-</pre></div>
-</div>
+<p>The account providing the development environment is “forlinx”, and the password is “forlinx”. After filling in the password, select Sign in to log in.</p>
 <p><img alt="Image" src="_images/1733790824797_6d14e9fd_be89_46c9_b3a0_886cf1251025.jpg" /></p>
-<p><strong>注意：如果启动后，显示“客户端操作系统已禁用CPU。请关闭或重置虚拟机”。则重新开启虚拟机，开启过程中移植按住shift键，弹出grub菜单。选择advanced options for ubuntu。然后选择linux 5.13.0-30-generic进行启动。</strong></p>
+<p><strong>Note: If, after booting, the “Client OS CPU Disabled” is displayed. Shut down or reset the virtual machine. Restart the virtual machine. During the startup process, press and hold the shift key to pop up the grub menu. Select advanced options for ubuntu。 Then select linux 5.13.0-30-generic to boot.</strong></p>
 <p><img alt="Image" src="_images/1733790824882_bd6b0846_1e19_4cf5_a4ad_698966c37cfa.jpg" /></p>
 <p><img alt="Image" src="_images/1733790824953_0d160266_9171_44dd_b66d_6206472f4c34.jpg" /></p>
 <p><img alt="Image" src="_images/1733790825062_c66163f7_b12b_44dd_8b8a_5ad22fb51533.jpg" /></p>
 </section>
-<section id="id6">
-<h1>03_搭建新的ubuntu开发环境<a class="headerlink" href="#id6" title="Link to this heading"></a></h1>
-<p><strong>注意：初学者不建议自己搭建系统，建议使用已有虚拟机环境，不需要搭建环境的此节可以跳过本章节主要讲解了ubuntu系统的搭建过程。</strong></p>
-<section id="id7">
-<h2>3.1  ubuntu系统搭建<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
-<section id="id8">
-<h3>3.1.1. 创建ubuntu虚拟机<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
-<p>打开VMware软件，点击创建新的虚拟机。进入以下界面：</p>
+<section id="new-ubuntu-development-environment-setup">
+<h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
+<p><strong>Note: Beginners are not recommended to build the system by themselves. It is suggested to use the existing virtual machine environment. If you do not need to build the environment, you can skip this section. This section mainly explains the process of building the ubuntu system.</strong></p>
+<section id="ubuntu-system-creation">
+<h3>3.1 Ubuntu System Creation<a class="headerlink" href="#ubuntu-system-creation" title="Link to this heading"></a></h3>
+<section id="ubuntu-virtual-machine-setup">
+<h4>3.1.1 Ubuntu Virtual Machine Setup<a class="headerlink" href="#ubuntu-virtual-machine-setup" title="Link to this heading"></a></h4>
+<p>Open the VMware software, click on create a new virtual machine. Enter the following interface</p>
 <p><img alt="Image" src="_images/1733790826446_535bfcff_4ef2_4c4a_9c8a_a91d8aae50ac.jpg" /></p>
-<p>选择自定义，点击“下一步”。</p>
+<p>Choose custom, and click “Next”.</p>
 <p><img alt="Image" src="_images/1733790826531_23e888a8_82af_49d4_9608_e6c391d55c12.jpg" /></p>
-<p>选择对应VMware版本的兼容性，版本可在帮助-&gt;关于VMware Workstation中查看，点击“下一步”。</p>
+<p>Select the compatibility with the corresponding version of VMware, which can be found in Help-&gt;About VMware Workstation, and click “Next”.</p>
 <p><img alt="Image" src="_images/1733790826664_b2dc2020_bb2c_459b_b48f_5ae902adc707.jpg" /></p>
-<p>选择稍后安装操作系统，点击“下一步”。</p>
+<p>Select Install the operating system later and click “Next”.</p>
 <p><img alt="Image" src="_images/1733790826733_30c16c1a_e3a1_4086_a246_a48e9bbec261.jpg" /></p>
-<p>保持默认，点击“下一步”。</p>
+<p>Leave the default and click “Next”.</p>
 <p><img alt="Image" src="_images/1733790826831_17f1d65c_5ef0_46e1_88ac_4cd75031eedd.png" /></p>
-<p>修改虚拟机名称及安装位置，点击“下一步”。</p>
+<p>Modify the virtual machine name and installation location, click “Next”.</p>
 <p><img alt="Image" src="_images/1733790826916_1a8ab513_20f4_42f8_b464_2662bd289480.png" /></p>
-<p>按照实际情况设置处理器数量。</p>
+<p>Set the number of processors as appropriate.</p>
 <p><img alt="Image" src="_images/1733790826987_e4d51f5b_075a_48d1_bcfe_a81a49b76108.jpg" /></p>
-<p>同样按照实际情况设置内存大小，建议使用16G（根据自己机器性能做调整）。</p>
+<p>Also, set the memory size according to the actual situation; it is recommended to use 16G (adjusted according to the performance of your machine).</p>
 <p><img alt="Image" src="_images/1733790827128_dc81f360_cdbc_4be2_ab28_12209bea6935.png" /></p>
-<p>设置网络类型，默认为NAT模式，点击下一步。后面的步骤保持默认值，直到指定磁盘容量步骤。</p>
+<p>Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.</p>
 <p><img alt="Image" src="_images/1733790827200_409cb15a_39f2_4494_959a_1507d0b8c16b.png" /></p>
-<p>IO控制器类型这里默认选择LSI就可以：</p>
+<p>The default selection for the IO controller type here is LSI.</p>
 <p><img alt="Image" src="_images/1733790827365_4c11ac8e_3d34_4840_9806_6aa5f3d76e4b.png" /></p>
-<p>这里同样是默认选择SCSI。</p>
+<p>The default selection here is also SCSI.</p>
 <p><img alt="Image" src="_images/1733790827428_9586ad46_164b_424d_871f_68ab3cb6cbbd.png" /></p>
-<p>这里选择创建新的虚拟磁盘：</p>
+<p>Choose to create a new virtual disk here.</p>
 <p><img alt="Image" src="_images/1733790827526_beea4fd8_ef46_4499_8cc0_de7c349fa185.png" /></p>
-<p>设置磁盘大小为200G，并选择磁盘的存在形式，然后点击“下一步”完成。</p>
+<p>Set the disk size to 200 gigabytes and select the form in which the disk exists, then click Next to finish.</p>
 <p><img alt="Image" src="_images/1733790827605_4c3ce394_a38c_4414_ae25_f27607ed7c47.png" /></p>
-<p>指定磁盘文件，这里默认即可。</p>
+<p>Specify the disk file, the default one here is fine.</p>
 <p><img alt="Image" src="_images/1733790827669_53ef8be5_1422_43c8_a95e_1686051ea4db.png" /></p>
-<p>默认点击“完成”即可。</p>
+<p>Click Finish by default.</p>
 <p><img alt="Image" src="_images/1733790827733_b4218d06_a674_47d1_8043_062281cd3fca.png" /></p>
-<p>至此，虚拟机创建完成。</p>
-<p>下一小节中我们介绍Ubuntu系统在虚拟机中的安装，其在真机中的安装方法与虚拟机类似。这里我们介绍在虚拟机中安装Ubuntu系统的方法。</p>
+<p>The virtual machine creation is now complete.</p>
+<p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
 </section>
-<section id="id9">
-<h3>3.1.2 系统安装<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
-<p>我们选择安装的Ubuntu 版本是20.04，首先去Ubuntu官网获取Ubuntu20.04 64位镜像，下载地址为：<a class="reference external" href="http://sources.ubuntu.com/20.04/%E4%B8%8B%E8%BD%BD%E2%80%9Cubuntu-20.04.6-desktop-amd64.iso%E2%80%9D%E8%BF%99%E4%B8%AA%E7%89%88%E6%9C%AC%E3%80%82">http://sources.ubuntu.com/20.04/下载“ubuntu-20.04.6-desktop-amd64.iso”这个版本。</a></p>
+<section id="system-installation">
+<h4>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h4>
+<p>The version of Ubuntu chosen to install is 20.04, first of all, go to the official website of Ubuntu to get the Ubuntu20.04 64-bit image,the download address is download “ubuntu-20.04.6-desktop-amd64.iso” version.</p>
 <p><img alt="Image" src="_images/1733790827796_7662c8fb_063b_42dc_8ce1_8c85f9381705.jpg" /></p>
-<p>右击刚创建完成的Ubuntu64位 在弹出菜单中选择设置：</p>
+<p>Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.</p>
 <p><img alt="Image" src="_images/1733790827865_5ee59080_9d2d_4090_9db8_6252546aaed8.jpg" /></p>
-<p>弹出“虚拟机设置菜单”根据如下图：</p>
+<p>The “Virtual Machine Settings Menu” pops up as shown below:</p>
 <p><img alt="Image" src="_images/1733790827941_b89bcc96_9095_4fab_9fa5_c177b5b003cc.jpg" /></p>
-<p>点击CD/DVD（SATA），选择使用ISO映像文件，浏览选择前面下载的Ubuntu镜像，然后确定。</p>
+<p>Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.</p>
 <p><img alt="Image" src="_images/1733790828067_f1e8e135_1470_4c02_a438_16875862a70e.jpg" /></p>
-<p>设置好镜像后，保证网络可用，然后开启虚拟机，进行Ubuntu镜像的安装。</p>
+<p>After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.</p>
 <p><img alt="Image" src="_images/1733790828160_a11ca836_a830_4abd_9cc4_c0159be3bfb2.jpg" /></p>
-<p>开启虚拟机后，等待出现安装界面如下：</p>
+<p>After starting the virtual machine, wait for the installation interface to appear as shown below.</p>
 <p><img alt="Image" src="_images/1733790828261_1256882c_65fa_46e0_93dc_00bd555dab80.jpg" /></p>
-<p>如图左侧选择语言后,点击“Install Ubuntu”后弹出选择语言界面。Ubuntu默认语言是英文的，当然，也可以选择中文，默认选择的语言在后期也是可以重新设置的，选择完成后continue。</p>
+<p>After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.</p>
 <p><img alt="Image" src="_images/1733790828380_68fd77e4_67e6_46e4_9829_0c2e60fddd84.jpg" /></p>
-<p>接下来，默认选择continue继续安装，安装过程会很慢，然后点击“continue”：</p>
+<p>Next, by default, select continue to finish the installation, the installation process will be very slow, then click “continue”:</p>
 <p><img alt="Image" src="_images/1733790828482_f29424d0_0417_4fe5_bc31_e9b15ba6b761.jpg" /></p>
-<p>默认，点击Install Now，会弹出下图，点击“continue”即可。</p>
+<p>Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:</p>
 <p><img alt="Image" src="_images/1733790828552_a220f7fc_5413_4dfa_bc1b_5843bf4322c3.jpg" /></p>
 <p><img alt="Image" src="_images/1733790828638_ceb4aadd_48a2_491d_8c78_8ee7c06e5c60.jpg" /></p>
-<p>接下来选择时区，这里点击上海时区或输入Shanghai即可（不同时区根据实际情况选择即可），点击“继续”。最后设置用户名和密码，点击“continue”就会自动安装：</p>
+<p>Next, select the timezone. You can either click on the Shanghai timezone or enter “Shanghai” (or choose the appropriate timezone based on your location). Then, click “Continue” to proceed. Finally, set your username and password and click “continue” to automatically install the program:</p>
 <p><img alt="Image" src="_images/1733790828740_16883e62_e882_4315_a671_313eb3be7907.jpg" /></p>
-<p>安装过程下图，网络不好可以Skip跳过，不影响安装。</p>
+<p>The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.</p>
 <p><img alt="Image" src="_images/1733790828884_85b8f077_6871_4f31_8012_51cff28f7c39.jpg" /></p>
-<p>安装完成后显示如下图，点击“Restart Now”重启（或者点击“重新启动客户机”）：</p>
+<p>After the installation, click “Restart Now” to reboot (or click “Reboot Client”):</p>
 <p><img alt="Image" src="_images/1733790828957_7593de8c_d633_4f37_8c8c_44ea15ffd67f.jpg" /></p>
 <p><img alt="Image" src="_images/1733790829054_1cce6b86_dbfc_4a31_b539_5942931a1e90.jpg" /></p>
-<p>重启完成登录后系统界面如下图：</p>
+<p>The system interface after the reboot is complete as shown below:</p>
 <p><img alt="Image" src="_images/1733790829137_75de9a16_3cea_4d71_bd15_1a0253e76f2c.jpg" /></p>
 </section>
-<section id="id10">
-<h3>3.1.3 Ubuntu的基本配置<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
-<p>安装好Ubuntu20.04操作系统后，要进行一些配置。</p>
-<p><strong>VMware Tools安装：</strong></p>
-<p>接下来安装VMware Tools，如果不安装该工具，在Windows主机和虚拟机之间无法使用复制粘贴、文件拖拽。首先点击VMware 导航栏上的“虚拟机”，然后在下拉框中点击“安装VMware Tools”：</p>
+<section id="basic-ubuntu-installation">
+<h4>3.1.3 Basic Ubuntu Installation<a class="headerlink" href="#basic-ubuntu-installation" title="Link to this heading"></a></h4>
+<p>After installing the Ubuntu20.04 operating system, there are a few configurations to make.</p>
+<p><strong>VMware Tools Installation:</strong></p>
+<p>Next, install VMware Tools. Without installing this tool, you won’t be able to copy and paste and drag file between the Windows host and the virtual machine. First click on “Virtual Machines” on the VMware navigation bar, then click “Install VMware Tools” in the drop-down box.</p>
 <p><img alt="Image" src="_images/1733790829213_d1f1c00d_87f3_4cc4_bccf_df3b9166c3d3.jpg" /></p>
-<p>完成后进入Ubuntu，桌面会出现VMware Tools的光盘图标，点击进入其中：</p>
+<p>Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:</p>
 <p><img alt="Image" src="_images/1733790829295_ba21503b_3c98_4404_99b3_4bb295daeb7c.jpg" /></p>
-<p>双击VMwareTools图标，进入后看到一个压缩文件VMwareTools-10.3.10-12406962.tar.gz（不同的虚拟机版本可能会不同），</p>
+<p>Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).</p>
 <p><img alt="Image" src="_images/1733790829361_007f7d7c_1c5c_4f65_bfe5_5469d56b440f.jpg" /></p>
-<p>复制文件到主目录下面（即home 个人用户名的目录下）：</p>
+<p>Copy the file under the home directory (i.e., the directory of the home personal username):</p>
 <p><img alt="Image" src="_images/1733790829479_22a3d660_ecee_4629_8889_177d5bc45aeb.jpg" /></p>
 <p><img alt="Image" src="_images/1733790829582_da3a2404_cbd0_4d43_81de_683cb43f7b08.jpg" /></p>
-<p>按键盘【Ctrl+Alt+T】调出终端命令界面，使用tar命令对VMwareTools安装包解压（使用sudo命令会提示输入密码，根据提示直接输入密码回车即可，Linux系统密码输入无回显，确保输入的密码正确后按回车确认即可）：</p>
+<p>Press the keyboard [Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the sudo command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo tar -xvf VMwareTools-10.3.10-12406962.tar.gz 
 [sudo] password for forlinx:
 </pre></div>
 </div>
-<p>执行完解压命令后，使用ls查看，会出现一个vmware-tools-distrib的文件目录， 进入到该目录</p>
+<p>After executing the extract command, use ls to view the file directory vmware-tools-distrib, and go to the directory</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ls
 Desktop   examples.desktop   nfs   snap   tftp   VMwareTools-10.3.10-12406962.tar.gz  vmware-tools-distrib   work
-forlinx@ubuntu:~$ cd vmware-tools-distrib/	                      //使用cd命令进入该目录
-forlinx@ubuntu:~/vmware-tools-distrib$ ls                         //查看该目录下的文件
+forlinx@ubuntu:~$ cd vmware-tools-distrib/	  //Use the CD command to enter the directory
+forlinx@ubuntu:~/vmware-tools-distrib$ ls             //View the files in this directory
 bin   caf   doc   etc   FILES   INSTALL   installer   lib   vgauth   vmware-install.pl
 </pre></div>
 </div>
-<p>在当前目录下，输入sudo ./vmware-install.pl，进行安装，回车后输入密码，然后就开始安装，遇到[yes]/[no]就输入yes，其他一律回车默认安装就可以。</p>
+<p>In the current directory, enter sudo ./vmware-install.pl to install, enter the password after pressing Enter, and then start the installation. When you encounter [yes]/[no], enter yes, and press Enter for the rest to install by default.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/vmware-tools-distrib$ sudo ./vmware-install.pl 
-[sudo] password for forlinx: 		     //输入forlinx账户的密码，无回显，无法看到输入内容
+[sudo] password for forlinx: 		     //Enter the password of the forlinx account, no display, cannot see the input content
 </pre></div>
 </div>
-<p>安装过程信息较长，此处省略</p>
+<p>The installation process information is long, here omitted.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>open-vm-tools packages are available from the OS vendor and VMware recommends 
 using open-vm-tools packages. See http://kb.vmware.com/kb/2073803 for more 
 information.
-Do you still want to proceed with this installation? [no] yes			//输入yes
+Do you still want to proceed with this installation? [no] yes			//Enter yes
 ... ...		
 </pre></div>
 </div>
-<p>VMware tools工具完成后，可以实现Windows和Ubuntu之间的文件复制粘贴，虚拟机自适应全显等功能。如果虚拟机不能够全屏显示，可以通过点击查看，选择自动调整大小，点击自动适应客户机，即可实现虚拟的全屏问题，VMware tools安装成功。</p>
+<p>After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.</p>
 <p><img alt="Image" src="_images/1733790829673_793bfba7_97e2_4e50_906f_46b3aaad61f9.jpg" /></p>
-<p><strong>基本设置：</strong></p>
-<p>在下图位置进行大部分的系统设置。Ubuntu上很多设置的需求都可以在这里完成。</p>
+<p><strong>Basic Settings:</strong></p>
+<p>Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.</p>
 <p><img alt="Image" src="_images/1733790829796_4a5375c4_ad9f_4eea_abca_8dd8e9100aec.jpg" /></p>
 </section>
-<section id="id11">
-<h3>3.1.4 Ubuntu的网络设置<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
-<p><strong>NAT模式</strong></p>
-<p>在使用网络前，先确保我们的虚拟机能连接互联网，打开虚拟机设置，网络适配器中的网络桥接模式改为“NAT模式”：</p>
+<section id="ubuntu-network-settings">
+<h4>3.1.4 Ubuntu Network Settings<a class="headerlink" href="#ubuntu-network-settings" title="Link to this heading"></a></h4>
+<p><strong>NAT Mode</strong></p>
+<p>Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:</p>
 <p><img alt="Image" src="_images/1733790829987_18652420_2497_424f_8174_dbc3f381b047.jpg" /></p>
-<p>在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通。这是我们虚拟机上外网最常用的方式。</p>
+<p>When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.</p>
 <p><img alt="Image" src="_images/1733790830080_7f1e10d6_053f_4fd2_acd3_1c4c197a689e.jpg" /></p>
 <p><img alt="Image" src="_images/1733790830190_094e5261_4c9b_459b_99c0_94874e453dc5.jpg" /></p>
-<p>网络设置为动态ip。</p>
+<p>The network is set to dynamic IP.</p>
 <p><img alt="Image" src="_images/1733790830491_d7b932e4_851c_41ec_943e_0a813f05ce36.jpg" /></p>
-<p><strong>桥接模式：</strong></p>
-<p>如果在使用TFTP，SFTP等服务器时则需要设置虚拟机的网络联系方式为桥接方式。VMware虚拟网卡设置为桥接模式时，主机网卡和虚拟机网卡通过虚拟网桥进行通信，需要将Ubuntu的IP与主机IP设置在同一个网段。</p>
+<p><strong>Bridge Mode:</strong></p>
+<p>If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.</p>
 <p><img alt="Image" src="_images/1733790830724_3781a417_17b9_4452_b8f7_2d5da104e004.jpg" /></p>
 <p><img alt="Image" src="_images/1733790830863_a0f2a24f_af97_4180_b548_2f62be6fa873.jpg" /></p>
 <p><img alt="Image" src="_images/1733790830962_36750898_baf3_4937_978f_6207507a1b96.jpg" /></p>
-<p>设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。</p>
+<p>Set up static ip, at this time Ubuntu’s IP and the host IP need to be set in the same network segment.</p>
 <p><img alt="Image" src="_images/1733790831068_0eaf6bc8_b53f_42a3_b43e_a27eb996c6fb.jpg" /></p>
-<p><strong>注意：网络设置部分涉及到的IP以及DNS请按照用户自身的实际环境来设置，手册为举例说明。</strong></p>
+<p><strong>Note: The IP and DNS involved in the network settings section should be set according to the user’s own actual environment, the manual is an example.</strong></p>
 </section>
-<section id="u">
-<h3>3.1.5 U盘的加载<a class="headerlink" href="#u" title="Link to this heading"></a></h3>
-<p>打开虚拟机设置，USB控制器，在兼容性里面选择USB3.0，然后确定。如下图，因为目前大多数电脑都支持USB3.0的接口，如果不设置，当我们插入USB3.0接口，是不能连接到虚拟机的。如下图：</p>
+<section id="u-disk-loading">
+<h4>3.1.5 U Disk Loading<a class="headerlink" href="#u-disk-loading" title="Link to this heading"></a></h4>
+<p>Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don’t set it up, when we plug in the USB3.0 port, we can’t connect to the virtual machine. The principle is as follows:</p>
 <p><img alt="Image" src="_images/1733790831184_fc3d63d1_144b_49ea_9393_ddce8a5d3950.jpg" /></p>
-<p>虚拟机启动后，插入U盘，虚拟机右下角会多出一个类似“U盘”的图标，右击–&gt;连接即可，然后就可以在文件系统看到多一个目录，说明U盘加载成功，如图：</p>
+<p>After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the “U disk”, right-click –&gt; connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:</p>
 <p><img alt="Image" src="_images/1733790831270_41f4104a_f3cd_4f45_a8f8_8999f3f03850.jpg" /></p>
 <p><img alt="Image" src="_images/1733790831348_490bfc41_59b4_4a9b_a98f_53bb128a1ced.jpg" /></p>
 </section>
-<section id="id12">
-<h3>3.1.6 虚拟机基本库安装<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
-<p>在进行开发之前，还需要一些其他的必要库，我们使用以下命令逐一安装，安装前需保证网络可正常使用，能上外网：</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                        //更新下载源信息
-forlinx@ubuntu:~$ sudo apt-get install build-essential            //提供编译程序必须软件包的列表信息
-forlinx@ubuntu:~$ sudo apt-get install libncurses*               //用于生成基于文本的用户界面
-forlinx@ubuntu:~$ sudo apt-get install lzop                     //基于Lzo库的压缩解压工具
-forlinx@ubuntu:~$ sudo apt-get install net-tools                 //网络配置工具
+<section id="virtual-machine-basic-library-installation">
+<h4>3.1.6 Virtual Machine Basic Library Installation<a class="headerlink" href="#virtual-machine-basic-library-installation" title="Link to this heading"></a></h4>
+<p>Before development, there are some other necessary libraries, we use the following commands to install them one by one, before installation, you need to ensure that the network can be used normally, you can get on the extranet:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                        // Update the download source information
+forlinx@ubuntu:~$ sudo apt-get install build-essential            // Provide a list of software packages necessary for compiling programs
+forlinx@ubuntu:~$ sudo apt-get install libncurses*               // Used to generate text-based user interfaces
+forlinx@ubuntu:~$ sudo apt-get install lzop                     // A compression and decompression tool based on the Lzo library
+forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network configuration tools
 </pre></div>
 </div>
 </section>
-<section id="okma35-linux">
-<h3>3.1.7 编译OKMA35 Linux源码必要库安装<a class="headerlink" href="#okma35-linux" title="Link to this heading"></a></h3>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                                       //更新apt-get下载源
-forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot           //必备工具包的安装
+<section id="installation-of-necessary-libraries-for-compiling-okma35-linux-source-code">
+<h4>3.1.7 Installation of Necessary Libraries for Compiling OKMA35 Linux Source Code<a class="headerlink" href="#installation-of-necessary-libraries-for-compiling-okma35-linux-source-code" title="Link to this heading"></a></h4>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                                       //Update apt-get download sources
+forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot           //Installation of essential toolkits
 forlinx@ubuntu:~$ sudo apt-get install git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python3-pip libncurses5-dev
 forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmainutils expect
 </pre></div>
 </div>
-<p>这些库文件是自行搭建MA35 Linux编译环境时，准备编译Linux源码需要下载的库文件，若不是搭建MA35 Linux开发环境，可跳过此步骤。</p>
+<p>These library files are the ones that need to be downloaded when compiling the Linux source code by building the MA35 Linux compilation environment by yourself. If you are not building the MA35 Linux development environment, you can skip this step.</p>
 </section>
 </section>
-<section id="id13">
-<h2>3.2 Ubuntu常用软件安装<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<section id="ubuntu-common-software-installation">
+<h3>3.2 Ubuntu Common Software Installation<a class="headerlink" href="#ubuntu-common-software-installation" title="Link to this heading"></a></h3>
 <section id="vscode">
-<h3>3.2.1 VScode工具安装软件工具<a class="headerlink" href="#vscode" title="Link to this heading"></a></h3>
-<p>点击桌面左侧类似一个包的图标，可以看到一些工具，我们也可以搜索我们想要的工具，例如我们下载一个VScode工具，这个工具在我们日常编写代码很方便。</p>
+<h4>3.2.1 VScode<a class="headerlink" href="#vscode" title="Link to this heading"></a></h4>
+<p>Click the icon similar to a package on the left side of the desktop to see some tools. You can also search for the tools we want. For example, download a VScode tool, which is very convenient for our daily coding.</p>
 <p><img alt="Image" src="_images/1733790831428_ac1cff1a_91fe_4bc4_ab96_a1ef4711dc64.jpg" /></p>
-<p>搜索到我们需要的工具，点击进入查看详情，点击install下载，等待下载完成自动安装，然后点击Launch运行即可。</p>
+<p>Please search for the tool you need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click “Launch” to run it.</p>
 <p><img alt="Image" src="_images/1733790831535_8d7c8212_80ba_4f35_bedc_52624e65e587.jpg" /></p>
 <p><img alt="Image" src="_images/1733790831626_622d1600_2f75_417b_8a17_ec54fd3751a6.jpg" /></p>
 <p><img alt="Image" src="_images/1733790831737_817dafba_97e4_47d3_b080_c2c1ef1cce36.jpg" /></p>
 <p><img alt="Image" src="_images/1733790831819_15468199_1aa6_4d09_a2d8_0bc7e4ef904d.jpg" /></p>
 </section>
-<section id="apt">
-<h3>3.2.2 apt命令指定国内源<a class="headerlink" href="#apt" title="Link to this heading"></a></h3>
-<p>apt命令用来下载管理应用程序，apt 采用的C/S模式，也就是客户端/服务器模式，我们的 PC 机作为客户端，当需要下载软件的时候就向服务器请求，因此我们需要知道服务器的地址，也叫做安装源或者更新源。</p>
-<p><strong>注意：由于Ubuntu默认的源是国外的，可能有时候无法访问，国内各大高校和企业有其镜像源（清华源、阿里源等），建议切换国内镜像源。</strong></p>
-<p><strong>方法：</strong></p>
-<p>Ubuntu20.04的位置存放在/etc/apt/sources.list文件中，替换相应链接即可，该操作需要使用root用户。下面以阿里源为例：</p>
-<p>安全起见需要备份需要修改的文件，如下操作：</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-</pre></div>
-</div>
-<p>在/etc/apt/sources.list文件前面添加如下条目：</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-</pre></div>
-</div>
-<p>保存后退出。在终端执行如下命令：</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update
-forlinx@ubuntu:~$ sudo apt-get upgrade
-</pre></div>
-</div>
-</section>
-<section id="nfs">
-<h3>3.2.3 安装NFS<a class="headerlink" href="#nfs" title="Link to this heading"></a></h3>
-<p>终端执行如下命令：</p>
+<section id="nfs-installation">
+<h4>3.2.3 NFS Installation<a class="headerlink" href="#nfs-installation" title="Link to this heading"></a></h4>
+<p>The terminal executes the following command:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu:~$ sudo apt-get  install -y nfs-kernel-server nfs-common portmap  
 </pre></div>
 </div>
 <p><img alt="Image" src="_images/1733790831910_3784468e_757b_4394_a2b3_12c98f127ef8.jpg" /></p>
 </section>
 </section>
-<section id="qt">
-<h2>3.3 QT环境的搭建与使用<a class="headerlink" href="#qt" title="Link to this heading"></a></h2>
-<p>Qt Creator是一个跨平台的QT集成开发环境（IDE），包括了高级C++代码编辑器、项目和生成管理等工具，适用于QT应用程序框架设计和应用程序开发。本次安装选用的Qt Creator5.12.8。</p>
-<p>飞凌提供的SDK中提供了Qt5.12.8的完整开发环境(包含Qt Quick)。</p>
-<section id="qt-creator">
-<h3>3.3.1 Qt creator环境搭建<a class="headerlink" href="#qt-creator" title="Link to this heading"></a></h3>
-<p>路径：OK-MA35-S21 _Linux5.10.140+Qt5.12.8_用户资料\2-镜像及源码\1-源码qt-creator-opensource-linux-x86_64-4.7.0.zip</p>
-<p>将qt-creator-opensource-linux-x86_64-4.7.0.zip解压后，将qt-opensource-linux-x64-5.14.2.run拷贝至当前用户家目录下的任意目录下，执行：</p>
+<section id="qt-environment-setup-and-use">
+<h3>3.3 QT Environment Setup and Use<a class="headerlink" href="#qt-environment-setup-and-use" title="Link to this heading"></a></h3>
+<p>Qt Creator is a cross-platform QT integrated development environment (IDE) that includes advanced C + + code editors, project and build management tools for QT application framework design and application development. Qt Creator5.12.8 selected for the installation.</p>
+<p>The SDK provided by Forlinx provides a complete development environment for Qt5.12.8 (including Qt Quick).</p>
+<section id="qt-creator-environment-setup">
+<h4>3.3.1 Qt Creator Environment Setup<a class="headerlink" href="#qt-creator-environment-setup" title="Link to this heading"></a></h4>
+<p>Path: OK-MA35-S21 _Linux5.10.140+Qt5.12.8_User Profile\2-Image and Source Code\1-Source Code qt-creator-opensource-linux-x86_64-4.7.0.zip</p>
+<p>Extract qt-creator-opensource-linux-x86_64-4.7.0.zip, copy qt-opensource-linux-x64-5.14.2.run to any directory under the current user’s home directory, and execute it:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu:~/62xx$ chmod  777 qt-opensource-linux-x64-5.12.8.run  
   forlinx@ubuntu:~/62xx$ sudo ./qt-opensource-linux-x64-5.12.8.run  
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>将会弹出如下界面，点击“Next”进入下一步：
-</pre></div>
-</div>
+<p>The following interface will pop up. Click “Next” to enter the next step:</p>
 <p><img alt="Image" src="_images/1733790832012_310acc4f_7416_40ff_aacb_ace07767e318.jpg" /></p>
-<p>点击“Next”进入下一步：</p>
+<p>Click “Next” to go to the next step:</p>
 <p><img alt="Image" src="_images/1733790832112_371ed81a_1b23_49c1_b4a6_6fb471f30e62.jpg" /></p>
-<p>输入邮箱和密码，点击“Next”进入下一步：</p>
+<p>Enter the email address and password, and click “Next” to continue:</p>
 <p><img alt="Image" src="_images/1733790832191_5ee291ac_165c_45fe_92b6_39577337173e.jpg" /></p>
-<p>勾选I have read…, 点击“Next”进入下一步：</p>
+<p>Check I have read … Click “Next” to continue:</p>
 <p><img alt="Image" src="_images/1733790832272_d2154e64_3aac_4401_828c_4967335bbf35.jpg" /></p>
-<p>在如下界面中，点击“Browse…”选择Qtcreator的安装路径，选择完成后，点击“Next”进入下一步：</p>
+<p>In the following interface, click “Browse…” to select the installation path of Qtcreator, after the selection is complete, click “Next” to enter the next step:</p>
 <p><img alt="Image" src="_images/1733790832339_79675137_36a6_4771_ac9a_414dffde1444.jpg" /></p>
-<p>在如下界面中，选中第一项，点击“Next”进入下一步：</p>
+<p>In the following interface, select the first item and click “Next” to enter the next step:</p>
 <p><img alt="Image" src="_images/1733790832410_d1c0d8ff_2aa9_4782_bffa_f4b78d7e1abc.jpg" /></p>
-<p>同意协议，点击“Next”：</p>
+<p>Agree to the agreement and click “Next”:</p>
 <p><img alt="Image" src="_images/1733790832485_38c8937c_4725_4a98_ba40_33ec3430ad3f.jpg" /></p>
-<p>点击Install安装：</p>
+<p>Click “Install” to install:</p>
 <p><img alt="Image" src="_images/1733790832612_750a7f96_fa77_4bef_be0d_dbbc577b1b2d.jpg" /></p>
-<p>安装完成后，显示如下界面，取消选项“Launch Qt Creator”的勾选，点击“Finish”完成Qt Creator的安装步骤：</p>
+<p>After the installation is completed, the following interface will be displayed. Uncheck the option “Launch Qt Creator” “and click” Finish “to complete the installation steps of Qt Creator:</p>
 <p><img alt="Image" src="_images/1733790832693_0acd29e8_509a_4bcf_942f_93b7e30ac0b9.jpg" /></p>
 </section>
-<section id="id14">
-<h3>3.3.2 环境配置<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
-<p><strong>注意：</strong></p>
-<p><strong>一定要先配置好环境变量（参考“4.3交叉编译工具链配置”）后，再使用命令打开Qt Creator。</strong></p>
-<p><strong>根据自己实际安装的路径打开Qt Creator。</strong></p>
-<p>Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前需要对Qt Creator的编译环境进行配置。</p>
-<section id="id15">
-<h4>3.3.2.1 交叉编译器的配置<a class="headerlink" href="#id15" title="Link to this heading"></a></h4>
-<p>启动Qt Creator，会出现Qt开发界面，点击Tools-&gt;option选项：</p>
+<section id="environment-configuration">
+<h4>3.3.2 Environment Configuration<a class="headerlink" href="#environment-configuration" title="Link to this heading"></a></h4>
+<p><strong>Note: Be sure to configure the environment variables first (refer to “4.3 Cross Compilation Tool Chain Configuration”), and then use the command to open Qt Creator. Open Qt Creator according to your actual installation path.</strong></p>
+<p>Qt is a cross-platform graphics development library, which supports many operating systems. Before compiling, you need to configure the compiling environment of Qt Creator.</p>
+<section id="configuration-of-the-cross-compiler">
+<h5>3.3.2.1 Configuration of the Cross-compiler<a class="headerlink" href="#configuration-of-the-cross-compiler" title="Link to this heading"></a></h5>
+<p>Start Qt Creator, and the Qt development interface will appear. Click Tools- &gt; option:</p>
 <p><img alt="Image" src="_images/1733790832767_5fa37015_5610_4822_be92_53e0c79c06c8.jpg" /></p>
-<p>进入到Options界面，点击左侧“Kits”，然后点击中部上方的“Compilers”选项卡，点击右侧“Add-&gt;GCC-&gt;C++”，如图所示：</p>
+<p>Enter the Options interface, click “Kits” on the left, then click the “Compilers” tab on the top of the middle, and click “Add-&gt; GCC-&gt; C + +” on the right, as shown in the figure:</p>
 <p><img alt="Image" src="_images/1733790832838_bdc67dc6_8c39_4c93_a74d_21b29e4c586c.jpg" /></p>
-<p>弹出如下窗口，Compiler path选项点Browser在/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin下找到“aarch64-linux-g++”，选中后点击Open，并将Name修改为“G++”。</p>
-<p>按照同样的方法添加GCC编译器，点击右侧“Add-&gt;GCC-&gt;C”，如图所示：</p>
+<p>In the pop-up window below, select Compiler path and click Browser to find “aarch64-linux-g + +” under/opt/aarch64-nuvoton-linux-gnu _ sdk -buildroot/bin, select it and click Open. And change the Name to “G + +”.</p>
+<p>Follow the same method to add GCC compiler, click “Add-&gt;GCC-&gt;C” on the right side, as shown in the figure:</p>
 <p><img alt="Image" src="_images/1733790832926_bfc11396_3b11_495d_98ea_e2ef9bcc9a42.jpg" /></p>
-<p>点击Browser在/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin下找到“aarch64-oe-linux-gcc”，选中后点击Open，并将Name修改为“GCC”。</p>
+<p>Click Browser and find “aarch64-oe-linux-gcc” under/opt/aarch64-nuvoton-linux-gnu _ sdk-buildroot/bin, select it and click Open, and change the Name to “GCC”</p>
 </section>
-<section id="debuggers">
-<h4>3.3.2.2 Debuggers配置<a class="headerlink" href="#debuggers" title="Link to this heading"></a></h4>
-<p>点击Debuggers选项卡，弹出如下界面，点击Add：</p>
+<section id="debuggers-configuration">
+<h5>3.3.2.2 Debuggers Configuration<a class="headerlink" href="#debuggers-configuration" title="Link to this heading"></a></h5>
+<p>Click the Debuggers tab, the following screen will pop up, click Add:</p>
 <p><img alt="Image" src="_images/1733790833040_e6197663_9fc0_44c2_839a_8c5ae94450dd.jpg" /></p>
-<p>弹出如下窗口，在Path选项点Browser找到/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin下找到“aarch64-linux-gdb”，选中后点击Open，并将Name修改为“debuggers”。</p>
+<p>In the pop-up window below, click Browser under the Path option and find “aarch64-linux-gdb” under/opt/aarch64-nuvoton-linux-gnu _ sdk -buildroot/bin, select it and click Open. And change the Name to “debuggers”.</p>
 </section>
-<section id="qt-version">
-<h4>3.3.2.3 Qt Version 配置<a class="headerlink" href="#qt-version" title="Link to this heading"></a></h4>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>点击Qt Versions选项卡，点击Add：
-</pre></div>
-</div>
+<section id="qt-version-configuration">
+<h5>3.3.2.3 Qt Version Configuration<a class="headerlink" href="#qt-version-configuration" title="Link to this heading"></a></h5>
+<p>Click the Qt Versions tab and click Add:</p>
 <p><img alt="Image" src="_images/1733790833152_16c28766_0418_426d_a322_3f5df87d56ae.jpg" /></p>
-<p>在/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin的目录下找到qmake，选中后点击Open，添加后显示如下，点击Apply。</p>
+<p>Find qmake under /opt/aarch64-buildroot-linux-gnu _ sdk-buildroot/bin. Select it and click Open. After it is added, the interface shown below is displayed. Click “Apply”.</p>
 </section>
-<section id="kits">
-<h4>3.3.2.4 Kits配置<a class="headerlink" href="#kits" title="Link to this heading"></a></h4>
-<p>点击Kits选项卡，点击右侧Add，添加一个新的Kits，按照下图的内容进行修改点击Apply。</p>
+<section id="kits-configuration">
+<h5>3.3.2.4 Kits Configuration<a class="headerlink" href="#kits-configuration" title="Link to this heading"></a></h5>
+<p>Click on the “Kits” tab, then click “Add” on the right side to add a new kit. Modify the settings according to the content in the image below, and click on “Apply” afterwards.</p>
 <p><img alt="Image" src="_images/1733790833230_43624074_d1e8_466b_9ab3_dcbf02543982.jpg" /></p>
 </section>
 </section>
 </section>
 </section>
-<section id="linux">
-<h1>04_linux编译篇<a class="headerlink" href="#linux" title="Link to this heading"></a></h1>
-<p>本章节主要描述开发板相关源码的编译方法，包括内核源码编译、应用程序编译方法。</p>
-<section id="id16">
-<h2>4.1 编译前准备<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
-<section id="id17">
-<h3>4.1.1 环境说明<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<section id="linux-compilation">
+<h2>4. Linux Compilation<a class="headerlink" href="#linux-compilation" title="Link to this heading"></a></h2>
+<p>This chapter mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.</p>
+<section id="preparation-before-compilation">
+<h3>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
+</section>
+<section id="description-of-the-environment">
+<h3>4.1.1 Description of the Environment<a class="headerlink" href="#description-of-the-environment" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>开发环境操作系统：Ubuntu20.04 64位版</p></li>
-<li><p>交叉工具链：aarch64-nuvoton-linux-gnu-gcc</p></li>
-<li><p>开发板使用Bootloader 版本：u-boot-2020.07</p></li>
-<li><p>开发板内核版本：linux-5.10.140</p></li>
-<li><p>开发板移植QT版本：qt5.12.8</p></li>
+<li><p>Development environment OS: Ubuntu20.04 64-bit version</p></li>
+<li><p>Cross-toolchain: aarch64-nuvoton-linux-gnu-gcc</p></li>
+<li><p>The board uses the Bootloader version: u-boot-2020.07.</p></li>
+<li><p>Development Board Kernel: Linux-5.10.140</p></li>
+<li><p>Development board porting QT version: qt5.12.8</p></li>
 </ul>
 </section>
-<section id="id18">
-<h3>4.1.2 拷贝源码<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
-<p>程序源码：OK-MA35-S21 _Linux6.1.33+Qt5.12.8_用户资料\2-镜像及源码\1-源码\ OKMA35_Linux_SDK.tar.bz2.00</p>
-<p>创建工作目录</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ mkdir -p /home/forlinx/MA35                       //按照顺序创建工作目录
+<section id="source-code-copy">
+<h3>4.1.2 Source Code Copy<a class="headerlink" href="#source-code-copy" title="Link to this heading"></a></h3>
+<p>Source Code: OK-MA35-S21 _Linux6.1.33+Qt5.12.8_User Profile\2-Image and Source Code\1-Source Code\ OKMA35_Linux_SDK.tar.bz2.00</p>
+<p>Create a working directory</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ mkdir -p /home/forlinx/MA35                       //Create the working directory in order
 </pre></div>
 </div>
-<p>将用户资料中的源码文件OKMA35_Linux_SDK.tar.bz2.00拷贝到虚拟机/home/forlinx/MA35目录。</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/MA35                               //切换到工作目录
+<p>Copy the source code file OKMA35_Linux_SDK.tar.bz2.00 in the user data to the/home/forlinx/ MA35 directory of the virtual machine.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/MA35                //Switch to the working directory
 forlinx@ubuntu:~/MA35$ cat OKMA35-linux-sdk.tar.bz2.0* &gt; OKMA35-linux-sdk.tar.bz2
-forlinx@ubuntu:~/MA35$ tar -xvf OKMA35-linux-sdk.tar.bz2             //在当然位置解压压缩包
+forlinx@ubuntu:~/MA35$ tar -xvf OKMA35-linux-sdk.tar.bz2             //Decompress the compressed package in the natural location
 </pre></div>
 </div>
-<p>运行命令后等待完成即可。</p>
-</section>
-<section id="id19">
-<h3>4.1.3 交叉编译工具链配置<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
-<p>将OK-MA35-S21 _Linux5.10.140+Qt5.12.8_用户资料\3-工具\aarch64-nuvoton-linux-gnu_sdk-buildroot_installer拷贝到虚拟机~目录，进入该目录。</p>
+<p>Just run the command and wait for it to complete.</p>
+<section id="id1">
+<h4>4.1.3 Configuration of the Cross-compiler<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>Copy OK-MA35-S21 _ Linux 5.10.140 + Qt5.12.8 _ User Profile\ 3-Tools \ aarch64-nuvoton-linux-gnu _ sdk-build root _ installer to the virtual machine ~ directory, and enter this directory.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu: ~/$ chmod 777 aarch64-nuvoton-linux-gnu_sdk-buildroot_installer
 forlinx@ubuntu: ~/$ sudo ./aarch64-nuvoton-linux-gnu_sdk-buildroot_installer
 forlinx@ubuntu: ~/$ source /opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/environment-setup
@@ -600,84 +575,84 @@ forlinx@ubuntu: ~/$ source /opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/environm
 </div>
 </section>
 </section>
-<section id="id20">
-<h2>4.2 源码编译<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
-<p><strong>注意：</strong></p>
+<section id="source-code-compilation">
+<h3>4.2 Source Code Compilation<a class="headerlink" href="#source-code-compilation" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
 <ul class="simple">
-<li><p><strong>初次解压源码后，需要先对源码进行整体编译</strong></p></li>
-<li><p><strong>整体编译过后，可根据实际情况再进行单独编译</strong></p></li>
-<li><p><strong>该源码编译需要开发环境运行内存8G及以上，请不要修改我们提供的VM虚拟机镜像配置</strong></p></li>
+<li><p><strong>After the kernel source code is decompressed for the first time, the source code needs to be compiled as a whole;</strong></p></li>
+<li><p><strong>After compiling as a whole, you can compile separately according to the actual situation;</strong></p></li>
+<li><p><strong>The source code compilation requires a development environment with a running memory of 8G or above. Please do not modify the VM virtual machine image configuration provided by us.</strong></p></li>
 </ul>
-<section id="id21">
-<h3>4.2.1 全编译测试<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
-<p>在终端切换到解压出来的源码路径：</p>
+<section id="full-compilation-test">
+<h4>4.2.1 Full Compilation Test<a class="headerlink" href="#full-compilation-test" title="Link to this heading"></a></h4>
+<p>Switch to the extracted source code path at the terminal:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu:~$ cd  ~/MA35/OKMA35-linux-sdk/  
 </pre></div>
 </div>
-<p>以下操作需要在源码目录下操作，第一遍编译：</p>
-<p><strong>注意：第一次编译需要先配置好4.1.3节的交叉编译工具链</strong></p>
-<p>如果内存容量为1g则：</p>
+<p>The following operations need to be done in the source directory:</p>
+<p><strong>Note: For the first compilation, you need to configure the cross-compilation tool chain in Section 4.1.3</strong></p>
+<p>If the memory capacity is 1G:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  all 1g  
 </pre></div>
 </div>
-<p>如果内存容量为512M则：</p>
+<p>If the memory capacity is 512M:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span> forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  all 512m  
 </pre></div>
 </div>
-<p>最终的编译效果如下图，（根据实际情况，路径可能会有不同）：</p>
+<p>The final compilation effect is shown in the following figure (the path may be different according to the actual situation):</p>
 <p><img alt="Image" src="_images/1733790834838_3159ebbf_0664_4548_a512_d26a606e56b4.jpg" /></p>
-<p>编译成功后，将在OKMA35-linux-sdk/images文件夹下生成对应编译工程结果文件，找到其中的镜像文件。</p>
+<p>After successful compilation, the corresponding compilation project result file will be generated in the OKMA35-linux-sdk/images folder, and the image file will be found.</p>
 <p><img alt="Image" src="_images/1733790834914_cd02399e_ccb2_4431_86d1_0174106aebb1.jpg" /></p>
-<p><strong>注意：pack-image-OKMA35-S2_emmc-sdcard.bin是用于USB完全烧写，其它文件为单步烧写使用。</strong></p>
+<p><strong>Note: pack-image-OKMA35-S2_emmc-sdcard.bin is used for USB full flashing, other files are used for single-step flashing.</strong></p>
 </section>
-<section id="id22">
-<h3>4.2.2 单独编译测试<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
-<p>单独编译uboot:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35_Linux_SDK$./build.sh  uboot 1g/512m     //生成u-boot.bin，生成路径为/OKMA35-linux-sdk/images/  
+<section id="individual-compilation-tests">
+<h4>4.2.2 Individual Compilation Tests<a class="headerlink" href="#individual-compilation-tests" title="Link to this heading"></a></h4>
+<p>Compile Uboot Separately:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35_Linux_SDK$./build.sh  uboot 1g/512m     //Generate u-boot.bin，path/OKMA35-linux-sdk/images/  
 </pre></div>
 </div>
-<p>单独编译内核:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh kernel 1g/512m       //生成Image和Image.dtb，生成路径为/OKMA35-linux-sdk/images/  
+<p>Compile the kernel separately:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh kernel 1g/512m       //Generate Image和Image.dtb，path/OKMA35-linux-sdk/images/  
 </pre></div>
 </div>
-<p>单独编译apps</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  apps   //生成forlinx  应用，自动安装在文件系统中  
+<p>Compile the apps separately</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  apps   //Generate a forlinx application that is automatically installed on the file system
 </pre></div>
 </div>
-<p>单独编译rootfs</p>
+<p>Compile rootfs separately</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  rootfs      
 </pre></div>
 </div>
 </section>
-<section id="id23">
-<h3>4.2.3 清除编译生成的文件<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
-<p>用户在内核源码路径下进行操作。</p>
+<section id="clearance-of-files-generated-by-the-compilation">
+<h4>4.2.3 Clearance of Files Generated by the Compilation<a class="headerlink" href="#clearance-of-files-generated-by-the-compilation" title="Link to this heading"></a></h4>
+<p>The user performs the operation in the kernel source code path.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  clean
 </pre></div>
 </div>
-<p>该操作清除所有中间文件。但不影响源文件，包括已经有改动的源文件，路径根据实际情况可能会有不同。</p>
-<p>单独清理内核：</p>
+<p>This operation clears all intermediate files. However, it does not affect the source file, including the source file that has been changed, and the path may be different according to the actual situation.</p>
+<p>Clear the kernel separately:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  clean_kernel  
 </pre></div>
 </div>
-<p>单独清理uboot：</p>
+<p>Clear Uboot separately：</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk$./build.sh  clean_uboot  
 </pre></div>
 </div>
 </section>
 </section>
-<section id="id24">
-<h2>4.3 应用程序编译及运行<a class="headerlink" href="#id24" title="Link to this heading"></a></h2>
-<section id="id25">
-<h3>4.3.1 编译并运行命令行应用<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
-<p>本小节使用看门狗测试程序，默认程序在OKMA35-linux-sdk/app/forlinx/forlinx_cmd/fltest_watchdog目录。</p>
-<p>1、使用cd命令进入/home/forlinx/MA35目录</p>
+<section id="application-compilation-and-operation">
+<h3>4.3 Application Compilation and Operation<a class="headerlink" href="#application-compilation-and-operation" title="Link to this heading"></a></h3>
+<section id="command-line-application-compilation-and-operation">
+<h4>4.3.1 Command Line Application Compilation and Operation<a class="headerlink" href="#command-line-application-compilation-and-operation" title="Link to this heading"></a></h4>
+<p>This subsection uses the watchdog test program, the default program in the OKMA35-linux- sdk/app/forlinx/forlinx_cmd/fltest_watchdog.</p>
+<p>1. Use the cd command to enter the directory /home/forlinx/ MA35</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>  forlinx@ubuntu:~$  cd /home/forlinx/MA35/OKMA35-linux-sdk/app/forlinx/forlinx_cmd/fltest_watchdog  
 </pre></div>
 </div>
-<p>2、添加交叉编译器路径，使用make进行交叉编译</p>
+<p>2. Add the cross-compiler path and use make to cross-compile.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk/app/forlinx/forlinx_cmd/fltest_watchdog$ source /opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/environment-setup
-（弹出以下内容则设置成功）
+（If the following content pops up, the setting is successful）
 _           _ _     _                 _
 | |__  _   _(_) | __| |_ __ ___   ___ | |_
 | &#39;_ \| | | | | |/ _` | &#39;__/ _ \ / _ \| __|
@@ -695,53 +670,50 @@ Some tips:
 * To build CMake-based projects, use the &quot;cmake&quot; alias
 </pre></div>
 </div>
-<p>使用make进行编译：</p>
+<p>3. Use make to cross-compile.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu: ~/MA35/OKMA35-linux-sdk/app/forlinx/forlinx_cmd/fltest_watchdog$ make	
 aarch64-linux-gcc watchdog.c -o fltest_watchdog  
 generate fltest_watchdog success!!!
 </pre></div>
 </div>
-<p>用file命令查看生成的文件信息</p>
+<p>Use the file command to view the generated file information</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/MA35/OKMA35-linux-sdk/app/forlinx/forlinx_cmd/fltest_watchdog$ 
 file fltest_watchdog 
 fltest_watchdog: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 5.10.0, not stripped
 </pre></div>
 </div>
-<p>通过结果可以看到编译生成的是64位、ARM的文件。</p>
-<p>3、将编译生成的fltest_watchdog通过U盘或者ftp等方式拷贝到板子上，比如/路径下，下述以U盘为例，拷贝到开发板，运行测试。</p>
+<p>From the result, you can see that the compiled 64-bit ARM file.</p>
+<p>4. Copy the fltest _ watchdog generated by compiling to the board through U disk or FTP, for example, under the path. Take the USB disk as an example, copy it to the development board and run the test.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OKMA35-C:/# cp /run/media/sda1/fltest_watchdog /
 root@OKMA35-C:/# ./fltest_watchdog
 Watchdog Ticking Away!
 </pre></div>
 </div>
-<p>4、参考用户使用手册“看门狗测试”章节测试。</p>
+<p>5. Refer to the chapter “Watchdog Test” in the user’s manual for the test;</p>
 </section>
-<section id="id26">
-<h3>4.3.2 编译并运行Qt应用<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
-<p>进入/home/forlinx/Qt5.12.8/Tools/QtCreator/bin目录，启动Qt creator：</p>
+<section id="qt-application-compilation-and-application">
+<h4>4.3.2 Qt Application Compilation and Application<a class="headerlink" href="#qt-application-compilation-and-application" title="Link to this heading"></a></h4>
+<p>Enter/home/forlinx/Qt5.12.8/Tools/QtCreator/bin, start Qt creator：</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/Qt5.12.8/Tools/QtCreator/bin$ ./qtcreator
 </pre></div>
 </div>
 <p><img alt="Image" src="_images/1733790835078_33028446_0582_4aad_a5f8_877f5fd99b09.jpg" /></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 启动Qt Creator 程序，进入到Qt Creator界面，点击“New File or Project”新建一个工程,选择“Application”-&gt;“Qt Widgets Application”，然后点击右下角的“Choose”：
-</pre></div>
-</div>
+<p>Start the Qt Creator program, enter the Qt Creator interface, click New File or Project “to create a project, and select Application-&gt; Qt Widgets Application”. Then click “Choose” in the lower right corner:</p>
 <p><img alt="Image" src="_images/1733790835299_f562fe3b_33c7_49ff_9ee1_d1d5e92be52f.jpg" /></p>
-<p>在如下界面中为新建的工程修改名字为“helloworld”，选择安装路径选择/home/forlinx，然后点击“Next”：</p>
+<p>In the following interface, change the name of the new project to “helloworld”, select the installation path /home/forlinx, and then click “Next”:</p>
 <p><img alt="Image" src="_images/1733790835370_a93baa1a_b8ee_4f2f_9727_9f5bdd6d81f7.jpg" /></p>
-<p>选择qmake,点击Next继续。</p>
+<p>Select qmake and click Next to continue.</p>
 <p><img alt="Image" src="_images/1733790835448_d33e392f_e647_41f2_ba60_2d97da640a3e.jpg" /></p>
-<p>在如下界面中，修改类名“Class name”为“helloworld”，将基类“Base class”选择为Qwidget，然后点击“Next”：</p>
+<p>In the following screen, change the class name to “helloworld”, select the base class to “Qwidget”, and then click “Next”.</p>
 <p><img alt="Image" src="_images/1733790835513_fbca9cb1_42fd_4a32_b74b_d86b0a2206df.jpg" /></p>
-<p>在如下界面中，选择之前已添加过的“ma35”作为当前工程的kit，然后点击“Next”：</p>
+<p>In the following screen, select “ma35” as the kit of the current project, and then click “Next”:</p>
 <p><img alt="Image" src="_images/1733790835609_3fcf0d95_e495_4065_825f_ec2983c9631b.jpg" /></p>
-<p>在如下界面中，点击“Finish”，完成工程的新建：</p>
+<p>In the following interface, click “Finish” to complete the new project:</p>
 <p><img alt="Image" src="_images/1733790835694_1eb01fd6_ddec_41ae_9da9_18db96f0a457.jpg" /></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>新建工程创建完成，即可显示如下窗口：     
-</pre></div>
-</div>
+<p>After the new project is created, the following window will be displayed:</p>
 <p><img alt="Image" src="_images/1733790835804_a99535c3_d4fd_4937_89df_f82d1f491c42.jpg" /></p>
-<p>当程序编写完成后，点击左下角的锤子图标，即可进行交叉编译，将编译好的可执行程序helloworld拷贝到开发板，即可进行应用的测试。</p>
+<p>When the program is completed, click the hammer icon in the lower left corner to cross-compile. Copy the compiled executable program helloworld to the development board to test the application.</p>
+</section>
 </section>
 </section>
 </section>
