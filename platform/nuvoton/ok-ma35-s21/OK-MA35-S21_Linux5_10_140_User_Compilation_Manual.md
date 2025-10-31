@@ -48,42 +48,42 @@ Linux系统通常情况下有三种安装方式：真机双系统、真机单系
 ## 1.1 VMware软件的下载与购买
 [登陆VMware官网https://www.vmware.com/cn.html下载](https://www.vmware.com/cn.html)Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者使用VMware提供的试用版本。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822205-af9e963f-ead8-498e-92e7-3208486f2c24.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822205_af9e963f_ead8_498e_92e7_3208486f2c24.jpg)
 
 等待下载完成后双击启动文件启动安装程序。
 
 ## 1.2 VMware软件的安装
 双击启动程序进入安装向导。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822295-9e42dc0e-e466-46d8-ac13-d11d067644dc.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822295_9e42dc0e_e466_46d8_ac13_d11d067644dc.jpg)
 
 点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822398-c3a35e52-7e01-4953-a7ed-15c823179813.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822398_c3a35e52_7e01_4953_a7ed_15c823179813.jpg)
 
 勾选我接受许可协议中的条款，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822485-b4af7e60-11ed-400a-b4a7-0609d58dd838.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822485_b4af7e60_11ed_400a_b4a7_0609d58dd838.jpg)
 
 修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822582-4f1e9473-4183-4c27-835d-82748f3a8dfb.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822582_4f1e9473_4183_4c27_835d_82748f3a8dfb.jpg)
 
 勾选，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822696-9a6dd1b2-65ba-4241-b28e-306266f27c99.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822696_9a6dd1b2_65ba_4241_b28e_306266f27c99.jpg)
 
 勾选添加快捷方式，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822823-bc603fa8-6bc1-4a7f-823c-35f4d5a5a888.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822823_bc603fa8_6bc1_4a7f_823c_35f4d5a5a888.jpg)
 
 点击“安装”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822917-ba292b16-0c89-4caa-9335-aed18a8a9b08.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822917_ba292b16_0c89_4caa_9335_aed18a8a9b08.jpg)
 
 等待安装完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790822998-86a6e012-0c30-4c20-86fc-c38b92bb0249.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822998_86a6e012_0c30_4c20_86fc_c38b92bb0249.jpg)
 
 点击完成后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。
 
@@ -101,33 +101,33 @@ Linux系统通常情况下有三种安装方式：真机双系统、真机单系
 
 选中所有压缩包，右键解压到Nuvoton-Ubuntu 20.04，如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790824390-7eae1b4b-6fbe-40af-ae12-a5c82c76742d.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824390_7eae1b4b_6fbe_40af_ae12_a5c82c76742d.jpg)
 
 解压完成后出现 MA35标准环境文件夹，其中.vmx为虚拟机要打开的文件。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790824469-8696b737-a3dd-496a-91b6-d37b642868a8.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824469_8696b737_a3dd_496a_91b6_d37b642868a8.png)
 
 打开虚拟机，选择解压出来的MA35开发环境中文件：Nuvoton- Ubuntu 20.04.vmx
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790824572-6a93c8bd-36d1-4013-b38b-a3af7a72c349.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824572_6a93c8bd_36d1_4013_b38b_a3af7a72c349.jpg)
 
 加载完成后点击开启此虚拟机，即可运行，进入系统的界面。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790824657-b2aeea91-7cc4-4f8e-bc60-75a70b9766a7.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824657_b2aeea91_7cc4_4f8e_bc60_75a70b9766a7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790824726-abecd732-3912-4234-b0bf-6b10a1dec667.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824726_abecd732_3912_4234_b0bf_6b10a1dec667.png)
 
      提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790824797-6d14e9fd-be89-46c9-b3a0-886cf1251025.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824797_6d14e9fd_be89_46c9_b3a0_886cf1251025.jpg)
 
    **注意：如果启动后，显示“客户端操作系统已禁用CPU。请关闭或重置虚拟机”。则重新开启虚拟机，开启过程中移植按住shift键，弹出grub菜单。选择advanced options for ubuntu。然后选择linux 5.13.0-30-generic进行启动。**
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790824882-bd6b0846-1e19-4cf5-a4ad-698966c37cfa.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824882_bd6b0846_1e19_4cf5_a4ad_698966c37cfa.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790824953-0d160266-9171-44dd-b66d-6206472f4c34.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824953_0d160266_9171_44dd_b66d_6206472f4c34.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790825062-c66163f7-b12b-44dd-8b8a-5ad22fb51533.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790825062_c66163f7_b12b_44dd_8b8a_5ad22fb51533.jpg)
 
 
 
@@ -139,63 +139,63 @@ Linux系统通常情况下有三种安装方式：真机双系统、真机单系
 ### 3.1.1. 创建ubuntu虚拟机
 打开VMware软件，点击创建新的虚拟机。进入以下界面：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790826446-535bfcff-4ef2-4c4a-9c8a-a91d8aae50ac.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826446_535bfcff_4ef2_4c4a_9c8a_a91d8aae50ac.jpg)
 
 选择自定义，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790826531-23e888a8-82af-49d4-9608-e6c391d55c12.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826531_23e888a8_82af_49d4_9608_e6c391d55c12.jpg)
 
 选择对应VMware版本的兼容性，版本可在帮助->关于VMware Workstation中查看，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790826664-b2dc2020-bb2c-459b-b48f-5ae902adc707.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826664_b2dc2020_bb2c_459b_b48f_5ae902adc707.jpg)
 
 选择稍后安装操作系统，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790826733-30c16c1a-e3a1-4086-a246-a48e9bbec261.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826733_30c16c1a_e3a1_4086_a246_a48e9bbec261.jpg)
 
 保持默认，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790826831-17f1d65c-5ef0-46e1-88ac-4cd75031eedd.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826831_17f1d65c_5ef0_46e1_88ac_4cd75031eedd.png)
 
 修改虚拟机名称及安装位置，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790826916-1a8ab513-20f4-42f8-b464-2662bd289480.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826916_1a8ab513_20f4_42f8_b464_2662bd289480.png)
 
 按照实际情况设置处理器数量。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790826987-e4d51f5b-075a-48d1-bcfe-a81a49b76108.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826987_e4d51f5b_075a_48d1_bcfe_a81a49b76108.jpg)
 
 同样按照实际情况设置内存大小，建议使用16G（根据自己机器性能做调整）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827128-dc81f360-cdbc-4be2-ab28-12209bea6935.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827128_dc81f360_cdbc_4be2_ab28_12209bea6935.png)
 
 设置网络类型，默认为NAT模式，点击下一步。后面的步骤保持默认值，直到指定磁盘容量步骤。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827200-409cb15a-39f2-4494-959a-1507d0b8c16b.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827200_409cb15a_39f2_4494_959a_1507d0b8c16b.png)
 
 IO控制器类型这里默认选择LSI就可以：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827365-4c11ac8e-3d34-4840-9806-6aa5f3d76e4b.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827365_4c11ac8e_3d34_4840_9806_6aa5f3d76e4b.png)
 
 这里同样是默认选择SCSI。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827428-9586ad46-164b-424d-871f-68ab3cb6cbbd.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827428_9586ad46_164b_424d_871f_68ab3cb6cbbd.png)
 
 这里选择创建新的虚拟磁盘：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827526-beea4fd8-ef46-4499-8cc0-de7c349fa185.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827526_beea4fd8_ef46_4499_8cc0_de7c349fa185.png)
 
 设置磁盘大小为200G，并选择磁盘的存在形式，然后点击“下一步”完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827605-4c3ce394-a38c-4414-ae25-f27607ed7c47.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827605_4c3ce394_a38c_4414_ae25_f27607ed7c47.png)
 
 指定磁盘文件，这里默认即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827669-53ef8be5-1422-43c8-a95e-1686051ea4db.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827669_53ef8be5_1422_43c8_a95e_1686051ea4db.png)
 
 默认点击“完成”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733790827733-b4218d06-a674-47d1-8043-062281cd3fca.png)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827733_b4218d06_a674_47d1_8043_062281cd3fca.png)
 
 至此，虚拟机创建完成。
 
@@ -204,61 +204,61 @@ IO控制器类型这里默认选择LSI就可以：
 ### 3.1.2 系统安装
 我们选择安装的Ubuntu 版本是20.04，首先去Ubuntu官网获取Ubuntu20.04 64位镜像，下载地址为：[http://sources.ubuntu.com/20.04/下载“ubuntu-20.04.6-desktop-amd64.iso”这个版本。](http://sources.ubuntu.com/20.04/下载“ubuntu-20.04.6-desktop-amd64.iso”这个版本。)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790827796-7662c8fb-063b-42dc-8ce1-8c85f9381705.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827796_7662c8fb_063b_42dc_8ce1_8c85f9381705.jpg)
 
 右击刚创建完成的Ubuntu64位 在弹出菜单中选择设置：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790827865-5ee59080-9d2d-4090-9db8-6252546aaed8.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827865_5ee59080_9d2d_4090_9db8_6252546aaed8.jpg)
 
 弹出“虚拟机设置菜单”根据如下图： 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790827941-b89bcc96-9095-4fab-9fa5-c177b5b003cc.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827941_b89bcc96_9095_4fab_9fa5_c177b5b003cc.jpg)
 
 点击CD/DVD（SATA），选择使用ISO映像文件，浏览选择前面下载的Ubuntu镜像，然后确定。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828067-f1e8e135-1470-4c02-a438-16875862a70e.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828067_f1e8e135_1470_4c02_a438_16875862a70e.jpg)
 
 设置好镜像后，保证网络可用，然后开启虚拟机，进行Ubuntu镜像的安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828160-a11ca836-a830-4abd-9cc4-c0159be3bfb2.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828160_a11ca836_a830_4abd_9cc4_c0159be3bfb2.jpg)
 
 开启虚拟机后，等待出现安装界面如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828261-1256882c-65fa-46e0-93dc-00bd555dab80.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828261_1256882c_65fa_46e0_93dc_00bd555dab80.jpg)
 
 如图左侧选择语言后,点击“Install Ubuntu”后弹出选择语言界面。Ubuntu默认语言是英文的，当然，也可以选择中文，默认选择的语言在后期也是可以重新设置的，选择完成后continue。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828380-68fd77e4-67e6-46e4-9829-0c2e60fddd84.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828380_68fd77e4_67e6_46e4_9829_0c2e60fddd84.jpg)
 
 接下来，默认选择continue继续安装，安装过程会很慢，然后点击“continue”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828482-f29424d0-0417-4fe5-bc31-e9b15ba6b761.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828482_f29424d0_0417_4fe5_bc31_e9b15ba6b761.jpg)
 
 默认，点击Install Now，会弹出下图，点击“continue”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828552-a220f7fc-5413-4dfa-bc1b-5843bf4322c3.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828552_a220f7fc_5413_4dfa_bc1b_5843bf4322c3.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828638-ceb4aadd-48a2-491d-8c78-8ee7c06e5c60.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828638_ceb4aadd_48a2_491d_8c78_8ee7c06e5c60.jpg)
 
 接下来选择时区，这里点击上海时区或输入Shanghai即可（不同时区根据实际情况选择即可），点击“继续”。最后设置用户名和密码，点击“continue”就会自动安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828740-16883e62-e882-4315-a671-313eb3be7907.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828740_16883e62_e882_4315_a671_313eb3be7907.jpg)
 
 安装过程下图，网络不好可以Skip跳过，不影响安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828884-85b8f077-6871-4f31-8012-51cff28f7c39.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828884_85b8f077_6871_4f31_8012_51cff28f7c39.jpg)
 
 安装完成后显示如下图，点击“Restart Now”重启（或者点击“重新启动客户机”）：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790828957-7593de8c-d633-4f37-8c8c-44ea15ffd67f.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828957_7593de8c_d633_4f37_8c8c_44ea15ffd67f.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829054-1cce6b86-dbfc-4a31-b539-5942931a1e90.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829054_1cce6b86_dbfc_4a31_b539_5942931a1e90.jpg)
 
 重启完成登录后系统界面如下图：
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829137-75de9a16-3cea-4d71-bd15-1a0253e76f2c.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829137_75de9a16_3cea_4d71_bd15_1a0253e76f2c.jpg)
 
 ### 3.1.3 Ubuntu的基本配置
 安装好Ubuntu20.04操作系统后，要进行一些配置。
@@ -267,23 +267,23 @@ IO控制器类型这里默认选择LSI就可以：
 
 接下来安装VMware Tools，如果不安装该工具，在Windows主机和虚拟机之间无法使用复制粘贴、文件拖拽。首先点击VMware 导航栏上的“虚拟机”，然后在下拉框中点击“安装VMware Tools”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829213-d1f1c00d-87f3-4cc4-bccf-df3b9166c3d3.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829213_d1f1c00d_87f3_4cc4_bccf_df3b9166c3d3.jpg)
 
 完成后进入Ubuntu，桌面会出现VMware Tools的光盘图标，点击进入其中：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829295-ba21503b-3c98-4404-99b3-4bb295daeb7c.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829295_ba21503b_3c98_4404_99b3_4bb295daeb7c.jpg)
 
 双击VMwareTools图标，进入后看到一个压缩文件VMwareTools-10.3.10-12406962.tar.gz（不同的虚拟机版本可能会不同），
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829361-007f7d7c-1c5c-4f65-bfe5-5469d56b440f.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829361_007f7d7c_1c5c_4f65_bfe5_5469d56b440f.jpg)
 
 复制文件到主目录下面（即home 个人用户名的目录下）：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829479-22a3d660-ecee-4629-8889-177d5bc45aeb.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829479_22a3d660_ecee_4629_8889_177d5bc45aeb.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829582-da3a2404-cbd0-4d43-81de-683cb43f7b08.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829582_da3a2404_cbd0_4d43_81de_683cb43f7b08.jpg)
 
 按键盘【Ctrl+Alt+T】调出终端命令界面，使用tar命令对VMwareTools安装包解压（使用sudo命令会提示输入密码，根据提示直接输入密码回车即可，Linux系统密码输入无回显，确保输入的密码正确后按回车确认即可）：
 
@@ -321,57 +321,57 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 
 VMware tools工具完成后，可以实现Windows和Ubuntu之间的文件复制粘贴，虚拟机自适应全显等功能。如果虚拟机不能够全屏显示，可以通过点击查看，选择自动调整大小，点击自动适应客户机，即可实现虚拟的全屏问题，VMware tools安装成功。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829673-793bfba7-97e2-4e50-906f-46b3aaad61f9.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829673_793bfba7_97e2_4e50_906f_46b3aaad61f9.jpg)
 
 **基本设置：**
 
 在下图位置进行大部分的系统设置。Ubuntu上很多设置的需求都可以在这里完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829796-4a5375c4-ad9f-4eea-abca-8dd8e9100aec.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829796_4a5375c4_ad9f_4eea_abca_8dd8e9100aec.jpg)
 
 ### 3.1.4 Ubuntu的网络设置
 **NAT模式**
 
 在使用网络前，先确保我们的虚拟机能连接互联网，打开虚拟机设置，网络适配器中的网络桥接模式改为“NAT模式”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790829987-18652420-2497-424f-8174-dbc3f381b047.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829987_18652420_2497_424f_8174_dbc3f381b047.jpg)
 
 在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通。这是我们虚拟机上外网最常用的方式。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790830080-7f1e10d6-053f-4fd2-acd3-1c4c197a689e.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830080_7f1e10d6_053f_4fd2_acd3_1c4c197a689e.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790830190-094e5261-4c9b-459b-99c0-94874e453dc5.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830190_094e5261_4c9b_459b_99c0_94874e453dc5.jpg)
 
 网络设置为动态ip。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790830491-d7b932e4-851c-41ec-943e-0a813f05ce36.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830491_d7b932e4_851c_41ec_943e_0a813f05ce36.jpg)
 
 **桥接模式：**
 
 如果在使用TFTP，SFTP等服务器时则需要设置虚拟机的网络联系方式为桥接方式。VMware虚拟网卡设置为桥接模式时，主机网卡和虚拟机网卡通过虚拟网桥进行通信，需要将Ubuntu的IP与主机IP设置在同一个网段。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790830724-3781a417-17b9-4452-b8f7-2d5da104e004.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830724_3781a417_17b9_4452_b8f7_2d5da104e004.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790830863-a0f2a24f-af97-4180-b548-2f62be6fa873.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830863_a0f2a24f_af97_4180_b548_2f62be6fa873.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790830962-36750898-baf3-4937-978f-6207507a1b96.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830962_36750898_baf3_4937_978f_6207507a1b96.jpg)
 
    设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831068-0eaf6bc8-b53f-42a3-b43e-a27eb996c6fb.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831068_0eaf6bc8_b53f_42a3_b43e_a27eb996c6fb.jpg)
 
 **注意：网络设置部分涉及到的IP以及DNS请按照用户自身的实际环境来设置，手册为举例说明。**
 
 ### 3.1.5 U盘的加载
 打开虚拟机设置，USB控制器，在兼容性里面选择USB3.0，然后确定。如下图，因为目前大多数电脑都支持USB3.0的接口，如果不设置，当我们插入USB3.0接口，是不能连接到虚拟机的。如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831184-fc3d63d1-144b-49ea-9393-ddce8a5d3950.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831184_fc3d63d1_144b_49ea_9393_ddce8a5d3950.jpg)
 
 虚拟机启动后，插入U盘，虚拟机右下角会多出一个类似“U盘”的图标，右击-->连接即可，然后就可以在文件系统看到多一个目录，说明U盘加载成功，如图：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831270-41f4104a-f3cd-4f45-a8f8-8999f3f03850.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831270_41f4104a_f3cd_4f45_a8f8_8999f3f03850.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831348-490bfc41-59b4-4a9b-a98f-53bb128a1ced.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831348_490bfc41_59b4_4a9b_a98f_53bb128a1ced.jpg)
 
 ### 3.1.6 虚拟机基本库安装
 在进行开发之前，还需要一些其他的必要库，我们使用以下命令逐一安装，安装前需保证网络可正常使用，能上外网：
@@ -398,17 +398,17 @@ forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmain
 ### 3.2.1 VScode工具安装软件工具
 点击桌面左侧类似一个包的图标，可以看到一些工具，我们也可以搜索我们想要的工具，例如我们下载一个VScode工具，这个工具在我们日常编写代码很方便。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831428-ac1cff1a-91fe-4bc4-ab96-a1ef4711dc64.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831428_ac1cff1a_91fe_4bc4_ab96_a1ef4711dc64.jpg)
 
 搜索到我们需要的工具，点击进入查看详情，点击install下载，等待下载完成自动安装，然后点击Launch运行即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831535-8d7c8212-80ba-4f35-bedc-52624e65e587.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831535_8d7c8212_80ba_4f35_bedc_52624e65e587.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831626-622d1600-2f75-417b-8a17-ec54fd3751a6.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831626_622d1600_2f75_417b_8a17_ec54fd3751a6.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831737-817dafba-97e4-47d3-b080-c2c1ef1cce36.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831737_817dafba_97e4_47d3_b080_c2c1ef1cce36.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831819-15468199-1aa6-4d09-a2d8-0bc7e4ef904d.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831819_15468199_1aa6_4d09_a2d8_0bc7e4ef904d.jpg)
 
 ### 3.2.2 apt命令指定国内源
 apt命令用来下载管理应用程序，apt 采用的C/S模式，也就是客户端/服务器模式，我们的 PC 机作为客户端，当需要下载软件的时候就向服务器请求，因此我们需要知道服务器的地址，也叫做安装源或者更新源。
@@ -454,7 +454,7 @@ forlinx@ubuntu:~$ sudo apt-get upgrade
   forlinx@ubuntu:~$ sudo apt-get  install -y nfs-kernel-server nfs-common portmap  
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790831910-3784468e-757b-4394-a2b3-12c98f127ef8.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831910_3784468e_757b_4394_a2b3_12c98f127ef8.jpg)
 
 ## 3.3 QT环境的搭建与使用
 Qt Creator是一个跨平台的QT集成开发环境（IDE），包括了高级C++代码编辑器、项目和生成管理等工具，适用于QT应用程序框架设计和应用程序开发。本次安装选用的Qt Creator5.12.8。
@@ -473,7 +473,7 @@ Qt Creator是一个跨平台的QT集成开发环境（IDE），包括了高级C+
 
     将会弹出如下界面，点击“Next”进入下一步：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832012-310acc4f-7416-40ff-aacb-ace07767e318.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832012_310acc4f_7416_40ff_aacb_ace07767e318.jpg)
 
 点击“Next”进入下一步：
 
@@ -481,41 +481,41 @@ Qt Creator是一个跨平台的QT集成开发环境（IDE），包括了高级C+
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832112-371ed81a-1b23-49c1-b4a6-6fb471f30e62.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832112_371ed81a_1b23_49c1_b4a6_6fb471f30e62.jpg)
 
 输入邮箱和密码，点击“Next”进入下一步：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832191-5ee291ac-165c-45fe-92b6-39577337173e.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832191_5ee291ac_165c_45fe_92b6_39577337173e.jpg)
 
 勾选I have read…, 点击“Next”进入下一步：
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832272-d2154e64-3aac-4401-828c-4967335bbf35.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832272_d2154e64_3aac_4401_828c_4967335bbf35.jpg)
 
 在如下界面中，点击“Browse…”选择Qtcreator的安装路径，选择完成后，点击“Next”进入下一步：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832339-79675137-36a6-4771-ac9a-414dffde1444.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832339_79675137_36a6_4771_ac9a_414dffde1444.jpg)
 
 
 
 在如下界面中，选中第一项，点击“Next”进入下一步：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832410-d1c0d8ff-2aa9-4782-bffa-f4b78d7e1abc.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832410_d1c0d8ff_2aa9_4782_bffa_f4b78d7e1abc.jpg)
 
 同意协议，点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832485-38c8937c-4725-4a98-ba40-33ec3430ad3f.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832485_38c8937c_4725_4a98_ba40_33ec3430ad3f.jpg)
 
 
 
 点击Install安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832612-750a7f96-fa77-4bef-be0d-dbbc577b1b2d.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832612_750a7f96_fa77_4bef_be0d_dbbc577b1b2d.jpg)
 
 安装完成后，显示如下界面，取消选项“Launch Qt Creator”的勾选，点击“Finish”完成Qt Creator的安装步骤：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832693-0acd29e8-509a-4bcf-942f-93b7e30ac0b9.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832693_0acd29e8_509a_4bcf_942f_93b7e30ac0b9.jpg)
 
 ### 3.3.2 环境配置
 **注意：**
@@ -529,11 +529,11 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 #### 3.3.2.1 交叉编译器的配置
 启动Qt Creator，会出现Qt开发界面，点击Tools->option选项：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832767-5fa37015-5610-4822-be92-53e0c79c06c8.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832767_5fa37015_5610_4822_be92_53e0c79c06c8.jpg)
 
 进入到Options界面，点击左侧“Kits”，然后点击中部上方的“Compilers”选项卡，点击右侧“Add->GCC->C++”，如图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832838-bdc67dc6-8c39-4c93-a74d-21b29e4c586c.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832838_bdc67dc6_8c39_4c93_a74d_21b29e4c586c.jpg)
 
 弹出如下窗口，Compiler path选项点Browser在/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin下找到“aarch64-linux-g++”，选中后点击Open，并将Name修改为“G++”。
 
@@ -541,21 +541,21 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790832926-bfc11396-3b11-495d-98ea-e2ef9bcc9a42.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832926_bfc11396_3b11_495d_98ea_e2ef9bcc9a42.jpg)
 
 点击Browser在/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin下找到“aarch64-oe-linux-gcc”，选中后点击Open，并将Name修改为“GCC”。
 
 #### 3.3.2.2 Debuggers配置
 点击Debuggers选项卡，弹出如下界面，点击Add：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790833040-e6197663-9fc0-44c2-839a-8c5ae94450dd.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833040_e6197663_9fc0_44c2_839a_8c5ae94450dd.jpg)
 
 弹出如下窗口，在Path选项点Browser找到/opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/bin下找到“aarch64-linux-gdb”，选中后点击Open，并将Name修改为“debuggers”。
 
 #### 3.3.2.3 Qt Version 配置
     点击Qt Versions选项卡，点击Add：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790833152-16c28766-0418-426d-a322-3f5df87d56ae.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833152_16c28766_0418_426d_a322_3f5df87d56ae.jpg)
 
 
 
@@ -564,7 +564,7 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 #### 3.3.2.4 Kits配置
 点击Kits选项卡，点击右侧Add，添加一个新的Kits，按照下图的内容进行修改点击Apply。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790833230-43624074-d1e8-466b-9ab3-dcbf02543982.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833230_43624074_d1e8_466b_9ab3_dcbf02543982.jpg)
 
 
 
@@ -640,11 +640,11 @@ forlinx@ubuntu: ~/$ source /opt/aarch64-nuvoton-linux-gnu_sdk-buildroot/environm
 
 最终的编译效果如下图，（根据实际情况，路径可能会有不同）：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790834838-3159ebbf-0664-4548-a512-d26a606e56b4.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790834838_3159ebbf_0664_4548_a512_d26a606e56b4.jpg)
 
 编译成功后，将在OKMA35-linux-sdk/images文件夹下生成对应编译工程结果文件，找到其中的镜像文件。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790834914-cd02399e-ccb2-4431-86d1-0174106aebb1.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790834914_cd02399e_ccb2_4431_86d1_0174106aebb1.jpg)
 
    **注意：pack-image-OKMA35-S2_emmc-sdcard.bin是用于USB完全烧写，其它文件为单步烧写使用。**
 
@@ -761,35 +761,35 @@ Watchdog Ticking Away!
 forlinx@ubuntu:~/Qt5.12.8/Tools/QtCreator/bin$ ./qtcreator
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835078-33028446-0582-4aad-a5f8-877f5fd99b09.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835078_33028446_0582_4aad_a5f8_877f5fd99b09.jpg)
 
      启动Qt Creator 程序，进入到Qt Creator界面，点击“New File or Project”新建一个工程,选择“Application”->“Qt Widgets Application”，然后点击右下角的“Choose”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835299-f562fe3b-33c7-49ff-9ee1-d1d5e92be52f.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835299_f562fe3b_33c7_49ff_9ee1_d1d5e92be52f.jpg)
 
 在如下界面中为新建的工程修改名字为“helloworld”，选择安装路径选择/home/forlinx，然后点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835370-a93baa1a-b8ee-4f2f-9727-9f5bdd6d81f7.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835370_a93baa1a_b8ee_4f2f_9727_9f5bdd6d81f7.jpg)
 
 选择qmake,点击Next继续。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835448-d33e392f-e647-41f2-ba60-2d97da640a3e.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835448_d33e392f_e647_41f2_ba60_2d97da640a3e.jpg)
 
 在如下界面中，修改类名“Class name”为“helloworld”，将基类“Base class”选择为Qwidget，然后点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835513-fbca9cb1-42fd-4a32-b74b-d86b0a2206df.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835513_fbca9cb1_42fd_4a32_b74b_d86b0a2206df.jpg)
 
 在如下界面中，选择之前已添加过的“ma35”作为当前工程的kit，然后点击“Next”：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835609-3fcf0d95-e495-4065-825f-ec2983c9631b.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835609_3fcf0d95_e495_4065_825f_ec2983c9631b.jpg)
 
 在如下界面中，点击“Finish”，完成工程的新建：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835694-1eb01fd6-ddec-41ae-9da9-18db96f0a457.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835694_1eb01fd6_ddec_41ae_9da9_18db96f0a457.jpg)
 
     新建工程创建完成，即可显示如下窗口：     
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733790835804-a99535c3-d4fd-4937-89df-f82d1f491c42.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835804_a99535c3_d4fd_4937_89df_f82d1f491c42.jpg)
 
 当程序编写完成后，点击左下角的锤子图标，即可进行交叉编译，将编译好的可执行程序helloworld拷贝到开发板，即可进行应用的测试。
 
