@@ -77,7 +77,7 @@ The connection of OK-MA35-S21 SoM and the carrier board is board-to-board, and t
 | RTC                  | drivers/rtc/rtc-ma35d1.c                                     | /dev/rtc0            |
 | serial port          | drivers/tty/serial/serial/ma35d1\_serial.c                   | /dev/ttySX           |
 | LED                  | drivers/leds/leds-gpio.c                                     |                      |
-| Audio Driver         | sound/soc/ma35d1/ma35d1-i2s.c sound/soc/ma35d1/ma35d1-audio.c sound/soc/codecs/nau8822.c sound/soc/ma35d1/ma35d1-pcm.c | /dev/snd/            |
+| Audio Driver         | sound/soc/ma35d1/ma35d1-i2s.c sound/soc/ma35d1/ma35d1-<br />audio.c sound/soc/codecs/nau8822.c sound/soc/ma35d1/ma35d1-pcm.c | /dev/snd/            |
 | Watchdog             | drivers/watchdog/ma35d1\_wdt.c                               | /dev/watchdog        |
 | SPI                  | drivers/spi/spi-ma35d1-spi.c                                 | /dev/spidev1.0       |
 | QSPI                 | drivers/spi/spi-ma35d1-qspi.c                                |                      |
