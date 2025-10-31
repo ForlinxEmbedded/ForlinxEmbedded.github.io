@@ -31,6 +31,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK-MA35-S21_Linux5_10_140_User_Manual
+
 
 
 APPLICATION NOTE
