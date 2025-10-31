@@ -56,7 +56,7 @@ For human interface applications, the MA35D1 series offers an LCD display contro
 
 **MA35D1 Processor Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794127829-e6fe8cb6-0ab1-4f24-a28e-60b362c726da.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794127829_e6fe8cb6_0ab1_4f24_a28e_60b362c726da.jpg)
 
 ---
 
@@ -64,19 +64,19 @@ For human interface applications, the MA35D1 series offers an LCD display contro
 
 ### 2.1 FET-MA35-S2 SoM Appearance
 
-![](https://cdn.nlark.com/yuque/0/2024/gif/50461850/1733794129356-c5b027f9-06d6-4e7f-a3b5-d81e4aa82722.gif)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129356_c5b027f9_06d6_4e7f_a3b5_d81e4aa82722.gif)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/gif/50461850/1733794129432-b3176672-b078-4574-ab99-3393d228c632.gif)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129432_b3176672_b078_4574_ab99_3393d228c632.gif)
 
 **Back**
 
 ### 2.2 FET-MA35-S2 SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794129512-2ec7e08f-d9a6-4af9-87a0-663658dee809.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129512_2ec7e08f_d9a6_4af9_87a0_663658dee809.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794129629-a8ec0585-61ed-4bba-830d-b69c540e5751.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129629_a8ec0585_61ed_4bba_830d_b69c540e5751.jpg)
 
 Structure size: 48mm × 40mm, dimensional tolerance ± 0.13mm, refer to DXF file for more dimensional information.
 
@@ -147,9 +147,9 @@ Refer to Appendix for the connector packaging diagram.
 
 <font style="color:#ff0000;">（ SoM Pins Schematic）</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794129715-3754c393-a715-43a7-954c-f6eb5f624b74.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129715_3754c393_a715_43a7_954c_f6eb5f624b74.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794129799-ecc52539-ef75-4854-985c-6ae21f2d6278.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129799_ecc52539_ef75_4854_985c_6ae21f2d6278.png)
 
 #### 2.5.2 FET-MA35-S2 SoM Pins Description
 
@@ -178,7 +178,7 @@ It includes the minimum system block diagram.
 
 FET-MA35-S2 SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/gif/50461850/1733794129884-a42777f2-6019-4c88-95c5-30f27e1f2d3d.gif)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794129884_a42777f2_6019_4c88_95c5_30f27e1f2d3d.gif)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, image flashing port, otherwise, users can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -190,13 +190,13 @@ Please refer to section 3.5 in “Chapter 3. OK-MA35-S2 Carrier Board Descriptio
 
 The connection of OK-MA35-S21 SoM and the carrier board is edging connection +LGA, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794131533-d8f7a569-79ff-4590-83d0-306f5f209e4d.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131533_d8f7a569_79ff_4590_83d0_306f5f209e4d.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794131639-4399171b-050e-42f6-ab2d-b8fce99fc265.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131639_4399171b_050e_42f6_ab2d_b8fce99fc265.jpg)
 
 ### 3.2 OK-MA35-S21 SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794131771-01dde045-a64a-4bc1-b422-c7f9f911e33a.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131771_01dde045_a64a_4bc1_b422_c7f9f911e33a.jpg)
 
 PCB Size: 130mm × 190mm
 
@@ -208,7 +208,7 @@ Power supply voltage: DC 12V.
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759202030508-6466ec90-e963-4931-a863-6a8311f36399.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1759202030508_6466ec90_e963_4931_a863_6a8311f36399.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -265,19 +265,19 @@ ABC-D+IK:M
 
 It uses a 12V power adapter for the power supply, and the power connector is a DC005 socket. S1(dip switch) is the power switch, which moves according to the screen printing indication on the board. The rear of S1 has TVS for electrostatic protection, F1 for over-current protection, and D1 and F1 cooperate for anti-reverse connection protection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794131888-ec74bbcb-bf0d-4a2f-9355-8b10ee93bda7.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131888_ec74bbcb_bf0d_4a2f_9355_8b10ee93bda7.png)
 
 VCC\_12V is stepped down to DCIN (5V) through U1. DCIN directly powers the SoM to ensure that it can be powered on first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794131960-8176532c-7d48-4a3a-be43-dc3ca8f308a7.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794131960_8176532c_7d48_4a3a_be43_dc3ca8f308a7.png)
 
 DCIN (5V) outputs VCC\_5V in a controlled manner through U2. U2 is controlled by EXTP\_EN. After the SoM is powered on, U2 is turned on VCC\_5V powers some 5V - powered devices on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132029-dcc186be-4834-4397-8d5e-cf08597886b7.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132029_dcc186be_4834_4397_8d5e_cf08597886b7.png)
 
 VCC\_5V is stepped down to VCC\_3V3 through U6 to power all 3.3V - powered devices on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132111-01a476eb-8f22-4fb4-b297-a51f58aefd7a.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132111_01a476eb_8f22_4fb4_b297_a51f58aefd7a.png)
 
 **Note:**
 
@@ -289,7 +289,7 @@ VCC\_5V is stepped down to VCC\_3V3 through U6 to power all 3.3V - powered devic
 
 K1 on the carrier board is the development board reset key. Pressing it can realize the whole board power off and reset.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132196-ffd9f850-368c-4f66-b3e6-51bfb4e5aa82.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132196_ffd9f850_368c_4f66_b3e6_51bfb4e5aa82.png)
 
 **Note: When the nRESET pin is not used, please float it and do not pull it up or down.**
 
@@ -297,7 +297,7 @@ K1 on the carrier board is the development board reset key. Pressing it can real
 
 The carrier board uses an 8-bit DIP switch S2 to select the system boot mode. Please adjust the options before powering up the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132394-da8a9b1c-caff-4f29-a454-2fce8327e41d.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132394_da8a9b1c_caff_4f29_a454_2fce8327e41d.png)
 
 **Boot mode:**
 
@@ -322,13 +322,13 @@ Secure is secure boot, which ensures the authenticity and integrity of the syste
 There are two debug serial ports on the SoM. UART0 is used for A35 debugging, and UART16 is used for M4 debugging.   
 To facilitate users, the two debug serial ports are integrated into one USB interface using the USB - to - serial chip CH342F.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132475-74e8db05-515a-4360-92ce-2d840fe536d2.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132475_74e8db05_515a_4360_92ce_2d840fe536d2.png)
 
 To use the debug serial ports, first install the CH342F driver on your computer. The driver download links are: http://www.wch.cn/products/CH342.html
 
 Then connect the P6 port of the development board to the computer’s USB port using a USB - to - Type - C cable. Two COM ports will be generated in the computer’s Device Manager. Among them, Port A is the A35 debug serial port, and Port B is the M4 debug serial port.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/50461850/1733794132566-d687cff5-0fab-4356-a0ba-d722cfba8859.jpg)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132566_d687cff5_0fab_4356_a0ba_d722cfba8859.jpg)
 
 Open a debug terminal tool on the computer, such as Putty. Set the baud rate to 115200, the data bits to 8, no parity bit, and the stop bits to 1. Select the correct COM port, power on the development board, and you can see the debug serial port information.   
 **Note：**
@@ -341,7 +341,7 @@ Open a debug terminal tool on the computer, such as Putty. Set the baud rate to 
 
 The TF Card on the development board uses the SD0 channel of the CPU.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132679-b3b36aae-b1ed-4145-af69-146e7e5bac1e.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132679_b3b36aae_b1ed_4145_af69_146e7e5bac1e.png)
 
 **Note: It is strongly recommended to reserve pull - up resistors on the bus; otherwise, it may affect the flashing of the TF card. It is recommended to reserve a series resistor and a capacitor to ground for the SD0\_CLK pin. The capacitor is left un - soldered by default. Since the TF card is a hot - swappable device, ESD protection should be provided. SD signals must be length-matched.**
 
@@ -350,7 +350,7 @@ The TF Card on the development board uses the SD0 channel of the CPU.
 The carrier board supports USB flashing. Currently, the development board circuit only supports the device mode. When using USB0, pay attention to the design reference of HSUSB0\_VBUSVLD on the development board. When OTG\_ID is high, USB0 functions as a device.   
 If only USB0 is used as the HOST, pull the OTG \_ ID to GND, and the USB socket power supply VBUS pin needs to supply 5V power. In addition, HSUSB0 \_ VBUSVLD can be used as a common IO.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132759-8b193b8b-d533-4638-b72d-a89e5396c1d6.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132759_8b193b8b_d533_4638_b72d_a89e5396c1d6.png)
 
 **Note: Only the native USB0 of the SoM supports the USB programming system. USB data lines are required to make 90Ω differential impedance. Please select the appropriate ESD device. The HSUSB0\_VBUSVLD needs to detect voltage to enable the USB function normally.**
 
@@ -358,16 +358,16 @@ If only USB0 is used as the HOST, pull the OTG \_ ID to GND, and the USB socket 
 
 The RGB 888 is led out from the development board through the FPC seat with 54pin and 0.5mm pitch (P23). The maximum resolution can reach 1920 \* 1080 @ 60fps. It is suitable for the Forlinx 7-inch LCD.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132828-3914eafa-311f-4bc8-bd2b-ed3ca4a0da03.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132828_3914eafa_311f_4bc8_bd2b_ed3ca4a0da03.png)
 
 #### 3.5.8 LVDS Interface
 
 LVDS is converted from RGB888, and only one of them can be used.   
 The development board leads out the LVDS signals through a DVI - I (24 + 5 pins) socket and supports USB touch.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794132922-56d6b1a0-23dd-447e-bf2e-c6fd8ae032cc.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794132922_56d6b1a0_23dd_447e_bf2e_c6fd8ae032cc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133010-0acae7ad-632c-43da-ab2d-bdbdee30f22b.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133010_0acae7ad_632c_43da_ab2d_bdbdee30f22b.png)
 
 **Note: The data and clock of LVDS need to have equal lengths. Impedance requirements: 50Ω for single - ended and 100Ω for differential.**
 
@@ -395,21 +395,21 @@ The Gigabit network port is connected to the PHY chip YT8521SH-CA (U31) via RGMI
 - **It is recommended to directly copy the schematic and PCB design of the development board for this part.** 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133084-a2101fb2-c6ab-40b3-b862-ca79f3158a37.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133084_a2101fb2_c6ab_40b3_b862_ca79f3158a37.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133178-c8093cca-3b1a-415e-a413-808cac60e95d.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133178_c8093cca_3b1a_415e_a413_808cac60e95d.png)
 
 The 100m Ethernet port is connected to the PHY chip IP101GRI (U32) through RMII, and is led out from the RJ45 socket (P1). The socket model is FC-SH105GYNL, and the quarantine transformer is built in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133250-6ce5eba0-49bd-4691-9b1e-2dcd4ab54101.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133250_6ce5eba0_49bd_4691_9b1e_2dcd4ab54101.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133470-c6ef9745-22e6-448d-905e-29c1b12635cb.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133470_c6ef9745_22e6_448d_905e_29c1b12635cb.png)
 
 #### 3.5.10 USB HOST Interface
 
 The development board uses a USB2.0 HUB (FE1.1s - BQFN24BT) to expand the native USB2.0 port of the CPU into 4 x USB2.0. One of them is led out through a USB2.0 Type - A socket (P16), and the other 3 x are connected to WiFi \& Bluetooth, miniPCIE, and LVDS respectively.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133534-6214ac63-a94b-425c-a720-6418e0ae6a73.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133534_6214ac63_a94b_425c_a720_6418e0ae6a73.png)
 
 **Note：** 
 
@@ -420,7 +420,7 @@ The development board uses a USB2.0 HUB (FE1.1s - BQFN24BT) to expand the native
 
 The model of WiFi Bluetooth 2-in-1 module is: BL-M8723DU1, standard: IEEE802.11b/G/n, Bluetooth standard: TV 2.1/BTV3.0/BTV4.0.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133614-1640395a-a85d-404d-bf6f-62706f19d14d.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133614_1640395a_a85d_404d_bf6f_62706f19d14d.png)
 
 In the schematic diagram, the WIFI\_EN pin is the power switch pin of the module. When it outputs a low level, the module is powered.   
 The antenna interface is at the lower - right corner of the front side of the PCB. P22 is the WIFI antenna, which can send and receive data.
@@ -431,17 +431,17 @@ The development board supports 4G modules using the miniPCIE socket. By default,
 
 It uses a MicroSIM card. Please pay attention to the card insertion direction.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133691-56e636fe-ea68-4d3d-aef6-919078844208.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133691_56e636fe_ea68_4d3d_aef6_919078844208.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133758-fc362c67-dc18-4213-88be-2a0cdd180ed1.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133758_fc362c67_dc18_4213_88be_2a0cdd180ed1.png)
 
 #### 3.5.13 Audio
 
 The development board mounts the NAU88C22YG chip through I2S0, providing a standard 3.5mm audio socket (P43, green) and a standard 3.5mm microphone socket (P42, pink). The NAU88C22YG has a built - in Class D power amplifier. The output is led out through two XH2.54 - 2P white sockets, P38 and P40, which can drive two 8Ω speakers with a maximum output power of 1W. If you need to connect an external larger power amplifier, you can only obtain the signal from the headphone socket, not from the speaker interface. The output power of the on - chip headphone driver is 40mW (16Ω). The power supply of the audio chip is controlled by CODEC\_PWR\_EN, and it is enabled at a high level.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133839-cb80d3c6-e280-4f94-b57e-a97b29c0ad87.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133839_cb80d3c6_e280_4f94_b57e_a97b29c0ad87.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794133914-f874db1a-7ef6-4f04-962e-5a9452ec778e.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794133914_f874db1a_7ef6_4f04_962e_5a9452ec778e.png)
 
 **Note：** 
 
@@ -454,18 +454,18 @@ The development board mounts the NAU88C22YG chip through I2S0, providing a stand
 The development board provides 4 x CAN supporting CAN-FD. The 2pin-2.54mm is used to connect short - circuit jumper caps, which are for the 120Ω termination resistors on the CAN bus. The 0R resistors (with empty soldering pads) connected in parallel with the pins are a reserved design. Users with stability requirements can solder these resistors instead of using the jumper caps.   
 The connection is led out through the P44 terminal block. It is recommended to connect the devices to a common ground when using CAN communication.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134004-4e21b581-5f00-4749-9f6f-18a6463093c3.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134004_4e21b581_5f00_4749_9f6f_18a6463093c3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134084-35ff1fda-6b21-4426-bf51-4b3f5685ed83.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134084_35ff1fda_6b21_4426_bf51_4b3f5685ed83.png)
 
 #### 3.5.15 RS485
 
 The development board provides 6 x RS485. The 2pin-2.54mm is used to connect short - circuit jumper caps, which are for the 120Ω termination resistors on the RS485 bus. The 0R resistors (with empty soldering pads) connected in parallel with the pins are a reserved design. Users with stability requirements can solder these resistors instead of using the jumper caps.   
 The connection is led out through the P29 terminal block. It is recommended to connect the devices to a common ground when using RS485 communication.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134178-d2b500ee-0311-4a52-89c6-b14601d70e7f.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134178_d2b500ee_0311_4a52_89c6_b14601d70e7f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134250-591b3560-c8a6-4268-ba5c-aee805ae65cb.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134250_591b3560_c8a6_4268_ba5c_aee805ae65cb.png)
 
 **Note：** 
 
@@ -476,19 +476,19 @@ The connection is led out through the P29 terminal block. It is recommended to c
 
 Three general serial ports, each at 3.3V, are led out from the carrier board using 2\*6pin-2.54mm for users to connect external devices.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134335-5fa0dd9f-b19d-47f3-a536-a30bbc70c2f9.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134335_5fa0dd9f_b19d_47f3_a536_a30bbc70c2f9.png)
 
 #### 3.5.17 SWD Interface
 
 SWD interface led out from the carrier board through P13 with a pin pitch of 2.54mm. If this function is not used, simply leave these pins floating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134416-f5ceb038-ddeb-4b0f-ab30-7c29e49d640d.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134416_f5ceb038_ddeb_4b0f_ab30_7c29e49d640d.png)
 
 #### 3.5.18 RTC
 
 The carrier board is externally provided with RTC equipment through I2C2, and is supplied with power through D4 compatible with VCC \_ 3V3 and the button cell. After the carrier board is powered off, the button cell can maintain power supply for the RTC chip. The hardware is designed to be compatible with both RX8010SJ and PCF8563T/5.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134490-d2691e54-cec3-48eb-b2fb-26e34e7a5d89.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134490_d2691e54_cec3_48eb_b2fb_26e34e7a5d89.png)
 
 **Note: When using the on - board RTC function of the SoM, a 3.3V power supply needs to be provided at the VBAT (166) pin, and this power supply should remain available even after power - off.**
 
@@ -496,43 +496,43 @@ The carrier board is externally provided with RTC equipment through I2C2, and is
 
 The development board provides 2 x SPI , which are led out through P9 using 2\*6pin-2.54mm for users to connect external devices.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134577-93c4f767-9e3f-4465-9eea-fbc4c539fd71.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134577_93c4f767_9e3f_4465_9eea_fbc4c539fd71.png)
 
 #### 3.5.20 ADC
 
 There are 8 x ADC on the development board, which is demonstrated using variable resistors. The ADC voltage sampling range is 0 - 3.3V, supporting 12 - bit resolution and 500K SPS.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134671-a75c4b12-8d8b-4e72-988a-95b611934b56.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134671_a75c4b12_8d8b_4e72_988a_95b611934b56.png)
 
 #### 3.5.21 EADC
 
 There are 8 x EADC on the development board, which is demonstrated using variable resistors. The ADC voltage sampling range is 0 - 3.3V, supporting 12bit resolution and 4.7M SPS.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134807-7daf4e89-b477-49cd-a0b6-cb7e2c22e035.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134807_7daf4e89_b477_49cd_a0b6_cb7e2c22e035.png)
 
 #### 3.5.22 BUZZER
 
 The development board is designed with 1 x buzzer, controlled by EPWM. Users can customize its functions.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794134936-182df0c0-10c4-4250-8a24-60684c6b01f3.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794134936_182df0c0_10c4_4250_8a24_60684c6b01f3.png)
 
 #### 3.5.23 QSPI NorFlash
 
 The baseboard has an on - board QSPI\_NorFlash.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794135039-8f3e9f84-a3c1-4087-8773-d6827810ae77.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794135039_8f3e9f84_a3c1_4087_8773_d6827810ae77.png)
 
 #### 3.5.24 EPWM
 
 Five EPWM signals with a level of 3.3V are led out from the carrier board using 2\*4pin-2.54mm . Users can customize their functions.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794135166-11dfc03e-6484-45a6-985b-204724e656b7.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794135166_11dfc03e_6484_45a6_985b_204724e656b7.png)
 
 #### 3.5.25 GPIO
 
 Some GPIO are led out with a level of 3.3V, using headers with a 2.54mm pitch. Users can customize their functions. When taking power from the headers during debugging, pay attention to the voltage level.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794135281-3eda4a59-a80b-4e1e-805b-f25c9e3bf8d7.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794135281_3eda4a59_a80b_4e1e_805b_f25c9e3bf8d7.png)
 
 ## 4\. Hardware Design Guide
 
@@ -561,7 +561,7 @@ Before the SoM is powered on, if there is a high - level in - flowing current on
 
 PG0 - PG7 are startup - related pins. These pins are pulled down by default inside the CPU. Meanwhile, on the SoM, the pins PG0, PG2, PG6, and PG7 are pulled up with a 10K resistor. By default, the secureboot function is disabled, and the system can be started from the eMMC when only power is supplied. Please handle the relevant pins on the carrier board according to the flashing and startup situations. In addition, these pins are not recommended to be used as GPIO because they are related to startup. If they are used as GPIO, pay attention to the pin level and do not affect the startup item.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794136938-fca55f55-d91e-4658-b8f9-d9105c707099.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794136938_fca55f55_d91e_4658_b8f9_d9105c707099.png)
 
 **7. Debug Serial Port Hardware Design Instructions**
 
@@ -585,7 +585,7 @@ The default input range of ADC0 - 7 and EADC0 - 7 is 0 - 3.3V. Attention should 
 
 To ensure the solder climbing yield of the stamp holes on the SoM, when manufacturing the stencil for the carrier below:, the opening area of the stamp holes is expanded to ensure the amount of solder paste, as shown in the gray part in the following figure. Therefore, when laying out the carrier board, it is necessary to ensure that the pads of other components are kept away from the enlarged area of the SoM stencil. Meanwhile, no holes are allowed to be drilled in the enlarged area of the SoM stencil to prevent solder leakage, which may affect the soldering quality.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794137064-bec5363b-398b-4a4b-b1d5-698a109a1fb3.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794137064_bec5363b_398b_4a4b_b1d5_698a109a1fb3.png)
 
 **14. Surface Treatment Process Requirements for Self - Made Carrier Board PCB**
 
@@ -595,7 +595,7 @@ It is recommended to use the electroless nickel immersion gold (ENIG) process fo
 Inform the factory that the stencil for the SoM area does not need to be processed as the compensation has already been done, and other areas can be modified.   
 e.g.:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794137144-b456c4c8-217d-4128-8082-89191135f91c.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794137144_b456c4c8_217d_4128_8082_89191135f91c.png)
 
 **16. SoM Vibration - Resistance Requirements**
 
@@ -620,16 +620,16 @@ If the your product has vibration - resistance requirements, it is recommended t
 
 **The minimum system includes the SoM, power supply, debugging serial port, system image flashing interface, and boot startup circuits.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140568-620754af-3ed1-4bd2-b8fe-45b9d7f2de72.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140568_620754af_3ed1_4bd2_b8fe_45b9d7f2de72.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140072-15dd9652-37fd-4015-9a0c-f9d5d1996c1f.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140072_15dd9652_37fd_4015_9a0c_f9d5d1996c1f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140169-c21f7155-0641-4f93-9e9b-0eb81d814bbb.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140169_c21f7155_0641_4f93_9e9b_0eb81d814bbb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140270-a38fc323-4441-41dd-8ee8-906f584e5b55.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140270_a38fc323_4441_41dd_8ee8_906f584e5b55.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140384-0a5b5f6f-e70b-4c3d-b95f-015669d1916c.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140384_0a5b5f6f_e70b_4c3d_b95f_015669d1916c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/50461850/1733794140469-51340710-a9ea-41da-b68a-e0c9df73b6ca.png)
+![Image](./images/OK-MA35-S21_User_Hardware_Manual/1733794140469_51340710_a9ea_41da_b68a_e0c9df73b6ca.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. In order to meet the normal operation of the SoM, in addition to the power supply VDD5V, HSUSB0 is also required to facilitate the system flashing; UART0 circuit is convenient to confirm whether the system works normally and to facilitate debugging; BOOT circuit is used to start the system.
