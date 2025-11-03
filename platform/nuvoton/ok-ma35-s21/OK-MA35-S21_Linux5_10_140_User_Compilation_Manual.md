@@ -1,4 +1,4 @@
-# Linux5.10.140\_User’s Compilation Manual\_V1.0
+Linux5.10.140\_User’s Compilation Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -229,11 +229,9 @@ The "Virtual Machine Settings Menu" pops up as shown below:
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828067_f1e8e135_1470_4c02_a438_16875862a70e.jpg)
+![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828160_a11ca836_a830_4abd_9cc4_c0159be3bfb2.jpg)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
-
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828160_a11ca836_a830_4abd_9cc4_c0159be3bfb2.jpg)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
@@ -362,10 +360,6 @@ The network is set to dynamic IP.
 If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
 ![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830724_3781a417_17b9_4452_b8f7_2d5da104e004.jpg)
-
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830863_a0f2a24f_af97_4180_b548_2f62be6fa873.jpg)
-
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830962_36750898_baf3_4937_978f_6207507a1b96.jpg)
 
 Set up static ip, at this time Ubuntu's IP and the host IP need to be set in the same network segment.
 
