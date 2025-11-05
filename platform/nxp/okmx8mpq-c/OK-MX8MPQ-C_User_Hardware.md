@@ -1048,7 +1048,7 @@ Table 1. Linux system power consumption
 |    6    | LVDS+PCIE WIFI                                    |       2.93        |                    8.51                     |
 |    7    | LVDS+HDMI+TF card read and write                  |       2.68        |                    7.96                     |
 
-Table 2 Power Consumption of the Whole Machine Under Android System
+Table 2. Power Consumption of the Whole Machine Under Android System
 
 | **No.** | **Test Item**                    | **SoM Power (W)** | Development Board Power (including SoM) (W) |
 | :-----: | -------------------------------- | :---------------: | :-----------------------------------------: |
