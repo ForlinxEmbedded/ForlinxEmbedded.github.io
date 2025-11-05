@@ -30,11 +30,11 @@ This hardware manual is applicable to the development boards of C and OKMX8MPX-C
 | Date                                         |           **Manual Version**           |            **SoM Version**             |       **Carrier Board Version**        | Revision History                                             |
 | -------------------------------------------- | :------------------------------------: | :------------------------------------: | :------------------------------------: | ------------------------------------------------------------ |
 | <font style="color:black;">19/08/2021</font> |                  V1.0                  |                  V1.0                  |                  V1.1                  | OKMX8MPQ-C User’s Hardware Manual Initial Version            |
-| <font style="color:black;">08/11/2021</font> |                  V2.0                  |                  V1.0                  |                  V2.0                  | The PCB version of the carrier board is upgraded from V1.1 to V2.0, and the relevant manual instructions have been updated.   The changes to the carrier board are as follows:<br />1\. Due to material supply issues, the PHY chip on the<br />OKMX8MPQ - C carrier board is replaced from<br />AR8031 - AL1B to YT8521;<br />2\. For all circuits powered on under MOSFET control,<br />a soft - start RC circuit is added to prevent the<br />previous - stage power supply from dropping at the<br />moment of power - on. This includes the power - on<br />control circuit of VSYS\_5V on the carrier board, as<br />well as the power supply circuits for the LVDS and<br />audio modules. |
-| 23/06/2022                                   | <font style="color:black;">V2.1</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V2.0</font> | 1G memory and 8G eMMC industrial configuration<br />SoM are added. |
-| 19/08/2022                                   | <font style="color:black;">V2.2</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V2.0</font> | Changing the USB programming recommended<br />circuit of Type-C interface and adding the photos of<br />CAN and 485 interfaces. |
-| 08/11/2022                                   | <font style="color:black;">V2.2</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V2.1</font> | The PCB version of the carrier board is upgraded<br />from V2.0 to V2.1, and the user manual, schematic<br />and source files are updated. The changes of the<br />carrier board are as follows:   1\. The USB switching<br />chip is modified; 2\. A heat sink fan interface is added. |
-| 17/06/2023                                   | <font style="color:black;">V3.0</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V3.1</font> | The PCB version of the carrier board is upgraded<br />from V2.1 to V3.1, and the user manual, schematic<br />and source files are updated. The changes of the<br />carrier board are as follows:   1\. To solve the problem<br />that the carrier board does not power off when<br />shutting down due to carrier board leakage, a<br />voltage monitoring chip is added; 2\. The audio<br />chip is replaced with NAU88C22YG;<br />3\. The ground of the USB interface shell is left floating;<br />4\. The power - on sequence of the PCIE interface is adjusted, and the PCIE interface is powered separately. |
+| <font style="color:black;">08/11/2021</font> |                  V2.0                  |                  V1.0                  |                  V2.0                  | The PCB version of the carrier board is upgraded<br />from V1.1 to V2.0, and the relevant manual<br />instructions have been updated. <br />The changes to the carrier board are as follows:<br />1\. Due to material supply issues, the PHY chip<br />on the OKMX8MPQ - C carrier board is replaced from AR8031 - AL1B to YT8521;<br />2\. For all circuits powered on under MOSFET control,<br />a soft - start RC circuit is added to prevent the<br />previous - stage power supply from dropping at the moment of power - on.<br />This includes the power - on control circuit of VSYS\_5V on the carrier board, as<br />well as the power supply circuits for the LVDS and audio modules. |
+| 23/06/2022                                   | <font style="color:black;">V2.1</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V2.0</font> | 1G memory and 8G eMMC industrial configuration SoM are added. |
+| 19/08/2022                                   | <font style="color:black;">V2.2</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V2.0</font> | Changing the USB programming recommended<br />circuit of Type-C interface and adding the photos of CAN and 485 interfaces. |
+| 08/11/2022                                   | <font style="color:black;">V2.2</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V2.1</font> | The PCB version of the carrier board is upgraded<br />from V2.0 to V2.1, and the user manual, schematic<br />and source files are updated.<br />The changes of the carrier board are as follows:                                           1\. The USB switching chip is modified;<br />2\. A heat sink fan interface is added. |
+| 17/06/2023                                   | <font style="color:black;">V3.0</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V3.1</font> | The PCB version of the carrier board is upgraded<br />from V2.1 to V3.1, and the user manual, schematic and source files are updated.<br />The changes of the carrier board are as follows:                                             1\. To solve the problem<br />that the carrier board does not power off when<br />shutting down due to carrier board leakage, a<br />voltage monitoring chip is added; 2\. The audio<br />chip is replaced with NAU88C22YG;<br />3\. The ground of the USB interface shell is left floating;<br />4\. The power - on sequence of the PCIE interface is<br />adjusted, and the PCIE interface is powered separately. |
 | 08/03/2024                                   | <font style="color:black;">V3.1</font> | <font style="color:black;">V1.0</font> | <font style="color:black;">V3.1</font> | Changing the manual format and modifying the<br />description of the connector section. |
 | 10/12/2024                                   |                  V3.2                  |                  V1.0                  |                  V3.1                  | Adding MIMX8ML4CVNKZAB controller descriptions.              |
 | 09/07/2025                                   |                  V3.3                  |                  V1.0                  |                  V3.1                  | CPU junction temperature is added to the<br />introduction of the SoM. |
@@ -176,7 +176,7 @@ If you need methods to adjust the junction temperature, as well as the temperatu
 | ESD HBM(ESDA/JEDEC JS-001-2017) |       -1000       | +1000       |    V     | Applicable to all pins of the SoM |
 | ESD CDM(ESDA/JEDEC JS-002-2018) |       -250        | +250        |    V     | Applicable to all pins of the SoM |
 
-**Note：**
+**Note:**
 
 - **The above data is from the chip manual (the source of parameters can be specified);**
 - **All SoM outgoing signals are electrostatic sensitive, requiring effective protection in carrier board design. Special attention to electrostatic protection is also needed during transportation, assembly, and use.**
@@ -190,7 +190,7 @@ OKMX8MPQ SoM Interfaces:
 |     USB      |      2       | The CPU has two USB 3.0/2.0 controllers with integrated PHY inside;<br/>Host mode: Supports Super-speed (5Gbit/s), high-speed(480Mbit/s),<br />full-speed(12Mbit/s), low-speed(1.5Mbit/s) <br/>Device Mode: SS/HS/FS |
 |     PCIE     |      1       | Supports 1 x PCI Express Gen3                                |
 |   MIPI_CSI   |      2       | Supports 2 x 4-lane MIPI camera serial interfaces, capable of operating up to 1.5 Gbps |
-|   MIPI_DSI   |      1       | 1 x 4-lane MIPI display serial interface, capable of working up to 1.5 Gbps• 1080 p60<br />• WUXGA (1920x1200) at 60 Hz<br/>• 1920x1440 at 60 Hz<br/>• UWHD (2560x1080) at 60 Hz<br/>• WQHD (2560x1440) by reduced blanking mode（Simplified Hidden Mode） |
+|   MIPI_DSI   |      1       | 1 x 4-lane MIPI display serial interface, capable of working up to 1.5 Gbps<br />• 1080 p60<br />• WUXGA (1920x1200) at 60 Hz<br/>• 1920x1440 at 60 Hz<br/>• UWHD (2560x1080) at 60 Hz<br/>• WQHD (2560x1440) by reduced blanking mode (Simplified Hidden Mode) |
 |     HDMI     |      1       | Supports HDMI 2.0a with resolution up to 4Kp30;<br/>Supports HDMI2.1 eARC |
 |     LVDS     |      1       | Single channel (4 lanes) supports 720p60;<br />Dual asynchronous channels (8 data, 2clocks) supporting 1920x1200p60 |
 |   Ethernet   |      ≤2      | Supports 2 x RGMII, of which 1x supports TSN                 |
@@ -198,8 +198,8 @@ OKMX8MPQ SoM Interfaces:
 |     UART     |      ≤4      | UART                                                         |
 |     SPI      |      ≤3      | Supports speed up to 52Mbit/s, configurable master-slave mode |
 |     I2C      |      ≤5      | The maximum speed supported in standard mode is 100Kbit/s;<br/>The maximum speed supported in fast mode is 400Kbit/s |
-|     CAN      |      ≤2      | CAN communication controller using CAN FD protocol and CAN protocol compliant with CAN 2.0B protocol specification (supports CAN - FD (subject to CPU version support). |
-|     SAI      |      ≤6      | Synchronous Audio Interface (SAI), a full duplex serial interface that supports frame synchronization, such as I2S, AC97, TDM, and codec/DSP interfaces |
+|     CAN      |      ≤2      | CAN communication controller using CAN FD protocol and CAN protocol<br />compliant with CAN 2.0B protocol specification (supports CAN - FD<br />(subject to CPU version support). |
+|     SAI      |      ≤6      | Synchronous Audio Interface (SAI), a full duplex serial interface that supports<br />frame synchronization, such as I2S, AC97, TDM, and codec/DSP interfaces |
 |    SPDIF     |      ≤1      | A standard audio file transfer format jointly developed by Sony and Philips |
 |     PWM      |      ≤4      | 16 bit counter                                               |
 |     QSPI     |      ≤1      | Already occupied by the SoM, connected to 16MB of Nor Flash  |
@@ -661,21 +661,21 @@ ABC-D+IK:M
 |    USB3.0     |    2     | Led out via USB Type A socket, only used as Host             |
 |   MIPI_CSI    |    2     | CSI1: Supports daA3840-30mc-IMX8MP-EVK camera module, resolution 3840X2160<br/>CSI2: Led out through a 26Pin FPC socket and 2 x 10Pin 2.0mm sockets;<br/>Supports OV5645 module, camera supports a maximum resolution of 2592X1944 |
 |   MIPI_DSI    |    1     | 4 lane MIPI-DSI interfaces is led out through the FPC socket;<br/>Default adaptation for Forlinx 7-inch MIPI screen, resolution 1024 x 600@30fps |
-|     LVDS      |    1     | Dual asynchronous channels (8 data, 2clocks) supporting 1920x1200p60, with all signals led out |
+|     LVDS      |    1     | Dual asynchronous channels (8 data, 2clocks) supporting 1920x1200p60,<br />with all signals led out |
 |     HDMI      |    1     | Supports HDMI 2.0a with resolution up to 4K@ 30fps;<br/>Supports HDMI2.1 eARC |
 |   Ethernet    |    2     | Supports 10/100/1000 Mbps adaptive speed, led out via RJ45. 1 x supports TSN. |
 |     PCIE      |    1     | The development board uses standard PCIEx1 card interface and supports PCI Express Gen3 |
 |    TF Card    |    1     | Supports 1 x TF for UHS - I TF cards, up to 104MB/s          |
-|     4G/5G     |    1     | Choose between 4G and 5G functions; 4G supports the 4G module with miniPCIE interface, and supports the remote EC20 by default; 5G supports the 5G module with M.2 Key B socket, and supports the remote RM500Q by default; the SIM card uses the MicroSIM card slot |
+|     4G/5G     |    1     | Choose between 4G and 5G functions; 4G supports the 4G module with<br />miniPCIE interface, and supports the remote EC20 by default; 5G supports<br />the 5G module with M.2 Key B socket, and supports the remote RM500Q<br />by default; the SIM card uses the MicroSIM card slot |
 |     WiFi      |    1     | Default on-board AW-CM358M;<br/>IEEE 802.11 a/B/g/n/ac dual-band WIFI up to 433.3M bps;<br/>Bluetooth 5 up to 3Mbps |
 |   Bluetooth   |    1     |                                                              |
 |     Audio     |    1     | Default on-board NAU88C22 chip;<br/>Supports headphone output and MIC input, integrated on a 3.5mm headphone interface;<br/>Supports 2 x 1 W8Ω speaker output, led out through XH2.54 white terminal. |
 |      I2C      |    3     | Used to mount devices such as carrier board audio, RTC, camera, etc. |
 |      PWM      |    2     | Used to adjust the screen backlight brightness               |
-|      RTC      |    1     | On-board independent RTC chip, which can record time via a button battery when the carrier board is powered off |
+|      RTC      |    1     | On-board independent RTC chip, which can record time via a button battery<br />when the carrier board is powered off |
 |     UART      |    4     | Carrier board on-board USB to 4-way serial port;<br/>Led out through 2 X 5Pin 2.0mm spacing socket pins for plugging in equipment |
 |     ECSPI     |    1     | ECSPI2 is led out through 2 x 5Pin 2.0mm spacing sockets for mounting external devices |
-|      CAN      |    2     | Electrical isolation, supports CAN - FD (subject to CPU version support), and complies with the CAN2.0B protocol |
+|      CAN      |    2     | Electrical isolation, supports CAN - FD (subject to CPU version support),<br />and complies with the CAN2.0B protocol |
 |     RS485     |    1     | Electrical quarantine, automatically control the direction of sending and receiving |
 |      KEY      |    4     | Switch on/off, reset button, and 2 user-defined buttons      |
 |      LED      |    2     | User-defined LED light, red and green                        |
@@ -829,7 +829,7 @@ There are two groups of MIPI \_ CSI. CSI1 are led out from the SoM through P31 a
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721182185089-ee4d09cc-9ba4-478f-9aad-52ae07f17f5e.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721182224713-f8b5ea59-e4fb-4697-a023-4ba2d8ab069a.png)
 
-**Note: **
+**Note:** 
 
 - **When designing the carrier board using other camera modules, please pay attention to the IO voltage and make level conversion;**
 
