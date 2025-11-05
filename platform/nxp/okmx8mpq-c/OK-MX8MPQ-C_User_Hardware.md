@@ -69,7 +69,7 @@ The i.MX 8M Plus series focuses on machine learning and vision, advanced multime
 
 **i.MX8MP Series Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721179791793-12e4e6da-2284-4773-bc2d-c8e67f2b5e6b.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721179791793_12e4e6da_2284_4773_bc2d_c8e67f2b5e6b.png)
 
 The compatible CPU models of the FETMX8MPX - C SoM are shown in the following table. Forlinx selects MIMX8ML8CVNKZAB and MIMX8ML4CVNKZAB. 
 
@@ -92,11 +92,11 @@ https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i
 
 ### 2.1 FETMX8MPQ-C SoM Appearance
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1752226287421-ceff7fcd-3d8b-4bc1-8956-c19777f28252.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1752226287421_ceff7fcd_3d8b_4bc1_8956_c19777f28252.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1752226300709-b72c2111-f92c-47c1-a5f9-d0b99dad561c.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1752226300709_b72c2111_f92c_47c1_a5f9_d0b99dad561c.png)
 
 **Back**
 
@@ -106,7 +106,7 @@ https://www.nxp.com.cn/products/processors-and-microcontrollers/arm-processors/i
 
 FETMX8MPQ-C SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994589995-dbf04636-a32e-4b93-891e-8c3b2ea1b511.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994590234-831843e3-4925-436c-832f-f3169aa97c74.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994589995_dbf04636_a32e_4b93_891e_8c3b2ea1b511.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994590234_831843e3_4925_436c_832f_f3169aa97c74.png)
 
 Structure size: 36mm × 62mm. For more detailed dimensions, please refer to the user information DXF structure document.
 
@@ -118,9 +118,9 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the development board design and use SMT nuts of M2 with a length (L) of 2 mm on the carrier board. Please refer to the following figure for the specifications of the SMT nuts.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994590439-7ef83c3e-fcdc-4767-a241-0560d81f90de.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994590439_7ef83c3e_fcdc_4767_a241_0560d81f90de.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994590664-dc9af0ea-75d2-4e38-a1a0-811a65981633.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994590664_dc9af0ea_75d2_4e38_a1a0_811a65981633.png)
 
 ### 2.3 Performance Parameters
 
@@ -211,9 +211,9 @@ OKMX8MPQ SoM Interfaces:
 
 #### 2.5.1 FETMX8MPQ-C SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198074271-1af3c097-63dc-4e9b-85d0-af037f5ac4e5.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198080017-0c16e9db-4e22-4088-b6ea-8741acae6a7d.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198074271_1af3c097_63dc_4e9b_85d0_af037f5ac4e5.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198080017_0c16e9db_4e22_4088_b6ea_8741acae6a7d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198084993-f6b2c941-2d5f-44ad-a238-f4a4eac7269d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198089515-585debd6-7d56-43b2-bb83-2c7d41ae392f.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198084993_f6b2c941_2d5f_44ad_a238_f4a4eac7269d.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198089515_585debd6_7d56_43b2_bb83_2c7d41ae392f.png)
 
 #### 2.5.2 FETMX8MPQ-C SoM Pins Description
 
@@ -603,7 +603,7 @@ Drive conflict. If you have any questions, please contact our sales or technical
 
 FETMX8MPX-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994591294-47daeb0a-eac7-438a-8306-41321ed5cb32.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994591294_47daeb0a_eac7_438a_8306_41321ed5cb32.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting flashing information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -613,7 +613,7 @@ Please refer to “Appendix IV. for the minimal system schematic diagram However
 
 The connection of OKMX8MPX-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533325/1719994392302-aab484e3-e5c0-4d88-82f5-0f87e173cc2f.jpeg)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994392302_aab484e3_e5c0_4d88_82f5_0f87e173cc2f.jpeg)
 
 ### 3.2 OKMX8MPQ-C SoM Dimension Diagram
 
@@ -631,7 +631,7 @@ The antenna board is used for the installation and fixation of 4G and 5G antenna
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759195100202-a81a281d-c3f9-4b99-9310-f01947573173.png?x-oss-process=image%2Fformat%2Cwebp)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -692,7 +692,7 @@ The schematic diagram in this chapter is only for the easy reading and may be su
 
 ### 3.5.1 Carrier Board Power
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721180872950-12c9d3c2-cce4-4dfb-bcdc-64255d1c4121.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198138023-6c20e69f-ecd9-4f3f-9c22-7fd867ecc185.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198149814-c1540617-3c53-4406-9165-6f1fb7f0dc05.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721180872950_12c9d3c2_cce4_4dfb_bcdc_64255d1c4121.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198138023_6c20e69f_ecd9_4f3f_9c22_7fd867ecc185.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198149814_c1540617_3c53_4406_9165_6f1fb7f0dc05.png)
 
 As shown in the figure, the 12V adapter supplies power to the development board through the power socket P9. Among them, VSYS\_5V supplies power to the SoM. After the SoM is powered on, it outputs VDD\_3V3, which makes the pin of the U43 power monitoring chip output a high - level signal to control the enable of U2 and U3 on the carrier board.
 
@@ -706,7 +706,7 @@ If removing the S2 DIP switch due to structural requirements, you can solder the
 
 ### 3.5.2 Keys
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181608142-f974b1c5-2306-4f67-a2f9-a67a2ecdb937.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181613956-edc1a56a-9e5b-405b-957c-b79bc64a6592.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181608142_f974b1c5_2306_4f67_a2f9_a67a2ecdb937.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181613956_edc1a56a_9e5b_405b_957c_b79bc64a6592.png)
 
 As shown in the above figure, SYS\_nRST is the system reset button. After pressing it, the development board will be powered off and reset.
 
@@ -718,7 +718,7 @@ ONOFF is the power - on/off button. In the ON mode, pressing this button will tr
 
 ### 3.5.3 Boot Configuration
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181649441-3f8461e7-d4bb-4b06-90b1-7a969c22be5b.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181649441_3f8461e7_d4bb_4b06_90b1_7a969c22be5b.png)
 
 The carrier board uses an 4-bit DIP switch S1 to select the system boot mode. Please adjust the options before powering up the development board.
 
@@ -743,9 +743,9 @@ QSPI: The development board program boots from the QSPI Norflash on the SoM.
 
 ### 3.5.4 Debugging Serial Port
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198163705-d0aab142-f8f8-4ade-a9d8-5e43aa46f7f2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198168829-3d70952a-8115-4cf1-9cc4-e2b217cdc287.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198163705_d0aab142_f8f8_4ade_a9d8_5e43aa46f7f2.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198168829_3d70952a_8115_4cf1_9cc4_e2b217cdc287.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994394746-a7d9eb9b-f76d-4523-9b8b-ae22345b59a3.png) ![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994395060-0deccf5e-aa88-41bb-9f63-1942403f5102.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994394746_a7d9eb9b_f76d_4523_9b8b_ae22345b59a3.png) ![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994395060_0deccf5e_aa88_41bb_9f63_1942403f5102.png)
 
 There are two debug serial ports on the SoM. UART2 is used for A53 debugging, and UART4 is used for M7 debugging.
 
@@ -753,7 +753,7 @@ To facilitate users, the two debug serial ports are integrated into one USB inte
 
 To use the debug serial port, first install the CH342F driver on the computer. The driver download link is: http://www.wch.cn/products/CH342.h(http://www.wch.cn/products/CH342.html)tml. Then connect the P11 port of the development board to the computer’s USB port using a USB - to - Type - C cable. Two COM ports will be generated in the computer’s Device Manager. Among them, Port A is the A53 debug serial port, and Port B is the M7 debug serial port.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994395314-bfd1fa7e-f966-4ac7-b7a1-b47aa91ee727.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994395314_bfd1fa7e_f966_4ac7_b7a1_b47aa91ee727.png)
 
 Open a debug terminal tool on the computer, such as Putty. Set the baud rate to 115200, the data bits to 8, no parity bit, and the stop bits to 1. Select the correct COM port, power on the development board, and you can see the debug serial port information.
 
@@ -767,41 +767,41 @@ You can also bring your own UART cable for the computer, and connect it to P12 o
 
 ### 3.5.5 General Serial Ports
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994395584-bf1f5ea2-3e41-4ef6-ba84-87e391a922bc.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994395584_bf1f5ea2_3e41_4ef6_ba84_87e391a922bc.png)
 
-    ![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198181446-afadcf6b-913d-4c9f-90fb-c0b4f8e3fc57.png)
+    ![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198181446_afadcf6b_913d_4c9f_90fb_c0b4f8e3fc57.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198186832-905e6a01-ab94-4477-88c2-5a7766115a76.png) ![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198191250-ce228bd8-d505-46dc-8009-9c478a273c0b.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198186832_905e6a01_ab94_4477_88c2_5a7766115a76.png) ![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198191250_ce228bd8_d505_46dc_8009_9c478a273c0b.png)
 
 There is a built - in USB to 4 general serial ports on the development board. The UART data rate can reach up to 12Mpbs. It is led out through a 2\*5pin - 2.0mm pitch simple horn socket and can be externally connected to Forlinx’s serial port module.
 
 ### 3.5.6 CAN
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181964028-205da020-5787-4c7a-95eb-5765e9910e68.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181964028_205da020_5787_4c7a_95eb_5765e9910e68.png)
 
 There are 2 x CAN on the development board, supporting CAN-FD, with 1500VDC electrical isolation and four-level electrostatic protection.
 
 The connection is led out through the P29 terminal block. It is recommended to connect the devices to a common ground when using CAN communication.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1719994396309-78a46bfa-798c-4d21-b9b8-685f1f654c53.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1719994396309_78a46bfa_798c_4d21_b9b8_685f1f654c53.png)
 
 The locations of the CAN interface and RS485 interface are as shown in the above figure.
 
 ### 3.5.7 RS485
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181976533-b2e25dc1-028f-4d7b-98b6-6be1925faf1c.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181976533_b2e25dc1_028f_4d7b_98b6_6be1925faf1c.png)
 
 There are 1 x RS485 on the development board with 1500VDC electrical isolation and 4 - level electrostatic protection. The MAX13487 can automatically control the transmit - receive direction. P28 is a short - circuit jumper cap for the 120Ω termination resistor on the AB line. The connection is led out through the P29 terminal block. It is recommended to connect the devices to a common ground when using RS485 communication.
 
 ### 3.5.8 SPI
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181984736-599efd23-3706-426c-8ac5-13f36af8e020.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181984736_599efd23_3706_426c_8ac5_13f36af8e020.png)
 
 As shown in the figure above, the ECSPI2 is led out of the development board through the P40 simple horn to be used for external modules.
 
 ### 3.5.9 JTAG Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721181992651-6179a79e-706b-4837-b900-009356ca604d.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721181992651_6179a79e_706b_4837_b900_009356ca604d.png)
 
 As shown in the figure above, the JTAG interface is led out through P38 from the development board, and the pin pitch is 1.27 mm. If this function is not used, this part of the pin can be floated.
 
@@ -809,7 +809,7 @@ BOOT\_MODE\[0:3], JTAG\_MOD and POR\_B must be pulled up to "111111" to enter to
 
 ### 3.5.10 TF Card
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721182025944-2fa39e10-f73e-4fd3-8a04-a782b3d8cd3d.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721182025944_2fa39e10_f73e_4fd3_8a04_a782b3d8cd3d.png)
 
 As shown in the figure above, the TF Card of the development board is the SD2 channel of the CPU, which supports the TF card of UHS-I up to 104MB/s. The power supply VSD \_ 3 V3 of the TF card is provided by the SoM, and the power supply current is 400mA.
 
@@ -827,7 +827,7 @@ There are two groups of MIPI \_ CSI. CSI1 are led out from the SoM through P31 a
 
 2 lane MIPI \_ CSI interfaces are led out through the FPC seat (P30) from the CSI2, for mounting the OV5645 camera, and supporting the highest resolution of 2592x1944 @ 15 fps by default. At the same time, all signals of CSI2 are led out from the P19 socket, which is convenient for you to debug other camera modules.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721182185089-ee4d09cc-9ba4-478f-9aad-52ae07f17f5e.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721182224713-f8b5ea59-e4fb-4697-a023-4ba2d8ab069a.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721182185089_ee4d09cc_9ba4_478f_9aad_52ae07f17f5e.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721182224713_f8b5ea59_e4fb_4697_a023_4ba2d8ab069a.png)
 
 **Note: **
 
@@ -837,7 +837,7 @@ There are two groups of MIPI \_ CSI. CSI1 are led out from the SoM through P31 a
 
 ### 3.5.12 MIPI\_DSI Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721183087479-b698772d-bcc8-4e89-957d-1505c6b76088.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721183087479_b698772d_bcc8_4e89_957d_1505c6b76088.png)
 
 As shown in the above figure, there is 1 x 4-lane MIPI\_DSI is led out via pin FPC socket, which is adapted to the 7-inch MIPI screen of Forlinx by default, and supports screen brightness adjustment and capacitive touch.
 
@@ -847,13 +847,13 @@ As shown in the above figure, there is 1 x 4-lane MIPI\_DSI is led out via pin F
 
 Two groups of 8-lane LVDS signals are all led out from the development board, and the pin spacing is 2.0mm, which can adapt to the 10.1-inch LVDS screen of Forlinx, and support screen brightness adjustment and capacitive touch.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198223885-04f2ea69-b0d7-404a-adfb-2988f438f7f2.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198223885_04f2ea69_b0d7_404a_adfb_2988f438f7f2.png)
 
 **Note:  For LVDS, the data and clock lines need to be of equal length, and the differential impedance should be controlled at 100Ω;.**
 
 ### 3.5.14 HDMI Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198234259-142a4c74-26fd-440a-9728-1f11c5943d7b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198244273-3d9421a2-2feb-45a1-bc20-eecddf9cec84.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198248155-31b987ca-ee23-4a0a-a954-c6354d556485.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198234259_142a4c74_26fd_440a_9728_1f11c5943d7b.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198244273_3d9421a2_2feb_45a1_bc20_eecddf9cec84.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198248155_31b987ca_ee23_4a0a_a954_c6354d556485.png)
 
 As shown in the figure above, 1 x HDMI is led out from the carrier board through P16, which supports HDMI 2.0 a display resolution up to 4Kp30 and supports HDMI 2.1 eARC. The HDMI circuit includes a level conversion circuit. Please refer to the design of the development board.
 
@@ -871,7 +871,7 @@ The development board features the NAU88C22 chip via SAI3, supporting two speake
 
 The NAU88C22 chip speaker has a built-in Class D amplifier with a maximum power of 1W (8 Ω), and the headphone driver has a power of 40mW (16 Ω). If a larger amplifier needs to be connected externally, the signal can only be obtained from the headphone jack and not from the speaker interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198257707-3181d4d3-5284-4b17-bda3-a9d520a7afe8.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198261767-7d6748c4-eef6-4d17-806d-7fa5564b8bf8.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198266754-091b3dc5-633e-4e06-b0a6-a3f4eb48807b.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198257707_3181d4d3_5284_4b17_bda3_a9d520a7afe8.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198261767_7d6748c4_eef6_4d17_806d_7fa5564b8bf8.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198266754_091b3dc5_633e_4e06_b0a6_a3f4eb48807b.png)
 
 **Note:** 
 
@@ -881,7 +881,7 @@ The NAU88C22 chip speaker has a built-in Class D amplifier with a maximum power 
 
 ### 3.5.16 4G/5G
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721183896079-2d4234e8-6e05-405b-8fbc-68ab68b00a59.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721183896363-e8750d44-621e-4e52-9776-c4430ec04d88.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721183896079_2d4234e8_6e05_405b_8fbc_68ab68b00a59.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721183896363_e8750d44_621e_4e52_9776_c4430ec04d88.png)
 
 The development board can be externally connected with either a 4G module or a 5G module (choose one of the two). It supports 4G modules using the miniPCIE socket. By default, the Quectel EC20 is used. It also supports 5G modules using the M.2 Key B socket. By default, the Quectel RM500Q is used.
 
@@ -891,7 +891,7 @@ It uses a MicroSIM card. Please pay attention to the card insertion direction.
 
 ### 3.5.17 WiFi\&Bluetooth<font style="color:#FF0000;"> </font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198281237-32b61a4a-b822-44ba-b177-f710cd6f57a6.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198281237_32b61a4a_b822_44ba_b177_f710cd6f57a6.png)
 
 Development board onboard WIFI\&BT module set, default welding AW-CM358SM, WLAN: IEEE 802.11 a/b/g/n/ac dual-band WIFI, up to 433.3 Mbps transceiver rate; Bluetooth: Bluetooth 5, up to 3Mbps speed. To enhance signal quality, use a 2.4 \& 5GHz dual-band antenna.
 
@@ -903,7 +903,7 @@ Development board onboard WIFI\&BT module set, default welding AW-CM358SM, WLAN:
 
 ### 3.5.18 PCIE Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198304193-f7f93d17-18a4-4203-9a25-90bf9f392240.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198309417-b46daeb2-ff96-42d3-89b1-7755470a7436.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198313974-b524bf3e-e506-4d1d-b7d6-7bbadd218b4b.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198304193_f7f93d17_18a4_4203_9a25_90bf9f392240.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198309417_b46daeb2_ff96_42d3_89b1_7755470a7436.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198313974_b524bf3e_e506_4d1d_b7d6_7bbadd218b4b.png)
 
 The development board provides a standard PCIEx1 adapter card socket, supporting PCI Express Gen3, which facilitates you to connect various PCIE devices. The PCIE\_REF\_CLK\_P/N on the SoM only supports input clock. The clock chip U41 on the carrier board is required to provide a bidirectional clock from the same source for the RC and EP.
 
@@ -911,7 +911,7 @@ The development board provides a standard PCIEx1 adapter card socket, supporting
 
 ### 3.5.19 USB HOST Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721183982398-7edb63dd-3bb5-425c-82be-046e62f37840.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721183982478-72b6af7e-f6aa-4553-8e19-1082b10959b8.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721183982518-4075873f-32a1-445b-a656-5566790992e6.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721183982398_7edb63dd_3bb5_425c_82be_046e62f37840.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721183982478_72b6af7e_f6aa_4553_8e19_1082b10959b8.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721183982518_4075873f_32a1_445b_a656_5566790992e6.png)
 
 4 x USB3.0 interfaces are exended through the USB3.0 HUB CYUSB3304 on the development board. Among them, 2 x USB3.0 interfaces are led out through USB Type - A sockets, with power short - circuit protection function and a current limit of 1A. The over - current protection action is controlled by the USB HUB chip. If you do not use the HUB chip, please design the short - circuit protection circuit by themselves.
 
@@ -923,7 +923,7 @@ The development board provides a standard PCIEx1 adapter card socket, supporting
 
 ### 3.5.20 USB3.0 Type-C Interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721184012455-389d7733-561e-477c-9983-e44bb6272968.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721184012455_389d7733_561e_477c_9983_e44bb6272968.png)
 
 As shown in the above figure, the development board supports 1 x USB3.0 Type - C interface, supporting DFP, UFP, and DRP, which can be used for system programming.
 
@@ -931,7 +931,7 @@ To implement the Type - C interface, a CC control chip and a USB Switch are desi
 
 If you only need the USB2.0 OTG function, you can simplify the design as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198329265-698cfa77-ca32-4ffb-911a-49208f63c6a2.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198329265_698cfa77_ca32_4ffb_911a_49208f63c6a2.png)
 
 **Note:**
 
@@ -951,7 +951,7 @@ The RGMII interface on the SoM is connected to the YT8521S PHY chip. The double 
 
 The internal structure is as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198337187-ee1d1c1d-2c06-4525-a3cd-d502aa23c631.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198342996-27180c5d-742a-4b49-915e-a0a98c9dc71d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198348187-73f5737e-02e9-414c-b6af-ea978eb57220.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198352737-efc96122-0afa-4736-9c31-11e840f865df.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198337187_ee1d1c1d_2c06_4525_a3cd_d502aa23c631.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198342996_27180c5d_742a_4b49_915e_a0a98c9dc71d.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198348187_73f5737e_02e9_414c_b6af_ea978eb57220.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198352737_efc96122_0afa_4736_9c31_11e840f865df.png)
 
 **Note:**
 
@@ -969,13 +969,13 @@ The internal structure is as shown in the following figure:
 
 ### 3.5.22 LED
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721184732659-a39c16ee-d9ad-48c9-975f-efcd65be4983.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721184732659_a39c16ee_d9ad_48c9_975f_efcd65be4983.png)
 
 As shown in the figure above, the development board is designed with 2 LED lights with GPIO control, and the you can customize your functions.
 
 ### 3.5.23 RTC
 
-### ![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721184740986-712e762c-5a00-4ce1-a222-54d5b81ed083.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721198359806-a71965aa-084d-4315-b7b7-107fbf449a97.png)
+### ![Image](./images/OK-MX8MPQ-C_User_Hardware/1721184740986_712e762c_5a00_4ce1_a222_54d5b81ed083.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721198359806_a71965aa_084d_4315_b7b7_107fbf449a97.png)
 As shown in the figure above, the carrier board is externally connected to the RTC device through I2C3, and the VCC\_3V3 and the button battery are compatible for power supply through D5, that is, after the carrier board is powered off, the button battery can maintain power supply for the RTC chip. The hardware is designed to be compatible with both RX8010SJ and PCF8563T/5.
 ## 4\. Hardware Design Guide
 
@@ -1025,13 +1025,13 @@ Before the SoM is powered on, if there is a high-level sink current on the signa
 
 SoM Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50035847/1761285048003-0a2e2a73-cab7-4a6d-a070-c2bf2a8dc69b.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1761285048003_0a2e2a73_cab7_4a6d_a070_c2bf2a8dc69b.png)
 
 Carrier board Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50035847/1761285058013-3d5b0809-67a9-4b8b-a6a6-eb02545114bd.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1761285058013_3d5b0809_67a9_4b8b_a6a6_eb02545114bd.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50035847/1761285084070-947127e3-ee9b-46b3-b6b2-f011a299a074.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1761285084070_947127e3_ee9b_46b3_b6b2_f011a299a074.png)
 
 ## 6\. OKMX8MPQ-C Development Board Power Consumption Table
 
@@ -1067,6 +1067,6 @@ Table 2 Power Consumption of the Whole Machine Under Android System
 
 ## 7\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721187023979-1fae15df-d5a3-4ff8-a7ce-0a9e760fc64e.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721187020586-e54f3049-9f48-410b-bf4f-5b91c64155d6.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721187020915-f4441576-9852-42aa-a88b-393e66c3c8a2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721186762714-5d093268-686f-4678-85c8-733967b678e4.png)
+![Image](./images/OK-MX8MPQ-C_User_Hardware/1721187023979_1fae15df_d5a3_4ff8_a7ce_0a9e760fc64e.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721187020586_e54f3049_9f48_410b_bf4f_5b91c64155d6.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721187020915_f4441576_9852_42aa_a88b_393e66c3c8a2.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721186762714_5d093268_686f_4678_85c8_733967b678e4.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. In order to meet the normal operation of the SoM, in addition to the power supply VSYS \_ 5V, SYS \_ nRST keys, BOOT configuration circuit, OTG or SD card are also needed to facilitate the system programming and startup; UART2 and UART4 circuits are convenient to confirm whether the system works normally and to facilitate debugging.
