@@ -1062,9 +1062,6 @@ Table 2. Power Consumption of the Whole Machine Under Android System
 
 **Note: Test conditions: SoM configuration is 4G memory + 16GB eMMC, mipi camera is OV5645, LVDS screen and MIPI screen are optional products of Forlinx. SoM power supply is 5V and development board is 12V. 2\. Power consumption is for reference only.**                                                                                                                      
 
-****
-
-
 ## 7\. Minimum System Schematic
 
 ![Image](./images/OK-MX8MPQ-C_User_Hardware/1721187023979_1fae15df_d5a3_4ff8_a7ce_0a9e760fc64e.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721187020586_e54f3049_9f48_410b_bf4f_5b91c64155d6.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721187020915_f4441576_9852_42aa_a88b_393e66c3c8a2.png)![Image](./images/OK-MX8MPQ-C_User_Hardware/1721186762714_5d093268_686f_4678_85c8_733967b678e4.png)
