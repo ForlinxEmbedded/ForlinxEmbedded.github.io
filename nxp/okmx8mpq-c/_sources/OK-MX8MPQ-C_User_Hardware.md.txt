@@ -57,13 +57,13 @@ The i.MX 8M Plus series focuses on machine learning and vision, advanced multime
 
 + **Application Fields**
 
-·Industrial Control: Machine vision and robot controllers, building security, power grids and power distribution, industrial computers.
+·Industrial Control: Machine vision and robot controllers, building security, power grids and power distribution, industrial computers
 
 ·Smart Cities: Traffic detectors and traffic flow optimization, targeted advertising, visual payment systems
 
-·Smart Homes: Smart robots, household appliances, AI home servers, and alarm centers.
+·Smart Homes: Smart robots, household appliances, AI home servers, and alarm centers
 
-·Communication Infrastructure: Video conferencing systems.
+·Communication Infrastructure: Video conferencing systems
 
 ……
 
