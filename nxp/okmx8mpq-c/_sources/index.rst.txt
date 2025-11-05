@@ -20,6 +20,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK-MX8MPQ-C_User_Hardware
 SOFTWARE 
 ---------
 .. toctree::
