@@ -51,7 +51,7 @@ Target Applications:
 
 **AM62x Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590071389-a0067869-42ac-4569-86b8-1e542c88e4ee.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590071389_a0067869_42ac_4569_86b8_1e542c88e4ee.png)
 
 ## 2\. FET62xx-C SoM Description
 
@@ -59,11 +59,11 @@ Target Applications:
 
 FET62xx-C SoM Appearance:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590440052-71b10ca7-ef6c-4bc9-aa5b-8f96bf5b8312.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590440052_71b10ca7_ef6c_4bc9_aa5b_8f96bf5b8312.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590440726-f8f2c901-6f7a-4818-8ab9-65317aedecdd.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590440726_f8f2c901_6f7a_4818_8ab9_65317aedecdd.png)
 
 **Back**
 
@@ -71,11 +71,11 @@ FET62xx-C SoM Appearance:
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590441127-93d519ad-5278-4645-8bba-e77b1b1486e7.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590441127_93d519ad_5278_4645_8bba_e77b1b1486e7.png)
 
 **Top**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590441346-0bb3f67e-4a7b-4e75-bf5d-ddac24acc9b1.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590441346_0bb3f67e_4a7b_4e75_bf5d_ddac24acc9b1.png)
 
 **Bottom **
 
@@ -89,9 +89,9 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the development board design and use SMT nuts of M2 with a length (L) of 2 mm on the carrier board. Please refer to the following figure for the specifications of the SMT nuts.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590441570-f03f838b-b7fd-48ac-9428-551d63279d67.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590441570_f03f838b_b7fd_48ac_9428_551d63279d67.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590441882-6b774f8a-f77c-42c3-a005-8493fc2d8749.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590441882_6b774f8a_f77c_42c3_a005_8493fc2d8749.png)
 
 ### 2.3 SoM Configuration Resources
 
@@ -217,13 +217,13 @@ AM6231 system clock is up to 1000MHZ
 
 FET62xx-C SoM Pins Schematic are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590442184-aec990ca-1523-40ec-b403-84704cc38b18.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590442184_aec990ca_1523_40ec_b403_84704cc38b18.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590442541-1831c35d-703b-4bb4-8927-e3bb054eff83.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590442541_1831c35d_703b_4bb4_8927_e3bb054eff83.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590442861-c7c6c1be-0573-4e7f-bb32-57f56250f4f7.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590442861_c7c6c1be_0573_4e7f_bb32_57f56250f4f7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590443218-c9d9b7ff-9b3e-432c-b59d-77143a88ddc4.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590443218_c9d9b7ff_9b3e_432c_b59d_77143a88ddc4.png)
 
 #### 2.6.2 FET62xx SoM Pin Functions Description
 
@@ -1420,7 +1420,7 @@ The default function of this pin is I2C0, and multiple devices are mounted on th
 
 The FET62xx SoM integrates power and storage circuits into a compact module, requiring minimal external circuitry. A minimum system can operate with just power supply and boot configuration, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208558843-2713adbb-b1a5-47aa-b361-f19dabb52f66.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208558843_2713adbb_b1a5_47aa_b361_f19dabb52f66.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, the user can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -1432,11 +1432,11 @@ Please refer to section 3.5 in “Chapter 3.OK62xx-C Carrier Board Description�
 
 The SoM and carrier board of the Forlinx OK62xx - C development platform are connected via board-to-board connectors. Since the carrier board is compatible with multiple SoMs from the AM62 series, the term "OK62xx - C" appears in the PCB silkscreen and when referring to the development board name in this document, representing the CPU series that this product is compatible with. The main interfaces are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533338/1720590533663-8c6b9b60-52b8-4bee-b5e9-85596398a7e2.jpeg)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590533663_8c6b9b60_52b8_4bee_b5e9_85596398a7e2.jpeg)
 
 ### 3.2 OK62xx-C Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590534013-0378bf81-c0e5-4e50-b26c-effc22304ae2.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720590534013_0378bf81_c0e5_4e50_b26c_effc22304ae2.png)
 
 PCB Size: 190mm × 130mm
 
@@ -1446,7 +1446,7 @@ Plate making process: thickness 1.6mm, 4-layer PCB.
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759202000942-897488d8-7829-4ed5-b6fa-f357009e33fd.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1759202000942_897488d8_7829_4ed5_b6fa_f357009e33fd.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -1506,27 +1506,27 @@ A-B-C+DEF:G
 
 It uses a 12V power adapter for the power supply, and the power connector is a DC005 socket. S1(dip switch) is the power switch, which moves according to the screen printing indication on the board. The rear of S1 has TVS  for electrostatic protection, F1 for over-current protection, and D1 and F1 cooperate for anti-reverse connection protection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208775192-e25395d5-c995-411e-b356-579e148cefb6.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208775192_e25395d5_c995_411e_b356_579e148cefb6.png)
 
 VCC\_12V is decreased to VCC\_5V via U1. VCC\_5V directly powers the SoM to ensure that it can be powered on first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208798524-2fedda1b-a647-4137-8c06-0e8ee0703d1e.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208798524_2fedda1b_a647_4137_8c06_0e8ee0703d1e.png)
 
 VCC\_5V is decreased to VCC\_3V3 via U2 U2 is controlled by the POWER\_EN signal of the SoM (this signal is an open-drain output, pulled up to the 3.3V of the SoM through a 100K resistor, and this signal is released after the key power supply of the SoM is powered on). VCC\_3V3 supplies power to all 3.3V power-consuming devices on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208811707-d8abab38-cec5-423f-b7ae-307c202f6da1.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208811707_d8abab38_cec5_423f_b7ae_307c202f6da1.png)
 
 VCC\_5V outputs VDD\_5V in a controlled manner through U4. U4 is controlled by the PG signal of U2. After VCC\_3V3 is powered on, U4 conducts. VDD\_5V powers some 5V - powered devices on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208832116-a73053f0-87ce-4739-b047-5ba6b5e6ea3c.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208832116_a73053f0_87ce_4739_b047_5ba6b5e6ea3c.png)
 
 VCC\_3V3 is stepped down to VCC\_1V8 through U5 to supply power to the 1.8V power-consuming devices on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208851447-7193cec3-4711-495e-b461-135100fa0e3c.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208851447_7193cec3_4711_495e_b461_135100fa0e3c.png)
 
 VCC\_5V is stepped down to VCC\_3V3\_TOUCH through U6 to supply power to the resistive touch chip. It should be noted that VCC\_3V3\_TOUCH and the SoM need to be powered on simultaneously to meet the power-on sequence requirements of TS2007.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208864836-10e25aff-2cf5-4eba-ac41-cd0e81b5145a.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208864836_10e25aff_2cf5_4eba_ac41_cd0e81b5145a.png)
 
 **Note：**
 
@@ -1537,7 +1537,7 @@ VCC\_5V is stepped down to VCC\_3V3\_TOUCH through U6 to supply power to the res
 
 RESET\_REQZ is the reset signal input for the SoM. For ease of debugging, it is connected to a button.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208886276-79f38bbd-a26a-4b39-828f-a4f626c46cd0.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208886276_79f38bbd_a26a_4b39_828f_a4f626c46cd0.png)
 
 **Note: RESET\_REQZ can only reset the A core. If you need to reset both the A core and the M core simultaneously, it is recommended to use the MCU\_RESETz (RU37) pin.**
 
@@ -1587,7 +1587,7 @@ BOOTMODE Pin Mapping：
 
 The OK62xx-C carrier board is compatible with multiple starting modes through the DIP switch S2, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721208932997-03f5f46b-f1f1-4edd-87d0-356ac9ce6acc.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721208932997_03f5f46b_f1f1_4edd_87d0_356ac9ce6acc.png)
 
 The following table shows the correspondence between the startup modes of the SoM and the DIP switches. "ON" and "OFF" indicate the toggling directions of the DIP switches. "S2 order" refers to the serial numbers of the DIP switches. On the PCB, there are markings from 1 to 8 above S2, where the 8th bit has nothing to do with startup. In the schematic diagram, "S2 order" corresponds to pins 1 to 8 of S2 respectively.
 
@@ -1604,13 +1604,13 @@ The following table shows the correspondence between the startup modes of the So
 
 - **When designing the carrier board, please pay attention to the default configuration of the BOOTMODE configuration pins on the SoM and correctly configure the boot mode. Otherwise, the system may fail to start; The pins GPMC0\_AD0 - GPMC0\_AD15 are all boot - option pins. When there are sufficient pins, it is not recommended to use them for other functions. If they must be used, it is recommended to add a buffer circuit to prevent affecting the reading of boot options;**
 
-- **It is not recommended to use USB Disk for flashing. When the processor is in the USB Disk boot mode, its compatibility with USB flash drives is poor, which may lead to flashing failure. The processor errata are described as follows:**![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720590534888-7b06bc41-cf7d-46e4-9dfb-ed90b935ed4f.png)
+- **It is not recommended to use USB Disk for flashing. When the processor is in the USB Disk boot mode, its compatibility with USB flash drives is poor, which may lead to flashing failure. The processor errata are described as follows:**![Image](./images/OK62xx-C_User_Hardware_Manual/1720590534888_7b06bc41_cf7d_46e4_9dfb_ed90b935ed4f.png)
 
 #### 3.5.4 Debugging Serial Port
 
 The carrier board uses U9 to convert the SOC UART0 and WKUP UART0 of the CPU into USB signals and connect them to the P6 Type - C interface for  the convenience in debugging. To prevent the UART signals of U9 from reverse - injecting current into the SoM when the SoM is not started, which may affect the SoM’s startup or even damage it, the carrier board uses U7 to buffer the UART signals.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209269195-492d635d-a746-46f5-b99a-c8c24676a00b.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209269195_492d635d_a746_46f5_b99a_c8c24676a00b.png)
 
 **Note:**
 
@@ -1624,7 +1624,7 @@ The carrier board uses U9 to convert the SOC UART0 and WKUP UART0 of the CPU int
 
 The JTAG of the carrier board is a TI standard circuit, which can be directly plugged into a TI emulator to simulate the SoM.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209389997-d9bb0b08-1c0e-4b2c-acec-908e67c91b6e.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209389997_d9bb0b08_1c0e_4b2c_acec_908e67c91b6e.png)
 
 #### 3.5.6 User LED and Button
 
@@ -1632,11 +1632,11 @@ The development board divides the user LEDs and user buttons into two domains, n
 
 The Main domain integrates user LEDs and user buttons together, facilitating users to test the input and output functions of GPIO. It should be noted that when testing the GPIO output function, do not press the key, otherwise the GPIO will be forced to a low level. The following figure shows the principle of the Main domain:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209409798-6d9a27e9-10d0-4fe6-8e32-77d19520a29e.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209409798_6d9a27e9_10d0_4fe6_8e32_77d19520a29e.png)
 
         MCU域设计了1个用户按键输入和4个用户LED。下图为MCU域原理：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209424571-3fca08a6-b9fa-4d10-a289-95a3368333e5.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209424812-cd200075-d85d-45f0-bd47-dc9278002a04.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209424571_3fca08a6_b9fa_4d10_a289_95a3368333e5.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721209424812_cd200075_d85d_45f0_bd47_dc9278002a04.png)
 
 #### 3.5.7 Display Interface
 
@@ -1644,15 +1644,15 @@ The SoM supports dual LVDS and single RGB parallel interface outputs.
 
 Among them, the dual - channel LVDS is led out through the P16 2x19P 2.0mm pitch double - row pin header, which is default - adapted to the Forlinx 10.1 - inch LVDS screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209733681-379949b1-1154-4095-a90b-65cd7ece86f6.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209733681_379949b1_1154_4095_a90b_65cd7ece86f6.png)
 
 The single-channel RGB parallel interface (RGB 565 16bit bus by default) is led out through the P14 54P 0.5mm pitch FPC seat, which is suitable for the 7-inch LCD screen of Forlinx by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209753331-8a4c39ad-03f3-416e-a61d-4e2abcc0a9f3.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209754168-f51b05a5-c0aa-4fc1-ab47-739b59df12ba.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209753331_8a4c39ad_03f3_416e_a61d_4e2abcc0a9f3.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721209754168_f51b05a5_c0aa_4fc1_ab47_739b59df12ba.png)
 
 The reset and interrupt signals of the touchpad for the 7-inch LCD screen and the 10.1-inch LVDS screen are at 3.3 V level, while the four GPIOs of the CPU are at 1.8 V level, so level conversion is required, and the signal flow is bidirectional.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721209772489-b70bb9bf-45bf-45ed-9827-c46b0336178c.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721209772489_b70bb9bf_45bf_45ed_9827_c46b0336178c.png)
 
 **Note:**
 
@@ -1668,7 +1668,7 @@ The reset and interrupt signals of the touchpad for the 7-inch LCD screen and th
 
 The SoM supports 1 x MIPI DPHY 4Lanes input interface. 4 Lanes are led out for standby through the P15 2x10P 2.0mm pitch double-row pin header from the development board, and 2Lanes are led out through the P13 26P 0.5mm pitch FPC socket, which is adapted to the Forlinx OV5645 camera module.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721271706260-bef6725a-7249-4a2c-8ee4-c15c9027d9b1.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721271706260_bef6725a_7249_4a2c_8ee4_c15c9027d9b1.png)
 
 **Note:**
 
@@ -1682,7 +1682,7 @@ The SoM supports 1 x MIPI DPHY 4Lanes input interface. 4 Lanes are led out for s
 
 The carrier board P7 is a TF Card interface, which can support system boot and burn.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721271971560-3084c19f-40a9-484d-b115-2929bc5691cc.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721271971801-203cb053-89cc-4c19-bf83-f5b61b785ef2.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721271971560_3084c19f_40a9_484d_b115_2929bc5691cc.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721271971801_203cb053_89cc_4c19_bf83_f5b61b785ef2.png)
 
 **Note:**
 
@@ -1694,7 +1694,7 @@ The carrier board P7 is a TF Card interface, which can support system boot and b
 
 The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led out via RJ45.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272063541-36f553bb-f385-43b1-a566-ccefc7b658eb.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272063694-f4c64f0a-2382-43b4-ba7e-d82ddfbab160.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272064080-637b3edb-be84-4a69-8af4-33e7a4574a6a.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721272063541_36f553bb_f385_43b1_a566_ccefc7b658eb.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721272063694_f4c64f0a_2382_43b4_ba7e_d82ddfbab160.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721272064080_637b3edb_be84_4a69_8af4_33e7a4574a6a.png)
 
 **Note：**
 
@@ -1712,11 +1712,11 @@ The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led 
 
 The SoM supports 2 x USB2.0. Among them, USB1 expands 3 x USB2.0 Host through a HUB chip and is led out through 3 x USB sockets P19, P20, and P21.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272161309-289384d2-c71e-468c-b945-ef3ff9f0d007.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721272161309_289384d2_c71e_468c_b945_ef3ff9f0d007.png)
 
 USB0 is configured in OTG mode and is led out through Type - C. The master - slave mode is selected through the DIP switch S3. When S3 is switched to OFF, the SoM is in Device mode; when switched to ON, the SoM is in Host mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272177843-6e4385cb-f5e5-4d4e-aa90-b75602a70790.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721272177843_6e4385cb_f5e5_4d4e_aa90_b75602a70790.png)
 
 **Note：**
 
@@ -1728,13 +1728,13 @@ USB0 is configured in OTG mode and is led out through Type - C. The master - sla
 
 The P24 M.2 Key - B socket on the carrier board can be plugged with 4G and 5G modules, but they cannot be used simultaneously. P31 is the SIM card socket.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272288774-6b8d7f1c-7494-4b6d-8ac2-afc7e0b9a2e9.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272291561-a90e66da-5c1a-4342-b3e0-18241deb494d.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721272288774_6b8d7f1c_7494_4b6d_8ac2_afc7e0b9a2e9.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721272291561_a90e66da_5c1a_4342_b3e0_18241deb494d.png)
 
 #### 3.5.13 WIFI\&BT
 
 The carrier board is designed with a CAM358 WIFI \& BT module, which can realize WIFI \& BT functions.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721272404606-a604d8b8-37d2-4119-9bed-7c7962d0b6dc.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721273075349-dd882e52-8bd3-4e9d-92f7-c532aa65769d.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721272404606_a604d8b8_37d2_4119_9bed_7c7962d0b6dc.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721273075349_dd882e52_8bd3_4e9d_92f7_c532aa65769d.png)
 
 **Note: Impedance requirement: 50 ohm.**
 
@@ -1742,7 +1742,7 @@ The carrier board is designed with a CAM358 WIFI \& BT module, which can realize
 
 The ES8388 Audio Codec is integrated on the carrier board and supports headphone output and MIC input.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274310892-21f7883a-a53d-4993-9f12-3a49ace048ee.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274310892_21f7883a_a53d_4993_9f12_3a49ace048ee.png)
 
 **Note: During PCB Layout, the return areas of analog and digital signals need to be separated to prevent crosstalk.**
 
@@ -1750,27 +1750,27 @@ The ES8388 Audio Codec is integrated on the carrier board and supports headphone
 
 External RTC is integrated on the carrier board, and the power supply battery is CR2032. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274344297-3756249e-ca44-4806-9922-80a671f9a79a.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274344297_3756249e_ca44_4806_9922_80a671f9a79a.png)
 
 #### 3.5.16 QSPI Flash
 
 The QSPI Flash is integrated on the carrier board, and the Main domain and the MCU domain select who mounts the Flash by means of jumpers.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274365686-7900fcc2-b065-4fec-9fb4-84dd79a3031a.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274364820-d1d5344a-a0ba-4a3f-b4c8-88a4f2bc474f.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274364508-52ac9074-e703-493c-8a9a-12553afdeac6.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274365686_7900fcc2_b065_4fec_9fb4_84dd79a3031a.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721274364820_d1d5344a_a0ba_4a3f_b4c8_88a4f2bc474f.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721274364508_52ac9074_e703_493c_8a9a_12553afdeac6.png)
 
 #### 3.5.17 GPMC Interface
 
 A part of the GPMC signals are led out through the P34 2x14 2.54mm pitch double - row pin header from the development board, supporting the 16 - bit address - data multiplexing mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274792339-f6449f82-c76c-441b-9deb-7638504bca08.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274792339_f6449f82_c76c_441b_9deb_7638504bca08.png)
 
 #### 3.5.18 CAN\&RS485
 
 2 x CAN FD and 1 x RS485 are integrated on the carrier board. The 2 x CAN FD belongs to the Main domain and the MCU domain respectively.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274802175-10b55846-ed81-4dea-8c5c-6fa1f2279366.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274802175_10b55846_ed81_4dea_8c5c_6fa1f2279366.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274815633-a3aa792d-9a6d-4dd4-ad6a-6823abaa780d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274815554-8a671304-3b36-4b76-9f12-ea090430a525.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274815633_a3aa792d_9a6d_4dd4_ad6a_6823abaa780d.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721274815554_8a671304_3b36_4b76_9f12_ea090430a525.png)
 
 **Note:**
 
@@ -1782,13 +1782,13 @@ A part of the GPMC signals are led out through the P34 2x14 2.54mm pitch double 
 
 An EEPROM is integrated on the carrier board. The MCU and the WKUP domain can select which one mounts the EEPROM through a jumper.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274839109-c7442b4b-7cea-46d2-a6ac-ec4c9b6163b1.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274839109_c7442b4b_7cea_46d2_a6ac_ec4c9b6163b1.png)
 
 #### 3.5.20 MCU User-defined Pins
 
 A part of the MCU Pins are led out through the P36 2x14 2.54mm pitch double - row pin header from the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721274846243-3db8bbc4-4c67-4e67-a002-ab6b85729c37.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721274846243_3db8bbc4_4c67_4e67_a002_ab6b85729c37.png)
 
 ## 4\. Hardware Design Guide
 
@@ -1808,7 +1808,7 @@ A part of the MCU Pins are led out through the P36 2x14 2.54mm pitch double - ro
 
 The following figure shows the reset block diagram of the CPU:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720591205726-08d94c9c-816c-45eb-b7a5-1b1a45778114.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720591205726_08d94c9c_816c_45eb_b7a5_1b1a45778114.png)
 
 ## 5\. OK62xx - C Development Board Linux System Whole - Machine Power Consumption Table
 
@@ -1854,17 +1854,17 @@ The following figure shows the reset block diagram of the CPU:
 
 SoM Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720591196549-2bbd2973-a8af-43c7-956c-830584a2cce5.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720591196549_2bbd2973_a8af_43c7_956c_830584a2cce5.png)
 
 Carrier board Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1720591196881-c83a1799-9352-4c4b-89ca-f75bb98eff60.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1720591196881_c83a1799_9352_4c4b_89ca_f75bb98eff60.png)
 
 ## 7\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721280844329-6bb53b95-33b6-4c84-9482-5484093bd156.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721280842142-66adc905-e26f-4b08-8cbe-4cf596dd5d43.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721280841837-9e1afd29-fb59-4f60-a134-f10472dd5f29.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721280841956-63b34f6f-b3a8-41e3-8e39-20e0619d33aa.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721280841829-347a57be-c992-4d96-be9e-628dd245c516.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533338/1721280845120-ac98fab7-9aa0-4272-bbf9-2fc10ab8f255.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1721280844329_6bb53b95_33b6_4c84_9482_5484093bd156.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721280842142_66adc905_e26f_4b08_8cbe_4cf596dd5d43.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721280841837_9e1afd29_fb59_4f60_a134_f10472dd5f29.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721280841956_63b34f6f_b3a8_41e3_8e39_20e0619d33aa.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721280841829_347a57be_c992_4d96_be9e_628dd245c516.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721280845120_ac98fab7_9aa0_4272_bbf9_2fc10ab8f255.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45533338/1735873043868-75c4e523-8868-4d8b-b0e3-9c4b6e227d96.png)
+![Image](./images/OK62xx-C_User_Hardware_Manual/1735873043868_75c4e523_8868_4d8b_b0e3_9c4b6e227d96.png)
 
 **Note：**
 
