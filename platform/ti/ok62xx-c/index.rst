@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK62xx-C_User_Hardware_Manual
+
   
 
 
@@ -37,6 +39,8 @@ APPLICATION NOTE
 .. toctree::
    :caption: APPLICATION NOTE
    :maxdepth: 2
+
+   
 
 
 
