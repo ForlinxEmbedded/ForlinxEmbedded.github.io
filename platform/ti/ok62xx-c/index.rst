@@ -32,6 +32,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK62xx-C_Linux-6_1_33_User_Manual
+   OK62xx-C_Linux6_1_33_User_Compilation_Manual
 
 
 
