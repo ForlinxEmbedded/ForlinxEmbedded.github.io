@@ -19,8 +19,9 @@ RK Platform Developer Guide
 .. toctree::
    :caption: RK Development Manual
    :maxdepth: 3
-
+   
    Common_Commands/index
+   Product_Design_Process/index
    Interfaces/index
    Buildroot_System/index
    Forlinx_Desktop_System/index
