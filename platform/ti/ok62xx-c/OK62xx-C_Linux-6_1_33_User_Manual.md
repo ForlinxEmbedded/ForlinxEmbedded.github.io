@@ -39,7 +39,7 @@ The FET6254/6232/6231-C SoM is designed and developed based on TI AM6254/6232/62
 
 The interface diagram of OK62xx-C development board is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717725204328-a7321d29-3d93-4178-bcc3-0ddecf2b50d2.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717725204328_a7321d29_3d93_4178_bcc3_0ddecf2b50d2.png)
 
 **Note: The hardware parameters are not described in this software manual. Please read "OK62xx-C \_ Hardware Manual" under "Hardware Data/User Manual" (the download method is the same as software) before referring to this manual for software development. To understand the product naming rules and the hardware configuration information of the product, which will help you use the product.**
 
@@ -110,7 +110,7 @@ Hardware preparation before system startup:
 
 <font style="color:rgb(0,0,0);">Please check the red DIP switch on your development board and ensure it is switched to the desired startup mode. For instructions on how to set the startup mode, please refer to the documentation provided.</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727858878-98e6303c-0c29-40b2-88e2-948a8c96236a.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727858878_98e6303c_0c29_40b2_88e2_948a8c96236a.png)
 
 ### 2.1 Hyper Terminal Settings
 
@@ -126,13 +126,13 @@ Here is an example using Putty to explain how to configure the terminal:
 
 **Step 1:** Connect the development board and PC using a serial port cable, confirm the serial port number connected to the computer, and view the serial port number from the "Device Manager", based on the actual recognized port number of the computer.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727893144-509e92e7-b973-4f79-b612-6244454f9f86.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727893144_509e92e7_b973_4f79_b612_6244454f9f86.png)
 
 **Step 2:** Open and set up putty, then set the“ serial line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727901799-fecf8d29-cd68-4853-97c4-46bc3c1283b7.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727901799_fecf8d29_cd68_4853_97c4_46bc3c1283b7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727965899-aeb56fb4-7f8c-4fad-957d-37633986c64b.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727965899_aeb56fb4_7f8c_4fad_957d_37633986c64b.png)
 
 **Step 3:** The login account name is root, and no password. Click “Enter”.
 
@@ -200,7 +200,7 @@ On a Linux system, enter the following command:
 C:\Users\89412>ssh root@192.168.1.50
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717728004418-f5ea7e4b-02df-4923-97a0-d0029f6b76b9.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717728004418_f5ea7e4b_02df_4923_97a0_d0029f6b76b9.png)
 
 When logging in for the first time, you need to enter yes to confirm the connection according to the prompt, and when exiting, enter exit.
 
@@ -210,13 +210,13 @@ For example, to copy the current directory image to the root directory of the de
 C:\Users\89412>scp d:\Image root@192.168.1.50:/
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717728061969-f053d421-e652-4403-b0d9-d6c684a57483.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717728061969_f053d421_e652_4403_b0d9_d6c684a57483.png)
 
 **Note: If SSH is not supported on your PC, please install it yourself.**
 
 If an error is reported as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717728068534-c0ee5925-49d5-429a-a2b1-f7a5b57bc921.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717728068534_c0ee5925_49d5_429a_a2b1_f7a5b57bc921.png)
 
 This situation means that you have used SSH to log in to other boards before, so when you log in to the board of another platform, the above error will be reported, the solution is to enter the following two commands:
 
@@ -237,11 +237,11 @@ Install FileZilla tool on Windows and follow the steps shown in the image below 
 
 **Note: If the root login fails, please check whether there is a directory named root under the /home directory. If not, you need to create it.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717728099135-6f4ab26d-e586-4b6d-84c2-587458b2e3d2.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717728099135_6f4ab26d_e586_4b6d_84c2_587458b2e3d2.png)
 
 After successful login, you can upload and download.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717728105639-787a4e9f-7ce7-4918-9bbc-64247058d5c4.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717728105639_787a4e9f_7ce7_4918_9bbc_64247058d5c4.png)
 
 ### **2.3 EMMC System Partition Table**
 
@@ -374,7 +374,7 @@ In the kernel source code, open the corresponding device tree, such as the OK625
 | <font style="color:rgb(0,0,0);">video-vp0</font> | Describe the lvds interface to use a single or dual screen or disable the |
 | <font style="color:rgb(0,0,0);">video-vp1</font> | Describe the rgb interface to use resolution or disable it   |
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717728191830-cd1daf6e-c897-49f0-8237-d55ef8287193.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717728191830_cd1daf6e_c897_49f0_8237_d55ef8287193.png)
 
 Settings can be changed as needed, and after saving, recompilation is required to generate the image.
 
@@ -624,7 +624,7 @@ If you want to turn off this function, please modify the corresponding device tr
 
 Change the attribute "state = \\"on\\"" of the led - 0 node to "off", and change "linux,default - trigger = \\"heartbeat\\"" to "none".  
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717743324415-d0c64066-f0eb-47a2-a802-bf5566468ef7.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717743324415_d0c64066_f0eb_47a2_a802_bf5566468ef7.png)
 
 The testing method is as follows:
 
@@ -657,7 +657,7 @@ root@ok62xx:/# echo heartbeat > /sys/class/leds/heartbeat/trigger   //Set the tr
 
 UART1 is designed as a 485 serial port. Two OK62xx development boards (Board 1 and Board 2) are required. Use the plugs corresponding to the 485 serial port slots to connect the 485 interfaces of the two development boards. The A pins should be connected to each other, and the B pins should be connected to each other.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717743362363-95b7e82c-80bc-4910-bc74-cb021e2436c6.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717743362363_95b7e82c_80bc_4910_bc74_cb021e2436c6.png)
 
 **Note: UART1 does not support 14400 and 380400 bps. The test program provided by Forx sends a string of 30 random characters. You can modify it according to your own needs. Before conducting the serial port test, please check if the P38 jumper cap is connected. If not, connect it before testing.**
 
@@ -759,7 +759,7 @@ Connect OSPI\_CSN0\_3.3V and QSPI\_CSn;
 
 Connect OSPI\_DQ3\_3.3V and QSPI\_D3;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717743410369-64f73f5f-7c96-4f7a-9da2-9c8b080f9b09.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717743410369_64f73f5f_7c96_4f7a_9da2_9c8b080f9b09.png)
 
 1\. Check QSPIFlash partition information;
 
@@ -830,7 +830,7 @@ root@ok62xx:/# dd if=/dev/mtdblock0 of=/dev/null bs=1M count=16
 
 There are two CAN ports, CAN0 and CAN1, on the carrier board. CAN0 is the CAN port from core A, and CAN1 is the CAN port from core M. (The M-core can firmware is not yet supported, so CAN 1 is not available.) Two OK62xx development boards 1 and 2 are required to connect the H and L terminals of the two CAN0 ports.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717743447632-d6dd6a54-1ebd-4c8c-bead-ab235cdc855c.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717743447632_d6dd6a54_1ebd_4c8c_bead_ab235cdc855c.png)
 
 **Note: Before conducting the can test, please check whether the P37 jumper cap is connected. If not, please connect it and then conduct the test.**
 
@@ -1223,7 +1223,7 @@ Default agent request successful
 
 After the above settings, open the mobile phone Bluetooth search, and a "ok62xx" device will appear. Click this Bluetooth to try to pair.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744352994-f81fa856-5130-4c3c-a14a-e7132498a732.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744352994_f81fa856_5130_4c3c_a14a_e7132498a732.png)
 
 At the same time the printing message displays on the development board as follows, enter yes
 
@@ -1296,7 +1296,7 @@ Device 2C:DB:07:C7:4F:F6 DESKTOP-VND9V1F //View the MAC of a device that has bee
 
 Window selects "Bluetooth"- "Accept File"
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744438011-53a87472-5e3c-4267-bc57-e960763a2709.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744438011_53a87472_5e3c_4267_bc57_e960763a2709.png)
 
 ```plain
 root@ok62xx:~# fltest_obexd.sh 
@@ -1309,9 +1309,9 @@ Connection successful
 [88:F8:72:0A:A0:0F]# send /home/root/test.ipg // Send a file
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744453815-967aaede-0c45-46c0-a350-7dc6e659f228.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744453815_967aaede_0c45_46c0_a350_7dc6e659f228.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744467169-17b42d1b-f701-4025-935d-1d0fc2a3a0e0.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744467169_17b42d1b_f701_4025_935d_1d0fc2a3a0e0.png)
 
 ### **3.12 USB Interface Test**
 
@@ -1474,11 +1474,11 @@ root@ok62xx:~#modprobe g_mass_storage file=/dev/mmcblk1p1 removable=1
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744532605-fbec093e-ff74-4729-8cfe-ec372bb7e38e.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744532605_fbec093e_ff74_4729_8cfe_ec372bb7e38e.png)
 
 After opening, the file contents are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744539303-2ce559d9-87d0-4d34-a47c-46f5a079a12c.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744539303_2ce559d9_87d0_4d34_a47c_46f5a079a12c.png)
 
 ### **3.13 LCD Backlight Adjustment**
 
@@ -1623,7 +1623,7 @@ Use automatic IP acquisition: Delete/etc/systemd/network/10-eth.network
 
 The OK62xx development board comes pre - installed with lighttpd (a web server), and the lighttpd service is automatically started when the system boots up. You can browse the web pages on the development board's web server by entering the IP address of the development board (the IP address should be in the same network segment) in the browser of a PC, as shown in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717744902448-c2f446a0-4167-4bf9-86bc-779770539e8e.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744902448_c2f446a0_4167_4bf9_86bc_779770539e8e.png)
 
 ### **3.18 4G/5G Test**
 
@@ -1907,9 +1907,9 @@ For more information about the operation and use of docker, please refer to the 
 
 On the OK62xx-C carrier board, GPIO pins are led out at R51 - R55 and connected to LED. According to the pin names marked in the schematic diagram, use the sysfs method to control the GPIO. Set the output level (high or low) of the GPIO to control the on and off of the LED.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745155632-6b38e833-2d66-48df-97c3-d5733dc8d670.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745155632_6b38e833_2d66_48df_97c3_d5733dc8d670.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745160658-9e1a568f-74d9-461e-aba2-d5b7f4b2959d.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745160658_9e1a568f_74d9_461e_aba2_d5b7f4b2959d.png)
 
 Because gpio1 \_ 16-19 has been occupied by the led driver, change the status of LEDs in the OK62xx-C. dts to status = "disabled", and then compile the replacement device tree before the following test GPIOs are divided into three groups, namely, MCU \_ GPIO, GPIO0 and GPIO1, where the MCU \_ GPIO is the M-core resource, and the GPIO number is calculated according to the following table rule:
 
@@ -1949,13 +1949,13 @@ Path to the test program in the development board file system: /usr/bin/fltest\_
 
 The desktop is displayed as follows after the board is booted:</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745430606-50fb2ac0-5cde-44b1-a505-e51e8736bba5.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745430606_50fb2ac0_5cde_44b1_a505_e51e8736bba5.png)
 
 ### **4.2 OpenGL Test**
 
 OK 6232 and OK 6231 have no GPU and do not support OpenGL. Skip this section. OK6254 supports OpenGLES 1.1, 2.0, 3.0, 3.1 and 3.2; click on the desktop "OpenGL" icon to test it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745600841-514361b5-e8cd-40a2-b4ee-030a45e80200.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745600841_514361b5_e8cd_40a2_b4ee_030a45e80200.png)
 
 Click the "Exit" button to exit the test.
 
@@ -1963,13 +1963,13 @@ Click the "Exit" button to exit the test.
 
 "Musicplayer" is a simple audio test application that can be used to test if the sound card is functioning properly or as a simple audio player with the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745637436-ad561c4b-1358-49bd-a50b-32d8ecd5f235.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745637436_ad561c4b_1358_49bd_a50b_32d8ecd5f235.png)
 
 Click the button in the lower left corner and select test audio /home/forlinx/audio/test.mp3
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745659580-327f8ede-6158-4f6f-b68d-6e55c04de66f.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745659580_327f8ede_6158_4f6f_b68d_6e55c04de66f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745664252-3168dab4-33a5-4d72-b133-ce582a83034d.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745664252_3168dab4_33a5_4d72_b133_ce582a83034d.png)
 
 **Note: The current version of the music player does not support pause and skip.**
 
@@ -1979,11 +1979,11 @@ The "4G/5G " test program is used to test the OK62xx external 4G module (EM05-CE
 
 Click the connect button, the program will automatically enter the dial-up process and get IP to set DNS, etc.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745697871-0a5195de-4b5e-4d01-9870-37b400168a1d.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745697871_0a5195de_4b5e_4d01_9870_37b400168a1d.png)
 
 **Note: The application temporarily shuts down Ethernet, WIFI, and other nodes before performing the ping test. If multiple gateways are turned on simultaneously, the ping test is not necessarily performed with a 4G/5G NIC.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745776435-cef66278-fb41-43e4-864b-219d65aa8753.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745776435_cef66278_fb41_43e4_864b_219d65aa8753.png)
 
 Click the "Exit" button to exit the test.
 
@@ -1993,7 +1993,7 @@ Click the "Exit" button to exit the test.
 
 WiFi module will exist as mlan node in the system, here test mlan0 as an example, the application interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745878502-47feca25-0287-4bcf-9efa-392f1d1ccf6c.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745878502_47feca25_0287_4bcf_9efa_392f1d1ccf6c.png)
 
 <font style="color:rgb(0,0,0);"> </font>
 
@@ -2001,11 +2001,11 @@ Select mlan0, enter the name of the router to be connected by WiFi in the SSID c
 
 The current connection status can be displayed by clicking the STATUS button as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745884388-705a50b2-ceab-4399-9280-eadaef59ced9.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745884388_705a50b2_ceab_4399_9280_eadaef59ced9.png)
 
 After the connection is successful, click ping to test the network, enter the IP to be pinged in the IP column, and click ping, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745888728-ccd2b17e-3707-4345-97ff-7cc03ba43b12.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745888728_ccd2b17e_3707_4345_97ff_7cc03ba43b12.png)
 
 ### **4.6 Network Configuration Test**
 
@@ -2015,13 +2015,13 @@ When Ok62xx starting, the network card is set to DHCP by default, and DHCP and S
 
 The DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745900638-717f9d02-6e9f-4de7-9de3-ad9675edc614.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745900638_717f9d02_6e9f_4de7_9de3_ad9675edc614.png)
 
 Select DHCP, select the network card device to be configured in the interface, and click the Apply and Restart Network at the bottom of the interface to restart the network and automatically obtain the IP address.
 
 The STATIC mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745905566-f4f30454-eef3-40f5-8f59-561a1fe5c567.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745905566_f4f30454_eef3_40f5_8f59_561a1fe5c567.png)
 
 Select the network card device to be configured in the interface, enter the IP to be set in the IP column, enter the subnet mask in the netmask column, enter the gateway in the getway column, and enter the DNS in the DNS column. After the above contents are filled, click the Apply and Restart Network at the bottom of the interface to configure the static IP according to the above settings
 
@@ -2029,7 +2029,7 @@ Select the network card device to be configured in the interface, enter the IP t
 
 "Ping ()" is the interface version application of the common network test command ping, and the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745910971-ad3456db-1996-4cb5-9046-2b9a2313d14e.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745910971_ad3456db_1996_4cb5_9046_2b9a2313d14e.png)
 
 Write the target IP to be pinged in the hostname column. After clicking the ping key, the result column will prompt the result of the ping. As shown in the figure, it indicates that the network is smooth. Click Stop to stop the ping test, and click Clear to clear the information in result.
 
@@ -2037,7 +2037,7 @@ Write the target IP to be pinged in the hostname column. After clicking the ping
 
 “WatchDog” is an application used to test whether the watchdog function is normal or not, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745923225-171cfcbe-4af0-4c18-a2d1-074b53b2d8f8.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745923225_171cfcbe_4af0_4c18_a2d1_074b53b2d8f8.png)
 
 Check "feed dog" and click the "open watchdog" button. At this time, the watchdog function will be started, and the program will feed the dog. Under normal circumstances, the system will not restart. Click the "close watchdog" button. At this time, the program will stop feeding the dog, but will not stop the watchdog. The system will restart after 10 seconds.
 
@@ -2049,7 +2049,7 @@ When unchecking the feed dog, click the open watchdog button, the watchdog funct
 
 "RTC" is the software used to test the real-time clock of the system. You can view and set the current system time. Click Set on the interface to set the time. After setting, click Save to complete the setting. With the RTC backup battery installed, you can restart the board to confirm that the RTC clock is set successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745938777-e96a7164-b6c3-4222-b490-dd90b5c3c578.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745938777_e96a7164_b6c3_4222_b490_dd90b5c3c578.png)
 
 ### **4.10 Serial Port Test**
 
@@ -2057,17 +2057,17 @@ When unchecking the feed dog, click the open watchdog button, the watchdog funct
 
 Because the serial port 1 is set as the 485 bus standard, the on-board serial port 1 of OK62xx needs to be connected to the USB to 485 module for testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745958075-83f1cf7d-1c9b-4362-8806-45940b66ee61.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745958075_83f1cf7d_1c9b_4362_8806_45940b66ee61.png)
 
 After the connection is complete, open Terminal, open the serial debugging tool from the PC side .
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745961755-5019f153-38d9-4260-b875-f4aa7dd2e101.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745961755_5019f153_38d9_4260_b875_f4aa7dd2e101.png)
 
 
 
 Click "Terminal" to set according to the following steps. Because ttyS3 corresponds to serial port 1, select ttyS3 in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745972488-39d2f5cf-2366-4704-9558-51b0c2a250e2.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745972488_39d2f5cf_2366_4704_9558_51b0c2a250e2.png)
 
 When the settings are complete, click Apply.
 
@@ -2075,17 +2075,17 @@ Click Settings on the main interface to open the serial port.
 
 PC-side serial port tool setup parameters and the above figure are the same, select USB to 485, the corresponding serial port number, and open the serial port. Click the Send button to send data
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45441153/1721291073592-fc3017bc-04e4-4715-95e0-648fab6447cb.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1721291073592_fc3017bc_04e4_4715_95e0_648fab6447cb.png)
 
 At this time, the terminal receives the transmitted information
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745992284-58299acf-cadb-4df4-88a3-e2ab2db329b1.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745992284_58299acf_cadb_4df4_88a3_e2ab2db329b1.png)
 
 Click on the black form to bring up the virtual keyboard and enter characters. For example, enter forlinx, and the PC serial port tool will also receive the corresponding content.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717745999936-a249530c-9451-4929-b0b9-38c8a2eb0bab.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717745999936_a249530c_9451_4929_b0b9_38c8a2eb0bab.png)
 
-<font style="color:rgb(0,0,0);"> </font>![](https://cdn.nlark.com/yuque/0/2024/png/45441153/1721291542649-ec3aecd6-e1e4-458b-80d6-89f8baf56590.png)
+<font style="color:rgb(0,0,0);"> </font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1721291542649_ec3aecd6_e1e4_458b_80d6_89f8baf56590.png)
 
 After the test, click "Exit" to exit the program.
 
@@ -2093,7 +2093,7 @@ After the test, click "Exit" to exit the program.
 
 “BackLight” is the LCD backlight adjustment application. Click to open the interface as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746015085-22931cc0-f03c-42b2-9e99-ee0d4ac7ec76.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746015085_22931cc0_f03c_42b2_9e99_ee0d4ac7ec76.png)
 
 Drag the slider in the interface to set the LCD backlight brightness. Level 0 is no backlight, and level 255 is the highest brightness.
 
@@ -2101,7 +2101,7 @@ Drag the slider in the interface to set the LCD backlight brightness. Level 0 is
 
 Click the icon "SQL" to enter the database test interface, and you can see the sample program books that Qt uses SQLite.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746022338-cf9b1fba-e6b3-4a31-a697-72cbbb570307.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746022338_cf9b1fba_e6b3_4a31_a697_72cbbb570307.png)
 
 ### **4.13 UBOOT Menu Configuration Settings**
 
@@ -2111,9 +2111,9 @@ In the UBOOT menu configuration test program, LCD screen resolution, LVDS screen
 
 The display screen configuration interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746032166-586aa7a6-a23b-4ce6-8ee5-441a820da472.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746032166_586aa7a6_a23b_4ce6_8ee5_441a820da472.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746146478-9accb0df-7086-45ec-b7f9-924ce95bde7b.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746146478_9accb0df_7086_45ec_b7f9_924ce95bde7b.png)
 
 When LVDS is set, the desktop is displayed on LVDS first After configuration, click Exit to exit, and the configuration will take effect after restart.
 
@@ -2123,13 +2123,13 @@ Click the "English" to enter the Chinese input test interface.
 
 The test interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746167556-969b0f84-2726-4fc8-8f0d-9ffc13c5e6cb.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746167556_969b0f84_2726_4fc8_8f0d_9ffc13c5e6cb.png)
 
-<font style="color:rgb(0,0,0);">Click the button</font>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746174150-3ad330bf-5c91-4bb2-9464-0c0ad5749b4f.png)<font style="color:rgb(0,0,0);">to the switch the input mode.</font>
+<font style="color:rgb(0,0,0);">Click the button</font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746174150_3ad330bf_5c91_4bb2_9464_0c0ad5749b4f.png)<font style="color:rgb(0,0,0);">to the switch the input mode.</font>
 
 Input Chinese, and the display is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746171379-53d6c255-1753-476a-9256-2be88bc5c4d8.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746171379_53d6c255_1753_476a_9256_2be88bc5c4d8.png)
 
 After the test, click the exit button in the lower left corner to exit.
 
@@ -2137,7 +2137,7 @@ After the test, click the exit button in the lower left corner to exit.
 
 ### **4.15 TI Test**
 
-<font style="color:rgb(0,0,0);">TI officially provides some test programs, including ARM, (</font>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746180787-f2b93102-6ad4-410e-9a05-bb527951c992.png)<font style="color:rgb(0,0,0);">), Settings(</font>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746184559-ef5fc6e5-6740-49e4-8663-adbb450bb70b.png)<font style="color:rgb(0,0,0);">), USB(</font>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746194629-903bf976-a5c8-458c-9f3f-488587a78f74.png)<font style="color:rgb(0,0,0);">), Qt5(</font>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746202336-7f779577-983e-4da9-a0f6-faa5c003c3b6.png)<font style="color:rgb(0,0,0);">), Crytos(</font>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746207646-8258433a-b703-40bd-bfde-389a3c9b1039.png)) Click on the test program, there will be an interface with the test program instructions and test purpose.
+<font style="color:rgb(0,0,0);">TI officially provides some test programs, including ARM, (</font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746180787_f2b93102_6ad4_410e_9a05_bb527951c992.png)<font style="color:rgb(0,0,0);">), Settings(</font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746184559_ef5fc6e5_6740_49e4_8663_adbb450bb70b.png)<font style="color:rgb(0,0,0);">), USB(</font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746194629_903bf976_a5c8_458c_9f3f_488587a78f74.png)<font style="color:rgb(0,0,0);">), Qt5(</font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746202336_7f779577_983e_4da9_a0f6_faa5c003c3b6.png)<font style="color:rgb(0,0,0);">), Crytos(</font>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746207646_8258433a_b703_40bd_bfde_389a3c9b1039.png)) Click on the test program, there will be an interface with the test program instructions and test purpose.
 
 Click the "RUN" button on the instruction screen to start the test.
 
@@ -2145,23 +2145,23 @@ Click the "RUN" button on the instruction screen to start the test.
 
 ### **4.16 Camera Test**
 
-Click the “Camera” ( ![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746216383-f58d836a-585c-40d2-9f0f-8450430d354b.png)) on the desktop to test.
+Click the “Camera” ( ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746216383_f58d836a_585c_40d2_9f0f_8450430d354b.png)) on the desktop to test.
 
 Click camera video to select the camera device.
 
 **Note: When there is no MIPI camera, the corresponding device of UVC camera is/dev/video0. When there are both mipi camera and USB camera, the corresponding device is/dev/video4. Please select the corresponding device according to the actual situation.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746229482-337d0ce5-5bf4-4517-8395-715745a0a880.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717746229482_337d0ce5_5bf4_4517_8395_715745a0a880.png)
 
 <font style="color:rgb(0,0,0);">Click camera resolution to select the resolution.</font>
 
 After setting the device and resolution, click Start to start the preview
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718864607641-20abeda3-1a9f-4381-a402-080e5fd81f15.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_750%2Climit_0)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1718864607641_20abeda3_1a9f_4381_a402_080e5fd81f15.png)
 
 Click picture to take a picture, and the picture will be saved in the/home/root/directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22851183/1718864608095-b0cd1b90-fcf0-4ebb-8834-cbe80f1d76a7.png?x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cw_480%2Climit_0)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1718864608095_b0cd1b90_fcf0_4ebb_8834_cbe80f1d76a7.png)
 
 Note: The photo taking function can only be activated after starting the preview
 
@@ -2577,7 +2577,7 @@ The above images can also be replaced with the images with the same names compil
 
 1\. Set the OK62xx DIP switch to the SD card boot mode, insert the flashed TF card, and power on the device.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726090326-8c15c71b-f427-413c-bb57-da0804bcb135.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726090326_8c15c71b_f427_413c_bb57_da0804bcb135.png)
 
 2\. When the TF card is inserted, the system will default to loading the ramdisk.img.gz and kernel image from the TF card and start through the virtual file system. After the ramdisk startup is completed, the file system OK62xx - linux - fs.sdcard.a\* will be automatically flashed to the eMMC.
 
@@ -2634,25 +2634,25 @@ The DFU flashing tool is located in the “OK6231 - C \& OK6232 - C\_Linux6.1.33
 
 1\. Detect the device and install the PC - side driver. Set the OK62xx DIP switch to the USB DFU boot mode, connect the USB0 Type - C to the PC USB, and power on the device. Find the device “am62x dfu” in the Device Manager. At this time, run the zadig - 2.8.exe program in the DFU flashing tool to install the DFU driver.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726328002-1e1a84cd-e311-4743-9472-9b349a8739d7.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726328002_1e1a84cd_e311_4743_9472_9b349a8739d7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726361869-48b2fd9b-dabb-4f56-b7a4-d6a7ebd81ead.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726361869_48b2fd9b_dabb_4f56_b7a4_d6a7ebd81ead.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726385540-44a092a0-3e26-4443-afa8-1a9c1bc43397.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726385540_44a092a0_3e26_4443_afa8_1a9c1bc43397.png)
 
 The screenshot of the driver installation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726433177-1e2fc72a-464e-46d9-89ca-2a01216b2939.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726433177_1e2fc72a_464e_46d9_89ca_2a01216b2939.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726442603-7130f821-dae0-46a0-bfa8-3c6eb851819f.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726442603_7130f821_dae0_46a0_bfa8_3c6eb851819f.png)
 
 At this time, the device can be recognized:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726458512-a85f9640-0daa-4ad8-a81a-a01053158474.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726458512_a85f9640_0daa_4ad8_a81a_a01053158474.png)
 
 Note: If there is a virtual machine, a USB connection selection interface will appear. Select “Remember my selection” to make it default to connect to the PC, as shown in the following figure. Otherwise, the flashing process may be interrupted.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726529160-425c6134-cbec-47e1-b04f-898335fce9ef.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726529160_425c6134_cbec_47e1_b04f_898335fce9ef.png)
 
 2\. Prepare the flashing files. Place the U - boot and file system to be flashed in the current directory, as shown in the red box in the following figure. 
 
@@ -2662,17 +2662,17 @@ The file system: rootfs.img (Compiled from the DFU in the SDK, located in the �
 
 If you need to update the kernel or device tree, compile the Linux kernel. At this time, the compiled files will be automatically installed into the file system. Then compile the DFU packaged file system, copy it to Windows, and then flash it to complete the update.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726564859-50a8bed1-9473-4a4f-b4d9-ce35a9fe7fe5.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726564859_50a8bed1_9473_4a4f_b4d9_ce35a9fe7fe5.png)
 
 **Note: The dfu - U - boot folder in the flashing tool stores the U - boot that starts in DFU mode. If you need to replace it, put the tiboot3.bin, tispl.bin, and tispl.bin from “images/ok62xx\_dfu/” into it.**
 
 3\. Double - click “Flash.bat” to start flashing, which will flash both the U - boot and the file system to the eMMC. As shown in the following figure, during the flashing process, the PC shell interface and the development board serial port will continuously print information. You can see the current flashing progress on the shell interface, and the serial port will continuously output “#”, indicating that the flashing is in progress.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726607440-257d5785-fc70-43bd-9627-9141a7532054.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726607440_257d5785_fc70_43bd_9627_9141a7532054.png)
 
 4\. When the flashing is completed, it will be shown as in the following figure. At this time, turn off the power. Set the OK62xx DIP switch to the emmc boot mode, which will boot the system from the emmc when powered on again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726620530-7994b884-dc17-4452-93f3-7cef062463ba.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726620530_7994b884_dc17_4452_93f3_7cef062463ba.png)
 
 ### 6.3 USB DISK Flashing and Usage
 
@@ -2684,7 +2684,7 @@ Note: USB disk flashing only works for some USB disks and has a capacity limit (
 
 The TI official errata sheet indicates that during the ROM stage, finding the USB disk may fail due to timing deviations, and there is no solution.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726800560-3e5fada6-7638-4519-98ef-e6c7e2baf65d.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726800560_3e5fada6_7638_4519_98ef_e6c7e2baf65d.png)
 
 When the USB disk cannot be recognized, it is manifested as no printing log during USB disk flashing startup.
 
@@ -2692,9 +2692,9 @@ The following table shows the USB flash drives or adapter solutions that Forlinx
 
 |   Brand/Adapter Solution   |        Model        |                           Picture                            |
 | :------------------------: | :-----------------: | :----------------------------------------------------------: |
-|      **SanDisk 32G**       | **CZ73/CZ74/CZ50**  | ![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726858687-e4cde17d-1cae-4523-9e9a-1be726ae2366.png)<br/>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726867295-543e5f95-5b6b-41cf-9db1-24ac2a20f9c6.png)<br/>![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726873774-c69109aa-28a9-4c1a-ae75-0fc311b6be31.png) |
-|   **S A M S U N G 32G**    |    **BAR Plus**     | ![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726880680-c369a454-9626-47cc-8b77-d406ef0f1459.png) |
-| **Card reader to SD card** | **SanDisk 16G/18G** | ![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717726886957-2b615db0-a673-4b1c-ba86-7aa2cff74003.png) |
+|      **SanDisk 32G**       | **CZ73/CZ74/CZ50**  | ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726858687_e4cde17d_1cae_4523_9e9a_1be726ae2366.png)<br/>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726867295_543e5f95_5b6b_41cf_9db1_24ac2a20f9c6.png)<br/>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726873774_c69109aa_28a9_4c1a_ae75_0fc311b6be31.png) |
+|   **S A M S U N G 32G**    |    **BAR Plus**     | ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726880680_c369a454_9626_47cc_8b77_d406ef0f1459.png) |
+| **Card reader to SD card** | **SanDisk 16G/18G** | ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726886957_2b615db0_a673_4b1c_ba86_7aa2cff74003.png) |
 | **Card reader to TF card** |   **SanDisk 16G**   |                        ![](image.png)                        |
 
 Copy the Ok62xx-linux-sdk/tools/bin/mksdboot. sh to the/usr/bin directory in the PC virtual machine. Connect the USB disk to the PC virtual machine. After the virtual machine recognizes the USB flash disk, execute the mksdboot.sh to format the TF card according to the prompt content.
@@ -2728,15 +2728,15 @@ The above images can also be replaced with the images with the same names compil
 
 Switch S3 should be set to the “on” position. This switch has no effect during the U-boot stage, but the USB flash drive can only be detected and flashed during the kernel stage.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727118266-ad154709-36c8-45bf-a11a-a732829ba036.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727118266_ad154709_36c8_45bf_a11a_a732829ba036.png)
 
 2\. Start flashing As shown in the log below, it indicates that the USB flash disk can be flashed. When a USB flash disk is inserted, the ramdisk. img. gz and the kernel image in the USB flash disk are loaded by default, and the USB flash disk is started through a virtual file system. After ramdisk has finished booting, it will automatically flash the filesystem ok-ok62xx-linux-fs.sdcard.a\* to emmc.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727139807-dfce6ca3-7282-4e73-8f7b-72f7c6d60a8c.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727139807_dfce6ca3_7282_4e73_8f7b_72f7c6d60a8c.png)
 
 The log as shown in the figure below pops up, indicating that the capacity of the USB flash disk or startup media is too large. Please use a USB flash disk with a smaller capacity to flash.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717727162861-85869663-647b-4997-ac31-023fec638078.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717727162861_85869663_647b_4997_ac31_023fec638078.png)
 
 3\. During the flashing process, the SoM's indicator light will change from a heartbeat to a constant on state. After the flashing is completed, the SoM's indicator light will revert to the heartbeat pattern.
 
@@ -2748,7 +2748,7 @@ When the flashing is completed, the following printout will be displayed.
 [Done] 199s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45441153/1721292944572-06bdff8d-8bce-460c-9a5d-7ac38dd12c02.png)
+![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1721292944572_06bdff8d_8bce_460c_9a5d_7ac38dd12c02.png)
 
 4\. Turn off the power and pull out the U disk. Set the OK62xx DIP switch to the emmc boot mode, which will boot the system from the emmc when powered on again.
 
