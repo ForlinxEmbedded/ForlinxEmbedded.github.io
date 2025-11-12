@@ -442,7 +442,8 @@ If you need the calibration to take effect permanently, simply write the calibra
 
 ```plain
 root@ok62xx:/# vi /etc/udev/rules.d/ws-calibrate.rules  //Write the following to the
-SUBSYSTEM=="input", ATTRS{name}=="tsc2007", ENV{LIBINPUT_CALIBRATION_MATRIX}="0.018792 1.004160 -0.015329 -1.192639 0.028147 1.060935", ENV{ID_INPUT_KEY}="1"
+SUBSYSTEM=="input", ATTRS{name}=="tsc2007", ENV{LIBINPUT_CALIBRATION_MATRIX}="0.018792
+1.004160 -0.015329 -1.192639 0.028147 1.060935", ENV{ID_INPUT_KEY}="1"
 root@OK62xx:~# sync
 ```
 
@@ -634,7 +635,10 @@ The testing method is as follows:
 
 ```plain
 root@OK62xx:/# cat /sys/class/leds/heartbeat/trigger
-none kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock timer disk-activity disk-read disk-write ide-disk [heartbeat] cpu cpu0 cpu1 cpu2 cpu3 default-on panic mmc0 mmc2 mmc1 rfkill-any rfkill-none rfkill0
+none kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock
+kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock timer
+disk-activity disk-read disk-write ide-disk [heartbeat] cpu cpu0 cpu1 cpu2 cpu3 default-
+on panic mmc0 mmc2 mmc1 rfkill-any rfkill-none rfkill0
 ```
 
 Where \[heartbeat] indicates that the current trigger condition is the system heartbeat light. Write the above string in trigger to modify the trigger condition.
@@ -1303,7 +1307,9 @@ Window selects "Bluetooth"- "Accept File"
 ```plain
 root@ok62xx:~# fltest_obexd.sh 
 [NEW] Client /org/bluez/obex
-[obex]# connect 2C:DB:07:C7:4F:F6 // Connect to the MAC address of the Bluetooth device that needs to communicate. Please use the "paired-devices" command in bluetoothctl to view it. Before using the "connect" command, make sure the Bluetooth is powered on.
+[obex]# connect 2C:DB:07:C7:4F:F6 // Connect to the MAC address of the Bluetooth device
+that needs to communicate. Please use the "paired-devices" command in bluetoothctl to
+view it. Before using the "connect" command, make sure the Bluetooth is powered on.
 Attempting to connect to 88:F8:72:0A:A0:0F
 [NEW] Session /org/bluez/obex/client/session0 [default]
 [NEW] ObjectPush /org/bluez/obex/client/session0 

@@ -755,7 +755,8 @@ Calibration values: 0.018792 1.004160 -0.015329 -1.192639 0.028147 1.060935
 </div>
 <p>If you need the calibration to take effect permanently, simply write the calibration values into the calibration file (located at /etc/udev/rules.d/ws - calibrate.rules).</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok62xx:/# vi /etc/udev/rules.d/ws-calibrate.rules  //Write the following to the
-SUBSYSTEM==&quot;input&quot;, ATTRS{name}==&quot;tsc2007&quot;, ENV{LIBINPUT_CALIBRATION_MATRIX}=&quot;0.018792 1.004160 -0.015329 -1.192639 0.028147 1.060935&quot;, ENV{ID_INPUT_KEY}=&quot;1&quot;
+SUBSYSTEM==&quot;input&quot;, ATTRS{name}==&quot;tsc2007&quot;, ENV{LIBINPUT_CALIBRATION_MATRIX}=&quot;0.018792
+1.004160 -0.015329 -1.192639 0.028147 1.060935&quot;, ENV{ID_INPUT_KEY}=&quot;1&quot;
 root@OK62xx:~# sync
 </pre></div>
 </div>
@@ -916,7 +917,10 @@ root@ok62xx:~#cat /sys/class/thermal/thermal_zone1/temp
 <p>The testing method is as follows:</p>
 <p>1. To view trigger conditions:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK62xx:/# cat /sys/class/leds/heartbeat/trigger
-none kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock timer disk-activity disk-read disk-write ide-disk [heartbeat] cpu cpu0 cpu1 cpu2 cpu3 default-on panic mmc0 mmc2 mmc1 rfkill-any rfkill-none rfkill0
+none kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock
+kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock timer
+disk-activity disk-read disk-write ide-disk [heartbeat] cpu cpu0 cpu1 cpu2 cpu3 default-
+on panic mmc0 mmc2 mmc1 rfkill-any rfkill-none rfkill0
 </pre></div>
 </div>
 <p>Where [heartbeat] indicates that the current trigger condition is the system heartbeat light. Write the above string in trigger to modify the trigger condition.</p>
@@ -1518,7 +1522,9 @@ Device 2C:DB:07:C7:4F:F6 DESKTOP-VND9V1F //View the MAC of a device that has bee
 <p><img alt="Image" src="_images/1717744438011_53a87472_5e3c_4267_bc57_e960763a2709.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok62xx:~# fltest_obexd.sh 
 [NEW] Client /org/bluez/obex
-[obex]# connect 2C:DB:07:C7:4F:F6 // Connect to the MAC address of the Bluetooth device that needs to communicate. Please use the &quot;paired-devices&quot; command in bluetoothctl to view it. Before using the &quot;connect&quot; command, make sure the Bluetooth is powered on.
+[obex]# connect 2C:DB:07:C7:4F:F6 // Connect to the MAC address of the Bluetooth device
+that needs to communicate. Please use the &quot;paired-devices&quot; command in bluetoothctl to
+view it. Before using the &quot;connect&quot; command, make sure the Bluetooth is powered on.
 Attempting to connect to 88:F8:72:0A:A0:0F
 [NEW] Session /org/bluez/obex/client/session0 [default]
 [NEW] ObjectPush /org/bluez/obex/client/session0 
