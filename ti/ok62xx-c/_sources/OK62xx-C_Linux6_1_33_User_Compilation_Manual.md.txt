@@ -10,16 +10,6 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-## Overview
-
-This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, users will be able to successfully compile their own software code. 
-The manual is mainly divided into four chapters:  
-
-- Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment;
-- Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu18.04;
-- Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64-bit Ubuntu 18.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;
-- Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.
-
 ## Application Scope
 
 This manual is mainly applicable to the Linux6.1.33 operating system on the Forlinx OK6254\&OK6232\&OK6231 platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
@@ -29,6 +19,17 @@ This manual is mainly applicable to the Linux6.1.33 operating system on the Forl
 | Date       | User Manual Version | Revision History |
 | ---------- | ------------------- | ---------------- |
 | 16/06/2024 | V1.0                | Initial Version  |
+
+## Overview
+
+This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code. 
+
+The manual is mainly divided into four chapters:  
+
+- Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment;
+- Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu18.04;
+- Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64-bit Ubuntu 18.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;
+- Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.
 
 ## **1. VMWare Virtual Machine Software Installation**
 
@@ -135,9 +136,9 @@ Ubuntu is a Linux operating system distribution primarily focused on desktop app
 
 There are numerous versions of Linux desktop systems, and currently, all the Linux experiments and source code in this manual are performed on the Ubuntu 18.04 system. With other versions of Linux desktop systems, problems related to the gcc compiler and library files may occur. If you encounter similar issues, you can seek advice and inquire on the official forums of the Linux distribution vendor. If you are not familiar with Linux, the method introduced by Forlinx is highly recommended.
 
-Why do we need to install these things? Because we need a Linux environment to do development work. We can't compile Kernel source code, Qt applications, uboot and so on under Windows. We need to do these work under Linux environment. Given that most users are accustomed to the Windows environment, we use VMware software to provide Ubuntu virtual machines. Of course, you can also install Linux on your computer or server for development.
+A Linux environment is needed for development work. Kernel source code, Qt applications, U-Boot, etc. can’t be compiled under Windows. These tasks must be carried out in a Linux environment. Since most users are used to the Windows environment, VMware software can be used to provide Ubuntu virtual machines. Of course, Linux can also be installed on your computer or server for development.
 
-Next, we will introduce the process of building the virtual machine.
+Next, the process of building the virtual machine will be introduced.
 
 **Note:**
 
@@ -188,7 +189,7 @@ Set the network type, use the default NAT form for networking, and click "Next".
 
 ![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665932_281c5ebf_4897_466a_a61b_e024ffc58737.png)
 
-Using the recommended I/O controller, click "Next":
+Use the recommended I/O controller, click "Next":
 
 ![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746666174_777a584b_edee_4d38_b2ea_c3dc350af233.png)
 
@@ -214,7 +215,7 @@ Click "Finish":
 
 After that, the virtual machine starts to install the image and wait patiently.
 
-#### 3.1.2 Solutions to VMware Error Reporting
+#### 3.1.2 Solutions to VMware Errors 
 
 **Error 1**: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
@@ -540,8 +541,8 @@ SDK has been successfully set up and is ready to be used.
 
 **Note:**
 
-+ **After setting the environment variables, you don't need to reset them the next time you compile as long as you don't change terminals**
-+ **If you reopen a new terminal or switch accounts, you need to reset the environment variables before compiling**
++ **After setting the environment variables, you don't need to reset them the next time you compile as long as you don't change terminals**;
++ **If you reopen a new terminal or switch accounts, you need to reset the environment variables before compiling**.
 
 Setting environment variables is mainly to specify the target architecture and cross-compilation tool chain, as well as the path of some libraries used in the compilation process. Use the following command to configure (**. There is a space behind**):
 
@@ -695,7 +696,7 @@ forlinx@ubuntu:~/62xx/OK62xx-linux-sdk$ sudo ./build.sh clean_kernel
 
 If the following information appears, it indicates that the cleanup is completed:
 
-**Note: **
+**Note:** 
 
 - **The kernel image and device tree in the images directory are not cleared by this command;**
 
@@ -960,7 +961,7 @@ root@OK62xx:/usr/bin# reboot				                             ///Restart the deve
 
 4\. Qt interface fltest \_qt\_ backlight applications are up to date after board restart. If the fltest \_qt\_ backlight is executed successfully and the window is opened, it means that the newly compiled Qt application can be used and the Qt application development environment is configured successfully.
 
-Testing Qt Program Methods Individually
+Test Qt Program Methods Individually:
 
 1. Copy the executable file of the generated fltest\_qt\_backlight to the U disk, then insert the U disk into the development board, and copy the program to the/home path.
 2. Set executable permissions to the program.

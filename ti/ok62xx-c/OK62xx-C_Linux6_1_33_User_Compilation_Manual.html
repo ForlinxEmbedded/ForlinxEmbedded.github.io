@@ -70,9 +70,9 @@
 <li class="toctree-l1"><a class="reference internal" href="OK62xx-C_Linux-6_1_33_User_Manual.html">Linux6.1.33_User’s Manual_V1.0</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.33_User’s Compilation Manual Initial Version_V1.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation"><strong>1. VMWare Virtual Machine Software Installation</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#vmware-software-download-and-purchase"><strong>1.1 VMware Software Download and Purchase</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vmware-installation"><strong>1.2 VMware Installation</strong></a></li>
@@ -83,7 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#building-the-development-environment-manually">3. Building the Development Environment Manually</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-virtual-machine-installation">3.1 Ubuntu System Virtual Machine Installation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#vmware-ubuntu-image-installation">3.1.1 Vmware Ubuntu Image Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#solutions-to-vmware-error-reporting">3.1.2 Solutions to VMware Error Reporting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#solutions-to-vmware-errors">3.1.2 Solutions to VMware Errors</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#ubuntu-common-software-installation">3.2 Ubuntu Common Software Installation</a><ul>
@@ -155,17 +155,6 @@
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p>This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, users will be able to successfully compile their own software code.
-The manual is mainly divided into four chapters:</p>
-<ul class="simple">
-<li><p>Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment;</p></li>
-<li><p>Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu18.04;</p></li>
-<li><p>Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64-bit Ubuntu 18.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;</p></li>
-<li><p>Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.</p></li>
-</ul>
-</section>
 <section id="application-scope">
 <h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
 <p>This manual is mainly applicable to the Linux6.1.33 operating system on the Forlinx OK6254&amp;OK6232&amp;OK6231 platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
@@ -186,6 +175,17 @@ The manual is mainly divided into four chapters:</p>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.</p>
+<p>The manual is mainly divided into four chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment;</p></li>
+<li><p>Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu18.04;</p></li>
+<li><p>Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64-bit Ubuntu 18.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;</p></li>
+<li><p>Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.</p></li>
+</ul>
 </section>
 <section id="vmware-virtual-machine-software-installation">
 <h2><strong>1. VMWare Virtual Machine Software Installation</strong><a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h2>
@@ -252,8 +252,8 @@ The manual is mainly divided into four chapters:</p>
 <h2>3. Building the Development Environment Manually<a class="headerlink" href="#building-the-development-environment-manually" title="Link to this heading"></a></h2>
 <p>Ubuntu is a Linux operating system distribution primarily focused on desktop applications. Ubuntu has many advantages and offers its own strengths compared to other Linux distributions. First of all, installing the system is very easy, requiring very little setup, and is fully comparable to a Windows desktop system; secondly, the GUI is very user-friendly and mimics the shortcuts that are commonly used under XP; when installing and upgrading programs, you can install the dependent packages by the system itself through the network, so you don’t have to worry about the dependencies of the Linux system anymore. Considering everyone’s usage habits and learning needs, it would be a good choice to use Ubuntu Linux.</p>
 <p>There are numerous versions of Linux desktop systems, and currently, all the Linux experiments and source code in this manual are performed on the Ubuntu 18.04 system. With other versions of Linux desktop systems, problems related to the gcc compiler and library files may occur. If you encounter similar issues, you can seek advice and inquire on the official forums of the Linux distribution vendor. If you are not familiar with Linux, the method introduced by Forlinx is highly recommended.</p>
-<p>Why do we need to install these things? Because we need a Linux environment to do development work. We can’t compile Kernel source code, Qt applications, uboot and so on under Windows. We need to do these work under Linux environment. Given that most users are accustomed to the Windows environment, we use VMware software to provide Ubuntu virtual machines. Of course, you can also install Linux on your computer or server for development.</p>
-<p>Next, we will introduce the process of building the virtual machine.</p>
+<p>A Linux environment is needed for development work. Kernel source code, Qt applications, U-Boot, etc. can’t be compiled under Windows. These tasks must be carried out in a Linux environment. Since most users are used to the Windows environment, VMware software can be used to provide Ubuntu virtual machines. Of course, Linux can also be installed on your computer or server for development.</p>
+<p>Next, the process of building the virtual machine will be introduced.</p>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>The memory of the virtual machine environment should be ≥ 8 GB and the hard disk should be ≥ 100 GB to ensure that the full compilation can be passed;</strong></p></li>
@@ -283,7 +283,7 @@ The manual is mainly divided into four chapters:</p>
 <p><img alt="Image" src="_images/1717746665703_6cdd71f9_da6d_44f5_a7db_0eac9e535592.png" /></p>
 <p>Set the network type, use the default NAT form for networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.</p>
 <p><img alt="Image" src="_images/1717746665932_281c5ebf_4897_466a_a61b_e024ffc58737.png" /></p>
-<p>Using the recommended I/O controller, click “Next”:</p>
+<p>Use the recommended I/O controller, click “Next”:</p>
 <p><img alt="Image" src="_images/1717746666174_777a584b_edee_4d38_b2ea_c3dc350af233.png" /></p>
 <p>Use the recommended disk type, click “Next”:</p>
 <p><img alt="Image" src="_images/1717746666391_3d8da81f_0cbe_4f88_99e1_400421933ae2.png" /></p>
@@ -297,8 +297,8 @@ The manual is mainly divided into four chapters:</p>
 <p><img alt="Image" src="_images/1717746667910_f9cedc5b_4eed_4611_83d1_8b8b3b959732.png" /></p>
 <p>After that, the virtual machine starts to install the image and wait patiently.</p>
 </section>
-<section id="solutions-to-vmware-error-reporting">
-<h4>3.1.2 Solutions to VMware Error Reporting<a class="headerlink" href="#solutions-to-vmware-error-reporting" title="Link to this heading"></a></h4>
+<section id="solutions-to-vmware-errors">
+<h4>3.1.2 Solutions to VMware Errors<a class="headerlink" href="#solutions-to-vmware-errors" title="Link to this heading"></a></h4>
 <p><strong>Error 1</strong>: Unable to connect to MKS: Too many socket connection attempts; giving up.</p>
 <p><img alt="Image" src="_images/1717746668157_2b755d95_70b4_46d9_9159_0c4d6d58288d.png" /></p>
 <p>Solution: Right click on my computer to manage services and application services, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.</p>
@@ -537,8 +537,8 @@ SDK has been successfully set up and is ready to be used.
 <h4>4.3.2 Environment Variables Settings<a class="headerlink" href="#environment-variables-settings" title="Link to this heading"></a></h4>
 <p><strong>Note:</strong></p>
 <ul class="simple">
-<li><p><strong>After setting the environment variables, you don’t need to reset them the next time you compile as long as you don’t change terminals</strong></p></li>
-<li><p><strong>If you reopen a new terminal or switch accounts, you need to reset the environment variables before compiling</strong></p></li>
+<li><p><strong>After setting the environment variables, you don’t need to reset them the next time you compile as long as you don’t change terminals</strong>;</p></li>
+<li><p><strong>If you reopen a new terminal or switch accounts, you need to reset the environment variables before compiling</strong>.</p></li>
 </ul>
 <p>Setting environment variables is mainly to specify the target architecture and cross-compilation tool chain, as well as the path of some libraries used in the compilation process. Use the following command to configure (<strong>. There is a space behind</strong>):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/6254/OK6254-linux-sdk $ . /opt/arago-2023.04/environment-setup-aarch64-oe-linux
@@ -692,7 +692,7 @@ forlinx@ubuntu:~/62xx/OK62xx-linux-sdk$
 </pre></div>
 </div>
 <p>If the following information appears, it indicates that the cleanup is completed:</p>
-<p>**Note: **</p>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>The kernel image and device tree in the images directory are not cleared by this command;</strong></p></li>
 <li><p><strong>When compiling the kernel separately, you need to replace the OK62xx-linux-fs/rootfs/lib/modules/ directory with the same directory of the development board at the same time.</strong></p></li>
@@ -884,7 +884,7 @@ root@OK62xx:/usr/bin# reboot				                             ///Restart the deve
 </pre></div>
 </div>
 <p>4. Qt interface fltest _qt_ backlight applications are up to date after board restart. If the fltest _qt_ backlight is executed successfully and the window is opened, it means that the newly compiled Qt application can be used and the Qt application development environment is configured successfully.</p>
-<p>Testing Qt Program Methods Individually</p>
+<p>Test Qt Program Methods Individually:</p>
 <ol class="arabic simple">
 <li><p>Copy the executable file of the generated fltest_qt_backlight to the U disk, then insert the U disk into the development board, and copy the program to the/home path.</p></li>
 <li><p>Set executable permissions to the program.</p></li>
