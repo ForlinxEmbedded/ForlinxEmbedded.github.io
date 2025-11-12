@@ -37,7 +37,7 @@ The manual is mainly divided into four chapters:
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746659354-4353d01f-5478-4b94-8d88-2a36ef11b2bd.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746659354_4353d01f_5478_4b94_8d88_2a36ef11b2bd.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -45,43 +45,43 @@ After the download is complete, double-click the installation file to start the 
 
 Step 1: Double-click the startup program to enter the installation wizard, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746659575-c57f60b5-8c4d-4ab9-a410-5157e79fdd21.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746659575_c57f60b5_8c4d_4ab9_a410_5157e79fdd21.png)
 
 Step 2: Check "I accept the terms in the license agreement (A)" and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746659803-89355d32-a564-4a27-8b58-022422dbba88.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746659803_89355d32_a564_4a27_8b58_022422dbba88.png)
 
 Step 3: You can modify the installation location, install it to the partition where your computer installs the software, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746660126-7b757388-cfde-490d-8b5c-d7b9934e6e1f.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746660126_7b757388_cfde_490d_8b5c_d7b9934e6e1f.png)
 
 Step 4: Decide whether to check the two check boxes and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746660358-87af8a11-c820-43e7-999e-e66b70646581.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746660358_87af8a11_c820_43e7_999e_e66b70646581.png)
 
 Step 5: Check the option to add the shortcuts and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746660774-634506fd-6f02-47ca-88e5-738b80666ba6.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746660774_634506fd_6f02_47ca_88e5_738b80666ba6.png)
 
 Step 6: Click "Install";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746660964-02fd8de0-108a-4321-903c-8b9456009536.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746660964_02fd8de0_108a_4321_903c_8b9456009536.png)
 
 Step 7: Wait for the installation to complete;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746661177-7df9f4ed-c574-410c-8c56-d68937a97a6d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661177_7df9f4ed_c574_410c_8c56_d68937a97a6d.png)
 
 Step 8: After installing it, you can click "Finish" for trial. If you need to use it for a long time, please buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746661361-a7d02439-7969-446a-856d-b1c84eceeb19.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661361_a7d02439_7969_446a_856d_b1c84eceeb19.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746661605-9a54a96e-8eae-4bf5-bd7d-15932cb21a7d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661605_9a54a96e_8eae_4bf5_bd7d_15932cb21a7d.png)
 
 You can also click "Skip". After completion, open the VMware software, click "Help" in the status card above, and enter the license key in the pop-up window.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746661866-0c0a6aef-ee23-448c-acc4-00b176133040.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661866_0c0a6aef_ee23_448c_acc4_00b176133040.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746662162-e9a6a2ac-760e-45e5-99fd-1437ffc2283d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746662162_e9a6a2ac_760e_45e5_99fd_1437ffc2283d.png)
 
 ### 1.3 VMware Network Connection
 
@@ -91,7 +91,7 @@ In the virtual machine, when the VMware virtual network card is set to NAT mode,
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746662377-128b6a27-fec1-45fd-953f-c94a1a9e4aa2.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746662377_128b6a27_fec1_45fd_953f_c94a1a9e4aa2.png)
 
 ## 2\. Loading the Existing Ubuntu Development Environment
 
@@ -104,29 +104,29 @@ There are two ways to use a virtual machine environment in VMware: one is to dir
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746662586-b7ac5dbd-da96-48e6-aa38-9b5fdf0ba07e.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746662586_b7ac5dbd_da96_48e6_aa38_9b5fdf0ba07e.png)
 
 Select all compressed packages and right click to extract to OK62xx-linux6.1.33-VM\_15\_1\_0-ubuntu18\_04:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746662796-705d1660-b47b-42f1-b8c0-e11df73b92c7.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746662796_705d1660_b47b_42f1_b8c0_e11df73b92c7.png)
 
 OK62xx.vmx in the OK62xx-linux6.1.33-VM\_15\_1\_0-ubuntu18\_04 folder after decompression is complete is the file to be opened by the VM.
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746663009-13f4c206-1127-4cb9-8a94-8973a55c4281.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746663009_13f4c206_1127_4cb9_8a94_8973a55c4281.png)
 
 Select the directory where the OK62xx-linux6.1.33-VM\_15\_1\_0-ubuntu18\_04 VM file you just unzipped and generated is located, and double-click to open the startup file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746663293-4681b5dc-6d50-48b3-9f0f-206694a76aca.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746663293_4681b5dc_6d50_48b3_9f0f_206694a76aca.png)
 
 After loading, click to start the virtual machine to run. Enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746663492-1f123d60-a01a-422e-a241-a4e67aae35fb.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746663492_1f123d60_a01a_422e_a241_a4e67aae35fb.png)
 
 The provided development environment account is: forlinx and the password is: forlinx, fill in the password and select Sign in to log in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746663719-7685a1e5-06a9-4b25-8102-b3ad46727f3a.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746663719_7685a1e5_06a9_4b25_8102_b3ad46727f3a.png)
 
 So far, it has successfully entered the development environment provided by Forlinx.
 
@@ -151,7 +151,7 @@ The version of Ubuntu we chose to install is 18.04, and the introduction and dev
 
 Download "Ubuntu-18.04.6-desktop-amd64.iso" (you can download the version that you actually need; this is just an example with 18.04.6).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746663984-212cf248-063d-4f70-9353-d91b57712a5c.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746663984_212cf248_063d_4f70_9353_d91b57712a5c.png)
 
 #### 3.1.1 Vmware Ubuntu Image Installation
 
@@ -159,59 +159,59 @@ If customers want to learn to build their own virtual machines, they can choose 
 
 Step 1: Open the VMware software and click on "Create New Virtual Machine". Enter the following interface, check "Customize (Advanced)" and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746664217-c481805e-b90c-4dd2-b0b0-06bb9851ecc5.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746664217_c481805e_b90c_4dd2_b0b0_06bb9851ecc5.png)
 
 Step 2: Select the compatibility of the corresponding VMware version. The version can be viewed in Help-> About VMware Workstation. Click "Next" after confirmation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746664446-312d673b-0ade-4073-9caa-c389c8bcc4a1.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746664446_312d673b_0ade_4073_9caa_c389c8bcc4a1.png)
 
 Select “Install program from disc image file”, then click “Next”；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746664826-deed06fe-61d1-429c-9ab1-0ead189277d8.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746664826_deed06fe_61d1_429c_9ab1_0ead189277d8.png)
 
 Enter full name, user name and password and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746665039-c114a239-dc5a-4568-9b06-bcb4eb3d6973.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665039_c114a239_dc5a_4568_9b06_bcb4eb3d6973.png)
 
 Enter the virtual machine name and configuration installation location, and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746665253-69a83b21-479b-4012-853e-6744af54f232.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665253_69a83b21_479b_4012_853e_6744af54f232.png)
 
 To configure the number of cores, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746665476-17f000ad-324d-47eb-a91d-b798add278ab.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665476_17f000ad_324d_47eb_a91d_b798add278ab.png)
 
 Configure appropriate memory space and select "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746665703-6cdd71f9-da6d-44f5-a7db-0eac9e535592.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665703_6cdd71f9_da6d_44f5_a7db_0eac9e535592.png)
 
 Set the network type, use the default NAT form for networking, and click "Next". Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746665932-281c5ebf-4897-466a-a61b-e024ffc58737.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665932_281c5ebf_4897_466a_a61b_e024ffc58737.png)
 
 Use the recommended I/O controller, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746666174-777a584b-edee-4d38-b2ea-c3dc350af233.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746666174_777a584b_edee_4d38_b2ea_c3dc350af233.png)
 
 Use the recommended disk type, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746666391-3d8da81f-0cbe-4f88-99e1-400421933ae2.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746666391_3d8da81f_0cbe_4f88_99e1_400421933ae2.png)
 
 Use the default options, create a new virtual disk and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746666680-9759027b-1413-4205-ab61-e8b3a0be968d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746666680_9759027b_1413_4205_ab61_e8b3a0be968d.png)
 
 Allocate a disk size of 80G and divide the virtual disk into multiple files, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746667466-a599d519-f478-49be-b945-949bc5c653b1.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746667466_a599d519_f478_49be_b945_949bc5c653b1.png)
 
 Click "Next" by default:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746667688-692db451-016b-49c4-af8a-6eacdc66e259.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746667688_692db451_016b_49c4_af8a_6eacdc66e259.png)
 
 Click "Finish":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746667910-f9cedc5b-4eed-4611-83d1-8b8b3b959732.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746667910_f9cedc5b_4eed_4611_83d1_8b8b3b959732.png)
 
 After that, the virtual machine starts to install the image and wait patiently.
 
@@ -219,21 +219,21 @@ After that, the virtual machine starts to install the image and wait patiently.
 
 **Error 1**: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746668157-2b755d95-70b4-46d9-9159-0c4d6d58288d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746668157_2b755d95_70b4_46d9_9159_0c4d6d58288d.png)
 
 Solution: Right click on my computer to manage services and application services, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746668416-4a5cd38d-2967-41c6-a9b4-7a5bdd445513.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746668416_4a5cd38d_2967_41c6_a9b4_7a5bdd445513.png)
 
 **Error 2**: Internal error.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746668794-6c56c6a0-fc47-4a1b-9c0a-f2ce7076978d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746668794_6c56c6a0_fc47_4a1b_9c0a_f2ce7076978d.png)
 
 Solution: Refer to error 1.
 
 **Error 3**: Unable to install service VMware Authorization Service (VMAuthdService):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746669000-9444f82d-5ee1-4007-aab1-4882176975b0.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746669000_9444f82d_5ee1_4007_aab1_4882176975b0.png)
 
 Solution:
 
@@ -241,25 +241,25 @@ Solution:
     
     Input services.msc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746669259-eed06e91-0b3e-480c-9eb0-33bc476fe975.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746669259_eed06e91_0b3e_480c_9eb0_33bc476fe975.png)
 
 Then find the service and start it, because this service is the authorization and authentication service used to start and access the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746669488-ac8fecc9-f309-4e40-a5db-9dc72fe22e62.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746669488_ac8fecc9_f309_4e40_a5db_9dc72fe22e62.png)
 
 WMI must be started first
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746669835-5e3c2b84-2df0-4b63-be64-a9d30a095046.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746669835_5e3c2b84_2df0_4b63_be64_a9d30a095046.png)
 
 **Error 4**: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746670098-d94358c0-a1b2-4b00-9f10-75db9f8afa73.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746670098_d94358c0_a1b2_4b00_9f10_75db9f8afa73.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 
 **Error 5**: Intel VT-x is disabled.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746670354-a16136ec-c0a0-407b-8463-4765368323eb.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746670354_a16136ec_c0a0_407b_8463_4765368323eb.png)
 
 Solution:
 
@@ -271,7 +271,7 @@ If that doesn't work, just turn the firewall off and reopen the VM. (varies by m
 
 Error 6: The virtual machine appears to be in use... Acquiring Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746670629-6d4235b5-25b9-4d63-a836-8d83b3856b8a.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746670629_6d4235b5_25b9_4d63_a836_8d83b3856b8a.png)
 
 Solution:
 
@@ -279,13 +279,13 @@ Solution:
 2. Enter the storage directory of the virtual machine and delete the *.lck files. The ".lck" extension indicates locked files.
 3. Open the Windows Task Manager and terminate the VMware processes. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746670941-b9ce3432-a791-44c6-8184-c4100c03cbfb.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746670941_b9ce3432_a791_44c6_8184_c4100c03cbfb.png)
 
 4. Restart the virtual machine.
 
 Error 7: Failed to lock file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746671187-ee08a13d-f97c-433d-9531-ce66736fc699.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746671187_ee08a13d_f97c_433d_9531_ce66736fc699.png)
 
 Solution:
 
@@ -299,7 +299,7 @@ Solution:
 
 The virtual machine does not have enough memory to run the maximum requirement of the image. Increase the memory of the virtual machine and restart the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746671406-4bc29fd2-c64c-477a-9a3a-b8fc3e82d0b1.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746671406_4bc29fd2_c64c_477a_9a3a_b8fc3e82d0b1.png)
 
 ### 3.2 Ubuntu Common Software Installation
 
@@ -307,17 +307,17 @@ The virtual machine does not have enough memory to run the maximum requirement o
 
 Click the icon similar to a package on the left side of the desktop to see some tools. We can also search for the tools we want. For example, we download a VScode tool, which is very convenient for our daily coding.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746671675-b03f4a0c-4500-4849-8313-f3b664e0e5ad.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746671675_b03f4a0c_4500_4849_8313_f3b664e0e5ad.png)
 
 Please search for the tool we need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click "Launch" to run it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746671974-026b40ff-851a-4e74-a4d8-a3bd048bc8d9.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746671974_026b40ff_851a_4e74_a4d8_a3bd048bc8d9.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746672220-1ba6b64a-d37f-4fc9-a589-3a3f97c6ab71.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746672220_1ba6b64a_d37f_4fc9_a589_3a3f97c6ab71.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746672516-199868d3-1068-4e68-a92a-e1d764fc3fca.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746672516_199868d3_1068_4e68_a92a_e1d764fc3fca.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746672728-4eade0d7-b4a0-4fbe-8e9d-feff94551aae.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746672728_4eade0d7_b4a0_4fbe_8e9d_feff94551aae.png)
 
 #### 3.2.3 NFS Installation
 
@@ -327,7 +327,7 @@ The terminal executes the following command:
 forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746672958-629f0a87-4e8d-48aa-96de-b38b1de5b35e.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746672958_629f0a87_4e8d_48aa_96de_b38b1de5b35e.png)
 
 ### 3.3 QT Environment Setup and Use
 
@@ -348,35 +348,35 @@ forlinx@ubuntu:~/62xx$ sudo ./qt-opensource-linux-x64-5.14.2.run
 
 The following interface will pop up. Click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746673236-ec320a06-1cb0-4bf5-95a2-6378ccf59431.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746673236_ec320a06_1cb0_4bf5_95a2_6378ccf59431.png)
 
 Click "Next" to go to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746673449-42aa3c98-4332-4b86-b81d-1905c89adafb.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746673449_42aa3c98_4332_4b86_b81d_1905c89adafb.png)
 
 In the following screen, click "Browse …" Select the installation path of Qtcreator, and then click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746673673-91061653-c76c-49fa-b0a7-82c9d73d2180.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746673673_91061653_c76c_49fa_b0a7_82c9d73d2180.png)
 
 In the following interface, select the first item and click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746673920-ac4b14a6-cb7d-4fe9-9b16-00fdac42bbae.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746673920_ac4b14a6_cb7d_4fe9_9b16_00fdac42bbae.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746674161-3bbb5b6f-73cc-4923-82cc-696420e13430.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746674161_3bbb5b6f_73cc_4923_82cc_696420e13430.png)
 
 Agree to the agreement and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746674385-a55918fa-e19d-46cc-a465-ba9a93c98de0.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746674385_a55918fa_e19d_46cc_a465_ba9a93c98de0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746674620-ba26da9a-c079-439a-8c08-9aaf3b1433e3.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746674620_ba26da9a_c079_439a_8c08_9aaf3b1433e3.png)
 
 Click "Install" to install:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746674840-45d41396-f103-421f-9d9f-8bd29d8159ff.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746674840_45d41396_f103_421f_9d9f_8bd29d8159ff.png)
 
 After the installation is completed, the following interface will be displayed. Uncheck the option "Launch Qt Creator" "and click" Finish "to complete the installation steps of Qt Creator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746675062-a36e14ef-59b7-4c79-86ff-9e64ba33108b.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746675062_a36e14ef_59b7_4c79_86ff_9e64ba33108b.png)
 
 Enter the qtcreator actual installation directory/home/forlinx/Qt5.14.2/Tools/QtCreator/bin/directory:
 
@@ -393,7 +393,7 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746675352-39c5a17a-f74e-4c53-8b51-129be3cdc821.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746675352_39c5a17a_f74e_4c53_8b51_129be3cdc821.png)
 
 The Qt Creator tool screen appears. Qt Creator is installed.
 
@@ -410,37 +410,37 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 Start Qt Creator, and the Qt development interface will appear. Click Tools- > option:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746675736-8d23ba6f-9136-4d60-bc2f-2a6e6a47ce74.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746675736_8d23ba6f_9136_4d60_bc2f_2a6e6a47ce74.png)
 
 Enter the Options interface, click "Kits" on the left, then click the "Compilers" tab on the top of the middle, and click "Add-> GCC-> C + +" on the right, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746675980-5d30a487-bdcc-4d20-97d1-ff4a3b028134.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746675980_5d30a487_bdcc_4d20_97d1_ff4a3b028134.png)
 
 The following window will pop up. Click "Browser" in the "Compiler path" option. In the SDK package, navigate to `/opt/arago-2023.04/sysroots/x86_64-arago-linux/usr/bin/aarch64-oe-linux` and find "aarch64-oe-linux-g++". After selecting it, click "Open", and change the "Name" to "G++".
 
 Follow the same method to add GCC compiler, click "Add->GCC->C" on the right side, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746676236-815cbdf2-52c6-45c3-aace-4b965f9b1f6c.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746676236_815cbdf2_52c6_45c3_aace_4b965f9b1f6c.png)
 
 Find "aarch64-oe-linux-gcc" under /opt/arago-2023.04/sysroots/x86\_64-arago-linux/usr/bin/aarch64-oe-linux in the SDK package. Select it, click "Open", and change the Name to "GCC".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746676485-2f03c36e-d8e8-409a-b7b9-2549d0dbd295.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746676485_2f03c36e_d8e8_409a_b7b9_2549d0dbd295.png)
 
 ##### 3.3.2.2 Debuggers Configuration
 
 Click the Debuggers, the following interface will pop up, and then click "Add":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746676769-f5c80ab4-4cbd-43df-82c6-afab37073985.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746676769_f5c80ab4_4cbd_43df_82c6_afab37073985.png)
 
 The following window will pop up. In the SDK package, go to `/opt/arago-2023.04/sysroots/x86_64-arago-linux/usr/bin/aarch64-oe-linux` and find “aarch64-oe-linux-gdb”. After selecting it, click “Open” and change the “Name” to “debuggers”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746677012-ba4ec20a-b322-4859-8b80-ea06f5afb38d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746677012_ba4ec20a_b322_4859_8b80_ea06f5afb38d.png)
 
 ##### 3.3.2.3 Qt Version Configuration
 
 Click the Qt Versions tab and click Add:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746677264-76b242c1-0610-4b88-b9f0-e30fa0100f09.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746677264_76b242c1_0610_4b88_b9f0_e30fa0100f09.png)
 
 In the directory `/opt/arago-2023.04/sysroots/x86_64-arago-linux/usr/bin`, find `qmake`. After selecting it, click “Open”. After adding it, the following display will appear. Then click “Apply”.
 
@@ -448,7 +448,7 @@ In the directory `/opt/arago-2023.04/sysroots/x86_64-arago-linux/usr/bin`, find 
 
 Click on the “Kits” tab, then click “Add” on the right - hand side to add a new kit. Modify it according to the content in the following figure and click “Apply”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746677542-da4e5be1-fbb1-47db-ace1-59a5f00bd0cd.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746677542_da4e5be1_fbb1_47db_ace1_59a5f00bd0cd.png)
 
 **Note:** **After configuring Kits, there is a yellow exclamation mark in front of it, indicating that there is a warning, but it does not affect the use. If you want to know what the warning is, you can put the mouse over the yellow exclamation mark.**
 
@@ -903,27 +903,27 @@ forlinx@ubuntu: ~/62xx/qtcreator-5.14.2/Tools/QtCreator/bin $ sudo ./qtcreator
 
 Click Qt Creator File->Open File or Project, a pop-up window will appear, select /home/forlinx/62xx/OK62xx-linux-sdk/appsrc/forlinx-qt/fltest\_qt\_backlight/fltest\_qt\_backlight.pro, click open, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746677857-028a5f9f-03a4-4570-a927-0f4d3e9a96ad.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746677857_028a5f9f_03a4_4570_a927_0f4d3e9a96ad.png)
 
 The Configure Project window pops up, select the 62xx configured before, and click Configure Project, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746678099-c206a5e5-b7d2-4137-9079-f09c315045a9.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746678099_c206a5e5_b7d2_4137_9079_f09c315045a9.png)
 
 After opening the project, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746678346-5fffe395-e6ed-4e14-839e-75cded66640d.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746678346_5fffe395_e6ed_4e14_839e_75cded66640d.png)
 
 Click Build->Clean All to clear it. (If the intermediate file is not cleared, it can be deleted manually)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746678542-9e84e4df-9782-42b5-a904-376a9de10192.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746678542_9e84e4df_9782_42b5_a904_376a9de10192.png)
 
 Then click Build-> Build All to compile.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746678767-4c6bd364-b220-4ab5-9581-0915cbb44a0f.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746678767_4c6bd364_b220_4ab5_9581_0915cbb44a0f.png)
 
 The Build progress bar in the lower right corner means that the compilation is complete. At this point in the path /home/forlinx/62xx/OK62xx-linux-sdk/appsrc/forlinx-qt/fltest\_qt\_backlight/ directory, you will see the newly generated binary file fltest\_qt\_ backlight, as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746679107-1a426271-3454-43f7-bb54-602b326a27ad.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746679107_1a426271_3454_43f7_bb54_602b326a27ad.png)
 
 Replace the method of running QT program in the desktop
 
@@ -1009,35 +1009,35 @@ forlinx@ubuntu:~ /62xx/qtcreator-5.14.2/Tools/QtCreator/bin $ sudo ./qtcreator
 
 Start the Qt Creator program, enter the Qt Creator interface, click "New Project" to create a new project:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746679351-75b0c25b-fda2-413e-9422-06013f5ea102.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746679351_75b0c25b_fda2_413e_9422_06013f5ea102.png)
 
 Select "Application"->"Qt Widgets Application", and then click "Choose" in the lower right corner:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746679591-002bd961-8f35-49c0-b10c-95bb3a70284b.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746679591_002bd961_8f35_49c0_b10c_95bb3a70284b.png)
 
 In the following interface, change the name of the new project to "helloworld", select the installation path /home/forlinx, and then click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746679858-a9ae8247-e6bd-49c3-885c-48a5ee0003d0.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746679858_a9ae8247_e6bd_49c3_885c_48a5ee0003d0.png)
 
 Select qmake and click Next to continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746680125-743cf9db-2220-4b75-86bf-894d6364e4e6.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746680125_743cf9db_2220_4b75_86bf_894d6364e4e6.png)
 
 In the following screen, change the class name to "helloworld", select the base class to "Qwidget", and then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746680360-998ad1e1-b34f-4634-bc60-83f7325aa3a6.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746680360_998ad1e1_b34f_4634_bc60_83f7325aa3a6.png)
 
 In the following screen, select "62xx" as the kit of the current project, and then click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746680578-48932254-060b-426c-86e0-460e9385db93.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746680578_48932254_060b_426c_86e0_460e9385db93.png)
 
 In the following interface, click "Finish" to complete the new project:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746680770-359227b4-7077-4efe-aba5-bfc74bde8fb2.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746680770_359227b4_7077_4efe_aba5_bfc74bde8fb2.png)
 
 When the creation of the new project is complete, the following window can be displayed:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45205328/1717746681003-1ee978dc-2913-4588-9b5d-43ae14d7419f.png)
+![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746681003_1ee978dc_2913_4588_9b5d_43ae14d7419f.png)
 
 When the program is completed, click the hammer icon in the lower left corner to cross-compile. Copy the compiled executable program helloworld to the development board to test the application.
 
