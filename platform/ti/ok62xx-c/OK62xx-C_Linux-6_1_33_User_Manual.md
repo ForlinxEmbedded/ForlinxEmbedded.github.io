@@ -2196,7 +2196,7 @@ Click Stop to stop it.
 
 There is a delay with the OV5645 preview due to the software decoding used by the QT application.
 
-## **5. Development Board Multimedia Test**
+## 5. Development Board Multimedia Test
 
 ### **5.1 Camera Test**
 
