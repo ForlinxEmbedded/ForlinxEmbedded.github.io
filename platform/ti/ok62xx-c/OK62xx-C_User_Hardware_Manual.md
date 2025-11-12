@@ -1253,9 +1253,9 @@ Drive conflict. If you have any questions, please contact our sales or technical
 |                    | MMC2\_DAT2               |   IO    | MMC/SD/SDIO data     |         P4\_24         |
 |                    | MMC2\_DAT3               |   IO    | MMC/SD/SDIO data     |         P4\_26         |
 
-**1\. On the SoM, MMC1\_SDWP is used for the multiplexed function of eMMC. Therefore, this pin on the carrier board is left floating; If the pin resources on the SoM are insufficient and this pin must be used, please contact Forlinx to obtain the usage method;**
+On the SoM, MMC1\_SDWP is used for the multiplexed function of eMMC. Therefore, this pin on the carrier board is left floating; If the pin resources on the SoM are insufficient and this pin must be used, please contact Forlinx to obtain the usage method.
 
-**2\. The signal level of the entire MMC2 group of pins is 1.8V. Pay attention to level matching when using them.**
+The signal level of the entire MMC2 group of pins is 1.8V. Pay attention to level matching when using them.
 
 #### 2.7.20 OSPI Interface Pin
 
@@ -1636,7 +1636,7 @@ The Main domain integrates user LEDs and user buttons together, facilitating use
 
 ![Image](./images/OK62xx-C_User_Hardware_Manual/1721209409798_6d9a27e9_10d0_4fe6_8e32_77d19520a29e.png)
 
-        MCU域设计了1个用户按键输入和4个用户LED。下图为MCU域原理：
+The MCU domain is designed with 1 x user key input and 4 x user LED. The following figure shows the principle of MCU domain:
 
 ![Image](./images/OK62xx-C_User_Hardware_Manual/1721209424571_3fca08a6_b9fa_4d10_a289_95a3368333e5.png)![Image](./images/OK62xx-C_User_Hardware_Manual/1721209424812_cd200075_d85d_45f0_bd47_dc9278002a04.png)
 
