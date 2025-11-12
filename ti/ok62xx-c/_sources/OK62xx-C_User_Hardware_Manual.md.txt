@@ -77,7 +77,7 @@ FET62xx-C SoM Appearance:
 
 ![Image](./images/OK62xx-C_User_Hardware_Manual/1720590441346_0bb3f67e_4a7b_4e75_bf5d_ddac24acc9b1.png)
 
-**Bottom **
+**Bottom**
 
 Structure size: 60mm × 38mm, size tolerance ± 0.13mm, single side of burr tolerance ± 0.2mm.
 
