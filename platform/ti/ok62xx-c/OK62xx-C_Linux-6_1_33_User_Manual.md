@@ -2516,7 +2516,7 @@ pic1.jpg  pic3.jpg  pic5.jpg  pic7.jpg  pic9.jpg
 
 Copy the picx. jpg to Windows and open it to see the photos taken.
 
-### 5.2 Play**/Record Test**
+### 5.2 Play/Record Test
 
 Compatible with NAU88C22 and ES8388 audio chips, before the playback recording test, please insert the prepared earphone into the earphone interface, and use the following command to test:
 
