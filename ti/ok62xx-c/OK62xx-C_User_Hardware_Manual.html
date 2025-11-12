@@ -3366,7 +3366,7 @@
 <td class="text-center"><p>PMIC_LPM_EN0</p></td>
 <td class="text-center"><p>-</p></td>
 <td class="text-center"><p>3.3V</p></td>
-<td><p>Dual function PMIC control output, low power mode (low level active) or PMIC enabled (high level active)</p></td>
+<td><p>Dual function PMIC control output,<br />low power mode (low level active) or PMIC enabled (high level active)</p></td>
 <td class="text-center"><p>PMIC_LPM_EN0</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>60</p></td>
@@ -3374,7 +3374,7 @@
 <td class="text-center"><p>VCC_3V3_SYS_PG</p></td>
 <td class="text-center"><p>-</p></td>
 <td class="text-center"><p>3.3V</p></td>
-<td><p>SoM VCC3V3 Power Good output, used to control the power on of the carrier board</p></td>
+<td><p>SoM VCC3V3 Power Good output,<br />used to control the power on of the carrier board</p></td>
 <td class="text-center"><p>VCC_3V3_SYS_PG</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>62</p></td>
@@ -6791,7 +6791,7 @@
 <tr class="row-even"><td><p></p></td>
 <td><p>CLKOUT0</p></td>
 <td class="text-center"><p>O</p></td>
-<td><p>RMII clock output (50 MHz). This pin is used as the clock source for the external RMII PHY, and it must also be routed back to the corresponding RMII[x]_REF_CLK pin to enable the device to operate properly.</p></td>
+<td><p>RMII clock output (50 MHz).<br />This pin is used as the clock source<br />for the external RMII PHY, and it must also be routed back to the<br />corresponding RMII[x]_REF_CLK pin to enable the device to operate properly.</p></td>
 <td class="text-center"><p>P2_60</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
@@ -6809,7 +6809,7 @@
 <tr class="row-odd"><td><p></p></td>
 <td><p>OBSCLK0</p></td>
 <td class="text-center"><p>O</p></td>
-<td><p>Main domain watch clock output for test and debug purposes only</p></td>
+<td><p>Main domain watch clock output for test<br />and debug purposes only</p></td>
 <td class="text-center"><p>P2_50*<sup>1</sup><br/>P3_56</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
@@ -6833,7 +6833,7 @@
 <tr class="row-odd"><td><p></p></td>
 <td><p>SYSCLKOUT0</p></td>
 <td class="text-center"><p>O</p></td>
-<td><p>Main domain system clock output for test and debug purposes only (divide-by-4)</p></td>
+<td><p>Main domain system clock output for<br />test and debug purposes only (divide-by-4)</p></td>
 <td class="text-center"><p>P2_60</p></td>
 </tr>
 </tbody>
@@ -7373,12 +7373,12 @@
 <tr class="row-odd"><td class="text-center"><p>-</p></td>
 <td class="text-center"><p>Segment Identification</p></td>
 <td class="text-center"><p>-</p></td>
-<td><p>When the first digit of the CPU value is a letter, connect the product line identifier to the CPU with “-”; when the first digit of the CPU value is a number, omit “-“.</p></td>
+<td><p>When the first digit of the CPU value is a letter,<br />connect the product line identifier to the CPU with “-“;<br />when the first digit of the CPU value is a number, omit “-“.</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>B</p></td>
 <td class="text-center"><p>CPU Name</p></td>
 <td class="text-center"><p>62xx</p></td>
-<td><p>xx stands for the same carrier board that can be adapted to SoMs with different configurations</p></td>
+<td><p>xx stands for the same carrier board that can be<br />adapted to SoMs with different configurations</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>-</p></td>
 <td class="text-center"><p>Segment Identification</p></td>
@@ -7413,7 +7413,7 @@
 <tr class="row-odd"><td class="text-center"><p>:</p></td>
 <td class="text-center"><p>Internal Identification of the Manufacturer</p></td>
 <td class="text-center"><p>：</p></td>
-<td><p>This is the internal identification of the manufacturer and has no impact on the use.</p></td>
+<td><p>This is the internal identification of the manufacturer<br />and has no impact on the use.</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>G</p></td>
 <td class="text-center"><p>Connector origin</p></td>
@@ -7602,17 +7602,27 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BOOTMODE[02:00]: Configuration related to the CPU PLL. On the core board, it is configured as BOOTMODE[02:00] = 011. There is no need to repeat the configuration on the baseboard.
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BOOTMODE[02:00]: Configuration related to the CPU PLL. On the core board,
+it is configured as BOOTMODE[02:00] = 011.
+There is no need to repeat the configuration on the baseboard.
 
-BOOTMODE[03:06]: Requested boot (primary) mode after POR, that is, the peripheral/memory from which to boot. The default configuration on the core board is BOOTMODE[03:06] = 0001.
+BOOTMODE[03:06]: Requested boot (primary) mode after POR, that is,
+the peripheral/memory from which to boot.
+The default configuration on the core board is BOOTMODE[03:06] = 0001.
 
-BOOTMODE[07:09]: These pins provide optional configurations for the primary boot and are used in combination with the selected boot mode. The default configuration on the core board is BOOTMODE[07:09] = 000.
+BOOTMODE[07:09]: These pins provide optional configurations for the primary boot
+and are used in combination with the selected boot mode.
+The default configuration on the core board is BOOTMODE[07:09] = 000.
 
-BOOTMODE[10:12]: Select the backup boot mode, that is, if the primary boot device fails, boot from the backup peripheral/memory. The default configuration on the core board is BOOTMODE[10:12] = 011.
+BOOTMODE[10:12]: Select the backup boot mode, that is, if the primary boot device fails,
+boot from the backup peripheral/memory.
+The default configuration on the core board is BOOTMODE[10:12] = 011.
 
-BOOTMODE[13]: Optional configuration for the backup boot mode, used in combination with the selected boot mode. The default configuration on the core board is BOOTMODE[13]: 0.
+BOOTMODE[13]: Optional configuration for the backup boot mode, used in combination with
+the selected boot mode. The default configuration on the core board is BOOTMODE[13]: 0.
 
-BOOTMODE[14:15]: Reserved pins. The default configuration on the core board is BOOTMODE[14:15] = 00.
+BOOTMODE[14:15]: Reserved pins. The default configuration on the core board is
+BOOTMODE[14:15] = 00.
 
 The following table shows the Primary Boot Mode Selection:
 </pre></div>
