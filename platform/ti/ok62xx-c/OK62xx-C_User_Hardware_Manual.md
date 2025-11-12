@@ -603,8 +603,8 @@ Drive conflict. If you have any questions, please contact our sales or technical
 |  52   |    \-    |     PORZ\_OUT     |    \-     |   3.3V    | Main domain POR status output                                |      PORZ\_OUT       |
 |  54   |    \-    |    RESETSTATZ     |    \-     |   3.3V    | Main domain hot reset state output                           |      RESETSTATZ      |
 |  56   |    \-    |        GND        |    \-     |    \-     | Ground                                                       |         GND          |
-|  58   |    \-    |  PMIC\_LPM\_EN0   |    \-     |   3.3V    | Dual function PMIC control output, low power mode (low level active) or PMIC enabled (high level active) |    PMIC\_LPM\_EN0    |
-|  60   |    \-    | VCC\_3V3\_SYS\_PG |    \-     |   3.3V    | SoM VCC3V3 Power Good output, used to control the power on of the carrier board |  VCC\_3V3\_SYS\_PG   |
+|  58   |    \-    |  PMIC\_LPM\_EN0   |    \-     |   3.3V    | Dual function PMIC control output,<br />low power mode (low level active) or PMIC enabled (high level active) |    PMIC\_LPM\_EN0    |
+|  60   |    \-    | VCC\_3V3\_SYS\_PG |    \-     |   3.3V    | SoM VCC3V3 Power Good output,<br />used to control the power on of the carrier board |  VCC\_3V3\_SYS\_PG   |
 |  62   |    \-    |        GND        |    \-     |    \-     | Ground                                                       |         GND          |
 |  64   |    \-    |        GND        |    \-     |    \-     | Ground                                                       |         GND          |
 |  66   |    \-    |        GND        |    \-     |    \-     | Ground                                                       |         GND          |
@@ -1298,14 +1298,14 @@ Drive conflict. If you have any questions, please contact our sales or technical
 | ------------- | ------------------- | :-----: | ------------------------------------------------------------ | :--------------------------: |
 | System Signal | AUDIO\_EXT\_REFCLK0 |   IO    | External clock input to or from McASP                        |   P2\_67 <br/>P3\_67<br/>    |
 |               | AUDIO\_EXT\_REFCLK1 |   IO    | External clock input to or from McASP                        |    P2\_69<br/>P2\_76<br/>    |
-|               | CLKOUT0             |    O    | RMII clock output (50 MHz). This pin is used as the clock source for the external RMII PHY, and it must also be routed back to the corresponding RMII\[x]\_REF\_CLK pin to enable the device to operate properly. |            P2\_60            |
+|               | CLKOUT0             |    O    | RMII clock output (50 MHz).<br />This pin is used as the clock source<br />for the external RMII PHY, and it must also be routed back to the<br />corresponding RMII\[x]\_REF\_CLK pin to enable the device to operate properly. |            P2\_60            |
 |               | EXTINTn             |    I    | External interrupt input                                     |            P4\_48            |
 |               | EXT_REFCLK1         |    I    | External clock input to the Main domain                      |            P2_60             |
-|               | OBSCLK0             |    O    | Main domain watch clock output for test and debug purposes only | P2_50*<sup>1</sup><br/>P3_56 |
+|               | OBSCLK0             |    O    | Main domain watch clock output for test<br />and debug purposes only | P2_50*<sup>1</sup><br/>P3_56 |
 |               | PORz_OUT            |    O    | Main domain POR status output                                |            P4_52             |
 |               | RESETSTATz          |    O    | Main domain RESET status output                              |            P4_54             |
 |               | RESET_REQz          |    I    | Main domain external hot reset request input                 |            P4_50             |
-|               | SYSCLKOUT0          |    O    | Main domain system clock output for test and debug purposes only (divide-by-4) |            P2\_60            |
+|               | SYSCLKOUT0          |    O    | Main domain system clock output for<br />test and debug purposes only (divide-by-4) |            P2\_60            |
 
 The default function of this pin is I2C0, and multiple devices are mounted on the SoM, so it is floated by default.
 
@@ -1455,15 +1455,15 @@ A-B-C+DEF:G
 | Field |              Field Description              | Value | Description                                                  |
 | :---: | :-----------------------------------------: | :---: | ------------------------------------------------------------ |
 |   A   |         Product Line Identification         |  OK   | Forlinx Embedded development board                           |
-|  \-   |           Segment Identification            |  \-   | When the first digit of the CPU value is a letter, connect the product line identifier to the CPU with "-"; when the first digit of the CPU value is a number, omit "-". |
-|   B   |                  CPU Name                   | 62xx  | xx stands for the same carrier board that can be adapted to SoMs with different configurations |
+|  \-   |           Segment Identification            |  \-   | When the first digit of the CPU value is a letter,<br />connect the product line identifier to the CPU with "-";<br />when the first digit of the CPU value is a number, omit "-". |
+|   B   |                  CPU Name                   | 62xx  | xx stands for the same carrier board that can be<br />adapted to SoMs with different configurations |
 |  \-   |           Segment Identification            |  \-   | Parameter segment sign                                       |
 |   C   |                 Connection                  |   C   | Board to Board Connector                                     |
 |  \+   |           Segment Identification            |  \+   | The configuration parameter section follows this identifier. |
 |   D   |                    Type                     |   M   | Carrier board(Note: carrier board identification M, not filled by default) |
 |   E   |            Operating Temperature            |   I   | -40 to 85℃   industrial  level                               |
 |   F   |                 PCB Version                 |  12   | V1.2                                                         |
-|   :   | Internal Identification of the Manufacturer |  ：   | This is the internal identification of the manufacturer and has no impact on the use. |
+|   :   | Internal Identification of the Manufacturer |  ：   | This is the internal identification of the manufacturer<br />and has no impact on the use. |
 |   G   |              Connector origin               |   1   | Imported connector                                           |
 
 ### 3.4 Carrier Board Resources
@@ -1551,17 +1551,27 @@ BOOTMODE Pin Mapping：
 | -------- | -------- | :--------------------: | :--------------: | :--: | :--: | :----------------------: | :--: | :--: | :---------------: | :--------: | :--: | :--: | :--: | :--: | :--: |
 | Reserved | Reserved | BackupBoot Mode Config | Backup Boot Mode |      |      | Primary Boot Mode Config |      |      | Primary Boot Mode | PLL Config |      |      |      |      |      |
 
-    BOOTMODE[02:00]: Configuration related to the CPU PLL. On the core board, it is configured as BOOTMODE[02:00] = 011. There is no need to repeat the configuration on the baseboard.
+    BOOTMODE[02:00]: Configuration related to the CPU PLL. On the core board,
+    it is configured as BOOTMODE[02:00] = 011.
+    There is no need to repeat the configuration on the baseboard.
     
-    BOOTMODE[03:06]: Requested boot (primary) mode after POR, that is, the peripheral/memory from which to boot. The default configuration on the core board is BOOTMODE[03:06] = 0001.
+    BOOTMODE[03:06]: Requested boot (primary) mode after POR, that is,
+    the peripheral/memory from which to boot.
+    The default configuration on the core board is BOOTMODE[03:06] = 0001.
     
-    BOOTMODE[07:09]: These pins provide optional configurations for the primary boot and are used in combination with the selected boot mode. The default configuration on the core board is BOOTMODE[07:09] = 000.
+    BOOTMODE[07:09]: These pins provide optional configurations for the primary boot
+    and are used in combination with the selected boot mode.
+    The default configuration on the core board is BOOTMODE[07:09] = 000.
     
-    BOOTMODE[10:12]: Select the backup boot mode, that is, if the primary boot device fails, boot from the backup peripheral/memory. The default configuration on the core board is BOOTMODE[10:12] = 011.
+    BOOTMODE[10:12]: Select the backup boot mode, that is, if the primary boot device fails,
+    boot from the backup peripheral/memory.
+    The default configuration on the core board is BOOTMODE[10:12] = 011.
     
-    BOOTMODE[13]: Optional configuration for the backup boot mode, used in combination with the selected boot mode. The default configuration on the core board is BOOTMODE[13]: 0.
+    BOOTMODE[13]: Optional configuration for the backup boot mode, used in combination with
+    the selected boot mode. The default configuration on the core board is BOOTMODE[13]: 0.
     
-    BOOTMODE[14:15]: Reserved pins. The default configuration on the core board is BOOTMODE[14:15] = 00.
+    BOOTMODE[14:15]: Reserved pins. The default configuration on the core board is
+    BOOTMODE[14:15] = 00.
     
     The following table shows the Primary Boot Mode Selection:
 
