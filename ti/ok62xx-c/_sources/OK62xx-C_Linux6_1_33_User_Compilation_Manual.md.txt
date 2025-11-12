@@ -75,23 +75,15 @@ Step 8: After installing it, you can click "Finish" for trial. If you need to us
 
 ![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661361_a7d02439_7969_446a_856d_b1c84eceeb19.png)
 
-![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661605_9a54a96e_8eae_4bf5_bd7d_15932cb21a7d.png)
-
 You can also click "Skip". After completion, open the VMware software, click "Help" in the status card above, and enter the license key in the pop-up window.
 
 ![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746661866_0c0a6aef_ee23_448c_acc4_00b176133040.png)
-
-![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746662162_e9a6a2ac_760e_45e5_99fd_1437ffc2283d.png)
 
 ### 1.3 VMware Network Connection
 
 By default, after the virtual machine is installed, the network connection method is set to NAT, which shares the host machine's IP address. This configuration does not need to be changed when performing tasks like installing dependencies or compiling code.
 
 In the virtual machine, when the VMware virtual network card is set to NAT mode, the network in the Ubuntu environment can be set to dynamic IP. In this mode, the virtual NAT device is connected to the host network card to communicate with the Internet. This is the most commonly used way for our virtual machine to access the external network.
-
-
-
-![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746662377_128b6a27_fec1_45fd_953f_c94a1a9e4aa2.png)
 
 ## 2\. Loading the Existing Ubuntu Development Environment
 
@@ -170,8 +162,6 @@ Select “Install program from disc image file”, then click “Next”；
 ![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746664826_deed06fe_61d1_429c_9ab1_0ead189277d8.png)
 
 Enter full name, user name and password and click "Next":
-
-![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746665039_c114a239_dc5a_4568_9b06_bcb4eb3d6973.png)
 
 Enter the virtual machine name and configuration installation location, and click "Next":
 
@@ -298,8 +288,6 @@ Solution:
 Solution:
 
 The virtual machine does not have enough memory to run the maximum requirement of the image. Increase the memory of the virtual machine and restart the virtual machine.
-
-![Image](./images/OK62xx-C_Linux6_1_33_User_Compilation_Manual/1717746671406_4bc29fd2_c64c_477a_9a3a_b8fc3e82d0b1.png)
 
 ### 3.2 Ubuntu Common Software Installation
 
