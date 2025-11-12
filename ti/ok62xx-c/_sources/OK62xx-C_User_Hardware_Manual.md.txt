@@ -620,19 +620,13 @@ Drive conflict. If you have any questions, please contact our sales or technical
 
 **Note:**
 
-**All the pin functions of the SoM are specified according to the "Default Functions" in the following table, please do not modify them, otherwise, they may conflict with the factory driver. Please contact us with any questions in time.**
+- **All the pin functions of the SoM are specified according to the "Default Functions" in the following table, please do not modify them, otherwise, they may conflict with the factory driver. Please contact us with any questions in time;**
 
-****
+- **When you have requirements for multiple function expansions, please refer to the "FET62xx-C Pin Multiplexing Comparison Table" in the reference materials. However, if you need more detailed information, please consult relevant documentation, the chip data sheet, and the reference manual;**
 
-**When you have requirements for multiple function expansions, please refer to the "FET62xx-C Pin Multiplexing Comparison Table" in the reference materials. However, if you need more detailed information, please consult relevant documentation, the chip data sheet, and the reference manual.**
+- **The pins marked as "Do not use on carrier board" in the "Default Function" column are those already utilized by the SoM and should not be used in the design of the carrier board;**
 
-****
-
-**The pins marked as "Do not use on carrier board" in the "Default Function" column are those already utilized by the SoM and should not be used in the design of the carrier board.**
-
-****
-
-**"Signal Name" column defaults to SoM pin name, and the red mark is carrier board pin definition name.**
+- **"Signal Name" column defaults to SoM pin name, and the red mark is carrier board pin definition name.**
 
 #### 2.7.1 Power Pin
 
@@ -750,8 +744,6 @@ Drive conflict. If you have any questions, please contact our sales or technical
 |          |     GND     |      —      | Power ground                  |             P4_79             |
 
 #### 2.7.2 Boot Control Pin
-
-****
 
 **Note: Refer to "3.5.4 Boot Configuration" for boot startup configuration pin.**
 
