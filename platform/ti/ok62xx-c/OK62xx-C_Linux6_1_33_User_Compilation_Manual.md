@@ -31,7 +31,7 @@ The manual is mainly divided into four chapters:
 - Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64-bit Ubuntu 18.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;
 - Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.
 
-## **1. VMWare Virtual Machine Software Installation**
+## 1. VMWare Virtual Machine Software Installation
 
 ### **1.1 VMware Software Download and Purchase**
 
