@@ -6634,8 +6634,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>1. On the SoM, MMC1_SDWP is used for the multiplexed function of eMMC. Therefore, this pin on the carrier board is left floating; If the pin resources on the SoM are insufficient and this pin must be used, please contact Forlinx to obtain the usage method;</strong></p>
-<p><strong>2. The signal level of the entire MMC2 group of pins is 1.8V. Pay attention to level matching when using them.</strong></p>
+<p>On the SoM, MMC1_SDWP is used for the multiplexed function of eMMC. Therefore, this pin on the carrier board is left floating; If the pin resources on the SoM are insufficient and this pin must be used, please contact Forlinx to obtain the usage method.</p>
+<p>The signal level of the entire MMC2 group of pins is 1.8V. Pay attention to level matching when using them.</p>
 </section>
 <section id="ospi-interface-pin">
 <h4>2.7.20 OSPI Interface Pin<a class="headerlink" href="#ospi-interface-pin" title="Link to this heading"></a></h4>
@@ -7892,9 +7892,7 @@ The following table shows the Primary Boot Mode Selection:
 <p>The development board divides the user LEDs and user buttons into two domains, namely the Main domain and the MCU domain, corresponding to the relevant GPIOs of the Main and MCU domains of the SoM.</p>
 <p>The Main domain integrates user LEDs and user buttons together, facilitating users to test the input and output functions of GPIO. It should be noted that when testing the GPIO output function, do not press the key, otherwise the GPIO will be forced to a low level. The following figure shows the principle of the Main domain:</p>
 <p><img alt="Image" src="_images/1721209409798_6d9a27e9_10d0_4fe6_8e32_77d19520a29e.png" /></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    MCU域设计了1个用户按键输入和4个用户LED。下图为MCU域原理：
-</pre></div>
-</div>
+<p>The MCU domain is designed with 1 x user key input and 4 x user LED. The following figure shows the principle of MCU domain:</p>
 <p><img alt="Image" src="_images/1721209424571_3fca08a6_b9fa_4d10_a289_95a3368333e5.png" /><img alt="Image" src="_images/1721209424812_cd200075_d85d_45f0_bd47_dc9278002a04.png" /></p>
 </section>
 <section id="display-interface">
