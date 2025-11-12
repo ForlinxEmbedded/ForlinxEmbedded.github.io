@@ -1962,7 +1962,7 @@ root@ok62xx:~# fltest_gpio.sh 133 1                      // Set the GPIO to outp
 ​```
 ```
 
-## **4. Development Board Interface Function Test**
+## 4. Development Board Interface Function Test
 
 Based on the official BSP, Forlinx has done a lot of optimization on the display. The OK62xx-C platform has perfect support for display and can excel in the high-performance characteristics of the combination of architecture and proprietary acceleration hardware.
 
