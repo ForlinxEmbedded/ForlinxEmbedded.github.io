@@ -33,7 +33,7 @@ Target Applications:
 
 • Human - Machine Interface (HMI)
 
-• **Retail Automation**
+• Retail Automation
 
 • Driver Monitoring System (DMS/OMS)/Interior Monitoring (ICM)
 
