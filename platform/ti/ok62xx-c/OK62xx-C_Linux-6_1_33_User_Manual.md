@@ -10,19 +10,6 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-## Overview
-
-This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the user's understanding, mainly for practical use.
-
-There are total six chapters:
-
-+ Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;
-+ Chapter 2. is the fast boot/startup of the product, which can adopt two ways of serial port login and network login;
-+ Chapter 3. is the command line operation of the product for functional testing.
-+ Chapter 4. is QT interface function test of the product;
-+ Chapter 5. is the multimedia test of the product, including the playback test of the camera and the video hardware codec test;
-+ Chapter 6. is the image update of the product, which mainly describes the method of updating the image to the storage device. Users can choose the corresponding flashing mode according to the actual situation.
-
 ## Application Scope
 
 This manual is mainly applicable to the Linux6.1.33 operating system on the Forlinx OK6254\&OK6232\&OK6231 platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
@@ -32,6 +19,19 @@ This manual is mainly applicable to the Linux6.1.33 operating system on the Forl
 | Date       | User Manual Version | Revision History |
 | ---------- | ------------------- | ---------------- |
 | 11/06/2024 | V1.0                | Initial Version  |
+
+## Overview
+
+This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate your understanding, mainly for practical use.
+
+There are total six chapters:
+
++ Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;
++ Chapter 2. is the fast boot/startup of the product, which can adopt two ways of serial port login and network login;
++ Chapter 3. is the command line operation of the product for functional testing.
++ Chapter 4. is QT interface function test of the product;
++ Chapter 5. is the multimedia test of the product, including the playback test of the camera and the video hardware codec test;
++ Chapter 6. is the image update of the product, which mainly describes the method of updating the image to the storage device. Users can choose the corresponding flashing mode according to the actual situation.
 
 ## 1. OK62xx Development Board Description
 
@@ -152,7 +152,9 @@ OK62xx login: root
 
 ```plain
 root@OK62xx:~#cat  /proc/version
-Linux version 6.1.33-g0ea564278f1c (aarch64-none-linux-gnu-gcc (Arm GNU Toolchain 11.3.Rel1) 11.3.1 20220712, GNU ld (Arm GNU Toolchain 11.3.Rel1) 2.38.20220708) #1 SMP PREEMPT Mon Oct  9 11:11:30 UTC 2023
+Linux version 6.1.33-g0ea564278f1c (aarch64-none-linux-gnu-gcc (Arm GNU Toolchain
+11.3.Rel1) 11.3.1 20220712, GNU ld (Arm GNU Toolchain 11.3.Rel1) 2.38.20220708) #1 SMP
+PREEMPT Mon Oct  9 11:11:30 UTC 2023
 ```
 
 From the printed information, you can see the SoM is flashed with linux 6.1. 33 related images.
@@ -178,7 +180,7 @@ Common problem troubleshooting points for logging in using the serial port are a
 
 4\. If all of the above still does not work, check the status of the SoM LEDs. If it is always on, the system may not be able to start, then the system needs to be re-flashed.
 
-Case 2: Unable to input commands after connecting to the serial port.
+**Case 2:** Unable to input commands after connecting to the serial port.
 
 1\. Reopen the serial port;
 
@@ -642,9 +644,9 @@ Where \[heartbeat] indicates that the current trigger condition is the system he
 When the trigger condition of the led is set to none, the user can control the on and off of the led through the command.
 
 ```plain
-root@ok62xx:/# echo none > /sys/class/leds/heartbeat/trigger   //设置触发条件
-root@ok62xx:/# echo 1 > /sys/class/leds/heartbeat/brightness   //点亮led灯
-root@ok62xx:/# echo 0 > /sys/class/leds/heartbeat/brightness   //熄灭led灯
+root@ok62xx:/# echo none > /sys/class/leds/heartbeat/trigger //Set the trigger conditions
+root@ok62xx:/# echo 1 > /sys/class/leds/heartbeat/brightness   //Turn on the led
+root@ok62xx:/# echo 0 > /sys/class/leds/heartbeat/brightness   //Turn off the led
 ```
 
 3\. Change the blue LED to a heartbeat light.
@@ -778,7 +780,7 @@ flash_erase: 1000 : Cleanmarker Updated.
 flash_erase: 2000 : Cleanmarker Updated.
 flash_erase: 3000 : Cleanmarker Updated.
 flash_erase: 4000 : Cleanmarker Updated.
-……//省略不重要信息
+……//Omit the unimportant information
 flash_erase: ffc000 : Cleanmarker Updated.
 flash_erase: ffd000 : Cleanmarker Updated.
 flash_erase: ffe000 : Cleanmarker Updated.
@@ -948,7 +950,7 @@ TX: bytes  packets  errors  dropped carrier collsns
 0          0        0       0       0       0   
 ```
 
-4. Set can to canfd mode:
+6. Set can to canfd mode:
 
 Set up the can0 service for both development boards as follows:
 
@@ -971,7 +973,7 @@ Watchdog is a function that is often used in embedded systems. The device node o
 | Executable file         | <font style="color:rgb(0,0,0);">Meaning</font>               | Source code path Name                                        |
 | :---------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | <fltest\_watchdog       | Turn on the watchdog, set the<br />reset time, and feed the dog at a<br />timer of 1s. | OK62xx-linux-sdk/appsrc/forlinx-<br />cmd/watchdog/watchdog.c |
-| fltest\_watchdogrestart | Turn on the watchdog, but do not perform the feed dog operation, the system will reboot after 10s | OK62xx-linux-sdk/appsrc/forlinx-<br />cmd/watchdogrestart/watchdogrestart.c |
+| fltest\_watchdogrestart | Turn on the watchdog, but do not perform the feed dog operation,<br />the system will reboot after 10s | OK62xx-linux-sdk/appsrc/forlinx-<br />cmd/watchdogrestart/watchdogrestart.c |
 
 Enable watchdog
 
@@ -1069,7 +1071,7 @@ root@ok62xx:~#
 
 Being able to ping indicates that the network can be used normally at this time.
 
-### **3.9 AP Mode**
+### **3.10 AP Mode**
 
 **Note: Before this test, it is necessary to ensure that the Gigabit NIC eth0 is connected to the network and normal.**
 
@@ -1101,7 +1103,7 @@ uap0: interface state UNINITIALIZED->ENABLED
 uap0: AP-ENABLED
 ```
 
-### **3.10 RTC Function Test**
+### **3.11 RTC Function Test**
 
 RTC test mainly involves setting the software and hardware time using the "date" and "hwclock" tools. The purpose is to test whether the software clock can synchronize with the RTC clock when the development board is powered off and then powered on again. (Note: Make sure that a button battery is installed on the board and the battery voltage is normal.)
 
@@ -1139,7 +1141,7 @@ root@ok62xx:~# date
 Thu May 19 11:11:14 UTC 2022
 ```
 
-### **3.11 Bluetooth Test**
+### **3.12 Bluetooth Test**
 
 The **AW-CM358SM** of the OK62-C carrier board has integrated Bluetooth. This section demonstrates the use of Bluetooth for file transfer between the phone and the development board.
 
@@ -1313,16 +1315,17 @@ Connection successful
 
 ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744467169_17b42d1b_f701_4025_935d_1d0fc2a3a0e0.png)
 
-### **3.12 USB Interface Test**
+### **3.13 USB Interface Test**
 
-#### **3.12.1 USB Mouse Test**
+#### **3.13.1 USB Mouse Test**
 
 Connect the usb mouse to the usb interface of the OK62 platform, and the serial terminal prints the following information:
 
 ```plain
 [  257.039701] usb 1-1.2: USB disconnect, device number 3
 [  258.210804] usb 1-1.2: new low-speed USB device number 4 using xhci-hcd
-[  258.477925] input: USB OPTICAL MOUSE  as /devices/platform/bus@f0000/f910000.dwc3-usb/31100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.2/1-1.2:1.0/0003:30FA:0300.0002/input/input5
+[  258.477925] input: USB OPTICAL MOUSE as /devices/platform/bus@f0000/f910000.dwc3-
+usb/31100000.usb/xhci-hcd.2.auto/usb1/1-1/1-1.2/1-1.2:1.0/0003:30FA:0300.0002/input/input5
 [  258.493840] hid-generic 0003:30FA:0300.0002: input: USB HID v1.11 Mouse [USB OPTICAL MOUSE ] on usb-xhci-hcd.2.auto-1.2/input0
 ```
 
@@ -1336,11 +1339,13 @@ When the USB mouse is disconnected, the printout in the serial terminal is as fo
 
 The arrow cursor on the screen disappears and the mouse is successfully removed.
 
-#### **3.12.2 USB2.0**
+#### **3.13.2 USB2.0**
 
-**Note: To make sure the data is accurate, please restart the development board and test the reading speed.**
+**Note: **
 
-**Exit the USB flash driver mounting path and then plug and unplug the USB flash driver.**
+- **To make sure the data is accurate, please restart the development board and test the reading speed;**
+
+- **Exit the USB flash driver mounting path and then plug and unplug the USB flash driver.**
 
 Ok62xx supports two USB2.0 interfaces. You can connect USB mice, USB keyboards, U disks and other devices to any on-board USB HOST interface, and support hot plugging of these devices. Here is an example of mounting a USB flash disk for demonstration:
 
@@ -1406,7 +1411,7 @@ root@ok62xx:~#dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
 52428800 bytes (52 MB, 50 MiB) copied, 1.78257 s, 29.4 MB/s
 ```
 
-#### **3.12.3 OTG Test**
+#### **3.13.3 OTG Test**
 
 The carrier board uses the USB1 led out from the SoM as a USB 2.0 OTG, which can be used as an OTG interface.
 
@@ -1480,7 +1485,7 @@ After opening, the file contents are as follows:
 
 ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744539303_2ce559d9_87d0_4d34_a47c_46f5a079a12c.png)
 
-### **3.13 LCD Backlight Adjustment**
+### **3.14 LCD Backlight Adjustment**
 
 Backlight level range (0--255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test. Take LCD screen backlight as an example.
 
@@ -1505,7 +1510,7 @@ root@ok62xx:~#echo 0 >/sys/class/backlight/backlight-rgb/brightness
 root@ok62xx:~#echo 100 >/sys/class/backlight/backlight-rgb/brightness
 ```
 
-### **3.14 TF Test**
+### **3.15 TF Test**
 
 **Note: To make sure the data is accurate, please restart the development board and test the reading speed. Exit the TF card mount path and then plug and unplug the TF card.**
 
@@ -1525,9 +1530,9 @@ By default, the TF card is mounted to the file system/run/media/directory
 View the mount directory:
 
 ```plain
-root@ok62xx:~ # ls /run/media///列出/run/media目录下的文件
+root@ok62xx:~ # ls /run/media///List files in the/run/media directory
 mmcblk1p1 mmcblk1p2
-root@OK62xx:~ # mount | grep mmcblk1//在挂载信息中找到与mmcblk1有关的
+root@OK62xx:~ # mount | grep mmcblk1//Found in the mount information for mmcblk1
 /dev/mmcblk1p1 on /run/media/mmcblk1p1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
 /dev/mmcblk1p2 on /run/media/mmcblk1p2 type ext4 (rw,relatime)
 ```
@@ -1556,7 +1561,7 @@ root@ok62xx:~# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M iflag=direct
 root@ok62xx:~#umount /run/media/mmcblk1p1
 ```
 
-### **3.15 EMMC Test**
+### **3.16 EMMC Test**
 
 **Note: To make sure the data is accurate, please restart the development board and test the reading speed.**
 
@@ -1580,7 +1585,7 @@ root@ok62xx:~#dd if=/test of=/dev/null bs=1M count=500 conv=sync
 524288000 bytes (524 MB, 500 MiB) copied, 3.13548 s, 167 MB/s
 ```
 
-### **3.16 Ethernet Configuration**
+### **3.17 Ethernet Configuration**
 
 OK62xx-C has 2 x Gigabit NIC on-board, if you plug in a network cable to connect to the network, the OK62-C development board will acquire IP when it starts up.
 
@@ -1619,13 +1624,13 @@ DNS is used to specify domain name resolution servers.
 
 Use automatic IP acquisition: Delete/etc/systemd/network/10-eth.network
 
-### **3.17 Web Services**
+### **3.18 Web Services**
 
 The OK62xx development board comes pre - installed with lighttpd (a web server), and the lighttpd service is automatically started when the system boots up. You can browse the web pages on the development board's web server by entering the IP address of the development board (the IP address should be in the same network segment) in the browser of a PC, as shown in the following figure.
 
 ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717744902448_c2f446a0_4167_4bf9_86bc_779770539e8e.png)
 
-### **3.18 4G/5G Test**
+### **3.19 4G/5G Test**
 
 OK62xx supports 4G module EM05-CE, 5G module RM500U-CN and RM500Q-GL. Take the 4G module as an example for testing. The process of the 5G module is the same as that of the 4G module, here will not repeat it. Before starting the development board, connect the 4G module (Carrier board P24 slot) and insert the SIM card to start the development board.
 
@@ -1706,7 +1711,7 @@ PING www.baidu.com (110.242.68.3): 56 data bytes
 round-trip min/avg/max = 59.293/176.040/447.500 ms
 ```
 
-### 3.19 DDR Bandwidth Test
+### 3.20 DDR Bandwidth Test
 
 ```plain
 root@ok62xx:~# fltest_memory_bandwidth.sh
@@ -1752,7 +1757,7 @@ The DDR4 bandwidth of the OK6254-C is shown in the figure above, with a read ban
 
 The read bandwidth of DDR4 on the OK6231/6232 - C is approximately 1280 M/s, and the write bandwidth is approximately 870 M/s.
 
-### **3.20 SQLite3 Test**
+### **3.21 SQLite3 Test**
 
 QLite3 is a lightweight, ACID-compliant relational database management system with a low footprint. The OK62-C development board is ported with version 3.31.1 of sqlit3.
 
@@ -1778,7 +1783,7 @@ sqlite> .quit			                                        // Exit the database (or
 ​``` 
 ```
 
-### **3.21 Closing the Desktop**
+### **3.22 Closing the Desktop**
 
 Open or close the desktop :
 
@@ -1787,7 +1792,7 @@ root@ok62xx:~# /etc/init.d/matrix-gui-2.0 stop                      //Turn on th
 root@ok62xx:~# /etc/init.d/matrix-gui-2.0 start                    //Turn off the desktop
 ```
 
-### **3.22 Openssl**
+### **3.23 Openssl**
 
 The OK62xx-C contains a hardware encryption acceleration module.
 
@@ -1806,7 +1811,23 @@ Forked child 2
 engine "devcrypto" set.
 Forked child 3
 …….
-compiler: aarch64-none-linux-gnu-gcc  --sysroot=recipe-sysroot -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=                      -fdebug-prefix-map=                      -fdebug-prefix-map=                      -fdebug-prefix-map=  -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG
+compiler: aarch64-none-linux-gnu-gcc  --sysroot=recipe-sysroot -O2 -pipe -g -feliminate-unused-debug-types 
+-fmacro-prefix-map=
+-fdebug-prefix-map=                      
+-fdebug-prefix-map=                      
+-fdebug-prefix-map=  
+-DOPENSSL_USE_NODELETE 
+-DOPENSSL_PIC 
+-DOPENSSL_CPUID_OBJ 
+-DOPENSSL_BN_ASM_MONT 
+-DSHA1_ASM 
+-DSHA256_ASM 
+-DSHA512_ASM 
+-DKECCAK1600_ASM 
+-DVPAES_ASM 
+-DECP_NISTZ256_ASM 
+-DPOLY1305_ASM 
+-DNDEBUG
 evp               4515.05k    25724.75k   199024.08k   664772.77k  2116311.82k  2443059.21k
 ```
 
@@ -1837,10 +1858,10 @@ root@ok62xx:~# insmod /lib/modules/`uname -r`/kernel/crypto/tcrypt.ko mode=500 s
 …
 [  592.973938] tcrypt: test 17 (288 bit key, 8192 byte blocks): 84755 operations in 1 seconds (694312960 bytes)
 [ 1151.831378] tcrypt: failed to load transform for ofb(aes): -2
-[ 1151.848319] tcrypt: failed to load transform for ofb(aes): -2 该错误不影响
+[ 1151.848319] tcrypt: failed to load transform for ofb(aes): -2 This error does not affect
 ```
 
-**3.23 JVM**
+### **3.23 JVM**
 
 OK62xx-C supports java1.8.
 
@@ -2163,7 +2184,7 @@ Click picture to take a picture, and the picture will be saved in the/home/root/
 
 ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1718864608095_b0cd1b90_fcf0_4ebb_8834_cbe80f1d76a7.png)
 
-Note: The photo taking function can only be activated after starting the preview
+**Note: The photo taking function can only be activated after starting the preview.**
 
 Click Stop to stop it.
 
@@ -2258,7 +2279,7 @@ New clock: GstSystemClock
 
 You can see a preview of the camera on the screen.
 
-2\. Camera to Take Pictures
+2\. Camera to take pictures
 
 ```plain
 root@ok62xx:~# gst-launch-1.0 v4l2src device=/dev/video0 io-mode=2 num-buffers=10 ! video/x-raw,format=YUY2,width=640,height=480,framerate=30/1 ! jpegenc ! filesink location=pic.jpeg
@@ -2624,7 +2645,7 @@ Saving Environment to MMC... Writing to MMC(0)... OK
 =>
 ```
 
-1\. Turn off the power and pull out the SD card. Set the OK62xx DIP switch to the emmc boot mode, which will boot the system from the emmc when powered on again.
+Turn off the power and pull out the SD card. Set the OK62xx DIP switch to the emmc boot mode, which will boot the system from the emmc when powered on again.
 
 ### 6.2 USB DFU Flashing and Usage
 
@@ -2680,7 +2701,7 @@ If you need to update the kernel or device tree, compile the Linux kernel. At th
 
 The OK62xx - C platform supports USB disk flashing. First, you need to make a USB disk for flashing. Please use a USB disk with a capacity of 8G to 32G for flashing.
 
-Note: USB disk flashing only works for some USB disks and has a capacity limit (8G - 32G).
+**Note: USB disk flashing only works for some USB disks and has a capacity limit (8G - 32G).**
 
 The TI official errata sheet indicates that during the ROM stage, finding the USB disk may fail due to timing deviations, and there is no solution.
 
@@ -2695,7 +2716,7 @@ The following table shows the USB flash drives or adapter solutions that Forlinx
 |      **SanDisk 32G**       | **CZ73/CZ74/CZ50**  | ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726858687_e4cde17d_1cae_4523_9e9a_1be726ae2366.png)<br/>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726867295_543e5f95_5b6b_41cf_9db1_24ac2a20f9c6.png)<br/>![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726873774_c69109aa_28a9_4c1a_ae75_0fc311b6be31.png) |
 |   **S A M S U N G 32G**    |    **BAR Plus**     | ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726880680_c369a454_9626_47cc_8b77_d406ef0f1459.png) |
 | **Card reader to SD card** | **SanDisk 16G/18G** | ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1717726886957_2b615db0_a673_4b1c_ba86_7aa2cff74003.png) |
-| **Card reader to TF card** |   **SanDisk 16G**   |                        ![](image.png)                        |
+| **Card reader to TF card** |   **SanDisk 16G**   |                       ![Image](./images/OK62xx-C_Linux-6_1_33_User_Manual/1.png)                        |
 
 Copy the Ok62xx-linux-sdk/tools/bin/mksdboot. sh to the/usr/bin directory in the PC virtual machine. Connect the USB disk to the PC virtual machine. After the virtual machine recognizes the USB flash disk, execute the mksdboot.sh to format the TF card according to the prompt content.
 
