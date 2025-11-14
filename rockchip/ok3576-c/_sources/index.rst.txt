@@ -38,12 +38,14 @@ SOFTWARE
    OK3576-C_Android_14_User_Manual
    OK3576-C_Android14_User_Compilation_Manual
 
+
 APPLICATION NOTE
 -----------------
 
 .. toctree::
    :caption: APPLICATION NOTE
    :maxdepth: 2
+   
    RK Development Manual <https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html>
 
 
