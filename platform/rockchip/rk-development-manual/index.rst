@@ -9,9 +9,9 @@
    `Rockchip Series System On Module <https://www.forlinx.net/product-index-92.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
 
-======================
+=======================
 RK Development Manuals
-======================
+=======================
 
 RK Platform Developer Guide
 ----------------------------
