@@ -24,21 +24,21 @@ This article mainly focuses on adding a new ccc partition through the source cod
 
 1\. Modify the file /tools/linux/Linux\_Pack\_Firmware/rockdev/rk356x - package - file in the source code directory to add a new ccc partition.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979104969-4a0be18d-17c8-4b0d-91c0-ef9fb76f5cfe.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979104969_4a0be18d_17c8_4b0d_91c0_ef9fb76f5cfe.png)
 
 2\. Use the following command to create a new ccc.img in the /rockdev path of the source code:
 
 dd if=/dev/zero of=ccc.img bs=1M count=10（the ccc.img size is10M）
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979188335-a1f35378-6cac-49ef-8eee-7e543e57d11c.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979188335_a1f35378_6cac_49ef_8eee_7e543e57d11c.png)
 
 3\. Format ccc.img as ext2/ext4.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979281100-c4355920-3767-4bd4-a53f-02cfd306060a.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979281100_c4355920_3767_4bd4_a53f_02cfd306060a.png)
 
 4\. Add the corresponding partition ccc with a size of 0x5000 in OK3568 - linux - source/rockdev/parameter.txt.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979330355-c03af42d-c31f-4b9a-9dcb-72ab190e9038.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979330355_c03af42d_c31f_4b9a_9dcb_72ab190e9038.png)
 
 The method to calculate the partition size is as follows:
 
@@ -56,14 +56,14 @@ Each partition is 512 bytes.
 
 5\. Create a new ccc.img file using the mkdir command in the path /buildroot/board/forlinx/ok3568/fs - overlay of the source code.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979630243-bbbeef30-3b30-4333-89b7-0b39fb1d1a33.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979630243_bbbeef30_3b30_4333_89b7_0b39fb1d1a33.png)
 
 6\. Modify OK3568 - linux - sdk5.10/buildroot/output/OK3568/target/etc/fstab and add the content shown in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979671989-0af579a6-5033-4e45-b49e-b1d790f10f32.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979671989_0af579a6_5033_4e45_b49e_b1d790f10f32.png)
 
 7\. Verification Method
 
 Run ./build.sh buildroot to compile the file system separately, then run ./build.sh updateimg to package and generate the image. The update.img will be generated in the OK3568\_Linux\_fs/rockdev folder. You can see the ccc partition by running the command df -h on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1745979770888-b5059be7-cdb8-47f1-9f7d-535bd8f155b9.png)
+![Image](./images/OK3568_5_10_160_Buildroot_New_Partition_Addition/1745979770888_b5059be7_cdb8_47f1_9f7d_535bd8f155b9.png)
