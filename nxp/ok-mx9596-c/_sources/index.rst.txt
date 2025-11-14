@@ -20,6 +20,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK-MX9596-C_User_Hardware_Manual
 
 
 SOFTWARE 
