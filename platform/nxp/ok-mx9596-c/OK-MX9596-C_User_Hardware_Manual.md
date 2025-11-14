@@ -43,19 +43,19 @@ i.MX 95 application processor provides a rich set of peripherals targeted at the
 
 **i.MX95 Processor Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966457808-5c1ec3f2-6f6c-4f96-8095-937e72ed2b3f.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966457808_5c1ec3f2_6f6c_4f96_8095_937e72ed2b3f.jpg)
 
 ## 2\. FET-MX9596-C SoM Description
 
 ### 2.1 FET-MX9596-C SoM Appearance
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966459426-6e939994-0a73-41cc-80a7-9dd96e611f87.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966459426_6e939994_0a73_41cc_80a7_9dd96e611f87.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966459705-171fb950-b379-4283-b5c5-9b407a2f1e11.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966459705_171fb950_b379_4283_b5c5_9b407a2f1e11.png)
 
 ### 2.2 FET-MX9596-C SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966460101-1476d56a-c6ba-4ebc-b4d9-e8f7621d9bb5.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966460101_1476d56a_c6ba_4ebc_b4d9_e8f7621d9bb5.jpg)
 
 Structure size: 68mm × 50mm, dimensional tolerance ± 0.13mm, refer to DXF file for more dimensional information.
 
@@ -158,13 +158,13 @@ It is recommended to choose M2\_2mm patch nuts for fixing the SoM to the carrier
 
 #### 2.5.1 FET-MX9596-C SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966460216-e4b92623-9b99-4ab9-8f8b-fdbafb47acb0.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966460216_e4b92623_9b99_4ab9_8f8b_fdbafb47acb0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966460348-aedf2692-7f7b-42fc-8ad0-742002102852.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966460348_aedf2692_7f7b_42fc_8ad0_742002102852.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966460493-540f7120-fd0b-4548-901d-36cdb6823c87.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966460493_540f7120_fd0b_4548_901d_36cdb6823c87.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966460591-8fa23fc1-5342-42ef-9658-9f6ca9a43075.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966460591_8fa23fc1_5342_42ef_9658_9f6ca9a43075.png)
 
 #### 2.5.2 FET-MX9596-C SoM Pins Description
 
@@ -196,7 +196,7 @@ When users have multiple functional expansion requirements, they can refer to th
 
 FET- MX95xx SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 12V power supply, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966460787-448592b4-9b7b-4008-b5b4-b467d589ae1f.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966460787_448592b4_9b7b_4008_b5b4_b467d589ae1f.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, image flashing port, otherwise, users can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -208,11 +208,11 @@ Please refer to section 3.5 in “Chapter 3. OK-MX9596-C Carrier Board Descripti
 
 The connection of OK-MX9596-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/43555360/1761202186754-0e29c75a-9753-4fa5-bf18-49e573502195.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1761202186754_0e29c75a_9753_4fa5_bf18_49e573502195.png)
 
 ### 3.2 OK-MX9596-C SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966462669-f669a6ff-ea69-4e0a-9050-7d28983e0e3e.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966462669_f669a6ff_ea69_4e0a_9050_7d28983e0e3e.jpg)
 
 PCB Size: 130mm × 190mm
 
@@ -224,7 +224,7 @@ Power supply voltage: DC 12V.
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. The size of the SoM heat sink selected by Forlinx is: 38mm × 38mm × 10mm. There is also a fan on the heat sink to help heat dissipation. See the following figure for more detailed dimensions:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759127925089-1462c0e8-f21e-4a56-9584-8ffb730e3633.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1759127925089_1462c0e8_f21e_4a56_9584_8ffb730e3633.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -285,11 +285,11 @@ The EN pin of the MP8765 is pulled high by the VDD\_3V3 output from the SoM, so 
 
 This circuit is to ensure that the SoM is powered on first, and followed by the carrier board, so as to prevent the damage to the CPU caused by latch-up effects.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966462854-e3d3f736-e3cc-4287-978b-4ab0b38ea3d2.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966462854_e3d3f736_e3cc_4287_978b_4ab0b38ea3d2.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966462953-f6509063-f9ff-411b-8a93-3e5f6b65481c.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966462953_f6509063_f9ff_411b_8a93_3e5f6b65481c.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463082-8b45f6dc-f00e-43f3-b0ec-f0e363b8f7ee.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463082_8b45f6dc_f00e_43f3_b0ec_f0e363b8f7ee.jpg)
 
 #### 3.5.2 Power On/Off, Reset, and Sleep Keys
 
@@ -301,7 +301,7 @@ K3 is the power on/off key of the development board. Its function is similar to 
 
 **Note: The BTN\_WAKE, SYS\_RST\_B, and ONOFF pins can be left floating when not in use.**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463197-5cdbfa7a-0554-4477-9e66-c63886ceaf56.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463197_5cdbfa7a_0554_4477_9e66_c63886ceaf56.jpg)
 
 #### **3.5.3 Boot Configuration**
 
@@ -349,7 +349,7 @@ The system boot configuration switch on the development board is S2: right for o
 | NAND2K  |            | OFF  | ON   | ON   | ON   |
 | NAND4K  |            | OFF  | ON   | OFF  | OFF  |
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463298-3367178e-21aa-40c4-a1d3-441daaab05fa.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463298_3367178e_21aa_40c4_a1d3_441daaab05fa.jpg)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -359,15 +359,15 @@ UART1 is the Cortex-A55 debug serial port, 2-wire, 3.3 V level; UART2 is the Cor
 
 The debugging serial port signal of the SoM first passes through a buffer chip and then an adapter chip before reaching the TYPE - C interface. This setup ensures that there is no electrical leakage between the SoM and the carrier board when the debugging serial port is plugged in while the carrier board is unpowered.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463411-f65299dd-bde2-4602-b1df-3a813b6d49ed.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463411_f65299dd_bde2_4602_b1df_3a813b6d49ed.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463502-27148f51-849e-49cd-b994-503744710d08.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463502_27148f51_849e_49cd_b994_503744710d08.jpg)
 
 #### **3.5.5 ADC Interface**
 
 SoM supports the native 8 x12Bit ADC interface with a sampling rate of 1 Ms/s. The development board is led out via pins with a 2.54 mm pitch and is configured with a slide potentiometer. The ADC acquisition function can be achieved by connecting the middle pin of the slide potentiometer to the ADC pin. Pins 1/2 of P11 are for the middle terminal of the potentiometer. The remaining 8 pins are ADC input pins, marked accordingly on the PCB.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463642-f36ad632-c920-445c-9ad1-a6c1d7ef6a55.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463642_f36ad632_c920_445c_9ad1_a6c1d7ef6a55.jpg)
 
 #### 3.5.6 Audio
 
@@ -379,31 +379,31 @@ The audio chip NAU88C22 is equipped with a class-D power amplifier output termin
 - **The power of the speaker comes from a class-D power amplifier, not a traditional analog power amplifier;**
 - **Each socket should be connected to one speaker. Remember, speaker wires must not be shared, nor should speaker signals be connected to the ground wire.**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463784-d969ab72-268d-45bb-96ff-46b9242a5c8f.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463784_d969ab72_268d_45bb_96ff_46b9242a5c8f.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966463911-3e0efc7a-46cc-4f2b-afd2-8dfc37a02ef6.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966463911_3e0efc7a_46cc_4f2b_afd2_8dfc37a02ef6.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464062-923c1d18-294e-4f69-b704-452c170ccde3.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464062_923c1d18_294e_4f69_b704_452c170ccde3.jpg)
 
 #### **3.5.7 Dual Gigabit Ethernet**
 
 The SoM supports 2 x Gigabit Ethernet interfaces. The development board provides 2 x Gigabit Ethernet interfaces, both of which are connected to the PHY chip RTL8211 in the form of RGMII interfaces. They are led out through RJ45 sockets, namely P37 and P38. The socket model is FC - H021LNL, which has a built - in isolation transformer. Both network ports support the TSN function.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464169-46cd00fb-b43e-4ded-9a6c-eed6b67616a5.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464169_46cd00fb_b43e_4ded_9a6c_eed6b67616a5.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464269-da18b468-fb54-43bd-b138-5b14509731a8.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464269_da18b468_fb54_43bd_b138_5b14509731a8.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464375-4a4ac59e-7955-444c-8147-36861a632c79.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464375_4a4ac59e_7955_444c_8147_36861a632c79.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464509-26777e98-8a28-40d0-9ef6-4c430ae3d6ad.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464509_26777e98_8a28_40d0_9ef6_4c430ae3d6ad.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464653-51eeac47-5448-463b-b39e-c617e291c56e.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464653_51eeac47_5448_463b_b39e_c617e291c56e.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464785-c6892d68-c057-41a9-a367-2a8ae7a83571.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464785_c6892d68_c057_41a9_a367_2a8ae7a83571.jpg)
 
 The development board provides a JTAG debugging interface (P22), which is convenient for users to simulate and debug i.MX95.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966464934-4e625125-eb65-4fe4-a930-2e37a8d2f56c.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966464934_4e625125_eb65_4fe4_a930_2e37a8d2f56c.jpg)
 
 #### 3.5.9 TYPE-C Interface
 
@@ -411,33 +411,33 @@ On the carrier board, USB 2.0 is connected to the Type-C interface P32 for flash
 
 In the slave mode, when the master device (such as a computer) is plugged into the TYPE-C socket through a cable, the TYPEC \_ PWR \_ EN signal cuts off the power supply from the carrier board to the TYPE-C interface, so as to ensure that the 5V from the master device does not conflict with the 5V of the development board; in the master mode, when the slave device is plugged into the TYPE-C socket through the cable, the TYPEC \_ PWR \_ EN signal turns on the power supply of the carrier board to ensure the normal power supply to the slave device.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465046-a7ca460f-d784-49a0-a826-2ff9b14410e8.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465046_a7ca460f_d784_49a0_a826_2ff9b14410e8.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465141-cf22a626-4e11-44e5-914f-7f80c01db7d7.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465141_cf22a626_4e11_44e5_914f_7f80c01db7d7.jpg)
 
 #### **3.5.10 TF Card Interface**
 
 The development board has 1 x TF card interface, uses the SD2 bus, and supports the SD Card 3.0 protocol. The SoM can independently switch the level of the high and low speed cards and manage the power supply. When designing, please use the special power supply pin VDD \_ SD2 \_ 3V3 of the SoM to supply power to the TF card. It is not recommended to use other power supplies.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465304-c35804da-d6a6-4450-8f18-36814229b3b0.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465304_c35804da_d6a6_4450_8f18_36814229b3b0.jpg)
 
 #### 3.5.11 RTC Interface
 
 The development board has a RTC circuit, which is connected to the I2C3 bus. The CR2032 button battery can be used to save the time when the development board is not powered on, and the time will be saved in real time. After the development board is powered on, the existing time will be read from the RTC again and written into the system.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465431-d8e948ec-cfcb-4189-9868-69c94514f625.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465431_d8e948ec_cfcb_4189_9868_69c94514f625.jpg)
 
 #### 3.5.12 SPI Interface
 
 The development board provides an SPI interface, and an SPI3 is led out through the 10P pin P10. In addition, the interface also reserves power, ground and other signals to facilitate the expansion of users.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465558-da877614-53e9-4640-b81f-0c78b79a0cfb.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465558_da877614_53e9_4640_b81f_0c78b79a0cfb.jpg)
 
 #### 3.5.13 MIPI DSI Interface
 
 The SoM supports 4-channel MIPI DSI , and supports 4kp30 or 3840 \* 38401440p60 at most. The development board provides a general LCD interface, which can be connected to the MIPI capacitive touch screen produced by our company through a 0.5mm FPC seat P16 with a pitch of 30 P. The LCD interface uses MIPI DSI 4-channel connection with a resolution of 1280 x 800.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465658-c951784f-7ed5-4753-ae3d-0967f4a22aba.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465658_c951784f_7ed5_4753_ae3d_0967f4a22aba.jpg)
 
 #### 3.5.14 LVDS Interface
 
@@ -445,97 +445,97 @@ The development board supports two groups of 4-lane LVDS and one group of 8-lane
 
 The SoM controls the 5V power supply of the LVDS through the LVDS \_ EN.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465764-d40e24a6-2e75-4886-b100-1d067292cfa0.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465764_d40e24a6_2e75_4886_b100_1d067292cfa0.jpg)
 
 #### 3.5.15 OV13850 MIPI CSI Interface
 
 The SoM natively supports 2 x MIPI CSI 4lane channels (multiplexing one channel with MIPI DSI), with a maximum rate of 2.5Gbps. It conforms to the V1.2 protocol specification and can input 1 x 4Kp60 (single channel), 2 x 4Kp30, 4 x1080p60 and 8 x1080p30. The development board features a MIPI CSI function that is led out through a 26PIN FPC connector. This function interface is powered by an independent power supply and supports connection with the Forlinx OV13850 camera module. （Currently, as the manufacturer has not yet enabled the ISP function, this feature is temporarily unavailable.）
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465884-2904e25b-1fb4-44a7-b598-89a4dbb6dd69.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465884_2904e25b_1fb4_44a7_b598_89a4dbb6dd69.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966465983-af3d203e-5342-4520-adc0-b4af2cb259c2.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966465983_af3d203e_5342_4520_adc0_b4af2cb259c2.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466102-6ce5e1c9-da0c-4c09-a07e-691bb98d3551.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466102_6ce5e1c9_da0c_4c09_a07e_691bb98d3551.jpg)
 
 #### 3.5.16 4G Interface
 
 The development board is equipped with a MINI PCIE interface and has a USB protocol cable, which can support MINI PCIE interface devices that follow the USB protocol, such as 4G modules. By default, the development board comes with the EC20 module, enabling 4G Internet access. This interface is powered by an independent power supply, currently providing 3.3V3A, which can meet the requirements of most modules.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466218-5ff04645-8208-4b09-b898-a11f631480bb.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466218_5ff04645_8208_4b09_b898_a11f631480bb.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466327-b5fc33db-f71f-446c-b885-043c3fb38459.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466327_b5fc33db_f71f_446c_b885_043c3fb38459.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466445-55dfb907-ac5f-4810-9a25-ecde2e8ada1b.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466445_55dfb907_ac5f_4810_9a25_ecde2e8ada1b.jpg)
 
 #### 3.5.17 USB2.0 HUB Interface
 
 The development board uses USB2.0 HUB chip FE1.1S to expand the native USB interface, and uses USB2 bus. After expansion, it is connected to 3 x USB-A sockets and 4G respectively.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466583-19f20da9-c5cf-4953-9bbc-310dc3687cc7.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466583_19f20da9_c5cf_4953_9bbc_310dc3687cc7.jpg)
 
 #### 3.5.18 485 Interface
 
 The development board extends 2 x RS-485 interfaces from the SoM's serial ports, featuring auto transmit-receive control and protective circuits. It meets national EMC standards (ESD/EFT/SURGE Level 4), ensuring high security. 2 x 485 interfaces are led out through 7PIN terminal P48.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466707-ce74842e-59af-4b30-9e2a-4bdb3bab0489.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466707_ce74842e_59af_4b30_9e2a_4bdb3bab0489.jpg)
 
 #### **3.5.19 CAN Interface**
 
 The development board uses the native CAN FD to lead out 5 x CAN FD interfaces. While complying with the CAN 2.0B protocol specification, a protection circuit has been added. It is designed according to the fourth - level standard of the EMC experiments (ESD/EFT/SURGE) in the national standard, ensuring high safety. 3 x CAN interfaces are led out through 10PIN terminals respectively, and 2 x CAN interfaces are led out through 7 - pin terminals.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966466827-1b581b12-7262-4344-b3a9-c1cba76ccd66.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966466827_1b581b12_7262_4344_b3a9_c1cba76ccd66.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467009-23c83b1c-5ec9-434f-be47-96e61c22cfd0.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467009_23c83b1c_5ec9_434f_be47_96e61c22cfd0.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467113-dca2a4b0-f8af-4c86-a0af-801e8e26b816.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467113_dca2a4b0_f8af_4c86_a0af_801e8e26b816.jpg)
 
 #### 3.5.20 WIFI\&BT Interface
 
 Development board onboard WIFI\&BT module set, default welding AW-CM358SM, WLAN: IEEE 802.11 a/b/g/n/ac dual-band WIFI, up to 433.3 Mbps transceiver rate; Bluetooth: Bluetooth 5, up to 3Mbps speed. To enhance signal quality, use a 2.4 \& 5GHz dual-band antenna.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467217-b2c10ff2-ff16-43a7-b693-cde33bd3122d.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467217_b2c10ff2_ff16_43a7_b693_cde33bd3122d.jpg)
 
 #### 3.5.21 PCIE3.0
 
 The development board supports 2 x PCIE 3.0 X1 interfaces, which are led out through PCIE X1 standard adapter card sockets P35 and P36 to facilitate users to access various PCIE devices. （Currently, as the manufacturer has not yet enabled the Interfaces this feature is temporarily unavailable.）
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467338-d55f88cf-59db-466d-a6eb-a4630414f8c8.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467338_d55f88cf_59db_466d_a6eb_a4630414f8c8.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467460-ea3e9716-f96d-46a1-8e3f-b540156ded08.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467460_ea3e9716_f96d_46a1_8e3f_b540156ded08.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467578-3c4db63f-5091-48a4-9c30-4e1ac7108866.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467578_3c4db63f_5091_48a4_9c30_4e1ac7108866.jpg)
 
 #### 3.5.22 XFI Interface
 
 The development board supports 1 x XFI-10G interface, which is led out through the optical cage connector P39. Due to the high CPU load at 10G speeds, practical testing requires two cores to share the traffic load for full send capacity, and six cores to share the load for full receive capacity.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467708-b35619ea-5ef6-4983-8c6f-212fb393ddbc.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467708_b35619ea_5ef6_4983_8c6f_212fb393ddbc.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467810-b4941f9b-c35d-4e29-b088-3804200e9b3a.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467810_b4941f9b_c35d_4e29_b088_3804200e9b3a.jpg)
 
 #### 3.5.23 USER\_LED\_KEY
 
 The development board integrates the user LED and user buttons together, making it easy for the user to test the GPIO inputs and outputs. It should be noted that when testing the GPIO output function, do not press the key, otherwise the GPIO will be forced to a low level.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467902-5da151d3-2ad0-4eea-bc4f-bb998fedf96f.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467902_5da151d3_2ad0_4eea_bc4f_bb998fedf96f.jpg)
 
 #### 3.5.24 BUZZER
 
 The development board provides a buzzer LS1, and the SoM controls the buzzer through GPIO \_ IO37.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966467994-18ebb601-15bd-42cf-80e6-e191f83c5c2b.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966467994_18ebb601_15bd_42cf_80e6_e191f83c5c2b.jpg)
 
 #### 3.5.25 QSPI FLASH
 
 The development board provides 1 x QSPI FLASH interface, and selects NOR FLASH chip W25Q256 with a capacity of 128M bit.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966468095-5b944305-6996-48a2-ad7e-6d6ccd4aec24.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966468095_5b944305_6996_48a2_ad7e_6d6ccd4aec24.jpg)
 
 #### 3.5.26 FAN Interface
 
 The development board provides a fan power supply interface, and DC 12V supplies power to the fan after passing through a self-recovery fuse and an anti-reverse diode.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1754966468271-8ea80617-9c3d-470f-a1c3-ecac9ddad2ed.jpg)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966468271_8ea80617_9c3d_470f_a1c3_ecac9ddad2ed.jpg)
 
 ## 4\. OKMX9596-C Development Board Linux System Whole - Machine Power Consumption Table
 
@@ -561,26 +561,26 @@ The development board provides a fan power supply interface, and DC 12V supplies
 
 SoM Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966472028-f2210896-bfbe-4b2b-8b67-4fafd5d5c60f.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966472028_f2210896_bfbe_4b2b_8b67_4fafd5d5c60f.png)
 
 Carrier board Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966472129-4716f764-bd01-4b12-8692-9836d92e3e83.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966472129_4716f764_bd01_4b12_8692_9836d92e3e83.png)
 
 ## 6\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966473551-48216b0b-14d8-4512-a9cf-e222114d2a61.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966473551_48216b0b_14d8_4512_a9cf_e222114d2a61.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966473662-6ce0b91e-2c99-48a3-b391-0b979732d825.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966473662_6ce0b91e_2c99_48a3_b391_0b979732d825.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966473750-fa0bffb5-19f0-459f-b442-976f0b6800f5.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966473750_fa0bffb5_19f0_459f_b442_976f0b6800f5.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966473844-3b4eeddc-7364-4765-835c-919a29aedf09.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966473844_3b4eeddc_7364_4765_835c_919a29aedf09.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966473919-b73ef461-476d-4652-b014-f3f9c63ce5d4.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966473919_b73ef461_476d_4652_b014_f3f9c63ce5d4.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966473993-d674358d-7308-4c82-b82f-f2139231fb4e.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966473993_d674358d_7308_4c82_b82f_f2139231fb4e.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754966474074-4e588a1a-c60c-446a-af2e-4e6961584d0f.png)
+![Image](./images/OK-MX9596-C_User_Hardware_Manual/1754966474074_4e588a1a_c60c_446a_af2e_4e6961584d0f.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. To ensure the normal operation of the SoM, in addition to the VDD12V power supply, system buttons and BOOT, TYPE-C or TF cards are also required for easy system flashing and startup; DEBUG part of the circuit is convenient for confirming whether the system is working properly and for debugging.
