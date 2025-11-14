@@ -42,6 +42,7 @@ APPLICATION NOTE
 .. toctree::
    :caption: APPLICATION NOTE
    :maxdepth: 2
+   
    RK Development Manual <https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html>
 
 
