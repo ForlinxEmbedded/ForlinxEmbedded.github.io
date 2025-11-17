@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 | **Date**  | **Manual Version** | **Revision History** |
 | --------- | ------------------ | -------------------- |
-| 4/30/2025 | V1.0               | 建档                 |
+| 4/30/2025 | V1.0               | Initial Version      |
 
 ## 1\. Objective
 
