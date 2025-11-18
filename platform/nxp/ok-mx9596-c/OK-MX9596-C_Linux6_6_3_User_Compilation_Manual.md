@@ -44,7 +44,7 @@ Common virtual machine software includes VMware(VMWare ACE), Virtual Boxand Virt
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869388755-5131c433-6e67-401b-b5b4-c170c04079d5.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -52,43 +52,43 @@ After the download is complete, double-click the installation file to start the 
 
 Step 1: Double-click the startup program to enter the installation wizard, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389043-f74bf566-192f-491f-ba86-ba89ac4d3387.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389043_f74bf566_192f_491f_ba86_ba89ac4d3387.png)
 
 Step 2: Check "I accept the terms in the license agreement (A)" and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389490-5a3d20ca-4d31-48be-8616-ab0a75e3ec49.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389490_5a3d20ca_4d31_48be_8616_ab0a75e3ec49.png)
 
 Step 3: You can modify the installation location, install it to the partition where your computer installs the software, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389680-112bd577-2c6d-49d7-a926-14c37f5cf801.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389680_112bd577_2c6d_49d7_a926_14c37f5cf801.png)
 
 Step 4: Decide whether to check the two check boxes and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869389918-74426b44-42fd-43f9-9d6b-fb9233a1f8e7.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389918_74426b44_42fd_43f9_9d6b_fb9233a1f8e7.png)
 
 Step 5: Check the option to add the shortcuts and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869390105-1692ed6e-6a20-4ea9-96c7-34b88610d161.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869390105_1692ed6e_6a20_4ea9_96c7_34b88610d161.png)
 
 Step 6: Click "Install";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869390345-53dd7b59-4eb1-4675-93af-06dfe3f840d6.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869390345_53dd7b59_4eb1_4675_93af_06dfe3f840d6.png)
 
 Step 7: Wait for the installation to complete;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869391636-8bdb6e34-2add-4c4f-bb15-ba7e6d267c51.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
 
 Step 8: After the installation is completed, you can click "Finish" for trial. If users need to use it for a long time, they need to buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869391907-b9518f16-956c-46bd-b992-1b861689c91a.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869391907_b9518f16_956c_46bd_b992_1b861689c91a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869392115-6aa81085-4ef3-4290-a489-4bd4b65ae433.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869392115_6aa81085_4ef3_4290_a489_4bd4b65ae433.png)
 
 You can also click “Skip”. Once done, open the VMware software, click on “Help” in the status at the top, and enter the license key in the pop-up window.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869393116-048ac61f-998e-4c35-9c13-033f04e39e01.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869393116_048ac61f_998e_4c35_9c13_033f04e39e01.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869393464-5f491171-240d-4973-8247-732c7e0c02a9.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869393464_5f491171_240d_4973_8247_732c7e0c02a9.png)
 
 ### 1.3 VMware Network Connection
 
@@ -96,7 +96,7 @@ By default, after the virtual machine is installed, the network connection metho
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. In this mode the virtual NAT device and the host NIC are connected to communicate for Internet access. This is the most common way to access the external network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869393704-9ebd2008-6f6b-4d92-b0f0-f0a80afd18db.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869393704_9ebd2008_6f6b_4d92_b0f0_f0a80afd18db.png)
 
 ## 2\. Importing the Forlinx Development Environment
 
@@ -110,29 +110,29 @@ Forlinx provides an installed Ubuntu development environment, which customers ca
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754903286776-8db2dd9f-cd3e-40e8-97ee-4774654f5fef.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903286776_8db2dd9f_cd3e_40e8_97ee_4774654f5fef.png)
 
 Select all the compressed packages and right click to extract them to the ok-mx95 development environment:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754903286943-5b764d0c-08d6-42d1-ac7b-d34f5af1f22f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903286943_5b764d0c_08d6_42d1_ac7b_d34f5af1f22f.png)
 
 "OK-MX95xx-VM17.5.2-Ubuntu20.04.vmx" in the "OK-MX95xx-VM17.5.2-Ubuntu 20.04" folder is the file to be opened by the virtual machine after decompression.
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480763-8f97fe83-3047-4f3a-8ff2-dbcdb1a3e088.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869480763_8f97fe83_3047_4f3a_8ff2_dbcdb1a3e088.png)
 
 Select the directory where the newly extracted OK-MX95xx-VM17.5.2-Ubuntu20.04 virtual machine file is located, and double-click to open the startup file.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754903287119-7d92fa2b-e116-43df-b6d9-46db2081943f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287119_7d92fa2b_e116_43df_b6d9_46db2081943f.png)
 
 After loading, click to start the virtual machine to run. Enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754903287223-cdc90c01-dc66-4127-b71d-69c1eac471f6.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287223_cdc90c01_dc66_4127_b71d_69c1eac471f6.png)
 
 The provided development environment account is: forlinx and the password is: forlinx, fill in the password and select Sign in to log in.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754903287361-c6af7a47-eb0f-476a-a7af-824fcdc90a53.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287361_c6af7a47_eb0f_476a_a7af_824fcdc90a53.png)
 
 So far, we have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations. （[See **4. Linux Compilation**](https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8)）
 
@@ -154,7 +154,7 @@ The version of Ubuntu we chose to install is 22.04, and the introduction and dev
 
 Download "Ubuntu-22.04.1-desktop-amd64.iso" (you can download the version that you actually need; this is just an example with 22.04.1).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583250-18390b4b-1196-4c82-8307-9f22c4e71d8f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583250_18390b4b_1196_4c82_8307_9f22c4e71d8f.png)
 
 #### 3.1.1 Vmware Ubuntu Image Installation
 
@@ -162,79 +162,79 @@ If customers want to learn to build their own virtual machines, they can choose 
 
 Step 1: Open the VMware software and click on "Create New Virtual Machine". Enter the following interface, check "Customize (Advanced)" and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583459-8dfde8cf-89c3-42ef-b2b5-7f7ce4d7a604.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583459_8dfde8cf_89c3_42ef_b2b5_7f7ce4d7a604.png)
 
 Step 2: Select the compatibility of the corresponding VMware version. The version can be viewed in Help-> About VMware Workstation. Click "Next" after confirmation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583744-1f8c88f2-57f3-4baa-b596-74af1fb215f1.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583744_1f8c88f2_57f3_4baa_b596_74af1fb215f1.png)
 
 Select “Install program from disc image file”, then click “Next”；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584192-6793524b-482b-43e1-aeb3-db1dec72da60.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584192_6793524b_482b_43e1_aeb3_db1dec72da60.png)
 
 Enter the virtual machine name and configuration installation location, and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584398-5d249503-a64d-4a3f-8489-e54a4a9eb694.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694.png)
 
 To configure the number of cores, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584636-4fe029f5-73d3-42cf-8d01-5d8266c5aefe.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584636_4fe029f5_73d3_42cf_8d01_5d8266c5aefe.png)
 
 Configure appropriate memory space and select "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869584848-750d03fd-581d-4130-9966-9ef1025939cb.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584848_750d03fd_581d_4130_9966_9ef1025939cb.png)
 
 Set the network type, use the default NAT form for networking, and click "Next". Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585093-76b7f0ed-f7a1-40e9-8509-7e6039bea53a.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585093_76b7f0ed_f7a1_40e9_8509_7e6039bea53a.png)
 
 Using the recommended I/O controller, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585428-016b5a4f-3818-4a68-a631-d2498120bc8f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585428_016b5a4f_3818_4a68_a631_d2498120bc8f.png)
 
 Using the recommended disk type, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585713-c06b7cbe-d288-4f2a-af55-7d6e99107012.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585713_c06b7cbe_d288_4f2a_af55_7d6e99107012.png)
 
 Using the default options, create a new virtual disk and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869585907-c658e5b0-f32e-4662-a9fe-c5ffb3748d94.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585907_c658e5b0_f32e_4662_a9fe_c5ffb3748d94.png)
 
 Allocate a disk size of 80G and divide the virtual disk into multiple files, and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586141-7e8a4dab-0ff2-4645-84e9-323fd7008529.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586141_7e8a4dab_0ff2_4645_84e9_323fd7008529.png)
 
 Click "Next" by default:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586324-4ae2f79f-159f-4d43-901d-a38b1efba18b.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586324_4ae2f79f_159f_4d43_901d_a38b1efba18b.png)
 
 Click "Finish":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586503-50bcaff6-9a7f-4ac5-a5ce-a3a1c9638117.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586503_50bcaff6_9a7f_4ac5_a5ce_a3a1c9638117.png)
 
 Once the virtual machine is powered on, select Try to Install Ubuntu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586970-cffad2de-72c1-4f4e-a8af-eb5808a32729.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586970_cffad2de_72c1_4f4e_a8af_eb5808a32729.png)
 
 Select the language and select install Ubuntu
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587201-dffb2ce0-3826-49ec-8ff8-1e8505780671.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587201_dffb2ce0_3826_49ec_8ff8_1e8505780671.png)
 
 Select a keyboard layout
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587425-cd6dfdfd-fb60-4bb3-a9ac-1ceddaa0360c.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587425_cd6dfdfd_fb60_4bb3_a9ac_1ceddaa0360c.png)
 
 Select to upgrade and install the software, and continue by default
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587693-96841510-6f1d-4cbb-8226-5f6b08b525fb.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587693_96841510_6f1d_4cbb_8226_5f6b08b525fb.png)
 
 Select the installation method and hard disk partition. The default is to install now and continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587952-9463364d-3878-4b10-9ce8-295d6494a33c.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587952_9463364d_3878_4b10_9ce8_295d6494a33c.png)
 
 Enter the account no.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869588554-7e9e7f72-e56f-4f8b-a02e-bdcf739a95fb.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588554_7e9e7f72_e56f_4f8b_a02e_bdcf739a95fb.png)
 
 After that, the virtual machine starts to install the image and wait patiently.
 
@@ -242,21 +242,21 @@ After that, the virtual machine starts to install the image and wait patiently.
 
 **Error 1**: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869588749-a1495548-d40f-4bae-904f-8bbbc2fe79c3.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
 
 Solution:Right clickon my computer to manageservices and applicationservices, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589005-ef1fc363-0dd2-4630-9776-43ba22bbf91c.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
 
 **Error 2**: Internal error.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589342-acc3167f-f1bc-4e26-ab17-5e9f35b7591e.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589342_acc3167f_f1bc_4e26_ab17_5e9f35b7591e.png)
 
 Solution: Refer to error 1.
 
 **Error 3**: Unable to install service VMware Authorization Service (VMAuthdService):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589591-d34021d8-fca9-461e-a9e0-cb7d0e3a072f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589591_d34021d8_fca9_461e_a9e0_cb7d0e3a072f.png)
 
 Solution:
 
@@ -266,25 +266,25 @@ win+R
 输入services.msc
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589803-7188217b-8454-464a-8b10-89f5dcfdc279.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589803_7188217b_8454_464a_8b10_89f5dcfdc279.png)
 
 Then find the service and start it up as an authorization and authentication service for starting and accessing virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590078-8aef4460-79c2-4763-8e7d-118c2d5983cc.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590078_8aef4460_79c2_4763_8e7d_118c2d5983cc.png)
 
 WMI must be started first:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590418-2f8e53a5-c2fc-4757-9953-c9e4fb189590.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590418_2f8e53a5_c2fc_4757_9953_c9e4fb189590.png)
 
 **Error 4**: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590665-c36e2101-6100-454f-8aa5-3ca6957f749a.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590665_c36e2101_6100_454f_8aa5_3ca6957f749a.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 
 **Error 5**: Intel VT-x is disabled.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591003-b756d65f-933d-4574-8baf-f6cfe2aeabb5.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
 
 Solution:
 
@@ -296,7 +296,7 @@ If that doesn't work, just turn the firewall off and reopen the VM. (varies by m
 
 Error 6: The virtual machine appears to be in use... Acquiring Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591243-c7dee38e-bc9a-4e75-b107-7cf10d254f4f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591243_c7dee38e_bc9a_4e75_b107_7cf10d254f4f.png)
 
 Solution:
 
@@ -304,13 +304,13 @@ Solution:
 2. Enter the storage directory of the virtual machine and delete the \*.lck file. The lck represents the locked file.
 3. Open the Windows Task Manager and kill the VMware process
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591535-d122dbda-6632-4026-9d63-23db9d4537f2.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591535_d122dbda_6632_4026_9d63_23db9d4537f2.png)
 
 4. Restart the virtual machine
 
 Error 7: Failed to lock file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591887-144b4cd3-ddb0-449d-a2f2-f40a3001899e.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591887_144b4cd3_ddb0_449d_a2f2_f40a3001899e.png)
 
 Solution:
 
@@ -324,7 +324,7 @@ Solution:
 
 The virtual machine does not have enough memory to run the image's maximum requirements； increase the virtual machine's memory and reboot the virtual machine
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592129-f2e6097d-9937-4a53-b0b3-1bbe72566871.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592129_f2e6097d_9937_4a53_b0b3_1bbe72566871.png)
 
 ### 3.2 Ubuntu Common Software Installation
 
@@ -332,17 +332,17 @@ The virtual machine does not have enough memory to run the image's maximum requi
 
 Click the icon similar to a package on the left side of the desktop to see some tools. We can also search for the tools we want. For example, we download a VScode tool, which is very convenient for our daily coding.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592379-88da66b9-82c5-4005-8e7f-edb58d0aa2ea.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592379_88da66b9_82c5_4005_8e7f_edb58d0aa2ea.png)
 
 Please search for the tool we need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click "Launch" to run it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592679-2fb3764d-0037-41e4-9af4-58ea85585a1b.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592679_2fb3764d_0037_41e4_9af4_58ea85585a1b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592939-3b9a36d8-33cd-41b2-91fc-c6a49f4e81d7.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592939_3b9a36d8_33cd_41b2_91fc_c6a49f4e81d7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593272-13fb8849-88df-47ef-85a3-4acb70beaee3.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593272_13fb8849_88df_47ef_85a3_4acb70beaee3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593542-98dcaa2a-5828-4e6c-823d-050f711a226e.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593542_98dcaa2a_5828_4e6c_823d_050f711a226e.png)
 
 #### 3.2.2 NFS Installation
 
@@ -352,7 +352,7 @@ The terminal executes the following command:
 forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593819-49fb6680-cb15-4789-b1ea-4743a3407d96.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
 
 #### 3.2.3 FTP server
 
@@ -384,19 +384,19 @@ forlinx@ubuntu:~$ sudo /etc/init.d/vsftpd restart
 
 After the installation is completed, open the client and the following interface appears:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594191-62172235-1998-4ed9-a19c-e134416074e6.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png)
 
 Click File-site Management
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594367-8db7e0ba-7198-4c04-86e7-c07b526c2c82.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594367_8db7e0ba_7198_4c04_86e7_c07b526c2c82.png)
 
 Add the IP address under the Ubuntu system to the host, user name: forlinx, password: forlinx. Click Connection
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594622-0a022d2f-e436-4806-afe1-7800463e9bae.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png)
 
 After a successful connection, you can display the directory structure under the Ubuntu system and transfer files from the Windows system to the Ubuntu system via network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869594908-3a664d89-3204-4023-92fa-5e5222d18baf.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594908_3a664d89_3204_4023_92fa_5e5222d18baf.png)
 
 ### 3.3 Cross-compilation Environment
 
@@ -530,7 +530,7 @@ Compile application app cross compilation tool chain
 
 ### 4.2 Compilation
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1754903290919-e8b8d732-16a2-4a66-b7f7-f32a3016323f.png)
+![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903290919_e8b8d732_16a2_4a66_b7f7_f32a3016323f.png)
 
 #### 4.2.1 Instructions for Using the SDK Path and Files
 
