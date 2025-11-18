@@ -403,7 +403,7 @@ After a successful connection, you can display the directory structure under the
 
 The cross-compilation environment is divided into installing the toolchain and setting cross-compilation environment variables.
 
-### 3.3.1 Cross-compilation Tool Chain Installation
+#### 3.3.1 Cross-compilation Tool Chain Installation
 
 Make sure that the network is open during the installation process and that the Ubuntu system has access to an extranet.
 
