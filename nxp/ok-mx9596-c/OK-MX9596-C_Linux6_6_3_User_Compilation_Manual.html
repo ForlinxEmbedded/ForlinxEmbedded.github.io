@@ -90,8 +90,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#vscode">3.2.1 VScode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#nfs-installation">3.2.2 NFS Installation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ftp-server">3.2.3 FTP server</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ftp-installation">1. FTP Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-connection-for-windows">2. Client Connection for Windows</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cross-compilation-environment">3.3 Cross-compilation Environment</a></li>
@@ -185,15 +183,15 @@
 <h2><font style="color:rgb(51,51,51);">Overview</font><a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.</p>
 <p>The manual is mainly divided into four chapters:</p>
-<p>Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment.</p>
-<p>Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu20.04.</p>
-<p>Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64 bit Ubuntu 22.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built.</p>
+<p>Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment;</p>
+<p>Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu20.04;</p>
+<p>Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64 bit Ubuntu 22.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;</p>
 <p>Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.</p>
 </section>
 <section id="vmware-installation">
 <h2>1. Vmware Installation<a class="headerlink" href="#vmware-installation" title="Link to this heading"></a></h2>
 <p>Virtual Machine refers to a complete computer system with complete hardware system functions simulated bysoftware and running in a completely isolated environment. Virtual machines can simu late other kinds of operating systems; it is convenient for us to manage and use different development environments and operating systems in the development process.</p>
-<p>Common virtual machine software includes VMware(VMWare ACE), Virtual Boxand Virtual PC, all of which can virtualize multiple computers on Windows systems. Our company adopts VMware. If you are not familiar with the virtual machine software, it is recommended to use the same virtual machine software as ours.</p>
+<p>Common virtual machine software includes VMware (VMWare ACE), Virtual Boxand Virtual PC, all of which can virtualize multiple computers on Windows systems. Our company adopts VMware. If you are not familiar with the virtual machine software, it is recommended to use the same virtual machine software as ours.</p>
 <section id="vmware-software-download-and-purchase">
 <h3>1.1 VMware Software Download and Purchase<a class="headerlink" href="#vmware-software-download-and-purchase" title="Link to this heading"></a></h3>
 <p>Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.</p>
@@ -252,7 +250,7 @@
 <p><img alt="Image" src="_images/1754903287223_cdc90c01_dc66_4127_b71d_69c1eac471f6.png" /></p>
 <p>The provided development environment account is: forlinx and the password is: forlinx, fill in the password and select Sign in to log in.</p>
 <p><img alt="Image" src="_images/1754903287361_c6af7a47_eb0f_476a_a7af_824fcdc90a53.png" /></p>
-<p>So far, we have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations. （<a class="reference external" href="https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8">See <strong>4. Linux Compilation</strong></a>）</p>
+<p>So far, we have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations (<a class="reference external" href="https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8"><strong>See 4. Linux Compilation</strong></a>)</p>
 </section>
 <section id="building-the-development-environment-manually">
 <h2>3. Building the Development Environment Manually<a class="headerlink" href="#building-the-development-environment-manually" title="Link to this heading"></a></h2>
@@ -260,9 +258,7 @@
 <p>There are numerous versions of Linux desktop systems, and currently, all the Linux experiments and source code in this manual are performed on the Ubuntu 22.04 system. With other versions of Linux desktop systems, problems related to the gcc compiler and library files may occur. If you encounter similar issues, you can seek advice and inquire on the official forums of the Linux distribution vendor. If you are not familiar with Linux, the method introduced by Forlinx is highly recommended.</p>
 <p>Why do we need to install these things? Because we need a Linux environment to do development work. We can’t compile Kernel source code, Qt applications, uboot and so on under Windows. We need to do these work under Linux environment. Given that most users are accustomed to the Windows environment, we use VMware software to provide Ubuntu virtual machines. Of course, you can also install Linux on your computer or server for development.</p>
 <p>Next, it will introduce the process of building the virtual machine.</p>
-<ul class="simple">
-<li><p><strong>Note: Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section.</strong></p></li>
-</ul>
+<p><strong>Note: Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section.</strong></p>
 <section id="ubuntu-system-virtual-machine-installation">
 <h3>3.1 Ubuntu System Virtual Machine Installation<a class="headerlink" href="#ubuntu-system-virtual-machine-installation" title="Link to this heading"></a></h3>
 <p>The version of Ubuntu we chose to install is 22.04, and the introduction and development in this maual are all carried out on Ubuntu22.04. First go to the Ubuntu official website to get the Ubuntu 22.04 64 bit image, the download address is: <a class="reference external" href="http://releases.ubuntu.com/18.04/"><u><font style="color:#0000ff;">http://releases.ubuntu</font></u></a><a class="reference external" href="http://releases.ubuntu.com/22.04/"><u><font style="color:#0000ff;">.com/22.04/</font></u></a></p>
@@ -394,9 +390,8 @@
 <section id="ftp-server">
 <h4>3.2.3 FTP server<a class="headerlink" href="#ftp-server" title="Link to this heading"></a></h4>
 <p>After FTP is installed, files under Windows system and files under Ubuntu system can be transferred to each other. Due to compatibility issues between Ubuntu 22.04 and VMware Tools, file transfers are performed in this way.</p>
-</section>
 <section id="ftp-installation">
-<h4>1. FTP Installation<a class="headerlink" href="#ftp-installation" title="Link to this heading"></a></h4>
+<h5>3.2.3.1 FTP Installation<a class="headerlink" href="#ftp-installation" title="Link to this heading"></a></h5>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>vsftpd
 </pre></div>
 </div>
@@ -411,11 +406,9 @@
 </div>
 </section>
 <section id="client-connection-for-windows">
-<h4>2. Client Connection for Windows<a class="headerlink" href="#client-connection-for-windows" title="Link to this heading"></a></h4>
-<ul class="simple">
-<li><p><strong>Path: OK-MX9352-C (Linux) User Profile/Tools/FileZilla_3.24.0.0_win64-setup.exe</strong></p></li>
-<li><p><strong>Note: It is necessary to ensure that the Windows system and the Ubuntu system network are interoperable. Otherwise, it is necessary to set the network configuration of the virtual machine.</strong></p></li>
-</ul>
+<h5>3.2.3.2 Client Connection for Windows<a class="headerlink" href="#client-connection-for-windows" title="Link to this heading"></a></h5>
+<p>Path: OK-MX9352-C (Linux) User Profile/Tools/FileZilla_3.24.0.0_win64-setup.exe</p>
+<p><strong>Note: It is necessary to ensure that the Windows system and the Ubuntu system network are interoperable. Otherwise, it is necessary to set the network configuration of the virtual machine.</strong></p>
 <p>After the installation is completed, open the client and the following interface appears:</p>
 <p><img alt="Image" src="_images/1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png" /></p>
 <p>Click File-site Management</p>
@@ -424,6 +417,7 @@
 <p><img alt="Image" src="_images/1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png" /></p>
 <p>After a successful connection, you can display the directory structure under the Ubuntu system and transfer files from the Windows system to the Ubuntu system via network.</p>
 <p><img alt="Image" src="_images/1718869594908_3a664d89_3204_4023_92fa_5e5222d18baf.png" /></p>
+</section>
 </section>
 </section>
 <section id="cross-compilation-environment">
@@ -452,7 +446,12 @@ NXP<span class="w"> </span>i.MX<span class="w"> </span>Release<span class="w"> <
 Enter<span class="w"> </span>target<span class="w"> </span>directory<span class="w"> </span><span class="k">for</span><span class="w"> </span>SDK<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield<span class="o">)</span>:<span class="w"> </span>
 You<span class="w"> </span>are<span class="w"> </span>about<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>the<span class="w"> </span>SDK<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;/opt/fsl-imx-xwayland/6.6-nanbield&quot;</span>.<span class="w"> </span>Proceed<span class="w"> </span><span class="o">[</span>Y/n<span class="o">]</span>?<span class="w"> </span>y<span class="w"> </span>//Enter<span class="w"> </span>y
 <span class="o">[</span>sudo<span class="o">]</span><span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>forlinx:<span class="w"> </span>forlinx<span class="w">                                            </span>//Enter<span class="w"> </span>forlinx<span class="w"> </span>user<span class="w"> </span>password
-Extracting<span class="w"> </span>SDK.............................................................................................................................................................................................................................................................................................................................................................................................................done<span class="w"> </span>
+Extracting<span class="w"> </span>SDK..................................................................
+.....................................................................
+.....................................................................
+.....................................................................
+.....................................................................
+.......................................................done<span class="w"> </span>
 Setting<span class="w"> </span>it<span class="w"> </span>up...done
 SDK<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>successfully<span class="w"> </span><span class="nb">set</span><span class="w"> </span>up<span class="w"> </span>and<span class="w"> </span>is<span class="w"> </span>ready<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>used.<span class="w"> </span>
 Each<span class="w"> </span><span class="nb">time</span><span class="w"> </span>you<span class="w"> </span>wish<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>SDK<span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>shell<span class="w"> </span>session,<span class="w"> </span>you<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span><span class="nb">source</span><span class="w"> </span>the<span class="w"> </span>environment<span class="w"> </span>setup<span class="w"> </span>script<span class="w"> </span>e.g.
@@ -469,7 +468,8 @@ Each<span class="w"> </span><span class="nb">time</span><span class="w"> </span>
 <li><p><strong>If you reopen a new terminal or switch accounts, you need to reset the environment variables before compiling.</strong></p></li>
 </ul>
 <p>The main purpose of setting up the compilation environment is to specify the target architecture and cross-compilation toolchain, as well as the paths of some libraries used in the compilation process, etc. Use the following commands to configure the compilation environment(<strong>.followed by a space</strong>):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>.<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linux
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>.<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-
+nanbield_imx95/environment-setup-armv8a-poky-linux
 </pre></div>
 </div>
 <p>Judge whether the setting is successful by the following command:</p>
@@ -479,7 +479,8 @@ Using<span class="w"> </span>built-in<span class="w"> </span>specs.
 <span class="o">[</span>…<span class="o">]</span>
 Thread<span class="w"> </span>model:<span class="w"> </span>posix
 Supported<span class="w"> </span>LTO<span class="w"> </span>compression<span class="w"> </span>algorithms:<span class="w"> </span>zlib<span class="w"> </span>zstd
-gcc<span class="w"> </span>version<span class="w"> </span><span class="m">13</span>.2.0<span class="w"> </span><span class="o">(</span>GCC<span class="o">)</span><span class="w">                           </span>//Confirm<span class="w"> </span>successful<span class="w"> </span>settings<span class="w"> </span>through<span class="w"> </span>gcc<span class="w"> </span>version<span class="w"> </span>information
+gcc<span class="w"> </span>version<span class="w"> </span><span class="m">13</span>.2.0<span class="w"> </span><span class="o">(</span>GCC<span class="o">)</span><span class="w">                           </span>
+//Confirm<span class="w"> </span>successful<span class="w"> </span>settings<span class="w"> </span>through<span class="w"> </span>gcc<span class="w"> </span>version<span class="w"> </span>information
 </pre></div>
 </div>
 </section>
@@ -521,22 +522,33 @@ gcc<span class="w"> </span>version<span class="w"> </span><span class="m">13</sp
 <p>Compilation Environment Installation</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
 forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
-forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>openssh-server<span class="w"> </span>vim<span class="w"> </span>git<span class="w"> </span>build-essential<span class="w"> </span>gcc-aarch64-linux-gnu<span class="w"> </span>zstd<span class="w"> </span>libssl-dev<span class="w"> </span>flex<span class="w"> </span>bison<span class="w"> </span>libdouble-conversion3<span class="w"> </span>libxcb-cursor0<span class="w"> </span>p7zip-full
+forlinx@ubuntu:~$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>openssh-server<span class="w"> </span>vim<span class="w"> </span>git
+build-essential<span class="w"> </span>gcc-aarch64-linux-gnu<span class="w"> </span>zstd<span class="w"> </span>libssl-dev<span class="w"> </span>flex<span class="w"> </span>bison
+libdouble-conversion3<span class="w"> </span>libxcb-cursor0<span class="w"> </span>p7zip-full
 
 forlinx@ubuntu:~<span class="w"> </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/work/OK-MX95xx-C-linux-sdk
 </pre></div>
 </div>
 <p>Install the cross-compilation tool chain (with the release of the new version of SDK, it may need to be updated, just perform the following steps again)</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>tar<span class="w"> </span>-xf<span class="w"> </span>arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz<span class="w"> </span>-C<span class="w"> </span>/opt/arm-gnu-toolchain
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>sh<span class="w"> </span>fsl-imx-xwayland-glibc-x86_64-imx-image-full-armv8a-imx95-19x19-lpddr5-evk-toolchain-6.6-nanbield.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>tar<span class="w"> </span>-xf<span class="w"> </span>arm-gnu-
+toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz<span class="w"> </span>-C<span class="w"> </span>/opt/arm-gnu-
+toolchain
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>sh<span class="w"> </span>fsl-imx-
+xwayland-glibc-x86_64-imx-image-full-armv8a-imx95-19x19-lpddr5-evk-
+toolchain-6.6-nanbield.sh
 NXP<span class="w"> </span>i.MX<span class="w"> </span>Release<span class="w"> </span>Distro<span class="w"> </span>SDK<span class="w"> </span>installer<span class="w"> </span>version<span class="w"> </span><span class="m">6</span>.6-nanbield
 <span class="o">==========================================================</span>
-Enter<span class="w"> </span>target<span class="w"> </span>directory<span class="w"> </span><span class="k">for</span><span class="w"> </span>SDK<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield<span class="o">)</span>:<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95
-You<span class="w"> </span>are<span class="w"> </span>about<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>the<span class="w"> </span>SDK<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;/opt/fsl-imx-xwayland/6.6-nanbield&quot;</span>.<span class="w"> </span>Proceed<span class="w"> </span><span class="o">[</span>Y/n<span class="o">]</span>?<span class="w"> </span>y<span class="w"> </span>
+Enter<span class="w"> </span>target<span class="w"> </span>directory<span class="w"> </span><span class="k">for</span><span class="w"> </span>SDK<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-
+nanbield<span class="o">)</span>:<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95
+You<span class="w"> </span>are<span class="w"> </span>about<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>the<span class="w"> </span>SDK<span class="w"> </span>to<span class="w"> </span><span class="s2">&quot;/opt/fsl-imx-xwayland/6.6-</span>
+<span class="s2">nanbield&quot;</span>.<span class="w"> </span>Proceed<span class="w"> </span><span class="o">[</span>Y/n<span class="o">]</span>?<span class="w"> </span>y<span class="w"> </span>
 Extracting<span class="w"> </span>SDK....................................
 
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>rm<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/bin/ld
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>rm<span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/x86_64-pokysdk-linux/bin/ld
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>rm<span class="w"> </span>/opt/fsl-imx-
+xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/bin/ld
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>sudo<span class="w"> </span>rm<span class="w"> </span>/opt/fsl-imx-
+xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/x86_64-
+pokysdk-linux/bin/ld
 </pre></div>
 </div>
 <p>Compile application app cross compilation tool chain</p>
@@ -653,15 +665,22 @@ forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$<span class="w"> </span>./build.sh<s
 <p>Arch：arm64</p>
 <p>Refer to the environment variables defined in /opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linuxand appsrc/forlinx-cmd/watchdog/Makefile</p>
 <p>Take fltest_watchdog as an example to illustrate the compilation flow</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-cmd/watchdog$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linux
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-cmd/watchdog$<span class="w"> </span>make
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+cmd/watchdog$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/fsl-imx-xwayland/6.6-
+nanbield_imx95/environment-setup-armv8a-poky-linux
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+cmd/watchdog$<span class="w"> </span>make
 </pre></div>
 </div>
 <p>The generated file is fltest_watchdog.</p>
 <p>Take fltest _ qt _ watchdog as an example to explain compiling qt program.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linux
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog$<span class="w"> </span>qmake
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog$<span class="w"> </span>make
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+qt/fltest_qt_watchdog$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/fsl-imx-xwayland/6.6-
+nanbield_imx95/environment-setup-armv8a-poky-linux
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+qt/fltest_qt_watchdog$<span class="w"> </span>qmake
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+qt/fltest_qt_watchdog$<span class="w"> </span>make
 </pre></div>
 </div>
 <p>Copy the compiled fltest_qt_watchdog to the development board to run the test.</p>

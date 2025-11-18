@@ -26,11 +26,11 @@ This manual is designed to enable you to quickly understand the compilation proc
 
 The manual is mainly divided into four chapters:
 
-Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment.
+Chapter 1. is mainly about the installation of VMware, and the version used is VMware® Workstation 15 Pro15.1.0. Users need to install VMware before using the ubuntu development environment;
 
-Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu20.04.
+Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu20.04;
 
-Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64 bit Ubuntu 22.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built.
+Chapter 3. mainly introduces the method of building a new ubuntu development environment. This section uses the 64 bit Ubuntu 22.04 as an example to describe the process of Ubuntu creation, cross-compiler installation, and QT Creator installation. Due to different computer configurations, unexpected problems may occur in the building process. It is recommended that beginners directly use the environment we have built;
 
 Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.
 
@@ -38,7 +38,7 @@ Chapter 4. mainly describes the compiling method of the source code related to t
 
 Virtual Machine refers to a complete computer system with complete hardware system functions simulated bysoftware and running in a completely isolated environment. Virtual machines can simu late other kinds of operating systems; it is convenient for us to manage and use different development environments and operating systems in the development process.
 
-Common virtual machine software includes VMware(VMWare ACE), Virtual Boxand Virtual PC, all of which can virtualize multiple computers on Windows systems. Our company adopts VMware. If you are not familiar with the virtual machine software, it is recommended to use the same virtual machine software as ours.
+Common virtual machine software includes VMware (VMWare ACE), Virtual Boxand Virtual PC, all of which can virtualize multiple computers on Windows systems. Our company adopts VMware. If you are not familiar with the virtual machine software, it is recommended to use the same virtual machine software as ours.
 
 ### 1.1 VMware Software Download and Purchase
 
@@ -134,7 +134,7 @@ The provided development environment account is: forlinx and the password is: fo
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287361_c6af7a47_eb0f_476a_a7af_824fcdc90a53.png)
 
-So far, we have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations. （[See **4. Linux Compilation**](https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8)）
+So far, we have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations ([**See 4. Linux Compilation**](https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8))
 
 ## 3\. Building the Development Environment Manually
 
@@ -146,7 +146,7 @@ Why do we need to install these things? Because we need a Linux environment to d
 
 Next, it will introduce the process of building the virtual machine.
 
-+ **Note: Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section.**
+**Note: Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section.**
 
 ### 3.1 Ubuntu System Virtual Machine Installation
 
@@ -358,7 +358,7 @@ forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 
 After FTP is installed, files under Windows system and files under Ubuntu system can be transferred to each other. Due to compatibility issues between Ubuntu 22.04 and VMware Tools, file transfers are performed in this way.
 
-#### 1\. FTP Installation
+##### 3.2.3.1 FTP Installation
 
 ```bash
 forlinx@ubuntu:~$ sudo apt-get install vsftpd
@@ -377,10 +377,11 @@ After saving and exiting, restart the FTP service
 forlinx@ubuntu:~$ sudo /etc/init.d/vsftpd restart
 ```
 
-#### 2\. Client Connection for Windows
+##### 3.2.3.2 Client Connection for Windows
 
-+ **Path: OK-MX9352-C (Linux) User Profile/Tools/FileZilla\_3.24.0.0\_win64-setup.exe**
-+ **Note: It is necessary to ensure that the Windows system and the Ubuntu system network are interoperable. Otherwise, it is necessary to set the network configuration of the virtual machine.**
+Path: OK-MX9352-C (Linux) User Profile/Tools/FileZilla\_3.24.0.0\_win64-setup.exe
+
+**Note: It is necessary to ensure that the Windows system and the Ubuntu system network are interoperable. Otherwise, it is necessary to set the network configuration of the virtual machine.**
 
 After the installation is completed, open the client and the following interface appears:
 
@@ -431,7 +432,12 @@ NXP i.MX Release Distro SDK installer version 6.6-nanbield
 Enter target directory for SDK (default: /opt/fsl-imx-xwayland/6.6-nanbield): 
 You are about to install the SDK to "/opt/fsl-imx-xwayland/6.6-nanbield". Proceed [Y/n]? y //Enter y
 [sudo] password for forlinx: forlinx                                            //Enter forlinx user password
-Extracting SDK.............................................................................................................................................................................................................................................................................................................................................................................................................done 
+Extracting SDK..................................................................
+.....................................................................
+.....................................................................
+.....................................................................
+.....................................................................
+.......................................................done 
 Setting it up...done
 SDK has been successfully set up and is ready to be used. 
 Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
@@ -452,7 +458,8 @@ SDK has been successfully set up and is ready to be used.
 The main purpose of setting up the compilation environment is to specify the target architecture and cross-compilation toolchain, as well as the paths of some libraries used in the compilation process, etc. Use the following commands to configure the compilation environment(**.followed by a space**):
 
 ```bash
-forlinx@ubuntu:~$ . /opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linux
+forlinx@ubuntu:~$ . /opt/fsl-imx-xwayland/6.6-
+nanbield_imx95/environment-setup-armv8a-poky-linux
 ```
 
 Judge whether the setting is successful by the following command:
@@ -464,7 +471,8 @@ COLLECT_GCC=aarch64-poky-linux-gcc
 […]
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
-gcc version 13.2.0 (GCC)                           //Confirm successful settings through gcc version information
+gcc version 13.2.0 (GCC)                           
+//Confirm successful settings through gcc version information
 ```
 
 ## 4\. Related Code Compilation
@@ -501,7 +509,9 @@ Compilation Environment Installation
 ```bash
 forlinx@ubuntu:~$ sudo apt-get update
 forlinx@ubuntu:~$ sudo apt-get upgrade
-forlinx@ubuntu:~$ sudo apt-get install -y openssh-server vim git build-essential gcc-aarch64-linux-gnu zstd libssl-dev flex bison libdouble-conversion3 libxcb-cursor0 p7zip-full
+forlinx@ubuntu:~$ sudo apt-get install -y openssh-server vim git
+build-essential gcc-aarch64-linux-gnu zstd libssl-dev flex bison
+libdouble-conversion3 libxcb-cursor0 p7zip-full
 
 forlinx@ubuntu:~ $ cd ~/work/OK-MX95xx-C-linux-sdk
 ```
@@ -509,16 +519,25 @@ forlinx@ubuntu:~ $ cd ~/work/OK-MX95xx-C-linux-sdk
 Install the cross-compilation tool chain (with the release of the new version of SDK, it may need to be updated, just perform the following steps again)
 
 ```bash
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo tar -xf arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz -C /opt/arm-gnu-toolchain
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo sh fsl-imx-xwayland-glibc-x86_64-imx-image-full-armv8a-imx95-19x19-lpddr5-evk-toolchain-6.6-nanbield.sh
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo tar -xf arm-gnu-
+toolchain-12.3.rel1-x86_64-arm-none-eabi.tar.xz -C /opt/arm-gnu-
+toolchain
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo sh fsl-imx-
+xwayland-glibc-x86_64-imx-image-full-armv8a-imx95-19x19-lpddr5-evk-
+toolchain-6.6-nanbield.sh
 NXP i.MX Release Distro SDK installer version 6.6-nanbield
 ==========================================================
-Enter target directory for SDK (default: /opt/fsl-imx-xwayland/6.6-nanbield): /opt/fsl-imx-xwayland/6.6-nanbield_imx95
-You are about to install the SDK to "/opt/fsl-imx-xwayland/6.6-nanbield". Proceed [Y/n]? y 
+Enter target directory for SDK (default: /opt/fsl-imx-xwayland/6.6-
+nanbield): /opt/fsl-imx-xwayland/6.6-nanbield_imx95
+You are about to install the SDK to "/opt/fsl-imx-xwayland/6.6-
+nanbield". Proceed [Y/n]? y 
 Extracting SDK....................................
 
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo rm /opt/fsl-imx-xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/bin/ld
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo rm /opt/fsl-imx-xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/x86_64-pokysdk-linux/bin/ld
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo rm /opt/fsl-imx-
+xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/bin/ld
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk$ sudo rm /opt/fsl-imx-
+xwayland/6.6-nanbield_imx95/sysroots/x86_64-pokysdk-linux/usr/x86_64-
+pokysdk-linux/bin/ld
 ```
 
 Compile application app cross compilation tool chain
@@ -636,8 +655,11 @@ Refer to the environment variables defined in /opt/fsl-imx-xwayland/6.6-nanbield
 Take fltest\_watchdog as an example to illustrate the compilation flow
 
 ```bash
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-cmd/watchdog$ source /opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linux
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-cmd/watchdog$ make
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+cmd/watchdog$ source /opt/fsl-imx-xwayland/6.6-
+nanbield_imx95/environment-setup-armv8a-poky-linux
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+cmd/watchdog$ make
 ```
 
 The generated file is fltest\_watchdog.
@@ -645,9 +667,13 @@ The generated file is fltest\_watchdog.
 Take fltest \_ qt \_ watchdog as an example to explain compiling qt program.
 
 ```bash
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog$ source /opt/fsl-imx-xwayland/6.6-nanbield_imx95/environment-setup-armv8a-poky-linux
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog$ qmake
-forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-qt/fltest_qt_watchdog$ make
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+qt/fltest_qt_watchdog$ source /opt/fsl-imx-xwayland/6.6-
+nanbield_imx95/environment-setup-armv8a-poky-linux
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+qt/fltest_qt_watchdog$ qmake
+forlinx@ubuntu:~/work/OK-MX95xx-C-linux-sdk/appsrc/forlinx-
+qt/fltest_qt_watchdog$ make
 ```
 
 Copy the compiled fltest\_qt\_watchdog to the development board to run the test.
