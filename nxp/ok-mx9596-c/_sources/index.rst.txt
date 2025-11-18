@@ -29,6 +29,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK-MX9596-C_Linux6_6_3_User_Manual
+
 
 
 
