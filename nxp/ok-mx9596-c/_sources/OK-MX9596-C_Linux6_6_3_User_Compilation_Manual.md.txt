@@ -273,7 +273,7 @@ Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 Solution:
 
 1. Enter the BIOS interface (F2 or F12) when booting
-2. ②configuration--》intel virtual technology--》--"change disabled to enabled--"save the setting, exit and reboot.
+2. configuration--》intel virtual technology--》--"change disabled to enabled--"save the setting, exit and reboot.
 3. Reopen VMware and power on the virtual machine.
 
 If that doesn't work, just turn the firewall off and reopen the VM. (varies by machine)
