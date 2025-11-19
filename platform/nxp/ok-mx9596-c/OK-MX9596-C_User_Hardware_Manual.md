@@ -33,7 +33,7 @@ There are total six chapters:
 + Chapter 5. is the connector style used in the product, which mainly describes the size of the connector and other information;
 + Chapter 6. is the minimum system of the SoM, which mainly describes the circuit contents and circuit design drawings contained in the minimum system.
 
-## 1\. NXP **i.MX95** Description
+## 1\. NXP i.MX95 Description
 
 i.MX 95 application processor offers advanced graphics and video cores, powerful visual and machine learning acceleration, efficient CPU performance combined with real - time processing and advanced security, and an integrated EdgeLock® security domain to support energy - efficient edge computing.
 
