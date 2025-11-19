@@ -1,4 +1,4 @@
-# Linux6.6.3\_User’s Compilation Manual_V1.1
+Linux6.6.3\_User’s Compilation Manual_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -78,25 +78,15 @@ Step 7: Wait for the installation to complete;
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
 
-Step 8: After the installation is completed, you can click "Finish" for trial. If users need to use it for a long time, they need to buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
-
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869391907_b9518f16_956c_46bd_b992_1b861689c91a.png)
-
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869392115_6aa81085_4ef3_4290_a489_4bd4b65ae433.png)
+Step 8: After the installation is completed, you can click "Finish" for trial. If you need to use it for a long time, please buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
 
 You can also click “Skip”. Once done, open the VMware software, click on “Help” in the status at the top, and enter the license key in the pop-up window.
-
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869393116_048ac61f_998e_4c35_9c13_033f04e39e01.png)
-
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869393464_5f491171_240d_4973_8247_732c7e0c02a9.png)
 
 ### 1.3 VMware Network Connection
 
 By default, after the virtual machine is installed, the network connection method is set to NAT, which shares the host machine's IP address. This configuration does not need to be changed when performing tasks like installing dependencies or compiling code.
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. In this mode the virtual NAT device and the host NIC are connected to communicate for Internet access. This is the most common way to access the external network.
-
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869393704_9ebd2008_6f6b_4d92_b0f0_f0a80afd18db.png)
 
 ## 2\. Importing the Forlinx Development Environment
 
@@ -114,8 +104,6 @@ First, download the development environment provided by Forlinx. In the developm
 
 Select all the compressed packages and right click to extract them to the ok-mx95 development environment:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903286943_5b764d0c_08d6_42d1_ac7b_d34f5af1f22f.png)
-
 "OK-MX95xx-VM17.5.2-Ubuntu20.04.vmx" in the "OK-MX95xx-VM17.5.2-Ubuntu 20.04" folder is the file to be opened by the virtual machine after decompression.
 
 Open the installed virtual machine.
@@ -128,13 +116,11 @@ Select the directory where the newly extracted OK-MX95xx-VM17.5.2-Ubuntu20.04 vi
 
 After loading, click to start the virtual machine to run. Enter the system's interface.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287223_cdc90c01_dc66_4127_b71d_69c1eac471f6.png)
-
 The provided development environment account is: forlinx and the password is: forlinx, fill in the password and select Sign in to log in.
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287361_c6af7a47_eb0f_476a_a7af_824fcdc90a53.png)
 
-So far, we have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations ([**See 4. Linux Compilation**](https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8))
+So far, you have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations ([**See 4. Linux Compilation**](https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8))
 
 ## 3\. Building the Development Environment Manually
 
@@ -244,7 +230,7 @@ After that, the virtual machine starts to install the image and wait patiently.
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
 
-Solution:Right clickon my computer to manageservices and applicationservices, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
+Solution: Right click on my computer to manage services and application services, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
 
@@ -260,11 +246,9 @@ Solution: Refer to error 1.
 
 Solution:
 
-```plain
 win+R
 
-输入services.msc
-```
+Enter services.msc
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589803_7188217b_8454_464a_8b10_89f5dcfdc279.png)
 
@@ -354,7 +338,7 @@ forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 
 ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
 
-#### 3.2.3 FTP server
+#### 3.2.3 FTP Server
 
 After FTP is installed, files under Windows system and files under Ubuntu system can be transferred to each other. Due to compatibility issues between Ubuntu 22.04 and VMware Tools, file transfers are performed in this way.
 
