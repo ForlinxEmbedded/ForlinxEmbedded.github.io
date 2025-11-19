@@ -543,7 +543,7 @@ Compile application app cross compilation tool chain
 | Kernel default configuration file                            | OKMX95xx-linux-sdk/OKMX95xx-linux-kernel/arch/arm64/configs/OKMX95xx-C\_defconfig |
 | Device tree file                                             | OKMX95xx-linux-sdk/OKMX95xx-linux-kernel/arch/arm64/boot/dts/freescale/OK-MX95xx-C.dts |
 | File system source files.                                    | OKMX95xx-linux-sdk/OKMX95xx-linux-fs/                        |
-| When compiling, the files in the overlay will overwrite those with the same name under the same path in rootfs, so users can operate in the overlay-related directory when modifying the file system. |                                                              |
+| When compiling, the files in the overlay will overwrite those with the same name under the same path in rootfs,<br />so users can operate in the overlay-related directory when modifying the file system. |                                                              |
 | SDK root directory                                           | OKMX95xx-linux-sdk/                                          |
 | Test program source code                                     | OKMX95xx-linux-sdk/appsrc/                                   |
 | Generate image path                                          | OKMX95xx-linux-sdk/images                                    |
