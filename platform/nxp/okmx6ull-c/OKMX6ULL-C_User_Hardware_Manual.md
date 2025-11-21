@@ -179,7 +179,7 @@ If you need methods to adjust the junction temperature, frequency reduction temp
 |     SAI      |      ≤3      | Supports up to three I2S Audio;                              |
 |    SPDIF     |      1       | Sony Philips digital audio interface                         |
 |     UART     |      ≤8      | Each supports up to 5.0 Mbps;                                |
-|    eCSPI     |      ≤4      | Full-duplex enhanced synchronous serial interface supporting data rates up to 52 Mbit/s. It can be configured to support master/slave mode with four chip selects to support multiple peripherals. |
+|    eCSPI     |      ≤4      | Full-duplex enhanced synchronous serial interface supporting data rates up to 52 Mbit/s.<br />It can be configured to support master/slave mode with four chip selects to support multiple peripherals. |
 |     IIC      |      ≤4      |                                                              |
 |   Ethernet   |      ≤2      | 10/100Mbps adaptive;                                         |
 |     PWM      |      ≤8      | 16-bit;                                                      |
@@ -194,6 +194,10 @@ If you need methods to adjust the junction temperature, frequency reduction temp
 ### 2.5  FETMX6ULL-C SoM Pins Definition
 
 #### 2.5.1 FETMX6ULL-C SoM Pins Schematic
+
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1.png)
+
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/2.png)
 
 #### 2.5.2 FETMX6ULL-C SoM Pins Description
 
@@ -274,7 +278,7 @@ If you need methods to adjust the junction temperature, frequency reduction temp
 | L\_12 |  P8  |     P8\_POR\_B      |      \-       |  \-  | i. MX6ULL power-on reset pin, which can be left floating if not used. |        \-        |
 | L\_14 |  R8  |      R8\_ONOFF      |      \-       |  \-  |        On/Off button, can be floated when not in use.        |      ONOFF       |
 | L\_16 |  T9  |  T9\_PMIC\_ON\_REQ  |      \-       |  \-  | Control GEN\_5V and GEN\_3.3V on the carrier board to output a valid high level. |  PMIC\_ON\_REQ   |
-| L\_18 |  U9  | U9\_PMIC\_STBY\_REQ |      \-       |  \-  | PMI C Standby signal used to dynamically adjust the VDD \_ SOC \_ IN voltage (not used on the carrier board) |        \-        |
+| L\_18 |  U9  | U9\_PMIC\_STBY\_REQ |      \-       |  \-  | PMI C Standby signal used to dynamically adjust the VDD \_ SOC \_ IN voltage<br /> (not used on the carrier board) |        \-        |
 | L\_20 | T10  |  T10\_BOOT\_MODE0   | GPIO5.IO\[10] | 3.3V |                  Startup mode pin selection                  |   BOOT\_MODE0    |
 | L\_22 | U10  |  U10\_BOOT\_MODE1   | GPIO5.IO\[11] | 3.3V |                  Startup mode pin selection                  |   BOOT\_MODE1    |
 | L\_24 |  \-  |         GND         |      \-       |  0V  |                        Ground signal                         |       GND        |
@@ -312,7 +316,7 @@ If you need methods to adjust the junction temperature, frequency reduction temp
 |  NUM  | BALL |     Signal Name      |     GPIO      | VOL  |                       Pin Description                        | Defalut Function |
 | :---: | :--: | :------------------: | :-----------: | :--: | :----------------------------------------------------------: | :--------------: |
 | R\_1  |  \-  |         GND          |      \-       |  0V  |                        Ground signal                         |       GND        |
-| R\_3  |  \-  |    NVCC\_CSI\_2V8    |      \-       | 3.3V | The power SoM of the camera inside the CPU has been connected to the 3.3 V carrier board (not used on the carrier board). |        \-        |
+| R\_3  |  \-  |    NVCC\_CSI\_2V8    |      \-       | 3.3V | The power SoM of the camera inside the CPU has been connected to the 3.3 V carrier board<br />(not used on the carrier board). |        \-        |
 | R\_5  |  \-  |         GND          |      \-       |  0V  |                        Ground signal                         |       GND        |
 | R\_7  |  D1  |    D1\_CSI\_DATA7    | GPIO4.IO\[28] | 3.3V |                          CSI\_DATA7                          |    SPI1\_MISO    |
 | R\_9  |  D2  |    D2\_CSI\_DATA6    | GPIO4.IO\[27] | 3.3V |                          CSI\_DATA6                          |    SPI1\_MOSI    |
@@ -411,7 +415,7 @@ Please refer to section 3.5 in “Chapter 3. OKMX6ULL-C Carrier Board Descriptio
 
 The connection of OKMX6ULL-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134486591_6015cd25_c332_42d1_aca6_a8de7ed40747.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134486591_6015cd25_c332_42d1_aca6_a8de7ed40747.jpg)
 
 ### 3.2 OKMX6ULL-C SoM Dimension Diagram
 
