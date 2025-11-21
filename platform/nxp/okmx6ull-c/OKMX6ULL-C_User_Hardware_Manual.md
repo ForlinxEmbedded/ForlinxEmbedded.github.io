@@ -316,7 +316,7 @@ If you need methods to adjust the junction temperature, frequency reduction temp
 |  NUM  | BALL |     Signal Name      |     GPIO      | VOL  |                       Pin Description                        | Defalut Function |
 | :---: | :--: | :------------------: | :-----------: | :--: | :----------------------------------------------------------: | :--------------: |
 | R\_1  |  \-  |         GND          |      \-       |  0V  |                        Ground signal                         |       GND        |
-| R\_3  |  \-  |    NVCC\_CSI\_2V8    |      \-       | 3.3V | The power SoM of the camera inside the CPU has been connected to the 3.3 V carrier board<br />(not used on the carrier board). |        \-        |
+| R\_3  |  \-  |    NVCC\_CSI\_2V8    |      \-       | 3.3V | The power SoM of the camera inside the CPU<br />has been connected to the 3.3 V carrier board<br />(not used on the carrier board). |        \-        |
 | R\_5  |  \-  |         GND          |      \-       |  0V  |                        Ground signal                         |       GND        |
 | R\_7  |  D1  |    D1\_CSI\_DATA7    | GPIO4.IO\[28] | 3.3V |                          CSI\_DATA7                          |    SPI1\_MISO    |
 | R\_9  |  D2  |    D2\_CSI\_DATA6    | GPIO4.IO\[27] | 3.3V |                          CSI\_DATA6                          |    SPI1\_MOSI    |
