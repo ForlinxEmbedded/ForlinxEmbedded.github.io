@@ -1,0 +1,2478 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OKMX6ULL-C_User’s Hardware Manual_V1.1 &mdash; Forlinx Embedded i.MX6ULL Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/okmx6ull-c/OKMX6ULL-C_User_Hardware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OKMX6ULL-C Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OKMX6ULL-C_User’s Hardware Manual_V1.1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-to-imx6ull">1. Introduction to iMX6ULL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fetmx6ull-c-som-description">2. FETMX6ULL-C SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fetmx6ull-c-som-appearance">2.1 FETMX6ULL-C SoM Appearance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fetmx6ull-c-som-dimension-diagram">2.2 FETMX6ULL-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameters">2.3 Performance Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-main-frequency">2.3.1 System Main Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-environment">2.3.3 Operating Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#som-interface-speed">2.3.4 SoM Interface Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esd-features">2.3.5 ESD  Features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.4 SoM Interface Speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fetmx6ull-c-som-pins-definition">2.5  FETMX6ULL-C SoM Pins Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fetmx6ull-c-som-pins-schematic">2.5.1 FETMX6ULL-C SoM Pins Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fetmx6ull-c-som-pins-description">2.5.2 FETMX6ULL-C SoM Pins Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.6 SoM Hardware Design Description</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#okmx6ull-c-development-board-description">3. OKMX6ULL-C Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#okmx6ull-c-development-board-interface-diagram">3.1 OKMX6ULL-C Development Board Interface Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#okmx6ull-c-som-dimension-diagram">3.2 OKMX6ULL-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-naming-rules">3.3 Carrier Board Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-resources">3.4 Carrier Board Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#okmx6ull-c-carrier-board-description">3.5 OKMX6ULL-C Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switch-key-reset-key">3.5.2 Switch Key &amp; Reset Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-configuration">3.5.3 Boot Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging-serial-port">3.5.4 Debugging Serial Port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#general-serial-port-spi-and-i2c-interfaces">3.5.5 General Serial Port, SPI, and I2C Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can">3.5.6 CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.7 TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc">3.5.8 RTC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-led">3.5.9 User LED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">3.5.10 Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-host-interface">3.5.11 USB Host Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-otg-interfaces">3.5.12 USB OTG Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-interface">3.5.13 4G Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-bluetooth">3.5.14 WiFi &amp; Bluetooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-100-mbit-ethernet">3.5.15 Dual 100 Mbit Ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lcd-display-interface">3.5.16 LCD Display Interface</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-design-guide">4. Hardware Design Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.1 Boot Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pmic-on-req-driving-capability-issue">4.2 PMIC_ON_REQ Driving Capability Issue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pull-up-resistors-on-the-iic-bus">4.3 Pull-up Resistors on the IIC Bus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb1-1-error-during-debugging">4.4 USB1 - 1 Error During Debugging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-level-of-the-can-circuit-rx-pin">4.5 Output Level of the CAN Circuit RX Pin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#power-consumption-of-the-whole-machine-under-linux">5. Power Consumption of the Whole Machine Under Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connector-dimension-diagram">6. Connector Dimension Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">7. Power Consumption of the Whole Machine Under Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-system-schematic">8. Minimum System Schematic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">9. Minimum System Schematic</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded i.MX6ULL Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OKMX6ULL-C_User’s Hardware Manual_V1.1</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="okmx6ull-c-users-hardware-manual-v1-1">
+<h1>OKMX6ULL-C_User’s Hardware Manual_V1.1<a class="headerlink" href="#okmx6ull-c-users-hardware-manual-v1-1" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This manul is mainly applicable to the Forlinx OKMX6ULL-C platform.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
+<th class="head text-center"><p>User Manual Version</p></th>
+<th class="head text-center"><p>SoM Version</p></th>
+<th class="head text-center"><p>Carrier Board Version</p></th>
+<th class="head text-center"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>11/06/2024</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>OKMX6ULL-C_User’s Hardware Manual Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>09/07/2025</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V2.0</p></td>
+<td class="text-center"><p>CPU junction temperature is added to the introduction of the SoM.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>There are total four chapters:</p>
+<p>Chapter 1. is CPU overview, briefly introducing its performance and applications;</p>
+<p>Chapter 2. is comprehensive introduction to the SoM, including connector pins explanations and function introductions;</p>
+<p>Chapter 3. is comprehensive introduction to the development board, divided into multiple chapters, including both hardware principles and simple design ideas;</p>
+<p>Chapter 4. mainly describes the board’s power consumption performance and other considerations.</p>
+</section>
+<section id="introduction-to-imx6ull">
+<h2>1. Introduction to iMX6ULL<a class="headerlink" href="#introduction-to-imx6ull" title="Link to this heading"></a></h2>
+<p>Freescalei.MX6ULL extends the i.MX6 series, offering a high-performance, ultra-efficient processor sub-series built on advanced ARM Cortex-A7 cores operating at up to 800MHz. i.MX6ULL application processor features an integrated power management module, which reduces the complexity of external power supplies and simplifies power-up sequences. Target applications include:</p>
+<p>· Automotive Telematics</p>
+<p>· IoT Gateway</p>
+<p>· HMI</p>
+<p>· Home Energy Management System</p>
+<p>· Smart Energy Information Concentrator</p>
+<p>· Intelligent Industrial Control System</p>
+<p>· Electronic POS Equipment</p>
+<p>·Portable Medical Equipment</p>
+<p>· Printer and 2D Scanner</p>
+<p>……</p>
+<p><strong>i.MX6ULL Block Diagram</strong></p>
+<p><img alt="Image" src="_images/1715133598107_c15d6e78_0717_40b4_9071_3c9cf3ef34dc.png" /></p>
+<p><img alt="Image" src="_images/1715133598448_f51ef79e_49f7_4fda_a03b_fa2eeafeeed7.png" /></p>
+<p>FETMX6ULL-C SoM CPU is based on the MCIMX6Y2.</p>
+<p>Each model in the i.MX6ULL sub-series offers multiple memory interfaces, including 16-bit LPDDR2, DDR3, DDR3L, standard NAND flash, NAND flash with built-in management units, NOR flash, eMMC, Quad SPI, as well as peripheral interfaces for connecting devices such as WLAN, Bluetooth, GPS, displays, and camera sensors. i.MX6ULL sub-series is supported by discrete device power supply circuit.</p>
+<p>For more information about the i.MX6ULL, please visit the NXP (formerly Freescale) official website:</p>
+<p>URL：</p>
+<p><a class="reference external" href="https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx-6ull-single-core-processor-with-arm-cortex-a7-core:i.MX6ULL">https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx-6ull-single-core-processor-with-arm-cortex-a7-core:i.MX6ULL</a></p>
+</section>
+<section id="fetmx6ull-c-som-description">
+<h2>2. FETMX6ULL-C SoM Description<a class="headerlink" href="#fetmx6ull-c-som-description" title="Link to this heading"></a></h2>
+<section id="fetmx6ull-c-som-appearance">
+<h3>2.1 FETMX6ULL-C SoM Appearance<a class="headerlink" href="#fetmx6ull-c-som-appearance" title="Link to this heading"></a></h3>
+<p>FETMX6ULL-C SoM</p>
+<p><img alt="Image" src="_images/1715134390779_dd46cf96_8943_4def_b5fc_20835e014a83.png" /></p>
+<p><strong>Front</strong></p>
+<p><img alt="Image" src="_images/1715134391341_f2252c3a_def3_4d6e_b4ef_08e4dcc3d403.png" /></p>
+<p><strong>Back</strong></p>
+</section>
+<section id="fetmx6ull-c-som-dimension-diagram">
+<h3>2.2 FETMX6ULL-C SoM Dimension Diagram<a class="headerlink" href="#fetmx6ull-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p>FETMX6ULL-C SoM Dimension Diagram</p>
+<p><img alt="Image" src="_images/1715134391861_d9c1ca94_b9b0_4b6d_9b1e_79c27569e332.png" /></p>
+<p>Structure size: 40mm×29mm</p>
+<p>Plate making process: 1.0mm thickness, 8-layer immersion gold PCB.</p>
+<p>Connector: 2 x 0.5mm pitch, 80pin board-to-board connectors. You can directly contact our sales to get a connector size chart in the appendix for a specific connector model.</p>
+<p>Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facilitate the installation of fixing screws and to improve the reliability of the product connection so that the product can be used in vibration environments.</p>
+<p>Please refer to the development board design and use SMT nuts of M2 with <font style="color:#FF0000;background-color:yellow;">L=2mm or L=2.5mm</font>on the carrier board. Please refer to the following figure for the specifications of the SMT nuts.</p>
+<p><img alt="Image" src="_images/1715134392236_d76e2cdb_9e39_4185_a6ce_e803908fd8c2.jpeg" /></p>
+<p><img alt="Image" src="_images/1715134392493_5654c15d_e742_4825_a86a_403becca0b1b.jpeg" /></p>
+</section>
+<section id="performance-parameters">
+<h3>2.3 Performance Parameters<a class="headerlink" href="#performance-parameters" title="Link to this heading"></a></h3>
+<section id="system-main-frequency">
+<h4>2.3.1 System Main Frequency<a class="headerlink" href="#system-main-frequency" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Name</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Frequency</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>800</p></td>
+<td><p>MHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RTC clock</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="power-parameter">
+<h4>2.3.2 Power Parameter<a class="headerlink" href="#power-parameter" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Pin Number</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Power Supply Voltage</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>2.4</p></td>
+<td><p>3.3</p></td>
+<td><p>3.6</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>No-load current</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>130</p></td>
+<td><p>—</p></td>
+<td><p>130</p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>High-load current</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p>154</p></td>
+<td><p>—</p></td>
+<td><p>190</p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>Video playback status</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operating-environment">
+<h4>2.3.3 Operating Environment<a class="headerlink" href="#operating-environment" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Temperature Level</p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+85</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>Industrial grade, the CPU junction temperature is increased during testing.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Humidity</p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p>No condensation</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>During the environmental adaptability test, Forlinx increased the CPU junction temperature to ensure the normal progress of the test. This measure is only applicable to the test phase.</p>
+<p>In actual high - temperature usage scenarios, the CPU will automatically reduce its frequency under high temperatures. Moreover, long - term operation under high - temperature conditions will affect the CPU’s service life. Please evaluate according to the actual application scenarios.</p>
+<p>If you need methods to adjust the junction temperature, frequency reduction temperature, and amplitude, please contact Forlinx’s FAE.</p>
+</section>
+<section id="som-interface-speed">
+<h4>2.3.4 SoM Interface Speed<a class="headerlink" href="#som-interface-speed" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Serial Port Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>115200</p></td>
+<td><p>—</p></td>
+<td><p>bps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>52</p></td>
+<td><p>Mbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>IIC Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>100</p></td>
+<td><p>400</p></td>
+<td><p>Kbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN Communication Speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>1</p></td>
+<td><p>Mbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SD/SDIO</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>200</p></td>
+<td><p>Mbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB interface speed</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>480</p></td>
+<td><p>Mbps</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>AD conversion time</p></td>
+<td class="text-center"><p>0.7</p></td>
+<td><p>—</p></td>
+<td><p>1.25</p></td>
+<td><p>us</p></td>
+<td class="text-center"><p>Fadc=40 MHz</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="esd-features">
+<h4>2.3.5 ESD  Features<a class="headerlink" href="#esd-features" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Unit</strong></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ESD HBM(ESDA/JEDEC JS-001-2017)</p></td>
+<td class="text-center"><p></p></td>
+<td><p>2000</p></td>
+<td class="text-center"><p>V</p></td>
+<td class="text-center"><p>Applicable to all pins of the SoM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>ESD CDM(ESDA/JEDEC JS-002-2018)</p></td>
+<td class="text-center"><p></p></td>
+<td><p>500</p></td>
+<td class="text-center"><p>V</p></td>
+<td class="text-center"><p>Applicable to all pins of the SoM</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note：</strong></p>
+<ul class="simple">
+<li><p><strong>The above data is from the chip manual;</strong></p></li>
+<li><p><strong>All SoM outgoing signals are electrostatic sensitive, requiring effective protection in carrier board design. Special attention to electrostatic protection is also needed during transportation, assembly, and use.</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="id1">
+<h3>2.4 SoM Interface Speed<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LCD</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Up to RGB 888 24-bit, up to WXGA (1366 X 768));</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>CAMERA</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>8-bit parallel interface (DVP) supporting up to 5-Megapixel;</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD/MMC/SDIO</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>Supports 1-bit or 4-bit transmission modes for SD and SDIO cards, with a maximum clock of 50MHZ</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>USB 2.0 (supporting up to 480 Mbps) with integrated HS USB Phy.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SAI</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td><p>Supports up to three I2S Audio;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPDIF</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Sony Philips digital audio interface</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>≤8</p></td>
+<td><p>Each supports up to 5.0 Mbps;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>eCSPI</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td><p>Full-duplex enhanced synchronous serial interface supporting data rates up to 52 Mbit/s. It can be configured to support master/slave mode with four chip selects to support multiple peripherals.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>IIC</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>10/100Mbps adaptive;</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>≤8</p></td>
+<td><p>16-bit;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>Support</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>KeyPad Port</p></td>
+<td class="text-center"><p>Support</p></td>
+<td><p>8*8；</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>CAN</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>CAN protocol version 2.0B specification</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>ADC</p></td>
+<td class="text-center"><p>≤10</p></td>
+<td><p>Two 12-bit analog-to-digital converters (ADC) with support for up to 10 input channel.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>eSAI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: The parameters in the table are the theoretical values of hardware design or CPU.</strong></p>
+</section>
+<section id="fetmx6ull-c-som-pins-definition">
+<h3>2.5  FETMX6ULL-C SoM Pins Definition<a class="headerlink" href="#fetmx6ull-c-som-pins-definition" title="Link to this heading"></a></h3>
+<section id="fetmx6ull-c-som-pins-schematic">
+<h4>2.5.1 FETMX6ULL-C SoM Pins Schematic<a class="headerlink" href="#fetmx6ull-c-som-pins-schematic" title="Link to this heading"></a></h4>
+</section>
+<section id="fetmx6ull-c-som-pins-description">
+<h4>2.5.2 FETMX6ULL-C SoM Pins Description<a class="headerlink" href="#fetmx6ull-c-som-pins-description" title="Link to this heading"></a></h4>
+<p><strong>Note1:</strong></p>
+<p><strong>Num ——SoM connector pin no.:</strong></p>
+<p><strong>Ball —— CPU pin ball no.</strong></p>
+<p><strong>GPIO ——CPU pin general I/O port serial number</strong></p>
+<p><strong>Vol  ——Pin signal level</strong></p>
+<p><strong>Note2:</strong></p>
+<p><strong>Signal Name——SoM connector network name</strong></p>
+<p><strong>Pin Description—— SoM Pin Signal Descriptions</strong></p>
+<p><strong>Default function-All pin functions of the SoM are specified according to the “default function” in the table below. Please do not modify it, otherwise it may be delivered from the factory. If you have any questions about drive conflict. , please contact our sales or technical support.</strong></p>
+<p><strong>Note3: The pins marked as “Do not use on carrier board” in the “Default Function” column are those already utilized by the core board and should not be used in the design of the baseboard.</strong></p>
+<p><strong>Table 1. Definition of P1 Odd Pins of SoM</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head"><p>GPIO</p></th>
+<th class="head"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head"><p>Defalut Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>L_1</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>System power</p></td>
+<td><p>VSYS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_3</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>System power</p></td>
+<td><p>VSYS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_5</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_7</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_9</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>VDD_COIN_3V</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>RTC battery input</p></td>
+<td><p>COIN_3V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_11</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_13</p></td>
+<td><p>U12</p></td>
+<td class="text-center"><p>U12_USB_OTG2_VBUS</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>USB main port power supply</p></td>
+<td><p>USB_OTG2_VBUS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_15</p></td>
+<td><p>U13</p></td>
+<td class="text-center"><p>U13_USB_OTG2_DP</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>USB main port data+</p></td>
+<td><p>USB_OTG2_DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_17</p></td>
+<td><p>T13</p></td>
+<td class="text-center"><p>T13_USB_OTG2_DN</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>USB main port data+</p></td>
+<td><p>USB_OTG2_DN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_19</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_21</p></td>
+<td><p>T12</p></td>
+<td class="text-center"><p>T12_USB_OTG1_VBUS</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>USB OTG Power</p></td>
+<td><p>USB_OTG1_VBUS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_23</p></td>
+<td><p>T15</p></td>
+<td class="text-center"><p>T15_USB_OTG1_DN</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>USB OTG data-</p></td>
+<td><p>USB_OTG1_DN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_25</p></td>
+<td><p>U15</p></td>
+<td class="text-center"><p>U15_USB_OTG1_DP</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>USB OTG data+</p></td>
+<td><p>USB_OTG1_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_27</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_29</p></td>
+<td><p>R9</p></td>
+<td class="text-center"><p>R9_SNVS_TAMPER1</p></td>
+<td><p>GPIO5.IO[1]</p></td>
+<td><p>3.3V</p></td>
+<td><p>SNVS TAMPER enter 1</p></td>
+<td><p>SNVS_TAMPER1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_31</p></td>
+<td><p>P10</p></td>
+<td class="text-center"><p>P10_SNVS_TAMPER3</p></td>
+<td><p>GPIO5.IO[3]</p></td>
+<td><p>3.3V</p></td>
+<td><p>SNVS TAMPER enter 3</p></td>
+<td><p>SoM heartbeat LED</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_33</p></td>
+<td><p>N8</p></td>
+<td class="text-center"><p>N8_SNVS_TAMPER5</p></td>
+<td><p>GPIO5.IO[5]</p></td>
+<td><p>3.3V</p></td>
+<td><p>SNVS TAMPER enter 5</p></td>
+<td><p>SNVS_TAMPER5</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_35</p></td>
+<td><p>N10</p></td>
+<td class="text-center"><p>N10_SNVS_TAMPER7</p></td>
+<td><p>GPIO5.IO[7]</p></td>
+<td><p>3.3V</p></td>
+<td><p>SNVS TAMPER enter 7</p></td>
+<td><p>SNVS_TAMPER7</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_37</p></td>
+<td><p>R6</p></td>
+<td class="text-center"><p>R6_SNVS_TAMPER9</p></td>
+<td><p>GPIO5.IO[9]</p></td>
+<td><p>3.3V</p></td>
+<td><p>SNVS TAMPER enter 9</p></td>
+<td><p>SNVS_TAMPER9</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_39</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_41</p></td>
+<td><p>P15</p></td>
+<td class="text-center"><p>P15_SPDIF_TX</p></td>
+<td><p>GPIO1.IO[10]</p></td>
+<td><p>3.3V</p></td>
+<td><p>JTAG mode selection</p></td>
+<td><p>Carrier board LED</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_43</p></td>
+<td><p>M14</p></td>
+<td class="text-center"><p>M14_SAI2_RXD</p></td>
+<td><p>GPIO1.IO[14]</p></td>
+<td><p>3.3V</p></td>
+<td><p>JTAG test clock</p></td>
+<td><p>SAI2_RXD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_45</p></td>
+<td><p>N14</p></td>
+<td class="text-center"><p>N14_SAI2_TXD</p></td>
+<td><p>GPIO1.IO[15]</p></td>
+<td><p>3.3V</p></td>
+<td><p>JTAG test reset</p></td>
+<td><p>SAI2_TXD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_47</p></td>
+<td><p>N15</p></td>
+<td class="text-center"><p>N15_SAI2_SYNC</p></td>
+<td><p>GPIO1.IO[12]</p></td>
+<td><p>3.3V</p></td>
+<td><p>JTAG test data output</p></td>
+<td><p>SAI2_SYNC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_49</p></td>
+<td><p>N16</p></td>
+<td class="text-center"><p>N16_SAI2_BCLK</p></td>
+<td><p>GPIO1.IO[13]</p></td>
+<td><p>3.3V</p></td>
+<td><p>JTAG test data input</p></td>
+<td><p>SAI2_BCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_51</p></td>
+<td><p>P14</p></td>
+<td class="text-center"><p>P14_SAI2_MCLK</p></td>
+<td><p>GPIO1.IO[11]</p></td>
+<td><p>3.3V</p></td>
+<td><p>JTAG test mode selection</p></td>
+<td><p>SAI2_MCLK</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_53</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_55</p></td>
+<td><p>J17</p></td>
+<td class="text-center"><p>J17_UART2_TXD</p></td>
+<td><p>GPIO1.IO[20]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART2 sending</p></td>
+<td><p>UART2_TXD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_57</p></td>
+<td><p>J16</p></td>
+<td class="text-center"><p>J16_UART2_RXD</p></td>
+<td><p>GPIO1.IO[21]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART2 receiving</p></td>
+<td><p>UART2_RXD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_59</p></td>
+<td><p>H14</p></td>
+<td class="text-center"><p>H14_UART2_RTS</p></td>
+<td><p>GPIO1.IO[23]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART2 request sending</p></td>
+<td><p>UART2_RTS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_61</p></td>
+<td><p>J15</p></td>
+<td class="text-center"><p>J15_UART2_CTS</p></td>
+<td><p>GPIO1.IO[22]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART2 clear sending</p></td>
+<td><p>UART2_CTS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_63</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_65</p></td>
+<td><p>H17</p></td>
+<td class="text-center"><p>H17_UART3_TXD</p></td>
+<td><p>GPIO1.IO[24]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 sending</p></td>
+<td><p>UART3_TXD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_67</p></td>
+<td><p>H16</p></td>
+<td class="text-center"><p>H16_UART3_RXD</p></td>
+<td><p>GPIO1.IO[25]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 receiving</p></td>
+<td><p>UART3_RXD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_69</p></td>
+<td><p>G14</p></td>
+<td class="text-center"><p>G14_UART3_RTS</p></td>
+<td><p>GPIO1.IO[27]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 request sending</p></td>
+<td><p>UART3_RTS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_71</p></td>
+<td><p>H15</p></td>
+<td class="text-center"><p>H15_UART3_CTS</p></td>
+<td><p>GPIO1.IO[26]</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 clear sending</p></td>
+<td><p>UART3_CTS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_73</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_75</p></td>
+<td><p>P16</p></td>
+<td class="text-center"><p>P16_CLK1_N</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Clock output-</p></td>
+<td><p>CLK1_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_77</p></td>
+<td><p>P17</p></td>
+<td class="text-center"><p>P17_CLK1_P</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Clock output+</p></td>
+<td><p>CLK1_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_79</p></td>
+<td><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>0V</p></td>
+<td><p>Ground signal</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2. Definition of P1 Even Pins of SoM</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head text-center"><p>Pin Description</p></th>
+<th class="head text-center"><p>Defalut Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>L_2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>System power</p></td>
+<td class="text-center"><p>VSYS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_4</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>System power</p></td>
+<td class="text-center"><p>VSYS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_6</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_8</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_10</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>RESET</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SoM power-off reset, low level active.</p></td>
+<td class="text-center"><p>RESET</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_12</p></td>
+<td class="text-center"><p>P8</p></td>
+<td class="text-center"><p>P8_POR_B</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>i. MX6ULL power-on reset pin, which can be left floating if not used.</p></td>
+<td class="text-center"><p>-</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_14</p></td>
+<td class="text-center"><p>R8</p></td>
+<td class="text-center"><p>R8_ONOFF</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>On/Off button, can be floated when not in use.</p></td>
+<td class="text-center"><p>ONOFF</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_16</p></td>
+<td class="text-center"><p>T9</p></td>
+<td class="text-center"><p>T9_PMIC_ON_REQ</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Control GEN_5V and GEN_3.3V on the carrier board to output a valid high level.</p></td>
+<td class="text-center"><p>PMIC_ON_REQ</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_18</p></td>
+<td class="text-center"><p>U9</p></td>
+<td class="text-center"><p>U9_PMIC_STBY_REQ</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PMI C Standby signal used to dynamically adjust the VDD _ SOC _ IN voltage (not used on the carrier board)</p></td>
+<td class="text-center"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_20</p></td>
+<td class="text-center"><p>T10</p></td>
+<td class="text-center"><p>T10_BOOT_MODE0</p></td>
+<td class="text-center"><p>GPIO5.IO[10]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Startup mode pin selection</p></td>
+<td class="text-center"><p>BOOT_MODE0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_22</p></td>
+<td class="text-center"><p>U10</p></td>
+<td class="text-center"><p>U10_BOOT_MODE1</p></td>
+<td class="text-center"><p>GPIO5.IO[11]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Startup mode pin selection</p></td>
+<td class="text-center"><p>BOOT_MODE1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_24</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_26</p></td>
+<td class="text-center"><p>R10</p></td>
+<td class="text-center"><p>R10_SNVS_TAMPER0</p></td>
+<td class="text-center"><p>GPIO5.IO[0]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SNVS TAMPER enter 0</p></td>
+<td class="text-center"><p>ACC_INT</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_28</p></td>
+<td class="text-center"><p>P11</p></td>
+<td class="text-center"><p>P11_SNVS_TAMPER2</p></td>
+<td class="text-center"><p>GPIO5.IO[2]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SNVS TAMPER enter 2</p></td>
+<td class="text-center"><p>ENET2_NINT</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_30</p></td>
+<td class="text-center"><p>P9</p></td>
+<td class="text-center"><p>P9_SNVS_TAMPER4</p></td>
+<td class="text-center"><p>GPIO5.IO[4]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SNVS TAMPER enter 4</p></td>
+<td class="text-center"><p>ENET2_NRST</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_32</p></td>
+<td class="text-center"><p>N11</p></td>
+<td class="text-center"><p>N11_SNVS_TAMPER6</p></td>
+<td class="text-center"><p>GPIO5.IO[6]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SNVS TAMPER enter 6</p></td>
+<td class="text-center"><p>ENET1_NINT</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_34</p></td>
+<td class="text-center"><p>N9</p></td>
+<td class="text-center"><p>N9_SNVS_TAMPER8</p></td>
+<td class="text-center"><p>GPIO5.IO[8]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SNVS TAMPER enter 8</p></td>
+<td class="text-center"><p>ENET1_NRST</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_36</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_38</p></td>
+<td class="text-center"><p>K13</p></td>
+<td class="text-center"><p>K13_GPIO_0</p></td>
+<td class="text-center"><p>GPIO1.IO[0]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>GPIO_0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_40</p></td>
+<td class="text-center"><p>L15</p></td>
+<td class="text-center"><p>L15_GPIO_1</p></td>
+<td class="text-center"><p>GPIO1.IO[1]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>GPIO_1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_42</p></td>
+<td class="text-center"><p>L14</p></td>
+<td class="text-center"><p>L14_GPIO_2</p></td>
+<td class="text-center"><p>GPIO1.IO[2]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>GPIO_2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_44</p></td>
+<td class="text-center"><p>L17</p></td>
+<td class="text-center"><p>L17_GPIO_3</p></td>
+<td class="text-center"><p>GPIO1.IO[3]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>GPIO_3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_46</p></td>
+<td class="text-center"><p>M16</p></td>
+<td class="text-center"><p>M16_GPIO_4</p></td>
+<td class="text-center"><p>GPIO1.IO[4]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>GPIO_4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_48</p></td>
+<td class="text-center"><p>M17</p></td>
+<td class="text-center"><p>M17_GPIO_5</p></td>
+<td class="text-center"><p>GPIO1.IO[5]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O（ Don’t use for the carrier board）</p></td>
+<td class="text-center"><p>-</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_50</p></td>
+<td class="text-center"><p>K17</p></td>
+<td class="text-center"><p>K17_GPIO_6</p></td>
+<td class="text-center"><p>GPIO1.IO[6]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>ENET_MDIO</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_52</p></td>
+<td class="text-center"><p>L16</p></td>
+<td class="text-center"><p>L16_GPIO_7</p></td>
+<td class="text-center"><p>GPIO1.IO[7]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>ENET_MDC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_54</p></td>
+<td class="text-center"><p>N17</p></td>
+<td class="text-center"><p>N17_GPIO_8</p></td>
+<td class="text-center"><p>GPIO1.IO[8]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>BLT_PWM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_56</p></td>
+<td class="text-center"><p>M15</p></td>
+<td class="text-center"><p>M15_GPIO_9</p></td>
+<td class="text-center"><p>GPIO1.IO[9]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General I/O</p></td>
+<td class="text-center"><p>WIFI_EN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_58</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_60</p></td>
+<td class="text-center"><p>K14</p></td>
+<td class="text-center"><p>K14_UART1_TXD</p></td>
+<td class="text-center"><p>GPIO1.IO[16]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 (debug serial port) sending</p></td>
+<td class="text-center"><p>UART1_TXD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_62</p></td>
+<td class="text-center"><p>K16</p></td>
+<td class="text-center"><p>K16_UART1_RXD</p></td>
+<td class="text-center"><p>GPIO1.IO[17]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 (debug serial port) receiving</p></td>
+<td class="text-center"><p>UART1_RXD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_64</p></td>
+<td class="text-center"><p>J14</p></td>
+<td class="text-center"><p>J14_UART1_RTS</p></td>
+<td class="text-center"><p>GPIO1.IO[19]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 (debug serial port) request sending</p></td>
+<td class="text-center"><p>SD1_CD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_66</p></td>
+<td class="text-center"><p>K15</p></td>
+<td class="text-center"><p>K15_UART1_CTS</p></td>
+<td class="text-center"><p>GPIO1.IO[18]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1 (debug serial port) clear sending</p></td>
+<td class="text-center"><p>CAN_STBY</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_68</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_70</p></td>
+<td class="text-center"><p>G17</p></td>
+<td class="text-center"><p>G17_UART4_TXD</p></td>
+<td class="text-center"><p>GPIO1.IO[28]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART4 sending</p></td>
+<td class="text-center"><p>UART4_TXD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_72</p></td>
+<td class="text-center"><p>G16</p></td>
+<td class="text-center"><p>G16_UART4_RXD</p></td>
+<td class="text-center"><p>GPIO1.IO[29]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART4 receiving</p></td>
+<td class="text-center"><p>UART4_RXD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_74</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_76</p></td>
+<td class="text-center"><p>F17</p></td>
+<td class="text-center"><p>F17_UART5_TXD</p></td>
+<td class="text-center"><p>GPIO1.IO[30]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART5 sending</p></td>
+<td class="text-center"><p>UART5_TXD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>L_78</p></td>
+<td class="text-center"><p>G13</p></td>
+<td class="text-center"><p>G13_UART5_RXD</p></td>
+<td class="text-center"><p>GPIO1.IO[31]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART5 receiving</p></td>
+<td class="text-center"><p>UART5_RXD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>L_80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 3. Definition of P2 Odd Pins of SoM</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head text-center"><p>Pin Description</p></th>
+<th class="head text-center"><p>Defalut Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>R_1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NVCC_CSI_2V8</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>The power SoM of the camera inside the CPU has been connected to the 3.3 V carrier board (not used on the carrier board).</p></td>
+<td class="text-center"><p>-</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_5</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_7</p></td>
+<td class="text-center"><p>D1</p></td>
+<td class="text-center"><p>D1_CSI_DATA7</p></td>
+<td class="text-center"><p>GPIO4.IO[28]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA7</p></td>
+<td class="text-center"><p>SPI1_MISO</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_9</p></td>
+<td class="text-center"><p>D2</p></td>
+<td class="text-center"><p>D2_CSI_DATA6</p></td>
+<td class="text-center"><p>GPIO4.IO[27]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA6</p></td>
+<td class="text-center"><p>SPI1_MOSI</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_11</p></td>
+<td class="text-center"><p>D3</p></td>
+<td class="text-center"><p>D3_CSI_DATA5</p></td>
+<td class="text-center"><p>GPIO4.IO[26]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA5</p></td>
+<td class="text-center"><p>SPI1_CS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_13</p></td>
+<td class="text-center"><p>D4</p></td>
+<td class="text-center"><p>D4_CSI_DATA4</p></td>
+<td class="text-center"><p>GPIO4.IO[25]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA4</p></td>
+<td class="text-center"><p>SPI1_SCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_15</p></td>
+<td class="text-center"><p>E1</p></td>
+<td class="text-center"><p>E1_CSI_DATA3</p></td>
+<td class="text-center"><p>GPIO4.IO[24]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA3</p></td>
+<td class="text-center"><p>SPI2_MISO</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_17</p></td>
+<td class="text-center"><p>E2</p></td>
+<td class="text-center"><p>E2_CSI_DATA2</p></td>
+<td class="text-center"><p>GPIO4.IO[23]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA2</p></td>
+<td class="text-center"><p>SPI2_MOSI</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_19</p></td>
+<td class="text-center"><p>E3</p></td>
+<td class="text-center"><p>E3_CSI_DATA1</p></td>
+<td class="text-center"><p>GPIO4.IO[22]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA1</p></td>
+<td class="text-center"><p>SPI2_CS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_21</p></td>
+<td class="text-center"><p>E4</p></td>
+<td class="text-center"><p>E4_CSI_DATA0</p></td>
+<td class="text-center"><p>GPIO4.IO[21]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_DATA0</p></td>
+<td class="text-center"><p>SPI2_SCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_23</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_25</p></td>
+<td class="text-center"><p>F5</p></td>
+<td class="text-center"><p>F5_CSI_MCLK</p></td>
+<td class="text-center"><p>GPIO4.IO[17]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_MCLK</p></td>
+<td class="text-center"><p>I2C1_SDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_27</p></td>
+<td class="text-center"><p>F2</p></td>
+<td class="text-center"><p>F2_CSI_VSYNC</p></td>
+<td class="text-center"><p>GPIO4.IO[19]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_VSYNC</p></td>
+<td class="text-center"><p>I2C2_SDA</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_29</p></td>
+<td class="text-center"><p>F3</p></td>
+<td class="text-center"><p>F3_CSI_HSYNC</p></td>
+<td class="text-center"><p>GPIO4.IO[20]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_HSYNC</p></td>
+<td class="text-center"><p>I2C2_SCL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_31</p></td>
+<td class="text-center"><p>E5</p></td>
+<td class="text-center"><p>E5_CSI_PIXCLK</p></td>
+<td class="text-center"><p>GPIO4.IO[18]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>CSI_PIXCLK</p></td>
+<td class="text-center"><p>I2C1_SCL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_33</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_35</p></td>
+<td class="text-center"><p>U16</p></td>
+<td class="text-center"><p>U16_nUSB_OTG1_CHD</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>USB charging control terminal (not used on the carrier board)</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_37</p></td>
+<td class="text-center"><p>E9</p></td>
+<td class="text-center"><p>E9_LCD_RST</p></td>
+<td class="text-center"><p>GPIO3.IO[4]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RGB interface reset signal (not used on the carrier board)</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_39</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_41</p></td>
+<td class="text-center"><p>A16</p></td>
+<td class="text-center"><p>A16_ENET2_TXD1</p></td>
+<td class="text-center"><p>GPIO2.IO[12]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface sending data 1</p></td>
+<td class="text-center"><p>ENET2_TXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_43</p></td>
+<td class="text-center"><p>A15</p></td>
+<td class="text-center"><p>A15_ENET2_TXD0</p></td>
+<td class="text-center"><p>GPIO2.IO[11]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface sending data 0</p></td>
+<td class="text-center"><p>ENET2_TXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_45</p></td>
+<td class="text-center"><p>B15</p></td>
+<td class="text-center"><p>B15_ENET2_TXEN</p></td>
+<td class="text-center"><p>GPIO2.IO[13]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface sending enable</p></td>
+<td class="text-center"><p>ENET2_TXEN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_47</p></td>
+<td class="text-center"><p>D16</p></td>
+<td class="text-center"><p>D16_ENET2_RXER</p></td>
+<td class="text-center"><p>GPIO2.IO[15]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface frame error</p></td>
+<td class="text-center"><p>ENET2_RXER</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_49</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>GPIO1.IO[6]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_51</p></td>
+<td class="text-center"><p>B17</p></td>
+<td class="text-center"><p>B17_ENET2_CRS_DV</p></td>
+<td class="text-center"><p>GPIO2.IO[10]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface RX _ EN, CRS signal</p></td>
+<td class="text-center"><p>ENET2_CRS_DV</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_53</p></td>
+<td class="text-center"><p>C16</p></td>
+<td class="text-center"><p>C16_ENET2_RXD1</p></td>
+<td class="text-center"><p>GPIO2.IO[9]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface receiving data 1</p></td>
+<td class="text-center"><p>ENET2_RXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_55</p></td>
+<td class="text-center"><p>C17</p></td>
+<td class="text-center"><p>C17_ENET2_RXD0</p></td>
+<td class="text-center"><p>GPIO2.IO[8]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface receiving data 0</p></td>
+<td class="text-center"><p>ENET2_RXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_57</p></td>
+<td class="text-center"><p>D17</p></td>
+<td class="text-center"><p>D17_ENET2_TX_CLK</p></td>
+<td class="text-center"><p>GPIO2.IO[14]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET2 RMII interface reference clock</p></td>
+<td class="text-center"><p>ENET2_TX_CLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_59</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_61</p></td>
+<td class="text-center"><p>E14</p></td>
+<td class="text-center"><p>E14_ENET1_TXD1</p></td>
+<td class="text-center"><p>GPIO2.IO[4]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface sending data 1</p></td>
+<td class="text-center"><p>ENET1_TXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_63</p></td>
+<td class="text-center"><p>E15</p></td>
+<td class="text-center"><p>E15_ENET1_TXD0</p></td>
+<td class="text-center"><p>GPIO2.IO[3]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface sending data 0</p></td>
+<td class="text-center"><p>ENET1_TXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_65</p></td>
+<td class="text-center"><p>F15</p></td>
+<td class="text-center"><p>F15_ENET1_TXEN</p></td>
+<td class="text-center"><p>GPIO2.IO[5]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface sending enable signal</p></td>
+<td class="text-center"><p>ENET1_TXEN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_67</p></td>
+<td class="text-center"><p>D15</p></td>
+<td class="text-center"><p>D15_ENET1_RXER</p></td>
+<td class="text-center"><p>GPIO2.IO[7]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface frame error signal</p></td>
+<td class="text-center"><p>ENET1_RXER</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_69</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_71</p></td>
+<td class="text-center"><p>E16</p></td>
+<td class="text-center"><p>E16_ENET1_CRS_DV</p></td>
+<td class="text-center"><p>GPIO2.IO[2]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface RX _ EN, CRS signal</p></td>
+<td class="text-center"><p>ENET1_CRS_DV</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_73</p></td>
+<td class="text-center"><p>E17</p></td>
+<td class="text-center"><p>E17_ENET1_RXD1</p></td>
+<td class="text-center"><p>GPIO2.IO[1]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface receiving data signal 1</p></td>
+<td class="text-center"><p>ENET1_RXD1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_75</p></td>
+<td class="text-center"><p>F16</p></td>
+<td class="text-center"><p>F16_ENET1_RXD0</p></td>
+<td class="text-center"><p>GPIO2.IO[0]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface receiving data signal 0</p></td>
+<td class="text-center"><p>ENET1_RXD0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_77</p></td>
+<td class="text-center"><p>F14</p></td>
+<td class="text-center"><p>F14_ENET1_TX_CLK</p></td>
+<td class="text-center"><p>GPIO2.IO[6]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>ENET1 RMII interface reference clock signal</p></td>
+<td class="text-center"><p>ENET1_TX_CLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_79</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4. Definition of P2 Even Pins of SoM</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head text-center"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>R_2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_4</p></td>
+<td class="text-center"><p>B1</p></td>
+<td class="text-center"><p>B1_SD1_DATA2</p></td>
+<td class="text-center"><p>GPIO2.IO[20]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SD / MMC1 interface data signal 2</p></td>
+<td class="text-center"><p>SD1_DATA2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_6</p></td>
+<td class="text-center"><p>A2</p></td>
+<td class="text-center"><p>A2_SD1_DATA3</p></td>
+<td class="text-center"><p>GPIO2.IO[21]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SD / MMC1 interface data signal 3</p></td>
+<td class="text-center"><p>SD1_DATA3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_8</p></td>
+<td class="text-center"><p>C2</p></td>
+<td class="text-center"><p>C2_SD1_CMD</p></td>
+<td class="text-center"><p>GPIO2.IO[16]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SD/MMC1 interface command signal</p></td>
+<td class="text-center"><p>SD1_CMD</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_10</p></td>
+<td class="text-center"><p>C1</p></td>
+<td class="text-center"><p>C1_SD1_CLK</p></td>
+<td class="text-center"><p>GPIO2.IO[17]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SD/MMC1 interface clock signal</p></td>
+<td class="text-center"><p>SD1_CLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_12</p></td>
+<td class="text-center"><p>B3</p></td>
+<td class="text-center"><p>B3_SD1_DATA0</p></td>
+<td class="text-center"><p>GPIO2.IO[18]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SD / MMC1 interface data signal 0</p></td>
+<td class="text-center"><p>SD1_DATA0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_14</p></td>
+<td class="text-center"><p>B2</p></td>
+<td class="text-center"><p>B2_SD1_DATA1</p></td>
+<td class="text-center"><p>GPIO2.IO[19]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SD / MMC1 interface data signal 1</p></td>
+<td class="text-center"><p>SD1_DATA1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_16</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_18</p></td>
+<td class="text-center"><p>B9</p></td>
+<td class="text-center"><p>B9_LCD_DATA0</p></td>
+<td class="text-center"><p>GPIO3.IO[5]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 0（Low）</p></td>
+<td class="text-center"><p>LCD_DATA0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_20</p></td>
+<td class="text-center"><p>A9</p></td>
+<td class="text-center"><p>A9_LCD_DATA1</p></td>
+<td class="text-center"><p>GPIO3.IO[6]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 1</p></td>
+<td class="text-center"><p>LCD_DATA1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_22</p></td>
+<td class="text-center"><p>E10</p></td>
+<td class="text-center"><p>E10_LCD_DATA2</p></td>
+<td class="text-center"><p>GPIO3.IO[7]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 2</p></td>
+<td class="text-center"><p>LCD_DATA2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_24</p></td>
+<td class="text-center"><p>D10</p></td>
+<td class="text-center"><p>D10_LCD_DATA3</p></td>
+<td class="text-center"><p>GPIO3.IO[8]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 3</p></td>
+<td class="text-center"><p>LCD_DATA3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_26</p></td>
+<td class="text-center"><p>B8</p></td>
+<td class="text-center"><p>B8_LCD_DE</p></td>
+<td class="text-center"><p>GPIO3.IO[1]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RGB interface data enable signal</p></td>
+<td class="text-center"><p>LCD_DE</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_28</p></td>
+<td class="text-center"><p>B10</p></td>
+<td class="text-center"><p>B10_LCD_DATA5</p></td>
+<td class="text-center"><p>GPIO3.IO[10]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 5</p></td>
+<td class="text-center"><p>LCD_DATA5</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_30</p></td>
+<td class="text-center"><p>A10</p></td>
+<td class="text-center"><p>A10_LCD_DATA6</p></td>
+<td class="text-center"><p>GPIO3.IO[11]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 6</p></td>
+<td class="text-center"><p>LCD_DATA6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_32</p></td>
+<td class="text-center"><p>D11</p></td>
+<td class="text-center"><p>D11_LCD_DATA7</p></td>
+<td class="text-center"><p>GPIO3.IO[12]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 7 （High）</p></td>
+<td class="text-center"><p>LCD_DATA7</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_34</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_36</p></td>
+<td class="text-center"><p>B11</p></td>
+<td class="text-center"><p>B11_LCD_DATA8</p></td>
+<td class="text-center"><p>GPIO3.IO[13]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 0（Low）</p></td>
+<td class="text-center"><p>LCD_DATA8</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_38</p></td>
+<td class="text-center"><p>A11</p></td>
+<td class="text-center"><p>A11_LCD_DATA9</p></td>
+<td class="text-center"><p>GPIO3.IO[14]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 1</p></td>
+<td class="text-center"><p>LCD_DATA9</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_40</p></td>
+<td class="text-center"><p>E12</p></td>
+<td class="text-center"><p>E12_LCD_DATA10</p></td>
+<td class="text-center"><p>GPIO3.IO[15]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 2</p></td>
+<td class="text-center"><p>LCD_DATA10</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_42</p></td>
+<td class="text-center"><p>C10</p></td>
+<td class="text-center"><p>C10_LCD_DATA4</p></td>
+<td class="text-center"><p>GPIO3.IO[9]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Blue data bit 4</p></td>
+<td class="text-center"><p>LCD_DATA4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_44</p></td>
+<td class="text-center"><p>C12</p></td>
+<td class="text-center"><p>C12_LCD_DATA12</p></td>
+<td class="text-center"><p>GPIO3.IO[17]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 4</p></td>
+<td class="text-center"><p>LCD_DATA12</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_46</p></td>
+<td class="text-center"><p>C9</p></td>
+<td class="text-center"><p>C9_LCD_VSYNC</p></td>
+<td class="text-center"><p>GPIO3.IO[3]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RGB interface vertical synchronization signal</p></td>
+<td class="text-center"><p>LCD_VSYNC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_48</p></td>
+<td class="text-center"><p>A12</p></td>
+<td class="text-center"><p>A12_LCD_DATA14</p></td>
+<td class="text-center"><p>GPIO3.IO[19]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 6</p></td>
+<td class="text-center"><p>LCD_DATA14</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_50</p></td>
+<td class="text-center"><p>B12</p></td>
+<td class="text-center"><p>B12_LCD_DATA13</p></td>
+<td class="text-center"><p>GPIO3.IO[18]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 5</p></td>
+<td class="text-center"><p>LCD_DATA13</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_52</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_54</p></td>
+<td class="text-center"><p>D9</p></td>
+<td class="text-center"><p>D9_LCD_HSYNC</p></td>
+<td class="text-center"><p>GPIO3.IO[2]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RGB interface horizontal synchronization signal</p></td>
+<td class="text-center"><p>LCD_HSYNC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_56</p></td>
+<td class="text-center"><p>B13</p></td>
+<td class="text-center"><p>B13_LCD_DATA17</p></td>
+<td class="text-center"><p>GPIO3.IO[22]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 1</p></td>
+<td class="text-center"><p>LCD_DATA17</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_58</p></td>
+<td class="text-center"><p>A13</p></td>
+<td class="text-center"><p>A13_LCD_DATA18</p></td>
+<td class="text-center"><p>GPIO3.IO[23]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 2</p></td>
+<td class="text-center"><p>LCD_DATA18</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_60</p></td>
+<td class="text-center"><p>D14</p></td>
+<td class="text-center"><p>D14_LCD_DATA19</p></td>
+<td class="text-center"><p>GPIO3.IO[24]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 3</p></td>
+<td class="text-center"><p>LCD_DATA19</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_62</p></td>
+<td class="text-center"><p>C14</p></td>
+<td class="text-center"><p>C14_LCD_DATA20</p></td>
+<td class="text-center"><p>GPIO3.IO[25]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 4</p></td>
+<td class="text-center"><p>LCD_DATA20</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_64</p></td>
+<td class="text-center"><p>B14</p></td>
+<td class="text-center"><p>B14_LCD_DATA21</p></td>
+<td class="text-center"><p>GPIO3.IO[26]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 5</p></td>
+<td class="text-center"><p>LCD_DATA21</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_66</p></td>
+<td class="text-center"><p>A14</p></td>
+<td class="text-center"><p>A14_LCD_DATA22</p></td>
+<td class="text-center"><p>GPIO3.IO[27]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 6</p></td>
+<td class="text-center"><p>LCD_DATA22</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_68</p></td>
+<td class="text-center"><p>B16</p></td>
+<td class="text-center"><p>B16_LCD_DATA23</p></td>
+<td class="text-center"><p>GPIO3.IO[28]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 7 (data)</p></td>
+<td class="text-center"><p>LCD_DATA23</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_70</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_72</p></td>
+<td class="text-center"><p>D12</p></td>
+<td class="text-center"><p>D12_LCD_DATA11</p></td>
+<td class="text-center"><p>GPIO3.IO[16]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 3</p></td>
+<td class="text-center"><p>LCD_DATA11</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_74</p></td>
+<td class="text-center"><p>C13</p></td>
+<td class="text-center"><p>C13_LCD_DATA16</p></td>
+<td class="text-center"><p>GPIO3.IO[21]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Red data bit 0（Low）</p></td>
+<td class="text-center"><p>LCD_DATA16</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_76</p></td>
+<td class="text-center"><p>D13</p></td>
+<td class="text-center"><p>D13_LCD_DATA15</p></td>
+<td class="text-center"><p>GPIO3.IO[20]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>Green data bit 7（high）</p></td>
+<td class="text-center"><p>LCD_DATA15</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>R_78</p></td>
+<td class="text-center"><p>A8</p></td>
+<td class="text-center"><p>A8_LCD_PCLK</p></td>
+<td class="text-center"><p>GPIO3.IO[0]</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>RGB interface pixel clock signal</p></td>
+<td class="text-center"><p>LCD_PCLK</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>R_80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>0V</p></td>
+<td class="text-center"><p>Ground signal</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="som-hardware-design-description">
+<h3>2.6 SoM Hardware Design Description<a class="headerlink" href="#som-hardware-design-description" title="Link to this heading"></a></h3>
+<p>FETMX6ULL-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:</p>
+<p>Please refer to “Appendix III. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, the user can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.</p>
+<p>Please refer to section 3.5 in “Chapter 3. OKMX6ULL-C Carrier Board Description” for the peripheral circuits.</p>
+</section>
+</section>
+<section id="okmx6ull-c-development-board-description">
+<h2>3. OKMX6ULL-C Development Board Description<a class="headerlink" href="#okmx6ull-c-development-board-description" title="Link to this heading"></a></h2>
+<section id="okmx6ull-c-development-board-interface-diagram">
+<h3>3.1 OKMX6ULL-C Development Board Interface Diagram<a class="headerlink" href="#okmx6ull-c-development-board-interface-diagram" title="Link to this heading"></a></h3>
+<p>The connection of OKMX6ULL-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:</p>
+<p><img alt="Image" src="_images/1715134486591_6015cd25_c332_42d1_aca6_a8de7ed40747.png" /></p>
+</section>
+<section id="okmx6ull-c-som-dimension-diagram">
+<h3>3.2 OKMX6ULL-C SoM Dimension Diagram<a class="headerlink" href="#okmx6ull-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p>OKMX6ULL-C Development Board Dimension Diagram:</p>
+<p><img alt="Image" src="_images/1715134486918_d17fb558_a7c8_46df_adab_c41e74c5ecc7.png" /></p>
+<p>PCB Size: 120mm × 115mm</p>
+<p>Fixed hole size: spacing: 112mm × 75mm, hole diameter: 3.2mm.</p>
+<p>Plate making process: thickness 1.6mm, 4-layer PCB.</p>
+<p>Power supply voltage: DC 5V.</p>
+</section>
+<section id="carrier-board-naming-rules">
+<h3>3.3 Carrier Board Naming Rules<a class="headerlink" href="#carrier-board-naming-rules" title="Link to this heading"></a></h3>
+<p>ABC-D+IK:M</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Field</p></th>
+<th class="head text-center"><p>Field Description</p></th>
+<th class="head text-center"><p>Value</p></th>
+<th class="head text-center"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>A</p></td>
+<td class="text-center"><p>Qualification level</p></td>
+<td class="text-center"><p>PC</p></td>
+<td class="text-center"><p>Prototype Sample</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>Blank</p></td>
+<td class="text-center"><p>Mass Production</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>B</p></td>
+<td class="text-center"><p>Product line identification</p></td>
+<td class="text-center"><p>OK</p></td>
+<td class="text-center"><p>Forlinx Embedded development board</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>C</p></td>
+<td class="text-center"><p>CPU Name</p></td>
+<td class="text-center"><p>MX6ULL</p></td>
+<td class="text-center"><p>i.MX6ULL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Segment Identification</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>D</p></td>
+<td class="text-center"><p>Connection</p></td>
+<td class="text-center"><p>Cx</p></td>
+<td class="text-center"><p>Board-to-board Connector</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>+</p></td>
+<td class="text-center"><p>Segment Identification</p></td>
+<td class="text-center"><p>+</p></td>
+<td class="text-center"><p>The configuration parameter section follows this identifier.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I</p></td>
+<td class="text-center"><p>Operating temperature</p></td>
+<td class="text-center"><p>I</p></td>
+<td class="text-center"><p>-40 to 85℃   industrial  level</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>K</p></td>
+<td class="text-center"><p>PCB Version</p></td>
+<td class="text-center"><p>10</p></td>
+<td class="text-center"><p>V1.0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>:M</p></td>
+<td class="text-center"><p>Internal Identification of the Manufacturer</p></td>
+<td class="text-center"><p>:X</p></td>
+<td class="text-center"><p>This is the internal identification of the manufacturer and has no impact on the use.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="carrier-board-resources">
+<h3>3.4 Carrier Board Resources<a class="headerlink" href="#carrier-board-resources" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Function</p></th>
+<th class="head text-center"><p>Quantity</p></th>
+<th class="head"><p>Parameter</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>LCD</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>RGB888 24 bit, up to WXGA (1366 x 768) (60 Hz）</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4G</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports EC20 remote 4G module by default; USB 2.0 protocol</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Audio</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>1<em>MIC，1</em>Phone，2*Speaker</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB Host</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Extended by hub, USB 2.0 (supports up to 480 Mbps)</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB Device</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Standard Type-C socket, USB 2.0 OTG （up to 480 Mbps）</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>10/100Mbps adaptive，RJ-45 interface</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>WiFi</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>RL-UM02WBS-8723DU-V1.2<br/>Standard: IEEE 802.11b/g/n, BT V2.1/BT V3.0/BT V4.0.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Bluetooth</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>TF Card</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Compatible SD, SDHC and SDXC（UHS-I）</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>KEY</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Respectively used for reset and power on/off functions</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LED</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>Respectively used for power indicator, user light and 4G status indicator</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Used for LCD backlight adjustment</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Led out via 2.54 mm double row pin</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>IIC</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Led out via 2.54 mm double row pin</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>CAN protocol version 2.0B specification; led out with DG128-2P green terminal;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>Both 3.3 V level, each supporting up to 5.0 Mbps;</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART Debug</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Led out via standard Type-C socket</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: The parameters in the table are the theoretical values of hardware design or CPU.</strong></p>
+</section>
+<section id="okmx6ull-c-carrier-board-description">
+<h3>3.5 OKMX6ULL-C Carrier Board Description<a class="headerlink" href="#okmx6ull-c-carrier-board-description" title="Link to this heading"></a></h3>
+<p><strong>Note: In the figure below, if the component tag number is marked with “_ NC”, it means that the component is not welded by default.</strong></p>
+<section id="carrier-board-power">
+<h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
+<p>Carrier board power supply is DC 5V, led in through DC-005 socket (P3). The DC 5V power supply passes through a self - recovering fuse, a reverse - polarity protection diode, and an over - voltage protection circuit, and then is converted by a DCDC converter to output VSYS_3V3 to supply power to the core board. After the SoM is powered on, it controls the MOSFET through the PMIC_ON_REQ signal. The VDD_5V is converted to GEN_5V through the MOSFET, and the VSYS_3V3 is converted to GEN_3V3 through another MOSFET.</p>
+<p>When the PMIC_ON_REQ pin outputs a high - level signal, the MOSFET are turned on, and VDD_5V and VSYS_3V3 can output GEN_5V and GEN_3V3 respectively.</p>
+<p>This circuit is to ensure that the SoM is powered on first, and followed by the carrier board, so as to prevent the damage to the CPU caused by latch-up effects.</p>
+<p><img alt="Image" src="_images/1721894061701_92d30ffe_78cf_46ed_b7ed_e0363835d019.png" /><img alt="Image" src="_images/1721894110730_bd670d72_fe7e_4850_8f0c_c6b39d8eb792.png" /><img alt="Image" src="_images/1721894115009_36fb11d7_95d4_424b_aae9_562032d3a47f.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>When designing the circuit independently, the OVP protection circuit can be removed if the power supply is stable;</strong></p></li>
+<li><p><strong>The DIP switch part for selecting the startup configuration is powered by GEN_3V3.</strong></p></li>
+</ul>
+</section>
+<section id="switch-key-reset-key">
+<h4>3.5.2 Switch Key &amp; Reset Key<a class="headerlink" href="#switch-key-reset-key" title="Link to this heading"></a></h4>
+<p>K2 in the upper - left corner of the development board is the power - on/off key of the development board, with a function similar to the power - on/off key of a mobile phone. Press and hold this key to turn on the board, and press and hold it again to turn it off.</p>
+<p><strong>Note: The ONOFF pin can be left floating when not in use.</strong></p>
+<p><img alt="Image" src="_images/1721894124298_2f6e6984_8541_49d6_80c4_d12b17bc8f31.png" /></p>
+</section>
+<section id="boot-configuration">
+<h4>3.5.3 Boot Configuration<a class="headerlink" href="#boot-configuration" title="Link to this heading"></a></h4>
+<p>It supports multiple flashing and boot modes. Upon power-up or reset, the system reads the boot configuration pins to select the mode. Development board uses BOOT_MODE0,BOOT_MODE1, LCD_DATA3~LCD_DATA7,LCD_DATA11 as the system boot configuration pins.</p>
+<p>BOOT_MODE0 and BOOT_MODE1 are BOOT TYPE selection pins.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>BOOT_MODE[1：0]</strong></p></th>
+<th class="head text-center"><p><strong>BOOT  TYPE</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>00</p></td>
+<td class="text-center"><p>Boot  From  Fuses</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>01</p></td>
+<td class="text-center"><p>Serial  Downloader</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>10</p></td>
+<td class="text-center"><p>Internal  Boot(Development)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>11</p></td>
+<td class="text-center"><p>Reserved</p></td>
+</tr>
+</tbody>
+</table>
+<p>LCD_DATA3~LCD_DATA7、LCD_DATA11 are Boot Device selection pins.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Boot Device</strong></p></th>
+<th class="head text-center"><p><strong>LCD_D7</strong></p></th>
+<th class="head text-center"><p><strong>LCD_D6</strong></p></th>
+<th class="head text-center"><p><strong>LCD_D5</strong></p></th>
+<th class="head text-center"><p><strong>LCD_D4</strong></p></th>
+<th class="head text-center"><p><strong>LCD_D3</strong></p></th>
+<th class="head text-center"><p><strong>LCD_D11</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Serial-ROM</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>x</p></td>
+<td class="text-center"><p>x</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SD/eSD</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>x</p></td>
+<td class="text-center"><p>x</p></td>
+<td class="text-center"><p>0-SDHC1<br/>1-SDHC2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MMC/eMMC</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>x</p></td>
+<td class="text-center"><p>x</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>In the above table, the SD card on the carrier board uses the SDHC1 interface, and the eMMC on the SoM uses the SDHC2 interface.</p>
+<p>The system startup configuration switch of the development board is S2. For the DIP switch, moving it upward means “On”, and moving it downward means “Off”. The configuration of the system programming and startup modes is as follows:</p>
+<p>1. SD card flashing settings: 3, 4 On, 1, 2 Off;</p>
+<p>2. USB OTG flashing settings: 1, 2 On, any other state;</p>
+<p>3. EMMC startup settings: 1, 2, 3, 4 Off .</p>
+<p><img alt="Image" src="_images/1721894137873_3aef095f_857a_43f4_a0e0_f40c59bf4002.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>On the FETMX6ULL-C SoM, six pins, namely LCD_DATA3, LCD_DATA4, LCD_DATA5, LCD_DATA6, LCD_DATA7, and LCD_DATA11, are startup configuration pins. When the LCD function is not in use, these six pins cannot be used as I/O pins. For the other LCD pins, if the customer has sufficient GPIO, it is not recommended to use these pins as GPIOs. Please design the startup items according to the above circuit diagram when designing the carrier board.</strong></p></li>
+<li><p><strong>During development, we found that some LCD screens are not in a high-impedance state upon power-up, affecting boot pin levels. Therefore, it is recommended to add a buffer chip between the LCD and CPU, with the SN74AVC16245 chip recommended. For specific circuits, refer to the “LCD Interface” section;</strong></p></li>
+<li><p><strong>LCD_DATA23 and LCD_DATA12 cannot be at a high level during power - on, as this will cause the SoM to fail to start normally.</strong></p></li>
+</ul>
+</section>
+<section id="debugging-serial-port">
+<h4>3.5.4 Debugging Serial Port<a class="headerlink" href="#debugging-serial-port" title="Link to this heading"></a></h4>
+<p>The debug serial port is a Type-C interface.</p>
+<p>UART1 is a 3-wire, 3.3 V level debug serial port that is connected to the USB interface via CH340E.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>To facilitate subsequent debugging, please lead out this debugging serial port when designing the carrier board by yourself;</strong></p></li>
+<li><p><strong>It is not recommended to use UART1 as a general serial port. Reason: The software needs to be modified to configure it as a general serial port.</strong></p></li>
+</ul>
+</section>
+<section id="general-serial-port-spi-and-i2c-interfaces">
+<h4>3.5.5 General Serial Port, SPI, and I2C Interfaces<a class="headerlink" href="#general-serial-port-spi-and-i2c-interfaces" title="Link to this heading"></a></h4>
+<p>UART2, UART3, UART4, and UART5 are all serial ports with a 3.3V level, and they are led out from P17.</p>
+<p>SPI1 and SPI2 have a 3.3V level and are led out from P17.</p>
+<p>I2C1 and I2C2 have a 3.3V level and are led out from P17. 5V and 3.3V are led out from P17 for easy wiring.<img alt="Image" src="_images/1721894151223_dc38c1f2_d4d5_4964_8b10_d7bb0ae47333.png" /></p>
+</section>
+<section id="can">
+<h4>3.5.6 CAN<a class="headerlink" href="#can" title="Link to this heading"></a></h4>
+<p>There are two CAN interfaces on the carrier board, which are led out from the 2EDGRC-3.81-5P green terminal, and the terminal number is P11. The carrier board circuit principle is compatible with TJA1040T, MC34901WEF and MCP2551 CAN transceiver chips.</p>
+<p>Currently, TJA1040T is default - soldered on the development board. Since the output terminal RX of TJA1040T has a 5V level, which may affect the 3.3V voltage of the SoM, the outputs of the chip are divided to 3.3V through resistors R60 and R68 as well as R61 and R69 respectively before being input to CAN1_RX and CAN2_RX of the CPU. If you want to use the other two types of CAN chips, please refer to the relevant chip data sheets and modify the circuit accordingly.</p>
+<p><img alt="Image" src="_images/1721894157617_885fdb84_f6b9_421c_95ae_cccd488ea862.png" /></p>
+</section>
+<section id="tf-card">
+<h4>3.5.7 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
+<p>P8 is the TF card socket, which uses the SDHC1 interface of the CPU. The program can be programmed from the TF card through the DIP switch. When the SDXC card is of UHS - II or higher grade, it will be downgraded to UHS - I for use. The reason is that starting from UHS - II, new data pins are added (similar to the difference between USB 3.0 and previous versions).</p>
+<p><img alt="Image" src="_images/1721894161984_f78ee2a0_a1aa_4bf1_b0a5_9e63dab9979e.png" /></p>
+</section>
+<section id="rtc">
+<h4>3.5.8 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
+<p>The development board supports CPU - built - in and external RTC chips. Due to high power consumption of the built - in one, the external chip is default. The factory - included RTC battery is CR2032, replaceable with the same model when depleted.</p>
+<p><img alt="Image" src="_images/1721894166667_82b48abf_e569_4902_af8a_c1404f2bbd00.png" /></p>
+</section>
+<section id="user-led">
+<h4>3.5.9 User LED<a class="headerlink" href="#user-led" title="Link to this heading"></a></h4>
+<p>There is 1 x LED indicator on the development board; when using the LED indicator, the corresponding pin needs to be configured as GPIO function. When the LED pin outputs a low - level signal, the LED is conducting and lights up. Conversely, when the pin outputs a high - level signal, the LED turns off.</p>
+<p><img alt="Image" src="_images/1721894175525_1f62b692_852b_4962_bfae_f6a1e8452d8f.png" /></p>
+</section>
+<section id="audio">
+<h4>3.5.10 Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h4>
+<p>There is a 3.5mm audio socket interface P21 on the development board, which has 4-level contacts and supports left and right channel sound playback and MIC recording. The P21 audio interface socket supports the international standard four-segment pin (CTIA). Please use the CTIA standard earphone cable during the test.</p>
+<p>The class-D power amplifier output terminal inside the audio chip WM8960 is led out by two XH2.54-2P white sockets p22 and P23, which can drive two 8Ω speakers with a maximum output power of 1 W. If a larger external power amplifier is required, the signal can only be obtained from the earphone socket, not from the speaker interface.</p>
+<p><strong>Note: The power of the speakers is a Class D amplifier (Not analog amplifier）;</strong></p>
+<p>Connect a speaker to each socket, and please don’t share the speaker wire, nor connect the speaker to the ground wire.</p>
+</section>
+<section id="usb-host-interface">
+<h4>3.5.11 USB Host Interface<a class="headerlink" href="#usb-host-interface" title="Link to this heading"></a></h4>
+<p>The CPU supports 2 x USB 2.0. On the development board, one of the USB_OTG2 interfaces of the i.MX6ULL is expanded into 4 x USB through the industrial - grade USB hub FE1.1s. Among them, 2 x are connected to the USB host 2.0 interfaces (P15, P16), which can be used to connect devices such as mice, 4G modules, and Wi - Fi devices. One of the remaining USB is connected to the on - board Bluetooth Wi - Fi module, and the other is connected to the on - board 4G module.</p>
+<p><img alt="Image" src="_images/1721894189588_a798c727_921b_448f_88fa_9ca6f4e9a33e.png" /></p>
+</section>
+<section id="usb-otg-interfaces">
+<h4>3.5.12 USB OTG Interfaces<a class="headerlink" href="#usb-otg-interfaces" title="Link to this heading"></a></h4>
+<p>The mainboard uses USB _ OTG1 as a device, which is led out through Type-C to supply power to the mainboard and flash the system.<img alt="Image" src="_images/1721894197649_b6d22dac_dc64_4f7f_b71d_ee06ac45dcb7.png" /></p>
+</section>
+<section id="g-interface">
+<h4>3.5.13 4G Interface<a class="headerlink" href="#g-interface" title="Link to this heading"></a></h4>
+<p>There is a mini PCIe socket on the development board for the 4G module, which uses the USB protocol. Use the DCDC power chip MP2147GD to supply power to the 4G module. The 4G IPEX antenna needs to be buckled on P27, and P18 is the MICRO _ SIM card holder.<img alt="Image" src="_images/1721894201524_56958b24_4770_4b7e_b8ac_10d900b04cfb.png" /><img alt="Image" src="_images/1721894206390_d4d65902_b7c7_4891_8d48_4be839311f94.png" /><img alt="Image" src="_images/1721894208637_1432433e_9070_4f18_9e6e_c98057e87842.png" /></p>
+</section>
+<section id="wifi-bluetooth">
+<h4>3.5.14 WiFi &amp; Bluetooth<a class="headerlink" href="#wifi-bluetooth" title="Link to this heading"></a></h4>
+<p>The model of the WiFi Bluetooth 2-in-1 module is RT L8723DU. Standard: IEEE 802.11b/g/n, bluetooth: BT V2.1/BT V3.0/BT V4.0。</p>
+<p><img alt="Image" src="_images/1721894212368_f84a6049_1c10_4fca_abfe_ed9982ca4ffa.png" /></p>
+<p>In the schematic diagram, the WIFI_EN pin is the power switch pin of the module. When it outputs a low level, the module is powered.</p>
+<p>The antenna interface P19 is an on-board ceramic antenna. The model of TVS tube DT5 in the figure is GESD1005H150CR10GPT.</p>
+</section>
+<section id="dual-100-mbit-ethernet">
+<h4>3.5.15 Dual 100 Mbit Ethernet<a class="headerlink" href="#dual-100-mbit-ethernet" title="Link to this heading"></a></h4>
+<p>CPU supports up to 2 x 100Mbps Ethernet ports. Carrier board provides 2 x 100Mbps Ethernet interfaces, both connected to the JL1111 PHY chip via RMII interface, led from RJ45 sockets P25 and P24, respectively, with the FC62115BNL model sockets and built-in isolation transformers.</p>
+<p><strong>Note: When designing the PCB, ensure that the PHY chip has a complete ground.</strong></p>
+</section>
+<section id="lcd-display-interface">
+<h4>3.5.16 LCD Display Interface<a class="headerlink" href="#lcd-display-interface" title="Link to this heading"></a></h4>
+<p>CPU supports parallel 24-bit LCD, the maximum RGB 888 is 24-bit, the highest resolution supports WXGA (1366x768), and the refresh frequency is 60HZ. The development board provides a universal LCD interface, which is led out through an FPC seat (P20) with a pitch of 0.5mm and 54 P. It can connect resistance touch screen and capacitance touch screen of different specifications and sizes produced by our company. The LCD interface is connected in RGB 888 24bit mode.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>When the resistive touch function is not used, its four pins can be used as general-purpose I/O ports, and they are individually led from the IIC, UART1, UART2, UART3 interface sockets;</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>When used for AD sampling, the voltage range is 0-3.3V, and the maximum sampling frequency is 1MS/s;</strong></p></li>
+<li><p><strong>To avoid the impact on startup due to non-high-impedance state of the LCD pins at power-on, it is recommended to add a buffer chip between the LCD and the CPU, with the recommended chip model being SN74AVC16245.</strong></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="hardware-design-guide">
+<h2>4. Hardware Design Guide<a class="headerlink" href="#hardware-design-guide" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>4.1 Boot Configuration<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>The i.MX6ULL has multiple programming and startup methods. After the system is powered on or reset, different programming and startup methods are selected by reading the status of the system startup configuration pins.</p>
+<p>When you design the carrier board by yourself, you must add this part of the circuit. For the specific configuration method, please refer to the schematic diagram of the carrier board and the “Boot Configuration” chapter in this manual. Meanwhile, you’re reminded to note that if you need to use both the SD card programming mode and the eMMC startup mode, you must add control for the LCD_DATA11 pin. Otherwise, the LCD_DATA11 pin can be set to a fixed level according to actual needs.</p>
+</section>
+<section id="pmic-on-req-driving-capability-issue">
+<h3>4.2 PMIC_ON_REQ Driving Capability Issue<a class="headerlink" href="#pmic-on-req-driving-capability-issue" title="Link to this heading"></a></h3>
+<p>On the carrier board, both GEN_5V and GEN_3.3V power supplies are obtained by controlling the PMIC_ON_REQ pin. However, the current driving capability of the PMIC_ON_REQ pin is relatively weak. Therefore, a voltage-controlled switching element is required. In the development board, an N-channel MOSFET AO3416 is used. For specific design details, please refer to the baseboard power supply circuit.</p>
+</section>
+<section id="pull-up-resistors-on-the-iic-bus">
+<h3>4.3 Pull-up Resistors on the IIC Bus<a class="headerlink" href="#pull-up-resistors-on-the-iic-bus" title="Link to this heading"></a></h3>
+<p>When you design the carrier board on your own, you need to note that pull-up resistors must be added to the IIC bus. Otherwise, the IIC bus devices may not work properly. Currently, the two IIC buses led out on the carrier board are both pulled up to 3.3V through 1.5K resistors.</p>
+</section>
+<section id="usb1-1-error-during-debugging">
+<h3>4.4 USB1 - 1 Error During Debugging<a class="headerlink" href="#usb1-1-error-during-debugging" title="Link to this heading"></a></h3>
+<p>When you use the USB interface, you need to connect USB_OTG1_VBUS and USB_OTG2_VBUS to 5V; otherwise, an error will occur. Currently, on the carrier board, the USB_OTG2_VBUS pin is connected to GEN_5V through a 0Ω resistor.</p>
+</section>
+<section id="output-level-of-the-can-circuit-rx-pin">
+<h3>4.5 Output Level of the CAN Circuit RX Pin<a class="headerlink" href="#output-level-of-the-can-circuit-rx-pin" title="Link to this heading"></a></h3>
+<p>Currently, the CAN transceiver chip defaultly used on the development board is TJA1040T. The output level of the RX terminal of this chip is 5V, while the level of the corresponding pin on the CPU is 3.3V. To prevent affecting the 3.3V power supply inside the CPU, resistors need to be connected in series between the RX terminal of the chip and the ground for voltage division, and then it can be connected to the CPU. Please refer to the CAN part of the circuit for specific operations.</p>
+<p><strong>Note: Leave Unused Pins Floating.</strong></p>
+</section>
+</section>
+<section id="power-consumption-of-the-whole-machine-under-linux">
+<h2>5. Power Consumption of the Whole Machine Under Linux<a class="headerlink" href="#power-consumption-of-the-whole-machine-under-linux" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>No.</p></th>
+<th class="head"><p>Test Item</p></th>
+<th class="head text-center"><p>SoM Power (W)</p></th>
+<th class="head text-center"><p>Development Board Power (including SoM) (W)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td><p>No-load starting peak power</p></td>
+<td class="text-center"><p>0.858</p></td>
+<td class="text-center"><p>2.05</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td><p>No-load standby peak power</p></td>
+<td class="text-center"><p>0.429</p></td>
+<td class="text-center"><p>1.3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td><p>Memory pressure test</p></td>
+<td class="text-center"><p>0.792</p></td>
+<td class="text-center"><p>1.65</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4</p></td>
+<td><p>7” LCD screen</p></td>
+<td class="text-center"><p>0.462</p></td>
+<td class="text-center"><p>2.1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>5</p></td>
+<td><p>7-inch LCD + U disk + memory pressure + video encoding</p></td>
+<td class="text-center"><p>0.825</p></td>
+<td class="text-center"><p>2.6</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Test conditions: The SoM configuration is 512MB memory + 8GB eMMC; the 4G module is Quectel EC20, and the screen is an optional product. SoM power supply is 3.3V and development board is 5V;</strong></p></li>
+<li><p><strong>Power consumption is for reference only.</strong></p></li>
+</ul>
+</section>
+<section id="connector-dimension-diagram">
+<h2>6. Connector Dimension Diagram<a class="headerlink" href="#connector-dimension-diagram" title="Link to this heading"></a></h2>
+<p>SoM Connector Dimension:</p>
+<p><img alt="Image" src="_images/1761285048003_0a2e2a73_cab7_4a6d_a070_c2bf2a8dc69b.png" /></p>
+<p>Carrier board Connector Dimension:</p>
+<p><img alt="Image" src="_images/1761285058013_3d5b0809_67a9_4b8b_a6a6_eb02545114bd.png" /></p>
+<p><img alt="Image" src="_images/1761285084070_947127e3_ee9b_46b3_b6b2_f011a299a074.png" /></p>
+</section>
+<section id="id3">
+<h2>7. Power Consumption of the Whole Machine Under Linux<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>No.</strong></p></th>
+<th class="head"><p><strong>Test Item</strong></p></th>
+<th class="head text-center"><p><strong>SoM Power (W)</strong></p></th>
+<th class="head text-center"><p>Development Board Power (including SoM) (W)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td><p>No-load starting peak power</p></td>
+<td class="text-center"><p>0.858</p></td>
+<td class="text-center"><p>2.05</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td><p>No-load standby peak power</p></td>
+<td class="text-center"><p>0.429</p></td>
+<td class="text-center"><p>1.3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td><p>Memory pressure test</p></td>
+<td class="text-center"><p>0.792</p></td>
+<td class="text-center"><p>1.65</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4</p></td>
+<td><p>7” LCD screen</p></td>
+<td class="text-center"><p>0.462</p></td>
+<td class="text-center"><p>2.1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>5</p></td>
+<td><p>7-inch LCD + U disk + memory pressure + video encoding</p></td>
+<td class="text-center"><p>0.825</p></td>
+<td class="text-center"><p>2.6</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Test conditions: the SoM configuration is 512MB memory + 8GB eMMC; the 4G module is Quectel EC20, and the screen is an optional product. SoM power supply is 3.3V and carrier board is 5V;</strong></p></li>
+<li><p><strong>Power consumption is for reference only.</strong></p></li>
+</ul>
+</section>
+<section id="minimum-system-schematic">
+<h2>8. Minimum System Schematic<a class="headerlink" href="#minimum-system-schematic" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1756696885529_f13e0cd3_dc7c_4825_9706_9676d870891a.png" /></p>
+<p><img alt="Image" src="_images/1756697115986_66f80ef8_4da1_4e41_b7ad_bee96757523e.png" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>When you design the carrier board by yourself, please reserve the serial port circuit for easy debugging, reserve the DIP switch circuit for easy program flashing, and pay attention to the power - on sequence to prevent the latch - up effect from damaging the CPU (refer to 3.5.1 Carrier Board Power Supply for specific design).</strong></p>
+</section>
+<section id="id4">
+<h2>9. Minimum System Schematic<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1756696885529_f13e0cd3_dc7c_4825_9706_9676d870891a.png" /></p>
+<p><img alt="Image" src="_images/1756697115986_66f80ef8_4da1_4e41_b7ad_bee96757523e.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
