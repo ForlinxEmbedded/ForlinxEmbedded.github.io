@@ -454,7 +454,7 @@ ABC-D+IK:M
 | :--------: | :------: | ------------------------------------------------------------ |
 |    LCD     |    1     | RGB888 24 bit, up to WXGA (1366 x 768) (60 Hz）              |
 |     4G     |    1     | Supports EC20 remote 4G module by default; USB 2.0 protocol  |
-|   Audio    |    1     | 1*MIC，1*Phone，2\*Speaker                                   |
+|   Audio    |    1     | 1\*MIC，1\*Phone，2\*Speaker                                   |
 |  USB Host  |    2     | Extended by hub, USB 2.0 (supports up to 480 Mbps)           |
 | USB Device |    1     | Standard Type-C socket, USB 2.0 OTG （up to 480 Mbps）       |
 |  Ethernet  |    2     | 10/100Mbps adaptive，RJ-45 interface                         |
