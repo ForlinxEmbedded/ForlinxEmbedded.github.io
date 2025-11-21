@@ -59,9 +59,9 @@ Freescalei.MX6ULL extends the i.MX6 series, offering a high-performance, ultra-e
 
 **i.MX6ULL Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715133598107-c15d6e78-0717-40b4-9071-3c9cf3ef34dc.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715133598107_c15d6e78_0717_40b4_9071_3c9cf3ef34dc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715133598448-f51ef79e-49f7-4fda-a03b-fa2eeafeeed7.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715133598448_f51ef79e_49f7_4fda_a03b_fa2eeafeeed7.png)
 
 FETMX6ULL-C SoM CPU is based on the MCIMX6Y2.
 
@@ -79,11 +79,11 @@ URL：
 
 FETMX6ULL-C SoM
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715134390779-dd46cf96-8943-4def-b5fc-20835e014a83.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134390779_dd46cf96_8943_4def_b5fc_20835e014a83.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715134391341-f2252c3a-def3-4d6e-b4ef-08e4dcc3d403.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134391341_f2252c3a_def3_4d6e_b4ef_08e4dcc3d403.png)
 
 **Back**
 
@@ -91,7 +91,7 @@ FETMX6ULL-C SoM
 
 FETMX6ULL-C SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715134391861-d9c1ca94-b9b0-4b6d-9b1e-79c27569e332.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134391861_d9c1ca94_b9b0_4b6d_9b1e_79c27569e332.png)
 
 Structure size: 40mm×29mm
 
@@ -103,9 +103,9 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the development board design and use SMT nuts of M2 with <font style="color:#FF0000;background-color:yellow;">L=2mm or L=2.5mm</font>on the carrier board. Please refer to the following figure for the specifications of the SMT nuts.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/43555360/1715134392236-d76e2cdb-9e39-4185-a6ce-e803908fd8c2.jpeg)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134392236_d76e2cdb_9e39_4185_a6ce_e803908fd8c2.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/43555360/1715134392493-5654c15d-e742-4825-a86a-403becca0b1b.jpeg)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134392493_5654c15d_e742_4825_a86a_403becca0b1b.jpeg)
 
 ### 2.3 Performance Parameters
 
@@ -411,13 +411,13 @@ Please refer to section 3.5 in “Chapter 3. OKMX6ULL-C Carrier Board Descriptio
 
 The connection of OKMX6ULL-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715134486591-6015cd25-c332-42d1-aca6-a8de7ed40747.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134486591_6015cd25_c332_42d1_aca6_a8de7ed40747.png)
 
 ### 3.2 OKMX6ULL-C SoM Dimension Diagram
 
 OKMX6ULL-C Development Board Dimension Diagram:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715134486918-d17fb558-a7c8-46df-adab-c41e74c5ecc7.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1715134486918_d17fb558_a7c8_46df_adab_c41e74c5ecc7.png)
 
 PCB Size: 120mm × 115mm
 
@@ -480,7 +480,7 @@ When the PMIC\_ON\_REQ pin outputs a high - level signal, the MOSFET are turned 
 
 This circuit is to ensure that the SoM is powered on first, and followed by the carrier board, so as to prevent the damage to the CPU caused by latch-up effects.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894061701-92d30ffe-78cf-46ed-b7ed-e0363835d019.png)![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894110730-bd670d72-fe7e-4850-8f0c-c6b39d8eb792.png)![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894115009-36fb11d7-95d4-424b-aae9-562032d3a47f.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894061701_92d30ffe_78cf_46ed_b7ed_e0363835d019.png)![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894110730_bd670d72_fe7e_4850_8f0c_c6b39d8eb792.png)![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894115009_36fb11d7_95d4_424b_aae9_562032d3a47f.png)
 
 **Note:**
 
@@ -495,7 +495,7 @@ K2 in the upper - left corner of the development board is the power - on/off key
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894124298-2f6e6984-8541-49d6-80c4-d12b17bc8f31.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894124298_2f6e6984_8541_49d6_80c4_d12b17bc8f31.png)
 
 #### 3.5.3 Boot Configuration
 
@@ -528,7 +528,7 @@ The system startup configuration switch of the development board is S2. For the 
 
 3\. EMMC startup settings: 1, 2, 3, 4 Off .
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894137873-3aef095f-857a-43f4-a0e0-f40c59bf4002.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894137873_3aef095f_857a_43f4_a0e0_f40c59bf4002.png)
 
 **Note:**
 
@@ -556,7 +556,7 @@ UART2, UART3, UART4, and UART5 are all serial ports with a 3.3V level, and they 
 
 SPI1 and SPI2 have a 3.3V level and are led out from P17.
 
-I2C1 and I2C2 have a 3.3V level and are led out from P17. 5V and 3.3V are led out from P17 for easy wiring.![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894151223-dc38c1f2-d4d5-4964-8b10-d7bb0ae47333.png)
+I2C1 and I2C2 have a 3.3V level and are led out from P17. 5V and 3.3V are led out from P17 for easy wiring.![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894151223_dc38c1f2_d4d5_4964_8b10_d7bb0ae47333.png)
 
 #### 3.5.6 CAN
 
@@ -564,25 +564,25 @@ There are two CAN interfaces on the carrier board, which are led out from the 2E
 
 Currently, TJA1040T is default - soldered on the development board. Since the output terminal RX of TJA1040T has a 5V level, which may affect the 3.3V voltage of the SoM, the outputs of the chip are divided to 3.3V through resistors R60 and R68 as well as R61 and R69 respectively before being input to CAN1\_RX and CAN2\_RX of the CPU. If you want to use the other two types of CAN chips, please refer to the relevant chip data sheets and modify the circuit accordingly.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894157617-885fdb84-f6b9-421c-95ae-cccd488ea862.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894157617_885fdb84_f6b9_421c_95ae_cccd488ea862.png)
 
 #### 3.5.7 TF Card
 
 P8 is the TF card socket, which uses the SDHC1 interface of the CPU. The program can be programmed from the TF card through the DIP switch. When the SDXC card is of UHS - II or higher grade, it will be downgraded to UHS - I for use. The reason is that starting from UHS - II, new data pins are added (similar to the difference between USB 3.0 and previous versions).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894161984-f78ee2a0-a1aa-4bf1-b0a5-9e63dab9979e.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894161984_f78ee2a0_a1aa_4bf1_b0a5_9e63dab9979e.png)
 
 #### 3.5.8 RTC
 
 The development board supports CPU - built - in and external RTC chips. Due to high power consumption of the built - in one, the external chip is default. The factory - included RTC battery is CR2032, replaceable with the same model when depleted.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894166667-82b48abf-e569-4902-af8a-c1404f2bbd00.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894166667_82b48abf_e569_4902_af8a_c1404f2bbd00.png)
 
 #### 3.5.9 User LED
 
 There is 1 x LED indicator on the development board; when using the LED indicator, the corresponding pin needs to be configured as GPIO function. When the LED pin outputs a low - level signal, the LED is conducting and lights up. Conversely, when the pin outputs a high - level signal, the LED turns off.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894175525-1f62b692-852b-4962-bfae-f6a1e8452d8f.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894175525_1f62b692_852b_4962_bfae_f6a1e8452d8f.png)
 
 #### 3.5.10 Audio
 
@@ -598,21 +598,21 @@ Connect a speaker to each socket, and please don’t share the speaker wire, nor
 
 The CPU supports 2 x USB 2.0. On the development board, one of the USB\_OTG2 interfaces of the i.MX6ULL is expanded into 4 x USB through the industrial - grade USB hub FE1.1s. Among them, 2 x are connected to the USB host 2.0 interfaces (P15, P16), which can be used to connect devices such as mice, 4G modules, and Wi - Fi devices. One of the remaining USB is connected to the on - board Bluetooth Wi - Fi module, and the other is connected to the on - board 4G module. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894189588-a798c727-921b-448f-88fa-9ca6f4e9a33e.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894189588_a798c727_921b_448f_88fa_9ca6f4e9a33e.png)
 
 #### 3.5.12 USB OTG Interfaces
 
-The mainboard uses USB \_ OTG1 as a device, which is led out through Type-C to supply power to the mainboard and flash the system.![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894197649-b6d22dac-dc64-4f7f-b71d-ee06ac45dcb7.png)
+The mainboard uses USB \_ OTG1 as a device, which is led out through Type-C to supply power to the mainboard and flash the system.![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894197649_b6d22dac_dc64_4f7f_b71d_ee06ac45dcb7.png)
 
 #### 3.5.13 4G Interface
 
-There is a mini PCIe socket on the development board for the 4G module, which uses the USB protocol. Use the DCDC power chip MP2147GD to supply power to the 4G module. The 4G IPEX antenna needs to be buckled on P27, and P18 is the MICRO \_ SIM card holder.![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894201524-56958b24-4770-4b7e-b8ac-10d900b04cfb.png)![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894206390-d4d65902-b7c7-4891-8d48-4be839311f94.png)![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894208637-1432433e-9070-4f18-9e6e-c98057e87842.png)
+There is a mini PCIe socket on the development board for the 4G module, which uses the USB protocol. Use the DCDC power chip MP2147GD to supply power to the 4G module. The 4G IPEX antenna needs to be buckled on P27, and P18 is the MICRO \_ SIM card holder.![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894201524_56958b24_4770_4b7e_b8ac_10d900b04cfb.png)![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894206390_d4d65902_b7c7_4891_8d48_4be839311f94.png)![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894208637_1432433e_9070_4f18_9e6e_c98057e87842.png)
 
 #### 3.5.14 WiFi \& Bluetooth
 
 The model of the WiFi Bluetooth 2-in-1 module is RT L8723DU. Standard: IEEE 802.11b/g/n, bluetooth: BT V2.1/BT V3.0/BT V4.0。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534235/1721894212368-f84a6049-1c10-4fca-abfe-ed9982ca4ffa.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1721894212368_f84a6049_1c10_4fca_abfe_ed9982ca4ffa.png)
 
 In the schematic diagram, the WIFI\_EN pin is the power switch pin of the module. When it outputs a low level, the module is powered.
 
@@ -681,13 +681,13 @@ Currently, the CAN transceiver chip defaultly used on the development board is T
 
 SoM Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50035847/1761285048003-0a2e2a73-cab7-4a6d-a070-c2bf2a8dc69b.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1761285048003_0a2e2a73_cab7_4a6d_a070_c2bf2a8dc69b.png)
 
 Carrier board Connector Dimension:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50035847/1761285058013-3d5b0809-67a9-4b8b-a6a6-eb02545114bd.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1761285058013_3d5b0809_67a9_4b8b_a6a6_eb02545114bd.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50035847/1761285084070-947127e3-ee9b-46b3-b6b2-f011a299a074.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1761285084070_947127e3_ee9b_46b3_b6b2_f011a299a074.png)
 
 ## 7\. Power Consumption of the Whole Machine Under Linux
 
@@ -706,9 +706,9 @@ Carrier board Connector Dimension:
 
 ## 8\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1756696885529-f13e0cd3-dc7c-4825-9706-9676d870891a.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756696885529_f13e0cd3_dc7c_4825_9706_9676d870891a.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1756697115986-66f80ef8-4da1-4e41-b7ad-bee96757523e.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756697115986_66f80ef8_4da1_4e41_b7ad_bee96757523e.png)
 
 **Note:**
 
@@ -716,7 +716,7 @@ Carrier board Connector Dimension:
 
 ## 9\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1756696885529-f13e0cd3-dc7c-4825-9706-9676d870891a.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756696885529_f13e0cd3_dc7c_4825_9706_9676d870891a.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1756697115986-66f80ef8-4da1-4e41-b7ad-bee96757523e.png)
+![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756697115986_66f80ef8_4da1_4e41_b7ad_bee96757523e.png)
 
