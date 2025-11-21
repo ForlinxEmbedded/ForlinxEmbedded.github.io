@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OKMX6ULL-C_User_Hardware_Manual
+
 
 
 SOFTWARE 
