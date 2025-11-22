@@ -31,6 +31,7 @@ SOFTWARE
    :maxdepth: 2
 
    OKMX6ULL-C_Linux4_1_15_User_Manual
+   OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual
 
 
 
