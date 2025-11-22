@@ -42,42 +42,42 @@ l 第四章主要是开发板相关源码编译方法，包括内核源码编译
 ## 1.1 VMware软件的下载与购买
 [登陆VMware官网https://www.vmware.com/cn.h](https://www.vmware.com/cn.html)[tml下载](https://www.vmware.com/cn.html)Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者可以选择使用试用。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130552795-1efff5fc-4341-43b9-aeb1-bd723941779d.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130552795_1efff5fc_4341_43b9_aeb1_bd723941779d.png)
 
 等待下载完成后双击启动文件启动安装程序。
 
 ## 1.2 VMware软件的安装
 双击启动程序进入安装向导。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130553055-61c21413-07de-4beb-bed5-891acde85934.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553055_61c21413_07de_4beb_bed5_891acde85934.png)
 
 点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130553376-df065571-fcfa-4fde-83f1-e25539acc3b4.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553376_df065571_fcfa_4fde_83f1_e25539acc3b4.png)
 
 勾选我接受许可协议中的条款，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130553578-781988f3-7dac-4da4-ab14-4ffc52417275.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553578_781988f3_7dac_4da4_ab14_4ffc52417275.png)
 
 修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130553799-5e6fd4d4-9d73-41e7-b325-2e3b3a3423cf.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553799_5e6fd4d4_9d73_41e7_b325_2e3b3a3423cf.png)
 
 勾选，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130554136-cf6e6cf5-3ff8-4e60-b72f-7d96205b4ce7.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554136_cf6e6cf5_3ff8_4e60_b72f_7d96205b4ce7.png)
 
 勾选添加快捷方式，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130554602-7f51a899-ebcf-4dd9-bad3-1be0b24bd24f.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554602_7f51a899_ebcf_4dd9_bad3_1be0b24bd24f.png)
 
 点击“安装”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130554863-0a8ad89a-74aa-4fb0-8ed5-e8ae0bfe9798.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554863_0a8ad89a_74aa_4fb0_8ed5_e8ae0bfe9798.png)
 
 等待安装完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130555089-e26d12b8-7cc4-4afe-b9e1-3ff3d86cc4ae.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130555089_e26d12b8_7cc4_4afe_b9e1_3ff3d86cc4ae.png)
 
 点击完成后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。
 
@@ -95,35 +95,35 @@ l 第四章主要是开发板相关源码编译方法，包括内核源码编译
 
 首先，下载飞凌提供的开发环境，开发环境资料中有MD5校验文件，用户下载完开发环境资料，先对开发环境压缩包进行MD5校验（MD5校验可以在网络上选择MD5在线工具校验，也可以下载MD5校验工具进行校验，可根据实际情况选择），查看校验码和校验文件中校验码是否一致，若一致则下载文件正常；若不一致，则文件可能有破损，需要重新下载。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130667841-7dd3f795-e862-4ab5-9123-97a4322a44b8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130667841_7dd3f795_e862_4ab5_9123_97a4322a44b8.png)
 
 选中所有压缩包，右键解压到MX6UL&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130668092-deb6353e-c58e-47a8-8f2c-0494bcde9373.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668092_deb6353e_c58e_47a8_8f2c_0494bcde9373.png)
 
 解压完成后，如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130668390-1271091f-6304-4c3e-9d51-b2f46e4384ef.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668390_1271091f_6304_4c3e_9d51_b2f46e4384ef.png)
 
 MX6UL&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04文件夹中的Ubuntu18.04 64 位.vmx为虚拟机要打卡的文件。
 
 打开安装好的虚拟机。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130668618-c3be439a-e840-4e42-a78f-1544448e447f.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668618_c3be439a_e840_4e42_a78f_1544448e447f.png)
 
 选择刚解压生成的MX6UL&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04虚拟机文件所在的目录，双击打开启动文件
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130668821-8323be81-5bc8-49df-abf1-3bdff8e0afb4.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668821_8323be81_5bc8_49df_abf1_3bdff8e0afb4.png)
 
 加载完成后点击开启此虚拟机，即可运行，进入系统的界面。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130669055-44003c55-25ea-4813-a29a-21ae2bb43ac1.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669055_44003c55_25ea_4813_a29a_21ae2bb43ac1.png)
 
 	提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130669360-9f42398a-117a-414d-bb81-dbe1dbfbe120.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669360_9f42398a_117a_414d_bb81_dbe1dbfbe120.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130669640-b1da4f71-0317-425c-962b-04428e1b57bc.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669640_b1da4f71_0317_425c_962b_04428e1b57bc.png)
 
 
 
@@ -139,61 +139,61 @@ MX6UL&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04文件夹中的Ubuntu18.04 64 位.v
 ### 3.1.1 创建Ubuntu虚拟机
 打开VMware软件，点击创建新的虚拟机。进入以下界面：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130873710-b80a1010-8d6a-4ba1-8849-570651261519.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130873710_b80a1010_8d6a_4ba1_8849_570651261519.png)
 
 选择自定义，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130873998-716f2d13-f787-45ab-8034-3684dd19f526.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130873998_716f2d13_f787_45ab_8034_3684dd19f526.png)
 
 选择对应VMware版本的兼容性，版本可在帮助->关于VMware Workstation中查看，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130874359-e15e9c36-4757-4c02-9d31-2b1f6621e444.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874359_e15e9c36_4757_4c02_9d31_2b1f6621e444.png)
 
 选择稍后安装操作系统，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130874643-3c1b5ca9-329e-4aee-bff3-3cbe693f69a2.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874643_3c1b5ca9_329e_4aee_bff3_3cbe693f69a2.png)
 
 保持默认，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130874873-6a547ee4-c88f-4467-aa57-6f62406eef17.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874873_6a547ee4_c88f_4467_aa57_6f62406eef17.png)
 
 修改虚拟机名称及安装位置，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130875136-bf052855-fc99-4273-8e0e-30c7e6de4c5e.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875136_bf052855_fc99_4273_8e0e_30c7e6de4c5e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130875393-5d7c2ff3-a199-44b9-93cc-384f20420379.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875393_5d7c2ff3_a199_44b9_93cc_384f20420379.png)
 
 同样按照实际情况设置内存大小。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130875638-fb0ecd2e-a95f-45cc-95b8-033ac8bed1c4.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875638_fb0ecd2e_a95f_45cc_95b8_033ac8bed1c4.png)
 
 设置网络类型，默认为NAT模式，点击下一步。后面的步骤保持默认值，直到指定磁盘容量步骤。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130875870-58ea3361-855b-4639-b0f5-923e361758bd.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875870_58ea3361_855b_4639_b0f5_923e361758bd.png)
 
 IO控制器类型这里默认选择LSI就可以：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130876113-0bc98951-16b5-4084-90c8-37d896225d4b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876113_0bc98951_16b5_4084_90c8_37d896225d4b.png)
 
 这里同样是默认选择SCSI。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130876355-b630e6a2-e66c-4629-bad9-95a5142f811e.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876355_b630e6a2_e66c_4629_bad9_95a5142f811e.png)
 
 这里选择创建新的虚拟磁盘：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130876565-ef041689-7337-4abc-9d05-63b82dfd2f92.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876565_ef041689_7337_4abc_9d05_63b82dfd2f92.png)
 
 设置磁盘大小为200G，并选择磁盘的存在形式，然后点击“下一步”完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130876873-7c0856e0-6814-46f2-b1c3-4777c3f1ba82.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876873_7c0856e0_6814_46f2_b1c3_4777c3f1ba82.png)
 
 指定磁盘文件，这里默认即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130877128-50148b1b-37d8-4af0-9227-6bf60c93f956.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877128_50148b1b_37d8_4af0_9227_6bf60c93f956.png)
 
 默认点击“完成”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130877325-cd17f07f-bb68-4ef0-bf8d-bcffdcef5d5e.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877325_cd17f07f_bb68_4ef0_bf8d_bcffdcef5d5e.png)
 
 至此，虚拟机创建完成。
 
@@ -202,65 +202,65 @@ IO控制器类型这里默认选择LSI就可以：
 ### 3.1.2 系统安装
 我们选择安装的Ubuntu 版本是18.04，首先去Ubuntu官网获取Ubuntu18.04 64位镜像，下载地址为：[http://releases.ubuntu](http://releases.ubuntu.com/18.04/)[.com/18.04/](http://releases.ubuntu.com/18.04/)下载“ubuntu-18.04.5-desktop-amd64.iso”这个版本。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130877616-c0116c9e-13fd-4dca-8aca-cd910dcc7df4.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877616_c0116c9e_13fd_4dca_8aca_cd910dcc7df4.png)
 
 右击刚创建完成的Ubuntu64位 在弹出菜单中选择设置：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130877889-7e5b736b-ed71-4266-9d79-2af0c01d3ea4.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877889_7e5b736b_ed71_4266_9d79_2af0c01d3ea4.png)
 
 弹出“虚拟机设置菜单”根据如下图： 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130878173-7f3b9c86-a789-4b74-9139-237498289208.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878173_7f3b9c86_a789_4b74_9139_237498289208.png)
 
 点击CD/DVD（SATA），选择使用ISO映像文件，浏览选择前面下载的Ubuntu镜像，然后确定。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130878386-465f332a-846b-4654-9492-c7b334ae6452.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878386_465f332a_846b_4654_9492_c7b334ae6452.png)
 
 设置好镜像后，保证网络可用，然后开启虚拟机，进行Ubuntu镜像的安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130878629-7b9c4978-111f-4d6a-87c8-d74e18db979f.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878629_7b9c4978_111f_4d6a_87c8_d74e18db979f.png)
 
 开启虚拟机后，等待出现安装界面如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130878872-dfd1e144-c565-4bf5-ae65-96165fdfd0ee.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878872_dfd1e144_c565_4bf5_ae65_96165fdfd0ee.png)
 
 如图左侧选择语言后,点击“Install  Ubuntu”后弹出选择语言界面。Ubuntu默认语言是英文的，当然，也可以选择中文，默认选择的语言在后期也是可以重新设置的，选择完成后continue。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130879162-c887a891-5473-4470-8744-ea601caa884c.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879162_c887a891_5473_4470_8744_ea601caa884c.png)
 
 接下来，默认选择continue继续安装，安装过程会很慢，然后点击“continue”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130879424-f22b6351-4139-46ed-a5ae-9f07a0395579.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879424_f22b6351_4139_46ed_a5ae_9f07a0395579.png)
 
 默认，点击Install Now，会弹出下图，点击“continue”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130879621-48c81c07-77b7-42ba-9252-bf0b57d67089.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879621_48c81c07_77b7_42ba_9252_bf0b57d67089.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130879995-f2e16814-cf7c-4fc5-9bab-7c617fadd3e2.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879995_f2e16814_cf7c_4fc5_9bab_7c617fadd3e2.png)
 
 接下来选择时区，这里点击上海时区或输入Shanghai即可（不同时区根据实际情况选择即可），点击“继续”。最后设置用户名和密码，点击“continue”就会自动安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130880313-7ce73410-2829-4742-b833-8116daec3469.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880313_7ce73410_2829_4742_b833_8116daec3469.png)
 
 安装过程下图，网络不好可以Skip跳过，不影响安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130880702-8f6f15db-0b72-41bb-baf3-8223b6f98062.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880702_8f6f15db_0b72_41bb_baf3_8223b6f98062.png)
 
 安装完成后显示如下图，点击“Restart Now”重启<font style="background-color:yellow;">（或者点击“重新启动客户机</font>”）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130880992-5934d52d-df50-4438-812a-6ae5fb555a22.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880992_5934d52d_df50_4438_812a_6ae5fb555a22.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130881280-a25cd0ea-662d-4a5e-804d-c3409035be54.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881280_a25cd0ea_662d_4a5e_804d_c3409035be54.png)
 
 重启完成需要使用用户名和密码登录，登录后系统界面如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130881517-50069bf3-e74b-42b5-902c-37145d6f82d0.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881517_50069bf3_e74b_42b5_902c_37145d6f82d0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130881840-80f09913-0c90-45a6-8bcc-f8bf91fa6d34.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881840_80f09913_0c90_45a6_8bcc_f8bf91fa6d34.png)
 
 以上，ubuntu系统安装完成按照下图配置，点击确定，然后重新打开虚拟机，看能否正常启动Ubuntu。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130882093-342df8a6-a76b-4820-8df6-adae03cb2607.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882093_342df8a6_a76b_4820_8df6_adae03cb2607.png)
 
 ### 3.1.3 Ubuntu的基本配置
 安装好Ubuntu18.04操作系统后，要进行一些配置。
@@ -269,23 +269,23 @@ IO控制器类型这里默认选择LSI就可以：
 
 接下来安装VMware Tools，如果不安装该工具，在Windows主机和虚拟机之间无法使用复制粘贴、文件拖拽。首先点击VMware 导航栏上的“虚拟机”，然后在下拉框中点击“安装VMware Tools”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130882334-203d6ed3-4c69-471f-a20f-24af1b7ad171.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882334_203d6ed3_4c69_471f_a20f_24af1b7ad171.png)
 
 完成后进入Ubuntu，桌面会出现VMware Tools的光盘图标，点击进入其中：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130882614-15de9f87-5997-40c0-b7a7-9e650e40ef7d.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882614_15de9f87_5997_40c0_b7a7_9e650e40ef7d.png)
 
 双击VMwareTools图标，进入后看到一个压缩文件VMwareTools-10.3.10-12406962.tar.gz（不同的虚拟机版本可能会不同），
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130882882-b3eed435-b12d-4198-8a78-38d7a42a441e.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882882_b3eed435_b12d_4198_8a78_38d7a42a441e.png)
 
 复制文件到主目录下面（即home 个人用户名的目录下）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130883102-6095e86b-ed29-4116-9acd-043e3dc27af8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883102_6095e86b_ed29_4116_9acd_043e3dc27af8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130883509-768a0307-4af6-4ee0-88af-6715ef57e4b2.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883509_768a0307_4af6_4ee0_88af_6715ef57e4b2.png)
 
 按键盘【Ctrl+Alt+T】调出终端命令界面，使用tar命令对VMwareTools安装包解压（使用sudo命令会提示输入密码，根据提示直接输入密码回车即可，Linux系统密码输入无显示）：
 
@@ -323,57 +323,57 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 
 VMware tools工具完成后，可以实现Windows和Ubuntu之间的文件复制粘贴，虚拟机自适应全显等功能。如果虚拟机不能够全屏显示，可以通过点击查看，选择自动调整大小，点击自动适应客户机，即可实现虚拟机的全屏显示，VMware tools安装成功。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130883706-0b9259e7-9335-4895-9e6a-47c8b270fd70.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883706_0b9259e7_9335_4895_9e6a_47c8b270fd70.png)
 
 + **基本设置：**
 
 在下图位置进行大部分的系统设置。Ubuntu上很多设置的需求都可以在这里完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130884066-fcfdc4c4-9b74-4e9a-ae37-bb38cddbc0a7.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884066_fcfdc4c4_9b74_4e9a_ae37_bb38cddbc0a7.png)
 
 ### 3.1.4 Ubuntu的网络设置
 + **NAT模式**
 
 在使用网络前，先确保我们的虚拟机能连接互联网，打开虚拟机设置，网络适配器中的网络连接模式改为“NAT模式”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130884252-18d04452-e6c6-4ac7-a7be-b8243e124e2a.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884252_18d04452_e6c6_4ac7_a7be_b8243e124e2a.png)
 
 在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通。这是我们虚拟机上外网最常用的方式。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130884514-a79f3fb8-e9a6-4c0e-aaeb-e84b5e134598.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884514_a79f3fb8_e9a6_4c0e_aaeb_e84b5e134598.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130884669-ee6af497-3c2b-4699-b5fa-aa7473a56744.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884669_ee6af497_3c2b_4699_b5fa_aa7473a56744.png)
 
 网络设置为动态ip。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130884910-31b3ff36-944c-4dcd-803b-61d261fc56a2.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884910_31b3ff36_944c_4dcd_803b_61d261fc56a2.png)
 
 + **桥接模式：**
 
 如果在使用TFTP，SFTP等服务器时则需要设置虚拟机的网络连接方式为桥接方式。VMware虚拟网卡设置为桥接模式时，主机网卡和虚拟机网卡通过虚拟网桥进行通信，需要将Ubuntu的IP与主机IP设置在同一个网段。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130885296-2e06ca75-268a-48ca-b8d8-d3e0df3cf340.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885296_2e06ca75_268a_48ca_b8d8_d3e0df3cf340.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130885782-8a8f38ca-28f0-4339-ad00-929b39697312.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885782_8a8f38ca_28f0_4339_ad00_929b39697312.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130885969-280935cf-acc5-4e8e-a155-b8ef4ea3c9ce.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885969_280935cf_acc5_4e8e_a155_b8ef4ea3c9ce.png)
 
  	设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130886234-d7029515-ec37-4f72-b240-d70dd584f554.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886234_d7029515_ec37_4f72_b240_d70dd584f554.png)
 
 + **注意：网络设置部分涉及到的IP以及DNS请按照用户自身的实际环境来设置，手册为举例说明。**
 
 ### 3.1.5 U盘的加载
 打开虚拟机设置，USB控制器，在兼容性里面选择USB3.0，然后确定。如下图，因为目前大多数电脑都支持USB3.0的接口，如果不设置，当我们插入USB3.0接口，是不能连接到虚拟机的。如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130886408-8d3ca670-ba9e-4095-8922-fa0612b8ebbb.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886408_8d3ca670_ba9e_4095_8922_fa0612b8ebbb.png)
 
 虚拟机启动后，插入U盘，虚拟机右下角会多出一个类似“U盘”的图标，右击-->连接即可，然后就可以在文件系统看到多一个目录，说明U盘加载成功，如图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130886606-5c2f1d8f-b5b5-41b9-9380-b4658f50c8ae.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886606_5c2f1d8f_b5b5_41b9_9380_b4658f50c8ae.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130886802-39cd79c3-8476-4aee-840b-4909dfce8097.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886802_39cd79c3_8476_4aee_840b_4909dfce8097.png)
 
 ### 3.1.6 必要库安装
 在进行开发之前，还需要一些其他的必要库，我们使用以下命令逐一安装，安装前需保证网络可正常使用，能上外网：
@@ -402,7 +402,7 @@ forlinx@ubuntu:~$ ./fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-cortexa7hf-neon-
 
 连续两次按下回车键，程序将会自动安装交叉编译工具链（交叉编译工具链安装一次即可，更换终端或重启系统不必重新安装）。安装过程中一定要保证网络畅通，Ubuntu系统可以访问外网。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130887061-4376335c-6c90-4aad-9262-a497d7a8515b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887061_4376335c_6c90_4aad_9262_a497d7a8515b.png)
 
 通过输出打印信息，可以判断安装是否成功。
 
@@ -419,13 +419,13 @@ forlinx@ubuntu:~$ ./fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-cortexa7hf-neon-
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130887289-6e9810ff-f2ba-441c-8935-c2f4ea2ccd2e.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887289_6e9810ff_f2ba_441c_8935_c2f4ea2ccd2e.png)
 
 然后使用命令arm-poky-linux-gnueabi-gcc -v判断是否设置成功(注：-v前边有空格)：
 
 正常情况下会打印出gcc的版本信息，gcc version 5.3.0 (GCC)：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130887554-e8c33fab-d0c2-4eb8-90aa-a6d4ed1279c9.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887554_e8c33fab_d0c2_4eb8_90aa_a6d4ed1279c9.png)
 
 ## 3.3 Qt Creator安装
 Qt Creator是一个跨平台的QT集成开发环境（IDE），包括了高级C++代码编辑器、项目和生成管理等工具，适用于QT应用程序框架设计和应用程序开发。本次安装选用的Qt Creator3.2.1安装包：[qt-creator-opensource-linux-x86_64-3.2.1.run](https://download.qt.io/archive/qtcreator/3.2/3.2.1/qt-creator-opensource-linux-x86_64-3.2.1.run)。将安装包拷贝到/home/forlinx/work/路径下。安装包获取网站：[https://download.qt.io/archive/qtcreator/3.2/3.2.1/](https://download.qt.io/archive/qtcreator/3.2/3.2.1/)
@@ -439,7 +439,7 @@ cs/linux-oe-g++/qmake.conf
 
 删除文件qmake.conf中include(../oe-device-extra.pri) 这一行。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130887910-04ba5e0d-3874-4ee5-9d51-5c49feb0ffc8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887910_04ba5e0d_3874_4ee5_9d51_5c49feb0ffc8.png)
 
 修改完保存并退出。
 
@@ -453,9 +453,9 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 
 然后会弹出图形界面的安装窗口，按照提示进行安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130888223-7286e0f2-c770-4453-b3ca-ea4551750c0b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888223_7286e0f2_c770_4453_b3ca_ea4551750c0b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130888466-f4e7734a-41e3-4822-b570-e3363bdf6067.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888466_f4e7734a_41e3_4822_b570_e3363bdf6067.png)
 
 用户可根据自己习惯设置安装路径。
 
@@ -465,7 +465,7 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 forlinx@ubuntu:~$ /home/forlinx/qtcreator-3.2.1/bin/ qtcreator.sh &
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130888709-cd7f89bb-5f27-400b-aaca-60fe98366722.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888709_cd7f89bb_5f27_400b_aaca_60fe98366722.png)
 
 出现Qt Creator工具界面。Qt Creator安装完毕。
 
@@ -484,7 +484,7 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 
 3、Compiler Path点击Browse 选择交叉编译器的路径为：/opt/fsl-imx-x11/4.1.15-2.0.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130889406-5c81a0f9-9e69-47ba-8799-704f8bc84dbe.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889406_5c81a0f9_9e69_47ba_8799_704f8bc84dbe.png)
 
 4、然后点击Apply及OK。
 
@@ -496,11 +496,11 @@ Qt是跨平台的图形开发库，支持众多操作系统，在进行编译前
 
 3、点击open添加。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130889611-4726e704-8541-4f90-8ce1-73cc86ddb01b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889611_4726e704_8541_4f90_8ce1_73cc86ddb01b.png)
 
 4、然后会返回 Qt Version配置框，Version name输入Qt 5.6.2。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130889900-7c9610ab-ef88-4567-a6b1-4f4e6667766b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889900_7c9610ab_ef88_4567_a6b1_4f4e6667766b.png)
 
 5、然后点击Apply及OK。
 
@@ -518,7 +518,7 @@ Kits是一个构建套件，用来构建和选择开发编译环境，对于有�
 
 5、Qt mkspec 写上 linux-oe-g++。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130890194-90666ddb-0adf-48a6-a4fd-3cb5316845c5.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890194_90666ddb_0adf_48a6_a4fd_3cb5316845c5.png)
 
 6、然后点击Apply及OK。
 
@@ -541,7 +541,7 @@ sudo apt-get  install libgstreamer-plugins-base0.10-dev
 
 2、用普通账户在Qt Creator打开工程文件，出现写入权限报错
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715130890507-fa6a691a-3d47-466a-bbb7-84abdbd1f630.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890507_fa6a691a_3d47_466a_bbb7_84abdbd1f630.png)
 
 解决方法：
 
@@ -581,11 +581,11 @@ ubuntu和Windows主机之间的文件传输有很多种，安装VMware Tools后�
 
 设置方法如下，点击菜单栏的“虚拟机”，选择“设置”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131102725-8c309a2c-faeb-452b-b442-009fea435688.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131102725_8c309a2c_faeb_452b_b442_009fea435688.png)
 
 点击“选项”，启用“共享文件夹”，设置Windows主机上的共享目录，点击“确定”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131102937-07075d0b-532f-48f2-947d-8aaa50a98e27.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131102937_07075d0b_532f_48f2_947d_8aaa50a98e27.png)
 
 虚拟机的文件共享设置完成后，将测试的所用的：内核源码linux-4.1.15.tar.bz2、文件系统（本节以rootfs-console.tar.bz2为例）、命令行测试程序wdttest.c、QT测试程序audio放到Windows主机的共享文件夹后。
 
@@ -640,7 +640,7 @@ root@ubuntu:/home/forlinx/work# cd linux-4.1.15                 //进入到内�
 
 . /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131103158-a0d86cd0-3f4e-4591-a938-bcac008e5789.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103158_a0d86cd0_3f4e_4591_a938_bcac008e5789.png)
 
 ### 4.2.1 整体编译Linux-4.1.15内核
 在源码路径内，提供了编译脚本build.sh，运行该脚本对整个源码进行编译
@@ -657,7 +657,7 @@ root@ubuntu:/home/forlinx/work/linux-4.1.15# ./imx6ull_c_build.sh
 
 编译执行后结果，信息较多，指截取最后部分信息：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131103434-1d844066-f8c6-4f4b-ad84-6c45d2684478.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103434_1d844066_f8c6_4f4b_ad84_6c45d2684478.png)
 
 编译成功后，会生成.ko的模块文件，linux-4.1.15/arch/arm/boot/路径下生成zImage，linux-4.1.15/arch/arm/boot/dts路径下生成相关的dtb文件（单独编译设备树章节做详细说明）。
 
@@ -704,7 +704,7 @@ root@ubuntu:/home/forlinx/work/linux-4.1.15# make modules
 
 使用“make modules_install INSTALL_MOD_PATH=/home/forlinx/work/”指令将模块导出到指定目录/home/forlinx/work/下，将导出的模块压缩打包为modules.tar.bz2，烧录时替换烧录工具的相同文件。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131103730-2aec4ee9-1abb-4a35-a281-69c556fb0c13.png)![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131103941-36e20512-d247-402d-a586-7d259e77385b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103730_2aec4ee9_1abb_4a35_a281_69c556fb0c13.png)![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103941_36e20512_d247_402d_a586_7d259e77385b.png)
 
 ## 4.3  制作文件系统
 + **注意：**
@@ -836,7 +836,7 @@ forlinx@ubuntu:~/work$ /home/forlinx/qtcreator-3.2.1/bin/qtcreator.sh &
 
 如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131104216-6d917100-4bbe-49fc-beb7-c90a784bc990.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104216_6d917100_4bbe_49fc_beb7_c90a784bc990.png)
 
 点击open。
 
@@ -844,11 +844,11 @@ forlinx@ubuntu:~/work$ /home/forlinx/qtcreator-3.2.1/bin/qtcreator.sh &
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131104467-b45ec108-2b76-45dc-80e3-d137b571fcd6.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104467_b45ec108_2b76_45dc_80e3_d137b571fcd6.png)
 
 弹出Configure Project窗口,如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131104680-ad195f5a-417c-470d-9fcd-8d2e5cc0c619.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104680_ad195f5a_417c_470d_9fcd_8d2e5cc0c619.png)
 
 点击Configure Project。
 
@@ -858,23 +858,23 @@ forlinx@ubuntu:~/work$ /home/forlinx/qtcreator-3.2.1/bin/qtcreator.sh &
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131104939-4923c2ae-79fb-4abf-9fe3-1117eff0da68.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104939_4923c2ae_79fb_4abf_9fe3_1117eff0da68.png)
 
 点击Build->Clean All进行清空。（如果没有清除中间文件可以手动删除）
 
 点击Projects 取消选中Shadow build
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131105189-2a6a8767-a29b-4424-84b8-cb96aa54ef21.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105189_2a6a8767_a29b_4424_84b8_cb96aa54ef21.png)
 
 然后点击Build->Build All进行编译。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131105485-41b7d280-eb3b-4ec7-a439-e84675b3784a.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105485_41b7d280_eb3b_4ec7_a439_e84675b3784a.png)
 
 
 
 右下角Build进度条走完之后代表编译完成，此时在路径/files/audio/目录下会看到新生成的二进制文件audio，如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715131105880-d25368ef-b526-437d-9b80-9ccfb6ea02c3.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105880_d25368ef_b526_437d_9b80_9ccfb6ea02c3.png)
 
 **4.4.2.2 运行QT应用程序**
 
