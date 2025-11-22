@@ -714,13 +714,10 @@ Carrier board Connector Dimension:
 
 ![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756697115986_66f80ef8_4da1_4e41_b7ad_bee96757523e.png)
 
-**Note:**
-
-**When you design the carrier board by yourself, please reserve the serial port circuit for easy debugging, reserve the DIP switch circuit for easy program flashing, and pay attention to the power - on sequence to prevent the latch - up effect from damaging the CPU (refer to 3.5.1 Carrier Board Power Supply for specific design).**
-
-## 9\. Minimum System Schematic
-
 ![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756696885529_f13e0cd3_dc7c_4825_9706_9676d870891a.png)
 
 ![Image](./images/OKMX6ULL-C_User_Hardware_Manual/1756697115986_66f80ef8_4da1_4e41_b7ad_bee96757523e.png)
 
+**Note:**
+
+**When you design the carrier board by yourself, please reserve the serial port circuit for easy debugging, reserve the DIP switch circuit for easy program flashing, and pay attention to the power - on sequence to prevent the latch - up effect from damaging the CPU (refer to 3.5.1 Carrier Board Power Supply for specific design).**
