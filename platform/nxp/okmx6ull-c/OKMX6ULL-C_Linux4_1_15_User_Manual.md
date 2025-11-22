@@ -88,7 +88,7 @@ The OKMX6ULL-C development board has two system login methods, serial and networ
 + 5V3A DC power cable
 + Type-C data cable (used for serial login and USB flashing)
 + Network cable (for network login)
-+ Check the start mode dip switch
++ Check the start mode DIP switch
 
 Please check the DIP switch on your development board and make sure it is set to the desired boot mode. Please refer to the startup mode settings.“1.3 Flashing and Startup Configuration”
 
