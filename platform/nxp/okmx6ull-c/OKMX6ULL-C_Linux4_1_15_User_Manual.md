@@ -39,7 +39,7 @@ There are total four chapters:
 
 OKMX6ULL-C development board adopts the SoM + carrier board structure, designed based on NXP's i.MX6ULL low-power processor, running at a main frequency of 800 MHz and ARM Cortex-A7 architecture. The unique power management architecture of the board results in lower power consumption compared to ARM9 series SoMs. The SoM offers a rich variety of peripheral interfaces, including CAN, WIFI, USB, UART, IIC, and Ethernet, providing ample resources for various functions.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/43555360/1715069614370-e30a3b51-a542-496f-9c2f-4b75287cb742.jpeg)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069614370_e30a3b51_a542_496f_9c2f_4b75287cb742.jpeg)
 
 **Note: Hardware parameters are not described in this software manual. Before referring to this manual for software development, please read "OKMX6ULL-C\_ Hardware Manual" under the path of "Hardware Data \\ User Manual" to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.**
 
@@ -47,7 +47,7 @@ OKMX6ULL-C development board adopts the SoM + carrier board structure, designed 
 
 OKMX6ULL-C supports two flashing methods, USB-OTG and TF card. It also supports EMMC boot mode, which can be differentiated using a DIP switch. The image below illustrates the EMMC boot configuration.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069614821-1b53566f-b0a3-4b76-8400-ef40f910eb1a.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069614821_1b53566f_b0a3_4b76_8400_ef40f910eb1a.png)
 
 | DIP Switch       | **1**  | **2**  | **3**  | **4**  |
 | ---------------- | :----: | :----: | :----: | :----: |
@@ -106,13 +106,13 @@ Here is an example using Putty to explain how to configure the terminal:
 
 Step 1: Connect the development board and the PC using a serial cable, and verify the serial port number recognized by the computer through the “Device Manager”. The port number recognized by the computer should be considered as the accurate one;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1731401772424-b5a55b61-f82c-4d9a-b7f2-9bb4f9b2f317.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401772424_b5a55b61_f82c_4d9a_b7f2_9bb4f9b2f317.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069947297-8f188704-1a4a-44f6-8ec4-9eb0606b7607.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069947297_8f188704_1a4a_44f6_8ec4_9eb0606b7607.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069947496-8163884e-22ef-4c71-b27a-6dd87210926e.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069947496_8163884e_22ef_4c71_b27a_6dd87210926e.png)
 
 Step 3: Log in with the username is "root" and no password.
 
@@ -146,15 +146,15 @@ Before logging in to the network, it is necessary to ensure that the network con
 
 1. Connect eth0 of the development board to the computer through the network and power up the development board. A blue light on the SoM will blink after the kernel starts, and the network card connected to the computer will blink quickly after normal startup. At this point, you can test the network connection;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069947680-2f7089c1-6a94-4136-b57f-04247b1007ad.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069947680_2f7089c1_6a94_4136_b57f_04247b1007ad.png)
 
 2. Close the computer firewall, then open the computer's run command;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069948013-bc1593f9-d22f-4cfc-9a21-063a757d1e5d.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948013_bc1593f9_d22f_4cfc_9a21_063a757d1e5d.png)
 
 3. Use cmd to open the computer administrator interface, and use the ping command to test the network connection status between the computer and the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069948262-703799dc-2146-4af2-ab2f-b3358fc1fe34.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948262_703799dc_2146_4af2_ab2f_b3358fc1fe34.png)
 
 A data return indicates a normal network connection.
 
@@ -216,11 +216,11 @@ forlinx@ubuntu:~$                                  //SSH login can be successful
 
 + **Windows host access to development board via SSH**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069948482-765da064-2917-416f-af25-5ed6695cb78a.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948482_765da064_2917_416f_af25_5ed6695cb78a.png)
 
 Click "Open", the following dialog box will appear, click "Yes" to enter the login screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069948834-a31d6c5e-16c4-4717-ae6f-16d89377f97b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948834_a31d6c5e_16c4_4717_ae6f_16d89377f97b.png)
 
 ```plain
 Login as：root
@@ -238,7 +238,7 @@ LCD displays of different sizes and resolutions can be selected through the U-bo
 
 Open the serial port debugging terminal putty. After the development board is powered up, press the space bar to enter the menu home page:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069949134-dd156b2d-59c9-4f88-b5fa-506d916ddc44.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069949134_dd156b2d_59c9_4f88_b5fa_506d916ddc44.png)
 
 The uboot level 1 menu function options are listed in the table below:
 
@@ -251,7 +251,7 @@ The uboot level 1 menu function options are listed in the table below:
 
 Enter 1 to enter the screen selection menu (Switch panel), select the corresponding screen, and the system will restart.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069949426-8cdf4ecd-e49e-4373-9b39-9d621c8054c8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069949426_8cdf4ecd_e49e_4373_9b39_9d621c8054c8.png)
 
 According to the menu prompts, select the corresponding options to support LCD display with different sizes and resolutions. The first column is the selection number, the second column is the screen resolution, and the third column is the size and type of the system screen (where c and r correspond to capacitive and resistive screens, respectively). Example: If you need to select a 7-inch capacitive screen with a resolution of 800x480, you need to select option 1 and enter the number 1 on the terminal interface.
 
@@ -259,7 +259,7 @@ According to the menu prompts, select the corresponding options to support LCD d
 
 Enter 2 to enter the screen calibration enable menu (Touch calibration), and select the corresponding option to start the system directly:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069949682-c113cf18-39b5-4ae9-809f-b2ed6d2f5d97.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069949682_c113cf18_39b5_4ae9_809f_b2ed6d2f5d97.png)
 
 ### 2.5 Touch Calibration
 
@@ -286,19 +286,19 @@ Calibrate the touchscreen with the QT program "Calibrate Touchscreen" as follows
 
 1. After the board boots up, the screen display defaults to the QT desktop as shown below;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069950058-95774bfb-0960-4c50-8a5c-8b4fe931309c.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069950058_95774bfb_0960_4c50_8a5c_8b4fe931309c.png)
 
 2\. Click Forlinx in the menu bar, a drop-down menu will appear, select Utilities;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069950394-6d81bbc7-0474-4f56-932d-4ab08c09d13b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069950394_6d81bbc7_0474_4f56_932d_4ab08c09d13b.png)
 
 3\. Select Calibrate Touchscreen to enter the screen calibration interface;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069950645-4034961f-9dda-4ef8-a65c-63ce7cc7fda8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069950645_4034961f_9dda_4ef8_a65c_63ce7cc7fda8.png)
 
 4\. The following interface appears, touch the "+" position on the screen to complete the calibration:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715069951048-bf3c5de4-0253-4775-a560-77c7d521b172.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069951048_bf3c5de4_0253_4775_a560_77c7d521b172.png)
 
 ### 2.6 System Partition
 
@@ -359,7 +359,7 @@ The test program used in this section is integrated into the demo provided by Fo
 + **Different SD cards may display different information. Our company tested using a SanDisk 8GB SD card;**
 + **The MMC data transfer modes supported by the CPU are as shown in the following diagram.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071202649-337b3949-4491-42f0-9d4b-1aba079ed5ea.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071202649_337b3949_4491_42f0_9d4b_1aba079ed5ea.png)
 
 After inserting the SD card into the SD card slot on the development board, the system will automatically check and mount the SD card. Once the mounting is successful, you can perform read and write operations on the SD card.
 
@@ -429,7 +429,7 @@ root@fl-imx6ull:~# umount  /run/media/mmcblk0p1
 + **At present, the U disk test supports 32g, and more than 32g is not tested;**
 + **The mount directory of the USB flash disk is/run/media.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071202943-f54230db-1b8b-4868-8b08-75d9675c398f.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071202943_f54230db_1b8b_4868_8b08_75d9675c398f.png)
 
 There are three USB HOST interfaces on the development board, any one of which can be selected for testing. The terminal will print relevant information while inserting the U disk. As there are many kinds of U disks, the displayed information may be different, and the actual printed information is the main one. The system will automatically check and mount the U disk. After successful mounting, the U disk can be read and written.
 
@@ -833,15 +833,15 @@ root@fl-imx6ull:~# ip -6 addr add 2001:250:4000:2000::50/64 dev eth1	   //Set IP
 
 Open Control Panel->Network and Internet->Change Adapter Options . The following screen appears:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071203352-ff38579f-e937-45a4-a081-dbe1e62b374b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071203352_ff38579f_e937_45a4_a081_dbe1e62b374b.png)
 
 Select Ethernet, right-click and select Properties.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071203592-8279ab42-ed62-4cc7-a927-61545dde2adb.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071203592_8279ab42_ed62_4cc7_a927_61545dde2adb.png)
 
 Turn off ipv4 and open ipv6, double click "Internet Protocol Version 6 (TCP/IPV6)" and modify the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071203855-ae0c2cd2-7213-48cc-8178-f3b42322cd5b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071203855_ae0c2cd2_7213_48cc_8178_f3b42322cd5b.png)
 
 Connect the development board and computer directly with a network cable, and use the ping6 command to test the following:
 
@@ -859,7 +859,7 @@ rtt min/avg/max/mdev = 0.399/0.640/1.432/0.398 ms
 
 ##### 3.1.3.3 USB to Network Test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1731401998755-0ab01e87-234d-470b-bc05-69f88583b692.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401998755_0ab01e87_234d_470b_bc05_69f88583b692.png)
 
 1\. Plug the USB to Ethernet into the USB host interface, and the recognition information is as follows:
 
@@ -901,9 +901,9 @@ passwd: password changed.
 
 To create a "new site": 1. enter the IP address of the development board as the host; 2. choose the encryption method as plaintext FTP only; 3. choose the login type as normal; 4. choose the user and password as those of the development board; 5. click "Connect".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071206825-f8d85570-f705-4314-88a6-d26417d6fc78.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071206825_f8d85570_f705_4314_88a6_d26417d6fc78.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071207163-10633d88-6208-41d1-9baa-d69d5d3a4573.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071207163_10633d88_6208_41d1_9baa_d69d5d3a4573.png)
 
 ##### 3.1.4.2 SSH Client Test
 
@@ -1089,7 +1089,7 @@ RTL871X: module exit success
 
 If the development board has an on-board WIFI WLAN card, solder it to the evaluation board as shown (8723du below):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071207392-1eb42c6f-bde5-4f34-a8c9-0c14264d57d1.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071207392_1eb42c6f_bde5_4f34_a8c9_0c14264d57d1.png)
 
 Step 1: Check whether the module has been soldered on the development board. The correct soldering is shown in the figure above; connect the antenna;
 
@@ -1239,7 +1239,7 @@ wlan0: CTRL-EVENT-DISCONNECTED bssid=04:d7:a5:f9:26:1d reason=0
 
 ###### 3.1.5.2.1 EC20 Test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071207929-834799d2-cf96-44e1-9fee-bc47f57f8869.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071207929_834799d2_cf96_44e1_9fee_bc47f57f8869.png)
 
 | **4G indicator status**            | **The network status indicated** |
 | ---------------------------------- | -------------------------------- |
@@ -1455,7 +1455,7 @@ OKMX6ULL-C hardware uses WM8960 audio chip, and Forlinx also provides the design
 
 There is a 3.5mm audio socket on the development board to support left and right channel playback and MIC recording
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071208339-711cc577-fe90-4705-823d-340c2223b9df.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071208339_711cc577_fe90_4705_823d_340c2223b9df.png)
 
 1. Set the parameters and enter the command in the following figure:
 
@@ -1509,7 +1509,7 @@ Playing WAVE 'record.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 
 The built - in Class D power amplifier output terminals of the audio chip WM8960 are led out through two white XH2.54 - 2P sockets P22 and P23, which can drive two 8Ω speakers with a maximum output power of 1W. If you need to connect an external larger power amplifier, you can only obtain the signal from the headphone socket, not from the speaker interface. When testing the speaker, do not insert the headphones. Use the following commands for testing: 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071208704-8f935fff-b3e4-445d-8ad0-0bc329040e7c.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071208704_8f935fff_b3e4_445d_8ad0_0bc329040e7c.png)
 
 ```plain
 root@fl-imx6ull:~# mplayer /home/root/test.mp3
@@ -1606,11 +1606,11 @@ Taking the UART2 of the development board as an example, it is connected to the 
 
 1. The UART2 of the development board is connected to the computer through the TTL to USB module. After the development board is powered on, it is identified as COM3 in the device manager of the computer (the user sets the parameters according to his actual identification of the COM port):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1731401606044-f4e17a01-4c46-4d08-bb81-addf104fe5a2.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401606044_f4e17a01_4c46_4d08_bb81_addf104fe5a2.png)
 
 2. On the computer side, open the serial port tool and select the COM port identified by the computer. The baud rate is 115 200, the data bit is 8, the stop bit is 1, there is no check, no flow control, and the string abcdefg is sent at a fixed time of 1s. After setting the parameters, open the serial port:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1731401628328-32dc0aa4-24d3-463b-b6ba-0a7c65b81b2c.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401628328_32dc0aa4_24d3_463b_b6ba_0a7c65b81b2c.png)
 
 3. Open the test program on the development board terminal to conduct the receiving and sending test. The serial port parameter setting shall be consistent with the setting of the serial port tool. The test program will automatically send the string abcdefgh.
 
@@ -1631,7 +1631,7 @@ hex:0x61 0x62 0x63 0x64 0x65 0x66 0x67 0x68
 
 From the printing information, UART2 can receive the information sent by the serial port tool.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1731402202240-298f0ff3-e49c-4f18-be26-033801771f6c.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1731402202240_298f0ff3_e49c_4f18_be26_033801771f6c.png)
 
 The serial port tool can receive the data sent by the test program.
 
@@ -1714,7 +1714,7 @@ Printing information is as follows:
 
 3\. The mapping between the four extended serial ports and their corresponding device nodes is shown in the diagram below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071210068-8343e5c2-732f-4324-802c-0348d4a193aa.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071210068_8343e5c2_732f_4324_802c_0348d4a193aa.png)
 
 4\. Test method refer to “UART Serial Port Test”.
 
@@ -1722,7 +1722,7 @@ Printing information is as follows:
 
 Connect CAN1 to CAN2, H to H and L to L of the board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071210415-42da3c5f-407e-47d5-9759-e0072eb59d49.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071210415_42da3c5f_407e_47d5_9759_e0072eb59d49.png)
 
 1. Set the CAN1 service as follows:
 
@@ -1905,7 +1905,7 @@ The development board integrates the wifi \& bt module and the RTL8723du module.
 
 The 8723du module is shown in the figure below
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071210722-395ead9d-1e64-4591-a3ff-b36cd6c3c728.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071210722_395ead9d_1e64_4591_a3ff_b36cd6c3c728.png)
 
 Use the tools from bluez5.37 for testing.
 
@@ -1941,7 +1941,7 @@ Default agent request successful
 
 After the above configuration, the Bluetooth device can be scanned on the mobile phone, and click the Bluetooth to try pairing
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071211015-7c26480d-b373-4837-baa4-21e1eae593f6.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211015_7c26480d_b373_4837_baa4_21e1eae593f6.png)
 
 At the same time, the board end is printed as follows, enter yes:
 
@@ -1957,7 +1957,7 @@ Request confirmation
 
 Then click Bluetooth on the phone to pair:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071211288-1914f79a-6794-47a3-b31e-13bd677078e8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211288_1914f79a_6794_47a3_b31e_13bd677078e8.png)
 
 Print message appears again at board end
 
@@ -2052,7 +2052,7 @@ Type quit to exit the command line.
 
 The phone selects a file to send to the development board via Bluetooth (provided that a Bluetooth connection has been made).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071211558-261cfe39-2605-460f-8b41-4e230af6c432.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211558_261cfe39_2605_460f_8b41_4e230af6c432.png)
 
 After sending, you can see the sent image file in the/home/root/directory.
 
@@ -2077,11 +2077,11 @@ Connection successful
 
 At this point, the phone receives an inquiry to accept the file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071211752-f8f67447-10e3-479c-b386-2bb7ba100348.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211752_f8f67447_10e3_479c_b386_2bb7ba100348.png)
 
 Click Accept to see that the file is already being transferred.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071212067-ef348bd9-317a-4557-ba89-e27d49f50d2a.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071212067_ef348bd9_317a_4557_ba89_e27d49f50d2a.png)
 
 After the transmission, you can see the pictures on your mobile phone.
 
@@ -2242,17 +2242,17 @@ The test program used in this section has been integrated in the Demo provided b
 
 In the Qt file system, the ported Qt is 5.6.2. It utilizes the X protocol for Qt display, and the desktop manager is matchbox. Upon booting the development board, the screen will first display the Forlinx logo, followed by a boot animation. Afterward, it will enter the Qt desktop interface shown in the image below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071395671-699172f3-2eb3-40dc-952f-67c4ac84c961.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071395671_699172f3_2eb3_40dc_952f_67c4ac84c961.png)
 
 ### 4.1 NIC Configuration
 
 Click the small mouse button in the upper right corner of the desktop icon, select "Preferences", and then click the Ethernet button on the left to configure the network. The default mode is DHCP, or static IP. Click the keyboard in the upper right corner to set it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071395928-dc9e9261-b788-4727-8cb1-d787baf0e63a.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071395928_dc9e9261_b788_4727_8cb1_d787baf0e63a.png)
 
 The IP setting interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071396221-056c2ab1-e3ce-439a-ba84-dae61409e669.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071396221_056c2ab1_e3ce_439a_ba84_dae61409e669.png)
 
 Configuration: Set the IP allocation method. DHCP -- Set the dynamic IP allocation. MANUAL -- Set the static IP.
 
@@ -2266,21 +2266,21 @@ Gateway: The static IP is valid. Set the gateway.
 
 Run the PING test program Ping to enter the following interface (ensure that the network has been configured, enter the IP address or domain name to be tested in the hostname column, and then click the ping button. If the following interface appears, the network test is successful:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071396512-d2b91fc9-0027-46fe-afbf-5ff3427b40ed.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071396512_d2b91fc9_0027_46fe_afbf_5ff3427b40ed.png)
 
 ### 4.3 4G Module Test
 
 At present, the supported 4G module is Quectel EC20. Click the Qt5 4G icon on the desktop to enter the 4G setting interface to test the 4G dial-up Internet access function.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071396805-c232bb6c-784c-4c14-b9b4-ba7632765d95.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071396805_c232bb6c_784c_4c14_b9b4_ba7632765d95.png)
 
 Connect the 4G module, power up the module, and the development board. Select the 4G module according to the actual situation. Take EC20 as an example. Click ec20 to dial. No information is printed during dialing. After dialing, there will be a prompt as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071397052-2808f9e8-40f1-49a7-9f34-30c0c25e4bde.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071397052_2808f9e8_40f1_49a7_9f34_30c0c25e4bde.png)
 
 After successful dialing, enter the IP of the same network segment in the IP column for ping test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071397256-eea9541f-58c7-46ca-8564-5d7baba7e53c.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071397256_eea9541f_58c7_46ca_8564_5d7baba7e53c.png)
 
 ### 4.4 GPRS Module Test
 
@@ -2296,13 +2296,13 @@ GPRS Internet access function test: Click the GPRS button on the interface to di
 
 The user can test whether the GPRS dialing is successful by clicking the Ping button:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071397724-1a913745-f5cf-4104-acd5-e2b10407f1b5.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071397724_1a913745_f5cf_4104_acd5_e2b10407f1b5.png)
 
 ### 4.5 Watchdog Test
 
 Run the watchdog test program Watchdog to enter the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071398000-24f75af2-ca5b-475b-a0ac-1048a13d8f0b.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398000_24f75af2_ca5b_475b_a0ac_1048a13d8f0b.png)
 
 The feed dog check box in the upper left corner can select whether to feed the dog. When the feed dog is checked, click the open watchdog in the lower part to open the watchdog. The application will feed the dog once in 10s, so the system will not restart.
 
@@ -2314,11 +2314,11 @@ This section describes how to test the on-board WIFI module rtl8723bu. Before te
 
 Run the Qt 5.6 WiFi test program and click on the keyboard icon in the top-right corner to open the virtual keyboard. Then, type in the username, password, and other necessary information.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071398334-b96b2258-64ad-4997-8996-b51746a18c51.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398334_b96b2258_64ad_4997_8996_b51746a18c51.png)
 
 "SSID" refers to the name of the WiFi hotspot while "PAWD" refers to the WiFi password. "IP" is the IP address that you want to test using ping. Once all of the necessary information has been inputted, simply click the "Connect" button to establish the connection. Once the connection is established, you can see the automatically obtained IP address in the left dialog box. At this point, you can click on the "Ping" button to perform a ping test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071398619-df9f31ab-f0e7-4f2a-877d-09c10fefc1f8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398619_df9f31ab_f0e7_4f2a_877d_09c10fefc1f8.png)
 
 ### 4.7 Play/Record Test
 
@@ -2336,7 +2336,7 @@ The internal D-class amplifier output of the WM8960 audio chip is connected to t
 
 You can choose to test with either headphones or speakers for the playback test. After connecting the device, click on the “Add” button to select the audio file that you want to play, and then click on the “Play” button. If you can hear the sound of the music, the playback is normal.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071398918-b5651548-fef2-4402-80a4-d65c1effd131.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398918_b5651548_fef2_4402_80a4_d65c1effd131.png)
 
 ### 4.8 RTC Clock Drive Test
 
@@ -2346,7 +2346,7 @@ RTC testing is done by setting the time using testing software. After setting th
 
 Run the RTC to test the software RTC, and the following interface appears:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071399253-4965a0fe-da0f-4cd2-8ee2-838f80e0d645.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399253_4965a0fe_da0f_4cd2_8ee2_838f80e0d645.png)
 
 Click set to set the system time, click save to save the time setting, and then you can power off and power on again after some time, run the RTC test software again to read the time, and you can see that the RTC time has been synchronized.
 
@@ -2356,23 +2356,23 @@ This test takes UART2 (ttymxc1) as an example to test the serial port by sending
 
 1\. First, connect the development board and computer with the TTL to the USB module, then power up the development board and check in the computer's device manager recognized as COM9 (users set the parameters with their actual recognized COM port);
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071399478-79590b35-b1a6-4aa1-a151-08d5e2b286e8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399478_79590b35_b1a6_4aa1_a151_08d5e2b286e8.png)
 
 2\. open the computer serial port tool, set the relevant serial port parameters, baud rate 9600, 8 data bits, 1 stop bit, no parity, no flow control, timed to send the string abcdefg, and set the completion of the open serial port:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071399696-80da5d3d-0ce0-45c0-9290-819bb1a721ce.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399696_80da5d3d_0ce0_45c0_9290_819bb1a721ce.png)
 
 3. Click the Qt5 SerialPort serial port test program on the QT desktop, select the port number, and set the relevant serial port parameters to be consistent with the computer serial port tool parameters, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071399950-3e5eb121-c734-47bd-9528-17ff732fded7.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399950_3e5eb121_c734_47bd_9528_17ff732fded7.png)
 
 4\. Open the serial port, and receive the data sent by the computer serial port tool at the receiving serial port. Send window to write the data to be sent; click Send Data
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071400346-00a12ae6-1eb2-448a-bd69-f9b530327506.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071400346_00a12ae6_1eb2_448a_bd69_f9b530327506.png)
 
 5\. The computer serial port tool receives the data sent by the QT program, and the UART2 serial port of the development board receives and sends normally.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071400573-0f199cbd-41fb-41f8-8e36-3ed2c30fe503.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071400573_0f199cbd_41fb_41f8_8e36_3ed2c30fe503.png)
 
 ### 4.10 FlexCAN Test
 
@@ -2380,21 +2380,21 @@ The development board has two CANs, and this test uses CAN1 on the development b
 
 Open the desktop program Qt5 can, as shown in the following figure. CAN1 and CAN2 correspond to can0 and can1 respectively in the interface. Select can0 to open CAN1:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071400790-2049942a-4eb3-4a68-8e16-835aa1b5d4df.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071400790_2049942a_4eb3_4a68_8e16_835aa1b5d4df.png)
 
 The development board sends the data 123456, and the other end sends the data 654321. The 654321 of the data received by the development board is shown in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071401128-06a69d69-65be-48aa-8dd5-1f0ac4b7ce51.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071401128_06a69d69_65be_48aa_8dd5_1f0ac4b7ce51.png)
 
 The CAN1 of another development board receives the data 123456 as follows
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071401400-e8b655f0-ec88-44b2-8e2f-3e3c8b63e7fa.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071401400_e8b655f0_ec88_44b2_8e2f_3e3c8b63e7fa.png)
 
 ### 4.11 RGB Screen Backlight Adjustment Test
 
 Adjust the progress bar left and right to adjust the backlight brightness as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071401624-af8ae54d-7fce-4e5b-8bba-2fe124aa8055.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071401624_af8ae54d_7fce_4e5b_8bba_2fe124aa8055.png)
 
 ## 5\. Development Board System Flashing
 
@@ -2441,7 +2441,7 @@ Copy the file emmc-sdburn.tar.bz2 to any directory on your Ubuntu system, assumi
 
 3\. Insert the TF card into the USB port of your computer using a USB card reader (VMware VM users can use the arrow pointing to the icon below to connect the flash drive to the VM if it is not recognized by the VM).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071562786-e124b2b9-c2c0-4a4e-b393-a91e6c95d693.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071562786_e124b2b9_c2c0_4a4e_b393_a91e6c95d693.png)
 
 4\. Wait for the virtual machine to detect the TF card and display the directory. Then proceed with the following writing operations.\*\* Enter /home/forlinx/work/nand-burnsd directory, execute script:
 
@@ -2562,7 +2562,7 @@ Operation Finished
 
 5\. After the card-making process is completed, you should see two directories, "sdrun" and "target," contained within the boot partition.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071563149-92494df3-cf4a-4759-acd1-1c18b206b2b3.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563149_92494df3_cf4a_4759_acd1_1c18b206b2b3.png)
 
 #### 5.2.2 Introduction to Flashing Card
 
@@ -2570,7 +2570,7 @@ Operation Finished
 
 The prepared burning card contains two folders, sdrun and target:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071563423-0d9e25b5-b411-4255-a217-edb8441da5f8.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563423_0d9e25b5_b411_4255_a217_edb8441da5f8.png)
 
 1\. The contents in the sdrun folder are used to program the boot system, and generally do not need to be modified;
 
@@ -2591,7 +2591,7 @@ Insert the TF card made in the previous section and set the dial switch as shown
 
 It takes a long time to burn, and wait for the system to finish flashing, and then the serial port prints the information:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071563672-09b36ce0-0507-4922-a78c-d8dbfc308ecc.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563672_09b36ce0_0507_4922_a78c_d8dbfc308ecc.png)
 
 At the same time, the LED3 on the carrier board blinks.
 
@@ -2630,19 +2630,19 @@ mx6ull-4gemmc-512mddr-qt5.6.vbs        flash 4GeMMC+512MDDR system
 
 3. Double-click on "mx6ull-4gemmc-512mddr-qt5.6.vbs" (the script has been written, directly burned), as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071563899-edefe2e0-4524-467b-9a99-ea35e2e68007.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563899_edefe2e0_4524_467b_9a99_ea35e2e68007.png)
 
 4\. Insert USB to Type-C to OTG socket, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071564120-4dc2aaa5-0ec9-449d-8dda-ed734f6aed38.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071564120_4dc2aaa5_0ec9_449d_8dda_ed734f6aed38.png)
 
 5\. The development board is powered on and automatically recognized as HID, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071564418-a1c32a8d-e8d6-494a-a139-6dab3b21c7cd.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071564418_a1c32a8d_e8d6_494a_a139_6dab3b21c7cd.png)
 
 6\. Click start to start burning the system, in the middle of the pop-up formatting dialog box, click "Cancel" formatting options, or regardless of it, until the burning is complete. As shown in the picture:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43555360/1715071564682-d4386c70-c542-44ee-98cb-47fcc50f17d5.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071564682_d4386c70_c542_44ee_98cb_47fcc50f17d5.png)
 
 7\. After the system is flashed, "Done" appears, and then click "Stop" to stop. Click "Exit" again to close the flashing tool. Power off, turn the DIP switch to 1, 2, 3 and 4 for OFF, power on again, and the EMMC starts.
 
