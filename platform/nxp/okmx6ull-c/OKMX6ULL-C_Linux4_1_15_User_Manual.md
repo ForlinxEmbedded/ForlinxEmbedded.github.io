@@ -39,7 +39,7 @@ There are total four chapters:
 
 OKMX6ULL-C development board adopts the SoM + carrier board structure, designed based on NXP's i.MX6ULL low-power processor, running at a main frequency of 800 MHz and ARM Cortex-A7 architecture. The unique power management architecture of the board results in lower power consumption compared to ARM9 series SoMs. The SoM offers a rich variety of peripheral interfaces, including CAN, WIFI, USB, UART, IIC, and Ethernet, providing ample resources for various functions.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069614370_e30a3b51_a542_496f_9c2f_4b75287cb742.jpeg)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069614370_e30a3b51_a542_496f_9c2f_4b75287cb742.jpg)
 
 **Note: Hardware parameters are not described in this software manual. Before referring to this manual for software development, please read "OKMX6ULL-C\_ Hardware Manual" under the path of "Hardware Data \\ User Manual" to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.**
 
