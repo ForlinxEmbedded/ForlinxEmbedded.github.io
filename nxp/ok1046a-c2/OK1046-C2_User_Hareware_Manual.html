@@ -1,0 +1,3440 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>00_OK1046-C2_硬件手册 &mdash; Forlinx Embedded LS1046A Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/ok1046a-c2/OK1046-C2_User_Hareware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK1046A-C2 Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">00_OK1046-C2_硬件手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">概 述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">更新记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#nxp-qoriq-ls104xa">01_NXP QorIQ LS104xA简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id4"><strong>第一章 NXP QorIQ LS104xA简介</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet104xa-c">02_FET104xA-C核心板介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id5">**第二章 FET104xA-C核心板介绍 **</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id6"><font style="color:#000000;">2.1 FET104xA-C核心板外观图</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7"><font style="color:#000000;">2.2 FET104xA-C核心板尺寸图</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8"><font style="color:#000000;">2.3 性能参数</font></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9"><font style="color:#000000;">2.3.1 系统主频</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10"><font style="color:#000000;">2.3.2 供电参数</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11"><font style="color:#000000;">2.3.3 工作环境</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12"><font style="color:#000000;">2.3.4 核心板接口速度</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id13"><font style="color:#000000;">2.4 核心板接口资源</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14"><font style="color:#000000;">2.5 FET104xA-C核心板引脚定义</font></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15"><font style="color:#000000;">2.5.1 FET104xA-C核心板引脚原理图</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16"><font style="color:#000000;">2.5.2 FET104xA-C核心板引脚功能说明</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id17"></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#ok104xa-c2">03_飞凌OK104xA-C2嵌入式开发平台介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id18"><strong>第三章 飞凌OK104xA-C2嵌入式开发平台介绍</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id19"><font style="color:#000000;">3.1 OK104xA-C2开发板接口图 </font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20"><font style="color:#000000;">3.2 OK104xA-C2开发板尺寸图</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id21"><font style="color:#000000;">3.3 底板命名规范</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22"><font style="color:#000000;">3.4 底板资源</font></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23"><font style="color:#000000;">3.5 OK104xA-C2底板说明</font></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24"><font style="color:#000000;">3.5.1 底板电源</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25"><font style="color:#000000;">3.5.2 复位</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boot"><font style="color:#000000;">3.5.3 Boot配置</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26"><font style="color:#000000;">3.5.4 串口</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcie"><font style="color:#000000;">3.5.5 PCIE接口</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf"><font style="color:#000000;">3.5.6 TF卡</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rgmii"><font style="color:#000000;">3.5.7 RGMII</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jtag"><font style="color:#000000;">3.5.8 JTAG仿真调试接口</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sgmii"><font style="color:#000000;">3.5.9 SGMII接口</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb3-0"><font style="color:#000000;">3.5.10 USB3.0接口</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sfp"><font style="color:#000000;">3.5.11 SFP接口</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27"><font style="color:#000000;">3.5.12 用户按键</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led"><font style="color:#000000;">3.5.13 LED</font></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id28">04_连接器尺寸图</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id29">05_功耗实测数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#lmbench">06_核心板Lmbench测试数据</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/nxp/ls-development-manual/index.html">LS Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded LS1046A Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">00_OK1046-C2_硬件手册</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok1046-c2">
+<h1>00_OK1046-C2_硬件手册<a class="headerlink" href="#ok1046-c2" title="Link to this heading"></a></h1>
+<p><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">版本：V2.0<br />
+发布日期：2022.09.30<br />
+文件密级：□绝密 □秘密 □内部资料 ■公开</font></p>
+</section>
+<section id="id1">
+<h1>声明<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。
+</pre></div>
+</div>
+<p>保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。</p>
+</section>
+<section id="id2">
+<h1>概 述<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<p><font style="color:#333333;">本手册以使用户快速熟悉产品，了解接口功能和功能配置为目的，主要讲述了开发板接口功能，接口介绍，产品功耗，以及使用过程中出现的一些问题如何排查。在说明过程中，对一些命令进行了注释，方便</font>用户理解，以实用够用为主。涉及到引脚功能复用、硬件问题排查方法等请</p>
+<p><strong>本手册一共分为4部分：</strong></p>
+<ul class="simple">
+<li><p>第一部分CPU整体概述，简单介绍了CPU性能和应用行业；</p></li>
+<li><p>第二部分核心板的整体介绍，包括连接器引脚的相关说明和功能介绍；</p></li>
+<li><p>第三部分开发板的整体介绍，分为多个章节介绍，包括了硬件原理和简单的设计思路两大部分；</p></li>
+<li><p>第四部分产品的功耗及其他说明，主要描述板卡的功耗方面表现和其他注意事项。</p></li>
+<li><p>本手册中一些符号及格式的相关说明：</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>表现形式</strong></p></th>
+<th class="head"><p><strong>含义</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>⁉️</p></td>
+<td><p>注意或者是需要特别关注的信息，一定要仔细阅读</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>对测试章节做的相关说明</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>🛤️</p></td>
+<td><p>表示相关路径</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id3">
+<h1>更新记录<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:black;">日期</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">手册版本</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">核心板版本</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">底板版本</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">更新内容</font></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><font style="color:black;">20200722</font></p></td>
+<td><p><font style="color:black;">V1.0</font></p></td>
+<td><p><font style="color:black;">V1.3</font></p></td>
+<td><p><font style="color:black;">V1.1</font></p></td>
+<td><p><font style="color:black;">OK1043A/1046A-C2</font><font style="color:black;">合并硬件手册初版</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:black;">20201105</font></p></td>
+<td><p><font style="color:black;">V1.1</font></p></td>
+<td><p><font style="color:black;">V1.3</font></p></td>
+<td><p><font style="color:black;">V1.1</font></p></td>
+<td><p><font style="color:black;">核心板接口资源中</font><font style="color:black;">PCIE</font><font style="color:black;">参数修正</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:black;">20210520</font></p></td>
+<td><p><font style="color:black;">V1.2</font></p></td>
+<td><p><font style="color:black;">V1.3/V2.0</font></p></td>
+<td><p><font style="color:black;">V1.1</font></p></td>
+<td><p><font style="color:black;">1. </font><font style="color:black;">添加</font><font style="color:black;">V2.0</font><font style="color:black;">版本核心板订购信息；</font><br/><font style="color:black;">2. </font><font style="color:black;">附录添加</font><font style="color:black;">1.x</font><font style="color:black;">核心板与</font><font style="color:black;">V2.x</font><font style="color:black;">核心内存读写参数对比表。</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:black;">20210727</font></p></td>
+<td><p><font style="color:black;">V1.3</font></p></td>
+<td><p><font style="color:black;">V1.3/V2.0</font></p></td>
+<td><p><font style="color:black;">V1.1</font></p></td>
+<td><p><font style="color:black;">修改</font><font style="color:black;">boot</font><font style="color:black;">配置部分描述</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:black;">20220930</font></p></td>
+<td><p><font style="color:black;">V2.0</font></p></td>
+<td><p><font style="color:black;">V1.5/V2.2</font></p></td>
+<td><p><font style="color:black;">V2.1</font></p></td>
+<td><p><font style="color:black;">1.</font><font style="color:black;">核心板接口资源中</font><font style="color:black;">SATA</font><font style="color:black;">参数修正；</font><br/><font style="color:black;">2.</font><font style="color:black;">因核心板芯片缺货，以下芯片做了型号替换：</font><br/><font style="color:black;">1</font><font style="color:black;">）网口</font><font style="color:black;">PHY</font><font style="color:black;">芯片型号由</font><font style="color:black;">AR8031</font><font style="color:black;">替换为</font><font style="color:black;">YT8521S</font><font style="color:black;">；</font><br/><font style="color:black;">2</font><font style="color:black;">）</font><font style="color:black;">RTC</font><font style="color:black;">芯片由</font><font style="color:black;">RX8010SJ</font><font style="color:black;">替换为</font><font style="color:black;">PCF8563</font><font style="color:black;">；</font><br/><font style="color:black;">3</font><font style="color:black;">）</font><font style="color:black;">PCIE</font><font style="color:black;">时钟芯片由</font><font style="color:black;">9DML0441AKILFT</font><font style="color:black;">替换为</font><font style="color:black;">RC19004A100GNL</font><font style="color:black;">；</font><br/><font style="color:black;">3.</font><font style="color:black;">核心板因光模块可能通过</font><font style="color:black;">IIC</font><font style="color:black;">进行配置，将两路光模块分别连接到</font><font style="color:black;">IIC3</font><font style="color:black;">和</font><font style="color:black;">IIC4</font><font style="color:black;">总线上，预留</font><font style="color:black;">0R</font><font style="color:black;">电阻，防止其与底板其他设备地址冲突；</font><br/><font style="color:black;">4.</font><font style="color:black;">更改了核心板命名规则和订购信息</font><br/><font style="color:black;">5.</font><font style="color:black;">底板修改了网络部分的原理描述；</font><br/><font style="color:black;">6.</font><font style="color:black;">底板修改了</font><font style="color:black;">5G</font><font style="color:black;">部分的原理图；</font><br/><font style="color:black;">7.</font><font style="color:black;">更新了</font><font style="color:black;">OK104xA-C2</font><font style="color:black;">开发板接口图和尺寸图。</font></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="nxp-qoriq-ls104xa">
+<h1>01_NXP QorIQ LS104xA简介<a class="headerlink" href="#nxp-qoriq-ls104xa" title="Link to this heading"></a></h1>
+</section>
+<section id="id4">
+<h1><strong>第一章 NXP QorIQ LS104xA简介</strong><a class="headerlink" href="#id4" title="Link to this heading"></a></h1>
+<p>QorIQ® LS104xA处理器是恩智浦面向嵌入式网络推出的一款四核64位ARM®处理器。LS1023A (双核版本)和LS104xA (四核版本)可通过支持无风扇设计的灵活I/O封装，提供超过10 Gbps的性能。这款SoC是专为小规格网络和工业应用而设计的解决方案，针对经济型低端PCB进行了BOM优化，降低了电源成本，采用了单时钟设计。全新0.9V版本的LS104xA和LS1023A能够面向无线LAN和以太网供电系统提供额外的功耗节省。全新23x23封装方式，支持引脚兼容设计，可扩展至LS1046A (四核A72处理器)。QorIQ LS104xA能够提升双核32位ARM产品的性能，并且延续了QorIQ系列一贯的I/O灵活性，集成了QUICC Engine®，继续提供对HDLC、TDM或Profibus的无缝支持。</p>
+<p>FET104xA-C核心板CPU采用的是LS1043AXE8QQB和LS1046AXE8T1A。如下为LS1043A和LS1046A的应用处理框图：</p>
+<p><img alt="Image" src="_images/1720687154128_c2d0264a_5679_4c66_97b6_6d45831eca46.png" /></p>
+<p><strong>LS1043A应用处理器框图</strong></p>
+<p><img alt="Image" src="_images/1720687154340_02c0c45b_9d63_4a5d_b005_9a903dd842af.png" /></p>
+<p><strong>LS1046A应用处理器框图</strong></p>
+<p>更多关于LS104xA的内容请浏览NXP官方网站：<a class="reference external" href="https://www.nxp.com/cn/products/processors-and-microcontrollers/arm-based-processors-and-mcus/qoriq-layerscape-arm-processors/qoriq-layerscape-1043a-and-1023a-multicore-communications-processors:LS1043A">https://www.nxp.com/cn/products/processors-and-microcontrollers/arm-based-processors-and-mcus/qoriq-layerscape-arm-processors/qoriq-layerscape-1043a-and-1023a-multicore-communications-processors:LS1043A</a></p>
+</section>
+<section id="fet104xa-c">
+<h1>02_FET104xA-C核心板介绍<a class="headerlink" href="#fet104xa-c" title="Link to this heading"></a></h1>
+</section>
+<section id="id5">
+<h1>**第二章 FET104xA-C核心板介绍 **<a class="headerlink" href="#id5" title="Link to this heading"></a></h1>
+<section id="id6">
+<h2><font style="color:#000000;">2.1 FET104xA-C核心板外观图</font><a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1720687135565_b6c2afd7_0421_471e_a9d7_8bbbe29a29ec.png" /></p>
+<p><strong>FET1043A-C核心板正面视图</strong></p>
+<p><img alt="Image" src="_images/1720687136534_d9f0cf92_2f47_4643_81a0_2ba55fa116b8.png" /></p>
+<p><strong>FET1046A-C核心板正面视图</strong></p>
+</section>
+<section id="id7">
+<h2><font style="color:#000000;">2.2 FET104xA-C核心板尺寸图</font><a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>FET104x-C核心板尺寸图如下所示：</p>
+<p><img alt="Image" src="_images/1720687136985_cd64178f_4441_4ef1_b0a9_1965f0111906.png" /></p>
+<p><img alt="Image" src="_images/1720687137291_3eb69adb_a71a_4bfb_8f93_814193949fa9.png" /></p>
+<p>结构尺寸：84mm×55mm。</p>
+<p>制版工艺：厚度2mm，12层沉金PCB。</p>
+<p>连接器：一个双排0.5mm间距，220pin 板对板连接器。连接器尺寸图见附录。</p>
+<p>核心板的四角预留了四个直径2.7mm的安装孔。核心板整体结构符合COM Express® Mini Type 10 标准。</p>
+</section>
+<section id="id8">
+<h2><font style="color:#000000;">2.3 性能参数</font><a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<section id="id9">
+<h3><font style="color:#000000;">2.3.1 系统主频</font><a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>名称</strong></p></th>
+<th class="head"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>系统主频</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>1600</p></td>
+<td><p>MHz</p></td>
+<td><p>LS1046最大为1.8G</p></td>
+</tr>
+<tr class="row-even"><td><p>系统RTC时钟</p></td>
+<td><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>DDR时钟</p></td>
+<td><p>650</p></td>
+<td><p>—</p></td>
+<td><p>1600</p></td>
+<td><p>MT/s</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>SerDes参考时钟</p></td>
+<td><p>100</p></td>
+<td><p>—</p></td>
+<td><p>156.25</p></td>
+<td><p>MHz</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id10">
+<h3><font style="color:#000000;">2.3.2 供电参数</font><a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>参数</strong></p></th>
+<th class="head"><p><strong>引脚标号</strong></p></th>
+<th class="head"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>主电源电压</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>9</p></td>
+<td><p>12</p></td>
+<td><p>15</p></td>
+<td><p>V</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id11">
+<h3><font style="color:#000000;">2.3.3 工作环境</font><a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>参数描述</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>工作温度</p></td>
+<td><p>工作环境</p></td>
+<td><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+80*</p></td>
+<td><p>℃</p></td>
+<td><p>工业级</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>存储环境</p></td>
+<td><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>湿度</p></td>
+<td><p>工作环境</p></td>
+<td><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td><p>无凝露</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>存储环境</p></td>
+<td><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>注：FET1046A-C核心板工作环境温度最高为75℃。</p>
+</section>
+<section id="id12">
+<h3><font style="color:#000000;">2.3.4 核心板接口速度</font><a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>参数</strong></p></th>
+<th class="head"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>串口通讯速度</p></td>
+<td><p>—</p></td>
+<td><p>115200</p></td>
+<td><p>—</p></td>
+<td><p>bps</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>IIC通讯速度</p></td>
+<td><p>—</p></td>
+<td><p>100</p></td>
+<td><p>400</p></td>
+<td><p>Kbps</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>SD/MMC/SDIO</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>104</p></td>
+<td><p>Mbps</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>USB接口速度</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>5</p></td>
+<td><p>Gbps</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id13">
+<h2><font style="color:#000000;">2.4 核心板接口资源</font><a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>FET1043数量</strong></p></th>
+<th class="head text-center"><p><strong>FET1046数量</strong></p></th>
+<th class="head text-center"><p><strong>参数</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>QSGMII</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>最高通信速率5G</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SGMII</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>≤5</p></td>
+<td class="text-center"><p>最高支持速率2.5G</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RGMII</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>最高支持速率1G</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>支持2路DUART或4路UART</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>IIC</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB3.0</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>最高支持速率5G</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>XFI</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>最高支持速率10G，LS1046最大为2路</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>eSDHC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>支持SD3.0 EMMC4.5，与核心板上eMMC共用。</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PCIE2.0</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>最高支持速率5G</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PCIE3.0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>最高支持速率8G</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SATA3.0</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>最高支持速率6G</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>支持NXP官方 CodeWarrior TAP调试器</p></td>
+</tr>
+</tbody>
+</table>
+<p>注：表中参数为硬件设计或CPU理论值；</p>
+</section>
+<section id="id14">
+<h2><font style="color:#000000;">2.5 FET104xA-C核心板引脚定义</font><a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<section id="id15">
+<h3><font style="color:#000000;">2.5.1 FET104xA-C核心板引脚原理图</font><a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1720687137522_067c6d04_6591_4b17_878a_250b77430f37.png" /></p>
+<p><img alt="Image" src="_images/1720687137868_bb99ec8f_811b_47e5_bde2_c42eba1d3bf0.png" /></p>
+</section>
+<section id="id16">
+<h3><font style="color:#000000;">2.5.2 FET104xA-C核心板引脚功能说明</font><a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<p><strong>注1：</strong></p>
+<p>**    Num —— **核心板连接器引脚序号；</p>
+<p>**    Ball —— **CPU引脚球号</p>
+<p>**    GPIO —— **CPU引脚通用I/O口序号</p>
+<p><strong>Vol  ——</strong> 引脚信号电平</p>
+<p>**NC  —— **引脚未连接</p>
+<p><strong>注2：</strong></p>
+<p>**    信号名称 ——**核心板连接器网络名称</p>
+<p>**    引脚描述 ——**核心板引脚信号名称描述</p>
+<p>**    默认功能 ——**核心板所有引脚功能均按下表的“默认功能”作了规定，请勿修改，否则可能和出厂</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>              驱动冲突。如有疑问，请及时联系我们的销售或技术支持。
+</pre></div>
+</div>
+<p>**注3: **默认功能中“*”表示此信号仅支持LS1046A芯片，LS1043A CPU无此引脚。</p>
+<p><strong>表1  连接器接口引脚定义A</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>信号名称</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head text-center"><p>引脚描述</p></th>
+<th class="head text-center"><p>默认功能</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>A1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX3_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR3-</p></td>
+<td class="text-center"><p>EC1_TRX3_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX3_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR3+</p></td>
+<td class="text-center"><p>EC1_TRX3_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A4</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_LINK100</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.5V</p></td>
+<td class="text-center"><p>无意义，默认输出低</p></td>
+<td class="text-center"><p>EC1_LINK100</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A5</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_LINK1000</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.5V</p></td>
+<td class="text-center"><p>YT8521S 千兆指示</p></td>
+<td class="text-center"><p>EC1_LINK1000</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A6</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX2_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR2-</p></td>
+<td class="text-center"><p>EC1_TRX2_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A7</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX2_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR2+</p></td>
+<td class="text-center"><p>EC1_TRX2_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A8</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A9</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX1_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR1-</p></td>
+<td class="text-center"><p>EC1_TRX1_N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A10</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX1_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR1+</p></td>
+<td class="text-center"><p>EC1_TRX1_P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A11</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A12</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX0_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR0-</p></td>
+<td class="text-center"><p>EC1_TRX0_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A13</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX0_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR0+</p></td>
+<td class="text-center"><p>EC1_TRX0_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A14</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A15</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A16</p></td>
+<td class="text-center"><p>AD19</p></td>
+<td class="text-center"><p>SD2_TX3_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A17</p></td>
+<td class="text-center"><p>AE19</p></td>
+<td class="text-center"><p>SD2_TX3_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A19</p></td>
+<td class="text-center"><p>AG19</p></td>
+<td class="text-center"><p>SD2_RX3_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>1046：SD2_RX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_RX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A20</p></td>
+<td class="text-center"><p>AH19</p></td>
+<td class="text-center"><p>SD2_RX3_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>1046：SD2_RX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_RX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A21</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A22</p></td>
+<td class="text-center"><p>E4</p></td>
+<td class="text-center"><p>USB1_RX_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB1_RX-</p></td>
+<td class="text-center"><p>USB1_RX_DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A23</p></td>
+<td class="text-center"><p>E3</p></td>
+<td class="text-center"><p>USB1_RX_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB1_RX+</p></td>
+<td class="text-center"><p>USB1_RX_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A24</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A25</p></td>
+<td class="text-center"><p>C4</p></td>
+<td class="text-center"><p>USB2_RX_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB2_RX-</p></td>
+<td class="text-center"><p>USB2_RX_DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A26</p></td>
+<td class="text-center"><p>C3</p></td>
+<td class="text-center"><p>USB2_RX_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB2_RX+</p></td>
+<td class="text-center"><p>USB2_RX_DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A27</p></td>
+<td class="text-center"><p>J4</p></td>
+<td class="text-center"><p>BATLOW_B</p></td>
+<td class="text-center"><p>GPIO1_24</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>通用IO</p></td>
+<td class="text-center"><p>GPIO1_24</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A28</p></td>
+<td class="text-center"><p>E7</p></td>
+<td class="text-center"><p>USB1_VBUS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5.25V</p></td>
+<td class="text-center"><p>USB1 VBUS</p></td>
+<td class="text-center"><p>USB1_VBUS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A29</p></td>
+<td class="text-center"><p>C7</p></td>
+<td class="text-center"><p>USB2_VBUS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5.25V</p></td>
+<td class="text-center"><p>USB2 VBUS</p></td>
+<td class="text-center"><p>USB2_VBUS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A30</p></td>
+<td class="text-center"><p>A7</p></td>
+<td class="text-center"><p>USB3_VBUS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5.25V</p></td>
+<td class="text-center"><p>USB3 VBUS</p></td>
+<td class="text-center"><p>USB3_VBUS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A31</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A32</p></td>
+<td class="text-center"><p>M3</p></td>
+<td class="text-center"><p>I2C4_SCL</p></td>
+<td class="text-center"><p>GPIO4_12</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2C4 SCL</p></td>
+<td class="text-center"><p>I2C4_SCL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A33</p></td>
+<td class="text-center"><p>N3</p></td>
+<td class="text-center"><p>I2C4_SDA</p></td>
+<td class="text-center"><p>GPIO4_13</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2C4 SDA</p></td>
+<td class="text-center"><p>I2C4_SDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A34</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A35</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A36</p></td>
+<td class="text-center"><p>A4</p></td>
+<td class="text-center"><p>USB3_RX_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB3_RX-</p></td>
+<td class="text-center"><p>USB3_RX_DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A37</p></td>
+<td class="text-center"><p>A3</p></td>
+<td class="text-center"><p>USB3_RX_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB3_RX+</p></td>
+<td class="text-center"><p>USB3_RX_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A38</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A39</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A40</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A41</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A42</p></td>
+<td class="text-center"><p>A6</p></td>
+<td class="text-center"><p>USB3_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB3_D-</p></td>
+<td class="text-center"><p>USB3_DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A43</p></td>
+<td class="text-center"><p>B6</p></td>
+<td class="text-center"><p>USB3_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB3_D+</p></td>
+<td class="text-center"><p>USB3_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A44</p></td>
+<td class="text-center"><p>H6</p></td>
+<td class="text-center"><p>USB1_DRVVBUS</p></td>
+<td class="text-center"><p>GPIO4_29</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB1 DRVVBUS</p></td>
+<td class="text-center"><p>USB1_DRVVBUS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A45</p></td>
+<td class="text-center"><p>E6</p></td>
+<td class="text-center"><p>USB1_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB1_D-</p></td>
+<td class="text-center"><p>USB1_DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A46</p></td>
+<td class="text-center"><p>F6</p></td>
+<td class="text-center"><p>USB1_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB1_D+</p></td>
+<td class="text-center"><p>USB1_DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A47</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A48</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A49</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A50</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A51</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A52</p></td>
+<td class="text-center"><p>AD15</p></td>
+<td class="text-center"><p>SD2_TX0_P*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX0_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A53</p></td>
+<td class="text-center"><p>AE15</p></td>
+<td class="text-center"><p>SD2_TX0_N*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX0_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A54</p></td>
+<td class="text-center"><p>R3</p></td>
+<td class="text-center"><p>GPIO0</p></td>
+<td class="text-center"><p>GPIO2_01</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>通用IO</p></td>
+<td class="text-center"><p>GPIO0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A55</p></td>
+<td class="text-center"><p>AD16</p></td>
+<td class="text-center"><p>SD2_TX1_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX1_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX2_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A56</p></td>
+<td class="text-center"><p>AE16</p></td>
+<td class="text-center"><p>SD2_TX1_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX1_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX2_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A57</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A58</p></td>
+<td class="text-center"><p>AD11</p></td>
+<td class="text-center"><p>SD1_TX3_P*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A59</p></td>
+<td class="text-center"><p>AE11</p></td>
+<td class="text-center"><p>SD1_TX3_N*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A60</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A61</p></td>
+<td class="text-center"><p>AD10</p></td>
+<td class="text-center"><p>SD1_TX2_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX2_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX1_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A62</p></td>
+<td class="text-center"><p>AE10</p></td>
+<td class="text-center"><p>SD1_TX2_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX2_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX1_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A63</p></td>
+<td class="text-center"><p>T3</p></td>
+<td class="text-center"><p>GPIO1</p></td>
+<td class="text-center"><p>GPIO2_02</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>通用IO</p></td>
+<td class="text-center"><p>GPIO1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A64</p></td>
+<td class="text-center"><p>AD8</p></td>
+<td class="text-center"><p>SD1_TX1_P*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX1_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A65</p></td>
+<td class="text-center"><p>AE8</p></td>
+<td class="text-center"><p>SD1_TX1_N*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX1_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A66</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A67</p></td>
+<td class="text-center"><p>V1</p></td>
+<td class="text-center"><p>GPIO2</p></td>
+<td class="text-center"><p>GPIO3_13</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>通用IO</p></td>
+<td class="text-center"><p>GPIO2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A68</p></td>
+<td class="text-center"><p>AD6</p></td>
+<td class="text-center"><p>SD1_TX0_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX0_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX0_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A69</p></td>
+<td class="text-center"><p>AE6</p></td>
+<td class="text-center"><p>SD1_TX0_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX0_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX0_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A70</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A71</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A72</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A73</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A74</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A75</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A76</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A77</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A78</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A79</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A81</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A82</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A83</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A84</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A85</p></td>
+<td class="text-center"><p>C20</p></td>
+<td class="text-center"><p>GPIO3</p></td>
+<td class="text-center"><p>GPIO2_12</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>通用IO</p></td>
+<td class="text-center"><p>GPIO3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A86</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SD1_REFCLK_SEL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SERDES1时钟选择</p></td>
+<td class="text-center"><p>SD1_REFCLK_SEL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A87</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A88</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>PCIE_REFCLK+</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A89</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>PCIE_REFCLK-</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A90</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A91</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A92</p></td>
+<td class="text-center"><p>G17</p></td>
+<td class="text-center"><p>CPU_TDI_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TDI</p></td>
+<td class="text-center"><p>CPU_TDI_18</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A93</p></td>
+<td class="text-center"><p>B18</p></td>
+<td class="text-center"><p>GPIO4</p></td>
+<td class="text-center"><p>GPIO2_13</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>通用IO</p></td>
+<td class="text-center"><p>GPIO4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A94</p></td>
+<td class="text-center"><p>E18</p></td>
+<td class="text-center"><p>CPU_TCK_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TCK</p></td>
+<td class="text-center"><p>CPU_TCK_18</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A95</p></td>
+<td class="text-center"><p>G18</p></td>
+<td class="text-center"><p>CPU_TMS_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TMS</p></td>
+<td class="text-center"><p>CPU_TMS_18</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A96</p></td>
+<td class="text-center"><p>E20</p></td>
+<td class="text-center"><p>CPU_TDO_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TDO</p></td>
+<td class="text-center"><p>CPU_TDO_18</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A97</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A98</p></td>
+<td class="text-center"><p>H1</p></td>
+<td class="text-center"><p>UART1_SOUT</p></td>
+<td class="text-center"><p>GPIO1_15</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1_TX</p></td>
+<td class="text-center"><p>UART1_SOUT</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A99</p></td>
+<td class="text-center"><p>H2</p></td>
+<td class="text-center"><p>UART1_SIN</p></td>
+<td class="text-center"><p>GPIO1_17</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1_RX</p></td>
+<td class="text-center"><p>UART1_SIN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A100</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A101</p></td>
+<td class="text-center"><p>L2</p></td>
+<td class="text-center"><p>UART2_SOUT</p></td>
+<td class="text-center"><p>GPIO1_16</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART2_TX</p></td>
+<td class="text-center"><p>UART2_SOUT</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A102</p></td>
+<td class="text-center"><p>K1</p></td>
+<td class="text-center"><p>UART2_SIN</p></td>
+<td class="text-center"><p>GPIO1_18</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART2_RX</p></td>
+<td class="text-center"><p>UART2_SIN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A103</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>CPU_TRST_B_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_RST</p></td>
+<td class="text-center"><p>CPU_TRST_B_18</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A104</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>核心板供电电源</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A105</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>核心板供电电源</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A106</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>核心板供电电源</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A107</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>核心板供电电源</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A108</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>核心板供电电源</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A109</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>核心板供电电源</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A110</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>表2  连接器接口引脚定义B</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong><font style="color:#F2F2F2;">NUM </font></strong></p></th>
+<th class="head"><p><strong><font style="color:#F2F2F2;">BALL</font></strong></p></th>
+<th class="head"><p><strong><font style="color:#F2F2F2;">信号名称</font></strong></p></th>
+<th class="head"><p><strong><font style="color:#F2F2F2;">GPIO</font></strong></p></th>
+<th class="head"><p><strong><font style="color:#F2F2F2;">VOL</font></strong></p></th>
+<th class="head"><p><strong><font style="color:#F2F2F2;">引脚描述</font></strong></p></th>
+<th class="head"><p><strong><font style="color:#F2F2F2;">默认功能</font></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>B1</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B2</p></td>
+<td><p>-</p></td>
+<td><p>EC1_ACT</p></td>
+<td><p>-</p></td>
+<td><p>1.5V</p></td>
+<td><p>YT8521S 有效指示</p></td>
+<td><p>EC1_ACT</p></td>
+</tr>
+<tr class="row-even"><td><p>B3</p></td>
+<td><p>AE4</p></td>
+<td><p>EC2_TXD1</p></td>
+<td><p>GPIO3_17</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD1</p></td>
+<td><p>EC2_TXD1</p></td>
+</tr>
+<tr class="row-odd"><td><p>B4</p></td>
+<td><p>AE1</p></td>
+<td><p>EC2_RXD1</p></td>
+<td><p>GPIO3_24</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD1</p></td>
+<td><p>EC2_RXD1</p></td>
+</tr>
+<tr class="row-even"><td><p>B5</p></td>
+<td><p>AF3</p></td>
+<td><p>EC2_TXD0</p></td>
+<td><p>GPIO3_18</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD0</p></td>
+<td><p>EC2_TXD0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B6</p></td>
+<td><p>AE3</p></td>
+<td><p>EC2_TXD2</p></td>
+<td><p>GPIO3_16</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD2</p></td>
+<td><p>EC2_TXD2</p></td>
+</tr>
+<tr class="row-even"><td><p>B7</p></td>
+<td><p>AD3</p></td>
+<td><p>EC2_TXD3</p></td>
+<td><p>GPIO3_15</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD3</p></td>
+<td><p>EC2_TXD3</p></td>
+</tr>
+<tr class="row-odd"><td><p>B8</p></td>
+<td><p>AF1</p></td>
+<td><p>EC2_RX_DV</p></td>
+<td><p>GPIO3_27</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RX_DV</p></td>
+<td><p>EC2_RX_DV</p></td>
+</tr>
+<tr class="row-even"><td><p>B9</p></td>
+<td><p>AE2</p></td>
+<td><p>EC2_RXD0</p></td>
+<td><p>GPIO3_25</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD0</p></td>
+<td><p>EC2_RXD0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B10</p></td>
+<td><p>AC1</p></td>
+<td><p>EC2_RX_CLK</p></td>
+<td><p>GPIO3_26</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RX_CLK</p></td>
+<td><p>EC2_RX_CLK</p></td>
+</tr>
+<tr class="row-even"><td><p>B11</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B12</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B13</p></td>
+<td><p>AD1</p></td>
+<td><p>EC2_RXD2</p></td>
+<td><p>GPIO3_23</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD2</p></td>
+<td><p>EC2_RXD2</p></td>
+</tr>
+<tr class="row-odd"><td><p>B14</p></td>
+<td><p>AC2</p></td>
+<td><p>EC2_RXD3</p></td>
+<td><p>GPIO3_22</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD3</p></td>
+<td><p>EC2_RXD3</p></td>
+</tr>
+<tr class="row-even"><td><p>B15</p></td>
+<td><p>AG3</p></td>
+<td><p>EC2_TXEN</p></td>
+<td><p>GPIO3_19</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXEN</p></td>
+<td><p>EC2_TXEN</p></td>
+</tr>
+<tr class="row-odd"><td><p>B16</p></td>
+<td><p>AD18</p></td>
+<td><p>SD2_TX2_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.35V</p></td>
+<td><p>1046：SD2_TX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B17</p></td>
+<td><p>AE18</p></td>
+<td><p>SD2_TX2_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.35V</p></td>
+<td><p>1046：SD2_TX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B18</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B19</p></td>
+<td><p>AG18</p></td>
+<td><p>SD2_RX2_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD2_RX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B20</p></td>
+<td><p>AH18</p></td>
+<td><p>SD2_RX2_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD2_RX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B21</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B22</p></td>
+<td><p>F2</p></td>
+<td><p>USB1_TX_DM</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB1 TX-</p></td>
+<td><p>USB1_TX_DM</p></td>
+</tr>
+<tr class="row-even"><td><p>B23</p></td>
+<td><p>F1</p></td>
+<td><p>USB1_TX_DP</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB1 TX+</p></td>
+<td><p>USB1_TX_DP</p></td>
+</tr>
+<tr class="row-odd"><td><p>B24</p></td>
+<td><p>-</p></td>
+<td><p>PWR_OK</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+<td><p>底板上电正常信号</p></td>
+<td><p>PWR_OK</p></td>
+</tr>
+<tr class="row-even"><td><p>B25</p></td>
+<td><p>D2</p></td>
+<td><p>USB2_TX_DM</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB2 TX-</p></td>
+<td><p>USB2_TX_DM</p></td>
+</tr>
+<tr class="row-odd"><td><p>B26</p></td>
+<td><p>D1</p></td>
+<td><p>USB2_TX_DP</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB2 TX+</p></td>
+<td><p>USB2_TX_DP</p></td>
+</tr>
+<tr class="row-even"><td><p>B27</p></td>
+<td><p>F10</p></td>
+<td><p>RESET_REQ_B_18</p></td>
+<td><p>-</p></td>
+<td><p>1.8V</p></td>
+<td><p>CPU复位输出</p></td>
+<td><p>RESET_REQ_B_18</p></td>
+</tr>
+<tr class="row-odd"><td><p>B28</p></td>
+<td><p>AC4</p></td>
+<td><p>EC2_GTX_CLK</p></td>
+<td><p>GPIO3_20</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII GTX_CLK</p></td>
+<td><p>EC2_GTX_CLK</p></td>
+</tr>
+<tr class="row-even"><td><p>B29</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B30</p></td>
+<td><p>AG4</p></td>
+<td><p>EC2_GTX_CLK125</p></td>
+<td><p>GPIO3_21</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII CLK125</p></td>
+<td><p>EC2_GTX_CLK125</p></td>
+</tr>
+<tr class="row-even"><td><p>B31</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B32</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B33</p></td>
+<td><p>L4</p></td>
+<td><p>I2C3_SCL</p></td>
+<td><p>GPIO4_10</p></td>
+<td><p>3.3V</p></td>
+<td><p>I2C3 SCL</p></td>
+<td><p>I2C3_SCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>B34</p></td>
+<td><p>M4</p></td>
+<td><p>I2C3_SDA</p></td>
+<td><p>GPIO4_11</p></td>
+<td><p>3.3V</p></td>
+<td><p>I2C3 SDA</p></td>
+<td><p>I2C3_SDA</p></td>
+</tr>
+<tr class="row-even"><td><p>B35</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B36</p></td>
+<td><p>B2</p></td>
+<td><p>USB3_TX_DM</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB3 TX-</p></td>
+<td><p>USB3_TX_DM</p></td>
+</tr>
+<tr class="row-even"><td><p>B37</p></td>
+<td><p>B1</p></td>
+<td><p>USB3_TX_DP</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB3 TX+</p></td>
+<td><p>USB3_TX_DP</p></td>
+</tr>
+<tr class="row-odd"><td><p>B38</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B39</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B40</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B41</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B42</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B43</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B44</p></td>
+<td><p>G6</p></td>
+<td><p>USB1_PWRFAULT</p></td>
+<td><p>GPIO4_30</p></td>
+<td><p>3.3V</p></td>
+<td><p>USB电源错误检测</p></td>
+<td><p>USB1_PWRFAULT</p></td>
+</tr>
+<tr class="row-even"><td><p>B45</p></td>
+<td><p>C6</p></td>
+<td><p>USB2_DM</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>USB2_D-</p></td>
+<td><p>USB2_DM</p></td>
+</tr>
+<tr class="row-odd"><td><p>B46</p></td>
+<td><p>D6</p></td>
+<td><p>USB2_DP</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>USB2_D+</p></td>
+<td><p>USB2_DP</p></td>
+</tr>
+<tr class="row-even"><td><p>B47</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B48</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B49</p></td>
+<td><p>-</p></td>
+<td><p>SYS_RESET_B</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>系统复位输入</p></td>
+<td><p>SYS_RESET_B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B50</p></td>
+<td><p>-</p></td>
+<td><p>CB_RESET_B</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>系统复位输出</p></td>
+<td><p>CB_RESET_B</p></td>
+</tr>
+<tr class="row-even"><td><p>B51</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B52</p></td>
+<td><p>AG15</p></td>
+<td><p>SD2_RX0_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD2_RX0_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B53</p></td>
+<td><p>AH15</p></td>
+<td><p>SD2_RX0_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD2_RX0_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B54</p></td>
+<td><p>D17</p></td>
+<td><p>GPIO5</p></td>
+<td><p>GPIO2_14</p></td>
+<td><p>1.8V</p></td>
+<td><p>通用IO</p></td>
+<td><p>GPIO5</p></td>
+</tr>
+<tr class="row-even"><td><p>B55</p></td>
+<td><p>AG16</p></td>
+<td><p>SD2_RX1_P</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD2_RX1_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：SD1_RX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B56</p></td>
+<td><p>AH16</p></td>
+<td><p>SD2_RX1_N</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD2_RX1_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：SD1_RX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B57</p></td>
+<td><p>E17</p></td>
+<td><p>GPIO6</p></td>
+<td><p>GPIO2_15</p></td>
+<td><p>1.8V</p></td>
+<td><p>通用IO</p></td>
+<td><p>GPIO6</p></td>
+</tr>
+<tr class="row-odd"><td><p>B58</p></td>
+<td><p>AG11</p></td>
+<td><p>SD1_RX3_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX3_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B59</p></td>
+<td><p>AH11</p></td>
+<td><p>SD1_RX3_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX3_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B60</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B61</p></td>
+<td><p>AG10</p></td>
+<td><p>SD1_RX2_P</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：SD1_RX1_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B62</p></td>
+<td><p>AH10</p></td>
+<td><p>SD1_RX2_N</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：SD1_RX1_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B63</p></td>
+<td><p>W3</p></td>
+<td><p>GPIO7</p></td>
+<td><p>GPIO1_31</p></td>
+<td><p>1.8V</p></td>
+<td><p>通用IO</p></td>
+<td><p>GPIO7</p></td>
+</tr>
+<tr class="row-odd"><td><p>B64</p></td>
+<td><p>AG8</p></td>
+<td><p>SD1_RX1_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX1_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B65</p></td>
+<td><p>AH8</p></td>
+<td><p>SD1_RX1_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX1_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B66</p></td>
+<td><p>L3</p></td>
+<td><p>SD_WP</p></td>
+<td><p>GPIO4_03</p></td>
+<td><p>3.3V</p></td>
+<td><p>SD写保护</p></td>
+<td><p>SD_WP</p></td>
+</tr>
+<tr class="row-even"><td><p>B67</p></td>
+<td><p>K3</p></td>
+<td><p>SD_CD_B</p></td>
+<td><p>GPIO4_02</p></td>
+<td><p>3.3V</p></td>
+<td><p>SD插拔检测</p></td>
+<td><p>SD_CD_B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B68</p></td>
+<td><p>AG6</p></td>
+<td><p>SD1_RX0_P</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX0_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：SD1_RX0_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B69</p></td>
+<td><p>AH6</p></td>
+<td><p>SD1_RX0_N</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046：SD1_RX0_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：SD1_RX0_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B70</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B71</p></td>
+<td><p>AG2</p></td>
+<td><p>MDC1</p></td>
+<td><p>GPIO3_00</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDC1</p></td>
+<td><p>MDC1</p></td>
+</tr>
+<tr class="row-odd"><td><p>B72</p></td>
+<td><p>AF2</p></td>
+<td><p>MDIO1</p></td>
+<td><p>GPIO3_01</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDIO1</p></td>
+<td><p>MDIO1</p></td>
+</tr>
+<tr class="row-even"><td><p>B73</p></td>
+<td><p>AH4</p></td>
+<td><p>MDC2</p></td>
+<td><p>GPIO4_00</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDC2</p></td>
+<td><p>MDC2</p></td>
+</tr>
+<tr class="row-odd"><td><p>B74</p></td>
+<td><p>AH3</p></td>
+<td><p>MDIO2</p></td>
+<td><p>GPIO4_01</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDIO2</p></td>
+<td><p>MDIO2</p></td>
+</tr>
+<tr class="row-even"><td><p>B75</p></td>
+<td><p>J2</p></td>
+<td><p>UART3_SOUT</p></td>
+<td><p>GPIO1_19</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 TX</p></td>
+<td><p>UART3_SOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>B76</p></td>
+<td><p>J1</p></td>
+<td><p>UART3_SIN</p></td>
+<td><p>GPIO1_21</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 RX</p></td>
+<td><p>UART3_SIN</p></td>
+</tr>
+<tr class="row-even"><td><p>B77</p></td>
+<td><p>L1</p></td>
+<td><p>UART4_SOUT</p></td>
+<td><p>GPIO1_20</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART4 TX</p></td>
+<td><p>UART4_SOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>B78</p></td>
+<td><p>M2</p></td>
+<td><p>UART4_SIN</p></td>
+<td><p>GPIO1_22</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART4 RX</p></td>
+<td><p>UART4_SIN</p></td>
+</tr>
+<tr class="row-even"><td><p>B79</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B80</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B81</p></td>
+<td><p>J5</p></td>
+<td><p>IRQ5_GPIO1_25</p></td>
+<td><p>GPIO1_25</p></td>
+<td><p>3.3V</p></td>
+<td><p>通用IO</p></td>
+<td><p>GPIO1_25</p></td>
+</tr>
+<tr class="row-odd"><td><p>B82</p></td>
+<td><p>K5</p></td>
+<td><p>IRQ6_GPIO1_26</p></td>
+<td><p>GPIO1_26</p></td>
+<td><p>3.3V</p></td>
+<td><p>通用IO</p></td>
+<td><p>GPIO1_26</p></td>
+</tr>
+<tr class="row-even"><td><p>B83</p></td>
+<td><p>L5</p></td>
+<td><p>IRQ7_GPIO1_27</p></td>
+<td><p>GPIO1_27</p></td>
+<td><p>3.3V</p></td>
+<td><p>中断输入</p></td>
+<td><p>IRQ7_GPIO1_27</p></td>
+</tr>
+<tr class="row-odd"><td><p>B84</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B85</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B86</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B87</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B88</p></td>
+<td><p>M5</p></td>
+<td><p>IRQ8_GPIO1_28</p></td>
+<td><p>GPIO1_28</p></td>
+<td><p>3.3V</p></td>
+<td><p>中断输入</p></td>
+<td><p>IRQ8_GPIO1_28</p></td>
+</tr>
+<tr class="row-even"><td><p>B89</p></td>
+<td><p>N5</p></td>
+<td><p>IRQ9_GPIO1_29</p></td>
+<td><p>GPIO1_29</p></td>
+<td><p>3.3V</p></td>
+<td><p>通用IO</p></td>
+<td><p>GPIO1_29</p></td>
+</tr>
+<tr class="row-odd"><td><p>B90</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B91</p></td>
+<td><p>P4</p></td>
+<td><p>IRQ10_GPIO1_30</p></td>
+<td><p>GPIO1_30</p></td>
+<td><p>3.3V</p></td>
+<td><p>中断输入</p></td>
+<td><p>IRQ10_GPIO1_30</p></td>
+</tr>
+<tr class="row-odd"><td><p>B92</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B93</p></td>
+<td><p>A16</p></td>
+<td><p>BOOT_SEL0</p></td>
+<td><p>-</p></td>
+<td><p>1.8V</p></td>
+<td><p>启动选择</p></td>
+<td><p>BOOT_SEL0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B94</p></td>
+<td><p>P3</p></td>
+<td><p>SD_CLK</p></td>
+<td><p>GPIO2_09</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD CLK</p></td>
+<td><p>SD_CLK</p></td>
+</tr>
+<tr class="row-even"><td><p>B95</p></td>
+<td><p>P2</p></td>
+<td><p>SD_CMD</p></td>
+<td><p>GPIO2_04</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD CMD</p></td>
+<td><p>SD_CMD</p></td>
+</tr>
+<tr class="row-odd"><td><p>B96</p></td>
+<td><p>P1</p></td>
+<td><p>SD_DATA0</p></td>
+<td><p>GPIO2_05</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA0</p></td>
+<td><p>SD_DATA0</p></td>
+</tr>
+<tr class="row-even"><td><p>B97</p></td>
+<td><p>R2</p></td>
+<td><p>SD_DATA1</p></td>
+<td><p>GPIO2_06</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA1</p></td>
+<td><p>SD_DATA1</p></td>
+</tr>
+<tr class="row-odd"><td><p>B98</p></td>
+<td><p>R1</p></td>
+<td><p>SD_DATA2</p></td>
+<td><p>GPIO2_07</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA2</p></td>
+<td><p>SD_DATA2</p></td>
+</tr>
+<tr class="row-even"><td><p>B99</p></td>
+<td><p>T1</p></td>
+<td><p>SD_DATA3</p></td>
+<td><p>GPIO2_08</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA3</p></td>
+<td><p>SD_DATA3</p></td>
+</tr>
+<tr class="row-odd"><td><p>B100</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B101</p></td>
+<td><p>A19</p></td>
+<td><p>FAN_PWMOUT</p></td>
+<td><p>GPIO2_10</p></td>
+<td><p>1.8V</p></td>
+<td><p>风扇控制</p></td>
+<td><p>FAN_PWMOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>B102</p></td>
+<td><p>D20</p></td>
+<td><p>FAN_TACHIN</p></td>
+<td><p>GPIO2_11</p></td>
+<td><p>1.8V</p></td>
+<td><p>风扇转速侦测</p></td>
+<td><p>FAN_TACHIN</p></td>
+</tr>
+<tr class="row-even"><td><p>B103</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B104</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>核心板供电电源</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td><p>B105</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>核心板供电电源</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td><p>B106</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>核心板供电电源</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td><p>B107</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>核心板供电电源</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td><p>B108</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>核心板供电电源</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td><p>B109</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>核心板供电电源</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td><p>B110</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>地</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id17">
+<h2><a class="headerlink" href="#id17" title="Link to this heading"></a></h2>
+</section>
+</section>
+<section id="ok104xa-c2">
+<h1>03_飞凌OK104xA-C2嵌入式开发平台介绍<a class="headerlink" href="#ok104xa-c2" title="Link to this heading"></a></h1>
+</section>
+<section id="id18">
+<h1><strong>第三章 飞凌OK104xA-C2嵌入式开发平台介绍</strong><a class="headerlink" href="#id18" title="Link to this heading"></a></h1>
+<section id="id19">
+<h2><font style="color:#000000;">3.1 OK104xA-C2开发板接口图 </font><a class="headerlink" href="#id19" title="Link to this heading"></a></h2>
+<p>飞凌OK104xA-C2开发平台为核心板加底板的结构，采用接插件的连接方式，因底板同时支持FET1043A-C和FET1046A-C 两款核心板，所以在 PCB 丝印以及本文表示开发板名称中会出现“OK104xA-C2”的字样，用来表示本产品所兼容 CPU 系列的代称。OK104xA-C2开发板主要接口如下图所示：</p>
+<p><img alt="Image" src="_images/1720687055019_7cef6a6f_24c4_4dfb_8137_48d66514697e.jpeg" /><img alt="Image" src="_images/1720687055510_eee05d9b_1fa7_4e98_98d0_903fda6542d3.jpeg" /></p>
+</section>
+<section id="id20">
+<h2><font style="color:#000000;">3.2 OK104xA-C2开发板尺寸图</font><a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1720687055907_649ff44d_9e8b_462b_8155_4649cb09b942.png" /></p>
+<p>PCB尺寸：200mm×150mm。</p>
+<p>制版工艺：厚度2mm，6层PCB。</p>
+<p>电源电压：直流12V。</p>
+<p>固定孔直径: 3.2mm</p>
+</section>
+<section id="id21">
+<h2><font style="color:#000000;">3.3 底板命名规范</font><a class="headerlink" href="#id21" title="Link to this heading"></a></h2>
+<p>A - B - C + D E F : G - H</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>字段</p></th>
+<th class="head"><p>字段描述</p></th>
+<th class="head"><p>值</p></th>
+<th class="head"><p>说明</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>产品线标识</p></td>
+<td><p>OK</p></td>
+<td><p>飞凌嵌入式底板/开发板</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>TCU</p></td>
+<td><p>飞凌嵌入式计费控制单元</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>分段标识</p></td>
+<td><p>-</p></td>
+<td><p>当CPU的值首位是字母，将产品线标识与CPU用“-”连接；<br/>当CPU的值首位是数字，省略“-”。</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>CPU名称</p></td>
+<td><p>2440</p></td>
+<td><p>S3C2440</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>2416</p></td>
+<td><p>S3C2416</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>6410</p></td>
+<td><p>S3C6410</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>210</p></td>
+<td><p>S5pV210</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>335x</p></td>
+<td><p>AM335x</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX6x</p></td>
+<td><p>x代表兼容多款CPU的底板，根据具体产品对x进行描述。</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>i.MX6Q/QP/DP/DL/D</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX6UL</p></td>
+<td><p>i.MX6UL</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx18</p></td>
+<td><p>S5p4418 / S5p6818</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>5718</p></td>
+<td><p>AM5718</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>1052</p></td>
+<td><p>i.MX RT1052</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>1061</p></td>
+<td><p>i.MX RT1061</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>1012A</p></td>
+<td><p>LS1012A</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>104xA</p></td>
+<td><p>LS1043A/LS1046A</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>A40i</p></td>
+<td><p>A40i</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>T3</p></td>
+<td><p>T3</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX8MM</p></td>
+<td><p>i.MX8M Mini</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX8MQ</p></td>
+<td><p>i.MX8MQ</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX8MPQ</p></td>
+<td><p>i.MX8MPQ</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>T507</p></td>
+<td><p>T507</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>1028A</p></td>
+<td><p>LS1028A</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>3519A</p></td>
+<td><p>Hi3519</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>3399</p></td>
+<td><p>RK3399/3399K</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>3568</p></td>
+<td><p>RK3568/3568J</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>G2LD</p></td>
+<td><p>RZ/G2LD</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>6254</p></td>
+<td><p>AM6254</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>分段标识</p></td>
+<td><p>-</p></td>
+<td><p>参数分段符</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>连接方式</p></td>
+<td><p>Sx</p></td>
+<td><p>邮票孔</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>Dx</p></td>
+<td><p>插针</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Cx</p></td>
+<td><p>板对板连接器</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>Gx</p></td>
+<td><p>金手指</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>注：x的内容为空或2~N，以区分同种连接方式的不同产品；</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>分段标识</p></td>
+<td><p>+</p></td>
+<td><p></p></td>
+<td><p>此标识之后为配置参数部分</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+<td><p>类型标识</p></td>
+<td><p>M</p></td>
+<td><p></p></td>
+<td><p>底板<br/>（注意：底板标识M，默认不填写）</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>E</p></td>
+<td><p></p></td>
+<td><p>扩展板<br/>( 蓝牙板、WiFi板、232板、485板、天线板、接口板等 ，规格的类型标识都归属到扩展板E中，不允许随意指定字母标识。<br/>如同时有2款485扩展板，则规格中“E”后面标记1和2，分别代表第几款扩展板。举例: <br/>名称：OKMX6Q-C  RS485扩展板  <br/>规格：OKMX6Q-C+<font style="color:#FF0000;">E2</font>-485：10   代表第二款485扩展板**  )**</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>L</p></td>
+<td><p></p></td>
+<td><p>灯板</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>D</p></td>
+<td><p></p></td>
+<td><p>显示板</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>K</p></td>
+<td><p></p></td>
+<td><p>按键板</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>P</p></td>
+<td><p></p></td>
+<td><p>电源板</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>运行温度</p></td>
+<td><p>C</p></td>
+<td><p></p></td>
+<td><p>0 to 70℃     商业级</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>E</p></td>
+<td><p></p></td>
+<td><p>-20 to 85℃   扩展商业级</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>I</p></td>
+<td><p></p></td>
+<td><p>-40 to 85℃   工业级</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>A</p></td>
+<td><p></p></td>
+<td><p>-40 to 125℃  车规级</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>PCB版本号</p></td>
+<td><p>10</p></td>
+<td><p></p></td>
+<td><p>V1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx</p></td>
+<td><p></p></td>
+<td><p>Vx.x</p></td>
+</tr>
+<tr class="row-even"><td><p>:</p></td>
+<td><p>分隔符</p></td>
+<td><p>:</p></td>
+<td><p></p></td>
+<td><p>此符号之后为厂家内部标识</p></td>
+</tr>
+<tr class="row-odd"><td><p>G</p></td>
+<td><p>连接器产地<br/></p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+<td><p>国产连接器</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+<td><p>进口连接器</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>N</p></td>
+<td><p></p></td>
+<td><p>不区分\无连接器</p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>连接符</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+<td><p>等级标识连接符</p></td>
+</tr>
+<tr class="row-odd"><td><p>H</p></td>
+<td><p>等级标识</p></td>
+<td><p>PC</p></td>
+<td><p></p></td>
+<td><p>原型样品</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>空白</p></td>
+<td><p></p></td>
+<td><p>大规模生产</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>SC</p></td>
+<td><p></p></td>
+<td><p>专用的，据客户特殊要求进行专项修改时（根据某项功能修改某颗物料等情况）</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id22">
+<h2><font style="color:#000000;">3.4 底板资源</font><a class="headerlink" href="#id22" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>功能</p></th>
+<th class="head text-center"><p>数量</p></th>
+<th class="head text-center"><p>参数<sup>5</sup></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>RGMII</p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>10/100/1000Mbps自适应，RJ-45接口</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SGMII<sup>3</sup></p></td>
+<td class="text-center"><p>3</p></td>
+<td class="text-center"><p>10/100/1000Mbps自适应，RJ-45接口</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB 3.0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>最高支持速率5G</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TF Card</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Mini PCIE<sup>1</sup></p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>外接SATA硬盘</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PCIE X1<sup>2</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>最高支持速率5G</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RTC</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>板载CR2032电池</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>3</p></td>
+<td class="text-center"><p>TTL电平</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RS232</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>调试串口</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>支持NXP官方 CodeWarrior TAP调试器</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SFP<sup>4</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>支持XFI 10G</p></td>
+</tr>
+</tbody>
+</table>
+<p>注1：LS1043A只能用作mini PCIE使用；</p>
+<p>注2：仅LS1046A支持；</p>
+<p>注3：LS1043A仅支持2路，即底板上P26，P27；</p>
+<p>注4：LS1043A仅支持1路，即底板上P28；</p>
+<p>注5：表中参数为硬件设计或CPU理论值；</p>
+</section>
+<section id="id23">
+<h2><font style="color:#000000;">3.5 OK104xA-C2底板说明</font><a class="headerlink" href="#id23" title="Link to this heading"></a></h2>
+<p><strong>注：下图中元件位号有“_DNP”标识的，代表此元器件默认不焊接。</strong></p>
+<section id="id24">
+<h3><font style="color:#000000;">3.5.1 底板电源</font><a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p>底板电源为直流12V，由DC-005插座（P10）或2pin5.08mm端子（P11）引入。整板的上电开关使用S1控制Q3 MOS管实现，可以减少上电瞬间大电流对开关触点的氧化，延长开关使用寿命。</p>
+<p>开关前后均添加泄放电阻保证开关断开后能快速泄放电容电压。</p>
+</section>
+<section id="id25">
+<h3><font style="color:#000000;">3.5.2 复位</font><a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p>开发板左方的轻触开关K1，按下后可复位CPU及外设芯片。</p>
+<p>RESET_REQ_B_18为CPU输出的请求复位信号，CPU出现异常（例如看门狗动作时）会拉低此信号。当CPU启动过程异常时RESET_REQ_B_18必须延时一段时间再复位CPU，给JTAG一定的时间控制CPU，所以建议添加类似位号为U13的复位延迟芯片。</p>
+<p>核心板引出的复位相关引脚共4个，分别是CPU_TRST_B_18，RESET_REQ_B_18，SYS_RESET_B，CB_RESET_B</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>名称</strong></p></th>
+<th class="head"><p><strong>功能</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CPU_TRST_B_18</p></td>
+<td><p>JTAG复位，同时复位CPU及CB_RESET_B</p></td>
+</tr>
+<tr class="row-odd"><td><p>RESET_REQ_B_18</p></td>
+<td><p>CPU异常复位输出</p></td>
+</tr>
+<tr class="row-even"><td><p>SYS_RESET_B</p></td>
+<td><p>核心板复位输入，同时复位CB_RESET_B</p></td>
+</tr>
+<tr class="row-odd"><td><p>CB_RESET_B</p></td>
+<td><p>核心板复位输出，用于复位底板外设芯片</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="boot">
+<h3><font style="color:#000000;">3.5.3 Boot配置</font><a class="headerlink" href="#boot" title="Link to this heading"></a></h3>
+<p>LS104xA CPU使用RCW（Reset configuration word）来选择启动项，FET104xA-C2核心板默认选择从QSPI NOR Flash启动（底板BOOT_SEL0悬空）。</p>
+<p>Boot配置原理图</p>
+<p><img alt="Image" src="_images/1720687056764_14bb8dc7_b284_4523_9237_5b129b81782c.png" /></p>
+<p>PCB丝印</p>
+<p>S2拨码开关说明：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>PCB丝印</p></th>
+<th class="head"><p>名称</p></th>
+<th class="head"><p>功能</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>BOOT_SEL0</p></td>
+<td><p>OFF(1):QSPI启动(默认)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>ON(0)：SD/EMMC启动</p></td>
+</tr>
+<tr class="row-even"><td><p>B</p></td>
+<td><p>SD1_REFCLK_SEL</p></td>
+<td><p>OFF(1)：156.25MHz参考时钟（默认）</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>ON(0)：100MHz参考时钟</p></td>
+</tr>
+</tbody>
+</table>
+<p>SD1_REFCLK_SEL控制的是SD1_REFCLK2（CPU球号为AA8和AB8）的参考时钟，请根据SerDes的具体配置来选择此时钟源。</p>
+<p>SD/EMMC启动模式下由SD卡的插拔检测引脚SD_CD_B控制SD卡启动或EMMC启动，插入SD卡后SD_CD_B引脚被拉低，CPU从SD卡启动，未插入SD卡时 SD_CD_B引脚默认拉高，CPU从核心板板载EMMC启动。</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>信号</p></th>
+<th class="head"><p>状态</p></th>
+<th class="head"><p>模式</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SD_CD_B</p></td>
+<td><p>0</p></td>
+<td><p>SD卡</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>1</p></td>
+<td><p>EMMC</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id26">
+<h3><font style="color:#000000;">3.5.4 串口</font><a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+<p>P20为标准9针RS-232串口，采用DB9弯头公座与电脑相连。若电脑无RS-232串口，可用USB转串口模块将串口引出。</p>
+<p>P14,P15,P17分别为UART2，UART3，UART4 3.3V TTL电平串口。</p>
+<p><strong>注意:</strong></p>
+<p><strong>为方便后期调试，请用户在自行设计地板时将此调试串口引出。</strong></p>
+</section>
+<section id="pcie">
+<h3><font style="color:#000000;">3.5.5 PCIE接口</font><a class="headerlink" href="#pcie" title="Link to this heading"></a></h3>
+<p>OK104xA-C2底板默认留有3个PCIE接口，分别为mini PCIE接口P21，PCIE X1接口P2，P23,其中FET1043A-C核心板只支持P21接口。</p>
+<p>其中P21 mini PCIE接口在LS1046A上可配置为PCIE也可配置为mSATA接口。（mSATA接口中RX的极性与PICE标准中RX极性相反，软件支持更换，按照mini PCIE标准设计即可）</p>
+<p>P2接口同时支持USB3.0和PCIEX1协议，可外接华为/移远的5G模块。</p>
+<p>P23接口可外接PCIE接口WiFi模块。</p>
+<p>因SATA硬盘/5G模块/WiFi模块功耗较高，其电源均使用单独DCDC提供。</p>
+<p>注：PCIE设备不支持热插拔，对应模块电源应与底板同时上电。</p>
+<p><img alt="Image" src="_images/1720687059285_5cef780b_3514_474a_b696_fea9cb5eea01.png" /></p>
+<p><strong>注意：</strong></p>
+<p><strong>1、请保留PCIE复位引脚，确保每次上电PCIE设备均有效复位。</strong></p>
+<p><strong>2、PCIE时钟芯片改为RC19004A100GNL。</strong></p>
+</section>
+<section id="tf">
+<h3><font style="color:#000000;">3.5.6 TF卡</font><a class="headerlink" href="#tf" title="Link to this heading"></a></h3>
+<p>开发板上提供了一个自弹式TF卡座，支持SD UHS-1速度模式。</p>
+<p><strong>注意：</strong></p>
+<p><strong>1.TF数据线上拉的电平匹配已由核心板完成，底板可不再做上拉处理；</strong></p>
+<p><strong>2.设计时请注意TF卡插拔检测状态影响启动项，详见 3.5.3章节Boot配置。</strong></p>
+</section>
+<section id="rgmii">
+<h3><font style="color:#000000;">3.5.7 RGMII</font><a class="headerlink" href="#rgmii" title="Link to this heading"></a></h3>
+<p>OK104xA-C2开发板提供两路RGMII类型千兆PHY接口，均使用YT8521SH芯片，一路PHY在核心板上，直接引出到底板RJ45，一路在底板上，RGMII信号接到了U10上。</p>
+<p><strong>注意:1.</strong> YT8521SH<strong>的00000地址为广播地址，配置时请谨慎使用。</strong></p>
+<p><strong>2.PCB设计时要保证PHY芯片有一个完整的参考地。</strong></p>
+<p><strong>3.底板的RGMII连接的PHY芯片在硬件上裁减掉之后，核心板上的RGMII连接的</strong>YT8521SH<strong>芯片则无法正常工作，请尽量避免此种方案配置，如果一定要这样使用，请联系飞凌公司做软件上的修改。</strong></p>
+</section>
+<section id="jtag">
+<h3><font style="color:#000000;">3.5.8 JTAG仿真调试接口</font><a class="headerlink" href="#jtag" title="Link to this heading"></a></h3>
+<p>开发板提供了JTAG调试接口（P19），方便用户通过NXP官方仿真设备对LS104xA进行仿真调试。</p>
+<p>**注意：**<strong>复位信号CPU_TRST_B_18不可以悬空，无论是否使用JTAG功能，此引脚都需要上拉到1.8V</strong></p>
+</section>
+<section id="sgmii">
+<h3><font style="color:#000000;">3.5.9 SGMII接口</font><a class="headerlink" href="#sgmii" title="Link to this heading"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>OK104xA-C2底板提供3路SGMII PHY，分别接到U18、U19、U20的 YT8521SH 芯片上。其中U19、U20对应的SGMII仅仅可以在LS1046A CPU上可以使用，LS1043A上为空接状态。
+</pre></div>
+</div>
+<p>网络接口定义：</p>
+<p><img alt="Image" src="_images/1720687061954_60c73b42_184c_4607_a7db_92fc98f81f01.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>连接器</strong></p></th>
+<th class="head"><p><strong>功能</strong></p></th>
+<th class="head"><p><strong>FET1046A-C</strong></p></th>
+<th class="head"><p><strong>FET1043A-C</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>P26</p></td>
+<td><p>底板SGMII</p></td>
+<td><p>支持</p></td>
+<td><p>支持</p></td>
+</tr>
+<tr class="row-odd"><td><p>P27上</p></td>
+<td><p>底板SGMII</p></td>
+<td><p>支持</p></td>
+<td><p>不支持</p></td>
+</tr>
+<tr class="row-even"><td><p>P27下</p></td>
+<td><p>底板SGMII</p></td>
+<td><p>支持</p></td>
+<td><p>不支持</p></td>
+</tr>
+<tr class="row-odd"><td><p>P13上</p></td>
+<td><p>核心板RGMII</p></td>
+<td><p>支持</p></td>
+<td><p>支持</p></td>
+</tr>
+<tr class="row-even"><td><p>P13上</p></td>
+<td><p>底板RGMII</p></td>
+<td><p>支持</p></td>
+<td><p>支持</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usb3-0">
+<h3><font style="color:#000000;">3.5.10 USB3.0接口</font><a class="headerlink" href="#usb3-0" title="Link to this heading"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>USB3.0接口，使用TPS2065进行电流检测VBUS电源控制。为消除干扰，保证USB不会误报错，建议添加C135 ,C145 100pF电容。
+</pre></div>
+</div>
+</section>
+<section id="sfp">
+<h3><font style="color:#000000;">3.5.11 SFP接口</font><a class="headerlink" href="#sfp" title="Link to this heading"></a></h3>
+<p>OK104xA-C2底板提供2个SFP接口，其中P30仅在LS1046A CPU上可用，LS1043A CPU上为空接状态。</p>
+<p><strong>注意：</strong></p>
+<p><strong>1、由于SPF接口理论最大速率可达10Gbps，在绘制PCB时，应尽量在表层走线，减少stub。</strong></p>
+<p><strong>2、由于时钟buffer芯片ICS8304AMI不易采购，U21,U23的参考时钟改为有源晶振提供。</strong></p>
+<p><strong>3、由于光模块可能会通过IIC总线进行配置，开发板中将两路光模块分别接到了IIC3和IIC4上，并预留了0Ω电阻，默认空焊，当需要进行配置时，焊接0Ω电阻，同时需要注意光模块地址是否会与底板其他设备有冲突。</strong></p>
+</section>
+<section id="id27">
+<h3><font style="color:#000000;">3.5.12 用户按键</font><a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
+<p>OK104xA-C2底板引出1路用户按键K2，功能可自定义。</p>
+</section>
+<section id="led">
+<h3><font style="color:#000000;">3.5.13 LED</font><a class="headerlink" href="#led" title="Link to this heading"></a></h3>
+<p>OK104xA-C2底板引出3路LED D1，其中黄色为底板3.3V电源指示，绿色为5G网络状态指示，红色为用户自定义LED。</p>
+</section>
+</section>
+</section>
+<section id="id28">
+<h1>04_连接器尺寸图<a class="headerlink" href="#id28" title="Link to this heading"></a></h1>
+<p>核心板连接器规格如下：</p>
+<p><img alt="Image" src="_images/1720687029540_67600bd9_daf0_46ed_b627_9ab490a763ff.png" /></p>
+<p><img alt="Image" src="_images/1720687029753_794a0c8c_3e86_4b20_a2e2_116ee4af3829.png" /></p>
+<p><img alt="Image" src="_images/1720687030023_a7cc01fa_04d7_484c_8cd0_9bb37f964bbf.png" /></p>
+<p>底板连接器规格如下：</p>
+<p><img alt="Image" src="_images/1720687030259_6a34d84a_06d8_4854_ac60_96e2664d77d8.png" /></p>
+<p><img alt="Image" src="_images/1720687030569_955559ec_fedf_4d34_9128_2b4ff3f41a76.png" /></p>
+<p><img alt="Image" src="_images/1720687030964_b5045ace_1cda_45a4_8387_2037762eabb4.png" /></p>
+</section>
+<section id="id29">
+<h1>05_功耗实测数据<a class="headerlink" href="#id29" title="Link to this heading"></a></h1>
+<p>下表为供电电压为12V时OK1046A的功耗实测数据：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>序号</p></th>
+<th class="head"><p>测试项目</p></th>
+<th class="head"><p>开发板（A）</p></th>
+<th class="head"><p>核心板(A)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>启动瞬时电流</p></td>
+<td><p>1.58</p></td>
+<td><p>1.27</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>零负载电流</p></td>
+<td><p>1.15</p></td>
+<td><p>0.85</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>满负载电流</p></td>
+<td><p>1.5</p></td>
+<td><p>1.19</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lmbench">
+<h1>06_核心板Lmbench测试数据<a class="headerlink" href="#lmbench" title="Link to this heading"></a></h1>
+<p>数据读写测试：</p>
+<p><strong>V1.3版本核心板Lmbench测试结果</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cache/Memory</p></th>
+<th class="head"><p>rd</p></th>
+<th class="head"><p>wr</p></th>
+<th class="head"><p>rdwr</p></th>
+<th class="head"><p>cp</p></th>
+<th class="head"><p>frd</p></th>
+<th class="head"><p>fwr</p></th>
+<th class="head"><p>fcp</p></th>
+<th class="head"><p>bzero</p></th>
+<th class="head"><p>bcopy</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>L1(MB/s)</p></td>
+<td><p>28556</p></td>
+<td><p>20928</p></td>
+<td><p>19188</p></td>
+<td><p>19760</p></td>
+<td><p>7180</p></td>
+<td><p>7178</p></td>
+<td><p>6121</p></td>
+<td><p>17892</p></td>
+<td><p>14090</p></td>
+</tr>
+<tr class="row-odd"><td><p>L2(MB/s)</p></td>
+<td><p>15767</p></td>
+<td><p>17624</p></td>
+<td><p>11256</p></td>
+<td><p>9119</p></td>
+<td><p>6780</p></td>
+<td><p>7142</p></td>
+<td><p>6522</p></td>
+<td><p>11999</p></td>
+<td><p>10137</p></td>
+</tr>
+<tr class="row-even"><td><p>DDR(MB/s)</p></td>
+<td><p>6440</p></td>
+<td><p>2349</p></td>
+<td><p>2387</p></td>
+<td><p>1624</p></td>
+<td><p>6431</p></td>
+<td><p>6478</p></td>
+<td><p>2726</p></td>
+<td><p>6562</p></td>
+<td><p>2718</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>V2.0版本核心板Lmbench测试结果</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cache/Memory</p></th>
+<th class="head"><p>rd</p></th>
+<th class="head"><p>wr</p></th>
+<th class="head"><p>rdwr</p></th>
+<th class="head"><p>cp</p></th>
+<th class="head"><p>frd</p></th>
+<th class="head"><p>fwr</p></th>
+<th class="head"><p>fcp</p></th>
+<th class="head"><p>bzero</p></th>
+<th class="head"><p>bcopy</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>L1(MB/s)</p></td>
+<td><p>28552</p></td>
+<td><p>20931</p></td>
+<td><p>19191</p></td>
+<td><p>19392</p></td>
+<td><p>7181</p></td>
+<td><p>7176</p></td>
+<td><p>5666</p></td>
+<td><p>17345</p></td>
+<td><p>14051</p></td>
+</tr>
+<tr class="row-odd"><td><p>L2(MB/s)</p></td>
+<td><p>15767</p></td>
+<td><p>17671</p></td>
+<td><p>11255</p></td>
+<td><p>9059</p></td>
+<td><p>6757</p></td>
+<td><p>7142</p></td>
+<td><p>6515</p></td>
+<td><p>13693</p></td>
+<td><p>10067</p></td>
+</tr>
+<tr class="row-even"><td><p>DDR(MB/s)</p></td>
+<td><p>9858</p></td>
+<td><p>3649</p></td>
+<td><p>3771</p></td>
+<td><p>2740</p></td>
+<td><p>6432</p></td>
+<td><p>7191</p></td>
+<td><p>5307</p></td>
+<td><p>11026</p></td>
+<td><p>5306</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
