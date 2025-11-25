@@ -770,7 +770,7 @@ eth0      Link encap:Ethernet  HWaddr 00:00:00:00:00:01
 6. Set the broadcast address
 
 ```plain
-root@fl-imx6ull:~# ifconfig eth0 broadcast 192.168.1.255//eth0广播地址设为192.168.1.255
+root@fl-imx6ull:~# ifconfig eth0 broadcast 192.168.1.255//The eth0 broadcast address is 192.168.1.255
 root@fl-imx6ull:~# ifconfig eth0
 ```
 
@@ -924,8 +924,8 @@ Linux host IP address:192.168.0.149    The account name is**forlinx**，The host
 Access to Linux host from development board.
 
 ```plain
-root@fl-imx6ull:~# ssh forlinx@192.168.0.149       //192.168.0.149为linux主机IP地址
-                                                             forlinx为linux主机用户名
+root@fl-imx6ull:~# ssh forlinx@192.168.0.149       //192.168.0.149 is the Linux host IP address
+                                                            Forlinx is the Linux host user name
 Host '192.168.0.149' is not in the trusted hosts file.
 (ecdsa-sha2-nistp256 fingerprint md5 93:ff:74:8a:ed:ba:fd:21:39:d9:87:93:ad:9e:19:6f)
 Do you want to continue connecting? (y/n) y
@@ -949,11 +949,11 @@ Last login: Mon Mar 23 12:50:22 2020 from 192.168.0.232
 
 WiFi support:
 
-| **Module**| **Support**
-|----------|----------
-| RTL8188EUS| WiFi
-| RTL8723BU| WiFi
-| RTL8723DU| WiFi
+| **Module** | **Support** |
+| ---------- | ----------- |
+| RTL8188EUS | WiFi        |
+| RTL8723BU  | WiFi        |
+| RTL8723DU  | WiFi        |
 
 ###### 3.1.5.1.1  USB WIFI RTL8188eus
 
@@ -1099,15 +1099,15 @@ Step 2: Power up the development board, start the Linux system, and use lsmod to
 root@fl-imx6ull:~# lsmod
 Module                  Size  Used by
 mx6s_capture           14876  0
-8723du               1313893  0	            //默认wifi自动加载，8723du已加载成功
+8723du               1313893  0	            //By default, wifi is loaded automatically, and 8723du has been loaded successfully
 ov9650_camera          12446  0
 ```
 
-+ **Note: If 8723bu is soldered on the development board, using lsmod will display 8723bu.**
+**Note: If 8723bu is soldered on the development board, using lsmod will display 8723bu.**
 
 The following test description takes 8723du as an example:
 
-**Step 3: Test**
+Step 3: Test
 
 + **<font style="color:#000000;">STA Mode</font>**
 
@@ -1116,12 +1116,10 @@ This mode is used as a station to connect to the wireless network, and the opera
 -i means wifi model; -s means wifi hotspot name; -p means password, if there is no password, enter -p NONE; the router uses wpa encryption, the specific operation instructions can be viewed wifi.sh scripts.
 
 ```plain
-root@fl-imx6ull:~# fltest_cmd_wifi.sh -i 8723du -s forlinx -p xxx        //执行测试脚本
+root@fl-imx6ull:~# fltest_cmd_wifi.sh -i 8723du -s forlinx -p xxx        //Execute the test script
 ```
 
 Printing information is as follows:
-
-<font style="color:#000000;"></font>
 
 ```plain
 wifi 8723du
@@ -1172,16 +1170,16 @@ PING 192.168.4.1 (192.168.4.1): 56 data bytes
 round-trip min/avg/max = 12.076/32.984/81.529 ms
 ```
 
-+ **Wifi signal**
++ **Wifi Signal**
 
 The method to check the WiFi signal is as follows:
 
 ```plain
-root@fl-imx6ull:~# cat /proc/net/wireless | grep wlan0 | awk '{print $3}' //获取信号强度
+root@fl-imx6ull:~# cat /proc/net/wireless | grep wlan0 | awk '{print $3}' //Obtain the signal strength
 78.
-root@fl-imx6ull:~# cat /proc/net/wireless | grep wlan0 | awk '{print $4}' //获取信号质量,单位dBm
+root@fl-imx6ull:~# cat /proc/net/wireless | grep wlan0 | awk '{print $4}' //Obtain signal quality in dBm
 -68.
-root@fl-imx6ull:~# cat /proc/net/wireless | grep wlan0 | awk '{print $5}' //网口背景噪声,单位dBm
+root@fl-imx6ull:~# cat /proc/net/wireless | grep wlan0 | awk '{print $5}' //Background noise of network port, in dBm
 -256.
 ```
 
@@ -1966,7 +1964,7 @@ Print message appears again at board end
 [CHG] Device BC:2E:F6:57:30:68 Modalias: bluetooth:v010Fp107Ed1436
 [CHG] Device BC:2E:F6:57:30:68 UUIDs: 0000046a-0000-1000-8000-00805f9b34fb
 [CHG] Device BC:2E:F6:57:30:68 UUIDs: 00001105-0000-1000-8000-00805f9b34fb
-……此处省略不关键信息
+…… Omitted unimportant information here
 [agent] Authorize service 0000111e-0000-1000-8000-00805f9b34fb (yes/no):yes
 ```
 
@@ -2007,7 +2005,7 @@ Discovery stopped
 [CHG] Device 4A:EF:9B:E7:AB:CB RSSI is nil
 [CHG] Device 58:85:A2:D0:1A:6C RSSI is nil
 [CHG] Device BC:2E:F6:57:30:68 RSSI is nil
-[bluetooth]# pair BC:2E:F6:57:30:68		                      //配对蓝牙
+[bluetooth]# pair BC:2E:F6:57:30:68		                      //Pair the bluetooth
 Attempting to pair with BC:2E:F6:rtk_btcoex: hci create connection, start paging
 57:30:68
 rtk_btcoex: connected, handle 0001, status 0x00
@@ -2671,7 +2669,7 @@ Update u-boot separately
 ```plain
 root@fl-imx6ull:~# echo 0 > /sys/block/mmcblk1boot0/force_ro    //Enable the writing
 root@fl-imx6ull:~# dd if=/run/media/sda1/u-boot.imx of=/dev/mmcblk1boot0 bs=512 seek=2 
-//将uboot镜像写入分区
+//Write uboot image to partition
 758+0 records in
 758+0 records out
 388096 bytes (388 kB, 379 KiB) copied, 0.132975 s, 2.9 MB/s
