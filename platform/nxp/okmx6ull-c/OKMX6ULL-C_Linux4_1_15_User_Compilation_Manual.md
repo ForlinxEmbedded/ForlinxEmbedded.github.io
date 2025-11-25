@@ -182,7 +182,7 @@ Specify the disk file, the default one here is fine.
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877128_50148b1b_37d8_4af0_9227_6bf60c93f956.png)
 
-Click Finish by default.
+Click “Finish” by default.
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877325_cd17f07f_bb68_4ef0_bf8d_bcffdcef5d5e.png)
 
