@@ -42,11 +42,11 @@ The QorIQ® LS104xA processor is a quad - core 64 - bit ARM® processor launched
 
 The CPU of the FET104xA - C SoM uses the LS1043AXE8QQB and LS1046AXE8T1A. The following is the application processing block diagram of the LS1043A and LS1046A:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687154128-c2d0264a-5679-4c66-97b6-6d45831eca46.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687154128_c2d0264a_5679_4c66_97b6_6d45831eca46.png)
 
 **LS1043A Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687154340-02c0c45b-9d63-4a5d-b005-9a903dd842af.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687154340_02c0c45b_9d63_4a5d_b005_9a903dd842af.png)
 
 **LS1046A Block Diagram**
 
@@ -56,11 +56,11 @@ For more details about the LS104xA series please visit the official NXP website:
 
 ### 2.1 FET104xA SoM Appearance
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687135565-b6c2afd7-0421-471e-a9d7-8bbbe29a29ec.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687135565_b6c2afd7_0421_471e_a9d7_8bbbe29a29ec.png)
 
 **FET1043A-C Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687136534-d9f0cf92-2f47-4643-81a0-2ba55fa116b8.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687136534_d9f0cf92_2f47_4643_81a0_2ba55fa116b8.png)
 
 **FET1046A-C Front**
 
@@ -68,9 +68,9 @@ For more details about the LS104xA series please visit the official NXP website:
 
 The dimensions of the FET104x-C SoM are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687136985-cd64178f-4441-4ef1-b0a9-1965f0111906.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687136985_cd64178f_4441_4ef1_b0a9_1965f0111906.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687137291-3eb69adb-a71a-4bfb-8f93-814193949fa9.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687137291_3eb69adb_a71a_4bfb_8f93_814193949fa9.png)
 
 Structure size: 84mm×55mm
 
@@ -144,9 +144,9 @@ Four mounting holes with a diameter of 2.7mm are reserved at the four corners of
 
 #### 2.5.1 FET104xA SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687137522-067c6d04-6591-4b17-878a-250b77430f37.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687137522_067c6d04_6591_4b17_878a_250b77430f37.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687137868-bb99ec8f-811b-47e5-bde2-c42eba1d3bf0.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687137868_bb99ec8f_811b_47e5_bde2_c42eba1d3bf0.png)
 
 #### 2.5.2 FET104xA SoM Pin Functions Description
 
@@ -442,11 +442,11 @@ Four mounting holes with a diameter of 2.7mm are reserved at the four corners of
 
 The Forlinx OK104xA-C2 development platform consists of a System on Module (SoM) and a carrier board connected by connectors. The carrier board is compatible with both the FET1043A-C and FET1046A-C SoMs. Therefore, the term "OK104xA-C2" is displayed on the PCB silkscreen and is also used as the name of the development board in this document. This term serves as a general reference for the CPU series with which this product is compatible. The main interfaces of the OK104xA - C2 development board are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533304/1720687055019-7cef6a6f-24c4-4dfb-8137-48d66514697e.jpeg)![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533304/1720687055510-eee05d9b-1fa7-4e98-98d0-903fda6542d3.jpeg)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687055019_7cef6a6f_24c4_4dfb_8137_48d66514697e.jpeg)![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687055510_eee05d9b_1fa7_4e98_98d0_903fda6542d3.jpeg)
 
 ### 3.2 OK104xA-C2 Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687055907-649ff44d-9e8b-462b-8155-4649cb09b942.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687055907_649ff44d_9e8b_462b_8155_4649cb09b942.png)
 
 PCB Size: 200mm × 150mm
 
@@ -578,7 +578,7 @@ The LS104xA CPU uses RCW (Reset configuration word) to select the boot option, w
 
 Boot Configuration Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687056764-14bb8dc7-b284-4523-9237-5b129b81782c.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687056764_14bb8dc7_b284_4523_9237_5b129b81782c.png)
 
 PCB silk screen
 
@@ -622,7 +622,7 @@ Since the SATA hard drive, 5G module, and Wi - Fi module have high power consump
 
 Note: PCIE devices do not support hot - plugging, and the power of the corresponding modules should be powered on simultaneously with the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687059285-5cef780b-3514-474a-b696-fea9cb5eea01.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687059285_5cef780b_3514_474a_b696_fea9cb5eea01.png)
 
 **Note:**
 
@@ -663,7 +663,7 @@ There are 3 x SGMII PHY, which are respectively connected to the YT8521SH chips 
 
 Network interface definition:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687061954-60c73b42-184c-4607-a7db-92fc98f81f01.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687061954_60c73b42_184c_4607_a7db_92fc98f81f01.png)
 
 | **Connector** | **Function**        | **FET1046A-C** | **FET1043A-C** |
 | ------------- | ------------------- | -------------- | -------------- |
@@ -699,19 +699,19 @@ There are 2 x SFP interfaces. Among them, P30 is only available on the LS1046A C
 
 The specifications of the SoM connector are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687029540-67600bd9-daf0-46ed-b627-9ab490a763ff.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687029540_67600bd9_daf0_46ed_b627_9ab490a763ff.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687029753-794a0c8c-3e86-4b20-a2e2-116ee4af3829.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687029753_794a0c8c_3e86_4b20_a2e2_116ee4af3829.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687030023-a7cc01fa-04d7-484c-8cd0-9bb37f964bbf.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030023_a7cc01fa_04d7_484c_8cd0_9bb37f964bbf.png)
 
 The specifications of the baseboard connector are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687030259-6a34d84a-06d8-4854-ac60-96e2664d77d8.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030259_6a34d84a_06d8_4854_ac60_96e2664d77d8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687030569-955559ec-fedf-4d34-9128-2b4ff3f41a76.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030569_955559ec_fedf_4d34_9128_2b4ff3f41a76.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720687030964-b5045ace-1cda-45a4-8387-2037762eabb4.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030964_b5045ace_1cda_45a4_8387_2037762eabb4.png)
 
 ## 5\. Power Consumption Measured Data
 
