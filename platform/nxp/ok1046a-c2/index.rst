@@ -20,7 +20,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   OK1046-C2_User_Hareware_Manual
+   OK1046A-C2_User_Hareware_Manual
 
 SOFTWARE 
 ---------
