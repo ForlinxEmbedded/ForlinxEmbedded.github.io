@@ -52,11 +52,11 @@ FET104xA-C核心板CPU采用的是LS1043AXE8QQB和LS1046AXE8T1A。如下为LS104
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687154128_c2d0264a_5679_4c66_97b6_6d45831eca46.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687154128_c2d0264a_5679_4c66_97b6_6d45831eca46.png)
 
 **LS1043A应用处理器框图**
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687154340_02c0c45b_9d63_4a5d_b005_9a903dd842af.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687154340_02c0c45b_9d63_4a5d_b005_9a903dd842af.png)
 
 **LS1046A应用处理器框图**
 
@@ -76,11 +76,11 @@ FET104xA-C核心板CPU采用的是LS1043AXE8QQB和LS1046AXE8T1A。如下为LS104
 ## <font style="color:#000000;">2.1 FET104xA-C核心板外观图</font>
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687135565_b6c2afd7_0421_471e_a9d7_8bbbe29a29ec.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687135565_b6c2afd7_0421_471e_a9d7_8bbbe29a29ec.png)
 
 **FET1043A-C核心板正面视图**
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687136534_d9f0cf92_2f47_4643_81a0_2ba55fa116b8.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687136534_d9f0cf92_2f47_4643_81a0_2ba55fa116b8.png)
 
 
 
@@ -91,11 +91,11 @@ FET104xA-C核心板CPU采用的是LS1043AXE8QQB和LS1046AXE8T1A。如下为LS104
 ## <font style="color:#000000;">2.2 FET104xA-C核心板尺寸图</font>
 FET104x-C核心板尺寸图如下所示：
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687136985_cd64178f_4441_4ef1_b0a9_1965f0111906.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687136985_cd64178f_4441_4ef1_b0a9_1965f0111906.png)
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687137291_3eb69adb_a71a_4bfb_8f93_814193949fa9.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687137291_3eb69adb_a71a_4bfb_8f93_814193949fa9.png)
 
 结构尺寸：84mm×55mm。
 
@@ -170,11 +170,11 @@ FET104x-C核心板尺寸图如下所示：
 ### <font style="color:#000000;">2.5.1 FET104xA-C核心板引脚原理图</font>
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687137522_067c6d04_6591_4b17_878a_250b77430f37.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687137522_067c6d04_6591_4b17_878a_250b77430f37.png)
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687137868_bb99ec8f_811b_47e5_bde2_c42eba1d3bf0.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687137868_bb99ec8f_811b_47e5_bde2_c42eba1d3bf0.png)
 
 ### <font style="color:#000000;">2.5.2 FET104xA-C核心板引脚功能说明</font>
 **注1：**
@@ -478,12 +478,12 @@ FET104x-C核心板尺寸图如下所示：
 ## <font style="color:#000000;">3.1 OK104xA-C2开发板接口图 </font>
 飞凌OK104xA-C2开发平台为核心板加底板的结构，采用接插件的连接方式，因底板同时支持FET1043A-C和FET1046A-C 两款核心板，所以在 PCB 丝印以及本文表示开发板名称中会出现“OK104xA-C2”的字样，用来表示本产品所兼容 CPU 系列的代称。OK104xA-C2开发板主要接口如下图所示：
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687055019_7cef6a6f_24c4_4dfb_8137_48d66514697e.jpeg)![Image](./images/OK1046-C2_User_Hareware_Manual/1720687055510_eee05d9b_1fa7_4e98_98d0_903fda6542d3.jpeg)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687055019_7cef6a6f_24c4_4dfb_8137_48d66514697e.jpeg)![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687055510_eee05d9b_1fa7_4e98_98d0_903fda6542d3.jpeg)
 
 ## <font style="color:#000000;">3.2 OK104xA-C2开发板尺寸图</font>
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687055907_649ff44d_9e8b_462b_8155_4649cb09b942.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687055907_649ff44d_9e8b_462b_8155_4649cb09b942.png)
 
 PCB尺寸：200mm×150mm。
 
@@ -620,7 +620,7 @@ Boot配置原理图
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687056764_14bb8dc7_b284_4523_9237_5b129b81782c.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687056764_14bb8dc7_b284_4523_9237_5b129b81782c.png)
 
 PCB丝印
 
@@ -674,7 +674,7 @@ P23接口可外接PCIE接口WiFi模块。
 
 注：PCIE设备不支持热插拔，对应模块电源应与底板同时上电。
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687059285_5cef780b_3514_474a_b696_fea9cb5eea01.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687059285_5cef780b_3514_474a_b696_fea9cb5eea01.png)
 
 **注意：**
 
@@ -722,7 +722,7 @@ OK104xA-C2开发板提供两路RGMII类型千兆PHY接口，均使用YT8521SH芯
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687061954_60c73b42_184c_4607_a7db_92fc98f81f01.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687061954_60c73b42_184c_4607_a7db_92fc98f81f01.png)
 
 | **连接器** | **功能** | **FET1046A-C** | **FET1043A-C** |
 | --- | --- | --- | --- |
@@ -781,29 +781,29 @@ OK104xA-C2底板引出3路LED D1，其中黄色为底板3.3V电源指示，绿�
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687029540_67600bd9_daf0_46ed_b627_9ab490a763ff.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687029540_67600bd9_daf0_46ed_b627_9ab490a763ff.png)
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687029753_794a0c8c_3e86_4b20_a2e2_116ee4af3829.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687029753_794a0c8c_3e86_4b20_a2e2_116ee4af3829.png)
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687030023_a7cc01fa_04d7_484c_8cd0_9bb37f964bbf.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030023_a7cc01fa_04d7_484c_8cd0_9bb37f964bbf.png)
 
 底板连接器规格如下：
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687030259_6a34d84a_06d8_4854_ac60_96e2664d77d8.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030259_6a34d84a_06d8_4854_ac60_96e2664d77d8.png)
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687030569_955559ec_fedf_4d34_9128_2b4ff3f41a76.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030569_955559ec_fedf_4d34_9128_2b4ff3f41a76.png)
 
 
 
-![Image](./images/OK1046-C2_User_Hareware_Manual/1720687030964_b5045ace_1cda_45a4_8387_2037762eabb4.png)
+![Image](./images/OK1046A-C2_User_Hareware_Manual/1720687030964_b5045ace_1cda_45a4_8387_2037762eabb4.png)
 
 
 
