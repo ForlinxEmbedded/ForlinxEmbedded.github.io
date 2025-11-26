@@ -1,0 +1,3406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User’s Hardware Manual_V2.0 &mdash; Forlinx Embedded LS1046A Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/ok1046a-c2/OK1046A-C2_User_Hareware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK1046A-C2 Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V2.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nxp-qoriq-ls104xa-description">1. NXP QorIQ LS104xA Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fet104xa-c-som-description">2. FET104xA-C SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fet104xa-som-appearance">2.1 FET104xA SoM Appearance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet104xa-c-som-dimension-diagram">2.2 FET104xA-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameters">2.3 Performance Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-main-frequency">2.3.1 System Main Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-environment">2.3.3 Operating Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#som-interface-speed">2.3.4 SoM Interface Speed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.4 SoM Interface Speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet104xa-som-pins-definition">2.5 FET104xA SoM Pins Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet104xa-som-pins-schematic">2.5.1 FET104xA SoM Pins Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fet104xa-som-pin-functions-description">2.5.2 FET104xA SoM Pin Functions Description</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok104xa-c2-development-platform-description">3. OK104xA-C2 Development Platform Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok104xa-c2-development-board-interface-diagram">3.1 OK104xA-C2 Development Board Interface Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok104xa-c2-development-board-dimension-diagram">3.2 OK104xA-C2 Development Board Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-naming-rules">3.3 Carrier Board Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-resources">3.4 Carrier Board Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok104xa-c2-carrier-board-description">3.5 OK104xA- C2 Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reset">3.5.2 Reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-configuration">3.5.3 Boot Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port">3.5.4 Serial Port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcie-interface">3.5.5 PCIE Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.6 TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rgmii">3.5.7 RGMII</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jtag-simulation-debugging-interface">3.5.8 JTAG Simulation Debugging Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sgmii-interface">3.5.9 SGMII Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb3-0-interface">3.5.10 USB3.0 Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sfp-interface">3.5.11 SFP Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-key">3.5.12 User Key</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#connector-dimension-diagram">4. Connector Dimension Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#power-consumption-measured-data">5. Power Consumption Measured Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#som-lmbench-test-data">6. SoM Lmbench Test Data</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/nxp/ls-development-manual/index.html">LS Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded LS1046A Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">User’s Hardware Manual_V2.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="users-hardware-manual-v2-0">
+<h1>User’s Hardware Manual_V2.0<a class="headerlink" href="#users-hardware-manual-v2-0" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head"><p><strong>User Manual Version</strong></p></th>
+<th class="head"><p><strong><font style="color:black;">SoM Version</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">Carrier Board Version</font></strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>22/07/2020</p></td>
+<td><p>V1.0</p></td>
+<td><p>V1.3</p></td>
+<td><p>V1.1</p></td>
+<td><p>OK1043A/1046A-C2_User’s Hardware Manual Initial Version.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>05/11/2020</p></td>
+<td><p>V1.1</p></td>
+<td><p>V1.3</p></td>
+<td><p>V1.1</p></td>
+<td><p>Modification of PCIE parameters in SoM interface resource.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>20/05/2021</p></td>
+<td><p>V1.2</p></td>
+<td><p>V1.3/V2.0</p></td>
+<td><p>V1.1</p></td>
+<td><p>1. Adding the ordering information of SoM V2.0;<br />2. Adding the comparison table of reading and writing parameters of 1.x SoM<br />and V2.x SoM in the appendix.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>27/07/2021</p></td>
+<td><p><font style="color:black;">V1.3</font></p></td>
+<td><p><font style="color:black;">V1.3/V2.0</font></p></td>
+<td><p><font style="color:black;">V1.1</font></p></td>
+<td><p>Modifying boot configuration section description.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>30/092022</p></td>
+<td><p><font style="color:black;">V2.0</font></p></td>
+<td><p><font style="color:black;">V1.5/V2.2</font></p></td>
+<td><p><font style="color:black;">V2.1</font></p></td>
+<td><p>1. Correction of SATA parameters in the interface resources of the SoM; <br />2. Due to the shortage of SoM chips, the following chips have been replaced with new models:<br />1) The model of the network port PHY chip has been changed from AR8031 to YT8521S;<br />2) The RTC chip has been replaced from RX8010SJ to PCF8563;<br />3) The PCIE clock chip has been substituted from 9DML0441AKILFT to RC19004A100GNL.<br />3. Since the optical modules on the SoM may be<br />configured via I2C, the two optical modules are<br /> respectively connected to the I2C3 and I2C4 buses,<br />and 0R resistors are reserved to prevent address<br /> conflicts with other devices on the carrier board;<br />4. Modification of naming rules and ordering information of the SoM;<br />5. Modification of the principle description of the network part on the carrier board;<br />6. Revision of schematic diagram of the 5G part on the carrier board;<br />7. Update of interface diagram and dimension diagram of the OK104xA - C2 development board.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help users quickly familiarize themselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “ FET1046-C2 Pin Multiplexing Comparison Table”.</p>
+<p>There are total four chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. is CPU overview, briefly introducing its performance and applications;</p></li>
+<li><p>Chapter 2. is comprehensive introduction to the SoM, including connector pins explanations and function introductions;</p></li>
+<li><p>Chapter 3. is comprehensive introduction to the development board, divided into multiple chapters, including both hardware principles and simple design ideas;</p></li>
+<li><p>Chapter 4. mainly describes the board’s power consumption performance and other considerations.</p></li>
+</ul>
+<p>A description of some of the symbols and formats associated with this manual:</p>
+</section>
+<section id="nxp-qoriq-ls104xa-description">
+<h2>1. NXP QorIQ LS104xA Description<a class="headerlink" href="#nxp-qoriq-ls104xa-description" title="Link to this heading"></a></h2>
+<p>The QorIQ® LS104xA processor is a quad - core 64 - bit ARM® processor launched by NXP for embedded networks. The LS1023A (dual - core version) and LS104xA (quad - core version) can provide a performance of over 10 Gbps through a flexible I/O package that supports fanless design. This SoC is a solution specifically designed for small - form - factor network and industrial applications. It has optimized the BOM for cost - effective low - end PCB, reduced power supply costs, and adopted a single - clock design. The new 0.9V versions of the LS104xA and LS1023A can offer additional power consumption savings for wireless LAN and Power over Ethernet systems. The new 23x23 package supports a pin - compatible design and can be expanded to the LS1046A (quad - core A72 processor). The QorIQ LS104xA can enhance the performance of dual - core 32 - bit ARM products and continues the consistent I/O flexibility of the QorIQ series. It integrates the QUICC Engine® and continues to provide seamless support for HDLC, TDM, or Profibus.</p>
+<p>The CPU of the FET104xA - C SoM uses the LS1043AXE8QQB and LS1046AXE8T1A. The following is the application processing block diagram of the LS1043A and LS1046A:</p>
+<p><img alt="Image" src="_images/1720687154128_c2d0264a_5679_4c66_97b6_6d45831eca46.png" /></p>
+<p><strong>LS1043A Block Diagram</strong></p>
+<p><img alt="Image" src="_images/1720687154340_02c0c45b_9d63_4a5d_b005_9a903dd842af.png" /></p>
+<p><strong>LS1046A Block Diagram</strong></p>
+<p>For more details about the LS104xA series please visit the official NXP website: <a class="reference external" href="https://www.nxp.com/cn/products/processors-and-microcontrollers/arm-based-processors-and-mcus/qoriq-layerscape-arm-processors/qoriq-layerscape-1043a-and-1023a-multicore-communications-processors:LS1043A">https://www.nxp.com/cn/products/processors-and-microcontrollers/arm-based-processors-and-mcus/qoriq-layerscape-arm-processors/qoriq-layerscape-1043a-and-1023a-multicore-communications-processors:LS1043A</a></p>
+</section>
+<section id="fet104xa-c-som-description">
+<h2>2. FET104xA-C SoM Description<a class="headerlink" href="#fet104xa-c-som-description" title="Link to this heading"></a></h2>
+<section id="fet104xa-som-appearance">
+<h3>2.1 FET104xA SoM Appearance<a class="headerlink" href="#fet104xa-som-appearance" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1720687135565_b6c2afd7_0421_471e_a9d7_8bbbe29a29ec.png" /></p>
+<p><strong>FET1043A-C Front</strong></p>
+<p><img alt="Image" src="_images/1720687136534_d9f0cf92_2f47_4643_81a0_2ba55fa116b8.png" /></p>
+<p><strong>FET1046A-C Front</strong></p>
+</section>
+<section id="fet104xa-c-som-dimension-diagram">
+<h3>2.2 FET104xA-C SoM Dimension Diagram<a class="headerlink" href="#fet104xa-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p>The dimensions of the FET104x-C SoM are as follows:</p>
+<p><img alt="Image" src="_images/1720687136985_cd64178f_4441_4ef1_b0a9_1965f0111906.png" /></p>
+<p><img alt="Image" src="_images/1720687137291_3eb69adb_a71a_4bfb_8f93_814193949fa9.png" /></p>
+<p>Structure size: 84mm×55mm</p>
+<p>Plate making process: 2mm thickness, 12-layer immersion gold PCB.</p>
+<p>Connectors: Double-row 0.5mm pitch, 220pin board-to-board connectors. Refer to Appendix for the connector dimension diagram.</p>
+<p>Four mounting holes with a diameter of 2.7mm are reserved at the four corners of the SoM. The overall structure of the SoM complies with the COM Express® Mini Type 10 standard.</p>
+</section>
+<section id="performance-parameters">
+<h3>2.3 Performance Parameters<a class="headerlink" href="#performance-parameters" title="Link to this heading"></a></h3>
+<section id="system-main-frequency">
+<h4>2.3.1 System Main Frequency<a class="headerlink" href="#system-main-frequency" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Main Frequency</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>1600</p></td>
+<td><p>MHz</p></td>
+<td><p>LS1046 maximum 1.8G</p></td>
+</tr>
+<tr class="row-even"><td><p>RTC clock</p></td>
+<td><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>DDR clock</p></td>
+<td><p>650</p></td>
+<td><p>—</p></td>
+<td><p>1600</p></td>
+<td><p>MT/s</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>SerDes reference clock</p></td>
+<td><p>100</p></td>
+<td><p>—</p></td>
+<td><p>156.25</p></td>
+<td><p>MHz</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="power-parameter">
+<h4>2.3.2 Power Parameter<a class="headerlink" href="#power-parameter" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Parameter</strong></p></th>
+<th class="head"><p><strong>Pin Number</strong></p></th>
+<th class="head"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Main Power Supply Voltage</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>9</p></td>
+<td><p>12</p></td>
+<td><p>15</p></td>
+<td><p>V</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operating-environment">
+<h4>2.3.3 Operating Environment<a class="headerlink" href="#operating-environment" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Parameter</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Operating temperature</p></td>
+<td><p>Operating Environment</p></td>
+<td><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+80*</p></td>
+<td><p>℃</p></td>
+<td><p>Industrial-grade</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Storage Environment</p></td>
+<td><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Humidity</p></td>
+<td><p>Operating Environment</p></td>
+<td><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td><p>No condensation</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Storage Environment</p></td>
+<td><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: The maximum operating environment temperature of FET1046A-C SoM is 75 ℃.</strong></p>
+</section>
+<section id="som-interface-speed">
+<h4>2.3.4 SoM Interface Speed<a class="headerlink" href="#som-interface-speed" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Parameter</strong></p></th>
+<th class="head"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Serial Port Communication Speed</p></td>
+<td><p>—</p></td>
+<td><p>115200</p></td>
+<td><p>—</p></td>
+<td><p>bps</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>IIC Communication Speed</p></td>
+<td><p>—</p></td>
+<td><p>100</p></td>
+<td><p>400</p></td>
+<td><p>Kbps</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>SD/MMC/SDIO</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>104</p></td>
+<td><p>Mbps</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>USB interface speed</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>5</p></td>
+<td><p>Gbps</p></td>
+<td><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id1">
+<h3>2.4 SoM Interface Speed<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>FET1043 Quantity</strong></p></th>
+<th class="head text-center"><p><strong>FET1046 Quantity</strong></p></th>
+<th class="head text-center"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>QSGMII</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Maximum communication rate 5G</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SGMII</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>≤5</p></td>
+<td class="text-center"><p>The maximum supported speed is 2.5G</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RGMII</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>The maximum supported speed is 1G.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>Supports 2 x DUART or 4 x UART</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>IIC</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB3.0</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>The maximum supported speed is 5G.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>XFI</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>The maximum supported speed is 10G, up to 2 x.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>eSDHC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Supports SD3.0 EMMC4.5, shared with eMMC on the SoM.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PCIE2.0</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>The maximum supported speed is 5G.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PCIE3.0</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>The maximum supported speed is 8G.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SATA3.0</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>The maximum supported speed is 6G.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>Support NXP’s official CodeWarrior TAP debugger.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: The parameters in the table are the theoretical values of hardware design or CPU.</strong></p>
+</section>
+<section id="fet104xa-som-pins-definition">
+<h3>2.5 FET104xA SoM Pins Definition<a class="headerlink" href="#fet104xa-som-pins-definition" title="Link to this heading"></a></h3>
+<section id="fet104xa-som-pins-schematic">
+<h4>2.5.1 FET104xA SoM Pins Schematic<a class="headerlink" href="#fet104xa-som-pins-schematic" title="Link to this heading"></a></h4>
+<p><img alt="Image" src="_images/1720687137522_067c6d04_6591_4b17_878a_250b77430f37.png" /></p>
+<p><img alt="Image" src="_images/1720687137868_bb99ec8f_811b_47e5_bde2_c42eba1d3bf0.png" /></p>
+</section>
+<section id="fet104xa-som-pin-functions-description">
+<h4>2.5.2 FET104xA SoM Pin Functions Description<a class="headerlink" href="#fet104xa-som-pin-functions-description" title="Link to this heading"></a></h4>
+<p><strong>Note1:</strong></p>
+<p><strong>Num ——SoM connector pin no.:</strong></p>
+<p><strong>Ball —— CPU pin ball no.</strong></p>
+<p><strong>GPIO ——CPU pin general I/O port serial number</strong></p>
+<p><strong>Vol  —— Pin signal level</strong></p>
+<p><strong>NC——The pins are not connected.</strong></p>
+<p><strong>Note2:</strong></p>
+<p><strong>Signal Name——SoM connector network name</strong></p>
+<p><strong>Pin Description—— SoM Pin Signal Descriptions</strong></p>
+<p><strong>Default function-All pin functions of the SoM are specified according to the “default function” in the table below. Please do not modify it, otherwise it may be delivered from the factory.</strong></p>
+<p><strong>Drive conflict. If you have any questions, please contact our sales or technical support in a timely manner.</strong></p>
+<p><strong>Note3: The default function indicates that this signal only supports the LS1046A chip and the LS1043A CPU does not have this pin.</strong></p>
+<p><strong>Table 1 Connector Interface (Odd) Pin Definitions A</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head text-center"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>A1</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A2</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX3_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR3-</p></td>
+<td class="text-center"><p>EC1_TRX3_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A3</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX3_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR3+</p></td>
+<td class="text-center"><p>EC1_TRX3_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A4</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_LINK100</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.5V</p></td>
+<td class="text-center"><p>Meaningless, default output low</p></td>
+<td class="text-center"><p>EC1_LINK100</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A5</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_LINK1000</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.5V</p></td>
+<td class="text-center"><p>YT8521S Gigabit indication</p></td>
+<td class="text-center"><p>EC1_LINK1000</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A6</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX2_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR2-</p></td>
+<td class="text-center"><p>EC1_TRX2_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A7</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX2_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR2+</p></td>
+<td class="text-center"><p>EC1_TRX2_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A8</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A9</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX1_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR1-</p></td>
+<td class="text-center"><p>EC1_TRX1_N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A10</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX1_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR1+</p></td>
+<td class="text-center"><p>EC1_TRX1_P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A11</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A12</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX0_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR0-</p></td>
+<td class="text-center"><p>EC1_TRX0_N</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A13</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>EC1_TRX0_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.1V</p></td>
+<td class="text-center"><p>YT8521S TR0+</p></td>
+<td class="text-center"><p>EC1_TRX0_P</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A14</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A15</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A16</p></td>
+<td class="text-center"><p>AD19</p></td>
+<td class="text-center"><p>SD2_TX3_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A17</p></td>
+<td class="text-center"><p>AE19</p></td>
+<td class="text-center"><p>SD2_TX3_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A19</p></td>
+<td class="text-center"><p>AG19</p></td>
+<td class="text-center"><p>SD2_RX3_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>1046：SD2_RX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_RX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A20</p></td>
+<td class="text-center"><p>AH19</p></td>
+<td class="text-center"><p>SD2_RX3_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>1046：SD2_RX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_RX3_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A21</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A22</p></td>
+<td class="text-center"><p>E4</p></td>
+<td class="text-center"><p>USB1_RX_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB1_RX-</p></td>
+<td class="text-center"><p>USB1_RX_DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A23</p></td>
+<td class="text-center"><p>E3</p></td>
+<td class="text-center"><p>USB1_RX_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB1_RX+</p></td>
+<td class="text-center"><p>USB1_RX_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A24</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A25</p></td>
+<td class="text-center"><p>C4</p></td>
+<td class="text-center"><p>USB2_RX_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB2_RX-</p></td>
+<td class="text-center"><p>USB2_RX_DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A26</p></td>
+<td class="text-center"><p>C3</p></td>
+<td class="text-center"><p>USB2_RX_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB2_RX+</p></td>
+<td class="text-center"><p>USB2_RX_DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A27</p></td>
+<td class="text-center"><p>J4</p></td>
+<td class="text-center"><p>BATLOW_B</p></td>
+<td class="text-center"><p>GPIO1_24</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>General IO</p></td>
+<td class="text-center"><p>GPIO1_24</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A28</p></td>
+<td class="text-center"><p>E7</p></td>
+<td class="text-center"><p>USB1_VBUS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5.25V</p></td>
+<td class="text-center"><p>USB1 VBUS</p></td>
+<td class="text-center"><p>USB1_VBUS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A29</p></td>
+<td class="text-center"><p>C7</p></td>
+<td class="text-center"><p>USB2_VBUS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5.25V</p></td>
+<td class="text-center"><p>USB2 VBUS</p></td>
+<td class="text-center"><p>USB2_VBUS</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A30</p></td>
+<td class="text-center"><p>A7</p></td>
+<td class="text-center"><p>USB3_VBUS</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>5.25V</p></td>
+<td class="text-center"><p>USB3 VBUS</p></td>
+<td class="text-center"><p>USB3_VBUS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A31</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A32</p></td>
+<td class="text-center"><p>M3</p></td>
+<td class="text-center"><p>I2C4_SCL</p></td>
+<td class="text-center"><p>GPIO4_12</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2C4 SCL</p></td>
+<td class="text-center"><p>I2C4_SCL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A33</p></td>
+<td class="text-center"><p>N3</p></td>
+<td class="text-center"><p>I2C4_SDA</p></td>
+<td class="text-center"><p>GPIO4_13</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>I2C4 SDA</p></td>
+<td class="text-center"><p>I2C4_SDA</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A34</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A35</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A36</p></td>
+<td class="text-center"><p>A4</p></td>
+<td class="text-center"><p>USB3_RX_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB3_RX-</p></td>
+<td class="text-center"><p>USB3_RX_DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A37</p></td>
+<td class="text-center"><p>A3</p></td>
+<td class="text-center"><p>USB3_RX_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.0V</p></td>
+<td class="text-center"><p>USB3_RX+</p></td>
+<td class="text-center"><p>USB3_RX_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A38</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A39</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A40</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A41</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A42</p></td>
+<td class="text-center"><p>A6</p></td>
+<td class="text-center"><p>USB3_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB3_D-</p></td>
+<td class="text-center"><p>USB3_DM</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A43</p></td>
+<td class="text-center"><p>B6</p></td>
+<td class="text-center"><p>USB3_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB3_D+</p></td>
+<td class="text-center"><p>USB3_DP</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A44</p></td>
+<td class="text-center"><p>H6</p></td>
+<td class="text-center"><p>USB1_DRVVBUS</p></td>
+<td class="text-center"><p>GPIO4_29</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB1 DRVVBUS</p></td>
+<td class="text-center"><p>USB1_DRVVBUS</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A45</p></td>
+<td class="text-center"><p>E6</p></td>
+<td class="text-center"><p>USB1_DM</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB1_D-</p></td>
+<td class="text-center"><p>USB1_DM</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A46</p></td>
+<td class="text-center"><p>F6</p></td>
+<td class="text-center"><p>USB1_DP</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>USB1_D+</p></td>
+<td class="text-center"><p>USB1_DP</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A47</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A48</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A49</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A50</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A51</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A52</p></td>
+<td class="text-center"><p>AD15</p></td>
+<td class="text-center"><p>SD2_TX0_P*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX0_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A53</p></td>
+<td class="text-center"><p>AE15</p></td>
+<td class="text-center"><p>SD2_TX0_N*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX0_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A54</p></td>
+<td class="text-center"><p>R3</p></td>
+<td class="text-center"><p>GPIO0</p></td>
+<td class="text-center"><p>GPIO2_01</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>General IO</p></td>
+<td class="text-center"><p>GPIO0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A55</p></td>
+<td class="text-center"><p>AD16</p></td>
+<td class="text-center"><p>SD2_TX1_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX1_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX2_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A56</p></td>
+<td class="text-center"><p>AE16</p></td>
+<td class="text-center"><p>SD2_TX1_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD2_TX1_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX2_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A57</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A58</p></td>
+<td class="text-center"><p>AD11</p></td>
+<td class="text-center"><p>SD1_TX3_P*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A59</p></td>
+<td class="text-center"><p>AE11</p></td>
+<td class="text-center"><p>SD1_TX3_N*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX3_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A60</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A61</p></td>
+<td class="text-center"><p>AD10</p></td>
+<td class="text-center"><p>SD1_TX2_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX2_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX1_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A62</p></td>
+<td class="text-center"><p>AE10</p></td>
+<td class="text-center"><p>SD1_TX2_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX2_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX1_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A63</p></td>
+<td class="text-center"><p>T3</p></td>
+<td class="text-center"><p>GPIO1</p></td>
+<td class="text-center"><p>GPIO2_02</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>General IO</p></td>
+<td class="text-center"><p>GPIO1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A64</p></td>
+<td class="text-center"><p>AD8</p></td>
+<td class="text-center"><p>SD1_TX1_P*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX1_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A65</p></td>
+<td class="text-center"><p>AE8</p></td>
+<td class="text-center"><p>SD1_TX1_N*</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX1_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：NC</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A66</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A67</p></td>
+<td class="text-center"><p>V1</p></td>
+<td class="text-center"><p>GPIO2</p></td>
+<td class="text-center"><p>GPIO3_13</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>General IO</p></td>
+<td class="text-center"><p>GPIO2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A68</p></td>
+<td class="text-center"><p>AD6</p></td>
+<td class="text-center"><p>SD1_TX0_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX0_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX0_P</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A69</p></td>
+<td class="text-center"><p>AE6</p></td>
+<td class="text-center"><p>SD1_TX0_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.35V</p></td>
+<td class="text-center"><p>1046：SD1_TX0_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>1043：SD1_TX0_N</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A70</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A71</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A72</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A73</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A74</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A75</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A76</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A77</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A78</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A79</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A80</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A81</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A82</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A83</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A84</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A85</p></td>
+<td class="text-center"><p>C20</p></td>
+<td class="text-center"><p>GPIO3</p></td>
+<td class="text-center"><p>GPIO2_12</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>General IO</p></td>
+<td class="text-center"><p>GPIO3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A86</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>SD1_REFCLK_SEL</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>SERDES1 clock selection</p></td>
+<td class="text-center"><p>SD1_REFCLK_SEL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A87</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A88</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_P</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>PCIE_REFCLK+</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_P</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A89</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_N</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>PCIE_REFCLK-</p></td>
+<td class="text-center"><p>PCIE_REFCLK_S_N</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A90</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A91</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A92</p></td>
+<td class="text-center"><p>G17</p></td>
+<td class="text-center"><p>CPU_TDI_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TDI</p></td>
+<td class="text-center"><p>CPU_TDI_18</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A93</p></td>
+<td class="text-center"><p>B18</p></td>
+<td class="text-center"><p>GPIO4</p></td>
+<td class="text-center"><p>GPIO2_13</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>General IO</p></td>
+<td class="text-center"><p>GPIO4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A94</p></td>
+<td class="text-center"><p>E18</p></td>
+<td class="text-center"><p>CPU_TCK_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TCK</p></td>
+<td class="text-center"><p>CPU_TCK_18</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A95</p></td>
+<td class="text-center"><p>G18</p></td>
+<td class="text-center"><p>CPU_TMS_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TMS</p></td>
+<td class="text-center"><p>CPU_TMS_18</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A96</p></td>
+<td class="text-center"><p>E20</p></td>
+<td class="text-center"><p>CPU_TDO_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_TDO</p></td>
+<td class="text-center"><p>CPU_TDO_18</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A97</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A98</p></td>
+<td class="text-center"><p>H1</p></td>
+<td class="text-center"><p>UART1_SOUT</p></td>
+<td class="text-center"><p>GPIO1_15</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1_TX</p></td>
+<td class="text-center"><p>UART1_SOUT</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A99</p></td>
+<td class="text-center"><p>H2</p></td>
+<td class="text-center"><p>UART1_SIN</p></td>
+<td class="text-center"><p>GPIO1_17</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART1_RX</p></td>
+<td class="text-center"><p>UART1_SIN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A100</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A101</p></td>
+<td class="text-center"><p>L2</p></td>
+<td class="text-center"><p>UART2_SOUT</p></td>
+<td class="text-center"><p>GPIO1_16</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART2_TX</p></td>
+<td class="text-center"><p>UART2_SOUT</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A102</p></td>
+<td class="text-center"><p>K1</p></td>
+<td class="text-center"><p>UART2_SIN</p></td>
+<td class="text-center"><p>GPIO1_18</p></td>
+<td class="text-center"><p>3.3V</p></td>
+<td class="text-center"><p>UART2_RX</p></td>
+<td class="text-center"><p>UART2_SIN</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A103</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>CPU_TRST_B_18</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>1.8V</p></td>
+<td class="text-center"><p>JTAG_RST</p></td>
+<td class="text-center"><p>CPU_TRST_B_18</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A104</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>SoM power supply</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A105</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>SoM power supply</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A106</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>SoM power supply</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A107</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>SoM power supply</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A108</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>SoM power supply</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>A109</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>12V</p></td>
+<td class="text-center"><p>SoM power supply</p></td>
+<td class="text-center"><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>A110</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td class="text-center"><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2 Connector interface pin definition B</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>NUM</p></th>
+<th class="head"><p>BALL</p></th>
+<th class="head"><p>Signal Name</p></th>
+<th class="head"><p>GPIO</p></th>
+<th class="head"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head"><p>Deflaut Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>B1</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B2</p></td>
+<td><p>-</p></td>
+<td><p>EC1_ACT</p></td>
+<td><p>-</p></td>
+<td><p>1.5V</p></td>
+<td><p>YT8521S effective indication</p></td>
+<td><p>EC1_ACT</p></td>
+</tr>
+<tr class="row-even"><td><p>B3</p></td>
+<td><p>AE4</p></td>
+<td><p>EC2_TXD1</p></td>
+<td><p>GPIO3_17</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD1</p></td>
+<td><p>EC2_TXD1</p></td>
+</tr>
+<tr class="row-odd"><td><p>B4</p></td>
+<td><p>AE1</p></td>
+<td><p>EC2_RXD1</p></td>
+<td><p>GPIO3_24</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD1</p></td>
+<td><p>EC2_RXD1</p></td>
+</tr>
+<tr class="row-even"><td><p>B5</p></td>
+<td><p>AF3</p></td>
+<td><p>EC2_TXD0</p></td>
+<td><p>GPIO3_18</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD0</p></td>
+<td><p>EC2_TXD0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B6</p></td>
+<td><p>AE3</p></td>
+<td><p>EC2_TXD2</p></td>
+<td><p>GPIO3_16</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD2</p></td>
+<td><p>EC2_TXD2</p></td>
+</tr>
+<tr class="row-even"><td><p>B7</p></td>
+<td><p>AD3</p></td>
+<td><p>EC2_TXD3</p></td>
+<td><p>GPIO3_15</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXD3</p></td>
+<td><p>EC2_TXD3</p></td>
+</tr>
+<tr class="row-odd"><td><p>B8</p></td>
+<td><p>AF1</p></td>
+<td><p>EC2_RX_DV</p></td>
+<td><p>GPIO3_27</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RX_DV</p></td>
+<td><p>EC2_RX_DV</p></td>
+</tr>
+<tr class="row-even"><td><p>B9</p></td>
+<td><p>AE2</p></td>
+<td><p>EC2_RXD0</p></td>
+<td><p>GPIO3_25</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD0</p></td>
+<td><p>EC2_RXD0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B10</p></td>
+<td><p>AC1</p></td>
+<td><p>EC2_RX_CLK</p></td>
+<td><p>GPIO3_26</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RX_CLK</p></td>
+<td><p>EC2_RX_CLK</p></td>
+</tr>
+<tr class="row-even"><td><p>B11</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B12</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B13</p></td>
+<td><p>AD1</p></td>
+<td><p>EC2_RXD2</p></td>
+<td><p>GPIO3_23</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD2</p></td>
+<td><p>EC2_RXD2</p></td>
+</tr>
+<tr class="row-odd"><td><p>B14</p></td>
+<td><p>AC2</p></td>
+<td><p>EC2_RXD3</p></td>
+<td><p>GPIO3_22</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII RXD3</p></td>
+<td><p>EC2_RXD3</p></td>
+</tr>
+<tr class="row-even"><td><p>B15</p></td>
+<td><p>AG3</p></td>
+<td><p>EC2_TXEN</p></td>
+<td><p>GPIO3_19</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII TXEN</p></td>
+<td><p>EC2_TXEN</p></td>
+</tr>
+<tr class="row-odd"><td><p>B16</p></td>
+<td><p>AD18</p></td>
+<td><p>SD2_TX2_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.35V</p></td>
+<td><p>1046:SD2_TX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B17</p></td>
+<td><p>AE18</p></td>
+<td><p>SD2_TX2_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.35V</p></td>
+<td><p>1046:SD2_TX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B18</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B19</p></td>
+<td><p>AG18</p></td>
+<td><p>SD2_RX2_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD2_RX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B20</p></td>
+<td><p>AH18</p></td>
+<td><p>SD2_RX2_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD2_RX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B21</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B22</p></td>
+<td><p>F2</p></td>
+<td><p>USB1_TX_DM</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB1 TX-</p></td>
+<td><p>USB1_TX_DM</p></td>
+</tr>
+<tr class="row-even"><td><p>B23</p></td>
+<td><p>F1</p></td>
+<td><p>USB1_TX_DP</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB1 TX+</p></td>
+<td><p>USB1_TX_DP</p></td>
+</tr>
+<tr class="row-odd"><td><p>B24</p></td>
+<td><p>-</p></td>
+<td><p>PWR_OK</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+<td><p>Carrier board power-on normal signal</p></td>
+<td><p>PWR_OK</p></td>
+</tr>
+<tr class="row-even"><td><p>B25</p></td>
+<td><p>D2</p></td>
+<td><p>USB2_TX_DM</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB2 TX-</p></td>
+<td><p>USB2_TX_DM</p></td>
+</tr>
+<tr class="row-odd"><td><p>B26</p></td>
+<td><p>D1</p></td>
+<td><p>USB2_TX_DP</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB2 TX+</p></td>
+<td><p>USB2_TX_DP</p></td>
+</tr>
+<tr class="row-even"><td><p>B27</p></td>
+<td><p>F10</p></td>
+<td><p>RESET_REQ_B_18</p></td>
+<td><p>-</p></td>
+<td><p>1.8V</p></td>
+<td><p>CPU reset output</p></td>
+<td><p>RESET_REQ_B_18</p></td>
+</tr>
+<tr class="row-odd"><td><p>B28</p></td>
+<td><p>AC4</p></td>
+<td><p>EC2_GTX_CLK</p></td>
+<td><p>GPIO3_20</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII GTX_CLK</p></td>
+<td><p>EC2_GTX_CLK</p></td>
+</tr>
+<tr class="row-even"><td><p>B29</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B30</p></td>
+<td><p>AG4</p></td>
+<td><p>EC2_GTX_CLK125</p></td>
+<td><p>GPIO3_21</p></td>
+<td><p>1.8V</p></td>
+<td><p>RGMII CLK125</p></td>
+<td><p>EC2_GTX_CLK125</p></td>
+</tr>
+<tr class="row-even"><td><p>B31</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B32</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B33</p></td>
+<td><p>L4</p></td>
+<td><p>I2C3_SCL</p></td>
+<td><p>GPIO4_10</p></td>
+<td><p>3.3V</p></td>
+<td><p>I2C3 SCL</p></td>
+<td><p>I2C3_SCL</p></td>
+</tr>
+<tr class="row-odd"><td><p>B34</p></td>
+<td><p>M4</p></td>
+<td><p>I2C3_SDA</p></td>
+<td><p>GPIO4_11</p></td>
+<td><p>3.3V</p></td>
+<td><p>I2C3 SDA</p></td>
+<td><p>I2C3_SDA</p></td>
+</tr>
+<tr class="row-even"><td><p>B35</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B36</p></td>
+<td><p>B2</p></td>
+<td><p>USB3_TX_DM</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB3 TX-</p></td>
+<td><p>USB3_TX_DM</p></td>
+</tr>
+<tr class="row-even"><td><p>B37</p></td>
+<td><p>B1</p></td>
+<td><p>USB3_TX_DP</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>USB3 TX+</p></td>
+<td><p>USB3_TX_DP</p></td>
+</tr>
+<tr class="row-odd"><td><p>B38</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B39</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B40</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B41</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B42</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B43</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B44</p></td>
+<td><p>G6</p></td>
+<td><p>USB1_PWRFAULT</p></td>
+<td><p>GPIO4_30</p></td>
+<td><p>3.3V</p></td>
+<td><p>USB power error detection</p></td>
+<td><p>USB1_PWRFAULT</p></td>
+</tr>
+<tr class="row-even"><td><p>B45</p></td>
+<td><p>C6</p></td>
+<td><p>USB2_DM</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>USB2_D-</p></td>
+<td><p>USB2_DM</p></td>
+</tr>
+<tr class="row-odd"><td><p>B46</p></td>
+<td><p>D6</p></td>
+<td><p>USB2_DP</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>USB2_D+</p></td>
+<td><p>USB2_DP</p></td>
+</tr>
+<tr class="row-even"><td><p>B47</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B48</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B49</p></td>
+<td><p>-</p></td>
+<td><p>SYS_RESET_B</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>System reset input</p></td>
+<td><p>SYS_RESET_B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B50</p></td>
+<td><p>-</p></td>
+<td><p>CB_RESET_B</p></td>
+<td><p>-</p></td>
+<td><p>3.3V</p></td>
+<td><p>System reset output</p></td>
+<td><p>CB_RESET_B</p></td>
+</tr>
+<tr class="row-even"><td><p>B51</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>B52</p></td>
+<td><p>AG15</p></td>
+<td><p>SD2_RX0_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD2_RX0_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B53</p></td>
+<td><p>AH15</p></td>
+<td><p>SD2_RX0_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD2_RX0_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B54</p></td>
+<td><p>D17</p></td>
+<td><p>GPIO5</p></td>
+<td><p>GPIO2_14</p></td>
+<td><p>1.8V</p></td>
+<td><p>General IO</p></td>
+<td><p>GPIO5</p></td>
+</tr>
+<tr class="row-even"><td><p>B55</p></td>
+<td><p>AG16</p></td>
+<td><p>SD2_RX1_P</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD2_RX1_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043:SD1_RX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B56</p></td>
+<td><p>AH16</p></td>
+<td><p>SD2_RX1_N</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD2_RX1_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043:SD1_RX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B57</p></td>
+<td><p>E17</p></td>
+<td><p>GPIO6</p></td>
+<td><p>GPIO2_15</p></td>
+<td><p>1.8V</p></td>
+<td><p>General IO</p></td>
+<td><p>GPIO6</p></td>
+</tr>
+<tr class="row-odd"><td><p>B58</p></td>
+<td><p>AG11</p></td>
+<td><p>SD1_RX3_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX3_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B59</p></td>
+<td><p>AH11</p></td>
+<td><p>SD1_RX3_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX3_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B60</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B61</p></td>
+<td><p>AG10</p></td>
+<td><p>SD1_RX2_P</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX2_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043:SD1_RX1_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B62</p></td>
+<td><p>AH10</p></td>
+<td><p>SD1_RX2_N</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX2_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043:SD1_RX1_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>B63</p></td>
+<td><p>W3</p></td>
+<td><p>GPIO7</p></td>
+<td><p>GPIO1_31</p></td>
+<td><p>1.8V</p></td>
+<td><p>General IO</p></td>
+<td><p>GPIO7</p></td>
+</tr>
+<tr class="row-odd"><td><p>B64</p></td>
+<td><p>AG8</p></td>
+<td><p>SD1_RX1_P*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX1_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B65</p></td>
+<td><p>AH8</p></td>
+<td><p>SD1_RX1_N*</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX1_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043：NC</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B66</p></td>
+<td><p>L3</p></td>
+<td><p>SD_WP</p></td>
+<td><p>GPIO4_03</p></td>
+<td><p>3.3V</p></td>
+<td><p>SD card write protection</p></td>
+<td><p>SD_WP</p></td>
+</tr>
+<tr class="row-even"><td><p>B67</p></td>
+<td><p>K3</p></td>
+<td><p>SD_CD_B</p></td>
+<td><p>GPIO4_02</p></td>
+<td><p>3.3V</p></td>
+<td><p>SD plug detection</p></td>
+<td><p>SD_CD_B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B68</p></td>
+<td><p>AG6</p></td>
+<td><p>SD1_RX0_P</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX0_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043:SD1_RX0_P</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B69</p></td>
+<td><p>AH6</p></td>
+<td><p>SD1_RX0_N</p></td>
+<td><p>-</p></td>
+<td><p>1.0V</p></td>
+<td><p>1046:SD1_RX0_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1043:SD1_RX0_N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B70</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B71</p></td>
+<td><p>AG2</p></td>
+<td><p>MDC1</p></td>
+<td><p>GPIO3_00</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDC1</p></td>
+<td><p>MDC1</p></td>
+</tr>
+<tr class="row-odd"><td><p>B72</p></td>
+<td><p>AF2</p></td>
+<td><p>MDIO1</p></td>
+<td><p>GPIO3_01</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDIO1</p></td>
+<td><p>MDIO1</p></td>
+</tr>
+<tr class="row-even"><td><p>B73</p></td>
+<td><p>AH4</p></td>
+<td><p>MDC2</p></td>
+<td><p>GPIO4_00</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDC2</p></td>
+<td><p>MDC2</p></td>
+</tr>
+<tr class="row-odd"><td><p>B74</p></td>
+<td><p>AH3</p></td>
+<td><p>MDIO2</p></td>
+<td><p>GPIO4_01</p></td>
+<td><p>1.8V</p></td>
+<td><p>MDIO2</p></td>
+<td><p>MDIO2</p></td>
+</tr>
+<tr class="row-even"><td><p>B75</p></td>
+<td><p>J2</p></td>
+<td><p>UART3_SOUT</p></td>
+<td><p>GPIO1_19</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 TX</p></td>
+<td><p>UART3_SOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>B76</p></td>
+<td><p>J1</p></td>
+<td><p>UART3_SIN</p></td>
+<td><p>GPIO1_21</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART3 RX</p></td>
+<td><p>UART3_SIN</p></td>
+</tr>
+<tr class="row-even"><td><p>B77</p></td>
+<td><p>L1</p></td>
+<td><p>UART4_SOUT</p></td>
+<td><p>GPIO1_20</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART4 TX</p></td>
+<td><p>UART4_SOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>B78</p></td>
+<td><p>M2</p></td>
+<td><p>UART4_SIN</p></td>
+<td><p>GPIO1_22</p></td>
+<td><p>3.3V</p></td>
+<td><p>UART4 RX</p></td>
+<td><p>UART4_SIN</p></td>
+</tr>
+<tr class="row-even"><td><p>B79</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B80</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B81</p></td>
+<td><p>J5</p></td>
+<td><p>IRQ5_GPIO1_25</p></td>
+<td><p>GPIO1_25</p></td>
+<td><p>3.3V</p></td>
+<td><p>General IO</p></td>
+<td><p>GPIO1_25</p></td>
+</tr>
+<tr class="row-odd"><td><p>B82</p></td>
+<td><p>K5</p></td>
+<td><p>IRQ6_GPIO1_26</p></td>
+<td><p>GPIO1_26</p></td>
+<td><p>3.3V</p></td>
+<td><p>General IO</p></td>
+<td><p>GPIO1_26</p></td>
+</tr>
+<tr class="row-even"><td><p>B83</p></td>
+<td><p>L5</p></td>
+<td><p>IRQ7_GPIO1_27</p></td>
+<td><p>GPIO1_27</p></td>
+<td><p>3.3V</p></td>
+<td><p>Interrupt input</p></td>
+<td><p>IRQ7_GPIO1_27</p></td>
+</tr>
+<tr class="row-odd"><td><p>B84</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B85</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B86</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B87</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B88</p></td>
+<td><p>M5</p></td>
+<td><p>IRQ8_GPIO1_28</p></td>
+<td><p>GPIO1_28</p></td>
+<td><p>3.3V</p></td>
+<td><p>Interrupt input</p></td>
+<td><p>IRQ8_GPIO1_28</p></td>
+</tr>
+<tr class="row-even"><td><p>B89</p></td>
+<td><p>N5</p></td>
+<td><p>IRQ9_GPIO1_29</p></td>
+<td><p>GPIO1_29</p></td>
+<td><p>3.3V</p></td>
+<td><p>General IO</p></td>
+<td><p>GPIO1_29</p></td>
+</tr>
+<tr class="row-odd"><td><p>B90</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B91</p></td>
+<td><p>P4</p></td>
+<td><p>IRQ10_GPIO1_30</p></td>
+<td><p>GPIO1_30</p></td>
+<td><p>3.3V</p></td>
+<td><p>Interrupt input</p></td>
+<td><p>IRQ10_GPIO1_30</p></td>
+</tr>
+<tr class="row-odd"><td><p>B92</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-even"><td><p>B93</p></td>
+<td><p>A16</p></td>
+<td><p>BOOT_SEL0</p></td>
+<td><p>-</p></td>
+<td><p>1.8V</p></td>
+<td><p>Enable the options</p></td>
+<td><p>BOOT_SEL0</p></td>
+</tr>
+<tr class="row-odd"><td><p>B94</p></td>
+<td><p>P3</p></td>
+<td><p>SD_CLK</p></td>
+<td><p>GPIO2_09</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD CLK</p></td>
+<td><p>SD_CLK</p></td>
+</tr>
+<tr class="row-even"><td><p>B95</p></td>
+<td><p>P2</p></td>
+<td><p>SD_CMD</p></td>
+<td><p>GPIO2_04</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD CMD</p></td>
+<td><p>SD_CMD</p></td>
+</tr>
+<tr class="row-odd"><td><p>B96</p></td>
+<td><p>P1</p></td>
+<td><p>SD_DATA0</p></td>
+<td><p>GPIO2_05</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA0</p></td>
+<td><p>SD_DATA0</p></td>
+</tr>
+<tr class="row-even"><td><p>B97</p></td>
+<td><p>R2</p></td>
+<td><p>SD_DATA1</p></td>
+<td><p>GPIO2_06</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA1</p></td>
+<td><p>SD_DATA1</p></td>
+</tr>
+<tr class="row-odd"><td><p>B98</p></td>
+<td><p>R1</p></td>
+<td><p>SD_DATA2</p></td>
+<td><p>GPIO2_07</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA2</p></td>
+<td><p>SD_DATA2</p></td>
+</tr>
+<tr class="row-even"><td><p>B99</p></td>
+<td><p>T1</p></td>
+<td><p>SD_DATA3</p></td>
+<td><p>GPIO2_08</p></td>
+<td><p>1.8V/3.3V</p></td>
+<td><p>SD DATA3</p></td>
+<td><p>SD_DATA3</p></td>
+</tr>
+<tr class="row-odd"><td><p>B100</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>B101</p></td>
+<td><p>A19</p></td>
+<td><p>FAN_PWMOUT</p></td>
+<td><p>GPIO2_10</p></td>
+<td><p>1.8V</p></td>
+<td><p>Fan control</p></td>
+<td><p>FAN_PWMOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>B102</p></td>
+<td><p>D20</p></td>
+<td><p>FAN_TACHIN</p></td>
+<td><p>GPIO2_11</p></td>
+<td><p>1.8V</p></td>
+<td><p>Fan speed detection</p></td>
+<td><p>FAN_TACHIN</p></td>
+</tr>
+<tr class="row-even"><td><p>B103</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td><p>B104</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>SoM power supply</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td><p>B105</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>SoM power supply</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td><p>B106</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>SoM power supply</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td><p>B107</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>SoM power supply</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td><p>B108</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>SoM power supply</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-even"><td><p>B109</p></td>
+<td><p>-</p></td>
+<td><p>VCC_12V</p></td>
+<td><p>-</p></td>
+<td><p>12V</p></td>
+<td><p>SoM power supply</p></td>
+<td><p>VCC_12V</p></td>
+</tr>
+<tr class="row-odd"><td><p>B110</p></td>
+<td><p>-</p></td>
+<td><p>GND</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p>Ground</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="ok104xa-c2-development-platform-description">
+<h2>3. OK104xA-C2 Development Platform Description<a class="headerlink" href="#ok104xa-c2-development-platform-description" title="Link to this heading"></a></h2>
+<section id="ok104xa-c2-development-board-interface-diagram">
+<h3>3.1 OK104xA-C2 Development Board Interface Diagram<a class="headerlink" href="#ok104xa-c2-development-board-interface-diagram" title="Link to this heading"></a></h3>
+<p>The Forlinx OK104xA-C2 development platform consists of a System on Module (SoM) and a carrier board connected by connectors. The carrier board is compatible with both the FET1043A-C and FET1046A-C SoMs. Therefore, the term “OK104xA-C2” is displayed on the PCB silkscreen and is also used as the name of the development board in this document. This term serves as a general reference for the CPU series with which this product is compatible. The main interfaces of the OK104xA - C2 development board are shown in the following figure:</p>
+<p><img alt="Image" src="_images/1720687055019_7cef6a6f_24c4_4dfb_8137_48d66514697e.jpeg" /><img alt="Image" src="_images/1720687055510_eee05d9b_1fa7_4e98_98d0_903fda6542d3.jpeg" /></p>
+</section>
+<section id="ok104xa-c2-development-board-dimension-diagram">
+<h3>3.2 OK104xA-C2 Development Board Dimension Diagram<a class="headerlink" href="#ok104xa-c2-development-board-dimension-diagram" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1720687055907_649ff44d_9e8b_462b_8155_4649cb09b942.png" /></p>
+<p>PCB Size: 200mm × 150mm</p>
+<p>Plate making process: thickness 2mm, 6-layer PCB.</p>
+<p>Power supply voltage: DC 12V.</p>
+<p>Fixing hole diameter: 3.2mm</p>
+</section>
+<section id="carrier-board-naming-rules">
+<h3>3.3 Carrier Board Naming Rules<a class="headerlink" href="#carrier-board-naming-rules" title="Link to this heading"></a></h3>
+<p>A - B - C + D E F : G - H</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Field Description</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>Product Line Identification</p></td>
+<td><p>OK</p></td>
+<td><p>Forlinx Embedded carrier board/development board</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>TCU</p></td>
+<td><p>Forlinx embedded charging control unit</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>Segment Identification</p></td>
+<td><p>-</p></td>
+<td><p>When the first digit of the CPU value is a letter,<br />connect the product line identifier to the CPU with “-“;<br />when the first digit of the CPU value is a number, omit “-“.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>CPU</p></td>
+<td><p>2440</p></td>
+<td><p>S3C2440</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>2416</p></td>
+<td><p>S3C2416</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>6410</p></td>
+<td><p>S3C6410</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>210</p></td>
+<td><p>S5pV210</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>335x</p></td>
+<td><p>AM335x</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX6x</p></td>
+<td><p>The x stands for a carrier board that is compatible with multiple CPU,<br />and X is described according to the specific product.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>i.MX6Q/QP/DP/DL/D</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX6UL</p></td>
+<td><p>i.MX6UL</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx18</p></td>
+<td><p>S5p4418 / S5p6818</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>5718</p></td>
+<td><p>AM5718</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>1052</p></td>
+<td><p>i.MX RT1052</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>1061</p></td>
+<td><p>i.MX RT1061</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>1012A</p></td>
+<td><p>LS1012A</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>104xA</p></td>
+<td><p>LS1043A/LS1046A</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>A40i</p></td>
+<td><p>A40i</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>T3</p></td>
+<td><p>T3</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX8MM</p></td>
+<td><p>i.MX8M Mini</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX8MQ</p></td>
+<td><p>i.MX8MQ</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>MX8MPQ</p></td>
+<td><p>i.MX8MPQ</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>T507</p></td>
+<td><p>T507</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>1028A</p></td>
+<td><p>LS1028A</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>3519A</p></td>
+<td><p>Hi3519</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>3399</p></td>
+<td><p>RK3399/3399K</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>3568</p></td>
+<td><p>RK3568/3568J</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>G2LD</p></td>
+<td><p>RZ/G2LD</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>6254</p></td>
+<td><p>AM6254</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>Segment Identification</p></td>
+<td><p>-</p></td>
+<td><p>Parameter segment sign</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>Connection</p></td>
+<td><p>Sx</p></td>
+<td><p>Edge Connector</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>Dx</p></td>
+<td><p>Pin connection</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Cx</p></td>
+<td><p>Board-to-board Connector</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>Gx</p></td>
+<td><p>Golden-finger</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p><strong>Note: The content of x is null or 2 ~ N to distinguish different products with the same connection mode</strong>.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>Segment Identification</p></td>
+<td><p>+</p></td>
+<td><p></p></td>
+<td><p>The configuration parameter section follows this identifier.</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+<td><p>Type Identification</p></td>
+<td><p>M</p></td>
+<td><p></p></td>
+<td><p>Carrier board (<strong>Note: carrier board identification M, not filled by default.</strong>)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>E</p></td>
+<td><p></p></td>
+<td><p>Expansion boards (including Bluetooth boards, Wi - Fi boards, RS - 232 boards, RS - 485 boards, antenna boards, interface boards, etc.).<br />The type identifiers of all specifications belong to the expansion board category denoted as “E”,<br />and it is not allowed to arbitrarily assign letter identifiers. <br />For example, if there are 2 x RS - 485 expansion boards at the same time,<br />the numbers 1 and 2 are marked after “E” in the specifications<br />to represent each specific expansion board respectively. <br />Examples: Name: OKMX6Q-C RS485 Expansion Board<br />Specification: OKMX6Q-C + E2-485: 10 stands for the second 485 expansion board)</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>L</p></td>
+<td><p></p></td>
+<td><p>Light board</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>D</p></td>
+<td><p></p></td>
+<td><p>Display board</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>K</p></td>
+<td><p></p></td>
+<td><p>Key board</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>P</p></td>
+<td><p></p></td>
+<td><p>Power board</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>Operating temperature</p></td>
+<td><p>C</p></td>
+<td><p></p></td>
+<td><p>0 to 70℃ commercial-grade</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>E</p></td>
+<td><p></p></td>
+<td><p>-20 to 85℃ extended commercial grade</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>I</p></td>
+<td><p></p></td>
+<td><p>-40 to 85℃ industrial  level</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>A</p></td>
+<td><p></p></td>
+<td><p>-40 to 125℃ vehicle level</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>PCB Version</p></td>
+<td><p>10</p></td>
+<td><p></p></td>
+<td><p>V1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx</p></td>
+<td><p></p></td>
+<td><p>Vx.x</p></td>
+</tr>
+<tr class="row-even"><td><p>:</p></td>
+<td><p>Separator</p></td>
+<td><p>:</p></td>
+<td><p></p></td>
+<td><p>It’s followed by the manufacture’s internal identification.</p></td>
+</tr>
+<tr class="row-odd"><td><p>G</p></td>
+<td><p>Connector origin</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+<td><p>Chinese-made connector</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+<td><p>Imported connector</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>N</p></td>
+<td><p></p></td>
+<td><p>No differentiation/no connector</p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>Connector</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+<td><p>Grade mark connector</p></td>
+</tr>
+<tr class="row-odd"><td><p>H</p></td>
+<td><p>Grade Identification</p></td>
+<td><p>PC</p></td>
+<td><p></p></td>
+<td><p>Prototype sample</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Blank</p></td>
+<td><p></p></td>
+<td><p>Mass Production</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>SC</p></td>
+<td><p></p></td>
+<td><p>Special-purpose use: According to the customer’s special<br />requirements for special modifications (according to a function to modify a material, etc.)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="carrier-board-resources">
+<h3>3.4 Carrier Board Resources<a class="headerlink" href="#carrier-board-resources" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Function</p></th>
+<th class="head text-center"><p>Quantity</p></th>
+<th class="head text-center"><p>Parameter 5</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>RGMII</p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>10/10/1000Mbps adaptive，RJ-45 interface</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SGMII<sup>3</sup></p></td>
+<td class="text-center"><p>3</p></td>
+<td class="text-center"><p>10/10/1000Mbps adaptive，RJ-45 interface</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB 3.0</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>The maximum supported speed is 5G.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TF Card</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Mini PCIE<sup>1</sup></p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>External SATA hard drive</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PCIE X1<sup>2</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>The maximum supported speed is 5G.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RTC</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>On-board CR2032 battery</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>3</p></td>
+<td class="text-center"><p>TTL level</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RS232</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>Debugging serial port</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>Support NXP’s official CodeWarrior TAP debugger.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SFP<sup>4</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>Supports XFI 10G</p></td>
+</tr>
+</tbody>
+</table>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>The LS1043A can only be used as a mini PCIE;</strong></p></li>
+<li><p><strong>Only the LS1046A supports it;</strong></p></li>
+<li><p><strong>The LS1043A only supports 2 x, which are P26 and P27 on the carrier board;</strong></p></li>
+<li><p><strong>The LS1043A only supports 1 x, which is P28 on the carrier board;</strong></p></li>
+<li><p><strong>The parameters in the table are the hardware design or CPU theoretical values.</strong></p></li>
+</ul>
+</section>
+<section id="ok104xa-c2-carrier-board-description">
+<h3>3.5 OK104xA- C2 Carrier Board Description<a class="headerlink" href="#ok104xa-c2-carrier-board-description" title="Link to this heading"></a></h3>
+<p><strong>Note: The component UID with “_DNP” mark in the diagram below represents it is not soldered by default.</strong></p>
+<section id="carrier-board-power">
+<h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
+<p>The carrier board is powered by a DC 12V supply, which is introduced through the DC - 005 socket (P10) or the 2 - pin 5.08mm terminal (P11). The power - on switch of the whole board is realized by using S1 to control the Q3 MOSFET, which can reduce the oxidation of the switch contacts caused by the large current at the moment of power - on and prolong the service life of the switch.</p>
+<p>Discharge resistors are added before and after the switch to ensure that the capacitor voltage can be quickly discharged after the switch is turned off.</p>
+</section>
+<section id="reset">
+<h4>3.5.2 Reset<a class="headerlink" href="#reset" title="Link to this heading"></a></h4>
+<p>The tactile switch K1 on the left side of the development board can reset the CPU and peripheral chips when pressed.</p>
+<p>RESET_REQ_B_18 is a reset request signal output by the CPU. When the CPU has an abnormal situation (such as when the watchdog is triggered), this signal will be pulled low. When the CPU startup process is abnormal, the RESET_REQ_B_18 signal should be delayed for a specific period before resetting the CPU. This delay allows sufficient time for JTAG to control the CPU. Therefore, it is advisable to include a reset delay chip similar to the component labeled U13 in the reference design.</p>
+<p>There are a total of 4 reset - related pins led out from the SoM, namely CPU_TRST_B_18, RESET_REQ_B_18, SYS_RESET_B, and CB_RESET_B.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CPU_TRST_B_18</p></td>
+<td><p>JTAG reset, reset CPU and CB _ RESET _ B at the same time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>RESET_REQ_B_18</p></td>
+<td><p>CPU abnormal reset output.</p></td>
+</tr>
+<tr class="row-even"><td><p>SYS_RESET_B</p></td>
+<td><p>Reset the input of the SoM and reset CB_RESET_B at the same time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CB_RESET_B</p></td>
+<td><p>SoM reset output, used to reset the carrier board peripheral chip.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="boot-configuration">
+<h4>3.5.3 Boot Configuration<a class="headerlink" href="#boot-configuration" title="Link to this heading"></a></h4>
+<p>The LS104xA CPU uses RCW (Reset configuration word) to select the boot option, while the FET104xA-C2 SoM defaults to booting from QSPI NOR Flash (with the carrier board BOO_SEL0 floated).</p>
+<p>Boot Configuration Schematic</p>
+<p><img alt="Image" src="_images/1720687056764_14bb8dc7_b284_4523_9237_5b129b81782c.png" /></p>
+<p>PCB silk screen</p>
+<p>S2 DIP switch description:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>PCB silk screen</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>BOOT_SEL0</p></td>
+<td><p>OFF(1):QSPI start (default)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>ON(0)：SD/EMMC start</p></td>
+</tr>
+<tr class="row-even"><td><p>B</p></td>
+<td><p>SD1_REFCLK_SEL</p></td>
+<td><p>OFF(1): 156.25Mhz reference clock (deflaut)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>ON(0): 100MHz reference clock</p></td>
+</tr>
+</tbody>
+</table>
+<p>SD1_REFCLK_SEL controls the reference clock of SD1_REFCLK2 (CPU ball numbers are AA8 and AB8). Please select this clock source according to the specific configuration of SerDes.</p>
+<p>In the SD/EMMC boot mode, the SD card insertion detection pin SD_CD_B controls whether to boot from the SD card or the EMMC. After inserting the SD card, the SD_CD_B pin is pulled low, and the CPU boots from the SD card. When the SD card is not inserted, the SD_CD_B pin is pulled high by default, and the CPU boots from the on - board EMMC of the SoM.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Signal</p></th>
+<th class="head"><p>Status</p></th>
+<th class="head"><p>Mode</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SD_CD_B</p></td>
+<td><p>0</p></td>
+<td><p>SD Card</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>1</p></td>
+<td><p>EMMC</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="serial-port">
+<h4>3.5.4 Serial Port<a class="headerlink" href="#serial-port" title="Link to this heading"></a></h4>
+<p>The P20 is a standard 9-pin RS-232 interface using a DB9 male connector to connect to a PC. If the computer does not have an RS-232 serial port, you can use the USB to serial port module to export the serial port.</p>
+<p>P14, P15 and P17 are UART2, UART3 and UART4 3.3V TTL serial ports respectively.</p>
+<p><strong>Note: To facilitate subsequent debugging, please lead out this debugging serial port when designing the carrier board by yourself.</strong></p>
+</section>
+<section id="pcie-interface">
+<h4>3.5.5 PCIE Interface<a class="headerlink" href="#pcie-interface" title="Link to this heading"></a></h4>
+<p>There are 3 x PCIE interfaces on the OK104xA-C2 carrier board by default, namely the mini PCIE interface P21, the PCIE X1 interfaces P2 and P23. The FET1043A-C SoM only supports the P21 interface.</p>
+<p>The P21 mini PCIE interface on the LS1046A can be configured as either a PCIE or an mSATA interface. (In the mSATA interface, the polarity of RX is opposite to that in the PCIE standard. The software supports the change, and it can be designed according to the mini PCIE standard.)</p>
+<p>The P2 interface supports both USB3.0 and PCIEX1 protocols and can be connected to 5G modules from Quectel.</p>
+<p>The P23 interface can be connected to a PCIE - interface Wi - Fi module.</p>
+<p>Since the SATA hard drive, 5G module, and Wi - Fi module have high power consumption, their power is supplied by a separate DCDC.</p>
+<p>Note: PCIE devices do not support hot - plugging, and the power of the corresponding modules should be powered on simultaneously with the carrier board.</p>
+<p><img alt="Image" src="_images/1720687059285_5cef780b_3514_474a_b696_fea9cb5eea01.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Please keep the PCIE reset pin to ensure that the PCIE device is effectively reset every time the power is turned on;</strong></p></li>
+<li><p><strong>Change the PCIE clock chip to RC19004A100GNL.</strong></p></li>
+</ul>
+</section>
+<section id="tf-card">
+<h4>3.5.6 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
+<p>The development board is equipped with a self - ejecting TF card socket, which supports the SD UHS - 1 speed mode.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The level matching of the pull - up on the TF data line has been completed by the SoM, and the carrier board does not need to perform pull - up processing;</strong></p></li>
+<li><p><strong>When designing, please note that the TF card insertion and removal detection status affects the boot item. See Section 3.5.3 Boot Configuration for details.</strong></p></li>
+</ul>
+</section>
+<section id="rgmii">
+<h4>3.5.7 RGMII<a class="headerlink" href="#rgmii" title="Link to this heading"></a></h4>
+<p>There are 2 x RGMII - type Gigabit PHY interfaces on the OK104xA-C2 development board, both using the YT8521SH chip. One PHY is on the SoM and is directly led out to the RJ45 on the carrier board, and the other is on the carrier board. The RGMII signals are connected to U10.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The address 00000 of the YT8521SH is the broadcast address. Please use it with caution during configuration;</strong></p></li>
+<li><p><strong>When designing the PCB, ensure that the PHY chip has a complete reference ground;</strong></p></li>
+<li><p><strong>If the PHY chip connected to the RGMII on the carrier board is removed in hardware, the YT8521SH chip connected to the RGMII on the SoM will not work properly. Please try to avoid such a configuration. If it must be used in this way, please contact Forlinx for software modification.</strong></p></li>
+</ul>
+</section>
+<section id="jtag-simulation-debugging-interface">
+<h4>3.5.8 JTAG Simulation Debugging Interface<a class="headerlink" href="#jtag-simulation-debugging-interface" title="Link to this heading"></a></h4>
+<p>There is a JTAG debugging interface (P19) on the carrier board, which is convenient for you to simulate and debug LS104xA.</p>
+<p>The reset signal CPU_TRST_B_18 cannot be left floating. Whether the JTAG function is used or not, this pin needs to be pulled up to 1.8V.</p>
+</section>
+<section id="sgmii-interface">
+<h4>3.5.9 SGMII Interface<a class="headerlink" href="#sgmii-interface" title="Link to this heading"></a></h4>
+<p>There are 3 x SGMII PHY, which are respectively connected to the YT8521SH chips of U18, U19, and U20. Among them, the SGMII corresponding to U19 and U20 can only be used on the LS1046A CPU, and they are left unconnected on the LS1043A.</p>
+<p>Network interface definition:</p>
+<p><img alt="Image" src="_images/1720687061954_60c73b42_184c_4607_a7db_92fc98f81f01.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Connector</strong></p></th>
+<th class="head"><p><strong>Function</strong></p></th>
+<th class="head"><p><strong>FET1046A-C</strong></p></th>
+<th class="head"><p><strong>FET1043A-C</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>P26</p></td>
+<td><p>Carrier board SGMII</p></td>
+<td><p>Support</p></td>
+<td><p>Support</p></td>
+</tr>
+<tr class="row-odd"><td><p>P27 up</p></td>
+<td><p>Carrier board SGMII</p></td>
+<td><p>Support</p></td>
+<td><p>No support</p></td>
+</tr>
+<tr class="row-even"><td><p>P27 down</p></td>
+<td><p>Carrier board SGMII</p></td>
+<td><p>Support</p></td>
+<td><p>No support</p></td>
+</tr>
+<tr class="row-odd"><td><p>P13 up</p></td>
+<td><p>SoM RGMII</p></td>
+<td><p>Support</p></td>
+<td><p>Support</p></td>
+</tr>
+<tr class="row-even"><td><p>P13 up</p></td>
+<td><p>Carrier board RGMII</p></td>
+<td><p>Support</p></td>
+<td><p>Support</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usb3-0-interface">
+<h4>3.5.10 USB3.0 Interface<a class="headerlink" href="#usb3-0-interface" title="Link to this heading"></a></h4>
+<p>USB3.0 interface, current detection VBUS power control using TPS2065. In order to eliminate interference and ensure that USB will not report errors by mistake, it is recommended to add C135 and C145 100pF capacitors.</p>
+</section>
+<section id="sfp-interface">
+<h4>3.5.11 SFP Interface<a class="headerlink" href="#sfp-interface" title="Link to this heading"></a></h4>
+<p>There are 2 x SFP interfaces. Among them, P30 is only available on the LS1046A CPU, and it is in an open - circuit state on the LS1043A CPU.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Since the theoretical maximum rate of the SPF interface can reach 10 Gbps, when drawing the PCB, the traces should be laid on the surface layer as much as possible to reduce stubs;</strong></p></li>
+<li><p><strong>Since the clock buffer chip ICS8304AMI is difficult to procure, the reference clocks of U21 and U23 are now provided by active crystal oscillators;</strong></p></li>
+<li><p><strong>Since the optical module may be configured through the IIC bus, the two optical modules in the development board are connected to IIC3 and IIC4 respectively, and 0Ω resistors are reserved. The default is empty welding. When configuration is required, the 0Ω resistors are welded. At the same time, it is necessary to pay attention to whether the address of the optical module will conflict with other devices on the carrier board.</strong></p></li>
+</ul>
+</section>
+<section id="user-key">
+<h4>3.5.12 User Key<a class="headerlink" href="#user-key" title="Link to this heading"></a></h4>
+<p>1 x user K2 is led out from the OK104xA-C2 carrier board, and the function can be customized.</p>
+<p>3.5.13 LED</p>
+<p>3 x LED D1 are led out from OK104xA-C2 carrier board. Yellow is the carrier board 3.3 V power indication, green is the 5G network status indication, and red is the user-defined LED.</p>
+</section>
+</section>
+</section>
+<section id="connector-dimension-diagram">
+<h2>4. Connector Dimension Diagram<a class="headerlink" href="#connector-dimension-diagram" title="Link to this heading"></a></h2>
+<p>The specifications of the SoM connector are as follows:</p>
+<p><img alt="Image" src="_images/1720687029540_67600bd9_daf0_46ed_b627_9ab490a763ff.png" /></p>
+<p><img alt="Image" src="_images/1720687029753_794a0c8c_3e86_4b20_a2e2_116ee4af3829.png" /></p>
+<p><img alt="Image" src="_images/1720687030023_a7cc01fa_04d7_484c_8cd0_9bb37f964bbf.png" /></p>
+<p>The specifications of the baseboard connector are as follows:</p>
+<p><img alt="Image" src="_images/1720687030259_6a34d84a_06d8_4854_ac60_96e2664d77d8.png" /></p>
+<p><img alt="Image" src="_images/1720687030569_955559ec_fedf_4d34_9128_2b4ff3f41a76.png" /></p>
+<p><img alt="Image" src="_images/1720687030964_b5045ace_1cda_45a4_8387_2037762eabb4.png" /></p>
+</section>
+<section id="power-consumption-measured-data">
+<h2>5. Power Consumption Measured Data<a class="headerlink" href="#power-consumption-measured-data" title="Link to this heading"></a></h2>
+<p>The following table shows the measured power consumption data of OK1046A when the supply voltage is 12V:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>Test Item</p></th>
+<th class="head"><p>Development Board （A）</p></th>
+<th class="head"><p>SoM（A）</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Start instantaneous current</p></td>
+<td><p>1.58</p></td>
+<td><p>1.27</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Zero load current</p></td>
+<td><p>1.15</p></td>
+<td><p>0.85</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Full load current</p></td>
+<td><p>1.5</p></td>
+<td><p>1.19</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="som-lmbench-test-data">
+<h2>6. SoM Lmbench Test Data<a class="headerlink" href="#som-lmbench-test-data" title="Link to this heading"></a></h2>
+<p>Data read and write test:</p>
+<p><strong>Lmbench test results of V1.3 SoM:</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cache/Memory</p></th>
+<th class="head"><p>rd</p></th>
+<th class="head"><p>wr</p></th>
+<th class="head"><p>rdwr</p></th>
+<th class="head"><p>cp</p></th>
+<th class="head"><p>frd</p></th>
+<th class="head"><p>fwr</p></th>
+<th class="head"><p>fcp</p></th>
+<th class="head"><p>bzero</p></th>
+<th class="head"><p>bcopy</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>L1(MB/s)</p></td>
+<td><p>28556</p></td>
+<td><p>20928</p></td>
+<td><p>19188</p></td>
+<td><p>19760</p></td>
+<td><p>7180</p></td>
+<td><p>7178</p></td>
+<td><p>6121</p></td>
+<td><p>17892</p></td>
+<td><p>14090</p></td>
+</tr>
+<tr class="row-odd"><td><p>L2(MB/s)</p></td>
+<td><p>15767</p></td>
+<td><p>17624</p></td>
+<td><p>11256</p></td>
+<td><p>9119</p></td>
+<td><p>6780</p></td>
+<td><p>7142</p></td>
+<td><p>6522</p></td>
+<td><p>11999</p></td>
+<td><p>10137</p></td>
+</tr>
+<tr class="row-even"><td><p>DDR(MB/s)</p></td>
+<td><p>6440</p></td>
+<td><p>2349</p></td>
+<td><p>2387</p></td>
+<td><p>1624</p></td>
+<td><p>6431</p></td>
+<td><p>6478</p></td>
+<td><p>2726</p></td>
+<td><p>6562</p></td>
+<td><p>2718</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lmbench test results of V2.0 SoM:</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cache/Memory</p></th>
+<th class="head"><p>rd</p></th>
+<th class="head"><p>wr</p></th>
+<th class="head"><p>rdwr</p></th>
+<th class="head"><p>cp</p></th>
+<th class="head"><p>frd</p></th>
+<th class="head"><p>fwr</p></th>
+<th class="head"><p>fcp</p></th>
+<th class="head"><p>bzero</p></th>
+<th class="head"><p>bcopy</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>L1(MB/s)</p></td>
+<td><p>28552</p></td>
+<td><p>20931</p></td>
+<td><p>19191</p></td>
+<td><p>19392</p></td>
+<td><p>7181</p></td>
+<td><p>7176</p></td>
+<td><p>5666</p></td>
+<td><p>17345</p></td>
+<td><p>14051</p></td>
+</tr>
+<tr class="row-odd"><td><p>L2(MB/s)</p></td>
+<td><p>15767</p></td>
+<td><p>17671</p></td>
+<td><p>11255</p></td>
+<td><p>9059</p></td>
+<td><p>6757</p></td>
+<td><p>7142</p></td>
+<td><p>6515</p></td>
+<td><p>13693</p></td>
+<td><p>10067</p></td>
+</tr>
+<tr class="row-even"><td><p>DDR(MB/s)</p></td>
+<td><p>9858</p></td>
+<td><p>3649</p></td>
+<td><p>3771</p></td>
+<td><p>2740</p></td>
+<td><p>6432</p></td>
+<td><p>7191</p></td>
+<td><p>5307</p></td>
+<td><p>11026</p></td>
+<td><p>5306</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
