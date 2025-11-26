@@ -1,4 +1,4 @@
-# Linux6.1.36\_User’s Compilation Manual\_V1.0
+Linux6.1.36\_User’s Compilation Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -232,15 +232,13 @@ Next, select continue by default to continue the installation, the installation 
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880313_7ce73410_2829_4742_b833_8116daec3469.png)
+![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880702_8f6f15db_0b72_41bb_baf3_8223b6f98062.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880702_8f6f15db_0b72_41bb_baf3_8223b6f98062.png)
-
-After the installation is completed, as shown in the following figure, click "Restart Now" (or click" Restart Client "):
-
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880992_5934d52d_df50_4438_812a_6ae5fb555a22.png)
+
+After the installation is completed, as shown in the following figure, click "Restart Now" (or click" Restart Guest "):
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881280_a25cd0ea_662d_4a5e_804d_c3409035be54.png)
 
@@ -350,7 +348,7 @@ If TFTP, SFTP and other servers are used, it is necessary to set the network con
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885969_280935cf_acc5_4e8e_a155_b8ef4ea3c9ce.png)
 
-    设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。
+Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886234_d7029515_ec37_4f72_b240_d70dd584f554.png)
 
@@ -373,11 +371,11 @@ After the virtual machine boot, insert the U disk, the virtual machine will be m
 Before development, there are some other necessary libraries, we use the following commands to install them one by one, before installation, you need to ensure that the network can be used normally, you can get on the extranet:
 
 ```plain
-forlinx@ubuntu:~$ sudo apt-get update                        // Update the information of download sources
-forlinx@ubuntu:~$ sudo apt-get install build-essential            // Provide the list information of software packages necessary for compiling programs
-forlinx@ubuntu:~$ sudo apt-get install libncurses*               // Used to generate text-based user interfaces
-forlinx@ubuntu:~$ sudo apt-get install lzop                     // Compression and decompression tool based on the Lzo library
-forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network configuration tools
+forlinx@ubuntu:~$ sudo apt-get update           // Update the information of download sources
+forlinx@ubuntu:~$ sudo apt-get install build-essential   // Provide the list information of software packages necessary for compiling programs
+forlinx@ubuntu:~$ sudo apt-get install libncurses*    // Used to generate text-based user interfaces
+forlinx@ubuntu:~$ sudo apt-get install lzop       // Compression and decompression tool based on the Lzo library
+forlinx@ubuntu:~$ sudo apt-get install net-tools  // Network configuration tools
 ```
 
 ### 3.2 Setting up A Cross-compilation Environment
@@ -391,7 +389,8 @@ The cross-compilation environment can be subdivided into installing the SDK (whi
 Copy the above script to any directory like /home/forlinx/ and execute it there:
 
 ```plain
-forlinx@ubuntu:~$ ./fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-cortexa7hf-neon-toolchain-4.1.15-2.0.0.sh
+forlinx@ubuntu:~$ ./fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-
+cortexa7hf-neon-toolchain-4.1.15-2.0.0.sh
 ```
 
 The command line prompts: Enter target directory for SDK (default): /opt/fsl-imx-x11/4.1.15-2.0.0)
@@ -412,7 +411,8 @@ You can determine whether the installation was successful by outputting the prin
 The main purpose of setting up the compilation environment is to specify the target architecture and cross-compilation toolchain, as well as the paths of some libraries used in the compilation process, etc. Use the following commands to configure the compilation environment (**.followed by a space**):
 
 ```plain
-. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi
+. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-
+poky-linux-gnueabi
 ```
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887289_6e9810ff_f2ba_441c_8935_c2f4ea2ccd2e.png)
@@ -526,7 +526,6 @@ Kits is a build kit for building and selecting development build environments us
 ### 3.3.4 Installation Issues
 
 **Note: The following presents some problems and solutions encountered during the installation of Qt Creator 3.2.1. The issues may differ depending on the Ubuntu and Qt Creator version used. The example below details one specific installation case, and serves only as a reference. Users should focus on their own actual situation and resolve any issues accordingly.**
-
 1\. Opening Qt Creator appears qtcreator-3.2.1/lib/qtcreator/plugins/libHelp.so: Cannot load library /home/forlinx/qt; You cannot use help to report an error. You need to modify the software source and download and install some installation packages;
 
 Method:
@@ -541,7 +540,7 @@ sudo apt-get  install libgstreamer0.10-dev
 
 sudo apt-get  install libgstreamer-plugins-base0.10-dev
 
-2\. Open the project file in Qt Creator with an ordinary account, and there is a write permission error;
+ 2\. Open the project file in Qt Creator with an ordinary account, and there is a write permission error;
 
 ![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890507_fa6a691a_3d47_466a_bbb7_84abdbd1f630.png)
 
@@ -563,7 +562,7 @@ This chapter mainly describes the compilation methods of the development board-r
 
 + Development environment OS: Ubuntu18.04 64-bit version
 + Cross tool chain: arm-poky-linux-gnueabi-gcc 5.3.0
-+ The board uses the Bootloader version: u-boot-2016.03.
++ The board uses the Bootloader version: u-boot-2016.03
 + Development board kernel: Linux -4.1.15
 + Development board porting QT version: qt5.6.2
 
@@ -614,7 +613,8 @@ forlinx@ubuntu:~/work$
 To set environment variables before compiling related source code. When compiling the kernel, it is recommended to use the root account to reduce some permission problems. The following source code compilations default to having environment variables set. Set the environment variable requires the following command:
 
 ```plain
-. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi
+. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-
+poky-linux-gnueabi
 ```
 
 ### 4.2 Kernel Compilation
@@ -627,11 +627,11 @@ To set environment variables before compiling related source code. When compilin
 Switch to the root account and extract the kernel source code copied to the /home/forlinx/work directory using the tar command to the kernel source path.
 
 ```plain
-forlinx@ubuntu:~/work$ sudo su                       // Switch to the root user identity
-[sudo] password for forlinx:                        // Enter the password for the forlinx account as prompted. The input is not echoed.
-root@ubuntu:/home/forlinx/work# tar xvf linux-4.1.15.tar.bz2     // Extract the kernel source code
+forlinx@ubuntu:~/work$ sudo su    // Switch to the root user identity
+[sudo] password for forlinx:    // Enter the password for the forlinx account as prompted. The input is not echoed.
+root@ubuntu:/home/forlinx/work# tar xvf linux-4.1.15.tar.bz2  // Extract the kernel source code
 … …The extraction information is omitted here.
-root@ubuntu:/home/forlinx/work# cd linux-4.1.15                 // Enter the kernel source code directory
+root@ubuntu:/home/forlinx/work# cd linux-4.1.15  // Enter the kernel source code directory
 ```
 
 Reset the environment variables after switching accounts:
@@ -664,7 +664,7 @@ Explanation of some of the commands in build.sh:
 
 |        **File**         | **Description**                                              |
 | :---------------------: | ------------------------------------------------------------ |
-| make imx6ull\_defconfig | 1\. This command loads a configuration file into .config (which is read from .config when menuconfig does graphical configuration);<br />2\. inux-4.1.15/arch/arm/configs/imx6ull\_defconfig is the kernel configuration file, when you use the source code for the first time, you need to configure the kernel through this step;<br />3\. To configure using “menuconfig”, you need to perform this step first.<br />After saving and exiting the graphical interface configuration, the latest configuration will be updated in the “.config” file.<br />At this point, you can copy the configurations from the “.config” file to “imx6ull\_defconfig”,<br />which will serve as the new configuration file. |
+| make imx6ull\_defconfig | 1\. This command loads a configuration file into .config<br /> (which is read from .config when menuconfig does graphical configuration);<br />2\. inux-4.1.15/arch/arm/configs/imx6ull\_defconfig is the kernel configuration file,<br />when you use the source code for the first time,<br />you need to configure the kernel through this step;<br />3\. To configure using “menuconfig”, you need to perform this step first.<br />After saving and exiting the graphical interface configuration,<br />the latest configuration will be updated in the “.config” file.<br />At this point, you can copy the configurations from the “.config” file to “imx6ull\_defconfig”,<br />which will serve as the new configuration file. |
 |       make zImage       | To compile “zImage”, after a successful compilation, the “zImage” file<br />will be generated in the “linux-4.1.15/arch/arm/boot/” directory. |
 |        make dtbs        | Compile the device tree. Generate the corresponding dtb file under<br />the path inux-4.1.15/arch/arm/boot/dts. |
 |      make modules       | Compile module                                               |
@@ -732,14 +732,16 @@ forlinx@ubuntu:~/work/rootfs$
 forlinx@ubuntu:~/work/rootfs$ sudo cp ../rootfs-console.tar.bz2 ./
 forlinx@ubuntu:~/work/rootfs$ ls
 rootfs-console.tar.bz2					//Copy succeeded
-forlinx@ubuntu:~/work/rootfs$ sudo tar xvf rootfs-console.tar.bz2 	//Extract file system
+forlinx@ubuntu:~/work/rootfs$ sudo tar xvf rootfs-console.tar.bz2
+//Extract file system
 ```
 
 3. Remove the original filesystem archive with the rm command
 
 ```plain
 forlinx@ubuntu:~/work/rootfs$ ls
-bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2  run  sbin  sys  tmp  usr  var
+bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2
+run  sbin  sys  tmp  usr  var
 forlinx@ubuntu:~/work/rootfs$ sudo rm rootfs-console.tar.bz2 
 forlinx@ubuntu:~/work/rootfs$ ls
 bin  dev  etc  forlinx  home  lib  media  mnt  proc  run  sbin  sys  tmp  usr  var
@@ -749,7 +751,8 @@ forlinx@ubuntu:~/work/rootfs$
 4. After the user has made changes to the file system according to his needs, he can use the tar command to compress the file system again. If you are operating with a regular account, you need to use the fakeroot command emulates root permissions to avoid file permissions changes.
 
 ```plain
-forlinx@ubuntu:~/work/rootfs$ sudo fakeroot tar cvjf rootfs-console.tar.bz2 *      //*There is a space in front of it
+forlinx@ubuntu:~/work/rootfs$ sudo fakeroot tar cvjf rootfs-console.tar.bz2 *      
+//*There is a space in front of it
 forlinx@ubuntu:~/work/rootfs$ ls
 bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2  run  sbin  sys  tmp  usr  var
 ```
@@ -785,7 +788,9 @@ forlinx@ubuntu:~/work$ file wdttest
 Information results:
 
 ```plain
-wdttest: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter 	/lib/ld-linux-armhf.so.3, for GNU/Linux 2.6.32,
+wdttest: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), 
+dynamically linked, interpreter
+/lib/ld-linux-armhf.so.3, for GNU/Linux 2.6.32,
 BuildID[sha1]=400fbba6005ea8e7344df7080ab10d9ef54e3a45, not stripped
 ```
 
@@ -804,8 +809,8 @@ root@fl-imx6ull:~# cp /run/media/sda1/wdttest  ./
 Give the program executable permission and run it
 
 ```plain
-root@fl-imx6ull:~# chmod 766 wdttest				   //Set executable permissions for the program
-root@fl-imx6ull:~#./wdttest	 /dev/watchdog settimeout 60 &           //Run the program
+root@fl-imx6ull:~# chmod 766 wdttest //Set executable permissions for the program
+root@fl-imx6ull:~#./wdttest	 /dev/watchdog settimeout 60 &        //Run the program
 ```
 
 4\. Refer to the "Watchdog Test" section of the software manual for testing.
@@ -819,7 +824,7 @@ root@fl-imx6ull:~#./wdttest	 /dev/watchdog settimeout 60 &           //Run the p
 + Method 1: Compile with qmake from the command line
 
 ```plain
-forlinx@ubuntu:~/work$ sudo chmod -R 766 audio/	             // Add permissions to audio application
+forlinx@ubuntu:~/work$ sudo chmod -R 766 audio/	   // Add permissions to audio application
 forlinx@ubuntu:~/work$ qmake
 forlinx@ubuntu:~/work$ make
 ```
@@ -905,9 +910,12 @@ root@fl-imx6ull:/usr/bin# cp /run/media/mmcblk1p1/audio ./fltest_qt_audio
 Give executable permissions and save to reboot the development board:
 
 ```plain
-root@fl-imx6ull:/usr/bin# chmod a+x fltest_qt_audio                     // Grant executable permissions to all user groups.
-root@fl-imx6ull:/usr/bin# sync                                         // Synchronize files.
-root@fl-imx6ull:/usr/bin# reboot                                      // Reboot the development board.
+root@fl-imx6ull:/usr/bin# chmod a+x fltest_qt_audio
+// Grant executable permissions to all user groups.
+root@fl-imx6ull:/usr/bin# sync
+// Synchronize files.
+root@fl-imx6ull:/usr/bin# reboot
+// Reboot the development board.
 ```
 
 4\. After the board restarts, if the audio test application in the Qt interface is the latest version and you can play audio by clicking on "play," it indicates that the newly compiled Qt application is functional. This also confirms the successful configuration of the Qt application development environment.
@@ -956,7 +964,8 @@ If you comment out the following part:
 
 ```plain
 # matchbox-desktop &
-# matchbox-panel --titlebar --start-applets $START_APPLETS --end-applets $END_APPLETS &
+# matchbox-panel --titlebar --start-applets $START_APPLETS --end-
+applets $END_APPLETS &
 ```
 
 The desktop will not run and the title bar will not be displayed.
@@ -965,7 +974,8 @@ If you modify the match-panel option, the content of the title bar will be chang
 
 ```plain
 START_APPLETS=showdesktop,windowselector
-END_APPLETS=battery,$KEYBOARD_APPLET,systray,startup-notify,notify
+END_APPLETS=battery,$KEYBOARD_APPLET,systray,startup-notify,
+notify
 matchbox-panel --titlebar --start-applets $START_APPLETS --end-applets $END_APPLETS &
 ```
 

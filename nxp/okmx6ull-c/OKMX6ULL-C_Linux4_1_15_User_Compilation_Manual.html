@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux6.1.36_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded i.MX6ULL Documentation  documentation</title>
+  <title>Copyright &mdash; Forlinx Embedded i.MX6ULL Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -68,59 +68,66 @@
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="OKMX6ULL-C_Linux4_1_15_User_Manual.html">Linux6.1.36_User’s Manual_V1.1</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.36_User’s Compilation Manual_V1.0</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#vmware-software-download-and-purchase">1.1 VMware Software Download and Purchase</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-software-download-and-purchase">1.1 VMware Software Download and Purchase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#creating-an-ubuntu-virtual-machine">3.1.1 Creating an Ubuntu Virtual Machine</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#basic-ubuntu-installation">3.1.3 Basic Ubuntu Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ubuntu-network-settings">3.1.4 Ubuntu Network Settings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#u-disk-loading">3.1.5 U Disk Loading</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#required-library-installation">3.1.6 Required Library Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-an-ubuntu-virtual-machine">3.1.1 Creating an Ubuntu Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-ubuntu-installation">3.1.3 Basic Ubuntu Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-network-settings">3.1.4 Ubuntu Network Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#u-disk-loading">3.1.5 U Disk Loading</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#required-library-installation">3.1.6 Required Library Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#setting-up-a-cross-compilation-environment">3.2 Setting up A Cross-compilation Environment</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sdk-installation">3.2.1 SDK Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#environment-variables-settings">3.2.2 Environment Variables Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-a-cross-compilation-environment">3.2 Setting up A Cross-compilation Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sdk-installation">3.2.1 SDK Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables-settings">3.2.2 Environment Variables Settings</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#qt-creator-installation">3.3 Qt Creator Installation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#modifying-the-qt-configuration-file">3.3.1 Modifying the QT Configuration File</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">3.3.2 Qt Creator Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#environment-configuration">3.3.3 Environment Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qt-creator-installation">3.3 Qt Creator Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modifying-the-qt-configuration-file">3.3.1 Modifying the QT Configuration File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">3.3.2 Qt Creator Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-configuration">3.3.3 Environment Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration-of-the-cross-compiler"><strong>3.3.3.1 Configuration of the Cross-compiler</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qt-versions-configuration"><strong>3.3.3.2 Qt Versions Configuration</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kits-configuration"><strong>3.3.3.3 Kits Configuration</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#installation-issues">3.3.4 Installation Issues</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#related-code-compilation">4. Related Code Compilation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#description-of-the-environment">4.1.1 Description of the Environment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#source-code-copy">4.1.2 Source Code Copy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">4.1.3 Environment Variables Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-issues">3.3.4 Installation Issues</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#kernel-compilation">4.2 Kernel Compilation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#linux-4-1-15-kernel-full-compilation">4.2.1 Linux-4.1.15 Kernel Full Compilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#separate-zimage-compilation">4.2.2 Separate zImage Compilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#separate-device-tree-compilation">4.2.3 Separate Device Tree Compilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#independent-module-compilation">4.2.4 Independent Module Compilation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#related-code-compilation">4. Related Code Compilation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description-of-the-environment">4.1.1 Description of the Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code-copy">4.1.2 Source Code Copy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.1.3 Environment Variables Settings</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#creating-the-file-system">4.3 Creating the File System</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#application-compilation-and-operation">4.4 Application Compilation and Operation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#command-line-application-compilation-and-operation">4.4.1 Command Line Application Compilation and Operation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#qt-application-compilation-and-running">4.4.2 QT Application Compilation and Running</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kernel-compilation">4.2 Kernel Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linux-4-1-15-kernel-full-compilation">4.2.1 Linux-4.1.15 Kernel Full Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#separate-zimage-compilation">4.2.2 Separate zImage Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#separate-device-tree-compilation">4.2.3 Separate Device Tree Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#independent-module-compilation">4.2.4 Independent Module Compilation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-the-file-system">4.3 Creating the File System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-compilation-and-operation">4.4 Application Compilation and Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line-application-compilation-and-operation">4.4.1 Command Line Application Compilation and Operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qt-application-compilation-and-running">4.4.2 QT Application Compilation and Running</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#qt-application-compilation">4.4.2.1 QT Application Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qt-application-running"><strong>4.4.2.2 QT Application Running</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qt-desktop-emmc-version-only"><strong>4.4.2.3 QT Desktop (EMMC Version Only)</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -143,7 +150,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Linux6.1.36_User’s Compilation Manual_V1.0</li>
+      <li class="breadcrumb-item active">Copyright</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -152,21 +159,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="linux6-1-36-users-compilation-manual-v1-0">
-<h1>Linux6.1.36_User’s Compilation Manual_V1.0<a class="headerlink" href="#linux6-1-36-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+  <p>Linux6.1.36_User’s Compilation Manual_V1.0</p>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
-<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<h1>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h1>
 <p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
 <section id="application-scope">
-<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<h1>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h1>
 <p>This manual is mainly applicable to the Linux4.1.15 operating system on the Forlinx OKMX6ULL platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
 </section>
 <section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<h1>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h1>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Date</p></th>
@@ -183,7 +189,7 @@
 </table>
 </section>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
 <p>This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourself with the compilation methods of Forlinx products. The application needs to be cross-compiled on an Ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.</p>
 <p>The manual is mainly divided into four chapters:</p>
 <ul class="simple">
@@ -194,15 +200,15 @@
 </ul>
 </section>
 <section id="vmware-virtual-machine-software-installation">
-<h2>1. VMware Virtual Machine Software Installation<a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h2>
+<h1>1. VMware Virtual Machine Software Installation<a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h1>
 <section id="vmware-software-download-and-purchase">
-<h3>1.1 VMware Software Download and Purchase<a class="headerlink" href="#vmware-software-download-and-purchase" title="Link to this heading"></a></h3>
+<h2>1.1 VMware Software Download and Purchase<a class="headerlink" href="#vmware-software-download-and-purchase" title="Link to this heading"></a></h2>
 <p>Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.</p>
 <p><img alt="Image" src="_images/1715130552795_1efff5fc_4341_43b9_aeb1_bd723941779d.png" /></p>
 <p>After the download is complete, double-click the installation file to start the installation program.</p>
 </section>
 <section id="vmware-software-installation">
-<h3>1.2 VMware Software Installation<a class="headerlink" href="#vmware-software-installation" title="Link to this heading"></a></h3>
+<h2>1.2 VMware Software Installation<a class="headerlink" href="#vmware-software-installation" title="Link to this heading"></a></h2>
 <p>Double-click the startup program to enter the installation wizard.</p>
 <p><img alt="Image" src="_images/1715130553055_61c21413_07de_4beb_bed5_891acde85934.png" /></p>
 <p>Click on “Next”.</p>
@@ -223,7 +229,7 @@
 </section>
 </section>
 <section id="loading-the-existing-ubuntu-development-environment">
-<h2>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h2>
+<h1>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h1>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>It is recommended for beginners to directly use the pre-built virtual machine environment provided by Forlinx, which already includes installed cross-compiler and Qt environment. After understanding this chapter, you can directly jump to the compilation chapter for further study;</strong></p></li>
@@ -248,13 +254,13 @@
 <p><img alt="Image" src="_images/1715130669640_b1da4f71_0317_425c_962b_04428e1b57bc.png" /></p>
 </section>
 <section id="new-ubuntu-development-environment-setup">
-<h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
+<h1>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h1>
 <p><strong>Note: Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section.</strong></p>
 <p>This chapter mainly explains the process of setting up the Ubuntu system, installing the cross-compiler, and installing Qt Creator. If the user is not using Qt, the installation of Qt Creator can be ignored.</p>
 <section id="ubuntu-system-setup">
-<h3>3.1 Ubuntu System Setup<a class="headerlink" href="#ubuntu-system-setup" title="Link to this heading"></a></h3>
+<h2>3.1 Ubuntu System Setup<a class="headerlink" href="#ubuntu-system-setup" title="Link to this heading"></a></h2>
 <section id="creating-an-ubuntu-virtual-machine">
-<h4>3.1.1 Creating an Ubuntu Virtual Machine<a class="headerlink" href="#creating-an-ubuntu-virtual-machine" title="Link to this heading"></a></h4>
+<h3>3.1.1 Creating an Ubuntu Virtual Machine<a class="headerlink" href="#creating-an-ubuntu-virtual-machine" title="Link to this heading"></a></h3>
 <p>Open the VMware software, click on create a new virtual machine. Enter the following interface</p>
 <p><img alt="Image" src="_images/1715130873710_b80a1010_8d6a_4ba1_8849_570651261519.png" /></p>
 <p>Choose custom, and click “Next”.</p>
@@ -288,7 +294,7 @@
 <p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
 </section>
 <section id="system-installation">
-<h4>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h4>
+<h3>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h3>
 <p>The Ubuntu version chosen to install is 18.04. First, go to the official Ubuntu website to obtain the 64-bit image of Ubuntu 18.04. The download address is: http://releases.ubuntu.com/18.04/. Download the version: “ubuntu-18.04.5-desktop-amd64.iso”.</p>
 <p><img alt="Image" src="_images/1715130877616_c0116c9e_13fd_4dca_8aca_cd910dcc7df4.png" /></p>
 <p>Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.</p>
@@ -309,11 +315,10 @@
 <p><img alt="Image" src="_images/1715130879621_48c81c07_77b7_42ba_9252_bf0b57d67089.png" /></p>
 <p><img alt="Image" src="_images/1715130879995_f2e16814_cf7c_4fc5_9bab_7c617fadd3e2.png" /></p>
 <p>Next, select the timezone. You can either click on the Shanghai timezone or enter “Shanghai” (or choose the appropriate timezone based on your location). Then, click “Continue” to proceed. Finally, set your username and password and click “continue” to automatically install the program:</p>
-<p><img alt="Image" src="_images/1715130880313_7ce73410_2829_4742_b833_8116daec3469.png" /></p>
-<p>The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.</p>
 <p><img alt="Image" src="_images/1715130880702_8f6f15db_0b72_41bb_baf3_8223b6f98062.png" /></p>
-<p>After the installation is completed, as shown in the following figure, click “Restart Now” (or click” Restart Client “):</p>
+<p>The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.</p>
 <p><img alt="Image" src="_images/1715130880992_5934d52d_df50_4438_812a_6ae5fb555a22.png" /></p>
+<p>After the installation is completed, as shown in the following figure, click “Restart Now” (or click” Restart Guest “):</p>
 <p><img alt="Image" src="_images/1715130881280_a25cd0ea_662d_4a5e_804d_c3409035be54.png" /></p>
 <p>After the reboot, you need to log in with your username and password, and the system interface is shown below after logging in:</p>
 <p><img alt="Image" src="_images/1715130881517_50069bf3_e74b_42b5_902c_37145d6f82d0.png" /></p>
@@ -322,7 +327,7 @@
 <p><img alt="Image" src="_images/1715130882093_342df8a6_a76b_4820_8df6_adae03cb2607.png" /></p>
 </section>
 <section id="basic-ubuntu-installation">
-<h4>3.1.3 Basic Ubuntu Installation<a class="headerlink" href="#basic-ubuntu-installation" title="Link to this heading"></a></h4>
+<h3>3.1.3 Basic Ubuntu Installation<a class="headerlink" href="#basic-ubuntu-installation" title="Link to this heading"></a></h3>
 <p>After installing the Ubuntu 18.04 operating system, there are a few configurations to make.</p>
 <ul class="simple">
 <li><p><strong>VMware Tools Installation:</strong></p></li>
@@ -371,7 +376,7 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 <p><img alt="Image" src="_images/1715130884066_fcfdc4c4_9b74_4e9a_ae37_bb38cddbc0a7.png" /></p>
 </section>
 <section id="ubuntu-network-settings">
-<h4>3.1.4 Ubuntu Network Settings<a class="headerlink" href="#ubuntu-network-settings" title="Link to this heading"></a></h4>
+<h3>3.1.4 Ubuntu Network Settings<a class="headerlink" href="#ubuntu-network-settings" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>NAT Mode</strong></p></li>
 </ul>
@@ -389,14 +394,12 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 <p><img alt="Image" src="_images/1715130885296_2e06ca75_268a_48ca_b8d8_d3e0df3cf340.png" /></p>
 <p><img alt="Image" src="_images/1715130885782_8a8f38ca_28f0_4339_ad00_929b39697312.png" /></p>
 <p><img alt="Image" src="_images/1715130885969_280935cf_acc5_4e8e_a155_b8ef4ea3c9ce.png" /></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>设置静态ip，此时Ubuntu的IP与主机IP需设置在同一个网段。
-</pre></div>
-</div>
+<p>Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.</p>
 <p><img alt="Image" src="_images/1715130886234_d7029515_ec37_4f72_b240_d70dd584f554.png" /></p>
 <p><strong>Note: The IP and DNS involved in the network settings section should be set according to the user’s own actual environment, the manual is an example.</strong></p>
 </section>
 <section id="u-disk-loading">
-<h4>3.1.5 U Disk Loading<a class="headerlink" href="#u-disk-loading" title="Link to this heading"></a></h4>
+<h3>3.1.5 U Disk Loading<a class="headerlink" href="#u-disk-loading" title="Link to this heading"></a></h3>
 <p>Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don’t set it up, when we plug in the USB3.0 port, we can’t connect to the virtual machine. The principle is as follows:</p>
 <p><img alt="Image" src="_images/1715130886408_8d3ca670_ba9e_4095_8922_fa0612b8ebbb.png" /></p>
 <p>After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the “U disk”, right-click –&gt; connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:</p>
@@ -404,27 +407,28 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 <p><img alt="Image" src="_images/1715130886802_39cd79c3_8476_4aee_840b_4909dfce8097.png" /></p>
 </section>
 <section id="required-library-installation">
-<h4>3.1.6 Required Library Installation<a class="headerlink" href="#required-library-installation" title="Link to this heading"></a></h4>
+<h3>3.1.6 Required Library Installation<a class="headerlink" href="#required-library-installation" title="Link to this heading"></a></h3>
 <p>Before development, there are some other necessary libraries, we use the following commands to install them one by one, before installation, you need to ensure that the network can be used normally, you can get on the extranet:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                        // Update the information of download sources
-forlinx@ubuntu:~$ sudo apt-get install build-essential            // Provide the list information of software packages necessary for compiling programs
-forlinx@ubuntu:~$ sudo apt-get install libncurses*               // Used to generate text-based user interfaces
-forlinx@ubuntu:~$ sudo apt-get install lzop                     // Compression and decompression tool based on the Lzo library
-forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network configuration tools
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update           // Update the information of download sources
+forlinx@ubuntu:~$ sudo apt-get install build-essential   // Provide the list information of software packages necessary for compiling programs
+forlinx@ubuntu:~$ sudo apt-get install libncurses*    // Used to generate text-based user interfaces
+forlinx@ubuntu:~$ sudo apt-get install lzop       // Compression and decompression tool based on the Lzo library
+forlinx@ubuntu:~$ sudo apt-get install net-tools  // Network configuration tools
 </pre></div>
 </div>
 </section>
 </section>
 <section id="setting-up-a-cross-compilation-environment">
-<h3>3.2 Setting up A Cross-compilation Environment<a class="headerlink" href="#setting-up-a-cross-compilation-environment" title="Link to this heading"></a></h3>
+<h2>3.2 Setting up A Cross-compilation Environment<a class="headerlink" href="#setting-up-a-cross-compilation-environment" title="Link to this heading"></a></h2>
 <p>The cross-compilation environment can be subdivided into installing the SDK (which contains the cross-compilation toolchain) and setting cross-compilation environment variables.</p>
 <section id="sdk-installation">
-<h4>3.2.1 SDK Installation<a class="headerlink" href="#sdk-installation" title="Link to this heading"></a></h4>
+<h3>3.2.1 SDK Installation<a class="headerlink" href="#sdk-installation" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Information/tool/fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-cortexa7hf-neon-toolchain-4.1.15-2.0.0.sh</p></li>
 </ul>
 <p>Copy the above script to any directory like /home/forlinx/ and execute it there:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ./fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-cortexa7hf-neon-toolchain-4.1.15-2.0.0.sh
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ./fsl-imx-x11-glibc-x86_64-meta-toolchain-qt5-
+cortexa7hf-neon-toolchain-4.1.15-2.0.0.sh
 </pre></div>
 </div>
 <p>The command line prompts: Enter target directory for SDK (default): /opt/fsl-imx-x11/4.1.15-2.0.0)</p>
@@ -433,14 +437,15 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network conf
 <p>You can determine whether the installation was successful by outputting the printed information.</p>
 </section>
 <section id="environment-variables-settings">
-<h4>3.2.2 Environment Variables Settings<a class="headerlink" href="#environment-variables-settings" title="Link to this heading"></a></h4>
+<h3>3.2.2 Environment Variables Settings<a class="headerlink" href="#environment-variables-settings" title="Link to this heading"></a></h3>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>After setting the environment variables, you don’t need to reset them the next time you compile as long as you don’t change terminals;</strong></p></li>
 <li><p><strong>If you reopen a new terminal or switch accounts, you need to reset the environment variables before compiling.</strong></p></li>
 </ul>
 <p>The main purpose of setting up the compilation environment is to specify the target architecture and cross-compilation toolchain, as well as the paths of some libraries used in the compilation process, etc. Use the following commands to configure the compilation environment (<strong>.followed by a space</strong>):</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-
+poky-linux-gnueabi
 </pre></div>
 </div>
 <p><img alt="Image" src="_images/1715130887289_6e9810ff_f2ba_441c_8935_c2f4ea2ccd2e.png" /></p>
@@ -450,10 +455,10 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network conf
 </section>
 </section>
 <section id="qt-creator-installation">
-<h3>3.3 Qt Creator Installation<a class="headerlink" href="#qt-creator-installation" title="Link to this heading"></a></h3>
+<h2>3.3 Qt Creator Installation<a class="headerlink" href="#qt-creator-installation" title="Link to this heading"></a></h2>
 <p>Qt Creator is a cross-platform QT integrated development environment (IDE) that includes advanced C + + code editors, project and build management tools for QT application framework design and application development. Qt Creator 3.2.1 installation package selected for this installation:<a class="reference external" href="https://download.qt.io/archive/qtcreator/3.2/3.2.1/qt-creator-opensource-linux-x86_64-3.2.1.run">qt-creator-opensource-linux-x86_64-3.2.1.run</a>. Copy the installation package to the path /home/forlinx/work/. Installation package acquisition site:<a class="reference external" href="https://download.qt.io/archive/qtcreator/3.2/3.2.1/">https://download.qt.io/archive/qtcreator/3.2/3.2.1/</a></p>
 <section id="modifying-the-qt-configuration-file">
-<h4>3.3.1 Modifying the QT Configuration File<a class="headerlink" href="#modifying-the-qt-configuration-file" title="Link to this heading"></a></h4>
+<h3>3.3.1 Modifying the QT Configuration File<a class="headerlink" href="#modifying-the-qt-configuration-file" title="Link to this heading"></a></h3>
 <p>After installing the SDK, modify the QT profile qmake. Conf.</p>
 <p>Open the configuration file to be modified, the path of the file in the development environment is: /opt/fsl-imx-x11/4.1.15-2.0.0/sysroots/cortexa7hf-neon-poky-linux-gnueabi/usr/lib/qt5/mkspe</p>
 <p>cs/linux-oe-g++/qmake.conf</p>
@@ -462,7 +467,7 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network conf
 <p>Save and exit after making changes</p>
 </section>
 <section id="id1">
-<h4>3.3.2 Qt Creator Installation<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<h3>3.3.2 Qt Creator Installation<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>Execute the following command in the/home/forlinx/work/path to install Qt Creator:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ chmod u+x qt-creator-opensource-linux-x86_64-3.2.1.run 
 forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
@@ -480,7 +485,7 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 <p>The Qt Creator tool screen appears. Qt Creator is installed.</p>
 </section>
 <section id="environment-configuration">
-<h4>3.3.3 Environment Configuration<a class="headerlink" href="#environment-configuration" title="Link to this heading"></a></h4>
+<h3>3.3.3 Environment Configuration<a class="headerlink" href="#environment-configuration" title="Link to this heading"></a></h3>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>Be sure to configure the environment variables first (see “3.2.2 Environment Variables Setting”), then open the Qt Creator with the command;</strong></p></li>
@@ -488,7 +493,7 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 </ul>
 <p>Qt is a cross-platform graphics development library, which supports many operating systems. Before compiling, you need to configure the compiling environment of Qt Creator.</p>
 <section id="configuration-of-the-cross-compiler">
-<h5><strong>3.3.3.1 Configuration of the Cross-compiler</strong><a class="headerlink" href="#configuration-of-the-cross-compiler" title="Link to this heading"></a></h5>
+<h4><strong>3.3.3.1 Configuration of the Cross-compiler</strong><a class="headerlink" href="#configuration-of-the-cross-compiler" title="Link to this heading"></a></h4>
 <p>1. Click Qt Creator Tools -&gt;Options-&gt;Build &amp; Run-&gt;Compilers， and then click Add -&gt;GCC;</p>
 <p>2. Name enters GCC;</p>
 <p>3. Compiler Path Click Browse to select the path of the cross-compiler as: /opt/fsl-imx-x11/4.1.15-2.0.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ As shown in the following figure:</p>
@@ -496,7 +501,7 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 <p>4. Then click Apply and OK</p>
 </section>
 <section id="qt-versions-configuration">
-<h5><strong>3.3.3.2 Qt Versions Configuration</strong><a class="headerlink" href="#qt-versions-configuration" title="Link to this heading"></a></h5>
+<h4><strong>3.3.3.2 Qt Versions Configuration</strong><a class="headerlink" href="#qt-versions-configuration" title="Link to this heading"></a></h4>
 <p>1. Click Qt Creator Tools -&gt;Options-&gt;Build &amp; Run-&gt;Qt Versions;</p>
 <p>2. Then click Add, a pop-up dialog box to select the/opt/fsl-imx-x11/4.1.15-2.1.0/sysroots/x86_64-pokysdk-linux/usr/bin/qt5/qmake;</p>
 <p>3. Click open to add.</p>
@@ -506,7 +511,7 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 <p>5. Then click “Apply and OK”.</p>
 </section>
 <section id="kits-configuration">
-<h5><strong>3.3.3.3 Kits Configuration</strong><a class="headerlink" href="#kits-configuration" title="Link to this heading"></a></h5>
+<h4><strong>3.3.3.3 Kits Configuration</strong><a class="headerlink" href="#kits-configuration" title="Link to this heading"></a></h4>
 <p>Kits is a build kit for building and selecting development build environments useful for projects with multiple QT libraries. Add the previously added cross-compiler and QT Version to Kits to build a compilation environment suitable for the development board.</p>
 <p>1. Click Qt Creator 的Tools -&gt;Options-&gt;Build &amp; Run-&gt;Kits，and then click Add; the configuration section appears;</p>
 <p>2. Name input qt5.6.2;</p>
@@ -519,9 +524,9 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 </section>
 </section>
 <section id="installation-issues">
-<h3>3.3.4 Installation Issues<a class="headerlink" href="#installation-issues" title="Link to this heading"></a></h3>
-<p><strong>Note: The following presents some problems and solutions encountered during the installation of Qt Creator 3.2.1. The issues may differ depending on the Ubuntu and Qt Creator version used. The example below details one specific installation case, and serves only as a reference. Users should focus on their own actual situation and resolve any issues accordingly.</strong></p>
-<p>1. Opening Qt Creator appears qtcreator-3.2.1/lib/qtcreator/plugins/libHelp.so: Cannot load library /home/forlinx/qt; You cannot use help to report an error. You need to modify the software source and download and install some installation packages;</p>
+<h2>3.3.4 Installation Issues<a class="headerlink" href="#installation-issues" title="Link to this heading"></a></h2>
+<p><strong>Note: The following presents some problems and solutions encountered during the installation of Qt Creator 3.2.1. The issues may differ depending on the Ubuntu and Qt Creator version used. The example below details one specific installation case, and serves only as a reference. Users should focus on their own actual situation and resolve any issues accordingly.</strong>
+1. Opening Qt Creator appears qtcreator-3.2.1/lib/qtcreator/plugins/libHelp.so: Cannot load library /home/forlinx/qt; You cannot use help to report an error. You need to modify the software source and download and install some installation packages;</p>
 <p>Method:</p>
 <p>1) Add mirror sources to sources.list in etc/apt, use sudo vi /etc/apt/sources.list to open the file and add them at the end: deb http://archive.ubuntu.com/ubuntu/ trusty main universe restricted multiverse；</p>
 <ol class="arabic simple" start="2">
@@ -538,23 +543,23 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 </section>
 </section>
 <section id="related-code-compilation">
-<h2>4. Related Code Compilation<a class="headerlink" href="#related-code-compilation" title="Link to this heading"></a></h2>
+<h1>4. Related Code Compilation<a class="headerlink" href="#related-code-compilation" title="Link to this heading"></a></h1>
 <p><strong>Note: This chapter uses the development environment with SDK (including cross-compilation chain) installed by default, and the development environment provided by Forlinx can directly operate this chapter. If users use their own development environment, they need to refer to the previous section to build the environment.</strong></p>
 <p>This chapter mainly describes the compilation methods of the development board-related source code, including kernel source code compilation, making file system methods, and application program compilation methods.</p>
 <section id="preparation-before-compilation">
-<h3>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
+<h2>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h2>
 <section id="description-of-the-environment">
-<h4>4.1.1 Description of the Environment<a class="headerlink" href="#description-of-the-environment" title="Link to this heading"></a></h4>
+<h3>4.1.1 Description of the Environment<a class="headerlink" href="#description-of-the-environment" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Development environment OS: Ubuntu18.04 64-bit version</p></li>
 <li><p>Cross tool chain: arm-poky-linux-gnueabi-gcc 5.3.0</p></li>
-<li><p>The board uses the Bootloader version: u-boot-2016.03.</p></li>
+<li><p>The board uses the Bootloader version: u-boot-2016.03</p></li>
 <li><p>Development board kernel: Linux -4.1.15</p></li>
 <li><p>Development board porting QT version: qt5.6.2</p></li>
 </ul>
 </section>
 <section id="source-code-copy">
-<h4>4.1.2 Source Code Copy<a class="headerlink" href="#source-code-copy" title="Link to this heading"></a></h4>
+<h3>4.1.2 Source Code Copy<a class="headerlink" href="#source-code-copy" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Kernel Source: User Profile \ Linux \ source \ kernel \ linux-4.1.15.tar.bz2</p></li>
 <li><p>File system: User Profile \Linux\ mirror \ rootfs-console.tar.bz2 and rootfs-qt.tar.bz2</p></li>
@@ -586,34 +591,35 @@ forlinx@ubuntu:~/work$
 </div>
 </section>
 <section id="id2">
-<h4>4.1.3 Environment Variables Settings<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<h3>4.1.3 Environment Variables Settings<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p><strong>Note: After switching accounts, you need to set the environment variables again.</strong></p>
 <p>To set environment variables before compiling related source code. When compiling the kernel, it is recommended to use the root account to reduce some permission problems. The following source code compilations default to having environment variables set. Set the environment variable requires the following command:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-
+poky-linux-gnueabi
 </pre></div>
 </div>
 </section>
 </section>
 <section id="kernel-compilation">
-<h3>4.2 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h3>
+<h2>4.2 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h2>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>After the kernel source code is decompressed for the first time, the source code needs to be compiled as a whole;</strong></p></li>
 <li><p><strong>After the overall compilation, it can be compiled separately according to the actual situation.</strong></p></li>
 </ul>
 <p>Switch to the root account and extract the kernel source code copied to the /home/forlinx/work directory using the tar command to the kernel source path.</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ sudo su                       // Switch to the root user identity
-[sudo] password for forlinx:                        // Enter the password for the forlinx account as prompted. The input is not echoed.
-root@ubuntu:/home/forlinx/work# tar xvf linux-4.1.15.tar.bz2     // Extract the kernel source code
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ sudo su    // Switch to the root user identity
+[sudo] password for forlinx:    // Enter the password for the forlinx account as prompted. The input is not echoed.
+root@ubuntu:/home/forlinx/work# tar xvf linux-4.1.15.tar.bz2  // Extract the kernel source code
 … …The extraction information is omitted here.
-root@ubuntu:/home/forlinx/work# cd linux-4.1.15                 // Enter the kernel source code directory
+root@ubuntu:/home/forlinx/work# cd linux-4.1.15  // Enter the kernel source code directory
 </pre></div>
 </div>
 <p>Reset the environment variables after switching accounts:</p>
 <p>. /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi</p>
 <p><img alt="Image" src="_images/1715131103158_a0d86cd0_3f4e_4591_a938_bcac008e5789.png" /></p>
 <section id="linux-4-1-15-kernel-full-compilation">
-<h4>4.2.1 Linux-4.1.15 Kernel Full Compilation<a class="headerlink" href="#linux-4-1-15-kernel-full-compilation" title="Link to this heading"></a></h4>
+<h3>4.2.1 Linux-4.1.15 Kernel Full Compilation<a class="headerlink" href="#linux-4-1-15-kernel-full-compilation" title="Link to this heading"></a></h3>
 <p>In the source code directory, there is a compilation script named “build.sh”. Running this script will compile the entire source code.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:/home/forlinx/work# cd linux-4.1.15
 </pre></div>
@@ -634,7 +640,7 @@ root@ubuntu:/home/forlinx/work# cd linux-4.1.15                 // Enter the ker
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>make imx6ull_defconfig</p></td>
-<td><p>1. This command loads a configuration file into .config (which is read from .config when menuconfig does graphical configuration);<br />2. inux-4.1.15/arch/arm/configs/imx6ull_defconfig is the kernel configuration file, when you use the source code for the first time, you need to configure the kernel through this step;<br />3. To configure using “menuconfig”, you need to perform this step first.<br />After saving and exiting the graphical interface configuration, the latest configuration will be updated in the “.config” file.<br />At this point, you can copy the configurations from the “.config” file to “imx6ull_defconfig”,<br />which will serve as the new configuration file.</p></td>
+<td><p>1. This command loads a configuration file into .config<br /> (which is read from .config when menuconfig does graphical configuration);<br />2. inux-4.1.15/arch/arm/configs/imx6ull_defconfig is the kernel configuration file,<br />when you use the source code for the first time,<br />you need to configure the kernel through this step;<br />3. To configure using “menuconfig”, you need to perform this step first.<br />After saving and exiting the graphical interface configuration,<br />the latest configuration will be updated in the “.config” file.<br />At this point, you can copy the configurations from the “.config” file to “imx6ull_defconfig”,<br />which will serve as the new configuration file.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>make zImage</p></td>
 <td><p>To compile “zImage”, after a successful compilation, the “zImage” file<br />will be generated in the “linux-4.1.15/arch/arm/boot/” directory.</p></td>
@@ -652,7 +658,7 @@ root@ubuntu:/home/forlinx/work# cd linux-4.1.15                 // Enter the ker
 </table>
 </section>
 <section id="separate-zimage-compilation">
-<h4>4.2.2 Separate zImage Compilation<a class="headerlink" href="#separate-zimage-compilation" title="Link to this heading"></a></h4>
+<h3>4.2.2 Separate zImage Compilation<a class="headerlink" href="#separate-zimage-compilation" title="Link to this heading"></a></h3>
 <p>The user operates under the kernel source path, provided that the environment variables are set.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:/home/forlinx/work/linux-4.1.15# make imx6ull_defconfig
 root@ubuntu:/home/forlinx/work/linux-4.1.15# make zImage
@@ -661,7 +667,7 @@ root@ubuntu:/home/forlinx/work/linux-4.1.15# make zImage
 <p>Successful compilation will generate zImage in linux-4.1.15/arch/arm/boot/ path.</p>
 </section>
 <section id="separate-device-tree-compilation">
-<h4>4.2.3 Separate Device Tree Compilation<a class="headerlink" href="#separate-device-tree-compilation" title="Link to this heading"></a></h4>
+<h3>4.2.3 Separate Device Tree Compilation<a class="headerlink" href="#separate-device-tree-compilation" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:/home/forlinx/work/linux-4.1.15# make dtbs
 </pre></div>
 </div>
@@ -686,7 +692,7 @@ root@ubuntu:/home/forlinx/work/linux-4.1.15# make zImage
 </table>
 </section>
 <section id="independent-module-compilation">
-<h4>4.2.4 Independent Module Compilation<a class="headerlink" href="#independent-module-compilation" title="Link to this heading"></a></h4>
+<h3>4.2.4 Independent Module Compilation<a class="headerlink" href="#independent-module-compilation" title="Link to this heading"></a></h3>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:/home/forlinx/work/linux-4.1.15# make modules
 </pre></div>
 </div>
@@ -696,7 +702,7 @@ root@ubuntu:/home/forlinx/work/linux-4.1.15# make zImage
 </section>
 </section>
 <section id="creating-the-file-system">
-<h3>4.3 Creating the File System<a class="headerlink" href="#creating-the-file-system" title="Link to this heading"></a></h3>
+<h2>4.3 Creating the File System<a class="headerlink" href="#creating-the-file-system" title="Link to this heading"></a></h2>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>Forlinx provides two types of file systems: the Qt version (rootfs-qt.tar.bz2) and the console version (rootfs-console.tar.bz2);</strong></p></li>
@@ -719,14 +725,16 @@ forlinx@ubuntu:~/work/rootfs$
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/rootfs$ sudo cp ../rootfs-console.tar.bz2 ./
 forlinx@ubuntu:~/work/rootfs$ ls
 rootfs-console.tar.bz2					//Copy succeeded
-forlinx@ubuntu:~/work/rootfs$ sudo tar xvf rootfs-console.tar.bz2 	//Extract file system
+forlinx@ubuntu:~/work/rootfs$ sudo tar xvf rootfs-console.tar.bz2
+//Extract file system
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Remove the original filesystem archive with the rm command</p></li>
 </ol>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/rootfs$ ls
-bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2  run  sbin  sys  tmp  usr  var
+bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2
+run  sbin  sys  tmp  usr  var
 forlinx@ubuntu:~/work/rootfs$ sudo rm rootfs-console.tar.bz2 
 forlinx@ubuntu:~/work/rootfs$ ls
 bin  dev  etc  forlinx  home  lib  media  mnt  proc  run  sbin  sys  tmp  usr  var
@@ -736,7 +744,8 @@ forlinx@ubuntu:~/work/rootfs$
 <ol class="arabic simple" start="4">
 <li><p>After the user has made changes to the file system according to his needs, he can use the tar command to compress the file system again. If you are operating with a regular account, you need to use the fakeroot command emulates root permissions to avoid file permissions changes.</p></li>
 </ol>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/rootfs$ sudo fakeroot tar cvjf rootfs-console.tar.bz2 *      //*There is a space in front of it
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/rootfs$ sudo fakeroot tar cvjf rootfs-console.tar.bz2 *      
+//*There is a space in front of it
 forlinx@ubuntu:~/work/rootfs$ ls
 bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2  run  sbin  sys  tmp  usr  var
 </pre></div>
@@ -744,9 +753,9 @@ bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2  run
 <p>Using the “ls” command, you can see the generated “rootfs-console.tar.bz2” compressed package, which is the filesystem image that can be flashed to the development board’s flash memory.</p>
 </section>
 <section id="application-compilation-and-operation">
-<h3>4.4 Application Compilation and Operation<a class="headerlink" href="#application-compilation-and-operation" title="Link to this heading"></a></h3>
+<h2>4.4 Application Compilation and Operation<a class="headerlink" href="#application-compilation-and-operation" title="Link to this heading"></a></h2>
 <section id="command-line-application-compilation-and-operation">
-<h4>4.4.1 Command Line Application Compilation and Operation<a class="headerlink" href="#command-line-application-compilation-and-operation" title="Link to this heading"></a></h4>
+<h3>4.4.1 Command Line Application Compilation and Operation<a class="headerlink" href="#command-line-application-compilation-and-operation" title="Link to this heading"></a></h3>
 <p><strong>Note: The cross-compiler is installed and the environment variables are set by default for the following operations.</strong></p>
 <p>This subsection uses the watchdog test program, the default program is copied to the /home/forlinx/work directory, refer to “4.1.2 Copying the Source Code”</p>
 <p>1. Use the cd command to enter the /home/forlinx/work directory;</p>
@@ -762,7 +771,9 @@ bin  dev  etc  forlinx  home  lib  media  mnt  proc  rootfs-console.tar.bz2  run
 </pre></div>
 </div>
 <p>Information results:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>wdttest: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter 	/lib/ld-linux-armhf.so.3, for GNU/Linux 2.6.32,
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>wdttest: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), 
+dynamically linked, interpreter
+/lib/ld-linux-armhf.so.3, for GNU/Linux 2.6.32,
 BuildID[sha1]=400fbba6005ea8e7344df7080ab10d9ef54e3a45, not stripped
 </pre></div>
 </div>
@@ -774,21 +785,21 @@ BuildID[sha1]=400fbba6005ea8e7344df7080ab10d9ef54e3a45, not stripped
 </pre></div>
 </div>
 <p>Give the program executable permission and run it</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# chmod 766 wdttest				   //Set executable permissions for the program
-root@fl-imx6ull:~#./wdttest	 /dev/watchdog settimeout 60 &amp;           //Run the program
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# chmod 766 wdttest //Set executable permissions for the program
+root@fl-imx6ull:~#./wdttest	 /dev/watchdog settimeout 60 &amp;        //Run the program
 </pre></div>
 </div>
 <p>4. Refer to the “Watchdog Test” section of the software manual for testing.</p>
 </section>
 <section id="qt-application-compilation-and-running">
-<h4>4.4.2 QT Application Compilation and Running<a class="headerlink" href="#qt-application-compilation-and-running" title="Link to this heading"></a></h4>
+<h3>4.4.2 QT Application Compilation and Running<a class="headerlink" href="#qt-application-compilation-and-running" title="Link to this heading"></a></h3>
 <section id="qt-application-compilation">
-<h5>4.4.2.1 QT Application Compilation<a class="headerlink" href="#qt-application-compilation" title="Link to this heading"></a></h5>
+<h4>4.4.2.1 QT Application Compilation<a class="headerlink" href="#qt-application-compilation" title="Link to this heading"></a></h4>
 <p><strong>Note: The cross-compiler is installed and the environment variables are set by default for the following operations.</strong></p>
 <ul class="simple">
 <li><p>Method 1: Compile with qmake from the command line</p></li>
 </ul>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ sudo chmod -R 766 audio/	             // Add permissions to audio application
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ sudo chmod -R 766 audio/	   // Add permissions to audio application
 forlinx@ubuntu:~/work$ qmake
 forlinx@ubuntu:~/work$ make
 </pre></div>
@@ -824,7 +835,7 @@ forlinx@ubuntu:~/work$ make
 <p><img alt="Image" src="_images/1715131105880_d25368ef_b526_437d_9b80_9ccfb6ea02c3.png" /></p>
 </section>
 <section id="qt-application-running">
-<h5><strong>4.4.2.2 QT Application Running</strong><a class="headerlink" href="#qt-application-running" title="Link to this heading"></a></h5>
+<h4><strong>4.4.2.2 QT Application Running</strong><a class="headerlink" href="#qt-application-running" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Replace the method of running QT program in the desktop</p></li>
 </ul>
@@ -844,9 +855,12 @@ forlinx@ubuntu:~/work$ make
 </pre></div>
 </div>
 <p>Give executable permissions and save to reboot the development board:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:/usr/bin# chmod a+x fltest_qt_audio                     // Grant executable permissions to all user groups.
-root@fl-imx6ull:/usr/bin# sync                                         // Synchronize files.
-root@fl-imx6ull:/usr/bin# reboot                                      // Reboot the development board.
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:/usr/bin# chmod a+x fltest_qt_audio
+// Grant executable permissions to all user groups.
+root@fl-imx6ull:/usr/bin# sync
+// Synchronize files.
+root@fl-imx6ull:/usr/bin# reboot
+// Reboot the development board.
 </pre></div>
 </div>
 <p>4. After the board restarts, if the audio test application in the Qt interface is the latest version and you can play audio by clicking on “play,” it indicates that the newly compiled Qt application is functional. This also confirms the successful configuration of the Qt application development environment.</p>
@@ -876,20 +890,22 @@ root@fl-imx6ull:/usr/bin# reboot                                      // Reboot 
 </div>
 </section>
 <section id="qt-desktop-emmc-version-only">
-<h5><strong>4.4.2.3 QT Desktop (EMMC Version Only)</strong><a class="headerlink" href="#qt-desktop-emmc-version-only" title="Link to this heading"></a></h5>
+<h4><strong>4.4.2.3 QT Desktop (EMMC Version Only)</strong><a class="headerlink" href="#qt-desktop-emmc-version-only" title="Link to this heading"></a></h4>
 <p><strong>Startup Applications</strong></p>
 <p>After the Qt system boots up, the desktop program starts by default. If you need to automatically start a user program, please modify the following file in the file system: /etc/matchbox/session.</p>
 <p>Add your own application after matchbox-desktop &amp;. For example, to add a ping test program: fltest_qt_ping &amp;.</p>
 <p>The ping test program will then start automatically when the system boots.</p>
 <p>If you comment out the following part:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># matchbox-desktop &amp;
-# matchbox-panel --titlebar --start-applets $START_APPLETS --end-applets $END_APPLETS &amp;
+# matchbox-panel --titlebar --start-applets $START_APPLETS --end-
+applets $END_APPLETS &amp;
 </pre></div>
 </div>
 <p>The desktop will not run and the title bar will not be displayed.</p>
 <p>If you modify the match-panel option, the content of the title bar will be changed. For example, if you remove clock from “END_APPLETS=clock,battery,$KEYBOARD_APPLET,systray,startup-notify,notify”, the time will not be displayed. e.g.:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>START_APPLETS=showdesktop,windowselector
-END_APPLETS=battery,$KEYBOARD_APPLET,systray,startup-notify,notify
+END_APPLETS=battery,$KEYBOARD_APPLET,systray,startup-notify,
+notify
 matchbox-panel --titlebar --start-applets $START_APPLETS --end-applets $END_APPLETS &amp;
 </pre></div>
 </div>
@@ -932,7 +948,6 @@ Categories=Forlinx;
 </div>
 <p>Each application corresponds to a.desktop file. Take Ping as an example:</p>
 <p>It specifies the icon, the location of the executable program, and the folder in which it is displayed on the desktop.</p>
-</section>
 </section>
 </section>
 </section>
