@@ -42,13 +42,13 @@ There are total four chapters:
 
 A description of some of the symbols and formats associated with this manual:
 
-|                            Format                            | <font style="color:rgb(0,0,0);">Meaning                      |
+|                            Format                            | Meaning                                                      |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| <font style="color:rgb(0,0,255);background-color:rgb(215,215,215);">Blue font on gray background | Refers to commands entered at the command line (Manual input required). |
-| <font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Black font on gray background | Serial port output message after entering a command          |
-| <font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Bold black on gray background | Key information in the serial port output message            |
-|              <font style="color:rgb(0,0,0);">//              | Interpretation of input instructions or output information   |
-| <font style="color:rgb(0,0,0);">Username<font style="color:rgb(0,0,0);">@<font style="color:rgb(0,0,0);">Hostname | forlinx @ localhost: development board network port login account information, root @ localhost: : development board serial port login account information forlinx @ Ubuntu: ~ $development environment Ubuntu account information. You can determine the function operation environment through this information. |
+| <font style="color:rgb(0,0,255);background-color:rgb(215,215,215);">Blue font on gray background</font> | Refers to commands entered at the command line (Manual input required). |
+| <font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Black font on gray background</font> | Serial port output message after entering a command          |
+| **<font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Bold black on gray background</font>** | Key information in the serial port output message            |
+|                              //                              | Interpretation of input instructions or output information   |
+|                      Username@Hostname                       | forlinx @ localhost: development board network port login account information, root @ localhost: : development board serial port login account information forlinx @ Ubuntu: ~ $development environment Ubuntu account information. You can determine the function operation environment through this information. |
 
 Example: Read the temperature of sensor 3:
 

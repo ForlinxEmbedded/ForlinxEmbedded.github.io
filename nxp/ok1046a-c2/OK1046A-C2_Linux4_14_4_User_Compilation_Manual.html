@@ -1,0 +1,795 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubuntu18.04+Linux4.14.47_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded LS1046A Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/ok1046a-c2/OK1046A-C2_Linux4_14_4_User_Compilation_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Ubuntu18. 04+Linux4.14.47_User’s Manual_V2.0" href="OK1046A-C2_Linux4_1_14_User_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK1046A-C2_User_Hareware_Manual.html">User’s Hardware Manual_V2.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK1046A-C2_Linux4_1_14_User_Manual.html">Ubuntu18. 04+Linux4.14.47_User’s Manual_V2.0</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ubuntu18.04+Linux4.14.47_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-download-and-purchase">1.1 VMware Software Download and Purchase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basic-ubuntu-installation">3.1.3 Basic Ubuntu Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-network-settings">3.1.4 Ubuntu Network Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#u-disk-loading">3.1.5 U Disk Loading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#required-library-installation">3.1.6 Required Library Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#related-code-compilation">4. Related Code Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description-of-the-environment">4.1.1 Description of the Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#source-code-copy">4.1.2 Source Code Copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#environment-variables-settings">4.1.3 Environment Variables Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code-compilation">4.2 Source Code Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#source-code-path">4.2.1 Source Code Path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#full-compilation-of-source-code">4.2.2 Full Compilation of Source Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-firmware-separately">4.2.3 Compiling Firmware Separately</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-kernel-and-modules-separately">4.2.4 Compiling Kernel and Modules Separately</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-the-app-program-separately">4.2.5 Compiling the App Program Separately</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compilation-and-operation-of-application-program">4.2.6 Compilation and Operation of Application Program</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/nxp/ls-development-manual/index.html">LS Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded LS1046A Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Ubuntu18.04+Linux4.14.47_User’s Compilation Manual_V1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ubuntu18-04-linux4-14-47-users-compilation-manual-v1-0">
+<h1>Ubuntu18.04+Linux4.14.47_User’s Compilation Manual_V1.0<a class="headerlink" href="#ubuntu18-04-linux4-14-47-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p><strong>User Manual Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>2022/02/10</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>OK1046A-C2_User’s Compilation Manual Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to enable you to quickly understand the compilation process of the products and familiarize yourselves with the compilation methods of Forlinx products. The application needs to be cross-compiled on an ubuntu host before it can run on the development board. By following the methods provided in the compilation manual and performing practical operations, users will be able to successfully compile their own software code.</p>
+<p>The manual will provide instructions for setting up the environment but there may be some unforeseen issues during the environment setup process. For beginners, it is recommended to use the pre-configured development environment provided by us. This will allow you to quickly get started and reduce development time.</p>
+<p>Linux systems are typically installed in three ways: dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine. Hardware Requirements: It is recommended to have at least8GB memory or above.It allows for allocating a sufficient memory to the virtual machine (recommended to allocate2GBor above), while still leaving enough resources for other operations onWindows. Insufficient memory allocation may result in slower performance onWindows.</p>
+<p>The manual is mainly divided into four chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. is mainly about the installation of VMware, and the version used is VMware Workstation 15 Pro15.1.0. You need to install VMware before using the ubuntu development environment;</p></li>
+<li><p>Chapter 2. mainly introduces the method of loading the ubuntu development environment provided by Forlinx, and the development environment is 64-bit ubuntu18;</p></li>
+<li><p>Chapter 3. mainly introduces the method of building a new ubuntu development environment; It takes 64-bit Ubuntu 18.04 as an example to describe the creation process of Ubuntu. Due to different computer configurations, unexpected problems may arise during the setup process. It is recommended for beginners to use the environment that we have set up directly.</p></li>
+<li><p>Chapter 4. mainly describes the compiling method of the source code related to the development board, including the kernel source code compilation and the application program compilation.</p></li>
+</ul>
+<p>A description of some of the symbols and formats associated with this manual:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><font style="color:rgb(0,0,255);background-color:rgb(215,215,215);">Blue font on grey background</font></p></td>
+<td><p>Refers to commands entered at the command line (Manual input required).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Black font on gray background</font></p></td>
+<td><p>Serial port output message after entering a command</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><strong><font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Bold black on gray background</strong></p></td>
+<td><p>Key information in the serial port output message</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>//</p></td>
+<td><p>Interpretation of input instructions or output information</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Username&#64;Hostname</p></td>
+<td><p>root &#64; localhost: ~ : development board serial port login account information,<br />forlinx &#64; localhost: ~ : Development board network login account information<br />forlinx &#64; Ubuntu ~ $: Development environment Ubuntu account information<br />This information allows you to determine the environment, in which the feature operates.</p></td>
+</tr>
+</tbody>
+</table>
+<p><font style="color:rgb(0,0,0);">Example: View the files that exist in the current path.</font></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ ls
+OK10xx-linux-fs.tar.bz2                  //Source code package
+</pre></div>
+</div>
+<p><font style="color:rgb(0,0,0);">forlinx&#64;ubuntu~/work$：User name: forlinx，host name: ubuntu, means to operate in the development environment Ubuntu.</font></p>
+<p><font style="color:rgb(0,0,0);">// : Explanation of operating instructions, no need to enter</font></p>
+<p><font style="color:rgb(0,0,255);background-color:rgb(217,217,217);">ls</font><font style="color:rgb(0,0,0);">：Blue font with gray background, indicating relevant commands requiring manual input</font></p>
+<p><strong><font style="color:rgb(0,0,0);background-color:rgb(127,127,127);">OK10xx-linux-fs.tar.bz2</font><font style="color:rgb(0,0,0);">：</font></strong><font style="color:rgb(0,0,0);">The black font with gray background is the output information after the input command, and the bold font is the key information. Here is the source code package.</font></p>
+</section>
+<section id="vmware-virtual-machine-software-installation">
+<h2>1. VMware Virtual Machine Software Installation<a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h2>
+<p>This chapter mainly introduces the installation of VMware virtual machine, and takes VMware workstation 15 Pro v15.1.0 as an example to show the installation and configuration process of the operating system.</p>
+<section id="vmware-software-download-and-purchase">
+<h3>1.1 VMware Software Download and Purchase<a class="headerlink" href="#vmware-software-download-and-purchase" title="Link to this heading"></a></h3>
+<p>Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.</p>
+<p><img alt="Image" src="_images/1719394388525_bb90a30a_3124_408d_947c_693bbf2596d4.png" /></p>
+<p>After the download is complete, double-click the startup file to start the installer.</p>
+</section>
+<section id="vmware-software-installation">
+<h3>1.2 VMware Software Installation<a class="headerlink" href="#vmware-software-installation" title="Link to this heading"></a></h3>
+<p>Double-click the startup program to enter the installation wizard.</p>
+<p><img alt="Image" src="_images/1719394388828_96aac25a_1af3_4b4e_a8e3_8a86dcdb7c1f.png" /></p>
+<p>Click “Next”.</p>
+<p><img alt="Image" src="_images/1719394389067_7186d3a1_1737_4760_8456_b2b7df4126da.png" /></p>
+<p>Check I accept the terms in the license agreement and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394389272_1cd87701_83b4_4750_b334_656fe28426e0.png" /></p>
+<p>Modify the installation location to the partition of your computer where the software is installed, and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394389492_e78fd85f_adc7_4b51_85c1_c6caaa6233a4.png" /></p>
+<p>Check and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394389730_88ba23eb_ac47_4a82_bdbe_5d4c9f705223.png" /></p>
+<p>Check Add Shortcut and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394389948_783b3ba3_667e_4ad0_a0fb_134c3cf3b5bb.png" /></p>
+<p>Click “Installation”.</p>
+<p><img alt="Image" src="_images/1719394390146_729472d9_6ec6_4434_8f27_318fe80a2594.png" /></p>
+<p>Wait for the installation to complete.</p>
+<p><img alt="Image" src="_images/1719394390370_f7596cd3_9011_48ad_ae3b_082fec9ce9c9.png" /></p>
+<p>Click “Finish” to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.</p>
+</section>
+</section>
+<section id="loading-the-existing-ubuntu-development-environment">
+<h2>2. Loading the Existing Ubuntu Development Environment<a class="headerlink" href="#loading-the-existing-ubuntu-development-environment" title="Link to this heading"></a></h2>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>It is recommended that beginners use the virtual machine environment built by Forlinx directly. After understanding this chapter, you can directly jump to the compilation chapter for further study;</strong></p></li>
+<li><p><strong>The account that provides the development environment is: for Linux and the password is: forlinx.</strong></p></li>
+</ul>
+<p>There are two ways to use a virtual machine environment under VMware. One is to directly load an existing environment, and the other is to create a new environment. Let’s first talk about how to load an existing environment.</p>
+<p>First, download the development environment provided by Forlinx. After downloading, select the Ubuntu 18 compressed package and right click to extract it to the OK1043&amp;OK1046&amp;OK1012-Linux4.14.47-VM 15_1_0-ubuntu18_04 folder:</p>
+<p><img alt="Image" src="_images/1719394379459_ba72f11a_5a21_4bd3_b9c1_8539e714f2b7.png" /></p>
+<p>After the decompression is completed, as shown in the figure below:</p>
+<p><img alt="Image" src="_images/1719394379791_323d0cf9_9595_42ae_a2cd_a5630e95f2ec.png" /></p>
+<p>Ubuntu18.vmx in the ubuntu18 folder is the file to be clocked by the virtual machine.</p>
+<p>Open the installed virtual machine.</p>
+<p><img alt="Image" src="_images/1719394380093_66437dec_9085_482a_95eb_cecc7341ea9a.png" /></p>
+<p>Select the directory where the newly extracted ubuntu18 virtual machine file is located, select ubuntu18.vmx, and click “Open”.</p>
+<p><img alt="Image" src="_images/1719394380332_dfc0fca3_a145_4ac9_8aaf_ae18acae52c2.png" /></p>
+<p>After loading, click to open the virtual machine to run and enter the system interface.</p>
+<p><img alt="Image" src="_images/1719394380588_2e337648_ef6e_4476_b7cc_d976808b2223.png" /></p>
+<p>When the development environment is loaded for the first time, the following will appear. Select “I have copied this virtual machine (P)”, and the system will automatically load it..</p>
+<p><img alt="Image" src="_images/1719394380795_bd1a6acb_36c6_4056_b8d7_99e74dc0d904.png" /></p>
+<p>After loading, you will enter the following interface, enter the password: forlinx, and select “Sign in” to log in after filling in the password..</p>
+<p><img alt="Image" src="_images/1719394381131_20258bb8_f54e_40fb_a09d_622c61a9579d.png" /></p>
+<p>Password: forlinx.</p>
+<p><img alt="Image" src="_images/1719394381496_4ff54a3f_01b8_485c_be0a_40d4ab2677ac.png" /></p>
+</section>
+<section id="new-ubuntu-development-environment-setup">
+<h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section;</strong></p></li>
+<li><p><strong>This chapter focuses on the process of creating the Ubuntu system and does not cover the setting up of the compilation environment. The main reason for this is that in order to build a compilable source code environment, one needs to download the official source code of NXP in Ubuntu 18.04. Setting up Ubuntu compilation can be complex and prone to compilation problems.</strong></p></li>
+</ul>
+<section id="ubuntu-system-setup">
+<h3>3.1 Ubuntu System Setup<a class="headerlink" href="#ubuntu-system-setup" title="Link to this heading"></a></h3>
+<section id="ubuntu-virtual-machine-setup">
+<h4>3.1.1 Ubuntu Virtual Machine Setup<a class="headerlink" href="#ubuntu-virtual-machine-setup" title="Link to this heading"></a></h4>
+<p>Open the VMware software, click on create a new virtual machine. Enter the following interface:</p>
+<p><img alt="Image" src="_images/1719394361294_463420a4_c9f3_42dd_8f72_fc7bbf8726ee.png" /></p>
+<p>Choose custom, and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394361514_9e186583_9f15_490e_8939_1c976175158c.png" /></p>
+<p>Select the compatibility with the corresponding version of VMware, which can be found in Help-&gt;About VMware Workstation, and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394361728_47ef0923_0c6e_4b7f_a0ba_81c2802e9496.png" /></p>
+<p>Select Install the operating system later and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394361970_8d3d5ff2_849d_4a7d_85e7_cb51e0b60bf2.png" /></p>
+<p>Leave the default and click “Next”.</p>
+<p><img alt="Image" src="_images/1719394362171_23f537d3_e411_4d8e_9690_4a9e8353664f.png" /></p>
+<p>Modify the virtual machine name and installation location, click “Next”.</p>
+<p><img alt="Image" src="_images/1719394362408_616dac9c_b2e8_4494_8d86_56df86377c94.png" /></p>
+<p><img alt="Image" src="_images/1719394362607_756d8bf3_8e1f_4be3_87d3_9344c9a8c364.png" /></p>
+<p>Again, set the memory size as appropriate.</p>
+<p><img alt="Image" src="_images/1719394362823_500a97ad_cddf_4ba0_8eb0_04435eecab87.png" /></p>
+<p>Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.</p>
+<p><img alt="Image" src="_images/1719394363044_66b2a976_f18d_4996_9312_e517b6cf5931.png" /></p>
+<p>The default selection for the IO controller type here is LSI.</p>
+<p><img alt="Image" src="_images/1719394363247_89f3facb_0802_467d_bc96_79baeab9c49b.png" /></p>
+<p>The default selection here is also SCSI.</p>
+<p><img alt="Image" src="_images/1719394363487_2a828644_c374_4b24_bfe1_edf6ba017fa9.png" /></p>
+<p>Choose to create a new virtual disk here.</p>
+<p><img alt="Image" src="_images/1719394363662_581e7231_4262_414b_93bc_85b42262ca13.png" /></p>
+<p>Set the disk size to 200 gigabytes and select the form in which the disk exists, then click Next to finish.</p>
+<p>Specify the disk file, the default one here is fine.</p>
+<p><img alt="Image" src="_images/1719394363873_289aa837_8337_4406_83ca_f0e46e0340f2.png" /></p>
+<p>Click Finish by default.</p>
+<p><img alt="Image" src="_images/1719394364073_3926cbeb_a9fb_42b7_b73f_9c602c39d422.png" /></p>
+<p>The virtual machine creation is now complete.</p>
+<p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
+</section>
+<section id="system-installation">
+<h4>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h4>
+<p>The Ubuntu version chosen to install is 18.04. First, go to the Ubuntu official website to get the Ubuntu 18.04 64-bit image. Go to http://releases.ubuntu.com/18.04/ to downlaod “ubuntu-18.04.5-desktop-amd64.iso.</p>
+<p><img alt="Image" src="_images/1719394364250_932c72b4_4992_408b_b19e_806dcbc334f9.png" /></p>
+<p>Right-click the newly created Ubuntu 64-bit and select Settings from the pop-up menu:</p>
+<p><img alt="Image" src="_images/1719394364496_a3207cd9_0ff9_453c_ac9d_0f5d7bacd03a.png" /></p>
+<p>The “Virtual Machine Settings Menu” pops up as shown below:：</p>
+<p><img alt="Image" src="_images/1719394364692_916e8c8d_f97d_4ace_9f4b_bdc47070d2cf.png" /></p>
+<p>Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.</p>
+<p><img alt="Image" src="_images/1719394364874_e6f14c68_1f5d_4edb_8c2f_d81b8b722931.png" /></p>
+<p>After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.</p>
+<p><img alt="Image" src="_images/1719394365102_8ffc8f77_3492_44db_8638_0a87f33a7dd6.png" /></p>
+<p>After starting the virtual machine, wait for the installation interface to appear as shown below.</p>
+<p><img alt="Image" src="_images/1719394365493_74b12d93_1cd8_4171_8916_80b55e3312bb.png" /></p>
+<p>After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.</p>
+<p><img alt="Image" src="_images/1719394365745_02853d15_a2dd_4253_b18f_ef7c5eeeafa8.png" /></p>
+<p>Next, by default, select continue to finish the installation, the installation process will be very slow, then click “continue”:</p>
+<p><img alt="Image" src="_images/1719394365959_c25c4f32_d17e_41f7_a124_ed7d0fcd76a2.png" /></p>
+<p>Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:</p>
+<p><img alt="Image" src="_images/1719394366166_2c7246cc_d995_462e_9493_d87fd0db766c.png" /></p>
+<p><img alt="Image" src="_images/1719394366368_dd524488_8b95_4bbe_b5fb_a93ded5c9ca9.png" /></p>
+<p>Next, select the timezone. You can either click on the Shanghai timezone or enter “Shanghai” (or choose the appropriate timezone based on your location). Then, click “Continue” to proceed. Finally, set the user name and password (take the user name: forlinx, password: forlinx as an example, the user can set it according to actual needs), and click “continue” to automatically install:</p>
+<p><img alt="Image" src="_images/1719394366561_42c01678_998d_4664_ae98_77c9bb4a520a.png" /></p>
+<p>The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.</p>
+<p><img alt="Image" src="_images/1719394366811_994c96d1_8ca3_4f7a_abc8_bc91661c8b1b.png" /></p>
+<p>After the installation, click “Restart Now” to reboot (or click “Reboot Client”):</p>
+<p><img alt="Image" src="_images/1719394367141_370600e2_b37a_43ff_baba_a246d7e6ef16.png" /></p>
+<p><img alt="Image" src="_images/1719394367443_d23ffd5d_87f9_4d8d_9c9f_241014ba9360.png" /></p>
+<p>After the restart, you need to use the user name and password to log in. The system interface after login is as shown below:</p>
+<p><img alt="Image" src="_images/1719394367779_0f392c5e_13c8_4026_8d72_a34d879af244.png" /></p>
+<p><img alt="Image" src="_images/1719394368209_09135edf_5d85_4c6c_8711_d104449727b9.png" /></p>
+<p>Above, the Ubuntu system installation is completed by the following figure configuration, click “OK”, and then re-open the virtual machine to see if you can start Ubuntu normally.</p>
+<p><img alt="Image" src="_images/1719394368514_442bf5cd_14b0_4ff5_90b4_765075535216.png" /></p>
+</section>
+<section id="basic-ubuntu-installation">
+<h4>3.1.3 Basic Ubuntu Installation<a class="headerlink" href="#basic-ubuntu-installation" title="Link to this heading"></a></h4>
+<p>After installing the Ubuntu 18.04 operating system, there are a few configurations to make.</p>
+<ul class="simple">
+<li><p><strong>VMware Tools Installation:</strong></p></li>
+</ul>
+<p>Next, install VMware Tools. Without installing this tool, you won’t be able to copy and paste and drag file between the Windows host and the virtual machine. First click on “Virtual Machines” on the VMware navigation bar, then click “Install VMware Tools” in the drop-down box.</p>
+<p><img alt="Image" src="_images/1719394368740_4862aeea_f7c4_433c_93bf_63bf2b70d632.png" /></p>
+<p>Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:</p>
+<p><img alt="Image" src="_images/1719394368975_f1fbae24_0787_4419_a297_edf0145f7159.png" /></p>
+<p>Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).</p>
+<p><img alt="Image" src="_images/1719394369196_8a4d5f38_3c40_44c9_be30_13b6c6425cd7.png" /></p>
+<p>Copy the file under the home directory (i.e., the directory of the home personal username):</p>
+<p><img alt="Image" src="_images/1719394369428_fe154176_d1e4_4b85_905b_9dfca00ac034.png" /></p>
+<p><img alt="Image" src="_images/1719394369751_1925cdea_8e86_4330_bca3_a199bc34c51d.png" /></p>
+<p>Press [Ctrl+Alt+T] to bring up the terminal command interface, and use the tar command to decompress the VMware tools installation package (using the sudo command will prompt for the password, according to the prompts directly enter the password enter can be used, Linux system password input does not show):</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.10-12406962.tar.gz 
+[sudo] password for forlinx:
+</pre></div>
+</div>
+<p>After executing the extract command, use ls to view the file directory vmware-tools-distrib, and go to the directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ls
+Desktop examples.desktop nfs snap tftp VMwareTools-10.3.10-12406962.tar.gz vmware-tools-distrib work
+forlinx@ubuntu:~$ cd vmware-tools-distrib/  //Use the CD command to enter the directory
+forlinx@ubuntu:~/vmware-tools-distrib$ ls //View the files in this directory
+bin caf doc etc FILES INSTALL installer lib vgauth vmware-install.pl
+</pre></div>
+</div>
+<p>In the current directory, enter sudo ./vmware-install.pl to install, enter the password after pressing Enter, and then start the installation. When you encounter yes, enter yes, and press Enter for the rest to install by default.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/vmware-tools-distrib$ sudo ./vmware-install.pl
+[sudo] password for forlinx: //Enter the password of the forlinx account, no display, cannot see the input content
+</pre></div>
+</div>
+<p>The installation process information is long, here omitted.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>open-vm-tools packages are available from the OS vendor and VMware recommends 
+using open-vm-tools packages. See http://kb.vmware.com/kb/2073803 for more 
+information.
+Do you still want to proceed with this installation? [no] yes //Enter yes
+... ... 
+</pre></div>
+</div>
+<p>After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, enable Auto Resize by clicking View, then Auto Adapt to Client. Ensure that VMware tools have been installed successfully.</p>
+<p><img alt="Image" src="_images/1719394369970_77877781_616f_4639_9af2_c094c3b7c496.png" /></p>
+<ul class="simple">
+<li><p><strong>Basic Settings:</strong></p></li>
+</ul>
+<p>Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.</p>
+<p><img alt="Image" src="_images/1719394370218_e7ae0eef_22bd_4169_96a9_757abf704313.png" /></p>
+</section>
+<section id="ubuntu-network-settings">
+<h4>3.1.4 Ubuntu Network Settings<a class="headerlink" href="#ubuntu-network-settings" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>NAT Mode</strong></p></li>
+</ul>
+<p>Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:</p>
+<p><img alt="Image" src="_images/1719394370454_ef558318_b462_40e1_9ac3_1796f10f487a.png" /></p>
+<p>When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VMs to get on the extranet.</p>
+<p><img alt="Image" src="_images/1719394370711_47d183f2_b67b_45e3_bece_31e628de5a3f.png" /></p>
+<p><img alt="Image" src="_images/1719394370954_0945307b_e013_4ca7_9933_0011ecdaedb3.png" /></p>
+<p>The network is set to dynamic IP.</p>
+<p><img alt="Image" src="_images/1719394371155_a9059469_ecfc_46c5_91d8_41d7b0c221e7.png" /></p>
+<p><strong>Bridge Mode:</strong></p>
+<p><strong>Note: The IP and DNS involved in the network settings section should be set according to the user’s own actual environment, the manual is an example.</strong></p>
+<p>If you use TFTP, SFTP and other servers, you need to set the virtual machine as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.</p>
+<p><img alt="Image" src="_images/1719394371341_2ac00101_cfeb_45bf_a17d_63b562b8e56b.png" /></p>
+<p><img alt="Image" src="_images/1719394371541_cca09c17_304c_4eea_b52c_4946f07d6f76.png" /></p>
+<p><img alt="Image" src="_images/1719394371702_1f7f579f_1d82_42c8_8a96_0fcd0bb73652.png" /></p>
+<p>Set up static ip, at this time Ubuntu’s IP and the host IP need to be set in the same network segment.</p>
+<p><img alt="Image" src="_images/1719394371888_bbde3a0f_9b11_4998_b47e_27555d29645c.png" /></p>
+</section>
+<section id="u-disk-loading">
+<h4>3.1.5 U Disk Loading<a class="headerlink" href="#u-disk-loading" title="Link to this heading"></a></h4>
+<p>Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don’t set it up, when we plug in the USB3.0 port, we can’t connect to the virtual machine. As shown below:</p>
+<p><img alt="Image" src="_images/1719394372132_e8c1f877_90f3_446a_a83f_eac9b63da82f.png" /></p>
+<p>After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the “U disk”, right-click –&gt; connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:</p>
+<p><img alt="Image" src="_images/1719394372354_777fb423_d535_427b_95d3_1015f63a1afe.png" /></p>
+<p><img alt="Image" src="_images/1719394372562_4c52d051_8585_4957_9d0f_e75e6a6ae50e.png" /></p>
+</section>
+<section id="required-library-installation">
+<h4>3.1.6 Required Library Installation<a class="headerlink" href="#required-library-installation" title="Link to this heading"></a></h4>
+<p>Before development, there are some other necessary libraries, we use the following commands to install them one by one, before installation, you need to ensure that the network can be used normally, you can get on the extranet:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update  // Update the download source information.
+forlinx@ubuntu:~$ sudo apt-get install build-essential // Provide the list information of software packages necessary for compiling programs.
+forlinx@ubuntu:~$ sudo apt-get install libncurses* // Used to generate text-based user interfaces.
+forlinx@ubuntu:~$ sudo apt-get install lzop // A compression and decompression tool based on the Lzo library.
+forlinx@ubuntu:~$ sudo apt-get install net-tools // Network configuration tools. 
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="related-code-compilation">
+<h2>4. Related Code Compilation<a class="headerlink" href="#related-code-compilation" title="Link to this heading"></a></h2>
+<p>flexbuild is the official compilation environment provided by NXP for the QorIQ LS series. Forlinx has customized and modified the official NXP version of flexbuild for the OK1046A-C2 platform, which is more suitable for users to develop quickly. flexbuild provides all the source code needed to compile the entire system, such as the Linux kernel, uboot, firmware, app program, and a complete file system. Users can directly use the provided file system. However, it is also possible to compile a new files ystem from scratch. It is important to note that building a file system from scratch may result in missing configurations when compared to the file system provided by Forlinx. Therefore, it is not recommended to do so.</p>
+<p>Flexbuild defaults to supporting only Ubuntu 18, but it also supports Docker. Since most users are not familiar with Docker, it is strongly recommended that you use Forlinx’s provided Ubuntu 18 virtual machine for compiling and development.</p>
+<p>Note: The virtual machine username is forlinx and the password is forlinx.</p>
+<p>The compilation of OK1043A-C3 software image is divided into two parts. The first part is related to the first stage of startup, which mainly includes rcw, u-boot, network-related firmware and security-related firmware. The whole is compiled into a 16M firmware image. Chapter 2. Ubuntu File System</p>
+<section id="preparation-before-compilation">
+<h3>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
+<section id="description-of-the-environment">
+<h4>4.1.1 Description of the Environment<a class="headerlink" href="#description-of-the-environment" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>OS: Ubuntu18.04 64-bit version</p></li>
+<li><p>Cross-toolchain: aarch64-linux-gnu-gcc</p></li>
+<li><p>Bootloader of Development board: u-boot 2018.03</p></li>
+<li><p>Development Board Kernel: Linux-4.14. 47</p></li>
+<li><p>SDK version: LSDK-18.06-V4.14.47</p></li>
+</ul>
+</section>
+<section id="source-code-copy">
+<h4>4.1.2 Source Code Copy<a class="headerlink" href="#source-code-copy" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Source code package: user profile \ Linux \ source code \ OK10xx-Linux-fs. Tar</p></li>
+</ul>
+<p>There are many kinds of file transfers between ubuntu and Windows hosts. After installing VMware Tools, you can set up a virtual machine shared folder to mount the file directory of the Windows host to ubuntu for file sharing. Two methods are described below, and the first is recommended.</p>
+<ul class="simple">
+<li><p>Method 1: You can directly copy the source code to the virtual machine/home/forlinx/work/directory.</p></li>
+<li><p>Method 2: Use the method of sharing files. The setting method is as follows. Click “Virtual Machine” in the menu bar and select “Settings”.</p></li>
+</ul>
+<p><img alt="Image" src="_images/1719394346034_6a8e0424_6377_4030_8c74_895cfb2cb966.png" /></p>
+<p>Click “Options”, enable “Shared Folder”, set the shared directory on the Windows host, and click “OK”.</p>
+<p><img alt="Image" src="_images/1719394346248_f740b869_11b2_4b6d_8265_228fff8e0410.png" /></p>
+<p>After the virtual machine’s file sharing is set up, put the kernel source code OK10xx-linux-fs.tar.bz2 used for the test into the shared folder of the Windows host.</p>
+<p>The shared folder is in the Ubuntu mount directory/mnt/hgfs/share. View the files in the mount directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ls /mnt/hgfs/share/
+OK10xx-linux-fs.tar.bz2
+</pre></div>
+</div>
+<p>Copy the source code from the shared folder to the Ubuntu/home/forlinx/work directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo cp -r /mnt/hgfs/share/OK10xx-linux-fs.tar.bz2 /home/forlinx/work/
+[sudo] password for forlinx: // Enter the password. The password is “forlinx”, and there will be no echo when you type it.
+forlinx@ubuntu:~$ cd /home/forlinx/work/
+forlinx@ubuntu:~/work$ ls
+OK10xx-linux-fs.tar.bz2 // File copied successfully.
+</pre></div>
+</div>
+<p>Switch to the root account and extract the kernel source code copied to the /home/forlinx/work directory using the tar command to the kernel source path.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo -s // Switch to the root user identity.
+[sudo] password for forlinx: // Enter the password “forlinx” as prompted and then press Enter.
+root@ubuntu:~# cd work
+root@ubuntu:~/work# ls
+OK10xx-linux-fs.tar.bz2 // Kernel source code.
+root@ubuntu:~/work# tar OK10xx-linux-fs.tar.bz2 // Extract the kernel source code.
+… … Omit the extraction information here.
+root@ubuntu:~/work# cd OK10xx-linux-fs/flexbuild
+// Enter the flexbuild source code directory.
+</pre></div>
+</div>
+<p>Introduction to Main Directories/Files:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>File</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>packages</p></td>
+<td class="text-left"><p>Source code directory with source code for linux firmware apps ramdisk</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>build</p></td>
+<td class="text-left"><p>The compilation directory is used for the temporary files generated by the compilation process, and the compilation results are located in the build/images directory.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>configs</p></td>
+<td class="text-left"><p>Compile configuration, flexbuild is applicable to multiple platforms, and configuration information for different platforms.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>tools</p></td>
+<td class="text-left"><p>Compiling tools, flex-builder, flex-installer, etc.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>setup.env</p></td>
+<td class="text-left"><p>Used to configure compilation environment variables.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="environment-variables-settings">
+<h4>4.1.3 Environment Variables Settings<a class="headerlink" href="#environment-variables-settings" title="Link to this heading"></a></h4>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Reset the environment variables after switching accounts;</strong></p></li>
+<li><p><strong>To set environment variables before compiling related source code. When compiling the kernel, it is recommended to use the root account to reduce some permission problems. The following source code compilations default to having environment variables set.</strong></p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# source setup.env
+</pre></div>
+</div>
+</section>
+</section>
+<section id="source-code-compilation">
+<h3>4.2 Source Code Compilation<a class="headerlink" href="#source-code-compilation" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Note:</strong></p></li>
+<li><p><strong>Use root privileges</strong></p></li>
+<li><p><strong>After the kernel source code is decompressed for the first time, the source code needs to be compiled as a whole.</strong></p></li>
+<li><p><strong>After the overall compilation, it can be compiled separately according to the actual situation.</strong></p></li>
+</ul>
+<section id="source-code-path">
+<h4>4.2.1 Source Code Path<a class="headerlink" href="#source-code-path" title="Link to this heading"></a></h4>
+<p>The paths in the source code of configuration files such as RCW (reset control word), device tree, kernel source code, kernel configuration file, and test program used in the user manual, which are commonly used by users in daily development, are as follows:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Configuration file:</p></th>
+<th class="head text-left"><p>Source code path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>RCW</p></td>
+<td class="text-left"><p>OK10xx-linux-fs/flexbuild/packages/firmware/rcw/ls1046ardb/FORLINX/rcw_1800_qspiboot_1133_5a59.rcw</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Device tree</p></td>
+<td class="text-left"><p>OK10xx-linux-fs/flexbuild/packages/linux/linux/arch/arm64/boot/dts/freescale/fsl-ok1046a-1133-5a59-c2.dts</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Source code</p></td>
+<td class="text-left"><p>OK10xx-linux-fs/flexbuild/packages/linux/linux</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Kernel configuration file</p></td>
+<td class="text-left"><p>OK10xx-linux-fs/packages/linux/linux/arch/arm64/configs/ls1046_defconfig</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Test program:</p></td>
+<td class="text-left"><p>OK10xx-linux-fs/flexbuild/packages/apps/forlinx</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="full-compilation-of-source-code">
+<h4>4.2.2 Full Compilation of Source Code<a class="headerlink" href="#full-compilation-of-source-code" title="Link to this heading"></a></h4>
+<p><strong>Note: If you have compiled apps before, execute flex-builder -i clean-apps, otherwise the compilation will report an error.</strong></p>
+<p>The entire flex build environment is based on this operation. If you restart the virtual machine or Shell terminal, you need to perform this operation again.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# source setup.env
+</pre></div>
+</div>
+<p>When compiling for the first time, it is recommended that you use all the compilation commands to compile. The advantage is that the operation is simple, and only one command is needed to compile all the required files.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -a arm64 -m ls1046ardb -S 1133
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394346466_5219fdba_1be8_479b_a670_60ecc8b35aa0.png" /></p>
+<p>After successful compilation, the generated file is located in the build/images directory. View the generated image file:</p>
+<p><img alt="Image" src="_images/1719394346813_7f2d903a_326c_4dd8_b7b3_7d1a45c034a3.png" /></p>
+<p><strong>Note: The first time you use the tree command, you need to install it. The installation command is sudo apt-get install tree.</strong></p>
+</section>
+<section id="compiling-firmware-separately">
+<h4>4.2.3 Compiling Firmware Separately<a class="headerlink" href="#compiling-firmware-separately" title="Link to this heading"></a></h4>
+<p>LS series of chips require loading some firmware during startup, such as RCW (Reset Control Word), ppa.itb(optee os), uboot, etc. If you have made any changes to these files during development, then you need to recompile and package these files into a firmware image file and burn it to the boot device. The command to compile the firmware is:</p>
+<ul class="simple">
+<li><p>Clear previously compiled files:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i clean-firmware
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Compile all the Firmware:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c firmware -a arm64 -m ls1046ardb -b qspi -S 1133  //Compiling firmware for QSPI Nor Flash startup
+root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c firmware -a arm64 -m ls1046ardb -b sd -S 1133 //Compile firmware for SD startup
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Generate a firmware image of the QSPI Nor Flash boot:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i mkfw -a arm64 -m ls1046ardb -b qspi -S 1133
+</pre></div>
+</div>
+<p>Compile successfully as follows:</p>
+<p><img alt="Image" src="_images/1719394347154_37bff890_1600_44d2_9ecd_375fcb2c6a5c.png" /></p>
+<ul class="simple">
+<li><p>Generate sd boot firmware image:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i mkfw -a arm64 -m ls1046ardb -b sd -S 1133
+</pre></div>
+</div>
+<p>Some information about the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394347480_846f51a5_294e_4802_9fee_53f21c3c343f.png" /></p>
+</section>
+<section id="compiling-kernel-and-modules-separately">
+<h4>4.2.4 Compiling Kernel and Modules Separately<a class="headerlink" href="#compiling-kernel-and-modules-separately" title="Link to this heading"></a></h4>
+<p>Clear previously-compiled files:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i clean-linux
+</pre></div>
+</div>
+<p>To configure the kernel (which can be skipped if using the default configuration), open the menuconfig command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c linux:custom -m ls1046ardb -a arm64
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719394347774_57cb4a6e_e536_4be0_b21c_bfc6df3b5bab.png" /></p>
+<p><img alt="Image" src="_images/1719394348242_956024ad_e092_4738_9670_b84782ab8898.png" /></p>
+<p>Save the exit print information after the setting is completed, as shown below:</p>
+<p><img alt="Image" src="_images/1719394348598_320f29c9_3800_4d06_a8bd_76e2fc813ff2.png" /></p>
+<p>The generated configuration file is: build/linux/linux/arm64/output/.config</p>
+<p>You can overwrite a changed file:packages/linux/linux/arch/arm64/configs/ls1046_defconfig</p>
+<ul class="simple">
+<li><p>Compile the kernel commands separately:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c linux -a arm64 -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394348972_844239ba_3c37_498e_a095_0ef1b22c1788.png" /></p>
+<ul class="simple">
+<li><p>Compile the cryptodev driver separately:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c cryptodev-linux -a arm64 -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394349360_ef25befa_43b2_47e6_8d7f_bb47b64546bc.png" /></p>
+<ul class="simple">
+<li><p>Automatically update the drive module to the file system:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i merge-component -a arm64 -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394349656_198d14f9_49d3_4840_a748_a6b83ccf7109.png" /></p>
+<ul class="simple">
+<li><p>Re-generate the Ubuntu image:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i compressrfs -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394349904_6c3f06e9_cd75_4e77_80f7_5eaf59ee8655.png" /></p>
+<ul class="simple">
+<li><p>Update the compiled kernel and device tree files to the build/images directory:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i genboot -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394350238_7c1bb728_2b3f_4cfd_80fc_87a6ce487fd3.png" /></p>
+</section>
+<section id="compiling-the-app-program-separately">
+<h4>4.2.5 Compiling the App Program Separately<a class="headerlink" href="#compiling-the-app-program-separately" title="Link to this heading"></a></h4>
+<p>In the build/rfs/rootfs_ubuntu_bionic_arm64 directory, the OK1046A-C2 platform has already included the upper application layer tools such as OpenSSL by default, in general, users do not need to recompile, if you change the source code of this part, you need to use the following commands to compile it separately:</p>
+<ul class="simple">
+<li><p>The compilation command is as follows:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c apps -m ls1046ardb
+</pre></div>
+</div>
+<p><strong>Note: If you have compiled apps before, execute flex-builder -i clean-apps, otherwise the compilation will report an error.</strong></p>
+<p>The print information of the successful compilation part is as follows:</p>
+<p><img alt="Image" src="_images/1719394350479_b7792bcc_59e8_42e1_a181_b4da5746de5b.png" /></p>
+<ul class="simple">
+<li><p>Update the app to the file system:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i merge-component -a arm64 -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information of the successful compilation is as follows:</p>
+<p><img alt="Image" src="_images/1719394350757_f52dc627_33ae_4eb6_9c3d_2aeb9c2c220a.png" /></p>
+<ul class="simple">
+<li><p>Re-generate the Ubuntu image:</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i compressrfs -m ls1046ardb
+</pre></div>
+</div>
+<p>The print information is as follows:</p>
+<p><img alt="Image" src="_images/1719394350993_67c28d5a_b1e2_4691_9fe1_afbbfc6f6bcf.png" /></p>
+</section>
+<section id="compilation-and-operation-of-application-program">
+<h4>4.2.6 Compilation and Operation of Application Program<a class="headerlink" href="#compilation-and-operation-of-application-program" title="Link to this heading"></a></h4>
+<p>This section uses the UART test program source code as an example to copy the uarttest. C source code program to the/home/forlinx/work directory.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd work/OK10xx-linux-fs/flexbuild/packages/apps/forlinx/uarttest/
+forlinx@ubuntu:~ /forlinx/uarttest$ cp uarttest.c /home/forlinx/work
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Use the cd command to enter the/home/forlinx/work directory.</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~ $ cd /home/forlinx/work/
+forlinx@ubuntu:~/work$ ls 
+OK10xx-linux-fs  OK10xx-linux-fs.tar.bz2  uarttest.c
+</pre></div>
+</div>
+<p>2. Use aarch64-linux-gun-gcc to cross-compile. The environment variables have been set in the default environment and can be used directly.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$ aarch64-linux-gnu-gcc uarttest.c -o uarttest
+</pre></div>
+</div>
+<p>After successful compilation, use the file command to view the generated file information.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$file uarttest 
+uarttest: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, BuildID[sha1]=dad62c46c28894445d8b6829fb74e6e428d4a478, not stripped
+</pre></div>
+</div>
+<p>3. Copy the uarttest generated by compiling to the board through the U disk, such as/home/forlinx path, and run the test.</p>
+<p>Use the cd command to go to the/home/forlinx path on the board.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~#cd /home/forlinx
+</pre></div>
+</div>
+<p>Copy the uarttest program generated by compiling from the U disk mounting path to the current path.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:/home/forlinx# cp /run/media/sda1/uarttest ./
+</pre></div>
+</div>
+<p>Give the program executable permission and run it</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:/home/forlinx#  chmod 777 uarttest			     //Set executable permissions for the program
+root@localhost:/home/forlinx#	./uarttest -d /dev/ttyS1                       //Run the program
+</pre></div>
+</div>
+<p>4. Refer to the chapter “UART Test” in the software user manual for test.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
