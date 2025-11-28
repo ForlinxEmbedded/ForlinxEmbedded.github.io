@@ -64,7 +64,7 @@ This chapter mainly introduces the installation of VMware virtual machine, and t
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394388525-bb90a30a-3124-408d-947c-693bbf2596d4.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394388525_bb90a30a_3124_408d_947c_693bbf2596d4.png)
 
 After the download is complete, double-click the startup file to start the installer.
 
@@ -72,35 +72,35 @@ After the download is complete, double-click the startup file to start the insta
 
 Double-click the startup program to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394388828-96aac25a-1af3-4b4e-a8e3-8a86dcdb7c1f.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394388828_96aac25a_1af3_4b4e_a8e3_8a86dcdb7c1f.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394389067-7186d3a1-1737-4760-8456-b2b7df4126da.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394389067_7186d3a1_1737_4760_8456_b2b7df4126da.png)
 
 Check I accept the terms in the license agreement and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394389272-1cd87701-83b4-4750-b334-656fe28426e0.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394389272_1cd87701_83b4_4750_b334_656fe28426e0.png)
 
 Modify the installation location to the partition of your computer where the software is installed, and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394389492-e78fd85f-adc7-4b51-85c1-c6caaa6233a4.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394389492_e78fd85f_adc7_4b51_85c1_c6caaa6233a4.png)
 
 Check and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394389730-88ba23eb-ac47-4a82-bdbe-5d4c9f705223.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394389730_88ba23eb_ac47_4a82_bdbe_5d4c9f705223.png)
 
 Check Add Shortcut and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394389948-783b3ba3-667e-4ad0-a0fb-134c3cf3b5bb.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394389948_783b3ba3_667e_4ad0_a0fb_134c3cf3b5bb.png)
 
 Click "Installation".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394390146-729472d9-6ec6-4434-8f27-318fe80a2594.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394390146_729472d9_6ec6_4434_8f27_318fe80a2594.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394390370-f7596cd3-9011-48ad-ae3b-082fec9ce9c9.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394390370_f7596cd3_9011_48ad_ae3b_082fec9ce9c9.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -115,37 +115,37 @@ There are two ways to use a virtual machine environment under VMware. One is to 
 
 First, download the development environment provided by Forlinx. After downloading, select the Ubuntu 18 compressed package and right click to extract it to the OK1043\&OK1046\&OK1012-Linux4.14.47-VM 15\_1\_0-ubuntu18\_04 folder:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394379459-ba72f11a-5a21-4bd3-b9c1-8539e714f2b7.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394379459_ba72f11a_5a21_4bd3_b9c1_8539e714f2b7.png)
 
 After the decompression is completed, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394379791-323d0cf9-9595-42ae-a2cd-a5630e95f2ec.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394379791_323d0cf9_9595_42ae_a2cd_a5630e95f2ec.png)
 
 Ubuntu18.vmx in the ubuntu18 folder is the file to be clocked by the virtual machine.
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394380093-66437dec-9085-482a-95eb-cecc7341ea9a.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394380093_66437dec_9085_482a_95eb_cecc7341ea9a.png)
 
 Select the directory where the newly extracted ubuntu18 virtual machine file is located, select ubuntu18.vmx, and click “Open”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394380332-dfc0fca3-a145-4ac9-8aaf-ae18acae52c2.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394380332_dfc0fca3_a145_4ac9_8aaf_ae18acae52c2.png)
 
 After loading, click to open the virtual machine to run and enter the system interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394380588-2e337648-ef6e-4476-b7cc-d976808b2223.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394380588_2e337648_ef6e_4476_b7cc_d976808b2223.png)
 
 When the development environment is loaded for the first time, the following will appear. Select "I have copied this virtual machine (P)", and the system will automatically load it..
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394380795-bd1a6acb-36c6-4056-b8d7-99e74dc0d904.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394380795_bd1a6acb_36c6_4056_b8d7_99e74dc0d904.png)
 
 After loading, you will enter the following interface, enter the password: forlinx, and select “Sign in” to log in after filling in the password..
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394381131-20258bb8-f54e-40fb-a09d-622c61a9579d.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394381131_20258bb8_f54e_40fb_a09d_622c61a9579d.png)
 
 Password: forlinx.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394381496-4ff54a3f-01b8-485c-be0a-40d4ab2677ac.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394381496_4ff54a3f_01b8_485c_be0a_40d4ab2677ac.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -161,59 +161,59 @@ Password: forlinx.
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394361294-463420a4-c9f3-42dd-8f72-fc7bbf8726ee.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394361294_463420a4_c9f3_42dd_8f72_fc7bbf8726ee.png)
 
 Choose custom, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394361514-9e186583-9f15-490e-8939-1c976175158c.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394361514_9e186583_9f15_490e_8939_1c976175158c.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394361728-47ef0923-0c6e-4b7f-a0ba-81c2802e9496.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394361728_47ef0923_0c6e_4b7f_a0ba_81c2802e9496.png)
 
 Select Install the operating system later and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394361970-8d3d5ff2-849d-4a7d-85e7-cb51e0b60bf2.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394361970_8d3d5ff2_849d_4a7d_85e7_cb51e0b60bf2.png)
 
 Leave the default and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394362171-23f537d3-e411-4d8e-9690-4a9e8353664f.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394362171_23f537d3_e411_4d8e_9690_4a9e8353664f.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394362408-616dac9c-b2e8-4494-8d86-56df86377c94.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394362408_616dac9c_b2e8_4494_8d86_56df86377c94.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394362607-756d8bf3-8e1f-4be3-87d3-9344c9a8c364.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394362607_756d8bf3_8e1f_4be3_87d3_9344c9a8c364.png)
 
 Again, set the memory size as appropriate.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394362823-500a97ad-cddf-4ba0-8eb0-04435eecab87.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394362823_500a97ad_cddf_4ba0_8eb0_04435eecab87.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394363044-66b2a976-f18d-4996-9312-e517b6cf5931.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394363044_66b2a976_f18d_4996_9312_e517b6cf5931.png)
 
 The default selection for the IO controller type here is LSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394363247-89f3facb-0802-467d-bc96-79baeab9c49b.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394363247_89f3facb_0802_467d_bc96_79baeab9c49b.png)
 
 The default selection here is also SCSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394363487-2a828644-c374-4b24-bfe1-edf6ba017fa9.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394363487_2a828644_c374_4b24_bfe1_edf6ba017fa9.png)
 
 Choose to create a new virtual disk here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394363662-581e7231-4262-414b-93bc-85b42262ca13.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394363662_581e7231_4262_414b_93bc_85b42262ca13.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click Next to finish.
 
 Specify the disk file, the default one here is fine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394363873-289aa837-8337-4406-83ca-f0e46e0340f2.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394363873_289aa837_8337_4406_83ca_f0e46e0340f2.png)
 
 Click Finish by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394364073-3926cbeb-a9fb-42b7-b73f-9c602c39d422.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394364073_3926cbeb_a9fb_42b7_b73f_9c602c39d422.png)
 
 The virtual machine creation is now complete.
 
@@ -223,65 +223,65 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 The Ubuntu version chosen to install is 18.04. First, go to the Ubuntu official website to get the Ubuntu 18.04 64-bit image. Go to http://releases.ubuntu.com/18.04/ to downlaod "ubuntu-18.04.5-desktop-amd64.iso.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394364250-932c72b4-4992-408b-b19e-806dcbc334f9.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394364250_932c72b4_4992_408b_b19e_806dcbc334f9.png)
 
 Right-click the newly created Ubuntu 64-bit and select Settings from the pop-up menu:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394364496-a3207cd9-0ff9-453c-ac9d-0f5d7bacd03a.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394364496_a3207cd9_0ff9_453c_ac9d_0f5d7bacd03a.png)
 
 The "Virtual Machine Settings Menu" pops up as shown below:： 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394364692-916e8c8d-f97d-4ace-9f4b-bdc47070d2cf.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394364692_916e8c8d_f97d_4ace_9f4b_bdc47070d2cf.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394364874-e6f14c68-1f5d-4edb-8c2f-d81b8b722931.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394364874_e6f14c68_1f5d_4edb_8c2f_d81b8b722931.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394365102-8ffc8f77-3492-44db-8638-0a87f33a7dd6.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394365102_8ffc8f77_3492_44db_8638_0a87f33a7dd6.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394365493-74b12d93-1cd8-4171-8916-80b55e3312bb.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394365493_74b12d93_1cd8_4171_8916_80b55e3312bb.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394365745-02853d15-a2dd-4253-b18f-ef7c5eeeafa8.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394365745_02853d15_a2dd_4253_b18f_ef7c5eeeafa8.png)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394365959-c25c4f32-d17e-41f7-a124-ed7d0fcd76a2.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394365959_c25c4f32_d17e_41f7_a124_ed7d0fcd76a2.png)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394366166-2c7246cc-d995-462e-9493-d87fd0db766c.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394366166_2c7246cc_d995_462e_9493_d87fd0db766c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394366368-dd524488-8b95-4bbe-b5fb-a93ded5c9ca9.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394366368_dd524488_8b95_4bbe_b5fb_a93ded5c9ca9.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set the user name and password (take the user name: forlinx, password: forlinx as an example, the user can set it according to actual needs), and click "continue" to automatically install:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394366561-42c01678-998d-4664-ae98-77c9bb4a520a.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394366561_42c01678_998d_4664_ae98_77c9bb4a520a.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394366811-994c96d1-8ca3-4f7a-abc8-bc91661c8b1b.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394366811_994c96d1_8ca3_4f7a_abc8_bc91661c8b1b.png)
 
 After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394367141-370600e2-b37a-43ff-baba-a246d7e6ef16.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394367141_370600e2_b37a_43ff_baba_a246d7e6ef16.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394367443-d23ffd5d-87f9-4d8d-9c9f-241014ba9360.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394367443_d23ffd5d_87f9_4d8d_9c9f_241014ba9360.png)
 
 After the restart, you need to use the user name and password to log in. The system interface after login is as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394367779-0f392c5e-13c8-4026-8d72-a34d879af244.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394367779_0f392c5e_13c8_4026_8d72_a34d879af244.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394368209-09135edf-5d85-4c6c-8711-d104449727b9.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394368209_09135edf_5d85_4c6c_8711_d104449727b9.png)
 
 Above, the Ubuntu system installation is completed by the following figure configuration, click "OK", and then re-open the virtual machine to see if you can start Ubuntu normally.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394368514-442bf5cd-14b0-4ff5-90b4-765075535216.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394368514_442bf5cd_14b0_4ff5_90b4_765075535216.png)
 
 #### 3.1.3 Basic Ubuntu Installation
 
@@ -291,21 +291,21 @@ After installing the Ubuntu 18.04 operating system, there are a few configuratio
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394368740-4862aeea-f7c4-433c-93bf-63bf2b70d632.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394368740_4862aeea_f7c4_433c_93bf_63bf2b70d632.png)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394368975-f1fbae24-0787-4419-a297-edf0145f7159.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394368975_f1fbae24_0787_4419_a297_edf0145f7159.png)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394369196-8a4d5f38-3c40-44c9-be30-13b6c6425cd7.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394369196_8a4d5f38_3c40_44c9_be30_13b6c6425cd7.png)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394369428-fe154176-d1e4-4b85-905b-9dfca00ac034.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394369428_fe154176_d1e4_4b85_905b_9dfca00ac034.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394369751-1925cdea-8e86-4330-bca3-a199bc34c51d.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394369751_1925cdea_8e86_4330_bca3_a199bc34c51d.png)
 
 Press \[Ctrl+Alt+T] to bring up the terminal command interface, and use the tar command to decompress the VMware tools installation package (using the sudo command will prompt for the password, according to the prompts directly enter the password enter can be used, Linux system password input does not show):
 
@@ -343,13 +343,13 @@ Do you still want to proceed with this installation? [no] yes //Enter yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, enable Auto Resize by clicking View, then Auto Adapt to Client. Ensure that VMware tools have been installed successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394369970-77877781-616f-4639-9af2-c094c3b7c496.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394369970_77877781_616f_4639_9af2_c094c3b7c496.png)
 
 + **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394370218-e7ae0eef-22bd-4169-96a9-757abf704313.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394370218_e7ae0eef_22bd_4169_96a9_757abf704313.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -357,17 +357,17 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394370454-ef558318-b462-40e1-9ac3-1796f10f487a.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394370454_ef558318_b462_40e1_9ac3_1796f10f487a.png)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VMs to get on the extranet.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394370711-47d183f2-b67b-45e3-bece-31e628de5a3f.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394370711_47d183f2_b67b_45e3_bece_31e628de5a3f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394370954-0945307b-e013-4ca7-9933-0011ecdaedb3.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394370954_0945307b_e013_4ca7_9933_0011ecdaedb3.png)
 
 The network is set to dynamic IP.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394371155-a9059469-ecfc-46c5-91d8-41d7b0c221e7.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394371155_a9059469_ecfc_46c5_91d8_41d7b0c221e7.png)
 
 **Bridge Mode:**
 
@@ -375,27 +375,27 @@ The network is set to dynamic IP.
 
 If you use TFTP, SFTP and other servers, you need to set the virtual machine as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394371341-2ac00101-cfeb-45bf-a17d-63b562b8e56b.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394371341_2ac00101_cfeb_45bf_a17d_63b562b8e56b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394371541-cca09c17-304c-4eea-b52c-4946f07d6f76.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394371541_cca09c17_304c_4eea_b52c_4946f07d6f76.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394371702-1f7f579f-1d82-42c8-8a96-0fcd0bb73652.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394371702_1f7f579f_1d82_42c8_8a96_0fcd0bb73652.png)
 
  Set up static ip, at this time Ubuntu's IP and the host IP need to be set in the same network segment.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394371888-bbde3a0f-9b11-4998-b47e-27555d29645c.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394371888_bbde3a0f_9b11_4998_b47e_27555d29645c.png)
 
 #### 3.1.5 U Disk Loading
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. As shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394372132-e8c1f877-90f3-446a-a83f-eac9b63da82f.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394372132_e8c1f877_90f3_446a_a83f_eac9b63da82f.png)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394372354-777fb423-d535-427b-95d3-1015f63a1afe.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394372354_777fb423_d535_427b_95d3_1015f63a1afe.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394372562-4c52d051-8585-4957-9d0f-e75e6a6ae50e.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394372562_4c52d051_8585_4957_9d0f_e75e6a6ae50e.png)
 
 #### 3.1.6 Required Library Installation
 
@@ -438,11 +438,11 @@ There are many kinds of file transfers between ubuntu and Windows hosts. After i
 + Method 1: You can directly copy the source code to the virtual machine/home/forlinx/work/directory.
 + Method 2: Use the method of sharing files. The setting method is as follows. Click "Virtual Machine" in the menu bar and select "Settings".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394346034-6a8e0424-6377-4030-8c74-895cfb2cb966.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394346034_6a8e0424_6377_4030_8c74_895cfb2cb966.png)
 
 Click "Options", enable "Shared Folder", set the shared directory on the Windows host, and click "OK".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394346248-f740b869-11b2-4b6d-8265-228fff8e0410.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394346248_f740b869_11b2_4b6d_8265_228fff8e0410.png)
 
 After the virtual machine's file sharing is set up, put the kernel source code OK10xx-linux-fs.tar.bz2 used for the test into the shared folder of the Windows host.
 
@@ -535,11 +535,11 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -a arm64 -m ls1046ard
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394346466-5219fdba-1be8-479b-a670-60ecc8b35aa0.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394346466_5219fdba_1be8_479b_a670_60ecc8b35aa0.png)
 
 After successful compilation, the generated file is located in the build/images directory. View the generated image file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394346813-7f2d903a-326c-4dd8-b7b3-7d1a45c034a3.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394346813_7f2d903a_326c_4dd8_b7b3_7d1a45c034a3.png)
 
 **Note: The first time you use the tree command, you need to install it. The installation command is sudo apt-get install tree.**
 
@@ -568,7 +568,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i mkfw -a arm64 -m l
 
 Compile successfully as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394347154-37bff890-1600-44d2-9ecd-375fcb2c6a5c.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394347154_37bff890_1600_44d2_9ecd_375fcb2c6a5c.png)
 
 + Generate sd boot firmware image:
 
@@ -578,7 +578,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i mkfw -a arm64 -m l
 
 Some information about the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394347480-846f51a5-294e-4802-9fee-53f21c3c343f.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394347480_846f51a5_294e_4802_9fee_53f21c3c343f.png)
 
 #### 4.2.4 Compiling Kernel and Modules Separately
 
@@ -594,13 +594,13 @@ To configure the kernel (which can be skipped if using the default configuration
 root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c linux:custom -m ls1046ardb -a arm64
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394347774-57cb4a6e-e536-4be0-b21c-bfc6df3b5bab.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394347774_57cb4a6e_e536_4be0_b21c_bfc6df3b5bab.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394348242-956024ad-e092-4738-9670-b84782ab8898.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394348242_956024ad_e092_4738_9670_b84782ab8898.png)
 
 Save the exit print information after the setting is completed, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394348598-320f29c9-3800-4d06-a8bd-76e2fc813ff2.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394348598_320f29c9_3800_4d06_a8bd_76e2fc813ff2.png)
 
 The generated configuration file is: build/linux/linux/arm64/output/.config
 
@@ -614,7 +614,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c linux -a arm64 -m 
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394348972-844239ba-3c37-498e-a095-0ef1b22c1788.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394348972_844239ba_3c37_498e_a095_0ef1b22c1788.png)
 
 + Compile the cryptodev driver separately:
 
@@ -624,7 +624,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c cryptodev-linux -a
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394349360-ef25befa-43b2-47e6-8d7f-bb47b64546bc.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394349360_ef25befa_43b2_47e6_8d7f_bb47b64546bc.png)
 
 + Automatically update the drive module to the file system:
 
@@ -634,7 +634,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i merge-component -a
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394349656-198d14f9-49d3-4840-a748-a6b83ccf7109.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394349656_198d14f9_49d3_4840_a748_a6b83ccf7109.png)
 
 + Re-generate the Ubuntu image:
 
@@ -644,7 +644,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i compressrfs -m ls1
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394349904-6c3f06e9-cd75-4e77-80f7-5eaf59ee8655.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394349904_6c3f06e9_cd75_4e77_80f7_5eaf59ee8655.png)
 
 + Update the compiled kernel and device tree files to the build/images directory:
 
@@ -654,7 +654,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i genboot -m ls1046a
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394350238-7c1bb728-2b3f-4cfd-80fc-87a6ce487fd3.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394350238_7c1bb728_2b3f_4cfd_80fc_87a6ce487fd3.png)
 
 #### 4.2.5 Compiling the App Program Separately
 
@@ -670,7 +670,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -c apps -m ls1046ardb
 
  The print information of the successful compilation part is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394350479-b7792bcc-59e8-42e1-a181-b4da5746de5b.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394350479_b7792bcc_59e8_42e1_a181_b4da5746de5b.png)
 
 + Update the app to the file system:
 
@@ -680,7 +680,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i merge-component -a
 
 The print information of the successful compilation is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394350757-f52dc627-33ae-4eb6-9c3d-2aeb9c2c220a.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394350757_f52dc627_33ae_4eb6_9c3d_2aeb9c2c220a.png)
 
 + Re-generate the Ubuntu image:
 
@@ -690,7 +690,7 @@ root@ubuntu:~/work/OK10xx-linux-fs/flexbuild# flex-builder -i compressrfs -m ls1
 
 The print information is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/43856062/1719394350993-67c28d5a-b1e2-4691-9fe1-afbbfc6f6bcf.png)
+![Image](./images/OK1046A-C2_Linux4_14_4_User_Compilation_Manual/1719394350993_67c28d5a_b1e2_4691_9fe1_afbbfc6f6bcf.png)
 
 #### 4.2.6 Compilation and Operation of Application Program
 
