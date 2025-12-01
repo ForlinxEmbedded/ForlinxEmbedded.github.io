@@ -36,6 +36,12 @@ There are total four chapters:
 
 A description of some of the symbols and formats associated with this manual:
 
+| **Format** | **Meaning**                                                  |
+| ---------- | ------------------------------------------------------------ |
+| **Note**   | Note or information that requires special attention, be sure to read carefully. |
+| 📚          | Relevant notes on the test chapters.                         |
+| 🛤️          | Indicates the related path.                                  |
+
 ## 1\. NXP QorIQ LS104xA Description
 
 The QorIQ® LS104xA processor is a quad - core 64 - bit ARM® processor launched by NXP for embedded networks. The LS1023A (dual - core version) and LS104xA (quad - core version) can provide a performance of over 10 Gbps through a flexible I/O package that supports fanless design. This SoC is a solution specifically designed for small - form - factor network and industrial applications. It has optimized the BOM for cost - effective low - end PCB, reduced power supply costs, and adopted a single - clock design. The new 0.9V versions of the LS104xA and LS1023A can offer additional power consumption savings for wireless LAN and Power over Ethernet systems. The new 23x23 package supports a pin - compatible design and can be expanded to the LS1046A (quad - core A72 processor). The QorIQ LS104xA can enhance the performance of dual - core 32 - bit ARM products and continues the consistent I/O flexibility of the QorIQ series. It integrates the QUICC Engine® and continues to provide seamless support for HDLC, TDM, or Profibus.
@@ -496,10 +502,10 @@ A - B - C + D E F : G - H
 |       |                             | Dx                                                           | Pin connection                                               |                                                              |
 |       |                             | Cx                                                           | Board-to-board Connector                                     |                                                              |
 |       |                             | Gx                                                           | Golden-finger                                                |                                                              |
-|       |                             | **Note: The content of x is null or 2 ~ N to distinguish different products with the same connection mode**. |                                                              |                                                              |
+|       |                             | **Note: The content of x is null or 2 ~ N to<br />distinguish different products with the same connection mode**. |                                                              |                                                              |
 | +     | Segment Identification      | +                                                            |                                                              | The configuration parameter section follows this identifier. |
 | D     | Type Identification         | M                                                            |                                                              | Carrier board (**Note: carrier board identification M, not filled by default.**) |
-|       |                             | E                                                            |                                                              | Expansion boards (including Bluetooth boards, Wi - Fi boards, RS - 232 boards, RS - 485 boards, antenna boards, interface boards, etc.).<br />The type identifiers of all specifications belong to the expansion board category denoted as “E”,<br />and it is not allowed to arbitrarily assign letter identifiers. <br />For example, if there are 2 x RS - 485 expansion boards at the same time,<br />the numbers 1 and 2 are marked after “E” in the specifications<br />to represent each specific expansion board respectively. <br />Examples: Name: OKMX6Q-C RS485 Expansion Board<br />Specification: OKMX6Q-C + E2-485: 10 stands for the second 485 expansion board) |
+|       |                             | E                                                            |                                                              | Expansion boards (including Bluetooth boards, Wi - Fi boards,<br />RS - 232 boards,RS - 485 boards, antenna boards, interface boards, etc.).<br />The type identifiers of all specifications belong to the expansion board category denoted as “E”,<br />and it is not allowed to arbitrarily assign letter identifiers. <br />For example, if there are 2 x RS - 485 expansion boards at the same time,<br />the numbers 1 and 2 are marked after “E” in the specifications<br />to represent each specific expansion board respectively. <br />Examples: Name: OKMX6Q-C RS485 Expansion Board<br />Specification: OKMX6Q-C + E2-485: 10 stands for the second 485 expansion board) |
 |       |                             | L                                                            |                                                              | Light board                                                  |
 |       |                             | D                                                            |                                                              | Display board                                                |
 |       |                             | K                                                            |                                                              | Key board                                                    |
@@ -535,7 +541,7 @@ A - B - C + D E F : G - H
 |         JTAG          |    1     | Support NXP's official CodeWarrior TAP debugger. |
 |    SFP<sup>4</sup>    |    2     |                 Supports XFI 10G                 |
 
-**Note: **
+**Note:** 
 
 - **The LS1043A can only be used as a mini PCIE;**
 

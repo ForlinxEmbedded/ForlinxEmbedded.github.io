@@ -16,7 +16,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 | :--------: | :------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 19/04/2021 |      V1.0      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | User's Manual Initial Version                                |
 | 23/10/2021 |      V1.1      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | Manual structure adjustment, adding command description. |
-| 10/02/2022 |      V2.0      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | 1. Manual structure adjustment, separating the software manual into a compilation manual and a user manual; adding the compilation part to the compilation manual, and optimizing the function test in the chapter; <br />2. Modify the corresponding description of the network port; <br />3. Add support for the RTL8822CE module. |
+| 10/02/2022 |      V2.0      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | 1. Manual structure adjustment, separating the software manual into a compilation manual and a user manual;<br />adding the compilation part to the compilation manual, and optimizing the function test in the chapter; <br />2. Modify the corresponding description of the network port; <br />3. Add support for the RTL8822CE module. |
 
 ## Materials Description
 
@@ -36,7 +36,7 @@ There are total four chapters:
 
 + Chapter 2. is the fast boot/startup of the product, which can adopt two ways of serial port login and network login;
 
-+ Chapter 3. describes the testing process and results of the hardware interface resources and software functions, divided into multiple chapters, to test the product's hardware and software resources；
++ Chapter 3. describes the testing process and results of the hardware interface resources and software functions, divided into multiple chapters, to test the product's hardware and software resources;
 
 + Chapter 4. primarily describes the methods for updating the image to storage devices, allowing users to select the corresponding flashing method based on their actual circumstances.
 
@@ -48,7 +48,7 @@ A description of some of the symbols and formats associated with this manual:
 | <font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Black font on gray background</font> | Serial port output message after entering a command          |
 | **<font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Bold black on gray background</font>** | Key information in the serial port output message            |
 |                              //                              | Interpretation of input instructions or output information   |
-|                      Username@Hostname                       | forlinx @ localhost: development board network port login account information, root @ localhost: : development board serial port login account information forlinx @ Ubuntu: ~ $development environment Ubuntu account information. You can determine the function operation environment through this information. |
+|                      Username@Hostname                       | forlinx @ localhost: development board network port login account information;<br />root @ localhost: development board serial port login account information;<br />forlinx @ Ubuntu: ~ $development environment Ubuntu account information.<br />You can determine the function operation environment through this information. |
 
 Example: Read the temperature of sensor 3:
 
@@ -209,7 +209,7 @@ It is better to use a good quality cable to avoid error codes.
 
 ### 2.3 Network Login Methods
 
-**Note: **
+**Note:** 
 
 - **The development board opens the fm1-mac3 network port (on P13) by default, and the default IP is 192.168.0.232;** 
 
@@ -866,17 +866,17 @@ To test fm1-mac9, follow these steps:
 
 3\. Observe the D3 and D4 indicators on the OK1046A-C2 carrier board. 
 
-D4 indicates that the CPU signal output is normal;
+D4 indicates that the CPU signal output is normal.
 
 D3 indicates that the SFP+ electrical interface module is properly connected to the Linux host.
 
 To test fm1-mac10, follow these steps: 
 
-1\. Insert the SFP+ electrical interface module into the P30 interface before powering up. 
+1\. Insert the SFP+ electrical interface module into the P30 interface before powering up;
 
-2\. Start the development board and connect the network cable to the Linux host. 
+2\. Start the development board and connect the network cable to the Linux host; 
 
-3\. Observe the D5 and D6 indicators on the OK1046A-C2 carrier board. 
+3\. Observe the D5 and D6 indicators on the OK1046A-C2 carrier board;
 
 D6 indicates that the CPU signal output is normal. 
 
@@ -903,7 +903,7 @@ Enter the following command on the OK1046A-C2 terminal:
 ```plain
 root@localhost:~# ifconfig fm1-mac10 up  //Open the network port fm1-mac9
 root@localhost:~# ifconfig fm1-mac10 192.168.2.182 
-//Set the network port fm1-mac9的ip为192.168.2.182
+//Set the network port fm1-mac9 ip is 192.168.2.182
 root@localhost:~# echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 //Change the CPU management mode and set it to high performance mode
 root@localhost:~# iperf3 -c 192.168.2.181 -i 5 -t 60
@@ -943,7 +943,7 @@ Insert the network cable into the fm1-mac4 (under P13) port, and enter the follo
 root@localhost:~# ifconfig fm1-mac9 down            //Turn off the network portfm1-mac9
 root@localhost:~# ifconfig fm1-mac4 up              //Turn on the network fm1-mac4
 root@localhost:~# ifconfig fm1-mac4 192.168.1.106 
-//设置网口fm1-mac4的IP为192.168.1.106
+//Set the IP of network ports fm1-Mac4 to 192.168.1.106
 root@localhost:~# echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
                     //Change the CPU management mode and set it to high performance mode
 root@localhost:~# iperf3 -c 192.168.1.181 -i 5 -t 60     //Set the client, report output interval, transmission time,
@@ -1360,7 +1360,7 @@ If you do not want to use the automatic WIFI connection, you can turn off the au
 
 ```plain
 root@localhost:~# systemctl stop wpa_supplicant.service         
- //关闭wpa_supplicant.service服务
+ //Close the wpa_supplicant.service service
 root@localhost:~# systemctl disable wpa_supplicant.service
                                               //Disable the WPA _ supplicant. service service at power-on
 root@localhost:~# rm /etc/systemd/network/wlan0.network       //Delete WIFI auto connect profile
@@ -1416,9 +1416,9 @@ PING www.a.shifen.com (220.181.38.149) 56(84) bytes of data.
 rtt min/avg/max/mdev = 12.832/22.050/29.384/5.967 ms
 ```
 
-Print the information as shown above, indicating that the network can access the Internet, the following WIFI module AP mode configuration
+Print the information as shown above, indicating that the network can access the Internet, the following WIFI module AP mode configuration.
 
-Modify the hostapd wireless access point program configuration file
+Modify the hostapd wireless access point program configuration file.
 
 ```plain
 root@localhost:~# vi /etc/hostapd/hostapd.conf       
@@ -1462,7 +1462,7 @@ subnet 192.168.2.0 netmask 255.255.255.0
 }
 ```
 
-Set the IP address of the WIFI module
+Set the IP address of the WIFI module.
 
 ```plain
 root@localhost:~# ifconfig wlP1p1s0 192.168.2.1
@@ -1480,13 +1480,13 @@ KernelCommandLine=!root=/dev/nfs
 Address=192.168.2.1/24
 ```
 
-Enable the dhcpd service to run
+Enable the dhcpd service to run.
 
 ```plain
 root@localhost:~# systemctl enable isc-dhcp-server.service       
 ```
 
-Set up NAT to turn on forwarding
+Set up NAT to turn on forwarding.
 
 ```plain
 root@localhost:~# vi /etc/sysctl.conf                                  
@@ -1550,7 +1550,7 @@ The corresponding device nodes for 4G and 5G modules are as follows
 
 ##### 3.1.17.1 Quectel RM500Q-GL Module
 
-+ Quectel RM500Q-GL module identification
++ **Quectel RM500Q-GL module identification**
 
 Insert the RM500Q-GL 5G module into the P4 interface of the M.2 B KEY of the carrier board, and connect the antenna, as shown in the figure:
 
@@ -1573,7 +1573,7 @@ Using the ifconfig -a command, you can see Quectel RM500Q-GL 5G module results i
 
 If the recognition is successful, dial-up Internet access is next.
 
-+ Dialing test of RM500Q-GL module
++ **Dialing test of RM500Q-GL module**
 
 Take inserting mobile SIM card to test 5G Internet access as an example to test whether it is connected to the external network:
 
@@ -1654,7 +1654,7 @@ As shown above, the network can access the Internet normally.
 
 ##### 3.1.17.2 Quectel RM500U-CN Module
 
-+ Quectel RM500U-CN module identification
++ **Quectel RM500U-CN module identification**
 
 Insert the RM500U-CN 5G module into the P4 interface of the M.2 B KEY of the carrier board, and connect the antenna, as shown in the figure:
 
@@ -1746,7 +1746,7 @@ root@localhost:~# echo 0 > /sys/class/leds/USER_LED/brightness
 // Input 0 into the file “brightness” to turn off the USER_LED.
 ```
 
-+ **USER KeyTest**
++ **USER Key Test**
 
 First check the status of the USER key:
 
@@ -2100,7 +2100,7 @@ Enter the account password to log in to the system. After entering the system, y
 
 Docker is an advanced container engine based on LXC, and docker is a containerized way of working. Just as we would package a variety of different goods into a single container for standardized management and transportation, in the docker world we package our applications and the runtime environments on which they depend into a single image and distribute it to any docker-enabled platform, where we can run our applications and provide services. Docker is a process-level container. It is officially recommended that a docker run only one program. Of course, you can run thousands of dockers on your host.
 
-1. Download hello-world image
+1. Download hello-world image;
 
 ```plain
 root@localhost:~# docker pull hello-world                  
@@ -2111,7 +2111,7 @@ Digest: sha256:7d91b69e04a9029b99f3585aaaccae2baa80bcf318f4a5d2165a9898cd2dc0a1
 Status: Downloaded newer image for hello-world:latest
 ```
 
-2. Check local docker image
+2. Check local docker image;
 
 ```plain
 root@localhost:~# docker image ls                              
@@ -2119,7 +2119,7 @@ REPOSITORY      TAG               IMAGE ID           CREATED          SIZE
 hello-world         latest              bc11b176a293       2 months ago      9.14kB
 ```
 
-3. Run hello-world test program
+3. Run hello-world test program;
 
 ```plain
 root@localhost:~# docker container run hello-world              
@@ -2141,7 +2141,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-4. Download Ubuntu image
+4. Download Ubuntu image;
 
 ```plain
 root@localhost:~# docker pull qoriq/arm64-ubuntu          
@@ -2165,7 +2165,7 @@ Digest: sha256:eaef3a08336f59155e6cfb61bf55688711214561ddf00817b5c848211ac66b00
 Status: Downloaded newer image for qoriq/arm64-ubuntu:latest
 ```
 
-To view the docker image that has been downloaded
+To view the docker image that has been downloaded.
 
 ```plain
 root@localhost:~# docker image ls                               
@@ -2174,7 +2174,7 @@ hello-world          latest            bc11b176a293       2 months ago        9.
 qoriq/arm64-ubuntu   latest           903eaef3b724        5 years ago         327MB
 ```
 
-5. Start the lighttp service running inside docker Ubuntu.
+5. Start the lighttp service running inside docker Ubuntu;
 
 ```plain
 root@localhost:~# docker run -d -p 30081:80 --name=sandbox1 \
@@ -2183,7 +2183,7 @@ bash -c "lighttpd -f /etc/lighttpd/lighttpd.conf -D"
 bb52adbbfe3f19889b2b4d77a41aa974410a266d1db3523ca35285c7d06b84ef
 ```
 
-6. View the current docker container running status
+6. View the current docker container running status;
 
 ```plain
 root@localhost:~# docker ps                                  
@@ -2191,11 +2191,11 @@ CONTAINER ID        IMAGE                COMMAND                  CREATED       
 bb52adbbfe3f        qoriq/arm64-ubuntu   "bash -c 'lighttpd -…"   4 minutes ago       Up 4 minutes        0.0.0.0:30081->80/tcp   sandbox1
 ```
 
-7. Other hosts access the HTTP service in docker through a web browser
+7. Other hosts access the HTTP service in docker through a web browser;
 
 ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394220723_c9af12b1_3613_49ee_ad97_f8b1ab26479e.png)
 
-8\. Other related commands
+8\. Other related commands.
 
 | Command                    | Comment                                |
 | :------------------------- | :------------------------------------- |
@@ -2213,7 +2213,7 @@ The full name of LXC is Linux Container. LXC is a lightweight virtualization tec
 
 LXC is positioned as an alternative to traditional virtual machines, focusing on delivering one operating system at a time, such as Ubuntu, Debian, and so on. Docker is application-oriented and officially advocates that a container is an application and is application-centric. So, docker also provides a unified packaging and deployment solution, namely Dockerfile, version control, image reuse, remote repositories for image sharing, and so on.
 
-1. Install ubuntu16.04
+1. Install ubuntu16.04;
    
    View LXC version
 
@@ -2256,7 +2256,7 @@ Retrieving image: rootfs: 100% (1.58MB/s)
 Starting test
 ```
 
-2. Display the local container
+2. Display the local container;
 
 ```plain
 root@localhost:~# lxc list
@@ -2267,7 +2267,7 @@ root@localhost:~# lxc list
 +------+---------+--------------------+-----------------------------------------------+------------+-----------+
 ```
 
-3. View the container network
+3. View the container network;
 
 ```plain
 root@localhost:~# lxc network show lxdbr0
@@ -2287,7 +2287,7 @@ locations:
 - none
 ```
 
-4. View container information
+4. View container information;
 
 ```plain
 root@localhost:~# lxc info test                                         
@@ -2330,7 +2330,7 @@ Resources:
       Packets sent: 0
 ```
 
-5. View the container configuration
+5. View the container configuration;
 
 ```plain
 root@localhost:~# lxc config show test                                        
@@ -2357,7 +2357,7 @@ stateful: false
 description: ""
 ```
 
-6. Run the container bash
+6. Run the container bash;
 
 ```plain
 root@localhost:~# lxc exec test -- /bin/bash                                 
@@ -2383,7 +2383,7 @@ Release:        18.04
 Codename:       bionic
 ```
 
-7. File download test
+7. File download test;
 
 ```plain
 root@localhost:~# ls
@@ -2393,7 +2393,7 @@ root@localhost:~# ls
 hosts wifi.sh
 ```
 
-8. File upload test
+8. File upload test;
 
 ```plain
 root@localhost:~# ls
@@ -2403,7 +2403,7 @@ root@localhost:~# ls
 hosts wifi.sh
 ```
 
-9. Stop the container
+9. Stop the container;
 
 ```plain
 root@localhost:~# lxc stop test                                            
@@ -2415,7 +2415,7 @@ root@localhost:~# lxc list
 +------+---------+------+------+------------+-----------+
 ```
 
-10. Delete the container
+10. Delete the container.
 
 ```plain
 root@localhost:~# lxc delete test                                          
@@ -2436,7 +2436,7 @@ root@localhost:~# ls /qemu/
 qemu-ifup  qemu.ext4.img
 ```
 
-1. Run KVM using Hugetlbfs
+1. Run KVM using Hugetlbfs;
 
 ```plain
 root@localhost:~# echo 256 > /proc/sys/vm/nr_hugepages
@@ -2444,7 +2444,7 @@ root@localhost:~# mkdir /boot/hugetlbfs
 root@localhost:~# mount -t hugetlbfs none /boot/hugetlbfs/
 ```
 
-2. Start qemu
+2. Start qemu;
 
 ```plain
 root@localhost:~# qemu-system-aarch64 -smp 1 -m 512 -mem-path /boot/hugetlbfs/ \-cpu host \
@@ -2464,7 +2464,7 @@ telnet 192.168.1.105 4446
 
 ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394221640_f68484b1_4d59_46b6_8ad7_bbd48dd11aea.png)
 
-3. Configure the network
+3. Configure the network;
 
 Plug the network cable into the fm1-mac6 interface to see the IP acquired automatically
 
@@ -2543,7 +2543,7 @@ Ping test：
 
 ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394222268_83b1ccf2_6ec7_4b80_8deb_0bb97a04c191.png)
 
-4. Use a virtual disk
+4. Use a virtual disk;
 
 Create a disk file on the OK1046A-C2 platform
 
@@ -2648,7 +2648,7 @@ Mount partition test.
 A virtual disk 
 ```
 
-5. Use a physical disk
+5. Use a physical disk;
 
 Qemu uses the/dev/mmcblk0 disk of the host. Note that the contents of this disk will be lost after being formatted by qemu.
 
@@ -2688,7 +2688,7 @@ The partitions vdb1, vdb2, and vdb3 correspond to mmcblk0p1, mmcblk0p2, and mmcb
 fsl-ok1046a-1040-5506-c3.dtb  fsl-ok1046a-1133-5a59-c2.dtb  Image  ls1046ardb_boot.scr
 ```
 
-6. View the status of qemu
+6. View the status of qemu.
 
 Start qemu.
 
@@ -3173,9 +3173,9 @@ Modification:
 
 ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1736834799535_3415c2b0_8d43_4d07_a0a9_b702fa8e66d9.png)
 
-Packets with a destination address of 192.168.1.0/24 use port0 output 
+Packets with a destination address of 192.168.1.0/24 use port0 output. 
 
-Packets with a destination address of 192.168.2.0/24 use port1 output
+Packets with a destination address of 192.168.2.0/24 use port1 output.
 
 Use the flex-builder -C dpdk -a arm64 -m ls1046ardb command in the flex-build environment.
 
@@ -3254,7 +3254,7 @@ root@localhost:~# ifconfig eth0 192.168.2.2
 root@localhost:~# tcpdump -i eth0 -vv -n -e
 ```
 
-Configure Linux Host: (replace the kernel with the pktgen option turned on before configuring)
+Configure Linux Host: (replace the kernel with the pktgen option turned on before configuring).
 
 ```plain
 forlinx@ubuntu~$ ifconfig eth0 192.168.1.120
@@ -3276,7 +3276,7 @@ This section briefly introduces the use of ovs-dpdk to build a layer two switchi
 
 ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394227913_0348c9ab_df60_4fa9_bf32_f4caa37979ca.png)
 
-**Note: Refer to Section 3.2.9 Using the Device Tree fsl-ok1046a-usdpaa-1133-5a59-c2.dtb**
+**Note: Refer to Section 3.2.9 Using the Device Tree fsl-ok1046a-usdpaa-1133-5a59-c2.dtb.**
 
 ```plain
 root@localhost:~#echo 256 > /proc/sys/vm/nr_hugepages
@@ -3443,23 +3443,23 @@ The OK1046A-C2 Uboot is set to boot the system from the QSPI flash by default. H
 
 The OK1046A-C2 platform has a TF card interface, but it conflicts with the eMMC and cannot be used under normal circumstances. However, it can still be used to initiate the system boot process. After starting up the system with the TF card, you can remove it and the system will automatically switch to the eMMC. Of course, the premise is that we need to burn the firmware into the TF card. The following is the process of making the burned TF card.
 
-1\. Insert the TF card into the host through the USB card reader and connect it to the virtual machine Ubuntu. (If the card reader is not recognized by the virtual machine, you can use the following method to recognize the card reader to the virtual machine.)
+1\. Insert the TF card into the host through the USB card reader and connect it to the virtual machine Ubuntu. (If the card reader is not recognized by the virtual machine, you can use the following method to recognize the card reader to the virtual machine.);
 
 ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394192332_7bf760a7_1061_4976_8bc1_f9251791866e.png)
 
-2\. View device nodes
+2\. View device nodes;
 
 ```plain
 forlinx@ubuntu:~$ ls /dev/sdb*
 /dev/sdb /dev/sdb1
 ```
 
-3\. Flash firmware to TF card
+3\. Flash firmware to TF card;
 
 The OK1046A-C2 has two versions of the SoM, namely V1.X and V2.X. Users can determine the version of the SoM by checking the silk screen markings on the board. When creating the card, it is necessary to use the corresponding card creation image. The path to the card creation image is as follows:
 
-+ V1.x version of the SoM image path: user information / manual / 1046 user’s manual chapter 6.2 Making TF Flashing Card Image / V1.x version/ firmware\_ls1046ardb\_uboot\_sdboot\_1040\_5506.img
-+ V2.x version of the SoM image path: user information / manual / 1046 user’s manual chapter 6.2 Making TF Flashing Card Image / V2.x version/ firmware\_ls1046ardb\_uboot\_64bit\_sdboot\_1040\_5506.img
++ V1.x version of the SoM image path: user information / manual / 1046 user’s manual chapter 6.2 Making TF Flashing Card Image / V1.x version/ firmware\_ls1046ardb\_uboot\_sdboot\_1040\_5506.img;
++ V2.x version of the SoM image path: user information / manual / 1046 user’s manual chapter 6.2 Making TF Flashing Card Image / V2.x version/ firmware\_ls1046ardb\_uboot\_64bit\_sdboot\_1040\_5506.img.
 
 Taking the burning of a TF card for the V1.x version SoM as an example, we can copy the card creation image to the “work” directory in Ubuntu, and then follow these steps to write the image to the TF card:
 

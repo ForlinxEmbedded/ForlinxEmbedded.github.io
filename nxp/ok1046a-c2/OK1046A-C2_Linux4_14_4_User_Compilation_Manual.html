@@ -261,16 +261,16 @@ OK10xx-linux-fs.tar.bz2                  //Source code package
 <p><img alt="Image" src="_images/1719394380332_dfc0fca3_a145_4ac9_8aaf_ae18acae52c2.png" /></p>
 <p>After loading, click to open the virtual machine to run and enter the system interface.</p>
 <p><img alt="Image" src="_images/1719394380588_2e337648_ef6e_4476_b7cc_d976808b2223.png" /></p>
-<p>When the development environment is loaded for the first time, the following will appear. Select “I have copied this virtual machine (P)”, and the system will automatically load it..</p>
+<p>When the development environment is loaded for the first time, the following will appear. Select “I have copied this virtual machine (P)”, and the system will automatically load it.</p>
 <p><img alt="Image" src="_images/1719394380795_bd1a6acb_36c6_4056_b8d7_99e74dc0d904.png" /></p>
-<p>After loading, you will enter the following interface, enter the password: forlinx, and select “Sign in” to log in after filling in the password..</p>
+<p>After loading, you will enter the following interface, enter the password: forlinx, and select “Sign in” to log in after filling in the password.</p>
 <p><img alt="Image" src="_images/1719394381131_20258bb8_f54e_40fb_a09d_622c61a9579d.png" /></p>
 <p>Password: forlinx.</p>
 <p><img alt="Image" src="_images/1719394381496_4ff54a3f_01b8_485c_be0a_40d4ab2677ac.png" /></p>
 </section>
 <section id="new-ubuntu-development-environment-setup">
 <h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
-<p>**Note: **</p>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>Beginners are not recommended to set up a system on their own. It is recommended to use an existing virtual machine environment. If you do not need to set up the environment, you can skip this section;</strong></p></li>
 <li><p><strong>This chapter focuses on the process of creating the Ubuntu system and does not cover the setting up of the compilation environment. The main reason for this is that in order to build a compilable source code environment, one needs to download the official source code of NXP in Ubuntu 18.04. Setting up Ubuntu compilation can be complex and prone to compilation problems.</strong></p></li>
@@ -302,13 +302,13 @@ OK10xx-linux-fs.tar.bz2                  //Source code package
 <p><img alt="Image" src="_images/1719394363487_2a828644_c374_4b24_bfe1_edf6ba017fa9.png" /></p>
 <p>Choose to create a new virtual disk here.</p>
 <p><img alt="Image" src="_images/1719394363662_581e7231_4262_414b_93bc_85b42262ca13.png" /></p>
-<p>Set the disk size to 200 gigabytes and select the form in which the disk exists, then click Next to finish.</p>
+<p>Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.</p>
 <p>Specify the disk file, the default one here is fine.</p>
 <p><img alt="Image" src="_images/1719394363873_289aa837_8337_4406_83ca_f0e46e0340f2.png" /></p>
-<p>Click Finish by default.</p>
+<p>Click “Finish” by default.</p>
 <p><img alt="Image" src="_images/1719394364073_3926cbeb_a9fb_42b7_b73f_9c602c39d422.png" /></p>
 <p>The virtual machine creation is now complete.</p>
-<p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
+<p>In the next section, the installation of Ubuntu system in the virtual machine is introduced, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
 </section>
 <section id="system-installation">
 <h4>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h4>
@@ -532,10 +532,10 @@ root@ubuntu:~/work# cd OK10xx-linux-fs/flexbuild
 </section>
 <section id="source-code-compilation">
 <h3>4.2 Source Code Compilation<a class="headerlink" href="#source-code-compilation" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
 <ul class="simple">
-<li><p><strong>Note:</strong></p></li>
-<li><p><strong>Use root privileges</strong></p></li>
-<li><p><strong>After the kernel source code is decompressed for the first time, the source code needs to be compiled as a whole.</strong></p></li>
+<li><p><strong>Use root privileges</strong>;</p></li>
+<li><p><strong>After the kernel source code is decompressed for the first time, the source code needs to be compiled as a whole;</strong></p></li>
 <li><p><strong>After the overall compilation, it can be compiled separately according to the actual situation.</strong></p></li>
 </ul>
 <section id="source-code-path">
@@ -723,7 +723,9 @@ OK10xx-linux-fs  OK10xx-linux-fs.tar.bz2  uarttest.c
 </div>
 <p>After successful compilation, use the file command to view the generated file information.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$file uarttest 
-uarttest: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, BuildID[sha1]=dad62c46c28894445d8b6829fb74e6e428d4a478, not stripped
+uarttest: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV),
+dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0,
+BuildID[sha1]=dad62c46c28894445d8b6829fb74e6e428d4a478, not stripped
 </pre></div>
 </div>
 <p>3. Copy the uarttest generated by compiling to the board through the U disk, such as/home/forlinx path, and run the test.</p>
