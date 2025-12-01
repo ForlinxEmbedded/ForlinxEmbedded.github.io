@@ -16,7 +16,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 | :--------: | :------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 19/04/2021 |      V1.0      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | User's Manual Initial Version                                |
 | 23/10/2021 |      V1.1      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | Manual structure adjustment, adding command description. |
-| 10/02/2022 |      V2.0      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | 1. Manual structure adjustment, separating the software manual into a compilation manual and a user manual;<br />adding the compilation part to the compilation manual, and optimizing the function test in the chapter; <br />2. Modify the corresponding description of the network port; <br />3. Add support for the RTL8822CE module. |
+| 10/02/2022 |      V2.0      | Applicable to V1.x and V2.x SoMs, V1.1 and above carrier board. | 1. Manual structure adjustment, separating the software manual into a compilation manual and a user manual;<br />adding the compilation part to the compilation manual, and optimizing the function test in the chapter; <br />2. Modifying the corresponding description of the network port; <br />3. Adding support for the RTL8822CE module. |
 
 ## Materials Description
 
