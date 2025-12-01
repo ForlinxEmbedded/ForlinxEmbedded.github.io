@@ -39,7 +39,7 @@ A description of some of the symbols and formats associated with this manual:
 | <font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Black font on gray background</font> | Serial port output message after entering a command          |
 | **<font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Bold black on gray background** | Key information in the serial port output message            |
 |                              //                              | Interpretation of input instructions or output information   |
-|                      Username@Hostname                       | root @ localhost: ~ : development board serial port login account information,<br />forlinx @ localhost: ~ : Development board network login account information<br />forlinx @ Ubuntu ~ $: Development environment Ubuntu account information<br />This information allows you to determine the environment, in which the feature operates. |
+|                      Username@Hostname                       | root @ localhost: ~ : development board serial port login account information;<br />forlinx @ localhost: ~ : Development board network login account information;<br />forlinx @ Ubuntu ~ $: Development environment Ubuntu account information;<br />This information allows you to determine the environment, in which the feature operates. |
 
 <font style="color:rgb(0,0,0);">Example: View the files that exist in the current path.</font>
 
