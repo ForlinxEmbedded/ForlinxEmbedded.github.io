@@ -22,7 +22,7 @@ This manual is designed to enable you to quickly understand the compilation proc
 
 The manual will provide instructions for setting up the environment but there may be some unforeseen issues during the environment setup process. For beginners, it is recommended to use the pre-configured development environment provided by us. This will allow you to quickly get started and reduce development time.
 
-Linux systems are typically installed in three ways: dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine. Hardware Requirements: It is recommended to have at least8GB memory or above.It allows for allocating a sufficient memory to the virtual machine (recommended to allocate2GBor above), while still leaving enough resources for other operations onWindows. Insufficient memory allocation may result in slower performance onWindows.
+Linux systems are typically installed in three ways: dual system on a real machine, single system on a real machine, and virtual machine. Different installation methods have their advantages and disadvantages. This manual only provides methods to build ubuntu in a virtual machine. Hardware Requirements: It is recommended to have at least8GB memory or above. It allows for allocating a sufficient memory to the virtual machine (recommended to allocate2GBor above), while still leaving enough resources for other operations on Windows. Insufficient memory allocation may result in slower performance on Windows.
 
 The manual is mainly divided into four chapters:
 
