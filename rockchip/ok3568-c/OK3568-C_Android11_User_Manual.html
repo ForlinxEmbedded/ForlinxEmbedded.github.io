@@ -1,0 +1,1164 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Android11.0_User’s Manual_V2.2 &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3568-c/OK3568-C_Android11_User_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Linux5. 10.160_User’s Compilation Manual_V1.2" href="OK3568-C_Linux5_10_160_User_Compilation_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_User_Hardware_Manual.html">User’s Hardware Manual_V3.1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Linux5_10_160_User_Manual.html">Linux5.10.160_User’s Manual_V2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Linux5_10_160_User_Compilation_Manual.html">Linux5. 10.160_User’s Compilation Manual_V1.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Android11.0_User’s Manual_V2.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568-c-development-board-description">1. OK3568-C Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok3568-c-ok3568-c2-development-board-description">1.1 OK3568-C/OK3568-C2 Development Board Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#android11-system-software-resources-features">1.2 Android11 System Software Resources Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table">1.3 EMMC Memory Partition Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging-serial-driver-installation">2.2 Debugging Serial Driver Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-login">2.3 Serial Port Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-login">2.3.2 Serial Login</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-switching">2.4 Screen Switching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-control-of-uboot-menu">2.4.1 Dynamic Control of Uboot Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernel-device-tree-specification">2.4.2 Kernel Device Tree Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#system-shutdown">2.5 System Shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#android-function-use-and-test">3. Android Function Use and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main-interface-display">3.1 Main Interface Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application">3.2 Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#language-settings">3.3 Language Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#picture-and-audio-view">3.4 Picture and Audio View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multimedia-test">3.5 Multimedia Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recording-supports-mic-input">3.6 Recording (Supports Mic input)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volume-adjustment">3.7 Volume Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-settings">3.8 Display Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-settings-rtc">3.9 Time Settings（RTC）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet-test">3.10 Ethernet Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-internet">3.11 WiFi Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-hotspot-test">3.12 WiFi Hotspot Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-5g-module-test">3.13 4G/5G Module Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bluetooth-test">3.14 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-test-sleep-wake-up">3.15 Key Test (Sleep Wake-up)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-card-and-usb-storage-test">3.16 TF Card and USB Storage Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-mouse-test">3.17 USB Mouse Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-otg-interface-test">3.18 USB OTG Interface Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-test">3.19 Serial Port Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-test">3.20 CAN Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#watchdog-test">3.21 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-test">3.22 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uvc-camera-test">3.22.1 UVC Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-camera-test">3.22.2 MIPI Camera Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#hdmi-resolution-setting-test">3.23 HDMI Resolution Setting Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#factory-reset">3.24 Factory Reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apk-installation-with-tf-card">3.25 APK Installation With TF Card</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-flashing">4. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#otg-system-flashing">4.1 OTG System Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#otg-driver-installation">4.1.1 OTG Driver Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-full-flashing-test">4.1.2 OTG Full Flashing Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-card-flashing">4.2 TF Card Flashing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html">RK Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded RK3568 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Android11.0_User’s Manual_V2.2</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="android11-0-user-s-manual-v2-2">
+<h1>Android11.0_User’s Manual_V2.2<a class="headerlink" href="#android11-0-user-s-manual-v2-2" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p><strong>User Manual Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>27/05/2022</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>OK3568-C­Android11.0­User’s Manual Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>23/09/2022</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>1.Modifying the Uboot menu and adding the description of rgb;<br />2. Adding a reminder that mipi and rgb cannot be used at the same time;<br />3. Adding a reminder that mipi cannot sleep and wake up temporarily.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>29/05/2023</p></td>
+<td class="text-center"><p>V1.2</p></td>
+<td><p>Adding the description of ov13850 support in 3.22.2 MIPI Camera test section.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>22/08/2023</p></td>
+<td class="text-center"><p><font style="color:#000000;">V1.3</font></p></td>
+<td><p>1. Adding can standard frame and extended frame descriptions;  <br/>2. Modifying the precautions for using the RGB screen;  <br/>3. Delete CANFD related description.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>21/05/2024</p></td>
+<td class="text-center"><p>V2.0</p></td>
+<td><p>Adding FET3568-C2 SoM.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>18/07/2025</p></td>
+<td class="text-center"><p>V2.1</p></td>
+<td><p>Adding CXMT memory description in section 3.15 key test (sleep wake) and removing sleep wake function.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>20/10/2025</p></td>
+<td class="text-center"><p>V2.2</p></td>
+<td><p>Adding notes in the WIFI test chapter and the quick startup chapter (the antenna must be connected for startup, otherwise the startup may be affected).</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the your understanding, mainly for practical use. Please refer to the “OK3568-C Compilation Manual” provided by Forlinx for the kernel compilation, compilation method, development environment building.</p>
+<p>The manual is primarily divided into five chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. focuses on the overall overview of the product, and briefly introduces the development board in the interface resources, the relevant driver path in the kernel source code, and the description of the key parts of the information;</p></li>
+<li><p>Chapter 2. covers quick startup of the product, with options for both serial port login and network login;</p></li>
+<li><p>Chapter 3. mainly serves as an introduction to the product’s usage features and is divided into multiple sections, including the function testing of the command line in the terminal and the function testing of the QT desktop;</p></li>
+<li><p>Chapter 4. mainly focuses on testing the usage of the product’s features such as audio, video, and camera;</p></li>
+<li><p>Chapter 5. focuses on the product’s image update, mainly describing the method of updating the image to the storage device, and users can choose the corresponding flashing method according to the actual situation.</p></li>
+</ul>
+<p><font style="color:#000000;">A description of some of the symbols and formats associated with this manual:</font></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
+<td><p>Note or information that requires special attention, be sure to read carefully.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>Relevant notes on the test chapters.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>🛤️</p></td>
+<td><p>Indicates the related path.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:blue;">Blue font on gray background</font></p></td>
+<td><p>Refers to commands entered at the command line (Manual input required).</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Black font</p></td>
+<td><p>Serial port output message after entering a command.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><strong>Bold black</strong></p></td>
+<td><p>Key information in the serial port output message.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">//</font></p></td>
+<td><p>Interpretation of input instructions or output information.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Username&#64;Hostname</p></td>
+<td><p>root&#64;ok3568: development board serial port login account information;<br/>forlinx &#64;rk3568: development board network login account information;<br/>forlinx &#64; Ubuntu: development environment Ubuntu account information.<br/>You can determine the environment for function operation through this information.</p></td>
+</tr>
+</tbody>
+</table>
+<p><font style="color:#000000;">After packaging the file system, you can use the “ls” command to view the generated files.</font></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/3568$ ls                              //List the files in this directory
+OK3568-linux-source  OK3568-linux-source.tar.bz2
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>forlinx&#64;ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu.</p></li>
+<li><p>//: Explanation of operation commands is required, but command input is not needed.</p></li>
+<li><p><font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: blue font on a gray background, indicating relevant commands that need to be entered manually.</p></li>
+<li><p><strong>OK3568-linux-source:</strong> Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.</p></li>
+</ul>
+</section>
+<section id="ok3568-c-development-board-description">
+<h2>1. OK3568-C Development Board Description<a class="headerlink" href="#ok3568-c-development-board-description" title="Link to this heading"></a></h2>
+<section id="ok3568-c-ok3568-c2-development-board-description">
+<h3>1.1 OK3568-C/OK3568-C2 Development Board Description<a class="headerlink" href="#ok3568-c-ok3568-c2-development-board-description" title="Link to this heading"></a></h3>
+<p>RK3568 is a low-power high-performance processor based on ARM64 architecture. It includes 4-core Cortex-A55 and independent NEON co-processor and neural network plus processor NPU. It can be applied to computers, mobile phones, personal mobile Internet and digital multimedia devices.</p>
+<p>The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:</p>
+<p><img alt="Image" src="_images/1719278032824_bb905cbc_77a0_4b9f_81f8_6e06a88d1c1a.png" /><img alt="Image" src="_images/1719278033258_5f661cb4_f179_4a31_8ab4_6856ec4741bd.png" /></p>
+<hr class="docutils" />
+<p><strong>Note:</strong></p>
+<p><strong>Hardware parameters are not described in this software manual. Before referring to this manual for software development, please read “OK3568-C_ Hardware Manual_V1.0-2022.02.09” under the path of “Hardware Data \ User Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
+</section>
+<section id="android11-system-software-resources-features">
+<h3>1.2 Android11 System Software Resources Features<a class="headerlink" href="#android11-system-software-resources-features" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Device</strong></p></th>
+<th class="head"><p><strong>Location of driver source code in the kernel</strong></p></th>
+<th class="head"><p><strong>Device Name</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LCD Backlight Driver</p></td>
+<td><p>drivers/video/backlight/pwm_bl.c</p></td>
+<td><p>/sys/class/backlight</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB Port</p></td>
+<td><p>drivers/usb/storage/</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>USB Mouse</p></td>
+<td><p>drivers/hid/usbhid/</p></td>
+<td><p>/dev/input/mice</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ethernet</p></td>
+<td><p>drivers/net/ethernet/stmicro/stmmac</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>SD/micro TF card driver</p></td>
+<td><p>drivers/mmc/host/dw_mmc-rockchip.c</p></td>
+<td><p>/dev/block/mmcblk1pX</p></td>
+</tr>
+<tr class="row-odd"><td><p>EMMC Driver</p></td>
+<td><p>drivers/mmc/host/dw_mmc-rockchip.c</p></td>
+<td><p>/dev/block/mmcblk2pX</p></td>
+</tr>
+<tr class="row-even"><td><p>OV13850</p></td>
+<td><p>drivers/media/i2c/ov13850.c</p></td>
+<td><p>/dev/videoX</p></td>
+</tr>
+<tr class="row-odd"><td><p>LCD Controller</p></td>
+<td><p>drivers/gpu/drm/rockchip/rockchip_drm_vop.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>MIPI CSI</p></td>
+<td><p>drivers/phy/rockchip/phy-rockchip-mipi-rx.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>MIPI DSI</p></td>
+<td><p>drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>LCD Touch Driver</p></td>
+<td><p>drivers/input/touchscreen/gt9xx/*<br/>drivers/input/touchscreen/edt-ft5x06.c</p></td>
+<td><p>/dev/input/eventX</p></td>
+</tr>
+<tr class="row-odd"><td><p>RTC Real Time Clock Driver</p></td>
+<td><p>drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c</p></td>
+<td><p>/dev/rtc0</p></td>
+</tr>
+<tr class="row-even"><td><p>serial port</p></td>
+<td><p>drivers/tty/serial/8250/8250_dw.c</p></td>
+<td><p>/dev/ttySX</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key Driver</p></td>
+<td><p>drivers/input/keyboard/adc-keys.c</p></td>
+<td><p>/dev/input/eventX</p></td>
+</tr>
+<tr class="row-even"><td><p>LED</p></td>
+<td><p>drivers/leds/leds-gpio.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>I2S</p></td>
+<td><p>sound/soc/rockchip/rockchip_i2s.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Audio Driver</p></td>
+<td><p>sound/soc/codecs/rk817_codec.c</p></td>
+<td><p>/dev/snd/</p></td>
+</tr>
+<tr class="row-odd"><td><p>PMIC</p></td>
+<td><p>drivers/mfd/rk808.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>PCIE</p></td>
+<td><p>drivers/pci/controller/pcie-rockchip.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Watchdog</p></td>
+<td><p>drivers/watchdog/dw_wdt.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>SPI</p></td>
+<td><p>drivers/spi/spi-rockchip.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>PWM</p></td>
+<td><p>drivers/video/backlight/pwm_bl.c</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="emmc-memory-partition-table">
+<h3>1.3 EMMC Memory Partition Table<a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h3>
+<p>The following table is the eMMC memory partition information of Android operating system (the size of a block is 512bit when calculating):</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Partition Index</strong></p></th>
+<th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Offset / Block</strong></p></th>
+<th class="head"><p><strong>Size/Block</strong></p></th>
+<th class="head"><p>Content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>N/A</p></td>
+<td><p>security</p></td>
+<td><p>0x00002000</p></td>
+<td><p>0x00002000</p></td>
+<td><p>MiniLoaderAll.bin</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>uboot</p></td>
+<td><p>0x00004000</p></td>
+<td><p>0x00002000</p></td>
+<td><p>uboot.img</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>trust</p></td>
+<td><p>0x00006000</p></td>
+<td><p>0x00002000</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>misc</p></td>
+<td><p>0x00008000</p></td>
+<td><p>0x00002000</p></td>
+<td><p>misc.img</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>dtbo</p></td>
+<td><p>0x0000a000</p></td>
+<td><p>0x00002000</p></td>
+<td><p>dtbo.img</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>vbmeta</p></td>
+<td><p>0x0000c000</p></td>
+<td><p>0x00000800</p></td>
+<td><p>vbmeta.img</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>boot</p></td>
+<td><p>0x0000c800</p></td>
+<td><p>0x00014000</p></td>
+<td><p>boot.img</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>recovery</p></td>
+<td><p>0x00020800</p></td>
+<td><p>0x00030000</p></td>
+<td><p>recovery.img</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>backup</p></td>
+<td><p>0x00050800</p></td>
+<td><p>0x000c0000</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="fast-startup">
+<h2>2. Fast Startup<a class="headerlink" href="#fast-startup" title="Link to this heading"></a></h2>
+<section id="preparation-before-startup">
+<h3>2.1 Preparation Before Startup<a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>12V2A or 12V3A DC Power Cable</p></li>
+<li><p>Debugging serial cable</p></li>
+</ul>
+<p><strong>Note: Be sure to install the WiFi antenna when startup.</strong></p>
+<p>The debugging serial port on the development board is a Micro USB Jack. You can use the USB to micro cable to connect the development board and the PC, so as to view the status of the development board.</p>
+<p><img alt="Image" src="_images/1719278096774_001ae231_adca_4999_b8c2_c8ad5e881325.png" /></p>
+</section>
+<section id="debugging-serial-driver-installation">
+<h3>2.2 Debugging Serial Driver Installation<a class="headerlink" href="#debugging-serial-driver-installation" title="Link to this heading"></a></h3>
+<p>OK3568-C/OK3568-C2 platform uses a Type-C interface for debugging serial port, with an on-board USB to UART chip. Customers do not need to purchase USB to serial debugging tools; it is extremely simple and convenient to use.</p>
+<p>To install the driver, please use the driver package DriverAssitant_v5.11.zip provided in the User Profile \Android\Tools\ directory.</p>
+<p>Run DriverInstall.exe directly after the unzipping is completed; in order to ensure the driver is the latest version, please unstall the driver first, then install again.</p>
+</section>
+<section id="serial-port-login">
+<h3>2.3 Serial Port Login<a class="headerlink" href="#serial-port-login" title="Link to this heading"></a></h3>
+<section id="serial-port-connection-settings">
+<h4>2.3.1 Serial Port Connection Settings<a class="headerlink" href="#serial-port-connection-settings" title="Link to this heading"></a></h4>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Serial port terminal login user: Serial port terminal automatically logs in root user without password;</strong></p></li>
+<li><p><strong>Serial port settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity bit, no flow control;</strong></p></li>
+<li><p><strong>Hardware Requirements: Type-C cable required to connect PC and development boards;</strong></p></li>
+<li><p><strong>Software requirements: PC Windows system needs to install the super terminal software. Because the terminal software has many types, users can choose their familiar one.</strong></p></li>
+</ul>
+<p>In the following, we take the putty terminal software as an example to introduce the serial port login method:</p>
+<p>Step 1: Connect the serial port number of the computer—check the serial port number from the device manager (Based on the port actually recognized by the computer );</p>
+<p><img alt="Image" src="_images/1719278097074_b47e4466_6c06_446d_9671_cddd973fd5ac.png" /></p>
+<p>Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;</p>
+<p><img alt="Image" src="_images/1719278097272_9fdce2cc_560d_450e_89f7_4424aa719b37.png" /></p>
+<p>Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM3 as an example, save the settings, open the serial port again later, and click on the saved port number;</p>
+<p><img alt="Image" src="_images/1719278097482_7500e9fb_1242_45a5_bc59_25fe942c80eb.png" /></p>
+</section>
+<section id="serial-login">
+<h4>2.3.2 Serial Login<a class="headerlink" href="#serial-login" title="Link to this heading"></a></h4>
+<p>After the terminal software on the PC side is set, connect the PC and the development board through the serial port cable, and power on after connecting the power supply. The startup information can be seen through the terminal software.</p>
+<p>The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:</p>
+<p><img alt="Image" src="_images/1719278097649_89d5f481_e161_4f1e_b3a0_50f67971bbc1.png" /></p>
+</section>
+</section>
+<section id="screen-switching">
+<h3>2.4 Screen Switching<a class="headerlink" href="#screen-switching" title="Link to this heading"></a></h3>
+<p>OK3568 supports multi-screen interfaces such as MIPI DSI, HDMI, eDP, etc. Currently there are two methods for controlling screen switching: specifying through the device tree in the kernel and dynamically controlling through the Uboot menu.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>RGB screen resolution defaults to 1024x600. When using the rgb screen, the sleep wake function cannot be used;</strong></p></li>
+<li><p><strong>Screen switching involves touch switching. The factory image defaults to outputting video display on LVDS, MIPI, and HDMI interfaces simultaneously, with touch functionality on LVDS screen. If using MIPI touch, please turn off LVDS screen output during the screen selection process.</strong></p></li>
+</ul>
+<section id="dynamic-control-of-uboot-menu">
+<h4>2.4.1 Dynamic Control of Uboot Menu<a class="headerlink" href="#dynamic-control-of-uboot-menu" title="Link to this heading"></a></h4>
+<p>This method switches screens without recompiling and flashing in existing supported screens.</p>
+<p>During the uboot self-boot process, press the space bar at the serial terminal to bring up the control options:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Hit key to stop autoboot(&#39;Spacebar&#39;):  0
+---------------------------------------------
+0:Exit to console
+1:Reboot
+2:Display type
+---------------------------------------------
+</pre></div>
+</div>
+<p>Enter 2 at the terminal to access the Screen Control sub-menu:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
+hdmi==&gt;hdmi mipi_edp==&gt;mipi lvds_rgb=&gt;lvds
+Select  display
+0:Exit
+1:hdmi display hdmi
+2:mipi_edp display mipi
+3:lvds_rgb display lvds
+---------------------------------------------
+</pre></div>
+</div>
+<p>You can choose from four types of screens: HDMI, MIPI-DSI, eDP, and Lvds. To toggle the options for enabling or disabling, you can press on the corresponding option. For MIPI-DSI and eDP, you can switch and select them at Option 2. The parameter information table for the options is as follows:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Terminal input:</strong></p></th>
+<th class="head"><p><strong>Screen selection parameters are:</strong></p></th>
+<th class="head"><p><strong>Here are the corresponding meanings for the parameters:</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Exit</p></td>
+<td><p>Return to the previous menu</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>hdmi display off</p></td>
+<td><p>Turn on HDMI screen signal output</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>mipi_edp display off</p></td>
+<td><p>Turn on MIPI-DSI/eDP screen signal output</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>lvds display off</p></td>
+<td><p>Turn on the Lvds screen signal output</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following is an example of opening the eDP screen and pressing the number 2 to print a change in information:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
+hdmi==&gt;hdmi mipi_edp==&gt;mipi lvds_rgb=&gt;lvds
+Select  display
+0:Exit
+1:hdmi display off
+2:mipi_edp display mipi
+3:lvds display off
+---------------------------------------------
+</pre></div>
+</div>
+<p>It can be seen that the above bold font is switched to mipi screen signal output. Press the number 2 again, and the print information changes:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
+hdmi==&gt;hdmi mipi_edp==&gt;edp lvds_rgb=&gt;lvds
+Select  display
+0:Exit
+1:hdmi display off
+2:mipi_edp display edp
+3:lvds display off
+---------------------------------------------
+</pre></div>
+</div>
+<p>It can be seen that the above bold font is switched to eDP screen signal output. After the selection is completed, exit according to the menu prompt option to restart, and press the number 0 to print the information change:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
+0:Exit to console
+1:Reboot
+2:Display type
+---------------------------------------------
+</pre></div>
+</div>
+<p>Press the number 1 to perform the reboot operation. The screen option for the uboot phase operation takes effect after the reboot.</p>
+<p>After the screen selection is completed, you can also press the reset key of the development board to restart, and it will take effect after starting.</p>
+</section>
+<section id="kernel-device-tree-specification">
+<h4>2.4.2 Kernel Device Tree Specification<a class="headerlink" href="#kernel-device-tree-specification" title="Link to this heading"></a></h4>
+<p>This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again</p>
+<p><strong>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
+<p>Device tree path：kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi</p>
+<p>In the kernel source code, open the device dtsi file and find the following node:</p>
+<p><img alt="Image" src="_images/1719278097852_26b3e3ac_074e_4acf_8eec_5ecc61bb28cc.png" /></p>
+<p>The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.</p>
+<p>Examples:</p>
+<p>Close the hdmi, lvds screens, change the attribute to “off”, and use edp to change the corresponding attribute to edp.</p>
+<p><img alt="Image" src="_images/1719278098027_778e42b7_2952_469b_a457_3e54339c8ade.png" /></p>
+<p>After saving, recompile to generate the image.</p>
+<p>There are many types of MIPI screens, and the existing timing and control words may not meet the requirements, so it is necessary to change the display-timings under the dsi node. However, any node status attribute related to display is handled by default, and the program will automatically control it.</p>
+</section>
+</section>
+<section id="system-shutdown">
+<h3>2.5 System Shutdown<a class="headerlink" href="#system-shutdown" title="Link to this heading"></a></h3>
+<p>In general, you can turn off the power directly, but avoid doing so during important operations like data storage or usage to prevent irreversible file damage. Damaged files may require firmware rewrite. To ensure that data is not completely written, enter sync command to complete data synchronization before turning off the power.</p>
+<p><strong>Note: If the user-designed product using the SoM experiences an unexpected shutdown due to power loss during operation, power-down protection measures can be included in the design to prevent this issue.</strong></p>
+</section>
+</section>
+<section id="android-function-use-and-test">
+<h2>3. Android Function Use and Test<a class="headerlink" href="#android-function-use-and-test" title="Link to this heading"></a></h2>
+<section id="main-interface-display">
+<h3>3.1 Main Interface Display<a class="headerlink" href="#main-interface-display" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1719278057335_9c1baeb4_25d8_4efb_ba68_06db177ec92d.jpeg" /></p>
+</section>
+<section id="application">
+<h3>3.2 Application<a class="headerlink" href="#application" title="Link to this heading"></a></h3>
+<p>Swipe up on the main screen to bring up the following screen.</p>
+<p><img alt="Image" src="_images/1719278057581_23f5bcfc_012e_4673_be33_7d8b21a9e68b.png" /></p>
+<p><strong>Note: There may be slight differences after the software version update is completed. It is not used as the actual picture after each version update in the future. It is only for reference.</strong></p>
+</section>
+<section id="language-settings">
+<h3>3.3 Language Settings<a class="headerlink" href="#language-settings" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719278057767_c0f8f775_048b_48dc_92ff_65578dde6842.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278058101_967c68fc_33aa_4c69_b82e_41b0eb408c02.png" /></p>
+<p>Click “<img alt="Image" src="_images/1719278058320_19cc311b_a30e_412a_86ed_1219cf80bfea.png" />” on the application interface to enter the system interface.</p>
+<p><img alt="Image" src="_images/1719278058534_2860d692_d506_4d3d_b999_c37196223f7d.png" /></p>
+<p>Click “Language and input method” to enter the language setting interface:</p>
+<p><img alt="Image" src="_images/1719278058741_a3e899d4_db00_4b4f_b8d6_d453b1a82455.png" /></p>
+<p>Click “Language” to enter the language selection interface:</p>
+<p><img alt="Image" src="_images/1719278058940_2b0ff240_9913_497f_8503_fb03e5f366d3.png" /></p>
+<p>Click “Add Language” to add a new language.</p>
+<p>If you want to remove an installed language, you can click the icon with three dots in the upper right corner, select Remove, check the language you want to delete, click the trash can icon in the upper right corner, and a dialog box pops up, “Do you want to remove the selected language?” Click “Confirm” to deleted the language.</p>
+</section>
+<section id="picture-and-audio-view">
+<h3>3.4 Picture and Audio View<a class="headerlink" href="#picture-and-audio-view" title="Link to this heading"></a></h3>
+<p>Store the picture and video files to be viewed into the TF card, and insert the TF card into the development board.</p>
+<p>Click “<img alt="Image" src="_images/1719278059138_1bc97a80_a5e1_4d71_be6a_a201747bb9eb.png" />” on the application interface to enter the TF card picture browsing interface.</p>
+<p><img alt="Image" src="_images/1719278059352_9e674556_3951_4464_8a1e_c1b9c0772e5e.jpeg" /></p>
+<p>Configure permissions:</p>
+<p><img alt="Image" src="_images/1719278059566_657e2b9a_fa19_42d3_a520_3505fcb2b6e1.png" /></p>
+<p><img alt="Image" src="_images/1719278059758_67fce99b_10f1_4740_b318_895e70d04fef.png" /></p>
+<p>After configuration, enter the picture and video view:</p>
+<p><img alt="Image" src="_images/1719278060072_a5e52807_0ebb_4c42_96fc_633962eb17fb.png" /></p>
+<p>Click on the pictures and videos to view:</p>
+<p><img alt="Image" src="_images/1719278060387_273149fe_c8ad_4208_99b6_ddb385980628.jpeg" /></p>
+</section>
+<section id="multimedia-test">
+<h3>3.5 Multimedia Test<a class="headerlink" href="#multimedia-test" title="Link to this heading"></a></h3>
+<p>Store the audio file to be played into the TF card, and insert the TF card into the development board.</p>
+<p>Click “<img alt="Image" src="_images/1719278060662_b71acbc3_47db_4f1c_9d9f_a42a5316e0b1.png" />” in the application interface to enter the music player interface.</p>
+<p><img alt="Image" src="_images/1719278060917_ceec7214_5075_40be_9bb8_3f62add12369.png" /></p>
+<p>Click “<img alt="Image" src="_images/1719278061153_b545b628_46d8_4c93_9993_b91f436c8bec.png" />” in the interface to enter the song list interface.</p>
+<p><img alt="Image" src="_images/1719278061397_6115e2a5_c80c_46f2_a04d_1ba2243959c7.png" /></p>
+<p>Click “Play Music” to enter the play interface.</p>
+<p><img alt="Image" src="_images/1719278061614_3272d087_8811_4abf_bffa_abbf5adebfce.png" /></p>
+<p>The priority of sound playback is headphone &gt; HDMI audio &gt; carrier board speaker, and the volume can be adjusted by pressing the physical keys VOL + and VOL- on the carrier board of the development board.</p>
+</section>
+<section id="recording-supports-mic-input">
+<h3>3.6 Recording (Supports Mic input)<a class="headerlink" href="#recording-supports-mic-input" title="Link to this heading"></a></h3>
+<p>Click the video “<img alt="Image" src="_images/1719278061885_c4e5bee3_be63_4d6b_9741_9f71b37717cc.png" />” in the application interface to enter the recorder interface:</p>
+<p><img alt="Image" src="_images/1719278062095_415c0bc7_7f6d_46b4_b7f7_2bb7b11ccff4.png" /></p>
+<p>Configure permissions:</p>
+<p><img alt="Image" src="_images/1719278062317_671a0449_f0b3_4110_b38b_4cd6be49d4b2.png" /></p>
+<p>Click the round button to start recording: (Note: the pointer will swing according to the sound level during normal recording).</p>
+<p><img alt="Image" src="_images/1719278062530_4ed02c67_9604_4b4f_9521_1f7d0f594f8b.png" /></p>
+<p><img alt="Image" src="_images/1719278062776_4fcf7192_c0ca_4c71_8218_bbab2c56fccd.png" /></p>
+<p>Click the square button to stop recording, and finally click the done button to save.</p>
+<p><img alt="Image" src="_images/1719278063038_109ddaf9_2c5c_4660_8ec1_63ea2cc76c03.png" /></p>
+<p>The recorded audio can be viewed and played through the music player. Click the playlist of the music player:</p>
+<p><img alt="Image" src="_images/1719278063264_ca6a1c09_68cf_404c_97f1_f7f24ec60f00.png" /></p>
+<p>Click the recently added song to see the newly generated recording file:</p>
+<p><img alt="Image" src="_images/1719278063508_30acd278_c58e_459c_8918_9f645de0c84d.png" /></p>
+<p>Click the file to play:</p>
+<p><img alt="Image" src="_images/1719278063748_93272e35_cd8a_467a_ada5_19341bf37c48.png" /></p>
+</section>
+<section id="volume-adjustment">
+<h3>3.7 Volume Adjustment<a class="headerlink" href="#volume-adjustment" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719278063995_d980878e_5612_4bea_a37e_c3f1c6891249.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278064181_c0f95a42_0645_4bf9_9c6a_6eb48454e060.png" /></p>
+<p>Click “Sound” in the settings interface to enter the volume settings interface.</p>
+<p><img alt="Image" src="_images/1719278064406_86dd302a_5761_42c0_88e1_216586fd9c3a.png" /></p>
+<p>This interface allows you to adjust each section’s volume and supports media volume adjustment using the physical buttons VOL- and VOL+ on the base plate.</p>
+<p>Click “Advanced” to set the ringtone of the mobile phone:</p>
+<p><img alt="Image" src="_images/1719278064595_ef72e0f9_44dd_4799_ba12_2f66fa9c27ed.png" /></p>
+</section>
+<section id="display-settings">
+<h3>3.8 Display Settings<a class="headerlink" href="#display-settings" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719278064781_65772de5_67ba_4b08_8c4f_9aaa9037b3bc.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278064962_ad67167e_f7e3_4b5a_91c9_e1d26712f0b8.png" /></p>
+<p>Click “Display” in the setting interface, enter the display setting interface, and select “Brightness” for the backlight setting, then the brightness adjustment slider will appear, adjust the brightness. Because the development board provided by Forlinx does not have a power sensing chip, the automatic screen rotation function in the advanced options does not work.</p>
+<p><img alt="Image" src="_images/1719278065162_4f8d14ea_e604_4616_a978_560316d43d31.png" /></p>
+<p>The default setting of OK3568 is to never turn off the screen. If you need to sleep and wake up, please click the “Screen timeout” option to select the sleep time.</p>
+<p><img alt="Image" src="_images/1719278065393_62f817c7_32c2_46dc_99f3_befd53133c60.png" /></p>
+<p>If there is no operation on the interface within the set sleep time, the screen will enter the sleep mode, and pressing the PWRON physical button on the carrier board will wake up the screen.</p>
+</section>
+<section id="time-settings-rtc">
+<h3>3.9 Time Settings（RTC）<a class="headerlink" href="#time-settings-rtc" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719278065590_72703389_1231_492a_9285_26885d27677a.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278065785_72d41190_3108_477a_a9cd_f96cf0fc6e27.png" /></p>
+<p>Select “System,” where you can change the date and time, and even after power failure, the time can still be synchronized (ensure that the button battery is installed on the board).</p>
+<p><img alt="Image" src="_images/1719278065957_c0f18e38_d0f3_4d67_80d1_15f61f7a6a04.png" /></p>
+<p>Turn off “Use Time From Network” to set the date and time separately.</p>
+<p><img alt="Image" src="_images/1719278066167_635e431f_2b3c_4d7a_a216_d5eb5197da6b.png" /></p>
+<p><img alt="Image" src="_images/1719278066364_2714df4b_2ded_41d7_8239_2c979997b1f7.png" /></p>
+<p>Click on “Set Date.”</p>
+<p><img alt="Image" src="_images/1719278066613_c63c52d8_73d0_4510_88d7_b77985dd24c6.png" /></p>
+<p>Click on “Set Time.”</p>
+<p><img alt="Image" src="_images/1719278066828_4867025b_942b_4b5f_aa1a_8f6cb98d4a4b.png" /></p>
+</section>
+<section id="ethernet-test">
+<h3>3.10 Ethernet Test<a class="headerlink" href="#ethernet-test" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
+<p><strong>When there are 4G and Ethernet at the same time, Ethernet is preferred by default; when there is 4G WiFi at the same time, WiFi is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.</strong></p>
+<p>1. Gigabit network port test:</p>
+<p>Prepare a router and a network cable that can be connected to the external network port.</p>
+<p>After inserting the network cable, click “<img alt="Image" src="_images/1719278067059_27fdd662_7040_438b_b9df_bd9d84de4f4c.png" />” on the application interface:</p>
+<p><img alt="Image" src="_images/1719278067244_39a22ff3_1ef4_4910_9fc0_c860f0e2bc0c.png" /></p>
+<p>Click “Network and Internet”:</p>
+<p><img alt="Image" src="_images/1719278067431_e1e544c8_1009_464f_b35c_8048e44df8ad.png" /></p>
+<p>The OK3568 has 2 x Gigabit NIC on board (Ethernet ETH0 and Ethernet ETH1; the current interface settings only support ETH0). Click “Ethernet ETH0” to choose to automatically obtain IP DHCP or static IP. DHCP is recommended. If you set a static IP, make sure your network parameters are available.</p>
+<p>Click “Ethernet”:</p>
+<p><img alt="Image" src="_images/1719278067677_2b3f4768_ee44_498d_be7e_9d67fb958665.png" /></p>
+<p>The default IP acquisition method is “dhcp”. If you want to set a static IP, click Ethernet Ip mode:</p>
+<p><img alt="Image" src="_images/1719278067863_3bb65b95_5a74_4c53_80b0_cc82e5b9dffc.png" /></p>
+<p>Select Static for static IP configuration:</p>
+<p><img alt="Image" src="_images/1719278068048_415e63e1_aa2e_4a76_a4e6_01ca2ce1506a.png" /></p>
+<p>Click “CONNECT” to complete the configuration:</p>
+<p><img alt="Image" src="_images/1719278068247_dad864b7_79fe_4c1b_af70_567cda919dd7.png" /></p>
+<p>Click “Lightning” on the application interface for network test:</p>
+<p><img alt="Image" src="_images/1719278068456_586c1f4d_98ec_41f5_8465_c58683e758b0.png" /></p>
+<p>Enter “<a class="reference external" href="http://www.forlinx.com">http://www.forlinx. net</a>” in the domain name column and click “Start” to enter the official website of Forlinx.</p>
+<p><img alt="Image" src="_images/1719278068680_9c61c9d5_f5fb_4251_b910_8557837c7360.png" /></p>
+<p><img alt="Image" src="_images/1719278068964_f1ea293e_aca1_42fa_a3ca_4d98026606c6.png" /></p>
+</section>
+<section id="wifi-internet">
+<h3>3.11 WiFi Internet<a class="headerlink" href="#wifi-internet" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;</strong></p></li>
+<li><p><strong>When testing WiFi, unplug the wired network;</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Be sure to install the Wifi antenna when startup.</strong></p></li>
+</ul>
+<p>The OK3568 has an on-board AW-CM358SM module. Open settings, select “Network &amp; Internet”, and click “WLAN”:</p>
+<p><img alt="Image" src="_images/1719278069242_a83585d8_2c06_458f_ab13_991858f295c5.png" /></p>
+<p>Click “Use WLAN”:</p>
+<p><img alt="Image" src="_images/1719278069477_8665b0fb_b3f8_406b_b1bd_66a94c9322ad.png" /></p>
+<p>Click on the WIFI to be connected and enter the password:</p>
+<p><img alt="Image" src="_images/1719278069656_2dac1591_c700_4077_acf0_49fa23da04fc.png" /></p>
+<p><img alt="Image" src="_images/1719278069853_5a5cc91f_c9db_46b9_b207_b96745567e0a.png" /></p>
+<p>After the connection is successful, you can open the Lightning Browser for network test:</p>
+<p><img alt="Image" src="_images/1719278070189_18de3246_1447_462c_98e3_1ae63300b8cb.png" /></p>
+</section>
+<section id="wifi-hotspot-test">
+<h3>3.12 WiFi Hotspot Test<a class="headerlink" href="#wifi-hotspot-test" title="Link to this heading"></a></h3>
+<p>OK3568 supports the sharing of Ethernet or mobile networks through WIFI for WIFI hotspot testing. First, plug the network cable into the OK3568 ETH0 connector. Open Settings and click Network and Internet.</p>
+<p>Click “Hotspot &amp;tethering”:</p>
+<p><img alt="Image" src="_images/1719278070501_2e4c74eb_77e8_40dc_b405_9c25adcd1fff.png" /></p>
+<p>Click “WLAN Hotspot”:</p>
+<p><img alt="Image" src="_images/1719278070726_7d066a1f_c34e_4c11_bc0d_410d3afa1f1e.png" /></p>
+<p><img alt="Image" src="_images/1719278070926_467b8fbd_b0a9_4420_b6ad_c6e7feb9fd11.png" /></p>
+<p>Enable the WLAN hotspot and set the hot spot name and password:</p>
+<p><img alt="Image" src="_images/1719278071131_0aa10bfb_ba55_4453_a4ef_f5bbaa62e72b.png" /></p>
+<p>First set the hotspot name:</p>
+<p><img alt="Image" src="_images/1719278071362_4de29e5d_831e_414f_a5bb_baa65e4a2768.png" /></p>
+<p><img alt="Image" src="_images/1719278071602_ea655bcc_ad33_4306_889d_4fcc771c58e1.png" /></p>
+<p>Click “Confirm”.</p>
+<p>Set hotspot password:</p>
+<p><img alt="Image" src="_images/1719278071799_a16fe790_b0db_4539_8cc5_ccd8aedda49a.png" /></p>
+<p><img alt="Image" src="_images/1719278072033_d5f4323b_47e2_4189_87e7_d17a16195178.png" /></p>
+<p>Click “Confirm”.</p>
+<p>Set the AP band:</p>
+<p><img alt="Image" src="_images/1719278072279_144a4f40_19d8_4124_bc88_d3ae574e2a8f.png" /></p>
+<p>Click “Confirm”.</p>
+<p>Set up security:</p>
+<p><img alt="Image" src="_images/1719278072481_133a8c53_a056_4dbc_aa44_716adef52ca9.png" /></p>
+</section>
+<section id="g-5g-module-test">
+<h3>3.13 4G/5G Module Test<a class="headerlink" href="#g-5g-module-test" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>When There are 4G and Ethernet at the same time, Ethernet is preferred by default; when there is 4G WIFI at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;</strong></p></li>
+<li><p><strong>When testing 4G, unplug the wired network and turn off WiFi.</strong></p></li>
+</ul>
+<p>The OK3568 carrier board supports 4G modules (EM05) and 5G modules (RM500U). Before the test, please power off the development board, connect the 4G/5G module and insert the SIM card (pay attention to the direction of the SIM card), and start the development board.</p>
+<p>Open Settings, select “Network and Internet”, and click “Mobile Network”:</p>
+<p><img alt="Image" src="_images/1719278072687_3928901a_5ca4_4463_9790_c7b7f2efa773.png" /></p>
+<p>The default mobile network is on:</p>
+<p><img alt="Image" src="_images/1719278072883_4cb2a0be_106d_4ff2_b28b_6be8354fb106.png" /></p>
+<p><img alt="Image" src="_images/1719278073116_07dfc5f9_566d_4dea_a50a_983498f5984f.png" /></p>
+<p>After the connection is successful, you can open the Lightning Browser for network test:</p>
+<p><img alt="Image" src="_images/1719278073418_b22a945a_46a9_4a0d_970a_ce7f3da121d3.png" /></p>
+<p>The test method of 5G is the same as that of 4G, and the difference is that the icon display is different:</p>
+<p><img alt="Image" src="_images/1719278073709_f09a5e99_79bc_4452_b8bf_b43ac746a6fd.png" /></p>
+<p><img alt="Image" src="_images/1719278074089_0a6b01df_902e_4aef_88e4_256691889114.png" /></p>
+<p><img alt="Image" src="_images/1719278074410_5431da75_ce02_4a6a_b0d5_4c080a7e4848.png" /></p>
+</section>
+<section id="bluetooth-test">
+<h3>3.14 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h3>
+<p><strong>Note: The current system does not support iPhone Bluetooth connection.</strong></p>
+<p>The Bluetooth function test of OK3568 platform uses the WiFi &amp; Bluetooth integrated module, which supports the connection of Bluetooth devices as the main device to transmit/receive files.</p>
+<p>The testing method is as follows:</p>
+<p>Click “<img alt="Image" src="_images/1719278074598_d483d14a_854f_4d36_847a_55bae0a2d82e.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278074765_134f3009_821b_4975_a6dd_c727e7e16097.png" /></p>
+<p>Click “Connected device” to enter the Bluetooth setting interface.</p>
+<p><img alt="Image" src="_images/1719278075005_17731911_60b9_4b5e_92be_b84132c30091.png" /></p>
+<p>Click “+ pair with new device”, open PC Bluetooth to scan at the same time, and click the Bluetooth device to be connected.</p>
+<p><img alt="Image" src="_images/1719278075228_06fabbd2_1ca5_49c8_98ac_c734ea5aaef1.png" /></p>
+<p><img alt="Image" src="_images/1719278075433_7f98282e_4af1_4765_b212_ceffb0ab8fc7.png" /></p>
+<p>Click “Pairing”, the mobile phone performs the corresponding pairing operation, and the interface of successful Bluetooth connection displays:</p>
+<p><img alt="Image" src="_images/1719278075642_9af61078_c3a9_4e62_b8c4_23d9f24b3c29.png" /></p>
+<p>File transfer file test:</p>
+<p><img alt="Image" src="_images/1719278075856_1722c6a4_2b2a_4ba7_bdfc_af2a51ce4a63.png" /></p>
+<p>Select to accept the file:</p>
+<p><img alt="Image" src="_images/1719278076106_1a6e3c2a_8751_4aaf_8422_2eb6f7dfb31e.png" /></p>
+<p><img alt="Image" src="_images/1719278076362_cac2dcfd_4d54_4fbd_8618_1a54d2d7c792.png" /></p>
+</section>
+<section id="key-test-sleep-wake-up">
+<h3>3.15 Key Test (Sleep Wake-up)<a class="headerlink" href="#key-test-sleep-wake-up" title="Link to this heading"></a></h3>
+<p>There are 8 keys on the development board, including VOL +, VOL-, MENU, ESC, HOME, PWRON, RESET and Maskroom.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Key</strong></p></th>
+<th class="head"><p><strong>Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>VOL+</p></td>
+<td><p>VOL+</p></td>
+</tr>
+<tr class="row-odd"><td><p>VOL-</p></td>
+<td><p>VOL-</p></td>
+</tr>
+<tr class="row-even"><td><p>PWRON</p></td>
+<td><p>Wake up from sleep and power on/off</p></td>
+</tr>
+<tr class="row-odd"><td><p>Maskroom</p></td>
+<td><p>Work with RESET to enter maskrom mode.</p></td>
+</tr>
+<tr class="row-even"><td><p>RESET</p></td>
+<td><p>RESET</p></td>
+</tr>
+<tr class="row-odd"><td><p>HOME</p></td>
+<td><p>Pop-up menu Home screen settings, Widget, Wallpaper</p></td>
+</tr>
+<tr class="row-even"><td><p>ESC</p></td>
+<td><p>Return</p></td>
+</tr>
+</tbody>
+</table>
+<p>The default factory setting is the non-hibernation state. At this time, press the PWRON key lightly to turn off the screen and enter the hibernation state (note that the carrier board cannot be inserted into the wake-up source such as USB OTG).</p>
+<p><strong>Currently, CXMT memory products have removed the sleep/wake-up functionality. Please verify and confirm the configuration of the SoM.</strong></p>
+<p>The sleep printing information is as follows:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="w"> </span><span class="m">7289</span>.309434<span class="o">]</span><span class="w"> </span>OOM<span class="w"> </span>killer<span class="w"> </span>disabled.
+<span class="o">[</span><span class="w"> </span><span class="m">7289</span>.309445<span class="o">]</span><span class="w"> </span>Freezing<span class="w"> </span>remaining<span class="w"> </span>freezable<span class="w"> </span>tasks<span class="w"> </span>...<span class="w"> </span><span class="o">(</span>elapsed<span class="w"> </span><span class="m">0</span>.003<span class="w"> </span>seconds<span class="o">)</span><span class="w"> </span><span class="k">done</span>.
+<span class="o">[</span><span class="w"> </span><span class="m">7289</span>.312662<span class="o">]</span><span class="w"> </span>Suspending<span class="w"> </span>console<span class="o">(</span>s<span class="o">)</span><span class="w"> </span><span class="o">(</span>use<span class="w"> </span>no_console_suspend<span class="w"> </span>to<span class="w"> </span>debug<span class="o">)</span>
+abcdeghINFO:<span class="w">    </span>sleep<span class="w"> </span>mode<span class="w"> </span>config<span class="o">[</span>0x5ec<span class="o">]</span>:
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_CENTER_PD
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_ARMOFF_LOGOFF
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_PMIC_LP
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_HW_PLLS_PD
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_PMUALIVE_32K
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_OSC_DIS
+INFO:<span class="w">           </span>mode:<span class="w"> </span>RKPM_SLP_32K_PVTM
+INFO:<span class="w">    </span>wakeup<span class="w"> </span><span class="nb">source</span><span class="w"> </span>config<span class="o">[</span>0x10<span class="o">]</span>:
+INFO:<span class="w">           </span>Enable<span class="w"> </span>GPIO0<span class="w"> </span>interrupt<span class="w"> </span>as<span class="w"> </span>wakeup<span class="w"> </span><span class="nb">source</span>
+ijsramwf
+</pre></div>
+</div>
+<p>In the sleep state, press the PWRON key again to wake up the CPU.</p>
+<p><strong>Note: The mipi screen does not support sleep and wakeup.</strong></p>
+<p>Press and hold PWRON for “Shutdown” and “Restart”.</p>
+<p><img alt="Image" src="_images/1719278076600_43766fee_2e41_4fdc_ad32_3963f5f7fe9b.png" /></p>
+<p>The other buttons have simpler functions, so please test them yourself.</p>
+</section>
+<section id="tf-card-and-usb-storage-test">
+<h3>3.16 TF Card and USB Storage Test<a class="headerlink" href="#tf-card-and-usb-storage-test" title="Link to this heading"></a></h3>
+<p>It is a test of TF card and USB storage device. Insert the USB device into the OK3568 USB Host port. The system will automatically detect the insertion of the USB flash drive.</p>
+<p>Click “<img alt="Image" src="_images/1719278076831_db7c9538_f593_4539_bc00_d31273bc1e69.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278077017_eb916be4_daec_40b2_9c43_16679d4c294a.png" /></p>
+<p>Click “Storage” to view the internal storage device and the inserted U disk device:</p>
+<p><img alt="Image" src="_images/1719278077262_bd659132_c4f4_4da4_8f4f_003d1d95e225.png" /></p>
+<p>Click the USB flash disk to view the contents of the USB flash disk for reading and writing:</p>
+<p><img alt="Image" src="_images/1719278077449_bc18e7fd_bc54_4c5b_9895_75008eb16961.png" /></p>
+<p>The TF card reading and writing method is the same as the U disk reading and writing test method. Insert the TF card into the TF card slot, and the system will automatically detect the insertion of the TF card. You can also view the contents of the TF card in the storage interface:</p>
+<p><img alt="Image" src="_images/1719278077657_6e0b7c10_0e37_4d3f_9242_6142c21b8bae.png" /></p>
+<p><img alt="Image" src="_images/1719278077849_29dc24fb_8e26_4b0b_92ff_2752338e2fd8.png" /></p>
+</section>
+<section id="usb-mouse-test">
+<h3>3.17 USB Mouse Test<a class="headerlink" href="#usb-mouse-test" title="Link to this heading"></a></h3>
+<p>Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “<img alt="Image" src="_images/1719278078139_572919e5_5fa6_4bb8_a0cc_1b2672dcf438.png" />”, within the interface, and you can navigate and operate the Android system using the mouse.</p>
+</section>
+<section id="usb-otg-interface-test">
+<h3>3.18 USB OTG Interface Test<a class="headerlink" href="#usb-otg-interface-test" title="Link to this heading"></a></h3>
+<p>The OK3568 development board supports USB OTG functionality.</p>
+<p>Connect the computer through the otg cable, and the computer will recognize the board as follows:</p>
+<p><img alt="Image" src="_images/1719278078349_379cf46a_405b_40f1_aa63_2c4dd0986f9d.png" /></p>
+</section>
+<section id="serial-port-test">
+<h3>3.19 Serial Port Test<a class="headerlink" href="#serial-port-test" title="Link to this heading"></a></h3>
+<p>UART3, UART4, UART5 and UART8 serial ports are indicated in the schematic diagram of OK3568 platform carrier board, in which UART2 is the debugging serial port and UART8 is the Bluetooth serial port. The default device names of UART3, UART4 and UART5 in the development board are ttyS3, ttyS4 and ttyS5 respectively. Here, take the test of UART4 serial port as an example. According to the schematic diagram of the development board, the transceiver pins of UART4 are short-circuited, corresponding to PIN29 and PIN30 respectively.</p>
+<p><img alt="Image" src="_images/1719278078616_1c0c314f_4851_4bcb_bae6_20f1021c9a44.png" /></p>
+<p>Open the serial port test program on the desktop<img alt="Image" src="_images/1719278078922_42a5f46c_6ccc_4dd8_a0df_2f23f940b416.png" />.</p>
+<p><img alt="Image" src="_images/1719278079136_aa575db4_933a_4d63_96e0_25cde566e900.png" /></p>
+<p>Click the “SETUP” button:</p>
+<p><img alt="Image" src="_images/1719278079363_8bed68f7_0451_447d_89aa_c52b4da9d1f5.png" /></p>
+<p>Set serial port device, baud rate and display format:</p>
+<p><img alt="Image" src="_images/1719278079619_dfdf57b9_4c2c_4fa9_8c45_97ee7b603bbc.png" /></p>
+<p><img alt="Image" src="_images/1719278079858_40ca7684_052d_4a4f_8a2d_4fae3bc6d6ea.png" /></p>
+<p><img alt="Image" src="_images/1719278080063_a06a7a9b_9fff_479f_a9d0_7255bd2a64eb.png" /></p>
+<p>Then click the “Loopback” option in the previous menu to perform the loopback test.</p>
+<p><img alt="Image" src="_images/1719278080293_14401396_3f91_42c7_aeea_45300fe7456f.png" /></p>
+<p>Click the “CONSOLE” option in the previous menu to perform the send-receive test:</p>
+<p><img alt="Image" src="_images/1719278080511_0ac1f931_1408_466e_ace1_93f1b7980ea2.png" /></p>
+<p><img alt="Image" src="_images/1719278080740_18f34cb4_8f68_4ed1_ada5_75b895510367.png" /></p>
+</section>
+<section id="can-test">
+<h3>3.20 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h3>
+<p>OK3568-C/OK3568-C2 platform has two CAN bus interfaces, CAN0 and CAN1. CAN connection mode: Connection of the H terminal of CAN to other CAN devices; connection of the L terminal of CAN to other CAN devices.</p>
+<p>Connect CAN0 and CAN1, execute the following command at the development board terminal, and open the can1 interface:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>console:/<span class="w"> </span>$<span class="w"> </span>su
+console:/<span class="w"> </span><span class="c1"># ifconfig can1 down</span>
+console:/<span class="w"> </span><span class="c1"># ip link set can1 up type can bitrate 250000 </span>
+console:/<span class="w"> </span><span class="c1"># ifconfig can1 up</span>
+console:/<span class="w"> </span><span class="c1"># candump can1</span>
+</pre></div>
+</div>
+<p>Open “<img alt="Image" src="_images/1719278080951_a2412d0b_020e_4295_bb43_d1561bebe1aa.png" />”APP and configure CAN0 interface (APP only supports configuration of CAN0 interface temporarily):</p>
+<p><img alt="Image" src="_images/1719278081166_9281726b_ef9b_4ac8_9071_31800fc0a5d4.png" /></p>
+<p><img alt="Image" src="_images/1719278081472_01469efd_32b7_441d_bd5d_a4e9494ec2a9.png" />Click “SETTING” to configure the same baud rate as CAN1:</p>
+<p><img alt="Image" src="_images/1719278081720_e4931a86_26dc_452f_bbcd_7cb3524fe1d7.png" /></p>
+<p><img alt="Image" src="_images/1719278081958_32748fd6_23f3_4740_a2c3_fe3d0ef6398d.png" /></p>
+<p>Click “<img alt="Image" src="_images/1719278082194_abd33671_7577_4831_831a_0f68a14a0d2f.png" />” to return to the transceiver interface, and conduct the transceiver test with CAN1 (CAN1 uses the serial port terminal):</p>
+<p><img alt="Image" src="_images/1719278082447_e77c34cc_0245_46ce_b881_7e0b38934172.png" /></p>
+<p>CAN1 executes the send command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>console:/<span class="w"> </span><span class="c1"># cansend can1 -i 0x123 0x11 0x22 0x33 0x44 0x55 0x66 0x77 0x88     //Send standard frame</span>
+<span class="nv">interface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>can1,<span class="w"> </span><span class="nv">family</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">29</span>,<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="nv">proto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>
+
+console:/<span class="w"> </span><span class="c1"># cansend can1 -i 0x123 -e 0x11 0x22 0x33 0x44 0x55 0x66 0x77 0x88     //Send extended frame</span>
+<span class="nv">interface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>can1,<span class="w"> </span><span class="nv">family</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">29</span>,<span class="w"> </span><span class="nb">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="nv">proto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>
+</pre></div>
+</div>
+<p>APP receives the message sent by CAN1:</p>
+<p><img alt="Image" src="_images/1719278082643_d44cd144_0f19_43e5_b74c_ece0a91151a1.png" /></p>
+<p>CAN1 receives the message sent by CAN0 using the candump instruction:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>console:/<span class="w"> </span><span class="c1"># candump can1&amp;                                                      </span>
+<span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="w"> </span><span class="m">2078</span>
+console:/<span class="w"> </span><span class="c1"># interface = can1, family = 29, type = 3, proto = 1</span>
+<span class="o">[</span><span class="w">  </span><span class="m">546</span>.790013<span class="o">]</span><span class="w"> </span>healthd:<span class="w"> </span>battery<span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="m">50</span><span class="w"> </span><span class="nv">v</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="nv">t</span><span class="o">=</span><span class="m">2</span>.6<span class="w"> </span><span class="nv">h</span><span class="o">=</span><span class="m">2</span><span class="w"> </span><span class="nv">st</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="nv">fc</span><span class="o">=</span><span class="m">100</span><span class="w"> </span><span class="nv">chg</span><span class="o">=</span>au
+
+console:/<span class="w"> </span><span class="c1"># &lt;0x123&gt; [4] 11 11 11 11 </span>
+&lt;0x123&gt;<span class="w"> </span><span class="o">[</span><span class="m">4</span><span class="o">]</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span>
+&lt;0x123&gt;<span class="w"> </span><span class="o">[</span><span class="m">4</span><span class="o">]</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span>
+&lt;0x123&gt;<span class="w"> </span><span class="o">[</span><span class="m">4</span><span class="o">]</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">11</span>
+</pre></div>
+</div>
+</section>
+<section id="watchdog-test">
+<h3>3.21 Watchdog Test<a class="headerlink" href="#watchdog-test" title="Link to this heading"></a></h3>
+<p>Click “forlinux _ watchdog _ test” “on the application interface to enter the watchdog test:</p>
+<p><img alt="Image" src="_images/1719278082853_2085d57d_9df2_4cd7_b793_6d784c089738.png" /></p>
+<p><img alt="Image" src="_images/1719278083275_90ed5b02_c9ef_41bd_aefa_85a98ed2c032.png" /></p>
+<p>There are three buttons on the interface: “start”, “feed” and “stop”. Click “start” to see the dog and “feed” to feed the dog:</p>
+<p><img alt="Image" src="_images/1719278083526_1069c7b5_813b_4c26_a197_a2056f736fe8.png" /></p>
+<p>If a timeout (timeout of 10S) is not performed to feed the dog, the system reboots. Click “stop” to stop the watchdog test:</p>
+<p><img alt="Image" src="_images/1719278083751_82dbc7d1_9016_4622_9a9a_aa58f9e322c0.png" /></p>
+</section>
+<section id="camera-test">
+<h3>3.22 Camera Test<a class="headerlink" href="#camera-test" title="Link to this heading"></a></h3>
+<section id="uvc-camera-test">
+<h4>3.22.1 UVC Camera Test<a class="headerlink" href="#uvc-camera-test" title="Link to this heading"></a></h4>
+<p>Click on the camera in the application interface:</p>
+<p><img alt="Image" src="_images/1719278083968_4dec0e5d_e19a_476f_8e4c_3490fb9c51e3.png" /></p>
+<p>Configure permissions:</p>
+<p><img alt="Image" src="_images/1719278084247_008f4c07_48fa_4243_9a86_5e2338e0359f.png" /></p>
+<p><img alt="Image" src="_images/1719278084619_0d632a28_a0db_412b_8d46_86e81a4a6b1c.png" /></p>
+<p>Enter the preview interface and click the photo button on the right to take a photo:</p>
+<p><img alt="Image" src="_images/1719278084862_bb5d9e0f_9194_48ce_a7f2_22eea766acbb.png" /></p>
+<p>Swipe the screen to the right to open the options for switching between photo and video mode, as well as accessing settings.</p>
+<p><img alt="Image" src="_images/1719278085211_dc3c3225_4eea_49d9_a52e_1fdd19958e4c.png" /></p>
+<p>Tap on the settings button in the top right corner to adjust settings such as resolution and image quality.</p>
+<p><img alt="Image" src="_images/1719278085450_d99398db_1909_489e_b068_c534840ddb43.png" /></p>
+<p>Click the video button to enter the video preview interface:</p>
+<p><img alt="Image" src="_images/1719278085717_156937f9_35b6_48de_b025_8df42dc0e5c9.png" /></p>
+<p>Click the video button to record the video:</p>
+<p><img alt="Image" src="_images/1719278086084_1ec677f1_5bf7_47eb_92a7_e639c312b5f3.png" /></p>
+</section>
+<section id="mipi-camera-test">
+<h4>3.22.2 MIPI Camera Test<a class="headerlink" href="#mipi-camera-test" title="Link to this heading"></a></h4>
+<p>Power down the board and connect the ov13850 to the board’s MIPI CSI interface. The test method of MIPI Camera is the same as that of UVC Camera and will not be repeated here.</p>
+</section>
+</section>
+<section id="hdmi-resolution-setting-test">
+<h3>3.23 HDMI Resolution Setting Test<a class="headerlink" href="#hdmi-resolution-setting-test" title="Link to this heading"></a></h3>
+<p>OK3568 platform supports dynamic setting of HDMI resolution.</p>
+<p>Click “<img alt="Image" src="_images/1719278086485_e0d63c87_eba5_45bd_8193_f4a5cd93bba3.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278086689_7caaf6a4_9a5b_43ee_ba4a_dbfa2877f9b3.png" /></p>
+<p>Click “Display”, select “Advanced”, and click “HDMI” to configure HDMI:</p>
+<p><img alt="Image" src="_images/1719278086878_38749d9b_53d4_483d_b90f_97c9551aed61.png" /></p>
+<p><img alt="Image" src="_images/1719278087078_8c769a71_4c2e_4003_a047_6241ce4b35fc.png" /></p>
+<p>You can dynamically select the desired resolution based on the resolution supported by the current HDMI screen:</p>
+<p><img alt="Image" src="_images/1719278087298_d6c5494c_f2e6_4b8d_b401_9a10b1716668.png" /></p>
+</section>
+<section id="factory-reset">
+<h3>3.24 Factory Reset<a class="headerlink" href="#factory-reset" title="Link to this heading"></a></h3>
+<p>The OK3568 platform supports restoring factory settings.</p>
+<p>Click “<img alt="Image" src="_images/1719278087483_779c4c65_510c_4808_9f5a_66801b42ab99.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719278087675_62070dd9_0f82_4461_b84b_437f97725180.png" /></p>
+<p>Click “System”:</p>
+<p><img alt="Image" src="_images/1719278087874_d1a9a6cc_dd23_452e_b746_f8dd04f6b5c2.png" /></p>
+<p>Click “Reset option” and select “Clear all data (restore factory settings)”:</p>
+<p><img alt="Image" src="_images/1719278088084_5a2eaf63_71e5_47de_a77d_4285654bdaa3.png" /></p>
+<p>Click “Clear all data”:</p>
+<p><img alt="Image" src="_images/1719278088264_ea0a40c4_0ef9_4ced_8290_8e1ba1f665f7.png" /></p>
+<p>Then click “Clear All Data”.</p>
+<p><img alt="Image" src="_images/1719278088483_c7d85237_a4a5_4904_a584_6545c88d6238.png" /></p>
+<p>Wait for OK3568 to restore the default factory settings. Please do not power off during the process of restoring the factory settings.</p>
+</section>
+<section id="apk-installation-with-tf-card">
+<h3>3.25 APK Installation With TF Card<a class="headerlink" href="#apk-installation-with-tf-card" title="Link to this heading"></a></h3>
+<p>After loading the TF card according to the previous steps, you can see an APK file after entering the TF card directory.</p>
+<p><img alt="Image" src="_images/1719278088689_616dc649_838f_47a3_986d_6deb3d7ae41b.png" /></p>
+<p><img alt="Image" src="_images/1719278088893_b7912021_c8d6_4b75_a2ba_71d13f49c54d.png" /></p>
+<p><img alt="Image" src="_images/1719278089134_a63a2de9_53ab_44cd_9f95_0978e0ccb3d4.png" /></p>
+<p>Double-click the APK file to install and configure permissions:</p>
+<p><img alt="Image" src="_images/1719278089460_59c2967d_9923_4042_a8ba_e896becb3246.png" /></p>
+<p>Click “Install” to complete the installation:</p>
+<p><img alt="Image" src="_images/1719278089738_dc778331_86fc_4fac_8577_3a726708857c.png" /></p>
+<p><img alt="Image" src="_images/1719278090008_e5cde30a_73fd_42f1_9bf1_1f7379e5dc3b.png" /></p>
+<p><img alt="Image" src="_images/1719278090284_e76ff8f1_8784_499d_ab3f_3d553b0c4add.png" /></p>
+</section>
+</section>
+<section id="system-flashing">
+<h2>4. System Flashing<a class="headerlink" href="#system-flashing" title="Link to this heading"></a></h2>
+<section id="otg-system-flashing">
+<h3>4.1 OTG System Flashing<a class="headerlink" href="#otg-system-flashing" title="Link to this heading"></a></h3>
+<section id="otg-driver-installation">
+<h4>4.1.1 OTG Driver Installation<a class="headerlink" href="#otg-driver-installation" title="Link to this heading"></a></h4>
+<p>Path: OK3568-C (Android) User Profile \ 2-Image and Source Code \ Tools&lt;/font&gt;DriveAssitant-v5.11.zip</p>
+<p>Extract the above path file to any directory and run it with administrator privileges</p>
+<p>Open DriverInstall.exe.</p>
+<p><img alt="Image" src="_images/1719278037021_18a83ad1_1276_48b3_952a_f01ff83b2796.png" /></p>
+<p>Click “Driver Installation”.</p>
+<p><img alt="Image" src="_images/1719278037233_4aa4b7da_4159_47e2_b55d_e4c89b7d58d4.png" /></p>
+</section>
+<section id="otg-full-flashing-test">
+<h4>4.1.2 OTG Full Flashing Test<a class="headerlink" href="#otg-full-flashing-test" title="Link to this heading"></a></h4>
+<p>4.1.2.1 RKDevTool Full Package Flashing</p>
+<p>️<font style="color:#000000;">Path: OK3568-C (Android) User Profile \ 2-Images and Source Code \ Tools \ RKDevTool_Selease-v2.86.rip</font></p>
+<p>It is a development tool provided by Rockchip. Before use, please unzip it to a directory with an all-English path. Connect the development board to the host using a Type-C cable. Press and hold the recovery key on the development board without releasing it, then press the reset key to reset the system. Release the recovery key approximately two seconds later. The Rockchip development tool will prompt the discovery of the loader device. There will be prompts on the Rockchip development tool : loader device found</p>
+<p><strong>Note: The condition for recognition is that the development board is powered up and the recover key is in the pressed state.</strong></p>
+<p>Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn’t match the following figure, please consider unzipping it in an English directory.</p>
+<p>Note: Pay attention to two points during OTG programming: 1. Link the OTG line. 2. If OTG is multiplexed with the USB 3.0, it is necessary to modify the dial switch, as shown in the following figure:</p>
+<p><img alt="Image" src="_images/1719278037500_5ecd2c90_9b47_4b51_b665_1f81ee27fdc7.png" /></p>
+<p><img alt="Image" src="_images/1748310120980_a8494d87_c488_4151_9314_4dc03847d9c6.png" /></p>
+<p>Open the Rockchip development tool:</p>
+<p><img alt="Image" src="_images/1719278037782_8ae62a58_9759_4df7_b6ba_a1a60d997efb.png" /></p>
+<p>Click the “Upgrade Firmware” tab, click the “Firmware” button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.</p>
+<p><img alt="Image" src="_images/1719278038035_75f9d7d0_7bcd_4771_93d7_8df4cdaeab4c.png" /></p>
+<p>Click “Switch” and wait for a while to enter the LOADER device, then click “Erase Flash” to erase. Then click the “Upgrade” button to upgrade.</p>
+<p><img alt="Image" src="_images/1719278038253_bc378a0e_b567_41db_95f2_5b5d3bc30325.png" /></p>
+<p><strong>Introduction to MASKROM mode</strong></p>
+<p>If the loader is damaged and cannot enter the Loader mode, press and hold the red Maskrom key and then press the reset key to enter the maskrom mode for flashing.</p>
+<p><img alt="Image" src="_images/1719278038560_4f9538d6_ae05_4b42_bb94_3f75be264a0a.png" /></p>
+<p>At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.</p>
+<p><strong>Note: Don’t click “Device Partition Table” in maskrom mode, it is invalid.</strong></p>
+<section id="rkdevtool-separate-flashing-test">
+<h5>4.1.2.2 RKDevTool Separate Flashing Test<a class="headerlink" href="#rkdevtool-separate-flashing-test" title="Link to this heading"></a></h5>
+<p>First let the development board be in LOADER state, and then open the RKDevTool:</p>
+<p><img alt="Image" src="_images/1733477018482_09872770_e840_468e_8ecc_2d9c74eb74b2.png" /></p>
+<p><strong>Click the device partition table to obtain the burning address of each partition, set a separate mirror path, and finally click Execute.</strong></p>
+</section>
+<section id="factory-tool-flashing-test">
+<h5><strong>4.1.2.3 Factory Tool Flashing Test</strong><a class="headerlink" href="#factory-tool-flashing-test" title="Link to this heading"></a></h5>
+<p>FactoryTool is a factory batch OTG burning tool. It does not need to read the image and can do batch burning. In addition, it can burn some larger image files. If RKDevTool compatibility is not satisfied, you can try this method. Before using it, unzip it to a full English path, connect the development board and host computer with a Type-C cable, press and hold the recover button of the development board and don’t release it, then press the reset button to reset the system, and release the recover button after about two seconds. There will be prompts on the Rockchip development tool : loader device found</p>
+<p>**Note: **</p>
+<p><strong>The condition for recognition is that the development board is powered up and the recover key is in the pressed state.</strong></p>
+<p>Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn’t match the following figure, please consider unzipping it in an English directory.</p>
+<p>Open the Rockchip development tool:</p>
+<p><img alt="Image" src="_images/1719278038885_10262a44_157e_467e_9215_b91781ab6e03.png" /></p>
+<p>Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.</p>
+<p><img alt="Image" src="_images/1719278039212_a86b0f08_e345_43ad_9690_027b13885016.png" /></p>
+<p><img alt="Image" src="_images/1719278039521_e23f21e5_336f_4dbf_8ddd_0644d105916d.png" /></p>
+</section>
+</section>
+</section>
+<section id="tf-card-flashing">
+<h3>4.2 TF Card Flashing<a class="headerlink" href="#tf-card-flashing" title="Link to this heading"></a></h3>
+<p>Production and test of programming TF card:</p>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>The maximum tested capacity of the TF card is 16G. Using a TF card with 32G or above may result in a flashing failure;</strong></p></li>
+<li><p><strong>When flashing the TF card, it will also enter the command line as the root&#64;buildroot user. Please wait patiently for the flashing to complete.</strong></p></li>
+</ul>
+<p>Copy SDDiskTool_v1.69.zip from the user profile tools directory to any directory on windows. Run SD_Firmware_Tool.exe with administrator privileges.</p>
+<p><img alt="Image" src="_images/1719278039878_7cf34cab_b5e2_48a3_8cd6_4a7240607211.png" /></p>
+<p>Select the disk device, check “Firmware Upgrade” and select update.img. Click Start Creating.</p>
+<p><img alt="Image" src="_images/1719278040074_cc334d8e_a3b0_40a2_8481_34bcb3fcda0f.png" /></p>
+<p><img alt="Image" src="_images/1719278040311_6899364a_f5eb_4083_9b7b_5b61b919f37e.png" /></p>
+<p>Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:</p>
+<p>Doing Actions succeeded.please remove the sdcard……</p>
+<p>At this time, pull out the TF card, the system automatically restarts (please do not power down directly).</p>
+<p>Burning status serial port information:</p>
+<p><img alt="Image" src="_images/1729749118333_09f4aff7_3247_45e2_93ea_ca287b07946b.png" /></p>
+<p>If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
