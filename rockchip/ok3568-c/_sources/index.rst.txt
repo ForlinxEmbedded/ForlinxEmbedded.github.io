@@ -36,6 +36,7 @@ SOFTWARE
    OK3568-C_Linux5_10_160_User_Manual
    OK3568-C_Linux5_10_160_User_Compilation_Manual
    OK3568-C_Android11_User_Manual
+   OK3568-C_Android11_User_Compilation_Manual
 
 
 
