@@ -67,7 +67,7 @@ RK3568 is a low-power high-performance processor based on ARM64 architecture. It
 
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278032824-bb905cbc-77a0-4b9f-81f8-6e06a88d1c1a.png)![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278033258-5f661cb4-f179-4a31-8ab4-6856ec4741bd.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278032824_bb905cbc_77a0_4b9f_81f8_6e06a88d1c1a.png)![Image](./images/OK3568-C_Android11_User_Manual/1719278033258_5f661cb4_f179_4a31_8ab4_6856ec4741bd.png)
 
 ****
 
@@ -130,7 +130,7 @@ The following table is the eMMC memory partition information of Android operatin
 
 The debugging serial port on the development board is a Micro USB Jack. You can use the USB to micro cable to connect the development board and the PC, so as to view the status of the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278096774-001ae231-adca-4999-b8c2-c8ad5e881325.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278096774_001ae231_adca_4999_b8c2_c8ad5e881325.png)
 
 ### 2.2 Debugging Serial Driver Installation
 
@@ -155,15 +155,15 @@ In the following, we take the putty terminal software as an example to introduce
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278097074-b47e4466-6c06-446d-9671-cddd973fd5ac.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278097074_b47e4466_6c06_446d_9671_cddd973fd5ac.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278097272-9fdce2cc-560d-450e-89f7-4424aa719b37.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278097272_9fdce2cc_560d_450e_89f7_4424aa719b37.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM3 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278097482-7500e9fb-1242-45a5-bc59-25fe942c80eb.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278097482_7500e9fb_1242_45a5_bc59_25fe942c80eb.png)
 
 #### 2.3.2 Serial Login
 
@@ -171,7 +171,7 @@ After the terminal software on the PC side is set, connect the PC and the develo
 
 The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278097649-89d5f481-e161-4f1e-b3a0-50f67971bbc1.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278097649_89d5f481_e161_4f1e_b3a0_50f67971bbc1.png)
 
 ### 2.4 Screen Switching
 
@@ -270,7 +270,7 @@ Device tree path：kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi
 
 In the kernel source code, open the device dtsi file and find the following node:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278097852-26b3e3ac-074e-4acf-8eec-5ecc61bb28cc.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278097852_26b3e3ac_074e_4acf_8eec_5ecc61bb28cc.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -278,7 +278,7 @@ Examples:
 
 Close the hdmi, lvds screens, change the attribute to "off", and use edp to change the corresponding attribute to edp.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278098027-778e42b7-2952-469b-a457-3e54339c8ade.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278098027_778e42b7_2952_469b_a457_3e54339c8ade.png)
 
 After saving, recompile to generate the image.
 
@@ -294,33 +294,33 @@ In general, you can turn off the power directly, but avoid doing so during impor
 
 ### 3.1 Main Interface Display
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278057335-9c1baeb4-25d8-4efb-ba68-06db177ec92d.jpeg)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278057335_9c1baeb4_25d8_4efb_ba68_06db177ec92d.jpeg)
 
 ### 3.2 Application
 
 Swipe up on the main screen to bring up the following screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278057581-23f5bcfc-012e-4673-be33-7d8b21a9e68b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278057581_23f5bcfc_012e_4673_be33_7d8b21a9e68b.png)
 
 **Note: There may be slight differences after the software version update is completed. It is not used as the actual picture after each version update in the future. It is only for reference.**
 
 ### 3.3 Language Settings
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278057767-c0f8f775-048b-48dc-92ff-65578dde6842.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278057767_c0f8f775_048b_48dc_92ff_65578dde6842.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278058101-967c68fc-33aa-4c69-b82e-41b0eb408c02.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278058101_967c68fc_33aa_4c69_b82e_41b0eb408c02.png)
 
-Click "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278058320-19cc311b-a30e-412a-86ed-1219cf80bfea.png)" on the application interface to enter the system interface.
+Click "![Image](./images/OK3568-C_Android11_User_Manual/1719278058320_19cc311b_a30e_412a_86ed_1219cf80bfea.png)" on the application interface to enter the system interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278058534-2860d692-d506-4d3d-b999-c37196223f7d.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278058534_2860d692_d506_4d3d_b999_c37196223f7d.png)
 
 Click "Language and input method" to enter the language setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278058741-a3e899d4-db00-4b4f-b8d6-d453b1a82455.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278058741_a3e899d4_db00_4b4f_b8d6_d453b1a82455.png)
 
 Click "Language" to enter the language selection interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278058940-2b0ff240-9913-497f-8503-fb03e5f366d3.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278058940_2b0ff240_9913_497f_8503_fb03e5f366d3.png)
 
 Click "Add Language" to add a new language.
 
@@ -330,129 +330,129 @@ If you want to remove an installed language, you can click the icon with three d
 
 Store the picture and video files to be viewed into the TF card, and insert the TF card into the development board.
 
-Click "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278059138-1bc97a80-a5e1-4d71-be6a-a201747bb9eb.png)" on the application interface to enter the TF card picture browsing interface.
+Click "![Image](./images/OK3568-C_Android11_User_Manual/1719278059138_1bc97a80_a5e1_4d71_be6a_a201747bb9eb.png)" on the application interface to enter the TF card picture browsing interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278059352-9e674556-3951-4464-8a1e-c1b9c0772e5e.jpeg)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278059352_9e674556_3951_4464_8a1e_c1b9c0772e5e.jpeg)
 
 Configure permissions:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278059566-657e2b9a-fa19-42d3-a520-3505fcb2b6e1.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278059566_657e2b9a_fa19_42d3_a520_3505fcb2b6e1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278059758-67fce99b-10f1-4740-b318-895e70d04fef.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278059758_67fce99b_10f1_4740_b318_895e70d04fef.png)
 
 After configuration, enter the picture and video view:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278060072-a5e52807-0ebb-4c42-96fc-633962eb17fb.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278060072_a5e52807_0ebb_4c42_96fc_633962eb17fb.png)
 
 Click on the pictures and videos to view:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278060387-273149fe-c8ad-4208-99b6-ddb385980628.jpeg)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278060387_273149fe_c8ad_4208_99b6_ddb385980628.jpeg)
 
 ### 3.5 Multimedia Test
 
 Store the audio file to be played into the TF card, and insert the TF card into the development board.
 
-Click "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278060662-b71acbc3-47db-4f1c-9d9f-a42a5316e0b1.png)" in the application interface to enter the music player interface.
+Click "![Image](./images/OK3568-C_Android11_User_Manual/1719278060662_b71acbc3_47db_4f1c_9d9f_a42a5316e0b1.png)" in the application interface to enter the music player interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278060917-ceec7214-5075-40be-9bb8-3f62add12369.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278060917_ceec7214_5075_40be_9bb8_3f62add12369.png)
 
-Click "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278061153-b545b628-46d8-4c93-9993-b91f436c8bec.png)" in the interface to enter the song list interface.
+Click "![Image](./images/OK3568-C_Android11_User_Manual/1719278061153_b545b628_46d8_4c93_9993_b91f436c8bec.png)" in the interface to enter the song list interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278061397-6115e2a5-c80c-46f2-a04d-1ba2243959c7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278061397_6115e2a5_c80c_46f2_a04d_1ba2243959c7.png)
 
 Click "Play Music" to enter the play interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278061614-3272d087-8811-4abf-bffa-abbf5adebfce.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278061614_3272d087_8811_4abf_bffa_abbf5adebfce.png)
 
 The priority of sound playback is headphone > HDMI audio > carrier board speaker, and the volume can be adjusted by pressing the physical keys VOL + and VOL- on the carrier board of the development board.
 
 ### 3.6 Recording (Supports Mic input)
 
-Click the video "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278061885-c4e5bee3-be63-4d6b-9741-9f71b37717cc.png)" in the application interface to enter the recorder interface:
+Click the video "![Image](./images/OK3568-C_Android11_User_Manual/1719278061885_c4e5bee3_be63_4d6b_9741_9f71b37717cc.png)" in the application interface to enter the recorder interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278062095-415c0bc7-7f6d-46b4-b7f7-2bb7b11ccff4.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278062095_415c0bc7_7f6d_46b4_b7f7_2bb7b11ccff4.png)
 
 Configure permissions:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278062317-671a0449-f0b3-4110-b38b-4cd6be49d4b2.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278062317_671a0449_f0b3_4110_b38b_4cd6be49d4b2.png)
 
 Click the round button to start recording: (Note: the pointer will swing according to the sound level during normal recording).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278062530-4ed02c67-9604-4b4f-9521-1f7d0f594f8b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278062530_4ed02c67_9604_4b4f_9521_1f7d0f594f8b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278062776-4fcf7192-c0ca-4c71-8218-bbab2c56fccd.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278062776_4fcf7192_c0ca_4c71_8218_bbab2c56fccd.png)
 
 Click the square button to stop recording, and finally click the done button to save.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278063038-109ddaf9-2c5c-4660-8ec1-63ea2cc76c03.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278063038_109ddaf9_2c5c_4660_8ec1_63ea2cc76c03.png)
 
 The recorded audio can be viewed and played through the music player. Click the playlist of the music player:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278063264-ca6a1c09-68cf-404c-97f1-f7f24ec60f00.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278063264_ca6a1c09_68cf_404c_97f1_f7f24ec60f00.png)
 
 Click the recently added song to see the newly generated recording file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278063508-30acd278-c58e-459c-8918-9f645de0c84d.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278063508_30acd278_c58e_459c_8918_9f645de0c84d.png)
 
 Click the file to play:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278063748-93272e35-cd8a-467a-ada5-19341bf37c48.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278063748_93272e35_cd8a_467a_ada5_19341bf37c48.png)
 
 ### 3.7 Volume Adjustment
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278063995-d980878e-5612-4bea-a37e-c3f1c6891249.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278063995_d980878e_5612_4bea_a37e_c3f1c6891249.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278064181-c0f95a42-0645-4bf9-9c6a-6eb48454e060.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278064181_c0f95a42_0645_4bf9_9c6a_6eb48454e060.png)
 
 Click "Sound" in the settings interface to enter the volume settings interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278064406-86dd302a-5761-42c0-88e1-216586fd9c3a.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278064406_86dd302a_5761_42c0_88e1_216586fd9c3a.png)
 
 This interface allows you to adjust each section's volume and supports media volume adjustment using the physical buttons VOL- and VOL+ on the base plate.
 
 Click "Advanced" to set the ringtone of the mobile phone:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278064595-ef72e0f9-44dd-4799-ba12-2f66fa9c27ed.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278064595_ef72e0f9_44dd_4799_ba12_2f66fa9c27ed.png)
 
 ### 3.8 Display Settings
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278064781-65772de5-67ba-4b08-8c4f-9aaa9037b3bc.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278064781_65772de5_67ba_4b08_8c4f_9aaa9037b3bc.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278064962-ad67167e-f7e3-4b5a-91c9-e1d26712f0b8.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278064962_ad67167e_f7e3_4b5a_91c9_e1d26712f0b8.png)
 
 Click "Display" in the setting interface, enter the display setting interface, and select "Brightness" for the backlight setting, then the brightness adjustment slider will appear, adjust the brightness. Because the development board provided by Forlinx does not have a power sensing chip, the automatic screen rotation function in the advanced options does not work.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278065162-4f8d14ea-e604-4616-a978-560316d43d31.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278065162_4f8d14ea_e604_4616_a978_560316d43d31.png)
 
 The default setting of OK3568 is to never turn off the screen. If you need to sleep and wake up, please click the "Screen timeout" option to select the sleep time.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278065393-62f817c7-32c2-46dc-99f3-befd53133c60.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278065393_62f817c7_32c2_46dc_99f3_befd53133c60.png)
 
 If there is no operation on the interface within the set sleep time, the screen will enter the sleep mode, and pressing the PWRON physical button on the carrier board will wake up the screen.
 
 ### 3.9 Time Settings（RTC）
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278065590-72703389-1231-492a-9285-26885d27677a.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278065590_72703389_1231_492a_9285_26885d27677a.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278065785-72d41190-3108-477a-a9cd-f96cf0fc6e27.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278065785_72d41190_3108_477a_a9cd_f96cf0fc6e27.png)
 
 Select "System," where you can change the date and time, and even after power failure, the time can still be synchronized (ensure that the button battery is installed on the board).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278065957-c0f18e38-d0f3-4d67-80d1-15f61f7a6a04.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278065957_c0f18e38_d0f3_4d67_80d1_15f61f7a6a04.png)
 
 Turn off “Use Time From Network” to set the date and time separately.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278066167-635e431f-2b3c-4d7a-a216-d5eb5197da6b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278066167_635e431f_2b3c_4d7a_a216_d5eb5197da6b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278066364-2714df4b-2ded-41d7-8239-2c979997b1f7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278066364_2714df4b_2ded_41d7_8239_2c979997b1f7.png)
 
 Click on “Set Date.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278066613-c63c52d8-73d0-4510-88d7-b77985dd24c6.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278066613_c63c52d8_73d0_4510_88d7_b77985dd24c6.png)
 
 Click on “Set Time.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278066828-4867025b-942b-4b5f-aa1a-8f6cb98d4a4b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278066828_4867025b_942b_4b5f_aa1a_8f6cb98d4a4b.png)
 
 ### 3.10 Ethernet Test
 
@@ -464,41 +464,41 @@ Click on “Set Time.”
 
 Prepare a router and a network cable that can be connected to the external network port.
 
-After inserting the network cable, click "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278067059-27fdd662-7040-438b-b9df-bd9d84de4f4c.png)" on the application interface:
+After inserting the network cable, click "![Image](./images/OK3568-C_Android11_User_Manual/1719278067059_27fdd662_7040_438b_b9df_bd9d84de4f4c.png)" on the application interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278067244-39a22ff3-1ef4-4910-9fc0-c860f0e2bc0c.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278067244_39a22ff3_1ef4_4910_9fc0_c860f0e2bc0c.png)
 
 Click "Network and Internet":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278067431-e1e544c8-1009-464f-b35c-8048e44df8ad.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278067431_e1e544c8_1009_464f_b35c_8048e44df8ad.png)
 
 The OK3568 has 2 x Gigabit NIC on board (Ethernet ETH0 and Ethernet ETH1; the current interface settings only support ETH0). Click "Ethernet ETH0" to choose to automatically obtain IP DHCP or static IP. DHCP is recommended. If you set a static IP, make sure your network parameters are available.
 
 Click "Ethernet":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278067677-2b3f4768-ee44-498d-be7e-9d67fb958665.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278067677_2b3f4768_ee44_498d_be7e_9d67fb958665.png)
 
 The default IP acquisition method is "dhcp". If you want to set a static IP, click Ethernet Ip mode:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278067863-3bb65b95-5a74-4c53-80b0-cc82e5b9dffc.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278067863_3bb65b95_5a74_4c53_80b0_cc82e5b9dffc.png)
 
 Select Static for static IP configuration:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278068048-415e63e1-aa2e-4a76-a4e6-01ca2ce1506a.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278068048_415e63e1_aa2e_4a76_a4e6_01ca2ce1506a.png)
 
 Click "CONNECT" to complete the configuration:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278068247-dad864b7-79fe-4c1b-af70-567cda919dd7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278068247_dad864b7_79fe_4c1b_af70_567cda919dd7.png)
 
 Click "Lightning" on the application interface for network test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278068456-586c1f4d-98ec-41f5-8465-c58683e758b0.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278068456_586c1f4d_98ec_41f5_8465_c58683e758b0.png)
 
 Enter "[http://www.forlinx. net](http://www.forlinx.com)” in the domain name column and click "Start" to enter the official website of Forlinx.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278068680-9c61c9d5-f5fb-4251-b910-8557837c7360.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278068680_9c61c9d5_f5fb_4251_b910_8557837c7360.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278068964-f1ea293e-aca1-42fa-a3ca-4d98026606c6.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278068964_f1ea293e_aca1_42fa_a3ca_4d98026606c6.png)
 
 ### 3.11 WiFi Internet
 
@@ -511,21 +511,21 @@ Enter "[http://www.forlinx. net](http://www.forlinx.com)” in the domain name c
 
 The OK3568 has an on-board AW-CM358SM module. Open settings, select "Network \& Internet", and click "WLAN":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278069242-a83585d8-2c06-458f-ab13-991858f295c5.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278069242_a83585d8_2c06_458f_ab13_991858f295c5.png)
 
 Click "Use WLAN":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278069477-8665b0fb-b3f8-406b-b1bd-66a94c9322ad.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278069477_8665b0fb_b3f8_406b_b1bd_66a94c9322ad.png)
 
 Click on the WIFI to be connected and enter the password:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278069656-2dac1591-c700-4077-acf0-49fa23da04fc.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278069656_2dac1591_c700_4077_acf0_49fa23da04fc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278069853-5a5cc91f-c9db-46b9-b207-b96745567e0a.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278069853_5a5cc91f_c9db_46b9_b207_b96745567e0a.png)
 
 After the connection is successful, you can open the Lightning Browser for network test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278070189-18de3246-1447-462c-98e3-1ae63300b8cb.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278070189_18de3246_1447_462c_98e3_1ae63300b8cb.png)
 
 ### 3.12 WiFi Hotspot Test
 
@@ -533,43 +533,43 @@ OK3568 supports the sharing of Ethernet or mobile networks through WIFI for WIFI
 
 Click "Hotspot \&tethering":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278070501-2e4c74eb-77e8-40dc-b405-9c25adcd1fff.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278070501_2e4c74eb_77e8_40dc_b405_9c25adcd1fff.png)
 
 Click "WLAN Hotspot":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278070726-7d066a1f-c34e-4c11-bc0d-410d3afa1f1e.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278070726_7d066a1f_c34e_4c11_bc0d_410d3afa1f1e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278070926-467b8fbd-b0a9-4420-b6ad-c6e7feb9fd11.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278070926_467b8fbd_b0a9_4420_b6ad_c6e7feb9fd11.png)
 
 Enable the WLAN hotspot and set the hot spot name and password:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278071131-0aa10bfb-ba55-4453-a4ef-f5bbaa62e72b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278071131_0aa10bfb_ba55_4453_a4ef_f5bbaa62e72b.png)
 
 First set the hotspot name:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278071362-4de29e5d-831e-414f-a5bb-baa65e4a2768.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278071362_4de29e5d_831e_414f_a5bb_baa65e4a2768.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278071602-ea655bcc-ad33-4306-889d-4fcc771c58e1.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278071602_ea655bcc_ad33_4306_889d_4fcc771c58e1.png)
 
 Click “Confirm”.
 
 Set hotspot password:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278071799-a16fe790-b0db-4539-8cc5-ccd8aedda49a.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278071799_a16fe790_b0db_4539_8cc5_ccd8aedda49a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278072033-d5f4323b-47e2-4189-87e7-d17a16195178.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278072033_d5f4323b_47e2_4189_87e7_d17a16195178.png)
 
 Click “Confirm”.
 
 Set the AP band:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278072279-144a4f40-19d8-4124-bc88-d3ae574e2a8f.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278072279_144a4f40_19d8_4124_bc88_d3ae574e2a8f.png)
 
 Click “Confirm”.
 
 Set up security:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278072481-133a8c53-a056-4dbc-aa44-716adef52ca9.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278072481_133a8c53_a056_4dbc_aa44_716adef52ca9.png)
 
 ### 3.13 4G/5G Module Test
 
@@ -582,25 +582,25 @@ The OK3568 carrier board supports 4G modules (EM05) and 5G modules (RM500U). Bef
 
 Open Settings, select "Network and Internet", and click "Mobile Network":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278072687-3928901a-5ca4-4463-9790-c7b7f2efa773.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278072687_3928901a_5ca4_4463_9790_c7b7f2efa773.png)
 
 The default mobile network is on:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278072883-4cb2a0be-106d-4ff2-b28b-6be8354fb106.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278072883_4cb2a0be_106d_4ff2_b28b_6be8354fb106.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278073116-07dfc5f9-566d-4dea-a50a-983498f5984f.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278073116_07dfc5f9_566d_4dea_a50a_983498f5984f.png)
 
 After the connection is successful, you can open the Lightning Browser for network test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278073418-b22a945a-46a9-4a0d-970a-ce7f3da121d3.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278073418_b22a945a_46a9_4a0d_970a_ce7f3da121d3.png)
 
 The test method of 5G is the same as that of 4G, and the difference is that the icon display is different:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278073709-f09a5e99-79bc-4452-b8bf-b43ac746a6fd.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278073709_f09a5e99_79bc_4452_b8bf_b43ac746a6fd.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278074089-0a6b01df-902e-4aef-88e4-256691889114.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278074089_0a6b01df_902e_4aef_88e4_256691889114.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278074410-5431da75-ce02-4a6a-b0d5-4c080a7e4848.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278074410_5431da75_ce02_4a6a_b0d5_4c080a7e4848.png)
 
 ### 3.14 Bluetooth Test
 
@@ -610,33 +610,33 @@ The Bluetooth function test of OK3568 platform uses the WiFi \& Bluetooth integr
 
 The testing method is as follows:
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278074598-d483d14a-854f-4d36-847a-55bae0a2d82e.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278074598_d483d14a_854f_4d36_847a_55bae0a2d82e.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278074765-134f3009-821b-4975-a6dd-c727e7e16097.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278074765_134f3009_821b_4975_a6dd_c727e7e16097.png)
 
 Click "Connected device" to enter the Bluetooth setting interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278075005-17731911-60b9-4b5e-92be-b84132c30091.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278075005_17731911_60b9_4b5e_92be_b84132c30091.png)
 
 Click "+ pair with new device", open PC Bluetooth to scan at the same time, and click the Bluetooth device to be connected.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278075228-06fabbd2-1ca5-49c8-98ac-c734ea5aaef1.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278075228_06fabbd2_1ca5_49c8_98ac_c734ea5aaef1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278075433-7f98282e-4af1-4765-b212-ceffb0ab8fc7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278075433_7f98282e_4af1_4765_b212_ceffb0ab8fc7.png)
 
 Click "Pairing", the mobile phone performs the corresponding pairing operation, and the interface of successful Bluetooth connection displays:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278075642-9af61078-c3a9-4e62-b8c4-23d9f24b3c29.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278075642_9af61078_c3a9_4e62_b8c4_23d9f24b3c29.png)
 
 File transfer file test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278075856-1722c6a4-2b2a-4ba7-bdfc-af2a51ce4a63.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278075856_1722c6a4_2b2a_4ba7_bdfc_af2a51ce4a63.png)
 
 Select to accept the file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278076106-1a6e3c2a-8751-4aaf-8422-2eb6f7dfb31e.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278076106_1a6e3c2a_8751_4aaf_8422_2eb6f7dfb31e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278076362-cac2dcfd-4d54-4fbd-8618-1a54d2d7c792.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278076362_cac2dcfd_4d54_4fbd_8618_1a54d2d7c792.png)
 
 ### 3.15 Key Test (Sleep Wake-up)
 
@@ -681,7 +681,7 @@ In the sleep state, press the PWRON key again to wake up the CPU.
 
 Press and hold PWRON for "Shutdown" and "Restart".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278076600-43766fee-2e41-4fdc-ad32-3963f5f7fe9b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278076600_43766fee_2e41_4fdc_ad32_3963f5f7fe9b.png)
 
 The other buttons have simpler functions, so please test them yourself.
 
@@ -689,27 +689,27 @@ The other buttons have simpler functions, so please test them yourself.
 
 It is a test of TF card and USB storage device. Insert the USB device into the OK3568 USB Host port. The system will automatically detect the insertion of the USB flash drive.
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278076831-db7c9538-f593-4539-bc00-d31273bc1e69.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278076831_db7c9538_f593_4539_bc00_d31273bc1e69.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278077017-eb916be4-daec-40b2-9c43-16679d4c294a.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278077017_eb916be4_daec_40b2_9c43_16679d4c294a.png)
 
 Click "Storage" to view the internal storage device and the inserted U disk device:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278077262-bd659132-c4f4-4da4-8f4f-003d1d95e225.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278077262_bd659132_c4f4_4da4_8f4f_003d1d95e225.png)
 
 Click the USB flash disk to view the contents of the USB flash disk for reading and writing:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278077449-bc18e7fd-bc54-4c5b-9895-75008eb16961.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278077449_bc18e7fd_bc54_4c5b_9895_75008eb16961.png)
 
 The TF card reading and writing method is the same as the U disk reading and writing test method. Insert the TF card into the TF card slot, and the system will automatically detect the insertion of the TF card. You can also view the contents of the TF card in the storage interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278077657-6e0b7c10-0e37-4d3f-9242-6142c21b8bae.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278077657_6e0b7c10_0e37_4d3f_9242_6142c21b8bae.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278077849-29dc24fb-8e26-4b0b-92ff-2752338e2fd8.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278077849_29dc24fb_8e26_4b0b_92ff_2752338e2fd8.png)
 
 ### 3.17 USB Mouse Test
 
-Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278078139-572919e5-5fa6-4bb8-a0cc-1b2672dcf438.png)”, within the interface, and you can navigate and operate the Android system using the mouse.
+Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “![Image](./images/OK3568-C_Android11_User_Manual/1719278078139_572919e5_5fa6_4bb8_a0cc_1b2672dcf438.png)”, within the interface, and you can navigate and operate the Android system using the mouse.
 
 ### 3.18 USB OTG Interface Test
 
@@ -717,39 +717,39 @@ The OK3568 development board supports USB OTG functionality.
 
 Connect the computer through the otg cable, and the computer will recognize the board as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278078349-379cf46a-405b-40f1-aa63-2c4dd0986f9d.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278078349_379cf46a_405b_40f1_aa63_2c4dd0986f9d.png)
 
 ### 3.19 Serial Port Test
 
 UART3, UART4, UART5 and UART8 serial ports are indicated in the schematic diagram of OK3568 platform carrier board, in which UART2 is the debugging serial port and UART8 is the Bluetooth serial port. The default device names of UART3, UART4 and UART5 in the development board are ttyS3, ttyS4 and ttyS5 respectively. Here, take the test of UART4 serial port as an example. According to the schematic diagram of the development board, the transceiver pins of UART4 are short-circuited, corresponding to PIN29 and PIN30 respectively.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278078616-1c0c314f-4851-4bcb-bae6-20f1021c9a44.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278078616_1c0c314f_4851_4bcb_bae6_20f1021c9a44.png)
 
-Open the serial port test program on the desktop![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278078922-42a5f46c-6ccc-4dd8-a0df-2f23f940b416.png).
+Open the serial port test program on the desktop![Image](./images/OK3568-C_Android11_User_Manual/1719278078922_42a5f46c_6ccc_4dd8_a0df_2f23f940b416.png).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278079136-aa575db4-933a-4d63-96e0-25cde566e900.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278079136_aa575db4_933a_4d63_96e0_25cde566e900.png)
 
 Click the "SETUP" button:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278079363-8bed68f7-0451-447d-89aa-c52b4da9d1f5.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278079363_8bed68f7_0451_447d_89aa_c52b4da9d1f5.png)
 
 Set serial port device, baud rate and display format:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278079619-dfdf57b9-4c2c-4fa9-8c45-97ee7b603bbc.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278079619_dfdf57b9_4c2c_4fa9_8c45_97ee7b603bbc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278079858-40ca7684-052d-4a4f-8a2d-4fae3bc6d6ea.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278079858_40ca7684_052d_4a4f_8a2d_4fae3bc6d6ea.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278080063-a06a7a9b-9fff-479f-a9d0-7255bd2a64eb.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278080063_a06a7a9b_9fff_479f_a9d0_7255bd2a64eb.png)
 
 Then click the "Loopback" option in the previous menu to perform the loopback test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278080293-14401396-3f91-42c7-aeea-45300fe7456f.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278080293_14401396_3f91_42c7_aeea_45300fe7456f.png)
 
 Click the "CONSOLE" option in the previous menu to perform the send-receive test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278080511-0ac1f931-1408-466e-ace1-93f1b7980ea2.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278080511_0ac1f931_1408_466e_ace1_93f1b7980ea2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278080740-18f34cb4-8f68-4ed1-ada5-75b895510367.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278080740_18f34cb4_8f68_4ed1_ada5_75b895510367.png)
 
 ### 3.20 CAN Test
 
@@ -765,19 +765,19 @@ console:/ # ifconfig can1 up
 console:/ # candump can1
 ```
 
-Open "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278080951-a2412d0b-020e-4295-bb43-d1561bebe1aa.png)"APP and configure CAN0 interface (APP only supports configuration of CAN0 interface temporarily):
+Open "![Image](./images/OK3568-C_Android11_User_Manual/1719278080951_a2412d0b_020e_4295_bb43_d1561bebe1aa.png)"APP and configure CAN0 interface (APP only supports configuration of CAN0 interface temporarily):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278081166-9281726b-ef9b-4ac8-9071-31800fc0a5d4.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278081166_9281726b_ef9b_4ac8_9071_31800fc0a5d4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278081472-01469efd-32b7-441d-bd5d-a4e9494ec2a9.png)Click "SETTING" to configure the same baud rate as CAN1:
+![Image](./images/OK3568-C_Android11_User_Manual/1719278081472_01469efd_32b7_441d_bd5d_a4e9494ec2a9.png)Click "SETTING" to configure the same baud rate as CAN1:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278081720-e4931a86-26dc-452f-bbcd-7cb3524fe1d7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278081720_e4931a86_26dc_452f_bbcd_7cb3524fe1d7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278081958-32748fd6-23f3-4740-a2c3-fe3d0ef6398d.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278081958_32748fd6_23f3_4740_a2c3_fe3d0ef6398d.png)
 
-Click "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278082194-abd33671-7577-4831-831a-0f68a14a0d2f.png)" to return to the transceiver interface, and conduct the transceiver test with CAN1 (CAN1 uses the serial port terminal):
+Click "![Image](./images/OK3568-C_Android11_User_Manual/1719278082194_abd33671_7577_4831_831a_0f68a14a0d2f.png)" to return to the transceiver interface, and conduct the transceiver test with CAN1 (CAN1 uses the serial port terminal):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278082447-e77c34cc-0245-46ce-b881-7e0b38934172.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278082447_e77c34cc_0245_46ce_b881_7e0b38934172.png)
 
 CAN1 executes the send command:
 
@@ -791,7 +791,7 @@ interface = can1, family = 29, type = 3, proto = 1
 
 APP receives the message sent by CAN1:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278082643-d44cd144-0f19-43e5-b74c-ece0a91151a1.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278082643_d44cd144_0f19_43e5_b74c_ece0a91151a1.png)
 
 CAN1 receives the message sent by CAN0 using the candump instruction:
 
@@ -811,17 +811,17 @@ console:/ # <0x123> [4] 11 11 11 11
 
 Click "forlinux \_ watchdog \_ test" "on the application interface to enter the watchdog test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278082853-2085d57d-9df2-4cd7-b793-6d784c089738.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278082853_2085d57d_9df2_4cd7_b793_6d784c089738.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278083275-90ed5b02-c9ef-41bd-aefa-85a98ed2c032.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278083275_90ed5b02_c9ef_41bd_aefa_85a98ed2c032.png)
 
 There are three buttons on the interface: "start", "feed" and "stop". Click "start" to see the dog and "feed" to feed the dog:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278083526-1069c7b5-813b-4c26-a197-a2056f736fe8.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278083526_1069c7b5_813b_4c26_a197_a2056f736fe8.png)
 
 If a timeout (timeout of 10S) is not performed to feed the dog, the system reboots. Click "stop" to stop the watchdog test:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278083751-82dbc7d1-9016-4622-9a9a-aa58f9e322c0.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278083751_82dbc7d1_9016_4622_9a9a_aa58f9e322c0.png)
 
 ### 3.22 Camera Test
 
@@ -829,33 +829,33 @@ If a timeout (timeout of 10S) is not performed to feed the dog, the system reboo
 
 Click on the camera in the application interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278083968-4dec0e5d-e19a-476f-8e4c-3490fb9c51e3.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278083968_4dec0e5d_e19a_476f_8e4c_3490fb9c51e3.png)
 
 Configure permissions:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278084247-008f4c07-48fa-4243-9a86-5e2338e0359f.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278084247_008f4c07_48fa_4243_9a86_5e2338e0359f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278084619-0d632a28-a0db-412b-8d46-86e81a4a6b1c.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278084619_0d632a28_a0db_412b_8d46_86e81a4a6b1c.png)
 
 Enter the preview interface and click the photo button on the right to take a photo:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278084862-bb5d9e0f-9194-48ce-a7f2-22eea766acbb.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278084862_bb5d9e0f_9194_48ce_a7f2_22eea766acbb.png)
 
 Swipe the screen to the right to open the options for switching between photo and video mode, as well as accessing settings.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278085211-dc3c3225-4eea-49d9-a52e-1fdd19958e4c.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278085211_dc3c3225_4eea_49d9_a52e_1fdd19958e4c.png)
 
 Tap on the settings button in the top right corner to adjust settings such as resolution and image quality.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278085450-d99398db-1909-489e-b068-c534840ddb43.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278085450_d99398db_1909_489e_b068_c534840ddb43.png)
 
 Click the video button to enter the video preview interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278085717-156937f9-35b6-48de-b025-8df42dc0e5c9.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278085717_156937f9_35b6_48de_b025_8df42dc0e5c9.png)
 
 Click the video button to record the video:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278086084-1ec677f1-5bf7-47eb-92a7-e639c312b5f3.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278086084_1ec677f1_5bf7_47eb_92a7_e639c312b5f3.png)
 
 #### 3.22.2 MIPI Camera Test
 
@@ -865,43 +865,43 @@ Power down the board and connect the ov13850 to the board's MIPI CSI interface. 
 
 OK3568 platform supports dynamic setting of HDMI resolution.
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278086485-e0d63c87-eba5-45bd-8193-f4a5cd93bba3.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278086485_e0d63c87_eba5_45bd_8193_f4a5cd93bba3.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278086689-7caaf6a4-9a5b-43ee-ba4a-dbfa2877f9b3.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278086689_7caaf6a4_9a5b_43ee_ba4a_dbfa2877f9b3.png)
 
 Click "Display", select "Advanced", and click "HDMI" to configure HDMI:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278086878-38749d9b-53d4-483d-b90f-97c9551aed61.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278086878_38749d9b_53d4_483d_b90f_97c9551aed61.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278087078-8c769a71-4c2e-4003-a047-6241ce4b35fc.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278087078_8c769a71_4c2e_4003_a047_6241ce4b35fc.png)
 
 You can dynamically select the desired resolution based on the resolution supported by the current HDMI screen:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278087298-d6c5494c-f2e6-4b8d-b401-9a10b1716668.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278087298_d6c5494c_f2e6_4b8d_b401_9a10b1716668.png)
 
 ### 3.24 Factory Reset
 
 The OK3568 platform supports restoring factory settings.
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278087483-779c4c65-510c-4808-9f5a-66801b42ab99.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK3568-C_Android11_User_Manual/1719278087483_779c4c65_510c_4808_9f5a_66801b42ab99.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278087675-62070dd9-0f82-4461-b84b-437f97725180.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278087675_62070dd9_0f82_4461_b84b_437f97725180.png)
 
 Click "System":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278087874-d1a9a6cc-dd23-452e-b746-f8dd04f6b5c2.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278087874_d1a9a6cc_dd23_452e_b746_f8dd04f6b5c2.png)
 
 Click "Reset option" and select "Clear all data (restore factory settings)":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278088084-5a2eaf63-71e5-47de-a77d-4285654bdaa3.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278088084_5a2eaf63_71e5_47de_a77d_4285654bdaa3.png)
 
 Click "Clear all data":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278088264-ea0a40c4-0ef9-4ced-8290-8e1ba1f665f7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278088264_ea0a40c4_0ef9_4ced_8290_8e1ba1f665f7.png)
 
 Then click "Clear All Data".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278088483-c7d85237-a4a5-4904-a584-6545c88d6238.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278088483_c7d85237_a4a5_4904_a584_6545c88d6238.png)
 
 Wait for OK3568 to restore the default factory settings. Please do not power off during the process of restoring the factory settings.
 
@@ -909,23 +909,23 @@ Wait for OK3568 to restore the default factory settings. Please do not power off
 
 After loading the TF card according to the previous steps, you can see an APK file after entering the TF card directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278088689-616dc649-838f-47a3-986d-6deb3d7ae41b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278088689_616dc649_838f_47a3_986d_6deb3d7ae41b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278088893-b7912021-c8d6-4b75-a2ba-71d13f49c54d.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278088893_b7912021_c8d6_4b75_a2ba_71d13f49c54d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278089134-a63a2de9-53ab-44cd-9f95-0978e0ccb3d4.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278089134_a63a2de9_53ab_44cd_9f95_0978e0ccb3d4.png)
 
 Double-click the APK file to install and configure permissions:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278089460-59c2967d-9923-4042-a8ba-e896becb3246.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278089460_59c2967d_9923_4042_a8ba_e896becb3246.png)
 
 Click "Install" to complete the installation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278089738-dc778331-86fc-4fac-8577-3a726708857c.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278089738_dc778331_86fc_4fac_8577_3a726708857c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278090008-e5cde30a-73fd-42f1-9bf1-1f7379e5dc3b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278090008_e5cde30a_73fd_42f1_9bf1_1f7379e5dc3b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278090284-e76ff8f1-8784-499d-ab3f-3d553b0c4add.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278090284_e76ff8f1_8784_499d_ab3f_3d553b0c4add.png)
 
 ## 4\. System Flashing
 
@@ -939,11 +939,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278037021-18a83ad1-1276-48b3-952a-f01ff83b2796.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278037021_18a83ad1_1276_48b3_952a_f01ff83b2796.png)
 
 Click "Driver Installation”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278037233-4aa4b7da-4159-47e2-b55d-e4c89b7d58d4.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278037233_4aa4b7da_4159_47e2_b55d_e4c89b7d58d4.png)
 
 #### 4.1.2 OTG Full Flashing Test
 
@@ -959,27 +959,27 @@ Theoretically, Rockchip development tools have no requirements for the unzip dir
 
 Note: Pay attention to two points during OTG programming: 1. Link the OTG line. 2\. If OTG is multiplexed with the USB 3.0, it is necessary to modify the dial switch, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278037500-5ecd2c90-9b47-4b51-b665-1f81ee27fdc7.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278037500_5ecd2c90_9b47_4b51_b665_1f81ee27fdc7.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1748310120980-a8494d87-c488-4151-9314-4dc03847d9c6.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1748310120980_a8494d87_c488_4151_9314_4dc03847d9c6.png)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278037782-8ae62a58-9759-4df7-b6ba-a1a60d997efb.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278037782_8ae62a58_9759_4df7_b6ba_a1a60d997efb.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278038035-75f9d7d0-7bcd-4771-93d7-8df4cdaeab4c.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278038035_75f9d7d0_7bcd_4771_93d7_8df4cdaeab4c.png)
 
 Click "Switch" and wait for a while to enter the LOADER device, then click "Erase Flash" to erase. Then click the "Upgrade" button to upgrade.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278038253-bc378a0e-b567-41db-95f2-5b5d3bc30325.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278038253_bc378a0e_b567_41db_95f2_5b5d3bc30325.png)
 
 **Introduction to MASKROM mode**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the red Maskrom key and then press the reset key to enter the maskrom mode for flashing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278038560-4f9538d6-ae05-4b42-bb94-3f75be264a0a.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278038560_4f9538d6_ae05_4b42_bb94_3f75be264a0a.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -989,7 +989,7 @@ At this time, the system will prompt the discovery of a maskrom device. The flas
 
 First let the development board be in LOADER state, and then open the RKDevTool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45447432/1733477018482-09872770-e840-468e-8ecc-2d9c74eb74b2.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1733477018482_09872770_e840_468e_8ecc_2d9c74eb74b2.png)
 
 **Click the device partition table to obtain the burning address of each partition, set a separate mirror path, and finally click Execute.**
 
@@ -1005,13 +1005,13 @@ Theoretically, Rockchip development tools have no requirements for the unzip dir
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278038885-10262a44-157e-467e-9215-b91781ab6e03.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278038885_10262a44_157e_467e_9215_b91781ab6e03.png)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278039212-a86b0f08-e345-43ad-9690-027b13885016.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278039212_a86b0f08_e345_43ad_9690_027b13885016.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278039521-e23f21e5-336f-4dbf-8ddd-0644d105916d.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278039521_e23f21e5_336f_4dbf_8ddd_0644d105916d.png)
 
 ### 4.2 TF Card Flashing
 
@@ -1025,13 +1025,13 @@ Production and test of programming TF card:
 
 Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278039878-7cf34cab-b5e2-48a3-8cd6-4a7240607211.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278039878_7cf34cab_b5e2_48a3_8cd6_4a7240607211.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278040074-cc334d8e-a3b0-40a2-8481-34bcb3fcda0f.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278040074_cc334d8e_a3b0_40a2_8481_34bcb3fcda0f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278040311-6899364a-f5eb-4083-9b7b-5b61b919f37e.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1719278040311_6899364a_f5eb_4083_9b7b_5b61b919f37e.png)
 
 Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 
@@ -1041,6 +1041,6 @@ At this time, pull out the TF card, the system automatically restarts (please do
 
 Burning status serial port information:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1729749118333-09f4aff7-3247-45e2-93ea-ca287b07946b.png)
+![Image](./images/OK3568-C_Android11_User_Manual/1729749118333_09f4aff7_3247_45e2_93ea_ca287b07946b.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.
