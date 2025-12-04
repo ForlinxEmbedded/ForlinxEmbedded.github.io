@@ -72,42 +72,42 @@ forlinx@ubuntu：用户名为forlinx，主机名为ubuntu，表示在开发环�
 ## <font style="color:#000000;">1.1 VMware软件的下载与购买</font>
 [登陆VMware官网https://www.vmware.com/cn.h](https://www.vmware.com/cn.html)[tml下载](https://www.vmware.com/cn.html)Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者使用VMware提供的试用版本。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209495299-799ee221-9dff-4815-b8d3-a685b32f971b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495299_799ee221_9dff_4815_b8d3_a685b32f971b.png)
 
 等待下载完成后双击启动文件启动安装程序。
 
 ## <font style="color:#000000;">1.2 VMware软件的安装</font>
 双击启动程序进入安装向导。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209495516-2577c76e-b873-4413-bd12-9cdb9bb35cd1.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
 
 点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209495744-b2803b4e-0808-49a0-a39c-37b0e1bb062e.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
 
 勾选我接受许可协议中的条款，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209495901-47b073cf-6bcf-4610-9da4-eabfb0dcd192.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
 
 修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209496107-e2d70089-70d9-4c62-a773-15c510eb170d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496107_e2d70089_70d9_4c62_a773_15c510eb170d.png)
 
 勾选，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209496313-08157317-dbf5-40e0-a9cf-610e2526d95f.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
 
 勾选添加快捷方式，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209496500-20204188-b425-4016-b17c-de930587ae2e.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
 
 点击“安装”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209496717-f6f5d128-1585-41b0-83a6-c9bec52d7d15.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496717_f6f5d128_1585_41b0_83a6_c9bec52d7d15.png)
 
 等待安装完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719209497041-1df7c12a-752d-4fa8-9730-2a07c6cafa98.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
 
 点击完成后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。
 
@@ -126,27 +126,27 @@ forlinx@ubuntu：用户名为forlinx，主机名为ubuntu，表示在开发环�
 
 选中压缩包一起解压
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548687-41fb4543-911d-4ce3-9b88-09f7fb114c01.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
 
 解压完成后选中.vmx为虚拟机要打开的文件。
 
 打开虚拟机，选择解压出来的3588开发环境.vmx
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278548894-5a126d86-d30f-4f1c-906b-1d615fdf2e0a.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 加载完成后点击开启此虚拟机，即可运行，进入系统的界面。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549103-fbe0d3f1-43ad-4b37-aa46-27fd9fc4a526.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549304-2128d94e-45fa-4091-83c8-678157602b7b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 ```plain
 提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录。
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549464-41fc41e5-d024-4e97-a993-d6b193bc8aae.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278549733-cae28152-e433-4a1e-90ab-8a2479049af5.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
 
 
 
@@ -158,63 +158,63 @@ forlinx@ubuntu：用户名为forlinx，主机名为ubuntu，表示在开发环�
 ### 3.1.1 创建ubuntu虚拟机
 打开VMware软件，点击创建新的虚拟机。进入以下界面：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278531825-28237039-37c8-4a5f-8597-f64b71e7e312.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 选择自定义，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532008-920d71ea-3371-425c-9b27-a15b1789fdf9.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 选择对应VMware版本的兼容性，版本可在帮助->关于VMware Workstation中查看，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532173-48b35578-2a3d-4aff-9888-513f9b66eaaf.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 选择稍后安装操作系统，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532371-cd7442c7-21c1-4c8a-8463-24ea3de5f6c1.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 保持默认，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532534-39687568-6ee3-4284-b373-2104df01f0fb.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 修改虚拟机名称及安装位置，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532718-2cd2ea2a-0f97-46d5-ad8b-4f004e889a20.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 按照实际情况设置处理器数量。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278532900-dd3f7357-07c5-4dc4-9fd1-7d367c7a7111.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 同样按照实际情况设置内存大小，建议使用16G。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533112-8f49bb5a-64b5-47df-8798-044888bfa83b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 设置网络类型，默认为NAT模式，点击下一步。后面的步骤保持默认值，直到指定磁盘容量步骤。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533381-8dc68236-561d-4840-abb7-3512def5cecf.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 IO控制器类型这里默认选择LSI就可以：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533635-d54cda44-50e2-4643-b3d3-54dc41a1bfa6.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 这里同样是默认选择SCSI。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278533807-86b2d601-916f-4f7d-b7c0-4a672e97d659.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 这里选择创建新的虚拟磁盘：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534036-c400a9dc-bdac-4dde-bd52-d4e721fb4ccd.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 设置磁盘大小为200G，并选择磁盘的存在形式，然后点击“下一步”完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534210-b2fc7391-1c76-4148-80c8-855cd9174698.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 指定磁盘文件，这里默认即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534358-9585162d-5c54-42eb-be37-f9361aebf91d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 默认点击“完成”即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278534538-0cb90337-6bc8-4fc5-8009-267ab1d2617c.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 至此，虚拟机创建完成。
 
@@ -235,53 +235,53 @@ IO控制器类型这里默认选择LSI就可以：
 
 右击创建的虚拟机名称，在弹出菜单中选择设置。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889311-2d81dcbe-0cae-4c55-97c9-537521a15233.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889311_2d81dcbe_0cae_4c55_97c9_537521a15233.png)
 
 弹出“虚拟机设置”菜单。点击CD/DVD（SATA），选择使用ISO映像文件，浏览选择前面下载的Ubuntu镜像，然后确定。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889395-57b816c7-f087-4484-b199-0ae4072b78a9.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889395_57b816c7_f087_4484_b199_0ae4072b78a9.png)
 
 设置好镜像后，保证网络可用，然后开启虚拟机，进行Ubuntu镜像的安装。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889505-af95223f-7c56-4ac1-91b2-d0b296a66d56.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889505_af95223f_7c56_4ac1_91b2_d0b296a66d56.png)
 
 开启虚拟机后，等待出现安装界面如下 ：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890419-f63f9e4b-a842-4803-b4a0-14ba03114355.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890419_f63f9e4b_a842_4803_b4a0_14ba03114355.png)
 
 如图左侧选择语言后,点击“Install Ubuntu”后弹出选择语言界面。Ubuntu默认语言是英文的，当然，也可以选择中文。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890557-18555bfc-fbf5-45d6-8e16-feac46c251c5.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890557_18555bfc_fbf5_45d6_8e16_feac46c251c5.png)
 
 默认选择的语言在后期也是可以重新设置的，选择完成后continue。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890734-0b3511e9-b2f6-4f36-bdd6-c31587e228c4.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890734_0b3511e9_b2f6_4f36_bdd6_c31587e228c4.png)
 
 接下来，默认选择continue继续安装，安装过程会很慢，然后continue。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890857-a70f3458-1cbc-4a95-b05a-b043523c2459.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890857_a70f3458_1cbc_4a95_b05a_b043523c2459.png)
 
 默认，点击Install Now，会弹出如图，点击continue即可。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890982-dbea3986-b673-407e-9503-1be99e3e94fc.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890982_dbea3986_b673_407e_9503_1be99e3e94fc.png)
 
 接下来选择时区，这里点击上海时区或输入Shanghai即可（不同时区根据实际情况选择即可），点击继续。
 
 最后设置用户名和密码，选择自动登录或账号密码登录，点击continue就会自动安装。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967891072-cb8c2930-a9c8-49ed-8808-9031ac4d4639.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891072_cb8c2930_a9c8_49ed_8808_9031ac4d4639.png)
 
 网络不好可以Skip跳过，不影响安装。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967891156-8ffa342c-1e22-46b3-82f6-b83a8e086885.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891156_8ffa342c_1e22_46b3_82f6_b83a8e086885.png)
 
 点击Restart Now重启。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967891244-2e59f99c-d450-4eb1-994a-581e1f12e959.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891244_2e59f99c_d450_4eb1_994a_581e1f12e959.png)
 
 重启完成后系统界面。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967891329-4c85569f-7904-478e-8988-52069ee388c2.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891329_4c85569f_7904_478e_8988_52069ee388c2.png)
 
 以上，ubuntu系统安装完成。
 
@@ -292,15 +292,15 @@ VMware Tools安装：
 
 接下来安装VMware Tools，如果不安装该工具，在Windows主机和虚拟机之间无法使用复制粘贴、文件拖拽。首先点击VMware 导航栏上的“虚拟机”，然后在下拉框中点击“安装VMware Tools”。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889588-bda78844-fce6-43a6-a75d-1404d2f9ad28.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889588_bda78844_fce6_43a6_a75d_1404d2f9ad28.png)
 
 完成后进入Ubuntu，桌面会出现VMware Tools的光盘，点击进入其中。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967891407-959cc772-0a6c-4379-b8e2-5e5af5220e8a.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891407_959cc772_0a6c_4379_b8e2_5e5af5220e8a.png)
 
 进入后看到一个压缩文件VMwareTools-10.3.25-20206839.tar.gz（不同的虚拟机版本可能会不同），复制文件到主目录下面（即home 个人用户名的目录下）。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889665-e29da06d-684b-43f3-95e7-723c8e0e49ce.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889665_e29da06d_684b_43f3_95e7_723c8e0e49ce.png)
 
 按【Ctrl+Alt+T】调出终端命令界面，输入命令：
 
@@ -308,17 +308,17 @@ VMware Tools安装：
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.25-20206839.tar.gz
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889754-5ef28ab4-bca1-4dd0-b8c4-c86632732fc7.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889754_5ef28ab4_bca1_4dd0_b8c4_c86632732fc7.png)
 
 解压完成后会出现一个vmware-tools-distrib的文件。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889840-6772f25c-e453-43cc-bd60-d866a66ab021.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889840_6772f25c_e453_43cc_bd60_d866a66ab021.png)
 
 回到终端，输入：<font style="color:#0000ff;">cd vmware-tools-distrib</font> 进入该目录。
 
 再输入：<font style="color:#0000ff;">sudo ./vmware-install.pl</font> 回车后输入密码，然后就开始安装，遇到询问就输入yes，其他一律回车默认安装就可以。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967889932-d60cd0ca-104a-4e8d-8a07-5b2ac92de3ed.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889932_d60cd0ca_104a_4e8d_8a07_5b2ac92de3ed.png)
 
 VMware tools工具完成后，我们就可以实现Windows和Ubuntu之间的文件复制粘贴。
 
@@ -326,17 +326,17 @@ VMware tools工具完成后，我们就可以实现Windows和Ubuntu之间的文�
 
 如果虚拟机不能够全屏显示，可以通过点击查看，选择自动调整大小，点击自动适应客户机，即可实现虚拟的全屏问题。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890068-b095fc4a-3c1b-4cbe-ba18-ac9c69d9fff9.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890068_b095fc4a_3c1b_4cbe_ba18_ac9c69d9fff9.png)
 
 在如图位置进行大部分的系统设置。Ubuntu上很多设置的需求都可以在这里完成。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890138-709b6bde-91ee-490c-984b-731cd8421348.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890138_709b6bde_91ee_490c_984b_731cd8421348.png)
 
 虚拟机休眠设置：
 
 另外，默认的休眠是5min，如果不想设置休眠，通过设置Power->Screen Blank设置成Never即可。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967891518-9640b2fc-00da-4b18-966e-7696f18aafae.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891518_9640b2fc_00da_4b18_966e_7696f18aafae.png)
 
 ### 3.1.4 Ubuntu的网络设置
 + **NAT模式**
@@ -345,13 +345,13 @@ VMware tools工具完成后，我们就可以实现Windows和Ubuntu之间的文�
 
 在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通信上网。这种是我们虚拟机上外网最常用的方式。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890224-d642497d-9876-4d31-897d-02276b6462f3.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890224_d642497d_9876_4d31_897d_02276b6462f3.png)
 
 + **桥接模式：**
 
 VMware虚拟网卡设备为桥接模式时，主机网卡和虚拟机网卡通过虚拟网桥进行通信，需要在Ubuntu环境中设置网络IP与主机在同一个网段，如果需要上外网需要设置DNS与主机网卡一致。如果在使用TFTP，SFTP等服务器时则需要设置虚拟机的网络联系方式为桥接方式。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967890300-c8f1cdf9-6868-4ca0-95a1-41ca03dceff4.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890300_c8f1cdf9_6868_4ca0_95a1_41ca03dceff4.png)
 
 ## 3.2 安装编译Linux系统所需要的库
 ⁉️ 注意：若您使用的是我们提供的开发环境，本小节可以直接跳过。
@@ -430,7 +430,7 @@ forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh defconfig
 
 执行后会有选项输入，如下图，输入3后按回车继续。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45471259/1743478942763-68265633-64e9-49f3-ac39-c6ff42aacd60.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1743478942763_68265633_64e9_49f3_ac39_c6ff42aacd60.png)
 
 完成上述配置后，使用命令进行全编译：
 
@@ -438,11 +438,11 @@ forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh defconfig
 forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45471259/1743479316064-731d8384-6211-4515-b401-2d1d585dadc7.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1743479316064_731d8384_6211_4515_b401_2d1d585dadc7.png)
 
 编译成功后，将在OK3568_Linux_fs/rockdev文件夹下生成对应编译工程结果文件，找到其中的镜像文件。
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967893085-6993301c-972a-4cb2-ac2d-64e43e932d7d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893085_6993301c_972a_4cb2_ac2d_64e43e932d7d.png)
 
 ⁉️ **注意：**update.img为打包好用于OTG或者TF卡完全烧写用，其它文件为分步烧写使用
 
@@ -453,7 +453,7 @@ forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh
 forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh kernel
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967893180-f35264b3-2934-481f-ba51-cea6b23f3581.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893180_f35264b3_2934_481f_ba51_cea6b23f3581.png)
 
 编译成功后update.img里的内核不更新。请分步烧写kerndl/boot.img文件。
 
@@ -464,7 +464,7 @@ forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh kernel
 forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh cleanall
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967893261-34870309-6fb4-4476-bda2-174341658293.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893261_34870309_6fb4_4476_bda2_174341658293.png)
 
 该操作清除所有中间文件。但不影响源文件，包括已经有改动的源文件。
 
@@ -603,13 +603,13 @@ bubble.cpp  bubble.o  glwidget.cpp             glwidget.o  main.o    mainwindow.
 root@ok3568:~# vi /etc/profile
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1750813440772-cece3f1a-57cf-4868-8724-4c353438347d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750813440772_cece3f1a_57cf_4868_8724_4c353438347d.png)
 
 运行交叉编译出的程序：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1750814103651-1b9bcf60-4e10-481a-925e-8dad8b8c331f.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814103651_1b9bcf60_4e10_481a_925e_8dad8b8c331f.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1750814121476-f3f5fc73-f90d-493a-b273-6de85cda38c7.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814121476_f3f5fc73_f90d_493a_b273_6de85cda38c7.png)
 
 把相同的程序源码导入开发板并编译：
 
@@ -624,9 +624,9 @@ g++ -c -pipe -O2 -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
 运行：
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1750814222619-ea489fc0-74e8-43d2-9662-5a4105228fa1.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814222619_ea489fc0_74e8_43d2_9662_5a4105228fa1.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1750814226922-7b19f518-91f0-4bc8-abb5-06e0e920f5a9.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814226922_7b19f518_91f0_4bc8_abb5_06e0e920f5a9.png)
 
 ### 5.1.5解挂退出
 ```markdown
