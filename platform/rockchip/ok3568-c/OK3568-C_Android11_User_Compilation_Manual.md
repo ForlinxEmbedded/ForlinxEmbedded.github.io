@@ -68,7 +68,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277942523-849d238a-0c7c-4971-92ae-1d4684b24f16.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277942523_849d238a_0c7c_4971_92ae_1d4684b24f16.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -76,35 +76,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277942696-8f736205-283c-4510-bd1d-3c23ba602c5a.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277942696_8f736205_283c_4510_bd1d_3c23ba602c5a.png)
 
 Click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277943017-95dafd9e-221d-4fa2-bd73-4fecde4a3347.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277943017_95dafd9e_221d_4fa2_bd73_4fecde4a3347.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277943201-1cd2e136-c241-481f-8edb-c048c0c660f1.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277943201_1cd2e136_c241_481f_8edb_c048c0c660f1.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277943386-cd749637-662b-49f3-8317-91e318564745.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277943386_cd749637_662b_49f3_8317_91e318564745.png)
 
 Check and click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277943530-20fb024a-015e-44f5-8dd9-0e451144653b.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277943530_20fb024a_015e_44f5_8dd9_0e451144653b.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277943695-9248594f-fa05-4cd0-b4b9-f0b280aaa8ad.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277943695_9248594f_fa05_4cd0_b4b9_f0b280aaa8ad.png)
 
 Click "Installation".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277943874-a980f73a-964a-44fe-9576-ac976af1fa20.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277943874_a980f73a_964a_44fe_9576_ac976af1fa20.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277944035-fba28ed8-c07e-49dc-9887-14e1060e6f37.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277944035_fba28ed8_c07e_49dc_9887_14e1060e6f37.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -121,27 +121,27 @@ First, download the development environment provided by Forlinx. In the developm
 
 Select the zip file to unzip together
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277917759-7dab3861-8d45-4ad4-b6de-0a9b6c12ac81.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277917759_7dab3861_8d45_4ad4_b6de_0a9b6c12ac81.png)
 
 After decompression, a 3568 standard environment folder appears, where .vmx is the file that the virtual machine needs to open.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277917981-c04b1958-b435-4358-9abd-48e5f8e49bd3.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277917981_c04b1958_b435_4358_9abd_48e5f8e49bd3.png)
 
 Open the virtual machine and select the extracted 3568.vmx.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277918199-dee39fb4-7ff0-4543-b43a-7a2c84eadcea.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277918199_dee39fb4_7ff0_4543_b43a_7a2c84eadcea.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277918374-44497901-755b-41e3-b829-a3fb7c0b3330.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277918374_44497901_755b_41e3_b829_a3fb7c0b3330.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277918528-8fcee42e-f776-4475-8851-803f6d39fa87.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277918528_8fcee42e_f776_4475_8851_803f6d39fa87.png)
 
 Development environment account is: forlinx, and the password is: forlinx. After filling in the password, select "Sign In" to log in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277918717-12bd35a2-74dd-4d48-8cac-9643994eb2d6.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277918717_12bd35a2_74dd_4d48_8cac_9643994eb2d6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277918989-9e07bb28-49d9-45df-b660-a80e56b1f1f7.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277918989_9e07bb28_49d9_45df_b660_a80e56b1f1f7.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -153,63 +153,63 @@ Development environment account is: forlinx, and the password is: forlinx. After
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277924381-5e2e84e7-10c9-4c50-866c-afdb8994d052.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277924381_5e2e84e7_10c9_4c50_866c_afdb8994d052.png)
 
 Choose custom, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277924597-8b063b16-7226-4ea8-8b80-3ec48f7bb639.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277924597_8b063b16_7226_4ea8_8b80_3ec48f7bb639.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277924781-b8bc9bb8-1345-43d8-bf5f-3d8e3f92561e.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277924781_b8bc9bb8_1345_43d8_bf5f_3d8e3f92561e.png)
 
 Select Install the operating system later and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277924948-17fb6ea8-7610-4300-9b2a-40e81240221b.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277924948_17fb6ea8_7610_4300_9b2a_40e81240221b.png)
 
 Leave the default and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277925113-c150c4e5-25c8-44bc-9cb4-6a0b20c06df2.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277925113_c150c4e5_25c8_44bc_9cb4_6a0b20c06df2.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277925312-8e4447bd-5a42-4050-977e-2934db5756c4.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277925312_8e4447bd_5a42_4050_977e_2934db5756c4.png)
 
 Set the number of processors as appropriate.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277925504-8a26236c-75cb-40c8-acea-85ff27ec723f.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277925504_8a26236c_75cb_40c8_acea_85ff27ec723f.png)
 
 Again, set the memory size as appropriate.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277925745-c0db19d3-5e5b-477c-b434-985b2f1965ad.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277925745_c0db19d3_5e5b_477c_b434_985b2f1965ad.png)
 
 Set the network type, the default is NAT mode, click “Next”. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277925993-bb6b00a2-9599-4826-9090-985efcb15a14.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277925993_bb6b00a2_9599_4826_9090_985efcb15a14.png)
 
 The default selection for the IO controller type here is LSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277926162-8aa32290-2a97-4064-bf9d-7bd2a3d21275.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277926162_8aa32290_2a97_4064_bf9d_7bd2a3d21275.png)
 
 The default selection here is also SCSI.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277926322-baf8f551-ab31-42b8-8773-4945070b2f76.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277926322_baf8f551_ab31_42b8_8773_4945070b2f76.png)
 
 Choose to create a new virtual disk here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277926535-ec47758c-79c1-475e-9634-b565855ab773.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277926535_ec47758c_79c1_475e_9634_b565855ab773.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277926722-ed85c5b9-f7ab-4966-8446-d84caedcb72a.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277926722_ed85c5b9_f7ab_4966_8446_d84caedcb72a.png)
 
 Specify the disk file, the default one here is fine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277926971-6f5549a7-8b15-4684-8420-6c0a3693bdfa.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277926971_6f5549a7_8b15_4684_8420_6c0a3693bdfa.png)
 
 Click "Finish" by default.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277927230-fe9d177c-1a35-4277-b01a-b7f5d065a423.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277927230_fe9d177c_1a35_4277_b01a_b7f5d065a423.png)
 
 The virtual machine creation is now complete.
 
@@ -219,65 +219,65 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 The Ubuntu version you choose to install is 18.04. First, go to the Ubuntu official website [http://sources.ubuntu](http://releases.ubuntu.com/18.04/)[.com/18.04/](http://releases.ubuntu.com/18.04/) to get the Ubuntu 18.04 64-bit image. Download the version "ubuntu-18.04.5-desktop-amd64.iso" .
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277927403-d1701a2e-80b1-4b1d-a732-a9b0cc6ce7d5.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277927403_d1701a2e_80b1_4b1d_a732_a9b0cc6ce7d5.png)
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277927677-07503462-847c-43c1-959b-fd2045b7ef79.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277927677_07503462_847c_43c1_959b_fd2045b7ef79.png)
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277927849-b2b2dd6d-81fb-431b-873e-fcc6ff55d538.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277927849_b2b2dd6d_81fb_431b_873e_fcc6ff55d538.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277928009-3c0dc9ed-78f1-43bb-8f63-1b6c1f075ad1.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277928009_3c0dc9ed_78f1_43bb_8f63_1b6c1f075ad1.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277928176-3afd12c4-a454-47d1-a51d-06b43f4c10ac.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277928176_3afd12c4_a454_47d1_a51d_06b43f4c10ac.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277928466-7016fb2b-35f4-48a8-80b1-e3a0936e771b.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277928466_7016fb2b_35f4_48a8_80b1_e3a0936e771b.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277928645-a447aae1-8ab1-469e-9644-ee206a2635a6.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277928645_a447aae1_8ab1_469e_9644_ee206a2635a6.png)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "Continue":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277928817-eb035e6a-28a8-4f0c-9923-6dc67583b9f0.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277928817_eb035e6a_28a8_4f0c_9923_6dc67583b9f0.png)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “Continue”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277928981-1eb4aabe-dc72-4662-98b5-db711facc36a.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277928981_1eb4aabe_dc72_4662_98b5_db711facc36a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277929185-9229e881-56f9-4632-859c-14271201a6d5.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277929185_9229e881_56f9_4632_859c_14271201a6d5.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277929367-6c386cb6-ee7a-4f7a-b69e-0f5be3bebbd3.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277929367_6c386cb6_ee7a_4f7a_b69e_0f5be3bebbd3.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277929545-70c349e2-31e4-41cb-801b-3b1d828bf3ee.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277929545_70c349e2_31e4_41cb_801b_3b1d828bf3ee.png)
 
 After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277929748-c7106fd4-4179-4e31-9b18-d3cd23af4393.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277929748_c7106fd4_4179_4e31_9b18_d3cd23af4393.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277929977-e0d648cf-9cf8-4e74-80b9-ffc65553fbb7.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277929977_e0d648cf_9cf8_4e74_80b9_ffc65553fbb7.png)
 
 After the reboot, you need to log in with your username and password, and the system interface is shown below after logging in:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277930240-463be685-e83f-4182-8dcf-b1d0e4349d52.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277930240_463be685_e83f_4182_8dcf_b1d0e4349d52.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277930468-6bb089b9-18f9-4ecc-8553-5ef98cdab04f.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277930468_6bb089b9_18f9_4ecc_8553_5ef98cdab04f.png)
 
 Above, after shutting down the virtual machine, restore the CD settings, configure it as shown below, click “OK”, and then reopen the virtual machine to see if you can boot Ubuntu normally.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277930656-1397e3a4-47b3-47e0-8437-a57bf4bc6598.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277930656_1397e3a4_47b3_47e0_8437_a57bf4bc6598.png)
 
 #### 3.1.3 Ubuntu Basic Configuration
 
@@ -287,21 +287,21 @@ After installing the Ubuntu 18.04 operating system, there are a few configuratio
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277930858-f605bd5a-38a1-475e-acd1-ef7df0ec9f95.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277930858_f605bd5a_38a1_475e_acd1_ef7df0ec9f95.png)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277931024-ac7337d9-d48c-4b6c-ad08-60a489bff99c.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277931024_ac7337d9_d48c_4b6c_ad08_60a489bff99c.png)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277931209-0187c7c3-e8a6-4a57-bf3e-22ae3ad25a9d.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277931209_0187c7c3_e8a6_4a57_bf3e_22ae3ad25a9d.png)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277931368-2d3393e1-7cee-4983-828c-2139573043b8.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277931368_2d3393e1_7cee_4983_828c_2139573043b8.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277931539-bb8407ef-7355-41f0-bd4f-311775ebbf29.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277931539_bb8407ef_7355_41f0_bd4f_311775ebbf29.png)
 
 Press the keyboard \[Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the <font style="color:#2F4BDA;">shrushru</font> command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):
 
@@ -339,13 +339,13 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277931750-92406204-0558-42b1-9ed4-6b9510c655fc.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277931750_92406204_0558_42b1_9ed4_6b9510c655fc.png)
 
 + **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277931972-b2756231-52c1-45a1-bef1-89a06ff1ff1c.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277931972_b2756231_52c1_45a1_bef1_89a06ff1ff1c.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -353,43 +353,43 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277932211-4d7703af-4644-4ea0-9426-aba7f3bf8587.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277932211_4d7703af_4644_4ea0_9426_aba7f3bf8587.png)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277932391-2d72cccf-86fa-4dac-923e-d365600996ce.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277932391_2d72cccf_86fa_4dac_923e_d365600996ce.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277932565-a564e898-142f-4535-999c-4484b5f20bfd.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277932565_a564e898_142f_4535_999c_4484b5f20bfd.png)
 
 The network is set to dynamic IP.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277932737-e1c395f2-50bf-40ae-a607-d9bbe244952f.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277932737_e1c395f2_50bf_40ae_a607_d9bbe244952f.png)
 
 + **Bridge Mode:**
 
 If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277932910-a1d5c207-27e9-4521-8ef6-ccb3df5d8597.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277932910_a1d5c207_27e9_4521_8ef6_ccb3df5d8597.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277933071-13a4d8e3-f1c5-4a25-a240-17c3f059e632.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277933071_13a4d8e3_f1c5_4a25_a240_17c3f059e632.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277933251-b693937d-ec01-4ec4-a26f-6df895116850.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277933251_b693937d_ec01_4ec4_a26f_6df895116850.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277933450-3edc0948-5caa-4834-bcfa-ace951f3494c.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277933450_3edc0948_5caa_4834_bcfa_ace951f3494c.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277933644-448e9d24-7b9d-4a38-8b0e-5e5b2d6b82f7.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277933644_448e9d24_7b9d_4a38_8b0e_5e5b2d6b82f7.png)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277933823-53001c36-620b-498e-affb-ef0b7ace82cd.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277933823_53001c36_620b_498e_affb_ef0b7ace82cd.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277934001-bca9a2d6-5a00-43aa-9ca0-aa004fb7d82b.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277934001_bca9a2d6_5a00_43aa_9ca0_aa004fb7d82b.png)
 
 #### 3.1.6 Virtual Machine Basic Library Installation
 
@@ -476,11 +476,11 @@ forlinx@ubuntu: ~/3568/OK3568-android11-source $ ./build.sh -UKAup
 
 After compiling for a while, the following interface will pop up, requiring selection. Extract the information from the image. Choose 1800000 for VCCIO4 and VCCIO6, and choose 3300000 for the rest. Use the up and down arrow keys to navigate the options and press enter to confirm the selection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277937385-cf722a11-96bf-4830-8620-105b9deca49d.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277937385_cf722a11_96bf_4830_8620_105b9deca49d.png)
 
 After successful compilation, the corresponding compilation project result file will be generated under the IMAGE folder, and the image file will be found.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719277937587-bc8a51ea-6502-4e2b-bc4b-baf7b1f2e20f.png)
+![Image](./images/OK3568-C_Android11_User_Compilation_Manual/1719277937587_bc8a51ea_6502_4e2b_bc4b_baf7b1f2e20f.png)
 
 ```shell
 OK3568-android11-source$ ls IMAGE/
