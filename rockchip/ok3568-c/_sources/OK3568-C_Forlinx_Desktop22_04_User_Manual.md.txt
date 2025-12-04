@@ -1,5 +1,7 @@
 # Forlinx Desktop 22.04\_User's Manual\_V1.1
 
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
+
 ## Copyright
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
