@@ -38,6 +38,7 @@ SOFTWARE
    OK3568-C_Android11_User_Manual
    OK3568-C_Android11_User_Compilation_Manual
    OK3568-C_Forlinx_Desktop22_04_User_Manual
+   OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual
 
 
 

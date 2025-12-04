@@ -126,6 +126,15 @@
 <li class="toctree-l1"><a class="reference internal" href="OK3568-C_Android11_User_Manual.html">Android11.0_User’s Manual_V2.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3568-C_Android11_User_Compilation_Manual.html">Android11.0_User’s Compilation Manual_V2.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Manual.html">Forlinx Desktop 22.04_User’s Manual_V1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html">00_Forlinx Desktop 22.04用户编译手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#id1"><font style="color:#000000;">免责声明</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#id2"><font style="color:#000000;">概述</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#id3"><strong><font style="color:rgb(38, 38, 38);">更新记录</font></strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#vmware">01_VMware虚拟机软件安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#ubuntu">02_加载已有ubuntu开发环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#id6">03_搭建新的ubuntu开发环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#id12">04_相关代码编译</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#id20">05_Ubuntu应用程序开发</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
 <ul>
@@ -291,15 +300,15 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 <p>There are two ways to use a virtual machine environment in VMware: one is to directly load an existing environment, and the other is to create a new environment. Let’s first talk about how to load an existing environment.</p>
 <p>First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don’t match, it suggests that the file may be corrupt, and you should consider downloading it again.</p>
 <p>Select the zip file to unzip together</p>
-<p><img alt="Image" src="_images/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png" /></p>
+<p><img alt="Image" src="_images/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c011.png" /></p>
 <p>Select .vmx as the file to be opened by the virtual machine after the complete decompression.</p>
 <p>Open the virtual machine and select the extracted 3588 development environment.vmx</p>
-<p><img alt="Image" src="_images/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png" /></p>
+<p><img alt="Image" src="_images/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a1.png" /></p>
 <p>Turn on this virtual machine after loading is complete to run it and enter the system’s interface.</p>
-<p><img alt="Image" src="_images/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png" /></p>
+<p><img alt="Image" src="_images/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b1.png" /></p>
 <p>Development environment account no.: forlinx, password: forlinx; after filling in, select Sign in to log in.</p>
-<p><img alt="Image" src="_images/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png" /></p>
-<p><img alt="Image" src="_images/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png" /></p>
+<p><img alt="Image" src="_images/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae1.png" /></p>
+<p><img alt="Image" src="_images/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af51.png" /></p>
 </section>
 <section id="new-ubuntu-development-environment-setup">
 <h2>3. New Ubuntu Development Environment Setup<a class="headerlink" href="#new-ubuntu-development-environment-setup" title="Link to this heading"></a></h2>
@@ -309,35 +318,35 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 <section id="ubuntu-virtual-machine-setup">
 <h4>3.1.1 Ubuntu Virtual Machine Setup<a class="headerlink" href="#ubuntu-virtual-machine-setup" title="Link to this heading"></a></h4>
 <p>Open the VMware software, click on create a new virtual machine. Enter the following interface.</p>
-<p><img alt="Image" src="_images/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png" /></p>
+<p><img alt="Image" src="_images/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e3121.png" /></p>
 <p>Choose custom, and click “Next”.</p>
-<p><img alt="Image" src="_images/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png" /></p>
+<p><img alt="Image" src="_images/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf91.png" /></p>
 <p>Select the compatibility with the corresponding version of VMware, which can be found in Help-&gt;About VMware Workstation, and click “Next”.</p>
-<p><img alt="Image" src="_images/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png" /></p>
+<p><img alt="Image" src="_images/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf1.png" /></p>
 <p>Select Install the operating system later and click “Next”.</p>
-<p><img alt="Image" src="_images/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png" /></p>
+<p><img alt="Image" src="_images/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c11.png" /></p>
 <p>Leave the default and click “Next”.</p>
-<p><img alt="Image" src="_images/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png" /></p>
+<p><img alt="Image" src="_images/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb1.png" /></p>
 <p>Modify the virtual machine name and installation location, click “Next”.</p>
-<p><img alt="Image" src="_images/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png" /></p>
+<p><img alt="Image" src="_images/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a201.png" /></p>
 <p>Set the number of processors as appropriate.</p>
-<p><img alt="Image" src="_images/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png" /></p>
+<p><img alt="Image" src="_images/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a71111.png" /></p>
 <p>Set the memory size according to the actual situation. It is recommended to use 16g</p>
-<p><img alt="Image" src="_images/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png" /></p>
+<p><img alt="Image" src="_images/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b1.png" /></p>
 <p>Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.</p>
-<p><img alt="Image" src="_images/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png" /></p>
+<p><img alt="Image" src="_images/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf1.png" /></p>
 <p>The default selection for the IO controller type here is LSI.</p>
-<p><img alt="Image" src="_images/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png" /></p>
+<p><img alt="Image" src="_images/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa61.png" /></p>
 <p>The default selection here is also SCSI.</p>
-<p><img alt="Image" src="_images/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png" /></p>
+<p><img alt="Image" src="_images/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d6591.png" /></p>
 <p>Choose to create a new virtual disk here.</p>
-<p><img alt="Image" src="_images/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png" /></p>
+<p><img alt="Image" src="_images/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd1.png" /></p>
 <p>Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.</p>
-<p><img alt="Image" src="_images/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png" /></p>
+<p><img alt="Image" src="_images/1719278534210_b2fc7391_1c76_4148_80c8_855cd91746981.png" /></p>
 <p>Specify the disk file, the default one here is fine.</p>
-<p><img alt="Image" src="_images/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png" /></p>
+<p><img alt="Image" src="_images/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d1.png" /></p>
 <p>Click “Finish” by default.</p>
-<p><img alt="Image" src="_images/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png" /></p>
+<p><img alt="Image" src="_images/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c1.png" /></p>
 <p>The virtual machine creation is now complete.</p>
 <p>In the next section, we will introduce the installation of Ubuntu system in the virtual machine, which is similar to the installation method in the real machine. Here we describe the method of installing Ubuntu system in a virtual machine.</p>
 </section>
