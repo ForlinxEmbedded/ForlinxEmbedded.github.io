@@ -59,7 +59,7 @@ RK3568 is a low-power high-performance processor based on ARM64 architecture. It
 
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213430579-b5bffcec-1a31-48ad-8c2b-4043924f42bc.png)![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213431494-a4ae29a9-a3d9-4180-925d-ea930c78dbcd.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213430579_b5bffcec_1a31_48ad_8c2b_4043924f42bc.png)![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213431494_a4ae29a9_a3d9_4180_925d_ea930c78dbcd.png)
 
 **Note:**
 
@@ -143,7 +143,7 @@ Device             Start       End   Sectors  Size  Type
 
 **Note: Be sure to install the WiFi antenna when startup.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213369149-1599b42a-b180-4ffb-a45b-9520e230724a.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213369149_1599b42a_b180_4ffb_a45b_9520e230724a.png)
 
 ### 2.2 Debugging Serial Driver Installation
 
@@ -174,15 +174,15 @@ In the following, we take the putty terminal software as an example to introduce
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213369429-ab1f51af-7833-4bb6-ae66-362539c91a28.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213369429_ab1f51af_7833_4bb6_ae66_362539c91a28.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213369756-7ade0dbb-730d-4bbb-b8f6-a71cbe1ce8d9.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213369756_7ade0dbb_730d_4bbb_b8f6_a71cbe1ce8d9.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM3 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213370083-374e79fe-d0ec-4743-9eb0-c2e927768644.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213370083_374e79fe_d0ec_4743_9eb0_c2e927768644.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -190,7 +190,7 @@ After the terminal software on the PC side is set, connect the PC and the develo
 
 The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967876759-9d00a779-cc15-476c-a464-5d5f5f99c081.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967876759_9d00a779_cc15_476c_a464_5d5f5f99c081.png)
 
 The current Forlinx Desktop system users:
 
@@ -214,7 +214,7 @@ OK3568 development board supports SSH service and automatically starts it during
 
 - **The following is tested with the development board ip 192.168.0.123, please change it according to the actual situation, and use ifconfig eth0 192.168.0.123 to change it in the debugging serial port terminal.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967876845-9e5263ed-fb85-475e-830f-f0416522b1be.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967876845_9e5263ed_fb85_475e_830f_f0416522b1be.png)
 
 #### 2.4.2 FTP
 
@@ -230,9 +230,9 @@ Install FileZilla tool on Windows and follow the steps shown in the image below 
 
 - **The following is tested with the development board ip 192.168.0.123, please change it according to the actual situation, and use ifconfig eth0 192.168.0.123 to change it in the debugging serial port terminal.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213370890-fce4c650-5009-4072-b338-94c7d5261b46.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213370890_fce4c650_5009_4072_b338_94c7d5261b46.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213371163-0182f398-8711-42d9-82ae-33e024615f0d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213371163_0182f398_8711_42d9_82ae_33e024615f0d.png)
 
 ### 2.5 Screen Switching
 
@@ -329,7 +329,7 @@ The device tree path :kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi
 
 In the kernel source code, open the device dtsi file and find the following node:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213371381-585951ab-ff41-4b43-98c2-b39e4aaf3d24.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213371381_585951ab_ff41_4b43_98c2_b39e4aaf3d24.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -337,7 +337,7 @@ Examples:
 
 Close the hdmi, lvds screens, change the attribute to "off", and use edp to change the corresponding attribute to edp.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213371580-7ae56dfa-8698-4f52-ada5-4af5caac4c13.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213371580_7ae56dfa_8698_4f52_ada5_4af5caac4c13.png)
 
 After saving, recompile to generate the image.
 
@@ -357,17 +357,17 @@ In general, the power can be turned off directly, if there is data storage, func
 
 After the development board is started for the first time, you need to enter the login password and click login. The login user is forlinx, and the password is forlinx. After entering the desktop, it is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878378-a5b936c2-9969-47f7-9929-ef0534e65e8e.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878378_a5b936c2_9969_47f7_9929_ef0534e65e8e.png)
 
 #### 3.1.2 Virtual Keyboard Settings
 
 The system integrates a virtual keyboard. Click the icon in the upper corner and move the mouse to the virtual keyboard option to select the virtual keyboard.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878467-969363b1-dc72-455a-bc54-44533df00369.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878467_969363b1_dc72_455a_bc54_44533df00369.png)
 
 After selection, the virtual keyboard will pop up in the page.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878556-0506c9b9-8be3-46bd-b8b8-d1cfd1bbd818.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878556_0506c9b9_8be3_46bd_b8b8_d1cfd1bbd818.png)
 
 #### 3.1.3 WiFi Test
 
@@ -375,53 +375,53 @@ After selection, the virtual keyboard will pop up in the page.
 
 The OK3568 platform has the AW-CM358 module on board by default, which is an all-in-one WiFi/Bluetooth module to test the WiFi functionality. The WiFi module will exist in the system as a mlan node; this test corresponds to mlan0 (other corresponding nodes are used for multiple devices). To configure WiFi, use the mouse to click the network icon in the upper right corner:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878632-cf01f851-72c5-4225-8f53-dadb91b5cd00.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878632_cf01f851_72c5_4225_8f53_dadb91b5cd00.png)
 
 Click the WiFi name listed under the WiFi network, pop up the WiFi configuration interface, and enter the password:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878724-cd3cde9e-b761-4e33-8660-7d79fe925b1e.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878724_cd3cde9e_b761_4e33_8660_7d79fe925b1e.png)
 
 Click "Connect" and the WiFi connection is completed:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878800-a0d749c8-00f2-4ea9-b98f-fe11cda2f2a1.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878800_a0d749c8_00f2_4ea9_b98f_fe11cda2f2a1.png)
 
 #### 3.1.4 Browser Test
 
 ForlinxDesktop integrates Google Chrome, etc. When using it, please make sure the network is smooth and dns is available before accessing the external network. Click on the Start menu in the lower left corner and select "Chromium Browser":
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878888-ca0e1c41-4731-41a6-97cd-f301e24b5204.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878888_ca0e1c41_4731_41a6_97cd_f301e24b5204.png)
 
 Enter the browser:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967878994-1de47657-ce2b-45d8-b440-65d7bf624fa5.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967878994_1de47657_ce2b_45d8_b440_65d7bf624fa5.png)
 
 Click the search box to enter the website and visit the official website of Forlinx Embedded. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967879414-7edcf354-93a4-4699-9546-6c1ecb0b5e4d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967879414_7edcf354_93a4_4699_9546_6c1ecb0b5e4d.png)
 
 #### 3.1.5 Bluetooth Test
 
 OK3568 platform is equipped with AW-CM358 module by default, which is a WiFi/Bluetooth integrated module to test Bluetooth function. To configure Bluetooth, you need to right-click the Bluetooth icon in the lower right corner. Bluetooth is enabled by default:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967879658-539593ad-d6de-44b0-9b3e-c9fee9ec9a2b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967879658_539593ad_d6de_44b0_9b3e_c9fee9ec9a2b.png)
 
 Select "Send Files to Device" and select the corresponding file:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967879754-3ac84e6f-d090-483a-99b1-0a542cb2ba49.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967879754_3ac84e6f_d090_483a_99b1_0a542cb2ba49.png)
 
 Click "OK" to select the corresponding equipment:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967879834-26dc25e6-d990-47aa-bc4d-910f2e5e1704.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967879834_26dc25e6_d990_47aa_bc4d_910f2e5e1704.png)
 
 After clicking "OK", the file transfer starts:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967879914-be5ad5e8-3a1a-43d9-88ec-542f08049d6e.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967879914_be5ad5e8_3a1a_43d9_88ec_542f08049d6e.png)
 
 #### 3.1.6 File Manager
 
 Click Home on the desktop to manage files:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967880131-f5ea3bd0-d5a9-4595-b513-d65e1e6ff1d8.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967880131_f5ea3bd0_d5a9_4595_b513_d65e1e6ff1d8.png)
 
 ### 3.2 Command Line Function Test
 
@@ -530,7 +530,7 @@ The temperature value is 47°C.
 
 #### 3.2.4 Key Test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213401930-d4730201-4896-4c0f-bb8a-1bdde2bf067d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213401930_d4730201_4896_4c0f_bb8a_1bdde2bf067d.png)
 
 Use the keytest command line tool to test the keys. At present, keytest supports the test of the four keys V +, V-, Home and ESC on the backplane, and the key codes are 115, 114, 139 and 158 respectively. At this point, press the lift button in sequence, and the following can be output on the terminal:
 
@@ -556,7 +556,7 @@ OK3568 serial port supports odd and even parity, 8 data bits and 1 stop bit.
 
 Please short the serial port to be tested before the serial port loopback test. In the schematic diagram of the OK3568 platform, UART2, UART3, UART4, UART5, and UART8 are indicated as 5 serial ports, with UART2 being the debug port and UART8 being the Bluetooth port. The serial ports available to the user are UART3, UART4 and UART5, and the corresponding device names in the development board are ttyS3, ttyS4 and ttyS5. Take the test of UART4 serial port as an example, short-circuit the receiving and transmitting pins of UART4 according to the schematic diagram of the development board, corresponding to PIN29 and PIN30 respectively.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213402269-b9044a2d-f46c-4f8c-97da-0eeea4a7691e.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213402269_b9044a2d_f46c_4f8c_97da_0eeea4a7691e.png)
 
 Turn on the test program after the short circuit is completed.
 
@@ -575,7 +575,7 @@ If the serial port prints the above content after execution, it indicates that t
 
 2 x SPI interfaces are led out from the OK3568 carrier board, which are configured as spidev in the default software for loopback test. When testing, refer to the schematic for shorting MOSI (PIN15) and MISO (PIN16), and then use the commands below to test each.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213402756-23178ecd-9f08-490f-860a-14c212800cde.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213402756_23178ecd_9f08_490f_860a_14c212800cde.png)
 
 Without shorting the SPI 2\_ MOSI and the SPI 2\_ MISO, execute the test command:
 
@@ -644,7 +644,7 @@ This command turns on the watchdog, but does not feed the dog, and the system re
 
 RTC testing is mainly done by using the date and hwclock tools to set the software and hardware time. The test checks if the software clock can read and synchronize with the RTC clock when the development board is powered off and on again (**Note: Make sure that the button battery is already installed on the board**).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213403091-4eb18b23-c942-4309-bbfb-a574110e2766.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213403091_4eb18b23_c942_4309_bbfb_a574110e2766.png)
 
 ```markdown
 forlinx@ok3568:~$ sudo systemctl enable hwclock.sh
@@ -682,11 +682,11 @@ At this time, the arrow cursor appears on the screen, the mouse can work normall
 
 OK3568 supports two USB 2.0 and one USB 3.0 interfaces. You can connect USB devices such as a mouse, keyboard, or USB flash drive to any of the onboard USB host interfaces. The board also supports hot-plugging for the mentioned devices. Demonstration with a mounting USB flash drive; the current USB flash drive test support up to 128G, but no test for 128G or above.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213403465-e615f46f-4f78-44f4-8e62-8d1da95f7fd0.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213403465_e615f46f_4f78_44f4_8e62_8d1da95f7fd0.png)
 
 USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213403818-b58eff8c-20d5-4296-bcdc-521786251645.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213403818_b58eff8c_20d5_4296_bcdc_521786251645.png)
 
 The terminal prints information about the USB flash drive, and since many types of USB flash drives exist, the information displayed may vary:
 
@@ -864,7 +864,7 @@ ok3568 login:
 
 The OK3568-C SoM has a controllable blue LED, and the OK3568 SoM blue LED blinks when the board is powered up and started. You can disable this feature by modifying the device tree file arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi and changing the linux,default-trigger property of the leds node to "none".
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967880219-6aa553fe-8b33-49ad-885e-cd6b8aea532b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967880219_6aa553fe_8b33_49ad_885e_cd6b8aea532b.png)
 
 The test method is as follows, log in with the root user:
 
@@ -897,15 +897,15 @@ root@ok3568:/sys/class/leds/work# echo heartbeat > trigger
 
 Insert the minipcie module into the carrier board minipcie card slot before powering up the system. After starting ForlinxDesktop after power-on, you can see that the corresponding device is enumerated successfully through lspci.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967880314-2201112a-6310-4367-9d50-9d2d71835576.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967880314_2201112a_6310_4367_9d50_9d2d71835576.png)
 
 Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.
 
 In the case of SSD, the Linux kernel already includes this type of SSD drive by default. After inserting and powering on, you will be able to see enumeration information and corresponding devices will appear.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967880398-24e0f0ce-4b8b-4f97-a155-0b044ad2765b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967880398_24e0f0ce_4b8b_4f97_a155_0b044ad2765b.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740967880495-2706f6f9-b9b9-4124-a8a7-b640f920d171.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1740967880495_2706f6f9_b9b9_4124_a8a7_b640f920d171.png)
 
 #### 3.2.17 Docker Test
 
@@ -1689,11 +1689,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213420174-20ee5b0f-a75c-47e8-8cf8-20f9ae6a428b.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213420174_20ee5b0f_a75c_47e8_8cf8_20f9ae6a428b.png)
 
 Click "Driver Installation”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213420428-590ac7ac-40af-4847-9ae4-0cad7ee673a7.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213420428_590ac7ac_40af_4847_9ae4_0cad7ee673a7.png)
 
 #### **5.1.2 OTG Full Flashing Test**
 
@@ -1711,21 +1711,21 @@ It is a development tool provided by Rockchip. Before use, please unzip it to a 
 
 - **Pay attention to two points during OTG programming: 1. Link the OTG line. 2\. If OTG is multiplexed with the USB 3.0, it is necessary to modify the dial switch, as shown in the following figure:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213420638-145c791b-e3c1-45d9-aca0-bd2d5dd9e1c4.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213420638_145c791b_e3c1_45d9_aca0_bd2d5dd9e1c4.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45534390/1748310474384-af830991-2bc3-4d34-82cf-37f1a9dcfe13.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1748310474384_af830991_2bc3_4d34_82cf_37f1a9dcfe13.png)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213420998-e0295d43-baee-4601-9746-748b30818b01.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213420998_e0295d43_baee_4601_9746_748b30818b01.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213421227-58aa46de-f55e-4f63-be5d-7add875a6c7f.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213421227_58aa46de_f55e_4f63_be5d_7add875a6c7f.png)
 
 Click "Switch" and wait for a while to enter the LOADER device, then click "Erase Flash" to erase. Then click the "Upgrade" button to upgrade.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213421517-7768e100-add9-4c33-9dfd-bfda0ec6ee83.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213421517_7768e100_add9_4c33_9dfd_bfda0ec6ee83.png)
 
 **Note: After the upgrade is completed, the system will automatically reboot twice, the first reboot to update some information, the operating user is [root@buildroot], need to be patient, the second reboot can be used normally, the operating user is forlinx@ok3568:~$.**
 
@@ -1739,13 +1739,13 @@ FactoryTool is a factory batch OTG burning tool. It does not need to read the im
 
 - **Theoretically, the decompression directory is optional, but some users feedback that the decompression directory of Rockchip development tool should be in full English. If it is inconsistent with the following figure after opening the development tool, please consider decompressing it in the full English directory.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213421737-bb278781-e442-475e-8ffc-dd6afcff6c41.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213421737_bb278781_e442_475e_8ffc_dd6afcff6c41.png)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213422096-fe281d7a-0d01-4471-b642-0142ab1d9a6d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213422096_fe281d7a_0d01_4471_b642_0142ab1d9a6d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213422526-f8ca8ea5-1d95-48f6-9ee2-61f05043e622.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213422526_f8ca8ea5_1d95_48f6_9ee2_61f05043e622.png)
 
 #### 5.1.3 OTG Step-by-step Flashing Test
 
@@ -1757,35 +1757,35 @@ In the development phase, it is very time-consuming to burn all of them every ti
 
 - **First, after OK3568-Forlinx Desktop-release is compiled, a separate partition image can be found in the rockdev directory.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213422816-b476485f-dd31-4b52-81b5-0d53a106fe03.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213422816_b476485f_dd31_4b52_81b5_0d53a106fe03.png)
 
 Take separate programming boot.img (including device tree and startup logo) as an example to demonstrate the programming method.
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213423051-3406c208-802d-4cb6-b976-91a13afa7c10.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213423051_3406c208_802d_4cb6_b976_91a13afa7c10.png)
 
 Click the "Device Partition Table" button to automatically read the partition address. There will be a prompt that some partitions cannot be read. Click "OK".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213423285-a85ce31a-7cb8-4673-a3eb-5baf4b5361fc.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213423285_a85ce31a_7cb8_4673_a3eb_5baf4b5361fc.png)
 
 Click the right test area of the partition to select the partition mirror, and check the partition.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213423582-bb6182fc-a915-49b3-a9a8-03870817089d.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213423582_bb6182fc_a915_49b3_a9a8_03870817089d.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213423822-89c59394-9a37-4a78-a3e0-27f40e0efa05.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213423822_89c59394_9a37_4a78_a3e0_27f40e0efa05.png)
 
 For other partitions detected on the right but not displayed in the left list and needing to be flashed, you need to right-click on the left and select “Add Item”, just enter the partition, then click “Read Partition Table” again, and the software will automatically assign the partition address.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213424123-e6e466db-d9a6-4247-8d17-18d698a21dbc.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213424123_e6e466db_d9a6_4247_8d17_18d698a21dbc.png)
 
 **Introduction to MASKROM mode**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the BOOT key, then press the reset key to enter maskrom mode for burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719213424389-0ae58040-3768-43e9-af3b-362606c52409.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Manual/1719213424389_0ae58040_3768_43e9_af3b_362606c52409.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The burning process is consistent with the loader mode, so it is best to use an update.img burning.
 
