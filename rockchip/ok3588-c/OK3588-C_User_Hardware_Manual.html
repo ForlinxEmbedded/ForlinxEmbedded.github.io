@@ -66,8 +66,8 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V1.3</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rk3588-description">1. RK3588 Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fet3588-c-som-description">2. FET3588-C SoM Description</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#fet3588-c-som">2.1 FET3588-C SoM</a></li>
@@ -77,12 +77,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#operating-environment">2.3.3 Operating Environment</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#som-interface-speed">2.3.4 SoM Interface Speed</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#esd-features">2.3.5 ESD  Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esd-features">2.3.5 ESD Features</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id1">2.4 SoM Interface Speed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fet3588-c-som-pins-definition">2.5  FET3588-C SoM Pins Definition</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fet3588-c-som-pins-schematic">2.5.1  FET3588-C SoM Pins Schematic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3588-c-som-pins-definition">2.5 FET3588-C SoM Pins Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet3588-c-som-pins-schematic">2.5.1 FET3588-C SoM Pins Schematic</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#fet3588-c-som-pins-description">2.5.2 FET3588-C SoM Pins Description</a></li>
 </ul>
 </li>
@@ -105,7 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#fan-interface">3.5.8 FAN Interface</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.9 TF Card</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rtc-circuit">3.5.10 RTC Circuit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ethernet-circuit">3.5.11  Ethernet Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet-circuit">3.5.11 Ethernet Circuit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rs485-interface">3.5.12 RS485 Interface</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#audio">3.5.13 Audio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#g-5g-interface">3.5.14 4G&amp;5G Interface</a></li>
@@ -172,6 +172,51 @@
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
+<th class="head text-center"><p>User Manual Version</p></th>
+<th class="head text-center"><p>SoM Version</p></th>
+<th class="head text-center"><p>Carrier Board Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>12/06/2024</p></td>
+<td class="text-center"><p>V1.3</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1 and above</p></td>
+<td><p>1. Updating the manual format;<br />2. Deleting the naming convention and ordering information of the SoM;<br /> 3. Deleting the section on SoM pin descriptions (categorized by function);<br />4. Adding the “Overview” and “Documentation Description” sections;<br />5. Updating the power consumption table.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>24/07/2023</p></td>
+<td class="text-center"><p>V1.3</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1and above</p></td>
+<td><p>1. Updating the front photo of the development board;<br />2. Modifying the description of pull - up and pull - down in the boot item section.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>23/04/2023</p></td>
+<td class="text-center"><p>V1.2</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1 and above</p></td>
+<td><p>Adding an ESD characteristics section and increasing<br />the description of the ESD characteristics of the SoM pins.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>27/03/2023</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1 and above</p></td>
+<td><p>Correcting the description of the SoM pin functions.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>01/12/2022</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>This manual is designed to help users quickly familiarize themselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (Adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “FET3588 Pin Function Comparison Table”.</p>
@@ -190,7 +235,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>⁉️</p></td>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
 <td><p>Note or information that requires special attention, be sure to read carefully.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>📚</p></td>
@@ -198,51 +243,6 @@
 </tr>
 <tr class="row-even"><td class="text-center"><p>🛤️ ️</p></td>
 <td><p>Indicates the related path.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
-<th class="head text-center"><p><font style="color:black;">User Manual Version</font></p></th>
-<th class="head text-center"><p><font style="color:black;">SoM Version</font></p></th>
-<th class="head text-center"><p><font style="color:black;">Carrier Board Version</font></p></th>
-<th class="head"><p><font style="color:black;">Revision History</font></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>12/06/2024</p></td>
-<td class="text-center"><p>V1.3</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p><font style="color:black;background-color:#FFFFFF;">V1.1 </font><font style="color:black;background-color:#FFFFFF;">and above</font></p></td>
-<td><p>1. Updating the manual format;                                                                                                            2. Deleting the naming convention and ordering information of the SoM;                                      3. Deleting the section on SoM pin descriptions (categorized by function);                                              4. Adding the “Overview” and “Documentation Description” sections;                                              5. Updating the power consumption table.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>24/07/2023</p></td>
-<td class="text-center"><p>V1.3</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p><font style="color:black;background-color:#FFFFFF;">V1.1 </font><font style="color:black;background-color:#FFFFFF;">and above</font></p></td>
-<td><p>1. Updating the front photo of the development board;                                                                  2. Modifying the description of pull - up and pull - down in the boot item section.</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>23/04/2023</p></td>
-<td class="text-center"><p>V1.2</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p><font style="color:black;background-color:#FFFFFF;">V1.1</font> <font style="color:black;background-color:#FFFFFF;">and above</font></p></td>
-<td><p>Adding an ESD characteristics section and increasing the description of the ESD characteristics of the SoM pins.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>27/03/2023</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p><font style="color:black;background-color:#FFFFFF;">V1.1 </font><font style="color:black;background-color:#FFFFFF;">and above</font></p></td>
-<td><p>Correcting the description of the SoM pin functions.</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>01/12/2022</p></td>
-<td class="text-center"><p>V1.0</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td><p>Initial Version</p></td>
 </tr>
 </tbody>
 </table>
@@ -371,13 +371,13 @@
 <h4>2.3.3 Operating Environment<a class="headerlink" href="#operating-environment" title="Link to this heading"></a></h4>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>Parameter</p></th>
 <th class="head"><p></p></th>
-<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head text-center"><p>Specification</p></th>
 <th class="head"><p></p></th>
 <th class="head"><p></p></th>
 <th class="head"><p></p></th>
-<th class="head text-center"><p><strong>Description</strong></p></th>
+<th class="head text-center"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -444,12 +444,12 @@
 <h4>2.3.4 SoM Interface Speed<a class="headerlink" href="#som-interface-speed" title="Link to this heading"></a></h4>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
-<th class="head text-center"><p><strong>Specification</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>Parameter</p></th>
+<th class="head text-center"><p>Specification</p></th>
 <th class="head"><p></p></th>
 <th class="head"><p></p></th>
 <th class="head"><p></p></th>
-<th class="head text-center"><p><strong>Description</strong></p></th>
+<th class="head text-center"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -467,7 +467,7 @@
 <td><p>bps</p></td>
 <td class="text-center"><p>-</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>SPI Clock Frequncey</p></td>
+<tr class="row-even"><td class="text-center"><p>SPI Clock Frequency</p></td>
 <td class="text-center"><p>-</p></td>
 <td><p>-</p></td>
 <td><p>50</p></td>
@@ -520,7 +520,7 @@
 </table>
 </section>
 <section id="esd-features">
-<h4>2.3.5 ESD  Features<a class="headerlink" href="#esd-features" title="Link to this heading"></a></h4>
+<h4>2.3.5 ESD Features<a class="headerlink" href="#esd-features" title="Link to this heading"></a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Parameter</p></th>
@@ -551,9 +551,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note：</strong></p>
-<p><strong>1. The above data is provided by Rockchip;</strong></p>
-<p><strong>2. As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.</strong></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The above data is provided by Rockchip;</strong></p></li>
+<li><p><strong>As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.</strong></p></li>
+</ul>
 </section>
 </section>
 <section id="id1">
@@ -676,9 +678,9 @@
 <p>2. USB3.1, PCIe2.0 and SATA 3.0 are multiplexed, please refer to the following carrier board design chapters for more information.</p>
 </section>
 <section id="fet3588-c-som-pins-definition">
-<h3>2.5  FET3588-C SoM Pins Definition<a class="headerlink" href="#fet3588-c-som-pins-definition" title="Link to this heading"></a></h3>
+<h3>2.5 FET3588-C SoM Pins Definition<a class="headerlink" href="#fet3588-c-som-pins-definition" title="Link to this heading"></a></h3>
 <section id="fet3588-c-som-pins-schematic">
-<h4>2.5.1  FET3588-C SoM Pins Schematic<a class="headerlink" href="#fet3588-c-som-pins-schematic" title="Link to this heading"></a></h4>
+<h4>2.5.1 FET3588-C SoM Pins Schematic<a class="headerlink" href="#fet3588-c-som-pins-schematic" title="Link to this heading"></a></h4>
 <p><img alt="Image" src="_images/1731113531371_84d644b8_4d0a_4d15_9a16_ef3876f188c7.png" /></p>
 <p><img alt="Image" src="_images/1731113584306_017c855b_7f11_403c_a4ea_f9cee7ce3855.png" /></p>
 <p><img alt="Image" src="_images/1731113605303_fc695008_b9d8_45e9_b417_0f04c945d461.png" /><img alt="Image" src="_images/1731113605445_29e69de6_b757_4fa6_ba64_e7e8bffa0cc9.png" /></p>
@@ -686,25 +688,25 @@
 <section id="fet3588-c-som-pins-description">
 <h4>2.5.2 FET3588-C SoM Pins Description<a class="headerlink" href="#fet3588-c-som-pins-description" title="Link to this heading"></a></h4>
 <p><strong>Note1:</strong></p>
-<p>Num ——SoM connector pin no.:</p>
-<p>Ball —— CPU pin ball no.</p>
-<p>GPIO ——CPU pin general I/O port serial number</p>
-<p>Vol  ——Pin signal level</p>
+<p><strong>Num ——SoM connector pin no.:</strong></p>
+<p><strong>Ball —— CPU pin ball no.</strong></p>
+<p><strong>GPIO ——CPU pin general I/O port serial number</strong></p>
+<p><strong>Vol  ——Pin signal level</strong></p>
 <p><strong>Note 2:</strong></p>
-<p>Signal Name——SoM connector network name</p>
-<p>Pin Description—— SoM Pin Signal Descriptions</p>
-<p>Default Function——Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. Please contact us with any questions in time.</p>
+<p><strong>Signal Name——SoM connector network name</strong></p>
+<p><strong>Pin Description—— SoM Pin Signal Descriptions</strong></p>
+<p><strong>Default Function——Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. Please contact us with any questions in time.</strong></p>
 <p><strong>Note 3: The pins marked with “Do not use for carrier board” in the “Pin Description” are those used by the SoM, and should not be used in the carrier board design.</strong></p>
 <p><strong>Table 1 RIGHT _ DOWN (P1) Connector Interface (Odd) Pin Definition</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>NUM</strong></p></th>
-<th class="head text-center"><p><strong>BALL</strong></p></th>
-<th class="head text-center"><p><strong>Signal Name</strong></p></th>
-<th class="head text-center"><p><strong>GPIO</strong></p></th>
-<th class="head text-center"><p><strong>VOL</strong></p></th>
-<th class="head"><p><strong>Pin Description</strong></p></th>
-<th class="head text-center"><p><strong>Default Function</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1113,13 +1115,13 @@
 <p><strong>Table 2 RIGHT _ DOWN (P1) Connector Interface (Even) Pin Definition</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>NUM</strong></p></th>
-<th class="head text-center"><p><strong>BALL</strong></p></th>
-<th class="head text-center"><p><strong>Signal Name</strong></p></th>
-<th class="head text-center"><p><strong>GPIO</strong></p></th>
-<th class="head text-center"><p><strong>VOL</strong></p></th>
-<th class="head"><p><strong>Pin Description</strong></p></th>
-<th class="head text-center"><p><strong>Default Function</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1528,13 +1530,13 @@
 <p><strong>Table 3 Left _ DOWN (P2) Connector Interface (Odd) Pin Definition</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>NUM</strong></p></th>
-<th class="head text-center"><p><strong>BALL</strong></p></th>
-<th class="head text-center"><p><strong>Signal Name</strong></p></th>
-<th class="head text-center"><p><strong>GPIO</strong></p></th>
-<th class="head text-center"><p><strong>VOL</strong></p></th>
-<th class="head"><p><strong>Pin Description</strong></p></th>
-<th class="head text-center"><p><strong>Default Function</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1943,13 +1945,13 @@
 <p><strong>Table 4 Left _ DOWN (P2) Connector Interface (Even) Pin Definition</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>NUM</strong></p></th>
-<th class="head"><p><strong>BALL</strong></p></th>
-<th class="head text-center"><p><strong>Signal Name</strong></p></th>
-<th class="head text-center"><p><strong>GPIO</strong></p></th>
-<th class="head text-center"><p><strong>VOL</strong></p></th>
-<th class="head"><p><strong>Pin Description</strong></p></th>
-<th class="head text-center"><p><strong>Default Function</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head"><p>BALL</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2773,13 +2775,13 @@
 <p><strong>Table 6 Right_UP（P3） Connector Interface(Even) Pin Definition</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>NUM</strong></p></th>
-<th class="head text-center"><p><strong>BALL</strong></p></th>
-<th class="head"><p><strong>Signal Name</strong></p></th>
-<th class="head text-center"><p><strong>GPIO</strong></p></th>
-<th class="head text-center"><p><strong>VOL</strong></p></th>
-<th class="head"><p><strong>Pin Description</strong></p></th>
-<th class="head text-center"><p><strong>Default Function</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>NUM</p></th>
+<th class="head text-center"><p>BALL</p></th>
+<th class="head"><p>Signal Name</p></th>
+<th class="head text-center"><p>GPIO</p></th>
+<th class="head text-center"><p>VOL</p></th>
+<th class="head"><p>Pin Description</p></th>
+<th class="head text-center"><p>Default Function</p></th>
 </tr>
 </thead>
 <tbody>
@@ -4031,9 +4033,9 @@
 <h3>3.1 OK3588-C Development Board Interface Diagram<a class="headerlink" href="#ok3588-c-development-board-interface-diagram" title="Link to this heading"></a></h3>
 <p>Connection method is board-to-board, and main interfaces are shown in the figure below:</p>
 <p><img alt="Image" src="_images/1720683836169_b4d7f262_e3d0_4181_ae83_16af963b0d08.jpeg" /></p>
-<p>Front</p>
+<p><strong>Front</strong></p>
 <p><img alt="Image" src="_images/1720683836613_ddccbf3d_ab6f_4665_8309_9fcb4ab9dcb6.jpeg" /></p>
-<p>Back</p>
+<p><strong>Back</strong></p>
 </section>
 <section id="ok3588-c-som-dimension-diagram">
 <h3>3.2 OK3588-C SoM Dimension Diagram<a class="headerlink" href="#ok3588-c-som-dimension-diagram" title="Link to this heading"></a></h3>
@@ -4089,7 +4091,7 @@
 <tr class="row-even"><td><p>D</p></td>
 <td><p>Type</p></td>
 <td><p>M</p></td>
-<td><p>Carrier board(Note: carrier board identification M, not filled by default)</p></td>
+<td><p>Carrier board (<strong>Note: carrier board identification M, not filled by default</strong>)</p></td>
 </tr>
 <tr class="row-odd"><td><p>E</p></td>
 <td><p>Operating Temperature</p></td>
@@ -4129,7 +4131,7 @@
 <tr class="row-even"><td><p></p></td>
 <td><p></p></td>
 <td><p>SC</p></td>
-<td><p>Special-purpose use: According to the customer’s special requirements for special modifications (according to a function to modify a material,etc.)</p></td>
+<td><p>Special-purpose use: According to the customer’s special requirements for special modifications<br />(according to a function to modify a material,etc.)</p></td>
 </tr>
 </tbody>
 </table>
@@ -4230,8 +4232,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note: “TBD” means the function has not been developed in this phase;</strong></p>
-<p><strong>The parameters in the table are hardware design or theoretical CPU values.</strong></p>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>“TBD” means the function has not been developed in this phase;</strong></p></li>
+<li><p><strong>The parameters in the table are hardware design or theoretical CPU values.</strong></p></li>
+</ul>
 </section>
 <section id="ok3588-c-carrier-board-description">
 <h3>3.5 OK3588-C Carrier Board Description<a class="headerlink" href="#ok3588-c-carrier-board-description" title="Link to this heading"></a></h3>
@@ -4247,8 +4252,10 @@
 <p>VCC_3V3 is decreased to VCC_1V8 via U1. VCC_1V8 supplies power for partial carrier board configurations.</p>
 <p><img alt="Image" src="_images/1731062327942_75594a5e_1191_4127_abb2_c766106adbe0.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1</strong>. <strong>When undertaking independent design, it is crucial to ensure proper power sequencing during power-up;</strong>
-<strong>2. For the device selection and external layout of the buck - boost chip, you need to refer to the corresponding chip manual to ensure a good power supply loop.</strong></p>
+<ul class="simple">
+<li><p><strong>When undertaking independent design, it is crucial to ensure proper power sequencing during power-up;</strong></p></li>
+<li><p><strong>For the device selection and external layout of the buck - boost chip, you need to refer to the corresponding chip manual to ensure a good power supply loop.</strong></p></li>
+</ul>
 </section>
 <section id="reset-and-startup-shutdown-signal">
 <h4>3.5.2 Reset and Startup/Shutdown Signal<a class="headerlink" href="#reset-and-startup-shutdown-signal" title="Link to this heading"></a></h4>
@@ -4333,8 +4340,7 @@
 <p><img alt="Image" src="_images/1731062393594_0a7293a7_ac47_46d2_8595_cefdbf60643a.png" /></p>
 <p>SARADC_ VIN1 is used to enter the recovery state due to a short circuit to the ground, and the SoM pulls it up to a 1.8V power supply using a 10K resistor. On RK3588, the key array adopts a parallel type, which can adjust the input key value by increasing or decreasing the keys and adjusting the proportion of the voltage divider resistor to achieve multi-key input to meet customer product requirements; It is recommended in the design that any two key values must be greater than ± 35, i.e. the center voltage difference must be greater than 123mV. As shown below:</p>
 <p><img alt="Image" src="_images/1731062406441_010d202f_970e_4f96_a3ce_162925e62062.png" /></p>
-<p><strong>Note:</strong></p>
-<p><strong>1. When doing key acquisition, ESD protection is required near the keys. And 0 key value must be connected in series with a 100ohm resistor to strengthen the anti-static surge capacity (If there is only one button, ESD must be close to the button, ESD → 100ohm resistor → 1nF → chip pin);</strong></p>
+<p><strong>Note: When doing key acquisition, ESD protection is required near the keys. And 0 key value must be connected in series with a 100ohm resistor to strengthen the anti-static surge capacity (If there is only one button, ESD must be close to the button, ESD → 100ohm resistor → 1nF → chip pin).</strong></p>
 </section>
 <section id="system-initialization-configuration-signal">
 <h4>3.5.4 System Initialization Configuration Signal<a class="headerlink" href="#system-initialization-configuration-signal" title="Link to this heading"></a></h4>
@@ -4389,8 +4395,10 @@
 <p>The schematic is as follows:</p>
 <p><img alt="Image" src="_images/1731062766127_4bb88bd0_e1c0_40b7_8af3_0198a73993e2.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board;</strong></p>
-<p><strong>2. It is recommended to keep Q1 and Q2, which can effectively prevent the U5 current from flowing back to the CPU through UART2_TX/RX when the core board is not powered-up, affecting the startup and even causing damage;</strong></p>
+<ul class="simple">
+<li><p><strong>For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board;</strong></p></li>
+<li><p><strong>It is recommended to keep Q1 and Q2, which can effectively prevent the U5 current from flowing back to the CPU through UART2_TX/RX when the core board is not powered-up, affecting the startup and even causing damage.</strong></p></li>
+</ul>
 </section>
 <section id="iic-extending-io">
 <h4>3.5.6 IIC Extending IO<a class="headerlink" href="#iic-extending-io" title="Link to this heading"></a></h4>
@@ -4414,9 +4422,11 @@
 <h4>3.5.9 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
 <p>The carrier board P16 is a TF Card interface, which can support system boot and flash.</p>
 <p><img alt="Image" src="_images/1731062834507_dd23abee_7936_424c_90a7_b36bfac18d48.png" /></p>
-<p><strong><font style="color:#FF0000;">Note:</font></strong></p>
-<p><strong>1. The power supply for the TF card must be controlled; refer to the carrier board circuit for implementation;</strong></p>
-<p><strong>2.</strong> <strong>Impedance requirements: Single-ended 50ohm.</strong></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The power supply for the TF card must be controlled; refer to the carrier board circuit for implementation;</strong></p></li>
+<li><p><strong>Impedance requirements: Single-ended 50ohm.</strong></p></li>
+</ul>
 </section>
 <section id="rtc-circuit">
 <h4>3.5.10 RTC Circuit<a class="headerlink" href="#rtc-circuit" title="Link to this heading"></a></h4>
@@ -4424,107 +4434,111 @@
 <p><img alt="Image" src="_images/1731062857914_1e1dda8e_fd36_41ca_95cc_93b9302f64fe.png" /></p>
 </section>
 <section id="ethernet-circuit">
-<h4>3.5.11  Ethernet Circuit<a class="headerlink" href="#ethernet-circuit" title="Link to this heading"></a></h4>
+<h4>3.5.11 Ethernet Circuit<a class="headerlink" href="#ethernet-circuit" title="Link to this heading"></a></h4>
 <p>The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led out via RJ45.</p>
 <p><img alt="Image" src="_images/1731114987157_e89f7fda_a019_4670_894b_0706a8d566a5.jpeg" /></p>
 <p><img alt="Image" src="_images/1731115108372_5195d027_264d_464f_a47b_a20f152dce97.jpeg" /></p>
-<p><strong><font style="color:#FF0000;">Note:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1.The following table shows the RK3588 RGMII/RMII interface design:</font></strong></p>
-<p><strong><font style="color:#FF0000;">Table 3.5.11.1 RK3588 RGMII/RMII Interface</font></strong></p>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>The following table shows the RK3588 RGMII/RMII interface design:</strong></p></li>
+</ul>
+<p><strong>Table 3.5.11.1 RK3588 RGMII/RMII Interface</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">Signal</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">IO Type</font></strong><br/><strong><font style="color:rgb(255, 0, 0);">（Chip-side）</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">RGMII Interface</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">Signal Description</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">RMII Interface</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">Signal Description</font></strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p><strong>Signal</strong></p></th>
+<th class="head text-center"><p><strong>IO Type</strong><br/><strong>（Chip-side）</strong></p></th>
+<th class="head text-center"><p><strong>RGMII Interface</strong></p></th>
+<th class="head text-center"><p><strong>Signal Description</strong></p></th>
+<th class="head text-center"><p><strong>RMII Interface</strong></p></th>
+<th class="head text-center"><p><strong>Signal Description</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_TXD[3:0]</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIxTXD[3:0]</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data sending</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMIIx_TXD[1:0]</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data sending</font></p></td>
+<tr class="row-even"><td class="text-center"><p>GMACx_TXD[3:0]</p></td>
+<td class="text-center"><p>Output</p></td>
+<td class="text-center"><p>RGMIIxTXD[3:0]</p></td>
+<td class="text-center"><p>Data sending</p></td>
+<td class="text-center"><p>RMIIx_TXD[1:0]</p></td>
+<td class="text-center"><p>Data sending</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_TXCLK</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_TXCLK</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Reference clock for data sending</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">–</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">–</font></p></td>
+<tr class="row-odd"><td class="text-center"><p>GMACx_TXCLK</p></td>
+<td class="text-center"><p>Output</p></td>
+<td class="text-center"><p>RGMIIx_TXCLK</p></td>
+<td class="text-center"><p>Reference clock for data sending</p></td>
+<td class="text-center"><p>–</p></td>
+<td class="text-center"><p>–</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_TXEN</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_TXEN</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data sending enable (rising edge) and data transmission error (falling edge)</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMIIx_TXEN</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data sending enable (</font></p></td>
+<tr class="row-even"><td class="text-center"><p>GMACx_TXEN</p></td>
+<td class="text-center"><p>Output</p></td>
+<td class="text-center"><p>RGMIIx_TXEN</p></td>
+<td class="text-center"><p>Data sending enable (rising edge) and data transmission error (falling edge)</p></td>
+<td class="text-center"><p>RMIIx_TXEN</p></td>
+<td class="text-center"><p>Data sending enable (</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_RXD[3:0]</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Input</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_RXD[3:0]</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data receiving</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMIIx_RXD[1:0]</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data receiving</font></p></td>
+<tr class="row-odd"><td class="text-center"><p>GMACx_RXD[3:0]</p></td>
+<td class="text-center"><p>Input</p></td>
+<td class="text-center"><p>RGMIIx_RXD[3:0]</p></td>
+<td class="text-center"><p>Data receiving</p></td>
+<td class="text-center"><p>RMIIx_RXD[1:0]</p></td>
+<td class="text-center"><p>Data receiving</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_RXCLK</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Input</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_RXCLK</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data receiving reference clock</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">–</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">–</font></p></td>
+<tr class="row-even"><td class="text-center"><p>GMACx_RXCLK</p></td>
+<td class="text-center"><p>Input</p></td>
+<td class="text-center"><p>RGMIIx_RXCLK</p></td>
+<td class="text-center"><p>Data receiving reference clock</p></td>
+<td class="text-center"><p>–</p></td>
+<td class="text-center"><p>–</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_RXDV</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Input</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_RXDV</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Effective data receiving (rising edge) and receiving error (falling edge)</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMIIx_RXDV_</font><br/><font style="color:rgb(255, 0, 0);">CRS</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Data receiving validity and carrier sense</font></p></td>
+<tr class="row-odd"><td class="text-center"><p>GMACx_RXDV</p></td>
+<td class="text-center"><p>Input</p></td>
+<td class="text-center"><p>RGMIIx_RXDV</p></td>
+<td class="text-center"><p>Effective data receiving (rising edge) and receiving error (falling edge)</p></td>
+<td class="text-center"><p>RMIIx_RXDV_<br/>CRS</p></td>
+<td class="text-center"><p>Data receiving validity and carrier sense</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_MCLKINOUT</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Input/Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_MCLKIN_</font><br/><font style="color:rgb(255, 0, 0);">125M</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">PHY sends 125MHz to MAC, optional</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMII_MCLKIN_50M or RMII_MCLKOUT_50M</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMII data sending and data receiving reference clock</font></p></td>
+<tr class="row-even"><td class="text-center"><p>GMACx_MCLKINOUT</p></td>
+<td class="text-center"><p>Input/Output</p></td>
+<td class="text-center"><p>RGMIIx_MCLKIN_<br/>125M</p></td>
+<td class="text-center"><p>PHY sends 125MHz to MAC, optional</p></td>
+<td class="text-center"><p>RMII_MCLKIN_50M or RMII_MCLKOUT_50M</p></td>
+<td class="text-center"><p>RMII data sending and data receiving reference clock</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">ETHx_REFCLKO_</font><br/><font style="color:rgb(255, 0, 0);">25M</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">ETHx_REFCLKO_</font><br/><font style="color:rgb(255, 0, 0);">25M</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RK3588 provides 25MHz clock to replace PHY crystal</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">ETHx_REFCLKO_</font><br/><font style="color:rgb(255, 0, 0);">25M</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RK3588 provides 25MHz clock to replace PHY crystal</font></p></td>
+<tr class="row-odd"><td class="text-center"><p>ETHx_REFCLKO_<br/>25M</p></td>
+<td class="text-center"><p>Output</p></td>
+<td class="text-center"><p>ETHx_REFCLKO_<br/>25M</p></td>
+<td class="text-center"><p>RK3588 provides 25MHz clock to replace PHY crystal</p></td>
+<td class="text-center"><p>ETHx_REFCLKO_<br/>25M</p></td>
+<td class="text-center"><p>RK3588 provides 25MHz clock to replace PHY crystal</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_MDC</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_MDC</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Manage the data clock</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMIIx_MDC</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Manage the data clock</font></p></td>
+<tr class="row-even"><td class="text-center"><p>GMACx_MDC</p></td>
+<td class="text-center"><p>Output</p></td>
+<td class="text-center"><p>RGMIIx_MDC</p></td>
+<td class="text-center"><p>Manage the data clock</p></td>
+<td class="text-center"><p>RMIIx_MDC</p></td>
+<td class="text-center"><p>Manage the data clock</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(255, 0, 0);">GMACx_MDIO</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Input/Output</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RGMIIx_MDIO</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Manage data output/input</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">RMIIx_MDIO</font></p></td>
-<td class="text-center"><p><font style="color:rgb(255, 0, 0);">Manage data output/input</font></p></td>
+<tr class="row-odd"><td class="text-center"><p>GMACx_MDIO</p></td>
+<td class="text-center"><p>Input/Output</p></td>
+<td class="text-center"><p>RGMIIx_MDIO</p></td>
+<td class="text-center"><p>Manage data output/input</p></td>
+<td class="text-center"><p>RMIIx_MDIO</p></td>
+<td class="text-center"><p>Manage data output/input</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">2. In RGMII mode, the TX/RX clock paths inside the RK3588 chip are integrated with a delay line, which supports adjustment. The default configuration in the reference diagram is as follows: The timing between TXCLK and data is controlled by the MAC, and the timing between RXCLK and data is controlled by the PHY. (For example, when using RTL8211F/FI, a 2ns delay for RXCLK is enabled by default. Please pay attention to other PHY configurations;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. The GMAC0 interface level only supports 1.8V. The GMAC1 interface level is 3.3V by default (if it must be changed to 1.8V, please contact Forlinx). It should be noted whether the power - supply voltage of the RGMII signal power domain of the PHY chip matches the level of the GMACx interface;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. The Reset signal of the Ethernet PHY needs to be controlled by GPIO. The level of the GPIO must match the PHY IO level. A 100nF capacitor must be added close to the PHY pins to enhance the anti - static ability. Note: The reset pin of RTL8211F/FI only supports a 3.3V level;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. For TXD0 - TXD3, TXCLK, and TXEN, a 0ohm series resistor should be reserved at the FET3588 end to improve the signal quality conditionally according to the actual situation;</font></strong></p>
-<p><strong><font style="color:#FF0000;">6. For RXD0 - RXD3, RXCLK, and RXDV, a 22ohm series resistor should be connected at the PHY end to improve the signal quality；</font></strong></p>
-<p><strong><font style="color:#FF0000;">7. When the PHY uses an external crystal, the crystal capacitor should be selected according to the load capacitance value of the actually used crystal, and the frequency deviation should be controlled within ±20ppm；</font></strong></p>
-<p><strong><font style="color:#FF0000;">8.</font></strong> <strong><font style="color:#FF0000;">The external resistor connected to the RBIAS pin of RTL8211F/FI is 2.49K ohms with an accuracy of 1%. Do not modify it casually;</font></strong></p>
-<p><strong><font style="color:#FF0000;">9.</font></strong> <strong><font style="color:#FF0000;">An external pull - up resistor must be added to MDIO, with a recommended value of 1.5 - 1.8K ohm. The pull - up power supply must be consistent with the IO power supply;</font></strong></p>
-<p><strong><font style="color:#FF0000;">10.The PCB layout needs to ensure the integrity of the RGMII signal reference plane and the integrity of the power supply reference plane around the PHY chip;</font></strong></p>
-<p><strong><font style="color:#FF0000;">11.Equal - length requirement: The receiving and sending signals of RGMII can be grouped for equal - length processing, and the equal - length requirement is ≤12.5mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">12. Impedance requirement: 50 ohm for single - ended signals.</font></strong></p>
+<ul class="simple">
+<li><p><strong>In RGMII mode, the TX/RX clock paths inside the RK3588 chip are integrated with a delay line, which supports adjustment. The default configuration in the reference diagram is as follows: The timing between TXCLK and data is controlled by the MAC, and the timing between RXCLK and data is controlled by the PHY. (For example, when using RTL8211F/FI, a 2ns delay for RXCLK is enabled by default. Please pay attention to other PHY configurations;</strong></p></li>
+<li><p><strong>The GMAC0 interface level only supports 1.8V. The GMAC1 interface level is 3.3V by default (if it must be changed to 1.8V, please contact Forlinx). It should be noted whether the power - supply voltage of the RGMII signal power domain of the PHY chip matches the level of the GMACx interface;</strong></p></li>
+<li><p><strong>The Reset signal of the Ethernet PHY needs to be controlled by GPIO. The level of the GPIO must match the PHY IO level. A 100nF capacitor must be added close to the PHY pins to enhance the anti - static ability. The reset pin of RTL8211F/FI only supports a 3.3V level;</strong></p></li>
+<li><p><strong>For TXD0 - TXD3, TXCLK, and TXEN, a 0ohm series resistor should be reserved at the FET3588 end to improve the signal quality conditionally according to the actual situation;</strong></p></li>
+<li><p><strong>For RXD0 - RXD3, RXCLK, and RXDV, a 22ohm series resistor should be connected at the PHY end to improve the signal quality;</strong></p></li>
+<li><p><strong>When the PHY uses an external crystal, the crystal capacitor should be selected according to the load capacitance value of the actually used crystal, and the frequency deviation should be controlled within ±20ppm;</strong></p></li>
+<li><p><strong>The external resistor connected to the RBIAS pin of RTL8211F/FI is 2.49K ohms with an accuracy of 1%. Do not modify it casually;</strong></p></li>
+<li><p><strong>An external pull - up resistor must be added to MDIO, with a recommended value of 1.5 - 1.8K ohm. The pull - up power supply must be consistent with the IO power supply;</strong></p></li>
+<li><p><strong>The PCB layout needs to ensure the integrity of the RGMII signal reference plane and the integrity of the power supply reference plane around the PHY chip;</strong></p></li>
+<li><p><strong>Equal - length requirement: The receiving and sending signals of RGMII can be grouped for equal - length processing, and the equal - length requirement is ≤12.5mil;</strong></p></li>
+<li><p><strong>Impedance requirement: 50 ohm for single - ended signals.</strong></p></li>
+</ul>
 </section>
 <section id="rs485-interface">
 <h4>3.5.12 RS485 Interface<a class="headerlink" href="#rs485-interface" title="Link to this heading"></a></h4>
@@ -4551,7 +4565,8 @@
 <p>The SS signal (5Gbps) of USB3.0 is multiplexed with DP1.4, using the Combo PHY of USB/DP; the signal is in the red box as follows.</p>
 <p><img alt="Image" src="_images/1720683840734_4c5ea3e8_928f_418a_b61f_72aeecf2ec93.png" /></p>
 <p>The multiplexing relationship of the USB and DP is as follows:Table</p>
-<p>3.5.15.1 USB 3.0 and DP Multiplexing Relationship</p>
+<section id="usb-3-0-and-dp-multiplexing-relationship">
+<h5>3.5.15.1 USB 3.0 and DP Multiplexing Relationship<a class="headerlink" href="#usb-3-0-and-dp-multiplexing-relationship" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>USB3.0</p></th>
@@ -4613,23 +4628,26 @@
 <p><img alt="Image" src="_images/1731064128581_156ab63e_f610_40ae_8093_070abccd7569.png" /></p>
 <p>USB2.0 HOST controller, using USB2.0 HOST0PHY, the signals in the box below make up the USB2.0 HOST interface:</p>
 <p><img alt="Image" src="_images/1720683842636_c3a95766_7842_475a_ae42_8922b4b151c8.png" /></p>
-<p><strong><font style="color:#FF0000;">Note:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1.</font></strong> <strong><font style="color:#FF0000;">TYPEC0_OTG_DM/TYPEC0_OTG_DP is the system firmware programming port. If this interface is not used in the product, it must be reserved during the debugging and production processes. Otherwise, debugging and firmware programming during production will not be possible;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2.</font></strong> <strong><font style="color:#FF0000;">There is approximately a 200K ohm pull - up resistor to 1.8V inside the TYPEC0_USB20_OTG_ID;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. TYPEC_USB20_VBUSDET is the detection pin for OTG and Device modes. It is active high, with a voltage range of 2.7 - 3.3V (Typical: 3.0V). It is recommended to place a 100nF capacitor at the pin;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. The OTG mode can be set to the following three modes:</font></strong>
-<strong><font style="color:#FF0000;">·OTG mode: Automatically switch between the device mode and the HOST mode according to the state of the ID pin. When the ID is high, it is in the device mode; when the ID is pulled low, it is in the HOST mode. In the device mode, it will also check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process；</font></strong>
-<strong><font style="color:#FF0000;">Device mode: When set to this mode, there is no need to use the ID pin. It only needs to check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process;</font></strong>
-<strong><font style="color:#FF0000;">·HOST mode: When set to this mode, there is no need to care about the states of the ID and VBUSDET pins. ( In the case that the product only needs HOST mode, the system firmware burning port is only TYPEC0_OTG_DM/TYPEC0_OTG_DP, which is also used in the production and debugging, so when burning and abd debugging, we need to set it to device mode and connect TYPEC0_USB20_VBUSDET signal.</font></strong>
-<strong><font style="color:#FF0000;">If a TYPE - C interface is used, the TYPEC0_USB20_VBUSDE signals can be pulled high through a 4.7K resistor;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. To enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signals. The parasitic capacitance of the ESD for USB 2.0 signals shall not exceed 3pF. Additionally, a 2.2 - ohm resistor should be connected in series with the DP/DM of the USB 2.0 signals to enhance the anti - static and anti - surge capabilities;</font></strong></p>
-<p><strong><font style="color:#FF0000;">6. To suppress electromagnetic radiation, a common - mode choke can be reserved on the signal lines. During the debugging process, a resistor or a common - mode choke can be selected according to the actual situation；</font></strong></p>
-<p><strong><font style="color:#FF0000;">7.</font></strong> <strong><font style="color:#FF0000;">If the TYPECx_USB20_OTG_ID signal is used, to enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signal, and a 100ohm resistor should be connected in series and shall not be removed；</font></strong></p>
-<p><strong><font style="color:#FF0000;">8.</font></strong> <strong><font style="color:#FF0000;">When using the HOST function, it is recommended to add a current - limiting switch to the 5V power supply. The current - limiting value can be adjusted according to the application requirements. The current - limiting switch is controlled by a 3.3V GPIO. It is recommended to add capacitors of 22μF and over 100nF for filtering to the 5V power supply. If the USB port may be connected to a mobile hard disk, it is recommended to increase the filtering capacitor to over 100μF；</font></strong></p>
-<p><strong><font style="color:#FF0000;">9.</font></strong> <strong><font style="color:#FF0000;">According to the TYPE - C protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line；</font></strong></p>
-<p><strong><font style="color:#FF0000;">10. ESD devices must be added to all signals of the TYPE - C socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; </font></strong></p>
-<p><strong><font style="color:#FF0000;">11.The differential impedance of USB 2.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be ＜10mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">12. The differential impedance of USB 3.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be＜3mil. </font></strong></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>TYPEC0_OTG_DM/TYPEC0_OTG_DP is the system firmware programming port. If this interface is not used in the product, it must be reserved during the debugging and production processes. Otherwise, debugging and firmware programming during production will not be possible;</strong></p></li>
+<li><p><strong>There is approximately a 200K ohm pull - up resistor to 1.8V inside the TYPEC0_USB20_OTG_ID;</strong></p></li>
+<li><p><strong>TYPEC_USB20_VBUSDET is the detection pin for OTG and Device modes. It is active high, with a voltage range of 2.7 - 3.3V (Typical: 3.0V). It is recommended to place a 100nF capacitor at the pin</strong>;</p></li>
+<li><p><strong>The OTG mode can be set to the following three modes:</strong>
+<strong>·OTG mode: Automatically switch between the device mode and the HOST mode according to the state of the ID pin. When the ID is high, it is in the device mode; when the ID is pulled low, it is in the HOST mode. In the device mode, it will also check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process;</strong>
+<strong>·Device mode: When set to this mode, there is no need to use the ID pin. It only needs to check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process;</strong>
+<strong>·HOST mode: When set to this mode, there is no need to care about the states of the ID and VBUSDET pins. ( In the case that the product only needs HOST mode, the system firmware burning port is only TYPEC0_OTG_DM/TYPEC0_OTG_DP, which is also used in the production and debugging, so when burning and abd debugging, we need to set it to device mode and connect TYPEC0_USB20_VBUSDET signal.</strong>
+<strong>If a TYPE - C interface is used, the TYPEC0_USB20_VBUSDE signals can be pulled high through a 4.7K resistor;</strong></p></li>
+<li><p><strong>To enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signals. The parasitic capacitance of the ESD for USB 2.0 signals shall not exceed 3pF. Additionally, a 2.2 - ohm resistor should be connected in series with the DP/DM of the USB 2.0 signals to enhance the anti - static and anti - surge capabilities;</strong></p></li>
+<li><p><strong>To suppress electromagnetic radiation, a common - mode choke can be reserved on the signal lines. During the debugging process, a resistor or a common - mode choke can be selected according to the actual situation;</strong></p></li>
+<li><p><strong>If the TYPECx_USB20_OTG_ID signal is used, to enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signal, and a 100ohm resistor should be connected in series and shall not be removed;</strong></p></li>
+<li><p><strong>When using the HOST function, it is recommended to add a current - limiting switch to the 5V power supply. The current - limiting value can be adjusted according to the application requirements. The current - limiting switch is controlled by a 3.3V GPIO. It is recommended to add capacitors of 22μF and over 100nF for filtering to the 5V power supply. If the USB port may be connected to a mobile hard disk, it is recommended to increase the filtering capacitor to over 100μF;</strong></p></li>
+<li><p><strong>According to the TYPE - C protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line;</strong></p></li>
+<li><p>**ESD devices must be added to all signals of the TYPE - C socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; **</p></li>
+<li><p><strong>The differential impedance of USB 2.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be ＜10mil;</strong></p></li>
+<li><p>**The differential impedance of USB 3.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be＜3mil. **</p></li>
+</ul>
+</section>
 </section>
 <section id="sata3-0-circuit">
 <h4>3.5.16 SATA3.0 Circuit<a class="headerlink" href="#sata3-0-circuit" title="Link to this heading"></a></h4>
@@ -4659,10 +4677,12 @@
 <ul class="simple">
 <li><p>-SATA0_ACT_LED, SATA1_ACT_LED, SATA2_ACT_LED multiplexed pins are shown in the Pin Mux table.</p></li>
 </ul>
-<p><strong><font style="color:#FF0000;">Note:</font></strong></p>
-<p><strong><font style="color:#FF0000;">During slot design, the peripheral circuitry and power supply must meet the specifications (Spec) requirements;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2.</font></strong> <strong><font style="color:#FF0000;">For the differential signals TXP/N and RXP/N of the SATA interface, a 10nF AC - coupling capacitor is connected in series. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3.</font></strong> <strong><font style="color:#FF0000;">ESD devices must be added to all signals of the eSATA interface socket. They should be placed close to the socket during layout, and the parasitic capacitance of the ESD shall not exceed 0.4pF.</font></strong></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>During slot design, the peripheral circuitry and power supply must meet the specifications (Spec) requirements;</strong></p></li>
+<li><p><strong>For the differential signals TXP/N and RXP/N of the SATA interface, a 10nF AC - coupling capacitor is connected in series. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line;</strong></p></li>
+<li><p><strong>ESD devices must be added to all signals of the eSATA interface socket. They should be placed close to the socket during layout, and the parasitic capacitance of the ESD shall not exceed 0.4pF.</strong></p></li>
+</ul>
 </section>
 <section id="pcie2-0-and-pcie3-0-circuit">
 <h4>3.5.17 PCIe2.0 and PCIe3.0 Circuit<a class="headerlink" href="#pcie2-0-and-pcie3-0-circuit" title="Link to this heading"></a></h4>
@@ -4931,127 +4951,137 @@
 <p><img alt="Image" src="_images/1731064340309_8d738866_265d_4382_a05e_c787a38e0da8.png" /></p>
 <p>Controller 4(1L2)) + PCIe2.0/SATA3.0 Combo PHY0, to form the PCIe2.0 X1Lane RC mode for 1Lane; The principle of a WIFI module compatible with PCIe interface led out by M.2 Key E , the principle is as follows:</p>
 <p><img alt="Image" src="_images/1731064358550_f80d62ff_cf00_4c1f_a5d1_8bf9936f24ff.png" /></p>
-<p><strong><font style="color:#FF0000;">PCIe2.0 Design Notes:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. During slot design, the peripheral circuitry and power supply must meet the specifications (Spec) requirements;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2.</font></strong> <strong><font style="color:#FF0000;">For the TXP/N differential signals of the PCIe 2.0 interface, a 100 nF AC coupling capacitor is connected in series. It is recommended to use a 0201 package for the AC coupling capacitor due to its lower Equivalent Series Resistance (ESR) and Equivalent Series Inductance (ESL), which can also reduce impedance variations along the circuit;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3.</font></strong> <strong><font style="color:#FF0000;">The PCIE2.0_CLKREQn and PCIE20_WAKEn signals must utilize the designated functional pins and cannot be substituted with GPIO pins. Special note: When selecting these pins, both must be chosen from the same group, i.e., either _M0, _M1, or _M2, and they cannot be mixed (e.g., one _M0 and one _M1);</font></strong></p>
-<p><strong><font style="color:#FF0000;">4.</font></strong> <strong><font style="color:#FF0000;">PCIE20_PERSTn can either utilize its designated functional pin or be substituted with a GPIO pin. However, when choosing the functional pin, it must be from the same _Mx group as PCIE20_CLKREQn and PCIE20_WAKEn;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5.</font></strong> <strong><font style="color:#FF0000;">Voltage Levels: PCIE20_CLKREQn, PCIE20_WAKEn, and PCIE20_PERSTn signals operate at a 3.3V level;</font></strong></p>
-<p><strong><font style="color:#FF0000;">6.</font></strong> <strong><font style="color:#FF0000;">PCIE20_PRSNT: This is the Add In Card insertion detection pin and can be implemented using a GPIO；</font></strong></p>
-<p><strong><font style="color:#FF0000;">7.</font></strong> <strong><font style="color:#FF0000;">Multiplexing Consideration: When utilizing PCIE20 functionality, the multiplexed SATA/USB30 functions cannot be used simultaneously. Refer to the corresponding functional module descriptions for SATA/USB30；</font></strong></p>
-<p><strong><font style="color:#FF0000;">8.</font></strong> <strong><font style="color:#FF0000;">If the PCIe 2.0 functional module is not in use, you can simply leave the data lines PCIE20_TXP/TXN, PCIE20_RXP/RXN and the reference clock lines PCIE20_REFCLKP/REFCLKN floating;</font></strong></p>
-<p><strong><font style="color:#FF0000;">9.</font></strong> <strong><font style="color:#FF0000;">Recommended Matching Design for PCIe2.0 Interface:</font></strong></p>
+<p><strong>PCIe2.0 Design Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>During slot design, the peripheral circuitry and power supply must meet the specifications (Spec) requirements;</strong></p></li>
+<li><p><strong>For the TXP/N differential signals of the PCIe 2.0 interface, a 100 nF AC coupling capacitor is connected in series. It is recommended to use a 0201 package for the AC coupling capacitor due to its lower Equivalent Series Resistance (ESR) and Equivalent Series Inductance (ESL), which can also reduce impedance variations along the circuit;</strong></p></li>
+<li><p><strong>The PCIE2.0_CLKREQn and PCIE20_WAKEn signals must utilize the designated functional pins and cannot be substituted with GPIO pins. Special note: When selecting these pins, both must be chosen from the same group, i.e., either _M0, _M1, or _M2, and they cannot be mixed (e.g., one _M0 and one _M1);</strong></p></li>
+<li><p><strong>PCIE20_PERSTn can either utilize its designated functional pin or be substituted with a GPIO pin. However, when choosing the functional pin, it must be from the same _Mx group as PCIE20_CLKREQn and PCIE20_WAKEn;</strong></p></li>
+<li><p><strong>Voltage Levels: PCIE20_CLKREQn, PCIE20_WAKEn, and PCIE20_PERSTn signals operate at a 3.3V level;</strong></p></li>
+<li><p><strong>PCIE20_PRSNT: This is the Add In Card insertion detection pin and can be implemented using a GPIO;</strong></p></li>
+<li><p><strong>Multiplexing Consideration: When utilizing PCIE20 functionality, the multiplexed SATA/USB30 functions cannot be used simultaneously. Refer to the corresponding functional module descriptions for SATA/USB30;</strong></p></li>
+<li><p><strong>If the PCIe 2.0 functional module is not in use, you can simply leave the data lines PCIE20_TXP/TXN, PCIE20_RXP/RXN and the reference clock lines PCIE20_REFCLKP/REFCLKN floating;</strong></p></li>
+<li><p><strong>Recommended Matching Design for PCIe2.0 Interface:</strong></p></li>
+</ul>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Signal</font></strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Connection</font></strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Description</font></strong></p></th>
+<tr class="row-odd"><th class="head"><p><strong>Signal</strong></p></th>
+<th class="head"><p><strong>Connection</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_0/1/2_TXP/TXN</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 100nF Capacitor (0201 Package Recommended):</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Data Output:</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE20_0/1/2_TXP/TXN</strong></p></td>
+<td><p><strong>Series Connection with 100nF Capacitor (0201 Package Recommended):</strong></p></td>
+<td><p><strong>PCIe Data Output:</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_0/1/2_RXP/RXN</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Direct Connection:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Data Input</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE20_0/1/2_RXP/RXN</strong></p></td>
+<td><p><strong>Direct Connection:</strong></p></td>
+<td><p><strong>PCIe Data Input</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_0/1/2_REFCLKP/CLKN</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Direct Connection:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Reference Clock:</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE20_0/1/2_REFCLKP/CLKN</strong></p></td>
+<td><p><strong>Direct Connection:</strong></p></td>
+<td><p><strong>PCIe Reference Clock:</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_CLKREQn</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Reference Clock Request Input (RC Mode):</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE20_CLKREQn</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe Reference Clock Request Input (RC Mode):</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_WAKEn</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Wake Input (RC Mode):</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE20_WAKEn</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe Wake Input (RC Mode):</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_PERSTn</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Global Reset Output (RC Mode):</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE20_PERSTn</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe Global Reset Output (RC Mode):</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE20_PRSNT</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Add-In Card Insertion Detection Input (RC Mode):</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE20_PRSNT</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>Add-In Card Insertion Detection Input (RC Mode):</strong></p></td>
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">10. The impedance of the data traces should be controlled at a differential 85 ohms ±10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">11. The impedance of the clock traces should be controlled at a differential 100 ohms ±10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">12. The maximum time - delay difference within differential pair should be &lt; 3mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">13.The spacing between differential pairs should be ≥ 4 times the PCI-E trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">PCIe3.0 Design Notes:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. During slot design, the peripheral circuitry and power supply must meet the specifications (Spec) requirements;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2.</font></strong> <strong><font style="color:#FF0000;">For PCIe3.0 interface differential signals TX0P/N, TX1P/N, a 220nF AC coupling capacitor should be connected in series. It is recommended to use a 0201 package for lower ESR and ESL, reducing impedance variations on the line;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3.</font></strong> <strong><font style="color:#FF0000;">The correspondence between PCIE30_CLKREQn, PCIE30_WAKEn, PCIE30_PERSTn, PCIE30X4_BUTTON_RSTN control signals and the controller should be as per the provided diagram:</font></strong></p>
+<ul class="simple">
+<li><p><strong>The impedance of the data traces should be controlled at a differential 85 ohms ±10%;</strong></p></li>
+<li><p><strong>The impedance of the clock traces should be controlled at a differential 100 ohms ±10%;</strong></p></li>
+<li><p><strong>The maximum time - delay difference within differential pair should be &lt; 3mil;</strong></p></li>
+<li><p><strong>The spacing between differential pairs should be ≥ 4 times the PCI-E trace width.</strong></p></li>
+</ul>
+<p><strong>PCIe3.0 Design Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>During slot design, the peripheral circuitry and power supply must meet the specifications (Spec) requirements;</strong></p></li>
+<li><p><strong>For PCIe3.0 interface differential signals TX0P/N, TX1P/N, a 220nF AC coupling capacitor should be connected in series. It is recommended to use a 0201 package for lower ESR and ESL, reducing impedance variations on the line;</strong></p></li>
+<li><p><strong>The correspondence between PCIE30_CLKREQn, PCIE30_WAKEn, PCIE30_PERSTn, PCIE30X4_BUTTON_RSTN control signals and the controller should be as per the provided diagram:</strong></p></li>
+</ul>
 <p><img alt="Image" src="_images/1731064429551_f2748b36_ccdf_4825_b6fc_f94976a492b7.png" /></p>
-<p><strong><font style="color:#FF0000;">4.</font></strong> <strong><font style="color:#FF0000;">The PCIE30_CLKREQn and PCIE30_WAKEn must use the functional pins and cannot be replaced by GPIOs. Specifically, when making a selection, you must choose either all _M0, all _M1, or all _M2. You cannot choose one _M0 and one _M1;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5.</font></strong> <strong><font style="color:#FF0000;">PCIE30_PERSTn can either use its designated functional pin or be replaced with a GPIO pin. However, when choosing the functional pin, it must be from the same _Mx group as PCIE30_CLKREQn and PCIE30_WAKEn;</font></strong></p>
-<p><strong><font style="color:#FF0000;">6.</font></strong> <strong><font style="color:#FF0000;">Standard PCIe: PCIE30X2_CLKREQn, PCIE30X1_WAKEn, and PCIE30_PERSTn signals operate at a 3.3V level;</font></strong></p>
-<p><strong><font style="color:#FF0000;">7.</font></strong> <strong><font style="color:#FF0000;">The PCIE30_PRSNT is the Add In Card insertion detection pin and can be implemented using a GPIO;</font></strong></p>
-<p><strong><font style="color:#FF0000;">8.</font></strong> <strong><font style="color:#FF0000;">The PCIE30_BUTTON_RSTN is for the external hardware reset and is reserved for future use and not to be used for now;</font></strong></p>
-<p><strong><font style="color:#FF0000;">9.</font></strong> <strong><font style="color:#FF0000;">When two RK3588 PCIe are cascaded, the data lines should be cross - connected, that is, TX→RX and RX→TX. Control signals PCIE30_CLKREQn and PCIE30_PERSTn are connected one-to- one (e.g. Num1 and Num1 represent two RK3588 respectively.</font></strong></p>
-<p><strong><font style="color:#FF0000;">Num1_PCIE30_CLKREQn connects to Num2_PCIE30_CLKREQn, Num1_PCIE30_PERSTn connects to Num2_PCIE30_PERSTn). three signals, PCIE30_WAKEn, PCIE30_PRSNT and PCIE30_BUTTON_RSTN may keep floating;</font></strong></p>
-<p><strong><font style="color:#FF0000;">10.</font></strong> <strong><font style="color:#FF0000;">The PCIe30 functional module is not used. The data cables PCIE30_TXP/TXN and PCIE30_RXP/RXN are left floating. The reference clock lines PCIE30_REFCLKP/REFCLKN are either grounded or left floating;</font></strong></p>
-<p><strong><font style="color:#FF0000;">11.</font></strong> **<font style="color:#FF0000;"><strong>The REFCLKP/N of the PCIe30 PHY and Slot/peripherals need to meet the requirement of the same - source clock. For example, in the design shown in the reference diagram, the three - way REFCLKP/N of PHY0/PHY1 and Slot are output from the same clock generator; </font></strong></p>
-<p><strong><font style="color:#FF0000;">12.</font></strong> <strong><font style="color:#FF0000;">Recommended Matching Design for PCIe3.0 Interface:</font></strong></p>
+<ul class="simple">
+<li><p><strong>The PCIE30_CLKREQn and PCIE30_WAKEn must use the functional pins and cannot be replaced by GPIOs. Specifically, when making a selection, you must choose either all _M0, all _M1, or all _M2. You cannot choose one _M0 and one _M1;</strong></p></li>
+<li><p><strong>PCIE30_PERSTn can either use its designated functional pin or be replaced with a GPIO pin. However, when choosing the functional pin, it must be from the same _Mx group as PCIE30_CLKREQn and PCIE30_WAKEn;</strong></p></li>
+<li><p><strong>Standard PCIe: PCIE30X2_CLKREQn, PCIE30X1_WAKEn, and PCIE30_PERSTn signals operate at a 3.3V level;</strong></p></li>
+<li><p><strong>The PCIE30_PRSNT is the Add In Card insertion detection pin and can be implemented using a GPIO;</strong></p></li>
+<li><p><strong>The PCIE30_BUTTON_RSTN is for the external hardware reset and is reserved for future use and not to be used for now;</strong></p></li>
+<li><p><strong>When two RK3588 PCIe are cascaded, the data lines should be cross - connected, that is, TX→RX and RX→TX. Control signals PCIE30_CLKREQn and PCIE30_PERSTn are connected one-to- one (e.g. Num1 and Num1 represent two RK3588 respectively;</strong></p></li>
+<li><p><strong>Num1_PCIE30_CLKREQn connects to Num2_PCIE30_CLKREQn, Num1_PCIE30_PERSTn connects to Num2_PCIE30_PERSTn) three signals, PCIE30_WAKEn, PCIE30_PRSNT and PCIE30_BUTTON_RSTN may keep floating;</strong></p></li>
+<li><p><strong>The PCIe30 functional module is not used. The data cables PCIE30_TXP/TXN and PCIE30_RXP/RXN are left floating. The reference clock lines PCIE30_REFCLKP/REFCLKN are either grounded or left floating;</strong></p></li>
+<li><p>**The REFCLKP/N of the PCIe30 PHY and Slot/peripherals need to meet the requirement of the same - source clock. For example, in the design shown in the reference diagram, the three - way REFCLKP/N of PHY0/PHY1 and Slot are output from the same clock generator; **</p></li>
+<li><p><strong>Recommended Matching Design for PCIe3.0 Interface:</strong></p></li>
+</ul>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Signal</font></strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Connection</font></strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Description</font></strong></p></th>
+<tr class="row-odd"><th class="head"><p>Signal</p></th>
+<th class="head"><p>Connection</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_TX0P/TX0N</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 220nF Capacitor (0201 Package Recommended):</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Data Output:</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE30_TX0P/TX0N</strong></p></td>
+<td><p><strong>Series Connection with 220nF Capacitor (0201 Package Recommended):</strong></p></td>
+<td><p><strong>PCIe Data Output:</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_RX0P/RX0N</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Direct Connection:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Data Input</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE30_RX0P/RX0N</strong></p></td>
+<td><p><strong>Direct Connection:</strong></p></td>
+<td><p><strong>PCIe Data Input</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_TX1P/TX1N</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 220nF Capacitor (0201 Package Recommended):</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Data Output:</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE30_TX1P/TX1N</strong></p></td>
+<td><p><strong>Series Connection with 220nF Capacitor (0201 Package Recommended):</strong></p></td>
+<td><p><strong>PCIe Data Output:</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_RX1P/RX1N</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Direct Connection:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Data Input</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE30_RX1P/RX1N</strong></p></td>
+<td><p><strong>Direct Connection:</strong></p></td>
+<td><p><strong>PCIe Data Input</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_REFCLKP/N_IN</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Direct Connection:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Reference Clock Input</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE30_REFCLKP/N_IN</strong></p></td>
+<td><p><strong>Direct Connection:</strong></p></td>
+<td><p><strong>PCIe Reference Clock Input</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_CLKREQn</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Reference Clock Request Input (RC Mode)</font></strong><br/><strong><font style="color:rgb(255, 0, 0);">PCIe Reference Clock Request Output (EP Mode)</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE30_CLKREQn</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe Reference Clock Request Input (RC Mode)</strong><br/><strong>PCIe Reference Clock Request Output (EP Mode)</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_WAKEn</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Wake Input (RC Mode)</font></strong><br/><strong><font style="color:rgb(255, 0, 0);">PCIe Wake Output (EP Mode)</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE30_WAKEn</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe Wake Input (RC Mode)</strong><br/><strong>PCIe Wake Output (EP Mode)</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_PERSTn</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe Global Reset Output (RC Mode)</font></strong><br/><strong><font style="color:rgb(255, 0, 0);">PCIe Global Reset Input (EP Mode)</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE30_PERSTn</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe Global Reset Output (RC Mode)</strong><br/><strong>PCIe Global Reset Input (EP Mode)</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_PRSNT</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Add-In Card Insertion Detection Input (RC Mode):</font></strong></p></td>
+<tr class="row-even"><td><p><strong>PCIE30_PRSNT</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>Add-In Card Insertion Detection Input (RC Mode):</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong><font style="color:rgb(255, 0, 0);">PCIE30_BUTTON_RSTN</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series Connection with 0ohm Resistor:</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">PCIe External Hardware Reset Output (RC Mode)</font></strong><br/><strong><font style="color:rgb(255, 0, 0);">PCIe External Hardware Reset Input (EP Mode)</font></strong></p></td>
+<tr class="row-odd"><td><p><strong>PCIE30_BUTTON_RSTN</strong></p></td>
+<td><p><strong>Series Connection with 0ohm Resistor:</strong></p></td>
+<td><p><strong>PCIe External Hardware Reset Output (RC Mode)</strong><br/><strong>PCIe External Hardware Reset Input (EP Mode)</strong></p></td>
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">13. Data Trace Impedance: Differential 85ohm±10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">14. Clock Trace Impedance: Differential 100ohm±10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">15. Maximum Skew Within Differential Pair: &lt; 3mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">16. Recommended Spacing Between Differential Pairs: ≥ 5 times the PCI-E trace width.</font></strong></p>
+<ul class="simple">
+<li><p><strong>Data Trace Impedance: Differential 85ohm±10%;</strong></p></li>
+<li><p><strong>Clock Trace Impedance: Differential 100ohm±10%;</strong></p></li>
+<li><p><strong>Maximum Skew Within Differential Pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Recommended Spacing Between Differential Pairs: ≥ 5 times the PCI-E trace width.</strong></p></li>
+</ul>
 </section>
 <section id="video-input-interface">
 <h4>3.5.18 Video Input Interface<a class="headerlink" href="#video-input-interface" title="Link to this heading"></a></h4>
@@ -5065,7 +5095,7 @@
 <p>Support x2Lane+x2Lane mode:</p>
 <p>♦ MIPI0_CSI_D[1:0] data reference MIPI_CSI0_CLK0;</p>
 <p>♦ MIPI0_CSI_D[3:2] data refer to MIPI_CSI0_CLK1.</p>
-<p>Two modes options：</p>
+<p>Two modes options:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Option1</p></th>
@@ -5086,7 +5116,7 @@
 </table>
 <p>MIPI DPHY CSI1 RX interface mode:</p>
 <ul class="simple">
-<li><p>Support x4Lane mode, MIPI_CSI1_D[3：0] data reference MIPI_CSI0_CLK0</p></li>
+<li><p>Support x4Lane mode, MIPI_CSI1_D[3:0] data reference MIPI_CSI0_CLK0</p></li>
 <li><p>Support x2Lane+x2Lane mode:</p></li>
 </ul>
 <p>♦ MIPI1_CSI_D[1:0] data reference MIPI_CSI1_CLK0;</p>
@@ -5126,7 +5156,7 @@
 </ul>
 <p>MIPI D/C-PHY0 support (In D-PHY time mode):</p>
 <ul class="simple">
-<li><p>Support x4Lane mode, MIPI_DPHY0_RX_D[3:0] data reference MIPI_DPHY0_RX_CLK；</p></li>
+<li><p>Support x4Lane mode, MIPI_DPHY0_RX_D[3:0] data reference MIPI_DPHY0_RX_CLK;</p></li>
 <li><p>Not support splitting into x2Lane+x2Lane mode;</p></li>
 </ul>
 <p>MIPI D/C-PHY0 support (In C-PHY time mode):</p>
@@ -5135,7 +5165,7 @@
 </ul>
 <p>MIPI D/C-PHY1 support (In D-PHY time mode):</p>
 <ul class="simple">
-<li><p>Support x4Lane mode, MIPI_DPHY1_RX_D[3:0] data reference MIPI_DPHY1_RX_CLK；</p></li>
+<li><p>Support x4Lane mode, MIPI_DPHY1_RX_D[3:0] data reference MIPI_DPHY1_RX_CLK;</p></li>
 <li><p>Not support splitting into x2Lane+x2Lane mode;</p></li>
 </ul>
 <p>MIPI D/C-PHY1 support (In C-PHY time mode):</p>
@@ -5144,26 +5174,28 @@
 </ul>
 <p>The OK3588 is configured with 5 Camera interfaces by default: MIPI_DPHY0_RX 4Lane, MIPI_DPHY1_RX 4Lane, MIPI CSI0 4Lane, MIPI CSI1 2Lane + MIPI CSI1 2Lane. The principle is as follows:</p>
 <p><img alt="Image" src="_images/1731064470870_eb65694d_02e2_422d_907f_1cc69e28b906.png" /></p>
-<p><strong><font style="color:#FF0000;">MIPI RX Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. Differential trace impedance requirement: 100 Ω ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. Single-ended trace impedance requirement: 50 Ω ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. Maximum time - delay difference within differential pair: &lt; 3mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. Equal length between clock and data:＜6mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. Spacing between differential pairs should be &gt; 4 x MIPI trace, and at a minimum, it should be 3 times the MIPI trace;</font></strong></p>
-<p><strong><font style="color:#FF0000;">6. Spacing between MIPI and other signals should be＞4 x MIPI trace, and at a minimum, it should be 3 times the MIPI trace;</font></strong></p>
-<p><strong><font style="color:#FF0000;">7. For CPHY configuration, maximum delay difference within the group (TRIO _ A \ TRIO _ B \ TRIO _ C):＜3mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">8. Length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be ＜50mil.</font></strong></p>
+<p><strong>MIPI RX Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>Differential trace impedance requirement: 100 Ω ± 10%;</strong></p></li>
+<li><p><strong>Single-ended trace impedance requirement: 50 Ω ± 10%;</strong></p></li>
+<li><p><strong>Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Equal length between clock and data:＜6mil;</strong></p></li>
+<li><p><strong>Spacing between differential pairs should be &gt; 4 x MIPI trace, and at a minimum, it should be 3 times the MIPI trace;</strong></p></li>
+<li><p><strong>Spacing between MIPI and other signals should be＞4 x MIPI trace, and at a minimum, it should be 3 times the MIPI trace;</strong></p></li>
+<li><p><strong>For CPHY configuration, maximum delay difference within the group (TRIO _ A \ TRIO _ B \ TRIO _ C):＜3mil;</strong></p></li>
+<li><p><strong>Length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be ＜50mil.</strong></p></li>
+</ul>
 </section>
 <section id="cif">
 <h5><strong>3.5.18.3 CIF</strong><a class="headerlink" href="#cif" title="Link to this heading"></a></h5>
 <p>Pin Multiplexing: Refer to the Pin Mux table for CIF interface reuse configurations. Voltage Level: The CIF interface operates at 3.3V; level shifting must be implemented to match the Camera module’s actual IO power supply requirements.</p>
 <p>CIF support format:</p>
 <ul class="simple">
-<li><p>Support BT601 YCbCr 422 8bit input；</p></li>
-<li><p>Support BT656 YCbCr 422 8bit input；</p></li>
-<li><p>Support RAW 8/10/12bit input；</p></li>
-<li><p>Support BT1120 YCbCr 422 8/16bit input， single/dual-edge sampling；</p></li>
-<li><p>Support 2/4 mixed BT656/BT1120 YCbCr 422 8/16bit input；</p></li>
+<li><p>Support BT601 YCbCr 422 8bit input;</p></li>
+<li><p>Support BT656 YCbCr 422 8bit input;</p></li>
+<li><p>Support RAW 8/10/12bit input;</p></li>
+<li><p>Support BT1120 YCbCr 422 8/16bit input， single/dual-edge sampling;</p></li>
+<li><p>Support 2/4 mixed BT656/BT1120 YCbCr 422 8/16bit input;</p></li>
 <li><p>Support YUYV sequential configuration;</p></li>
 </ul>
 <p>The 8/10/12/16bit data correspondence of CIF[15:0] is shown in the table below, using high bit alignment.</p>
@@ -5409,24 +5441,28 @@
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">Camera Design Considerations：</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. The Camera’s DVDD power supply may vary (e.g., 1.2V/1.5V/1.8V). Provide the correct voltage as specified in the Camera datasheet (default reference: 1.2V)；</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. For Cameras with high DVDD current (&gt;100mA), it’s recommended to use DCDC for power supply;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. Follow the Camera’s specified power-up sequence (default reference sequence: 1.8V → 1.2V → 2.8V). Adjust as per the datasheet；</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. The CIF interface defaults to 3.3 V, and level matching needs to be considered;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. If the Camera includes an autofocus (AF) function, provide a separate VCC2V8_AF supply or share it with AVCC2V8_DVP using a ferrite bead for isolation；</font></strong></p>
-<p><strong><font style="color:#FF0000;">6. All decoupling capacitors for the power supplies of the Camera must be retained and placed close to the connector (or socket) ;</font></strong></p>
-<p><strong><font style="color:#FF0000;">7. The Camera’s PWDN (power-down) signal must be controlled via a GPIO. Ensure the GPIO voltage level matches the Camera’s IO level;</font></strong></p>
-<p><strong><font style="color:#FF0000;">8. It is recommended to use GPIO to control the Reset signal of the Camera. The GPIO level must match the Camera IO level. The 100nF capacitor of the Reset signal should not be removed. Place it close to the connector to enhance the anti - static ability;</font></strong></p>
-<p><strong><font style="color:#FF0000;">9.  MCLK Clock Source Options:</font></strong></p>
-<p><strong><font style="color:#FF0000;">（1）CIF_CLKOUT</font></strong></p>
-<p><strong><font style="color:#FF0000;">（2）MIPI_CAMERA0_CLK</font></strong></p>
-<p><strong><font style="color:#FF0000;">（3）MIPI_CAMERA1_CLK</font></strong></p>
-<p><strong><font style="color:#FF0000;">（4）MIPI_CAMERA2_CLK</font></strong></p>
-<p><strong><font style="color:#FF0000;">（5）MIPI_CAMERA3_CLK</font></strong></p>
-<p><strong><font style="color:#FF0000;">（6）MIPI_CAMERA4_CLK</font></strong></p>
-<p><strong><font style="color:#FF0000;">The clock level must match the Camera IO level. If not, the level must be matched by level conversion or resistance voltage division;</font></strong></p>
-<p><strong><font style="color:#FF0000;">10. If two Cameras are of the same model, pay attention to whether the I2C address is the same. If the address is the same, two I2C buses are needed.</font></strong></p>
+<p><strong>Camera Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>The Camera’s DVDD power supply may vary (e.g., 1.2V/1.5V/1.8V). Provide the correct voltage as specified in the Camera datasheet (default reference: 1.2V);</strong></p></li>
+<li><p><strong>For Cameras with high DVDD current (&gt;100mA), it’s recommended to use DCDC for power supply;</strong></p></li>
+<li><p><strong>Follow the Camera’s specified power-up sequence (default reference sequence: 1.8V → 1.2V → 2.8V). Adjust as per the datasheet;</strong></p></li>
+<li><p><strong>The CIF interface defaults to 3.3 V, and level matching needs to be considered;</strong></p></li>
+<li><p><strong>If the Camera includes an autofocus (AF) function, provide a separate VCC2V8_AF supply or share it with AVCC2V8_DVP using a ferrite bead for isolation;</strong></p></li>
+<li><p><strong>All decoupling capacitors for the power supplies of the Camera must be retained and placed close to the connector (or socket) ;</strong></p></li>
+<li><p><strong>The Camera’s PWDN (power-down) signal must be controlled via a GPIO. Ensure the GPIO voltage level matches the Camera’s IO level;</strong></p></li>
+<li><p><strong>It is recommended to use GPIO to control the Reset signal of the Camera. The GPIO level must match the Camera IO level. The 100nF capacitor of the Reset signal should not be removed. Place it close to the connector to enhance the anti - static ability;</strong></p></li>
+</ul>
+<p><strong>MCLK Clock Source Options:</strong></p>
+<p><strong>（1）CIF_CLKOUT</strong></p>
+<p><strong>（2）MIPI_CAMERA0_CLK</strong></p>
+<p><strong>（3）MIPI_CAMERA1_CLK</strong></p>
+<p><strong>（4）MIPI_CAMERA2_CLK</strong></p>
+<p><strong>（5）MIPI_CAMERA3_CLK</strong></p>
+<p><strong>（6）MIPI_CAMERA4_CLK</strong></p>
+<ul class="simple">
+<li><p><strong>The clock level must match the Camera IO level. If not, the level must be matched by level conversion or resistance voltage division;</strong></p></li>
+<li><p><strong>If two Cameras are of the same model, pay attention to whether the I2C address is the same. If the address is the same, two I2C buses are needed.</strong></p></li>
+</ul>
 </section>
 <section id="hdmi2-0-rx">
 <h5><strong>3.5.18.4 HDMI2.0 RX</strong><a class="headerlink" href="#hdmi2-0-rx" title="Link to this heading"></a></h5>
@@ -5445,13 +5481,15 @@
 <p>Although the DDC_SCL/DDC_SDA protocol specifies a 5V level, the RK3588 IO does not support a 5V level, so the level conversion circuit need to be added and can not be deleted. The default is to use MOS tube level conversion, and the MOS type is 2SK3018; If the model needs to be changed, the junction capacitance must be equivalent, because the junction capacitance is too large, not only affecting the work and also affect the certification leading to failing certification.</p>
 <p>It is recommended to refer to the default value for the pull-up resistance and can not be modified arbitrarily.</p>
 <p><img alt="Image" src="_images/1731064595250_463d0225_d23a_431f_9ce8_63d4496e5391.png" /></p>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. It is recommended to place a 0.1 uF decoupling capacitor on the Pin18 pin of the HDMI socket, and place it close to the HDMI socket pin when routing out. To strengthen the anti-static capability, ESD devices must be reserved on the signal. ESD parasitic capacitance of HDMI 2.0 signal should not exceed 0.4pF. It is recommended to use no more than 1pF for other signals of ESD parasitic capacitance.</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. The differential impedance of the traces should be controlled within 100 ohms ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. The maximum time - delay difference within differential pair should be &lt; 3mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. The clock and data equal length should be &lt; 200 mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. The spacing between differential pairs should be at least 5 times the HDMI trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. The spacing between HDMI signals and other signals should be at least 4 times the HDMI trace width.</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>It is recommended to place a 0.1 uF decoupling capacitor on the Pin18 pin of the HDMI socket, and place it close to the HDMI socket pin when routing out. To strengthen the anti-static capability, ESD devices must be reserved on the signal. ESD parasitic capacitance of HDMI 2.0 signal should not exceed 0.4pF. It is recommended to use no more than 1pF for other signals of ESD parasitic capacitance;</strong></p></li>
+<li><p><strong>The differential impedance of the traces should be controlled within 100 ohms ± 10%;</strong></p></li>
+<li><p><strong>The maximum time - delay difference within differential pair should be &lt; 3mil;</strong></p></li>
+<li><p><strong>The clock and data equal length should be &lt; 200 mil;</strong></p></li>
+<li><p><strong>The spacing between differential pairs should be at least 5 times the HDMI trace width;</strong></p></li>
+<li><p><strong>The spacing between HDMI signals and other signals should be at least 4 times the HDMI trace width.</strong></p></li>
+</ul>
 </section>
 </section>
 <section id="video-output-interface">
@@ -5473,8 +5511,8 @@
 <p>Taking HDMI TX0 as an example, HDMI TX1 and HDMI TX0 are consistent.</p>
 <p>Operating in HDMI 2.1 mode, HDMI0_TX_ON_H is configured low, Q15, Q16, Q17, Q18 are not on.</p>
 <p>When operating in HDMI 2.0 and below mode, HDMI0_TX_ON_H is configured high, Q15, Q16, Q17, and Q18 are on, and a DC bias of approximately 3V is formed by a 499ohm resistor to ground and a 50ohm pull-up resistor on the Sink side.</p>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">When only HDMI 2.0 and lower modes need to be supported, components Q15, Q16, Q17, and Q18 must not be omitted. It is essential to ensure that the transistors remain non-conductive when the device is powered off, as the HDMI CTS Test ID 7-3 TMDS Voff test requires that the Voff voltage stays within ±10mV of AVcc when the Device Under Test (DUT) is unpowered; otherwise, this test item will fail.</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<p><strong>When only HDMI 2.0 and lower modes need to be supported, components Q15, Q16, Q17, and Q18 must not be omitted. It is essential to ensure that the transistors remain non-conductive when the device is powered off, as the HDMI CTS Test ID 7-3 TMDS Voff test requires that the Voff voltage stays within ±10mV of AVcc when the Device Under Test (DUT) is unpowered; otherwise, this test item will fail.</strong></p>
 <p><img alt="Image" src="_images/1731064683921_c13df62e_0c35_4501_9247_8fc719d8e8c7.png" /></p>
 <p>FRL mode: In the traditional TMDS architecture, a separate channel is used to transmit the Clock. But in the FRL architecture, the Clock is embedded in the Data channel, and the Clock is resolved at the Sink side through the Clock Recovery.</p>
 <p>FRL rate vs. channel relationship:</p>
@@ -5522,15 +5560,17 @@
 <p>HDMI holder Pin18 voltage needs to be kept between 4.8-5.3V, 1uF decoupling capacitor needs to be placed on the pin, which must not be deleted, and the layout is placed close to the HDMI holder pin.</p>
 <p>To strengthen the anti-static capability, ESD devices must be reserved on the signal. ESD parasitic capacitance of HDMI2.1 signal must not exceed 0.2pF.</p>
 <p>ESD parasitic capacitance for other signals is recommended to use no more than 1pF.</p>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. The Coss of the controlling MOSFET should not be excessively high, as it may degrade signal quality. It is recommended to select a MOSFET model as per the reference design or with a corresponding Coss value;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2.  Wire impedance control differential 100ohm ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. Maximum Skew Within Differential Pair: &lt; 3mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. Equal Length Requirement Between Differential Pairs＜200mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. Spacing Between Differential Pairs：no less than 7 times the width of the HDMI trace；</font></strong></p>
-<p><strong><font style="color:#FF0000;">6. Spacing Between HDMI and other signals: ≥7 times the HDMI trace;</font></strong></p>
-<p><strong><font style="color:#FF0000;">7.  It is recommended to avoid vias;</font></strong></p>
-<p><strong><font style="color:#FF0000;">8.  I/O-to-ground capacitance： ≤0.2 pF.</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>The Coss of the controlling MOSFET should not be excessively high, as it may degrade signal quality. It is recommended to select a MOSFET model as per the reference design or with a corresponding Coss value;</strong></p></li>
+<li><p><strong>Wire impedance control differential 100ohm ± 10%;</strong></p></li>
+<li><p><strong>Maximum Skew Within Differential Pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Equal Length Requirement Between Differential Pairs＜200mil;</strong></p></li>
+<li><p><strong>Spacing Between Differential Pairs: no less than 7 times the width of the HDMI trace;</strong></p></li>
+<li><p><strong>Spacing Between HDMI and other signals: ≥7 times the HDMI trace;</strong></p></li>
+<li><p><strong>It is recommended to avoid vias;</strong></p></li>
+<li><p><strong>I/O-to-ground capacitance: ≤0.2 pF.</strong></p></li>
+</ul>
 <p><strong>-eDP TX Mode</strong></p>
 <p>Support eDP V1.3 version, total 4Lane, eDP TX maximum output resolution up to 4K&#64;60Hz</p>
 <ul class="simple">
@@ -5541,12 +5581,14 @@
 <p>Take eDP TX0 as an example, eDP TX1 is the same as eDP TX0.</p>
 <p>eDP_TX0_D0P/D0N, eDP_TX0_D1P/D1N, eDP_TX0_D2P/D2N, eDP_TX0_D3P/D3N need 100nF AC coupling capacitor in series; because the lower ESR and ESL can also reduce the impedance change on the line, it is recommended to use the 0201 packaging for the AC coupling capacitor, and the layout is placed close to the FET3588-C pin.</p>
 <p><img alt="Image" src="_images/1731064767274_3c827f8a_6e07_4346_b566_5adb3cdd4e6c.png" /></p>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. The differential impedance of the traces should be controlled within 85 ohms ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. The maximum delay difference within each differential pair should be ＜3mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. The spacing between differential pairs should be at least 4 times the EDP trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. The spacing between EDP signals and other signals should be at least 4 times the EDP trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5.  It is recommended that the number of vias allowed for each signal does not exceed 2.</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>The differential impedance of the traces should be controlled within 85 ohms ± 10%;</strong></p></li>
+<li><p><strong>The maximum delay difference within each differential pair should be ＜3mil;</strong></p></li>
+<li><p><strong>The spacing between differential pairs should be at least 4 times the EDP trace width;</strong></p></li>
+<li><p><strong>The spacing between EDP signals and other signals should be at least 4 times the EDP trace width;</strong></p></li>
+<li><p><strong>It is recommended that the number of vias allowed for each signal does not exceed 2.</strong></p></li>
+</ul>
 </section>
 <section id="mipi-d-cphy-tx">
 <h5><strong>3.5.19.2 MIPI_D/CPHY_TX</strong><a class="headerlink" href="#mipi-d-cphy-tx" title="Link to this heading"></a></h5>
@@ -5563,7 +5605,7 @@
 </ul>
 <p>MIPI D/C-PHY0 support (In D-PHY time mode):</p>
 <ul class="simple">
-<li><p>Support x4Lane mode, MIPI_DPHY0_TX_D[3：0] data reference MIPI_DPHY0_TX_CLK;</p></li>
+<li><p>Support x4Lane mode, MIPI_DPHY0_TX_D[3:0] data reference MIPI_DPHY0_TX_CLK;</p></li>
 </ul>
 <p>MIPI D/C-PHY0 support (In C-PHY time mode):</p>
 <ul class="simple">
@@ -5571,24 +5613,26 @@
 </ul>
 <p>MIPI D/C-PHY1 support (In D-PHY time mode):</p>
 <ul class="simple">
-<li><p>Support x4Lane mode, MIPI_DPHY1_TX_D[3：0] data reference MIPI_DPHY1_TX_CLK;</p></li>
+<li><p>Support x4Lane mode, MIPI_DPHY1_TX_D[3:0] data reference MIPI_DPHY1_TX_CLK;</p></li>
 </ul>
 <p>MIPI D/C-PHY1 support (In C-PHY time mode):</p>
 <ul class="simple">
 <li><p>Support 0/1/2 Trio, 3 wires per Trio A/B/C, MIPI_CPHY1_TX_TRIO[2:0]_A, MIPI_CPHY1_TX_TRIO[2:0]_B, MIPI_CPHY1_TX_TRIO[2:0]_C.</p></li>
 </ul>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1.  Wire impedance control differential 100ohm ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. Maximum Skew Within Differential Pair: &lt; 3mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. Equal length between clock and data＜6mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. Recommended equal length between differential pairs: ≥ 4 times the MIPI trace width, and ≥ 3 times the MIPI trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">5.  Spacing between MIPI signals and other signals: Spacing ≥ 4 times MIPI trace width and ≥ 3 × MIPI trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">6.  For CPHY, the single-ended trace impedance should be controlled at 50 Ω ± 10%;</font></strong></p>
-<p><strong><font style="color:#FF0000;">7. The maximum time delay difference within a group (TRIO_A\TRIO_B\TRIO_C) should be &lt; 3 mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">8. The length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be &lt; 50 mil;</font></strong></p>
-<p><strong><font style="color:#FF0000;">9. It is recommended that the number of vias allowed for each signal should ≤ 2;</font></strong></p>
-<p><strong><font style="color:#FF0000;">10. It is recommended that the spacing between differential pairs should ≥ 4 × MIPI trace width;</font></strong></p>
-<p><strong><font style="color:#FF0000;">11. It is recommended that the spacing between MIPI and other signals should ≥ 4 × MIPI trace width.</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>Wire impedance control differential 100ohm ± 10%;</strong></p></li>
+<li><p><strong>Maximum Skew Within Differential Pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Equal length between clock and data＜6mil;</strong></p></li>
+<li><p><strong>Recommended equal length between differential pairs: ≥ 4 times the MIPI trace width, and ≥ 3 times the MIPI trace width;</strong></p></li>
+<li><p><strong>Spacing between MIPI signals and other signals: Spacing ≥ 4 times MIPI trace width and ≥ 3 × MIPI trace width;</strong></p></li>
+<li><p><strong>For CPHY, the single-ended trace impedance should be controlled at 50 Ω ± 10%;</strong></p></li>
+<li><p><strong>The maximum time delay difference within a group (TRIO_A\TRIO_B\TRIO_C) should be &lt; 3 mil;</strong></p></li>
+<li><p><strong>The length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be &lt; 50 mil;</strong></p></li>
+<li><p><strong>It is recommended that the number of vias allowed for each signal should ≤ 2;</strong></p></li>
+<li><p><strong>It is recommended that the spacing between differential pairs should ≥ 4 × MIPI trace width;</strong></p></li>
+<li><p><strong>It is recommended that the spacing between MIPI and other signals should ≥ 4 × MIPI trace width.</strong></p></li>
+</ul>
 </section>
 <section id="dp-tx">
 <h5><strong>3.5.19.3 DP TX</strong><a class="headerlink" href="#dp-tx" title="Link to this heading"></a></h5>
@@ -5600,16 +5644,18 @@
 <li><p>Supports Single Stream Transport (SST).</p></li>
 </ul>
 <p>Please refer to section 3.5.15 for the USB pin multiplexing.</p>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. The 100nF AC coupling capacitors need to be connected in series with DP0_TX_D0P/D0N, DP0_TX_D1P/D1N, DP0_TX_D2P/D2N, DP0_TX_D3P/D3N, DP1_TX_D0P/D0N, DP1_TX_D1P/D1N, DP1_TX_D2P/D2N, and DP1_TX_D3P/D3N. It is recommended to use the 0201 package for the AC coupling capacitors, as they have lower ESR and ESL and can also reduce the impedance variation on the line. During layout, place them close to the FET3588 - C pins;</font></strong></p>
-<p><strong><font style="color:#FF0000;">DP1_TX_D0P/DON、DP1_TX_D1P/D1N、DP1_TX_D2P/D2N、DP1_TX_D3P/D3N需要串接的100nF交流耦合电容，交流耦合电容建议使用0201封装，更低的ESR和ESL，也可减少线路上的阻抗变化，布局时，靠近FET3588–C管脚放置；</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. The trace impedance should be controlled at a differential 100 ohm ± 10% (when used only as a DP interface without multiplexing), and a differential 95 ohm ± 10% (when USB3.0/DP1.4 is multiplexed);</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. The delay difference within the differential pair should be ＜3mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">4. Equal Length Requirement Between Differential Pairs＜500mil；</font></strong></p>
-<p><strong><font style="color:#FF0000;">5. Spacing Between Differential Pairs：no less than 6 times the width of the DP trace；</font></strong></p>
-<p><strong><font style="color:#FF0000;">6. It is recommended that the spacing between DP and other signals should ≥ 6 × DP trace width.</font></strong></p>
-<p><strong><font style="color:#FF0000;">7. It is recommended that the number of vias allowed for each signal should ≤ 2;</font></strong></p>
-<p><strong><font style="color:#FF0000;">8.  I/O-to-ground capacitance： ≤0.2 pF.</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>The 100nF AC coupling capacitors need to be connected in series with DP0_TX_D0P/D0N, DP0_TX_D1P/D1N, DP0_TX_D2P/D2N, DP0_TX_D3P/D3N, DP1_TX_D0P/D0N, DP1_TX_D1P/D1N, DP1_TX_D2P/D2N, and DP1_TX_D3P/D3N. It is recommended to use the 0201 package for the AC coupling capacitors, as they have lower ESR and ESL and can also reduce the impedance variation on the line. During layout, place them close to the FET3588 - C pins;</strong></p></li>
+<li><p><strong>DP1\ _ TX\ _ D0P/DON, DP1\ _ TX\ _ D1P/D1N, DP1\ _ TX\ _ D2P/D2N, DP1\ _ TX\ _ D3P/D3N require 100nF AC coupling capacitors connected in series. The AC coupling capacitors are recommended to use 0201 packaging, lower ESR and ESL can also reduce resistance changes on the line. When laying out, place it close to the FET3588–C pin;</strong></p></li>
+<li><p><strong>The trace impedance should be controlled at a differential 100 ohm ± 10% (when used only as a DP interface without multiplexing), and a differential 95 ohm ± 10% (when USB3.0/DP1.4 is multiplexed);</strong></p></li>
+<li><p><strong>The delay difference within the differential pair should be ＜3mil;</strong></p></li>
+<li><p><strong>Equal Length Requirement Between Differential Pairs＜500mil;</strong></p></li>
+<li><p><strong>Spacing Between Differential Pairs:no less than 6 times the width of the DP trace;</strong></p></li>
+<li><p><strong>It is recommended that the spacing between DP and other signals should ≥ 6 × DP trace width;</strong></p></li>
+<li><p><strong>It is recommended that the number of vias allowed for each signal should ≤ 2;</strong></p></li>
+<li><p><strong>I/O-to-ground capacitance: ≤0.2 pF.</strong></p></li>
+</ul>
 </section>
 <section id="bt1120-tx">
 <h5><strong>3.5.19.4 BT1120 TX</strong><a class="headerlink" href="#bt1120-tx" title="Link to this heading"></a></h5>
@@ -5624,75 +5670,71 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>:—:</p></td>
-<td class="text-center"><p>:—:</p></td>
-<td class="text-center"><p>:—:</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_CLKOUT</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_CLKOUT</p></td>
 <td class="text-center"><p>CLKOUT</p></td>
 <td class="text-center"><p>CLKOUT</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D15</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D15</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D15</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D14</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D14</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D14</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D13</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D13</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D13</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D12</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D12</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D12</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D11</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D11</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D11</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D10</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D10</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D10</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D9</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D9</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D9</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D8</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D8</p></td>
 <td class="text-center"><p>–</p></td>
 <td class="text-center"><p>D8</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D7</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D7</p></td>
 <td class="text-center"><p>D7</p></td>
 <td class="text-center"><p>D7</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D6</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D6</p></td>
 <td class="text-center"><p>D6</p></td>
 <td class="text-center"><p>D6</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D5</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D5</p></td>
 <td class="text-center"><p>D5</p></td>
 <td class="text-center"><p>D5</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D4</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D4</p></td>
 <td class="text-center"><p>D4</p></td>
 <td class="text-center"><p>D4</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D3</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D3</p></td>
 <td class="text-center"><p>D3</p></td>
 <td class="text-center"><p>D3</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D2</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D2</p></td>
 <td class="text-center"><p>D2</p></td>
 <td class="text-center"><p>D2</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>BT1120_D1</p></td>
+<tr class="row-odd"><td class="text-center"><p>BT1120_D1</p></td>
 <td class="text-center"><p>D1</p></td>
 <td class="text-center"><p>D1</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>BT1120_D0</p></td>
+<tr class="row-even"><td class="text-center"><p>BT1120_D0</p></td>
 <td class="text-center"><p>D0</p></td>
 <td class="text-center"><p>D0</p></td>
 </tr>
@@ -5795,31 +5837,33 @@
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. The default pin level of BT1120 output interface is 3.3V, which needs to be matched according to the actual IO power supply requirements of the peripheral device. If you need to change it to 1.8V, please contact Forlinx;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2.  The following table is the recommended table for pull-up and pull-down and matching design of BT1120 output interface:</font></strong></p>
+<p><strong>Design Considerations:</strong></p>
+<ul class="simple">
+<li><p><strong>The default pin level of BT1120 output interface is 3.3V, which needs to be matched according to the actual IO power supply requirements of the peripheral device. If you need to change it to 1.8V, please contact Forlinx;</strong></p></li>
+<li><p><strong>The following table is the recommended table for pull-up and pull-down and matching design of BT1120 output interface:</strong></p></li>
+</ul>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">Signal</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:rgb(255, 0, 0);">Internal Pull-up&amp;down</font></strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Connection</font></strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(255, 0, 0);">Description (Chip side)</font></strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>Signal</p></th>
+<th class="head text-center"><p>Internal Pull-up&amp;down</p></th>
+<th class="head"><p>Connection</p></th>
+<th class="head"><p><strong>Description (Chip side)</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p><strong><font style="color:rgb(255, 0, 0);">BT1120_D[15:0]</font></strong></p></td>
-<td class="text-center"><p><strong><font style="color:rgb(255, 0, 0);">Pull-down</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Direct connection is allowed. If feasible, reserve series resistors near the FET3588-C terminal.</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">BT1120 Data Output</font></strong></p></td>
+<tr class="row-even"><td class="text-center"><p><strong>BT1120_D[15:0]</strong></p></td>
+<td class="text-center"><p><strong>Pull-down</strong></p></td>
+<td><p><strong>Direct connection is allowed. If feasible, reserve series resistors near the FET3588-C terminal.</strong></p></td>
+<td><p><strong>BT1120 Data Output</strong></p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><strong><font style="color:rgb(255, 0, 0);">BT1120_CLK</font></strong></p></td>
-<td class="text-center"><p><strong><font style="color:rgb(255, 0, 0);">Pull-down</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">Series resistor: 22ohm, placed close to the device end.</font></strong></p></td>
-<td><p><strong><font style="color:rgb(255, 0, 0);">BT1120 Clock Output</font></strong></p></td>
+<tr class="row-odd"><td class="text-center"><p><strong>BT1120_CLK</strong></p></td>
+<td class="text-center"><p><strong>Pull-down</strong></p></td>
+<td><p><strong>Series resistor: 22ohm, placed close to the device end.</strong></p></td>
+<td><p><strong>BT1120 Clock Output</strong></p></td>
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">3.  When implementing board-to-board connection, it is recommended to connect a 22 - 100 ohm resistor in series (the resistance value should meet SI test requirements), and reserve space for TVS devices.</font></strong></p>
+<p><strong>3.  When implementing board-to-board connection, it is recommended to connect a 22 - 100 ohm resistor in series (the resistance value should meet SI test requirements), and reserve space for TVS devices.</strong></p>
 </section>
 </section>
 </section>
@@ -5902,9 +5946,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong><font style="color:#FF0000;">Note：</font></strong></p>
-<p><strong><font style="color:#FF0000;">1. Peak Current: Maximum current value during booting;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. Stable Value: Current value stays on the boot screen after booting.</font></strong></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Peak Current: Maximum current value during booting;</strong></p></li>
+<li><p><strong>Stable Value: Current value stays on the boot screen after booting.</strong></p></li>
+</ul>
 </section>
 <hr class="docutils" />
 <section id="minimum-system-schematic">
@@ -5912,10 +5958,12 @@
 <p><img alt="Image" src="_images/1721609426616_4790d3d7_876e_4f8e_8467_db7b4d54c14b.png" /></p>
 <p><img alt="Image" src="_images/1721609548442_50922fdd_267f_4088_946d_ce5e92d6fc8e.png" /><img alt="Image" src="_images/1721609552427_91b3f9b0_a747_49e9_9881_4b44cff9fb06.png" /></p>
 <p><img alt="Image" src="_images/1721609574321_e24d5b40_2960_4883_b7e1_25f64fe23fb1.png" /><img alt="Image" src="_images/1721609591009_4a4881f9_3a16_4bec_93fe_f6a287ae7237.png" /><img alt="Image" src="_images/1721609575250_3c121a2a_920d_454f_ac19_3568ff1bb567.png" /><img alt="Image" src="_images/1721609575180_6c688743_9882_4a91_a6c2_8379a790fb5b.png" /><img alt="Image" src="_images/1721609575863_3e99ed8a_720b_4446_afc4_14498c83813f.png" /><img alt="Image" src="_images/1721609577925_f53c20a0_53a9_4969_b0d9_65611609538e.png" /></p>
-<p><strong><font style="color:#FF0000;">Note: </font></strong></p>
-<p><strong><font style="color:#FF0000;">1. The minimum system includes SoM power supply, system flash circuit, and debugging serial port circuit;</font></strong></p>
-<p><strong><font style="color:#FF0000;">2. The factory image of OK3588 - C will load the PCIE3.0 driver during startup. At this time, it will detect the two external clock input signals PCIE30_PORT0\1_REFCLK_IN_P\N;</font></strong></p>
-<p><strong><font style="color:#FF0000;">3. If these two clock inputs are not available, the system will be stuck in the process and fail to start. When the PCIE3.0 clock circuit is not designed, you can simply disable the corresponding function in the device tree.</font></strong></p>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>The minimum system includes SoM power supply, system flash circuit, and debugging serial port circuit;</strong></p></li>
+<li><p><strong>The factory image of OK3588 - C will load the PCIE3.0 driver during startup. At this time, it will detect the two external clock input signals PCIE30_PORT0\1_REFCLK_IN_P\N;</strong></p></li>
+<li><p><strong>If these two clock inputs are not available, the system will be stuck in the process and fail to start. When the PCIE3.0 clock circuit is not designed, you can simply disable the corresponding function in the device tree.</strong></p></li>
+</ul>
 </section>
 </section>
 
