@@ -25,7 +25,16 @@
     <loc>https://docs.forlinx.net/nxp/ok1046a-c2/sitemap.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://docs.forlinx.net/nxp/okmx6ul-c/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://docs.forlinx.net/nxp/okmx6ull-c/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://docs.forlinx.net/nxp/okmx6ull-s/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://docs.forlinx.net/nxp/okmx8mm-c/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.forlinx.net/nxp/okmx8mpq-c/sitemap.xml</loc>
@@ -35,6 +44,9 @@
   </sitemap>
   <sitemap>
     <loc>https://docs.forlinx.net/rockchip/ok3506j-c/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://docs.forlinx.net/rockchip/ok3562j-c/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.forlinx.net/rockchip/ok3568-c/sitemap.xml</loc>
