@@ -1450,7 +1450,7 @@ Similarly, the OK3588-C can send files to a cell phone, test is as follows:
 
 6\. OK3588-C development board to send files to the cell phone, the test method is as follows:
 
-Note: This operation requires command input in the terminal application Xterm in the development board.
+**Note: This operation requires command input in the terminal application Xterm in the development board.**
 
 ```plain
 root@ok3588:~# obexctl		                              //OPen obexctl
