@@ -10,6 +10,16 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the Android14.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+
+## Revision History
+
+|  **Date**  | **Manual Version** | **SoM Version** | **Carrier Board Version** | **Revision History**                               |
+| :--------: | :----------------: | :-------------: | ------------------------- | -------------------------------------------------- |
+| 01/09/2025 |        V1.0        |      V1.1       | V1.1 and Above            | OK3588-C_Android14.0_User's Manual Initial Version |
+
 ## Overview
 
 This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the user's understanding, mainly for practical use. Please refer to “OK3588--C\_Android14.0_User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods, development environment construction, etc. 
@@ -49,19 +59,6 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 + <font style="color:blue;">Ls: </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;
 + **OK3588-android-source**: The bottom black font is the output information after the input command, and the bold font is the key information. Here is the packed file system.
 
----
-
-
-## Application Scope
-
-This manual is mainly applicable to the Android14.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
-
-## Revision History
-
-| **Date**| **Manual Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|:----------:|----------|----------|
-| 01/09/2025 | V1.0| V1.1| V1.1 and Above| OK3588-C_Android14.0_User's Manual Initial Version |
-
 ## 1\. OK3588 Development Board Description
 
 RK3588 is a low-power, high-performance processor based on ARM64 architecture, which includes 4-core Cortex-A55 and 4-core Conrtex-A76 as well as independent NEON processor and neural network processor NPU, and it can be applied to computers, cell phones, personal mobile Internet, and digital multimedia devices.
@@ -88,19 +85,19 @@ Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency, normal mode ①| 1.6GHz
-|----------|----------
-| Maximum CPU A76 frequency, overclocking mode ②| 2.0GHz
-| Maximum CPU A55 frequency, normal mode ①| 1.3GHz
-| Maximum CPU A55 frequency, overclocking mode ②| 1.7GHz
-| Maximum GPU frequency, normal mode ①| 700MHz
-| Maximum GPU frequency, overclocking mode ②| 850MHz
-| Maximum NPU frequency, normal mode ①| 800MHz
-| Maximum NPU frequency, overclocking mode ②| 950MHz
+| Maximum CPU A76 frequency, normal mode ①           | 1.6GHz     |
+| -------------------------------------------------- | ---------- |
+| **Maximum CPU A76 frequency, overclocking mode ②** | **2.0GHz** |
+| **Maximum CPU A55 frequency, normal mode ①**       | **1.3GHz** |
+| **Maximum CPU A55 frequency, overclocking mode ②** | **1.7GHz** |
+| **Maximum GPU frequency, normal mode ①**           | **700MHz** |
+| **Maximum GPU frequency, overclocking mode ②**     | **850MHz** |
+| **Maximum NPU frequency, normal mode ①**           | **800MHz** |
+| **Maximum NPU frequency, overclocking mode ②**     | **950MHz** |
 
-① Normal mode indicates that the chip is operating at a safe voltage and frequency; For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity.
+Normal mode indicates that the chip is operating at a safe voltage and frequency; For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity.
 
-②Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
+Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
 
 To switch to "normal mode", you need to add # include "rk3588j.dtsi" to the reference in the kernel device tree. The path is:
 
@@ -114,60 +111,60 @@ Refer to “Rockchip RK3588 Datasheet V1.7-17/11/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency| 2.2-2.4 GHz
-|----------|----------
-| Maximum CPU A55 frequency| 1.8GHz
-| Maximum GPU frequency| 1GHz
-| Maximum NPU frequency| 1GHz
+| Maximum CPU A76 frequency     | 2.2-2.4 GHz |
+| ----------------------------- | ----------- |
+| **Maximum CPU A55 frequency** | **1.8GHz**  |
+| **Maximum GPU frequency**     | **1GHz**    |
+| **Maximum NPU frequency**     | **1GHz**    |
 
 ### **1.2 Android14.0 System Software Resources Features**
 
 | **Device**| **Location of driver source code in the kernel**| **Device Name**|
 |----------|----------|----------|
-| **LCD Backlight Driver**| **drivers/video/backlight/pwm\_bl.c**| **/sys/class/backlight**|
-| **USB Port**| **drivers/usb/storage/**||
-| **USB Mouse**| **drivers/hid/usbhid/**| **/dev/input/mice**|
-| **Ethernet**| **drivers/net/ethernet/stmicro/stmmac**||
-| **SD/micro TF card driver**| **drivers/mmc/host/dw\_mmc-rockchip.c**| **/dev/block/mmcblk1pX**|
-| **EMMC Driver**| **drivers/mmc/host/dw\_mmc-rockchip.c**| **/dev/block/mmcblk2pX**|
-| **OV13850**| **drivers/media/i2c/ov13850.c**| **/dev/videoX**|
-| **LCD Controller**| **drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c**||
-| **MIPI CSI**| **drivers/media/platform/rockchip/cif/mipi-csi2.c**||
-| **MIPI DSI**| **drivers/gpu/drm/rockchip/dw-mipi-dsi2-rockchip.c**||
-| **LCD Touch Driver**| **drivers/input/touchscreen/edt-ft5x06.c**| **/dev/input/eventX**|
-| **RTC Real Time Clock Driver**| **drivers/rtc/rtc-rx8010.c**   **drivers/rtc/rtc-pcf8563.c**| **/dev/rtc0**|
-| **serial port**| **drivers/tty/serial/8250/8250\_dw.c**| **/dev/ttySX**|
-| **Key Driver**| **drivers/input/keyboard/adc-keys.c**| **/dev/input/eventX**|
-| **LED**| **drivers/leds/leds-gpio.c**||
-| **I2S**| **sound/soc/rockchip/rockchip\_i2s\_tdm.c**||
-| **Audio Driver**| **sound/soc/codecs/nau8822.c**| **/dev/snd/**|
-| **PMIC**| **ddrivers/mfd/rk806-core.c**||
-| **PCIE**| **drivers/pci/controller/dwc/pcie-dw-rockchip.c**||
-| **Watchdog**| **drivers/watchdog/dw\_wdt.c**||
-| **SPI**| **drivers/spi/spi-rockchip.c**||
-| **PWM**| **drivers/video/backlight/pwm\_bl.c**||
+| LCD Backlight Driver | drivers/video/backlight/pwm\_bl.c | /sys/class/backlight |
+| USB Port | drivers/usb/storage/ ||
+| USB Mouse | drivers/hid/usbhid/ | /dev/input/mice |
+| Ethernet | drivers/net/ethernet/stmicro/stmmac ||
+| SD/micro TF card driver | drivers/mmc/host/dw\_mmc-rockchip.c | /dev/block/mmcblk1pX |
+| EMMC Driver | drivers/mmc/host/dw\_mmc-rockchip.c | /dev/block/mmcblk2pX |
+| OV13850 | drivers/media/i2c/ov13850.c | /dev/videoX |
+| LCD Controller | drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c ||
+| MIPI CSI | drivers/media/platform/rockchip/cif/mipi-csi2.c ||
+| MIPI DSI | drivers/gpu/drm/rockchip/dw-mipi-dsi2-rockchip.c ||
+| LCD Touch Driver | drivers/input/touchscreen/edt-ft5x06.c | /dev/input/eventX |
+| RTC Real Time Clock Driver | drivers/rtc/rtc-rx8010.c   drivers/rtc/rtc-pcf8563.c | /dev/rtc0 |
+| serial port | drivers/tty/serial/8250/8250\_dw.c | /dev/ttySX |
+| Key Driver | drivers/input/keyboard/adc-keys.c | /dev/input/eventX |
+| LED | drivers/leds/leds-gpio.c ||
+| I2S | sound/soc/rockchip/rockchip\_i2s\_tdm.c ||
+| Audio Driver | sound/soc/codecs/nau8822.c | /dev/snd/ |
+| PMIC | ddrivers/mfd/rk806-core.c ||
+| PCIE | drivers/pci/controller/dwc/pcie-dw-rockchip.c ||
+| Watchdog | drivers/watchdog/dw\_wdt.c ||
+| SPI | drivers/spi/spi-rockchip.c ||
+| PWM | drivers/video/backlight/pwm\_bl.c ||
 
 ### **1.3 EMMC Memory Partition Table**
 
 The following table is the eMMC memory partition information of Android operating system (the size of a block is 512bit when calculating):
 
-| **Partition Index**| **Name**| **Offset / block**| **Size/block**
-|----------|----------|----------|----------
-| N/A| security| 0x00002000| 0x00002000
-| 1| uboot| 0x00004000| 0x00004000
-| 2| trust| 0x00006000| 0x00002000
-| 3| misc| 0x00008000| 0x00002000
-| 4| dtbo| 0x0000a000| 0x00002000
-| 5| vbmeta| 0x0000c000| 0x00000800
-| 6| boot| 0x0000c800| 0x00020000
-| 7| recovery| 0x0002c800| 0x00030000
-| 8| backup| 0x0005c800| 0x000c0000
-| 9| cache| 0x0011c800| 0x000c0000
-| 10| metadata| 0x001dc800| 0x00020000
-| 11| frp| 0x001fc800| 0x00000400
-| 12| baseparameter| 0x001fcc00| 0x00000800
-| 13| super| 0x001fd400| 0x00614000
-| 14| userdata| 0x00811400| 
+| Partition Index | Name          | Offset / Block | Size/Block |
+| --------------- | ------------- | -------------- | ---------- |
+| N/A             | security      | 0x00002000     | 0x00002000 |
+| 1               | uboot         | 0x00004000     | 0x00004000 |
+| 2               | trust         | 0x00006000     | 0x00002000 |
+| 3               | misc          | 0x00008000     | 0x00002000 |
+| 4               | dtbo          | 0x0000a000     | 0x00002000 |
+| 5               | vbmeta        | 0x0000c000     | 0x00000800 |
+| 6               | boot          | 0x0000c800     | 0x00020000 |
+| 7               | recovery      | 0x0002c800     | 0x00030000 |
+| 8               | backup        | 0x0005c800     | 0x000c0000 |
+| 9               | cache         | 0x0011c800     | 0x000c0000 |
+| 10              | metadata      | 0x001dc800     | 0x00020000 |
+| 11              | frp           | 0x001fc800     | 0x00000400 |
+| 12              | baseparameter | 0x001fcc00     | 0x00000800 |
+| 13              | super         | 0x001fd400     | 0x00614000 |
+| 14              | userdata      | 0x00811400     |            |
 
 ## 2\. Fast Startup
 
@@ -192,14 +189,14 @@ Run DriverInstall.exe directly after the unzipping is completed; in order to ens
 
 #### 2.3.1 Serial Port Connection Settings
 
- **Description:**
+ **Note:**
 
 + **Serial port terminal login user: serial port terminal automatically logs in root user without password;**
 + **Serial port settings: baud rate 115200, data bit 8, stop bit 1, no parity bit, no flow control;**
 + **Hardware Requirements: Type-C cable required to connect PC and development boards;**
 + **Software requirements: PC Windows system needs to install the super terminal software. Because the terminal software has many types, users can choose their familiar one.**
 
-In the following, we take the putty terminal software as an example to introduce the serial port login method:
+In the following, take the putty terminal software as an example to introduce the serial port login method:
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
@@ -329,19 +326,19 @@ The node has a default disabled state and needs to be changed to an okay enabled
 
 **Parameter Description:**
 
-| | **Meaning**
-|----------|----------
-| status| Describe the node state: disabled is for off, okay is for on
-| HDMI0| Specify the VP assigned to HDMI0
-| HDMI1| Specify the VP assigned to HDMI1
-| EDP0| Specify the VP assigned to EDP0
-| EDP1| Specify the VP assigned to EDP1
-| DP0| Specify the VP assigned to DP0
-| DP1| Specify the VP assigned to DP1
-| MIPI0| Specify the VP assigned to MIPI0
-| MIPI1| Specify the VP assigned to MIPI1
-| RGB| Specify the VP assigned to RGB
-| primary\_display| Specify the main screen display
+|                  | Meaning                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| status           | Describe the node state: disabled is for off, okay is for on |
+| HDMI0            | Specify the VP assigned to HDMI0                             |
+| HDMI1            | Specify the VP assigned to HDMI1                             |
+| EDP0             | Specify the VP assigned to EDP0                              |
+| EDP1             | Specify the VP assigned to EDP1                              |
+| DP0              | Specify the VP assigned to DP0                               |
+| DP1              | Specify the VP assigned to DP1                               |
+| MIPI0            | Specify the VP assigned to MIPI0                             |
+| MIPI1            | Specify the VP assigned to MIPI1                             |
+| RGB              | Specify the VP assigned to RGB                               |
+| primary\_display | Specify the main screen display                              |
 
 Users need to change the setting parameters as required. After saving, it is necessary to recompile and generate an image.
 
@@ -385,19 +382,19 @@ Note: For products designed based on the SoM, if there are scenarios where accid
 
 ## 3\. Android Function Use and Test
 
-### **3.1 Main Interface Display**
+### 3.1 Main Interface Display
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940851764_add4982c_67b8_43fa_b30f_26a38599a66c.png)
 
-### **3.2 Application**
+### 3.2 Application
 
 Swipe up on the main screen to bring up the following screen.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940852125_3ab8d177_fbc4_4891_bce5_c6ccc6f6fb9c.png)
 
-Note: After software version updates, there may be minor differences, which do not represent the actual images for each subsequent version update and are provided for reference only.
+**Note: After software version updates, there may be minor differences, which do not represent the actual images for each subsequent version update and are provided for reference only.**
 
-### **3.3 Language Settings**
+### 3.3 Language Settings
 
 Click “![Image](./images/OK3588-C_Android_14_User_Manual/1718940852445_596f8ecb_5e13_45b8_a0a9_eb9b20e905cd.png)”, on the application interface to enter the setting interface:
 
@@ -419,7 +416,7 @@ Click "Add Language" to add a new language.
 
 If you want to remove an installed language, you can click the icon with three dots in the upper right corner, select Remove, check the language you want to delete, click the trash can icon in the upper right corner, and a dialog box pops up, "Do you want to remove the selected language?" Click “Confirm” to deleted the language.
 
-### **3.4 Picture and Audio View**
+### 3.4 Picture and Audio View
 
 Store the picture and video files to be viewed into the TF card, and insert the TF card into the development board.
 
@@ -441,7 +438,7 @@ Click on the pictures and videos to view:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940855260_bea26119_a890_40eb_8af5_750ecb31ef31.jpeg)
 
-### **3.5 Multimedia Test**
+### 3.5 Multimedia Test
 
 Store the audio file to be played into the TF card, and insert the TF card into the development board.
 
@@ -459,7 +456,7 @@ Click Play Music to enter the play interface.
 
 The priority of sound playback is headphone > HDMI audio > carrier board speaker, and the volume can be adjusted by pressing the physical keys VOL + and VOL- on the carrier board of the development board.
 
-### **3.6 Recording (Supports Mic input)**
+### 3.6 Recording (Supports Mic Input)
 
 Click the video "![Image](./images/OK3588-C_Android_14_User_Manual/1718940856611_8bb56dd9_9cfa_4a14_9df7_12b8308fa6a2.png)" in the application interface to enter the recorder interface:
 
@@ -487,7 +484,7 @@ Click on the audio file you want to play, and the recording will start playing.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940858462_ea22b036_fde4_4cb6_ac42_2073c334aa29.png)
 
-### **3.7 Adjusting the Volume**
+### 3.7 Volume Adjustment
 
 Click “![Image](./images/OK3588-C_Android_14_User_Manual/1718940858645_25cf73f5_ebd1_4f1e_a54b_407d27052933.png)”, on the application interface to enter the setting interface:
 
@@ -501,7 +498,7 @@ This interface allows you to adjust each section's volume and supports media vol
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940859260_125990ed_f017_4008_8835_b419b8d7c849.png)
 
-### **3.8 Display Settings**
+### 3.8 Display Settings
 
 Click “![Image](./images/OK3588-C_Android_14_User_Manual/1718940859453_95a99126_d6b7_4096_a0d7_5dcfba9d61c0.png)”, on the application interface to enter the setting interface:
 
@@ -521,7 +518,7 @@ Select screen sleep time.
 
 If there is no operation on the interface within the set sleep time, the screen will enter the sleep mode, and pressing the PWRON physical button on the carrier board will wake up the screen.
 
-### **3.9 Time Setting（RTC）**
+### 3.9 Time Settings（RTC）
 
 Click “![Image](./images/OK3588-C_Android_14_User_Manual/1718940860464_22ea1d4e_1a24_405a_b710_bd64a3294b1f.png)”, on the application interface to enter the setting interface:
 
@@ -545,13 +542,11 @@ Click on “Set Time.”
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940861719_e3b8b1ae_b6a5_465f_80d5_381190e603f7.png)
 
-### **3.10 Ethernet Test**
+### 3.10 Ethernet Test
 
 OK3588 has two Gigabit NICs on board (Ethernet ETH0 and Ethernet ETH1).
 
-**Description:**
-
-+ **When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.**
+**Note: When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.**
 
 1\. Gigabit network port test:
 
@@ -561,7 +556,7 @@ After inserting the network cable, click "![Image](./images/OK3588-C_Android_14_
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940862085_cd2c7080_8c28_4e19_b48d_663ab9302441.png)
 
-Click Network and Internet:
+Click "Network & Internet":
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940862284_57f61d68_7ed2_412f_90d0_bac1eea2b042.png)
 
@@ -591,9 +586,9 @@ Enter "[http://www.forlinx. net](http://www.forlinx.com)” in the domain name c
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940863696_36419b8d_9fc5_4e6d_b89d_09b12b60da3e.png)
 
-### **3.11 WiFi Internet**
+### 3.11 WiFi Internet
 
-**Description:**
+**Note:**
 
 + **When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;**
 + **When testing WiFi, unplug the wired network.**
@@ -606,7 +601,7 @@ Click "Use WLAN":
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940864282_5bdbecbd_046b_46de_858f_b19ec4f40b3c.png)
 
-Click on the WIFI to be connected and enter the password:
+Click on the "WiFi" to be connected and enter the password:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940864520_ff2629f1_22dd_4887_ad10_5b547b168612.png)
 
@@ -614,7 +609,7 @@ After successful connection, you can open the browser and enter the URL for netw
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940864780_72de18f2_99fb_4339_8cf1_d75297209c7d.png)
 
-### **3.12 WiFi Hotspot Test**
+### 3.12 WiFi Hotspot Test
 
 OK3588 supports the sharing of Ethernet or mobile networks through WIFI for WIFI hotspot testing. First, plug the network cable into the OK3588 ETH0 connector. Open Settings and click Network and Internet.
 
@@ -622,7 +617,7 @@ Click "Hotspot \&tethering":
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940865108_c253897a_6790_46e4_b0d7_09e68fe95049.png)
 
-Click WLAN Hotspot:
+Click "WLAN Hotspot":
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940865329_e2fd5f8c_d315_4ca7_abcf_a5fc556a4f5e.png)
 
@@ -644,9 +639,9 @@ Click “Confirm”.
 
 After connecting to the hotspot through the mobile phone, you can surf the Internet normally.
 
-### **3.13 4G/5G Module Test**
+### 3.13 4G/5G Module Test
 
-**Description:**
+**Note:**
 
 + **When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;**
 + **When testing 4G, unplug the wired network and turn off WiFi;**
@@ -674,9 +669,9 @@ The test method of 5G is the same as that of 4G, and the difference is that the 
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940867478_8cc23a57_16c4_4dbd_af6f_8763ad9ef07b.png)
 
-### **3.14 Bluetooth Test**
+### 3.14 Bluetooth Test
 
-**Description: The current system does not support iPhone Bluetooth connection.**
+**Note: The current system does not support iPhone Bluetooth connection.**
 
 The Bluetooth function test of OK3588 platform uses the WiFi \& Bluetooth integrated module, which supports the connection of Bluetooth devices as the main device to transmit/receive files.
 
@@ -732,19 +727,19 @@ Select the previously paired device, select the phone to receive the file, and t
 
 You can view the transfer progress in the notification bar, and after the transfer is complete, you can view the received images on your phone.
 
-### **3.15 Key Test (Sleep Wake-up)**
+### 3.15 Key Test (Sleep Wake-up)
 
 There are 8 keys on the development board, including VOL +, VOL-, MENU, ESC, HOME, PWRON, RESET and Maskroom.
 
-| **Key**| **Function**
-|----------|----------
-| Recovery/VOL+| VOL+
-| VOL-| VOL-
-| PWRON| Wake up from sleep and power on/off
-| Maskroom| Work with RESET to enter maskrom mode.
-| RESET| RESET
-| MENU| Pop-up menu Home screen settings, Widget, Wallpaper
-| ESC| Return
+| **Key**       | **Function**                                        |
+| ------------- | --------------------------------------------------- |
+| Recovery/VOL+ | VOL+                                                |
+| VOL-          | VOL-                                                |
+| PWRON         | Wake up from sleep and power on/off                 |
+| Maskroom      | Work with RESET to enter maskrom mode.              |
+| RESET         | RESET                                               |
+| MENU          | Pop-up menu Home screen settings, Widget, Wallpaper |
+| ESC           | Return                                              |
 
 The default factory setting is the non-hibernation state. At this time, press the PWRON key lightly to turn off the screen and enter the hibernation state (note that the carrier board cannot be inserted into the wake-up source such as USBOTG). The hibernation print information is as follows:
 
@@ -772,7 +767,7 @@ In the sleep state, press the PWRON key again to wake up the CPU. Press and hold
 
 The other buttons have simpler functions, so please test them yourself.
 
-### **3.16 TF Card and USB Storage Test**
+### 3.16 TF Card and USB Storage Test
 
 It is a test of TF card and USB storage device. Insert the USB device into the OK3588 USB Host port. The system will automatically detect the insertion of the USB flash drive.
 
@@ -796,11 +791,11 @@ The TF card reading and writing method is the same as the U disk reading and wri
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940872470_d924ecf0_9552_4998_a5fb_298266d70949.png)
 
-### **3.17 USB Mouse Test**
+### 3.17 USB Mouse Test
 
-Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “</font>![Image](./images/OK3588-C_Android_14_User_Manual/1718940872695_b43cb3fd_d14a_4a2c_9f96_40e210aa3683.png)<font style="color:#000000;">”, within the interface, and you can navigate and operate the Android system using the mouse.
+Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “![Image](./images/OK3588-C_Android_14_User_Manual/1718940872695_b43cb3fd_d14a_4a2c_9f96_40e210aa3683.png)”, within the interface, and you can navigate and operate the Android system using the mouse.
 
-### **3.18 USB OTG Interface Test**
+### 3.18 USB OTG Interface Test
 
 The OK3588 development board supports USB OTG functionality.
 
@@ -808,7 +803,7 @@ Typec0 of the development board is connected to the computer through the otg cab
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940872870_c63a428a_532c_47f4_878a_630f552f06dc.png)
 
-### **3.19 Serial Port Test**
+### 3.19 Serial Port Test
 
 UART2, UART4, UART6, UART9, a total of four serial ports led out from the OK3588 carrier board; UART2 for debugging serial port, UART6 for Bluetooth serial port, and UART9 for 485 serial port. The default device names of UART4 and UART9 in the development board are ttyS4 and ttyS9 respectively. Take the test of UART4 serial port as an example, short-circuit the receiving and transmitting pins of UART4 according to the schematic diagram of the development board, corresponding to PIN7 and PIN10 respectively.
 
@@ -840,7 +835,7 @@ Click the "CONSOLE" option in the previous menu to perform the send-receive test
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940875423_e1abe183_ad29_4cd1_add9_c67466f758e5.png)
 
-### **3.20 Watchdog Test**
+### 3.20 Watchdog Test
 
 Click![Image](./images/OK3588-C_Android_14_User_Manual/1718940877395_f50e79a6_5822_45bb_ab34_43f1f2dd0f9a.png) "forlinux \_ watchdog \_ test" "on the application interface to enter the watchdog test:
 
@@ -856,7 +851,7 @@ If a timeout (timeout of 10S) is not performed to feed the dog, the system reboo
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940878366_cf33c763_78c0_4f07_8d01_031e915426b6.png)
 
-### **3.21 Camera Test**
+### 3.21 Camera Test
 
 #### 3.21.1 UVC Camera Test
 
@@ -886,7 +881,7 @@ Click the video button to record the video:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1721890763616_707f7024_6605_4543_99a2_a05574d832af.png)
 
-#### **3.21.2 OV13855 Camera Test**
+#### 3.21.2 OV13855 Camera Test
 
 OK3588 supports 5 x mipi Camera, in which CAM1 and CAM2 are used for OV13855 and CAM3, CAM4 and CAM5 are used for MIPI OV5645.
 
@@ -916,7 +911,7 @@ Click the video button to record the video:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1721893524238_9db0bd0a_734c_4aa2_93b4_27d6733ef48a.png)
 
-### **3.22 HDMI Resolution Setting Test**
+### 3.22 HDMI Resolution Setting Test
 
 OK3588 platform supports dynamic setting of HDMI resolution.
 
@@ -936,7 +931,7 @@ You can dynamically select the desired resolution based on the resolution suppor
 
 After restarting, the device will take effect.
 
-### **3.23 Factory Reset**
+### 3.23 Factory Reset
 
 The OK3588 platform supports restoring factory settings.
 
@@ -958,7 +953,7 @@ Then click "Clear All Data".
 
 Wait for OK3588 to restore the default factory settings. Please do not power off during the process of restoring the factory settings.
 
-### **3.24 APK Installation with TF Card**
+### 3.24 APK Installation with TF Card
 
 After loading the TF card according to the previous steps, you can see an APK file after entering the TF card directory.
 
@@ -980,7 +975,7 @@ Click "Install" to complete the installation:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940887661_5faa9ef2_523a_4628_a212_033543dab0d1.png)
 
-### **3.25 WiFi ADB Test**
+### 3.25 WiFi ADB Test
 
 **Note: Only one of USB ADB and WIFI ADB can be used at the same time.**
 
@@ -1022,7 +1017,7 @@ Type "adb disconnect" to disconnect, and then type "adb devices" to see the devi
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940890299_f6ab1a28_ae41_45c5_8c73_b3d7f50308b8.png)
 
-### **3.26 Navigation and Status Bar Settings**
+### 3.26 Navigation and Status Bar Settings
 
 The current release supports showing/hiding the navigation and status bars.
 
@@ -1034,7 +1029,7 @@ Restart OK3588.
 
 Block the navigation bar, top slide bar, and right mouse button for the return function.
 
-### **3.27 Artificial Intelligence Test**
+### 3.27 Artificial Intelligence Test
 
 OK3588 android platform supports tensorflow lite and other mainstream AI frameworks. TFL Detect is used here to test target detection routines for customer reference. Routines such as accessories need to be installed by yourself.
 
@@ -1044,7 +1039,7 @@ Test by placing the item in front of the camera will automatically recognize the
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940893435_f6d2a8bb_0ca3_4084_b356_01894a9b7d7d.png)
 
-### **3.28 Screen Lock Test**
+### 3.28 Screen Lock Test
 
 **Note**: **By default, Android will not lock the screen when it is started for the first time. If it is not modified, it will be opened in the lock screen state after restarting.**
 
@@ -1054,7 +1049,7 @@ OK3588 does not lock the screen by default. If you need to lock the screen, you 
 
 Select a screen lock method.
 
-### **3.29 NPU Test**
+### 3.29 NPU Test
 
 OK3588 The current test NPU examples are: rknn\_mobilenet\_demo\_Android, rknn\_ssd\_demo\_Android, and rknn\_multiple\_input\_demo\_Android, respectively, and the test routines are located at:
 
@@ -1106,7 +1101,7 @@ Open the out. jpg file by using the diagram viewing software
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940894882_665bd85f_1852_4f73_bdbb_dd869f4fc2c4.jpeg)
 
-### **3.30 Hdmi In Test**
+### 3.30 HDMI Test
 
 OK3588 Hdmi rx supports resolutions up to 3840x2160 @ P60 and 4096x2160p @ P24.
 
@@ -1114,7 +1109,7 @@ After inserting the HDMI cable, open ![Image](./images/OK3588-C_Android_14_User_
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940898672_b2e998b1_b399_4957_a994_8c2f4c697959.png)
 
-#### **3.30.1 SERIAL PORT DEMO**
+#### 3.30.1 Serial Port Demo
 
 Click "SERIAL PORT DEMO" "to enter the serial port test interface.
 
@@ -1140,7 +1135,7 @@ Add the content to be sent in the Received Data column, and click SEND to send d
 
 Send data will be received in the Send Data column. Click CLEAR to clear the received data in the Send Data column.
 
-#### **3.30.2 SPI DEMO**
+#### 3.30.2 SPI Demo
 
 Click "SPI DEMO" "to enter the SPI test interface (no SPI test interface is reserved on the 3588 board).
 
@@ -1160,7 +1155,7 @@ After the above is set, click OPEN to start the test. Connect the miso and mosi 
 
 Enter the data to be sent in the Sent Data field and receive the sent data in the Received Data field.
 
-#### **3.30.3 I2C DEMO**
+#### 3.30.3 I2C Demo
 
 Click "I2C DEMO" to enter the i2c test interface.
 
@@ -1170,7 +1165,7 @@ The RTC chip is connected to the I2C, and clicking the READ button will read the
 
 Fill in the time in the columns of Year, Hour, Minute, and Second, and click the WRITE button to write the data into the corresponding registers of the RTC.
 
-#### **3.30.4 GPIO DEMO**
+#### 3.30.4 GPIO Demo
 
 Click GPIO DEMO “ to enter the gpio test interface.
 
@@ -1182,7 +1177,7 @@ Select GPIO in the drop-down bar, click the GET button, and get the high level 1
 
 Enter a 1 or 0 in the GPIO Value field and click the SET button to set the GPIO output high or low specified in the drop-down field.
 
-#### **3.30.5 WATCHDOG DEMO**
+#### 3.30.5 Watchdog Demo
 
 Click "WATCHDOG DEMO" to enter the Watchdog test interface.
 
@@ -1194,13 +1189,13 @@ Clicking the START button will start the watchdog and start a 15-second countdow
 
 Turning on Auto Feed will enable automatic dog feeding; clicking on MANUAL FEED "will manually feed the watchdog once. Clicking the STOP button will stop the watchdog.
 
-#### **3.30.6 ADC DEMO**
+#### 3.30.6 ADC Demo
 
 Click "ADC DEMO" to enter the adc test interface.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940901069_79a3afeb_c798_41df_8c30_e0218a599118.png)
 
-Click IN\_VOLTAGE0\_RAW to select the ADC channel, click the START button to start the test, the ADC value will be displayed in the "ADCValue" column.
+Click IN\_VOLTAGE0\_RAW to select the ADC channel, click the START button to start the test, the ADC value will be displayed in the "ADC Value" column.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940901258_7cb44e9d_5cde_4cd6_b315_a414471d640e.png)
 
@@ -1210,9 +1205,9 @@ Click "STOP" to stop the test:
 
 ## 4\. System Flashing
 
-### **4.1 OTG System Flashing**
+### 4.1 OTG System Flashing
 
-#### **4.1.1 OTG Driver Installation**
+#### 4.1.1 OTG Driver Installation
 
 ️Path: Software Data \\ 3-Tools\\DriverAssitant\_v5.13.zip
 
@@ -1226,17 +1221,18 @@ Click "Driver Installation”.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1756801262382_6b678a97_02ac_4d71_b355_d7fac17cd6db.png)
 
-#### **4.1.2 OTG Flashing Test**
+#### 4.1.2 OTG Flashing Test
 
-**4.1.2.1 RKDevTool Flashing Test**
+##### 4.1.2.1 RKDevTool Flashing Test
 
 Path: 3-Tools \\ RKDevTool\_v3.30\_for\_window.zip
 
 It is a development tool provided by Rockchip Micro. Unzip it to a full English path before use, connect the Typc0 port of the development board and the host computer with a Type-C cable, press and hold the recovery key of the development board and don't release it, then press the reset key to reset the system, and release the recovery key after about two seconds. There will be prompts on the Rockchip development tool : loader device found
 
-**Note: The operation to recognize the device is that the recovery button should be in the pressed state when the development board is powered on.**
+**Note: **
 
-**Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
+- **The operation to recognize the device is that the recovery button should be in the pressed state when the development board is powered on;**
+- **Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
 
 Open the Rockchip development tool:
 
@@ -1275,9 +1271,10 @@ This feature is useful when you need to download a separate image. This function
 
 Factory Tool is a factory batch OTG flashing tool, which does not need to read the image and supports large file flashing. Use this tool if RKDevTool is not compatible. Before use, you need to decompress to the full English path, connect the development board to the host, press the recovery key, press the reset key to reset, and release the recovery key after two seconds. There will be prompts on the Rockchip development tool : loader device found
 
-**Note: The operation to recognize the device is that the recovery button should be in the pressed state when the development board is powered on.**
+**Note: **
 
-**Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
+- **The operation to recognize the device is that the recovery button should be in the pressed state when the development board is powered on;**
+- **Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
 
 Open the Rockchip development tool:
 
@@ -1289,7 +1286,7 @@ Click to select the firmware, and click to start. At this time to recognize the 
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940928070_85202ada_f163_448f_b3dc_e85253b5ee1d.png)
 
-### **4.2 TF Card Flashing**
+### 4.2 TF Card Flashing
 
 TF card production, flashing and testing
 
@@ -1328,7 +1325,7 @@ If the automatic restart does not occur after removing the TF card, a manual res
 
 OTA (over the air) upgrade is a standard software upgrade method provided by Android system. It has powerful functions, and the current version of system OTA upgrade provides two methods of local complete package upgrade and network upgrade.
 
-### **5.1 OTA Upgrade Package Compilation**
+### 5.1 OTA Upgrade Package Compilation
 
 You can use the build.sh in the OK3588 - android14 - source directory to compile the full OTA upgrade package. Please modify the Android code first, and then compile the OK3588 system upgrade package:
 
@@ -1343,7 +1340,7 @@ Rename either ok3588\_c - ota - eng.root.zip or ok3588\_c - target\_files - eng.
 
 **Note: The full upgrade package contains the complete system, while the incremental upgrade package contains the differences between two versions. Therefore, you need to ensure that the development board has been flashed with the lower - version system before using the incremental upgrade to ensure a correct upgrade.**
 
-### **5.2 OTA Local Upgrade**
+### 5.2 OTA Local Upgrade
 
 Copy the update.zip generated in the previous section to the root directory of the USB or TF card, or the /data/media/0/ directory, the system will automatically detect the upgrade package and pop up the upgrade dialogue box.
 
@@ -1379,7 +1376,7 @@ Finally, you can verify that the android system has been modified.
 
 **Note: The prompt for firmware upgrade operation after the system reboot is the correct prompt because the file /data/media/0/update.zip exists, so it will wait for a few minutes to pop up the prompt. The Firmware Prompt dialog will not pop up after deleting the/data/media/0/update.zip.**
 
-### **5.3 OTA Network Upgrade**
+### 5.3 OTA Network Upgrade
 
 1\. Environment Setup
 
@@ -1419,8 +1416,6 @@ Click "Yes", the upgrade 1.0.1.zip file will be downloaded via http protocol.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940989332_9bba55e7_29ef_495d_a30c_0954b33d3f70.png)
 
-![Image](./1718940987829_ba310991_112d_4158_8002_70e8b2f2f8d1-1758268600056-7.png)
-
 The system will restart automatically, and the serial port terminal will print as follows:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940989800_a5e943d3_bfd7_486e_b27d_d35c0637c225.png)
@@ -1441,7 +1436,7 @@ After the parameter settings are completed, restart the device for the settings 
 
 The source code of the app is located in vendor/forlinx/DisplayHwConfig.
 
-### **6.1 Primary and Secondary Screens Settings**
+### 6.1 Primary and Secondary Screens Settings
 
 Click the “PRIMARY DISPLAY” button to specify the primary screen.
 
@@ -1455,7 +1450,7 @@ Select the display you want to set as the primary screen from the menu and click
 
 The currently opened display device, excluding the primary screen, is the secondary screen. The configuration of secondary screens is adaptive and does not require manual settings.
 
-### **6.2 Binding between Display and VOP Settings**
+### 6.2 Binding between Display and VOP Settings
 
 Click the non - “PRIMARY DISPLAY” button to set the binding relationship between supported displays and VOP.
 
@@ -1467,7 +1462,7 @@ Click the button to enter the VOP selection page, and click “OK” to save the
 
 **Note: The red text below shows the rules for binding VOP. Also, ensure that the same VOP is not bound to multiple devices.** 
 
-### **6.3 Binding between Display and Touch (Input) Devices**
+### 6.3 Binding between Display and Touch (Input) Devices
 
 This function can dynamically bind the display and touch devices together to achieve the asynchronous touch function. 
 
@@ -1524,7 +1519,7 @@ For the main displays with different resolutions and sizes, the display effects 
 
 Enter the specified DPI value in the “Display DPI” input box, then click “Save”. The settings will take effect after restarting.
 
-### **6.5 APP Display on Different Screens**
+### 6.5 APP Display on Different Screens
 
 By clicking the “Display on this screen” button, the app can be displayed on different displays.
 
@@ -1538,7 +1533,7 @@ The source code of the app is located in vendor/forlinx/DisplayHwConfig.
 
 Root permission management can control the shell, ADB, and apps separately or uniformly.
 
-### **7.1 Shell Permission Control**
+### 7.1 Shell Permission Control
 
 Select “Enable shell” to grant root permission to the shell.
 
@@ -1553,7 +1548,7 @@ console:/ $ su
 su: not allowed
 ```
 
-### **7.2 ADB Permission Control**
+### 7.2 ADB Permission Control
 
 Select “Enable ADB” to grant root permission to ADB.
 
@@ -1568,7 +1563,7 @@ C:\Users\forlinx>adb root
 adbd cannot run as root
 ```
 
-### **7.3 APP Permission Control**
+### 7.3 APP Permission Control
 
 Select “Enable APP” to grant root permission to the app.
 

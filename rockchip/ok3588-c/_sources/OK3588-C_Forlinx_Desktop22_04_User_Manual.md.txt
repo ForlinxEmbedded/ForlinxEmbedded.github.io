@@ -10,6 +10,18 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the<font style="color:black;background-color:#FFFFFF;">Forlinx Desktop 22.04</font>operating system of the Forlinx OK3588-C platform. Other platforms can also refer to it. However, there are differences among different platforms, so please make modifications according to the specific use. 
+
+## Revision History
+
+| **<font style="color:black;">Date</font>**             | **<font style="color:black;">User Manual Version</font>** | **<font style="color:black;">SoM Version</font>** | **<font style="color:black;">Carrier Board Version</font>** | **<font style="color:black;">Revision History</font>**       |
+| ------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
+| 11/04/2023                                             | V1.0                                                      | V1.1                                              | V1.1 and Above                                              | Initial Version                                              |
+| 21/03/2024                                             | V1.1                                                      | V1.1                                              | V1.1 and Above                                              | Adding CPU/GPU/NPU frequency description.                    |
+| <font style="color:rgb(51, 51, 51);">08/10/2025</font> | <font style="color:rgb(51, 51, 51);">V1.1</font>          | <font style="color:rgb(51, 51, 51);">V1.1</font>  | <font style="color:rgb(51, 51, 51);">V1.1 and above</font>  | 1. The media path “/userdata/media” is changed to “/userdata/media/video;<br />2. For the camera, the model number13850 is changed to138553;<br />3. The video hardware encoding changes from H.265 to a maximum resolution of 8K@30. |
+
 ## Overview
 
 <font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the</font> user's understanding, mainly for practical use. Please refer to “OK3588-C\_Forlinx Desktop22.04\_User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment setup.
@@ -50,18 +62,6 @@ mlan                  466944  1 moal
 + <font style="color:blue;">lsmod</font>：Blue font on a gray background indicates relevant commands that need to be entered manually;
 + **<font style="background-color:#e5e5e5;">moal                  602112  0</font>**：The black font with gray background is the output information after the input command, and the bold font is the key information, which indicates that the NXP AW9098 module driver has been loaded.
 
-## Application Scope
-
-This manual is mainly applicable to the<font style="color:black;background-color:#FFFFFF;">Forlinx Desktop 22.04</font>operating system of the Forlinx OK3588-C platform. Other platforms can also refer to it. However, there are differences among different platforms, so please make modifications according to the specific use. 
-
-## Revision History
-
-| **<font style="color:black;">Date</font>**             | **<font style="color:black;">User Manual Version</font>** | **<font style="color:black;">SoM Version</font>** | **<font style="color:black;">Carrier Board Version</font>** | **<font style="color:black;">Revision History</font>**       |
-| ------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| 11/04/2023                                             | V1.0                                                      | V1.1                                              | V1.1 and Above                                              | Initial Version                                              |
-| 21/03/2024                                             | V1.1                                                      | V1.1                                              | V1.1 and Above                                              | Adding CPU/GPU/NPU frequency description.                    |
-| <font style="color:rgb(51, 51, 51);">08/10/2025</font> | <font style="color:rgb(51, 51, 51);">V1.1</font>          | <font style="color:rgb(51, 51, 51);">V1.1</font>  | <font style="color:rgb(51, 51, 51);">V1.1 and above</font>  | 1. The media path “/userdata/media” is changed to “/userdata/media/video;                               2. For the camera, the model number13850 is changed to138553;                                          3. The video hardware encoding changes from H.265 to a maximum resolution of 8K@30. |
-
 ## 1\. OK3588 Development Board Description
 
 ### 1.1 OK3588 Development Board Brief
@@ -78,9 +78,7 @@ The connection of OK3588 SoM and the carrier board is board-to-board, and the ma
 
 **Back**
 
-**Note：**
-
-The software manual no longer includes hardware parameter details. Prior to software development, please read the "OK3588-C\_Hardware User’s Manual" located at "Hardware Information\\User Manual" path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.
+**Note: The software manual no longer includes hardware parameter details. Prior to software development, please read the "OK3588-C\_Hardware User’s Manual" located at "Hardware Information\\User Manual" path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.**
 
 ### 1.2 CPU/GPU/NPU Frequency Description
 
@@ -92,23 +90,22 @@ Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency, normal mode ①| 1.6GHz
-|----------|----------
-| Maximum CPU A76 frequency, overclocking mode ②| 2.0GHz
-| Maximum CPU A55 frequency, normal mode ①| 1.3GHz
-| Maximum CPU A55 frequency, overclocking mode ②| 1.7GHz
-| Maximum GPU frequency, normal mode ①| 700MHz
-| Maximum GPU frequency, overclocking mode ②| 850MHz
-| Maximum NPU frequency, normal mode ①| 800MHz
-| Maximum NPU frequency, overclocking mode ②| 950MHz
+| Maximum CPU A76 frequency, normal mode ①           | 1.6GHz     |
+| -------------------------------------------------- | ---------- |
+| **Maximum CPU A76 frequency, overclocking mode ②** | **2.0GHz** |
+| **Maximum CPU A55 frequency, normal mode ①**       | **1.3GHz** |
+| **Maximum CPU A55 frequency, overclocking mode ②** | **1.7GHz** |
+| **Maximum GPU frequency, normal mode ①**           | **700MHz** |
+| **Maximum GPU frequency, overclocking mode ②**     | **850MHz** |
+| **Maximum NPU frequency, normal mode ①**           | **800MHz** |
+| **Maximum NPU frequency, overclocking mode ②**     | **950MHz** |
 
-- Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;
-- Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
+Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;
+
+Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
 
 
-To switch to "normal mode", you need to add the following to the reference in the kernel device tree #include "rk3588j.dtsi", 
-
-path: OK3588\_Linux\_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
+To switch to "normal mode", you need to add the following to the reference in the kernel device tree #include "rk3588j.dtsi", path: OK3588\_Linux\_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
 
 ![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953696103_03432661_8fbd_4519_b42f_5c27f8638daa.png)
 
@@ -118,53 +115,53 @@ Refer to “Rockchip RK3588 Datasheet V1.7-17/11/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency| 2.2-2.4 GHz
-|----------|----------
-| Maximum CPU A55 frequency| 1.8GHz
-| Maximum GPU frequency| 1GHz
-| Maximum NPU frequency| 1GHz
+| Maximum CPU A76 frequency     | 2.2-2.4 GHz |
+| ----------------------------- | ----------- |
+| **Maximum CPU A55 frequency** | **1.8GHz**  |
+| **Maximum GPU frequency**     | **1GHz**    |
+| **Maximum NPU frequency**     | **1GHz**    |
 
 ### 1.3 Introduction to Linux 5.10.160 System Software Resources
 
-| **Device**| **Location of driver source code in the kernel**| **Device Name**
-|----------|----------|----------
-| LCD Backlight Driver| drivers/video/backlight/pwm\_bl.c| /sys/class/backlight
-| USB Port| drivers/usb/storage/| 
-| USB Mouse| drivers/hid/usbhid/| /dev/input/mice
-| Ethernet| drivers/net/ethernet/stmicro/stmmac| 
-| SD/micro TF card driver| drivers/mmc/host/dw\_mmc-rockchip.c| /dev/block/mmcblk1pX
-| EMMC Driver| drivers/mmc/host/dw\_mmc-rockchip.c| /dev/block/mmcblk2pX
-| OV13855| drivers/media/i2c/ov13855.c| /dev/videoX
-| LCD Controller| drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c| 
-| MIPI CSI| drivers/phy/rockchip/phy-rockchip-mipi-rx.c| 
-| MIPI DSI| drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c| 
-| LCD Touch Driver| drivers/input/touchscreen/goodix.c<br/>drivers/input/touchscreen/edt-ft5x06.c| /dev/input/eventX
-| RTC Real Time Clock Driver| drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c| /dev/rtc0
-| serial port| drivers/tty/serial/8250/8250\_dw.c| /dev/ttySX
-| Key Driver| drivers/input/keyboard/adc-keys.c| /dev/input/eventX
-| LED| drivers/leds/leds-gpio.c| 
-| I2S| sound/soc/rockchip/rockchip\_i2s.c| 
-| Audio Driver| sound/soc/codecs/rk817\_codec.c| /dev/snd/
-| PMIC| drivers/mfd/rk808.c| 
-| PCIE| drivers/pci/controller/pcie-rockchip.c| 
-| Watchdog| drivers/watchdog/dw\_wdt.c| 
-| SPI| drivers/spi/spi-rockchip.c| 
-| PWM| drivers/video/backlight/pwm\_bl.c| 
+| Device                     | Location of driver source code in the kernel                 | Device Name          |
+| -------------------------- | ------------------------------------------------------------ | -------------------- |
+| LCD Backlight Driver       | drivers/video/backlight/pwm\_bl.c                            | /sys/class/backlight |
+| USB Port                   | drivers/usb/storage/                                         |                      |
+| USB Mouse                  | drivers/hid/usbhid/                                          | /dev/input/mice      |
+| Ethernet                   | drivers/net/ethernet/stmicro/stmmac                          |                      |
+| SD/micro TF card driver    | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/block/mmcblk1pX |
+| EMMC Driver                | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/block/mmcblk2pX |
+| OV13855                    | drivers/media/i2c/ov13855.c                                  | /dev/videoX          |
+| LCD Controller             | drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c                |                      |
+| MIPI CSI                   | drivers/phy/rockchip/phy-rockchip-mipi-rx.c                  |                      |
+| MIPI DSI                   | drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c           |                      |
+| LCD Touch Driver           | drivers/input/touchscreen/goodix.c<br/>drivers/input/touchscreen/edt-ft5x06.c | /dev/input/eventX    |
+| RTC Real Time Clock Driver | drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c       | /dev/rtc0            |
+| serial port                | drivers/tty/serial/8250/8250\_dw.c                           | /dev/ttySX           |
+| Key Driver                 | drivers/input/keyboard/adc-keys.c                            | /dev/input/eventX    |
+| LED                        | drivers/leds/leds-gpio.c                                     |                      |
+| I2S                        | sound/soc/rockchip/rockchip\_i2s.c                           |                      |
+| Audio Driver               | sound/soc/codecs/rk817\_codec.c                              | /dev/snd/            |
+| PMIC                       | drivers/mfd/rk808.c                                          |                      |
+| PCIE                       | drivers/pci/controller/pcie-rockchip.c                       |                      |
+| Watchdog                   | drivers/watchdog/dw\_wdt.c                                   |                      |
+| SPI                        | drivers/spi/spi-rockchip.c                                   |                      |
+| PWM                        | drivers/video/backlight/pwm\_bl.c                            |                      |
 
 ### 1.4 EMMC Memory Partition Table
 
 The following table is the eMMC memory partition information of Ubuntu operating system (the size of a block is 512 bits when calculating):
 
-| **Partition Index**| **Name**| **Offset / block**| **Size/block**| **content**
-|----------|----------|----------|----------|----------
-| N/A| security| 0x00000000| 0x00004000| MiniLoaderAll.bin
-| 1| uboot| 0x00004000| 0x00004000| uboot.img
-| 2| misc| 0x00006000| 0x00002000| misc.img
-| 3| boot| 0x00008000| 0x00020000| boot.img
-| 4| recovery| 0x00028000| 0x00050000| recovery.img
-| 5| oem| 0x01c78000| 0x00040000| oem.img
-| 6| rootfs| 0x00078000| 0x01c00000| rootfs.img
-| 7| userdata| 0x01cb8000| | userdata.img
+| Partition Index | Name     | Offset / Block | Size/Block | Content           |
+| --------------- | -------- | -------------- | ---------- | ----------------- |
+| N/A             | security | 0x00000000     | 0x00004000 | MiniLoaderAll.bin |
+| 1               | uboot    | 0x00004000     | 0x00004000 | uboot.img         |
+| 2               | misc     | 0x00006000     | 0x00002000 | misc.img          |
+| 3               | boot     | 0x00008000     | 0x00020000 | boot.img          |
+| 4               | recovery | 0x00028000     | 0x00050000 | recovery.img      |
+| 5               | oem      | 0x01c78000     | 0x00040000 | oem.img           |
+| 6               | rootfs   | 0x00078000     | 0x01c00000 | rootfs.img        |
+| 7               | userdata | 0x01cb8000     |            | userdata.img      |
 
 ## 2. Fast Startup
 
@@ -196,7 +193,7 @@ Run CP210xVCPInstaller\_x64.exe directly after unzipping is complete, to ensure 
 
 #### 2.3.1 Serial Port Connection Settings
 
-**Description:**
+**Note:**
 
 + **Serial port settings: baud rate 115200, data bit 8, stop bit 1, no parity bit, no flow control**;
 + **Serial terminal login is forlinx user, password forlinx; interface login is forlinx user, no account password login**;
@@ -247,7 +244,7 @@ It is better to use a good quality cable to avoid error codes.
 
 #### 2.4.1 Network Connection Test
 
-**Description:**
+**Note:**
 
 + **When leaving the factory, the default configuration of the network card is dynamic IP. For the method of setting static IP, please refer to the test section of "Ethernet Configuration";**
 + **The computer and board should be on the same network segment for testing.**
@@ -268,7 +265,7 @@ A data return indicates a normal network connection.
 
 #### 2.4.2 SSH Server
 
-**Description:**
+**Note:**
 
 + **When leaving the factory, the default configuration of the network card is dynamic IP. For the method of setting static IP, please refer to the test section of "Ethernet Configuration";**
 + **Users: forlinx, Password: forlinx**;
@@ -409,22 +406,22 @@ The node has a default disabled state and needs to be changed to an okay enabled
 
 **Parameter Description:**
 
-| **Parameter**| **Meaning**
-|----------|----------
-| status| Describe the node state: disabled is for off, okay is for on
-| HDMI0| Specify the VP assigned to HDMI0
-| HDMI1| Specify the VP assigned to HDMI1
-| EDP0| Specifies the VP assigned to EDP0
-| EDP1| Specify the VP assigned to EDP1
-| DP0| Specify the VP assigned to DP0
-| DP1| Specify the VP assigned to DP1
-| MIPI0| Specify the VP assigned to MIPI0
-| MIPI1| Specify the VP assigned to MIPI1
-| RGB| Specify the VP assigned to RGB
-| primary\_display| Specify the main screen display
-| primary\_display\_resolution| Specify the resolution to be used for the main screen with HDMI
+| Parameter                    | Meaning                                                      |
+| ---------------------------- | ------------------------------------------------------------ |
+| status                       | Describe the node state: disabled is for off, okay is for on |
+| HDMI0                        | Specify the VP assigned to HDMI0                             |
+| HDMI1                        | Specify the VP assigned to HDMI1                             |
+| EDP0                         | Specifies the VP assigned to EDP0                            |
+| EDP1                         | Specify the VP assigned to EDP1                              |
+| DP0                          | Specify the VP assigned to DP0                               |
+| DP1                          | Specify the VP assigned to DP1                               |
+| MIPI0                        | Specify the VP assigned to MIPI0                             |
+| MIPI1                        | Specify the VP assigned to MIPI1                             |
+| RGB                          | Specify the VP assigned to RGB                               |
+| primary\_display             | Specify the main screen display                              |
+| primary\_display\_resolution | Specify the resolution to be used for the main screen with HDMI |
 
-Users need to change the setting parameters as required. After saving, it is necessary to recompile and generate an image.
+You need to change the setting parameters as required. After saving, it is necessary to recompile and generate an image.
 
 An annotated description of the node:
 
@@ -448,9 +445,10 @@ The RGB optional parameter is: "VP3";
 
 The primary\_display parameter depends on the actual display interface assigned to get the VP.
 
-**Note: When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display.**
+**Note: **
 
-**For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
+- **When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display;**
+- **For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
 
 **Examples**:
 
@@ -554,7 +552,7 @@ Click "Primary Display " on the Displays screen.
 
 ![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953722400_24c8d868_a4ab_4a3d_a265_4df42a873029.png)
 
-#### 3.1.5 WIFI Test
+#### 3.1.5 WiFi Test
 
 OK3588 platform supports 2 x WIFI Bluetooth 2-in-1 modules: AW-XM458. WIFI supports 2.4 G and 5G bands.
 
@@ -602,7 +600,7 @@ Select "Accept File" on the phone:
 
 ![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953724507_6ceb6112_817d_4f2b_bcbd_eb133c4fbf5e.png)
 
-### 3.2 Qt Tests
+### 3.2 QT Test
 
 The default file system includes Qt 5.15.3, so in this section, we will use Qt test programs for related work. Qt's test program requires commands to be entered into the Ubuntu desktop application.
 
@@ -642,12 +640,12 @@ Click the "connect" button, the program will automatically enter the dial-up pro
 
 UART2, UART4, UART6, UART9, a total of four serial ports led out from the OK3588 carrier board; UART2 for debugging serial port, UART6 for Bluetooth serial port, and UART9 for 485 serial port. The default device names of UART4 and UART9 in the development board are ttyS4 and ttyS9 respectively.
 
-| **UART**| **Device Nodes**| **Description**
-|:----------:|:----------:|----------
-| UART2| /dev/ttyS2| Debugging serial port cannot be used directly for this test.
-| UART4| /dev/ttyS4| TTL level, pinned-put from P11, can be used for test.
-| UART6| /dev/ttyS6| It is used for Bluetooth and is not separately pinned out and can’t be directly used for this test.
-| UART9| /dev/ttyS9| RS485
+| UART  | Device Nodes | Description                                                  |
+| :---: | :----------: | ------------------------------------------------------------ |
+| UART2 |  /dev/ttyS2  | Debugging serial port cannot be used directly for this test. |
+| UART4 |  /dev/ttyS4  | TTL level, pinned-put from P11, can be used for test.        |
+| UART6 |  /dev/ttyS6  | It is used for Bluetooth and is not separately pinned out and can’t be directly used for this test. |
+| UART9 |  /dev/ttyS9  | RS485                                                        |
 
 Use the command fltest\_qt\_terminal to open the uart's qt test program (refer to Setup at the beginning of this section for qt test method). This test uses UART4 (ttyS4) to perform serial port test by sending and receiving data between the development board's UART and the computer's serial port tool software.
 
@@ -671,14 +669,14 @@ forlinx@ok3588:~$ sudo fltest_qt_terminal                        //Run qt progra
 
 Click the Setup button in the upper left corner![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953727264_ff3f6038_06dc_4e83_bc82_4596f997fd6b.png)to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:
 
-| **Relevant Parameter**| **Meaning**
-|----------|----------
-| Select Serial Port| Setting the serial port (select UART5, i.e. ttyS5)
-| BaudRate| Set baud rate (115200)
-| Data bits| Set data bits (8 bits)
-| Parity| Set parity bit (no parity)
-| Stop bits| Set stop bit (1 bit)
-| Flow control| Set flow control (no flow control)
+| **Relevant Parameter** | **Meaning**                                        |
+| ---------------------- | -------------------------------------------------- |
+| Select Serial Port     | Setting the serial port (select UART5, i.e. ttyS5) |
+| BaudRate               | Set baud rate (115200)                             |
+| Data bits              | Set data bits (8 bits)                             |
+| Parity                 | Set parity bit (no parity)                         |
+| Stop bits              | Set stop bit (1 bit)                               |
+| Flow control           | Set flow control (no flow control)                 |
 
 ![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953727493_5e2da8a4_28aa_4c90_9f51_b9baa3799ae5.png)
 
@@ -738,7 +736,7 @@ Click the set button, modify the time, and click save.
 
 Power-off and restart to verify writing to the RTC.
 
-#### 3.2.6 Key Tests
+#### 3.2.6 Key Test
 
 "fltest\_qt\_keypad" is used to test whether the platform's own keys are available.
 
@@ -752,7 +750,7 @@ forlinx@ok3588:~# sudo fltest_qt_keypad
 
 The OK3588 platform has five physical buttons VOL-, VOL +, HOME and ESC corresponding to V +, V-, Home and ESC respectively. When the button is pressed, the corresponding button in the test application will turn blue, indicating that the button is normal.
 
-#### 3.2.7 Watchdog Tests
+#### 3.2.7 Watchdog Test
 
 "fltest\_qt\_watchdog" is an application used to test the watchdog status.
 
@@ -784,7 +782,7 @@ User profiles/linux/source code (OK3588-desktop-release/app/forlinx/forlinx\_cmd
 
 Testing program path: /usr/bin
 
-### 4.1 System Information Query
+### 4.1 System Information Queries
 
 To view kernel and cpu information, enter the following command
 
@@ -826,7 +824,7 @@ LANG=en_US.UTF-8
 
 ### 4.2 Frequency Test
 
-Note: Quad-core A55 is cpu0, cpu1, cpu2, cpu3; Quad-core A76 is cpu5, cpu6, cpu7, cpu8. This process takes cpu0 as an example: the actual process of cpu1, cpu2, cpu3 will be changed at the same time; cpu4, cpu5, cpu6, cpu7 will not affect each other when operated individually.
+**Note: Quad-core A55 is cpu0, cpu1, cpu2, cpu3; Quad-core A76 is cpu5, cpu6, cpu7, cpu8. This process takes cpu0 as an example: the actual process of cpu1, cpu2, cpu3 will be changed at the same time; cpu4, cpu5, cpu6, cpu7 will not affect each other when operated individually.**
 
 1. All cpufreq governor types supported in the current kernel:
 
@@ -987,12 +985,12 @@ key158 Released                                                        // ESC re
 
 UART2, UART4, UART6, UART9, a total of four serial ports led out from the OK3588 carrier board; UART2 for debugging serial port, UART6 for Bluetooth serial port, and UART9 for 485 serial port. The default device names of UART4 and UART9 in the development board are ttyS4 and ttyS9 respectively.
 
-| **UART**| **Device Nodes**| **Description**
-|:----------:|:----------:|----------
-| UART2| /dev/ttyS2| Debugging serial port cannot be used directly for this test.
-| UART4| /dev/ttyS4| TTL level, pinned-put from P11, can be used for test.
-| UART6| /dev/ttyS6| It is used for Bluetooth and is not separately pinned out and can’t be directly used for this test.
-| UART9| /dev/ttyS9| RS485
+| UART  | Device Nodes | Description                                                  |
+| :---: | :----------: | ------------------------------------------------------------ |
+| UART2 |  /dev/ttyS2  | Debugging serial port cannot be used directly for this test. |
+| UART4 |  /dev/ttyS4  | TTL level, pinned-put from P11, can be used for test.        |
+| UART6 |  /dev/ttyS6  | It is used for Bluetooth and is not separately pinned out and can’t be directly used for this test. |
+| UART9 |  /dev/ttyS9  | RS485                                                        |
 
 In this test, UART4 (ttyS4) is used. According to the development board schematic diagram, short - circuit the send and receive pins of UART4, which correspond to PIN7 and PIN10 respectively. Serial port testing is performed by sending and receiving data between the development board's UART and the computer's serial port tool software.
 
@@ -1050,9 +1048,7 @@ root@ok3588:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 
 ### 4.10 TF Test
 
-**Description:
-
-+ **The SD card mount directory is /run/media/ and supports hot-swapping.**
+**Note: The SD card mount directory is /run/media/ and supports hot-swapping.**
 
 1\. Insert the TF card into the TF card slot on the carrier board before powe-up . Then power up and start, run the command dmesg, and the terminal will have the following printed information:
 
@@ -1144,7 +1140,7 @@ shortname=mixed,errors=remount-ro)
 
 We can see the USB mount directory: /run/media/sda1
 
-3\. View the contents of the U disk (sda1 is based on the actual USB flash drive partition name).
+3. View the contents of the U disk (sda1 is based on the actual USB flash drive partition name).
 
 ```plain
 root@ok3588:~# ls -l /run/media/sda1/
@@ -1153,7 +1149,7 @@ drwxrwx--- 2 root disk 8192 Sep 23  2021 'System Volume Information'
 -rwxrwx--- 1 root disk    0 Apr 25 09:25  test
 ```
 
-4\. Write test: Write speeds are limited by the specific storage device:
+4. Write test: Write speeds are limited by the specific storage device:
 
 ```plain
 root@ok3588:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
@@ -1162,7 +1158,7 @@ root@ok3588:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsyn
 524288000 bytes (524 MB, 500 MiB) copied, 28.8323 s, 18.2 MB/s
 ```
 
-5\. Read test:
+5. Read test:
 
 **Note: To ensure the accuracy of the data, please restart the development board to test the reading speed.**
 
@@ -1173,7 +1169,7 @@ root@ok3588:~# dd if=/run/media/sda1/test of=/dev/null bs=1M
 524288000 bytes (524 MB, 500 MiB) copied, 25.0096 s, 21.0 MB/s
 ```
 
-6\. After using a USB flash drive, before removing the USB flash drive, you need to use the "umount" command to unmount it.
+6. After using a USB flash drive, before removing the USB flash drive, you need to use the "umount" command to unmount it.
 
 ```plain
 root@ok3588:~# umount /run/media/sda1
@@ -1181,17 +1177,17 @@ root@ok3588:~# umount /run/media/sda1
 
 **Note: Exit the USB flash drive mount path before plugging and unplugging the USB flash drive.**
 
-### 4.14 TYPE-C Test
+### 4.14 Type-C Test
 
 OK3588-C contains 2 TYPE-C interfaces, TPYE-C0, and HOST/DEVICE mode automatic recognition of TYPE-C1.
 
 Device mode can flash, transfer ADB file, debug, and Host mode can plug in a normal USB device.
 
-Device Mode<font style="color:#000000;">：</font>
+**Device Mode:**
 
 ![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953737975_a180f7a2_c511_4abd_8841_195540ab49be.png)
 
-Host Mode:
+**Host Mode:**
 
 View the insertion information via demsg.
 
@@ -1218,13 +1214,13 @@ Set a static IP configuration. The following takes setting the IP of eth0 to 192
 root@ok3588:~# nmcli con mod 'Wired connection 1' ipv4.method manual ipv4.addresses 192.168.0.232/24 ipv4.gateway 192.168.0.1 ipv4.dns 8.8.8.8 connection.autoconnect yes
 ```
 
-| **Parameter**| **Meaning**
-|:----------:|----------
-| con mod| Used to specify the name of the network connection that requires a fixed IP
-| ipv4.address| Used to specify that the IPv4 address and subnet mask need to be fixed
-| Ipv4.gateway| Used to specify an Ipv4 gateway
-| ipv4.dns| Used to specify Ipv4 DNS
-| connection.autoconnect| Used to set up automatic connection
+|     **Parameter**      | **Meaning**                                                  |
+| :--------------------: | ------------------------------------------------------------ |
+|        con mod         | Used to specify the name of the network connection that requires a fixed IP |
+|      ipv4.address      | Used to specify that the IPv4 address and subnet mask need to be fixed |
+|      Ipv4.gateway      | Used to specify an Ipv4 gateway                              |
+|        ipv4.dns        | Used to specify Ipv4 DNS                                     |
+| connection.autoconnect | Used to set up automatic connection                          |
 
 After setting, the network connection is activated, and the configuration takes effect.
 
@@ -1245,11 +1241,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         device interrupt 80
 ```
 
-### 4.16 WIFI Test
+### 4.16 WiFi Test
 
-**Description:**
-
-+ **The network environment is different, so please set it according to the actual situation when you do this experiment.**
+**Note: The network environment is different, so please set it according to the actual situation when you do this experiment.**
 
 OK3588 platform supports two types of WIFI Bluetooth 2-in-1 modules; AW-XM458 and AW-CM276MA.
 
@@ -1265,10 +1259,10 @@ root@ok3588:~# fltest_wifi.sh -s forlinx-wlan -p fl03123102650
 
 The meanings of the related parameters in the command are as follows:
 
-| **Parameter**| **Meaning**
-|:----------:|----------
-| -s| The name of the connected wifi hotspot.
-| -p| The password of the wifi hotspot to be connected.
+| **Parameter** | **Meaning**                                       |
+| :-----------: | ------------------------------------------------- |
+|      -s       | The name of the connected wifi hotspot.           |
+|      -p       | The password of the wifi hotspot to be connected. |
 
 The serial port prints as follows:
 
@@ -1294,9 +1288,7 @@ rtt min/avg/max/mdev = 9.967/10.730/11.194/0.543 ms
 
 #### 4.16.2 AP Mode
 
-**Description:**
-
-+ **Ensure that the Gigabit LAN card is eth0 connected to the network and that the network works well before performing this test;**
+**Note: Ensure that the Gigabit LAN card is eth0 connected to the network and that the network works well before performing this test.**
 
 1. Check the driver loading status, take AW-XM458 module for example;
 
@@ -1347,9 +1339,7 @@ Hint: "nmcli dev wifi show-password" shows the Wi-Fi name and password.
 
 ### 4.17 Bluetooth Test
 
-Description:
-
-The AW-XM458 module on the OK3588 carrier board integrates Bluetooth. This section demonstrates data transfer via Bluetooth between a cell phone and the development board. It can support Bluetooth up to 5.0.
+**Note: The AW-XM458 module on the OK3588 carrier board integrates Bluetooth. This section demonstrates data transfer via Bluetooth between a cell phone and the development board. It can support Bluetooth up to 5.0.**
 
 1\. Bluetooth Configuration;
 
@@ -1479,11 +1469,11 @@ Connection successful
 
 ### 4.18 4G/5G
 
-**Description:
+**Note:**
 
 + **When using the IoT card to test, the module firmware version needs to be confirmed, the low firmware version is not supported, and EC05 needs to be upgraded;**
 + **Some IoT cards require a dedicated account number and password when dialing, and users adjust the commands according to the situation;**
-+ **The quectelCM --help command allows you to see the meaning of the relevant parameters.**
++ **The Quectel CM --help command allows you to see the meaning of the relevant parameters.**
 
 OK3588 supports 4G module EM05 and 5G RM500U RM500Q; before the development board startup, access the 4G/5G m, insert the SIM card, and start the development board.
 
@@ -1620,29 +1610,29 @@ root@ok3588:~# aplay -D plughw:3,0 test1.wav   //Use HDMI to play the acquired s
 
 Backlight level range (0--255), maximum level 255, 0 indicating turn off. After connecting the mipi screen on the mipi dsi0, power up and start. Enter the system and enter the following command in the terminal to perform the backlight test.
 
-1\. View supported backlight models
+1. View supported backlight models
 
 ```plain
 root@ok3588:~# ls /sys/class/backlight
 backlight-dsi0  backlight-dsi1  backlight-edp1     //Display the currently supported screen backlight model
 ```
 
-The following is an example of dsi0
+The following is an example of dsi0.
 
-1\. View the current screen backlight value:
+2. View the current screen backlight value:
 
 ```plain
 root@ok3588:~# cat /sys/class/backlight/backlight-dsi0/brightness
 150                                           //The current backlight value is 200
 ```
 
-2\. Backlight is off:
+3. Backlight is off:
 
 ```plain
 root@ok3588:~# echo 0 > /sys/class/backlight/backlight-dsi0/brightness                                              
 ```
 
-3\. LCD backlight is on:
+4. LCD backlight is on:
 
 ```plain
 root@ok3588:~# echo 125 > /sys/class/backlight/backlight-dsi0/brightness
@@ -1759,7 +1749,7 @@ forlinx@ok3588:~$ export DISPLAY=:0.0
 
 ### 5.1 Audio and Video Playback
 
-#### 5.1.1 Playing Audio and Video with Gst-play
+#### 5.1.1 Playing Audio and Video With Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
@@ -1775,7 +1765,7 @@ Redistribute latency...
 Reached end of play list.
 ```
 
-#### 5.1.2 Playing Video with Gst-launch
+#### 5.1.2 Playing Video With Gst-launch
 
 ```plain
 forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080p_60fps_h265-30S.mp4 ! qtdemux !  h265parse ! mppvideodec ! autovideosink
@@ -1984,13 +1974,13 @@ For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:
 
 ![Image](./images/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953752523_6ec8572a_9c72_4df2_baae_9334701b8352.png)
 
-**Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.**
+Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.
 
-**Self Path, refers to an output node of Rockchip ISP, which can only output up to 1080p resolution and is usually used for preview.**
+Self Path, refers to an output node of Rockchip ISP, which can only output up to 1080p resolution and is usually used for preview.
 
-**Statistics 3A**
+Statistics 3A
 
-**Input-params 3A parameter setting**
+Input-params 3A parameter setting
 
 The corresponding nodes of OV13855 camera are as follows:
 
@@ -2327,9 +2317,11 @@ This feature is useful when you need to download a separate image. This function
 
 FactoryTool is a factory batch OTG burning tool. It does not need to read the image and can do batch burning. In addition, it can burn some larger image files. If RKDevTool compatibility is not satisfied, you can try this method. Before using it, unzip it to a full English path, connect the development board and host computer with a Type-C cable, press and hold the recover button of the development board and don't release it, then press the reset button to reset the system, and release the recover button after about two seconds. There will be prompts on the Rockchip development tool : loader device found
 
-**Note: The condition for recognition is that the development board is powered up and the RECOVER key is in the pressed state.**
+**Note: **
 
-**Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
+- **The condition for recognition is that the development board is powered up and the RECOVER key is in the pressed state;**
+
+- **Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory.**
 
 Open the Rockchip development tool:
 

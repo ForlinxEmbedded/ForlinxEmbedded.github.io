@@ -10,6 +10,16 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the Android14.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+
+## Revision History
+
+|  **Date**  | **Manual Version** | **Revision History**                                         |
+| :--------: | :----------------: | ------------------------------------------------------------ |
+| 2025.09.01 |        V1.0        | OK3588-C_Android14.0_User’s Compilation Manual Initial Version |
+
 ## Overview
 
 <font style="color:#333333;">This manual is designed to enable you to quickly understand the </font><font style="color:#333333;">compilation process</font><font style="color:#333333;">of the products and familiarize yourselves with the </font><font style="color:#333333;">compilation</font><font style="color:#333333;">methods </font><font style="color:#333333;">of</font> <font style="color:#333333;">Forlinx</font><font style="color:#333333;"> products. The application needs to be cross-compiled on an </font><font style="color:#333333;">ubuntu</font><font style="color:#333333;">host before it can run on the development board. </font>By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.
@@ -52,16 +62,6 @@ docker-ce | 18.06.3~ce~3-0~ubuntu | http://mirrors.aliyun.com/docker-ce/linux/ub
 + //：Explanation of the instruction, no input required;
 + apt-cache madison docker-ce：Blue font on a gray background, indicating the relevant commands that need to be manually entered;
 + **<font style="color:black;">docker-ce \| 18.06.3</font>**<sub>**<font style="color:black;">ce</font>**</sub>**<font style="color:black;">3-0~ubuntu </font>**: The black font with gray background is the output information after the input command, and the bold font is the key information.
-
-## Application Scope
-
-This manual is mainly applicable to the Android14.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
-
-## Revision History
-
-| **Date**| **Manual Version**| **Revision History**|
-|:----------:|:----------:|----------|
-| 2025.09.01| V1.0| OK3588-C_Android14.0_User’s Compilation Manual Initial Version |
 
 ## 1\. VMware Virtual Machine Software Installation
 
