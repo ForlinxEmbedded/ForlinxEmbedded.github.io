@@ -4643,9 +4643,9 @@
 <li><p><strong>If the TYPECx_USB20_OTG_ID signal is used, to enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signal, and a 100ohm resistor should be connected in series and shall not be removed;</strong></p></li>
 <li><p><strong>When using the HOST function, it is recommended to add a current - limiting switch to the 5V power supply. The current - limiting value can be adjusted according to the application requirements. The current - limiting switch is controlled by a 3.3V GPIO. It is recommended to add capacitors of 22μF and over 100nF for filtering to the 5V power supply. If the USB port may be connected to a mobile hard disk, it is recommended to increase the filtering capacitor to over 100μF;</strong></p></li>
 <li><p><strong>According to the TYPE - C protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line;</strong></p></li>
-<li><p>**ESD devices must be added to all signals of the TYPE - C socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; **</p></li>
+<li><p><strong>ESD devices must be added to all signals of the TYPE - C socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF;</strong></p></li>
 <li><p><strong>The differential impedance of USB 2.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be ＜10mil;</strong></p></li>
-<li><p>**The differential impedance of USB 3.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be＜3mil. **</p></li>
+<li><p><strong>The differential impedance of USB 3.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be＜3mil.</strong></p></li>
 </ul>
 </section>
 </section>
@@ -5104,17 +5104,17 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>Option2</p></td>
-<td class="text-center"><p>Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane</p></td>
-<td class="text-center"><p>MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0</p></td>
+<tr class="row-even"><td class="text-center"><p><strong>Option2</strong></p></td>
+<td class="text-center"><p><strong>Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane</strong></p></td>
+<td class="text-center"><p><strong>MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0</strong></p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p></p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1</p></td>
+<td class="text-center"><p><strong>MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1</strong></p></td>
 </tr>
 </tbody>
 </table>
-<p>MIPI DPHY CSI1 RX interface mode:</p>
+<p>♦ MIPI DPHY CSI1 RX interface mode:</p>
 <ul class="simple">
 <li><p>Support x4Lane mode, MIPI_CSI1_D[3:0] data reference MIPI_CSI0_CLK0</p></li>
 <li><p>Support x2Lane+x2Lane mode:</p></li>
@@ -5129,13 +5129,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>Option2</p></td>
-<td class="text-center"><p>Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane</p></td>
-<td class="text-center"><p>MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0</p></td>
+<tr class="row-even"><td class="text-center"><p><strong>Option2</strong></p></td>
+<td class="text-center"><p><strong>Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane</strong></p></td>
+<td class="text-center"><p><strong>MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0</strong></p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p></p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1</p></td>
+<td class="text-center"><p><strong>MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -5863,7 +5863,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>3.  When implementing board-to-board connection, it is recommended to connect a 22 - 100 ohm resistor in series (the resistance value should meet SI test requirements), and reserve space for TVS devices.</strong></p>
+<ul class="simple">
+<li><p><strong>When implementing board-to-board connection, it is recommended to connect a 22 - 100 ohm resistor in series (the resistance value should meet SI test requirements), and reserve space for TVS devices.</strong></p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -5958,7 +5960,7 @@
 <p><img alt="Image" src="_images/1721609426616_4790d3d7_876e_4f8e_8467_db7b4d54c14b.png" /></p>
 <p><img alt="Image" src="_images/1721609548442_50922fdd_267f_4088_946d_ce5e92d6fc8e.png" /><img alt="Image" src="_images/1721609552427_91b3f9b0_a747_49e9_9881_4b44cff9fb06.png" /></p>
 <p><img alt="Image" src="_images/1721609574321_e24d5b40_2960_4883_b7e1_25f64fe23fb1.png" /><img alt="Image" src="_images/1721609591009_4a4881f9_3a16_4bec_93fe_f6a287ae7237.png" /><img alt="Image" src="_images/1721609575250_3c121a2a_920d_454f_ac19_3568ff1bb567.png" /><img alt="Image" src="_images/1721609575180_6c688743_9882_4a91_a6c2_8379a790fb5b.png" /><img alt="Image" src="_images/1721609575863_3e99ed8a_720b_4446_afc4_14498c83813f.png" /><img alt="Image" src="_images/1721609577925_f53c20a0_53a9_4969_b0d9_65611609538e.png" /></p>
-<p>**Note: **</p>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>The minimum system includes SoM power supply, system flash circuit, and debugging serial port circuit;</strong></p></li>
 <li><p><strong>The factory image of OK3588 - C will load the PCIE3.0 driver during startup. At this time, it will detect the two external clock input signals PCIE30_PORT0\1_REFCLK_IN_P\N;</strong></p></li>
