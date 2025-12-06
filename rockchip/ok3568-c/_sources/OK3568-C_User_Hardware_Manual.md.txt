@@ -47,9 +47,9 @@ A description of some of the symbols and formats associated with this manual:
 
 |                          **Format**                          | **Meaning**                                                  |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-|                             Note                             | Note or information that requires special attention, be sure to read carefully. |
-|                                                              | Relevant notes on the test chapters.                         |
-|                               ️                               | Indicates the related path.                                  |
+|                           **Note**                           | Note or information that requires special attention, be sure to read carefully. |
+|                              📚                               | Relevant notes on the test chapters.                         |
+|                              🛤️ ️️                              | Indicates the related path.                                  |
 | <font style="color:blue;">Blue font on gray background</font> | <font style="color:#000000;">Refers to commands entered at the command line (Manual input required).</font> |
 |         <font style="color:black;">Black font</font>         | Serial port output message after entering a command          |
 |       **<font style="color:black;">Bold black</font>**       | <font style="color:#000000;">Key information in the serial port output message</font> |
@@ -103,7 +103,7 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **Front**
 
-![](image.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1.png)
 
 **Back**
 
