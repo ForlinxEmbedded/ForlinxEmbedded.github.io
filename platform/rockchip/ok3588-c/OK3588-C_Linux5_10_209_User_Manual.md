@@ -191,7 +191,7 @@ Run CP210xVCPInstaller\_x64.exe directly after unzipping is complete, to ensure 
 **Note:**
 
 + **Serial port settings: baud rate 115200, data bit 8, stop bit 1, no parity bit, no flow control**
-+ **Serial terminal login: ** 
++ **Serial terminal login:** 
 
 **User name: forlinx**  
 
