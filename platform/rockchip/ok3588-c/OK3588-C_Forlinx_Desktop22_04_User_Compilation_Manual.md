@@ -10,6 +10,16 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the Forlinx Desktop22.04 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+
+## Revision History
+
+| **<font style="color:black;">Date</font>** | **<font style="color:black;">User Manual Version</font>** | **<font style="color:black;">SoM Version</font>** | **<font style="color:black;">Carrier Board Version</font>** | **<font style="color:black;">Revision History</font>**       |
+| :----------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------: | :---------------------------------------------------------: | ------------------------------------------------------------ |
+|                 04/11/2023                 |                           V1.0                            |                       V1.1                        |                       V1.1 and Above                        | OK3588-C Forlinx Desktop22.04 User’s Compilation Manual Initial Version |
+
 ## Overview
 
 <font style="color:#333333;">This manual is designed to enable users of the Forlinx Embedded development board to quickly understand the</font><font style="color:#333333;">compilation process</font><font style="color:#333333;">of the products and familiarize themselves with the </font><font style="color:#333333;">compilation</font> <font style="color:#333333;">methods </font><font style="color:#333333;">of </font><font style="color:#333333;">Forlinx</font><font style="color:#333333;"> products. The application needs to be cross-compiled on an </font><font style="color:#333333;">ubuntu</font><font style="color:#333333;">host before it can run on the development board.</font> By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.
@@ -51,16 +61,6 @@ OK3588-linux-source  OK3588-linux-source.tar.bz2
 + //: Explanation of the instruction, no input required.
 + <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: Blue font, indicating the relevant commands that need to be manually entered.
 + **<font style="color:black;">OK3588-linux-source</font>**：Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
-
-## Application Scope
-
-This manual is mainly applicable to the Forlinx Desktop22.04 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
-
-## Revision History
-
-| **<font style="color:black;">Date</font>** | **<font style="color:black;">User Manual Version</font>** | **<font style="color:black;">SoM Version</font>** | **<font style="color:black;">Carrier Board Version</font>** | **<font style="color:black;">Revision History</font>**       |
-| :----------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------: | :---------------------------------------------------------: | ------------------------------------------------------------ |
-|                 04/11/2023                 |                           V1.0                            |                       V1.1                        |                       V1.1 and Above                        | OK3588-C Forlinx Desktop22.04 User’s Compilation Manual Initial Version |
 
 ## 1\. VMware Virtual Machine Software Installation
 
@@ -508,7 +508,7 @@ forlinx@ubuntu: ~/3588/OK3588-linux-source$ sudo ./build.sh
 
 - Full Compilation (***R4***)
 
-**<font style="color:#DF2A3F;">Note: Do not use sudo to compile the R4 materials. You don’t need to use sudo for subsequent compilations either. Otherwise, you may encounter permission errors.</font>**
+**Note: Do not use sudo to compile the R4 materials. You don’t need to use sudo for subsequent compilations either. Otherwise, you may encounter permission errors.**
 
 :::color2 If you are using linux5.10.209 R4 kernel, you need to delete the defconfig file in the output/ directory first.
 
@@ -537,7 +537,7 @@ After successful compilation, the system image will be generated under the rockd
 
 Perform the operation in the kernel source code path.
 
-**<font style="color:#DF2A3F;">Note: Do not use sudo to compile the R4 materials. You don’t need to use sudo for subsequent compilations either. Otherwise, you may encounter permission errors.</font>**
+**Note: Do not use sudo to compile the R4 materials. You don’t need to use sudo for subsequent compilations either. Otherwise, you may encounter permission errors.**
 
 ```plain
 forlinx@ubuntu: ~/3588/OK3588_Linux_fs$ sudo ./build.sh kernel
@@ -551,7 +551,7 @@ The kernel in the update. img is not updated after successful compilation. Pleas
 
 Perform the operation in the source code path.
 
-**<font style="color:#DF2A3F;">Note: Do not use sudo to compile the R4 materials. You don’t need to use sudo for subsequent compilations either. Otherwise, you may encounter permission errors.</font>**
+**Note: Do not use sudo to compile the R4 materials. You don’t need to use sudo for subsequent compilations either. Otherwise, you may encounter permission errors.**
 
 ```plain
 forlinx@ubuntu: ~/3588/OK3588_Linux_fs$ sudo ./build.sh cleanall
