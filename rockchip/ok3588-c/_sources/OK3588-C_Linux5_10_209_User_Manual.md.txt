@@ -563,7 +563,7 @@ Write the target ip needing ping in the hostname field; after clicking the ping 
 
 **Note: If the development board time is abnormal, it will cause certificate problems. Do not shut down the power immediately after using the browser or the sync command at the command line. Otherwise, it may cause the browser to exit abnormally and not work properly, and can only be solved by re-flashing.**
 
-![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954745936_2b14cb7c_5b24_4d52_b285_03c603531ff6.jpeg)
+![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954745936_2b14cb7c_5b24_4d52_b285_03c603531ff6.png)
 
 Exit this browser via the upper navigation bar File->Quit.
 
