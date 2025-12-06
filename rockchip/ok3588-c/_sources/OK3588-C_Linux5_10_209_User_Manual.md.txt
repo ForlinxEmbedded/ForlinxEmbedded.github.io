@@ -1382,7 +1382,7 @@ root@ok3588-buildroot:/# ifdown –a
 root@ok3588-buildroot:/# ifup -a
 ```
 
-### 4.16 WIFI Test
+### 4.16 WiFi Test
 
 **Note: The network environment is different, so please set it according to the actual situation when you do this experiment.**
 
