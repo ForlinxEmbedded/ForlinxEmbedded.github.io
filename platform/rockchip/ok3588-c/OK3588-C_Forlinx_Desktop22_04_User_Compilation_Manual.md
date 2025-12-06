@@ -49,7 +49,7 @@ OK3588-linux-source  OK3588-linux-source.tar.bz2
 
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu.
 + //: Explanation of the instruction, no input required.
-+ <font style="color:blue;">ls</font>：Blue font, indicating the relevant commands that need to be manually entered.
++ <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: Blue font, indicating the relevant commands that need to be manually entered.
 + **<font style="color:black;">OK3588-linux-source</font>**：Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
 ## Application Scope
