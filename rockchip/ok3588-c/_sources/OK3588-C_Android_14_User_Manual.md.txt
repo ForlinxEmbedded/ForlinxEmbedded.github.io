@@ -56,7 +56,7 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;
 + //: Explanation of the instruction, no input required;
-+ <font style="color:blue;">Ls: </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;
++ <font style="color:blue;"><font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>:  </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;
 + **OK3588-android-source**: The bottom black font is the output information after the input command, and the bold font is the key information. Here is the packed file system.
 
 ## 1\. OK3588 Development Board Description
@@ -81,7 +81,7 @@ Connection method is board-to-board, and main interfaces are shown in the figure
 
 **Note: For the industrial-grade RK3588J SoM, to better test the maximum performance of this SOC, starting from version R4 and subsequent versions, the SoM in the user materials will default to operate in overclocking mode (Without performance requirements, it is recommended to modify it to the normal mode).**
 
-Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ”
+Refer to "Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ".
 
 Table 3-2 Recommended operating conditions
 
@@ -314,7 +314,7 @@ b: primary display resolution => 1920x1080p50
 
 This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again
 
-Note: This method has a higher priority than the screen selection in U-Boot and the DisplayHwConfig application. After modifying the device tree, the selection in U-Boot will not take effect.
+**Note: This method has a higher priority than the screen selection in U-Boot and the DisplayHwConfig application. After modifying the device tree, the selection in U-Boot will not take effect.**
 
 Device tree path: kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-Common.dtsi
 
@@ -911,7 +911,7 @@ Click the video button to record the video:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1721893524238_9db0bd0a_734c_4aa2_93b4_27d6733ef48a.png)
 
-### 3.22 HDMI Resolution Setting Test
+### 3.22 HDMI Resolution Settings Test
 
 OK3588 platform supports dynamic setting of HDMI resolution.
 
@@ -953,7 +953,7 @@ Then click "Clear All Data".
 
 Wait for OK3588 to restore the default factory settings. Please do not power off during the process of restoring the factory settings.
 
-### 3.24 APK Installation with TF Card
+### 3.24 APK Installation With TF Card
 
 After loading the TF card according to the previous steps, you can see an APK file after entering the TF card directory.
 
@@ -1005,7 +1005,7 @@ Record the "IP address and port" of the current WIFI.
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940889678_6e117ba5_1314_4137_a3ad_93512f79c8ae.png)
 
-Open the window command and control window, type "adb connect 192.168.1.61:43985" to connect to wifi:
+Open the window command and control window, type "adb connect 192.168.1.61:43985" to connect to WiFi:
 
 ![Image](./images/OK3588-C_Android_14_User_Manual/1718940889861_17a6067b_558b_4862_9348_81ceaca8446f.png)
 

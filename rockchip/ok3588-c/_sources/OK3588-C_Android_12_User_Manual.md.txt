@@ -57,7 +57,7 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;
 + //: Explanation of the instruction, no input required;
-+ <font style="color:blue;">Ls: </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;
++ <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: Blue font on a gray background, indicating relevant commands that need to be entered manually;
 + <font style="color:black;background-color:#d9d9d9;">OK3588-android-source: </font>Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
 ## 1\. OK3588 Development Board Description

@@ -55,7 +55,7 @@ OK3588-linux-source  OK3588-linux-source.tar.bz2
 
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;
 + //: Explanation of the instruction, no input required;
-+ <font style="color:blue;">ls</font>: Blue font, indicating the relevant commands that need to be manually entered;
++ <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: Blue font, indicating the relevant commands that need to be manually entered;
 + **OK3588-linux-source:** Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
 ## 1. OK3588 Development Board Description
@@ -1975,7 +1975,7 @@ Table of hardware codec parameters for the OK3588 platform:
 
 ### 5.1 Audio and Video Playback
 
-#### 5.1.1 Playing Audio and Video with Gst-play
+#### 5.1.1 Playing Audio and Video With Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 

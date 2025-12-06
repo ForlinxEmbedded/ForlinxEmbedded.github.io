@@ -125,9 +125,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#ov13855-camera-test">3.21.2 OV13855 Camera Test</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#hdmi-resolution-setting-test">3.22 HDMI Resolution Setting Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hdmi-resolution-settings-test">3.22 HDMI Resolution Settings Test</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#factory-reset">3.23 Factory Reset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#apk-installation-with-tf-card">3.24 APK Installation with TF Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apk-installation-with-tf-card">3.24 APK Installation With TF Card</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wifi-adb-test">3.25 WiFi ADB Test</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#navigation-and-status-bar-settings">3.26 Navigation and Status Bar Settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#artificial-intelligence-test">3.27 Artificial Intelligence Test</a></li>
@@ -296,7 +296,7 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 <ul class="simple">
 <li><p>forlinx&#64;ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;</p></li>
 <li><p>//: Explanation of the instruction, no input required;</p></li>
-<li><p><font style="color:blue;">Ls: </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;</p></li>
+<li><p><font style="color:blue;"><font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>:  </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;</p></li>
 <li><p><strong>OK3588-android-source</strong>: The bottom black font is the output information after the input command, and the bold font is the key information. Here is the packed file system.</p></li>
 </ul>
 </section>
@@ -313,7 +313,7 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 <h3>1.1 CPU/GPU/NPU Frequency Description<a class="headerlink" href="#cpu-gpu-npu-frequency-description" title="Link to this heading"></a></h3>
 <p><strong>RK3588J industrial grade SoM frequencies are described below:</strong></p>
 <p><strong>Note: For the industrial-grade RK3588J SoM, to better test the maximum performance of this SOC, starting from version R4 and subsequent versions, the SoM in the user materials will default to operate in overclocking mode (Without performance requirements, it is recommended to modify it to the normal mode).</strong></p>
-<p>Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ”</p>
+<p>Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf “.</p>
 <p>Table 3-2 Recommended operating conditions</p>
 <table class="docutils align-default">
 <thead>
@@ -684,7 +684,7 @@ b:<span class="w"> </span>primary<span class="w"> </span>display<span class="w">
 <section id="kernel-device-tree-specification">
 <h4>2.4.2 Kernel Device Tree Specification<a class="headerlink" href="#kernel-device-tree-specification" title="Link to this heading"></a></h4>
 <p>This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again</p>
-<p>Note: This method has a higher priority than the screen selection in U-Boot and the DisplayHwConfig application. After modifying the device tree, the selection in U-Boot will not take effect.</p>
+<p><strong>Note: This method has a higher priority than the screen selection in U-Boot and the DisplayHwConfig application. After modifying the device tree, the selection in U-Boot will not take effect.</strong></p>
 <p>Device tree path: kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-Common.dtsi</p>
 <p>In the kernel source code, open the device dtsi file and find the following node:</p>
 <p><img alt="Image" src="_images/1718940830946_1935c571_9a4a_436b_abc6_ddbe18e077371.png" /></p>
@@ -1109,8 +1109,8 @@ S
 <p><img alt="Image" src="_images/1721893524238_9db0bd0a_734c_4aa2_93b4_27d6733ef48a1.png" /></p>
 </section>
 </section>
-<section id="hdmi-resolution-setting-test">
-<h3>3.22 HDMI Resolution Setting Test<a class="headerlink" href="#hdmi-resolution-setting-test" title="Link to this heading"></a></h3>
+<section id="hdmi-resolution-settings-test">
+<h3>3.22 HDMI Resolution Settings Test<a class="headerlink" href="#hdmi-resolution-settings-test" title="Link to this heading"></a></h3>
 <p>OK3588 platform supports dynamic setting of HDMI resolution.</p>
 <p>Click “<img alt="Image" src="_images/1718940883852_a3c1f1bf_e337_4385_a7a7_d93b311dd0791.png" />”, on the application interface to enter the setting interface:</p>
 <p><img alt="Image" src="_images/1718940884012_037d02cd_7df3_4e2d_aa1a_05b8e2c82de7.png" /></p>
@@ -1135,7 +1135,7 @@ S
 <p>Wait for OK3588 to restore the default factory settings. Please do not power off during the process of restoring the factory settings.</p>
 </section>
 <section id="apk-installation-with-tf-card">
-<h3>3.24 APK Installation with TF Card<a class="headerlink" href="#apk-installation-with-tf-card" title="Link to this heading"></a></h3>
+<h3>3.24 APK Installation With TF Card<a class="headerlink" href="#apk-installation-with-tf-card" title="Link to this heading"></a></h3>
 <p>After loading the TF card according to the previous steps, you can see an APK file after entering the TF card directory.</p>
 <p><img alt="Image" src="_images/1718940885984_1018124e_d1da_4141_abdc_0394482e38e8.png" /></p>
 <p><img alt="Image" src="_images/1718940886206_1b506013_3e51_4065_a8c6_3256076b7930.png" /></p>
@@ -1163,7 +1163,7 @@ S
 <p><img alt="Image" src="_images/1718940889471_0e5e95a0_8aa4_4f2c_af95_ad215feccaad.png" /></p>
 <p>Record the “IP address and port” of the current WIFI.</p>
 <p><img alt="Image" src="_images/1718940889678_6e117ba5_1314_4137_a3ad_93512f79c8ae.png" /></p>
-<p>Open the window command and control window, type “adb connect 192.168.1.61:43985” to connect to wifi:</p>
+<p>Open the window command and control window, type “adb connect 192.168.1.61:43985” to connect to WiFi:</p>
 <p><img alt="Image" src="_images/1718940889861_17a6067b_558b_4862_9348_81ceaca8446f.png" /></p>
 <p>Type “adb devices” to see the connected devices. Enter “adb shell” to access the device terminal.</p>
 <p><img alt="Image" src="_images/1718940890105_8a11e591_37cf_438b_8f31_172782b5bc1f.png" /></p>

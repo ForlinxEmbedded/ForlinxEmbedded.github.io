@@ -60,7 +60,7 @@ docker-ce | 18.06.3~ce~3-0~ubuntu | http://mirrors.aliyun.com/docker-ce/linux/ub
 
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the user forlinx is used on the development environment ubuntu for operations.
 +  //：Explanation of the instruction, no input required.
-+ <font style="color:blue;">apt-cache madison docker-ce</font>: Blue font on a gray background, indicating the relevant commands that need to be manually entered.
++ <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: Blue font on a gray background, indicating the relevant commands that need to be manually entered.
 + **docker-ce | 18.06.3~ce~3-0~ubuntu:** The black font with gray background is the output information after the input command, and the bold font is the key information.
 
 ## 1\. VMware Virtual Machine Software Installation
