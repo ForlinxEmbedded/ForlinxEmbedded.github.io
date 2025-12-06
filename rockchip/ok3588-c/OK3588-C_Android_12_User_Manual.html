@@ -76,13 +76,13 @@
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html">Android14.0_User’s Compilation Manual_V1.0</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Android 12.0_User’s Manual_V 1.3</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ok3588-development-board-description">1. OK3588 Development Board Description</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#cpu-gpu-npu-frequency-description">1.2 CPU/GPU/NPU Frequency Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#android12-system-software-resources-features"><strong>1.3 Android12 System Software Resources Features</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table"><strong>1.4 eMMC Memory Partition Table</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#android12-system-software-resources-features">1.3 Android12 System Software Resources Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table">1.4 EMMC Memory Partition Table</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
@@ -104,7 +104,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#android-function-use-and-test">3. Android Function Use and Test</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#main-interface-display"><strong>3.1 Main Interface Display</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#application"><strong>3.2 Application</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#language-setting"><strong>3.3 Language Setting</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#language-settings"><strong>3.3 Language Settings</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#picture-and-audio-view"><strong>3.4 Picture and Audio View</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#multimedia-test"><strong>3.5 Multimedia Test</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#recording-supports-mic-input"><strong>3.6 Recording (Supports Mic Input)</strong></a></li>
@@ -114,7 +114,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#ethernet-test"><strong>3.10 Ethernet Test</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wifi-internet"><strong>3.11 WiFi Internet</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wifi-hotspot-test"><strong>3.12 WiFi Hotspot Test</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#g-4g-module-test">3.13 4G/4G Module Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-5g-module-test">3.13 4G/5G Module Test</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bluetooth-test"><strong>3.14 Bluetooth Test</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#key-test-sleep-wake-up"><strong>3.15 Key Test (Sleep Wake-up)</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tf-card-and-usb-storage-test"><strong>3.16 TF Card and USB Storage Test</strong></a></li>
@@ -206,6 +206,49 @@
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This manual is mainly applicable to the Android12.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:black;">Date</font></strong></p></th>
+<th class="head text-center"><p><strong><font style="color:black;">User Manual Version</font></strong></p></th>
+<th class="head text-center"><p><strong><font style="color:black;">SoM Version</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">Carrier Board Version</font></strong></p></th>
+<th class="head"><p><strong><font style="color:black;">Revision History</font></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>01/12/2022</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>V1.1</p></td>
+<td><p>OK3588-C Android12.0 User’s Manual Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>04/11/2023</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>V1.1 and Above</p></td>
+<td><p>1. Adding a description of flashing separate image in OTG flashing chapter;         2. Modifying maskroom flashing description.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>16/01/2024</p></td>
+<td class="text-center"><p>V1.2</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>V1.1 and Above</p></td>
+<td><p>Correcting the description regarding the OV5645; it now supports the OV5645 camera.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>21/03/2024</p></td>
+<td class="text-center"><p>V1.3</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>V1.1 and Above</p></td>
+<td><p>Adding CPU/GPU/NPU frequency description.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p><font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the </font>user’s understanding, mainly for practical use. Please refer to “OK3588–C_Android12 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods, development environment construction, etc.</p>
@@ -263,50 +306,6 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 <li><p><font style="color:black;background-color:#d9d9d9;">OK3588-android-source: </font>Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.</p></li>
 </ul>
 </section>
-<hr class="docutils" />
-<section id="application-scope">
-<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
-<p>This manual is mainly applicable to the Android12.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
-</section>
-<section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:black;">Date</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:black;">User Manual Version</font></strong></p></th>
-<th class="head text-center"><p><strong><font style="color:black;">SoM Version</font></strong></p></th>
-<th class="head"><p><strong><font style="color:black;">Carrier Board Version</font></strong></p></th>
-<th class="head"><p><strong><font style="color:black;">Revision History</font></strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>01/12/2022</p></td>
-<td class="text-center"><p>V1.0</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td><p>V1.1</p></td>
-<td><p>OK3588-C Android12.0 User’s Manual Initial Version</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>04/11/2023</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td><p>V1.1 and Above</p></td>
-<td><p>1. Adding a description of flashing separate image in OTG flashing chapter;         2. Modifying maskroom flashing description.</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>16/01/2024</p></td>
-<td class="text-center"><p>V1.2</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td><p>V1.1 and Above</p></td>
-<td><p>Correcting the description regarding the OV5645; it now supports the OV5645 camera.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p>21/03/2024</p></td>
-<td class="text-center"><p>V1.3</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td><p>V1.1 and Above</p></td>
-<td><p>Adding CPU/GPU/NPU frequency description.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="ok3588-development-board-description">
 <h2>1. OK3588 Development Board Description<a class="headerlink" href="#ok3588-development-board-description" title="Link to this heading"></a></h2>
 <p>RK3588 is a low-power, high-performance processor based on ARM64 architecture, which includes 4-core Cortex-A55 and 4-core Conrtex-A76 as well as independent NEON processor and neural network processor NPU, and it can be applied to computers, cell phones, personal mobile Internet, and digital multimedia devices.</p>
@@ -329,35 +328,33 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Maximum CPU A76 frequency, overclocking mode ②</p></td>
-<td><p>2.0GHz</p></td>
+<tr class="row-even"><td><p><strong>Maximum CPU A76 frequency, overclocking mode ②</strong></p></td>
+<td><p><strong>2.0GHz</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p>Maximum CPU A55 frequency, normal mode ①</p></td>
-<td><p>1.3GHz</p></td>
+<tr class="row-odd"><td><p><strong>Maximum CPU A55 frequency, normal mode ①</strong></p></td>
+<td><p><strong>1.3GHz</strong></p></td>
 </tr>
-<tr class="row-even"><td><p>Maximum CPU A55 frequency, overclocking mode ②</p></td>
-<td><p>1.7GHz</p></td>
+<tr class="row-even"><td><p><strong>Maximum CPU A55 frequency, overclocking mode ②</strong></p></td>
+<td><p><strong>1.7GHz</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p>Maximum GPU frequency, normal mode ①</p></td>
-<td><p>700MHz</p></td>
+<tr class="row-odd"><td><p><strong>Maximum GPU frequency, normal mode ①</strong></p></td>
+<td><p><strong>700MHz</strong></p></td>
 </tr>
-<tr class="row-even"><td><p>Maximum GPU frequency, overclocking mode ②</p></td>
-<td><p>850MHz</p></td>
+<tr class="row-even"><td><p><strong>Maximum GPU frequency, overclocking mode ②</strong></p></td>
+<td><p><strong>850MHz</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p>Maximum NPU frequency, normal mode ①</p></td>
-<td><p>800MHz</p></td>
+<tr class="row-odd"><td><p><strong>Maximum NPU frequency, normal mode ①</strong></p></td>
+<td><p><strong>800MHz</strong></p></td>
 </tr>
-<tr class="row-even"><td><p>Maximum NPU frequency, overclocking mode ②</p></td>
-<td><p>950MHz</p></td>
+<tr class="row-even"><td><p><strong>Maximum NPU frequency, overclocking mode ②</strong></p></td>
+<td><p><strong>950MHz</strong></p></td>
 </tr>
 </tbody>
 </table>
-<ol class="arabic simple">
-<li><p>Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;</p></li>
-<li><p>Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. Running in overclocking mode in a long time may shorten the chip’s life, especially at high temperatures.</p></li>
-</ol>
-<p>To switch to “normal mode”, you need to add # include “rk3588j.dtsi” to the reference in the kernel device tree. The path is:</p>
-<p>OK3588-android-source/kernel-5.10/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</p>
+<p>Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;</p>
+<p>Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. Running in overclocking mode in a long time may shorten the chip’s life, especially at high temperatures.</p>
+<p>To switch to “normal mode”, you need to add # include “rk3588j.dtsi” to the reference in the kernel device tree.</p>
+<p>The path is: OK3588-android-source/kernel-5.10/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi.</p>
 <p><img alt="Image" src="_images/1718940821698_9b5343e2_7076_4e7c_a7f7_2c8aab90f447.png" /></p>
 <p><strong>RK3588 commercial grade SoM frequencies are described below:</strong></p>
 <p>Refer to “Rockchip RK3588 Datasheet V1.7-17/11/2023.pdf ”</p>
@@ -369,185 +366,205 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Maximum CPU A55 frequency</p></td>
-<td><p>1.8GHz</p></td>
+<tr class="row-even"><td><p><strong>Maximum CPU A55 frequency</strong></p></td>
+<td><p><strong>1.8GHz</strong></p></td>
 </tr>
-<tr class="row-odd"><td><p>Maximum GPU frequency</p></td>
-<td><p>1GHz</p></td>
+<tr class="row-odd"><td><p><strong>Maximum GPU frequency</strong></p></td>
+<td><p><strong>1GHz</strong></p></td>
 </tr>
-<tr class="row-even"><td><p>Maximum NPU frequency</p></td>
-<td><p>1GHz</p></td>
+<tr class="row-even"><td><p><strong>Maximum NPU frequency</strong></p></td>
+<td><p><strong>1GHz</strong></p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="android12-system-software-resources-features">
-<h3><strong>1.3 Android12 System Software Resources Features</strong><a class="headerlink" href="#android12-system-software-resources-features" title="Link to this heading"></a></h3>
+<h3>1.3 Android12 System Software Resources Features<a class="headerlink" href="#android12-system-software-resources-features" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>Device</strong></p></th>
-<th class="head"><p><strong>Location of driver source code in the kernel</strong></p></th>
-<th class="head"><p><strong>Device Name</strong></p></th>
+<tr class="row-odd"><th class="head"><p>Device</p></th>
+<th class="head"><p>Location of driver source code in the kernel</p></th>
+<th class="head"><p>Device Name</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>LCD Backlight Driver</strong></p></td>
-<td><p><strong>drivers/video/backlight/pwm_bl.c</strong></p></td>
-<td><p><strong>/sys/class/backlight</strong></p></td>
+<tr class="row-even"><td><p>LCD Backlight Driver</p></td>
+<td><p>drivers/video/backlight/pwm_bl.c</p></td>
+<td><p>/sys/class/backlight</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>USB Port</strong></p></td>
-<td><p><strong>drivers/usb/storage/</strong></p></td>
+<tr class="row-odd"><td><p>USB Port</p></td>
+<td><p>drivers/usb/storage/</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>USB Mouse</strong></p></td>
-<td><p><strong>drivers/hid/usbhid/</strong></p></td>
-<td><p><strong>/dev/input/mice</strong></p></td>
+<tr class="row-even"><td><p>USB Mouse</p></td>
+<td><p>drivers/hid/usbhid/</p></td>
+<td><p>/dev/input/mice</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Ethernet</strong></p></td>
-<td><p><strong>drivers/net/ethernet/stmicro/stmmac</strong></p></td>
+<tr class="row-odd"><td><p>Ethernet</p></td>
+<td><p>drivers/net/ethernet/stmicro/stmmac</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>SD/micro TF card driver</strong></p></td>
-<td><p><strong>drivers/mmc/host/dw_mmc-rockchip.c</strong></p></td>
-<td><p><strong>/dev/block/mmcblk1pX</strong></p></td>
+<tr class="row-even"><td><p>SD/micro TF card driver</p></td>
+<td><p>drivers/mmc/host/dw_mmc-rockchip.c</p></td>
+<td><p>/dev/block/mmcblk1pX</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>EMMC Driver</strong></p></td>
-<td><p><strong>drivers/mmc/host/dw_mmc-rockchip.c</strong></p></td>
-<td><p><strong>/dev/block/mmcblk2pX</strong></p></td>
+<tr class="row-odd"><td><p>EMMC Driver</p></td>
+<td><p>drivers/mmc/host/dw_mmc-rockchip.c</p></td>
+<td><p>/dev/block/mmcblk2pX</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>OV13850</strong></p></td>
-<td><p><strong>drivers/media/i2c/ov13850.c</strong></p></td>
-<td><p><strong>/dev/videoX</strong></p></td>
+<tr class="row-even"><td><p>OV13850</p></td>
+<td><p>drivers/media/i2c/ov13850.c</p></td>
+<td><p>/dev/videoX</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>LCD Controller</strong></p></td>
-<td><p><strong>drivers/gpu/drm/rockchip/rockchip_drm_vop.c</strong></p></td>
+<tr class="row-odd"><td><p>LCD Controller</p></td>
+<td><p>drivers/gpu/drm/rockchip/rockchip_drm_vop.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>MIPI CSI</strong></p></td>
-<td><p><strong>drivers/phy/rockchip/phy-rockchip-mipi-rx.c</strong></p></td>
+<tr class="row-even"><td><p>MIPI CSI</p></td>
+<td><p>drivers/phy/rockchip/phy-rockchip-mipi-rx.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>MIPI DSI</strong></p></td>
-<td><p><strong>drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c</strong></p></td>
+<tr class="row-odd"><td><p>MIPI DSI</p></td>
+<td><p>drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>LCD Touch Driver</strong></p></td>
-<td><p><strong>drivers/input/touchscreen/goodix.c</strong><br/><strong>drivers/input/touchscreen/edt-ft5x06.c</strong></p></td>
-<td><p><strong>/dev/input/eventX</strong></p></td>
+<tr class="row-even"><td><p>LCD Touch Driver</p></td>
+<td><p>drivers/input/touchscreen/goodix.c<br/>drivers/input/touchscreen/edt-ft5x06.c</p></td>
+<td><p>/dev/input/eventX</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>RTC Real Time Clock Driver</strong></p></td>
-<td><p><strong>drivers/rtc/rtc-rx8010.c</strong><br/><strong>drivers/rtc/rtc-pcf8563.c</strong></p></td>
-<td><p><strong>/dev/rtc0</strong></p></td>
+<tr class="row-odd"><td><p>RTC Real Time Clock Driver</p></td>
+<td><p>drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c</p></td>
+<td><p>/dev/rtc0</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>serial port</strong></p></td>
-<td><p><strong>drivers/tty/serial/8250/8250_dw.c</strong></p></td>
-<td><p><strong>/dev/ttySX</strong></p></td>
+<tr class="row-even"><td><p>serial port</p></td>
+<td><p>drivers/tty/serial/8250/8250_dw.c</p></td>
+<td><p>/dev/ttySX</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Key Driver</strong></p></td>
-<td><p><strong>drivers/input/keyboard/adc-keys.c</strong></p></td>
-<td><p><strong>/dev/input/eventX</strong></p></td>
+<tr class="row-odd"><td><p>Key Driver</p></td>
+<td><p>drivers/input/keyboard/adc-keys.c</p></td>
+<td><p>/dev/input/eventX</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>LED</strong></p></td>
-<td><p><strong>drivers/leds/leds-gpio.c</strong></p></td>
+<tr class="row-even"><td><p>LED</p></td>
+<td><p>drivers/leds/leds-gpio.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>I2S</strong></p></td>
-<td><p><strong>sound/soc/rockchip/rockchip_i2s.c</strong></p></td>
+<tr class="row-odd"><td><p>I2S</p></td>
+<td><p>sound/soc/rockchip/rockchip_i2s.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Audio Driver</strong></p></td>
-<td><p><strong>sound/soc/codecs/rk817_codec.c</strong></p></td>
-<td><p><strong>/dev/snd/</strong></p></td>
+<tr class="row-even"><td><p>Audio Driver</p></td>
+<td><p>sound/soc/codecs/rk817_codec.c</p></td>
+<td><p>/dev/snd/</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>PMIC</strong></p></td>
-<td><p><strong>drivers/mfd/rk808.c</strong></p></td>
+<tr class="row-odd"><td><p>PMIC</p></td>
+<td><p>drivers/mfd/rk808.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>PCIE</strong></p></td>
-<td><p><strong>drivers/pci/controller/pcie-rockchip.c</strong></p></td>
+<tr class="row-even"><td><p>PCIE</p></td>
+<td><p>drivers/pci/controller/pcie-rockchip.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Watchdog</strong></p></td>
-<td><p><strong>drivers/watchdog/dw_wdt.c</strong></p></td>
+<tr class="row-odd"><td><p>Watchdog</p></td>
+<td><p>drivers/watchdog/dw_wdt.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>SPI</strong></p></td>
-<td><p><strong>drivers/spi/spi-rockchip.c</strong></p></td>
+<tr class="row-even"><td><p>SPI</p></td>
+<td><p>drivers/spi/spi-rockchip.c</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>PWM</strong></p></td>
-<td><p><strong>drivers/video/backlight/pwm_bl.c</strong></p></td>
+<tr class="row-odd"><td><p>PWM</p></td>
+<td><p>drivers/video/backlight/pwm_bl.c</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="emmc-memory-partition-table">
-<h3><strong>1.4 eMMC Memory Partition Table</strong><a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h3>
+<h3>1.4 EMMC Memory Partition Table<a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h3>
 <p>The following table is the eMMC memory partition information of Android operating system (the size of a block is 512bit when calculating):</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>Partition Index</strong></p></th>
-<th class="head"><p><strong>Name</strong></p></th>
-<th class="head"><p><strong>Offset / block</strong></p></th>
-<th class="head"><p><strong>Size/block</strong></p></th>
-<th class="head"><p><strong>content</strong></p></th>
+<tr class="row-odd"><th class="head"><p>Partition Index</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Offset / Block</p></th>
+<th class="head"><p>Size/Block</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>N/A</p></td>
 <td><p>security</p></td>
-<td><p>0x00000000</p></td>
-<td><p>0x00004000</p></td>
-<td><p>MiniLoaderAll.bin</p></td>
+<td><p>0x00002000</p></td>
+<td><p>0x00002000</p></td>
 </tr>
 <tr class="row-odd"><td><p>1</p></td>
 <td><p>uboot</p></td>
 <td><p>0x00004000</p></td>
 <td><p>0x00004000</p></td>
-<td><p>uboot.img</p></td>
 </tr>
 <tr class="row-even"><td><p>2</p></td>
 <td><p>trust</p></td>
-<td><p>0x00008000</p></td>
+<td><p>0x00006000</p></td>
 <td><p>0x00002000</p></td>
-<td><p>misc.img</p></td>
 </tr>
 <tr class="row-odd"><td><p>3</p></td>
+<td><p>misc</p></td>
+<td><p>0x00008000</p></td>
+<td><p>0x00002000</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
 <td><p>dtbo</p></td>
 <td><p>0x0000a000</p></td>
 <td><p>0x00002000</p></td>
-<td><p>dtbo.img</p></td>
 </tr>
-<tr class="row-even"><td><p>4</p></td>
+<tr class="row-odd"><td><p>5</p></td>
 <td><p>vbmeta</p></td>
 <td><p>0x0000c000</p></td>
 <td><p>0x00000800</p></td>
-<td><p>vbmeta.img</p></td>
-</tr>
-<tr class="row-odd"><td><p>5</p></td>
-<td><p>boot</p></td>
-<td><p>0x0000c800</p></td>
-<td><p>0x0001b800</p></td>
-<td><p>boot.img</p></td>
 </tr>
 <tr class="row-even"><td><p>6</p></td>
-<td><p>recovery</p></td>
-<td><p>0x00020800</p></td>
-<td><p>0x00030000</p></td>
-<td><p>recovery.img</p></td>
+<td><p>boot</p></td>
+<td><p>0x0000c800</p></td>
+<td><p>0x00020000</p></td>
 </tr>
 <tr class="row-odd"><td><p>7</p></td>
-<td><p>baseparameter</p></td>
-<td><p>0x001d8800</p></td>
-<td><p>0x00000800</p></td>
-<td><p>baseparameter.img</p></td>
+<td><p>recovery</p></td>
+<td><p>0x0002c800</p></td>
+<td><p>0x00030000</p></td>
 </tr>
 <tr class="row-even"><td><p>8</p></td>
+<td><p>backup</p></td>
+<td><p>0x0005c800</p></td>
+<td><p>0x000c0000</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>cache</p></td>
+<td><p>0x0011c800</p></td>
+<td><p>0x000c0000</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>metadata</p></td>
+<td><p>0x001dc800</p></td>
+<td><p>0x00020000</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>frp</p></td>
+<td><p>0x001fc800</p></td>
+<td><p>0x00000400</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>baseparameter</p></td>
+<td><p>0x001fcc00</p></td>
+<td><p>0x00000800</p></td>
+</tr>
+<tr class="row-odd"><td><p>13</p></td>
 <td><p>super</p></td>
-<td><p>0x001d9000</p></td>
+<td><p>0x001fd400</p></td>
+<td><p>0x00614000</p></td>
+</tr>
+<tr class="row-even"><td><p>14</p></td>
+<td><p>userdata</p></td>
+<td><p>0x00811400</p></td>
 <td><p></p></td>
-<td><p>super.img</p></td>
 </tr>
 </tbody>
 </table>
@@ -671,8 +688,8 @@ b: primary display resolution =&gt; 1920x1080p50
 </pre></div>
 </div>
 </section>
-<section id="android-setting">
-<h5>2.4.1.2 Android Setting<a class="headerlink" href="#android-setting" title="Link to this heading"></a></h5>
+<section id="android-settings">
+<h5>2.4.1.2 Android Settings<a class="headerlink" href="#android-settings" title="Link to this heading"></a></h5>
 <p>At the top of the uboot settings menu, type 3 to go to the android settings menu bar.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
 android_navigationbar==&gt;off android_topsliding==&gt;off android_root_access==&gt;off
@@ -692,7 +709,7 @@ Select  android config
 <section id="kernel-device-tree-specification">
 <h4>2.4.2 Kernel Device Tree Specification<a class="headerlink" href="#kernel-device-tree-specification" title="Link to this heading"></a></h4>
 <p>This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again</p>
-<p><strong>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
+<p><strong>Note: This method has higher priority than the Uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
 <p>The device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</p>
 <p>In the kernel source code, open the device dtsi file and find the following node:</p>
 <p><img alt="Image" src="_images/1718940830946_1935c571_9a4a_436b_abc6_ddbe18e07737.png" /></p>
@@ -700,8 +717,8 @@ Select  android config
 <p><strong>Parameter Description:</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p></p></th>
-<th class="head"><p><strong>Meaning</strong></p></th>
+<tr class="row-odd"><th class="head"><p>Parameter Description</p></th>
+<th class="head"><p>Meaning</p></th>
 </tr>
 </thead>
 <tbody>
@@ -752,8 +769,11 @@ Select  android config
 <p>MIPI0/1 optional parameters are: “VP2”, “VP3”;</p>
 <p>The RGB optional parameter is: “VP3”;</p>
 <p>The primary_display parameter depends on the actual display interface assigned to get the VP.</p>
-<p><strong>Note: When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display.</strong></p>
-<p><strong>For the display interface set to “OFF”, blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.</strong></p>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display;</strong></p></li>
+<li><p><strong>For the display interface set to “OFF”, blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.</strong></p></li>
+</ul>
 <p><strong>Examples</strong>:</p>
 <p>Assign VP0 to HDMI0, VP1 to HDMI1, VP2 unused, and VP3 for RGB use. Set the main screen to HDMI0.</p>
 <p><img alt="Image" src="_images/1718940831160_05a365a0_cb31_4721_8ec5_c7e9cdb3d04a.png" /></p>
@@ -778,8 +798,8 @@ Select  android config
 <p><img alt="Image" src="_images/3.png" /></p>
 <p><strong>Note: After software version updates, there may be minor differences, which do not represent the actual images for each subsequent version update and are provided for reference only.</strong></p>
 </section>
-<section id="language-setting">
-<h3><strong>3.3 Language Setting</strong><a class="headerlink" href="#language-setting" title="Link to this heading"></a></h3>
+<section id="language-settings">
+<h3><strong>3.3 Language Settings</strong><a class="headerlink" href="#language-settings" title="Link to this heading"></a></h3>
 <p>Click “<img alt="Image" src="_images/1718940852445_596f8ecb_5e13_45b8_a0a9_eb9b20e905cd.png" />”, on the application interface to enter the setting interface:</p>
 <p><img alt="Image" src="_images/4.png" /></p>
 <p>Click application interface to enter the system interface.</p>
@@ -869,10 +889,7 @@ Select  android config
 <section id="ethernet-test">
 <h3><strong>3.10 Ethernet Test</strong><a class="headerlink" href="#ethernet-test" title="Link to this heading"></a></h3>
 <p>OK3588 has two Gigabit NICs on board (Ethernet ETH0 and Ethernet ETH1).</p>
-<p><strong>Description:</strong></p>
-<ul class="simple">
-<li><p><strong>When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.</strong></p></li>
-</ul>
+<p><strong>Note: When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.</strong></p>
 <p>1. Gigabit network port test:</p>
 <p>Prepare a router and a network cable that can be connected to the external network port.</p>
 <p>After inserting the network cable, click “<img alt="Image" src="_images/1718940861904_5044199e_b450_41db_a258_99db21943c31.png" />” on the application interface:</p>
@@ -895,7 +912,7 @@ Select  android config
 </section>
 <section id="wifi-internet">
 <h3><strong>3.11 WiFi Internet</strong><a class="headerlink" href="#wifi-internet" title="Link to this heading"></a></h3>
-<p><strong>Description:</strong></p>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;</strong></p></li>
 <li><p><strong>When testing WiFi, unplug the wired network.</strong></p></li>
@@ -926,9 +943,9 @@ Select  android config
 <p>Click “Confirm”.</p>
 <p>After connecting to the hotspot through the mobile phone, you can surf the Internet normally.</p>
 </section>
-<section id="g-4g-module-test">
-<h3>3.13 4G/4G Module Test<a class="headerlink" href="#g-4g-module-test" title="Link to this heading"></a></h3>
-<p><strong>Description:</strong></p>
+<section id="g-5g-module-test">
+<h3>3.13 4G/5G Module Test<a class="headerlink" href="#g-5g-module-test" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;</strong></p></li>
 <li><p><strong>When testing 4G, unplug the wired network and turn off WiFi;</strong></p></li>
@@ -948,7 +965,7 @@ Select  android config
 </section>
 <section id="bluetooth-test">
 <h3><strong>3.14 Bluetooth Test</strong><a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h3>
-<p>**Description: **</p>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>The current system does not support iPhone Bluetooth connection;</strong></p></li>
 <li><p><strong>The Bluetooth function test of OK3588 platform uses the WiFi &amp; Bluetooth integrated module, which supports the connection of Bluetooth devices as the main device to transmit/receive files.</strong></p></li>
@@ -1189,7 +1206,6 @@ S
 <section id="root-permission-test">
 <h3><strong>3.26 ROOT Permission Test</strong><a class="headerlink" href="#root-permission-test" title="Link to this heading"></a></h3>
 <p>Follow the previous sections to enter developer mode.</p>
-<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/113.png" /></p>
 <p>Click “Root Authorization” to restart the OK 3588 board.</p>
 <p>️<font style="color:#000000;">Path: OK3588-C（Android）User Profile\Android\Tool\RootChecker.apk</font></p>
 <p>Copy the RootChecker. Apk to any directory, open a window command window, and use ADB to install the RootChecker. Apk.</p>
@@ -1201,7 +1217,6 @@ S
 <h3><strong>3.27 Navigation Bar and Dropdown Bar Settings</strong><a class="headerlink" href="#navigation-bar-and-dropdown-bar-settings" title="Link to this heading"></a></h3>
 <p>The current version supports showing/hiding navigation bar and slide bar.</p>
 <p>Follow the previous sections to enter developer mode.</p>
-<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/113.png" /></p>
 <p>Select “Allow navigation bar to be hidden” and “Allow top slide bar to be hidden”.</p>
 <p>Restart OK3588.</p>
 <p><img alt="Image" src="_images/1718940892015_6867ac9f_a1d8_491d_8910_98572d2654a2.png" /></p>
@@ -1231,7 +1246,6 @@ S
 <h3><strong>3.30 Locking Screen Test</strong><a class="headerlink" href="#locking-screen-test" title="Link to this heading"></a></h3>
 <p><strong>Note</strong>: By default, Android will not lock the screen when it is started for the first time. If it is not modified, it will be opened in the lock screen state after restarting.</p>
 <p>OK3588 does not lock the screen by default. If you need to lock the screen, you can modify it through Settings-&gt; Security-&gt; Screen Lock, as follows:</p>
-<p><img alt="Image" src="images/OK3588-C_Android_12_User_Manual/116.png" /></p>
 <p>Under Screen Lock, you can specify how to lock the screen.</p>
 </section>
 <section id="npu-test">

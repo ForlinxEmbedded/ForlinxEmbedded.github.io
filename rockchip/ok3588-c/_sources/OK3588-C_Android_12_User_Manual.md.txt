@@ -10,6 +10,19 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the Android12.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+
+## Revision History
+
+| **<font style="color:black;">Date</font>** | **<font style="color:black;">User Manual Version</font>** | **<font style="color:black;">SoM Version</font>** | **<font style="color:black;">Carrier Board Version</font>** | **<font style="color:black;">Revision History</font>**       |
+| :----------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------: | ----------------------------------------------------------- | ------------------------------------------------------------ |
+|                 01/12/2022                 |                           V1.0                            |                       V1.1                        | V1.1                                                        | OK3588-C Android12.0 User's Manual Initial Version           |
+|                 04/11/2023                 |                           V1.1                            |                       V1.1                        | V1.1 and Above                                              | 1\. Adding a description of flashing separate image in OTG flashing chapter;         2. Modifying maskroom flashing description. |
+|                 16/01/2024                 |                           V1.2                            |                       V1.1                        | V1.1 and Above                                              | Correcting the description regarding the OV5645; it now supports the OV5645 camera. |
+|                 21/03/2024                 |                           V1.3                            |                       V1.1                        | V1.1 and Above                                              | Adding CPU/GPU/NPU frequency description.                    |
+
 ## Overview
 
 <font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the </font>user's understanding, mainly for practical use. Please refer to “OK3588--C\_Android12 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods, development environment construction, etc.
@@ -47,22 +60,6 @@ OK3588-android-source  OK3588-android-source.tar.bz2
 + <font style="color:blue;">Ls: </font>Blue font on a gray background, indicating relevant commands that need to be entered manually;
 + <font style="color:black;background-color:#d9d9d9;">OK3588-android-source: </font>Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
----
-
-
-## Application Scope
-
-This manual is mainly applicable to the Android12.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
-
-## Revision History
-
-| **<font style="color:black;">Date</font>** | **<font style="color:black;">User Manual Version</font>** | **<font style="color:black;">SoM Version</font>** | **<font style="color:black;">Carrier Board Version</font>** | **<font style="color:black;">Revision History</font>**       |
-| :----------------------------------------: | :-------------------------------------------------------: | :-----------------------------------------------: | ----------------------------------------------------------- | ------------------------------------------------------------ |
-|                 01/12/2022                 |                           V1.0                            |                       V1.1                        | V1.1                                                        | OK3588-C Android12.0 User's Manual Initial Version           |
-|                 04/11/2023                 |                           V1.1                            |                       V1.1                        | V1.1 and Above                                              | 1\. Adding a description of flashing separate image in OTG flashing chapter;         2. Modifying maskroom flashing description. |
-|                 16/01/2024                 |                           V1.2                            |                       V1.1                        | V1.1 and Above                                              | Correcting the description regarding the OV5645; it now supports the OV5645 camera. |
-|                 21/03/2024                 |                           V1.3                            |                       V1.1                        | V1.1 and Above                                              | Adding CPU/GPU/NPU frequency description.                    |
-
 ## 1\. OK3588 Development Board Description
 
 RK3588 is a low-power, high-performance processor based on ARM64 architecture, which includes 4-core Cortex-A55 and 4-core Conrtex-A76 as well as independent NEON processor and neural network processor NPU, and it can be applied to computers, cell phones, personal mobile Internet, and digital multimedia devices.
@@ -89,22 +86,23 @@ Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency, normal mode ①| 1.6GHz
-|----------|----------
-| Maximum CPU A76 frequency, overclocking mode ②| 2.0GHz
-| Maximum CPU A55 frequency, normal mode ①| 1.3GHz
-| Maximum CPU A55 frequency, overclocking mode ②| 1.7GHz
-| Maximum GPU frequency, normal mode ①| 700MHz
-| Maximum GPU frequency, overclocking mode ②| 850MHz
-| Maximum NPU frequency, normal mode ①| 800MHz
-| Maximum NPU frequency, overclocking mode ②| 950MHz
+| Maximum CPU A76 frequency, normal mode ①           | 1.6GHz     |
+| -------------------------------------------------- | ---------- |
+| **Maximum CPU A76 frequency, overclocking mode ②** | **2.0GHz** |
+| **Maximum CPU A55 frequency, normal mode ①**       | **1.3GHz** |
+| **Maximum CPU A55 frequency, overclocking mode ②** | **1.7GHz** |
+| **Maximum GPU frequency, normal mode ①**           | **700MHz** |
+| **Maximum GPU frequency, overclocking mode ②**     | **850MHz** |
+| **Maximum NPU frequency, normal mode ①**           | **800MHz** |
+| **Maximum NPU frequency, overclocking mode ②**     | **950MHz** |
 
-1. Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;
-2. Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. Running in overclocking mode in a long time may shorten the chip's life, especially at high temperatures.
+Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;
 
-To switch to "normal mode", you need to add # include "rk3588j.dtsi" to the reference in the kernel device tree. The path is:
+Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. Running in overclocking mode in a long time may shorten the chip's life, especially at high temperatures.
 
-OK3588-android-source/kernel-5.10/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
+To switch to "normal mode", you need to add # include "rk3588j.dtsi" to the reference in the kernel device tree. 
+
+The path is: OK3588-android-source/kernel-5.10/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi.
 
 ![Image](./images/OK3588-C_Android_12_User_Manual/1718940821698_9b5343e2_7076_4e7c_a7f7_2c8aab90f447.png)
 
@@ -114,54 +112,60 @@ Refer to “Rockchip RK3588 Datasheet V1.7-17/11/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency| 2.2-2.4 GHz
-|----------|----------
-| Maximum CPU A55 frequency| 1.8GHz
-| Maximum GPU frequency| 1GHz
-| Maximum NPU frequency| 1GHz
+| Maximum CPU A76 frequency     | 2.2-2.4 GHz |
+| ----------------------------- | ----------- |
+| **Maximum CPU A55 frequency** | **1.8GHz**  |
+| **Maximum GPU frequency**     | **1GHz**    |
+| **Maximum NPU frequency**     | **1GHz**    |
 
-### **1.3 Android12 System Software Resources Features**
+### 1.3 Android12 System Software Resources Features
 
-| **Device**| **Location of driver source code in the kernel**| **Device Name**
-|----------|----------|----------
-| **LCD Backlight Driver**| **drivers/video/backlight/pwm\_bl.c**| **/sys/class/backlight**
-| **USB Port**| **drivers/usb/storage/**| 
-| **USB Mouse**| **drivers/hid/usbhid/**| **/dev/input/mice**
-| **Ethernet**| **drivers/net/ethernet/stmicro/stmmac**| 
-| **SD/micro TF card driver**| **drivers/mmc/host/dw\_mmc-rockchip.c**| **/dev/block/mmcblk1pX**
-| **EMMC Driver**| **drivers/mmc/host/dw\_mmc-rockchip.c**| **/dev/block/mmcblk2pX**
-| **OV13850**| **drivers/media/i2c/ov13850.c**| **/dev/videoX**
-| **LCD Controller**| **drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c**| 
-| **MIPI CSI**| **drivers/phy/rockchip/phy-rockchip-mipi-rx.c**| 
-| **MIPI DSI**| **drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c**| 
-| **LCD Touch Driver**| **drivers/input/touchscreen/goodix.c**<br/>**drivers/input/touchscreen/edt-ft5x06.c**| **/dev/input/eventX**
-| **RTC Real Time Clock Driver**| **drivers/rtc/rtc-rx8010.c**<br/>**drivers/rtc/rtc-pcf8563.c**| **/dev/rtc0**
-| **serial port**| **drivers/tty/serial/8250/8250\_dw.c**| **/dev/ttySX**
-| **Key Driver**| **drivers/input/keyboard/adc-keys.c**| **/dev/input/eventX**
-| **LED**| **drivers/leds/leds-gpio.c**| 
-| **I2S**| **sound/soc/rockchip/rockchip\_i2s.c**| 
-| **Audio Driver**| **sound/soc/codecs/rk817\_codec.c**| **/dev/snd/**
-| **PMIC**| **drivers/mfd/rk808.c**| 
-| **PCIE**| **drivers/pci/controller/pcie-rockchip.c**| 
-| **Watchdog**| **drivers/watchdog/dw\_wdt.c**| 
-| **SPI**| **drivers/spi/spi-rockchip.c**| 
-| **PWM**| **drivers/video/backlight/pwm\_bl.c**| 
+| Device                     | Location of driver source code in the kernel                 | Device Name          |
+| -------------------------- | ------------------------------------------------------------ | -------------------- |
+| LCD Backlight Driver       | drivers/video/backlight/pwm\_bl.c                            | /sys/class/backlight |
+| USB Port                   | drivers/usb/storage/                                         |                      |
+| USB Mouse                  | drivers/hid/usbhid/                                          | /dev/input/mice      |
+| Ethernet                   | drivers/net/ethernet/stmicro/stmmac                          |                      |
+| SD/micro TF card driver    | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/block/mmcblk1pX |
+| EMMC Driver                | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/block/mmcblk2pX |
+| OV13850                    | drivers/media/i2c/ov13850.c                                  | /dev/videoX          |
+| LCD Controller             | drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c                |                      |
+| MIPI CSI                   | drivers/phy/rockchip/phy-rockchip-mipi-rx.c                  |                      |
+| MIPI DSI                   | drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c           |                      |
+| LCD Touch Driver           | drivers/input/touchscreen/goodix.c<br/>drivers/input/touchscreen/edt-ft5x06.c | /dev/input/eventX    |
+| RTC Real Time Clock Driver | drivers/rtc/rtc-rx8010.c<br/>drivers/rtc/rtc-pcf8563.c       | /dev/rtc0            |
+| serial port                | drivers/tty/serial/8250/8250\_dw.c                           | /dev/ttySX           |
+| Key Driver                 | drivers/input/keyboard/adc-keys.c                            | /dev/input/eventX    |
+| LED                        | drivers/leds/leds-gpio.c                                     |                      |
+| I2S                        | sound/soc/rockchip/rockchip\_i2s.c                           |                      |
+| Audio Driver               | sound/soc/codecs/rk817\_codec.c                              | /dev/snd/            |
+| PMIC                       | drivers/mfd/rk808.c                                          |                      |
+| PCIE                       | drivers/pci/controller/pcie-rockchip.c                       |                      |
+| Watchdog                   | drivers/watchdog/dw\_wdt.c                                   |                      |
+| SPI                        | drivers/spi/spi-rockchip.c                                   |                      |
+| PWM                        | drivers/video/backlight/pwm\_bl.c                            |                      |
 
-### **1.4 eMMC Memory Partition Table**
+### 1.4 EMMC Memory Partition Table
 
 The following table is the eMMC memory partition information of Android operating system (the size of a block is 512bit when calculating):
 
-| **Partition Index**| **Name**| **Offset / block**| **Size/block**| **content**
-|----------|----------|----------|----------|----------
-| N/A| security| 0x00000000| 0x00004000| MiniLoaderAll.bin
-| 1| uboot| 0x00004000| 0x00004000| uboot.img
-| 2| trust| 0x00008000| 0x00002000| misc.img
-| 3| dtbo| 0x0000a000| 0x00002000| dtbo.img
-| 4| vbmeta| 0x0000c000| 0x00000800| vbmeta.img
-| 5| boot| 0x0000c800| 0x0001b800| boot.img
-| 6| recovery| 0x00020800| 0x00030000| recovery.img
-| 7| baseparameter| 0x001d8800| 0x00000800| baseparameter.img
-| 8| super| 0x001d9000| | super.img
+| Partition Index | Name          | Offset / Block | Size/Block |
+| --------------- | ------------- | -------------- | ---------- |
+| N/A             | security      | 0x00002000     | 0x00002000 |
+| 1               | uboot         | 0x00004000     | 0x00004000 |
+| 2               | trust         | 0x00006000     | 0x00002000 |
+| 3               | misc          | 0x00008000     | 0x00002000 |
+| 4               | dtbo          | 0x0000a000     | 0x00002000 |
+| 5               | vbmeta        | 0x0000c000     | 0x00000800 |
+| 6               | boot          | 0x0000c800     | 0x00020000 |
+| 7               | recovery      | 0x0002c800     | 0x00030000 |
+| 8               | backup        | 0x0005c800     | 0x000c0000 |
+| 9               | cache         | 0x0011c800     | 0x000c0000 |
+| 10              | metadata      | 0x001dc800     | 0x00020000 |
+| 11              | frp           | 0x001fc800     | 0x00000400 |
+| 12              | baseparameter | 0x001fcc00     | 0x00000800 |
+| 13              | super         | 0x001fd400     | 0x00614000 |
+| 14              | userdata      | 0x00811400     |            |
 
 ## 2\. Fast Startup
 
@@ -310,7 +314,7 @@ b: primary display resolution => 1920x1080p50
 ---------------------------------------------
 ```
 
-##### 2.4.1.2 Android Setting
+##### 2.4.1.2 Android Settings
 
 At the top of the uboot settings menu, type 3 to go to the android settings menu bar.
 
@@ -335,7 +339,7 @@ With the root access status set to on, other users can also gain root privileges
 
 This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again
 
-**Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.**
+**Note: This method has higher priority than the Uboot screen selection, and the uboot selection will not take effect after the device tree is modified.**
 
 The device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
 
@@ -347,19 +351,19 @@ The node has a default disabled state and needs to be changed to an okay enabled
 
 **Parameter Description:**
 
-| | **Meaning**
-|----------|----------
-| status| Describe the node state: disabled is for off, okay is for on
-| HDMI0| Specify the VP assigned to HDMI0
-| HDMI1| Specify the VP assigned to HDMI1
-| EDP0| Specify the VP assigned to EDP0
-| EDP1| Specify the VP assigned to EDP1
-| DP0| Specify the VP assigned to DP0
-| DP1| Specify the VP assigned to DP1
-| MIPI0| Specify the VP assigned to MIPI0
-| MIPI1| Specify the VP assigned to MIPI1
-| RGB| Specify the VP assigned to RGB
-| primary\_display| Specify the main screen display
+| Parameter Description | Meaning                                                      |
+| --------------------- | ------------------------------------------------------------ |
+| status                | Describe the node state: disabled is for off, okay is for on |
+| HDMI0                 | Specify the VP assigned to HDMI0                             |
+| HDMI1                 | Specify the VP assigned to HDMI1                             |
+| EDP0                  | Specify the VP assigned to EDP0                              |
+| EDP1                  | Specify the VP assigned to EDP1                              |
+| DP0                   | Specify the VP assigned to DP0                               |
+| DP1                   | Specify the VP assigned to DP1                               |
+| MIPI0                 | Specify the VP assigned to MIPI0                             |
+| MIPI1                 | Specify the VP assigned to MIPI1                             |
+| RGB                   | Specify the VP assigned to RGB                               |
+| primary\_display      | Specify the main screen display                              |
 
 Users need to change the setting parameters as required. After saving, it is necessary to recompile and generate an image.
 
@@ -385,9 +389,10 @@ The RGB optional parameter is: "VP3";
 
 The primary\_display parameter depends on the actual display interface assigned to get the VP.
 
-**Note: When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display.**
+**Note: **
 
-**For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
+- **When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display;**
+- **For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
 
 **Examples**:
 
@@ -417,7 +422,7 @@ Swipe up on the main screen to bring up the following screen.
 
 **Note: After software version updates, there may be minor differences, which do not represent the actual images for each subsequent version update and are provided for reference only.**
 
-### **3.3 Language Setting**
+### **3.3 Language Settings**
 
 Click “![Image](./images/OK3588-C_Android_12_User_Manual/1718940852445_596f8ecb_5e13_45b8_a0a9_eb9b20e905cd.png)”, on the application interface to enter the setting interface:
 
@@ -569,9 +574,7 @@ Click on “Set Time.”
 
 OK3588 has two Gigabit NICs on board (Ethernet ETH0 and Ethernet ETH1).
 
-**Description:**
-
-+ **When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.**
+**Note: When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default.**
 
 1\. Gigabit network port test:
 
@@ -613,7 +616,7 @@ Enter "[http://www.forlinx. net](http://www.forlinx.com)” in the domain name c
 
 ### **3.11 WiFi Internet**
 
-**Description:**
+**Note:**
 
 + **When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;**
 + **When testing WiFi, unplug the wired network.**
@@ -664,9 +667,9 @@ Click “Confirm”.
 
 After connecting to the hotspot through the mobile phone, you can surf the Internet normally.
 
-### 3.13 4G/4G Module Test
+### 3.13 4G/5G Module Test
 
-**Description:**
+**Note:**
 
 + **When 4G and Ethernet exist at the same time, Ethernet is preferred by default; When 4G WIFI exists at the same time, WIFI is preferred by default. When both WiFi and Ethernet are present, Ethernet is prioritized by default;**
 + **When testing 4G, unplug the wired network and turn off WiFi;**
@@ -696,7 +699,7 @@ The test method of 5G is the same as that of 4G, and the difference is that the 
 
 ### **3.14 Bluetooth Test**
 
-**Description: **
+**Note:** 
 
 - **The current system does not support iPhone Bluetooth connection;**
 - **The Bluetooth function test of OK3588 platform uses the WiFi \& Bluetooth integrated module, which supports the connection of Bluetooth devices as the main device to transmit/receive files.**
@@ -757,15 +760,15 @@ You can view the transfer progress in the notification bar, and after the transf
 
 There are 8 keys on the development board, including VOL +, VOL-, MENU, ESC, HOME, PWRON, RESET and Maskroom.
 
-| **Key**| **Function**
-|----------|----------
-| Recovery/VOL+| VOL+
-| VOL-| VOL-
-| PWRON| Wake up from sleep and power on/off
-| Maskroom| Work with RESET to enter maskrom mode.
-| RESET| RESET
-| MENU| Pop-up menu Home screen settings, Widget, Wallpaper
-| ESC| Return
+| **Key**       | **Function**                                        |
+| ------------- | --------------------------------------------------- |
+| Recovery/VOL+ | VOL+                                                |
+| VOL-          | VOL-                                                |
+| PWRON         | Wake up from sleep and power on/off                 |
+| Maskroom      | Work with RESET to enter maskrom mode.              |
+| RESET         | RESET                                               |
+| MENU          | Pop-up menu Home screen settings, Widget, Wallpaper |
+| ESC           | Return                                              |
 
 The default factory setting is the non-hibernation state. At this time, press the PWRON key lightly to turn off the screen and enter the hibernation state (note that the carrier board cannot be inserted into the wake-up source such as USBOTG). The hibernation print information is as follows:
 
@@ -1051,8 +1054,6 @@ Type "adb disconnect" to disconnect, and then type "adb devices" to see the devi
 
 Follow the previous sections to enter developer mode.
 
-![Image](./images/OK3588-C_Android_12_User_Manual/113.png)
-
 Click "Root Authorization" to restart the OK 3588 board.
 
 ️<font style="color:#000000;">Path: OK3588-C（Android）User Profile\\Android\\Tool\\RootChecker.apk</font>
@@ -1070,8 +1071,6 @@ Slide to click the RootChecker icon "![Image](./images/OK3588-C_Android_12_User_
 The current version supports showing/hiding navigation bar and slide bar.
 
 Follow the previous sections to enter developer mode.
-
-![Image](./images/OK3588-C_Android_12_User_Manual/113.png)
 
 Select "Allow navigation bar to be hidden" and "Allow top slide bar to be hidden".
 
@@ -1118,8 +1117,6 @@ Test by placing the item in front of the camera will automatically recognize the
 **Note**: By default, Android will not lock the screen when it is started for the first time. If it is not modified, it will be opened in the lock screen state after restarting.
 
 OK3588 does not lock the screen by default. If you need to lock the screen, you can modify it through Settings-> Security-> Screen Lock, as follows:
-
-![Image](./images/OK3588-C_Android_12_User_Manual/116.png)
 
 Under Screen Lock, you can specify how to lock the screen.
 
