@@ -10,6 +10,16 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+
+## Revision History
+
+|  **Date**  | **Manual Version** | **SoM Version** | **Carrier Board Version** | **Revision History**                                   |
+| :--------: | :----------------: | :-------------: | :-----------------------: | ------------------------------------------------------ |
+| 25/11/2024 |        V1.0        |      V1.1       |      V1.3 and Above       | OK3588-C Linux User Compilation Manual Initial Version |
+
 ## Overview
 
 <font style="color:#333333;">This manual is designed to enable users of the Forlinx Embedded development board to quickly understand the</font><font style="color:#333333;">compilation process</font><font style="color:#333333;">of the products and familiarize themselves with the </font><font style="color:#333333;">compilation</font> <font style="color:#333333;">methods </font><font style="color:#333333;">of</font> <font style="color:#333333;">Forlinx</font><font style="color:#333333;"> products. The application needs to be cross-compiled on an </font><font style="color:#333333;">ubuntu</font><font style="color:#333333;">host before it can run on the development board. </font>By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.
@@ -50,19 +60,7 @@ OK3588-linux-source  OK3588-linux-source.tar.bz2
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;
 + //: Explanation of the instruction, no input required;
 + <font style="color:blue;">ls</font>：Blue font, indicating the relevant commands that need to be manually entered;
-+ **<font style="color:black;">OK3588-linux-source</font>**：Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
-
-## Application Scope
-
-This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
-
-## Revision History
-
-| **Date**| **Manual Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|:----------:|:----------:|----------|
-| 25/11/2024 | V1.0| V1.1| V1.3 and Above| OK3588-C Linux User Compilation Manual Initial Version|
-
-
++ **<font style="color:black;">OK3588-linux-source</font>:** Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
 ## 1. VMware Virtual Machine  Installation
 
@@ -113,7 +111,6 @@ Go to the VMware website https://www.vmware.com/cn.html to download Workstation 
 
 <font style="color:#000000;">     </font>
 
-
 ## 2. Ubuntu Development Environment Loading
 
 **Note:**
@@ -145,8 +142,6 @@ Turn on this virtual machine after loading is complete to run it and enter the s
 ![Image](./images/OK3588-C_Linux5_10_209_User_Compilation_Manual/12.png)
 
 The default automatic login account is "forlinx", and the password is "forlinx".
-
-
 
 
 ## 3. New Ubuntu Development Environment Setup
