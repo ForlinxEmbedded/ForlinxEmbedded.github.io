@@ -10,6 +10,16 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Application Scope
+
+This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+
+## Revision History
+
+|  **Date**  | **Manual Version** | **SoM Version** | **Carrier Board Version** | **Revision History**                                 |
+| :--------: | :----------------: | :-------------: | :-----------------------: | ---------------------------------------------------- |
+| 25/11/2024 |        V1.0        |      V1.1       |      V1.3 and Above       | OK3588-C Linux5.10.209 User's Manual Initial Version |
+
 ## Overview
 
 <font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the </font>user's understanding, mainly for practical use. Please refer to “OK3588-C Linux\_User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction.
@@ -45,18 +55,8 @@ OK3588-linux-source  OK3588-linux-source.tar.bz2
 
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;
 + //: Explanation of the instruction, no input required;
-+ <font style="color:blue;">ls</font>：Blue font, indicating the relevant commands that need to be manually entered;
-+ **<font style="color:black;">OK3588-linux-source</font>**：Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
-
-## Application Scope
-
-This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
-
-## Revision History
-
-| **Date**| **Manual Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|:----------:|:----------:|----------|
-| 25/11/2024 | V1.0| V1.1| V1.3 and Above| OK3588-C Linux5.10.209 Software Manual Initial Version|
++ <font style="color:blue;">ls</font>: Blue font, indicating the relevant commands that need to be manually entered;
++ **OK3588-linux-source:** Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
 ## 1. OK3588 Development Board Description
 
@@ -74,30 +74,31 @@ The connection of OK3588 SoM and the carrier board is board-to-board, and the ma
 
 **Back**
 
-**<font style="color:#ff0000;">Note: The software manual no longer includes hardware parameter details. Prior to software development, please read the "OK3588-C\_Hardware User’s Manual" located at "Hardware Information\\User Manual" path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.</font>**
+**Note: The software manual no longer includes hardware parameter details. Prior to software development, please read the "OK3588-C\_Hardware User’s Manual" located at "Hardware Information\\User Manual" path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.**
 
 ### 1.2 CPU/GPU/NPU Frequency Description
 
 **RK3588J industrial grade SoM frequencies are described below:**
 
-**<font style="color:#ff0000;">Note: For the industrial-grade RK3588J SoM, to better test the SOC's maximum performance, starting from version R4, it's set to work in overclocking mode by default in user documentation. (Without performance requirements, it’s better change to normal mode.)</font>**
+**Note: For the industrial-grade RK3588J SoM, to better test the SOC's maximum performance, starting from version R4, it's set to work in overclocking mode by default in user documentation. (Without performance requirements, it’s better change to normal mode.)**
 
 Refer to “Rockchip RK3588J Datasheet V1.1-03/08/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency, normal mode ①| 1.6GHz
-|----------|----------
-| Maximum CPU A76 frequency, overclocking mode ②| 2.0GHz
-| Maximum CPU A55 frequency, normal mode ①| 1.3GHz
-| Maximum CPU A55 frequency, overclocking mode ②| 1.7GHz
-| Maximum GPU frequency, normal mode ①| 700MHz
-| Maximum GPU frequency, overclocking mode ②| 850MHz
-| Maximum NPU frequency, normal mode ①| 800MHz
-| Maximum NPU frequency, overclocking mode ②| 950MHz
+| Maximum CPU A76 frequency, normal mode ①           | 1.6GHz     |
+| -------------------------------------------------- | ---------- |
+| **Maximum CPU A76 frequency, overclocking mode ②** | **2.0GHz** |
+| **Maximum CPU A55 frequency, normal mode ①**       | **1.3GHz** |
+| **Maximum CPU A55 frequency, overclocking mode ②** | **1.7GHz** |
+| **Maximum GPU frequency, normal mode ①**           | **700MHz** |
+| **Maximum GPU frequency, overclocking mode ②**     | **850MHz** |
+| **Maximum NPU frequency, normal mode ①**           | **800MHz** |
+| **Maximum NPU frequency, overclocking mode ②**     | **950MHz** |
 
-1. Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;
-2. Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
+Normal mode indicates that the chip is operating at a safe voltage and frequency. For industrial environments, it is highly recommended to keep it in normal mode to reasonably ensure longevity;
+
+Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
 
 To switch to "normal mode", you need to add the following to the reference in the kernel device tree #include "rk3588j.dtsi",             
 
@@ -111,53 +112,53 @@ Refer to “Rockchip RK3588 Datasheet V1.7-17/11/2023.pdf ”
 
 Table 3-2 Recommended operating conditions
 
-| Maximum CPU A76 frequency| 2.2-2.4 GHz
-|----------|----------
-| Maximum CPU A55 frequency| 1.8GHz
-| Maximum GPU frequency| 1GHz
-| Maximum NPU frequency| 1GHz
+| Maximum CPU A76 frequency     | 2.2-2.4 GHz |
+| ----------------------------- | ----------- |
+| **Maximum CPU A55 frequency** | **1.8GHz**  |
+| **Maximum GPU frequency**     | **1GHz**    |
+| **Maximum NPU frequency**     | **1GHz**    |
 
 ### 1.3 Introduction to Linux 5.10.209 System Software Resources
 
-| **Device**| **Location of driver source code in the kernel**| **Device Name**
-|----------|----------|----------
-| LCD Backlight Driver| drivers/video/backlight/pwm\_bl.c| /sys/class/backlight
-| USB Port| drivers/usb/storage/| 
-| USB Mouse| drivers/hid/usbhid/| /dev/input/mice
-| Ethernet| drivers/net/ethernet/stmicro/stmmac| 
-| SD/micro TF card driver| drivers/mmc/host/dw\_mmc-rockchip.c| /dev/mmcblk1pX
-| EMMC Driver| drivers/mmc/host/dw\_mmc-rockchip.c| /dev/mmcblk0pX
-| OV13855| drivers/media/i2c/ov13855.c| /dev/videoX
-| LCD Controller| drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c| 
-| MIPI CSI| drivers/phy/rockchip/phy-rockchip-mipi-rx.c| 
-| MIPI DSI| drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c| 
-| LCD Touch Driver| drivers/input/touchscreen/goodix.c   drivers/input/touchscreen/edt-ft5x06.c| /dev/input/eventX
-| RTC Real Time Clock Driver| drivers/rtc/rtc-rx8010.c   drivers/rtc/rtc-pcf8563.c| /dev/rtc0
-| serial port| drivers/tty/serial/8250/8250\_dw.c| /dev/ttySX
-| Key Driver| drivers/input/keyboard/adc-keys.c| /dev/input/eventX
-| LED| drivers/leds/leds-gpio.c| 
-| I2S| sound/soc/rockchip/rockchip\_i2s.c| 
-| Audio Driver| sound/soc/codecs/nau8822.c| /dev/snd/
-| PMIC| drivers/mfd/rk806.c   drivers/regulator/rk860x-regulator.c| 
-| PCIE| drivers/pci/controller/pcie-rockchip.c| 
-| Watchdog| drivers/watchdog/dw\_wdt.c| 
-| SPI| drivers/spi/spi-rockchip.c| 
-| PWM| drivers/video/backlight/pwm\_bl.c| 
+| Device                     | Location of driver source code in the kernel                 | Device Name          |
+| -------------------------- | ------------------------------------------------------------ | -------------------- |
+| LCD Backlight Driver       | drivers/video/backlight/pwm\_bl.c                            | /sys/class/backlight |
+| USB Port                   | drivers/usb/storage/                                         |                      |
+| USB Mouse                  | drivers/hid/usbhid/                                          | /dev/input/mice      |
+| Ethernet                   | drivers/net/ethernet/stmicro/stmmac                          |                      |
+| SD/micro TF card driver    | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/mmcblk1pX       |
+| EMMC Driver                | drivers/mmc/host/dw\_mmc-rockchip.c                          | /dev/mmcblk0pX       |
+| OV13855                    | drivers/media/i2c/ov13855.c                                  | /dev/videoX          |
+| LCD Controller             | drivers/gpu/drm/rockchip/rockchip\_drm\_vop.c                |                      |
+| MIPI CSI                   | drivers/phy/rockchip/phy-rockchip-mipi-rx.c                  |                      |
+| MIPI DSI                   | drivers/phy/rockchip/phy-rockchip-inno-mipi-dphy.c           |                      |
+| LCD Touch Driver           | drivers/input/touchscreen/goodix.c   drivers/input/touchscreen/edt-ft5x06.c | /dev/input/eventX    |
+| RTC Real Time Clock Driver | drivers/rtc/rtc-rx8010.c   drivers/rtc/rtc-pcf8563.c         | /dev/rtc0            |
+| serial port                | drivers/tty/serial/8250/8250\_dw.c                           | /dev/ttySX           |
+| Key Driver                 | drivers/input/keyboard/adc-keys.c                            | /dev/input/eventX    |
+| LED                        | drivers/leds/leds-gpio.c                                     |                      |
+| I2S                        | sound/soc/rockchip/rockchip\_i2s.c                           |                      |
+| Audio Driver               | sound/soc/codecs/nau8822.c                                   | /dev/snd/            |
+| PMIC                       | drivers/mfd/rk806.c   drivers/regulator/rk860x-regulator.c   |                      |
+| PCIE                       | drivers/pci/controller/pcie-rockchip.c                       |                      |
+| Watchdog                   | drivers/watchdog/dw\_wdt.c                                   |                      |
+| SPI                        | drivers/spi/spi-rockchip.c                                   |                      |
+| PWM                        | drivers/video/backlight/pwm\_bl.c                            |                      |
 
-### 1.4 eMMC Memory Partition Table
+### 1.4 EMMC Memory Partition Table
 
 The following table shows the eMMC memory partition information for the Linux operating system (calculated with a block size of 512bit):
 
-| **Partition Index**| **Name**| **Offset / block**| **Size/block**| **content**
-|----------|----------|----------|----------|----------
-| N/A| security| 0x00000000| 0x00004000| MiniLoaderAll.bin
-| 1| uboot| 0x00004000| 0x00004000| uboot.img
-| 2| misc| 0x00006000| 0x00002000| misc.img
-| 3| boot| 0x00008000| 0x00020000| boot.img
-| 4| recovery| 0x00028000| 0x00050000| recovery.img
-| 5| oem| 0x01c78000| 0x00040000| oem.img
-| 6| rootfs| 0x00078000| 0x01c00000| rootfs.img
-| 7| userdata| 0x01cb8000| | userdata.img
+| Partition Index | Name     | Offset /Block | Size/Block | Content           |
+| --------------- | -------- | ------------- | ---------- | ----------------- |
+| N/A             | security | 0x00000000    | 0x00004000 | MiniLoaderAll.bin |
+| 1               | uboot    | 0x00004000    | 0x00004000 | uboot.img         |
+| 2               | misc     | 0x00006000    | 0x00002000 | misc.img          |
+| 3               | boot     | 0x00008000    | 0x00020000 | boot.img          |
+| 4               | recovery | 0x00028000    | 0x00050000 | recovery.img      |
+| 5               | oem      | 0x01c78000    | 0x00040000 | oem.img           |
+| 6               | rootfs   | 0x00078000    | 0x01c00000 | rootfs.img        |
+| 7               | userdata | 0x01cb8000    |            | userdata.img      |
 
 ## 2. Fast Startup
 
@@ -187,14 +188,15 @@ Run CP210xVCPInstaller\_x64.exe directly after unzipping is complete, to ensure 
 
 #### 2.3.1 Serial Port Connection Settings
 
-**Description:**
+**Note:**
 
 + **Serial port settings: baud rate 115200, data bit 8, stop bit 1, no parity bit, no flow control**
 + **Serial terminal login: ** 
 
-User name: forlinx  
+**User name: forlinx**  
 
-Password: forlinx
+**Password: forlinx**
+
 + **Software requirements: PC Windows system needs to install the super terminal software. Because the terminal software has many types, users can choose their familiar one.**
 
 In the following, we take the putty terminal software as an example to introduce the serial port login method:
@@ -229,7 +231,7 @@ It is better to use a good quality cable to avoid error codes.
 
 #### 2.4.1 Network Connection Test
 
- **Description:**
+ **Note:**
 
 + **The factory default configuration of the card is static IP; the IP address is 192.168.0.232. Please refer to "Ethernet Configuration" chapter for the static IP changing method;**
 + **The computer and board should be on the same network segment for testing.**
@@ -252,13 +254,13 @@ A data return indicates a normal network connection.
 
 #### 2.4.2 SSH Server
 
- **Description:**
+ **Note:**
 
 + **The factory default configuration of the card is static IP; the IP address is 192.168.0.232. Please refer to "Ethernet Configuration" chapter for the static IP changing method;**
 + **Users: forlinx, Password:forlinx;**
 + **If using root login, we need to change the password before using ssh login and scp for file transfer.**
 
-1\. Use ssh to log in the development board
+1\. Use ssh to log in the development board;
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1721610891693_b0ef8b04_31c0_4a9c_a227_afa062aa4ac8.png)
 
@@ -284,11 +286,7 @@ Open the filezilla tool, click on File and select Site Manager.
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954729099_282246fe_f588_46d3_b4ea_4c670fb661bc.png)
 
-
-
 After successful login, you can upload and download.
-
-![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954729427_adb43e9d_3117_426a_a8ef_84eac179aad8.png)
 
 ### 2.5 Screen Switching
 
@@ -298,7 +296,7 @@ OK3588 contains 4 display controllers, i.e. 4 VP. Supports up to 4 screens simul
 
 #### 2.5.1 Dynamic Control of Uboot Menu
 
-##### **2.5.1.1 Display Type Setting**
+##### **2.5.1.1 Display Type Setting**s
 
 This method switches screens without recompiling and flashing in existing supported screens.
 
@@ -343,7 +341,7 @@ Select  display
 
 **Note: It is better not to set HDMI as the main screen. When the system starts, hot plug HDMI will cause QT application to exit.**
 
-According to the content of the comments in the uboot menu, we can get the uboot display menu setting rules:
+According to the content of the comments in the uboot menu, you can get the uboot display menu setting rules:
 
 1. hdmi0 and edp0 use the same port, and only one of the two can be used at the same time.
 2. Hdmi1 and edp1 use the same port, and only one of the two can be used at the same time.
@@ -370,21 +368,21 @@ The node has a default disabled state and needs to be changed to an okay enabled
 
 **Parameter Description:**
 
-| **Parameter**| **Meaning**
-|----------|----------
-| status| Describe the node state: disabled is for off, okay is for on
-| HDMI0| Specify the VP assigned to HDMI0
-| HDMI1| Specify the VP assigned to HDMI1
-| EDP0| Specifies the VP assigned to EDP0
-| EDP1| Specify the VP assigned to EDP1
-| DP0| Specify the VP assigned to DP0
-| DP1| Specify the VP assigned to DP1
-| MIPI0| Specify the VP assigned to MIPI0
-| MIPI1| Specify the VP assigned to MIPI1
-| RGB| Specify the VP assigned to RGB
-| primary\_display| Specify the main screen display
-| primary\_display\_resolution| Specify the resolution to be used for the main screen with HDMI
-| disp\_type| Note: Please specify the same and different displays, the default is the same display.
+| Parameter                    | Meaning                                                      |
+| ---------------------------- | ------------------------------------------------------------ |
+| status                       | Describe the node state: disabled is for off, okay is for on |
+| HDMI0                        | Specify the VP assigned to HDMI0                             |
+| HDMI1                        | Specify the VP assigned to HDMI1                             |
+| EDP0                         | Specifies the VP assigned to EDP0                            |
+| EDP1                         | Specify the VP assigned to EDP1                              |
+| DP0                          | Specify the VP assigned to DP0                               |
+| DP1                          | Specify the VP assigned to DP1                               |
+| MIPI0                        | Specify the VP assigned to MIPI0                             |
+| MIPI1                        | Specify the VP assigned to MIPI1                             |
+| RGB                          | Specify the VP assigned to RGB                               |
+| primary\_display             | Specify the main screen display                              |
+| primary\_display\_resolution | Specify the resolution to be used for the main screen with HDMI |
+| disp\_type                   | **Note: Please specify the same and different displays, the default is the same display.** |
 
 The user changes the setup parameters as needed, and after saving, the image needs to be recompiled to generate the image.
 
@@ -412,9 +410,10 @@ The primary\_display parameter depends on the actual display interface assigned 
 
 The optional parameters for disp\_type are: "sync" and "async".
 
-**Note: When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display.**
+**Note: **
 
-**For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
+- **When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display;**
+- **For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
 
 **Examples**:
 
@@ -476,13 +475,13 @@ Application Interfaces
 
 Click the button in the lower left corner and select test audio /userdata/media/test.mp3
 
-Note: The default sound card output is nau8822.  If using HDMI output, please use the command on the serial port:
+**Note: The default sound card output is nau8822.  If using HDMI output, please use the command on the serial port.**
 
 ```plain
 root@ok3588:/# gst-play-1.0 /userdata/media/test.mp3 --audiosink="alsasink device= plughw:3,0"
 ```
 
-### 3.5 4G/4G Test
+### 3.5 4G/5G Test
 
 This test requires an Internet-capable SIM card, a description of which can be found in the Command Line Functional Tests 5G section of this manual.
 
@@ -500,7 +499,7 @@ Application Interfaces
 
 Click the connect button, the program will automatically enter the dialing process and get the IP settings, DNS, etc. Wait patiently for a few seconds, and then click the ping button to test.
 
-### 3.6 WIFI Test
+### 3.6 WiFi Test
 
 "WIFI" is a tool to configure wifi. The OK3588 platform has the AW-XM458 module on board by default. The wifi module exists in the system as a mlan node, and this test corresponds to mlan0 (other corresponding nodes are used for multiple devices):
 
@@ -540,9 +539,9 @@ The static mode interface is as follows:
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1731053225196_1232af09_7ed9_451b_9ad9_31d2dfa25fa9.png)
 
-Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.
+Select the NIC device to be configured in the interface, and enter the IP to be set in the IP field, enter the subnet mask in the netmask field, the gateway in the gateway field, and DNS in the DNS field.
 
-**Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
+**Note: Information such as IP set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
 ### 3.8 Ping Test
 
@@ -562,7 +561,7 @@ Write the target ip needing ping in the hostname field; after clicking the ping 
 
 "DemoBrowser" is a simple and practical web browser. When using it, please make sure that the network is smooth, and make sure that the dns is available before accessing the external network; when the browser starts, it will visit the official website of Forlinx Embedded by default, and the interface is as follows:
 
-**Note: If the development board time is abnormal, it will cause certificate problems. Do not shut down the power immediately after using the browser or the sync command at the command line. Otherwise, it may cause the browser to exit abnormally and not work properly, and can only be solved by re-burning.**
+**Note: If the development board time is abnormal, it will cause certificate problems. Do not shut down the power immediately after using the browser or the sync command at the command line. Otherwise, it may cause the browser to exit abnormally and not work properly, and can only be solved by re-flashing.**
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954745936_2b14cb7c_5b24_4d52_b285_03c603531ff6.jpeg)
 
@@ -638,12 +637,12 @@ Application Icons
 
 UART2, UART4, UART6, UART9, a total of four serial ports led out from the OK3588 carrier board; UART2 for debugging serial port, UART6 for Bluetooth serial port, and UART9 for 485 serial port. The default device names of UART4 and UART9 in the development board are ttyS4 and ttyS9 respectively.
 
-| **UART**| **Device Nodes**| **Description**
-|:----------:|:----------:|----------
-| UART2| /dev/ttyS2| Debugging serial port cannot be used directly for this test.
-| UART4| /dev/ttyS4| TTL level, pinned-put from P11, can be used for test.
-| UART6| /dev/ttyS6| It is used for Bluetooth and is not separately led out, so it cannot be used directly for this test.
-| UART9| /dev/ttyS9| RS485
+| UART  | Device Nodes | Description                                                  |
+| :---: | :----------: | ------------------------------------------------------------ |
+| UART2 |  /dev/ttyS2  | Debugging serial port cannot be used directly for this test. |
+| UART4 |  /dev/ttyS4  | TTL level, pinned-put from P11, can be used for test.        |
+| UART6 |  /dev/ttyS6  | It is used for Bluetooth and is not separately led out, so it cannot be used directly for this test. |
+| UART9 |  /dev/ttyS9  | RS485                                                        |
 
 Use the command fltest\_qt\_terminal to open the uart's qt test program (refer to Setup at the beginning of this section for qt test method). This test uses UART4 (ttyS4) to perform serial port test by sending and receiving data between the development board's UART and the computer's serial port tool software.
 
@@ -663,14 +662,14 @@ Use the command fltest\_qt\_terminal to open the uart's qt test program (refer t
 
 Click the setup button in the upper left corner![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954749178_50754fdd_090e_43f7_833d_0881f8596f62.png)to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:
 
-| **Relevant Parameter**| **Meaning**
-|----------|----------
-| Select Serial Port| Setting the serial port (select UART5, i.e. ttyS5)
-| BaudRate| Set baud rate (115200)
-| Data bits| Set data bits (8 bits)
-| Parity| Set parity bit (no parity)
-| Stop bits| Set stop bit (1 bit)
-| Flow control| Set flow control (no flow control)
+| **Relevant Parameter** | **Meaning**                                        |
+| ---------------------- | -------------------------------------------------- |
+| Select Serial Port     | Setting the serial port (select UART5, i.e. ttyS5) |
+| BaudRate               | Set baud rate (115200)                             |
+| Data bits              | Set data bits (8 bits)                             |
+| Parity                 | Set parity bit (no parity)                         |
+| Stop bits              | Set stop bit (1 bit)                               |
+| Flow control           | Set flow control (no flow control)                 |
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954749367_09e3127f_84a3_44b5_b339_7c64b19ba656.png)
 
@@ -710,7 +709,7 @@ Application Icons
 
 Drag the slider in the interface to set the Lcd backlight brightness, level 0 is no backlight, level 255 is the highest level.
 
-### 3.17  UbootMenu
+### 3.17 Uboot Menu
 
 Click on the desktop icon![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1731053226474_485a8384_4028_4aad_bce8_9744fd0658e0.png)to configure the Uboot menu.
 
@@ -730,24 +729,24 @@ The OK3588 development board comes with the lighttpd web server pre-installed, a
 
 Configure OK3588 to different display mode, connect two MIPI display screens, and touch each MIPI screen respectively without affecting each other.
 
-### 3.20 Tftp Upgrading system
+### 3.20 TFTP Upgrading System
 
 **Note: The current version upgrade rootfs.img file cannot be larger than 1.6G. Use tftp udp to transfer on port 69. Install the tftpd server tool Tftpd64.4.64.exe**
 
-+ <font style="color:#0000ff;">Path: OK3588-C-Linux User Profile/Tools/Tftpd64.4.64.exe</font>
++ Path: OK3588-C-Linux User Profile/Tools/Tftpd64.4.64.exe
 
 1. Install Tftpd64.4.64.exe
 2. Open Tftpd64.4.64.exe and run the test
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1718954752164_298a591f_2c3b_4bb7_80ae_91908538e041.png)
 
-CurrentDirectory: Select the OK3588-C partition firmware storage path.
+Current Directory: Select the OK3588-C partition firmware storage path.
 
 Server interfaces: Select the local IP address.
 
 **Note: Please close the window firewall and verify the tftp download file test by yourself.**
 
-1. Open the desktop Tftp Update icon
+1. Open the desktop Tftp Update icon;
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1731053227013_e7482a3f_f3a5_482f_8ef1_932f0ae36a23.png)
 
@@ -791,7 +790,7 @@ Select the corresponding frequency for setting according to your needs.
 
 OK3588 platform has various built-in command line tools available to users.
 
-### 4.1 System Information Query
+### 4.1 System Information Queries
 
 To view kernel and cpu information, enter the following command
 
@@ -1142,12 +1141,12 @@ key158 Released                                                        // ESC re
 
 UART2, UART4, UART6, UART9, a total of four serial ports led out from the OK3588 carrier board; UART2 for debugging serial port, UART6 for Bluetooth serial port, and UART9 for 485 serial port. The default device names of UART4 and UART9 in the development board are ttyS4 and ttyS9 respectively.
 
-| **UART**| **Device Nodes**| **Description**
-|:----------:|:----------:|----------
-| UART2| /dev/ttyS2| Debugging serial port cannot be used directly for this test.
-| UART4| /dev/ttyS4| TTL level, pinned-out from P11, can be used for this test.
-| UART6| /dev/ttyS6| It is used for Bluetooth and is not separately led out, so it cannot be used directly for this test.
-| UART9| /dev/ttyS9| RS485
+| **UART** | **Device Nodes** | **Description**                                              |
+| :------: | :--------------: | ------------------------------------------------------------ |
+|  UART2   |    /dev/ttyS2    | Debugging serial port cannot be used directly for this test. |
+|  UART4   |    /dev/ttyS4    | TTL level, pinned-out from P11, can be used for this test.   |
+|  UART6   |    /dev/ttyS6    | It is used for Bluetooth and is not separately led out, so it cannot be used directly for this test. |
+|  UART9   |    /dev/ttyS9    | RS485                                                        |
 
 UART4 (ttyS4) is used in this test, and the transceiver pins UART4 are short-circuited according to the schematic diagram of the development board, corresponding to PIN 7 and PIN 10 respectively. Serial port testing is performed by sending and receiving data between the development board's UART and the computer's serial port tool software.
 
@@ -1205,9 +1204,7 @@ root@ok3588:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 
 ### 4.10 TF Card Test
 
-**Description:**
-
-+ **The SD card mount directory is /run/media/ and supports hot-swapping.**
+**Note: The SD card mount directory is /run/media/ and supports hot-swapping.**
 
 1\. Insert the TF card into the TF card slot on the carrier board before powe-up . Then power up and start, run the command dmesg, and the terminal will have the following printed information:
 
@@ -1248,7 +1245,7 @@ root@ok3588-buildroot:/# umount /run/media/mmcblk1p1
 
 **Note: Plug and unplug the TF card after exiting the TF card mounting path.**
 
-### 4.11 eMMC Test
+### 4.11 EMMC Test
 
 OK3588 platform eMMC runs in HS200 mode 200MHz clock by default. The following is a simple eMMC read/write speed test: taking the read/write ext4 file system as an example.
 
@@ -1286,7 +1283,7 @@ OK3588 supports 1 x USB 2.0 interface. Users can connect a USB mouse, USB keyboa
 
 The terminal prints information about the USB flash drive, and since many types of USB flash drives exist, the information displayed may vary:
 
-1. After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. Use the dmesg command to view and get information about the USB flash drive.
+After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. Use the dmesg command to view and get information about the USB flash drive.
 
 ![Image](./images/OK3588-C_Linux5_10_209_User_Manual/1731053228927_c4898f1e_b98e_4c60_96db_2ea878bf5a75.png)
 
@@ -1371,12 +1368,12 @@ netmask 255.255.255.0
 gateway 192.168.0.1
 ```
 
-| **Parameter**| **Meaning**
-|:----------:|----------
-| iface| Used to specify a network card that requires a fixed IP
-| address| Used to specify an IP address that needs to be fixed
-| netmask| Used to set the subnet mask
-| gateway| Used to specify a gateway
+| **Parameter** | **Meaning**                                             |
+| :-----------: | ------------------------------------------------------- |
+|     iface     | Used to specify a network card that requires a fixed IP |
+|    address    | Used to specify an IP address that needs to be fixed    |
+|    netmask    | Used to set the subnet mask                             |
+|    gateway    | Used to specify a gateway                               |
 
 After setting up, use the sync file synchronization command to reboot the development board or restart the service for the configuration to take effect.
 
@@ -1385,15 +1382,13 @@ root@ok3588-buildroot:/# ifdown –a
 root@ok3588-buildroot:/# ifup -a
 ```
 
-### 4.16  WIFI Test
+### 4.16 WIFI Test
 
-**Description:**
-
-+ **The network environment is different, so please set it according to the actual situation when you do this experiment.**
+**Note: The network environment is different, so please set it according to the actual situation when you do this experiment.**
 
 OK3588 platform supports two types of WIFI Bluetooth 2-in-1 modules; AW-XM458 and AW-CM276MA.
 
-STA Mode
+**STA Mode**
 
 This mode is used as a station to connect to the wireless network. In the following test, the router uses WPA encryption, the connected wifi hotspot name is: H3C\_708\_5G and the password is: 123456785. Due to the different network environments, users should set up according to the actual situation when conducting this test:
 
@@ -1405,11 +1400,11 @@ root@ok3588-buildroot:/# fltest_wifi.sh -i mlan0 -s H3C_708_5G -p 12345678
 
 The meanings of the related parameters in the command are as follows:
 
-| **Parameter**| **Meaning**
-|:----------:|----------
-| -i| Different wifi modules use different parameters, and specify the WIFI device name.
-| -s| Actual wifi hotspot connected
-| -p| -p：followed by the parameter Password refers to the password of the actual wifi hotspot to be connected. If the current hotspot does not have a password, the parameter after -p is NONE.
+| Parameter | Meaning                                                      |
+| :-------: | ------------------------------------------------------------ |
+|    -i     | Different wifi modules use different parameters, and specify the WIFI device name. |
+|    -s     | Actual wifi hotspot connected                                |
+|    -p     | -p: followed by the parameter Password refers to the password of the actual wifi hotspot to be connected. If the current hotspot does not have a password, the parameter after -p is NONE. |
 
 The serial port prints as follows:
 
@@ -1444,14 +1439,12 @@ rtt min/avg/max/mdev = 201.045/226.733/252.750/21.109 ms
 
 AP Mode
 
- **Description:**
-
-+ **Ensure that the Gigabit LAN card is eth0 connected to the network and that the network works well before performing this test;**
+**Note: Ensure that the Gigabit LAN card is eth0 connected to the network and that the network works well before performing this test.**
 
 1. Check the driver loading status, take AW-XM458 module for example
 
 ```plain
-root@ok3588-buildroot:/# lsmod                                 //查看已加载的模块
+root@ok3588-buildroot:/# lsmod                                 //View Loaded Module
 Module               Size      Used by    Tainted: G
 moal                  573440  1
 mlan                  454656  1 moal
@@ -1511,7 +1504,7 @@ Agent is already registered
 Default agent request successful
 ```
 
-2\. Development Board Passive Pairing.
+2\. Development Board Passive Pairing
 
 At this point, open the PC Bluetooth search, then a "BlueZ 5.72" device will appear, and select the pairing.
 
@@ -1613,17 +1606,17 @@ Connection successful
 
 <font style="color:#000000;">The phone will receive the incoming file request, click Accept to transfer the file.</font>
 
-### 4.18  4G/5G
+### 4.18 4G/5G
 
-**Description:**
+**Note:**
 
-+ **When using the IoT card to test, the module firmware version needs to be confirmed, the low firmware version is not supported, and** EC05 **needs to be upgraded.**
-+ **Some IoT cards require a dedicated account number and password when dialing, and users adjust the commands according to the situation.**
-+ **The quectelCM --help command allows you to see the meaning of the relevant parameters.**
++ **When using the IoT card to test, the module firmware version needs to be confirmed, the low firmware version is not supported, and** **EC05** **needs to be upgraded;**
++ **Some IoT cards require a dedicated account number and password when dialing, and users adjust the commands according to the situation;**
++ **The Quectel CM --help command allows you to see the meaning of the relevant parameters.**
 
 OK3588 supports 4G module EM05 and 5G RM500U RM500Q； before the development board startup， access the 4G/5G m, insert the SIM card, and start the development board.
 
-1\. After connecting the module and powering up the board and module, check the USB status through the lsusb command.
+1. After connecting the module and powering up the board and module, check the USB status through the lsusb command.
 
 ```plain
 root@ok3588-buildroot:/# lsusb
@@ -1643,7 +1636,7 @@ root@ok3588-buildroot:/# ls /dev/ttyUSB*
 /dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2  /dev/ttyUSB3
 ```
 
-2\. After the equipment is successfully identified, the dial-up Internet access test can be conducted. fltest\_quectel.sh calls quectelCM, see /usr/bin/fltest\_quectel.sh for specific commands
+2. After the equipment is successfully identified, the dial-up Internet access test can be conducted. fltest\_quectel.sh calls quectelCM, see /usr/bin/fltest\_quectel.sh for specific commands
 
 ```plain
 root@ok3588-buildroot:/# fltest_quectel.sh &
@@ -1682,7 +1675,7 @@ udhcpc: lease of 10.78.208.225 obtained from 10.78.208.226, lease time 7200
 [01-01_08:00:50:610] adding dns 111.11.11.3
 ```
 
-3\. Before testing, check the relevant configuration
+3. Before testing, check the relevant configuration
 
 View Gateway Configuration
 
@@ -1702,7 +1695,7 @@ nameserver 111.11.1.3 # usb0
 nameserver 111.11.11.3 # usb0
 ```
 
-4.After setting up DNS and routing, we can ping the domain name.
+4. After setting up DNS and routing, we can ping the domain name.
 
 ```plain
 root@ok3588-buildroot:/# ping -I usb0 www.baidu.com -c 3         //Assign usb0 NIC to ping 3 times
@@ -1716,7 +1709,7 @@ PING www.a.shifen.com (39.156.66.14) from 10.78.208.225 usb0: 56(84) bytes of da
 rtt min/avg/max/mdev = 39.938/77.690/105.133/27.596 ms
 ```
 
-### 4.19 Play/Record Test
+### 4.19 Playing/Recording Test
 
 <font style="color:#000000;">OK3588 provides the NAU88C22YG chip, 1 x standard 3.5mm audio jack, 1 x XH2.0-2P white socket P25 lead-out, and 1 x PH2.0-4P white socket P48 lead-out. It can drive an 8Ω speaker with a maximum output power of 1W. Before conducting playback tests, please connect the prepared headphones to the headphone jack or insert the speaker into the corresponding slot on the carrier board for testing.</font>
 
@@ -1765,7 +1758,7 @@ root@ok3588-buildroot:/# arecord -D hw:rockchipnau8822,0 -d 3 -f cd -t wav test1
 root@ok3588-buildroot:/# aplay -D plughw:3,0 test1.wav   //Use HDMI to play the acquired sound
 ```
 
-3.2.19.4  HDMI IN Audio Test
+**3.2.19.4  HDMI IN Audio Test**
 
 <font style="color:#000000;">Insert the HDMI cable of the PC into the HDMI RX interface, and the PC plays the sound. The following test is conducted in a loopback manner. </font>
 
@@ -1779,7 +1772,7 @@ root@ok3588-buildroot:/# arecord -D plughw:1,0 -f cd | aplay -D plughw:3,0 -f cd
 
 Backlight level range (0--255), maximum level 255, 0 indicating turn off. After connecting the mipi screen on the mipi dsi0, power up and start. Enter the system and enter the following command in the terminal to perform the backlight test.
 
-1\. View supported backlight models
+1. View supported backlight models
 
 ```plain
 root@ok3588-buildroot:/# ls /sys/class/backlight
@@ -1788,30 +1781,30 @@ backlight-dsi0  backlight-dsi1  backlight-edp1 Display the currently supported s
 
 The following is an example of dsi0
 
-1\. View the current screen backlight value:
+2. View the current screen backlight value:
 
 ```plain
 root@ok3588-buildroot:/# cat /sys/class/backlight/backlight-dsi0/brightness
 150                                           //The current backlight value is 200
 ```
 
-2\. Backlight is off:
+3. Backlight is off:
 
 ```plain
 root@ok3588-buildroot:/# echo 0 > /sys/class/backlight/backlight-dsi0/brightness
 ```
 
-3\. LCD backlight is on:
+4. LCD backlight is on:
 
 ```plain
 root@ok3588-buildroot:/# echo 125 > /sys/class/backlight/backlight-dsi0/brightness
 ```
 
-### 4.21 Sleep \&Wake-up Test
+### 4.21 Sleep\&Wake-up Test
 
-**Note: Sleep-wake test without type-C 4G module plugged in.**
+**Note: Sleep & wake-up test without type-C 4G module plugged in.**
 
-<font style="color:#000000;">OK3588 platform supports sleep wake-up.</font>
+OK3588 platform supports sleep wake-up.
 
 <font style="color:#000000;">Short press the power button, the effect is as follows:</font>
 
@@ -1920,7 +1913,7 @@ root@ok3588-buildroot:/# fltest_extgpio.sh GPIO_P17 1	//GPIO_P17 pull up
 root@ok3588-buildroot:/# fltest_extgpio.sh GPIO_P17 0	//GPIO_P17 pull down
 ```
 
-**Note：fltest\_extgpio.sh can only test IO extended chip pins， OK3588 soc GPIO pins should be tested using the fltest\_gpio.sh script.**
+**Note: fltest\_extgpio.sh can only test IO extended chip pins， OK3588 soc GPIO pins should be tested using the fltest\_gpio.sh script.**
 
 ### 4.26 Adding Boot-up Scripts
 
@@ -1967,18 +1960,18 @@ Video Encoding: H264, H.265, maximum support 8k@30fps
 
 Table of hardware codec parameters for the OK3588 platform:
 
-| Video Decoder| Format| Profile| Resolution| Frame rate
-|----------|----------|----------|----------|----------
-| | H.265| main 10| 7680x4320| 60 fps
-| | H.264| main 10| 7680x4320| 30 fps
-| | VP9| Profile 0/2| 7680x4320| 60 fps
-| | VP8| version2| 1920x1080| 60 fps
-| | VC1| | 1920x1080| 60 fps
-| | MPEG-2| | 1920x1080| 60 fps
-| | MPEG-1| | 1920x1080| 60 fps
-| | H.263| | 720x576| 60 fps
-| Video Encoder| H.264| BP/MP/HP@level4.2| 7680x4320| 30 fps
-| | H.265| MP@level4.1| 7680x4320| 30 fps
+| Video Decoder | Format | Profile           | Resolution | Frame rate |
+| ------------- | ------ | ----------------- | ---------- | ---------- |
+|               | H.265  | main 10           | 7680x4320  | 60 fps     |
+|               | H.264  | main 10           | 7680x4320  | 30 fps     |
+|               | VP9    | Profile 0/2       | 7680x4320  | 60 fps     |
+|               | VP8    | version2          | 1920x1080  | 60 fps     |
+|               | VC1    |                   | 1920x1080  | 60 fps     |
+|               | MPEG-2 |                   | 1920x1080  | 60 fps     |
+|               | MPEG-1 |                   | 1920x1080  | 60 fps     |
+|               | H.263  |                   | 720x576    | 60 fps     |
+| Video Encoder | H.264  | BP/MP/HP@level4.2 | 7680x4320  | 30 fps     |
+|               | H.265  | MP@level4.1       | 7680x4320  | 30 fps     |
 
 ### 5.1 Audio and Video Playback
 
@@ -1998,7 +1991,7 @@ Redistribute latency...
 Reached end of play list.
 ```
 
-#### 5.1.2 Playing Video with Gst-launch
+#### 5.1.2 Playing Video With Gst-launch
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location= /userdata/media/video/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
@@ -2012,7 +2005,7 @@ New clock: GstSystemClock
 0:00:01.0 / 0:00:30.0 (3.6 %)
 ```
 
-#### 5.1.3 Playing Audio with Gst-launch
+#### 5.1.3 Playing Audio With Gst-launch
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/audio/test.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:2,0
@@ -2032,7 +2025,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.1.4 Playing Video and Audio with Gst-launch
+#### 5.1.4 Playing Video and Audio With Gst-launch
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location= /userdata/media/video/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:2,0
@@ -2121,7 +2114,7 @@ New clock: GstSystemClock
 0:00:05.9 / 0:00:30.0 (19.8 %)
 ```
 
-#### 5.3.2 Decoding and Playing H264 Format Video with Audio
+#### 5.3.2 Decoding and Playing H264 Format Video With Audio
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/video/1080p_60fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
@@ -2155,7 +2148,7 @@ New clock: GstSystemClock
 0:00:06.4 / 0:00:30.0 (21.4 %)
 ```
 
-#### 5.3.4 Decoding and Playing H265 Format Video with Audio
+#### 5.3.4 Decoding and Playing H265 Format Video With Audio
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/video/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
@@ -2187,7 +2180,7 @@ New clock: GstSystemClock
 0:00:02.5 / 0:00:30.0 (8.7 %)
 ```
 
-#### 5.3.6 Decoding and Playing VP9 Format Video with Audio
+#### 5.3.6 Decoding and Playing VP9 Format Video With Audio
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/video/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:2,0
@@ -2217,7 +2210,7 @@ New clock: GstSystemClock
 0:00:09.2 / 0:00:30.1 (30.7 %)
 ```
 
-#### 5.3.8 Decoding and Playing VP8 Format Video with Audio
+#### 5.3.8 Decoding and Playing VP8 Format Video With Audio
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/video/1080p_30fps_vp8.mp4 typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:2,0
