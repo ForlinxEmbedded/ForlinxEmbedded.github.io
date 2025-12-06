@@ -71,9 +71,9 @@
 <li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html">Linux5.10.209_User’s Manual_V1.0</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.10.209_User’s Compilation Manual_V1.0</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-installation">1. VMware Virtual Machine  Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#vmware-software-downloads-and-purchase"><font style="color:#000000;">1.1 VMware Software Downloads and Purchase</font></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation"><font style="color:#000000;">1.2 VMware Software Installation</font></a></li>
@@ -165,6 +165,31 @@
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p><strong>Manual Version</strong></p></th>
+<th class="head text-center"><p><strong>SoM Version</strong></p></th>
+<th class="head text-center"><p><strong>Carrier Board Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>25/11/2024</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.3 and Above</p></td>
+<td><p>OK3588-C Linux User Compilation Manual Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p><font style="color:#333333;">This manual is designed to enable users of the Forlinx Embedded development board to quickly understand the</font><font style="color:#333333;">compilation process</font><font style="color:#333333;">of the products and familiarize themselves with the </font><font style="color:#333333;">compilation</font> <font style="color:#333333;">methods </font><font style="color:#333333;">of</font> <font style="color:#333333;">Forlinx</font><font style="color:#333333;"> products. The application needs to be cross-compiled on an </font><font style="color:#333333;">ubuntu</font><font style="color:#333333;">host before it can run on the development board. </font>By following the methods provided in the compilation manual and performing practical operations, you will be able to successfully compile your own software code.</p>
@@ -221,33 +246,8 @@ OK3588-linux-source  OK3588-linux-source.tar.bz2
 <li><p>forlinx&#64;ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;</p></li>
 <li><p>//: Explanation of the instruction, no input required;</p></li>
 <li><p><font style="color:blue;">ls</font>：Blue font, indicating the relevant commands that need to be manually entered;</p></li>
-<li><p><strong><font style="color:black;">OK3588-linux-source</font></strong>：Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.</p></li>
+<li><p><strong><font style="color:black;">OK3588-linux-source</font>:</strong> Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.</p></li>
 </ul>
-</section>
-<section id="application-scope">
-<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
-<p>This manual is mainly applicable to the Linux5.10.209 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.</p>
-</section>
-<section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
-<th class="head text-center"><p><strong>Manual Version</strong></p></th>
-<th class="head text-center"><p><strong>SoM Version</strong></p></th>
-<th class="head text-center"><p><strong>Carrier Board Version</strong></p></th>
-<th class="head"><p><strong>Revision History</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>25/11/2024</p></td>
-<td class="text-center"><p>V1.0</p></td>
-<td class="text-center"><p>V1.1</p></td>
-<td class="text-center"><p>V1.3 and Above</p></td>
-<td><p>OK3588-C Linux User Compilation Manual Initial Version</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="vmware-virtual-machine-installation">
 <h2>1. VMware Virtual Machine  Installation<a class="headerlink" href="#vmware-virtual-machine-installation" title="Link to this heading"></a></h2>
