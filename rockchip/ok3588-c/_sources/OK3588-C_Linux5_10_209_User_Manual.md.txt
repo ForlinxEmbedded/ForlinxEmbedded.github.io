@@ -44,7 +44,7 @@ A description of some of the symbols and formats in the manual:
 | <font style="color:black;">Black font</font>| Serial port output message after entering a command|
 | **<font style="color:black;">Bold black</font>**| Key information in the serial port output message|
 | //| Interpretation of input instructions or output information|
-| Username@Hostname| forlinx @ ubuntu: Development environment ubuntu account information. The user can use this information to determine the environment, in which the function operates.|
+| Username@Hostname| forlinx @ ubuntu: Development environment ubuntu account information.<br />The user can use this information to determine the environment, in which the function operates. |
 
 After packaging the file system, you can use the “ls” command to view the generated files.
 
@@ -1416,7 +1416,7 @@ The meanings of the related parameters in the command are as follows:
 | :-------: | ------------------------------------------------------------ |
 |    -i     | Different wifi modules use different parameters, and specify the WIFI device name. |
 |    -s     | Actual wifi hotspot connected                                |
-|    -p     | -p: followed by the parameter Password refers to the password of the actual wifi hotspot to be connected. If the current hotspot does not have a password, the parameter after -p is NONE. |
+|    -p     | -p: followed by the parameter Password refers to the password of the actual wifi hotspot to be connected.<br />If the current hotspot does not have a password, the parameter after -p is NONE. |
 
 The serial port prints as follows:
 
@@ -1812,7 +1812,7 @@ root@ok3588-buildroot:/# echo 0 > /sys/class/backlight/backlight-dsi0/brightness
 root@ok3588-buildroot:/# echo 125 > /sys/class/backlight/backlight-dsi0/brightness
 ```
 
-### 4.21 Sleep\&Wake-up Test
+### 4.21 Sleep \& Wake-up Test
 
 **Note: Sleep & wake-up test without type-C 4G module plugged in.**
 
@@ -2823,7 +2823,7 @@ Select the disk device, check "Firmware Upgrade" and select update.img. Click St
 
 Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 
-Please remove SD CARD!!!, wait for reboot.
+Please remove SD CARD!!! Wait for reboot.
 
 At this time, pull out the TF card, the system automatically restarts (please do not power down directly).
 
