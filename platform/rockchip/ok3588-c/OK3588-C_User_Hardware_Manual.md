@@ -1097,11 +1097,11 @@ USB2.0 HOST controller, using USB2.0 HOST0PHY, the signals in the box below make
 
 - **According to the TYPE - C protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line;**
 
-- **ESD devices must be added to all signals of the TYPE - C socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; **
+- **ESD devices must be added to all signals of the TYPE - C socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF;** 
 
 - **The differential impedance of USB 2.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be ＜10mil;**
 
-- **The differential impedance of USB 3.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be＜3mil. **
+- **The differential impedance of USB 3.0 control signals should be 90 ohms ± 10%, and the maximum time delay within the differential pair should be＜3mil.** 
 
 #### 3.5.16 SATA3.0 Circuit
 
@@ -1394,12 +1394,12 @@ Support x2Lane+x2Lane mode:
 
 Two modes options:
 
-| Option1 |               Sensor1    x4Lane               | MIPI_CSI_RX_D0-3<br/>MIPI_CSI_RX_CLK0 |
-| :-----: | :-------------------------------------------: | :-----------------------------------: |
-| Option2 | Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane | MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0 |
-|         |                                               | MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1 |
+|   Option1   |                 Sensor1    x4Lane                 |   MIPI_CSI_RX_D0-3<br/>MIPI_CSI_RX_CLK0   |
+| :---------: | :-----------------------------------------------: | :---------------------------------------: |
+| **Option2** | **Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane** | **MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0** |
+|             |                                                   | **MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1** |
 
-MIPI DPHY CSI1 RX interface mode:
+♦ MIPI DPHY CSI1 RX interface mode:
 
 - Support x4Lane mode, MIPI\_CSI1\_D\[3:0] data reference MIPI\_CSI0\_CLK0
 
@@ -1410,10 +1410,10 @@ MIPI DPHY CSI1 RX interface mode:
 
 ♦ MIPI1\_CSI\_D\[3:2] data refer to MIPI\_CSI1\_CLK1.
 
-| Option1 |               Sensor1    x4Lane               | MIPI_CSI_RX_D0-3<br/>MIPI_CSI_RX_CLK0 |
-| :-----: | :-------------------------------------------: | :-----------------------------------: |
-| Option2 | Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane | MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0 |
-|         |                                               | MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1 |
+|   Option1   |                 Sensor1    x4Lane                 |   MIPI_CSI_RX_D0-3<br/>MIPI_CSI_RX_CLK0   |
+| :---------: | :-----------------------------------------------: | :---------------------------------------: |
+| **Option2** | **Sensor1    x2Lane<br/>+<br/>Sensor2    x2Lane** | **MIPI_CSI_RX_D0-1<br/>MIPI_CSI_RX_CLK0** |
+|             |                                                   | **MIPI_CSI_RX_D2-3<br/>MIPI_CSI_RX_CLK1** |
 
 ##### **3.5.18.2 MIPI\_D/CPHY\_RX**
 
@@ -1923,7 +1923,7 @@ Data correspondence relationship in BT1120 output, supporting YC Swap.
 | **BT1120\_D\[15:0]** |     **Pull-down**      | **Direct connection is allowed. If feasible, reserve series resistors near the FET3588-C terminal.** | **BT1120 Data Output**      |
 |   **BT1120\_CLK**    |     **Pull-down**      | **Series resistor: 22ohm, placed close to the device end.**  | **BT1120 Clock Output**     |
 
-**3.  When implementing board-to-board connection, it is recommended to connect a 22 - 100 ohm resistor in series (the resistance value should meet SI test requirements), and reserve space for TVS devices.**
+- **When implementing board-to-board connection, it is recommended to connect a 22 - 100 ohm resistor in series (the resistance value should meet SI test requirements), and reserve space for TVS devices.**
 
 ## 4\. Connector Dimension Diagram
 
@@ -1972,7 +1972,7 @@ Table 2. Linux system power consumption
 
 ![Image](./images/OK3588-C_User_Hardware_Manual/1721609574321_e24d5b40_2960_4883_b7e1_25f64fe23fb1.png)![Image](./images/OK3588-C_User_Hardware_Manual/1721609591009_4a4881f9_3a16_4bec_93fe_f6a287ae7237.png)![Image](./images/OK3588-C_User_Hardware_Manual/1721609575250_3c121a2a_920d_454f_ac19_3568ff1bb567.png)![Image](./images/OK3588-C_User_Hardware_Manual/1721609575180_6c688743_9882_4a91_a6c2_8379a790fb5b.png)![Image](./images/OK3588-C_User_Hardware_Manual/1721609575863_3e99ed8a_720b_4446_afc4_14498c83813f.png)![Image](./images/OK3588-C_User_Hardware_Manual/1721609577925_f53c20a0_53a9_4969_b0d9_65611609538e.png)
 
-**Note: **
+**Note:** 
 
 - **The minimum system includes SoM power supply, system flash circuit, and debugging serial port circuit;**
 - **The factory image of OK3588 - C will load the PCIE3.0 driver during startup. At this time, it will detect the two external clock input signals PCIE30\_PORT0\\1\_REFCLK\_IN\_P\\N;**
