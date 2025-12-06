@@ -60,7 +60,7 @@ mlan                  466944  1 moal
 + forlinx@ok3588: The username is root and the hostname is forlinx, indicating that the root user is used for operations on the development board.
 + // : Interpretation of command operations or printed information without input;
 + <font style="color:blue;"><font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>:  </font>Blue font on a gray background indicates relevant commands that need to be entered manually;
-+ **<font style="background-color:#e5e5e5;">moal                  602112  0: </font>**The black font with gray background is the output information after the input command, and the bold font is the key information, which indicates that the NXP AW9098 module driver has been loaded.
++ **moal  602112  0**: The black font with gray background is the output information after the input command, and the bold font is the key information, which indicates that the NXP AW9098 module driver has been loaded.
 
 ## 1\. OK3588 Development Board Description
 
@@ -445,7 +445,7 @@ The RGB optional parameter is: "VP3";
 
 The primary\_display parameter depends on the actual display interface assigned to get the VP.
 
-**Note: **
+**Note:** 
 
 - **When modifying the device tree, you need to follow the annotation rules to avoid using conflicts. The driver does not detect whether the forlinx-control configuration conforms to the rules. An error in the setting will cause abnormal display;**
 - **For the display interface set to "OFF", blocking, deleting, or retaining is possible. It’s not necessary to set all four VP.**
