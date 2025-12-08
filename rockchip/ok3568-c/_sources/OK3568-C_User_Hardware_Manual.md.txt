@@ -119,8 +119,6 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **Front, Top, Perspective**
 
-![](image-1761208408094.png)
-
 Structure size: 45 mm × 70 mm. The dimensional tolerance is shown in the figure. For more dimensional information, please refer to the user data DXF file.
 
 Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
