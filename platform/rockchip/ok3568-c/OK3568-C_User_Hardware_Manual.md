@@ -103,7 +103,7 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **Front**
 
-![](./images/OK3568-C_User_Hardware_Manual/1.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/1.png)
 
 **Back**
 
