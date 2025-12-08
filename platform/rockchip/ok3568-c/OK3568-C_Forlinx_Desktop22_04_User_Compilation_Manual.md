@@ -1,4 +1,4 @@
-# Forlinx Desktop 22.04\_User’s Compilation Manual\_V1.0
+Forlinx Desktop 22.04\_User’s Compilation Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 |    Date    |                        Manual Version                        | Revision History                                             |
 | :--------: | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| 28/02/2025 | <font style="color:rgb(38, 38, 38);">V1.0</font><font style="color:rgb(38, 38, 38);">   </font> | OK3568 Forlinx Desktop 22.04 User Compilation Manual Version. |
+| 28/02/2025 | <font style="color:rgb(38, 38, 38);">V1.0</font><font style="color:rgb(38, 38, 38);">   </font> | OK3568 Forlinx Desktop 22.04 User's Compilation Manual Version. |
 
 ## Overview
 
@@ -134,7 +134,7 @@ Open the virtual machine and select the extracted 3588 development environment.v
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
+![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 ![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
@@ -209,8 +209,6 @@ Specify the disk file, the default one here is fine.
 ![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 Click "Finish" by default.
-
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 The virtual machine creation is now complete.
 
