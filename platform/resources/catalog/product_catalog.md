@@ -1,10 +1,10 @@
 # Forlinx Embedded Product Manual
 
-![Image](_static/images/product_catalog/img1.png)
+![Image](./images/product_catalog/img1.png)
 
-![Image](_static/images/product_catalog/image307.png)
+![Image](./images/product_catalog/image307.png)
 
-![Image](_static/images/product_catalog/image306.png)
+![Image](./images/product_catalog/image306.png)
 
 
 
@@ -1805,7 +1805,7 @@
 
 
 
-![Image](_static/images/product_catalog/FCU1101.png)
+![Image](./images/product_catalog/FCU1101.png)
 
 
 
@@ -1850,7 +1850,7 @@
 
 
 
-![Image](_static/images/product_catalog/FCU1103.png)
+![Image](./images/product_catalog/FCU1103.png)
 
 
 
@@ -1895,7 +1895,7 @@
 ###### LoRa gateway, 2 x Ethernet, 4 x RS485 (expandable to 8 ports)
 
 
-![Image](_static/images/product_catalog/FCU1104.png)
+![Image](./images/product_catalog/FCU1104.png)
 
 
 
@@ -1941,7 +1941,7 @@
 
 
 
-![Image](_static/images/product_catalog/FCU1201.png)
+![Image](./images/product_catalog/FCU1201.png)
 
 
 
@@ -1988,7 +1988,7 @@
 ###### Low cost, industrial grade, fanless, industrial routing
 
 
-![Image](_static/images/product_catalog/FCU2201.png)
+![Image](./images/product_catalog/FCU2201.png)
 
 
 
@@ -2032,7 +2032,7 @@
 ###### Multiple network ports, high performance, a fan - less design, and is of industrial - grade, supporting both 4G and 5G.
 
 
-![Image](_static/images/product_catalog/FCU2303.png)
+![Image](./images/product_catalog/FCU2303.png)
 
 
 
@@ -2082,7 +2082,7 @@
 
 
 
-![Image](_static/images/product_catalog/FCU2401.png)
+![Image](./images/product_catalog/FCU2401.png)
 
 
 
@@ -2133,7 +2133,7 @@
 ###### High performance, multi-interface, low power consumption, industrial grade
 
 
-![Image](_static/images/product_catalog/FCU2601.png)
+![Image](./images/product_catalog/FCU2601.png)
 
 
 
@@ -2185,7 +2185,7 @@
 ###### 4G/5G network communication and enable "5G + A1"
 
 
-![Image](_static/images/product_catalog/FCU3011.png)
+![Image](./images/product_catalog/FCU3011.png)
 
 
 
@@ -2235,7 +2235,7 @@
 ###### 8K video simultaneous editing and decoding: decode up to 8K @ 60fps
 
 
-![Image](_static/images/product_catalog/FCU3501.png)
+![Image](./images/product_catalog/FCU3501.png)
 
 
 
@@ -2284,7 +2284,7 @@
 
 
 
-![Image](_static/images/product_catalog/starterkit.png)
+![Image](./images/product_catalog/starterkit.png)
 
 
 
@@ -2319,7 +2319,7 @@
 
 
 
-![Image](_static/images/product_catalog/image301.png)
-![Image](_static/images/product_catalog/image302.png)
-![Image](_static/images/product_catalog/image303.png)
-![Image](_static/images/product_catalog/image304.png)
+![Image](./images/product_catalog/image301.png)
+![Image](./images/product_catalog/image302.png)
+![Image](./images/product_catalog/image303.png)
+![Image](./images/product_catalog/image304.png)
