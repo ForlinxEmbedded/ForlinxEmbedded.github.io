@@ -358,12 +358,14 @@ When the VMware virtual NIC device is in bridge mode, the host NIC and the virtu
 
 Compiling for Linux requires the installation of a number of toolkits. Make sure that your computer or virtual machine can be connected to the Internet normally before the operation in this section. If the network is disconnected during the installation, please follow the following steps to install.
 
-1. Install the necessary packages for compiling Linux.
+Install the necessary packages for compiling Linux.
 
 ```plain
 forlinx@ubuntu:~$ sudo apt-get update // Update the apt-get download source
 forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot // Install essential toolkits
-forlinx@ubuntu:~$ sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python-pip libncurses5-dev
+forlinx@ubuntu:~$ sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool
+expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static
+live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python-pip libncurses5-dev
 forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmainutils
 ```
 
