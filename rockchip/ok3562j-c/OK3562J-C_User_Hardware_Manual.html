@@ -1,0 +1,1126 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User’s Hardware Manual_V1.2 &mdash; Forlinx Embedded RK3562 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK3562J-C Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V1.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rockchip-rk3562j-description">1. Rockchip RK3562J Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fet3562j-c-som-description">2. FET3562J-C SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fet3562j-c-som-appearance">2.1 FET3562J-C SoM Appearance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3562j-c-som-dimension-diagram">2.2 FET3562J-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameters">2.3 Performance Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-main-frequency">2.3.1 System Main Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operating-environment">2.3.3 Operating Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#som-interface-speed">2.4 SoM Interface Speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3562j-c-som-pins-definition">2.5 FET3562J-C SoM Pins Definition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet3562j-c-som-pins-schematic">2.5.1 FET3562J-C SoM Pins Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fet3562j-c-som-pins-description">2.5.2 FET3562J-C SoM Pins Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.6 SoM Hardware Design Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#som-circuit-design-guidelines">2.6.1 SoM Circuit Design Guidelines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#som-anti-vibration-design-guidelines">2.6.2 SoM Anti Vibration Design Guidelines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3562j-c-development-platform-description">3. OK3562J-C Development Platform Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok3562j-c-development-board-interface-diagram">3.1 OK3562J-C Development Board Interface Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3562j-c-som-dimension-diagram">3.2 OK3562J-C SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-naming-rules">3.3 Carrier Board Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-resources">3.4 Carrier Board Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3562j-c-carrier-board-description">3.5 OK3562J-C Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#switch-reset-key">3.5.2 Switch &amp; Reset Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#saradc-key">3.5.3 SARADC Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-configuration">3.5.4 BOOT Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging-serial-port">3.5.5 Debugging Serial Port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jtag-swd">3.5.6 JTAG/SWD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc">3.5.7 RTC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.8 TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#saradc">3.5.9 SARADC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet">3.5.10 Ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-csi">3.5.11 MIPI-CSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-dsi">3.5.12 MIPI-DSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lvds-display">3.5.13 LVDS Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">3.5.14 Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-module">3.5.15 4G Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb2-0">3.5.16 USB2.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb3-0-pcie">3.5.17 USB3.0 &amp; PCIe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-download">3.5.18 USB Download</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-bluetooth">3.5.19 WiFi &amp; Bluetooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can">3.5.20 CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rs485">3.5.21 RS485</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-gpio">3.5.22 USER GPIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spi">3.5.23 SPI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#connector-dimension-diagram">4. Connector Dimension Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-board-linux-system-whole-machine-power-consumption-table">5. Development Board Linux System Whole - Machine Power Consumption Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-system-schematic">6. Minimum System Schematic</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html">RK Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded RK3562 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">User’s Hardware Manual_V1.2</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="user-s-hardware-manual-v1-2">
+<h1>User’s Hardware Manual_V1.2<a class="headerlink" href="#user-s-hardware-manual-v1-2" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p><strong>Manual Version</strong></p></th>
+<th class="head text-center"><p><strong>SoM Version</strong></p></th>
+<th class="head text-center"><p><strong>Carrier Board Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>06/06/2024</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0 and Above</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>19/09/2024</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0 and Above</p></td>
+<td><p>Adding note: only RK3562 has CAN interface, and only RK3562.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>21/11/2025</p></td>
+<td class="text-center"><p>V1.2</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0 and Above</p></td>
+<td><p>Adding 2.6.2 SoM Anti Vibration Design Guidelines.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help users quickly familiarize themselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “OK3562J-C Pin Multiplexing Comparison Table” and “OK3562J-C Design Guide.”</p>
+<ul class="simple">
+<li><p>There are total four chapters:</p></li>
+<li><p>Chapter 1. is CPU overview, briefly introducing its performance and applications;</p></li>
+<li><p>Chapter 2. is comprehensive introduction to the SoM, including connector pins explanations and function introductions;</p></li>
+<li><p>Chapter 3. is comprehensive introduction to the development board, divided into multiple chapters, including both hardware principles and simple design ideas;</p></li>
+<li><p>Chapter 4. mainly describes the board’s power consumption performance and other considerations.</p></li>
+<li><p>A description of some of the symbols and formats associated with this manual:</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Format</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
+<td><p>Note or information that requires special attention, be sure to read carefully.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>Relevant notes on the test chapters</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>🛤️</p></td>
+<td><p>Indicates the related path.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rockchip-rk3562j-description">
+<h2>1. Rockchip RK3562J Description<a class="headerlink" href="#rockchip-rk3562j-description" title="Link to this heading"></a></h2>
+<p>The RK3562J is a high - performance, low - power quad - core application processor specifically designed for electronic devices.</p>
+<p>The RK3562J is equipped with multiple embedded hardware engines, which can optimize the performance of high - end applications. It supports almost all - format H.264 decoding at 1080p&#64;60fps, H.265 decoding at 4K&#64;30fps, and H.264 encoding at 1080p&#64;60fps. In addition, it also includes a high - quality JPEG encoder and decoder.</p>
+<p>The RK3562J incorporates an embedded 3D GPU, ensuring full compatibility with OpenGL ES 1.1/2.0/3.2, OpenCL 2.0, and Vulkan 1.1. Moreover, it includes a special 2D hardware engine to maximize display performance and ensure smooth operation.</p>
+<p>It features a high - performance memory interface (LPDDR4/LPDDR4X), capable of maintaining demanding memory bandwidth.</p>
+<p>Only the RK3562J has a CAN interface.</p>
+<p>Only the RK3562 has an NPU.</p>
+<p><strong>RK3562J Processor Block Diagram</strong></p>
+<p><img alt="Image" src="_images/1720491377948_e6f758e2_9028_421b_b443_37d46addfdf9.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="fet3562j-c-som-description">
+<h2>2. FET3562J-C SoM Description<a class="headerlink" href="#fet3562j-c-som-description" title="Link to this heading"></a></h2>
+<section id="fet3562j-c-som-appearance">
+<h3>2.1 FET3562J-C SoM Appearance<a class="headerlink" href="#fet3562j-c-som-appearance" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1720491354712_9ab87fdf_7150_4848_b8ae_6abb3cdad3ab.jpeg" /></p>
+<p><strong>Front</strong></p>
+<p><img alt="Image" src="_images/1720491355097_ef420ba0_6611_4cac_8803_f0b480cbdf0b.jpeg" /></p>
+<p><strong>Back</strong></p>
+</section>
+<section id="fet3562j-c-som-dimension-diagram">
+<h3>2.2 FET3562J-C SoM Dimension Diagram<a class="headerlink" href="#fet3562j-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1720491355438_d5469aa4_d099_45c8_aca9_116ee7206b96.png" /></p>
+<p>Structure size: 36mm × 56mm, dimensional tolerance ± 0.13mm, refer to DXF file for more dimensional information.</p>
+<p>Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.</p>
+<p>SoM connector: Board to board connection, 0.5mm pitch, 80 P, male socket, height with locating post.</p>
+<p>Carrier board connector: Board-to-board, 0.5mm pitch, 80 P, female socket, height with locating post.</p>
+<p>Refer to Appendix for the connector dimension diagram.</p>
+<p>It is recommended to select M2 * 2mm patch nuts for fixing the SoM and the carrier board, and the matching screw specification is M2 * 4mm.</p>
+</section>
+<section id="performance-parameters">
+<h3>2.3 Performance Parameters<a class="headerlink" href="#performance-parameters" title="Link to this heading"></a></h3>
+<section id="system-main-frequency">
+<h4>2.3.1 System Main Frequency<a class="headerlink" href="#system-main-frequency" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Name</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Frequency</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>1.2</p></td>
+<td><p>1.8</p></td>
+<td><p>GHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RTC clock</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="power-parameter">
+<h4>2.3.2 Power Parameter<a class="headerlink" href="#power-parameter" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Pin Number</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Power Supply Voltage</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>4.75</p></td>
+<td><p>5</p></td>
+<td><p>5.25</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>No-load current</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p>100</p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>See Appendix Power Consumption Table</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>High-load current</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p>440</p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>See Appendix Power Consumption Table</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operating-environment">
+<h4>2.3.3 Operating Environment<a class="headerlink" href="#operating-environment" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Operating temperature</p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>0</p></td>
+<td><p>25</p></td>
+<td><p>+70</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>Commercial level</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+85</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>Industrial-grade</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Humidity</p></td>
+<td><p>Operating Environment</p></td>
+<td class="text-center"><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p>No condensation</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="som-interface-speed">
+<h3>2.4 SoM Interface Speed<a class="headerlink" href="#som-interface-speed" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>USB2.0</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports 1 x USB2.0 HOST, up to 480Mbps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART<sup>(1)</sup></p></td>
+<td class="text-center"><p>≤10</p></td>
+<td><p>Supports flow control, with a maximum baud rate of 4Mbps.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td><p>Supports master and slave modes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I2C<sup>（2）</sup></p></td>
+<td class="text-center"><p>≤5</p></td>
+<td><p>Supports standard mode 100kbit/s and fast mode 400kbit/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>Supports one RGMII and one RMII</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PCIe</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>PCIe 2.1, can only be used in RC mode, only supports single lane, 5Gbps,<br />and can only be used alternatively with USB3.0 pin multiplexing</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB3.0</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Supports the master-slave mode of USB3.0,<br />and can only be used alternatively with PCIe pin multiplexing.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ADC<sup>（3）</sup></p></td>
+<td class="text-center"><p>≤16</p></td>
+<td><p>10bits resolution, maximum sampling rate 1MS/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LVDS<sup>（4）</sup></p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Supports VESA/JEIDA LVDS data format with resolution up to 800 X 1280 &#64; 60Hz</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI-DSI<sup>（4）</sup></p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Supports 1x MIPI DSI TX, 4-lanes, resolution up to 2048 X 1080 &#64; 60Hz</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RGB</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Supports RGB 888 format with resolution up to 2048 X 1080 &#64; 60Hz</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI-CSI</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>The MIPI _ CSI _ RX0 and the MIPI _ CSI _ RX1 have two ports in total;<br/>a single port supports 4-lanes, and the maximum rate of each lane is 2.5g bps;<br/>a single port can also be split into two 2-lanes for use.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD card</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Compatible with SDIO 3.0 protocol, 4bits data bit width</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SDIO</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Compatible with SDIO 3.0 protocol, 4bits data bit width</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SAI<sup>(5)</sup></p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>Supports protocol I2S, PCM, TDM, sampling rate up to 192kHz</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Audio</p></td>
+<td class="text-center"><p></p></td>
+<td><p>The SoM has a built - in codec, which directly outputs audio analog signals. The sampling rate ranges from 48KHz to 192KHz;<br/>A mono speaker with a class - D amplifier and a power of 1.3W;<br/>A stereo headphone output with a 32Ohm load;<br/>2 x single - ended MIC inputs.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PDM</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Up to 8 channels, sampling rate up to 192KHz, master receive mode</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPDIF</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN<sup>(6)</sup></p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>Supports CAN2.0 B, data rate 1Mbps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>≤16</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>GPIO</p></td>
+<td class="text-center"><p>≤79</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The parameters in the table are the theoretical values of hardware design or CPU;</strong></p></li>
+<li><p><strong>“TBD” refers to functions not yet developed.</strong></p></li>
+<li><p><strong>UART0 is a debugging serial port and is not recommended to be used for other functions. Users can use up to 9 x serial ports;</strong></p></li>
+<li><p><strong>I2C0 is occupied on the SoM, and the carrier board is not available.</strong></p></li>
+<li><p><strong>SARADC0_BOOT and SARADC0_IN1 are related to system startup. It is not recommended to use them as general ADC. The maximum number of ADC available to users is 14;</strong></p></li>
+<li><p><strong>LVDS and MIPI - DSI have pin multiplexing. You can only choose one of them for use;</strong></p></li>
+<li><p><strong>I2S0 is occupied by the SoM and cannot be used on the carrier board;</strong></p></li>
+<li><p><strong>Only the RK3562J has a CAN interface.</strong></p></li>
+</ul>
+</section>
+<section id="fet3562j-c-som-pins-definition">
+<h3>2.5 FET3562J-C SoM Pins Definition<a class="headerlink" href="#fet3562j-c-som-pins-definition" title="Link to this heading"></a></h3>
+<section id="fet3562j-c-som-pins-schematic">
+<h4>2.5.1 FET3562J-C SoM Pins Schematic<a class="headerlink" href="#fet3562j-c-som-pins-schematic" title="Link to this heading"></a></h4>
+<p><font style="color:#FF0000;">(SoM connector schematic)</font></p>
+<p><img alt="Image" src="_images/1721446517826_8ac736b2_64ae_4aeb_8dbc_744bd199c725.png" /></p>
+<p><img alt="Image" src="_images/1721446523715_0bd68bf7_868e_49a5_9d42_416d77d6cb5d.png" /></p>
+<p><img alt="Image" src="_images/1721446530646_a96056fe_3a97_4921_a7da_c5b07c1b3f34.png" /></p>
+</section>
+<section id="fet3562j-c-som-pins-description">
+<h4>2.5.2 FET3562J-C SoM Pins Description<a class="headerlink" href="#fet3562j-c-som-pins-description" title="Link to this heading"></a></h4>
+<p>When you have multiple functional expansion requirements, please refer to the user guide “FET3562-C Pin Multiplexing Table”. However, for more detailed information, it is recommended to consult relevant documents, the chip datasheet, and the reference manual.</p>
+</section>
+</section>
+<section id="som-hardware-design-description">
+<h3>2.6 SoM Hardware Design Description<a class="headerlink" href="#som-hardware-design-description" title="Link to this heading"></a></h3>
+<section id="som-circuit-design-guidelines">
+<h4>2.6.1 SoM Circuit Design Guidelines<a class="headerlink" href="#som-circuit-design-guidelines" title="Link to this heading"></a></h4>
+<p><strong>Power Pin</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>Default Function</strong></p></th>
+<th class="head"><p><strong>Pin Number</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Power</p></td>
+<td class="text-center"><p>VCC5V0_SYS</p></td>
+<td class="text-center"><p>Power Input</p></td>
+<td><p>The power supply pin for the SoM is 5V, and<br />the carrier board provides a current of no less than 2.5A.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p>VCC3V3_SD</p></td>
+<td class="text-center"><p>Power output</p></td>
+<td><p>Only used for power supply of backplane SD card,<br />with maximum output current capacity of 500mA</p></td>
+<td><p>P2_20</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td><p>SoM power ground and signal ground,<br />all GND pins need to be connected</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Function Control Pin</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>Default Function</strong></p></th>
+<th class="head text-center"><p><strong>Pin Number</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>CPU Reset</p></td>
+<td class="text-center"><p>RESETn</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>SoM power reset, active low, users should not add additional<br />capacitive loads on this pin, so as not<br />to affect the normal startup of the SoM.</p></td>
+<td class="text-center"><p>P2_73</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Power Enable</p></td>
+<td class="text-center"><p>PMIC_EXT_EN</p></td>
+<td class="text-center"><p>O</p></td>
+<td><p>Enable signal to control the<br />external power supply of the carrier board,<br />output from the SoM, 3.3V level</p></td>
+<td class="text-center"><p>P2_75</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Power On/Off</p></td>
+<td class="text-center"><p>PMIC_PWRON</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>Low level is valid, long press to<br />turn off, short press to turn on</p></td>
+<td class="text-center"><p>P2_77</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>BOOT Mode Selection</p></td>
+<td class="text-center"><p>SARADC0_BOOT</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>When the signal is grounded,<br />the startup card enters the<br />Maskrom download mode.</p></td>
+<td class="text-center"><p>P2_4</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Reset Mode</p></td>
+<td class="text-center"><p>SARADC0_IN1_KET/RECOVERY</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>When the signal is grounded,<br />the startup card enters the<br /> Recovery download mode.</p></td>
+<td class="text-center"><p>P2_6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Debug Port</p></td>
+<td class="text-center"><p>UART0_TX_M0_DEBUG<br/>UART0_RX_M0_DEBUG</p></td>
+<td class="text-center"><p>I/O</p></td>
+<td><p>Debugging serial port. It is recommended that the<br />user keep the port function.</p></td>
+<td class="text-center"><p>P3_75<br/>P3_77</p></td>
+</tr>
+</tbody>
+</table>
+<p>It includes the minimum system block diagram.</p>
+<p>FET3562J-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, as shown in the following figure:</p>
+<p><img alt="Image" src="_images/1721446544505_ec72ef24_31dd_43be_96a3_cc26c3d5b619.png" /></p>
+<p>Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, image flashing port, otherwise, users can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.</p>
+<p>Please refer to section 3.5 in “Chapter 3. OK3562J-C Carrier Board Description” for the peripheral circuits.</p>
+</section>
+<section id="som-anti-vibration-design-guidelines">
+<h4>2.6.2 SoM Anti Vibration Design Guidelines<a class="headerlink" href="#som-anti-vibration-design-guidelines" title="Link to this heading"></a></h4>
+<p>It uses M2 - sized thread - locking screws to fix the pre - set mounting holes at the four corners of the SoM. The tightening torque is controlled at 0.15 N·m. The specific assembly schematic diagram is as follows.</p>
+<p><img alt="Image" src="_images/1763703157108_073d1c54_e66c_4da1_811d_f02b1ac42ff3.jpeg" /></p>
+<p>This design has passed the vibration test specified in the standards of GB/T 2423.10 - 2008 / IEC 60068 - 2 - 6:1995, reaching the following levels: 	Frequency range: 10 Hz to 150 Hz</p>
+<p>Test axes: X, Y, and Z axes</p>
+<p>Displacement amplitude: 0.35 mm</p>
+<p>Acceleration amplitude: 5 g</p>
+<p>The performance data listed in this manual is obtained from tests in a standard laboratory environment and is applicable to general industrial equipment. The performance in actual applications may vary due to factors such as installation methods and combined stresses.</p>
+</section>
+</section>
+</section>
+<section id="ok3562j-c-development-platform-description">
+<h2>3. OK3562J-C Development Platform Description<a class="headerlink" href="#ok3562j-c-development-platform-description" title="Link to this heading"></a></h2>
+<section id="ok3562j-c-development-board-interface-diagram">
+<h3>3.1 OK3562J-C Development Board Interface Diagram<a class="headerlink" href="#ok3562j-c-development-board-interface-diagram" title="Link to this heading"></a></h3>
+<p>The connection of OK3562J-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:</p>
+<p><img alt="Image" src="_images/1720491366950_f7de534c_64a4_407c_a706_ae995db9910f.png" /></p>
+<p><img alt="Image" src="_images/1720491367485_1852bfe0_8cb2_437e_abde_c363e975a7b0.png" /></p>
+</section>
+<section id="ok3562j-c-som-dimension-diagram">
+<h3>3.2 OK3562J-C SoM Dimension Diagram<a class="headerlink" href="#ok3562j-c-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1720491367938_d451ca99_8486_4782_bd08_544dba0891d8.png" /></p>
+<p>PCB Size: 130mm × 190mm</p>
+<p>Fixed hole size: spacing: 120mm × 180mm, hole diameter: 3.2mm.</p>
+<p>Plate making process: thickness 1.6mm, 4-layer PCB.</p>
+<p>Power supply voltage: DC 12V.</p>
+<p>Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.</p>
+<p><img alt="Image" src="_images/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png" /></p>
+</section>
+<section id="carrier-board-naming-rules">
+<h3>3.3 Carrier Board Naming Rules<a class="headerlink" href="#carrier-board-naming-rules" title="Link to this heading"></a></h3>
+<p>ABC-D+IK:M</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Field</strong></p></th>
+<th class="head text-center"><p><strong>Field Description</strong></p></th>
+<th class="head text-center"><p><strong>Value</strong></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>A</p></td>
+<td class="text-center"><p>Qualification level</p></td>
+<td class="text-center"><p>PC</p></td>
+<td class="text-center"><p>Prototype Sample</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>Blank</p></td>
+<td class="text-center"><p>Mass Production</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>B</p></td>
+<td class="text-center"><p>Product line identification</p></td>
+<td class="text-center"><p>OK</p></td>
+<td class="text-center"><p>Forlinx Embedded development board</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>C</p></td>
+<td class="text-center"><p>CPU Type</p></td>
+<td class="text-center"><p>3562</p></td>
+<td class="text-center"><p>RK3562</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-</p></td>
+<td class="text-center"><p>Segment Identification</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>D</p></td>
+<td class="text-center"><p>Connection</p></td>
+<td class="text-center"><p>Cx</p></td>
+<td class="text-center"><p>Board-to-board Connector</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>+</p></td>
+<td class="text-center"><p>Segment Identification</p></td>
+<td class="text-center"><p>+</p></td>
+<td class="text-center"><p>The configuration parameter section follows this identifier.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I</p></td>
+<td class="text-center"><p>Operating temperature</p></td>
+<td class="text-center"><p>C</p></td>
+<td class="text-center"><p>0 to 70℃  commercial-grade</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>I</p></td>
+<td class="text-center"><p>-40 to 85℃   industrial  level</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>K</p></td>
+<td class="text-center"><p>PCB Version</p></td>
+<td class="text-center"><p>11</p></td>
+<td class="text-center"><p>V1.1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>xx</p></td>
+<td class="text-center"><p>Vx.x</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>:M</p></td>
+<td class="text-center"><p>Internal Identification of the Manufacturer</p></td>
+<td class="text-center"><p>:X</p></td>
+<td class="text-center"><p>This is the internal identification of the manufacturer and has no impact on the use.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="carrier-board-resources">
+<h3>3.4 Carrier Board Resources<a class="headerlink" href="#carrier-board-resources" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>MIPI-DSI<sup>（1）</sup></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>4-lane MIPI-DSI, supporting capacitive touch screen and<br />backlight brightness adjustment</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LVDS<sup>（1）</sup></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>4-lane LVDS, supporting capacitive touch screen and backlight<br />brightness adjustment</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN<sup>（3）</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Supports CAN2.0B, electrical isolation</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RS485<sup>（2）</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Electrical isolation</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI-CSI</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>Led out via FPC socket, 4lane+2lane+2lane</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>WiFi</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Single antenna 2.4G &amp; 5GHz Wi-Fi Dual-band 1X1 802.11ac +Bluetooth 4.2</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Bluetooth</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB3.0</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>The master-slave mode can be switched to use with PCIE.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PCIe</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>PCIe 2.1 can only be used in RC mode, only supports single <br />lane, 5Gbps, and can be used alternatively with USB3.0.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4G</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>4G module supporting miniPCIE interface, with USB2.0<br /> communication signal</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>TF Card</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports maximum SDR104 rate</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Led out via box header connector</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>KEY ADC</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>Use 1 x SARADC to export 4 keys.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USER GPIO</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>User GPIO, key input + LED output</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB2.0</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>USB HUB pinout, supports master mode only</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>1 x 100Mbps port and 1 x 1Gbps port are led out via RJ45.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Audio</p></td>
+<td class="text-center"><p></p></td>
+<td><p>Mono speaker connector, class-D, 1.3 W;<br/>Stereo headphone output, 32 Ohm load;<br />Headphone recording + on-board MIC recording</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ADC</p></td>
+<td class="text-center"><p>13</p></td>
+<td><p>The pin header pin-out functions, which can be connected to<br />a sliding rheostat to collect voltage values.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RTC</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>On-board CR2032 battery, keep going when power is off</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Connect the display for backlight brightness adjustment</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART Debug<sup>（2）</sup></p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>Integrated in a Type-C port that can be connected to a<br />computer for debugging</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG Debug</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The parameters in the table are the theoretical values of hardware design or CPU;</strong></p></li>
+<li><p><strong>There is interface multiplexing between MIPI-DSI and LVDS, and only one of them can be used;</strong></p></li>
+<li><p><strong>UART9 is used for both debug and RS485. A DIP switch is used to select between the two functions;</strong></p></li>
+<li><p><strong>Only the RK3562J has a CAN interface.</strong></p></li>
+</ul>
+</section>
+<section id="ok3562j-c-carrier-board-description">
+<h3>3.5 OK3562J-C Carrier Board Description<a class="headerlink" href="#ok3562j-c-carrier-board-description" title="Link to this heading"></a></h3>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>The component UID with “_DNP” mark in the diagram below represents it is not soldered by<br />
+default;</strong></p></li>
+<li><p><strong>The schematic diagrams in this manual are only for interface description. When users conduct hardware design, please refer to the source file materials.</strong></p></li>
+</ul>
+<section id="carrier-board-power">
+<h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
+<p>As shown in the figure, the 12 V DC power supply supplies power to the development board through the power socket P9. VDD_5V supplies power to the SoM. After the SoM is powered on, it outputs PMIC_EXT_EN to control the conduction of U3 on the carrier board. Then, VCC_5V supplies power to the carrier board devices.</p>
+<p>PMIC_EXT_EN ensures that the SoM is powered on first and the carrier board is powered on later, preventing the latch - up effect from damaging the CPU.</p>
+<p><img alt="Image" src="_images/1721446595384_476c8c10_b516_4891_8a9b_e12cbe272a85.png" /></p>
+<p><img alt="Image" src="_images/1721446601196_af9c2602_189c_4e06_85fb_2046c2924f0a.png" /></p>
+<p><img alt="Image" src="_images/1721446605122_c03bc98a_fb9e_443b_91ab_fb2bf8bb57ed.png" /></p>
+</section>
+<section id="switch-reset-key">
+<h4>3.5.2 Switch &amp; Reset Key<a class="headerlink" href="#switch-reset-key" title="Link to this heading"></a></h4>
+<p>K6 on the carrier board is the development board reset key. Pressing it can realize the whole board power off and reset.</p>
+<p>K7 on the carrier board is the development board power - on/off button. The board is set to start automatically when power is supplied by default. Long - press this button in the powered - on state to turn off the board, and then short - press it to turn it on.</p>
+<p><img alt="Image" src="_images/1721446611167_73a8c6ae_568f_43ff_8528_a7ef9e0fd651.png" /></p>
+</section>
+<section id="saradc-key">
+<h4>3.5.3 SARADC Key<a class="headerlink" href="#saradc-key" title="Link to this heading"></a></h4>
+<p>The carrier board uses one SARADC signal to realize the function display of the sampling key value through the key and resistance voltage division. The SARADC0_IN1_KEY/RECOVERY on the SoM is pulled up to 1.8V through a 10K resistor.</p>
+<p><img alt="Image" src="_images/1721446617650_21755fd8_f2ef_4911_a4e8_62d3c878ea6c.png" /></p>
+</section>
+<section id="boot-configuration">
+<h4>3.5.4 BOOT Configuration<a class="headerlink" href="#boot-configuration" title="Link to this heading"></a></h4>
+<p>The device OK3562-C determines the boot method by measuring the voltage at the SARADC0_BOOT pin. The SoM is already configured for this circuit, with the default boot priority as follows: FSPI, eMMC, TF Card, and then USB.</p>
+<p>The FSPI is not welded on the SoM by default and only boots from the eMMC. System images can be flashed to the TF Card and USB.</p>
+<p>If you use a USB cable to connect the board to a computer for image flashing, press and hold the K5 button while powering on the board to enter the Maskrom mode. Then, connect USB0 to the computer to flash the system.</p>
+<p>If you use a TF Card to flash the image, you need to make a TF Card in advance. After inserting the card into the board and powering it on, the board will enter the TF - card flashing process. For the detailed flashing process, please refer to the software user manual.</p>
+<p><img alt="Image" src="_images/1721446625491_7ee54dbf_9e1c_4b65_b808_494bdab66050.png" /></p>
+<p><strong>Note: The SARADC0 _ BOOT signal is not available for other functions.</strong></p>
+</section>
+<section id="debugging-serial-port">
+<h4>3.5.5 Debugging Serial Port<a class="headerlink" href="#debugging-serial-port" title="Link to this heading"></a></h4>
+<p>The carrier board integrates 2 x debug serial ports with one USB Type-C. Install the driver for CH342 on the computer, connect the P10 port to the computer, and debug serial port to start debugging.</p>
+<p>UART9 is connected to both the debugging port and the RS485 port. You can use the DIP switch (reference designator S4) to select its function.</p>
+<p><img alt="Image" src="_images/1721446633850_72ae21c0_50d2_4510_957d_5fc9df5782a2.png" /></p>
+<p><img alt="Image" src="_images/1721446638365_41fea2fc_6587_4082_bea3_21a9eb5c34d0.png" /></p>
+<p><strong>Note: To facilitate later debugging, please lead out these debug serial ports when designing the carrier board by yourselves.</strong></p>
+</section>
+<section id="jtag-swd">
+<h4>3.5.6 JTAG/SWD<a class="headerlink" href="#jtag-swd" title="Link to this heading"></a></h4>
+<p>The development board supports two-wire JTAG/SWD interface, which is multiplexed with the TF card interface. Led out via a 2.54mm pitch pin.</p>
+<p><img alt="Image" src="_images/1721446644184_2f4eee8c_9b86_4425_9b64_b4efbf8926ae.png" /></p>
+</section>
+<section id="rtc">
+<h4>3.5.7 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
+<p>The carrier board is externally provided with RTC equipment through I2C1, and is supplied with power through D6 compatible with VCC _ 3V3 and the button cell. After the carrier board is powered off, the button cell can maintain power supply for the RTC chip. The RX8010SJ chip design is used by default. The button cell model is CR2032.</p>
+<p><img alt="Image" src="_images/1721446648977_23d74e8e_25f8_4df8_a12a_2d09aa529af7.png" /></p>
+</section>
+<section id="tf-card">
+<h4>3.5.8 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
+<p>The TF Card on the development board uses the SDMMC0 channel of the CPU. The power supply for the TF card uses the VCC_3V3_SD output from the SoM.</p>
+<p><img alt="Image" src="_images/1721446654373_1aca67f8_0da9_485b_a1b3_e15523cd953d.png" /></p>
+<p><img alt="Image" src="_images/1721446658874_79413083_314b_489d_b5a5_f1437c262e58.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The pull-up resistor on the bus has been adapted on the SoM, so the pull-up can not be processed on the carrier board;</strong></p></li>
+<li><p><strong>The TF card is a hot-swappable device, so ESD protection should be implemented;</strong></p></li>
+<li><p><strong>SD signals must be length-matched.</strong></p></li>
+</ul>
+</section>
+<section id="saradc">
+<h4>3.5.9 SARADC<a class="headerlink" href="#saradc" title="Link to this heading"></a></h4>
+<p>The SARADC is led out with 2.54mm - spaced pin headers. When paired with a sliding potentiometer, it can be directly connected via DuPont wires. The SoM has a total of 13 x SARADC, and the sampling voltage should not exceed 1.8V.</p>
+<p><img alt="Image" src="_images/1721446671753_d37dc888_b4b0_4fff_838b_1bd35ecc4b04.png" /></p>
+</section>
+<section id="ethernet">
+<h4>3.5.10 Ethernet<a class="headerlink" href="#ethernet" title="Link to this heading"></a></h4>
+<p>The development board supports 2 x native 1000M and 100M network ports. It uses the RGMII and RMII interfaces of the SoM, and is implemented in conjunction with the YT8521SH and YT8512H chips. These ports are led out through standard RJ45 sockets with network transformers, enabling external connection to network devices.</p>
+<p><img alt="Image" src="_images/1721446677497_8cea3627_269e_43bb_aaee_1ada7134189c.png" /><img alt="Image" src="_images/1721446686001_d6b1f862_dca3_4f9a_8c78_4939c2294a78.png" /></p>
+<p><img alt="Image" src="_images/1721446699737_761a4473_1be6_42c1_a63f_475c3498eb4b.png" /></p>
+<p><img alt="Image" src="_images/1721446709076_0613bb50_4d8e_45cd_b820_a86f9781b620.png" /></p>
+<p><img alt="Image" src="_images/1721446714066_fb28d644_642c_4df6_8e98_83b9be9ec0e7.png" /></p>
+</section>
+<section id="mipi-csi">
+<h4>3.5.11 MIPI-CSI<a class="headerlink" href="#mipi-csi" title="Link to this heading"></a></h4>
+<p>There are three FPC sockets on the development board that can be connected to MIPI - CSI cameras. The connectors are 26P, with a 0.5mm pitch and a bottom - access flip - cover design.</p>
+<p>The P17 and P18 ports support 2lane MIPI - CSI connections, while the P16 port supports 4 lane MIPI - CSI connections.</p>
+<p><img alt="Image" src="_images/1721446718757_b10e81e8_9e80_4776_a4d7_f115e5882729.png" /><img alt="Image" src="_images/1721446722242_2ae37c9d_3c79_4795_9da6_74c1ff84ffa6.png" /><img alt="Image" src="_images/1721446726773_2903a022_63df_4a6b_b888_2986f839af09.png" /></p>
+</section>
+<section id="mipi-dsi">
+<h4>3.5.12 MIPI-DSI<a class="headerlink" href="#mipi-dsi" title="Link to this heading"></a></h4>
+<p>The FPC socket with the reference designator P19 on the development board can be connected to a MIPI - DSI display. The connector is 30P, with a 0.5mm pitch and a bottom - access flip - cover design.</p>
+<p>It supports 4 - lane MIPI - DSI connections and touchscreens with I2C interfaces. MIPI-DSI and LVDS screens can only be used alternatively, not simultaneously.</p>
+<p><img alt="Image" src="_images/1721446733917_6575166d_fc61_4300_87bd_13f0d658300d.png" /></p>
+</section>
+<section id="lvds-display">
+<h4>3.5.13 LVDS Display<a class="headerlink" href="#lvds-display" title="Link to this heading"></a></h4>
+<p>The pin header P20 on the development board can be connected to an LVDS display screen. The connector has 38P with a 2.0mm pitch.</p>
+<p>It supports 4 lane LVDS connectivity and I2C interface. MIPI-DSI and LVDS screens can only be used alternatively, not simultaneously.</p>
+<p><img alt="Image" src="_images/1721446743763_1f0819f9_641f_449d_b8c3_058fb7aaaeb0.png" /></p>
+</section>
+<section id="audio">
+<h4>3.5.14 Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h4>
+<p>There is a standard 3.5mm headphone jack on the development board (CTIA international standard) at P21, supporting stereo headphone playback and mono MIC recording.</p>
+<p>The P22 interface is a speaker interface, supporting mono Speaker, class-D, 1.3 W power.</p>
+<p>P23 is an onboard MIC that enables mono recording.</p>
+<p><img alt="Image" src="_images/1721446749396_55255c14_6f4e_4e24_9551_f4c4d3a629e2.png" /></p>
+<p><img alt="Image" src="_images/1721446753737_2e924d3e_60d2_4690_be53_5d590d20b24f.png" /><img alt="Image" src="_images/1721446756971_d4539841_fb25_4600_a023_4dba2bf6c276.png" /></p>
+</section>
+<section id="g-module">
+<h4>3.5.15 4G Module<a class="headerlink" href="#g-module" title="Link to this heading"></a></h4>
+<p>The development board can be installed with a 4G module, and the supported specifications are miniPCIE interface, 3.3 V power supply, and USB2.0 communication.</p>
+<p>P29 is a self - ejecting nanoSIM card slot. Please pay attention to the card insertion direction according to the markings on the board. Hot - swapping of the card is not supported.</p>
+<p>Before using the 4G function, please power off the board first, install the 4G module and the SIM card, connect the 4G ipex jumper from the module to P26 on the board, and then an external antenna can be connected via the SMA interface of P25.</p>
+<p><img alt="Image" src="_images/1721446766975_2cdc950d_ff69_41b8_9a22_5af94ea9e078.png" /></p>
+<p><img alt="Image" src="_images/1721446771962_866688c7_efc5_480d_b4eb_28018a4b6a03.png" /><img alt="Image" src="_images/1721446775396_9606530f_c293_4d33_a7b6_75621b602368.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="usb2-0">
+<h4>3.5.16 USB2.0<a class="headerlink" href="#usb2-0" title="Link to this heading"></a></h4>
+<p>The development board is equipped with a built - in USB2.0 HUB, which expands four downstream USB HOST nodes. On the development board, these nodes are respectively connected to three standard USB2.0 - A interfaces and a mini - PCIE interface. The mini - PCIE interface can be connected to a 4G module.</p>
+<p><img alt="Image" src="_images/1721446785860_e24b0d1a_24e8_46f4_91a1_ef38b423a915.png" /></p>
+</section>
+<section id="usb3-0-pcie">
+<h4>3.5.17 USB3.0 &amp; PCIe<a class="headerlink" href="#usb3-0-pcie" title="Link to this heading"></a></h4>
+<p>The SoM natively supports USB3.0 and PCIe2.1. However, these two functions share the same pins. The development board retains both functions and uses a high - speed analog switch chip and a one - bit DIP switch to control the selection. The USB3.0 is led out as a standard USB3.0 - A socket, and the PCIE2.1 is led out as a standard PCIE X1 socket.</p>
+<p>PCIE can only do RC mode.</p>
+<p>The USB3.0 supports master/slave mode, which is switched by a one-bit DIP switch.</p>
+<p><img alt="Image" src="_images/1721446791531_479764ef_2c19_43a7_a09e_aba6b8561512.png" /></p>
+<p><img alt="Image" src="_images/1721446805819_c67d51f6_4b53_4901_97e0_5f54e40ebdce.png" /></p>
+</section>
+<section id="usb-download">
+<h4>3.5.18 USB Download<a class="headerlink" href="#usb-download" title="Link to this heading"></a></h4>
+<p>The USB Type-C of P35 on the back of the development board uses the P/N differential signal in the USB3.0 (P33) signal and is designed as a Type-C interface for the convenience of users to connect to the computer for image programming and debugging.</p>
+<p><img alt="Image" src="_images/1721446814528_2effe422_c5c5_496a_88da_949767dca60b.png" /></p>
+</section>
+<section id="wifi-bluetooth">
+<h4>3.5.19 WiFi &amp; Bluetooth<a class="headerlink" href="#wifi-bluetooth" title="Link to this heading"></a></h4>
+<p>The development board is equipped with an integrated WiFi &amp; Bluetooth module, with the module model Fn Link 6221A-SRC.</p>
+<p>The WIFI uses SDIO interface, 2.4GHz and 5GHz dual-band, compliant with IEEE 802.11 a/B/G/n/AC, Bluetooth uses UART &amp; PCM interface, compliant with BT 4.2 module.</p>
+<p>P34 is SMA interface for antenna, please use 2.4GHz &amp; 5GHz dual-band antenna.</p>
+<p><img alt="Image" src="_images/1721446823808_ba945892_26cd_48f7_8fce_7c52fbf68ad2.png" /></p>
+</section>
+<section id="can">
+<h4>3.5.20 CAN<a class="headerlink" href="#can" title="Link to this heading"></a></h4>
+<p>Two standard CAN interfaces are led out from the development board with CAN0 and CAN1. These interfaces support a maximum rate of 1 Mbps and are designed with electrical isolation, which can meet the protection requirements in most scenarios. Note that only the RK3562J has a CAN interface.</p>
+<p>The CAN signal is led out through the green terminals at 3.81 mm pitch and a 120 ohm termination resistor is installed using a jumper cap.</p>
+<p><img alt="Image" src="_images/1721446832665_0f920d1a_0e97_4168_bb0b_481f65630231.png" /></p>
+</section>
+<section id="rs485">
+<h4>3.5.21 RS485<a class="headerlink" href="#rs485" title="Link to this heading"></a></h4>
+<p>Two standard RS485 interfaces are led out by utilizing the native UART2 and UART9. These interfaces support automatic transceiver control and are designed with electrical isolation to meet the protection requirements in most scenarios.</p>
+<p>The RS485 signal is led out through a green terminal with a 3.81mm pitch. Use a jumper cap to install a 120 - ohm terminal resistor.</p>
+<p>UART9 is connected to both the debugging port and the RS485 port. You can use the DIP switch (reference designator S4) to select its function.</p>
+<p><img alt="Image" src="_images/1721446839380_9ffe36ac_c885_4fae_852c_36ae1d53ba92.png" /></p>
+</section>
+<section id="user-gpio">
+<h4>3.5.22 USER GPIO<a class="headerlink" href="#user-gpio" title="Link to this heading"></a></h4>
+<p>Connect GPIO4_B7 to buttons and LED on the development board to demonstrate the functionality of GPIO.</p>
+<p><img alt="Image" src="_images/1721446848917_c8ca7556_4f2f_41d6_97e3_dfeb51147f31.png" /></p>
+</section>
+<section id="spi">
+<h4>3.5.23 SPI<a class="headerlink" href="#spi" title="Link to this heading"></a></h4>
+<p>The SPI2 is led out separately from the development board, and the box header connector with a pitch of 2.0mm can be used for external equipment.</p>
+<p><img alt="Image" src="_images/1721446859759_8e0154a5_2c51_4c48_9aaa_0b6ed39dc119.png" /></p>
+</section>
+</section>
+</section>
+<section id="connector-dimension-diagram">
+<h2>4. Connector Dimension Diagram<a class="headerlink" href="#connector-dimension-diagram" title="Link to this heading"></a></h2>
+<p>SoM connector: Board-to-board, 0.5mm pitch, 80P, male socket, height 1.23 mm, with locating post.</p>
+<p><img alt="Image" src="_images/1720491382901_967cde92_0cba_4f50_92a1_268e5054bc56.png" /></p>
+<p>Carrier board connector: Board-to-board, 0.5mm pitch, 80P, female socket, height 1.85 mm, with locating post.</p>
+<p><img alt="Image" src="_images/1720491383191_86a04112_c603_433d_9128_6262b9d3697e.png" /></p>
+</section>
+<section id="development-board-linux-system-whole-machine-power-consumption-table">
+<h2>5. Development Board Linux System Whole - Machine Power Consumption Table<a class="headerlink" href="#development-board-linux-system-whole-machine-power-consumption-table" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>No.</strong></p></th>
+<th class="head text-center"><p><strong>Test Item</strong></p></th>
+<th class="head text-center"><p><strong>SoM Power</strong></p></th>
+<th class="head text-center"><p><strong>Development board power (including SoM)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>No-load starting peak power</p></td>
+<td class="text-center"><p>1.7W</p></td>
+<td class="text-center"><p>2.8W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-center"><p>No-load standby peak power</p></td>
+<td class="text-center"><p>0.5W</p></td>
+<td class="text-center"><p>1.8W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td class="text-center"><p>CPU + GPU + Memory + eMMC Stress Test</p></td>
+<td class="text-center"><p>2.2W</p></td>
+<td class="text-center"><p>3.2W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4</p></td>
+<td class="text-center"><p>7-inch LCD screen + 4G + U disk + video decoding</p></td>
+<td class="text-center"><p>1.8W</p></td>
+<td class="text-center"><p>7.3W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>5</p></td>
+<td class="text-center"><p>SoM poweroff</p></td>
+<td class="text-center"><p>0.7mW</p></td>
+<td class="text-center"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>6</p></td>
+<td class="text-center"><p>SoM sleep</p></td>
+<td class="text-center"><p>97mW</p></td>
+<td class="text-center"><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note：</strong></p>
+<ul class="simple">
+<li><p><strong>Test conditions: The SoM configuration is 2GB memory +16GB eMMC; the 4G module is Quectel EC20, and the screen is an optional product. SoM power supply is 5V and carrier board is 12V;</strong></p></li>
+<li><p><strong>Power consumption is for reference only.</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="minimum-system-schematic">
+<h2>6. Minimum System Schematic<a class="headerlink" href="#minimum-system-schematic" title="Link to this heading"></a></h2>
+<p><strong>The minimum system includes the SoM, power supply, debugging serial port, and system image flashing interface.</strong></p>
+<p><img alt="Image" src="_images/1721446927974_2d08d8f7_6f40_4893_b059_92c37be13c81.png" /></p>
+<p><img alt="Image" src="_images/1721446933461_a0e0ae13_b903_4d9d_8d42_cb30a4c79c7b.png" /></p>
+<p><img alt="Image" src="_images/1721446939600_1bfffc7c_ca6e_4ae1_b0ce_ed9ccaedee63.png" /><img alt="Image" src="_images/1721446942913_a847db88_495c_4797_b2d9_8978bb3f57e1.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
