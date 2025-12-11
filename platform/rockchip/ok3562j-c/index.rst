@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK3562J-C_User_Hardware_Manual.md
+
 
 
    
