@@ -18,18 +18,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET-MX9596-C | OK-MX9596-C |
 |------------|------------|
-| <img src="./images/media/FET-MX9596-C.png" width="500" > | <img src="./images/media/OK-MX9596-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET-MX9596-C.png" width="500" > | <img src="./images/product_catalog/OK-MX9596-C.jpg" width="1000" > |
 
 
 
@@ -83,18 +83,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET-MX8MPQ-SMARC | OK-MX8MPQ-SMARC |
 |------------|------------|
-| <img src="./images/media/FET-MX8MPQ-SMARC.png" width="500" > | <img src="./images/media/OK-MX8MPQ-SMARC.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET-MX8MPQ-SMARC.png" width="500" > | <img src="./images/product_catalog/OK-MX8MPQ-SMARC.jpg" width="1000" > |
 
 
 
@@ -146,18 +146,18 @@
 ### FET-MX9352-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET-MX9352-C | OK-MX9352-C |
 |------------|------------|
-| <img src="./images/media/FET-MX9352-C.png" width="500" > | <img src="./images/media/OK-MX9352-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET-MX9352-C.png" width="500" > | <img src="./images/product_catalog/OK-MX9352-C.png" width="1000" > |
 
 
 
@@ -208,18 +208,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET-MX8MP-C | OK-MX8MP-C |
 |------------|------------|
-| <img src="./images/media/FETMX8MP-C.png" width="500" > | <img src="./images/media/OKMX8MP-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FETMX8MP-C.png" width="500" > | <img src="./images/product_catalog/OKMX8MP-C.jpg" width="1000" > |
 
 
 
@@ -247,7 +247,7 @@
 #### Application Areas
 
 - Machine Learning and Vision
-- Advanced Multimedia Processing
+- Advanced Multiproduct_catalog Processing
 - High Reliability Industrial Automation
 - Smart City, Industrial Internet, Smart Healthcare, Smart Transportation
 
@@ -270,18 +270,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETMX8MM-C | OKMX8MM-C |
 |------------|------------|
-| <img src="./images/media/FETMX8MM-C.png" width="500" > | <img src="./images/media/OKMX8MM-C.png" width="1000" > |
+| <img src="./images/product_catalog/FETMX8MM-C.png" width="500" > | <img src="./images/product_catalog/OKMX8MM-C.png" width="1000" > |
 
 
 
@@ -309,7 +309,7 @@
 #### Application Areas
 
 - HMI
-- Streaming Media Playback
+- Streaming product_catalog Playback
 - Machine Learning
 - Industrial Control and Automation
 
@@ -330,18 +330,18 @@
 ### FETMX6Q-C / FETMX6DL-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETMX6Q-C / FETMX6DL-C | OKMX6Q-C / OKMX6DL-C  |
 |------------|------------|
-| <img src="./images/media/FETMX6DL-C.png" width="500" > | <img src="./images/media/OKMX6DL-C0.jpeg" width="1000" > |
+| <img src="./images/product_catalog/FETMX6DL-C.png" width="500" > | <img src="./images/product_catalog/OKMX6DL-C0.jpeg" width="1000" > |
 
 
 
@@ -360,7 +360,7 @@
 | Connection            | Board to board connection （4 x 80Pin, 0.5mm spacing）  | SATA        | 1 x（only FETMX6Q-C）               |
 | Mechanical Dimensions | 40mm x 70mm                                             | PCIe        | 1 x                                 |
 | Battery Management    | MMPF0100NPEP                                            | PWM         | ≤ 3                                 |
-| GPU                   | Vivante GC355 / Vivante GC320                           | MLB         | 1 x Media Local Bus                 |
+| GPU                   | Vivante GC355 / Vivante GC320                           | MLB         | 1 x product_catalog Local Bus                 |
 | Video Coder           | Hardware encoding                                       | SPDIF       | 1 x                                 |
 | Display               | 1 x RGB 24 bit, 2 x single 8-bit LVDS, 1x HDMI          | JTAG        | 1 x                                 |
 | IIS                   | ≤ 4                                                     | EINT/GPIO   | Support                             |
@@ -370,8 +370,8 @@
 
 #### Application Areas
 
-- Rich Multimedia Function, Powerful Encoding & Decoding;
-- Industrial Control, Medical, Multimedia, Security, Automotive, Finance, etc.
+- Rich Multiproduct_catalog Function, Powerful Encoding & Decoding;
+- Industrial Control, Medical, Multiproduct_catalog, Security, Automotive, Finance, etc.
 
 
 
@@ -390,18 +390,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETMX6Q-S / FETMX6DL-S | OKMX6Q-S / OKMX6DL-S  |
 |------------|------------|
-| <img src="./images/media/FETMX6Q-S.png" width="500" > | <img src="./images/media/OKMX6DL-S.png" width="1000" > |
+| <img src="./images/product_catalog/FETMX6Q-S.png" width="500" > | <img src="./images/product_catalog/OKMX6DL-S.png" width="1000" > |
 
 
 
@@ -427,8 +427,8 @@
 
 #### Application Areas
 
-- Rich Multimedia Functions, Powerful Encoding and Decoding; 
-- Industrial Control, Medical, Multimedia, Security, Automotive, Finance, etc.
+- Rich Multiproduct_catalog Functions, Powerful Encoding and Decoding; 
+- Industrial Control, Medical, Multiproduct_catalog, Security, Automotive, Finance, etc.
 
 
 
@@ -447,18 +447,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETMX6UL-C | OKMX6UL-C  |
 |------------|------------|
-| <img src="./images/media/FETMX6UL-C.png" width="500" > | <img src="./images/media/OKMX6UL-C.png" width="1000" > |
+| <img src="./images/product_catalog/FETMX6UL-C.png" width="500" > | <img src="./images/product_catalog/OKMX6UL-C.png" width="1000" > |
 
 
 
@@ -505,18 +505,18 @@
 ### FETMX6ULL-S SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETMX6ULL-S | OKMX6ULL-S  |
 |------------|------------|
-| <img src="./images/media/FETMX6ULL-S.png" width="500" > | <img src="./images/media/OKMX6ULL-S.jpg" width="1000" > |
+| <img src="./images/product_catalog/FETMX6ULL-S.png" width="500" > | <img src="./images/product_catalog/OKMX6ULL-S.jpg" width="1000" > |
 
 
 
@@ -559,18 +559,18 @@
 ### FETMX6ULL-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETMX6ULL-C | OKMX6ULL-C  |
 |------------|------------|
-| <img src="./images/media/FETMX6ULL-C.png" width="500" > | <img src="./images/media/OKMX6ULL-C.png" width="1000" > |
+| <img src="./images/product_catalog/FETMX6ULL-C.png" width="500" > | <img src="./images/product_catalog/OKMX6ULL-C.png" width="1000" > |
 
 
 
@@ -617,18 +617,18 @@
 ### FET1052-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET1052-C | OK1052-C  |
 |------------|------------|
-| <img src="./images/media/FET1052-C.png" width="500" > | <img src="./images/media/OK1052-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET1052-C.png" width="500" > | <img src="./images/product_catalog/OK1052-C.png" width="1000" > |
 
 
 
@@ -674,18 +674,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET1061-S | OK1061-S  |
 |------------|------------|
-| <img src="./images/media/FET1061-S.png" width="500" > | <img src="./images/media/OK1061-S.png" width="1000" > |
+| <img src="./images/product_catalog/FET1061-S.png" width="500" > | <img src="./images/product_catalog/OK1061-S.png" width="1000" > |
 
 
 
@@ -730,18 +730,18 @@
 ### FET1028A-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET1028A-C | OK1028A-C  |
 |------------|------------|
-| <img src="./images/media/FET1028A-C.png" width="500" > | <img src="./images/media/OK1028A-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET1028A-C.png" width="500" > | <img src="./images/product_catalog/OK1028A-C.png" width="1000" > |
 
 
 
@@ -783,18 +783,18 @@
 ### FET1046A-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET1046A-C | OK1046A-C  |
 |------------|------------|
-| <img src="./images/media/FET1046A-C.png" width="500" > | <img src="./images/media/OK1046A-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET1046A-C.png" width="500" > | <img src="./images/product_catalog/OK1046A-C.png" width="1000" > |
 
 
 
@@ -838,18 +838,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET1043A-C | OK1043A-C  |
 |------------|------------|
-| <img src="./images/media/FET1043A-C.png" width="500" > | <img src="./images/media/OK1043A-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET1043A-C.png" width="500" > | <img src="./images/product_catalog/OK1043A-C.png" width="1000" > |
 
 
 
@@ -891,18 +891,18 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="./images/media/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET1012A-C | OK1012A-C  |
 |------------|------------|
-| <img src="./images/media/FET1012A-C.png" width="500" > | <img src="./images/media/OK1012A-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET1012A-C.png" width="500" > | <img src="./images/product_catalog/OK1012A-C.png" width="1000" > |
 
 
 
@@ -946,17 +946,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3588-C | OK3588-C  |
 |------------|------------|
-| <img src="./images/media/FET3588-C.png" width="500" > | <img src="./images/media/OK3588-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET3588-C.png" width="500" > | <img src="./images/product_catalog/OK3588-C.jpg" width="1000" > |
 
 
 
@@ -1005,17 +1005,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3568-C | OK3568-C  |
 |------------|------------|
-| <img src="./images/media/FET3568-C.png" width="500" > | <img src="./images/media/OK3568-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET3568-C.png" width="500" > | <img src="./images/product_catalog/OK3568-C.jpg" width="1000" > |
 
 
 
@@ -1062,17 +1062,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3576-C | OK3576-C  |
 |------------|------------|
-| <img src="./images/media/FET3576-C.png" width="500" > | <img src="./images/media/OK3576-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET3576-C.png" width="500" > | <img src="./images/product_catalog/OK3576-C.jpg" width="1000" > |
 
 
 
@@ -1097,7 +1097,7 @@
 #### Application Areas
 
 - Industrial, AIoT, Edge Computation, Smart Mobile Terminal;
-- Digital Multimedia Related Application
+- Digital Multiproduct_catalog Related Application
 
 
 
@@ -1117,17 +1117,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3562J-C | OK3562J-C  |
 |------------|------------|
-| <img src="./images/media/FET3562J-C.png" width="500" > | <img src="./images/media/OK3562J-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET3562J-C.png" width="500" > | <img src="./images/product_catalog/OK3562J-C.jpg" width="1000" > |
 
 
 
@@ -1172,17 +1172,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3506J-C | OK3506J-C  |
 |------------|------------|
-| <img src="./images/media/FET3506J-C.png" width="500" > | <img src="./images/media/OK3506J-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET3506J-C.png" width="500" > | <img src="./images/product_catalog/OK3506J-C.png" width="1000" > |
 
 
 
@@ -1234,17 +1234,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3506J-S | OK3506J-S  |
 |------------|------------|
-| <img src="./images/media/FET3506J-S.png" width="500" > | <img src="./images/media/OK3506J-S.png" width="1000" > |
+| <img src="./images/product_catalog/FET3506J-S.png" width="500" > | <img src="./images/product_catalog/OK3506J-S.png" width="1000" > |
 
 
 
@@ -1290,17 +1290,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET3399-C | OK3399-C  |
 |------------|------------|
-| <img src="./images/media/FET3399-C.png" width="500" > | <img src="./images/media/OK3399-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET3399-C.png" width="500" > | <img src="./images/product_catalog/OK3399-C.png" width="1000" > |
 
 
 
@@ -1347,17 +1347,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET527N-C | OK527N-C  |
 |------------|------------|
-| <img src="./images/media/FET527N-C.png" width="500" > | <img src="./images/media/OK527N-C.png" width="1000" > |
+| <img src="./images/product_catalog/FET527N-C.png" width="500" > | <img src="./images/product_catalog/OK527N-C.png" width="1000" > |
 
 
 
@@ -1404,17 +1404,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET536-C | OK536-C  |
 |------------|------------|
-| <img src="./images/media/FET536-C.png" width="500" > | <img src="./images/media/OK536-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET536-C.png" width="500" > | <img src="./images/product_catalog/OK536-C.jpg" width="1000" > |
 
 
 
@@ -1460,17 +1460,17 @@
 ### FETT507-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETT507-C | OKT507-C  |
 |------------|------------|
-| <img src="./images/media/FETT507-C.png" width="500" > | <img src="./images/media/OKT507-C.jpeg" width="1000" > |
+| <img src="./images/product_catalog/FETT507-C.png" width="500" > | <img src="./images/product_catalog/OKT507-C.jpeg" width="1000" > |
 
 
 
@@ -1514,17 +1514,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET153-S | OK153-S  |
 |------------|------------|
-| <img src="./images/media/FET153-S.png" width="500" > | <img src="./images/media/OK153-S.png" width="1000" > |
+| <img src="./images/product_catalog/FET153-S.png" width="500" > | <img src="./images/product_catalog/OK153-S.png" width="1000" > |
 
 
 
@@ -1569,17 +1569,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FETA40i-C | OKA40i-C  |
 |------------|------------|
-| <img src="./images/media/FETA40i-C.png" width="500" > | <img src="./images/media/OKA40i-C.jpeg" width="1000" > |
+| <img src="./images/product_catalog/FETA40i-C.png" width="500" > | <img src="./images/product_catalog/OKA40i-C.jpeg" width="1000" > |
 
 
 #### SoM Parameter
@@ -1627,17 +1627,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET113i-S | OK113i-S  |
 |------------|------------|
-| <img src="./images/media/FET113i-S.png" width="500" > | <img src="./images/media/OK113i-S.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET113i-S.png" width="500" > | <img src="./images/product_catalog/OK113i-S.jpg" width="1000" > |
 
 
 
@@ -1687,17 +1687,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image147.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image147.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET62xx-C | OK62xx-C  |
 |------------|------------|
-| <img src="./images/media/FET62xx-C.png" width="500" > | <img src="./images/media/OK62xx-C.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET62xx-C.png" width="500" > | <img src="./images/product_catalog/OK62xx-C.jpg" width="1000" > |
 
 
 #### SoM Parameter
@@ -1745,17 +1745,17 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="./images/media/image80.png" alt="rockchip" style="width:300px; height:auto; margin-right:40px;">
-  <img src="./images/media/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="./images/media/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="./images/product_catalog/image80.png" alt="rockchip" style="width:300px; height:auto; margin-right:40px;">
+  <img src="./images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
+  <img src="./images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
 </div>
 
 
 
 | FET-MA35-S2 | OK-MA35-S2  |
 |------------|------------|
-| <img src="./images/media/FET-MA35-S2.png" width="500" > | <img src="./images/media/OK-MA35-S2.jpg" width="1000" > |
+| <img src="./images/product_catalog/FET-MA35-S2.png" width="500" > | <img src="./images/product_catalog/OK-MA35-S2.jpg" width="1000" > |
 
 
 
@@ -2078,7 +2078,7 @@
 
 ### FCU2401 Economical ARM Industrial Computer
 
-###### Charging pile billing control unit, multimedia terminal, Forlinx Desktop system
+###### Charging pile billing control unit, multiproduct_catalog terminal, Forlinx Desktop system
 
 
 
