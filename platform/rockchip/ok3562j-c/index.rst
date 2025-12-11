@@ -35,6 +35,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK3562J-C_Linux5_10_198_User_Manual
+
 
 
 
