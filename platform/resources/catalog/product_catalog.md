@@ -18,11 +18,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -83,11 +83,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -146,11 +146,11 @@
 ### FET-MX9352-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -208,11 +208,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -270,11 +270,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -330,11 +330,11 @@
 ### FETMX6Q-C / FETMX6DL-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -390,11 +390,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -447,11 +447,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -505,11 +505,11 @@
 ### FETMX6ULL-S SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="logo1" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="logo2" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="logo3" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="logo4" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="logo5" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -559,11 +559,11 @@
 ### FETMX6ULL-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -617,11 +617,11 @@
 ### FET1052-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -674,11 +674,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -730,11 +730,11 @@
 ### FET1028A-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -783,11 +783,11 @@
 ### FET1046A-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -838,11 +838,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -891,11 +891,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:150px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -946,10 +946,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1005,10 +1005,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1062,10 +1062,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1117,10 +1117,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1172,10 +1172,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1234,10 +1234,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1290,10 +1290,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1347,10 +1347,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1404,10 +1404,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1460,10 +1460,10 @@
 ### FETT507-C SoM
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1517,10 +1517,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1572,10 +1572,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1630,10 +1630,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1690,10 +1690,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image147.png" alt="rockchip" style="width:250px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image147.png" alt="Texas Instruments" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
@@ -1748,10 +1748,10 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image80.png" alt="rockchip" style="width:300px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:80px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:80px; height:auto;">
+  <img src="_static/images/product_catalog/image80.png" alt="Nuvoton" style="width:200px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
 </div>
 
 
