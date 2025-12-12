@@ -144,11 +144,11 @@ It is recommended to select M2 \* 2mm patch nuts for fixing the SoM and the carr
 **Note:** 
 
 - **The parameters in the table are the theoretical values of hardware design or CPU;**
-- **"TBD" refers to functions not yet developed.**
+- **"TBD" refers to functions not yet developed;**
 
 - **UART0 is a debugging serial port and is not recommended to be used for other functions. Users can use up to 9 x serial ports;**
 
-- **I2C0 is occupied on the SoM, and the carrier board is not available.**
+- **I2C0 is occupied on the SoM, and the carrier board is not available;**
 
 - **SARADC0\_BOOT and SARADC0\_IN1 are related to system startup. It is not recommended to use them as general ADC. The maximum number of ADC available to users is 14;**
 - **LVDS and MIPI - DSI have pin multiplexing. You can only choose one of them for use;**
@@ -303,10 +303,9 @@ ABC-D+IK:M
 
 ### 3.5 OK3562J-C Carrier Board Description
 
-**Note: **
+**Note:** 
 
-- **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  
-  default;**
+- **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by default;**
 - **The schematic diagrams in this manual are only for interface description. When users conduct hardware design, please refer to the source file materials.**
 
 #### 3.5.1 Carrier Board Power
