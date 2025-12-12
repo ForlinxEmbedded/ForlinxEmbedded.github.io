@@ -73,11 +73,11 @@ Module                  Size  Used by
 RK3562J is a low-power, high-performance processor based on the ARM64 architecture. It includes 4 Cortex-A53 cores and 1 Cortex-M0 core, along with an independent NEON coprocessor. It can be used in computers, mobile phones, personal mobile internet devices, and digital multimedia devices.   
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720418437155-411d3da0-4c0d-4d73-a18a-c2bfac3554cc.jpeg?x-oss-process=image%2Fformat%2Cwebp%2Finterlace%2C1)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418437155_411d3da0_4c0d_4d73_a18a_c2bfac3554cc.jpeg)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418437554-c4288f3d-892a-4c80-b8de-0bde8c386265.png?x-oss-process=image%2Fformat%2Cwebp)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418437554_c4288f3d_892a_4c80_b8de_0bde8c386265.png)
 
 **Back**
 
@@ -142,7 +142,7 @@ The debug serial port on the development board is a Type-C USB jack, so users ca
 + Network cable (for network login)
 + According to the development board interface to connect the screen (Based on display needs).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730773402955-b39ed59a-e86f-4f98-a7e1-ae880aedc5b4.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1730773402955_b39ed59a_e86f_4f98_a7e1_ae880aedc5b4.png)
 
 **Note: The debug serial port marked in the diagram actually shares a Type-C interface between UART0 and UART9. UART9 serves as the debug serial port for the bare core when AMP (Asymmetric Multi-Processing) function is enabled (switch S4 needs to be set to UART mode).**
 
@@ -168,15 +168,15 @@ Take putty as an example to introduce the login method of serial port:
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager ( Based on the port actually recognized by the computer );
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417652369-c946e9c8-f6b4-450a-a2d9-c9cd0527ed2f.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417652369_c946e9c8_f6b4_450a_a2d9_c9cd0527ed2f.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417652635-c2ca3610-6708-4704-ac4a-90416d6b9c76.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417652635_c2ca3610_6708_4704_ac4a_90416d6b9c76.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417652851-8f35def3-7095-4026-b2c3-e32f6294f73b.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417652851_8f35def3_7095_4026_b2c3_e32f6294f73b.png)
 
 Step 4: Turn on the power switch of the development board, then there will be a print message output from the serial port (no need to login).
 
@@ -211,9 +211,9 @@ Before logging into the network, ensure that the direct network connection betwe
 
 3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653045-77232463-9341-42e0-99fd-fff6c8c185f3.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653364-4f5e0630-f435-4a4d-9c88-23a027ea9bcb.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 A data return indicates a normal network connection.
 
@@ -227,11 +227,11 @@ A data return indicates a normal network connection.
 
 1\. Use ssh to log in the development board
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653640-cd0cf583-62bc-4715-824a-58f2939f6143.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417653640_cd0cf583_62bc_4715_824a_58f2939f6143.png)
 
 Click "Open", the following dialog box will appear, click "Yes" to enter the login screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654059-94355051-1e28-4cfd-8a4b-f559d4ff136a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
 
 ```plain
 Login as：forlinx
@@ -251,11 +251,11 @@ Install the FileZilla tool on Windows and follow the steps shown in the image be
 
 Open the FileZilla tool, click on File and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654405-e51665a5-81c7-4442-a2ae-e8cc99e78fff.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff.png)
 
 After successful login, you can upload and download.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654928-2b604387-bb81-4ac6-a13d-02437d5c0800.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switching
 
@@ -290,7 +290,7 @@ Device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi
 
 In the kernel source code, open the device dtsi file and find the forlinx-control node as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417655244-cf68dda2-b8e9-41e7-af19-85b8fea65d80.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417655244_cf68dda2_b8e9_41e7_af19_85b8fea65d80.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -307,7 +307,7 @@ Please change the setting parameters as required. After saving, it is necessary 
 
 Use the LVDS screen display.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417655456-cb2ffa1e-8431-4ab1-a170-b82bfb1dcdf9.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417655456_cb2ffa1e_8431_4ab1_a170_b82bfb1dcdf9.png)
 
 After saving, recompile to generate the image.
 
@@ -331,17 +331,17 @@ OK3562 platform has excellent support for Qt, especially for multimedia-related 
 
 The desktop is displayed as follows after the board is booted
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417666181-97e8edf0-a899-44c8-a864-e5e77c6f2276.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417666181_97e8edf0_a899_44c8_a864_e5e77c6f2276.png)
 
 #### 3.1.2 Hardware Decoding 
 
 Click the desktop icon to open the video player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417666490-b1592cbf-8e29-4d12-bdb1-8fad5e6947ee.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417666490_b1592cbf_8e29_4d12_bdb1_8fad5e6947ee.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417666946-d492a7d7-638a-4d45-916e-53f5a6d86da1.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417666946_d492a7d7_638a_4d45_916e_53f5a6d86da1.png)
 
 **Note: The test video file is located in the/userdata/media\*. mp4\*\***
 
@@ -349,21 +349,21 @@ Application Icons
 
 OK3562 supports OpenGL ES3.2; click the desktop icon for OpenGL test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417667252-b669ae1a-e4b1-4d6e-9375-3d551571ea04.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417667252_b669ae1a_e4b1_4d6e_9375_3d551571ea04.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417667643-205cee09-c967-46fa-910a-e6f5507c97cc.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417667643_205cee09_c967_46fa_910a_e6f5507c97cc.jpeg)
 
 #### 3.1.4 Music Play Test
 
 "music player" is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417667864-988c35ee-7595-49ff-8c34-bcbd534ab54f.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417667864_988c35ee_7595_49ff_8c34_bcbd534ab54f.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417668047-619205fa-d4bb-4973-9442-0f2ec7c83d4c.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417668047_619205fa_d4bb_4973_9442_0f2ec7c83d4c.jpeg)
 
 Application Interfaces
 
@@ -375,29 +375,29 @@ Click the button in the lower left corner and select test audio /userdata/media/
 
 Test supports 4G module (EC20). Insert the 4G module and SIM card while the power is off. After powering on, open the testing application.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417668348-585760c6-d57a-4312-a9f8-286595ed0d0f.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417668348_585760c6_d57a_4312_a9f8_286595ed0d0f.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417668538-6c3dab1c-2eff-4bec-8297-5e79bb4855bf.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417668538_6c3dab1c_2eff_4bec_8297_5e79bb4855bf.png)
 
 Click the connect button, the program will automatically enter the dial-up process and get IP to set DNS, etc.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417668807-5dbde941-f04f-42a2-af8d-3af71f8867b7.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417668807_5dbde941_f04f_42a2_af8d_3af71f8867b7.png)
 
 Click the ping to test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417669155-ecacded0-2bcd-408b-9a47-cbcff79124f3.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417669155_ecacded0_2bcd_408b_9a47_cbcff79124f3.png)
 
 #### 3.1.6 WIFI Test
 
 "WIFI" is a tool for configuring wifi. The OK3562 platform has a 6221A-SRC (RTL8821CS) module onboard by default. The wifi module exists in the system as a mean node, and this test corresponds to wlan0 (other corresponding nodes are used for multiple devices):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417669341-739a22d7-ace1-4f5b-9db5-e21cb35038ce.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417669341_739a22d7_ace1_4f5b_9db5_e21cb35038ce.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417669543-7bf02243-16fd-46ff-9d95-9f0c739d236f.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417669543_7bf02243_16fd_46ff_9d95_9f0c739d236f.jpeg)
 
 Application Interfaces
 
@@ -405,29 +405,29 @@ Select wlan0, enter the router name(the one connected to wifi) in the SSID colum
 
 Open the Wifi Test app, enter the correct network name and password, and click CONNECT.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417669771-5248f8d6-f1ab-49b2-9066-18d500f6f775.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417669771_5248f8d6_f1ab_49b2_9066_18d500f6f775.png)
 
 Click ping to test the network after a successful connection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417670021-fcfbdedf-2532-401d-9c7b-f5156d545203.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417670021_fcfbdedf_2532_401d_9c7b_f5156d545203.png)
 
 #### 3.1.7 Network Configuration Test
 
 Upon startup, eth0 on OK3562 defaults to static configuration. You can select between DHCP and static modes using the “Network” configuration application. In static mode, you can configure the IP address, subnet mask, gateway, and DNS.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417670236-95f31c04-1439-4dae-bd45-8cb27d6a5717.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417670236_95f31c04_1439_4dae_bd45_8cb27d6a5717.png)
 
 Application Icons
 
 The DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417670841-cdf93cc4-07a3-4d22-92d3-bfe765899391.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417670841_cdf93cc4_07a3_4d22_92d3_bfe765899391.jpeg)
 
 Check DHCP, select the NIC device needing to be configured, and click Apply and Restart Network at the bottom of the interface to restart the network and get the ip automatically.
 
 The static mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417671088-cd701fbb-b498-49fe-a689-bb0f128f8a8d.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417671088_cd701fbb_b498_49fe_a689_bb0f128f8a8d.jpeg)
 
 Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.
 
@@ -437,11 +437,11 @@ Select the NIC device to be configured in the interface, and enter the ip to be 
 
 "Ping" is an interface application of the common network testing command ping.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417671316-6cd27dc4-35ea-4210-a228-3f9e3bd4cf24.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417671316_6cd27dc4_35ea_4210_a228_3f9e3bd4cf24.png)
 
 Write the target IP address in the "hostname" column. Click the "ping" button, and the "result" column will display the ping outcome. Click "stop" to end the ping test, and "clear" to erase the information in the "result" column.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417671577-2a67d0ff-3784-490d-b011-185caee8256a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417671577_2a67d0ff_3784_490d_b011_185caee8256a.png)
 
 #### 3.1.9 Browser Test
 
@@ -449,7 +449,7 @@ Write the target IP address in the "hostname" column. Click the "ping" button, a
 
 Note: If the development board time is abnormal, it will cause certificate **problems. Do not shut down the power immediately after using the browser or the sync command at the command line. Otherwise, it may cause the browser to exit abnormally and not work properly, and can only be solved by re-burning.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417671857-74ed84ea-6805-42e5-989d-474e1c4e91aa.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417671857_74ed84ea_6805_42e5_989d_474e1c4e91aa.png)
 
 Exit this browser via the upper navigation bar File->Quit.
 
@@ -457,11 +457,11 @@ Exit this browser via the upper navigation bar File->Quit.
 
 "WatchDog" is an application used to test the watchdog status.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417672177-e78efff9-8460-476b-bc51-217d84bb258a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417672177_e78efff9_8460_476b_bc51_217d84bb258a.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417672436-3e31ca5e-1b33-4d74-a750-5b8b2eb5f815.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417672436_3e31ca5e_1b33_4d74_a750_5b8b2eb5f815.jpeg)
 
 Application Interfaces
 
@@ -471,11 +471,11 @@ Check feed dog and click the open watchdog key, then the watchdog will be activa
 
 The "Keypad" is used to test whether the platform's own keys are available:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417672658-04c01b7c-a3a7-4ca1-88fc-38f2858709de.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417672658_04c01b7c_a3a7_4ca1_88fc_38f2858709de.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417672897-d2c36032-e7fc-48b6-aeab-a0896895c358.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417672897_d2c36032_e7fc_48b6_aeab_a0896895c358.jpeg)
 
 Application Interfaces
 
@@ -487,11 +487,11 @@ By default, OK3562 platform configures the four physical buttons V+, V-, Home, a
 
 The "RTC" application allows you to view and set the current system time:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417673244-81838d8f-0c72-47e6-b63b-6ac8d9e821d6.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417673244_81838d8f_0c72_47e6_b63b_6ac8d9e821d6.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417673493-22d3d302-ed26-4b4d-b7fc-4a50a3764fa3.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417673493_22d3d302_ed26_4b4d_b7fc_4a50a3764fa3.jpeg)
 
 Application Interfaces
 
@@ -505,15 +505,15 @@ Click the desktop icon to open the Camera; the test program supports a USB Camer
 
 **Note: The app needs to be connected to the camera before opening.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417673759-9cf0f95f-7979-491a-b458-d5517100e3bd.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417673759_9cf0f95f_7979_491a_b458_d5517100e3bd.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417673981-ab8ce1a2-a069-4571-8d99-cda8fa26f30c.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417673981_ab8ce1a2_a069_4571_8d99_cda8fa26f30c.jpeg)
 
 After opening the application, click UVC Camera to start the camera preview.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1722218411300-e4824847-5eeb-40e7-9ea6-6d8d8cf9c669.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1722218411300_e4824847_5eeb_40e7_9ea6_6d8d8cf9c669.png)
 
 In Video Mode, you can click the record button to record, and click the recording button to stop recording. The generated video file is located in /userdata/VIDEO0.MOV.
 
@@ -521,15 +521,15 @@ Playback tests can be performed using the gst-play-1.0/userdata/VIDEO0.mov comma
 
 Click the Video Mode button to switch to the photo mode, and click Capture to take a photo.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1722218425115-0b9f51f2-5300-463e-99de-3688a456611a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1722218425115_0b9f51f2_5300_463e_99de_3688a456611a.png)
 
 The generated file is /userdata/PIC0.jpg.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417675235-d9e50c99-9ff6-4a35-8468-6c5fee72c104.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417675235_d9e50c99_9ff6_4a35_8468_6c5fee72c104.png)
 
 #### 3.1.14 UART Test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417675445-75a88339-39db-44d0-8e0b-fa22bbfb8f74.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417675445_75a88339_39db_44d0_8e0b_fa22bbfb8f74.png)
 
 Application Icons
 
@@ -537,9 +537,9 @@ The serial port test is carried out by short-circuiting two RS485 serial ports o
 
 1\. Click the UART test icon to enter the following interface to set the serial port parameters:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417675669-65b7392d-6502-4a9c-b25d-5b378d404585.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417675669_65b7392d_6502_4a9c_b25d_5b378d404585.jpeg)
 
-2\. Click the Setup button in the upper left corner![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417675867-bfe209ce-4016-402c-aefe-3b47d8a828e0.png)to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:
+2\. Click the Setup button in the upper left corner![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417675867_bfe209ce_4016_402c_aefe_3b47d8a828e0.png)to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:
 
 | **Relevant Parameter**| **Meaning**|
 |----------|----------|
@@ -550,9 +550,9 @@ The serial port test is carried out by short-circuiting two RS485 serial ports o
 | Stop bits| Set stop bit (1 bit)|
 | Flow control| Set flow control (no flow control)|
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417676095-db8cc4ef-3eee-45ab-ac14-31a911477ebe.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417676095_db8cc4ef_3eee_45ab_ac14_31a911477ebe.jpeg)
 
-3\. After setting the serial port parameters, click the connection button "![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417676339-c215e626-a2a3-46e5-b010-e2225245daad.png)" in the upper left corner. At this time, the test program can carry out the data receiving and sending test;
+3\. After setting the serial port parameters, click the connection button "![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417676339_c215e626_a2a3_46e5_b010_e2225245daad.png)" in the upper left corner. At this time, the test program can carry out the data receiving and sending test;
 
 4\. Run the fltest \_ uarttest at the command line terminal. At this time, the screen will display the data received by the serial port.
 
@@ -562,7 +562,7 @@ tx_0: iz2Fu9DzFoR5YnMUtJUcxtJmH88LASWr
 root@ok3562:/#
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417676596-de370248-1b87-4f70-9619-4a1f9b125a72.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417676596_de370248_1b87_4f70_9619_4a1f9b125a72.jpeg)
 
 5\. Run “fltest\_uarttest” in the command line terminal. Clicking the middle of the black screen in the test interface will bring up the virtual keyboard. After entering 32 characters consecutively, the information printed in the command line terminal represents the data sent by Qt.
 
@@ -572,27 +572,27 @@ rx_0: 12345678901234567890123456789012
 root@ok3562:/#
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417676808-2c1e6291-ef9b-4eac-8bba-58b3b71374d0.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417676808_2c1e6291_ef9b_4eac_8bba_58b3b71374d0.jpeg)
 
 #### 3.1.15 Database Test
 
 After clicking the desktop icon, the Sqlite test database will be ready.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417676999-a26c436c-2b6b-43a5-ac34-061022a7b9ea.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417676999_a26c436c_2b6b_43a5_ac34_061022a7b9ea.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677226-5613cd21-0ac5-4fee-9c03-7c5281487fe0.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417677226_5613cd21_0ac5_4fee_9c03_7c5281487fe0.png)
 
 #### 3.1.16 Backlight Test
 
 "BackLight" is the lcd backlight adjustment application:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677503-ce25fa41-3c86-4b58-8a69-b97342e9b73d.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417677503_ce25fa41_3c86_4b58_8a69_b97342e9b73d.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677716-64116b20-28e6-407b-b818-94daa5ac90a1.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417677716_64116b20_28e6_407b_b818_94daa5ac90a1.png)
 
 Adjust the brightness of the LCD backlight by sliding the slider in the interface; level 0 is the lowest brightness, and level 255 is the highest brightness.
 
@@ -600,7 +600,7 @@ This test procedure limits the minimum brightness, and the minimum value can be 
 
 #### 3.1.17 Uboot Menu
 
-Click on the desktop icon![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677943-fb582525-076e-45bc-a77c-8cebe5ad2667.png)to configure the Uboot menu.
+Click on the desktop icon![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417677943_fb582525_076e_45bc_a77c_8cebe5ad2667.png)to configure the Uboot menu.
 
 In the "disp\_type" tab, you can select the screen display.
 
@@ -626,17 +626,17 @@ In the “combphy\_type” tab, you can choose the USB and PCIe multiplexing fun
 
 After successfully making the changes, please ensure to save the settings and restart the development board to apply the configuration.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417678199-c414e37a-20b6-497c-bc0b-a8c857634b75.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417678199_c414e37a_20b6_497c_bc0b_a8c857634b75.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417678430-81a084f5-0d93-419a-9b4a-8bb02bf23f01.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417678430_81a084f5_0d93_419a_9b4a_8bb02bf23f01.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417678632-ac754c47-2928-45b0-96d8-2546590bc321.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417678632_ac754c47_2928_45b0_96d8_2546590bc321.jpeg)
 
 #### 3.1.18 Web Services
 
 The OK3562 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679107-12d1f44a-8fba-4165-a4fe-ba2b015f28a7.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417679107_12d1f44a_8fba_4165_a4fe_ba2b015f28a7.png)
 
 **Note: To use this function properly, the network IP of the development board needs to be the same network segment as the network IP of the PC, or the PC is under the subnet of the network where the development board is located.**
 
@@ -644,11 +644,11 @@ The OK3562 development board comes with the lighttpd web server pre-installed, a
 
 OK3562-C development board is equipped with 13 x ADC, each channel can connect an adjustable resistor. For testing, select channel saradc0\_in5. The hardware diagram of the ADC pin is as follows: input voltage at pin 1 of P11. The current chip uses a 1.8V reference voltage corresponding to a 10-bit ADC maximum of 1024.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679386-5ec56abe-ddc8-45a2-a3e6-a78456bf9912.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417679386_5ec56abe_ddc8_45a2_a3e6_a78456bf9912.png)
 
-Run the QT ADC![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679554-156d7ae2-e065-46d6-9c57-64c76b6bfc6f.png)program to display the results.
+Run the QT ADC![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417679554_156d7ae2_e065_46d6_9c57_64c76b6bfc6f.png)program to display the results.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679774-4094d713-9cbd-4e75-8a0e-2a14d00ad253.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417679774_4094d713_9cbd_4e75_8a0e_2a14d00ad253.png)
 
 #### 3.1.20 TFTP Upgrading System
 
@@ -663,7 +663,7 @@ Run the QT ADC![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679554-
 1. Install Tftpd64.4.64.exe;
 2. Open Tftpd64.4.64.exe and run the test;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679978-d7fe01c5-7320-4e80-99cf-77b53dc1772d.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417679978_d7fe01c5_7320_4e80_99cf_77b53dc1772d.png)
 
 CurrentDirectory: Select the OK3562-C partition firmware storage path.
 
@@ -671,11 +671,11 @@ Server interfaces: Select the local IP address.
 
 **Note: Please close the window firewall and verify the tftp download file test by yourself.**
 
-3. Open the desktop Tftp Update icon![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417680230-85b319c8-f19d-4966-9000-aaacc308263b.png)
+3. Open the desktop Tftp Update icon![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417680230_85b319c8_f19d_4966_9000_aaacc308263b.png)
 
    
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417680441-fabc1d48-0621-4c0a-9800-b1bbfa3f7ba1.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417680441_fabc1d48_0621_4c0a_9800_b1bbfa3f7ba1.jpeg)
 
 Please fill in the form according to the actual situation. Select the firmware to update.
 
@@ -683,7 +683,7 @@ Click Tftp: Off to Tftp: On; reboot the board.
 
 The serial port printing information is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417680673-7b21e433-6173-4ed2-ba79-62d3d45120c3.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417680673_7b21e433_6173_4ed2_ba79_62d3d45120c3.png)
 
 #### 3.1.21 CPU Frequency Configuration Test
 
@@ -691,7 +691,7 @@ The serial port printing information is as follows:
 
 Click the desktop icon to enter the next menu:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417681023-ee7bea0e-f25f-4ec2-be12-3580bff6f6e7.png)**->**![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417681224-3d726585-e187-49e3-9e1a-06953e06559c.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417681023_ee7bea0e_f25f_4ec2_be12_3580bff6f6e7.png)**->**![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417681224_3d726585_e187_49e3_9e1a_06953e06559c.png)
 
 Application Icons
 
@@ -699,7 +699,7 @@ The maximum CPU clock frequency of OK3562 is 2.0 GHz. By default, the CPU dynami
 
 Click the "Power" icon on the desktop to enter the CPU clock frequency setting page.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417681462-a08c0939-ae79-4034-8ea4-4da675d8f09b.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417681462_a08c0939_ae79_4034_8ea4_4da675d8f09b.jpeg)
 
 Set the CPU frequency in the user space.
 
@@ -707,13 +707,13 @@ Set FrequencyCPU0-3：Set frequency
 
 Taking setting the CPU frequency as an example, if you need to set a fixed frequency, first click “Set Userspace Governor”, then click “run”. After that, return to the operation interface in the above figure and click “Set Frequency CPU0 - 3” to make the setting.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417681695-f3a43e8f-34e2-4593-a70f-87260bd357e8.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417681695_f3a43e8f_34e2_4593_a70f_87260bd357e8.jpeg)
 
 Select the corresponding frequency for setting based on your requirements.
 
 #### 3.1.22 Record Test
 
-Icon：![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417681925-8a69aa3a-5bf4-4727-87c2-035e69ef3ce5.png)
+Icon：![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417681925_8a69aa3a_5bf4_4727_87c2_035e69ef3ce5.png)
 
 Before conducting the audio recording test, please insert the prepared microphone into the mic port. Click the icon to enter the recording test application, which can be used to check if the sound card recording function is working properly.
 
@@ -721,17 +721,17 @@ Choose where to save the recording file. Click "Start" to begin recording and "S
 
 Click the Input Device radio box to select "alsa: sysdefault: CARD = rockchiprk809", click the Channels radio box to select "2", and the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417682239-d0793e27-2ace-4398-bb45-1ee1ca099016.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417682239_d0793e27_2ace_4398_bb45_1ee1ca099016.jpeg)
 
 Click the Record button to test the recording. The recording file is saved in the root directory as /clip\_XXXX.avi.
 
 #### 3.1.23 SPI Test
 
-Icon：![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417682440-b869fc6d-7106-4ff7-b299-c35c55dc0c37.png)
+Icon：![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417682440_b869fc6d_7106_4ff7_b299_c35c55dc0c37.png)
 
 Click on the icon to enter the SPI testing interface. Short-circuit the SPI2\_MOSI\_M0 and SPI2\_MISO\_M0 pins, then click “send” below to receive the data sent out and complete the test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417682692-9a531955-6bdb-4c5f-beec-1e2c0d5d078f.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417682692_9a531955_6bdb_4c5f_beec_1e2c0d5d078f.png)
 
 ## 4. OK3562 Command Line Function Test
 
@@ -978,7 +978,7 @@ UART0, UART2, UART8 and UART9 serial ports are indicated in the schematic diagra
 
 This test uses UART2 and UART9 to short 485 \_ B1 and 485 \_ B0, 485 \_ A1 and 485 \_ A0 in P36 port. GND \_ 485 \_ 0, GND \_ 485 \_ 1 pin header, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1722219092030-c1249903-b12e-48b0-8be6-51478d731f10.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1722219092030_c1249903_b12e_48b0_8be6_51478d731f10.png)
 
 Enter the following command in the serial port of the development board:
 
@@ -996,7 +996,7 @@ root@ok3562:/#
 
 OK3562-C development board is equipped with 13 x ADC, each channel can connect an adjustable resistor. For testing, select channel saradc0\_in5. The hardware diagram of the ADC pin is as follows: input voltage at pin 1 of P11. The current chip uses a 1.8V reference voltage corresponding to a 10-bit ADC maximum of 1024.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417683181-9552584f-5419-47e8-9307-1427849c8bae.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417683181_9552584f_5419_47e8_9307_1427849c8bae.png)
 
 Take SARADC \_ VIN2 as an example to test the adjustable resistance value:
 
@@ -1012,7 +1012,7 @@ root@ok3562:/sys/bus/iio/devices/iio:device0# cat in_voltage5_raw
 
 1\. Insert the TF card into the TF card slot on the carrier board before power up. Then power up and start, run the command dmesg, and the terminal will have the following printed information:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417683449-f07dfde3-d452-4fdf-a8ae-951a7a0680f8.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417683449_f07dfde3_d452_4fdf_a8ae_951a7a0680f8.png)
 
 2\. Check the mount directory:
 
@@ -1077,7 +1077,7 @@ root@ok3562:~# dd if=/test of=/dev/null bs=1M iflag=direct
 
 Connect the USB mouse to the USB interface of the OK3562 platform and use the dmesg command, the serial terminal prints the following information:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417683670-7cdcbb8f-c940-4f83-b982-1be0d074afc9.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417683670_7cdcbb8f_c940_4f83_b982_1be0d074afc9.png)
 
 At this time, the arrow cursor appears on the screen, the mouse can work normally.
 
@@ -1089,7 +1089,7 @@ The terminal prints information about the USB flash drive, and since many types 
 
 1. After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. Use the dmesg command to view and get information about the USB flash drive.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417683973-a87d10d3-9892-451c-881f-e0d62c9a7589.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417683973_a87d10d3_9892_451c_881f_e0d62c9a7589.png)
 
 2. View the mount directory:
 
@@ -1179,7 +1179,7 @@ root@3562:/# ls /dev/ ttyXRUSB*
 
 3\. The mapping between the four extended serial ports and their corresponding device nodes is shown in the diagram below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684392-b4febc8c-5724-401d-a9a4-20165a269a9c.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
 
 4\. Refer to “3.2. 8 UART Test” for the test methods.
 
@@ -1197,7 +1197,7 @@ USB Host mode allows you to connect standard USB devices, while Device mode supp
 
 2\. Modify the device tree file arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi (default in factory image, no need to modify) to change the “dr\_mode” property of the “usbdrd\_dwc3” node to “host’, as shown in the following image;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684738-0e90d5d6-c5d0-4484-806e-8fc65da65829.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417684738_0e90d5d6_c5d0_4484_806e_8fc65da65829.png)
 
 3\. Recompile the image and flash it into the development board;
 
@@ -1271,7 +1271,7 @@ root@ok3562:~# umount /run/media/sda1
 
 1\. Modify the usbdrd\_dwc3 node in the device tree arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi, as shown in the following image;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684997-25146b9b-12f9-40f2-a6e2-3938db623bb8.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417684997_25146b9b_12f9_40f2_a6e2_3938db623bb8.png)
 
 2\. Recompile the image and flash it into the development board;
 
@@ -1303,7 +1303,7 @@ In Device mode, the S2 DIP switch on the carrier board needs to be set to the OF
 
 Connect the computer to the development board P35 USB-type C socket with the USB-a to USB-C cable, and restart the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417685359-31c37e27-76b7-4b1f-acd6-01f0c457490a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417685359_31c37e27_76b7_4b1f_acd6_01f0c457490a.png)
 
 Rockchip development tool shows "found an ADB device", you can download files from the development board to the computer through ADB pull, and upload files from the computer to the development board through ADB push.
 
@@ -1347,7 +1347,7 @@ Before powering up the system, insert the PCIE module into the PCIE card slot on
 
 After powering up and booting, from lspci we can see that the corresponding device enumeration is successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417685571-e8818454-b153-4e87-9125-15dba69fe57a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417685571_e8818454_b153_4e87_9125_15dba69fe57a.png)
 
 Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.
 
@@ -1377,9 +1377,9 @@ root@ok3562:/#
 
 <font style="color:#000000;">Test bandwidth with iperf3</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417685858-f60dff6f-4e41-4ed9-924d-2744215572b1.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417685858_f60dff6f_4e41_4ed9_924d_2744215572b1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417686181-e408c980-ad76-4e34-ab64-143ccb996e04.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417686181_e408c980_ad76_4e34_ab64_143ccb996e04.png)
 
 #### 4.1.17 Ethernet Configuration
 
@@ -1579,7 +1579,7 @@ Default agent request successful
 
 At this time, open the PC Bluetooth search, and a "OK3562" device will appear. Select pairing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417686511-83a2a7db-1e20-494c-a796-882d0345561d.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417686511_83a2a7db_1e20_494c_a796_882d0345561d.png)
 
 At the same time the printing message displays on the development board as follows, enter yes
 
@@ -1650,7 +1650,7 @@ Request confirmation
 
 After successful pairing, on the PC side, Bluetooth can send files to the OK3562-C.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417686733-a7c68469-02b0-45da-af81-789c0d2f93e3.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417686733_a7c68469_02b0_45da_af81_789c0d2f93e3.png)
 
 Received files are saved in the /tmp directory.
 
@@ -1671,7 +1671,7 @@ Connection successful
 [C4:E1:A1:BA:A4:9E]# send /userdata/media/test.mp3	      		   // Send a file
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417686966-110c7eef-9546-4571-a9b6-be4a5f29c69c.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417686966_110c7eef_9546_4571_a9b6_be4a5f29c69c.png)
 
 The phone will receive the incoming file request and click “Receive” to transfer the file.
 
@@ -1836,7 +1836,7 @@ The OK3562-C platform has two CAN bus interfaces. CAN connection method: Connect
 
 Short CAN0 and CAN1, short pins CAN1\_L and CAN0\_L, and CAN1\_H and CAN0\_H on port P36, as shown in the diagram:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417687199-550c88e4-6a67-4cac-a4bb-574c91738d6d.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417687199_550c88e4_6a67_4cac_a4bb_574c91738d6d.png)
 
 Execute the following command in the development board terminal:
 
@@ -1898,11 +1898,11 @@ root@ok3562:/# cansend can1 1F334455#1122334455667788
 
 <font style="color:#000000;">Short press the power button, the effect is as follows:</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417687430-a21640b3-a104-4022-8c6c-581949640d76.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417687430_a21640b3_a104_4022_8c6c_581949640d76.png)
 
 Short press the power button again to wake up:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417687633-79d430f3-c733-4c1b-bcb1-88c730ff7c8a.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417687633_79d430f3_c733_4c1b_bcb1_88c730ff7c8a.png)
 
 #### 4.1.25 MCU Test
 
@@ -1971,7 +1971,7 @@ root@ok3562:/#
 
 In the OK3562 platform’s carrier board schematic, there is an SPI test pinout located at carrier board position P8.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417687846-dfff0204-6506-4d62-9a85-c3de443e5b21.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720417687846_dfff0204_6506_4d62_9a85_c3de443e5b21.png)
 
 Short the SPI2\_MOSI\_MO and SPI2\_MISO\_M0 pins.
 
@@ -2380,7 +2380,7 @@ Freeing pipeline ...
 
 For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720421272482-6c8a7410-95c6-48b7-a81e-fb49d3e3668d.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720421272482_6c8a7410_95c6_48b7_a81e_fb49d3e3668d.png)
 
 Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.
 
@@ -2611,7 +2611,7 @@ root@ok3562:/#  gst-launch-1.0 uridecodebin uri=file:///oem/SampleVideo_1280x720
 
 Screen display result
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720421272829-c87e727b-555c-4c7f-8bd4-ab16f9a33c94.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720421272829_c87e727b_555c_4c7f_8bd4_ab16f9a33c94.jpeg)
 
 **Note: Multi-channel decoding playback of H264 1080P60 and H265 4KP30 videos stutters, which is caused by insufficient decoding capability.**
 
@@ -2698,11 +2698,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418372654-458dfae6-fe39-4e90-a884-b5c76a0d4659.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418372654_458dfae6_fe39_4e90_a884_b5c76a0d4659.png)
 
 Click "Driver Installation”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418372998-55b52477-7160-490a-9674-11b926fabb18.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418372998_55b52477_7160_490a_9674_11b926fabb18.png)
 
 #### 6.1.2 OTG Full Flashing Test
 
@@ -2718,25 +2718,25 @@ It is a development tool provided by Rockchip Micro. Unzip it to a full English 
 + **Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory;**
 + **The OTG port is on the back of the development board.**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpeg/45534390/1750401730638-6b297042-f5f5-4712-af81-990a5731fe0f.jpeg)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1750401730638_6b297042_f5f5_4712_af81_990a5731fe0f.jpeg)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373238-ded5a5da-5ef9-4382-9150-a8fccf92f309.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418373238_ded5a5da_5ef9_4382_9150_a8fccf92f309.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373446-68f5d3be-afdc-4bdd-ac64-912497c76847.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418373446_68f5d3be_afdc_4bdd_ac64_912497c76847.png)
 
 Click "Switch" to wait for the board to enter the LOADER mode, and click the "Upgrade" button to upgrade.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373687-e2ee7480-1523-4f1d-bba1-4836940ca5d5.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418373687_e2ee7480_1523_4f1d_bba1_4836940ca5d5.png)
 
 **Introduction to MASKROM mode**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the BOOT key, then press the reset key to enter maskrom mode for burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373917-956f9b2d-54fd-48c6-b4e6-069c8e8488af.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418373917_956f9b2d_54fd_48c6_b4e6_069c8e8488af.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -2756,13 +2756,13 @@ Factory Tool is a factory batch OTG flashing tool, which does not need to read t
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374138-b6613de5-c4e7-4c57-ab8b-6d41d165e5c3.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374490-7567e660-737f-4218-8cfa-3b7c9be57d3e.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374807-bd102591-2c43-41da-83b9-2f7307977ca3.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png)
 
 #### 6.1.3 OTG Step Flashing Test
 
@@ -2776,11 +2776,11 @@ Take separate programming boot.img (including device tree and startup logo) as a
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375129-89e69424-6ab1-40ec-a113-86f2437728d9.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418375129_89e69424_6ab1_40ec_a113_86f2437728d9.png)
 
 Click the "Device Partition Table" button, which will automatically read the partition address, and prompt you to update the download address, click "Yes", will be reported to read the partition table successfully, click on the partition of the right test area to select the partition image, and check the partition.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375357-f7716cdb-bc83-43f5-83d6-717dff0f7495.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418375357_f7716cdb_bc83_43f5_83d6_717dff0f7495.png)
 
 Click the "Execute" button will automatically burn and restart.
 
@@ -2792,13 +2792,13 @@ TF card flashing and testing.
 
 Copy SDDiskTool\_v1.76.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375573-2107d191-e37e-4a2c-96d2-442aa8f4b146.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418375573_2107d191_e37e_4a2c_96d2_442aa8f4b146.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375797-0c018d08-61c7-48e9-9500-72810e54ce87.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418375797_0c018d08_61c7_48e9_9500_72810e54ce87.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375991-5a26cc1b-497f-4931-a823-0e988fadcaf9.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418375991_5a26cc1b_497f_4931_a823_0e988fadcaf9.png)
 
 Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 
@@ -2815,6 +2815,6 @@ During mass production, check the flashing status by SoM heartbeat light.  Heart
 
 Serial port information during the burning process:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418376211-f91fcd64-b82e-4d38-bd9d-aa4f8d390be0.png)
+![Image](./images/OK3562J-C_Linux5_10_198_User_Manual/1720418376211_f91fcd64_b82e_4d38_bd9d_aa4f8d390be0.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.
