@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 |  **Date**  | **User Manual Version** | **Revision History**                                         |
 | :--------: | :---------------------: | ------------------------------------------------------------ |
-| 29/04/2024 |          V1.0           | OK3562 User’s Compilation Manual (Version 1.0); Note: This Compilation Manual is only applicable to the OK3562 development board. |
+| 29/04/2024 |          V1.0           | OK3562 User’s Compilation Manual (Version 1.0).<br />**Note: This compilation manual is only applicable to the OK3562 development board.** |
 
 ## Overview
 
@@ -87,7 +87,7 @@ Check the terms in the license agreement that I accept, then click "Next".
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720169300116-b1714f26-bb47-4caf-9cc4-1eee167c5d18.png)
 
-Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
+Modify the installation location to the partition where you want to install the software on your computer, then click "Next".
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720169300391-9f8d9ab4-de5b-47d0-ad38-1174177cefb9.png)
 
@@ -195,15 +195,15 @@ Set the network type, use the default NAT form for networking, and click "Next".
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771350370-a2b56a01-a884-4708-9a99-cfaa88269611.png)
 
-Using the recommended I/O controller, click "Next":
+Use the recommended I/O controller, click "Next":
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771380620-e67fd0b6-0d04-4311-abdf-3950d7457943.png)
 
-Using the recommended disk type, click "Next":
+Use the recommended disk type, click "Next":
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771409290-939fac95-52fb-4b3b-928f-190a882b601a.png)
 
-Using the default options, create a new virtual disk and click "Next":
+Use the default options, create a new virtual disk and click "Next":
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771437575-1e6469fa-2570-4cf5-9c1d-cf248ece01e2.png)
 
@@ -316,7 +316,10 @@ To install the necessary toolkit for compilation, please execute the following c
 
 ```plain
 forlinx@ubuntu:~$ sudo apt-get update
-forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot make automake autoconf libtool libssl-dev bc dosfstools mtools parted iproute2 kmod libyaml-dev device-tree-compiler python-pip flex bison build-essential u-boot-tools libncurses-dev lib32stdc++6 lib32z1 libc6:i386 e2fsprogs scons libgmp-dev libmpc-dev
+forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git
+fakeroot make automake autoconf libtool libssl-dev bc dosfstools mtools parted iproute2 kmod libyaml-dev device-tree-compiler
+python-pip flex bison build-essential u-boot-tools libncurses-dev
+lib32stdc++6 lib32z1 libc6:i386 e2fsprogs scons libgmp-dev libmpc-dev
 ```
 
 ### 3.3 Qt Creator Installation
@@ -395,7 +398,7 @@ forlinx@ubuntu:~$ cd /opt/aarch64-buildroot-linux-gnu_sdk-buildroot
 forlinx@ubuntu: /opt/aarch64-buildroot-linux-gnu_sdk-buildroot $ sudo ./relocate-sdk.sh
 ```
 
-2\. Qt Creator environment configuration
+2\. Qt Creator environment configuration;
 
 First open the Qt Creator software.
 
@@ -463,13 +466,14 @@ This chapter mainly describes the compiling method of the source code related to
 Create a working directory
 
 ```plain
-forlinx@ubuntu:~$ mkdir -p /home/forlinx/work				//Create the working directory in order
+forlinx@ubuntu:~$ mkdir -p /home/forlinx/work	 //Create the working directory in order
 ```
 
 Copy the source file OK3562-linux-source.tar.bz2.\* from the user profile to the virtual machine /home/forlinx/3562 directory.
 
 ```plain
-forlinx@ubuntu:~$ cd /home/forlinx/work														//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work	 
+      //Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK3562-linux-source.tar.bz2.* > OK3562-linux-source.tar.bz2
 forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2				//Unzip the compressed package in the natural location
 ```
