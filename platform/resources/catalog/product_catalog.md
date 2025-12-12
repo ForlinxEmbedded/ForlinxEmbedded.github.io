@@ -18,11 +18,11 @@
 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:80px; height:auto; margin-right:40px;">
+  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:80px; height:auto; margin-right:20px;">
+  <img src="_static/images/product_catalog/ce.svg" alt="ce" class="cert-svg" style="width:40px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/fcc.svg" alt="fcc" class="cert-svg" style="width:40px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:40px; height:auto;">
 </div>
 
 

@@ -305,6 +305,17 @@ pre, code {
     }
 }
 
+/* SVG Logo 自动随主题变色 */
+
+.cert-svg {
+    color: #000000; /* 浅色模式黑色 */
+}
+
+.theme-dark .cert-svg {
+    color: #ffffff; /* 暗色模式白色 */
+}
+
+
 /* ======================= 页脚社交图标 ======================= */
 .forlinx-footer-social a {
     text-decoration: none !important;
