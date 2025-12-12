@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 |  **Date**  | **User Manual Version** | **Revision History**                                         |
 | :--------: | :---------------------: | ------------------------------------------------------------ |
-| 29/04/2024 |          V1.0           | OK3562 User’s Compilation Manual (Version 1.0); Note: This Compilation Manual is only applicable to the OK3562 development board. |
+| 29/04/2024 |          V1.0           | OK3562 User’s Compilation Manual (Version 1.0).<br />**Note: This compilation manual is only applicable to the OK3562 development board.** |
 
 ## Overview
 
@@ -87,7 +87,7 @@ Check the terms in the license agreement that I accept, then click "Next".
 
 ![Image](./images/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
 
-Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
+Modify the installation location to the partition where you want to install the software on your computer, then click "Next".
 
 ![Image](./images/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
 
@@ -195,15 +195,15 @@ Set the network type, use the default NAT form for networking, and click "Next".
 
 ![Image](./images/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
 
-Using the recommended I/O controller, click "Next":
+Use the recommended I/O controller, click "Next":
 
 ![Image](./images/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
 
-Using the recommended disk type, click "Next":
+Use the recommended disk type, click "Next":
 
 ![Image](./images/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
 
-Using the default options, create a new virtual disk and click "Next":
+Use the default options, create a new virtual disk and click "Next":
 
 ![Image](./images/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
 
@@ -316,7 +316,10 @@ To install the necessary toolkit for compilation, please execute the following c
 
 ```plain
 forlinx@ubuntu:~$ sudo apt-get update
-forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot make automake autoconf libtool libssl-dev bc dosfstools mtools parted iproute2 kmod libyaml-dev device-tree-compiler python-pip flex bison build-essential u-boot-tools libncurses-dev lib32stdc++6 lib32z1 libc6:i386 e2fsprogs scons libgmp-dev libmpc-dev
+forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git
+fakeroot make automake autoconf libtool libssl-dev bc dosfstools mtools parted iproute2 kmod libyaml-dev device-tree-compiler
+python-pip flex bison build-essential u-boot-tools libncurses-dev
+lib32stdc++6 lib32z1 libc6:i386 e2fsprogs scons libgmp-dev libmpc-dev
 ```
 
 ### 3.3 Qt Creator Installation
@@ -395,7 +398,7 @@ forlinx@ubuntu:~$ cd /opt/aarch64-buildroot-linux-gnu_sdk-buildroot
 forlinx@ubuntu: /opt/aarch64-buildroot-linux-gnu_sdk-buildroot $ sudo ./relocate-sdk.sh
 ```
 
-2\. Qt Creator environment configuration
+2\. Qt Creator environment configuration;
 
 First open the Qt Creator software.
 
@@ -463,13 +466,14 @@ This chapter mainly describes the compiling method of the source code related to
 Create a working directory
 
 ```plain
-forlinx@ubuntu:~$ mkdir -p /home/forlinx/work				//Create the working directory in order
+forlinx@ubuntu:~$ mkdir -p /home/forlinx/work	 //Create the working directory in order
 ```
 
 Copy the source file OK3562-linux-source.tar.bz2.\* from the user profile to the virtual machine /home/forlinx/3562 directory.
 
 ```plain
-forlinx@ubuntu:~$ cd /home/forlinx/work														//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work	 
+      //Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK3562-linux-source.tar.bz2.* > OK3562-linux-source.tar.bz2
 forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2				//Unzip the compressed package in the natural location
 ```
