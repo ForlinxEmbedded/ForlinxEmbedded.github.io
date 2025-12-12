@@ -305,15 +305,22 @@ pre, code {
     }
 }
 
-/* SVG Logo 自动随主题变色 */
-
-.cert-svg {
-    color: #000000; /* 浅色模式黑色 */
-}
-
-.theme-dark .cert-svg {
-    color: #ffffff; /* 暗色模式白色 */
-}
+/* 浅色模式默认显示 */
+.cert-svg-light {
+    display: inline;
+  }
+  .cert-svg-dark {
+    display: none;
+  }
+  
+  /* 暗色模式显示白色 */
+  .theme-dark .cert-svg-light {
+    display: none;
+  }
+  .theme-dark .cert-svg-dark {
+    display: inline;
+  }
+  
 
 
 /* ======================= 页脚社交图标 ======================= */

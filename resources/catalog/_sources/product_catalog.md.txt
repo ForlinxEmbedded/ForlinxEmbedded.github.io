@@ -17,15 +17,20 @@
 ### FET-MX9596-C SoM
 
 
+
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
+  <!-- 普通 PNG 图标 -->
   <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:80px; height:auto; margin-right:40px;">
   <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:80px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/ce.svg" alt="ce" class="cert-svg" style="width:40px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/fcc.svg" alt="fcc" class="cert-svg" style="width:40px; height:auto; margin-right:5px;">
+  <!-- CE SVG 图标，黑色/白色切换 -->
+  <img src="_static/images/product_catalog/ce-black.svg" alt="ce" class="cert-svg-light" style="width:40px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/ce-white.svg" alt="ce" class="cert-svg-dark" style="width:40px; height:auto; margin-right:5px; display:none;">
+  <!-- FCC SVG 图标，黑色/白色切换 -->
+  <img src="_static/images/product_catalog/fcc-black.svg" alt="fcc" class="cert-svg-light" style="width:45px; height:auto; margin-right:5px;">
+  <img src="_static/images/product_catalog/fcc-white.svg" alt="fcc" class="cert-svg-dark" style="width:45px; height:auto; margin-right:5px; display:none;">
+  <!-- ROHS SVG -->
   <img src="_static/images/product_catalog/rohs.svg" alt="rohs" style="width:40px; height:auto;">
 </div>
-
-
 
 
 
