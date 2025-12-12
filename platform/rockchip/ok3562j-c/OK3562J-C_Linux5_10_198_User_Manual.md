@@ -10,7 +10,7 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-Application Scope
+## Application Scope
 
 OK3562-C development board currently provides the relevant data of the Linux system. This manual describes the relevant functional tests of the Linux 5.10.198 system. Please select the data consistent with the image in the development board for operation. You can access the documentation and source code of the software and hardware through the web link provided by our company.
 
