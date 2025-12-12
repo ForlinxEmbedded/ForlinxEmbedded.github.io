@@ -455,7 +455,7 @@ This chapter mainly describes the compiling method of the source code related to
 
 + Development environment OS: Ubuntu22.04 64 bit version
 + Cross-toolchain: aarch64-linux-gnu
-+ The board uses the Bootloader version: u-boot-2017.09.
++ Bootloader version: u-boot-2017.09.
 + Development Board Kernel: Linux-5.10.198
 + Development board porting QT version: qt5.15.10
 
@@ -473,9 +473,9 @@ Copy the source file OK3562-linux-source.tar.bz2.\* from the user profile to the
 
 ```plain
 forlinx@ubuntu:~$ cd /home/forlinx/work	 
-      //Switch to the working directory
+                      //Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK3562-linux-source.tar.bz2.* > OK3562-linux-source.tar.bz2
-forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2				//Unzip the compressed package in the natural location
+forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2				                  //Unzip the compressed package in the natural location
 ```
 
 Just run the command and wait for it to complete.
