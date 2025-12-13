@@ -1,30 +1,7 @@
-// ------------------- 防闪烁：初始化 body class 和 logo -------------------
-(function () {
-    let savedTheme = localStorage.getItem("doc-theme") || "light";
-    document.body.classList.add(`theme-${savedTheme}`);
-
-    // 页面内证书 logo
-    document.querySelectorAll("img.cert-toggle").forEach(img => {
-        const light = img.dataset.light;
-        const dark  = img.dataset.dark;
-        img.src = savedTheme === "dark" ? dark : light;
-    });
-
-    // 侧边栏 logo
-    const logo = document.querySelector(".wy-side-nav-search img");
-    if (logo) {
-        const projectBase = "/"; // 简单防闪烁，后面 DOMContentLoaded 会修正完整路径
-        const lightLogo = projectBase + "_static/forlinx-logo.png";
-        const darkLogo  = projectBase + "_static/forlinx-logo-dark.png";
-        logo.src = savedTheme === "dark" ? darkLogo : lightLogo;
-    }
-})();
-
-// ------------------- 页面 DOM 完全加载后的 JS -------------------
 document.addEventListener("DOMContentLoaded", async function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-    // ------------------- 智能自动获取项目根路径 -------------------
+    // ------------------- 智能自动获取项目根路径 (异步) -------------------
     async function findProjectBase() {
         let cached = localStorage.getItem("logo-base");
         if (cached) return cached;
@@ -43,7 +20,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                     localStorage.setItem("logo-base", candidate);
                     return candidate;
                 }
-            } catch (e) {}
+            } catch (e) {
+                // ignore, try upper level
+            }
         }
 
         console.warn("⚠️ No logo found, fallback to current path");
@@ -52,17 +31,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         return fallback;
     }
 
+    // ✅ await 才会生效
     let projectBase = await findProjectBase();
     console.log("projectBase =", projectBase);
-
-    // ------------------- 页面内证书 logo 切换 -------------------
-    function switchCertLogos(theme) {
-        document.querySelectorAll("img.cert-toggle").forEach(img => {
-            const light = img.dataset.light;
-            const dark  = img.dataset.dark;
-            img.src = theme === "dark" ? projectBase + dark : projectBase + light;
-        });
-    }
 
     // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
@@ -71,11 +42,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         updateButtonLabel();
 
-        // 侧边栏 logo
         const logo = document.querySelector(".wy-side-nav-search img");
         if (logo) {
             const lightLogo = projectBase + "_static/forlinx-logo.png";
-            const darkLogo  = projectBase + "_static/forlinx-logo-dark.png";
+            const darkLogo = projectBase + "_static/forlinx-logo-dark.png";
 
             if (theme === "dark") {
                 const testImg = new Image();
@@ -93,9 +63,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 logo.style.filter = "";
             }
         }
-
-        // 页面内证书 logo
-        switchCertLogos(theme);
 
         document.body.style.transition = "background-color 0.3s, color 0.3s";
     }
