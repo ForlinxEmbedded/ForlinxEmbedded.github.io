@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     return candidate;
                 }
             } catch (e) {
-                // ignore, try upper level
+                // ignore
             }
         }
 
@@ -35,17 +35,33 @@ document.addEventListener("DOMContentLoaded", async function () {
     let projectBase = await findProjectBase();
     console.log("projectBase =", projectBase);
 
+    // ------------------- 页面内证书 logo 切换（⭐新增⭐） -------------------
+    function switchCertLogos(theme) {
+        document.querySelectorAll("img.cert-toggle").forEach(img => {
+            const light = img.getAttribute("data-light");
+            const dark  = img.getAttribute("data-dark");
+            if (!light || !dark) return;
+
+            img.src = theme === "dark"
+                ? projectBase + dark
+                : projectBase + light;
+        });
+    }
+
     // ------------------- 应用主题 -------------------
     function applyTheme(theme) {
-        document.body.className = document.body.className.replace(/theme-\w+/g, "");
+        // body 主题 class
+        document.body.className =
+            document.body.className.replace(/theme-\w+/g, "");
         document.body.classList.add(`theme-${theme}`);
 
         updateButtonLabel();
 
+        // 左侧 Sphinx logo 切换
         const logo = document.querySelector(".wy-side-nav-search img");
         if (logo) {
             const lightLogo = projectBase + "_static/forlinx-logo.png";
-            const darkLogo = projectBase + "_static/forlinx-logo-dark.png";
+            const darkLogo  = projectBase + "_static/forlinx-logo-dark.png";
 
             if (theme === "dark") {
                 const testImg = new Image();
@@ -64,14 +80,19 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         }
 
-        document.body.style.transition = "background-color 0.3s, color 0.3s";
+        // ⭐关键：每次主题变化都刷新证书 logo
+        switchCertLogos(theme);
+
+        document.body.style.transition =
+            "background-color 0.3s, color 0.3s";
     }
 
     // ------------------- 更新按钮文字 -------------------
     function updateButtonLabel() {
         const btn = document.getElementById("theme-switcher-btn");
         if (!btn) return;
-        btn.textContent = currentTheme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode";
+        btn.textContent =
+            currentTheme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode";
     }
 
     // ------------------- 创建切换按钮 -------------------

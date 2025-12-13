@@ -18,13 +18,35 @@
 
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:80px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:80px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:40px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:45px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:40px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
