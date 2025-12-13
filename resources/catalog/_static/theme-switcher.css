@@ -305,21 +305,7 @@ pre, code {
     }
 }
 
-/* 默认（浅色模式） */
-.png-light {
-    display: inline;
-  }
-  .png-dark {
-    display: none;
-  }
-  
-  /* 暗色模式显示深色 PNG */
-  .theme-dark .png-light {
-    display: none;
-  }
-  .theme-dark .png-dark {
-    display: inline;
-  }
+
   
   
 
