@@ -7,7 +7,7 @@ Welcome to Forlinx Embedded Documentation
     <div class="banner-content-left">
       <h1>High-Performance Embedded Solutions</h1>
       <p>System on Modules, Single Board Computers & Embedded Computers for industrial automation, smart transportation, energy, medical, and edge AI applications.</p>
-      <a href="https://www.forlinx.net/product_index.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" class="btn-banner">View Products</a>
+      <a href="https://docs.forlinx.net/resources/catalog/product_catalog.html" target="_blank" class="btn-banner">Product Catalog</a>
     </div>
   </section>
 
