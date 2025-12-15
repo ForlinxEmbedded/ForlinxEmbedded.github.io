@@ -217,6 +217,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="OK3562J-C_Linux5_10_198_User_Compilation_Manual.html">Linux5.10.198_User’s Compilation Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3562J-C_Forlinx_Desktop22_04_User_Manual.html">Forlinx Desktop 22.04_User’s Compilation Manual_V1.0</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
 <ul>
@@ -350,9 +351,9 @@ Module                  Size  Used by
 <h2>1. OK3562-C Development Board Description<a class="headerlink" href="#ok3562-c-development-board-description" title="Link to this heading"></a></h2>
 <p>RK3562J is a low-power, high-performance processor based on the ARM64 architecture. It includes 4 Cortex-A53 cores and 1 Cortex-M0 core, along with an independent NEON coprocessor. It can be used in computers, mobile phones, personal mobile internet devices, and digital multimedia devices.<br />
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:</p>
-<p><img alt="Image" src="_images/1720418437155_411d3da0_4c0d_4d73_a18a_c2bfac3554cc.jpeg" /></p>
+<p><img alt="Image" src="_images/1720418437155_411d3da0_4c0d_4d73_a18a_c2bfac3554cc1.jpeg" /></p>
 <p><strong>Front</strong></p>
-<p><img alt="Image" src="_images/1720418437554_c4288f3d_892a_4c80_b8de_0bde8c386265.png" /></p>
+<p><img alt="Image" src="_images/1720418437554_c4288f3d_892a_4c80_b8de_0bde8c3862651.png" /></p>
 <p><strong>Back</strong></p>
 <p>The hardware parameters are not described in this software manual. Before referring to this manual for software development, please read “OK3562-C _ Hardware Manual” under the path of “02-User Data \ 03-Hardware Data \ 02-Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</p>
 <section id="introduction-to-linux-5-10-198-system-software-resources">
@@ -544,7 +545,7 @@ The connection between SoM and the carrier board is board-to-board, and the main
 <li><p>Network cable (for network login)</p></li>
 <li><p>According to the development board interface to connect the screen (Based on display needs).</p></li>
 </ul>
-<p><img alt="Image" src="_images/1730773402955_b39ed59a_e86f_4f98_a7e1_ae880aedc5b4.png" /></p>
+<p><img alt="Image" src="_images/1730773402955_b39ed59a_e86f_4f98_a7e1_ae880aedc5b41.png" /></p>
 <p><strong>Note: The debug serial port marked in the diagram actually shares a Type-C interface between UART0 and UART9. UART9 serves as the debug serial port for the bare core when AMP (Asymmetric Multi-Processing) function is enabled (switch S4 needs to be set to UART mode).</strong></p>
 </section>
 <section id="related-driver-installation">
@@ -568,11 +569,11 @@ The connection between SoM and the carrier board is board-to-board, and the main
 </ul>
 <p>Take putty as an example to introduce the login method of serial port:</p>
 <p>Step 1: Connect the serial port number of the computer—check the serial port number from the device manager ( Based on the port actually recognized by the computer );</p>
-<p><img alt="Image" src="_images/1720417652369_c946e9c8_f6b4_450a_a2d9_c9cd0527ed2f.png" /></p>
+<p><img alt="Image" src="_images/1720417652369_c946e9c8_f6b4_450a_a2d9_c9cd0527ed2f1.png" /></p>
 <p>Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;</p>
-<p><img alt="Image" src="_images/1720417652635_c2ca3610_6708_4704_ac4a_90416d6b9c76.png" /></p>
+<p><img alt="Image" src="_images/1720417652635_c2ca3610_6708_4704_ac4a_90416d6b9c761.png" /></p>
 <p>Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settings, open the serial port again later, and click on the saved port number;</p>
-<p><img alt="Image" src="_images/1720417652851_8f35def3_7095_4026_b2c3_e32f6294f73b.png" /></p>
+<p><img alt="Image" src="_images/1720417652851_8f35def3_7095_4026_b2c3_e32f6294f73b1.png" /></p>
 <p>Step 4: Turn on the power switch of the development board, then there will be a print message output from the serial port (no need to login).</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>input-event-daemon: Adding device: /dev/input/event9...
 input-event-daemon: Start listening on 12 devices...
@@ -601,7 +602,7 @@ root@ok3562:/# [   37.424104] vbus5v0_typec0: disabling
 <p>1. Connect the development board’s eth0 interface to the computer using an Ethernet cable. Power on the board and boot the kernel. Confirm the blue heartbeat LED is blinking. Check the network card connection, ensuring its LED flashes rapidly. Once confirmed, proceed with testing the network connection;</p>
 <p>2. Close the computer firewall (General computer operations, not described here in detail), then open the computer’s run command;</p>
 <p>3. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.</p>
-<p><img alt="Image" src="_images/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png" /></p>
+<p><img alt="Image" src="_images/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f31.png" /></p>
 <p><img alt="Image" src="_images/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png" /></p>
 <p>A data return indicates a normal network connection.</p>
 </section>
@@ -616,7 +617,7 @@ root@ok3562:/# [   37.424104] vbus5v0_typec0: disabling
 <p>1. Use ssh to log in the development board</p>
 <p><img alt="Image" src="_images/1720417653640_cd0cf583_62bc_4715_824a_58f2939f6143.png" /></p>
 <p>Click “Open”, the following dialog box will appear, click “Yes” to enter the login screen.</p>
-<p><img alt="Image" src="_images/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png" /></p>
+<p><img alt="Image" src="_images/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a1.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Login as：forlinx
 forlinx@192.168.0.232&#39;s password:               //Follow the prompts to enter the password forlinx for the board&#39;s forlinx account
 forlinx@ok3562:~#
@@ -630,9 +631,9 @@ forlinx@ok3562:~#
 <p>The following is an example of how to use SFTP to transfer files using the filezilla tool.</p>
 <p>Install the FileZilla tool on Windows and follow the steps shown in the image below to configure it. Use “forlinx” as both the username and password.</p>
 <p>Open the FileZilla tool, click on File and select Site Manager.</p>
-<p><img alt="Image" src="_images/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff.png" /></p>
+<p><img alt="Image" src="_images/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff1.png" /></p>
 <p>After successful login, you can upload and download.</p>
-<p><img alt="Image" src="_images/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png" /></p>
+<p><img alt="Image" src="_images/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c08001.png" /></p>
 </section>
 </section>
 <section id="screen-switching">
@@ -660,7 +661,7 @@ forlinx@ok3562:~#
 <p><strong>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
 <p>Device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi</p>
 <p>In the kernel source code, open the device dtsi file and find the forlinx-control node as follows:</p>
-<p><img alt="Image" src="_images/1720417655244_cf68dda2_b8e9_41e7_af19_85b8fea65d80.png" /></p>
+<p><img alt="Image" src="_images/1720417655244_cf68dda2_b8e9_41e7_af19_85b8fea65d801.png" /></p>
 <p>The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.</p>
 <p><strong>Parameter Description:</strong></p>
 <table class="docutils align-default">
@@ -681,7 +682,7 @@ forlinx@ok3562:~#
 <p>Please change the setting parameters as required. After saving, it is necessary to recompile and generate an image.</p>
 <p><strong>Examples</strong>:</p>
 <p>Use the LVDS screen display.</p>
-<p><img alt="Image" src="_images/1720417655456_cb2ffa1e_8431_4ab1_a170_b82bfb1dcdf9.png" /></p>
+<p><img alt="Image" src="_images/1720417655456_cb2ffa1e_8431_4ab1_a170_b82bfb1dcdf91.png" /></p>
 <p>After saving, recompile to generate the image.</p>
 </section>
 <section id="qt-uboot-menu-application-control">
@@ -1228,7 +1229,7 @@ key158 Released                                                       // ESC rel
 </tbody>
 </table>
 <p>This test uses UART2 and UART9 to short 485 _ B1 and 485 _ B0, 485 _ A1 and 485 _ A0 in P36 port. GND _ 485 _ 0, GND _ 485 _ 1 pin header, as shown in the figure:</p>
-<p><img alt="Image" src="_images/1722219092030_c1249903_b12e_48b0_8be6_51478d731f10.png" /></p>
+<p><img alt="Image" src="_images/1722219092030_c1249903_b12e_48b0_8be6_51478d731f101.png" /></p>
 <p>Enter the following command in the serial port of the development board:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3562:/# fltest_uarttest -d /dev/ttyS2 -b 115200 -r &amp;
 [1] 1953
@@ -1243,7 +1244,7 @@ root@ok3562:/#
 <section id="id4">
 <h4>4.1.9 ADC Test<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <p>OK3562-C development board is equipped with 13 x ADC, each channel can connect an adjustable resistor. For testing, select channel saradc0_in5. The hardware diagram of the ADC pin is as follows: input voltage at pin 1 of P11. The current chip uses a 1.8V reference voltage corresponding to a 10-bit ADC maximum of 1024.</p>
-<p><img alt="Image" src="_images/1720417683181_9552584f_5419_47e8_9307_1427849c8bae.png" /></p>
+<p><img alt="Image" src="_images/1720417683181_9552584f_5419_47e8_9307_1427849c8bae1.png" /></p>
 <p>Take SARADC _ VIN2 as an example to test the adjustable resistance value:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3562:~# cd /sys/bus/iio/devices/iio:device0
 root@ok3562:/sys/bus/iio/devices/iio:device0# cat in_voltage5_raw
@@ -1394,7 +1395,7 @@ Bus 001 Device 004: ID 04e2:1414                //The vid and pid of the convers
 </pre></div>
 </div>
 <p>3. The mapping between the four extended serial ports and their corresponding device nodes is shown in the diagram below:</p>
-<p><img alt="Image" src="_images/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png" /></p>
+<p><img alt="Image" src="_images/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c1.png" /></p>
 <p>4. Refer to “3.2. 8 UART Test” for the test methods.</p>
 </section>
 <section id="usb3-0-usb-otg-test">
@@ -1406,7 +1407,7 @@ Bus 001 Device 004: ID 04e2:1414                //The vid and pid of the convers
 <h5>4.1.15.1  USB3.0 Host Mode:<a class="headerlink" href="#usb3-0-host-mode" title="Link to this heading"></a></h5>
 <p>1. Set the S2 DIP switch on the development board to the ON position;</p>
 <p>2. Modify the device tree file arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi (default in factory image, no need to modify) to change the “dr_mode” property of the “usbdrd_dwc3” node to “host’, as shown in the following image;</p>
-<p><img alt="Image" src="_images/1720417684738_0e90d5d6_c5d0_4484_806e_8fc65da65829.png" /></p>
+<p><img alt="Image" src="_images/1720417684738_0e90d5d6_c5d0_4484_806e_8fc65da658291.png" /></p>
 <p>3. Recompile the image and flash it into the development board;</p>
 <p>4. Set the S3 DIP switch on the carrier board to the OFF position, and also set combphy_type to usb in the U-Boot menu;</p>
 <p>5. Connect the USB 3.0 flash drive to the USB 3.0-A port (labeled P33) on the development board and recognize the flash drive.</p>
@@ -1462,7 +1463,7 @@ total 1048576
 <section id="usb-otg-mode">
 <h5>4.1.15.2 USB OTG Mode<a class="headerlink" href="#usb-otg-mode" title="Link to this heading"></a></h5>
 <p>1. Modify the usbdrd_dwc3 node in the device tree arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi, as shown in the following image;</p>
-<p><img alt="Image" src="_images/1720417684997_25146b9b_12f9_40f2_a6e2_3938db623bb8.png" /></p>
+<p><img alt="Image" src="_images/1720417684997_25146b9b_12f9_40f2_a6e2_3938db623bb81.png" /></p>
 <p>2. Recompile the image and flash it into the development board;</p>
 <p>3. Set the S3 DIP switch on the carrier board to the OFF position, and also set combphy_type to usb in the U-Boot menu.</p>
 <p>Host mode requires setting switch S2 on the carrier board to the ON position.</p>
@@ -1485,7 +1486,7 @@ total 1048576
 </div>
 <p>In Device mode, the S2 DIP switch on the carrier board needs to be set to the OFF position.</p>
 <p>Connect the computer to the development board P35 USB-type C socket with the USB-a to USB-C cable, and restart the development board.</p>
-<p><img alt="Image" src="_images/1720417685359_31c37e27_76b7_4b1f_acd6_01f0c457490a.png" /></p>
+<p><img alt="Image" src="_images/1720417685359_31c37e27_76b7_4b1f_acd6_01f0c457490a1.png" /></p>
 <p>Rockchip development tool shows “found an ADB device”, you can download files from the development board to the computer through ADB pull, and upload files from the computer to the development board through ADB push.</p>
 <p>Open the RKDevTool_Release/bin directory in the Win10 PowerShell terminal.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Windows PowerShell
@@ -1814,7 +1815,7 @@ Request confirmation
 </div>
 <p>4. Development board to receive documents</p>
 <p>After successful pairing, on the PC side, Bluetooth can send files to the OK3562-C.</p>
-<p><img alt="Image" src="_images/1720417686733_a7c68469_02b0_45da_af81_789c0d2f93e3.png" /></p>
+<p><img alt="Image" src="_images/1720417686733_a7c68469_02b0_45da_af81_789c0d2f93e31.png" /></p>
 <p>Received files are saved in the /tmp directory.</p>
 <p>5. The development board to send files</p>
 <p>Similarly, the OK3562-C can send files to a cell phone, test is as follows:</p>
@@ -1965,7 +1966,7 @@ root@ok3562:~# aplay  test1.wav   							//Play the collected sound
 <h4>4.1.23 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h4>
 <p>The OK3562-C platform has two CAN bus interfaces. CAN connection method: Connect the H terminal of CAN to the H terminal of other CAN devices; connect the L terminal of CAN to the L terminal of other CAN devices.</p>
 <p>Short CAN0 and CAN1, short pins CAN1_L and CAN0_L, and CAN1_H and CAN0_H on port P36, as shown in the diagram:</p>
-<p><img alt="Image" src="_images/1720417687199_550c88e4_6a67_4cac_a4bb_574c91738d6d.png" /></p>
+<p><img alt="Image" src="_images/1720417687199_550c88e4_6a67_4cac_a4bb_574c91738d6d1.png" /></p>
 <p>Execute the following command in the development board terminal:</p>
 <p>1. View CAN network devices</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3562:/# ifconfig -a
@@ -2079,7 +2080,7 @@ root@ok3562:/#
 <section id="id6">
 <h4>4.1.27 SPI Test<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <p>In the OK3562 platform’s carrier board schematic, there is an SPI test pinout located at carrier board position P8.</p>
-<p><img alt="Image" src="_images/1720417687846_dfff0204_6506_4d62_9a85_c3de443e5b21.png" /></p>
+<p><img alt="Image" src="_images/1720417687846_dfff0204_6506_4d62_9a85_c3de443e5b211.png" /></p>
 <p>Short the SPI2_MOSI_MO and SPI2_MISO_M0 pins.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3562:/# fltest_spidev_test -D /dev/spidev2.0
  spi mode: 0
@@ -2801,9 +2802,9 @@ arm_release_ver: g13p0-01eac0, rk_so_ver: 10
 <p>Path: 02-User Information \ 01-Software Information \ 04-Tools \ DriverAssitant _ v5.1.1.zip</p>
 <p>Extract the above path file to any directory and run it with administrator privileges</p>
 <p>Open DriverInstall.exe</p>
-<p><img alt="Image" src="_images/1720418372654_458dfae6_fe39_4e90_a884_b5c76a0d4659.png" /></p>
+<p><img alt="Image" src="_images/1720418372654_458dfae6_fe39_4e90_a884_b5c76a0d46591.png" /></p>
 <p>Click “Driver Installation”</p>
-<p><img alt="Image" src="_images/1720418372998_55b52477_7160_490a_9674_11b926fabb18.png" /></p>
+<p><img alt="Image" src="_images/1720418372998_55b52477_7160_490a_9674_11b926fabb181.png" /></p>
 </section>
 <section id="otg-full-flashing-test">
 <h4>6.1.2 OTG Full Flashing Test<a class="headerlink" href="#otg-full-flashing-test" title="Link to this heading"></a></h4>
@@ -2819,14 +2820,14 @@ arm_release_ver: g13p0-01eac0, rk_so_ver: 10
 </ul>
 <p><img alt="Image" src="_images/1750401730638_6b297042_f5f5_4712_af81_990a5731fe0f.jpeg" /></p>
 <p>Open the Rockchip development tool:</p>
-<p><img alt="Image" src="_images/1720418373238_ded5a5da_5ef9_4382_9150_a8fccf92f309.png" /></p>
+<p><img alt="Image" src="_images/1720418373238_ded5a5da_5ef9_4382_9150_a8fccf92f3091.png" /></p>
 <p>Click the “Upgrade Firmware” tab, click the “Firmware” button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.</p>
-<p><img alt="Image" src="_images/1720418373446_68f5d3be_afdc_4bdd_ac64_912497c76847.png" /></p>
+<p><img alt="Image" src="_images/1720418373446_68f5d3be_afdc_4bdd_ac64_912497c768471.png" /></p>
 <p>Click “Switch” to wait for the board to enter the LOADER mode, and click the “Upgrade” button to upgrade.</p>
-<p><img alt="Image" src="_images/1720418373687_e2ee7480_1523_4f1d_bba1_4836940ca5d5.png" /></p>
+<p><img alt="Image" src="_images/1720418373687_e2ee7480_1523_4f1d_bba1_4836940ca5d51.png" /></p>
 <p><strong>Introduction to MASKROM mode</strong></p>
 <p>If Loader mode is inaccessible (loader problem, etc.), press and hold the BOOT key, then press the reset key to enter maskrom mode for burning.</p>
-<p><img alt="Image" src="_images/1720418373917_956f9b2d_54fd_48c6_b4e6_069c8e8488af.png" /></p>
+<p><img alt="Image" src="_images/1720418373917_956f9b2d_54fd_48c6_b4e6_069c8e8488af1.png" /></p>
 <p>At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.</p>
 <p><strong>Note:</strong></p>
 <ul class="simple">
@@ -2843,10 +2844,10 @@ arm_release_ver: g13p0-01eac0, rk_so_ver: 10
 <li><p><strong>Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn’t match the following figure, please consider unzipping it in an English directory.</strong></p></li>
 </ul>
 <p>Open the Rockchip development tool:</p>
-<p><img alt="Image" src="_images/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png" /></p>
+<p><img alt="Image" src="_images/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c31.png" /></p>
 <p>Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.</p>
-<p><img alt="Image" src="_images/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png" /></p>
-<p><img alt="Image" src="_images/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png" /></p>
+<p><img alt="Image" src="_images/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e1.png" /></p>
+<p><img alt="Image" src="_images/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca31.png" /></p>
 </section>
 </section>
 <section id="otg-step-flashing-test">
@@ -2856,9 +2857,9 @@ arm_release_ver: g13p0-01eac0, rk_so_ver: 10
 <p>First, after OK3562-linux-release is compiled, a separate partition image can be found in the rockdev directory.</p>
 <p>Take separate programming boot.img (including device tree and startup logo) as an example to demonstrate the programming method.</p>
 <p>Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.</p>
-<p><img alt="Image" src="_images/1720418375129_89e69424_6ab1_40ec_a113_86f2437728d9.png" /></p>
+<p><img alt="Image" src="_images/1720418375129_89e69424_6ab1_40ec_a113_86f2437728d91.png" /></p>
 <p>Click the “Device Partition Table” button, which will automatically read the partition address, and prompt you to update the download address, click “Yes”, will be reported to read the partition table successfully, click on the partition of the right test area to select the partition image, and check the partition.</p>
-<p><img alt="Image" src="_images/1720418375357_f7716cdb_bc83_43f5_83d6_717dff0f7495.png" /></p>
+<p><img alt="Image" src="_images/1720418375357_f7716cdb_bc83_43f5_83d6_717dff0f74951.png" /></p>
 <p>Click the “Execute” button will automatically burn and restart.</p>
 </section>
 </section>
@@ -2867,10 +2868,10 @@ arm_release_ver: g13p0-01eac0, rk_so_ver: 10
 <p>TF card flashing and testing.</p>
 <p><strong>Note: The maximum capacity of the test TF card is 32G, using a TF card above 32G may fail to burn.</strong></p>
 <p>Copy SDDiskTool_v1.76.zip from the user profile tools directory to any directory on windows. Run SD_Firmware_Tool.exe with administrator privileges.</p>
-<p><img alt="Image" src="_images/1720418375573_2107d191_e37e_4a2c_96d2_442aa8f4b146.png" /></p>
+<p><img alt="Image" src="_images/1720418375573_2107d191_e37e_4a2c_96d2_442aa8f4b1461.png" /></p>
 <p>Select the disk device, check “Firmware Upgrade” and select update.img. Click Start Creating.</p>
-<p><img alt="Image" src="_images/1720418375797_0c018d08_61c7_48e9_9500_72810e54ce87.png" /></p>
-<p><img alt="Image" src="_images/1720418375991_5a26cc1b_497f_4931_a823_0e988fadcaf9.png" /></p>
+<p><img alt="Image" src="_images/1720418375797_0c018d08_61c7_48e9_9500_72810e54ce871.png" /></p>
+<p><img alt="Image" src="_images/1720418375991_5a26cc1b_497f_4931_a823_0e988fadcaf91.png" /></p>
 <p>Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:</p>
 <p>Please remove SD CARD!!!, wait for reboot.</p>
 <p>At this time, pull out the TF card, the system automatically restarts (please do not power down directly).</p>
@@ -2882,7 +2883,7 @@ arm_release_ver: g13p0-01eac0, rk_so_ver: 10
 <li><p>Flashing completion phase: Heartbeat light mode, regular intermittent flashes.</p></li>
 </ol>
 <p>Serial port information during the burning process:</p>
-<p><img alt="Image" src="_images/1720418376211_f91fcd64_b82e_4d38_bd9d_aa4f8d390be0.png" /></p>
+<p><img alt="Image" src="_images/1720418376211_f91fcd64_b82e_4d38_bd9d_aa4f8d390be01.png" /></p>
 <p>If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.</p>
 </section>
 </section>
