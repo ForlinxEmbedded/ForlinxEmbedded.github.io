@@ -1,4 +1,4 @@
-# Forlinx Desktop 22.04\_User's Compilation Manual\_V1.0
+# Forlinx Desktop 22.04\_User's Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
