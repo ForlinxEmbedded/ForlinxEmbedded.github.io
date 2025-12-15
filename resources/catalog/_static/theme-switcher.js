@@ -1,50 +1,16 @@
 document.addEventListener("DOMContentLoaded", async function () {
     let currentTheme = localStorage.getItem("doc-theme") || "light";
 
-    // ------------------- 智能自动获取项目根路径 (异步) -------------------
-    async function findProjectBase() {
-        let cached = localStorage.getItem("logo-base");
-        if (cached) return cached;
-
-        let path = window.location.pathname;
-        let segments = path.split("/").filter(Boolean);
-
-        for (let i = segments.length; i >= 1; i--) {
-            let candidate = "/" + segments.slice(0, i).join("/") + "/";
-            let testPath = candidate + "_static/forlinx-logo.png";
-
-            try {
-                let response = await fetch(testPath, { method: "HEAD" });
-                if (response.ok) {
-                    console.log("✅ Found logo base:", candidate);
-                    localStorage.setItem("logo-base", candidate);
-                    return candidate;
-                }
-            } catch (e) {
-                // ignore
-            }
-        }
-
-        console.warn("⚠️ No logo found, fallback to current path");
-        let fallback = path.replace(/[^/]+$/, "");
-        localStorage.setItem("logo-base", fallback);
-        return fallback;
-    }
-
-    // ✅ await 才会生效
-    let projectBase = await findProjectBase();
-    console.log("projectBase =", projectBase);
-
-    // ------------------- 页面内证书 logo 切换（⭐新增⭐） -------------------
+    // ------------------- 页面内证书 logo 切换 -------------------
     function switchCertLogos(theme) {
         document.querySelectorAll("img.cert-toggle").forEach(img => {
             const light = img.getAttribute("data-light");
             const dark  = img.getAttribute("data-dark");
             if (!light || !dark) return;
 
-            img.src = theme === "dark"
-                ? projectBase + dark
-                : projectBase + light;
+            // 使用 URL 拼接，保证路径正确
+            const newSrc = new URL(theme === "dark" ? dark : light, window.location.href).href;
+            img.src = newSrc;
         });
     }
 
@@ -60,8 +26,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         // 左侧 Sphinx logo 切换
         const logo = document.querySelector(".wy-side-nav-search img");
         if (logo) {
-            const lightLogo = projectBase + "_static/forlinx-logo.png";
-            const darkLogo  = projectBase + "_static/forlinx-logo-dark.png";
+            const lightLogo = new URL("_static/forlinx-logo.png", window.location.href).href;
+            const darkLogo  = new URL("_static/forlinx-logo-dark.png", window.location.href).href;
 
             if (theme === "dark") {
                 const testImg = new Image();
@@ -80,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         }
 
-        // ⭐关键：每次主题变化都刷新证书 logo
+        // 刷新证书 logo
         switchCertLogos(theme);
 
         document.body.style.transition =
