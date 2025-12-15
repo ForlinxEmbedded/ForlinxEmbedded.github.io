@@ -2317,8 +2317,9 @@
 
 ```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-
-  <img src="_static/images/product_catalog/image147.png"
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image147.png"
+       data-dark="_static/images/product_catalog/image147-white.png"
        alt="Texas Instruments"
        style="width:160px; height:auto; margin-right:40px;">
 
