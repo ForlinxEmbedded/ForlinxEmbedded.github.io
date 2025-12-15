@@ -9,7 +9,7 @@
 
 
 ---
-## NXP Series System on Module
+## NXP Series System on Modules
 ---
 
 
