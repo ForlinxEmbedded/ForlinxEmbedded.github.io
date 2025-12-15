@@ -37,6 +37,7 @@ SOFTWARE
 
    OK3562J-C_Linux5_10_198_User_Manual
    OK3562J-C_Linux5_10_198_User_Compilation_Manual
+   OK3562J-C_Forlinx_Desktop22_04_User_Manual
 
 
 
