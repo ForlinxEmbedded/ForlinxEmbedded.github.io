@@ -53,7 +53,7 @@
 
 | FET-MX9596-C | OK-MX9596-C |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET-MX9596-C.png" width="500" > | <img src="_static/images/product_catalog/OK-MX9596-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET-MX9596-C.png" width="500" > | <img src="_static/images/product_catalog/OK-MX9596-C.png" width="1000" > |
 
 
 
@@ -140,7 +140,7 @@
 
 | FET-MX8MPQ-SMARC | OK-MX8MPQ-SMARC |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET-MX8MPQ-SMARC.png" width="500" > | <img src="_static/images/product_catalog/OK-MX8MPQ-SMARC.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET-MX8MPQ-SMARC.png" width="500" > | <img src="_static/images/product_catalog/OK-MX8MPQ-SMARC.png" width="1000" > |
 
 
 
@@ -309,7 +309,7 @@
 
 | FET-MX8MP-C | OK-MX8MP-C |
 |------------|------------|
-| <img src="_static/images/product_catalog/FETMX8MP-C.png" width="500" > | <img src="_static/images/product_catalog/OKMX8MP-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FETMX8MP-C.png" width="500" > | <img src="_static/images/product_catalog/OKMX8MP-C.png" width="1000" > |
 
 
 
@@ -441,19 +441,43 @@
 
 ### FETMX6Q-C / FETMX6DL-C SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
 | FETMX6Q-C / FETMX6DL-C | OKMX6Q-C / OKMX6DL-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FETMX6DL-C.png" width="500" > | <img src="_static/images/product_catalog/OKMX6DL-C0.jpeg" width="1000" > |
+| <img src="_static/images/product_catalog/FETMX6DL-C.png" width="500" > | <img src="_static/images/product_catalog/OKMX6DL-C.png" width="1000" > |
 
 
 
@@ -501,13 +525,35 @@
 ### FETMX6Q-S / FETMX6DL-S SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -558,13 +604,35 @@
 ### FETMX6UL-C SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -616,19 +684,43 @@
 
 ### FETMX6ULL-S SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
 | FETMX6ULL-S | OKMX6ULL-S  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FETMX6ULL-S.png" width="500" > | <img src="_static/images/product_catalog/OKMX6ULL-S.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FETMX6ULL-S.png" width="500" > | <img src="_static/images/product_catalog/OKMX6ULL-S.png" width="1000" > |
 
 
 
@@ -670,13 +762,37 @@
 
 ### FETMX6ULL-C SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -728,13 +844,37 @@
 
 ### FET1052-C SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -785,13 +925,36 @@
 ### FET1061-S SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -841,13 +1004,37 @@
 
 ### FET1028A-C SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -894,13 +1081,37 @@
 
 ### FET1046A-C SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -949,13 +1160,36 @@
 ### FET1043A-C SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1002,13 +1236,36 @@
 ### FET1012A-C SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image6.png" alt="nxp" style="width:100px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image4.png" alt="nxp gold partner" style="width:100px; height:auto; margin-right:20px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image6.png"
+       alt="nxp"
+       style="width:80px; height:auto; margin-right:40px;">
+
+  <img src="_static/images/product_catalog/image4.png"
+       alt="nxp gold partner"
+       style="width:80px; height:auto; margin-right:20px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1057,18 +1314,38 @@
 ### FET3588-C SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="nxp"
+       style="width:100px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
 | FET3588-C | OK3588-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET3588-C.png" width="500" > | <img src="_static/images/product_catalog/OK3588-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET3588-C.png" width="500" > | <img src="_static/images/product_catalog/OK3588-C.png" width="1000" > |
 
 
 
@@ -1127,7 +1404,7 @@
 
 | FET3568-C | OK3568-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET3568-C.png" width="500" > | <img src="_static/images/product_catalog/OK3568-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET3568-C.png" width="500" > | <img src="_static/images/product_catalog/OK3568-C.png" width="1000" > |
 
 
 
@@ -1184,7 +1461,7 @@
 
 | FET3576-C | OK3576-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET3576-C.png" width="500" > | <img src="_static/images/product_catalog/OK3576-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET3576-C.png" width="500" > | <img src="_static/images/product_catalog/OK3576-C.png" width="1000" > |
 
 
 
@@ -1239,7 +1516,7 @@
 
 | FET3562J-C | OK3562J-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET3562J-C.png" width="500" > | <img src="_static/images/product_catalog/OK3562J-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET3562J-C.png" width="500" > | <img src="_static/images/product_catalog/OK3562J-C.png" width="1000" > |
 
 
 
@@ -1526,7 +1803,7 @@
 
 | FET536-C | OK536-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET536-C.png" width="500" > | <img src="_static/images/product_catalog/OK536-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET536-C.png" width="500" > | <img src="_static/images/product_catalog/OK536-C.png" width="1000" > |
 
 
 
@@ -1582,7 +1859,7 @@
 
 | FETT507-C | OKT507-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FETT507-C.png" width="500" > | <img src="_static/images/product_catalog/OKT507-C.jpeg" width="1000" > |
+| <img src="_static/images/product_catalog/FETT507-C.png" width="500" > | <img src="_static/images/product_catalog/OKT507-C.png" width="1000" > |
 
 
 
@@ -1694,7 +1971,7 @@
 
 | FETA40i-C | OKA40i-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FETA40i-C.png" width="500" > | <img src="_static/images/product_catalog/OKA40i-C.jpeg" width="1000" > |
+| <img src="_static/images/product_catalog/FETA40i-C.png" width="500" > | <img src="_static/images/product_catalog/OKA40i-C.png" width="1000" > |
 
 
 #### SoM Parameter
@@ -1752,7 +2029,7 @@
 
 | FET113i-S | OK113i-S  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET113i-S.png" width="500" > | <img src="_static/images/product_catalog/OK113i-S.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET113i-S.png" width="500" > | <img src="_static/images/product_catalog/OK113i-S.png" width="1000" > |
 
 
 
@@ -1812,7 +2089,7 @@
 
 | FET62xx-C | OK62xx-C  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET62xx-C.png" width="500" > | <img src="_static/images/product_catalog/OK62xx-C.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET62xx-C.png" width="500" > | <img src="_static/images/product_catalog/OK62xx-C.png" width="1000" > |
 
 
 #### SoM Parameter
@@ -1870,7 +2147,7 @@
 
 | FET-MA35-S2 | OK-MA35-S2  |
 |------------|------------|
-| <img src="_static/images/product_catalog/FET-MA35-S2.png" width="500" > | <img src="_static/images/product_catalog/OK-MA35-S2.jpg" width="1000" > |
+| <img src="_static/images/product_catalog/FET-MA35-S2.png" width="500" > | <img src="_static/images/product_catalog/OK-MA35-S2.png" width="1000" > |
 
 
 
