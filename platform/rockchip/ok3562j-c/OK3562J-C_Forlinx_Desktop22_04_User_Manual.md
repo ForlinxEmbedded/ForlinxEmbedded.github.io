@@ -33,11 +33,11 @@ A description of some of the symbols and formats associated with this manual:
 | **Note**                                                     | Note or information that requires special attention, be sure to read carefully. |
 | 📚                                                            | Relevant notes on the test chapters                          |
 | 🛤️                                                            | Indicates the related path                                   |
-| <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">Blue font on gray background</font></font>| Refers to commands entered at the command line (Manual input required). |
+| <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">Blue font on gray background</font></font> | Refers to commands entered at the command line (Manual input required). |
 | Black font on gray back ground                               | Serial port output message after entering a command          |
 | **Bold black**                                               | Key information in the serial port output message            |
 | <font style="color:#000000;">//</font>                       | Interpretation of input instructions or output information   |
-| Username@Hostname                                            | root@ok3562: development board serial port login account information;<br />forlinx @rk3562: development board network login account information;<br />forlinx @ Ubuntu: development environment Ubuntu account information.      You can determine the environment for function operation through this information. |
+| Username@Hostname                                            | root@ok3562: development board serial port login account information;<br />forlinx @rk3562: development board network login account information;<br />forlinx @ Ubuntu: development environment Ubuntu account information.<br />You can determine the environment for function operation through this information. |
 
 Example: After packaging the file system, you can use the “ls” command to view the generated files.
 
