@@ -1319,8 +1319,8 @@
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
 
   <img src="_static/images/product_catalog/image112.png"
-       alt="nxp"
-       style="width:100px; height:auto; margin-right:40px;">
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
 
   <img class="cert-toggle"
        data-light="_static/images/product_catalog/image1.png"
@@ -1393,12 +1393,31 @@
 ### FET3568-C SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1450,12 +1469,31 @@
 ### FET3576-C SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1505,12 +1543,31 @@
 ### FET3562J-C SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1560,12 +1617,31 @@
 ### FET3506J-C SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1622,12 +1698,31 @@
 ### FET3506J-S SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1678,12 +1773,31 @@
 ### FET3399-C SoM
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image112.png" alt="rockchip" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image112.png"
+       alt="rockchip"
+       style="width:150px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1735,12 +1849,32 @@
 
 
 
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image79.png"
+       alt="allwinner"
+       style="width:120px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
+
 
 
 
@@ -1792,12 +1926,32 @@
 ### FET536-C SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image79.png"
+       alt="allwinner"
+       style="width:120px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1848,12 +2002,33 @@
 
 ### FETT507-C SoM
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image79.png"
+       alt="allwinner"
+       style="width:120px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1905,12 +2080,33 @@
 ### FET153-S SoM
 
 
+
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image79.png"
+       alt="allwinner"
+       style="width:120px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -1960,12 +2156,32 @@
 ### FETA40i-C SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image79.png"
+       alt="allwinner"
+       style="width:120px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -2018,12 +2234,32 @@
 ### FET113i-S SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image79.png" alt="allwinner" style="width:150px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image79.png"
+       alt="allwinner"
+       style="width:120px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -2078,12 +2314,33 @@
 ### FET62xx-C SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image147.png" alt="Texas Instruments" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image147.png"
+       data-dark="_static/images/product_catalog/image147-white.png"
+       alt="Texas Instruments"
+       style="width:160px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
@@ -2136,12 +2393,32 @@
 ### FET-MA35-S2 SoM
 
 
+
+```{raw} html
 <div style="display:flex; flex-wrap:wrap; justify-content:right; align-items:center;">
-  <img src="_static/images/product_catalog/image80.png" alt="Nuvoton" style="width:200px; height:auto; margin-right:40px;">
-  <img src="_static/images/product_catalog/image1.png" alt="ce" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image2.png" alt="fcc" style="width:60px; height:auto; margin-right:5px;">
-  <img src="_static/images/product_catalog/image3.png" alt="rohs" style="width:60px; height:auto;">
+
+  <img src="_static/images/product_catalog/image80.png"
+       alt="Nuvoton"
+       style="width:160px; height:auto; margin-right:40px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image1.png"
+       data-dark="_static/images/product_catalog/ce-white.png"
+       alt="CE"
+       style="width:40px; height:auto; margin-right:5px;">
+
+  <img class="cert-toggle"
+       data-light="_static/images/product_catalog/image2.png"
+       data-dark="_static/images/product_catalog/fcc-white.png"
+       alt="FCC"
+       style="width:45px; height:auto; margin-right:5px;">
+
+  <img src="_static/images/product_catalog/image3.png"
+       alt="ROHS"
+       style="width:40px; height:auto;">
+
 </div>
+```
 
 
 
