@@ -476,9 +476,9 @@ forlinx@ubuntu:~$ mkdir -p /home/forlinx/work			//Create the working directory i
 Copy the source file OK3562-linux-source.tar.bz2.\* from the user profile to the virtual machine /home/forlinx/3562 directory.
 
 ```shell
-forlinx@ubuntu:~$ cd /home/forlinx/work														//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work														                           //Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK3562-linux-source.tar.bz2.* > OK3562-linux-source.tar.bz2
-forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2				//Decompress the compressed package at the current location
+forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2		//Decompress the compressed package at the current location
 ```
 
 Just run the command and wait for it to complete.
