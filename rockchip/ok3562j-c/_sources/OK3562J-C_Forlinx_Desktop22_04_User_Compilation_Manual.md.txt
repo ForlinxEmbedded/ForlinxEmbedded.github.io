@@ -53,7 +53,7 @@ OK3562-linux-source  OK3562-linux-source.tar.bz2
 + forlinx@ubuntu: the username is forlinx and the hostname is ubuntu, indicating that the operation is performed in the development environment ubuntu;
 + //: Explanation of the instruction, no input required;
 + <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: Blue font on a gray background, indicating relevant commands that need to be entered manually;
-+ **OK3562-linux-source：**Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
++ **OK3562-linux-source:** Black font is the output information after entering the command; bold font is the key information; here is the packaged file system.
 
 ## Revision History
 
