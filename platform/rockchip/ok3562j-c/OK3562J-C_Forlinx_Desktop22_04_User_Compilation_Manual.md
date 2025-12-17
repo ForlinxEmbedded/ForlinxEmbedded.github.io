@@ -97,7 +97,7 @@ Check and click on "Next".
 
 Check the box to add a shortcut, then click "Next".
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Compilation_Manual/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)a
+![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Compilation_Manual/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
 
 Click "Installation".
 
