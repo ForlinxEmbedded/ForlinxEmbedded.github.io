@@ -373,7 +373,7 @@ Boot Qt Creator ：
 
 ```plain
 forlinx@ubuntu: ~/Qt5.12.9/Tools/QtCreator/bin $ sudo ./qtcreator
-[sudo] password for forlinx: forlinx                    //输入forlinx用户的密码，无回显
+[sudo] password for forlinx: forlinx                    //Enter forlinx user password, no display
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
@@ -476,7 +476,7 @@ forlinx@ubuntu:~$ mkdir -p /home/forlinx/work			//Create the working directory i
 Copy the source file OK3562-linux-source.tar.bz2.\* from the user profile to the virtual machine /home/forlinx/3562 directory.
 
 ```shell
-forlinx@ubuntu:~$ cd /home/forlinx/work														                           //Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work                 //Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK3562-linux-source.tar.bz2.* > OK3562-linux-source.tar.bz2
 forlinx@ubuntu:~/work$ tar -xvf OK3562-linux-source.tar.bz2		//Decompress the compressed package at the current location
 ```
