@@ -316,7 +316,12 @@ To install the necessary toolkit for compilation, please execute the following c
 
 ```plain
 forlinx@ubuntu:~$ sudo apt-get update
-forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot make automake autoconf libtool libssl-dev bc dosfstools mtools parted iproute2 kmod libyaml-dev device-tree-compiler python-pip flex bison build-essential u-boot-tools libncurses-dev lib32stdc++6 lib32z1 libc6:i386 e2fsprogs scons libgmp-dev libmpc-dev
+forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git
+fakeroot make automake autoconf libtool libssl-dev bc dosfstools
+mtools parted iproute2 kmod libyaml-dev device-tree-compiler
+python-pip flex bison build-essential u-boot-tools libncurses-dev
+
+lib32stdc++6 lib32z1 libc6:i386 e2fsprogs scons libgmp-dev libmpc-dev
 ```
 
 ### **3.3 Qt Creator** Installation
