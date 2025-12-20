@@ -64,7 +64,7 @@ OKMX8MPQ-C development board is developed with NXP I. MX 8m Plus high-performanc
 
 Development Board Interface Diagram：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719455543620-616224c8-c136-4bb8-ae89-473733e30308.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455543620_616224c8_c136_4bb8_ae89_473733e30308.jpeg)
 
 **Note:**
 
@@ -125,7 +125,7 @@ The following table shows the eMMC memory partition information for the Android 
 
 The OKMX8MPQ - C supports OTG and TF card flashing, and it also supports eMMC and QSPI boot. As shown in the figure below, when the DIP switch is set, it enables eMMC boot. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455543941-ee6c1fcb-48ff-4244-a271-50cf5e1889b6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455543941_ee6c1fcb_48ff_4244_a271_50cf5e1889b6.png)
 
 | DIP Switch| **No 1.**| **No 2.**| **No 3.**| **No 4.**|
 |----------|:----------:|:----------:|:----------:|:----------:|
@@ -150,7 +150,7 @@ The OKMX8MPQ-C development board has two system login methods, serial and networ
 
 Please check the red DIP switch on your development board to confirm that the desired startup mode has been set. For the startup mode setting, please refer to Programming and Startup Settings.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455470385-354f497b-35eb-49f8-a282-3ed8e5b34ae0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455470385_354f497b_35eb_49f8_a282_3ed8e5b34ae0.png)
 
 ### 2.2 Serial Login
 
@@ -174,17 +174,17 @@ Please check the red DIP switch on your development board to confirm that the de
 
 Use USB A to Type-C to connect the DEBUG port of the development board to the PC, the DEBUG port is at the top right of the development board, P11:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455470856-1b1b3e3e-4e15-4cfa-a4bb-4a2a3e2b4004.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455470856_1b1b3e3e_4e15_4cfa_a4bb_4a2a3e2b4004.png)
 
 In the following, we take the putty terminal software as an example to introduce the serial port login method:
 
 **Step1**: First, it is necessary to confirm the serial port number of the computer to which it is connected. Check the serial port number from the "Device Manager", and use the serial port number recognized by the computer as the correct one (SERIAL-A is the default debug serial port for Linux, SERIAL-B is the debug serial port for M7).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455471201-6e60abd2-754e-43cb-81e3-cfb275cf9885.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455471201_6e60abd2_754e_43cb_81e3_cfb275cf9885.png)
 
 **Step 2:** Open and set up putty, then set the serial line according to the COM port of the computer used, baud rate 115200
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455471488-1c2d5c6d-f9f3-4848-8ffd-d4dc6733dc51.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455471488_1c2d5c6d_f9f3_4848_8ffd_d4dc6733dc51.png)
 
 After printing information, press Enter to enter the system.
 
@@ -303,31 +303,31 @@ Saving Environment to MMC... Writing to MMC(2)... OK
 
 ### 3.1 Main Interface Display
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455492054-3e0defd8-104f-4260-b9f7-c87a7ffa06dd.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455492054_3e0defd8_104f_4260_b9f7_c87a7ffa06dd.png)
 
 ### 3.2 Application
 
 Swipe up on the main screen to bring up the following screen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455492369-aa48c926-7dbc-4252-a9d4-3c2f3c90c49e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455492369_aa48c926_7dbc_4252_a9d4_3c2f3c90c49e.png)
 
 ### 3.3 Language Settings
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455492578-664398ef-ed51-40e5-83fa-3d8a10ea4ec7.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455492578_664398ef_ed51_40e5_83fa_3d8a10ea4ec7.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455492849-fc0b3ff7-3be8-44fa-ad57-f60f0b2c9c7d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455492849_fc0b3ff7_3be8_44fa_ad57_f60f0b2c9c7d.png)
 
-Click "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455493085-001922ce-e29a-4c86-9c75-71c9f69b155a.png)" to enter the language setting interface:
+Click "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455493085_001922ce_e29a_4c86_9c75_71c9f69b155a.png)" to enter the language setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455493358-bd955a11-255d-45d2-835e-3e978306c22d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455493358_bd955a11_255d_45d2_835e_3e978306c22d.png)
 
 Click "Language and input method" to enter the language setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455493586-a08110e1-70a2-4527-81be-a3d472516c65.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455493586_a08110e1_70a2_4527_81be_a3d472516c65.png)
 
 Click "Add Language" to add a new language and set the default language.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455493815-0111d07c-62d6-4574-8cc4-751a7cc32d31.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455493815_0111d07c_62d6_4574_8cc4_751a7cc32d31.png)
 
 **Note: When setting the default language, press and hold the four dash buttons on the right and drag up and down. If you use the mouse, press and hold the right mouse button to drag.**
 
@@ -335,39 +335,39 @@ Click "Add Language" to add a new language and set the default language.
 
 Save the pictures and video files you need to view to a USB flash drive and insert the USB flash drive into the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455494146-5aa49dfa-c9cc-4d55-9a99-3414e6c10923.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455494146_5aa49dfa_c9cc_4d55_9a99_3414e6c10923.png)
 
 Click to view the U disk files, and you can see all the files in the U disk.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455494512-1eb01a8e-5b33-47a0-9bc9-0d05ef275b4c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455494512_1eb01a8e_5b33_47a0_9bc9_0d05ef275b4c.png)
 
 Click on the image file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455494850-59b7e716-3d16-40f4-be70-5b3d8757359f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455494850_59b7e716_3d16_40f4_be70_5b3d8757359f.png)
 
 The touchscreen supports multi-touch, allowing you to use your fingers to perform zooming in and out.
 
 Return to the USB drive interface and click on the video file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455495165-e90ce695-dd81-4e93-9c20-e90005ccf78f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455495165_e90ce695_dd81_4e93_9c20_e90005ccf78f.png)
 
 The first time to play, you need to select the player, select always or only once, and then start playing the video. It is recommended to use the cactus player, which supports hardware decoding.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455495393-21f6cecb-db51-41f3-8e77-35a5a4718153.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455495393_21f6cecb_db51_41f3_8e77_35a5a4718153.png)
 
 Please click on "Allow" to authorize the media player to access the device's multimedia files.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455495711-a5495344-f9c7-4ab9-a1e7-b2bc3007b580.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455495711_a5495344_f9c7_4ab9_a1e7_b2bc3007b580.png)
 
 ### 3.5 Music Play
 
 Please save the audio files you need to play onto a USB flash drive, and then insert the USB flash drive into the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455496072-aaa1eeac-5cf7-482d-9581-449f35c781d5.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455496072_aaa1eeac_5cf7_482d_9581_449f35c781d5.png)
 
 Click the audio file to be played.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455496435-2684b5bd-2b95-4259-882f-cab7f72c92cc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455496435_2684b5bd_2b95_4259_882f_cab7f72c92cc.png)
 
 Click the music name to play automatically.
 
@@ -375,75 +375,75 @@ At this time, you can adjust the volume by pressing K2 on the carrier board of t
 
 ### 3.6 Recording (Supporting Mic Input)
 
-Select the desktop "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455496628-b576a129-2beb-4d4c-8e38-843016c5e9f7.png)" Recorder application to enter the recording, and ask for permission when you use it for the first time:
+Select the desktop "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455496628_b576a129_2beb_4d4c_8e38_843016c5e9f7.png)" Recorder application to enter the recording, and ask for permission when you use it for the first time:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455496942-3f9200a4-c429-481e-aaa2-0cb2814b1867.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455496942_3f9200a4_c429_481e_aaa2_0cb2814b1867.png)
 
 Click "Yes":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455497137-5cbbe9de-8684-4c2c-bb89-120cb3f4331c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455497137_5cbbe9de_8684_4c2c_bb89_120cb3f4331c.png)
 
 Click the circle button to start recording:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455497360-b06f7d22-a3b6-4dcb-a2d0-00a730310d5a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455497360_b06f7d22_a3b6_4dcb_a2d0_00a730310d5a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455497562-ccc948fb-a56a-4ea6-95eb-f84da89f2364.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455497562_ccc948fb_a56a_4ea6_95eb_f84da89f2364.png)
 
 Click on the square button to stop recording, click on the triangle button to play, and finally, click the Done button to save. Saved files are stored in the File Manager internal storage.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455498022-091c418b-3354-4c38-8019-f075bdc06682.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455498022_091c418b_3354_4c38_8019_f075bdc06682.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455498301-6a1f97ab-aee5-4260-867d-14f264a6f491.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455498301_6a1f97ab_aee5_4260_867d_14f264a6f491.png)
 
 ### 3.7 Adjusting the Volume
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455498501-0e4289b0-84a2-4d24-8682-40402fe06f06.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455498501_0e4289b0_84a2_4d24_8682_40402fe06f06.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455498678-97ebc029-9738-41d5-bb4e-95a4ac935342.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455498678_97ebc029_9738_41d5_bb4e_95a4ac935342.png)
 
 Click "Sound" in the settings interface to enter the volume settings interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455498883-4495e5f8-e067-48e3-b0eb-ed9ea750583a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455498883_4495e5f8_e067_48e3_b0eb_ed9ea750583a.png)
 
 In this interface, the volume of each part can be adjusted, and the media volume can be adjusted by using the physical key K2 on the carrier board.
 
 ### 3.8 Backlight Control
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455499179-9315e351-c9ea-4e63-bf92-ccfe24a9728a.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455499179_9315e351_c9ea_4e63_bf92_ccfe24a9728a.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455499492-ff1cdf5f-5d9e-4835-b2fd-006fa8aea025.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455499492_ff1cdf5f_5d9e_4835_b2fd_006fa8aea025.png)
 
 Click "Display" in the setting interface, enter the display setting interface, and select "Brightness" for the backlight setting, then the brightness adjustment slider will appear, adjust the brightness. Because the development board provided by Forlinx has no light perception, the automatic brightness adjustment here does not work.
 
 The OKMX8MPQ is factory default set to never hibernate. If you need to wake up from hibernation, click on the hibernate option and select the hibernation time.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455499661-e03af451-5669-4e8a-ae69-935919e5bd28.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455499661_e03af451_5669_4e8a_ae69_935919e5bd28.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455499852-fa65927c-88e5-402f-aae5-3bc840c9228b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455499852_fa65927c_88e5_402f_aae5_3bc840c9228b.png)
 
 Drag the slider to set the backlight, and click the sleep button to select the screen sleep time.
 
 ### 3.9 Time Settings（RTC）
 
-Click “![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455500033-ec95af78-e1f0-4c2e-9a83-e5f32ef2520e.png)”, on the application interface to enter the setting interface:
+Click “![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455500033_ec95af78_e1f0_4c2e_9a83_e5f32ef2520e.png)”, on the application interface to enter the setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455500220-1e1f3cd9-a5e2-4ec9-95ab-44abd4b4b026.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455500220_1e1f3cd9_a5e2_4ec9_95ab_44abd4b4b026.png)
 
 Select "System," where you can change the date and time, and even after power failure, the time can still be synchronized (ensure that the button battery is installed on the board).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455500505-23afc768-2fea-491a-9fab-0cdad9d0d098.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455500505_23afc768_2fea_491a_9fab_0cdad9d0d098.png)
 
 To disable “Automatic Date and Time,” please follow these steps:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455500716-c96edd82-227d-434a-a05d-c5982258c526.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455500716_c96edd82_227d_434a_a05d_c5982258c526.png)
 
 Click on “Set Date.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455500958-cc625d65-dc55-485a-b852-db1669a8ff30.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455500958_cc625d65_dc55_485a_b852_db1669a8ff30.png)
 
 Click on “Set Time.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455501158-89d82904-06f2-4204-b8e3-ea58c70c50d0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455501158_89d82904_06f2_4204_b8e3_ea58c70c50d0.png)
 
 After clicking "Set Date" and "Set Time", you can power off and power on the board, and then enter the time setting interface again, you will see that the time has been synchronized and updated.
 
@@ -451,17 +451,17 @@ After clicking "Set Date" and "Set Time", you can power off and power on the boa
 
 Prepare a router, a network cable, and a network interface that can be connected to an external network;
 
-1. After inserting the network cable, select "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455501351-8538feba-5973-4508-8239-9d5f86bcb047.png)", as shown in the following figure:
+1. After inserting the network cable, select "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455501351_8538feba_5973_4508_8239_9d5f86bcb047.png)", as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455501642-8b7afdc4-04be-4ce2-841f-7114017e039f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455501642_8b7afdc4_04be_4ce2_841f_7114017e039f.png)
 
 2. Click "Configure Ethernet":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455501940-d2c3db63-f74b-4039-97b3-c455ebd3b295.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455501940_d2c3db63_f74b_4039_97b3_c455ebd3b295.png)
 
 3. You can choose to obtain IP DHCP or static IP automatically. DHCP is recommended. If you set a static IP, make sure your network parameters are available;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455502159-c56141e0-1854-4bec-8112-87e1e6f59c5e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455502159_c56141e0_1854_4bec_8112_87e1e6f59c5e.png)
 
 4. After configuration, click confirm to save the settings;
 5. If you need to use a proxy for Internet access, you can set it up in the Advanced Settings option.
@@ -474,47 +474,47 @@ Prepare a router, a network cable, and a network interface that can be connected
 
 The WiFi test uses the wifi \& Bluetooth integrated module. Select the settings. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455502399-f399fda0-943c-42a7-be10-15335fe4e406.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455502399_f399fda0_943c_42a7_be10_15335fe4e406.png)
 
 #### 3.11.1 WiFi Test
 
 Click "Network and Internet" to turn on the WIFI switch.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455502581-7b2db8b8-8cc5-4294-b00a-f6625347dd81.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455502581_7b2db8b8_8cc5_4294_b00a_f6625347dd81.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455502823-7881c929-a04c-4ea6-8340-4f4313fe92a2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455502823_7881c929_a04c_4ea6_8340_4f4313fe92a2.png)
 
 Click the hotspot you want to connect to and enter the password.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455503030-ae61d066-5e08-4570-9310-1a6e14eabf33.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455503030_ae61d066_5e08_4570_9310_1a6e14eabf33.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455503279-f7f9eef2-3c8d-4162-9e21-dbdbaefda52f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455503279_f7f9eef2_3c8d_4162_9e21_dbdbaefda52f.png)
 
 After the connection is successful, the WebView Browser Tester application on the desktop can be opened for online testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455503605-a6cbce6d-1f5e-4373-ac47-359ccad0ade4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455503605_a6cbce6d_1f5e_4373_ac47_359ccad0ade4.png)
 
 #### 3.11.2 WiFi Hotspot Test
 
 Click on "Network and Internet"
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455503951-56f59f60-51c9-4324-aedc-3682089dd14e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455503951_56f59f60_51c9_4324_aedc_3682089dd14e.png)
 
 Click "Hotspot and Network Sharing":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455504120-702895b2-b0db-45b9-8347-89287d631dbf.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455504120_702895b2_b0db_45b9_8347_89287d631dbf.png)
 
 Open the hotspot after setting the hotspot name and password:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455504330-a14af9e2-632c-4448-bbeb-f5e8e2379487.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455504330_a14af9e2_632c_4448_bbeb_f5e8e2379487.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455504531-7435c91a-e4ab-4d5a-8ed3-82afdedb944f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455504531_7435c91a_e4ab_4d5a_8ed3_82afdedb944f.png)
 
 After the phone is connected to the hotspot, open the browser to test:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719455504774-19c90237-4f8d-4bb8-8f15-c1e678f8f847.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455504774_19c90237_4f8d_4bb8_8f15_c1e678f8f847.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719455505093-a2f526e3-4462-4423-8635-1e9c09dc65af.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455505093_a2f526e3_4462_4423_8635_1e9c09dc65af.jpeg)
 
 ### 3.12 Bluetooth Test
 
@@ -522,21 +522,21 @@ The WiFi \& Bluetooth integrated module is used for the Bluetooth function test.
 
 Select Settings:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455505391-7e0f404f-3549-42ed-8321-d9acbcfc8f3e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455505391_7e0f404f_3549_42ed_8321_d9acbcfc8f3e.png)
 
 Click Connected Device-> Pair with the new device, and turn on the Bluetooth switch of the mobile phone.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455505587-f405981c-c1ee-43e9-adc6-6ba2039af64c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455505587_f405981c_c1ee_43e9_adc6_6ba2039af64c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455505782-35b494b6-978b-4d6d-a38a-85b907a8c6d7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455505782_35b494b6_978b_4d6d_a38a_85b907a8c6d7.png)
 
 Click the mobile device in the available devices (whichever is actual) to start pairing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455505997-95f0298b-2eed-4701-b47a-832401f9ee47.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455505997_95f0298b_2eed_4701_b47a_832401f9ee47.png)
 
 Click the "Pairing" button on both the mobile phone and the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455506207-8492558a-942d-4ecc-bbf4-becd1733cebc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455506207_8492558a_942d_4ecc_bbf4_becd1733cebc.png)
 
 When finished, the successfully paired devices will be displayed in Connected Devices. After successful pairing, Bluetooth can be used for file transfer test.
 
@@ -561,15 +561,15 @@ The other buttons have simpler functions, so please test them yourself.
 
 This test is for TF cards and usb storage devices. Insert the TF card device into the development board. The system will automatically detect the insertion of the TF card. For example, click on "SanDisk SD Card" to browse for files.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455506429-9ac63452-f025-4527-9d5c-4bde41703f28.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455506429_9ac63452_f025_4527_9d5c_4bde41703f28.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455506748-b058ae4e-d935-4536-be0e-ccb49121b4ec.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455506748_b058ae4e_d935_4536_be0e_ccb49121b4ec.png)
 
 The usage of a USB flash drive is the same as an TF card, so it won't be repeated here.
 
 ### 3.15 USB Mouse Test
 
-Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455506969-0d082bb2-ada4-4a23-9d7d-acd97b9c0983.png)”, within the interface, and you can navigate and operate the Android system using the mouse.
+Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455506969_0d082bb2_ada4_4a23_9d7d_acd97b9c0983.png)”, within the interface, and you can navigate and operate the Android system using the mouse.
 
 ### 3.16 USB Type C Interface Test
 
@@ -599,129 +599,129 @@ In addition to the native serial port, we also extended four serial ports throug
 
 4）UARTD, device name ：/dev/ttyXRUSB3.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455507266-b3e7ba26-0e99-4ca2-8394-448d30b8e3cb.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455507266_b3e7ba26_0e99_4ca2_8394_448d30b8e3cb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455507460-c0880a87-454b-4a8e-9323-b2a70be6c2a7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455507460_c0880a87_454b_4a8e_9323_b2a70be6c2a7.png)
 
 + **485 Test**
 
-First, connect the USB to 485 device to the PC and the development board, enter the system, select "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455507641-0770a365-90bc-4dd9-87f0-09147077308c.png)", and the test interface appears.
+First, connect the USB to 485 device to the PC and the development board, enter the system, select "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455507641_0770a365_90bc_4dd9_87f0_09147077308c.png)", and the test interface appears.
 
 1. Click the "Setup" button to set the port, baud rate data bit and other parameters respectively before the next operation;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455507861-97542cf6-8e20-4836-aacb-9f4f3aa1abaa.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455507861_97542cf6_8e20_4836_aacb_9f4f3aa1abaa.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455508048-baffcccf-ae06-414c-b7a0-983bd0427c9c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455508048_baffcccf_ae06_414c_b7a0_983bd0427c9c.png)
 
 2. Click "Console" button;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455508236-136a2d80-2ae0-4f30-b57f-593c8b702b0d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455508236_136a2d80_2ae0_4f30_b57f_593c8b702b0d.png)
 
 Open the serial port assistant on the PC and select to set the corresponding parameters. Sends a string to the board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455508463-e98d0e1c-3eb1-4748-ae92-8e05517d0dfe.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455508463_e98d0e1c_3eb1_4748_ae92_8e05517d0dfe.png)
 
 Under normal circumstances, the development board can receive the string sent by the PC.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455508662-ea1c5d78-dad4-4b35-a87e-32775def43e7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455508662_ea1c5d78_dad4_4b35_a87e_32775def43e7.png)
 
 + **Serial Test**
 
 The loop test method can be used to test the serial port. According to the schematic diagram, the receiving and transmitting pins of USBA are short-circuited.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455508914-4eee09c8-60ad-4c22-a8d9-e093134aff06.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455508914_4eee09c8_60ad_4c22_a8d9_e093134aff06.png)
 
 Click the "SETUP" button to select the device node corresponding to USBA.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455509150-ff1355bb-15fd-469a-a6f9-53993177d861.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455509150_ff1355bb_15fd_469a_a6f9_53993177d861.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455509313-a58db127-81e5-4d47-8723-d11289c6718d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455509313_a58db127_81e5_4d47_8723_d11289c6718d.png)
 
 Click the "Loopback" option in the previous menu to perform the loopback test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455509548-f6e08059-297a-4439-b755-053b8f9ff196.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455509548_f6e08059_297a_4439_b755_053b8f9ff196.png)
 
 ### 3.18 SPI Loopback Test
 
 OKMX8MPQ exports SPI interface as spidev. Click the "forlinx \_ SPI \_ test" Application "on the desktop to perform the SPI loopback test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455509753-485fc383-32da-47ec-98e1-84fcbde135a6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455509753_485fc383_32da_47ec_98e1_84fcbde135a6.png)
 
 Click the Send button. The receive fails because there is no loopback on the hardware.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455509955-1d298c32-63b1-4851-8855-fa5d2c6297b2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455509955_1d298c32_63b1_4851_8855_fa5d2c6297b2.png)
 
 According to the schematic diagram, short the MOSI and MISO pins of the two SPI respectively.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455510182-a1e4b92b-db44-4581-804d-c362bbf40768.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455510182_a1e4b92b_db44_4581_804d_c362bbf40768.png)
 
 Click the Send button here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455510378-9eda8aa7-9fb0-4c79-860b-dc7ed2bd464d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455510378_9eda8aa7_9fb0_4c79_860b_dc7ed2bd464d.png)
 
 ### 3.19 Camera Test
 
 The OKMX8MPQ-C SoM supports the ov5645 MIPI camera and the daA3840-30mc MIPI camera, with the ov5645 MIPI used as the front-facing camera and the daA3840-30mc MIPI used as the rear-facing camera. The ov5645 MIPI supports a maximum photo resolution of 1920x1080 and 1080P video at 30 frames per second. The daA3840 - 30mc MIPI supports 1920x1080 photo shooting and 1080P video at 60 frames per second.
 
-Use the Android built-in program "Camera" to test, click the application "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455510603-5072adcb-0030-45fb-910d-0f56ffb7df9e.png)" to start the test program, select "Allow only when using the application" in the permission inquiry interface, select Allow when asking the camera to access the device file, and click the next page to enter the application.
+Use the Android built-in program "Camera" to test, click the application "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455510603_5072adcb_0030_45fb_910d_0f56ffb7df9e.png)" to start the test program, select "Allow only when using the application" in the permission inquiry interface, select Allow when asking the camera to access the device file, and click the next page to enter the application.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455510799-48fc5db5-c96c-4901-964a-6b780ddfd8cd.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455510799_48fc5db5_c96c_4901_964a_6b780ddfd8cd.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455511006-98c2a497-5487-4cba-8e4d-00eb1c8e0060.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455511006_98c2a497_5487_4cba_8e4d_00eb1c8e0060.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455511319-c97eb8cd-2790-415a-9f3c-f5c0693edf51.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455511319_c97eb8cd_2790_415a_9f3c_f5c0693edf51.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455511522-472330a7-bcdb-4d2e-8760-56d0f8ddcb23.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455511522_472330a7_bcdb_4d2e_8760_56d0f8ddcb23.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455511731-454cff1b-1cec-42a2-b638-3a374013c772.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455511731_454cff1b_1cec_42a2_b638_3a374013c772.png)
 
 #### 3.19.1 Taking Photo Test
 
 In the camera application, slide to the right, and the camera and video options appear. Click Settings to enter the setting interface. Select the resolution and picture quality to set the front and rear cameras according to the requirements. After setting, select the camera function to take photos.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455512025-df95ea1d-1ffa-4544-8a79-5375c5d87555.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455512025_df95ea1d_1ffa_4544_8a79_5375c5d87555.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455512335-5e0e9bff-e193-4512-921a-2570ea0b9ca4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455512335_5e0e9bff_e193_4512_921a_2570ea0b9ca4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455512632-94f541c2-c5e6-4c93-a342-af02f6842bda.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455512632_94f541c2_c5e6_4c93_a342_af02f6842bda.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455512838-29e33633-043b-4e40-b424-bbd31b10c716.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455512838_29e33633_043b_4e40_b424_bbd31b10c716.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455513147-7c263a21-7e76-4ebd-9090-ce5a85997791.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455513147_7c263a21_7e76_4ebd_9090_ce5a85997791.png)
 
 The camera interface displays the preview of the current camera. Click the photo button to take a photo.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455513588-4dcde255-4432-48da-8af9-598fe9f77b37.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455513588_4dcde255_4432_48da_8af9_598fe9f77b37.png)
 
-Click the icon "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455513905-0773dd49-d325-493a-b3f3-da464dc20d97.png)" to pop up the photo setting interface, and click the first icon to switch the front and rear cameras.
+Click the icon "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455513905_0773dd49_d325_493a_b3f3_da464dc20d97.png)" to pop up the photo setting interface, and click the first icon to switch the front and rear cameras.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455514185-435de789-9559-4158-825b-78ca01fdf53b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455514185_435de789_9559_4158_825b_78ca01fdf53b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455514681-311add41-a37c-4f48-bc02-1375b9cf3c46.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455514681_311add41_a37c_4f48_bc02_1375b9cf3c46.png)
 
 #### 3.19.2 Audio Test
 
 In the camera application, slide to the right, and the camera and video options appear. Click Settings to enter the setting interface. Select the resolution and picture quality to set the front and rear cameras according to the requirements. After setting, select the camera function to take photos.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455515044-e388a8aa-f24d-4e55-bf90-68ab9b1fd96b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455515044_e388a8aa_f24d_4e55_bf90_68ab9b1fd96b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455515255-7dc760e3-5ae8-4298-b8db-9de81bfff1b6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455515255_7dc760e3_5ae8_4298_b8db_9de81bfff1b6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455515452-4a15a2f2-97b0-43c7-aadc-9f91100e5827.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455515452_4a15a2f2_97b0_43c7_aadc_9f91100e5827.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455515704-0a811e78-6e25-43e6-bd47-76fb48c60251.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455515704_0a811e78_6e25_43e6_bd47_76fb48c60251.png)
 
 The video interface displays the preview of the current camera. Click the Record button to record, and click Stop to finish recording.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455516117-718c4fd8-ae16-4be3-aea3-64c3063c7587.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455516117_718c4fd8_ae16_4be3_aea3_64c3063c7587.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455516875-db91ecd2-00c5-4438-a26f-01265a883ed2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455516875_db91ecd2_00c5_4438_a26f_01265a883ed2.png)
 
-Click the icon "![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455517135-af3ed15b-0352-4475-a3f0-9bdcbaca600f.png)" to pop up the photo setting interface, and click the first icon to switch the front and rear cameras.
+Click the icon "![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455517135_af3ed15b_0352_4475_a3f0_9bdcbaca600f.png)" to pop up the photo setting interface, and click the first icon to switch the front and rear cameras.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455517435-9dd92c78-cfa4-4d3d-ae51-5ef479a60a32.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455517435_9dd92c78_cfa4_4d3d_ae51_5ef479a60a32.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455517925-f1975982-7cfd-40e1-9078-210d56192409.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455517925_f1975982_7cfd_40e1_9078_210d56192409.png)
 
 ### 3.20 4G Test
 
@@ -731,11 +731,11 @@ The OKMX8MPQ-C supports EC20 4G modules.
 
 After the system starts, the status bar shows that the 4G network is connected and the signal strength is displayed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455518386-ee8f9d4c-df60-4511-84ae-7f4bea784730.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455518386_ee8f9d4c_df60_4511_84ae_7f4bea784730.png)
 
 Open the browser and enter the URL to test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455518820-4f37a018-fa04-4ad8-a106-849a92884247.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455518820_4f37a018_fa04_4ad8_a106_849a92884247.png)
 
 ### 3.21 5G Test
 
@@ -745,11 +745,11 @@ The OKMX8MPQ-C supports the RM500U 5G module.
 
 After the system starts, the status bar shows that the 5G network is connected and the signal strength is displayed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455521937-e4f3c54e-1ea5-442f-9936-30a5c18e351b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455521937_e4f3c54e_1ea5_442f_9936_30a5c18e351b.png)
 
 Open the browser and enter the URL to test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455522234-857fed08-0f6b-4e26-8e94-768b05bc5e3b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455522234_857fed08_0f6b_4e26_8e94_768b05bc5e3b.png)
 
 ### 3.22 CAN Test
 
@@ -761,15 +761,15 @@ Start the test program "Can Test", select "CAN 2.0B TEST", click "SETTING" for c
 
 **Note: The CAN interface is reconfigured by detecting changes in the CAN mode. Currently, the CAN interface is configured by default to operate in CAN 2.0B mode with a baud rate of 125000. However, the CAN interface is not opened by default. When it is necessary to operate the CAN in CAN 2.0B mode at 125000 baud rate, the rate needs to be set to a different baud rate first and then changed to 125000. This issue will be fixed in the future.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455522517-d0768140-9d3f-44be-99c8-9dc3181e8620.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455522517_d0768140_9d3f_44be_99c8_9dc3181e8620.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455522760-447a46d4-ee29-4558-b424-e5bcf5fa778f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455522760_447a46d4_ee29_4558_b424_e5bcf5fa778f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455522981-8be1f417-728e-4cbc-bf30-5c400216a7d2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455522981_8be1f417_728e_4cbc_bf30_5c400216a7d2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455523230-0a4053e6-d1a5-4576-b38e-76890eee7840.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455523230_0a4053e6_d1a5_4576_b38e_76890eee7840.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455523438-7a1b49a9-a72f-4345-beb8-aa99fab22f39.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455523438_7a1b49a9_a72f_4345_beb8_aa99fab22f39.png)
 
 Set up the two development boards according to the above method and start the test.
 
@@ -779,33 +779,33 @@ Enter the CANID (32-bit) and CAN DATA (up to 64 bits) for transmission. Input is
 
 Development board 1 sends:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455523666-0f69d87a-8812-4ad1-82b9-18a3b0bd084b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455523666_0f69d87a_8812_4ad1_82b9_18a3b0bd084b.png)
 
 Development board 2 sends:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455523905-3040a7cc-5a20-479c-9f55-a580c9789f46.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455523905_3040a7cc_5a20_479c_9f55_a580c9789f46.png)
 
 + **Test 2: Development board 2 sends and development board 1 receives.**
 
 Development board 2 sends:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455524165-a24162e7-1580-485c-b351-f459c11f3f14.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455524165_a24162e7_1580_485c_b351_f459c11f3f14.png)
 
 Development board 1 sends:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455524397-981287fe-3e26-4d6e-b89f-c1ca3cd07db7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455524397_981287fe_3e26_4d6e_b89f_c1ca3cd07db7.png)
 
 #### 3.22.2 CAN FD Test
 
 Start the "Test program" Can Test ", select the" CANFD TEST "", click "SETTING" to set, select can0 or can1, set the baud rate and CANFD Data baud rate, and then return to the test interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455524592-8e419d95-a8fc-4598-bbff-13e411b836dc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455524592_8e419d95_a8fc_4598_bbff_13e411b836dc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455524765-2892debf-2a76-469c-9e53-321f30158ac9.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455524765_2892debf_2a76_469c_9e53_321f30158ac9.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455524997-6bb8af34-61b7-409a-9fad-8c0bad0fdf08.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455524997_6bb8af34_61b7_409a_9fad_8c0bad0fdf08.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455525247-0ce90a71-7080-4491-88e2-12cae7c89596.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455525247_0ce90a71_7080_4491_88e2_12cae7c89596.png)
 
 Set up the two development boards according to the above method and start the test.
 
@@ -813,15 +813,15 @@ Input the transmitted CANID (32 bits) and CAN DATA (512 bits at most). The input
 
 + **Board 1 sends, board 2 receives:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455525476-036c9d09-bdee-471e-a135-d1dcf2a72b69.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455525476_036c9d09_bdee_471e_a135_d1dcf2a72b69.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455525684-28163cc9-2829-47d3-a050-a924f99c0557.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455525684_28163cc9_2829_47d3_a050_a924f99c0557.png)
 
 + **Board 2 sends, board 1 receives:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455525908-b35c681a-f827-4067-a3e4-0ea0abe43f9f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455525908_b35c681a_f827_4067_a3e4_0ea0abe43f9f.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455526227-8c79162c-a498-4c7d-ad82-689279890e0c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455526227_8c79162c_a498_4c7d_ad82_689279890e0c.png)
 
 ## 4\. System Flashing
 
@@ -852,7 +852,7 @@ The following describes the use of UUU tools under Linux and Windows respectivel
 + **Do not use the uuu\_imx\_android\_flash.sh generated by the android environment compiler. Please use "User Profile Tool \\uuu\_imx\_android\_flash.sh";**
 + **Plug the OTG cable into the Linux host's USB port If you are using a virtual machine, move the following devices to the virtual machine.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455534234-4a4006cb-460b-48fe-b773-271a331cf9ca.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455534234_4a4006cb_460b_48fe_b773_271a331cf9ca.png)
 
 #### 4.1.1 Use of the uuu\_imx\_android\_flash.sh tool on Linux
 
@@ -864,9 +864,9 @@ Copy the uuu of the tool directory in the downloaded user profile to the/usr/bin
 
 1. Plug the type C cable into the USB port of the Linux host. If you are using a virtual machine, move the following devices to the virtual machine;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455534526-cd31cc63-2126-4c17-bca4-8ee0e4c3e2c5.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455534526_cd31cc63_2126_4c17_bca4_8ee0e4c3e2c5.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455534766-61c6bf63-bdd0-4f24-9099-8a8a38ebd2a1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455534766_61c6bf63_bdd0_4f24_9099_8a8a38ebd2a1.png)
 
 2. Copy the compiled image (*. img and u-boot* to the/home/forlinx/imx8mp/uuu directory;
 
@@ -887,11 +887,11 @@ forlinx@ubuntu: ~/imx8mp/uuu$ sudo ./uuu_imx_android_flash.sh -f imx8mp -e
 
 Once the flashing process begins, you will receive a prompt to connect the device to the host machine or virtual machine. Please actively select the option to connect it to the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455534985-e7541fe1-85b8-48d5-ad4f-447a57df2e74.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455534985_e7541fe1_85b8_48d5_ad4f_447a57df2e74.png)
 
 Wait for the flashing process to complete. A successful flashing operation will be indicated as shown in the following image:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455535331-88ba1401-fbdf-4aa2-9e59-a6cec0c63bfc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455535331_88ba1401_fbdf_4aa2_9e59_a6cec0c63bfc.png)
 
 #### 4.1.2 Use of uuu\_imx\_android\_flash.bat Tool on Windows.
 
@@ -1012,11 +1012,11 @@ D:\uuu> uuu_imx_android_flash.bat -f imx8mp -e
 
 Successful burning is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455535608-faff5f32-f770-4e92-a5bc-079665393307.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455535608_faff5f32_f770_4e92_a5bc_079665393307.png)
 
 When uuu burns, an error occurs as shown in the figure, you can re-plug the usb cable to ensure that the usb is not mounted to the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455535872-71947182-aa06-4c66-984a-cda37805f137.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455535872_71947182_aa06_4c66_984a_cda37805f137.png)
 
 ### 4.2 Flashing the Image with TF
 
@@ -1042,15 +1042,15 @@ Execute the business card printing script:
 forlinx@ubuntu:~/imx8mp/tools/sdfuse$ sudo ./mksdcard8mp.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455536087-b4de7d21-77d4-4b9e-9049-10374fd415c6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455536087_b4de7d21_77d4_4b9e_9049_10374fd415c6.png)
 
 Select the TF card device, taking "1" as an example.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455536421-921d3823-8ff5-4c70-bac0-161195ce7e07.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455536421_921d3823_8ff5_4c70_bac0_161195ce7e07.png)
 
 Enter "y" to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455536798-fc9cd7e0-430c-4c26-93a9-956f591ba3cf.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455536798_fc9cd7e0_430c_4c26_93a9_956f591ba3cf.png)
 
 Production is complete.
 
@@ -1105,6 +1105,6 @@ Turn off the power of the development board, insert the TF card into the TF card
 
 Turn on the power switch, and the development board will automatically start to enter the flashing program. Please pay attention to the flashing progress by debugging the serial port or observing the flashing change of the heartbeat lamp D1. When D1 flashes once per second, it indicates that the flashing is completed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455537022-0819d536-16de-4602-b5e5-b551afb1ae69.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455537022_0819d536_16de_4602_b5e5_b551afb1ae69.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719455537218-78acac2a-2b66-4fbc-a2dd-4ce13610c722.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Manual/1719455537218_78acac2a_2b66_4fbc_a2dd_4ce13610c722.png)

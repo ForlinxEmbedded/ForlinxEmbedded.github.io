@@ -72,52 +72,52 @@
 ## 1.1 VMware软件的下载与购买
 [登陆VMware官网<u><font style="color:#0000FF;">https://www.vmware.com/cn.h</font></u>](https://www.vmware.com/cn.html)<u><font style="color:#0000FF;">tml</font></u>下载Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者可以选择使用试用。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457886444-caabbc0a-32a0-432c-8e04-701808285926.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457886444_caabbc0a_32a0_432c_8e04_701808285926.png)
 
 等待下载完成后双击启动文件启动安装程序。
 
 ## 1.2 VMware的安装
 **步骤1：**双击启动程序进入安装向导，鼠标点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457886752-0714bdf8-527c-436f-883c-fb460f482bdc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457886752_0714bdf8_527c_436f_883c_fb460f482bdc.png)
 
 **步骤2：**勾选“我接受许可协议中的条款(A)”，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457886964-945fb9b5-8ff9-47d3-ad3f-3dce429c2bfd.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457886964_945fb9b5_8ff9_47d3_ad3f_3dce429c2bfd.png)
 
 **步骤3：**可以修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887168-4835d7f3-0100-40e4-81f7-ad8802214ace.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887168_4835d7f3_0100_40e4_81f7_ad8802214ace.png)
 
 **步骤4：**自行判断是否勾选两个复选框，点击“下一步”。
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887452-0408fcb9-235b-4983-8137-1f7391744838.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887452_0408fcb9_235b_4983_8137_1f7391744838.png)
 
 **步骤5：**勾选添加快捷方式，点击“下一步”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887685-67675977-0219-493a-a07e-6286710ce9d0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887685_67675977_0219_493a_a07e_6286710ce9d0.png)
 
 **步骤6：**点击“安装”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887915-2487dfac-515d-449c-9a79-275789e2fd0b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887915_2487dfac_515d_449c_9a79_275789e2fd0b.png)
 
 **步骤7：**等待安装完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888123-9c16fba2-02df-41bb-9363-bc491c4b8370.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888123_9c16fba2_02df_41bb_9363_bc491c4b8370.png)
 
 **步骤8：**安装完成后可以点击“完成”后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。进入许可证激活页面，输入购买的许可证密匙。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888338-18d58329-f21c-4622-af9a-ef0e906089d6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888338_18d58329_f21c_4622_af9a_ef0e906089d6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888571-a2fd7d63-354b-473c-b9e9-a4bed592194a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888571_a2fd7d63_354b_473c_b9e9_a4bed592194a.png)
 
 也可点击跳过。完成后打开VMware软件，点击上方状态卡中的帮助，在弹出的窗口中输入许可证密匙。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888814-4c74ee69-d262-4a70-ad9c-668f6cf0f740.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888814_4c74ee69_d262_4a70_ad9c_668f6cf0f740.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889090-24adf987-58ff-4d59-8939-0f2d5e383cfc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889090_24adf987_58ff_4d59_8939_0f2d5e383cfc.png)
 
 ## 1.3 VMware网络连接方式
 ### <font style="color:#000000;">1.3.1 NAT连接方式</font>
@@ -125,7 +125,7 @@
 
 	在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通信上网。这种是我们虚拟机上外网最常用的方式。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889424-246fd1fa-e18c-4d6b-993a-6542890d5094.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889424_246fd1fa_e18c_4d6b_993a_6542890d5094.png)
 
 ### <font style="color:#000000;">1.3.2 桥接的连接方式 </font>
 #### 1.3.2.1 VMware中的设置
@@ -133,7 +133,7 @@
 
 **步骤1：**单击VM菜单下面的Settings项等服务器时则需要设置，弹出虚拟机设置对话框，如下图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889737-2373d64f-c315-4731-9437-ef88246ca419.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889737_2373d64f_c315_4731_9437_ef88246ca419.png)
 
 **步骤2：**选择桥接模式，确定即可。
 
@@ -146,23 +146,23 @@
 
 **步骤1：**启动Ubuntu，root用户登陆系统，单击桌面最右上端的下拉按钮，弹出如下选项：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889978-9ef27645-1215-420a-a652-1b00e53f3ccb.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889978_9ef27645_1215_420a_a652_1b00e53f3ccb.png)
 
 **步骤2：**点击Network进入网络设置项：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890185-e31dc24c-e874-4c9d-812b-4df9142490ec.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890185_e31dc24c_e874_4c9d_812b_4df9142490ec.png)
 
 **步骤3：**点击IPv4，选择Manual手动配置，输入您的IP地址、子网掩码、网关、DNS，点击Apply保存，网络设置成功。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890400-93f1813a-39e3-4327-8917-2b8287af8fc2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890400_93f1813a_39e3_4327_8917_2b8287af8fc2.png)
 
 **步骤4：**重启网络服务,关闭并从新打开Wired：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890596-c728aad1-4a4b-45d3-ae5d-b5f388449c2a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890596_c728aad1_4a4b_45d3_ae5d_b5f388449c2a.png)
 
 **步骤5：**测试一下，宿主机IP为192.168.0.200，用虚拟机来ping宿主机：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890800-220e3e98-8114-4812-8947-15825dda1f04.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890800_220e3e98_8114_4812_8947_15825dda1f04.png)
 
 如图证明网络设置成功。设置完这些后，就可以搭建您需要的服务器了。
 
@@ -184,7 +184,7 @@
 
 首先，下载飞凌提供的开发环境，开发环境资料中有MD5校验文件，客户下载完开发环境资料，先对开发环境压缩包进行MD5校验（MD5校验可以在网络上选择MD5在线工具校验，也可以下载MD5校验工具进行校验，可根据实际情况选择），查看校验码和校验文件中的校验码是否一致，若一致则下载文件正常；若不一致，则文件可能有破损，需要重新下载。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457835929-698898eb-10af-4834-bb5e-31fa459e01f4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457835929_698898eb_10af_4834_bb5e_31fa459e01f4.png)
 
 选中压缩包，右键解压到OKMX8MP-Android11.0-VM 15_1_0-ubuntu18_04。
 
@@ -192,19 +192,19 @@
 
 打开安装好的虚拟机。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836154-bd008ab1-ca4f-4833-8542-23b87ee1ad88.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836154_bd008ab1_ca4f_4833_8542_23b87ee1ad88.png)
 
 选择刚解压生成的OKMX8MPQ-C-Linux5.4.70-VM15.1.0-ubuntu18.04虚拟机文件所在的目录，双击打开启动文件：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836351-03144a7a-c1a7-400b-bdfe-e718cfd45fb5.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836351_03144a7a_c1a7_400b_bdfe_e718cfd45fb5.png)
 
 加载完成后点击开启此虚拟机，即可运行。进入系统的界面。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836576-1d5d5c76-8ca5-4c01-a477-b667f5459abd.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836576_1d5d5c76_8ca5_4c01_a477_b667f5459abd.png)
 
 提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836821-89ebd518-5dec-438b-8dd3-b016e780d09e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836821_89ebd518_5dec_438b_8dd3_b016e780d09e.png)
 
 至此已成功进入飞凌提供的开发环境，客户可将用户资料文件夹中的源码放入开发环境中开始编译等操作。（见[**<u>04_Android编译篇</u>**](https://forlinx-book.yuque.com/okypkp/tgbpez/wte7d46s23x3t5bf)）
 
@@ -233,87 +233,87 @@ Linux桌面系统版本众多，目前本手册所有Linux实验和源码在Ubun
 
 下载“ubuntu-18.04.6-desktop-amd64.iso”这个版本（具体下载哪个版本可根据您自己的需求，此处只是以18.04.6版本为例）。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457853470-337f97f3-60f7-4485-8dc1-093fd10cc82b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457853470_337f97f3_60f7_4485_8dc1_093fd10cc82b.png)
 
 ### 3.1.1 <font style="color:#000000;">VMware</font>安装Ubuntu镜像
 如果用户想自己学习搭建虚拟机，就可以选择安装新的虚拟机。不过如果没有这方面的需求，还是建议下载我们搭建好的虚拟机，可以节约时间，也可以避免遇到麻烦的问题，因为虚拟机的搭建过程是比较繁琐和麻烦的。
 
 **步骤1：**打开VMware软件，点击创建新的虚拟机。进入以下界面，勾选“自定义（高级）”点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457853690-2264ae43-83c9-4976-9c22-d058c16694d2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457853690_2264ae43_83c9_4976_9c22_d058c16694d2.png)
 
 **步骤2：**选择对应VMware版本的兼容性，版本可在帮助->关于VMware Workstation中查看，确认无误点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457853957-bcea17d6-5dc3-41c1-ad66-849f693f3baa.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457853957_bcea17d6_5dc3_41c1_ad66_849f693f3baa.png)
 
 选择“安装程序光盘映像文件”，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854180-dba3fc6a-a781-45a2-81d7-241ea8f8de34.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854180_dba3fc6a_a781_45a2_81d7_241ea8f8de34.png)
 
 输入全名、用户名和密码，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854407-cd22bbf2-0548-4353-b4e2-7e292cab7680.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854407_cd22bbf2_0548_4353_b4e2_7e292cab7680.png)
 
 输入虚拟机名称及配置安装位置，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854611-b4b096de-b00d-438d-a6ee-290bf2e69db0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854611_b4b096de_b00d_438d_a6ee_290bf2e69db0.png)
 
 配置核心数，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854811-aa60ca81-063b-4244-9d96-59357977fc74.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854811_aa60ca81_063b_4244_9d96_59357977fc74.png)
 
 配置合适的内存空间，选择“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855021-b6f412bc-2dbb-447b-9220-06d7367005d7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855021_b6f412bc_2dbb_447b_9220_06d7367005d7.png)
 
 设置网络类型，使用默认NAT形式组网，点击“下一步”。后面的步骤保持默认值，直到指定磁盘容量步骤。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855229-6d89dfbf-789f-4706-bb85-bbb1109e5336.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855229_6d89dfbf_789f_4706_bb85_bbb1109e5336.png)
 
 使用推荐的I/O控制器，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855491-f17d6b19-9d04-42c7-afc7-ea00f44d3993.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855491_f17d6b19_9d04_42c7_afc7_ea00f44d3993.png)
 
 使用推荐的磁盘类型，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855778-e4182a80-42d6-411b-b806-c099c50a825d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855778_e4182a80_42d6_411b_b806_c099c50a825d.png)
 
 使用默认选项，创建新的虚拟磁盘，并点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856016-9edb5973-4bde-41e3-add7-0cea9cab0d04.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856016_9edb5973_4bde_41e3_add7_0cea9cab0d04.png)
 
 分配磁盘大小为300G并将虚拟磁盘分为多个文件，点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856257-a7a6f99d-4761-409c-b977-5c47a171d12a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856257_a7a6f99d_4761_409c_b977_5c47a171d12a.png)
 
 使用默认点击“下一步”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856505-03a6eeee-22ea-4fbb-bd77-9b816c1866f1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856505_03a6eeee_22ea_4fbb_bd77_9b816c1866f1.png)
 
 点击完成：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856683-cc7bf2d1-d559-4f3d-805e-92afbfcc054b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856683_cc7bf2d1_d559_4f3d_805e_92afbfcc054b.png)
 
 之后虚拟机则开始安装镜像，耐心等待。
 
 ### 3.1.2 VMware报错的解决方法
 **报错1**：无法连接 MKS: 套接字连接尝试次数太多；正在放弃。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856910-a60f35cf-0499-42b4-bbbc-3a376756e9c9.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856910_a60f35cf_0499_42b4_bbbc_3a376756e9c9.png)
 
 解决办法：我的电脑🡪右键🡪管理🡪服务和应用程序🡪服务，把关于VMware的服务都开启。服务启动成功后，重启虚拟机；或者先挂起虚拟机，等服务启动后，继续运行挂起的虚拟机。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857162-f125b850-99b0-4d55-a3d4-a11de899a9ba.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857162_f125b850_99b0_4d55_a3d4_a11de899a9ba.png)
 
 **报错2**：内部错误。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857428-ca7dbb92-d841-44d4-9e05-724fff4c690f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857428_ca7dbb92_d841_44d4_9e05_724fff4c690f.png)
 
 解决方法：参考报错1
 
 **报错3**：无法安装服务VMware Authorization Service（VMAuthdService）
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857698-93c40334-c407-4962-b4e8-e5de2b0c4e6a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857698_93c40334_c407_4962_b4e8_e5de2b0c4e6a.png)
 
 解决办法：
 
@@ -321,29 +321,29 @@ Linux桌面系统版本众多，目前本手册所有Linux实验和源码在Ubun
 
 	输入services.msc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857917-f2c3e9f7-88a1-4c4b-9528-b219233a5287.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857917_f2c3e9f7_88a1_4c4b_9528_b219233a5287.png)
 
 	
 
 然后找到该服务，把它启动服务，因为这个服务是用于启动和访问虚拟机的授权及身份验证服务。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457858161-3212bdcd-d46e-4101-9a2a-141f4f4fcff4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457858161_3212bdcd_d46e_4101_9a2a_141f4f4fcff4.png)
 
 WMI必须要先启动。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457858526-1731341b-5bfe-409b-b0f3-24ddcbca711c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457858526_1731341b_5bfe_409b_b0f3_24ddcbca711c.png)
 
 
 
 **报错4**：Falied to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457858843-d2834905-e67d-487e-abec-17951aabf1e5.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457858843_d2834905_e67d_487e_abec_17951aabf1e5.png)
 
 解决办法：删除C:\Windows\System32\drivers\hcmon.sys，然后重新安装。
 
 **报错5**：Intel VT-x 处于禁用状态
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859025-060be046-34d6-4d47-9f82-755fcd9f5de0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859025_060be046_34d6_4d47_9f82_755fcd9f5de0.png)
 
 解决办法：
 
@@ -359,7 +359,7 @@ WMI必须要先启动。
 
 **报错6：**该虚拟机似乎正在使用中...获得所有权（T）
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859248-50d33827-944c-4d6f-ac10-d54f0d3a4e81.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859248_50d33827_944c_4d6f_ac10_d54f0d3a4e81.png)
 
 解决办法：
 
@@ -369,7 +369,7 @@ WMI必须要先启动。
 
 	3、打开Windows任务管理器，将VMware的进程杀死
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859484-42173e81-ebd4-47d9-847c-411b82678371.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859484_42173e81_ebd4_47d9_847c_411b82678371.png)
 
 	4、重开虚拟机，即可
 
@@ -377,7 +377,7 @@ WMI必须要先启动。
 
 **报错7：**锁定文件失败
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859688-cdb3acb0-9bc6-4453-b4b0-bfa8bda34a66.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859688_cdb3acb0_9bc6_4453_b4b0_bfa8bda34a66.png)
 
 解决办法：
 
@@ -395,23 +395,23 @@ WMI必须要先启动。
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859960-8e61a4d9-48a3-49c5-b283-d13fba4a381a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859960_8e61a4d9_48a3_49c5_b283_d13fba4a381a.png)
 
 ## 3.2 Ubuntu 常用软件安装
 ### 3.2.1 VScode 工具安装软件工具
 点击桌面左侧类似一个包的图标，可以看到一些工具，我们也可以搜索我们想要的工具，例如我们下载一个VScode工具，这个工具在我们日常编写代码很方便。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457860186-3ac4c6a2-3b58-4cff-8f67-1936c677e217.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457860186_3ac4c6a2_3b58_4cff_8f67_1936c677e217.png)
 
 搜索到我们需要的工具，点击进入查看详情，点击install下载，等待下载完成自动安装，然后点击Launch运行即可。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457860483-efa6ff74-9c57-42bd-9646-1141459b7af3.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457860483_efa6ff74_9c57_42bd_9646_1141459b7af3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457860764-4f2ffcb1-afa5-44a9-ba1b-4e5fcaaf1c2c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457860764_4f2ffcb1_afa5_44a9_ba1b_4e5fcaaf1c2c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457861053-0f74f7a7-0f1e-4797-8531-ca18e03e1c53.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457861053_0f74f7a7_0f1e_4797_8531_ca18e03e1c53.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457861267-6ec9c245-4290-48a0-b221-d98827dd1546.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457861267_6ec9c245_4290_48a0_b221_d98827dd1546.png)
 
 ### 3.2.2 apt 命令指定国内源
 apt命令用来下载管理应用程序，apt 采用的C/S模式，也就是客户端/服务器模式，我们的 PC 机作为客户端，当需要下载软件的时候就向服务器请求，因此我们需要知道服务器的地址，也叫做安装源或者更新源。
@@ -445,7 +445,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457861524-0afe30b6-65dc-42cc-9b88-9ea8a15277ff.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457861524_0afe30b6_65dc_42cc_9b88_9ea8a15277ff.png)
 
 保存后退出。在终端执行如下命令：
 
@@ -862,91 +862,91 @@ Total 1 entries.
 
 点击java archive：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873155-b51e2b89-ec03-4059-b17f-21478dcdaa51.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873155_b51e2b89_ec03_4059_b17f_21478dcdaa51.png)
 
 点击java SE（8u211 and later）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873398-f2928a92-ef46-4d14-bad5-49778378d196.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873398_f2928a92_ef46_4d14_bad5_49778378d196.png)
 
 选择红框：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873621-ffd7982e-c5ee-4c98-980d-52176330bc46.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873621_ffd7982e_c5ee_4c98_980d_52176330bc46.png)
 
 根据提示，注册账号，正常下载。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873813-78d13108-0a8c-4b42-aff2-6bf95ca903cf.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873813_78d13108_0a8c_4b42_aff2_6bf95ca903cf.png)
 
 下载完成后，双击安装程序，根据向导的提示完成安装即可。
 
 检查安装是否成功，打开命令提示符工具，输入 java -version 。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874047-a592ece1-5a4d-4b41-bf9e-d54f9b1bae03.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874047_a592ece1_5a4d_4b41_bf9e_d54f9b1bae03.png)
 
 正确显示Java版本即表示安装成功。
 
 ### 5.1.2 安装Android studio
 Android Studio 是Google于2013 I/O 大会针对Android 开发推出的新的开发工具,国内可在[<u>http://www.android-studio.org/</u>](http://www.android-studio.org/)进行下载安装。
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719457874242-c86d18e4-dd58-4f0a-b9bc-2c1bcc97fe8f.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874242_c86d18e4_dd58_4f0a_b9bc_2c1bcc97fe8f.jpeg)
 
 下载完成后按照提示进行安装即可。安装完成后将出现下图所示：
 
 选择“Do not import settings”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874472-dfc3177f-8efa-45e2-ae59-9abc11020a08.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874472_dfc3177f_8efa_45e2_ae59_9abc11020a08.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874692-60122454-d263-470f-b58a-42ad1a6737ac.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874692_60122454_d263_470f_b58a_42ad1a6737ac.png)
 
 选择“Cancel”取消。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874927-51fc023e-3e11-4d58-84a8-b0c253515ce3.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874927_51fc023e_3e11_4d58_84a8_b0c253515ce3.png)
 
 点击“next”进行下一步：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875198-2703db49-18f0-4295-b7f6-59c85607afc7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875198_2703db49_18f0_4295_b7f6_59c85607afc7.png)
 
 这里选择“custom”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875429-1ea43ae6-aea2-4a50-8992-b7e0d063072b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875429_1ea43ae6_aea2_4a50_8992_b7e0d063072b.png)
 
 根据个人喜好选择UI主题：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875617-8fc1b91a-72d5-436f-ba65-8b98328807b1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875617_8fc1b91a_72d5_436f_ba65_8b98328807b1.png)
 
 根据实际情况选择Android SDK的安装路径：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875801-527d65cd-76f2-42a0-aa6c-7a0d55e04129.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875801_527d65cd_76f2_42a0_aa6c_7a0d55e04129.png)
 
 选择模拟器的内存大小：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876047-d8f9d21c-06ae-44b0-b442-00b473621874.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876047_d8f9d21c_06ae_44b0_b442_00b473621874.png)
 
 点击“Finish”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876287-4a4371cd-5292-4e52-9b8c-5fbf4eb21705.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876287_4a4371cd_5292_4e52_9b8c_5fbf4eb21705.png)
 
 等待安装完成，点击“Finish”。
 
 ### 5.1.3 创建Helloworld工程
 1. 选择“start a new android studio project”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876500-3a3a41c9-30fc-4c0a-a00b-653a476fa1bc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876500_3a3a41c9_30fc_4c0a_a00b_653a476fa1bc.png)
 
 2．修改项目名称，选择Empty Activity，点击Next，选择最低支持的SDK版本：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876686-e7fc1966-c21e-40cb-b691-51579163930d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876686_e7fc1966_c21e_40cb_b691_51579163930d.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876892-298b29df-918d-447a-8364-b9a82c88952d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876892_298b29df_918d_447a_8364_b9a82c88952d.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877084-df070458-67b7-4a30-afad-4529216634b2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877084_df070458_67b7_4a30_afad_4529216634b2.png)
 
 点击“Finish”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877406-8b0ab60b-ee5d-437d-b61f-0ea0553e43b3.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877406_8b0ab60b_ee5d_437d_b61f_0ea0553e43b3.png)
 
 初次使用时会下载Gradle等工具，请耐心等待。
 
@@ -954,27 +954,27 @@ Android Studio 是Google于2013 I/O 大会针对Android 开发推出的新的开
 
 点击“File”->“settings” 搜索SDK打开下图所示界面，勾选“Android 11.0”点击“OK”进行安装：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877608-170843e0-3e71-499f-82b0-0bff6469c5c4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877608_170843e0_3e71_499f_82b0_0bff6469c5c4.png)
 
 烧写完成，点击finish：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877798-5bbafee6-8a3d-413c-9ab1-97e1006aa31d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877798_5bbafee6_8a3d_413c_9ab1_97e1006aa31d.png)
 
 4．点击“build”->“Make Project”进行编译：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877986-3dfcb3b5-057d-46cd-8e40-77e77293739b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877986_3dfcb3b5_057d_46cd_8e40_77e77293739b.png)
 
 5．编译完成后，使用OTG线将开发板连接到电脑上，启动开发板。在Android studio的菜单栏中选择设备8mp：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878166-baf70fbf-1bf4-440f-b732-a77a24a69ef9.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878166_baf70fbf_1bf4_440f_b732_a77a24a69ef9.png)
 
 点击菜单栏中的绿色三角形图标，使应用在开发板上运行。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878364-0f7e53e4-b446-430b-a151-ebc55265c4c6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878364_0f7e53e4_b446_430b_a151_ebc55265c4c6.png)
 
 稍等一会程序即在开发板上运行起来：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878576-00f37993-feae-406e-a59d-0ed8f7d38397.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878576_00f37993_feae_406e_a59d_0ed8f7d38397.png)
 
 ### 5.1.4 编译现有App工程
 本节主要介绍如何导入并编译现有的App工程源码，以CanTest为例。
@@ -984,29 +984,29 @@ Android Studio 是Google于2013 I/O 大会针对Android 开发推出的新的开
 
 1. 首先解压飞凌提供的测试程序源码，解压到全英文的路径下，否则会编译报错，可以看到CanTest的内容如下：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878876-6e3cc9d2-61d9-4393-9b9d-db3d651fe219.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878876_6e3cc9d2_61d9_4393_9b9d_db3d651fe219.png)
 
 2. 在Android studio中选择“Open an existing Android Studio project”，选择上一步解压的CanTest，点击“OK”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879123-c97983cd-1947-404a-809c-4e03eef192e1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879123_c97983cd_1947_404a_809c_4e03eef192e1.png)
 
 
 
 3. 点击“build”->“Make Project”进行编译：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879357-23198a8a-c88f-448a-91f4-94a125f34b99.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879357_23198a8a_c88f_448a_91f4_94a125f34b99.png)
 
 4. 编译完成后，使用OTG线将开发板连接到电脑上，启动开发板。在Android studio的菜单栏中选择设备8mp：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879591-3b08bf71-6e96-4a21-8dac-7ce29a144a25.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879591_3b08bf71_6e96_4a21_8dac_7ce29a144a25.png)
 
 点击菜单栏中的绿色三角形图标，使应用在开发板上运行。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879805-0a237ed5-fae1-41c4-81f6-0bac080738da.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879805_0a237ed5_fae1_41c4_81f6_0bac080738da.png)
 
 稍等一会程序即在开发板上运行起来：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880137-e22da7f0-0914-49e5-a0cc-ba90ba8c32ce.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880137_e22da7f0_0914_49e5_a0cc_ba90ba8c32ce.png)
 
 测试成功，生成的APK路径：app\build\outputs\apk\debug\app-debug.apk
 
@@ -1017,19 +1017,19 @@ Android Studio 是Google于2013 I/O 大会针对Android 开发推出的新的开
 #### 5.1.4.2 常见问题
 + **问题一：编译时可能会出现以下报错：**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880427-326afa9a-8358-4ae3-b3bc-a0af3cfdbd2c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880427_326afa9a_8358_4ae3_b3bc_a0af3cfdbd2c.png)
 
 原因是：打开的源码默认添加了APK签名，提示的是签名文件找不到，此时需要按照5.2节先生成一个自己的签名文件，
 
 具体操作：File->Project Structure->Modules->app->Signing Configs->Store File，修改路径为自己的签名文件路径然后，点击“OK”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880638-0be5f29f-3f5b-4dde-8d9f-467d72c4eb59.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880638_0be5f29f_3f5b_4dde_8d9f_467d72c4eb59.png)
 
 + **问题二：****不同版本的Android studio如何打开工程**
 1. 按照“**<u>5.1.3章 创建HelloWorld工程</u>**”创建新工程。
 2. 把要打开的测试程序源码中的app目录解压到上述新建工程的路径，替换掉里面原本的app文件夹。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880856-ce1e58e1-47d7-4c59-938b-d60f7ff4ee0c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880856_ce1e58e1_47d7_4c59_938b_d60f7ff4ee0c.png)
 
 3. 重新打开替换app目录后的HelloWorld工程，加载完成后，更改APK密钥（操作过程详见上述**问题一**）并编译。
 4. 编译成功后用otg线连接开发板和电脑，在开发板上运行，此时即可成功运行。
@@ -1057,7 +1057,7 @@ keytool -importkeystore -deststorepass 123456 -destkeypass 123456 -destkeystore 
 
 + **注意：****如果您的windows系统中没有openssl命令，请前往**[**<u>http://slproweb.com/products/Win32OpenSSL.html</u>**](http://slproweb.com/products/Win32OpenSSL.html)** 下载安装，并设置环境变量（方法请自行百度）。**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881085-e974f778-212a-423e-ac6f-2d47b73cc32c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881085_e974f778_212a_423e_ac6f_2d47b73cc32c.png)
 
 ### 5.2.2设置andorid studio
 打开任意 android studio 工程，在AndroidManifest.xml中对应位置添加共享UID例如：
@@ -1070,23 +1070,23 @@ keytool -importkeystore -deststorepass 123456 -destkeypass 123456 -destkeystore 
 
 点击“File”->“project structure”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881346-2e10c222-9d66-4d9e-b2aa-4c19d33c3e53.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881346_2e10c222_9d66_4d9e_b2aa_4c19d33c3e53.png)
 
 新建一个release：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881621-c886bcdd-5e8d-4686-83b4-f0ed14e4a04e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881621_c886bcdd_5e8d_4686_83b4_f0ed14e4a04e.png)
 
 添加debug版本和release版本的签名配置，并点击“build Variants”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881889-f6724962-77d0-42ea-a3c8-4ceb42d13567.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881889_f6724962_77d0_42ea_a3c8_4ceb42d13567.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457882073-385ce032-9046-4195-98b2-8bba21a5e434.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457882073_385ce032_9046_4195_98b2_8bba21a5e434.png)
 
 如图设置对应版本的签名配置。
 
 点击android studio 的运行按钮，启动app。在串口中输入 ps -Z：
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719457882327-a107587e-c015-43e9-8222-4ef41f3f6ed0.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457882327_a107587e_c015_43e9_8222_4ef41f3f6ed0.jpeg)
 
 确认你的 app 是否已经成为system_app。
 
@@ -1163,7 +1163,7 @@ uuu_imx_android_flash 参数说明：
 + **不要使用 android 环境编译生成的 uuu_imx_android_flash.sh。请使用“用户资料\工具\uuu_imx_android_flash.sh”。**
 + **将 OTG 线插入 Linux 主机的 USB 接口中。如果您使用虚拟机，请将下列设备挂载到虚拟机中。**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457841677-c3cdc53e-4eec-4754-a4cb-b4bee95be8a1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457841677_c3cdc53e_4eec_4754_a4cb_b4bee95be8a1.png)
 
 ### 6.1.1 Linux下uuu_imx_android_flash.sh工具的使用
 📂**路径：OKMX8MPQ-C（Android）用户资料\工具**
@@ -1174,9 +1174,9 @@ uuu_imx_android_flash 参数说明：
 
 1. 将type C线插入Linux主机的USB接口中。如果您使用虚拟机，请将下列设备移动到虚拟机中。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457841893-9aa5405d-7bda-4244-9187-fd236471aba0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457841893_9aa5405d_7bda_4244_9187_fd236471aba0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842092-f9003885-34b9-493f-a520-cbe735f4c0dc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842092_f9003885_34b9_493f_a520_cbe735f4c0dc.png)
 
 2. 将编译生成的镜像(*.img 和 u-boot*)拷贝到/home/forlinx/imx8mp/uuu目录。
 
@@ -1199,11 +1199,11 @@ forlinx@ubuntu: ~/imx8mp/uuu$ sudo ./uuu_imx_android_flash.sh -f imx8mp -e
 
 开始烧写后，会提示连接设备到主机或虚拟机，选择连接到虚拟机。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842291-afad18aa-4ff5-45ae-bfe2-6af4996297f4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842291_afad18aa_4ff5_45ae_bfe2_6af4996297f4.png)
 
 等待烧写完成，烧写成功如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842611-95b4d994-de4a-4d12-abf4-24205623f671.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842611_95b4d994_de4a_4d12_abf4_24205623f671.png)
 
 ### 6.1.2 Windows下uuu_imx_android_flash.bat工具的使用
 ⚠️**注意：uuu 烧写时命令行窗口需要使用管理员权限运行。**
@@ -1323,11 +1323,11 @@ D:\uuu> uuu_imx_android_flash.bat -f imx8mp -e
 
 烧写成功如下图所示：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842929-a8c66f11-850d-4a83-8319-3a81cd0efcca.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842929_a8c66f11_850d_4a83_8319_3a81cd0efcca.png)
 
 uuu 烧写时执行时，出现如图所示报错，在保证usb没挂载到虚拟机情况下，可以重新插拔usb线。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843110-c941e88a-4d17-4acc-89aa-12a8627dbcb4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843110_c941e88a_4d17_4acc_89aa_12a8627dbcb4.png)
 
 
 
@@ -1354,15 +1354,15 @@ forlinx@ubuntu:~$ cd /home/forlinx/imx8mp/tools/sdfuse
 forlinx@ubuntu:~/imx8mp/tools/sdfuse$ sudo ./mksdcard8mp.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843294-fd26bc70-6b5c-442b-a09a-7fd44b7f4d6b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843294_fd26bc70_6b5c_442b_a09a_7fd44b7f4d6b.png)
 
 选择TF卡设备，这里以“1”为例。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843567-c9902772-9caa-4116-9f1e-e09991c1e08a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843567_c9902772_9caa_4116_9f1e_e09991c1e08a.png)
 
 输入“<font style="color:#0000FF;">y</font>”进行确认。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843744-e52783bc-db2c-45a8-b869-24795a9bf1d6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843744_e52783bc_db2c_45a8_b869_24795a9bf1d6.png)
 
 制作完成。
 
@@ -1418,9 +1418,9 @@ forlinx@ubuntu:~/imx8mp/tools/sdfuse$ simg2img super.img super_raw.img
 
 打开电源开关，开发板将自动启动进入烧写程序，烧写进度请留意调试串口或者观察心跳灯D1闪烁变化，当D1变为每秒闪烁一次表示烧写完成。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843920-7183676f-9525-46af-895f-ed2770c064bf.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843920_7183676f_9525_46af_895f_ed2770c064bf.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457844100-b754df76-9e3b-46f7-8eda-f2079db5248d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457844100_b754df76_9e3b_46f7_8eda_f2079db5248d.png)
 
 
 
