@@ -1,0 +1,1436 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>00_Android11.0_用户编译手册 &mdash; Forlinx Embedded i.MX 8M Plus Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/okmx8mpq-c/OK-MX8MPQ-C_Android11_User_Compilation_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Android11.0_User’s Manual_V1.2" href="OK-MX8MPQ-C_Android11_User_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_User_Hardware.html">User’s Hardware Manual_V3.3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Linux6_1_36_User_Manual.html">Linux 6.1.36_User’s Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK_MX8MPQ-C_Linux6_1_36_User_Compilation_Manual.html">Linux 6.1.36_User’s Compilation Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Manual.html">Android11.0_User’s Manual_V1.2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">00_Android11.0_用户编译手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">免责声明</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">概述</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">适用范围</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id4"><strong><font style="color:rgb(0,0,0);">更新记录</font></strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#vmware">01_安装VMware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id5">1.1 VMware软件的下载与购买</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">1.2 VMware的安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">1.3 VMware网络连接方式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nat"><font style="color:#000000;">1.3.1 NAT连接方式</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8"><font style="color:#000000;">1.3.2 桥接的连接方式 </font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">1.3.2.1 VMware中的设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu">1.3.2.2 Ubuntu中设置网络参数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id10">02_导入飞凌开发环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id11">03_手动搭建开发环境</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id12">3.1 Ubuntu系统虚拟机的安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vmwareubuntu">3.1.1 <font style="color:#000000;">VMware</font>安装Ubuntu镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">3.1.2 VMware报错的解决方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">3.2 Ubuntu 常用软件安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vscode">3.2.1 VScode 工具安装软件工具</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apt">3.2.2 apt 命令指定国内源</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#android">04_Android编译篇</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu-18-04-x64bit">4.1 安装 Ubuntu 18.04 x64bit 及编译环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">4.2 安装编译Android系统所需要的库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">4.3 Android系统的编译</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">4.3.1 编译前的准备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">4.3.2 编译Android文件系统</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id19">05_Android应用程序开发</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id20">5.1 建立Android应用开发环境</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jdk">5.1.1 下载并安装JDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#android-studio">5.1.2 安装Android studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#helloworld">5.1.3 创建Helloworld工程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app">5.1.4 编译现有App工程</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cantest">5.1.4.1 编译CanTest应用</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21">5.1.4.2 常见问题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#apk-platform">5.2 Apk platform签名</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">5.2.1制作签名文件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#andorid-studio">5.2.2设置andorid studio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#apk">5.3系统预装Apk的方法</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id23">06_烧写系统</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#uuu">6.1 使用UUU烧写镜像</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linuxuuu-imx-android-flash-sh">6.1.1 Linux下uuu_imx_android_flash.sh工具的使用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#windowsuuu-imx-android-flash-bat">6.1.2 Windows下uuu_imx_android_flash.bat工具的使用</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tf">6.2 使用TF卡烧写镜像</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">6.2.1 制作烧写TF卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">6.2.2 拷贝烧写镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">6.2.3 TF卡烧写测试</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded i.MX 8M Plus Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">00_Android11.0_用户编译手册</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="android11-0">
+<h1>00_Android11.0_用户编译手册<a class="headerlink" href="#android11-0" title="Link to this heading"></a></h1>
+<p><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">版本：V1.0<br />
+发布日期：2022.08.16<br />
+文件密级：□绝密 □秘密 □内部资料 ■公开</font></p>
+</section>
+<section id="id1">
+<h1><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">免责声明</font><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。<br />
+</font><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。</font></p>
+</section>
+<section id="id2">
+<h1><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">概述</font><a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<p><font style="color:rgb(0,0,0);">本手册是为了让使用飞凌嵌入式开发板的人员能够快速了解飞凌产品的编译过程，熟悉飞凌产品的编译方式。应用程序需要在</font><font style="color:rgb(0,0,0);">ubuntu</font><font style="color:rgb(0,0,0);">主机上先进行交叉编译，才能在开发板上运行，按照编译手册上的方法，通过实际操作，用户能够完成自己软件代码的编译。</font></p>
+<p><font style="color:rgb(0,0,0);">手册会从环境搭建进行说明，环境搭建过程可能会出现一些不可预见性的问题，建议初学者直接使用我们搭建好的开发环境，可以快速上手，缩短开发时间。</font></p>
+<p><font style="color:rgb(0,0,0);">Linux</font><font style="color:rgb(0,0,0);">系统通常情况下有三种安装方式：真机双系统、真机单系统、虚拟机。不同安装方式都有其优缺点，本文仅提供在虚拟机中搭建</font><font style="color:rgb(0,0,0);">ubuntu</font><font style="color:rgb(0,0,0);">的方法。计算机硬件要求：建议内存至少在</font><font style="color:rgb(0,0,0);">32GB</font><font style="color:rgb(0,0,0);">及以上，这样在给虚拟机分一部内存运行的同时（虚拟机建议</font><font style="color:rgb(0,0,0);">16GB</font><font style="color:rgb(0,0,0);">以上 ），还可以在</font><font style="color:rgb(0,0,0);">Windows</font><font style="color:rgb(0,0,0);">做其他操作，否则对</font><font style="color:rgb(0,0,0);">Windows</font><font style="color:rgb(0,0,0);">的操作会非常的卡。</font></p>
+<p><font style="color:rgb(0,0,0);">在内容上手册主要分为6个章节描述：</font></p>
+<ul class="simple">
+<li><p><font style="color:rgb(0,0,0);">l第一章主要是VMware和ubuntu的安装，选用的版本分别为VMware</font><font style="color:rgb(0,0,0);">®</font><font style="color:rgb(0,0,0);"> Workstation 15 Pro15.1.0和64位ubuntu18.04，若对虚拟机和ubuntu不太熟悉，建议使用和我们相同的版本。</font></p></li>
+<li><p><font style="color:rgb(0,0,0);">第二章主要是加载飞凌提供的ubuntu开发环境的方法，开发环境为64位ubuntu18.04。</font></p></li>
+<li><p><font style="color:rgb(0,0,0);">第三章为搭建新的ubuntu开发环境的方法。本节选用的64位ubuntu18.04为例，描述了ubuntu的创建过程，由于电脑配置不同，搭建过程可能会出现预料之外的问题，建议初学者直接使用我们搭建好的环境。</font></p></li>
+<li><p><font style="color:rgb(0,0,0);">第四章主要是开发板相关源码编译方法，包括安装交叉编译工具和内核源码编译。</font></p></li>
+<li><p><font style="color:rgb(0,0,0);">第五章主要是Android应用程序的开发，介绍了Android studio的安装和使用。</font></p></li>
+<li><p><font style="color:rgb(0,0,0);">第六章主要是将编译后的镜像烧写进开发板里的两种方式，这一章在软件手册中也有描述。</font></p></li>
+</ul>
+<p><font style="color:rgb(0,0,0);">本手册中一些符号及格式的相关说明：</font></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:rgb(0,0,0);">表现形式</font></strong></p></th>
+<th class="head"><p><strong><font style="color:rgb(0,0,0);">含义</font></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><font style="color:rgb(0,0,255);background-color:rgb(215,215,215);">灰底蓝色字体</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">指在命令行输入的命令，需要手动输入</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">灰底黑色字体</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">输入命令后的串口输出信息</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><strong><font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">灰底黑色加粗</font></strong></p></td>
+<td><p><font style="color:rgb(0,0,0);">串口输出信息中的关键信息</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(0,0,0);">//</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">对输入指令或输出信息的解释内容</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:rgb(0,0,0);">用户名</font><font style="color:rgb(0,0,0);">&#64;</font><font style="color:rgb(0,0,0);">主机名</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">root&#64;OK8MP</font><font style="color:rgb(0,0,0);">：开发板串口登录账户信息及网络登录账户信息</font><br/><font style="color:rgb(0,0,0);">forlinx&#64;ubuntu</font><font style="color:rgb(0,0,0);">：开发环境</font><font style="color:rgb(0,0,0);">ubuntu</font><font style="color:rgb(0,0,0);">账户信息</font><br/><font style="color:rgb(0,0,0);">C:\Users\Administrator&gt; windows</font><font style="color:rgb(0,0,0);">中</font><font style="color:rgb(0,0,0);">cmd</font><font style="color:rgb(0,0,0);">当前使用控制台的路径</font><br/><font style="color:rgb(0,0,0);">用户可通过该信息确定功能操作的环境</font></p></td>
+</tr>
+</tbody>
+</table>
+<p><font style="color:rgb(0,0,0);"></font></p>
+<p><font style="color:rgb(0,0,0);">例：插上</font><font style="color:rgb(0,0,0);">U</font><font style="color:rgb(0,0,0);">盘后，通过</font><font style="color:rgb(0,0,0);">ls</font><font style="color:rgb(0,0,0);">指令查看挂载目录</font></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><font style="color:rgb(255,0,0);background-color:rgb(217,217,217);">root&#64;OK8MP</font><font style="color:rgb(0,0,0);">:~# </font><font style="color:rgb(0,0,255);">ls /run/media </font><font style="color:rgb(0,0,255);">                     </font><font style="color:rgb(0,0,0);">//</font><font style="color:rgb(0,0,0);">列出</font><font style="color:rgb(0,0,0);">/run/media</font><font style="color:rgb(0,0,0);">目录下的文件</font><br/><font style="color:rgb(0,0,0);">mmcblk2p1 </font><font style="color:rgb(0,0,0);"> </font><strong><font style="color:rgb(0,0,0);">sda1</font></strong></p></th>
+</tr>
+</thead>
+</table>
+<p><font style="color:rgb(0,0,0);">l</font><font style="color:rgb(0,0,0);"> </font><font style="color:rgb(0,0,0);">root&#64;okmx8mm:</font><font style="color:rgb(0,0,0);">用户名为</font><font style="color:rgb(0,0,0);">root,</font><font style="color:rgb(0,0,0);">主机名为</font><font style="color:rgb(0,0,0);">okmx8mm,</font><font style="color:rgb(0,0,0);">表示在开发板上使用</font><font style="color:rgb(0,0,0);">root</font><font style="color:rgb(0,0,0);">用户进行操作。</font></p>
+<p><font style="color:rgb(0,0,0);">l</font><font style="color:rgb(0,0,0);"> </font><font style="color:rgb(0,0,0);">//</font><font style="color:rgb(0,0,0);">：对</font><font style="color:rgb(0,0,0);">ls /run/media</font><font style="color:rgb(0,0,0);">操作的解释内容，不需要输入。</font></p>
+<p><font style="color:rgb(0,0,255);background-color:rgb(127,127,127);">l</font><font style="color:rgb(0,0,255);background-color:rgb(127,127,127);"> </font><font style="color:rgb(0,0,255);background-color:rgb(127,127,127);">ls /run/media</font><font style="color:rgb(0,0,0);">:</font><font style="color:rgb(0,0,0);">灰底蓝色字体，表示需要手动输入的相关命令。</font></p>
+<p><font style="color:rgb(0,0,0);background-color:rgb(127,127,127);">mmcblk2p1  </font><strong><font style="color:rgb(0,0,0);background-color:rgb(127,127,127);">sda1 </font>****<font style="color:rgb(0,0,0);">：</font></strong><font style="color:rgb(0,0,0);">灰底黑色字体为输入命令后的输出信息，加粗字体为关键信息，在此处表示U盘的挂载目录。<br />
+</font></p>
+</section>
+<section id="id3">
+<h1><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">适用范围</font><a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<p><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">本软件手册中适用于飞凌公司的OKMX8MPQ-C 平台 Android11.0 操作系统。</font></p>
+</section>
+<section id="id4">
+<h1><strong><font style="color:rgb(0,0,0);">更新记录</font></strong><a class="headerlink" href="#id4" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong><font style="color:rgb(0,0,0);">日期</font></strong></p></th>
+<th class="head text-center"><p><strong><font style="color:rgb(0,0,0);">版本</font></strong></p></th>
+<th class="head text-center"><p><strong><font style="color:rgb(0,0,0);">更新内容</font></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>20220816</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>首次发布，OKMX8MPQ-C-Android11.0用户编译手册第一版。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vmware">
+<h1>01_安装VMware<a class="headerlink" href="#vmware" title="Link to this heading"></a></h1>
+<p>虚拟机（Virtual Machine）指通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。虚拟机可以模拟出其他种类的操作系统；便于我们在开发过程中管理和使用不同的开发环境和操作系统。</p>
+<p>流行的虚拟机软件有VMware(VMWare ACE）、Virtual Box和Virtual PC，它们都能在Windows系统上虚拟出多个计算机。我司采用的VMware，如果您对虚拟机软件不太熟悉，建议使用和我们相同的虚拟机软件。</p>
+<section id="id5">
+<h2>1.1 VMware软件的下载与购买<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://www.vmware.com/cn.html">登陆VMware官网<u><font style="color:#0000FF;">https://www.vmware.com/cn.h</font></u></a><u><font style="color:#0000FF;">tml</font></u>下载Workstation Pro并获取产品密匙。VMware是付费软件，需要自行购买，或者可以选择使用试用。</p>
+<p><img alt="Image" src="_images/1719457886444_caabbc0a_32a0_432c_8e04_701808285926.png" /></p>
+<p>等待下载完成后双击启动文件启动安装程序。</p>
+</section>
+<section id="id6">
+<h2>1.2 VMware的安装<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p>**步骤1：**双击启动程序进入安装向导，鼠标点击“下一步”。</p>
+<p><img alt="Image" src="_images/1719457886752_0714bdf8_527c_436f_883c_fb460f482bdc.png" /></p>
+<p>**步骤2：**勾选“我接受许可协议中的条款(A)”，点击“下一步”。</p>
+<p><img alt="Image" src="_images/1719457886964_945fb9b5_8ff9_47d3_ad3f_3dce429c2bfd.png" /></p>
+<p>**步骤3：**可以修改安装位置，装到自己电脑安装软件的分区，点击“下一步”。</p>
+<p><img alt="Image" src="_images/1719457887168_4835d7f3_0100_40e4_81f7_ad8802214ace.png" /></p>
+<p>**步骤4：**自行判断是否勾选两个复选框，点击“下一步”。</p>
+<p><img alt="Image" src="_images/1719457887452_0408fcb9_235b_4983_8137_1f7391744838.png" /></p>
+<p>**步骤5：**勾选添加快捷方式，点击“下一步”。</p>
+<p><img alt="Image" src="_images/1719457887685_67675977_0219_493a_a07e_6286710ce9d0.png" /></p>
+<p>**步骤6：**点击“安装”。</p>
+<p><img alt="Image" src="_images/1719457887915_2487dfac_515d_449c_9a79_275789e2fd0b.png" /></p>
+<p>**步骤7：**等待安装完成。</p>
+<p><img alt="Image" src="_images/1719457888123_9c16fba2_02df_41bb_9363_bc491c4b8370.png" /></p>
+<p>**步骤8：**安装完成后可以点击“完成”后可进行试用。若用户需要长期使用，需要到官方购买，填写许可证。进入许可证激活页面，输入购买的许可证密匙。</p>
+<p><img alt="Image" src="_images/1719457888338_18d58329_f21c_4622_af9a_ef0e906089d6.png" /></p>
+<p><img alt="Image" src="_images/1719457888571_a2fd7d63_354b_473c_b9e9_a4bed592194a.png" /></p>
+<p>也可点击跳过。完成后打开VMware软件，点击上方状态卡中的帮助，在弹出的窗口中输入许可证密匙。</p>
+<p><img alt="Image" src="_images/1719457888814_4c74ee69_d262_4a70_ad9c_668f6cf0f740.png" /></p>
+<p><img alt="Image" src="_images/1719457889090_24adf987_58ff_4d59_8939_0f2d5e383cfc.png" /></p>
+</section>
+<section id="id7">
+<h2>1.3 VMware网络连接方式<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<section id="nat">
+<h3><font style="color:#000000;">1.3.1 NAT连接方式</font><a class="headerlink" href="#nat" title="Link to this heading"></a></h3>
+<p>默认情况下，虚拟机安装完成后网络连接方式如下图所示为NAT，与宿主机共享一个IP地址，我们在进行依赖包的安装，代码的编译等工作时是不需要更改的。</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>在虚拟机中，VMware虚拟网卡设置为NAT模式时，Ubuntu环境中网络设置为动态IP即可。在这种模式下虚拟NAT设备和主机网卡相连通信上网。这种是我们虚拟机上外网最常用的方式。
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719457889424_246fd1fa_e18c_4d6b_993a_6542890d5094.png" /></p>
+</section>
+<section id="id8">
+<h3><font style="color:#000000;">1.3.2 桥接的连接方式 </font><a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<section id="id9">
+<h4>1.3.2.1 VMware中的设置<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
+<p>如果在使用TFTP，SFTP虚拟机的网络联系方式为桥接方式。</p>
+<p>**步骤1：**单击VM菜单下面的Settings项等服务器时则需要设置，弹出虚拟机设置对话框，如下图：</p>
+<p><img alt="Image" src="_images/1719457889737_2373d64f_c315_4731_9437_ef88246ca419.png" /></p>
+<p>**步骤2：**选择桥接模式，确定即可。</p>
+<p>**步骤3：**进入虚拟机系统后根据对应系统的“设置网络参数”一节进行虚拟机的IP等参数设置。</p>
+</section>
+<section id="ubuntu">
+<h4>1.3.2.2 Ubuntu中设置网络参数<a class="headerlink" href="#ubuntu" title="Link to this heading"></a></h4>
+<p>下面介绍选择桥接方式后在虚拟机中对网络的设置步骤。</p>
+<p>**步骤1：**启动Ubuntu，root用户登陆系统，单击桌面最右上端的下拉按钮，弹出如下选项：</p>
+<p><img alt="Image" src="_images/1719457889978_9ef27645_1215_420a_a652_1b00e53f3ccb.png" /></p>
+<p>**步骤2：**点击Network进入网络设置项：</p>
+<p><img alt="Image" src="_images/1719457890185_e31dc24c_e874_4c9d_812b_4df9142490ec.png" /></p>
+<p>**步骤3：**点击IPv4，选择Manual手动配置，输入您的IP地址、子网掩码、网关、DNS，点击Apply保存，网络设置成功。</p>
+<p><img alt="Image" src="_images/1719457890400_93f1813a_39e3_4327_8917_2b8287af8fc2.png" /></p>
+<p>**步骤4：**重启网络服务,关闭并从新打开Wired：</p>
+<p><img alt="Image" src="_images/1719457890596_c728aad1_4a4b_45d3_ae5d_b5f388449c2a.png" /></p>
+<p>**步骤5：**测试一下，宿主机IP为192.168.0.200，用虚拟机来ping宿主机：</p>
+<p><img alt="Image" src="_images/1719457890800_220e3e98_8114_4812_8947_15825dda1f04.png" /></p>
+<p>如图证明网络设置成功。设置完这些后，就可以搭建您需要的服务器了。</p>
+</section>
+</section>
+</section>
+</section>
+<section id="id10">
+<h1>02_导入飞凌开发环境<a class="headerlink" href="#id10" title="Link to this heading"></a></h1>
+<p>⚠️<strong>注意：</strong></p>
+<ul class="simple">
+<li><p><strong>建议初学者直接使用飞凌搭建好的虚拟机环境，环境中已经安装好交叉编译器和Qt环境。了解完该章节后可以直接跳转到</strong><a class="reference external" href="https://forlinx-book.yuque.com/okypkp/tgbpez/wte7d46s23x3t5bf"><strong><u>第四章编译章节</u></strong></a><strong>。</strong></p></li>
+<li><p><strong>若需要手动搭建开发环境，可直接跳过此章节，参考</strong><a class="reference external" href="https://forlinx-book.yuque.com/okypkp/tgbpez/ysh79b2exxdgkaix"><strong><u>第三章手动搭建开发环境</u></strong></a><strong>。</strong></p></li>
+<li><p><strong>提供开发环境的账户为：forlinx，密码为：forlinx 。</strong></p></li>
+</ul>
+<p>我司提供了一个安装好的Ubuntu开发环境，客户可以直接在Vmware中打开使用，无需额外安装软件。</p>
+<p>首先，下载飞凌提供的开发环境，开发环境资料中有MD5校验文件，客户下载完开发环境资料，先对开发环境压缩包进行MD5校验（MD5校验可以在网络上选择MD5在线工具校验，也可以下载MD5校验工具进行校验，可根据实际情况选择），查看校验码和校验文件中的校验码是否一致，若一致则下载文件正常；若不一致，则文件可能有破损，需要重新下载。</p>
+<p><img alt="Image" src="_images/1719457835929_698898eb_10af_4834_bb5e_31fa459e01f4.png" /></p>
+<p>选中压缩包，右键解压到OKMX8MP-Android11.0-VM 15_1_0-ubuntu18_04。</p>
+<p>解压完成后，OK8MP-Android11.0-VM 15_1_0-ubuntu18_04文件夹中的OK8MP Android11.0为虚拟机要打开的文件。</p>
+<p>打开安装好的虚拟机。</p>
+<p><img alt="Image" src="_images/1719457836154_bd008ab1_ca4f_4833_8542_23b87ee1ad88.png" /></p>
+<p>选择刚解压生成的OKMX8MPQ-C-Linux5.4.70-VM15.1.0-ubuntu18.04虚拟机文件所在的目录，双击打开启动文件：</p>
+<p><img alt="Image" src="_images/1719457836351_03144a7a_c1a7_400b_bdfe_e718cfd45fb5.png" /></p>
+<p>加载完成后点击开启此虚拟机，即可运行。进入系统的界面。</p>
+<p><img alt="Image" src="_images/1719457836576_1d5d5c76_8ca5_4c01_a477_b667f5459abd.png" /></p>
+<p>提供开发环境的账户为forlinx，密码为forlinx，填好密码后选择Sign in登录：</p>
+<p><img alt="Image" src="_images/1719457836821_89ebd518_5dec_438b_8dd3_b016e780d09e.png" /></p>
+<p>至此已成功进入飞凌提供的开发环境，客户可将用户资料文件夹中的源码放入开发环境中开始编译等操作。（见<a class="reference external" href="https://forlinx-book.yuque.com/okypkp/tgbpez/wte7d46s23x3t5bf"><strong><u>04_Android编译篇</u></strong></a>）</p>
+</section>
+<section id="id11">
+<h1>03_手动搭建开发环境<a class="headerlink" href="#id11" title="Link to this heading"></a></h1>
+<p>Ubuntu是一个以桌面应用为主的Linux操作系统发行版。Ubuntu拥有很多优点，相对于其他版本的Linux发行版，Ubuntu也有着自己的优势。首先，安装系统非常简单，只需要非常少的设置即可，完全可以和Windows桌面系统想媲美；其次，图形界面很人性化，模仿了在XP下常用的快捷键；还有，安装和升级程序时，可以通过网络，由系统自行安装依赖的文件包，从此不必再为Linux系统的依赖关系大伤脑筋。综合考虑大家的使用习惯和学习的需要，我们选用Ubuntu Linux。</p>
+<p>Linux桌面系统版本众多，目前本手册所有Linux实验和源码在Ubuntu 18.04版本系统下操作。使用其他版本Linux桌面系统，可能会出现gcc编译器和库文件相关的问题。碰到类似问题，可以在Linux系统发行商的官方论坛上咨询和查询。如果对Linux不熟悉的用户，强烈建议使用飞凌介绍的方法。</p>
+<p>为什么要安装这些东西，因为我们做开发工作需要一个Linux环境，我们在编译Kernel源码、Qt应用程序、uboot等在Windows下是不能完成的，我们要在Linux环境下进行这些工作。考虑到大多数用户习惯Windows环境，我们使用VMware软件搭载Ubuntu虚拟机的方式提供。当然您也可以在您的电脑或者服务器上装Linux真机进行开发。</p>
+<p>下面我们介绍虚拟机的搭建过程。</p>
+<p>⚠️<strong>注意：</strong></p>
+<ul class="simple">
+<li><p><strong>初学者不建议自己搭建系统，建议使用已有虚拟机环境，不需要搭建环境的此节可以跳过。</strong></p></li>
+<li><p><strong>ubuntu版本要求使用18.04，用其他版本可能会导致安卓使用阶段的部分库缺失现象，若出现此现象还需要研究库的移植。</strong></p></li>
+<li><p><strong>推荐电脑配置处理器：Core(TM) i7 内存：32G以上；虚拟机硬盘 300G 以上，内存 16G 以上。</strong></p></li>
+</ul>
+<section id="id12">
+<h2>3.1 Ubuntu系统虚拟机的安装<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<p>我们选择安装的Ubuntu 版本是18.04，本文中的介绍及开发均是在Ubuntu18.04上进行的。首先去Ubuntu官网获取Ubuntu18.04 64位镜像，下载地址为：<a class="reference external" href="https://releases.ubuntu.com/18.04/"><strong>https://releases.ubuntu.com/18.04/</strong></a></p>
+<p>下载“ubuntu-18.04.6-desktop-amd64.iso”这个版本（具体下载哪个版本可根据您自己的需求，此处只是以18.04.6版本为例）。</p>
+<p><img alt="Image" src="_images/1719457853470_337f97f3_60f7_4485_8dc1_093fd10cc82b.png" /></p>
+<section id="vmwareubuntu">
+<h3>3.1.1 <font style="color:#000000;">VMware</font>安装Ubuntu镜像<a class="headerlink" href="#vmwareubuntu" title="Link to this heading"></a></h3>
+<p>如果用户想自己学习搭建虚拟机，就可以选择安装新的虚拟机。不过如果没有这方面的需求，还是建议下载我们搭建好的虚拟机，可以节约时间，也可以避免遇到麻烦的问题，因为虚拟机的搭建过程是比较繁琐和麻烦的。</p>
+<p>**步骤1：**打开VMware软件，点击创建新的虚拟机。进入以下界面，勾选“自定义（高级）”点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457853690_2264ae43_83c9_4976_9c22_d058c16694d2.png" /></p>
+<p>**步骤2：**选择对应VMware版本的兼容性，版本可在帮助-&gt;关于VMware Workstation中查看，确认无误点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457853957_bcea17d6_5dc3_41c1_ad66_849f693f3baa.png" /></p>
+<p>选择“安装程序光盘映像文件”，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457854180_dba3fc6a_a781_45a2_81d7_241ea8f8de34.png" /></p>
+<p>输入全名、用户名和密码，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457854407_cd22bbf2_0548_4353_b4e2_7e292cab7680.png" /></p>
+<p>输入虚拟机名称及配置安装位置，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457854611_b4b096de_b00d_438d_a6ee_290bf2e69db0.png" /></p>
+<p>配置核心数，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457854811_aa60ca81_063b_4244_9d96_59357977fc74.png" /></p>
+<p>配置合适的内存空间，选择“下一步”：</p>
+<p><img alt="Image" src="_images/1719457855021_b6f412bc_2dbb_447b_9220_06d7367005d7.png" /></p>
+<p>设置网络类型，使用默认NAT形式组网，点击“下一步”。后面的步骤保持默认值，直到指定磁盘容量步骤。</p>
+<p><img alt="Image" src="_images/1719457855229_6d89dfbf_789f_4706_bb85_bbb1109e5336.png" /></p>
+<p>使用推荐的I/O控制器，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457855491_f17d6b19_9d04_42c7_afc7_ea00f44d3993.png" /></p>
+<p>使用推荐的磁盘类型，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457855778_e4182a80_42d6_411b_b806_c099c50a825d.png" /></p>
+<p>使用默认选项，创建新的虚拟磁盘，并点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457856016_9edb5973_4bde_41e3_add7_0cea9cab0d04.png" /></p>
+<p>分配磁盘大小为300G并将虚拟磁盘分为多个文件，点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457856257_a7a6f99d_4761_409c_b977_5c47a171d12a.png" /></p>
+<p>使用默认点击“下一步”：</p>
+<p><img alt="Image" src="_images/1719457856505_03a6eeee_22ea_4fbb_bd77_9b816c1866f1.png" /></p>
+<p>点击完成：</p>
+<p><img alt="Image" src="_images/1719457856683_cc7bf2d1_d559_4f3d_805e_92afbfcc054b.png" /></p>
+<p>之后虚拟机则开始安装镜像，耐心等待。</p>
+</section>
+<section id="id13">
+<h3>3.1.2 VMware报错的解决方法<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p><strong>报错1</strong>：无法连接 MKS: 套接字连接尝试次数太多；正在放弃。</p>
+<p><img alt="Image" src="_images/1719457856910_a60f35cf_0499_42b4_bbbc_3a376756e9c9.png" /></p>
+<p>解决办法：我的电脑🡪右键🡪管理🡪服务和应用程序🡪服务，把关于VMware的服务都开启。服务启动成功后，重启虚拟机；或者先挂起虚拟机，等服务启动后，继续运行挂起的虚拟机。</p>
+<p><img alt="Image" src="_images/1719457857162_f125b850_99b0_4d55_a3d4_a11de899a9ba.png" /></p>
+<p><strong>报错2</strong>：内部错误。</p>
+<p><img alt="Image" src="_images/1719457857428_ca7dbb92_d841_44d4_9e05_724fff4c690f.png" /></p>
+<p>解决方法：参考报错1</p>
+<p><strong>报错3</strong>：无法安装服务VMware Authorization Service（VMAuthdService）</p>
+<p><img alt="Image" src="_images/1719457857698_93c40334_c407_4962_b4e8_e5de2b0c4e6a.png" /></p>
+<p>解决办法：</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>win+R
+
+输入services.msc
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719457857917_f2c3e9f7_88a1_4c4b_9528_b219233a5287.png" /></p>
+<p>然后找到该服务，把它启动服务，因为这个服务是用于启动和访问虚拟机的授权及身份验证服务。</p>
+<p><img alt="Image" src="_images/1719457858161_3212bdcd_d46e_4101_9a2a_141f4f4fcff4.png" /></p>
+<p>WMI必须要先启动。</p>
+<p><img alt="Image" src="_images/1719457858526_1731341b_5bfe_409b_b0f3_24ddcbca711c.png" /></p>
+<p><strong>报错4</strong>：Falied to install the hcmon driver</p>
+<p><img alt="Image" src="_images/1719457858843_d2834905_e67d_487e_abec_17951aabf1e5.png" /></p>
+<p>解决办法：删除C:\Windows\System32\drivers\hcmon.sys，然后重新安装。</p>
+<p><strong>报错5</strong>：Intel VT-x 处于禁用状态</p>
+<p><img alt="Image" src="_images/1719457859025_060be046_34d6_4d47_9f82_755fcd9f5de0.png" /></p>
+<p>解决办法：</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1、开机的时候进入BIOS界面（F2或者F12）
+
+2、configuration--》intel virtual technology--》将disabled改成enabled--》保存设置，退出重启。
+
+3、重新打开VMware，开启虚拟机。
+</pre></div>
+</div>
+<p>如果还不行，请将防火墙关闭，重开虚拟机即可。（因机器而异）</p>
+<p>**报错6：**该虚拟机似乎正在使用中…获得所有权（T）</p>
+<p><img alt="Image" src="_images/1719457859248_50d33827_944c_4d6f_ac10_d54f0d3a4e81.png" /></p>
+<p>解决办法：</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1、关闭虚拟机
+
+2、进入虚拟机的存储目录，将*.lck文件删除，lck代表被锁文件
+
+3、打开Windows任务管理器，将VMware的进程杀死
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719457859484_42173e81_ebd4_47d9_847c_411b82678371.png" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>4、重开虚拟机，即可
+</pre></div>
+</div>
+<p>**报错7：**锁定文件失败</p>
+<p><img alt="Image" src="_images/1719457859688_cdb3acb0_9bc6_4453_b4b0_bfa8bda34a66.png" /></p>
+<p>解决办法：</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1、进入虚拟机的存储目录
+
+2、将.vmem.lck，.vmdk.lck，*.vmx.lck删除
+
+3、重开虚拟机，可以正常进入虚拟机
+</pre></div>
+</div>
+<p>**报错8：**The virtual machine could not be started because there was not enough memory available on the host.</p>
+<p>解决办法：</p>
+<p>虚拟机不够内存运行该镜像最大的要求，将虚拟机的内存增加，重新开启虚拟机</p>
+<p><img alt="Image" src="_images/1719457859960_8e61a4d9_48a3_49c5_b283_d13fba4a381a.png" /></p>
+</section>
+</section>
+<section id="id14">
+<h2>3.2 Ubuntu 常用软件安装<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<section id="vscode">
+<h3>3.2.1 VScode 工具安装软件工具<a class="headerlink" href="#vscode" title="Link to this heading"></a></h3>
+<p>点击桌面左侧类似一个包的图标，可以看到一些工具，我们也可以搜索我们想要的工具，例如我们下载一个VScode工具，这个工具在我们日常编写代码很方便。</p>
+<p><img alt="Image" src="_images/1719457860186_3ac4c6a2_3b58_4cff_8f67_1936c677e217.png" /></p>
+<p>搜索到我们需要的工具，点击进入查看详情，点击install下载，等待下载完成自动安装，然后点击Launch运行即可。</p>
+<p><img alt="Image" src="_images/1719457860483_efa6ff74_9c57_42bd_9646_1141459b7af3.png" /></p>
+<p><img alt="Image" src="_images/1719457860764_4f2ffcb1_afa5_44a9_ba1b_4e5fcaaf1c2c.png" /></p>
+<p><img alt="Image" src="_images/1719457861053_0f74f7a7_0f1e_4797_8531_ca18e03e1c53.png" /></p>
+<p><img alt="Image" src="_images/1719457861267_6ec9c245_4290_48a0_b221_d98827dd1546.png" /></p>
+</section>
+<section id="apt">
+<h3>3.2.2 apt 命令指定国内源<a class="headerlink" href="#apt" title="Link to this heading"></a></h3>
+<p>apt命令用来下载管理应用程序，apt 采用的C/S模式，也就是客户端/服务器模式，我们的 PC 机作为客户端，当需要下载软件的时候就向服务器请求，因此我们需要知道服务器的地址，也叫做安装源或者更新源。</p>
+<ul class="simple">
+<li><p><strong>注意：由于Ubuntu默认的源是国外的，可能有时候无法访问，国内各大高校和企业有其镜像源（清华源、阿里源等），建议切换国内镜像源。</strong></p></li>
+</ul>
+<p><strong>方法：</strong></p>
+<p>Ubuntu18.04系统中源的位置存放在/etc/apt/sources.list文件中，替换相应链接即可，该操作需要使用root用户。下面以阿里源为例：</p>
+<p>安全起见需要备份需要修改的文件，如下操作：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get install vim
+forlinx@ubuntu:~$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+forlinx@ubuntu:~$ sudo vi /etc/apt/sources.list
+</pre></div>
+</div>
+<p>在/etc/apt/sources.list文件前面添加如下条目：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719457861524_0afe30b6_65dc_42cc_9b88_9ea8a15277ff.png" /></p>
+<p>保存后退出。在终端执行如下命令：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update
+forlinx@ubuntu:~$ sudo apt-get upgrade
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="android">
+<h1>04_Android编译篇<a class="headerlink" href="#android" title="Link to this heading"></a></h1>
+<p><strong>版本说明：</strong></p>
+<ul class="simple">
+<li><p>开发环境操作系统：Ubuntu18.04 64位版</p></li>
+<li><p>交叉工具链：aarch64-poky-linux-gcc</p></li>
+<li><p>开发板使用BootLoader版本：u-boot 2020.04</p></li>
+<li><p>开发板内核版本：Android 11.0</p></li>
+</ul>
+<section id="ubuntu-18-04-x64bit">
+<h2>4.1 安装 Ubuntu 18.04 x64bit 及编译环境<a class="headerlink" href="#ubuntu-18-04-x64bit" title="Link to this heading"></a></h2>
+<p>在这里建议用户使用 Ubuntu 虚拟机进行编译，我们提供 Android 11.0 的代码在 Ubuntu18.04 64 位系统下编译测试通过。另外，本公司的网盘中提供了装有库文件及编译器的虚拟机，可作为参考。</p>
+<p>⚠️<strong>注意：推荐电脑配置处理器：Core(TM) i7 内存：32G ，虚拟机硬盘 300G 以上，内存 16G 以上。</strong></p>
+</section>
+<section id="id15">
+<h2>4.2 安装编译Android系统所需要的库<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<p>Android系统的编译需要安装一些工具包。本节操作前必须确保您的计算机或虚拟机能正常连接互联网，如您在安装中出现网络断开连接请再按照以下步骤进行安装。</p>
+<ol class="arabic simple">
+<li><p>安装编译Android必要的包</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo add-apt-repository ppa:openjdk-r/ppa
+[sudo] password for forlinx:                                      //输入密码forlinx，无回显
+ More info: https://launchpad.net/~openjdk-r/+archive/ubuntu/ppa
+Press [ENTER] to continue or ctrl-c to cancel adding it
+                                                     //按回车键继续进行，按ctrl+c退出
+gpg: keyring `/tmp/tmpgkgmg6e4/secring.gpg&#39; created
+gpg: keyring `/tmp/tmpgkgmg6e4/pubring.gpg&#39; created
+gpg: requesting key 86F44E2A from hkp server keyserver.ubuntu.com
+gpg: /tmp/tmpgkgmg6e4/trustdb.gpg: trustdb created
+gpg: key 86F44E2A: public key &quot;Launchpad OpenJDK builds (all archs)&quot; imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+OK
+forlinx@ubuntu:~$ sudo apt-get update
+Hit:1 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu xenial InRelease           
+Hit:2 http://us.archive.ubuntu.com/ubuntu xenial InRelease                     
+Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [99.8 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu xenial-updates InRelease [99.8 kB]   
+Get:5 http://us.archive.ubuntu.com/ubuntu xenial-backports InRelease [97.4 kB] 
+Get:6 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 DEP-11 Metadata [327 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 DEP-11 Metadata [281 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 DEP-11 Metadata [5,964 B]
+Get:9 http://us.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata [3,332 B]
+Get:10 http://us.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata [6,604 B]
+Get:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata [93.9 kB]
+Get:12 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata [130 kB]
+Get:13 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Fetched 1,147 kB in 13s (83.3 kB/s)                                            
+Reading package lists... Done
+forlinx@ubuntu:~$ sudo apt-get install openjdk-8-jdk
+uilding dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates-java fonts-dejavu-extra libatk-wrapper-java libatk-wrapper-java-jni libgif7 libice-dev libpthread-stubs0-dev libsm-dev libx11-dev libx11-doc libxau-dev
+  libxcb1-dev libxdmcp-dev libxt-dev openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless x11proto-core-dev x11proto-dev xorg-sgml-doctools xtrans-dev
+Suggested packages:
+  libice-doc libsm-doc libxcb-doc libxt-doc openjdk-8-demo openjdk-8-source visualvm fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei fonts-wqy-zenhei
+The following NEW packages will be installed:
+  ca-certificates-java fonts-dejavu-extra libatk-wrapper-java libatk-wrapper-java-jni libgif7 libice-dev libpthread-stubs0-dev libsm-dev libx11-dev libx11-doc libxau-dev
+  libxcb1-dev libxdmcp-dev libxt-dev openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre openjdk-8-jre-headless x11proto-core-dev x11proto-dev xorg-sgml-doctools xtrans-dev
+0 upgraded, 22 newly installed, 0 to remove and 6 not upgraded.
+Need to get 46.4 MB of archives.
+After this operation, 173 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[…]
+forlinx@ubuntu:~$ sudo apt-get install uuid uuid-dev zlib1g-dev liblz-dev liblzo2-2 liblzo2-dev lzop git-core curl u-boot-tools mtd-utils android-tools-fsutils device-tree-compiler gdisk m4 libz-dev bison flex make libssl-dev gcc-multilib
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+[…]
+The following packages will be upgraded:
+  libuuid1 uuid-dev
+2 upgraded, 0 newly installed, 0 to remove and 87 not upgraded.
+Need to get 41.0 kB of archives.
+After this operation, 2,048 B of additional disk space will be used.
+Do you want to continue? [Y/n]   Y
+[…]
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>切换JDK版本</p></li>
+</ol>
+<p>如果您之前安装过其他版本的JDK，需要进行版本切换。</p>
+<p>查看安装版本：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ update-java-alternatives -l
+java-1.8.0-openjdk-amd64       1081       /usr/lib/jvm/java-1.8.0-openjdk-amd64
+forlinx@ubuntu:~$ sudo update-alternatives --config java
+There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+Nothing to configure.  
+</pre></div>
+</div>
+<p>如上述打印信息，只有一个版本，直接使用即可，若有多个版本就输入第二条命令后选择java8对应的选择项，按回车进行确认。</p>
+</section>
+<section id="id16">
+<h2>4.3 Android系统的编译<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<section id="id17">
+<h3>4.3.1 编译前的准备<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>请确认当前系统 swap 分区大小，若 swap 分区不足会造成编译 Android 源码失败，推荐的大小为 4G。</p></li>
+</ol>
+<p>查看 swap 分区情况：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cat /proc/swaps
+Filename			Type		Size	        Used	  Priority
+/dev/sda5           partition	    8387580	    0	      -2
+</pre></div>
+</div>
+<p>在此提供一种通过创建 swap 文件的方式来增加 swap 分区大小的操作方法，可作为参考：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo fallocate -l 4G /swapfile
+[sudo] password for forlinx:                                     //输入密码forlinx，无回显
+</pre></div>
+</div>
+<p>若执行上述操作时报错：fallocate:fallocate failed:Text file busy</p>
+<p>则执行下述操作：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo swapoff -a
+forlinx@ubuntu:~$ sudo fallocate -l 4G /swapfile
+</pre></div>
+</div>
+<p>执行以下命令为 swapfile 文件设置正确的权限：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo chmod 600 /swapfile
+</pre></div>
+</div>
+<p>使用 mkswap 实用程序在文件上设置 Linux SWAP 区域：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo mkswap /swapfile
+mkswap: /swapfile: warning: wiping old swap signature.
+Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
+no label, UUID=a40195d9-42c0-441a-8d8e-900115b9ad3b
+</pre></div>
+</div>
+<p>激活 swap 文件：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo swapon /swapfile
+</pre></div>
+</div>
+<p>要让创建好的 swap 分区永久生效，可以将 swapfile 路径内容写入到 /etc/[fstab](https://so.csdn.net/so/search?q=fstab&amp;spm=1001.2101.3001.7020” \t “https://blog.csdn.net/mucheni/article/details/_blank) 文件当中。</p>
+<p>在/etc/fstab文件最后添加如下内容：<font style="color:#0101F5;">/swapfile none swap sw 0 0</font></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo vi /etc/fstab
+[…]
+/dev/fd0        /media/floppy0  auto    rw,user,noauto,exec,utf8 0       0
+/swapfile 	none	swap	sw	0	0
+</pre></div>
+</div>
+<p>修改完成后再查看一下现在的分区：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cat /proc/swaps
+Filename			Type		Size     	Used	   Priority
+/dev/sda5           partition     8387580	    0	       -2
+/swapfile            file		    4194300	    0	       -3
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>将源码放入开发环境中并解压。</p></li>
+</ol>
+<p>📂路径：OKMX8MP-C（Android）用户资料\Android\源码\OKMX8MP-android-source.tar.bz2_xa*</p>
+<p>将源码压缩包拷贝到ubuntu文件夹/home/forlinx/imx8mp/下，查看源码压缩包的md5码：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/imx8mp
+forlinx@ubuntu:~/imx8mp$ md5sum OK8MP-android-source.tar.bz2_a*
+c59eea85c601c3e4a0c6c6e131a55d0c  OK8MP-android-source.tar.bz2_aa
+4c00d1d2d1c0d0e1e3dc26659c294f17  OK8MP-android-source.tar.bz2_ab
+6b7969ae7372fbcc231ab8ecefd1e262  OK8MP-android-source.tar.bz2_ac
+07f6a8a6a549d907e5285be41d300813  OK8MP-android-source.tar.bz2_ad
+5c30fb7d2dc51bf1ddb434887eb5306a  OK8MP-android-source.tar.bz2_ae
+3339dadb910de24d261825e49ceaa17c  OK8MP-android-source.tar.bz2_af
+012af931f240da8a716d9ad252b09891  OK8MP-android-source.tar.bz2_ag
+8bc7a12e14b62ee25b533c03bfb53876  OK8MP-android-source.tar.bz2_ah
+3e34eddd412167c4ef70e0eebf3c009a  OK8MP-android-source.tar.bz2_ai
+9eec886b83c8d830bfbd08f3e40a1dbd  OK8MP-android-source.tar.bz2_aj
+3eec33dc40d1ea8f57a4f201f4a15b2e  OK8MP-android-source.tar.bz2_ak
+773969dbf7ef53c5a4208eb29a3db092  OK8MP-android-source.tar.bz2_al
+</pre></div>
+</div>
+<p>⚠️<strong>注意：此处使用的是“20220211”版本资料中的源码，不同版本资料中源码的md5码可能不同，具体以“用户资料/Android/源码/md5sum.txt”为准。</strong></p>
+<p>将查出来的md5码与“用户资料/Android/源码”目录下的md5校验码对比，确认相同后，将它们合并成一个压缩包，并查看md5码：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp$ cat OK8MP-android-source.tar.bz2_a* &gt; OK8MP-android-source.tar.bz2                                          //合并所需时间较长，请耐心等待
+forlinx@ubuntu:~/imx8mp$ md5sum OK8MP-android-source.tar.bz2
+94907c99c44e7a17fefd1a472f0519e0  OK8MP-android-source.tar.bz2
+</pre></div>
+</div>
+<p>按照上述步骤确认md5码没有问题后，解压Android源码，解压命令如下：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp$ tar xvf OK8MP-android-source.tar.bz2
+OK8MP-android-source/
+OK8MP-android-source/development/
+OK8MP-android-source/development/testrunner/
+OK8MP-android-source/development/testrunner/coverage_targets.xml
+[…]
+OK8MP-android-source/pdk/util/
+OK8MP-android-source/pdk/util/diff_products.py
+forlinx@ubuntu:~/imx8mp$ 
+</pre></div>
+</div>
+</section>
+<section id="id18">
+<h3>4.3.2 编译Android文件系统<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>配置编译环境</p></li>
+</ol>
+<p>编译Android9.0进入该目录，执行以下命令：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp$ cd /home/forlinx/imx8mp/OK8MP-android-source
+forlinx@ubuntu:~/imx8mp/OK8MP-android-source$ source env.sh
+forlinx@ubuntu:~/imx8mp/OK8MP-android-source$ source build/envsetup.sh
+forlinx@ubuntu:~/imx8mp/OK8MP-android-source$ lunch evk_8mp-userdebug
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=evk_8mp
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.3.0-28-generic-x86_64-Ubuntu-18.04.4-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ1A.201205.003
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/generic/goldfish device/generic/goldfish-opengl external/mesa3d vendor/nxp-opensource/imx/power hardware/google/pixel vendor/partner_gms hardware/google/camera vendor/nxp-opensource/imx/camera
+============================================
+forlinx@ubuntu:~/imx8mp/8MP-android-source$ 
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>全部编译：</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mpOK8MPandroid-source$ ./imx-make.sh
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=evk_8mp
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.3.0-28-generic-x86_64-Ubuntu-18.04.4-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ1A.201205.003
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/generic/goldfish device/generic/goldfish-opengl external/mesa3d vendor/nxp-opensource/imx/power hardware/google/pixel vendor/partner_gms hardware/google/camera vendor/nxp-opensource/imx/camera
+============================================ 
+[…]
+lpmake I 08-15 22:07:23   518   518 builder.cpp:1031] [liblp]Partition product_a will resize from 0 bytes to 227995648 bytes
+2022-08-15 22:15:37 - build_super_image.py - INFO    : Done writing image out/target/product/evk_8mp/super.img
+
+#### build completed successfully (06:40:17 (hh:mm:ss)) ####
+</pre></div>
+</div>
+<p>由于android系统过于庞大，编译时间略长，请耐心等待编译完成。</p>
+<p>编译完成后，在当前路径下执行<font style="color:#0000FF;">./vendor/pack_images.sh</font> 命令，可在OK8MP-android-source/out/target/product/evk_8mp/下生成一个 uuu 文件夹，里面就是用于 uuu 烧写的镜像文件。</p>
+<p>编译完成的镜像位于：OK8MP-android-source/out/target/product/evk_8mp/uuu 目录。</p>
+<p>对uuu中的文件进行说明：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>文件</strong></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>boot.img</p></td>
+<td><p>boot.img包含两部分，分别为kernel 和ramdisk。是Android系统启动所必须加载的文件</p></td>
+</tr>
+<tr class="row-odd"><td><p>dtbo-imx8mp.img</p></td>
+<td><p>设备树文件。</p></td>
+</tr>
+<tr class="row-even"><td><p>partition-table.img</p></td>
+<td><p>Android磁盘分区镜像。</p></td>
+</tr>
+<tr class="row-odd"><td><p>vbmeta-imx8mp.img</p></td>
+<td><p>验证启动镜像，⽤于安全验证，是Android一个重要的安全功能。</p></td>
+</tr>
+<tr class="row-even"><td><p>vendor_boot.img</p></td>
+<td><p>包含所有不可分发给Android开源项目的二进制文件。</p></td>
+</tr>
+<tr class="row-odd"><td><p>u-boot-imx8mpevk-uuu.imx</p></td>
+<td><p>uboot镜像，因8mp源码中uboot源码不开源，所以编译过程中不会生成，烧写时需要将“用户资料\Android\镜像\uuu”下的这两个文件放到uuu文件夹中</p></td>
+</tr>
+<tr class="row-even"><td><p>u-boot-imx8mp.imx</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>logo.img</p></td>
+<td><p>开机logo的镜像。</p></td>
+</tr>
+<tr class="row-even"><td><p>super.img</p></td>
+<td><p>负责配置动态分区。</p></td>
+</tr>
+<tr class="row-odd"><td><p>uuu_imx_android_flash.sh</p></td>
+<td><p>烧写工具。</p></td>
+</tr>
+<tr class="row-even"><td><p>uuu_imx_android_flash.bat</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>⚠️<strong>注意：</strong></p>
+<ul class="simple">
+<li><p><strong>必须要全部编译一遍后才能使用单独编译，全部编译后只要不clean，之后的编译耗时会短很多。</strong></p></li>
+<li><p><strong>如果第一遍全编译没有完成就提前终止或出现报错了，那么重新编译会报错，此时就需要先clean后再编译，完整命令为：<strong><strong><font style="color:#0000FF;">make clean</font></strong></strong>。</strong></p></li>
+<li><p>单独编译boot.img</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/OK8MP-android-source$ ./imx-make.sh bootimage
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=evk_8mp
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-113-generic-x86_64-Ubuntu-18.04.4-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ1A.201205.003
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/generic/goldfish device/generic/goldfish-opengl external/mesa3d vendor/nxp-opensource/imx/power hardware/google/pixel vendor/partner_gms hardware/google/camera vendor/nxp-opensource/imx/camera
+============================================ 
+ […]
+[100% 731/731] Target boot image from recovery: out/target/product/evk_8mp/boot.img  
+//编译生成镜像的路径
+
+#### build completed successfully (27 seconds) ####
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>单独编译设备树</p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mm/OK8MM-android-source$ make dtboimage -j8
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=evk_8mp
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a9
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-113-generic-x86_64-Ubuntu-18.04.4-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ1A.201205.003
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/generic/goldfish device/generic/goldfish-opengl external/mesa3d vendor/nxp-opensource/imx/power hardware/google/pixel vendor/partner_gms hardware/google/camera vendor/nxp-opensource/imx/camera
+============================================ 
+ […]
+create image file: out/target/product/evk_8mp/dtbo-imx8mp.img...  //编译生成镜像的路径
+Total 1 entries.
+
+#### build completed successfully (03:59 (mm:ss)) ####
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="id19">
+<h1>05_Android应用程序开发<a class="headerlink" href="#id19" title="Link to this heading"></a></h1>
+<section id="id20">
+<h2>5.1 建立Android应用开发环境<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
+<section id="jdk">
+<h3>5.1.1 下载并安装JDK<a class="headerlink" href="#jdk" title="Link to this heading"></a></h3>
+<p>由于Android 应用代码都是用 Java 编写的，因此需要先在Windows上安装JDK，JDK可按以下方法下载：</p>
+<p>访问网站<a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u>http://www.oracle.com/technetwork/java/javase/downloads/index.html</u></a></p>
+<p>点击java archive：</p>
+<p><img alt="Image" src="_images/1719457873155_b51e2b89_ec03_4059_b17f_21478dcdaa51.png" /></p>
+<p>点击java SE（8u211 and later）：</p>
+<p><img alt="Image" src="_images/1719457873398_f2928a92_ef46_4d14_bad5_49778378d196.png" /></p>
+<p>选择红框：</p>
+<p><img alt="Image" src="_images/1719457873621_ffd7982e_c5ee_4c98_980d_52176330bc46.png" /></p>
+<p>根据提示，注册账号，正常下载。</p>
+<p><img alt="Image" src="_images/1719457873813_78d13108_0a8c_4b42_aff2_6bf95ca903cf.png" /></p>
+<p>下载完成后，双击安装程序，根据向导的提示完成安装即可。</p>
+<p>检查安装是否成功，打开命令提示符工具，输入 java -version 。</p>
+<p><img alt="Image" src="_images/1719457874047_a592ece1_5a4d_4b41_bf9e_d54f9b1bae03.png" /></p>
+<p>正确显示Java版本即表示安装成功。</p>
+</section>
+<section id="android-studio">
+<h3>5.1.2 安装Android studio<a class="headerlink" href="#android-studio" title="Link to this heading"></a></h3>
+<p>Android Studio 是Google于2013 I/O 大会针对Android 开发推出的新的开发工具,国内可在<a class="reference external" href="http://www.android-studio.org/"><u>http://www.android-studio.org/</u></a>进行下载安装。</p>
+<p><img alt="Image" src="_images/1719457874242_c86d18e4_dd58_4f0a_b9bc_2c1bcc97fe8f.jpeg" /></p>
+<p>下载完成后按照提示进行安装即可。安装完成后将出现下图所示：</p>
+<p>选择“Do not import settings”：</p>
+<p><img alt="Image" src="_images/1719457874472_dfc3177f_8efa_45e2_ae59_9abc11020a08.png" /></p>
+<p><img alt="Image" src="_images/1719457874692_60122454_d263_470f_b58a_42ad1a6737ac.png" /></p>
+<p>选择“Cancel”取消。</p>
+<p><img alt="Image" src="_images/1719457874927_51fc023e_3e11_4d58_84a8_b0c253515ce3.png" /></p>
+<p>点击“next”进行下一步：</p>
+<p><img alt="Image" src="_images/1719457875198_2703db49_18f0_4295_b7f6_59c85607afc7.png" /></p>
+<p>这里选择“custom”：</p>
+<p><img alt="Image" src="_images/1719457875429_1ea43ae6_aea2_4a50_8992_b7e0d063072b.png" /></p>
+<p>根据个人喜好选择UI主题：</p>
+<p><img alt="Image" src="_images/1719457875617_8fc1b91a_72d5_436f_ba65_8b98328807b1.png" /></p>
+<p>根据实际情况选择Android SDK的安装路径：</p>
+<p><img alt="Image" src="_images/1719457875801_527d65cd_76f2_42a0_aa6c_7a0d55e04129.png" /></p>
+<p>选择模拟器的内存大小：</p>
+<p><img alt="Image" src="_images/1719457876047_d8f9d21c_06ae_44b0_b442_00b473621874.png" /></p>
+<p>点击“Finish”。</p>
+<p><img alt="Image" src="_images/1719457876287_4a4371cd_5292_4e52_9b8c_5fbf4eb21705.png" /></p>
+<p>等待安装完成，点击“Finish”。</p>
+</section>
+<section id="helloworld">
+<h3>5.1.3 创建Helloworld工程<a class="headerlink" href="#helloworld" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>选择“start a new android studio project”：</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457876500_3a3a41c9_30fc_4c0a_a00b_653a476fa1bc.png" /></p>
+<p>2．修改项目名称，选择Empty Activity，点击Next，选择最低支持的SDK版本：</p>
+<p><img alt="Image" src="_images/1719457876686_e7fc1966_c21e_40cb_b691_51579163930d.png" /></p>
+<p><img alt="Image" src="_images/1719457876892_298b29df_918d_447a_8364_b9a82c88952d.png" /></p>
+<p><img alt="Image" src="_images/1719457877084_df070458_67b7_4a30_afad_4529216634b2.png" /></p>
+<p>点击“Finish”。</p>
+<p><img alt="Image" src="_images/1719457877406_8b0ab60b_ee5d_437d_b61f_0ea0553e43b3.png" /></p>
+<p>初次使用时会下载Gradle等工具，请耐心等待。</p>
+<p>3．安装android 11.0 SDK</p>
+<p>点击“File”-&gt;“settings” 搜索SDK打开下图所示界面，勾选“Android 11.0”点击“OK”进行安装：</p>
+<p><img alt="Image" src="_images/1719457877608_170843e0_3e71_499f_82b0_0bff6469c5c4.png" /></p>
+<p>烧写完成，点击finish：</p>
+<p><img alt="Image" src="_images/1719457877798_5bbafee6_8a3d_413c_9ab1_97e1006aa31d.png" /></p>
+<p>4．点击“build”-&gt;“Make Project”进行编译：</p>
+<p><img alt="Image" src="_images/1719457877986_3dfcb3b5_057d_46cd_8e40_77e77293739b.png" /></p>
+<p>5．编译完成后，使用OTG线将开发板连接到电脑上，启动开发板。在Android studio的菜单栏中选择设备8mp：</p>
+<p><img alt="Image" src="_images/1719457878166_baf70fbf_1bf4_440f_b732_a77a24a69ef9.png" /></p>
+<p>点击菜单栏中的绿色三角形图标，使应用在开发板上运行。</p>
+<p><img alt="Image" src="_images/1719457878364_0f7e53e4_b446_430b_a151_ebc55265c4c6.png" /></p>
+<p>稍等一会程序即在开发板上运行起来：</p>
+<p><img alt="Image" src="_images/1719457878576_00f37993_feae_406e_a59d_0ed8f7d38397.png" /></p>
+</section>
+<section id="app">
+<h3>5.1.4 编译现有App工程<a class="headerlink" href="#app" title="Link to this heading"></a></h3>
+<p>本节主要介绍如何导入并编译现有的App工程源码，以CanTest为例。</p>
+<section id="cantest">
+<h4>5.1.4.1 编译CanTest应用<a class="headerlink" href="#cantest" title="Link to this heading"></a></h4>
+<p>📂路径：OKMX8MPQ-C（Android）用户资料\Android\测试程序\SerialPortTest.rar</p>
+<ol class="arabic simple">
+<li><p>首先解压飞凌提供的测试程序源码，解压到全英文的路径下，否则会编译报错，可以看到CanTest的内容如下：</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457878876_6e3cc9d2_61d9_4393_9b9d_db3d651fe219.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>在Android studio中选择“Open an existing Android Studio project”，选择上一步解压的CanTest，点击“OK”：</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457879123_c97983cd_1947_404a_809c_4e03eef192e1.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>点击“build”-&gt;“Make Project”进行编译：</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457879357_23198a8a_c88f_448a_91f4_94a125f34b99.png" /></p>
+<ol class="arabic simple" start="4">
+<li><p>编译完成后，使用OTG线将开发板连接到电脑上，启动开发板。在Android studio的菜单栏中选择设备8mp：</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457879591_3b08bf71_6e96_4a21_8dac_7ce29a144a25.png" /></p>
+<p>点击菜单栏中的绿色三角形图标，使应用在开发板上运行。</p>
+<p><img alt="Image" src="_images/1719457879805_0a237ed5_fae1_41c4_81f6_0bac080738da.png" /></p>
+<p>稍等一会程序即在开发板上运行起来：</p>
+<p><img alt="Image" src="_images/1719457880137_e22da7f0_0914_49e5_a0cc_ba90ba8c32ce.png" /></p>
+<p>测试成功，生成的APK路径：app\build\outputs\apk\debug\app-debug.apk</p>
+<p>可把.apk文件拷贝到开发板上进行安装。</p>
+</section>
+<section id="id21">
+<h4>5.1.4.2 常见问题<a class="headerlink" href="#id21" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>问题一：编译时可能会出现以下报错：</strong></p></li>
+</ul>
+<p><img alt="Image" src="_images/1719457880427_326afa9a_8358_4ae3_b3bc_a0af3cfdbd2c.png" /></p>
+<p>原因是：打开的源码默认添加了APK签名，提示的是签名文件找不到，此时需要按照5.2节先生成一个自己的签名文件，</p>
+<p>具体操作：File-&gt;Project Structure-&gt;Modules-&gt;app-&gt;Signing Configs-&gt;Store File，修改路径为自己的签名文件路径然后，点击“OK”：</p>
+<p><img alt="Image" src="_images/1719457880638_0be5f29f_3f5b_4dde_8d9f_467d72c4eb59.png" /></p>
+<ul class="simple">
+<li><p>**问题二：**<strong>不同版本的Android studio如何打开工程</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>按照“<strong><u>5.1.3章 创建HelloWorld工程</u></strong>”创建新工程。</p></li>
+<li><p>把要打开的测试程序源码中的app目录解压到上述新建工程的路径，替换掉里面原本的app文件夹。</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457880856_ce1e58e1_47d7_4c59_938b_d60f7ff4ee0c.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>重新打开替换app目录后的HelloWorld工程，加载完成后，更改APK密钥（操作过程详见上述<strong>问题一</strong>）并编译。</p></li>
+<li><p>编译成功后用otg线连接开发板和电脑，在开发板上运行，此时即可成功运行。</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>问题三：开发板与电脑已通过otg线相连，且开发板已开启，但是Android studio无法识别到设备。</strong></p></li>
+</ul>
+<p>检查开发板是否已设成USB调试模式（先疯狂点击版本号进入开发者模式，然后在开发者选项中开启USB调试），点击Android studio中的run即可开启调试</p>
+</section>
+</section>
+</section>
+<section id="apk-platform">
+<h2>5.2 Apk platform签名<a class="headerlink" href="#apk-platform" title="Link to this heading"></a></h2>
+<p>Android 平台中SELinux将App划分为三种,包括没有platform签名和系统权限的untrusted_app，拥有platform签名没有系统权限的platform_app,和拥有platform签名和系统权限的system_app。本节，将介绍如何给apk签名获得system权限。</p>
+<section id="id22">
+<h3>5.2.1制作签名文件<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<p>将Android系统中device/fsl/common/security/platform.x509.pem 以及device/fsl/common/security/platform.pk8 拷贝到windows中。</p>
+<p>打开命令行窗口进入到该文件夹目录执行：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>openssl pkcs8 -in platform.pk8 -inform DER -outform PEM -out shared.priv.pem -nocrypt
+openssl pkcs12 -export -in platform.x509.pem -inkey shared.priv.pem -out shared.pk12 -name androiddebugkey
+输入两次密码
+
+keytool -importkeystore -deststorepass 123456 -destkeypass 123456 -destkeystore debug.keystore -srckeystore shared.pk12 -srcstoretype PKCS12 -srcstorepass android -alias androiddebugkey
+</pre></div>
+</div>
+<p>其中 <strong>android</strong>为你输入的密码，<strong>androiddebugkey</strong>为别名 您可以根据需求修改为其它内容。123456为Store Password和Key Password密码，将签名文件debug.keystore文件保存到您的常用目录中。</p>
+<ul class="simple">
+<li><p><strong>注意：<strong><strong>如果您的windows系统中没有openssl命令，请前往</strong><a class="reference external" href="http://slproweb.com/products/Win32OpenSSL.html"><strong><u>http://slproweb.com/products/Win32OpenSSL.html</u></strong></a></strong> 下载安装，并设置环境变量（方法请自行百度）。</strong></p></li>
+</ul>
+<p><img alt="Image" src="_images/1719457881085_e974f778_212a_423e_ac6f_2d47b73cc32c.png" /></p>
+</section>
+<section id="andorid-studio">
+<h3>5.2.2设置andorid studio<a class="headerlink" href="#andorid-studio" title="Link to this heading"></a></h3>
+<p>打开任意 android studio 工程，在AndroidManifest.xml中对应位置添加共享UID例如：</p>
+<p>&lt;manifest xmlns:android=”http://schemas.android.com/apk/res/android”</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>package=&quot;com.example.forlinx.serialporttest&quot;
+</pre></div>
+</div>
+<p><strong>android:sharedUserId=”android.uid.system</strong>” &gt;</p>
+<p>点击“File”-&gt;“project structure”：</p>
+<p><img alt="Image" src="_images/1719457881346_2e10c222_9d66_4d9e_b2aa_4c19d33c3e53.png" /></p>
+<p>新建一个release：</p>
+<p><img alt="Image" src="_images/1719457881621_c886bcdd_5e8d_4686_83b4_f0ed14e4a04e.png" /></p>
+<p>添加debug版本和release版本的签名配置，并点击“build Variants”：</p>
+<p><img alt="Image" src="_images/1719457881889_f6724962_77d0_42ea_a3c8_4ceb42d13567.png" /></p>
+<p><img alt="Image" src="_images/1719457882073_385ce032_9046_4195_98b2_8bba21a5e434.png" /></p>
+<p>如图设置对应版本的签名配置。</p>
+<p>点击android studio 的运行按钮，启动app。在串口中输入 ps -Z：</p>
+<p><img alt="Image" src="_images/1719457882327_a107587e_c015_43e9_8222_4ef41f3f6ed0.jpeg" /></p>
+<p>确认你的 app 是否已经成为system_app。</p>
+</section>
+</section>
+<section id="apk">
+<h2>5.3系统预装Apk的方法<a class="headerlink" href="#apk" title="Link to this heading"></a></h2>
+<p>1．在 Android 系统中新建目录：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>mkdir packages/apps/serialporttest
+</pre></div>
+</div>
+<p>2．将需要预装的apk(无需签名)拷贝到目录中以serialporttest.apk为例：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>cp serialporttest.apk packages/apps/serialporttest
+</pre></div>
+</div>
+<p>3．在 packages/apps/serialporttest 新建 Android.mk，添加下列内容：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>LOCAL_PATH := $(call my-dir) 
+include $(CLEAR_VARS)
+LOCAL_MODULE := serialporttest 
+LOCAL_SRC_FILES := serialporttest.apk 
+LOCAL_MODULE_CLASS := APPS 
+LOCAL_MODULE_SUFFIX := .apk 
+LOCAL_BUILT_MODULE_STEM := package.apk 
+LOCAL_CERTIFICATE := platform 
+LOCAL_DEX_PREOPT := false 
+LOCAL_PRIVILEGED_MODULE := true 
+include $(BUILD_PREBUILT) 
+</pre></div>
+</div>
+<p>4．同时修改 device/nxp/imx8m/evk_8mp/evk_8mp.mk 添加</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>PRODUCT_PACKAGES += \ 
+Serialporttest
+</pre></div>
+</div>
+<p>5．重新编译镜像</p>
+</section>
+</section>
+<section id="id23">
+<h1>06_烧写系统<a class="headerlink" href="#id23" title="Link to this heading"></a></h1>
+<section id="uuu">
+<h2>6.1 使用UUU烧写镜像<a class="headerlink" href="#uuu" title="Link to this heading"></a></h2>
+<p>UUU是一个命令行工具，可以用于在Linux或者Windows下烧写镜像到OKMX8MPQ开发板，在android系统中NXP提供了Linux平台以及Windows平台的集成脚本uuu_imx_android_flash.sh及uuu_imx_android_flash.bat。下面分别介绍这两个工具的使用方法。</p>
+<p>uuu_imx_android_flash 参数说明：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>参数</strong></p></th>
+<th class="head text-left"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-h</p></td>
+<td class="text-left"><p>帮助</p></td>
+</tr>
+<tr class="row-odd"><td><p>-f</p></td>
+<td class="text-left"><p>soc_name</p></td>
+</tr>
+<tr class="row-even"><td><p>-a</p></td>
+<td class="text-left"><p>只烧写slot_a</p></td>
+</tr>
+<tr class="row-odd"><td><p>-b</p></td>
+<td class="text-left"><p>只烧写slot_b</p></td>
+</tr>
+<tr class="row-even"><td><p>-c</p></td>
+<td class="text-left"><p>默认使用use partition-table.img<br/>-c 7 使用 partition-table-7GB.img(8G emmc)<br/>-c 14 使用 partition-table-14GB.img(16G emmc)<br/>-c 28 使用 partition-table-28GB.img(32G emmc)</p></td>
+</tr>
+<tr class="row-odd"><td><p>-m</p></td>
+<td class="text-left"><p>烧写 Cortex-M7 镜像</p></td>
+</tr>
+<tr class="row-even"><td><p>-d</p></td>
+<td class="text-left"><p>烧写特定的 dtbo vbmeta recovery 镜像</p></td>
+</tr>
+<tr class="row-odd"><td><p>-e</p></td>
+<td class="text-left"><p>烧写完成之后擦除userdata分区</p></td>
+</tr>
+<tr class="row-even"><td><p>-l</p></td>
+<td class="text-left"><p>烧写完成之后locks the device</p></td>
+</tr>
+<tr class="row-odd"><td><p>-D</p></td>
+<td class="text-left"><p>镜像路径，不指定默认使用当前路径</p></td>
+</tr>
+<tr class="row-even"><td><p>-s</p></td>
+<td class="text-left"><p>串口号，多个设备同时连接到PC时使用</p></td>
+</tr>
+</tbody>
+</table>
+<p>下面分别介绍Linux和Windows下UUU工具的使用。</p>
+<p>⚠️<strong>注意：</strong></p>
+<ul class="simple">
+<li><p><strong>不要使用 android 环境编译生成的 uuu_imx_android_flash.sh。请使用“用户资料\工具\uuu_imx_android_flash.sh”。</strong></p></li>
+<li><p><strong>将 OTG 线插入 Linux 主机的 USB 接口中。如果您使用虚拟机，请将下列设备挂载到虚拟机中。</strong></p></li>
+</ul>
+<p><img alt="Image" src="_images/1719457841677_c3cdc53e_4eec_4754_a4cb_b4bee95be8a1.png" /></p>
+<section id="linuxuuu-imx-android-flash-sh">
+<h3>6.1.1 Linux下uuu_imx_android_flash.sh工具的使用<a class="headerlink" href="#linuxuuu-imx-android-flash-sh" title="Link to this heading"></a></h3>
+<p>📂<strong>路径：OKMX8MPQ-C（Android）用户资料\工具</strong></p>
+<p>将下载好的用户资料中工具目录的uuu拷贝到 /usr/bin/ 目录下并添加可执行权限。将uuu_imx_android_flash.sh 拷贝到 /home/forlinx/imx8mp/uuu 目录。</p>
+<p>⚠️<strong>注意：不要使用android环境编译生成的uuu_imx_android_flash.sh。同时fastboot版本过低则无法识别设备，请将光盘工具目录中的platform-tools_r28.0.3-linux.zip中的fastboot adb等工具解压到/usr/bin目录并添加可执行权限。</strong></p>
+<ol class="arabic simple">
+<li><p>将type C线插入Linux主机的USB接口中。如果您使用虚拟机，请将下列设备移动到虚拟机中。</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719457841893_9aa5405d_7bda_4244_9187_fd236471aba0.png" /></p>
+<p><img alt="Image" src="_images/1719457842092_f9003885_34b9_493f_a520_cbe735f4c0dc.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>将编译生成的镜像(<em>.img 和 u-boot</em>)拷贝到/home/forlinx/imx8mp/uuu目录。</p></li>
+</ol>
+<p>⚠️<strong>注意：</strong></p>
+<ul class="simple">
+<li><p><strong>将编译生成的镜像(*.img 和 u-boot <em>)拷贝到/home/forlinx/imx8mp/uuu 目录。其中</em>.img为全编译生成文件，因为 u-boot不开源，所以需要将“用户资料/Android/镜像/uuu/”路径下的“u-boot-imx8mp.imx”和“u-boot-imx8mp-evk-uuu.imx”拷贝到 /home/forlinx/imx8mp/uuu 目录下。</strong></p></li>
+<li><p>*<em>如用户未进行源码编译，单纯使用用户资料中的镜像进行烧写，可直接将“用户资料/Android/镜像/uuu/”路径下的(*.img 和 u-boot <em>)拷贝到 /home/forlinx/imx8mp/uuu 目录下。</em></em></p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>根据原理图修改拨码启动方式为USB，启动开发板。</p></li>
+<li><p>输入如下命令进入到相应路径下进行烧写：</p></li>
+</ol>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu: ~$ cd /home/forlinx/imx8mp/uuu
+forlinx@ubuntu: ~/imx8mp/uuu$ sudo ./uuu_imx_android_flash.sh -f imx8mp -e
+</pre></div>
+</div>
+<p>⚠️<strong>注意</strong>：<strong>烧写时请勿插TF卡。</strong></p>
+<p>开始烧写后，会提示连接设备到主机或虚拟机，选择连接到虚拟机。</p>
+<p><img alt="Image" src="_images/1719457842291_afad18aa_4ff5_45ae_bfe2_6af4996297f4.png" /></p>
+<p>等待烧写完成，烧写成功如下图所示：</p>
+<p><img alt="Image" src="_images/1719457842611_95b4d994_de4a_4d12_abf4_24205623f671.png" /></p>
+</section>
+<section id="windowsuuu-imx-android-flash-bat">
+<h3>6.1.2 Windows下uuu_imx_android_flash.bat工具的使用<a class="headerlink" href="#windowsuuu-imx-android-flash-bat" title="Link to this heading"></a></h3>
+<p>⚠️<strong>注意：uuu 烧写时命令行窗口需要使用管理员权限运行。</strong></p>
+<p>**步骤1：**拷贝文件</p>
+<p>📂路径：OKMX8MPQ-C（Android）用户资料\工具\uuu.exe</p>
+<p>将下载好的资料中的uuu.exe拷贝到 C:\Windows\System32 目录。</p>
+<p>📂路径：OKMX8MPQ-C（Android）用户资料\工具\platform-tools_r28.0.3-windows.zip</p>
+<p>将用户资料工具目录的platform-tools_r28.0.3-windows.zip文件解压到 C:\Windows\System32，如果是64位windows系统请解压到C:\Windows\SysWOW64。</p>
+<p>**步骤2：**使用OTG线连接主机的USB接口和开发板的type-c接口，然后将拨码开关设置为USB方式，拔出TF卡，启动开发板。</p>
+<p>**步骤3：**检查安装。</p>
+<p>通过点击开始菜单，在开始菜单下方的搜索框中输入 cmd ，在 cmd.exe 上按回车来启动 DOS 窗口，在 DOS 窗口中，输入 uuu 按回车。</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>C:\Users\Administrator&gt;uuu
+uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.4.139-0-g1a8f760
+
+uuu [-d -m -v -V] &lt;bootloader|cmdlists|cmd&gt;
+
+    bootloader  download bootloader to board by usb
+    cmdlist     run all commands in cmdlist file
+                If it is path, search uuu.auto in dir
+                If it is zip, search uuu.auto in zip
+    cmd         Run one command, use -H see detail
+                example: SDPS: boot -f flash.bin
+    -d          Daemon mode, wait for forever.
+    -v -V       verbose mode, -V enable libusb error\warning info
+    -m          USBPATH Only monitor these paths.
+                    -m 1:2 -m 1:3
+[…]
+Register-ArgumentCompleter -CommandName uuu -ScriptBlock {param($commandName,$parameterName,$wordToComplete,$commandAst,$fakeBoundParameter); C:\WINDOWS\system32\uuu.exe -autocomplete $parameterName }
+</pre></div>
+</div>
+<p>切换到解压文件目录下：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Microsoft Windows [版本 10.0.19044.1645]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator&gt;cd c:\
+c:\&gt;cd \Windows\System32\platform-tools
+</pre></div>
+</div>
+<p>输入 <font style="color:#0000FF;">fastboot -h </font>确认是否安装成功</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>c:\Windows\System32\platform-tools&gt;fastboot -h
+usage: fastboot [OPTION...] COMMAND...
+
+flashing:
+ update ZIP                 Flash all partitions from an update.zip package.
+ flashall                   Flash all partitions from $ANDROID_PRODUCT_OUT.
+                            On A/B devices, flashed slot is set as active.
+                            Secondary images may be flashed to inactive slot.
+ flash PARTITION [FILENAME] Flash given partition, using the image from
+                            $ANDROID_PRODUCT_OUT if no filename is given.
+[…]
+options:
+[…]
+ --version                  Display version.
+ --help, -h                 Show this message.
+</pre></div>
+</div>
+<p>输入 <font style="color:#0000FF;">adb</font> 确认是否安装成功</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>c:\Windows\System32\platform-tools&gt;adb
+Android Debug Bridge version 1.0.41
+Version 28.0.3-5475833
+Installed as c:\Windows\System32\platform-tools\adb.exe
+
+global options:
+ -a         listen on all network interfaces, not just localhost
+ -d         use USB device (error if multiple devices connected)
+ -e         use TCP/IP device (error if multiple TCP/IP devices available)
+ -s SERIAL  use device with given serial (overrides $ANDROID_SERIAL)
+ -t ID      use device with given transport id
+ -H         name of adb server host [default=localhost]
+ -P         port of adb server [default=5037]
+ -L SOCKET  listen on given socket for adb server [default=tcp:localhost:5037]
+[…]
+environment variables:
+[…]
+ $ANDROID_LOG_TAGS        tags to be used by logcat (see logcat --help)
+ $ADB_LOCAL_TRANSPORT_MAX_PORT max emulator scan port (default 5585, 16 emus)
+</pre></div>
+</div>
+<p>⚠️<strong>注意：如果提示缺少 api-ms-win-crt-runtime-l1-1-0.dll，请在系统中安装 KB2999226 补丁。</strong></p>
+<p>**步骤4：**创建uuu文件夹，并在文件夹中放入相应镜像。</p>
+<p>📂路径：OKMX8MPQ-C（Android）用户资料\Android\镜像\uuu</p>
+<p>将上述路径下的文件拷贝到除C盘外的任意盘中创建的uuu目录 下，例如D:\uuu路径下。</p>
+<p>**步骤5：**在Windows主机中输入命令进行烧写。</p>
+<p>进入uuu目录：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>C:\WINDOWS\system32&gt; d:
+D:\&gt; cd uuu
+</pre></div>
+</div>
+<p>烧写系统镜像：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>D:\uuu&gt; uuu_imx_android_flash.bat -f imx8mp -e
+</pre></div>
+</div>
+<p>烧写成功如下图所示：</p>
+<p><img alt="Image" src="_images/1719457842929_a8c66f11_850d_4a83_8319_3a81cd0efcca.png" /></p>
+<p>uuu 烧写时执行时，出现如图所示报错，在保证usb没挂载到虚拟机情况下，可以重新插拔usb线。</p>
+<p><img alt="Image" src="_images/1719457843110_c941e88a_4d17_4acc_89aa_12a8627dbcb4.png" /></p>
+</section>
+</section>
+<section id="tf">
+<h2>6.2 使用TF卡烧写镜像<a class="headerlink" href="#tf" title="Link to this heading"></a></h2>
+<section id="id24">
+<h3>6.2.1 制作烧写TF卡<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p>📋<strong>说明：</strong></p>
+<ul class="simple">
+<li><p><strong>使用TF卡烧写系统时，请使用8G及以上容量的正品TF卡来测试。</strong></p></li>
+<li><p><strong>制卡前需要将TF卡格式化一下，格式为FAT32格式，将TF卡通过USB读卡器插入到PC机中</strong>。</p></li>
+</ul>
+<p>📂路径：OKMX8MPQ-C（Android）用户资料\工具\sdfuse</p>
+<p>将光盘资料中的sdfuse文件夹拷贝到虚拟机 /home/forlinx/imx8mp/tools/sdfuse目录，并将TF卡插入虚拟机中。</p>
+<p>进入烧写目录：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/imx8mp/tools/sdfuse
+</pre></div>
+</div>
+<p>执行制卡脚本：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/tools/sdfuse$ sudo ./mksdcard8mp.sh
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719457843294_fd26bc70_6b5c_442b_a09a_7fd44b7f4d6b.png" /></p>
+<p>选择TF卡设备，这里以“1”为例。</p>
+<p><img alt="Image" src="_images/1719457843567_c9902772_9caa_4116_9f1e_e09991c1e08a.png" /></p>
+<p>输入“<font style="color:#0000FF;">y</font>”进行确认。</p>
+<p><img alt="Image" src="_images/1719457843744_e52783bc_db2c_45a8_b869_24795a9bf1d6.png" /></p>
+<p>制作完成。</p>
+<p>⚠️**注意：**<strong>按照此时的脚本制卡后，会自动卸载TF卡，如果想制卡完成后仍挂载在开发环境上，需要修改制卡脚本mksdcard8mp.sh：</strong></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/tools/sdfuse$ vi mksdcard8mp.sh
+[…]
+for i in `ls -1 $DRIVE?`; do
+        echo &quot;unmounting device &#39;$i&#39;&quot;
+#       umount $i 2&gt;/dev/null                                //注释掉脚本最后的这句命令
+done
+</pre></div>
+</div>
+</section>
+<section id="id25">
+<h3>6.2.2 拷贝烧写镜像<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p>出厂镜像可在下载好的资料中拷贝到TF卡的FAT32分区中，镜像在以下路径中</p>
+<p>📂路径：OKMX8MPQ-C（Android）用户资料\Android\镜像\tfcard</p>
+<p>具体需要拷贝的选项如下表格</p>
+<p>将android镜像以及烧写工具拷贝到烧写TF卡的FAT32分区中。</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>文件</p></th>
+<th class="head"><p>说明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>config.ini</p></td>
+<td><p>烧写配置文件，在工具/sdfuse目录下</p></td>
+</tr>
+<tr class="row-odd"><td><p>ramdisk.img</p></td>
+<td><p>烧写配置文件，在工具/sdfuse目录下</p></td>
+</tr>
+<tr class="row-even"><td><p>imx-boot.bin</p></td>
+<td><p>制卡引导文件，在工具/sdfuse目录下</p></td>
+</tr>
+<tr class="row-odd"><td><p>dtbo-imx8mp.img</p></td>
+<td><p>烧写镜像，编译生成</p></td>
+</tr>
+<tr class="row-even"><td><p>partition-table.img</p></td>
+<td><p>烧写镜像，编译生成</p></td>
+</tr>
+<tr class="row-odd"><td><p>vendor_boot.img</p></td>
+<td><p>烧写镜像，编译生成</p></td>
+</tr>
+<tr class="row-even"><td><p>u-boot-imx8mp.imx</p></td>
+<td><p>烧写镜像，编译生成</p></td>
+</tr>
+<tr class="row-odd"><td><p>vbmeta-imx8mp.img</p></td>
+<td><p>烧写镜像，编译生成</p></td>
+</tr>
+<tr class="row-even"><td><p>boot.img</p></td>
+<td><p>烧写镜像，编译生成</p></td>
+</tr>
+<tr class="row-odd"><td><p>logo_raw.img</p></td>
+<td><p>烧写镜像，使用logo.img生成</p></td>
+</tr>
+<tr class="row-even"><td><p>super_raw.img</p></td>
+<td><p>烧写镜像，使用super.img生成</p></td>
+</tr>
+<tr class="row-odd"><td><p>kernel</p></td>
+<td><p>文件夹，里面放了Image和OK8MP.dtb，用于在烧写阶段引导启动</p></td>
+</tr>
+</tbody>
+</table>
+<p>logo_raw.img 以及 system_raw.img 的生成方法：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/tools/sdfuse$ simg2img logo.img logo_raw.img
+forlinx@ubuntu:~/imx8mp/tools/sdfuse$ simg2img super.img super_raw.img
+</pre></div>
+</div>
+<p>如果找不到simg2img使用<font style="color:#0000FF;">sudo apt-get install android-tools-fsutil</font>命令安装。</p>
+</section>
+<section id="id26">
+<h3>6.2.3 TF卡烧写测试<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+<p>关闭开发板电源，将TF卡插入TF卡座中，根据原理图将启动拨码设置到TF卡启动状态。</p>
+<p>打开电源开关，开发板将自动启动进入烧写程序，烧写进度请留意调试串口或者观察心跳灯D1闪烁变化，当D1变为每秒闪烁一次表示烧写完成。</p>
+<p><img alt="Image" src="_images/1719457843920_7183676f_9525_46af_895f_ed2770c064bf.png" /></p>
+<p><img alt="Image" src="_images/1719457844100_b754df76_9e3b_46f7_8eda_f2079db5248d.png" /></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

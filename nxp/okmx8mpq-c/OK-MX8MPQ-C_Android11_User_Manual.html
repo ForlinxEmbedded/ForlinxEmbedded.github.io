@@ -1,0 +1,1322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Android11.0_User’s Manual_V1.2 &mdash; Forlinx Embedded i.MX 8M Plus Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/nxp/okmx8mpq-c/OK-MX8MPQ-C_Android11_User_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="00_Android11.0_用户编译手册" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html" />
+    <link rel="prev" title="Linux 6.1.36_User’s Compilation Manual_V1.0" href="OK_MX8MPQ-C_Linux6_1_36_User_Compilation_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_User_Hardware.html">User’s Hardware Manual_V3.3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Linux6_1_36_User_Manual.html">Linux 6.1.36_User’s Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK_MX8MPQ-C_Linux6_1_36_User_Compilation_Manual.html">Linux 6.1.36_User’s Compilation Manual_V1.0</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Android11.0_User’s Manual_V1.2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#okmx8mpq-c-development-board-description">1. OKMX8MPQ-C Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction-to-linux-5-4-70-system-software-resources">1.1 Introduction to Linux 5.4.70 System Software Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table">1.2 eMMC Memory Partition Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-and-boot-settings">1.3 Flashing and Boot Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-login">2.2 Serial Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">2.2.1 Serial Login</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#common-serial-port-issues">2.2.2 Common Serial Port Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#screen-selection">2.2.3 Screen Selection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#android-function-use-and-test">3. Android Function Use and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main-interface-display">3.1 Main Interface Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application">3.2 Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#language-settings">3.3 Language Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#picture-and-audio-view">3.4 Picture and Audio View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#music-play">3.5 Music Play</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recording-supporting-mic-input">3.6 Recording (Supporting Mic Input)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjusting-the-volume">3.7 Adjusting the Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backlight-control">3.8 Backlight Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-settings-rtc">3.9 Time Settings（RTC）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet-test">3.10 Ethernet Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-test">3.11 WiFi Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">3.11.1 WiFi Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-hotspot-test">3.11.2 WiFi Hotspot Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bluetooth-test">3.12 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-test">3.13 Key Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-card-and-usb-storage-test">3.14 TF Card and USB Storage Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-mouse-test">3.15 USB Mouse Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-type-c-interface-test">3.16 USB Type C Interface Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-test-and-485-test">3.17 Serial Port Test and 485 Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spi-loopback-test">3.18 SPI Loopback Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-test">3.19 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#taking-photo-test">3.19.1 Taking Photo Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio-test">3.19.2 Audio Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#g-test">3.20 4G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">3.21 5G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-test">3.22 CAN Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#can-2-0b-test">3.22.1 CAN 2.0B Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can-fd-test">3.22.2 CAN FD Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-flashing">4. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-the-image-with-uuu">4.1 Flashing the Image with UUU</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#use-of-the-uuu-imx-android-flash-sh-tool-on-linux">4.1.1 Use of the uuu_imx_android_flash.sh tool on Linux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-of-uuu-imx-android-flash-bat-tool-on-windows">4.1.2 Use of uuu_imx_android_flash.bat Tool on Windows.</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-the-image-with-tf">4.2 Flashing the Image with TF</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#making-and-writing-tf-card">4.2.1 Making and Writing TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#copying-and-writing-image">4.2.2 Copying and Writing Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card-flashing-test">4.2.3 TF Card Flashing Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html">00_Android11.0_用户编译手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id1"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">免责声明</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id2"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">概述</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id3"><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">适用范围</font></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id4"><strong><font style="color:rgb(0,0,0);">更新记录</font></strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#vmware">01_安装VMware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id10">02_导入飞凌开发环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id11">03_手动搭建开发环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#android">04_Android编译篇</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id19">05_Android应用程序开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX8MPQ-C_Android11_User_Compilation_Manual.html#id23">06_烧写系统</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded i.MX 8M Plus Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Android11.0_User’s Manual_V1.2</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="android11-0-user-s-manual-v1-2">
+<h1>Android11.0_User’s Manual_V1.2<a class="headerlink" href="#android11-0-user-s-manual-v1-2" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p><font style="color:rgb(38,38,38);background-color:rgb(255,255,255);">This software manual is applicable to the OKMX8MPQ-C platform Android11.0 operating system of Forlinx.</font></p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Date</strong></p></th>
+<th class="head"><p><strong><font style="color:rgb(0,0,0);">Version</font></strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>11/02/2022</p></td>
+<td><p>V1.0</p></td>
+<td><p>OKMX8MPQ-C-Android11.0 User’s Manual Initial Version.</p></td>
+</tr>
+<tr class="row-odd"><td><p>16/08/2022</p></td>
+<td><p>V1.1</p></td>
+<td><p>1. Adjusting the structure of the manual to standardize the format;<br />2. Moving the compilation chapter to the compilation manual.</p></td>
+</tr>
+<tr class="row-even"><td><p>10/04/2023</p></td>
+<td><p>V1.2</p></td>
+<td><p>1. Adding camera ov5645 and DAA3840 support;<br />2. Adding 4G module ec20 and 5G module rm500U support;<br />3. Adding CAN support.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help you quickly familiarize yourselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. During the testing process, some commands are annotated for easy understanding, focusing on practicality and sufficiency. Please refer to “OKMX8MPQ-C _ Android 11.0 _ Compilation Manual _ V1.0-2022.08.16” provided by Forlinx for kernel compilation, related application compilation methods, development environment construction, etc.</p>
+<p>There are total four chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. provides an overview of the product, briefly introducing the interface resources of the development board, the relevant driver paths in the kernel source code, supported flashing and booting methods, as well as explanations of key sections in the documentation;</p></li>
+<li><p>Chapter 2. describes fast power-on startup with serial login;</p></li>
+<li><p>Chapter 3. provides an introduction to the product’s functions, including the Qt interface functions and tests;</p></li>
+<li><p>Chapter 4. mainly describes the method of updating the image to the storage device, and users can choose the corresponding burning method according to their actual situation.</p></li>
+</ul>
+<p>A description of some of the symbols and formats associated with this manual:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong><font style="color:rgb(0,0,0);">Meaning</font></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><font style="color:rgb(0,0,255);background-color:rgb(215,215,215);">Blue font on gray background</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">Refers to commands entered at the command line (Manual input required).</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Black font on gray background</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">Serial port output message after entering a command</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><strong><font style="color:rgb(0,0,0);background-color:rgb(215,215,215);">Bold black on gray background</font></strong></p></td>
+<td><p><font style="color:rgb(0,0,0);">Key information in the serial port output message</font></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><font style="color:rgb(0,0,0);">//</font></p></td>
+<td><p><font style="color:rgb(0,0,0);">Interpretation of input instructions or output information</font></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:rgb(0,0,0);">Username</font><font style="color:rgb(0,0,0);">&#64;</font><font style="color:rgb(0,0,0);">Hostname</font></p></td>
+<td><p>root&#64;OK8MP: Account information for serial port login and network login of the development board.<br/>forlinx&#64;ubuntu: Account information of the Ubuntu development environment.<br/>C:\Users\Administrator&gt;: The path of the currently used console in the cmd of Windows.<br/>You can determine the environment for functional operations based on this information.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Example: After plugging in the USB flash disk, view the mount directory through the ls command</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK8MP:~# ls /run/media                      //List files in the/run/media directory
+mmcblk2p1  sda1
+</pre></div>
+</div>
+<p>root&#64;okmx8mm: The user name is root and the host name is OK-MX8MPX-C, indicating that the root user is used for operations on the development board;</p>
+<p>//：Explanation of the instruction, no input required;</p>
+<p><font style="color:rgb(0,0,255);background-color:rgb(127,127,127);"> </font><font style="color:rgb(0,0,255);background-color:rgb(127,127,127);">lls /run/media</font><font style="color:rgb(0,0,0);">:</font> Blue text on a gray background indicates relevant commands that need to be manually input;</p>
+<p><font style="color:rgb(0,0,0);background-color:rgb(127,127,127);">mmcblk2p1  </font>**<font style="color:rgb(0,0,0);background-color:rgb(127,127,127);">sda1 </font><font style="color:rgb(0,0,0);">：</font>**The black font with gray background is the output information after the command is input, and the bold font is the key information, which indicates the mounting directory of the TF card.</p>
+</section>
+<section id="okmx8mpq-c-development-board-description">
+<h2>1. OKMX8MPQ-C Development Board Description<a class="headerlink" href="#okmx8mpq-c-development-board-description" title="Link to this heading"></a></h2>
+<p>OKMX8MPQ-C development board is developed with NXP I. MX 8m Plus high-performance processors, with built-in NPU and ISP, and AI computing capability up to 2.3 TOPS, which can meet the needs of lightweight edge computing. At the same time flexible I/O interface configuration and advanced rich multimedia resources to facilitate customer application development. The development board supports 2 x Ethernet, 2 x CAN-FD, 4 x UART, 4G, 5G, dual-band WiFi, PCIe 3.0, USB3.0, HDMI2.0, LVDS, MIPI _ CSI, MIPI _ DSI and other interface resources to maximize CPU resources. Industrial design, -40 ℃ ~ + 85 ℃ wide temperature operation, electrostatic, pulse group, electrical isolation, and other protective measures to ensure its wide application in various fields, to meet the needs of smart city, industrial Internet, intelligent medical, intelligent transportation, and other applications.</p>
+<p>Development Board Interface Diagram：</p>
+<p><img alt="Image" src="_images/1719455543620_616224c8_c136_4bb8_ae89_473733e30308.jpeg" /></p>
+<p><strong>Note:</strong></p>
+<p><strong>This software manual will no longer describe the hardware parameters. Before referring to this manual for software development, please download and read the “OKMX8MPQ-C_Hardware Manual” located in the “Hardware Information/User Manual” path (download method is the same as software documentation). This will help you understand the product naming conventions and the hardware configuration information of the product you are using, which will assist you in using this product effectively.</strong></p>
+<section id="introduction-to-linux-5-4-70-system-software-resources">
+<h3>1.1 Introduction to Linux 5.4.70 System Software Resources<a class="headerlink" href="#introduction-to-linux-5-4-70-system-software-resources" title="Link to this heading"></a></h3>
+<p>| <strong>Device</strong>| <strong>Location of driver source code in the kernel</strong>| <strong>Device Name</strong>|
+|———-|———-|———-||
+| LCD Backlight Driver| drivers/video/backlight/pwm_bl.c| /sys/class/backlight|
+| USB Port| drivers/usb/storage/|
+| USB Mouse| drivers/hid/usbhid/| /dev/input/mice|
+| Ethernet| drivers/net/ethernet/freescale/fec_main.c|
+| SD/micro TF card driver| drivers/mmc/host/sdhci-esdhc-imx.c| /dev/block/mmcblk0pX|
+| EMMC Driver| drivers/mmc/host/sdhci-esdhc-imx.c| /dev/block/mmcblk1pX|
+| OV5645| drivers/media/i2c/ov5645.c| /dev/videoX|
+| LCD Controller| drivers/gpu/imx/lcdif/lcdif-common.c|
+| MIPI CSI| drivers/media/platform/mxc/capture/mxc_mipi_csi.c|
+| MIPI DSI| drivers/gpu/drm/imx/sec_mipi_dsim-imx.c|
+| LCD Touch Driver| drivers/input/touchscreen/edt-ft5x06.c| /dev/input/eventX|
+| RTC Real Time Clock Driver| drivers/rtc/rtc-rx8010.c| /dev/rtc0|
+| serial port| drivers/tty/serial/imx.c| /dev/ttySX|
+| Key Driver| drivers/input/keyboard/gpio_keys.c| /dev/input/eventX|
+| LED| drivers/leds/leds-gpio.c|
+| SAI| sound/soc/fsl/fsl_sai.c|
+| Audio Driver| sound/soc/codecs/wm8960.c| /dev/snd/|
+| PMIC| drivers/mfd/bd71837.c|
+| PCIE| drivers/pci/controller/dwc/pcie-designware-plat.c|
+| QSPI| drivers/mtd/spi-nor/spi-nor.c|
+| Watchdog| drivers/watchdog/imx2_wdt.c|
+| SPI| drivers/spi/spi-imx.c|
+| PWM| drivers/pwm/pwm-imx.c|</p>
+</section>
+<section id="emmc-memory-partition-table">
+<h3>1.2 eMMC Memory Partition Table<a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h3>
+<p>The following table shows the eMMC memory partition information for the Android operating system:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Partition Index</strong></p></th>
+<th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Offset</strong></p></th>
+<th class="head"><p><strong>Size</strong></p></th>
+<th class="head"><p><strong>File system</strong></p></th>
+<th class="head"><p><strong>Content</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>N/A</p></td>
+<td><p>Bootloader</p></td>
+<td><p>33 KB</p></td>
+<td><p>4MB</p></td>
+<td><p>N/A</p></td>
+<td><p>bootloader</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td><p>dtbo_a</p></td>
+<td><p>8MB</p></td>
+<td><p>4MB</p></td>
+<td><p>N/A</p></td>
+<td><p>dtbo.img</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>2</p></td>
+<td><p>dtbo_b</p></td>
+<td><p>Follow dtbo_a</p></td>
+<td><p>4MB</p></td>
+<td><p>N/A</p></td>
+<td><p>dtbo.img</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>3</p></td>
+<td><p>boot_a</p></td>
+<td><p>Follow dtbo_b</p></td>
+<td><p>64MB</p></td>
+<td><p>Boot.img (kernel+ramdisk)</p></td>
+<td><p>boot.img</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>4</p></td>
+<td><p>boot_b</p></td>
+<td><p>Follow boot_a</p></td>
+<td><p>64MB</p></td>
+<td><p>Boot.img (kernel+ramdisk)</p></td>
+<td><p>boot.img</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>5</p></td>
+<td><p>vendor_boot_a</p></td>
+<td><p>Follow boot_b</p></td>
+<td><p>64MB</p></td>
+<td><p>Part of recovery ramdisk</p></td>
+<td><p>vendor_boot.img</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>6</p></td>
+<td><p>vendor_boot_b</p></td>
+<td><p>Follow vendor_boot_a</p></td>
+<td><p>64MB</p></td>
+<td><p>Part of recovery ramdisk</p></td>
+<td><p>vendor_boot.img</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>7</p></td>
+<td><p>misc</p></td>
+<td><p>Follow vendor_boot_b</p></td>
+<td><p>4MB</p></td>
+<td><p>N/A</p></td>
+<td><p>To restore the saved bootloader information, keep the</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>8</p></td>
+<td><p>metadata</p></td>
+<td><p>Follow misc</p></td>
+<td><p>16M</p></td>
+<td><p>N/A</p></td>
+<td><p>Metadata of OTA update,<br/>remount, etc.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>9</p></td>
+<td><p>presistdata</p></td>
+<td><p>Follow metadata</p></td>
+<td><p>1M</p></td>
+<td><p>N/A</p></td>
+<td><p>Option to operate unlock<br/>metadata \unlock</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>10</p></td>
+<td><p>Super</p></td>
+<td><p>Follow presistdata</p></td>
+<td><p>3584M</p></td>
+<td><p>N/A</p></td>
+<td><p>system.img, system_ext.<br/>img, vendor.img, and<br/>product.img</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>11</p></td>
+<td><p>userdata</p></td>
+<td><p>Follow Super</p></td>
+<td><p>Remaining total</p></td>
+<td><p>N/A</p></td>
+<td><p>Application data storage<br/>for system application.<br/>And for internal<br/>media partition, in /mnt/<br/>sdcard/ dir.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>12</p></td>
+<td><p>fbmisc</p></td>
+<td><p>Follow userdata</p></td>
+<td><p>1M</p></td>
+<td><p>N/A</p></td>
+<td><p>To store the state<br/>of lock\unlock.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>13</p></td>
+<td><p>Logo</p></td>
+<td><p>Follow fbmisc</p></td>
+<td><p>64M</p></td>
+<td><p>N/A</p></td>
+<td><p>Save the logo image for uboot display</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>14</p></td>
+<td><p>vbmeta_a</p></td>
+<td><p>Follow logo</p></td>
+<td><p>1M</p></td>
+<td><p>N/A</p></td>
+<td><p>Save verify boot’s metadata</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>15</p></td>
+<td><p>vbmeta_b</p></td>
+<td><p>Follow vbmeta_a</p></td>
+<td><p>1M</p></td>
+<td><p>N/A</p></td>
+<td><p>Save verify boot’s metadata</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="flashing-and-boot-settings">
+<h3>1.3 Flashing and Boot Settings<a class="headerlink" href="#flashing-and-boot-settings" title="Link to this heading"></a></h3>
+<p>The OKMX8MPQ - C supports OTG and TF card flashing, and it also supports eMMC and QSPI boot. As shown in the figure below, when the DIP switch is set, it enables eMMC boot.</p>
+<p><img alt="Image" src="_images/1719455543941_ee6c1fcb_48ff_4244_a271_50cf5e1889b6.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>DIP Switch</p></th>
+<th class="head text-center"><p><strong>No 1.</strong></p></th>
+<th class="head text-center"><p><strong>No 2.</strong></p></th>
+<th class="head text-center"><p><strong>No 3.</strong></p></th>
+<th class="head text-center"><p><strong>No 4.</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FUSES</p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+</tr>
+<tr class="row-odd"><td><p>OTG</p></td>
+<td class="text-center"><p><strong>ON</strong></p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+</tr>
+<tr class="row-even"><td><p>eMMC</p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p><strong>ON</strong></p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+</tr>
+<tr class="row-odd"><td><p>TF</p></td>
+<td class="text-center"><p><strong>ON</strong></p></td>
+<td class="text-center"><p><strong>ON</strong></p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p>OFF</p></td>
+</tr>
+<tr class="row-even"><td><p>QSPI</p></td>
+<td class="text-center"><p>OFF</p></td>
+<td class="text-center"><p><strong>ON</strong></p></td>
+<td class="text-center"><p><strong>ON</strong></p></td>
+<td class="text-center"><p>OFF</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: The silk screen next to the DIP switch on the carrier board shows the DIP switch position in different states, and you can directly set the switch according to the silk screen.</strong></p>
+</section>
+</section>
+<section id="fast-startup">
+<h2>2. Fast Startup<a class="headerlink" href="#fast-startup" title="Link to this heading"></a></h2>
+<section id="preparation-before-startup">
+<h3>2.1 Preparation Before Startup<a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h3>
+<p>The OKMX8MPQ-C development board has two system login methods, serial and network login. Hardware preparation before system startup:</p>
+<ul class="simple">
+<li><p>12V 3A DC power cable</p></li>
+<li><p>USB A to two Type-C cables (OTG burning or debugging)</p></li>
+<li><p>Network cable (for network login)</p></li>
+<li><p>Check the start mode DIP switch</p></li>
+</ul>
+<p>Please check the red DIP switch on your development board to confirm that the desired startup mode has been set. For the startup mode setting, please refer to Programming and Startup Settings.</p>
+<p><img alt="Image" src="_images/1719455470385_354f497b_35eb_49f8_a282_3ed8e5b34ae0.png" /></p>
+</section>
+<section id="serial-login">
+<h3>2.2 Serial Login<a class="headerlink" href="#serial-login" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Serial port settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity bit, no flow control;</strong></p></li>
+<li><p><strong>The serial terminal login uses the root user with no password;</strong></p></li>
+<li><p><strong>Software: Windows PC requires Super Terminal; choose a familiar serial terminal software.</strong></p></li>
+</ul>
+<section id="id1">
+<h4>2.2.1 Serial Login<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>PC does not have USB to high-speed serial port driver, users need to download and install it;</strong></p></li>
+</ul>
+<p><a class="reference external" href="http://www.wch.cn/downloads/CH343SER_EXE.html"><strong>http://www.wch.cn/downloads/CH343SER_EXE.html</strong></a></p>
+<ul class="simple">
+<li><p><strong>You can also use our downloaded directly double-click to run, the path is as follows:</strong></p></li>
+</ul>
+<p><strong>Path: User Profile\Original Profile\CH343SER.exe</strong></p>
+<p>Use USB A to Type-C to connect the DEBUG port of the development board to the PC, the DEBUG port is at the top right of the development board, P11:</p>
+<p><img alt="Image" src="_images/1719455470856_1b1b3e3e_4e15_4cfa_a4bb_4a2a3e2b4004.png" /></p>
+<p>In the following, we take the putty terminal software as an example to introduce the serial port login method:</p>
+<p><strong>Step1</strong>: First, it is necessary to confirm the serial port number of the computer to which it is connected. Check the serial port number from the “Device Manager”, and use the serial port number recognized by the computer as the correct one (SERIAL-A is the default debug serial port for Linux, SERIAL-B is the debug serial port for M7).</p>
+<p><img alt="Image" src="_images/1719455471201_6e60abd2_754e_43cb_81e3_cfb275cf9885.png" /></p>
+<p><strong>Step 2:</strong> Open and set up putty, then set the serial line according to the COM port of the computer used, baud rate 115200</p>
+<p><img alt="Image" src="_images/1719455471488_1c2d5c6d_f9f3_4848_8ffd_d4dc6733dc51.png" /></p>
+<p>After printing information, press Enter to enter the system.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>evk_8mp:/ $ 
+</pre></div>
+</div>
+<p>To view kernel version:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>evk_8mp:/ $ cat /proc/version
+Linux version 5.4.70 (lixinguo@844ae623a156) (Android (6573524 based on r383902b) clang version 11.0.2 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79), LLD 11.0.2 (/buildbot/tmp/tmpF3FjA8 b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Thu Feb 24 00:16:45 UTC 2022
+</pre></div>
+</div>
+<p>Kernel version information can also be viewed with the uname command:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>evk_8mp:/ $ uname -a 
+Linux localhost 5.4.70 #1 SMP PREEMPT Thu Feb 24 00:16:45 UTC 2022 aarch64
+</pre></div>
+</div>
+</section>
+<section id="common-serial-port-issues">
+<h4>2.2.2 Common Serial Port Issues<a class="headerlink" href="#common-serial-port-issues" title="Link to this heading"></a></h4>
+<p>Common problem troubleshooting points for logging in using the serial port are as follows:</p>
+<p>Case 1: No information is printed after connecting to the serial port:</p>
+<ol class="arabic simple">
+<li><p>First, check whether the DIP switch is correct;</p></li>
+<li><p>Re-open the serial port;</p></li>
+<li><p>Change a serial port cable to test it;</p></li>
+<li><p>If none of the above steps work, check the status of the LED lights on the SoM. If they are constantly on, it suggests that the system is not starting properly and may require re-flashing the system. For detailed instructions on flashing the system, refer to “Chapter 5. Flashing the System”.</p></li>
+</ol>
+<p>Case 2: Unable to input commands after connecting to the serial port.</p>
+<ol class="arabic simple">
+<li><p>Re-open the serial port;</p></li>
+<li><p>Connect the USB serial cable to a different USB port on your computer. Check the corresponding COM port in the device manager and reopen the serial port;</p></li>
+<li><p>Replace a serial port cable.</p></li>
+</ol>
+</section>
+<section id="screen-selection">
+<h4>2.2.3 Screen Selection<a class="headerlink" href="#screen-selection" title="Link to this heading"></a></h4>
+<p>OKMX8MPQ-C board supports mipi, LVDS and HDMI. The mipi interface is configured with a 7-inch display screen with a resolution of 1024x600 by default; the LVDS interface is configured with a 10.1-inch display screen with a channel 0 and a resolution of 1280x800;</p>
+<p>The HDMI interface is connected to the HDMI display to adapt the resolution according to the read edid information.</p>
+<p>From the uboot menu, choose to turn off or turn on one of the interfaces. Start the development board, press the space bar immediately after “Autoboot in 1 seconds” is displayed to enter the uboot menu, type 3 to select the display settings, and type 1-3 to change the on/off status of mipi, LVDS, and HDMI. After setting, type 0 to return to the previous menu, and then type 0 again to restart the development board. After restarting, display according to the setting results.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>
+U-Boot 2020.04 (Apr 08 2023 - 03:24:44 +0000)
+
+CPU:   i.MX8MP[8] rev1.1 1600 MHz (running at 1200 MHz)
+CPU:   Industrial temperature grade (-40C to 105C) at 32C
+Reset cause: POR
+Model: Forlinx OK8MPlus LPDDR4 EVK board
+DRAM:  4 GiB
+mipi_panel enable
+lvds0_panel enable
+eth0 enable
+eth1 enable
+MMC:   FSL_SDHC: 1, FSL_SDHC: 2
+Loading Environment from MMC... *** Warning - bad CRC, using default environment
+
+[*]-Video Link 0 (1024 x 600)
+        [0] lcd-controller@32e80000, video
+        [1] mipi_dsi@32e60000, video_bridge
+        [2] mipi_panel, panel
+[*]-Video Link 1 (1280 x 800)
+        [0] lcd-controller@32e90000, video
+        [1] ldb@32ec005c, video_bridge
+        [2] lvds0_panel, panel
+[ ]-Video Link 2
+        [0] lcd-controller@32e90000, video
+        [1] ldb@32ec005c, video_bridge
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo:
+  - ATF 
+  - U-Boot 2020.04
+
+secure check passed
+flash target is MMC:2
+Net:   config yt8521
+eth0: ethernet@30be0000
+Fastboot: Normal
+Normal Boot
+Autoboot in 1 seconds
+
+-------------------------------------
+1: shell
+2: android lcd_density
+3: Display select
+0: reboot uboot
+-------------------------------------
+
+-------------------------------------
+1: mipi is on
+2: lvds is on
+3: hdmi is on
+0: return 
+-------------------------------------
+Saving Environment to MMC... Writing to MMC(2)... OK
+
+-------------------------------------
+1: mipi is off
+2: lvds is on
+3: hdmi is on
+0: return 
+-------------------------------------
+</pre></div>
+</div>
+<p><strong>Note: When two or three screens are turned on at the same time, all the open screens will display the Android desktop, and the second or third screen will be scaled according to the proportion of the first screen, resulting in poor display effect. The Android system will select the main screen in the order of mipi, LVDS and HDMI. For example, if you want to use the LVDS display screen as the main screen, you need to turn off the mipi display. At this time, the LVDS is used as the main screen, and the display will not be distorted during the test.</strong></p>
+</section>
+</section>
+</section>
+<section id="android-function-use-and-test">
+<h2>3. Android Function Use and Test<a class="headerlink" href="#android-function-use-and-test" title="Link to this heading"></a></h2>
+<section id="main-interface-display">
+<h3>3.1 Main Interface Display<a class="headerlink" href="#main-interface-display" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1719455492054_3e0defd8_104f_4260_b9f7_c87a7ffa06dd.png" /></p>
+</section>
+<section id="application">
+<h3>3.2 Application<a class="headerlink" href="#application" title="Link to this heading"></a></h3>
+<p>Swipe up on the main screen to bring up the following screen.</p>
+<p><img alt="Image" src="_images/1719455492369_aa48c926_7dbc_4252_a9d4_3c2f3c90c49e.png" /></p>
+</section>
+<section id="language-settings">
+<h3>3.3 Language Settings<a class="headerlink" href="#language-settings" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719455492578_664398ef_ed51_40e5_83fa_3d8a10ea4ec7.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719455492849_fc0b3ff7_3be8_44fa_ad57_f60f0b2c9c7d.png" /></p>
+<p>Click “<img alt="Image" src="_images/1719455493085_001922ce_e29a_4c86_9c75_71c9f69b155a.png" />” to enter the language setting interface:</p>
+<p><img alt="Image" src="_images/1719455493358_bd955a11_255d_45d2_835e_3e978306c22d.png" /></p>
+<p>Click “Language and input method” to enter the language setting interface:</p>
+<p><img alt="Image" src="_images/1719455493586_a08110e1_70a2_4527_81be_a3d472516c65.png" /></p>
+<p>Click “Add Language” to add a new language and set the default language.</p>
+<p><img alt="Image" src="_images/1719455493815_0111d07c_62d6_4574_8cc4_751a7cc32d31.png" /></p>
+<p><strong>Note: When setting the default language, press and hold the four dash buttons on the right and drag up and down. If you use the mouse, press and hold the right mouse button to drag.</strong></p>
+</section>
+<section id="picture-and-audio-view">
+<h3>3.4 Picture and Audio View<a class="headerlink" href="#picture-and-audio-view" title="Link to this heading"></a></h3>
+<p>Save the pictures and video files you need to view to a USB flash drive and insert the USB flash drive into the development board.</p>
+<p><img alt="Image" src="_images/1719455494146_5aa49dfa_c9cc_4d55_9a99_3414e6c10923.png" /></p>
+<p>Click to view the U disk files, and you can see all the files in the U disk.</p>
+<p><img alt="Image" src="_images/1719455494512_1eb01a8e_5b33_47a0_9bc9_0d05ef275b4c.png" /></p>
+<p>Click on the image file:</p>
+<p><img alt="Image" src="_images/1719455494850_59b7e716_3d16_40f4_be70_5b3d8757359f.png" /></p>
+<p>The touchscreen supports multi-touch, allowing you to use your fingers to perform zooming in and out.</p>
+<p>Return to the USB drive interface and click on the video file.</p>
+<p><img alt="Image" src="_images/1719455495165_e90ce695_dd81_4e93_9c20_e90005ccf78f.png" /></p>
+<p>The first time to play, you need to select the player, select always or only once, and then start playing the video. It is recommended to use the cactus player, which supports hardware decoding.</p>
+<p><img alt="Image" src="_images/1719455495393_21f6cecb_db51_41f3_8e77_35a5a4718153.png" /></p>
+<p>Please click on “Allow” to authorize the media player to access the device’s multimedia files.</p>
+<p><img alt="Image" src="_images/1719455495711_a5495344_f9c7_4ab9_a1e7_b2bc3007b580.png" /></p>
+</section>
+<section id="music-play">
+<h3>3.5 Music Play<a class="headerlink" href="#music-play" title="Link to this heading"></a></h3>
+<p>Please save the audio files you need to play onto a USB flash drive, and then insert the USB flash drive into the development board.</p>
+<p><img alt="Image" src="_images/1719455496072_aaa1eeac_5cf7_482d_9581_449f35c781d5.png" /></p>
+<p>Click the audio file to be played.</p>
+<p><img alt="Image" src="_images/1719455496435_2684b5bd_2b95_4259_882f_cab7f72c92cc.png" /></p>
+<p>Click the music name to play automatically.</p>
+<p>At this time, you can adjust the volume by pressing K2 on the carrier board of the development board.</p>
+</section>
+<section id="recording-supporting-mic-input">
+<h3>3.6 Recording (Supporting Mic Input)<a class="headerlink" href="#recording-supporting-mic-input" title="Link to this heading"></a></h3>
+<p>Select the desktop “<img alt="Image" src="_images/1719455496628_b576a129_2beb_4d4c_8e38_843016c5e9f7.png" />” Recorder application to enter the recording, and ask for permission when you use it for the first time:</p>
+<p><img alt="Image" src="_images/1719455496942_3f9200a4_c429_481e_aaa2_0cb2814b1867.png" /></p>
+<p>Click “Yes”:</p>
+<p><img alt="Image" src="_images/1719455497137_5cbbe9de_8684_4c2c_bb89_120cb3f4331c.png" /></p>
+<p>Click the circle button to start recording:</p>
+<p><img alt="Image" src="_images/1719455497360_b06f7d22_a3b6_4dcb_a2d0_00a730310d5a.png" /></p>
+<p><img alt="Image" src="_images/1719455497562_ccc948fb_a56a_4ea6_95eb_f84da89f2364.png" /></p>
+<p>Click on the square button to stop recording, click on the triangle button to play, and finally, click the Done button to save. Saved files are stored in the File Manager internal storage.</p>
+<p><img alt="Image" src="_images/1719455498022_091c418b_3354_4c38_8019_f075bdc06682.png" /></p>
+<p><img alt="Image" src="_images/1719455498301_6a1f97ab_aee5_4260_867d_14f264a6f491.png" /></p>
+</section>
+<section id="adjusting-the-volume">
+<h3>3.7 Adjusting the Volume<a class="headerlink" href="#adjusting-the-volume" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719455498501_0e4289b0_84a2_4d24_8682_40402fe06f06.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719455498678_97ebc029_9738_41d5_bb4e_95a4ac935342.png" /></p>
+<p>Click “Sound” in the settings interface to enter the volume settings interface.</p>
+<p><img alt="Image" src="_images/1719455498883_4495e5f8_e067_48e3_b0eb_ed9ea750583a.png" /></p>
+<p>In this interface, the volume of each part can be adjusted, and the media volume can be adjusted by using the physical key K2 on the carrier board.</p>
+</section>
+<section id="backlight-control">
+<h3>3.8 Backlight Control<a class="headerlink" href="#backlight-control" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719455499179_9315e351_c9ea_4e63_bf92_ccfe24a9728a.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719455499492_ff1cdf5f_5d9e_4835_b2fd_006fa8aea025.png" /></p>
+<p>Click “Display” in the setting interface, enter the display setting interface, and select “Brightness” for the backlight setting, then the brightness adjustment slider will appear, adjust the brightness. Because the development board provided by Forlinx has no light perception, the automatic brightness adjustment here does not work.</p>
+<p>The OKMX8MPQ is factory default set to never hibernate. If you need to wake up from hibernation, click on the hibernate option and select the hibernation time.</p>
+<p><img alt="Image" src="_images/1719455499661_e03af451_5669_4e8a_ae69_935919e5bd28.png" /></p>
+<p><img alt="Image" src="_images/1719455499852_fa65927c_88e5_402f_aae5_3bc840c9228b.png" /></p>
+<p>Drag the slider to set the backlight, and click the sleep button to select the screen sleep time.</p>
+</section>
+<section id="time-settings-rtc">
+<h3>3.9 Time Settings（RTC）<a class="headerlink" href="#time-settings-rtc" title="Link to this heading"></a></h3>
+<p>Click “<img alt="Image" src="_images/1719455500033_ec95af78_e1f0_4c2e_9a83_e5f32ef2520e.png" />”, on the application interface to enter the setting interface:</p>
+<p><img alt="Image" src="_images/1719455500220_1e1f3cd9_a5e2_4ec9_95ab_44abd4b4b026.png" /></p>
+<p>Select “System,” where you can change the date and time, and even after power failure, the time can still be synchronized (ensure that the button battery is installed on the board).</p>
+<p><img alt="Image" src="_images/1719455500505_23afc768_2fea_491a_9fab_0cdad9d0d098.png" /></p>
+<p>To disable “Automatic Date and Time,” please follow these steps:</p>
+<p><img alt="Image" src="_images/1719455500716_c96edd82_227d_434a_a05d_c5982258c526.png" /></p>
+<p>Click on “Set Date.”</p>
+<p><img alt="Image" src="_images/1719455500958_cc625d65_dc55_485a_b852_db1669a8ff30.png" /></p>
+<p>Click on “Set Time.”</p>
+<p><img alt="Image" src="_images/1719455501158_89d82904_06f2_4204_b8e3_ea58c70c50d0.png" /></p>
+<p>After clicking “Set Date” and “Set Time”, you can power off and power on the board, and then enter the time setting interface again, you will see that the time has been synchronized and updated.</p>
+</section>
+<section id="ethernet-test">
+<h3>3.10 Ethernet Test<a class="headerlink" href="#ethernet-test" title="Link to this heading"></a></h3>
+<p>Prepare a router, a network cable, and a network interface that can be connected to an external network;</p>
+<ol class="arabic simple">
+<li><p>After inserting the network cable, select “<img alt="Image" src="_images/1719455501351_8538feba_5973_4508_8239_9d5f86bcb047.png" />”, as shown in the following figure:</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719455501642_8b7afdc4_04be_4ce2_841f_7114017e039f.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Click “Configure Ethernet”:</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719455501940_d2c3db63_f74b_4039_97b3_c455ebd3b295.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>You can choose to obtain IP DHCP or static IP automatically. DHCP is recommended. If you set a static IP, make sure your network parameters are available;</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719455502159_c56141e0_1854_4bec_8112_87e1e6f59c5e.png" /></p>
+<ol class="arabic simple" start="4">
+<li><p>After configuration, click confirm to save the settings;</p></li>
+<li><p>If you need to use a proxy for Internet access, you can set it up in the Advanced Settings option.</p></li>
+</ol>
+<p><strong>Note:</strong> <strong>When 4G, WiFi and Ethernet exist at the same time, Ethernet is preferred by default.</strong></p>
+</section>
+<section id="wifi-test">
+<h3>3.11 WiFi Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
+<p><strong>Note: When testing WiFi, unplug the wired network.</strong></p>
+<p>The WiFi test uses the wifi &amp; Bluetooth integrated module. Select the settings. The interface is as follows:</p>
+<p><img alt="Image" src="_images/1719455502399_f399fda0_943c_42a7_be10_15335fe4e406.png" /></p>
+<section id="id2">
+<h4>3.11.1 WiFi Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<p>Click “Network and Internet” to turn on the WIFI switch.</p>
+<p><img alt="Image" src="_images/1719455502581_7b2db8b8_8cc5_4294_b00a_f6625347dd81.png" /></p>
+<p><img alt="Image" src="_images/1719455502823_7881c929_a04c_4ea6_8340_4f4313fe92a2.png" /></p>
+<p>Click the hotspot you want to connect to and enter the password.</p>
+<p><img alt="Image" src="_images/1719455503030_ae61d066_5e08_4570_9310_1a6e14eabf33.png" /></p>
+<p><img alt="Image" src="_images/1719455503279_f7f9eef2_3c8d_4162_9e21_dbdbaefda52f.png" /></p>
+<p>After the connection is successful, the WebView Browser Tester application on the desktop can be opened for online testing.</p>
+<p><img alt="Image" src="_images/1719455503605_a6cbce6d_1f5e_4373_ac47_359ccad0ade4.png" /></p>
+</section>
+<section id="wifi-hotspot-test">
+<h4>3.11.2 WiFi Hotspot Test<a class="headerlink" href="#wifi-hotspot-test" title="Link to this heading"></a></h4>
+<p>Click on “Network and Internet”</p>
+<p><img alt="Image" src="_images/1719455503951_56f59f60_51c9_4324_aedc_3682089dd14e.png" /></p>
+<p>Click “Hotspot and Network Sharing”:</p>
+<p><img alt="Image" src="_images/1719455504120_702895b2_b0db_45b9_8347_89287d631dbf.png" /></p>
+<p>Open the hotspot after setting the hotspot name and password:</p>
+<p><img alt="Image" src="_images/1719455504330_a14af9e2_632c_4448_bbeb_f5e8e2379487.png" /></p>
+<p><img alt="Image" src="_images/1719455504531_7435c91a_e4ab_4d5a_8ed3_82afdedb944f.png" /></p>
+<p>After the phone is connected to the hotspot, open the browser to test:</p>
+<p><img alt="Image" src="_images/1719455504774_19c90237_4f8d_4bb8_8f15_c1e678f8f847.jpeg" /></p>
+<p><img alt="Image" src="_images/1719455505093_a2f526e3_4462_4423_8635_1e9c09dc65af.jpeg" /></p>
+</section>
+</section>
+<section id="bluetooth-test">
+<h3>3.12 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h3>
+<p>The WiFi &amp; Bluetooth integrated module is used for the Bluetooth function test. The test method is as follows:</p>
+<p>Select Settings:</p>
+<p><img alt="Image" src="_images/1719455505391_7e0f404f_3549_42ed_8321_d9acbcfc8f3e.png" /></p>
+<p>Click Connected Device-&gt; Pair with the new device, and turn on the Bluetooth switch of the mobile phone.</p>
+<p><img alt="Image" src="_images/1719455505587_f405981c_c1ee_43e9_adc6_6ba2039af64c.png" /></p>
+<p><img alt="Image" src="_images/1719455505782_35b494b6_978b_4d6d_a38a_85b907a8c6d7.png" /></p>
+<p>Click the mobile device in the available devices (whichever is actual) to start pairing.</p>
+<p><img alt="Image" src="_images/1719455505997_95f0298b_2eed_4701_b47a_832401f9ee47.png" /></p>
+<p>Click the “Pairing” button on both the mobile phone and the development board.</p>
+<p><img alt="Image" src="_images/1719455506207_8492558a_942d_4ecc_bbf4_becd1733cebc.png" /></p>
+<p>When finished, the successfully paired devices will be displayed in Connected Devices. After successful pairing, Bluetooth can be used for file transfer test.</p>
+</section>
+<section id="key-test">
+<h3>3.13 Key Test<a class="headerlink" href="#key-test" title="Link to this heading"></a></h3>
+<p>There are 5 buttons on the development board, including Vol +, vol-, home, on off, and reset.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Key</strong></p></th>
+<th class="head text-center"><p><strong>Function</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>K1 up</p></td>
+<td class="text-center"><p>Reset</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>K1 down</p></td>
+<td class="text-center"><p>Wake up from sleep</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>K2 up</p></td>
+<td class="text-center"><p>VOL+</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>K2 down</p></td>
+<td class="text-center"><p>VOL-</p></td>
+</tr>
+</tbody>
+</table>
+<p>The factory default setting of OKMX8MPQ is that the screen is always on and does not sleep.</p>
+<p>Press the K1 for a long time to “shut down” and “restart”, and press the K1 and K2 at the same time to take a screen shot.</p>
+<p>The other buttons have simpler functions, so please test them yourself.</p>
+</section>
+<section id="tf-card-and-usb-storage-test">
+<h3>3.14 TF Card and USB Storage Test<a class="headerlink" href="#tf-card-and-usb-storage-test" title="Link to this heading"></a></h3>
+<p>This test is for TF cards and usb storage devices. Insert the TF card device into the development board. The system will automatically detect the insertion of the TF card. For example, click on “SanDisk SD Card” to browse for files.</p>
+<p><img alt="Image" src="_images/1719455506429_9ac63452_f025_4527_9d5c_4bde41703f28.png" /></p>
+<p><img alt="Image" src="_images/1719455506748_b058ae4e_d935_4536_be0e_ccb49121b4ec.png" /></p>
+<p>The usage of a USB flash drive is the same as an TF card, so it won’t be repeated here.</p>
+</section>
+<section id="usb-mouse-test">
+<h3>3.15 USB Mouse Test<a class="headerlink" href="#usb-mouse-test" title="Link to this heading"></a></h3>
+<p>Once the system is running, you can plug in a USB mouse into the USB host. You will then see the mouse cursor “<img alt="Image" src="_images/1719455506969_0d082bb2_ada4_4a23_9d7d_acd97b9c0983.png" />”, within the interface, and you can navigate and operate the Android system using the mouse.</p>
+</section>
+<section id="usb-type-c-interface-test">
+<h3>3.16 USB Type C Interface Test<a class="headerlink" href="#usb-type-c-interface-test" title="Link to this heading"></a></h3>
+<p>The OKMX8MM development board supports the USB type C function, and the USB mouse, USB keyboard, and U disk device can be connected by using the type C to host cable.</p>
+<p>Use the Micro USB adapter to connect the development board and USB flash drive, the system will automatically detect the USB flash drive insertion.</p>
+<p>Click Browse to access the USB device file.</p>
+</section>
+<section id="serial-port-test-and-485-test">
+<h3>3.17 Serial Port Test and 485 Test<a class="headerlink" href="#serial-port-test-and-485-test" title="Link to this heading"></a></h3>
+<p>There are four serial ports in the OKMX8MPQ-C development board, two of which are used by A core, and the remaining one is used by the M4.</p>
+<p>1) UART1 is connected to the Bluetooth module, and the device name is/dev/ttymxc0;</p>
+<p>2) UART2 is the debugging serial port, and the device name is/dev/ttymxc1;</p>
+<p>3) UART3 is used as 485 interface, device name:/dev/ttymxc2.</p>
+<p>In addition to the native serial port, we also extended four serial ports through the USB-to-serial port chip:</p>
+<p>1）UARTA, device name ：/dev/ttyXRUSB0.</p>
+<p>2）UARTB, device name ：/dev/ ttyXRUSB1.</p>
+<p>3）UARTC, device name ：/dev/ ttyXRUSB2.</p>
+<p>4）UARTD, device name ：/dev/ttyXRUSB3.</p>
+<p><img alt="Image" src="_images/1719455507266_b3e7ba26_0e99_4ca2_8394_448d30b8e3cb.png" /></p>
+<p><img alt="Image" src="_images/1719455507460_c0880a87_454b_4a8e_9323_b2a70be6c2a7.png" /></p>
+<ul class="simple">
+<li><p><strong>485 Test</strong></p></li>
+</ul>
+<p>First, connect the USB to 485 device to the PC and the development board, enter the system, select “<img alt="Image" src="_images/1719455507641_0770a365_90bc_4dd9_87f0_09147077308c.png" />”, and the test interface appears.</p>
+<ol class="arabic simple">
+<li><p>Click the “Setup” button to set the port, baud rate data bit and other parameters respectively before the next operation;</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719455507861_97542cf6_8e20_4836_aacb_9f4f3aa1abaa.png" /></p>
+<p><img alt="Image" src="_images/1719455508048_baffcccf_ae06_414c_b7a0_983bd0427c9c.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Click “Console” button;</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719455508236_136a2d80_2ae0_4f30_b57f_593c8b702b0d.png" /></p>
+<p>Open the serial port assistant on the PC and select to set the corresponding parameters. Sends a string to the board.</p>
+<p><img alt="Image" src="_images/1719455508463_e98d0e1c_3eb1_4748_ae92_8e05517d0dfe.png" /></p>
+<p>Under normal circumstances, the development board can receive the string sent by the PC.</p>
+<p><img alt="Image" src="_images/1719455508662_ea1c5d78_dad4_4b35_a87e_32775def43e7.png" /></p>
+<ul class="simple">
+<li><p><strong>Serial Test</strong></p></li>
+</ul>
+<p>The loop test method can be used to test the serial port. According to the schematic diagram, the receiving and transmitting pins of USBA are short-circuited.</p>
+<p><img alt="Image" src="_images/1719455508914_4eee09c8_60ad_4c22_a8d9_e093134aff06.png" /></p>
+<p>Click the “SETUP” button to select the device node corresponding to USBA.</p>
+<p><img alt="Image" src="_images/1719455509150_ff1355bb_15fd_469a_a6f9_53993177d861.png" /></p>
+<p><img alt="Image" src="_images/1719455509313_a58db127_81e5_4d47_8723_d11289c6718d.png" /></p>
+<p>Click the “Loopback” option in the previous menu to perform the loopback test.</p>
+<p><img alt="Image" src="_images/1719455509548_f6e08059_297a_4439_b755_053b8f9ff196.png" /></p>
+</section>
+<section id="spi-loopback-test">
+<h3>3.18 SPI Loopback Test<a class="headerlink" href="#spi-loopback-test" title="Link to this heading"></a></h3>
+<p>OKMX8MPQ exports SPI interface as spidev. Click the “forlinx _ SPI _ test” Application “on the desktop to perform the SPI loopback test.</p>
+<p><img alt="Image" src="_images/1719455509753_485fc383_32da_47ec_98e1_84fcbde135a6.png" /></p>
+<p>Click the Send button. The receive fails because there is no loopback on the hardware.</p>
+<p><img alt="Image" src="_images/1719455509955_1d298c32_63b1_4851_8855_fa5d2c6297b2.png" /></p>
+<p>According to the schematic diagram, short the MOSI and MISO pins of the two SPI respectively.</p>
+<p><img alt="Image" src="_images/1719455510182_a1e4b92b_db44_4581_804d_c362bbf40768.png" /></p>
+<p>Click the Send button here.</p>
+<p><img alt="Image" src="_images/1719455510378_9eda8aa7_9fb0_4c79_860b_dc7ed2bd464d.png" /></p>
+</section>
+<section id="camera-test">
+<h3>3.19 Camera Test<a class="headerlink" href="#camera-test" title="Link to this heading"></a></h3>
+<p>The OKMX8MPQ-C SoM supports the ov5645 MIPI camera and the daA3840-30mc MIPI camera, with the ov5645 MIPI used as the front-facing camera and the daA3840-30mc MIPI used as the rear-facing camera. The ov5645 MIPI supports a maximum photo resolution of 1920x1080 and 1080P video at 30 frames per second. The daA3840 - 30mc MIPI supports 1920x1080 photo shooting and 1080P video at 60 frames per second.</p>
+<p>Use the Android built-in program “Camera” to test, click the application “<img alt="Image" src="_images/1719455510603_5072adcb_0030_45fb_910d_0f56ffb7df9e.png" />” to start the test program, select “Allow only when using the application” in the permission inquiry interface, select Allow when asking the camera to access the device file, and click the next page to enter the application.</p>
+<p><img alt="Image" src="_images/1719455510799_48fc5db5_c96c_4901_964a_6b780ddfd8cd.png" /></p>
+<p><img alt="Image" src="_images/1719455511006_98c2a497_5487_4cba_8e4d_00eb1c8e0060.png" /></p>
+<p><img alt="Image" src="_images/1719455511319_c97eb8cd_2790_415a_9f3c_f5c0693edf51.png" /></p>
+<p><img alt="Image" src="_images/1719455511522_472330a7_bcdb_4d2e_8760_56d0f8ddcb23.png" /></p>
+<p><img alt="Image" src="_images/1719455511731_454cff1b_1cec_42a2_b638_3a374013c772.png" /></p>
+<section id="taking-photo-test">
+<h4>3.19.1 Taking Photo Test<a class="headerlink" href="#taking-photo-test" title="Link to this heading"></a></h4>
+<p>In the camera application, slide to the right, and the camera and video options appear. Click Settings to enter the setting interface. Select the resolution and picture quality to set the front and rear cameras according to the requirements. After setting, select the camera function to take photos.</p>
+<p><img alt="Image" src="_images/1719455512025_df95ea1d_1ffa_4544_8a79_5375c5d87555.png" /></p>
+<p><img alt="Image" src="_images/1719455512335_5e0e9bff_e193_4512_921a_2570ea0b9ca4.png" /></p>
+<p><img alt="Image" src="_images/1719455512632_94f541c2_c5e6_4c93_a342_af02f6842bda.png" /></p>
+<p><img alt="Image" src="_images/1719455512838_29e33633_043b_4e40_b424_bbd31b10c716.png" /></p>
+<p><img alt="Image" src="_images/1719455513147_7c263a21_7e76_4ebd_9090_ce5a85997791.png" /></p>
+<p>The camera interface displays the preview of the current camera. Click the photo button to take a photo.</p>
+<p><img alt="Image" src="_images/1719455513588_4dcde255_4432_48da_8af9_598fe9f77b37.png" /></p>
+<p>Click the icon “<img alt="Image" src="_images/1719455513905_0773dd49_d325_493a_b3f3_da464dc20d97.png" />” to pop up the photo setting interface, and click the first icon to switch the front and rear cameras.</p>
+<p><img alt="Image" src="_images/1719455514185_435de789_9559_4158_825b_78ca01fdf53b.png" /></p>
+<p><img alt="Image" src="_images/1719455514681_311add41_a37c_4f48_bc02_1375b9cf3c46.png" /></p>
+</section>
+<section id="audio-test">
+<h4>3.19.2 Audio Test<a class="headerlink" href="#audio-test" title="Link to this heading"></a></h4>
+<p>In the camera application, slide to the right, and the camera and video options appear. Click Settings to enter the setting interface. Select the resolution and picture quality to set the front and rear cameras according to the requirements. After setting, select the camera function to take photos.</p>
+<p><img alt="Image" src="_images/1719455515044_e388a8aa_f24d_4e55_bf90_68ab9b1fd96b.png" /></p>
+<p><img alt="Image" src="_images/1719455515255_7dc760e3_5ae8_4298_b8db_9de81bfff1b6.png" /></p>
+<p><img alt="Image" src="_images/1719455515452_4a15a2f2_97b0_43c7_aadc_9f91100e5827.png" /></p>
+<p><img alt="Image" src="_images/1719455515704_0a811e78_6e25_43e6_bd47_76fb48c60251.png" /></p>
+<p>The video interface displays the preview of the current camera. Click the Record button to record, and click Stop to finish recording.</p>
+<p><img alt="Image" src="_images/1719455516117_718c4fd8_ae16_4be3_aea3_64c3063c7587.png" /></p>
+<p><img alt="Image" src="_images/1719455516875_db91ecd2_00c5_4438_a26f_01265a883ed2.png" /></p>
+<p>Click the icon “<img alt="Image" src="_images/1719455517135_af3ed15b_0352_4475_a3f0_9bdcbaca600f.png" />” to pop up the photo setting interface, and click the first icon to switch the front and rear cameras.</p>
+<p><img alt="Image" src="_images/1719455517435_9dd92c78_cfa4_4d3d_ae51_5ef479a60a32.png" /></p>
+<p><img alt="Image" src="_images/1719455517925_f1975982_7cfd_40e1_9078_210d56192409.png" /></p>
+</section>
+</section>
+<section id="g-test">
+<h3>3.20 4G Test<a class="headerlink" href="#g-test" title="Link to this heading"></a></h3>
+<p>The OKMX8MPQ-C supports EC20 4G modules.</p>
+<p><strong>Note: Before starting the development board, connect the 4G module, set the position of the OKMX8MPQ-C carrier board S3 to OFF, insert the SIM card, and start the development board.</strong></p>
+<p>After the system starts, the status bar shows that the 4G network is connected and the signal strength is displayed.</p>
+<p><img alt="Image" src="_images/1719455518386_ee8f9d4c_df60_4511_84ae_7f4bea784730.png" /></p>
+<p>Open the browser and enter the URL to test.</p>
+<p><img alt="Image" src="_images/1719455518820_4f37a018_fa04_4ad8_a106_849a92884247.png" /></p>
+</section>
+<section id="id3">
+<h3>3.21 5G Test<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>The OKMX8MPQ-C supports the RM500U 5G module.</p>
+<p><strong>Note: Before starting the development board, connect the 5G module, set the position of the OKMX8MPQ-C carrier board S3 to ON, insert the SIM card, and start the development board.</strong></p>
+<p>After the system starts, the status bar shows that the 5G network is connected and the signal strength is displayed.</p>
+<p><img alt="Image" src="_images/1719455521937_e4f3c54e_1ea5_442f_9936_30a5c18e351b.png" /></p>
+<p>Open the browser and enter the URL to test.</p>
+<p><img alt="Image" src="_images/1719455522234_857fed08_0f6b_4e26_8e94_768b05bc5e3b.png" /></p>
+</section>
+<section id="can-test">
+<h3>3.22 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h3>
+<p>The OKMX8MPQ-C development board supports 2 x CAN and can support operation in CAN FD mode. The test in this chapter is demonstrated by testing two development boards. Before the test, connect one of the can interfaces of one development board to the can interface of the other development board, CAN _ H to CAN _ H, and CAN _ L to CAN _ L.</p>
+<section id="can-2-0b-test">
+<h4>3.22.1 CAN 2.0B Test<a class="headerlink" href="#can-2-0b-test" title="Link to this heading"></a></h4>
+<p>Start the test program “Can Test”, select “CAN 2.0B TEST”, click “SETTING” for configuration, choose to use can0 or can1, set the baud rate, and then return to the test interface.</p>
+<p><strong>Note: The CAN interface is reconfigured by detecting changes in the CAN mode. Currently, the CAN interface is configured by default to operate in CAN 2.0B mode with a baud rate of 125000. However, the CAN interface is not opened by default. When it is necessary to operate the CAN in CAN 2.0B mode at 125000 baud rate, the rate needs to be set to a different baud rate first and then changed to 125000. This issue will be fixed in the future.</strong></p>
+<p><img alt="Image" src="_images/1719455522517_d0768140_9d3f_44be_99c8_9dc3181e8620.png" /></p>
+<p><img alt="Image" src="_images/1719455522760_447a46d4_ee29_4558_b424_e5bcf5fa778f.png" /></p>
+<p><img alt="Image" src="_images/1719455522981_8be1f417_728e_4cbc_bf30_5c400216a7d2.png" /></p>
+<p><img alt="Image" src="_images/1719455523230_0a4053e6_d1a5_4576_b38e_76890eee7840.png" /></p>
+<p><img alt="Image" src="_images/1719455523438_7a1b49a9_a72f_4345_beb8_aa99fab22f39.png" /></p>
+<p>Set up the two development boards according to the above method and start the test.</p>
+<p>Enter the CANID (32-bit) and CAN DATA (up to 64 bits) for transmission. Input is in hexadecimal format (0-F, case-insensitive) without any spaces or additional characters between each byte. After inputting the data, click “SEND” to transmit.</p>
+<ul class="simple">
+<li><p><strong>Test 1: Development board 1 sends, and development board 2 receives.</strong></p></li>
+</ul>
+<p>Development board 1 sends:</p>
+<p><img alt="Image" src="_images/1719455523666_0f69d87a_8812_4ad1_82b9_18a3b0bd084b.png" /></p>
+<p>Development board 2 sends:</p>
+<p><img alt="Image" src="_images/1719455523905_3040a7cc_5a20_479c_9f55_a580c9789f46.png" /></p>
+<ul class="simple">
+<li><p><strong>Test 2: Development board 2 sends and development board 1 receives.</strong></p></li>
+</ul>
+<p>Development board 2 sends:</p>
+<p><img alt="Image" src="_images/1719455524165_a24162e7_1580_485c_b351_f459c11f3f14.png" /></p>
+<p>Development board 1 sends:</p>
+<p><img alt="Image" src="_images/1719455524397_981287fe_3e26_4d6e_b89f_c1ca3cd07db7.png" /></p>
+</section>
+<section id="can-fd-test">
+<h4>3.22.2 CAN FD Test<a class="headerlink" href="#can-fd-test" title="Link to this heading"></a></h4>
+<p>Start the “Test program” Can Test “, select the” CANFD TEST “”, click “SETTING” to set, select can0 or can1, set the baud rate and CANFD Data baud rate, and then return to the test interface.</p>
+<p><img alt="Image" src="_images/1719455524592_8e419d95_a8fc_4598_bbff_13e411b836dc.png" /></p>
+<p><img alt="Image" src="_images/1719455524765_2892debf_2a76_469c_9e53_321f30158ac9.png" /></p>
+<p><img alt="Image" src="_images/1719455524997_6bb8af34_61b7_409a_9fad_8c0bad0fdf08.png" /></p>
+<p><img alt="Image" src="_images/1719455525247_0ce90a71_7080_4491_88e2_12cae7c89596.png" /></p>
+<p>Set up the two development boards according to the above method and start the test.</p>
+<p>Input the transmitted CANID (32 bits) and CAN DATA (512 bits at most). The input is hexadecimal (0-F is not case-sensitive). No space or other characters are added to each byte. After the input is completed, if the input is CANFD Frame Enable Send CanFdFrame Enable “, If CANFD data is sent at different baud rates, enable the “Can Fd Bit Rate Switch Flag” “, and then click” SEND “to send.</p>
+<ul class="simple">
+<li><p><strong>Board 1 sends, board 2 receives:</strong></p></li>
+</ul>
+<p><img alt="Image" src="_images/1719455525476_036c9d09_bdee_471e_a135_d1dcf2a72b69.png" /></p>
+<p><img alt="Image" src="_images/1719455525684_28163cc9_2829_47d3_a050_a924f99c0557.png" /></p>
+<ul class="simple">
+<li><p><strong>Board 2 sends, board 1 receives:</strong></p></li>
+</ul>
+<p><img alt="Image" src="_images/1719455525908_b35c681a_f827_4067_a3e4_0ea0abe43f9f.png" /></p>
+<p><img alt="Image" src="_images/1719455526227_8c79162c_a498_4c7d_ad82_689279890e0c.png" /></p>
+</section>
+</section>
+</section>
+<section id="system-flashing">
+<h2>4. System Flashing<a class="headerlink" href="#system-flashing" title="Link to this heading"></a></h2>
+<section id="flashing-the-image-with-uuu">
+<h3>4.1 Flashing the Image with UUU<a class="headerlink" href="#flashing-the-image-with-uuu" title="Link to this heading"></a></h3>
+<p>UUU is a command-line tool that can be used to flash images onto the OKMX8MM development board in Linux or Windows environments. For the Android system, NXP provides integrated scripts for both Linux (uuu_imx_android_flash.sh) and Windows (uuu_imx_android_flash.bat) platforms. Here are the instructions for using each of these two tools.</p>
+<p>uuu_imx_android_flash parameter description:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>-h</p></td>
+<td><p>help</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-f</p></td>
+<td><p>soc_name</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-a</p></td>
+<td><p>flash only slot _ a</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-b</p></td>
+<td><p>flash only slot _ b</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-c</p></td>
+<td><p>Default use partition-table. img<br/>-c 7; use partition-table -7 GB. img (8g emmc)<br/>-C 14; use partition-table -14 GB. img (16g emmc)<br/>-C 28 up partition-table-28GB.img(32G emmc)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-m</p></td>
+<td><p>Flash Cortex-M7 image</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-d</p></td>
+<td><p>Flash a specific dtbo vbmeta recovery image</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-e</p></td>
+<td><p>Erase the userdata partition after the write is complete.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-l</p></td>
+<td><p>Lock the device after flashing is complete.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-D</p></td>
+<td><p>Image path, use current path by default without specifying</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-s</p></td>
+<td><p>Serial port number, used when multiple devices are connected to the PC at the same times.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following describes the use of UUU tools under Linux and Windows respectively.</p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Do not use the uuu_imx_android_flash.sh generated by the android environment compiler. Please use “User Profile Tool \uuu_imx_android_flash.sh”;</strong></p></li>
+<li><p><strong>Plug the OTG cable into the Linux host’s USB port If you are using a virtual machine, move the following devices to the virtual machine.</strong></p></li>
+</ul>
+<p><img alt="Image" src="_images/1719455534234_4a4006cb_460b_48fe_b773_271a331cf9ca.png" /></p>
+<section id="use-of-the-uuu-imx-android-flash-sh-tool-on-linux">
+<h4>4.1.1 Use of the uuu_imx_android_flash.sh tool on Linux<a class="headerlink" href="#use-of-the-uuu-imx-android-flash-sh-tool-on-linux" title="Link to this heading"></a></h4>
+<p><strong>Path: OKMX8MPQ-C (Android) User Profile \ Tool</strong></p>
+<p>Copy the uuu of the tool directory in the downloaded user profile to the/usr/bin/directory and add executable permissions. Copy uuu_imx_android_flash.sh to the /home/forlinx/imx8mp/uuu directory.</p>
+<p><strong>Note: Do not use the uuu_imx_android_flash.sh generated by the android environment compilation. Meanwhile, if the fastboot version is too low, the device cannot be identified. Please extract the tools such as the fastboot adb in the platform-tools _ r28.0.3- Linux. zip in the CD tool directory to the/usr/bin directory and add executable permissions.</strong></p>
+<ol class="arabic simple">
+<li><p>Plug the type C cable into the USB port of the Linux host. If you are using a virtual machine, move the following devices to the virtual machine;</p></li>
+</ol>
+<p><img alt="Image" src="_images/1719455534526_cd31cc63_2126_4c17_bca4_8ee0e4c3e2c5.png" /></p>
+<p><img alt="Image" src="_images/1719455534766_61c6bf63_bdd0_4f24_9099_8a8a38ebd2a1.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Copy the compiled image (<em>. img and u-boot</em> to the/home/forlinx/imx8mp/uuu directory;</p></li>
+</ol>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Copy the compiled image (*.img and u-*) to the/home/forlinx/imx8mp/uuu directory. Where. img is a fully compiled generated file, because u-boot is not open source. Therefore, you need to copy the “u-boot-imx8mp.imx” and “u-boot-imx8mp-evk” uuu. Imx “under the” user information/Android/image/uuu/ “path to the/home/forlinx/imx8mp/uuu directory;</strong></p></li>
+<li><p><strong>If the user has not compiled the source code and simply uses the image in the user profile to flash, you can directly copy the (*.img and u-boot *) under the path of “user profile/Android/image/uuu/” to the directory of/home/forlinx/imx8mp/uuu;</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>According to the schematic diagram, change the dial-up startup mode to USB, and start the development board;</strong></p></li>
+<li><p><strong>Enter the following command to enter the corresponding path for programming:</strong></p></li>
+</ul>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu: ~$ cd /home/forlinx/imx8mp/uuu
+forlinx@ubuntu: ~/imx8mp/uuu$ sudo ./uuu_imx_android_flash.sh -f imx8mp -e
+</pre></div>
+</div>
+<p><strong>Note: Do not insert the TF card when flashing.</strong></p>
+<p>Once the flashing process begins, you will receive a prompt to connect the device to the host machine or virtual machine. Please actively select the option to connect it to the virtual machine.</p>
+<p><img alt="Image" src="_images/1719455534985_e7541fe1_85b8_48d5_ad4f_447a57df2e74.png" /></p>
+<p>Wait for the flashing process to complete. A successful flashing operation will be indicated as shown in the following image:</p>
+<p><img alt="Image" src="_images/1719455535331_88ba1401_fbdf_4aa2_9e59_a6cec0c63bfc.png" /></p>
+</section>
+<section id="use-of-uuu-imx-android-flash-bat-tool-on-windows">
+<h4>4.1.2 Use of uuu_imx_android_flash.bat Tool on Windows.<a class="headerlink" href="#use-of-uuu-imx-android-flash-bat-tool-on-windows" title="Link to this heading"></a></h4>
+<p><strong>Note: The command line window must be run with administrator privileges when flashing uuu.</strong></p>
+<p>Step 1: Copy file;</p>
+<p>Path: OKMX8MPQ-C (Android) User Profile \ Tool\uuu.exe</p>
+<p>Copy uuu.exe from the downloaded material to the C:\Windows\System32 directory.</p>
+<p>Path: OKMX8MPQ-C (Android) User Profile\Tools\platform-tools_r28.0.3-windows.zip</p>
+<p>Extract the platform-tools_r28.0.3-windows.zip file from the user profile tools directory to C:\Windows\System32, or to C:\Windows\SysWOW64 for 64-bit windows systems.</p>
+<p>Step 2: Connect the USB interface of the host to the Type-C interface of the development board using an OTG cable, then set the dip switch to [specific setting], remove the TF card, and power on the development board;</p>
+<p>Step 3: Check the installation.</p>
+<p>By clicking on the start menu, type “cmd” in the search box at the bottom of the start menu, and press enter on cmd.exe to open the DOS window. In the DOS window, type “uuu” and press enter.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>C:\Users\Administrator&gt;uuu
+uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.4.139-0-g1a8f760
+
+uuu [-d -m -v -V] &lt;bootloader|cmdlists|cmd&gt;
+
+    bootloader  download bootloader to board by usb
+    cmdlist     run all commands in cmdlist file
+                If it is path, search uuu.auto in dir
+                If it is zip, search uuu.auto in zip
+    cmd         Run one command, use -H see detail
+                example: SDPS: boot -f flash.bin
+    -d          Daemon mode, wait for forever.
+    -v -V       verbose mode, -V enable libusb error\warning info
+    -m          USBPATH Only monitor these paths.
+                    -m 1:2 -m 1:3
+[…]
+Register-ArgumentCompleter -CommandName uuu -ScriptBlock {param($commandName,$parameterName,$wordToComplete,$commandAst,$fakeBoundParameter); C:\WINDOWS\system32\uuu.exe -autocomplete $parameterName }
+</pre></div>
+</div>
+<p>Switch to the directory where the extracted files are located.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Microsoft Windows [Copyrights 10.0.19044.1645]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator&gt;cd c:\
+c:\&gt;cd \Windows\System32\platform-tools
+</pre></div>
+</div>
+<p>Enter fastboot -h Confirm whether the installation is successful.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>c:\Windows\System32\platform-tools&gt;fastboot -h
+usage: fastboot [OPTION...] COMMAND...
+
+flashing:
+ update ZIP                 Flash all partitions from an update.zip package.
+ flashall                   Flash all partitions from $ANDROID_PRODUCT_OUT.
+                            On A/B devices, flashed slot is set as active.
+                            Secondary images may be flashed to inactive slot.
+ flash PARTITION [FILENAME] Flash given partition, using the image from
+                            $ANDROID_PRODUCT_OUT if no filename is given.
+[…]
+options:
+[…]
+ --version                  Display version.
+ --help, -h                 Show this message.
+</pre></div>
+</div>
+<p>Enter adb Confirm whether the installation is successful.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>c:\Windows\System32\platform-tools&gt;adb
+Android Debug Bridge version 1.0.41
+Version 28.0.3-5475833
+Installed as c:\Windows\System32\platform-tools\adb.exe
+
+global options:
+ -a         listen on all network interfaces, not just localhost
+ -d         use USB device (error if multiple devices connected)
+ -e         use TCP/IP device (error if multiple TCP/IP devices available)
+ -s SERIAL  use device with given serial (overrides $ANDROID_SERIAL)
+ -t ID      use device with given transport id
+ -H         name of adb server host [default=localhost]
+ -P         port of adb server [default=5037]
+ -L SOCKET  listen on given socket for adb server [default=tcp:localhost:5037]
+[…]
+environment variables:
+[…]
+ $ANDROID_LOG_TAGS        tags to be used by logcat (see logcat --help)
+ $ADB_LOCAL_TRANSPORT_MAX_PORT max emulator scan port (default 5585, 16 emus)
+</pre></div>
+</div>
+<p><strong>Note: If prompted that api-ms-win-crt-runtime-l1-1-0.dll is missing, install patch KB2999226 on your system.</strong></p>
+<p>Step 4: Create the uuu folder and put the corresponding image in the folder.</p>
+<p>Path: OKMX8MPQ-C (Android) User Profile \ Android \ Image \ uuu.</p>
+<p>Copy the files in the above path to the uuu directory created in any disk other than the C disk, for example, D: \ uuu.</p>
+<p>Step 5: Enter the command to burn in the Windows host.</p>
+<p>Enter the uuu directory:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>C:\WINDOWS\system32&gt; d:
+D:\&gt; cd uuu
+</pre></div>
+</div>
+<p>Flash system image:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>D:\uuu&gt; uuu_imx_android_flash.bat -f imx8mp -e
+</pre></div>
+</div>
+<p>Successful burning is shown in the following figure:</p>
+<p><img alt="Image" src="_images/1719455535608_faff5f32_f770_4e92_a5bc_079665393307.png" /></p>
+<p>When uuu burns, an error occurs as shown in the figure, you can re-plug the usb cable to ensure that the usb is not mounted to the virtual machine.</p>
+<p><img alt="Image" src="_images/1719455535872_71947182_aa06_4c66_984a_cda37805f137.png" /></p>
+</section>
+</section>
+<section id="flashing-the-image-with-tf">
+<h3>4.2 Flashing the Image with TF<a class="headerlink" href="#flashing-the-image-with-tf" title="Link to this heading"></a></h3>
+<section id="making-and-writing-tf-card">
+<h4>4.2.1 Making and Writing TF Card<a class="headerlink" href="#making-and-writing-tf-card" title="Link to this heading"></a></h4>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>When using a TF card to burn the system, please use a genuine TF card with a capacity of 8G and above to test;</strong></p></li>
+<li><p><strong>Before making card, you need to format the TF card to the FAT32 format. Insert the TF card into the PC using a USB card reader</strong>.</p></li>
+<li><p><strong>Path: OKMX8MPQ-C (Android) User Profile\tool\sdfuse.</strong></p></li>
+</ul>
+<p>Copy the sdfuse folder in the CD material to the virtual machine/home/forlinx/imx8mp/tools/sdfuse directory, and insert the TF card into the virtual machine.</p>
+<p>Enter the flashing directory:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/imx8mp/tools/sdfuse
+</pre></div>
+</div>
+<p>Execute the business card printing script:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/tools/sdfuse$ sudo ./mksdcard8mp.sh
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/1719455536087_b4de7d21_77d4_4b9e_9049_10374fd415c6.png" /></p>
+<p>Select the TF card device, taking “1” as an example.</p>
+<p><img alt="Image" src="_images/1719455536421_921d3823_8ff5_4c70_bac0_161195ce7e07.png" /></p>
+<p>Enter “y” to confirm.</p>
+<p><img alt="Image" src="_images/1719455536798_fc9cd7e0_430c_4c26_93a9_956f591ba3cf.png" /></p>
+<p>Production is complete.</p>
+<p><strong>Note: After business card printing according to the script at this time, the TF card will be automatically unloaded. If you want to still mount it on the development environment after business card printing is completed, you need to modify the business card printing script mksdcard8mp.sh:</strong></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/tools/sdfuse$ vi mksdcard8mp.sh
+[…]
+for i in `ls -1 $DRIVE?`; do
+        echo &quot;unmounting device &#39;$i&#39;&quot;
+#       umount $i 2&gt;/dev/null          //Comment out the command at the end of the script
+done
+</pre></div>
+</div>
+</section>
+<section id="copying-and-writing-image">
+<h4>4.2.2 Copying and Writing Image<a class="headerlink" href="#copying-and-writing-image" title="Link to this heading"></a></h4>
+<p>The factory image can be copied to the FAT32 partition of the TF card in the downloaded data, and the image is in the following path</p>
+<p>Path: OKMX8MPQ-C (Android) user profile \ Android \ image \ tfcard</p>
+<p>Specific options to be copied are shown in the table below.</p>
+<p>Copy the android image and the burning tool to the FAT32 partition of the burning TF card.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>File</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>config.ini</p></td>
+<td><p>Flash configuration files, in the tools/sdfuse directory</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ramdisk.img</p></td>
+<td><p>Flash configuration files, in the tools/sdfuse directory</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>imx-boot.bin</p></td>
+<td><p>The card provisioning file is located in the tools/sdfuse directory</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>dtbo-imx8mp.img</p></td>
+<td><p>Flash image, compile and generate</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>partition-table.img</p></td>
+<td><p>Flash image, compile and generate</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>vendor_boot.img</p></td>
+<td><p>Flash image, compile and generate</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>u-boot-imx8mp.imx</p></td>
+<td><p>Flash image, compile and generate</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>vbmeta-imx8mp.img</p></td>
+<td><p>Flash image, compile and generate</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>boot.img</p></td>
+<td><p>Flash image, compile and generate</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>logo_raw.img</p></td>
+<td><p>Flash image, generated using logo.img</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>super_raw.img</p></td>
+<td><p>Flash image, generated using super.img</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>kernel</p></td>
+<td><p>Image and OK8MP.dtb are placed in the folder, which is used to boot during the burning phase</p></td>
+</tr>
+</tbody>
+</table>
+<p>How to generate logo_raw.img and system_raw.img:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/imx8mp/tools/sdfuse$ simg2img logo.img logo_raw.img
+forlinx@ubuntu:~/imx8mp/tools/sdfuse$ simg2img super.img super_raw.img
+</pre></div>
+</div>
+<p>If simg2img is not found, use the sudo apt-get install android-tools-fsutil command to install it.</p>
+</section>
+<section id="tf-card-flashing-test">
+<h4>4.2.3 TF Card Flashing Test<a class="headerlink" href="#tf-card-flashing-test" title="Link to this heading"></a></h4>
+<p>Turn off the power of the development board, insert the TF card into the TF card holder, and set the startup dial code to the TF card startup state according to the schematic diagram</p>
+<p>Turn on the power switch, and the development board will automatically start to enter the flashing program. Please pay attention to the flashing progress by debugging the serial port or observing the flashing change of the heartbeat lamp D1. When D1 flashes once per second, it indicates that the flashing is completed.</p>
+<p><img alt="Image" src="_images/1719455537022_0819d536_16de_4602_b5e5_b551afb1ae69.png" /></p>
+<p><img alt="Image" src="_images/1719455537218_78acac2a_2b66_4fbc_a2dd_4ce13610c722.png" /></p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

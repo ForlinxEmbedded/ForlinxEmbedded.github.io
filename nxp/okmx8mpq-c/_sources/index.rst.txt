@@ -29,6 +29,8 @@ SOFTWARE
 
    OK-MX8MPQ-C_Linux6_1_36_User_Manual
    OK_MX8MPQ-C_Linux6_1_36_User_Compilation_Manual
+   OK-MX8MPQ-C_Android11_User_Manual
+   OK-MX8MPQ-C_Android11_User_Compilation_Manual
    
    
 
