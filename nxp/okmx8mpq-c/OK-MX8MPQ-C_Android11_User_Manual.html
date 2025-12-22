@@ -262,31 +262,108 @@ mmcblk2p1  sda1
 <p><strong>This software manual will no longer describe the hardware parameters. Before referring to this manual for software development, please download and read the “OKMX8MPQ-C_Hardware Manual” located in the “Hardware Information/User Manual” path (download method is the same as software documentation). This will help you understand the product naming conventions and the hardware configuration information of the product you are using, which will assist you in using this product effectively.</strong></p>
 <section id="introduction-to-linux-5-4-70-system-software-resources">
 <h3>1.1 Introduction to Linux 5.4.70 System Software Resources<a class="headerlink" href="#introduction-to-linux-5-4-70-system-software-resources" title="Link to this heading"></a></h3>
-<p>| <strong>Device</strong>| <strong>Location of driver source code in the kernel</strong>| <strong>Device Name</strong>|
-|———-|———-|———-||
-| LCD Backlight Driver| drivers/video/backlight/pwm_bl.c| /sys/class/backlight|
-| USB Port| drivers/usb/storage/|
-| USB Mouse| drivers/hid/usbhid/| /dev/input/mice|
-| Ethernet| drivers/net/ethernet/freescale/fec_main.c|
-| SD/micro TF card driver| drivers/mmc/host/sdhci-esdhc-imx.c| /dev/block/mmcblk0pX|
-| EMMC Driver| drivers/mmc/host/sdhci-esdhc-imx.c| /dev/block/mmcblk1pX|
-| OV5645| drivers/media/i2c/ov5645.c| /dev/videoX|
-| LCD Controller| drivers/gpu/imx/lcdif/lcdif-common.c|
-| MIPI CSI| drivers/media/platform/mxc/capture/mxc_mipi_csi.c|
-| MIPI DSI| drivers/gpu/drm/imx/sec_mipi_dsim-imx.c|
-| LCD Touch Driver| drivers/input/touchscreen/edt-ft5x06.c| /dev/input/eventX|
-| RTC Real Time Clock Driver| drivers/rtc/rtc-rx8010.c| /dev/rtc0|
-| serial port| drivers/tty/serial/imx.c| /dev/ttySX|
-| Key Driver| drivers/input/keyboard/gpio_keys.c| /dev/input/eventX|
-| LED| drivers/leds/leds-gpio.c|
-| SAI| sound/soc/fsl/fsl_sai.c|
-| Audio Driver| sound/soc/codecs/wm8960.c| /dev/snd/|
-| PMIC| drivers/mfd/bd71837.c|
-| PCIE| drivers/pci/controller/dwc/pcie-designware-plat.c|
-| QSPI| drivers/mtd/spi-nor/spi-nor.c|
-| Watchdog| drivers/watchdog/imx2_wdt.c|
-| SPI| drivers/spi/spi-imx.c|
-| PWM| drivers/pwm/pwm-imx.c|</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Device</strong></p></th>
+<th class="head"><p><strong>Location of driver source code in the kernel</strong></p></th>
+<th class="head"><p><strong>Device Name</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LCD Backlight Driver</p></td>
+<td><p>drivers/video/backlight/pwm_bl.c</p></td>
+<td><p>/sys/class/backlight</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB Port</p></td>
+<td><p>drivers/usb/storage/</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>USB Mouse</p></td>
+<td><p>drivers/hid/usbhid/</p></td>
+<td><p>/dev/input/mice</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ethernet</p></td>
+<td><p>drivers/net/ethernet/freescale/fec_main.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>SD/micro TF card driver</p></td>
+<td><p>drivers/mmc/host/sdhci-esdhc-imx.c</p></td>
+<td><p>/dev/block/mmcblk0pX</p></td>
+</tr>
+<tr class="row-odd"><td><p>EMMC Driver</p></td>
+<td><p>drivers/mmc/host/sdhci-esdhc-imx.c</p></td>
+<td><p>/dev/block/mmcblk1pX</p></td>
+</tr>
+<tr class="row-even"><td><p>OV5645</p></td>
+<td><p>drivers/media/i2c/ov5645.c</p></td>
+<td><p>/dev/videoX</p></td>
+</tr>
+<tr class="row-odd"><td><p>LCD Controller</p></td>
+<td><p>drivers/gpu/imx/lcdif/lcdif-common.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>MIPI CSI</p></td>
+<td><p>drivers/media/platform/mxc/capture/mxc_mipi_csi.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>MIPI DSI</p></td>
+<td><p>drivers/gpu/drm/imx/sec_mipi_dsim-imx.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>LCD Touch Driver</p></td>
+<td><p>drivers/input/touchscreen/edt-ft5x06.c</p></td>
+<td><p>/dev/input/eventX</p></td>
+</tr>
+<tr class="row-odd"><td><p>RTC Real Time Clock Driver</p></td>
+<td><p>drivers/rtc/rtc-rx8010.c</p></td>
+<td><p>/dev/rtc0</p></td>
+</tr>
+<tr class="row-even"><td><p>serial port</p></td>
+<td><p>drivers/tty/serial/imx.c</p></td>
+<td><p>/dev/ttySX</p></td>
+</tr>
+<tr class="row-odd"><td><p>Key Driver</p></td>
+<td><p>drivers/input/keyboard/gpio_keys.c</p></td>
+<td><p>/dev/input/eventX</p></td>
+</tr>
+<tr class="row-even"><td><p>LED</p></td>
+<td><p>drivers/leds/leds-gpio.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>SAI</p></td>
+<td><p>sound/soc/fsl/fsl_sai.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Audio Driver</p></td>
+<td><p>sound/soc/codecs/wm8960.c</p></td>
+<td><p>/dev/snd/</p></td>
+</tr>
+<tr class="row-odd"><td><p>PMIC</p></td>
+<td><p>drivers/mfd/bd71837.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>PCIE</p></td>
+<td><p>drivers/pci/controller/dwc/pcie-designware-plat.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>QSPI</p></td>
+<td><p>drivers/mtd/spi-nor/spi-nor.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Watchdog</p></td>
+<td><p>drivers/watchdog/imx2_wdt.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI</p></td>
+<td><p>drivers/spi/spi-imx.c</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>PWM</p></td>
+<td><p>drivers/pwm/pwm-imx.c</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="emmc-memory-partition-table">
 <h3>1.2 eMMC Memory Partition Table<a class="headerlink" href="#emmc-memory-partition-table" title="Link to this heading"></a></h3>

@@ -73,7 +73,7 @@ Development Board Interface Diagram：
 ### 1.1 Introduction to Linux 5.4.70 System Software Resources
 
 | **Device**| **Location of driver source code in the kernel**| **Device Name**|
-|----------|----------|----------||
+|----------|----------|----------|
 | LCD Backlight Driver| drivers/video/backlight/pwm\_bl.c| /sys/class/backlight|
 | USB Port| drivers/usb/storage/|
 | USB Mouse| drivers/hid/usbhid/| /dev/input/mice|
