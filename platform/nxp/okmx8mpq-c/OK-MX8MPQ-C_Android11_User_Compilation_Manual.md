@@ -67,7 +67,7 @@ Common virtual machine software includes VMware (VMWare ACE), Virtual Boxand Vir
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457886444-caabbc0a-32a0-432c-8e04-701808285926.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457886444_caabbc0a_32a0_432c_8e04_701808285926.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -75,43 +75,43 @@ After the download is complete, double-click the installation file to start the 
 
 Step 1: Double-click the startup program to enter the installation wizard, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457886752-0714bdf8-527c-436f-883c-fb460f482bdc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457886752_0714bdf8_527c_436f_883c_fb460f482bdc.png)
 
 Step 2: Check "I accept the terms in the license agreement (A)" and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457886964-945fb9b5-8ff9-47d3-ad3f-3dce429c2bfd.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457886964_945fb9b5_8ff9_47d3_ad3f_3dce429c2bfd.png)
 
 Step 3: You can modify the installation location, install it to the partition where your computer installs the software, and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887168-4835d7f3-0100-40e4-81f7-ad8802214ace.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887168_4835d7f3_0100_40e4_81f7_ad8802214ace.png)
 
 Step 4: Decide whether to check the two check boxes and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887452-0408fcb9-235b-4983-8137-1f7391744838.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887452_0408fcb9_235b_4983_8137_1f7391744838.png)
 
 Step 5: Check the option to add the shortcuts and click "Next";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887685-67675977-0219-493a-a07e-6286710ce9d0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887685_67675977_0219_493a_a07e_6286710ce9d0.png)
 
 Step 6: Click "Install";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457887915-2487dfac-515d-449c-9a79-275789e2fd0b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457887915_2487dfac_515d_449c_9a79_275789e2fd0b.png)
 
 Step 7: Wait for the installation to complete;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888123-9c16fba2-02df-41bb-9363-bc491c4b8370.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888123_9c16fba2_02df_41bb_9363_bc491c4b8370.png)
 
 Step 8: After the installation is completed, you can click "Finish" for trial. If you need to use it for a long time, please buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888338-18d58329-f21c-4622-af9a-ef0e906089d6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888338_18d58329_f21c_4622_af9a_ef0e906089d6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888571-a2fd7d63-354b-473c-b9e9-a4bed592194a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888571_a2fd7d63_354b_473c_b9e9_a4bed592194a.png)
 
 You can also click “Skip”. Once done, open the VMware software, click on “Help” in the status at the top, and enter the license key in the pop-up window.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457888814-4c74ee69-d262-4a70-ad9c-668f6cf0f740.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457888814_4c74ee69_d262_4a70_ad9c_668f6cf0f740.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889090-24adf987-58ff-4d59-8939-0f2d5e383cfc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889090_24adf987_58ff_4d59_8939_0f2d5e383cfc.png)
 
 ### 1.3 VMware Network Connection
 
@@ -121,7 +121,7 @@ By default, after the virtual machine is installed, the network connection metho
 
 In the virtual machine, when the VMware virtual network card is set to NAT mode, the network in the Ubuntu environment can be set to dynamic IP. In this mode, the virtual NAT device is connected to the host network card to communicate with the Internet. This is the most commonly used way for our virtual machine to access the external network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889424-246fd1fa-e18c-4d6b-993a-6542890d5094.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889424_246fd1fa_e18c_4d6b_993a_6542890d5094.png)
 
 #### 1.3.2 Connections for Bridge
 
@@ -131,7 +131,7 @@ If you are using TFTP, the SFTP virtual machine's network connection is “Bridg
 
 Step 1：Click on the "Settings" option under the VM menu, and if it is a server, then you will need to configure the settings. This will open the virtual machine settings dialog box, as shown in the following image；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889737-2373d64f-c315-4731-9437-ef88246ca419.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889737_2373d64f_c315_4731_9437_ef88246ca419.png)
 
 Step 2：Connect the mode and set it；
 
@@ -143,23 +143,23 @@ The following describes the steps to set the network in the virtual machine:
 
 Step 1: Start Ubuntu, the root user logs in the system, click the drop-down button at the top right of the desktop, and the following options will pop up；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457889978-9ef27645-1215-420a-a652-1b00e53f3ccb.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457889978_9ef27645_1215_420a_a652_1b00e53f3ccb.png)
 
 Step 2: Click "Network" to enter the network settings；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890185-e31dc24c-e874-4c9d-812b-4df9142490ec.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890185_e31dc24c_e874_4c9d_812b_4df9142490ec.png)
 
 Step 3: Click IPv4, select “Manual”, enter your IP address, subnet mask, gateway, and DNS, and click “Apply” to save. The network settings are successful；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890400-93f1813a-39e3-4327-8917-2b8287af8fc2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890400_93f1813a_39e3_4327_8917_2b8287af8fc2.png)
 
 Step 4: Restart network services, close and reopen Wired；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890596-c728aad1-4a4b-45d3-ae5d-b5f388449c2a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890596_c728aad1_4a4b_45d3_ae5d_b5f388449c2a.png)
 
 Step 5: Test the IP of the host is 192.168.0.200. Use the virtual machine to ping the host:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457890800-220e3e98-8114-4812-8947-15825dda1f04.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457890800_220e3e98_8114_4812_8947_15825dda1f04.png)
 
 As shown in the figure, the network setting is successful. Once you've set this up, you're ready to set up the server you need.
 
@@ -175,7 +175,7 @@ Forlinx provides an installed Ubuntu development environment, which you can dire
 
 First, download the development environment provided by Forlinx. There is MD5 verification file in the development environment data. After downloading the development environment data, first perform MD5 verification on the compressed package of the development environment (MD5 verification can be performed by selecting MD5 online tools on the network, or by downloading MD5 verification tools, which can be selected according to the actual situation). Check whether the verification code is consistent with the verification code in the verification file. If they are consistent, the downloaded file is normal; otherwise, the file may be damaged and needs to be downloaded again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457835929-698898eb-10af-4834-bb5e-31fa459e01f4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457835929_698898eb_10af_4834_bb5e_31fa459e01f4.png)
 
 Select the zip and right-click to extract it to OKMX8MP-Android11.0-VM 15\_1\_0-ubuntu18\_04.
 
@@ -183,19 +183,19 @@ After unzipping, the OK8MP-Android11.0-VM 15\_1\_0-ubuntu18\_04文件夹中的OK
 
 Open the installed virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836154-bd008ab1-ca4f-4833-8542-23b87ee1ad88.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836154_bd008ab1_ca4f_4833_8542_23b87ee1ad88.png)
 
 Navigate to the directory where the recently extracted OKMX8MPQ-C-Linux5.4.70-VM15.1.0-ubuntu18.04 virtual machine file is located, and double-click on the startup file to open it：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836351-03144a7a-c1a7-400b-bdfe-e718cfd45fb5.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836351_03144a7a_c1a7_400b_bdfe_e718cfd45fb5.png)
 
 After loading, click to start the virtual machine to run. Enter the system's interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836576-1d5d5c76-8ca5-4c01-a477-b667f5459abd.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836576_1d5d5c76_8ca5_4c01_a477_b667f5459abd.png)
 
 The provided development environment account is: forlinx and the password is: forlinx, fill in the password and select Sign in to log in.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457836821-89ebd518-5dec-438b-8dd3-b016e780d09e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457836821_89ebd518_5dec_438b_8dd3_b016e780d09e.png)
 
 So far, the development environment provided by Forlinx has been successfully entered, and you can put the source code in the user information folder into the development environment to start compiling and other operations（**See 4. Linux Compilation)**.
 
@@ -221,7 +221,7 @@ The version of Ubuntu chosen to install is 18.04, and the introduction and devel
 
 Download "Ubuntu-18.04.6-desktop-amd64.iso" (you can download the version that you actually need; this is just an example with 18.04.6).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457853470-337f97f3-60f7-4485-8dc1-093fd10cc82b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457853470_337f97f3_60f7_4485_8dc1_093fd10cc82b.png)
 
 #### 3.1.1 Vmware Ubuntu Image Installation
 
@@ -229,59 +229,59 @@ If users want to learn to build their own virtual machines, they can choose to i
 
 Step 1: Open the VMware software and click on "Create New Virtual Machine". Enter the following interface, check "Customize (Advanced)" and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457853690-2264ae43-83c9-4976-9c22-d058c16694d2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457853690_2264ae43_83c9_4976_9c22_d058c16694d2.png)
 
 Step 2: Select the compatibility of the corresponding VMware version. The version can be viewed in Help-> About VMware Workstation. Click "Next" after confirmation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457853957-bcea17d6-5dc3-41c1-ad66-849f693f3baa.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457853957_bcea17d6_5dc3_41c1_ad66_849f693f3baa.png)
 
 Select “Install program from disc image file”, then click “Next”；
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854180-dba3fc6a-a781-45a2-81d7-241ea8f8de34.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854180_dba3fc6a_a781_45a2_81d7_241ea8f8de34.png)
 
 Enter full name, user name and password and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854407-cd22bbf2-0548-4353-b4e2-7e292cab7680.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854407_cd22bbf2_0548_4353_b4e2_7e292cab7680.png)
 
 Enter the virtual machine name and configuration installation location, and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854611-b4b096de-b00d-438d-a6ee-290bf2e69db0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854611_b4b096de_b00d_438d_a6ee_290bf2e69db0.png)
 
 To configure the number of cores, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457854811-aa60ca81-063b-4244-9d96-59357977fc74.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457854811_aa60ca81_063b_4244_9d96_59357977fc74.png)
 
 Configure appropriate memory space and select "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855021-b6f412bc-2dbb-447b-9220-06d7367005d7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855021_b6f412bc_2dbb_447b_9220_06d7367005d7.png)
 
 Set the network type, use the default NAT form for networking, and click "Next". Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855229-6d89dfbf-789f-4706-bb85-bbb1109e5336.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855229_6d89dfbf_789f_4706_bb85_bbb1109e5336.png)
 
 Using the recommended I/O controller, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855491-f17d6b19-9d04-42c7-afc7-ea00f44d3993.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855491_f17d6b19_9d04_42c7_afc7_ea00f44d3993.png)
 
 Using the recommended disk type, click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457855778-e4182a80-42d6-411b-b806-c099c50a825d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457855778_e4182a80_42d6_411b_b806_c099c50a825d.png)
 
 Using the default options, create a new virtual disk and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856016-9edb5973-4bde-41e3-add7-0cea9cab0d04.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856016_9edb5973_4bde_41e3_add7_0cea9cab0d04.png)
 
 Allocate a disk size of 300G and divide the virtual disk into multiple files, and click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856257-a7a6f99d-4761-409c-b977-5c47a171d12a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856257_a7a6f99d_4761_409c_b977_5c47a171d12a.png)
 
 Click "Next" by default:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856505-03a6eeee-22ea-4fbb-bd77-9b816c1866f1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856505_03a6eeee_22ea_4fbb_bd77_9b816c1866f1.png)
 
 Click "Finish":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856683-cc7bf2d1-d559-4f3d-805e-92afbfcc054b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856683_cc7bf2d1_d559_4f3d_805e_92afbfcc054b.png)
 
 After that, the virtual machine starts to install the image and wait patiently.
 
@@ -289,21 +289,21 @@ After that, the virtual machine starts to install the image and wait patiently.
 
 **Error 1**: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457856910-a60f35cf-0499-42b4-bbbc-3a376756e9c9.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457856910_a60f35cf_0499_42b4_bbbc_3a376756e9c9.png)
 
 Solution: Right click on my computer to manage services and application services, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857162-f125b850-99b0-4d55-a3d4-a11de899a9ba.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857162_f125b850_99b0_4d55_a3d4_a11de899a9ba.png)
 
 **Error 2**: Internal error.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857428-ca7dbb92-d841-44d4-9e05-724fff4c690f.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857428_ca7dbb92_d841_44d4_9e05_724fff4c690f.png)
 
 Solution: Refer to error 1.
 
 **Error 3**: Unable to install service VMware Authorization Service (VMAuthdService):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857698-93c40334-c407-4962-b4e8-e5de2b0c4e6a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857698_93c40334_c407_4962_b4e8_e5de2b0c4e6a.png)
 
 Solution:
 
@@ -311,25 +311,25 @@ Solution:
     
     Input services.msc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457857917-f2c3e9f7-88a1-4c4b-9528-b219233a5287.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457857917_f2c3e9f7_88a1_4c4b_9528_b219233a5287.png)
 
 Then find the service and start it up as an authorization and authentication service for starting and accessing virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457858161-3212bdcd-d46e-4101-9a2a-141f4f4fcff4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457858161_3212bdcd_d46e_4101_9a2a_141f4f4fcff4.png)
 
 WMI must start first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457858526-1731341b-5bfe-409b-b0f3-24ddcbca711c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457858526_1731341b_5bfe_409b_b0f3_24ddcbca711c.png)
 
 **Error 4**: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457858843-d2834905-e67d-487e-abec-17951aabf1e5.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457858843_d2834905_e67d_487e_abec_17951aabf1e5.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 
 **Error 5**: Intel VT-x is disabled
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859025-060be046-34d6-4d47-9f82-755fcd9f5de0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859025_060be046_34d6_4d47_9f82_755fcd9f5de0.png)
 
 Solution:
 
@@ -341,7 +341,7 @@ If that doesn't work, just turn the firewall off and reopen the VM. (varies by m
 
 Error 6: The virtual machine appears to be in use... Acquiring Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859248-50d33827-944c-4d6f-ac10-d54f0d3a4e81.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859248_50d33827_944c_4d6f_ac10_d54f0d3a4e81.png)
 
 Solution:
 
@@ -349,13 +349,13 @@ Solution:
 2. Enter the storage directory of the virtual machine and delete the *.lck file. The lck represents the locked file;
 3. Open the Windows Task Manager and kill the VMware process. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859484-42173e81-ebd4-47d9-847c-411b82678371.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859484_42173e81_ebd4_47d9_847c_411b82678371.png)
 
 4. Restart the virtual machine.
 
 Error 7: Failed to lock file
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859688-cdb3acb0-9bc6-4453-b4b0-bfa8bda34a66.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859688_cdb3acb0_9bc6_4453_b4b0_bfa8bda34a66.png)
 
 Solution:
 
@@ -369,7 +369,7 @@ Solution:
 
 The virtual machine does not have enough memory to run the image's maximum requirements； increase the virtual machine's memory and reboot the virtual machine
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457859960-8e61a4d9-48a3-49c5-b283-d13fba4a381a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457859960_8e61a4d9_48a3_49c5_b283_d13fba4a381a.png)
 
 ### 3.2 Ubuntu Common Software Installation
 
@@ -377,17 +377,17 @@ The virtual machine does not have enough memory to run the image's maximum requi
 
 Click the icon similar to a package on the left side of the desktop to see some tools. We can also search for the tools we want. For example, we download a VScode tool, which is very convenient for our daily coding.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457860186-3ac4c6a2-3b58-4cff-8f67-1936c677e217.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457860186_3ac4c6a2_3b58_4cff_8f67_1936c677e217.png)
 
 Please search for the tool we need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click "Launch" to run it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457860483-efa6ff74-9c57-42bd-9646-1141459b7af3.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457860483_efa6ff74_9c57_42bd_9646_1141459b7af3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457860764-4f2ffcb1-afa5-44a9-ba1b-4e5fcaaf1c2c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457860764_4f2ffcb1_afa5_44a9_ba1b_4e5fcaaf1c2c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457861053-0f74f7a7-0f1e-4797-8531-ca18e03e1c53.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457861053_0f74f7a7_0f1e_4797_8531_ca18e03e1c53.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457861267-6ec9c245-4290-48a0-b221-d98827dd1546.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457861267_6ec9c245_4290_48a0_b221_d98827dd1546.png)
 
 ## 4\. Android Compilation
 
@@ -785,25 +785,25 @@ Visit [<u>http://www.oracle.com/technetwork/java/javase/downloads/index.html</u>
 
 Click java archive：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873155-b51e2b89-ec03-4059-b17f-21478dcdaa51.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873155_b51e2b89_ec03_4059_b17f_21478dcdaa51.png)
 
 Click java SE（8u211 and later）：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873398-f2928a92-ef46-4d14-bad5-49778378d196.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873398_f2928a92_ef46_4d14_bad5_49778378d196.png)
 
 Select the red box.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873621-ffd7982e-c5ee-4c98-980d-52176330bc46.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873621_ffd7982e_c5ee_4c98_980d_52176330bc46.png)
 
 According to the prompt, register the account and download it normally.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457873813-78d13108-0a8c-4b42-aff2-6bf95ca903cf.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457873813_78d13108_0a8c_4b42_aff2_6bf95ca903cf.png)
 
 After the download is completed, double-click the installer to complete the installation according to the wizard's prompts.
 
 To check for a successful installation, open the command prompt tool and type Java -version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874047-a592ece1-5a4d-4b41-bf9e-d54f9b1bae03.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874047_a592ece1_5a4d_4b41_bf9e_d54f9b1bae03.png)
 
 The correct display of the Java version indicates a successful installation.
 
@@ -811,43 +811,43 @@ The correct display of the Java version indicates a successful installation.
 
 Android Studio is a new development tool for Android development launched by Google at the 2013 I/O conference. It can be downloaded and installed at: [http://www.android-studio.org/](http://www.android-studio.org/).
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719457874242-c86d18e4-dd58-4f0a-b9bc-2c1bcc97fe8f.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874242_c86d18e4_dd58_4f0a_b9bc_2c1bcc97fe8f.jpeg)
 
 After downloading, follow the prompts to install it. When the installation is complete, the following figure appears:
 
 Select “Do not import settings ":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874472-dfc3177f-8efa-45e2-ae59-9abc11020a08.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874472_dfc3177f_8efa_45e2_ae59_9abc11020a08.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874692-60122454-d263-470f-b58a-42ad1a6737ac.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874692_60122454_d263_470f_b58a_42ad1a6737ac.png)
 
 Select “Cancel ":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457874927-51fc023e-3e11-4d58-84a8-b0c253515ce3.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457874927_51fc023e_3e11_4d58_84a8_b0c253515ce3.png)
 
 Click "Next" to go to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875198-2703db49-18f0-4295-b7f6-59c85607afc7.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875198_2703db49_18f0_4295_b7f6_59c85607afc7.png)
 
 Select "Custom" here:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875429-1ea43ae6-aea2-4a50-8992-b7e0d063072b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875429_1ea43ae6_aea2_4a50_8992_b7e0d063072b.png)
 
 Choose a UI theme based on your personal preference:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875617-8fc1b91a-72d5-436f-ba65-8b98328807b1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875617_8fc1b91a_72d5_436f_ba65_8b98328807b1.png)
 
 Select the installation path of Android SDK according to the actual situation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457875801-527d65cd-76f2-42a0-aa6c-7a0d55e04129.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457875801_527d65cd_76f2_42a0_aa6c_7a0d55e04129.png)
 
 Select the memory size for the emulator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876047-d8f9d21c-06ae-44b0-b442-00b473621874.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876047_d8f9d21c_06ae_44b0_b442_00b473621874.png)
 
 Click “Finish”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876287-4a4371cd-5292-4e52-9b8c-5fbf4eb21705.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876287_4a4371cd_5292_4e52_9b8c_5fbf4eb21705.png)
 
 When the installation is complete, click “Finish”.
 
@@ -855,19 +855,19 @@ When the installation is complete, click “Finish”.
 
 1. Select “start a new android studio project”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876500-3a3a41c9-30fc-4c0a-a00b-653a476fa1bc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876500_3a3a41c9_30fc_4c0a_a00b_653a476fa1bc.png)
 
 2\. Modify the project name, select Empty Activity, click "Next", and select the lowest supported SDK version:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876686-e7fc1966-c21e-40cb-b691-51579163930d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876686_e7fc1966_c21e_40cb_b691_51579163930d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457876892-298b29df-918d-447a-8364-b9a82c88952d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457876892_298b29df_918d_447a_8364_b9a82c88952d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877084-df070458-67b7-4a30-afad-4529216634b2.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877084_df070458_67b7_4a30_afad_4529216634b2.png)
 
 Click “Finish”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877406-8b0ab60b-ee5d-437d-b61f-0ea0553e43b3.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877406_8b0ab60b_ee5d_437d_b61f_0ea0553e43b3.png)
 
 Tools such as Gradle will be downloaded for the first use, so please be patient.
 
@@ -875,27 +875,27 @@ Tools such as Gradle will be downloaded for the first use, so please be patient.
 
 Click "File"-> "settings" to search the SDK and open the interface as shown in the figure below. Check "Android 11.0" and click "OK" to install:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877608-170843e0-3e71-499f-82b0-0bff6469c5c4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877608_170843e0_3e71_499f_82b0_0bff6469c5c4.png)
 
 After the flashing is completed, click "Finish":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877798-5bbafee6-8a3d-413c-9ab1-97e1006aa31d.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877798_5bbafee6_8a3d_413c_9ab1_97e1006aa31d.png)
 
 4\. Click "build"-> "Make Project" to compile:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457877986-3dfcb3b5-057d-46cd-8e40-77e77293739b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457877986_3dfcb3b5_057d_46cd_8e40_77e77293739b.png)
 
 5\. After compiling, use the OTG cable to connect the development board to the computer and start the development board. In the Android studio menu bar, select Device 8mp:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878166-baf70fbf-1bf4-440f-b732-a77a24a69ef9.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878166_baf70fbf_1bf4_440f_b732_a77a24a69ef9.png)
 
 Click the green triangle icon in the menu bar to run the application on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878364-0f7e53e4-b446-430b-a151-ebc55265c4c6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878364_0f7e53e4_b446_430b_a151_ebc55265c4c6.png)
 
 After a while, the program runs on the development board:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878576-00f37993-feae-406e-a59d-0ed8f7d38397.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878576_00f37993_feae_406e_a59d_0ed8f7d38397.png)
 
 #### 5.1.4 Existing App Project Compilation
 
@@ -907,27 +907,27 @@ Path: OKMX8MPQ-C (Android) User Profile \\Android\\Test Program\\SerialPortTest.
 
 1. First, decompress the source code of the test program provided by Forlinx to the full English path. Otherwise, it will compile and report errors. You can see the contents of CanTest as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457878876-6e3cc9d2-61d9-4393-9b9d-db3d651fe219.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457878876_6e3cc9d2_61d9_4393_9b9d_db3d651fe219.png)
 
 2. Select "Open an existing Android Studio project" "in Android studio, select the CanTest extracted in the previous step, and click" OK “;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879123-c97983cd-1947-404a-809c-4e03eef192e1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879123_c97983cd_1947_404a_809c_4e03eef192e1.png)
 
 3. Click "build"-> "Make Project" to compile:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879357-23198a8a-c88f-448a-91f4-94a125f34b99.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879357_23198a8a_c88f_448a_91f4_94a125f34b99.png)
 
 4. After compiling, use the OTG cable to connect the development board to the computer and start the development board. In the Android studio menu bar, select Device 8mp:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879591-3b08bf71-6e96-4a21-8dac-7ce29a144a25.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879591_3b08bf71_6e96_4a21_8dac_7ce29a144a25.png)
 
 Click the green triangle icon in the menu bar to run the application on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457879805-0a237ed5-fae1-41c4-81f6-0bac080738da.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457879805_0a237ed5_fae1_41c4_81f6_0bac080738da.png)
 
 After a while, the program runs on the development board:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880137-e22da7f0-0914-49e5-a0cc-ba90ba8c32ce.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880137_e22da7f0_0914_49e5_a0cc_ba90ba8c32ce.png)
 
 The test was successful and the generated APK path: app\\build\\outputs\\apk\\debug\\app-debug.apk
 
@@ -937,20 +937,20 @@ The .apk file can be copied to the development board for installation.
 
 + **Problem 1: The following errors may occur during compilation:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880427-326afa9a-8358-4ae3-b3bc-a0af3cfdbd2c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880427_326afa9a_8358_4ae3_b3bc_a0af3cfdbd2c.png)
 
 The reason is that the APK signature is added to the opened source code by default, and the prompt is that the signature file cannot be found. At this time, you need to create your own signature file according to Section 5.2.
 
 Specific operation: File-> Project Structure-> Modules-> app-> Signing Configs-> Store File, modify the path to your signature file path, and then click "OK":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880638-0be5f29f-3f5b-4dde-8d9f-467d72c4eb59.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880638_0be5f29f_3f5b_4dde_8d9f_467d72c4eb59.png)
 
 + **Problem 2: How to open the project in different versions of Android studio:**
 
 1. Creating a new project according to "Chapter 5.1.3 Creating HelloWorld Project";
 2. Unzip the “app” directory from the source code into the new project path, replacing the existing “app” folder;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457880856-ce1e58e1-47d7-4c59-938b-d60f7ff4ee0c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457880856_ce1e58e1_47d7_4c59_938b_d60f7ff4ee0c.png)
 
 3. Reopen the HelloWorld project after replacing the app directory. After loading, change the APK key (see Problem 1 above for the operation process) and compile it;
 4. After successful compilation, connect the development board and computer with an OTG cable, run it on the development board, and you can now successfully run it.
@@ -981,7 +981,7 @@ The android is the password you enter, and the android debugkey is the alias, wh
 
 + **If you do not have the openssl command in your Windows system, please go to **[**<u>http://slproweb.com/products/Win32OpenSSL.html</u>**](http://slproweb.com/products/Win32OpenSSL.html) **to download and install it, then set the environment variable (please search online for instructions).**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881085-e974f778-212a-423e-ac6f-2d47b73cc32c.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881085_e974f778_212a_423e_ac6f_2d47b73cc32c.png)
 
 #### 5.2.2 Setting up Andorid Studio
 
@@ -995,23 +995,23 @@ Open any android studio project, and add the shared UID at the corresponding pos
 
 Click “File”->“project structure”：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881346-2e10c222-9d66-4d9e-b2aa-4c19d33c3e53.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881346_2e10c222_9d66_4d9e_b2aa_4c19d33c3e53.png)
 
 Create a new release:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881621-c886bcdd-5e8d-4686-83b4-f0ed14e4a04e.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881621_c886bcdd_5e8d_4686_83b4_f0ed14e4a04e.png)
 
 Add signature configuration of debug version and release version, and click build Variants ":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457881889-f6724962-77d0-42ea-a3c8-4ceb42d13567.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457881889_f6724962_77d0_42ea_a3c8_4ceb42d13567.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457882073-385ce032-9046-4195-98b2-8bba21a5e434.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457882073_385ce032_9046_4195_98b2_8bba21a5e434.png)
 
 Set the signature configuration of the corresponding version as shown in the figure.
 
 Click the run button on android studio to launch the app. Enter ps-Z in the serial port:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/27181473/1719457882327-a107587e-c015-43e9-8222-4ef41f3f6ed0.jpeg)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457882327_a107587e_c015_43e9_8222_4ef41f3f6ed0.jpeg)
 
 Confirm whether your app has become system \_ app.
 
@@ -1085,7 +1085,7 @@ The following describes the use of UUU tools under Linux and Windows respectivel
 + **Do not use the uuu\_imx\_android\_flash.sh generated by the android environment compiler. Please use "User Profile Tool \\uuu\_imx\_android\_flash.sh";**
 + **Plug the OTG cable into the Linux host's USB port If you use a virtual machine, mount the following devices in the virtual machine.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457841677-c3cdc53e-4eec-4754-a4cb-b4bee95be8a1.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457841677_c3cdc53e_4eec_4754_a4cb_b4bee95be8a1.png)
 
 #### 6.1.1 Use of the uuu\_imx\_android\_flash.sh tool on Linux
 
@@ -1097,9 +1097,9 @@ Copy the uuu of the tool directory in the downloaded user profile to the/usr/bin
 
 1. Plug the type C cable into the USB port of the Linux host. If you are using a virtual machine, move the following devices to the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457841893-9aa5405d-7bda-4244-9187-fd236471aba0.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457841893_9aa5405d_7bda_4244_9187_fd236471aba0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842092-f9003885-34b9-493f-a520-cbe735f4c0dc.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842092_f9003885_34b9_493f_a520_cbe735f4c0dc.png)
 
 2. Copy the compiled image (*. img and u-boot* to the/home/forlinx/imx8mp/uuu directory.
 
@@ -1121,11 +1121,11 @@ forlinx@ubuntu: ~/imx8mp/uuu$ sudo ./uuu_imx_android_flash.sh -f imx8mp -e
 
 Once the flashing process begins, you will receive a prompt to connect the device to the host machine or virtual machine. Please actively select the option to connect it to the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842291-afad18aa-4ff5-45ae-bfe2-6af4996297f4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842291_afad18aa_4ff5_45ae_bfe2_6af4996297f4.png)
 
 Wait for the flashing process to complete. A successful flashing operation will be indicated as shown in the following image:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842611-95b4d994-de4a-4d12-abf4-24205623f671.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842611_95b4d994_de4a_4d12_abf4_24205623f671.png)
 
 #### 6.1.2 Use of uuu\_imx\_android\_flash.bat tool on Windows
 
@@ -1246,11 +1246,11 @@ D:\uuu> uuu_imx_android_flash.bat -f imx8mp -e
 
 Successful burning is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457842929-a8c66f11-850d-4a83-8319-3a81cd0efcca.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457842929_a8c66f11_850d_4a83_8319_3a81cd0efcca.png)
 
 When uuu burns, an error occurs as shown in the figure, you can re-plug the usb cable to ensure that the usb is not mounted to the virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843110-c941e88a-4d17-4acc-89aa-12a8627dbcb4.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843110_c941e88a_4d17_4acc_89aa_12a8627dbcb4.png)
 
 ### 6.2 Flashing the Image with TF Card
 
@@ -1277,15 +1277,15 @@ Execute the business card printing script:
 forlinx@ubuntu:~/imx8mp/tools/sdfuse$ sudo ./mksdcard8mp.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843294-fd26bc70-6b5c-442b-a09a-7fd44b7f4d6b.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843294_fd26bc70_6b5c_442b_a09a_7fd44b7f4d6b.png)
 
 Select the TF card device, taking "1" as an example.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843567-c9902772-9caa-4116-9f1e-e09991c1e08a.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843567_c9902772_9caa_4116_9f1e_e09991c1e08a.png)
 
 Enter "y" to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843744-e52783bc-db2c-45a8-b869-24795a9bf1d6.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843744_e52783bc_db2c_45a8_b869_24795a9bf1d6.png)
 
 Production is complete.
 
@@ -1340,6 +1340,6 @@ Turn off the power of the development board, insert the TF card into the TF card
 
 Turn on the power switch, and the development board will automatically start to enter the flashing program. Please pay attention to the flashing progress by debugging the serial port or observing the flashing change of the heartbeat lamp D1. When D1 flashes once per second, it indicates that the flashing is completed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457843920-7183676f-9525-46af-895f-ed2770c064bf.png)
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457843920_7183676f_9525_46af_895f_ed2770c064bf.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/27181473/1719457844100-b754df76-9e3b-46f7-8eda-f2079db5248d.png)	
+![Image](./images/OK-MX8MPQ-C_Android11_User_Compilation_Manual/1719457844100_b754df76_9e3b_46f7_8eda_f2079db5248d.png)	
