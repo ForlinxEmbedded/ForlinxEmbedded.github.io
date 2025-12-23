@@ -377,52 +377,56 @@ body {
 }
 
 
-  /* ===========================================
-     移动端侧边栏抽屉及遮罩逻辑
-     只在屏幕宽度 ≤ 768px 时生效
-  ============================================ */
+/* =====================================================
+   RTD 移动端：目录打开时正文等比例缩小 
+   ===================================================== */
 
-@media (max-width: 768px) {
-  /* 侧边栏抽屉宽度和位置 */
-  .wy-nav-side {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 78%;
-    max-width: 300px;
-    height: 100vh;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 9998;
-    box-shadow: 4px 0 16px rgba(0,0,0,0.35);
-    background-color: #f9f9f9; /* 可换成你的主题色 */
-  }
+   @media (max-width: 768px) {
+    /* 1. 顶部导航条保持固定 */
+    .wy-nav-top {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-  /* 打开目录时 */
-  body.shift .wy-nav-side {
-    transform: translateX(0);
-  }
+    /* 2. 汉堡图标固定样式 */
+    .wy-nav-top .fa-bars {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 10000;
+    }
 
-  /* 正文区域遮罩 */
-  .wy-nav-content-wrap::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 9997;
-  }
+    /* 3. 侧边栏宽度设为 35% */
+    .wy-nav-side {
+        width: 35% !important;
+        transition: left 0.3s ease; /* 平滑滑出 */
+    }
 
-  body.shift .wy-nav-content-wrap::before {
-    opacity: 1;
-    pointer-events: auto;
-  }
+    /* 4. 核心逻辑：正文等比例缩小 */
+    .wy-nav-content-wrap {
+        transition: transform 0.3s ease, left 0.3s ease; /* 缩放动画 */
+        transform-origin: right top !important;
+        background-color: #fcfcfc;      /* 确保缩小后背景不穿透 */
+    }
 
-  /* 正文区域不被挤走 */
-  .wy-nav-content-wrap {
-    margin-left: 0 !important;
-    transform: none !important;
-  }
+    /* 当目录打开时 (.shift 激活) */
+    .wy-nav-content-wrap.shift {
+        /* 1. left: 35% 将容器整体右移 
+           2. scale(0.65) 将内容等比例缩小到 65% 
+           (1 - 0.35 = 0.65，刚好让缩小后的内容贴合目录)
+        */
+        left: 0 !important;
+        transform: scale(0.65) !important;
+        
+        /* 视觉优化：给缩小后的页面加点投影，增加层次感 */
+        box-shadow: -10px 0 20px rgba(0,0,0,0.2);
+        
+        
+        height: 153.85vh !important;
+        overflow-y: auto !important;
+    }
 }
