@@ -430,7 +430,7 @@ The pin compatible with the Raspberry Pi 40pin header are reserved on the carrie
 
 | No.| Test Item| SoM Power| Development board power (including SoM)|
 |:----------:|----------|:----------:|:----------:|
-| 1| No-load starting peak power| 1.69W| 2.69W|
+| 1| Starting peak power without load | 1.69W| 2.69W|
 | 2| Standby without load| 0.505 W| 1.27W|
 | 3| Sleep| 0.39 W| 0.9W|
 | 4| USB Read and Write| 0.59 W| 1.775W|
