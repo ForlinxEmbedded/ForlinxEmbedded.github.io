@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK1126B-S_OK1126BJ-S_User_Hardware_Manual
+
    
 
    
