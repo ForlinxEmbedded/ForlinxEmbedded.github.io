@@ -51,7 +51,7 @@ The RV1126B is equipped with high - performance external DRAM (DDR3/DDR3L/DDR4/L
 
 **RV1126B Processor Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382068952-869a3988-cdaf-40eb-9039-13a1dfc4fab3.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382068952_869a3988_cdaf_40eb_9039_13a1dfc4fab3.png)
 
 ## 2\. FET1126B-S SoM Description
 
@@ -59,17 +59,17 @@ The RV1126B is equipped with high - performance external DRAM (DDR3/DDR3L/DDR4/L
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382070646-096438b3-ae7f-48ec-9d1d-11ef05bcda55.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070646_096438b3_ae7f_48ec_9d1d_11ef05bcda55.png)
 
 **Back**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382070753-4c2ba4d4-9677-48b1-8b3f-5a84836528db.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070753_4c2ba4d4_9677_48b1_8b3f_5a84836528db.png)
 
 ### 2.2 FET1126B-S SoM Dimension Diagram
 
 FET1126B-S SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382070424-947ee31e-3e2d-4519-9b49-8e0bd8efda50.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070424_947ee31e_3e2d_4519_9b49_8e0bd8efda50.png)
 
 Structure size: 40mm × 40mm, dimensional tolerance ± 0.13mm, refer to DXF file for more dimensional information.
 
@@ -139,9 +139,9 @@ Stamp hole + LGA package, total 237 pins. 140 stamp hole pins, with a center - t
 
 #### 2.5.1 FET1126B-S SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382070495-24b4c639-de5d-48c2-a7f0-04bb01e97a26.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070495_24b4c639_de5d_48c2_a7f0_04bb01e97a26.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382070584-9c8b8d5f-206e-460e-8e9f-1163c6d57b77.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070584_9c8b8d5f_206e_460e_8e9f_1163c6d57b77.png)
 
 #### 2.5.2 FET1126B-S SoM Pins Description
 
@@ -182,7 +182,7 @@ Please refer to section 3.5 in “3. OK1126Bx Carrier Board Description” for t
 
 The connection of OK1126Bx SoM and the carrier board is edging connection +LGA, and the main interfaces are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072413-ac97ba51-a631-4edc-8c6f-7948efed3f7e.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072413_ac97ba51_a631_4edc_8c6f_7948efed3f7e.png)
 
 ### 3.2 OK1126Bx-S SoM Dimension Diagram
 
@@ -257,7 +257,7 @@ As shown in the figure, the development board is powered by a 5V DC power supply
 
 VDD33 ensures that the SoM is powered on first, followed by the carrier board, to prevent the occurrence of the latch - up effect, which could damage the CPU.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072603-4f2ccd4f-f853-4dc9-a396-6e4200502a00.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072603_4f2ccd4f_f853_4dc9_a396_6e4200502a00.png)
 
 #### 3.5.2 Switch Key \& Reset Key
 
@@ -265,7 +265,7 @@ K1 is the CPU reset key of the development board, which can be pressed to reset 
 
 K7 is the on/off key of the development board. By default, the board starts automatically when it is powered on. Press the key for a long time in the power-on state to turn off the board, and then press it for a short time to turn on the board.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072667-4fd2de04-e11a-4737-8915-44c7c9048357.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072667_4fd2de04_e11a_4737_8915_44c7c9048357.png)
 
 #### 3.5.3 Boot Configuration
 
@@ -277,7 +277,7 @@ If you use a USB cable to connect the board to a computer for image flashing, pr
 
 If you use a TF Card to flash the image, you need to make a TF Card in advance. After inserting the card into the board and powering it on, the board will enter the TF - card flashing process. For the detailed flashing process, please refer to the software user manual.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072743-150a5358-6203-4577-9cf5-ed91a262bfec.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072743_150a5358_6203_4577_9cf5_ed91a262bfec.png)
 
 **Note: The SARADC0 \_ BOOT signal is not available for other functions.**
 
@@ -285,13 +285,13 @@ If you use a TF Card to flash the image, you need to make a TF Card in advance. 
 
 The development board supports 7 x ADC interfaces, which are led out through the P17 pin header with a 2.54mm pitch. Among them, the SARADC0\_IN0 has a 10K pull - up resistor on the SoM, and it is pulled up to 1.8V.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072808-a06b6eb9-c2ad-4204-86c1-87631df0a522.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072808_a06b6eb9_c2ad_4204_86c1_87631df0a522.png)
 
 #### 3.5.5 Debugging Serial Port
 
 1 x debug serial port is led out through one USB Type-C from the development board. Install the CH342 driver on the computer and connect the P14 port to the computer to start debugging.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072872-0345c9fd-5d69-4246-8e9d-a3c2f754a91e.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072872_0345c9fd_5d69_4246_8e9d_a3c2f754a91e.png)
 
 **Note: To facilitate later debugging, please lead out these debug serial ports when you design the carrier board by yourselves.**
 
@@ -299,13 +299,13 @@ The development board supports 7 x ADC interfaces, which are led out through the
 
 The development board is externally connected to an RTC device via I2C4. It uses D4 to enable compatible power supply with both VCC_3V3 and a coin - cell battery. When the carrier board loses power, the CR2032 coin - cell battery, the default battery type for this design, can continue to power the RTC chip. By default, the design utilizes the RX8010SJ chip.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382072940-bf1a8504-2a6b-4f98-a75f-40e33f12414b.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382072940_bf1a8504_2a6b_4f98_a75f_40e33f12414b.png)
 
 #### 3.5.7 TF Card
 
 The TF Card on the development board is connected to the SDMMC0 channel of the CPU, which supports system startup and programming. The power supply VCC_3V3_SD for the TF card needs to be controlled. Please refer to the carrier board circuit for details.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073005-f5fa5e1a-64cb-44e2-bff3-0536fb534db2.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073005_f5fa5e1a_64cb_44e2_bff3_0536fb534db2.png)
 
 **Note:**
 
@@ -320,9 +320,9 @@ The TF Card on the development board is connected to the SDMMC0 channel of the C
 
 There are 1 x USB2.0, which is led out through the USB2.0 in the USB-A double-layer socket P3, with a current limit of 0.5A.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073081-d5fddd48-c2ad-40e9-817a-2262bed2fc88.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073081_d5fddd48_c2ad_40e9_817a_2262bed2fc88.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073147-82d0cd22-4923-4c5b-8e3c-3b090d831b98.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073147_82d0cd22_4923_4c5b_8e3c_3b090d831b98.png)
 
 **Note:**
 
@@ -337,11 +337,11 @@ As shown in the figure above, the USB 2.0 signal line in the USB3.0 interface is
 
 After the SoM starts, you can switch between the host and device modes through S2. When using the USB 3.0 function, switch S2 to ON and insert the USB device into the P3 socket on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073223-e13c25e4-6f55-4803-bf91-4d0149e4f245.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073223_e13c25e4_6f55_4803_bf91_4d0149e4f245.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073292-0f71c1e3-9dda-4d45-b1d2-80809ec91491.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073292_0f71c1e3_9dda_4d45_b1d2_80809ec91491.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073392-8bf404e3-9961-4f87-af73-b083246310cc.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073392_8bf404e3_9961_4f87_af73_b083246310cc.png)
 
 **Note:**
 
@@ -354,13 +354,13 @@ After the SoM starts, you can switch between the host and device modes through S
 
 The SoM supports MIPI DSI 4 channels, the maximum transmission rate supported is 1.5G bps/Lane, and the maximum resolution supported is 1920x1080 @ 60Hz. There is a universal LCD interface on the development board, which is led out through an FPC seat P4 with a 0.5mm pitch of 30 P. The MIPI capacitive touch screen produced by Forlinx can be connected. MIPI-DSI and LCD screens can only be used alternatively, not simultaneously.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073493-30ff84f3-8783-480b-8811-840374b2f5d3.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073493_30ff84f3_8783_480b_8811_840374b2f5d3.png)
 
 #### 3.5.11 LCD
 
 Development board LCD interface, supporting parallel 24bit RGB mode, maximum output resolution up to 1920x1080 @ 60Hz; the LCD interface is led out from the development board through the 25X2 pin P1 with a pitch of 2.54, which can be converted into a 0.5mm FPC seat with a pitch of 54 P through the adapter board provided by Forlinx, and can be connected to capacitive touch screens of different specifications and sizes produced by Forlinx.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073713-09296dc4-6891-4bb2-b0f2-98e6d380d057.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073713_09296dc4_6891_4bb2_b0f2_98e6d380d057.png)
 
 #### 3.5.12 MIPI-CSI
 
@@ -368,13 +368,13 @@ The development board supports two 4-lane MIPI CSI interfaces, both of which sup
 
 The MIPI CSI function is led out throng 26PIN FPC seats P8 and P9 from the development board. The interface is powered by a separate power supply and supports the OV13850 camera of Forlinx by default.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073810-1b7c44f9-5b25-4bb7-a72d-9d5707a47deb.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073810_1b7c44f9_5b25_4bb7_a72d_9d5707a47deb.png)
 
 #### 3.5.13 100M Ethernet
 
 The development board supports a 100-megabit Ethernet, which is from the FEPHY built in the CPU and led out by the RJ45 socket. The socket model is FC62115 BNL, and the quarantine transformer is built in.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073895-8e19b96b-a057-414e-8214-cdf9bb955e84.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073895_8e19b96b_a057_414e_8214_cdf9bb955e84.png)
 
 **Note:**
 
@@ -390,7 +390,7 @@ The development board supports a 100-megabit Ethernet, which is from the FEPHY b
 
 The development board supports a native 1000M network port using the RGMII of the SoM and the MAE0621A-Q3C chip, and can be connected to the external network equipment through the standard RJ45 socket P15 with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382073973-3237f7fc-1232-4857-9af3-1825586326e7.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382073973_3237f7fc_1232_4857_9af3_1825586326e7.png)
 
 **Note: There is one GMAC controller on the RV1126B chip, which can provide the RMII/RGMII interface to expand an external Ethernet 100 - Mbps/1 - Gbps PHY chip. It can also be switched to the built - in 100 - Mbps FEPHY. However, only one of them can be selected and they cannot be used simultaneously. That is, only one of the 100 - Mbps and 1 - Gbps network ports led out from the development board can be selected for use and cannot be used at the same time;**
 
@@ -398,9 +398,9 @@ The development board supports a native 1000M network port using the RGMII of th
 
 1 x DSM audio interface and 2 x MIC are led out from the SoM. 1 x DSM audio signal is led out from the development board, which first goes through RC low - pass filtering and then is amplified by the power amplifier chip LTK5135M, after which it can be connected to an external 4Ω - 3.3W speaker. 1 x is led out through the on - board MIC for easy debugging, enabling mono recording.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382074065-a0cd0088-6d3c-4b08-a1cf-cdd9b366d09d.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382074065_a0cd0088_6d3c_4b08_a1cf_cdd9b366d09d.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382074137-946f9f31-487d-4607-a87a-81234cfad119.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382074137_946f9f31_487d_4607_a87a_81234cfad119.png)
 
 **Note: DSM\_AUD\_RN/P is a set of pins and can only be configured for the DSM\_AUD function simultaneously. One pin cannot be configured for the DSM\_AUD function while the other is configured for other functions. The same applies to DSM\_AUD\_LN/P.**
 
@@ -410,7 +410,7 @@ The development board is equipped with an integrated WiFi \& Bluetooth module, w
 
 Module P5 is SMA interface for antenna, please use 2.4GHz \& 5GHz dual-band antenna.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382074215-c42645ad-72f0-48cb-8770-a87aa2b35352.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382074215_c42645ad_72f0_48cb_8770_a87aa2b35352.png)
 
 #### 3.5.17 FSPI
 
@@ -418,13 +418,13 @@ The development board provides 1 x FSPI interface, which can be externally conne
 
 Currently, the development board does not support FSPI Flash booting. Please do not connect storage devices to the FSPI controller to avoid system boot abnormalities. The development board is defaulted to be dry - soldered.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382074279-05752414-e733-4e36-9a69-2cce569410d1.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382074279_05752414_e733_4e36_9a69_2cce569410d1.png)
 
 #### 3.5.18 Raspberry Pi 40PIN
 
 The pin compatible with the Raspberry Pi 40pin header are reserved on the carrier board, which are led out through the P16 pin header. ESD protection is added to each pin.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382074345-f01af64e-3a04-455d-944b-c0c5755df91d.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382074345_f01af64e_3a04_455d_944b_c0c5755df91d.png)
 
 ## 4\. OK1126Bx-S Development Board Linux System Power Consumption Table
 
@@ -455,12 +455,12 @@ The minimum system includes the SoM, power supply, debugging serial port, and sy
 
 The SoM is designed to support power - on startup. It can be started as long as there is a 5V main power supply for the SoM. However, to ensure that the SoM can be programmed and print information can be viewed, it is recommended to retain the startup item circuit, USB programming circuit or TF card programming circuit, DEBUG circuit, and reset button. Note that no pull - up resistors should be added in the design of the reset button.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382077638-58b551f3-a1c1-4e0c-b13a-2b39a1041fe8.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382077638_58b551f3_a1c1_4e0c_b13a_2b39a1041fe8.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382077928-6efdacdf-8431-475f-8cde-a469b9b74ea2.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382077928_6efdacdf_8431_475f_8cde_a469b9b74ea2.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382078249-1d528aba-ab27-4ddd-9beb-e9fa60910e21.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382078249_1d528aba_ab27_4ddd_9beb_e9fa60910e21.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382078552-deba1d16-394c-494e-8032-711575cbf304.png)![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382078743-0277aad9-dec9-4afd-90ab-045435ca4ed4.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382078552_deba1d16_394c_494e_8032_711575cbf304.png)![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382078743_0277aad9_dec9_4afd_90ab_045435ca4ed4.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382078428-c2a45fee-d966-44a0-b44d-6307b7142b4d.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382078428_c2a45fee_d966_44a0_b44d_6307b7142b4d.png)
