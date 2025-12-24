@@ -246,7 +246,7 @@ ABC-D+IK:M
 
 ### 3.5 OK1126Bx-S Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  default;**
 - **The schematic diagrams in this manual are only for interface description. When users conduct hardware design, please refer to the source file materials.**
