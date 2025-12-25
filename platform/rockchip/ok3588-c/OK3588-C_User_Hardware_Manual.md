@@ -1,4 +1,4 @@
-# User's Hardware Manual_V1.3
+# User's Hardware Manual_V1.5
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -12,13 +12,15 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Revision History
 
-|    Date    | User Manual Version | SoM Version | Carrier Board Version | Revision History                                             |
-| :--------: | :-----------------: | :---------: | :-------------------: | ------------------------------------------------------------ |
-| 12/06/2024 |        V1.3         |    V1.1     |    V1.1 and above     | 1. Updating the manual format;<br />2. Deleting the naming convention and ordering information of the SoM;<br /> 3. Deleting the section on SoM pin descriptions (categorized by function);<br />4. Adding the "Overview" and "Documentation Description" sections;<br />5. Updating the power consumption table. |
-| 24/07/2023 |        V1.3         |    V1.1     |     V1.1and above     | 1. Updating the front photo of the development board;<br />2. Modifying the description of pull - up and pull - down in the boot item section. |
-| 23/04/2023 |        V1.2         |    V1.1     |    V1.1 and above     | Adding an ESD characteristics section and increasing<br />the description of the ESD characteristics of the SoM pins. |
-| 27/03/2023 |        V1.1         |    V1.1     |    V1.1 and above     | Correcting the description of the SoM pin functions.         |
-| 01/12/2022 |        V1.0         |    V1.1     |         V1.1          | Initial Version                                              |
+| Date       |                     User Manual Version                      |                         SoM Version                          | Carrier Board Version | Revision History                                             |
+| ---------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :-------------------: | ------------------------------------------------------------ |
+| 17/12/2025 | <font style="color:rgb(0,0,0);">V1.</font><font style="color:rgb(0,0,0);">5</font> | <font style="color:rgb(51,51,51);">V1.</font><font style="color:rgb(51,51,51);">1</font> |    V1.1 and above     | Adding SoM power management upgrade solution:  Expanding the voltage input range from 12V to a wide voltage 5V-13V,<br />and updating the voltage input parameters of the SoM in the section “2. FET3588 - C SoM Description". |
+| 21/11/2025 |                             V1.4                             |                             V1.1                             |    V1.1 and above     | Adding section 2.6.2: Design Guide for Vibration Resistance of the SoM |
+| 12/06/2024 |                             V1.3                             |                             V1.1                             |    V1.1 and above     | 1. Updating the manual format;<br />2. Deleting the naming convention and ordering information of the SoM;<br /> 3. Deleting the section on SoM pin descriptions (categorized by function);<br />4. Adding the "Overview" and "Documentation Description" sections;<br />5. Updating the power consumption table. |
+| 24/07/2023 |                             V1.3                             |                             V1.1                             |     V1.1and above     | 1. Updating the front photo of the development board;<br />2. Modifying the description of pull - up and pull - down in the boot item section. |
+| 23/04/2023 |                             V1.2                             |                             V1.1                             |    V1.1 and above     | Adding an ESD characteristics section and increasing<br />the description of the ESD characteristics of the SoM pins. |
+| 27/03/2023 |                             V1.1                             |                             V1.1                             |    V1.1 and above     | Correcting the description of the SoM pin functions.         |
+| 01/12/2022 |                             V1.0                             |                             V1.1                             |         V1.1          | Initial Version                                              |
 
 ## Overview
 
@@ -112,7 +114,7 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 | **Parameter**| **Pin Number**| **Specification**| | | | **Description**|
 |:----------:|:----------:|:----------:|----------|----------|----------|:----------:|
 | | | **Minimum**| **Typical**| **Maximum**| **Unit**||
-| Main Power Supply Voltage| 12V| 11.5| 12| 12.5| V| \-|
+| Main Power Supply Voltage| 12V| 5V | 12| 13V | V| \-|
 
 #### 2.3.3 Operating Environment
 
@@ -497,11 +499,11 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 |   85    |    \-    | GND                   |    \-    |   \-    | Ground                                   |          GND          |
 |   87    |          | CARRIER\_BOARD\_EN    |    \-    |   \-    | CARRIER enable                           |  CARRIER\_BOARD\_EN   |
 |   89    |    \-    | GND                   |    \-    |   \-    | Ground                                   |          GND          |
-|   91    |          | VCC12V\_DCIN          |    \-    |   \-    | 12V power input                          |     VCC12V\_DCIN      |
-|   93    |          | VCC12V\_DCIN          |    \-    |   \-    | 12V power input                          |     VCC12V\_DCIN      |
-|   95    |          | VCC12V\_DCIN          |    \-    |   \-    | 12V power input                          |     VCC12V\_DCIN      |
-|   97    |          | VCC12V\_DCIN          |    \-    |   \-    | 12V power input                          |     VCC12V\_DCIN      |
-|   99    |          | VCC12V\_DCIN          |    \-    |   \-    | 12V power input                          |     VCC12V\_DCIN      |
+|   91    |          | VCC_DCIN              |    \-    |   \-    | 5V-12V power input                       |       VCC_DCIN        |
+|   93    |          | VCC_DCIN              |    \-    |   \-    | 5V-12V power input                       |       VCC_DCIN        |
+|   95    |          | VCC_DCIN              |    \-    |   \-    | 5V-12V power input                       |       VCC_DCIN        |
+|   97    |          | VCC_DCIN              |    \-    |   \-    | 5V-12V power input                       |       VCC_DCIN        |
+|   99    |          | VCC_DCIN              |    \-    |   \-    | 5V-12V power input                       |       VCC_DCIN        |
 
 **Table 6 Right\_UP（P3） Connector Interface(Even) Pin Definition**
 
@@ -555,8 +557,8 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 |  92  | L30  | GPIO0\_B0              | GPIO0\_B0\_z | 1.8V | GMAC0 Reset                       |      GMAC0\_RESET      |
 |  94  | L29  | GPIO0\_B3              | GPIO0\_B3\_z | 1.8V | GMAC0 Interrupt                   |       GMAC0\_INT       |
 |  96  |  \-  | GND                    |      \-      |  \-  | Ground                            |          GND           |
-|  98  |      | VCC12V\_DCIN           |      \-      |  \-  | 12V power input                   |      VCC12V\_DCIN      |
-| 100  |      | VCC12V\_DCIN           |      \-      |  \-  | 12V power input                   |      VCC12V\_DCIN      |
+|  98  |      | VCC_DCIN               |      \-      |  \-  | 5V-13V power input                |        VCC_DCIN        |
+| 100  |      | VCC_DCIN               |      \-      |  \-  | 5V-13V power input                |        VCC_DCIN        |
 
 **Table7 LEFT\_UP（P4） Connector Interface(Odd) Pin Definition**
 
@@ -670,6 +672,8 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 
 ### 2.6 SoM Hardware Design Description
 
+#### 2.6.1 SoM Circuit Design Guide
+
 The FET3588-C SoM integrates power and storage circuits into a compact module, requiring minimal external circuitry. A minimum system can operate with just power supply and boot configuration, as shown in the figure below:
 
 ![Image](./images/OK3588-C_User_Hardware_Manual/1731113696186_d39edf18_814b_4b5e_8b24_68de432ba81c.png)
@@ -677,6 +681,21 @@ The FET3588-C SoM integrates power and storage circuits into a compact module, r
 Please refer to “Appendix IV“ for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, the user can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
 Please refer to section 3.5 in “Chapter 3. OK3588-C Carrier Board Description” for the peripheral circuits.
+
+#### 2.6.2 Design Guide for Vibration Resistance of the SoM
+
+It uses M2 anti-loosening screws to fix the pre-set mounting holes at the four corners of the SoM. The tightening torque is controlled at 0.15 N·m. The specific assembly schematic diagram is as follows:
+
+![Image](./images/OK3588-C_User_Hardware_Manual/1.png)
+
+This design has passed the vibration test specified in the standards GB/T 2423.10 - 2008 / IEC 60068 - 2 - 6:1995, meeting the following levels:
+
+Frequency range: 10 Hz ~ 150 Hz
+Test axes: X, Y, and Z axes
+Displacement amplitude: 0.35 mm
+Acceleration amplitude: 5 g
+
+The performance data listed in this manual is based on tests conducted in a standard laboratory environment and is applicable to general industrial equipment. The performance in actual applications may vary due to factors such as the installation method and combined stress.
 
 ## 3\. OK3588-C Development Platform Description
 
