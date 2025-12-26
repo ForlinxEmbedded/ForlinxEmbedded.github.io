@@ -2099,9 +2099,9 @@ A=22.6mm, B=19.6mm, C=3.2mm, D=1.45mm, Contacts=100
 
 **Note：**
 
-- **Test conditions: The SoM configuration is 4GB memory + +32GB eMMC; the 4G module is Quectel EM05-CE, and the screen is an optional product. SoM power supply is 12V and development board is 12V；**
-- **Peak power: The peak current during startup multiplied by the supply voltage；**
-- **Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage；**
+- **Test conditions: The SoM configuration is 4GB memory + +32GB eMMC; the 4G module is Quectel EM05-CE, and the screen is an optional product. SoM power supply is 12V and development board is 12V;**
+- **Peak power: The peak current during startup multiplied by the supply voltage;**
+- **Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage;**
 - **Power consumption is for reference only.**
 
 ## 7\. Minimum System Schematic
