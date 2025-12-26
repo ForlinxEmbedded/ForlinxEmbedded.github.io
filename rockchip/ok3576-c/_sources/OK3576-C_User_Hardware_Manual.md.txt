@@ -2047,7 +2047,7 @@ To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 
 
 **3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.**
 
-**4. Power - on Sequence；**
+**4. Power - on Sequence**
 
 It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER\_BOARD\_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:
 
