@@ -680,16 +680,16 @@
 </tr>
 </tbody>
 </table>
-<p>**Note: **</p>
+<p><strong>Note:</strong></p>
 <p><strong>The parameters in the table are the theoretical values of hardware design or CPU.</strong>
-<strong>The interfaces have GPIO multiplexing, and the quantity mentioned is the theoretical maximum.</strong>
-*<strong>1. Video Port</strong>
-<strong>·Video Port0 supports up to 4K&#64;120Hz with 10 bit data</strong>
-<strong>·Video Port1 supports up to 2560x1600&#64;60Hz with 10-bit data</strong>
-<strong>·Video Port2 supports up to 1920x1080&#64;60Hz with 8-bit data</strong>
-<strong>·Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</strong>
-<strong>·Port1 and Port2 may connect to parallel output interface</strong>
-*<strong>2. The maximum clock of a single TDM design is 50MHz. When using the TDM mode, the theoretical number of supported audio channels can be calculated by combining the audio sampling frequency and resolution to see if it meets the project requirements.</strong></p>
+<strong>The interfaces have GPIO multiplexing, and the quantity mentioned is the theoretical maximum.</strong></p>
+<p>*<strong>1. Video Port</strong>
+<strong>·Video Port0 supports up to 4K&#64;120Hz with 10 bit data</strong></p>
+<p><strong>·Video Port1 supports up to 2560x1600&#64;60Hz with 10-bit data</strong></p>
+<p><strong>·Video Port2 supports up to 1920x1080&#64;60Hz with 8-bit data</strong></p>
+<p><strong>·Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</strong></p>
+<p><strong>·Port1 and Port2 may connect to parallel output interface</strong></p>
+<p>*<strong>2. The maximum clock of a single TDM design is 50MHz. When using the TDM mode, the theoretical number of supported audio channels can be calculated by combining the audio sampling frequency and resolution to see if it meets the project requirements.</strong></p>
 </section>
 <section id="fet3576-c-som-pins-definition">
 <h3>2.6 FET3576-C SoM Pins Definition<a class="headerlink" href="#fet3576-c-som-pins-definition" title="Link to this heading"></a></h3>
@@ -6181,10 +6181,7 @@ settings, the SARADC_VIN0_BOOT is connected to GND via the touch key to achieve 
 <h4>3.5.10 Ethernet Circuit<a class="headerlink" href="#ethernet-circuit" title="Link to this heading"></a></h4>
 <p>The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led out via RJ45.</p>
 <p><img alt="Image" src="_images/1721202067447_8980d1a7_e5dd_4ae8_a521_9f0b5d81a322.png" /><img alt="Image" src="_images/1721202074386_8a00c3e7_214e_4476_8e8b_3dc95daaf12d.png" /></p>
-<p>**Note: **</p>
-<ul class="simple">
-<li><p><strong>The following table shows the RK3576 RGMII/RMII interface design:</strong></p></li>
-</ul>
+<p><strong>Note: The following table shows the RK3576 RGMII/RMII interface design.</strong></p>
 <p><strong>Table 3.5.10.1 RK3576 RGMII/RMII Interface</strong></p>
 <table class="docutils align-default">
 <thead>
@@ -6384,7 +6381,7 @@ settings, the SARADC_VIN0_BOOT is connected to GND via the touch key to achieve 
 <li><p><strong>If the USB2_OTG0_ID signal is used, to enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signal, and a 100ohm resistor should be connected in series and shall not be removed;</strong></p></li>
 <li><p><strong>When using the HOST function, it is recommended to add a current - limiting switch to the 5V power supply. The current - limiting value can be adjusted according to the application requirements. The current - limiting switch is controlled by a 3.3V GPIO. It is recommended to add capacitors of 22μF and over 100nF for filtering to the 5V power supply. If the USB port may be connected to a mobile hard disk, it is recommended to increase the filtering capacitor to over 100μF;</strong></p></li>
 <li><p><strong>According to the TYPEC protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line；</strong></p></li>
-<li><p>**ESD devices must be added to all signals of the TYPEC socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; **</p></li>
+<li><p><strong>ESD devices must be added to all signals of the TYPEC socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF;</strong></p></li>
 <li><p><strong>The differential impedance of USB 2.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be ＜10mil;</strong></p></li>
 <li><p><strong>The differential impedance of USB 3.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be＜3mil.</strong></p></li>
 </ul>
@@ -6797,8 +6794,8 @@ settings, the SARADC_VIN0_BOOT is connected to GND via the touch key to achieve 
 <p>Please ensure level matching between the I2C on the SoM side and the I2C of the slave device.</p>
 <p>**2. USB Design: **</p>
 <p>To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.</p>
-<p><strong>3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</strong>
-<strong>4. Power - on Sequence；</strong></p>
+<p><strong>3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</strong></p>
+<p><strong>4. Power - on Sequence；</strong></p>
 <p>It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER_BOARD_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:</p>
 <p>·Excessive current during the power - on phase.</p>
 <p>·The device fails to start.</p>
