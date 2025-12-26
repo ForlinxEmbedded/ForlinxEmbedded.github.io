@@ -6788,14 +6788,20 @@ settings, the SARADC_VIN0_BOOT is connected to GND via the touch key to achieve 
 </section>
 <section id="hardware-design-guide">
 <h2>4. Hardware Design Guide<a class="headerlink" href="#hardware-design-guide" title="Link to this heading"></a></h2>
-<p><strong>1. I2C Requirements:</strong></p>
+<ol class="arabic simple">
+<li><p>I2C Requirements:</p></li>
+</ol>
 <p>Multiple slave devices can be connected on a single I2C bus, ensuring no address conflicts.</p>
 <p>Pull - up resistors are required on the I2C bus, but multiple resistors should not be used for pull - up.</p>
 <p>Please ensure level matching between the I2C on the SoM side and the I2C of the slave device.</p>
-<p>**2. USB Design: **</p>
+<ol class="arabic simple" start="2">
+<li><p>USB Design</p></li>
+</ol>
 <p>To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.</p>
-<p><strong>3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</strong></p>
-<p><strong>4. Power - on Sequence</strong></p>
+<ol class="arabic simple" start="3">
+<li><p>The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</p></li>
+<li><p>Power - on Sequence</p></li>
+</ol>
 <p>It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER_BOARD_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:</p>
 <p>·Excessive current during the power - on phase.</p>
 <p>·The device fails to start.</p>

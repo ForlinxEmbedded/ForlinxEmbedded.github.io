@@ -2033,7 +2033,7 @@ The above figure is only a schematic diagram. Please refer to the schematic diag
 
 ## 4\. Hardware Design Guide
 
-**1. I2C Requirements:**
+1. I2C Requirements:
 
 Multiple slave devices can be connected on a single I2C bus, ensuring no address conflicts.
 
@@ -2041,13 +2041,13 @@ Pull - up resistors are required on the I2C bus, but multiple resistors should n
 
 Please ensure level matching between the I2C on the SoM side and the I2C of the slave device.
 
-**2. USB Design: **
+2. USB Design
 
 To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.
 
-**3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.**
+3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.
 
-**4. Power - on Sequence**
+4. Power - on Sequence
 
 It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER\_BOARD\_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:
 
