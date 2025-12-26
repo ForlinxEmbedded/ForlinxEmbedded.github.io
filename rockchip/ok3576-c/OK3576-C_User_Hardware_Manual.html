@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK3576-C_User’s Hardware Manual_V1.3 &mdash; Forlinx Embedded RK3576 Documentation  documentation</title>
+  <title>OK3576-C_User’s Hardware Manual_V1.5 &mdash; Forlinx Embedded RK3576 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -64,11 +64,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">OK3576-C_User’s Hardware Manual_V1.3</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OK3576-C_User’s Hardware Manual_V1.5</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rk3576-description">1. RK3576 Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fet3588-c-som-description">2. FET3588-C SoM Description</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som">2.1 FET3576-C SoM</a></li>
@@ -83,7 +83,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">2.5 SoM Interface Speed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som-pins-definition">2.6  FET3576-C SoM Pins Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fet3576-c-som-pins-definition">2.6 FET3576-C SoM Pins Definition</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#fet3576-c-som-pins-schematic">2.6.1  FET3576-C SoM Pins Schematic</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#fet3576-c-som-pins-description">2.6.2 FET3576-C SoM Pins Description</a></li>
 </ul>
@@ -110,7 +110,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#other-control-pin">2.7.19 Other Control Pin</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.8 SoM Hardware Design Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.8 SoM Hardware Design Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#som-circuit-design-guide">2.8.1 SoM Circuit Design Guide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#design-guide-for-vibration-resistance-of-the-som">2.8.2 Design Guide for Vibration Resistance of the SoM</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ok3576-c-development-platform-description">3. OK3576-C Development Platform Description</a><ul>
@@ -178,7 +182,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">OK3576-C_User’s Hardware Manual_V1.3</li>
+      <li class="breadcrumb-item active">OK3576-C_User’s Hardware Manual_V1.5</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -187,14 +191,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok3576-c-user-s-hardware-manual-v1-3">
-<h1>OK3576-C_User’s Hardware Manual_V1.3<a class="headerlink" href="#ok3576-c-user-s-hardware-manual-v1-3" title="Link to this heading"></a></h1>
+  <section id="ok3576-c-user-s-hardware-manual-v1-5">
+<h1>OK3576-C_User’s Hardware Manual_V1.5<a class="headerlink" href="#ok3576-c-user-s-hardware-manual-v1-5" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
 <p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="application-scope">
+<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
+<p>It is only applicable to Forlinx OK3576-C development board..</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head text-center"><p>User Manual Version</p></th>
+<th class="head text-center"><p>SoM Version</p></th>
+<th class="head text-center"><p>Carrier Board Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01/12/2025</p></td>
+<td class="text-center"><p>V1.5</p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.3</font></p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.4</font></p></td>
+<td><p>Adding SoM power management upgrade solution:<br />Expanding the voltage input range from 12V to a wide voltage 5V-13V,<br/>refer PCN20251030-063 for the detailsand updating the voltage<br />input parameters of the SoM in the section “2. FET3576 - C SoM Description”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>21/11/2025</p></td>
+<td class="text-center"><p><font style="color:black;">V1.4</font></p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.3</font></p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.4</font></p></td>
+<td><p>Adding section 2.8.2: Design Guide for Vibration Resistance of the SoM.</p></td>
+</tr>
+<tr class="row-even"><td><p>07/05/2025</p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.3</font></p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.3</font></p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.4</font></p></td>
+<td><p>1. Carrier board design updating: (Refer to the latest schematic for details; <br />1) Changing the P2_63 pin of the carrier board connector from GND to floating for FET3588 - C SoM compatibility;<br />2) Adopting independent power supply for the carrier board WIFI module to enable WIFI&amp;BT sleep - wake function;<br />3) Rectifying the USB wiring sequence of female USB3.0_A sockets P28 and P29;<br />4) Adding an ESD tube to the key signal line to enhance electrostatic protection;<br />5) Adjusting the position of series magnetic beads for the 2.8V power supply of 5 x CSI cameras to optimize interference suppression from autofocus motors;<br />6) Leading out a PMIC_VDC signal from the P3_10 pin of the SoM connector to enable mode - switching between power - on and key - boot for the SoM;<br />7 ) Reserving a terminal block for the PWRON_L signal to facilitate user expansion.<br />2. Updating power consumption parameters of the Android system.</p></td>
+</tr>
+<tr class="row-odd"><td><p>09/10/2024</p></td>
+<td class="text-center"><p><font style="color:black;">V1.2</font></p></td>
+<td class="text-center"><p><font style="color:black;">V1.1</font></p></td>
+<td class="text-center"><p><font style="color:black;">V1.1</font></p></td>
+<td><p>Updating Linux system power consumption parameter.</p></td>
+</tr>
+<tr class="row-even"><td><p>24/07/2024</p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.1</font></p></td>
+<td class="text-center"><p><font style="color:rgb(51, 51, 51);">V1.1</font></p></td>
+<td class="text-center"><p>V1.1 and above</p></td>
+<td><p>1. Correcting the description of the SoM pin functions;<br />2. Correcting the interface adaptation of the carrier board materials;<br />3. Updating the boot configuration content;                                                                                                         4. Updating the content of the system initialization configuration signals;<br />5. Updating the content related to the JTAG interface;<br />6. Updating the interface multiplexing content of USB/SATA3.1/PCIE2.1/video input - output interfaces.</p></td>
+</tr>
+<tr class="row-odd"><td><p>07/05/2024</p></td>
+<td class="text-center"><p><font style="color:black;">V1.0</font></p></td>
+<td class="text-center"><p><font style="color:black;">V1.0</font></p></td>
+<td class="text-center"><p><font style="color:black;">V1.0</font></p></td>
+<td><p>OK3576-C User’s Hardware Manual Initial Version.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
@@ -206,49 +265,6 @@
 <li><p>Chapter 3. is comprehensive introduction to the development board, divided into multiple chapters, including both hardware principles and simple design ideas;</p></li>
 <li><p>Chapter 4. mainly describes the board’s power consumption performance and other considerations.</p></li>
 </ul>
-</section>
-<section id="application-scope">
-<h2>Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h2>
-<p>It is only applicable to Forlinx OK3576-C development board..</p>
-</section>
-<section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Manual Version</strong></p></th>
-<th class="head"><p><strong>SoM Version</strong></p></th>
-<th class="head"><p><strong>Date</strong></p></th>
-<th class="head"><p><strong>Carrier Board Version</strong></p></th>
-<th class="head"><p><strong>Revision History</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><font style="color:rgb(51, 51, 51);">V1.3</font></p></td>
-<td><p><font style="color:rgb(51, 51, 51);">V1.3</font></p></td>
-<td><p><font style="color:rgb(51, 51, 51);">07/05/2025</font></p></td>
-<td><p><font style="color:rgb(51, 51, 51);">V1.4</font></p></td>
-<td><p>1. Carrier board design updating: (Refer to the latest schematic for details;                                       1) Changing the P2_63 pin of the carrier board connector from GND to floating for FET3588 - C SoM compatibility;                                                                                                                                           2) Adopting independent power supply for the carrier board WIFI module to enable WIFI&amp;BT sleep - wake function;                                                                                                                                     3) Rectifying the USB wiring sequence of female USB3.0_A sockets P28 and P29;                                                                                                                        4) Adding an ESD tube to the key signal line to enhance electrostatic protection;                               5) Adjusting the position of series magnetic beads for the 2.8V power supply of 5 x CSI cameras to optimize interference suppression from autofocus motors;                                                                   6) Leading out a PMIC_VDC signal from the P3_10 pin of the SoM connector to enable mode - switching between power - on and key - boot for the SoM;                                                                      7 ) Reserving a terminal block for the PWRON_L signal to facilitate user expansion.                          2. Updating power consumption parameters of the Android system.</p></td>
-</tr>
-<tr class="row-odd"><td><p><font style="color:black;">V1.2</font></p></td>
-<td><p><font style="color:black;">V1.1</font></p></td>
-<td><p><font style="color:black;">09/10/2024</font></p></td>
-<td><p><font style="color:black;">V1.1</font></p></td>
-<td><p>Updating Linux system power consumption parameter.</p></td>
-</tr>
-<tr class="row-even"><td><p><font style="color:rgb(51, 51, 51);">V1.1</font></p></td>
-<td><p><font style="color:rgb(51, 51, 51);">V1.1</font></p></td>
-<td><p><font style="color:rgb(51, 51, 51);">24/07/2024</font></p></td>
-<td><p><font style="color:rgb(51, 51, 51);">V1.1 and above</font></p></td>
-<td><p>1. Correcting the description of the SoM pin functions;                                                                                   2. Correcting the interface adaptation of the carrier board materials;                                                      3. Updating the boot configuration content;                                                                                                         4. Updating the content of the system initialization configuration signals;                                                      5. Updating the content related to the JTAG interface;                                                                                        6. Updating the interface multiplexing content of USB/SATA3.1/PCIE2.1/video input - output interfaces.</p></td>
-</tr>
-<tr class="row-odd"><td><p><font style="color:black;">V1.0</font></p></td>
-<td><p><font style="color:black;">V1.0</font></p></td>
-<td><p><font style="color:black;">07/05/2024</font></p></td>
-<td><p><font style="color:black;">V1.0</font></p></td>
-<td><p>OK3576-C User’s Hardware Manual Initial Version.</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="rk3576-description">
 <h2>1. RK3576 Description<a class="headerlink" href="#rk3576-description" title="Link to this heading"></a></h2>
@@ -374,9 +390,9 @@
 </tr>
 <tr class="row-odd"><td class="text-center"><p>Main Power Supply Voltage</p></td>
 <td class="text-center"><p>12V</p></td>
-<td class="text-center"><p>11.5</p></td>
+<td class="text-center"><p>5V</p></td>
 <td><p>12</p></td>
-<td><p>12.4</p></td>
+<td><p>13V</p></td>
 <td><p>V</p></td>
 <td class="text-center"><p>-</p></td>
 </tr>
@@ -545,8 +561,10 @@
 </tbody>
 </table>
 <p><strong>Note：</strong></p>
-<p><strong>1. The above data is provided by Rockchip;</strong></p>
-<p><strong>2. As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.</strong></p>
+<ul class="simple">
+<li><p><strong>The above data is provided by Rockchip;</strong></p></li>
+<li><p><strong>As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.</strong></p></li>
+</ul>
 </section>
 </section>
 <section id="id2">
@@ -562,11 +580,11 @@
 <tbody>
 <tr class="row-even"><td class="text-center"><p>MIPI CSI</p></td>
 <td class="text-center"><p>5</p></td>
-<td><p>·Supports 5 x CSI - 2 interfaces;                                                                                                                                                      ·Among them, 4 x interfaces have 2 x D - PHY v1.2 data - lanes, with a speed of 2.4 Gbps per lane;                                     ·These 4 x interfaces can be combined into 2 x interfaces with 4 x data - lanes;                                                                    ·The other 1 x interface supports 4 x D - PHY data - lanes or 3 x C - PHY trios;                                                                                   ·D - PHY v2.0, up to 4.5 Gbps;                                                                                                                                                               ·C - PHY v1.1, up to 2.4 Gsps.</p></td>
+<td><p>·Supports 5 x CSI - 2 interfaces;<br />·Among them, 4 x interfaces have 2 x D - PHY v1.2 data - lanes, with a speed of 2.4 Gbps per lane;<br />·These 4 x interfaces can be combined into 2 x interfaces with 4 x data - lanes;<br />·The other 1 x interface supports 4 x D - PHY data - lanes or 3 x C - PHY trios;                                                                                 <br />·D - PHY v2.0, up to 4.5 Gbps;<br />·C - PHY v1.1, up to 2.4 Gsps.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>DVP</p></td>
 <td class="text-center"><p>1</p></td>
-<td><p>·8/10/12/16-bit standard DVP interface, up to 150MHz data input;                                                                                        ·Supports BT.601/BT.656 and BT.1120 VI interface.</p></td>
+<td><p>·8/10/12/16-bit standard DVP interface, up to 150MHz data input;<br />·Supports BT.601/BT.656 and BT.1120 VI interface.</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>HDMI/eDP TX</p></td>
 <td class="text-center"><p>1 <strong><font style="color:#ff0000;">*</font></strong><sup><strong><font style="color:#ff0000;">1</font></strong></sup></p></td>
@@ -602,7 +620,7 @@
 </tr>
 <tr class="row-even"><td class="text-center"><p>PDM</p></td>
 <td class="text-center"><p>≤2</p></td>
-<td><p>· Up to 8 channels, audio resolution from 16 to 24 bits, sampling rate up to 192Khz;                                                                                                                      · Support PDM main receiving mode.</p></td>
+<td><p>· Up to 8 channels, audio resolution from 16 to 24 bits, sampling rate up to 192Khz;<br />·Support PDM main receiving mode.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
 <td class="text-center"><p>≤2</p></td>
@@ -610,7 +628,7 @@
 </tr>
 <tr class="row-even"><td class="text-center"><p>Combo high speed interface</p></td>
 <td class="text-center"><p>2</p></td>
-<td><p>·Supports 1 x PCIe2.1/SATA3.1 interface with one data lane;                                                                                                     ·Supports 1 x PCIe2.1/SATA3.1/USB3.2 Gen1x1 interface with one data lane.</p></td>
+<td><p>·Supports 1 x PCIe2.1/SATA3.1 interface with one data lane; <br/>·Supports 1 x PCIe2.1/SATA3.1/USB3.2 Gen1x1 interface with one data lane.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>USB 2.0 OTG</p></td>
 <td class="text-center"><p>2</p></td>
@@ -622,7 +640,7 @@
 </tr>
 <tr class="row-odd"><td class="text-center"><p>SPI</p></td>
 <td class="text-center"><p>≤5</p></td>
-<td><p>·Supports two chip-select in each interface;                                                                                                                                   ·Supports serial-master and serial-slave mode</p></td>
+<td><p>·Supports two chip-select in each interface;<br/>·Supports serial-master and serial-slave mode</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>I2C</p></td>
 <td class="text-center"><p>≤9</p></td>
@@ -638,15 +656,15 @@
 </tr>
 <tr class="row-odd"><td class="text-center"><p>CAN</p></td>
 <td class="text-center"><p>≤2</p></td>
-<td><p>·Complies with CAN and CAN FD specifications;                                                                                                                                  · Supports CAN standard frame and extended frame sending and receiving; · Supports 8192-bit receive FIFO</p></td>
+<td><p>·Complies with CAN and CAN FD specifications; <br />· Supports CAN standard frame and extended frame sending and receiving;<br />· Supports 8192-bit receive FIFO</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>DSMC</p></td>
 <td class="text-center"><p>≤1</p></td>
-<td><p>·Supports up to select 4 chips ;                                                                                                                                                      ·Supports 8-wire and 16-wire serial transfer mode;                                                                                                                    ·Supports configurable serial address width:16 bits or 32 bits.</p></td>
+<td><p>·Supports up to select 4 chips; <br />·Supports 8-wire and 16-wire serial transfer mode;<br />·Supports configurable serial address width:16 bits or 32 bits.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>FlexBus</p></td>
 <td class="text-center"><p>≤1</p></td>
-<td><p>·Supports built-in DMA and ping-pong operation for allocating two address;                                                                       ·Supports transmission and receiving mode;                                                                                                                             ·Supports single mode and continuous mode.</p></td>
+<td><p>·Supports built-in DMA and ping-pong operation for allocating two address;<br />·Supports transmission and receiving mode;<br />·Supports single mode and continuous mode.</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>PWM</p></td>
 <td class="text-center"><p>≤16</p></td>
@@ -662,18 +680,19 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note: The parameters in the table are the theoretical values of hardware design or CPU.</strong>
+<p>**Note: **</p>
+<p><strong>The parameters in the table are the theoretical values of hardware design or CPU.</strong>
 <strong>The interfaces have GPIO multiplexing, and the quantity mentioned is the theoretical maximum.</strong>
-*<strong>1 Video Port</strong>
+*<strong>1. Video Port</strong>
 <strong>·Video Port0 supports up to 4K&#64;120Hz with 10 bit data</strong>
 <strong>·Video Port1 supports up to 2560x1600&#64;60Hz with 10-bit data</strong>
 <strong>·Video Port2 supports up to 1920x1080&#64;60Hz with 8-bit data</strong>
 <strong>·Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</strong>
 <strong>·Port1 and Port2 may connect to parallel output interface</strong>
-*<strong>2: The maximum clock of a single TDM design is 50MHz. When using the TDM mode, the theoretical number of supported audio channels can be calculated by combining the audio sampling frequency and resolution to see if it meets the project requirements.</strong></p>
+*<strong>2. The maximum clock of a single TDM design is 50MHz. When using the TDM mode, the theoretical number of supported audio channels can be calculated by combining the audio sampling frequency and resolution to see if it meets the project requirements.</strong></p>
 </section>
 <section id="fet3576-c-som-pins-definition">
-<h3>2.6  FET3576-C SoM Pins Definition<a class="headerlink" href="#fet3576-c-som-pins-definition" title="Link to this heading"></a></h3>
+<h3>2.6 FET3576-C SoM Pins Definition<a class="headerlink" href="#fet3576-c-som-pins-definition" title="Link to this heading"></a></h3>
 <section id="fet3576-c-som-pins-schematic">
 <h4>2.6.1  FET3576-C SoM Pins Schematic<a class="headerlink" href="#fet3576-c-som-pins-schematic" title="Link to this heading"></a></h4>
 <p><img alt="Image" src="_images/1721199725381_e97fda68_6e24_4204_ae69_0ad984b42cad.png" /></p>
@@ -2749,43 +2768,43 @@
 </tr>
 <tr class="row-odd"><td class="text-center"><p>91</p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V  power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>93</p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>95</p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>97</p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>99</p></td>
 <td class="text-center"><p></p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 </tbody>
 </table>
@@ -3188,19 +3207,19 @@
 </tr>
 <tr class="row-even"><td class="text-center"><p>98</p></td>
 <td class="text-center"><p>——</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>100</p></td>
 <td class="text-center"><p>——</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>12V power input</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td><p>5V-13V power input</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 </tr>
 </tbody>
 </table>
@@ -3925,8 +3944,8 @@
 <td class="text-center"><p>MIPI_DPHY_CSI3_RX_D1N</p></td>
 <td class="text-center"><p>——</p></td>
 <td class="text-center"><p>——</p></td>
-<td><p>MIPI_DPHY_CSI3_RX_D1N data receiving 1-</p></td>
-<td class="text-center"><p>MIPI_DPHY_CSI3_RX_D1N</p></td>
+<td><p>MIPI_DPHY_CSI3_RX_D1N data</p></td>
+<td class="text-center"><p>receiving 1-</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>76</p></td>
 <td class="text-center"><p>——</p></td>
@@ -4052,9 +4071,9 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>Power</p></td>
-<td class="text-center"><p>VCC12V_DCIN</p></td>
+<td class="text-center"><p>VCC_DCIN</p></td>
 <td class="text-center"><p>Power Input</p></td>
-<td class="text-center"><p>SoM power supply pin, 12V</p></td>
+<td class="text-center"><p>SoM power supply pin, 5V-13V</p></td>
 <td class="text-center"><p>P3_91</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p></p></td>
@@ -5695,9 +5714,24 @@
 </section>
 <section id="som-hardware-design-description">
 <h3>2.8 SoM Hardware Design Description<a class="headerlink" href="#som-hardware-design-description" title="Link to this heading"></a></h3>
-<p>FET3576-C SoM integrates the power supply and storage circuits into a compact module. The required external circuits are very simple. To form a minimum system, it only needs a 12V power supply, a reset button, an SD card for programming, and startup configuration to operate, as shown in the following figure:</p>
+<section id="som-circuit-design-guide">
+<h4>2.8.1 SoM Circuit Design Guide<a class="headerlink" href="#som-circuit-design-guide" title="Link to this heading"></a></h4>
+<p>FET3576-C SoM integrates the power supply and storage circuits into a compact module. The required external circuits are very simple. To form a minimum system, it only needs a 5V-13V power supply, a reset button, an SD card for programming, and startup configuration to operate, as shown in the following figure:</p>
+<p><img alt="Image" src="_images/2.png" /></p>
 <p>Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting debugging information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.</p>
 <p>Please refer to section 3.5 in “Chapter 3. OK3576-C Carrier Board Description” for the peripheral circuits.</p>
+</section>
+<section id="design-guide-for-vibration-resistance-of-the-som">
+<h4>2.8.2 Design Guide for Vibration Resistance of the SoM<a class="headerlink" href="#design-guide-for-vibration-resistance-of-the-som" title="Link to this heading"></a></h4>
+<p>It uses M2 anti-loosening screws to fix the pre-set mounting holes at the four corners of the SoM. The tightening torque is controlled at 0.15 N·m. The specific assembly schematic diagram is as follows:</p>
+<p><img alt="Image" src="_images/1.jpg" /></p>
+<p>This design has passed the vibration test specified in the standards GB/T 2423.10 - 2008 / IEC 60068 - 2 - 6:1995, meeting the following levels:</p>
+<p>Frequency range: 10 Hz ~ 150 Hz
+Test axes: X, Y, and Z axes
+Displacement amplitude: 0.35 mm
+Acceleration amplitude: 5 g</p>
+<p>The performance data listed in this manual is based on tests conducted in a standard laboratory environment and is applicable to general industrial equipment. The performance in actual applications may vary due to factors such as the installation method and combined stress.3. OK3576-C Development Platform Description</p>
+</section>
 </section>
 </section>
 <section id="ok3576-c-development-platform-description">
@@ -5898,7 +5932,7 @@
 </tr>
 <tr class="row-even"><td class="text-center"><p>4G/5G</p></td>
 <td class="text-center"><p>1</p></td>
-<td><p>·Supports 4G/5G modules packaged in M.2 format;</p></td>
+<td><p>Supports 4G/5G modules packaged in M.2 format;</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>WIFI&amp;BT</p></td>
 <td class="text-center"><p>1</p></td>
@@ -5927,13 +5961,14 @@
 </tbody>
 </table>
 <p><strong>Note：</strong></p>
-<p><strong>1. The parameters in the table are the theoretical values of hardware design or CPU;</strong></p>
-<p><strong>2. “TBD” means the function has not been developed in this phase.</strong></p>
+<ul class="simple">
+<li><p><strong>The parameters in the table are the theoretical values of hardware design or CPU;</strong></p></li>
+<li><p><strong>“TBD” means the function has not been developed in this phase.</strong></p></li>
+</ul>
 </section>
 <section id="ok3576-c-carrier-board-description">
 <h3>3.5 OK3576-C Carrier Board Description<a class="headerlink" href="#ok3576-c-carrier-board-description" title="Link to this heading"></a></h3>
-<p><strong>Note: The component UID with “_DNP” mark in the diagram below represents it is not soldered by<br />
-default</strong></p>
+<p><strong>Note: The component UID with “_DNP” mark in the diagram below represents it is not soldered by  default.</strong></p>
 <p>The schematic diagram in this chapter is only for the easy reading and may be subject to changes. Please make sure to follow the source file schematic diagram when designing.</p>
 <section id="carrier-board-power">
 <h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
@@ -5947,8 +5982,10 @@ default</strong></p>
 <p>VCC_3V3 is stepped down to VCC_1V8 through U2 (LDO). VCC_1V8 supplies power to some devices on the development board.</p>
 <p><img alt="Image" src="_images/1721201782020_4b99d7b6_0835_4ef1_9a88_7be439626779.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. When designing by yourself, please ensure the power-on sequence of the power supply;</strong></p>
-<p><strong>2. Refer to the corresponding chip manual for the component selection and external layout of the step-up and step-down chip to ensure a good power circuit.</strong></p>
+<ul class="simple">
+<li><p><strong>When designing by yourself, please ensure the power-on sequence of the power supply;</strong></p></li>
+<li><p><strong>Refer to the corresponding chip manual for the component selection and external layout of the step-up and step-down chip to ensure a good power circuit.</strong></p></li>
+</ul>
 </section>
 <section id="reset-and-startup-shutdown-signal">
 <h4>3.5.2 Reset and Startup/Shutdown Signal<a class="headerlink" href="#reset-and-startup-shutdown-signal" title="Link to this heading"></a></h4>
@@ -5959,10 +5996,8 @@ default</strong></p>
 </section>
 <section id="boot-configuration">
 <h4>3.5.3 Boot Configuration<a class="headerlink" href="#boot-configuration" title="Link to this heading"></a></h4>
-<p>RK3576 supports multiple boot modes. After resetting the chip reset, the boot code integrated inside the chip<br />
-can be booted on the following interface devices, and the specific boot sequence can be selected according to<br />
-actual application requirements:</p>
-<p>·Serial Flash(FSPI0、FSPI1_M0、FSPI1_M1)</p>
+<p>RK3576 supports multiple boot modes. After resetting the chip reset, the boot code integrated inside the chip  can be booted on the following interface devices, and the specific boot sequence can be selected according to actual application requirements:</p>
+<p>·Serial Flash (FSPI0, FSPI1_M0, FSPI1_M1)</p>
 <p>·eMMC</p>
 <p>·UFS</p>
 <p>·SDMMC0 Card</p>
@@ -6051,21 +6086,14 @@ actual application requirements:</p>
 <p>SARADC_VIN0_BOOT on SoM is 10K pull-up, so the SoM defaults to start from eMMC The pull-down resistor can be added to the carrier board to achieve other boot sequences. According to the above Config1<br />
 settings, the SARADC_VIN0_BOOT is connected to GND via the touch key to achieve Maskrom mode.</p>
 <p><img alt="Image" src="_images/1721201812443_75639444_b4a1_4617_b923_3b34d6378034.png" /></p>
-<p>SARADC_ VIN1 is used to enter the recovery state due to a short circuit to the ground, and the SoM pulls it up<br />
-to a 1.8V power supply using a 10K resistor. On OK3576-C, the key array adopts a parallel type, which can adjust<br />
-the input key value by increasing or decreasing the keys and adjusting the proportion of the voltage divider<br />
-resistor to achieve multi-key input to meet customer product requirements; It is recommended in the design that<br />
-any two key values must be greater than ± 35, i.e. the center voltage difference must be greater than 123mV. The principle is as follows:</p>
+<p>SARADC_ VIN1 is used to enter the recovery state due to a short circuit to the ground, and the SoM pulls it up  to a 1.8V power supply using a 10K resistor. On OK3576-C, the key array adopts a parallel type, which can adjust the input key value by increasing or decreasing the keys and adjusting the proportion of the voltage divider resistor to achieve multi-key input to meet customer product requirements; It is recommended in the design that any two key values must be greater than ± 35, i.e. the center voltage difference must be greater than 123mV. The principle is as follows:</p>
 <p><img alt="Image" src="_images/1721201820385_84e45d78_8398_4284_bc6a_116e2ea78d6d.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. When doing key acquisition, ESD protection is required near the keys. And 0 key value must be connected in series with a<br />
-100ohm resistor to strengthen the anti-static surge capacity (If there is only one button, ESD must be close to the button,<br />
-ESD → 100ohm resistor → 1nF → chip pin);</strong></p>
+<p><strong>When doing key acquisition, ESD protection is required near the keys. And 0 key value must be connected in series with a 100ohm resistor to strengthen the anti-static surge capacity (If there is only one button, ESD must be close to the button, ESD → 100ohm resistor → 1nF → chip pin).</strong></p>
 </section>
 <section id="system-initialization-configuration-signal">
 <h4>3.5.4 System Initialization Configuration Signal<a class="headerlink" href="#system-initialization-configuration-signal" title="Link to this heading"></a></h4>
-<p>There is one important signal in the FET3576 that affects the system boot configuration and needs to be<br />
-configured and kept in a stable state before power-up:</p>
+<p>There is one important signal in the FET3576 that affects the system boot configuration and needs to be configured and kept in a stable state before power-up:</p>
 <p>SDMMC 0 _ DET _ L (PIN: P3 _ 90) (default function is SDMMC _ DET): Determines whether the VCCIO1 power domain IO is an SDMMC0 or JTAG function.</p>
 <p>The JTAG function and the SDMMC function of the FET3576 are multiplexed , and the function of the IOMUX is switched through the SDMMC0 _ DET _ L pin, so the pin also needs to be configured before power-on, otherwise, no output of the JTAG function will affect the debugging in the boot phase. No output from SDMMC0 will affect the SDMMC0 boot function.</p>
 <p><img alt="Image" src="_images/1721199746968_31a0ba65_3cf8_430b_9802_8456f1540d06.png" /></p>
@@ -6114,13 +6142,14 @@ configured and kept in a stable state before power-up:</p>
 </table>
 <p>The JTAG of RK3576 has two multiplexing modes. Among them, JTAG_TCK_M0/JTAG_TMS_M0 is located in the VCCIO1 domain and shares the IOMUX with SDMMC0; JTAG_TCK_M1/JTAG_TMS_M1 is located in the PMUIO1 domain and is multiplexed with UART_Debug - UART0_M0. The IOMUX multiplexing situation is shown in the figure below:</p>
 <p><img alt="Image" src="_images/1721199747347_cfe2f817_3baa_4f5a_a336_290e0a729450.png" /></p>
-<p>The UART Debug of FET3576 uses UART0_TX_M0_DEBUG (P2_7)/UART0_RX_M0_DEBUG (P2_9) by default. UART Debug signal needs to be connected with 100ohm resistor in series, if plug-in is used, and TVS tube<br />
-needs to be added near the plug-in position.</p>
+<p>The UART Debug of FET3576 uses UART0_TX_M0_DEBUG (P2_7)/UART0_RX_M0_DEBUG (P2_9) by default. UART Debug signal needs to be connected with 100ohm resistor in series, if plug-in is used, and TVS tube  needs to be added near the plug-in position.</p>
 <p>To facilitate user debugging, OK3576-C uses a USB to UART chip to convert the UART signal into a USB signal and leads it out through a Type-C socket. Users can connect OK3576-C P16 to PC with USB Type-A to UAB Type-C cable and install a CP2102 driver. The schematic is as follows:</p>
 <p><img alt="Image" src="_images/1721201867275_68baad27_5cec_4f00_baa7_97b0c39bb54c.png" /><img alt="Image" src="_images/1721201870860_85940f31_576a_4273_adae_6f580311ea22.png" /><img alt="Image" src="_images/1721201875033_c136cb7b_66f9_493f_aacc_165c9fc08c00.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board;</strong></p>
-<p><strong>2. It is recommended to keep Q1 and Q2, which can effectively prevent the U6 current from flowing back to the CPU through UART0_TX/RX when the SoM is not powered up, affecting the startup and even causing damage.</strong></p>
+<ul class="simple">
+<li><p><strong>For the convenience of later debugging, please lead out the debugging serial port when designing the carrier board;</strong></p></li>
+<li><p><strong>It is recommended to keep Q1 and Q2, which can effectively prevent the U6 current from flowing back to the CPU through UART0_TX/RX when the SoM is not powered up, affecting the startup and even causing damage.</strong></p></li>
+</ul>
 </section>
 <section id="iic-extending-io">
 <h4>3.5.6 IIC Extending IO<a class="headerlink" href="#iic-extending-io" title="Link to this heading"></a></h4>
@@ -6138,8 +6167,10 @@ needs to be added near the plug-in position.</p>
 <p>The carrier board P20 is a TF Card interface, which can support system boot and burn.</p>
 <p><img alt="Image" src="_images/1721202039748_352d8ac8_e509_4294_ab9d_fb75c37235d9.png" /><img alt="Image" src="_images/1721202045195_edf162fa_27b5_4aac_94b7_78525498828b.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. The power supply for the TF card must be controlled; please refer to the carrier board circuit;</strong></p>
-<p><strong>2. SDIO impedance requirements: Single-ended 50ohm, signal equal length control 50 mil.</strong></p>
+<ul class="simple">
+<li><p><strong>The power supply for the TF card must be controlled; please refer to the carrier board circuit;</strong></p></li>
+<li><p><strong>SDIO impedance requirements: Single-ended 50ohm, signal equal length control 50 mil.</strong></p></li>
+</ul>
 </section>
 <section id="rtc-circuit">
 <h4>3.5.9 RTC Circuit<a class="headerlink" href="#rtc-circuit" title="Link to this heading"></a></h4>
@@ -6150,7 +6181,10 @@ needs to be added near the plug-in position.</p>
 <h4>3.5.10 Ethernet Circuit<a class="headerlink" href="#ethernet-circuit" title="Link to this heading"></a></h4>
 <p>The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led out via RJ45.</p>
 <p><img alt="Image" src="_images/1721202067447_8980d1a7_e5dd_4ae8_a521_9f0b5d81a322.png" /><img alt="Image" src="_images/1721202074386_8a00c3e7_214e_4476_8e8b_3dc95daaf12d.png" /></p>
-<p><strong>Note: The following table shows the RK3576 RGMII/RMII interface design:</strong></p>
+<p>**Note: **</p>
+<ul class="simple">
+<li><p><strong>The following table shows the RK3576 RGMII/RMII interface design:</strong></p></li>
+</ul>
 <p><strong>Table 3.5.10.1 RK3576 RGMII/RMII Interface</strong></p>
 <table class="docutils align-default">
 <thead>
@@ -6235,17 +6269,23 @@ needs to be added near the plug-in position.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>2. In RGMII mode, the TX/RX clock paths inside the RK3576 chip are integrated with a delay line, which supports adjustment. The default configuration in the reference diagram is as follows: The timing between TXCLK and data is controlled by the MAC, and the timing between RXCLK and data is controlled by the PHY. (For example, when using RTL8211F/FI, a 2ns delay for RXCLK is enabled by default. Please pay attention to other PHY configurations;</strong></p>
-<p><strong>3. The GMAC0 interface level only supports 1.8V. The GMAC1 interface level is 3.3V by default (if it must be changed to 1.8V, please contact Forlinx). It should be noted whether the power - supply voltage of the RGMII signal power domain of the PHY chip matches the level of the GMACx interface;</strong></p>
-<p><strong>4. The Reset signal of the Ethernet PHY needs to be controlled by GPIO. The level of the GPIO must match the PHY IO level. A 100nF capacitor must be added close to the PHY pins to enhance the anti - static ability. Note: The reset pin of RTL8211F/FI only supports a 3.3V level;</strong></p>
-<p><strong>5. For TXD0 - TXD3, TXCLK, and TXEN, a 0ohm series resistor should be reserved at the FET3576 end to improve the signal quality conditionally according to the actual situation;</strong></p>
-<p><strong>6. For RXD0 - RXD3, RXCLK, and RXDV, a 22ohm series resistor should be connected at the PHY end to improve the signal quality;</strong></p>
-<p><strong>7. When the PHY uses an external crystal, the crystal capacitor should be selected according to the load capacitance value of the actually used crystal, and the frequency deviation should be controlled within ±20ppm;</strong></p>
-<p><strong>8.</strong> <strong>The external resistor connected to the RSET pin of RTL8211F/FI is 2.49K ohms with an accuracy of 1%. Do not modify it casually;</strong></p>
-<p><strong>9.</strong> <strong>An external pull - up resistor must be added to MDIO, with a recommended value of 1.5 - 1.8K ohm. The pull - up power supply must be consistent with the IO power supply;</strong></p>
-<p><strong>10.The PCB layout needs to ensure the integrity of the RGMII signal reference plane and the integrity of the power supply reference plane around the PHY chip;</strong></p>
-<p><strong>11.Equal - length requirement: The receiving and sending signals of RGMII can be grouped for equal - length processing, and the equal - length requirement is ≤12.4mil;</strong></p>
-<p><strong>12. Impedance requirement: 50 ohm for single - ended signals.</strong></p>
+<ul class="simple">
+<li><p><strong>In RGMII mode, the TX/RX clock paths inside the RK3576 chip are integrated with a delay line, which supports adjustment. The default configuration in the reference diagram is as follows: The timing between TXCLK and data is controlled by the MAC, and the timing between RXCLK and data is controlled by the PHY. (For example, when using RTL8211F/FI, a 2ns delay for RXCLK is enabled by default. Please pay attention to other PHY configurations;</strong></p></li>
+<li><p><strong>The GMAC0 interface level only supports 1.8V. The GMAC1 interface level is 3.3V by default (if it must be changed to 1.8V, please contact Forlinx). It should be noted whether the power - supply voltage of the RGMII signal power domain of the PHY chip matches the level of the GMACx interface;</strong></p></li>
+<li><p><strong>The Reset signal of the Ethernet PHY needs to be controlled by GPIO. The level of the GPIO must match the PHY IO level. A 100nF capacitor must be added close to the PHY pins to enhance the anti - static ability. Note: The reset pin of RTL8211F/FI only supports a 3.3V level;</strong></p></li>
+<li><p><strong>For TXD0 - TXD3, TXCLK, and TXEN, a 0ohm series resistor should be reserved at the FET3576 end to improve the signal quality conditionally according to the actual situation;</strong></p></li>
+<li><p><strong>For RXD0 - RXD3, RXCLK, and RXDV, a 22ohm series resistor should be connected at the PHY end to improve the signal quality;</strong></p></li>
+<li><p><strong>When the PHY uses an external crystal, the crystal capacitor should be selected according to the load capacitance value of the actually used crystal, and the frequency deviation should be controlled within ±20ppm;</strong></p></li>
+<li><p><strong>The external resistor connected to the RSET pin of RTL8211F/FI is 2.49K ohms with an accuracy of 1%. Do not modify it casually;</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>An external pull - up resistor must be added to MDIO, with a recommended value of 1.5 - 1.8K ohm. The pull - up power supply must be consistent with the IO power supply;</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>The PCB layout needs to ensure the integrity of the RGMII signal reference plane and the integrity of the power supply reference plane around the PHY chip;</strong></p></li>
+<li><p><strong>Equal - length requirement: The receiving and sending signals of RGMII can be grouped for equal - length processing, and the equal - length requirement is ≤12.4mil;</strong></p></li>
+<li><p><strong>Impedance requirement: 50 ohm for single - ended signals.</strong></p></li>
+</ul>
 </section>
 <section id="rs485-interface">
 <h4>3.5.11 RS485 Interface<a class="headerlink" href="#rs485-interface" title="Link to this heading"></a></h4>
@@ -6318,30 +6358,36 @@ needs to be added near the plug-in position.</p>
 <p>The three USB 3.0 interfaces transferred from the USB HUB chip are all matched with the USB power supply current-limiting switch chip to provide stable power supply and current-limiting protection functions for the Type-A interface:</p>
 <p><img alt="Image" src="_images/1721202158635_ef0e1468_e024_4363_8e6d_d2c53ba1f647.png" /><img alt="Image" src="_images/1721202163020_6cabe3c4_fd7c_4d11_b012_479783d692ae.png" /><img alt="Image" src="_images/1721202167712_ebbdcd11_f4a0_49e7_bf68_18d041efb909.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. All USB data cables need to have a 90Ω differential impedance；</strong></p>
-<p><strong>2. Please select appropriate ESD devices；</strong></p>
+<ul class="simple">
+<li><p><strong>All USB data cables need to have a 90Ω differential impedance；</strong></p></li>
+<li><p><strong>Please select appropriate ESD devices.</strong></p></li>
+</ul>
 <p>The following figure shows the circuit of the Type - C USB 3.0 interface:</p>
 <p><img alt="Image" src="_images/1721202186728_edde3b2b_1bfe_403e_aaa2_a203ee2285ff.png" /></p>
 <p>The above figure shows the circuit of the CC protocol chip for the Type - C interface, which is used to support functions such as Type - C reversible plug recognition：</p>
 <p><img alt="Image" src="_images/1721202200685_dce80cc4_edcf_41fa_bce3_fe484ac8b528.png" /></p>
 <p>The above figure shows the differential signal circuit and ESD protection devices of the Type - C USB3.0 interface：</p>
 <p><strong>Note:</strong></p>
-<p><strong>1.USB2_OTG0_DN/USB2_OTG0_DP is the system firmware programming port. If this interface is not used in the product, it must be reserved during the debugging and production processes. Otherwise, debugging and firmware programming during production will not be possible;</strong></p>
-<p><strong>2.There is approximately a 12Kohm ohm pull - up resistor to 1.8V inside the USB2_OTG0_ID;</strong></p>
-<p><strong>3. USB2 _ OTG0 _ VBUSDET is the OTG and Device mode detection pin. There is a pull-down resistor of 40 Kohm inside the chip. The high is DEVICE device, 2.7-3.3 V, TYP: 3.0 V. It is recommended to place a 100nF capacitor on the pin;</strong></p>
-<p><strong>4. The OTG mode can be set to the following three modes:</strong></p>
-<p><strong>·OTG mode: Automatically switch between the device mode and the HOST mode according to the state of the ID pin. When the ID is high, it is in the device mode; when the ID is pulled low, it is in the HOST mode. In the device mode, it will also check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process；</strong></p>
+<ul class="simple">
+<li><p><strong>USB2_OTG0_DN/USB2_OTG0_DP is the system firmware programming port. If this interface is not used in the product, it must be reserved during the debugging and production processes. Otherwise, debugging and firmware programming during production will not be possible;</strong></p></li>
+<li><p><strong>There is approximately a 12Kohm ohm pull - up resistor to 1.8V inside the USB2_OTG0_ID;</strong></p></li>
+<li><p><strong>USB2 _ OTG0 _ VBUSDET is the OTG and Device mode detection pin. There is a pull-down resistor of 40 Kohm inside the chip. The high is DEVICE device, 2.7-3.3 V, TYP: 3.0 V. It is recommended to place a 100nF capacitor on the pin;</strong></p></li>
+<li><p><strong>The OTG mode can be set to the following three modes:</strong></p></li>
+</ul>
+<p><strong>OTG mode: Automatically switch between the device mode and the HOST mode according to the state of the ID pin. When the ID is high, it is in the device mode; when the ID is pulled low, it is in the HOST mode. In the device mode, it will also check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process；</strong></p>
 <p><strong>Device mode: When set to this mode, there is no need to use the ID pin. It only needs to check whether the VBUSDET pin is high (greater than 2.3V). Only when it is high will the DP be pulled high to start the enumeration process;</strong></p>
-<p><strong>·HOST mode: When set to this mode, there is no need to care about the states of the ID and VBUSDET pins. ( In the case that the product only needs HOST mode, the system firmware burning port is only USB2_OTG0_DN/USB2_OTG0_DP, which is also used in the production and debugging, so when burning and abd debugging, you need to set it to device mode and connect USB2_OTG0_VBUSDET signal.</strong></p>
-<p><strong>If a TYPEC interface is used, the USB2_OTG0_VBUSDET signals can be pulled high through a 4.7K resistor;</strong></p>
-<p><strong>5. To enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signals. The parasitic capacitance of the ESD for USB 2.0 signals shall not exceed 3pF. Additionally, a 2.2 - ohm resistor should be connected in series with the DP/DM of the USB 2.0 signals to enhance the anti - static and anti - surge capabilities;</strong></p>
-<p><strong>6. To suppress electromagnetic radiation, a common - mode choke can be reserved on the signal lines. During the debugging process, a resistor or a common - mode choke can be selected according to the actual situation;</strong></p>
-<p><strong>7.</strong> <strong>If the USB2_OTG0_ID signal is used, to enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signal, and a 100ohm resistor should be connected in series and shall not be removed;</strong></p>
-<p><strong>8.</strong> <strong>When using the HOST function, it is recommended to add a current - limiting switch to the 5V power supply. The current - limiting value can be adjusted according to the application requirements. The current - limiting switch is controlled by a 3.3V GPIO. It is recommended to add capacitors of 22μF and over 100nF for filtering to the 5V power supply. If the USB port may be connected to a mobile hard disk, it is recommended to increase the filtering capacitor to over 100μF;</strong></p>
-<p><strong>9.</strong> <strong>According to the TYPEC protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line；</strong></p>
-<p><strong>10. ESD devices must be added to all signals of the TYPEC socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; 对于SSTXP/N，SSRXP/N信号，ESD寄生电容不得超过0.3pF。</font></strong></p>
-<p><strong>11.The differential impedance of USB 2.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be ＜10mil;</strong></p>
-<p><strong>12. The differential impedance of USB 3.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be＜3mil.</strong></p>
+<p><strong>HOST mode: When set to this mode, there is no need to care about the states of the ID and VBUSDET pins. ( In the case that the product only needs HOST mode, the system firmware burning port is only USB2_OTG0_DN/USB2_OTG0_DP, which is also used in the production and debugging, so when burning and abd debugging, you need to set it to device mode and connect USB2_OTG0_VBUSDET signal.</strong></p>
+<ul class="simple">
+<li><p><strong>If a TYPEC interface is used, the USB2_OTG0_VBUSDET signals can be pulled high through a 4.7K resistor;</strong></p></li>
+<li><p><strong>To enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signals. The parasitic capacitance of the ESD for USB 2.0 signals shall not exceed 3pF. Additionally, a 2.2 - ohm resistor should be connected in series with the DP/DM of the USB 2.0 signals to enhance the anti - static and anti - surge capabilities;</strong></p></li>
+<li><p><strong>To suppress electromagnetic radiation, a common - mode choke can be reserved on the signal lines. During the debugging process, a resistor or a common - mode choke can be selected according to the actual situation;</strong></p></li>
+<li><p><strong>If the USB2_OTG0_ID signal is used, to enhance the anti - static and anti - surge capabilities, ESD devices must be reserved on the signal, and a 100ohm resistor should be connected in series and shall not be removed;</strong></p></li>
+<li><p><strong>When using the HOST function, it is recommended to add a current - limiting switch to the 5V power supply. The current - limiting value can be adjusted according to the application requirements. The current - limiting switch is controlled by a 3.3V GPIO. It is recommended to add capacitors of 22μF and over 100nF for filtering to the 5V power supply. If the USB port may be connected to a mobile hard disk, it is recommended to increase the filtering capacitor to over 100μF;</strong></p></li>
+<li><p><strong>According to the TYPEC protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line；</strong></p></li>
+<li><p>**ESD devices must be added to all signals of the TYPEC socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; **</p></li>
+<li><p><strong>The differential impedance of USB 2.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be ＜10mil;</strong></p></li>
+<li><p><strong>The differential impedance of USB 3.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be＜3mil.</strong></p></li>
+</ul>
 </section>
 <section id="sata3-1-interface">
 <h4>3.5.16 SATA3.1 Interface<a class="headerlink" href="#sata3-1-interface" title="Link to this heading"></a></h4>
@@ -6363,10 +6409,12 @@ needs to be added near the plug-in position.</p>
 <p>-Among them, SATA_CPDET, SATA_MPSWIT, and SATA_CPPOD are shared interfaces for SATA0/1, and either SATA0 or SATA1 can be configured via registers;</p>
 <p>-Among them, SATA0_ACTLED and SATA1_ACTLED are multiplexed to two locations, one in the VCCIO6 power domain and the other in the VCCIO4 power domain.</p>
 <p><strong>Note:</strong></p>
-<p><strong>1. When designing Slot, peripheral circuits and power supplies need to meet Spec requirements;</strong>
-<strong>2. When a SATA interface is connected to an external SATA PM, it can only support a maximum of 5 ports and does not support multiple SATA PM with more than 6 ports;</strong>
-<strong>3. A 10nF AC coupling capacitor is connected in series to the TXP/N，RXP/N differential signals of the SATA interface. It is recommended to use the 0201 package for the AC coupling capacitor, which has lower ESR and ESL and can also reduce impedance changes on the line;</strong>
-<strong>4. For the eSATA interface connector, ESD devices must be added to all signals. During layout, the ESD devices should be placed close to the connector, and the parasitic capacitance shall not exceed 0.4pF.</strong></p>
+<ul class="simple">
+<li><p><strong>When designing Slot, peripheral circuits and power supplies need to meet Spec requirements;</strong></p></li>
+<li><p><strong>When a SATA interface is connected to an external SATA PM, it can only support a maximum of 5 ports and does not support multiple SATA PM with more than 6 ports;</strong></p></li>
+<li><p><strong>A 10nF AC coupling capacitor is connected in series to the TXP/N，RXP/N differential signals of the SATA interface. It is recommended to use the 0201 package for the AC coupling capacitor, which has lower ESR and ESL and can also reduce impedance changes on the line;</strong></p></li>
+<li><p><strong>For the eSATA interface connector, ESD devices must be added to all signals. During layout, the ESD devices should be placed close to the connector, and the parasitic capacitance shall not exceed 0.4pF.</strong></p></li>
+</ul>
 </section>
 <section id="pcie2-1-circuit">
 <h4>3.5.17 PCIE2.1 Circuit<a class="headerlink" href="#pcie2-1-circuit" title="Link to this heading"></a></h4>
@@ -6397,14 +6445,16 @@ needs to be added near the plug-in position.</p>
 <p>The above figure shows the 3.3V power supply and enable control circuit for the PCIE interface. U42 is a step - down chip that converts 5V to 3.3V.</p>
 <p><img alt="Image" src="_images/1721202244991_9a474f67_a819_4c7c_b32b_d96a6dc70390.png" /></p>
 <p>The figure above is the PCIEX1 slot circuit design.</p>
-<p><strong>PCIe2.1 Design Notes:</strong></p>
-<p><strong>1. When designing Slot, peripheral circuits and power supplies need to meet Spec requirements;</strong></p>
-<p><strong>2. A 100nF AC coupling capacitor is connected in series to the TXP/N differential signals of the PCIe2.1 interface. It is recommended to use the 0201 package for the AC coupling capacitor, which has lower ESR and ESL and can also reduce impedance changes on the line;</strong>
-<strong>3. The function pins must be used for PCIE0/1_CLKREQN and cannot be replaced by GPIO;</strong>
-<strong>4. For PCIE0/1_PERSTN/WAKEN/PRSNT on the RK3576, there is no need to specify a particular IO. You can directly use GPIO ports with matching levels as the control function pins;</strong>
-<strong>5. For a standard PCIe Slot, the levels of PCIEx_CLKREQN, PCIEx_WAKEN, and PCIEx_PERSTN are 3.3V. Pay attention to the level matching of RK3576 terminal;</strong>
-<strong>6. When using the PCIe function, the multiplexed SATA/USB functions cannot be used. For details of the corresponding functions of SATA/USB, please refer to the module description;</strong>
-<strong>7. When the PCIe 2.1 functional module is not in use, the data lines PCIE0/1_TXP/TXN, PCIE0/1_RXP/RXN and the reference clock lines PCIE0/1_REFCLKP/REFCLKN can be left floating. The two power supplies, AVDD0V85 and AVDD1V8, should be grounded. Note that the corresponding dts configuration in the software needs to be disabled.</strong></p>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>When designing Slot, peripheral circuits and power supplies need to meet Spec requirements;</strong></p></li>
+<li><p><strong>A 100nF AC coupling capacitor is connected in series to the TXP/N differential signals of the PCIe2.1 interface. It is recommended to use the 0201 package for the AC coupling capacitor, which has lower ESR and ESL and can also reduce impedance changes on the line;</strong></p></li>
+<li><p><strong>The function pins must be used for PCIE0/1_CLKREQN and cannot be replaced by GPIO;</strong></p></li>
+<li><p><strong>For PCIE0/1_PERSTN/WAKEN/PRSNT on the RK3576, there is no need to specify a particular IO. You can directly use GPIO ports with matching levels as the control function pins;</strong></p></li>
+<li><p><strong>For a standard PCIe Slot, the levels of PCIEx_CLKREQN, PCIEx_WAKEN, and PCIEx_PERSTN are 3.3V. Pay attention to the level matching of RK3576 terminal;</strong></p></li>
+<li><p><strong>When using the PCIe function, the multiplexed SATA/USB functions cannot be used. For details of the corresponding functions of SATA/USB, please refer to the module description;</strong></p></li>
+<li><p><strong>When the PCIe 2.1 functional module is not in use, the data lines PCIE0/1_TXP/TXN, PCIE0/1_RXP/RXN and the reference clock lines PCIE0/1_REFCLKP/REFCLKN can be left floating. The two power supplies, AVDD0V85 and AVDD1V8, should be grounded. Note that the corresponding dts configuration in the software needs to be disabled.</strong></p></li>
+</ul>
 <p>The recommended matching design for the PCIe 2.1 interface is shown in the following table:</p>
 <table class="docutils align-default">
 <thead>
@@ -6414,44 +6464,46 @@ needs to be added near the plug-in position.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>PCIE0/1_TXP/TXN</strong></p></td>
-<td><p><strong>Series Connection with 100nF Capacitor (0201 Package Recommended):</strong></p></td>
-<td><p><strong>PCIe Data Output:</strong></p></td>
+<tr class="row-even"><td><p>PCIE0/1_TXP/TXN</p></td>
+<td><p>Series Connection with 100nF Capacitor (0201 Package Recommended):</p></td>
+<td><p>PCIe Data Output:</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>PCIE0/1_RXP/RXN</strong></p></td>
-<td><p><strong>Direct Connection:</strong></p></td>
-<td><p><strong>PCIe Data Input</strong></p></td>
+<tr class="row-odd"><td><p>PCIE0/1_RXP/RXN</p></td>
+<td><p>Direct Connection:</p></td>
+<td><p>PCIe Data Input</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>PCIE0/1_REFCLKP/CLKN</strong></p></td>
-<td><p><strong>Direct Connection:</strong></p></td>
-<td><p><strong>PCIe Reference Clock:</strong></p></td>
+<tr class="row-even"><td><p>PCIE0/1_REFCLKP/CLKN</p></td>
+<td><p>Direct Connection:</p></td>
+<td><p>PCIe Reference Clock:</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>PCIE0/1_CLKREQN</strong></p></td>
-<td><p><strong>Serial Connection with 0ohm Resistor:</strong></p></td>
-<td><p><strong>PCIe Reference Clock Request Input (RC Mode):</strong></p></td>
+<tr class="row-odd"><td><p>PCIE0/1_CLKREQN</p></td>
+<td><p>Serial Connection with 0ohm Resistor:</p></td>
+<td><p>PCIe Reference Clock Request Input (RC Mode):</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>PCIE0/1_WAKEN(RK3576 does not have this signal, replaced with GPIO)</strong></p></td>
-<td><p><strong>Serial Connection with 0ohm Resistor:</strong></p></td>
-<td><p><strong>PCIe wake-up input (RC mode)</strong></p></td>
+<tr class="row-even"><td><p>PCIE0/1_WAKEN(RK3576 does not have this signal, replaced with GPIO)</p></td>
+<td><p>Serial Connection with 0ohm Resistor:</p></td>
+<td><p>PCIe wake-up input (RC mode)</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>PCIE0/1_PERSTN(RK3576 does not have this signal, replaced with GPIO)</strong></p></td>
-<td><p><strong>Serial Connection with 0ohm Resistor:</strong></p></td>
-<td><p><strong>PCIe global reset output (RC mode)</strong></p></td>
+<tr class="row-odd"><td><p>PCIE0/1_PERSTN(RK3576 does not have this signal, replaced with GPIO)</p></td>
+<td><p>Serial Connection with 0ohm Resistor:</p></td>
+<td><p>PCIe global reset output (RC mode)</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>PCIE0/1_PRSNT(RK3576 does not have this signal, replaced with GPIO)</strong></p></td>
-<td><p><strong>Serial Connection with 0ohm Resistor:</strong></p></td>
-<td><p><strong>Add In Card insertion detection input (RC Mode):</strong></p></td>
+<tr class="row-even"><td><p>PCIE0/1_PRSNT(RK3576 does not have this signal, replaced with GPIO)</p></td>
+<td><p>Serial Connection with 0ohm Resistor:</p></td>
+<td><p>Add In Card insertion detection input (RC Mode):</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>PCIE_BUTTONRSTN(Not yet)</strong></p></td>
-<td><p><strong>No need to connect.</strong></p></td>
-<td><p><strong>External physical reset PCIe Controller.</strong></p></td>
+<tr class="row-odd"><td><p>PCIE_BUTTONRSTN(Not yet)</p></td>
+<td><p>No need to connect.</p></td>
+<td><p>External physical reset PCIe Controller.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>9. The impedance of the data traces should be controlled at a differential 85 ohm ±10%;</strong></p>
-<p><strong>10. The impedance of the clock traces should be controlled at a differential 100 ohm ±10%;</strong></p>
-<p><strong>11. The maximum time - delay difference within differential pair should be &lt; 3mil;</strong></p>
-<p><strong>12. The spacing between differential pairs should be ≥ 4 times the PCI-E trace width.</strong></p>
+<ul class="simple">
+<li><p><strong>The impedance of the data traces should be controlled at a differential 85 ohm ±10%;</strong></p></li>
+<li><p><strong>The impedance of the clock traces should be controlled at a differential 100 ohm ±10%;</strong></p></li>
+<li><p><strong>The maximum time - delay difference within differential pair should be &lt; 3mil;</strong></p></li>
+<li><p><strong>The spacing between differential pairs should be ≥ 4 times the PCI-E trace width.</strong></p></li>
+</ul>
 </section>
 <section id="video-input-interface">
 <h4>3.5.18 Video Input Interface<a class="headerlink" href="#video-input-interface" title="Link to this heading"></a></h4>
@@ -6488,15 +6540,17 @@ needs to be added near the plug-in position.</p>
 <p><strong>Supported modes when the MIPI DCPHY operates in the CPHY mode:</strong></p>
 <p>It supports 0/1/2 Trio. Each Trio has 3 lines: Trio_A/Trio_B/Trio_C, namely MIPI_CPHY_CSI_RX_TRIO[2:0]_A, MIPI_CPHY_CSI_RX_TRIO[2:0]_B, and MIPI_CPHY_CSI_RX_TRIO[2:0]_C.</p>
 <p>The default configuration of the OK3576 - C is 5 camera interfaces, which are: MIPI_DPHY_CSI0_RX 4Lane, MIPI_DPHY_CSI1_RX 2Lane, MIPI_DPHY_CSI2_RX 2Lane, MIPI_DPHY_CSI3_RX 2Lane, and MIPI_DPHY_CSI4_RX 2Lane. The principle is as follows:</p>
-<p><strong>Please note in the MIPI RX design:</strong></p>
-<p><strong>1. Differential trace impedance requirement: 100ohm±10%;</strong></p>
-<p><strong>2. Single-ended trace impedance requirement: 50ohn±10%;</strong></p>
-<p><strong>3. Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p>
-<p><strong>4. Equal length between clock and data:＜6mil；</strong></p>
-<p><strong>5. Spacing between differential pairs should be &gt; 4 x MIPI trace, and at a minimum, it should be 3 times the MIPI trace;</strong></p>
-<p><strong>6. The space between MIPI and other signal is better &gt; 4 times MIPI line width and at least 3 times MIPI line width;</strong></p>
-<p><strong>7. When it is configured as CPHY, the maximum inter-group delay difference &lt;3mil (TRIO_A\TRIO_B\TRIO_C);</strong></p>
-<p><strong>8. Length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be ＜50mil.</strong></p>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>Differential trace impedance requirement: 100ohm±10%;</strong></p></li>
+<li><p><strong>Single-ended trace impedance requirement: 50ohn±10%;</strong></p></li>
+<li><p><strong>Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Equal length between clock and data:＜6mil；</strong></p></li>
+<li><p><strong>Spacing between differential pairs should be &gt; 4 x MIPI trace, and at a minimum, it should be 3 times the MIPI trace;</strong></p></li>
+<li><p><strong>The space between MIPI and other signal is better &gt; 4 times MIPI line width and at least 3 times MIPI line width;</strong></p></li>
+<li><p><strong>When it is configured as CPHY, the maximum inter-group delay difference &lt;3mil (TRIO_A\TRIO_B\TRIO_C);</strong></p></li>
+<li><p><strong>Length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be ＜50mil.</strong></p></li>
+</ul>
 </section>
 <section id="video-output-interface">
 <h4>3.5.19  Video Output Interface<a class="headerlink" href="#video-output-interface" title="Link to this heading"></a></h4>
@@ -6528,18 +6582,20 @@ needs to be added near the plug-in position.</p>
 <p>The MIPI_DSI interface of the OK3576-C development board uses a mode of 1 set of clock channels+4 sets of data channels. The schematic diagram is as follows:</p>
 <p><img alt="Image" src="_images/1721199760641_1e606f22_de49_4dd6_8338_f94b39dd59bd.png" /></p>
 <p><img alt="Image" src="_images/1721202280645_6aa529d3_edf1_4a68_a449_d58cacdaa72c.png" /></p>
-<p><strong>Design Considerations:</strong></p>
-<p><strong>1. The differential impedance of the traces should be controlled within 100 ohm ± 10%;</strong></p>
-<p><strong>2. Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p>
-<p><strong>3. Equal length between clock and data:＜6mil；</strong></p>
-<p><strong>4. Differential inter-pair space is recommended to be more than or equal to 4 times the MIPI line width, and at least 3 times MIPI line width;</strong></p>
-<p><strong>5. MIPI and other signal space is recommended to be more than or equal to 4 times the MIPI line width, and at least 3 times MIPI line width;</strong></p>
-<p><strong>6.  For CPHY, the single-ended trace impedance should be controlled at 50ohm±10%;</strong></p>
-<p><strong>7. Inter-group delay difference &lt;3mil (TRIO_A\TRIO_B\TRIO_C);</strong></p>
-<p><strong>8. The length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be &lt; 50 mil;</strong></p>
-<p><strong>9. It is recommended that the number of vias allowed for each signal should ≤ 2;</strong></p>
-<p><strong>10. It is recommended that the spacing between differential pairs should ≥ 4 × MIPI trace width;</strong></p>
-<p><strong>11. It is recommended that the spacing between MIPI and other signals should ≥ 4 × MIPI trace width.</strong></p>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>The differential impedance of the traces should be controlled within 100 ohm ± 10%;</strong></p></li>
+<li><p><strong>Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Equal length between clock and data:＜6mil；</strong></p></li>
+<li><p><strong>Differential inter-pair space is recommended to be more than or equal to 4 times the MIPI line width, and at least 3 times MIPI line width;</strong></p></li>
+<li><p><strong>MIPI and other signal space is recommended to be more than or equal to 4 times the MIPI line width, and at least 3 times MIPI line width;</strong></p></li>
+<li><p><strong>For CPHY, the single-ended trace impedance should be controlled at 50ohm±10%;</strong></p></li>
+<li><p><strong>Inter-group delay difference &lt;3mil (TRIO_A\TRIO_B\TRIO_C);</strong></p></li>
+<li><p><strong>The length matching requirement between groups (TRIO0\TRIO1\TRIO2) should be &lt; 50 mil;</strong></p></li>
+<li><p><strong>It is recommended that the number of vias allowed for each signal should ≤ 2;</strong></p></li>
+<li><p><strong>It is recommended that the spacing between differential pairs should ≥ 4 × MIPI trace width;</strong></p></li>
+<li><p><strong>It is recommended that the spacing between MIPI and other signals should ≥ 4 × MIPI trace width.</strong></p></li>
+</ul>
 </section>
 <section id="hdmi-tx-interface">
 <h5><strong>3.5.19.2 HDMI_TX Interface</strong><a class="headerlink" href="#hdmi-tx-interface" title="Link to this heading"></a></h5>
@@ -6560,8 +6616,8 @@ needs to be added near the plug-in position.</p>
 <p>As shown in the figure below, the AC coupling capacitor capacitance is 220nF, which cannot be changed at will; because the lower ESR and ESL can also reduce the impedance change on the line, it is recommended to use the 0201 packaging for the AC coupling capacitor.</p>
 <p>When operating in the HDMI 2.1 mode, the HDMI_TX_ON_H is configured to a low level, and Q15, Q16, Q17, and Q18 are non - conducting.</p>
 <p>When operating in HDMI 2.0 and below, HDMI _ TX _ ON _ H is configured high, Q15, Q16, Q17, and Q18 are turned on, and the 499ohm resistor to ground and the 50ohm pull-up resistor at the Sink terminal form a DC bias of approximately 3 V.</p>
-<p><strong><font style="color:#ff0000;">Design Considerations:</font></strong></p>
-<p><strong><font style="color:#ff0000;">When only HDMI 2.0 and lower modes need to be supported, components Q15, Q16, Q17, and Q18 must not be omitted. It is essential to ensure that the transistors remain non-conductive when the device is powered off, as the HDMI CTS Test ID 7-3 TMDS Voff test requires that the Voff voltage stays within ±10mV of AVcc when the Device Under Test (DUT) is unpowered; otherwise, this test item will fail.</font></strong></p>
+<p><strong>Notes:</strong></p>
+<p><strong>When only HDMI 2.0 and lower modes need to be supported, components Q15, Q16, Q17, and Q18 must not be omitted. It is essential to ensure that the transistors remain non-conductive when the device is powered off, as the HDMI CTS Test ID 7-3 TMDS Voff test requires that the Voff voltage stays within ±10mV of AVcc when the Device Under Test (DUT) is unpowered; otherwise, this test item will fail.</strong></p>
 <p><img alt="Image" src="_images/1721202297987_de992835_5881_4d00_ab5d_fc8bedcac83a.png" /></p>
 <p>FRL mode: In the traditional TMDS architecture, a separate channel is used to transmit the Clock. But in the FRL architecture, the Clock is embedded in the Data channel, and the Clock is resolved at the Sink side through the Clock Recovery.</p>
 <p>FRL rate vs. channel relationship:</p>
@@ -6608,15 +6664,17 @@ needs to be added near the plug-in position.</p>
 <p>HDMI holder Pin18 voltage needs to be kept between 4.8-5.3V, 1uF decoupling capacitor needs to be placed on the pin, which must not be deleted, and the layout is placed close to the HDMI holder pin.</p>
 <p>To strengthen the anti-static capability, ESD devices must be reserved on the signal. ESD parasitic capacitance of HDMI2.1 signal must not exceed 0.2pF.</p>
 <p>ESD parasitic capacitance for other signals is recommended to use no more than 1pF.</p>
-<p><strong>Design Considerations:</strong></p>
-<p><strong>1. Control MOS tube Coss can not be too large, otherwise it will affect the signal quality, it is recommended to follow the reference chart model or the corresponding Coss value;</strong></p>
-<p><strong>2. The differential impedance of the traces should be controlled within 100 ohm ± 10%;</strong></p>
-<p><strong>3. Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p>
-<p><strong>4. Equal Length Requirement Between Differential Pairs＜200mil;</strong></p>
-<p><strong>5. The spacing between differential pairs should be at least 7 times the HDMI trace width;</strong></p>
-<p><strong>6. Spacing Between HDMI and other signals: ≥7 times the HDMI trace;</strong></p>
-<p><strong>7. It is recommended to avoid vias;</strong></p>
-<p><strong>8. I/O capacitance to ground does not exceed 0.2pF.</strong></p>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>Control MOS tube Coss can not be too large, otherwise it will affect the signal quality, it is recommended to follow the reference chart model or the corresponding Coss value;</strong></p></li>
+<li><p><strong>The differential impedance of the traces should be controlled within 100 ohm ± 10%;</strong></p></li>
+<li><p><strong>Maximum time - delay difference within differential pair: &lt; 3mil;</strong></p></li>
+<li><p><strong>Equal Length Requirement Between Differential Pairs＜200mil;</strong></p></li>
+<li><p><strong>The spacing between differential pairs should be at least 7 times the HDMI trace width;</strong></p></li>
+<li><p><strong>Spacing Between HDMI and other signals: ≥7 times the HDMI trace;</strong></p></li>
+<li><p><strong>It is recommended to avoid vias;</strong></p></li>
+<li><p><strong>I/O capacitance to ground does not exceed 0.2pF.</strong></p></li>
+</ul>
 <p><strong>3.5.19.2 DP_TX Interface</strong></p>
 <p>The RK3576 supports a DP 1.4 TX PHY (combined with USB3 OTG0), with a maximum output resolution of up to 4K&#64;YUV422 - 120Hz.</p>
 <p>·Each Lane rate can support 1.62/2.7G/5.4/8.1Gbps;</p>
@@ -6629,15 +6687,17 @@ needs to be added near the plug-in position.</p>
 <p>·Supports 3 - channel MST (Multi - Stream Transport) display. The maximum capabilities of the MST for triple - screen different display are: 4096x2160&#64;60Hz, 2560x1600&#64;60Hz, and 1920x1080&#64;60Hz.</p>
 <p><img alt="Image" src="_images/1721199762544_9dab7aad_2307_4119_827c_052673fd9e9b.png" /></p>
 <p>Please refer to section 3.5.15 for the USB pin multiplexing.</p>
-<p><strong>Design Considerations:</strong></p>
-<p><strong>1. DP0_TX_D0P/D0N, DP0_TX_D1P/D1N, DP0_TX_D2P/D2N, DP0_TX_D3P/D3N, DP1_TX_D0P/D0N, DP1_TX_D1P/D1N, DP1_TX_D2P/D2N, DP1_TX_D3P/D3N require 100nF AC coupling capacitors to be connected in series. It is recommended to use the 0201 package for the AC coupling capacitors, which have lower ESR and ESL and can also reduce the impedance variation on the line. When laying out, place them close to the FET3576 - C pin;</strong></p>
-<p><strong>2. Routing impedance control differential 100ohm ± 10% (as DP interface only, no multiplexing), differential 95ohm ±10% (USB3.0/DP1.4 multiplexing);</strong></p>
-<p><strong>3. The delay difference within the differential pair should be ＜3mil；</strong></p>
-<p><strong>4. Equal Length Requirement Between Differential Pairs＜500mil;</strong></p>
-<p><strong>5. The spacing between differential pairs should be at least 6 times the DP trace width;</strong></p>
-<p><strong>6. It is recommended that the spacing between DP and other signals should ≥ 6 × DP trace width.</strong></p>
-<p><strong>7. It is recommended that the number of vias allowed for each signal should ≤ 2;</strong></p>
-<p><strong>8. I/O capacitance to ground does not exceed 0.2pF.</strong></p>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li><p><strong>DP0_TX_D0P/D0N, DP0_TX_D1P/D1N, DP0_TX_D2P/D2N, DP0_TX_D3P/D3N, DP1_TX_D0P/D0N, DP1_TX_D1P/D1N, DP1_TX_D2P/D2N, DP1_TX_D3P/D3N require 100nF AC coupling capacitors to be connected in series. It is recommended to use the 0201 package for the AC coupling capacitors, which have lower ESR and ESL and can also reduce the impedance variation on the line. When laying out, place them close to the FET3576 - C pin;</strong></p></li>
+<li><p><strong>Routing impedance control differential 100ohm ± 10% (as DP interface only, no multiplexing), differential 95ohm ±10% (USB3.0/DP1.4 multiplexing);</strong></p></li>
+<li><p><strong>The delay difference within the differential pair should be ＜3mil；</strong></p></li>
+<li><p><strong>Equal Length Requirement Between Differential Pairs＜500mil;</strong></p></li>
+<li><p><strong>The spacing between differential pairs should be at least 6 times the DP trace width;</strong></p></li>
+<li><p><strong>It is recommended that the spacing between DP and other signals should ≥ 6 × DP trace width;</strong></p></li>
+<li><p><strong>It is recommended that the number of vias allowed for each signal should ≤ 2;</strong></p></li>
+<li><p><strong>I/O capacitance to ground does not exceed 0.2pF.</strong></p></li>
+</ul>
 </section>
 </section>
 <section id="wifi-bt-module-circuit">
@@ -6645,21 +6705,25 @@ needs to be added near the plug-in position.</p>
 <p>The OK3576 - C board is equipped with a Haihua AW - CM358SM WIFI &amp; BT module, which supports WIFI 2.4G/5G and Bluetooth 5.0. The WIFI/BT antennas are led out through SMA interfaces, and the SDIO, PDM, and UART interfaces are connected to the main controller. The schematic is as follows:</p>
 <p><img alt="Image" src="_images/1721202359630_dd0cc4f3_fde7_40ce_a1d5_5092fe45265c.png" /><img alt="Image" src="_images/1721202368754_6ce7b290_8751_4095_91f9_64d2c4b65b6d.png" /></p>
 <p><strong>Note:</strong></p>
-<p><strong>1. The power supply for the WIFI card must be controlled; please refer to the carrier board circuit;</strong></p>
-<p><strong>2. SDIO impedance requirements: Single-ended 50ohm, signal equal length control 50 mil.</strong></p>
-<p><strong>1. I2C Requirements</strong></p>
-<p>Multiple slave devices can be connected on a single I2C bus, ensuring no address conflicts.</p>
-<p>Pull - up resistors are required on the I2C bus, but multiple resistors should not be used for pull - up.</p>
-<p>Please ensure level matching between the I2C on the SoM side and the I2C of the slave device.</p>
-<p><strong>2. USB Design</strong></p>
-<p>To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.</p>
-<p><strong>3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</strong></p>
-<p><strong>4. Power - on Sequence</strong></p>
-<p>It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER_BOARD_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:</p>
-<p>·Excessive current during the power - on phase.</p>
-<p>·The device fails to start.</p>
-<p>·In the worst - case scenario, irreversible damage to the processor.</p>
-<p><strong>Note: For detailed hardware design information, please refer to the “FET3576-C _ Hardware Design Guide”.</strong></p>
+<ul class="simple">
+<li><p><strong>The power supply for the WIFI card must be controlled; please refer to the carrier board circuit;</strong></p></li>
+<li><p><strong>SDIO impedance requirements: Single-ended 50ohm, signal equal length control 50 mil;</strong></p></li>
+<li><p><strong>I2C Requirements:</strong></p></li>
+</ul>
+<p><strong>Multiple slave devices can be connected on a single I2C bus, ensuring no address conflicts.</strong></p>
+<p><strong>Pull - up resistors are required on the I2C bus, but multiple resistors should not be used for pull - up.</strong></p>
+<p><strong>Please ensure level matching between the I2C on the SoM side and the I2C of the slave device.</strong></p>
+<ul class="simple">
+<li><p><strong>USB Design:</strong></p></li>
+</ul>
+<p><strong>To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.</strong></p>
+<p><strong>The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</strong></p>
+<p><strong>Power - on Sequence:</strong></p>
+<p><strong>It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER_BOARD_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence. Or it may have the following influences:</strong></p>
+<p><strong>·Excessive current during the power - on phase.</strong></p>
+<p><strong>·The device fails to start.</strong></p>
+<p><strong>·In the worst - case scenario, irreversible damage to the processor.</strong></p>
+<p><strong>For detailed hardware design information, please refer to the “FET3576-C _ Hardware Design Guide”.</strong></p>
 <p>SoM Connector Dimension:</p>
 <p>A=21.52mm, B=19.6mm, C=3.2mm, Contacts=100</p>
 <p><img alt="Image" src="_images/1720593594270_2f3a8c1f_8bbd_47bf_94dc_b40e4caf90ca.png" /></p>
@@ -6714,10 +6778,12 @@ needs to be added near the plug-in position.</p>
 </tbody>
 </table>
 <p><strong>Note：</strong></p>
-<p><strong>1. Test conditions: The SoM configuration is 4GB memory + 32GB eMMC, the 4G module is moved away from EM05-CE, and the screen is an optional product of Forlinx. SoM power supply is 12V and development board is 12V;</strong>
-<strong>2. Peak power: The peak current during startup multiplied by the supply voltage;</strong>
-<strong>3. Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage;</strong>
-<strong>4. Power consumption is for reference only.</strong></p>
+<ul class="simple">
+<li><p><strong>Test conditions: The SoM configuration is 4GB memory + 32GB eMMC, the 4G module is moved away from EM05-CE, and the screen is an optional product of Forlinx. SoM power supply is 12V and development board is 12V;</strong></p></li>
+<li><p><strong>Peak power: The peak current during startup multiplied by the supply voltage;</strong></p></li>
+<li><p><strong>Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage;</strong></p></li>
+<li><p><strong>Power consumption is for reference only.</strong></p></li>
+</ul>
 <p><img alt="Image" src="_images/1721202497766_6cd40972_6e14_4fb7_87e6_c8ce3ea7d662.png" /><img alt="Image" src="_images/1721202503901_87b7a821_411b_4fa6_8699_c630c51f72ab.png" /><img alt="Image" src="_images/1721202510322_2a09a9be_398d_4ed4_9008_33577d403111.png" /><img alt="Image" src="_images/1721202515344_74ef1fc3_a58b_41da_9d7b_5410cc0ba9eb.png" /><img alt="Image" src="_images/1721202521283_59e66750_4742_475a_987c_1ecb9645a0fa.png" /><img alt="Image" src="_images/1721202526484_faf4ae72_40a4_43c0_8ecb_be7972823b48.png" /><img alt="Image" src="_images/1721202531751_a1fb6b32_5f11_4461_9524_611092751a89.png" /><img alt="Image" src="_images/1721202537316_20ba5d44_ba45_4012_9c00_cc6e288fb336.png" /><img alt="Image" src="_images/1721202541259_98cbfc41_35b1_4bd6_b37b_b69a9f03be6e.png" /><img alt="Image" src="_images/1721202545576_5474d0ba_e918_457a_8603_47cae5ec8c60.png" /><img alt="Image" src="_images/1721202550616_be59f1df_5d26_4745_9ca8_d20bd1810bf9.png" /><img alt="Image" src="_images/1721202555786_2a8b6938_e6da_4707_8ec8_3d13fd5550ae.png" /><img alt="Image" src="_images/1721202560395_cc2a8ca7_9693_4c58_91f6_c6ae3ba5b628.png" /><img alt="Image" src="_images/1721202565905_2b791e97_81c1_4564_a31e_e136a9fa58da.png" /><img alt="Image" src="_images/1721202570526_541ed216_c5f5_4e96_b85d_dbedc4714863.png" /><img alt="Image" src="_images/1721202575346_49db14b2_5ace_48ed_a80b_feee12eb666b.png" /><img alt="Image" src="_images/1721202581041_938c01c0_b986_4431_98d7_8efab07cf602.png" /><img alt="Image" src="_images/1721202586705_41cde625_2184_463f_ba3d_48247cf83ec2.png" /><img alt="Image" src="_images/1721202591441_c5f53746_00e5_4690_a88f_51fa87e83292.png" /><img alt="Image" src="_images/1721202596564_48011e43_55b8_45f2_83ee_c61b54f07f67.png" /></p>
 <p>The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. In order to meet the normal work of the SoM, the minimum system includes the SoM power supply, the system programming circuit, and the debugging serial circuit.</p>
 </section>
@@ -6725,14 +6791,14 @@ needs to be added near the plug-in position.</p>
 </section>
 <section id="hardware-design-guide">
 <h2>4. Hardware Design Guide<a class="headerlink" href="#hardware-design-guide" title="Link to this heading"></a></h2>
-<p><strong>1. I2C Requirements</strong></p>
+<p><strong>1. I2C Requirements:</strong></p>
 <p>Multiple slave devices can be connected on a single I2C bus, ensuring no address conflicts.</p>
 <p>Pull - up resistors are required on the I2C bus, but multiple resistors should not be used for pull - up.</p>
 <p>Please ensure level matching between the I2C on the SoM side and the I2C of the slave device.</p>
-<p>**2. USB Design **</p>
+<p>**2. USB Design: **</p>
 <p>To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.</p>
 <p><strong>3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.</strong>
-<strong>4. Power - on Sequence</strong></p>
+<strong>4. Power - on Sequence；</strong></p>
 <p>It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER_BOARD_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:</p>
 <p>·Excessive current during the power - on phase.</p>
 <p>·The device fails to start.</p>
@@ -6750,7 +6816,7 @@ needs to be added near the plug-in position.</p>
 </section>
 <section id="ok3576-c-development-board-power-consumption-table">
 <h2>6. OK3576-C Development Board Power Consumption Table<a class="headerlink" href="#ok3576-c-development-board-power-consumption-table" title="Link to this heading"></a></h2>
-<p>Table 1. Linux system power consumption</p>
+<p><strong>Table 1. Linux system power consumption</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>No.</p></th>
@@ -6797,7 +6863,7 @@ needs to be added near the plug-in position.</p>
 </tr>
 </tbody>
 </table>
-<p>Table2. Android System Consumption</p>
+<p><strong>Table2. Android System Consumption</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>No.</p></th>
@@ -6835,12 +6901,12 @@ needs to be added near the plug-in position.</p>
 </tbody>
 </table>
 <p><strong>Note：</strong></p>
-<ol class="arabic simple">
-<li><p>Test conditions: The SoM configuration is 4GB memory + +32GB eMMC; the 4G module is Quectel EM05-CE, and the screen is an optional product. SoM power supply is 12V and development board is 12V.</p></li>
-<li><p>Peak power: The peak current during startup multiplied by the supply voltage.</p></li>
-<li><p>Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage.</p></li>
-<li><p>Power consumption is for reference only.</p></li>
-</ol>
+<ul class="simple">
+<li><p><strong>Test conditions: The SoM configuration is 4GB memory + +32GB eMMC; the 4G module is Quectel EM05-CE, and the screen is an optional product. SoM power supply is 12V and development board is 12V；</strong></p></li>
+<li><p><strong>Peak power: The peak current during startup multiplied by the supply voltage；</strong></p></li>
+<li><p><strong>Standby power: The current value in the power-on interface after startup multiplied by the power supply voltage；</strong></p></li>
+<li><p><strong>Power consumption is for reference only.</strong></p></li>
+</ul>
 </section>
 <section id="minimum-system-schematic">
 <h2>7. Minimum System Schematic<a class="headerlink" href="#minimum-system-schematic" title="Link to this heading"></a></h2>
