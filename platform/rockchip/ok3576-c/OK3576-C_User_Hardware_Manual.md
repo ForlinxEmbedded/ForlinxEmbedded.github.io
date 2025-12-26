@@ -202,16 +202,22 @@ FET3576-C SoM Interfaces:
 |            ADC             |                              ≤8                              | ·Supports 8 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s; |
 |            GPIO            |                              n                               | ·All GPIO pins can be used to generate interrupts;<br/>·Support both level - triggered and edge - triggered interrupts;<br/>·Support configuration of the polarity for level - triggered interrupts;<br/>·Support rising - edge, falling - edge, and both - edge triggered interrupts;<br/>·Support configuration of pull - up and pull - down resistors (weak pull - up and weak pull - down).;<br/>·Support configuration of drive capability. |
 
-**Note: **
+**Note:** 
 
 **The parameters in the table are the theoretical values of hardware design or CPU.**
 **The interfaces have GPIO multiplexing, and the quantity mentioned is the theoretical maximum.**
+
 ***1. Video Port**
 **·Video Port0 supports up to 4K@120Hz with 10 bit data**
+
 **·Video Port1 supports up to 2560x1600@60Hz with 10-bit data**
+
 **·Video Port2 supports up to 1920x1080@60Hz with 8-bit data**
+
 **·Each Video Port may connect to any of HDMI/eDP/DP/DSI-2**
+
 **·Port1 and Port2 may connect to parallel output interface**
+
 ***2. The maximum clock of a single TDM design is 50MHz. When using the TDM mode, the theoretical number of supported audio channels can be calculated by combining the audio sampling frequency and resolution to see if it meets the project requirements.**
 
 ### 2.6 FET3576-C SoM Pins Definition
@@ -1318,9 +1324,7 @@ The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led 
 
 ![Image](./images/OK3576-C_User_Hardware_Manual/1721202067447_8980d1a7_e5dd_4ae8_a521_9f0b5d81a322.png)![Image](./images/OK3576-C_User_Hardware_Manual/1721202074386_8a00c3e7_214e_4476_8e8b_3dc95daaf12d.png)
 
-**Note: **
-
-- **The following table shows the RK3576 RGMII/RMII interface design:**
+**Note: The following table shows the RK3576 RGMII/RMII interface design.**
 
 **Table 3.5.10.1 RK3576 RGMII/RMII Interface**
 
@@ -1525,7 +1529,7 @@ The above figure shows the differential signal circuit and ESD protection device
 
 - **According to the TYPEC protocol, a 100nF AC - coupling capacitor should be added to the SSTXP/N lines. It is recommended to use a 0201 package for the AC - coupling capacitor, which has lower ESR and ESL and can also reduce the impedance change on the line；**
 
-- **ESD devices must be added to all signals of the TYPEC socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF; **
+- **ESD devices must be added to all signals of the TYPEC socket and should be placed close to the USB connector during layout. For the SSTXP/N and SSRXP/N signals, the parasitic capacitance of the ESD shall not exceed 0.3pF;** 
 
 - **The differential impedance of USB 2.0 control signals should be 90 ohm ± 10%, and the maximum time delay within the differential pair should be ＜10mil;**
 
@@ -2042,6 +2046,7 @@ Please ensure level matching between the I2C on the SoM side and the I2C of the 
 To meet the requirements of the USB eye diagram, the PCB trace length of USB3.0 TX/RX should not exceed 6 inches.
 
 **3. The unused signal pins of the SoM can be left floating, but please make sure to connect all the GND pins.**
+
 **4. Power - on Sequence；**
 
 It is strongly recommended to refer to the design of the development board when designing the carrier board. Use the CARRIER\_BOARD\_EN output by the SoM as the power-on enable for the carrier board, and strictly control the power-on sequence.. Or it may have the following influences:
