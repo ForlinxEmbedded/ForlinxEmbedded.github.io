@@ -326,7 +326,7 @@ There are 1 x USB2.0, which is led out through the USB2.0 in the USB-A double-la
 
 **Note:**
 
-- **All USB data cables need to have a 90Ω differential impedance；**
+- **All USB data cables need to have a 90Ω differential impedance;**
 - **Please select appropriate ESD devices.**
 
 #### 3.5.9 USB3.0 Interface
