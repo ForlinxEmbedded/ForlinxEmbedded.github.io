@@ -1028,7 +1028,7 @@ Default Function——Please don’t make any modifications for all SoM pin func
 
 FET3576-C SoM integrates the power supply and storage circuits into a compact module. The required external circuits are very simple. To form a minimum system, it only needs a 5V-13V power supply, a reset button, an SD card for programming, and startup configuration to operate, as shown in the following figure:
 
-![](./images/OK3576-C_User_Hardware_Manual/2.png)
+![Image](./images/OK3576-C_User_Hardware_Manual/2.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting debugging information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -1038,7 +1038,7 @@ Please refer to section 3.5 in “Chapter 3. OK3576-C Carrier Board Description�
 
 It uses M2 anti-loosening screws to fix the pre-set mounting holes at the four corners of the SoM. The tightening torque is controlled at 0.15 N·m. The specific assembly schematic diagram is as follows:
 
-![](./images/OK3576-C_User_Hardware_Manual/1.jpg)
+![Image](./images/OK3576-C_User_Hardware_Manual/1.jpg)
 
 This design has passed the vibration test specified in the standards GB/T 2423.10 - 2008 / IEC 60068 - 2 - 6:1995, meeting the following levels:
 
