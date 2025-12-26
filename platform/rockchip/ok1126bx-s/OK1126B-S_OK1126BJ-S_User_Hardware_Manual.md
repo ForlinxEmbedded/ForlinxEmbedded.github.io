@@ -346,8 +346,8 @@ After the SoM starts, you can switch between the host and device modes through S
 **Note:**
 
 - **Only the native USB3.0 OTG of the SoM supports USB system flashing;**
-- **All USB data cables need to have a 90Ω differential impedance；**
-- **Please select appropriate ESD devices；**
+- **All USB data cables need to have a 90Ω differential impedance;**
+- **Please select appropriate ESD devices;**
 - **The USB\_OTG\_VBUSDET needs to detect voltage to enable the USB function normally.**
 
 #### 3.5.10 MIPI-DSI
