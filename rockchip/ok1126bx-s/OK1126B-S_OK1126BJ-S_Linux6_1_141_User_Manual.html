@@ -24,6 +24,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Linux6.1.141_User’s Compilation Manual_V1.0" href="OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual.html" />
+    <link rel="prev" title="User’s Hardware Manual_V1.0" href="OK1126B-S_OK1126BJ-S_User_Hardware_Manual.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -63,6 +65,127 @@
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="OK1126B-S_OK1126BJ-S_User_Hardware_Manual.html">User’s Hardware Manual_V1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.141_User’s Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok1126b-s-development-board-description">1. OK1126B-S Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok1126b-s-ok1126bj-s-development-board-description">1.1 OK1126B-S/OK1126BJ-S Development Board Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linux-6-1-118-system-software-resources-features">1.2 Linux 6.1.118 System Software Resources Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-memory-partition-table">1.3 EMMC Memory Partition Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging-serial-driver-installation">2.2 Debugging Serial Driver Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-login">2.3 Serial Port Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-login">2.3.2 Serial Login</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#network-login">2.4 Network Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ssh">2.4.1 SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftp">2.4.2 FTP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-switching">2.5 Screen Switching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-control-of-uboot-menu">2.5.1 Dynamic Control of Uboot Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernel-device-tree-specification">2.5.2 Kernel Device Tree Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#system-shutdown">2.6 System Shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok1126b-s-qt-function-test">3. OK1126B-S_QT Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#g-test">3.1 4G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-test">3.2 WIFI Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#network-configuration-test">3.3 Network Configuration Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ping-test">3.4 Ping Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#watchdog-test">3.5 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc-test">3.6 RTC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uart-test">3.7 UART Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backlight-test">3.8 Backlight Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spi-test">3.9 SPI Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#playback-test">3.10. Playback Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-playback-test">3.11 Video Playback Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok1126b-s-command-line-function-test">4. OK1126B - S Command - line Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-information-queries">4.1 System Information Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frequency-test">4.2 Frequency Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#temperature-test">4.3 Temperature Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ddr-bandwidth-test">4.4 DDR Bandwidth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-port-test">4.5 Serial Port Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">4.6 SPI Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.7 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">4.8 WiFi Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sta-mode">4.8.1 STA Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ap-mode">4.8.2 AP Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bluetooth-test">4.9 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc-function-test">4.10 RTC Function Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-2-0-usb3-0">4.11 USB 2.0/USB3.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#screen-backlight-adjustment">4.12 Screen Backlight Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-test">4.13 TF Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emmc-test">4.14 EMMC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet-configuration">4.15 Ethernet Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ip-fix-method">4.15.1 IP Fix Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#automatic-ip-acquisition-method">4.15.2 Automatic IP Acquisition Method</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#play-record-test">4.16 Play/Record Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-wake-up-test">4.17 Sleep &amp; Wake-up Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#npu-test">4.18 NPU Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led-test">4.19 LED Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adc-test">4.20 ADC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sqlite3-test">4.21 SQLite3 Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">4.22 4G Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok1126b-platform-multimedia-test">5. OK1126B Platform Multimedia Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#audio-and-video-playback">5.1 Audio and Video Playback</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#playing-audio-and-video-with-gst-play">5.1.1 Playing Audio and Video with Gst-play</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-playback-with-gst-launch">5.1.2 Video Playback with Gst-launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#playing-audio-with-gst-launch">5.1.3 Playing Audio with Gst-launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#playing-video-and-audio-with-gst-launch">5.1.4 Playing Video and Audio with Gst-launch</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#video-hardware-encoding">5.2 Video Hardware Encoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#video-hardware-encoding-h-264">5.2.1 Video Hardware Encoding H.264</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-hardware-encoding-h-265">5.2.2 Video Hardware Encoding H.265</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#video-hardware-decoding">5.3 Video Hardware Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h-264-format-video">5.3.1 Decoding and Playing H.264 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h264-format-video-with-audio">5.3.2 Decoding and Playing H264 Format Video with Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h-265-format-video">5.3.3 Decoding and Playing H.265 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#decoding-and-playing-h265-format-video-with-audio">5.3.4 Decoding and Playing H265 Format Video with Audio</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-test">5.4 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ov13850-test">5.4.1 OV13850 Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#waylandsink-point-test">5.5 Waylandsink Point Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-flashing">6. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#otg-system-flashing">6.1 OTG System Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#otg-driver-installation">6.1.1 OTG Driver Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-full-flashing-test">6.1.2 OTG Full Flashing Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-step-by-step-flashing-test">6.1.3 OTG Step-by-step Flashing Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tf-card-flashing">6.2 TF Card Flashing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual.html">Linux6.1.141_User’s Compilation Manual_V1.0</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
 <ul>
