@@ -397,7 +397,7 @@ Disk<span class="w"> </span>/dev/mmcblk0boot0<span class="w"> </span>doesn<span 
 <section id="ssh">
 <h4>2.4.1 SSH<a class="headerlink" href="#ssh" title="Link to this heading"></a></h4>
 <p>The OK1126B-S/OK1126BJ-S development board supports the SSH service, which is automatically enabled at startup. After setting the IP address, it can serve as an SSH server. You can log in to the development board via SSH for development and debugging, as well as use scp for file transfer.</p>
-<p>**Note: **</p>
+<p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>When logging in, enter the username “root” as prompted, and there is no password;</strong></p></li>
 <li><p><strong>The following tests are conducted with the development board’s IP address set as 172.20.0.129. Please modify it according to the actual situation. Use the following commands in the debugging serial port terminal to make changes:</strong></p></li>
@@ -427,7 +427,7 @@ root@OK1126B-buildroot:~#
 <p>Install the file Zilla tool on windows and set it up as shown in the following figure.</p>
 <p><strong>Note</strong>:</p>
 <ul class="simple">
-<li><p><strong>This feature requires connecting the development board to the network cable. Make sure the host IP setting and the client are on the same network segment, ensuring that the host and client are in the same local area netThe username is “forlinx” and the password is “forlinx”. Once logged in successfully, you can perform upload and download operations on the file system under the “/home/forlinx’ directory.”;</strong></p></li>
+<li><p><strong>This feature requires connecting the development board to the network cable. Make sure the host IP setting and the client are on the same network segment, ensuring that the host and client are in the same local area netThe username is “forlinx” and the password is “forlinx”. Once logged in successfully, you can perform upload and download operations on the file system under the “/home/forlinx’ directory;”</strong></p></li>
 <li><p><strong>The following is tested with the development board IP 172.20.0.129. Please make modifications according to the actual situation. When debugging the serial port terminal, use the following command to make the changes:</strong></p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ifconfig<span class="w"> </span>eth0<span class="w"> </span><span class="m">172</span>.20.0.129<span class="w"> </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0
@@ -491,7 +491,7 @@ root@OK1126B-buildroot:~#
 <section id="kernel-device-tree-specification">
 <h4>2.5.2 Kernel Device Tree Specification<a class="headerlink" href="#kernel-device-tree-specification" title="Link to this heading"></a></h4>
 <p>This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again</p>
-<p>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</p>
+<p><strong>Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.</strong></p>
 <p>Device tree path: kernel/arch/arm64/boot/dts/rockchip/OK1126B-S-common.dtsi</p>
 <p>In the kernel source code, open the device dtsi file and find the following node:</p>
 <p><img alt="Image" src="_images/1766382045612_5a2f5152_e084_4019_a540_97d590741056.png" /></p>
@@ -506,7 +506,7 @@ root@OK1126B-buildroot:~#
 <section id="system-shutdown">
 <h3>2.6 System Shutdown<a class="headerlink" href="#system-shutdown" title="Link to this heading"></a></h3>
 <p>In general, you can turn off the power directly, but avoid doing so during important operations like data storage or usage to prevent irreversible file damage. Damaged files may require firmware rewrite. To ensure that data is not completely written, enter the sync command to complete data synchronization before turning off the power.</p>
-<p><font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.</p>
+<p><strong>Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.</strong></p>
 </section>
 </section>
 <section id="ok1126b-s-qt-function-test">
@@ -544,7 +544,7 @@ root@OK1126B-buildroot:~#
 <p>The STATIC mode interface is as follows:</p>
 <p><img alt="Image" src="_images/1766382048514_2b0f4a5d_0f51_44c8_808f_e770829c5bb1.jpeg" /></p>
 <p>Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.</p>
-<p>Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.</p>
+<p><strong>Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.</strong></p>
 </section>
 <section id="ping-test">
 <h3>3.4 Ping Test<a class="headerlink" href="#ping-test" title="Link to this heading"></a></h3>
@@ -960,22 +960,18 @@ F0<span class="w"> </span>0D
 <section id="id2">
 <h3>4.7 Watchdog Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>The watchdog is a commonly used function in embedded systems. The device node of the watchdog in OK1126B - S/OK1126BJ - S is /dev/watchdog0. This test provides two test procedures, and the user can choose one of them to test according to the actual situation.</p>
-<ol class="arabic simple">
-<li><p>Start fltest_watchdog, set the reset time to 10s, and feed the dog regularly;</p></li>
-</ol>
+<p>1. Start fltest_watchdog, set the reset time to 10s, and feed the dog regularly;</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span>fltest_watchdog
 Watchdog<span class="w"> </span>Ticking<span class="w"> </span>Away!
 </pre></div>
 </div>
 <p>This command turns on the watchdog and performs a feed, so the system does not reboot.</p>
-<p>Note: When ctrl + C is used to end the test program, the system will reset after 10 seconds. If you do not want to reset, please input within 10 seconds after ctrl + C:</p>
+<p><strong>Note: When ctrl + C is used to end the test program, the system will reset after 10 seconds. If you do not want to reset, please input within 10 seconds after ctrl + C.</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span>fltest_watchdog<span class="w"> </span>-d
 Watchdog<span class="w"> </span>card<span class="w"> </span>disabled.<span class="w">   </span>//Turn<span class="w"> </span>off<span class="w"> </span>the<span class="w"> </span>watchdog
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li><p>Start fltestw_watchdog, set the reset time to 10 seconds, and do not feed the dog.</p></li>
-</ol>
+<p>2. Start fltestw_watchdog, set the reset time to 10 seconds, and do not feed the dog.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span>fltest_watchdog<span class="w"> </span>-e
 <span class="o">[</span><span class="w">  </span><span class="m">181</span>.507014<span class="o">]</span><span class="w"> </span>watchdog:<span class="w"> </span>watchdog0:<span class="w"> </span>watchdog<span class="w"> </span>did<span class="w"> </span>not<span class="w"> </span>stop!
 Watchdog<span class="w"> </span>card<span class="w"> </span>enabled.
@@ -1170,21 +1166,19 @@ drwxrwx---<span class="w"> </span><span class="m">3</span><span class="w"> </spa
 <section id="screen-backlight-adjustment">
 <h3>4.12 Screen Backlight Adjustment<a class="headerlink" href="#screen-backlight-adjustment" title="Link to this heading"></a></h3>
 <p>Backlight level range (0–255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test.</p>
-<ol class="arabic simple">
-<li><p><strong>View the current screen backlight values:</strong></p></li>
-</ol>
+<p>1. View the current screen backlight values:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span>cat<span class="w"> </span>/sys/class/backlight/backlight-dsi/brightness<span class="w">		</span>//View<span class="w"> </span>MIPI-DSI<span class="w"> </span>Screen<span class="w"> </span>backlight<span class="w"> </span>values
 <span class="m">200</span>
 root@OK1126B-buildroot:/#<span class="w"> </span>cat<span class="w"> </span>/sys/class/backlight/backlight-lcd/brightness<span class="w">		</span>//View<span class="w"> </span>RGB<span class="w"> </span>screen<span class="w"> </span>backlight<span class="w"> </span>values
 <span class="m">200</span>
 </pre></div>
 </div>
-<p><strong>2. Backlight is off:</strong></p>
+<p>2. Backlight is off:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/backlight/backlight-dsi/brightness<span class="w">      	</span>//Turn<span class="w"> </span>off<span class="w"> </span>the<span class="w"> </span>MIPI-DSI<span class="w"> </span>screen<span class="w"> </span>backlight
 root@OK1126B-buildroot:/#<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/backlight/backlight-lcd/brightness<span class="w">       </span>//Turn<span class="w"> </span>off<span class="w"> </span>RGB<span class="w"> </span>screen<span class="w"> </span>backlight
 </pre></div>
 </div>
-<p><strong>3. LCD backlight is on:</strong></p>
+<p>3. LCD backlight is on:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">255</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/backlight/backlight-dsi/brightness<span class="w">       </span>//Turn<span class="w"> </span>on<span class="w"> </span>LVDS<span class="w"> </span>backlight
 root@OK1126B-buildroot:/#<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">255</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/backlight/backlight-lcd/brightness<span class="w">       </span>//Turn<span class="w"> </span>on<span class="w"> </span>dsi<span class="w"> </span>backlight
 </pre></div>
@@ -1241,7 +1235,7 @@ root@OK1126B-buildroot:/#<span class="w"> </span>dd<span class="w"> </span><span
 <p>The OK1126B-S/OK1126BJ-S board is equipped with 1 x Gigabit and 1 x Fast Ethernet network card. Due to the main controller having only one Ethernet controller, only one card can be used at a time. The Gigabit card is the factory default. Switch between the two via the U - Boot menu; see Section 2.5.1 for steps.</p>
 <section id="ip-fix-method">
 <h4>4.15.1 IP Fix Method<a class="headerlink" href="#ip-fix-method" title="Link to this heading"></a></h4>
-<p>Note: This method fixes network IP. After use, network card gets normal IP. If ping fails, check multiple network cards in same Linux segment. Adjust routing or use distinct segments.</p>
+<p><strong>Note: This method fixes network IP. After use, network card gets normal IP. If ping fails, check multiple network cards in same Linux segment. Adjust routing or use distinct segments.</strong></p>
 <p>Development board IP: 192.168.0.232</p>
 <p>Router IP: 192.168.0.1</p>
 <p>Subnet mask: 255.255.255.0</p>
@@ -1615,8 +1609,8 @@ Freeing<span class="w"> </span>pipeline<span class="w"> </span>...
 </pre></div>
 </div>
 </section>
-<section id="play-ing-audio-with-gst-launch">
-<h4>5.1.3 Play ing Audio with Gst-launch<a class="headerlink" href="#play-ing-audio-with-gst-launch" title="Link to this heading"></a></h4>
+<section id="playing-audio-with-gst-launch">
+<h4>5.1.3 Playing Audio with Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK1126B-buildroot:/#<span class="w"> </span>gst-launch-1.0<span class="w"> </span>filesrc<span class="w"> </span><span class="nv">location</span><span class="o">=</span>/userdata/media/test.mp3<span class="w"> </span>!<span class="w"> </span>id3demux<span class="w"> </span>!<span class="w"> </span>mpegaudioparse<span class="w"> </span>!<span class="w"> </span>mpg123audiodec<span class="w"> </span>!<span class="w"> </span>alsasink
 //Play<span class="w"> </span>the<span class="w"> </span>audio<span class="w"> </span>only,<span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>speaker<span class="w"> </span>will<span class="w"> </span>play<span class="w"> </span>the<span class="w"> </span>test.
 Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PAUSED<span class="w"> </span>...
