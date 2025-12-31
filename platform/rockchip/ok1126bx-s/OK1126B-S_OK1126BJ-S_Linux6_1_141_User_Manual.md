@@ -183,7 +183,7 @@ In addition to logging in via the debugging serial port, the OK1126B-S/OK1126BJ-
 
 The OK1126B-S/OK1126BJ-S development board supports the SSH service, which is automatically enabled at startup. After setting the IP address, it can serve as an SSH server. You can log in to the development board via SSH for development and debugging, as well as use scp for file transfer.
 
-**Note: **
+**Note:** 
 
 - **When logging in, enter the username “root” as prompted, and there is no password;**
 
@@ -220,7 +220,7 @@ Install the file Zilla tool on windows and set it up as shown in the following f
 
 **Note**: 
 
-- **This feature requires connecting the development board to the network cable. Make sure the host IP setting and the client are on the same network segment, ensuring that the host and client are in the same local area netThe username is “forlinx” and the password is “forlinx”. Once logged in successfully, you can perform upload and download operations on the file system under the "/home/forlinx' directory.";**
+- **This feature requires connecting the development board to the network cable. Make sure the host IP setting and the client are on the same network segment, ensuring that the host and client are in the same local area netThe username is “forlinx” and the password is “forlinx”. Once logged in successfully, you can perform upload and download operations on the file system under the "/home/forlinx' directory;"**
 
 - **The following is tested with the development board IP 172.20.0.129. Please make modifications according to the actual situation. When debugging the serial port terminal, use the following command to make the changes:**
 
@@ -271,7 +271,7 @@ After the screen selection is completed, you can also press the reset key of the
 
 This method does not require the connection of a serial terminal, and the system image defaults to the desired configuration selection, which is suitable for mass production. However, we need to manually modify the device tree and regenerate the system image once again
 
-Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.
+**Note: This method has higher priority than the uboot screen selection, and the uboot selection will not take effect after the device tree is modified.**
 
 Device tree path: kernel/arch/arm64/boot/dts/rockchip/OK1126B-S-common.dtsi
 
@@ -295,7 +295,7 @@ There are many types of MIPI screens, and the existing timing and control words 
 
 In general, you can turn off the power directly, but avoid doing so during important operations like data storage or usage to prevent irreversible file damage. Damaged files may require firmware rewrite. To ensure that data is not completely written, enter the sync command to complete data synchronization before turning off the power.
 
-<font style="color:rgb(0, 0, 0);background-color:rgb(218, 234, 252);"> Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.
+**Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.**
 
 ## 3\. OK1126B-S\_QT Function Test
 
@@ -355,7 +355,7 @@ The STATIC mode interface is as follows:
 
 Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.
 
-Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.
+**Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
 ### 3.4 Ping Test
 
@@ -816,7 +816,7 @@ F0 0D
 
 The watchdog is a commonly used function in embedded systems. The device node of the watchdog in OK1126B - S/OK1126BJ - S is /dev/watchdog0. This test provides two test procedures, and the user can choose one of them to test according to the actual situation.
 
-1. Start fltest\_watchdog, set the reset time to 10s, and feed the dog regularly;
+1\. Start fltest\_watchdog, set the reset time to 10s, and feed the dog regularly;
 
 ```bash
 root@OK1126B-buildroot:/# fltest_watchdog
@@ -825,14 +825,14 @@ Watchdog Ticking Away!
 
 This command turns on the watchdog and performs a feed, so the system does not reboot.
 
-Note: When ctrl + C is used to end the test program, the system will reset after 10 seconds. If you do not want to reset, please input within 10 seconds after ctrl + C:
+**Note: When ctrl + C is used to end the test program, the system will reset after 10 seconds. If you do not want to reset, please input within 10 seconds after ctrl + C.**
 
 ```bash
 root@OK1126B-buildroot:/# fltest_watchdog -d
 Watchdog card disabled.   //Turn off the watchdog
 ```
 
-2. Start fltestw\_watchdog, set the reset time to 10 seconds, and do not feed the dog.
+2\. Start fltestw\_watchdog, set the reset time to 10 seconds, and do not feed the dog.
 
 ```bash
 root@OK1126B-buildroot:/# fltest_watchdog -e
@@ -1068,7 +1068,7 @@ root@OK1126B-buildroot:/# dd if=/run/media/sda1/test.bin of=/dev/null bs=1M ifla
 
 Backlight level range (0--255), maximum level 255, 0 indicating turn off. Enter the system and enter the following command in the terminal to perform the backlight test.
 
-1. **View the current screen backlight values:**
+1\. View the current screen backlight values:
 
 ```bash
 root@OK1126B-buildroot:/# cat /sys/class/backlight/backlight-dsi/brightness		//View MIPI-DSI Screen backlight values
@@ -1077,14 +1077,14 @@ root@OK1126B-buildroot:/# cat /sys/class/backlight/backlight-lcd/brightness		//V
 200
 ```
 
-**2\. Backlight is off:**
+2\. Backlight is off:
 
 ```bash
 root@OK1126B-buildroot:/# echo 0 > /sys/class/backlight/backlight-dsi/brightness      	//Turn off the MIPI-DSI screen backlight
 root@OK1126B-buildroot:/# echo 0 > /sys/class/backlight/backlight-lcd/brightness       //Turn off RGB screen backlight
 ```
 
-**3\. LCD backlight is on:**
+3\. LCD backlight is on:
 
 ```bash
 root@OK1126B-buildroot:/# echo 255 > /sys/class/backlight/backlight-dsi/brightness       //Turn on LVDS backlight
@@ -1151,7 +1151,7 @@ The OK1126B-S/OK1126BJ-S board is equipped with 1 x Gigabit and 1 x Fast Etherne
 
 #### 4.15.1 IP Fix Method
 
-Note: This method fixes network IP. After use, network card gets normal IP. If ping fails, check multiple network cards in same Linux segment. Adjust routing or use distinct segments.
+**Note: This method fixes network IP. After use, network card gets normal IP. If ping fails, check multiple network cards in same Linux segment. Adjust routing or use distinct segments.**
 
 Development board IP: 192.168.0.232
 
@@ -1531,7 +1531,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 5.1.3 Play ing Audio with Gst-launch
+#### 5.1.3 Playing Audio with Gst-launch
 
 ```bash
 root@OK1126B-buildroot:/# gst-launch-1.0 filesrc location=/userdata/media/test.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink
