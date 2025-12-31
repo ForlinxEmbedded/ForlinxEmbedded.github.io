@@ -33,6 +33,7 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
    OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual
+   OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual
 
 
 
