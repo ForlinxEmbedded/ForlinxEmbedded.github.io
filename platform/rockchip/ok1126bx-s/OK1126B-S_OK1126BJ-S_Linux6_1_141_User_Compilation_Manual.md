@@ -63,7 +63,7 @@ OK3568_Linux_fs  OK3568_Linux_fs.tar.bz2.00 OK3568_Linux_fs.tar.bz2.01 OK3568_Li
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![Image](1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d-1767171625516.png)
+![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d_1767171625516.png)
 
 After the download is complete, double-click the startup file to start the installer.
 
