@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3568 &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+  <title>OK3568 4.19.206 Buildroot: Recording Mouse Operations via the Command Line with the evemu Tool (for Waking Up the Screen via the Command Line) &mdash; Forlinx Embedded RK Development Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
 
   
     <link rel="shortcut icon" href="../../_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/index.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Recording_Mouse_Operations_via_the_Command_Line_with_the_evemu_Tool.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -24,8 +24,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="New Partition Addition in OK3568 5.10.160 Buildroot" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html" />
-    <link rel="prev" title="3562" href="../3562/index.html" />
+    <link rel="next" title="3576" href="../3576/index.html" />
+    <link rel="prev" title="New Partition Addition in OK3568 5.10.160 Buildroot" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -71,9 +71,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../3399/index.html">3399</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3506/index.html">3506</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3562/index.html">3562</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3568</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3568</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">New Partition Addition in OK3568 5.10.160 Buildroot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Recording_Mouse_Operations_via_the_Command_Line_with_the_evemu_Tool.html">OK3568 4.19.206 Buildroot: Recording Mouse Operations via the Command Line with the evemu Tool (for Waking Up the Screen via the Command Line)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot: Recording Mouse Operations via the Command Line with the evemu Tool (for Waking Up the Screen via the Command Line)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../3576/index.html">3576</a></li>
@@ -101,7 +105,8 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
-      <li class="breadcrumb-item active">3568</li>
+          <li class="breadcrumb-item"><a href="index.html">3568</a></li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot: Recording Mouse Operations via the Command Line with the evemu Tool (for Waking Up the Screen via the Command Line)</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -110,24 +115,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>3568<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">New Partition Addition in OK3568 5.10.160 Buildroot</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html#copyright">Copyright</a></li>
-<li class="toctree-l2"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html#revision-history">Revision History</a></li>
-<li class="toctree-l2"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html#objective">1. Objective</a></li>
-<li class="toctree-l2"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html#modification-methods">2. Modification Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Recording_Mouse_Operations_via_the_Command_Line_with_the_evemu_Tool.html">OK3568 4.19.206 Buildroot: Recording Mouse Operations via the Command Line with the evemu Tool (for Waking Up the Screen via the Command Line)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Recording_Mouse_Operations_via_the_Command_Line_with_the_evemu_Tool.html#copyright">Copyright</a></li>
-<li class="toctree-l2"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Recording_Mouse_Operations_via_the_Command_Line_with_the_evemu_Tool.html#overview">Overview</a></li>
-</ul>
-</li>
-</ul>
+  <section id="ok3568-4-19-206-buildroot-recording-mouse-operations-via-the-command-line-with-the-evemu-tool-for-waking-up-the-screen-via-the-command-line">
+<h1>OK3568 4.19.206 Buildroot: Recording Mouse Operations via the Command Line with the evemu Tool (for Waking Up the Screen via the Command Line)<a class="headerlink" href="#ok3568-4-19-206-buildroot-recording-mouse-operations-via-the-command-line-with-the-evemu-tool-for-waking-up-the-screen-via-the-command-line" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Usage scenario: After setting the screen to turn off automatically after a certain period in Weston’s configuration file, if you want to turn the screen back on, you need to touch the screen or move the mouse. If the screen is off and there is no physical mouse to move and wake it up, or if you want to remotely turn on the off - screen, you can use the evemu tool to record a mouse movement event to simulate the operation of a real physical mouse and wake up the screen. In this way, remote wake - up can be achieved.</p>
+<p>The evemu tool is a utility for Linux systems, used to simulate, record, and process events of input devices (such as keyboards, mice, touchscreens, etc.). It is part of the libevdev library, allowing developers and system administrators to simulate input events without physical input devices or record input events from actual devices.</p>
+<p>Go to the graphical configuration interface of the file system in the source code and select the evemu tool as “y”. Then re - compile the file system and burn rootfs.ext2 into the development board.</p>
+<p><img alt="" src="Buildroot_System/3568/images/1731900868_20123.png" /></p>
+<p><img alt="" src="Buildroot_System/3568/images/1731900868_20124.png" /></p>
+<p>Use the “evemu - record” command to record a mouse movement operation, and use “evemu - play” to play back the recorded movement.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>root@ok3568:/<span class="o">]</span>$<span class="w"> </span>evemu-record<span class="w">  </span>/dev/input/event1<span class="w"> </span>&gt;<span class="w"> </span>2myevent
+<span class="o">[</span>root@ok3568:/<span class="o">]</span>$<span class="w"> </span>evemu-play<span class="w"> </span>/dev/input/event1<span class="w"> </span>&lt;<span class="w"> </span>2myevent
+</pre></div>
 </div>
+<p>Using the “evemu - play” command can wake up the screen.</p>
+</section>
 </section>
 
 
