@@ -11,6 +11,7 @@
    OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language
    OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server
    OK3568_4_19_206_Buildroot_JDK_Support
+   OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
