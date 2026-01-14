@@ -22,29 +22,29 @@ Navigate to the /OK3568-linux-source/buildroot/output/OK3568 directory and execu
 
 Press the / key to open the search box. Enter the keyword bridge\_utils, select OK, and press Enter.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646566217-8f94987c-bb3c-41f2-a013-d09ec9da385e.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646566217_8f94987c_bb3c_41f2_a013_d09ec9da385e.png)
 
 Once the result appears, press 1 to jump to the configuration page.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646566412-4f487359-c3ac-4108-964d-aa15a1a52a0a.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646566412_4f487359_c3ac_4108_964d_aa15a1a52a0a.png)
 
 Select bridge-utils by marking it with y.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646566614-d13d7878-0f15-4825-9f3a-fcd0a1dd9523.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646566614_d13d7878_0f15_4825_9f3a_fcd0a1dd9523.png)
 
 Continuously select Exit until you leave the graphical configuration interface. When prompted to save the configuration upon exiting, choose yes.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646566810-072376c2-e3c1-4a3d-8e27-ef5e20809c5a.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646566810_072376c2_e3c1_4a3d_8e27_ef5e20809c5a.png)
 
 Switch to the /OK3568-linux-source directory and execute the ./build.sh buildroot command.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646567066-92d5ff69-f344-47c6-80ad-5e12c1e66465.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646567066_92d5ff69_f344_47c6_80ad_5e12c1e66465.png)
 
 You will be prompted that a .config file already exists and asked if you want to regenerate it. Enter n (no); otherwise, your previous configuration will be overwritten.
 
 After compilation completes, a rootfs.ext2 file will be generated in the OK3568-linux-source/buildroot/output/OK3568/images directory. Flash this file individually to the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646567336-6b9c3abb-a5ef-4015-941e-7bf570ed4d57.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646567336_6b9c3abb_a5ef_4015_941e_7bf570ed4d57.png)
 
 If the above steps result in an error, your kernel might have been compiled with CONFIG\_BRIDGE = n)
 
@@ -62,14 +62,14 @@ Configuring the Network Bridge
 
 Set the IP addresses for eth0 and eth1 by editing the file /etc/network/interfaces (e.g., using vi).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646567519-5f5c27b9-ee09-4fe8-9e51-53ae46b44c2f.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646567519_5f5c27b9_ee09_4fe8_9e51_53ae46b44c2f.png)
 
 Create the self-start script vi/etc/init. d/S99 bridge.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646567799-4318d1e0-c49e-4209-a498-a17d28840573.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646567799_4318d1e0_c49e_4209_a498_a17d28840573.png)
 
 Test tcp and udp communication.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646568081-2d371229-4ef2-4108-bb3e-924040438655.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646568081_2d371229_4ef2_4108_bb3e_924040438655.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646568323-f373194b-7adc-4f22-9b20-831edbaca212.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot/1719646568323_f373194b_7adc_4f22_9b20_831edbaca212.png)
