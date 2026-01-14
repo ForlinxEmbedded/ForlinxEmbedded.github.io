@@ -1,4 +1,4 @@
-# OK3568 4.19.206 Buildroot  Not effective After Menuconfig Configuration
+# OK3568 4.19.206 Buildroot  Not Effective After Menuconfig Configuration
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 

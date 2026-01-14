@@ -16,11 +16,11 @@ The drivers and utilities used for the components are subject to the copyrights 
 | --------- | ------------------ | -------------------- |
 | 4/30/2025 | V1.0               | Initial Version      |
 
-## 1\. Objective
+## Objective
 
 This article mainly focuses on adding a new ccc partition through the source code. If you need to store applications or files in a specific partition, you can refer to the following methods to add a partition.
 
-## 2\. Modification Methods
+## Modification Methods
 
 1\. Modify the file /tools/linux/Linux\_Pack\_Firmware/rockdev/rk356x - package - file in the source code directory to add a new ccc partition.
 
