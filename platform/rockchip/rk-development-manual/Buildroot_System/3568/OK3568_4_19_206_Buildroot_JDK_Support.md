@@ -1,61 +1,79 @@
-# 免责声明
-本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。  
-保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。
+# OK3568 4.19.206 Buildroot JDK_Support
 
-# 更新记录
-| **日期** | **手册版本** | **更新内容** |
-| :---: | :---: | --- |
-| 20220804 | V1.0 | 初版 |
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
+## Copyright
 
-# JDK支持
-1.sdk下载
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
+
+## Revision History
+
+| Date| Version| Revision History|
+|:----------:|:----------:|----------|
+| 04/08/2022 | V1.0| Initial Version|
+
+Document classification: □ Top secret □ Secret □ Internal information ■ Open
+
+## Copyright
+
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
+
+## JDK Support
+
+1\. SDK Download
 
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-在此网址下载的
+Download:
 
 jdk-8u351-linux-aarch64.tar.gz
 
 jdk-8-linux-aarch64-demos.tar.gz
 
-2.解压jdk-8u351-linux-aarch64.tar.gz生成jdk1.8.0_351，比如解压到/home/forlinx/下
+2\. Extract jdk-8u351-linux-aarch64.tar.gz to generate jdk1.8.0\_351. For example, extract it to /home/forlinx/.
 
-	gzip -d jdk-8u351-linux-aarch64.tar.gz
+    gzip -d jdk-8u351-linux-aarch64.tar.gz
+    
+    tar xvf jdk-8u351-linux-aarch64.tar
+    
+    ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646083092-036d29c4-fb24-4f98-a9c5-189b2788fff6.png)
 
-	tar xvf jdk-8u351-linux-aarch64.tar
+3\. Append the Following to /etc/profile (at the end of the file):
 
-	![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083092_036d29c4_fb24_4f98_a9c5_189b2788fff6.png)
+<font style="color:#0000FF;">JAVA\_HOME=/home/forlinx/jdk1.8.0\_351</font>
 
-3.在/etc/profile 最后添加
+<font style="color:#0000FF;">CLASSPATH=.:$JAVA\_HOME/jre/lib/rt.jar:$JAVA\_HOME/lib/dt.jar:$JAVA\_HOME/lib/tools.jar</font>
 
-<font style="color:#0000FF;">JAVA_HOME=/home/forlinx/jdk1.8.0_351</font>
+<font style="color:#0000FF;">PATH=$JAVA\_HOME/bin:$PATH</font>
 
-<font style="color:#0000FF;">CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</font>
+<font style="color:#0000FF;">export JAVA\_HOME CLASSPATH PATH</font>
 
-<font style="color:#0000FF;">PATH=$JAVA_HOME/bin:$PATH</font>
+4\. Source /etc/profile
 
-<font style="color:#0000FF;">export JAVA_HOME CLASSPATH PATH</font>
+In theory, it should appear:
 
-4. source /etc/profile 
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646083307-b7ecdda5-c1f7-4e51-9be6-b3542ec36a71.png)
 
-理论上应该出现：
+5\. Verification
 
-![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083307_b7ecdda5_c1f7_4e51_9be6_b3542ec36a71.png)
+There are many test programs in jdk-8-linux-aarch64-demos.tar.gz.
 
-5.验证
+Extract it to jdk1.8.0\_341.
 
-jdk-8-linux-aarch64-demos.tar.gz这里面有很多测试程序。
+<font style="color:#0000FF;">The routine d jdk1.8.0\_341/sample/forkjoin/mergesort/ requires running javac in the routine directory, otherwise an error will be reported.</font>
 
-解压为jdk1.8.0_341
+Test (Here, due to version mismatch between the demo and JDK, two files from jdk1.8.0\_341 were copied to jdk1.8.0\_351):
 
-<font style="color:#0000FF;">cd jdk1.8.0_341/sample/forkjoin/mergesort/   这个例程需要在例程目录下运行javac，不然会报错</font>
+![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646083512-dee2ad25-4f89-4c55-b5eb-23ad4077151b.png)
 
-测试(此处由于demo和jdk的版本不一致，顺便把jdk341中的两个文件拷贝到jdk351了)：
+The test programs should now work correctly.
 
-![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083512_dee2ad25_4f89_4c55_b5eb_23ad4077151b.png)
-
-测试程序可用。
-
-其他例程也可这样测试。
-
+Other sample routines can be tested in the same way.
