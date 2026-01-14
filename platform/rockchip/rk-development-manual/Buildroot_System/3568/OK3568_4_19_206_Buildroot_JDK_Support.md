@@ -25,7 +25,7 @@ jdk-8-linux-aarch64-demos.tar.gz
 
 	tar xvf jdk-8u351-linux-aarch64.tar
 
-	![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646083092-036d29c4-fb24-4f98-a9c5-189b2788fff6.png)
+	![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083092_036d29c4_fb24_4f98_a9c5_189b2788fff6.png)
 
 3.在/etc/profile 最后添加
 
@@ -41,7 +41,7 @@ jdk-8-linux-aarch64-demos.tar.gz
 
 理论上应该出现：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646083307-b7ecdda5-c1f7-4e51-9be6-b3542ec36a71.png)
+![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083307_b7ecdda5_c1f7_4e51_9be6_b3542ec36a71.png)
 
 5.验证
 
@@ -53,7 +53,7 @@ jdk-8-linux-aarch64-demos.tar.gz这里面有很多测试程序。
 
 测试(此处由于demo和jdk的版本不一致，顺便把jdk341中的两个文件拷贝到jdk351了)：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646083512-dee2ad25-4f89-4c55-b5eb-23ad4077151b.png)
+![Image](./images/OK3568_4_19_206_Buildroot_JDK_Support/1719646083512_dee2ad25_4f89_4c55_b5eb_23ad4077151b.png)
 
 测试程序可用。
 
