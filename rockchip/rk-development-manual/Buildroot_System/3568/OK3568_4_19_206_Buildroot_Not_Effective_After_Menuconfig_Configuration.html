@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+  <title>OK3568 4.19.206 Buildroot Not effective After Menuconfig Configuration &mdash; Forlinx Embedded RK Development Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
 
   
     <link rel="shortcut icon" href="../../_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -24,8 +24,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="免责声明" href="OK3568_4_19_206_Buildroot_JDK_Support.html" />
-    <link rel="prev" title="OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language" href="OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html" />
+    <link rel="next" title="OK3568 5.10.160 Buildroot New Partition Addition" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html" />
+    <link rel="prev" title="免责声明" href="OK3568_4_19_206_Buildroot_JDK_Support.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -74,16 +74,14 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">3568</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html">OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debugging-with-gdb-and-gdb-server">Debugging with GDB and GDB Server</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server.html">OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_JDK_Support.html">免责声明</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_JDK_Support.html#id2">更新记录</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_JDK_Support.html#jdk">JDK支持</a></li>
-<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration.html">OK3568 4.19.206 Buildroot  Not effective After Menuconfig Configuration</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot  Not effective After Menuconfig Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
 </ul>
 </li>
@@ -113,7 +111,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
           <li class="breadcrumb-item"><a href="index.html">3568</a></li>
-      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server</li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot  Not effective After Menuconfig Configuration</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -122,73 +120,99 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok3568-4-19-206-buildroot-debugging-with-gdb-and-gdb-server">
-<h1>OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server<a class="headerlink" href="#ok3568-4-19-206-buildroot-debugging-with-gdb-and-gdb-server" title="Link to this heading"></a></h1>
+  <section id="ok3568-4-19-206-buildroot-not-effective-after-menuconfig-configuration">
+<h1>OK3568 4.19.206 Buildroot  Not effective After Menuconfig Configuration<a class="headerlink" href="#ok3568-4-19-206-buildroot-not-effective-after-menuconfig-configuration" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
 <p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
 <p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
 <p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
-</section>
-<section id="revision-history">
-<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
-<th class="head text-center"><p>Version</p></th>
-<th class="head"><p>Revision History</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p>15/09/2023</p></td>
-<td class="text-center"><p>V1.0</p></td>
-<td><p>Initial Version</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="debugging-with-gdb-and-gdb-server">
-<h2>Debugging with GDB and GDB Server<a class="headerlink" href="#debugging-with-gdb-and-gdb-server" title="Link to this heading"></a></h2>
-<p>GDB Path in Ubuntu Virtual Machine:</p>
-<p>forlinx&#64;ubuntu:~/ok3568/OK3568-linux-source/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin$</p>
-<p>Set Up Environment Variables:</p>
-<p>(Modify the path according to your actual environment)</p>
-<p>After configuring the environment variables, you can directly invoke the cross-compilation toolchain from the command line.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">export</span><span class="w"> 	</span><span class="n">PATH</span><span class="o">=</span><span class="n">$PATH</span><span class="o">:/</span><span class="n">home</span><span class="o">/</span><span class="n">forlinx</span><span class="o">/</span><span class="n">ok3568</span><span class="o">/</span><span class="n">OK3568</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">source</span><span class="o">/</span><span class="n">prebuilts</span><span class="o">/</span><span class="n">gcc</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="n">x86</span><span class="o">/</span><span class="n">aarch64</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="mf">-6.3.1-2017.05</span><span class="o">-</span><span class="n">x86_64_aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">bin</span>
+<p>After executing the command, select No.95 and press Enter.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/3568/OK3568-linux-source$ source buildroot/build/envsetup.sh 
+Top of tree: /home/forlinx/3568/OK3568-linux-source
+
+You&#39;re building on Linux
+Lunch menu...pick a combo:
+
+0. non-rockchip boards
+1. acmesystems_aria_g25_128mb
+2. acmesystems_aria_g25_256mb
+
+......
+......
+91. nitrogen6sx
+92. nitrogen6x
+93. nitrogen7
+94. odroidc2
+95. OK3568
+96. OK3568-recovery
+97. olimex_a13_olinuxino
+......
+......
+297. zynq_zed
+298. zynq_zybo
+Which would you like? [0]: 95				//Press Enter
+#
+make: Leaving directory &#39;/home/forlinx/3568/OK3568-linux-source/buildroot&#39;
+2879c2879
+&lt; BR2_PACKAGE_IFENSLAVE=y
+---
+&gt; # BR2_PACKAGE_IFENSLAVE is not set
+3201c3201
+&lt; BR2_PACKAGE_ANDROID_TOOLS_ADB=y
+---
+&gt; # BR2_PACKAGE_ANDROID_TOOLS_ADB is not set
+Found old config, override it? (y/n):forlinx@ubuntu:~/3568/OK3568-linux-source$
 </pre></div>
 </div>
-<p>1. Set the board IP and port number;</p>
-<p><img alt="Image" src="../../_images/1719647266927_284d29e6_1d83_4014_8c57_35a1202b8c98.png" /></p>
-<p>2. Set the IP address of the virtual machine to ensure that the development board IP can be pinged.</p>
-<p>Use the network cable to connect the development board and the computer, and set the development board, the computer and the virtual machine in the same network segment;</p>
-<p>3. Compile the application in the development environment;</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">gcc</span><span class="w"> </span><span class="o">-</span><span class="n">g</span><span class="w"> </span><span class="n">gpiotest</span><span class="p">.</span><span class="n">c</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">gpiotest</span>
+<p>After configuring the menuconfig you need, select no when compiling the file system again.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/3568/OK3568-linux-source$ cd buildroot/output/OK3568
+forlinx@ubuntu:~/3568/OK3568-linux-source/buildroot/output/OK3568$ make menuconfig			//配置buildroot	
+umask 0022 &amp;&amp; make -C /home/forlinx/3568/OK3568-linux-source/buildroot O=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/. menuconfig
+  GEN     /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/Makefile
 </pre></div>
 </div>
-<p>4. Copy to the development board;</p>
-<p><img alt="Image" src="../../_images/1719647267133_2a7a7827_19c5_4c4a_92a9_5e3188f26a03.png" /></p>
-<p>Copy the gpiotest executable file to the development board and execute the following command:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">gdbserver</span><span class="w"> </span><span class="mf">172.16.0.169</span><span class="o">:</span><span class="mi">2345</span><span class="w"> </span><span class="n">gpiotest</span>
+<p>Save the selected configuration after configuring the menuconfig of the buildroot.</p>
+<p><img alt="Image" src="../../_images/1722577553049_d174d22f_b950_4d30_9f73_0e6ce3e67dfa.png" /></p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>*** End of the configuration.
+*** Execute &#39;make&#39; to start the build or try &#39;make help&#39;.
+forlinx@ubuntu:~/3568/OK3568-linux-source/buildroot/output/OK3568$ cd -
+/home/forlinx/3568/OK3568-linux-source
+forlinx@ubuntu:~/3568/OK3568-linux-source$ ./build.sh   buildroot		//Compile the file system
+processing option: buildroot
+==========Start building buildroot==========
+TARGET_BUILDROOT_CONFIG=OK3568
+=========================================
+Top of tree: /home/forlinx/3568/OK3568-linux-source
+===========================================
+
+#TARGET_BOARD=OK3568
+#OUTPUT_DIR=output/OK3568
+#CONFIG=OK3568_defconfig
+
+===========================================
+make: Entering directory &#39;/home/forlinx/3568/OK3568-linux-source/buildroot&#39;
+  GEN     /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/Makefile
+/home/forlinx/3568/OK3568-linux-source/buildroot/build/defconfig_hook.py -m /home/forlinx/3568/OK3568-linux-source/buildroot/configs/OK3568_defconfig /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.rockchipconfig
+BR2_DEFCONFIG=&#39;&#39; KCONFIG_AUTOCONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/auto.conf KCONFIG_AUTOHEADER=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/autoconf.h KCONFIG_TRISTATE=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/tristate.config BR2_CONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.config HOST_GCC_VERSION=&quot;7&quot; BUILD_DIR=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build SKIP_LEGACY= BR2_DEFCONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/configs/OK3568_defconfig /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/conf --defconfig=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.rockchipconfig Config.in
+......
+......					//Omitted
+&lt; BR2_CCACHE_DIR=&quot;$(HOME)/.buildroot-ccache&quot;
+&lt; BR2_CCACHE_INITIAL_SETUP=&quot;&quot;
+&lt; BR2_CCACHE_USE_BASEDIR=y
+---
+&gt; # BR2_CCACHE is not set
+Found old config, override it? (y/n): n   //选no
+2024-08-02T13:50:23 &gt;&gt;&gt;   Finalizing target directory
+2024-08-02T13:50:25 &gt;&gt;&gt;   Sanitizing RPATH in target tree
+2024-08-02T13:50:41 &gt;&gt;&gt;   Copying overlay board/rockchip/common/base
+2024-08-02T13:50:41 &gt;&gt;&gt;   Copying overlay board/rockchip/rk356x/fs-overlay/
+2024-08-02T13:50:41 &gt;&gt;&gt;   Copying overlay board/rockchip/ok3568/fs-overlay/
+2024-08-02T13:50:41 &gt;&gt;&gt;   Executing post-build script build/post.sh
+2024-08-02T13:50:41 &gt;&gt;&gt;   Generating root filesystem image rootfs.cpio
 </pre></div>
 </div>
-<p>Where 172.16.0.169 is the IP address of the board and the port number is 2345.</p>
-<p>5. Debug.</p>
-<p>Change to the gpiotest executable directory:</p>
-<p>Execute the following command:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">arch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">gdb</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="n">gpiotest</span>
-<span class="n">target</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="mf">172.16.0.169</span><span class="o">:</span><span class="mi">2345</span>
-</pre></div>
-</div>
-<p>At this point, you can debug according to your needs. Here are some common commands.</p>
-<p>(1) l (list): List): List all source code</p>
-<p>(2) b (breakpoint): Set a breakpoint</p>
-<p>(3) c (continue): Continue execution until the next breakpoint</p>
-<p>(4) s: Single step execution</p>
-<p>(5) n: Single step execution, but step will enter the function, but next will not</p>
-<p>(6) p a: Print the value of the variable a</p>
-<p>(7) Q: Exit. Enter this command to exit gdbserver on the development board.</p>
-<p><img alt="Image" src="../../_images/1719647267357_1f3f469f_0d05_4f19_8b2c_b491ac4ff249.png" /></p>
 </section>
 </section>
 
