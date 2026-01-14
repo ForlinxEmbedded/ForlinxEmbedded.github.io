@@ -54,7 +54,7 @@ After configuring the menuconfig you need, select no when compiling the file sys
 
 ```plain
 forlinx@ubuntu:~/3568/OK3568-linux-source$ cd buildroot/output/OK3568
-forlinx@ubuntu:~/3568/OK3568-linux-source/buildroot/output/OK3568$ make menuconfig			//配置buildroot	
+forlinx@ubuntu:~/3568/OK3568-linux-source/buildroot/output/OK3568$ make menuconfig			//Configure buildroot	
 umask 0022 && make -C /home/forlinx/3568/OK3568-linux-source/buildroot O=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/. menuconfig
   GEN     /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/Makefile
 ```
