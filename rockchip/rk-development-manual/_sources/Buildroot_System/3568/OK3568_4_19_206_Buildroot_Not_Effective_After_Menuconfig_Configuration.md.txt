@@ -83,8 +83,16 @@ Top of tree: /home/forlinx/3568/OK3568-linux-source
 ===========================================
 make: Entering directory '/home/forlinx/3568/OK3568-linux-source/buildroot'
   GEN     /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/Makefile
-/home/forlinx/3568/OK3568-linux-source/buildroot/build/defconfig_hook.py -m /home/forlinx/3568/OK3568-linux-source/buildroot/configs/OK3568_defconfig /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.rockchipconfig
-BR2_DEFCONFIG='' KCONFIG_AUTOCONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/auto.conf KCONFIG_AUTOHEADER=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/autoconf.h KCONFIG_TRISTATE=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/tristate.config BR2_CONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.config HOST_GCC_VERSION="7" BUILD_DIR=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build SKIP_LEGACY= BR2_DEFCONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/configs/OK3568_defconfig /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/conf --defconfig=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.rockchipconfig Config.in
+/home/forlinx/3568/OK3568-linux-source/buildroot/build/defconfig_hook.py -m /home/forlinx/3568/OK3568-linux
+source/buildroot/configs/OK3568_defconfig /home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.rockchipconfig
+BR2_DEFCONFIG='' KCONFIG_AUTOCONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/auto.conf
+KCONFIG_AUTOHEADER=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/autoconf.h
+KCONFIG_TRISTATE=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build/buildroot-config/tristate.config
+BR2_CONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/.config HOST_GCC_VERSION="7"
+BUILD_DIR=/home/forlinx/3568/OK3568-linux-source/buildroot/output/OK3568/build SKIP_LEGACY=
+BR2_DEFCONFIG=/home/forlinx/3568/OK3568-linux-source/buildroot/configs/OK3568_defconfig /home/forlinx/3568/OK3568
+linux-source/buildroot/output/OK3568/build/buildroot-config/conf --defconfig=/home/forlinx/3568/OK3568-linux
+source/buildroot/output/OK3568/.rockchipconfig Config.in
 ......
 ......					//Omitted
 < BR2_CCACHE_DIR="$(HOME)/.buildroot-ccache"
