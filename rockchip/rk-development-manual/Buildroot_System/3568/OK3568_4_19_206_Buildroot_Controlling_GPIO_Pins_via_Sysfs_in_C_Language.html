@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3576 &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+  <title>OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language &mdash; Forlinx Embedded RK Development Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
 
   
     <link rel="shortcut icon" href="../../_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3576/index.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -24,8 +24,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3588" href="../3588/index.html" />
-    <link rel="prev" title="OK3568 5.10.160 Buildroot New Partition Addition" href="../3568/OK3568_5_10_160_Buildroot_New_Partition_Addition.html" />
+    <link rel="next" title="OK3568 5.10.160 Buildroot New Partition Addition" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html" />
+    <link rel="prev" title="OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot" href="OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -71,10 +71,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../3399/index.html">3399</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3506/index.html">3506</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3562/index.html">3562</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3568/index.html">3568</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3576</a><ul class="simple">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3568</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#controlling-gpio-pins-via-sysfs-in-c-language">Controlling GPIO Pins via Sysfs in C Language</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3576/index.html">3576</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3588/index.html">3588</a></li>
 </ul>
 </li>
@@ -99,7 +107,8 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
-      <li class="breadcrumb-item active">3576</li>
+          <li class="breadcrumb-item"><a href="index.html">3568</a></li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -108,10 +117,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>3576<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="ok3568-4-19-206-buildroot-controlling-gpio-pins-via-sysfs-in-c-language">
+<h1>OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language<a class="headerlink" href="#ok3568-4-19-206-buildroot-controlling-gpio-pins-via-sysfs-in-c-language" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
+<th class="head text-center"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>04/08/2022</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="controlling-gpio-pins-via-sysfs-in-c-language">
+<h2>Controlling GPIO Pins via Sysfs in C Language<a class="headerlink" href="#controlling-gpio-pins-via-sysfs-in-c-language" title="Link to this heading"></a></h2>
+<p>1. Write GPIO control program, reference source files can be found in the folder:</p>
+<p>gpiotest-read(gpio3_a5)</p>
+<p>gpiotest-write(gpio3_b0)</p>
+<p>2. Import environment variables (set the red font part according to the specific path):</p>
+<p>export PATH=$PATH:<font style="color:#FF0000;">/home/forlinx/ubuntu-/</font>OK3568-linux-source/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin</p>
+<p>3. Compile the gpiotest-write.c file</p>
+<p>aarch64-linux-gnu-gcc -o gpiotest gpiotest-write.c</p>
+<p>4. Copy the gpiotest executable file to the development board to run</p>
+<p>5. You can see that the green LED lights are on and off at intervals of 1 second.</p>
+</section>
 </section>
 
 
