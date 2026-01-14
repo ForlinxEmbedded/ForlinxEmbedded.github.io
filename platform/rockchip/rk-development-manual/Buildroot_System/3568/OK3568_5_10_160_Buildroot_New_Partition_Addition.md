@@ -1,4 +1,4 @@
-# New Partition Addition in OK3568 5.10.160 Buildroot
+# OK3568 5.10.160 Buildroot New Partition Addition
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 

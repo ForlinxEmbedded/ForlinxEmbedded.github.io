@@ -8,6 +8,7 @@
    :maxdepth: 2
 
    OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot
+   OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language
    OK3568_4.19.206_Buildroot_Evemu_Mouse_Operation_Recording_for_Screen_Wakeup
    OK3568_5_10_160_Buildroot_New_Partition_Addition
    
