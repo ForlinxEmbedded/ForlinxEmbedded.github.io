@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3568 4.19.206 Buildroot Qt-creator Remote Debug &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/theme-switcher.js?v=099e080c"></script>
+      <script src="../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="OK3568 4.19.206 Buildroot UART8 Multiplexed as CAN2" href="OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2.html" />
+    <link rel="prev" title="OK3568 4.19.206 Buildroot PWM PWM Multiplexing Method and Test" href="OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Product_Design_Process/index.html">Product Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Buildroot System</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../3399/index.html">3399</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3506/index.html">3506</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3562/index.html">3562</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3568</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html">OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server.html">OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_JDK_Support.html">OK3568 4.19.206 Buildroot JDK_Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration.html">OK3568 4.19.206 Buildroot  Not Effective After Menuconfig Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method.html">OK3568 4.19.206 Buildroot PCIe to SATA Function Modification Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test.html">OK3568 4.19.206 Buildroot PWM PWM Multiplexing Method and Test</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot Qt-creator Remote Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qt-creator-remote-debug">Qt-creator Remote Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2.html">OK3568 4.19.206 Buildroot UART8 Multiplexed as CAN2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Multiplexing_UART8_Bluetooth_Serial_Port_as_a_General_Serial_Port.html">OK3568 4.19.206 Buildroot Multiplexing UART8 Bluetooth Serial Port as a General Serial Port</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot.html">OK3568 4.19.206 Buildroot Disabling the Watchdog in Uboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot.html#copyright">Copyright</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot.html#revision-history">Revision History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot.html#disabling-the-watchdog-in-uboot">Disabling the Watchdog in Uboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_USB_Host_to_Slave_Switching.html">OK3568 4.19.206 Buildroot USB Host-to-Slave Switching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3576/index.html">3576</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3588/index.html">3588</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Forlinx_Desktop_System/index.html">Forlinx Desktop System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
+          <li class="breadcrumb-item"><a href="index.html">3568</a></li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot Qt-creator Remote Debug</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3568-4-19-206-buildroot-qt-creator-remote-debug">
+<h1>OK3568 4.19.206 Buildroot Qt-creator Remote Debug<a class="headerlink" href="#ok3568-4-19-206-buildroot-qt-creator-remote-debug" title="Link to this heading"></a></h1>
+</section>
+<section id="copyright">
+<h1>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h1>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
+<th class="head text-center"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>15/09/2023</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="qt-creator-remote-debug">
+<h1>Qt-creator Remote Debug<a class="headerlink" href="#qt-creator-remote-debug" title="Link to this heading"></a></h1>
+<p><strong>Note: Set the virtual machine IP address and the development board IP address in the same network segment.</strong></p>
+<p><strong>Virtual machine IP: 172.16.0.174</strong></p>
+<p><strong>Development board IP: 172.16.0.169</strong></p>
+<p>Install debugging software in Ubuntu virtual machine.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">gdb</span><span class="o">-</span><span class="n">multiarch</span>
+</pre></div>
+</div>
+<p>Modify the source code file.</p>
+<p>/OK3568-linux-source/buildroot/output/OK3568/host/mkspecs/devices/linux-buildroot-g++/qmake.conf</p>
+<p>Just comment out the variables as follows:</p>
+<p>#QMAKE_CFLAGS_OPTIMIZE       =</p>
+<p>#QMAKE_CFLAGS_OPTIMIZE_DEBUG =</p>
+<p>#QMAKE_CFLAGS_OPTIMIZE_FULL  =</p>
+<p>#QMAKE_CFLAGS_OPTIMIZE_SIZE  =</p>
+<p>#QMAKE_CFLAGS_DEBUG =</p>
+<p>#QMAKE_CXXFLAGS_DEBUG =</p>
+<p>#QMAKE_CFLAGS_RELEASE =</p>
+<p>#QMAKE_CXXFLAGS_RELEASE =</p>
+<p>Set development board ssh password.</p>
+<p>Passwd: root</p>
+<p>Enter the password “root” twice.</p>
+<p>Add qmake.</p>
+<p>Tools-&gt;options-&gt;Kits-&gt;Compilers-&gt;Add（<font style="color:#FF0000;">The red path is configured according to the customer path</font>）</p>
+<p><font style="color:#FF0000;">/home/forlinx/linux-3568</font>/OK3568-linux-source/buildroot/output/OK3568/host/bin/qmake</p>
+<p><img alt="Image" src="../../_images/1719647256993_649e500e_ac2b_4820_9d7d_b2cd35d35359.png" /></p>
+<p>Add gcc.</p>
+<p>Tools-&gt;options-&gt;Kits-&gt;Compilers-&gt;Add（<font style="color:#FF0000;">The red path is configured according to the customer path</font>）</p>
+<p><font style="color:#FF0000;">/home/forlinx/linux-3568/</font>OK3568-linux-source/buildroot/output/OK3568/host/bin/aarch64-linux-gcc</p>
+<p><img alt="Image" src="../../_images/1719647257185_a5fb4c99_9e70_42ee_8db9_29400ee08da0.png" /></p>
+<p>Add g++.</p>
+<p>Tools-&gt;options-&gt;Kits-&gt;Compilers-&gt;Add（<font style="color:#FF0000;">The red path is configured according to the customer path</font>）</p>
+<p><font style="color:#FF0000;">/home/forlinx/linux-3568</font>/OK3568-linux-source/buildroot/output/OK3568/host/bin/aarch64-linux-g++</p>
+<p><img alt="Image" src="../../_images/1719647257423_dd3a0b70_132d_4b5b_9479_7d5d06c8b7a5.png" /></p>
+<p>Add the gdb tool.</p>
+<p>Tools-&gt;options-&gt;Kits-&gt;Debuggers-&gt;Add</p>
+<p>Name: 3568</p>
+<p>Path:/usr/bin/gdb-multiarch</p>
+<p><img alt="Image" src="../../_images/1719647257668_95a67ee5_c2f9_42be_b723_34d336898a38.png" /></p>
+<p>Configure devices.</p>
+<p><img alt="Image" src="../../_images/1719647257890_bcc9b8ce_9547_4576_b72e_81fab1eaf72e.png" /></p>
+<p>Configure complete test.</p>
+<p><font style="color:#FF0000;">Note: To configure the development board and the computer virtual machine to be on the same network segment.</font></p>
+<p><img alt="Image" src="../../_images/1719647258191_2418fe9d_b7d9_46c9_9456_086a4e7dfcc9.png" /></p>
+<p>Host name: Development board IP address</p>
+<p>SSH port：22</p>
+<p>Username：root</p>
+<p>Password：root</p>
+<p>Then click “Test” to test the ssh communication.</p>
+<p>The diagram indicates a successful connection.</p>
+<p><img alt="Image" src="../../_images/1719647258450_a7049f8c_801f_420a_8fb3_cfb6ef71f821.png" /></p>
+<p>Configure the Kit Suite.</p>
+<p><img alt="Image" src="../../_images/1719647258672_b566fb09_ded3_4b21_b5f4_6e0eb196af9a.png" /></p>
+<p>Select the previously configured Kit Suite 3568 for the project code.</p>
+<p><img alt="Image" src="../../_images/1719647258910_e1874225_8590_4024_9073_9a495f9e9d98.png" /></p>
+<p>Specify the installation directory for the program on the development board: target.path = /home/forlinx</p>
+<p><img alt="Image" src="../../_images/1719647259224_d906f9b0_283a_448b_b159_d7649766a61e.png" /></p>
+<p>After configuration, the executable files can run on the development board.</p>
+<p>Click the Run button:</p>
+<p><img alt="Image" src="../../_images/1719647259407_cce2244c_6a64_45b6_90f8_098bd4fc9847.png" /></p>
+<p>The development board displays the following:</p>
+<p><img alt="Image" src="../../_images/1719647259597_42bb542e_aba1_429c_bf5d_02691d3a2995.jpeg" /></p>
+<p>To enable remote debugging of the development board application, proceed with the following settings:</p>
+<p>Remote Debugging the Application.</p>
+<p>Close the application that was just launched on the development board.</p>
+<p><img alt="Image" src="../../_images/1719647259830_32a54fe6_716e_4b4f_ab28_74d27f60613c.png" /></p>
+<p>Enter the following command on the development board to enter listening mode:</p>
+<p>[root&#64;ok3568:/home/forlinx]# <font style="color:#FF0000;">gdbserver 172.16.0.169:2345 ./fltest_qt_backlight</font></p>
+<p><img alt="Image" src="../../_images/1719647260100_c28372bb_2475_4736_90a7_c27b9a36aa56.png" /></p>
+<p>On the virtual machine:</p>
+<p>Debug-&gt;Start Debugging-&gt;Attach to Running Debug Server…</p>
+<p><img alt="Image" src="../../_images/1719647260430_bb000f6a_1277_4189_bec7_88c663cd96c5.png" /></p>
+<p><img alt="Image" src="../../_images/1719647260656_922ed5c3_56c6_44ce_b386_3bacb7d98c5e.png" /></p>
+<p>Connect to the development board service to enter debug mode.</p>
+<p>Breakpoint Debugging Example:</p>
+<p>Set a breakpoint in the application, then click the Step Over button repeatedly.</p>
+<p><img alt="Image" src="../../_images/1719647260907_f4cac003_4926_4e6e_bc55_b5f2cce16e2e.png" /></p>
+<p>The development board will output breakpoint debugging information.</p>
+<p><img alt="Image" src="../../_images/1719647261082_07d3b0e1_6d05_422e_90b4_6a4043aa08e1.png" /></p>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -13,6 +13,12 @@
    OK3568_4_19_206_Buildroot_JDK_Support
    OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration
    OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method
+   OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test
+   OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug
+   OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2
+   OK3568_4_19_206_Buildroot_Multiplexing_UART8_Bluetooth_Serial_Port_as_a_General_Serial_Port
+   OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot
+   OK3568_4_19_206_Buildroot_USB_Host_to_Slave_Switching
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
