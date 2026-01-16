@@ -22,7 +22,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 FIT-PCIE-SATA V1.0 adapter board (converts PCIe 2.0 interface to dual SATA 2.0 ports)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719647161368-b8033fb6-0f7c-4f04-88b0-8841bc918546.jpeg)
+![Image](./images/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161368_b8033fb6_0f7c_4f04_88b0_8841bc918546.jpeg)
 
 ### Software Configuration
 
@@ -74,8 +74,8 @@ Separately flash /OK3568-linux-source/kernel/boot.img
 
 Write data:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647161624-9c4aaf9e-f83d-401a-ae2a-c7d5408982e2.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161624_9c4aaf9e_f83d_401a_ae2a_c7d5408982e2.png)
 
 Read data:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647161810-f48384dd-bf03-46db-8468-949c156fa825.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method/1719647161810_f48384dd_bf03_46db_8468_949c156fa825.png)
