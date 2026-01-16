@@ -22,13 +22,13 @@ To modify the device tree file:
 
 Comment out LVDS \_ backlight nodes.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647124654-ab8d20fa-7801-4d09-80b2-f689b0b80032.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647124654_ab8d20fa_7801_4d09_80b2_f689b0b80032.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647124881-98a73fbf-2359-49fa-b4fc-29c7d83e2565.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647124881_98a73fbf_2359_49fa_b4fc_29c7d83e2565.png)
 
 Comment out backlight.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647125162-14a9ffa0-551c-4be6-8f89-cf6bf35a0284.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125162_14a9ffa0_551c_4be6_8f89_cf6bf35a0284.png)
 
 Compile the kernel input./build. sh kernel command.
 
@@ -70,6 +70,6 @@ Turn off the PWM.
 
 <font style="color:#000000;">echo 0 > /sys/class/pwm/pwmchip2/pwm0/enable</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647125365-34f99ac5-c079-4af3-b8c6-2be8eb31fb67.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125365_34f99ac5_c079_4af3_b8c6_2be8eb31fb67.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647125581-665cd276-a4f3-4f71-9e24-1c68c94e2f43.png)
+![Image](./images/OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test/1719647125581_665cd276_a4f3_4f71_9e24_1c68c94e2f43.png)
