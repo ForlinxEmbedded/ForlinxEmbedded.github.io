@@ -1,4 +1,4 @@
-## OK3568 4.19.206 Buildroot Qt-creator Remote Debug
+# OK3568 4.19.206 Buildroot Qt-creator Remote Debug
 
 ## Copyright                                                                                                    
 
