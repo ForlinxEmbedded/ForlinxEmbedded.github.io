@@ -20,7 +20,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 Refer to the OK3568 hardware documentation/user manual, specifically the “FET3568-C Pin Multiplexing Reference Table,” to identify:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647293223-93f6499b-ce5b-4bba-acc3-77f5526302da.png)
+![Image](./images/OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2/1719647293223_93f6499b_ce5b_4bba_acc3_77f5526302da.png)
 
 Modify the device tree.
 
@@ -28,11 +28,11 @@ OK3568-linux-source/kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi
 
 Modify status = “okay” in \&can2.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647293438-7ac082c3-db48-48d4-b6ad-6b8a25e137ea.png)
+![Image](./images/OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2/1719647293438_7ac082c3_db48_48d4_b6ad_6b8a25e137ea.png)
 
 Modify status=”disabled” in \&uart8.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647293605-0fd7add3-1a76-4e90-aea6-e73f57d017de.png)
+![Image](./images/OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2/1719647293605_0fd7add3_1a76_4e90_aea6_e73f57d017de.png)
 
 After modifications are completed, return to the OK3568-linux-source directory and execute ./build.sh kernel. Once the compilation is finished, only flash the following boot image file:
 

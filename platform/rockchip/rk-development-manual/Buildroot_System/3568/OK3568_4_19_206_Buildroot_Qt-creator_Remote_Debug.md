@@ -62,7 +62,7 @@ Tools->options->Kits->Compilers->Add（<font style="color:#FF0000;">The red path
 
 <font style="color:#FF0000;">/home/forlinx/linux-3568</font>/OK3568-linux-source/buildroot/output/OK3568/host/bin/qmake
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647256993-649e500e-ac2b-4820-9d7d-b2cd35d35359.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647256993_649e500e_ac2b_4820_9d7d_b2cd35d35359.png)
 
 Add gcc.
 
@@ -70,7 +70,7 @@ Tools->options->Kits->Compilers->Add（<font style="color:#FF0000;">The red path
 
 <font style="color:#FF0000;">/home/forlinx/linux-3568/</font>OK3568-linux-source/buildroot/output/OK3568/host/bin/aarch64-linux-gcc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647257185-a5fb4c99-9e70-42ee-8db9-29400ee08da0.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647257185_a5fb4c99_9e70_42ee_8db9_29400ee08da0.png)
 
 Add g++.
 
@@ -78,7 +78,7 @@ Tools->options->Kits->Compilers->Add（<font style="color:#FF0000;">The red path
 
 <font style="color:#FF0000;">/home/forlinx/linux-3568</font>/OK3568-linux-source/buildroot/output/OK3568/host/bin/aarch64-linux-g++
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647257423-dd3a0b70-132d-4b5b-9479-7d5d06c8b7a5.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647257423_dd3a0b70_132d_4b5b_9479_7d5d06c8b7a5.png)
 
 Add the gdb tool.
 
@@ -88,17 +88,17 @@ Name: 3568
 
 Path:/usr/bin/gdb-multiarch
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647257668-95a67ee5-c2f9-42be-b723-34d336898a38.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647257668_95a67ee5_c2f9_42be_b723_34d336898a38.png)
 
 Configure devices.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647257890-bcc9b8ce-9547-4576-b72e-81fab1eaf72e.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647257890_bcc9b8ce_9547_4576_b72e_81fab1eaf72e.png)
 
 Configure complete test. 
 
 <font style="color:#FF0000;">Note: To configure the development board and the computer virtual machine to be on the same network segment.</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647258191-2418fe9d-b7d9-46c9-9456-086a4e7dfcc9.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647258191_2418fe9d_b7d9_46c9_9456_086a4e7dfcc9.png)
 
 Host name: Development board IP address
 
@@ -112,29 +112,29 @@ Then click “Test” to test the ssh communication.
 
 The diagram indicates a successful connection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647258450-a7049f8c-801f-420a-8fb3-cfb6ef71f821.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647258450_a7049f8c_801f_420a_8fb3_cfb6ef71f821.png)
 
 Configure the Kit Suite.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647258672-b566fb09-ded3-4b21-b5f4-6e0eb196af9a.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647258672_b566fb09_ded3_4b21_b5f4_6e0eb196af9a.png)
 
 Select the previously configured Kit Suite 3568 for the project code.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647258910-e1874225-8590-4024-9073-9a495f9e9d98.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647258910_e1874225_8590_4024_9073_9a495f9e9d98.png)
 
 Specify the installation directory for the program on the development board: target.path = /home/forlinx
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647259224-d906f9b0-283a-448b-b159-d7649766a61e.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647259224_d906f9b0_283a_448b_b159_d7649766a61e.png)
 
 After configuration, the executable files can run on the development board.
 
 Click the Run button:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647259407-cce2244c-6a64-45b6-90f8-098bd4fc9847.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647259407_cce2244c_6a64_45b6_90f8_098bd4fc9847.png)
 
 The development board displays the following:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719647259597-42bb542e-aba1-429c-bf5d-02691d3a2995.jpeg)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647259597_42bb542e_aba1_429c_bf5d_02691d3a2995.jpeg)
 
 To enable remote debugging of the development board application, proceed with the following settings:
 
@@ -142,21 +142,21 @@ Remote Debugging the Application.
 
 Close the application that was just launched on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647259830-32a54fe6-716e-4b4f-ab28-74d27f60613c.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647259830_32a54fe6_716e_4b4f_ab28_74d27f60613c.png)
 
 Enter the following command on the development board to enter listening mode:
 
 \[root@ok3568:/home/forlinx]# <font style="color:#FF0000;">gdbserver 172.16.0.169:2345 ./fltest\_qt\_backlight</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647260100-c28372bb-2475-4736-90a7-c27b9a36aa56.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647260100_c28372bb_2475_4736_90a7_c27b9a36aa56.png)
 
 On the virtual machine:
 
 Debug->Start Debugging->Attach to Running Debug Server...
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647260430-bb000f6a-1277-4189-bec7-88c663cd96c5.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647260430_bb000f6a_1277_4189_bec7_88c663cd96c5.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647260656-922ed5c3-56c6-44ce-b386-3bacb7d98c5e.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647260656_922ed5c3_56c6_44ce_b386_3bacb7d98c5e.png)
 
 Connect to the development board service to enter debug mode.
 
@@ -164,8 +164,8 @@ Breakpoint Debugging Example:
 
 Set a breakpoint in the application, then click the Step Over button repeatedly.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647260907-f4cac003-4926-4e6e-bc55-b5f2cce16e2e.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647260907_f4cac003_4926_4e6e_bc55_b5f2cce16e2e.png)
 
 The development board will output breakpoint debugging information.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647261082-07d3b0e1-6d05-422e-90b4-6a4043aa08e1.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug/1719647261082_07d3b0e1_6d05_422e_90b4_6a4043aa08e1.png)
