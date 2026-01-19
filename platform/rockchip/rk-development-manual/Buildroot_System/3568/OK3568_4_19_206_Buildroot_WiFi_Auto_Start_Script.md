@@ -34,4 +34,4 @@ chmod +x S99mywifi.sh
 
 If the script displays the information shown in the red box, it indicates a successful connection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646274543-6dc783de-6c7d-4d6d-ab5d-125be9d190ea.png)
+![Image](./images/OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script/1719646274543_6dc783de_6c7d_4d6d_ab5d_125be9d190ea.png)

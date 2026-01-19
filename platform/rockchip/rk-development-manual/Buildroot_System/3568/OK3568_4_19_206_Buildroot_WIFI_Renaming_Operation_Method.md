@@ -22,4 +22,4 @@ KERNEL is the original name.
 
 NAME is the modified name.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646277855-fb44ad77-18f2-427f-8682-9b866c7c1d58.png)
+![Image](./images/OK3568_4_19_206_Buildroot_WIFI_Renaming_Operation_Method/1719646277855_fb44ad77_18f2_427f_8682_9b866c7c1d58.png)

@@ -76,7 +76,7 @@ default         192.168.109.149 0.0.0.0         UG    0      0        0 mlan0
 
 Below, the ssid is the Wi-Fi that will connect automatically, and psk is the password:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1731567592361-4915542f-8728-473b-9d81-e1ec4d87e1eb.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_18%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731567592361_4915542f_8728_473b_9d81_e1ec4d87e1eb.png)
 
 3. Modify the interfaces file:
 
@@ -92,7 +92,7 @@ Add the address, netmask, and gateway obtained in the first step to the mlan0 se
 
 **Note: The address can be set to one in the same network segment. The detected address is 192.168.109.47, but it is set to 192.168.109.66.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1731998030917-e597ea17-1b0b-4574-a7de-be28e9b76a8a.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_27%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731998030917_e597ea17_1b0b_4574_a7de_be28e9b76a8a.png)
 
 Add the following code:
 
@@ -109,7 +109,7 @@ The last line ensures that the configuration from wpa\_supplicant.conf is read e
 
 After completing these settings, restart the development board, and you will see that the mlan0 IP has been changed to 192.168.109.66.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1731576010878-7078add2-6a4e-41df-a976-c015f2e8a99a.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_29%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731576010878_7078add2_6a4e_41df_a976_c015f2e8a99a.png)
 
 ## Verification
 
@@ -137,7 +137,7 @@ Add a startup script:
 [root@ok3568:/]# vi /etc/init.d/S99-autowifi.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1731569548128-f1e07737-c50f-4d39-998a-72d98ab091e2.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_24%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731569548128_f1e07737_c50f_4d39_998a_72d98ab091e2.png)
 
 Grant executable permissions:
 

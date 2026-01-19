@@ -26,4 +26,4 @@ NAME="eth7" is the renamed Ethernet interface name.
 
  You may rename the Ethernet interface to names like ethernet0, ethernet1, or ethernet2.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646112945-d7012a4e-9957-4d38-8a60-65b59da56cbf.png)
+![Image](./images/OK3568_4_19_206_Buildroot_USB_to_Ethernet_Adapter_Renaming_Method/1719646112945_d7012a4e_9957_4d38_8a60_65b59da56cbf.png)
