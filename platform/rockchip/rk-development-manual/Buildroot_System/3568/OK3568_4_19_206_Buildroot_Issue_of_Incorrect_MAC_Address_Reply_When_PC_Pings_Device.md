@@ -24,7 +24,7 @@ Solve the problem of incorrect Mac address reply when pinging devices from a com
 
 PC side configures multiple IPs: 192.168.31.11 and 192.168.36.11
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1732583775787-d68d4883-50af-4567-863f-63ae849b1b5a.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_13%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732583775787_d68d4883_50af_4567_863f_63ae849b1b5a.png)
 
 Device side IP configuration:
 
@@ -32,7 +32,7 @@ eth2 : 192.168.31.10
 
 eth3 : 192.168.36.10
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1732583974502-646ec277-526b-439f-956b-c75816cf23d4.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_18%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732583974502_646ec277_526b_439f_956b_c75816cf23d4.png)
 
 2\. Connection Setup Problem
 
@@ -40,13 +40,13 @@ A local network is created using a router, with the PC connected and one network
 
 Use the PC to ping eth3, which is not connected to the local network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1732586293318-312fe718-5a2e-445b-90ca-15c7fbdc5ada.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_14%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732586293318_312fe718_5a2e_445b_90ca_15c7fbdc5ada.png)
 
 **Issues Encountered**
 
 Normally, if the ARP cache does not store the MAC and IP mapping, a broadcast message is sent to locate the device with that IP, and the device responds with its MAC address. However, when the PC pings the IP 192.168.36.10, the MAC address captured in the response is that of eth2, which is connected to the local network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1732587129047-e91173e4-dd16-479c-9d91-41b687e04a79.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_22%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732587129047_e91173e4_dd16_479c_9d91_41b687e04a79.png)
 
 After using ifconfig eth2 -arp to disable ARP forwarding on eth2, pinging 192.168.36.10 again revealed that the incorrect MAC address was no longer being responded to in the captured packets. However, eth2 became unpingable, making this method impractical.
 
@@ -77,4 +77,4 @@ Change this value to 1, and then follow the aforementioned method to perform the
 1
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1732587439246-4e47b50d-3057-4f24-9fb8-7f3778d89178.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_43%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device/1732587439246_4e47b50d_3057_4f24_9fb8_7f3778d89178.png)
