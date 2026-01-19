@@ -22,7 +22,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 Enter the command ls /sys/class/drm. Taking MIPI display as an example.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646158703-17fc4345-6ac8-4532-9add-4b8ea7cb3f10.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Weston_Desktop_Reference_Link/1719646158703_17fc4345_6ac8_4532_9add_4b8ea7cb3f10.png)
 
 2. Adjust Screen Orientation
 
@@ -40,7 +40,7 @@ Note: For SDK versions with Linux kernel 5.10 and above, use transform = rotate-
 
 View the supported resolutions for the display adapter, using MIPI display as an example.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646158897-4875049f-3301-4ac1-a57b-fdb9288db427.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Weston_Desktop_Reference_Link/1719646158897_4875049f_3301_4ac1_a57b_fdb9288db427.png)
 
 4. Configure Resolution
 
@@ -54,7 +54,7 @@ scale=2          // Must be an integer multiple
 
 5. Remove Grid Background
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646159329-9b4d7271-beb5-4fcb-bf0f-fbad2ac4a869.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Weston_Desktop_Reference_Link/1719646159329_9b4d7271_beb5_4fcb_bf0f_fbad2ac4a869.png)
 
 <font style="color:#FF0000;">\[shell]</font>
 
