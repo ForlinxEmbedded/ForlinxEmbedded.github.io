@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 |:----------:|:----------:|----------|
 | 04/08/2022| V1.0| Initial Version|
 
-# Weston Desktop Reference Link
+## Weston Desktop Reference Link
 
 [https://www.mankier.com/5/weston.ini#Output\_Section](https://www.mankier.com/5/weston.ini#Output_Section)
 
