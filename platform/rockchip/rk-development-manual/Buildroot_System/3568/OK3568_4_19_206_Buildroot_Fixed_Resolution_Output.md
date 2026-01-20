@@ -16,11 +16,11 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 1\. Enter ls /sys/class/drm to check display devices.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45447432/1752153189356-eb3d5c1f-0996-413f-ab2c-dff28c72dee2.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Fixed_Resolution_Output/1752153189356_eb3d5c1f_0996_413f_ab2c_dff28c72dee2.png)
 
 2\. View supported resolutions.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45447432/1752153209700-b7415ae3-a77e-4d53-9ab7-3cbb6af182a7.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Fixed_Resolution_Output/1752153209700_b7415ae3_a77e_4d53_9ab7_3cbb6af182a7.png)
 
 Modify the file /etc/xdg/weston/weston.ini:
 
