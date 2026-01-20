@@ -26,7 +26,7 @@ Solution:
 [root@ok3568:/]# rm /usr/share/matrix-gui-2.0/lock/qt
 ```
 
-## Modification Method
+**Modification Method**
 
 1. Connect to Wi-Fi and Determine the Network Segment:
 
@@ -111,7 +111,7 @@ After completing these settings, restart the development board, and you will see
 
 ![Image](./images/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup/1731576010878_7078add2_6a4e_41df_a976_c015f2e8a99a.png)
 
-## Verification
+**Verification**
 
 After restarting the development board, manually add the DNS:
 

@@ -91,8 +91,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#configuring-static-ip-for-wi-fi-and-enabling-automatic-connection-on-startup">Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#modification-method">Modification Method</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#verification">Verification</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script.html">OK3568 4.19.206 Buildroot  WiFi Auto-Start Script</a></li>
@@ -173,9 +171,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# rm /usr/share/matrix-gui-2.0/lock/qt
 </pre></div>
 </div>
-</section>
-<section id="modification-method">
-<h2>Modification Method<a class="headerlink" href="#modification-method" title="Link to this heading"></a></h2>
+<p><strong>Modification Method</strong></p>
 <ol class="arabic simple">
 <li><p>Connect to Wi-Fi and Determine the Network Segment:</p></li>
 </ol>
@@ -245,9 +241,7 @@ pre-up wpa_supplicant -B -Dnl80211 -imlan0 -c /etc/wpa_supplicant.conf
 <p>The last line ensures that the configuration from wpa_supplicant.conf is read every time before mlan0 starts up. Thus, after a reboot, don’t need to manually connect to Wi-Fi again.</p>
 <p>After completing these settings, restart the development board, and you will see that the mlan0 IP has been changed to 192.168.109.66.</p>
 <p><img alt="Image" src="../../_images/1731576010878_7078add2_6a4e_41df_a976_c015f2e8a99a.png" /></p>
-</section>
-<section id="verification">
-<h2>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h2>
+<p><strong>Verification</strong></p>
 <p>After restarting the development board, manually add the DNS:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# echo &quot;nameserver 114.114.114.114&quot; &gt; /etc/resolv.conf
 </pre></div>
