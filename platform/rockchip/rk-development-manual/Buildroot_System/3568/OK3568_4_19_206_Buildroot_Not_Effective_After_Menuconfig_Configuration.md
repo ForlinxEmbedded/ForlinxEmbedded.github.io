@@ -10,6 +10,8 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
+## Not Effective After Menuconfig Configuration
+
 After executing the command, select No.95 and press Enter.
 
 ```plain
