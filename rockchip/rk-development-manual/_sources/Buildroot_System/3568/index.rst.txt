@@ -29,6 +29,7 @@
    OK3568_4_19_206_Memory_View_and_Capacity_Storage
    OK3568_4_19_206_Buildroot_Kernel_Configuration_View
    OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device
+   OK3568_4_19_206_Buildroot_Fixed_Resolution_Output
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
