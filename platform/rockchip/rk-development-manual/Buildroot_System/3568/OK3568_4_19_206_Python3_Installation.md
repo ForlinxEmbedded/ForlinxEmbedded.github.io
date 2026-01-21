@@ -24,27 +24,27 @@ forlinx@ubuntu18:~/3568.4.19/OK3568-linux-source/buildroot/output/OK3568$ make m
 
 <font style="color:rgb(0,0,0);">Turn on support for wide characters:Target packages-->Libraries-->Text and terminal-->handing-->ncurses</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723443799373-9df69321-e520-48c8-9365-5b1c0938fec5.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_16%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp%2Fresize%2Cw_554%2Climit_0)
+![Image](./images/OK3568_4_19_206_Python3_Installation/1723443799373_9df69321_e520_48c8_9365_5b1c0938fec5.png)
 
 <font style="color:rgb(0,0,0);">Provide dynamic libraries: -->Build options</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723443860302-0021a157-7c17-4acb-8a6d-4d30fce7760e.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_16%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp%2Fresize%2Cw_554%2Climit_0)
+![Image](./images/OK3568_4_19_206_Python3_Installation/1723443860302_0021a157_7c17_4acb_8a6d_4d30fce7760e.png)
 
 Enable python support: Target packages --> Interpreter languages and scripting
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723443992297-71b9abb0-0498-4b09-9ba7-34abc5a322b1.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_16%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp%2Fresize%2Cw_554%2Climit_0)
+![Image](./images/OK3568_4_19_206_Python3_Installation/1723443992297_71b9abb0_0498_4b09_9ba7_34abc5a322b1.png)
 
 Python3 module format to install options.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723444254315-8e8c8b98-a05e-4d45-b495-1ae4953d8bd7.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_32%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Python3_Installation/1723444254315_8e8c8b98_a05e_4d45_b495_1ae4953d8bd7.png)
 
 2\. core python3 modules are Python libraries, which can be added as needed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723444392554-079d1200-0af2-4c31-9085-02dc4d07d375.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_32%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Python3_Installation/1723444392554_079d1200_0af2_4c31_9085_02dc4d07d375.png)
 
 External python3 modules are external libraries, which can also be added as needed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723444410258-ceed9033-736d-4ca8-b96c-85efeac3f158.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_32%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Python3_Installation/1723444410258_ceed9033_736d_4ca8_b96c_85efeac3f158.png)
 
 Then re - compile the file system and perform single - step flashing.
 

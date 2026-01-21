@@ -26,9 +26,9 @@ The evemu tool is a utility for Linux systems, used to simulate, record, and pro
 
 Go to the graphical configuration interface of the file system in the source code and select the evemu tool as “y”. Then re - compile the file system and burn rootfs.ext2 into the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1731575520229-776afe76-4b16-41fb-821a-8450a7eb938b.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_22%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up)/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1731576200389-dfe266e0-226d-426b-9ab4-b2dfd0ddb607.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_21%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up)/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png)
 
 Use the “evemu - record” command to record a mouse movement operation, and use “evemu - play” to play back the recorded movement.
 

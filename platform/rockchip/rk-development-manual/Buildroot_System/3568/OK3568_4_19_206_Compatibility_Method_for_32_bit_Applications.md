@@ -38,15 +38,15 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib32 //Add an environment variable to 
 ln -s /lib32/ld-linux-armhf.so.3 /lib 						//Create a soft connection
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646087203-a31d8858-e0e4-4049-9291-7628e9643ec8.png)
+![Image](./images/OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications/1719646087203_a31d8858_e0e4_4049_9291_7628e9643ec8.png)
 
 Use ld-linux- armhf. so. 3 --list as the ldd command to detect the library files required by test. It is found that all the library files exist. Execute the test executable file successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646087367-2184fde5-7862-42a2-a607-196124d3202a.png)
+![Image](./images/OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications/1719646087367_2184fde5_7862_42a2_a607_196124d3202a.png)
 
 In the development environment, check that the test is 32-bit ELF
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646087556-8232b693-551a-4c4b-a487-5ca96edc3fa5.png)
+![Image](./images/OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications/1719646087556_8232b693_551a_4c4b_a487_5ca96edc3fa5.png)
 
 
 
