@@ -96,6 +96,8 @@ static const struct drm_display_mode dw_hdmi_default_modes[] = {
 
 ```
 
-2\. Compile separately with the./build. sh kernel to generate the/kernel/boot. img file; 3\. Flash the boot.img file separately.
+2\. Compile separately with the./build. sh kernel to generate the/kernel/boot. img file; 
+
+3\. Flash the boot.img file separately.
 
 **Note: Some users have reported color discrepancies or screen compatibility issues (known as "picky screen" phenomenon) after forcing the HDMI resolution via the method described above. However, the majority of users can still use it normally.**
