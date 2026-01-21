@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+  <title>OK3568 4.19.206 Buildroot Package Configuration Fails to Apply &mdash; Forlinx Embedded RK Development Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
 
   
     <link rel="shortcut icon" href="../../_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Package_Configuration_Fails_to_Apply.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -24,8 +24,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language" href="OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html" />
-    <link rel="prev" title="3568" href="index.html" />
+    <link rel="next" title="OK3568 5.10.160 Buildroot New Partition Addition" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html" />
+    <link rel="prev" title="OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins" href="OK3568_4_19_206_Buildroot_Command_Line_Control_of_GPIO_Pins.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -72,12 +72,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../3506/index.html">3506</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../3562/index.html">3562</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">3568</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installing-bridge-tool-bridge-utils-in-buildroot">Installing Bridge Tool (bridge-utils) in Buildroot</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html">OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server.html">OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_JDK_Support.html">OK3568 4.19.206 Buildroot JDK_Support</a></li>
@@ -105,7 +100,12 @@
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Python3_Installation.html">OK3568 4.19.206 Python3 Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions.html">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins</a></li>
-<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Package_Configuration_Fails_to_Apply.html">OK3568 4.19.206 Buildroot Package Configuration Fails to Apply</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot Package Configuration Fails to Apply</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#package-configuration-fails-to-apply">Package Configuration Fails to Apply</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
 </ul>
 </li>
@@ -135,7 +135,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
           <li class="breadcrumb-item"><a href="index.html">3568</a></li>
-      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot Package Configuration Fails to Apply</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -144,62 +144,103 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok3568-4-19-206-buildroot-installing-bridge-tool-bridge-utils-in-buildroot">
-<h1>OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot<a class="headerlink" href="#ok3568-4-19-206-buildroot-installing-bridge-tool-bridge-utils-in-buildroot" title="Link to this heading"></a></h1>
+  <section id="ok3568-4-19-206-buildroot-package-configuration-fails-to-apply">
+<h1>OK3568 4.19.206 Buildroot Package Configuration Fails to Apply<a class="headerlink" href="#ok3568-4-19-206-buildroot-package-configuration-fails-to-apply" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
-<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
-<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
-<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
 <section id="revision-history">
 <h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
-<th class="head text-center"><p>Version</p></th>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Version</p></th>
 <th class="head"><p>Revision History</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>04/08/2022</p></td>
-<td class="text-center"><p>V1.0</p></td>
+<tr class="row-even"><td><p>22/09/2022</p></td>
+<td><p>V1.0</p></td>
 <td><p>Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td><p>25/04/2025</p></td>
+<td><p>V1.1</p></td>
+<td><p>Consolidating the Same Issue</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="installing-bridge-tool-bridge-utils-in-buildroot">
-<h2>Installing Bridge Tool (bridge-utils) in Buildroot<a class="headerlink" href="#installing-bridge-tool-bridge-utils-in-buildroot" title="Link to this heading"></a></h2>
-<p>Navigate to the /OK3568-linux-source/buildroot/output/OK3568 directory and execute the make menuconfig command.</p>
-<p>Press the / key to open the search box. Enter the keyword bridge_utils, select OK, and press Enter.</p>
-<p><img alt="Image" src="../../_images/1719646566217_8f94987c_bb3c_41f2_a013_d09ec9da385e.png" /></p>
-<p>Once the result appears, press 1 to jump to the configuration page.</p>
-<p><img alt="Image" src="../../_images/1719646566412_4f487359_c3ac_4108_964d_aa15a1a52a0a.png" /></p>
-<p>Select bridge-utils by marking it with y.</p>
-<p><img alt="Image" src="../../_images/1719646566614_d13d7878_0f15_4825_9f3a_fcd0a1dd9523.png" /></p>
-<p>Continuously select Exit until you leave the graphical configuration interface. When prompted to save the configuration upon exiting, choose yes.</p>
-<p><img alt="Image" src="../../_images/1719646566810_072376c2_e3c1_4a3d_8e27_ef5e20809c5a.png" /></p>
-<p>Switch to the /OK3568-linux-source directory and execute the ./build.sh buildroot command.</p>
-<p><img alt="Image" src="../../_images/1719646567066_92d5ff69_f344_47c6_80ad_5e12c1e66465.png" /></p>
-<p>You will be prompted that a .config file already exists and asked if you want to regenerate it. Enter n (no); otherwise, your previous configuration will be overwritten.</p>
-<p>After compilation completes, a rootfs.ext2 file will be generated in the OK3568-linux-source/buildroot/output/OK3568/images directory. Flash this file individually to the development board.</p>
-<p><img alt="Image" src="../../_images/1719646567336_6b9c3abb_a5ef_4015_941e_7bf570ed4d57.png" /></p>
-<p>If the above steps result in an error, your kernel might have been compiled with CONFIG_BRIDGE = n)</p>
-<p>Kernel Support for Bridge</p>
-<p>Added at the end of the/OK3568-linux-source/kernel/arch/arm64/configs/OK3568-C- Linux _ defconfig.</p>
-<p>CONFIG _ BRIDGE = y save file</p>
-<p>Switch to the /OK3568-linux-source directory and execute the ./build.sh kernel command.</p>
-<p>This will generate a boot.img file in the /OK3568-linux-source/kernel/ directory. Flash the boot.img file individually to the development board. After this, the brctl command should function normally.</p>
-<p>Configuring the Network Bridge</p>
-<p>Set the IP addresses for eth0 and eth1 by editing the file /etc/network/interfaces (e.g., using vi).</p>
-<p><img alt="Image" src="../../_images/1719646567519_5f5c27b9_ee09_4fe8_9e51_53ae46b44c2f.png" /></p>
-<p>Create the self-start script vi/etc/init. d/S99 bridge.</p>
-<p><img alt="Image" src="../../_images/1719646567799_4318d1e0_c49e_4209_a498_a17d28840573.png" /></p>
-<p>Test tcp and udp communication.</p>
-<p><img alt="Image" src="../../_images/1719646568081_2d371229_4ef2_4108_bb3e_924040438655.png" /></p>
-<p><img alt="Image" src="../../_images/1719646568323_f373194b_7adc_4f22_9b20_831edbaca212.png" /></p>
+<section id="package-configuration-fails-to-apply">
+<h2>Package Configuration Fails to Apply<a class="headerlink" href="#package-configuration-fails-to-apply" title="Link to this heading"></a></h2>
+<p>When configuring a sub-option under an existing, previously configured option in Buildroot, the new sub-configuration may not take effect.</p>
+<p>Example (Python):</p>
+<p>For instance, after previously configuring and compiling Python3, adding a new sub-option such as python-aiocoap under external python modules may not be applied upon recompiling the filesystem.</p>
+<p><img alt="Image" src="../../_images/1745563843491_5f5a7cdf_b701_40d0_8b00_e7fc640eaea8.png" /></p>
+<p><img alt="Image" src="../../_images/1745564166555_51f5cf40_89a9_445f_a103_033e7e0362d0.png" /></p>
+<p><strong>Solution:</strong></p>
+<p>1. Re-make the package directly. This will incorporate the changes. (Not recommended, as repackaging is still required to include the modifications into the final filesystem image.)</p>
+<p>When you need to compile a package separately, you can use the make xxx-rebuild directive, using python3 as an example:</p>
+<p>Execute at OK3568-linux-source/build root</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@DESKTOP-ARR08M4:~/3568.4.19/OK3568-linux-source/buildroot$ make python3-rebuild
+rm -f /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_staging_installed
+rm -f /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_target_installed
+rm -f /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_images_installed
+rm -f /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_host_installed
+touch /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_built || true
+touch: cannot touch &#39;/home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_built&#39;: No such file or directory
+rm -f /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/python3-3.8.6/.stamp_built
+/usr/bin/make -j1 O=/home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output HOSTCC=&quot;/usr/bin/gcc&quot; HOSTCXX=&quot;/usr/bin/g++&quot; silentoldconfig
+make[1]: Entering directory &#39;/home/forlinx/3568.4.19/OK3568-linux-source/buildroot&#39;
+mkdir -p /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/buildroot-config/lxdialog
+PKG_CONFIG_PATH=&quot;&quot; /usr/bin/make CC=&quot;/usr/bin/gcc&quot; HOSTCC=&quot;/usr/bin/gcc&quot; \
+    obj=/home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/buildroot-config -C support/kconfig -f Makefile.br conf
+make[2]: Entering directory &#39;/home/forlinx/3568.4.19/OK3568-linux-source/buildroot/support/kconfig&#39;
+/usr/bin/gcc -D_GNU_SOURCE -D_DEFAULT_SOURCE -I/usr/include/ncursesw -DCURSES_LOC=&quot;&lt;ncurses.h&gt;&quot; -DNCURSES_WIDECHAR=1 -DLOCALE  -I/home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/buildroot-config -DCONFIG_=\&quot;\&quot;   /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/buildroot-config/conf.o /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/buildroot-config/zconf.tab.o  -o /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/buildroot-config/conf
+make[2]: Leaving directory &#39;/home/forlinx/3568.4.19/OK3568-linux-source/buildroot/support/kconfig&#39;
+make[1]: Leaving directory &#39;/home/forlinx/3568.4.19/OK3568-linux-source/buildroot&#39;
+&gt;&gt;&gt; host-lzip 1.19 Extracting
+gzip -d -c /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/dl/lzip-1.19.tar.gz | tar --strip-components=1 -C /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/output/build/host-lzip-1.19   -xf -
+&gt;&gt;&gt; host-lzip 1.19 Patching
+&gt;&gt;&gt; host-lzip 1.19 Configuring
+...
+...
+...						//Omit
+
+
+</pre></div>
+</div>
+<p>Manually extract the compressed package to the root directory of the development board to apply the changes immediately, or recompile the filesystem to integrate the modifications into the system image.</p>
+<p><img alt="Image" src="../../_images/1745565266287_f8e2017c_2a25_4908_b5f7_b5643cdb9991.png" /></p>
+<p>2. Simply remove the package and then recompile it (Recommended). This directly packs the changes into the final image.</p>
+<p>A full Linux 5.10 kernel compilation does not automatically rebuild the filesystem. Please first execute: ./build.sh buildroot</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu22:~/3568/OK3568-linux-source/buildroot/output/OK3568/build$ rm -rf python3-3.10.5
+forlinx@ubuntu22:~/3568/OK3568-linux-source/buildroot/output/OK3568/build$ cd ../../../../
+forlinx@ubuntu22:~/3568/OK3568-linux-source$ ./build.sh
+Log saved at /home/forlinx/3568/OK3568-linux-sdk5.10/output/sessions/2025-04-25_14-59-29
+
+
+==========================================
+<span class="gh">          Final configs</span>
+<span class="gh">==========================================</span>
+RK_BOOT_FIT_ITS=boot.its
+RK_BOOT_IMG=boot.img
+RK_BUILDROOT_CFG=OK3568
+RK_CHIP=OK3568
+RK_CHIP_FAMILY=OK3568
+RK_DEFCONFIG=/home/forlinx/3568/OK3568-linux-sdk5.10/device/rockchip/.chips/OK3568/OK3568-C-linux_defconfig
+RK_EXTRA_PARTITION_NUM=2
+RK_EXTRA_PARTITION_STR=oem:oem:/oem:ext4:defaults:normal:auto:@userdata:userdata:/userdata:ext4:defaults:normal:auto:@@@
+RK_KERNEL_ARCH=arm64
+RK_KERNEL_ARM64=y
+RK_KERNEL_CFG=OK3568-C-linux_defconfig
+RK_KERNEL_DTB=kernel/arch/arm64/boot/dts/rockchip/OK3568-C-linux.dtb
+RK_KERNEL_DTS=kernel/arch/arm64/boot/dts/rockchip/OK3568-C-linux.dts
+</pre></div>
+</div>
 </section>
 </section>
 
