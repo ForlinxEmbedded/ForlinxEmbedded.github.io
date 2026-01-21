@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK3568 4.19.206 Tool Command Line for Recording Mouse Actions (for Command Line Screen Wake-up) &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+  <title>OK3568 4.19.206 Tool Command Line for Recording Mouse Actions &mdash; Forlinx Embedded RK Development Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
 
   
     <link rel="shortcut icon" href="../../_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up%29.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -98,7 +98,7 @@
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name.html">OK3568 4.19.206 Buildroot Fixed USB to Network Port or Serial Port Name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications.html">OK3568 4.19.206 Compatibility Method for 32-bit Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Python3_Installation.html">OK3568 4.19.206 Python3 Installation</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions (for Command Line Screen Wake-up)</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tool-command-line-for-recording-mouse-actions-for-command-line-screen-wake-up">Tool Command Line for Recording Mouse Actions (for Command Line Screen Wake-up)</a></li>
@@ -133,7 +133,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
           <li class="breadcrumb-item"><a href="index.html">3568</a></li>
-      <li class="breadcrumb-item active">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions (for Command Line Screen Wake-up)</li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -142,8 +142,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok3568-4-19-206-tool-command-line-for-recording-mouse-actions-for-command-line-screen-wake-up">
-<h1>OK3568 4.19.206 Tool Command Line for Recording Mouse Actions (for Command Line Screen Wake-up)<a class="headerlink" href="#ok3568-4-19-206-tool-command-line-for-recording-mouse-actions-for-command-line-screen-wake-up" title="Link to this heading"></a></h1>
+  <section id="ok3568-4-19-206-tool-command-line-for-recording-mouse-actions">
+<h1>OK3568 4.19.206 Tool Command Line for Recording Mouse Actions<a class="headerlink" href="#ok3568-4-19-206-tool-command-line-for-recording-mouse-actions" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -174,8 +174,8 @@
 <p>The evemu tool is a utility for Linux systems, used to simulate, record, and process events of input devices (such as keyboards, mice, touchscreens, etc.). It is part of the libevdev library, allowing developers and system administrators to simulate input events without physical input devices or record input events from actual devices.</p>
 <p><strong>Modification Method</strong></p>
 <p>Go to the graphical configuration interface of the file system in the source code and select the evemu tool as “y”. Then re - compile the file system and burn rootfs.ext2 into the development board.</p>
-<p><img alt="Image" src="Buildroot_System/3568/images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up" />/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png)</p>
-<p><img alt="Image" src="Buildroot_System/3568/images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up" />/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png)</p>
+<p><img alt="Image" src="../../_images/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png" /></p>
+<p><img alt="Image" src="../../_images/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png" /></p>
 <p>Use the “evemu - record” command to record a mouse movement operation, and use “evemu - play” to play back the recorded movement.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]$ evemu-record  /dev/input/event1 &gt; 2myevent
 [root@ok3568:/]$ evemu-play /dev/input/event1 &lt; 2myevent

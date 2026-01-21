@@ -1,4 +1,4 @@
-# OK3568 4.19.206 Tool Command Line for Recording Mouse Actions (for Command Line Screen Wake-up)
+# OK3568 4.19.206 Tool Command Line for Recording Mouse Actions
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -26,9 +26,9 @@ The evemu tool is a utility for Linux systems, used to simulate, record, and pro
 
 Go to the graphical configuration interface of the file system in the source code and select the evemu tool as “y”. Then re - compile the file system and burn rootfs.ext2 into the development board.
 
-![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up)/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png)
+![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions/1731575520229_776afe76_4b16_41fb_821a_8450a7eb938b.png)
 
-![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up)/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png)
+![Image](./images/OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions/1731576200389_dfe266e0_226d_426b_9ab4_b2dfd0ddb607.png)
 
 Use the “evemu - record” command to record a mouse movement operation, and use “evemu - play” to play back the recorded movement.
 

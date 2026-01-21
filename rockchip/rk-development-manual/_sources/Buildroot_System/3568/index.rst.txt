@@ -33,7 +33,7 @@
    OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name
    OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications
    OK3568_4_19_206_Python3_Installation
-   OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions_for_Command_Line_Screen_Wake_up)
+   OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
