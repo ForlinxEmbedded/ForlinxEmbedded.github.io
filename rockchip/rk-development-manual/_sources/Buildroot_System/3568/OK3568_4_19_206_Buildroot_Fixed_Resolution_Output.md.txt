@@ -26,9 +26,9 @@ Modify the file /etc/xdg/weston/weston.ini:
 
 ```makefile
 [output]
-name=HDMI-A-1 //与上面列表相对应，去掉card0-
-mode=1280x960 //需为屏幕支持的有效分辨率
-scale=1 //缩放倍率，需为整数倍数
+name=HDMI-A-1 //Corresponding to the above list, remove card0-
+mode=1280x960 //A valid resolution supported by the screen
+scale=1 //Zoom factor, which should be an integer multiple
 
 ```
 
@@ -38,13 +38,13 @@ scale=1 //缩放倍率，需为整数倍数
 
 Enable HDMI screen output in U-Boot.
 
-1. Modify Ok3568-linux-source/kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi.c:
+2. Modify Ok3568-linux-source/kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi.c:
 
 Add edid = NULL.
 
 Adjust parameters in the dw\_hdmi\_default\_modes array.
 
-1. If the required resolution parameters are not in dw\_hdmi\_default\_modes, search OK3568-linux-source/kernel/drivers/gpu/drm/drm\_edid.c for corresponding parameters and add them to the array in the correct format.
+3. If the required resolution parameters are not in dw\_hdmi\_default\_modes, search OK3568-linux-source/kernel/drivers/gpu/drm/drm\_edid.c for corresponding parameters and add them to the array in the correct format.
 
 
 **Modification Steps**

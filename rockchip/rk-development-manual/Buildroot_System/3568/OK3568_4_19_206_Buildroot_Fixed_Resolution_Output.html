@@ -159,9 +159,9 @@
 <p><img alt="Image" src="../../_images/1752153209700_b7415ae3_a77e_4d53_9ab7_3cbb6af182a7.png" /></p>
 <p>Modify the file /etc/xdg/weston/weston.ini:</p>
 <div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="err">[output]</span>
-<span class="nv">name</span><span class="o">=</span>HDMI-A-1<span class="w"> </span>//与上面列表相对应，去掉card0-
-<span class="nv">mode</span><span class="o">=</span>1280x960<span class="w"> </span>//需为屏幕支持的有效分辨率
-<span class="nv">scale</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>//缩放倍率，需为整数倍数
+<span class="nv">name</span><span class="o">=</span>HDMI-A-1<span class="w"> </span>//Corresponding<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>above<span class="w"> </span>list,<span class="w"> </span>remove<span class="w"> </span>card0-
+<span class="nv">mode</span><span class="o">=</span>1280x960<span class="w"> </span>//A<span class="w"> </span>valid<span class="w"> </span>resolution<span class="w"> </span>supported<span class="w"> </span>by<span class="w"> </span>the<span class="w"> </span>screen
+<span class="nv">scale</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>//Zoom<span class="w"> </span>factor,<span class="w"> </span>which<span class="w"> </span>should<span class="w"> </span>be<span class="w"> </span>an<span class="w"> </span>integer<span class="w"> </span>multiple
 </pre></div>
 </div>
 <p><strong>Forced HDMI Resolution Output Without Reading EDID</strong></p>
@@ -169,12 +169,12 @@
 <li><p>Modification Method</p></li>
 </ol>
 <p>Enable HDMI screen output in U-Boot.</p>
-<ol class="arabic simple">
+<ol class="arabic simple" start="2">
 <li><p>Modify Ok3568-linux-source/kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi.c:</p></li>
 </ol>
 <p>Add edid = NULL.</p>
 <p>Adjust parameters in the dw_hdmi_default_modes array.</p>
-<ol class="arabic simple">
+<ol class="arabic simple" start="3">
 <li><p>If the required resolution parameters are not in dw_hdmi_default_modes, search OK3568-linux-source/kernel/drivers/gpu/drm/drm_edid.c for corresponding parameters and add them to the array in the correct format.</p></li>
 </ol>
 <p><strong>Modification Steps</strong></p>
