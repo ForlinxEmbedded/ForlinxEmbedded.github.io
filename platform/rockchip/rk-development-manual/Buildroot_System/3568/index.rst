@@ -34,6 +34,8 @@
    OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications
    OK3568_4_19_206_Python3_Installation
    OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions
+   OK3568_4_19_206_Buildroot_Command_Line_Control_of_GPIO_Pins
+   OK3568_4_19_206_Buildroot_Package_Configuration_Fails_to_Apply
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
