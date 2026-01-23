@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OK3568 4.19.206 Buildroot Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+  <title>OK3568 4.19.206 Add an Auto-start Script &mdash; Forlinx Embedded RK Development Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
 
   
     <link rel="shortcut icon" href="../../_static/forlinx.png"/>
-    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup.html" />
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Add_an_Auto_start_Script.html" />
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -24,8 +24,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="OK3568 4.19.206 Buildroot WiFi Auto-Start Script" href="OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script.html" />
-    <link rel="prev" title="OK3568 4.19.206 Buildroot WIFI Renaming Operation Method" href="OK3568_4_19_206_Buildroot_WIFI_Renaming_Operation_Method.html" />
+    <link rel="next" title="OK3568 4.19.206 Command Line Control of GPIO Pins" href="OK3568_4_19_206_Command_Line_Control_of_GPIO_Pins.html" />
+    <link rel="prev" title="OK3568 4.19.206 Buildroot Auto-start Applications on Boot" href="OK3568_4_19_206_Buildroot_Auto_start_Applications_on_Boot.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -87,12 +87,7 @@
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_USB_to_Ethernet_Adapter_Renaming_Method.html">OK3568 4.19.206 Buildroot USB-to-Ethernet Adapter Renaming Method</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Weston_Desktop_Reference_Link.html">OK3568 4.19.206 Buildroot  Weston Desktop Reference Link</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_WIFI_Renaming_Operation_Method.html">OK3568 4.19.206 Buildroot WIFI Renaming Operation Method</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Buildroot Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configuring-static-ip-for-wi-fi-and-enabling-automatic-connection-on-startup">Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup.html">OK3568 4.19.206 Buildroot Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script.html">OK3568 4.19.206 Buildroot  WiFi Auto-Start Script</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3588_4_19_206_Buildroot_Nginx_Installation.html">OK3588 4.19.206 Buildroot Nginx Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Package_Recompilation.html">OK3568 4.19.206 Buildroot Package Recompilation</a></li>
@@ -107,7 +102,12 @@
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Package_Configuration_Fails_to_Apply.html">OK3568 4.19.206 Buildroot Package Configuration Fails to Apply</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Auto_start_Applications_on_Boot.html">OK3568 4.19.206 Buildroot Auto-start Applications on Boot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Add_an_Auto_start_Script.html">OK3568 4.19.206 Add an Auto-start Script</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3568 4.19.206 Add an Auto-start Script</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-an-auto-start-script">Add an Auto-start Script</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Command Line Control of GPIO Pins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Non_effective_Configuration_Packages.html">OK3568 4.19.206 Non-effective Configuration Packages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
@@ -139,7 +139,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
           <li class="breadcrumb-item"><a href="index.html">3568</a></li>
-      <li class="breadcrumb-item active">OK3568 4.19.206 Buildroot Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup</li>
+      <li class="breadcrumb-item active">OK3568 4.19.206 Add an Auto-start Script</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -148,8 +148,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ok3568-4-19-206-buildroot-configuring-static-ip-for-wi-fi-and-enabling-automatic-connection-on-startup">
-<h1>OK3568 4.19.206 Buildroot Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup<a class="headerlink" href="#ok3568-4-19-206-buildroot-configuring-static-ip-for-wi-fi-and-enabling-automatic-connection-on-startup" title="Link to this heading"></a></h1>
+  <section id="ok3568-4-19-206-add-an-auto-start-script">
+<h1>OK3568 4.19.206 Add an Auto-start Script<a class="headerlink" href="#ok3568-4-19-206-add-an-auto-start-script" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -161,134 +161,33 @@ The drivers and utilities used for the components are subject to the copyrights 
 <h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>Date</strong></p></th>
-<th class="head"><p><strong>Version</strong></p></th>
-<th class="head"><p><strong>Revision History</strong></p></th>
+<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
+<th class="head text-center"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>11/19/2024</p></td>
-<td><p>V1.0</p></td>
+<tr class="row-even"><td class="text-center"><p>04/08/2022</p></td>
+<td class="text-center"><p>V1.0</p></td>
 <td><p>Initial Version</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="configuring-static-ip-for-wi-fi-and-enabling-automatic-connection-on-startup">
-<h2>Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup<a class="headerlink" href="#configuring-static-ip-for-wi-fi-and-enabling-automatic-connection-on-startup" title="Link to this heading"></a></h2>
-<p>Verified on Linux 5.10.160 Buildroot, just add mlan0 config in interfaces.</p>
-<p><strong>Note: This may cause the browser that comes with the board to be unusable:</strong></p>
-<p>Solution:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# rm /usr/share/matrix-gui-2.0/lock/qt
-</pre></div>
-</div>
-<p><strong>Modification Method</strong></p>
-<ol class="arabic simple">
-<li><p>Connect to Wi-Fi and Determine the Network Segment:</p></li>
-</ol>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# fltest_wifi.sh -i mlan0 -s test -p 12345678
-wifi mlan0
-ssid test
-pasw 12345678
-[  249.708244] IPv6: ADDRCONF(NETDEV_UP): mlan0: link is not ready
-waiting...
-try to connect again...
-[  255.379720] IPv6: ADDRCONF(NETDEV_CHANGE): mlan0: link becomes ready
-udhcpc: started, v1.27.2
-udhcpc: sending discover
-udhcpc: sending select for 192.168.109.47
-udhcpc: lease of 192.168.109.47 obtained, lease time 3599
-deleting routers
-adding dns 192.168.109.149
-Finshed!
-</pre></div>
-</div>
-<p>Note down the bolded parts below, which correspond to: address, netmask, gateway.</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# ifconfig mlan0
-mlan0     Link encap:Ethernet  HWaddr E8:FB:1C:67:30:99
-          inet addr:192.168.109.47  Bcast:192.168.109.255  Mask:255.255.255.0
-          inet6 addr: fe80::eafb:1cff:fe67:3099/64 Scope:Link
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:20 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:39 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000
-          RX bytes:2676 (2.6 KiB)  TX bytes:4154 (4.0 KiB)
-
-[root@ok3568:/]# route		//Query is slow, wait for ten seconds
-Kernel IP routing table
-Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
-default         192.168.109.149 0.0.0.0         UG    0      0        0 mlan0
-192.168.109.0   *               255.255.255.0   U     0      0        0 mlan0
-</pre></div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>Check the wpa_supplicant configuration file:</p></li>
-</ol>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# vi /etc/wpa_supplicant.conf
-</pre></div>
-</div>
-<p>Below, the ssid is the Wi-Fi that will connect automatically, and psk is the password:</p>
-<p><img alt="Image" src="../../_images/1731567592361_4915542f_8728_473b_9d81_e1ec4d87e1eb.png" /></p>
-<ol class="arabic simple" start="3">
-<li><p>Modify the interfaces file:</p></li>
-</ol>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# vi /etc/network/interfaces
-</pre></div>
-</div>
+<section id="add-an-auto-start-script">
+<h2>Add an Auto-start Script<a class="headerlink" href="#add-an-auto-start-script" title="Link to this heading"></a></h2>
+<p><strong>Note: This routine uses an auto-start script to initiate Wi-Fi hotspot connection upon boot.</strong></p>
+<p>Method: Create/etc/init.d/S99mywifi.sh</p>
+<p><strong>Note: The prefix S99 is mandatory.</strong></p>
 <p>Add the followings:</p>
-<p>Comment out the gateway under eth0 to avoid conflicts.</p>
-<p>Add the address, netmask, and gateway obtained in the first step to the mlan0 section:</p>
-<p><strong>Note: The address can be set to one in the same network segment. The detected address is 192.168.109.47, but it is set to 192.168.109.66.</strong></p>
-<p><img alt="Image" src="../../_images/1731998030917_e597ea17_1b0b_4574_a7de_be28e9b76a8a.png" /></p>
-<p>Add the following code:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>auto mlan0
-iface mlan0 inet static
-address 192.168.109.66
-netmask 255.255.255.0
-gateway 192.168.109.149
-pre-up wpa_supplicant -B -Dnl80211 -imlan0 -c /etc/wpa_supplicant.conf
-</pre></div>
-</div>
-<p>The last line ensures that the configuration from wpa_supplicant.conf is read every time before mlan0 starts up. Thus, after a reboot, don’t need to manually connect to Wi-Fi again.</p>
-<p>After completing these settings, restart the development board, and you will see that the mlan0 IP has been changed to 192.168.109.66.</p>
-<p><img alt="Image" src="../../_images/1731576010878_7078add2_6a4e_41df_a976_c015f2e8a99a.png" /></p>
-<p><strong>Verification</strong></p>
-<p>After restarting the development board, manually add the DNS:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# echo &quot;nameserver 114.114.114.114&quot; &gt; /etc/resolv.conf
-</pre></div>
-</div>
-<p>Test:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# ping www.forlinx.com
-PING www.forlinx.com (211.149.226.120) 56(84) bytes of data.
-64 bytes from 211.149.226.120: icmp_seq=1 ttl=47 time=51.7 ms
-64 bytes from 211.149.226.120: icmp_seq=2 ttl=47 time=58.4 ms
-64 bytes from 211.149.226.120: icmp_seq=3 ttl=47 time=56.3 ms
-64 bytes from 211.149.226.120: icmp_seq=4 ttl=47 time=52.1 ms
-64 bytes from 211.149.226.120: icmp_seq=5 ttl=47 time=52.0 ms
-</pre></div>
-</div>
-<p>Add a startup script:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# vi /etc/init.d/S99-autowifi.sh
-</pre></div>
-</div>
-<p><img alt="Image" src="../../_images/1731569548128_f1e07737_c50f_4d39_998a_72d98ab091e2.png" /></p>
-<p>Grant executable permissions:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# chmod +x /etc/init.d/S99-autowifi.sh
-</pre></div>
-</div>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[root@ok3568:/]# ping www.forlinx.com
-PING www.forlinx.com (211.149.226.120) 56(84) bytes of data.
-64 bytes from 211.149.226.120: icmp_seq=1 ttl=47 time=56.4 ms
-64 bytes from 211.149.226.120: icmp_seq=2 ttl=47 time=58.6 ms
-64 bytes from 211.149.226.120: icmp_seq=3 ttl=47 time=57.2 ms
-64 bytes from 211.149.226.120: icmp_seq=4 ttl=47 time=155 ms
-64 bytes from 211.149.226.120: icmp_seq=5 ttl=47 time=54.4 ms
-64 bytes from 211.149.226.120: icmp_seq=6 ttl=47 time=52.0 ms
-64 bytes from 211.149.226.120: icmp_seq=7 ttl=47 time=65.9 ms
-64 bytes from 211.149.226.120: icmp_seq=8 ttl=47 time=68.1 ms
-64 bytes from 211.149.226.120: icmp_seq=9 ttl=47 time=96.2 ms
-</pre></div>
-</div>
+<p>#!/bin/sh</p>
+<p>/usr/bin/fltest_wifi.sh -i mlan0 -s “forlinx” -p 12345678 &amp;</p>
+<p>WiFi hotspot name: forlinx;  password: 12345678</p>
+<p>Grant executable permissions to the S99mywifi.sh script:</p>
+<p>chmod +x S99mywifi.sh</p>
+<p>Execution Effect:</p>
+<p>If the script displays the information shown in the red box, it indicates a successful connection.</p>
+<p><img alt="Image" src="../../_images/1719646627292_f4cf12e4_c387_47bb_93e9_864d8120b118.png" /></p>
 </section>
 </section>
 
