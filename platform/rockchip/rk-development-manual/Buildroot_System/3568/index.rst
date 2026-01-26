@@ -40,6 +40,10 @@
    OK3568_4_19_206_Add_an_Auto_start_Script
    OK3568_4_19_206_Command_Line_Control_of_GPIO_Pins
    OK3568_4_19_206_Non_effective_Configuration_Packages
+   OK3568_4_19_206_Buildroot_Serial_Port_Automatic_Login_Cancellation
+   OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_App_Launcher_String
+   OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_Icon
+   OK3568_4_19_206_Buildroot_Delayline_Parameter_Scanning_and_Modification
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
