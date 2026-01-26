@@ -16,7 +16,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Removing Desktop Forlinx App Launcher String
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646153905-89f4cf7e-918a-4e0b-9b3b-f01e0f262b42.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_App_Launcher_String/1719646153905_89f4cf7e_918a_4e0b_9b3b_f01e0f262b42.png)
 
 Modify related documents:
 
@@ -26,6 +26,6 @@ Commnet out:
 
 //$menu\_title = ($submenu == "main\_menu") ? "Forlinx App Launcher v2 p".($current\_page+1) : $submenu\_entry\["Name"]." Submenu p".($current\_page+1);
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646154127-c12f2124-a8e4-4136-bcdc-ca13c2d78c75.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_App_Launcher_String/1719646154127_c12f2124_a8e4_4136_bcdc_ca13c2d78c75.png)
 
 Then re-compile the source code of the./build. sh, which will take effect permanently.

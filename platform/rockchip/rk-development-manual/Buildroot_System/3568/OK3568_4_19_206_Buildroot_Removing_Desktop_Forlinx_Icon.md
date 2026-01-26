@@ -16,12 +16,12 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Removing Desktop Forlinx Icon
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646148792-510d1119-3f69-48f8-8b1d-c9e8b8fedadc.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_Icon/1719646148792_510d1119_3f69_48f8_8b1d_c9e8b8fedadc.png)
 
 /OK3568-linux-source/buildroot/board/rockchip/ok3568/fs-overlay/usr/share/matrix-gui-2.0/menubar.php
 
 Commnet out//echo "<img id = 'logo_img' src= 'images/tex.png'>";
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646149033-0c3d31fc-d9ff-4f0b-840a-ceec12198db8.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_Icon/1719646149033_0c3d31fc_d9ff_4f0b_840a_ceec12198db8.png)
 
 Then re-compile the source code of the./build. sh, which will take effect permanently.
