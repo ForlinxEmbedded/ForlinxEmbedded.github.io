@@ -23,9 +23,9 @@ Example (Python):
 
 For example, if you have configured and compiled python3, add the configuration python-aiocoap under the external python modules again, and then recompile the file system, the changes will not take effect.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1745563843491-5f5a7cdf-b701-40d0-8b00-e7fc640eaea8.png)
+![Image](./images/OK3568_4_19_206_Non_effective_Configuration_Packages/1745563843491_5f5a7cdf_b701_40d0_8b00_e7fc640eaea8.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1745564166555-51f5cf40-89a9-445f-a103-033e7e0362d0.png)
+![Image](./images/OK3568_4_19_206_Non_effective_Configuration_Packages/1745564166555_51f5cf40_89a9_445f_a103_033e7e0362d0.png)
 
 **Solution:**
 
@@ -66,7 +66,7 @@ gzip -d -c /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/dl/lzip-1.19.ta
 
 Manually unzip the package to the root directory of the development board to take effect or recompile the file system to package the changes into the image.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/46863139/1745565266287-f8e2017c-2a25-4908-b5f7-b5643cdb9991.png)
+![Image](./images/OK3568_4_19_206_Non_effective_Configuration_Packages/1745565266287_f8e2017c_2a25_4908_b5f7_b5643cdb9991.png)
 
 2\. Delete the package directly and recompile (recommended)
 

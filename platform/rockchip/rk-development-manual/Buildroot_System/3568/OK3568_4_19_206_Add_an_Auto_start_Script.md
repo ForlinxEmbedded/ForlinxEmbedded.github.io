@@ -38,4 +38,4 @@ Execution Effect:
 
 If the script displays the information shown in the red box, it indicates a successful connection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646627292-f4cf12e4-c387-47bb-93e9-864d8120b118.png)
+![Image](./images/OK3568_4_19_206_Add_an_Auto_start_Script/1719646627292_f4cf12e4_c387_47bb_93e9_864d8120b118.png)
