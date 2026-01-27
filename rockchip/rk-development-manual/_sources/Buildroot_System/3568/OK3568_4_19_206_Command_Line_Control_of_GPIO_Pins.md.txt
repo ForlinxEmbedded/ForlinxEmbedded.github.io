@@ -1,4 +1,4 @@
-# OK3568 4.19.206 Command Line Control of GPIO Pins
+# OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
