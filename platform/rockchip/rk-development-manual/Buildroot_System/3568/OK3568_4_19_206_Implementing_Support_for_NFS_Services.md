@@ -26,7 +26,7 @@ Open the file /OK3568-linux-source/buildroot/configs/OK3568\_defconfig, and add
 
 <font style="color:#000000;">BR2\_PACKAGE\_NFS\_UTILS\_RPC\_NFSD=y BR2\_PACKAGE\_NFS\_UTILS\_RPC\_RQUOTAD=y</font>
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646560973-5dc78252-004f-4c54-ab4d-655a7fbeafe6.png)
+![Image](./images/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1719646560973_5dc78252_004f_4c54_ab4d_655a7fbeafe6.png)
 
 Then compile according to the./build. sh buildroot shown above.
 
@@ -34,10 +34,10 @@ When compiling, choose whether to overwrite the original config file, do not ent
 
 Results:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646561206-0199043d-3077-4f9b-95a5-98f7b36f38ba.png)
+![Image](./images/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1719646561206_0199043d_3077_4f9b_95a5_98f7b36f38ba.png)
 
 And then the generated rootfs. IMG is separately programmed into the development board.
 
 Type cd sbin in the development board and then ls to view it. As shown in the following figure, when you see mount.nfs, it indicates that the NFS service has been successfully started.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45534390/1732070183020-a4714234-fab6-4500-b9a6-349dbe71eb1a.png)
+![Image](./images/OK3568_4_19_206_Implementing_Support_for_NFS_Services/1732070183020_a4714234_fab6_4500_b9a6_349dbe71eb1a.png)
