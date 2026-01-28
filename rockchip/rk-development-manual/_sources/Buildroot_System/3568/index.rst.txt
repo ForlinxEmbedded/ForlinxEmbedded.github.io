@@ -45,6 +45,8 @@
    OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_Icon
    OK3568_4_19_206_Buildroot_Delayline_Parameter_Scanning_and_Modification
    OK3568_4_19_206_Implementing_Support_for_NFS_Services
+   OK3568_4_19_206_Buildroot_Adding_HP_Printer
+   OK3568_4_19_206_Implementing_Logo_Animation_Effects
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
