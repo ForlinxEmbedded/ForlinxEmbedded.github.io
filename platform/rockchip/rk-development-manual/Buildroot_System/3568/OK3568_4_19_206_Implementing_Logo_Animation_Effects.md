@@ -38,23 +38,23 @@ Copy the generated PPM file to the directory OK3568-linux-source/kernel/drivers/
 
 Rename it to end with "\_clut224.ppm".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646689807-dbeb0b99-87f7-4e06-9c69-da9ff4de6e7e.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646689807_dbeb0b99_87f7_4e06_9c69_da9ff4de6e7e.png)
 
 Modify Makefile.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646690063-31651eed-4a11-4b95-82fb-35d101e28b94.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690063_31651eed_4a11_4b95_82fb_35d101e28b94.png)
 
 Modify logo.c.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646690353-186ed452-c48f-45cc-b951-d392145508c0.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690353_186ed452_c48f_45cc_b951_d392145508c0.png)
 
 Modify OK3568-linux-source/kernel/include/linux/linux\_logo.h.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646690620-509927be-67ed-42ce-88ff-d47084a858c7.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690620_509927be_67ed_42ce_88ff_d47084a858c7.png)
 
 Modify OK3568-linux-source/arch/arm64/configs/OK3568-C-linux\_defconfig to enable the kernel logo.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646690837-fdea6a2f-42ac-4598-9f0f-b7fc4b31091c.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646690837_fdea6a2f_42ac_4598_9f0f_b7fc4b31091c.png)
 
 diff --git a/arch/arm64/configs/OK3568-C-linux\_defconfig b/arch/arm64/configs/OK3568-C-linux\_defconfig
 
@@ -162,7 +162,7 @@ OK3568-linux-source/kernel/drivers/video/fbdev/core/fbmem.c
 
 Adjust logo position and continuous display
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646691041-b1ec253e-4571-410c-a55e-b269007c994b.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691041_b1ec253e_4571_410c_a55e_b269007c994b.png)
 
 diff --git a/drivers/video/fbdev/core/fbcon.c b/drivers/video/fbdev/core/fbcon.c
 
@@ -235,7 +235,7 @@ static int fbcon\_switch(struct vc\_data \*vc)
     
                               vc->vc_size_row * (vc->vc_bottom -
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646691233-d2dc9c41-0ba3-4221-aa03-6af64936d8df.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691233_d2dc9c41_0ba3_4221_aa03_6af64936d8df.png)
 
 diff --git a/drivers/video/fbdev/core/fbmem.c b/drivers/video/fbdev/core/fbmem.c
 
@@ -319,7 +319,7 @@ static void \*fb\_seq\_start(struct seq\_file \*m, loff\_t \*pos)
 
 Modify Ok3568-linux-source/kernel/drivers/video/fbdev/core/bitblit.c and remove the cursor
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646691442-1f4a1b44-48bf-44f6-a5e3-a9f8f43b00ae.png)
+![Image](./images/OK3568_4_19_206_Implementing_Logo_Animation_Effects/1719646691442_1f4a1b44_48bf_44f6_a5e3_a9f8f43b00ae.png)
 
 iff --git a/drivers/video/fbdev/core/bitblit.c b/drivers/video/fbdev/core/bitblit.c
 
