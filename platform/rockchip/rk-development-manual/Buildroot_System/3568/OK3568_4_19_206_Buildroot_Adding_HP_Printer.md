@@ -224,13 +224,13 @@ forlinx@ubuntu:~$ hp-plugin
 //Install the hpplugin plug-in
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1723002658150-3151c1ca-8725-4b3c-8a19-169b30119577.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002658150_3151c1ca_8725_4b3c_8a19_169b30119577.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1723002728296-280004d8-8780-467c-9dc6-1738993c0c06.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002728296_280004d8_8780_467c_9dc6_1738993c0c06.png)
 
 Then continue until the installation is complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1723002776664-996cfd94-309b-44ae-a341-e6bf76206c45.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_HP_Printer/1723002776664_996cfd94_309b_44ae_a341_e6bf76206c45.png)
 
 ```plain
 forlinx@ubuntu:~$ hp-setup 
