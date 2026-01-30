@@ -24,7 +24,7 @@ Modify Configuration File: buildroot/package/Config.in
 
 Add pyhon-pip/Config.in
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801896310-9d681580-8ab7-4f7e-8d33-d85260ce4476.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_13%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718801896310_9d681580_8ab7_4f7e_8d33_d85260ce4476.png)
 
 Unzip the python-pip archive of the attachment in the buildroot/package directory
 
@@ -34,15 +34,15 @@ Modify the defconfig file used by buildroot
 
 Execute make menuconfig in the buildroot/output/OK3568 directory to select python3 and python-pip
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801917602-f974ac74-f69e-4c4c-9d77-4a1b6dfeb61e.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_19%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718801917602_f974ac74_f69e_4c4c_9d77_4a1b6dfeb61e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801931211-8aadbae1-b2dc-4143-b004-25bd57dc57c3.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_13%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718801931211_8aadbae1_b2dc_4143_b004_25bd57dc57c3.png)
 
 After modification, save the modified.config file to buildroot/configs/OK3568 \_ defconfig 
 
 After saving, you can compile the whole package. When compiling, you can see that the download, compilation and installation of pip related packages are successful.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801945283-1b2f492c-5d86-475e-b2cc-20e660d2c171.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_19%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718801945283_1b2f492c_5d86_475e_b2cc_20e660d2c171.png)
 
 Flash the compiled file system to the development board to use the pip command.
 
@@ -50,7 +50,7 @@ Potential Compilation Errors
 
 Error During Compilation:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801963536-42a24321-8ed5-4a80-b8af-418870a4b1d5.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_16%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp%2Fresize%2Cw_570%2Climit_0)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718801963536_42a24321_8ed5_4a80_b8af_418870a4b1d5.png)
 
 Solution:   
 Solution: Re-link the symbolic link for OK3568-linux-source/buildroot/output/OK3568/host/bin/python to point to python3.
@@ -63,11 +63,11 @@ ln -s python3 python
 
 After re-establishing the link, recompile. After successful linking, the result of ls -l python should be as shown.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801989420-f97195fd-7409-4f66-9417-c66638a51853.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_22%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718801989420_f97195fd_7409_4f66_9417_c66638a51853.png)
 
 SSL Error when running pip install on the board after flashing:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718802005736-e3095524-12a8-4060-81e1-0bf7f86f4203.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_26%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp%2Fresize%2Cw_928%2Climit_0)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718802005736_e3095524_12a8_4060_81e1_0bf7f86f4203.png)
 
 Solution:   
 Delete the Python-related files in the OK3568-linux-source/buildroot/output/OK3568/build/ directory and recompile. Installing pip depends on SSL. If a full compilation was previously completed during the first issue, it was done using python2 for SSL compilation.
@@ -79,7 +79,7 @@ rm buildroot/output/OK3568/build/python-* -rf
 
 Once the compilation is complete, flash the new build to the board and verify its functionality. You can then proceed to test by installing opencv-python.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718802052811-d0d9a5ff-53dd-4948-b524-2d0b8f6816e3.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_24%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+![Image](./images/OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package/1718802052811_d0d9a5ff_53dd_4948_b524_2d0b8f6816e3.png)
 
 If you encounter an error about the pip package download failing, place the specified package files into the buildroot/dl/ directory.
 
