@@ -47,6 +47,11 @@
    OK3568_4_19_206_Implementing_Support_for_NFS_Services
    OK3568_4_19_206_Buildroot_Adding_HP_Printer
    OK3568_4_19_206_Implementing_Logo_Animation_Effects
+   OK3568_4_19_206_Adding_mysql8_0_32
+   OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H
+   OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package
+   OK3568_4_19_206_Buildroot_Adding_User_Programs
+   OK3568_4_19_206_Buildroot_Webcam_Stream_Pull_then_Push_to_Virtual Machine
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
