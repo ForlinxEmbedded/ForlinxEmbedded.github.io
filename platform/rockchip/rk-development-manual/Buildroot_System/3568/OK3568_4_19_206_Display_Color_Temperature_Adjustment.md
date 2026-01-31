@@ -18,7 +18,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 Modify the default values in the driver file kernel/drivers/gpu/drm/rockchip/rockchip\_drm\_drv.c:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646695507-6c2a36dd-3fa4-4b60-aa30-04ad58eb3a15.png)
+![Image](./images/OK3568_4_19_206_Display_Color_Temperature_Adjustment/1719646695507_6c2a36dd_3fa4_4b60_aa30_04ad58eb3a15.png)
 
 hue corresponds to color tone
 
@@ -34,7 +34,7 @@ You can use the modetest command in the terminal to test appropriate values:
 
 For example, if an LVDS display is connected, its ID may be 152.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646695682-fa62a025-f659-4dd1-ae03-386b36a3d26e.png)
+![Image](./images/OK3568_4_19_206_Display_Color_Temperature_Adjustment/1719646695682_fa62a025_f659_4dd1_ae03_386b36a3d26e.png)
 
 2. Adjust parameters via command
 

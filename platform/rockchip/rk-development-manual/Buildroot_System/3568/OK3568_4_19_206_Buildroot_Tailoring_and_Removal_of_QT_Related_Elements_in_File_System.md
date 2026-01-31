@@ -20,11 +20,11 @@ forlinx@DESKTOP-ARR08M4:~/3568.4.19/OK3568-linux-source/buildroot/configs$ vi OK
 
 Delete the following content.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723184381919-922f8abf-08c4-43ad-8029-9b162fdc5ee2.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Tailoring_and_Removal_of_QT_Related_Elements_in_File_System/1723184381919_922f8abf_08c4_43ad_8029_9b162fdc5ee2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723184392730-6fb0fbe5-37bf-478c-9f0c-024959005508.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Tailoring_and_Removal_of_QT_Related_Elements_in_File_System/1723184392730_6fb0fbe5_37bf_478c_9f0c_024959005508.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1723184403598-d8dd4fa9-4264-4ca9-90ff-822fc7a0354b.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Tailoring_and_Removal_of_QT_Related_Elements_in_File_System/1723184403598_d8dd4fa9_4264_4ca9_90ff_822fc7a0354b.png)
 
 2\. Delete the stamp file, otherwise modifications to OK3568\_defconfig will not take effect.
 
