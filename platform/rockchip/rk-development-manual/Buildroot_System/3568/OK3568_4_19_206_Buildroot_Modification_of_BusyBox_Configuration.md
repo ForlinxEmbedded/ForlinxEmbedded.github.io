@@ -46,11 +46,11 @@ make busybox-menuconfig
 
 In the graphical interface, locate the two marked options and enable them.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722501507457-da40b882-2d07-43b1-a270-f774b9046711.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration/1722501507457_da40b882_2d07_43b1_a270_f774b9046711.png)
 
 Press Esc to exit and select Yes to save the configuration.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722501603729-f5182bb8-3947-45e0-a590-3423f86d701a.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration/1722501603729_f5182bb8_3947_45e0_a590_3423f86d701a.png)
 
 Regenerate the file system.
 
