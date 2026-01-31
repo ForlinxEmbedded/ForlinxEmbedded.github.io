@@ -54,6 +54,8 @@
    OK3568_4_19_206_Buildroot_Webcam_Stream_Pull_then_Push_to_Virtual Machine
    OK3568_4_19_206_Buildroot_Tailoring_and_Removal_of_QT_Related_Elements_in_File_System
    OK3568_4_19_206_Display_Color_Temperature_Adjustment
+   OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration
+   OK3568_4_19_206_Modifying_the_EMMC_Partition_Size
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
