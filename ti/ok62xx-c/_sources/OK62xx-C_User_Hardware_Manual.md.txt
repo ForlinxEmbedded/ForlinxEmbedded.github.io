@@ -1,4 +1,4 @@
-# User’s Hardware Manual\_V1.2
+# User’s Hardware Manual\_V2.2
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -22,7 +22,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 | 20/01/2024 |        V1.5         |                     V1.2                      |                          V1.2                           | 1\. Completing the description of reset signal;  <br/>2\. Correcting the description of pin number;  <br/>3\. Adding the information of AM6232 and AM6231 board. |
 | 18/03/2023 |        V1.6         |                     V1.2                      |                          V1.2                           | Correcting the errors in the manual.                         |
 | 27/08/2024 |        V1.7         |                     V1.2                      |                          V1.2                           | 1\. Updating the dimension and glitch tolerance information of the SoM;  <br/>2\. Update the comment information of the Boot configuration;  <br/>3\. Correcting the DEBUG UART parameter of the carrier board resource. |
-
+|28/01/2026|V1.8| V1.2 | V2.2 |The carrier board is upgraded to V2.2, and the circuit function description of the serial port and audio part is updated.|
 ## 1\. Introduction to AM62X
 
 The AM62x is an extension of the Sitara™ industrial/automotive-grade heterogeneous Arm® processor family, featuring embedded 3D graphics acceleration, dual display interfaces, and a wide range of peripheral and networking options. The AM62x is built for a wide range of industrial and automotive applications. It includes up to four Arm® Cortex®-A53 cores with a 64-bit architecture, a single-core Arm® Cortex®-R5F device manager subsystem, an IMG AXE1 - 16 3D graphics module, a dual-core PRU module, and a Cortex®-M4F MCU module. The Cortex - A53x provides the powerful computing elements required for Linux applications. Linux and real - time (RT) Linux are provided through TI’s Processor SDK Linux, which is updated annually to the latest long - term support (LTS) Linux kernel, bootloader, and Yocto file system.
@@ -1454,7 +1454,7 @@ A-B-C+DEF:G
 |  \+   |           Segment Identification            |  \+   | The configuration parameter section follows this identifier. |
 |   D   |                    Type                     |   M   | Carrier board(Note: carrier board identification M, not filled by default) |
 |   E   |            Operating Temperature            |   I   | -40 to 85℃   industrial  level                               |
-|   F   |                 PCB Version                 |  12   | V1.2                                                         |
+|   F   |                 PCB Version                 |  12   | V2.2                                                         |
 |   :   | Internal Identification of the Manufacturer |  ：   | This is the internal identification of the manufacturer<br />and has no impact on the use. |
 |   G   |              Connector origin               |   1   | Imported connector                                           |
 
@@ -1473,7 +1473,7 @@ A-B-C+DEF:G
 |              I2C              |      2       | MCU \_ I2C0 and WKUP \_ I2C0 are led out through a 2.54 mm pitch header |
 |             GPMC              |      1       | GPMC \_ AD0 ~ AD15 16-bit data signals and corresponding control<br />signals are led out from the carrier board through the 2.54 mm pitch pin header. |
 |            CAN-FD             |      1       | Electrical quarantine supporting CAN-FD, speed up to 5Mbps   |
-|             Audio             |      1       | Supports 1 x headphone output and 1 x MIC input              |
+|             Audio             |      1       | Supports 1 x headphone output, 2 x speaker output and 1 x MIC input. |
 |            TF-CARD            |      1       | Supports 1 x TF for UHS - I TF cards, up to 104MB/s.         |
 |             4G/5G             |      1       | You can choose either the 4G or 5G function.<br />The 4G function supports 4G modules using the M.2 Key B socket,<br />and the Quectel EM05 is supported by default.<br />The 5G function supports 5G modules using the M.2 Key B socket,<br />and the Quectel RM500Q is supported by default. A MicroSIM card slot is used for the SIM card. |
 |             WiFi              |      1       | Default on-board AW-CM358M; <br />IEEE 802.11 a/B/g/n/ac dual-band WIFI up to 433.3M bps; <br />Bluetooth 5 up to 3Mbps |
@@ -1610,7 +1610,9 @@ The following table shows the correspondence between the startup modes of the So
 
 #### 3.5.4 Debugging Serial Port
 
-The carrier board uses U9 to convert the SOC UART0 and WKUP UART0 of the CPU into USB signals and connect them to the P6 Type - C interface for  the convenience in debugging. To prevent the UART signals of U9 from reverse - injecting current into the SoM when the SoM is not started, which may affect the SoM’s startup or even damage it, the carrier board uses U7 to buffer the UART signals.
+The debugging serial port uses a TYPE-C interface. The XR21V1414 chip integrates three serial ports into one USB bus, enabling simultaneous debugging of three cores.  
+
+ The debug signals from the SoM pass through a buffer chip and a conversion chip before reaching the TYPE-C interface. This design prevents leakage current to the SoM or carrier board when plugging in the debug cable while the carrier board is powered off.
 
 ![Image](./images/OK62xx-C_User_Hardware_Manual/1721209269195_492d635d_a746_46f5_b99a_c8c24676a00b.png)
 
@@ -1742,11 +1744,27 @@ The carrier board is designed with a CAM358 WIFI \& BT module, which can realize
 
 #### 3.5.14 Audio Interface
 
-The ES8388 Audio Codec is integrated on the carrier board and supports headphone output and MIC input.
+The development board features one HP/MIC port and two SPK ports.
+
+HP/MIC Port: A 4-pole headphone jack supports both playback and recording functions. It also features plug detection, which automatically switches audio output from the speaker (SPK) channels to the headphone when a headphone is plugged in.
+
+SPK Ports: Two speaker ports are implemented via 2.54mm-pitch white terminal blocks.
+
+The on-board audio codec NAU88C22 integrates a Class-D amplifier capable of driving two 8Ω speakers with a maximum output power of 1W.
+
+ For applications requiring higher external amplifier power, note that:
+
+The audio signal must be sourced from the headphone socket, not the speaker terminals.
 
 ![Image](./images/OK62xx-C_User_Hardware_Manual/1721274310892_21f7883a_a53d_4993_9f12_3a49ace048ee.png)
 
-**Note: During PCB Layout, the return areas of analog and digital signals need to be separated to prevent crosstalk.**
+**Note:** 
+
+1. **In PCB layout, the return current paths for analog and digital signals must be separated to prevent crosstalk;**
+
+2. **The speaker is powered by a Class D amplifier, not a traditional analog amplifier;**
+
+3. **Each speaker must be connected to its own dedicated socket. Do not share speaker wires between sockets, and do not connect the speaker signal lines to the ground plane.**
 
 #### 3.5.15 RTC
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User’s Hardware Manual_V1.2 &mdash; Forlinx Embedded AM62xx Documentation  documentation</title>
+  <title>User’s Hardware Manual_V2.2 &mdash; Forlinx Embedded AM62xx Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -64,7 +64,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V1.2</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V2.2</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#introduction-to-am62x">1. Introduction to AM62X</a></li>
@@ -175,7 +175,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">User’s Hardware Manual_V1.2</li>
+      <li class="breadcrumb-item active">User’s Hardware Manual_V2.2</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -184,8 +184,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="users-hardware-manual-v1-2">
-<h1>User’s Hardware Manual_V1.2<a class="headerlink" href="#users-hardware-manual-v1-2" title="Link to this heading"></a></h1>
+  <section id="users-hardware-manual-v2-2">
+<h1>User’s Hardware Manual_V2.2<a class="headerlink" href="#users-hardware-manual-v2-2" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -252,6 +252,12 @@
 <td class="text-center"><p>V1.2</p></td>
 <td class="text-center"><p>V1.2</p></td>
 <td><p>1. Updating the dimension and glitch tolerance information of the SoM;  <br/>2. Update the comment information of the Boot configuration;  <br/>3. Correcting the DEBUG UART parameter of the carrier board resource.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>28/01/2026</p></td>
+<td class="text-center"><p>V1.8</p></td>
+<td class="text-center"><p>V1.2</p></td>
+<td class="text-center"><p>V2.2</p></td>
+<td><p>The carrier board is upgraded to V2.2, and the circuit function description of the serial port and audio part is updated.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7406,7 +7412,7 @@
 <tr class="row-even"><td class="text-center"><p>F</p></td>
 <td class="text-center"><p>PCB Version</p></td>
 <td class="text-center"><p>12</p></td>
-<td><p>V1.2</p></td>
+<td><p>V2.2</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>:</p></td>
 <td class="text-center"><p>Internal Identification of the Manufacturer</p></td>
@@ -7477,7 +7483,7 @@
 </tr>
 <tr class="row-odd"><td class="text-center"><p>Audio</p></td>
 <td class="text-center"><p>1</p></td>
-<td><p>Supports 1 x headphone output and 1 x MIC input</p></td>
+<td><p>Supports 1 x headphone output, 2 x speaker output and 1 x MIC input.</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>TF-CARD</p></td>
 <td class="text-center"><p>1</p></td>
@@ -7873,7 +7879,8 @@ The following table shows the Primary Boot Mode Selection:
 </section>
 <section id="debugging-serial-port">
 <h4>3.5.4 Debugging Serial Port<a class="headerlink" href="#debugging-serial-port" title="Link to this heading"></a></h4>
-<p>The carrier board uses U9 to convert the SOC UART0 and WKUP UART0 of the CPU into USB signals and connect them to the P6 Type - C interface for  the convenience in debugging. To prevent the UART signals of U9 from reverse - injecting current into the SoM when the SoM is not started, which may affect the SoM’s startup or even damage it, the carrier board uses U7 to buffer the UART signals.</p>
+<p>The debugging serial port uses a TYPE-C interface. The XR21V1414 chip integrates three serial ports into one USB bus, enabling simultaneous debugging of three cores.</p>
+<p>The debug signals from the SoM pass through a buffer chip and a conversion chip before reaching the TYPE-C interface. This design prevents leakage current to the SoM or carrier board when plugging in the debug cable while the carrier board is powered off.</p>
 <p><img alt="Image" src="_images/1721209269195_492d635d_a746_46f5_b99a_c8c24676a00b.png" /></p>
 <p><strong>Note:</strong></p>
 <ul class="simple">
@@ -7971,9 +7978,19 @@ The following table shows the Primary Boot Mode Selection:
 </section>
 <section id="audio-interface">
 <h4>3.5.14 Audio Interface<a class="headerlink" href="#audio-interface" title="Link to this heading"></a></h4>
-<p>The ES8388 Audio Codec is integrated on the carrier board and supports headphone output and MIC input.</p>
+<p>The development board features one HP/MIC port and two SPK ports.</p>
+<p>HP/MIC Port: A 4-pole headphone jack supports both playback and recording functions. It also features plug detection, which automatically switches audio output from the speaker (SPK) channels to the headphone when a headphone is plugged in.</p>
+<p>SPK Ports: Two speaker ports are implemented via 2.54mm-pitch white terminal blocks.</p>
+<p>The on-board audio codec NAU88C22 integrates a Class-D amplifier capable of driving two 8Ω speakers with a maximum output power of 1W.</p>
+<p>For applications requiring higher external amplifier power, note that:</p>
+<p>The audio signal must be sourced from the headphone socket, not the speaker terminals.</p>
 <p><img alt="Image" src="_images/1721274310892_21f7883a_a53d_4993_9f12_3a49ace048ee.png" /></p>
-<p><strong>Note: During PCB Layout, the return areas of analog and digital signals need to be separated to prevent crosstalk.</strong></p>
+<p><strong>Note:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>In PCB layout, the return current paths for analog and digital signals must be separated to prevent crosstalk;</strong></p></li>
+<li><p><strong>The speaker is powered by a Class D amplifier, not a traditional analog amplifier;</strong></p></li>
+<li><p><strong>Each speaker must be connected to its own dedicated socket. Do not share speaker wires between sockets, and do not connect the speaker signal lines to the ground plane.</strong></p></li>
+</ol>
 </section>
 <section id="rtc">
 <h4>3.5.15 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
