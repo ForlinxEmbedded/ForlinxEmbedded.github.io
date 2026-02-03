@@ -23,7 +23,7 @@ This manual is mainly applicable to the Linux5.10.160 operating system on the Fo
 | <font style="color:rgb(38, 38, 38);">15/05/2024</font><font style="color:rgb(38, 38, 38);">   </font> | V2.0                                              | <font style="color:rgb(38, 38, 38);">1.</font>  Adding FET3568-C2, OK3568-C2C configuration;<br />2. Correcting the errors in the manual. |
 | 04/07/2025                                                   | <font style="color:rgb(38, 38, 38);"> V2.1</font> | Adding Changxin memory description and removing sleep&wake-up function description in the related section. |
 | <font style="color:rgb(38, 38, 38);">15/10/2025</font>       | V2.2                                              | Adding notes in the WIFI test chapter and the quick startup chapter<br /> (The antenna must be connected for startup, otherwise the startup may be affected). |
-
+| 17/01/2026                                                   | V2.3                                              | Adding OV13855 camera support and cancelling OV13850 support (3.1.4 Camera Test and 5.4 Camera Test section). |
 ## <font style="color:#000000;">Overview</font>
 
 OK3568-C/C2C development board currently provides software documentation for the Linux operating system. This document is the Linux software manual, focusing on relevant functionality testing and explanations for the Linux5.10.160 kernel. Please choose the documentation that matches the image installed on the development board for the operations. You can access the documentation and source code of the software and hardware through the web link provided by Forlinx. Please ask your sales representative for the download link.
@@ -364,7 +364,7 @@ Application Interfaces
 
 #### 3.1.4 Camera Test
 
-Click the desktop icon to open the video player qcamera. The test program supports USB Camera and OV13850. Plug in a USB Camera, using the RMONCAM 720P as an example.
+Click the desktop icon to open the video player qcamera. The test program supports USB Camera and OV13855. Plug in a USB Camera, using the RMONCAM 720P as an example.
 
 **Note: The app needs to be connected to the camera before opening.**
 
@@ -392,7 +392,7 @@ The generated file is located in the/userdata path:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
 
-For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:
+For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
 
@@ -403,6 +403,10 @@ Self Path, refers to an output node of Rockchip ISP, which can only output up to
 Statistics for 3A statistics.
 
 Input-params for 3A parameter setting.
+
+The 13850 camera is replaced by the 13855; the 13850 is no longer supported.  
+The current 13855 camera image (as shown) exhibits a bright center and darker edges, which will be fixed in a future ISP file update.  
+Alternatively, click the second `rkisp_mainpath` button in the QT interface to activate the 13855 camera.
 
 #### 3.1.5 OpenGL Test
 
@@ -2312,9 +2316,9 @@ Freeing pipeline ...
 //After the execution, check the pic. jpg file generated under the root directory
 ```
 
-#### 5.4.2 OV13850 Test
+#### 5.4.2 OV13855 Test
 
-For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:
+For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:
 
 ```plain
 root@OK3568-buildroot:/# grep '' /sys/class/video4linux/video*/name
@@ -2405,7 +2409,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-**5.4.2.3 Camera to Take Pictures**
+##### **5.4.2.3 Camera to Take Pictures**
 
 ```plain
 root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
@@ -2434,10 +2438,10 @@ etc             lost+found  pic.jpg  sdcard         userdata
 home            media       proc     sys            usr
 ```
 
-**5.4.2.4 Recording H264 Format Video**
+##### **5.4.2.4 Recording H264 Format Video**
 
 ```plain
-root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13850_h264.mp4 t. ! queue ! waylandsink
+gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
 //Encode H264 during camera preview
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info
@@ -2467,7 +2471,7 @@ etc             lost+found  pic.jpg  sdcard         userdata
 **5.4.2.5 Playing H264 Format Video**
 
 ```plain
-root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=13850_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
+gst-launch-1.0 filesrc location=13855_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
 //Play the H264 video
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info

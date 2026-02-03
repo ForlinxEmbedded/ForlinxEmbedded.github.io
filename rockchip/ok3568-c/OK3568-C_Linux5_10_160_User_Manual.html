@@ -183,7 +183,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">5.4 Camera Test</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#uvc-camera-test">5.4.1 UVC Camera Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ov13850-test">5.4.2 OV13850 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ov13855-test">5.4.2 OV13855 Test</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#waylandsink-point-test">5.5 Waylandsink Point Test</a></li>
@@ -284,6 +284,10 @@
 <tr class="row-even"><td><p><font style="color:rgb(38, 38, 38);">15/10/2025</font></p></td>
 <td><p>V2.2</p></td>
 <td><p>Adding notes in the WIFI test chapter and the quick startup chapter<br /> (The antenna must be connected for startup, otherwise the startup may be affected).</p></td>
+</tr>
+<tr class="row-odd"><td><p>17/01/2026</p></td>
+<td><p>V2.3</p></td>
+<td><p>Adding OV13855 camera support and cancelling OV13850 support (3.1.4 Camera Test and 5.4 Camera Test section).</p></td>
 </tr>
 </tbody>
 </table>
@@ -707,7 +711,7 @@ Select  display
 </section>
 <section id="camera-test">
 <h4>3.1.4 Camera Test<a class="headerlink" href="#camera-test" title="Link to this heading"></a></h4>
-<p>Click the desktop icon to open the video player qcamera. The test program supports USB Camera and OV13850. Plug in a USB Camera, using the RMONCAM 720P as an example.</p>
+<p>Click the desktop icon to open the video player qcamera. The test program supports USB Camera and OV13855. Plug in a USB Camera, using the RMONCAM 720P as an example.</p>
 <p><strong>Note: The app needs to be connected to the camera before opening.</strong></p>
 <p><img alt="Image" src="_images/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png" /></p>
 <p>Application Icons</p>
@@ -721,12 +725,15 @@ Select  display
 <p><img alt="Image" src="_images/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png" /></p>
 <p>The generated file is located in the/userdata path:</p>
 <p><img alt="Image" src="_images/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png" /></p>
-<p>For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:</p>
+<p>For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:</p>
 <p><img alt="Image" src="_images/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png" /></p>
 <p>Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.</p>
 <p>Self Path, refers to an output node of Rockchip ISP, which can only output up to 1080p resolution and is usually used for preview.</p>
 <p>Statistics for 3A statistics.</p>
 <p>Input-params for 3A parameter setting.</p>
+<p>The 13850 camera is replaced by the 13855; the 13850 is no longer supported.<br />
+The current 13855 camera image (as shown) exhibits a bright center and darker edges, which will be fixed in a future ISP file update.<br />
+Alternatively, click the second <code class="docutils literal notranslate"><span class="pre">rkisp_mainpath</span></code> button in the QT interface to activate the 13855 camera.</p>
 </section>
 <section id="opengl-test">
 <h4>3.1.5 OpenGL Test<a class="headerlink" href="#opengl-test" title="Link to this heading"></a></h4>
@@ -2436,9 +2443,9 @@ Freeing pipeline ...
 </div>
 </section>
 </section>
-<section id="ov13850-test">
-<h4>5.4.2 OV13850 Test<a class="headerlink" href="#ov13850-test" title="Link to this heading"></a></h4>
-<p>For raw sensors such as OV13850, each sensor corresponds to 5 device nodes:</p>
+<section id="ov13855-test">
+<h4>5.4.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h4>
+<p>For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# grep &#39;&#39; /sys/class/video4linux/video*/name
 /sys/class/video4linux/video0/name:rkisp_mainpath
 /sys/class/video4linux/video1/name:rkisp_selfpath
@@ -2522,7 +2529,9 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 </pre></div>
 </div>
-<p><strong>5.4.2.3 Camera to Take Pictures</strong></p>
+</section>
+<section id="camera-to-take-pictures">
+<h5><strong>5.4.2.3 Camera to Take Pictures</strong><a class="headerlink" href="#camera-to-take-pictures" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
 //Camera to take pictures
 Setting pipeline to PAUSED ...
@@ -2549,8 +2558,10 @@ etc             lost+found  pic.jpg  sdcard         userdata
 home            media       proc     sys            usr
 </pre></div>
 </div>
-<p><strong>5.4.2.4 Recording H264 Format Video</strong></p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13850_h264.mp4 t. ! queue ! waylandsink
+</section>
+<section id="recording-h264-format-video">
+<h5><strong>5.4.2.4 Recording H264 Format Video</strong><a class="headerlink" href="#recording-h264-format-video" title="Link to this heading"></a></h5>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>gst-launch-1.0 v4l2src device=/dev/video0 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
 //Encode H264 during camera preview
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info
@@ -2578,7 +2589,7 @@ etc             lost+found  pic.jpg  sdcard         userdata
 </pre></div>
 </div>
 <p><strong>5.4.2.5 Playing H264 Format Video</strong></p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-launch-1.0 filesrc location=13850_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>gst-launch-1.0 filesrc location=13855_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
 //Play the H264 video
 Setting pipeline to PAUSED ...
 mpi: mpp version: Without VCS info
