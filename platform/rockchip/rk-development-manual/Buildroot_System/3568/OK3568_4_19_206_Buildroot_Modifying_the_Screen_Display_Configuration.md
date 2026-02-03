@@ -18,6 +18,6 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 After booting, edit the file /etc/profile.d/weston.sh.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719646683973-8f1e9ec7-5693-4715-9a40-372338c0ccff.png)
+![Image](./images/OK3568_4_19_206_Buildroot_Modifying_the_Screen_Display_Configuration/1719646683973_8f1e9ec7_5693_4715_9a40_372338c0ccff.png)
 
 In the above image, comment out the environment variable settings to apply the changes.
