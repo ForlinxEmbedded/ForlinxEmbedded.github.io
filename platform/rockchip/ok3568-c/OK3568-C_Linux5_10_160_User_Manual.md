@@ -2193,7 +2193,7 @@ Freeing pipeline ...
 
 ### 5.4 Camera Test
 
-The OK3568 supports the OV13850 MIPI camera as well as the UVC camera. First of all, let's test the UVC camera. Here we use RMONCAM FHD 1080P to test. Insert the USB camera into the development board, and the UVC driver will be installed automatically.
+The OK3568 supports the OV13855 MIPI camera as well as the UVC camera. First of all, let's test the UVC camera. Here we use RMONCAM FHD 1080P to test. Insert the USB camera into the development board, and the UVC driver will be installed automatically.
 
 #### 5.4.1 UVC Camera Test
 
