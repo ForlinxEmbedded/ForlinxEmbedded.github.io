@@ -28,4 +28,4 @@ Written using qwidget, you can try to use the quick below to make a browser, and
 
 The source code of this browser can be compiled as a regular Qt program by following the instructions in the compilation manual.
 
-**Note: Opening the source code in QtCreator may trigger syntax errors due to differences in syntax usage between versions, but this does not affect the actual compilation process.**![](https://cdn.nlark.com/yuque/0/2024/png/45471259/1724375293123-5b336fbd-a4b8-4565-88b2-33f39d175e50.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_24%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fformat%2Cwebp)
+**Note: Opening the source code in QtCreator may trigger syntax errors due to differences in syntax usage between versions, but this does not affect the actual compilation process.**![Image](./images/OK3568_4_19_206_Browser_Porting/1724375293123_5b336fbd_a4b8_4565_88b2_33f39d175e50.png)

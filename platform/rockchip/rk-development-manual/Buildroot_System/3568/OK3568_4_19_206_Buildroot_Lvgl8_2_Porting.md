@@ -147,7 +147,7 @@ Begin by executing the/etc/init. D/S50weston stop command.
 
 The display effect of running the demo is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/40395721/1735200432204-52ed45aa-5cc7-4a83-b516-f988046aa8fd.jpeg)
+![Image](./images/OK3568_4_19_206_Buildroot_Lvgl8_2_Porting/1735200432204_52ed45aa_5cc7_4a83_b516_f988046aa8fd.jpeg)
 
 4\. Attachments
 
