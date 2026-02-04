@@ -61,6 +61,8 @@
    OK3568_4_19_206_Buildroot_Lvgl8_2_Porting
    OK3568_4_19_206_Library_Porting
    OK3568_4_19_206_Browser_Porting
+   OK3568_4_19_206_User_Layer_Logo_Replacement
+   OK3568_4_19_206_Self_Reception_Scheme_in_the_Native_CAN_Driver
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
