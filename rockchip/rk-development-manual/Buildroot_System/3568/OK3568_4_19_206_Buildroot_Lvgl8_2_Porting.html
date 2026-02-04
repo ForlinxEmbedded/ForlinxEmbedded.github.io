@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copyright &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Lvgl8_2_Porting.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/theme-switcher.js?v=099e080c"></script>
+      <script src="../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="OK3568 4.19.206 Library Porting" href="OK3568_4_19_206_Library_Porting.html" />
+    <link rel="prev" title="OK3568 4.19.206 Buildroot Modifying User Name and Password" href="OK3568_4_19_206_Buildroot_Modifying_User_Name_and_Password.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Product_Design_Process/index.html">Product Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Buildroot System</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../3399/index.html">3399</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3506/index.html">3506</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3562/index.html">3562</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3568</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Installing_Bridge_Tool_bridge-utils_in_Buildroot.html">OK3568 4.19.206 Buildroot Installing Bridge Tool (bridge-utils) in Buildroot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Controlling_GPIO_Pins_via_Sysfs_in_C_Language.html">OK3568 4.19.206 Buildroot Controlling GPIO Pins via Sysfs in C Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Debugging_with_GDB_and_GDB_Server.html">OK3568 4.19.206 Buildroot Debugging with GDB and GDB Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_JDK_Support.html">OK3568 4.19.206 Buildroot JDK_Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Not_Effective_After_Menuconfig_Configuration.html">OK3568 4.19.206 Buildroot  Not Effective After Menuconfig Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_PCIe_to_SATA_Function_Modification_Method.html">OK3568 4.19.206 Buildroot PCIe to SATA Function Modification Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_PWM_Multiplexing_Method_and_Test.html">OK3568 4.19.206 Buildroot PWM PWM Multiplexing Method and Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Qt-creator_Remote_Debug.html">OK3568 4.19.206 Buildroot Qt-creator Remote Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_UART8_Multiplexed_as_CAN2.html">OK3568 4.19.206 Buildroot UART8 Multiplexed as CAN2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Multiplexing_UART8_Bluetooth_Serial_Port_as_a_General_Serial_Port.html">OK3568 4.19.206 Buildroot Multiplexing UART8 Bluetooth Serial Port as a General Serial Port</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Disabling_the_Watchdog_in_Uboot.html">OK3568 4.19.206 Buildroot Disabling the Watchdog in Uboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_USB_Host_to_Slave_Switching.html">OK3568 4.19.206 Buildroot USB Host-to-Slave Switching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_USB_to_Ethernet_Adapter_Renaming_Method.html">OK3568 4.19.206 Buildroot USB-to-Ethernet Adapter Renaming Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Weston_Desktop_Reference_Link.html">OK3568 4.19.206 Buildroot  Weston Desktop Reference Link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_WIFI_Renaming_Operation_Method.html">OK3568 4.19.206 Buildroot WIFI Renaming Operation Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Configuring_Static_IP_for_WiFi_and_Enabling_Automatic_Connection_on_Startup.html">OK3568 4.19.206 Buildroot Configuring Static IP for Wi-Fi and Enabling Automatic Connection on Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_WiFi_Auto_Start_Script.html">OK3568 4.19.206 Buildroot  WiFi Auto-Start Script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588_4_19_206_Buildroot_Nginx_Installation.html">OK3588 4.19.206 Buildroot Nginx Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Package_Recompilation.html">OK3568 4.19.206 Buildroot Package Recompilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Memory_View_and_Capacity_Storage.html">OK3568 4.19.206 Memory View and Capacity Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Kernel_Configuration_View.html">OK3568 4.19.206 Buildroot Kernel Configuration View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Issue_of_Incorrect_MAC_Address_Reply_When_PC_Pings_Device.html">OK3568 4.19.206 Buildroot Issue of Incorrect MAC Address Reply When PC Pings Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Fixed_Resolution_Output.html">OK3568 4.19.206 Buildroot Fixed Resolution Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Fixed_USB_to_Network_Port_or_Serial_Port_Name.html">OK3568 4.19.206 Buildroot Fixed USB to Network Port or Serial Port Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Compatibility_Method_for_32_bit_Applications.html">OK3568 4.19.206 Compatibility Method for 32-bit Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Python3_Installation.html">OK3568 4.19.206 Python3 Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions.html">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Package_Configuration_Fails_to_Apply.html">OK3568 4.19.206 Buildroot Package Configuration Fails to Apply</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Auto_start_Applications_on_Boot.html">OK3568 4.19.206 Buildroot Auto-start Applications on Boot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Add_an_Auto_start_Script.html">OK3568 4.19.206 Add an Auto-start Script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Non_effective_Configuration_Packages.html">OK3568 4.19.206 Non-effective Configuration Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Serial_Port_Automatic_Login_Cancellation.html">OK3568 4.19.206 Buildroot Serial Port Automatic Login Cancellation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_App_Launcher_String.html">OK3568 4.19.206 Buildroot Removing Desktop Forlinx App Launcher String</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Removing_Desktop_Forlinx_Icon.html">OK3568 4.19.206 Buildroot Removing Desktop Forlinx Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Delayline_Parameter_Scanning_and_Modification.html">OK3568 4.19.206 Buildroot Delayline Parameter Scanning and Modification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Implementing_Support_for_NFS_Services.html">OK3568 4.19.206 Implementing Support for NFS Services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Adding_HP_Printer.html">OK3568 4.19.206 Buildroot Adding HP Printer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Implementing_Logo_Animation_Effects.html">OK3568 4.19.206 Implementing Logo Animation Effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Adding_mysql8_0_32.html">OK3568 4.19.206 Adding mysql8.0.32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Adding_PCIe_to_NIC_Driver_81111H.html">OK3568 4.19.206 Buildroot Adding PCIe-to-NIC Driver 81111H</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Adding_the_Python3_pip_Installation_Package.html"><strong>OK3568 4.19.206 Buildroot Adding the Python3 - pip Installation Package</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Adding_User_Programs.html">OK3568 4.19.206 Buildroot Adding User Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Webcam_Stream_Pull_then_Push_to_Virtual%20Machine.html">OK3568 4.19.206 Buildroot Webcam Stream: Pull then Push to Virtual Machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Tailoring_and_Removal_of_QT_Related_Elements_in_File_System.html">OK3568 4.19.206 Buildroot Tailoring and Removal of QT-Related Elements in File System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Display_Color_Temperature_Adjustment.html">OK3568 4.19.206 Display Color Temperature Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration.html">OK3568 4.19.206 Buildroot  Modification of BusyBox Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Modifying_the_EMMC_Partition_Size.html">OK3568 4.19.206 Modifying the EMMC Partition Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Modifying_the_Screen_Display_Configuration.html">OK3568 4.19.206 Buildroot Modifying the Screen Display Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Modifying_User_Name_and_Password.html">OK3568 4.19.206 Buildroot Modifying User Name and Password</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Copyright</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lvgl8-2-porting">Lvgl8.2 Porting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Library_Porting.html">OK3568 4.19.206 Library Porting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Browser_Porting.html">OK3568 4.19.206 Browser Porting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3576/index.html">3576</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3588/index.html">3588</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Forlinx_Desktop_System/index.html">Forlinx Desktop System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
+          <li class="breadcrumb-item"><a href="index.html">3568</a></li>
+      <li class="breadcrumb-item active">Copyright</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h1>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h1>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.<br />
+Overview</p>
+<p>This document takes the migration of lvgl8.2 as an example to provide a reference for users to develop and migrate lightweight graphical interfaces.</p>
+</section>
+<section id="revision-history">
+<h1>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>12/26/2024</p></td>
+<td><p>V1.0</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lvgl8-2-porting">
+<h1>Lvgl8.2 Porting<a class="headerlink" href="#lvgl8-2-porting" title="Link to this heading"></a></h1>
+<p>1. Source Code Acquisition Source</p>
+<p>git clone -b release/v8.2 <a class="reference external" href="https://github.com/lvgl/lv_port_linux_frame_buffer.git">https://github.com/lvgl/lv_port_linux_frame_buffer.git</a></p>
+<p>git clone -b release/v8.2 <a class="reference external" href="https://github.com/lvgl/lvgl.git">https://github.com/lvgl/lvgl.git</a></p>
+<p>git clone -b release/v8.2 <a class="reference external" href="https://github.com/lvgl/lv_drivers.git">https://github.com/lvgl/lv_drivers.git</a></p>
+<p>Copy the lvgl and lv _ drivers folders to the lv _ port _ Linux _ frame _ buffer folder.</p>
+<p>2. Compilation Process</p>
+<p>2.1 Modify lv_port_linux_frame_buffer/lv_conf.h file</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* clang-format off */</span>
+<span class="cp">#if 1 </span><span class="cm">/*Set it to &quot;1&quot; to enable content*/</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*Color depth: 1 (1 byte per pixel), 8 (RGB332), 16 (RGB565), 32 (ARGB8888)*/</span>
+<span class="cp">#define LV_COLOR_DEPTH 32</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*1: use custom malloc/free, 0: use the built-in `lv_mem_alloc()` and `lv_mem_free()`*/</span>
+<span class="cp">#define LV_MEM_CUSTOM 1</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*Show some widget. It might be required to increase `LV_MEM_SIZE` */</span>
+<span class="cp">#define LV_USE_DEMO_WIDGETS        1</span>
+</pre></div>
+</div>
+<p>2.2 Modify lv_port_linux_frame_buffer/lv_drv_conf.h file</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* clang-format off */</span>
+<span class="cp">#if 1 </span><span class="cm">/*Set it to &quot;1&quot; to enable the content*/</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef USE_FBDEV</span>
+<span class="cp">#  define USE_FBDEV           1</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#if USE_FBDEV</span>
+<span class="cp">#  define FBDEV_PATH          &quot;/dev/fb0&quot;</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef USE_EVDEV</span>
+<span class="cp">#  define USE_EVDEV           1</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#ifndef USE_BSD_EVDEV</span>
+<span class="cp">#  define USE_BSD_EVDEV       0</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#if USE_EVDEV || USE_BSD_EVDEV</span>
+<span class="cp">#  define EVDEV_NAME   &quot;/dev/input/event1&quot;        </span><span class="cm">/*You can use the &quot;evtest&quot; Linux tool to get the list of devices and test them*/</span>
+<span class="cp">#  define EVDEV_SWAP_AXES         0               </span><span class="cm">/*Swap the x and y axes of the touchscreen*/</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#  define EVDEV_CALIBRATE         1               </span><span class="cm">/*Scale and offset the touchscreen coordinates by using maximum and minimum values for each axis*/</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#  if EVDEV_CALIBRATE</span>
+<span class="cp">#    define EVDEV_HOR_MIN         0               </span><span class="cm">/*to invert axis swap EVDEV_XXX_MIN by EVDEV_XXX_MAX*/</span>
+<span class="cp">#    define EVDEV_HOR_MAX      1024               </span><span class="cm">/*&quot;evtest&quot; Linux tool can help to get the correct calibraion values&gt;*/</span>
+<span class="cp">#    define EVDEV_VER_MIN         0</span>
+<span class="cp">#    define EVDEV_VER_MAX       600</span>
+<span class="cp">#  endif  </span><span class="cm">/*EVDEV_CALIBRATE*/</span>
+<span class="cp">#endif  </span><span class="cm">/*USE_EVDEV*/</span>
+</pre></div>
+</div>
+<p>2.3 Modify lv_port_linux_frame_buffer/main.c file</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define DISP_BUF_SIZE (600 * 1024)</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">disp_drv</span><span class="p">.</span><span class="n">hor_res</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span>
+<span class="n">disp_drv</span><span class="p">.</span><span class="n">ver_res</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">600</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>2.4 Modify lv_port_linux_frame_buffer/Makefile file</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">CC</span><span class="w"> </span><span class="o">?=</span><span class="w"> </span><span class="n">aarch64</span><span class="o">-</span><span class="n">buildroot</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">gcc</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">CFLAGS</span><span class="w"> </span><span class="o">?=</span><span class="w"> </span><span class="o">-</span><span class="n">O3</span><span class="w"> </span><span class="o">-</span><span class="n">g0</span><span class="w"> </span><span class="o">-</span><span class="n">I$</span><span class="p">(</span><span class="n">LVGL_DIR</span><span class="p">)</span><span class="o">/</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="o">-</span><span class="n">Wall</span><span class="w"> </span><span class="o">-</span><span class="n">Wshadow</span><span class="w"> </span><span class="o">-</span><span class="n">Wundef</span><span class="w"> </span><span class="o">-</span><span class="n">Wmissing</span><span class="o">-</span><span class="n">prototypes</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">discarded</span><span class="o">-</span><span class="n">qualifiers</span><span class="w"> </span><span class="o">-</span><span class="n">Wall</span><span class="w"> </span><span class="o">-</span><span class="n">Wextra</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">unused</span><span class="o">-</span><span class="n">function</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">error</span><span class="o">=</span><span class="n">strict</span><span class="o">-</span><span class="n">prototypes</span><span class="w"> </span><span class="o">-</span>
+<span class="n">Wpointer</span><span class="o">-</span><span class="n">arith</span><span class="w"> </span><span class="o">-</span><span class="n">fno</span><span class="o">-</span><span class="n">strict</span><span class="o">-</span><span class="n">aliasing</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">error</span><span class="o">=</span><span class="n">cpp</span><span class="w"> </span><span class="o">-</span><span class="n">Wuninitialized</span><span class="w"> </span><span class="o">-</span><span class="n">Wmaybe</span><span class="o">-</span><span class="n">uninitialized</span>
+<span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">unused</span><span class="o">-</span><span class="n">parameter</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">missing</span><span class="o">-</span><span class="n">field</span><span class="o">-</span><span class="n">initializers</span><span class="w"> </span><span class="o">-</span><span class="n">Wtype</span><span class="o">-</span><span class="n">limits</span><span class="w"> </span><span class="o">-</span><span class="n">Wsizeof</span><span class="o">-</span><span class="n">pointer</span><span class="o">-</span>
+<span class="n">memaccess</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">format</span><span class="o">-</span><span class="n">nonliteral</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">cast</span><span class="o">-</span><span class="n">qual</span><span class="w"> </span><span class="o">-</span><span class="n">Wunreachable</span><span class="o">-</span><span class="n">code</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="k">switch</span><span class="o">-</span><span class="k">default</span><span class="w"> </span><span class="o">-</span>
+<span class="n">Wreturn</span><span class="o">-</span><span class="n">type</span><span class="w"> </span><span class="o">-</span><span class="n">Wmultichar</span><span class="w"> </span><span class="o">-</span><span class="n">Wformat</span><span class="o">-</span><span class="n">security</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">ignored</span><span class="o">-</span><span class="n">qualifiers</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">error</span><span class="o">=</span><span class="n">pedantic</span><span class="w"> </span><span class="o">-</span>
+<span class="n">Wno</span><span class="o">-</span><span class="n">sign</span><span class="o">-</span><span class="n">compare</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">error</span><span class="o">=</span><span class="n">missing</span><span class="o">-</span><span class="n">prototypes</span><span class="w"> </span><span class="o">-</span><span class="n">Wdouble</span><span class="o">-</span><span class="n">promotion</span><span class="w"> </span><span class="o">-</span><span class="n">Wclobbered</span><span class="w"> </span><span class="o">-</span>
+<span class="n">Wdeprecated</span><span class="w"> </span><span class="o">-</span><span class="n">Wempty</span><span class="o">-</span><span class="n">body</span><span class="w"> </span><span class="o">-</span><span class="n">Wtype</span><span class="o">-</span><span class="n">limits</span><span class="w"> </span><span class="o">-</span><span class="n">Wshift</span><span class="o">-</span><span class="n">negative</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">-</span><span class="n">Wstack</span><span class="o">-</span><span class="n">usage</span><span class="o">=</span><span class="mi">2048</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span>
+<span class="n">unused</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">unused</span><span class="o">-</span><span class="n">parameter</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">missing</span><span class="o">-</span><span class="n">field</span><span class="o">-</span><span class="n">initializers</span><span class="w"> </span><span class="o">-</span><span class="n">Wuninitialized</span><span class="w"> </span><span class="o">-</span>
+<span class="n">Wmaybe</span><span class="o">-</span><span class="n">uninitialized</span><span class="w"> </span><span class="o">-</span><span class="n">Wall</span><span class="w"> </span><span class="o">-</span><span class="n">Wextra</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">unused</span><span class="o">-</span><span class="n">parameter</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">missing</span><span class="o">-</span><span class="n">field</span><span class="o">-</span><span class="n">initializers</span>
+<span class="o">-</span><span class="n">Wtype</span><span class="o">-</span><span class="n">limits</span><span class="w"> </span><span class="o">-</span><span class="n">Wsizeof</span><span class="o">-</span><span class="n">pointer</span><span class="o">-</span><span class="n">memaccess</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">format</span><span class="o">-</span><span class="n">nonliteral</span><span class="w"> </span><span class="o">-</span><span class="n">Wpointer</span><span class="o">-</span><span class="n">arith</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span>
+<span class="n">cast</span><span class="o">-</span><span class="n">qual</span><span class="w"> </span><span class="o">-</span><span class="n">Wmissing</span><span class="o">-</span><span class="n">prototypes</span><span class="w"> </span><span class="o">-</span><span class="n">Wunreachable</span><span class="o">-</span><span class="n">code</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="k">switch</span><span class="o">-</span><span class="k">default</span><span class="w"> </span><span class="o">-</span><span class="n">Wreturn</span><span class="o">-</span><span class="n">type</span><span class="w"> </span><span class="o">-</span>
+<span class="n">Wmultichar</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">discarded</span><span class="o">-</span><span class="n">qualifiers</span><span class="w"> </span><span class="o">-</span><span class="n">Wformat</span><span class="o">-</span><span class="n">security</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">ignored</span><span class="o">-</span><span class="n">qualifiers</span><span class="w"> </span><span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">sign</span><span class="o">-</span>
+<span class="n">compare</span>
+</pre></div>
+</div>
+<p>2.5 Specify the cross-compiler to compile the source code</p>
+<p>export CC=home/forlinx/OK3568-linux-source/buildroot/output/OK3568/host/bin/aarch64-buildroot-linux-gnu-gcc</p>
+<p>Execute make-j4 under the lv _ port _ Linux _ frame _ buffer directory to compile the source code.</p>
+<p>Finally, the demo executable file is generated in the lv _ port _ Linux _ frame _ buffer directory.</p>
+<p>3. Test Method</p>
+<p>Copy the demo to the development board, and close the/etc/init. d/weston before running the demo.</p>
+<p>Begin by executing the/etc/init. D/S50weston stop command.</p>
+<p>The display effect of running the demo is as follows:</p>
+<p><img alt="Image" src="../../_images/1735200432204_52ed45aa_5cc7_4a83_b516_f988046aa8fd.jpeg" /></p>
+<p>4. Attachments</p>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2024/zip/40395721/1735199320780-c19cb0ae-adb8-4acd-91c2-6fe559f10cd9.zip">lv_port_linux_frame_buffer.zip</a></p>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
