@@ -57,6 +57,10 @@
    OK3568_4_19_206_Buildroot_Modification_of_BusyBox_Configuration
    OK3568_4_19_206_Modifying_the_EMMC_Partition_Size
    OK3568_4_19_206_Buildroot_Modifying_the_Screen_Display_Configuration
+   OK3568_4_19_206_Buildroot_Modifying_User_Name_and_Password
+   OK3568_4_19_206_Buildroot_Lvgl8_2_Porting
+   OK3568_4_19_206_Library_Porting
+   OK3568_4_19_206_Browser_Porting
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
