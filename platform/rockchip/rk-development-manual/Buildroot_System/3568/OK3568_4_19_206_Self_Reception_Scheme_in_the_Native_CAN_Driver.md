@@ -20,4 +20,4 @@ Modify the kernel/arch/arm64/boot/dts/rockchip/rk3568.dtsi file, comment out the
 
 Note: This scheme may trigger an infinite retransmission mechanism when the extended part of the ID contains zeros (e.g., specific IDs with zero extensions). Use with caution.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719647300832-c18532d5-0b4a-4409-86e6-3ba0ac9348c3.png)
+![Image](./images/OK3568_4_19_206_Self_Reception_Scheme_in_the_Native_CAN_Driver/1719647300832_c18532d5_0b4a_4409_86e6_3ba0ac9348c3.png)
