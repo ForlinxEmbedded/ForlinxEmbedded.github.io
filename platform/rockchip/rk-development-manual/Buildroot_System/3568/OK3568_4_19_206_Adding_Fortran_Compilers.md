@@ -18,7 +18,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 2. After entering the graphical configuration interface, enter/search fortran and press 1 on the keyboard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1722820748129-bd297689-dd0e-4756-b5a7-1bf011f099b3.png)![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1722820782207-5a4d1f6a-9125-433c-99f5-ab18ade011b0.png)
+![Image](./images/OK3568_4_19_206_Adding_Fortran_Compilers/1722820748129_bd297689_dd0e_4756_b5a7_1bf011f099b3.png)![Image](./images/OK3568_4_19_206_Adding_Fortran_Compilers/1722820782207_5a4d1f6a_9125_433c_99f5_ab18ade011b0.png)
 
 3. Press Y to select the enable fortran support and save it.
 
@@ -42,7 +42,7 @@ The aarch64-linux-gfortran is not generated.
 
 Delete host-gcc-final-9.3.0 in the path.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1722820798304-ebb622d7-e554-43da-becb-4613c7c57588.png)
+![Image](./images/OK3568_4_19_206_Adding_Fortran_Compilers/1722820798304_ebb622d7_e554_43da_becb_4613c7c57588.png)
 
 Recompile buildroot.
 
