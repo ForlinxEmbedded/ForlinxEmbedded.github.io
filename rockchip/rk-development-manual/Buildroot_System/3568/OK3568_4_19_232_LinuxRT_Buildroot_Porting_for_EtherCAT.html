@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3568 4.19.232 LinuxRT Buildroot Porting for EtherCAT &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_232_LinuxRT_Buildroot_Porting_for_EtherCAT.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/theme-switcher.js?v=099e080c"></script>
+      <script src="../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Product_Design_Process/index.html">Product Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Buildroot System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Forlinx_Desktop_System/index.html">Forlinx Desktop System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OK3568 4.19.232 LinuxRT Buildroot Porting for EtherCAT</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3568-4-19-232-linuxrt-buildroot-porting-for-ethercat">
+<h1>OK3568 4.19.232 LinuxRT Buildroot Porting for EtherCAT<a class="headerlink" href="#ok3568-4-19-232-linuxrt-buildroot-porting-for-ethercat" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.</p>
+<p>The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="linuxrt-buildroot-porting-for-ethercat">
+<h2>LinuxRT Buildroot Porting for EtherCAT<a class="headerlink" href="#linuxrt-buildroot-porting-for-ethercat" title="Link to this heading"></a></h2>
+<p>Add the followings in the buildroot:</p>
+<blockquote>
+<div><p>BR2_PACKAGE_BUSYBOX=y//Wait to add the depmod and modinfo commands<br />
+BR2_LINUX_KERNEL=y//Dependency on ethercat<br />
+BR2_PACKAGE_IGH_ETHERCAT=y//ethercat package<br />
+BR2_LINUX_KERNEL_DEFCONFIG=”OK3568-C-Linux”//Specified kernel configuration</p>
+</div></blockquote>
+<p>The defconfig file used for buildroot is buildroot/configs/rockchip _ OK3568-C _ defconfig.</p>
+<p>After the make menuconfig configuration is completed, the.config needs to be overwritten to the rockchip _ OK3568-C _ defconfig.</p>
+<p>Otherwise, the configuration will not take effect.</p>
+<p>Problems encountered in compiling the file system.</p>
+<p>After adding the above content in the buildroot file system, then compile it.</p>
+<p><code class="docutils literal notranslate"><span class="pre">./build.sh</span> <span class="pre">buildroot</span></code></p>
+<p><strong>Possible Problems During Compilation</strong></p>
+<p>1. linux custom Building errors during the compilation</p>
+<blockquote>
+<div><p>Done in 6min 39s (error code: 2)<br />
+Failed to build rockchip_OK3568-C:<br />
+2024-04-19T09:46:11 error, forbidden warning:rga_policy.c:199<br />
+2024-04-19T09:46:11 199 | if (DEBUGGER_EN(MSG))<br />
+2024-04-19T09:46:11 | ^~<br />
+2024-04-19T09:46:11 drivers/video/rockchip/rga3/rga_policy.c:201:33: note: …this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’<br />
+2024-04-19T09:46:11 201 | continue;<br />
+2024-04-19T09:46:11 | ^~~~~~~~<br />
+2024-04-19T09:46:11 make[6]: *** [scripts/Makefile.build:334: drivers/video/rockchip/rga3/rga_policy.o] Error 1<br />
+2024-04-19T09:46:11 make[6]: *** Waiting for unfinished jobs….<br />
+2024-04-19T09:46:11 CC drivers/usb/dwc3/ep0.o<br />
+2024-04-19T09:46:11 AR drivers/video/rockchip/mpp/built-in.a<br />
+2024-04-19T09:46:11 CC drivers/usb/dwc3/drd.o<br />
+2024-04-19T09:46:11 CC drivers/usb/dwc3/debugfs.o<br />
+2024-04-19T09:46:11 make[5]: *** [scripts/Makefile.build:637: drivers/video/rockchip/rga3] Error 2<br />
+2024-04-19T09:46:11 make[4]: *** [scripts/Makefile.build:637: drivers/video/rockchip] Error 2<br />
+2024-04-19T09:46:11 make[3]: *** [scripts/Makefile.build:637: drivers/video] Error 2<br />
+2024-04-19T09:46:11 make[3]: *** Waiting for unfinished jobs….</p>
+</div></blockquote>
+<p>The key points of error reporting are: drivers/video/rockchip/rga3/rga_policy.c:201:33: note: …this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’</p>
+<p>You can modify buildroot/output/rockchip_OK3568-C/build/linux-custom/drivers/video/rockchip/rga3/rga_policy.c<br />
+Comment out the if DEBUGGER message on line 201 of the prompt and leave continue.</p>
+<p>2. igh-ethercat 1.5.2 Building kernel module(s)  errors during the process</p>
+<blockquote>
+<div><p>Done in 1min 03s (error code: 2)<br />
+Failed to build rockchip_OK3568-C:<br />
+2024-04-19T10:14:03 CC [M] /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./examples/mini/mini.o<br />
+2024-04-19T10:14:03 CC [M] /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./master/datagram_pair.o<br />
+2024-04-19T10:14:03 ../igh-ethercat-1.5.2/examples/mini/mini.c: In function ‘init_mini_module’:<br />
+2024-04-19T10:14:03 ../igh-ethercat-1.5.2/examples/mini/mini.c:495:5: error: implicit declaration of function ‘init_timer’; did you mean ‘init_timers’? [-Werror=implicit-function-declaration]<br />
+2024-04-19T10:14:03 495 | init_timer(&amp;timer);<br />
+2024-04-19T10:14:03 | ^~~~~~~~~~<br />
+2024-04-19T10:14:03 | init_timers<br />
+2024-04-19T10:14:03 ../igh-ethercat-1.5.2/examples/mini/mini.c:496:20: error: assignment to ‘void (*)(struct timer_list )’ from incompatible pointer type ‘void ()(long unsigned int)’ [-Werror=incompatible-pointer-types]<br />
+2024-04-19T10:14:03 496 | timer.function = cyclic_task;<br />
+2024-04-19T10:14:03 | ^<br />
+2024-04-19T10:14:03 cc1: some warnings being treated as errors<br />
+2024-04-19T10:14:03 make[5]: *** [scripts/Makefile.build:334: /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./examples/mini/mini.o] Error 1<br />
+2024-04-19T10:14:03 make[4]: *** [scripts/Makefile.build:637: /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./examples/mini] Error 2<br />
+2024-04-19T10:14:03 make[3]: *** [scripts/Makefile.build:637: /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./examples] Error 2</p>
+</div></blockquote>
+<p>The error focus is:./igh-ethercat-1.5.2/examples/mini/mini. C init _ timer problem</p>
+<p>Solution:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//Modify row 495 of the corresponding igh-ethercat-1.5.2/examples/mini/mini. C to read as follows:</span>
+
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="n">KERN_INFO</span><span class="w"> </span><span class="n">PFX</span><span class="w"> </span><span class="s">&quot;Starting cyclic sample thread.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">//init_timer(&amp;timer);</span>
+<span class="w">    </span><span class="c1">//timer.function = cyclic_task;</span>
+<span class="w">    </span><span class="c1">//timer.expires = jiffies + 10;</span>
+<span class="w">    </span><span class="c1">//add_timer(&amp;timer);</span>
+
+<span class="w">    </span><span class="n">printk</span><span class="p">(</span><span class="n">KERN_INFO</span><span class="w"> </span><span class="n">PFX</span><span class="w"> </span><span class="s">&quot;Started.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Error is still reported when recompiling after modification</p>
+<blockquote>
+<div><p>Done in 7s (error code: 2)<br />
+Failed to build rockchip_OK3568-C:<br />
+2024-04-19T11:34:00 | ^~~~~~~~~~~~~~~~<br />
+2024-04-19T11:34:00 ../igh-ethercat-1.5.2/master/cdev.c:87:14: note: (near initialization for ‘eccdev_vm_ops.fault’)<br />
+2024-04-19T11:34:00 In file included from ../igh-ethercat-1.5.2/master/cdev.c:42:<br />
+2024-04-19T11:34:00 ../igh-ethercat-1.5.2/master/cdev.c: In function ‘eccdev_vma_fault’:<br />
+2024-04-19T11:34:00 ../igh-ethercat-1.5.2/master/cdev.c:277:46: error: ‘struct vm_fault’ has no member named ‘virtual_address’<br />
+2024-04-19T11:34:00 277 | “ offset = %lu, page = %pn”, vmf-&gt;virtual_address, offset, page);<br />
+2024-04-19T11:34:00 | ^~<br />
+2024-04-19T11:34:00 ../igh-ethercat-1.5.2/master/master.h:115:38: note: in definition of macro ‘EC_MASTER_DBG’<br />
+2024-04-19T11:34:00 115 | master-&gt;index, ##args); | ^~~~<br />
+2024-04-19T11:34:00 cc1: some warnings being treated as errors</p>
+</div></blockquote>
+<p>The key error is:./igh-ethercat-1.5.2/master/cdev. C.</p>
+<p>Solution:<br />
+65 line:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define PAGE_FAULT_VERSION KERNEL_VERSION(2, 6, 23)</span>
+<span class="w"> </span>
+<span class="cp">#if LINUX_VERSION_CODE &gt;= PAGE_FAULT_VERSION</span>
+<span class="c1">//static int eccdev_vma_fault(struct vm_area_struct *, struct vm_fault *);</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">eccdev_vma_fault</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">vm_fault</span><span class="w"> </span><span class="o">*</span><span class="p">);</span>
+<span class="cp">#else</span>
+<span class="k">static</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">page</span><span class="w"> </span><span class="o">*</span><span class="n">eccdev_vma_nopage</span><span class="p">(</span>
+<span class="w">        </span><span class="k">struct</span><span class="w"> </span><span class="nc">vm_area_struct</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="p">);</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<p>259 line:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//static int eccdev_vma_fault(</span>
+<span class="w"> </span><span class="c1">//   #if LINUX_VERSION_CODE &lt; KERNEL_VERSION(5, 4, 0)</span>
+<span class="c1">// vm_area_struct *vma, /**&lt; Virtual memory area. */</span>
+<span class="w"> </span><span class="c1">//   #endif</span>
+<span class="w">   </span><span class="c1">//     struct vm_fault *vmf /**&lt; Fault data. */</span>
+<span class="w">   </span><span class="c1">//     )</span>
+<span class="c1">//</span>
+<span class="k">static</span><span class="w"> </span><span class="n">vm_fault_t</span><span class="w"> </span><span class="n">eccdev_vma_fault</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">vm_area_struct</span><span class="w"> </span><span class="o">*</span><span class="n">vma</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>278 line:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">EC_MASTER_DBG</span><span class="p">(</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">cdev</span><span class="o">-&gt;</span><span class="n">master</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Vma fault, virtual_address = %p,&quot;</span>
+<span class="w">            </span><span class="s">&quot; offset = %lu, page = %p</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">vmf</span><span class="o">-&gt;</span><span class="n">virtual_address</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="n">page</span><span class="p">);</span>
+<span class="n">Modify</span><span class="w"> </span><span class="n">to</span><span class="w"> </span>
+<span class="n">EC_MASTER_DBG</span><span class="p">(</span><span class="n">priv</span><span class="o">-&gt;</span><span class="n">cdev</span><span class="o">-&gt;</span><span class="n">master</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Vma fault, virtual_address = %p,&quot;</span>
+<span class="w">            </span><span class="s">&quot; offset = %lu, page = %p</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">vmf</span><span class="o">-&gt;</span><span class="n">address</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="n">page</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Error is still reported when recompiling after modification</p>
+<blockquote>
+<div><p>2024-04-19T10:33:31 /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./devices/generic.c: In function ‘ec_gen_device_init’:<br />
+2024-04-19T10:33:31 /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./devices/generic.c:152:77: error: macro “alloc_netdev” requires 4 arguments, but only 3 given<br />
+2024-04-19T10:33:31 152 | dev-&gt;netdev = alloc_netdev(sizeof(ec_gen_device_t *), &amp;null, ether_setup);<br />
+2024-04-19T10:33:31 | ^<br />
+2024-04-19T10:33:31 In file included from ./include/uapi/linux/if_arp.h:27,<br />
+2024-04-19T10:33:31 from ./include/linux/if_arp.h:27,<br />
+2024-04-19T10:33:31 from /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./devices/generic.c:40:<br />
+2024-04-19T10:33:31 ./include/linux/netdevice.h:4176: note: macro “alloc_netdev” defined here<br />
+2024-04-19T10:33:31 4176 | #define alloc_netdev(sizeof_priv, name, name_assign_type, setup) |<br />
+2024-04-19T10:33:31 /home/forlinx/3568-rt/OK3568-linux-sdk232/buildroot/output/rockchip_OK3568-C/build/igh-ethercat-1.5.2/./devices/generic.c:152:19: error: ‘alloc_netdev’ undeclared (first use in this function); did you mean ‘alloc_netdev_mqs’?<br />
+2024-04-19T10:33:31 152 | dev-&gt;netdev = alloc_netdev(sizeof(ec_gen_device_t *), &amp;null, ether_setup);<br />
+2024-04-19T10:33:31 | ^~~~~~~~~~~~<br />
+2024-04-19T10:33:31 | alloc_netdev_mqs</p>
+</div></blockquote>
+<p>The key points of error reporting are: igh-ethercat-1.5.2/./devices/generic. C:<br />
+Solution:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//Add NET_NAME_UNKNOWN in line 152 </span>
+<span class="n">dev</span><span class="o">-&gt;</span><span class="n">netdev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloc_netdev</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">ec_gen_device_t</span><span class="w"> </span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">null</span><span class="p">,</span><span class="w"> </span><span class="n">NET_NAME_UNKNOWN</span><span class="p">,</span><span class="w"> </span><span class="n">ether_setup</span><span class="p">);</span>
+<span class="w"> </span>
+<span class="c1">//Line 210 is modified to </span>
+<span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sock_create_kern</span><span class="p">(</span><span class="o">&amp;</span><span class="n">init_net</span><span class="p">,</span><span class="w"> </span><span class="n">PF_PACKET</span><span class="p">,</span><span class="w"> </span><span class="n">SOCK_RAW</span><span class="p">,</span><span class="w"> </span><span class="n">htons</span><span class="p">(</span><span class="n">ETH_P_ETHERCAT</span><span class="p">),</span><span class="o">&amp;</span><span class="n">dev</span><span class="o">-&gt;</span><span class="n">socket</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>All of the above documents involved in the modification:</p>
+<ol class="arabic simple">
+<li><p>buildroot/output/rockchip_OK3568-C/build/linux-custom/drivers/video/rockchip/rga3/rga_policy.c<a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2024/c/45387297/1724219187682-684533cc-5a11-41ce-a65e-ba7fd670a345.c">rga_policy-20240419155808-owl5at5.c</a></p></li>
+<li><p>igh-ethercat-1.5.2/examples/mini/mini.c</p></li>
+</ol>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2024/c/45387297/1724219187845-30e956c5-9427-400c-9602-3a70b2eb7830.c">mini-20240419160018-gob584d.c</a></p>
+<ol class="arabic simple" start="3">
+<li><p>igh-ethercat-1.5.2/master/cdev.c</p></li>
+</ol>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2024/c/45387297/1724219187935-3e0ca572-a18d-4020-911e-87c55391f0f1.c">cdev-20240419160245-r0kq12c.c</a></p>
+<ol class="arabic simple" start="4">
+<li><p>igh-ethercat-1.5.2/devices/generic.c</p></li>
+</ol>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2024/c/45387297/1724219188021-9177313d-1c57-4a51-b6f2-10405fe8e7ed.c">generic-20240419160249-mqbflde.c</a></p>
+<p>Finally, after completing the above modifications, ethercat-1.5.2 can be compiled successfully. However, during the ethercat install step, the system unexpectedly prompted “modetest is ARM, need AARCH64”.</p>
+<p>Using the file command to check buildroot/output/rockchip_OK3568-C/target/usr/bin/modetest, it indeed showed that the file was not compiled for AARCH64.</p>
+<p>Rebuilding and reinstalling “libdrm” in buildroot will restore normal system functionality. This issue may have been caused by problems in the previous full source code compilation. This note is kept for reference. If anyone encounters the same error, please try to recompile the relevant components.</p>
+<p><strong>Development Board Verification</strong></p>
+<p>After the above modification is completed, recompile and generate the file system./build. sh buildroot package update image. After the /build.sh updateimg flashing verification starts, then verify in the development board.</p>
+<p>Ifconfig # Check if there are currently available NIC devices</p>
+<p>Ifconfig -a # Check if the network card device is currently present</p>
+<p>Ifconfig eth0 up # Select a NIC device to make it available</p>
+<p>Ifconfig eth0 # View the mac address of the NIC device</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-C-buildroot:/#<span class="w"> </span>ifconfig<span class="w"> </span>eth0
+eth0<span class="w">      </span>Link<span class="w"> </span>encap:Ethernet<span class="w">  </span>HWaddr<span class="w"> </span><span class="m">72</span>:D0:18:BC:C8:C9
+<span class="w">          </span>BROADCAST<span class="w"> </span>MULTICAST<span class="w">  </span>MTU:1500<span class="w">  </span>Metric:1
+<span class="w">          </span>RX<span class="w"> </span>packets:0<span class="w"> </span>errors:0<span class="w"> </span>dropped:0<span class="w"> </span>overruns:0<span class="w"> </span>frame:0
+<span class="w">          </span>TX<span class="w"> </span>packets:0<span class="w"> </span>errors:0<span class="w"> </span>dropped:0<span class="w"> </span>overruns:0<span class="w"> </span>carrier:0
+<span class="w">          </span>collisions:0<span class="w"> </span>txqueuelen:1000
+<span class="w">          </span>RX<span class="w"> </span>bytes:0<span class="w"> </span><span class="o">(</span><span class="m">0</span>.0<span class="w"> </span>B<span class="o">)</span><span class="w">  </span>TX<span class="w"> </span>bytes:0<span class="w"> </span><span class="o">(</span><span class="m">0</span>.0<span class="w"> </span>B<span class="o">)</span>
+<span class="w">          </span>Interrupt:39
+</pre></div>
+</div>
+<p>You can see HWaddr 72:D0:18:BC:C8:C9, and then configure it in the (development board)/etc/sysconfig/ethercat file.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modify the following so that 72: D0: 18: BC: C8: C9 is the corresponding mac</span>
+<span class="nv">MASTER0_DEVICE</span><span class="o">=</span><span class="s2">&quot;72:D0:18:BC:C8:C9&quot;</span>
+<span class="nv">MASTER0_BACKUP</span><span class="o">=</span><span class="s2">&quot;72:D0:18:BC:C8:C9&quot;</span>
+<span class="nv">MODPROBE_FLAGS</span><span class="o">=</span><span class="s2">&quot;-b&quot;</span>
+</pre></div>
+</div>
+<p>Execute/etc/init.d/ethercat start</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-C-buildroot:/#<span class="w"> </span>/etc/init.d/ethercat<span class="w"> </span>start
+Starting<span class="w"> </span>EtherCAT<span class="w"> </span>master<span class="w"> </span><span class="m">1</span>.5.2<span class="w"> </span><span class="o">[</span><span class="w">  </span><span class="m">253</span>.539612<span class="o">]</span><span class="w"> </span>ec_master:<span class="w"> </span>loading<span class="w"> </span>out-of-tree<span class="w"> </span>module<span class="w"> </span>taints<span class="w"> </span>kernel.
+<span class="o">[</span><span class="w">  </span><span class="m">253</span>.555547<span class="o">]</span><span class="w"> </span>EtherCAT:<span class="w"> </span>Master<span class="w"> </span>driver<span class="w"> </span><span class="m">1</span>.5.2<span class="w"> </span>2eff7c993a63
+<span class="w"> </span><span class="k">done</span>
+root@OK3568-C-buildroot:/#<span class="w"> </span><span class="o">[</span><span class="w">  </span><span class="m">253</span>.555648<span class="o">]</span><span class="w"> </span>EtherCAT<span class="w"> </span>WARNING<span class="w"> </span><span class="m">0</span>:<span class="w"> </span>Ignoring<span class="w"> </span>backup<span class="w"> </span>MAC<span class="w"> </span>address!
+<span class="o">[</span><span class="w">  </span><span class="m">253</span>.555929<span class="o">]</span><span class="w"> </span>EtherCAT:<span class="w"> </span><span class="m">1</span><span class="w"> </span>master<span class="w"> </span>waiting<span class="w"> </span><span class="k">for</span><span class="w"> </span>devices.
+</pre></div>
+</div>
+<p>Execute ethercat master</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-C-buildroot:/#<span class="w"> </span>ethercat<span class="w"> </span>master
+Master0
+<span class="w">  </span>Phase:<span class="w"> </span>Waiting<span class="w"> </span><span class="k">for</span><span class="w"> </span>device<span class="o">(</span>s<span class="o">)</span>...
+<span class="w">  </span>Active:<span class="w"> </span>no
+<span class="w">  </span>Slaves:<span class="w"> </span><span class="m">0</span>
+<span class="w">  </span>Ethernet<span class="w"> </span>devices:
+<span class="w">    </span>Main:<span class="w"> </span><span class="m">72</span>:d0:18:bc:c8:c9<span class="w"> </span><span class="o">(</span>waiting...<span class="o">)</span>
+<span class="w">      </span>Link:<span class="w"> </span>DOWN
+<span class="w">      </span>Tx<span class="w"> </span>frames:<span class="w">   </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>bytes:<span class="w">    </span><span class="m">0</span>
+<span class="w">      </span>Rx<span class="w"> </span>frames:<span class="w">   </span><span class="m">0</span>
+<span class="w">      </span>Rx<span class="w"> </span>bytes:<span class="w">    </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>errors:<span class="w">   </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>frame<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span><span class="m">1</span>/s<span class="o">]</span>:<span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span>KByte/s<span class="o">]</span>:<span class="w">      </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0
+<span class="w">      </span>Rx<span class="w"> </span>frame<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span><span class="m">1</span>/s<span class="o">]</span>:<span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span>
+<span class="w">      </span>Rx<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span>KByte/s<span class="o">]</span>:<span class="w">      </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0
+<span class="w">    </span>Common:
+<span class="w">      </span>Tx<span class="w"> </span>frames:<span class="w">   </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>bytes:<span class="w">    </span><span class="m">0</span>
+<span class="w">      </span>Rx<span class="w"> </span>frames:<span class="w">   </span><span class="m">0</span>
+<span class="w">      </span>Rx<span class="w"> </span>bytes:<span class="w">    </span><span class="m">0</span>
+<span class="w">      </span>Lost<span class="w"> </span>frames:<span class="w"> </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>frame<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span><span class="m">1</span>/s<span class="o">]</span>:<span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span>
+<span class="w">      </span>Tx<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span>KByte/s<span class="o">]</span>:<span class="w">      </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0
+<span class="w">      </span>Rx<span class="w"> </span>frame<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span><span class="m">1</span>/s<span class="o">]</span>:<span class="w"> </span><span class="m">1230259</span><span class="w"> </span><span class="m">1631408</span><span class="w"> </span><span class="m">1140876</span>
+<span class="w">      </span>Rx<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span>KByte/s<span class="o">]</span>:<span class="w">   </span><span class="m">1904971</span>.9<span class="w"> </span><span class="m">1105049</span>.4<span class="w"> </span><span class="m">1359893</span>.1
+<span class="w">      </span>Loss<span class="w"> </span>rate<span class="w"> </span><span class="o">[</span><span class="m">1</span>/s<span class="o">]</span>:<span class="w">          </span><span class="m">0</span><span class="w">      </span><span class="m">0</span><span class="w">      </span><span class="m">0</span>
+<span class="w">      </span>Frame<span class="w"> </span>loss<span class="w"> </span><span class="o">[</span>%<span class="o">]</span>:<span class="w">         </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0<span class="w">    </span><span class="m">0</span>.0
+<span class="w">  </span>Distributed<span class="w"> </span>clocks:
+<span class="w">    </span>Reference<span class="w"> </span>clock:<span class="w"> </span>None
+<span class="w">    </span>Application<span class="w"> </span>time:<span class="w"> </span><span class="m">0</span>
+<span class="w">                      </span><span class="m">2000</span>-01-01<span class="w"> </span><span class="m">00</span>:00:00.000000000
+</pre></div>
+</div>
+<p>Execute ethercat slaves.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>root@OK3568-C-buildroot:/#<span class="w"> </span>ethercat<span class="w"> </span>slaves
+root@OK3568-C-buildroot:/#
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

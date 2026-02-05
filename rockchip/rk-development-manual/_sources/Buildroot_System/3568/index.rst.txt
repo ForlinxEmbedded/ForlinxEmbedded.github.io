@@ -63,6 +63,10 @@
    OK3568_4_19_206_Browser_Porting
    OK3568_4_19_206_User_Layer_Logo_Replacement
    OK3568_4_19_206_Self_Reception_Scheme_in_the_Native_CAN_Driver
+   OK3568_4_19_206_Porting_Java_on_the_Development_Board.md
+   OK3568_4_19_206_Adding_Fortran_Compilers
+   OK3568_4_19_206_Automatic_Detection_of_USB_Drive_Upgrade_Packages
+   OK3568_4_19_206_Buildroot_Rapid_Deployment_of_CODESYS_Runtime
    OK3568_5_10_160_Buildroot_New_Partition_Addition
 
 
