@@ -20,7 +20,7 @@ This document describes how to adapt the RTL8723DU Wi-Fi/Bluetooth module on OK3
 
 **1\. Hardware Schematic**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45471242/1735635195304-f5d34e1b-5e0f-41ba-bbf0-3fc36117869b.png)
+![Image](./images/OK3588_Linux_5_10_209_Buildroot_RTL8723DU_Module_Adaptation/1735635195304_f5d34e1b_5e0f_41ba_bbf0_3fc36117869b.png)
 
 **2\. Software Configuration**
 

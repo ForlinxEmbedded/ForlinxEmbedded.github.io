@@ -107,4 +107,4 @@ echo off >  /sys/class/drm/card0-HDMI-1/status
 echo on >  /sys/class/drm/card0-HDMI-1/status
 ```
 
-![](66985e8c48b677aa12d18646dd4349f6_compress.jpg)![](https://cdn.nlark.com/yuque/0/2025/jpeg/34340616/1753865858570-4d045dae-72cf-4240-a200-70cf0370c93d.jpeg)
+![](66985e8c48b677aa12d18646dd4349f6_compress.jpg)![Image](./images/OK3588_Linux_5_10_209_Buildroot_HDMI_DDC_I2C_Rate_Modification/1753865858570_4d045dae_72cf_4240_a200_70cf0370c93d.jpeg)

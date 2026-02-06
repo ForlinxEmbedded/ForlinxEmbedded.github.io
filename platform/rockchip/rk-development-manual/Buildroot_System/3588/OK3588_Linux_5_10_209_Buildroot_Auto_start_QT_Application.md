@@ -38,7 +38,7 @@ root@ok3588-buildroot:/# reboot
 
 When moving the mouse, the following error occurs.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45411062/1761815468451-14335c7a-f005-48f2-b728-10d0243e9467.png)
+![Image](./images/OK3588_Linux_5_10_209_Buildroot_Auto_start_QT_Application/1761815468451_14335c7a_f005_48f2_b728_10d0243e9467.png)
 
 **Solution**
 
@@ -80,6 +80,6 @@ Disable Weston.
 root@ok3588-buildroot:/#vi /etc/init.d/S49weston
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45411062/1761816694286-02241146-db5e-4d03-beb3-158732e92eb0.png)
+![Image](./images/OK3588_Linux_5_10_209_Buildroot_Auto_start_QT_Application/1761816694286_02241146_db5e_4d03_beb3_158732e92eb0.png)
 
 After performing sync, restart the system. Now, moving the mouse displays normally.
