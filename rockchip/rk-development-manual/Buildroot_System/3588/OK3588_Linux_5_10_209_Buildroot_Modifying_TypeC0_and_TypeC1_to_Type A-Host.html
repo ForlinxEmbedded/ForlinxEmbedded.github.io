@@ -1,0 +1,479 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3588 5.10.209 Buildroot Modifying TypeC0 and TypeC1 to Type A-Host &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type%20A-Host.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/theme-switcher.js?v=099e080c"></script>
+      <script src="../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Forlinx Desktop System" href="../../Forlinx_Desktop_System/index.html" />
+    <link rel="prev" title="OK3588 Linux 5.10.209 Buildroot HDMI DDC I2C Rate Modification" href="OK3588_Linux_5_10_209_Buildroot_HDMI_DDC_I2C_Rate_Modification.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Product_Design_Process/index.html">Product Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Buildroot System</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../3399/index.html">3399</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3506/index.html">3506</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3562/index.html">3562</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3568/index.html">3568</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3576/index.html">3576</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3588</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="OK3588_Linux_5_10_209_Buildroot_Auto_start_QT_Application.html">OK3588 Linux 5.10.209 Buildroot Auto-start QT Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588_Linux_5_10_209_Buildroot_RTL8723DU_Module_Adaptation.html">OK3588 Linux 5.10.209 Buildroot RTL8723DU Module Adaptation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588_Linux_5_10_209_Buildroot_HDMI_DDC_I2C_Rate_Modification.html">OK3588 Linux 5.10.209 Buildroot HDMI DDC I2C Rate Modification</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OK3588 5.10.209 Buildroot  Modifying TypeC0 and TypeC1 to Type A-Host</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modifying-typec0-and-typec1-to-type-a-host">Modifying TypeC0 and TypeC1 to Type A-Host</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Forlinx_Desktop_System/index.html">Forlinx Desktop System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Buildroot System</a></li>
+          <li class="breadcrumb-item"><a href="index.html">3588</a></li>
+      <li class="breadcrumb-item active">OK3588 5.10.209 Buildroot  Modifying TypeC0 and TypeC1 to Type A-Host</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3588-5-10-209-buildroot-modifying-typec0-and-typec1-to-type-a-host">
+<h1>OK3588 5.10.209 Buildroot  Modifying TypeC0 and TypeC1 to Type A-Host<a class="headerlink" href="#ok3588-5-10-209-buildroot-modifying-typec0-and-typec1-to-type-a-host" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>03/06/2025</p></td>
+<td><p>V1.0</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="modifying-typec0-and-typec1-to-type-a-host">
+<h2>Modifying TypeC0 and TypeC1 to Type A-Host<a class="headerlink" href="#modifying-typec0-and-typec1-to-type-a-host" title="Link to this heading"></a></h2>
+<p>This method needs jump wire test on the Forlinx carrier board.</p>
+<p>The related patch file:</p>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2025/patch/45444988/1741248742303-cd3ad9db-473a-43fa-8f03-a60a49bfcec0.patch">TypeC-to-TypeAhost.patch</a></p>
+<p><strong>Background</strong></p>
+<p>Many customers prefer Type-A interfaces over Type-C interfaces when designing their custom carrier boards. Accordingly, this solution modifies the SoM’s Type-C port to function as a Type-A Host interface.</p>
+<p><strong>1. Software Modification: Device Tree</strong></p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi b/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span>
+<span class="gh">index 6dc06d53e..46eaf4f4a 100644</span>
+<span class="gd">--- a/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span>
+<span class="gi">+++ b/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span>
+<span class="gu">@@ -719,72 +719,6 @@</span>
+<span class="w"> </span>        status = &quot;okay&quot;;
+<span class="w"> </span>    };
+<span class="w"> </span>
+<span class="gd">-	usbc0: fusb302@22 {</span>
+<span class="gd">-		compatible = &quot;fcs,fusb302&quot;;</span>
+<span class="gd">-		reg = &lt;0x22&gt;;</span>
+<span class="gd">-		interrupt-parent = &lt;&amp;gpio1&gt;;</span>
+<span class="gd">-		interrupts = &lt;RK_PB0 IRQ_TYPE_LEVEL_LOW&gt;;</span>
+<span class="gd">-		pinctrl-names = &quot;default&quot;;</span>
+<span class="gd">-		pinctrl-0 = &lt;&amp;usbc0_int&gt;;</span>
+<span class="gd">-		vbus-supply = &lt;&amp;vbus5v0_typec0&gt;;</span>
+<span class="gd">-		status = &quot;okay&quot;;</span>
+<span class="gd">-</span>
+<span class="gd">-		ports {</span>
+<span class="gd">-			#address-cells = &lt;1&gt;;</span>
+<span class="gd">-			#size-cells = &lt;0&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-			port@0 {</span>
+<span class="gd">-				reg = &lt;0&gt;;</span>
+<span class="gd">-				usbc0_role_sw: endpoint@0 {</span>
+<span class="gd">-					remote-endpoint = &lt;&amp;dwc3_0_role_switch&gt;;</span>
+<span class="gd">-				};</span>
+<span class="gd">-			};</span>
+<span class="gd">-		};</span>
+<span class="gd">-</span>
+<span class="gd">-		usb_con0: connector {</span>
+<span class="gd">-			compatible = &quot;usb-c-connector&quot;;</span>
+<span class="gd">-			label = &quot;USB-C&quot;;</span>
+<span class="gd">-			data-role = &quot;dual&quot;;</span>
+<span class="gd">-			power-role = &quot;dual&quot;;</span>
+<span class="gd">-			try-power-role = &quot;sink&quot;;</span>
+<span class="gd">-			op-sink-microwatt = &lt;1000000&gt;;</span>
+<span class="gd">-			sink-pdos =</span>
+<span class="gd">-				&lt;PDO_FIXED(5000, 1000, PDO_FIXED_USB_COMM)&gt;;</span>
+<span class="gd">-			source-pdos =</span>
+<span class="gd">-				&lt;PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-			altmodes {</span>
+<span class="gd">-				#address-cells = &lt;1&gt;;</span>
+<span class="gd">-				#size-cells = &lt;0&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-				altmode@0 {</span>
+<span class="gd">-					reg = &lt;0&gt;;</span>
+<span class="gd">-					svid = &lt;0xff01&gt;;</span>
+<span class="gd">-					vdo = &lt;0xffffffff&gt;;</span>
+<span class="gd">-				};</span>
+<span class="gd">-			};</span>
+<span class="gd">-</span>
+<span class="gd">-			ports {</span>
+<span class="gd">-				#address-cells = &lt;1&gt;;</span>
+<span class="gd">-				#size-cells = &lt;0&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-				port@0 {</span>
+<span class="gd">-					reg = &lt;0&gt;;</span>
+<span class="gd">-					usbc0_orien_sw: endpoint {</span>
+<span class="gd">-						remote-endpoint = &lt;&amp;usbdp_phy0_orientation_switch&gt;;</span>
+<span class="gd">-					};</span>
+<span class="gd">-				};</span>
+<span class="gd">-</span>
+<span class="gd">-				port@1 {</span>
+<span class="gd">-					reg = &lt;1&gt;;</span>
+<span class="gd">-					dp0_altmode_mux: endpoint {</span>
+<span class="gd">-						remote-endpoint = &lt;&amp;usbdp_phy0_dp_altmode_mux&gt;;</span>
+<span class="gd">-					};</span>
+<span class="gd">-				};</span>
+<span class="gd">-			};</span>
+<span class="gd">-		};</span>
+<span class="gd">-	};</span>
+<span class="gd">-</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;i2c3 {
+<span class="gu">@@ -846,71 +780,6 @@</span>
+<span class="w"> </span>		status = &quot;okay&quot;;
+<span class="w"> </span>	};
+<span class="w"> </span>
+<span class="gd">-	usbc1: fusb302@22 {</span>
+<span class="gd">-		compatible = &quot;fcs,fusb302&quot;;</span>
+<span class="gd">-		reg = &lt;0x22&gt;;</span>
+<span class="gd">-		interrupt-parent = &lt;&amp;gpio1&gt;;</span>
+<span class="gd">-		interrupts = &lt;RK_PB3 IRQ_TYPE_LEVEL_LOW&gt;;</span>
+<span class="gd">-		pinctrl-names = &quot;default&quot;;</span>
+<span class="gd">-		pinctrl-0 = &lt;&amp;usbc1_int&gt;;</span>
+<span class="gd">-		vbus-supply = &lt;&amp;vbus5v0_typec1&gt;;</span>
+<span class="gd">-		status = &quot;okay&quot;;</span>
+<span class="gd">-</span>
+<span class="gd">-		ports {</span>
+<span class="gd">-			#address-cells = &lt;1&gt;;</span>
+<span class="gd">-			#size-cells = &lt;0&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-			port@0 {</span>
+<span class="gd">-				reg = &lt;0&gt;;</span>
+<span class="gd">-				usbc1_role_sw: endpoint@0 {</span>
+<span class="gd">-					remote-endpoint = &lt;&amp;dwc3_1_role_switch&gt;;</span>
+<span class="gd">-				};</span>
+<span class="gd">-			};</span>
+<span class="gd">-		};</span>
+<span class="gd">-</span>
+<span class="gd">-		usb_con1: connector {</span>
+<span class="gd">-			compatible = &quot;usb-c-connector&quot;;</span>
+<span class="gd">-			label = &quot;USB-C&quot;;</span>
+<span class="gd">-			data-role = &quot;dual&quot;;</span>
+<span class="gd">-			power-role = &quot;dual&quot;;</span>
+<span class="gd">-			try-power-role = &quot;sink&quot;;</span>
+<span class="gd">-			op-sink-microwatt = &lt;1000000&gt;;</span>
+<span class="gd">-			sink-pdos =</span>
+<span class="gd">-				&lt;PDO_FIXED(5000, 1000, PDO_FIXED_USB_COMM)&gt;;</span>
+<span class="gd">-			source-pdos =</span>
+<span class="gd">-				&lt;PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-			altmodes {</span>
+<span class="gd">-				#address-cells = &lt;1&gt;;</span>
+<span class="gd">-				#size-cells = &lt;0&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-				altmode@0 {</span>
+<span class="gd">-					reg = &lt;0&gt;;</span>
+<span class="gd">-					svid = &lt;0xff01&gt;;</span>
+<span class="gd">-					vdo = &lt;0xffffffff&gt;;</span>
+<span class="gd">-				};</span>
+<span class="gd">-			};</span>
+<span class="gd">-</span>
+<span class="gd">-			ports {</span>
+<span class="gd">-				#address-cells = &lt;1&gt;;</span>
+<span class="gd">-				#size-cells = &lt;0&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-				port@0 {</span>
+<span class="gd">-					reg = &lt;0&gt;;</span>
+<span class="gd">-					usbc1_orien_sw: endpoint {</span>
+<span class="gd">-						remote-endpoint = &lt;&amp;usbdp_phy1_orientation_switch&gt;;</span>
+<span class="gd">-					};</span>
+<span class="gd">-				};</span>
+<span class="gd">-</span>
+<span class="gd">-				port@1 {</span>
+<span class="gd">-					reg = &lt;1&gt;;</span>
+<span class="gd">-					dp1_altmode_mux: endpoint {</span>
+<span class="gd">-						remote-endpoint = &lt;&amp;usbdp_phy1_dp_altmode_mux&gt;;</span>
+<span class="gd">-					};</span>
+<span class="gd">-				};</span>
+<span class="gd">-			};</span>
+<span class="gd">-		};</span>
+<span class="gd">-	};</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;i2c7 {
+<span class="gu">@@ -1256,11 +1125,12 @@</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;u2phy0_otg {
+<span class="gi">+	phy-supply = &lt;&amp;vbus5v0_typec0&gt;;</span>
+<span class="w"> </span>	status = &quot;okay&quot;;
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;u2phy1_otg {
+<span class="gd">-	phy-supply = &lt;&amp;vcc5v0_sys&gt;;</span>
+<span class="gi">+	phy-supply = &lt;&amp;vbus5v0_typec1&gt;;</span>
+<span class="w"> </span>	status = &quot;okay&quot;;
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="gu">@@ -1290,25 +1160,7 @@</span>
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbdp_phy0 {
+<span class="w"> </span>	status = &quot;okay&quot;;
+<span class="gd">-	orientation-switch;</span>
+	rockchip,dp-lane-mux = &lt;2 3&gt;;
+<span class="gd">-	svid = &lt;0xff01&gt;;</span>
+<span class="gd">-	sbu1-dc-gpios = &lt;&amp;gpio4 RK_PA0 GPIO_ACTIVE_HIGH&gt;;</span>
+<span class="gd">-	sbu2-dc-gpios = &lt;&amp;gpio4 RK_PB0 GPIO_ACTIVE_HIGH&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-	port {</span>
+<span class="gd">-		#address-cells = &lt;1&gt;;</span>
+<span class="gd">-		#size-cells = &lt;0&gt;;</span>
+<span class="gd">-		usbdp_phy0_orientation_switch: endpoint@0 {</span>
+<span class="gd">-			reg = &lt;0&gt;;</span>
+<span class="gd">-			remote-endpoint = &lt;&amp;usbc0_orien_sw&gt;;</span>
+<span class="gd">-		};</span>
+<span class="gd">-</span>
+<span class="gd">-		usbdp_phy0_dp_altmode_mux: endpoint@1 {</span>
+<span class="gd">-			reg = &lt;1&gt;;</span>
+<span class="gd">-			remote-endpoint = &lt;&amp;dp0_altmode_mux&gt;;</span>
+<span class="gd">-		};</span>
+<span class="gd">-	};</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbdp_phy0_dp {
+<span class="gu">@@ -1324,40 +1176,14 @@</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbdrd_dwc3_0 {
+<span class="gd">-	dr_mode = &quot;otg&quot;;</span>
+<span class="gd">-	usb-role-switch;</span>
+<span class="gi">+	dr_mode = &quot;host&quot;;</span>
+<span class="w"> </span>	status = &quot;okay&quot;;
+<span class="gd">-	port {</span>
+<span class="gd">-		#address-cells = &lt;1&gt;;</span>
+<span class="gd">-		#size-cells = &lt;0&gt;;</span>
+<span class="gd">-		dwc3_0_role_switch: endpoint@0 {</span>
+<span class="gd">-			reg = &lt;0&gt;;</span>
+<span class="gd">-			remote-endpoint = &lt;&amp;usbc0_role_sw&gt;;</span>
+<span class="gd">-		};</span>
+<span class="gd">-	};</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbdp_phy1 {
+<span class="w"> </span>	status = &quot;okay&quot;;
+<span class="gd">-	orientation-switch;</span>
+	rockchip,dp-lane-mux = &lt;2 3&gt;;
+<span class="gd">-	svid = &lt;0xff01&gt;;</span>
+<span class="gd">-	sbu1-dc-gpios = &lt;&amp;gpio4 RK_PA1 GPIO_ACTIVE_HIGH&gt;;</span>
+<span class="gd">-	sbu2-dc-gpios = &lt;&amp;gpio4 RK_PA2 GPIO_ACTIVE_HIGH&gt;;</span>
+<span class="gd">-</span>
+<span class="gd">-	port {</span>
+<span class="gd">-		#address-cells = &lt;1&gt;;</span>
+<span class="gd">-		#size-cells = &lt;0&gt;;</span>
+<span class="gd">-		usbdp_phy1_orientation_switch: endpoint@0 {</span>
+<span class="gd">-			reg = &lt;0&gt;;</span>
+<span class="gd">-			remote-endpoint = &lt;&amp;usbc1_orien_sw&gt;;</span>
+<span class="gd">-		};</span>
+<span class="gd">-</span>
+<span class="gd">-		usbdp_phy1_dp_altmode_mux: endpoint@1 {</span>
+<span class="gd">-			reg = &lt;1&gt;;</span>
+<span class="gd">-			remote-endpoint = &lt;&amp;dp1_altmode_mux&gt;;</span>
+<span class="gd">-		};</span>
+<span class="gd">-	};</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbdp_phy1_dp {
+<span class="gu">@@ -1374,16 +1200,7 @@</span>
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbdrd_dwc3_1 {
+<span class="w"> </span>	status = &quot;okay&quot;;
+<span class="gd">-	dr_mode = &quot;otg&quot;;</span>
+<span class="gd">-	usb-role-switch;</span>
+<span class="gd">-	port {</span>
+<span class="gd">-		#address-cells = &lt;1&gt;;</span>
+<span class="gd">-		#size-cells = &lt;0&gt;;</span>
+<span class="gd">-		dwc3_1_role_switch: endpoint@0 {</span>
+<span class="gd">-			reg = &lt;0&gt;;</span>
+<span class="gd">-			remote-endpoint = &lt;&amp;usbc1_role_sw&gt;;</span>
+<span class="gd">-		};</span>
+<span class="gd">-	};</span>
+<span class="gi">+	dr_mode = &quot;host&quot;;</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;usbhost3_0 {
+</pre></div>
+</div>
+<p>Apply the above patch to the device tree file. Take the device tree file of 3588 Linux5.10.209 as an example: kernel/arch/arm64/boot/dts/rockchip/OK3588 - C - common.dtsi.</p>
+<p>Apply the patch file to the kernel:</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248800750_b2a35198_a441_4baf_88da_5c46ac954ab3.png)</p>
+<p>Compile the kernel and burn the boot.img image to verify the function.</p>
+<p><strong>2. Hardware Modification</strong></p>
+<p>To test the Type - A - Host function on the Forlinx carrier board, an external Type - A socket is required. The connections are as follows:</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248830282_78d5ab70_a0d3_4448_b706_28a079396fc1.png)</p>
+<p>At the Type - C0 port, connect the six wires in the above red - framed area, plus the power line and GND.</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248840655_fa600cd7_3213_45c5_a050_abe1cb845d34.png)</p>
+<p>The same goes for Type - C1.</p>
+<p>PS: Since USB3.0 is a high - speed signal line with relatively high requirements for signal rate, the length of the jump wires should be as short as possible.</p>
+<p><strong>3. Function Verification</strong></p>
+<p><strong>3.1 Type - C0</strong></p>
+<p>Update the boot to the SoM. With the hardware modifications completed, insert a USB flash drive at the Type - C0 port.</p>
+<p>Use<code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span></code>commands to query the USB flash drive.</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248931403_adfa9e6c_dab8_46eb_920d_f97365bc87cb.png)</p>
+<p>You can see that the USB flash drive has been recognized.</p>
+<p>Open /run/media/sda1, and you can see that the USB flash drive has been successfully mounted.</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248946150_ac09e7f4_70f8_4494_a1f6_6737d4abe18a.png)</p>
+<p>3.2 Type - C1</p>
+<p><code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span></code> Query the USB flash drive.</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248961965_ff8bde1e_38fb_4307_a199_b436f68f7d0e.png)</p>
+<p>Open /run/media/sdb1, and you can see that the USB flash drive has been successfully mounted.</p>
+<p>![Image](./images/OK3588_Linux_5_10_209_Buildroot_Modifying_TypeC0_and_TypeC1_to_Type A-Host/1741248974799_c788b765_f1c8_42f8_a425_a6165f23761c.png)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
