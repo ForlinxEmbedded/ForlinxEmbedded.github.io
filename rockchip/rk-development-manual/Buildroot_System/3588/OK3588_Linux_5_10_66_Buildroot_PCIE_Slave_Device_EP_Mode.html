@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3588 5.10.66 Buildroot PCIE Slave Device (EP Mode) &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/theme-switcher.js?v=099e080c"></script>
+      <script src="../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Product_Design_Process/index.html">Product Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Buildroot System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Forlinx_Desktop_System/index.html">Forlinx Desktop System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OK3588 5.10.66 Buildroot PCIE Slave Device (EP Mode)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3588-5-10-66-buildroot-pcie-slave-device-ep-mode">
+<h1>OK3588 5.10.66 Buildroot PCIE Slave Device (EP Mode)<a class="headerlink" href="#ok3588-5-10-66-buildroot-pcie-slave-device-ep-mode" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01/05/2025</p></td>
+<td><p>V1.0</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td><p>09/04/2025</p></td>
+<td><p>V1.1</p></td>
+<td><p>Software Settings- &gt; 2. Kernel General Configuration- &gt; 2. Correct OK 3588-C in the Hugepage-Modify the rootwaitdefault _ hugepage SZ of the Linux. DTS to rootwait default _ hugepagesz</p></td>
+</tr>
+<tr class="row-even"><td><p>10/10/2025</p></td>
+<td><p>V1.2</p></td>
+<td><p>Adding complete package.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pcie-slave-device-ep-mode">
+<h2>PCIE Slave Device (EP Mode)<a class="headerlink" href="#pcie-slave-device-ep-mode" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Document testing is based on the RK3588 development board.</p></li>
+<li><p>During testing, both RC (Root Complex) and EP (Endpoint) are Linux devices (RK3588 development boards).</p></li>
+<li><p>This document focuses on recording the EP card configuration method and testing method. For detailed configuration information, please refer to the documentation: <strong>Rockchip_Developer_Guide_PCIE_EP_Stardard_Card_CN.pdf</strong></p></li>
+<li><p>Software: Linux 5.10.66  4G+32G</p></li>
+</ul>
+<p>Kernel version: OK3588 linux 5.10.66 version kernel (Android12 Linux ForlinxDesktop20.04  R5 release)</p>
+<p>Uboot version: OK3588 protection encryption uboot (Android12 Linux ForlinxDesktop20.04  R4 release)</p>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2024/zip/45444988/1731633244663-0a307200-0fda-4515-8b77-4be4d917cd3f.zip">uboot.zip</a></p>
+<p>Complete Package:</p>
+<p><a class="reference external" href="https://forlinx-book.yuque.com/attachments/yuque/0/2025/gz/45444988/1760081580925-3e40b06e-598c-4cb2-95b5-9a1b1c690dbb.gz">Rockchip_PCIE_EP_Stardard_Card_20250218.tar.gz</a></p>
+<p><strong>Hardware Connection:</strong></p>
+<p><img alt="Image" src="../../_images/1731632828602_ccef4631_f67c_4a85_b358_b1eb2e005bac.png" /></p>
+<p>Requires only one PCIe 3.0 x4 male-to-male extension cable (TX-RX crossover cable).</p>
+<p><img alt="Image" src="../../_images/1731632828676_475a477b_d2d8_4aeb_9f1e_f07c8d30f5fa.png" /></p>
+<hr class="docutils" />
+<p><strong>Software Configuration</strong></p>
+<p>1. Apply Patch:</p>
+<p>The RK3588’s PCIe Endpoint (EP) mode setup refers to official documentation and source code patches provided by Rockchip. These are located in the docs directory.</p>
+<p><img alt="Image" src="../../_images/1731632828793_0477efec_bad0_4740_a780_21fba181c795.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The patch file is the basic configuration of EP card. There is also an updated package, which is built upon the base patch with optimizations and fixes. After applying the base patch, replace the files in the update package directory with the corresponding files in the SDK;</strong></p></li>
+<li><p><strong>Both the patch directory and the source directory need to be modified, and the two directories have the same function. You can choose to use the patch file in the patch directory to patch, or choose to replace the specific file in the source code directory to the corresponding location. You can choose one of the two methods.</strong></p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Kernel</p></li>
+</ol>
+<p>The patch file for the kernel is located at: Rockchip_PCIE_EP_Stardard_Card_20231215\patch-kernel5.10\linux_base\patch directory\kernel</p>
+<p><img alt="Image" src="../../_images/1731632828878_56e4a2f7_d046_4ae1_9efc_0933a0899ff0.png" /></p>
+<p>According to the patch file, apply its corrections to the kernel.</p>
+<p>After that, replace the files under the kernel in the update package.</p>
+<ol class="arabic simple" start="3">
+<li><p>Uboot</p></li>
+</ol>
+<p>Uboot patch file: Rockchip_PCIE_EP_Stardard_Card_20231215\patch-kernel5.10\linux_base\patch directory\u-boot</p>
+<p><img alt="Image" src="../../_images/1731632828950_478c8542_7cf0_41c6_9fb2_90301dfb66dd.png" /></p>
+<p>Replace the file in u-boot under the update package after entering the patch.</p>
+<ol class="arabic simple" start="4">
+<li><p>Rkbin</p></li>
+</ol>
+<p>The method of using patches to fix files under rkbin is somewhat cumbersome; you can directly replace the source code files:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Rockchip_PCIE_EP_Stardard_Card_20231215\patch-kernel5.10\linux_base\源码目录\rkbin
+</pre></div>
+</div>
+<p><img alt="Image" src="../../_images/1731632829033_fe4096ce_35cb_4ae4_ac8e_68ca473da81d.png" /></p>
+<p>After replacing the files in the folder, replace the files from the update package into the corresponding locations.</p>
+<p>Both the EP card and RC card mentioned above require configuration.</p>
+<p><strong>Kernel General Configuration</strong></p>
+<p>The following configuration items must be configured during the actual testing process to complete the EP card functionality. It is recommended to modify according to the configurations below first. For any questions, please refer to the official RK documentation: <strong>Rockchip_Developer_Guide_PCIE_EP_Stardard_Card_CN.pdf</strong></p>
+<p>1. SRNS</p>
+<p>In SRNS mode, the Refclock uses its own internal clock. Setting this item allows the RC card and EP card to each use their own 100M clock generator.</p>
+<p><strong>Uboot</strong></p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm/mach-rockchip/spl_pcie_ep_boot.c b/arch/arm/mach-rockchip/spl_pcie_ep_boot.c</span>
+<span class="gh">index 7a24a1d..f1ce41a 100755</span>
+<span class="gd">--- a/arch/arm/mach-rockchip/spl_pcie_ep_boot.c</span>
+<span class="gi">+++ b/arch/arm/mach-rockchip/spl_pcie_ep_boot.c</span>
+<span class="gu">@@ -81,7 +81,7 @@</span>
+<span class="w"> </span>#define PCIE_ATU_CPU_ADDR_HIGH         0x18
+<span class="w"> </span>
+<span class="w"> </span>/* SRNS: Use Separate refclk(internal clock) instead of from RC */
+<span class="gd">-// #define PCIE_ENABLE_SRNS_PLL_REFCLK</span>
+<span class="gi">+ #define PCIE_ENABLE_SRNS_PLL_REFCLK</span>
+</pre></div>
+</div>
+<p><strong>Kernel</strong></p>
+<p>There is a patch file for configuring SRNS mode in the kernel: Rockchip_PCIE_EP_Stardard_Card_20231215\patch-kernel5.10\SRNS</p>
+<p><img alt="Image" src="../../_images/1731632829127_dd34f848_8d84_496e_8f12_e2b5cbe3ca27.png" /></p>
+<p>It can be directly patched under the kernel directory.</p>
+<p>2. Hugepage</p>
+<p>Hugepage allocates memory through the Linux HugePageSize method. In RK’s official documentation, this method is preferred for memory allocation.</p>
+<p>Kernel configuration file defconfig:</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm64/configs/OK3588-Linux_defconfig b/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gh">index 59b4bf7ca..62a77acf7 100644</span>
+<span class="gd">--- a/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gi">+++ b/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gu">@@ -734,6 +734,7 @@ CONFIG_VIRTIO_NET=y</span>
+<span class="w"> </span>CONFIG_NLMON=y
+<span class="w"> </span>CONFIG_POSIX_MQUEUE=y
+<span class="w"> </span>CONFIG_PCIE_DW_ROCKCHIP_EP=y
+<span class="gi">+CONFIG_HUGETLBFS=y</span>
+</pre></div>
+</div>
+<p>Device tree file:</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm64/boot/dts/rockchip/OK3588-C-Linux.dts b/arch/arm64/boot/dts/rockchip/OK3588-C-Linux.dts</span>
+<span class="gh">index 8ea120342..651f81533 100644</span>
+<span class="gd">--- a/arch/arm64/boot/dts/rockchip/OK3588-C-Linux.dts</span>
+<span class="gi">+++ b/arch/arm64/boot/dts/rockchip/OK3588-C-Linux.dts</span>
+<span class="gu">@@ -5,7 +5,8 @@</span>
+<span class="w"> </span>       compatible = &quot;forlinx,ok3588&quot;, &quot;rockchip,rk3588&quot;;
+<span class="w"> </span>
+<span class="w"> </span>       chosen: chosen {
+<span class="gd">-               bootargs = &quot;earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 root=PARTUUID=614e0000-0000 rw rootwait&quot;;</span>
+<span class="gi">+       //      bootargs = &quot;earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 root=PARTUUID=614e0000-0000 rw rootwait&quot;;</span>
+<span class="gi">+               bootargs = &quot;earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 clk_gate.always_on=1pm_domains.always_on=1 root=PARTUUID=614e0000-0000 rw rootwait default_hugepagesz=32M hugepagesz=32M hugepages=16 &quot;;</span>
+<span class="w"> </span>       };
+<span class="w"> </span>
+<span class="w"> </span>       cspmu: cspmu@fd10c000 {
+</pre></div>
+</div>
+<p>3. BAR</p>
+<p>BAR settings follow the official RK documentation</p>
+<p><strong>Uboot</strong></p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm/mach-rockchip/spl_pcie_ep_boot.c b/arch/arm/mach-rockchip/spl_pcie_ep_boot.c</span>
+<span class="gh">index 7a24a1d..f1ce41a 100755</span>
+<span class="gd">--- a/arch/arm/mach-rockchip/spl_pcie_ep_boot.c</span>
+<span class="gi">+++ b/arch/arm/mach-rockchip/spl_pcie_ep_boot.c</span>
+<span class="gu">@@ -201,14 +201,14 @@ static void pcie_bar_init(void *dbi_base)</span>
+<span class="w"> </span>       writel(val, dbi_base + 0x7c);
+<span class="w"> </span>
+<span class="w"> </span>       /* Resize BAR0 to support 4M 32bits */
+<span class="gd">-       resbar_base = dbi_base + PCI_RESBAR;</span>
+<span class="gd">-       writel(0x40, resbar_base + 0x4);</span>
+<span class="gi">+       resbar_base = dbi_base + 0x2e8;</span>
+<span class="gi">+       writel(0xfffff0, resbar_base + 0x4);</span>
+<span class="w"> </span>       writel(0x2c0, resbar_base + 0x8);
+<span class="w"> </span>       /* BAR2: 64M 64bits */
+<span class="gd">-       writel(0x400, resbar_base + 0x14);</span>
+<span class="gi">+       writel(0xfffff0, resbar_base + 0x14);</span>
+<span class="w"> </span>       writel(0x6c0, resbar_base + 0x18);
+<span class="w"> </span>       /* BAR4: Fixed for EP wired register, 1M 32bits */
+<span class="gd">-       writel(0x10, resbar_base + 0x24);</span>
+<span class="gi">+       writel(0xfffff0, resbar_base + 0x24);</span>
+<span class="w"> </span>       writel(0xc0, resbar_base + 0x28);
+<span class="w"> </span>       /* Set flags */
+<span class="w"> </span>       rockchip_pcie_ep_set_bar_flag(dbi_base, 0, PCI_BASE_ADDRESS_MEM_TYPE_32);
+</pre></div>
+</div>
+<p><strong>Kernel</strong></p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/drivers/pci/controller/dwc/pcie-dw-ep-rockchip.c b/drivers/pci/controller/dwc/pcie-dw-ep-rockchip.c</span>
+<span class="gh">index 1addd6c38..55e7756d4 100755</span>
+<span class="gd">--- a/drivers/pci/controller/dwc/pcie-dw-ep-rockchip.c</span>
+<span class="gi">+++ b/drivers/pci/controller/dwc/pcie-dw-ep-rockchip.c</span>
+<span class="gu">@@ -532,18 +532,18 @@ static void rockchip_pcie_resize_bar(struct rockchip_pcie *rockchip)</span>
+<span class="w"> </span>
+<span class="w"> </span>       /* Resize BAR0 4M 32bits, BAR2 64M 64bits-pref, BAR4 1MB 32bits */
+<span class="w"> </span>       bar = BAR_0;
+<span class="gd">-       dw_pcie_writel_dbi(pci, resbar_base + 0x4 + bar * 0x8, 0x40);</span>
+<span class="gi">+       dw_pcie_writel_dbi(pci, resbar_base + 0x4 + bar * 0x8, 0xfffff0);</span>
+<span class="w"> </span>       dw_pcie_writel_dbi(pci, resbar_base + 0x8 + bar * 0x8, 0x2c0);
+<span class="w"> </span>       rockchip_pcie_ep_set_bar_flag(rockchip, bar, PCI_BASE_ADDRESS_MEM_TYPE_32);
+<span class="w"> </span>
+<span class="w"> </span>       bar = BAR_2;
+<span class="gd">-       dw_pcie_writel_dbi(pci, resbar_base + 0x4 + bar * 0x8, 0x400);</span>
+<span class="gi">+       dw_pcie_writel_dbi(pci, resbar_base + 0x4 + bar * 0x8, 0xfffff0);</span>
+<span class="w"> </span>       dw_pcie_writel_dbi(pci, resbar_base + 0x8 + bar * 0x8, 0x6c0);
+<span class="w"> </span>       rockchip_pcie_ep_set_bar_flag(rockchip, bar,
+<span class="w"> </span>                                     PCI_BASE_ADDRESS_MEM_PREFETCH | PCI_BASE_ADDRESS_MEM_TYPE_64);
+<span class="w"> </span>
+<span class="w"> </span>       bar = BAR_4;
+<span class="gd">-       dw_pcie_writel_dbi(pci, resbar_base + 0x4 + bar * 0x8, 0x10);</span>
+<span class="gi">+       dw_pcie_writel_dbi(pci, resbar_base + 0x4 + bar * 0x8, 0xfffff0);</span>
+<span class="w"> </span>       dw_pcie_writel_dbi(pci, resbar_base + 0x8 + bar * 0x8, 0xc0);
+<span class="w"> </span>       rockchip_pcie_ep_set_bar_flag(rockchip, bar, PCI_BASE_ADDRESS_MEM_TYPE_32)
+</pre></div>
+</div>
+<p>Both the EP card and RC card mentioned above require configuration.</p>
+<p>4. U-Boot General Configuration</p>
+<p>U-Boot is configured in defconfig.</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/configs/OK3588-Linux_defconfig b/configs/OK3588-Linux_defconfig</span>
+<span class="gh">index cde4d18..e6228b8 100644</span>
+<span class="gd">--- a/configs/OK3588-Linux_defconfig</span>
+<span class="gi">+++ b/configs/OK3588-Linux_defconfig</span>
+<span class="gi">+CONFIG_SPL_PCIE_EP_SUPPORT=y</span>
+<span class="gi">+CONFIG_SPL_RAM_SUPPORT=y</span>
+<span class="gi">+CONFIG_SPL_RAM_DEVICE=y</span>
+</pre></div>
+</div>
+<p>Both the EP card and RC card mentioned above require configuration.</p>
+<p>5. RC Kernel Configuration</p>
+<p>RC side configuration is simple, only need to add configuration in defconfig.</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm64/configs/OK3588-Linux_defconfig b/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gh">index 3506488cf..26d8f2ae8 100644</span>
+<span class="gd">--- a/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gi">+++ b/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gu">@@ -733,3 +733,8 @@ CONFIG_VETH=y</span>
+<span class="w"> </span>CONFIG_VIRTIO_NET=y
+<span class="w"> </span>CONFIG_NLMON=y
+<span class="w"> </span>CONFIG_POSIX_MQUEUE=y
+<span class="gi">+CONFIG_PCIE_FUNC_RKEP=y</span>
+</pre></div>
+</div>
+<p>6. EP Kernel Configuration</p>
+<p>EP side requires kernel configuration. Note that if CONFIG_STRICT_DEVMEM is configured in the kernel, it must be disabled.</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm64/configs/OK3588-Linux_defconfig b/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gh">index 3506488cf..59b4bf7ca 100644</span>
+<span class="gd">--- a/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gi">+++ b/arch/arm64/configs/OK3588-Linux_defconfig</span>
+<span class="gu">@@ -733,3 +733,8 @@ CONFIG_VETH=y</span>
+<span class="w"> </span>CONFIG_VIRTIO_NET=y
+<span class="w"> </span>CONFIG_NLMON=y
+<span class="w"> </span>CONFIG_POSIX_MQUEUE=y
+<span class="gi">+CONFIG_PCIE_DW_ROCKCHIP_EP=y</span>
+</pre></div>
+</div>
+<p>Device tree configuration</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gh">diff --git a/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi b/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span>
+<span class="gh">index 6dc06d53e..1848560bb 100644</span>
+<span class="gd">--- a/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span>
+<span class="gi">+++ b/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span>
+<span class="gu">@@ -46,8 +46,15 @@</span>
+<span class="w"> </span>               #address-cells = &lt;2&gt;;
+<span class="w"> </span>               #size-cells = &lt;2&gt;;
+<span class="w"> </span>               ranges;
+<span class="gd">-               dma_trans: dma-trans@3c000000 {</span>
+<span class="gi">+       /*      dma_trans: dma-trans@3c000000 {</span>
+<span class="w"> </span>                       reg = &lt;0x0 0x3c000000 0x0 0x04000000&gt;;
+<span class="gi">+               };*/</span>
+<span class="gi">+             </span>
+<span class="gi">+               bar0_region: bar0-region@3c000000 {</span>
+<span class="gi">+                       reg = &lt;0x0 0x3c000000 0x0 0x00400000&gt;;</span>
+<span class="gi">+               };</span>
+<span class="gi">+               bar2_region: bar2-region@40000000 {</span>
+<span class="gi">+                       reg = &lt;0x0 0x40000000 0x0 0x04000000&gt;;// # Bar大小配置：0x04000000Bytes</span>
+<span class="w"> </span>               };
+<span class="w"> </span>
+<span class="w"> </span>               /* Reserve 256MB memory for hdmirx-controller@fdee0000 */
+<span class="gu">@@ -954,8 +961,11 @@</span>
+<span class="w"> </span>};
+<span class="w"> </span>
+<span class="w"> </span>&amp;pcie3x4 {
+<span class="gi">+       compatible = &quot;rockchip,rk3588-pcie-std-ep&quot;;</span>
+<span class="w"> </span>       reset-gpios = &lt;&amp;gpio4 RK_PB6 GPIO_ACTIVE_HIGH&gt;;
+<span class="gd">-       memory-region = &lt;&amp;dma_trans&gt;;</span>
+<span class="gi">+//     memory-region = &lt;&amp;dma_trans&gt;;</span>
+<span class="gi">+       memory-region = &lt;&amp;bar0_region&gt;, &lt;&amp;bar2_region&gt;;</span>
+<span class="gi">+       memory-region-names = &quot;bar0&quot;, &quot;bar2&quot;;</span>
+<span class="w"> </span>       vpcie3v3-supply = &lt;&amp;vcc3v3_pcie30&gt;;
+<span class="w"> </span>       status = &quot;okay&quot;;
+<span class="w"> </span>};
+</pre></div>
+</div>
+<p><strong>Testing</strong></p>
+<p>1. Verification</p>
+<p>After the above configuration steps, you can see:</p>
+<p><strong>RC side</strong></p>
+<ul class="simple">
+<li><p>The RC side can see PCIe related nodes under /dev.<img alt="Image" src="../../_images/1731632829211_da7731c7_e6c5_4093_8ec8_f992dffd172e.png" /></p></li>
+<li><p>Successful registration and use of the rkep driver can be queried.</p></li>
+</ul>
+<p><strong>EP side</strong></p>
+<ul class="simple">
+<li><p>PCIe related nodes can be seen under /dev.</p></li>
+</ul>
+<p>2.  Demo Test</p>
+<p>In the RK provided software package, there are many test demos. The speed test demo is selected here: Rockchip_PCIE_EP_Stardard_Card_20231215\examples\pcie_speed_test</p>
+<p><img alt="Image" src="../../_images/1731632829439_6367a603_3ec9_4d20_a142_4b4627cc3b5e.png" /></p>
+<p>This demo needs to be compiled under Linux, and the compiled executable file should be copied to the development board for testing.</p>
+<p>According to the information in the README.txt file in the examples directory, the resources used by the demo need to be downloaded.</p>
+<blockquote>
+<div><p>Considering that the test application depends on dynamic libraries and the resources are relatively large, a resource directory is created specifically for storing test resources.</p>
+<p>Download the resource directory to the examples/ directory via Baidu Netdisk.</p>
+<p>Link: https://pan.baidu.com/s/1dyXEXMUfWREZii0kHbkOFw?pwd=u1h7 Extraction code: u1h7 （Note: If you can not download it, please ask your sales for the package).</p>
+<p>The directory structure is as follows:</p>
+<p>examples/<br />
+└── resource<br />
+├── pcie_camera_test<br />
+├── pcie_speed_test<br />
+└── pcie_video_test</p>
+</div></blockquote>
+<p>After downloading the resources, copy the entire resource package to any directory of the Linux source code, and configure the compilation toolchain in the compilation tool script according to the README.txt document in the speed test demo.</p>
+<p><img alt="Image" src="../../_images/1731632829553_0c167216_5304_4f78_8e07_05493806c7b5.png" /></p>
+<p>Main modifications are as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## build_ep.sh 文件</span>
+<span class="c1">#/bin/sh!</span>
+
+<span class="nv">EP_CROSS_COMPILE</span><span class="o">=</span>/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-<span class="w">		</span>//Configure<span class="w"> </span>the<span class="w"> </span>toolchain
+
+<span class="c1"># hugepage/rkdrm</span>
+<span class="nv">EP_MEM_CONFIG</span><span class="o">=</span>hugepage
+
+make<span class="w"> </span>-f<span class="w"> </span>ep.mk<span class="w"> </span><span class="nv">CROSS_COMPILE</span><span class="o">=</span><span class="si">${</span><span class="nv">EP_CROSS_COMPILE</span><span class="si">}</span><span class="w"> </span><span class="nv">MEM_CONFIG</span><span class="o">=</span><span class="si">${</span><span class="nv">EP_MEM_CONFIG</span><span class="si">}</span><span class="w"> </span><span class="nv">$1</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## build_rc.sh 文件</span>
+<span class="c1">#/bin/sh!</span>
+
+<span class="c1">#RC_ARCH=x86</span>
+<span class="c1">#RC_CROSS_COMPILE=</span>
+
+<span class="nv">RC_ARCH</span><span class="o">=</span>aarch64
+<span class="nv">RC_CROSS_COMPILE</span><span class="o">=</span>/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-<span class="w">		</span>//Configure<span class="w"> </span>the<span class="w"> </span>toolchain
+
+<span class="c1"># hugepage/rkep/rkdrm</span>
+<span class="nv">RC_MEM_CONFIG</span><span class="o">=</span>hugepage
+
+<span class="nv">RC_HOST</span><span class="o">=</span><span class="si">${</span><span class="nv">RC_ARCH</span><span class="si">}</span>-linux
+
+make<span class="w"> </span>-f<span class="w"> </span>rc.mk<span class="w"> </span><span class="nv">CROSS_COMPILE</span><span class="o">=</span><span class="si">${</span><span class="nv">RC_CROSS_COMPILE</span><span class="si">}</span><span class="w"> </span><span class="nv">HOST</span><span class="o">=</span><span class="si">${</span><span class="nv">RC_HOST</span><span class="si">}</span><span class="w"> </span><span class="nv">MEM_CONFIG</span><span class="o">=</span><span class="si">${</span><span class="nv">RC_MEM_CONFIG</span><span class="si">}</span><span class="w"> </span><span class="nv">$1</span>
+</pre></div>
+</div>
+<p><strong>！！！ The paths of the above toolchain must be modified according to the actual paths in your own development environment!!!</strong></p>
+<p>In the script directory, execute the two .sh files respectively, and you will obtain the speed test demo executable files for the RC side and EP side.</p>
+<p><img alt="Image" src="../../_images/1731632829639_403e232a_856a_4e29_8ad8_2dc1f3964ebd.png" /></p>
+<p>Copy them to the corresponding boards respectively for speed testing.</p>
+<p>Rockchip_PCIE_EP_Stardard_Card_20231215\examples\pcie_speed_test</p>
+<p>The README.txt file in the speed test demo folder explains how to use the executable file: Rockchip_PCIE_EP_Stardard_Card_20231215\examples\pcie_speed_test</p>
+<p><img alt="Image" src="../../_images/1731632829712_2e465eb0_ef53_4623_83ef_180b99795e6e.png" /></p>
+<p>EP side test script execution</p>
+<p><img alt="Image" src="../../_images/1731632829785_8e93e403_ddf4_4f65_b305_ad04e6756b14.png" /></p>
+<p>RC side test script execution</p>
+<p><img alt="Image" src="../../_images/1731632829856_5956b465_cc86_4e98_b5c4_2463d8d99728.png" /></p>
+<p>EP side actual speed test result</p>
+<p><img alt="Image" src="../../_images/1731632829951_2c14c961_21a5_47b9_bcbf_626887bd9bea.png" /></p>
+<p>RC side actual speed test result</p>
+<p><img alt="Image" src="../../_images/1731632830024_764e2975_0735_40f2_ae1a_1e54f0a32fb6.png" /></p>
+<p><strong>Issues</strong></p>
+<p>1. Board fails to boot into the system</p>
+<p>It is found that the board gets stuck during startup, the terminal interface shows:</p>
+<p><img alt="Image" src="../../_images/1731632830142_b7fec286_e5d0_4c57_bd7b_97ea4b7a0c63.png" /></p>
+<p>After waiting for a while, the SoM flashes blue abnormally.</p>
+<p>This is caused by modifying the configuration in RK3588MINIALL.ini during the configuration process.</p>
+<p><img alt="Image" src="../../_images/1731632830231_727754a5_4ea6_406e_ad6e_8150dba7198e.png" /></p>
+<p>Need to set all zeros to default.</p>
+<hr class="docutils" />
+<p>After trying the above method, the EP card still cannot boot into the system. Attempt to connect the RC card.</p>
+<p>2. Error occurs when using the speed test demo on the RC side</p>
+<p><img alt="Image" src="../../_images/1731632830327_a33740e6_c212_40cf_8611_f5e245e51193.png" /></p>
+<p>The above error is summarized as the program encountering issues when allocating huge page memory.</p>
+<p>At this point, you can check the number of hugepages.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages</span></code></p>
+<p><img alt="Image" src="../../_images/1731632830410_90f570ae_3c4b_42d0_bcd7_e0257f63969d.png" /></p>
+<p>It can be seen that the number is 0, use echo to assign a number.</p>
+<p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">1000</span> <span class="pre">&gt;</span> <span class="pre">/sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages</span></code></p>
+<p><img alt="Image" src="../../_images/1731632830491_5cd720e9_24c3_4dd8_ad67_8144236a3ff0.png" /></p>
+<p>This can resolve the above error.</p>
+<p><strong>PS: This configuration also needs to be checked on the EP side.</strong></p>
+<p>The above information can also be found in the<code class="docutils literal notranslate"><span class="pre">/proc/meminfo</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/proc/meminfo</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">Huge</span></code></p>
+<p><img alt="Image" src="../../_images/1731632830580_fecbbe32_68d4_434b_9234_2a5418864f33.png" /></p>
+<p>If it is 0, you need to set the number of hugepages.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
