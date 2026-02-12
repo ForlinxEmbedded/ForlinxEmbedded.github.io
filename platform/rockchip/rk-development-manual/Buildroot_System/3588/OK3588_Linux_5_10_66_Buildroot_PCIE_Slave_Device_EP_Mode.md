@@ -35,11 +35,11 @@ Complete Package:
 
 **Hardware Connection:**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632828602-ccef4631-f67c-4a85-b358-b1eb2e005bac.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632828602_ccef4631_f67c_4a85_b358_b1eb2e005bac.png)
 
 Requires only one PCIe 3.0 x4 male-to-male extension cable (TX-RX crossover cable).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632828676-475a477b-d2d8-4aeb-9f1e-f07c8d30f5fa.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632828676_475a477b_d2d8_4aeb_9f1e_f07c8d30f5fa.png)
 
 ---
 
@@ -49,7 +49,7 @@ Requires only one PCIe 3.0 x4 male-to-male extension cable (TX-RX crossover cabl
 
 The RK3588’s PCIe Endpoint (EP) mode setup refers to official documentation and source code patches provided by Rockchip. These are located in the docs directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632828793-0477efec-bad0-4740-a780-21fba181c795.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632828793_0477efec_bad0_4740_a780_21fba181c795.png)
 
 **Note:**
 
@@ -60,7 +60,7 @@ The RK3588’s PCIe Endpoint (EP) mode setup refers to official documentation an
 
 The patch file for the kernel is located at: Rockchip\_PCIE\_EP\_Stardard\_Card\_20231215\\patch-kernel5.10\\linux\_base\\patch directory\\kernel
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632828878-56e4a2f7-d046-4ae1-9efc-0933a0899ff0.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632828878_56e4a2f7_d046_4ae1_9efc_0933a0899ff0.png)
 
 According to the patch file, apply its corrections to the kernel.
 
@@ -70,7 +70,7 @@ After that, replace the files under the kernel in the update package.
 
 Uboot patch file: Rockchip\_PCIE\_EP\_Stardard\_Card\_20231215\\patch-kernel5.10\\linux\_base\\patch directory\\u-boot
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632828950-478c8542-7cf0-41c6-9fb2-90301dfb66dd.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632828950_478c8542_7cf0_41c6_9fb2_90301dfb66dd.png)
 
 Replace the file in u-boot under the update package after entering the patch.
 
@@ -82,7 +82,7 @@ The method of using patches to fix files under rkbin is somewhat cumbersome; you
 Rockchip_PCIE_EP_Stardard_Card_20231215\patch-kernel5.10\linux_base\源码目录\rkbin
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829033-fe4096ce-35cb-4ae4-ac8e-68ca473da81d.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829033_fe4096ce_35cb_4ae4_ac8e_68ca473da81d.png)
 
 After replacing the files in the folder, replace the files from the update package into the corresponding locations.
 
@@ -115,7 +115,7 @@ index 7a24a1d..f1ce41a 100755
 
 There is a patch file for configuring SRNS mode in the kernel: Rockchip\_PCIE\_EP\_Stardard\_Card\_20231215\\patch-kernel5.10\\SRNS
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829127-dd34f848-8d84-496e-8f12-e2b5cbe3ca27.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829127_dd34f848_8d84_496e_8f12_e2b5cbe3ca27.png)
 
 It can be directly patched under the kernel directory.
 
@@ -315,7 +315,7 @@ After the above configuration steps, you can see:
 
 **RC side**
 
-+ The RC side can see PCIe related nodes under /dev.![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829211-da7731c7-e6c5-4093-8ec8-f992dffd172e.png)
++ The RC side can see PCIe related nodes under /dev.![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829211_da7731c7_e6c5_4093_8ec8_f992dffd172e.png)
 + Successful registration and use of the rkep driver can be queried.
 
 **EP side**
@@ -326,7 +326,7 @@ After the above configuration steps, you can see:
 
 In the RK provided software package, there are many test demos. The speed test demo is selected here: Rockchip\_PCIE\_EP\_Stardard\_Card\_20231215\\examples\\pcie\_speed\_test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829439-6367a603-3ec9-4d20-a142-4b4627cc3b5e.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829439_6367a603_3ec9_4d20_a142_4b4627cc3b5e.png)
 
 This demo needs to be compiled under Linux, and the compiled executable file should be copied to the development board for testing.
 
@@ -348,7 +348,7 @@ According to the information in the README.txt file in the examples directory, t
 
 After downloading the resources, copy the entire resource package to any directory of the Linux source code, and configure the compilation toolchain in the compilation tool script according to the README.txt document in the speed test demo.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829553-0c167216-5304-4f78-8e07-05493806c7b5.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829553_0c167216_5304_4f78_8e07_05493806c7b5.png)
 
 Main modifications are as follows:
 
@@ -386,7 +386,7 @@ make -f rc.mk CROSS_COMPILE=${RC_CROSS_COMPILE} HOST=${RC_HOST} MEM_CONFIG=${RC_
 
 In the script directory, execute the two .sh files respectively, and you will obtain the speed test demo executable files for the RC side and EP side.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829639-403e232a-856a-4e29-8ad8-2dc1f3964ebd.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829639_403e232a_856a_4e29_8ad8_2dc1f3964ebd.png)
 
 Copy them to the corresponding boards respectively for speed testing.
 
@@ -394,23 +394,23 @@ Rockchip\_PCIE\_EP\_Stardard\_Card\_20231215\\examples\\pcie\_speed\_test
 
 The README.txt file in the speed test demo folder explains how to use the executable file: Rockchip\_PCIE\_EP\_Stardard\_Card\_20231215\\examples\\pcie\_speed\_test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829712-2e465eb0-ef53-4623-83ef-180b99795e6e.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829712_2e465eb0_ef53_4623_83ef_180b99795e6e.png)
 
 EP side test script execution
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829785-8e93e403-ddf4-4f65-b305-ad04e6756b14.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829785_8e93e403_ddf4_4f65_b305_ad04e6756b14.png)
 
 RC side test script execution
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829856-5956b465-cc86-4e98-b5c4-2463d8d99728.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829856_5956b465_cc86_4e98_b5c4_2463d8d99728.png)
 
 EP side actual speed test result
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632829951-2c14c961-21a5-47b9-bcbf-626887bd9bea.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632829951_2c14c961_21a5_47b9_bcbf_626887bd9bea.png)
 
 RC side actual speed test result
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830024-764e2975-0735-40f2-ae1a-1e54f0a32fb6.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830024_764e2975_0735_40f2_ae1a_1e54f0a32fb6.png)
 
 
 
@@ -420,13 +420,13 @@ RC side actual speed test result
 
 It is found that the board gets stuck during startup, the terminal interface shows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830142-b7fec286-e5d0-4c57-bd7b-97ea4b7a0c63.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830142_b7fec286_e5d0_4c57_bd7b_97ea4b7a0c63.png)
 
 After waiting for a while, the SoM flashes blue abnormally.
 
 This is caused by modifying the configuration in RK3588MINIALL.ini during the configuration process.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830231-727754a5-4ea6-406e-ad6e-8150dba7198e.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830231_727754a5_4ea6_406e_ad6e_8150dba7198e.png)
 
 Need to set all zeros to default.
 
@@ -437,7 +437,7 @@ After trying the above method, the EP card still cannot boot into the system. At
 
 2\. Error occurs when using the speed test demo on the RC side
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830327-a33740e6-c212-40cf-8611-f5e245e51193.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830327_a33740e6_c212_40cf_8611_f5e245e51193.png)
 
 The above error is summarized as the program encountering issues when allocating huge page memory.
 
@@ -445,13 +445,13 @@ At this point, you can check the number of hugepages.
 
 `cat /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages`
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830410-90f570ae-3c4b-42d0-bcd7-e0257f63969d.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830410_90f570ae_3c4b_42d0_bcd7_e0257f63969d.png)
 
 It can be seen that the number is 0, use echo to assign a number.
 
 `echo 1000 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages`
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830491-5cd720e9-24c3-4dd8-ad67-8144236a3ff0.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830491_5cd720e9_24c3_4dd8_ad67_8144236a3ff0.png)
 
 This can resolve the above error.
 
@@ -461,6 +461,6 @@ The above information can also be found in the`/proc/meminfo`.
 
 `cat /proc/meminfo | grep Huge`
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1731632830580-fecbbe32-68d4-434b-9234-2a5418864f33.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_PCIE_Slave_Device_EP_Mode/1731632830580_fecbbe32_68d4_434b_9234_2a5418864f33.png)
 
 If it is 0, you need to set the number of hugepages.
