@@ -79,7 +79,7 @@ make forlinx_ok3588_defconfig
 make menuconfig ARCH=arm64
 ```
 
-![](https://typroa-xua.oss-cn-beijing.aliyuncs.com/20250430141844.png)
+![Image](./images/OK3588_Linux 5_10_209_Buildroot_Filesystem_Building_System_Tool_Adding/20250430141844.png)
 
 | Selection Option| Role|
 |:----------|----------|
