@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 |----------|----------|----------|
 | 07/30/2025| V1.0| Initial Version|
 
-## **HDMI DDC I2C Rate Modification**
+## HDMI DDC I2C Rate Modification
 
 This manual is applicable to the Buildroot and Ubuntu 22.04 systems running on Linux 5.10.209. The objective of this manual is to explain how to modify the DDC's I2C for the 209 kernel.
 

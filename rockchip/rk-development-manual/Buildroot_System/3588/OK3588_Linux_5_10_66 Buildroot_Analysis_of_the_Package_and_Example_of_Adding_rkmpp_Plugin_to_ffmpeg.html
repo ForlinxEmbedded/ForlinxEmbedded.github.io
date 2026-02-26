@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK3588 5.10.66 Buildroot Analysis of the Package and Example of Adding rkmpp Plugin to ffmpeg &mdash; Forlinx Embedded RK Development Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="../../_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Linux_5_10_66%20Buildroot_Analysis_of_the_Package_and_Example_of_Adding_rkmpp_Plugin_to_ffmpeg.html" />
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/theme-switcher.js?v=099e080c"></script>
+      <script src="../../_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">RK Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Common_Commands/index.html">Common Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Product_Design_Process/index.html">Product Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interfaces/index.html">Interface Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Buildroot System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Forlinx_Desktop_System/index.html">Forlinx Desktop System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Android_OS/index.html">Android OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Debian_OS/index.html">Debian OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../General_Platform_Skills_Knowledge/index.html">General Platform Skills Knowledge</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Forlinx Embedded RK Development Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OK3588 5.10.66 Buildroot Analysis of the Package and Example of Adding rkmpp Plugin to ffmpeg</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3588-5-10-66-buildroot-analysis-of-the-package-and-example-of-adding-rkmpp-plugin-to-ffmpeg">
+<h1>OK3588 5.10.66 Buildroot Analysis of the Package and Example of Adding rkmpp Plugin to ffmpeg<a class="headerlink" href="#ok3588-5-10-66-buildroot-analysis-of-the-package-and-example-of-adding-rkmpp-plugin-to-ffmpeg" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09/22/2025</p></td>
+<td><p>V1.0</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="analysis-of-the-package-and-example-of-adding-rkmpp-plugin-to-ffmpeg">
+<h2>Analysis of the Package and Example of Adding rkmpp Plugin to ffmpeg<a class="headerlink" href="#analysis-of-the-package-and-example-of-adding-rkmpp-plugin-to-ffmpeg" title="Link to this heading"></a></h2>
+<p>Platform：OK3588</p>
+<p>Source code:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>jellyfin-mpp<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/nyanmisaka/mpp.git<span class="w"> </span>rkmpp
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>jellyfin-rga<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/nyanmisaka/rk-mirrors.git<span class="w"> </span>rkrga
+git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/nyanmisaka/ffmpeg-rockchip.git<span class="w"> </span>ffmpeg
+</pre></div>
+</div>
+<p>Refere to: <a class="reference external" href="https://github.com/nyanmisaka/ffmpeg-rockchip/wiki/Compilation">Compilation · nyanmisaka/ffmpeg-rockchip Wiki (github.com)</a></p>
+<p>Modified package：rockchip-mpp，rockchip-rga，opencv4，ffmpeg</p>
+<p><strong>1. Buildroot</strong></p>
+<p>Buildroot is a tool that enables simple and automated cross-compilation to build a complete Linux system for embedded systems.</p>
+<p>To achieve this, Buildroot can generate cross-build toolchains, root filesystems, Linux kernel images, and boot loaders for your system. BuildRoot can be used independently with any combination of these options (for example, you can use an existing cross-compilation toolchain and compile only the root filesystem). Buildroot is primarily intended for developers working with embedded systems. Embedded systems typically use processors other than regular x86 processors used on PCs. They can be PowerPC processors, MIPS processors, or ARM processors.</p>
+<p>Refere to: <a class="reference external" href="https://blog.csdn.net/haimo_free/article/details/107677695">Buildroot中文用户手册_the buildroot user manual 中文-CSDN博客</a></p>
+<p><strong>2. Adding Software Packages to Buildroot</strong></p>
+<p>This section modifies the ffmpeg. mk and rockchip mpp. mk to adapt to the rkmpp plug-in of ffmpeg.</p>
+<p><strong>2.1 Adding the rockchip-mpp Package</strong></p>
+<p>Navigate to the Buildroot directory and examine the contents under ./package/rockchip/:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tree<span class="w"> </span>-L<span class="w"> </span><span class="m">1</span>
+.
+├──<span class="w"> </span>Config.in
+├──<span class="w"> </span>rockchip.mk
+</pre></div>
+</div>
+<p>Config.in</p>
+<p>It can be seen that the syntax of the Config. in is almost the same as that of KConfig, except that CONFIG _ becomes the BR2 _ PACKAGE _. In fact, this is a naming rule derived from buildroot through a series of its own tools and scripts, which is described below.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>menuconfig BR2_PACKAGE_ROCKCHIP
+        bool &quot;Rockchip Platform&quot;
+
+if BR2_PACKAGE_ROCKCHIP
+
+config BR2_PACKAGE_ROCKCHIP_HAS_ISP1
+        bool
+        help
+          Has Rockchip ISP1
+
+config BR2_PACKAGE_ROCKCHIP_HAS_ISP2
+        bool
+        help
+          Has Rockchip ISP2
+
+config BR2_PACKAGE_ROCKCHIP_HAS_ISP3
+        bool
+        help
+          Has Rockchip ISP3
+
+choice
+        default BR2_PACKAGE_RK3588
+        prompt &quot;Rockchip SoC&quot;
+
+config BR2_PACKAGE_RK3399
+        bool &quot;rk3399 chip&quot;
+        select BR2_ROCKCHIP_HAS_ISP1
+        help
+          Use Rockchip&#39;s rk3399 SoC
+
+config BR2_PACKAGE_RK356X
+        bool &quot;rk356x chip&quot;
+        select BR2_ROCKCHIP_HAS_ISP2
+        help
+          Use Rockchip&#39;s rk356x SoC
+
+config BR2_PACKAGE_RK3588
+        bool &quot;rk3588&quot;
+        select BR2_PACKAGE_ROCKCHIP_HAS_ISP3
+        help
+          Use Rockchip&#39;s rk3588 SoC
+
+endchoice
+
+# Camera Engine packages
+</pre></div>
+</div>
+<p>rockchip.mk</p>
+<div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="cp">include $(sort $(wildcard package/rockchip/*/*.mk))</span>
+</pre></div>
+</div>
+<p>Next, examine the configuration of the rockchip-mpp package.</p>
+<p>First, introduce the naming rules..</p>
+<p>Relationship between package name, configuration entry name, and makefile variable.</p>
+<p>In Buildroot, there are some relationships between them:</p>
+<ul class="simple">
+<li><p>The package name, which is the package directory name, is also the.mk file name.</p></li>
+<li><p>The configuration portal name is the name declared in the Config. In.</p></li>
+<li><p>Makefile variable prefix.</p></li>
+</ul>
+<p>The following rules must be used to ensure consistency between these elements:</p>
+<ul class="simple">
+<li><p>The package directory and.mk file name is the package name itself, such as package/foo- bar _ boo/foo- bar _ boo. mk.</p></li>
+<li><p>The make directory name is the package name itself, such as foo-bar _ boo.</p></li>
+<li><p>The configuration portal name is the package name in uppercase, where-is replaced by, and begins with BR2 _ PACKAGE, as in the BR2 _ PACKAGE _ FOO _ BAR _ BOO.</p></li>
+<li><p>The.mk file variable prefix is the package name in uppercase, where-is replaced by _, as in FOO _ BAR _ BOO _ VERSION.</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tree<span class="w"> </span>-L<span class="w"> </span><span class="m">1</span>
+├──<span class="w"> </span>Config.in
+├──<span class="w"> </span>rockchip-mpp.hash<span class="w"> </span><span class="c1"># During the software package building process, the hash checksum value will undergo comparison. Should the verification fail, the build process will be terminated. Typically, both the downloaded compressed package and the SHA256 value of the license are stored.</span>
+└──<span class="w"> </span>rockchip-mpp.mk
+</pre></div>
+</div>
+<p>rockchip-mpp.mk</p>
+<div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="c">################################################################################</span>
+<span class="c">#</span>
+<span class="c"># rockchip-mpp</span>
+<span class="c">#</span>
+<span class="c">################################################################################</span>
+
+<span class="c">#ROCKCHIP_MPP_SITE = $(TOPDIR)/../external/mpp</span>
+<span class="nv">ROCKCHIP_MPP_SITE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">$(</span>TOPDIR<span class="k">)</span>/../../../tools/rkmpp<span class="w">  </span><span class="c1">#Configure source code download path</span>
+<span class="nv">ROCKCHIP_MPP_VERSION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>develop#<span class="w"> </span>Configure<span class="w"> </span><span class="nb">source</span><span class="w"> </span>code<span class="w"> </span>version,<span class="w"> </span>and<span class="w"> </span>create<span class="w"> </span>rockchip-mpp-<span class="k">$(</span>ROCKCHIP_MPP_VERSION<span class="k">)</span><span class="w"> </span>directory<span class="w"> </span>under<span class="w"> </span>the<span class="w"> </span>build<span class="w"> </span>directory
+<span class="nv">ROCKCHIP_MPP_SITE_METHOD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">local</span><span class="w">  </span><span class="c1">#Download in local mode</span>
+
+
+
+<span class="nv">ROCKCHIP_MPP_LICENSE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Apache-2.0<span class="w">  </span><span class="c1">#License Type</span>
+<span class="nv">ROCKCHIP_MPP_LICENSE_FILES</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>LICENSE.md<span class="w">  </span><span class="c1">#License file</span>
+
+<span class="nv">ROCKCHIP_MPP_CONF_OPTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-DRKPLATFORM=ON&quot;</span><span class="w"> </span>
+
+<span class="nv">ROCKCHIP_MPP_DEPENDENCIES</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>libdrm
+
+<span class="nv">ROCKCHIP_MPP_INSTALL_STAGING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>YES<span class="w"> </span><span class="c1">#Whether to install in the starg space. When the library needs to be used as a dependent library, set YES, and it will be placed in the staging directory.</span>
+
+<span class="c"># Add CMake compilation options based on config. In compilation options </span>
+<span class="cp">ifeq ($(BR2_PACKAGE_ROCKCHIP_MPP_ALLOCATOR_DRM),y) </span>
+<span class="nv">ROCKCHIP_MPP_CONF_OPTS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s2">&quot;-DHAVE_DRM=ON&quot;</span>
+<span class="cp">endif</span>
+
+<span class="cp">ifeq ($(BR2_PACKAGE_ROCKCHIP_MPP_TESTS),y)</span>
+<span class="nv">ROCKCHIP_MPP_CONF_OPTS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s2">&quot;-DBUILD_TEST=ON&quot;</span>
+<span class="cp">endif</span>
+<span class="c"># Perform git repository operation in rsync phase</span>
+<span class="cp">define ROCKCHIP_MPP_LINK_GIT  </span>
+<span class="w">        </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="k">$(</span>@D<span class="k">)</span>/.git
+<span class="w">        </span>ln<span class="w"> </span>-s<span class="w"> </span><span class="k">$(</span>SRCDIR<span class="k">)</span>/.git<span class="w"> </span><span class="k">$(</span>@D<span class="k">)</span>/
+<span class="cp">endef</span>
+<span class="nv">ROCKCHIP_MPP_POST_RSYNC_HOOKS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>ROCKCHIP_MPP_LINK_GIT<span class="w"> </span><span class="c1">#See PS below for HOOK operation addition</span>
+
+<span class="cp">define ROCKCHIP_MPP_REMOVE_NOISY_LOGS</span>
+<span class="w">        </span>sed<span class="w"> </span>-i<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;/pp_enable %d/d&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span><span class="k">$(</span>@D<span class="k">)</span>/mpp/hal/vpu/jpegd/hal_jpegd_vdpu2.c<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span>
+<span class="w">        </span>sed<span class="w"> </span>-i<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;/reg size mismatch wr/i    if (0)&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span><span class="k">$(</span>@D<span class="k">)</span>/osal/driver/vcodec_service.c<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span>
+<span class="cp">endef</span>
+<span class="nv">ROCKCHIP_MPP_POST_RSYNC_HOOKS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>ROCKCHIP_MPP_REMOVE_NOISY_LOGS
+
+<span class="k">$(</span><span class="nv">eval</span> <span class="k">$(</span><span class="nv">cmake-package</span><span class="k">))</span>
+</pre></div>
+</div>
+<p>PS: HOOK operation is described in chapter 17.22 of the official manual.</p>
+<p>The generic infrastructure (as well as the derived infrastructures based on autotools and CMake build systems) allows packages to specify hooks. These hooks define additional actions to be performed after the corresponding steps. Most hooks are not particularly useful for generic packages, because the <code class="docutils literal notranslate"><span class="pre">.mk</span></code> file already has full control over the operations performed by the package at each step of the build process.</p>
+<p><strong>HOOK operations provide a space for executing custom commands across all build steps of a package.</strong></p>
+<p>DOWNLOAD, EXTRACT, RSYNC, PATCH, CONFIGURE, BUILD, INSTALL, INSTALL_STAGING, INSTALL_TARGET, INSTALL_IMAGES, LEGAL_INFO.</p>
+<p><strong>2.2 Add ffmpeg Package</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tree<span class="w"> </span>-L<span class="w"> </span><span class="m">1</span><span class="w"> </span>
+├──<span class="w"> </span>Config.in
+├──<span class="w"> </span>ffmpeg.hash
+├──<span class="w"> </span>ffmpeg.mk
+└──<span class="w"> </span>patch<span class="w">   </span><span class="c1">#These patches were originally in the upper directory, but due to the modification of the package source and version of ffmpeg, these patches are no longer applicable and are placed in the patch.</span>
+<span class="w">    </span>├──<span class="w"> </span><span class="m">0001</span>-swscale-x86-yuv2rgb-Fix-build-without-SSSE3.patch
+<span class="w">    </span>├──<span class="w"> </span><span class="m">0002</span>-avcodec-vaapi_h264-skip-decode-if-pic-has-no-slices.patch
+<span class="w">    </span>├──<span class="w"> </span><span class="m">0003</span>-libavutil-Fix-mips-build.patch
+<span class="w">    </span>└──<span class="w"> </span><span class="m">0004</span>-configure-add-extralibs-to-extralibs_xxx.patch
+</pre></div>
+</div>
+<p>ffmpeg.mk</p>
+<div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="c">#FFMPEG_VERSION = 4.4.1</span>
+<span class="c">#FFMPEG_SOURCE = ffmpeg-$(FFMPEG_VERSION).tar.xz</span>
+<span class="c">#FFMPEG_SITE = http://ffmpeg.org/releases</span>
+<span class="nv">FFMPEG_SITE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">$(</span>TOPDIR<span class="k">)</span>/../../../tools/ffmpeg-rockchip-master
+<span class="nv">FFMPEG_VERSION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>master
+<span class="nv">FFMPEG_SITE_METHOD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">local</span>
+<span class="nv">FFMPEG_INSTALL_STAGING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>YES
+<span class="err">···</span>
+<span class="cp">ifeq ($(BR2_PACKAGE_ROCKCHIP_MPP),y)</span>
+<span class="nv">FFMPEG_CONF_OPTS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>--enable-rkmpp<span class="w"> </span>--enable-version3
+<span class="nv">FFMPEG_DEPENDENCIES</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>rockchip-mpp
+<span class="cp">endif</span>
+<span class="err">···</span>
+<span class="c"># Override FFMPEG_CONFIGURE_CMDS: FFmpeg does not support --target and others</span>
+<span class="c">#The variable for the phase + _ CMDS indicates an override of the operation for that phase, in which case the command for the CONFIGURE phase performs the operation defined below</span>
+<span class="cp">define FFMPEG_CONFIGURE_CMDS</span>
+<span class="w">        </span><span class="err">(cd</span><span class="w"> </span><span class="k">$(</span><span class="nv">FFMPEG_SRCDIR</span><span class="k">)</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">rm</span><span class="w"> </span><span class="err">-rf</span><span class="w"> </span><span class="err">config.cache</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">\</span>
+<span class="w">        </span><span class="k">$(</span><span class="nv">TARGET_CONFIGURE_OPTS</span><span class="k">)</span><span class="w"> </span><span class="err">\</span>
+<span class="w">        </span><span class="k">$(</span><span class="nv">TARGET_CONFIGURE_ARGS</span><span class="k">)</span><span class="w"> </span><span class="err">\</span>
+<span class="w">        </span><span class="k">$(</span><span class="nv">FFMPEG_CONF_ENV</span><span class="k">)</span><span class="w"> </span><span class="err">\</span><span class="w"> </span><span class="c">#Operations required for the compilation environment prior to compilation</span>
+<span class="w">        </span>./configure<span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--enable-cross-compile<span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--cross-prefix<span class="o">=</span><span class="k">$(</span>TARGET_CROSS<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--sysroot<span class="o">=</span><span class="k">$(</span>STAGING_DIR<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--host-cc<span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>HOSTCC<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--arch<span class="o">=</span><span class="k">$(</span>BR2_ARCH<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--target-os<span class="o">=</span><span class="s2">&quot;linux&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--disable-stripping<span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--pkg-config<span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>PKG_CONFIG_HOST_BINARY<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span><span class="k">$(</span>SHARED_STATIC_LIBS_OPTS<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                </span><span class="k">$(</span>FFMPEG_CONF_OPTS<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span><span class="o">)</span>
+<span class="cp">endef</span>
+
+<span class="cp">define FFMPEG_REMOVE_EXAMPLE_SRC_FILES</span>
+<span class="w">        </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="k">$(</span>TARGET_DIR<span class="k">)</span>/usr/share/ffmpeg/examples
+<span class="cp">endef</span>
+<span class="nv">FFMPEG_POST_INSTALL_TARGET_HOOKS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span>FFMPEG_REMOVE_EXAMPLE_SRC_FILES
+
+<span class="k">$(</span><span class="nv">eval</span> <span class="k">$(</span><span class="nv">autotools-package</span><span class="k">))</span>
+</pre></div>
+</div>
+<p><strong>2.3 Upgrade of OpenCV package</strong></p>
+<p>In Buildroot, version upgrades and adaptations of third-party toolkits demand caution. After modifying the above package configs, you may face FFMPEG-based software incompatibility, hence no direct cross-compile and porting. OpenCV 4.5.4’s videoio module fails to compile due to missing AVCodec codec struct from AVStream in ffmpeg 4.4.1. It’s unsurprising for ffmpeg-based tools to have issues, as  the ffmpeg 6.1 is used. Fortunately, comparing ffmpeg and OpenCV source codes reveals that version 4.7.0 offers compatibility for this ffmpeg modification.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">// AVStream.codec deprecated in favor of AVStream.codecpar</span>
+<span class="c1">// https://github.com/FFmpeg/FFmpeg/blob/b6af56c034759b81985f8ea094e41cbd5f7fecfb/doc/APIchanges#L1039-L1040</span>
+<span class="cp">#if LIBAVFORMAT_BUILD &gt;= CALC_FFMPEG_VERSION(59, 16, 100)</span>
+<span class="c1">//#if LIBAVFORMAT_BUILD &gt;= CALC_FFMPEG_VERSION(57, 33, 100)</span>
+<span class="cp">#  define CV_FFMPEG_CODECPAR</span>
+<span class="cp">#  define CV_FFMPEG_CODEC_FIELD codecpar #The codec in version 4.1.1 is renamed to codecpar in version 6.1</span>
+<span class="cp">#else</span>
+<span class="cp">#  define CV_FFMPEG_CODEC_FIELD codec</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<p>The next step is to upgrade opencv4.7.0</p>
+<div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="c">#Change the version, and then modify the compilation options for different versions.</span>
+<span class="c">#OPENCV4_VERSION = 4.5.4</span>
+<span class="nv">OPENCV4_VERSION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>.7.0
+<span class="nv">OPENCV4_SITE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">$(</span>call<span class="w"> </span>github,opencv,opencv,<span class="k">$(</span>OPENCV4_VERSION<span class="k">))</span>
+<span class="nv">OPENCV4_INSTALL_STAGING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>YES
+<span class="nv">OPENCV4_LICENSE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Apache-2.0
+<span class="nv">OPENCV4_LICENSE_FILES</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>LICENSE
+<span class="nv">OPENCV4_CPE_ID_VENDOR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>opencv
+<span class="nv">OPENCV4_CPE_ID_PRODUCT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>opencv
+<span class="nv">OPENCV4_SUPPORTS_IN_SOURCE_BUILD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>NO
+
+<span class="c"># Disabled features (mostly because they are not available in Buildroot), but</span>
+<span class="c"># - eigen: OpenCV does not use it, not take any benefit from it.</span>
+<span class="nv">OPENCV4_CONF_OPTS</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_1394<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_CLP<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_EIGEN<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_GDAL<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_GPHOTO2<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_GSTREAMER_0_10<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_LAPACK<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_MATLAB<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="c">        # -DWITH_OPENCL=OFF</span>
+<span class="w">        </span>-DWITH_OPENCL<span class="o">=</span>ON<span class="w"> </span><span class="se">\ </span><span class="w"> </span><span class="c1">#Add OpenCL support</span>
+<span class="w">        </span>-DWITH_OPENCL_SVM<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_OPENEXR<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_OPENNI2<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_OPENNI<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_UNICAP<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_VA<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_VA_INTEL<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_VTK<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-DWITH_XINE<span class="o">=</span>OFF
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
