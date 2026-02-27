@@ -72,16 +72,16 @@ Apply the above patch information to the kernel source code, compile it, and the
 
 Connect the debug port at this time, then you can see the followings:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1737164370317-9542ca05-e918-4443-9028-6ef68a9f1a06.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Debug_Serial_Port_to_Normal_Serial_Port_Conversion/1737164370317_9542ca05_e918_4443_9028_6ef68a9f1a06.png)
 
 The log information is only output to the startup kernel part and then stops, indicating that the modification is successful.
 
 Use ADB to log in the development board, and use the fltest \_ uarttest script to test the function of uart2 common serial port.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1737164560704-1ff232e0-3774-46a2-bf4e-fc14491652d6.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Debug_Serial_Port_to_Normal_Serial_Port_Conversion/1737164560704_1ff232e0_3774_46a2_bf4e_fc14491652d6.png)
 
 The ADB terminal runs the script and sends the above red box information. If the uart2 function is normal, the serial terminal will receive the above red box information.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1737164639443-fbd2cef7-a566-465e-a121-02a6a40bd76c.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Debug_Serial_Port_to_Normal_Serial_Port_Conversion/1737164639443_fbd2cef7_a566_465e_a121_02a6a40bd76c.png)
 
 The received information is normal, the function of uart2 ordinary serial port is normal, and the modification is successful.

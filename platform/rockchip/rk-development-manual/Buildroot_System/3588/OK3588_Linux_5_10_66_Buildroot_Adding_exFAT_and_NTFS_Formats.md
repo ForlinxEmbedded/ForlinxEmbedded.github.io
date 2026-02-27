@@ -24,17 +24,17 @@ Shortcut: win + x
 
 Select Disk Management.
 
-![](file:///C:/Users/forlinx/AppData/Roaming/marktext/images/2024-12-21-16-45-35-image.png)![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1734915012934-b6075ebb-0d52-46f7-a165-624d511c1b58.png)
+![](file:///C:/Users/forlinx/AppData/Roaming/marktext/images/2024-12-21-16-45-35-image.png)![Image](./images/OK3588_Linux_5_10_66_Buildroot_Adding_exFAT_and_NTFS_Formats/1734915012934_b6075ebb_0d52_46f7_a165_624d511c1b58.png)
 
 Select the partition corresponding to the storage device, right click Format, select the required file system format, and click OK.
 
-![](file:///C:/Users/forlinx/AppData/Roaming/marktext/images/2024-12-21-16-48-37-image.png)![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1734915039708-c24c2778-ca49-4594-a824-4db18ad7c76d.png)
+![](file:///C:/Users/forlinx/AppData/Roaming/marktext/images/2024-12-21-16-48-37-image.png)![Image](./images/OK3588_Linux_5_10_66_Buildroot_Adding_exFAT_and_NTFS_Formats/1734915039708_c24c2778_ca49_4594_a824_4db18ad7c76d.png)
 
 Add exFAT and NTFS formats to buildroot system.
 
 1. Add the following configuration in the buildroot configuration item.
 
-![](C:\Users\forlinx\AppData\Roaming\marktext\images\2024-12-21-16-35-48-image.png)![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1734915066181-780ab298-0079-4789-ba30-5a9719cbc7ed.png)
+![](C:\Users\forlinx\AppData\Roaming\marktext\images\2024-12-21-16-35-48-image.png)![Image](./images/OK3588_Linux_5_10_66_Buildroot_Adding_exFAT_and_NTFS_Formats/1734915066181_780ab298_0079_4789_ba30_5a9719cbc7ed.png)
 
 2. Select to burn rootfs.ext2 to the board separately.
 
@@ -144,7 +144,7 @@ Device       Boot StartCHS    EndCHS        StartLBA     EndLBA    Sectors  Size
 
 ```
 
-![](C:\Users\forlinx\AppData\Roaming\marktext\images\2024-12-21-16-52-46-image.png)![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1734915118877-efd41be2-06d7-44b1-98a1-d8a315765e53.png)
+![](C:\Users\forlinx\AppData\Roaming\marktext\images\2024-12-21-16-52-46-image.png)![Image](./images/OK3588_Linux_5_10_66_Buildroot_Adding_exFAT_and_NTFS_Formats/1734915118877_efd41be2_06d7_44b1_98a1_d8a315765e53.png)
 
 **Mount**
 

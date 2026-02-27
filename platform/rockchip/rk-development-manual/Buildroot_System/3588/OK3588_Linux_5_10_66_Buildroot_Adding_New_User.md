@@ -45,7 +45,7 @@ forlinx@ubuntu:~/3568.5.10/OK3568_Linux_fs/buildroot$ make menuconfig
 
 Locate "Path to the users tables" under "System configuration," and enter system/user\_table.txt.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/46863139/1722997286314-7ca45733-b275-4f4c-a13a-7e2968588400.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_21%2Ctext_Rk9STElOWA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Adding_New_User/1722997286314_7ca45733_b275_4f4c_a13a_7e2968588400.png)
 
 Save the changes and exit.
 
