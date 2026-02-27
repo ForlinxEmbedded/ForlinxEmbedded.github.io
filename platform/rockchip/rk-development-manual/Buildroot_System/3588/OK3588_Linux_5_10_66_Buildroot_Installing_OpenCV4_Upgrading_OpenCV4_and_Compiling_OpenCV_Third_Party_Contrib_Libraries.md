@@ -42,7 +42,7 @@ Navigate to Target packages → Libraries → Graphics → opencv4 in the Buildr
 
 Press the "Enter" key to enter the opencv4 configuration menu. Make selections as shown in the figure below (ensure they match the options highlighted in the red box).
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45535139/1742799816593-189ccba7-31a6-4303-bf01-1e6256d56f40.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Installing_OpenCV4_Upgrading_OpenCV4_and_Compiling_OpenCV_Third_Party_Contrib_Libraries/1742799816593_189ccba7_31a6_4303_bf01_1e6256d56f40.png)
 
 After compilation, the following directories will be generated under:
 
@@ -174,13 +174,13 @@ cmake ..  -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=../add_contrib_ins
 
 During the build process, if the following printout appears, it indicates that the path configuration for the cross-compiler has become effective.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45535139/1742800489501-d02ef3d2-8c54-4e32-a967-edd40f7cf01d.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Installing_OpenCV4_Upgrading_OpenCV4_and_Compiling_OpenCV_Third_Party_Contrib_Libraries/1742800489501_d02ef3d2_8c54_4e32_a967_edd40f7cf01d.png)
 
 If the configuration is incorrect, the paths marked in the red box in the image below are /usr/bin/gcc and /usr/bin/g++.
 
 After the cmake build is completed, the following print information will be displayed.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45535139/1742800498676-4d8928db-ce24-4581-bab6-866160e7eb62.png)
+![Image](./images/OK3588_Linux_5_10_66_Buildroot_Installing_OpenCV4_Upgrading_OpenCV4_and_Compiling_OpenCV_Third_Party_Contrib_Libraries/1742800498676_4d8928db_ce24_4581_bab6_866160e7eb62.png)
 
 Due to compilation errors in certain modules, the compiler failed to process them properly. As a temporary workaround, please skip these erroneous modules. The commands used for this purpose are as follows:
 
