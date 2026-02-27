@@ -255,7 +255,7 @@ FFMPEG_POST_INSTALL_TARGET_HOOKS += FFMPEG_REMOVE_EXAMPLE_SRC_FILES
 $(eval $(autotools-package))
 ```
 
-**2.3 Upgrade of OpenCV package**
+**2.3 Upgrade of OpenCV Package**
 
 In Buildroot, version upgrades and adaptations of third-party toolkits demand caution. After modifying the above package configs, you may face FFMPEG-based software incompatibility, hence no direct cross-compile and porting. OpenCV 4.5.4's videoio module fails to compile due to missing AVCodec codec struct from AVStream in ffmpeg 4.4.1. It's unsurprising for ffmpeg-based tools to have issues, as  the ffmpeg 6.1 is used. Fortunately, comparing ffmpeg and OpenCV source codes reveals that version 4.7.0 offers compatibility for this ffmpeg modification.
 
