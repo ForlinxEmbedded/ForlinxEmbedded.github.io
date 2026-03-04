@@ -19,6 +19,8 @@ HARDWARE
 .. toctree::
    :caption: HARDWARE
    :maxdepth: 2
+
+   OK536x_C_User_Hardware_Manual
    
 SOFTWARE
 ------------
