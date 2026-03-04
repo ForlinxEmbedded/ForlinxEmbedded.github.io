@@ -264,6 +264,18 @@ Allwinner Series
    </div>
 
    <div class="product-card">
+     <a href="allwinner/ok536-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/allwinner/OK536-C.png" alt="OK536-C" class="product-image" />
+     </a>
+     <h3 class="product-title">OK536-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/t536-c-system-on-module-164.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="allwinner/ok536-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+
+   <div class="product-card">
      <a href="allwinner/okt507-c/index.html" target="_blank" rel="noopener noreferrer">
        <img src="_static/images/allwinner/OKT507-C.png" alt="okt507-c" class="product-image" />
      </a>
@@ -282,6 +294,17 @@ Allwinner Series
      <div class="btn-group">
        <a href="https://www.forlinx.net/product/a40i-system-on-module-58.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="allwinner/oka40i-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+   <div class="product-card">
+     <a href="allwinner/ok113i-s/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/allwinner/OK113i-S.png" alt="OK113i-S" class="product-image" />
+     </a>
+     <h3 class="product-title">OK113i-S</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/t113i-s-system-on-module-143.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="allwinner/ok113i-s/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
 
