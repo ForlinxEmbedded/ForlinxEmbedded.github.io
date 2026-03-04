@@ -100,7 +100,6 @@
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Python3_Installation.html">OK3568 4.19.206 Python3 Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Tool_Command_Line_for_Recording_Mouse_Actions.html">OK3568 4.19.206 Tool Command Line for Recording Mouse Actions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins</a></li>
-<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Package_Configuration_Fails_to_Apply.html">OK3568 4.19.206 Buildroot Package Configuration Fails to Apply</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Auto_start_Applications_on_Boot.html">OK3568 4.19.206 Buildroot Auto-start Applications on Boot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Add_an_Auto_start_Script.html">OK3568 4.19.206 Add an Auto-start Script</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Command_Line_Control_of_GPIO_Pins.html">OK3568 4.19.206 Buildroot Command Line Control of GPIO Pins</a></li>
@@ -136,6 +135,7 @@
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Adding_Fortran_Compilers.html">OK3568 4.19.206 Adding Fortran Compilers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Automatic_Detection_of_USB_Drive_Upgrade_Packages.html">OK3568 4.19.206 Automatic Detection of USB Drive Upgrade Packages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_206_Buildroot_Rapid_Deployment_of_CODESYS_Runtime.html">OK3568 4.19.206 Buildroot Rapid Deployment of CODESYS Runtime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3568_4_19_232_LinuxRT_Buildroot_Porting_for_EtherCAT.html">OK3568 4.19.232 LinuxRT Buildroot Porting for EtherCAT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="OK3568_5_10_160_Buildroot_New_Partition_Addition.html">OK3568 5.10.160 Buildroot New Partition Addition</a></li>
 </ul>
 </li>
@@ -209,8 +209,8 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>When configuring a sub-option under an existing, previously configured option in Buildroot, the new sub-configuration may not take effect.</p>
 <p>Example (Python):</p>
 <p>For example, if you have configured and compiled python3, add the configuration python-aiocoap under the external python modules again, and then recompile the file system, the changes will not take effect.</p>
-<p><img alt="Image" src="../../_images/1745563843491_5f5a7cdf_b701_40d0_8b00_e7fc640eaea81.png" /></p>
-<p><img alt="Image" src="../../_images/1745564166555_51f5cf40_89a9_445f_a103_033e7e0362d01.png" /></p>
+<p><img alt="Image" src="../../_images/1745563843491_5f5a7cdf_b701_40d0_8b00_e7fc640eaea8.png" /></p>
+<p><img alt="Image" src="../../_images/1745564166555_51f5cf40_89a9_445f_a103_033e7e0362d0.png" /></p>
 <p><strong>Solution:</strong></p>
 <p>1. You can simply re-make the package so that the changes are added. (Not recommended, because you need to re-package to add the changes to the file system.).</p>
 <p>When you need to compile a package separately, you can use the make xxx-rebuild directive, using python3 as an example:</p>
@@ -244,7 +244,7 @@ gzip -d -c /home/forlinx/3568.4.19/OK3568-linux-source/buildroot/dl/lzip-1.19.ta
 </pre></div>
 </div>
 <p>Manually unzip the package to the root directory of the development board to take effect or recompile the file system to package the changes into the image.</p>
-<p><img alt="Image" src="../../_images/1745565266287_f8e2017c_2a25_4908_b5f7_b5643cdb99911.png" /></p>
+<p><img alt="Image" src="../../_images/1745565266287_f8e2017c_2a25_4908_b5f7_b5643cdb9991.png" /></p>
 <p>2. Delete the package directly and recompile (recommended)</p>
 <p>A full Linux 5.10 kernel compilation does not automatically rebuild the filesystem. Please first execute: ./build.sh buildroot</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu22:~/3568/OK3568-linux-source/buildroot/output/OK3568/build$ rm -rf python3-3.10.5
