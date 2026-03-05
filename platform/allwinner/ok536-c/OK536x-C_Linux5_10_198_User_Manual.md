@@ -59,7 +59,7 @@ mmcblk0p1  mmcblk0p6  mmcblk1p1
 
 The OK536 development board features an SoM + carrier board design built around the Allwinner T536 processor. Operating at 1.6GHz, it integrates a quad-core Cortex-A55 CPU and a 64-bit XuanTie E907 RISC-V MCU for efficient computing. Key features include a 2TOPS NPU, support for secure boot, national cryptographic algorithms, ECC, AMP, Linux RT, and a wide range of interfaces such as USB, Ethernet, CAN, SPI, and UART.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982133299-c3df6fc4-845b-4d24-86a7-d1df982748bf.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982133299_c3df6fc4_845b_4d24_86a7_d1df982748bf.png)
 
 Note:
 
@@ -107,7 +107,7 @@ Login methods: serial login and network login.                                  
 + Display screen — connect the screen according to the development board interface (optional if display is not needed)
 + Check the boot mode (if a TF card is inserted, the system will boot from the TF card by default; otherwise, it will boot from eMMC)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1745803047340-a7755ec1-ba96-4ca1-a2dc-d3d7499f3cc3.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1745803047340_a7755ec1_ba96_4ca1_a2dc_d3d7499f3cc3.png)
 
 ### 2.2 Serial Port Login 
 
@@ -123,11 +123,11 @@ Terminal Setup Using PuTTY （User profile\\3-tools\\putty-64-bit\_x86.exe） as
 
 1\. Connect the development board and PC using a serial cable. Confirm the serial port number connected to the computer by checking in "Device Manager". The actual serial port number recognized by the computer shall prevail. Select "XR21V1414 USB UART Ch A".
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982135085-aa15bc49-69da-44ef-aaca-05ef6ab300b4.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982135085_aa15bc49_69da_44ef_aaca_05ef6ab300b4.png)
 
 2\. Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982135169-a60ff1ca-f20f-4365-b8e8-483fe05cecc0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982135169_a60ff1ca_f20f_4365_b8e8_483fe05cecc0.png)
 
 3\. Power on and log in: Turn on the development board. The serial terminal will display boot-up messages. Once the prompt root@OK536:/# appears, the system has fully booted. You are logged in automatically as the root user (no password required).
 
@@ -151,13 +151,13 @@ Before logging in to the network, you need to ensure that the network connection
 
 1\. Connect the eth0 of the development board to the computer via a network cable, power on the development board, and after the kernel starts, the red heartbeat light on the SoM will flash. After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1745803077533-1445b31b-2879-4ddb-848f-0ce0d302fe62.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1745803077533_1445b31b_2879_4ddb_848f_0ce0d302fe62.png)
 
 2\. Disable the computer firewall
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852798819-2b9890db-2900-46fd-bb1d-34fb7ffc3c35.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718852798819_2b9890db_2900_46fd_bb1d_34fb7ffc3c35.png)
 
 3\. Open Command Prompt as administrator
 
@@ -165,7 +165,7 @@ Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt a
 
 Data is returned, indicating that the network connection is normal.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852806972-0f90a319-5894-44cd-ac4c-5e7d58158bbb.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718852806972_0f90a319_5894_44cd_ac4c_5e7d58158bbb.png)
 
 #### 2.3.2 SSH Server
 
@@ -177,11 +177,11 @@ Data is returned, indicating that the network connection is normal.
 
 **You can use the scp command for file transfers.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852828220-846ff8b1-62c5-46ac-9e26-8600a5dce468.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718852828220_846ff8b1_62c5_46ac_9e26_8600a5dce468.png)
 
 After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852834871-326d584b-b5d2-47ff-a6bc-2f4c325934fc.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718852834871_326d584b_b5d2_47ff_a6bc_2f4c325934fc.png)
 
 ```plain
 Login as：root
@@ -220,7 +220,7 @@ Press 3: Cycles through and selects the multiplexing option for PCIe and USB 3.0
 
 **If you need to use USB 3.0 or PCIe, you need to set the DIP switch on the carrier board to the corresponding position and select it in the U-Boot menu.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982134968-fd14bca3-882f-4262-a091-3ddcfcf94cac.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982134968_fd14bca3_882f_4262_a091_3ddcfcf94cac.png)
 
 ### 2.5 Resistive Touchscreen Recalibration
 
@@ -304,11 +304,11 @@ This section mainly explains the usage of the development board’s extended int
 
 After the OK536 development board starts up, the desktop is displayed as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635255-5c2ffef7-3dc2-496e-b8af-db40dd42947c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635255_5c2ffef7_3dc2_496e_b8af_db40dd42947c.png)
 
 Click the arrow in the upper right corner to go to the next page.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635343-bb6f6dcc-b230-4e1f-b4e2-7dc2e60263a5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635343_bb6f6dcc_b230_4e1f_b4e2_7dc2e60263a5.png)
 
 ### 3.2 Network Configuration Test
 
@@ -318,7 +318,7 @@ Click the arrow in the upper right corner to go to the next page.
 
 **The set IP and other information will be saved to the system’s relevant configuration file (/etc/network/interfaces), so each reboot will use the network information set this time.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634308-35ff6666-5126-4640-94cf-bf3a12cded61.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634308_35ff6666_5126_4640_94cf_bf3a12cded61.png)
 
 Click the network configuration icon to enter the interface program, supporting both STATIC and DHCP modes.
 
@@ -334,33 +334,33 @@ Click the network configuration icon, select STATIC, as shown below: You can con
 | Gateway| Set gateway|
 | DNS| Set DNS|
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635413-58af5670-c435-4290-afbc-246f927a13d2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635413_58af5670_c435_4290_afbc_246f927a13d2.png)
 
 ### 3.3 Browser Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634399-1be17c69-ee90-407b-93b5-cade5ca589a2.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634399_1be17c69_ee90_407b_93b5_cade5ca589a2.png)
 
 Click the browser icon to enter the browser. Ensure the network is smooth during use, and ensure DNS is available before accessing external networks. The browser defaults to accessing the Forlinx Embedded official website upon startup, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635501-07900ff2-bffe-4d6b-a8e7-3ab1a9109382.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635501_07900ff2_bffe_4d6b_a8e7_3ab1a9109382.png)
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues.**
 
 ### 3.4 4G Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634475-d1a6f4cb-7486-4786-9d01-3c45a5d90f37.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634475_d1a6f4cb_7486_4786_9d01_3c45a5d90f37.png)
 
 The “4G” test program is used to test the OK536 external 4G module (EC20). Before testing, power off the development board, switch DIP switch A to ON, connect the 4G module, insert the SIM card (pay attention to the SIM card direction), start the development board, and open the test application. This test uses EC20 as an example:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982136692-13b4f03c-982b-439b-a028-8c0c0197757b.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982136692_13b4f03c_982b_439b_a028_8c0c0197757b.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635568-1bac2846-360c-4d80-82bf-01da8e406998.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635568_1bac2846_360c_4d80_82bf_01da8e406998.png)
 
 Click the start button, and the program will automatically enter the dial-up process and obtain IP, set DNS, etc. Wait patiently for a few seconds.
 
 ### 3.5 485 Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634550-59449ef2-e3ff-44ad-8404-75703c94f5eb.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634550_59449ef2_e3ff_44ad_8404_75703c94f5eb.png)
 
 This test uses UART8 (ttyAS8) and performs a serial port test with the serialTool.
 
@@ -368,7 +368,7 @@ This test uses UART8 (ttyAS8) and performs a serial port test with the serialToo
 
 1\. Click the Terminal test icon to enter the following interface and set serial port parameters:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853168898-b3b1fca6-41b1-447b-a0ae-4082f1f75014.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853168898_b3b1fca6_41b1_447b_a0ae_4082f1f75014.png)
 
 2\. Click the settings button in the upper left corner and set the serial port parameters to be consistent with the computer-side serial port tool parameters, as shown below:
 
@@ -381,25 +381,25 @@ This test uses UART8 (ttyAS8) and performs a serial port test with the serialToo
 | Stop bits| Set stop bits (1 bit)|
 | Flow control| Set flow control (no flow control)|
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635638-5b67b522-9021-47df-ba72-abe20bfe2a58.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635638_5b67b522_9021_47df_ba72_abe20bfe2a58.png)
 
 3\. After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;
 
 4\. Open the serial port tool on the computer, click on the black screen area in the test interface to pop up the soft keyboard, input characters and press Enter. The screen will then display the data received by the serial port.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635713-700352df-9f69-4e33-8040-8cbe1213c0bb.png)![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635787-7228a9e8-3d4c-4620-aeb6-4184a907459e.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635713_700352df_9f69_4e33_8040_8cbe1213c0bb.png)![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635787_7228a9e8_3d4c_4620_aeb6_4184a907459e.png)
 
 5\. In the serialTool send box, input the content to send, click send, and the test interface will display the received content.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635849-33d4f33f-bda4-44dc-bd5b-ea2c7764c643.png)![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635937-f61ef1e4-4475-47e7-b8e3-907252fec079.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635849_33d4f33f_bda4_44dc_bd5b_ea2c7764c643.png)![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635937_f61ef1e4_4475_47e7_b8e3_907252fec079.png)
 
 ### 3.6 ADC Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634614-5ff19761-5b29-4b7f-ab60-e62c47cbace3.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634614_5ff19761_5b29_4b7f_ab60_e62c47cbace3.png)
 
 14 x GPADC are led out from the OK536 carrier boaard. All channels are floating by default. Short the corresponding pins to measure the potentiometer value. The maximum value 4096 corresponds to a voltage of 1.8V.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636009-1d1f6acc-d499-4d54-a6db-990db7528e47.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636009_1d1f6acc_d499_4d54_a6db_990db7528e47.png)
 
 ### 3.7 WiFi Test
 
@@ -409,45 +409,45 @@ Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634614-5ff19761-
 
 - **“WIFI” is a tool for configuring WiFi and can test the STA mode of WiFi.**
 
-1\. Click the icon![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634710-810d3986-6d83-4c50-af39-3087499c0390.png)to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field,
+1\. Click the icon![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634710_810d3986_6d83_4c50_af39_3087499c0390.png)to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field,
 
 enter the router password in the PASSWORD field, and click "Connect" to connect to the router via WiFi.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636130-bf968f31-8f1f-4b7d-b699-458dbe369da9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636130_bf968f31_8f1f_4b7d_b699_458dbe369da9.png)
 
 2\. After a successful connection, set the IP and then click “ping” to perform a network test.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636210-95cac5e2-d0f7-4e11-b4bc-8f6e380aa0ee.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636210_95cac5e2_d0f7_4e11_b4bc_8f6e380aa0ee.png)
 
 ### 3.8 RTC Test
 
 **Note: Ensure that a button battery is installed on the board and the battery voltage is normal.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634810-446f2015-f29f-46f5-8e51-1172433d44a6.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634810_446f2015_f29f_46f5_8e51_1172433d44a6.png)
 
 The RTC test involves setting the time via the test software, then powering off and restarting. Run the test software again to check if the RTC clock is synchronized.
 
 Run the RTC test software to view and set the current system time, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636577-4138e54d-2913-47bd-ab33-c53654a81860.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636577_4138e54d_2913_47bd_ab33_c53654a81860.png)
 
 ### 3.9 Key Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634867-9e01bef6-9698-43b4-a847-4f00224c2794.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634867_9e01bef6_9698_43b4_a847_4f00224c2794.png)
 
 “Keypad” is used to test whether the platform’s built-in keys are usable. It determines if the key functions normally by detecting whether the corresponding key turns blue after being pressed. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636643-8762cafb-9c53-4409-8b32-e3d86640cad3.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636643_8762cafb_9c53_4409_8b32_e3d86640cad3.png)
 
 There are four physical keys KEY1, KEY2, KEY3, KEY4 on the side of the OK536 carrier board. When a key is pressed, the corresponding key in the test application will turn blue, indicating the key functions normally.
 
 ### 3.10 Watchdog Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683634948-5b998e90-0bd0-4140-a72c-44787d10f607.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683634948_5b998e90_0bd0_4140_a72c_44787d10f607.png)
 
 “WatchDog” is an application used to test whether the watchdog function is normal. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636730-5463efef-1c7d-4e8b-b0d7-98a07edcca26.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636730_5463efef_1c7d_4e8b_b0d7_98a07edcca26.png)
 
 Check “feed dog”, click the “open watchdog” button, and the watchdog function will be started. The program will perform dog feeding operations, and normally the system will not reboot.
 
@@ -455,35 +455,35 @@ Uncheck “feed dog”, click the “open watchdog” button, and the watchdog f
 
 ### 3.11 Pingt Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853354578-726b52d8-008b-46fa-984a-6b28b5c2037b.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853354578_726b52d8_008b_46fa_984a_6b28b5c2037b.png)
 
 “Ping” is an interface version of the commonly used network test command ping. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853360248-4e364094-3548-4ccd-ad5a-a645e0618579.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853360248_4e364094_3548_4ccd_ad5a_a645e0618579.png)
 
 In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.
 
 As shown in the figure, it indicates the network between them is smooth.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853366769-58cb2cca-95e5-4cf7-8502-e6511b2e3e2d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853366769_58cb2cca_95e5_4cf7_8502_e6511b2e3e2d.png)
 
 ### 3.12 Backlight Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635020-8dc48e07-4365-433b-bec7-f3cfa4a32b43.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635020_8dc48e07_4365_433b_bec7_f3cfa4a32b43.png)
 
 “BackLight” is an LCD backlight adjustment application. Adjust the progress bar left and right to adjust the backlight brightness. After opening, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636796-e41f1228-4cc5-45ca-ab24-a259ede2dcf0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636796_e41f1228_4cc5_45ca_ab24_a259ede2dcf0.png)
 
 Drag the slider in the interface to set the LCD backlight brightness. 1 is the dimmest, 255 is the brightest. 0 needs to be set via the command line. Refer to “4.21 LCD Backlight Adjustment”.
 
 ### 3.13 Music Playback Test
 
-Use the application icon  “ ![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635105-03b4b57a-20c2-4b88-889b-37b1f3b2f71c.png) ”  to test music playback.
+Use the application icon  “ ![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635105_03b4b57a_20c2_4b88_889b_37b1f3b2f71c.png) ”  to test music playback.
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853468214-c3aa49a4-25fd-4931-97e6-52a27aae6cb2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853468214_c3aa49a4_25fd_4931_97e6_52a27aae6cb2.png)
 
 Application Interface
 
@@ -493,13 +493,13 @@ Click the button in the lower left corner and select the test audio /forlinx/aud
 
 The OK536 cpu0-cpu3 maximum main frequency is 1.6GHz. By default, the CPU dynamically adjusts the main frequency according to load, but it can also be set to a fixed CPU main frequency.
 
-Click the desktop settings icon![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853483156-0250fdcf-60f4-4065-b5fc-babdd8f886c2.png)to enter the next-level menu:
+Click the desktop settings icon![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853483156_0250fdcf_60f4_4065_b5fc_babdd8f886c2.png)to enter the next-level menu:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982137418-51c56481-54fa-4894-9827-f050b6567234.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982137418_51c56481_54fa_4894_9827_f050b6567234.png)
 
-Click the icon![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853495816-aa3a65e6-63a7-49a6-8445-db7d202ae3c5.png)to enter the CPU main frequency setting page.
+Click the icon![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853495816_aa3a65e6_63a7_49a6_8445_db7d202ae3c5.png)to enter the CPU main frequency setting page.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982137590-8a0a6a92-befd-499a-980b-3085ace10aa9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982137590_8a0a6a92_befd_499a_980b_3085ace10aa9.png)
 
 Set OnDemand Governor：Dynamically adjust the main frequency on demand.
 
@@ -509,31 +509,31 @@ Set Frequency CPU0-3：Set the small core main frequency.
 
 Take setting the small core frequency as an example: First click “Set Userspace Governor”, click “RUN” in the pop-up dialog, 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853509090-50711674-801f-456a-a2d4-59f3c8a571ef.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853509090_50711674_801f_456a_a2d4_59f3c8a571ef.png)
 
 then click “Set Frequency CPU0-3” to set a fixed frequency. (Click the arrow in the upper right corner to return to the previous directory, click the icon in the upper right corner to return to the main directory).
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982137678-739ad9ec-8045-4ff6-bd0d-22c991f7f235.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982137678_739ad9ec_8045_4ff6_bd0d_22c991f7f235.png)
 
 Select the corresponding frequency according to needs for setting.
 
 ### 3.15 SQLite3 Data Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853565604-5f62ec21-046b-4fa6-be63-59dfac10abb2.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718853565604_5f62ec21_046b_4fa6_be63_59dfac10abb2.png)
 
 Click the icon to enter the database test interface.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636860-9f135e5c-c338-420b-9327-bbb11d53b955.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636860_9f135e5c_c338_420b_9327_bbb11d53b955.png)
 
 Select the row that needs to be modified, and you can modify the value of each column.
 
 ### 3.16 SPI Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683635176-a5cfd670-0751-4a16-a3e0-398e3b2b94e1.png)
+Icon:![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683635176_a5cfd670_0751_4a16_a3e0_398e3b2b94e1.png)
 
 Click the icon to enter the SPI test interface. Short the SPI0\_MOSI and SPI0\_MISO pins, click send below, and you can receive the sent data to complete the test.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683636927-05413d52-d173-47e8-a984-b5e4856c00bd.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683636927_05413d52_d173_47e8_a984_b5e4856c00bd.png)
 
 ## 4\. OK536 Command Function Test
 
@@ -742,7 +742,7 @@ The OK536-C development board is equipped with 6 UART interfaces, which are dist
 
 This test uses 485\_0 and 485\_1 for loopback testing. Connect 485\_A0 to 485\_A1 and 485\_B0 to 485\_B1.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139276-e591d53c-0552-43f4-bab2-11f49cc5a3ac.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139276_e591d53c_0552_43f4_bab2_11f49cc5a3ac.png)
 
 Enter the following command in the development board serial port:
 
@@ -760,9 +760,9 @@ root@OK536:/#
 
 The development board exposes 14 channels of GPADC with a voltage sampling range of 0~1.8V. Short-circuit the test adc pin to pin 1 or 2 of the P42 terminal, and adjust the sampling voltage via the R259 potentiometer:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139420-25b212b7-45b7-472a-83dc-e59cc8f684c3.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139420_25b212b7_45b7_472a_83dc_e59cc8f684c3.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139529-ab7f23c6-2c97-4635-aa7a-11d02171c149.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139529_ab7f23c6_2c97_4635_aa7a_11d02171c149.png)
 
 Run fltest\_adc, enter 3 to read the /dev/input/event3 event, corresponding to GPADC1 channel8 (GPADC1-8 in the schematic).
 
@@ -912,7 +912,7 @@ root@OK536:/# dd if=/root/data.img of=/dev/null bs=1M count=500 iflag=direct
 
 The OK536 supports four USB2.0 interfaces, three of which are expanded via a USB hub and multiplexed with OTG. Toggle DIP switch A to switch between OTG and the USB hub. When DIP switch B is set to PCIe, the USB3.0 interface functions as USB2.0.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139603-8b6d2604-620e-4270-af2f-ec34ccf23f99.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139603_8b6d2604_620e_4270_af2f_ec34ccf23f99.png)
 
 1\. After booting the development board, connect a USB drive to the USB host interface on the board;
 
@@ -1134,7 +1134,7 @@ Run iperf3 in server mode in the Windows cmd terminal: The IP for eth0 on the de
 D:\iperf-3.1.3-win64\iperf-3.1.3-win64>iperf3.exe -s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854539950-06c8eebd-c99a-4250-9310-1b437aaa0257.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718854539950_06c8eebd_c99a_4250_9310_1b437aaa0257.png)
 
 
 
@@ -1193,7 +1193,7 @@ root@OK536:/#
 
 The OK536 development board comes pre-installed with a lighttpd web server, and the service starts automatically at system boot. Enter the development board’s IP address in a browser to access the web pages on the board’s web server, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1753683638660-6a7693f1-d3de-48cc-abd4-ac4ad8063d7a.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1753683638660_6a7693f1_d3de_48cc_abd4_ac4ad8063d7a.png)
 
 #### 4.14.2 SFTP
 
@@ -1205,9 +1205,9 @@ Install the FileZilla tool on Windows and set it up as shown in the figure below
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139684-53a653a8-0e6e-498b-96c9-9ce4dadb42fc.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139684_53a653a8_0e6e_498b_96c9_9ce4dadb42fc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854578304-c6b101f0-d6c3-4756-91c1-fe5ae9b55718.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718854578304_c6b101f0_d6c3_4756_91c1_fe5ae9b55718.png)
 
 After successful login, upload and download operations can be performed.
 
@@ -1288,7 +1288,7 @@ The OK536 supports the 4G module. Insert the 4G module before starting the devel
 
 1\. Toggle switch A to ON, connect the module, and after powering on the development board and module, check the USB status via the lsusb command;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139765-23b24c2d-a739-475e-a9cd-fe631dfc49d3.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139765_23b24c2d_a739_475e_a9cd_fe631dfc49d3.png)
 
 ```plain
 root@OK536:/# lsusb
@@ -1492,7 +1492,7 @@ root@OK536:/# vi /autorun.sh
 
 Modify the file reference as follows (users need to modify according to their actual situation):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854651415-ad525e3b-3519-432f-ad11-78ebde105f37.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718854651415_ad525e3b_3519_432f_ad11_78ebde105f37.png)
 
 2\. After modification, save and exit, then add execution permission to the script;
 
@@ -1514,7 +1514,7 @@ To add a startup script when flashing the image, modifications need to be made i
 
 Content format reference as follows; please modify according to your actual needs:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854671764-11a6e703-7780-404e-9e7f-1a2c5189ef6c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718854671764_11a6e703_7780_404e_9e7f_1a2c5189ef6c.png)
 
 Use the chmod +x autorun.sh command to add execution permission to the file.
 
@@ -1627,7 +1627,7 @@ There are 4 x CANFD, which are led out to the P35 socket.
 
 Using CAN1 and CAN2 as an example, short-circuit the H, L, and GND lines of CAN1 and CAN2 for testing.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139860-87a5621f-f81d-4c0f-8e9c-09dc33c6f2d2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139860_87a5621f_f81d_4c0f_8e9c_09dc33c6f2d2.png)
 
 1\. CAN FD Testing
 
@@ -1688,7 +1688,7 @@ root@OK536:~# cangen can1
 
 There is a spi4 led out from the development board, which is on the P12 terminal.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139947-9d4a52e3-c141-472e-9060-1cdb340c01c1.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982139947_9d4a52e3_c141_472e_9060_1cdb340c01c1.png)
 
 Test by short-circuiting SPI4\_MOSI and SPI4\_MISO.
 
@@ -1709,7 +1709,7 @@ F0 0D
 
 ### 4.27 GPIO Test
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140079-2f2f97f5-f425-4369-bccd-e1cd7037abbb.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140079_2f2f97f5_f425_4369_bccd_e1cd7037abbb.png)
 
 Using PA3 as an example: GPIO number formula: (A-1)\*32 + nr. For PA3, A=1, nr=3, so the number is 3.
 
@@ -1739,7 +1739,7 @@ root@OK536:/# echo 3 > /sys/class/gpio/unexport
 
 USB 3.0 and PCIe on the OK536-C are multiplexed functions and cannot work simultaneously. Function must be switched in the U-Boot menu.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140151-5efe8a73-8c50-46ea-b781-bc87d30d441d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140151_5efe8a73_8c50_46ea_b781_bc87d30d441d.png)
 
 Change the carrier board DIP switch to select USB3.0.
 
@@ -1983,7 +1983,7 @@ Default agent request successful
 
 After the above settings, open your computer and search for Bluetooth. Click "Add Bluetooth or Other Devices", and a device named "OKT536" will appear. Click on this Bluetooth to attempt pairing,
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854751055-40b40021-d9a9-4094-a8da-bf3e33ded013.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718854751055_40b40021_d9a9_4094_a8da_bf3e33ded013.png)
 
 The print information on the development board is as follows. Enter "yes":
 
@@ -2050,23 +2050,23 @@ After successful pairing, on the computer side, you can use Bluetooth to send fi
 
 Click "Send or receive files via Bluetooth".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855264803-546e43f0-8bac-4568-9251-aba4739cd77a.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718855264803_546e43f0_8bac_4568_9251_aba4739cd77a.png)
 
 Select OKT536.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140260-7f89d98d-82a7-464c-b328-18e97ba98a52.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140260_7f89d98d_82a7_464c_b328_18e97ba98a52.png)
 
 Select the file to send.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855311685-52169b3c-eae7-4cc7-a967-26ba5922d0b9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718855311685_52169b3c_eae7_4cc7_a967_26ba5922d0b9.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140350-8a62ea19-d472-481d-a0ab-d284ff619e82.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140350_8a62ea19_d472_481d_a0ab_d284ff619e82.png)
 
 Waiting for sending to complete.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140429-033ffbeb-be28-4029-8db6-737940fc7ab0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140429_033ffbeb_be28_4029_8db6_737940fc7ab0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140512-02fd3af9-a0ab-4209-89b7-a56ee0173727.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140512_02fd3af9_a0ab_4209_89b7_a56ee0173727.png)
 
 The received file is saved in the /tmp directory.
 
@@ -2076,7 +2076,7 @@ Similarly, you can use the development board to send files to the computer. The 
 
 Select "Receive File" on the computer side.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855360798-c018e7d4-f48b-4af9-86da-3b6f4e6741df.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718855360798_c018e7d4_f48b_4af9_86da_3b6f4e6741df.png)
 
 ```plain
 root@OK536:~# bluetoothctl 
@@ -2171,11 +2171,11 @@ awnn_uninit total: 0.55 ms.
 
 Test picture:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140593-2448a137-4b4c-43f8-9d9c-0ef712809e52.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140593_2448a137_4b4c_43f8_9d9c_0ef712809e52.png)
 
 Output picture:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140695-2a281494-abdc-4520-97b5-7d6458b13625.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140695_2a281494_abdc_4520_97b5_7d6458b13625.png)
 
 ### 4.33 G2D Test
 
@@ -2230,11 +2230,11 @@ DEBUG  : ionAlloc <ion_alloc_palloc_base:426>: alloc succeed, addr_phy: 0xfec000
 
 Before rotation:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140781-93d8e2c5-ca64-452f-924c-746fcd5c733d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140781_93d8e2c5_ca64_452f_924c_746fcd5c733d.png)
 
 After rotation:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140876-674a5ae5-48da-4b85-93d8-2e728932f490.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982140876_674a5ae5_48da_4b85_93d8_2e728932f490.png)
 
 ### 4.34 Sleep Wakeup
 
@@ -2430,7 +2430,7 @@ Unzip PhoenixSuit\_v1.13.zip. Connect the board to the PC via a Type-C cable.
 
 Important: Set the function switch to OTG mode.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982144276-ff0ecfab-e37c-48ec-91e3-b4048e77b0e3.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982144276_ff0ecfab_e37c_48ec_91e3_b4048e77b0e3.png)
 
 Connect the board’s USB0 to the host PC via a Type-C cable.
 
@@ -2440,15 +2440,15 @@ Press and hold the FEL button. While holding FEL, press and release the RESET bu
 
 Open the Windows Device Manager and you will find an unknown device with a yellow exclamation mark. Select "Manually install driver", right-click on the unknown device, and choose "Update driver"
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865053037-e5f86fbc-1486-4659-92bb-e76cd757b12d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865053037_e5f86fbc_1486_4659_92bb_e76cd757b12d.png)
 
 After selecting "Browse my computer to find the driver", choose the unzipped PhoenixSuit\_v1.13 directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865068116-92a779fe-a126-4e2b-b070-bcac89d74dca.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865068116_92a779fe_a126_4e2b_b070_bcac89d74dca.png)
 
 After driver installation, run PhoenixSuit.exe. The bottom-left should show “Device connected successfully”.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982144422-297d7dcb-05a9-4e39-9b37-7282ab394021.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982144422_297d7dcb_05a9_4e39_9b37_7282ab394021.png)
 
 #### 6.2.2 OTG Flashing Methods
 
@@ -2460,7 +2460,7 @@ This programming method will program the entire img image.
 
 In the following interface, click "One-click Flash" and then click "Browse" to select the firmware image file.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982144573-31b7319e-9981-4b3c-8595-4840c70b7a60.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982144573_31b7319e_9981_4b3c_8595_4840c70b7a60.png)
 
 Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button.
 
@@ -2468,11 +2468,11 @@ Connect the USB0 of the development board to the host using a Type-A to Type-C c
 
 In the following interface, click "Yes" to enter the formatting upgrade mode:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982144656-33c3f09c-c5a7-4482-8aa5-dd8560042e99.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982144656_33c3f09c_c5a7_4482_8aa5_dd8560042e99.png)
 
 Wait for the programming to complete. Then, the following interface will pop up:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982144775-853678c4-5852-47f5-b3a7-147b816af0c7.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982144775_853678c4_5852_47f5_b3a7_147b816af0c7.png)
 
 After the flashing, the board will automatically power on
 
@@ -2482,13 +2482,13 @@ a) OTG U-Boot Update Only:
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check the "BOOT-RESOURCE" and "ENV" checkboxes.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982144886-0461da28-2cc5-44ad-8bcc-0d89ce88205d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982144886_0461da28_2cc5_44ad_8bcc_0d89ce88205d.png)
 
 Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: Make sure to press the FEL button when the power is off.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145056-1f7e6a8d-b921-4eab-addd-2b974c463009.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145056_1f7e6a8d_b921_4eab_addd_2b974c463009.png)
 
 2）OTG Flashing Kernel Image and Device Tree DTB File
 
@@ -2496,25 +2496,25 @@ In the following interface, check the checkbox "Single or multi-partition downlo
 
 The kernel image is placed in the "BOOT" partition.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145192-ef732f51-c45b-4e7c-b908-2a982737453c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145192_ef732f51_c45b_4e7c_b908_2a982737453c.png)
 
 Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: Make sure to press the FEL button when the power is off.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145443-ac61d194-a674-4800-b932-886750d459e5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145443_ac61d194_a674_4800_b932_886750d459e5.png)
 
 3 ）OTG System Flashing
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check "ROOTFS".
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145586-386769ff-e4ef-42bc-8d4f-5b79504573ac.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145586_386769ff_e4ef_42bc_8d4f_5b79504573ac.png)
 
 Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: Make sure to press the FEL button when the power is off.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145687-283aaf0f-f7f0-4a7b-9c1e-438e266a180e.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145687_283aaf0f_f7f0_4a7b_9c1e_438e266a180e.png)
 
 #### 6.2.3 Common OTG Flashing Issues
 
@@ -2522,7 +2522,7 @@ Connect the USB0 of the development board to the host using a Type-A to Type-C c
 
 After following the manual to install the USB driver, some users still see an "Unknown device" in Device Manager. When expanding the "Unknown device" details, a message appears indicating that the third-party INF does not contain digital signature information, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865268647-add5cacc-0f39-44ca-9e28-1a9e532154e2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865268647_add5cacc_0f39_44ca_9e28_1a9e532154e2.png)
 
 This issue occurs because some Windows systems, in order to prevent third-party programs from affecting system stability, block unsigned drivers from passing verification, causing the driver installation to fail. First disable the driver signature enforcement setting on the computer, and then proceed with the driver installation according to the manual.
 
@@ -2530,15 +2530,15 @@ This issue occurs because some Windows systems, in order to prevent third-party 
 
 1). First press and hold Shift + Restart;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865282319-8e077ae9-9f5c-4549-9a2e-0d5549cd10c2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865282319_8e077ae9_9f5c_4549_9a2e_0d5549cd10c2.png)
 
 2). When starting up, select Troubleshoot → Advanced Options → Startup Settings;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865476235-8a469de9-3ad1-45a9-929c-fa82a67562a1.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865476235_8a469de9_3ad1_45a9_929c_fa82a67562a1.png)
 
 3). On the Startup Settings screen, click Restart in the bottom right corner. After restarting and entering Startup Settings, press the number key 7 or function key F7 to disable driver signature enforcemen.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865487473-58ad1236-653d-426e-af69-5631e1e5fce0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865487473_58ad1236_653d_426e_af69_5631e1e5fce0.png)
 
 2\. Incorrect use of FEL button
 
@@ -2546,11 +2546,11 @@ When flashing, do not power on the board first. Press and hold the FEL button, t
 
 3\. Device name appears but the board still cannot be recognized
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865537070-3e0d4969-1a2b-4c8b-a31b-7d31f69dd091.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865537070_3e0d4969_1a2b_4c8b_a31b_7d31f69dd091.png)
 
 This may be because there are many unknown devices in Device Manager, and selecting the wrong one could cause the driver to be installed to another device. First right-click the device item mentioned above, select "Uninstall device", and check "Delete the driver software for this device".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865547495-2c3fbd23-dae1-4b61-bfc4-199fab45dab0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1718865547495_2c3fbd23_dae1_4b61_bfc4_199fab45dab0.png)
 
 After uninstalling, disconnect other USB devices connected to the host, put the development board into flashing mode and connect it to the host, then repeat the above steps for installation.
 
@@ -2566,7 +2566,7 @@ Tool path: 3-Tools\\PhoenixCard\_V4.1.9.zip
 
 The following interface will appear:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145804-043db503-19e0-4ccc-bd20-d020cad1cc15.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145804_043db503_19e0_4ccc_bd20_d020cad1cc15.png)
 
 Note: If the TF card has multiple partitions, click "Restore Card" first, then click "Burn Card"; otherwise, the burning process may fail.
 
@@ -2574,7 +2574,7 @@ Note: If the TF card has multiple partitions, click "Restore Card" first, then c
 
 Wait for the burning process to complete, as shown in the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145906-e69aedd6-3ed5-4eda-9196-ef3a5671cd1d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145906_e69aedd6_3ed5_4eda_9196_ef3a5671cd1d.png)
 
 #### 6.3.2 TF Card Flashing Method
 
@@ -2609,4 +2609,4 @@ SUNXI_UPDATE_NEXT_ACTION_SHUTDOWN
 
 #### 6.3.3 Restoring the TF Card
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982145985-dafffa8f-e8f3-4fe0-9624-9c84210c6ba7.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982145985_dafffa8f_e8f3_4fe0_9624_9c84210c6ba7.png)
