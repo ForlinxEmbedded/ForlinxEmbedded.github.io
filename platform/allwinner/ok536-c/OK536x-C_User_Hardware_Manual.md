@@ -44,7 +44,7 @@ Furthermore, the T536 series supports a combination of RGB/MIPI DSI/LVDS interfa
 
 **T536 Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1740982786280-a5bb9912-a0f9-4447-9156-e61cb1745b2c.jpg)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982786280_a5bb9912_a0f9_4447_9156_e61cb1745b2c.jpg)
 
 **T536 series SoCs.**
 
@@ -62,17 +62,17 @@ Furthermore, the T536 series supports a combination of RGB/MIPI DSI/LVDS interfa
 
 ### 2.1 SoM Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982787787-e72ab070-5746-48b8-83ec-55e1d98e92b2.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982787787_e72ab070_5746_48b8_83ec_55e1d98e92b2.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982787990-907c412f-fa51-4e6f-b186-b9a47e048ac5.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982787990_907c412f_fa51_4e6f_b186_b9a47e048ac5.png)
 
 **Back**
 
 ### 2.2 FET536x SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1740982788224-3c42a808-c43a-49c1-a68f-3e1b529cdf0b.jpg)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982788224_3c42a808_c43a_49c1_a68f_3e1b529cdf0b.jpg)
 
 Dimensions: 45mm × 68mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -198,13 +198,13 @@ Recommended screw specification: M2 × 4mm.
 
 #### 2.5.1 FET536x SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982788478-2920d016-0c3e-440c-91ba-a3cdf492e89f.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982788478_2920d016_0c3e_440c_91ba_a3cdf492e89f.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1740982788625-958c3099-3204-46e9-ae58-47a5319af7ef.jpg)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982788625_958c3099_3204_46e9_ae58_47a5319af7ef.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982788736-0549ab5c-7bac-4990-8945-e66c0ee80ef8.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982788736_0549ab5c_7bac_4990_8945_e66c0ee80ef8.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1740982788830-2c6865ce-1f15-48e2-b64e-19c8d709d3b2.jpg)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982788830_2c6865ce_1f15_48e2_b64e_19c8d709d3b2.jpg)
 
 #### 2.5.2 FET536x SoM Pin Function Description
 
@@ -235,7 +235,7 @@ For various functional expansion requirements, please refer to the user document
 
 The FET536x-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module, requiring a very simple external circuit. To form a minimum system, it only needs a 5V power supply, a reset button, and boot configuration to operate, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982788947-f1209b6d-0037-4230-852d-c96c64437cd1.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982788947_f1209b6d_0037_4230_852d_c96c64437cd1.png)
 
 Refer to “Appendix  IV. Minimum System Diagram” However, in general, it is recommended to connect some external devices, such as a debug serial port, in addition to the minimum system. Otherwise, the you cannot determine whether the system has started. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
@@ -245,7 +245,7 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 It uses M2 pre-applied nylon (NYLOK) screws to fix the SoM through the pre-drilled mounting holes at its four corners. The fastening torque should be controlled at 0.15 N·m. The specific assembly diagram is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/jpeg/50461850/1763702433275-020867ad-6ed0-4ad6-a9fa-af79bb276c8e.jpeg)
+![Image](./images/OK536x-C_User_Hardware_Manual/1763702433275_020867ad_6ed0_4ad6_a9fa_af79bb276c8e.jpeg)
 
 This design has been validated by vibration tests specified in the GB/T 2423.10-2008 / IEC 60068-2-6:1995 standards, achieving the following levels: 	Frequency range: 10 Hz ~ 150 Hz
 
@@ -263,11 +263,11 @@ The performance data listed in this manual are derived from tests conducted in a
 
 Connection method: Board-to-board. The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982790673-eb9c3b9c-6d9f-43e0-8ebb-c1844ab6e50c.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982790673_eb9c3b9c_6d9f_43e0_8ebb_c1844ab6e50c.png)
 
 ### 3.2 OK536x Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982790836-a0024d22-f87f-467b-bb85-57d24e5d7f88.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982790836_a0024d22_f87f_467b_bb85_57d24e5d7f88.png)
 
 PCB: 130mm×190mm
 
@@ -281,7 +281,7 @@ Power Voltage: DC 12V
 
 There are two mounting holes on the carrier board with a diameter of 3.2mm for a heatsink. You can optionally install a heatsink according to the on-site environment. Please add a layer of insulating thermal conductive silicone pad between the heatsink and the SoM contact surface. Recommended heatsink: 39mm × 39mm × 23mm. See below for details.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759201963388-a2649940-4004-4827-b7b7-119cde79cf7a.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1759201963388_a2649940_4004_4827_b7b7_119cde79cf7a.png)
 
 ### 3.4 Naming Rules
 
@@ -362,17 +362,17 @@ VDD33 ensures that the SoM powers on first, followed by the carrier board, to pr
 
 **Note: For custom designs, follow this power sequence: SoM VDD33 enables carrier board DC-DC, ensuring SoM powers on before carrier board.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982790927-47b63ce8-ff97-41e2-a338-9f91f1e0f120.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982790927_47b63ce8_ff97_41e2_a338_9f91f1e0f120.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791014-5ba1a046-c34a-4a92-b3b2-88da0254b3de.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791014_5ba1a046_c34a_4a92_b3b2_88da0254b3de.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791091-2d0d2cfc-4b51-4905-ae51-892b06b0925a.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791091_2d0d2cfc_4b51_4905_ae51_892b06b0925a.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791183-1646b1c6-86a1-49fe-8f07-ec0506895976.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791183_1646b1c6_86a1_49fe_8f07_ec0506895976.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791278-7395c0b9-3e7a-40bb-a6a7-270703493399.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791278_7395c0b9_3e7a_40bb_a6a7_270703493399.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791390-931c04db-9463-4111-8fd1-1ff80d1ed4c1.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791390_931c04db_9463_4111_8fd1_1ff80d1ed4c1.png)
 
 #### 3.6.2 BOOT
 
@@ -380,7 +380,7 @@ OK536x-C boot sequence: SMHC0 → EMMC\_BOOT → EMMC\_USER → try (except SPI2
 
 A 10K pull-up resistor pulled up to 1.8V is implemented on the SoM, and R38=3.9K\_1% is populated on the carrier board to achieve the boot sequence described above.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791467-410e6d12-2cf5-441d-a646-41f221ecd3e9.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791467_410e6d12_2cf5_441d_a646_41f221ecd3e9.png)
 
 **Note: SMHC0 boots before EMMC. When booting with a card inserted (non-flashing mode), ensure the TF card has no BOOT partition. Create a bootable TF card image instead. See Software User Manual.**
 
@@ -388,11 +388,11 @@ A 10K pull-up resistor pulled up to 1.8V is implemented on the SoM, and R38=3.9K
 
 AP-RESET: System reset button. Press to reset and restart. FEL: Press to enter forced upgrade mode for system flashing via USB. PWRON: Power on/off button.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791575-06d2e274-35ea-41ab-83fe-4c077193a9df.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791575_06d2e274_35ea_41ab_83fe_4c077193a9df.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791673-02d85cf6-dde1-49bb-99d4-ecadad87dafe.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791673_02d85cf6_dde1_49bb_99d4_ecadad87dafe.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791751-9938ae76-3544-4103-90b6-a0d073fdf236.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791751_9938ae76_3544_4103_90b6_a0d073fdf236.png)
 
 #### 3.6.4 Debugging Serial Port
 
@@ -416,7 +416,7 @@ Open a terminal tool (e.g., Putty) with settings: 115200 baud, 8 data bits, no p
 
 Select the correct COM port and power on the board. Debug messages will appear.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791832-9a384369-33db-4393-843d-7f338ab5bf9f.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791832_9a384369_33db_4393_843d_7f338ab5bf9f.png)
 
 **Note:**
 
@@ -430,7 +430,7 @@ Select the correct COM port and power on the board. Debug messages will appear.
 
 The CPUX-JTAG and CPUS-E902-JTAG interfaces are led out from the development board via 2.54mm pitch headers, allowing individual emulation and debugging of the two cores using an emulator. Additionally, the RISCV(E907)\_UART interface is provided via a 2.54mm pitch header.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982791911-8895c5ea-57e5-4ee1-a950-ed28261fb1ec.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982791911_8895c5ea_57e5_4ee1_a950_ed28261fb1ec.png)
 
 **Note: The JTAG-SEL switch (S2) must remain in its default OFF position.**
 
@@ -438,7 +438,7 @@ The CPUX-JTAG and CPUS-E902-JTAG interfaces are led out from the development boa
 
 The TF card interface on the development board is connected to the CPU’s SDC0 channel. Power for the TF card is supplied by the VDD33 output from the SoM.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792012-af9c7f30-10e1-4bc1-a089-8871629c60f5.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792012_af9c7f30_10e1_4bc1_a089_8871629c60f5.png)
 
 **Notes:**
 
@@ -451,13 +451,13 @@ The TF card interface on the development board is connected to the CPU’s SDC0 
 
 An RTC device is connected to the carrier board via the TWI5 bus. The circuit uses D7 to enable compatible power supply from either VCC\_3V3 or a button cell battery. This ensures the RTC chip remains powered by the battery after the carrier board power is cut off. The RX8010SJ chip is used in the default design. Button battery: CR2032.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792140-1bb28761-2ce1-451b-89ac-8e1388987a48.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792140_1bb28761_2ce1_451b_89ac_8e1388987a48.png)
 
 #### 3.6.8 LRADC Button
 
 LRADC keys are implemented using a voltage divider with different pull-down resistors. The ADC samples different voltage levels to detect key presses.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792255-e57b06c5-ccc4-4149-91fe-df72e3b77e03.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792255_e57b06c5_ccc4_4149_91fe_df72e3b77e03.png)
 
 **Note: Note: A 51KΩ pull-up resistor to 1.8V is already integrated within the SoM. Therefore, only the corresponding pull-down resistors need to be configured on the carrier board to enable key detection.**
 
@@ -465,33 +465,33 @@ LRADC keys are implemented using a voltage divider with different pull-down resi
 
 The GPADC interface is led out via three 2.54mm pitch, 2\*3P headers, accompanied by slide potentiometers for direct connection via DuPont wires. The board offers a total of 14 x GPADC with a maximum sampling voltage of 1.8V.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792367-19f6713c-4ccc-4cc1-9a01-f97e42b43bf3.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792367_19f6713c_4ccc_4cc1_9a01_f97e42b43bf3.png)
 
 #### 3.6.10 IR Interface
 
 The IR interface is connected to an HS0038B infrared receiver. Please send infrared signals to this receiver using a remote control. The received IR information will be displayed in the debugging serial port.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792459-07553034-cf0b-4b56-8a5e-f33489f77204.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792459_07553034_cf0b_4b56_8a5e_f33489f77204.png)
 
 #### 3.6.11 Type-C Interface
 
 The Type-C interface on the carrier board is connected to the USB0 interface of the SoM. This interface supports OTG functionality, allowing it to be used for USB programming when connected to a PC, or for connecting storage devices such as USB flash drives.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792568-fab9e472-8e1c-4985-a626-03e67901befd.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792568_fab9e472_8e1c_4985_a626_03e67901befd.png)
 
 #### 3.6.12 USB2.0 HUB
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792667-978acc09-6702-4155-b4c7-1b2d12fd2c6f.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792667_978acc09_6702_4155_b4c7_1b2d12fd2c6f.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792758-959a0126-804d-4d93-8679-9bd8061bd264.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792758_959a0126_804d_4d93_8679_9bd8061bd264.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792850-afc6da7b-078c-41af-becf-0b47da8c70ea.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792850_afc6da7b_078c_41af_becf_0b47da8c70ea.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982792934-ecfc125f-a2d8-414c-8dfe-aa2f052e5ba0.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982792934_ecfc125f_a2d8_414c_8dfe_aa2f052e5ba0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793019-f959b70a-4053-440e-9e22-7a66287fbd3b.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793019_f959b70a_4053_440e_9e22_7a66287fbd3b.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793093-bf2bb891-8542-432e-9b1d-78c8910c84ed.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793093_bf2bb891_8542_432e_9b1d_78c8910c84ed.png)
 
 The OK536x-C development board features an onboard USB 2.0 hub. It uses a CH440G analog switch chip and a DIP switch to multiplex the USB0 signal. When the IN pin of the CH440G is set low (0), the Type-C interface is selected.
 
@@ -499,23 +499,23 @@ When the IN pin is set high (1), the USB 2.0 HUB is selected. This hub provides 
 
 **Note: Use the SWITCH-A DIP switch to control the multiplexing of the USB0 signal between the USB-HUB and the Type-C interface.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793179-8a706206-44a0-4de5-b03b-647147038678.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793179_8a706206_44a0_4de5_b03b_647147038678.png)
 
 #### 3.6.13 WiFi\&BT
 
 The OK536x-C development board incorporates an onboard AW-CM358SM WiFi \& Bluetooth combo module. WiFi uses the SDIO interface, supports dual-band (2.4GHz \& 5GHz), and complies with IEEE 802.11 a/b/g/n/ac standards. Bluetooth uses the UART \& PCM interfaces and complies with the Bluetooth 5.0 standard.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793277-0e582fb5-73fd-42f1-8ab8-7f63509caf26.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793277_0e582fb5_73fd_42f1_8ab8_7f63509caf26.png)
 
 **Note: The AP-CK32K-OUT pin can output a 32K clock signal for the WiFi/BT module. As this pin has an open-drain (OD) structure, an external pull-up resistor is required if this feature is used. The pull-up voltage must match the operating voltage of the peripheral device.**
 
 #### 3.6.14 4G
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793349-fc51f491-ac84-4292-86ec-fcc4a654b3a5.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793349_fc51f491_ac84_4292_86ec_fcc4a654b3a5.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793458-6b5e7095-75af-4431-b5a9-208ad52d9a05.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793458_6b5e7095_75af_4431_b5a9_208ad52d9a05.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793582-c7afb656-9efc-426b-8075-9a9362845996.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793582_c7afb656_9efc_426b_8075_9a9362845996.png)
 
 The OK536x-C development board features an onboard mini-PCIE interface designed for connecting a 4G module (e.g., EC20). This interface has independently controllable power and an onboard SIM card slot. 
 
@@ -527,13 +527,13 @@ The OK536x-C development board features an onboard mini-PCIE interface designed 
 
 #### 3.6.15 USB3.0\&PCIE
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793661-fa1d2722-5e39-48ce-a318-be0a3f22c11d.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793661_fa1d2722_5e39_48ce_a318_be0a3f22c11d.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793754-2bac3232-6b79-471c-8d4c-f6397e035a12.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793754_2bac3232_6b79_471c_8d4c_f6397e035a12.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793843-37422223-1979-4497-be1e-81fac9fcb91a.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793843_37422223_1979_4497_be1e_81fac9fcb91a.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982793936-5f6afa24-faf2-4aef-932c-14c3d01b1c0a.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982793936_5f6afa24_faf2_4aef_932c_14c3d01b1c0a.png)
 
 The OK536x-C SoM natively supports both USB 3.0 and PCIe 2.1, but they share the same set of pins through multiplexing. The development board uses a high-speed analog switch chip and a DIP switch to route these pins to different external interfaces:
 
@@ -543,7 +543,7 @@ When configured for PCIe 2.1, the signals are routed to a standard PCIe x1 conne
 
 **Note: Use the switch-B DIP switch to select between the USB 3.0 and PCIe 2.1 functions.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794022-3073103c-dfac-41c6-ae99-6607b6903569.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794022_3073103c_dfac_41c6_ae99_6607b6903569.png)
 
 ---
 
@@ -552,73 +552,73 @@ When configured for PCIe 2.1, the signals are routed to a standard PCIe x1 conne
 
 The OK536x-C development board supports two native 1000M/100M/10M auto-negotiating Ethernet ports. These are implemented using the two RGMII interfaces from the SoM in conjunction with YT8521SH PHY chips, and are led out via standard RJ45 connectors with integrated magnetics. They can be used to connect network devices for LAN or WAN communication.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794111-f2750350-7307-4845-b5c0-4a94f0649300.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794111_f2750350_7307_4845_b5c0_4a94f0649300.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794196-b997d4e8-1029-4238-926e-dc71e41fc34f.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794196_b997d4e8_1029_4238_926e_dc71e41fc34f.png)
 
 #### 3.6.17 AUDIO
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794296-1f1cc60b-4228-4135-bcaa-9b28e2ae0f07.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794296_1f1cc60b_4228_4135_bcaa_9b28e2ae0f07.png)
 
 There is an onboard NAU88C22YG audio codec chip on the development board. A standard 3.5mm audio jack provides stereo headphone output and microphone input functionality.
 
 #### 3.6.18 LINEOUT Interface
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794376-30325728-3704-4c15-8bc4-86b27634f17b.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794376_30325728_3704_4c15_8bc4_86b27634f17b.png)
 
 The OK536x-C development board utilizes the native differential LINEOUT signals. An external speaker interface is provided via the TPA6017A2PWP audio amplifier chip, designed to drive a 3Ω/2W speaker.
 
 #### 3.6.19 CAN-FD
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794475-f77d7408-f2d1-4894-b550-e0497a90f9a3.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794475_f77d7408_f2d1_4894_b550_e0497a90f9a3.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794559-0db3cfcc-81d4-4ea6-a25f-ccc959365427.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794559_0db3cfcc_81d4_4ea6_a25f_ccc959365427.png)
 
 The OK536x-C development board uses the native CAN-FD controller coupled with TDH541S CANFD isolated transceivers to provide four CAN interfaces. These interfaces feature isolation protection, suitable for most application scenarios.
 
 #### 3.6.20 485
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794645-09eecec5-4861-4caa-b2cd-f7109a6be6b0.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794645_09eecec5_4861_4caa_b2cd_f7109a6be6b0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794729-4bee2d64-1301-471b-8471-c9d907fb3105.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794729_4bee2d64_1301_471b_8471_c9d907fb3105.png)
 
 The OK536x-C development board uses a native UART coupled with TDH341S485S isolated transceivers to provide two standard RS-485 interfaces. These interfaces support automatic direction control and feature isolation protection, suitable for most application scenarios.
 
 #### 3.6.21 LEDC
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794808-a01c4e1d-3b95-4a80-b139-69cb79a3b2df.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794808_a01c4e1d_3b95_4a80_b139_69cb79a3b2df.png)
 
 There is a user-configurable LED indicator on the development board. Different lighting effects can be achieved by programming the dedicated LEDC control pins.
 
 #### 3.6.22 GPIO
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982794919-9fd2cc5e-f0ee-4db4-b95b-d482bae3ecdd.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982794919_9fd2cc5e_f0ee_4db4_b95b_d482bae3ecdd.png)
 
 GPIO signals are led out via a 2.54mm pitch, 2\*4 header, allowing for direct connection via DuPont wires.
 
 #### 3.6.23 KEY
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982795023-625318c0-7093-46aa-a674-09e5fb1e5560.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982795023_625318c0_7093_46aa_a674_09e5fb1e5560.png)
 
 There is a user-configurable key on the development board. Different functions can be realized by controlling this GPIO pin.
 
 #### 3.6.24 LVDS Interface
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982795132-ab2e454e-63da-4c8c-b557-90fcde8c5cb8.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982795132_ab2e454e_63da_4c8c_b557_90fcde8c5cb8.png)
 
 The LVDS signals are led out from the development board via a 2.0mm pitch, 2\*19P header. This signal group is multiplexed with the MIPI and LCD signals. This interface can be used to connect Forlinx’s standard 10.1-inch LVDS display. Furthermore, Forlinx’s standard 7-inch MIPI display can be connected using an LVDS-to-MIPI adapter board.
 
 #### 3.6.25 LCD-RGB666 Interface
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982795259-67360f19-ff56-4a45-9237-2450595848a3.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982795259_67360f19_ff56_4a45_9237_2450595848a3.png)
 
 The LCD signals are led out from the development board via a 0.5mm pitch, 54P FPC connector. This signal group is multiplexed with the LVDS signals. Resistive touch signals are directly connected to the SoC. This interface can be used to connect Forlinx’s standard 7-inch LCD display (supporting resistive or capacitive touch).
 
 #### 3.6.26 Local Bus
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982795398-97c8aca1-75fe-4f21-8358-4aac2ceff070.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982795398_97c8aca1_75fe_4f21_8358_4aac2ceff070.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982795573-5fd966ca-71ba-40dd-886f-4eaa0684d368.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982795573_5fd966ca_71ba_40dd_886f_4eaa0684d368.png)
 
 The OK536x-C development board uses a 0.4mm-pitch 90PIN connector to bring out LBUS-related signals, allowing direct connection to Allwinner’s FPGA demo daughterboard. Additionally, Local Bus signals are accessible via two 2.54mm-pitch 2x14 pin headers. Since MIPI-CSI signals are multiplexed with Local Bus signals, the FIT-CAM\_E V1.1 module board can be connected to enable MIPI-CSI functionality. This module supports two 2-lane cameras (OV5645) and one 4-lane camera (OV13855).
 
@@ -630,41 +630,41 @@ Due to function multiplexing and size constraints of the carrier board, certain 
 
 This adapter board connects via the P44 connector (0.4mm-pitch 90pin) on the carrier board. It supports one 4-lane camera and two 2-lane cameras. This adapter board obtains 5V and 3.3V power through the P44 connector on the carrier board, and provides a clock signal to the external camera via an active crystal oscillator.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765413526692-39d6c88d-20c5-4063-90db-da9732580cc0.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1765413526692_39d6c88d_20c5_4063_90db_da9732580cc0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765413545926-59a07588-b116-4012-a135-703f8940f178.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1765413545926_59a07588_b116_4012_a135_703f8940f178.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765413562779-644e3015-4674-4230-9e08-edb3528d73c0.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1765413562779_644e3015_4674_4230_9e08_edb3528d73c0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765413607534-94f907eb-0d19-4514-8c36-e4c01fe9d52f.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1765413607534_94f907eb_0d19_4514_8c36_e4c01fe9d52f.png)
 
 ##### 3.6.27.2 FIT-LMIPI-II V1.1
 
 Due to multiplexing among LVDS, MIPI-DSI, and LCD signals, the FIT-LMIPI-II V1.1 adapter board can be used to connect these signals to LVDS interface pins, enabling MIPI-DSI conversion for connecting MIPI displays.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765413635813-97d2863c-b186-414f-bb21-f49c7f8a54c0.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1765413635813_97d2863c_b186_414f_bb21_f49c7f8a54c0.png)
 
 ## 4\. Connector Specification Diagram
 
 SoM connector: surface-mount, 0.5mm pitch, 80P, male, 1.23mm height, with locating posts.                                                                                           
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982797949-6f16911c-1799-458e-bf47-6f33a0f31162.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982797949_6f16911c_1799_458e_bf47_6f33a0f31162.png)
 
 Carrier board connector: surface-mount, 0.5mm pitch, 80P, female socket, 1.85mm height, with locating posts.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982798290-5c9185a2-cb13-417f-8ceb-fe2c9042bcdc.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982798290_5c9185a2_cb13_417f_8ceb_fe2c9042bcdc.png)
 
 Local Bus carrier board connector: model DF40HC(3.0)-90DS-0.4V(58). 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982798547-18161482-ac70-44c9-945b-332872f890ab.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982798547_18161482_ac70_44c9_945b_332872f890ab.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982798689-2518a795-9f4b-4960-adcc-7b656985ecb5.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982798689_2518a795_9f4b_4960_adcc_7b656985ecb5.png)
 
 Local Bus daughterboard connector: model DF40C-90DP-0.4V(58).
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982798843-83e6f373-a82f-47ac-9618-9912f7db5077.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982798843_83e6f373_a82f_47ac_9618_9912f7db5077.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982799058-8a32f998-ea77-4aa1-b27b-9cbf5fb3c6e7.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982799058_8a32f998_ea77_4aa1_b27b_9cbf5fb3c6e7.png)
 
 ## 5\. OK536x-C Development Board Linux Consumption Table
 
@@ -692,25 +692,25 @@ It has SoM, BOOT, power, debug serial port, system image flashing port.
 
 **SoM:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/49874024/1745746887136-74370f69-771c-4480-b4b7-e12536185ea1.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1745746887136_74370f69_771c_4480_b4b7_e12536185ea1.png)
 
 **BOOT:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982802392-12ed7852-1505-442e-af24-ff4997d55717.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982802392_12ed7852_1505_442e_af24_ff4997d55717.png)
 
 **DEBUG:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982802519-27f57a38-d7ef-4efd-b843-289b3a671bee.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982802519_27f57a38_d7ef_4efd_b843_289b3a671bee.png)
 
 **POWER:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982802717-11b797cc-8a1d-4d77-bad4-08b2aed2c92b.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982802717_11b797cc_8a1d_4d77_bad4_08b2aed2c92b.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982802808-7c408d05-3e94-43fc-b4e9-ce215909c557.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982802808_7c408d05_3e94_43fc_b4e9_ce215909c557.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982802891-d79c662a-029e-4785-89aa-75ee57ad1c8f.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982802891_d79c662a_029e_4785_89aa_75ee57ad1c8f.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982802979-aad3b65f-4ec9-4d59-a068-401c3fd91e88.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982802979_aad3b65f_4ec9_4d59_a068_401c3fd91e88.png)
 
 ## 7\. Hardware Design Guide
 
@@ -718,15 +718,15 @@ It has SoM, BOOT, power, debug serial port, system image flashing port.
 
 The T536 supports multiple programming and boot methods. Upon system power-up or reset, the boot mode is selected by reading the voltage levels on the system boot configuration pins.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982804430-b3dd10ce-e94e-4840-b11f-0340e586c016.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982804430_b3dd10ce_e94e_4840_b11f_0340e586c016.png)
 
 Since the SoM retains only R1, when designing your own carrier board must ensure R2 is reserved. The default boot method is No. 4: SMHC0->EMMC\_BOOT->EMMC\_USER->try(except SPI2)。
 
 **MIPI-CSI Signal Output Configuration**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982804537-ef32a215-8de7-4626-a97b-5d0fe1abc6d1.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982804537_ef32a215_8de7_4626_a97b_5d0fe1abc6d1.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982804643-af1c0028-4c39-4c86-ade4-fb7ffc270583.png)
+![Image](./images/OK536x-C_User_Hardware_Manual/1740982804643_af1c0028_4c39_4c86_ade4_fb7ffc270583.png)
 
 - The T536 supports four MIPI-CSI interfaces, which can be configured as 4+4-lane, 4+2+2-lane, or 2+2+2+2-lane.
 
