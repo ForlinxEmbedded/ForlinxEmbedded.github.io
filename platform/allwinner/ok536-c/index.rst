@@ -20,7 +20,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   
+   OK536x-C_User_Hardware_Manual
    OK536x-C_Linux5_10_198_User_Manual
    
 SOFTWARE
