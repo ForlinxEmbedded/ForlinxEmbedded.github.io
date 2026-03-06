@@ -88,21 +88,22 @@ The OK536 development board features an SoM + carrier board design built around 
 
 ### 1.2 Flashing \& Boot Setup
 
-The OK536 board supports system flashing via TF card or USB OTG and boots from eMMC by default.
+The OK536 supports TF card and USB OTG programming, and the hardware supports eMMC startup.
 
-Insert a TF card before powering on to initiate flashing; otherwise, the system boots from eMMC. Detailed flashing steps are in the “Flashing the System” chapter.
+Insert a TF card before powering on to initiate flashing; otherwise, the system boots from eMMC. Detailed flashing steps are in chapter “6. Flashing the System”.
 
 ## 2\. Quick Startup
 
 ### 2.1 Preparation Before Startup
 
-Login methods: serial login and network login.                                                                                             Hardware preparations before powering on the system:
+Login methods: serial login and network login.
+Hardware preparations before powering on the system:
 
 + 12V/3A DC power cable
 + Debug serial cable (for serial login)
-+ The debug serial port on the development board is a USB Type-C port. Users can connect the development board to a PC using a Type-A to Type-C cable to check the board's status information.
++ The debug serial port on the development board is a USB Type-C port. You can connect the development board to the PC using a Type-A to Type-C cable to view the development board status information.
 + Ethernet cable (for network login)
-+ Display screen — connect the screen according to the development board interface (optional if display is not needed)
++ Display screen — connect the screen via the development board interface (It's optional based on your actual requirement).
 + Check the boot mode (if a TF card is inserted, the system will boot from the TF card by default; otherwise, it will boot from eMMC)
 
 ![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1745803047340_a7755ec1_ba96_4ca1_a2dc_d3d7499f3cc3.png)

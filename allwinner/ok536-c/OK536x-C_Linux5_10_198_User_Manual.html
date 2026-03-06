@@ -387,21 +387,22 @@ mmcblk0p1  mmcblk0p6  mmcblk1p1
 </section>
 <section id="flashing-boot-setup">
 <h3>1.2 Flashing &amp; Boot Setup<a class="headerlink" href="#flashing-boot-setup" title="Link to this heading"></a></h3>
-<p>The OK536 board supports system flashing via TF card or USB OTG and boots from eMMC by default.</p>
-<p>Insert a TF card before powering on to initiate flashing; otherwise, the system boots from eMMC. Detailed flashing steps are in the “Flashing the System” chapter.</p>
+<p>The OK536 supports TF card and USB OTG programming, and the hardware supports eMMC startup.</p>
+<p>Insert a TF card before powering on to initiate flashing; otherwise, the system boots from eMMC. Detailed flashing steps are in chapter “6. Flashing the System”.</p>
 </section>
 </section>
 <section id="quick-startup">
 <h2>2. Quick Startup<a class="headerlink" href="#quick-startup" title="Link to this heading"></a></h2>
 <section id="preparation-before-startup">
 <h3>2.1 Preparation Before Startup<a class="headerlink" href="#preparation-before-startup" title="Link to this heading"></a></h3>
-<p>Login methods: serial login and network login.                                                                                             Hardware preparations before powering on the system:</p>
+<p>Login methods: serial login and network login.
+Hardware preparations before powering on the system:</p>
 <ul class="simple">
 <li><p>12V/3A DC power cable</p></li>
 <li><p>Debug serial cable (for serial login)</p></li>
-<li><p>The debug serial port on the development board is a USB Type-C port. Users can connect the development board to a PC using a Type-A to Type-C cable to check the board’s status information.</p></li>
+<li><p>The debug serial port on the development board is a USB Type-C port. You can connect the development board to the PC using a Type-A to Type-C cable to view the development board status information.</p></li>
 <li><p>Ethernet cable (for network login)</p></li>
-<li><p>Display screen — connect the screen according to the development board interface (optional if display is not needed)</p></li>
+<li><p>Display screen — connect the screen via the development board interface (It’s optional based on your actual requirement).</p></li>
 <li><p>Check the boot mode (if a TF card is inserted, the system will boot from the TF card by default; otherwise, it will boot from eMMC)</p></li>
 </ul>
 <p><img alt="Image" src="_images/1745803047340_a7755ec1_ba96_4ca1_a2dc_d3d7499f3cc3.png" /></p>
