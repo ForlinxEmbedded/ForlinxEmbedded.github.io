@@ -22,6 +22,7 @@ HARDWARE
 
    OK536x-C_User_Hardware_Manual
    OK536x-C_Linux5_10_198_User_Manual
+   OK536x-C_Linux5_10_198_User_Compilation_Manual
    
 SOFTWARE
 ------------

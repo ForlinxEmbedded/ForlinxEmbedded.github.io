@@ -1,4 +1,4 @@
-# Linux5.10.198+Qt5.15.8\_User's Manual\_V1.1
+# Linux5.10.198_User's Manual\_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
@@ -61,9 +61,7 @@ The OK536 development board features an SoM + carrier board design built around 
 
 ![Image](./images/OK536x-C_Linux5_10_198_User_Manual/1740982133299_c3df6fc4_845b_4d24_86a7_d1df982748bf.png)
 
-Note:
-
-This software manual will no longer describe hardware parameters. Before proceeding with software development using this manual, please read the OK536-C Hardware Manual located in the cloud storage path “02-User Materials\\03-Hardware Materials\\02-Manuals” to understand the product naming rules and the hardware configuration of your specific product, which will facilitate your use of this product.
+**Note: This software manual will no longer describe hardware parameters. Before proceeding with software development using this manual, please read the OK536-C Hardware Manual located in the cloud storage path “02-User Materials\\03-Hardware Materials\\02-Manuals” to understand the product naming rules and the hardware configuration of your specific product, which will facilitate your use of this product.**
 
 ### 1.1 Linux 5.10.198 System Software Resources
 
