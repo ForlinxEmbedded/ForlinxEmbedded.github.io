@@ -423,7 +423,7 @@ Start Qt Creator:
 
 ```plain
 forlinx@ubuntu:/opt/Qt/Tools/QtCreator/bin $ sudo./qtcreator
-[sudo] password for forlinx: forlinx                         //输入forlinx用户的密码，无回显
+[sudo] password for forlinx: forlinx                         //Eneter user password forlinx, no display
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
