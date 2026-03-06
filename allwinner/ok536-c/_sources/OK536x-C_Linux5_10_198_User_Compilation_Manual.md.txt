@@ -63,7 +63,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079121244-b1781bd8-d4da-4103-bf22-b85ea7b85834.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079121244_b1781bd8_d4da_4103_bf22_b85ea7b85834.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -71,35 +71,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the setup file to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079142871-4a15056b-c774-4cdf-8285-2bb081323c93.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079142871_4a15056b_c774_4cdf_8285_2bb081323c93.png)
 
 Click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079159587-f1bc696a-cc53-4b7d-8df1-9f0660cc88c5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079159587_f1bc696a_cc53_4b7d_8df1_9f0660cc88c5.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079174511-f70aee38-d83e-4d75-b875-bbc0968ef617.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079174511_f70aee38_d83e_4d75_b875_bbc0968ef617.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079184114-1cdf6c73-4a92-4713-9595-47a8c36c164c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079184114_1cdf6c73_4a92_4713_9595_47a8c36c164c.png)
 
 Check, then click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079198669-5c9c9b4c-9a51-41ef-9bcb-c157ed98e036.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079198669_5c9c9b4c_9a51_41ef_9bcb_c157ed98e036.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079209843-fb94bed8-c4c3-40e6-badd-a9336c61b81d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079209843_fb94bed8_c4c3_40e6_badd_a9336c61b81d.png)
 
 Click “Install.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079221521-57505963-3f30-4034-ab79-3febbe1b8959.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079221521_57505963_3f30_4034_ab79_3febbe1b8959.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079233778-a6d19fda-9c5c-40cf-853b-c76a62f3f3b6.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1723079233778_a6d19fda_9c5c_40cf_853b_c76a62f3f3b6.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
@@ -117,11 +117,11 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment materials include an MD5 checksum file. After downloading the materials, please first perform an MD5 checksum on the development environment archive (located in 3-Tools\\md5sums-1.2.zip) to verify if the checksum matches the one in the checksum file. If they match, the download is successful; if not, the file may be corrupted and needs to be re-downloaded.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982150295-96b819ec-f9b9-4b51-a2da-b94dc6921394.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982150295_96b819ec_f9b9_4b51_a2da_b94dc6921394.png)
 
 Select OK536-VM15.5.6-ubuntu20.04, right-click, and extract it to the current folder or your desired directory:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982150414-11ae999c-82bc-45d2-8401-030d4e8b3dab.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982150414_11ae999c_82bc_45d2_8401_030d4e8b3dab.png)
 
 After extraction, you will obtain the development environment folder OK36-VM15.5.6-ubuntu20.04.
 
@@ -129,15 +129,15 @@ The file OK536-VM15.5.6-ubuntu20.04.vmx inside the OK536-VM15.5.6-ubuntu20.04 fo
 
 Open the installed virtual machine software.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948433154-61bdd056-eea7-412e-bb47-2ca27326221e.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718948433154_61bdd056_eea7_412e_bb47_2ca27326221e.png)
 
 Select the directory where the newly extracted OK536-VM15.5.6-ubuntu20.04 virtual machine file is located, and double-click the startup file to open it.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982150530-8e97d3f0-362c-4f1e-815f-73af12ff03c9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982150530_8e97d3f0_362c_4f1e_815f_73af12ff03c9.png)
 
 After loading, click “Power on this virtual machine” to run it and enter the system interface.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982150611-24565f6d-f21a-4061-9e02-32973ee4618b.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982150611_24565f6d_f21a_4061_9e02_32973ee4618b.png)
 
 The provided development environment is set to automatically log in to the account forlinx on startup by default.
 
@@ -153,67 +153,67 @@ The Ubuntu version to install is 20.04. The descriptions and development in this
 
 Download the “ubuntu-20.04.6-desktop-amd64.iso” version (the specific version to download can be based on your own needs; here we use version 20.04.6 as an example).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948846066-ec162f18-7e2d-4487-ac4d-e38cdc5ed1fa.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718948846066_ec162f18_7e2d_4487_ac4d_e38cdc5ed1fa.png)
 
 #### 3.1.1 Creating an Ubuntu Virtual Machine
 
 Step 1: Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948893126-e3590cfb-7439-4651-924f-a2d10374da9f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718948893126_e3590cfb_7439_4651_924f_a2d10374da9f.png)
 
 Step 2: Select the compatibility for the corresponding VMware version (you can view the version under Help -> About VMware Workstation). After confirming, click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948932428-9511048d-e2d7-4f7a-8395-0821cef9cb79.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718948932428_9511048d_e2d7_4f7a_8395_0821cef9cb79.png)
 
 Choose “Installer disc image file (iso)” and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948970851-e5167620-f7bc-4451-9278-0138cdc7719c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718948970851_e5167620_f7bc_4451_9278_0138cdc7719c.png)
 
 Enter the full name, username, and password, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948988345-6bc05b9f-e9f7-4f69-9958-6601680f096b.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718948988345_6bc05b9f_e9f7_4f69_9958_6601680f096b.png)
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949004063-573e7818-db79-447f-87be-7300ada8564f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949004063_573e7818_db79_447f_87be_7300ada8564f.png)
 
 Configure the number of cores, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949028219-34f18366-f692-4a22-b57b-54d17b6c25ad.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949028219_34f18366_f692_4a22_b57b_54d17b6c25ad.png)
 
 Configure at least 8GB of memory and select “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949106542-abdb4dd3-94ff-4717-aae8-49ff1552ddc5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949106542_abdb4dd3_94ff_4717_aae8_49ff1552ddc5.png)
 
 Set the network type, use the default NAT networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949123407-6494b5a1-1357-440c-95d5-99782ec611f7.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949123407_6494b5a1_1357_440c_95d5_99782ec611f7.png)
 
 Use the recommended I/O controller and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949139079-ff464474-be29-4f7a-8bd4-947d20c6330c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949139079_ff464474_be29_4f7a_8bd4_947d20c6330c.png)
 
 Use the recommended disk type and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949153183-98ee5751-ae4f-4587-94b0-471fc1a3ae2a.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949153183_98ee5751_ae4f_4587_94b0_471fc1a3ae2a.png)
 
 Use the default option, “Create a new virtual disk”, and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949166693-8782adbb-56d4-4831-bb1c-31b4156f3740.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949166693_8782adbb_56d4_4831_bb1c_31b4156f3740.png)
 
 Allocate a disk size of 80GB and choose “Split virtual disk into multiple files”, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949181244-213bc0ba-c5c3-4af7-b2bf-e376f015b5c7.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949181244_213bc0ba_c5c3_4af7_b2bf_e376f015b5c7.png)
 
 Use the default settings and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949199722-746f65a3-37d5-4f62-947b-a5569544f780.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949199722_746f65a3_37d5_4f62_947b_a5569544f780.png)
 
 Click “Finish”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949214671-bc902643-637a-486d-9ac4-61a49f72171d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949214671_bc902643_637a_486d_9ac4_61a49f72171d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949231445-fcd76a84-fea5-451c-ad59-800cd108292e.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949231445_fcd76a84_fea5_451c_ad59_800cd108292e.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -231,15 +231,15 @@ Without this tool, copy-paste and file drag-and-drop between the Windows host an
 
 First, click “Virtual Machine” on the VMware navigation bar, then click “Install VMware Tools” in the dropdown menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949273811-f3e92114-4eea-4b65-862c-dbb8304364f9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949273811_f3e92114_4eea_4b65_862c_dbb8304364f9.png)
 
 After completion, enter Ubuntu. A VMware Tools CD will appear on the desktop; click to enter it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949359798-ba856cf3-7059-41d2-96ed-a599e55d10fc.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949359798_ba856cf3_7059_41d2_96ed_a599e55d10fc.png)
 
 After entering, you will see a compressed file VMware Tools-10.3.10-12406962. tar. gz (different virtual machine versions may be different), and copy the file to the home directory (that is, the directory of the home personal user name).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949385494-91210da6-b0d4-4d43-a4b7-60b589eaf39f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949385494_91210da6_b0d4_4d43_a4b7_60b589eaf39f.png)
 
 Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the command to extract it:
 
@@ -247,11 +247,11 @@ Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the com
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.10-12406962.tar.gz
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949403392-ae4f707b-f5e8-49ae-ad9a-70858568cbe2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949403392_ae4f707b_f5e8_49ae_ad9a_70858568cbe2.png)
 
 After extraction completes, a folder named “vmware-tools-distrib” will appear.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949418780-e8c547ab-60de-4c4c-a5bb-9f73fff7b700.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949418780_e8c547ab_60de_4c4c_a5bb_9f73fff7b700.png)
 
 Return to the terminal and enter:
 
@@ -269,7 +269,7 @@ sudo ./vmware-install.pl
 
 Press Enter, enter your password, and the installation will begin. When prompted, enter “yes”; for other prompts, press Enter to accept the default installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949432279-4216de1f-7cf9-4c48-9d11-262568195cdb.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949432279_4216de1f_7cf9_4c48_9d11_262568195cdb.png)
 
 After VMware Tools installation is complete, file copy-paste between Windows and Ubuntu will be enabled.
 
@@ -277,17 +277,17 @@ After VMware Tools installation is complete, file copy-paste between Windows and
 
 If the virtual machine cannot display in full screen, you can click on “View”, select “Auto-Adjust Size”, and then click “Autofit Guest” to resolve the full-screen issue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949460433-abac797c-fb21-47c2-90a5-951390afdaee.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949460433_abac797c_fb21_47c2_90a5_951390afdaee.png)
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949472087-a7f61941-4de2-49c9-acc8-4e93358132b0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949472087_a7f61941_4de2_49c9_acc8_4e93358132b0.png)
 
 ##### 3.1.2.3 Virtual Machine Sleep Settings
 
 Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -> Power -> Blank Screen and set it to “Never”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949527824-2c751878-01cd-4e46-ad0f-9af78af1ccaf.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949527824_2c751878_01cd_4e46_ad0f_9af78af1ccaf.png)
 
 #### 3.1.3 Virtual Machine Swapfile Configuration
 
@@ -308,13 +308,13 @@ By default, after the virtual machine installation is complete, the network conn
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949560787-ecabd604-18e6-4ed4-8e99-14b964deb1c9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949560787_ecabd604_18e6_4ed4_8e99_14b964deb1c9.png)
 
 ##### 3.1.4.2 Bridged Connection Mode
 
 When the VMware virtual network adapter device is in bridged mode, the host network card and the virtual machine network card communicate through a virtual network bridge. In the Ubuntu environment, you need to set a network IP in the same subnet as the host. To access the external network, you need to set the DNS to be consistent with the host network card. When using servers like TFTP or SFTP, you need to set the virtual machine’s network connection method to bridged mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949577128-36c6f2e1-80d0-4fa6-8fad-8e99fe54be14.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718949577128_36c6f2e1_80d0_4fa6_8fad_8e99fe54be14.png)
 
 ### 3.2 Installing Toolkits
 
@@ -337,19 +337,19 @@ Copy qt-unified-linux-x64-online.run to any directory under the current user’s
 
 Execute in the terminal of the directory where the file is located ./qt-unified-linux-x64-online.run --mirror [https://mirrors.ustc.edu.cn/qtproject](https://mirrors.ustc.edu.cn/qtproject)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152079-e53cba6d-2423-4b93-bd75-849acbc1080f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152079_e53cba6d_2423_4b93_bd75_849acbc1080f.png)
 
 Register a QT account, fill in the details, and proceed to the next step.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152168-6020319e-ba81-4429-9ab7-590d51b9a82e.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152168_6020319e_ba81_4429_9ab7_590d51b9a82e.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152344-d0d38baa-ee28-4294-aba3-b46425fc59fe.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152344_d0d38baa_ee28_4294_aba3_b46425fc59fe.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152492-e4352d3c-c0c6-480b-b52b-10358cf15473.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152492_e4352d3c_c0c6_480b_b52b_10358cf15473.png)
 
 Click “Next”:
 
@@ -357,19 +357,19 @@ Click “Next”:
 
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152618-63b9d19d-f6b8-4e5b-bebd-923aa91e7ade.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152618_63b9d19d_f6b8_4e5b_bebd_923aa91e7ade.png)
 
 Agree to the license agreement and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152702-ee92a683-bb03-463a-b433-78e743cb2d2c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152702_ee92a683_bb03_463a_b433_78e743cb2d2c.png)
 
 Click “Install”:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152809-59a5abc2-8d96-4d3d-aaa8-58317db54a4c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152809_59a5abc2_8d96_4d3d_aaa8_58317db54a4c.png)
 
 After installation is complete, the following interface will be displayed. Click “Finish” to complete the Qt Creator installation steps:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152892-e49cfd4f-4c1c-4cdd-8784-e2026f80553c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152892_e49cfd4f_4c1c_4cdd_8784_e2026f80553c.png)
 
 Navigate to the actual Qt Creator installation directory: /home/forlinx/Qt5.12.9/Tools/QtCreator/bin/
 
@@ -386,7 +386,7 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982152976-fab09aeb-8c1c-45f1-8d35-2775339dbcfb.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982152976_fab09aeb_8c1c_45f1_8d35_2775339dbcfb.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -423,54 +423,54 @@ Start Qt Creator:
 
 ```plain
 forlinx@ubuntu:/opt/Qt/Tools/QtCreator/bin $ sudo./qtcreator
-[sudo] password for forlinx: forlinx                         //输入forlinx用户的密码，无回显
+[sudo] password for forlinx: forlinx                         //Eneter user password forlinx, no display
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
 Start the Qt Creator program, click on Tools -> External -> Configure…:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982153059-4e7b7265-06ea-401e-a6a8-ab78aa1f9557.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982153059_4e7b7265_06ea_401e_a6a8_ab78aa1f9557.png)
 
 Click on “Kits” on the left, then click the “Compilers” tab in the middle top section. Click “Add -> GCC” on the right, as shown:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982153167-d741944d-e3d3-4812-9498-4799590d2d60.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982153167_d741944d_e3d3_4812_9498_4799590d2d60.png)
 
 Find “aarch64-none-linux-gnu-gcc” under /opt/host/bin, select it and click Open. Then modify the Name and click “Apply”.
 
 Click the “Qt Versions” tab, then click “Add”:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982153282-e3228b2d-e16d-4794-92ee-804ad4254ffd.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982153282_e3228b2d_e16d_4794_92ee_804ad4254ffd.png)
 
 Find “qmake” in the /opt/host/bin directory, select it and click Open. After adding, it will display as follows. Click “Apply”.
 
 Click the “Kits” tab, click “Add” on the right to add a new Kit. Modify the contents according to the figure below and click “Apply”
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982153362-ccf5c580-6bfb-4214-b38e-1434c37c20b5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982153362_ccf5c580_6bfb_4214_b38e_1434c37c20b5.png)
 
 ### 3.5 VMware Error Resolution
 
 Error 1: Unable to connect to MKS:  Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950065962-b1270a23-8379-465e-8ebb-074c27535b1b.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950065962_b1270a23_8379_465e_8ebb_074c27535b1b.png)
 
 Solution:
 
 My Computer -> Right-click -> Manage -> Services and Applications -> Services: Start all VMware-related services.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950090751-c1daea0f-13a9-4afe-b694-89126fbb76a2.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950090751_c1daea0f_13a9_4afe_b694_89126fbb76a2.png)
 
 After the services start successfully, restart the virtual machine; or suspend the virtual machine first, then after the services start, resume the suspended virtual machine.
 
 Error 2: Internal Error
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950103214-a7871f85-aa0b-41e9-a60d-1f1ad1d485b5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950103214_a7871f85_aa0b_41e9_a60d_1f1ad1d485b5.png)
 
 Solution: Refer to Solution 1
 
 Error 3: Unable to install the VMware Authorization Service (VMAuthdService)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950118552-6d413624-2cac-4adf-870d-859727b1d73f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950118552_6d413624_2cac_4adf_870d_859727b1d73f.png)
 
 Solution:
 
@@ -478,25 +478,25 @@ win+R
 
 Enter services.msc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950135095-dcf3ba1f-5104-40fd-a040-cec6bed9d893.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950135095_dcf3ba1f_5104_40fd_a040_cec6bed9d893.png)
 
 Then find the service and start it because this service is used for authorization and authentication to start and access virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950195578-21d1856a-834a-4efe-8807-3d190d83ebdf.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950195578_21d1856a_834a_4efe_8807_3d190d83ebdf.png)
 
 The WMI service must be started first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950209258-c350c7e6-c2cb-49e6-a5b5-501d59205fd5.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950209258_c350c7e6_c2cb_49e6_a5b5_501d59205fd5.png)
 
 Error 4: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950243863-dc11008b-5c1e-4f28-90bb-265e2b879287.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950243863_dc11008b_5c1e_4f28_90bb_265e2b879287.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then reinstall.
 
 Error 5: Intel VT-x is disabled
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950313530-3343a477-e16a-4f01-b661-072c7cd3620f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950313530_3343a477_e16a_4f01_b661_072c7cd3620f.png)
 
 Solution:
 
@@ -510,7 +510,7 @@ If it still doesn’t work, turn off the firewall and restart the virtual machin
 
 Error 6: The virtual machine appears to be in use… Take Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950333783-0d094cf5-34e2-401e-b8cb-600a9a4006e0.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950333783_0d094cf5_34e2_401e_b8cb_600a9a4006e0.png)
 
 Solution:
 
@@ -520,13 +520,13 @@ Solution:
 
 ③ Open Windows Task Manager and kill all VMware processes.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950354133-3b24662e-114f-4a86-b27e-ed85982cf247.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950354133_3b24662e_114f_4a86_b27e_ed85982cf247.png)
 
 ④ Restart the virtual machine.
 
 Error 7: Failed to lock the file
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950365534-20b50f59-a57a-4be7-acf4-667c16512c5e.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950365534_20b50f59_a57a_4be7_acf4_667c16512c5e.png)
 
 Solution:
 
@@ -544,7 +544,7 @@ Solution:
 
 The host does not have enough memory to meet the maximum requirements of the virtual machine image. Increase the virtual machine’s memory and restart it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950502280-738cd080-0319-4274-b239-59c91a70a889.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950502280_738cd080_0319_4274_b239_59c91a70a889.png)
 
 ## 4\. Linux Compilation 
 
@@ -604,11 +604,11 @@ There are many ways to transfer files between Ubuntu and the Windows host. After
 
 Setup method: Click on the menu bar’s “Virtual Machine” and select “Settings.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950783159-aa38c988-c012-4406-8082-6a9a28411890.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950783159_aa38c988_c012_4406_8082_6a9a28411890.png)
 
 Click on “Options,” enable “Shared Folders,” set the shared directory on the Windows host, and click “OK.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950804162-7efbad0f-793c-4665-ba22-9b194e4fd765.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1718950804162_7efbad0f_793c_4665_ba22_9b194e4fd765.png)
 
 Once the virtual machine’s file sharing is set up, place the source code package OKT536-linux-sdk.tar.bz2 into the Windows host’s shared folder. Here, it is named share.
 
@@ -692,7 +692,7 @@ buildroot/package/auto/forlinx/qt\_demo
 
 **Note: When compiling the SDK using the Forlinx development environment, you need to comment out the PATH environment variable setting in ~/.bashrc. Save the file and reopen the terminal.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45415483/1742282403168-c63f848b-87da-4b14-ad9f-c7bb4b2018ff.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1742282403168_c63f848b_87da_4b14_ad9f_c7bb4b2018ff.png)
 
 Full compilation refers to the unified compilation of the source code, including kernel source code, library files, applications, filesystem packaging, etc.
 
@@ -844,37 +844,37 @@ Open Qt Creator software and launch the Qt Creator application.
 
 In the Qt Creator interface, click “File” → “New File or Project” to create a new project. Select “Application (Qt)” → “Qt Widgets Application”, then click “Choose” in the bottom right corner.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982154927-19972609-805e-4ad1-8628-6c921d9e1f6c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982154927_19972609_805e_4ad1_8628_6c921d9e1f6c.png)
 
 In the following interface, set the project name to “helloworld”. Set the installation path to /home/forlinx, then click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155023-145596e0-39cb-4679-ae0d-573f2360393f.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155023_145596e0_39cb_4679_ae0d_573f2360393f.png)
 
 Select “qmake” and click “Next” to continue.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155117-01d96e5d-ed49-44d3-a1a1-c66ab29d482d.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155117_01d96e5d_ed49_44d3_a1a1_c66ab29d482d.png)
 
 In the following interface, you can modify the “Class name” and “Base class” as needed. Here, keep the default values and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155209-883c5db9-4cee-41f3-a513-9b79de7cd7f9.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155209_883c5db9_4cee_41f3_a513_9b79de7cd7f9.png)
 
 Choose a translation file if you need multilingual support. Here, use the default and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155338-34a58956-2906-47c0-92c2-9d5c3adf478c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155338_34a58956_2906_47c0_92c2_9d5c3adf478c.png)
 
 In the following interface, select the previously added “OK536” as the kit for the current project, then click “Next”
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155538-4e0bc1e9-2afd-469e-a041-e534c57b19bb.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155538_4e0bc1e9_2afd_469e_a041_e534c57b19bb.png)
 
 In the following interface, click “Finish” to complete the project creation.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155617-b280876a-19cd-4033-9e29-e2a6d6808c3c.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155617_b280876a_19cd_4033_9e29_e2a6d6808c3c.png)
 
 Once the project is created, the following window will appear:
 
 Project created successfully.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982155700-b21f4c01-effb-4687-ae8b-ab520366f675.png)
+![Image](./images/OK536x-C_Linux5_10_198_User_Compilation_Manual/1740982155700_b21f4c01_effb_4687_ae8b_ab520366f675.png)
 
 After writing the program, click the hammer icon in the bottom left corner to perform cross-compilation.
 
