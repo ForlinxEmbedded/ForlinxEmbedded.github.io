@@ -47,7 +47,7 @@ Additionally, the manual includes explanations of some symbols and formats.
 Example: After inserting the TF card, use the ls command to view the mount directory. 
 
 ```plain
-root@OK536:/# ls /run/media                                //列出/run/media目录下的文件
+root@OK536:/# ls /run/media                       //List files in the/run/media directory
 mmcblk0p1  mmcblk0p6  mmcblk1p1
 ```
 
