@@ -315,7 +315,7 @@ Connection method: Stamp hole + LGA. The main interfaces are shown in the figure
 
 ![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93_UP4_note_book.jpg)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93-UP4-note-book.jpg)
 
 ### 3.2 OK-93xx-UP4 Development Board Dimension Diagram
 
