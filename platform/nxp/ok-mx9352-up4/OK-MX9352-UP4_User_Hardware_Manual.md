@@ -463,9 +463,9 @@ An RTC device is connected to the carrier board via the I2C\_A bus. It enables a
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card comes from the VCC\_3V3\_SD output of the SoM.
 
-![屏幕截图 2025-01-23 093650](images/OK-MX9352-UP4_User_Hardware_Manual/093650.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/093650.png)
 
-![屏幕截图 2025-01-23 094829](images/OK-MX9352-UP4_User_Hardware_Manual/094829.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/094829.png)
 
 **Note:** 
 
