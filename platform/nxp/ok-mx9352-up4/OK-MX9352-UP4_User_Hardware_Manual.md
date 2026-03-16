@@ -651,7 +651,7 @@ I. Hole Opening Scheme
 
 ## 6\. Minimum System Diagram
 
-It has SoM, BOOT, power, debug serial port, system image flashing port. 
+There are SoM, BOOT, power, debug serial port, system image flashing port. 
 
 ![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_09.png)
 
