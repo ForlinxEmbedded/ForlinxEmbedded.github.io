@@ -227,7 +227,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p><strong>Front</strong></p>
 <p><img alt="Image" src="_images/684a96b46529a400013adcf4.png" /></p>
 <p><strong>Back</strong></p>
-<p><img alt="93核心板背面UP4V I.1" src="images/OK-MX9352-UP4_User_Hardware_Manual/93%E6%A0%B8%E5%BF%83%E6%9D%BF%E8%83%8C%E9%9D%A2UP4V%20I.1.png" /></p>
+<p><img alt="Image" src="_images/93UP4V_1_1.png" /></p>
 </section>
 <section id="fet-mx93xx-up4-som-dimension-diagram">
 <h3>2.2 FET-MX93xx-UP4 SoM Dimension Diagram<a class="headerlink" href="#fet-mx93xx-up4-som-dimension-diagram" title="Link to this heading"></a></h3>
@@ -1013,7 +1013,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 <h3>3.1 OK-93xx-UP4 Development Board Interface<a class="headerlink" href="#ok-93xx-up4-development-board-interface" title="Link to this heading"></a></h3>
 <p>Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:</p>
 <p><img alt="Image" src="_images/93.png" /></p>
-<p><img alt="93  UP4标注背面" src="images/OK-MX9352-UP4_User_Hardware_Manual/93%20%20UP4%E6%A0%87%E6%B3%A8%E8%83%8C%E9%9D%A2.png" /></p>
+<p><img alt="Image" src="_images/93_UP4_note_book.png" /></p>
 </section>
 <section id="ok-93xx-up4-development-board-dimension-diagram">
 <h3>3.2 OK-93xx-UP4 Development Board Dimension Diagram<a class="headerlink" href="#ok-93xx-up4-development-board-dimension-diagram" title="Link to this heading"></a></h3>
@@ -1277,14 +1277,14 @@ default;</strong></p></li>
 <section id="lradc-button">
 <h4>3.5.3 LRADC Button<a class="headerlink" href="#lradc-button" title="Link to this heading"></a></h4>
 <p>The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10kΩ resistor on the SoM.</p>
-<p><img alt="屏幕截图 2025-01-21 104742" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20104742.png" /></p>
+<p><img alt="Image" src="_images/104742.png" /></p>
 </section>
 <section id="debugging-serial-port">
 <h4>3.5.4 Debugging Serial Port<a class="headerlink" href="#debugging-serial-port" title="Link to this heading"></a></h4>
 <p>The carrier board features a single USB Type-C port with 3 x integrated debug serial ports. Install the XR21V1414IM48 driver on your computer, connect the P36 port to the computer, and select the DEBUG_A debug serial port to start debugging.</p>
 <p>The FET-MX93xx-UP4 SoM is equipped only with the DEBUG_A and DEBUG_M debug interfaces</p>
-<p><img alt="屏幕截图 2025-01-21 110047" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20110047.png" /></p>
-<p><img alt="屏幕截图 2025-01-21 110110" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20110110.png" /></p>
+<p><img alt="Image" src="_images/110047.png" /></p>
+<p><img alt="Image" src="_images/110110.png" /></p>
 <p><strong>Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.</strong></p>
 </section>
 <section id="jtag">
@@ -1296,12 +1296,12 @@ default;</strong></p></li>
 <h4>3.5.6 BOOT<a class="headerlink" href="#boot" title="Link to this heading"></a></h4>
 <p>There are two BOOT options on the carrier board, allowing the system to boot from either the eMMC, nor flash, TF card or NAND.</p>
 <p>The FET-MX93xx-UP4 SoM supports only two boot methods: eMMC and TF.</p>
-<p><img alt="屏幕截图 2025-04-10 174515" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-10%20174515.png" /></p>
+<p><img alt="Image" src="_images/174515.png" /></p>
 </section>
 <section id="rtc">
 <h4>3.5.7 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
 <p>An RTC device is connected to the carrier board via the I2C_A bus. It enables a compatible power supply from either VCC_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.</p>
-<p><img alt="屏幕截图 2025-01-21 114208" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20114208.png" /></p>
+<p><img alt="Image" src="_images/114208.png" /></p>
 </section>
 <section id="tf-card">
 <h4>3.5.8 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
@@ -1334,17 +1334,17 @@ default;</strong></p></li>
 <section id="resistive-touchscreen">
 <h4>3.5.12 Resistive Touchscreen<a class="headerlink" href="#resistive-touchscreen" title="Link to this heading"></a></h4>
 <p>If a resistive touchscreen is required, a resistive touch circuit can be added and connected to pins 1, 2, 3 and 4 of the P4 (LCD interface).</p>
-<p><img alt="屏幕截图 2025-02-12 111914" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20111914.png" /></p>
+<p><img alt="Image" src="_images/111914.png" /></p>
 </section>
 <section id="mipi-dsi">
 <h4>3.5.13 MIPI_DSI<a class="headerlink" href="#mipi-dsi" title="Link to this heading"></a></h4>
 <p>The P11 on the development board is MIPI_DSI port, supporting 4 Lane MIPI_DSI.</p>
-<p><img alt="屏幕截图 2025-02-12 114926" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20114926.png" /></p>
+<p><img alt="Image" src="_images/114926.png" /></p>
 </section>
 <section id="mipi-csi">
 <h4>3.5.14 MIPI_CSI<a class="headerlink" href="#mipi-csi" title="Link to this heading"></a></h4>
 <p>There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI camera. It features a pitch of 0.5mm, a flip-down cover, and supports a 2-lane MIPI-CSI connection.</p>
-<p><img alt="屏幕截图 2025-04-10 150957" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-10%20150957.png" /></p>
+<p><img alt="Image" src="_images/150957.png" /></p>
 <img src="images\屏幕截图 2025-02-12 163045.png" alt="屏幕截图 2025-02-12 163045" style="zoom: 67%;" />
 #### 3.5.15 WiFi \& BT
 <p>There is an onboard WiFi module (AW-CM358SM). The WiFi module features an SDIO interface, operates on dual bands of 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standards. P10 is an SMA interface for antenna connection. Please use a 2.4GHz&amp;5GHz dual-band antenna.</p>
@@ -1363,16 +1363,16 @@ default;</strong></p></li>
 <p>The 4G module can be configured on the development board, and the supported specifications are miniPCIE interface, 3.3 V power supply, and USB2.0 communication.</p>
 <p>P20 is a nano SIM card slot, which is self-ejecting. Pay attention to the insertion direction according to the card identification. It does not support card hot plug.</p>
 <p>Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.</p>
-<p><img alt="屏幕截图 2025-02-14 114400" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20114400.png" /></p>
-<p><img alt="屏幕截图 2025-02-14 114420" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20114420.png" /></p>
+<p><img alt="Image" src="_images/114400.png" /></p>
+<p><img alt="Image" src="_images/114420.png" /></p>
 </section>
 <section id="ethernet">
 <h4>3.5.18 Ethernet<a class="headerlink" href="#ethernet" title="Link to this heading"></a></h4>
 <p>The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521sh chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.</p>
-<p><img alt="屏幕截图 2025-02-14 144123" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20144123.png" /></p>
-<p><img alt="屏幕截图 2025-02-14 144249" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20144249.png" /></p>
+<p><img alt="Image" src="_images/144123.png" /></p>
+<p><img alt="Image" src="_images/144249.png" /></p>
 <p><img alt="Image" src="_images/Snipaste_2025_06_17_16_09_52.png" /></p>
-<p><img alt="屏幕截图 2025-02-14 144725" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20144725.png" /></p>
+<p><img alt="Image" src="_images/144725.png" /></p>
 </section>
 <section id="can">
 <h4>3.5.19 CAN<a class="headerlink" href="#can" title="Link to this heading"></a></h4>
@@ -1383,17 +1383,17 @@ default;</strong></p></li>
 <section id="gpadc">
 <h4>3.5.20 GPADC<a class="headerlink" href="#gpadc" title="Link to this heading"></a></h4>
 <p>The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.</p>
-<p><img alt="屏幕截图 2025-02-14 161310" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20161310.png" /></p>
+<p><img alt="Image" src="_images/161310.png" /></p>
 </section>
 <section id="uart">
 <h4>3.5.21 UART<a class="headerlink" href="#uart" title="Link to this heading"></a></h4>
 <p>1 x five-wire UART is routed from the development board and powered by a 3.3V signal.</p>
-<p><img alt="屏幕截图 2025-02-14 165334" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20165334.png" /></p>
+<p><img alt="Image" src="_images/165334.png" /></p>
 </section>
 <section id="io-expansion">
 <h4>3.5.22 IO Expansion<a class="headerlink" href="#io-expansion" title="Link to this heading"></a></h4>
 <p>An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.</p>
-<p><img alt="屏幕截图 2025-02-17 114511" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-17%20114511.png" /></p>
+<p><img alt="Image" src="_images/114511.png" /></p>
 </section>
 <section id="audio">
 <h4>3.5.23 Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h4>
@@ -1414,13 +1414,13 @@ default;</strong></p></li>
 <li><p>The steel mesh type is ladder steel mesh, with thickness of 0.1mm and 0.15 mm, and the ladder is on the printing surface;</p></li>
 <li><p>As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.</p></li>
 </ol>
-<p><img alt="图片1" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%9B%BE%E7%89%871.png" /></p>
-<p><img alt="图片2" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%9B%BE%E7%89%872.png" /></p>
+<p><img alt="Image" src="_images/pic1.png" /></p>
+<p><img alt="Image" src="_images/pic2.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.</p></li>
 </ol>
-<p><img alt="图片3" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%9B%BE%E7%89%873.png" /></p>
-<p><img alt="图片4" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%9B%BE%E7%89%874.png" /></p>
+<p><img alt="Image" src="_images/pic3.png" /></p>
+<p><img alt="Image" src="_images/pic4.png" /></p>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>Since the LGA pads on the UP4 series SoMs use a pre-tinned process, there is a height difference of approximately 0.1 mm between the LCC pads and the LGA pads. This may result in uneven solder wick height between the LCC pads. Please do visual inspection for the LCC soldering;</strong></p></li>
@@ -1514,8 +1514,8 @@ default;</strong></p></li>
 <p><img alt="Image" src="_images/Snipaste_2025_12_23_11_48_24.png" /></p>
 <p><img alt="Image" src="_images/Snipaste_2025_12_23_11_48_37.png" /></p>
 <p><img alt="Image" src="_images/Snipaste_2025_09_19_15_30_59.png" /></p>
-<p><img alt="屏幕截图 2025-02-18 162314" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-18%20162314.png" /></p>
-<p><img alt="屏幕截图 2025-02-18 162334" src="images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-18%20162334.png" /></p>
+<p><img alt="Image" src="_images/162314.png" /></p>
+<p><img alt="Image" src="_images/162334.png" /></p>
 </section>
 </section>
 
