@@ -479,7 +479,7 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilises the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-!\[屏幕截图 2025-01-23 103014](images\\屏幕截图 2025-01-23 103014.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/103014.png)
 
 #### 3.5.10 LVDS Display
 
@@ -513,7 +513,8 @@ There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI 
 
 ![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/150957.png)
 
-<img src="images\OK-MX9352-UP4_User_Hardware_Manual\163045.png" alt="屏幕截图 2025-02-12 163045" style="zoom: 67%;" />
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/163045.png)
+
 #### 3.5.15 WiFi \& BT
 
 There is an onboard WiFi module (AW-CM358SM). The WiFi module features an SDIO interface, operates on dual bands of 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standards. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
