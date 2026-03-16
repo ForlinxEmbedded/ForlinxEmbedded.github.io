@@ -479,7 +479,7 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilises the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-![屏幕截图 2025-01-23 103014](./images/OK-MX9352-UP4_User_Hardware_Manual/103014.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/103014.png)
 
 #### 3.5.10 LVDS Display
 
@@ -513,7 +513,7 @@ There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI 
 
 ![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/150957.png)
 
-![硬件接口说明图](./images/OK-MX9352-UP4_User_Hardware_Manual/163045.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/163045.png)
 
 #### 3.5.15 WiFi \& BT
 
