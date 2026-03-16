@@ -392,7 +392,7 @@ A-B-C+DEFGHIJKL:MN-O
 
 ### 3.5 OK93xx-UP4 Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  
   default;**
