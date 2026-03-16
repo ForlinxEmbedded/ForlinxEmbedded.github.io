@@ -43,7 +43,7 @@ The i.MX 93 series represents NXP’s latest power‑optimized processors, desig
 
 **i.MX 93 Processor**
 
-![Snipaste\_2025-06-17\_18-01-48](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-17_18-01-48.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_17_18_01_48.png)
 
 ****
 
@@ -54,7 +54,7 @@ The i.MX 93 series represents NXP’s latest power‑optimized processors, desig
 
 **Front**
 
-![684a96b46529a400013adcf4](images/OK-MX9352-UP4_User_Hardware_Manual/684a96b46529a400013adcf4.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/684a96b46529a400013adcf4.png)
 
 **Back**
 
@@ -62,7 +62,7 @@ The i.MX 93 series represents NXP’s latest power‑optimized processors, desig
 
 ### 2.2 FET-MX93xx-UP4 SoM Dimension Diagram
 
-![Snipaste\_2025-06-20\_09-44-57](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-20_09-44-57.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_09_44_57.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -157,11 +157,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 UP4 SoM Pin Schematic
 
-![Snipaste\_2025-06-20\_10-35-14](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-20_10-35-14.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_14.png)
 
-![Snipaste\_2025-06-20\_10-35-28](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-20_10-35-28.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_28.png)
 
-![Snipaste\_2025-06-20\_10-35-34](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-20_10-35-34.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_34.png)
 
 #### 2.5.2 UP4 SoM Pin Function Description
 
@@ -313,13 +313,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
-![93](images/OK-MX9352-UP4_User_Hardware_Manual/93.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93.png)
 
 ![93  UP4标注背面](images/OK-MX9352-UP4_User_Hardware_Manual/93%20%20UP4%E6%A0%87%E6%B3%A8%E8%83%8C%E9%9D%A2.png)
 
 ### 3.2 OK-93xx-UP4 Development Board Dimension Diagram
 
-![Snipaste\_2025-12-09\_18-25-23](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-12-09_18-25-23.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_09_18_25_23.png)
 
 PCB: 130mm×190mm
 
@@ -331,7 +331,7 @@ Power Voltage: DC 12V
 
 The OK-MX93xx-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![Snipaste\_2026-03-11\_11-20-44](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2026-03-11_11-20-44.bmp)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2026_03_11_11_20_44.png)
 
 ### 3.3 Naming Rules
 
@@ -405,7 +405,7 @@ As shown, the power supply for the development board is 12V DC（from p28). VDD\
 
 PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![Snipaste\_2025-09-19\_15-30-59](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-09-19_15-30-59.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_09_19_15_30_59.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -419,7 +419,7 @@ K6 on the carrier board is for waking up. After the board enters sleep mode pres
 
 The FET-MX93xx-UP4 SoM does not have the WAKEUP feature.
 
-![Snipaste\_2025-06-18\_16-56-44](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_16-56-44.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_16_56_44.png)
 
 #### 3.5.3 LRADC Button
 
@@ -443,7 +443,7 @@ The FET-MX93xx-UP4 SoM is equipped only with the DEBUG\_A and DEBUG\_M debug int
 
 The carrier board features a single JTAG debugging interface for debugging the x core.
 
-![Snipaste\_2025-06-18\_17-05-38](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-05-38.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_05_38.png)
 
 #### 3.5.6 BOOT
 
@@ -487,13 +487,13 @@ The pin header P1 on the development board can be connected to the LVDS display 
 
 It supports 2\*4 lane LVDS connection, and I2C port touch screen.
 
-![Snipaste\_2025-06-18\_17-07-12](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-07-12.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_07_12.png)
 
 #### 3.5.11 LCD-RGB888
 
 Pin P4 on the development board is the LCD interface; it is an FPC socket that can be connected to an LCD screen and supports capacitive touchscreens.
 
-![Snipaste\_2025-06-18\_17-08-21](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-08-21.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_08_21.png)
 
 #### 3.5.12 Resistive Touchscreen
 
@@ -518,7 +518,7 @@ There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI 
 
 There is an onboard WiFi module (AW-CM358SM). The WiFi module features an SDIO interface, operates on dual bands of 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standards. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-![Snipaste\_2025-06-18\_17-18-05](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-18-05.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_18_05.png)
 
 #### 3.5.16 USB2.0
 
@@ -528,9 +528,9 @@ In addition, a group of onboard USB2.0 HOST interfaces is led out from the SoM, 
 
 Another USB2.0 interface is connected to the standard interface of USB3.0-A, which supports master-slave switching.
 
-![Snipaste\_2025-06-18\_17-21-24](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-21-24.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_21_24.png)
 
-![Snipaste\_2025-06-18\_17-21-37](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-21-37.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_21_37.png)
 
 #### 3.5.17 4G
 
@@ -552,7 +552,7 @@ The development board supports two native 1000m network ports, which are realize
 
 ![屏幕截图 2025-02-14 144249](images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20144249.png)
 
-![Snipaste\_2025-06-17\_16-09-52](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-17_16-09-52.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_17_16_09_52.png)
 
 ![屏幕截图 2025-02-14 144725](images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20144725.png)
 
@@ -562,7 +562,7 @@ The development board supports two native 1000m network ports, which are realize
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![Snipaste\_2025-06-18\_17-28-47](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-28-47.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_28_47.png)
 
 #### 3.5.20 GPADC
 
@@ -586,19 +586,19 @@ An IO expansion chip is led out from the development board via I2C. 24 additiona
 
 A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.
 
-![Snipaste\_2025-06-18\_17-42-14](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-42-14.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_42_14.png)
 
-![Snipaste\_2025-06-18\_17-42-29](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-06-18_17-42-29.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_42_29.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![Image\_20251205101513](images/OK-MX9352-UP4_User_Hardware_Manual/Image_20251205101513.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Image_20251205101513.png)
 
 To ensure a high weld yield, please refer to the diagram below for the design of the packaging stencil:
 
-![Image\_20251208142354](images/OK-MX9352-UP4_User_Hardware_Manual/Image_20251208142354.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Image_20251208142354.png)
 
 I. Hole Opening Scheme
 
@@ -652,13 +652,13 @@ I. Hole Opening Scheme
 
 It has SoM, BOOT, power, debug serial port, system image flashing port. 
 
-![Snipaste\_2025-12-23\_11-48-09](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-12-23_11-48-09.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_09.png)
 
-![Snipaste\_2025-12-23\_11-48-24](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-12-23_11-48-24.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_24.png)
 
-![Snipaste\_2025-12-23\_11-48-37](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-12-23_11-48-37.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_37.png)
 
-![Snipaste\_2025-09-19\_15-30-59](images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025-09-19_15-30-59.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_09_19_15_30_59.png)
 
 ![屏幕截图 2025-02-18 162314](images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-18%20162314.png)
 
