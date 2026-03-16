@@ -463,9 +463,9 @@ An RTC device is connected to the carrier board via the I2C\_A bus. It enables a
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card comes from the VCC\_3V3\_SD output of the SoM.
 
-![屏幕截图 2025-01-23 093650](images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20093650.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/093650.png)
 
-![屏幕截图 2025-01-23 094829](images/OK-MX9352-UP4_User_Hardware_Manual/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20094829.png)
+![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/094829.png)
 
 **Note:** 
 
@@ -513,7 +513,7 @@ There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI 
 
 ![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/150957.png)
 
-<img src="images\屏幕截图 2025-02-12 163045.png" alt="屏幕截图 2025-02-12 163045" style="zoom: 67%;" />
+<img src="images\OK-MX9352-UP4_User_Hardware_Manual\163045.png" alt="屏幕截图 2025-02-12 163045" style="zoom: 67%;" />
 #### 3.5.15 WiFi \& BT
 
 There is an onboard WiFi module (AW-CM358SM). The WiFi module features an SDIO interface, operates on dual bands of 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standards. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
