@@ -147,7 +147,8 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>Additionally, a redundancy margin of at least 20% of the system’s peak power consumption (SoM + carrier board) must be maintained. Therefore, the 5V power source should provide a minimum of ≥ (15W + Carrier board peak power) * 120%.</p>
 <p>It is essential to add filter capacitors to the carrier board before supplying the 5V signal to the SoM. Recommended capacitor values include 100nF, 1μF, 10μF, and 22μF.</p>
 <p>Diagram:</p>
-<p><img alt="image-20260303083355184" src="images/image-20260303083423398.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083355184_1773717587288.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083423398.png" /></p>
 <p><strong>2. Pin (4) Signal Name (EXTP_EN) Design Requirements</strong></p>
 <p>When designing the carrier board, use this pin to manage the power-up sequence. This pin is configured as a push-pull output on the System-on-Module (SoM). By default, there should be a pull-down resistor on the carrier board, and the power to the carrier board should remain off initially. The power should only turn on when the SoM sends a high signal on this pin. Additionally, the power supplies on the carrier board must have soft-start functionality to prevent inrush current spikes during power-up.</p>
 <p><strong>Design Reference:</strong></p>
@@ -156,23 +157,23 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>2. Directly Control the DC-DC Enable Pin:</p>
 <p>For DC-DC circuits that have built-in soft-start functionality, this pin can be connected directly to the circuit’s EN signal. A series resistor must be added to ensure the correct electrical current is maintained. Verify whether the pin’s default state is low or whether the DC-DC circuit is disabled by default. See Figure2.</p>
 <p>Figure 1</p>
-<p><img alt="image-20260303083423398" src="images/image-20260303083441023.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083441023.png" /></p>
 <p>Figure 2</p>
-<p><img alt="image-20260303083441023" src="images/image-20260303083454935.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083454935.png" /></p>
 <p><strong>3. Pin Number (5), Signal Name (STANDBY) Design Requirements</strong></p>
 <p>The power supply of specific circuits on the carrier board can be controlled using this pin, enabling low-power mode to be implemented in certain scenarios. It controls the conduction of a MOSFET and a pull-down resistor ensures an inactive state by default (i.e. the MOSFET is turned on and power is supplied). When the relevant conditions are met, the SoM turns off the power to certain circuits on the carrier board by setting the output high. An RC soft-start circuit is required.</p>
 <p><strong>4. Pin Number (6), Signal Name (nRESET) Design Requirements</strong></p>
 <p>The design of the carrier board must not include any pull-up resistors. The SoM provides the high-level state. The carrier board is connected to a switch button to achieve low-level triggering. The debounce capacitor and TVS tube can be omitted as required.</p>
 <p>Diagram:</p>
-<p><img alt="image-20260303083454935" src="images/image-20260303083528951.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083528951.png" /></p>
 <p><strong>5. Pin Number (7), Signal Name (WAKEUP) Design Requirements</strong></p>
 <p>The design of the carrier board must not include any pull-up resistors. The SoM provides the high-level state. The carrier board is connected to a switch button to achieve low-level triggering. The debounce capacitor and TVS tube can be omitted as required.</p>
 <p>Diagram:</p>
-<p><img alt="image-20260303083528951" src="images/image-20260303083542829.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083542829.png" /></p>
 <p><strong>6. Pin Number (8), Signal Name (PWRON) Design Requirements</strong></p>
 <p>The design of the carrier board must not include any pull-up resistors. The SoM provides the high-level state. The carrier board is connected to a switch button to achieve low-level triggering. The debounce capacitor and TVS tube can be omitted as required.</p>
 <p>Diagram:</p>
-<p><img alt="image-20260303083542829" src="images/image-20260303083554752.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083542829_1773716887409.png" /></p>
 <p><strong>7. Pin Numbers (9/10), Signal Names (BOOT1/BOOT2) Design Requirements</strong></p>
 <p>The design of the carrier board involves the two BOOT pins being pulled down to ground. This is achieved through the use of a 1K resistor, which is connected to the pins via a dual-position DIP switch. The use of pull-up resistors or other circuits is not permitted. The switch configurations are as follows:</p>
 <table class="docutils align-default">
@@ -202,11 +203,11 @@ The drivers and utilities used for the components are subject to the copyrights 
 </tbody>
 </table>
 <p>Diagram:</p>
-<p><img alt="image-20260303083554752" src="images/image-20260303083625223.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083625223.png" /></p>
 <p><strong>8. Pin Number (11), Signal Name (FORCE_USBLOAD) Design Requirements</strong></p>
 <p>The design of the carrier board must not include any pull-up resistors. The SoM provides the high-level state. The carrier board is connected to a switch button to achieve low-level triggering. The debounce capacitor and TVS tube can be omitted as required.</p>
 <p>Diagram:</p>
-<p><img alt="image-20260303083625223" src="images/image-20260303083636102.png" /></p>
+<p><img alt="Image" src="_images/image_20260303083636102.png" /></p>
 <p><strong>9. Pin Number (12), Signal Name (POR_B) Design Requirements</strong></p>
 <p>It is used to reset the CPU and should only be used in conjunction with the JTAG interface for CPU debugging.</p>
 <p><strong>10.Pin Number（34/35/69/70/325/326）Signal Name（I2C）Design Requirements</strong></p>
@@ -236,30 +237,30 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>At present, five platforms are compatible with the UP4 platform. RK3568, RK3562, T527, T536 and MX9352. As these platforms have different interfaces, any compatibility design must include redundancy to support switching between them.</p>
 <p><strong>1. Reserved Design for Display Interfaces</strong></p>
 <p>The UP4 definition supports five display interfaces: LVDS, LCD, MIPI_DSI, HDMI, and eDP. For the enable pins of these display interfaces, it is necessary to reserve RC or series resistors. This ensures that the screen can be enabled normally on platforms where extra I/O pins are unavailable.</p>
-<p><img alt="image-20260303083636102" src="images/image-20260303084054186.png" /></p>
-<p><img alt="image-20260303084054186" src="images/image-20260303084104836.png" /></p>
-<p><img alt="image-20260303084104836" src="images/image-20260303084231712.png" /></p>
-<p><img alt="image-20260303084231712" src="images/image-20260303084201691.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084054186.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084104836.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084231712.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084201691.png" /></p>
 <p>The HDMI interface’s I2C and CEC must be compatible with 3.3 V or 5 V levels.</p>
-<p><img alt="img" src="images/image-20260303084255789.png" /></p>
-<p><img alt="image-20260303084255789" src="images/image-20260303084304352.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084255789.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084304352.png" /></p>
 <p><strong>2. Camera Module Design</strong></p>
 <p>If the Master Clock (MCLK) output from the System on Module (SoM) is required, the design should reserve series and voltage divider resistors to ensure the clock signal level meets the requirements of the camera module.</p>
-<p><img alt="image-20260303084304352" src="images/image-20260303084621877.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084621877.png" /></p>
 <p>A total of 27 MHz active clock must be reserved for four analogue camera modules to provide a clock source when the SoM has no MCLK resource.</p>
-<p><img alt="image-20260303084621877" src="images/image-20260303084630464.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084630464.png" /></p>
 <p><strong>3. WiFi Module Design</strong></p>
 <p>To ensure compatibility with different I/O levels, power supplies for both 3.3V and 1.8V should be reserved, as well as for the crystal oscillator. The appropriate active crystal oscillator should be selected based on the actual voltage in use. Additionally, a divider resistor should be used to match the level of the signal control.</p>
-<p><img alt="image-20260303084630464" src="images/image-20260303084643512.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084643512.png" /></p>
 <p><strong>4. Gigabit Ethernet Port Design</strong></p>
 <p>The IO level of 3.3 V and 1.8 V is to be considered, as well as the level selection option, pull-up level option, and network port status light option, which are to be reserved. In order to be compatible with the RMII interface, the RMII chip must be designed so that the signal line can be selectively soldered through the resistor.</p>
-<p><img alt="image-20260303084643512" src="images/image-20260303084701615.png" /></p>
-<p><img alt="image-20260303084701615" src="images/image-20260303084715314.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084701615.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084715314.png" /></p>
 <p><strong>5. Audio Codec Design</strong></p>
 <p>To ensure compatibility with 1.8V and 3.3V I/O levels, both 3.3V and 1.8V I/O power supplies should be reserved. The signal pins should also be configured to support both I/O states, selectable via series resistors. Additionally, a 24M active clock should be reserved for the MCLK signal to accommodate platforms without built-in MCLK.</p>
-<p><img alt="image-20260303084715314" src="images/image-20260303084728866.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084728866.png" /></p>
 <p>In the PCB BOM, for the USB port, the dual-layer USB socket or single-layer USB socket can be selected for soldering through package compatibility.</p>
-<p><img alt="image-20260303084728866" src="images/image-20260303084739842.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084739842.png" /></p>
 </section>
 </section>
 <section id="pcb-design">
@@ -267,21 +268,21 @@ The drivers and utilities used for the components are subject to the copyrights 
 <section id="pcb-compatibility-design-examples">
 <h3>2.1 PCB Compatibility Design Examples<a class="headerlink" href="#pcb-compatibility-design-examples" title="Link to this heading"></a></h3>
 <p><strong>1. Ethernet Port Compatibility Design Example</strong></p>
-<p><img alt="image-20260303084739842" src="images/image-20260303084816964.png" /></p>
-<p><img alt="image-20260303084816964" src="images/image-20260303084827060.png" /></p>
-<p><img alt="image-20260303084827060" src="images/image-20260303084836353.png" /></p>
-<p><img alt="image-20260303084836353" src="images/image-20260303084849441.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084816964.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084827060.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084836353.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084849441.png" /></p>
 </section>
 <section id="u40-carrier-board-pcb-layout-design-guidelines">
 <h3>2.2 U40 Carrier Board PCB Layout Design Guidelines<a class="headerlink" href="#u40-carrier-board-pcb-layout-design-guidelines" title="Link to this heading"></a></h3>
 <p>This specification can be applied to different PCB designs. You can refer to it and make optimization based on your actual use.</p>
 <p><strong>1. Stack-up Configuration</strong></p>
 <p>For 4-layer boards, the recommended stack-up is: S1 - POWER - GND - S2. The impedance profile is as shown below:</p>
-<p><img alt="image-20260303084849441" src="images/image-20260303084942640.png" /></p>
-<p><img alt="image-20260303084942640" src="images/image-20260303084951745.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084942640.png" /></p>
+<p><img alt="Image" src="_images/image_20260303084951745.png" /></p>
 <p>For 6-layer boards, the recommended stack-up is: S1 - GND - S2 - S3 - POWER - S4. The impedance profile is as shown below:</p>
-<p><img alt="image-20260303084951745" src="images/image-20260303085003721.png" /></p>
-<p><img alt="image-20260303085003721" src="images/image-20260303085013602.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085003721.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085013602.png" /></p>
 <p>The specific stack-up can be adjusted according to actual requirements.</p>
 <p><strong>2. Via Configuration</strong></p>
 <p>The preferred via size series:</p>
@@ -289,26 +290,26 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>For the LGA fanout, a 12/20 mil via configuration is recommended.</p>
 <p><strong>3. Routing Layout</strong></p>
 <p>As the SoM uses LGA pins predominantly, and most high-speed signals and all differential pairs are located in the LGA area, signals from the LGA should be fanned out collectively and primarily routed on the bottom layer to ensure signal integrity. This is shown in the figure below:</p>
-<p><img alt="image-20260303085013602" src="images/image-20260303085037962.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085037962.png" /></p>
 <p>The fan-out method for LGA differential pairs is illustrated below:</p>
-<p><img alt="image-20260303085037962" src="images/image-20260303085050676.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085050676.png" /></p>
 <p>A minimum safety spacing of three times the trace width (3W) should be maintained between differential pairs to prevent signal crosstalk. If conditions permit, it is recommended to implement ground isolation around the differential pairs, as shown in the figure below.</p>
-<p><img alt="image-20260303085050676" src="images/image-20260303085104161.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085104161.png" /></p>
 <p>For the LGA differential line pad area on the carrier board, the first two reference layers of the carrier board need to be partially voided to ensure impedance continuity. Please refer to the figure below for the specific voiding area.</p>
-<p><img alt="image-20260303085104161" src="images/wps37.jpg" />![img](file:///C:\Users\forlinx\AppData\Local\Temp\ksohtml12852\wps38.jpg)</p>
+<p><img alt="Image" src="_images/image_20260303085148720.png" /></p>
 <p>For the stamp hole, after completing the normal routing on the top layer, the traces are switched to the bottom layer to ensure that the entire group can be collectively rerouted after exiting.</p>
-<p><img alt="img" src="images/image-20260303085239603.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085239603.png" /></p>
 <p>Schematic of the direction change:</p>
-<p><img alt="image-20260303085239603" src="images/image-20260303085250062.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085250062.png" /></p>
 <p>Single-ended 50-ohm impedance traces must maintain at least 2.5W clearance to prevent crosstalk.</p>
 <p>The overall routing is as follows:</p>
-<p><img alt="image-20260303085250062" src="images/image-20260303085304625.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085304625.png" /></p>
 <p><strong>4. Stencil and Component Placement Requirements</strong></p>
 <p>The stencil layer for carrier board footprints is custom-designed. Don’t do modifications to the stencil layer design. The stencil is expanded in the stamp-hole areas. No vias are allowed within these stencil expansion zones. The stencil design is shown below:</p>
-<p><img alt="image-20260303085304625" src="images/image-20260303085318876.png" /></p>
-<p><img alt="image-20260303085318876" src="images/image-20260303085331240.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085318876.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085331240.png" /></p>
 <p>Do not place any components within 5 mm of the board edge (i.e. outside the outer yellow frame in the diagram below). This area is reserved for the stencil used in the separate soldering process for the System on Module (SoM). The size of this keep-out area may be modified based on practical use.</p>
-<p><img alt="image-20260303085331240" src="images/image-20260303085348322.png" /></p>
+<p><img alt="Image" src="_images/image_20260303085348322.png" /></p>
 </section>
 </section>
 </section>
