@@ -23,6 +23,7 @@ HARDWARE
    :maxdepth: 2
 
    OK-MX9352-UP4_User_Hardware_Manual
+   OK-MX9352-UP4_User_Design_Guide
 
 
 
