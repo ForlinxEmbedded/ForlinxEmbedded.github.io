@@ -86,7 +86,7 @@ The debug serial port on the development board is a USB Type-C port. You can con
 
 The interfaces are as follows:
 
-![](image-20250924151846390.png)
+![](./images/OK153-S_Linux5_10_198_User_Manual/image-20250924151846390.png)
 
 ### 2.2 Serial Port Login
 
