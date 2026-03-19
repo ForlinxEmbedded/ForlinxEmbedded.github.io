@@ -108,15 +108,15 @@ Terminal Setup Using PuTTY （User profile\\3-tools\\putty-64-bit\_x86.exe）as 
 
 **Serial port information:**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703938960-c87153ea-63df-4adb-96b4-e0ac373e4e31.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703938960_c87153ea_63df_4adb_96b4_e0ac373e4e31.png)
 
 **2\. Configure PuTTY:** 
 
 Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703939057-1a28f4df-1836-4ee0-afdc-81da5f4d16d9.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703939057_1a28f4df_1836_4ee0_afdc_81da5f4d16d9.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703939144-2d7fe557-2f78-4f4c-9963-2015a2537762.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703939144_2d7fe557_2f78_4f4c_9963_2015a2537762.png)
 
 **3. Power On and Login:**
 Turn on the development board. Boot messages will display in the serial terminal. Once the prompt **root@OKT153:/#** appears, the system is fully booted. You are automatically logged in as the root user, with no password required.
@@ -148,13 +148,13 @@ Connect the eth0 port of the development board to your computer using an Etherne
 
 Temporarily disable the computer firewall (this is a general operation; specific steps depend on your Windows version);
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850024967-d4df4b63-dc5c-4fc5-90d0-cb4f7f2ca8ff.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850024967_d4df4b63_dc5c_4fc5_90d0_cb4f7f2ca8ff.png)
 
 3\. Open Command Prompt as administrator
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850025209-a11e503d-f886-4c1c-8c6f-f5a54d47fb78.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -166,11 +166,11 @@ Data is returned, indicating that the network connection is normal.
 + **The default IP address for the eth0 interface is 192.168.0.232；**
 + **You can use the scp command for file transfers.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850025481-c241181e-70ac-40c8-a851-967057b38fb5.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850025481_c241181e_70ac_40c8_a851_967057b38fb5.png)
 
 After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850025692-57de0033-480a-4d47-8976-ad5d88857de4.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850025692_57de0033_480a_4d47_8976_ad5d88857de4.png)
 
 ```bash
 Login as：root 							//Follow the prompts to enter the development board account root.
@@ -336,15 +336,15 @@ This section illustrates how to operate the development board’s extended inter
 
 After the eMMC version development board boots up, the desktop displays the following:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703940736-332b61f1-f48e-4e07-b98b-ffc9438ee346.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703940736_332b61f1_f48e_4e07_b98b_ffc9438ee346.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703940829-d9b93ace-9595-42e3-b5b4-7123a2915458.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703940829_d9b93ace_9595_42e3_b5b4_7123a2915458.png)
 
 #### 3.1.2 Nand Version
 
 After the Nand version development board boots up, the desktop displays the following:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/44394892/1718850036884-d58a2270-baca-4744-b3a4-00ad55bb2229.jpeg)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850036884_d58a2270_baca_4744_b3a4_00ad55bb2229.jpeg)
 
 There is no QT test program in the Nand version development board, you can skip chapter 3.
 
@@ -355,7 +355,7 @@ There is no QT test program in the Nand version development board, you can skip 
 + **The factory default only sets the eth0 network card to STATIC mode;**
 + **The IP address and related network settings you configure will be saved to the system’s relevant configuration file (`/etc/network/interfaces`). This ensures that the same network information will be applied automatically upon each system reboot.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703940901-0a75210f-a730-4e95-9c29-c903efd5c20a.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703940901_0a75210f_a730_4e95_9c29_c903efd5c20a.png)
 
 Click the network configuration icon to enter the interface program, supporting both STATIC and DHCP modes.
 
@@ -373,7 +373,7 @@ Click the network configuration icon, select STATIC, as shown below: You can con
 | Gateway| Set gateway|
 | DNS| Set DNS|
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941074-fbceb947-e804-459c-ae87-385b80b517e9.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941074_fbceb947_e804_459c_ae87_385b80b517e9.png)
 
 + DHCP mode interface is as follows:
 
@@ -381,21 +381,21 @@ Click the network configuration icon, select STATIC, as shown below: You can con
 
 Select DHCP, choose the network card device to be configured in the “interface” section, and click “Apply and Restart Network” at the bottom of the interface to automatically restart the network and obtain an IP address.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941157-aed87296-630a-4d0d-88ac-8e2a75efc144.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941157_aed87296_630a_4d0d_88ac_8e2a75efc144.png)
 
 ### 3.3 Browser Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941239-b23414cc-1364-4392-9492-f74daf1b8e8f.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941239_b23414cc_1364_4392_9492_f74daf1b8e8f.png)
 
 Click the browser icon to enter the browser. Ensure the network is smooth during use, and ensure DNS is available before accessing external networks. The browser defaults to accessing the Forlinx Embedded official website upon startup, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941338-88327971-64e9-42d1-8777-a3e234abbd07.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941338_88327971_64e9_42d1_8777_a3e234abbd07.png)
 
 **Note: If the development board time is abnormal, it may cause certificate issues.**
 
 ### 3.4 4G Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941455-d246ef62-85ab-43c7-99c4-80cfe8e413df.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941455_d246ef62_85ab_43c7_99c4_80cfe8e413df.png)
 
 After booting, the desktop displays the following:
 
@@ -408,15 +408,15 @@ The “4G” test program is used to verify the functionality of the external 4G
 
 **Note: This example uses the EC20 module. If you are using a different module, please refer to its specific documentation for setup details.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941623-0db055a8-5ad9-45ff-8a44-dfbcc55fef65.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941623_0db055a8_5ad9_45ff_8a44_dfbcc55fef65.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941691-80175043-836c-4ac2-bacc-4d1608e01ca3.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941691_80175043_836c_4ac2_bacc_4d1608e01ca3.png)
 
 Click the **“Connect”** button; the program will automatically perform operations such as initiating dial‑up, obtaining an IP address, and configuring DNS. Wait a few seconds, then click the **“Ping”** button to proceed with the test.
 
 ### 3.5 UART Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941761-77aebfcc-1356-44ec-aefd-3d1f2845e29e.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941761_77aebfcc_1356_44ec_aefd_3d1f2845e29e.png)
 
 This test uses UART5 (ttyAS5) and establishes a connection with UART7 (ttyAS7) to achieve UART data sending and receiving.
 
@@ -424,7 +424,7 @@ This test uses UART5 (ttyAS5) and establishes a connection with UART7 (ttyAS7) t
 
 2\. Click the settings button in the upper left corner to configure the serial port parameters;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703941923-ba20a95a-8758-47d2-be20-f6bec499e0f7.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703941923_ba20a95a_8758_47d2_be20_f6bec499e0f7.png)
 
 3\. Enter commands in the command line to send data through the ttyAS7 port, as shown below:
 
@@ -435,7 +435,7 @@ tx_0: XHYTiWAMB6FerhV3kGeklyUeqynyXjZ4
 
 4\. In the QT interface, you can see the content received by the ttyAS5 port as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703942001-86258023-f3fd-435c-8ed1-b025c450906f.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703942001_86258023_f3fd_435c_8ed1_b025c450906f.png)
 
 Alternatively, data sending and receiving via UART can also be achieved using a TTL to RS485 module.
 
@@ -443,7 +443,7 @@ Alternatively, data sending and receiving via UART can also be achieved using a 
 
 ### 3.6 ADC Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703942162-d76dba0a-a602-4011-aa37-db6cbe3cd1c1.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703942162_d76dba0a_a602_4011_aa37_db6cbe3cd1c1.png)
 
 Before testing the adjustable resistor, short‑circuit terminal **P4**. The resistor can be connected to GPADC0, GPADC1, GPADC2, or GPADC3 via terminal P4. The value of the resistor can be adjusted by turning the knob.
 
@@ -462,23 +462,23 @@ This tool is used to configure WiFi and test its STA (Station) mode.
 
 **Note: Ensure that a button battery is installed on the board and the battery voltage is normal.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703942879-f470ddbe-e17c-465e-a22a-5aa879c65c8e.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703942879_f470ddbe_e17c_465e_a22a_5aa879c65c8e.png)
 
 To test the RTC, configure the time via the test software, power cycle the device, and then re-run the software to confirm RTC synchronization. 
 
 Run the RTC test software to view and set the current system time RTC, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703942958-bb3fc698-6240-4960-a29f-307f5a14c668.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703942958_bb3fc698_6240_4960_a29f_307f5a14c668.png)
 
 Click **“Set”** to configure the time, then click **“Save”** to apply the changes. After that, power off and restart the development board. When you run the RTC test software again, it will automatically read the time. You will then see that the RTC time has been synchronized, confirming that the RTC test is functioning normally.
 
 ### 3.9 Key Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943046-c0466e0d-36a6-4750-9752-626d5be675e7.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943046_c0466e0d_36a6_4750_9752_626d5be675e7.png)
 
 This test verifies the functionality of the built‑in keys by checking whether the corresponding key turns blue when pressed.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943121-40caa9c1-6e54-4fd7-b9f3-81c256e9d597.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943121_40caa9c1_6e54_4fd7_b9f3_81c256e9d597.png)
 
 The OKT153 platform has a single physical button. To test it, press the button. If the corresponding key in the test application turns blue, the button is working correctly.
 
@@ -486,11 +486,11 @@ The OKT153 platform has a single physical button. To test it, press the button. 
 
 ### 3.10 Watchdog Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943197-909de866-5a59-4cb6-bbc7-dcde4def0196.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943197_909de866_5a59_4cb6_bbc7_dcde4def0196.png)
 
 “WatchDog” is an application used to test whether the watchdog function is normal. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943288-93bafe36-a3ec-4dca-91b3-9e7864f901ae.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943288_93bafe36_a3ec_4dca_91b3_9e7864f901ae.png)
 
 Check **“feed dog”** and then click **“open watchdog”**. The watchdog starts, and the program automatically performs feeding operations, so the system will **not** reboot normally.
 
@@ -498,47 +498,47 @@ Uncheck **“feed dog”** and then click **“open watchdog”**. The watchdog 
 
 ### 3.11 Ping Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943371-2144debd-b897-40c8-87c5-9b3f6386f887.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943371_2144debd_b897_40c8_87c5_9b3f6386f887.png)
 
 “Ping” is an interface version of the commonly used network test command ping. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943446-d20ac55f-3146-4c15-aa61-feea1c457eb7.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943446_d20ac55f_3146_4c15_aa61_feea1c457eb7.png)
 
 In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.
 
 As shown in the figure, it indicates the network between them is smooth.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943533-5d52c92d-390c-4ad7-8a95-d8d59a620f94.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943533_5d52c92d_390c_4ad7_8a95_d8d59a620f94.png)
 
 ### 3.12 Camera Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943614-16de3a44-ccdb-41a2-a2e2-d8006c59cc69.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943614_16de3a44_ccdb_41a2_a2e2_d8006c59cc69.png)
 
 Click the icon to enter the camera test program.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943681-2fe7c021-36ab-4434-91f1-9c6b7b462deb.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943681_2fe7c021_36ab_4434_91f1_9c6b7b462deb.png)
 
 Select the camera device node and resolution, then click "Start" to begin capturing. To take a photo, click "Picture" and choose the save path and file name. Click "Stop" to end the capture
 
 **Note: Please select the camera device and resolution according to your actual situation.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943750-6567d98d-f249-4034-ba1e-cabba6347895.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943750_6567d98d_f249_4034_ba1e_cabba6347895.png)
 
 Click "Picture" to take a photo. The image is automatically saved to the `/root` directory and can be viewed with the default Windows image viewer.
 
 ### 3.13 Backlight Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943829-18bcbed4-012d-4d72-ad92-ce44abf762af.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943829_18bcbed4_012d_4d72_ad92_ce44abf762af.png)
 
 “BackLight” is an LCD backlight adjustment application. Adjust the progress bar left and right to adjust the backlight brightness. After opening, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703943968-36ebf376-2341-40b3-beba-2f61eb420f0f.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703943968_36ebf376_2341_40b3_beba_2f61eb420f0f.png)
 
 You can adjust the LCD backlight brightness by dragging the slider in the interface. Level 0 means no backlight, and 255 (150 levels) is the highest brightness.
 
 ### 3.14 Recording Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703944118-7d730c2a-2ecb-4bff-9e52-a619ab146f56.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703944118_7d730c2a_2ecb_4bff_9e52_a619ab146f56.png)
 
 Connect the microphone to the MIC jack.
 
@@ -548,18 +548,18 @@ Select a save location for the recording, then click "Start" to begin and "Stop"
 
 Click the Input Device radio button and select "sndi2s1". Click the Channels radio button and select "2". The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703944213-572ea4b7-7f15-4135-8270-9e24c1ca6cad.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703944213_572ea4b7_7f15_4135_8270_9e24c1ca6cad.png)
 
 Click the Record button to start the test. The audio file is saved to the root directory as /clip\_XXXX.wav.
 
 ### 3.15 Music Playback Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703944383-8baef59d-6c03-44db-bd60-17dd5a931dca.png)   
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703944383_8baef59d_6c03_44db_bd60_17dd5a931dca.png)   
 Conduct a music playback test.
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703944460-42f529c2-663d-4cde-9fd4-685d2bc262a1.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703944460_42f529c2_663d_4cde_9fd4_685d2bc262a1.png)
 
 Application Interface
 
@@ -567,7 +567,7 @@ Click the button in the lower left corner and select the test audio: /forlinx/te
 
 ### 3.16 CAN Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703944536-2eca54c2-df49-417f-b284-6462232761d5.png)   
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703944536_2eca54c2_df49_417f_b284_6462232761d5.png)   
 Conduct CAN test.
 
 After booting, the desktop displays the following:
@@ -586,7 +586,7 @@ root@OKT153:/# cangen  can1
 
 You can see that the Qt program receives the data sent by CAN1.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703944835-cdcec1df-3d2c-4970-becb-3428ac0b5463.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703944835_cdcec1df_3d2c_4970_becb_3428ac0b5463.png)
 
 ### 3.16 CAN FD Test
 
@@ -604,19 +604,19 @@ root@OKT153:/# cangen -f  can1
 
 You can see that the Qt program receives the data sent by CAN1.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945063-bff047d2-c356-45d0-a353-84a402c2a4e0.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945063_bff047d2_c356_45d0_a353_84a402c2a4e0.png)
 
 ### 3.17 CPU Frequency Configuration Test
 
 The OKT153 CPU clock is up to 1.6GHz. By default, the CPU will dynamically adjust the clock speed according to the load, but a fixed CPU clock speed can also be set.
 
-Click the desktop settings icon![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945138-868b5dcd-aa5c-4c5d-ba5d-798b7f7c8153.png)to enter the next-level menu:
+Click the desktop settings icon![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945138_868b5dcd_aa5c_4c5d_ba5d_798b7f7c8153.png)to enter the next-level menu:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945221-46c427df-fe67-4a08-9a86-8a16cc6837c4.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945221_46c427df_fe67_4a08_9a86_8a16cc6837c4.png)
 
-Click the icon![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945285-b313b27f-36d3-47b9-aa69-c286854de12b.png)to enter the CPU main clock setting page.
+Click the icon![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945285_b313b27f_36d3_47b9_aa69_c286854de12b.png)to enter the CPU main clock setting page.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945366-01963b42-b31b-4291-875b-99e8fb519848.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945366_01963b42_b31b_4291_875b_99e8fb519848.png)
 
 Set OnDemand Governor: Dynamically adjust the main clock on demand.
 
@@ -630,21 +630,21 @@ Select the appropriate clock according to your needs.
 
 ### 3.18 SQLite3 Data Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945635-c8486ce5-7425-47bf-ad35-490537fe45e2.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945635_c8486ce5_7425_47bf_ad35_490537fe45e2.png)
 
 Click the icon to enter the database test interface.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945723-3a860bdf-02b5-4326-8fa6-63c167d1997b.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945723_3a860bdf_02b5_4326_8fa6_63c167d1997b.png)
 
 Select the section you want to modify, and then click on the blank area after making the changes.
 
 ### 3.19 SPI Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703945892-99301f15-0b20-4841-8135-1981561ffa94.png)
+Icon:![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703945892_99301f15_0b20_4841_8135_1981561ffa94.png)
 
 Click the icon to enter the SPI test interface. Short the P3 SPI1\_MOSI and SPI1\_MISO pins, click send below, and you can receive the sent data to complete the test.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703946481-60abf1c2-4c3b-4846-ba1d-571e31950063.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703946481_60abf1c2_4c3b_4846_ba1d_571e31950063.png)
 
 ## 4\. OK153-S Command Function Test
 
@@ -1246,7 +1246,7 @@ root@OKT153:/# ls /dev/ttyXRUSB*
 
 3\. The correspondence between the four extended serial ports and the device nodes is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850059964-0610613a-38e9-4e28-affa-4f6b793e7d80.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850059964_0610613a_38e9_4e28_affa_4f6b793e7d80.png)
 
 Testing follows the same procedure as RS485 and can be performed using the `fltest_uarttest` command.
 
@@ -1460,7 +1460,7 @@ The OKT153 includes one OTG interface. In Device mode, it can be used for firmwa
 
 Device mode:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850060310-83aba160-221d-4fc2-893f-e0cbf19ee61d.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850060310_83aba160_221d_4fc2_893f_e0cbf19ee61d.png)
 
 Host mode:
 
@@ -1578,7 +1578,7 @@ netmask: Sets the subnet mask.
 
 gateway: Specifies the gateway.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850060607-7aa81206-c09e-4793-aead-efcf17073e1b.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850060607_7aa81206_c09e_4793_aead_efcf17073e1b.png)
 
 After configuring according to actual needs, save and exit. Use sync to synchronize. The configuration will only take effect after restarting the development board or executing ip addr flush dev eth0 to clear the network card IP, followed by ifdown -a and ifup -a to restart the configuration.
 
@@ -1619,7 +1619,7 @@ Run iperf3 in server mode in the Windows cmd terminal: The IP for eth0 on the de
 D:\iperf-3.1.3-win64\iperf-3.1.3-win64>iperf3.exe -s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850060904-4e2c5139-c516-48d9-a93d-ade73574bf0c.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850060904_4e2c5139_c516_48d9_a93d_ade73574bf0c.png)
 
 ```bash
 root@OKT153:/# iperf3 -c 192.168.1.213         //Please fill in the server IP address according to the actual situation.
@@ -1688,9 +1688,9 @@ To access the web interface:
 2. **Enter the IP address** of the development board in the browser’s address bar.
 3. This will load the web pages served by the board’s web server, as illustrated below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703948279-27b0ad36-ac70-4503-acb0-1b0376a1fd66.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703948279_27b0ad36_ac70_4503_acb0_1b0376a1fd66.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703948423-06d65b3b-2b8f-4138-803a-5e0ca2841e4e.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703948423_06d65b3b_2b8f_4138_803a_5e0ca2841e4e.png)
 
 #### 4.18.2 SFTP
 
@@ -1702,9 +1702,9 @@ Install the FileZilla tool on Windows and set it up as shown in the figure below
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850061690-3eee1f21-9566-4fef-a498-dfac4508ac00.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850061690_3eee1f21_9566_4fef_a498_dfac4508ac00.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850061953-7a32447c-309d-4e48-8101-b7d1202a983d.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850061953_7a32447c_309d_4e48_8101_b7d1202a983d.png)
 
 After successful login, upload and download operations can be performed.
 
@@ -1790,7 +1790,7 @@ wlan0: EAPOL-4WAY-HS-COMPLETED a2:2d:9f:bf:0f:c8
 Then you can see the WiFi name OKT153\_WIFI\_5G\_AP and the password 12345678 on your phone.   
 Enter the password to connect.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1758703948578-837d0170-ad7a-488f-b78f-88dbbcff5058.jpg)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703948578_837d0170_ad7a_488f_b78f_88dbbcff5058.jpg)
 
 ### 4.20 4G Test
 
@@ -2062,7 +2062,7 @@ root@OKT153:/# vi /etc/autorun.sh
 
 Modify the file reference as follows (users need to modify according to their actual situation):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850062242-51be9fa4-e32a-49b6-861d-9d88ecc4e7d5.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850062242_51be9fa4_e32a_49b6_861d_9d88ecc4e7d5.png)
 
 2\. After modification, save and exit, then add execution permission to the script;
 
@@ -2084,7 +2084,7 @@ To add a startup script when flashing the image, modifications need to be made i
 
 2\. The format is as follows; you can modify it according to your actual needs:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718850062430-89d63df2-fe4e-4899-98a7-efd956dff60b.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718850062430_89d63df2_fe4e_4899_98a7_efd956dff60b.png)
 
 3\. Use the command chmod +x autorun.sh to add execute permissions to the file;
 
@@ -2116,7 +2116,7 @@ sunxi_soc_ver    : 0x0
 
 There are 2 x CAN2.0A/ B led out and connected to P26 socket.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703948686-d5550bf5-0fb0-41f4-b532-0ec0c25684f8.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703948686_d5550bf5_0fb0_41f4_b532_0ec0c25684f8.png)
 
 Short-circuit H, L, and GND of can0 and can1 respectively to perform the test.
 
@@ -2246,7 +2246,7 @@ Default agent request successful
 
 After the above configuration, the Bluetooth device can be detected on your phone. Click on this Bluetooth device to attempt pairing.
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1758703948776-138f7875-a6e2-47b3-9df7-ab55aee9fb16.jpg)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703948776_138f7875_a6e2_47b3_9df7_ab55aee9fb16.jpg)
 
 The following will be printed on the board: Enter "yes":
 
@@ -2283,7 +2283,7 @@ Request confirmation
 
 Then, on your phone, tap Bluetooth to pair:
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1758703948871-bd869996-c2d2-4df2-9ac4-3e156a6a2fae.jpg)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703948871_bd869996_c2d2_4df2_9ac4_3e156a6a2fae.jpg)
 
 Remove the paired device.
 
@@ -2380,7 +2380,7 @@ Type quit to exit the command line.
 
 Select the file on your phone and choose to send it to the development board via Bluetooth (provided Bluetooth connection is already established).
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1758703949023-90c5ceb9-06c7-4495-844e-25d661d4aea9.jpg)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703949023_90c5ceb9_06c7_4495_844e_25d661d4aea9.jpg)
 
 After sending, you can see the sent image file in the /bt\_recv directory.
 
@@ -2408,7 +2408,7 @@ Your phone will receive a file transfer notification. Tap to accept and start th
 
 
 
-![](https://cdn.nlark.com/yuque/0/2025/jpg/50461850/1758703949165-8bc9888f-6115-4a46-91da-644859e74c9f.jpg)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703949165_8bc9888f_6115_4a46_91da_644859e74c9f.jpg)
 
 
 
@@ -2430,7 +2430,7 @@ Press Ctrl+C to exit the program. The collected data file is saved in /tmp/data\
 
 Use YUV Player to view the image using NV21 at 1280x720 resolution.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703949289-1ede18ff-151e-4666-9160-ef9ca2706611.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703949289_1ede18ff_151e_4666_9160_ef9ca2706611.png)
 
 ## 5\. System Flashing
 
@@ -2463,23 +2463,23 @@ Open Windows Device Manager and you'll find an unknown device with a yellow excl
 
 The following interface will appear:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951153-fcfc00ab-4c42-4321-845d-dbe3c99a8e87.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951153_fcfc00ab_4c42_4321_845d_dbe3c99a8e87.png)
 
 Right-click on "Unknown device" and select "Update driver".
 
 In the following interface, click "Browse my computer for drivers".
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951237-d85c5aea-dd0d-47cd-96b3-fdc3af8b986e.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951237_d85c5aea_dd0d_47cd_96b3_fdc3af8b986e.png)
 
 In the following interface, select the USBDriver\_64 directory that you just extracted:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951365-dec67f3c-e8d7-4b8f-a3a6-a00d2a7876bb.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951365_dec67f3c_e8d7_4b8f_a3a6_a00d2a7876bb.png)
 
 Click "Next" and wait for the driver installation to complete.
 
 The following interface will appear:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951446-b37ae360-2f2c-4f9b-b849-4114ea739160.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951446_b37ae360_2f2c_4f9b_b849_4114ea739160.png)
 
 #### 5.2.2 OTG Flashing Methods
 
@@ -2493,11 +2493,11 @@ This programming method will program the entire img image.
 
 The following interface will appear:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951544-b520b12c-5555-41df-aa4b-7c4c3051daec.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951544_b520b12c_5555_41df_aa4b_7c4c3051daec.png)
 
 In the following interface, click "One-click Flash" and then click "Browse" to select the firmware image file.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951628-bb2281cb-6216-4d81-a9d1-3346a55b31de.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951628_bb2281cb_6216_4d81_a9d1_3346a55b31de.png)
 
 Connect the development board and the host using a Type-A to Type-C cable, power the board, and press and hold the FEL and RESET buttons simultaneously. Release the RESET button first, then release the FEL button.
 
@@ -2505,13 +2505,13 @@ Connect the development board and the host using a Type-A to Type-C cable, power
 
 In the following interface, click "Yes" to enter the formatting upgrade mode:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951697-c7851153-9af6-4856-91db-c20d3ade21c3.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951697_c7851153_9af6_4856_91db_c20d3ade21c3.png)
 
 Wait for the flashing to complete.
 
 Then, the following interface will pop up:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951843-089a7c84-b2d0-4a7f-9b3c-c70b0e4b0bf8.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951843_089a7c84_b2d0_4a7f_9b3c_c70b0e4b0bf8.png)
 
 Power on and start the T153 board.
 
@@ -2521,32 +2521,32 @@ Power on and start the T153 board.
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check the "BOOT-RESOURCE", "ENV", and "ENV-REDUND" checkboxes.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951920-b7829c70-a207-4a3c-a658-4455a85b6e05.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951920_b7829c70_a207_4a3c_a658_4455a85b6e05.png)
 
 Connect the development board and the host using a Type-A to Type-C cable, power the board, and press and hold the FEL and RESET buttons simultaneously. Release the RESET button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: Release RESET first, then release FEL.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703951994-afc48e31-67df-4eb4-8619-c5f5df322f45.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703951994_afc48e31_67df_4eb4_8619_c5f5df322f45.png)
 
 2）OTG Flashing Kernel Image and Device Tree DTB File
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check "BOOT-RESOURCE" and "BOOT". 
 The kernel image is placed in the "BOOT" partition, and the device tree dtb file and uboot are placed in the "BOOT-RESOURCE" partition.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703952070-5b824fbe-2ac7-4360-9b50-15f4d4c03cae.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703952070_5b824fbe_2ac7_4360_9b50_15f4d4c03cae.png)
 
 Connect the development board and the host using a Type-A to Type-C cable, power the board, and press and hold the FEL and RESET buttons simultaneously. Release the RESET button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: Release RESET first, then release FEL.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703952175-d9801b0c-3e4f-446f-bcee-e5dc8417a024.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703952175_d9801b0c_3e4f_446f_bcee_e5dc8417a024.png)
 
 3 ）OTG System Flashing
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check "ROOTFS".
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703952260-7f336106-8814-476d-a650-d8c6805c1152.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703952260_7f336106_8814_476d_a650_d8c6805c1152.png)
 
 Connect the development board and the host using a Type-A to Type-C cable, power the board, and press and hold the FEL and RESET buttons simultaneously. Release the RESET button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
@@ -2558,7 +2558,7 @@ Connect the development board and the host using a Type-A to Type-C cable, power
 
 After following the manual to install the USB driver, some users still see an "Unknown device" in Device Manager. When expanding the "Unknown device" details, a message appears indicating that the third-party INF does not contain digital signature information, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718866220570-f7fda53d-7374-4688-8674-7a1f3dde545f.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718866220570_f7fda53d_7374_4688_8674_7a1f3dde545f.png)
 
 This issue occurs because some Windows systems, in order to prevent third-party programs from affecting system stability, block unsigned drivers from passing verification, causing the driver installation to fail. First disable the driver signature enforcement setting on the computer, and then proceed with the driver installation according to the manual.
 
@@ -2566,15 +2566,15 @@ This issue occurs because some Windows systems, in order to prevent third-party 
 
 1\. Press and hold Shift + Restart;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718866238274-075bc947-bdcd-4620-855a-0c95bfa44538.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718866238274_075bc947_bdcd_4620_855a_0c95bfa44538.png)
 
 2\. At startup, select Troubleshoot -- Advanced options -- Startup Settings;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718866253443-59f16aef-b17c-4912-a4dc-caf794b0d77b.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718866253443_59f16aef_b17c_4912_a4dc_caf794b0d77b.png)
 
 3\. In the startup settings interface, click Restart in the lower right corner to restart and enter the startup settings. You can then disable driver signature enforcement using the number key 7 or the function key F7.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718866281185-e9f19813-5dac-468d-886d-344d25f02a04.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718866281185_e9f19813_5dac_468d_886d_344d25f02a04.png)
 
 **Incorrect Use of RESET FEL Buttons**
 
@@ -2582,11 +2582,11 @@ When programming, you need to press the RESET key and the FEL key at the same ti
 
  **Device Name Displayed but Board Not Recognized**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718866319190-98aa2922-4d0e-4411-ad50-c613af903440.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718866319190_98aa2922_4d0e_4411_ad50_c613af903440.png)
 
 This may be because there are many unknown devices in Device Manager, and selecting the wrong one could cause the driver to be installed to another device. First right-click the device item mentioned above, select "Uninstall device", and check "Delete the driver software for this device".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44394892/1718866333297-cacc0e47-11f4-49e3-bf13-a3cc63c7952c.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1718866333297_cacc0e47_11f4_49e3_bf13_a3cc63c7952c.png)
 
 After uninstalling, disconnect other USB devices connected to the host, put the development board into flashing mode and connect it to the host, then repeat the above steps for installation.
 
@@ -2602,7 +2602,7 @@ After uninstalling, disconnect other USB devices connected to the host, put the 
 
 The following interface will appear:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703952416-1014280d-83bf-48eb-a2c4-ed0d2e1cd885.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703952416_1014280d_83bf_48eb_a2c4_ed0d2e1cd885.png)
 
 **Note: If the TF card has multiple partitions, click "Restore Card" first, then click "Flash Card"; otherwise, the flashing process may fail.**
 
@@ -2610,7 +2610,7 @@ The following interface will appear:
 
 Wait for the burning process to complete, as shown in the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1758703952498-23d3d95d-2c25-4e1b-b866-045f184c1f58.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703952498_23d3d95d_2c25_4e1b_b866_045f184c1f58.png)
 
 #### 5.3.2 TF Card Flashing Method
 
