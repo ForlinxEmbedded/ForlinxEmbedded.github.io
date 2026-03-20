@@ -15,7 +15,7 @@ extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://forlinxembedded.github.io/nxp/ok-mx9352-up4/"
+html_baseurl = "https://forlinxembedded.github.io/p2p/up4/ok-mx9352-up4/"
 
 
 
