@@ -8,9 +8,11 @@
    
    `FET3562J-C System On Module <https://www.forlinx.net/product/rk3562-c-system-on-module-158.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
+   **FET3562J-UP4 System On Module** (Coming Soon)
+
 
 ====================
-OK3562J-C Manual
+OK3562J-UP4 Manual
 ====================
 
 HARDWARE
@@ -19,8 +21,6 @@ HARDWARE
 .. toctree::
    :caption: HARDWARE
    :maxdepth: 2
-
-   OK3562J-C_User_Hardware_Manual.md
 
 
 
@@ -35,10 +35,6 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
-   OK3562J-C_Linux5_10_198_User_Manual
-   OK3562J-C_Linux5_10_198_User_Compilation_Manual
-   OK3562J-C_Forlinx_Desktop22_04_User_Manual
-   OK3562J-C_Forlinx_Desktop22_04_User_Compilation_Manual
 
 
 
