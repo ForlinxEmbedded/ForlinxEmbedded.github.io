@@ -342,20 +342,30 @@ Nuvoton Series
    </div>
 
 
- 
+----
+
+Pin-to-Pin UP4 Series
+==========================
 
 
+.. raw:: html
 
+   <div class="products-container">
 
-
-
-
-
+   <div class="product-card">
+     <a href="p2p/up4/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/p2p/OK3562J-UP4.png" alt="OK3562J-UP4" class="product-image" />
+     </a>
+     <h3 class="product-title">OK3562J-UP4</h3>
+     <div class="btn-group">
+       <a href="p2p/up4/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="p2p/up4/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+   </div>
 
 
 ----
-
-
 
 
 
