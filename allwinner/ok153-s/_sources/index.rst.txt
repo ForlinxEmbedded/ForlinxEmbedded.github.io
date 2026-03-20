@@ -34,6 +34,7 @@ SOFTWARE
 
 
    OK153-S_Linux5_10_198_User_Manual
+   OK153-S_Linux5_10_198_User_Compilation_Manual
 
 
 
