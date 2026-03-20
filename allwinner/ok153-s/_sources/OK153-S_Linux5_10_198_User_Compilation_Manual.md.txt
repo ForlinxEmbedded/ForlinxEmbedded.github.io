@@ -32,8 +32,8 @@ This software manual is designed for the OK153-S platform running Linux5.10. Whi
 ## Revision History
 
 | **Date**| **Version**| **Revision History**||
-|:----------:|:----------:|:----------:|
-| 20250924| V1.0| User’s Compilation Manual Initial Version|
+|:----------:|:----------:|:----------:|------------|
+| 24/09/2025 | V1.0| User’s Compilation Manual Initial Version||
 
 ## 1\. VMware Virtual Machine Software Installation
 
