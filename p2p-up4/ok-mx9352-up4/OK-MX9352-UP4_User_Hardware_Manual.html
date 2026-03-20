@@ -1,0 +1,1573 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK-MX93xx-UP4_User’s Hardware Manual_V1.0 &mdash; Forlinx Embedded i.MX93 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/p2p/up4/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="OK-MX9352-UP4_User Hardware Design Guide_V1.0" href="OK-MX9352-UP4_User_Design_Guide.html" />
+    <link rel="prev" title="OK-MX9352-UP4 Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OK-MX93xx-UP4_User’s Hardware Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-mx-93-description">1. i. MX 93 Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fet-mx93xx-up4-som-description">2. FET-MX93xx-UP4 SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fet-mx93xx-up4-som-appearance">2.1 FET-MX93xx-UP4 SoM Appearance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet-mx93xx-up4-som-dimension-diagram">2.2 FET-MX93xx-UP4 SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameter">2.3 Performance Parameter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-frequency">2.3.1 System Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#working-environment">2.3.3 Working Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#som-esd-features">2.3.4 SoM ESD Features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#interface-resources">2.4 Interface Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet-mx93xx-up4-som-interfaces">2.4.1 FET-MX93xx-UP4 SoM Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cpu-interfaces">2.4.2 CPU Interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#up4-som-pin-definitions">2.5 UP4 SoM Pin Definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#up4-som-pin-schematic">2.5.1 UP4 SoM Pin Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#up4-som-pin-function-description">2.5.2 UP4 SoM Pin Function Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fet-mx93xx-up4-som-pin-definitions">2.6 FET-MX93xx-UP4 SoM Pin Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.7 SoM Hardware Design Description</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok-mx93xx-up4-embedded-development-description">3. OK-MX93xx-UP4 Embedded Development Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok-93xx-up4-development-board-interface">3.1 OK-93xx-UP4 Development Board Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok-93xx-up4-development-board-dimension-diagram">3.2 OK-93xx-UP4 Development Board Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#naming-rules">3.3 Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-interfaces">3.4 Carrier Board Interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok93xx-up4-carrier-board-description">3.5 OK93xx-UP4 Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-reset-keys">3.5.2 Power/Reset Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lradc-button">3.5.3 LRADC Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging-serial-port">3.5.4 Debugging Serial Port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jtag">3.5.5 JTAG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot">3.5.6 BOOT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc">3.5.7 RTC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.8 TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-download">3.5.9 USB Download</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lvds-display">3.5.10 LVDS Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lcd-rgb888">3.5.11 LCD-RGB888</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistive-touchscreen">3.5.12 Resistive Touchscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-dsi">3.5.13 MIPI_DSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-csi">3.5.14 MIPI_CSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-bt">3.5.15 WiFi &amp; BT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb2-0">3.5.16 USB2.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g">3.5.17 4G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet">3.5.18 Ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can">3.5.19 CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gpadc">3.5.20 GPADC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uart">3.5.21 UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#io-expansion">3.5.22 IO Expansion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">3.5.23 Audio</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#package-dimensions-diagram">4. Package Dimensions Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok-mx93xx-up4-development-board-linux-consumption-table">5. OK-MX93xx-UP4 Development Board Linux Consumption Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-system-diagram">6. Minimum System Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK-MX9352-UP4_User_Design_Guide.html">OK-MX9352-UP4_User Hardware Design Guide_V1.0</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded i.MX93 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">OK-MX93xx-UP4_User’s Hardware Manual_V1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok-mx93xx-up4-users-hardware-manual-v1-0">
+<h1>OK-MX93xx-UP4_User’s Hardware Manual_V1.0<a class="headerlink" href="#ok-mx93xx-up4-users-hardware-manual-v1-0" title="Link to this heading"></a></h1>
+<p><strong>Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              Copyright</strong></p>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.</p>
+<p>Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Date</p></th>
+<th class="head text-center"><p>Version</p></th>
+<th class="head text-center"><p>SoM Version</p></th>
+<th class="head text-center"><p>Carrier Board Version</p></th>
+<th class="head"><p>Revision History</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>19/09/2025</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.3 and above</p></td>
+<td><p>Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual aims to help you quickly get familiar with the product, understand interface functions and configurations. It covers the interface functions and introductions of the development board, product power consumption, and methods for troubleshooting issues during use. Some commands are annotated in the description for user convenience, with a focus on practicality. For information on pin function multiplexing and hardware design guidelines, please refer to Forlinx “OK93xx-UP4 Pin Multiplexing Comparison Table” and “OK93xx-UP4 Design Guide”.</p>
+<p>There are four chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1. provides an overall overview of the CPU, briefly introducing its performance and application industries;</p></li>
+<li><p>Chapter 2. offers a general introduction to the SoM, including descriptions and functions of connector pins;</p></li>
+<li><p>Chapter 3. introduces the development board in multiple chapters, covering hardware principles and simple design ideas;</p></li>
+<li><p>Chapter 4. describes the product’s power consumption and other considerations.</p></li>
+<li><p>Additionally, the manual includes explanations of some symbols and formats.</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Format</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
+<td><p>Note or particularly important information must be read carefully.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>Relevant explanations regarding the testing section</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>️🛤️</p></td>
+<td><p>Related paths.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="i-mx-93-description">
+<h2>1. i. MX 93 Description<a class="headerlink" href="#i-mx-93-description" title="Link to this heading"></a></h2>
+<p>The i.MX 93 series represents NXP’s latest power‑optimized processors, designed for smart home, building automation, touchless HMI, IoT edge, and industrial applications. The i.MX 93 integrates a powerful dual‑core Arm® Cortex®‑A55 CPU running at up to 1.7 GHz, along with a dedicated neural processing unit (NPU) to accelerate machine‑learning inference. An Arm® Cortex®‑M33 core operating at up to 250 MHz handles real‑time, low‑power processing tasks. Robust control networks can be built through the integrated CAN‑FD interface. Furthermore, dual 1 Gbps Ethernet controllers—with one supporting Time‑Sensitive Networking (TSN)—enable low‑latency gateway applications. The i.MX 93 is particularly well‑suited for: • Smart Home</p>
+<p>• Building Control</p>
+<p>• Touchless Human‑Machine Interfaces</p>
+<p>• Commercial Systems</p>
+<p><strong>i.MX 93 Processor</strong></p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_17_18_01_48.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="fet-mx93xx-up4-som-description">
+<h2>2. FET-MX93xx-UP4 SoM Description<a class="headerlink" href="#fet-mx93xx-up4-som-description" title="Link to this heading"></a></h2>
+<section id="fet-mx93xx-up4-som-appearance">
+<h3>2.1 FET-MX93xx-UP4 SoM Appearance<a class="headerlink" href="#fet-mx93xx-up4-som-appearance" title="Link to this heading"></a></h3>
+<p><strong>Front</strong></p>
+<p><img alt="Image" src="_images/684a96b46529a400013adcf4.png" /></p>
+<p><strong>Back</strong></p>
+<p><img alt="Image" src="_images/93UP4V_1_1.png" /></p>
+</section>
+<section id="fet-mx93xx-up4-som-dimension-diagram">
+<h3>2.2 FET-MX93xx-UP4 SoM Dimension Diagram<a class="headerlink" href="#fet-mx93xx-up4-som-dimension-diagram" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/Snipaste_2025_06_20_09_44_57.png" /></p>
+<p>Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.</p>
+<p>Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.</p>
+</section>
+<section id="performance-parameter">
+<h3>2.3 Performance Parameter<a class="headerlink" href="#performance-parameter" title="Link to this heading"></a></h3>
+<section id="system-frequency">
+<h4>2.3.1 System Frequency<a class="headerlink" href="#system-frequency" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Name</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>System Frequency</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>1.7</p></td>
+<td><p>GHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>System RTC</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="power-parameter">
+<h4>2.3.2 Power Parameter<a class="headerlink" href="#power-parameter" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Pin No.</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Main Power Supply Voltage</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>4.5</p></td>
+<td><p>5</p></td>
+<td><p>5.5</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>No-load current</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>Please refer to the power consumption table in the appendix</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Overload current</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>Please refer to the power consumption table in the appendix</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="working-environment">
+<h4>2.3.3 Working Environment<a class="headerlink" href="#working-environment" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Operating temperature</p></td>
+<td><p>Working environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+85</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>Industrial Level</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Humidity</p></td>
+<td><p>Working environment</p></td>
+<td class="text-center"><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p>No Condensation</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>Storage Environment</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="som-esd-features">
+<h4>2.3.4 SoM ESD Features<a class="headerlink" href="#som-esd-features" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Parameter</strong></p></th>
+<th class="head text-center"><p><strong>Specification</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>Minimum</strong></p></td>
+<td><p><strong>Typical</strong></p></td>
+<td><p><strong>Maximum</strong></p></td>
+<td><p><strong>Unit</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Human Body Model (HBM)</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>±1000</p></td>
+<td><p>—</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Charged Device Model (CDM)</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>±250</p></td>
+<td><p>—</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="interface-resources">
+<h3>2.4 Interface Resources<a class="headerlink" href="#interface-resources" title="Link to this heading"></a></h3>
+<section id="fet-mx93xx-up4-som-interfaces">
+<h4>2.4.1 FET-MX93xx-UP4 SoM Interfaces<a class="headerlink" href="#fet-mx93xx-up4-som-interfaces" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p>Parameter</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>MIPI CSI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>MIPI CSI-2 Controller Key Features：<br />• Compliant with MIPI CSI-2 v1.3 and MIPI D-PHY v1.2 specifications; <br/>• Supports up to 2 Rx data lanes plus 1 Rx clock lane;<br/>• Pixel clock up to 200 MHz (for both nominal and overdrive voltages);<br/>• Supports up to approximately 150 Megapixels per second;<br/>• Data rate per lane ranges from 80 Mbps to 1.5 Gbps; <br/>• Supports low-power operation at a data rate of 10 Mbps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>• Supports 2 x RGMII interfaces and complies with IEEE 802.02 specification;<br />• 1 x supports TSN and 2 x support IEEE 1588 standard.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LCD</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>24-bit parallel RGB up to 1366x768p60 or 1280x800p60.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LVDS</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Single channel (4-lane), supporting 720p60, up to 1366x768p60 or 1280x800p60.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI DSI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>MIPI DSI Controller Key Features:<br />• Supports a 4-lane MIPI DSI display with pixel data sourced from the LCDIF;<br />• Compliant with MIPI DSI v1.2 and MIPI D-PHY v1.2 specifications; <br />• Supports high resolutions such as 1080p60 or 1920x1200p60;<br />• Maximum data rate per lane is 1.5 Gbps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>The JTAG interface is led out through 2 x 4 2.54mm spacing pin  from the development board.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD/SDIO</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>The uSDHC2 is 4-bit SD card 3.0 compatible with 200 MHz SDR signaling<br />and supports up to 100MB/sec; the uSDHC3 is 4-bit SDIO 3.0.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>There are  2 x USB 2.0 controllers with integrated PHYs that support master-slave switching.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>I2C</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>• Standard Mode: Up to 100 Kbit/s <br />• Fast Mode: Up to 400 Kbit/s<br />• Fast Mode Plus: Up to 1,000 Kbit/s <br />• High-Speed Mode: Up to 3,400 Kbit/s<br />• Ultra-Fast Mode: Up to 5,000 Kbit/s<br />• Slave Mode supports High-Speed and Ultra-Fast Modes.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>CAN-FD</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>The CAN-FD module is a CAN protocol controller compliant with ISO11898-1 and CAN 2.0B.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>ADC</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p>The ADC is a 12-bit, 4-channel, 1MS/s ADC.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>Timer/PWM Module<br />16-bit counter supporting free-running or modulo count modes, with up or down counting capability.<br />Configurable for multiple functions: Input Capture, Output Compare, Edge-Aligned PWM, or Center-Aligned PWM.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>I2S</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>The sampling rate supports 8kHz to 384kHz.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cpu-interfaces">
+<h4>2.4.2 CPU Interfaces<a class="headerlink" href="#cpu-interfaces" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>MIPI CSI</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>MIPI CSI-2 Controller Key Features：                                                                          • Compliant with MIPI CSI-2 v1.3 and MIPI D-PHY v1.2 specifications;<br />• Supports up to 2 x Rx data lanes plus 1 Rx clock lane;<br />• Pixel clock up to 200 MHz (for both nominal and overdrive voltages);<br />• Data rate per lane ranges from 80 Mbps to 1.5 Gbps;<br />• Supports low-power operation at a data rate of 10 Mbps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>Supports 2 x RGMII interfaces and complies with IEEE 802.02 specification, 1 x supports TSN and 2 x support IEEE 1588 standard.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LCD</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>24-bit parallel RGB up to 1366x768p60 or 1280x800p60.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LVDS</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>Single channel (4-lane), supporting 720p60, up to 1366x768p60 1280x800p60.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI DSI</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>MIPI DSI Controller Key Features: <br />•Supports a 4-lane MIPI DSI display with pixel data sourced from the LCDIF;<br />• Compliant with MIPI DSI v1.2 and MIPI D-PHY v1.2 specifications;<br />• Supports high resolutions such as 1080p60 or 1920x1200p60; <br />• Maximum data rate per lane is 1.5 Gbps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SAI</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td><p>Synchronous Audio Interface (SAI)<br />• SAI1 supports 2 channels;<br />• SAI2 supports 4 channels;<br />• SAI3 supports 1 channel;<br />• Full-duplex serial interfaces supporting frame synchronization, such as I2S, AC97, TDM, and codec/DSP interfaces.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>The JTAG interface is led out through 2 x 4 2.54mm spacing pin  from the development board.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SD/SDIO</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>The uSDHC1 is used internally on the SoM;<br />The uSDHC2 is 4-bit SD card 3.0 compatible with 200 MHz SDR signaling and supports up to 100MB/sec;<br />The uSDHC3 is 4-bit SDIO 3.0.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>There are  2 x USB 2.0 controllers with integrated PHYs that support master-slave switching.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I3C</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>Two modified integrated circuit (I3C) modules.<br />The I3C is a serial interface for connecting peripheral devices and application processors.<br />Supports 400Kbit/s Fast Mode and 1000Kbit/s Fast Mode Plus.<br />Backward compatible with I2C.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI</p></td>
+<td class="text-center"><p>≤8</p></td>
+<td><p>Supports master-slave mode configuration.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I2C</p></td>
+<td class="text-center"><p>≤8</p></td>
+<td><p>• Standard Mode: Up to 100 Kbit/s;<br />• Fast Mode: Up to 400 Kbit/s;<br />• Fast Mode Plus: Up to 1,000 Kbit/s<br />• High-Speed Mode: Up to 3,400 Kbit/s<br />• Ultra-Fast Mode: Up to 5,000 Kbit/s;<br />• Slave Mode supports High-Speed and Ultra-Fast Modes.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>≤8</p></td>
+<td><p>Baud rate up to 5Mbps.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>CAN-FD</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>The CAN-FD module is a CAN protocol controller compliant with ISO11898-1 and CAN 2.0B.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MQS</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>MQS (Medium Quality Sound) is used to generate mediate-quality audio via GPIO.<br />It allows users to connect stereo speakers or headphones to a power amplifier without an additional audio chip.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ADC</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td><p>The ADC is a 12-bit, 4-channel, 1MS/s ADC.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PDM</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td><p>It is a 24-bit PDM module with linear phase response that supports high<br />AOP microphones for audio quality applications.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TPM</p></td>
+<td class="text-center"><p>≤6</p></td>
+<td><p>16-bit counter supporting free-running or modulo count modes, with up or down counting capability.<br />Configurable for multiple functions: Input Capture, Output Compare, Edge-Aligned PWM, or Center-Aligned PWM.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The parameters in the table are the theoretical values of hardware design or CPU;</strong></p></li>
+<li><p><strong>For compatibility considerations, please refer to Section 2.6 for design guidance.</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="up4-som-pin-definitions">
+<h3>2.5 UP4 SoM Pin Definitions<a class="headerlink" href="#up4-som-pin-definitions" title="Link to this heading"></a></h3>
+<section id="up4-som-pin-schematic">
+<h4>2.5.1 UP4 SoM Pin Schematic<a class="headerlink" href="#up4-som-pin-schematic" title="Link to this heading"></a></h4>
+<p><img alt="Image" src="_images/Snipaste_2025_06_20_10_35_14.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_20_10_35_28.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_20_10_35_34.png" /></p>
+</section>
+<section id="up4-som-pin-function-description">
+<h4>2.5.2 UP4 SoM Pin Function Description<a class="headerlink" href="#up4-som-pin-function-description" title="Link to this heading"></a></h4>
+<p>For various functional expansion requirements, please refer to the user document “UP4 Pin Definition Table”. However, for more detailed information, it is recommended that you consult the relevant documentation, the chip datasheet, and the reference manual.</p>
+</section>
+</section>
+<section id="fet-mx93xx-up4-som-pin-definitions">
+<h3>2.6 FET-MX93xx-UP4 SoM Pin Definitions<a class="headerlink" href="#fet-mx93xx-up4-som-pin-definitions" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>UP4 Standard Interface Functions</p></th>
+<th class="head text-center"><p>FET-MX93xx-UP4 Pinout Functions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>EXTP_EN</p></td>
+<td class="text-center"><p>EXTP_EN</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>STANDBY</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>nRESET</p></td>
+<td class="text-center"><p>SYS_nRST</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>WAKEUP</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PWRON</p></td>
+<td class="text-center"><p>A19_ONOFF</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>BOOT0/BOOT1</p></td>
+<td class="text-center"><p>BOOT0/BOOT1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>FORCE_USBLOAD</p></td>
+<td class="text-center"><p>USBLOAD</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>POR_B</p></td>
+<td class="text-center"><p>A16_POR_B</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>GPADC_A/B/C</p></td>
+<td class="text-center"><p>ADC_IN0/1/2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LRADC</p></td>
+<td class="text-center"><p>ADC_IN3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI_A</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPI_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN_A</p></td>
+<td class="text-center"><p>CAN1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>CAN_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART_A</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART_C</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART_D</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>I2C_A</p></td>
+<td class="text-center"><p>I2C3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I2C_B</p></td>
+<td class="text-center"><p>I2C1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>I2C_C</p></td>
+<td class="text-center"><p>I2C2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RGMII_A</p></td>
+<td class="text-center"><p>ENET1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RGMII_B</p></td>
+<td class="text-center"><p>ENET2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RMII_A</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RMII_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>DEBUG_A</p></td>
+<td class="text-center"><p>UART1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>DEBUG_M</p></td>
+<td class="text-center"><p>UART2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>DEBUG_D</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD_A</p></td>
+<td class="text-center"><p>SD2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SDIO_B</p></td>
+<td class="text-center"><p>SD3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>I2S</p></td>
+<td class="text-center"><p>SAI1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Native HP</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Native SPKOUT_L</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Native SPKOUT_R</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Native MIC</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PCIE_A</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PCIE_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LCD</p></td>
+<td class="text-center"><p>LCD（shared with PWM）</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI DSI_A</p></td>
+<td class="text-center"><p>MIPI_DSI（shared with PWM）</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI DSI_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LVDS_A</p></td>
+<td class="text-center"><p>LVDS（shared with PWM）</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LVDS_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>EDP</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>HDMI</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB2_A</p></td>
+<td class="text-center"><p>USB1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB3_A</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB2_B</p></td>
+<td class="text-center"><p>USB2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB2_C</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB3_C</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB2_D</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI CSI_A</p></td>
+<td class="text-center"><p>MIPI_CSI</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI CSI_B</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI CSI_C</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI CSI_D</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>JTAG</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USER_GPIO1</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USER_GPIO2</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USER_GPIO3</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES0</p></td>
+<td class="text-center"><p>PMIC_SCLL</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES1</p></td>
+<td class="text-center"><p>PMIC_SDAL</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES2</p></td>
+<td class="text-center"><p>PMIC_SCLH</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES3</p></td>
+<td class="text-center"><p>PMIC_SDAH</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES4</p></td>
+<td class="text-center"><p>A18_CLKIN2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES5</p></td>
+<td class="text-center"><p>B17_CLKIN1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES6</p></td>
+<td class="text-center"><p>F14_TAMPER1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES7</p></td>
+<td class="text-center"><p>B16_TAMPER0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES8</p></td>
+<td class="text-center"><p>J18_WDOG_B</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES9</p></td>
+<td class="text-center"><p>V4_CCM_CLKO4_3V3</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES10</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES11</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES12</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES13</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES14</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES15</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES16</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES17</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES18</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES19</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES20</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES21</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES22</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES23</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES24</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES25</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES26</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES27</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES28</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES29</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES30</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES31</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES32</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES33</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES34</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES35</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES36</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES37</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES38</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES39</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES40</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES41</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES42</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES43</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES44</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES45</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RES46</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RES47</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+</tbody>
+</table>
+<p>It is the UP4 standard definition. If compatible design is required, it is recommended to design according to it.</p>
+</section>
+<section id="som-hardware-design-description">
+<h3>2.7 SoM Hardware Design Description<a class="headerlink" href="#som-hardware-design-description" title="Link to this heading"></a></h3>
+<p><strong>Power Pin</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>Default Function</strong></p></th>
+<th class="head text-center"><p><strong>Pin Number</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Power</p></td>
+<td class="text-center"><p>VCC5V0_SYS</p></td>
+<td class="text-center"><p>Power Input</p></td>
+<td><p>The SoM power supply pin is 5V, and the carrier board provides a current of at least 2.5A.</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p>VCC3V3_SD</p></td>
+<td class="text-center"><p>Power Output</p></td>
+<td><p>Only used for power supply of carrier board SD card, with maximum output current capacity of 500mA</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>Ground</p></td>
+<td><p>Power ground and signal ground on the SoM. All GND pins must be connected.</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Signal Name</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>Default Function</strong></p></th>
+<th class="head text-center"><p><strong>Pin Number</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>CPU reset</p></td>
+<td class="text-center"><p>RESETn</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>SoM power reset, low level effective. <br />Do not add additional capacitive load to this pin,<br />so as not to affect the SoM normal startup.</p></td>
+<td class="text-center"><p>6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Power enable</p></td>
+<td class="text-center"><p>PMIC_EXT_EN</p></td>
+<td class="text-center"><p>O</p></td>
+<td><p>Enable signal to control the external power supply of the carrier board,<br />output by the SoM, 3.3 V level.</p></td>
+<td class="text-center"><p>4</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>On/Off</p></td>
+<td class="text-center"><p>PMIC_PWRON</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>Low level is valid, long press to turn off, short press to turn on</p></td>
+<td class="text-center"><p>8</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>BOOT selection</p></td>
+<td class="text-center"><p>EMMC_BOOT</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>When the signal is grounded, the startup card enters<br />the Maskrom download mode.</p></td>
+<td class="text-center"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Wake up</p></td>
+<td class="text-center"><p>WAKEUP</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>SoM wake-up button</p></td>
+<td class="text-center"><p>7</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Debug Port</p></td>
+<td class="text-center"><p>UART2_TX_M0_DEBUG<br/>UART2_RX_M0_DEBUG</p></td>
+<td class="text-center"><p>I/O</p></td>
+<td><p>Debug Port, please keep the port functions.</p></td>
+<td class="text-center"><p>106<br/>107</p></td>
+</tr>
+</tbody>
+</table>
+<p>(Including minimum system block diagram)</p>
+<p>The FET-MX93xx-UP4 SoM integrates power, reset monitoring, and storage circuits, requiring only minimal external circuitry. A complete minimum system can be powered and run with a single 5V supply.</p>
+<p>Refer to “Appendix  IV. Minimum System Diagram” However, in most cases, it is recommended to connect some external devices—such as a debugging serial port and a port for flashing images—in addition to the minimal system. Otherwise, you can not check whether the system has booted. After completing these steps, you can then add the required functions based on the SoM’s default interface definition provided by Forlinx.</p>
+<p>For the design of the SoM’s peripheral circuits, please refer to Section 3.5, “OK- MX93xx-UP4 Carrier Board Description”.</p>
+</section>
+</section>
+<section id="ok-mx93xx-up4-embedded-development-description">
+<h2>3. OK-MX93xx-UP4 Embedded Development Description<a class="headerlink" href="#ok-mx93xx-up4-embedded-development-description" title="Link to this heading"></a></h2>
+<section id="ok-93xx-up4-development-board-interface">
+<h3>3.1 OK-93xx-UP4 Development Board Interface<a class="headerlink" href="#ok-93xx-up4-development-board-interface" title="Link to this heading"></a></h3>
+<p>Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:</p>
+<p><img alt="Image" src="_images/93.png" /></p>
+<p><img alt="Image" src="_images/93_UP4_note_book.jpg" /></p>
+</section>
+<section id="ok-93xx-up4-development-board-dimension-diagram">
+<h3>3.2 OK-93xx-UP4 Development Board Dimension Diagram<a class="headerlink" href="#ok-93xx-up4-development-board-dimension-diagram" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/Snipaste_2025_12_09_18_25_23.png" /></p>
+<p>PCB: 130mm×190mm</p>
+<p>Mounting hole dimensions: Pitch: 120mm × 180mm, hole diameter: 3.2mm.</p>
+<p>Plate making process: 1.6mm thickness, 4-layer PCB.</p>
+<p>Power Voltage: DC 12V</p>
+<p>The OK-MX93xx-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.</p>
+<p><img alt="Image" src="_images/Snipaste_2026_03_11_11_20_44.png" /></p>
+</section>
+<section id="naming-rules">
+<h3>3.3 Naming Rules<a class="headerlink" href="#naming-rules" title="Link to this heading"></a></h3>
+<p>A-B-C+DEFGHIJKL:MN-O</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Field Description</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>Product Line Identification</p></td>
+<td><p>OK</p></td>
+<td><p>Forlinx Embedded development board</p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>Separator</p></td>
+<td><p>-</p></td>
+<td><p>Confirm whether to add the separator by CPU brand series</p></td>
+</tr>
+<tr class="row-even"><td><p>B</p></td>
+<td><p>CPU Name</p></td>
+<td><p>MX93xx</p></td>
+<td><p>MX9352</p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>Segment Identification</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>Connection</p></td>
+<td><p>UP4</p></td>
+<td><p>Universal Package general package 4 means 40*40</p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>Segment Identification</p></td>
+<td><p>+</p></td>
+<td><p>The configuration parameter section follows this identifier.</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+<td><p>CPU Clock</p></td>
+<td><p>17</p></td>
+<td><p>1.7GHZ</p></td>
+</tr>
+<tr class="row-odd"><td><p>E</p></td>
+<td><p>RAM Capacity (Unit: Byte)</p></td>
+<td><p>1G</p></td>
+<td><p>1GB</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>Single ROM Type</p></td>
+<td><p>SE</p></td>
+<td><p>eMMC</p></td>
+</tr>
+<tr class="row-odd"><td><p>G</p></td>
+<td><p>Single ROM Capacity： (Unit: Byte)</p></td>
+<td><p>8G</p></td>
+<td><p>8GB</p></td>
+</tr>
+<tr class="row-even"><td><p>H</p></td>
+<td><p>SoM Operating Temperature</p></td>
+<td><p>C</p></td>
+<td><p>0 to 70℃   Commercial-grade</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>I</p></td>
+<td><p>-40 to 85℃ Industrial-grade</p></td>
+</tr>
+<tr class="row-even"><td><p>I</p></td>
+<td><p>Configuration No.</p></td>
+<td><p>A~Z</p></td>
+<td><p>This is the internal identification of the manufacturer and has no impact on the use.</p></td>
+</tr>
+<tr class="row-odd"><td><p>J</p></td>
+<td><p>SoM PCB Version</p></td>
+<td><p>11</p></td>
+<td><p>V1.1</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx</p></td>
+<td><p>Vx.x</p></td>
+</tr>
+<tr class="row-odd"><td><p>K</p></td>
+<td><p>Carrier Board Operating Temperature</p></td>
+<td><p>C</p></td>
+<td><p>0 to 70℃   Commercial-grade</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>I</p></td>
+<td><p>- 40 to 85 ℃ Commercial grade</p></td>
+</tr>
+<tr class="row-odd"><td><p>L</p></td>
+<td><p>Carrier Board PCB Version</p></td>
+<td><p>13</p></td>
+<td><p>V1.3</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>xx</p></td>
+<td><p>Vx.x</p></td>
+</tr>
+<tr class="row-odd"><td><p>:</p></td>
+<td><p>Connector</p></td>
+<td><p></p></td>
+<td><p>Connecting M ~ N Field Parameters</p></td>
+</tr>
+<tr class="row-even"><td><p>M</p></td>
+<td><p>Chip Type</p></td>
+<td><p>A~Z</p></td>
+<td><p>This is the internal identification of the manufacturer and has no impact on the use.</p></td>
+</tr>
+<tr class="row-odd"><td><p>N</p></td>
+<td><p>Connector Origin</p></td>
+<td><p>N</p></td>
+<td><p>No Partition\No Connector</p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>Connector</p></td>
+<td><p>-</p></td>
+<td><p>Grade Mark Connector</p></td>
+</tr>
+<tr class="row-odd"><td><p>O</p></td>
+<td><p>Grade Identification</p></td>
+<td><p>PC</p></td>
+<td><p>Prototype Sample</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Blank</p></td>
+<td><p>Mass Production</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="carrier-board-interfaces">
+<h3>3.4 Carrier Board Interfaces<a class="headerlink" href="#carrier-board-interfaces" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Function</p></th>
+<th class="head text-center"><p>Quantity</p></th>
+<th class="head"><p>Parameter</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>WiFi</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Single antenna 2.4G&amp;5GHz<br/>Wi-Fi Dual-band 1X1 802.11ac +Bluetooth 4.2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Audio</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Dual-channel speaker connector, class-D, 1.3 W;<br />Stereo headphone output, 32 Ohm load; headphone recording</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI-CSI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Led out from FPC socket, 2lane, connected to OV5645 camera module</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TF card</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Data rate up to SDR104;</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>4G</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports 4G modules with a miniPCIE interface, integrating USB 2.0 communication signals.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART Debug</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Integrated into a single Type-C port, enabling connection to a PC for debugging.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB2.0</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>1 x USB-D native USB2.0 and 1 x USB-HUB are led out</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>2 x Gigabit ports led out via a standard RJ45 socket</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI-DSI</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>4-lane MIPI-DSI, supports a capacitive touch screen with backlight brightness<br />adjustment and offers a maximum single-channel resolution 1920×1080&#64;60Hz.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RTC</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>On-board CR1220 battery, keep going when power is off</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LCD</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>RGB888 interface, supporting capacitive touch and resistive touch,<br />and allowing backlight brightness adjustment. <br />The maximum resolution is 1280×800.&#64; 60Hz</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>LVDS</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>4-lane LVDS, supporting capacitive touch screen and backlight brightness adjustment,<br />up to 1280×800&#64;60Hz</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>Supports CAN2.0B, electrical quarantine</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ADC</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>Led out from the pin header and can be connected to the on-board sliding rheostat</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>5 x UART, led out through pin headers.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>BOOT</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>BOOT mode selection configuration</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>JTAG, led out through pin</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>KEY ADC</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>5 keys are led out via 1 x LRADC</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: The parameters in the table are the theoretical values of hardware design or CPU.</strong></p>
+</section>
+<section id="ok93xx-up4-carrier-board-description">
+<h3>3.5 OK93xx-UP4 Carrier Board Description<a class="headerlink" href="#ok93xx-up4-carrier-board-description" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The component UID with “_DNP” mark in the diagram below represents it is not soldered by<br />
+default;</strong></p></li>
+<li><p><strong>The schematic diagrams in this manual are only for interface descriptions. Please refer to the source file materials for hardware design.</strong></p></li>
+</ul>
+<section id="carrier-board-power">
+<h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
+<p>As shown, the power supply for the development board is 12V DC（from p28). VDD_5V supplies power to the SoM. Once the SoM is powered up, it outputs PMIC_EXT_EN to enable U32 and U33 on the carrier board, and VCC_5V, VCC_3V3, and VCC_1V8 supply power to the devices on the carrier board. The STANDBY pin controls VCC_3V3_S to enable or disable the power supply for the development board, achieving reduced power consumption.</p>
+<p>PMIC_EXT_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_09_19_15_30_59.png" /></p>
+</section>
+<section id="power-reset-keys">
+<h4>3.5.2 Power/Reset Keys<a class="headerlink" href="#power-reset-keys" title="Link to this heading"></a></h4>
+<p>K1 on the carrier for USB programming. Holding K1 before powering on enables USB programming.</p>
+<p>K2 on the carrier board is for powering ON/Off. By default, the board runs automatically when powering on. While running, press and hold the key to shut down; press it shortly to restart.</p>
+<p>K5 on the carrier board is for the resetting. Press it reset the power on the SoM to achieving a full board power reset.</p>
+<p>K6 on the carrier board is for waking up. After the board enters sleep mode press it shortly to wake up the board.</p>
+<p>The FET-MX93xx-UP4 SoM does not have the WAKEUP feature.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_16_56_44.png" /></p>
+</section>
+<section id="lradc-button">
+<h4>3.5.3 LRADC Button<a class="headerlink" href="#lradc-button" title="Link to this heading"></a></h4>
+<p>The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10kΩ resistor on the SoM.</p>
+<p><img alt="Image" src="_images/104742.png" /></p>
+</section>
+<section id="debugging-serial-port">
+<h4>3.5.4 Debugging Serial Port<a class="headerlink" href="#debugging-serial-port" title="Link to this heading"></a></h4>
+<p>The carrier board features a single USB Type-C port with 3 x integrated debug serial ports. Install the XR21V1414IM48 driver on your computer, connect the P36 port to the computer, and select the DEBUG_A debug serial port to start debugging.</p>
+<p>The FET-MX93xx-UP4 SoM is equipped only with the DEBUG_A and DEBUG_M debug interfaces</p>
+<p><img alt="Image" src="_images/110047.png" /></p>
+<p><img alt="Image" src="_images/110110.png" /></p>
+<p><strong>Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.</strong></p>
+</section>
+<section id="jtag">
+<h4>3.5.5 JTAG<a class="headerlink" href="#jtag" title="Link to this heading"></a></h4>
+<p>The carrier board features a single JTAG debugging interface for debugging the x core.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_05_38.png" /></p>
+</section>
+<section id="boot">
+<h4>3.5.6 BOOT<a class="headerlink" href="#boot" title="Link to this heading"></a></h4>
+<p>There are two BOOT options on the carrier board, allowing the system to boot from either the eMMC, nor flash, TF card or NAND.</p>
+<p>The FET-MX93xx-UP4 SoM supports only two boot methods: eMMC and TF.</p>
+<p><img alt="Image" src="_images/174515.png" /></p>
+</section>
+<section id="rtc">
+<h4>3.5.7 RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
+<p>An RTC device is connected to the carrier board via the I2C_A bus. It enables a compatible power supply from either VCC_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.</p>
+<p><img alt="Image" src="_images/114208.png" /></p>
+</section>
+<section id="tf-card">
+<h4>3.5.8 TF Card<a class="headerlink" href="#tf-card" title="Link to this heading"></a></h4>
+<p>The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card comes from the VCC_3V3_SD output of the SoM.</p>
+<p><img alt="Image" src="_images/093650.png" /></p>
+<p><img alt="Image" src="_images/094829.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The bus pull-up resistor has already been configured on the SoM. Don’t apply pull-up to the bus;</strong></p></li>
+<li><p><strong>The TF card is a hot-pluggable device. Please add ESD protection for it;</strong></p></li>
+<li><p><strong>Please make equal length for the SD signal.</strong></p></li>
+</ul>
+</section>
+<section id="usb-download">
+<h4>3.5.9 USB Download<a class="headerlink" href="#usb-download" title="Link to this heading"></a></h4>
+<p>There is a USB Type-C port located at P42 on the back of the development board. It utilises the P/N differential signals from the USB 3.0_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.</p>
+<p><img alt="Image" src="_images/103014.png" /></p>
+</section>
+<section id="lvds-display">
+<h4>3.5.10 LVDS Display<a class="headerlink" href="#lvds-display" title="Link to this heading"></a></h4>
+<p>The pin header P1 on the development board can be connected to the LVDS display via the connector 38P with a pitch of 2.0mm.</p>
+<p>It supports 2*4 lane LVDS connection, and I2C port touch screen.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_07_12.png" /></p>
+</section>
+<section id="lcd-rgb888">
+<h4>3.5.11 LCD-RGB888<a class="headerlink" href="#lcd-rgb888" title="Link to this heading"></a></h4>
+<p>Pin P4 on the development board is the LCD interface; it is an FPC socket that can be connected to an LCD screen and supports capacitive touchscreens.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_08_21.png" /></p>
+</section>
+<section id="resistive-touchscreen">
+<h4>3.5.12 Resistive Touchscreen<a class="headerlink" href="#resistive-touchscreen" title="Link to this heading"></a></h4>
+<p>If a resistive touchscreen is required, a resistive touch circuit can be added and connected to pins 1, 2, 3 and 4 of the P4 (LCD interface).</p>
+<p><img alt="Image" src="_images/111914.png" /></p>
+</section>
+<section id="mipi-dsi">
+<h4>3.5.13 MIPI_DSI<a class="headerlink" href="#mipi-dsi" title="Link to this heading"></a></h4>
+<p>The P11 on the development board is MIPI_DSI port, supporting 4 Lane MIPI_DSI.</p>
+<p><img alt="Image" src="_images/114926.png" /></p>
+</section>
+<section id="mipi-csi">
+<h4>3.5.14 MIPI_CSI<a class="headerlink" href="#mipi-csi" title="Link to this heading"></a></h4>
+<p>There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI camera. It features a pitch of 0.5mm, a flip-down cover, and supports a 2-lane MIPI-CSI connection.</p>
+<p><img alt="Image" src="_images/150957.png" /></p>
+<p><img alt="Image" src="_images/163045.png" /></p>
+</section>
+<section id="wifi-bt">
+<h4>3.5.15 WiFi &amp; BT<a class="headerlink" href="#wifi-bt" title="Link to this heading"></a></h4>
+<p>There is an onboard WiFi module (AW-CM358SM). The WiFi module features an SDIO interface, operates on dual bands of 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standards. P10 is an SMA interface for antenna connection. Please use a 2.4GHz&amp;5GHz dual-band antenna.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_18_05.png" /></p>
+</section>
+<section id="usb2-0">
+<h4>3.5.16 USB2.0<a class="headerlink" href="#usb2-0" title="Link to this heading"></a></h4>
+<p>There is an onboard USB 2.0 HUB on the development board, which is expanded to two downstream USB HOST ports, connecting a standard USB 2.0-A interface and a mini-PCIE interface. The mini-PCIE interface can connect the 4G module.</p>
+<p>In addition, a group of onboard USB2.0 HOST interfaces is led out from the SoM, which are connected to the USB2.0-A standard interface.</p>
+<p>Another USB2.0 interface is connected to the standard interface of USB3.0-A, which supports master-slave switching.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_21_24.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_21_37.png" /></p>
+</section>
+<section id="g">
+<h4>3.5.17 4G<a class="headerlink" href="#g" title="Link to this heading"></a></h4>
+<p>The 4G module can be configured on the development board, and the supported specifications are miniPCIE interface, 3.3 V power supply, and USB2.0 communication.</p>
+<p>P20 is a nano SIM card slot, which is self-ejecting. Pay attention to the insertion direction according to the card identification. It does not support card hot plug.</p>
+<p>Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.</p>
+<p><img alt="Image" src="_images/114400.png" /></p>
+<p><img alt="Image" src="_images/114420.png" /></p>
+</section>
+<section id="ethernet">
+<h4>3.5.18 Ethernet<a class="headerlink" href="#ethernet" title="Link to this heading"></a></h4>
+<p>The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521sh chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.</p>
+<p><img alt="Image" src="_images/144123.png" /></p>
+<p><img alt="Image" src="_images/144249.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_17_16_09_52.png" /></p>
+<p><img alt="Image" src="_images/144725.png" /></p>
+</section>
+<section id="can">
+<h4>3.5.19 CAN<a class="headerlink" href="#can" title="Link to this heading"></a></h4>
+<p>1 x standard CAN is led out from the development board via native CAN0. Because of the quarantine, the interface supports the maximum rate of 5Mbps, and the electrical quarantine is designed to meet the protection requirements in most scenarios.</p>
+<p>The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_28_47.png" /></p>
+</section>
+<section id="gpadc">
+<h4>3.5.20 GPADC<a class="headerlink" href="#gpadc" title="Link to this heading"></a></h4>
+<p>The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.</p>
+<p><img alt="Image" src="_images/161310.png" /></p>
+</section>
+<section id="uart">
+<h4>3.5.21 UART<a class="headerlink" href="#uart" title="Link to this heading"></a></h4>
+<p>1 x five-wire UART is routed from the development board and powered by a 3.3V signal.</p>
+<p><img alt="Image" src="_images/165334.png" /></p>
+</section>
+<section id="io-expansion">
+<h4>3.5.22 IO Expansion<a class="headerlink" href="#io-expansion" title="Link to this heading"></a></h4>
+<p>An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.</p>
+<p><img alt="Image" src="_images/114511.png" /></p>
+</section>
+<section id="audio">
+<h4>3.5.23 Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h4>
+<p>A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_42_14.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_06_18_17_42_29.png" /></p>
+</section>
+</section>
+</section>
+<section id="package-dimensions-diagram">
+<h2>4. Package Dimensions Diagram<a class="headerlink" href="#package-dimensions-diagram" title="Link to this heading"></a></h2>
+<p>Package: LCC+LGA</p>
+<p><img alt="Image" src="_images/Image_20251205101513.png" /></p>
+<p>To ensure a high weld yield, please refer to the diagram below for the design of the packaging stencil:</p>
+<p><img alt="Image" src="_images/Image_20251208142354.png" /></p>
+<p>I. Hole Opening Scheme</p>
+<ol class="arabic simple">
+<li><p>The steel mesh type is ladder steel mesh, with thickness of 0.1mm and 0.15 mm, and the ladder is on the printing surface;</p></li>
+<li><p>As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.</p></li>
+</ol>
+<p><img alt="Image" src="_images/pic1.png" /></p>
+<p><img alt="Image" src="_images/pic2.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.</p></li>
+</ol>
+<p><img alt="Image" src="_images/pic3.png" /></p>
+<p><img alt="Image" src="_images/pic4.png" /></p>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>Since the LGA pads on the UP4 series SoMs use a pre-tinned process, there is a height difference of approximately 0.1 mm between the LCC pads and the LGA pads. This may result in uneven solder wick height between the LCC pads. Please do visual inspection for the LCC soldering;</strong></p></li>
+<li><p><strong>Since stepped stencils can affect the solder volume on surrounding components, please reduce the aperture size of the stencil openings for these components; for the LGA pad openings in the advancing direction of the scraper, please conduct hole-size reduction in accordance with the No.3.</strong></p></li>
+</ul>
+</section>
+<section id="ok-mx93xx-up4-development-board-linux-consumption-table">
+<h2>5. OK-MX93xx-UP4 Development Board Linux Consumption Table<a class="headerlink" href="#ok-mx93xx-up4-development-board-linux-consumption-table" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>No.</strong></p></th>
+<th class="head"><p><strong>Item</strong></p></th>
+<th class="head text-center"><p><strong>SoM Power (W)</strong></p></th>
+<th class="head text-center"><p>Development Board <strong>Power</strong> (including SoM)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td><p>No-load starting peak power consumption</p></td>
+<td class="text-center"><p>1.595 W</p></td>
+<td class="text-center"><p>2.544W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>2</p></td>
+<td><p>Sleep power consumption</p></td>
+<td class="text-center"><p>0.03814W</p></td>
+<td class="text-center"><p>1.272W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>3</p></td>
+<td><p>No-load standby power consumption</p></td>
+<td class="text-center"><p>0.735W</p></td>
+<td class="text-center"><p>0.492W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>4</p></td>
+<td><p>USB read and write power</p></td>
+<td class="text-center"><p>0.87W</p></td>
+<td class="text-center"><p>2.028W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>5</p></td>
+<td><p>TF read and write power</p></td>
+<td class="text-center"><p>1.175W</p></td>
+<td class="text-center"><p>1.74W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>6</p></td>
+<td><p>4G module PING network power consumption</p></td>
+<td class="text-center"><p>0.755W</p></td>
+<td class="text-center"><p>2.256W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>7</p></td>
+<td><p>WiFi module PING network power consumption</p></td>
+<td class="text-center"><p>0.71W</p></td>
+<td class="text-center"><p>1.284W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>8</p></td>
+<td><p>7-inch LCD screen power consumption</p></td>
+<td class="text-center"><p>0.785W</p></td>
+<td class="text-center"><p>3.6W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>9</p></td>
+<td><p>10-inch LVDS screen power consumption</p></td>
+<td class="text-center"><p>0.785W</p></td>
+<td class="text-center"><p>5.46W</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>10</p></td>
+<td><p>7-inch MIPI screen video playback power consumption</p></td>
+<td class="text-center"><p>0.77W</p></td>
+<td class="text-center"><p>4.416W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>11</p></td>
+<td><p>CPU pressure + memory pressure + eMMC read/write pressure test power</p></td>
+<td class="text-center"><p>1.47W</p></td>
+<td class="text-center"><p>2.076W</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note：</strong></p>
+<ul class="simple">
+<li><p><strong>Test conditions: The SoM configuration is 1GB memory + 8GB eMMC, the 4G module is Quectel EC20, and the screen is an Forlinx optional product. SoM power supply: 5V; and the carrier board is 12V;</strong></p></li>
+<li><p><strong>Power consumption is for reference only.</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="minimum-system-diagram">
+<h2>6. Minimum System Diagram<a class="headerlink" href="#minimum-system-diagram" title="Link to this heading"></a></h2>
+<p>There are SoM, BOOT, power, debug serial port, system image flashing port.</p>
+<p><img alt="Image" src="_images/Snipaste_2025_12_23_11_48_09.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_12_23_11_48_24.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_12_23_11_48_37.png" /></p>
+<p><img alt="Image" src="_images/Snipaste_2025_09_19_15_30_59.png" /></p>
+<p><img alt="Image" src="_images/162314.png" /></p>
+<p><img alt="Image" src="_images/162334.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
