@@ -22,6 +22,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK3562J-UP4_User_Hardware_Manual
+
 
 
    
