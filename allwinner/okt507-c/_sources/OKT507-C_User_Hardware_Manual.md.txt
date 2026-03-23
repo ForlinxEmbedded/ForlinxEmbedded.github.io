@@ -94,47 +94,47 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 #### 2.3.1 System Main Frequency
 
-| **Name**| **Specification**| | | | **Description**
-|:----------:|:----------:|----------|----------|----------|:----------:
-| | **Minimum**| **Typical**| **Maximum**| **Unit**| 
-| Main Frequency| —| —| 1500| MHz| Industrial-grade
-| RTC clock| —| 32.768| —| KHz| —
+| **Name**| **Specification**| | | | **Description**|
+|:----------:|:----------:|----------|----------|----------|:----------:|
+| | **Minimum**| **Typical**| **Maximum**| **Unit**|
+| Main Frequency| —| —| 1500| MHz| Industrial-grade|
+| RTC clock| —| 32.768| —| KHz| —|
 
 #### 2.3.2 Power Parameter
 
-| **Parameter**| **Pin Number**| **Specification**| | | | **Description**
-|:----------:|:----------:|:----------:|----------|----------|----------|:----------:
-| | | **Minimum**| **Typical**| **Maximum**| **Unit**| 
-| Main Power Supply Voltage| DCIN| 3.0| 5| 5.5| V| —
+| **Parameter**| **Pin Number**| **Specification**| | | | **Description**|
+|:----------:|:----------:|:----------:|----------|----------|----------|:----------:|
+| | | **Minimum**| **Typical**| **Maximum**| **Unit**|
+| Main Power Supply Voltage| DCIN| 3.0| 5| 5.5| V| —|
 
 #### 2.3.3 Operating Environment
 
-| **Parameter**| | **Specification**| | | | **Description**
-|:----------:|----------|:----------:|----------|----------|----------|:----------:
-| | | **Minimum**| **Typical**| **Maximum**| **Unit**| 
-| Operating temperature| Operating Environment| -40| 25| +85| ℃| Industrial-grade
-| | Storage Environment| -40| 25| +125| ℃| 
-| Humidity| Operating Environment| 10| —| 90| ％RH| No condensation
-| | Storage Environment| 5| —| 95| ％RH| 
+| **Parameter**| | **Specification**| | | | **Description**|
+|:----------:|----------|:----------:|----------|----------|----------|:----------:|
+| | | **Minimum**| **Typical**| **Maximum**| **Unit**|
+| Operating temperature| Operating Environment| -40| 25| +85| ℃| Industrial-grade|
+| | Storage Environment| -40| 25| +125| ℃|
+| Humidity| Operating Environment| 10| —| 90| ％RH| No condensation|
+| | Storage Environment| 5| —| 95| ％RH|
 
 #### 2.3.4 SoM Interface Speed
 
-| **Parameter**| **Specification**| | | | **Description**
-|:----------:|:----------:|----------|----------|----------|:----------:
-| | **Minimum**| **Typical**| **Maximum**| **Unit**| 
-| Serial Port Communication Speed| —| —| 4| Mbit/s| —
-| SPI Communication Speed| —| —| 100| MHz| —
-| IIC Communication Speed| —| 100| 400| Kbps| —
-| SD/MMC/SDIO| —| —| 800| Mbps| —
-| USB interface speed| —| —| 480| Mbps| —
+| **Parameter**| **Specification**| | | | **Description**|
+|:----------:|:----------:|----------|----------|----------|:----------:|
+| | **Minimum**| **Typical**| **Maximum**| **Unit**|
+| Serial Port Communication Speed| —| —| 4| Mbit/s| —|
+| SPI Communication Speed| —| —| 100| MHz| —|
+| IIC Communication Speed| —| 100| 400| Kbps| —|
+| SD/MMC/SDIO| —| —| 800| Mbps| —|
+| USB interface speed| —| —| 480| Mbps| —|
 
 #### 2.3.5 ESD Features
 
-| Parameter| Specification| | Unit| Application Scope
-|:----------:|:----------:|----------|:----------:|:----------:
-| | Minimum| Maximum| | 
-| ESD HBM(ESDA/JEDEC JS-001-2017)| -2000| 2000| V| Signals exported from SoM
-| ESD CDM(ESDA/JEDEC JS-002-2018)| -500| 500| V| Signals exported from SoM
+| Parameter| Specification| | Unit| Application Scope|
+|:----------:|:----------:|----------|:----------:|:----------:|
+| | Minimum| Maximum| |
+| ESD HBM(ESDA/JEDEC JS-001-2017)| -2000| 2000| V| Signals exported from SoM|
+| ESD CDM(ESDA/JEDEC JS-002-2018)| -500| 500| V| Signals exported from SoM|
 
 **Note：**
 
@@ -205,145 +205,145 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 **Table 1 LEFT\_UP（P1） Connector Interface(Odd) Pin Definition**
 
-| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**
-|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:
-| LU\_1| \-| GND| \-| \-| Ground| GND
-| LU\_3| \-| TV-OUT| \-| \-| Analog video output| TV-OUT
-| LU\_5| \-| GND| \-| \-| Ground| GND
-| LU\_7| \-| LRADC| \-| 0-1.35V| Carrier board sampling rate(used for the keys)| LRADC
-| LU\_9| \-| GND| \-| \-| Ground| GND
-| LU\_11| \-| LINEINR| \-| \-| LINEIN right channel input| <font style="color:rgb(255, 0, 0);">TBD</font>
-| LU\_13| \-| LINEINL| \-| \-| LINEIN left channel input| <font style="color:rgb(255, 0, 0);">TBD</font>
-| LU\_15| \-| LINEOUTR| \-| \-| LINEOUT right channel output| LINEOUTR
-| LU\_17| \-| LINEOUTL| \-| \-| LINEOUT left channel output| LINEOUTL
-| LU\_19| \-| GND| \-| \-| Ground| GND
-| LU\_21| \-| USB0-DM| \-| \-| USB0 signal-| USB0-DM
-| LU\_23| \-| USB0-DP| \-| \-| USB0 signal+| USB0-DP
-| LU\_25| \-| GND| \-| \-| Ground| GND
-| LU\_27| \-| USB1-DP| \-| \-| USB1 signal+| USB1-DP
-| LU\_29| \-| USB1-DM| \-| \-| USB1 signal-| USB1-DM
-| LU\_31| \-| GND| \-| \-| Ground| GND
-| LU\_33| \-| VCC-USB2| \-| \-| USB2 power supply pin (floating by default)| VCC-USB2
-| LU\_35| \-| USB2-DP| \-| \-| USB2 signal+| USB2-DP
-| LU\_37| \-| USB2-DM| \-| \-| USB2 signal-| USB2-DM
-| LU\_39| \-| GND| \-| \-| Ground| GND
-| LU\_41| \-| USB3-DP| \-| \-| USB3 signal+| USB3-DP
-| LU\_43| \-| USB3-DM| \-| \-| USB3 signal-| USB3-DM
-| LU\_45| \-| GND| \-| \-| Ground| GND
-| LU\_47| \-| HHPD| \-| \-| HDMI hot plug signal (refer to EVK design)| HHPD
-| LU\_49| \-| HSDA| \-| \-| HDMI serial data (refer to EVK design)| HSDA
-| LU\_51| \-| HSCL| \-| \-| HDMI serial clock (reference EVK design)| HSCL
-| LU\_53| \-| HCEC| \-| \-| HDMI CEC signal (refer to EVK design)| HCEC
-| LU\_55| \-| GND| \-| \-| Ground| GND
-| LU\_57| \-| HTXCN| \-| \-| HDMI TMDS differential clock signal-| HTXCN
-| LU\_59| \-| HTXCP| \-| \-| HDMI TMDS differential clock signal+| HTXCP
-| LU\_61| \-| GND| \-| \-| Ground| GND
-| LU\_63| \-| HTX0N| \-| \-| HDMI TMDS differential data 0 -| HTX0N
-| LU\_65| \-| HTX0P| \-| \-| HDMI TMDS differential data 0 +| HTX0P
-| LU\_67| \-| GND| \-| \-| Ground| GND
-| LU\_69| \-| HTX1N| \-| \-| HDMI TMDS differential data 1 -| HTX1N
-| LU\_71| \-| HTX1P| \-| \-| HDMI TMDS differential data 1 +| HTX1P
-| LU\_73| \-| GND| \-| \-| Ground| GND
-| LU\_75| \-| HTX2N| \-| \-| HDMI TMDS differential data 2 -| HTX2N
-| LU\_77| \-| HTX2P| \-| \-| HDMI TMDS differential data 2 +| HTX2P
-| LU\_79| \-| GND| \-| \-| Ground| GND
+| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**|
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| LU\_1| \-| GND| \-| \-| Ground| GND|
+| LU\_3| \-| TV-OUT| \-| \-| Analog video output| TV-OUT|
+| LU\_5| \-| GND| \-| \-| Ground| GND|
+| LU\_7| \-| LRADC| \-| 0-1.35V| Carrier board sampling rate(used for the keys)| LRADC|
+| LU\_9| \-| GND| \-| \-| Ground| GND|
+| LU\_11| \-| LINEINR| \-| \-| LINEIN right channel input| <font style="color:rgb(255, 0, 0);">TBD</font>|
+| LU\_13| \-| LINEINL| \-| \-| LINEIN left channel input| <font style="color:rgb(255, 0, 0);">TBD</font>|
+| LU\_15| \-| LINEOUTR| \-| \-| LINEOUT right channel output| LINEOUTR|
+| LU\_17| \-| LINEOUTL| \-| \-| LINEOUT left channel output| LINEOUTL|
+| LU\_19| \-| GND| \-| \-| Ground| GND|
+| LU\_21| \-| USB0-DM| \-| \-| USB0 signal-| USB0-DM|
+| LU\_23| \-| USB0-DP| \-| \-| USB0 signal+| USB0-DP|
+| LU\_25| \-| GND| \-| \-| Ground| GND|
+| LU\_27| \-| USB1-DP| \-| \-| USB1 signal+| USB1-DP|
+| LU\_29| \-| USB1-DM| \-| \-| USB1 signal-| USB1-DM|
+| LU\_31| \-| GND| \-| \-| Ground| GND|
+| LU\_33| \-| VCC-USB2| \-| \-| USB2 power supply pin (floating by default)| VCC-USB2|
+| LU\_35| \-| USB2-DP| \-| \-| USB2 signal+| USB2-DP|
+| LU\_37| \-| USB2-DM| \-| \-| USB2 signal-| USB2-DM|
+| LU\_39| \-| GND| \-| \-| Ground| GND|
+| LU\_41| \-| USB3-DP| \-| \-| USB3 signal+| USB3-DP|
+| LU\_43| \-| USB3-DM| \-| \-| USB3 signal-| USB3-DM|
+| LU\_45| \-| GND| \-| \-| Ground| GND|
+| LU\_47| \-| HHPD| \-| \-| HDMI hot plug signal (refer to EVK design)| HHPD|
+| LU\_49| \-| HSDA| \-| \-| HDMI serial data (refer to EVK design)| HSDA|
+| LU\_51| \-| HSCL| \-| \-| HDMI serial clock (reference EVK design)| HSCL|
+| LU\_53| \-| HCEC| \-| \-| HDMI CEC signal (refer to EVK design)| HCEC|
+| LU\_55| \-| GND| \-| \-| Ground| GND|
+| LU\_57| \-| HTXCN| \-| \-| HDMI TMDS differential clock signal-| HTXCN|
+| LU\_59| \-| HTXCP| \-| \-| HDMI TMDS differential clock signal+| HTXCP|
+| LU\_61| \-| GND| \-| \-| Ground| GND|
+| LU\_63| \-| HTX0N| \-| \-| HDMI TMDS differential data 0 -| HTX0N|
+| LU\_65| \-| HTX0P| \-| \-| HDMI TMDS differential data 0 +| HTX0P|
+| LU\_67| \-| GND| \-| \-| Ground| GND|
+| LU\_69| \-| HTX1N| \-| \-| HDMI TMDS differential data 1 -| HTX1N|
+| LU\_71| \-| HTX1P| \-| \-| HDMI TMDS differential data 1 +| HTX1P|
+| LU\_73| \-| GND| \-| \-| Ground| GND|
+| LU\_75| \-| HTX2N| \-| \-| HDMI TMDS differential data 2 -| HTX2N|
+| LU\_77| \-| HTX2P| \-| \-| HDMI TMDS differential data 2 +| HTX2P|
+| LU\_79| \-| GND| \-| \-| Ground| GND|
 
 **Table 2 LEFT\_UP（P1） Connector Interface(Even) Pin Definition**
 
-| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**
-|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:
-| LU\_2| \-| GND| \-| \-| Ground| GND
-| LU\_4| \-| MCSI-D0N| \-| \-| MIPI \_ CSI differential data 0-| MCSI-D0N
-| LU\_6| \-| MCSI-D0P| \-| \-| MIPI \_ CSI differential data 0 +| MCSI-D0P
-| LU\_8| \-| GND| \-| \-| Ground| GND
-| LU\_10| \-| MCSI-D1N| \-| \-| MIPI \_ CSI differential data 1-| MCSI-D1N
-| LU\_12| \-| MCSI-D1P| \-| \-| MIPI \_ CSI differential data 1 +| MCSI-D1P
-| LU\_14| \-| GND| \-| \-| Ground| GND
-| LU\_16| \-| MCSI-CLKN| \-| \-| MIPI \_ CSI differential clock signal-| MCSI-CLKN
-| LU\_18| \-| MCSI-CLKP| \-| \-| MIPI \_ CSI differential clock signal+| MCSI-CLKP
-| LU\_20| \-| GND| \-| \-| Ground| GND
-| LU\_22| E7| E7\_MCSI-MCLK| PG19| 3.3V| MIPI\_CSI clock| MCSI-MCLK
-| LU\_24| \-| MCSI-D2N| \-| \-| MIPI \_ CSI differential data 2-| MCSI-D2N
-| LU\_26| \-| MCSI-D2P| \-| \-| MIPI \_ CSI differential data 2 +| MCSI-D2P
-| LU\_28| \-| GND| \-| \-| Ground| GND
-| LU\_30| \-| MCSI-D3N| \-| \-| MIPI \_ CSI differential data 3-| MCSI-D3N
-| LU\_32| \-| MCSI-D3P| \-| \-| MIPI \_ CSI differential data 3 +| MCSI-D3P
-| LU\_34| \-| GND| \-| \-| Ground| GND
-| LU\_36| B4| B4\_PG-MCSI-SCK| PG17| 3.3V| <font style="color:rgb(255, 0, 0);">CCI control the clock signal</font>| MCSI-SCK
-| LU\_38| D7| D7\_PG-MCSI-SDA| PG18| 3.3V| CCI control data signal| MCSI-SDA
-| LU\_40| \-| GND| \-| \-| Ground| GND
-| LU\_42| \-| GPADC0| \-| 0-1.8V| General ADC0| GPADC0
-| LU\_44| \-| GPADC1| \-| 0-1.8V| General ADC1| GPADC1
-| LU\_46| \-| GPADC2| \-| 0-1.8V| General ADC2| GPADC2
-| LU\_48| \-| GPADC3| \-| 0-1.8V| General ADC3| GPADC3
-| LU\_50| \-| GND| \-| \-| Ground| GND
-| LU\_52| E20| E20\_RMII-TXEN| | 3.3V| RMII send enable| RMII-TXEN
-| LU\_54| A18| A18\_RMII-TXD1| | 3.3V| RMII send data 1| RMII-TXD1
-| LU\_56| B18| B18\_RMII-TXD0| | 3.3V| RMII send data 0| RMII-TXD0
-| LU\_58| D20| D20\_RMII-TXCK| | 3.3V| RMII send clock| RMII-TXCK
-| LU\_60| \-| GND| \-| \-| Ground| GND
-| LU\_62| D19| D19\_RMII-RXD1| PA0| 3.3V| RMII receive data 1| RMII-RXD1
-| LU\_64| D18| D18\_RMII-RXD0| PA1| 3.3V| RMII receive data 0| RMII-RXD0
-| LU\_66| E18| E18\_RMII-CRS-RXDV| PA2| 3.3V| RMII carrier sense/receive data valid| RMII-CRS-RXDV
-| LU\_68| D17| D17\_RMII-RXER| PA3| 3.3V| RMII receive error| RMII-RXER
-| LU\_70| \-| GND| \-| \-| Ground| GND
-| LU\_72| C19| C19\_RMII-MDC| PA8| 3.3V| RMII management data reference clock| RMII-MDC
-| LU\_74| C20| C20\_RMII-MDIO| PA9| 3.3V| RMII manages data input/output| RMII-MDIO
-| LU\_76| F20| F20\_RESET-N2| PA12| 3.3V| PHY chip reset signal| RESET-N2
-| LU\_78| F12| 4G-WAKEUP-SOC| \-| \-| 4G module replacement signal| 4G-WAKEUP-SOC
-| LU\_80| \-| GND| \-| \-| Ground| GND
+| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**|
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| LU\_2| \-| GND| \-| \-| Ground| GND|
+| LU\_4| \-| MCSI-D0N| \-| \-| MIPI \_ CSI differential data 0-| MCSI-D0N|
+| LU\_6| \-| MCSI-D0P| \-| \-| MIPI \_ CSI differential data 0 +| MCSI-D0P|
+| LU\_8| \-| GND| \-| \-| Ground| GND|
+| LU\_10| \-| MCSI-D1N| \-| \-| MIPI \_ CSI differential data 1-| MCSI-D1N|
+| LU\_12| \-| MCSI-D1P| \-| \-| MIPI \_ CSI differential data 1 +| MCSI-D1P|
+| LU\_14| \-| GND| \-| \-| Ground| GND|
+| LU\_16| \-| MCSI-CLKN| \-| \-| MIPI \_ CSI differential clock signal-| MCSI-CLKN|
+| LU\_18| \-| MCSI-CLKP| \-| \-| MIPI \_ CSI differential clock signal+| MCSI-CLKP|
+| LU\_20| \-| GND| \-| \-| Ground| GND||
+| LU\_22| E7| E7\_MCSI-MCLK| PG19| 3.3V| MIPI\_CSI clock| MCSI-MCLK|
+| LU\_24| \-| MCSI-D2N| \-| \-| MIPI \_ CSI differential data 2-| MCSI-D2N|
+| LU\_26| \-| MCSI-D2P| \-| \-| MIPI \_ CSI differential data 2 +| MCSI-D2P|
+| LU\_28| \-| GND| \-| \-| Ground| GND|
+| LU\_30| \-| MCSI-D3N| \-| \-| MIPI \_ CSI differential data 3-| MCSI-D3N|
+| LU\_32| \-| MCSI-D3P| \-| \-| MIPI \_ CSI differential data 3 +| MCSI-D3P|
+| LU\_34| \-| GND| \-| \-| Ground| GND|
+| LU\_36| B4| B4\_PG-MCSI-SCK| PG17| 3.3V| <font style="color:rgb(255, 0, 0);">CCI control the clock signal</font>| MCSI-SCK|
+| LU\_38| D7| D7\_PG-MCSI-SDA| PG18| 3.3V| CCI control data signal| MCSI-SDA|
+| LU\_40| \-| GND| \-| \-| Ground| GND|
+| LU\_42| \-| GPADC0| \-| 0-1.8V| General ADC0| GPADC0|
+| LU\_44| \-| GPADC1| \-| 0-1.8V| General ADC1| GPADC1|
+| LU\_46| \-| GPADC2| \-| 0-1.8V| General ADC2| GPADC2|
+| LU\_48| \-| GPADC3| \-| 0-1.8V| General ADC3| GPADC3|
+| LU\_50| \-| GND| \-| \-| Ground| GND|
+| LU\_52| E20| E20\_RMII-TXEN| | 3.3V| RMII send enable| RMII-TXEN|
+| LU\_54| A18| A18\_RMII-TXD1| | 3.3V| RMII send data 1| RMII-TXD1|
+| LU\_56| B18| B18\_RMII-TXD0| | 3.3V| RMII send data 0| RMII-TXD0|
+| LU\_58| D20| D20\_RMII-TXCK| | 3.3V| RMII send clock| RMII-TXCK|
+| LU\_60| \-| GND| \-| \-| Ground| GND|
+| LU\_62| D19| D19\_RMII-RXD1| PA0| 3.3V| RMII receive data 1| RMII-RXD1|
+| LU\_64| D18| D18\_RMII-RXD0| PA1| 3.3V| RMII receive data 0| RMII-RXD0|
+| LU\_66| E18| E18\_RMII-CRS-RXDV| PA2| 3.3V| RMII carrier sense/receive data valid| RMII-CRS-RXDV|
+| LU\_68| D17| D17\_RMII-RXER| PA3| 3.3V| RMII receive error| RMII-RXER|
+| LU\_70| \-| GND| \-| \-| Ground| GND|
+| LU\_72| C19| C19\_RMII-MDC| PA8| 3.3V| RMII management data reference clock| RMII-MDC|
+| LU\_74| C20| C20\_RMII-MDIO| PA9| 3.3V| RMII manages data input/output| RMII-MDIO|
+| LU\_76| F20| F20\_RESET-N2| PA12| 3.3V| PHY chip reset signal| RESET-N2|
+| LU\_78| F12| 4G-WAKEUP-SOC| \-| \-| 4G module replacement signal| 4G-WAKEUP-SOC|
+| LU\_80| \-| GND| \-| \-| Ground| GND|
 
 **Table 3 RIGHT\_UP（P2） Connector Interface(Odd) Pin Definition**
 
-| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**
-|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:
-| RU\_1| \-| GND| \-| \-| Ground| GND
-| RU\_3| D2| D2\_NCSI0-D2| PE6| 2.8V| Parallel CSI input data 2| NCSI0-D2
-| RU\_5| E3| E3\_NCSI0-D1| PE5| 2.8V| Parallel CSI input data 1| NCSI0-D1
-| RU\_7| D1| D1\_NCSI0-D3| PE7| 2.8V| Parallel CSI input data 3| NCSI0-D3
-| RU\_9| E2| E2\_NCSI0-D0| PE4| 2.8V| Parallel CSI input data 0| NCSI0-D0
-| RU\_11| D3| D3\_NCSI0-D4| PE8| 2.8V| Parallel CSI input data 4| NCSI0-D4
-| RU\_13| C3| C3\_NCSI0-PCLK| PE0| 2.8V| Parallel CSI pixel clock| NCSI0-PCLK
-| RU\_15| \-| GND| \-| \-| Ground| GND
-| RU\_17| C1| C1\_NCSI0-D5| PE9| 2.8V| Parallel CSI input data 5| NCSI0-D5
-| RU\_19| C2| C2\_NCSI0-D6| PE10| 2.8V| Parallel CSI input data 6| NCSI0-D6
-| RU\_21| E6| E6\_NCSI0-MCLK| PE1| 2.8V| Parallel CSI master clock| NCSI0-MCLK
-| RU\_23| B2| B2\_NCSI0-D7| PE11| 2.8V| Parallel CSI input data 7| NCSI0-D7
-| RU\_25| D6| D6\_NCSI0-HSYNC| PE2| 2.8V| Parallel CSI line synchronization signal| NCSI0-HSYNC
-| RU\_27| D5| D5\_NCSI0-VSYNC| PE3| 2.8V| Parallel CSI column synchronization signal| NCSI0-VSYNC
-| RU\_29| \-| GND| \-| \-| Ground| GND
-| RU\_31| A3| A3\_PE-TWI2-SCK| PE20| 2.8V| TWI2 serial clock signal| TWI2-SCK
-| RU\_33| B3| B3\_PE-TWI2-SDA| PE21| 2.8V| TWI2 serial data signal| TWI2-SDA
-| RU\_35| \-| GND| \-| \-| Ground| GND
-| RU\_37| G6| G6\_PE12| PE12| 2.8V| General IO PE12| PE12
-| RU\_39| G5| G5\_PE13| PE13| 2.8V| General IO FE13| PE13
-| RU\_41| G4| G4\_PE14| PE14| 2.8V| General IO FE14| PE14
-| RU\_43| F4| F4\_PE15| PE15| 2.8V| General IO FE15| PE15
-| RU\_45| F5| F5\_PE16| PE16| 2.8V| General IO FE16| PE16
-| RU\_47| E5| E5\_PE17| PE17| 2.8V| General IO FE17| PE17
-| RU\_49| E4| E4\_PE18| PE18| 2.8V| General IO FE18| PE18
-| RU\_51| D4| D4\_PE19| PE19| 2.8V| General IO FE19| PE19
-| RU\_53| F6| F6\_PE22| PE22| 2.8V| General IO FE22| PE22
-| RU\_55| \-| GND| \-| \-| Ground| GND
-| RU\_57| F9| F9\_PG-TWI4-SCK| PG15| 3.3V| TWI4 serial clock signal| TWI4-SCK
-| RU\_59| E9| E9\_PG-TWI4-SDA| PG16| 3.3V| TWI4 serial data signal| TWI4-SDA
-| RU\_61| A11| A11\_IR-RX| PH10| 3.3V| IR receiver signal input| IR-RX
-| RU\_63| B19| B19\_PA-TWI3-SCK| PA10| 3.3V| TWI3 serial clock signal| TWI3-SCK
-| RU\_65| E17| E17\_PA-TWI3-SDA| PA11| 3.3V| TWI3 serial data signal| TWI3-SDA
-| RU\_67| \-| GND| \-| \-| Ground| GND
-| RU\_69| C17| C17\_PH4| PH4| 3.3V| General IO PH4| PH4
-| RU\_71| B13| B13\_UART5-RX| PH3| 3.3V| UART5 data sending| UART5-RX
-| RU\_73| B12| B12\_UART5-TX| PH2| 3.3V| UART5 data receiving| UART5-TX
-| RU\_75| \-| FEL| \-| \-| FEL signal (used to identify system programming)| FEL
-| RU\_77| \-| JTAG-SEL| \-| \-| JTAG channel selection signal (low level JTAG part signal can only be multiplexed to PG, high level JTAG part signal is multiplexed to PF or PG by software selection, default is PF).| JTAG-SEL
-| RU\_79| \-| GND| \-| \-| Ground| GND
+| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**|
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| RU\_1| \-| GND| \-| \-| Ground| GND|
+| RU\_3| D2| D2\_NCSI0-D2| PE6| 2.8V| Parallel CSI input data 2| NCSI0-D2|
+| RU\_5| E3| E3\_NCSI0-D1| PE5| 2.8V| Parallel CSI input data 1| NCSI0-D1|
+| RU\_7| D1| D1\_NCSI0-D3| PE7| 2.8V| Parallel CSI input data 3| NCSI0-D3|
+| RU\_9| E2| E2\_NCSI0-D0| PE4| 2.8V| Parallel CSI input data 0| NCSI0-D0|
+| RU\_11| D3| D3\_NCSI0-D4| PE8| 2.8V| Parallel CSI input data 4| NCSI0-D4|
+| RU\_13| C3| C3\_NCSI0-PCLK| PE0| 2.8V| Parallel CSI pixel clock| NCSI0-PCLK|
+| RU\_15| \-| GND| \-| \-| Ground| GND|
+| RU\_17| C1| C1\_NCSI0-D5| PE9| 2.8V| Parallel CSI input data 5| NCSI0-D5|
+| RU\_19| C2| C2\_NCSI0-D6| PE10| 2.8V| Parallel CSI input data 6| NCSI0-D6|
+| RU\_21| E6| E6\_NCSI0-MCLK| PE1| 2.8V| Parallel CSI master clock| NCSI0-MCLK|
+| RU\_23| B2| B2\_NCSI0-D7| PE11| 2.8V| Parallel CSI input data 7| NCSI0-D7|
+| RU\_25| D6| D6\_NCSI0-HSYNC| PE2| 2.8V| Parallel CSI line synchronization signal| NCSI0-HSYNC|
+| RU\_27| D5| D5\_NCSI0-VSYNC| PE3| 2.8V| Parallel CSI column synchronization signal| NCSI0-VSYNC|
+| RU\_29| \-| GND| \-| \-| Ground| GND|
+| RU\_31| A3| A3\_PE-TWI2-SCK| PE20| 2.8V| TWI2 serial clock signal| TWI2-SCK|
+| RU\_33| B3| B3\_PE-TWI2-SDA| PE21| 2.8V| TWI2 serial data signal| TWI2-SDA|
+| RU\_35| \-| GND| \-| \-| Ground| GND|
+| RU\_37| G6| G6\_PE12| PE12| 2.8V| General IO PE12| PE12|
+| RU\_39| G5| G5\_PE13| PE13| 2.8V| General IO FE13| PE13|
+| RU\_41| G4| G4\_PE14| PE14| 2.8V| General IO FE14| PE14|
+| RU\_43| F4| F4\_PE15| PE15| 2.8V| General IO FE15| PE15|
+| RU\_45| F5| F5\_PE16| PE16| 2.8V| General IO FE16| PE16|
+| RU\_47| E5| E5\_PE17| PE17| 2.8V| General IO FE17| PE17|
+| RU\_49| E4| E4\_PE18| PE18| 2.8V| General IO FE18| PE18|
+| RU\_51| D4| D4\_PE19| PE19| 2.8V| General IO FE19| PE19|
+| RU\_53| F6| F6\_PE22| PE22| 2.8V| General IO FE22| PE22|
+| RU\_55| \-| GND| \-| \-| Ground| GND|
+| RU\_57| F9| F9\_PG-TWI4-SCK| PG15| 3.3V| TWI4 serial clock signal| TWI4-SCK|
+| RU\_59| E9| E9\_PG-TWI4-SDA| PG16| 3.3V| TWI4 serial data signal| TWI4-SDA|
+| RU\_61| A11| A11\_IR-RX| PH10| 3.3V| IR receiver signal input| IR-RX|
+| RU\_63| B19| B19\_PA-TWI3-SCK| PA10| 3.3V| TWI3 serial clock signal| TWI3-SCK|
+| RU\_65| E17| E17\_PA-TWI3-SDA| PA11| 3.3V| TWI3 serial data signal| TWI3-SDA|
+| RU\_67| \-| GND| \-| \-| Ground| GND|
+| RU\_69| C17| C17\_PH4| PH4| 3.3V| General IO PH4| PH4|
+| RU\_71| B13| B13\_UART5-RX| PH3| 3.3V| UART5 data sending| UART5-RX|
+| RU\_73| B12| B12\_UART5-TX| PH2| 3.3V| UART5 data receiving| UART5-TX|
+| RU\_75| \-| FEL| \-| \-| FEL signal (used to identify system programming)| FEL|
+| RU\_77| \-| JTAG-SEL| \-| \-| JTAG channel selection signal (low level JTAG part signal can only be multiplexed to PG, high level JTAG part signal is multiplexed to PF or PG by software selection, default is PF).| JTAG-SEL||
+| RU\_79| \-| GND| \-| \-| Ground| GND|
 
 **Table 4 Definition of RIGHT (P2) connector interface (even) pins**
 
-| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**
-|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:
-| RU\_2| \-| GND| \-| \-| Ground| GND
-| RU\_4| P3| P3\_SDC0-D2| PF5| 1.8/3.3V| SDC0 data signal 2| SDC0-D2
+| **Num**| **Ball**| **Signal Name**| **GPIO**| **Vol**| **Pin Description**| **Default Function**|
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| RU\_2| \-| GND| \-| \-| Ground| GND|
+| RU\_4| P3| P3\_SDC0-D2| PF5| 1.8/3.3V| SDC0 data signal 2| SDC0-D2|
 | RU\_6| R3| R3\_SDC0-D3| PF4| 1.8/3.3V| SDC0 data signal 3| SDC0-D3
 | RU\_8| R2| R2\_SDC0\_CMD| PF3| 1.8/3.3V| SDC0 command signal| SDC0\_CMD
 | RU\_10| R1| R1\_SDC0-CLK| PF2| 1.8/3.3V| SDC0 clock signal| SDC0-CLK
