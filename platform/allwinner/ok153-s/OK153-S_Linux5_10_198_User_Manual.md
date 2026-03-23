@@ -118,7 +118,7 @@ Open PuTTY. In the “Serial line” field, enter the identified COM port and se
 
 ![Image](./images/OK153-S_Linux5_10_198_User_Manual/1758703939144_2d7fe557_2f78_4f4c_9963_2015a2537762.png)
 
-**3. Power On and Login:**
+**3. Power on and Login:**
 Turn on the development board. Boot messages will display in the serial terminal. Once the prompt **root@OKT153:/#** appears, the system is fully booted. You are automatically logged in as the root user, with no password required.
 
 #### 2.2.2 Common Issues (Serial Login)
