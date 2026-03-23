@@ -1790,7 +1790,7 @@ wlan0: EAPOL-4WAY-HS-COMPLETED a2:2d:9f:bf:0f:c8
 Then you can see the WiFi name OKT153\_WIFI\_5G\_AP and the password 12345678 on your phone.   
 Enter the password to connect.
 
-![Image](wifi-1-1774238162085.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/wifi_1_1774238162085.png)
 
 ### 4.20 4G Test
 
@@ -2550,7 +2550,7 @@ In the following interface, check the checkbox "Single or multi-partition downlo
 
 Connect the development board and the host using a Type-A to Type-C cable, power the board, and press and hold the FEL and RESET buttons simultaneously. Release the RESET button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:
 
-![](Image_20260320151042.png)
+![Image](./images/OK153-S_Linux5_10_198_User_Manual/Image_20260320151042.png)
 
 **Note: Release RESET first, then release FEL.**
 
