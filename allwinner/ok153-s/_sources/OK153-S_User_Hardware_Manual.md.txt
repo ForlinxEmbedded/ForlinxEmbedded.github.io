@@ -80,7 +80,7 @@ The centre-to-centre pitch of the pin headers is 1 mm; the centre-to-centre pitc
 #### 2.3.1 System Frequency
 
 | **Name**| **Specification**| | | | **Description** |
-|:----------:|:----------:|----------|----------|----------|:----------:-|
+|:----------:|:----------:|----------|----------|----------|:----------:|
 | | **Minimum**| **Typical**| **Maximum**| **Unit**||
 | System Frequency| —| —| 1.6| GHz| — |
 | System RTC| —| 32.768| —| KHz| — |
@@ -88,14 +88,14 @@ The centre-to-centre pitch of the pin headers is 1 mm; the centre-to-centre pitc
 #### 2.3.2 Power Parameter
 
 | **Parameter**| **Pin No.**| **Specification**| | | | **Description** |
-|:----------:|:----------:|:----------:|----------|----------|----------|:----------:-|
+|:----------:|:----------:|:----------:|----------|----------|----------|:----------:|
 | | | **Minimum**| **Typical**| **Maximum**| **Unit**||
 | Main Power Supply Voltage| DCIN| 4.75| 5| 5.25| V| — |
 
 #### 2.3.3 Working Environment
 
 | **Parameter**| | **Specification**| | | | **Description** |
-|:----------:|----------|:----------:|----------|----------|----------|:----------:-|
+|:----------:|----------|:----------:|----------|----------|----------|:----------:|
 | | | **Minimum**| **Typical**| **Maximum**| **Unit**||
 | Operating temperature| Working environment| -40| 25| +85| ℃| Industrial Level |
 | | Storage Environment| -40| 25| +125| ℃||
@@ -105,7 +105,7 @@ The centre-to-centre pitch of the pin headers is 1 mm; the centre-to-centre pitc
 #### 2.3.4 ESD Features
 
 | **Parameter**| **Specification**| | | **Description** |
-|:----------:|:----------:|----------|----------|:----------:-|
+|:----------:|:----------:|----------|----------|:----------:|
 | | **Minimum**| **Maximum**| **Unit**||
 | ESD HBM(ESDA/JEDEC JS-001-2017)| -2000| +2000| V| Applicable to all pins of the SoM |
 | ESD CDM(ESDA/JEDEC JS-002-2018)| -250| +250| V| Applicable to all pins of the SoM |
