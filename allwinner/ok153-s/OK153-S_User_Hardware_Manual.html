@@ -432,32 +432,112 @@ The drivers and utilities used for the components are subject to the copyrights 
 </section>
 <section id="som-interfaces">
 <h3>2.4 SoM Interfaces<a class="headerlink" href="#som-interfaces" title="Link to this heading"></a></h3>
-<p>| <strong>Function</strong>| <strong>Quantity</strong> <strong>Parameter</strong>|
-|:—:|:—:|:—:|
-| Parallel CSI| ≤1| Up to 8/10/12/16 bit width, supporting BT.656 up to 2-ch720P&#64;30fps and BT.1120 up to 2-ch 1080P&#64;30fps,RAW up to 4-ch720P&#64;30fps|
-| MIPI CSI| ≤2| Supports 4-lane/2+2-lane, up to 1.0 Gbit/s per lane;|
-| MIPI DSI(1)| ≤1| Supports 4-lane MIPI DSI, up to 1920x1200&#64;60fps，1.0 Gbit/s per lane|
-| RGB LCD(1)| ≤1| DE/SYNC mode, up to 1920x1080&#64;60fps；RGB888,RGB666 and RGB565|
-| LVDS(1)| ≤2| Up to 1920 x  1080&#64;60fps for dual link; Up to 1366x768&#64;60fps for single-link|
-| SDIO| ≤2| SMHC0 for SD card; SMHC1 for SDIO interface, 3.3 V mode only|
-| Audio| ≤1| Built-in audio codec supports 1 x differential LINEOUT output|
-| I2S| ≤3| Supports master/slave mode, sampling rate 8kHz to 384kHz; I2S0/2 supports 4lane application; I2S1 supports 2lane application|
-| DMIC| ≤1| Supports 8-channel with sampling rate from 8kHz to 48kHz|
-| USB2.0 DRD| 1| Supports master and slave and High-Speed，480Mbps|
-| USB2.0 HOST| 1| Only supports master mode, and High-Speed, 480Mbps|
-| GMAC| ≤3| Support RMII/RGMII interface and rate 10/100/1000 Mbit/s|
-| CAN-FD| ≤2| Supports CAN-FD（up to 64 data bytes), CAN 2.0A and CAN2.0B|
-| Local Bus| ≤1| Supports 8/16/32 bit width, up to 150MHz&#64;16bits，100MHz&#64;32bits|
-| SPI(2)| ≤3| Supports master/slave mode, master mode clock up to 100MHz; SPI2, SPI3 supports SPI mode; SPI1 supports SPI mode and DBI mode.|
-| TWI(3)| ≤5| Compatible with I2C standard, standard mode 100 kbit/s, fast mode 400 kbit/s|
-| UART(4)| ≤10| Compatible with industry standard 16450/16550.|
-| GPADC| ≤24| 12-bit sampling resolution, up to 1MHz; GPADC2 has 4 channels multiplexed as TPADC|
-| TPADC| ≤1| 4-wire resistive touch, 12 bit SAR type AD conversion|
-| PWM&amp;PWMCS| ≤30| PWM output frequency 0 ~ <sub>24 MHz or 0</sub> ~ 100MHz; PWMCS output frequency 0 ~ 4MHz, supporting maximum and minimum frequency limit.|
-| LEDC| ≤1| Control LED light, programmable output high and low width, data up to 800kbit/s|
-| IR TX| ≤1| Infrared output|
-| IR RX| ≤4| Infrared receiving|
-| GPIO| ≤124|</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Function</strong></p></th>
+<th class="head text-center"><p><strong>Quantity</strong></p></th>
+<th class="head text-center"><p><strong>Parameter</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Parallel CSI</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Up to 8/10/12/16 bit width, supporting BT.656 up to 2-ch720P&#64;30fps and BT.1120 up to 2-ch 1080P&#64;30fps,RAW up to 4-ch720P&#64;30fps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>MIPI CSI</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>Supports 4-lane/2+2-lane, up to 1.0 Gbit/s per lane;</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI DSI(1)</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Supports 4-lane MIPI DSI, up to 1920x1200&#64;60fps，1.0 Gbit/s per lane</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RGB LCD(1)</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>DE/SYNC mode, up to 1920x1080&#64;60fps；RGB888,RGB666 and RGB565</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LVDS(1)</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>Up to 1920 x  1080&#64;60fps for dual link; Up to 1366x768&#64;60fps for single-link</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SDIO</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>SMHC0 for SD card; SMHC1 for SDIO interface, 3.3 V mode only</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Audio</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Built-in audio codec supports 1 x differential LINEOUT output</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I2S</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>Supports master/slave mode, sampling rate 8kHz to 384kHz; I2S0/2 supports 4lane application; I2S1 supports 2lane application</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>DMIC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Supports 8-channel with sampling rate from 8kHz to 48kHz</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB2.0 DRD</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>Supports master and slave and High-Speed，480Mbps</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>USB2.0 HOST</p></td>
+<td class="text-center"><p>1</p></td>
+<td class="text-center"><p>Only supports master mode, and High-Speed, 480Mbps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>GMAC</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>Support RMII/RGMII interface and rate 10/100/1000 Mbit/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN-FD</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td class="text-center"><p>Supports CAN-FD（up to 64 data bytes), CAN 2.0A and CAN2.0B</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Local Bus</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Supports 8/16/32 bit width, up to 150MHz&#64;16bits，100MHz&#64;32bits</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI(2)</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td class="text-center"><p>Supports master/slave mode, master mode clock up to 100MHz; SPI2, SPI3 supports SPI mode; SPI1 supports SPI mode and DBI mode.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TWI(3)</p></td>
+<td class="text-center"><p>≤5</p></td>
+<td class="text-center"><p>Compatible with I2C standard, standard mode 100 kbit/s, fast mode 400 kbit/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>UART(4)</p></td>
+<td class="text-center"><p>≤10</p></td>
+<td class="text-center"><p>Compatible with industry standard 16450/16550.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>GPADC</p></td>
+<td class="text-center"><p>≤24</p></td>
+<td class="text-center"><p>12-bit sampling resolution, up to 1MHz; GPADC2 has 4 channels multiplexed as TPADC</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>TPADC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>4-wire resistive touch, 12 bit SAR type AD conversion</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM&amp;PWMCS</p></td>
+<td class="text-center"><p>≤30</p></td>
+<td class="text-center"><p>PWM output frequency 0 ~ <sub>24 MHz or 0</sub> ~ 100MHz; PWMCS output frequency 0 ~ 4MHz, supporting maximum and minimum frequency limit.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>LEDC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Control LED light, programmable output high and low width, data up to 800kbit/s</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>IR TX</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td class="text-center"><p>Infrared output</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>IR RX</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td class="text-center"><p>Infrared receiving</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>GPIO</p></td>
+<td class="text-center"><p>≤124</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>The parameters in the table are the theoretical values of hardware design or CPU;</strong></p></li>
