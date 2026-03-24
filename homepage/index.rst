@@ -353,6 +353,17 @@ Pin-to-Pin UP4 Series
    <div class="products-container">
 
    <div class="product-card">
+     <a href="p2p/ok-mx9352-up4/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/p2p/OK-MX9352-UP4.png" alt="OK-MX9352-UP4" class="product-image" />
+     </a>
+     <h3 class="product-title">OK-MX9352-UP4</h3>
+     <div class="btn-group">
+       <a href="p2p/ok-mx9352-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="p2p/ok-mx9352-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+   <div class="product-card">
      <a href="p2p/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer">
        <img src="_static/images/p2p/OK3562J-UP4.png" alt="OK3562J-UP4" class="product-image" />
      </a>
@@ -362,6 +373,8 @@ Pin-to-Pin UP4 Series
        <a href="p2p/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
+
+
    </div>
 
 
