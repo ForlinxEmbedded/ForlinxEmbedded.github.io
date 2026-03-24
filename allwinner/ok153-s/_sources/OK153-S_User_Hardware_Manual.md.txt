@@ -119,7 +119,7 @@ The centre-to-centre pitch of the pin headers is 1 mm; the centre-to-centre pitc
 ### 2.4 SoM Interfaces
 
 | **Function**| **Quantity** **Parameter**|
-|:----------:|:----------:|----------|
+|:---:|:---:|:---:|
 | Parallel CSI| ≤1| Up to 8/10/12/16 bit width, supporting BT.656 up to 2-ch720P@30fps and BT.1120 up to 2-ch 1080P@30fps,RAW up to 4-ch720P@30fps|
 | MIPI CSI| ≤2| Supports 4-lane/2+2-lane, up to 1.0 Gbit/s per lane;|
 | MIPI DSI(1)| ≤1| Supports 4-lane MIPI DSI, up to 1920x1200@60fps，1.0 Gbit/s per lane|
