@@ -278,7 +278,7 @@ ABC-D+IK:M
 
 ### 3.5 OK153-S Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by default;**
 
