@@ -575,15 +575,15 @@ The following image shows the footprint diagram for the stamp hole connectors on
 
 **Note：**
 
-**1. TTest conditions: **
+**1. Test conditions:** 
 
-**\- SoM Configuration: DDR (256 MB) + NAND (256 MB)  **
+**\- SoM Configuration: DDR (256 MB) + NAND (256 MB);**
 
-**\- 4G Module: Quectel EC20 ** 
+**\- 4G Module: Quectel EC20;** 
 
-**\- Display: Forlinx standard product (optional)  **
+**\- Display: Forlinx standard product (optional);**
 
-**\- Power Supply: SoM – 5 V, Development Board – 12 V**
+**\- Power Supply: SoM – 5 V, Development Board – 12 V;**
 
 **2. Power consumption is for reference only.**
 
