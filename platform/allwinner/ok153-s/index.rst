@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK153-S_User_Hardware_Manual
+
 
 
 
