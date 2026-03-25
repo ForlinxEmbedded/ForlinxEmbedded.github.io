@@ -45,7 +45,7 @@ Furthermore, the RK3568 features a high-performance memory interface supporting 
 
 **RK3568 Block Diagram**
 
-!\[屏幕截图 2025-02-18 153714](images\\屏幕截图 2025-02-18 153714.png)
+![](1%20(78).png)
 
 ****
 
@@ -54,17 +54,17 @@ Furthermore, the RK3568 features a high-performance memory interface supporting 
 
 ### 2.1 FET3568x-UP4 SoM Appearance
 
-![Front](images/%E6%A0%B8%E5%BF%83%E6%9D%BF%E6%AD%A3%E9%9D%A2.png)
+![Front](1%20(1).png)
 
 **Front**
 
-![Back](images/25%E5%B9%B43%E6%9C%88-%E5%8F%8D%E9%9D%A21.0.png)
+![Back](1%20(2).png)
 
 **Back**
 
 ### 2.2 FET3568x SoM Dimension Diagram
 
-![屏幕截图 2025-03-19 140027](images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-03-19%20140027.png)
+![](1%20(85).png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -170,11 +170,11 @@ Plate making process: 1.6mm thickness, 12-layer immersion gold PCB.
 
 #### 2.5.1 FET3568x-UP4 SoM Pin Schematic
 
-![Snipaste\_2025-09-17\_17-05-28](images/Snipaste_2025-09-17_17-05-28.png)
+![](1%20(18).png)
 
-![Snipaste\_2025-09-17\_17-06-00](images/Snipaste_2025-09-17_17-06-00.png)
+![](1%20(19).png)
 
-![Snipaste\_2025-09-17\_17-06-11](images/Snipaste_2025-09-17_17-06-11.png)
+![](1%20(20).png)
 
 ### 2.5.2 FET3568x-UP4 SoM Pin Function Description
 
@@ -328,13 +328,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
-![3568-UP4 Interface Diagram 1600](images/3568-UP4%E6%8E%A5%E5%8F%A3%E5%9B%BE1600.png)
+![](1%20(1).jpg)
 
-![3568-UP4 Back Diagram 1600](images/3568-UP4%E5%8F%8D%E9%9D%A2%E6%8E%A5%E5%8F%A3%E5%9B%BE1600.png)
+![](1%20(2).jpg)
 
 ## 3.2 OK-3568x-UP4 Development Board Dimension Diagram
 
-![Snipaste\_2025-12-09\_18-25-23](images/Snipaste_2025-12-09_18-25-23.png)
+![](1%20(25).png)
 
 PCB: 130mm×190mm
 
@@ -346,7 +346,7 @@ Power Voltage: DC 12V
 
 The OK3568x-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![Snipaste\_2026-03-11\_11-20-44](images/Snipaste_2026-03-11_11-20-44.bmp)
+![]()
 
 ## 3.3 Naming Rules
 
