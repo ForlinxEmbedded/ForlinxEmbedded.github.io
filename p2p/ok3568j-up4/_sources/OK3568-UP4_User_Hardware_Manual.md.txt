@@ -22,15 +22,19 @@ This manual aims to help you quickly get familiar with the product, understand i
 There are four chapters:
 
 + Chapter 1. provides an overall overview of the CPU, briefly introducing its performance and application industries;
+
 + Chapter 2. offers a general introduction to the SoM, including descriptions and functions of connector pins;
+
 + Chapter 3. introduces the development board in multiple chapters, covering hardware principles and simple design ideas;
+
 + Chapter 4. describes the product's power consumption and other considerations.
-Additionally, the manual includes explanations of some symbols and formats.
-| **Format**| **Meaning**|
-|:----------:|----------|
-| **Note** | Note or particularly important information must be read carefully.|
-| 📚 | Relevant explanations regarding the testing section. |
-| ️🛤️ ️️ | Related paths.|
+  Additionally, the manual includes explanations of some symbols and formats.
+
+| **Format** | **含义**                                                     |
+| :--------: | ------------------------------------------------------------ |
+|  **Note**  | Note or particularly important information must be read carefully. |
+|     📚      | Relevant explanations regarding the testing section.         |
+|     🛤️      | Related paths.                                               |
 ## 1\. Rockchip RK3568 Description
 
 The RK3568 is a high-performance, low-power quad-core application processor chip, specifically designed for personal mobile internet devices and AIoT equipment.
