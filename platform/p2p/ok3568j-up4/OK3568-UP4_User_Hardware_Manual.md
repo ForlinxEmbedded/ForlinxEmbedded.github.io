@@ -176,11 +176,11 @@ Plate making process: 1.6mm thickness, 12-layer immersion gold PCB.
 
 ![](1%20(20).png)
 
-### 2.5.2 FET3568x-UP4 SoM Pin Function Description
+#### 2.5.2 FET3568x-UP4 SoM Pin Function Description
 
 For various functional expansion requirements, please refer to the user document "FET3568-UP4 Pin Multiplexing Table". However, for more detailed information, it is recommended that you consult the relevant documentation, the chip datasheet, and the reference manual.
 
-## 2.6 FET3568x-UP4 SoM Pin Definitions
+### 2.6 FET3568x-UP4 SoM Pin Definitions
 
 | UP4 Standard Interface Functions| FET3568x-UP4 Pinout Functions|
 |:----------:|:----------:|
@@ -293,7 +293,7 @@ For various functional expansion requirements, please refer to the user document
 
 **It is the UP4 standard definition. If compatible design is required, it is recommended to design according to it.**
 
-## 2.7 SoM Hardware Design Description
+### 2.7 SoM Hardware Design Description
 
 **Power Pin**
 
@@ -322,9 +322,9 @@ Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is
 
 For the design of the SoM's peripheral circuits, please refer to Section 3.5, "OK3568x-UP4 Carrier Board Description".
 
-# 3\. OK3568x-UP4 Embedded Development Description
+## 3\. OK3568x-UP4 Embedded Development Description
 
-## 3.1 OK-3568x-UP4 Development Board Interface
+### 3.1 OK-3568x-UP4 Development Board Interface
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
@@ -332,7 +332,7 @@ Connection method: Stamp hole + LGA. The main interfaces are shown in the figure
 
 ![](1%20(2).jpg)
 
-## 3.2 OK-3568x-UP4 Development Board Dimension Diagram
+### 3.2 OK-3568x-UP4 Development Board Dimension Diagram
 
 ![](1%20(25).png)
 
@@ -348,7 +348,7 @@ The OK3568x-UP4 carrier board is equipped with two mounting holes for heat sinks
 
 ![]()
 
-## 3.3 Naming Rules
+### 3.3 Naming Rules
 
 A-B-C+DEFGHIJKL:MN-O
 
@@ -382,7 +382,7 @@ A-B-C+DEFGHIJKL:MN-O
 | O| Grade Identification| PC| Prototype Sample|
 | | | Blank| Mass Production|
 
-## 3.4 Carrier Board Interfaces
+### 3.4 Carrier Board Interfaces
 
 | Function| Quantity| Parameter|
 |:----------:|:----------:|----------|
@@ -411,7 +411,7 @@ A-B-C+DEFGHIJKL:MN-O
 
 **Note: The parameters in the table are the theoretical values of hardware design or CPU.**
 
-## 3.5 OK3568x-UP4 Carrier Board Description
+### 3.5 OK3568x-UP4 Carrier Board Description
 
 **Note: **
 
@@ -420,7 +420,7 @@ A-B-C+DEFGHIJKL:MN-O
 
 - **The schematic diagrams in this manual are only for interface descriptions. Please refer to the source file materials for hardware design.**
 
-### 3.5.1 Carrier Board Power
+#### 3.5.1 Carrier Board Power
 
 As shown, the power supply for the development board is 12V DC （from P28). VDD\_5V supplies power to the SoM. Once the SoM is powered up, it outputs PMIC\_EXT\_EN to enable U32 and U33 on the carrier board, and VCC\_3V3, and VCC\_3V3 supply power to the devices on the carrier board. The STANDBY pin controls VCC\_3V3\_S to enable or disable the power supply for the development board, achieving reduced power consumption.
 
@@ -428,7 +428,7 @@ PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, t
 
 ![Snipaste\_2025-09-18\_09-26-55](images/Snipaste_2025-09-18_09-26-55.png)
 
-### 3.5.2 Power/Reset Keys
+#### 3.5.2 Power/Reset Keys
 
 K1 on the carrier board is the development board USB programming button; press and hold K1 before powering on to perform USB programming.
 
@@ -438,13 +438,13 @@ K5 on the development board is for the resetting. Press it reset the power on th
 
 !\[屏幕截图 2025-01-21 095237](images\\屏幕截图 2025-01-21 095237.png)
 
-### 3.5.3  LRADC Button
+#### 3.5.3  LRADC Button
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
 !\[屏幕截图 2025-01-21 104742](images\\屏幕截图 2025-01-21 104742.png)
 
-### 3.5.4 Debugging Serial Port
+#### 3.5.4 Debugging Serial Port
 
 The carrier board features a single USB Type-C port with 3 x integrated debug serial ports. Install the XR21V1414IM48 driver on your computer, connect the P36 port to the computer, and select the DEBUG\_A debug serial port to start debugging.
 
@@ -456,13 +456,13 @@ Only the DEBUG\_A debug serial port is led out from the FET3568-UP4 SoM.
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
-### 3.5.5 RTC
+#### 3.5.5 RTC
 
 An RTC device is connected to the carrier board via the I2C\_A bus. It enables a compatible power supply from either VCC\_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.
 
 !\[屏幕截图 2025-01-21 114208](images\\屏幕截图 2025-01-21 114208.png)
 
-### 3.5.6  TF Card
+#### 3.5.6  TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card is supplied by the VCC3V3\_SD output from the SoM
 
@@ -476,13 +476,13 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 - **The TF card is a hot-pluggable device. Please add ESD protection for it;**
 - **Please make equal length for the SD signal.**
 
-### 3.5.7 USB Download
+#### 3.5.7 USB Download
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilises the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
 !\[屏幕截图 2025-01-23 103014](images\\屏幕截图 2025-01-23 103014.png)
 
-### 3.5.8 LVDS Display
+#### 3.5.8 LVDS Display
 
 The pin header P1 on the development board can be connected to the LVDS display via the connector 38P with a pitch of 2.0mm.
 
@@ -496,19 +496,19 @@ Pins P2 and P3 on the development board can be connected to an eDP display; P2 i
 
 !\[屏幕截图 2025-01-23 140412](images\\屏幕截图 2025-01-23 140412.png)
 
-### 3.5.10 LCD-RGB888
+#### 3.5.10 LCD-RGB888
 
 Pin P4 on the development board is the LCD interface; it is an FPC socket that can be connected to an LCD screen and supports capacitive touchscreens.
 
 ![Snipaste\_2025-06-26\_18-49-20](images/Snipaste_2025-06-26_18-49-20.png)
 
-### 3.5.11 Resistive Touchscreen
+#### 3.5.11 Resistive Touchscreen
 
 If a resistive touchscreen is required, a resistive touch circuit can be added and connected to pins 1, 2, 3 and 4 of the P4 (LCD interface).
 
 !\[屏幕截图 2025-02-12 111914](images\\屏幕截图 2025-02-12 111914.png)
 
-### 3.5.12 HDMI Display
+#### 3.5.12 HDMI Display
 
 The P5 port on the development board is a standard HDMI port and supports HDMI 2.0.
 
@@ -518,13 +518,13 @@ The P5 port on the development board is a standard HDMI port and supports HDMI 2
 
 ![Snipaste\_2025-06-26\_18-56-29](images/Snipaste_2025-06-26_18-56-29.png)
 
-### 3.5.13  MIPI\_DSI
+#### 3.5.13  MIPI\_DSI
 
 The P11 on the development board is MIPI\_DSI port, supporting 4 Lane MIPI\_DSI.
 
 !\[屏幕截图 2025-02-12 114926](images\\屏幕截图 2025-02-12 114926.png)
 
-### 3.5.14 MIPI\_CSI
+#### 3.5.14 MIPI\_CSI
 
 There are two FPC sockets on the development board that can be connected to the MIPI-CSI camera. The connector is 26P, with a 0.5mm pitch, and a flip-down cover.
 
@@ -535,17 +535,15 @@ P7 and P8 supports 2lane MIPI-CSI connections.
 !\[屏幕截图 2025-02-12 162755](images\\屏幕截图 2025-02-12 162755.png)
 
 <img src="images\屏幕截图 2025-02-12 163045.png" alt="屏幕截图 2025-02-12 163045" style="zoom: 67%;" />
-### 3.5.15 WIFI\&BT
+#### 3.5.15 WIFI\&BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. WiFi is connected via an SDIO interface, supporting dual-band 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standard. Bluetooth is connected via a UART and PCM interface and complies with the BT 5.2 specification.
 
-
-
- P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
+P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
 !\[屏幕截图 2025-02-12 170735](images\\屏幕截图 2025-02-12 170735.png)
 
-### 3.5.16 USB2.0
+#### 3.5.16 USB2.0
 
 There is an onboard USB 2.0 HUB on the development board, which is expanded to two downstream USB HOST ports, connecting a standard USB 2.0-A interface and a mini-PCIE interface. The mini-PCIE interface can connect the 4G module.
 
@@ -553,7 +551,7 @@ In addition, the SoM features a set of on-board USB 2.0 host interfaces, which c
 
 !\[屏幕截图 2025-02-13 164758](images\\屏幕截图 2025-02-13 164758.png)
 
-### 3.5.17 4G
+#### 3.5.17 4G
 
 The 4G module can be configured on the development board, and the supported specifications are miniPCIE interface, 3.3V power supply, and USB2.0 communication.
 
@@ -565,7 +563,7 @@ Before using the 4G function, please power off the board, install the 4G module,
 
 !\[屏幕截图 2025-02-14 114420](images\\屏幕截图 2025-02-14 114420.png)
 
-### 3.5.18 USB3.0
+#### 3.5.18 USB3.0
 
 The development board features two onboard USB 3.0 ports, both of which are native interfaces on the SoM. One of the ports is a dual-layer USB 3.0-A standard interface. Port A supports OTG (On-The-Go) functionality, while Port C operates as a HOST port.
 
@@ -573,7 +571,7 @@ Port A is controlled by an S3 DIP switch. When the switch is set to OFF, the por
 
 !\[屏幕截图 2025-02-13 171830](images\\屏幕截图 2025-02-13 171830.png)
 
-### 3.5.19 Ethernet
+#### 3.5.19 Ethernet
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521SH chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
@@ -585,7 +583,7 @@ The development board supports two native 1000m network ports, which are realize
 
 !\[屏幕截图 2025-02-14 144725](images\\屏幕截图 2025-02-14 144725.png)
 
-### 3.5.20 CAN
+#### 3.5.20 CAN
 
 1 x standard CAN is led out from the development board via native CAN0 and CAN1. Because of the quarantine, the interface supports the maximum rate of 5Mbps, and the electrical quarantine is designed to meet the protection requirements in most scenarios.
 
@@ -593,7 +591,7 @@ The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 ![Snipaste\_2025-06-26\_19-07-04](images/Snipaste_2025-06-26_19-07-04.png)
 
-### 3.5.21 485
+#### 3.5.21 485
 
 1 x standard 485 is led out from the development board via native UART\_C. Due to the UART rate limitation of the CPU, the interface supports a maximum rate of 4Mbps, and the electrical quarantine is designed to meet the protection requirements in most scenarios.
 
@@ -601,19 +599,19 @@ The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 !\[屏幕截图 2025-02-14 155151](images\\屏幕截图 2025-02-14 155151.png)
 
-### 3.5.22 GPADC
+#### 3.5.22 GPADC
 
 The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.
 
 !\[屏幕截图 2025-02-14 161310](images\\屏幕截图 2025-02-14 161310.png)
 
-### 3.5.23 UART
+#### 3.5.23 UART
 
 1 x five-wire UART is routed from the development board and powered by a 3.3V signal.
 
 !\[屏幕截图 2025-02-14 165334](images\\屏幕截图 2025-02-14 165334.png)
 
-### 3.5.24 PCIE
+#### 3.5.24 PCIE
 
 The SoM features 1 x PCIe 3.0 x 2 and 1 x PCIe 2.1 x 1 interface, which connect to two PCIe x 4 slots; P29 is a PCIe 3.0 interface and P30 is a PCIe 2.1 interface, with the PCIe 3.0 interface supporting both EP and RC modes.
 
@@ -623,13 +621,13 @@ The SoM features 1 x PCIe 3.0 x 2 and 1 x PCIe 2.1 x 1 interface, which connect 
 
 ![Snipaste\_2025-06-26\_19-11-02](images/Snipaste_2025-06-26_19-11-02.png)
 
-### 3.5.25 IO Expansion
+#### 3.5.25 IO Expansion
 
 An I/O expansion chip connects to the carrier board via I2C, offering 24 additional I/O pins for situations where the number of I/O pins is insufficient. In the design of the development board, the I/O must be expandable because some reset and interrupt pins are located on the I/O expansion board.
 
 !\[屏幕截图 2025-02-17 114511](images\\屏幕截图 2025-02-17 114511.png)
 
-### 3.5.26 Audio
+#### 3.5.26 Audio
 
 The development board features a standard 3.5mm headphone jack (CTIA international standard), located at pin P40, which supports stereo headphone playback and mono microphone recording;
 
@@ -639,7 +637,7 @@ The P39 is a speaker port that supports stereo speakers, Class D, 1.3W power;
 
 !\[屏幕截图 2025-02-17 154753](images\\屏幕截图 2025-02-17 154753.png)
 
-# 4\. Package Dimensions Diagram
+## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
@@ -669,7 +667,7 @@ Note:
 
 2\. Since stepped stencils can affect the solder volume on surrounding components, please reduce the aperture size of the stencil openings for these components; For the LGA pad openings in the advancing direction of the scraper, please conduct hole-size reduction in accordance with the No.3.
 
-# 5\. OK3568-UP4 Development Board Linux Consumption Table
+## 5\. OK3568-UP4 Development Board Linux Consumption Table
 
 | **No.**| **Item**| **SoM Power (W)**| Development Board **Power** (including SoM)|
 |:----------:|----------|:----------:|:----------:|
@@ -686,16 +684,14 @@ Note:
 | 10| 7-inch MIPI screen video playback power consumption| 1.94W| 5.568W|
 | 11| CPU pressure + memory pressure + eMMC read/write pressure test power| 4.18W| 5.376W|
 
-+ **Note：**
-
-1. **Test conditions: The SoM configuration is 2GB memory + +16GB eMMC, the 4G module is Quectel EC20, and the screen is an Forlinx optional product. SoM power supply: 5V; and the carrier board is 12V;**
+**Note: Test conditions: The SoM configuration is 2GB memory + +16GB eMMC, the 4G module is Quectel EC20, and the screen is an Forlinx optional product. SoM power supply: 5V; and the carrier board is 12V;**
 
 Power consumption is for reference only.  
 
 ****
 
 
-# 6\. Minimum System Diagram
+## 6\. Minimum System Diagram
 
 **It has SoM, BOOT, power, debug serial port, system image flashing port.** 
 
