@@ -30,7 +30,7 @@ There are four chapters:
 + Chapter 4. describes the product's power consumption and other considerations.
   Additionally, the manual includes explanations of some symbols and formats.
 
-| **Format** | **含义**                                                     |
+| **Format** | Meaning                                                      |
 | :--------: | ------------------------------------------------------------ |
 |  **Note**  | Note or particularly important information must be read carefully. |
 |     📚      | Relevant explanations regarding the testing section.         |
