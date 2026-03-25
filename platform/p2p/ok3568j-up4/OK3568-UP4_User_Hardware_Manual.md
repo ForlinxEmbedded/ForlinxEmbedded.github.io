@@ -49,7 +49,7 @@ Furthermore, the RK3568 features a high-performance memory interface supporting 
 
 **RK3568 Block Diagram**
 
-![](1%20(78).png)
+![](68.png)
 
 ****
 
@@ -58,17 +58,17 @@ Furthermore, the RK3568 features a high-performance memory interface supporting 
 
 ### 2.1 FET3568x-UP4 SoM Appearance
 
-![Front](1%20(1).png)
+![Front](77.png)
 
 **Front**
 
-![Back](1%20(2).png)
+![Back](e.png)
 
 **Back**
 
 ### 2.2 FET3568x SoM Dimension Diagram
 
-![](1%20(85).png)
+![](75.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -174,11 +174,11 @@ Plate making process: 1.6mm thickness, 12-layer immersion gold PCB.
 
 #### 2.5.1 FET3568x-UP4 SoM Pin Schematic
 
-![](1%20(18).png)
+![](7.png)
 
-![](1%20(19).png)
+![](8.png)
 
-![](1%20(20).png)
+![](9.png)
 
 #### 2.5.2 FET3568x-UP4 SoM Pin Function Description
 
@@ -332,13 +332,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
-![](1%20(1).jpg)
+![](b.jpg)
 
-![](1%20(2).jpg)
+![](h.png)
 
 ### 3.2 OK-3568x-UP4 Development Board Dimension Diagram
 
-![](1%20(25).png)
+![](14.png)
 
 PCB: 130mm×190mm
 
@@ -350,7 +350,7 @@ Power Voltage: DC 12V
 
 The OK3568x-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![]()
+![](a.bmp)
 
 ### 3.3 Naming Rules
 
@@ -430,7 +430,7 @@ As shown, the power supply for the development board is 12V DC （from P28). VDD
 
 PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![Snipaste\_2025-09-18\_09-26-55](images/Snipaste_2025-09-18_09-26-55.png)
+![](10.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -440,13 +440,13 @@ K2 on the development board is for powering ON/Off. By default, the board runs a
 
 K5 on the development board is for the resetting. Press it reset the power on the SoM to achieving a full board power reset.
 
-!\[屏幕截图 2025-01-21 095237](images\\屏幕截图 2025-01-21 095237.png)
+![](25.png)
 
 #### 3.5.3  LRADC Button
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
-!\[屏幕截图 2025-01-21 104742](images\\屏幕截图 2025-01-21 104742.png)
+![](26.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -454,9 +454,9 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 Only the DEBUG\_A debug serial port is led out from the FET3568-UP4 SoM.
 
-!\[屏幕截图 2025-01-21 110047](images\\屏幕截图 2025-01-21 110047.png)
+![](27.png)
 
-!\[屏幕截图 2025-01-21 110110](images\\屏幕截图 2025-01-21 110110.png)
+![](28.png)
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
@@ -464,15 +464,15 @@ Only the DEBUG\_A debug serial port is led out from the FET3568-UP4 SoM.
 
 An RTC device is connected to the carrier board via the I2C\_A bus. It enables a compatible power supply from either VCC\_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.
 
-!\[屏幕截图 2025-01-21 114208](images\\屏幕截图 2025-01-21 114208.png)
+![](29.png)
 
 #### 3.5.6  TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card is supplied by the VCC3V3\_SD output from the SoM
 
-!\[屏幕截图 2025-01-23 093650](images\\屏幕截图 2025-01-23 093650.png)
+![](30.png)
 
-!\[屏幕截图 2025-01-23 094829](images\\屏幕截图 2025-01-23 094829.png)
+![](31.png)
 
 **Note:** 
 
@@ -484,7 +484,7 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilises the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-!\[屏幕截图 2025-01-23 103014](images\\屏幕截图 2025-01-23 103014.png)
+![](32.png)
 
 #### 3.5.8 LVDS Display
 
@@ -492,41 +492,41 @@ The pin header P1 on the development board can be connected to the LVDS display 
 
 It supports 4 lane LVDS connection, and I2C port touch screen.
 
-!\[屏幕截图 2025-01-23 114744](images\\屏幕截图 2025-01-23 114744.png)
+![](33.png)
 
 ### 3.5.9 EDP Display
 
 Pins P2 and P3 on the development board can be connected to an eDP display; P2 is with a 2.0mm pitch.
 
-!\[屏幕截图 2025-01-23 140412](images\\屏幕截图 2025-01-23 140412.png)
+![](34.png)
 
 #### 3.5.10 LCD-RGB888
 
 Pin P4 on the development board is the LCD interface; it is an FPC socket that can be connected to an LCD screen and supports capacitive touchscreens.
 
-![Snipaste\_2025-06-26\_18-49-20](images/Snipaste_2025-06-26_18-49-20.png)
+![](35.png)
 
 #### 3.5.11 Resistive Touchscreen
 
 If a resistive touchscreen is required, a resistive touch circuit can be added and connected to pins 1, 2, 3 and 4 of the P4 (LCD interface).
 
-!\[屏幕截图 2025-02-12 111914](images\\屏幕截图 2025-02-12 111914.png)
+![](36.png)
 
 #### 3.5.12 HDMI Display
 
 The P5 port on the development board is a standard HDMI port and supports HDMI 2.0.
 
-![Snipaste\_2025-06-26\_18-55-01](images/Snipaste_2025-06-26_18-55-01.png)
+![](37-1774431566921.png)
 
-![Snipaste\_2025-06-26\_18-56-16](images/Snipaste_2025-06-26_18-56-16.png)
+![](38.png)
 
-![Snipaste\_2025-06-26\_18-56-29](images/Snipaste_2025-06-26_18-56-29.png)
+![](39.png)
 
 #### 3.5.13  MIPI\_DSI
 
 The P11 on the development board is MIPI\_DSI port, supporting 4 Lane MIPI\_DSI.
 
-!\[屏幕截图 2025-02-12 114926](images\\屏幕截图 2025-02-12 114926.png)
+![](40.png)
 
 #### 3.5.14 MIPI\_CSI
 
@@ -534,18 +534,18 @@ There are two FPC sockets on the development board that can be connected to the 
 
 P7 and P8 supports 2lane MIPI-CSI connections.
 
-!\[屏幕截图 2025-02-12 162730](images\\屏幕截图 2025-02-12 162730.png)
+![](41.png)
 
-!\[屏幕截图 2025-02-12 162755](images\\屏幕截图 2025-02-12 162755.png)
+![](42.png)
 
-<img src="images\屏幕截图 2025-02-12 163045.png" alt="屏幕截图 2025-02-12 163045" style="zoom: 67%;" />
+![](43.png)
 #### 3.5.15 WIFI\&BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. WiFi is connected via an SDIO interface, supporting dual-band 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standard. Bluetooth is connected via a UART and PCM interface and complies with the BT 5.2 specification.
 
 P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-!\[屏幕截图 2025-02-12 170735](images\\屏幕截图 2025-02-12 170735.png)
+![](44.png)
 
 #### 3.5.16 USB2.0
 
@@ -553,7 +553,7 @@ There is an onboard USB 2.0 HUB on the development board, which is expanded to t
 
 In addition, the SoM features a set of on-board USB 2.0 host interfaces, which connect to the lower layer of the dual-layer USB 2.0 Type-A standard connectors.
 
-!\[屏幕截图 2025-02-13 164758](images\\屏幕截图 2025-02-13 164758.png)
+![](45.png)
 
 #### 3.5.17 4G
 
@@ -563,9 +563,9 @@ P20 is a nanoSIM card slot, which is self-ejecting. Pay attention to the inserti
 
 Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.
 
-!\[屏幕截图 2025-02-14 114400](images\\屏幕截图 2025-02-14 114400.png)
+![](47.png)
 
-!\[屏幕截图 2025-02-14 114420](images\\屏幕截图 2025-02-14 114420.png)
+![](48.png)
 
 #### 3.5.18 USB3.0
 
@@ -573,19 +573,19 @@ The development board features two onboard USB 3.0 ports, both of which are nati
 
 Port A is controlled by an S3 DIP switch. When the switch is set to OFF, the port is configured as a Device. Conversely, when the switch is set to ON, the port functions as a HOST. 
 
-!\[屏幕截图 2025-02-13 171830](images\\屏幕截图 2025-02-13 171830.png)
+![](46-1774431809535.png)
 
 #### 3.5.19 Ethernet
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521SH chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
-!\[屏幕截图 2025-02-14 144123](images\\屏幕截图 2025-02-14 144123.png)
+![](49-1774431859748.png)
 
-!\[屏幕截图 2025-02-14 144249](images\\屏幕截图 2025-02-14 144249.png)
+![](50.png)
 
-![Snipaste\_2025-06-26\_19-06-08](images/Snipaste_2025-06-26_19-06-08.png)
+![](51-1774431879901.png)
 
-!\[屏幕截图 2025-02-14 144725](images\\屏幕截图 2025-02-14 144725.png)
+![](52.png)
 
 #### 3.5.20 CAN
 
@@ -593,7 +593,7 @@ The development board supports two native 1000m network ports, which are realize
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![Snipaste\_2025-06-26\_19-07-04](images/Snipaste_2025-06-26_19-07-04.png)
+![](54.png)
 
 #### 3.5.21 485
 
@@ -601,35 +601,35 @@ The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-!\[屏幕截图 2025-02-14 155151](images\\屏幕截图 2025-02-14 155151.png)
+![](55.png)
 
 #### 3.5.22 GPADC
 
 The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.
 
-!\[屏幕截图 2025-02-14 161310](images\\屏幕截图 2025-02-14 161310.png)
+![](57.png)
 
 #### 3.5.23 UART
 
 1 x five-wire UART is routed from the development board and powered by a 3.3V signal.
 
-!\[屏幕截图 2025-02-14 165334](images\\屏幕截图 2025-02-14 165334.png)
+![](58.png)
 
 #### 3.5.24 PCIE
 
 The SoM features 1 x PCIe 3.0 x 2 and 1 x PCIe 2.1 x 1 interface, which connect to two PCIe x 4 slots; P29 is a PCIe 3.0 interface and P30 is a PCIe 2.1 interface, with the PCIe 3.0 interface supporting both EP and RC modes.
 
-!\[屏幕截图 2025-02-17 113137](images\\屏幕截图 2025-02-17 113137.png)
+![](59.png)
 
-!\[屏幕截图 2025-02-17 113258](images\\屏幕截图 2025-02-17 113258.png)
+![](60.png)
 
-![Snipaste\_2025-06-26\_19-11-02](images/Snipaste_2025-06-26_19-11-02.png)
+![](61.png)
 
 #### 3.5.25 IO Expansion
 
 An I/O expansion chip connects to the carrier board via I2C, offering 24 additional I/O pins for situations where the number of I/O pins is insufficient. In the design of the development board, the I/O must be expandable because some reset and interrupt pins are located on the I/O expansion board.
 
-!\[屏幕截图 2025-02-17 114511](images\\屏幕截图 2025-02-17 114511.png)
+![](62.png)
 
 #### 3.5.26 Audio
 
@@ -637,39 +637,39 @@ The development board features a standard 3.5mm headphone jack (CTIA internation
 
 The P39 is a speaker port that supports stereo speakers, Class D, 1.3W power;
 
-!\[屏幕截图 2025-02-17 154728](images\\屏幕截图 2025-02-17 154728.png)
+![](63.png)
 
-!\[屏幕截图 2025-02-17 154753](images\\屏幕截图 2025-02-17 154753.png)
+![](64.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![Image\_20251205101513](images/Image_20251205101513.png)
+![](j.png)
 
 To ensure a high weld yield, please refer to the diagram below for the design of the packaging stencil:
 
-![Image\_20251208142354](images/Image_20251208142354.png)
+![](k.png)
 
 I. Hole Opening Scheme
 
 1.The steel mesh type is ladder steel mesh, with thickness of 0.1mm and 0.15 mm, and the ladder is on the printing surface;                                                      2. As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.
 
-![图片1](images/%E5%9B%BE%E7%89%871.png)
+![](19.png)
 
-![图片2](images/%E5%9B%BE%E7%89%872.png)
+![](20.png)
 
 3.The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.
 
-![图片3](images/%E5%9B%BE%E7%89%873.png)
+![](21.png)
 
-![图片4](images/%E5%9B%BE%E7%89%874.png)
+![](22.png)
 
-Note:
+**Note:**
 
-1\. Since the LGA pads on the UP4 series SoMs use a pre-tinned process, there is a height difference of approximately 0.1 mm between the LCC pads and the LGA pads. This may result in uneven solder wick height between the LCC pads. Please do inspection for the LCC soldering;
+**1\. Since the LGA pads on the UP4 series SoMs use a pre-tinned process, there is a height difference of approximately 0.1 mm between the LCC pads and the LGA pads. This may result in uneven solder wick height between the LCC pads. Please do inspection for the LCC soldering;**
 
-2\. Since stepped stencils can affect the solder volume on surrounding components, please reduce the aperture size of the stencil openings for these components; For the LGA pad openings in the advancing direction of the scraper, please conduct hole-size reduction in accordance with the No.3.
+**2\. Since stepped stencils can affect the solder volume on surrounding components, please reduce the aperture size of the stencil openings for these components; For the LGA pad openings in the advancing direction of the scraper, please conduct hole-size reduction in accordance with the No.3.**
 
 ## 5\. OK3568-UP4 Development Board Linux Consumption Table
 
@@ -699,14 +699,14 @@ Power consumption is for reference only.
 
 **It has SoM, BOOT, power, debug serial port, system image flashing port.** 
 
-![Snipaste\_2025-12-23\_11-45-28](images/Snipaste_2025-12-23_11-45-28.png)
+![](16.png)
 
-![Snipaste\_2025-12-23\_11-45-38](images/Snipaste_2025-12-23_11-45-38.png)
+![](17.png)
 
-![Snipaste\_2025-12-23\_11-45-53](images/Snipaste_2025-12-23_11-45-53.png)
+![](18.png)
 
-![Snipaste\_2025-09-18\_09-26-55](images/Snipaste_2025-09-18_09-26-55.png)
+![](72.png)
 
-!\[屏幕截图 2025-02-18 162314](images\\屏幕截图 2025-02-18 162314.png)
+![](73.png)
 
-!\[屏幕截图 2025-02-18 162334](images\\屏幕截图 2025-02-18 162334.png)
+![](74-1774432375796.png)
