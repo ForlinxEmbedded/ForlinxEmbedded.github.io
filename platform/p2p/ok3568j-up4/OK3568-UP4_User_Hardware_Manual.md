@@ -113,7 +113,7 @@ Plate making process: 1.6mm thickness, 12-layer immersion gold PCB.
 | ESD HBM(ESDA/JEDEC JS-001-2017)| -500| 500| V| Signals exported from SoM|
 | ESD CDM(ESDA/JEDEC JS-002-2018)| -250| 250| V| Signals exported from SoM|
 
-**Note：**
+**Note:**
 
 - **The above data is provided by Rockchip;**
 
