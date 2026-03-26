@@ -116,7 +116,7 @@ Diagram:
 
 It is used to reset the CPU and should only be used in conjunction with the JTAG interface for CPU debugging.
 
-**10\. Pin Number（34/35/69/70/325/326）Signal Name（I2C*）Design Requirements**
+**10\. Pin Number（34/35/69/70/325/326）Signal Name（I2C）Design Requirements**
 
 When designing this pin, it's essential to add pull-up resistors to the carrier board. Additionally, a 0Ω resistor should be placed before each connected chip to facilitate debugging. If this I2C bus is shared with the SoM, it's advisable to minimize or avoid using this I2C bus in the carrier board design as much as possible. If you do use it, ensure that there are no address conflicts with the SoM. Furthermore, the hardware manual for this platform specifies the addresses of devices connected to the SoM, the appropriate values for the pull-up resistors, and which other functions cannot be reused.
 
