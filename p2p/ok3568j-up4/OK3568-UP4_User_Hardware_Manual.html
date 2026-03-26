@@ -24,6 +24,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="OK3568J-UP4 Manual" href="index.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -60,7 +61,82 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OK3568J-UP4_User’s Hardware Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rockchip-rk3568-description">1. Rockchip RK3568 Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fet3568j-up4-som-description">2. FET3568J-UP4 SoM Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fet3568x-up4-som-appearance">2.1 FET3568x-UP4 SoM Appearance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3568x-som-dimension-diagram">2.2 FET3568x SoM Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-parameter">2.3 Performance Parameter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-frequency">2.3.1 System Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-parameter">2.3.2 Power Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#working-environment">2.3.3 Working Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#esd-features">2.3.4 ESD Features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#interface-resources">2.4 Interface Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet3568x-up4-som-interfaces">2.4.1 FET3568x-UP4 SoM Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cpu-interfaces">2.4.2 CPU Interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fet3568x-up4-som-pin-definitions">2.5 FET3568x-UP4 SoM Pin Definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fet3568x-up4-som-pin-schematic">2.5.1 FET3568x-UP4 SoM Pin Schematic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fet3568x-up4-som-pin-function-description">2.5.2 FET3568x-UP4 SoM Pin Function Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.6 FET3568x-UP4 SoM Pin Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.7 SoM Hardware Design Description</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568x-up4-embedded-development-description">3. OK3568x-UP4 Embedded Development Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ok-3568x-up4-development-board-interface">3.1 OK-3568x-UP4 Development Board Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok-3568x-up4-development-board-dimension-diagram">3.2 OK-3568x-UP4 Development Board Dimension Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#naming-rules">3.3 Naming Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#carrier-board-interfaces">3.4 Carrier Board Interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3568x-up4-carrier-board-description">3.5 OK3568x-UP4 Carrier Board Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carrier-board-power">3.5.1 Carrier Board Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power-reset-keys">3.5.2 Power/Reset Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lradc-button">3.5.3  LRADC Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging-serial-port">3.5.4 Debugging Serial Port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtc">3.5.5 RTC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf-card">3.5.6  TF Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-download">3.5.7 USB Download</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lvds-display">3.5.8 LVDS Display</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#edp-display">3.5.9 EDP Display</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lcd-rgb888">3.5.10 LCD-RGB888</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistive-touchscreen">3.5.11 Resistive Touchscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hdmi-display">3.5.12 HDMI Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-dsi">3.5.13  MIPI_DSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-csi">3.5.14 MIPI_CSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wifi-bt">3.5.15 WiFi &amp; BT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb2-0">3.5.16 USB2.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g">3.5.17 4G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb3-0">3.5.18 USB3.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet">3.5.19 Ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#can">3.5.20 CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">3.5.21 485</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gpadc">3.5.22 GPADC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uart">3.5.23 UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcie">3.5.24 PCIE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#io-expansion">3.5.25 IO Expansion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audio">3.5.26 Audio</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#package-dimensions-diagram">4. Package Dimensions Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3568-up4-development-board-linux-consumption-table">5. OK3568-UP4 Development Board Linux Consumption Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimum-system-diagram">6. Minimum System Diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html">RK Development Manual</a></li>
 </ul>
