@@ -47,10 +47,12 @@ When designing the carrier board, use this pin to control the power-up sequence 
 
 **Design Reference:**
 
-1\. Control the Power MOSFET to Turn on the Carrier Board’s Controlled Power Supply:  
+1\. Control the Power MOSFET to Turn on the Carrier Board’s Controlled Power Supply:
+  
 This requires adding an RC soft-start circuit. The pin controls the AO3416, which in turn controls the conduction of the power MOSFET. Both pull-up and pull-down resistors are required to ensure that both MOSFETs are off by default. See Figure 1.
 
-2\. Directly Control the DC-DC Enable Pin:  
+2\. Directly Control the DC-DC Enable Pin:
+  
 For DC-DC circuits with built-in soft-start functionality, this pin can be directly connected to the circuit’s EN signal. A series resistor must be added. It is necessary to verify whether the pin’s default state is low or if the DC-DC circuit is disabled by default. See Figure 2.
 
 Figure 1
