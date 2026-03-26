@@ -215,9 +215,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p><img alt="Image" src="_images/image_20260303083636102.png" /></p>
 <p><strong>9. Pin Number (12), Signal Name (POR_B) Design Requirements</strong></p>
 <p>It is used to reset the CPU and should only be used in conjunction with the JTAG interface for CPU debugging.</p>
-<ol class="arabic simple" start="10">
-<li><p>Pin Number（34/35/69/70/325/326）Signal Name（I2C*）Design Requirements**</p></li>
-</ol>
+<p><em><em>10. Pin Number（34/35/69/70/325/326）Signal Name（I2C</em>）Design Requirements</em>*</p>
 <p>When designing this pin, it’s essential to add pull-up resistors to the carrier board. Additionally, a 0Ω resistor should be placed before each connected chip to facilitate debugging. If this I2C bus is shared with the SoM, it’s advisable to minimize or avoid using this I2C bus in the carrier board design as much as possible. If you do use it, ensure that there are no address conflicts with the SoM. Furthermore, the hardware manual for this platform specifies the addresses of devices connected to the SoM, the appropriate values for the pull-up resistors, and which other functions cannot be reused.</p>
 <p><strong>11. Display Interface (LCD/LVDS/MIPI_DSI/HDMI/EDP) Design Requirements</strong></p>
 <p>Pin Numbers (191/163/164/358/175/359/371/370), Signal Names (LCD_PWR_EN/PWM_B/LVDS_PWR_EN/PWM_A/EDP_PWR_EN/PWM_C/MIPI_PWR_EN/PWM_D): In carrier board design, it is essential to connect the pins to their respective display interfaces according to their classifications. Each pin requires a pull-down resistor to ensure that it defaults to a low level during power-on, allowing it to be pulled high under SoM control. This setup helps prevent screen flickering during power-up. If an enable (EN) signal is not present, the corresponding display interface should be directly pulled up. Additionally, PWM signals must also have pull-down resistors to avoid flickering of the screen at power-on.</p>
