@@ -1,35 +1,33 @@
 # OK3568-UP4\_User Hardware Design Guide\_V1.0
 
-版本：V1.0
+Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
-发布日期：2025.12.11
+## Copyright
 
-文件密级：□绝密 □秘密 □内部资料 ■公开
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-# **<font style="color:rgb(38, 38, 38);">免责声明</font>**
-
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible. Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-# **Overview**
+## Overview
 
 This document corresponds to the UP4 SoM product, describing the schematic design of the UP4 peripheral circuits, PCB design, troubleshooting approaches for common interface issues, design features of functional interfaces, and more. It assists engineers in quickly familiarizing themselves with the product, facilitating maintenance and development tasks.
 
 The designs provided in this document are for guidance only. During application design, please adapt your designs based on actual scenarios and conditions. For any inquiries, please contact our company’s technical support.
 
-# Application Scope
+## Application Scope
 
 This hardware manual applies to the UP4 Forlinx SoM
 
-# Revision History
+## Revision History
 
-| Date| Version| Revision History
-|:----------:|:----------:|:----------:
-| 20260302| V1.0| Initial Version
+| Date| Version| Revision History|
+|:----------:|:----------:|:----------:|
+| 20260302| V1.0| Initial Version|
 
-# 1\. Schematic Design
+## 1\. Schematic Design
 
-## 1.1 Schematic Design Guidelines for UP4 Carrier Board
+### 1.1 Schematic Design Guidelines for UP4 Carrier Board
 
 All pins must be designed according to the voltage levels specified in the UP4 Pin Definition Table. Pins without special requirements below can be directly connected, provided the voltage levels are compatible.
 
@@ -39,7 +37,7 @@ The main power supply pins for the SoM on the carrier board must use a non-switc
 
 Diagram:
 
-![image-20260303083355184](images/image-20260303083423398.png)
+![image-20260303083355184](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083423398.png)
 
 **2\. Pin (4) Signal Name (EXTP\_EN) Design Requirements**
 
@@ -48,20 +46,20 @@ When designing the carrier board, use this pin to control the power-up sequence 
 **Design Reference:**
 
 1\. Control the Power MOSFET to Turn on the Carrier Board’s Controlled Power Supply:
-  
+
 This requires adding an RC soft-start circuit. The pin controls the AO3416, which in turn controls the conduction of the power MOSFET. Both pull-up and pull-down resistors are required to ensure that both MOSFETs are off by default. See Figure 1.
 
 2\. Directly Control the DC-DC Enable Pin:
-  
+
 For DC-DC circuits with built-in soft-start functionality, this pin can be directly connected to the circuit’s EN signal. A series resistor must be added. It is necessary to verify whether the pin’s default state is low or if the DC-DC circuit is disabled by default. See Figure 2.
 
 Figure 1
 
-![image-20260303083423398](images/image-20260303083441023.png)
+![image-20260303083423398](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083441023.png)
 
 Figure 2
 
-![image-20260303083441023](images/image-20260303083454935.png)
+![image-20260303083441023](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083454935.png)
 
 **3\. Pin Number (5), Signal Name (STANDBY) Design Requirements**
 
@@ -73,7 +71,7 @@ It is required not to be connected to any pull-up resistor in the design of the 
 
 Diagram:
 
-![image-20260303083454935](images/image-20260303083528951.png)
+![image-20260303083454935](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083528951.png)
 
 **5\. Pin Number (7), Signal Name (WAKEUP) Design Requirements**
 
@@ -81,7 +79,7 @@ It is required not to be connected to any pull-up resistor in the design of the 
 
 Diagram:
 
-![image-20260303083528951](images/image-20260303083542829.png)
+![image-20260303083528951](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083542829.png)
 
 **6\. Pin Number (8), Signal Name (PWRON) Design Requirements**
 
@@ -89,22 +87,22 @@ It is required not to be connected to any pull-up resistor in the design of the 
 
 Diagram:
 
-![image-20260303083542829](images/image-20260303083554752.png)
+![image-20260303083542829](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083554752.png)
 
 **7\. Pin Numbers (9/10), Signal Names (BOOT1/BOOT2) Design Requirements**
 
 In carrier board design, the two BOOT pins are pulled down to ground through a 1K resistor via a dual-position DIP switch. Pull-up resistors or other circuits are not allowed. Switch configurations as follows:
 
-| BOOT MOD| BOOT1| BOOT0
-|----------|----------|----------
-| EMMC| OFF| OFF
-| TF| OFF| ON
-| NOR| ON| OFF
-| NAND| ON| ON
+| BOOT MOD| BOOT1| BOOT0|
+|----------|----------|----------|
+| EMMC| OFF| OFF|
+| TF| OFF| ON|
+| NOR| ON| OFF|
+| NAND| ON| ON|
 
 Diagram:
 
-![image-20260303083554752](images/image-20260303083625223.png)
+![image-20260303083554752](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083625223.png)
 
 **8\. Pin Number (11), Signal Name (FORCE\_USBLOAD) Design Requirements**
 
@@ -112,13 +110,13 @@ It is required not to be connected to any pull-up resistor in the design of the 
 
 Diagram:
 
-![image-20260303083625223](images/image-20260303083636102.png)
+![image-20260303083625223](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303083636102.png)
 
 **9\. Pin Number (12), Signal Name (POR\_B) Design Requirements**
 
 It is used to reset the CPU and should only be used in conjunction with the JTAG interface for CPU debugging.
 
-**10. Pin Number（34/35/69/70/325/326）Signal Name（I2C*）Design Requirements*\*
+10. Pin Number（34/35/69/70/325/326）Signal Name（I2C*）Design Requirements*\*
 
 When designing this pin, it's essential to add pull-up resistors to the carrier board. Additionally, a 0Ω resistor should be placed before each connected chip to facilitate debugging. If this I2C bus is shared with the SoM, it's advisable to minimize or avoid using this I2C bus in the carrier board design as much as possible. If you do use it, ensure that there are no address conflicts with the SoM. Furthermore, the hardware manual for this platform specifies the addresses of devices connected to the SoM, the appropriate values for the pull-up resistors, and which other functions cannot be reused.
 
@@ -160,7 +158,7 @@ For signal pins: USB 2.0 signals must have series resistors reserved when connec
 
 All data pins must have reserved pull-up resistors. The pull-up voltage must match the VREF of the JTAG interface.
 
-## 1.2 UP4 Platform Carrier Board Schematic Compatibility Design Guide
+### 1.2 UP4 Platform Carrier Board Schematic Compatibility Design Guide
 
 The UP4 platform is currently compatible with five platforms: RK3568, RK3562, T527, T536, and MX9352. Since the interfaces vary across these platforms, any compatibility design must include redundancy to support switching between them.
 
@@ -168,69 +166,69 @@ The UP4 platform is currently compatible with five platforms: RK3568, RK3562, T5
 
 The UP4 definition supports five display interfaces: LVDS, LCD, MIPI\_DSI, HDMI, and eDP. For the enable pins of these display interfaces, it is necessary to reserve RC or series resistors. This ensures that the screen can be enabled normally on platforms where extra I/O pins are unavailable.
 
-![image-20260303083636102](images/image-20260303084054186.png)
+![image-20260303083636102](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084054186.png)
 
-![image-20260303084054186](images/image-20260303084104836.png)
+![image-20260303084054186](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084104836.png)
 
-![image-20260303084104836](images/image-20260303084231712.png)
+![image-20260303084104836](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084231712.png)
 
-![image-20260303084231712](images/image-20260303084201691.png)
+![image-20260303084231712](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084201691.png)
 
 For I2C and CEC of HDMI interface, 3.3 V or 5V level compatibility shall be reserved
 
-![img](images/image-20260303084255789.png)
+![img](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084255789.png)
 
-![image-20260303084255789](images/image-20260303084304352.png)
+![image-20260303084255789](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084304352.png)
 
 **2\. Camera Module Design**
 
 If the Master Clock (MCLK) output from the SoM is required, the series resistors and voltage divider resistors should be reserved in the design to ensure the clock signal level meets the camera module’s requirements.
 
-![image-20260303084304352](images/image-20260303084621877.png)
+![image-20260303084304352](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084621877.png)
 
 For four analog camera modules, 27 M active clock shall be reserved to provide clock source for the module when the SoM has no MCLK resource.
 
-![image-20260303084621877](images/image-20260303084630464.png)
+![image-20260303084621877](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084630464.png)
 
 **3\. WiFi Module Design**
 
 To be compatible with different I/O levels, both 3.3V and 1.8V power supplies should be reserved, and they should also be reserved for the crystal oscillator. The appropriate active crystal oscillator should be selected based on the actual voltage used. Furthermore, a divider resistor should also be reserved for the signal control to match the level.
 
-![image-20260303084630464](images/image-20260303084643512.png)
+![image-20260303084630464](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084643512.png)
 
 **4\. Gigabit Ethernet Port Design**
 
 The IO level of 3.3 V and 1.8 V shall be considered, and the level selection option, pull-up level option, and network port status light option shall be reserved. To be compatible with RMII interface, RMII chip shall be designed, and the signal line shall be selectively soldered through the resistor.
 
-![image-20260303084643512](images/image-20260303084701615.png)
+![image-20260303084643512](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084701615.png)
 
-![image-20260303084701615](images/image-20260303084715314.png)
+![image-20260303084701615](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084715314.png)
 
 **5\. Audio Codec Design**
 
 To ensure compatibility with 1.8V and 3.3V I/O levels, both 3.3V and 1.8V I/O power supplies should be reserved. The signal pins should also be configured to support both I/O states, selectable via series resistors. Additionally, a 24M active clock should be reserved for the MCLK signal to accommodate platforms without built-in MCLK.
 
-![image-20260303084715314](images/image-20260303084728866.png)
+![image-20260303084715314](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084728866.png)
 
 In the PCB BOM, for the USB port, the dual-layer USB socket or single-layer USB socket can be selected for soldering through package compatibility.
 
-![image-20260303084728866](images/image-20260303084739842.png)
+![image-20260303084728866](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084739842.png)
 
-# 2\. PCB Design
+## 2\. PCB Design
 
-## 2.1 PCB Compatibility Design Examples
+### 2.1 PCB Compatibility Design Examples
 
 **1\. Ethernet Port Compatibility Design Example**
 
-![image-20260303084739842](images/image-20260303084816964.png)
+![image-20260303084739842](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084816964.png)
 
-![image-20260303084816964](images/image-20260303084827060.png)
+![image-20260303084816964](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084827060.png)
 
-![image-20260303084827060](images/image-20260303084836353.png)
+![image-20260303084827060](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084836353.png)
 
-![image-20260303084836353](images/image-20260303084849441.png)
+![image-20260303084836353](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084849441.png)
 
-## 2.2 U40 Carrier Board PCB Layout Design Guidelines
+### 2.2 U40 Carrier Board PCB Layout Design Guidelines
 
 This specification can be applied to different PCB designs. You can refer to it and make optimization based on your actual use.
 
@@ -238,15 +236,15 @@ This specification can be applied to different PCB designs. You can refer to it 
 
 For 4-layer boards, the recommended stack-up is: S1 - POWER - GND - S2. The impedance profile is as shown below:
 
-![image-20260303084849441](images/image-20260303084942640.png)
+![image-20260303084849441](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084942640.png)
 
-![image-20260303084942640](images/image-20260303084951745.png)
+![image-20260303084942640](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303084951745.png)
 
 For 6-layer boards, the recommended stack-up is: S1 - GND - S2 - S3 - POWER - S4. The impedance profile is as shown below:
 
-![image-20260303084951745](images/image-20260303085003721.png)
+![image-20260303084951745](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085003721.png)
 
-![image-20260303085003721](images/image-20260303085013602.png)
+![image-20260303085003721](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085013602.png)
 
 The specific stack-up can be adjusted according to actual requirements.
 
@@ -262,42 +260,42 @@ For the LGA fanout, a 12/20 mil via configuration is recommended.
 
 Since the SoM predominantly uses LGA pins, and all differential pairs, along with most high-speed signals, are located in the LGA area, signals from the LGA should be fanned out collectively and routed primarily on the bottom layer to ensure signal integrity. As shown in the figure below:
 
-![image-20260303085013602](images/image-20260303085037962.png)
+![image-20260303085013602](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085037962.png)
 
 The fan-out method for LGA differential pairs is illustrated below:
 
-![image-20260303085037962](images/image-20260303085050676.png)
+![image-20260303085037962](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085050676.png)
 
 A minimum safety spacing of three times the trace width (3W) should be maintained between differential pairs to prevent signal crosstalk. If conditions permit, it is recommended to implement ground isolation around the differential pairs, as shown in the figure below.
 
-![image-20260303085050676](images/image-20260303085104161.png)
+![image-20260303085050676](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085104161.png)
 
 For the LGA differential line pad area on the carrier board, the first two reference layers of the carrier board need to be partially voided to ensure impedance continuity. Please refer to the figure below for the specific voiding area.
 
-![image-20260303085104161](images/wps37.jpg)![img](file:///C:\Users\forlinx\AppData\Local\Temp\ksohtml12852\wps38.jpg)
+![image-20260303085104161](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/wps37.jpg)
 
 For the stamp hole, after completing the normal routing on the top layer, the traces are switched to the bottom layer to ensure that the entire group can be collectively rerouted after exiting.
 
-![img](images/image-20260303085239603.png)
+![img](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085239603.png)
 
 Schematic of the direction change:
 
-![image-20260303085239603](images/image-20260303085250062.png)
+![image-20260303085239603](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085250062.png)
 
 Single-ended 50-ohm impedance traces must maintain at least 2.5W clearance to prevent crosstalk.
 
 The overall routing is as follows:
 
-![image-20260303085250062](images/image-20260303085304625.png)
+![image-20260303085250062](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085304625.png)
 
 **4\. Stencil and Component Placement Requirements**
 
 The stencil layer for carrier board footprints is custom-designed. Don’t do modifications to the stencil layer design. The stencil is expanded in the stamp-hole areas. No vias are allowed within these stencil expansion zones. The stencil design is shown below:
 
-![image-20260303085304625](images/image-20260303085318876.png)
+![image-20260303085304625](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085318876.png)
 
-![image-20260303085318876](images/image-20260303085331240.png)
+![image-20260303085318876](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085331240.png)
 
 No components shall be placed within 5 mm of the board edge (outside the outer yellow frame in the diagram below). This area is reserved for the stencil used during the separate soldering process of the SoM. This keep-out area may be modified based on practical use.
 
-![image-20260303085331240](images/image-20260303085348322.png)
+![image-20260303085331240](E:\Forlinx\ForlinxEmbedded.github.io\platform\p2p\ok3568j-up4\images\OK3568J-UP4_User_Hardware_Design_Guide/image-20260303085348322.png)
