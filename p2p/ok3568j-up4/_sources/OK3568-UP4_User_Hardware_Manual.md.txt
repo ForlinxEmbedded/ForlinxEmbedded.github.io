@@ -493,7 +493,7 @@ It supports 4 lane LVDS connection, and I2C port touch screen.
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/33.png)
 
-### 3.5.9 EDP Display
+#### 3.5.9 EDP Display
 
 Pins P2 and P3 on the development board can be connected to an eDP display; P2 is with a 2.0mm pitch.
 
