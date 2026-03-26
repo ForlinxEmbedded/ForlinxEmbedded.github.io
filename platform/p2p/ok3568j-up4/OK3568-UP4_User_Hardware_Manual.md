@@ -105,7 +105,7 @@ Plate making process: 1.6mm thickness, 12-layer immersion gold PCB.
 | Humidity| Working Environment| 10| —| 90| ％RH| No Condensation|
 | | Storage Environment| 5| —| 95| ％RH||
 
-#### 2.3.5 ESD Features
+#### 2.3.4 ESD Features
 
 | Parameter| Specification| | Unit| Application Scope|
 |:----------:|:----------:|----------|:----------:|:----------:|
@@ -295,7 +295,7 @@ For various functional expansion requirements, please refer to the user document
 | RES46| G21\_ADC\_VIN4|
 | RES47| G20\_ADC\_VIN6|
 
-**It is the UP4 standard definition. If compatible design is required, it is recommended to design according to it.**
+It is the UP4 standard definition. If compatible design is required, it is recommended to design according to it.
 
 ### 2.7 SoM Hardware Design Description
 
@@ -303,9 +303,9 @@ For various functional expansion requirements, please refer to the user document
 
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
 |:----------:|:----------:|:----------:|----------|:----------:|
-| Power supply| VCC5V0\_SYS| Power Input| Power Supply for SoM:Voltage: 5V Current: The carrier board must provide a minimum continuous current of 2.5A.|
-| | VCC3V3\_SD| Power output| Only used for power supply of carrier board SD card, with maximum output current capacity of 500mA|
-| | GND| Ground| Power ground and signal ground on the SoM. All GND pins must be connected.|
+| Power supply| VCC5V0\_SYS| Power Input| Power Supply for SoM: Voltage: 5V Current: The carrier board must provide a minimum continuous current of 2.5A. ||
+| | VCC3V3\_SD| Power Output| Only used for power supply of carrier board SD card, with maximum output current capacity of 500mA||
+| | GND| Ground| Power ground and signal ground on the SoM. All GND pins must be connected.||
 
 **System Control Pin**
 
@@ -322,7 +322,7 @@ For various functional expansion requirements, please refer to the user document
 
 The FET3568x-UP4 SoM integrates power, reset monitoring, and storage circuits, requiring only minimal external circuitry. A complete minimum system can be powered and run with a single 5V supply.
 
-Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is recommended to connect some external devices—such as a debugging serial port and a port for flashing images—in addition to the minimal system. Otherwise, you can not check whether the system has booted. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
+Refer to “Appendix IV. Minimum System Diagram”. However, in most cases, it is recommended to connect some external devices—such as a debugging serial port and a port for flashing images—in addition to the minimal system. Otherwise, you can not check whether the system has booted. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
 For the design of the SoM's peripheral circuits, please refer to Section 3.5, "OK3568x-UP4 Carrier Board Description".
 
@@ -419,16 +419,15 @@ A-B-C+DEFGHIJKL:MN-O
 
 **Note: **
 
-- **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  
-  default;**
-
+- **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by default;**
+  
 - **The schematic diagrams in this manual are only for interface descriptions. Please refer to the source file materials for hardware design.**
 
 #### 3.5.1 Carrier Board Power
 
 As shown, the power supply for the development board is 12V DC （from P28). VDD\_5V supplies power to the SoM. Once the SoM is powered up, it outputs PMIC\_EXT\_EN to enable U32 and U33 on the carrier board, and VCC\_3V3, and VCC\_3V3 supply power to the devices on the carrier board. The STANDBY pin controls VCC\_3V3\_S to enable or disable the power supply for the development board, achieving reduced power consumption.
 
-PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
+PMIC\_EXT\_EN ensures to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/10.png)
 
@@ -539,7 +538,7 @@ P7 and P8 supports 2lane MIPI-CSI connections.
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/42.png)
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/43.png)
-#### 3.5.15 WIFI\&BT
+#### 3.5.15 WiFi \& BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. WiFi is connected via an SDIO interface, supporting dual-band 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standard. Bluetooth is connected via a UART and PCM interface and complies with the BT 5.2 specification.
 
@@ -635,7 +634,7 @@ An I/O expansion chip connects to the carrier board via I2C, offering 24 additio
 
 The development board features a standard 3.5mm headphone jack (CTIA international standard), located at pin P40, which supports stereo headphone playback and mono microphone recording;
 
-The P39 is a speaker port that supports stereo speakers, Class D, 1.3W power;
+The P39 is a speaker port that supports stereo speakers, Class D, 1.3W power.
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/63.png)
 
@@ -653,13 +652,14 @@ To ensure a high weld yield, please refer to the diagram below for the design of
 
 I. Hole Opening Scheme
 
-1.The steel mesh type is ladder steel mesh, with thickness of 0.1mm and 0.15 mm, and the ladder is on the printing surface;                                                      2. As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.
+1. The steel mesh type is ladder steel mesh, with thickness of 0.1mm and 0.15 mm, and the ladder is on the printing surface;                                              
+2.  As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/19.png)
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/20.png)
 
-3.The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.
+3. The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.
 
 ![Image](./images/OK3568-UP4_User_Hardware_Manual/21.png)
 
@@ -669,7 +669,7 @@ I. Hole Opening Scheme
 
 **1\. Since the LGA pads on the UP4 series SoMs use a pre-tinned process, there is a height difference of approximately 0.1 mm between the LCC pads and the LGA pads. This may result in uneven solder wick height between the LCC pads. Please do inspection for the LCC soldering;**
 
-**2\. Since stepped stencils can affect the solder volume on surrounding components, please reduce the aperture size of the stencil openings for these components; For the LGA pad openings in the advancing direction of the scraper, please conduct hole-size reduction in accordance with the No.3.**
+**2\. Since stepped stencils can affect the solder volume on surrounding components, please reduce the aperture size of the stencil openings for these components; for the LGA pad openings in the advancing direction of the scraper, please conduct hole-size reduction in accordance with the No.3.**
 
 ## 5\. OK3568-UP4 Development Board Linux Consumption Table
 
@@ -688,7 +688,9 @@ I. Hole Opening Scheme
 | 10| 7-inch MIPI screen video playback power consumption| 1.94W| 5.568W|
 | 11| CPU pressure + memory pressure + eMMC read/write pressure test power| 4.18W| 5.376W|
 
-**Note: Test conditions: The SoM configuration is 2GB memory + +16GB eMMC, the 4G module is Quectel EC20, and the screen is an Forlinx optional product. SoM power supply: 5V; and the carrier board is 12V;**
+**Note: **
+
+**Test conditions: The SoM configuration is 2GB memory  + 16GB eMMC, the 4G module is Quectel EC20, and the screen is an Forlinx optional product. SoM power supply: 5V; and the carrier board is 12V;**
 
 Power consumption is for reference only.  
 
