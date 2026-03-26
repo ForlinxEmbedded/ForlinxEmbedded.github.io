@@ -21,6 +21,7 @@ HARDWARE
    :maxdepth: 2
 
    OK3568-UP4_User_Hardware_Manual
+   OK3568J-UP4_User_Hardware_Design_Guide
 
    
 
