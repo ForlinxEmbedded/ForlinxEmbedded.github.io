@@ -1,4 +1,4 @@
-# OK3568-UP4\_User’s Hardware Manual\_V1.0
+# OK3568J-UP4\_User’s Hardware Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
