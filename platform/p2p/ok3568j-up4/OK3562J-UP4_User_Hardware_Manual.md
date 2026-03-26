@@ -64,17 +64,17 @@ The processor is equipped with a high-performance memory interface (supporting L
 
 ### 2.1 FET3562J-UP4 Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213051584-1b5bc691-2900-4deb-9506-0bf17877d345.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213051584_1b5bc691_2900_4deb_9506_0bf17877d345.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213051790-41793c86-3b1f-4e9f-b233-c3882cb2fe55.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213051790_41793c86_3b1f_4e9f_b233_c3882cb2fe55.png)
 
 **Back**
 
 ### 2.2 FET3562J-UP4 SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213051954-8774440f-869e-4c32-b4d3-c98ed7ff153c.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213051954_8774440f_869e_4c32_b4d3_c98ed7ff153c.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. 
 
@@ -176,11 +176,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 FET3562J-UP4 SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213052073-3acb2c34-767d-449c-b098-cd99e56d9602.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213052073_3acb2c34_767d_449c_b098_cd99e56d9602.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213052222-a40d1c2c-ab68-428e-bb49-5bb37f69289e.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213052222_a40d1c2c_ab68_428e_bb49_5bb37f69289e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1773213052344-8a0795b1-a03c-4d02-8c7e-1eb4e6875f63.bmp)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213052344_8a0795b1_a03c_4d02_8c7e_1eb4e6875f63.png)
 
 #### 2.5.2 FET3562J-UP4 SoM Pin Function Description
 
@@ -334,13 +334,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213054594-2161b33e-8d96-48b9-86de-69e929720368.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213054594_2161b33e_8d96_48b9_86de_69e929720368.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213054869-5c84eb00-5b80-40e6-982a-62f3f9144ac4.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213054869_5c84eb00_5b80_40e6_982a_62f3f9144ac4.png)
 
 ### 3.2 OK3562J-UP4 Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055013-7dd0e76a-7d0a-45ef-881d-9ecf6212c0b8.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055013_7dd0e76a_7d0a_45ef_881d_9ecf6212c0b8.png)
 
 PCB: 130mm×190mm
 
@@ -352,7 +352,7 @@ Power Voltage: DC 12V
 
 The OK3562J-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055089-bac201d7-c499-4a9f-ab40-93fcc6665d18.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055089_bac201d7_c499_4a9f_ab40_93fcc6665d18.png)
 
 ### 3.3 Naming Rules
 
@@ -429,7 +429,7 @@ As shown, the power supply for the development board is 12V DC （from p28). VDD
 
 EXTP\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055154-644bff9a-97f7-4c1c-bde3-54e5b9e34be9.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055154_644bff9a_97f7_4c1c_bde3_54e5b9e34be9.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -443,7 +443,7 @@ K6 on the carrier board is for waking up. After the board enters sleep mode pres
 
 The FET3562J-UP4 SoM does not have the WAKEUP feature.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055236-a6f99942-e48a-441c-b3a8-9728d18c4c98.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055236_a6f99942_e48a_441c_b3a8_9728d18c4c98.png)
 
 #### 3.5.3  LRADC Button
 
@@ -503,27 +503,27 @@ P7 and P8 supports 2lane MIPI-CSI connections.
 
 The P6 port supports 4lane MIPI-CSI connection and multiplexes a signal line with the P9 port. The P9 port is used to connect up to four analogue camera modules. It is not possible to use the P6 and P9 ports for both functions simultaneously.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055316-a26c7830-4e72-47bd-91ff-ca7e4c46f006.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055316_a26c7830_4e72_47bd_91ff_ca7e4c46f006.png)
 
 !\[屏幕截图 2025-02-12 162755](images\\屏幕截图 2025-02-12 162755.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055389-71a35fde-c1c3-4bce-a263-2152415b83b8.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055389_71a35fde_c1c3_4bce_a263_2152415b83b8.png)
 
 !\[](images\\屏幕截图 2025-02-12 163045.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055459-f53714f0-a7f5-4448-bbd3-0f95d0291db2.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055459_f53714f0_a7f5_4448_bbd3_0f95d0291db2.png)
 
 #### 3.5.10 WiFi\&BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. The Wi-Fi module utilizes an SDIO interface, supports dual-band operation in 2.4GHz and 5GHz, and complies with IEEE 802.11a/b/g/n/ac standards. The Bluetooth module uses UART \& PCM interfaces and complies with Bluetooth 5.2 specifications. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055547-9ae7927e-47c0-4412-9039-e600efe2d530.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055547_9ae7927e_47c0_4412_9039_e600efe2d530.png)
 
 #### 3.5.11 USB2.0
 
 There is an onboard USB 2.0 HUB on the development board, which is expanded to two downstream USB HOST ports, connecting a standard USB 2.0-A interface and a mini-PCIE interface. The mini-PCIE interface can connect the 4G module.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055656-db29e6a0-3b5f-401a-821b-269820359e11.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055656_db29e6a0_3b5f_401a_821b_269820359e11.png)
 
 #### 3.5.12 4G
 
@@ -541,21 +541,21 @@ Before using the 4G function, please power off the board, install the 4G module,
 
 The development board features an onboard USB 3.0 interface, which is the native USB 3.0 from the SoM. A standard USB 3.0 Type-A interface is connected on the development board. Port A supports OTG, controlled by the DIP switch S3: OFF for Device mode, ON for Host mode.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055755-ed281cb8-2690-47be-8cd4-d0cbb2559e81.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055755_ed281cb8_2690_47be_8cd4_d0cbb2559e81.png)
 
 #### 3.5.14 Ethernet
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521SH chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055841-ea941aba-58e5-4852-9869-a225af6a5692.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055841_ea941aba_58e5_4852_9869_a225af6a5692.png)
 
 !\[屏幕截图 2025-02-14 144725](images\\屏幕截图 2025-02-14 144725.png)
 
 The development board supports one native 100M Ethernet port, implemented using the SoM RMII interface with the YT8512H chip. It is connected to external network devices via a standard RJ45 connector equipped with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055910-1ca4d23f-c6c5-4994-bbff-29b02baecc57.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055910_1ca4d23f_c6c5_4994_bbff_29b02baecc57.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055983-60dbd223-2b6b-4903-a028-24631caf4453.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213055983_60dbd223_2b6b_4903_a028_24631caf4453.png)
 
 #### 3.5.15 CAN
 
@@ -563,7 +563,7 @@ The development board supports one native 100M Ethernet port, implemented using 
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056068-148c76d1-d97c-4e46-90e4-c7130fd3b5bf.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213056068_148c76d1_d97c_4e46_90e4_c7130fd3b5bf.png)
 
 #### 3.5.16 485
 
@@ -571,7 +571,7 @@ The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056142-1270bfb6-4ad9-4ed2-941b-db6b0f752949.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213056142_1270bfb6_4ad9_4ed2_941b_db6b0f752949.png)
 
 #### 3.5.17 GPADC
 
@@ -589,7 +589,7 @@ The GPADC is connected via 2.54 mm pitch pins. It can be connected directly usin
 
 A five-wire SPI interface is led out from the SoM (5V power supply)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056216-fa0bbf1a-8ce2-40c9-8db9-4dd35a20d54e.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213056216_fa0bbf1a_8ce2_40c9_8db9_4dd35a20d54e.png)
 
 #### 3.5.20 IO Expansion
 
@@ -609,34 +609,34 @@ The P39 is a speaker port that supports stereo speakers, Class D, with 1.3W of p
 
 A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056294-3350d278-af60-467e-b32e-1196d56ef0d0.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213056294_3350d278_af60_467e_b32e_1196d56ef0d0.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056372-10ef5c0d-d617-4073-bffe-0d1218a60d04.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213056372_10ef5c0d_d617_4073_bffe_0d1218a60d04.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213058098-2617ed2e-b4c0-429c-81ed-e31fc6badbda.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213058098_2617ed2e_b4c0_429c_81ed_e31fc6badbda.png)
 
 To ensure a high weld yield, please refer to the diagram below for the design of the packaging stencil:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213058197-f9c5df27-5b66-4b10-8c15-141cdd4113f2.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213058197_f9c5df27_5b66_4b10_8c15_141cdd4113f2.png)
 
 I. Hole Opening Scheme
 
 1. The steel mesh type is ladder steel mesh, with thickness of 0.1mm and 0.15 mm, and the ladder is on the printing surface;  
 2. As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213058349-49512e6f-3d57-4cae-95fd-ef82f237b498.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213058349_49512e6f_3d57_4cae_95fd_ef82f237b498.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213058445-39d77240-5ffb-45a6-ac85-e2f05b36e600.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213058445_39d77240_5ffb_45a6_ac85_e2f05b36e600.png)
 
 3. The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213058529-e39adcd0-3946-4031-b356-68f04a154589.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213058529_e39adcd0_3946_4031_b356_68f04a154589.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213058749-3c7b1d23-9726-4c4c-a672-18ff4fdef0da.png)
+![Image](./images/OK3562J-UP4_User_Hardware_Manual/1773213058749_3c7b1d23_9726_4c4c_a672_18ff4fdef0da.png)
 
 **Note:**
 
