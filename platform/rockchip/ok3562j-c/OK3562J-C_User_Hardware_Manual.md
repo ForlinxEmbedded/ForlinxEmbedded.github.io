@@ -1,4 +1,4 @@
-# User's Hardware Manual\_V1.2
+# User's Hardware Manual\_V1.3
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -17,7 +17,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 | 06/06/2024 |        V1.0        |      V1.0       |      V1.0 and Above       | Initial Version                                              |
 | 19/09/2024 |        V1.1        |      V1.0       |      V1.0 and Above       | Adding note: only RK3562 has CAN interface, and only RK3562. |
 | 21/11/2025 |        V1.2        |      V1.0       |      V1.0 and Above       | Adding 2.6.2 SoM Anti Vibration Design Guidelines.           |
-
+| 19/03/2026 |        V1.3        |      V1.0       |      V1.0 and Above       | Updating Section Carrier Board Power: Optimize the timing to ensure stable operation of relay control. |
 ## Overview
 
 This manual is designed to help users quickly familiarize themselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “OK3562J-C Pin Multiplexing Comparison Table” and “OK3562J-C Design Guide.”
@@ -310,15 +310,17 @@ ABC-D+IK:M
 
 #### 3.5.1 Carrier Board Power
 
-As shown in the figure, the 12 V DC power supply supplies power to the development board through the power socket P9. VDD\_5V supplies power to the SoM. After the SoM is powered on, it outputs PMIC\_EXT\_EN to control the conduction of U3 on the carrier board. Then, VCC\_5V supplies power to the carrier board devices.
+As shown in the figure, a 12V DC power supply provides power to the development board through the P9 power connector. The VDD_5V line supplies power to the SoM. After the SoM is powered on, it outputs VCC_3V3_SD, which enables U3 on the carrier board. Once U3 is enabled, VCC_5V supplies power to the carrier board devices.
 
-PMIC\_EXT\_EN ensures that the SoM is powered on first and the carrier board is powered on later, preventing the latch - up effect from damaging the CPU.
+The **VCC_3V3_SD** signal ensures that the SoM powers on before the carrier board, preventing latch-up effects that could potentially damage the CPU.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446595384_476c8c10_b516_4891_8a9b_e12cbe272a85.png)
+![Image](./images/OK3562J-C_User_Hardware_Manual/1.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446601196_af9c2602_189c_4e06_85fb_2046c2924f0a.png)
+![Image](./images/OK3562J-C_User_Hardware_Manual/2.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446605122_c03bc98a_fb9e_443b_91ab_fb2bf8bb57ed.png)
+![Image](./images/OK3562J-C_User_Hardware_Manual/3.png)
+
+![Image](./images/OK3562J-C_User_Hardware_Manual/4.png)
 
 #### 3.5.2 Switch & Reset Key
 
