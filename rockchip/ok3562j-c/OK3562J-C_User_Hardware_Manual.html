@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User’s Hardware Manual_V1.2 &mdash; Forlinx Embedded RK3562 Documentation  documentation</title>
+  <title>User’s Hardware Manual_V1.3 &mdash; Forlinx Embedded RK3562 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -64,7 +64,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V1.2</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V1.3</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
@@ -156,7 +156,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">User’s Hardware Manual_V1.2</li>
+      <li class="breadcrumb-item active">User’s Hardware Manual_V1.3</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -165,8 +165,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="user-s-hardware-manual-v1-2">
-<h1>User’s Hardware Manual_V1.2<a class="headerlink" href="#user-s-hardware-manual-v1-2" title="Link to this heading"></a></h1>
+  <section id="user-s-hardware-manual-v1-3">
+<h1>User’s Hardware Manual_V1.3<a class="headerlink" href="#user-s-hardware-manual-v1-3" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -203,6 +203,12 @@
 <td class="text-center"><p>V1.0</p></td>
 <td class="text-center"><p>V1.0 and Above</p></td>
 <td><p>Adding 2.6.2 SoM Anti Vibration Design Guidelines.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>19/03/2026</p></td>
+<td class="text-center"><p>V1.3</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.0 and Above</p></td>
+<td><p>Updating Section Carrier Board Power: Optimize the timing to ensure stable operation of relay control.</p></td>
 </tr>
 </tbody>
 </table>
@@ -864,11 +870,12 @@
 </ul>
 <section id="carrier-board-power">
 <h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
-<p>As shown in the figure, the 12 V DC power supply supplies power to the development board through the power socket P9. VDD_5V supplies power to the SoM. After the SoM is powered on, it outputs PMIC_EXT_EN to control the conduction of U3 on the carrier board. Then, VCC_5V supplies power to the carrier board devices.</p>
-<p>PMIC_EXT_EN ensures that the SoM is powered on first and the carrier board is powered on later, preventing the latch - up effect from damaging the CPU.</p>
-<p><img alt="Image" src="_images/1721446595384_476c8c10_b516_4891_8a9b_e12cbe272a85.png" /></p>
-<p><img alt="Image" src="_images/1721446601196_af9c2602_189c_4e06_85fb_2046c2924f0a.png" /></p>
-<p><img alt="Image" src="_images/1721446605122_c03bc98a_fb9e_443b_91ab_fb2bf8bb57ed.png" /></p>
+<p>As shown in the figure, a 12V DC power supply provides power to the development board through the P9 power connector. The VDD_5V line supplies power to the SoM. After the SoM is powered on, it outputs VCC_3V3_SD, which enables U3 on the carrier board. Once U3 is enabled, VCC_5V supplies power to the carrier board devices.</p>
+<p>The <strong>VCC_3V3_SD</strong> signal ensures that the SoM powers on before the carrier board, preventing latch-up effects that could potentially damage the CPU.</p>
+<p><img alt="Image" src="_images/1.png" /></p>
+<p><img alt="Image" src="_images/2.png" /></p>
+<p><img alt="Image" src="_images/3.png" /></p>
+<p><img alt="Image" src="_images/4.png" /></p>
 </section>
 <section id="switch-reset-key">
 <h4>3.5.2 Switch &amp; Reset Key<a class="headerlink" href="#switch-reset-key" title="Link to this heading"></a></h4>
