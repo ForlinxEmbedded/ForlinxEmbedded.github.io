@@ -760,13 +760,13 @@ A B-C+D E F :G-H
 
 #### 3.5.1 Carrier Board Power
 
-![Image](5.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/5.png)
 
-![Image](6.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/6.png)
 
-![Image](7.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/7.png)
 
-![Image](8.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/8.png)
 
 As shown in the figure, a 12V adapter provides power to the development board through the P34 power connector. VCC12V is stepped down to VDD5V via U24, supplying power to the SoM. After the SoM is powered on, it outputs the EMMC_BOOT signal, which controls the power-on of the carrier board VCC5V.
 
