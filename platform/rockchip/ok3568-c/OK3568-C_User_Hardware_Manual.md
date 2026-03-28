@@ -1,4 +1,4 @@
-# User’s Hardware Manual\_V3.1
+# User’s Hardware Manual\_V3.3
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -31,6 +31,9 @@ This manual is mainly applicable to the Forlinx OK3568-C platform. Other platfor
 | 19/03/2024 |        V2.0        | 1\. Adding the image of the FET3568-C2 SoM;<br />2\. Adding an introduction to the ADC interface in the SoM interface resources;<br />3\. Adding an introduction to the structural height of the SoM in the SoM dimension diagram;<br />4\. Improving the description of the SoM and carrier board connectors in the dimension diagram of the FET3568-C SoM;<br />5\. Correcting the description of the number of SPI interfaces in the carrier board interface resources. 6\. Correcting the description of the USB3.0 signal lines in the pin function specifications of the FET3568-C SoM. |
 | 10/05/2024 |        V3.0        | Adding FET3568-C2, OK3568-C2C configuration.                 |
 | 22/09/2025 |        V3.1        | Adding precautions for using the WIFI function (It is necessary to install an antenna before using the WIFI function). |
+| 22/09/2025 |        V3.1        | Adding precautions for using the WIFI function (It is necessary to install an antenna before using the WIFI function). |
+| 21/11/2025 |        V3.2       | Adding Section 2.6.2 SoM Vibration-Resistant Design Guidelines|
+| 19/03/2026 |        V3.3       | Updating Section 3.5.1 Carrier Board Power: Optimize the timing to ensure stable operation of relay control.|
 
 ## Overview
 
@@ -632,11 +635,33 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 ### 2.6 SoM Hardware Design Description
 
-FET3568-C/C2 SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:
+#### 2.6.1 SoM Circuit Design Guidelines
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721358510479_6de22372_53c5_47fc_877e_452391ec39e8.png)
+The **FET3568-C/C2** SoM integrates the power supply, reset monitoring circuit, and memory circuitry into a compact module. The required external circuitry is minimal. To build a basic system, only a 5V power supply, a reset button, and the boot configuration are needed for operation, as shown in the figure below:
 
-Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting flashing information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
+![](5829ba0973ce6a84216018797d3261c.png)
+
+The schematic of the minimal system can be found in Appendix 4. In general usage, it is recommended to connect additional external devices beyond the minimal system, such as:
+
+- **Debug serial port**: for monitoring printed output
+- **Reserved OTG interface**: for system programming
+
+After implementing these basic functions, additional user-required features can be added based on the default SoM interface definitions provided by **Forlinx**.
+
+### 2.6.2 SoM Vibration-Resistant Design Guidelines
+
+This product uses **M2 anti-fall screws** to secure the four pre-drilled mounting holes at the corners of the SoM. The tightening torque should be controlled at **0.15 N·m**. The assembly illustration is shown below.
+
+![](image-20251121110742356.png)
+
+The design has been validated through vibration testing in accordance with **GB/T 2423.10-2008 / IEC 60068-2-6:1995**, achieving the following specifications:
+
+- **Frequency range:** 10 Hz – 150 Hz
+- **Test axes:** X, Y, Z
+- **Displacement amplitude:** 0.35 mm
+- **Acceleration amplitude:** 5 g
+
+The performance data listed in this manual are obtained under standard laboratory conditions and are applicable to general industrial equipment. Actual performance may vary depending on installation methods, combined stresses, and other operational factors.
 
 ## 3. OK3568-C\&C2C Development Platform Description
 
@@ -735,21 +760,22 @@ A B-C+D E F :G-H
 
 #### 3.5.1 Carrier Board Power
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360040584_2294d578_9da4_423a_ba16_6d6d3301f71c.png)
+![Image](5.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360057361_83dc4542_b2db_4663_86c6_ee16de7b8238.png)
+![Image](6.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360079834_f59ac409_4102_4a4a_86df_ea864d03a85e.png)
+![Image](7.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360106785_2b8a708a_3c3b_473e_bb4b_9dd48fde8b90.png)
+![Image](8.png)
 
-As shown in the figure above, the 12V adapter supplies power to the development board through the power socket P34. The VCC12V is stepped down to VDD5V via U24 to power the SoM. After the SoM is powered on, it outputs EXT\_EN to control the power - on of VCC5V on the carrier board.
+As shown in the figure, a 12V adapter provides power to the development board through the P34 power connector. VCC12V is stepped down to VDD5V via U24, supplying power to the SoM. After the SoM is powered on, it outputs the EMMC_BOOT signal, which controls the power-on of the carrier board VCC5V.
 
-EXT\_EN ensures that the SoM is powered on first and the carrier board is powered on later.
+The **EMMC_BOOT** signal ensures that the SoM powers on before the carrier board.
 
-If removing the S1 DIP switch due to structural requirements, you can solder the resistors R202 and R203 to enable the system to power on automatically in hardware. 
+If the S1 DIP switch is removed due to structural requirements, you can solder resistors **R202** and **R203** to enable automatic hardware power-on.
 
-**Note: When conducting design, please refer to the power-on sequencing in the development board design. That is, the EXT\_EN signal output by the SoM acts as the enable signal for the VCC5V power supply on the carrier board, ensuring that the SoM powers on first, followed by the carrier board.**
+**Note:**
+**When designing hardware, please refer to the development board power-on sequence. Specifically, the EMMC_BOOT output from the SoM should serve as the enable signal for the carrier board VCC5V power supply, ensuring that the SoM powers on first, followed by the carrier board.**
 
 #### 3.5.2 Keys
 
