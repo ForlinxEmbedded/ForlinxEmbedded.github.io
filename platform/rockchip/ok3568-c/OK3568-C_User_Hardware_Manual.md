@@ -639,7 +639,7 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 The **FET3568-C/C2** SoM integrates the power supply, reset monitoring circuit, and memory circuitry into a compact module. The required external circuitry is minimal. To build a basic system, only a 5V power supply, a reset button, and the boot configuration are needed for operation, as shown in the figure below:
 
-![](5829ba0973ce6a84216018797d3261c.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/5829ba0973ce6a84216018797d3261c.png)
 
 The schematic of the minimal system can be found in Appendix 4. In general usage, it is recommended to connect additional external devices beyond the minimal system, such as:
 
@@ -652,7 +652,7 @@ After implementing these basic functions, additional user-required features can 
 
 This product uses **M2 anti-fall screws** to secure the four pre-drilled mounting holes at the corners of the SoM. The tightening torque should be controlled at **0.15 N·m**. The assembly illustration is shown below.
 
-![](image-20251121110742356.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/image_20251121110742356.png)
 
 The design has been validated through vibration testing in accordance with **GB/T 2423.10-2008 / IEC 60068-2-6:1995**, achieving the following specifications:
 
@@ -760,13 +760,13 @@ A B-C+D E F :G-H
 
 #### 3.5.1 Carrier Board Power
 
-![Image](5.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/5.png)
 
-![Image](6.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/6.png)
 
-![Image](7.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/7.png)
 
-![Image](8.png)
+![Image](./images/OK3568-C_User_Hardware_Manual/8.png)
 
 As shown in the figure, a 12V adapter provides power to the development board through the P34 power connector. VCC12V is stepped down to VDD5V via U24, supplying power to the SoM. After the SoM is powered on, it outputs the EMMC_BOOT signal, which controls the power-on of the carrier board VCC5V.
 
