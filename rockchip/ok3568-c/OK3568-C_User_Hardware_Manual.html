@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User’s Hardware Manual_V3.1 &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
+  <title>User’s Hardware Manual_V3.3 &mdash; Forlinx Embedded RK3568 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -64,7 +64,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V3.1</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User’s Hardware Manual_V3.3</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
@@ -87,7 +87,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#fet3568-c-c2-som-pins-description">2.5.2 FET3568-C/C2 SoM Pins Description</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.6 SoM Hardware Design Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#som-hardware-design-description">2.6 SoM Hardware Design Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#som-circuit-design-guidelines">2.6.1 SoM Circuit Design Guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#som-vibration-resistant-design-guidelines">2.6.2 SoM Vibration-Resistant Design Guidelines</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ok3568-c-c2c-development-platform-description">3. OK3568-C&amp;C2C Development Platform Description</a><ul>
@@ -160,7 +164,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">User’s Hardware Manual_V3.1</li>
+      <li class="breadcrumb-item active">User’s Hardware Manual_V3.3</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -169,8 +173,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="users-hardware-manual-v3-1">
-<h1>User’s Hardware Manual_V3.1<a class="headerlink" href="#users-hardware-manual-v3-1" title="Link to this heading"></a></h1>
+  <section id="users-hardware-manual-v3-3">
+<h1>User’s Hardware Manual_V3.3<a class="headerlink" href="#users-hardware-manual-v3-3" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -243,6 +247,18 @@
 <tr class="row-even"><td class="text-center"><p>22/09/2025</p></td>
 <td class="text-center"><p>V3.1</p></td>
 <td><p>Adding precautions for using the WIFI function (It is necessary to install an antenna before using the WIFI function).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>22/09/2025</p></td>
+<td class="text-center"><p>V3.1</p></td>
+<td><p>Adding precautions for using the WIFI function (It is necessary to install an antenna before using the WIFI function).</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>21/11/2025</p></td>
+<td class="text-center"><p>V3.2</p></td>
+<td><p>Adding Section 2.6.2 SoM Vibration-Resistant Design Guidelines</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>19/03/2026</p></td>
+<td class="text-center"><p>V3.3</p></td>
+<td><p>Updating Section 3.5.1 Carrier Board Power: Optimize the timing to ensure stable operation of relay control.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3384,9 +3400,30 @@
 </section>
 <section id="som-hardware-design-description">
 <h3>2.6 SoM Hardware Design Description<a class="headerlink" href="#som-hardware-design-description" title="Link to this heading"></a></h3>
-<p>FET3568-C/C2 SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, a reset button, and boot configuration are needed to run the system, as shown in the following figure:</p>
-<p><img alt="Image" src="_images/1721358510479_6de22372_53c5_47fc_877e_452391ec39e8.png" /></p>
-<p>Please refer to “Appendix IV. for the minimal system schematic diagram However, in general, it is recommended to connect some external devices except the minimum system, such as debugging serial port for viewing and printing information, and reserve OTG interface for outputting flashing information. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.</p>
+<section id="som-circuit-design-guidelines">
+<h4>2.6.1 SoM Circuit Design Guidelines<a class="headerlink" href="#som-circuit-design-guidelines" title="Link to this heading"></a></h4>
+<p>The <strong>FET3568-C/C2</strong> SoM integrates the power supply, reset monitoring circuit, and memory circuitry into a compact module. The required external circuitry is minimal. To build a basic system, only a 5V power supply, a reset button, and the boot configuration are needed for operation, as shown in the figure below:</p>
+<p><img alt="Image" src="_images/5829ba0973ce6a84216018797d3261c.png" /></p>
+<p>The schematic of the minimal system can be found in Appendix 4. In general usage, it is recommended to connect additional external devices beyond the minimal system, such as:</p>
+<ul class="simple">
+<li><p><strong>Debug serial port</strong>: for monitoring printed output</p></li>
+<li><p><strong>Reserved OTG interface</strong>: for system programming</p></li>
+</ul>
+<p>After implementing these basic functions, additional user-required features can be added based on the default SoM interface definitions provided by <strong>Forlinx</strong>.</p>
+</section>
+</section>
+<section id="som-vibration-resistant-design-guidelines">
+<h3>2.6.2 SoM Vibration-Resistant Design Guidelines<a class="headerlink" href="#som-vibration-resistant-design-guidelines" title="Link to this heading"></a></h3>
+<p>This product uses <strong>M2 anti-fall screws</strong> to secure the four pre-drilled mounting holes at the corners of the SoM. The tightening torque should be controlled at <strong>0.15 N·m</strong>. The assembly illustration is shown below.</p>
+<p><img alt="Image" src="_images/image_20251121110742356.png" /></p>
+<p>The design has been validated through vibration testing in accordance with <strong>GB/T 2423.10-2008 / IEC 60068-2-6:1995</strong>, achieving the following specifications:</p>
+<ul class="simple">
+<li><p><strong>Frequency range:</strong> 10 Hz – 150 Hz</p></li>
+<li><p><strong>Test axes:</strong> X, Y, Z</p></li>
+<li><p><strong>Displacement amplitude:</strong> 0.35 mm</p></li>
+<li><p><strong>Acceleration amplitude:</strong> 5 g</p></li>
+</ul>
+<p>The performance data listed in this manual are obtained under standard laboratory conditions and are applicable to general industrial equipment. Actual performance may vary depending on installation methods, combined stresses, and other operational factors.</p>
 </section>
 </section>
 <section id="ok3568-c-c2c-development-platform-description">
@@ -3614,14 +3651,15 @@
 </ul>
 <section id="carrier-board-power">
 <h4>3.5.1 Carrier Board Power<a class="headerlink" href="#carrier-board-power" title="Link to this heading"></a></h4>
-<p><img alt="Image" src="_images/1721360040584_2294d578_9da4_423a_ba16_6d6d3301f71c.png" /></p>
-<p><img alt="Image" src="_images/1721360057361_83dc4542_b2db_4663_86c6_ee16de7b8238.png" /></p>
-<p><img alt="Image" src="_images/1721360079834_f59ac409_4102_4a4a_86df_ea864d03a85e.png" /></p>
-<p><img alt="Image" src="_images/1721360106785_2b8a708a_3c3b_473e_bb4b_9dd48fde8b90.png" /></p>
-<p>As shown in the figure above, the 12V adapter supplies power to the development board through the power socket P34. The VCC12V is stepped down to VDD5V via U24 to power the SoM. After the SoM is powered on, it outputs EXT_EN to control the power - on of VCC5V on the carrier board.</p>
-<p>EXT_EN ensures that the SoM is powered on first and the carrier board is powered on later.</p>
-<p>If removing the S1 DIP switch due to structural requirements, you can solder the resistors R202 and R203 to enable the system to power on automatically in hardware.</p>
-<p><strong>Note: When conducting design, please refer to the power-on sequencing in the development board design. That is, the EXT_EN signal output by the SoM acts as the enable signal for the VCC5V power supply on the carrier board, ensuring that the SoM powers on first, followed by the carrier board.</strong></p>
+<p><img alt="Image" src="_images/5.png" /></p>
+<p><img alt="Image" src="_images/6.png" /></p>
+<p><img alt="Image" src="_images/7.png" /></p>
+<p><img alt="Image" src="_images/8.png" /></p>
+<p>As shown in the figure, a 12V adapter provides power to the development board through the P34 power connector. VCC12V is stepped down to VDD5V via U24, supplying power to the SoM. After the SoM is powered on, it outputs the EMMC_BOOT signal, which controls the power-on of the carrier board VCC5V.</p>
+<p>The <strong>EMMC_BOOT</strong> signal ensures that the SoM powers on before the carrier board.</p>
+<p>If the S1 DIP switch is removed due to structural requirements, you can solder resistors <strong>R202</strong> and <strong>R203</strong> to enable automatic hardware power-on.</p>
+<p><strong>Note:</strong>
+<strong>When designing hardware, please refer to the development board power-on sequence. Specifically, the EMMC_BOOT output from the SoM should serve as the enable signal for the carrier board VCC5V power supply, ensuring that the SoM powers on first, followed by the carrier board.</strong></p>
 </section>
 <section id="keys">
 <h4>3.5.2 Keys<a class="headerlink" href="#keys" title="Link to this heading"></a></h4>
