@@ -17,7 +17,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 | 06/06/2024 |        V1.0        |      V1.0       |      V1.0 and Above       | Initial Version                                              |
 | 19/09/2024 |        V1.1        |      V1.0       |      V1.0 and Above       | Adding note: only RK3562 has CAN interface, and only RK3562. |
 | 21/11/2025 |        V1.2        |      V1.0       |      V1.0 and Above       | Adding 2.6.2 SoM Anti Vibration Design Guidelines.           |
-| 19/03/2026 |        V1.3        |      V1.0       |      V1.0 and Above       | Updating Section Carrier Board Power: Optimize the timing to ensure stable operation of relay control. |
+| 19/03/2026 |        V1.3        |      V1.0       |      V1.0 and Above       | Updating 3.5.1 Section Carrier Board Power: Optimize the timing to ensure stable operation of relay control. |
 ## Overview
 
 This manual is designed to help users quickly familiarize themselves with the product, understand interface functions and configuration, and primarily discusses the interface functions of the development board, interface introductions, product power consumption, and troubleshooting issues that may arise during use. Some commands were commented to make it easier for you to understand (adequate and practical for the purpose). For information on pin function multiplexing, hardware troubleshooting methods, etc., please refer to Forlinx’s “OK3562J-C Pin Multiplexing Comparison Table” and “OK3562J-C Design Guide.”
