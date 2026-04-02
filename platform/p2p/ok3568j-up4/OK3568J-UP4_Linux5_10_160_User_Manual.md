@@ -98,7 +98,7 @@ Number  Start (sector)    End (sector)  Size Name
 + 12V2A or 12V/3A DC power cable
 + Debug port cable
 
-![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440-1775114199395.jpg)
+![](4jjgqgh3fudp9e4ptt622my7_1080X1440.jpg)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -114,11 +114,11 @@ On a 64-bit operating system, open the x64 folder, right-click on xr21v141x.inf,
 
 #### 2.3.1 Serial Connection Settings
 
-Note:
+**Note:**
 
-+ **The serial terminal automatically logs in as the root user without a password.**
-+ **Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow control.**
-+ **Hardware Requirements: Type-C for connecting PC and development board.**
++ **The serial terminal automatically logs in as the root user without a password;**
++ **Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow control;**
++ **Hardware Requirements: Type-C for connecting PC and development board;**
 + **Software Requirements:  
 A serial terminal application must be installed on the PC Windows. There are various terminal programs available, and you may choose any one you are familiar with.**
 
