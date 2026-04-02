@@ -1335,8 +1335,8 @@ The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card
 
 **Note: Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing.**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161711327.png)        
-=======
+  ![Image](image_20250117161711327.png)
+
 ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
 
 
