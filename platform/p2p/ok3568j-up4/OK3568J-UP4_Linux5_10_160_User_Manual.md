@@ -974,7 +974,7 @@ E:5B:17:C7:78 UUIDs: 0000111f-0000-1000-8000-00805f9b34fbb34fb
 [CHG] Device C4:FE:5B:17:C7:78 UUI-8000-00805f9b34fb
 [CHG] Device C4:FE:5B:17:C7:78-1000-8000-00805f9b34fb
 [CHG] Device C4:FE:5B:17:C7:700-1000-8000-00805f9b34fb
-[OPPO Reno3 元气版 5G]#vice C4:FE:5B:17:C7:78 UUIDs: 0000aa15-0000-1000-8000-008[CHG] Device C4:FE:5B:17:C7:95c-9f4f-bb80a90cdf00
+[OPPO Reno3 5G]#vice C4:FE:5B:17:C7:78 UUIDs: 0000aa15-0000-1000-8000-008[CHG] Device C4:FE:5B:17:C7:95c-9f4f-bb80a90cdf00
 ice C4:FE:5B:17:C7:78 ServicesResolved: yes
 [CHG] Device C4:FE:5B:17:C7:78 Paired: yes
 [CHG] Controller 36:DC:25:54:7C:CB Discoverable: no
@@ -1339,9 +1339,8 @@ The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card
 ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161711327.png)
 =======
 ![image-20250117161711327](04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117161711327.png)           ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
->>>>>>> 1642aacaf768f4409bbcefd4a8690db216178238
 
-   ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
+
 
 ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161813469.png)
 
