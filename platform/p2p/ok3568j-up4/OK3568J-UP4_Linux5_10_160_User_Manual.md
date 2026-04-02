@@ -14,11 +14,11 @@ The RK3568 is a low-power, high-performance processor based on the ARM64 archite
 
 Connection method: Stamp hole. The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278381485-bb9a6037-390d-4576-aecf-008cc2ef4692.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278381902-b0dd9d04-67b0-48a5-b8c8-745f4c6f103a.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
 
 **Back**
 
@@ -142,7 +142,7 @@ After setting up the PC terminal software, connect the serial cable between the 
 
 The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278321964-f1970b22-1566-4579-aa6e-d305c114c7c3.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png)
 
 **Note:** 
 
@@ -150,11 +150,11 @@ The following startup message indicates a successful start, allowing a new comma
 
 First Boot, Recovery Mode:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278322192-c1627636-d731-4ba9-9f9c-95a77b1fa479.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322192_c1627636_d731_4ba9_9f9c_95a77b1fa479.png)
 
 Normal Boot:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278322394-e0b77e8e-c261-48a1-9048-2aa975640069.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322394_e0b77e8e_c261_48a1_9048_2aa975640069.png)
 
 ### 2.4 Network Login
 
@@ -170,13 +170,13 @@ The OK3568 development board supports SSH services, which are enabled automatica
 
 - **The following is tested with the development board IP 172.16.0.76. Please modify it according to the actual situation. Use ifconfig eth0 172.16.0.76 to change it in the debugging serial port terminal.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278322647-f6dd874b-e614-4e71-b207-c4a903394ef8.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322647_f6dd874b_e614_4e71_b207_c4a903394ef8.png)
 
 Open the putty software and make the following settings (the actual IP shall prevail):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278322854-2cc112b3-b2c3-47a4-9ba3-4f72e0948f19.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322854_2cc112b3_b2c3_47a4_9ba3_4f72e0948f19.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278323013-c3b34392-8085-47b9-b6b3-d8b65781387e.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png)
 
 #### 2.4.2 FTP
 
@@ -192,9 +192,9 @@ Install the file Zilla tool on windows and set it up as shown in the following f
 
 - **The following is tested with the development board IP 172.16.0.76. Please modify it according to the actual situation. Use ifconfig eth0 172.16.0.76 to change it in the debugging serial port terminal.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278323255-21c94a98-fc27-402d-b5a2-70a423c00aab.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278323417-a7df861d-c88e-49c5-a0f1-a343c9f3270a.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
 ### 2.5 Screen Switch
 
@@ -322,7 +322,7 @@ The OK3568-S platform provides excellent support for Qt, particularly for multim
 
 After booting, the development board will display the following desktop:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278338971-c5e0ddf0-4f33-4933-a69e-8219bde9d1ec.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png)
 
 #### 3.1.2 Touch Function Overview
 
@@ -332,11 +332,11 @@ When the development board is connected to LVDS and MIPI screens, both display a
 
 Click the desktop icon to open the video player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278339248-4dabc742-6517-472d-9d30-4ec875b1fede.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278339578-041f1a51-7337-42e4-ab0c-8556cd86437f.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339578_041f1a51_7337_42e4_ab0c_8556cd86437f.png)
 
 Application Interface
 
@@ -346,17 +346,17 @@ Click the desktop icon to open the qcamera video player application. This test a
 
 **Note: The camera must be connected before opening the application.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278339889-3486bbbd-ac5e-462d-8437-e215f06cf70e.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278340062-4cee86c6-56eb-4b90-9157-7277150a77ec.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340062_4cee86c6_56eb_4b90_9157_7277150a77ec.jpeg)
 
 Application Interface
 
 Once the application is opened, click UVC Camera to start the camera preview.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1722222638366-57fd39ef-cb1c-44bf-8d6d-3a5f4e4f575f.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1722222638366_57fd39ef_cb1c_44bf_8d6d_3a5f4e4f575f.png)
 
 In Video Mode, click the record button to begin recording. To stop recording, click the recording button. The generated video file will be saved at /userdata/VIDEO0.MOV.
 
@@ -364,15 +364,15 @@ Playback testing can be done using the command: gst-play-1.0 /userdata/VIDEO0.mo
 
 Click the Video Mode button to switch to photo mode, then click Capture to take a photo.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1722222669081-cdf60e5c-d112-40f1-a778-4dddde67669a.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png)
 
 The generated files will be stored in the /userdata path.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278340766-a3e88dca-ea75-4117-adb4-73cd307acadb.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
 
 For sensors like the OV13850 and other raw sensors, each sensor corresponds to five device nodes:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278340953-79cdb1e4-186a-4746-bce0-5d95c9f32861.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
 
 Mainpath: This is an output node from the Rockchip ISP capable of outputting full-resolution images, typically used for taking photos and capturing raw images.
 
@@ -386,11 +386,11 @@ Input-params: This node is used for setting 3A parameters.
 
 OK3568 supports OpenGL ES3.2, click the desktop icon for OpenGL testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278341147-ea2bf015-ee77-4525-9d84-c299a481cac4.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278341344-c3dbc479-6fe5-4eef-ab2d-734ac48de168.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341344_c3dbc479_6fe5_4eef_ab2d_734ac48de168.png)
 
 Application Interface
 
@@ -398,11 +398,11 @@ Application Interface
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278341536-11a01c91-7a10-4660-8a6c-a46bc3f15f5e.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278341744-96af593c-422a-4247-8683-76aa15092b2d.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341744_96af593c_422a_4247_8683_76aa15092b2d.jpeg)
 
 Application Interface
 
@@ -418,11 +418,11 @@ root@OK3568-buildroot:/# gst-play-1.0/userdata/media/test.mp3 --audiosink="alsas
 
 The "Audiorecorder" is an audio recording test application that can be used to verify if the sound card recording functionality is working properly:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278341970-5c6cd369-0684-4285-9340-adfa65217a71.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278342179-1c23083c-05e4-4330-b895-61fb77073d28.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342179_1c23083c_05e4_4330_b895_61fb77073d28.png)
 
 Application Interface
 
@@ -436,7 +436,7 @@ Click **Exit** to exit this test.
 
 The “4G” test program is used to test the OK3568 external 4G module (EC20). Before testing, power off the development board, connect the 4G module, insert the SIM card, power on the development board, and open the test application.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278342369-aae4c7ce-35ea-4a39-9d07-a58b76a04fb3.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
 
 Application Icons
 
@@ -450,11 +450,11 @@ Click the **Connect** button, and the program will automatically begin the diali
 
 “"WIFI" is a tool for configuring WiFi. The OK3568 platform comes with the AW-CM358 module onboard by default. The Wi-Fi module will appear as the mlan node in the system, with this test corresponding to mlan0 (use other nodes if there are multiple devices):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278342777-71fbf17c-b33f-45fa-8b54-58b2385e1a1f.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278342968-2427f6a6-d21b-4a30-a759-482fda9f802f.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342968_2427f6a6_d21b_4a30_a759_482fda9f802f.jpeg)
 
 Application Interface
 
@@ -466,19 +466,19 @@ Open the WiFi test application, enter the correct network name and password, cli
 
 After the connection is successful, click ping to test the network.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278343211-ff947899-2693-44bf-aeb9-1eac2e775a2f.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg)
 
 #### 3.1.10 Network Configuration Test
 
 When the OK3568 starts, the network card is set to DHCP by default. The "Network" configuration application allows you to choose between DHCP and static modes. In static mode, you can configure the IP address, subnet mask, gateway, and DNS.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278343505-ef3b8313-7f9f-4046-9829-854446a777b8.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png)
 
 Application Icons
 
 Interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278343711-d466a46d-345d-4d4c-a18c-a69c2871d95d.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343711_d466a46d_345d_4d4c_a18c_a69c2871d95d.png)
 
 Select eth0 or eth1, choose DHCP, and click Apply at the bottom of the interface to restart the network and automatically obtain an IP address.
 
@@ -486,7 +486,7 @@ Click STATIC, select Set Static IP, enter the desired IP address in the IP field
 
 After entering the URL, click ping. The result will be displayed in the left-side prompt box, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278343972-0afb76db-63cb-45da-a6e5-d22b08cfd289.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343972_0afb76db_63cb_45da_a6e5_d22b08cfd289.png)
 
 **Note: The IP and other information configured in static mode will be saved in the system's relevant configuration files, so the network settings will persist after each reboot. However, the network information configured in DHCP mode does not need to be considered, as an IP address will be dynamically assigned each time the system restarts.**
 
@@ -494,13 +494,13 @@ After entering the URL, click ping. The result will be displayed in the left-sid
 
 "simplebrowser" is a simple and practical web browser. Ensure a stable network connection when using it, and confirm that DNS is available before accessing external websites. By default, the browser will access the Forlinx Embedded official website upon startup. Click the icon to launch:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278344166-5e581467-5fca-46a1-b831-546f334a5bfa.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png)
 
 Interface:
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278344475-8254f288-d525-423d-a733-826149a47378.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
 
 To exit the browser, use the navigation bar: File -> Quit.
 
@@ -508,11 +508,11 @@ To exit the browser, use the navigation bar: File -> Quit.
 
 "WatchDog" is an application used to test the proper functioning of the watchdog:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278344842-75e227c5-74a1-4d36-8dd5-9570f5fef866.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278345098-b4ecb513-38b6-4d9a-9d25-a8fadb05bd75.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345098_b4ecb513_38b6_4d9a_9d25_a8fadb05bd75.png)
 
 Application Interface
 
@@ -524,7 +524,7 @@ When feed dog is unchecked, the countdown timer will begin (6 seconds), and the 
 
 "Keypad" is used to test the platform built-in keys:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278345285-92ffe334-fb43-466f-b80a-e6e9bdfb6ffa.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png)
 
 Application Icons
 
@@ -540,11 +540,11 @@ Press X to exit the current test and return to the system desktop.
 
 The "RTC" application allows you to view and set the current system time:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278345659-69a69214-d59b-4f30-a277-79b4ae7638ce.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278345878-2faee878-578c-4126-b6e7-ad04ae576bb2.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345878_2faee878_578c_4126_b6e7_ad04ae576bb2.png)
 
 Application Interface
 
@@ -556,7 +556,7 @@ Click Auto for network time synchronization, and click apply to synchronize the 
 
 Click the desktop icon to test the UART interface on the OK3568 board:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278347128-407709e9-5608-4d5d-a510-2e6c4c88ca65.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png)
 
 Application Icons
 
@@ -570,23 +570,23 @@ Once the shorting is complete, open the test program.
 
 Click the settings on the right side, select the serial port and baud rate parameters, and click apply. The parameters will be set successfully. Next, click the first button on the right to establish a connection.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278348053-af679c45-cbcf-40aa-8081-1046c17d4a48.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png)
 
 Application Interface
 
 Click the "1" to automatically send the signal. Due to the shorting, the received "1" will also be displayed on the terminal.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278348286-2c3fd0dd-574f-4aa5-98b8-52258308b532.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png)
 
 #### 3.1.16 Backlight Test
 
 "BackLight" is the application for adjusting LCD backligh
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278348482-f019814c-b412-485c-baf3-84bf915802e6.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278348704-ba67c57c-27b1-40c3-8206-4f722163f1ca.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348704_ba67c57c_27b1_40c3_8206_4f722163f1ca.jpeg)
 
 Application Interface
 
@@ -596,13 +596,13 @@ Drag the slider in the interface to adjust the LCD backlight brightness. Level 0
 
 Click the desktop icon to enter the next menu:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278348931-c1b9c9d6-80ba-4d86-8c81-5088e2175809.png)**->**![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278349161-81e0b3d5-37d8-447e-8cf5-154d6f26b660.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png)**->**![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png)
 
 Application Icons
 
 The main frequency of OK3568 CPU is up to 1.9 Ghz. By default, the CPU will dynamically adjust the main frequency according to the load. The main frequency of the CPU can also be fixed by setting.  Click the desktop Power icon to enter the CPU frequency setting page: 
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278349339-bced7ad8-3cb7-438d-bc00-e5cf2f7ba5ba.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349339_bced7ad8_3cb7_438d_bc00_e5cf2f7ba5ba.jpeg)
 
 Set Userspace Governor: Set the main frequency in the user status
 
@@ -610,7 +610,7 @@ Set Frequency A55: Set the main frequency
 
 Take the setting of main frequency as an example. If it is necessary to set a fixed frequency, please click Set Userspace Governor, click run, return to the operation interface as shown in the figure above, and click Set Frequency A55 to set.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1719278349538-3585a87e-e5ad-43fb-934a-f97477b071d2.jpeg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349538_3585a87e_e5ad_43fb_934a_f97477b071d2.jpeg)
 
 Select the corresponding frequency for setting according to the requirements.
 
@@ -983,7 +983,7 @@ ice C4:FE:5B:17:C7:78 ServicesResolved: yes
 After successful pairing, the files on the mobile phone can be shared to the development board through Bluetooth.
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278350913-df9c333d-0740-4ed5-931c-c055cae5b122.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278350913_df9c333d_0740_4ed5_931c_c055cae5b122.png)
 
 To exit bluetoothctl, type quit. The received files will be located in the /root directory.
 
@@ -1011,7 +1011,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 [CHG] Transfer /org/bluez/obex/client/session0/transfer0 Transferred: 8046 (@8KB/s 09:57)
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278351113-a7ae10ff-6f83-4923-8783-10849f874870.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278351113_a7ae10ff_6f83_4923_8783_10849f874870.png)
 
 **Note: For certain manufacturers' phones, received files must include a file extension; otherwise, they may be rejected by the Android system. Therefore, please try to use files with extensions for testing.**
 
@@ -1284,7 +1284,7 @@ udhcpc: sending discover
 
 The OK3568-S development board comes pre-installed with the lighttpd web server. The lighttpd service starts automatically upon system boot. You can access the web server pages by entering the development board IP address in a web browser on the PC, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278352301-9a9c652e-6632-4390-8e62-63297b6458da.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png)
 
 **Note: The development board network IP must be in the same subnet as the PC network IP, or the PC must be in the same network subnet as the development board.**
 
@@ -1335,7 +1335,11 @@ The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card
 
 **Note: Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing.**
 
+<<<<<<< HEAD
 ![](image-20250117161711327.png)
+=======
+![image-20250117161711327](04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117161711327.png)           ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
+>>>>>>> 1642aacaf768f4409bbcefd4a8690db216178238
 
    ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278353197-4e3becb0-3a56-485d-b311-76aae48c0b8a.png)
 
@@ -1530,7 +1534,7 @@ USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When us
 
 Host mode:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278356066-21e3f70f-3252-4f10-b675-e571515d78f2.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png)
 
 Device mode:
 
@@ -1541,7 +1545,7 @@ root@OK3568-buildroot:~# usbdevice stop
 root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stall=0 removable=1
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278356261-13231759-c2d6-4b52-985f-fcbaeb92f13c.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356261_13231759_c2d6_4b52_985f_fcbaeb92f13c.png)
 
 If the drive letter does not appear in Windows, try unplugging and re-plugging the Type-C cable.
 
@@ -1549,15 +1553,15 @@ If the drive letter does not appear in Windows, try unplugging and re-plugging t
 
 Before powering on the system, insert the MiniPCIe module into the MiniPCIe slot on the carrier board. After powering on and starting Linux, use the lspci command to check that the device is enumerated successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278356445-44090118-cf1e-4fd3-956c-7e2904bdbda4.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png)
 
 Due to the variety of PCIe devices, some may not be supported by default by the kernel and may require manual addition of the corresponding device driver.
 
 Take the E1000 PCIe network card as an example; the driver is already in the Linux kernel by default. After inserting the network card and powering on, you will see the enumeration information, and the Ethernet interface will appear.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278356661-e14347c6-4d21-4d8a-aca1-bb52a3a00591.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356661_e14347c6_4d21_4d8a_aca1_bb52a3a00591.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278356869-dd454fa2-ee1e-41e7-ad7e-2ef2434c41b1.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
 
 #### 4.2.26 ADC Test
 
@@ -2329,11 +2333,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278371049-36807242-44b2-4463-b794-e1bc53500a6d.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click "Driver Installation”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278371239-c88b99ca-e7f1-452b-a2e9-5e6bfea8bb73.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 6.1.2 OTG Full Flashing Test
 
@@ -2350,19 +2354,19 @@ OTG and USB3.0 are multiplexed, so the DIP switch must be adjusted.
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278371737-4281eb50-d44c-4429-a0fa-88f574b8da8f.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278371916-79c15f7c-10ef-4aa4-81d7-9ec9e3b01fd5.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
 
 Click "Advanced Functions" -> "Erase All" to erase the operation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278372133-1cf4ef2c-8e32-401a-9542-f9cec3cd639b.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
 
 Click the "Upgrade Firmware" button -> "Upgrade" to begin upgrading.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278372340-48a49afa-af0a-4e29-8b4b-eadc70da5820.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 **Note: After the upgrade is completed, the system will automatically restart twice. The first restart updates some information, and the user is \[root@buildroot]. Wait patiently. The second restart will allow the system to be used normally with the user \[root@OK3568-buildroot:/].**
 
@@ -2376,19 +2380,19 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278372564-b2d07d5e-1a3a-489b-833e-a89f8b946368.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
 After selecting the firmware, click “Start.” The loader device will be detected, and the flashing process will begin automatically.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278372817-87ac617a-eae6-4889-bdaa-080eaf0ea09d.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
 Downloading firmware:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278373048-22012107-58e4-4093-85ac-ca9726722f00.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373048_22012107_58e4_4093_85ac_ca9726722f00.png)
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278373317-68796c78-84ac-4218-92c9-0a30ec517c45.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 #### 6.1.2 OTG Step Flashing Test
 
@@ -2398,35 +2402,35 @@ During the development phase, performing full flashing every time can be time-co
 
 First, after OK3568-linux-release is compiled, a separate partition image can be found in the rockdev directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278373500-27a1231c-b0f0-4bf8-87d9-7276d40b3ce0.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373500_27a1231c_b0f0_4bf8_87d9_7276d40b3ce0.png)
 
 Take separate flashing boot. img (including device tree and startup logo) as an example to show the flashing method.
 
 Connect the development board and host using a Type-C cable, press and hold the recovery button, then press the reset button for system reset. After about two seconds, release the recovery button. The system will prompt “ Find Loader Device”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278373708-bdf8dc9f-cc02-4fed-b2cf-9591ae9f3c87.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278373900-a316251a-0f98-4b69-a2ae-f7eeba24f552.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278374098-1e8ed88d-ec1b-4839-9831-a5d20a5f1a8c.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the area on the right side of the partition to select the partition image and check the partition.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278374299-664b1139-5d46-477e-8ec7-3640a0573c20.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278374639-0858efb1-ae3b-4768-af77-983c9286aaff.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
 **MASKROM Mode Introduction**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the BOOT key, then press the reset key to enter maskrom mode for burning.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278374849-c9e0d481-4360-4856-a155-88cd30e07767.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The burning process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -2444,13 +2448,13 @@ TF card making and testing.
 
 Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278375046-ccb93f8c-d97c-4c76-811c-4f0eda82c2e2.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278375213-b0a0a76e-38c8-46a3-8dee-dbd887313527.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278375372-2a2e23f1-1e24-43f9-ba08-803a28b79464.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and start, the system will automatically enter the burning process. When the burning is complete, both the screen and the serial port will prompt:
 
@@ -2467,6 +2471,6 @@ At this time, remove the TF card, and the system will automatically restart (do 
 
 Serial port information during the burning process:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278375582-f434b9b5-a919-4466-a07c-492b79b49a23.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. As shown in the figure above, the burning process takes about 7 minutes. Please wait patiently during the burning process.
