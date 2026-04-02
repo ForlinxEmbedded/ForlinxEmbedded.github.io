@@ -98,7 +98,7 @@ Number  Start (sector)    End (sector)  Size Name
 + 12V2A or 12V/3A DC power cable
 + Debug port cable
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440_1775114199395.jpg)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440-1775114199395.jpg)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -1064,7 +1064,7 @@ The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect US
 
 The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132643569_1775114988916.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116132643569-1775114988916.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1292,7 +1292,7 @@ The OK3568-S development board comes pre-installed with the lighttpd web server.
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P39) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116134440954_1775115017139.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116134440954-1775115017139.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
