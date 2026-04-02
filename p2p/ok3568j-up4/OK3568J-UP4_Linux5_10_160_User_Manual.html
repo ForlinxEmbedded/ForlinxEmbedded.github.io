@@ -142,18 +142,22 @@
 <li class="toctree-l4"><a class="reference internal" href="#web-service">4.2.17 Web Service</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#audio-playback-recording-test">4.2.18 Audio Playback/Recording Test</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#g-ec20-module-test">4.2.19 4G EC20 Module Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sleep-and-wake-up-test">4.2.20 Sleep and Wake-Up Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#npu-opencv-test">4.2.21 NPU OpenCV Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#can-test">4.2.22 CAN Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#led-test">4.2.23 LED Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#type-c-test">4.2.24 TYPE-C Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pcie-test">4.2.25 PCIE Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#adc-test">4.2.26 ADC Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sqlite3-test">4.2.27 SQLite3 Test</a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#head">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sleep-and-wake-up-test">4.2.20 Sleep and Wake-Up Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#npu-opencv-test">4.2.21 NPU OpenCV Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-test">4.2.22 CAN Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#led-test">4.2.23 LED Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#type-c-test">4.2.24 TYPE-C Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pcie-test">4.2.25 PCIE Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adc-test">4.2.26 ADC Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sqlite3-test">4.2.27 SQLite3 Test</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ok3568-platform-multimedia-testing">5. OK3568 Platform Multimedia Testing</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#audio-and-video-playback-experience">5.1 Audio and Video Playback Experience</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#playing-video-and-audio-via-gplay">5.1.1 Playing Video and Audio via Gplay</a></li>
@@ -442,7 +446,7 @@ Number  Start (sector)    End (sector)  Size Name
 <li><p>12V2A or 12V/3A DC power cable</p></li>
 <li><p>Debug port cable</p></li>
 </ul>
-<p><img alt="4jjgqgh3fudp9e4ptt622my71080X1440" src="02_%E5%BF%AB%E9%80%9F%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8.assets/4jjgqgh3fudp9e4ptt622my7_1080X1440-1737174161545.jpg" /></p>
+<p><img alt="Image" src="_images/4jjgqgh3fudp9e4ptt622my7_1080X1440_1775114199395.jpg" /></p>
 </section>
 <section id="debugging-serial-port-driver-installation">
 <h3>2.2 Debugging Serial Port Driver Installation<a class="headerlink" href="#debugging-serial-port-driver-installation" title="Link to this heading"></a></h3>
@@ -466,11 +470,11 @@ A serial terminal application must be installed on the PC Windows. There are var
 </ul>
 <p>Take putty as an example to introduce the setting mode of the putty terminal:</p>
 <p>Step1: Identify the serial port number assigned to the PC. In Device Manager, locate the serial port with the name ending in “Ch A”, which corresponds to the actual debug UART. For example, this may appear as COM51; the port number should be based on the actual one detected by the system.</p>
-<p><img alt="image-20250115154853526" src="02_%E5%BF%AB%E9%80%9F%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8.assets/image-20250115154853526.png" /></p>
+<p><img alt="Image" src="_images/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png" /></p>
 <p>Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115 200.</p>
-<p><img alt="image-20250115155121660" src="02_%E5%BF%AB%E9%80%9F%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8.assets/image-20250115155121660.png" /></p>
+<p><img alt="Image" src="_images/image_20250115155121660.png" /></p>
 <p>Step 3: After completing the above settings, the COM port used by the PC can be entered in Saved Sessions. The following figure uses COM51 as an example to save the settings. Then, when opening the serial port, simply click the saved port number.</p>
-<p><img alt="image-20250115155251412" src="02_%E5%BF%AB%E9%80%9F%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8.assets/image-20250115155251412.png" /></p>
+<p><img alt="Image" src="_images/image_20250115155251412.png" /></p>
 </section>
 <section id="id1">
 <h4>2.3.2 Serial Port Login<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
@@ -609,11 +613,11 @@ Select  display
 <p><strong>Note: This method takes precedence over the U-Boot screen selection. After modifying the device tree, the U-Boot screen selection will no longer be effective.</strong></p>
 <p>The device tree path is: kernel/arch/arm64/boot/dts/rockchip/OK-x-U40-common.dtsi</p>
 <p>In the kernel source code, open the device DTSI file and locate the following node:</p>
-<p><img alt="image-20250115162849845" src="02_%E5%BF%AB%E9%80%9F%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8.assets/image-20250115162849845.png" /></p>
+<p><img alt="Image" src="_images/image_20250115162849845.png" /></p>
 <p>The node is disabled by default and needs to be changed to “okay” to enable it. Modify according to the screen requirements.</p>
 <p>For example:</p>
 <p>To disable HDMI and LVDS screens, change their property to “off”. For eDP, modify the corresponding property to “edp”.</p>
-<p><img alt="image-20250115162932754" src="02_%E5%BF%AB%E9%80%9F%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8.assets/image-20250115162932754.png" /></p>
+<p><img alt="Image" src="_images/image_20250115162932754.png" /></p>
 <p>After saving, recompile to generate the image.</p>
 <p>For MIPI screens, there are many types, and the existing timing and control words may not meet the requirements. You may need to manually modify the display-timings under the DSI node. However, any display-related node’s status property should be handled as per the default settings, as the program will automatically control it.</p>
 </section>
@@ -706,7 +710,7 @@ Select  display
 <p>The “4G” test program is used to test the OK3568 external 4G module (EC20). Before testing, power off the development board, connect the 4G module, insert the SIM card, power on the development board, and open the test application.</p>
 <p><img alt="Image" src="_images/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png" /></p>
 <p>Application Icons</p>
-<p><img alt="" src="03_OK3568%E5%B9%B3%E5%8F%B0%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/wayland-screenshot-1970-01-01_00-03-01-1739770345387.png" /></p>
+<p><img alt="Image" src="_images/wayland_screenshot_1970_01_01_00_03_01.png" /></p>
 <p>Application Interface</p>
 <p>Click the <strong>Connect</strong> button, and the program will automatically begin the dialing process and obtain the IP, DNS settings, and other configurations. Wait a few seconds, and then click the <strong>Ping</strong> button to perform the test.</p>
 </section>
@@ -782,7 +786,7 @@ Select  display
 <p>Application Icons</p>
 <p>The OK3568 serial port supports odd/even parity, 8 data bits, and 1 stop bit.</p>
 <p>Before performing a serial loopback test, ensure the required serial port is shorted. There are UART0, UART2, UART8, and UART9 serial ports on the carrier board, as indicated in the carrier board schematic. UART2 is the debug serial port, and UART8 is for Bluetooth. The available serial ports for users are UART0 and UART9, where UART0 uses TTL levels, and UART9 uses RS485 levels. In the development board, they are represented as ttyS0 and ttyS9, respectively. For example, to test the UART0 port, short the UART0 transmit and receive pins as indicated in the development board schematic, corresponding to pins 2 and 4 on P35.</p>
-<p><img alt="image-20250116092611519" src="03_OK3568%E5%B9%B3%E5%8F%B0%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116092611519.png" /></p>
+<p><img alt="Image" src="_images/image_20250116092611519.png" /></p>
 <p>Once the shorting is complete, open the test program.</p>
 <p>Click the settings on the right side, select the serial port and baud rate parameters, and click apply. The parameters will be set successfully. Next, click the first button on the right to establish a connection.</p>
 <p><img alt="Image" src="_images/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png" /></p>
@@ -920,12 +924,12 @@ root@OK3568-buildroot:/# echo 1800000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/
 </pre></div>
 </div>
 <p>Taking OK3568-S as an example, the printed information is as follows:</p>
-<p><img alt="image-20250115165035411" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250115165035411.png" /></p>
+<p><img alt="Image" src="_images/image_20250115165035411.png" /></p>
 <p>The DDR4 write bandwidth is approximately 1480M/s, and the read bandwidth is approximately 5100M/s.</p>
 </section>
 <section id="id2">
 <h4>4.1.5 Key Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
-<p><img alt="6nn1mfxl0bv7d56sm7u90f2kp1080X1440" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/6nn1mfxl0bv7d56sm7u90f2kp_1080X1440.jpg" /></p>
+<p><img alt="Image" src="_images/6nn1mfxl0bv7d56sm7u90f2kp_1080X1440.jpg" /></p>
 <p>Use the keytest command-line tool for keypad testing. Currently, keytest supports testing of the five keys on the carrier board: VOL+, VOL-, MENU, ENTER, and HOME, with key codes 115, 114, 139, 28, and 102, respectively. When the keys are pressed and released in sequence, the terminal will display the following output:</p>
 <p>Execute the following command:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# fltest_keytest
@@ -948,7 +952,7 @@ key102 Released
 <h4>4.1.6 Serial Port Test<a class="headerlink" href="#serial-port-test" title="Link to this heading"></a></h4>
 <p>OK3568-S serial port supports odd and even parity, 8 data bits, and 1 stop bit.</p>
 <p>Before performing a serial loopback test, ensure the required serial port is shorted. There are UART0, UART2, UART8, and UART9 serial ports on the carrier board, as indicated in the carrier board schematic. UART2 is the debug serial port, and UART8 is for Bluetooth. The available serial ports for users are UART0 and UART9, where UART0 uses TTL levels, and UART9 uses RS485 levels. In the development board, they are represented as ttyS0 and ttyS9, respectively. For example, to test the UART0 port, short the UART0 transmit and receive pins as indicated in the development board schematic, corresponding to pins 2 and 4 on P35.</p>
-<p><img alt="image-20250116092611519" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116092611519.png" /></p>
+<p><img alt="Image" src="_images/image_20250116092611519.png" /></p>
 <p>Once the shorting is complete, open the test program.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:~# fltest_uarttest -d /dev/ttyS0
 Welcome to uart test
@@ -961,7 +965,7 @@ forlinx_uart_test.1234567890...
 <p>If the following content is printed on the serial port after execution, it indicates that the serial communication is working normally.</p>
 <p>Next, the test method for UART9_485 is introduced:</p>
 <p>Connect the 485_A0, 485_B0, and GND_485_0 pins from the P23 port to the computer through a USB-to-485 module, as shown below:</p>
-<p><img alt="image-20250116093341161" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116093341161.png" /></p>
+<p><img alt="Image" src="_images/image_20250116093341161.png" /></p>
 <p>Input the following command and observe the information received by the serial port debugging tool:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="nd">@OK3568</span><span class="o">-</span><span class="n">buildroot</span><span class="p">:</span><span class="o">~</span><span class="c1"># fltest_uarttest -d /dev/ttyS9</span>
 <span class="n">Welcome</span> <span class="n">to</span> <span class="n">uart</span> <span class="n">test</span>
@@ -969,7 +973,7 @@ forlinx_uart_test.1234567890...
 <span class="n">forlinx_uart_test</span><span class="mf">.1234567890</span><span class="o">...</span>
 </pre></div>
 </div>
-<p><img alt="image-20250116103947634" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116103947634.png" /></p>
+<p><img alt="Image" src="_images/image_20250116103947634.png" /></p>
 <p>Send the data from the board back through the serial port debugging tool and observe the information received by the board:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="nd">@OK3568</span><span class="o">-</span><span class="n">buildroot</span><span class="p">:</span><span class="o">~</span><span class="c1"># fltest_uarttest -d /dev/ttyS9</span>
 <span class="n">Welcome</span> <span class="n">to</span> <span class="n">uart</span> <span class="n">test</span>
@@ -1153,7 +1157,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 <section id="rtc-function-test">
 <h3>4.2.10 RTC Function Test<a class="headerlink" href="#rtc-function-test" title="Link to this heading"></a></h3>
 <p>RTC Test, primarily involves setting the software and hardware clock using the date and hwclock tools. The test checks whether the software clock synchronizes with the RTC clock after the development board is powered off and then powered on again (Note: Ensure that a coin battery is installed on the board).</p>
-<p><img alt="image-20250116130949811" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116130949811.png" /></p>
+<p><img alt="Image" src="_images/image_20250116130949811.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# date -s &quot;2022-2-9 10:50:00&quot;      // Set the system time
 Wed Feb  9 10:50:00 UTC 2022
 root@OK3568-buildroot:/# date                             // Read the system time
@@ -1186,9 +1190,9 @@ Wed Feb  9 10:52:00 UTC 2022
 <section id="usb-2-0-usb3-0">
 <h4>4.2.12 USB 2.0/USB3.0<a class="headerlink" href="#usb-2-0-usb3-0" title="Link to this heading"></a></h4>
 <p>The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB devices such as USB mice, USB keyboards, and USB flash drives to any of the onboard USB HOST interfaces, and these devices support hot-plugging. Take mounting USB flash driver as an example:</p>
-<p><img alt="image-20250116132226258" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116132226258.png" /></p>
+<p><img alt="Image" src="_images/image_20250116132226258.png" /></p>
 <p>The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:</p>
-<p><img alt="image-20250116132643569" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116132643569.png" /></p>
+<p><img alt="Image" src="_images/image_20250116132643569_1775114988916.png" /></p>
 <p>The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.</p>
 <p>Step 1: After booting the development board, connect a USB flash drive to one of the USB host interfaces on the development board;</p>
 <p>Serial port information:</p>
@@ -1379,7 +1383,7 @@ udhcpc: sending discover
 <section id="audio-playback-recording-test">
 <h4>4.2.18 Audio Playback/Recording Test<a class="headerlink" href="#audio-playback-recording-test" title="Link to this heading"></a></h4>
 <p>There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P39) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:</p>
-<p><img alt="image-20250116134440954" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116134440954.png" /></p>
+<p><img alt="Image" src="_images/image_20250116134440954_1775115017139.png" /></p>
 <p><strong>Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.</strong></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# gst-play-1.0 /userdata/media/test.mp3    
 // Audio playback test using headphones or speakers
@@ -1418,8 +1422,31 @@ etc            linuxrc mnt        root       system   usr
 <h4>4.2.19 4G EC20 Module Test<a class="headerlink" href="#g-ec20-module-test" title="Link to this heading"></a></h4>
 <p>The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card before powering on the development board.</p>
 <p><strong>Note: Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing.</strong></p>
+</section>
+</section>
+</section>
+</section>
+<section id="head">
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<img alt="Image" src="_images/image_20250117161711327.png" /><a class="headerlink" href="#head" title="Link to this heading"></a></h1>
 <p><img alt="image-20250117161711327" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117161711327.png" />           <img alt="Image" src="_images/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png" /></p>
-<p><img alt="image-20250117161813469" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117161813469.png" /></p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>1642aacaf768f4409bbcefd4a8690db216178238</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p><img alt="Image" src="_images/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png" /></p>
+<p><img alt="Image" src="_images/image_20250117161813469.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# quectelCM &amp;
 [1] 1080
 root@OK3568-buildroot:~# [01-01_00:00:47:049] Quectel_QConnectManager_Linux_V1.6.0.24
@@ -1462,9 +1489,8 @@ PING s-526319.gotocdn.com (211.149.226.120) 56(84) bytes of data.
 rtt min/avg/max/mdev = 434.376/932.642/1430.909/498.267 ms, pipe 2
 </pre></div>
 </div>
-</section>
 <section id="sleep-and-wake-up-test">
-<h4>4.2.20 Sleep and Wake-Up Test<a class="headerlink" href="#sleep-and-wake-up-test" title="Link to this heading"></a></h4>
+<h2>4.2.20 Sleep and Wake-Up Test<a class="headerlink" href="#sleep-and-wake-up-test" title="Link to this heading"></a></h2>
 <p>The OK3568-S Linux platform supports sleep and wake-up functionality.</p>
 <p>Short press the power button (PWRON) to enter sleep mode, and the following printout will appear:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:~# [ 1777.917158] PM: suspend entry (deep)
@@ -1507,7 +1533,7 @@ Short press the power button to wake up：
 <p>Additionally, the current test reveals an issue with Bluetooth wake-up after sleep. Before entering sleep mode, you can unload the Wi-Fi/Bluetooth module drivers. After waking up, reload the Wi-Fi/Bluetooth module drivers.</p>
 </section>
 <section id="npu-opencv-test">
-<h4>4.2.21 NPU OpenCV Test<a class="headerlink" href="#npu-opencv-test" title="Link to this heading"></a></h4>
+<h2>4.2.21 NPU OpenCV Test<a class="headerlink" href="#npu-opencv-test" title="Link to this heading"></a></h2>
 <p>The OK3568-S platform comes with the OpenCV4-4.5.43 library pre-compiled. You can use the following command to perform OpenCV testing:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:~# rknn_common_test  /usr/share/model/RK3566_RK3568/mobilenet_v1.rknn  /usr/share/model/cat_224x224.jpg
 rknn_api/rknnrt version: 1.5.0 (e6fe0c678@2023-05-25T08:09:20), driver version: 0.9.0
@@ -1530,7 +1556,7 @@ Begin perf ...
 <p>Rockchip provides a rich set of test cases. Please refer to the application note on NPU for compilation testing.</p>
 </section>
 <section id="can-test">
-<h4>4.2.22 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h4>
+<h2>4.2.22 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h2>
 <p>The OK3568-S platform features two CAN bus interfaces. The CAN wiring method is as follows: The CAN_H terminal is connected to the H terminal of other CAN devices.<br />
 The CAN_L terminal is connected to the L terminal of other CAN devices.</p>
 <p>To short-circuit CAN0 and CAN1, execute the following command on the development board terminal:</p>
@@ -1556,9 +1582,9 @@ can0  00895441   [7]  11 22 33 4A AB BC CD
 <p>Manufacturer Documentation / Rockchip_Develop_Guide_Can_CN.pdf</p>
 </section>
 <section id="led-test">
-<h4>4.2.23 LED Test<a class="headerlink" href="#led-test" title="Link to this heading"></a></h4>
+<h2>4.2.23 LED Test<a class="headerlink" href="#led-test" title="Link to this heading"></a></h2>
 <p>There is a controllable blue LED on the SoM. When the board is powered on, the LED blinks. You can disable this feature by modifying the device tree file arch/arm64/boot/dts/rockchip/OK-x-U40-common.dtsi to add the attribute default-state = “off” to the LEDs node, and change linux,default-trigger to “none”.</p>
-<p><img alt="image-20250116142724617" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116142724617.png" /></p>
+<p><img alt="Image" src="_images/image_20250116142724617.png" /></p>
 <p>Testing Procedure:</p>
 <p>1. Change the blue LED to a standard GPIO-controlled LED.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:~# cd /sys/class/leds/work/
@@ -1575,12 +1601,12 @@ root@OK3568-buildroot:/sys/class/leds/work# echo 0 &gt; brightness
 </div>
 </section>
 <section id="type-c-test">
-<h4>4.2.24 TYPE-C Test<a class="headerlink" href="#type-c-test" title="Link to this heading"></a></h4>
+<h2>4.2.24 TYPE-C Test<a class="headerlink" href="#type-c-test" title="Link to this heading"></a></h2>
 <p>The OK3568-S features a TYPE-C interface. In Device mode, it can be used for flashing the device. In Host mode, it can be used to connect regular USB devices. To configure the Type-C port:</p>
 <p>Power off the board, set the S2 DIP switch to OFF, and use a Type-C cable to connect the OK3568-S to a PC to configure it in Device mode.</p>
 <p>Power off the board, set the S2 DIP switch to ON, and configure it in Host mode. Insert a USB flash drive or other device.</p>
 <p>USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:</p>
-<p><img alt="image-20250116132643569" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250116132643569.png" /></p>
+<p><img alt="Image" src="_images/image_20250116132643569.png" /></p>
 <p><strong>Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.</strong></p>
 <p>Host mode:</p>
 <p><img alt="Image" src="_images/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png" /></p>
@@ -1594,7 +1620,7 @@ root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stal
 <p>If the drive letter does not appear in Windows, try unplugging and re-plugging the Type-C cable.</p>
 </section>
 <section id="pcie-test">
-<h4>4.2.25 PCIE Test<a class="headerlink" href="#pcie-test" title="Link to this heading"></a></h4>
+<h2>4.2.25 PCIE Test<a class="headerlink" href="#pcie-test" title="Link to this heading"></a></h2>
 <p>Before powering on the system, insert the MiniPCIe module into the MiniPCIe slot on the carrier board. After powering on and starting Linux, use the lspci command to check that the device is enumerated successfully.</p>
 <p><img alt="Image" src="_images/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png" /></p>
 <p>Due to the variety of PCIe devices, some may not be supported by default by the kernel and may require manual addition of the corresponding device driver.</p>
@@ -1603,9 +1629,9 @@ root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stal
 <p><img alt="Image" src="_images/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png" /></p>
 </section>
 <section id="adc-test">
-<h4>4.2.26 ADC Test<a class="headerlink" href="#adc-test" title="Link to this heading"></a></h4>
+<h2>4.2.26 ADC Test<a class="headerlink" href="#adc-test" title="Link to this heading"></a></h2>
 <p>The ADC pins are routed out from the P34, as shown below. GPADC_A, GPADC_B, and GPADC_C correspond to ADC channels 1, 2, and 3, respectively:</p>
-<p><img alt="image-20250117114318607" src="04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117114318607.png" /></p>
+<p><img alt="Image" src="_images/image_20250117114318607.png" /></p>
 <p>Short the pins GPADC_A, GPADC_B, and GPADC_C to pins 2 or 4 on P34. Below is an example using GPADC_A, where GPADC_A is shorted to pin 4. Adjust the potentiometer R357 and input the following command to observe the results:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">When</span> <span class="n">rotating</span> <span class="n">the</span> <span class="n">potentiometer</span> <span class="n">counterclockwise</span><span class="p">,</span> <span class="n">the</span> <span class="n">reading</span> <span class="n">gradually</span> <span class="n">decreases</span><span class="o">.</span>
 <span class="n">root</span><span class="nd">@OK3568</span><span class="o">-</span><span class="n">buildroot</span><span class="p">:</span><span class="o">~</span><span class="c1"># cat /sys/bus/iio/devices/iio\:device0/in_voltage1_raw</span>
@@ -1631,7 +1657,7 @@ root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stal
 </div>
 </section>
 <section id="sqlite3-test">
-<h4>4.2.27 SQLite3 Test<a class="headerlink" href="#sqlite3-test" title="Link to this heading"></a></h4>
+<h2>4.2.27 SQLite3 Test<a class="headerlink" href="#sqlite3-test" title="Link to this heading"></a></h2>
 <p>SQLite3 is a lightweight database system, an ACID-compliant relational database management system with low resource consumption. The OK3568-S development board uses version 3.21.0 of SQLite3.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3568-buildroot:/# sqlite3
 SQLite version 3.21.0 2017-10-24 18:55:49
@@ -1651,8 +1677,6 @@ sqlite&gt; .quit  // Exit the database (or use .exit command)
 root@OK3568-buildroot:/#
 </pre></div>
 </div>
-</section>
-</section>
 </section>
 <section id="ok3568-platform-multimedia-testing">
 <h2>5. OK3568 Platform Multimedia Testing<a class="headerlink" href="#ok3568-platform-multimedia-testing" title="Link to this heading"></a></h2>
