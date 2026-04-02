@@ -528,7 +528,7 @@ When feed dog is unchecked, the countdown timer will begin (6 seconds), and the 
 
 Application Icons
 
-![](wayland-screenshot-1970-01-01_00-03-30.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/wayland_screenshot_1970_01_01_00_03_30.png)
 
 Application Interface
 
@@ -1064,7 +1064,7 @@ The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect US
 
 The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:
 
-![](image_20250116132643569.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132643569.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1292,7 +1292,7 @@ The OK3568-S development board comes pre-installed with the lighttpd web server.
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P39) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![](image-20250116134440954.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116134440954.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
