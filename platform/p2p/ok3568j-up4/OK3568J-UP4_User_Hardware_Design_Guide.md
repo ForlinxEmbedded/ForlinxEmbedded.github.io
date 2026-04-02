@@ -23,7 +23,7 @@ This hardware manual applies to the UP4 Forlinx SoM
 
 | Date| Version| Revision History|
 |:----------:|:----------:|:----------:|
-| 20260302| V1.0| Initial Version|
+| 02/03/2026 | V1.0| Initial Version|
 
 ## 1\. Schematic Design
 
