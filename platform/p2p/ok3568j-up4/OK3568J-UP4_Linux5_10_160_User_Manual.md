@@ -1,4 +1,4 @@
-# Linux5.10.160_User's Manual\_V1.0
+Linux5.10.160_User's Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
@@ -528,7 +528,7 @@ When feed dog is unchecked, the countdown timer will begin (6 seconds), and the 
 
 Application Icons
 
-![](03_OK3568%E5%B9%B3%E5%8F%B0%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/wayland-screenshot-1970-01-01_00-03-30.png)
+![](wayland-screenshot-1970-01-01_00-03-30.png)
 
 Application Interface
 
@@ -620,7 +620,7 @@ Select the corresponding frequency for setting according to the requirements.
 
 The OK3568-S platform comes with a rich set of command-line tools for users to utilize.
 
-#### 4.2.1 System Information Query
+#### 4.1.1 System Information Query
 
 View kernel and CPU information:
 
@@ -686,7 +686,7 @@ GST_V4L2SRC_MAX_RESOLUTION=3840x2160
 _=/usr/bin/env
 ```
 
-#### 4.2.2 Frequency Scaling Test
+#### 4.1.2 Frequency Scaling Test
 
 **Note: This process uses CPU0 as an example. In reality, CPU1, CPU2, and CPU3 will be adjusted simultaneously.**
 
@@ -720,7 +720,7 @@ root@OK3568-buildroot:/# cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_fr
 1800000
 ```
 
-#### 4.2.3 Temperature Test
+#### 4.1.3 Temperature Test
 
 To view temperature values:
 
@@ -731,7 +731,7 @@ root@OK3568-buildroot:/# cat /sys/class/thermal/thermal_zone0/temp
 
 The temperature value is 56℃.
 
-#### 4.2.4 DDR Bandwidth Test
+#### 4.1.4 DDR Bandwidth Test
 
 ```plain
 root@OK3568-buildroot:/# memory_bandwidth.sh
@@ -816,7 +816,7 @@ Read Test Data finished,Read:
 forlinx_uart_test.1234567890...
 ```
 
-#### 4.2.7 Watchdog Test
+#### 4.1.7 Watchdog Test
 
 Watchdog is a commonly used function in embedded systems. The device node for the watchdog in OK3568-S is /dev/watchdog. This test provides two testing programs. You can choose one based on the actual situation.
 
@@ -845,11 +845,11 @@ Restart after 10 seconds
 
 This command will activate the watchdog but will not feed the dog. The system will restart after 10 seconds.
 
-#### 4.2.8 WiFi Test
+#### 4.1.8 WiFi Test
 
 The OK3568-S platform supports the onboard AW-CM358, which supports both STA and AP modes.
 
-##### 4.2.8.1 STA Mode
+##### 4.1.8.1 STA Mode
 
 Before using the Wi-Fi functionality, follow these steps to configure it:
 
@@ -888,7 +888,7 @@ PING www.forlinx.com (220.181.111.188): 56 data bytes
 
 To stop, press Ctrl+C. If the ping is successful, it indicates that the network is now working properly.
 
-##### 4.2.8.2 AP Mode
+##### 4.1.8.2 AP Mode
 
 Before using the hotspot functionality, ensure that the network interface is connected and can access the internet. To configure the hotspot, run the command twice:  
 The first time, the AP will be set to DISABLED.  
@@ -940,7 +940,7 @@ Password:12345678
 
 At this point, a mobile phone can connect to this hotspot and access the internet.
 
-#### 4.2.9 Bluetooth Test
+#### 4.1.9 Bluetooth Test
 
 The OK3568-S carrier board is equipped with the AW-CM358 module, which integrates Bluetooth functionality. This section demonstrates how to transfer files via Bluetooth between the phone and the development board.
 
@@ -1015,7 +1015,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 **Note: For certain manufacturers' phones, received files must include a file extension; otherwise, they may be rejected by the Android system. Therefore, please try to use files with extensions for testing.**
 
-### 4.2.10 RTC Function Test
+#### 4.1.10 RTC Function Test
 
 RTC Test, primarily involves setting the software and hardware clock using the date and hwclock tools. The test checks whether the software clock synchronizes with the RTC clock after the development board is powered off and then powered on again (Note: Ensure that a coin battery is installed on the board).
 
@@ -1033,7 +1033,7 @@ root@OK3568-buildroot:/# date
 Wed Feb  9 10:52:00 UTC 2022
 ```
 
-#### 4.2.11 USB Mouse Test
+#### 4.1.11 USB Mouse Test
 
 When a USB mouse is connected to the USB port of the OK3568-S platform, the serial terminal prints the following information:
 
@@ -1056,7 +1056,7 @@ When the USB mouse is unplugged, the serial terminal will print the following:
 
 At this point, the arrow cursor on the screen disappears, indicating that the mouse has been successfully removed.
 
-#### 4.2.12 USB 2.0/USB3.0
+#### 4.1.12 USB 2.0/USB3.0
 
 The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB devices such as USB mice, USB keyboards, and USB flash drives to any of the onboard USB HOST interfaces, and these devices support hot-plugging. Take mounting USB flash driver as an example:
 
@@ -1064,7 +1064,7 @@ The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect US
 
 The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:
 
-![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116132643569-1775114988916.png)
+![](image_20250116132643569.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1164,7 +1164,7 @@ root@OK3568-buildroot:/# echo 255> /sys/class/backlight/edp-backlight/brightness
 root@OK3568-buildroot:/# echo 255> /sys/class/backlight/rgb-backlight/brightness        // Turn on the RGB screen backlight
 ```
 
-#### 4.2.14 TF Card Test
+#### 4.1.14 TF Card Test
 
 Insert the TF card into the TF card slot on the development board. Under normal circumstances, the following print information will appear on the development board terminal:
 
@@ -1208,7 +1208,7 @@ root@OK3568-buildroot:/# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M//Rea
 524288000 bytes (524 MB, 500 MiB) copied, 8.31059 s, 63.1 MB/s 	
 ```
 
-#### 4.2.15 eMMC Test
+#### 4.1.15 eMMC Test
 
 The eMMC operates in HS400 mode by default. Below is a simple test of eMMC read/write speed using the ext4 file system as an example.
 
@@ -1225,11 +1225,11 @@ root@OK3568-buildroot:/# dd if=/test of=/dev/null bs=1M //Read test
 524288000 bytes (524 MB, 500 MiB) copied, 3.05486 s, 172 MB/s       
 ```
 
-#### 4.2.16 Ethernet Configuration
+#### 4.1.16 Ethernet Configuration
 
 The OK3568-S is equipped with two Gigabit Ethernet controllers.
 
-##### 4.2.16.1 Static IP Configuration
+##### 4.1.16.1 Static IP Configuration
 
 **Note: This method sets a static network IP. Once configured, the network interface card (NIC) should obtain the corresponding network IP, which indicates normal operation. If the network is unreachable (ping fails), ensure that multiple NIC in the same subnet are configured correctly. Adjust the routing based on the scenario or use different subnets by default.**
 
@@ -1260,7 +1260,7 @@ root@OK3568-buildroot:/# [  651.976934] rk_gmac-dwmac fe300000.ethernet eth0: Li
 [  651.977798] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 ```
 
-##### 4.2.16.2  Automatic IP Acquisition Method
+##### 4.1.16.2  Automatic IP Acquisition Method
 
 ```plain
 root@OK3568-buildroot:/# vi /etc/network/interfaces   	  // Open the configuration file
@@ -1280,7 +1280,7 @@ udhcpc: sending discover
 [  975.285828] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 ```
 
-#### 4.2.17 Web Service
+#### 4.1.17 Web Service
 
 The OK3568-S development board comes pre-installed with the lighttpd web server. The lighttpd service starts automatically upon system boot. You can access the web server pages by entering the development board IP address in a web browser on the PC, as shown below:
 
@@ -1288,11 +1288,11 @@ The OK3568-S development board comes pre-installed with the lighttpd web server.
 
 **Note: The development board network IP must be in the same subnet as the PC network IP, or the PC must be in the same network subnet as the development board.**
 
-#### 4.2.18 Audio Playback/Recording Test
+#### 4.1.18 Audio Playback/Recording Test
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P39) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116134440954-1775115017139.png)
+![](image-20250116134440954.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1329,16 +1329,16 @@ dev            lib64   misc        rockchip_test  sys   userdata
 etc            linuxrc mnt        root       system   usr
 ```
 
-#### 4.2.19 4G EC20 Module Test
+#### 4.1.19 4G EC20 Module Test
 
 The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card before powering on the development board.
 
 **Note: Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing.**
 
 <<<<<<< HEAD
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161711327.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161711327.png)        
 =======
-![image-20250117161711327](04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117161711327.png)           ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
 
 
 
@@ -1387,7 +1387,7 @@ PING s-526319.gotocdn.com (211.149.226.120) 56(84) bytes of data.
 rtt min/avg/max/mdev = 434.376/932.642/1430.909/498.267 ms, pipe 2
 ```
 
-#### 4.2.20 Sleep and Wake-Up Test
+#### 4.1.20 Sleep and Wake-Up Test
 
 The OK3568-S Linux platform supports sleep and wake-up functionality.
 
@@ -1433,7 +1433,7 @@ Short press the power button to wake up：
 
 Additionally, the current test reveals an issue with Bluetooth wake-up after sleep. Before entering sleep mode, you can unload the Wi-Fi/Bluetooth module drivers. After waking up, reload the Wi-Fi/Bluetooth module drivers.
 
-#### 4.2.21 NPU OpenCV Test
+#### 4.1.21 NPU OpenCV Test
 
 The OK3568-S platform comes with the OpenCV4-4.5.43 library pre-compiled. You can use the following command to perform OpenCV testing:
 
@@ -1458,7 +1458,7 @@ Begin perf ...
 
 Rockchip provides a rich set of test cases. Please refer to the application note on NPU for compilation testing.
 
-#### 4.2.22 CAN Test
+#### 4.1.22 CAN Test
 
 The OK3568-S platform features two CAN bus interfaces. The CAN wiring method is as follows: The CAN\_H terminal is connected to the H terminal of other CAN devices.  
 The CAN\_L terminal is connected to the L terminal of other CAN devices.
@@ -1492,7 +1492,7 @@ For details on modifying and using the workaround frame, refer to:
 
 Manufacturer Documentation / Rockchip\_Develop\_Guide\_Can\_CN.pdf
 
-#### 4.2.23 LED Test
+#### 4.1.23 LED Test
 
 There is a controllable blue LED on the SoM. When the board is powered on, the LED blinks. You can disable this feature by modifying the device tree file arch/arm64/boot/dts/rockchip/OK-x-U40-common.dtsi to add the attribute default-state = "off" to the LEDs node, and change linux,default-trigger to "none".
 
@@ -1517,7 +1517,7 @@ root@OK3568-buildroot:/sys/class/leds/work# echo 0 > brightness
 root@OK3568-buildroot:/sys/class/leds/work# echo heartbeat > trigger
 ```
 
-#### 4.2.24 TYPE-C Test
+#### 4.1.24 TYPE-C Test
 
 The OK3568-S features a TYPE-C interface. In Device mode, it can be used for flashing the device. In Host mode, it can be used to connect regular USB devices. To configure the Type-C port:  
 
@@ -1548,7 +1548,7 @@ root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stal
 
 If the drive letter does not appear in Windows, try unplugging and re-plugging the Type-C cable.
 
-#### 4.2.25 PCIE Test
+#### 4.1.25 PCIE Test
 
 Before powering on the system, insert the MiniPCIe module into the MiniPCIe slot on the carrier board. After powering on and starting Linux, use the lspci command to check that the device is enumerated successfully.
 
@@ -1562,7 +1562,7 @@ Take the E1000 PCIe network card as an example; the driver is already in the Lin
 
 ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
 
-#### 4.2.26 ADC Test
+#### 4.1.26 ADC Test
 
 The ADC pins are routed out from the P34, as shown below. GPADC\_A, GPADC\_B, and GPADC\_C correspond to ADC channels 1, 2, and 3, respectively:
 
@@ -1593,7 +1593,7 @@ root@OK3568-buildroot:~# cat /sys/bus/iio/devices/iio\:device0/in_voltage1_raw
 639
 ```
 
-#### 4.2.27 SQLite3 Test
+#### 4.1.27 SQLite3 Test
 
 SQLite3 is a lightweight database system, an ACID-compliant relational database management system with low resource consumption. The OK3568-S development board uses version 3.21.0 of SQLite3.
 
