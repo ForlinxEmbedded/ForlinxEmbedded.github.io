@@ -98,7 +98,7 @@ Number  Start (sector)    End (sector)  Size Name
 + 12V2A or 12V/3A DC power cable
 + Debug port cable
 
-![](4jjgqgh3fudp9e4ptt622my7_1080X1440.jpg)
+![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440.jpg)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
