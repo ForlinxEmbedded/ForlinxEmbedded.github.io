@@ -98,7 +98,7 @@ Number  Start (sector)    End (sector)  Size Name
 + 12V2A or 12V/3A DC power cable
 + Debug port cable
 
-![](4jjgqgh3fudp9e4ptt622my7_1080X1440-1775114199395.jpg)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440-1775114199395.jpg)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -126,15 +126,15 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step1: Identify the serial port number assigned to the PC. In Device Manager, locate the serial port with the name ending in “Ch A”, which corresponds to the actual debug UART. For example, this may appear as COM51; the port number should be based on the actual one detected by the system.
 
-![](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115 200.
 
-![](image-20250115155121660.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250115155121660.png)
 
 Step 3: After completing the above settings, the COM port used by the PC can be entered in Saved Sessions. The following figure uses COM51 as an example to save the settings. Then, when opening the serial port, simply click the saved port number.
 
-![](image-20250115155251412.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250115155251412.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -292,7 +292,7 @@ The device tree path is: kernel/arch/arm64/boot/dts/rockchip/OK-x-U40-common.dts
 
 In the kernel source code, open the device DTSI file and locate the following node:
 
-![](image-20250115162849845.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250115162849845.png)
 
 The node is disabled by default and needs to be changed to "okay" to enable it. Modify according to the screen requirements.
 
@@ -300,7 +300,7 @@ For example:
 
 To disable HDMI and LVDS screens, change their property to "off". For eDP, modify the corresponding property to "edp".
 
-![](image-20250115162932754.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250115162932754.png)
 
 After saving, recompile to generate the image.
 
@@ -564,7 +564,7 @@ The OK3568 serial port supports odd/even parity, 8 data bits, and 1 stop bit.
 
 Before performing a serial loopback test, ensure the required serial port is shorted. There are UART0, UART2, UART8, and UART9 serial ports on the carrier board, as indicated in the carrier board schematic. UART2 is the debug serial port, and UART8 is for Bluetooth. The available serial ports for users are UART0 and UART9, where UART0 uses TTL levels, and UART9 uses RS485 levels. In the development board, they are represented as ttyS0 and ttyS9, respectively. For example, to test the UART0 port, short the UART0 transmit and receive pins as indicated in the development board schematic, corresponding to pins 2 and 4 on P35.
 
-![](image-20250116092611519.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116092611519.png)
 
 Once the shorting is complete, open the test program.
 
@@ -739,13 +739,13 @@ root@OK3568-buildroot:/# memory_bandwidth.sh
 
 Taking OK3568-S as an example, the printed information is as follows:
 
-![](image-20250115165035411.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250115165035411.png)
 
 The DDR4 write bandwidth is approximately 1480M/s, and the read bandwidth is approximately 5100M/s.
 
 #### 4.1.5 Key Test
 
-![](6nn1mfxl0bv7d56sm7u90f2kp_1080X1440.jpg)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/6nn1mfxl0bv7d56sm7u90f2kp_1080X1440.jpg)
 
 Use the keytest command-line tool for keypad testing. Currently, keytest supports testing of the five keys on the carrier board: VOL+, VOL-, MENU, ENTER, and HOME, with key codes 115, 114, 139, 28, and 102, respectively. When the keys are pressed and released in sequence, the terminal will display the following output:
 
@@ -773,7 +773,7 @@ OK3568-S serial port supports odd and even parity, 8 data bits, and 1 stop bit.
 
 Before performing a serial loopback test, ensure the required serial port is shorted. There are UART0, UART2, UART8, and UART9 serial ports on the carrier board, as indicated in the carrier board schematic. UART2 is the debug serial port, and UART8 is for Bluetooth. The available serial ports for users are UART0 and UART9, where UART0 uses TTL levels, and UART9 uses RS485 levels. In the development board, they are represented as ttyS0 and ttyS9, respectively. For example, to test the UART0 port, short the UART0 transmit and receive pins as indicated in the development board schematic, corresponding to pins 2 and 4 on P35.
 
-![](images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116092611519.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116092611519.png)
 
 Once the shorting is complete, open the test program.
 
@@ -792,7 +792,7 @@ Next, the test method for UART9\_485 is introduced:
 
 Connect the 485\_A0, 485\_B0, and GND\_485\_0 pins from the P23 port to the computer through a USB-to-485 module, as shown below:
 
-![](image-20250116093341161.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116093341161.png)
 
 Input the following command and observe the information received by the serial port debugging tool:
 
@@ -803,7 +803,7 @@ Send test data:
 forlinx_uart_test.1234567890...
 ```
 
-![](image-20250116103947634.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116103947634.png)
 
 Send the data from the board back through the serial port debugging tool and observe the information received by the board:
 
@@ -1019,7 +1019,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 RTC Test, primarily involves setting the software and hardware clock using the date and hwclock tools. The test checks whether the software clock synchronizes with the RTC clock after the development board is powered off and then powered on again (Note: Ensure that a coin battery is installed on the board).
 
-![](image-20250116130949811.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116130949811.png)
 
 ```plain
 root@OK3568-buildroot:/# date -s "2022-2-9 10:50:00"      // Set the system time
@@ -1060,11 +1060,11 @@ At this point, the arrow cursor on the screen disappears, indicating that the mo
 
 The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB devices such as USB mice, USB keyboards, and USB flash drives to any of the onboard USB HOST interfaces, and these devices support hot-plugging. Take mounting USB flash driver as an example:
 
-![](image-20250116132226258.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116132226258.png)
 
 The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:
 
-![](image-20250116132643569-1775114988916.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116132643569-1775114988916.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1292,7 +1292,7 @@ The OK3568-S development board comes pre-installed with the lighttpd web server.
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P39) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![](image-20250116134440954-1775115017139.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116134440954-1775115017139.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1336,14 +1336,14 @@ The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card
 **Note: Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing.**
 
 <<<<<<< HEAD
-![](image-20250117161711327.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250117161711327.png)
 =======
 ![image-20250117161711327](04_OK3568%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.assets/image-20250117161711327.png)           ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
 >>>>>>> 1642aacaf768f4409bbcefd4a8690db216178238
 
    ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278353197-4e3becb0-3a56-485d-b311-76aae48c0b8a.png)
 
-![](image-20250117161813469.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250117161813469.png)
 
 ```plain
 root@OK3568-buildroot:/# quectelCM &
@@ -1497,7 +1497,7 @@ Manufacturer Documentation / Rockchip\_Develop\_Guide\_Can\_CN.pdf
 
 There is a controllable blue LED on the SoM. When the board is powered on, the LED blinks. You can disable this feature by modifying the device tree file arch/arm64/boot/dts/rockchip/OK-x-U40-common.dtsi to add the attribute default-state = "off" to the LEDs node, and change linux,default-trigger to "none".
 
-![](image-20250116142724617.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116142724617.png)
 
 Testing Procedure:
 
@@ -1528,7 +1528,7 @@ Power off the board, set the S2 DIP switch to ON, and configure it in Host mode.
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![](images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116132643569.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250116132643569.png)
 
 **Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.**
 
@@ -1567,7 +1567,7 @@ Take the E1000 PCIe network card as an example; the driver is already in the Lin
 
 The ADC pins are routed out from the P34, as shown below. GPADC\_A, GPADC\_B, and GPADC\_C correspond to ADC channels 1, 2, and 3, respectively:
 
-![](image-20250117114318607.png)
+![](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image-20250117114318607.png)
 
 Short the pins GPADC\_A, GPADC\_B, and GPADC\_C to pins 2 or 4 on P34. Below is an example using GPADC\_A, where GPADC\_A is shorted to pin 4. Adjust the potentiometer R357 and input the following command to observe the results:
 
