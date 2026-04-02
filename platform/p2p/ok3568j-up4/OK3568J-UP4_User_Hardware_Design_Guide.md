@@ -1,4 +1,4 @@
-# OK3568-UP4\_User Hardware Design Guide\_V1.0
+# User Hardware Design Guide\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
