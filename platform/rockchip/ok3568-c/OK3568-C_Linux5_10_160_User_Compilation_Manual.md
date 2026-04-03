@@ -232,7 +232,7 @@ The "Virtual Machine Settings Menu" pops up as shown below:
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![Image](1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
@@ -368,7 +368,7 @@ If TFTP, SFTP and other servers are used, the network contact mode of the virtua
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
+![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
 
 ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
