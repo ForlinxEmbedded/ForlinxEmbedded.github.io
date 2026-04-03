@@ -79,8 +79,6 @@ Open the virtual machine and choose the extracted 3588 development environment.v
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface."
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png)
-
 ![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 The development environment account is: **forlinx**, and the password is : **forlinx**. After entering the password, select **Sign in** to log in
@@ -301,9 +299,7 @@ Before using the network, make sure that your virtual machine can connect to the
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. 
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png)
-
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png)
+![Image](1.png)
 
 The network is set to dynamic IP.
 
@@ -315,13 +311,15 @@ If using servers like TFTP or SFTP, you need to set the virtual machine's networ
 
 ![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png)
+
+![Image](1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png)
+![](1-1775204326815.png)
+
+![Image](1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
@@ -389,8 +387,6 @@ forlinx@ubuntu:~$ /swapfile none swap sw 0 0
 
 2\. Memory Adjustment:  
 It is recommended to adjust the development environment memory to 16GB. Low memory may cause compilation failure.
-
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png)
 
 ### 3.2 Qt Creator Installation
 
