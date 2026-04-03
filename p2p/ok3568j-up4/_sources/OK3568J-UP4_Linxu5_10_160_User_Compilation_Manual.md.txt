@@ -159,7 +159,7 @@ At this point, the virtual machine creation is complete.
 
 The installation process on a physical machine is similar to the one on a virtual machine, but here we will focus on installing Ubuntu in the virtual machine. 
 
-### 3.1.2 System Installation
+#### 3.1.2 System Installation
 
 The installed Ubuntu version is 20.04. First, go to the official Ubuntu website to download the Ubuntu 20.04 64-bit ISO image. The download link is: http://sources.ubuntu.com/20.04/
 
@@ -220,7 +220,7 @@ After restarting and logging in, the system interface is as shown below:
 
 ![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
 
-### 3.1.3 Basic Configuration of Ubuntu
+#### 3.1.3 Basic Configuration of Ubuntu
 
 After installing the Ubuntu 20.04 operating system, some configurations need to be done.
 
@@ -289,7 +289,7 @@ Most system settings can be configured in the location shown in the figure. Many
 
 ![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
-### 3.1.4 Network Configuration of Ubuntu
+#### 3.1.4 Network Configuration of Ubuntu
 
 + **NAT Mode**
 
@@ -323,7 +323,7 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
-### 3.1.5 USB Device Loading
+#### 3.1.5 USB Device Loading
 
 Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.0, then click OK. As shown below, most modern computers support USB 3.0 ports. If not configured, the USB 3.0 device will not be connected to the virtual machine when inserted. As shown in the figure:
 
@@ -335,7 +335,7 @@ After the virtual machine starts, insert the USB flash drive. An icon similar to
 
 ![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
-### 3.1.6 Basic Library Installation for the Virtual Machine
+#### 3.1.6 Basic Library Installation for the Virtual Machine
 
 Before development, some other necessary libraries need to be installed. Use the following commands to install them one by one. Make sure the network is functioning properly and can connect to the internet before installing.
 
@@ -347,7 +347,7 @@ forlinx@ubuntu:~$ sudo apt-get install lzop                       # Install Lzo-
 forlinx@ubuntu:~$ sudo apt-get install net-tools                  # Install network configuration tools
 ```
 
-### 3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code
+#### 3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code
 
 ```plain
 forlinx@ubuntu:~$ sudo apt-get update                                         # Update the apt-get package sources
@@ -358,7 +358,7 @@ forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmain
 
 These libraries are required when setting up the 3568 Linux compilation environment and preparing to compile the Linux source code. If you're not setting up the OK3568 Linux development environment, you can skip this step.
 
-### 3.1.8 Increasing Swap Partition Size
+#### 3.1.8 Increasing Swap Partition Size
 
 Please check the current system swap partition size. If the swap partition is insufficient, it can cause source code compilation to fail. It is recommended to have 16GB for the swap partition. It is also suggested to adjust the development environment memory to 16GB.
 

@@ -80,15 +80,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#setting-up-a-new-ubuntu-development-environment">3. Setting Up a New Ubuntu Development Environment</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#creating-an-ubuntu-virtual-machine">3.1.1 Creating an Ubuntu Virtual Machine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basic-configuration-of-ubuntu">3.1.3 Basic Configuration of Ubuntu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#network-configuration-of-ubuntu">3.1.4 Network Configuration of Ubuntu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-device-loading">3.1.5 USB Device Loading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basic-library-installation-for-the-virtual-machine">3.1.6 Basic Library Installation for the Virtual Machine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installation-of-necessary-libraries-for-compiling-ok3568-linux-source-code">3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#increasing-swap-partition-size">3.1.8 Increasing Swap Partition Size</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#system-installation">3.1.2 System Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#basic-configuration-of-ubuntu">3.1.3 Basic Configuration of Ubuntu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#network-configuration-of-ubuntu">3.1.4 Network Configuration of Ubuntu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usb-device-loading">3.1.5 USB Device Loading</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#basic-library-installation-for-the-virtual-machine">3.1.6 Basic Library Installation for the Virtual Machine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installation-of-necessary-libraries-for-compiling-ok3568-linux-source-code">3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#increasing-swap-partition-size">3.1.8 Increasing Swap Partition Size</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#qt-creator-installation">3.2 Qt Creator Installation</a></li>
 </ul>
 </li>
@@ -245,9 +245,8 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>At this point, the virtual machine creation is complete.</p>
 <p>The installation process on a physical machine is similar to the one on a virtual machine, but here we will focus on installing Ubuntu in the virtual machine.</p>
 </section>
-</section>
 <section id="system-installation">
-<h3>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h3>
+<h4>3.1.2 System Installation<a class="headerlink" href="#system-installation" title="Link to this heading"></a></h4>
 <p>The installed Ubuntu version is 20.04. First, go to the official Ubuntu website to download the Ubuntu 20.04 64-bit ISO image. The download link is: http://sources.ubuntu.com/20.04/</p>
 <p>. Download the version ubuntu-20.04.6-desktop-amd64.iso.</p>
 <p><img alt="Image" src="_images/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png" /></p>
@@ -280,7 +279,7 @@ By default, Ubuntu’s language is English, but you can also select Chinese. The
 <p><img alt="Image" src="_images/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png" /></p>
 </section>
 <section id="basic-configuration-of-ubuntu">
-<h3>3.1.3 Basic Configuration of Ubuntu<a class="headerlink" href="#basic-configuration-of-ubuntu" title="Link to this heading"></a></h3>
+<h4>3.1.3 Basic Configuration of Ubuntu<a class="headerlink" href="#basic-configuration-of-ubuntu" title="Link to this heading"></a></h4>
 <p>After installing the Ubuntu 20.04 operating system, some configurations need to be done.</p>
 <ul class="simple">
 <li><p><strong>VMware Tools Installation：</strong></p></li>
@@ -329,7 +328,7 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 <p><img alt="Image" src="_images/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png" /></p>
 </section>
 <section id="network-configuration-of-ubuntu">
-<h3>3.1.4 Network Configuration of Ubuntu<a class="headerlink" href="#network-configuration-of-ubuntu" title="Link to this heading"></a></h3>
+<h4>3.1.4 Network Configuration of Ubuntu<a class="headerlink" href="#network-configuration-of-ubuntu" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p><strong>NAT Mode</strong></p></li>
 </ul>
@@ -351,7 +350,7 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 <p><strong>Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user’s actual environment. The manual provides examples for illustration.</strong></p>
 </section>
 <section id="usb-device-loading">
-<h3>3.1.5 USB Device Loading<a class="headerlink" href="#usb-device-loading" title="Link to this heading"></a></h3>
+<h4>3.1.5 USB Device Loading<a class="headerlink" href="#usb-device-loading" title="Link to this heading"></a></h4>
 <p>Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.0, then click OK. As shown below, most modern computers support USB 3.0 ports. If not configured, the USB 3.0 device will not be connected to the virtual machine when inserted. As shown in the figure:</p>
 <p><img alt="Image" src="_images/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png" /></p>
 <p>After the virtual machine starts, insert the USB flash drive. An icon similar to a “USB drive” will appear in the lower-right corner of the virtual machine. Right-click it and select Connect. Then, you should see a new directory in the file system, indicating that the USB drive has been successfully loaded, as shown below:</p>
@@ -359,7 +358,7 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 <p><img alt="Image" src="_images/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png" /></p>
 </section>
 <section id="basic-library-installation-for-the-virtual-machine">
-<h3>3.1.6 Basic Library Installation for the Virtual Machine<a class="headerlink" href="#basic-library-installation-for-the-virtual-machine" title="Link to this heading"></a></h3>
+<h4>3.1.6 Basic Library Installation for the Virtual Machine<a class="headerlink" href="#basic-library-installation-for-the-virtual-machine" title="Link to this heading"></a></h4>
 <p>Before development, some other necessary libraries need to be installed. Use the following commands to install them one by one. Make sure the network is functioning properly and can connect to the internet before installing.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                             # Update the package source information
 forlinx@ubuntu:~$ sudo apt-get install build-essential            # Install essential software packages for compiling programs
@@ -370,7 +369,7 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                  # Install netw
 </div>
 </section>
 <section id="installation-of-necessary-libraries-for-compiling-ok3568-linux-source-code">
-<h3>3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code<a class="headerlink" href="#installation-of-necessary-libraries-for-compiling-ok3568-linux-source-code" title="Link to this heading"></a></h3>
+<h4>3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code<a class="headerlink" href="#installation-of-necessary-libraries-for-compiling-ok3568-linux-source-code" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update                                         # Update the apt-get package sources
 forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot        # Install essential tool packages
 forlinx@ubuntu:~$ sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler python-pip libncurses5-dev
@@ -380,7 +379,7 @@ forlinx@ubuntu:~$ sudo apt-get install libgmp-dev  libmpc-dev libicu-dev bsdmain
 <p>These libraries are required when setting up the 3568 Linux compilation environment and preparing to compile the Linux source code. If you’re not setting up the OK3568 Linux development environment, you can skip this step.</p>
 </section>
 <section id="increasing-swap-partition-size">
-<h3>3.1.8 Increasing Swap Partition Size<a class="headerlink" href="#increasing-swap-partition-size" title="Link to this heading"></a></h3>
+<h4>3.1.8 Increasing Swap Partition Size<a class="headerlink" href="#increasing-swap-partition-size" title="Link to this heading"></a></h4>
 <p>Please check the current system swap partition size. If the swap partition is insufficient, it can cause source code compilation to fail. It is recommended to have 16GB for the swap partition. It is also suggested to adjust the development environment memory to 16GB.</p>
 <p>1. Check the Swap Partition:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cat /proc/swaps
@@ -401,6 +400,7 @@ forlinx@ubuntu:~$ sudo vim /etc/fstab
 </div>
 <p>2. Memory Adjustment:<br />
 It is recommended to adjust the development environment memory to 16GB. Low memory may cause compilation failure.</p>
+</section>
 </section>
 <section id="qt-creator-installation">
 <h3>3.2 Qt Creator Installation<a class="headerlink" href="#qt-creator-installation" title="Link to this heading"></a></h3>
