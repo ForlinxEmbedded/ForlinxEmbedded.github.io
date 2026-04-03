@@ -392,7 +392,7 @@ It is recommended to adjust the development environment memory to 16GB. Low memo
 
 ![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png)
 
-## 3.2 Qt Creator Installation
+### 3.2 Qt Creator Installation
 
 Copy the file qt-creator-opensource-linux-x86\_64-4.7.0.run to any directory in the current user’s home directory and execute the following command.
 
@@ -445,13 +445,13 @@ forlinx@ubuntu:~$ ./qtcreator &
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
-# 4\. Compilation of Related Code
+## 4\. Compilation of Related Code
 
 This section mainly describes the compilation methods for the development board-related source code, including kernel source code compilation and application program compilation.
 
-## 4.1 Preparation Before Compilation
+### 4.1 Preparation Before Compilation
 
-### 4.1.1 Environment Description
+#### 4.1.1 Environment Description
 
 + Recommended Development OS: Ubuntu 22.04 64-bit
 + Cross-Toolchain: aarch64-linux-gnu
@@ -459,7 +459,7 @@ This section mainly describes the compilation methods for the development board-
 + Kernel Version for Development Board: linux-5.10.160
 + Qt Version Ported to Development Board: QT 5.15.8
 
-### 4.1.2 Copying the Source Code
+#### 4.1.2 Copying the Source Code
 
 + Program Source Code: User Data\\Linux\\Source\\ OK3568\_Linux\_fs.tar.bz2.0\*
 
@@ -483,7 +483,7 @@ Wait for the copy process to complete after running the command.
 
 When compiling Buildroot, the toolchain will be downloaded from the official website based on the configuration. To save time, download and unzip dl.tar.bz2 from User Data into the Buildroot directory.
 
-## 4.2 Kernel Compilation
+### 4.2 Kernel Compilation
 
 **Note:**
 
@@ -492,7 +492,7 @@ When compiling Buildroot, the toolchain will be downloaded from the official web
 + **This source code compilation requires at least 16GB of RAM in the development environment. Please do not modify the provided VM configuration;**
 + **To shorten the initial compilation time, we use pre-compiled file system images and do not rebuild the file system.**
 
-### 4.2.1 Full Compilation Test
+4.2.1 Full Compilation Test
 
 Switch to the extracted source code directory in the terminal:
 
