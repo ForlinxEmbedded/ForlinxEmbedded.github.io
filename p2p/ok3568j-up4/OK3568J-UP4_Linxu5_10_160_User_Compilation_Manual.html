@@ -89,19 +89,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#basic-library-installation-for-the-virtual-machine">3.1.6 Basic Library Installation for the Virtual Machine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installation-of-necessary-libraries-for-compiling-ok3568-linux-source-code">3.1.7 Installation of Necessary Libraries for Compiling OK3568 Linux Source Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#increasing-swap-partition-size">3.1.8 Increasing Swap Partition Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qt-creator-installation">3.2 Qt Creator Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#qt-creator-installation">3.2 Qt Creator Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compilation-of-related-code">4. Compilation of Related Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#environment-description">4.1.1 Environment Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#copying-the-source-code">4.1.2 Copying the Source Code</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#compilation-of-related-code">4. Compilation of Related Code</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#environment-description">4.1.1 Environment Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#copying-the-source-code">4.1.2 Copying the Source Code</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#kernel-compilation">4.2 Kernel Compilation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#full-compilation-test">4.2.1 Full Compilation Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kernel-compilation">4.2 Kernel Compilation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#individual-compilation-test">4.2.2 Individual Compilation Test</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cross-compilation-toolchain-location">4.2.3 Cross-Compilation Toolchain Location</a></li>
 </ul>
@@ -408,9 +405,8 @@ forlinx@ubuntu:~$ sudo vim /etc/fstab
 It is recommended to adjust the development environment memory to 16GB. Low memory may cause compilation failure.</p>
 <p><img alt="Image" src="_images/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png" /></p>
 </section>
-</section>
 <section id="qt-creator-installation">
-<h2>3.2 Qt Creator Installation<a class="headerlink" href="#qt-creator-installation" title="Link to this heading"></a></h2>
+<h3>3.2 Qt Creator Installation<a class="headerlink" href="#qt-creator-installation" title="Link to this heading"></a></h3>
 <p>Copy the file qt-creator-opensource-linux-x86_64-4.7.0.run to any directory in the current user’s home directory and execute the following command.</p>
 <ul class="simple">
 <li><p>Path: OK3568-C (Linux) User Data\Linux\Source\qt-creator-opensource-linux-x86_64-4.7.0.run</p></li>
@@ -444,12 +440,12 @@ forlinx@ubuntu:~$ ./qtcreator &amp;
 </section>
 </section>
 <section id="compilation-of-related-code">
-<h1>4. Compilation of Related Code<a class="headerlink" href="#compilation-of-related-code" title="Link to this heading"></a></h1>
+<h2>4. Compilation of Related Code<a class="headerlink" href="#compilation-of-related-code" title="Link to this heading"></a></h2>
 <p>This section mainly describes the compilation methods for the development board-related source code, including kernel source code compilation and application program compilation.</p>
 <section id="preparation-before-compilation">
-<h2>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h2>
+<h3>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
 <section id="environment-description">
-<h3>4.1.1 Environment Description<a class="headerlink" href="#environment-description" title="Link to this heading"></a></h3>
+<h4>4.1.1 Environment Description<a class="headerlink" href="#environment-description" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Recommended Development OS: Ubuntu 22.04 64-bit</p></li>
 <li><p>Cross-Toolchain: aarch64-linux-gnu</p></li>
@@ -459,7 +455,7 @@ forlinx@ubuntu:~$ ./qtcreator &amp;
 </ul>
 </section>
 <section id="copying-the-source-code">
-<h3>4.1.2 Copying the Source Code<a class="headerlink" href="#copying-the-source-code" title="Link to this heading"></a></h3>
+<h4>4.1.2 Copying the Source Code<a class="headerlink" href="#copying-the-source-code" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Program Source Code: User Data\Linux\Source\ OK3568_Linux_fs.tar.bz2.0*</p></li>
 </ul>
@@ -481,7 +477,7 @@ forlinx@ubuntu:~/3568$ tar -xvf OK3568_Linux_fs.tar.bz2				//Decompress the comp
 </section>
 </section>
 <section id="kernel-compilation">
-<h2>4.2 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h2>
+<h3>4.2 Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Link to this heading"></a></h3>
 <p><strong>Note:</strong></p>
 <ul class="simple">
 <li><p><strong>After extracting the kernel source code for the first time, you need to perform a full compilation of the source code;</strong></p></li>
@@ -489,8 +485,7 @@ forlinx@ubuntu:~/3568$ tar -xvf OK3568_Linux_fs.tar.bz2				//Decompress the comp
 <li><p><strong>This source code compilation requires at least 16GB of RAM in the development environment. Please do not modify the provided VM configuration;</strong></p></li>
 <li><p><strong>To shorten the initial compilation time, we use pre-compiled file system images and do not rebuild the file system.</strong></p></li>
 </ul>
-<section id="full-compilation-test">
-<h3>4.2.1 Full Compilation Test<a class="headerlink" href="#full-compilation-test" title="Link to this heading"></a></h3>
+<p>4.2.1 Full Compilation Test</p>
 <p>Switch to the extracted source code directory in the terminal:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/3568/OK3568_Linux_fs
 </pre></div>
