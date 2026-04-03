@@ -1,4 +1,4 @@
-# OK3568J-UP4_Linux5.10.160_User's Compilation Manual_V1.0
+# Linux5.10.160_User's Compilation Manual_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
