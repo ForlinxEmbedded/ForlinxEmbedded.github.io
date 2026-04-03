@@ -41,6 +41,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK3568J-UP4_Linux5_10_160_User_Manual
+   OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual
 
 
 
