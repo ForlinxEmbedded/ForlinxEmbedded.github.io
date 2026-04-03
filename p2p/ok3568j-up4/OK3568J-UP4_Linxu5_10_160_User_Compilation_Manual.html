@@ -200,7 +200,6 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p>Open the virtual machine and choose the extracted 3588 development environment.vmx file.</p>
 <p><img alt="Image" src="_images/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png" /></p>
 <p>Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.”</p>
-<p><img alt="Image" src="_images/1719278549103_fbe0d3f1_43ad_4b37_aa46_27fd9fc4a526.png" /></p>
 <p><img alt="Image" src="_images/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png" /></p>
 <p>The development environment account is: <strong>forlinx</strong>, and the password is : <strong>forlinx</strong>. After entering the password, select <strong>Sign in</strong> to log in</p>
 <p><img alt="Image" src="_images/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png" /></p>
@@ -337,8 +336,7 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 <p>Before using the network, make sure that your virtual machine can connect to the internet. Open the virtual machine settings, and change the network adapter’s network bridging mode to NAT Mode:</p>
 <p><img alt="Image" src="_images/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png" /></p>
 <p>In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network.</p>
-<p><img alt="Image" src="_images/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png" /></p>
-<p><img alt="Image" src="_images/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png" /></p>
+<p><img alt="Image" src="_images/1.png" /></p>
 <p>The network is set to dynamic IP.</p>
 <p><img alt="Image" src="_images/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png" /></p>
 <ul class="simple">
@@ -346,10 +344,10 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 </ul>
 <p>If using servers like TFTP or SFTP, you need to set the virtual machine’s network connection to Bridged Mode. When Vmware virtual network card is set to bridged mode, the host network card and the virtual machine network card communicate through a virtual bridge, and you need to ensure that the IP address of Ubuntu is in the same subnet as the host machine.</p>
 <p><img alt="Image" src="_images/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png" /></p>
-<p><img alt="Image" src="_images/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png" /></p>
-<p><img alt="Image" src="_images/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png" /></p>
+<p><img alt="Image" src="_images/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png" /></p>
 <p>Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.</p>
-<p><img alt="Image" src="_images/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png" /></p>
+<p><img alt="Image" src="_images/1_1775204326815.png" /></p>
+<p><img alt="Image" src="_images/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png" /></p>
 <p><strong>Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user’s actual environment. The manual provides examples for illustration.</strong></p>
 </section>
 <section id="usb-device-loading">
@@ -403,7 +401,6 @@ forlinx@ubuntu:~$ sudo vim /etc/fstab
 </div>
 <p>2. Memory Adjustment:<br />
 It is recommended to adjust the development environment memory to 16GB. Low memory may cause compilation failure.</p>
-<p><img alt="Image" src="_images/1719278542580_d0fd91fe_bf0c_47fd_aa6f_774dad1fd478.png" /></p>
 </section>
 <section id="qt-creator-installation">
 <h3>3.2 Qt Creator Installation<a class="headerlink" href="#qt-creator-installation" title="Link to this heading"></a></h3>
