@@ -534,7 +534,7 @@ root@ok3506-buildroot:/# dd if=/dev/zero of=/userdata/test bs=1M count=20 conv=f
 
 Read test:
 
-Note: To ensure accurate data, restart the development board before testing the read speed.
+**Note: To ensure accurate data, restart the development board before testing the read speed.**
 
 ```bash
 root@ok3506-buildroot:/# dd if=/userdata/test of=/dev/null bs=1M
