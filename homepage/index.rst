@@ -89,6 +89,7 @@ Rockchip Series
        <a href="https://www.forlinx.net/product/rk3562-c-system-on-module-158.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="rockchip/ok3562j-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
+  </div>
 
    <div class="product-card">
      <a href="rockchip/ok3506-s12-mini/index.html" target="_blank" rel="noopener noreferrer">
@@ -101,11 +102,8 @@ Rockchip Series
      </div>
    </div>
 
-   </div>
 
-
-
-   </div>
+  </div>
 
 ----
 
