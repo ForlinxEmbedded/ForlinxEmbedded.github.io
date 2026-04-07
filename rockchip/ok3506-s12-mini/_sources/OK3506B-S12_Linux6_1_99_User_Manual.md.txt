@@ -34,8 +34,8 @@ Additionally, the manual includes explanations of some symbols and formats.
 |:----------:|----------|
 | **Note** | Note or particularly important information must be read carefully.|
 | 📚 | Relevant explanations regarding the testing section|
-| ️️🛤️ ️️ | Related paths.|
-| Bold font | Serial output information after command input|
+| ️️🛤️ ️️ | Related paths |
+| **Bold font** | Serial output information after command input|
 | **Black Bold Font** | Key information in the serial output:|
 | <font style="color:#000000;">//</font>| Explanation of the input command or output information.|
 | Username@Hostname| root@ok3506-buildroot: The login account information for the development board via serial console; <br />forlinx@ok3506-buildroot: The login account information for the development board via network;<br />forlinx@ubuntu: The login account information for the development environment on Ubuntu; <br />This information helps you identify the operational environment for various tasks. |
