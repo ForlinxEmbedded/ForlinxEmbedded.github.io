@@ -33,6 +33,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK3506B-S12_Linux6_1_99_User_Manual
+
    
 
 
