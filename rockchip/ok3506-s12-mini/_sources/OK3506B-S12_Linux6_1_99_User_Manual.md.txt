@@ -35,10 +35,10 @@ Additionally, the manual includes explanations of some symbols and formats.
 | **Note** | Note or particularly important information must be read carefully.|
 | 📚 | Relevant explanations regarding the testing section|
 | ️️🛤️ ️️ | Related paths.|
-| Bold font.| Serial output information after command input|
-| **Black Bold**| Key information in the serial output:|
+| Bold font | Serial output information after command input|
+| **Black Bold Font** | Key information in the serial output:|
 | <font style="color:#000000;">//</font>| Explanation of the input command or output information.|
-| Username@Hostname| root@ok3506-buildroot: The login account information for the development board via serial console. <br />forlinx@ok3506-buildroot: The login account information for the development board via network. <br />forlinx@ubuntu: The login account information for the development environment on Ubuntu. <br />This information helps you identify the operational environment for various tasks. |
+| Username@Hostname| root@ok3506-buildroot: The login account information for the development board via serial console; <br />forlinx@ok3506-buildroot: The login account information for the development board via network;<br />forlinx@ubuntu: The login account information for the development environment on Ubuntu; <br />This information helps you identify the operational environment for various tasks. |
 
 Example: After packaging the file system, use the ls command to view the generated files.
 
@@ -195,7 +195,7 @@ If data is returned, the network connection is working properly.
 
 ![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735030561381_30515e56_282f_4641_9f6e_3ab5bc5e3a99.png)
 
-Click Open. When the dialog box shown below appears, click Yes to enter the login screen.
+Click "Open". When the dialog box shown below appears, click "Yes" to enter the login screen.
 
 ![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
 
@@ -214,7 +214,7 @@ The following describes how to transfer files using FileZilla.
 
 Install FileZilla on Windows and configure it as shown in the figure below. Both the username and password are forlinx.
 
-Open FileZilla, click File, and then select Site Manager.
+Open FileZilla, click File, and then select "Site Manager".
 
 ![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
 
@@ -226,7 +226,7 @@ After a successful login, you can upload and download files.
 
 Under normal circumstances, the power can be turned off directly. However, if data is being stored or other operations are in progress, do not cut off the power unexpectedly, as this may cause irreversible file corruption. To ensure that all data has been written completely, run the sync command before powering off the system.
 
-Note: If a user-designed product based on the SoM may be subject to unexpected power loss during operation, it is recommended to incorporate power-loss protection measures in the hardware design.
+**Note: If a user-designed product based on the SoM may be subject to unexpected power loss during operation, it is recommended to incorporate power-loss protection measures in the hardware design.**
 
 ## 3\. OK3506B-S12 Command Function Test
 
@@ -549,7 +549,7 @@ The OK3506B-S12 supports one USB 2.0 interface. You can connect devices such as 
 
 The terminal will print information related to the USB flash drive. Since there are many different types of USB drives, the displayed information may vary.
 
-1\. After the development board boots, connect a USB flash drive to the board USB HOST interface. Since the default log level is relatively low, no message may be printed directly; You can use the dmesg command to view messages and locate the USB-drive-related information.
+1\. After the development board boots, connect a USB flash drive to the board USB HOST interface. Since the default log level is relatively low, no message may be printed directly; you can use the dmesg command to view messages and locate the USB-drive-related information.
 
 ```bash
 [   95.470811] usb 2-1: new high-speed USB device number 2 using dwc2
@@ -597,7 +597,7 @@ root@ok3506-buildroot:/# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500
 524288000 bytes (524 MB, 500 MiB) copied, 45.6879 s, 11.5 MB/s
 ```
 
-5\. Read test:
+5\. Read test.
 
 ```bash
 root@ok3506-buildroot:/# dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct

@@ -208,17 +208,17 @@ The drivers and utilities used for the components are subject to the copyrights 
 <tr class="row-even"><td class="text-center"><p>️️🛤️ ️️</p></td>
 <td><p>Related paths.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Bold font.</p></td>
+<tr class="row-odd"><td class="text-center"><p>Bold font</p></td>
 <td><p>Serial output information after command input</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><strong>Black Bold</strong></p></td>
+<tr class="row-even"><td class="text-center"><p><strong>Black Bold Font</strong></p></td>
 <td><p>Key information in the serial output:</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p><font style="color:#000000;">//</font></p></td>
 <td><p>Explanation of the input command or output information.</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>Username&#64;Hostname</p></td>
-<td><p>root&#64;ok3506-buildroot: The login account information for the development board via serial console. <br />forlinx&#64;ok3506-buildroot: The login account information for the development board via network. <br />forlinx&#64;ubuntu: The login account information for the development environment on Ubuntu. <br />This information helps you identify the operational environment for various tasks.</p></td>
+<td><p>root&#64;ok3506-buildroot: The login account information for the development board via serial console; <br />forlinx&#64;ok3506-buildroot: The login account information for the development board via network;<br />forlinx&#64;ubuntu: The login account information for the development environment on Ubuntu; <br />This information helps you identify the operational environment for various tasks.</p></td>
 </tr>
 </tbody>
 </table>
@@ -460,7 +460,7 @@ OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.
 </ul>
 <p>1. Use SSH to log in to the development board.</p>
 <p><img alt="Image" src="_images/1735030561381_30515e56_282f_4641_9f6e_3ab5bc5e3a99.png" /></p>
-<p>Click Open. When the dialog box shown below appears, click Yes to enter the login screen.</p>
+<p>Click “Open”. When the dialog box shown below appears, click “Yes” to enter the login screen.</p>
 <p><img alt="Image" src="_images/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png" /></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Login<span class="w"> </span>as：root
 forlinx@ok3506-buildroot:~#
@@ -473,7 +473,7 @@ forlinx@ok3506-buildroot:~#
 <p>The OK3506B-S12 development board supports the SFTP service, which is enabled automatically at startup. After the IP address is configured, the board can be used as an SFTP server.</p>
 <p>The following describes how to transfer files using FileZilla.</p>
 <p>Install FileZilla on Windows and configure it as shown in the figure below. Both the username and password are forlinx.</p>
-<p>Open FileZilla, click File, and then select Site Manager.</p>
+<p>Open FileZilla, click File, and then select “Site Manager”.</p>
 <p><img alt="Image" src="_images/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png" /></p>
 <p>After a successful login, you can upload and download files.</p>
 <p><img alt="Image" src="_images/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png" /></p>
@@ -482,7 +482,7 @@ forlinx@ok3506-buildroot:~#
 <section id="system-shutdown">
 <h3>2.5 System Shutdown<a class="headerlink" href="#system-shutdown" title="Link to this heading"></a></h3>
 <p>Under normal circumstances, the power can be turned off directly. However, if data is being stored or other operations are in progress, do not cut off the power unexpectedly, as this may cause irreversible file corruption. To ensure that all data has been written completely, run the sync command before powering off the system.</p>
-<p>Note: If a user-designed product based on the SoM may be subject to unexpected power loss during operation, it is recommended to incorporate power-loss protection measures in the hardware design.</p>
+<p><strong>Note: If a user-designed product based on the SoM may be subject to unexpected power loss during operation, it is recommended to incorporate power-loss protection measures in the hardware design.</strong></p>
 </section>
 </section>
 <section id="ok3506b-s12-command-function-test">
@@ -772,7 +772,7 @@ mtd6:<span class="w"> </span>04c60000<span class="w"> </span><span class="m">000
 <h3>3.9 USB2.0<a class="headerlink" href="#usb2-0" title="Link to this heading"></a></h3>
 <p>The OK3506B-S12 supports one USB 2.0 interface. You can connect devices such as a USB mouse, USB keyboard, or USB flash drive to the onboard USB HOST interface. Hot plugging is supported for these devices. Here, mounting a USB flash drive is used as an example. USB flash drive testing has currently been verified up to 32 GB; capacities above 32 GB have not been tested.</p>
 <p>The terminal will print information related to the USB flash drive. Since there are many different types of USB drives, the displayed information may vary.</p>
-<p>1. After the development board boots, connect a USB flash drive to the board USB HOST interface. Since the default log level is relatively low, no message may be printed directly; You can use the dmesg command to view messages and locate the USB-drive-related information.</p>
+<p>1. After the development board boots, connect a USB flash drive to the board USB HOST interface. Since the default log level is relatively low, no message may be printed directly; you can use the dmesg command to view messages and locate the USB-drive-related information.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="w">   </span><span class="m">95</span>.470811<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">2</span>-1:<span class="w"> </span>new<span class="w"> </span>high-speed<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">2</span><span class="w"> </span>using<span class="w"> </span>dwc2
 <span class="o">[</span><span class="w">   </span><span class="m">95</span>.668944<span class="o">]</span><span class="w"> </span>usb-storage<span class="w"> </span><span class="m">2</span>-1:1.0:<span class="w"> </span>USB<span class="w"> </span>Mass<span class="w"> </span>Storage<span class="w"> </span>device<span class="w"> </span>detected
 <span class="o">[</span><span class="w">   </span><span class="m">95</span>.670071<span class="o">]</span><span class="w"> </span>scsi<span class="w"> </span>host0:<span class="w"> </span>usb-storage<span class="w"> </span><span class="m">2</span>-1:1.0
@@ -811,7 +811,7 @@ total<span class="w"> </span><span class="m">512000</span>
 <span class="m">524288000</span><span class="w"> </span>bytes<span class="w"> </span><span class="o">(</span><span class="m">524</span><span class="w"> </span>MB,<span class="w"> </span><span class="m">500</span><span class="w"> </span>MiB<span class="o">)</span><span class="w"> </span>copied,<span class="w"> </span><span class="m">45</span>.6879<span class="w"> </span>s,<span class="w"> </span><span class="m">11</span>.5<span class="w"> </span>MB/s
 </pre></div>
 </div>
-<p>5. Read test:</p>
+<p>5. Read test.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@ok3506-buildroot:/#<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/run/media/sda1/test<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/null<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">iflag</span><span class="o">=</span>direct
 <span class="m">500</span>+0<span class="w"> </span>records<span class="w"> </span><span class="k">in</span>
 <span class="m">500</span>+0<span class="w"> </span>records<span class="w"> </span>out
