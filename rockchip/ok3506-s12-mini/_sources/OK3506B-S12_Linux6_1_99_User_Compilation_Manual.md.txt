@@ -312,9 +312,9 @@ forlinx@ubuntu:~$ mkdir -p /home/forlinx/work					//Create the working directory
 Copy the source code file OK 3506 \_ Linux \_ Source. tar. bz2. \* in the user profile to the virtual machine/home/forlinx/work directory.
 
 ```bash
-forlinx@ubuntu:~$ cd /home/forlinx/work														//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work				//Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK3506_Linux_Source.tar.bz2.* > OK3506_Linux_Source.tar.bz2
-forlinx@ubuntu:~/work$ tar -xvf OK3506_Linux_Source.tar.bz2				//Decompress the compressed package in the natural location
+forlinx@ubuntu:~/work$ tar -xvf OK3506_Linux_Source.tar.bz2		//Decompress the compressed package in the natural location
 forlinx@ubuntu:~/work$ cd /home/forlinx/work/OK3506-linux-source/buildroot
 forlinx@ubuntu:~/work/OK3506-linux-source/buildroot$ tar -vxf ../../dl.tar.bz2	//Unzip the dl. tar. bz2 under buildroot
 ```
