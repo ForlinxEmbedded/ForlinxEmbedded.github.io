@@ -884,13 +884,9 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 - **In theory, the Rockchip tool can be extracted to any directory, but some users have reported that the extraction path must contain only English characters. If the interface does not appear as shown below after opening the tool, try extracting it to an all-English directory.**
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png)
-
 After selecting the firmware, click Start. The loader device will be detected, and the flashing process will begin automatically.
 
 ![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
-
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png)
 
 #### 4.1.3 OTG Step Flashing Test
 
