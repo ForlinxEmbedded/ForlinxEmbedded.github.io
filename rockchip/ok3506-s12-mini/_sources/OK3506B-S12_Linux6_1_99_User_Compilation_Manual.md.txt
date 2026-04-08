@@ -409,7 +409,7 @@ forlinx@ubuntu: ~/work/OK3506_Linux_Source$ ./build.sh clean:recovery  	#Clear r
 
 **Note: The update.img file is for OTG flashing, while the other files are for step-by-step flashing. The \*.img file generated from separate compilation will not be updated in update.img. Use step-by-step flashing (refer to the OTG flashing section in the user manual).**
 
-### 4.4 Application Compilation and Running
+### 4.4 Application Compilation and Operation
 
 The SDK test programs are by default compiled using Buildroot, but can also be compiled directly. The following explains the direct compilation method.
 
