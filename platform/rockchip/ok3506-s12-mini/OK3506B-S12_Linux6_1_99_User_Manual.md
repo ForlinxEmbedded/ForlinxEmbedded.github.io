@@ -119,8 +119,8 @@ The debug serial port on the development board is a USB Type-C port. You can con
 
 ### 2.2 Driver Installation Failure
 
-+ Use DriverAssitant\_v5.13.zip in User Files\\Software\\3-Tools to install the Rockchip driver.
-+ After extracting the package, run DriverInstall.exe directly. To ensure that the latest driver is installed, click Uninstall Driver first, and then click Install Driver.
++ Use DriverAssitant\_v5.13.zip in User Files\\Software\\3-Tools to install the Rockchip driver;
++ After extracting the package, run DriverInstall.exe directly. To ensure that the latest driver is installed, click Uninstall Driver first, and then click Install Driver;
 + Use CH343SER.EXE in User Files\\Software\\3-Tools to install the serial port driver.
 
 ### 2.3 Serial Port Login
