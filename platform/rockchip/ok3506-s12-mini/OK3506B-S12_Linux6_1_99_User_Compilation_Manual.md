@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 |:----------:|:----------:|----------|
 | 04/09/2025 | V1.0| OK3506B-S12\_User’s Compilation Manual Initial Version |
 
-**Note: This Compilation Manual is only applicable to OK3506B-S12 development board of Forlinx.**
+**Note: This compilation manual is only applicable to OK3506B-S12 development board of Forlinx.**
 
 ## Overview
 
@@ -41,7 +41,7 @@ The manual includes explanations of some symbols and formats.
 | 📚 | Relevant explanations regarding the testing section|
 | ️️️🛤️ ️️ | Related paths.|
 | Blue font on a gray background| Refers to the command entered on the command line, which needs to be entered manually.|
-| Bold font.| Serial output information after command input|
+| Bold font | Serial output information after command input|
 | **Black Bold**| Key information in the serial output:|
 | <font style="color:#000000;">//</font>| Explanation of the input command or output information.|
 | Username@Hostname| root@ok3506-buildroot: The login account information for the development board via serial console;<br />forlinx@ok3506-buildroot: The login account information for the development board via network;<br/>forlinx@ubuntu: The login account information for the development environment on Ubuntu. |
@@ -55,9 +55,9 @@ forlinx@ubuntu:~/3506$ ls                             //List the files in this d
 OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.01
 ```
 
-+ forlinx@ubuntu: The username is forlinx, and the hostname is ubuntu, indicating that the operation is being performed in the development environment on Ubuntu.
-+ //: Explanation of the command. No need to enter this when typing the command.
-+ Ls: blue font with gray background, indicating the relevant command that needs to be entered manually
++ forlinx@ubuntu: The username is forlinx, and the hostname is ubuntu, indicating that the operation is being performed in the development environment on Ubuntu;
++ //: Explanation of the command. No need to enter this when typing the command;
++ Ls: blue font with gray background, indicating the relevant command that needs to be entered manually;
 + OK3506\_Linux\_Source: The output information after inputting the command is shown in black font, and the key information is in bold font. In this case, it refers to the packaged file system.
 
 ## 1\. VMware Virtual Machine Software Installation
@@ -126,8 +126,6 @@ Generate the checksum and compare it with the value in the checksum file. If the
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730769837121_d47df3f6_5507_4694_8dba_ba7ea0804ebe.png)
-
 Once the extraction is complete, you will obtain a folder named “3568 Development Environment.”
 
 **Note: The Ubuntu 22.04 development environment for models 3506, 3562, and 3568 is the same.**
@@ -140,11 +138,7 @@ Open the installed virtual machine software.
 
 Navigate to the directory where the "3568.vmx" file was extracted, and double-click to open the startup file.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730770320441_2cf924a2_dca8_4310_9c90_9c74ed10cf7b.png)
-
-Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface."
-
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730770392113_46f60b0b_8a73_4880_bb2c_316b0b3f8e49.png)
+Once it has finished loading, click to start the virtual machine, and you can run it and enter the system interface."
 
 The provided development environment is set to automatically log in to the account forlinx on startup by default.
 
