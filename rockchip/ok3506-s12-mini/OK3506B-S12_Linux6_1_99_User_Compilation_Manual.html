@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux6.1.99_User’s Compilation Manual_V1.0 &mdash; Forlinx Embedded RK3506 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Linux6.1.99_User’s Manual_V1.0" href="OK3506B-S12_Linux6_1_99_User_Manual.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="OK3506B-S12_Linux6_1_99_User_Manual.html">Linux6.1.99_User’s Manual_V1.0</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux6.1.99_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-and-purchasing-vmware-software">1.1 Downloading and Purchasing VMware Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vmware-software-installation">1.2 VMware Software Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-an-existing-ubuntu-development-environment">2. Loading an Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-a-new-ubuntu-development-environment">3. Setting Up a New Ubuntu Development Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ubuntu-system-setup"><strong>3.1 Ubuntu System Setup</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-an-ubuntu-virtual-machine"><strong>3.1.1 Creating an Ubuntu Virtual Machine</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-configuration-of-ubuntu"><strong>3.1.2 Basic Configuration of Ubuntu</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#virtual-machine-sleep-settings"><strong>3.1.2.3 Virtual Machine Sleep Settings</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#virtual-machine-swapfile-configuration"><strong>3.1.3 Virtual Machine Swapfile Configuration</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#virtual-machine-network-configuration"><strong>3.1.4 Virtual Machine Network Configuration</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#compilation-of-related-code">4. Compilation of Related Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-before-compilation">4.1 Preparation Before Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#environment-description">4.1.1 Environment Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#copying-the-source-code">4.1.2 Copying the Source Code</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#compilation">4.2 Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#full-compilation-test">4.2.1 Full Compilation Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#individual-compilation-test">4.2.2 Individual Compilation Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cleaning-up-generated-files">4.2.3 Cleaning up Generated Files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#use-of-image-files">4.3 Use of Image Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application-compilation-and-running">4.4 Application Compilation and Running</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configure-cross-compilation-toolchain">4.4.1 Configure Cross-Compilation Toolchain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#command-line-applications-compilation-and-operation">4.4.2 Command-Line Applications Compilation and Operation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lvgl-applications-compilation-and-operation">4.4.3 LVGL Applications Compilation and Operation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qt-applications-compilation-and-operation">4.4.4 QT Applications Compilation and Operation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html">RK Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded RK3506 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Linux6.1.99_User’s Compilation Manual_V1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="linux6-1-99-users-compilation-manual-v1-0">
+<h1>Linux6.1.99_User’s Compilation Manual_V1.0<a class="headerlink" href="#linux6-1-99-users-compilation-manual-v1-0" title="Link to this heading"></a></h1>
+<p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
+</section>
+<section id="revision-history">
+<h2>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
+<th class="head text-center"><p><strong>Version</strong></p></th>
+<th class="head"><p><strong>Revision History</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>04/09/2025</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td><p>OK3506B-S12_User’s Compilation Manual Initial Version</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note: This Compilation Manual is only applicable to OK3506B-S12 development board of Forlinx.</strong></p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This manual is designed to help you quickly understand the compilation process and become familiar with the compilation methods for Forlinx Embedded products. Before running applications on the development board, they must be cross-compiled on a Linux operating system. By following the methods outlined in this manual and engaging in hands-on exercises, you will be able to compile their own software code.</p>
+<p>The manual starts with instructions on setting up the development environment. Since unexpected issues may arise during this process, it is recommended that beginners use the pre-configured development environment. This approach allows for a faster start, reducing overall development time.</p>
+<p>There are generally three installation methods for Linux systems: dual-boot on a physical machine, single-boot on a physical machine, and using a virtual machine. This manual will focus on setting up Ubuntu within a virtual machine.</p>
+<p>Hardware Requirements: A minimum of 6GB of RAM is recommended. This will allow you to allocate 2GB or more to the virtual machine while still performing other tasks in Windows. Using less RAM may negatively impact the performance of Windows.</p>
+<p>There are total 4 chapters:</p>
+<ul class="simple">
+<li><p>Chapter 1 covers the installation of VMware, specifically version VMware® Workstation 15 Pro 15.1.0. VMware must be installed before setting up the Ubuntu development environment;</p></li>
+<li><p>Chapter 2 explains how to load the Ubuntu development environment provided by Feilin. The environment is based on 64-bit Ubuntu 22.04;</p></li>
+<li><p>Chapter 3 outlines the process of setting up a new Ubuntu development environment. Using 64-bit Ubuntu 22.04 as an example, this chapter describes the creation of the environment. Due to potential differences in computer configurations, unforeseen issues may arise. Beginners are advised to use the pre-configured environment to avoid complications.3. Setting Up a New Ubuntu Development Environment;</p></li>
+<li><p>Chapter 4 explains how to compile source code for the development board.</p></li>
+</ul>
+<p>The manual includes explanations of some symbols and formats.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><strong>Note</strong></p></td>
+<td><p>Note or particularly important information must be read carefully.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>Relevant explanations regarding the testing section</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>️️️🛤️ ️️</p></td>
+<td><p>Related paths.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Blue font on a gray background</p></td>
+<td><p>Refers to the command entered on the command line, which needs to be entered manually.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Bold font.</p></td>
+<td><p>Serial output information after command input</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><strong>Black Bold</strong></p></td>
+<td><p>Key information in the serial output:</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><font style="color:#000000;">//</font></p></td>
+<td><p>Explanation of the input command or output information.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Username&#64;Hostname</p></td>
+<td><p>root&#64;ok3506-buildroot: The login account information for the development board via serial console;<br />forlinx&#64;ok3506-buildroot: The login account information for the development board via network;<br/>forlinx&#64;ubuntu: The login account information for the development environment on Ubuntu.</p></td>
+</tr>
+</tbody>
+</table>
+<p>This information helps you identify the operational environment for various tasks.</p>
+<p>Example: After packaging the file system, use the ls command to view the generated files.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/3506$ ls                             //List the files in this directory
+OK3506_Linux_Source  OK3506_Linux_Source.tar.bz2.00 OK3506_Linux_Source.tar.bz2.01
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>forlinx&#64;ubuntu: The username is forlinx, and the hostname is ubuntu, indicating that the operation is being performed in the development environment on Ubuntu.</p></li>
+<li><p>//: Explanation of the command. No need to enter this when typing the command.</p></li>
+<li><p>Ls: blue font with gray background, indicating the relevant command that needs to be entered manually</p></li>
+<li><p>OK3506_Linux_Source: The output information after inputting the command is shown in black font, and the key information is in bold font. In this case, it refers to the packaged file system.</p></li>
+</ul>
+</section>
+<section id="vmware-virtual-machine-software-installation">
+<h2>1. VMware Virtual Machine Software Installation<a class="headerlink" href="#vmware-virtual-machine-software-installation" title="Link to this heading"></a></h2>
+<p>This chapter mainly introduces the installation of the VMware virtual machine, using VMware Workstation 15 Pro v15.5.6 as an example to demonstrate the operating system installation and configuration process.</p>
+<section id="downloading-and-purchasing-vmware-software">
+<h3>1.1 Downloading and Purchasing VMware Software<a class="headerlink" href="#downloading-and-purchasing-vmware-software" title="Link to this heading"></a></h3>
+<p>Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.</p>
+<p><img alt="Image" src="_images/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png" /></p>
+<p>After the download is complete, double-click the setup file to launch the installer.</p>
+</section>
+<section id="vmware-software-installation">
+<h3>1.2 VMware Software Installation<a class="headerlink" href="#vmware-software-installation" title="Link to this heading"></a></h3>
+<p>Double-click the setup file to enter the installation wizard.</p>
+<p><img alt="Image" src="_images/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57.png" /></p>
+<p>Click “Next.”</p>
+<p><img alt="Image" src="_images/1720169299827_654af716_3d46_4609_97ff_054e119673bb.png" /></p>
+<p>Check “I accept the terms in the license agreement” and click “Next.”</p>
+<p><img alt="Image" src="_images/1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png" /></p>
+<p>Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”</p>
+<p><img alt="Image" src="_images/1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png" /></p>
+<p>Check, then click “Next.”</p>
+<p><img alt="Image" src="_images/1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png" /></p>
+<p>Check “Add shortcuts” and click “Next.”</p>
+<p><img alt="Image" src="_images/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png" /></p>
+<p>Click “Install.”</p>
+<p><img alt="Image" src="_images/1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png" /></p>
+<p>Wait for the installation to complete.</p>
+<p><img alt="Image" src="_images/1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png" /></p>
+<p>After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.</p>
+</section>
+</section>
+<section id="loading-an-existing-ubuntu-development-environment">
+<h2>2. Loading an Existing Ubuntu Development Environment<a class="headerlink" href="#loading-an-existing-ubuntu-development-environment" title="Link to this heading"></a></h2>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>It is recommended that beginners directly use the virtual machine environment pre-configured by Forlinx, which already has the cross-compiler and Qt environment installed. After reviewing this chapter, you can skip directly to the compilation chapters;</strong></p></li>
+<li><p><strong>The provided development environment has a regular user account: forlinx, with password: forlinx. The superuser account is: root, with password: root.</strong></p></li>
+<li><p><strong>You can access software and hardware documentation, source code, and the development environment via the cloud storage link provided by Forlinx. Please ask your sales representative for the download link.</strong></p></li>
+</ul>
+<p>There are two ways to use the virtual machine environment in VMware: one is to directly load an existing environment, and the other is to create a new environment. First explain how to load an existing environment.</p>
+<p>First, download the development environment provided by Forlinx. The development environment package will include an MD5 checksum file. After downloading the package, you should perform an MD5 checksum verification on the compressed file using the MD5 checksum tool for Windows, which you can find at User Data\Software Tools\3-Tools\md5sums-1.2.zip.</p>
+<p>Generate the checksum and compare it with the value in the checksum file. If the checksums match, the downloaded file is valid. If they do not match, the file may be corrupted, and you should download it again.</p>
+<p><img alt="Image" src="_images/1730769768995_94fc9c91_8bff_4506_a222_04aa291b0abc.png" /></p>
+<p>Select all the compressed packages and right click to extract them to the current folder or your own directory:</p>
+<p><img alt="Image" src="_images/1730769837121_d47df3f6_5507_4694_8dba_ba7ea0804ebe.png" /></p>
+<p>Once the extraction is complete, you will obtain a folder named “3568 Development Environment.”</p>
+<p><strong>Note: The Ubuntu 22.04 development environment for models 3506, 3562, and 3568 is the same.</strong></p>
+<p>The file “3568.vmx” in the “3568 Development Environment” folder is the virtual machine file that needs to be opened.</p>
+<p>Open the installed virtual machine software.</p>
+<p><img alt="Image" src="_images/1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png" /></p>
+<p>Navigate to the directory where the “3568.vmx” file was extracted, and double-click to open the startup file.</p>
+<p><img alt="Image" src="_images/1730770320441_2cf924a2_dca8_4310_9c90_9c74ed10cf7b.png" /></p>
+<p>Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.”</p>
+<p><img alt="Image" src="_images/1730770392113_46f60b0b_8a73_4880_bb2c_316b0b3f8e49.png" /></p>
+<p>The provided development environment is set to automatically log in to the account forlinx on startup by default.</p>
+</section>
+<section id="setting-up-a-new-ubuntu-development-environment">
+<h2>3. Setting Up a New Ubuntu Development Environment<a class="headerlink" href="#setting-up-a-new-ubuntu-development-environment" title="Link to this heading"></a></h2>
+<p><strong>Note: Beginners should avoid building the system themselves; using the existing virtual machine environment is recommended. You can skip this section if building the environment isn’t necessary.</strong></p>
+<p>This chapter mainly explains the setup process of the Ubuntu system and the installation of Qt Creator. If QT is not used, the installation of Qt Creator can be ignored.</p>
+<section id="ubuntu-system-setup">
+<h3><strong>3.1 Ubuntu System Setup</strong><a class="headerlink" href="#ubuntu-system-setup" title="Link to this heading"></a></h3>
+<p>The installed Ubuntu version is 22.04, and all the introductions and development in this manual were carried out on Ubuntu 22.04. Download the “ubuntu-22.04.6-desktop-amd64.iso” version from https://releases.ubuntu.com/22.04/ (the specific version to download can be based on your own needs; here we use version 22.04.6 as an example).</p>
+<p><img alt="Image" src="_images/1730771033843_6436990d_2bc1_4115_a050_efa4c98863f7.png" /></p>
+<section id="creating-an-ubuntu-virtual-machine">
+<h4><strong>3.1.1 Creating an Ubuntu Virtual Machine</strong><a class="headerlink" href="#creating-an-ubuntu-virtual-machine" title="Link to this heading"></a></h4>
+<p><strong>Step 1</strong>: Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:</p>
+<p><img alt="Image" src="_images/1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png" /></p>
+<p><strong>Step 2</strong>: Select the compatibility for the corresponding VMware version (you can view the version under Help -&gt; About VMware Workstation). After confirming, click “Next”:</p>
+<p><img alt="Image" src="_images/1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png" /></p>
+<p>Choose “Installer disc image file (iso)” and click “Next”:</p>
+<p><img alt="Image" src="_images/1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png" /></p>
+<p>Enter the full name, username, and password, then click “Next”:</p>
+<p><img alt="Image" src="_images/1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png" /></p>
+<p>Enter the virtual machine name and configure the installation location, then click “Next”:</p>
+<p><img alt="Image" src="_images/1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png" /></p>
+<p>Configure the number of cores, then click “Next”:</p>
+<p><img alt="Image" src="_images/1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png" /></p>
+<p>Configure at least 8GB of memory and select “Next”:</p>
+<p><img alt="Image" src="_images/1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png" /></p>
+<p>Set the network type, use the default NAT networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.</p>
+<p><img alt="Image" src="_images/1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png" /></p>
+<p>Use the recommended I/O controller and click “Next”:</p>
+<p><img alt="Image" src="_images/1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png" /></p>
+<p>Use the recommended disk type and click “Next”:</p>
+<p><img alt="Image" src="_images/1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png" /></p>
+<p>Use the default option, “Create a new virtual disk”, and click “Next”:</p>
+<p><img alt="Image" src="_images/1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png" /></p>
+<p>Allocate a disk size of 200G and choose “Split virtual disk into multiple files”, then click “Next”:</p>
+<p><img alt="Image" src="_images/1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png" /></p>
+<p>Use the default settings and click “Next”:</p>
+<p><img alt="Image" src="_images/1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png" /></p>
+<p>Click “Finish”.</p>
+<p><img alt="Image" src="_images/1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png" /></p>
+<p><img alt="Image" src="_images/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png" /></p>
+<p>At this point, the virtual machine creation is complete. Afterward, click “Power on this virtual machine” to start installing the image. Please wait patiently. With the above, the Ubuntu system installation is complete.</p>
+</section>
+</section>
+<section id="basic-configuration-of-ubuntu">
+<h3><strong>3.1.2 Basic Configuration of Ubuntu</strong><a class="headerlink" href="#basic-configuration-of-ubuntu" title="Link to this heading"></a></h3>
+<p><strong>3.1.2.1 VMware Tools Installation</strong></p>
+<p>VMware Tools should be installed automatically after creating the virtual machine. If it is not successful, install it according to the following steps. Without this tool installed, you cannot use copy and paste or drag and drop files between the Windows host and the virtual machine. First, click “Virtual Machine” on the VMware navigation bar, then click “Install VMware Tools” in the dropdown menu.</p>
+<p><img alt="Image" src="_images/1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png" /></p>
+<p>After completion, enter Ubuntu. A VMware Tools CD will appear on the desktop; click to enter it.</p>
+<p><img alt="Image" src="_images/1730771946460_47f93c8a_72e6_4e35_b501_dfae1b28a58b.png" /></p>
+<p>After entering, you will see a compressed file VMware Tools-10.3.10-12406962. tar. gz (different virtual machine versions may be different), and copy the file to the home directory (that is, the directory of the home personal user name).</p>
+<p><img alt="Image" src="_images/1730771960270_018814b3_60d9_4ae2_bd26_807f2493d1cd.png" /></p>
+<p>Press [Ctrl+Alt+T] to bring up the terminal command interface and enter the command to extract it:</p>
+<p><img alt="Image" src="_images/1730771978710_e52e76d9_b4bf_4cff_a694_c5cab42ba60e.png" /></p>
+<p>After extraction completes, a folder named “vmware-tools-distrib” will appear.</p>
+<p><img alt="Image" src="_images/1730771995073_fec96427_d5e7_4ed1_bb8d_80f83a344e73.png" /></p>
+<p>Return to the terminal and type: cd vmware-tools-distrib to enter the directory. Then type: sudo ./vmware-install.pl and press Enter. Enter your password and the installation will begin. When prompted, type yes; otherwise, just press Enter to install the default settings.</p>
+<p><img alt="Image" src="_images/1730772008675_66b60f70_4165_495d_8133_fe57d8f45842.png" /></p>
+<p>After VMware Tools installation is complete, file copy-paste between Windows and Ubuntu will be enabled.</p>
+<p><strong>3.1.2.2 Virtual Machine Full-Screen Display</strong></p>
+<p>If the virtual machine cannot display in full screen, you can click on “View”, select “Auto-Adjust Size”, and then click “Autofit Guest” to resolve the full-screen issue.</p>
+<p><img alt="Image" src="_images/1730772026300_6bc60f00_11ba_4a9c_b734_f1bc161d9cc3.png" /></p>
+<p>Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.</p>
+<p><img alt="Image" src="_images/1730772043441_6f816146_3616_4a85_941a_9acdc4bee9db.png" /></p>
+<section id="virtual-machine-sleep-settings">
+<h4><strong>3.1.2.3 Virtual Machine Sleep Settings</strong><a class="headerlink" href="#virtual-machine-sleep-settings" title="Link to this heading"></a></h4>
+<p>Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -&gt; Power -&gt; Blank Screen and set it to “Never”.</p>
+<p><img alt="Image" src="_images/1730772063231_ce05c24d_3dd9_4165_abc7_ed83fc88b9f4.png" /></p>
+</section>
+</section>
+<section id="virtual-machine-swapfile-configuration">
+<h3><strong>3.1.3 Virtual Machine Swapfile Configuration</strong><a class="headerlink" href="#virtual-machine-swapfile-configuration" title="Link to this heading"></a></h3>
+<p>When creating the virtual machine, 8GB of memory was allocated. If 8GB of memory is insufficient during compilation, you need to modify the size of the swapfile.</p>
+</section>
+<section id="virtual-machine-network-configuration">
+<h3><strong>3.1.4 Virtual Machine Network Configuration</strong><a class="headerlink" href="#virtual-machine-network-configuration" title="Link to this heading"></a></h3>
+<p><strong>3.1.4.1 NAT Connection Mode</strong></p>
+<p>By default, after the virtual machine installation is complete, the network connection mode is set to NAT, as shown in the figure below, sharing an IP address with the host machine. This setting does not need to be changed when installing dependency packages, compiling code, etc. In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.</p>
+<p><img alt="Image" src="_images/1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png" /></p>
+<p><strong>3.1.4.2 Bridged Connection Mode</strong></p>
+<p>When the VMware virtual network adapter device is in bridged mode, the host network card and the virtual machine network card communicate through a virtual network bridge. In the Ubuntu environment, you need to set a network IP in the same subnet as the host. To access the external network, you need to set the DNS to be consistent with the host network card. If using servers like TFTP or SFTP, you need to set the virtual machine’s network connection to Bridged Mode.</p>
+<p><img alt="Image" src="_images/1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png" /></p>
+</section>
+</section>
+<section id="compilation-of-related-code">
+<h2>4. Compilation of Related Code<a class="headerlink" href="#compilation-of-related-code" title="Link to this heading"></a></h2>
+<section id="preparation-before-compilation">
+<h3>4.1 Preparation Before Compilation<a class="headerlink" href="#preparation-before-compilation" title="Link to this heading"></a></h3>
+<section id="environment-description">
+<h4>4.1.1 Environment Description<a class="headerlink" href="#environment-description" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Recommended Development OS: Ubuntu 22.04 64-bit</p></li>
+<li><p>Cross-Toolchain: arm-linux-gnu</p></li>
+<li><p>Bootloader Version for Development Board: u-boot-2017.09</p></li>
+<li><p>Kernel Version for Development Board: linux-6.1.99</p></li>
+<li><p>Qt Version Ported to Development Board: lvgl-9.2</p></li>
+</ul>
+</section>
+<section id="copying-the-source-code">
+<h4>4.1.2 Copying the Source Code<a class="headerlink" href="#copying-the-source-code" title="Link to this heading"></a></h4>
+<p>Program source code: User Data\2-Images and Source\1-Source\OK3506_Linux_Source.tar.bz2<br />
+Buildroot package: User Data\2-Images and Source\Source\dl.tar.bz2</p>
+<p>Create a working directory and place the source code and dl.tar.bz2 into the work directory.</p>
+<p><strong>Note:</strong></p>
+<p><strong>During the Buildroot build process, the source code for various software packages needs to be downloaded. This requires internet access and may fail or result in incomplete downloads due to network fluctuations, restrictions, or issues with the source server, potentially causing compilation errors.  To increase the success rate and reduce build time, it is strongly recommended to use the pre-configured solution by extracting the pre-downloaded software package archive dl.tar.bz2 into the Buildroot source directory.</strong></p>
+<p>Create Working Directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/home/forlinx/work<span class="w">					</span>//Create<span class="w"> </span>the<span class="w"> </span>working<span class="w"> </span>directory<span class="w"> </span><span class="k">in</span><span class="w"> </span>order
+</pre></div>
+</div>
+<p>Copy the source code file OK 3506 _ Linux _ Source. tar. bz2. * in the user profile to the virtual machine/home/forlinx/work directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/work<span class="w">														</span>//Switch<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>working<span class="w"> </span>directory
+forlinx@ubuntu:~/work$<span class="w"> </span>cat<span class="w"> </span>OK3506_Linux_Source.tar.bz2.*<span class="w"> </span>&gt;<span class="w"> </span>OK3506_Linux_Source.tar.bz2
+forlinx@ubuntu:~/work$<span class="w"> </span>tar<span class="w"> </span>-xvf<span class="w"> </span>OK3506_Linux_Source.tar.bz2<span class="w">				</span>//Decompress<span class="w"> </span>the<span class="w"> </span>compressed<span class="w"> </span>package<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>natural<span class="w"> </span>location
+forlinx@ubuntu:~/work$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/work/OK3506-linux-source/buildroot
+forlinx@ubuntu:~/work/OK3506-linux-source/buildroot$<span class="w"> </span>tar<span class="w"> </span>-vxf<span class="w"> </span>../../dl.tar.bz2<span class="w">	</span>//Unzip<span class="w"> </span>the<span class="w"> </span>dl.<span class="w"> </span>tar.<span class="w"> </span>bz2<span class="w"> </span>under<span class="w"> </span>buildroot
+</pre></div>
+</div>
+<p>Wait for the copy process to complete after running the command.</p>
+</section>
+</section>
+<section id="compilation">
+<h3>4.2 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h3>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>After extracting the kernel source code for the first time, you need to perform a full compilation of the source code;</strong></p></li>
+<li><p><strong>After the initial full compilation, you can proceed with individual compilations based on the actual situation.</strong></p></li>
+</ul>
+<section id="full-compilation-test">
+<h4>4.2.1 Full Compilation Test<a class="headerlink" href="#full-compilation-test" title="Link to this heading"></a></h4>
+<p>In the source code directory, there is a compilation script named build.sh. Running this script will compile the entire source code. You need to switch to the extracted source code path in the terminal and locate the build.sh file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/work/OK3506_Linux_Source
+</pre></div>
+</div>
+<p>The following operations need to be performed in the source code directory. Compilation method:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$./build.sh<span class="w"> </span>chip
+</pre></div>
+</div>
+<p>After executing, there will be options to input, as shown in the picture. After entering “1”, press Enter to continue.</p>
+<p><img alt="Image" src="_images/1735270990627_a6d12dba_3f31_489d_a460_ed8b34fa4a35.png" /></p>
+<p>Select an option from the box below and press Enter to continue.</p>
+<p><img alt="Image" src="_images/1761268257677_53841608_d854_488f_83ab_975c2a05b53b.png" /></p>
+<p><strong>Note: The above configuration only needs to be done once.</strong></p>
+<p>Then, execute build.sh for a full compilation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$./build.sh
+</pre></div>
+</div>
+<p>After a successful compilation, the corresponding image files will be generated in the rockdev folder.</p>
+<p><img alt="Image" src="_images/1735271219448_b053bff5_0f3b_4366_94e1_298e664a9acb.png" /></p>
+<p><strong>Note: The update.img file is for OTG flashing, while the other files are for step-by-step flashing.</strong></p>
+</section>
+<section id="individual-compilation-test">
+<h4>4.2.2 Individual Compilation Test<a class="headerlink" href="#individual-compilation-test" title="Link to this heading"></a></h4>
+<p>Before performing a separate compilation, a full compilation must be done in the kernel source directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configure SDK</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>bconfig
+
+<span class="c1"># Generate uboot.img，the output path will be u-boot/uboot.img</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>uboot
+
+<span class="c1">#Generate boot.img，the output path will be kernel/boot.img</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>kernel<span class="w"> </span>
+
+<span class="c1">#Generate rootfs.img，the output path will be buildroot/output/rockchip_ok3506_emmc/image/rootfs.ext2</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>rootfs
+
+<span class="c1"># Use the paths above for uboot.img, boot.img, and rootfs.ext2 to generate update.img, with the output path rockdev/update.img</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>updateimg
+</pre></div>
+</div>
+<p>After a separate compilation, the kernel in the update.img file is not updated. Please flash the corresponding files step by step, or regenerate the update.img.</p>
+<p>To configure the kernel using a graphical interface, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>kconfig
+</pre></div>
+</div>
+<p>After completing the configuration in the graphical interface, save and exit. The new configuration will automatically generate a new OK3506-S_linux_defconfig.</p>
+</section>
+<section id="cleaning-up-generated-files">
+<h4>4.2.3 Cleaning up Generated Files<a class="headerlink" href="#cleaning-up-generated-files" title="Link to this heading"></a></h4>
+<p><strong>Note: Uboot is not open-source, only the image is available.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>clean:kernel<span class="w">    	</span><span class="c1">#Clear kernel</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>clean:rootfs<span class="w">   	</span><span class="c1">#Clear rootfs</span>
+forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source$<span class="w"> </span>./build.sh<span class="w"> </span>clean:recovery<span class="w">  	</span><span class="c1">#Clear recovery</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="use-of-image-files">
+<h3>4.3 Use of Image Files<a class="headerlink" href="#use-of-image-files" title="Link to this heading"></a></h3>
+<p><strong>Note: The update.img file is for OTG flashing, while the other files are for step-by-step flashing. The *.img file generated from separate compilation will not be updated in update.img. Use step-by-step flashing (refer to the OTG flashing section in the user manual).</strong></p>
+</section>
+<section id="application-compilation-and-running">
+<h3>4.4 Application Compilation and Running<a class="headerlink" href="#application-compilation-and-running" title="Link to this heading"></a></h3>
+<p>The SDK test programs are by default compiled using Buildroot, but can also be compiled directly. The following explains the direct compilation method.</p>
+<section id="configure-cross-compilation-toolchain">
+<h4>4.4.1 Configure Cross-Compilation Toolchain<a class="headerlink" href="#configure-cross-compilation-toolchain" title="Link to this heading"></a></h4>
+<p>The packaged cross-compilation toolchain path: 01Software\3-Tool\arm-buildroot-linux-gnueabihf_sdk-buildroot.tar.gz</p>
+<p>1. Extract the toolchain to any directory, e.g., /home/forlinx/work/toolchain;</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/home/forlinx/work/toolchain
+forlinx@ubuntu:~$<span class="w"> </span>tar<span class="w"> </span>xf<span class="w"> </span>arm-buildroot-linux-gnueabihf_sdk-buildroot.tar.gz<span class="w"> </span>-C<span class="w"> </span>/home/forlinx/work/toolchain
+forlinx@ubuntu:~$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/work/toolchain
+</pre></div>
+</div>
+<p>2. Run relocate-sdk.sh;</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/toolchain$<span class="w"> </span>./relocate-sdk.sh
+</pre></div>
+</div>
+<p>3. Run environment-setup to set up environment variables.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/toolchain$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>./environment-setup
+</pre></div>
+</div>
+<p>The terminal will automatically configure the environment variables for the cross-compilation toolchain. You can check the current environment variables using the env command.</p>
+<p><strong>Note: After setting environment variables, the terminal cannot compile the full source code, and an error will occur. A new terminal must be used to compile the full source code.</strong></p>
+</section>
+<section id="command-line-applications-compilation-and-operation">
+<h4>4.4.2 Command-Line Applications Compilation and Operation<a class="headerlink" href="#command-line-applications-compilation-and-operation" title="Link to this heading"></a></h4>
+<p>This section uses the watchdog test program.</p>
+<p>1. Use cd to go to /home/forlinx/work;</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/work/OK3506_Linux_Source/app/forlinx/forlinx_cmd_demo/fltest_watchdog
+</pre></div>
+</div>
+<p>2. Use make for cross-compilation;</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:<span class="w"> </span>~/work/OK3506_Linux_Source/app/forlinx/forlinx_cmd_demo/fltest_watchdog$<span class="w"> </span>make
+arm-buildroot-linux-gnueabihf-gcc<span class="w"> </span>fltest_watchdog.c<span class="w"> </span>-o<span class="w"> </span>fltest_watchdog
+fltest_watchdog<span class="w"> </span>make<span class="w"> </span>finish!!!
+</pre></div>
+</div>
+<p>Use the file command to check the generated file information. It will show a 32-bit ARM file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_cmd_demo/fltest_watchdog$<span class="w"> </span>file<span class="w"> </span>fltest_watchdog
+fltest_watchdog:<span class="w"> </span>ELF<span class="w"> </span><span class="m">32</span>-bit<span class="w"> </span>LSB<span class="w"> </span>pie<span class="w"> </span>executable,<span class="w"> </span>ARM,<span class="w"> </span>EABI5<span class="w"> </span>version<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">(</span>SYSV<span class="o">)</span>,<span class="w"> </span>dynamically<span class="w"> </span>linked,<span class="w"> </span>interpreter<span class="w"> </span>/lib/ld-linux-armhf.so.3,<span class="w"> </span><span class="k">for</span><span class="w"> </span>GNU/Linux<span class="w"> </span><span class="m">3</span>.2.0,<span class="w"> </span>not<span class="w"> </span>stripped
+</pre></div>
+</div>
+<p>3. Copy the compiled fltest_watchdog file to the board using a USB drive or other methods, for example, to the /forlinx directory. The following example uses a USB drive to copy it to the development board and run the test.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>root@ok3506-buildroot:/<span class="o">]</span><span class="c1"># cp /run/media/sda1/fltest_watchdog /</span>
+<span class="o">[</span>root@ok3506-buildroot:/<span class="o">]</span><span class="c1"># /fltest_watchdog</span>
+Usage:<span class="w"> </span>fltest_watchdog<span class="w"> </span><span class="o">[</span>-t<span class="w"> </span>&lt;timeout&gt;<span class="o">]</span><span class="w"> </span><span class="o">[</span>-c<span class="o">]</span><span class="w"> </span><span class="o">[</span>-d/-e<span class="o">]</span>
+<span class="w">  </span>-t<span class="w"> </span>--timeout<span class="w">   </span><span class="nb">set</span><span class="w"> </span>timeout<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="m">10</span><span class="o">)</span>,<span class="w"> </span>range<span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>-<span class="w"> </span><span class="m">16</span><span class="o">)</span>
+<span class="w">  </span>-c<span class="w"> </span>--continue<span class="w">  </span><span class="nb">enable</span><span class="w"> </span>watchdog<span class="w"> </span>with<span class="w"> </span>feed<span class="w"> </span>dogs
+<span class="w">  </span>-d<span class="w"> </span>--disable<span class="w">   </span>disable<span class="w"> </span>watchdog,<span class="w"> </span>conflict<span class="w"> </span>with<span class="w"> </span><span class="nb">enable</span>
+<span class="w">  </span>-e<span class="w"> </span>--enable<span class="w">    </span><span class="nb">enable</span><span class="w"> </span>watchdog,<span class="w"> </span>conflict<span class="w"> </span>with<span class="w"> </span>disable
+</pre></div>
+</div>
+<p>4. Refer to the “Watchdog Test” section in the user manual for details.</p>
+</section>
+<section id="lvgl-applications-compilation-and-operation">
+<h4>4.4.3 LVGL Applications Compilation and Operation<a class="headerlink" href="#lvgl-applications-compilation-and-operation" title="Link to this heading"></a></h4>
+<p>This section shows how to compile an LVGL application using the Forlinx demo_lvgl as an example.</p>
+<p>demo_lvgl program source code: path: app/forlinx/forlinx_lvgl_demo/</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$<span class="w"> </span>./arm-buildroot-linux-gnueabihf_sdk-buildroot/relocate-sdk.sh
+forlinx@ubuntu:~/work$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>arm-buildroot-linux-gnueabihf_sdk-buildroot/environment-setup
+<span class="w"> </span>_<span class="w">           </span>_<span class="w"> </span>_<span class="w">     </span>_<span class="w">                 </span>_
+<span class="p">|</span><span class="w"> </span><span class="p">|</span>__<span class="w">  </span>_<span class="w">   </span>_<span class="o">(</span>_<span class="o">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>__<span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="w"> </span>__<span class="w"> </span>___<span class="w">   </span>___<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_
+<span class="p">|</span><span class="w"> </span><span class="s1">&#39;_ \| | | | | |/ _` | &#39;</span>__/<span class="w"> </span>_<span class="w"> </span><span class="se">\ </span>/<span class="w"> </span>_<span class="w"> </span><span class="se">\|</span><span class="w"> </span>__<span class="p">|</span>
+<span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="o">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="o">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="o">(</span>_<span class="o">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="p">|</span>_
+<span class="p">|</span>_.__/<span class="w"> </span><span class="se">\_</span>_,_<span class="p">|</span>_<span class="p">|</span>_<span class="p">|</span><span class="se">\_</span>_,_<span class="p">|</span>_<span class="p">|</span><span class="w">  </span><span class="se">\_</span>__/<span class="w"> </span><span class="se">\_</span>__/<span class="w"> </span><span class="se">\_</span>_<span class="p">|</span>
+
+<span class="w">       </span>Making<span class="w"> </span>embedded<span class="w"> </span>Linux<span class="w"> </span>easy!
+
+Some<span class="w"> </span>tips:
+*<span class="w"> </span>PATH<span class="w"> </span>now<span class="w"> </span>contains<span class="w"> </span>the<span class="w"> </span>SDK<span class="w"> </span>utilities
+*<span class="w"> </span>Standard<span class="w"> </span>autotools<span class="w"> </span>variables<span class="w"> </span><span class="o">(</span>CC,<span class="w"> </span>LD,<span class="w"> </span>CFLAGS<span class="o">)</span><span class="w"> </span>are<span class="w"> </span>exported
+*<span class="w"> </span>Kernel<span class="w"> </span>compilation<span class="w"> </span>variables<span class="w"> </span><span class="o">(</span>ARCH,<span class="w"> </span>CROSS_COMPILE,<span class="w"> </span>KERNELDIR<span class="o">)</span><span class="w"> </span>are<span class="w"> </span>exported
+*<span class="w"> </span>To<span class="w"> </span>configure<span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="s2">&quot;./configure </span><span class="nv">$CONFIGURE_FLAGS</span><span class="s2">&quot;</span><span class="w"> </span>or<span class="w"> </span>use
+<span class="w">  </span>the<span class="w"> </span><span class="s2">&quot;configure&quot;</span><span class="w"> </span><span class="nb">alias</span>
+*<span class="w"> </span>To<span class="w"> </span>build<span class="w"> </span>CMake-based<span class="w"> </span>projects,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span><span class="s2">&quot;cmake&quot;</span><span class="w"> </span><span class="nb">alias</span>
+</pre></div>
+</div>
+<p>Use CMake to compile the application.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>OK3506_Linux_Source/app/forlinx/forlinx_lvgl_demo/
+forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_lvgl_demo$<span class="w"> </span>cmake
+CMake<span class="w"> </span>Warning:
+<span class="w">  </span>No<span class="w"> </span><span class="nb">source</span><span class="w"> </span>or<span class="w"> </span>binary<span class="w"> </span>directory<span class="w"> </span>provided.<span class="w">  </span>Both<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>assumed<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>the
+<span class="w">  </span>same<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>working<span class="w"> </span>directory,<span class="w"> </span>but<span class="w"> </span>note<span class="w"> </span>that<span class="w"> </span>this<span class="w"> </span>warning<span class="w"> </span>will
+<span class="w">  </span>become<span class="w"> </span>a<span class="w"> </span>fatal<span class="w"> </span>error<span class="w"> </span><span class="k">in</span><span class="w"> </span>future<span class="w"> </span>CMake<span class="w"> </span>releases.
+
+
+--<span class="w"> </span>The<span class="w"> </span>C<span class="w"> </span>compiler<span class="w"> </span>identification<span class="w"> </span>is<span class="w"> </span>GNU<span class="w"> </span><span class="m">12</span>.4.0
+--<span class="w"> </span>The<span class="w"> </span>CXX<span class="w"> </span>compiler<span class="w"> </span>identification<span class="w"> </span>is<span class="w"> </span>GNU<span class="w"> </span><span class="m">12</span>.4.0
+--<span class="w"> </span>Detecting<span class="w"> </span>C<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info
+--<span class="w"> </span>Detecting<span class="w"> </span>C<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info<span class="w"> </span>-<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>working<span class="w"> </span>C<span class="w"> </span>compiler:<span class="w"> </span>/home/forlinx/work/toolchain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc<span class="w"> </span>-<span class="w"> </span>skipped
+--<span class="w"> </span>Detecting<span class="w"> </span>C<span class="w"> </span>compile<span class="w"> </span>features
+--<span class="w"> </span>Detecting<span class="w"> </span>C<span class="w"> </span>compile<span class="w"> </span>features<span class="w"> </span>-<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Detecting<span class="w"> </span>CXX<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info
+--<span class="w"> </span>Detecting<span class="w"> </span>CXX<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info<span class="w"> </span>-<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>working<span class="w"> </span>CXX<span class="w"> </span>compiler:<span class="w"> </span>/home/forlinx/work/toolchain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-g++<span class="w"> </span>-<span class="w"> </span>skipped
+--<span class="w"> </span>Detecting<span class="w"> </span>CXX<span class="w"> </span>compile<span class="w"> </span>features
+--<span class="w"> </span>Detecting<span class="w"> </span>CXX<span class="w"> </span>compile<span class="w"> </span>features<span class="w"> </span>-<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Configuring<span class="w"> </span><span class="k">done</span><span class="w"> </span><span class="o">(</span><span class="m">0</span>.3s<span class="o">)</span>
+--<span class="w"> </span>Generating<span class="w"> </span><span class="k">done</span><span class="w"> </span><span class="o">(</span><span class="m">0</span>.0s<span class="o">)</span>
+--<span class="w"> </span>Build<span class="w"> </span>files<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>written<span class="w"> </span>to:<span class="w"> </span>/home/forlinx/work/OK3506_Linux_Source/app/forlinx_lvgl_demo
+forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_lvgl_demo$<span class="w"> </span>make
+<span class="o">[</span><span class="w"> </span><span class="m">14</span>%<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span>C<span class="w"> </span>object<span class="w"> </span>CMakeFiles/demo_lvgl.dir/flow.c.o
+<span class="o">[</span><span class="w"> </span><span class="m">28</span>%<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span>C<span class="w"> </span>object<span class="w"> </span>CMakeFiles/demo_lvgl.dir/img_hand.c.o
+<span class="o">[</span><span class="w"> </span><span class="m">42</span>%<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span>C<span class="w"> </span>object<span class="w"> </span>CMakeFiles/demo_lvgl.dir/file_dialog.c.o
+<span class="o">[</span><span class="w"> </span><span class="m">57</span>%<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span>C<span class="w"> </span>object<span class="w"> </span>CMakeFiles/demo_lvgl.dir/custom.c.o
+<span class="o">[</span><span class="w"> </span><span class="m">71</span>%<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span>C<span class="w"> </span>object<span class="w"> </span>CMakeFiles/demo_lvgl.dir/window.c.o
+<span class="o">[</span><span class="w"> </span><span class="m">85</span>%<span class="o">]</span><span class="w"> </span>Building<span class="w"> </span>CXX<span class="w"> </span>object<span class="w"> </span>CMakeFiles/demo_lvgl.dir/main.cpp.o
+<span class="o">[</span><span class="m">100</span>%<span class="o">]</span><span class="w"> </span>Linking<span class="w"> </span>CXX<span class="w"> </span>executable<span class="w"> </span>demo_lvgl
+<span class="o">[</span><span class="m">100</span>%<span class="o">]</span><span class="w"> </span>Built<span class="w"> </span>target<span class="w"> </span>demo_lvgl
+forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_lvgl_demo$<span class="w"> </span>file<span class="w"> </span>demo_lvgl<span class="w"> </span>
+demo_lvgl:<span class="w"> </span>ELF<span class="w"> </span><span class="m">32</span>-bit<span class="w"> </span>LSB<span class="w"> </span>pie<span class="w"> </span>executable,<span class="w"> </span>ARM,<span class="w"> </span>EABI5<span class="w"> </span>version<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">(</span>SYSV<span class="o">)</span>,<span class="w"> </span>dynamically<span class="w"> </span>linked,<span class="w"> </span>interpreter<span class="w"> </span>/lib/ld-linux-armhf.so.3,<span class="w"> </span><span class="k">for</span><span class="w"> </span>GNU/Linux<span class="w"> </span><span class="m">3</span>.2.0,<span class="w"> </span>not<span class="w"> </span>stripped
+</pre></div>
+</div>
+<p>The result will show that a 32-bit ARM file is generated.</p>
+<p>Copy the compiled demo_lvgl and the resource files from the resource directory to the board using a USB drive or other methods. The following example uses a USB drive to copy the files to the development board and run the test.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@ok3506-buildroot:/#<span class="w"> </span>cp<span class="w"> </span>/run/media/sda1/forlinx_lvgl_demo/demo_lvgl<span class="w"> </span>/userdata/
+root@ok3506-buildroot:/#<span class="w"> </span>cp<span class="w"> </span>/run/media/sda1/forlinx_lvgl_demo/resource/*<span class="w"> </span>/userdata/
+root@ok3506-buildroot:/#<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/userdata
+root@ok3506-buildroot:/userdata#<span class="w"> </span>./demo_lvgl
+</pre></div>
+</div>
+</section>
+<section id="qt-applications-compilation-and-operation">
+<h4>4.4.4 QT Applications Compilation and Operation<a class="headerlink" href="#qt-applications-compilation-and-operation" title="Link to this heading"></a></h4>
+<p>This section demonstrates the compilation of a QT application using the Forlinx forlinx_qt_terminal as an example.</p>
+<p>demo_lvgl source code path: app/forlinx/forlinx_qt_demo/fltest_qt_terminal/</p>
+<p>Once the cross-compilation toolchain is set up, use qmake and make to compile the application.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>OK3506_Linux_Source/app/forlinx/forlinx_qt_demo/fltest_qt_terminal
+forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_qt_demo/fltest_qt_terminal$<span class="w"> </span>qmake
+forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_qt_demo/fltest_qt_terminal$<span class="w"> </span>make
+forlinx@ubuntu:~/work/OK3506_Linux_Source/app/forlinx/forlinx_qt_demo/fltest_qt_terminal$<span class="w"> </span>file<span class="w"> </span>fltest_qt_terminal
+fltest_qt_terminal:<span class="w"> </span>ELF<span class="w"> </span><span class="m">32</span>-bit<span class="w"> </span>LSB<span class="w"> </span>pie<span class="w"> </span>executable,<span class="w"> </span>ARM,<span class="w"> </span>EABI5<span class="w"> </span>version<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">(</span>SYSV<span class="o">)</span>,<span class="w"> </span>dynamically<span class="w"> </span>linked,<span class="w"> </span>interpreter<span class="w"> </span>/lib/ld-linux-armhf.so.3,<span class="w"> </span><span class="k">for</span><span class="w"> </span>GNU/Linux<span class="w"> </span><span class="m">3</span>.2.0,<span class="w"> </span>not<span class="w"> </span>stripped
+</pre></div>
+</div>
+<p>The result will show that a 32-bit ARM file is generated.</p>
+<p>Copy the compiled fltest_qt_terminal file to the board using a USB drive or other methods, and run the test.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
