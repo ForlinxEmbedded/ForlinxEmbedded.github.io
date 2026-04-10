@@ -35,7 +35,7 @@ The recovery system needs to be manually configured. It cannot directly copy the
 
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160214130.png)
 
-Just modify the file to add these; it is based on the simplest deconfig file modifications.
+To implement this, simply modify the `buildroot/buildroot-201902/configs/OK113I_linux_recovery_defconfig` file by adding these settings. It’s based on the simplest defconfig file.
 
 <details class="lake-collapse"><summary id="u46e61825"><span class="ne-text" style="font-size: 14px">OK113I_linux_recovery_defconfig</span></summary><p id="u1f453e0d" class="ne-p" style="margin: 0; padding: 0; min-height: 24px"><span class="ne-text" style="font-size: 14px">BR2_arm=y<br></span><span class="ne-text" style="font-size: 14px">BR2_cortex_a7=y<br></span><span class="ne-text" style="font-size: 14px">BR2_SVN="svn"<br></span><span class="ne-text" style="font-size: 14px">BR2_TOOLCHAIN_EXTERNAL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TOOLCHAIN_EXTERNAL_LINARO_ARMSF=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_HOSTNAME="ok113i"<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_ISSUE="Welcome to Allwinner Longan Platform"<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_EUDEV=y<br></span><span class="ne-text" style="font-size: 14px">BR2_SYSTEM_BIN_SH_BASH=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_GETTY_PORT="ttyS0"<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_GETTY_BAUDRATE_115200=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_TZ_INFO=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_POST_BUILD_SCRIPT="$(TOPDIR)/../../platform/config/buildroot/post_build.sh"<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_BUSYBOX_SHOW_OTHERS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_ZLIB=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_ROOTFS_CPIO=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_ROOTFS_CPIO_GZIP=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_DOSFSTOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_DTC=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_E2FSPROGS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_GENEXT2FS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_GENIMAGE=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_MTOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARCH_SUN55I=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARCH_SUN55IW6=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OTA_BURNBOOT=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_MTD=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_MTD_MKFSJFFS2=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_UBOOT_TOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCONFIG=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_SWUPDATE=y<br></span><span class="ne-text" style="font-size: 14px">SWUPDATE_CONFIG_MTD=y<br></span><span class="ne-text" style="font-size: 14px">SWUPDATE_CONFIG_UBIVOL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCEDARX=n<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCEDARC=n<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_OVERLAY="/home/forlinx/work/recovery_rootfs_test"<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_UBOOT_TOOLS=y <br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OTA_BURNBOOT=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCONFIG=y <br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCURL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBRSYNC=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OPENSSL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARM_EABI=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OPENSSH=y</span></p></details>
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160544401.png)
@@ -218,7 +218,7 @@ case "$1" in
 esac
 ```
 
-Environment variables also need to be modified: OK113i-linux-sdk/.buildconfig
+Environment variables also need to be modified: OK113i-linux-sdk/.buildconfig.
 
 Add the following at the end:
 
@@ -400,7 +400,7 @@ This file specifies the configuration file used by the recovery system kernel, a
 
 **Main System:**
 
-（OK113i-linux-sdk下）
+（Under OK113i-linux-sdk）
 
 ```shell
 ./build.sh menuconfig
@@ -410,7 +410,7 @@ This file specifies the configuration file used by the recovery system kernel, a
 
 **Recovery system:**
 
-（OK113i-linux-sdk/kernel/linux-5.4下）
+（Under OK113i-linux-sdk/kernel/linux-5.4）
 
 ```bash
 # Generate .config
@@ -447,13 +447,15 @@ The compilation script only declares some environment variables. Ultimately, mkk
 
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377273871_1612423c_0a6d_46f7_a8df_389f522f5e2c.webp)
 
+The system will ultimately generate the `boot.img` and `recovery.img` files in the path `/home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan`.
+
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377283165_e2c5d51f_bb07_40a0_9948_608b31754a3a.webp)
 
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377286920_f063c287_4b95_4f06_a810_4ec12a45c1b9.webp)
 
 ### 2.3 Uboot Configuration
 
-Modify the environment variables.
+Modify the environment variables, ```bash device/config/chips/t113_i/configs/ok113i/longan/env.cfg```
 
 ```bash
 #kernel command arguments
@@ -533,7 +535,7 @@ brandy/brandy-2.0/u-boot-2018/drivers/bootcount/bootcount_env.c:30:
 
 This modification will be made during the uboot startup, where environment variables are updated, overriding previous settings.
 
-After the change, you can use the fw\_printenv and fw\_setenv tools in the terminal to modify environment variables, allowing you to control whether the system boots into the main system or recovery system. The system can also be switched remotely via SSH.
+After the change, you can use the **fw\_printenv** and **fw\_setenv** tools in the terminal to modify environment variables, allowing you to control whether the system boots into the main system or recovery system. The system can also be switched remotely via SSH.
 
 ```bash
 fw_printenv
@@ -620,11 +622,11 @@ index 01136a2..032d1cc 100644
      bootstage_mark_name(BOOTSTAGE_ID_BOOTM_HANDOFF, "start_kernel");
 ```
 
-Directly manipulate the registers, as outlined in the 113 data manual. Simply follow the instructions in the manual.
+Directly control the registers, as outlined in the 113 data manual. Simply follow the instructions in the manual.
 
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429793453_1e2917f9_4955_4852_83f9_5e50109bb3cd.webp)
 
-One important point to note is that when manipulating the registers, a key must be added before the parameters to be written.
+Note that when controlling the registers, a key must be added before the parameters to be written.
 
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429803167_4a00e283_5819_44ef_a064_b8416821e8a8.webp)
 
@@ -670,9 +672,7 @@ Do a full compile so that if the kernel or file system gets stuck, the watchdog 
 
 **Uboot Counter**
 
-!\[img](./../../photo/T113 Linux5.4 OTA upgrade--recovery plan\_asssets/1756430661867-781dd756-1056-4cc0-990a-e0ebacabcc20.webp)
-
-The original documentation describes this process—simply follow the instructions. Modify the uboot deconfig file by adding the necessary changes.
+The original documentation (please ask from your sales representative) describes this process—simply follow the instructions. Modify the uboot deconfig file by adding the necessary changes.
 
 ```
 brandy/brandy-2.0/u-boot-2018/configs/OK113I_linux_defconfig
@@ -702,11 +702,11 @@ If the reset count exceeds the specified limit, the system will automatically bo
 
 Recovery System:
 
-!\[image-20260303112802822](./../../photo/T113 Linux5.4 OTA upgrade--recovery plan\_asssets/image-20260303112802822.png)
+![image.png](image.png)
 
-Add it to the startup script in the main system.
+Add ```bash "fw_setenv bootcount 0"``` to the boot script within the main system.
 
-!\[image-20260303112805700](./../../photo/T113 Linux5.4 OTA upgrade--recovery plan\_asssets/image-20260303112805700.png)
+![image.png](image-1775783532130.png)
 
 ### 2.4 Creating the Upgrade Package
 
@@ -1070,9 +1070,13 @@ After flashing, the system will boot into the main system by default. Upon reboo
 
 Mount the usr partition to view the stored upgrade package.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155948825.png)
+```
+mount /dev/mmcblk0p7 /mnt**
+```
 
-Execute the upgrade script if there is no problem
+![img](image.webp)
+
+Execute the upgrade script if there is no problem.
 
 ```
 **/etc/swupdate_cmd.sh -i /mnt/t113_i_ok113i-recovery.swu -e stable,upgrade_recovery**
