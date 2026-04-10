@@ -142,7 +142,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 <p><strong>Recovery system:</strong></p>
 <p>The recovery system needs to be manually configured. It cannot directly copy the main system’s deconfig file, as a system with too large a filesystem will not boot. Later tests showed that the recovery system’s filesystem must not exceed 11M; otherwise, the kernel will fail to boot.</p>
 <p><img alt="Image" src="_images/image_20260409160214130.png" /></p>
-<p>Just modify the file to add these; it is based on the simplest deconfig file modifications.</p>
+<p>To implement this, simply modify the <code class="docutils literal notranslate"><span class="pre">buildroot/buildroot-201902/configs/OK113I_linux_recovery_defconfig</span></code> file by adding these settings. It’s based on the simplest defconfig file.</p>
 <details class="lake-collapse"><summary id="u46e61825"><span class="ne-text" style="font-size: 14px">OK113I_linux_recovery_defconfig</span></summary><p id="u1f453e0d" class="ne-p" style="margin: 0; padding: 0; min-height: 24px"><span class="ne-text" style="font-size: 14px">BR2_arm=y<br></span><span class="ne-text" style="font-size: 14px">BR2_cortex_a7=y<br></span><span class="ne-text" style="font-size: 14px">BR2_SVN="svn"<br></span><span class="ne-text" style="font-size: 14px">BR2_TOOLCHAIN_EXTERNAL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TOOLCHAIN_EXTERNAL_LINARO_ARMSF=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_HOSTNAME="ok113i"<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_ISSUE="Welcome to Allwinner Longan Platform"<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_EUDEV=y<br></span><span class="ne-text" style="font-size: 14px">BR2_SYSTEM_BIN_SH_BASH=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_GETTY_PORT="ttyS0"<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_GETTY_BAUDRATE_115200=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_TZ_INFO=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_POST_BUILD_SCRIPT="$(TOPDIR)/../../platform/config/buildroot/post_build.sh"<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_BUSYBOX_SHOW_OTHERS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_ZLIB=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_ROOTFS_CPIO=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_ROOTFS_CPIO_GZIP=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_DOSFSTOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_DTC=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_E2FSPROGS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_GENEXT2FS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_GENIMAGE=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_MTOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARCH_SUN55I=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARCH_SUN55IW6=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OTA_BURNBOOT=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_MTD=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_MTD_MKFSJFFS2=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_UBOOT_TOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCONFIG=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_SWUPDATE=y<br></span><span class="ne-text" style="font-size: 14px">SWUPDATE_CONFIG_MTD=y<br></span><span class="ne-text" style="font-size: 14px">SWUPDATE_CONFIG_UBIVOL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCEDARX=n<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCEDARC=n<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_OVERLAY="/home/forlinx/work/recovery_rootfs_test"<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_UBOOT_TOOLS=y <br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OTA_BURNBOOT=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCONFIG=y <br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCURL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBRSYNC=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OPENSSL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARM_EABI=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OPENSSH=y</span></p></details>
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160544401.png)
 <p><strong>Modify the default hard floating point to soft floating point.</strong></p>
@@ -318,7 +318,7 @@ clean<span class="o">()</span>
 <span class="k">esac</span>
 </pre></div>
 </div>
-<p>Environment variables also need to be modified: OK113i-linux-sdk/.buildconfig</p>
+<p>Environment variables also need to be modified: OK113i-linux-sdk/.buildconfig.</p>
 <p>Add the following at the end:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LICHEE_PLAT_OUT_RECOVERY</span><span class="o">=</span>/home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan_recover
 <span class="nb">export</span><span class="w"> </span><span class="nv">LICHEE_BR_OUT_RECOVERY</span><span class="o">=</span>/home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan_recover/buildroot
@@ -454,14 +454,14 @@ cp<span class="w"> </span>/home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/
 <section id="kernel-configuration-compilation">
 <h4>2.2.2 Kernel Configuration, Compilation<a class="headerlink" href="#kernel-configuration-compilation" title="Link to this heading"></a></h4>
 <p><strong>Main System:</strong></p>
-<p>（OK113i-linux-sdk下）</p>
+<p>（Under OK113i-linux-sdk）</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./build.sh<span class="w"> </span>menuconfig
 ./build.sh<span class="w"> </span>saveconfig
 ./build.sh<span class="w"> </span>
 </pre></div>
 </div>
 <p><strong>Recovery system:</strong></p>
-<p>（OK113i-linux-sdk/kernel/linux-5.4下）</p>
+<p>（Under OK113i-linux-sdk/kernel/linux-5.4）</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate .config</span>
 make<span class="w"> </span>-C<span class="w"> </span>/home/forlinx/work/OK113i-linux-sdk/kernel/linux-5.4<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="nv">O</span><span class="o">=</span>/home/forlinx/work/OK113i-linux-sdk/out/kernel/build_recovery<span class="w"> </span><span class="se">\</span>
@@ -488,13 +488,14 @@ build<span class="w"> </span>recovery
 <p><img alt="Image" src="_images/1756377262598_33a9f983_0903_41c1_869c_86504c4a9947.webp" /></p>
 <p><img alt="Image" src="_images/1756377270264_27d7b4f0_1fb4_4e4c_81ce_062052b9e757_1775720921435.webp" /></p>
 <p><img alt="Image" src="_images/1756377273871_1612423c_0a6d_46f7_a8df_389f522f5e2c.webp" /></p>
+<p>The system will ultimately generate the <code class="docutils literal notranslate"><span class="pre">boot.img</span></code> and <code class="docutils literal notranslate"><span class="pre">recovery.img</span></code> files in the path <code class="docutils literal notranslate"><span class="pre">/home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan</span></code>.</p>
 <p><img alt="Image" src="_images/1756377283165_e2c5d51f_bb07_40a0_9948_608b31754a3a.webp" /></p>
 <p><img alt="Image" src="_images/1756377286920_f063c287_4b95_4f06_a810_4ec12a45c1b9.webp" /></p>
 </section>
 </section>
 <section id="uboot-configuration">
 <h3>2.3 Uboot Configuration<a class="headerlink" href="#uboot-configuration" title="Link to this heading"></a></h3>
-<p>Modify the environment variables.</p>
+<p>Modify the environment variables, <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">device/config/chips/t113_i/configs/ok113i/longan/env.cfg</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#kernel command arguments</span>
 <span class="nv">earlycon</span><span class="o">=</span>uart8250,mmio32,0x02500000
 <span class="nv">initcall_debug</span><span class="o">=</span><span class="m">0</span>
@@ -563,7 +564,7 @@ brandy/brandy-2.0/u-boot-2018/drivers/bootcount/bootcount_env.c:30:
 </pre></div>
 </div>
 <p>This modification will be made during the uboot startup, where environment variables are updated, overriding previous settings.</p>
-<p>After the change, you can use the fw_printenv and fw_setenv tools in the terminal to modify environment variables, allowing you to control whether the system boots into the main system or recovery system. The system can also be switched remotely via SSH.</p>
+<p>After the change, you can use the <strong>fw_printenv</strong> and <strong>fw_setenv</strong> tools in the terminal to modify environment variables, allowing you to control whether the system boots into the main system or recovery system. The system can also be switched remotely via SSH.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fw_printenv
 fw_setenv<span class="w"> </span>boot_partition<span class="w"> </span>boot
 fw_setenv<span class="w"> </span>boot_partition<span class="w"> </span>recovery
@@ -643,9 +644,9 @@ To prevent this, a uboot watchdog and counter should be introduced. The watchdog
 <span class="w"> </span>    bootstage_mark_name(BOOTSTAGE_ID_BOOTM_HANDOFF, &quot;start_kernel&quot;);
 </pre></div>
 </div>
-<p>Directly manipulate the registers, as outlined in the 113 data manual. Simply follow the instructions in the manual.</p>
+<p>Directly control the registers, as outlined in the 113 data manual. Simply follow the instructions in the manual.</p>
 <p><img alt="Image" src="_images/1756429793453_1e2917f9_4955_4852_83f9_5e50109bb3cd.webp" /></p>
-<p>One important point to note is that when manipulating the registers, a key must be added before the parameters to be written.</p>
+<p>Note that when controlling the registers, a key must be added before the parameters to be written.</p>
 <p><img alt="Image" src="_images/1756429803167_4a00e283_5819_44ef_a064_b8416821e8a8.webp" /></p>
 <p>The data manual specifies that without the key, modification cannot be done. Additionally, only certain timeout values for the watchdog are available.</p>
 <p><img alt="Image" src="_images/1756429813554_4e3db7de_c71b_4262_bbe7_e01b5a170254.webp" /></p>
@@ -678,8 +679,7 @@ rm -f \
 </div>
 <p>Do a full compile so that if the kernel or file system gets stuck, the watchdog is triggered.</p>
 <p><strong>Uboot Counter</strong></p>
-<p>![img](./../../photo/T113 Linux5.4 OTA upgrade–recovery plan_asssets/1756430661867-781dd756-1056-4cc0-990a-e0ebacabcc20.webp)</p>
-<p>The original documentation describes this process—simply follow the instructions. Modify the uboot deconfig file by adding the necessary changes.</p>
+<p>The original documentation (please ask from your sales representative) describes this process—simply follow the instructions. Modify the uboot deconfig file by adding the necessary changes.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brandy</span><span class="o">/</span><span class="n">brandy</span><span class="o">-</span><span class="mf">2.0</span><span class="o">/</span><span class="n">u</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="mi">2018</span><span class="o">/</span><span class="n">configs</span><span class="o">/</span><span class="n">OK113I_linux_defconfig</span>
 <span class="n">CONFIG_BOOTCOUNT_LIMIT</span><span class="o">=</span><span class="n">y</span>
 <span class="n">CONFIG_BOOTCOUNT_ENV</span><span class="o">=</span><span class="n">y</span>
@@ -701,9 +701,9 @@ Once bootcount reaches bootlimit, the altbootcmd command will automatically exec
 If the reset count exceeds the specified limit, the system will automatically boot into the recovery system.</p>
 <p><strong>Note: Ensure to reset the bootcount in the filesystem of both the main system and recovery system.</strong></p>
 <p>Recovery System:</p>
-<p>![image-20260303112802822](./../../photo/T113 Linux5.4 OTA upgrade–recovery plan_asssets/image-20260303112802822.png)</p>
-<p>Add it to the startup script in the main system.</p>
-<p>![image-20260303112805700](./../../photo/T113 Linux5.4 OTA upgrade–recovery plan_asssets/image-20260303112805700.png)</p>
+<p><img alt="Image" src="_images/image.png" /></p>
+<p>Add <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">&quot;fw_setenv</span> <span class="pre">bootcount</span> <span class="pre">0&quot;</span></code> to the boot script within the main system.</p>
+<p><img alt="Image" src="_images/image_1775783532130.png" /></p>
 </section>
 <section id="creating-the-upgrade-package">
 <h3>2.4 Creating the Upgrade Package<a class="headerlink" href="#creating-the-upgrade-package" title="Link to this heading"></a></h3>
@@ -1032,8 +1032,11 @@ new file mode 100755
 <p>After flashing, the system will boot into the main system by default. Upon reboot, it will enter the recovery system.</p>
 <p><img alt="Image" src="_images/image_20260409155939595.png" /></p>
 <p>Mount the usr partition to view the stored upgrade package.</p>
-<p><img alt="Image" src="_images/image_20260409155948825.png" /></p>
-<p>Execute the upgrade script if there is no problem</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mmcblk0p7</span> <span class="o">/</span><span class="n">mnt</span><span class="o">**</span>
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/image.webp" /></p>
+<p>Execute the upgrade script if there is no problem.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**/</span><span class="n">etc</span><span class="o">/</span><span class="n">swupdate_cmd</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">i</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">t113_i_ok113i</span><span class="o">-</span><span class="n">recovery</span><span class="o">.</span><span class="n">swu</span> <span class="o">-</span><span class="n">e</span> <span class="n">stable</span><span class="p">,</span><span class="n">upgrade_recovery</span><span class="o">**</span>
 </pre></div>
 </div>
