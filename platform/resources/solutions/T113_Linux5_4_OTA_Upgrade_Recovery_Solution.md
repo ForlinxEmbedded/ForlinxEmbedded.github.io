@@ -702,11 +702,11 @@ If the reset count exceeds the specified limit, the system will automatically bo
 
 Recovery System:
 
-![image.png](image.png)
+![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image.png)
 
 Add ```bash "fw_setenv bootcount 0"``` to the boot script within the main system.
 
-![image.png](image-1775783532130.png)
+![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_1775783532130.png)
 
 ### 2.4 Creating the Upgrade Package
 
@@ -1074,7 +1074,7 @@ Mount the usr partition to view the stored upgrade package.
 mount /dev/mmcblk0p7 /mnt**
 ```
 
-![img](image.webp)
+![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image.webp)
 
 Execute the upgrade script if there is no problem.
 
