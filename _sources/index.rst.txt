@@ -1,5 +1,5 @@
-Welcome to Forlinx Embedded Documentation
-==========================================
+Welcome to Forlinx Embedded Developer Center
+=============================================
 
 .. raw:: html
 
