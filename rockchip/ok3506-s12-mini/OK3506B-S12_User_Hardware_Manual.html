@@ -1,0 +1,1018 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0_OK3506B-S12硬件手册 &mdash; Forlinx Embedded RK3506 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/rockchip/ok3506-s12-mini/OK3506B-S12_User_Hardware_Manual.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Linux6.1.99_User’s Manual_V1.0" href="OK3506B-S12_Linux6_1_99_User_Manual.html" />
+    <link rel="prev" title="OK3506-S12 Mini Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">0_OK3506B-S12硬件手册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1"><strong>声明</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">概 述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">更新记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#rockchip-rk3506b">01_Rockchip RK3506B简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fet3506b-s">02_FET3506B-S核心板介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id4">2.1  核心板外观图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2.2  FET3506B-S核心板尺寸图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">2.3 性能参数</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">2.3.1  系统主频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2.3.2  供电参数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">2.3.3  工作环境</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">2.4  核心板接口资源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">2.5  FET3506B-S核心板引脚定义</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">2.5.1  FET3506B-S核心板引脚原理图</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">2.6  核心板硬件设计说明</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id14">03_飞凌OK3506B-S12嵌入式开发平台介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id15">3.1  OK3506B-S12开发板接口图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">3.2  OK3506B-S12开发板尺寸图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">3.3  底板命名规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">3.4  底板资源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ok3506x-s2">3.5  OK3506x-S2底板说明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">3.5.1  底板电源</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">3.5.2  按键</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boot">3.5.3 BOOT配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">3.5.4  调试串口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-download">3.5.5  USB Download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">3.5.6  百兆以太网</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tf">3.5.7  TF卡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mipi-dsi">3.5.8  MIPI-DSI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#raspberry-pi-40pin">3.5.9  Raspberry Pi 40PIN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#io">3.5.10 IO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">3.5.11  音频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb2-0">3.5.12  USB2.0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id24">04_连接器尺寸图</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#ok3506b-s12linux">05_OK3506B-S12开发板Linux系统整机功耗表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id25">06_最小系统原理图</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="OK3506B-S12_Linux6_1_99_User_Manual.html">Linux6.1.99_User’s Manual_V1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3506B-S12_Linux6_1_99_User_Compilation_Manual.html">Linux6.1.99_User’s Compilation Manual_V1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html">RK Development Manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded RK3506 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">0_OK3506B-S12硬件手册</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ok3506b-s12">
+<h1>0_OK3506B-S12硬件手册<a class="headerlink" href="#ok3506b-s12" title="Link to this heading"></a></h1>
+<p>版本：V1.1</p>
+<p>发布日期：2025.09.12</p>
+<p>文件密级：□绝密 □秘密 □内部资料 ■公开</p>
+</section>
+<section id="id1">
+<h1><strong>声明</strong><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>本手册版权归保定飞凌嵌入式技术有限公司所有。未经本公司的书面许可，任何单位和个人无权以任何形式复制、传播、转载本手册的任何部分，违者将被追究法律责任。</p>
+<p>保定飞凌嵌入式有限公司所提供的所有服务内容旨在协助用户加速产品的研发进度，在服务过程中所提供的任何程序、文档、测试结果、方案、支持等资料和信息，都仅供参考，用户有权不使用或自行参考修改，本公司不提供任何的完整性、可靠性等保证，若在用户使用过程中因任何原因造成的特别的、偶然的或间接的损失，本公司不承担任何责任。</p>
+</section>
+<section id="id2">
+<h1>概 述<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<p><font style="color:#333333;">本手册以使用户快速熟悉产品，了解接口功能和功能配置为目的，主要讲述了开发板接口功能，接口介绍，产品功耗，以及使用过程中出现的一些问题如何排查。在说明过程中，对一些命令进行了注释，方便</font>用户理解，以实用够用为主。涉及到引脚功能复用、硬件问题排查方法等请参考飞凌提供的《FET3506x-S引脚复用对照表》。</p>
+<ul class="simple">
+<li><p>本手册一共分为4部分：</p></li>
+<li><p>第一部分CPU整体概述，简单介绍了CPU性能和应用行业；</p></li>
+<li><p>第二部分核心板的整体介绍，包括连接器引脚的相关说明和功能介绍；</p></li>
+<li><p>第三部分开发板的整体介绍，分为多个章节介绍，包括了硬件原理和简单的设计思路两大部分；</p></li>
+<li><p>第四部分产品的功耗及其他说明，主要描述板子的功耗方面表现和其他注意事项。</p></li>
+<li><p>本手册中一些符号及格式的相关说明：</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>表现形式</strong></p></th>
+<th class="head"><p><strong>含义</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>⁉️</p></td>
+<td><p>注意或者是需要特别关注的信息，一定要仔细阅读</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>📚</p></td>
+<td><p>对测试章节做的相关说明</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>🛤️</p></td>
+<td><p>表示相关路径</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id3">
+<h1>更新记录<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>日期</strong></p></th>
+<th class="head text-center"><p><strong>手册版本</strong></p></th>
+<th class="head text-center"><p><strong>核心板版本</strong></p></th>
+<th class="head text-center"><p><strong>底板版本</strong></p></th>
+<th class="head"><p><strong>更新内容</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>2025.09.04</p></td>
+<td class="text-center"><p>V1.0</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>初版</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2025.09.12</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>1、在3.5.1底板电源章节下添加注意事项；<br/>2、修改第五章节的功耗表</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rockchip-rk3506b">
+<h1>01_Rockchip RK3506B简介<a class="headerlink" href="#rockchip-rk3506b" title="Link to this heading"></a></h1>
+<p>RK3506是瑞芯微推出的一款高性能应用处理器。该处理器采用22nm先进制程工艺，集成了3个ARM Cortex-A7内核，主频高达1.5GHz，并搭载一颗200MHz的M0内核，专为智能语音交互、音频输入/输出处理、图像输出处理和其他数字多媒体应用而设计。</p>
+<p>RK3506内置2D硬件引擎和显示输出引擎，可最大限度地减少CPU开销，以满足图像显示要求。</p>
+<p>RK3506内嵌丰富的外设接口，如I2S、PCM、TDM、PDM、SPDIF、Audio DSM、Audio ADC、USB2 OTG、RMII、CAN等，可满足不同应用开发需求，降低硬件开发复杂度和开发成本。</p>
+<p>RK3506具有高性能的外部存储器接口 （DDR2/DDR3/DDR3L），能够支持高要求的存储器带宽。</p>
+<p>OK3506B-S12开发板默认使用商业级处理器RK3506B。</p>
+<p><strong>RK3506B/J处理器框图</strong></p>
+<p><img alt="Image" src="_images/1756977478255_4ab6005a_ae34_44d0_b026_5ff0c1dc36fd.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="fet3506b-s">
+<h1>02_FET3506B-S核心板介绍<a class="headerlink" href="#fet3506b-s" title="Link to this heading"></a></h1>
+<section id="id4">
+<h2>2.1  核心板外观图<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>FET3506B-S核心板正面图（NAND版本）</p>
+<p><img alt="Image" src="_images/1756977480030_8184a13e_7f06_4977_a6da_71560c17887d.png" /></p>
+<p>FET3506B-S核心板背面图</p>
+<p><img alt="Image" src="_images/1756977480217_54e0649a_9834_4e68_9a2d_5b164e2af6e6.png" /></p>
+</section>
+<section id="id5">
+<h2>2.2  FET3506B-S核心板尺寸图<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1756977480334_4e8d9393_366f_4caf_a197_3fd7ead24a78.png" /></p>
+<p>结构尺寸：44mm×35mm，尺寸公差±0.13mm，更多尺寸信息参见DXF文件。</p>
+<p>制版工艺：厚度1.2mm，8层沉金PCB。</p>
+<p>邮票孔封装，共146个PIN。</p>
+<p>FET3506J-S与FET3506B-S尺寸相同，仅CPU不同。</p>
+</section>
+<section id="id6">
+<h2>2.3 性能参数<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id7">
+<h3>2.3.1  系统主频<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>名称</strong></p></th>
+<th class="head text-center"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>系统主频</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>—</p></td>
+<td><p>1.5</p></td>
+<td><p>GHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>系统RTC时钟</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>32.768</p></td>
+<td><p>—</p></td>
+<td><p>KHz</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id8">
+<h3>2.3.2  供电参数<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>参数</strong></p></th>
+<th class="head text-center"><p><strong>引脚标号</strong></p></th>
+<th class="head text-center"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>主电源电压</p></td>
+<td class="text-center"><p>VSYS</p></td>
+<td class="text-center"><p>4.75</p></td>
+<td><p>5</p></td>
+<td><p>5.25</p></td>
+<td><p>V</p></td>
+<td class="text-center"><p>—</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>空载电流</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p>54</p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>请见附录功耗表</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>重载电流</p></td>
+<td class="text-center"><p>—</p></td>
+<td class="text-center"><p></p></td>
+<td><p>145</p></td>
+<td><p></p></td>
+<td><p>mA</p></td>
+<td class="text-center"><p>请见附录功耗表</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id9">
+<h3>2.3.3  工作环境<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>参数描述</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>规格</strong></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head text-center"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p></p></td>
+<td class="text-center"><p><strong>最小</strong></p></td>
+<td><p><strong>典型</strong></p></td>
+<td><p><strong>最大</strong></p></td>
+<td><p><strong>单位</strong></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>工作温度</p></td>
+<td><p>工作环境</p></td>
+<td class="text-center"><p>-20</p></td>
+<td><p>25</p></td>
+<td><p>+80</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>商业级</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>存储环境</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td><p>工作环境</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+85</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p>工业级</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>存储环境</p></td>
+<td class="text-center"><p>-40</p></td>
+<td><p>25</p></td>
+<td><p>+125</p></td>
+<td><p>℃</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>湿度</p></td>
+<td><p>工作环境</p></td>
+<td class="text-center"><p>10</p></td>
+<td><p>—</p></td>
+<td><p>90</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p>无凝露</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td><p>存储环境</p></td>
+<td class="text-center"><p>5</p></td>
+<td><p>—</p></td>
+<td><p>95</p></td>
+<td><p>％RH</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id10">
+<h2>2.4  核心板接口资源<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>数量</strong></p></th>
+<th class="head"><p><strong>参数</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>USB2.0</p></td>
+<td class="text-center"><p>2</p></td>
+<td><p>支持一个USB2.0 HOST， 一个USB2.0 OTG，其中OTG支持镜像烧写</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART<sup>(1)</sup></p></td>
+<td class="text-center"><p>≤6</p></td>
+<td><p>其中UART3/UART4/UART5支持流控，最高波特率4Mbps</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SPI</p></td>
+<td class="text-center"><p>≤3</p></td>
+<td><p>其中SPI0/SPI1为通用SPI控制器，支持主模式和从模式；SPI2为SPI2APB控制器，只支持从模式，通常用于推送固件或其他数据流</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>I2C<sup>（2）</sup></p></td>
+<td class="text-center"><p>≤3</p></td>
+<td><p>最高速率可达1Mbit/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RMII</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>支持10/100Mbps 的RMII接口</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SARADC<sup>（3）</sup></p></td>
+<td class="text-center"><p>≤4</p></td>
+<td><p>10bits 分辨率，最大采样率1MS/s</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>FLEXBUS</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>FLEXBUS等效于并行16bit接口，分为FLEXBUS0/1两组</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Touch Key</p></td>
+<td class="text-center"><p>≤8</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>MIPI-DSI<sup>（4）</sup></p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>支持1路MIPI DSI TX ，2 -lanes，1.5Gbps/Lane，分辨率高达1280 x 1280&#64;60fps；</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RGB</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>支持 RGB 888 格式，分辨率高达 1280 x 1280&#64;60fps</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>DSMC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>支持1路master或者1路slave</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TF卡<sup>(5)</sup></p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>兼容SDIO3.0协议，4bits数据位宽</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SAI</p></td>
+<td class="text-center"><p>≤4</p></td>
+<td><p>支持协议I2S，PCM，TDM，最大采样率192kHz</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>ACODEC</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>RK3506内置ACODEC，支持1对差分MIC输入</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>PDM</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p>最大8个通道，采样率最高192KHz，master receive mode</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>SPDIF</p></td>
+<td class="text-center"><p>≤1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>CAN</p></td>
+<td class="text-center"><p>≤2</p></td>
+<td><p>支持CAN2.0B，数据速率8Mbps</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>PWM</p></td>
+<td class="text-center"><p>≤11</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>RM_IO</p></td>
+<td class="text-center"><p>≤32</p></td>
+<td><p>RM_IO是IO矩阵，共32个引脚</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>GPIO<sup>(6)</sup></p></td>
+<td class="text-center"><p>≤93</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>注：表中参数为硬件设计或CPU理论值；</p></li>
+</ul>
+<p>注：“TBD”指暂未开发功能。</p>
+<p>注（1）： UART0是调试串口，不建议用作其他功能，用户可用最多5个串口；</p>
+<p>注（2）： I2C2已在核心板外接地址为0x50的EEPROM，外接2K上拉至3V3，底板使用时需注意不要产生设备地址冲突。请注意，如果I2C2总线被外部破坏，会影响到核心板读取EEPROM数据，进而影响核心板正常启动。</p>
+<p>注（3）：SARADC_IN0专用于SYSTEM BOOT启动顺序的设置，不能用于其它功能；SARADC_IN1当作按键的键值输入采样，并复用为Recovery模式按键（不可修改），不建议用作普通ADC，用户最多数量为2个ADC；</p>
+<p>注（4）：RGB和MIPI-DSI共用一个VOP，只能单屏显示；</p>
+<p>注（5）：TF卡与核心板emmc共用一个SDMMC控制器，因此只有NAND版本核心板上的TF卡才可使用</p>
+<p>注（6）：MIPI_DSI相关6个引脚，只能用做GPO</p>
+</section>
+<section id="id11">
+<h2>2.5  FET3506B-S核心板引脚定义<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<section id="id12">
+<h3>2.5.1  FET3506B-S核心板引脚原理图<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1756977480425_fddd934c_3b13_465b_88c1_1a7ce33ba136.png" /></p>
+<p><img alt="Image" src="_images/1756977480538_e98f34cf_7429_4a54_99c4_e3b030dcec6a.png" /></p>
+</section>
+</section>
+<section id="id13">
+<h2>2.6  核心板硬件设计说明<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<p><strong>电源引脚</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>信号名称</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>默认功能</strong></p></th>
+<th class="head text-center"><p><strong>引脚号</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>电源</p></td>
+<td class="text-center"><p>VCC5V0_SYS</p></td>
+<td class="text-center"><p>电源输入</p></td>
+<td><p>核心板电源供电引脚5V，建议底板提供电流不少于2.0A</p></td>
+<td class="text-center"><p>2,3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>电源使能</p></td>
+<td class="text-center"><p>VCC_3V3</p></td>
+<td class="text-center"><p>电源输出</p></td>
+<td><p>仅用于控制底板外部电源的使能信号，由核心板输出</p></td>
+<td class="text-center"><p>5</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>地</p></td>
+<td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>地</p></td>
+<td><p>核心板电源地和信号地，所有GND引脚都需要连接</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>功能控制引脚</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>信号名称</strong></p></th>
+<th class="head text-center"><p><strong>I/O</strong></p></th>
+<th class="head"><p><strong>默认功能</strong></p></th>
+<th class="head text-center"><p><strong>引脚号</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>CPU复位</p></td>
+<td class="text-center"><p>NPOR_L</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>核心板电源复位，低电平有效，用户不要在该引脚添加额外的容性负载，以免影响核心板正常启动</p></td>
+<td class="text-center"><p>7</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>BOOT选择</p></td>
+<td class="text-center"><p>SARADC0_IN0_BOOT</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>信号接地时，启动板卡进入Maskrom下载模式。   下拉12K电阻为优先eMMC或SD Card启动；   悬空为优先FSPI启动；</p></td>
+<td class="text-center"><p>9</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>恢复模式</p></td>
+<td class="text-center"><p>SARADC0_IN1_RECOVERY/KEY</p></td>
+<td class="text-center"><p>I</p></td>
+<td><p>信号接地时，启动板卡进入Recovery下载模式</p></td>
+<td class="text-center"><p>10</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>调试串口</p></td>
+<td class="text-center"><p>UART0_TX_DEBUG   UART0_RX_DEBUG</p></td>
+<td class="text-center"><p>I/O</p></td>
+<td><p>调试串口，建议用户保留该端口功能</p></td>
+<td class="text-center"><p>12,13</p></td>
+</tr>
+</tbody>
+</table>
+<p>FET3506B-S核心板已经将电源、复位监控电路、存储电路集成于一个小巧的模块上，所需的外部电路非常简洁,构成一个最小系统只需要 5V 电源即可运行,如下图所示:</p>
+<p><img alt="Image" src="_images/1756977480649_d04ecd1a_bf88_4e5a_b6eb_b4ba8af75ca9.png" /></p>
+<p>最小系统原理图可以参见附录四。不过一般情况下，除最小系统外建议连接上一些外部设备，例如调试串口，镜像烧写端口，否则用户无法判断系统是否启动。做好这些后，再在此基础上根据飞凌提供的核心板默认接口定义来添加用户需要的功能。</p>
+<p>核心板外围电路的设计可参见第三章的3.5节“OK3506x-S2底板说明”。</p>
+</section>
+</section>
+<section id="id14">
+<h1>03_飞凌OK3506B-S12嵌入式开发平台介绍<a class="headerlink" href="#id14" title="Link to this heading"></a></h1>
+<section id="id15">
+<h2>3.1  OK3506B-S12开发板接口图<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<p>飞凌OK3506B-S12开发平台核心板和底板采用邮票孔的连接方式，主要接口如下图所示：</p>
+<p><img alt="Image" src="_images/1761270106914_a1df5014_bc07_487a_b47d_ad501662774f.png" /></p>
+</section>
+<section id="id16">
+<h2>3.2  OK3506B-S12开发板尺寸图<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<p><img alt="Image" src="_images/1756977482440_45e468eb_c5ad_419a_80bb_031116a94d4e.png" /></p>
+<p>PCB尺寸：105mm×65mm。</p>
+<p>固定孔尺寸：间距：97mm×57mm，孔径：3.2mm。</p>
+<p>制版工艺：厚度1.6mm，4层PCB。</p>
+<p>供电电压：直流5V。</p>
+</section>
+<section id="id17">
+<h2>3.3  底板命名规范<a class="headerlink" href="#id17" title="Link to this heading"></a></h2>
+<p>A-B-C+DEF:G-H</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>字段</strong></p></th>
+<th class="head text-center"><p><strong>字段描述</strong></p></th>
+<th class="head text-center"><p><strong>值</strong></p></th>
+<th class="head text-center"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>A</p></td>
+<td class="text-center"><p>产品线标示</p></td>
+<td class="text-center"><p>OK</p></td>
+<td class="text-center"><p>飞凌嵌入式底板</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-</p></td>
+<td class="text-center"><p>分隔符</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>B</p></td>
+<td class="text-center"><p>CPU名称</p></td>
+<td class="text-center"><p>3506</p></td>
+<td class="text-center"><p>RK3506</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>-</p></td>
+<td class="text-center"><p>分段标识</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>C</p></td>
+<td class="text-center"><p>连接方式</p></td>
+<td class="text-center"><p>S2</p></td>
+<td class="text-center"><p>邮票孔</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>+</p></td>
+<td class="text-center"><p>分段标识</p></td>
+<td class="text-center"><p>+</p></td>
+<td class="text-center"><p>此标识之后为配置参数部分</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>D</p></td>
+<td class="text-center"><p>类型标示</p></td>
+<td class="text-center"><p>M</p></td>
+<td class="text-center"><p>底板   （底板标示M，默认不填写）</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>E</p></td>
+<td class="text-center"><p>扩展板</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>E</p></td>
+<td class="text-center"><p>运行温度</p></td>
+<td class="text-center"><p>C</p></td>
+<td class="text-center"><p>0 to 70℃     商业级</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>I</p></td>
+<td class="text-center"><p>-40 to 85℃   工业级</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>F</p></td>
+<td class="text-center"><p>PCB版本号</p></td>
+<td class="text-center"><p>11</p></td>
+<td class="text-center"><p>V1.1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>xx</p></td>
+<td class="text-center"><p>Vx.x</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>:</p></td>
+<td class="text-center"><p>分隔符</p></td>
+<td class="text-center"><p>:</p></td>
+<td class="text-center"><p>此符号之后为厂家内部标示</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>G</p></td>
+<td class="text-center"><p>连接器产地及代号</p></td>
+<td class="text-center"><p>N</p></td>
+<td class="text-center"><p>不区分/无连接器</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>-</p></td>
+<td class="text-center"><p>连接符</p></td>
+<td class="text-center"><p>-</p></td>
+<td class="text-center"><p>等级标示连接符</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>H</p></td>
+<td class="text-center"><p>等级标示</p></td>
+<td class="text-center"><p>PC</p></td>
+<td class="text-center"><p>原型样品</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>空白</p></td>
+<td class="text-center"><p>大规模生产</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>SC</p></td>
+<td class="text-center"><p>专用的，据客户特殊要求进行专项修改</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id18">
+<h2>3.4  底板资源<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><strong>功能</strong></p></th>
+<th class="head text-center"><p><strong>数量</strong></p></th>
+<th class="head"><p><strong>参数</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>MIPI-DSI<sup>（1）</sup></p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>2-lane MIPI-DSI，支持电容触摸屏，支持背光亮度调整</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>RASPBERRYPI IO</p></td>
+<td class="text-center"><p>40</p></td>
+<td><p>兼容标准树莓派40PIN IO</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>IO&amp;POWER</p></td>
+<td class="text-center"><p>40</p></td>
+<td><p>引出一组IO排针，可复用成LCD，DSMC功能<sup>（2）</sup></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>TF Card</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>支持最大SDR52速率</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>KEY</p></td>
+<td class="text-center"><p>3</p></td>
+<td><p>预留RECOVERY,MASKROM,RESET三个按键</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>USB2.0</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>USB2.0</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Ethernet</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>标准RJ45插座引出，百兆端口</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Audio</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>立体声耳机输出，耳机录音</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>OTG</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>支持USB烧写固件</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>DEBUG</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p>集成在一个Type-C端口，可连接电脑进行调试</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>注：表中参数为硬件设计或CPU理论值；</p></li>
+</ul>
+<p>注（1）：MIPI-DSI和LCD存在接口复用，只能二选一使用；</p>
+<p>注（2）：DSMC和LCD不能同时使用</p>
+</section>
+<section id="ok3506x-s2">
+<h2>3.5  OK3506x-S2底板说明<a class="headerlink" href="#ok3506x-s2" title="Link to this heading"></a></h2>
+<p><strong>注：下图中元件位号有“_DNP”标识的，代表此元器件默认不焊接。</strong></p>
+<p><strong>注：本手册中原理图仅做接口说明，用户做硬件设计请参考源文件资料。</strong></p>
+<section id="id19">
+<h3>3.5.1  底板电源<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<p>底板电源为直流5V，由TYPE-C座引入。其中DEBUG接口P5直接引入5V，程序下载口经过一个二极管再引入。该直流电源经过稳压二极管（D1）和自恢复保险（F1）后给整板供电，网络名为SYS_5V。</p>
+<p>VDD_5V经过R8和R13两颗并联0欧电阻后转为VCC5V0_SYS，VCC5V0_SYS是核心板5V供电。核心板上电后，输出3.3V直流电压作为底板电源使能信号，网络为VCC_3V3_EN。</p>
+<p><img alt="Image" src="_images/1756977482540_d02107eb_74e7_4c02_810e_f880067da073.png" /></p>
+<p><img alt="Image" src="_images/1756977482626_26b4245e_a1f4_4c57_89a9_ba72af8f1667.png" /></p>
+<p><img alt="Image" src="_images/1756977482715_62dccc1b_9707_4a61_b50e_b685a6e34da1.png" /></p>
+<p>VCC_3V3_EN为高电平后，Q2导通。Q2导通后，Q1导通，使SYS_5V连通到VCC_5V网络，底板整板上电。</p>
+<p><img alt="Image" src="_images/1756977482847_607ca498_89d8_41bf_a81a_4c42bbde1305.png" /></p>
+<p>此部分电路是保证了核心板先上电，底板后上电，以防闩锁效应的发生损坏CPU。</p>
+<p>底板的3.3V由DC-DC提供，网络名为VCC_3V3。底板的1.8V由3.3V通过LDO转换提供，网络名为VCC_1V8。</p>
+<p><img alt="Image" src="_images/1756977482963_037e201f_f311_482f_9b7e_d7f8a21c0fad.png" /></p>
+<p><img alt="Image" src="_images/1756977483073_b29bbd24_d57d_4cd1_89e7_819b8c745244.png" /></p>
+<p><img alt="Image" src="_images/1756977485416_4efee308_57e6_4903_ae6f_39cb976c7e8b.png" /><strong>注意：</strong></p>
+<p><strong>1.推荐使用带独立供电的USB-HUB，以确保开发板有稳定供电；</strong></p>
+<p><strong>2.特别注意：当使用大功率外设时不要使用电脑USB口供电，大电流有烧坏电脑主板的风险！</strong></p>
+</section>
+<section id="id20">
+<h3>3.5.2  按键<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
+<p>NPOR_L为系统的复位按键，对应实物在底板右侧下方位置，丝印为 “RST”，按下后开发板复位重启。</p>
+<p>SARADC_IN0_BOOT为MASKROM按键，应实物在底板右侧下方位置，丝印为 “MROM”。在断电的时候按下此按键并上电，此时系统进入MASKROM烧写模式。</p>
+<p><img alt="Image" src="_images/1756977483166_a8da26d7_78b8_4e71_ae09_5b2c467e84f6.png" /></p>
+<p><img alt="Image" src="_images/1756977483287_f2d35126_c0dd_4587_9ece_bc1c963b69fa.png" /></p>
+<p>SARADC_IN1_RECOVER/KEY为系统用户按键和启动项选择按键。K3按键为RECOVERY/V+按键，在断电的时候按下此按键并上电，此时系统进入BOOTLOADER模式，启动系统后用户可以自定义成音量加键。对应实物在底板右侧下方位置，丝印为 “REC”。</p>
+<p><img alt="Image" src="_images/1756977483421_30920836_de63_4f78_b5eb_d09da83a5047.png" /></p>
+</section>
+<section id="boot">
+<h3>3.5.3 BOOT配置<a class="headerlink" href="#boot" title="Link to this heading"></a></h3>
+<p>SARADC_IN0_BOOT除了作为按键以外，也是系统启动项选择引脚。在板卡中通过R5电阻控制，可通过焊接/不焊接R5电阻进行控制。</p>
+<p><img alt="Image" src="_images/1756977483515_75fdec44_22c3_487e_bb66_025f972eadc6.png" /></p>
+<p>由于eMMC和TF卡使用的是同一组数据总线，只能同时使用其中一种。在使用eMMC版本的核心板时无法使用TF卡作为系统启动介质，也无法使用TF卡作为存储设备。</p>
+</section>
+<section id="id21">
+<h3>3.5.4  调试串口<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p>底板上使用一个USB Type-C做调试串口，使用数据线连接电脑，选择对应串口即可开启调试，同时此接口从电脑获取供电给整板供电。</p>
+<p><img alt="Image" src="_images/1756977483603_30d13169_a32c_457a_93df_6ab05d7965b7.png" /></p>
+<p><img alt="Image" src="_images/1756977485416_4efee308_57e6_4903_ae6f_39cb976c7e8b.png" />   <strong>注意:</strong></p>
+<p><strong>1.为方便后期调试，请用户在自行设计地板时将此调试串口引出。</strong></p>
+</section>
+<section id="usb-download">
+<h3>3.5.5  USB Download<a class="headerlink" href="#usb-download" title="Link to this heading"></a></h3>
+<p>在开发板右侧的USB Type-C接口可以实现固件烧写功能（位号P7），可以通过数据线连接电脑进行开发板镜像的烧写。也可以使用此TYPEC接口给整板进行供电，需注意由于经过D5二极管，此时整板电源会低于5V。</p>
+<p><img alt="Image" src="_images/1756977483712_a4963cd8_8dff_4be0_9637_d705ce559baa.png" /></p>
+<p><img alt="Image" src="_images/1756977483802_3b1ce40a_3c0c_458b_8290_529b6c63f651.png" /></p>
+</section>
+<section id="id22">
+<h3>3.5.6  百兆以太网<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<p>底板上提供了一路百兆以太网接口，使用RMII接口形式与PHY芯片相连，使用YT8512H作为PHY芯片，由RJ45插座引出，插座型号为FC62115BNL，内置隔离变压器。</p>
+<p><img alt="Image" src="_images/1756977483967_43ed9884_9624_4c11_a656_96f77c959ce2.png" /></p>
+<p><img alt="Image" src="_images/1756977484173_19ecb889_98c5_4656_815a_b059989d9004.png" /></p>
+<p><img alt="Image" src="_images/1756977484266_9bc86a62_10d7_4337_b3f9_285bf4f931cc.png" /></p>
+<p><img alt="Image" src="_images/1756977485484_d2916862_9289_4fe4_91a7_05c7db8fae17.png" />   <strong>注意：PCB设计时要保证PHY芯片有一个完整的地。</strong></p>
+</section>
+<section id="tf">
+<h3>3.5.7  TF卡<a class="headerlink" href="#tf" title="Link to this heading"></a></h3>
+<p>开发板 TF Card 为 CPU 的 SDMMC通道，该通道也被核心板的eMMC使用，故无法在eMMC配置的开发板上使用TF Card。</p>
+<p><img alt="Image" src="_images/1756977484420_82bf1bb2_352d_468e_b632_ed7270d9659f.png" /></p>
+<p><img alt="Image" src="_images/1756977485550_be2f184a_677b_4e9d_9059_d505fc49a30e.png" />   <strong>注意：</strong></p>
+<p><strong>1.总线上拉电阻已经在核心板上做适配，底板不能对总线做上拉处理；</strong></p>
+<p><strong>2. TF 卡属于可热插拔设备，请做 ESD 防护；</strong></p>
+<p><strong>3. SD 信号需要做等长。</strong></p>
+</section>
+<section id="mipi-dsi">
+<h3>3.5.8  MIPI-DSI<a class="headerlink" href="#mipi-dsi" title="Link to this heading"></a></h3>
+<p>开发板上位号P13 FPC座可以连接MIPI-DSI显示屏，连接器是30P。支持2 lane MIPI-DSI连接，1.5Gbps/lane，支持I2C接口的触摸屏。</p>
+<p><img alt="Image" src="_images/1756977484555_903fe5d3_fa00_4ac4_b36d_4f3751b5857d.png" /></p>
+<p><img alt="Image" src="_images/1756977484644_39f44475_97f5_4ebe_b57a_27a1a0eed178.png" /></p>
+<p><img alt="Image" src="_images/1756977484747_41e152b1_7a47_429a_9f99_9c1bcfba38ad.png" /></p>
+</section>
+<section id="raspberry-pi-40pin">
+<h3>3.5.9  Raspberry Pi 40PIN<a class="headerlink" href="#raspberry-pi-40pin" title="Link to this heading"></a></h3>
+<p>底板上预留了兼容树莓派40pin的定义，在P9排针引出。</p>
+<p><img alt="Image" src="_images/1756977484919_156a2a5d_5b0f_4fbc_a611_1883b60b1d4f.png" /></p>
+</section>
+<section id="io">
+<h3>3.5.10 IO<a class="headerlink" href="#io" title="Link to this heading"></a></h3>
+<p>开发板上位号P14 排针预留了IO接口，该接口可复用成LCD或DSMC功能，用户可自行选择功能使用。需注意音频功能也在这里面引出，占用数据线D2，D3，D9，D10，某些功能无法同时使用。</p>
+<p><img alt="Image" src="_images/1756977485031_c68a2916_5818_43c6_899c_057d1b2bb26b.png" /></p>
+</section>
+<section id="id23">
+<h3>3.5.11  音频<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+<p>开发板设计了标准的 3.5mm 耳机插孔（CTIA国际标准），位号P3，实现了双声道耳机播放和单声道MIC 录音的功能；</p>
+<p><img alt="Image" src="_images/1756977485120_f6d4918a_d28a_47fc_89c6_dd29b305cd38.png" /></p>
+<p><img alt="Image" src="_images/1756977485192_12cc718e_99cb_4ccf_a046_352d7d9dc0bf.png" /></p>
+<p><img alt="Image" src="_images/1756977485264_edbda0fb_458a_4958_bcfe_90a5d59b509a.png" /></p>
+</section>
+<section id="usb2-0">
+<h3>3.5.12  USB2.0<a class="headerlink" href="#usb2-0" title="Link to this heading"></a></h3>
+<p>开发板板载了一路 USB2.0，使用USB2.0-A 接口，位号P6，可外接U盘等设备。</p>
+<p><img alt="Image" src="_images/1756977485344_acdb3973_9df1_4803_8533_b5a0a57f645d.png" /></p>
+</section>
+</section>
+</section>
+<section id="id24">
+<h1>04_连接器尺寸图<a class="headerlink" href="#id24" title="Link to this heading"></a></h1>
+<p>邮票孔封装，尺寸参照封装库。</p>
+</section>
+<section id="ok3506b-s12linux">
+<h1>05_OK3506B-S12开发板Linux系统整机功耗表<a class="headerlink" href="#ok3506b-s12linux" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>编号</p></th>
+<th class="head text-center"><p>测试项目</p></th>
+<th class="head text-center"><p>CPU温度</p></th>
+<th class="head text-center"><p>使用率</p></th>
+<th class="head"><p>开发板供电电压（核心板+底板）（V）</p></th>
+<th class="head"><p>开发板工作电流（核心板+底板（mA）</p></th>
+<th class="head"><p>开发板功率     （核心板+底板）（W）</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>无负载启动峰值功耗</p></td>
+<td class="text-center"><p>/</p></td>
+<td class="text-center"><p>/</p></td>
+<td><p>5±5%</p></td>
+<td><p>200.176</p></td>
+<td><p>1.01</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-center"><p>休眠功耗</p></td>
+<td class="text-center"><p>/</p></td>
+<td class="text-center"><p>/</p></td>
+<td><p>5±5%</p></td>
+<td><p>92.111</p></td>
+<td><p>0.46</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>3</p></td>
+<td class="text-center"><p>无负载待机功耗</p></td>
+<td class="text-center"><p>29.75℃</p></td>
+<td class="text-center"><p>CPU使用率：空闲     DDR使用率：15%</p></td>
+<td><p>5±5%</p></td>
+<td><p>95.149</p></td>
+<td><p>0.48</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>4</p></td>
+<td class="text-center"><p>USB读写功耗</p></td>
+<td class="text-center"><p>31.53℃</p></td>
+<td class="text-center"><p>CPU使用率：36%     DDR使用率：16%</p></td>
+<td><p>5±5%</p></td>
+<td><p>193.85</p></td>
+<td><p>0.97</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>5</p></td>
+<td class="text-center"><p>TF卡读写功耗</p></td>
+<td class="text-center"><p>30.85℃</p></td>
+<td class="text-center"><p>CPU使用率：37.4%     DDR使用率：16%</p></td>
+<td><p>5±5%</p></td>
+<td><p>139.873</p></td>
+<td><p>0.70</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>6</p></td>
+<td class="text-center"><p>网口打流功耗</p></td>
+<td class="text-center"><p>33.32℃</p></td>
+<td class="text-center"><p>CPU使用率：/     DDR使用率：15%</p></td>
+<td><p>5±5%</p></td>
+<td><p>140.492</p></td>
+<td><p>0.70</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>7</p></td>
+<td class="text-center"><p>7寸MIPI屏功耗</p></td>
+<td class="text-center"><p>33.32℃</p></td>
+<td class="text-center"><p>CPU使用率：19.4%     DDR使用率：15%</p></td>
+<td><p>5±5%</p></td>
+<td><p>562.775</p></td>
+<td><p>2.81</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>8</p></td>
+<td class="text-center"><p>CPU压力+内存压力+EMMC读写压力测试功耗</p></td>
+<td class="text-center"><p>35.69℃</p></td>
+<td class="text-center"><p>CPU使用率：100%     DDR使用率：93%</p></td>
+<td><p>5±5%</p></td>
+<td><p>177.337</p></td>
+<td><p>0.89</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>注：</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>■电流测试：测试时间保持10S左右，记录电流平均值。</p></li>
+<li><p>■U-BOOT：U-Boot 2017.09-g3fe339f #zmx (Jul 10 2025 - 10:06:23 +0800)</p></li>
+<li><p>■内核版本：Linux ok3506-buildroot 6.1.99 #1 SMP PREEMPT Thu Jul 10 10:21:30 CST 2025 armv7l GNU/Linux</p></li>
+<li><p>功耗仅供参考。</p></li>
+</ol>
+</section>
+<section id="id25">
+<h1>06_最小系统原理图<a class="headerlink" href="#id25" title="Link to this heading"></a></h1>
+<p><strong>最小系统包括核心板，电源，调试串口，系统镜像烧写接口。</strong></p>
+<p><img alt="Image" src="_images/1756977489899_8e7dc0d1_671f_489f_baea_3fc2b181e86c.png" /></p>
+<p><img alt="Image" src="_images/1756977490049_80095394_e2a0_4365_8cf3_dfd44030a817.png" /></p>
+<p><img alt="Image" src="_images/1756977490148_ca80497e_2601_4e41_ae09_fdaf24b0952c.png" /></p>
+<p><img alt="Image" src="_images/1756977490249_17d9895b_1092_4e9b_98b4_96fb9912ac82.png" /></p>
+<p><img alt="Image" src="_images/1756977490352_fd0bd900_96f7_4e7e_ac6e_948cf4dcca36.png" /></p>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
