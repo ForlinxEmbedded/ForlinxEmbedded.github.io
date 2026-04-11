@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK3506B-S12_User_Hardware_Manual
+
    
 
 
