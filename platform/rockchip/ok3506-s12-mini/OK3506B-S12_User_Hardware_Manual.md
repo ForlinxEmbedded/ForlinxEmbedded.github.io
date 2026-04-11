@@ -169,16 +169,16 @@ The six pins related to MIPI\_DSI can only be used as GPO.
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
 |:----------:|:----------:|:----------:|----------|:----------:|
 | Power supply| VCC5V0\_SYS| Power Input| Power Supply for SoM:  <br />Voltage: 5V <br />Current: The carrier board must provide a minimum continuous current of 2.0A. |2.3|
-| Power enable| VCC\_3V3| Power output| It is an enable signal used exclusively for controlling the external power of the carrier board, output by the SoM. | 5|
-| Ground| GND| Ground| Power ground and signal ground on the SoM. All GND pins must be connected.|
+| Power enable| VCC\_3V3| Power output| It is an enable signal used exclusively for controlling the external power of <br />the carrier board, output by the SoM. | 5|
+| Ground| GND| Ground| Power ground and signal ground on the SoM. All GND pins must be connected.||
 
 **System Control Pin**
 
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
 |:----------:|:----------:|:----------:|----------|:----------:|
-| CPU reset| NPOR\_L| I| SoM power reset, low level effective. Do not add additional capacitive load to this pin, so as not to affect the SoM normal startup.| 7|
-| BOOT selection| SARADC0\_IN0\_BOOT| I| When the signal is grounded, the startup card enters the Maskrom download mode.   Pulling down with a 12K resistor prioritizes booting from eMMC or SD Card; leaving it floating prioritizes booting from FSPI.| 9|
-| Reset mode| SARADC0\_IN1\_RECOVERY/KEY| I| When the signal is grounded, the startup card enters the Recovery download mode| 10|
+| CPU reset| NPOR\_L| I| SoM power reset, low level effective. Do not add additional capacitive load to this pin, <br />so as not to affect the SoM normal startup. | 7|
+| BOOT selection| SARADC0\_IN0\_BOOT| I| When the signal is grounded, the startup card enters the Maskrom download mode.   <br />Pulling down with a 12K resistor prioritizes booting from eMMC or SD Card; leaving it floating prioritizes booting from FSPI. | 9|
+| Reset mode| SARADC0\_IN1\_RECOVERY/KEY| I| When the signal is grounded, the startup card enters the Recovery download mode. | 10|
 | Debug Port| UART0\_TX\_DEBUG   UART0\_RX\_DEBUG| I/O| Debug Port, please keep the port functions.| 12.13|
 
 The FET3506B-S SoM integrates the power supply, reset monitoring circuit, and memory circuits into a compact module, requiring minimal external circuitry. To form a minimal operational system, only a 5V power supply is needed, as shown in the following diagram:
@@ -402,7 +402,7 @@ The development board is equipped with a USB 2.0 host port, implemented via a US
 
 Stamp hole packaging. Refer to the packaging library for the size.
 
-## 5\. OK3506B-S12 Development Board Linux Consumption Table
+## 5\. Development Board Linux Consumption Table
 
 | No.| Item| CPU Temperature| Usage Rate| Development Board Power Supply (SoM+Carrier Board) （V）| Development Board Operating Current (SoM+Carrier Board) （mA）| Development Board Power (SoM+Carrier Board) (W)|
 |:----------:|:----------:|:----------:|:----------:|----------|----------|----------|
