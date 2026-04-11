@@ -117,12 +117,12 @@ The FET3506J-S and FET3506B-S share the same form factor, differing only in the 
 |:----------:|:----------:|----------|
 | USB2.0| 2| Support 1 x USB2.0 HOST and 1 x USB 2.0 OTG, wherein the OTG supports image flashing.|
 | UART<sup>(1)</sup>| ≤6| UART3, UART4, and UART5 support flow control, with a maximum baud rate of 4 Mbps.|
-| SPI| ≤3| SPI0 and SPI1 are general-purpose SPI controllers supporting both master and slave modes. SPI2 is an SPI2APB controller, supporting slave mode only, typically used for firmware updates or other data streams|
+| SPI| ≤3| SPI0 and SPI1 are general-purpose SPI controllers supporting both master and slave modes. <br />SPI2 is an SPI2APB controller, supporting slave mode only, typically used for firmware updates or other data streams |
 | I2C<sup>（2）</sup>| ≤3| Up to 1Mbit/s|
 | RMII| ≤2| Supports RMII interface of 10/100Mbps|
 | SARADC<sup>（3）</sup>| ≤4| 10bits, sampling rate up to 1MS/s|
 | FLEXBUS| ≤1| FLEXBUS is equivalent to parallel 16 bit interface and is divided into two groups of FLEXBUS 0/1.|
-| Touch Key| ≤8|
+| Touch Key| ≤8||
 | MIPI-DSI<sup>（4）</sup>| ≤1| Support 1 x MIPI DSI TX, 2-lanes, 1.5Gbps/Lane, resolution up to 1280 X 1280 @ 60fps;|
 | RGB| ≤1| Supports RGB 888 format with resolution up to 1280 X 1280 @ 60fps|
 | DSMC| ≤1| Support 1 x master or 1 x slave|
@@ -130,11 +130,11 @@ The FET3506J-S and FET3506B-S share the same form factor, differing only in the 
 | SAI| ≤4| Supports protocol I2S, PCM, TDM, sampling rate up to 192kHz|
 | ACODEC| ≤1| RK3506 has built-in ACODEC and supports 1 pair of differential MIC inputs|
 | PDM| ≤1| Up to 8 channels, sampling rate up to 192KHz, master receive mode|
-| SPDIF| ≤1|
+| SPDIF| ≤1||
 | CAN| ≤2| Supports CAN2.0B, data rate up to 8Mbps|
-| PWM| ≤11|
+| PWM| ≤11||
 | RM\_IO| ≤32| RM \_ IO is an IO matrix of 32 pins|
-| GPIO<sup>(6)</sup>| ≤93|
+| GPIO<sup>(6)</sup>| ≤93||
 
 **Note:** 
 
