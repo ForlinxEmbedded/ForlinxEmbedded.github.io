@@ -109,7 +109,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#connector-specification-diagram">4. Connector Specification Diagram</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ok3506b-s12-development-board-linux-consumption-table">5. OK3506B-S12 Development Board Linux Consumption Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-board-linux-consumption-table">5. Development Board Linux Consumption Table</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#minimum-system-diagram">6. Minimum System Diagram</a></li>
 </ul>
 </li>
@@ -537,7 +537,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 <tr class="row-odd"><td class="text-center"><p>Power enable</p></td>
 <td class="text-center"><p>VCC_3V3</p></td>
 <td class="text-center"><p>Power output</p></td>
-<td><p>It is an enable signal used exclusively for controlling the external power of the carrier board, output by the SoM.</p></td>
+<td><p>It is an enable signal used exclusively for controlling the external power of <br />the carrier board, output by the SoM.</p></td>
 <td class="text-center"><p>5</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>Ground</p></td>
@@ -562,19 +562,19 @@ The drivers and utilities used for the components are subject to the copyrights 
 <tr class="row-even"><td class="text-center"><p>CPU reset</p></td>
 <td class="text-center"><p>NPOR_L</p></td>
 <td class="text-center"><p>I</p></td>
-<td><p>SoM power reset, low level effective. Do not add additional capacitive load to this pin, so as not to affect the SoM normal startup.</p></td>
+<td><p>SoM power reset, low level effective. Do not add additional capacitive load to this pin, <br />so as not to affect the SoM normal startup.</p></td>
 <td class="text-center"><p>7</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>BOOT selection</p></td>
 <td class="text-center"><p>SARADC0_IN0_BOOT</p></td>
 <td class="text-center"><p>I</p></td>
-<td><p>When the signal is grounded, the startup card enters the Maskrom download mode.   Pulling down with a 12K resistor prioritizes booting from eMMC or SD Card; leaving it floating prioritizes booting from FSPI.</p></td>
+<td><p>When the signal is grounded, the startup card enters the Maskrom download mode.   <br />Pulling down with a 12K resistor prioritizes booting from eMMC or SD Card; leaving it floating prioritizes booting from FSPI.</p></td>
 <td class="text-center"><p>9</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>Reset mode</p></td>
 <td class="text-center"><p>SARADC0_IN1_RECOVERY/KEY</p></td>
 <td class="text-center"><p>I</p></td>
-<td><p>When the signal is grounded, the startup card enters the Recovery download mode</p></td>
+<td><p>When the signal is grounded, the startup card enters the Recovery download mode.</p></td>
 <td class="text-center"><p>10</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>Debug Port</p></td>
@@ -878,8 +878,8 @@ The drivers and utilities used for the components are subject to the copyrights 
 <h2>4. Connector Specification Diagram<a class="headerlink" href="#connector-specification-diagram" title="Link to this heading"></a></h2>
 <p>Stamp hole packaging. Refer to the packaging library for the size.</p>
 </section>
-<section id="ok3506b-s12-development-board-linux-consumption-table">
-<h2>5. OK3506B-S12 Development Board Linux Consumption Table<a class="headerlink" href="#ok3506b-s12-development-board-linux-consumption-table" title="Link to this heading"></a></h2>
+<section id="development-board-linux-consumption-table">
+<h2>5. Development Board Linux Consumption Table<a class="headerlink" href="#development-board-linux-consumption-table" title="Link to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>No.</p></th>
