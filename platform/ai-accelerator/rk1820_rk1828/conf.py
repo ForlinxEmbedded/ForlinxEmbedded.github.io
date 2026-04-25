@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Forlinx Embedded RK3568 Documentation'
+project = 'Forlinx Embedded RK1820/RK1828 Documentation'
 author = 'Forlinx Embedded'
 copyright = 'Forlinx Embedded'
 # -- General configuration ---------------------------------------------------
@@ -15,7 +15,7 @@ extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://forlinxembedded.github.io/p2p/ok3568j-up4/"
+html_baseurl = "https://forlinxembedded.github.io/ai-accelerator/rk1820_rk1828/"
 
 
 templates_path = ['_templates']
