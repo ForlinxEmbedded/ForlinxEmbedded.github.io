@@ -18,6 +18,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   RK1820_RK1828_AI_Accelerator_Development_Guide
+
 
 
 
