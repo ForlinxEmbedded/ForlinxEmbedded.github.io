@@ -1,0 +1,1993 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RK1820/RK1828 AI Accelerator Development Guide &mdash; Forlinx Embedded RK1820/RK1828 Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+
+  
+    <link rel="shortcut icon" href="_static/forlinx.png"/>
+    <link rel="canonical" href="https://forlinxembedded.github.io/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/theme-switcher.js?v=950663c4"></script>
+      <script src="_static/logo-link.js?v=d4af6ba6"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="RK1820/RK1828 Manual" href="index.html" />
+   
+
+  <!-- Load Font Awesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N8EJPNL8NR');
+  </script>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/forlinx-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">HARDWARE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RK1820/RK1828 AI Accelerator Development Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1. Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rknn3-sdk-software-framework">1.1 RKNN3 SDK Software Framework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#supported-hardware-platforms">1.2 Supported Hardware Platforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#supported-operating-systems">1.3 Supported Operating Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-platform">2. Hardware Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#comparison-of-specifications-between-rk1820-and-rk1828">2.1 Comparison of Specifications Between RK1820 and RK1828</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-architecture">2.2 System Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application-scenarios">2.3 Application Scenarios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#development-environment-setup">3. Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#environment-requirements-based-on-ok3588-ubuntu-22-04-5-kernel-6-1-18">3.1 Environment Requirements Based on OK3588-Ubuntu 22.04.5 (Kernel 6.1.18)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obtaining-the-rk1820-rk1828-ai-sdk-v1-0-0-tgz-package-from-the-ok3588-182x-m2-ai-sdk">3.2 Obtaining the RK1820_RK1828_AI_SDK_V1.0.0.tgz Package from the OK3588_182X_m2_AI_SDK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-of-the-rknn3-toolkit-environment">3.3 Installation of the rknn3-toolkit Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-of-the-rknn3-toolkit-lite-environment">3.4 Installation of the rknn3-toolkit-Lite Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-of-compilation-tools-and-adb">3.5 Installation of Compilation Tools and ADB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-of-dependencies-for-rk182x">3.6 Installation of Dependencies for RK182X</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rknn3-toolkit-model-conversion">4. RKNN3-Toolkit: Model Conversion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#differences-from-rknn-toolkit2">4.1 Differences from RKNN-Toolkit2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cnn-model-conversion-process">4.2 CNN Model Conversion Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#llm-model-conversion">4.3 LLM Model Conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vlm-model-conversion">4.6 VLM Model Conversion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cnn-model-practice-yolov8s">5. CNN Model Practice: YOLOv8s</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#model-acquisition-conversion">5.1 Model Acquisition &amp; Conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-interface-deployment">5.2 C++ Interface Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python-interface-deployment">5.3 Python Interface Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-accuracy">5.4 Performance &amp; Accuracy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#llm-model-practice-qwen2-5-3b">6. LLM Model Practice: Qwen2.5-3B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">6.1 Model Acquisition &amp; Conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">6.2 C++ Interface Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">6.3 Python Interface Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openai-interface-deployment-rkllm3-server">6.4 OpenAI Interface Deployment（rkllm3-server）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">6.5 Performance &amp; Accuracy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vlm-model-in-practice-qwen2-5-vl-3b">7. VLM Model in Practice: Qwen2.5-VL-3B</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">7.1 Model Acquisition &amp; Conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">7.2 C++ Interface Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vlm-python-inference-on-device">7.3 VLM Python Inference (On-device)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openai-interface-deployment">7.4 OpenAI Interface Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance-data">7.5 Performance Data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rknn3-c-api-quick-reference">8. RKNN3 C API Quick Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#llm-session-api-quick-reference">9. LLM Session API Quick Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-models-and-performance-data">10. Supported Models and Performance Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#supported-model">10.1 Supported Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#llm-performance">10.2 LLM Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vlm-performance">10.3 VLM Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cnn-performance">10.4 CNN Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#model-accuracy">10.5 Model Accuracy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#common-issues">11. Common Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#appendix">12. Appendix</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#glossary">12.1 Glossary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference-documents">12.2 Reference Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference-links">12.3 Reference Links</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Forlinx Embedded RK1820/RK1828 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">RK1820/RK1828 AI Accelerator Development Guide</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rk1820-rk1828-ai-accelerator-development-guide">
+<h1>RK1820/RK1828 AI Accelerator Development Guide<a class="headerlink" href="#rk1820-rk1828-ai-accelerator-development-guide" title="Link to this heading"></a></h1>
+<blockquote>
+<div><p>Based on OK3588-C development board + RK182X co-processor architecture, RKNN3 SDK V1.0.0 | Test data based on RK1828</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="overview">
+<h2>1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>This document is intended for developers who need to deploy AI models using the RK1820/RK1828 co-processor on the OK3588-C development board platform. It covers hardware architecture, development environment setup, model conversion, quantization, and deployment for CNN/LLM/VLM models, as well as the usage of the RKLLM3 Server.</p>
+<p>The RK182X series is an AI coprocessor designed by Rockchip for edge-side large model inference. It employs 3D RAM stacking technology, vertically interconnecting DRAM and NPU dies. It is not an independent SoC, but functions as an NPU accelerator card mounted under host chips such as the RK3588, working collaboratively via high-speed PCIe/USB interfaces.</p>
+<p>The RKNN3 SDK offers a comprehensive AI model deployment solution, primarily consisting of the following components:</p>
+<ul class="simple">
+<li><p>RKNN3 Toolkit: A PC-side model conversion and evaluation tool that supports converting models from frameworks such as ONNX, PyTorch, and TensorFlow to the RKNN format;</p></li>
+<li><p>RKNN3 Runtime: A board-side inference runtime that provides C/C++ API and Python API;</p></li>
+<li><p>RKNN3 Model Zoo: A collection of model conversion and deployment examples covering scenarios like CNN, LLM, and VLM;</p></li>
+<li><p>RKNN3 Toolkit Lite: A board-side Python inference interface;</p></li>
+<li><p>RKLLM3 Server: An OpenAI-compatible API service supporting text and image input.</p></li>
+</ul>
+<p>RKNN3 is an independent toolchain from the previous RKNN-Toolkit / RKNN-Toolkit2, and their model formats are not compatible.</p>
+<section id="rknn3-sdk-software-framework">
+<h3>1.1 RKNN3 SDK Software Framework<a class="headerlink" href="#rknn3-sdk-software-framework" title="Link to this heading"></a></h3>
+<p><img alt="Image" src="_images/1774855123996_079da0c4_487c_4457_87f4_adb38b07f5cd.png" /></p>
+<p>Core components of the board-side runtime environment:</p>
+<p><strong>rknn3-api</strong>（ Link during development: <code class="docutils literal notranslate"><span class="pre">librknn3_api.so</span></code>）：</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rknn3-api
+├── include
+│   ├── float16.h
+│   └── rknn3_api.h
+├── Android/arm64-v8a/librknn3_api.so
+└── Linux/aarch64/librknn3_api.so
+</pre></div>
+</div>
+<p>rknn3_transfer_proxy (a communication proxy between the Host and the RK182X co-processor, supporting PCIe and USB):</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rknn3_transfer_proxy
+├── android-arm64-v8a/rknn3_transfer_proxy
+└── linux-aarch64/rknn3_transfer_proxy
+</pre></div>
+</div>
+<p>rkllm3 Server: An OpenAI-compatible API service supporting text and image input.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rkllm3-server
+├── bin
+│   ├── android_arm64-v8a/rkllm3-server
+│   └── linux-aarch64/rkllm3-server
+</pre></div>
+</div>
+</section>
+<section id="supported-hardware-platforms">
+<h3>1.2 Supported Hardware Platforms<a class="headerlink" href="#supported-hardware-platforms" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>OK3588-C Development Board + RK1820/RK1828 Co-processor</p></li>
+</ul>
+</section>
+<section id="supported-operating-systems">
+<h3>1.3 Supported Operating Systems<a class="headerlink" href="#supported-operating-systems" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Android / Linux</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hardware-platform">
+<h2>2. Hardware Platform<a class="headerlink" href="#hardware-platform" title="Link to this heading"></a></h2>
+<section id="comparison-of-specifications-between-rk1820-and-rk1828">
+<h3>2.1 Comparison of Specifications Between RK1820 and RK1828<a class="headerlink" href="#comparison-of-specifications-between-rk1820-and-rk1828" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>RK1820</p></th>
+<th class="head"><p>RK1828</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NPU computing power（ INT8）</p></td>
+<td><p>20 TOPS</p></td>
+<td><p>20 TOPS</p></td>
+</tr>
+<tr class="row-odd"><td><p>On-chip DRAM (Memory)</p></td>
+<td><p>2.5GB</p></td>
+<td><p>5GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Maximum Supported Model Size</p></td>
+<td><p>≤ 3B Parameters</p></td>
+<td><p>≤ 7B Parameters</p></td>
+</tr>
+<tr class="row-odd"><td><p>Package</p></td>
+<td><p>3D RAM Stacking</p></td>
+<td><p>3D RAM Stacking</p></td>
+</tr>
+<tr class="row-even"><td><p>Supported Accuracy</p></td>
+<td><p>INT4 / INT8 / INT16 / FP16</p></td>
+<td><p>INT4 / INT8 / INT16 / FP16</p></td>
+</tr>
+<tr class="row-odd"><td><p>Main Control Interfaces</p></td>
+<td><p>PCIe 2. 1</p></td>
+<td><p>PCIe 2.1</p></td>
+</tr>
+<tr class="row-even"><td><p>NPU Frequency</p></td>
+<td><p>1 GHz</p></td>
+<td><p>1 GHz</p></td>
+</tr>
+</tbody>
+</table>
+<p>The NPU architecture of both is identical, with the difference being the on-chip DRAM capacity. RK1820 is suitable for 0.5B to 3B models, while RK1828 can handle up to 7B to 8B models.</p>
+</section>
+<section id="system-architecture">
+<h3>2.2 System Architecture<a class="headerlink" href="#system-architecture" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>┌──────────────────────────────────────────────────┐
+│                  Application Layer                 │
+│          User Logic, Data Acquisition, Result Display   │
+├──────────────────────────────────────────────────┤
+│                Middleware Layer                    │
+│   Task Scheduling, Data Preprocessing, PCIe/USB Communication Management  │
+├────────────────────┬─────────────────────────────┤
+│   RK3588 (Host)    │     RK182X (Device)         │
+│                    │                             │
+│  - CPU Task Scheduling│  - NPU Model Inference   │
+│  - Light AI Inference │  - High-Compute-Intensity Operations│
+│  - Peripherals/Video  │  - On-Chip High-Bandwidth Memory │
+│  - 6 TOPS NPU      │  - 20 TOPS NPU             │
+├───────────────────┴─────────────────────────────┤
+│            PCIe 3.0 / USB 3.0 Bus               │
+│       Low Latency, High-Bandwidth Data Exchange (DMA)  │
+└──────────────────────────────────────────────────┘
+</pre></div>
+</div>
+</section>
+<section id="application-scenarios">
+<h3>2.3 Application Scenarios<a class="headerlink" href="#application-scenarios" title="Link to this heading"></a></h3>
+<p>The RK182X is designed for LLM / VLM edge-side inference acceleration. It can also run traditional CV tasks (e.g., YOLOv5/v6/v8, ResNet), but for these compute-bound CNN models, the built-in NPU of the OK3588-C development board is sufficient.</p>
+<p>Advantageous scenarios for the RK182X include: large language model inference, VLM multimodal inference, all-modal models (vision + speech + text), digital human interaction, and smart cabin AI Box.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="development-environment-setup">
+<h2>3. Development Environment Setup<a class="headerlink" href="#development-environment-setup" title="Link to this heading"></a></h2>
+<section id="environment-requirements-based-on-ok3588-ubuntu-22-04-5-kernel-6-1-18">
+<h3>3.1 Environment Requirements Based on OK3588-Ubuntu 22.04.5 (Kernel 6.1.18)<a class="headerlink" href="#environment-requirements-based-on-ok3588-ubuntu-22-04-5-kernel-6-1-18" title="Link to this heading"></a></h3>
+<p>Complete system setup using the <code class="docutils literal notranslate"><span class="pre">update.img</span></code> provided in the <code class="docutils literal notranslate"><span class="pre">OK3588_182X_m2_AI_SDK\OK3588-ubuntu22-img</span></code> directory.</p>
+</section>
+<section id="obtaining-the-rk1820-rk1828-ai-sdk-v1-0-0-tgz-package-from-the-ok3588-182x-m2-ai-sdk">
+<h3>3.2 Obtaining the RK1820_RK1828_AI_SDK_V1.0.0.tgz Package from the OK3588_182X_m2_AI_SDK<a class="headerlink" href="#obtaining-the-rk1820-rk1828-ai-sdk-v1-0-0-tgz-package-from-the-ok3588-182x-m2-ai-sdk" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>Projects<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>Projects
+<span class="nb">cd</span><span class="w"> </span>Projects
+<span class="c1"># Extract RK1820_RK1828_AI_SDK_V1.0.0.tgz SDK package（include toolkit, toolkit-lite, runtime）</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>RK1820_RK1828_AI_SDK_V1.0.0
+tar<span class="w"> </span>xzf<span class="w"> </span>RK1820_RK1828_AI_SDK_V1.0.0.tgz<span class="w"> </span>-C<span class="w"> </span>RK1820_RK1828_AI_SDK_V1.0.0
+</pre></div>
+</div>
+<p>Overall directory structure:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>RK1820_RK1828_AI_SDK_V1.0.0/
+├── build.sh
+├── docs/                          # Documentation
+├── driver/                        # Drivers
+├── examples/                      # Examples
+├── package/                       # Installation Packages
+├── pkgroot/
+├── scripts/                       # Script Tools
+└── rknn/                          # RKNN3 Core Components
+    ├── rknn3-model-zoo/           # Model Conversion &amp; Deployment Examples
+    │   ├── 3rdparty/
+    │   ├── datasets/
+    │   ├── examples/              # CNN/LLM/VLM Model Examples
+    │   ├── py_utils/
+    │   ├── tokenizer/
+    │   ├── tools/
+    │   ├── utils/
+    │   ├── build-linux.sh
+    │   └── build-android.sh
+    ├── rknn3-toolkit/             # PC-Side Model Conversion Tools
+    │   ├── doc/
+    │   ├── rknn3-toolkit/         # Toolkit Installation Package (whl)
+    │   └── rknn3-toolkit-lite/    # Board-Side Python API
+    ├── rknn3-runtime/             # Board-Side Runtime
+    │   ├── doc/
+    │   ├── examples/
+    │   ├── rknn3-api/             # C API Header Files and librknn3_api.so
+    │   ├── rknn3_transfer_proxy/  # Host ↔ Device Communication Proxy
+    │   └── rkllm3-server/         # OpenAI-Compatible API Service
+    └── rknn-gstreamer-plugins/    # GStreamer Plugins
+</pre></div>
+</div>
+</section>
+<section id="installation-of-the-rknn3-toolkit-environment">
+<h3>3.3 Installation of the rknn3-toolkit Environment<a class="headerlink" href="#installation-of-the-rknn3-toolkit-environment" title="Link to this heading"></a></h3>
+<p>System requirements: Ubuntu 20.04 / 22.04 (x86_64), Python 3.10 (recommended).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download the Miniforge tool or use the Miniforge3-Linux-x86_64.sh provided by OK3588_182X_m2_AI_SDK</span>
+wget<span class="w"> </span>-c<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-Linux-x86_64.sh
+
+<span class="c1"># Install the Miniforge tool</span>
+chmod<span class="w"> </span>+x<span class="w"> </span>Miniforge3-Linux-x86_64.sh
+bash<span class="w"> </span>Miniforge3-Linux-x86_64.sh
+
+<span class="c1"># Create a conda environment</span>
+conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>rknn3<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+conda<span class="w"> </span>activate<span class="w"> </span>rknn3
+
+<span class="c1"># Install dependencies and toolkit</span>
+<span class="nb">cd</span><span class="w"> </span>RK1820_RK1828_AI_SDK_V1.0.0/rknn/rknn3-toolkit/rknn3-toolkit/packages
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_cp310-x.x.x.txt
+pip<span class="w"> </span>install<span class="w"> </span>rknn3_toolkit-x.x.x-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+</pre></div>
+</div>
+<p>Verify installation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">rknn.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNN</span>
+</pre></div>
+</div>
+<p><strong>Note: The Python import path for rknn3-toolkit is the same as rknn-toolkit2, but their whl packages are not interchangeable.</strong></p>
+</section>
+<section id="installation-of-the-rknn3-toolkit-lite-environment">
+<h3>3.4 Installation of the rknn3-toolkit-Lite Environment<a class="headerlink" href="#installation-of-the-rknn3-toolkit-lite-environment" title="Link to this heading"></a></h3>
+<p>System requirements (board-side): Ubuntu 22.04, Python 3.10 (recommended).</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp"># Install dependencies and rknn3-toolkit-lite</span>
+<span class="n">cd</span><span class="w"> </span><span class="n">RK1820_RK1828_AI_SDK_V1</span><span class="mf">.0.0</span><span class="o">/</span><span class="n">rknn</span><span class="o">/</span><span class="n">rknn3</span><span class="o">-</span><span class="n">toolkit</span><span class="o">/</span><span class="n">rknn3</span><span class="o">-</span><span class="n">toolkit</span><span class="o">-</span><span class="n">lite</span><span class="o">/</span><span class="n">packages</span>
+<span class="n">adb</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+<span class="n">adb</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="n">rknn3_toolkit_lite</span><span class="o">-</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="o">-</span><span class="n">cp310</span><span class="o">-</span><span class="n">cp310</span><span class="o">-</span><span class="n">linux_aarch64</span><span class="p">.</span><span class="n">whl</span>
+<span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+<span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">rknn3_toolkit_lite</span><span class="o">-</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x</span><span class="o">-</span><span class="n">cp310</span><span class="o">-</span><span class="n">cp310</span><span class="o">-</span><span class="n">linux_aarch64</span><span class="p">.</span><span class="n">whl</span>
+</pre></div>
+</div>
+</section>
+<section id="installation-of-compilation-tools-and-adb">
+<h3>3.5 Installation of Compilation Tools and ADB<a class="headerlink" href="#installation-of-compilation-tools-and-adb" title="Link to this heading"></a></h3>
+<p><strong>CMake (virtual machine):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cmake
+</pre></div>
+</div>
+<p>Cross-compiler (virtual machine):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download GCC 6.3.1 cross compiler</span>
+wget<span class="w"> </span>https://releases.linaro.org/components/toolchain/binaries/6.3-2017.05/aarch64-linux-gnu/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu.tar.xz
+
+<span class="c1"># Unzip to projects directory</span>
+tar<span class="w"> </span>xf<span class="w"> </span>gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu.tar.xz<span class="w"> </span>-C<span class="w"> </span>Projects/
+</pre></div>
+</div>
+<p>NDK: It is recommended to download version r19c.</p>
+<p><strong>ADB (virtual machine):</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install ADB and fastboot</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>adb<span class="w"> </span>fastboot<span class="w"> </span>-y
+
+<span class="c1"># ADB network connection board end</span>
+adb<span class="w"> </span>connect<span class="w"> </span><span class="s2">&quot;Board-en IP&quot;</span>:5555
+
+<span class="c1"># View the current ADB connection status</span>
+adb<span class="w"> </span>devices
+</pre></div>
+</div>
+</section>
+<section id="installation-of-dependencies-for-rk182x">
+<h3>3.6 Installation of Dependencies for RK182X<a class="headerlink" href="#installation-of-dependencies-for-rk182x" title="Link to this heading"></a></h3>
+<p>Deploy the pcie-rkep.ko driver file provided by OK3588_182X_m2_AI_SDK to: /Usr/lib/modules/pcie-rkep.ko, then load the driver.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>adb<span class="w"> </span>push<span class="w"> </span>pcie-rkep.ko<span class="w"> </span>/usr/lib/modules/pcie-rkep.ko
+insmod<span class="w"> </span>/usr/lib/modules/pcie-rkep.ko
+</pre></div>
+</div>
+<p>Install dependencies required for RK182X: Install the RK182X m2 precompiled package on the OK3588-C development board.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute on the PC side</span>
+adb<span class="w"> </span>push<span class="w"> </span>rknn3_rk182x_m2_installer_arm64.tgz<span class="w"> </span>/tmp/installer.tgz
+adb<span class="w"> </span>shell<span class="w"> </span><span class="s2">&quot;cd /tmp &amp;&amp; tar xzf installer.tgz &amp;&amp; ./install.sh&quot;</span>
+</pre></div>
+</div>
+<p>Reboot the OK3588-C development board to apply the dependencies. After reboot, check the RK182X status. If the following content appears, the RK182X dependencies have been successfully installed.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># OK3588-C development board terminal execution</span>
+<span class="c1"># If the current user is not the root user, it is recommended to switch to the root user for execution.</span>
+root@OK3588-ubuntu22:/$<span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="k">$(</span>whoami<span class="k">)</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="s2">&quot;root&quot;</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>su<span class="w"> </span>-
+forlinx@OK3588-ubuntu22:/#<span class="w"> </span>rknn-smi<span class="w"> </span>info
++-----------------------+---------------+---------------+----------------------+
+<span class="p">|</span><span class="w"> </span>rknn-smi<span class="w">     </span>Version:<span class="w"> </span><span class="m">1</span>.1.0<span class="w">                                                  </span><span class="p">|</span>
++<span class="o">=======================</span>+<span class="o">===============</span>+<span class="o">===============</span>+<span class="o">======================</span>+
+<span class="p">|</span><span class="w"> </span>Device<span class="w">                </span><span class="p">|</span><span class="w"> </span>Health<span class="w">        </span><span class="p">|</span><span class="w"> </span>Power<span class="o">(</span>mW<span class="o">)</span><span class="w">     </span><span class="p">|</span><span class="w"> </span>Npu<span class="o">(</span>%<span class="o">)</span><span class="w">               </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>Chip<span class="w">          </span>Name<span class="w">    </span><span class="p">|</span><span class="w"> </span>Bus-Id<span class="w">        </span><span class="p">|</span><span class="w"> </span>Temp<span class="o">(</span>C<span class="o">)</span><span class="w">       </span><span class="p">|</span><span class="w"> </span>Memory-Usage<span class="o">(</span>MB<span class="o">)</span><span class="w">     </span><span class="p">|</span>
++<span class="o">=======================</span>+<span class="o">===============</span>+<span class="o">===============</span>+<span class="o">======================</span>+
+<span class="p">|</span><span class="w"> </span><span class="m">0</span><span class="w">                     </span><span class="p">|</span><span class="w"> </span>OK<span class="w">            </span><span class="p">|</span><span class="w"> </span>NA<span class="w">            </span><span class="p">|</span><span class="w"> </span><span class="m">0</span><span class="w">                    </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span><span class="m">0</span><span class="w">             </span>RK1828<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="m">0000</span>:01:00.0<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="m">45</span><span class="w">            </span><span class="p">|</span><span class="w"> </span><span class="m">35</span><span class="w">   </span>/<span class="w"> </span><span class="m">5120</span><span class="w">          </span><span class="p">|</span>
++<span class="o">=======================</span>+<span class="o">===============</span>+<span class="o">===============</span>+<span class="o">======================</span>+
+</pre></div>
+</div>
+<p>The rknn-smi tool is used to view and manage RK182X device information:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rknn-smi<span class="w"> </span>-v<span class="w">                    </span><span class="c1"># Software version</span>
+rknn-smi<span class="w"> </span>info<span class="w"> </span>-l<span class="w">               </span><span class="c1"># Hardware info</span>
+rknn-smi<span class="w"> </span>info<span class="w"> </span>-w<span class="w">               </span><span class="c1"># Real-time status monitoring</span>
+rknn-smi<span class="w"> </span><span class="nb">set</span><span class="w"> </span>-t<span class="w"> </span>work_mode<span class="w"> </span>-s<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="c1"># Toggle performance mode</span>
+</pre></div>
+</div>
+<p>Operating modes: 0 = low power, 1 = balanced (default), 2 = performance (used when running benchmarks).</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="rknn3-toolkit-model-conversion">
+<h2>4. RKNN3-Toolkit: Model Conversion<a class="headerlink" href="#rknn3-toolkit-model-conversion" title="Link to this heading"></a></h2>
+<section id="differences-from-rknn-toolkit2">
+<h3>4.1 Differences from RKNN-Toolkit2<a class="headerlink" href="#differences-from-rknn-toolkit2" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Items</p></th>
+<th class="head"><p>RKNN-Toolkit2</p></th>
+<th class="head"><p>RKNN3-Toolkit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Platform:</p></td>
+<td><p>RK3566/RK3568/RK3576/RK3588</p></td>
+<td><p>RK1820/RK1828</p></td>
+</tr>
+<tr class="row-odd"><td><p>NPU generation</p></td>
+<td><p>RKNPU2</p></td>
+<td><p>RKNN3</p></td>
+</tr>
+<tr class="row-even"><td><p>Python import</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">rknn.api</span> <span class="pre">import</span> <span class="pre">RKNN</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">rknn.api</span> <span class="pre">import</span> <span class="pre">RKNN</span></code>   （same）</p></td>
+</tr>
+<tr class="row-odd"><td><p>Board-side Libraries</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">librknnrt.so</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">librknn3_api.so</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>C API Headers</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">rknn_api.h</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">rknn3_api.h</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Model Output</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.rknn</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.rknn</span></code>   + <code class="docutils literal notranslate"><span class="pre">.weight</span></code>   （dual file）</p></td>
+</tr>
+<tr class="row-even"><td><p>LLM Support</p></td>
+<td><p>Not supported (requires rkllm-toolkit)</p></td>
+<td><p>Built-in  <code class="docutils literal notranslate"><span class="pre">load_llm</span></code>   interface</p></td>
+</tr>
+<tr class="row-odd"><td><p>GitHub</p></td>
+<td><p>airockchip/rknn-toolkit2</p></td>
+<td><p>airockchip/rknn3-toolkit</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Differences:</strong> The RKNN3 model export includes <strong>two files</strong>: <code class="docutils literal notranslate"><span class="pre">.rknn</span></code> and <code class="docutils literal notranslate"><span class="pre">.weight</span></code>. Both are required for deployment. For LLM model conversion, the process is now handled directly within <strong>rknn3-toolkit</strong>, and no longer requires the separate <strong>rkllm-toolkit</strong>.</p>
+</section>
+<section id="cnn-model-conversion-process">
+<h3>4.2 CNN Model Conversion Process<a class="headerlink" href="#cnn-model-conversion-process" title="Link to this heading"></a></h3>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Create RKNN → config() → load_onnx() → build() → export_rknn() → release()
+</pre></div>
+</div>
+<p>Using YOLOv8 as an example:</p>
+<p>To obtain the complete PyTorch example project for exporting ONNX from a custom-trained YOLOv8 project, you can download it from the following link, or use the <code class="docutils literal notranslate"><span class="pre">yolov8-postprocess.tar.gz</span></code> provided by the OK3588_182X_m2_AI_SDK: <code class="docutils literal notranslate"><span class="pre">https://ftrg.zbox.filez.com/v2/delivery/data/95f00b0fc900458ba134f8b180b3f7a1/examples/yolov8/yolov8-postprocess.tar.gz</span></code></p>
+<p>After downloading, follow the steps in the provided export documentation to generate an ONNX model optimized for RK182X.</p>
+<hr class="docutils" />
+<p><strong>Step 1: Model Acquisition</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo/examples/yolov8/model
+./download_model.sh
+</pre></div>
+</div>
+<p><strong>Step 2: ONNX to RKNN Conversion</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>../python
+python<span class="w"> </span>convert.py<span class="w"> </span>../model/yolov8n_rknn3.onnx<span class="w"> </span>RK1820<span class="w"> </span>i8
+</pre></div>
+</div>
+<p>Core Logic:</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rknn.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNN</span>
+
+<span class="n">rknn</span> <span class="o">=</span> <span class="n">RKNN</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Model configuration</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">mean_values</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span>
+            <span class="n">std_values</span><span class="o">=</span><span class="p">[[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]],</span>
+            <span class="n">target_platform</span><span class="o">=</span><span class="s1">&#39;RK1828&#39;</span><span class="p">,</span>   <span class="c1"># 或 &#39;RK1820&#39;</span>
+
+            <span class="n">input_attrs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;images&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint8&#39;</span><span class="p">,</span> <span class="s1">&#39;layout&#39;</span><span class="p">:</span> <span class="s1">&#39;NHWC&#39;</span><span class="p">}},</span>
+            <span class="n">subgraph_dtype_target</span> <span class="o">=</span> <span class="n">subgraph</span><span class="p">,</span> <span class="n">core_num</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+            <span class="n">quantized_dtype</span><span class="o">=</span><span class="s1">&#39;w8a8&#39;</span><span class="p">,</span>
+            <span class="n">quantized_algorithm</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span>   <span class="c1"># normal / mmse / kl_divergence / grq / gdq</span>
+            <span class="n">quantized_method</span><span class="o">=</span><span class="s1">&#39;channel&#39;</span><span class="p">,)</span>
+
+<span class="c1"># Load the ONNX model</span>
+<span class="n">ret</span> <span class="o">=</span> <span class="n">rknn</span><span class="o">.</span><span class="n">load_onnx</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;../model/yolov8n_rknn3.onnx&#39;</span><span class="p">)</span>
+
+<span class="c1"># Build (INT8 Quantification)</span>
+<span class="n">ret</span> <span class="o">=</span> <span class="n">rknn</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">do_quantization</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="s1">&#39;../model/dataset.txt&#39;</span><span class="p">)</span>
+
+<span class="c1"># Export (generates both.rknn and.weight files)</span>
+<span class="n">ret</span> <span class="o">=</span> <span class="n">rknn</span><span class="o">.</span><span class="n">export_rknn</span><span class="p">(</span><span class="s1">&#39;./yolov8.rknn&#39;</span><span class="p">)</span>
+
+<span class="n">rknn</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Key Config Parameters:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">target_platform</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'RK1820'</span></code>   or  <code class="docutils literal notranslate"><span class="pre">'RK1828'</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">quantized_algorithm</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">normal</span></code>   / <code class="docutils literal notranslate"><span class="pre">mmse</span></code>   / <code class="docutils literal notranslate"><span class="pre">kl_divergence</span></code>   / <code class="docutils literal notranslate"><span class="pre">grq</span></code>   / <code class="docutils literal notranslate"><span class="pre">gdq</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">mean_values</span></code></p></td>
+<td><p>Input mean</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">std_values</span></code></p></td>
+<td><p>Input normalized values</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">input_attrs</span></code></p></td>
+<td><p>Input attributes (dtype, layout, etc.）</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">profile_mode</span></code></p></td>
+<td><p>Set to enable performance evaluation</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="llm-model-conversion">
+<h3>4.3 LLM Model Conversion<a class="headerlink" href="#llm-model-conversion" title="Link to this heading"></a></h3>
+<p>The LLM transformation needs to export the HuggingFace model to ONNX first, and then to RKNN. The entire process is fully demonstrated in rknn3-model-zoo.</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>HuggingFace LLM → export ONNX + config.pkl + tokenizer.gguf + embed.bin → convert to RKNN
+</pre></div>
+</div>
+<p>Using Qwen2.5 as an example:</p>
+<p><strong>Step 1: ONNX Export &amp; Auxiliary File Preparation</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span>Projects/rknn3-model-zoo/
+
+<span class="nb">cd</span><span class="w"> </span>examples/Qwen2_5/python
+
+python<span class="w"> </span>export_llm.py<span class="w">  </span><span class="c1"># Only FP32 ONNX is exported without quantization</span>
+
+python<span class="w"> </span>export_llm.py<span class="w">  </span>--quant<span class="w"> </span><span class="c1">#AWQ+GRQ quantization (GPU)</span>
+
+<span class="c1"># Product: generated under model/.onnx、.config.pkl、.tokenizer.gguf、.embed.bin</span>
+</pre></div>
+</div>
+<p>File / Module</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>File</p></th>
+<th class="head"><p>Creator</p></th>
+<th class="head"><p>Content</p></th>
+<th class="head"><p>Deployed to Device?</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.onnx</span></code></p></td>
+<td><p>export_llm.py</p></td>
+<td><p>Model architecture and weights</p></td>
+<td><p>No</p></td>
+<td><p>Intermediate product, input for export_rknn.py conversion.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.config.pkl</span></code></p></td>
+<td><p>export_llm.py</p></td>
+<td><p>LLM architecture config (vocab_size, hidden_size, chat_template, etc.)</p></td>
+<td><p>No</p></td>
+<td><p>Intermediate product, required by load_llm in export_rknn.py.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.tokenizer.gguf</span></code></p></td>
+<td><p>export_llm.py</p></td>
+<td><p>Tokenizer (vocabulary + merge rules, GGUF format)</p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>Converts text to token ID on the device side.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.embed.bin</span></code></p></td>
+<td><p>export_llm.py</p></td>
+<td><p>Embedding layer weights (FP16)</p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>Token → embedding executed on the host side (OK3588-C board) due to limited RK182X DRAM, not on the coprocessor.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2: Conversion to RKNN</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>export_rknn.py<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--platform<span class="w"> </span>RK1828<span class="w"> </span><span class="se">\	</span><span class="w">	</span><span class="c1"># or &#39;RK1820&#39;</span>
+<span class="w">  </span>--onnx_path<span class="w"> </span>../model/llm/Qwen2.5-3B-Instruct.onnx<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config<span class="w"> </span>../model/llm/Qwen2.5-3B-Instruct.config.pkl<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--rknn_path<span class="w"> </span>../model/llm/Qwen2.5-3B-Instruct.rknn
+</pre></div>
+</div>
+<p>File / Module</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">.rknn</span></code></p></th>
+<th class="head"><p>export_rknn.py</p></th>
+<th class="head"><p>Compiled model architecture and instructions</p></th>
+<th class="head"><p><strong>Yes</strong></p></th>
+<th class="head"><p>Model file executed by the coprocessor NPU.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.weight</span></code></p></td>
+<td><p>export_rknn.py</p></td>
+<td><p>Compiled model weights (separated from .rknn)</p></td>
+<td><p><strong>Yes</strong></p></td>
+<td><p>Loaded with .rknn, part of RKNN3’s dual-file mechanism.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Core Logic:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rknn.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNN</span>
+
+<span class="n">rknn</span> <span class="o">=</span> <span class="n">RKNN</span><span class="p">()</span>
+
+<span class="n">rknn</span><span class="o">.</span><span class="n">config</span><span class="p">(</span>
+    <span class="n">target_platform</span><span class="o">=</span><span class="s1">&#39;RK1828&#39;</span><span class="p">,</span>          <span class="c1"># or &#39;RK1820&#39;</span>
+    <span class="n">quantized_dtype</span><span class="o">=</span><span class="s1">&#39;w4a16&#39;</span><span class="p">,</span>           <span class="c1"># LLM uses W4A16 quantization</span>
+    <span class="n">quantized_algorithm</span><span class="o">=</span><span class="s1">&#39;grq&#39;</span>          <span class="c1"># GRQ offers higher accuracy (requires a CUDA environment)</span>
+<span class="p">)</span>
+    <span class="n">quantized_method</span><span class="o">=</span><span class="s1">&#39;group32&#39;</span>
+<span class="p">)</span>
+
+<span class="n">ret</span> <span class="o">=</span> <span class="n">rknn</span><span class="o">.</span><span class="n">load_llm</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">onnx_path</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config_pkl_path</span><span class="p">)</span>
+
+<span class="n">rknn</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">do_quantization</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="n">dataset_path</span><span class="p">)</span>
+<span class="n">ret</span> <span class="o">=</span> <span class="n">rknn</span><span class="o">.</span><span class="n">export_rknn</span><span class="p">(</span><span class="n">rknn_path</span><span class="p">)</span>
+
+<span class="n">rknn</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Note: GRQ quantization only supports CUDA environments and is only adapted for mainstream models (Qwen, LLaMA, MiniCPM, etc.). No CUDA environment or unsupported models can use the algorithm instead.</strong></p>
+<p>LLM Quantization Configuration:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">quantized_dtype</span></code></p></td>
+<td><p>(Weights 4-bit, Activations 16-bit)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">quantized_algorithm</span></code></p></td>
+<td><p>(Recommended) or <code class="docutils literal notranslate"><span class="pre">'normal'</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">quantized_method</span></code></p></td>
+<td><p>(Recommended)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vlm-model-conversion">
+<h3>4.6 VLM Model Conversion<a class="headerlink" href="#vlm-model-conversion" title="Link to this heading"></a></h3>
+<p><strong>Step 1: Model Acquisition &amp; Conversion</strong></p>
+<p>A VLM consists of two independent sub-models: Vision and LLM, which are exported and converted separately.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo/examples/Qwen2_5_VL/python
+
+<span class="c1"># Export LLM submodel</span>
+<span class="nb">cd</span><span class="w"> </span>llm<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_llm.py<span class="w"> </span>--quant<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_rknn.py<span class="w"> </span>--platform<span class="w"> </span>RK1828
+
+<span class="c1"># Export Vision submodel</span>
+<span class="nb">cd</span><span class="w"> </span>../vision<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_vision.py<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_rknn.py<span class="w"> </span>--platform<span class="w"> </span>RK1828
+</pre></div>
+</div>
+<p>File / Module</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>model/
+├── llm/    Qwen2.5-VL-3B-llm.{rknn, weight, tokenizer.gguf, embed.bin}
+└── vision/ Qwen2.5-VL-3B-vision.{rknn, weight}
+</pre></div>
+</div>
+<blockquote>
+<div><p>The key difference is that Vision is loaded with the load _ onnx interface and LLM is loaded with the load _ LLM interface.</p>
+</div></blockquote>
+<p>VLM models contain Vision and LLM sub-models and use different loading interfaces:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rknn.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNN</span>
+
+<span class="n">rknn</span> <span class="o">=</span> <span class="n">RKNN</span><span class="p">()</span>
+
+<span class="c1"># --- Visual model：use load_onnx ---</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">target_platform</span><span class="o">=</span><span class="s1">&#39;RK1828&#39;</span><span class="p">,</span>	<span class="c1"># or &#39;RK1820&#39;</span>
+            <span class="n">quantized_dtype</span><span class="o">=</span><span class="s1">&#39;w4a16&#39;</span><span class="p">,</span> <span class="n">quantized_algorithm</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span>
+            <span class="n">quantized_method</span><span class="o">=</span><span class="s1">&#39;group32&#39;</span><span class="p">,</span> <span class="n">core_num</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">load_onnx</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;FastVLM-vision.onnx&#39;</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">do_quantization</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="n">dataset_path</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">export_rknn</span><span class="p">(</span><span class="s1">&#39;FastVLM-vision.rknn&#39;</span><span class="p">)</span>
+
+<span class="c1"># --- LLM model：use load_llm ---</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">target_platform</span><span class="o">=</span><span class="s1">&#39;RK1828&#39;</span><span class="p">,</span>	<span class="c1"># or &#39;RK1820&#39;</span>
+            <span class="n">quantized_dtype</span><span class="o">=</span><span class="s1">&#39;w4a16&#39;</span><span class="p">,</span> <span class="n">quantized_algorithm</span><span class="o">=</span><span class="s1">&#39;grq&#39;</span><span class="p">,</span>
+            <span class="n">quantized_method</span><span class="o">=</span><span class="s1">&#39;group32&#39;</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">load_llm</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s1">&#39;FastVLM-llm.onnx&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s1">&#39;FastVLM-llm.config.pkl&#39;</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">do_quantization</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="n">llm_dataset_path</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">export_rknn</span><span class="p">(</span><span class="s1">&#39;FastVLM-llm.rknn&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="cnn-model-practice-yolov8s">
+<h2>5. CNN Model Practice: YOLOv8s<a class="headerlink" href="#cnn-model-practice-yolov8s" title="Link to this heading"></a></h2>
+<p>This chapter uses YOLOv8s to demonstrate the complete workflow from download, conversion, deployment, to evaluation. CNN models only support C++ and Python interfaces.</p>
+<section id="model-acquisition-conversion">
+<h3>5.1 Model Acquisition &amp; Conversion<a class="headerlink" href="#model-acquisition-conversion" title="Link to this heading"></a></h3>
+<p><strong>1. Download Pre-converted Model</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo/examples/yolov8/model
+./download_model.sh
+</pre></div>
+</div>
+<p>The model with the <code class="docutils literal notranslate"><span class="pre">_rknn3</span></code> suffix is a version specifically optimized for RK182X, where the YOLO post-processing (decoding, NMS) is built into the coprocessor side. If you need to use custom-trained YOLOv8 weights, you can export ONNX based on the <code class="docutils literal notranslate"><span class="pre">yolov8-postprocess.tar.gz</span></code> project.</p>
+<p><strong>2. ONNX → RKNN Conversion</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>../python
+python<span class="w"> </span>convert.py<span class="w"> </span>../model/yolov8n_rknn3.onnx<span class="w"> </span>RK1828<span class="w"> </span>i8
+</pre></div>
+</div>
+<p>Conversion product:</p>
+<p>Key configuration:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rknn</span><span class="o">.</span><span class="n">config</span><span class="p">(</span>
+    <span class="n">mean_values</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span> <span class="n">std_values</span><span class="o">=</span><span class="p">[[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]],</span>
+    <span class="n">target_platform</span><span class="o">=</span><span class="s1">&#39;RK1828&#39;</span><span class="p">,</span>
+    <span class="n">quantized_dtype</span><span class="o">=</span><span class="s1">&#39;w8a8&#39;</span><span class="p">,</span>
+    <span class="n">quantized_algorithm</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span>
+    <span class="n">core_num</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>                            <span class="c1"># Multi-core cooperation to reduce single frame delay</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">load_onnx</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">onnx_path</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">do_quantization</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="s1">&#39;../model/dataset.txt&#39;</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">export_rknn</span><span class="p">(</span><span class="n">rknn_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="c-interface-deployment">
+<h3>5.2 C++ Interface Deployment<a class="headerlink" href="#c-interface-deployment" title="Link to this heading"></a></h3>
+<p>1. Compilation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo
+<span class="nb">export</span><span class="w"> </span><span class="nv">GCC_COMPILER</span><span class="o">=</span>Projects/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu
+./build-linux.sh<span class="w"> </span>-t<span class="w"> </span>rk3588<span class="w"> </span>-a<span class="w"> </span>aarch64<span class="w"> </span>-b<span class="w"> </span>Release<span class="w"> </span>-d<span class="w"> </span>yolov8
+</pre></div>
+</div>
+<p>2. Source Code Analysis</p>
+<p>CNN inference follows the standard RKNN3 C++ API flow:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// ==================== 1. Parse command line arguments ====================</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">model_path</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span><span class="w">    </span><span class="c1">// .rknn model file</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">weight_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span><span class="w">    </span><span class="c1">// .weight weight file</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">image_path</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w">    </span><span class="c1">// Input image</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w">    </span><span class="n">core_mask</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">strtoul</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w">  </span><span class="c1">// NPU core mask, e.g., 0xff = all 8 cores enabled</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">postprocess_plugin_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w">               </span><span class="c1">// Optional: post-processing plugin path (Mode A)</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">postprocess_plugin_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// ==================== 2. Initialization ====================</span>
+<span class="w">    </span><span class="n">rknn_app_context_t</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">;</span>
+<span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">rknn_app_context_t</span><span class="p">));</span>
+<span class="w">    </span><span class="n">init_post_process</span><span class="p">();</span><span class="w">                  </span><span class="c1">// Initialize post-processing (load class labels, etc.)</span>
+
+<span class="w">    </span><span class="c1">// ==================== 3. Load the model ====================</span>
+<span class="w">    </span><span class="c1">// Internal process: rknn3_init → rknn3_load_model_from_path → rknn3_model_init → rknn3_query</span>
+<span class="w">    </span><span class="c1">// Loads the dual files (model+weight) to the coprocessor, queries input/output attributes, and allocates memory</span>
+<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">init_yolov8_model</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span><span class="w"> </span><span class="n">weight_path</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">core_mask</span><span class="p">,</span><span class="w"> </span><span class="n">postprocess_plugin_path</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 4. Read the image ====================</span>
+<span class="w">    </span><span class="n">image_buffer_t</span><span class="w"> </span><span class="n">src_image</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_image</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">src_image</span><span class="p">);</span><span class="w">  </span><span class="c1">// Supports jpg/png, decodes to memory</span>
+
+<span class="w">    </span><span class="c1">// ==================== 5. Inference ====================</span>
+<span class="w">    </span><span class="n">object_detect_result_list</span><span class="w"> </span><span class="n">od_results</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Internal process: Preprocessing (letterbox + RGA resize) → mem_sync(TO_DEVICE)</span>
+<span class="w">    </span><span class="c1">//          → rknn3_run → mem_sync(FROM_DEVICE) → Post-processing (parse detection boxes)</span>
+<span class="w">    </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inference_yolov8_model</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">src_image</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">od_results</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 6. Output results ====================</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">od_results</span><span class="p">.</span><span class="n">count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">object_detect_result</span><span class="o">*</span><span class="w"> </span><span class="n">det_result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="p">(</span><span class="n">od_results</span><span class="p">.</span><span class="n">results</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">left</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">y1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">top</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">right</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">y2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">bottom</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">text</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
+<span class="w">        </span><span class="n">sprintf</span><span class="p">(</span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%s %.2f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">coco_cls_to_name</span><span class="p">(</span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">cls_id</span><span class="p">),</span>
+<span class="w">               </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">left</span><span class="p">,</span><span class="w"> </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">top</span><span class="p">,</span>
+<span class="w">               </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">right</span><span class="p">,</span><span class="w"> </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">box</span><span class="p">.</span><span class="n">bottom</span><span class="p">,</span>
+<span class="w">               </span><span class="n">det_result</span><span class="o">-&gt;</span><span class="n">prop</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Draw detection box and label</span>
+<span class="w">        </span><span class="n">draw_rectangle</span><span class="p">(</span><span class="o">&amp;</span><span class="n">src_image</span><span class="p">,</span><span class="w"> </span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="n">COLOR_BLUE</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+<span class="w">        </span><span class="n">draw_text</span><span class="p">(</span><span class="o">&amp;</span><span class="n">src_image</span><span class="p">,</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="n">y1</span><span class="mi">-20</span><span class="p">,</span><span class="w"> </span><span class="n">COLOR_RED</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">write_image</span><span class="p">(</span><span class="s">&quot;out.png&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">src_image</span><span class="p">);</span><span class="w">    </span><span class="c1">// Save result image</span>
+
+<span class="w">    </span><span class="c1">// ==================== 7. Clean up resources ====================</span>
+<span class="w">    </span><span class="n">deinit_post_process</span><span class="p">();</span>
+<span class="w">    </span><span class="n">release_yolov8_model</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">);</span><span class="w">   </span><span class="c1">// Internal process: rknn3_destroy_mem + rknn3_destroy</span>
+<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">src_image</span><span class="p">.</span><span class="n">virt_addr</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>3. Board-side Execution</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>adb<span class="w"> </span>push<span class="w"> </span>install/rk3588_linux_aarch64/rknn_yolov8_demo<span class="w"> </span>/rknn_yolov8_demo
+adb<span class="w"> </span>shell
+<span class="nb">cd</span><span class="w"> </span>/rknn_yolov8_demo
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>./lib:<span class="nv">$LD_LIBRARY_PATH</span>
+
+./rknn_yolov8_demo<span class="w"> </span>./model/yolov8n_rknn3.rknn<span class="w"> </span>./model/yolov8n_rknn3.weight<span class="w"> </span>./model/bus.jpg<span class="w"> </span>0xff
+</pre></div>
+</div>
+<p>Sample Output:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>model input height=640, width=640, channel=3
+Pre-process time: 3.51 ms
+Inference time: 24.28 ms
+Post-process time: 0.02 ms
+Total time:      27.81 ms
+person @ (211 242 282 507) 0.868
+bus    @ ( 99 135 551 457) 0.856
+person @ (478 223 560 521) 0.856
+person @ (109 235 224 536) 0.853
+</pre></div>
+</div>
+</section>
+<section id="python-interface-deployment">
+<h3>5.3 Python Interface Deployment<a class="headerlink" href="#python-interface-deployment" title="Link to this heading"></a></h3>
+<p>The Python inference on the device board is implemented using <code class="docutils literal notranslate"><span class="pre">rknn3-toolkit-lite</span></code>. The lite package must first be installed on the board (refer to section 3.3 for installation methods, using the appropriate whl package for the target board).</p>
+<p><strong>CNN Python Inference (Device Board):</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rknnlite.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNNLite</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># 1. Initialize + Load (same dual files as C++)</span>
+<span class="n">rknn</span> <span class="o">=</span> <span class="n">RKNNLite</span><span class="p">()</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">load_rknn</span><span class="p">(</span><span class="s1">&#39;./yolov8n_rknn3.rknn&#39;</span><span class="p">,</span> <span class="n">weight_path</span><span class="o">=</span><span class="s1">&#39;./yolov8n_rknn3.weight&#39;</span><span class="p">)</span>
+<span class="n">rknn</span><span class="o">.</span><span class="n">init_runtime</span><span class="p">(</span><span class="n">core_mask</span><span class="o">=</span><span class="n">RKNNLite</span><span class="o">.</span><span class="n">NPU_CORE_ALL</span><span class="p">)</span>   <span class="c1"># Enable all 8 cores</span>
+
+<span class="c1"># 2. Preprocessing</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;bus.jpg&#39;</span><span class="p">)</span>
+<span class="n">img_resized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">640</span><span class="p">))</span>
+<span class="n">input_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">img_resized</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># 3. Inference</span>
+<span class="n">outputs</span> <span class="o">=</span> <span class="n">rknn</span><span class="o">.</span><span class="n">inference</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">input_data</span><span class="p">])</span>
+
+<span class="c1"># 4. Post-processing (rknn3 optimized output already in [N, 6] format)</span>
+<span class="k">for</span> <span class="n">det</span> <span class="ow">in</span> <span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span>
+    <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="bp">cls</span> <span class="o">=</span> <span class="n">det</span>
+    <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;class=</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span><span class="si">}</span><span class="s2"> bbox=(</span><span class="si">{</span><span class="n">x1</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">y1</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">x2</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">y2</span><span class="si">}</span><span class="s2">) score=</span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">rknn</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sample Output:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>class=0 bbox=(211,242,282,507) score=0.868
+class=5 bbox=(99,135,551,457)  score=0.856
+class=0 bbox=(478,223,560,521) score=0.856
+class=0 bbox=(109,235,224,536) score=0.853
+</pre></div>
+</div>
+</section>
+<section id="performance-accuracy">
+<h3>5.4 Performance &amp; Accuracy<a class="headerlink" href="#performance-accuracy" title="Link to this heading"></a></h3>
+<p>RK Official 640×640 Data: Single-core 32.07 FPS, multi-batch multi-core 210.73 FPS.</p>
+<p><strong>Accuracy Comparison (COCO val2017, YOLOv8s)</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>FP32 AP&#64;0.5</p></th>
+<th class="head"><p>RKNN3 W8A8 AP&#64;0.5</p></th>
+<th class="head"><p>Accuracy Drop</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>YOLOv8s</p></td>
+<td><p>0.525</p></td>
+<td><p>0.517</p></td>
+<td><p>-1.5%</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="llm-model-practice-qwen2-5-3b">
+<h2>6. LLM Model Practice: Qwen2.5-3B<a class="headerlink" href="#llm-model-practice-qwen2-5-3b" title="Link to this heading"></a></h2>
+<p>This chapter uses Qwen2.5-3B-Instruct to demonstrate the complete LLM model deployment workflow LLM supports C++, Python, and OpenAI interfaces.</p>
+<section id="id1">
+<h3>6.1 Model Acquisition &amp; Conversion<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<p>1. Export ONNX + Supporting Files</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>
+
+<span class="nb">cd</span><span class="w"> </span>examples/Qwen2_5/python
+python<span class="w"> </span>export_llm.py<span class="w"> </span>--quant<span class="w">       </span><span class="c1"># --quant Enable AWQ + GRQ quantization（require CUDA）</span>
+</pre></div>
+</div>
+<p>Output：<code class="docutils literal notranslate"><span class="pre">Qwen2.5-3B-Instruct.onnx</span></code> + <code class="docutils literal notranslate"><span class="pre">.config.pkl</span></code> + <code class="docutils literal notranslate"><span class="pre">.tokenizer.gguf</span></code> + <code class="docutils literal notranslate"><span class="pre">.embed.bin</span></code>。</p>
+<blockquote>
+<div><p>AWQ+GRQ quantization offers higher accuracy and does not require a calibration dataset for RKNN conversion. 3B model conversion is recommended with 24GB+ physical RAM + GPU.</p>
+</div></blockquote>
+<p>2. ONNX → RKNN Conversion</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>export_rknn.py<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--platform<span class="w"> </span>RK1828<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--onnx_path<span class="w"> </span>../model/llm/Qwen2.5-3B-Instruct.onnx<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config<span class="w"> </span>../model/llm/Qwen2.5-3B-Instruct.config.pkl<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--rknn_path<span class="w"> </span>../model/llm/Qwen2.5-3B-Instruct.rknn
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h3>6.2 C++ Interface Deployment<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>1. Compilation</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo
+./build-linux.sh<span class="w"> </span>-t<span class="w"> </span>rk3588<span class="w"> </span>-a<span class="w"> </span>aarch64<span class="w"> </span>-b<span class="w"> </span>Release<span class="w"> </span>-d<span class="w"> </span>Qwen2_5
+</pre></div>
+</div>
+<p>2. Source Code Analysis</p>
+<p>LLM deployment introduces callback-driven execution:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// ==================== 1. Parse Command Line Arguments ====================</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">model_path</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span><span class="w">    </span><span class="c1">// .rknn model file</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">weight_path</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span><span class="w">    </span><span class="c1">// .weight weight file</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">tokenizer_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w">    </span><span class="c1">// .tokenizer.gguf tokenizer</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">embedding_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span><span class="w">    </span><span class="c1">// .embed.bin embedding weights</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w">    </span><span class="n">core_mask</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">strtoul</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w">  </span><span class="c1">// NPU core mask</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">prompt</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span><span class="w">    </span><span class="c1">// User input</span>
+
+<span class="w">    </span><span class="c1">// ==================== 2. Load Tokenizer ====================</span>
+<span class="w">    </span><span class="c1">// Uses llama.cpp&#39;s GGUF tokenizer for text ↔ token ID conversion</span>
+<span class="w">    </span><span class="n">Tokenizer</span><span class="o">*</span><span class="w"> </span><span class="n">tokenizer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Tokenizer</span><span class="p">(</span><span class="n">TOKENIZER_BACKEND_LLAMA</span><span class="p">,</span><span class="w"> </span><span class="n">tokenizer_path</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tokenizer</span><span class="o">-&gt;</span><span class="n">GetVocabInfo</span><span class="p">(</span><span class="o">&amp;</span><span class="n">vocab_info</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Retrieves vocab_size, special_eos_id, special_bos_id, etc.</span>
+
+<span class="w">    </span><span class="c1">// ==================== 3. Load Embedding ====================</span>
+<span class="w">    </span><span class="c1">// Maps embed.bin to memory (Host side) via mmap to avoid copying large files</span>
+<span class="w">    </span><span class="c1">// RK182X has limited DRAM, so embedding layer runs on RK3588 Host side</span>
+<span class="w">    </span><span class="n">embedding_info</span><span class="p">.</span><span class="n">fd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">open</span><span class="p">(</span><span class="n">embedding_path</span><span class="p">,</span><span class="w"> </span><span class="n">O_RDONLY</span><span class="p">);</span>
+<span class="w">    </span><span class="n">embedding_info</span><span class="p">.</span><span class="n">embedding_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">float16</span><span class="o">*</span><span class="p">)</span><span class="n">mmap</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">file_size</span><span class="p">,</span><span class="w"> </span><span class="n">PROT_READ</span><span class="p">,</span><span class="w"> </span><span class="n">MAP_PRIVATE</span><span class="p">,</span><span class="w"> </span><span class="n">fd</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">embedding_info</span><span class="p">.</span><span class="n">embedding_dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">file_size</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">vocab_size</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">float16</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 4. Configure LLM Parameters ====================</span>
+<span class="w">    </span><span class="n">rknn3_llm_param</span><span class="w"> </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="w">    </span><span class="n">params</span><span class="p">.</span><span class="n">logits_name</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;logits&quot;</span><span class="p">;</span><span class="w">         </span><span class="c1">// Output node name</span>
+<span class="w">    </span><span class="n">params</span><span class="p">.</span><span class="n">max_context_len</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">MAX_CONTEXT_LEN</span><span class="p">;</span><span class="w">  </span><span class="c1">// Maximum context length</span>
+<span class="w">    </span><span class="n">params</span><span class="p">.</span><span class="n">sampling_param</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w">                  </span><span class="c1">// Sampling parameters</span>
+<span class="w">        </span><span class="p">.</span><span class="n">top_k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="p">.</span><span class="n">top_p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.9</span><span class="p">,</span>
+<span class="w">        </span><span class="p">.</span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span>
+<span class="w">        </span><span class="p">.</span><span class="n">repeat_penalty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.2f</span><span class="p">,</span>
+<span class="w">        </span><span class="p">.</span><span class="n">frequency_penalty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span>
+<span class="w">        </span><span class="p">.</span><span class="n">presence_penalty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">    </span><span class="c1">// Vocabulary information (EOS/BOS token IDs, etc.)</span>
+<span class="w">    </span><span class="n">params</span><span class="p">.</span><span class="n">vocab_info</span><span class="p">.</span><span class="n">vocab_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vocab_info</span><span class="p">.</span><span class="n">vocab_size</span><span class="p">;</span>
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="n">params</span><span class="p">.</span><span class="n">vocab_info</span><span class="p">.</span><span class="n">special_eos_id</span><span class="p">,</span><span class="w"> </span><span class="n">vocab_info</span><span class="p">.</span><span class="n">special_eos_id</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 5. Register Callback Functions ====================</span>
+<span class="w">    </span><span class="n">RKLLMCallback</span><span class="w"> </span><span class="n">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+
+<span class="w">    </span><span class="c1">// result_callback: Receives each generated token, decodes it into text, and streams output</span>
+<span class="w">    </span><span class="n">callback</span><span class="p">.</span><span class="n">result_callback</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">result_callback</span><span class="p">;</span>
+<span class="w">    </span><span class="n">callback</span><span class="p">.</span><span class="n">result_userdata</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">tokenizer</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// tokenizer_callback: Encodes input text into token ID sequences</span>
+<span class="w">    </span><span class="n">callback</span><span class="p">.</span><span class="n">tokenizer_callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tokenizer_callback</span><span class="p">;</span>
+<span class="w">    </span><span class="n">callback</span><span class="p">.</span><span class="n">tokenizer_userdata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tokenizer</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// embed_callback: Converts token IDs to embedding vectors via lookup (Host side execution)</span>
+<span class="w">    </span><span class="c1">// Internally uses memcpy to copy corresponding rows from mmap-ed embed.bin indexed by token ID</span>
+<span class="w">    </span><span class="n">callback</span><span class="p">.</span><span class="n">embed_callback</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">embed_callback</span><span class="p">;</span>
+<span class="w">    </span><span class="n">callback</span><span class="p">.</span><span class="n">embed_userdata</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">embedding_info</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// ==================== 6. Initialize Model ====================</span>
+<span class="w">    </span><span class="c1">// Internally performs: rknn3_init → rknn3_load_model_from_path → rknn3_model_init</span>
+<span class="w">    </span><span class="c1">//                    → rknn3_session_init → rknn3_session_set_chat_template</span>
+<span class="w">    </span><span class="c1">//                    → rknn3_session_set_callback</span>
+<span class="w">    </span><span class="n">init_qwen2_5_llm</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">model_path</span><span class="p">,</span><span class="w"> </span><span class="n">weight_path</span><span class="p">,</span>
+<span class="w">                     </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">callback</span><span class="p">,</span><span class="w"> </span><span class="n">core_mask</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 7. Assemble Input and Perform Inference ====================</span>
+<span class="w">    </span><span class="n">rknn3_llm_tensor</span><span class="w"> </span><span class="n">tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">name</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;input_embeds&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">prompt</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="n">prompt</span><span class="p">;</span><span class="w">        </span><span class="c1">// User input text</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">embed</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w">          </span><span class="c1">// Embedding not directly passed; generated by callback</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">tokens</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">n_tokens</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">enable_thinking</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w">         </span><span class="c1">// Disable thinking mode</span>
+
+<span class="w">    </span><span class="c1">// Internally performs: rknn3_session_run → Triggers callback chain:</span>
+<span class="w">    </span><span class="c1">//   tokenizer_callback(text→tokens) → embed_callback(tokens→embedding)</span>
+<span class="w">    </span><span class="c1">//   → NPU inference → result_callback(stream output generated text)</span>
+<span class="w">    </span><span class="n">inference_qwen2_5_llm</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">tensor</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">perf</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 8. Output Performance Metrics ====================</span>
+<span class="w">    </span><span class="c1">// Prefill: TTFT (Time To First Token), token processing speed</span>
+<span class="w">    </span><span class="c1">// Generate: Decode TPS (Tokens Per Second)</span>
+<span class="w">    </span><span class="n">printf_perf</span><span class="p">(</span><span class="o">&amp;</span><span class="n">perf</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ==================== 9. Clean Up Resources ====================</span>
+<span class="w">    </span><span class="n">release_qwen2_5_llm</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">);</span><span class="w">    </span><span class="c1">// rknn3_session_destroy + rknn3_destroy</span>
+<span class="w">    </span><span class="n">munmap</span><span class="p">(</span><span class="n">embedding_info</span><span class="p">.</span><span class="n">embedding_data</span><span class="p">,</span><span class="w"> </span><span class="n">file_size</span><span class="p">);</span><span class="w">  </span><span class="c1">// Release mmap</span>
+<span class="w">    </span><span class="n">close</span><span class="p">(</span><span class="n">embedding_info</span><span class="p">.</span><span class="n">fd</span><span class="p">);</span>
+<span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">tokenizer</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>3. Board-side Execution</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>adb<span class="w"> </span>push<span class="w"> </span>install/rk3588_linux_aarch64/rknn_Qwen2_5_demo/<span class="w"> </span>/rknn_Qwen2_5_demo/
+adb<span class="w"> </span>shell
+<span class="nb">cd</span><span class="w"> </span>/rknn_Qwen2_5_demo
+
+./rknn_qwen2_5_demo<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>model/Qwen2.5-3B-Instruct.rknn<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>model/Qwen2.5-3B-Instruct.weight<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>model/Qwen2.5-3B-Instruct.tokenizer.gguf<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>model/Qwen2.5-3B-Instruct.embed.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>0xff<span class="w"> </span><span class="s2">&quot;Who are you?&quot;</span>
+</pre></div>
+</div>
+<p>Sample Output:</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>I am Qwen, an AI assistant created by Alibaba Cloud...
+TTFT: 83.4 ms | Decode TPS: 102.0 tokens/s
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>6.3 Python Interface Deployment<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rknn3lite.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNN3Lite</span>
+
+<span class="c1"># 1. Initialization (LLM mode)</span>
+<span class="n">rknn_llm</span> <span class="o">=</span> <span class="n">RKNN3Lite</span><span class="p">(</span><span class="n">llm_mode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># 2. Load model</span>
+<span class="n">rknn_llm</span><span class="o">.</span><span class="n">load_rknn</span><span class="p">(</span><span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-3B-Instruct.rknn&#39;</span><span class="p">,</span>
+                   <span class="n">weight_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-3B-Instruct.weight&#39;</span><span class="p">)</span>
+
+<span class="c1"># 3. Initialize runtime (with LLM parameters and callbacks)</span>
+<span class="n">ARGS</span> <span class="o">=</span> <span class="p">[{</span><span class="s2">&quot;max_new_tokens&quot;</span><span class="p">:</span> <span class="mi">256</span><span class="p">,</span> <span class="s2">&quot;top_k&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;repeat_penalty&quot;</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
+         <span class="s2">&quot;special_eos_id&quot;</span><span class="p">:</span> <span class="mi">151645</span><span class="p">,</span> <span class="s2">&quot;max_context_len&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">}]</span>
+<span class="n">callback</span> <span class="o">=</span> <span class="n">RKLLMCallback</span><span class="p">()</span>
+<span class="c1"># ... configure callback functions ...</span>
+
+<span class="n">rknn_llm</span><span class="o">.</span><span class="n">init_runtime</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;rk1828&#39;</span><span class="p">,</span> <span class="n">core_mask</span><span class="o">=</span><span class="mh">0xff</span><span class="p">,</span>
+                      <span class="n">llm_args</span><span class="o">=</span><span class="n">ARGS</span><span class="p">,</span> <span class="n">llm_callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span>
+                      <span class="n">llm_embed_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-3B-Instruct.embed.bin&#39;</span><span class="p">)</span>
+
+<span class="c1"># 4. Inference</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;Who are you?&quot;</span>
+<span class="n">ret</span><span class="p">,</span> <span class="p">[</span><span class="n">n_decode</span><span class="p">,</span> <span class="n">n_prefill</span><span class="p">,</span> <span class="n">t_start</span><span class="p">,</span> <span class="n">t_end</span><span class="p">]</span> <span class="o">=</span> <span class="n">rknn_llm</span><span class="o">.</span><span class="n">session_run</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+
+<span class="c1"># 5. Release resources</span>
+<span class="n">rknn_llm</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="openai-interface-deployment-rkllm3-server">
+<h3>6.4 OpenAI Interface Deployment（rkllm3-server）<a class="headerlink" href="#openai-interface-deployment-rkllm3-server" title="Link to this heading"></a></h3>
+<p>rkllm3-server starts an HTTP service on the board, providing an interface compatible with the OpenAI ChatGPT API format. Any language or tool that supports HTTP requests can remotely call the board-side model without writing C++ code. Existing OpenAI ecosystem tools (e.g., LangChain, ChatUI, Python openai library) can be directly connected by simply pointing the api_base to the board’s IP address.</p>
+<p>Start the Server</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>adb<span class="w"> </span>shell
+<span class="nb">cd</span><span class="w"> </span>/Qwen2.5-3B
+rkllm3-server<span class="w"> </span>-m<span class="w"> </span>model/Qwen2.5-3B-Instruct.rknn<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--weight<span class="w"> </span>model/Qwen2.5-3B-Instruct.weight<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--vocab<span class="w"> </span>model/Qwen2.5-3B-Instruct.tokenizer.gguf<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--embed<span class="w"> </span>model/Qwen2.5-3B-Instruct.embed.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-c<span class="w"> </span><span class="m">1024</span><span class="w"> </span>--n_predict<span class="w"> </span><span class="m">512</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--top-k<span class="w"> </span><span class="m">1</span><span class="w"> </span>--top-p<span class="w"> </span><span class="m">0</span>.8<span class="w"> </span>--temp<span class="w"> </span><span class="m">0</span>.8
+</pre></div>
+</div>
+<p>curl Call (Run in another terminal on the board)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://localhost:8080/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1">    &quot;messages&quot;: [{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;Hello，please introduce yourself&quot;}],</span>
+<span class="s1">    &quot;max_tokens&quot;: 256</span>
+<span class="s1">  }&#39;</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<p><img alt="Image" src="_images/1776913942396_f07899be_18c3_4e13_b2bf_729817d37a96.png" /></p>
+<p><strong>If testing remotely from a PC, replace localhost with the board IP.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://:8080/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1">    &quot;messages&quot;: [{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;你好，请介绍一下你自己&quot;}],</span>
+<span class="s1">    &quot;max_tokens&quot;: 256</span>
+<span class="s1">  }&#39;</span>
+</pre></div>
+</div>
+<p>The returned JSON includes content and tokens_per_sec (measured at about 102 TPS).</p>
+<p>Python openai Library Call</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://:8080/v1&quot;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;sk-no-key-required&quot;</span><span class="p">)</span>
+<span class="n">resp</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;Qwen2.5-3B&quot;</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Who are you?&quot;</span><span class="p">}],</span>
+    <span class="n">stream</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+<span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">resp</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>6.5 Performance &amp; Accuracy<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>TTFT (ms)</p></th>
+<th class="head"><p>TPOT (ms)</p></th>
+<th class="head"><p>Decode TPS</p></th>
+<th class="head"><p>Data Collection</p></th>
+<th class="head"><p>FP32</p></th>
+<th class="head"><p>RKNN3 W4A16</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Qwen2.5-0.5B</p></td>
+<td><p>21.89</p></td>
+<td><p>4.63</p></td>
+<td><p>215.86</p></td>
+<td><p>gsm8k</p></td>
+<td><p>40.71</p></td>
+<td><p>36.09</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen2.5-3B</p></td>
+<td><p>83.44</p></td>
+<td><p>9.80</p></td>
+<td><p>102.01</p></td>
+<td><p>gsm8k</p></td>
+<td><p>79.91</p></td>
+<td><p>80.52</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="vlm-model-in-practice-qwen2-5-vl-3b">
+<h2>7. VLM Model in Practice: Qwen2.5-VL-3B<a class="headerlink" href="#vlm-model-in-practice-qwen2-5-vl-3b" title="Link to this heading"></a></h2>
+<p>This chapter uses Qwen2.5-VL-3B as an example to demonstrate the complete deployment workflow of a VLM multimodal model. VLM also supports three interfaces: C++, Python, and OpenAI.</p>
+<section id="id5">
+<h3>7.1 Model Acquisition &amp; Conversion<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>A VLM consists of two independent sub-models: Vision and LLM, which are exported and converted separately.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>Projects/rknn3-model-zoo/examples/Qwen2_5_VL/python
+
+<span class="c1"># Export LLM submodel</span>
+<span class="nb">cd</span><span class="w"> </span>llm<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_llm.py<span class="w"> </span>--quant<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_rknn.py
+
+<span class="c1"># Export Vision submodel</span>
+<span class="nb">cd</span><span class="w"> </span>../vision<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_vision.py<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python<span class="w"> </span>export_rknn.py
+</pre></div>
+</div>
+<p>File / Module</p>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>model/
+├── llm/    Qwen2.5-VL-3B-llm.{rknn, weight, tokenizer.gguf, embed.bin}
+└── vision/ Qwen2.5-VL-3B-vision.{rknn, weight}
+</pre></div>
+</div>
+<blockquote>
+<div><p>Vision models use the <code class="docutils literal notranslate"><span class="pre">load_onnx</span></code> interface for loading, while LLMs use the <code class="docutils literal notranslate"><span class="pre">load_llm</span></code> interface. This is the key distinction.</p>
+</div></blockquote>
+</section>
+<section id="id6">
+<h3>7.2 C++ Interface Deployment<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>Compile &amp; Deploy</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./build-linux.sh<span class="w"> </span>-t<span class="w"> </span>rk3588<span class="w"> </span>-a<span class="w"> </span>aarch64<span class="w"> </span>-b<span class="w"> </span>Release<span class="w"> </span>-d<span class="w"> </span>Qwen2_5_VL
+adb<span class="w"> </span>push<span class="w"> </span>install/rk3588_linux_aarch64/rknn_Qwen2_5_VL_demo<span class="w"> </span>/rknn_Qwen2_5_VL_demo
+</pre></div>
+</div>
+<p><strong>Source Code Analysis (examples/Qwen2_5_VL/cpp)</strong>:</p>
+<p>The VLM (Vision-Language Model) inference is encapsulated within <code class="docutils literal notranslate"><span class="pre">inference_qwen2_5_vl_model()</span></code>. Internally, it first processes the image through the Vision model to obtain <code class="docutils literal notranslate"><span class="pre">img_embeds</span></code>, then combines <code class="docutils literal notranslate"><span class="pre">img_embeds</span></code> with the prompt before feeding it to the LLM Session for multimodal generation:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// ==================== 2. Load Tokenizer + Embedding ====================</span>
+<span class="c1">// Identical to LLM: GGUF tokenizer + mmap embed.bin</span>
+<span class="n">Tokenizer</span><span class="o">*</span><span class="w"> </span><span class="n">tokenizer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Tokenizer</span><span class="p">(</span><span class="n">TOKENIZER_BACKEND_LLAMA</span><span class="p">,</span><span class="w"> </span><span class="n">tokenizer_path</span><span class="p">);</span>
+<span class="n">tokenizer</span><span class="o">-&gt;</span><span class="n">GetVocabInfo</span><span class="p">(</span><span class="o">&amp;</span><span class="n">vocab_info</span><span class="p">);</span>
+
+<span class="n">embedding_info</span><span class="p">.</span><span class="n">fd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">open</span><span class="p">(</span><span class="n">embedding_path</span><span class="p">,</span><span class="w"> </span><span class="n">O_RDONLY</span><span class="p">);</span>
+<span class="n">embedding_info</span><span class="p">.</span><span class="n">embedding_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">float16</span><span class="o">*</span><span class="p">)</span><span class="n">mmap</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">file_size</span><span class="p">,</span><span class="w"> </span><span class="n">PROT_READ</span><span class="p">,</span><span class="w"> </span><span class="n">MAP_PRIVATE</span><span class="p">,</span><span class="w"> </span><span class="n">fd</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="n">embedding_info</span><span class="p">.</span><span class="n">embedding_dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">file_size</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">vocab_size</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">float16</span><span class="p">);</span>
+
+<span class="c1">// ==================== 3. Configure LLM Parameters + Callback ====================</span>
+<span class="c1">// Same params and callback settings as LLM</span>
+<span class="n">rknn3_llm_param</span><span class="w"> </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="n">params</span><span class="p">.</span><span class="n">logits_name</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;logits&quot;</span><span class="p">;</span>
+<span class="n">params</span><span class="p">.</span><span class="n">max_context_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MAX_CONTEXT_LEN</span><span class="p">;</span>
+<span class="n">params</span><span class="p">.</span><span class="n">sampling_param</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">top_k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">top_p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.9</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.000001f</span><span class="p">,</span><span class="w">      </span><span class="c1">// VLM uses very low temperature for more deterministic output</span>
+<span class="w">    </span><span class="p">.</span><span class="n">repeat_penalty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.05f</span>
+<span class="p">};</span>
+
+<span class="n">RKLLMCallback</span><span class="w"> </span><span class="n">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="n">callback</span><span class="p">.</span><span class="n">result_callback</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">result_callback</span><span class="p">;</span><span class="w">     </span><span class="c1">// Stream output text</span>
+<span class="n">callback</span><span class="p">.</span><span class="n">tokenizer_callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tokenizer_callback</span><span class="p">;</span><span class="w">  </span><span class="c1">// Text → token</span>
+<span class="n">callback</span><span class="p">.</span><span class="n">embed_callback</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="n">embed_callback</span><span class="p">;</span><span class="w">      </span><span class="c1">// Token → embedding</span>
+
+<span class="c1">// ==================== 4. Initialize Vision + LLM Dual Models ====================</span>
+<span class="c1">// Key difference from LLM: Load both Vision and LLM models simultaneously</span>
+<span class="c1">// Internal process:</span>
+<span class="c1">//   Vision: rknn3_init → rknn3_load_model → rknn3_model_init → rknn3_query</span>
+<span class="c1">//   LLM:   rknn3_init → rknn3_load_model → rknn3_session_init → set_callback</span>
+<span class="n">init_qwen2_5_vl_model</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span>
+<span class="w">    </span><span class="n">llm_model_path</span><span class="p">,</span><span class="w"> </span><span class="n">llm_weight_path</span><span class="p">,</span>
+<span class="w">    </span><span class="n">vision_model_path</span><span class="p">,</span><span class="w"> </span><span class="n">vision_weight_path</span><span class="p">,</span>
+<span class="w">    </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">callback</span><span class="p">,</span>
+<span class="w">    </span><span class="n">vision_core_mask</span><span class="p">,</span><span class="w"> </span><span class="n">llm_core_mask</span><span class="p">);</span>
+
+<span class="c1">// ==================== 5. Allocate img_embeds Memory ====================</span>
+<span class="c1">// Allocate embedding buffer based on the output shape of the Vision model</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">embed_elems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">embeds_ndims</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">embed_elems</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">embeds_shape</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="n">float16</span><span class="o">*</span><span class="w"> </span><span class="n">img_embeds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">float16</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="n">embed_elems</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">float16</span><span class="p">));</span>
+
+<span class="c1">// ==================== 6. Preprocess Input Image ====================</span>
+<span class="c1">// Load image via standard image processing library</span>
+<span class="n">cv</span><span class="o">::</span><span class="n">Mat</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cv</span><span class="o">::</span><span class="n">imread</span><span class="p">(</span><span class="n">img_path</span><span class="p">);</span>
+<span class="c1">// Resize to the model&#39;s required input dimensions</span>
+<span class="n">cv</span><span class="o">::</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">cv</span><span class="o">::</span><span class="n">Size</span><span class="p">(</span><span class="n">model_width</span><span class="p">,</span><span class="w"> </span><span class="n">model_height</span><span class="p">));</span>
+<span class="c1">// Image data format conversion: BGR -&gt; RGB</span>
+<span class="n">cv</span><span class="o">::</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">img</span><span class="p">,</span><span class="w"> </span><span class="n">cv</span><span class="o">::</span><span class="n">COLOR_BGR2RGB</span><span class="p">);</span>
+
+<span class="c1">// Prepare image tensor for rknn3</span>
+<span class="n">src_image</span><span class="p">.</span><span class="n">width</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">model_width</span><span class="p">;</span>
+<span class="n">src_image</span><span class="p">.</span><span class="n">height</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">model_height</span><span class="p">;</span>
+<span class="n">src_image</span><span class="p">.</span><span class="n">channel</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="n">src_image</span><span class="p">.</span><span class="n">format</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">IMAGE_FORMAT_RGB888</span><span class="p">;</span>
+<span class="n">src_image</span><span class="p">.</span><span class="n">virt_addr</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="n">model_width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">model_height</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+<span class="n">memcpy</span><span class="p">(</span><span class="n">src_image</span><span class="p">.</span><span class="n">virt_addr</span><span class="p">,</span><span class="w"> </span><span class="n">img</span><span class="p">.</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">model_width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">model_height</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+
+<span class="c1">// ==================== 7. Construct Prompt with Image ====================</span>
+<span class="c1">// Prepend &lt;|image|&gt; special token to indicate image input</span>
+<span class="n">prompt_with_image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">prompt</span><span class="p">);</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">prompt</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">prompt_with_image</span><span class="p">.</span><span class="n">c_str</span><span class="p">();</span>
+
+<span class="c1">// Image embedding information</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">image_embed</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">img_embeds</span><span class="p">;</span>
+<span class="c1">// Automatically determine token count based on Vision output dimensions</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">embeds_ndims</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">n_image_tokens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">embeds_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">n_image</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">n_image_tokens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">embeds_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="w">    </span><span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">n_image</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">embeds_shape</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">image_width</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">model_width</span><span class="p">;</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">image_height</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">rknn_app_ctx</span><span class="p">.</span><span class="n">vision</span><span class="p">.</span><span class="n">model_height</span><span class="p">;</span>
+<span class="c1">// Qwen2.5-VL image token markers</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">image_start</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">image_end</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">image</span><span class="p">.</span><span class="n">image_content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="n">tensor</span><span class="p">.</span><span class="n">enable_thinking</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+
+<span class="c1">// ==================== 8. Inference ====================</span>
+<span class="c1">// Internal process:</span>
+<span class="c1">//   1) Vision inference: Preprocess image → rknn3_run → output img_embeds</span>
+<span class="c1">//   2) LLM inference: Combine prompt + img_embeds → rknn3_session_run</span>
+<span class="c1">//      → Callback chain: tokenizer → embed → NPU → result (streaming output)</span>
+<span class="n">inference_qwen2_5_vl_model</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">src_image</span><span class="p">,</span><span class="w"> </span><span class="n">img_embeds</span><span class="p">,</span>
+<span class="w">                           </span><span class="n">tensor</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">perf</span><span class="p">);</span>
+
+<span class="c1">// ==================== 9. Output Performance Metrics ====================</span>
+<span class="c1">// Besides Prefill/Generate, also output Vision latency</span>
+<span class="n">printf_perf</span><span class="p">(</span><span class="o">&amp;</span><span class="n">perf</span><span class="p">);</span>
+<span class="c1">// Example output: Vision latency = 274.80 ms, FPS = 3.64</span>
+
+<span class="c1">// ==================== 10. Clean Up Resources ====================</span>
+<span class="n">release_qwen2_5_vl_model</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rknn_app_ctx</span><span class="p">);</span><span class="w">  </span><span class="c1">// Release Vision + LLM dual models</span>
+<span class="n">munmap</span><span class="p">(</span><span class="n">embedding_info</span><span class="p">.</span><span class="n">embedding_data</span><span class="p">,</span><span class="w"> </span><span class="n">file_size</span><span class="p">);</span>
+<span class="n">close</span><span class="p">(</span><span class="n">embedding_info</span><span class="p">.</span><span class="n">fd</span><span class="p">);</span>
+<span class="n">free</span><span class="p">(</span><span class="n">src_image</span><span class="p">.</span><span class="n">virt_addr</span><span class="p">);</span>
+<span class="n">free</span><span class="p">(</span><span class="n">img_embeds</span><span class="p">);</span>
+<span class="k">delete</span><span class="w"> </span><span class="n">tokenizer</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>3) Run</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./rknn_qwen2_5_vl_demo<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/Qwen2.5-VL-3B-vision.rknn<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/Qwen2.5-VL-3B-vision.weight<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/Qwen2.5-VL-3B-llm.rknn<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/Qwen2.5-VL-3B-llm.weight<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/Qwen2.5-VL-3B-llm.tokenizer.gguf<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/Qwen2.5-VL-3B-llm.embed.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>0xff<span class="w"> </span>0xff<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>./model/demo.jpg<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;Please describe this picture&quot;</span><span class="w"> </span><span class="m">392</span><span class="w"> </span><span class="m">392</span>
+</pre></div>
+</div>
+</section>
+<section id="vlm-python-inference-on-device">
+<h3>7.3 VLM Python Inference (On-device)<a class="headerlink" href="#vlm-python-inference-on-device" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rknn3lite.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">RKNN3Lite</span><span class="p">,</span> <span class="n">RKNN3Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ctypes</span>
+
+<span class="c1"># 1. Vision model inference (normal mode)</span>
+<span class="n">rknn_vision</span> <span class="o">=</span> <span class="n">RKNN3Lite</span><span class="p">()</span>
+<span class="n">rknn_vision</span><span class="o">.</span><span class="n">load_rknn</span><span class="p">(</span><span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-VL-3B-vision.rknn&#39;</span><span class="p">,</span>
+                      <span class="n">weight_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-VL-3B-vision.weight&#39;</span><span class="p">)</span>
+<span class="n">rknn_vision</span><span class="o">.</span><span class="n">init_runtime</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;rk1828&#39;</span><span class="p">,</span> <span class="n">core_mask</span><span class="o">=</span><span class="mh">0xff</span><span class="p">)</span>
+
+<span class="n">outputs</span> <span class="o">=</span> <span class="n">rknn_vision</span><span class="o">.</span><span class="n">inference</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+<span class="n">img_embeds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float16</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="c1"># 2. LLM model inference (LLM mode)</span>
+<span class="n">rknn_llm</span> <span class="o">=</span> <span class="n">RKNN3Lite</span><span class="p">(</span><span class="n">llm_mode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">rknn_llm</span><span class="o">.</span><span class="n">load_rknn</span><span class="p">(</span><span class="n">model_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-VL-3B-llm.rknn&#39;</span><span class="p">,</span>
+                   <span class="n">weight_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-VL-3B-llm.weight&#39;</span><span class="p">)</span>
+<span class="n">rknn_llm</span><span class="o">.</span><span class="n">init_runtime</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="s1">&#39;rk1828&#39;</span><span class="p">,</span> <span class="n">core_mask</span><span class="o">=</span><span class="mh">0xff</span><span class="p">,</span>
+                      <span class="n">llm_args</span><span class="o">=</span><span class="n">ARGS</span><span class="p">,</span> <span class="n">llm_callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span>
+                      <span class="n">llm_embed_path</span><span class="o">=</span><span class="s1">&#39;Qwen2.5-VL-3B-llm.embed.bin&#39;</span><span class="p">)</span>
+
+<span class="c1"># 3. Assemble multimodal input</span>
+<span class="n">llm_input</span> <span class="o">=</span> <span class="n">RKNN3Image</span><span class="p">()</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">image_embed</span>    <span class="o">=</span> <span class="n">img_embeds</span><span class="o">.</span><span class="n">ctypes</span><span class="o">.</span><span class="n">data_as</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">POINTER</span><span class="p">(</span><span class="n">Float16</span><span class="p">))</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">n_image_tokens</span> <span class="o">=</span> <span class="n">img_embeds</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">n_image</span>        <span class="o">=</span> <span class="n">img_embeds</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">image_width</span>    <span class="o">=</span> <span class="mi">392</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">image_height</span>   <span class="o">=</span> <span class="mi">392</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">image_start</span>    <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">image_end</span>      <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">llm_input</span><span class="o">.</span><span class="n">image_content</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="c1"># 4. Inference</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;Please describe this image&quot;</span>
+<span class="n">ret</span><span class="p">,</span> <span class="n">stats</span> <span class="o">=</span> <span class="n">rknn_llm</span><span class="o">.</span><span class="n">session_run</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">llm_input</span><span class="p">],</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+
+<span class="c1"># 5. Release</span>
+<span class="n">rknn_vision</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+<span class="n">rknn_llm</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="openai-interface-deployment">
+<h3>7.4 OpenAI Interface Deployment<a class="headerlink" href="#openai-interface-deployment" title="Link to this heading"></a></h3>
+<p><strong>Start the Server</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rkllm3-server<span class="w"> </span>-m<span class="w"> </span>model/Qwen2.5-VL-3B-llm.rknn<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model2<span class="w"> </span>model/Qwen2.5-VL-3B-vision.rknn<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--vocab<span class="w"> </span>model/Qwen2.5-VL-3B-llm.tokenizer.gguf<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--embed<span class="w"> </span>model/Qwen2.5-VL-3B-llm.embed.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-c<span class="w"> </span><span class="m">768</span><span class="w"> </span>--n_predict<span class="w"> </span><span class="m">512</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--top-k<span class="w"> </span><span class="m">1</span><span class="w"> </span>--top-p<span class="w"> </span><span class="m">0</span>.8<span class="w"> </span>--temp<span class="w"> </span><span class="m">0</span>.8<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--img-start<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span>--img-end<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--img-content<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--img-width<span class="w"> </span><span class="m">392</span><span class="w"> </span>--img-height<span class="w"> </span><span class="m">392</span>
+</pre></div>
+</div>
+<p><strong>First, test with plain text to confirm the server is functioning correctly.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://localhost:8080/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;你好&quot;}],&quot;max_tokens&quot;:64}&#39;</span>
+</pre></div>
+</div>
+<p><strong>Results:</strong></p>
+<p><img alt="Image" src="_images/1776914595811_2a0b4e8c_de37_499f_aaf1_fc7eeb951002.png" /></p>
+<p>In another terminal, use Python to send an image + text request:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First, convert the test image to base64</span>
+<span class="n">python3</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">base64</span><span class="o">,</span><span class="w"> </span><span class="nn">json</span><span class="o">,</span><span class="w"> </span><span class="nn">urllib.request</span>
+
+<span class="c1"># Read image (using an existing image on the board)</span>
+<span class="n">b64</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/rk3588_linux_aarch64/rk3588_linux_aarch64/rknn_Qwen2_5_VL_demo/model/demo.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span>
+    <span class="s1">&#39;messages&#39;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;image_url&#39;</span><span class="p">,</span> <span class="s1">&#39;image_url&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;data:image/jpeg;base64,</span><span class="si">{</span><span class="n">b64</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">}},</span>
+            <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s1">&#39;请描述这张图片&#39;</span><span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}],</span>
+    <span class="s1">&#39;max_tokens&#39;</span><span class="p">:</span> <span class="mi">256</span>
+<span class="p">})</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+
+<span class="n">req</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="s1">&#39;http://localhost:8080/v1/chat/completions&#39;</span><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">})</span>
+<span class="n">resp</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+<span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p><strong>Results:</strong></p>
+<p><img alt="Image" src="_images/1776914829674_9745f800_a529_4484_9647_6a6622be301e.png" /></p>
+</section>
+<section id="performance-data">
+<h3>7.5 Performance Data<a class="headerlink" href="#performance-data" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Acceleration Chip</p></th>
+<th class="head"><p>Vision (ms)</p></th>
+<th class="head"><p>LLM TTFT (ms)</p></th>
+<th class="head"><p>LLM Decode TPS</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Qwen2.5-VL-3B</p></td>
+<td><p>RK1828</p></td>
+<td><p>274.80</p></td>
+<td><p>84.69</p></td>
+<td><p>102.58</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen2.5-VL-7B</p></td>
+<td><p>RK1828</p></td>
+<td><p>279.34</p></td>
+<td><p>159.42</p></td>
+<td><p>70.02</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="rknn3-c-api-quick-reference">
+<h2>8. RKNN3 C API Quick Reference<a class="headerlink" href="#rknn3-c-api-quick-reference" title="Link to this heading"></a></h2>
+<p>CNN Deployment Core API Quick Reference Detailed parameter descriptions can be found in.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_init</span></code></p></td>
+<td><p>Initialize Context</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_load_model_from_path</span></code></p></td>
+<td><p>Load model + weight from a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_load_model_from_data</span></code></p></td>
+<td><p>Load model from Memory</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_model_init</span></code></p></td>
+<td><p>Model Initialization Configure settings (e.g., core_mask).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_query</span></code></p></td>
+<td><p>Query Input/Output Attributes  Get IN_OUT_NUM, INPUT_ATTR, OUTPUT_ATTR.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_create_mem</span></code></p></td>
+<td><p>Allocate memory for input/output tensors.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_mem_sync</span></code></p></td>
+<td><p>Host ↔ Device Memory Sync （TO_DEVICE / FROM_DEVICE）</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_run</span></code></p></td>
+<td><p>Synchronous Inference</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_destroy_mem</span></code></p></td>
+<td><p>Release allocated tensor memory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_destroy</span></code></p></td>
+<td><p>Destroy Context</p></td>
+</tr>
+</tbody>
+</table>
+<p>See Section 5.2 for a complete code example.</p>
+</section>
+<hr class="docutils" />
+<section id="llm-session-api-quick-reference">
+<h2>9. LLM Session API Quick Reference<a class="headerlink" href="#llm-session-api-quick-reference" title="Link to this heading"></a></h2>
+<p>Quick reference for LLM/VLM deployment Session API.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_init</span></code></p></td>
+<td><p>Create Session</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_set_chat_template</span></code></p></td>
+<td><p>Set system prompt + prefix + postfix</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_set_callback</span></code></p></td>
+<td><p>Register 5 callback functions</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_run</span></code></p></td>
+<td><p>Synchronous Inference</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_run_async</span></code></p></td>
+<td><p>Asynchronous reasoning</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_stop</span></code></p></td>
+<td><p>Terminate the current inference</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_clear_kvcache</span></code></p></td>
+<td><p>Clean KVCache</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rknn3_session_destroy</span></code></p></td>
+<td><p>Destroy Session</p></td>
+</tr>
+</tbody>
+</table>
+<p>5 callback functions:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Callback</p></th>
+<th class="head"><p>Phase</p></th>
+<th class="head"><p>Function</p></th>
+<th class="head"><p>Mandatory</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tokenizer_callback</span></code></p></td>
+<td><p>Prefill</p></td>
+<td><p>Context→ Token</p></td>
+<td><p>Optional</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">embed_callback</span></code></p></td>
+<td><p>Prefill + Decode</p></td>
+<td><p>Token → Embedding（Host Execute）</p></td>
+<td><p><strong>Yes</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">output_callback</span></code></p></td>
+<td><p>Prefill + Decode</p></td>
+<td><p>Retrieve the model output</p></td>
+<td><p>Optional</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">sampling_callback</span></code></p></td>
+<td><p>Prefill + Decode</p></td>
+<td><p>Logits → Token</p></td>
+<td><p>Optional</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">result_callback</span></code></p></td>
+<td><p>Prefill + Decode</p></td>
+<td><p>Token streaming output</p></td>
+<td><p><strong>Yes</strong></p></td>
+</tr>
+</tbody>
+</table>
+<p>See Section 6.2 for a complete code example.</p>
+</section>
+<hr class="docutils" />
+<section id="supported-models-and-performance-data">
+<h2>10. Supported Models and Performance Data<a class="headerlink" href="#supported-models-and-performance-data" title="Link to this heading"></a></h2>
+<section id="supported-model">
+<h3>10.1 Supported Model<a class="headerlink" href="#supported-model" title="Link to this heading"></a></h3>
+<p><strong>LLM</strong>：Qwen2.5 (0.5B/1.5B/3B/7B), Qwen3 (0.6B/1.7B/4B/8B), HY-MT1.5-1.8B, Youtu-LLM-2B, GLM-Edge-1.5B-Chat</p>
+<p><strong>VLM</strong>：FastVLM, Qwen2.5-VL (3B/7B), Qwen3-VL (2B/4B), InternVL3 (2B), InternVL3.5 (4B), MiMo-VL-7B-RL, SmolVLM-500M, UI-TARS-2B-SFT, gme-Qwen2-VL-2B</p>
+<p>Full-modality : Qwen2.5-Omni-3B (Thinker)</p>
+<p><strong>CNN</strong>：MobileNetV1, MobileNetV2, ResNet50V2, YOLOv5s, YOLOv6s, YOLOv8s</p>
+<p><strong>Others</strong>：SenseVoiceSmall（voice）, Depth-Anything-V2-small（depth estimation）, Siglip2-so400m, Dinov3</p>
+<p>Pre-conversion model download: RKNN3 _ SDK network disk (<a class="reference external" href="https://console.box.lenovo.com/l/H1fig1">https://console.box.lenovo.com/l/H1fig1</a>, extraction code: rknn),</p>
+<p>path: <code class="docutils literal notranslate"><span class="pre">RKNN3_SDK/rknn3_models/v1.0.0</span></code>.</p>
+</section>
+<section id="llm-performance">
+<h3>10.2 LLM Performance<a class="headerlink" href="#llm-performance" title="Link to this heading"></a></h3>
+<p>Test conditions: OK3588-C development board + RK182X, PCIe connection, performance mode, Input/New Tokens are 128.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Acceleration Chip</p></th>
+<th class="head"><p>TTFT (ms)</p></th>
+<th class="head"><p>TPOT (ms)</p></th>
+<th class="head"><p>Decode TPS</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Qwen2.5-0.5B</p></td>
+<td><p>RK182X</p></td>
+<td><p>21.89</p></td>
+<td><p>4.63</p></td>
+<td><p>215.86</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen2.5-1.5B</p></td>
+<td><p>RK182X</p></td>
+<td><p>47.47</p></td>
+<td><p>6.78</p></td>
+<td><p>147.56</p></td>
+</tr>
+<tr class="row-even"><td><p>Qwen2.5-3B</p></td>
+<td><p>RK182X</p></td>
+<td><p>83.44</p></td>
+<td><p>9.80</p></td>
+<td><p>102.01</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen2.5-7B</p></td>
+<td><p>RK1828</p></td>
+<td><p>158.06</p></td>
+<td><p>14.23</p></td>
+<td><p>70.26</p></td>
+</tr>
+<tr class="row-even"><td><p>Qwen3-0.6B</p></td>
+<td><p>RK182X</p></td>
+<td><p>27.53</p></td>
+<td><p>5.58</p></td>
+<td><p>179.33</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen3-1.7B</p></td>
+<td><p>RK1828</p></td>
+<td><p>52.16</p></td>
+<td><p>7.20</p></td>
+<td><p>138.88</p></td>
+</tr>
+<tr class="row-even"><td><p>Qwen3-4B</p></td>
+<td><p>RK1828</p></td>
+<td><p>106.70</p></td>
+<td><p>11.42</p></td>
+<td><p>87.56</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen3-8B</p></td>
+<td><p>RK1828</p></td>
+<td><p>177.87</p></td>
+<td><p>16.36</p></td>
+<td><p>61.11</p></td>
+</tr>
+</tbody>
+</table>
+<p>TTFT: First token generation time, TPOT: Average time per output token, TPS: Tokens generated per second</p>
+</section>
+<section id="vlm-performance">
+<h3>10.3 VLM Performance<a class="headerlink" href="#vlm-performance" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Acceleration Chip</p></th>
+<th class="head"><p>Vision Resolution</p></th>
+<th class="head"><p>Vision (ms)</p></th>
+<th class="head"><p>LLM TTFT (ms)</p></th>
+<th class="head"><p>LLM Decode TPS</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FastVLM_1.5B</p></td>
+<td><p>RK182X</p></td>
+<td><p>512×512</p></td>
+<td><p>144.13</p></td>
+<td><p>47.99</p></td>
+<td><p>148.47</p></td>
+</tr>
+<tr class="row-odd"><td><p>InternVL3-2B</p></td>
+<td><p>RK182X</p></td>
+<td><p>448×448</p></td>
+<td><p>190.80</p></td>
+<td><p>47.93</p></td>
+<td><p>148.26</p></td>
+</tr>
+<tr class="row-even"><td><p>Qwen2.5-VL-3B</p></td>
+<td><p>RK1828</p></td>
+<td><p>392×392</p></td>
+<td><p>274.80</p></td>
+<td><p>84.69</p></td>
+<td><p>102.58</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen2.5-VL-7B</p></td>
+<td><p>RK1828</p></td>
+<td><p>392×392</p></td>
+<td><p>279.34</p></td>
+<td><p>159.42</p></td>
+<td><p>70.02</p></td>
+</tr>
+<tr class="row-even"><td><p>Qwen3-VL-2B</p></td>
+<td><p>RK182X</p></td>
+<td><p>384×384</p></td>
+<td><p>155.33</p></td>
+<td><p>53.39</p></td>
+<td><p>142.37</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen3-VL-4B</p></td>
+<td><p>RK1828</p></td>
+<td><p>384×384</p></td>
+<td><p>158.89</p></td>
+<td><p>108.29</p></td>
+<td><p>89.69</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cnn-performance">
+<h3>10.4 CNN Performance<a class="headerlink" href="#cnn-performance" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Resolution</p></th>
+<th class="head"><p>Single-core frame rate</p></th>
+<th class="head"><p>Multi-batch multi-core frame rate</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MobileNetV1</p></td>
+<td><p>224×224</p></td>
+<td><p>384.97</p></td>
+<td><p>1505.06</p></td>
+</tr>
+<tr class="row-odd"><td><p>MobileNetV2</p></td>
+<td><p>224×224</p></td>
+<td><p>280.06</p></td>
+<td><p>1319.91</p></td>
+</tr>
+<tr class="row-even"><td><p>ResNet50V2</p></td>
+<td><p>224×224</p></td>
+<td><p>113.66</p></td>
+<td><p>851.34</p></td>
+</tr>
+<tr class="row-odd"><td><p>YOLOv5s</p></td>
+<td><p>640×640</p></td>
+<td><p>35.41</p></td>
+<td><p>212.65</p></td>
+</tr>
+<tr class="row-even"><td><p>YOLOv6s</p></td>
+<td><p>640×640</p></td>
+<td><p>29.33</p></td>
+<td><p>194.70</p></td>
+</tr>
+<tr class="row-odd"><td><p>YOLOv8s</p></td>
+<td><p>640×640</p></td>
+<td><p>32.07</p></td>
+<td><p>210.73</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="model-accuracy">
+<h3>10.5 Model Accuracy<a class="headerlink" href="#model-accuracy" title="Link to this heading"></a></h3>
+<p>LLM (W4A16 G32 quantization, gsm8k dataset):</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Original FP32</p></th>
+<th class="head"><p>RKNN3 W4A16</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Qwen2.5-0.5B</p></td>
+<td><p>40.71</p></td>
+<td><p>36.09</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qwen2.5-3B</p></td>
+<td><p>79.91</p></td>
+<td><p>80.52</p></td>
+</tr>
+<tr class="row-even"><td><p>Qwen3-4B</p></td>
+<td><p>90.6</p></td>
+<td><p>89.84</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>CNN（W8A8  quantization, ImageNet）:</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>FP32 TOP1</p></th>
+<th class="head"><p>RKNN3 W8A8 TOP1</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MobileNetV1</p></td>
+<td><p>0.677</p></td>
+<td><p>0.676</p></td>
+</tr>
+<tr class="row-odd"><td><p>MobileNetV2</p></td>
+<td><p>0.694</p></td>
+<td><p>0.680</p></td>
+</tr>
+<tr class="row-even"><td><p>ResNet50V2</p></td>
+<td><p>0.729</p></td>
+<td><p>0.721</p></td>
+</tr>
+</tbody>
+</table>
+<p>Detection (W8A8 Quantification, COCO2017):</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>FP32 AP&#64;0.5</p></th>
+<th class="head"><p>RKNN3 W8A8 AP&#64;0.5</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>YOLOv5s</p></td>
+<td><p>0.481</p></td>
+<td><p>0.474</p></td>
+</tr>
+<tr class="row-odd"><td><p>YOLOv6s</p></td>
+<td><p>0.551</p></td>
+<td><p>0.533</p></td>
+</tr>
+<tr class="row-even"><td><p>YOLOv8s</p></td>
+<td><p>0.525</p></td>
+<td><p>0.517</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="common-issues">
+<h2>11. Common Issues<a class="headerlink" href="#common-issues" title="Link to this heading"></a></h2>
+<p><strong>rknn-smi reports “Failed to initialize rknnsmi”</strong></p>
+<p>This is a co-processor initialization timing issue. Edit <code class="docutils literal notranslate"><span class="pre">/lib/systemd/system/rknn3.service</span></code> and add <code class="docutils literal notranslate"><span class="pre">ExecStartPre=/bin/sleep</span> <span class="pre">3</span></code> in the <code class="docutils literal notranslate"><span class="pre">[Service]</span></code> section. Then run <code class="docutils literal notranslate"><span class="pre">systemctl</span> <span class="pre">daemon-reload</span> <span class="pre">&amp;&amp;</span> <span class="pre">systemctl</span> <span class="pre">restart</span> <span class="pre">rknn3.service</span></code>.</p>
+<p><strong>rknn3_transfer_proxy devices cannot detect the device</strong></p>
+<p>Check PCIe/USB connections, reseat if necessary, and confirm that the co-processor firmware is loaded correctly (<code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">pcie-rkep</span></code>).</p>
+<p><strong>“Unsupported target platform” during model conversion</strong></p>
+<p>Ensure you are using <strong>rknn3-toolkit</strong> (not rknn-toolkit2) and set <code class="docutils literal notranslate"><span class="pre">target_platform</span></code> to either <code class="docutils literal notranslate"><span class="pre">'RK1820'</span></code> or <code class="docutils literal notranslate"><span class="pre">'RK1828'</span></code>.</p>
+<p><strong>rknn3-model-zoo reports “No module named ‘py_utils’”</strong></p>
+<p>Environment variables not set. Execute <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PYTHONPATH=:$PYTHONPATH</span></code>.</p>
+<p><strong>GRQ quantization failed</strong></p>
+<p>GRQ requires a CUDA environment and only supports mainstream models. If unsupported, switch to <code class="docutils literal notranslate"><span class="pre">quantized_algorithm='normal'</span></code>.</p>
+<p><strong>No performance advantage for CV models on RK182X</strong></p>
+<p>This is expected behavior. CNN models are compute-bound, and the built-in NPU in RK3588 is already sufficient. The value of RK182X lies in LLM/VLM scenarios.</p>
+</section>
+<hr class="docutils" />
+<section id="appendix">
+<h2>12. Appendix<a class="headerlink" href="#appendix" title="Link to this heading"></a></h2>
+<section id="glossary">
+<h3>12.1 Glossary<a class="headerlink" href="#glossary" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Glossary</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>TTFT</p></td>
+<td><p>Time To First Token, generation time of first token.</p></td>
+</tr>
+<tr class="row-odd"><td><p>TPOT</p></td>
+<td><p>Time Per Output Token, average time per generated token</p></td>
+</tr>
+<tr class="row-even"><td><p>TPS</p></td>
+<td><p>Tokens Per Second, tokens generated per second</p></td>
+</tr>
+<tr class="row-odd"><td><p>W4A16</p></td>
+<td><p>Weights 4-bit, Activations 16-bit quantization</p></td>
+</tr>
+<tr class="row-even"><td><p>W8A8</p></td>
+<td><p>Weights 8-bit, Activations 8-bit quantization</p></td>
+</tr>
+<tr class="row-odd"><td><p>GRQ</p></td>
+<td><p>Group Quantization, Group Quantization algorithm</p></td>
+</tr>
+<tr class="row-even"><td><p>KVCache</p></td>
+<td><p>Key-Value Cache, caching attention keys and values in LLM inference</p></td>
+</tr>
+<tr class="row-odd"><td><p>Session</p></td>
+<td><p>Session object in RKNN3 managing LLM context and inference state</p></td>
+</tr>
+<tr class="row-even"><td><p>3D RAM Stacking</p></td>
+<td><p>3D stacking packaging technology with DRAM and processor dies</p></td>
+</tr>
+<tr class="row-odd"><td><p>core_mask</p></td>
+<td><p>Bitmask specifying which NPU cores to use (e.g., 0xff for all 8 cores)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reference-documents">
+<h3>12.2 Reference Documents<a class="headerlink" href="#reference-documents" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Document</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rockchip_RKNPU_API_Reference_RKNN3_Toolkit_CN.pdf</p></td>
+<td><p>Model Transformation API Detail</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rockchip_RKNPU_API_Reference_RKNNRT3_CN.pdf</p></td>
+<td><p>RKNN3 C API Detail</p></td>
+</tr>
+<tr class="row-even"><td><p>Rockchip_User_Guide_RKNN-SMI_Tool_EN.pdf</p></td>
+<td><p>rknn-smi Tool Usage Guide</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reference-links">
+<h3>12.3 Reference Links<a class="headerlink" href="#reference-links" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Resource</p></th>
+<th class="head"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rknn3-toolkit</p></td>
+<td><p><a class="reference external" href="https://github.com/airockchip/rknn3-toolkit">https://github.com/airockchip/rknn3-toolkit</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>rknn3-model-zoo</p></td>
+<td><p><a class="reference external" href="https://github.com/airockchip/rknn3-model-zoo">https://github.com/airockchip/rknn3-model-zoo</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Pre-converted Model Downloads</p></td>
+<td><p><a class="reference external" href="https://console.box.lenovo.com/l/H1fig1%EF%BC%88%E6%8F%90%E5%8F%96%E7%A0%81">https://console.box.lenovo.com/l/H1fig1（Extraction Code</a>: rknn）</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
