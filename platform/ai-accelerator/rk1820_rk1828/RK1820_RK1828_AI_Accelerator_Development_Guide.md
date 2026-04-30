@@ -406,10 +406,10 @@ File / Module
 
 | File| Creator| Content| Deployed to Device?| Description|
 |----------|----------|----------|----------|----------|
-| `.onnx` | export\_llm.py| Model architecture and weights| No| Intermediate product, input for export\_rknn.py conversion.|
-| `.config.pkl` | export\_llm.py| LLM architecture config (vocab\_size, hidden\_size, chat\_template, etc.)| No| Intermediate product, required by load\_llm in export\_rknn.py.|
-| `.tokenizer.gguf` | export\_llm.py| Tokenizer (vocabulary + merge rules, GGUF format)| **Yes**| Converts text to token ID on the device side.|
-| `.embed.bin` | export\_llm.py| Embedding layer weights (FP16)| **Yes**| Token → embedding executed on the host side (OK3588-C board) due to limited RK182X DRAM, not on the coprocessor.|
+| `.onnx`  | export\_llm.py | Model architecture and weights| No| Intermediate product, input for export\_rknn.py conversion.|
+| `.config.pkl`  | export\_llm.py | LLM architecture config (vocab\_size, hidden\_size, chat\_template, etc.)| No| Intermediate product, required by load\_llm in export\_rknn.py.|
+| `.tokenizer.gguf`  | export\_llm.py | Tokenizer (vocabulary + merge rules, GGUF format)| **Yes**| Converts text to token ID on the device side.|
+| `.embed.bin`  | export\_llm.py | Embedding layer weights (FP16)| **Yes**| Token → embedding executed on the host side (OK3588-C board) due to limited RK182X DRAM, not on the coprocessor.|
 
 **Step 2: Conversion to RKNN**
 
