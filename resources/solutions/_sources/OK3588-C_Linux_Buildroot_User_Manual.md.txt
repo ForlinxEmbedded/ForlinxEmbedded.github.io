@@ -184,7 +184,7 @@ Open the Windows Device Manager and check the detected COM port number under “
 
 Step 2: Open PuTTY. Select “Session”, set the “Serial line” to the COM port used by your computer, and set the baud rate to 115200.
 
-​                                         ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png)
+  ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png#center)
 
 Step 3: After completing the previous settings, enter the COM port number used by your computer in the “Saved Sessions” field (for example, use COM24). Save the configuration. When you reopen the serial port, you can simply click on the saved port number to apply the settings directly.
 
