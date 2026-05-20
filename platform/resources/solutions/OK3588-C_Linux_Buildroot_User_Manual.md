@@ -45,24 +45,24 @@ There are differences in the combination of CSI/DSI interfaces.
 
 FET3588 SoM
 
-![](image.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/image.png)
 
 
 FET3588J SoM
 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774251741608-9f8f3ffd-207a-452d-a915-9b780f2e2446.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
 
 
 
 FET3588S2 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776674664196-fec0878c-bbcb-44d0-9f81-683efa511466.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripherals cannot be used on the FET3588-C. 
 
 For details, please refer to the Interface section.
 
 OK3588-C
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773454975472-8f93d706-b9ce-49b3-8bc9-c8b0b0e9f873.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773454975472_8f93d706_b9ce_49b3_8bc9_c8b0b0e9f873.png)
 
 #### 1.4 Main Frequency Setting Description
 
@@ -118,7 +118,7 @@ Summarizes common issues encountered during development and their corresponding 
 ### 2\. Packing List
 
 Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. As shown in the figure:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774856225187-5874b054-8055-4f01-bfd3-8bc703fc6af3.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
 
 ### 3\. Quick Start
 
@@ -127,10 +127,10 @@ Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. As sh
 OK3588-C Interfaces:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1776329292214-981ff9ed-a11b-4e99-a1f2-48d6de365e5d.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776329292214_981ff9ed_a11b_4e99_a1f2_48d6de365e5d.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776584150967-bcd1d06f-03da-4366-92b4-8ea33f4b9041.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png)
 
 #### 3.2 How to Debug
 
@@ -147,27 +147,27 @@ The OK3588 platform features a Type-C port for serial debugging and an on-board 
 ##### 3.2.1.1 Serial Port Driver Installation
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model.  There is "CP210x\_VCP\_Windows\_XP\_Vista.zip" under "TOOLS"->“Driver Tool”. Download and extract it to your current directory, choose the appropriate executable file based on your computer's configuration to install the driver.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776397661305-7bdb0536-0067-4a27-97a0-9869de92afb4.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776397661305_7bdb0536_0067_4a27_97a0_9869de92afb4.png)
 
 ##### 3.2.1.2 Installing the Terminal Software PuTTY
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is PuTTY installation package “putty-64bit-0.71-installer” under "TOOLS"->“Debug Tool”. Download it to your computer and install PuTTY.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776402431048-40641e90-5e96-4e07-aa79-2da433c0b8e4.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776402431048_40641e90_5e96_4e07_aa79_2da433c0b8e4.png)
 
 ##### 3.2.1.3 How to Use PuTTY
 
 Take putty as an example to introduce the setting mode of the putty terminal:
 
-Step 1: Connect the PC to the Debug serial port of the OK3588-C using a Type-C cable. ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776411597715-082f849e-a92b-4b62-a437-cea45c07c0c3.png)
+Step 1: Connect the PC to the Debug serial port of the OK3588-C using a Type-C cable. ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776411597715_082f849e_a92b_4b62_a437_cea45c07c0c3.png)
 
 Open the Windows Device Manager and check the detected COM port number under “Ports (COM \& LPT)” (e.g., COM3). Use the actual displayed port.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776747897279-d8f97a60-2ae3-4ad7-8e5c-ed3869dc9e8b.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747897279_d8f97a60_2ae3_4ad7_8e5c_ed3869dc9e8b.png)
 
 Step 2: Open PuTTY. Select “Session”, set the “Serial line” to the COM port used by your computer, and set the baud rate to 115200.
-![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775869085036-c87d748c-a581-4738-af6e-e99b3b0c3566.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png)
 
 Step 3: After completing the previous settings, enter the COM port number used by your computer in the “Saved Sessions” field (for example, use COM24). Save the configuration. When you reopen the serial port, you can simply click on the saved port number to apply the settings directly.
-![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775868779548-2ddbeaff-d435-4c85-b7ee-8b9dac122e2b.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868779548_2ddbeaff_d435_4c85_b7ee_8b9dac122e2b.png)
 
 Step 4: Power on the development board. If the startup information appears as shown below, it indicates a successful boot. You can then press Enter to create a new command line.
 
@@ -192,10 +192,10 @@ The OK3588-C development board supports SSH login via Ethernet.
 + Connect the ETH0 network port on the development board and ensure that your computer can ping the board;
 + <font style="color:rgb(51, 51, 51);">The network interface is configured with a static IP address by default: 192.168.0.232</font>;
 + Log in as the root user (no password required).
-  ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776411283846-3174c193-eb9d-4393-8496-97fbf843c0a9.png)
+  ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776411283846_3174c193_eb9d_4393_8496_97fbf843c0a9.png)
 
 To log in to the development board via SSH, 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776409587424-280ed0ff-6a11-4f1d-ad5d-50cd26a30289.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png)
 
 After successful login, the following message is printed:
 
@@ -215,7 +215,7 @@ This section explains how to write the firmware image to the flash memory of the
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARES” → “Firmware Download.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776748292833-2143298a-d912-4f3b-9884-c6f2e3fa727b.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776748292833_2143298a_d912_4f3b_9884_c6f2e3fa727b.png)
 
 ### 3\. Firmware Flashing
 
@@ -233,18 +233,18 @@ Please download from the Resource Download page ([https://www.forlinx.net/resour
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM model. There is DriverAssistant\_v5.13.zip under "TOOLS"->“Driver Tool”. Download the zip package, extract it to any directory, and run the program with administrator privileges. 
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776743702899-b33be381-d931-436c-b2cd-bbe043ecd706.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
 
 Click the “Button”.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1772256499931-393b981a-36e8-45c1-87d2-735c03018473.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
 
 The driver is installed successfully. Click OK.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776747796826-1bf0eb6e-41df-4a3b-af09-c54a3d0c9beb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
 
 ##### 3.1.2 OTG Full Flashing
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is “RKDevTool\_Release\_v3.37.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776739556462-f89f01fd-5ac0-495b-88c8-129f51e080d4.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776739556462_f89f01fd_5ac0_495b_88c8_129f51e080d4.png)
 
 It is a development tool provided by Rockchip. Launch the application and connect the development board Type-C0 port to your computer host using a Type-C cable.
 
@@ -255,7 +255,7 @@ Hold down the development board’s Recovery button and do not release it.
 Press the Reset button to reset the system.
 
 After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : loader device found
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776740683969-23d45d81-3305-4cf6-bfd3-2aa804d5ca10.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
 
 1\. Click “Upgrade Firmware”;
 
@@ -306,18 +306,18 @@ Take the separate flashing userdata partition as an example to demonstrate the f
 To connect the development board to your host computer, use a Type-C cable to link the Type-C port (TypeC0) on the board. First, press and hold the recovery key without releasing it. Next, press the reset key to reset the system. After approximately two seconds, you can release the recovery key. The system will then display the message “Find Loader Device.” At this point, place the compiled userdata.img file on your PC.
 
 Change the \`name\` field in the last row to \`userdata\`:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742712849-9a6e1cb0-6fac-47f7-8434-8ce8de69b36f.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776742712849_9a6e1cb0_6fac_47f7_8434_8ce8de69b36f.png)
 
 <font style="color:rgb(51, 51, 51);">Click</font>`<font style="color:rgb(51, 51, 51);">Dev Partition</font>`<font style="color:rgb(51, 51, 51);"></font>.
 
 The system will automatically read the partition address.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750522300-4055cd65-37ae-493b-8ddf-ddec358a8660.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
 
 <font style="color:rgb(51, 51, 51);">Prompt whether to update the download address, click</font>`<font style="color:rgb(51, 51, 51);">Y</font>`<font style="color:rgb(51, 51, 51);">, and the partition table will be read successfully:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750533466-23854857-1e02-490c-8e91-ff506995bfa2.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
 
 <font style="color:rgb(51, 51, 51);">Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click</font> `<font style="color:rgb(51, 51, 51);">Run</font>`<font style="color:rgb(51, 51, 51);">, it will automatically flash and restart.  
-</font>![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742816548-23d8b85f-102b-43b7-960c-76e850eaaa97.png)
+</font>![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776742816548_23d8b85f_102b_43b7_960c_76e850eaaa97.png)
 
 #### 3.2 Flashing Firmware via TF Card
 
@@ -333,18 +333,18 @@ Before flashing firmware via USB OTG, please prepare:
 + 12V DC power supply
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model, . There is “SDDiskTool\_v1.78.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750706410-398ea4cd-ba1d-470f-842d-747b90bd8288.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750706410_398ea4cd_ba1d_470f_842d_747b90bd8288.png)
 
 Run it:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750894180-f7dabcb2-9047-46ab-b130-e78d3cdccc3b.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
 
 <font style="color:rgb(51, 51, 51);">Select the disk, and check</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Upgrade Firmware</font>`<font style="color:rgb(51, 51, 51);"> and update.img. Click</font>`<font style="color:rgb(51, 51, 51);">Create</font>`<font style="color:rgb(51, 51, 51);">to create.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750905035-53c11e8b-5807-47cd-b55c-4317f8ca2406.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750905035_53c11e8b_5807_47cd_b55c_4317f8ca2406.png)
 
 Creating upgrade disk, Data will lose in the disk, yes or no? select Y.
 
 After successfully creating the card, the following prompt will appear:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776751151322-327bbfce-8422-4651-bdb4-fc48fdb209fd.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)
 
 <font style="color:rgb(51, 51, 51);">1. Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;</font>
 
@@ -465,7 +465,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 Log in to your GitHub account. Click your profile picture in the top-right corner and go to `Settings->SSH and GPG keys`.
 
 Click the `New SSH key`. Fill in, copy the public key content generated in the above steps to the Key field, and add.
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774835297247-9c527d87-7122-4cd5-8724-1bee4b0b7816.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
 
 ##### 1.3.3 Verifying the GitHub Connection
 
@@ -840,7 +840,7 @@ OK-linux-source$./build.sh buildroot-config
 ```
 
 This will enter the visual configuration menu of buildroot:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773811752522-01c29ab3-d248-4791-9716-772f7260f7fb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773811752522_01c29ab3_d248_4791_9716_772f7260f7fb.png)
 
 The meanings of each option are as follows:
 
@@ -858,7 +858,7 @@ The meanings of each option are as follows:
 | Legacy config options| Handle deprecated or obsolete Configuration Options |
 
 <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —> Libraries —> Graphics —>, find libraw and press y to select it, then exit and save the configuration.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773812793183-f56f8b56-8fb6-4348-9d11-345211bc77c2.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773812793183_f56f8b56_8fb6_4348_9d11_345211bc77c2.png)
 
 <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Run the following command to compile buildroot individually:
 
@@ -956,12 +956,12 @@ Watchdog Ticking Away!
 **⚠️Note: The following test is based on the SIM card and module in China, and you need to configure it according to your local network mode.**
 
 The location of the 4G/5G module and SIM card.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776824189000-2e7b00bd-af9b-4d9f-b785-8ef0f06ab008.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776824189000_2e7b00bd_af9b_4d9f_b785_8ef0f06ab008.png)
 
 ##### **1\. 4G**
 
 <font style="color:rgb(51, 51, 51);">Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774484133017-bb5670e1-315a-443f-abe1-167c967543b1.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png)
 
 Once the module is connected and both the development board and the module are powered on, you can view the USB status using the lsusb command.
 
@@ -1041,7 +1041,7 @@ rtt min/avg/max/mdev = 81.694/197.930/312.431/94.205 ms
 
 <font style="color:rgb(51, 51, 51);">Connect the 5G module</font> <font style="color:rgb(51, 51, 51);">RM500U</font> <font style="color:rgb(51, 51, 51);">and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</font>
 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774484133017-bb5670e1-315a-443f-abe1-167c967543b1.png?x-oss-process=image%2Fformat%2Cwebp)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png)
 
 1\. Connect the module. After the development board and the module are powered on, you can check the USB status through the`lsusb`command:
 
@@ -1164,7 +1164,7 @@ An ADC (analog-to-digital converter) is an electronic device or circuit that con
 <font style="color:rgb(51, 51, 51);">There are 8 x built-in ADC. Among them, saradc2, saradc4, saradc5, saradc6, and saradc7 are led out from the carrier board connectors, while the saradc1 channel is used for the ADC key detection circuit.</font>
 
 5 x ADC and the ADC keys on the board:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583288280-8d7c5cca-1896-4bdc-bad0-553869c3518f.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583288280_8d7c5cca_1896_4bdc_bad0_553869c3518f.png)
 
 **⚠️<font style="color:rgb(15, 17, 21);">Note: OK3588S2-C does not support saradc6 and saradc7.</font>**
 
@@ -1242,7 +1242,7 @@ adc_keys: adc-keys {
 ###### 3.1 Voltage Input Test
 
 <font style="color:rgb(51, 51, 51);">Select saradc2 for testing. The ADC pin hardware schematic is as follows. The chip currently uses a 1.8V reference voltage, corresponding to a 12-bit ADC maximum value of 4095.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773026170298-487ba0df-510f-411f-ac20-e43c19c63500.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773026170298_487ba0df_510f_411f_ac20_e43c19c63500.png)
 
 Short-circuit pin 1 of connector P12 and pin 2 of connector P13, then read the value of <font style="color:rgb(51, 51, 51);">saradc2:</font>
 
@@ -1262,7 +1262,7 @@ root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 ###### <font style="color:rgb(51, 51, 51);">3.2 ADC Key Test</font>
 
 <font style="color:rgb(51, 51, 51);">The saradc1 channel is used for the ADC key detection circuit, employing a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, resulting in different voltages read by the ADC. The program identifies specific keys by judging the voltage range. The principle is illustrated in the following diagram:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774233416305-199112cd-eb5b-4be6-91cd-a54e14476846.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774233416305_199112cd_eb5b_4be6_91cd_a54e14476846.png)
 
 Use the`fltest_keytest`command-line tool for key testing. Currently,`fltest_keytest`supports testing the four keys on the baseboard: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:
 
@@ -1390,12 +1390,12 @@ close(keys_fd);
 <font style="color:rgb(51, 51, 51);">The OK3588-C board is equipped with two Gigabit Ethernet ports. With an Ethernet cable connected, the factory default configuration sets eth0 to a static IP, while eth1 is not configured. Both network ports use the</font>RTL8211FSI PHY chip.<font style="color:rgb(0,0,128);">.</font><font style="color:rgb(15, 17, 21);"> The driver source code is located within the kernel:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">drivers/net/ethernet/stmicro/stmmac</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">.</font>
 
 <font style="color:rgb(51, 51, 51);">The wired network interface locations on the board are as follows:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776415337495-05b56216-1f93-407f-98c7-894864b47cd5.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776415337495_05b56216_1f93_407f_98c7_894864b47cd5.png)
 
 **<font style="color:rgb(51, 51, 51);">⚠️Note: The RK3588S2 chip does not include an Ethernet controller, resulting in only one Gigabit Ethernet port available on the RK3588S2-C. When an Ethernet cable is connected, the factory default configuration assigns a static IP to eth0, rendering the P38 network port unavailable.</font>**
 
 The RTL8211 schematic is shown below:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773044057275-606b8e8e-8670-4024-b3d8-f8d8cbc36cbb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773044057275_606b8e8e_8670_4024_b3d8_f8d8cbc36cbb.png)
 
 ##### 1.1 RGMII Mode
 
@@ -1672,7 +1672,7 @@ The OK3588 development board supports SFTP services, which are enabled automatic
 Install the file Zilla tool on windows and follow the steps shown in the figure below. The user name and password are forlinx.
 
 Open the filezilla tool, click File, and select Site Manager.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776582624967-415c9b14-fc30-44b0-9689-15b2dc9e50dc.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
 
 ### Frequency
 
@@ -1736,10 +1736,10 @@ root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_
 GPIO (General-Purpose Input/Output) is a general-purpose digital signal pin on microcontrollers or SoCs, whose function can be flexibly configured by software at runtime to interact with external devices via simple digital signals.
 
 The extended I/O pins are led out from the carrier board, located on P11. 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776412631066-5412e195-0e3f-4e87-a0d3-18fe5abf31ce.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718954759014-d61c0905-7a0e-46a2-81b5-ba7ccfc72c9c.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1718954759014_d61c0905_7a0e_46a2_81b5_ba7ccfc72c9c.png)
 
 #### 2\. Device Tree
 
@@ -1834,7 +1834,7 @@ Please refer to the PinMUX table for the usage of the GPIO pins.
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
 Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776755452912-aeed3a0f-89f5-46ad-aec3-f1ecfc2f2159.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png)
 
 ##### 3.1 Native GPIO
 
@@ -2119,7 +2119,7 @@ root@OK3588-C-buildroot:~# df -h
 PCIe (Peripheral Component Interconnect Express) is a high-speed serial computer expansion bus standard used to connect the motherboard to high-performance external devices.
 
 <font style="color:rgb(51, 51, 51);">The OK3588-C board features 1 x PCIe 2.0 x1 and 1 x PCIe 3.0 x4 interface, as shown in the figure below.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776413262533-6f5353cb-b41b-4c42-abb6-d98ea64e4e9d.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776413262533_6f5353cb_b41b_4c42_abb6_d98ea64e4e9d.png)
 
 You can design PCIe bifurcation according to your specific requirements. For detailed information, please refer to the following documentation:`OK-linux-source/docs/rk3588/en/Common/PCIe/Rockchip_Developer_Guide_PCIe_EN.pdf`
 
@@ -2327,7 +2327,7 @@ RTC (Real-Time Clock) is a critical component that ensures the system maintains 
 The OK3588 utilizes the PCF8563 real-time clock module. The chip connects to the main processor via I2C5, with a device address of 0x51.
 
 Schematic: The RTC schematic is as shown below:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773049363933-d0eb9079-7c06-4e79-a2af-300c0f96fc71.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773049363933_d0eb9079_7c06_4e79_a2af_300c0f96fc71.png)
 
 <font style="color:rgb(15, 17, 21);">Driver Location: The RTC driver source code is located within the kernel at the specified path.</font>`<font style="color:rgb(51, 51, 51);">drivers/rtc/rtc-pcf8563.c</font>`<font style="color:rgb(51, 51, 51);">.</font>
 
@@ -2391,7 +2391,7 @@ Mon Oct 27 10:06:01 CST 2025
 #### 1\. Introduction
 
 <font style="color:rgb(51, 51, 51);">There is one TF (Micro SD) card slot on the OK3588-C development board using the RK3588 SDMMC controller interface for external removable storage. This interface supports hot-plug. After insertion, the SD card is managed as a standard block device. Location of TF Card Port:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583628115-fe45da11-8823-4fd3-9389-0b642243eb07.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583628115_fe45da11_8823_4fd3_9389_0b642243eb07.png)
 
 **⚠️Note: Although hot-plug is hardware supported, you must unmount the device using umount before physically removing the SD card to prevent data loss or filesystem corruption.**
 
@@ -2494,7 +2494,7 @@ root@OK3588-C-buildroot:~# umount /run/media/mmcblk1p1
 <font style="color:rgb(51, 51, 51);">The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD \_ arm/VDD \_ log, and configuring the wake-up source.</font>
 
 <font style="color:rgb(51, 51, 51);">Key positions are as follows:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775868325076-c4c81497-e153-499c-ad6c-3cf13ad3f54d.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
 
 The driver files related to system standby are:
 
@@ -2762,7 +2762,7 @@ Type-C1 supports HOST mode only. In Device mode, it can be used for flashing fir
 In Host mode, you can connect standard USB devices.</font>
 
 <font style="color:rgb(51, 51, 51);">The Type-C interfaces are located on the board as indicated in the diagram below:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776415133399-9ff1972f-771f-41c0-ba37-871d78d26671.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776415133399_9ff1972f_771f_41c0_ba37_871d78d26671.png)
 
 <font style="color:rgb(51, 51, 51);">OK3588-C features two Type-C interfaces and supports DP display. Type-C1 only supports HOST mode.</font>
 
@@ -2931,7 +2931,7 @@ Location of OK3588-C device tree nodes`arch/arm64/boot/dts/rockchip/OK3588S2-C-c
 This mode can be used for firmware flashing, ADB file transfer, and debugging. Host mode allows for connecting standard USB peripherals.
 
 Device Mode<font style="color:#000000;">, when in Device mode, connect to a computer via a data cable. You will see “Android ADB Interface” in the computer’s Device Manager.</font>
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718954755736-a5acc21c-f6b2-4915-9f89-0c5a95090beb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1718954755736_a5acc21c_f6b2_4915_9f89_0c5a95090beb.png)
 
 ##### 3.2 Host mode
 
@@ -2978,7 +2978,7 @@ There are UART interfaces: UART2, UART4, UART6, and UART9. They are defined as f
 | UART9| /dev/ttyS9| RS485|
 
 UART4 (P11 pins 7 and 10) and 485 are located on the board as follows:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776412986017-f3ea5e72-7023-4dc1-94ca-699df31678d9.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776412986017_f3ea5e72_7023_4dc1_94ca_699df31678d9.png)
 
 <font style="color:rgb(15, 17, 21);">Location of driver source code in the kernel:</font>`<font style="color:rgb(51, 51, 51);">drivers/tty/serial/8250/8250_dw.c</font>`<font style="color:rgb(51, 51, 51);">.</font>
 
@@ -3025,7 +3025,7 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 <font style="color:rgb(51, 51, 51);">For this test, UART4 (ttyS4) is used, and the serial port functionality is verified through a loopback method. According to the development board schematic, short the TX and RX pins of UART4, which correspond to PIN7 and PIN10, respectively.
 
 </font>
-![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718954754043-49789947-2230-467b-94e8-811528fac838.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1718954754043_49789947_2230_467b_94e8_811528fac838.png)
 
 <font style="color:rgb(51, 51, 51);">After short connection</font><font style="color:rgb(51, 51, 51);">, launch the test program.</font>
 
@@ -3170,7 +3170,7 @@ close(fd);
 <font style="color:rgb(51, 51, 51);">OK3588 supports 1 x USB 2.0 interface. Please connect USB devices such as mice, keyboards, and flash drives to any onboard USB HOST port, with full hot-plug support for these devices.</font>
 
 <font style="color:rgb(51, 51, 51);">Location of the USB 2.0 interface:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583751844-8195f78a-313f-4b4e-99bc-ccd08df2cd42.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583751844_8195f78a_313f_4b4e_99bc_ccd08df2cd42.png)
 
 #### 2\. Device Tree
 
@@ -3317,7 +3317,7 @@ root@OK3588-C-buildroot:~# dmesg | tail -10
 The Bluetooth interface uses UART.</font>
 
 Locations:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776415581325-54693b05-ca54-4abf-a465-df47d3bd274a.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776415581325_54693b05_ca54_4abf_a465_df47d3bd274a.png)
 
 #### 2\. Device Tree
 
@@ -3719,7 +3719,7 @@ sqlite> .quit			//Exit the database (or use the .exit command)
 | <font style="color:rgb(51, 51, 51);">DP Audio</font>| <font style="color:rgb(51, 51, 51);">DisplayPort Interface Output</font>| <font style="color:rgb(51, 51, 51);">P22</font>| <font style="color:rgb(51, 51, 51);">Digital audio transmission via DP</font>|
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776416102123-e1661ef3-d5d0-475f-92b2-4f32c9328ae3.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776416102123_e1661ef3_d5d0_475f_92b2_4f32c9328ae3.png)
 
 **⚠️Note: The OK3588S2-C model does not have an HDMI RX interface.**
 
@@ -3968,7 +3968,7 @@ root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosin
 <font style="color:rgb(51, 51, 51);">The camera interfaces are located at the following positions on the board:</font>
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776581822909-043cb82d-a902-49d6-989c-66dcc7c73fda.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776581822909_043cb82d_a902_49d6_989c_66dcc7c73fda.png)
 
 **⚠️<font style="color:rgb(51, 51, 51);">Note: Due to a reduction in MIPI-CSI controllers in the RK3588S2 chip itself, the CAM1, CAM2, and CAM5 camera interfaces on the OK3588S2-C cannot be used.</font>**
 
@@ -4715,7 +4715,7 @@ Redistribute latency...
 
 **The connection relationship between<font style="color:rgb(0,0,0);">RK3588 VP **</font>**<font style="color:rgb(0,0,0);">and the various display interfaces is as follows:</font>**
 
-![Drawing Board](https://cdn.nlark.com/yuque/0/2026/jpeg/52751263/1776818967804-102c91de-b34a-4229-aac7-a04329d77dcc.jpeg)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776818967804_102c91de_b34a_4229_aac7_a04329d77dcc.jpeg)
 
 ##### <font style="color:rgb(51, 51, 51);">1.2 Specifications of Each Display Interface</font>
 
@@ -4732,12 +4732,12 @@ Redistribute latency...
 ##### 1.3 OK3588-C Interface Location
 
 <font style="color:rgb(51, 51, 51);">The HDMI and eDP interfaces are located on the front side of the board.</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583943597-3510e877-ca87-4228-81d3-03a2ca4ce32a.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583943597_3510e877_ca87_4228_81d3_03a2ca4ce32a.png)
 
 <font style="color:rgb(51, 51, 51);">The MIPI DSI0 and MIPI DSI1 interfaces are located on the back side of the board.</font>
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776819807192-5cc2e454-d3f6-4cef-a33e-ab8026e39bba.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776819807192_5cc2e454_d3f6_4cef_a33e_ab8026e39bba.png)
 
 ##### <font style="color:rgb(51, 51, 51);">1.4 RK3588S2 Differences</font>
 
@@ -5198,7 +5198,7 @@ The test uses a lightweight image classification network. It describes the versi
 The inference result suggests an 88.5% probability that the image contains a Borzoi (Russian Wolfhound).
 
 The image used for this test is shown below:
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/65981692/1774666440305-ad6f4a06-db24-4454-a635-c3b10fa0bec6.jpeg)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774666440305_ad6f4a06_db24_4454_a635_c3b10fa0bec6.jpeg)
 
 ##### Interface Call
 
@@ -5294,7 +5294,7 @@ To help developers deploy AI models more quickly, Rockchip officially provides u
 **4.1.1.1 RKNN Software Stack Overview**
 
 The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below:
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774660235640-939bbe87-348c-45e8-bb14-1663c8824934.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
 
 Figure 1-1 RKNN Software Stack
 
@@ -5377,7 +5377,7 @@ For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3
 **4.1.2.1 RKLLM Software Stack Overview**
 
 The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform. 
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774661414438-70dcd11d-5601-48f2-9438-8816729c4552.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png)
 
 Figure 1-2: RKLLM Software Stack.
 
@@ -5729,7 +5729,7 @@ root@OK3588-C-buildroot:/home/forlinx/rknn_yolov5_demo# ./rknn_yolov5_demo model
 
 The out. png of the output result image in the current directory is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774663022972-6ea767bd-5943-4c4b-95a6-625ff57eb5de.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774663022972_6ea767bd_5943_4c4b_95a6_625ff57eb5de.png)
 
 ##### 4.3.2 DeepSeek Model Deployment
 
@@ -5745,7 +5745,7 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 Download the Model.
 
 Download the`DeepSeek-R1-Distill-Qwen-1.5B`model from [https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/tree/main.](about:blank)
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774663096796-fb21f11d-82ac-434c-990f-e1d6c60ed545.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774663096796_fb21f11d_82ac_434c_990f_e1d6c60ed545.png)
 
 Name the downloaded folder as`DeepSeek-R1-Distill-Qwen-1.5B`, and transfer it to the virtual machine path`/home/forlinx/rknn-llm/examples`.
 
@@ -5758,7 +5758,7 @@ Navigate to the file path where the export\_rkllm.py script is located.
 ```
 
 Modify the model path in the`export_rkllm.py`script to the actual path, and confirm the target platform and the number of NPU cores.
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774663201167-bbc069d4-86e0-4940-a86d-72df079c7404.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774663201167_bbc069d4_86e0_4940_a86d_72df079c7404.png)
 
 ```plain
 (RKLLM-Toolkit) forlinx@ubuntu:~/rknn-llm/examples/rkllm_api_demo/export$ python3 generate_data_quant.py -m /home/forlinx/rknn-llm/examples/DeepSeek-R1-Distill-Qwen-1.5B
@@ -5858,7 +5858,7 @@ root@OK3588-C-buildroot:/home/forlinx/demo_Linux_aarch64# ./llm_demo model/DeepS
 The running results are as follows:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/65981692/1774848609915-67945df0-b31b-42b4-8324-7b4c82fe8bdb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774848609915_67945df0_b31b_42b4_8324_7b4c82fe8bdb.png)
 
 #### 4.4 RKNN Toolkit2 Supported Operator List
 
