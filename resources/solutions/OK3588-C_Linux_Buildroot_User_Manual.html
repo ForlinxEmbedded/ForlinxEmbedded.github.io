@@ -943,7 +943,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 <section id="sdk-configuration">
 <h4>2.2 SDK Configuration<a class="headerlink" href="#sdk-configuration" title="Link to this heading"></a></h4>
 <p>The configuration file path for the SDK is: (<code class="docutils literal notranslate"><span class="pre">OK-linux-source/device/rockchip/.chips/rk3588</span></code>). These files control the system compilation.</p>
-<p><font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">The naming rule for the configuration files is as follows:</p>
+<p>The naming rule for the configuration files is as follows:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">vendor</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">chip</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">model</span><span class="o">&gt;-&lt;</span><span class="n">extra</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">OS</span><span class="o">&gt;</span><span class="n">_defconfig</span>
 
 <span class="nl">vendor</span><span class="p">:</span><span class="w"> </span><span class="n">vendor</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">product</span>
@@ -1118,7 +1118,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </section>
 <section id="building-kernel">
 <h6>3.2.2.2 Building Kernel<a class="headerlink" href="#building-kernel" title="Link to this heading"></a></h6>
-<p>If only compiling the <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">kernel,boot.img will be generated.</p>
+<p>If only compiling the kernel,boot.img will be generated.</p>
 <p>Path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/kernel-6.1/boot.img</span></code>.</p>
 <p>The command is as follows:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="n">build</span><span class="p">.</span><span class="n">sh</span><span class="w"> </span><span class="n">kernel</span>
@@ -1172,7 +1172,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 <h6>3.2.2.3 Building Buildroot<a class="headerlink" href="#building-buildroot" title="Link to this heading"></a></h6>
 <p>If only compiling buildroot, rootfs.img will be generated.</p>
 <p>Path: <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/output/rockchip_ok3588-c/images/rootfs.ext2</span></code>.</p>
-<p>The <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">buildroot configuration file is <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig</span></code></p>
+<p>The buildroot configuration file is <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig</span></code></p>
 <p>Run the following command to configure the buildroot menu:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">OK</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">source$</span><span class="p">.</span><span class="o">/</span><span class="n">build</span><span class="p">.</span><span class="n">sh</span><span class="w"> </span><span class="n">buildroot</span><span class="o">-</span><span class="n">config</span>
 </pre></div>
@@ -1219,7 +1219,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </tr>
 </tbody>
 </table>
-<p><font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —&gt; Libraries —&gt; Graphics —&gt;, find libraw and press y to select it, then exit and save the configuration.
+<p>Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —&gt; Libraries —&gt; Graphics —&gt;, find libraw and press y to select it, then exit and save the configuration.
 <img alt="Image" src="_images/1773812793183_f56f8b56_8fb6_4348_9d11_345211bc77c2.png" /></p>
 <p>Run the following command to compile buildroot individually:</p>
 <p>buildroot：</p>
@@ -2122,7 +2122,7 @@ root@OK3588-C-buildroot:~#<span class="w"> </span><span class="nb">echo</span><s
 <h5>3.1 Native GPIO<a class="headerlink" href="#id10" title="Link to this heading"></a></h5>
 <section id="pin-calculation-method">
 <h6>3.1.1 Pin Calculation Method<a class="headerlink" href="#pin-calculation-method" title="Link to this heading"></a></h6>
-<p><font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.</p>
+<p>RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.</p>
 <p>The naming convention for GPIOs is GPIOn_xy, where x can be A, B, C, or D. In the GPIO numbering calculation, A corresponds to 1, B to 2, C to 3, and D to 4.</p>
 <p>Calculation Formula:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">GPIOn_xy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="err">×</span><span class="w"> </span><span class="mi">32</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="err">×</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span>
@@ -3875,7 +3875,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 <section id="id44">
 <h4>1. Introduction<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
 <p>A watchdog is essentially a count‑down timer driven by a hardware clock. During normal system operation, the application must write a specific value (i.e., “kicking the dog”) to the watchdog’s dedicated register within a set timeout period (e.g., 1 second) to reset the counter to its initial value. If the program enters an infinite loop, crashes, or fails to kick the dog before the timeout, the counter decrements to 0, triggering a predefined action such as a system reset or a software exception alert.</p>
-<p><font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);"> The OK3588‑C development board integrates an on‑chip watchdog.</p>
+<p>The OK3588‑C development board integrates an on‑chip watchdog.</p>
 <p>The watchdog driver source code is located in the kernel at:<font style="color:rgb(0,0,0);"> <code class="docutils literal notranslate"><span class="pre">&lt;font</span> <span class="pre">style=&quot;color:rgb(0,0,0);&quot;&gt;kernel/drivers/watchdog/dw_wdt.c</span></code></p>
 </section>
 <section id="id45">
@@ -6435,7 +6435,7 @@ forlinx@ubuntu:~/rknn-llm/examples/rkllm_api_demo/deploy$ ./build-linux.sh
 </pre></div>
 </div>
 <p>Operation on Board.</p>
-<p>Copy the model files<code class="docutils literal notranslate"><span class="pre">DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm</span></code>from the<code class="docutils literal notranslate"><span class="pre">rknn-llm/examples/rkllm_api_demo/export</span></code>directory to the specified<code class="docutils literal notranslate"><span class="pre">rknn-llm/examples/rkllm_api_demo/deploy/install</span></code>subdirectory, and then push the final folder<code class="docutils literal notranslate"><span class="pre">demo_Linux_aarch64</span></code>to the board-side<code class="docutils literal notranslate"><span class="pre">/home/forlinx/</span></code>directory.</p>
+<p>Copy the model files <code class="docutils literal notranslate"><span class="pre">DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm</span> </code>from the <code class="docutils literal notranslate"><span class="pre">rknn-llm/examples/rkllm_api_demo/export</span> </code>directory to the specified <code class="docutils literal notranslate"><span class="pre">rknn-llm/examples/rkllm_api_demo/deploy/install</span></code> subdirectory, and then push the final folder<code class="docutils literal notranslate"><span class="pre">demo_Linux_aarch64</span></code>to the board-side<code class="docutils literal notranslate"><span class="pre">/home/forlinx/</span></code>directory.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# cd /home/forlinx/demo_Linux_aarch64
 root@OK3588-C-buildroot:/home/forlinx/demo_Linux_aarch64# chmod +x llm_demo
 root@OK3588-C-buildroot:/home/forlinx/demo_Linux_aarch64# export LD_LIBRARY_PATH=./lib
