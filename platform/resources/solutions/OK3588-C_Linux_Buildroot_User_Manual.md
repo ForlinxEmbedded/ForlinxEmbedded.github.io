@@ -20,13 +20,13 @@ It is built around the Rockchip RK3588 processor, which utilizes the ARM64 archi
 
 FET3588 SoMs:
 
-| SoM                                                     | Processor                                            | Memory         | Level            |
-| ------------------------------------------------------- | ---------------------------------------------------- | -------------- | ---------------- |
-| <font style="color:rgb(51, 51, 51);">FET3588-C</font>   | <font style="color:rgb(51, 51, 51);">RK3588</font>   | LPDDR4/LPDDR4x | Commercial Level |
-| <font style="color:rgb(51, 51, 51);">FET3588J-C</font>  | <font style="color:rgb(51, 51, 51);">RK3588J</font>  | LPDDR4/LPDDR4x | Industrial Level |
-| <font style="color:rgb(51, 51, 51);">FET3588-C2</font>  | <font style="color:rgb(51, 51, 51);">RK3588</font>   | LPDDR5         | Commercial Level |
-| <font style="color:rgb(51, 51, 51);">FET3588J-C2</font> | <font style="color:rgb(51, 51, 51);">RK3588J</font>  | LPDDR5         | Industrial Level |
-| <font style="color:rgb(51, 51, 51);">FET3588S2-C</font> | <font style="color:rgb(51, 51, 51);">RK3588S2</font> | LPDDR5         | Commercial Level |
+| SoM         | Processor | Memory         | Level            |
+| ----------- | --------- | -------------- | ---------------- |
+| FET3588-C   | RK3588    | LPDDR4/LPDDR4x | Commercial Level |
+| FET3588J-C  | RK3588J   | LPDDR4/LPDDR4x | Industrial Level |
+| FET3588-C2  | RK3588    | LPDDR5         | Commercial Level |
+| FET3588J-C2 | RK3588J   | LPDDR5         | Industrial Level |
+| FET3588S2-C | RK3588S2  | LPDDR5         | Commercial Level |
 
 **⚠️Note: RK3588 and RK3588S2 offer nearly identical performance, but the RK3588S2 features a reduced set of interfaces, such as lacking PCIe 3.0, USB OTG1, HDMI RX 2.0, and ETH1.** 
 
@@ -35,11 +35,11 @@ Key Differences:
 | Function Model                     | RK3588                                                | RK3588S2                          | Key Differences               |
 | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | GPU                                                   | Mali-G610 MC4                                                | Mali-G610 MP4                                                | Suffixes differ (MC4 vs MP4), but both feature a quad-core configuration. |
-| Memory Support                                        | <font style="color:rgb(15, 17, 21);">LPDDR4/LPDDR4X/LPDDR5</font> | <font style="color:rgb(15, 17, 21);">LPDDR4/LPDDR4X/LPDDR5/LPDDR5X</font> | RK3588S2 supports **LPDDR5X**                                |
-| USB                                                   | <font style="color:rgb(15, 17, 21);">• USB OTG0 3.1/2.0/Typec   </font><br /><font style="color:rgb(15, 17, 21);">• USB OTG1 3.1/2.0/Typec <br />  </font><font style="color:rgb(15, 17, 21);">• 2x USB Host 2.0</font> | <font style="color:rgb(15, 17, 21);">• USB OTG 3.1/2.0/Typec</font>   <br /><font style="color:rgb(15, 17, 21);">• 2x USB Host 2.0</font> | Only 1 x USB OTG interface is retained on RK3588S2.          |
-| <font style="color:rgb(15, 17, 21);">PCIe/SATA</font> | • SATA3/PCIe2.1/USB3Host（1group）</font>  <br /><font style="color:rgb(15, 17, 21);">• 2x SATA3/PCIe2.1</font>   <br /><font style="color:rgb(15, 17, 21);">• </font>**<font style="color:rgb(15, 17, 21);">PCIe3.0（independent）</font>** | • SATA3/PCIe2.1/USB3Host（1 Group）  <br/>• SATA3/PCIe2.1（1 Group）  <br/>• **No independent PCIe3.0** | 1 x SATA/PCIe combined interface and the independent PCIe 3.0 controller are removed from the RK3588S2. |
-| Ethernet                                              | <font style="color:rgb(15, 17, 21);">2x Giga-Ethernet</font> | <font style="color:rgb(15, 17, 21);">1x Giga-Ethernet</font> | 1 x single Gigabit Ethernet MAC is reserved on the RK3588S2. |
-| Multimedia Interfaces                                 | <font style="color:rgb(15, 17, 21);">• 2x MIPI-CSI D/CPHY</font>   <font style="color:rgb(15, 17, 21);"><br />• 2x MIPI-DSI DPHY</font>   <br /><font style="color:rgb(15, 17, 21);">• 2x HDMI2.1 TX/eDP1.3</font>   <br /><font style="color:rgb(15, 17, 21);">• 2x DP1.4 (Combo with USB3)</font>   <br /><font style="color:rgb(15, 17, 21);">• </font>**<font style="color:rgb(15, 17, 21);">HDMI RX 2.0</font>** | <font style="color:rgb(15, 17, 21);">• 1x MIPI-CSI DPHY 4L/CPHY 3L</font>  <br /> <font style="color:rgb(15, 17, 21);">• 4x MIPI-CSI DPHY 2L</font>   <br /><font style="color:rgb(15, 17, 21);">• 2x MIPI-DSI DPHY 4 Lane</font>  <br /> <font style="color:rgb(15, 17, 21);">• HDMI2.1 TX/eDP1.3 4 Lane</font>   <br /><font style="color:rgb(15, 17, 21);">• DP1.4 4 Lane (Combo with USB3)</font>   <br /><font style="color:rgb(15, 17, 21);">• </font>No HDMI RX</font> | The RK3588 features a unique HDMI RX input function, which is not supported on the RK3588S2.  <br/>There are differences in the combination of CSI/DSI interfaces. |
+| Memory Support                                        | LPDDR4/LPDDR4X/LPDDR5 | LPDDR4/LPDDR4X/LPDDR5/LPDDR5X | RK3588S2 supports **LPDDR5X**                                |
+| USB                                                   | • USB OTG0 3.1/2.0/Typec   <br />• USB OTG1 3.1/2.0/Typec <br />  • 2x USB Host 2.0 | • USB OTG 3.1/2.0/Typec   <br />• 2x USB Host 2.0 | Only 1 x USB OTG interface is retained on RK3588S2.          |
+| PCIe/SATA | • SATA3/PCIe2.1/USB3Host（1group）  <br />• 2x SATA3/PCIe2.1   <br />• **PCIe3.0（independent）** | • SATA3/PCIe2.1/USB3Host（1 Group）  <br/>• SATA3/PCIe2.1（1 Group）  <br/>• **No independent PCIe3.0** | 1 x SATA/PCIe combined interface and the independent PCIe 3.0 controller are removed from the RK3588S2. |
+| Ethernet                                              | 2x Giga-Ethernet | 1x Giga-Ethernet | 1 x single Gigabit Ethernet MAC is reserved on the RK3588S2. |
+| Multimedia Interfaces                                 | • 2x MIPI-CSI D/CPHY   <br />• 2x MIPI-DSI DPHY   <br />• 2x HDMI2.1 TX/eDP1.3   <br />• 2x DP1.4 (Combo with USB3)   <br />• **HDMI RX 2.0** | • 1x MIPI-CSI DPHY 4L/CPHY 3L  <br /> • 4x MIPI-CSI DPHY 2L   <br />• 2x MIPI-DSI DPHY 4 Lane  <br /> • HDMI2.1 TX/eDP1.3 4 Lane   <br />• DP1.4 4 Lane (Combo with USB3)   <br />• No HDMI RX | The RK3588 features a unique HDMI RX input function, which is not supported on the RK3588S2.  <br/>There are differences in the combination of CSI/DSI interfaces. |
 
 There are differences in the combination of CSI/DSI interfaces.
 
@@ -69,9 +69,9 @@ FET3588J-C and FET3588J-C2 SoM frequency description:
 | | Normal Mode| Overclock Mode|
 |----------|----------|----------|
 | Maximum CPU A76 Frequency (GHz)| 1.6| 2.0|
-| Maximum CPU A55 Frequency (</font><font style="color:rgb(15, 17, 21);">GHz）| 1.3| 1.7|
-| Maximum GPU Frequency</font><font style="color:rgb(51, 51, 51);">（</font><font style="color:rgb(15, 17, 21);">MHz）| 700| 850|
-| <font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">Maximum NPU Frequency</font><font style="color:rgb(51, 51, 51);">（</font><font style="color:rgb(15, 17, 21);">MHz）</font>| 800| 950|
+| Maximum CPU A55 Frequency (GHz） | 1.3| 1.7|
+| Maximum GPU Frequency（MHz） | 700| 850|
+| Maximum NPU Frequency（MHz） | 800| 950|
 
 **Normal Mode** indicates that the chip operates within safe voltage and frequency parameters. For industrial applications, it is advisable to maintain Normal Mode to ensure long-term chip reliability.
 
@@ -82,8 +82,8 @@ Frequency Specifications for RK3588 and RK3588S2 Commercial-Grade SoMs:
 | Maximum CPU A76 Frequency| 2.2-2.4 GHz|
 |----------|----------|
 | Maximum CPU A55 Frequency| 1.8 GHz|
-| Maximum GPU Frequency| <font style="color:rgb(51, 51, 51);">1 GHz</font>|
-| Maximum NPU Frequency| <font style="color:rgb(51, 51, 51);">1 GHz</font>|
+| Maximum GPU Frequency| 1 GHz |
+| Maximum NPU Frequency| 1 GHz |
 
 **⚠️Note: The default factory firmware and source code for the industrial-grade RK3588J System-on-Module (SoM) are configured to operate in overclocking mode. This setting is intended for maximum performance testing of the System-on-Chip (SoC). If you do not have specific performance requirements, it is advisable to switch to normal mode to ensure long-term stability.**
 
@@ -190,7 +190,7 @@ root@OK3588-C-buildroot:~#
 The OK3588-C development board supports SSH login via Ethernet.
 
 + Connect the ETH0 network port on the development board and ensure that your computer can ping the board;
-+ <font style="color:rgb(51, 51, 51);">The network interface is configured with a static IP address by default: 192.168.0.232</font>;
++ The network interface is configured with a static IP address by default: 192.168.0.232;
 + Log in as the root user (no password required).
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776411283846-3174c193-eb9d-4393-8496-97fbf843c0a9.png)
         
@@ -313,7 +313,7 @@ To connect the development board to your host computer, use a Type-C cable to li
 Change the "name" field in the last row to \"userdata\":
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742712849-9a6e1cb0-6fac-47f7-8434-8ce8de69b36f.png)
 
-<font style="color:rgb(51, 51, 51);">Click</font> `Dev Partition`.
+Click `Dev Partition`.
 
 The system will automatically read the partition address.
 
@@ -322,8 +322,8 @@ The system will automatically read the partition address.
 Prompt whether to update the download address, click "Yes" and the partition table will be read successfully:
                                                              ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750533466-23854857-1e02-490c-8e91-ff506995bfa2.png)
 
-<font style="color:rgb(51, 51, 51);">Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click</font> `Run`<font style="color:rgb(51, 51, 51);">, it will automatically flash and restart. 
-</font>
+Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click `Run`, it will automatically flash and restart. 
+
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742816548-23d8b85f-102b-43b7-960c-76e850eaaa97.png)
 
@@ -349,7 +349,7 @@ Run it:
 
 ​                                      ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750894180-f7dabcb2-9047-46ab-b130-e78d3cdccc3b.png)
 
-<font style="color:rgb(51, 51, 51);">Select the disk, and check</font> `Upgrade Firmware`; and `update.img`. Click `Create` to create.
+Select the disk, and check `Upgrade Firmware`; and `update.img`. Click `Create` to create.
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750905035-53c11e8b-5807-47cd-b55c-4317f8ca2406.png)
 
@@ -359,11 +359,11 @@ After successfully creating the card, the following prompt will appear:
 
 ​                                                                    ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776751151322-327bbfce-8422-4651-bdb4-fc48fdb209fd.png)                    
 
-<font style="color:rgb(51, 51, 51);">1. Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;</font>
+1. Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
 
-<font style="color:rgb(51, 51, 51);">2. Insert the prepared TF flashing card into the the development board, then power up. The system will automatically enter the flashing process;</font>
+2. Insert the prepared TF flashing card into the the development board, then power up. The system will automatically enter the flashing process;
 
-<font style="color:rgb(51, 51, 51);">3. After flashing is complete, the serial terminal and display will output the following prompt information:</font>
+3. After flashing is complete, the serial terminal and display will output the following prompt information:
 
 `Please remove SD CARD!!!, wait for reboot.`
 
@@ -622,7 +622,7 @@ OK-linux-source$ tree -L 1
 
 The configuration file path for the SDK is: (`OK-linux-source/device/rockchip/.chips/rk3588`). These files control the system compilation.
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">The naming rule for the configuration files is as follows:</font>
+<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">The naming rule for the configuration files is as follows:
 
 ```c
 <vendor>_<chip>_<model>-<extra>_<OS>_defconfig
@@ -636,7 +636,7 @@ OS: the operating system that will be running in product
 
 The SDK configuration files for OK3588-C/OK3588-C2 are: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588_C_buildroot_defconfig`.
 
-OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588S2_C_buildroot_defconfig`<font style="color:rgb(15, 17, 21);">.</font>
+OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588S2_C_buildroot_defconfig`.
 
 Taking the buildroot system SDK configuration files for OK3588-C/OK3588-C2 as an example:
 
@@ -654,11 +654,11 @@ RK_USE_FIT_IMG=y                            # Whether to use the FIT (Flattened 
 
 ```
 
-The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, chapter 3.2.2.<font style="color:#DF2A3F;"> (Provide hyperlink)</font>
+The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, chapter 3.2.2.<font style="color:#DF2A3F;"> (Provide hyperlink)
 
 #### 2.3 Partitions
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">The following parameter file configures the location of the firmware partitions, with the path: </font>`<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">OK-linux-source/device/rockchip/rk3588/parameter.txt</font>`
+<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252); The following parameter file configures the location of the firmware partitions, with the path: `OK-linux-source/device/rockchip/rk3588/parameter`.
 
 ```c
 FIRMWARE_VER: 1.0
@@ -689,7 +689,7 @@ Based on this information, the size of the uboot partition is 0x00002000, which 
 
 ##### 3.1.1 Configuring the Build Environment
 
-<font style="color:rgb(0,0,0);">It is recommended to use Ubuntu 22.04 or a later version for compilation.</font>
+<font style="color:rgb(0,0,0);">It is recommended to use Ubuntu 22.04 or a later version for compilation.
 
 Execute the following commands in your build environment (the installation commands apply to Ubuntu 22.04):
 
@@ -708,11 +708,11 @@ If compilation encounters errors, you can install the corresponding software pac
 
 1\. Python requires version 3.6 or higher;
 
-2\. make requires version 4.0 or higher;
+2\. Make requires version 4.0 or higher;
 
 3\. lz4 requires version 1.7.3 or higher.
 
-##### 3.1.2 <font style="color:rgb(15, 17, 21);">Configuring the SDK Build Options</font>
+##### 3.1.2 Configuring the SDK Build Options
 
 All compilation for RK3588 is performed using the build.sh script located in the SDK directory. The usage of build.sh:
 
@@ -761,7 +761,7 @@ OK-linux-source$./build.sh all
 
 A full compilation typically takes 1 to 2 hours. The actual duration depends on the host performance and network conditions.
 
-<font style="color:rgb(15, 17, 21);">After compilation is complete, the system images will be generated under the </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">OK-linux-source/rockdev</font>`<font style="color:rgb(15, 17, 21);"> directory. The specific directory structure is as follows (where each image file is a symbolic link pointing to the source file):</font>
+After compilation is complete, the system images will be generated under the`OK-linux-source/rockdev` directory. The specific directory structure is as follows (where each image file is a symbolic link pointing to the source file):
 
 ```c
 OK-linux-source/rockdev$ tree
@@ -787,7 +787,7 @@ Among them,`update.img`  is the packaged complete image file, suitable for full 
 
 If only compiling u-boot, uboot.img will be generated. 
 
-Path: <font style="color:rgb(51, 51, 51);">OK-linux-source/u-boot/uboot.img</font>. The command is as follows:
+Path: OK-linux-source/u-boot/uboot.img. The command is as follows:
 
 ```c
 OK-linux-source$./build.sh uboot
@@ -803,9 +803,9 @@ The u-boot device tree file is:`OK-linux-source/u-boot/arch/arm/dts/OK3588-C-Lin
 
 ###### 3.2.2.2 Building Kernel
 
-If only compiling the <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">kernel</font>,<font style="color:rgb(51, 51, 51);">boot.img</font> will be generated. 
+If only compiling the <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">kernel,boot.img will be generated. 
 
-Path:`<font style="color:rgb(51, 51, 51);">OK-linux-source/kernel-6.1/boot.img</font>`<font style="color:rgb(51, 51, 51);">. 
+Path:`OK-linux-source/kernel-6.1/boot.img`. 
 
 The command is as follows:
 
@@ -822,17 +822,17 @@ The device tree files are:
 | Platform| Device Tree File Path| Description|
 |----------|----------|----------|
 | OK3588-C/OK3588-C2| OK3588-C-linux.dts| Main device tree for OK3588-C/OK3588-C2. The corresponding .dtb file is generated from the compilation.|
-| | <font style="color:rgb(51, 51, 51);">OK3588-C-common.dtsi</font>| Common hardware definitions for the OK3588-C/OK3588-C2, such as USB controller, I2C, and UART interfaces, are included in the main device tree.|
-| | <font style="color:rgb(51, 51, 51);">OK3588-C-Camera.dtsi</font>| Configuration for the OK3588-C/OK3588-C2 camera interface. This file is included in the main device tree. is included in the main device tree.|
-| OK3588S2-C| <font style="color:rgb(51, 51, 51);">OK3588S2-C-linux.dts</font>| Main device tree for OK3588-C. The corresponding .dtb file is generated from the compilation.|
-| | <font style="color:rgb(51, 51, 51);">OK3588S2-C-common.dtsi</font>| Common hardware definitions for OK3588S2-C, such as USB controllers, I2C and UART interfaces, are included in the main device tree.|
-| | <font style="color:rgb(51, 51, 51);">OK3588S2-C-Camera.dtsi</font>| Configuration for the OK3588S2-C camera interface . This file is included by the main device tree.|
+| | OK3588-C-common.dtsi | Common hardware definitions for the OK3588-C/OK3588-C2, such as USB controller, I2C, and UART interfaces, are included in the main device tree.|
+| | OK3588-C-Camera.dtsi | Configuration for the OK3588-C/OK3588-C2 camera interface. This file is included in the main device tree. is included in the main device tree.|
+| OK3588S2-C| OK3588S2-C-linux.dts | Main device tree for OK3588-C. The corresponding .dtb file is generated from the compilation.|
+| | OK3588S2-C-common.dtsi | Common hardware definitions for OK3588S2-C, such as USB controllers, I2C and UART interfaces, are included in the main device tree.|
+| | OK3588S2-C-Camera.dtsi | Configuration for the OK3588S2-C camera interface . This file is included by the main device tree.|
 
 The kernel configuration file is: 
 
 `OK-linux-source/kernel-6.1/arch/arm64/configs/OK3588-C-linux_defconfig`.
 
-<font style="color:rgb(51, 51, 51);">If you want to configure the kernel, a full compilation must be completed first. To enter the kernel’s menuconfig menu, execute the following operations in the source code directory:</font>
+If you want to configure the kernel, a full compilation must be completed first. To enter the kernel’s menuconfig menu, execute the following operations in the source code directory:
 
 ```c
 OK-linux-source$./build.sh kconfig
@@ -840,11 +840,11 @@ OK-linux-source$./build.sh kconfig
 
 ###### 3.2.2.3 Building Buildroot
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">If only compiling buildroot, rootfs.img will be generated. 
+If only compiling buildroot, rootfs.img will be generated. 
 
-Path：</font>`<font style="color:rgb(51, 51, 51);">OK-linux-source/buildroot/output/rockchip_ok3588-c/images/rootfs.ext2</font>`<font style="color:rgb(51, 51, 51);">. </font>
+Path: `OK-linux-source/buildroot/output/rockchip_ok3588-c/images/rootfs.ext2`. 
 
-The <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">buildroot </font>configuration file is<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">:  </font>`<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig</font>`<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">.</font>
+The <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">buildroot configuration file is `OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig`
 
 Run the following command to configure the buildroot menu:
 
@@ -870,12 +870,12 @@ The meanings of each option are as follows:
 | Host utilities| Configure the tools that run on the host|
 | Legacy config options| Handle deprecated or obsolete Configuration Options |
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —> Libraries —> Graphics —>, find libraw and press y to select it, then exit and save the configuration.</font>
+<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —> Libraries —> Graphics —>, find libraw and press y to select it, then exit and save the configuration.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773812793183-f56f8b56-8fb6-4348-9d11-345211bc77c2.png)
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Run the following command to compile buildroot individually:
+Run the following command to compile buildroot individually:
 
-buildroot：</font>
+buildroot：
 
 ```c
 ./build.sh buildroot
@@ -883,7 +883,7 @@ buildroot：</font>
 
 Compiling the Buildroot root filesystem alone typically takes 1 to 2 hours. The actual duration depends on the host performance and network conditions.
 
-Flash the compiled rootfs.img to the board via OTG, or flash it as part of a full system image after performing a full compilation. For flashing methods, please refer to the Flashing Firmware Image chapter（<font style="color:#DF2A3F;">provide a hyperlink)</font>）.
+Flash the compiled rootfs.img to the board via OTG, or flash it as part of a full system image after performing a full compilation. For flashing methods, please refer to the Flashing Firmware Image chapter（<font style="color:#DF2A3F;">provide a hyperlink)）.
 
 You can see the corresponding libraw.so under /usr/lib directory.
 
@@ -907,19 +907,19 @@ This chapter explains how to install the cross-compilation toolchain and compile
 
 ##### 3.3.1 Installing Cross-compilation Toolchain
 
-Navigate to the home directory of your compilation environment and obtain the<font style="color:rgb(15, 17, 21);">cross-compilation toolchain using the following command:</font>
+Navigate to the home directory of your compilation environment and obtain thecross-compilation toolchain using the following command:
 
 ```c
 wget 'https://github.com/FLembedded/buildroot_dl/releases/download/buildroot_sdk/buildroot-sdk.tar.gz'
 ```
 
-Extract`<font style="color:rgb(61, 70, 74);"> buildroot-sdk.tar.gz</font>`：
+Extract`buildroot-sdk.tar.gz`：
 
 ```c
 forlinx@ubuntu:~$ tar -zvxf  buildroot-sdk.tar.gz
 ```
 
-<font style="color:rgb(51, 51, 51);">Enter</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">aarch64-buildroot-linux-gnu_sdk-buildroot</font>`<font style="color:rgb(51, 51, 51);">directory to execute relocate-sdk.sh</font>
+Enter `aarch64-buildroot-linux-gnu_sdk-buildroot `directory to execute relocate-sdk.sh
 
 ```c
 forlinx@ubuntu:~/aarch64-buildroot-linux-gnu_sdk-buildroot$ ./relocate-sdk.sh
@@ -933,7 +933,7 @@ forlinx@ubuntu:~/aarch64-buildroot-linux-gnu_sdk-buildroot$ ./relocate-sdk.sh
 export PATH=/home/your-hostname/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/:$PATH
 ```
 
-2\. Cross compile, take the Forlinx watchdog test program as an example, and enter the directory.`OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog`：
+2\. Cross compile, take the Forlinx watchdog test program as an example, and enter the directory  `OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog`：
 
 ```c
 OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ ls
@@ -941,7 +941,7 @@ Makefile  watchdog.c
 OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ aarch64-linux-gcc watchdog.c -o fltest_watchdog
 ```
 
-3\. <font style="color:rgb(51, 51, 51);">Use the file command to check the generated file information:</font>
+3\. Use the file command to check the generated file information:
 
 ```c
 OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$/usr/bin/file fltest_watchdog 
@@ -950,7 +950,7 @@ fltest_watchdog: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), d
 
 The result will show that a 64-bit ARM file is generated.
 
-<font style="color:rgb(51, 51, 51);">4. Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/root path. Take U disk as an example, copy it to the development board and run the test.</font>
+4. Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/root path. Take U disk as an example, copy it to the development board and run the test.
 
 ```c
 root@OK3588-buildroot:~# cp /run/media/sda1/fltest_watchdog /root/
@@ -964,7 +964,7 @@ Watchdog Ticking Away!
 
 #### 4G/5G
 
-<font style="color:rgb(51, 51, 51);">The OK3588 supports 4G and 5G modules (4G is EM05-CE, and 5G is RM500U).</font>
+The OK3588 supports 4G and 5G modules (4G is EM05-CE, and 5G is RM500U).
 
 **⚠️Note: The following test is based on the SIM card and module in China, and you need to configure it according to your local network mode.**
 
@@ -973,7 +973,7 @@ The location of the 4G/5G module and SIM card.
 
 ##### **1\. 4G**
 
-<font style="color:rgb(51, 51, 51);">Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</font>
+Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774484133017-bb5670e1-315a-443f-abe1-167c967543b1.png)
 
 Once the module is connected and both the development board and the module are powered on, you can view the USB status using the lsusb command.
@@ -989,7 +989,7 @@ Bus 004 Device 001: ID 1d6b:0001
 Bus 002 Device 001: ID 1d6b:0003
 ```
 
-<font style="color:rgb(51, 51, 51);">Check device node status under /dev:</font>
+Check device node status under /dev:
 
 ```plain
 root@OK3588-buildroot:~# ls /dev/ttyUSB*
@@ -1052,7 +1052,7 @@ rtt min/avg/max/mdev = 81.694/197.930/312.431/94.205 ms
 
 ##### **2\. 5G**
 
-<font style="color:rgb(51, 51, 51);">Connect the 5G module</font> <font style="color:rgb(51, 51, 51);">RM500U</font> <font style="color:rgb(51, 51, 51);">and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</font>
+Connect the 5G module RM500U and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774484133017-bb5670e1-315a-443f-abe1-167c967543b1.png?x-oss-process=image%2Fformat%2Cwebp)
 
@@ -1174,18 +1174,18 @@ PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes
 
 An ADC (analog-to-digital converter) is an electronic device or circuit that converts a continuous analog signal into a discrete digital signal.
 
-<font style="color:rgb(51, 51, 51);">There are 8 x built-in ADC. Among them, saradc2, saradc4, saradc5, saradc6, and saradc7 are led out from the carrier board connectors, while the saradc1 channel is used for the ADC key detection circuit.</font>
+There are 8 x built-in ADC. Among them, saradc2, saradc4, saradc5, saradc6, and saradc7 are led out from the carrier board connectors, while the saradc1 channel is used for the ADC key detection circuit.
 
 5 x ADC and the ADC keys on the board:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583288280-8d7c5cca-1896-4bdc-bad0-553869c3518f.png)
 
-**⚠️<font style="color:rgb(15, 17, 21);">Note: OK3588S2-C does not support saradc6 and saradc7.</font>**
+**⚠️Note: OK3588S2-C does not support saradc6 and saradc7.**
 
-<font style="color:rgb(15, 17, 21);">The source code location of the ADC key driver in the kernel:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">drivers/input/keyboard/adc-keys.c</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">.</font>
+The source code location of the ADC key driver in the kernel:`drivers/input/keyboard/adc-keys.c`.
 
 ##### **2\. Device Tree**
 
-The ADC device tree definitions are located in:`kernel-6.1/<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">arch/arm64/boot/dts/rockchip/rk3588s.dtsi</font>`.
+The ADC device tree definitions are located in: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 ```c
 	saradc: saradc@fec10000 {
@@ -1205,7 +1205,7 @@ By default, SARADC is disabled. Please enable saradc in the corresponding device
 
 OK3588-C/3588-C2 :`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
-<font style="color:rgb(51, 51, 51);">OK3588S2-C:</font>`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
+OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
 ```c
 &saradc {
@@ -1254,10 +1254,10 @@ adc_keys: adc-keys {
 
 ###### 3.1 Voltage Input Test
 
-<font style="color:rgb(51, 51, 51);">Select saradc2 for testing. The ADC pin hardware schematic is as follows. The chip currently uses a 1.8V reference voltage, corresponding to a 12-bit ADC maximum value of 4095.</font>
+Select saradc2 for testing. The ADC pin hardware schematic is as follows. The chip currently uses a 1.8V reference voltage, corresponding to a 12-bit ADC maximum value of 4095.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773026170298-487ba0df-510f-411f-ac20-e43c19c63500.png)
 
-Short-circuit pin 1 of connector P12 and pin 2 of connector P13, then read the value of <font style="color:rgb(51, 51, 51);">saradc2:</font>
+Short-circuit pin 1 of connector P12 and pin 2 of connector P13, then read the value of saradc2:
 
 ```c
 root@OK3588-C-buildroot:~# cd /sys/bus/iio/devices/iio\:device0/
@@ -1265,16 +1265,16 @@ root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 3
 ```
 
-Short-circuit pin 1 of connector P12 and pin 1 of connector P13, then read the value of<font style="color:rgb(51, 51, 51);">saradc2:</font>
+Short-circuit pin 1 of connector P12 and pin 1 of connector P13, then read the value ofsaradc2:
 
 ```c
 root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 4095
 ```
 
-###### <font style="color:rgb(51, 51, 51);">3.2 ADC Key Test</font>
+###### 3.2 ADC Key Test
 
-<font style="color:rgb(51, 51, 51);">The saradc1 channel is used for the ADC key detection circuit, employing a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, resulting in different voltages read by the ADC. The program identifies specific keys by judging the voltage range. The principle is illustrated in the following diagram:</font>
+The saradc1 channel is used for the ADC key detection circuit, employing a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, resulting in different voltages read by the ADC. The program identifies specific keys by judging the voltage range. The principle is illustrated in the following diagram:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774233416305-199112cd-eb5b-4be6-91cd-a54e14476846.png)
 
 Use the`fltest_keytest`command-line tool for key testing. Currently,`fltest_keytest`supports testing the four keys on the baseboard: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:
@@ -1285,7 +1285,7 @@ Available devices:
 /dev/input/event6:    adc-keys
 ```
 
-<font style="color:rgb(51, 51, 51);">While pressing and releasing the keys sequentially, the terminal outputs are:</font>
+While pressing and releasing the keys sequentially, the terminal outputs are:
 
 ```c
 key115 Presse
@@ -1302,9 +1302,9 @@ key158 Released
 
 ###### 3.3 While pressing and releasing the keys sequentially, the terminal outputs are:
 
-<font style="color:rgb(51, 51, 51);">In the OK3588, the input event node for ADC keys is located at /dev/input/eventX (where X is the specific device number). Applications must include the header file \<linux/input.h>, which defines the structures and macros related to input events.</font>
+In the OK3588, the input event node for ADC keys is located at /dev/input/eventX (where X is the specific device number). Applications must include the header file \<linux/input.h>, which defines the structures and macros related to input events.
 
-<font style="color:rgb(51, 51, 51);">The core data structure struct input\_event is defined as follows:</font>
+The core data structure struct input\_event is defined as follows:
 
 ```c
 struct input_event {
@@ -1400,26 +1400,26 @@ close(keys_fd);
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">The OK3588-C board is equipped with two Gigabit Ethernet ports. With an Ethernet cable connected, the factory default configuration sets eth0 to a static IP, while eth1 is not configured. Both network ports use the</font>RTL8211FSI PHY chip.<font style="color:rgb(0,0,128);">.</font><font style="color:rgb(15, 17, 21);"> The driver source code is located within the kernel:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">drivers/net/ethernet/stmicro/stmmac</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">.</font>
+The OK3588-C board is equipped with two Gigabit Ethernet ports. With an Ethernet cable connected, the factory default configuration sets eth0 to a static IP, while eth1 is not configured. Both network ports use theRTL8211FSI PHY chip. The driver source code is located within the kernel:`drivers/net/ethernet/stmicro/stmmac`.
 
-<font style="color:rgb(51, 51, 51);">The wired network interface locations on the board are as follows:</font>
+The wired network interface locations on the board are as follows:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776415337495-05b56216-1f93-407f-98c7-894864b47cd5.png)
 
-**<font style="color:rgb(51, 51, 51);">⚠️Note: The RK3588S2 chip does not include an Ethernet controller, resulting in only one Gigabit Ethernet port available on the RK3588S2-C. When an Ethernet cable is connected, the factory default configuration assigns a static IP to eth0, rendering the P38 network port unavailable.</font>**
+**⚠️Note: The RK3588S2 chip does not include an Ethernet controller, resulting in only one Gigabit Ethernet port available on the RK3588S2-C. When an Ethernet cable is connected, the factory default configuration assigns a static IP to eth0, rendering the P38 network port unavailable.**
 
 The RTL8211 schematic is shown below:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773044057275-606b8e8e-8670-4024-b3d8-f8d8cbc36cbb.png)
 
 ##### 1.1 RGMII Mode
 
-<font style="color:rgb(15, 17, 21);">The RK3588 GMAC controller supports four RGMII clock configuration schemes:</font>
+The RK3588 GMAC controller supports four RGMII clock configuration schemes:
 
-| <font style="color:rgb(15, 17, 21);">Mode</font>| <font style="color:rgb(15, 17, 21);">TX\_CLK origin</font>| <font style="color:rgb(15, 17, 21);">PHY 25MHz origin</font>|
-|----------|----------|----------|
-| <font style="color:rgb(15, 17, 21);">RGMII Config 1</font>| <font style="color:rgb(15, 17, 21);">SoC PLL output 125MHz</font>| <font style="color:rgb(15, 17, 21);">External crystal 25MHz</font>|
-| <font style="color:rgb(15, 17, 21);">RGMII Config 2</font>| <font style="color:rgb(15, 17, 21);">SoC PLL outputs125MHz</font>| <font style="color:rgb(15, 17, 21);">SoC PLL output 25MHz</font>|
-| <font style="color:rgb(15, 17, 21);">RGMII Config 3</font>| <font style="color:rgb(15, 17, 21);">PHY input 125MHz</font>| <font style="color:rgb(15, 17, 21);">SoC PLL output 25MHz</font>|
-| <font style="color:rgb(15, 17, 21);">RGMII Config 4</font>| <font style="color:rgb(15, 17, 21);">PHY input 125MHz</font>| <font style="color:rgb(15, 17, 21);">External crystal 25MHz</font>|
+| Mode           | TX\_CLK origin        | PHY 25MHz origin       |
+| -------------- | --------------------- | ---------------------- |
+| RGMII Config 1 | SoC PLL output 125MHz | External crystal 25MHz |
+| RGMII Config 2 | SoC PLL outputs125MHz | SoC PLL output 25MHz   |
+| RGMII Config 3 | PHY input 125MHz      | SoC PLL output 25MHz   |
+| RGMII Config 4 | PHY input 125MHz      | External crystal 25MHz |
 
 OK3588-C uses config1.
 
@@ -1533,15 +1533,15 @@ Gateway=192.168.0.1
 DNS=114.114.114.114
 ```
 
-<font style="color:rgb(51, 51, 51);">Name is used to specify the network card that requires a fixed IP.</font>
+Name is used to specify the network card that requires a fixed IP.
 
-<font style="color:rgb(51, 51, 51);">Address is used to specify the IP address that needs to be fixed.</font>
+Address is used to specify the IP address that needs to be fixed.
 
-<font style="color:rgb(51, 51, 51);">Gateway is used to specify the gateway.</font>
+Gateway is used to specify the gateway.
 
-<font style="color:rgb(51, 51, 51);">DNS is used to specify the name resolution server.</font>
+DNS is used to specify the name resolution server.
 
-<font style="color:rgb(51, 51, 51);">Restart the network service after the setup is completed</font>。
+Restart the network service after the setup is completed。
 
 ```c
 root@OK3588-C-buildroot:/# systemctl restart systemd-networkd
@@ -1553,7 +1553,7 @@ Connect the network cable to the ETH0 port of the board before the test.
 
 ##### 3.2.1 Ifconfig
 
-`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">ifconfig</font>`<font style="color:rgb(15, 17, 21);">is a classic</font>**<font style="color:rgb(15, 17, 21);">**Network Interface Configuration and Viewing Tools**</font>**<font style="color:rgb(15, 17, 21);">.</font>
+`ifconfig`is a classic Network Interface Configuration and Viewing Tools.
 
 ```c
 #View all network interface information.
@@ -1579,7 +1579,7 @@ lo        Link encap:Local Loopback
 
 ##### 3.2.2 Ethtool
 
-`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">ethtool</font>`<font style="color:rgb(15, 17, 21);"> is a necessary tool for Linux system to troubleshoot physical layer and driver layer problems. It provides more in-depth hardware-level information than the ifconfig </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">ifconfig</font>`<font style="color:rgb(15, 17, 21);">command.</font>
+`ethtool` is a necessary tool for Linux system to troubleshoot physical layer and driver layer problems. It provides more in-depth hardware-level information than the ifconfig `ifconfig`command.
 
 ```c
 # Show the basic settings of eth0
@@ -1642,9 +1642,9 @@ rtt min/avg/max/mdev = 0.271/0.343/0.487/0.074 ms
 
 ##### 3.3.2 Iperf3
 
-Configure the network IP according to your actual network conditions. The network throughput can be tested using the<font style="color:rgb(51, 51, 51);">iperf3 tool.</font>
+Configure the network IP according to your actual network conditions. The network throughput can be tested using theiperf3 tool.
 
-<font style="color:rgb(51, 51, 51);">Server:</font>
+Server:
 
 ```c
 iperf3.exe -s
@@ -1676,7 +1676,7 @@ Connecting to host 192.168.0.100, port 5201
 iperf Done.
 ```
 
-The <font style="color:rgb(51, 51, 51);">results</font><font style="color:rgb(15, 17, 21);">indicate a stable bitrate between 948 - 953 Mbits/sec, confirming that the Gigabit network connection is functioning normally with good performance.
+The results indicate a stable bitrate between 948 - 953 Mbits/sec, confirming that the Gigabit network connection is functioning normally with good performance.
 
 ##### 3.3.3 SFTP
 
@@ -1689,37 +1689,37 @@ Open the filezilla tool, click File, and select Site Manager.
 
 ### Frequency
 
-<font style="color:rgb(51, 51, 51);">The RK3588 uses a small and large core architecture and integrates four Cortex-A55 (small cores) and four Cortex-A76 (large cores). 
+The RK3588 uses a small and large core architecture and integrates four Cortex-A55 (small cores) and four Cortex-A76 (large cores). 
 
-| <font style="color:rgb(51, 51, 51);">SoM Type</font>| <font style="color:rgb(51, 51, 51);">SoM No.</font>| <font style="color:rgb(51, 51, 51);">Frequency modulation strategy</font>|
-|----------|----------|----------|
-| <font style="color:rgb(51, 51, 51);">Cortex-A55（small core）</font>| <font style="color:rgb(51, 51, 51);">cpu0 ~ cpu3</font>| <font style="color:rgb(51, 51, 51);">Share the same frequency domain, adjust any core frequency, and change the other three cores synchronously.</font>|
-| <font style="color:rgb(51, 51, 51);">Cortex-A76（large core）</font>| <font style="color:rgb(51, 51, 51);">cpu4 ~ cpu7</font>| <font style="color:rgb(51, 51, 51);">Independent frequency modulation of each core without mutual influence</font>|
+| SoM Type                 | SoM No.     | Frequency modulation strategy                                |
+| ------------------------ | ----------- | ------------------------------------------------------------ |
+| Cortex-A55（small core） | cpu0 ~ cpu3 | Share the same frequency domain, adjust any core frequency, and change the other three cores synchronously. |
+| Cortex-A76（large core） | cpu4 ~ cpu7 | Independent frequency modulation of each core without mutual influence |
 
-**<font style="color:rgb(51, 51, 51);">⚠️Note: The A55 small core must operate at a frequency equal to or greater than that of the A76 large core; please keep this constraint in mind when configuring the system.</font>**
+**⚠️Note: The A55 small core must operate at a frequency equal to or greater than that of the A76 large core; please keep this constraint in mind when configuring the system.**
 
-<font style="color:rgb(51, 51, 51);"><font style="color:rgb(51, 51, 51);"></font>Take setting the CPU4 frequency as an example:</font>
+Take setting the CPU4 frequency as an example:
 
-<font style="color:rgb(51, 51, 51);">1. View all supported cpufreq governor types:</font>
+1. View all supported cpufreq governor types:
 
 ```bash
 root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_governors
 interactive conservative ondemand userspace powersave performance schedutil
 ```
 
-interactive：<font style="color:rgb(15, 17, 21);">Designed for mobile devices such as Android.</font>
+interactive：Designed for mobile devices such as Android.
 
-<font style="color:rgb(15, 17, 21);">ondemand：</font>Dynamically adjust based on current CPU usage.
+ondemand：Dynamically adjust based on current CPU usage.
 
-<font style="color:rgb(15, 17, 21);">conservative：Similar to ondemand, but the frequency adjustment is smoother. The frequency is stepped up or down rather than jumping directly to the highest.</font>
+conservative：Similar to ondemand, but the frequency adjustment is smoother. The frequency is stepped up or down rather than jumping directly to the highest.
 
-<font style="color:rgb(15, 17, 21);">userspace：</font>Delegate frequency control to userspace programs.
+userspace：Delegate frequency control to userspace programs.
 
-<font style="color:rgb(15, 17, 21);">powersave：</font><font style="color:rgb(15, 17, 21);">Set the CPU frequency to the minimum fixed value.</font>
+powersave：Set the CPU frequency to the minimum fixed value.
 
-<font style="color:rgb(15, 17, 21);">performance：</font><font style="color:rgb(15, 17, 21);">Set the CPU frequency to the maximum fixed value.</font>
+performance：Set the CPU frequency to the maximum fixed value.
 
-<font style="color:rgb(15, 17, 21);">schedutil: Tightly integrated with the Linux scheduler (such as CFS), it dynamically adjusts frequency by leveraging the CPU utilization information (util\_avg) provided by the scheduler.</font>
+schedutil: Tightly integrated with the Linux scheduler (such as CFS), it dynamically adjusts frequency by leveraging the CPU utilization information (util\_avg) provided by the scheduler.
 
 2\. Check the frequency steps supported by the current CPU:
 
@@ -1728,14 +1728,14 @@ root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_avai
 408000 600000 816000 1008000 1200000 1416000 1608000 1800000 2016000 2208000 2352000
 ```
 
-<font style="color:rgb(15, 17, 21);">3. </font><font style="color:rgb(51, 51, 51);">Set the current mode to user mode and change the frequency to 1800000:</font>
+3. Set the current mode to user mode and change the frequency to 1800000:
 
 ```bash
 root@OK3588-C-buildroot:~# echo userspace > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 root@OK3588-C-buildroot:~# echo 1800000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 ```
 
-<font style="color:rgb(15, 17, 21);">4. </font><font style="color:rgb(51, 51, 51);">Check whether the frequency has been changed to 1800000:</font>
+4. Check whether the frequency has been changed to 1800000:
 
 ```bash
 root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
@@ -1805,10 +1805,10 @@ gt9xx_dsi0: gt9xx@14 {
 };
 ```
 
-+ <font style="color:rgb(15, 17, 21);">interrupt-parent：Specifies the GPIO3 module as the interrupt controller.</font>
-+ <font style="color:rgb(15, 17, 21);">interrupts：Interrupt number and trigger type. RK\_PC0 denotes the PC0 pin of GPIO3, with the interrupt triggered by a falling edge.</font>
-+ <font style="color:rgb(15, 17, 21);">irq-gpio：Specifies the GPIO pin for the interrupt.</font>
-+ <font style="color:rgb(15, 17, 21);">pinctrl node：\<3 RK\_PB7 RK\_FUNC\_GPIO \&pcfg\_pull\_none> indicates that GPIO3\_B7 is configured for I/O functionality.</font>
++ interrupt-parent：Specifies the GPIO3 module as the interrupt controller.
++ interrupts：Interrupt number and trigger type. RK\_PC0 denotes the PC0 pin of GPIO3, with the interrupt triggered by a falling edge.
++ irq-gpio：Specifies the GPIO pin for the interrupt.
++ pinctrl node：\<3 RK\_PB7 RK\_FUNC\_GPIO \&pcfg\_pull\_none> indicates that GPIO3\_B7 is configured for I/O functionality.
 
 ##### 2.2 Extend GPIO
 
@@ -1818,7 +1818,7 @@ The device tree nodes for the GPIO expansion are located at:
 
 OK3588-C/3588-C2 ：`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
-<font style="color:rgb(51, 51, 51);">OK3588S2-C：</font>`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
+OK3588S2-C：`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
 ```c
 &i2c2 {
@@ -1846,14 +1846,14 @@ Please refer to the PinMUX table for the usage of the GPIO pins.
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
-Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.</font>
+Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776755452912-aeed3a0f-89f5-46ad-aec3-f1ecfc2f2159.png)
 
 ##### 3.1 Native GPIO
 
-###### 3.1.1 <font style="color:rgb(15, 17, 21);">Pin Calculation Method</font>
+###### 3.1.1 Pin Calculation Method
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.</font>
+<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.
 
 The naming convention for GPIOs is GPIOn\_xy, where x can be A, B, C, or D. In the GPIO numbering calculation, A corresponds to 1, B to 2, C to 3, and D to 4.
 
@@ -1871,7 +1871,7 @@ GPI03_B0 = 3 × 32 + (2 − 1) × 8 + 0 = 104
 
 ###### 3.1.2 GPIO Test
 
-To test the native pins on the OK3588, please use:`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">fltest_gpio.sh</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);"></font>
+To test the native pins on the OK3588, please use:`fltest_gpio.sh`
 
 ```c
 root@OK3588-C-buildroot:~# fltest_gpio.sh -h
@@ -1879,7 +1879,7 @@ root@OK3588-C-buildroot:~# fltest_gpio.sh -h
 User:/usr/bin/fltest_gpio.sh GPIO3_A7 1
 ```
 
-##### 3.2 <font style="color:rgb(15, 17, 21);">Extended GPIO</font>
+##### 3.2 Extended GPIO
 
 The extended IOs belong to bank chip6, with a numbering range of 485 to 508.
 
@@ -1957,7 +1957,7 @@ I2C tools (commonly written as i2c-tools) is a toolkit specifically designed for
 
 ##### 3.1 i2cdetect
 
-<font style="color:rgb(15, 17, 21);">Scan the I2C bus and detects connected device addresses, displaying them in a table format. </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">--</font>`<font style="color:rgb(15, 17, 21);">：No device present.</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">UU</font>`<font style="color:rgb(15, 17, 21);">:The address is occupied by a kernel driver; for example, to view devices on the I2C5 bus:</font>
+Scan the I2C bus and detects connected device addresses, displaying them in a table format. `--`：No device present.`UU`:The address is occupied by a kernel driver; for example, to view devices on the I2C5 bus:
 
 ```plain
 root@OK3588-C-buildroot:~# i2cdetect -y 5
@@ -1976,9 +1976,9 @@ If you wish to manually operate a device using tools like i2cget or i2cset, you 
 
 ##### 3.2 i2cget
 
-<font style="color:rgb(15, 17, 21);">Reads an 8-bit value from a single register of a specified device.
+Reads an 8-bit value from a single register of a specified device.
 
-Example: Read the value from register 0x10 of the device at address 0x50 on bus 1.</font>
+Example: Read the value from register 0x10 of the device at address 0x50 on bus 1.
 
 ```plain
 i2cget -y 1 0x50 0x10
@@ -1988,9 +1988,9 @@ i2cget -y 1 0x50 0x10
 
 ##### 3.3 I2cset
 
-<font style="color:rgb(15, 17, 21);">Write a value to a single register of a specified device.
+Write a value to a single register of a specified device.
 
-Example: Write the value 0xAB to register 0x10 of the device at address 0x50 on bus 1.</font>
+Example: Write the value 0xAB to register 0x10 of the device at address 0x50 on bus 1.
 
 ```plain
 i2cset -y 1 0x50 0x10 0xAB
@@ -2036,7 +2036,7 @@ Within the Linux system, the eMMC device is enumerated as mmcblk0 and exposes it
 + **Boot Partitions(mmcblk0boot0 and mmcblk0boot1)**: Dedicated hardware partitions typically used for storing bootloaders.
 + **RPMB(mmcblk0rpmb, 4 MiB)**: Replay Protected Memory Block for secure data storage.
 
-<font style="color:rgb(51, 51, 51);">The location of the driver source code in the kernel:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(248, 248, 248);">drivers/mmc/host/dw_mmc-rockchip.c</font>`
+The location of the driver source code in the kernel:`drivers/mmc/host/dw_mmc-rockchip.c`
 
 #### 2\. Device Tree
 
@@ -2131,14 +2131,14 @@ root@OK3588-C-buildroot:~# df -h
 
 PCIe (Peripheral Component Interconnect Express) is a high-speed serial computer expansion bus standard used to connect the motherboard to high-performance external devices.
 
-<font style="color:rgb(51, 51, 51);">The OK3588-C board features 1 x PCIe 2.0 x1 and 1 x PCIe 3.0 x4 interface, as shown in the figure below.</font>
+The OK3588-C board features 1 x PCIe 2.0 x1 and 1 x PCIe 3.0 x4 interface, as shown in the figure below.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776413262533-6f5353cb-b41b-4c42-abb6-d98ea64e4e9d.png)
 
 You can design PCIe bifurcation according to your specific requirements. For detailed information, please refer to the following documentation:`OK-linux-source/docs/rk3588/en/Common/PCIe/Rockchip_Developer_Guide_PCIe_EN.pdf`
 
-**⚠️Note: Since the RK3588S2 chip itself has fewer PCIe controllers, neither the P45 nor P46 PCIe interfaces on the<font style="color:rgb(51, 51, 51);">OK3588S2-C board are unusable.</font>**
+**⚠️Note: Since the RK3588S2 chip itself has fewer PCIe controllers, neither the P45 nor P46 PCIe interfaces on theOK3588S2-C board are unusable.**
 
-<font style="color:rgb(15, 17, 21);">PCIe driver source code location in the kernel:</font>`<font style="color:rgb(51, 51, 51);">drivers/pci/controller/pcie-rockchip.c</font>`<font style="color:rgb(51, 51, 51);">.</font>
+PCIe driver source code location in the kernel:`drivers/pci/controller/pcie-rockchip.c`.
 
 #### 2\. Device Tree
 
@@ -2208,7 +2208,7 @@ OK3588S2: PCIe device tree node location:`kernel-6.1/arch/arm64/boot/dts/rockchi
 
 #### 3\. Application
 
-<font style="color:rgb(51, 51, 51);">Before powering on the system, insert the PCIe module into the PCIe slot on the carrier board. After power-on and startup, the successful enumeration of the corresponding device (ZHITAI TiPro5000 NVMe SSD) can be observed through</font>`<font style="color:rgb(51, 51, 51);">lspci</font>`<font style="color:rgb(51, 51, 51);">commands.</font>
+Before powering on the system, insert the PCIe module into the PCIe slot on the carrier board. After power-on and startup, the successful enumeration of the corresponding device (ZHITAI TiPro5000 NVMe SSD) can be observed through`lspci`commands.
 
 ```c
 root@OK3588-C-buildroot:~# lspci
@@ -2216,14 +2216,14 @@ root@OK3588-C-buildroot:~# lspci
 0002:21:00.0 Non-Volatile memory controller: Yangtze Memory Technologies Co.,Ltd ZHITAI TiPro5000 NVMe SSD (rev 01)
 ```
 
-<font style="color:rgb(51, 51, 51);">You can see the following NVMe nodes:</font>
+You can see the following NVMe nodes:
 
 ```c
 root@OK3588-C-buildroot:~# ls /dev/nvme*
 /dev/nvme0  /dev/nvme0n1  /dev/nvme0n1p1  /dev/nvme0n1p2
 ```
 
-<font style="color:rgb(51, 51, 51);">View the mount directory:</font>
+View the mount directory:
 
 ```c
 root@OK3588-C-buildroot:~# ls /run/media/
@@ -2232,7 +2232,7 @@ nvme0n1p1
 
 Test the drive speed using dd:
 
-<font style="color:rgb(51, 51, 51);">Write:</font>
+Write:
 
 ```c
 root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/nvme0n1p1/test bs=1M count=100 conv=fsync
@@ -2241,7 +2241,7 @@ root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/nvme0n1p1/test bs=1M co
 104857600 bytes (105 MB, 100 MiB) copied, 0.078358 s, 1.3 GB/s
 ```
 
-<font style="color:rgb(51, 51, 51);">Read:</font>
+Read:
 
 ```c
 root@OK3588-C-buildroot:~# dd if=/run/media/nvme0n1p1/test of=/dev/null bs=1M
@@ -2255,15 +2255,15 @@ root@OK3588-C-buildroot:~# dd if=/run/media/nvme0n1p1/test of=/dev/null bs=1M
 
 #### 1\. Introduction
 
-<font style="color:rgb(15, 17, 21);">PWM is the abbreviation for Pulse Width Modulation. It is a technology that uses a digital signal (high and low levels) to produce analog-like effects. The core idea is to control the average output voltage or power by varying the proportion of time the signal stays high within a fixed period (i.e., the duty cycle).</font>
+PWM is the abbreviation for Pulse Width Modulation. It is a technology that uses a digital signal (high and low levels) to produce analog-like effects. The core idea is to control the average output voltage or power by varying the proportion of time the signal stays high within a fixed period (i.e., the duty cycle).
 
-<font style="color:rgb(15, 17, 21);">There are four PMW on OK3588-C, they are pwm2, pwm4, and pwm5 and pwm6. Where pwm4, pwm5, and pwm6 are used for backlight control of EDP, dsi0, and dsi1, respectively, and pwm2 is used for fan control.</font>
+There are four PMW on OK3588-C, they are pwm2, pwm4, and pwm5 and pwm6. Where pwm4, pwm5, and pwm6 are used for backlight control of EDP, dsi0, and dsi1, respectively, and pwm2 is used for fan control.
 
-<font style="color:rgb(15, 17, 21);">Location of the backlight driver source code in the kernel:</font>`<font style="color:rgb(51, 51, 51);">drivers/video/backlight/pwm_bl.c</font>`<font style="color:rgb(51, 51, 51);">.</font>
+Location of the backlight driver source code in the kernel:`drivers/video/backlight/pwm_bl.c`.
 
 #### 2\. Device Tree
 
-<font style="color:rgb(15, 17, 21);">Location of OK3588-C/3588-C2 PMW device tree node:</font>`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
+Location of OK3588-C/3588-C2 PMW device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 ```c
 &pwm2 { //FAN
@@ -2296,13 +2296,13 @@ backlight_dsi0: backlight-dsi0 {
     };
 ```
 
-<font style="color:rgb(15, 17, 21);">Location of OK3588S2-C PWM device tree node:</font>`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
+Location of OK3588S2-C PWM device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
 #### 3\. Application
 
 ##### 3.1 Screen Backlight Control
 
-<font style="color:rgb(51, 51, 51);">The backlight brightness setting range is (0-255), where 255 represents the highest brightness and 0 indicates the backlight is turned off. After connecting an MIPI screen to the MIPI DSI0 interface and powering on,</font>
+The backlight brightness setting range is (0-255), where 255 represents the highest brightness and 0 indicates the backlight is turned off. After connecting an MIPI screen to the MIPI DSI0 interface and powering on,
 
 use the following command to view all backlight devices:
 
@@ -2342,7 +2342,7 @@ The OK3588 utilizes the PCF8563 real-time clock module. The chip connects to the
 Schematic: The RTC schematic is as shown below:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773049363933-d0eb9079-7c06-4e79-a2af-300c0f96fc71.png)
 
-<font style="color:rgb(15, 17, 21);">Driver Location: The RTC driver source code is located within the kernel at the specified path.</font>`<font style="color:rgb(51, 51, 51);">drivers/rtc/rtc-pcf8563.c</font>`<font style="color:rgb(51, 51, 51);">.</font>
+Driver Location: The RTC driver source code is located within the kernel at the specified path.`drivers/rtc/rtc-pcf8563.c`.
 
 #### 2\. Device Tree
 
@@ -2370,7 +2370,7 @@ Path for OK3588S2-C: Refer to the specified device tree path`kernel-6.1/arch/arm
 
 #### 3\. Application
 
-<font style="color:rgb(51, 51, 51);">Before RTC testing, ensure a coin cell battery is installed on the board and its voltage is normal. Testing primarily involves using the</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">date</font>`<font style="color:rgb(51, 51, 51);">date and</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">hwclock</font>`<font style="color:rgb(51, 51, 51);">tools to set system/RTC time and verify that the system clock reads the RTC clock correctly after a power cycle.</font>
+Before RTC testing, ensure a coin cell battery is installed on the board and its voltage is normal. Testing primarily involves using the`date`date and`hwclock`tools to set system/RTC time and verify that the system clock reads the RTC clock correctly after a power cycle.
 
 Set the system time: 
 
@@ -2392,7 +2392,7 @@ root@OK3588-C-buildroot:~# hwclock -r
 Mon Oct 27 10:05:10 2025  0.000000 seconds
 ```
 
-<font style="color:rgb(51, 51, 51);">After power cycling the board and booting the system, read the system time (date) to confirm synchronization.</font>
+After power cycling the board and booting the system, read the system time (date) to confirm synchronization.
 
 ```c
 root@OK3588-C-buildroot:~# date
@@ -2403,7 +2403,7 @@ Mon Oct 27 10:06:01 CST 2025
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">There is one TF (Micro SD) card slot on the OK3588-C development board using the RK3588 SDMMC controller interface for external removable storage. This interface supports hot-plug. After insertion, the SD card is managed as a standard block device. Location of TF Card Port:</font>
+There is one TF (Micro SD) card slot on the OK3588-C development board using the RK3588 SDMMC controller interface for external removable storage. This interface supports hot-plug. After insertion, the SD card is managed as a standard block device. Location of TF Card Port:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583628115-fe45da11-8823-4fd3-9389-0b642243eb07.png)
 
 **⚠️Note: Although hot-plug is hardware supported, you must unmount the device using umount before physically removing the SD card to prevent data loss or filesystem corruption.**
@@ -2412,28 +2412,28 @@ Location of driver source code`drivers/mmc/host/dw_mmc-rockchip.c`.
 
 ##### 1.1 Device Node \& Mount Path
 
-After inserting the card, the kernel generates corresponding device nodes in </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">/dev</font>`<font style="color:rgb(15, 17, 21);"> . The entire SD card can be accessed via the </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">/dev/mmcblk1</font>`<font style="color:rgb(15, 17, 21);"> device node. Its partitions will appear as</font>:
+After inserting the card, the kernel generates corresponding device nodes in `/dev` . The entire SD card can be accessed via the `/dev/mmcblk1` device node. Its partitions will appear as:
 
 ```plain
 /dev/mmcblk1p<Y>
 ```
 
-<font style="color:rgb(15, 17, 21);">where X is the partition number (1 to the maximum supported). Each partition can be formatted with any filesystem type and supports standard operations like mount/unmount.</font>
+where X is the partition number (1 to the maximum supported). Each partition can be formatted with any filesystem type and supports standard operations like mount/unmount.
 
-<font style="color:rgb(15, 17, 21);">The default mount path is:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">/run/media/mmcblk1p1</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);"></font>。
+The default mount path is:`/run/media/mmcblk1p1`。
 
-##### 1.2 <font style="color:rgb(51, 51, 51);">Actual Configuration</font>
+##### 1.2 Actual Configuration
 
-<font style="color:rgb(51, 51, 51);">Actual configuration parameters of OK3588-C development board SD Card:</font>
+Actual configuration parameters of OK3588-C development board SD Card:
 
-| <font style="color:rgb(51, 51, 51);">Parameter</font>| <font style="color:rgb(51, 51, 51);">Actual Configuration</font>|
-|----------|----------|
-| <font style="color:rgb(51, 51, 51);">Maximum Clock frequency</font>| **150 MHz**|
-| <font style="color:rgb(51, 51, 51);">Data Bit Width</font>| **4-bit**|
-| <font style="color:rgb(51, 51, 51);">Rate mode enabled</font>| <font style="color:rgb(51, 51, 51);">DS, HS,</font>**SDR104**|
-| <font style="color:rgb(51, 51, 51);">IO voltage</font>| <font style="color:rgb(51, 51, 51);">3.3V / 1.8V automatic switching</font>|
-| <font style="color:rgb(51, 51, 51);">Write protection</font>| <font style="color:rgb(51, 51, 51);">Disabled</font>|
-| <font style="color:rgb(51, 51, 51);">Hot plug detect</font>| **Supported**|
+| Parameter               | Actual Configuration            |
+| ----------------------- | ------------------------------- |
+| Maximum Clock frequency | **150 MHz**                     |
+| Data Bit Width          | **4-bit**                       |
+| Rate mode enabled       | DS, HS,**SDR104**               |
+| IO voltage              | 3.3V / 1.8V automatic switching |
+| Write protection        | Disabled                        |
+| Hot plug detect         | **Supported**                   |
 
 #### 2\. Device Tree
 
@@ -2504,9 +2504,9 @@ root@OK3588-C-buildroot:~# umount /run/media/mmcblk1p1
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD \_ arm/VDD \_ log, and configuring the wake-up source.</font>
+The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD \_ arm/VDD \_ log, and configuring the wake-up source.
 
-<font style="color:rgb(51, 51, 51);">Key positions are as follows:</font>
+Key positions are as follows:
 ![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775868325076-c4c81497-e153-499c-ad6c-3cf13ad3f54d.png)
 
 The driver files related to system standby are:
@@ -2548,51 +2548,51 @@ rockchip_suspend: rockchip-suspend {
 
 ##### 2.1 General Configuration
 
-<font style="color:rgb(51, 51, 51);">The following</font>`rockchip,sleep-mode-config`<font style="color:rgb(51, 51, 51);">can be added:</font>
+The following`rockchip,sleep-mode-config`can be added:
 
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_ARMOFF</font>| <font style="color:rgb(51, 51, 51);">Power off vdd\_arm, requires hardware circuit design support.</font>|
-|----------|----------|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_ARMOFF\_DDRPD</font>| <font style="color:rgb(51, 51, 51);">Power off vdd\_arm and vdd\_log, requires hardware circuit design support.</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_ARMOFF\_LOGOFF</font>| <font style="color:rgb(51, 51, 51);">Power off vdd\_arm and vdd\_log, requires hardware circuit design support.</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_ARMOFF\_PMUOFF</font>| <font style="color:rgb(51, 51, 51);">Power off vdd\_arm and vdd\_log, and power off the PMU1 power domain, requires hardware circuit design support.</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_PMU\_PMUALIVE\_32K</font>| <font style="color:rgb(51, 51, 51);">Use the 32K clock source as the system clock during standby.</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_PMU\_DIS\_OSC</font>| <font style="color:rgb(51, 51, 51);">Turn off the 24M crystal oscillator; can be enabled in the lowest power mode, requires use in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K.</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SLP\_32K\_EXT</font>| <font style="color:rgb(51, 51, 51);">Select whether to use an external 32K clock source as the 32K clock source during sleep. If this option is not configured, the internal 32K clock source is used by default. This setting must be used in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K.</font>|
+| RKPM\_SLP\_ARMOFF             | Power off vdd\_arm, requires hardware circuit design support. |
+| ----------------------------- | ------------------------------------------------------------ |
+| RKPM\_SLP\_ARMOFF\_DDRPD      | Power off vdd\_arm and vdd\_log, requires hardware circuit design support. |
+| RKPM\_SLP\_ARMOFF\_LOGOFF     | Power off vdd\_arm and vdd\_log, requires hardware circuit design support. |
+| RKPM\_SLP\_ARMOFF\_PMUOFF     | Power off vdd\_arm and vdd\_log, and power off the PMU1 power domain, requires hardware circuit design support. |
+| RKPM\_SLP\_PMU\_PMUALIVE\_32K | Use the 32K clock source as the system clock during standby. |
+| RKPM\_SLP\_PMU\_DIS\_OSC      | Turn off the 24M crystal oscillator; can be enabled in the lowest power mode, requires use in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K. |
+| RKPM\_SLP\_32K\_EXT           | Select whether to use an external 32K clock source as the 32K clock source during sleep. If this option is not configured, the internal 32K clock source is used by default. This setting must be used in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K. |
 
-<font style="color:rgb(51, 51, 51);">The relevant configurations must be set based on the specific product wake-up source requirements. For example, if USB wake-up is required, the USB power and clock cannot be turned off during standby. Therefore, options such as RKPM\_SLP\_ARMOFF\_LOGOFF, RKPM\_SLP\_PMU\_DIS\_OSC, and RKPM\_SLP\_PMU\_PMUALIVE\_32K should not be configured.</font>
+The relevant configurations must be set based on the specific product wake-up source requirements. For example, if USB wake-up is required, the USB power and clock cannot be turned off during standby. Therefore, options such as RKPM\_SLP\_ARMOFF\_LOGOFF, RKPM\_SLP\_PMU\_DIS\_OSC, and RKPM\_SLP\_PMU\_PMUALIVE\_32K should not be configured.
 
-##### <font style="color:rgb(0,0,0);">2.2 Wake-up Configuration</font>
+##### <font style="color:rgb(0,0,0);">2.2 Wake-up Configuration
 
-`<font style="color:rgb(0,0,0);">rockchip,wakeup-config</font>`<font style="color:rgb(51, 51, 51);">The following configurations can be added:</font>
+`<font style="color:rgb(0,0,0);">rockchip,wakeup-config`The following configurations can be added:
 
-| <font style="color:rgb(51, 51, 51);">RKPM\_GPIO\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">GPIO0 WAKE UP</font>|
-|----------|----------|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SDMMC\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">SDMMC WAKE UP</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SDIO\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">SDIO WAKE UP</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_USB\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">USBDEV WAKE UP</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_UART0\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">UART0 WAKE UP</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_VAD\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">VAD WAKE UP</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_TIMER\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">RKTIMER WAKE UP</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_SYSINT\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">Wake up with all interrupts (not managed by the GIC), not recommended</font>|
-| <font style="color:rgb(51, 51, 51);">RKPM\_TIME\_OUT\_WKUP\_EN</font>| <font style="color:rgb(51, 51, 51);">PMU internal timer wake-up (default 1s) for test and debug.</font>|
+| RKPM\_GPIO\_WKUP\_EN      | GPIO0 WAKE UP                                                |
+| ------------------------- | ------------------------------------------------------------ |
+| RKPM\_SDMMC\_WKUP\_EN     | SDMMC WAKE UP                                                |
+| RKPM\_SDIO\_WKUP\_EN      | SDIO WAKE UP                                                 |
+| RKPM\_USB\_WKUP\_EN       | USBDEV WAKE UP                                               |
+| RKPM\_UART0\_WKUP\_EN     | UART0 WAKE UP                                                |
+| RKPM\_VAD\_WKUP\_EN       | VAD WAKE UP                                                  |
+| RKPM\_TIMER\_WKUP\_EN     | RKTIMER WAKE UP                                              |
+| RKPM\_SYSINT\_WKUP\_EN    | Wake up with all interrupts (not managed by the GIC), not recommended |
+| RKPM\_TIME\_OUT\_WKUP\_EN | PMU internal timer wake-up (default 1s) for test and debug.  |
 
 **⚠️Note:**
 
-**<font style="color:rgb(51, 51, 51);">RKPM\_GPIO\_WKUP\_EN (Preferred):**
+**RKPM\_GPIO\_WKUP\_EN (Preferred):**
 
-**Among GPIO groups 0-4, only pins in the GPIO0 group are supported as wake-up sources in this mode. The interrupt signals from pins on GPIO0 are sent directly to the PMU state machine, bypassing the GIC. In hardware design, it is recommended that to place as many required wake-up sources as possible on the pins of this GPIO0 group.</font>**
+**Among GPIO groups 0-4, only pins in the GPIO0 group are supported as wake-up sources in this mode. The interrupt signals from pins on GPIO0 are sent directly to the PMU state machine, bypassing the GIC. In hardware design, it is recommended that to place as many required wake-up sources as possible on the pins of this GPIO0 group.**
 
-**<font style="color:rgb(51, 51, 51);">RKPM\_CPU0\_WKUP\_EN (Alternative):**
+**RKPM\_CPU0\_WKUP\_EN (Alternative):**
 
-**It supports all wake-capable interrupts that are registered to the GIC using enable\_irq\_wake() during the kernel phase. The number of applicable wake-up interrupt sources is greater than that of RKPM\_GPIO\_WKUP\_EN. However, this method essentially delegates the management of wake-up sources to various kernel modules, which may lead to the system being unexpectedly awakened by undesired interrupts during standby.</font>**
+**It supports all wake-capable interrupts that are registered to the GIC using enable\_irq\_wake() during the kernel phase. The number of applicable wake-up interrupt sources is greater than that of RKPM\_GPIO\_WKUP\_EN. However, this method essentially delegates the management of wake-up sources to various kernel modules, which may lead to the system being unexpectedly awakened by undesired interrupts during standby.**
 
-**<font style="color:rgb(51, 51, 51);">RKPM\_TIMEOUT\_WAKEUP\_EN:**
+**RKPM\_TIMEOUT\_WAKEUP\_EN:**
 
-**This mode uses the internal timer of the PMU for wake-up. It generates an interrupt after a default timeout of 1 second and is generally used only during the development phase for testing sleep/wake functionality.</font>**
+**This mode uses the internal timer of the PMU for wake-up. It generates an interrupt after a default timeout of 1 second and is generally used only during the development phase for testing sleep/wake functionality.**
 
-##### <font style="color:rgb(0,0,0);">2.3 IO Retention Configuration</font>
+##### <font style="color:rgb(0,0,0);">2.3 IO Retention Configuration
 
-<font style="color:rgb(0,0,0);">In sleep scenarios where vdd\_logic is powered off, if you still wish to maintain the level of a specific IO, this attribute can be configured. Configuration:</font>
+<font style="color:rgb(0,0,0);">In sleep scenarios where vdd\_logic is powered off, if you still wish to maintain the level of a specific IO, this attribute can be configured. Configuration:
 
 ```c
 rockchip,sleep-io-ret-config = < (0
@@ -2602,7 +2602,7 @@ rockchip,sleep-io-ret-config = < (0
 >;
 ```
 
-<font style="color:rgb(0,0,0);">Configuration source:</font>
+<font style="color:rgb(0,0,0);">Configuration source:
 
 ```c
 // Support the configuration of the following io domain
@@ -2620,9 +2620,9 @@ rockchip,sleep-io-ret-config = < (0
 
 ##### **2.3 Enabling the Node**
 
-`<font style="color:rgb(15, 17, 21);">rockchip_suspend</font>`<font style="color:rgb(15, 17, 21);">The node is disabled by default. Please enable it in the corresponding Device Tree.</font>
+`rockchip_suspend`The node is disabled by default. Please enable it in the corresponding Device Tree.
 
-<font style="color:rgb(15, 17, 21);">The system standby Device Tree node for OK3588-C / 3588-C2 is located at:</font>`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
+The system standby Device Tree node for OK3588-C / 3588-C2 is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 ```c
 &rockchip_suspend {
@@ -2631,11 +2631,11 @@ rockchip,sleep-io-ret-config = < (0
 };
 ```
 
-<font style="color:rgb(15, 17, 21);">The system standby Device Tree node for OK3588S2-C is located at:</font>`<font style="color:rgb(51, 51, 51);">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</font>`<font style="color:rgb(51, 51, 51);">.</font>
+The system standby Device Tree node for OK3588S2-C is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
 #### 3\. Application
 
-<font style="color:rgb(51, 51, 51);">Short press PWRON, you can see:</font>
+Short press PWRON, you can see:
 
 ```c
 INFO:    BL31: v2.3():v2.3-942-g98eaeb2f3:derrick.huang, fwver: v1.53
@@ -2768,27 +2768,27 @@ For information on other system standby and wake-up methods, please refer to `OK
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">OK3588-C features two Type-C interfaces and supports DP display. Type-C0 supports automatic recognition of HOST/DEVICE mode.
+OK3588-C features two Type-C interfaces and supports DP display. Type-C0 supports automatic recognition of HOST/DEVICE mode.
 
 Type-C1 supports HOST mode only. In Device mode, it can be used for flashing firmware, ADB file transfer, and debugging.
 
-In Host mode, you can connect standard USB devices.</font>
+In Host mode, you can connect standard USB devices.
 
-<font style="color:rgb(51, 51, 51);">The Type-C interfaces are located on the board as indicated in the diagram below:</font>
+The Type-C interfaces are located on the board as indicated in the diagram below:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776415133399-9ff1972f-771f-41c0-ba37-871d78d26671.png)
 
-<font style="color:rgb(51, 51, 51);">OK3588-C features two Type-C interfaces and supports DP display. Type-C1 only supports HOST mode.</font>
+OK3588-C features two Type-C interfaces and supports DP display. Type-C1 only supports HOST mode.
 
-| <font style="color:rgb(51, 51, 51);">Comparison Item</font>  | <font style="color:rgb(51, 51, 51);">Type-C0</font>          | <font style="color:rgb(51, 51, 51);">Type-C1</font>          |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| USB maximum rate                                             | <font style="color:rgb(51, 51, 51);">USB 3.1 Gen1（5Gbps）</font> | <font style="color:rgb(51, 51, 51);">USB 3.1 Gen1（5Gbps）</font> |
-| <font style="color:rgb(51, 51, 51);">OTG supported</font>    | ✅<font style="color:rgb(51, 51, 51);"> Supports (Host/Device automatic switching)</font> | ❌<font style="color:rgb(51, 51, 51);"> Only Host mode</font> |
-| <font style="color:rgb(51, 51, 51);">Device mode（ADB/flashing）</font> | ✅<font style="color:rgb(51, 51, 51);"> Yes</font>            | ❌<font style="color:rgb(51, 51, 51);"> No                    |
-| <font style="color:rgb(51, 51, 51);">Host 模式（U 盘/键鼠）</font> | ✅<font style="color:rgb(51, 51, 51);"> Yes</font>            | ✅<font style="color:rgb(51, 51, 51);"> Yes</font>            |
-| <font style="color:rgb(51, 51, 51);">DP Alt Mode 视频输出</font> | ✅<font style="color:rgb(51, 51, 51);"> <font style="color:rgb(51, 51, 51);"> Support（up to 4K@60Hz）</font></font> | ✅<font style="color:rgb(51, 51, 51);"> Support（up to 4K@60Hz）</font> |
-| <font style="color:rgb(51, 51, 51);">Type-C PD protocol</font> | ✅<font style="color:rgb(51, 51, 51);"> Support（require FUSB302）</font> | ✅<font style="color:rgb(51, 51, 51);"> Support（require FUSB302）</font></font> |
-| <font style="color:rgb(51, 51, 51);"><font style="color:rgb(51, 51, 51);">Plug Orientation Detection</font></font> | ✅<font style="color:rgb(51, 51, 51);"> Support (via CC detection)</font></font> | ✅<font style="color:rgb(51, 51, 51);"> <font style="color:rgb(51, 51, 51);"> Support (via CC detection)</font></font> |
-| <font style="color:rgb(51, 51, 51);">USB Flashing</font>     | ✅<font style="color:rgb(51, 51, 51);"> Support（default flashing port）</font></font> | ❌<font style="color:rgb(51, 51, 51);"> No</font>             |
+| Comparison Item             | Type-C0                                      | Type-C1                       |
+| --------------------------- | -------------------------------------------- | ----------------------------- |
+| USB maximum rate            | USB 3.1 Gen1（5Gbps）                        | USB 3.1 Gen1（5Gbps）         |
+| OTG supported               | ✅ Supports (Host/Device automatic switching) | ❌ Only Host mode              |
+| Device mode（ADB/flashing） | ✅ Yes                                        | ❌ No                          |
+| Host 模式（U 盘/键鼠）      | ✅ Yes                                        | ✅ Yes                         |
+| DP Alt Mode 视频输出        | ✅  Support（up to 4K@60Hz）                  | ✅ Support（up to 4K@60Hz）    |
+| Type-C PD protocol          | ✅ Support（require FUSB302）                 | ✅ Support（require FUSB302）  |
+| Plug Orientation Detection  | ✅ Support (via CC detection)                 | ✅  Support (via CC detection) |
+| USB Flashing                | ✅ Support（default flashing port）           | ❌ No                          |
 
 **⚠️Note: Since the RK3588S2 chip itself reduces the number of Type-C controllers, the OK3588S2-C board only has one Type-C interface (TypeC0). Port P23 is unavailable.**
 
@@ -2943,7 +2943,7 @@ Location of OK3588-C device tree nodes`arch/arm64/boot/dts/rockchip/OK3588S2-C-c
 
 This mode can be used for firmware flashing, ADB file transfer, and debugging. Host mode allows for connecting standard USB peripherals.
 
-Device Mode<font style="color:#000000;">, when in Device mode, connect to a computer via a data cable. You will see “Android ADB Interface” in the computer’s Device Manager.</font>
+Device Mode<font style="color:#000000;">, when in Device mode, connect to a computer via a data cable. You will see “Android ADB Interface” in the computer’s Device Manager.
 ![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718954755736-a5acc21c-f6b2-4915-9f89-0c5a95090beb.png)
 
 ##### 3.2 Host mode
@@ -2968,7 +2968,7 @@ root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=5
 524288000 bytes (524 MB, 500 MiB) copied, 28.1033 s, 18.7 MB/s
 ```
 
-3\. <font style="color:rgb(51, 51, 51);">Read Test: To ensure data accuracy, please restart the development board before retesting the read speed.</font>
+3\. Read Test: To ensure data accuracy, please restart the development board before retesting the read speed.
 
 ```c
 root@OK3588-C-buildroot:~# dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
@@ -2993,7 +2993,7 @@ There are UART interfaces: UART2, UART4, UART6, and UART9. They are defined as f
 UART4 (P11 pins 7 and 10) and 485 are located on the board as follows:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776412986017-f3ea5e72-7023-4dc1-94ca-699df31678d9.png)
 
-<font style="color:rgb(15, 17, 21);">Location of driver source code in the kernel:</font>`<font style="color:rgb(51, 51, 51);">drivers/tty/serial/8250/8250_dw.c</font>`<font style="color:rgb(51, 51, 51);">.</font>
+Location of driver source code in the kernel:`drivers/tty/serial/8250/8250_dw.c`.
 
 #### 2\. Device Tree
 
@@ -3035,12 +3035,12 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
 ##### 3.1 Test Method
 
-<font style="color:rgb(51, 51, 51);">For this test, UART4 (ttyS4) is used, and the serial port functionality is verified through a loopback method. According to the development board schematic, short the TX and RX pins of UART4, which correspond to PIN7 and PIN10, respectively.
+For this test, UART4 (ttyS4) is used, and the serial port functionality is verified through a loopback method. According to the development board schematic, short the TX and RX pins of UART4, which correspond to PIN7 and PIN10, respectively.
 
-</font>
+
 ![](https://cdn.nlark.com/yuque/0/2024/png/45535139/1718954754043-49789947-2230-467b-94e8-811528fac838.png)
 
-<font style="color:rgb(51, 51, 51);">After short connection</font><font style="color:rgb(51, 51, 51);">, launch the test program.</font>
+After short connection, launch the test program.
 
 ```c
 root@OK3588-C-buildroot:~# fltest_uarttest -d /dev/ttyS4
@@ -3055,11 +3055,11 @@ forlinx_uart_test.1234567890...
 
 ##### 3.2 Application Programming
 
-<font style="color:rgb(51, 51, 51);">In the OK3588 system, the device node for a UART is </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">/dev/ttySx</font>`<font style="color:rgb(51, 51, 51);">(where x is the serial port number, e.g.,  </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">/dev/ttyS4</font>`<font style="color:rgb(51, 51, 51);">). Applications need to include the header file </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);"><termios.h></font>`<font style="color:rgb(51, 51, 51);">, which defines the structures and functions related to serial port configuration.</font>
+In the OK3588 system, the device node for a UART is `/dev/ttySx`(where x is the serial port number, e.g.,  `/dev/ttyS4`). Applications need to include the header file `<termios.h>`, which defines the structures and functions related to serial port configuration.
 
-###### <font style="color:rgb(51, 51, 51);">3.2.1 Opening the Serial Port</font>
+###### 3.2.1 Opening the Serial Port
 
-<font style="color:rgb(51, 51, 51);">The serial port device is opened using </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">open</font>`function to obtain a file descriptor:</font>
+The serial port device is opened using `open`function to obtain a file descriptor:
 
 ```plain
 int fd;
@@ -3070,16 +3070,16 @@ if (fd == -1) {
 }
 ```
 
-<font style="color:rgb(51, 51, 51);">**Parameter Description:**</font>
+**Parameter Description:**
 
-| **<font style="color:rgb(51, 51, 51);">Flag</font>**| **<font style="color:rgb(51, 51, 51);">Description</font>**|
-|:----------|:----------|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">O_RDWR</font>`| <font style="color:rgb(51, 51, 51);">Opens the port for reading and writing.</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">O_NOCTTY</font>`| <font style="color:rgb(51, 51, 51);">Prevents the port from becoming the controlling terminal for the process.</font>|
+| **Flag**   | **Description**                                              |
+| :--------- | :----------------------------------------------------------- |
+| `O_RDWR`   | Opens the port for reading and writing.                      |
+| `O_NOCTTY` | Prevents the port from becoming the controlling terminal for the process. |
 
-###### <font style="color:rgb(51, 51, 51);">3.2.2 Configuring Serial Port Parameters</font>
+###### 3.2.2 Configuring Serial Port Parameters
 
-<font style="color:rgb(51, 51, 51);">Use the</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">struct termios</font>`<font style="color:rgb(51, 51, 51);">structure to configure the baud rate, data bit, stop bit, check bit and other parameters: </font>
+Use the`struct termios`structure to configure the baud rate, data bit, stop bit, check bit and other parameters: 
 
 ```plain
 struct termios options;
@@ -3121,24 +3121,24 @@ options.c_cc[VTIME] = 10;
 tcsetattr(fd, TCSANOW, &options);
 ```
 
-<font style="color:rgb(51, 51, 51);">Common Baud Rate Macro Definitions:</font>
+Common Baud Rate Macro Definitions:
 
-| Macro                                                        | **<font style="color:rgb(51, 51, 51);">Baud Rate</font>** |
-| :----------------------------------------------------------- | :-------------------------------------------------------- |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B9600</font>` | <font style="color:rgb(51, 51, 51);">9600</font>          |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B19200</font>` | <font style="color:rgb(51, 51, 51);">19200</font>         |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B38400</font>` | <font style="color:rgb(51, 51, 51);">38400</font>         |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B57600</font>` | <font style="color:rgb(51, 51, 51);">57600</font>         |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B115200</font>` | <font style="color:rgb(51, 51, 51);">115200</font>        |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B460800</font>` | <font style="color:rgb(51, 51, 51);">460800</font>        |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B921600</font>` | <font style="color:rgb(51, 51, 51);">921600</font>        |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B1500000</font>` | <font style="color:rgb(51, 51, 51);">1500000</font>       |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B3000000</font>` | <font style="color:rgb(51, 51, 51);">3000000</font>       |
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">B4000000</font>` | <font style="color:rgb(51, 51, 51);">4000000</font>       |
+| Macro      | **Baud Rate** |
+| :--------- | :------------ |
+| `B9600`    | 9600          |
+| `B19200`   | 19200         |
+| `B38400`   | 38400         |
+| `B57600`   | 57600         |
+| `B115200`  | 115200        |
+| `B460800`  | 460800        |
+| `B921600`  | 921600        |
+| `B1500000` | 1500000       |
+| `B3000000` | 3000000       |
+| `B4000000` | 4000000       |
 
-###### <font style="color:rgb(51, 51, 51);">3.2.3 Sending Data</font>
+###### 3.2.3 Sending Data
 
-<font style="color:rgb(51, 51, 51);">Use </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">write</font>`<font style="color:rgb(51, 51, 51);"> function to send data to the serial port:</font>
+Use `write` function to send data to the serial port:
 
 ```plain
 	char test[100]="forlinx_uart_test.1234567890...";
@@ -3146,9 +3146,9 @@ tcsetattr(fd, TCSANOW, &options);
 	write(fd, test, strlen(test) + 1);
 ```
 
-###### <font style="color:rgb(51, 51, 51);">3.2.4 Receiving Data</font>
+###### 3.2.4 Receiving Data
 
-<font style="color:rgb(51, 51, 51);">Use the </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">read</font>`<font style="color:rgb(51, 51, 51);"> function to read data from the serial port:</font>
+Use the `read` function to read data from the serial port:
 
 ```plain
 	while(1)
@@ -3166,9 +3166,9 @@ tcsetattr(fd, TCSANOW, &options);
 	}
 ```
 
-###### <font style="color:rgb(51, 51, 51);">3.2.5 Closing the Serial Port</font>
+###### 3.2.5 Closing the Serial Port
 
-<font style="color:rgb(51, 51, 51);">Close the file descriptor after use:</font>
+Close the file descriptor after use:
 
 ```c
 close(fd);
@@ -3178,11 +3178,11 @@ close(fd);
 
 #### 1\. Introduction
 
-<font style="color:rgb(15, 17, 21);">USB (Universal Serial Bus) is a standardized interface used for connecting computers to various peripheral devices. Its design goals are to simplify device connections, provide data transfer and power supply capabilities, and support hot-plugging (plug-and-play).</font>
+USB (Universal Serial Bus) is a standardized interface used for connecting computers to various peripheral devices. Its design goals are to simplify device connections, provide data transfer and power supply capabilities, and support hot-plugging (plug-and-play).
 
-<font style="color:rgb(51, 51, 51);">OK3588 supports 1 x USB 2.0 interface. Please connect USB devices such as mice, keyboards, and flash drives to any onboard USB HOST port, with full hot-plug support for these devices.</font>
+OK3588 supports 1 x USB 2.0 interface. Please connect USB devices such as mice, keyboards, and flash drives to any onboard USB HOST port, with full hot-plug support for these devices.
 
-<font style="color:rgb(51, 51, 51);">Location of the USB 2.0 interface:</font>
+Location of the USB 2.0 interface:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583751844-8195f78a-313f-4b4e-99bc-ccd08df2cd42.png)
 
 #### 2\. Device Tree
@@ -3269,7 +3269,7 @@ OK-linux-source$ grep "LOGITECH" kernel/drivers/hid/hid-ids.h
 
 #### 4\. Application
 
-##### 4.1 USB Drive Test</font>
+##### 4.1 USB Drive Test
 
 After the development board boots up, connect the USB flash drive to the USB host interface of the development board.   
 Check the mount directory:
@@ -3279,9 +3279,9 @@ root@OK3588-C-buildroot:~# mount | grep "sda1"
 /dev/sda1 on /run/media/sda1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro)
 ```
 
-<font style="color:rgb(51, 51, 51);">You can see that /run/media/sda1 is the mount path for the USB storage device.</font>
+You can see that /run/media/sda1 is the mount path for the USB storage device.
 
-<font style="color:rgb(51, 51, 51);">Write test (write speed is limited by the specific storage device):</font>
+Write test (write speed is limited by the specific storage device):
 
 ```c
 root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
@@ -3290,7 +3290,7 @@ root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=5
 524288000 bytes (524 MB, 500 MiB) copied, 28.1033 s, 18.7 MB/s
 ```
 
-<font style="color:rgb(51, 51, 51);">Read test (to ensure data accuracy, restart the development board before re-running the read speed test):</font>
+Read test (to ensure data accuracy, restart the development board before re-running the read speed test):
 
 ```c
 root@OK3588-C-buildroot:~# dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
@@ -3317,7 +3317,7 @@ root@OK3588-C-buildroot:~# dmesg | tail -10
 [17167.452821] hid-generic 0003:09DA:8736.0001: input,hidraw0: USB HID v1.10 Mouse [SIGMACHIP USB Mouse] on usb-fc840000.usb-1/input0
 ```
 
-<font style="color:rgb(51, 51, 51);">An arrow cursor will appear on the screen, indicating that the mouse is functioning properly.</font>
+An arrow cursor will appear on the screen, indicating that the mouse is functioning properly.
 
 ### Wifi\_Bluetooth
 
@@ -3325,9 +3325,9 @@ root@OK3588-C-buildroot:~# dmesg | tail -10
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">The OK3588 platform supports two types of Wi-Fi/Bluetooth combo modules: AW-XM458 and AW-CM276MA. </font><font style="color:rgb(15, 17, 21);">The Wi‑Fi interface uses PCIe.
+The OK3588 platform supports two types of Wi-Fi/Bluetooth combo modules: AW-XM458 and AW-CM276MA. The Wi‑Fi interface uses PCIe.
 
-The Bluetooth interface uses UART.</font>
+The Bluetooth interface uses UART.
 
 Locations:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776415581325-54693b05-ca54-4abf-a465-df47d3bd274a.png)
@@ -3353,23 +3353,23 @@ The device tree nodes for Wi‑Fi and Bluetooth on OK3588S2‑C are located at:`
 
 #### 3\. Application
 
-##### 3.1 WiFi STA <font style="color:rgb(15, 17, 21);">Mode</font>
+##### 3.1 WiFi STA Mode
 
-<font style="color:rgb(51, 51, 51);">Before using Wi‑Fi, configure it with the following steps:</font>
+Before using Wi‑Fi, configure it with the following steps:
 
-<font style="color:rgb(51, 51, 51);">1. Assume the Wi‑Fi hotspot SSID is ChinaNet‑Jvgv and the password is asdasd123.
+1. Assume the Wi‑Fi hotspot SSID is ChinaNet‑Jvgv and the password is asdasd123.
 
-Enter the following command in the development board terminal:</font>
+Enter the following command in the development board terminal:
 
-<font style="color:rgb(51, 51, 51);">Enter the following command in the development board terminal:</font>
+Enter the following command in the development board terminal:
 
 ```c
 root@OK3588-C-buildroot:~# fltest_wifi.sh -i mlan0 -s "ChinaNet-Jvgv" -p asdasd123
 ```
 
-<font style="color:rgb(51, 51, 51);">Parameters in the command:</font>
+Parameters in the command:
 
-2. <font style="color:rgb(15, 17, 21);">In the terminal, run the following command to check whether the network can be pinged:</font>
+2. In the terminal, run the following command to check whether the network can be pinged:
 
 ```c
 root@OK3588-C-buildroot:~# ping www.forlinx.net -c 3
@@ -3439,9 +3439,9 @@ The 5 GHz hotspot name and password can be viewed in the file:`/etc/hostapd-5g
 
 ##### 3.3 Bluetooth
 
-<font style="color:rgb(51, 51, 51);">This section demonstrates data transfer between a mobile phone and the development board via Bluetooth (Bluetooth 5.0 supported).</font>
+This section demonstrates data transfer between a mobile phone and the development board via Bluetooth (Bluetooth 5.0 supported).
 
-<font style="color:rgb(51, 51, 51);">1. Bluetooth configuration:</font>
+1. Bluetooth configuration:
 
 ```c
 root@OK3588-C-buildroot:~# bluetoothctl //Open the BlueZ Bluetooth tool
@@ -3463,11 +3463,11 @@ Agent is already registered
 Default agent request successful
 ```
 
-2\. <font style="color:rgb(51, 51, 51);">Passive pairing on the development board:</font>
+2\. Passive pairing on the development board:
 
-<font style="color:rgb(51, 51, 51);">Turn on Bluetooth search on the mobile phone; a device named</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">OK3588-buildroot</font>`<font style="color:rgb(51, 51, 51);">will appear. Select it to pair.</font>
+Turn on Bluetooth search on the mobile phone; a device named`OK3588-buildroot`will appear. Select it to pair.
 
-<font style="color:rgb(51, 51, 51);">Simultaneously, the following message will be printed on the development board; enter yes:</font>
+Simultaneously, the following message will be printed on the development board; enter yes:
 
 ```c
 [bluetooth]# default-agent
@@ -3487,7 +3487,7 @@ hci0 device_flags_changed: B0:46:92:74:81:84 (BR/EDR)
 [CHG] Device B0:46:92:74:81:84 Bonded: yes
 ```
 
-3\.<font style="color:rgb(51, 51, 51);">View and remove connected devices:</font>
+3\.View and remove connected devices:
 
 ```c
 [OPPO Reno5 K 5G]# devices
@@ -3510,22 +3510,22 @@ Device has been removed
 [bluetooth]#
 ```
 
-<font style="color:rgb(51, 51, 51);">4. Receiving files on the development board:</font>
+4. Receiving files on the development board:
 
-<font style="color:rgb(51, 51, 51);">After successful pairing, you can send a file from the mobile phone to the OK3588‑C development board via Bluetooth.</font>
+After successful pairing, you can send a file from the mobile phone to the OK3588‑C development board via Bluetooth.
 
-<font style="color:rgb(51, 51, 51);">The received files are saved in the
+The received files are saved in the
 
-</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">/tmp/</font>`<font style="color:rgb(51, 51, 51);"></font>.
+`/tmp/`.
 
 ```c
 root@OK3588-C-buildroot:~# ls /tmp/*.jpg
 /tmp/Screenshot_2025-10-25-09-45-57-51_76eaced432273cd65da1ec13409568ff.jpg
 ```
 
-<font style="color:rgb(51, 51, 51);">5. Sending files from the development board:</font>
+5. Sending files from the development board:
 
-<font style="color:rgb(51, 51, 51);">You can send a file from the OK3588‑C development board to a mobile phone. Test as follows:</font>
+You can send a file from the OK3588‑C development board to a mobile phone. Test as follows:
 
 ```c
 root@OK3588-C-buildroot:~# fltest_obexctl.sh
@@ -3548,7 +3548,7 @@ Transfer /org/bluez/obex/client/session1/transfer0
 [CHG] Transfer /org/bluez/obex/client/session1/transfer0 Transferred: 8024 (@8KB/s 41:48)
 ```
 
-**<font style="color:rgb(51, 51, 51);">⚠️Note: Some mobile phones require files to have an extension; otherwise, the Android system will reject them. Therefore, please try to use files with extensions for testing. Apple iPhones do not support sending/receiving data via Bluetooth.</font>**
+**⚠️Note: Some mobile phones require files to have an extension; otherwise, the Android system will reject them. Therefore, please try to use files with extensions for testing. Apple iPhones do not support sending/receiving data via Bluetooth.**
 
 ### Watchdog
 
@@ -3556,15 +3556,15 @@ Transfer /org/bluez/obex/client/session1/transfer0
 
 A watchdog is essentially a count‑down timer driven by a hardware clock. During normal system operation, the application must write a specific value (i.e., “kicking the dog”) to the watchdog’s dedicated register within a set timeout period (e.g., 1 second) to reset the counter to its initial value. If the program enters an infinite loop, crashes, or fails to kick the dog before the timeout, the counter decrements to 0, triggering a predefined action such as a system reset or a software exception alert. 
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);"> </font><font style="color:rgb(15, 17, 21);">The OK3588‑C development board integrates an on‑chip watchdog.
+<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);"> The OK3588‑C development board integrates an on‑chip watchdog.
 
-</font>
 
-<font style="color:rgb(15, 17, 21);">The watchdog driver source code is located in the kernel at:</font><font style="color:rgb(0,0,0);"> </font>`<font style="color:rgb(0,0,0);">kernel/drivers/watchdog/dw_wdt.c</font>`
+
+The watchdog driver source code is located in the kernel at:<font style="color:rgb(0,0,0);"> `<font style="color:rgb(0,0,0);">kernel/drivers/watchdog/dw_wdt.c`
 
 #### 2\. Device Tree
 
-<font style="color:rgb(15, 17, 21);">The watchdog device‑tree node is located at:</font>`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
+The watchdog device‑tree node is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
 ```c
 	wdt: watchdog@feaf0000 {
@@ -3593,27 +3593,27 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
 ##### 3.1 Test Method
 
-<font style="color:rgb(51, 51, 51);">This test provides two testing programs. The user should select one based on the actual scenario.</font>
+This test provides two testing programs. The user should select one based on the actual scenario.
 
-<font style="color:rgb(51, 51, 51);">With this</font>`<font style="color:rgb(51, 51, 51);">fltest_watchdog</font>`<font style="color:rgb(51, 51, 51);">, the command turns on the watchdog and performs a feed, so the system does not reboot.</font>
+With this`fltest_watchdog`, the command turns on the watchdog and performs a feed, so the system does not reboot.
 
 ```c
 root@OK3588-C-buildroot:~# fltest_watchdog
 Watchdog Ticking Away!
 ```
 
-<font style="color:rgb(51, 51, 51);">When using</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">ctrl+c</font>`<font style="color:rgb(51, 51, 51);">end the test, stop feeding the dog, the watchdog is in the open state, and the system resets for 10 seconds;</font>
+When using`ctrl+c`end the test, stop feeding the dog, the watchdog is in the open state, and the system resets for 10 seconds;
 
-<font style="color:rgb(51, 51, 51);">If you want to avoid a reset, enter the command to disable the watchdog within 10 seconds after closing the program.</font>
+If you want to avoid a reset, enter the command to disable the watchdog within 10 seconds after closing the program.
 
 ```c
 root@OK3588-C-buildroot:~# fltest_watchdog -d
 Watchdog card disabled.
 ```
 
-<font style="color:rgb(51, 51, 51);">Start watchdog, set reset time to 10 seconds, no feeding</font>
+Start watchdog, set reset time to 10 seconds, no feeding
 
-<font style="color:rgb(51, 51, 51);">Execute the command</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">flteset_watchdogrestart</font>`<font style="color:rgb(51, 51, 51);">, this command will open the watchdog but will not perform petting operations. The system will reboot after 10 seconds.</font>
+Execute the command`flteset_watchdogrestart`, this command will open the watchdog but will not perform petting operations. The system will reboot after 10 seconds.
 
 ```c
 root@OK3588-C-buildroot:~# fltest_watchdogrestart
@@ -3624,7 +3624,7 @@ The source code paths for the two test routines are:`OK-linux-source/app/forlinx
 
 ##### 3.2 Application Programming
 
-<font style="color:rgb(51, 51, 51);">The watchdog device node in OK3588 is</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">/dev/watchdog</font>`<font style="color:rgb(51, 51, 51);">. There should be header file \<linux/watchdog.h> in the header file. It defines the ioctl command macros for the watchdog. Each different command macro represents a different operation requested from the device, as shown below:</font>
+The watchdog device node in OK3588 is`/dev/watchdog`. There should be header file \<linux/watchdog.h> in the header file. It defines the ioctl command macros for the watchdog. Each different command macro represents a different operation requested from the device, as shown below:
 
 ```c
 #define	WDIOC_GETSUPPORT	_IOR(WATCHDOG_IOCTL_BASE, 0, struct watchdog_info)
@@ -3640,13 +3640,13 @@ The source code paths for the two test routines are:`OK-linux-source/app/forlinx
 #define	WDIOC_GETTIMELEFT	_IOR(WATCHDOG_IOCTL_BASE, 10, int)
 ```
 
-<font style="color:rgb(51, 51, 51);">Commonly used commands include: WDIOC\_SETOPTIONS, WDIOC\_KEEPALIVE, WDIOC\_SETTIMEOUT, and WDIOC\_GETTIMEOUT. Their descriptions are as follows:</font>
+Commonly used commands include: WDIOC\_SETOPTIONS, WDIOC\_KEEPALIVE, WDIOC\_SETTIMEOUT, and WDIOC\_GETTIMEOUT. Their descriptions are as follows:
 
-| <font style="color:rgb(51, 51, 51);">WDIOC\_SETOPTIONS</font>| Enable or disable the watchdog.|
+| WDIOC\_SETOPTIONS | Enable or disable the watchdog.|
 |----------|----------|
-| <font style="color:rgb(51, 51, 51);">WDIOC\_KEEPALIVE</font>| Perform the “petting” (keep-alive) operation.|
-| <font style="color:rgb(51, 51, 51);">WDIOC\_SETTIMEOUT</font>| Set the timeout period.|
-| <font style="color:rgb(51, 51, 51);">WDIOC\_GETTIMEOUT</font>| Get the current timeout period.|
+| WDIOC\_KEEPALIVE | Perform the “petting” (keep-alive) operation.|
+| WDIOC\_SETTIMEOUT | Set the timeout period.|
+| WDIOC\_GETTIMEOUT | Get the current timeout period.|
 
 ###### 3.2.1 Opening the Watchdog
 
@@ -3680,22 +3680,22 @@ ioctl(fd, WDIOC_KEEPALIVE, &dummy);
 
 Regarding the timeout mechanism: The timeout value set from user space is not directly passed to the hardware. The Watchdog driver internally maintains a table of 16 preset timeout values. The driver selects the closest value from this table as the actual timeout according to the following rules:
 
-| *<font style="color:rgb(64, 64, 64);">The timeout period of the request</font>** | **<font style="color:rgb(0, 0, 0);background-color:rgb(252, 252, 252);">Final timeout set by watchdog</font>** |
+| *<font style="color:rgb(64, 64, 64);">The timeout period of the request** | **<font style="color:rgb(0, 0, 0);background-color:rgb(252, 252, 252);">Final timeout set by watchdog** |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <font style="color:rgb(64, 64, 64);">timeout_request > 89</font> | <font style="color:rgb(64, 64, 64);">timeout_set = timeout_request</font> |
-| <font style="color:rgb(64, 64, 64);">44 < timeout_request <= 89</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 89</font> |
-| <font style="color:rgb(64, 64, 64);">22 < timeout_request <= 44</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 44</font> |
-| <font style="color:rgb(64, 64, 64);">11 < timeout_request <= 22</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 22</font> |
-| <font style="color:rgb(64, 64, 64);">5 < timeout_request <= 11</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 11</font> |
-| <font style="color:rgb(64, 64, 64);">2< timeout_request <= 5</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 5</font>  |
-| <font style="color:rgb(64, 64, 64);">timeout_request = 2</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 2</font>  |
-| <font style="color:rgb(64, 64, 64);">timeout_request = 1</font> | <font style="color:rgb(64, 64, 64);">timeout_set = 1</font>  |
+| <font style="color:rgb(64, 64, 64);">timeout_request > 89    | <font style="color:rgb(64, 64, 64);">timeout_set = timeout_request |
+| <font style="color:rgb(64, 64, 64);">44 < timeout_request <= 89 | <font style="color:rgb(64, 64, 64);">timeout_set = 89        |
+| <font style="color:rgb(64, 64, 64);">22 < timeout_request <= 44 | <font style="color:rgb(64, 64, 64);">timeout_set = 44        |
+| <font style="color:rgb(64, 64, 64);">11 < timeout_request <= 22 | <font style="color:rgb(64, 64, 64);">timeout_set = 22        |
+| <font style="color:rgb(64, 64, 64);">5 < timeout_request <= 11 | <font style="color:rgb(64, 64, 64);">timeout_set = 11        |
+| <font style="color:rgb(64, 64, 64);">2< timeout_request <= 5 | <font style="color:rgb(64, 64, 64);">timeout_set = 5         |
+| <font style="color:rgb(64, 64, 64);">timeout_request = 2     | <font style="color:rgb(64, 64, 64);">timeout_set = 2         |
+| <font style="color:rgb(64, 64, 64);">timeout_request = 1     | <font style="color:rgb(64, 64, 64);">timeout_set = 1         |
 
 ### Database
 
 #### SQLite3
 
-<font style="color:rgb(51, 51, 51);">SQLite3 is a lightweight, ACID-compliant relational database management system with low resource consumption. The OK3588-C development board uses version 3.44.2 of SQLite3. Using Method:</font>
+SQLite3 is a lightweight, ACID-compliant relational database management system with low resource consumption. The OK3588-C development board uses version 3.44.2 of SQLite3. Using Method:
 
 ```c
 root@OK3588-C-buildroot:~# sqlite3
@@ -3719,17 +3719,17 @@ sqlite> .quit			//Exit the database (or use the .exit command)
 
 #### Audio
 
-##### <font style="color:rgb(51, 51, 51);">1. Introduction</font>
+##### 1. Introduction
 
-<font style="color:rgb(51, 51, 51);">The OK3588-C development board is equipped with the NAU88C22YG audio codec chip, supporting both analog and digital audio output. The interface configuration is as follows:</font>
+The OK3588-C development board is equipped with the NAU88C22YG audio codec chip, supporting both analog and digital audio output. The interface configuration is as follows:
 
-| <font style="color:rgb(51, 51, 51);">Interface Type</font>| <font style="color:rgb(51, 51, 51);">Interface Specifications</font>| <font style="color:rgb(51, 51, 51);">No.</font>| <font style="color:rgb(51, 51, 51);">Description</font>|
-|----------|----------|----------|----------|
-| <font style="color:rgb(51, 51, 51);">Headphone Output</font>| <font style="color:rgb(51, 51, 51);">3.5mm Audio Jack</font>| <font style="color:rgb(51, 51, 51);">P37</font>| <font style="color:rgb(51, 51, 51);">Standard stereo headphone interface</font>|
-| <font style="color:rgb(51, 51, 51);">Speaker Output</font>| <font style="color:rgb(51, 51, 51);">XH2.0-2P White Connector</font>| <font style="color:rgb(51, 51, 51);">P25</font>| <font style="color:rgb(51, 51, 51);">Supports 8Ω speaker, maximum input power 1W</font>|
-| <font style="color:rgb(51, 51, 51);">Speaker Output</font>| <font style="color:rgb(51, 51, 51);">PH2.0-4P White Connector</font>| <font style="color:rgb(51, 51, 51);">P48</font>| <font style="color:rgb(51, 51, 51);">Supports 8Ω speaker, maximum input power 1W</font>|
-| <font style="color:rgb(51, 51, 51);">HDMI Audio</font>| <font style="color:rgb(51, 51, 51);">HDMI Interface Output</font>| <font style="color:rgb(51, 51, 51);">P30</font>| <font style="color:rgb(51, 51, 51);">Digital audio transmission via HDMI</font>|
-| <font style="color:rgb(51, 51, 51);">DP Audio</font>| <font style="color:rgb(51, 51, 51);">DisplayPort Interface Output</font>| <font style="color:rgb(51, 51, 51);">P22</font>| <font style="color:rgb(51, 51, 51);">Digital audio transmission via DP</font>|
+| Interface Type   | Interface Specifications     | No.  | Description                                 |
+| ---------------- | ---------------------------- | ---- | ------------------------------------------- |
+| Headphone Output | 3.5mm Audio Jack             | P37  | Standard stereo headphone interface         |
+| Speaker Output   | XH2.0-2P White Connector     | P25  | Supports 8Ω speaker, maximum input power 1W |
+| Speaker Output   | PH2.0-4P White Connector     | P48  | Supports 8Ω speaker, maximum input power 1W |
+| HDMI Audio       | HDMI Interface Output        | P30  | Digital audio transmission via HDMI         |
+| DP Audio         | DisplayPort Interface Output | P22  | Digital audio transmission via DP           |
 
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776416102123-e1661ef3-d5d0-475f-92b2-4f32c9328ae3.png)
@@ -3891,7 +3891,7 @@ card 2: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau882
 
 1\. Playback and recording via 8822 sound card:
 
-<font style="color:rgb(51, 51, 51);">Plug the headphones into the SPKOUT connector and play the audio with the following command:</font>
+Plug the headphones into the SPKOUT connector and play the audio with the following command:
 
 ```c
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:1,0"
@@ -3968,7 +3968,7 @@ root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosin
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">The OK3588 supports 5 x MIPI CSI camera interfaces, compatible with the OV13855 and OV5645 models. The corresponding relationships for each interface are as follows:</font>
+The OK3588 supports 5 x MIPI CSI camera interfaces, compatible with the OV13855 and OV5645 models. The corresponding relationships for each interface are as follows:
 
 | **Camera Interface** | **Supported MIPI Camera Models** |
 | -------------------- | -------------------------------- |
@@ -3978,12 +3978,12 @@ root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosin
 | CAM4                 | OV5645                           |
 | CAM5                 | OV5645                           |
 
-<font style="color:rgb(51, 51, 51);">The camera interfaces are located at the following positions on the board:</font>
+The camera interfaces are located at the following positions on the board:
 
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776581822909-043cb82d-a902-49d6-989c-66dcc7c73fda.png)
 
-**⚠️<font style="color:rgb(51, 51, 51);">Note: Due to a reduction in MIPI-CSI controllers in the RK3588S2 chip itself, the CAM1, CAM2, and CAM5 camera interfaces on the OK3588S2-C cannot be used.</font>**
+**⚠️Note: Due to a reduction in MIPI-CSI controllers in the RK3588S2 chip itself, the CAM1, CAM2, and CAM5 camera interfaces on the OK3588S2-C cannot be used.**
 
 #### 2\. Device Tree
 
@@ -4043,9 +4043,9 @@ The device tree file related to cameras for OK3588S2-C is:`arch/arm64/boot/dts/r
 
 ##### 3.1 UVC Camera Test
 
-<font style="color:rgb(51, 51, 51);">Here, the Logitech C270 is used for testing. Plug the USB camera into the development board, and the UVC driver will be automatically installed.</font>
+Here, the Logitech C270 is used for testing. Plug the USB camera into the development board, and the UVC driver will be automatically installed.
 
-##### <font style="color:rgb(51, 51, 51);">3.1.1 </font>**<font style="color:rgb(51, 51, 51);">Camera Detection and Format Support Query</font>**
+##### 3.1.1 **Camera Detection and Format Support Query**
 
 Camera detection:
 
@@ -4057,7 +4057,7 @@ UVC Camera (046d:0825) (usb-fc800000.usb-1):
         /dev/media7
 ```
 
-<font style="color:rgb(51, 51, 51);">Format support query:</font>
+Format support query:
 
 ```c
 root@OK3588-C-buildroot:~# v4l2-ctl --list-formats-ext -d /dev/video74
@@ -4357,7 +4357,7 @@ This will generate pic.jpg in the current directory.
 
 #### 3.2 OV13855 Test
 
-<font style="color:rgb(51, 51, 51);">For raw sensors like OV13855, each sensor corresponds to 5 device nodes (e.g., /dev/videoX):</font>
+For raw sensors like OV13855, each sensor corresponds to 5 device nodes (e.g., /dev/videoX):
 
 ```c
 root@OK3588-C-buildroot:~# grep "" /sys/class/video4linux/video*/name
@@ -4389,21 +4389,21 @@ root@OK3588-C-buildroot:~# grep "" /sys/class/video4linux/video*/name
 
 ```
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Mainpath:</font>`<font style="color:rgb(51, 51, 51);">An output node of the Rockchip ISP, capable of outputting full-resolution images, typically used for capturing photos or raw images.</font>
+`Mainpath:`An output node of the Rockchip ISP, capable of outputting full-resolution images, typically used for capturing photos or raw images.
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Self Path:</font>`<font style="color:rgb(51, 51, 51);">An output node of the Rockchip ISP, limited to a maximum of 1080p resolution, typically used for preview.</font>
+`Self Path:`An output node of the Rockchip ISP, limited to a maximum of 1080p resolution, typically used for preview.
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Statistics:</font>`<font style="color:rgb(51, 51, 51);"> 3A statistics.</font>
+`Statistics:` 3A statistics.
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Input-params</font>`<font style="color:rgb(51, 51, 51);">: 3A parameter settings.</font>
+`Input-params`: 3A parameter settings.
 
-<font style="color:rgb(51, 51, 51);">The testing method for OV13855 is basically the same as for the UVC camera. This section uses the CAM1 interface as an example:</font>
+The testing method for OV13855 is basically the same as for the UVC camera. This section uses the CAM1 interface as an example:
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">CAM1：</font>`<font style="color:rgb(51, 51, 51);">platform:rkisp0-vir0</font>
+`CAM1：`platform:rkisp0-vir0
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">CAM2：</font>`<font style="color:rgb(51, 51, 51);">platform:rkisp0-vir1</font>
+`CAM2：`platform:rkisp0-vir1
 
-##### <font style="color:rgb(51, 51, 51);">3.2.1 Camera Detection and Format Support Query</font>
+##### 3.2.1 Camera Detection and Format Support Query
 
 ```c
 root@OK3588-C-buildroot:~# v4l2-ctl --list-devices
@@ -4511,17 +4511,17 @@ Freeing pipeline ...
 
 #### 3.3 OV5645 Test
 
-<font style="color:rgb(51, 51, 51);">Node corresponding to the camera</font>
+Node corresponding to the camera
 
-<font style="color:rgb(51, 51, 51);">Camera corresponding nodes</font>
+Camera corresponding nodes
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">CAM3 ：</font>`<font style="color:rgb(51, 51, 51);">rkcif-mipi-lvds2</font>
+`CAM3 ：`rkcif-mipi-lvds2
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">CAM4 ：</font>`<font style="color:rgb(51, 51, 51);">rkcif-mipi-lvds4</font>
+`CAM4 ：`rkcif-mipi-lvds4
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">CAM5 ：</font>`<font style="color:rgb(51, 51, 51);">rkcif-mipi-lvds5</font>
+`CAM5 ：`rkcif-mipi-lvds5
 
-<font style="color:rgb(51, 51, 51);">Take testing CAM3 as an example:</font>
+Take testing CAM3 as an example:
 
 ##### 3.3.1 Camera Identification and Detection
 
@@ -4636,7 +4636,7 @@ Redistribute latency...
 
 ##### 3.4.1 HDMIIN Supported Format Queries
 
-<font style="color:rgb(41, 41, 41);">Camera Recognition Detection</font>
+<font style="color:rgb(41, 41, 41);">Camera Recognition Detection
 
 ```c
 root@ok3588-buildroot:/# v4l2-ctl --list-devices    // It can be seen that /dev/video73 is the HDMI IN node.
@@ -4657,7 +4657,7 @@ rkcif-mipi-lvds (platform:rkcif):
         /dev/media4
 ```
 
-<font style="color:rgb(41, 41, 41);">Format Support Queries</font>
+<font style="color:rgb(41, 41, 41);">Format Support Queries
 
 ```plain
 root@ok3588-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video73//View HDMI RX Supported Formats
@@ -4672,7 +4672,7 @@ ioctl: VIDIOC_ENUM_FMT
 
 ##### 3.4.2 Camera Capture Format Queries and Modifications
 
-<font style="color:rgb(41, 41, 41);">Camera Capture Format Queries</font>
+<font style="color:rgb(41, 41, 41);">Camera Capture Format Queries
 
 ```plain
 root@ok3588-buildroot:/# v4l2-ctl -V -d /dev/video73
@@ -4705,79 +4705,79 @@ Redistribute latency...
 0:00:22.1 / 99:99:99.
 ```
 
-**<font style="color:rgb(41, 41, 41);">⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.</font>**
+**<font style="color:rgb(41, 41, 41);">⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.**
 
 ### Display
 
 #### 1\. Introduction
 
-<font style="color:rgb(51, 51, 51);">The OK3588-C is based on the VOP2 (Video Output Processor 2.0) unified display architecture of the RK3588, supporting various display interfaces such as HDMI, eDP, MIPI DSI, and DP. It can drive up to four independent display outputs simultaneously.</font>
+The OK3588-C is based on the VOP2 (Video Output Processor 2.0) unified display architecture of the RK3588, supporting various display interfaces such as HDMI, eDP, MIPI DSI, and DP. It can drive up to four independent display outputs simultaneously.
 
-##### <font style="color:rgb(51, 51, 51);">1.1 Overview of Display Interfaces</font>
+##### 1.1 Overview of Display Interfaces
 
-<font style="color:rgb(51, 51, 51);">The RK3588 VOP2 internally contains 4 Video Ports (VPs), each capable of independently driving one display output:</font>
+The RK3588 VOP2 internally contains 4 Video Ports (VPs), each capable of independently driving one display output:
 
-| **<font style="color:rgb(51, 51, 51);">Video Port</font>** | **<font style="color:rgb(51, 51, 51);">Maximum Resolution  | **<font style="color:rgb(51, 51, 51);">**<font style="color:rgb(51, 51, 51);">Connectable Display</font>** |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :----------------------------------------------------------- |
-| <font style="color:rgb(51, 51, 51);">VP0</font>            | <font style="color:rgb(51, 51, 51);">7680×4320@60Hz</font> | <font style="color:rgb(51, 51, 51);">HDMI0, eDP0, DP0, DP1, MIPI DSI0, MIPI DSI1</font> |
-| <font style="color:rgb(51, 51, 51);">VP1</font>            | <font style="color:rgb(51, 51, 51);">4096×4320@60Hz</font> | <font style="color:rgb(51, 51, 51);">HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1</font> |
-| <font style="color:rgb(51, 51, 51);">VP2</font>            | <font style="color:rgb(51, 51, 51);">4096×2160@60Hz</font> | <font style="color:rgb(51, 51, 51);">HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1, RGB</font> |
-| <font style="color:rgb(51, 51, 51);">VP3</font>            | <font style="color:rgb(51, 51, 51);">2048×1080@60Hz</font> | <font style="color:rgb(51, 51, 51);">MIPI DSI0, MIPI DSI1, RGB</font> |
+| **Video Port** | **Maximum Resolution | ****Connectable Display**                                    |
+| :------------- | :------------------- | :----------------------------------------------------------- |
+| VP0            | 7680×4320@60Hz       | HDMI0, eDP0, DP0, DP1, MIPI DSI0, MIPI DSI1                  |
+| VP1            | 4096×4320@60Hz       | HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1     |
+| VP2            | 4096×2160@60Hz       | HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1, RGB |
+| VP3            | 2048×1080@60Hz       | MIPI DSI0, MIPI DSI1, RGB                                    |
 
-**<font style="color:rgb(51, 51, 51);">⚠️Note: The RK3588 HDMI and DP interfaces support 8K output, but in 8K mode, they require the simultaneous occupation of both VP0 and VP1. If a product needs to support 8K display, do not connect other display interfaces to VP1.</font>**
+**⚠️Note: The RK3588 HDMI and DP interfaces support 8K output, but in 8K mode, they require the simultaneous occupation of both VP0 and VP1. If a product needs to support 8K display, do not connect other display interfaces to VP1.**
 
-**The connection relationship between<font style="color:rgb(0,0,0);">RK3588 VP **</font>**<font style="color:rgb(0,0,0);">and the various display interfaces is as follows:</font>**
+**The connection relationship between<font style="color:rgb(0,0,0);">RK3588 VP ****<font style="color:rgb(0,0,0);">and the various display interfaces is as follows:**
 
 ![Drawing Board](https://cdn.nlark.com/yuque/0/2026/jpeg/52751263/1776818967804-102c91de-b34a-4229-aac7-a04329d77dcc.jpeg)
 
-##### <font style="color:rgb(51, 51, 51);">1.2 Specifications of Each Display Interface</font>
+##### 1.2 Specifications of Each Display Interface
 
-<font style="color:rgb(51, 51, 51);">The maximum output resolution and protocol standards for each RK3588 display interface are as follows:</font>
+The maximum output resolution and protocol standards for each RK3588 display interface are as follows:
 
-| <font style="color:rgb(51, 51, 51);">Display Interface</font>| <font style="color:rgb(51, 51, 51);">Maximum Output Resolution</font>| <font style="color:rgb(51, 51, 51);">Protocol Standard</font>|
-|----------|----------|----------|
-| <font style="color:rgb(51, 51, 51);">HDMI</font>| <font style="color:rgb(51, 51, 51);">7680×4320@60Hz</font>| <font style="color:rgb(51, 51, 51);">Dual HDMI, supporting HDMI 2.1 protocol standard</font>|
-| <font style="color:rgb(51, 51, 51);">DP</font>| <font style="color:rgb(51, 51, 51);">7680×4320@30Hz</font>| <font style="color:rgb(51, 51, 51);">Dual DP, supporting DP 1.4 protocol standard</font>|
-| <font style="color:rgb(51, 51, 51);">eDP</font>| <font style="color:rgb(51, 51, 51);">3840×2160@60Hz</font>| <font style="color:rgb(51, 51, 51);">Dual DP, supporting DP 1.2a and eDP 1.3 protocol standard</font>|
-| <font style="color:rgb(51, 51, 51);">MIPI DSI</font>| <font style="color:rgb(51, 51, 51);">3840×2160@60Hz</font>| <font style="color:rgb(51, 51, 51);">Dual MIPI, supporting DSI v1.1, DCS v1.1, DPHY v2.0, CPHY v1.1</font>|
-| <font style="color:rgb(51, 51, 51);">RGB</font>| <font style="color:rgb(51, 51, 51);">1920×1080@60Hz</font>| <font style="color:rgb(51, 51, 51);">Supports BT.656 / BT.1120</font>|
+| Display Interface | Maximum Output Resolution | Protocol Standard                                            |
+| ----------------- | ------------------------- | ------------------------------------------------------------ |
+| HDMI              | 7680×4320@60Hz            | Dual HDMI, supporting HDMI 2.1 protocol standard             |
+| DP                | 7680×4320@30Hz            | Dual DP, supporting DP 1.4 protocol standard                 |
+| eDP               | 3840×2160@60Hz            | Dual DP, supporting DP 1.2a and eDP 1.3 protocol standard    |
+| MIPI DSI          | 3840×2160@60Hz            | Dual MIPI, supporting DSI v1.1, DCS v1.1, DPHY v2.0, CPHY v1.1 |
+| RGB               | 1920×1080@60Hz            | Supports BT.656 / BT.1120                                    |
 
 ##### 1.3 OK3588-C Interface Location
 
-<font style="color:rgb(51, 51, 51);">The HDMI and eDP interfaces are located on the front side of the board.</font>
+The HDMI and eDP interfaces are located on the front side of the board.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776583943597-3510e877-ca87-4228-81d3-03a2ca4ce32a.png)
 
-<font style="color:rgb(51, 51, 51);">The MIPI DSI0 and MIPI DSI1 interfaces are located on the back side of the board.</font>
+The MIPI DSI0 and MIPI DSI1 interfaces are located on the back side of the board.
 
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776819807192-5cc2e454-d3f6-4cef-a33e-ab8026e39bba.png)
 
-##### <font style="color:rgb(51, 51, 51);">1.4 RK3588S2 Differences</font>
+##### 1.4 RK3588S2 Differences
 
-<font style="color:rgb(51, 51, 51);">Compared to the RK3588, the RK3588S2 has trimmed/cut down the following display interfaces:</font>
+Compared to the RK3588, the RK3588S2 has trimmed/cut down the following display interfaces:
 
-| **<font style="color:rgb(51, 51, 51);">Interface</font>**| **<font style="color:rgb(51, 51, 51);">RK3588（OK3588-C）</font>**| **<font style="color:rgb(51, 51, 51);">RK3588S2（OK3588S2-C）</font>**|
-|:----------|:----------|:----------|
-| <font style="color:rgb(51, 51, 51);">HDMI0</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>|
-| <font style="color:rgb(51, 51, 51);">HDMI1</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">❌</font><font style="color:rgb(51, 51, 51);"> Not Available</font>|
-| <font style="color:rgb(51, 51, 51);">eDP0</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">❌</font><font style="color:rgb(51, 51, 51);"> Not Available</font>|
-| <font style="color:rgb(51, 51, 51);">eDP1</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">❌</font><font style="color:rgb(51, 51, 51);"> Not Available</font>|
-| <font style="color:rgb(51, 51, 51);">DP0</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>|
-| <font style="color:rgb(51, 51, 51);">DP1</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">❌</font><font style="color:rgb(51, 51, 51);"> Not Available</font>|
-| <font style="color:rgb(51, 51, 51);">MIPI DSI0</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>|
-| <font style="color:rgb(51, 51, 51);">MIPI DSI1</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>| <font style="color:rgb(51, 51, 51);">✅</font><font style="color:rgb(51, 51, 51);"> Available</font>|
+| **Interface** | **RK3588（OK3588-C）** | **RK3588S2（OK3588S2-C）** |
+| :------------ | :--------------------- | :------------------------- |
+| HDMI0         | ✅ Available            | ✅ Available                |
+| HDMI1         | ✅ Available            | ❌ Not Available            |
+| eDP0          | ✅ Available            | ❌ Not Available            |
+| eDP1          | ✅ Available            | ❌ Not Available            |
+| DP0           | ✅ Available            | ✅ Available                |
+| DP1           | ✅ Available            | ❌ Not Available            |
+| MIPI DSI0     | ✅ Available            | ✅ Available                |
+| MIPI DSI1     | ✅ Available            | ✅ Available                |
 
 For detailed information about RK3588 display interfaces, please refer to the following documentation:
 
 `OK-linux-source/docs/rk3588/en/Common/DISPLAY/DRM/Rockchip_Developer_Guide_DRM_Display_Driver_EN.pdf`
 
-#### <font style="color:rgb(51, 51, 51);">2. Device Tree</font>
+#### 2. Device Tree
 
 The display-related Device Tree nodes for OK3588-C/3588-C2 are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 The display-related Device Tree nodes for OK3588S2-C are located at:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-##### <font style="color:rgb(51, 51, 51);">2.1 Forlinx-control Display Configuration Node</font>
+##### 2.1 Forlinx-control Display Configuration Node
 
 Since OK3588 supports multiple display modes, the screen configuration can be specified via the Device Tree:
 
@@ -4812,44 +4812,44 @@ Since OK3588 supports multiple display modes, the screen configuration can be sp
 
 ```
 
-<font style="color:rgb(51, 51, 51);">The forlinx-control node is disabled by default (</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">status = "disabled"</font>`<font style="color:rgb(51, 51, 51);">). In this state, display configuration is controlled by U-Boot. To fix the display configuration at the kernel stage, change the </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">status</font>`<font style="color:rgb(51, 51, 51);"> to </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">"okay"</font>`<font style="color:rgb(51, 51, 51);">.</font>
+The forlinx-control node is disabled by default (`status = "disabled"`). In this state, display configuration is controlled by U-Boot. To fix the display configuration at the kernel stage, change the `status` to `"okay"`.
 
-<font style="color:rgb(15, 17, 21);">Description</font>
+Description
 
-| **<font style="color:rgb(51, 51, 51);">Parameter</font>**| **<font style="color:rgb(51, 51, 51);">Description</font>**|
-|:----------|:----------|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">status</font>`| <font style="color:rgb(51, 51, 51);">Node status:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">"disabled"</font>`<font style="color:rgb(51, 51, 51);">"disabled" indicates U-Boot control,</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">"okay"</font>`<font style="color:rgb(51, 51, 51);">indicates kernel control.</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">HDMI0</font>`<font style="color:rgb(51, 51, 51);">~ </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">DP1</font>`| <font style="color:rgb(51, 51, 51);">Specifies the VP (Video Port) bound to each display interface. Setting to </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">"OFF"</font>`<font style="color:rgb(51, 51, 51);">turns off the interface.</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">MIPI0</font>`<font style="color:rgb(51, 51, 51);">/ </font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">MIPI1</font>`| <font style="color:rgb(51, 51, 51);">Specifies the VP to which MIPI DSI0/DSI1 is bound</font>.|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">RGB</font>`| <font style="color:rgb(51, 51, 51);">Specifies the VP to which the RGB interface is bound</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">primary_display</font>`| <font style="color:rgb(51, 51, 51);">Main display interface, on which the startup logo and desktop are displayed by default</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">primary_display_resolution</font>`| <font style="color:rgb(51, 51, 51);">Resolution of the main display interface</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">disp_type</font>`| <font style="color:rgb(51, 51, 51);">Display Type:</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">"sync"</font>`<font style="color:rgb(51, 51, 51);"> For the same display,</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">"async"</font>`<font style="color:rgb(51, 51, 51);">for the different display</font>|
+| **Parameter**                | **Description**                                              |
+| :--------------------------- | :----------------------------------------------------------- |
+| `status`                     | Node status:`"disabled"`"disabled" indicates U-Boot control,`"okay"`indicates kernel control. |
+| `HDMI0`~ `DP1`               | Specifies the VP (Video Port) bound to each display interface. Setting to `"OFF"`turns off the interface. |
+| `MIPI0`/ `MIPI1`             | Specifies the VP to which MIPI DSI0/DSI1 is bound.           |
+| `RGB`                        | Specifies the VP to which the RGB interface is bound         |
+| `primary_display`            | Main display interface, on which the startup logo and desktop are displayed by default |
+| `primary_display_resolution` | Resolution of the main display interface                     |
+| `disp_type`                  | Display Type:`"sync"` For the same display,`"async"`for the different display |
 
-<font style="color:rgb(15, 17, 21);">The configuration parameters can be modified according to the actual requirements, and the image shall be generated by recompiling after saving.</font>
+The configuration parameters can be modified according to the actual requirements, and the image shall be generated by recompiling after saving.
 
-<font style="color:rgb(15, 17, 21);">**⚠️Notes :**
+**⚠️Notes :**
 
-+ **<font style="color:rgb(15, 17, 21);"hdmi0 and edp0 share the same port. They are mutually exclusive and cannot be used at the same time.</font>**
-+ **<font style="color:rgb(15, 17, 21);">hdmi1 and edp1 share the same port. They are mutually exclusive and cannot be used at the same time.</font>**
-+ **<font style="color:rgb(15, 17, 21);">The chip only contains four VPs (Video Processors), so up to four display interfaces can be activated at the same time.</font>**
-+ **<font style="color:rgb(15, 17, 21);">HDMI, EDP, DP can only be bound to VP0, VP1 or VP2 outputs.</font>**
-+ **<font style="color:rgb(15, 17, 21);">dsi0, dsi1 can only be bound to VP2 or VP3 output.</font>**
-+ **<font style="color:rgb(15, 17, 21);">RGB can only be bound to VP3 output.</font>**
++ **<font style="color:rgb(15, 17, 21);"hdmi0 and edp0 share the same port. They are mutually exclusive and cannot be used at the same time.**
++ **hdmi1 and edp1 share the same port. They are mutually exclusive and cannot be used at the same time.**
++ **The chip only contains four VPs (Video Processors), so up to four display interfaces can be activated at the same time.**
++ **HDMI, EDP, DP can only be bound to VP0, VP1 or VP2 outputs.**
++ **dsi0, dsi1 can only be bound to VP2 or VP3 output.**
++ **RGB can only be bound to VP3 output.**
 
-<font style="color:rgb(15, 17, 21);">According to the hardware constraints of the above display interfaces, the optional parameters of each interface are configured as follows:</font>
+According to the hardware constraints of the above display interfaces, the optional parameters of each interface are configured as follows:
 
-+ <font style="color:rgb(15, 17, 21);">The optional parameter range of HDMI0/1, EDP0/1 and DP0/1 is:</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"VP0"</font>`<font style="color:rgb(15, 17, 21);">,</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"VP1"</font>`<font style="color:rgb(15, 17, 21);">,</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"VP2"</font>`<font style="color:rgb(15, 17, 21);">,</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"OFF"</font>`<font style="color:rgb(15, 17, 21);">;</font>
-+ <font style="color:rgb(15, 17, 21);">The optional parameter range of DP0/1 is:</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"VP2"</font>`<font style="color:rgb(15, 17, 21);">,</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"VP3"</font>`<font style="color:rgb(15, 17, 21);">;</font>
-+ <font style="color:rgb(15, 17, 21);">The optional parameter value range of RGB is:</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"VP3"</font>`<font style="color:rgb(15, 17, 21);">;</font>
-+ `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">primary_display</font>`<font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">Parameters shall be configured according to the display interface corresponding to the actually allocated VP;</font>
-+ `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">disp_type</font>`<font style="color:rgb(15, 17, 21);"> Optional parameters include: simultaneous display </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"sync"</font>`<font style="color:rgb(15, 17, 21);"> and different display </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"async"</font>`<font style="color:rgb(15, 17, 21);">.</font>
++ The optional parameter range of HDMI0/1, EDP0/1 and DP0/1 is:`"VP0"`,`"VP1"`,`"VP2"`,`"OFF"`;
++ The optional parameter range of DP0/1 is:`"VP2"`,`"VP3"`;
++ The optional parameter value range of RGB is:`"VP3"`;
++ `primary_display` Parameters shall be configured according to the display interface corresponding to the actually allocated VP;
++ `disp_type` Optional parameters include: simultaneous display `"sync"` and different display `"async"`.
 
-<font style="color:rgb(15, 17, 21);">**⚠️Note: When modifying the device tree, strictly follow the constraints in the device tree comments to avoid resource conflicts. The driver layer will not verify the compliance of the </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">forlinx-control</font>`<font style="color:rgb(15, 17, 21);"> node configuration. If the configuration is improper, the display will be abnormal. For the display interface whose parameter is set to  </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">"OFF"</font>`<font style="color:rgb(15, 17, 21);">, it is recommended to shield or delete the node, or keep the node, which will not affect the system operation. The four VPs do not all need to be enabled and can be configured according to the actual display interface requirements.**</font>
+**⚠️Note: When modifying the device tree, strictly follow the constraints in the device tree comments to avoid resource conflicts. The driver layer will not verify the compliance of the `forlinx-control` node configuration. If the configuration is improper, the display will be abnormal. For the display interface whose parameter is set to  `"OFF"`, it is recommended to shield or delete the node, or keep the node, which will not affect the system operation. The four VPs do not all need to be enabled and can be configured according to the actual display interface requirements.**
 
-##### <font style="color:rgb(51, 51, 51);">2.2 VOP Node Configuration</font>
+##### 2.2 VOP Node Configuration
 
-<font style="color:rgb(51, 51, 51);">The VOP configuration in the OK3588-C device tree is as follows:</font>
+The VOP configuration in the OK3588-C device tree is as follows:
 
 ```plain
 &vop {
@@ -4862,16 +4862,16 @@ Since OK3588 supports multiple display modes, the screen configuration can be sp
 };
 ```
 
-| **<font style="color:rgb(51, 51, 51);">Features</font>**| **<font style="color:rgb(51, 51, 51);">Value</font>**| **<font style="color:rgb(51, 51, 51);">Description</font>**|
-|:----------|:----------|:----------|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">vop-supply</font>`| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">vdd_log_s0</font>`| <font style="color:rgb(51, 51, 51);">VOP Power Domain</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">ACLK_VOP</font>`| <font style="color:rgb(51, 51, 51);">800 MHz</font>| <font style="color:rgb(51, 51, 51);">VOP AXI bus clock</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">aclk-normal-mode-rates</font>`| <font style="color:rgb(51, 51, 51);">500 MHz</font>| <font style="color:rgb(51, 51, 51);">ACLK frequency in normal display mode</font>|
-| `<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">aclk-advanced-mode-rates</font>`| <font style="color:rgb(51, 51, 51);">800 MHz</font>| <font style="color:rgb(51, 51, 51);">ACLK frequency in advanced display mode (e.g. 8K)</font>|
+| **Features**               | **Value**    | **Description**                                   |
+| :------------------------- | :----------- | :------------------------------------------------ |
+| `vop-supply`               | `vdd_log_s0` | VOP Power Domain                                  |
+| `ACLK_VOP`                 | 800 MHz      | VOP AXI bus clock                                 |
+| `aclk-normal-mode-rates`   | 500 MHz      | ACLK frequency in normal display mode             |
+| `aclk-advanced-mode-rates` | 800 MHz      | ACLK frequency in advanced display mode (e.g. 8K) |
 
-##### <font style="color:rgb(51, 51, 51);">2.3 Layer Assignment</font>
+##### 2.3 Layer Assignment
 
-<font style="color:rgb(51, 51, 51);">Each VP has a fixed layer (Plane) bound to it for compositing the display:</font>
+Each VP has a fixed layer (Plane) bound to it for compositing the display:
 
 ```plain
 /* vp0 & vp1 splice for 8K output */
@@ -4896,16 +4896,16 @@ Since OK3588 supports multiple display modes, the screen configuration can be sp
 };
 ```
 
-<font style="color:rgb(51, 51, 51);">RK3588 VOP2 has 8 layers divided into two categories:</font>
+RK3588 VOP2 has 8 layers divided into two categories:
 
-| **<font style="color:rgb(51, 51, 51);">Layer Type</font>**| **<font style="color:rgb(51, 51, 51);">Layer Name</font>**| **<font style="color:rgb(51, 51, 51);">Features</font>**|
-|:----------|:----------|:----------|
-| <font style="color:rgb(51, 51, 51);">Cluster</font>| <font style="color:rgb(51, 51, 51);">Cluster0 ~ Cluster3</font>| <font style="color:rgb(51, 51, 51);">Support AFBC compression format, suitable for video overlay</font>|
-| <font style="color:rgb(51, 51, 51);">Esmart</font>| <font style="color:rgb(51, 51, 51);">Esmart0 ~ Esmart3</font>| <font style="color:rgb(51, 51, 51);">Support zooming, suitable for UI display</font>|
+| **Layer Type** | **Layer Name**      | **Features**                                                |
+| :------------- | :------------------ | :---------------------------------------------------------- |
+| Cluster        | Cluster0 ~ Cluster3 | Support AFBC compression format, suitable for video overlay |
+| Esmart         | Esmart0 ~ Esmart3   | Support zooming, suitable for UI display                    |
 
 #### 3\. Application
 
-The factory firmware supports dynamic control of screen output via a menu in U-Boot,<font style="color:rgb(51, 51, 51);">eliminating the need for recompilation and reflashing to switch screens. During U-Boot automatic startup, pressing</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">ctrl+c</font>`<font style="color:rgb(51, 51, 51);">on the serial terminal will trigger a control menu:</font>
+The factory firmware supports dynamic control of screen output via a menu in U-Boot,eliminating the need for recompilation and reflashing to switch screens. During U-Boot automatic startup, pressing`ctrl+c`on the serial terminal will trigger a control menu:
 
 ```c
 Hit key to stop autoboot('CTRL+C'):  0
@@ -4918,7 +4918,7 @@ Hit key to stop autoboot('CTRL+C'):  0
 ---------------------------------------------
 ```
 
-<font style="color:rgb(51, 51, 51);">Entering 2 in the terminal, you can access the Screen Control submenu.</font>
+Entering 2 in the terminal, you can access the Screen Control submenu.
 
 ```c
 ---------------------------------------------
@@ -4946,7 +4946,7 @@ Select  display
 ---------------------------------------------
 ```
 
-<font style="color:rgb(51, 51, 51);">According to the notes in the U-Boot menu, the display output configuration rules are as follows:</font>
+According to the notes in the U-Boot menu, the display output configuration rules are as follows:
 
 ```c
 1.  HDMI0 and eDP0 share the same port, so only one of them can be used at a time.
@@ -4957,13 +4957,13 @@ Select  display
 6.  RGB can only be displayed on VP3.
 ```
 
-<font style="color:rgb(15, 17, 21);">To configure display output, enter the number corresponding to the desired display interface. The system will allocate a Video Port to that interface. Repeatedly entering the same number will sequentially toggle the available VP for that interface or deallocate the currently assigned VP.</font>
+To configure display output, enter the number corresponding to the desired display interface. The system will allocate a Video Port to that interface. Repeatedly entering the same number will sequentially toggle the available VP for that interface or deallocate the currently assigned VP.
 
-<font style="color:rgb(15, 17, 21);">After completing the configuration, you can either:
+After completing the configuration, you can either:
 
-Press the number 1 to perform a reboot—the screen settings configured during the U-Boot stage will take effect after</font><font style="color:rgb(15, 17, 21);">restarting.
+Press the number 1 to perform a reboot—the screen settings configured during the U-Boot stage will take effect afterrestarting.
 
-Or, simply press the reset button on the development board—the configuration will similarly be applied once the system restarts.</font>
+Or, simply press the reset button on the development board—the configuration will similarly be applied once the system restarts.
 
 ### Encoding and Decoding
 
@@ -4977,24 +4977,24 @@ Video Encoding: H264, H.265, maximum support 8k@30fps
 
 Table of hardware codec parameters for the OK3588 platform:
 
-| **<font style="color:rgb(41, 41, 41);">Video Decoder</font>**| **<font style="color:rgb(41, 41, 41);">Format</font>**| **<font style="color:rgb(41, 41, 41);">Profile</font>**| **<font style="color:rgb(41, 41, 41);">Resolution</font>**| **<font style="color:rgb(41, 41, 41);">Frame rate</font>**|
-|----------|----------|----------|----------|----------|
-| | <font style="color:rgb(41, 41, 41);">H.265</font>| <font style="color:rgb(41, 41, 41);">main 10</font>| <font style="color:rgb(41, 41, 41);">7680x4320</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">H.264</font>| <font style="color:rgb(41, 41, 41);">main 10</font>| <font style="color:rgb(41, 41, 41);">7680x4320</font>| <font style="color:rgb(41, 41, 41);">30 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">VP9</font>| <font style="color:rgb(41, 41, 41);">Profile 0/2</font>| <font style="color:rgb(41, 41, 41);">7680x4320</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">VP8</font>| <font style="color:rgb(41, 41, 41);">version2</font>| <font style="color:rgb(41, 41, 41);">1920x1080</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">VC1</font>| | <font style="color:rgb(41, 41, 41);">1920x1080</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">MPEG-2</font>| | <font style="color:rgb(41, 41, 41);">1920x1080</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">MPEG-1</font>| | <font style="color:rgb(41, 41, 41);">1920x1080</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">H.263</font>| | <font style="color:rgb(41, 41, 41);">720x576</font>| <font style="color:rgb(41, 41, 41);">60 fps</font>|
-| <font style="color:rgb(41, 41, 41);">Video Encoder</font>| <font style="color:rgb(41, 41, 41);">H.264</font>| <font style="color:rgb(41, 41, 41);">BP/MP/HP@level4.2</font>| <font style="color:rgb(41, 41, 41);">7680x4320</font>| <font style="color:rgb(41, 41, 41);">30 fps</font>|
-| | <font style="color:rgb(41, 41, 41);">H.265</font>| <font style="color:rgb(41, 41, 41);">MP@level4.1</font>| <font style="color:rgb(41, 41, 41);">7680x4320</font>| <font style="color:rgb(41, 41, 41);">30 fps</font>|
+| **<font style="color:rgb(41, 41, 41);">Video Decoder** | **<font style="color:rgb(41, 41, 41);">Format** | **<font style="color:rgb(41, 41, 41);">Profile**       | **<font style="color:rgb(41, 41, 41);">Resolution** | **<font style="color:rgb(41, 41, 41);">Frame rate** |
+| ------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------- |
+|                                                        | <font style="color:rgb(41, 41, 41);">H.265      | <font style="color:rgb(41, 41, 41);">main 10           | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">60 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">H.264      | <font style="color:rgb(41, 41, 41);">main 10           | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">30 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">VP9        | <font style="color:rgb(41, 41, 41);">Profile 0/2       | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">60 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">VP8        | <font style="color:rgb(41, 41, 41);">version2          | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">VC1        |                                                        | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">MPEG-2     |                                                        | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">MPEG-1     |                                                        | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">H.263      |                                                        | <font style="color:rgb(41, 41, 41);">720x576        | <font style="color:rgb(41, 41, 41);">60 fps         |
+| <font style="color:rgb(41, 41, 41);">Video Encoder     | <font style="color:rgb(41, 41, 41);">H.264      | <font style="color:rgb(41, 41, 41);">BP/MP/HP@level4.2 | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">30 fps         |
+|                                                        | <font style="color:rgb(41, 41, 41);">H.265      | <font style="color:rgb(41, 41, 41);">MP@level4.1       | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">30 fps         |
 
 #### 1\. Audio and Video Playback
 
 ##### 1.1 Playing Audio and Video With Gst-play
 
-<font style="color:rgb(41, 41, 41);">Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.</font>
+<font style="color:rgb(41, 41, 41);">Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
 ```plain
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
@@ -5020,7 +5020,7 @@ root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080
 
 #### 2\. Video Hardware Encoding
 
-<font style="color:rgb(41, 41, 41);">OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.</font>
+<font style="color:rgb(41, 41, 41);">OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.
 
 ##### 2.1 Video Hardware Encoding H.264
 
@@ -5042,11 +5042,11 @@ root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw
 
 #### 3\. Video Hardware Decoding
 
-<font style="color:rgb(41, 41, 41);">OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.</font>
+<font style="color:rgb(41, 41, 41);">OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.
 
-<font style="color:rgb(41, 41, 41);">OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.</font>
+<font style="color:rgb(41, 41, 41);">OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.
 
-##### <font style="color:rgb(41, 41, 41);">3.1 Decoding and Playing H.264 Format Video</font>
+##### <font style="color:rgb(41, 41, 41);">3.1 Decoding and Playing H.264 Format Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
@@ -5217,20 +5217,20 @@ The image used for this test is shown below:
 
 To address the program's development needs, this brief demo introduction explains how to call the image and the model. The demo's source code can be referenced for further details.file.`SDK/external/rknpu2/examples/rknn_common_test/src/main.cc`
 
-**<font style="color:rgb(26, 28, 31);">Reading the JPG image uses the OpenCV interface</font>.<font style="color:rgb(26, 28, 31);">**The core steps are:</font>
+**<font style="color:rgb(26, 28, 31);">Reading the JPG image uses the OpenCV interface.<font style="color:rgb(26, 28, 31);">**The core steps are:
 
-+ <font style="color:rgb(26, 28, 31);">cv::imread(...)</font><font style="color:rgb(26, 28, 31);">：Read jpg file</font>
-+ <font style="color:rgb(26, 28, 31);">cv::cvtColor(...)</font><font style="color:rgb(26, 28, 31);">：Convert OpenCV's default BGR input to RGB.</font>
-+ <font style="color:rgb(26, 28, 31);">cv::resize(...)</font><font style="color:rgb(26, 28, 31);">：Scale the image to the model input dimensions.</font>
++ <font style="color:rgb(26, 28, 31);">cv::imread(...)<font style="color:rgb(26, 28, 31);">：Read jpg file
++ <font style="color:rgb(26, 28, 31);">cv::cvtColor(...)<font style="color:rgb(26, 28, 31);">：Convert OpenCV's default BGR input to RGB.
++ <font style="color:rgb(26, 28, 31);">cv::resize(...)<font style="color:rgb(26, 28, 31);">：Scale the image to the model input dimensions.
 
-**<font style="color:rgb(26, 28, 31);">The RKNN model is called using the RKNN Runtime interface**</font>**<font style="color:rgb(26, 28, 31);">. The core is:**</font>
+**<font style="color:rgb(26, 28, 31);">The RKNN model is called using the RKNN Runtime interface****<font style="color:rgb(26, 28, 31);">. The core is:**
 
-+ <font style="color:rgb(26, 28, 31);">rknn\_init(...)</font><font style="color:rgb(26, 28, 31);">：Load</font><font style="color:rgb(26, 28, 31);"> </font><font style="color:rgb(26, 28, 31);">.rknn</font><font style="color:rgb(26, 28, 31);"> </font><font style="color:rgb(26, 28, 31);">model</font>
-+ <font style="color:rgb(26, 28, 31);">rknn\_query(...)</font><font style="color:rgb(26, 28, 31);">：Query model input/output information.</font>
-+ <font style="color:rgb(26, 28, 31);">rknn\_create\_mem(...)</font><font style="color:rgb(26, 28, 31);">：Request input/output tensor memory.</font>
-+ <font style="color:rgb(26, 28, 31);">rknn\_set\_io\_mem(...)</font><font style="color:rgb(26, 28, 31);">：Bind the memory to the model inputs and outputs.</font>
-+ <font style="color:rgb(26, 28, 31);">rknn\_run(...)</font><font style="color:rgb(26, 28, 31);">：Execute inference.</font>
-+ <font style="color:rgb(26, 28, 31);">rknn\_destroy\_mem(...)</font><font style="color:rgb(26, 28, 31);"> / </font><font style="color:rgb(26, 28, 31);">rknn\_destroy(...)</font><font style="color:rgb(26, 28, 31);">：Free resources.</font>
++ <font style="color:rgb(26, 28, 31);">rknn\_init(...)<font style="color:rgb(26, 28, 31);">：Load<font style="color:rgb(26, 28, 31);"> <font style="color:rgb(26, 28, 31);">.rknn<font style="color:rgb(26, 28, 31);"> <font style="color:rgb(26, 28, 31);">model
++ <font style="color:rgb(26, 28, 31);">rknn\_query(...)<font style="color:rgb(26, 28, 31);">：Query model input/output information.
++ <font style="color:rgb(26, 28, 31);">rknn\_create\_mem(...)<font style="color:rgb(26, 28, 31);">：Request input/output tensor memory.
++ <font style="color:rgb(26, 28, 31);">rknn\_set\_io\_mem(...)<font style="color:rgb(26, 28, 31);">：Bind the memory to the model inputs and outputs.
++ <font style="color:rgb(26, 28, 31);">rknn\_run(...)<font style="color:rgb(26, 28, 31);">：Execute inference.
++ <font style="color:rgb(26, 28, 31);">rknn\_destroy\_mem(...)<font style="color:rgb(26, 28, 31);"> / <font style="color:rgb(26, 28, 31);">rknn\_destroy(...)<font style="color:rgb(26, 28, 31);">：Free resources.
 
 In summary, the image reading and conversion in this demo are implemented using OpenCV, while the recognition and inference are implemented using RKNN.
 
@@ -5240,19 +5240,19 @@ In summary, the image reading and conversion in this demo are implemented using 
 
 #### 1\.1 Packaging the User Program into the Image
 
-1. <font style="color:rgb(15, 17, 21);">The</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">OK-linux-source/buildroot/board/rockchip/common/base</font>`<font style="color:rgb(15, 17, 21);"> in the source code corresponds to the root directory of the board's file system. You can directly copy their compiled user application</font><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">user\_application</font><font style="color:rgb(15, 17, 21);">to the subdirectory</font>`<font style="color:rgb(15, 17, 21);">usr/bin</font>`<font style="color:rgb(15, 17, 21);">under this directory.</font>
-2. <font style="color:rgb(15, 17, 21);">To modify system or service configurations, copy the configuration files to the specified </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">OK-linux-source/buildroot/board/rockchip/common/base/etc</font>`<font style="color:rgb(15, 17, 21);"> directory.</font>
-3. <font style="color:rgb(15, 17, 21);">To add library files, copy </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">OK-linux-source/buildroot/board/rockchip/common/base/usr/lib</font>`<font style="color:rgb(15, 17, 21);"> to the specified directory. </font>
+1. The`OK-linux-source/buildroot/board/rockchip/common/base` in the source code corresponds to the root directory of the board's file system. You can directly copy their compiled user applicationuser\_applicationto the subdirectory`usr/bin`under this directory.
+2. To modify system or service configurations, copy the configuration files to the specified `OK-linux-source/buildroot/board/rockchip/common/base/etc` directory.
+3. To add library files, copy `OK-linux-source/buildroot/board/rockchip/common/base/usr/lib` to the specified directory. 
 
-<font style="color:rgb(15, 17, 21);">After copying, execute the </font><font style="color:rgb(15, 17, 21);"></font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">chmod +x user_application</font>`<font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">to add executable permissions to the application.</font>
+After copying, execute the `chmod +x user_application` to add executable permissions to the application.
 
-<font style="color:rgb(15, 17, 21);">After completing the above steps, perform a full compilation in the source code directory, and program the compiled image to the board (refer to section 3.2.1 of the Build Guides for compilation instructions).。 After successful programming, you can manually run your own application</font><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">user\_application</font><font style="color:rgb(15, 17, 21);">on the board. For auto-start functionality, please refer to the next section.</font>
+After completing the above steps, perform a full compilation in the source code directory, and program the compiled image to the board (refer to section 3.2.1 of the Build Guides for compilation instructions).。 After successful programming, you can manually run your own applicationuser\_applicationon the board. For auto-start functionality, please refer to the next section.
 
 ### 2\. Auto-starting the User Program
 
-<font style="color:rgb(15, 17, 21);">The Linux system of the OK3588-C uses systemd as the initialization system and service manager, designed to achieve faster boot speed, better parallel processing capability, more powerful service management functions, and provide a unified system management interface.</font>
+The Linux system of the OK3588-C uses systemd as the initialization system and service manager, designed to achieve faster boot speed, better parallel processing capability, more powerful service management functions, and provide a unified system management interface.
 
-<font style="color:rgb(15, 17, 21);">This image has a preset</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">forlinx.sh</font>`<font style="color:rgb(15, 17, 21);"> script in the specified </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">/etc</font>`<font style="color:rgb(15, 17, 21);"> directory, which is called and executed by</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">/etc/init.d/S90autorun.sh</font>`<font style="color:rgb(15, 17, 21);">. You can add custom applications to </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">forlinx.sh</font>`<font style="color:rgb(15, 17, 21);">to enable automatic startup of the application. </font>
+This image has a preset`forlinx.sh` script in the specified `/etc` directory, which is called and executed by`/etc/init.d/S90autorun.sh`. You can add custom applications to `forlinx.sh`to enable automatic startup of the application. 
 
 ```bash
 root@OK3588-C-buildroot:~# cat /etc/forlinx.sh
@@ -5270,19 +5270,19 @@ exit 0
 
 ```
 
-<font style="color:rgb(15, 17, 21);">You can also modify the</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">OK-linux-source/buildroot/board/rockchip/common/base/etc/forlinx.sh</font>`<font style="color:rgb(15, 17, 21);">in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.
+You can also modify the`OK-linux-source/buildroot/board/rockchip/common/base/etc/forlinx.sh`in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.
 
 #### 3. Customized Logo
 
-<font style="color:rgb(15, 17, 21);">You can modify the boot logo by replacing the specified files</font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">logo.bmp</font>`<font style="color:rgb(15, 17, 21);"> and </font>`<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">logo_kernel.bmp</font>`<font style="color:rgb(15, 17, 21);"> in the kernel directory.</font>
+You can modify the boot logo by replacing the specified files`logo.bmp` and `logo_kernel.bmp` in the kernel directory.
 
 **⚠️Note:**
 
-- **<font style="color:rgb(15, 17, 21);">When using tools such as Photoshop to convert to BMP format, select Windows format, 24-bit color depth, and check the "Reverse row order" option;</font>**
+- **When using tools such as Photoshop to convert to BMP format, select Windows format, 24-bit color depth, and check the "Reverse row order" option;**
 
-- **<font style="color:rgb(15, 17, 21);">The BMP image resolution is recommended not to exceed 1080P. If the boot image size is too large, the EMMC partition size must be adjusted accordingly; otherwise, programming may fail (compilation is usually normal);</font>**
+- **The BMP image resolution is recommended not to exceed 1080P. If the boot image size is too large, the EMMC partition size must be adjusted accordingly; otherwise, programming may fail (compilation is usually normal);**
 
-- **<font style="color:rgb(15, 17, 21);">Since the VOP virtual width is word-aligned, Rockchip's full platform requires the logo to be 4-byte aligned;</font>**
+- **Since the VOP virtual width is word-aligned, Rockchip's full platform requires the logo to be 4-byte aligned;**
 
 - **BMP format only supports 8-bit, 16-bit, 24-bit, and 32-bit color depths. To reduce the logo file size, only make adjustments within the above color depth ranges.**
 
@@ -5315,59 +5315,59 @@ To use the built-in NPU of the OK3588-C, please first run the RKNN-Toolkit2 tool
 
 The currently supported models are as follows:
 
-|     **<font style="color:rgb(51, 51, 51);">demo</font>**     | **<font style="color:rgb(51, 51, 51);">model\_name</font>**  | **<font style="color:rgb(51, 51, 51);">inputs\_shape</font>****<font style="color:rgb(51, 51, 51);"> </font>****<font style="color:rgb(51, 51, 51);"> </font>****<font style="color:rgb(51, 51, 51);"> </font>****<font style="color:rgb(51, 51, 51);"> </font>** | **<font style="color:rgb(51, 51, 51);">dtype</font>** | **<font style="color:rgb(51, 51, 51);">RK3588</font>\*\*\*\*<font style="color:rgb(51, 51, 51);">@single\_core</font>** |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :---------------------------------------------------: | :----------------------------------------------------------: |
-|    <font style="color:rgb(51, 51, 51);">mobilenet</font>     |  <font style="color:rgb(51, 51, 51);">mobilenetv2-12</font>  | <font style="color:rgb(51, 51, 51);">\[1, 3, 224, 224]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |      <font style="color:rgb(51, 51, 51);">450.7</font>       |
-|      <font style="color:rgb(51, 51, 51);">resnet</font>      |  <font style="color:rgb(51, 51, 51);">resnet50-v2-7</font>   | <font style="color:rgb(51, 51, 51);">\[1, 3, 224, 224]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |      <font style="color:rgb(51, 51, 51);">110.1</font>       |
-|      <font style="color:rgb(51, 51, 51);">yolov5</font>      |  <font style="color:rgb(51, 51, 51);">yolov5s\_relu</font>   | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">66.1</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov5n</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">82.5</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov5s</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">48.4</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov5m</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">20.9</font>       |
-|      <font style="color:rgb(51, 51, 51);">yolov6</font>      |     <font style="color:rgb(51, 51, 51);">yolov6n</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |      <font style="color:rgb(51, 51, 51);">106.4</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov6s</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">36.4</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov6m</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">17.8</font>       |
-|      <font style="color:rgb(51, 51, 51);">yolov7</font>      |   <font style="color:rgb(51, 51, 51);">yolov7-tiny</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">72.7</font>       |
-|                                                              |      <font style="color:rgb(51, 51, 51);">yolov7</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">11.4</font>       |
-|      <font style="color:rgb(51, 51, 51);">yolov8</font>      |     <font style="color:rgb(51, 51, 51);">yolov8n</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">73.5</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov8s</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">38.0</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov8m</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">16.2</font>       |
-|   <font style="color:rgb(51, 51, 51);">yolov8\_obb</font>    |   <font style="color:rgb(51, 51, 51);">yolov8n-obb</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">74.0</font>       |
-|     <font style="color:rgb(51, 51, 51);">yolov10</font>      |     <font style="color:rgb(51, 51, 51);">yolov10n</font>     | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">61.2</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolov10s</font>     | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">33.8</font>       |
-|      <font style="color:rgb(51, 51, 51);">yolo11</font>      |     <font style="color:rgb(51, 51, 51);">yolo11n</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">60.0</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolo11s</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">33.0</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolo11m</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">12.7</font>       |
-|      <font style="color:rgb(51, 51, 51);">yolox</font>       |     <font style="color:rgb(51, 51, 51);">yolox\_s</font>     | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">37.1</font>       |
-|                                                              |     <font style="color:rgb(51, 51, 51);">yolox\_m</font>     | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">16.0</font>       |
-|     <font style="color:rgb(51, 51, 51);">ppyoloe</font>      |    <font style="color:rgb(51, 51, 51);">ppyoloe\_s</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">32.5</font>       |
-|                                                              |    <font style="color:rgb(51, 51, 51);">ppyoloe\_m</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">15.8</font>       |
-|   <font style="color:rgb(51, 51, 51);">yolo\_world</font>    | <font style="color:rgb(51, 51, 51);">yolo\_world\_v2s</font> | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">22.1</font>       |
-|                                                              |    <font style="color:rgb(51, 51, 51);">clip\_text</font>    |     <font style="color:rgb(51, 51, 51);">\[1, 20]</font>     |   <font style="color:rgb(51, 51, 51);">FP16</font>    |       <font style="color:rgb(51, 51, 51);">95.8</font>       |
-|   <font style="color:rgb(51, 51, 51);">yolov8\_pose</font>   |   <font style="color:rgb(51, 51, 51);">yolov8n-pose</font>   | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">55.9</font>       |
-|    <font style="color:rgb(51, 51, 51);">deeplabv3</font>     | <font style="color:rgb(51, 51, 51);">deeplab-v3-plus-mobilenet-v2</font> | <font style="color:rgb(51, 51, 51);">\[1, 513, 513, 1]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">34.0</font>       |
-|   <font style="color:rgb(51, 51, 51);">yolov5\_seg</font>    |   <font style="color:rgb(51, 51, 51);">yolov5n-seg</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">69.3</font>       |
-|                                                              |   <font style="color:rgb(51, 51, 51);">yolov5s-seg</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">36.8</font>       |
-|                                                              |   <font style="color:rgb(51, 51, 51);">yolov5m-seg</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">16.4</font>       |
-|   <font style="color:rgb(51, 51, 51);">yolov8\_seg</font>    |   <font style="color:rgb(51, 51, 51);">yolov8n-seg</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">60.8</font>       |
-|                                                              |   <font style="color:rgb(51, 51, 51);">yolov8s-seg</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">28.9</font>       |
-|                                                              |   <font style="color:rgb(51, 51, 51);">yolov8m-seg</font>    | <font style="color:rgb(51, 51, 51);">\[1, 3, 640, 640]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">12.6</font>       |
-|      <font style="color:rgb(51, 51, 51);">ppseg</font>       | <font style="color:rgb(51, 51, 51);">ppseg\_lite\_1024x512</font> | <font style="color:rgb(51, 51, 51);">\[1, 3, 512, 512]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">35.7</font>       |
-|    <font style="color:rgb(51, 51, 51);">mobilesam</font>     | <font style="color:rgb(51, 51, 51);">mobilesam\_encoder\_tiny</font> | <font style="color:rgb(51, 51, 51);">\[1, 3, 448, 448]</font> |   <font style="color:rgb(51, 51, 51);">FP16</font>    |       <font style="color:rgb(51, 51, 51);">10.0</font>       |
-|                                                              | <font style="color:rgb(51, 51, 51);">mobilesam\_decoder</font> | <font style="color:rgb(51, 51, 51);">\[1, 1, 112, 112]</font> |   <font style="color:rgb(51, 51, 51);">FP16</font>    |      <font style="color:rgb(51, 51, 51);">116.4</font>       |
-|    <font style="color:rgb(51, 51, 51);">RetinaFace</font>    | <font style="color:rgb(51, 51, 51);">RetinaFace\_mobile320</font> | <font style="color:rgb(51, 51, 51);">\[1, 3, 320, 320]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |      <font style="color:rgb(51, 51, 51);">227.2</font>       |
-|                                                              | <font style="color:rgb(51, 51, 51);">RetinaFace\_resnet50\_320</font> | <font style="color:rgb(51, 51, 51);">\[1, 3, 320, 320]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">49.2</font>       |
-|      <font style="color:rgb(51, 51, 51);">LPRNet</font>      |      <font style="color:rgb(51, 51, 51);">lprnet</font>      | <font style="color:rgb(51, 51, 51);">\[1, 3, 24, 94]</font>  |   <font style="color:rgb(51, 51, 51);">FP16</font>    |      <font style="color:rgb(51, 51, 51);">586.4</font>       |
-|    <font style="color:rgb(51, 51, 51);">PPOCR-Det</font>     |   <font style="color:rgb(51, 51, 51);">ppocrv4\_det</font>   | <font style="color:rgb(51, 51, 51);">\[1, 3, 480, 480]</font> |   <font style="color:rgb(51, 51, 51);">INT8</font>    |       <font style="color:rgb(51, 51, 51);">50.7</font>       |
-|    <font style="color:rgb(51, 51, 51);">PPOCR-Rec</font>     |   <font style="color:rgb(51, 51, 51);">ppocrv4\_rec</font>   | <font style="color:rgb(51, 51, 51);">\[1, 3, 48, 320]</font> |   <font style="color:rgb(51, 51, 51);">FP16</font>    |       <font style="color:rgb(51, 51, 51);">73.9</font>       |
-| <font style="color:rgb(51, 51, 51);">lite\_transformer</font> | <font style="color:rgb(51, 51, 51);">lite-transformer-encoder-16</font> | <font style="color:rgb(51, 51, 51);">embedding-256, token-16</font> |   <font style="color:rgb(51, 51, 51);">FP16</font>    |      <font style="color:rgb(51, 51, 51);">867.6</font>       |
-|                                                              | <font style="color:rgb(51, 51, 51);">lite-transformer-decoder-16</font> | <font style="color:rgb(51, 51, 51);">embedding-256, token-16</font> |   <font style="color:rgb(51, 51, 51);">FP16</font>    |      <font style="color:rgb(51, 51, 51);">343.8</font>       |
-|       <font style="color:rgb(51, 51, 51);">clip</font>       |   <font style="color:rgb(51, 51, 51);">clip\_images</font>   | <font style="color:rgb(51, 51, 51);">\[1, 3, 224, 224]</font> |   <font style="color:rgb(51, 51, 51);">FP16</font>    |       <font style="color:rgb(51, 51, 51);">6.5</font>        |
-|                                                              |    <font style="color:rgb(51, 51, 51);">clip\_text</font>    |     <font style="color:rgb(51, 51, 51);">\[1, 20]</font>     |   <font style="color:rgb(51, 51, 51);">FP16</font>    |       <font style="color:rgb(51, 51, 51);">96.0</font>       |
-|     <font style="color:rgb(51, 51, 51);">wav2vec2</font>     | <font style="color:rgb(51, 51, 51);">wav2vec2\_base\_960h\_20s</font> |    <font style="color:rgb(51, 51, 51);">20s audio</font>     |   <font style="color:rgb(51, 51, 51);">FP16</font>    | <font style="color:rgb(51, 51, 51);">RTF </font><font style="color:rgb(51, 51, 51);">0.133</font> |
-|     <font style="color:rgb(51, 51, 51);">whisper</font>      | <font style="color:rgb(51, 51, 51);">whisper\_base\_20s</font> |    <font style="color:rgb(51, 51, 51);">20s audio</font>     |   <font style="color:rgb(51, 51, 51);">FP16</font>    | <font style="color:rgb(51, 51, 51);">RTF </font><font style="color:rgb(51, 51, 51);">0.215</font> |
-|    <font style="color:rgb(51, 51, 51);">zipformer</font>     | <font style="color:rgb(51, 51, 51);">zipformer-bilingual-zh-en-t</font> | <font style="color:rgb(51, 51, 51);">streaming audio</font>  |   <font style="color:rgb(51, 51, 51);">FP16</font>    | <font style="color:rgb(51, 51, 51);">RTF </font><font style="color:rgb(51, 51, 51);">0.065</font> |
-|      <font style="color:rgb(51, 51, 51);">yamnet</font>      |    <font style="color:rgb(51, 51, 51);">yamnet\_3s</font>    |     <font style="color:rgb(51, 51, 51);">3s audio</font>     |   <font style="color:rgb(51, 51, 51);">FP16</font>    | <font style="color:rgb(51, 51, 51);">RTF </font><font style="color:rgb(51, 51, 51);">0.004</font> |
-|     <font style="color:rgb(51, 51, 51);">mms\_tts</font>     | <font style="color:rgb(51, 51, 51);">mms\_tts\_eng\_200</font> |    <font style="color:rgb(51, 51, 51);">token-200</font>     |   <font style="color:rgb(51, 51, 51);">FP16</font>    | <font style="color:rgb(51, 51, 51);">RTF </font><font style="color:rgb(51, 51, 51);">0.069</font> |
+|     **demo**      |       **model\_name**        | **inputs\_shape**** **** **** **** ** | **dtype** | **RK3588\*\*\*\*@single\_core** |
+| :---------------: | :--------------------------: | :-----------------------------------: | :-------: | :-----------------------------: |
+|     mobilenet     |        mobilenetv2-12        |           \[1, 3, 224, 224]           |   INT8    |              450.7              |
+|      resnet       |        resnet50-v2-7         |           \[1, 3, 224, 224]           |   INT8    |              110.1              |
+|      yolov5       |        yolov5s\_relu         |           \[1, 3, 640, 640]           |   INT8    |              66.1               |
+|                   |           yolov5n            |           \[1, 3, 640, 640]           |   INT8    |              82.5               |
+|                   |           yolov5s            |           \[1, 3, 640, 640]           |   INT8    |              48.4               |
+|                   |           yolov5m            |           \[1, 3, 640, 640]           |   INT8    |              20.9               |
+|      yolov6       |           yolov6n            |           \[1, 3, 640, 640]           |   INT8    |              106.4              |
+|                   |           yolov6s            |           \[1, 3, 640, 640]           |   INT8    |              36.4               |
+|                   |           yolov6m            |           \[1, 3, 640, 640]           |   INT8    |              17.8               |
+|      yolov7       |         yolov7-tiny          |           \[1, 3, 640, 640]           |   INT8    |              72.7               |
+|                   |            yolov7            |           \[1, 3, 640, 640]           |   INT8    |              11.4               |
+|      yolov8       |           yolov8n            |           \[1, 3, 640, 640]           |   INT8    |              73.5               |
+|                   |           yolov8s            |           \[1, 3, 640, 640]           |   INT8    |              38.0               |
+|                   |           yolov8m            |           \[1, 3, 640, 640]           |   INT8    |              16.2               |
+|    yolov8\_obb    |         yolov8n-obb          |           \[1, 3, 640, 640]           |   INT8    |              74.0               |
+|      yolov10      |           yolov10n           |           \[1, 3, 640, 640]           |   INT8    |              61.2               |
+|                   |           yolov10s           |           \[1, 3, 640, 640]           |   INT8    |              33.8               |
+|      yolo11       |           yolo11n            |           \[1, 3, 640, 640]           |   INT8    |              60.0               |
+|                   |           yolo11s            |           \[1, 3, 640, 640]           |   INT8    |              33.0               |
+|                   |           yolo11m            |           \[1, 3, 640, 640]           |   INT8    |              12.7               |
+|       yolox       |           yolox\_s           |           \[1, 3, 640, 640]           |   INT8    |              37.1               |
+|                   |           yolox\_m           |           \[1, 3, 640, 640]           |   INT8    |              16.0               |
+|      ppyoloe      |          ppyoloe\_s          |           \[1, 3, 640, 640]           |   INT8    |              32.5               |
+|                   |          ppyoloe\_m          |           \[1, 3, 640, 640]           |   INT8    |              15.8               |
+|    yolo\_world    |       yolo\_world\_v2s       |           \[1, 3, 640, 640]           |   INT8    |              22.1               |
+|                   |          clip\_text          |               \[1, 20]                |   FP16    |              95.8               |
+|   yolov8\_pose    |         yolov8n-pose         |           \[1, 3, 640, 640]           |   INT8    |              55.9               |
+|     deeplabv3     | deeplab-v3-plus-mobilenet-v2 |           \[1, 513, 513, 1]           |   INT8    |              34.0               |
+|    yolov5\_seg    |         yolov5n-seg          |           \[1, 3, 640, 640]           |   INT8    |              69.3               |
+|                   |         yolov5s-seg          |           \[1, 3, 640, 640]           |   INT8    |              36.8               |
+|                   |         yolov5m-seg          |           \[1, 3, 640, 640]           |   INT8    |              16.4               |
+|    yolov8\_seg    |         yolov8n-seg          |           \[1, 3, 640, 640]           |   INT8    |              60.8               |
+|                   |         yolov8s-seg          |           \[1, 3, 640, 640]           |   INT8    |              28.9               |
+|                   |         yolov8m-seg          |           \[1, 3, 640, 640]           |   INT8    |              12.6               |
+|       ppseg       |    ppseg\_lite\_1024x512     |           \[1, 3, 512, 512]           |   INT8    |              35.7               |
+|     mobilesam     |   mobilesam\_encoder\_tiny   |           \[1, 3, 448, 448]           |   FP16    |              10.0               |
+|                   |      mobilesam\_decoder      |           \[1, 1, 112, 112]           |   FP16    |              116.4              |
+|    RetinaFace     |    RetinaFace\_mobile320     |           \[1, 3, 320, 320]           |   INT8    |              227.2              |
+|                   |  RetinaFace\_resnet50\_320   |           \[1, 3, 320, 320]           |   INT8    |              49.2               |
+|      LPRNet       |            lprnet            |            \[1, 3, 24, 94]            |   FP16    |              586.4              |
+|     PPOCR-Det     |         ppocrv4\_det         |           \[1, 3, 480, 480]           |   INT8    |              50.7               |
+|     PPOCR-Rec     |         ppocrv4\_rec         |           \[1, 3, 48, 320]            |   FP16    |              73.9               |
+| lite\_transformer | lite-transformer-encoder-16  |        embedding-256, token-16        |   FP16    |              867.6              |
+|                   | lite-transformer-decoder-16  |        embedding-256, token-16        |   FP16    |              343.8              |
+|       clip        |         clip\_images         |           \[1, 3, 224, 224]           |   FP16    |               6.5               |
+|                   |          clip\_text          |               \[1, 20]                |   FP16    |              96.0               |
+|     wav2vec2      |  wav2vec2\_base\_960h\_20s   |               20s audio               |   FP16    |            RTF 0.133            |
+|      whisper      |      whisper\_base\_20s      |               20s audio               |   FP16    |            RTF 0.215            |
+|     zipformer     | zipformer-bilingual-zh-en-t  |            streaming audio            |   FP16    |            RTF 0.065            |
+|      yamnet       |          yamnet\_3s          |               3s audio                |   FP16    |            RTF 0.004            |
+|     mms\_tts      |      mms\_tts\_eng\_200      |               token-200               |   FP16    |            RTF 0.069            |
 
 **4.1.1.2 RKNN-Toolkit2**
 
