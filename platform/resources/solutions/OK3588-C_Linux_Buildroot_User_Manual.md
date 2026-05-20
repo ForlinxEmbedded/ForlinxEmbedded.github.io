@@ -622,7 +622,7 @@ OK-linux-source$ tree -L 1
 
 The configuration file path for the SDK is: (`OK-linux-source/device/rockchip/.chips/rk3588`). These files control the system compilation.
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">The naming rule for the configuration files is as follows:
+The naming rule for the configuration files is as follows:
 
 ```c
 <vendor>_<chip>_<model>-<extra>_<OS>_defconfig
@@ -803,7 +803,7 @@ The u-boot device tree file is:`OK-linux-source/u-boot/arch/arm/dts/OK3588-C-Lin
 
 ###### 3.2.2.2 Building Kernel
 
-If only compiling the <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">kernel,boot.img will be generated. 
+If only compiling the kernel,boot.img will be generated. 
 
 Path:`OK-linux-source/kernel-6.1/boot.img`. 
 
@@ -844,7 +844,7 @@ If only compiling buildroot, rootfs.img will be generated.
 
 Path: `OK-linux-source/buildroot/output/rockchip_ok3588-c/images/rootfs.ext2`. 
 
-The <font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">buildroot configuration file is `OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig`
+The buildroot configuration file is `OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig`
 
 Run the following command to configure the buildroot menu:
 
@@ -870,7 +870,7 @@ The meanings of each option are as follows:
 | Host utilities| Configure the tools that run on the host|
 | Legacy config options| Handle deprecated or obsolete Configuration Options |
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —> Libraries —> Graphics —>, find libraw and press y to select it, then exit and save the configuration.
+Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —> Libraries —> Graphics —>, find libraw and press y to select it, then exit and save the configuration.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773812793183_f56f8b56_8fb6_4348_9d11_345211bc77c2.png)
 
 Run the following command to compile buildroot individually:
@@ -1853,7 +1853,7 @@ Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then g
 
 ###### 3.1.1 Pin Calculation Method
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);">RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.
+RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.
 
 The naming convention for GPIOs is GPIOn\_xy, where x can be A, B, C, or D. In the GPIO numbering calculation, A corresponds to 1, B to 2, C to 3, and D to 4.
 
@@ -3556,7 +3556,7 @@ Transfer /org/bluez/obex/client/session1/transfer0
 
 A watchdog is essentially a count‑down timer driven by a hardware clock. During normal system operation, the application must write a specific value (i.e., “kicking the dog”) to the watchdog’s dedicated register within a set timeout period (e.g., 1 second) to reset the counter to its initial value. If the program enters an infinite loop, crashes, or fails to kick the dog before the timeout, the counter decrements to 0, triggering a predefined action such as a system reset or a software exception alert. 
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252);"> The OK3588‑C development board integrates an on‑chip watchdog.
+ The OK3588‑C development board integrates an on‑chip watchdog.
 
 
 
@@ -5859,7 +5859,7 @@ forlinx@ubuntu:~/rknn-llm/examples/rkllm_api_demo/deploy$ ./build-linux.sh
 
 Operation on Board.
 
-Copy the model files`DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm`from the`rknn-llm/examples/rkllm_api_demo/export`directory to the specified`rknn-llm/examples/rkllm_api_demo/deploy/install`subdirectory, and then push the final folder`demo_Linux_aarch64`to the board-side`/home/forlinx/`directory.
+Copy the model files `DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm `from the `rknn-llm/examples/rkllm_api_demo/export `directory to the specified `rknn-llm/examples/rkllm_api_demo/deploy/install` subdirectory, and then push the final folder`demo_Linux_aarch64`to the board-side`/home/forlinx/`directory.
 
 ```plain
 root@OK3588-C-buildroot:~# cd /home/forlinx/demo_Linux_aarch64
