@@ -38,6 +38,7 @@ SOFTWARE
    :maxdepth: 2
 
    T113_Linux5_4_OTA_Upgrade_Recovery_Solution
+   OK3588-C_Linux_Buildroot_User_Manual
 
 
 
