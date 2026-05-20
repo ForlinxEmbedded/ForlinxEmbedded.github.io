@@ -148,11 +148,13 @@ The OK3588 platform features a Type-C port for serial debugging and an on-board 
 ###### 3.2.1.1 Serial Port Driver Installation
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model.  There is "CP210x\_VCP\_Windows\_XP\_Vista.zip" under "TOOLS"->“Driver Tool”. Download and extract it to your current directory, choose the appropriate executable file based on your computer's configuration to install the driver.
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776397661305_7bdb0536_0067_4a27_97a0_9869de92afb4.png)
 
 ###### 3.2.1.2 Installing the Terminal Software PuTTY
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is PuTTY installation package “putty-64bit-0.71-installer” under "TOOLS"->“Debug Tool”. Download it to your computer and install PuTTY.
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776402431048_40641e90_5e96_4e07_aa79_2da433c0b8e4.png)
 
 ###### 3.2.1.3 How to Use PuTTY
@@ -161,8 +163,8 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step 1: Connect the PC to the Debug serial port of the OK3588-C using a Type-C cable. ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776411597715_082f849e_a92b_4b62_a437_cea45c07c0c3.png)
 
-Open the Windows Device Manager and check the detected COM port number under “Ports (COM \& LPT)” (e.g., COM3). Use the actual displayed port.
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747897279_d8f97a60_2ae3_4ad7_8e5c_ed3869dc9e8b.png)
+Open the Windows Device Manager and check the detected COM port number under “Ports (COM   \& LPT)” (e.g., COM3). Use the actual displayed port.
+ ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747897279_d8f97a60_2ae3_4ad7_8e5c_ed3869dc9e8b.png)
 
 Step 2: Open PuTTY. Select “Session”, set the “Serial line” to the COM port used by your computer, and set the baud rate to 115200.
                                      ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png)
