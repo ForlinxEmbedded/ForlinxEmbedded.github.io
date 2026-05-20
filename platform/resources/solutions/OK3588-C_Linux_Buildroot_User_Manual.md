@@ -174,7 +174,8 @@ Step 2: Open PuTTY. Select “Session”, set the “Serial line” to the COM p
 ​                                         ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png)
 
 Step 3: After completing the previous settings, enter the COM port number used by your computer in the “Saved Sessions” field (for example, use COM24). Save the configuration. When you reopen the serial port, you can simply click on the saved port number to apply the settings directly.
-                                         ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868779548_2ddbeaff_d435_4c85_b7ee_8b9dac122e2b.png)
+
+​                                         ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868779548_2ddbeaff_d435_4c85_b7ee_8b9dac122e2b.png)
 
 Step 4: Power on the development board. If the startup information appears as shown below, it indicates a successful boot. You can then press Enter to create a new command line.
 
@@ -203,7 +204,8 @@ The OK3588-C development board supports SSH login via Ethernet.
         
 
 To log in to the development board via SSH, 
-                                          ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png)        
+
+​                                          ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png)        
 
 After successful login, the following message is printed:
 
