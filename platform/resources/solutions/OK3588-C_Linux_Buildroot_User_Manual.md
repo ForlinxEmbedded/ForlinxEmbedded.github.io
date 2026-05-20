@@ -45,26 +45,24 @@ There are differences in the combination of CSI/DSI interfaces.
 
 FET3588 SoM
 
-![](image.png)
+![](image-1779243519740.png)
 
 
 FET3588J SoM
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774251741608-9f8f3ffd-207a-452d-a915-9b780f2e2446.png)
 
-
-
 FET3588S2 
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776674664196-fec0878c-bbcb-44d0-9f81-683efa511466.png)
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripherals cannot be used on the FET3588-C. 
 
-For details, please refer to the Interface section.
+For details, please refer to the interface section.
 
 OK3588-C
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1773454975472-8f93d706-b9ce-49b3-8bc9-c8b0b0e9f873.png)
 
-#### 1.4 Main Frequency Setting Description
+#### 1.4 Main Frequency Settings Description
 
 FET3588J-C and FET3588J-C2 SoM frequency description: 
 
@@ -89,7 +87,7 @@ Frequency Specifications for RK3588 and RK3588S2 Commercial-Grade SoMs:
 
 **⚠️Note: The default factory firmware and source code for the industrial-grade RK3588J System-on-Module (SoM) are configured to operate in overclocking mode. This setting is intended for maximum performance testing of the System-on-Chip (SoC). If you do not have specific performance requirements, it is advisable to switch to normal mode to ensure long-term stability.**
 
-Switch to "normal mode". You just need to add</font>`<font style="color:rgb(51, 51, 51); background-color: rgb(243, 244, 244);">#include "rk3588j.dtsi"</font>`<font style="color:rgb(51, 51, 51);">in the reference within the kernel device tree. The path is:</font><font style="color:rgb(41, 41, 41);"> </font>`<font style="color:rgb(41, 41, 41);">OK3588_Linux_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</font>`
+Switch to "normal mode". You just need to add \#include "rk3588j.dtsi" in the reference within the kernel device tree. The path is: OK3588_Linux_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi.
 
 #### 1.5 Overview
 
@@ -117,7 +115,9 @@ Summarizes common issues encountered during development and their corresponding 
 
 ### 2\. Packing List
 
-Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. As shown in the figure:
+Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. 
+
+As shown in the figure:
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1774856225187-5874b054-8055-4f01-bfd3-8bc703fc6af3.png)
 
 ### 3\. Quick Start
@@ -144,17 +144,17 @@ The OK3588 platform features a Type-C port for serial debugging and an on-board 
 + Software Requirements:  A serial terminal application must be installed on the PC Windows. There are various terminal programs available, and you may choose any one you are familiar with;
 + Hardware Requirements: Type-C, 12V.
 
-##### 3.2.1.1 Serial Port Driver Installation
+###### 3.2.1.1 Serial Port Driver Installation
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model.  There is "CP210x\_VCP\_Windows\_XP\_Vista.zip" under "TOOLS"->“Driver Tool”. Download and extract it to your current directory, choose the appropriate executable file based on your computer's configuration to install the driver.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776397661305-7bdb0536-0067-4a27-97a0-9869de92afb4.png)
 
-##### 3.2.1.2 Installing the Terminal Software PuTTY
+###### 3.2.1.2 Installing the Terminal Software PuTTY
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is PuTTY installation package “putty-64bit-0.71-installer” under "TOOLS"->“Debug Tool”. Download it to your computer and install PuTTY.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776402431048-40641e90-5e96-4e07-aa79-2da433c0b8e4.png)
 
-##### 3.2.1.3 How to Use PuTTY
+###### 3.2.1.3 How to Use PuTTY
 
 Take putty as an example to introduce the setting mode of the putty terminal:
 
@@ -164,10 +164,10 @@ Open the Windows Device Manager and check the detected COM port number under “
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776747897279-d8f97a60-2ae3-4ad7-8e5c-ed3869dc9e8b.png)
 
 Step 2: Open PuTTY. Select “Session”, set the “Serial line” to the COM port used by your computer, and set the baud rate to 115200.
-![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775869085036-c87d748c-a581-4738-af6e-e99b3b0c3566.png)
+                                     ![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775869085036-c87d748c-a581-4738-af6e-e99b3b0c3566.png)
 
 Step 3: After completing the previous settings, enter the COM port number used by your computer in the “Saved Sessions” field (for example, use COM24). Save the configuration. When you reopen the serial port, you can simply click on the saved port number to apply the settings directly.
-![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775868779548-2ddbeaff-d435-4c85-b7ee-8b9dac122e2b.png)
+                                     ![](https://cdn.nlark.com/yuque/0/2026/png/40395721/1775868779548-2ddbeaff-d435-4c85-b7ee-8b9dac122e2b.png)
 
 Step 4: Power on the development board. If the startup information appears as shown below, it indicates a successful boot. You can then press Enter to create a new command line.
 
@@ -185,17 +185,18 @@ OK3588-C-buildroot login: root (automatic login)
 root@OK3588-C-buildroot:~#
 ```
 
-#### 3.2.2 Ethernet Debug (SSH)
+##### 3.2.2 Ethernet Debug (SSH)
 
 The OK3588-C development board supports SSH login via Ethernet.
 
 + Connect the ETH0 network port on the development board and ensure that your computer can ping the board;
 + <font style="color:rgb(51, 51, 51);">The network interface is configured with a static IP address by default: 192.168.0.232</font>;
 + Log in as the root user (no password required).
-  ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776411283846-3174c193-eb9d-4393-8496-97fbf843c0a9.png)
+![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776411283846-3174c193-eb9d-4393-8496-97fbf843c0a9.png)
+        
 
 To log in to the development board via SSH, 
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776409587424-280ed0ff-6a11-4f1d-ad5d-50cd26a30289.png)
+                                     ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776409587424-280ed0ff-6a11-4f1d-ad5d-50cd26a30289.png)        
 
 After successful login, the following message is printed:
 
@@ -215,6 +216,7 @@ This section explains how to write the firmware image to the flash memory of the
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARES” → “Firmware Download.
+
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776748292833-2143298a-d912-4f3b-9884-c6f2e3fa727b.png)
 
 ### 3\. Firmware Flashing
@@ -236,26 +238,29 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM m
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776743702899-b33be381-d931-436c-b2cd-bbe043ecd706.png)
 
 Click the “Button”.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1772256499931-393b981a-36e8-45c1-87d2-735c03018473.png)
 
-The driver is installed successfully. Click OK.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776747796826-1bf0eb6e-41df-4a3b-af09-c54a3d0c9beb.png)
+​                                                 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1772256499931-393b981a-36e8-45c1-87d2-735c03018473.png)
+
+The driver is installed successfully. Click “OK“.
+
+​                                                ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776747796826-1bf0eb6e-41df-4a3b-af09-c54a3d0c9beb.png)
 
 ##### 3.1.2 OTG Full Flashing
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is “RKDevTool\_Release\_v3.37.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
+
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776739556462-f89f01fd-5ac0-495b-88c8-129f51e080d4.png)
 
 It is a development tool provided by Rockchip. Launch the application and connect the development board Type-C0 port to your computer host using a Type-C cable.
 
 The Type-C0 port, Recovery button, and Reset button are located on the board as shown in the following position:
 
-Hold down the development board’s Recovery button and do not release it.
+Hold down the development board Recovery button and do not release it.
 
 Press the Reset button to reset the system.
 
-After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : loader device found
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776740683969-23d45d81-3305-4cf6-bfd3-2aa804d5ca10.png)
+After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : loader device found.
+     ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776740683969-23d45d81-3305-4cf6-bfd3-2aa804d5ca10.png)
 
 1\. Click “Upgrade Firmware”;
 
@@ -290,34 +295,37 @@ qilinfeng@85d9c321e426:~/guowai/OK3588-linux-source/rockdev$ tree
 
 | File Name| Description|
 |----------|----------|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">boot.img</font>`| Linux kernel image, containing the kernel and Device Tree.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">env.img</font>`| U-Boot environment variables partition image.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">MiniLoaderAll.bin</font>`| Primary Boot Loader|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">misc.img</font>`| Miscellaneous partition image, used for passing system boot mode information.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">parameter.txt</font>`| Partition table configuration file, defining the start address, size, and name of each partition on eMMC/NAND.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">recovery.img</font>`| Recovery system image, used for system repair, OTA updates, or factory reset.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">rootfs.img</font>`| Root filesystem image, containing the directories, libraries, configurations, and applications required for Linux to run.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">uboot.img</font>`| U-Boot second-stage bootloader image, responsible for loading the kernel, device tree, and booting the system.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">update.img</font>`| Complete firmware update package, bundling all components into a single file for flashing all partitions at once.|
-| `<font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);">userdata.img</font>`| User data partition image, storing user-installed applications, configurations, and temporary data.|
+| `boot.img`| Linux kernel image, containing the kernel and Device Tree.|
+| `env.img`| U-Boot environment variables partition image.|
+| `MiniLoaderAll.bin`| Primary Boot Loader|
+| `misc.img`| Miscellaneous partition image, used for passing system boot mode information.|
+| `parameter.txt`| Partition table configuration file, defining the start address, size, and name of each partition on eMMC/NAND.|
+| `recovery.img`| Recovery system image, used for system repair, OTA updates, or factory reset.|
+| `rootfs.img`| Root filesystem image, containing the directories, libraries, configurations, and applications required for Linux to run.|
+| `uboot.img`| U-Boot second-stage bootloader image, responsible for loading the kernel, device tree, and booting the system.|
+| `update.img`| Complete firmware update package, bundling all components into a single file for flashing all partitions at once.|
+| `userdata.img`| User data partition image, storing user-installed applications, configurations, and temporary data.|
 
 Take the separate flashing userdata partition as an example to demonstrate the flashing method, which also uses the RKDevTool \_ Release \_ v3.37 for flashing.
 
 To connect the development board to your host computer, use a Type-C cable to link the Type-C port (TypeC0) on the board. First, press and hold the recovery key without releasing it. Next, press the reset key to reset the system. After approximately two seconds, you can release the recovery key. The system will then display the message “Find Loader Device.” At this point, place the compiled userdata.img file on your PC.
 
-Change the \`name\` field in the last row to \`userdata\`:
+Change the "name" field in the last row to \"userdata\":
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742712849-9a6e1cb0-6fac-47f7-8434-8ce8de69b36f.png)
 
-<font style="color:rgb(51, 51, 51);">Click</font>`<font style="color:rgb(51, 51, 51);">Dev Partition</font>`<font style="color:rgb(51, 51, 51);"></font>.
+<font style="color:rgb(51, 51, 51);">Click</font> `Dev Partition`.
 
 The system will automatically read the partition address.
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750522300-4055cd65-37ae-493b-8ddf-ddec358a8660.png)
 
-<font style="color:rgb(51, 51, 51);">Prompt whether to update the download address, click</font>`<font style="color:rgb(51, 51, 51);">Y</font>`<font style="color:rgb(51, 51, 51);">, and the partition table will be read successfully:</font>
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750533466-23854857-1e02-490c-8e91-ff506995bfa2.png)
+​                                               ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750522300-4055cd65-37ae-493b-8ddf-ddec358a8660.png)
 
-<font style="color:rgb(51, 51, 51);">Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click</font> `<font style="color:rgb(51, 51, 51);">Run</font>`<font style="color:rgb(51, 51, 51);">, it will automatically flash and restart.  
-</font>![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742816548-23d8b85f-102b-43b7-960c-76e850eaaa97.png)
+Prompt whether to update the download address, click "Yes" and the partition table will be read successfully:
+                                                             ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750533466-23854857-1e02-490c-8e91-ff506995bfa2.png)
+
+<font style="color:rgb(51, 51, 51);">Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click</font> `Run`<font style="color:rgb(51, 51, 51);">, it will automatically flash and restart. 
+</font>
+
+![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776742816548-23d8b85f-102b-43b7-960c-76e850eaaa97.png)
 
 #### 3.2 Flashing Firmware via TF Card
 
@@ -335,16 +343,21 @@ Before flashing firmware via USB OTG, please prepare:
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model, . There is “SDDiskTool\_v1.78.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750706410-398ea4cd-ba1d-470f-842d-747b90bd8288.png)
 
-Run it:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750894180-f7dabcb2-9047-46ab-b130-e78d3cdccc3b.png)
 
-<font style="color:rgb(51, 51, 51);">Select the disk, and check</font>`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Upgrade Firmware</font>`<font style="color:rgb(51, 51, 51);"> and update.img. Click</font>`<font style="color:rgb(51, 51, 51);">Create</font>`<font style="color:rgb(51, 51, 51);">to create.</font>
+
+Run it:
+
+​                                      ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750894180-f7dabcb2-9047-46ab-b130-e78d3cdccc3b.png)
+
+<font style="color:rgb(51, 51, 51);">Select the disk, and check</font> `Upgrade Firmware`; and `update.img`. Click `Create` to create.
+
 ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776750905035-53c11e8b-5807-47cd-b55c-4317f8ca2406.png)
 
-Creating upgrade disk, Data will lose in the disk, yes or no? select Y.
+Creating upgrade disk, Data will lose in the disk, yes or no? select "Yes".
 
 After successfully creating the card, the following prompt will appear:
-![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776751151322-327bbfce-8422-4651-bdb4-fc48fdb209fd.png)
+
+​                                                                    ![](https://cdn.nlark.com/yuque/0/2026/png/52751263/1776751151322-327bbfce-8422-4651-bdb4-fc48fdb209fd.png)                    
 
 <font style="color:rgb(51, 51, 51);">1. Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;</font>
 
@@ -352,7 +365,7 @@ After successfully creating the card, the following prompt will appear:
 
 <font style="color:rgb(51, 51, 51);">3. After flashing is complete, the serial terminal and display will output the following prompt information:</font>
 
-`<font style="color:rgb(51, 51, 51);background-color:rgb(243, 244, 244);">Please remove SD CARD!!!, wait for reboot.</font>`
+`Please remove SD CARD!!!, wait for reboot.`
 
 When prompted, pull out the TF card, and the system will automatically restart (please do not power off directly).
 
@@ -489,13 +502,13 @@ OK-linux-source$ curl -O -L https://github.com/FLembedded/buildroot_dl/releases/
 
 The download time for the tar package depends on your network speed. In this test, it averaged about 5 MB/s and completed in roughly 3 minutes. Typically, the download should take between 2 and 10 minutes.
 
-**Extract the archive directly into the buildroot directory.**
+Extract the archive directly into the buildroot directory.
 
 ```plain
 OK-linux-source$ tar xzf dl_packages.tar.gz  -C buildroot/
 ```
 
-**Delete it later.**
+Delete it later.
 
 ```plain
 OK-linux-source$ rm dl_packages.tar.gz
@@ -511,11 +524,11 @@ The SDK contains executable tools for Linux, macOS, and Windows. However, the to
 
 The compressed package size is 540 MB. The test speed is approximately 5 MB/s, with a download time of about 1 minute and 30 seconds. Typically, the download time ranges from 1 minute to 5 minutes.
 
-#### 1.5.1 Directory Structure
+##### 1.5.1 Directory Structure
 
 This section will separately describe the available tools under Windows, Linux, and Mac.
 
-##### 1.5.1.1 Windows
+###### 1.5.1.1 Windows
 
 ```plain
 windows/
@@ -542,7 +555,7 @@ windows/
 └── upgrade_tool_v2.46.zip # Command-line Upgrade Tool
 ```
 
-##### 1.5.1.2 Linux
+###### 1.5.1.2 Linux
 
 ```plain
 linux/
@@ -563,7 +576,7 @@ linux/
 └── ToolsRelease.txt
 ```
 
-##### 1.5.1.3 Mac
+###### 1.5.1.3 Mac
 
 ```plain
 mac/
@@ -621,9 +634,9 @@ extra: some extra features, could be empty
 OS: the operating system that will be running in product
 ```
 
-The SDK configuration files for OK3588-C/OK3588-C2 are:`<font style="color:rgb(15, 17, 21);">OK-linux-source/device/rockchip/.chips/rk3588/OK3588_C_buildroot_defconfig</font>`<font style="color:rgb(15, 17, 21);">.</font>
+The SDK configuration files for OK3588-C/OK3588-C2 are: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588_C_buildroot_defconfig`.
 
-<font style="color:rgb(15, 17, 21);">OK3588S2-C configuration file:</font>`<font style="color:rgb(15, 17, 21);">OK-linux-source/device/rockchip/.chips/rk3588/OK3588S2_C_buildroot_defconfig</font>`<font style="color:rgb(15, 17, 21);">.</font>
+OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588S2_C_buildroot_defconfig`<font style="color:rgb(15, 17, 21);">.</font>
 
 Taking the buildroot system SDK configuration files for OK3588-C/OK3588-C2 as an example:
 
