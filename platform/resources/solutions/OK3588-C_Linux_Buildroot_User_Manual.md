@@ -2809,16 +2809,16 @@ The Type-C interfaces are located on the board as indicated in the diagram below
 
 OK3588-C features two Type-C interfaces and supports DP display. Type-C1 only supports HOST mode.
 
-| Comparison Item             | Type-C0                                      | Type-C1                       |
-| --------------------------- | -------------------------------------------- | ----------------------------- |
-| USB maximum rate            | USB 3.1 Gen1（5Gbps）                        | USB 3.1 Gen1（5Gbps）         |
-| OTG supported               | ✅ Supports (Host/Device automatic switching) | ❌ Only Host mode              |
-| Device mode（ADB/flashing） | ✅ Yes                                        | ❌ No                          |
-| Host 模式（U 盘/键鼠）      | ✅ Yes                                        | ✅ Yes                         |
-| DP Alt Mode 视频输出        | ✅  Support（up to 4K@60Hz）                  | ✅ Support（up to 4K@60Hz）    |
-| Type-C PD protocol          | ✅ Support（require FUSB302）                 | ✅ Support（require FUSB302）  |
-| Plug Orientation Detection  | ✅ Support (via CC detection)                 | ✅  Support (via CC detection) |
-| USB Flashing                | ✅ Support（default flashing port）           | ❌ No                          |
+| Comparison Item                               | Type-C0                                      | Type-C1                       |
+| --------------------------------------------- | -------------------------------------------- | ----------------------------- |
+| USB maximum rate                              | USB 3.1 Gen1（5Gbps）                        | USB 3.1 Gen1（5Gbps）         |
+| OTG supported                                 | ✅ Supports (Host/Device automatic switching) | ❌ Only Host mode              |
+| Device mode（ADB/flashing）                   | ✅ Yes                                        | ❌ No                          |
+| Host mode (USB flash disk/keyboard and mouse) | ✅ Yes                                        | ✅ Yes                         |
+| DP Alt mode video output                      | ✅  Support（up to 4K@60Hz）                  | ✅ Support（up to 4K@60Hz）    |
+| Type-C PD protocol                            | ✅ Support（require FUSB302）                 | ✅ Support（require FUSB302）  |
+| Plug Orientation Detection                    | ✅ Support (via CC detection)                 | ✅  Support (via CC detection) |
+| USB Flashing                                  | ✅ Support（default flashing port）           | ❌ No                          |
 
 **⚠️Note: Since the RK3588S2 chip itself reduces the number of Type-C controllers, the OK3588S2-C board only has one Type-C interface (TypeC0). Port P23 is unavailable.**
 
