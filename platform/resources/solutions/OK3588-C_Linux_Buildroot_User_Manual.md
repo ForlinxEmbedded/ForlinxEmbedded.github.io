@@ -5241,6 +5241,7 @@ The test uses a lightweight image classification network. It describes the versi
 The inference result suggests an 88.5% probability that the image contains a Borzoi (Russian Wolfhound).
 
 The image used for this test is shown below:
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774666440305_ad6f4a06_db24_4454_a635_c3b10fa0bec6.jpeg)
 
 ##### Interface Call
