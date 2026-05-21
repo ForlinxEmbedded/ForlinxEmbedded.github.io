@@ -2537,6 +2537,7 @@ root@OK3588-C-buildroot:~# umount /run/media/mmcblk1p1
 The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD \_ arm/VDD \_ log, and configuring the wake-up source.
 
 Key positions are as follows:
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
 
 The driver files related to system standby are:

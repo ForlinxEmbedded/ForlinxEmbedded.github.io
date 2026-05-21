@@ -2744,8 +2744,8 @@ HPI Features [HPI_FEATURE: 0x01]: implementation based on CMD13
 <section id="id29">
 <h4>1. Introduction<a class="headerlink" href="#id29" title="Link to this heading"></a></h4>
 <p>The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD _ arm/VDD _ log, and configuring the wake-up source.</p>
-<p>Key positions are as follows:
-<img alt="Image" src="_images/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png" /></p>
+<p>Key positions are as follows:</p>
+<p><img alt="Image" src="_images/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png" /></p>
 <p>The driver files related to system standby are:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">kernel</span><span class="mf">-6.1</span><span class="o">/</span><span class="n">drivers</span><span class="o">/</span><span class="n">soc</span><span class="o">/</span><span class="n">rockchip</span><span class="o">/</span><span class="n">rockchip_pm_config</span><span class="p">.</span><span class="n">c</span>
 <span class="n">kernel</span><span class="mf">-6.1</span><span class="o">/</span><span class="n">drivers</span><span class="o">/</span><span class="n">firmware</span><span class="o">/</span><span class="n">rockchip_sip</span><span class="p">.</span><span class="n">c</span>
