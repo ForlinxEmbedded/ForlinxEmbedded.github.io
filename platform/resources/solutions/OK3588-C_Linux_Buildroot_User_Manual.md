@@ -259,7 +259,7 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM m
 <!-- 这是一张图片，ocr 内容为： -->
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
 
-Click the “Button”.
+Click the “Driver Installation”.
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
 
@@ -275,13 +275,13 @@ Please download from the Resource Download ([https://www.forlinx.net/resources/d
 
 It is a development tool provided by Rockchip. Launch the application and connect the development board Type-C0 port to your computer host using a Type-C cable.
 
-The Type-C0 port, Recovery button, and Reset button are located on the board as shown in the following position:
+The Type-C0 port, Recovery button, and Reset button are located on the board as shown in the following figure:
 
 Hold down the development board Recovery button and do not release it.
 
 Press the Reset button to reset the system.
 
-After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : loader device found.
+After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : Found ONE LOADER Device.
      ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
 
 1\. Click “Upgrade Firmware”;
@@ -290,7 +290,7 @@ After approximately two seconds, release the Recovery button. There will be prom
 
 3\. Click “Upgrade” to flash.
 
-If the loader is damaged and cannot enter Loader Mode, you can force the board into Maskrom Mode by holding down the Maskrom button (located to the right of the RTC battery holder on the carrier board) and then pressing the Reset button. At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming.
+If the loader is damaged and cannot enter Loader Mode, you can force the board into Maskrom Mode. To do this, hold down the Maskrom button (located to the right of the RTC battery holder on the carrier board) and then press the Reset button. At this point, the system will indicate that a Maskrom device has been detected. The programming process in Maskrom Mode is the same as in Loader Mode. It is recommended to use the update.img file for programming.
 
 **⚠️Note: Do not click “Device Partition Table” while in Maskrom Mode, as this operation is invalid. Flashing individually in Maskrom Mode will not clear the U-Boot environment variables.**
 
@@ -328,20 +328,19 @@ qilinfeng@85d9c321e426:~/guowai/OK3588-linux-source/rockdev$ tree
 | `update.img`| Complete firmware update package, bundling all components into a single file for flashing all partitions at once.|
 | `userdata.img`| User data partition image, storing user-installed applications, configurations, and temporary data.|
 
-Take the separate flashing userdata partition as an example to demonstrate the flashing method, which also uses the RKDevTool \_ Release \_ v3.37 for flashing.
+To demonstrate the flashing method using the separate flashing userdata partition, we will use RKDevTool_Release_v3.37 for this process.
 
-To connect the development board to your host computer, use a Type-C cable to link the Type-C port (TypeC0) on the board. First, press and hold the recovery key without releasing it. Next, press the reset key to reset the system. After approximately two seconds, you can release the recovery key. The system will then display the message “Find Loader Device.” At this point, place the compiled userdata.img file on your PC.
+First, connect the development board to your host computer using a Type-C cable linked to the Type-C port (TypeC0) on the board. Begin by pressing and holding the recovery key. While holding the recovery key, press the reset key to reset the system. After approximately two seconds, you can release the recovery key. The system will then display the message “ Found ONE LOADER Device.” At this point, ensure you have the compiled userdata.img file ready on your PC.
 
-Change the "name" field in the last row to \"userdata\":
+Finally, modify the “name” field in the last row to read “userdata.”
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776742712849_9a6e1cb0_6fac_47f7_8434_8ce8de69b36f.png)
 
-Click `Dev Partition`.
-
-The system will automatically read the partition address.
+Click `Dev Partition`. The system will automatically read the partition address.
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
 
-Prompt whether to update the download address, click "Yes" and the partition table will be read successfully:
+Prompt whether to update the download address, click "Yes" , you can see "Reading partition table success".
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
 
@@ -363,6 +362,7 @@ Before flashing firmware via USB OTG, please prepare:
 + 12V DC power supply
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model, . There is “SDDiskTool\_v1.78.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750706410_398ea4cd_ba1d_470f_842d_747b90bd8288.png)
 
 
@@ -371,7 +371,7 @@ Run it:
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
 
-Select the disk, and check `Upgrade Firmware`; and `update.img`. Click `Create` to create.
+Select the disk, and check `Upgrade Firmware`; and `update.img`. Click `Create`.
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750905035_53c11e8b_5807_47cd_b55c_4317f8ca2406.png)
 
@@ -438,16 +438,16 @@ forlinx@ubuntu:~$ source ~/.bashrc
 
 #### 1.2 Fetching Source Code Using Repo
 
-The Forlinx OK3588 BSP is managed via a manifest repository. Access permissions are required to fetch the source code. If you are unsure whether you have access permissions, you can click the GitHub repository link below to test it. If you can view the repository contents, it indicates you have permission; otherwise, please contact Forlinx to join the team and obtain the required permissions.
+The Forlinx OK3588 BSP is managed through a manifest repository, which requires access permissions to retrieve the source code. If you're uncertain about your access permissions, you can check by clicking the GitHub repository link below. If you can view the contents of the repository, it means you have the necessary permission. If not, please reach out to Forlinx to request access and join the team.
 
-Meanwhile, when pulling from GitHub, please configure a key to establish a connection with GitHub. If you have not yet configured GitHub authentication on your local machine, you can refer to Section 1.3 below for setup instructions. 
+When pulling from GitHub, please configure a key to establish a connection. If you have not yet set up GitHub authentication on your local machine, refer to Section 1.3 below for setup instructions.
 
 ```plain
 # manifest repository address
 https://github.com/FLembedded/manifests_linux
 ```
 
-Once all the above requirements are met, you can directly follow the steps below to pull the source code:
+Once all the above requirements are met, you can follow the following steps to pull the source code:
 
 ##### 1.2.1 Creating a Working Directory
 
@@ -468,18 +468,18 @@ forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:FLembedded/manifests_linux.
 forlinx@ubuntu:~/rk3588$ yes | repo sync
 ```
 
-Pipelining is used to transmit `yes`, because a script is called to pull some compressed packages. If you synchronize the code directly with the`repo sync `command, you can also manually enter `yes`or `always`continue when the repo asks whether to call the script.
+Pipelining is utilized to transmit `yes` because a script is invoked to retrieve some compressed packages. If you synchronize the code directly using the `repo sync` command, you can also manually respond with `yes` or `always continue` when prompted by the repository about calling the script.
 
 ⚠️**Note:**
 
 + **The first synchronization may take a long time, depending on the project size and your network conditions;**
-+ **If synchronization is interrupted, directly re-run repo sync `repo sync` ; it supports resumption from the point of failure;**
-+ **If your network is unstable, it is recommended to reduce the concurrency (e.g. `-j4`). Excessive concurrency may lead to connection failures.**
++ **If synchronization is interrupted, directly re-run `repo sync` ; it supports resumption from the point of failure;**
++ **If your network is unstable, it is recommended to reduce the concurrency (e.g. `-j4`). Excessive concurrency may lead to connection failures;**
 + **Since `OK-linux-source/external/camera_engine_rkaiq` repository is  large, it's not managed by git. If you need to modify its contents, please set up a Git repository locally.**
 
 #### 1.3 Configuring GitHub Authentication
 
-You must configure GitHub authentication on your local machine for the repo tool to pull code successfully. This source repository is managed via SSH, so only the SSH authentication method is described here.
+To successfully pull code using the repo tool, it's essential to configure GitHub authentication on your local machine. Since this source repository is managed through SSH, only the SSH authentication method will be covered here. 
 
 ##### 1.3.1 Generating an SSH Key Pair
 
@@ -487,7 +487,7 @@ You must configure GitHub authentication on your local machine for the repo tool
 forlinx@ubuntu:~$ ssh-keygen -t ed25519 -C "user@email.com"
 ```
 
-After executing the command, you can press Enter all the way to use the default path. Two files will be generated:
+When you execute the command, you can simply press Enter repeatedly to accept the default path settings. As a result, two files will be generated.
 
 ```plain
 forlinx@ubuntu:~$ ls ~/.ssh/
