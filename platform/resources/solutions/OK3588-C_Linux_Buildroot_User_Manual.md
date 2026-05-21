@@ -261,11 +261,11 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM m
 
 Click the “Button”.
 
-​                                                 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
 
 The driver is installed successfully. Click “OK“.
 
-​                                                ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
 
 ##### 3.1.2 OTG Full Flashing
 
@@ -339,13 +339,13 @@ Click `Dev Partition`.
 
 The system will automatically read the partition address.
 
-​                                               ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
 
 Prompt whether to update the download address, click "Yes" and the partition table will be read successfully:
-                                                             ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
+
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
 
 Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click `Run`, it will automatically flash and restart. 
-
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776742816548_23d8b85f_102b_43b7_960c_76e850eaaa97.png)
 
@@ -369,7 +369,7 @@ Please download from the Resource Download ([https://www.forlinx.net/resources/d
 
 Run it:
 
-​                                      ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
 
 Select the disk, and check `Upgrade Firmware`; and `update.img`. Click `Create` to create.
 
@@ -379,7 +379,7 @@ Creating upgrade disk, Data will lose in the disk, yes or no? select "Yes".
 
 After successfully creating the card, the following prompt will appear:
 
-​                                                                    ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)                    
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)                    
 
 1. Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
 
