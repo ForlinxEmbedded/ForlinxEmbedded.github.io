@@ -656,11 +656,11 @@ extra: some extra features, could be empty
 OS: the operating system that will be running in product
 ```
 
-The SDK configuration files for OK3588-C/OK3588-C2 are: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588_C_buildroot_defconfig`.
+OK3588-C/OK3588-C2  SDK configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588_C_buildroot_defconfig`.
 
 OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK3588S2_C_buildroot_defconfig`.
 
-Taking the buildroot system SDK configuration files for OK3588-C/OK3588-C2 as an example:
+As an example, refer to the Buildroot SDK configuration file for OK3588-C/3588-C2:
 
 ```c
 RK_BUILDROOT_BASE_CFG="ok3588-c"            # set the config fragments to be used during buildroot compilation
@@ -680,7 +680,7 @@ The paths for the uboot, kernel, and buildroot configuration files as well as th
 
 #### 2.3 Partitions
 
-<font style="color:rgb(64, 64, 64);background-color:rgb(252, 252, 252); The following parameter file configures the location of the firmware partitions, with the path: `OK-linux-source/device/rockchip/rk3588/parameter`.
+The following parameter file configures the location of the firmware partitions, with the path: `OK-linux-source/device/rockchip/rk3588/parameter`.
 
 ```c
 FIRMWARE_VER: 1.0
@@ -699,11 +699,11 @@ uuid:rootfs=614e0000-0000-4b53-8000-1d28000054a9
 uuid:boot=7A3F0000-0000-446A-8000-702F00006273
 ```
 
-The “CMDLINE” parameter is a crucial element in the configuration process. For example, in the notation "0x00002000@0x00004000(uboot)", "0x00004000" represents the starting block address of the uboot partition, while "0x00002000" indicates the size of that partition. 
+The "CMDLINE" parameter plays a vital role in the configuration process. For instance, in the notation "0x00002000@0x00004000(uboot)", "0x00004000" signifies the starting block address of the uboot partition, while "0x00002000" indicates the size of that partition.
 
-To determine the starting address of the next partition, you add the current starting address to the size of the partition. The values mentioned are measured in blocks, with each block equal to 512 bytes. 
+To find the starting address of the next partition, you add the current starting address to the partition's size. The values provided are measured in blocks, with each block being equal to 512 bytes.
 
-Based on this information, the size of the uboot partition is 0x00002000, which is equivalent to 8192 blocks. This results in a total capacity of 8192 × 512 bytes, or 8192 × 512 / 1024 / 1024 = 4 MiB.
+According to this information, the size of the uboot partition is 0x00002000, which is equivalent to 8192 blocks. This results in a total capacity of 8192 × 512 bytes, or 8192 × 512 / 1024 / 1024 = 4 MiB.
 
 ### 3\. Building SDK Images
 
@@ -711,7 +711,7 @@ Based on this information, the size of the uboot partition is 0x00002000, which 
 
 ##### 3.1.1 Configuring the Build Environment
 
-<font style="color:rgb(0,0,0);">It is recommended to use Ubuntu 22.04 or a later version for compilation.
+It is recommended to use Ubuntu 22.04 or a later version for compilation.
 
 Execute the following commands in your build environment (the installation commands apply to Ubuntu 22.04):
 
@@ -726,7 +726,7 @@ gpgv2 cpp-aarch64-linux-gnu libgmp-dev libmpc-dev bc python-is-python3 python2 \
 fakeroot p7zip-full gettext
 ```
 
-If compilation encounters errors, you can install the corresponding software packages based on the error messages. Among them:
+If compilation encounters errors, you can install the corresponding software packages based on the error messages. 
 
 1\. Python requires version 3.6 or higher;
 
@@ -736,7 +736,7 @@ If compilation encounters errors, you can install the corresponding software pac
 
 ##### 3.1.2 Configuring the SDK Build Options
 
-All compilation for RK3588 is performed using the build.sh script located in the SDK directory. The usage of build.sh:
+All RK3588 compilation is handled through the **build.sh** script in the SDK directory. The usage of build.sh:
 
 | ./build.sh chip| choose your chip|
 |----------|----------|
@@ -748,10 +748,11 @@ All compilation for RK3588 is performed using the build.sh script located in the
 | ./build.sh buildroot-config| modify buildroot defconfig|
 | ./build.sh updateimg| build update image|
 
-After entering the SDK root directory, execute `./build.sh chip`, and select the corresponding option based on the target SoM:
-
-+ If compiling for OK3588-C or OK3588-C2, enter the number 3 to select the “OK3588\_C\_buildroot” option;
-+ If compiling for OK3588S2-C, enter the number 1 to select the “OK3588S2\_C\_buildroot” option.
++ Navigate to the SDK root directory.
++ Run `./build.sh chip`.
++ Select the corresponding option based on the target SoM:
+  - For **OK3588-C / OK3588-C2**: Enter `3` for “OK3588_C_buildroot”
+  - For **OK3588S2-C**: Enter `1` for “OK3588S2_C_buildroot”
 
 ```c
 OK-linux-source$ ./build.sh chip
@@ -781,9 +782,10 @@ Execute the following command to perform a full compilation:
 OK-linux-source$./build.sh all
 ```
 
-A full compilation typically takes 1 to 2 hours. The actual duration depends on the host performance and network conditions.
+A full build typically takes **1–2 hours**, depending on host performance and network conditions.
 
-After compilation is complete, the system images will be generated under the`OK-linux-source/rockdev` directory. The specific directory structure is as follows (where each image file is a symbolic link pointing to the source file):
+Once completed, system images are generated under `OK-linux-source/rockdev/`.
+Directory structure (symbolic links point to actual source files):
 
 ```c
 OK-linux-source/rockdev$ tree
@@ -801,7 +803,7 @@ OK-linux-source/rockdev$ tree
 
 ```
 
-Among them,`update.img`  is the packaged complete image file, suitable for full system flashing via OTG or TF card.
+Among them, `update.img` is the fully packaged system image, suitable for complete system flashing via OTG or TF card.
 
 ##### 3.2.2 Partial Compilation
 
@@ -2583,9 +2585,9 @@ The following`rockchip,sleep-mode-config`can be added:
 
 The relevant configurations must be set based on the specific product wake-up source requirements. For example, if USB wake-up is required, the USB power and clock cannot be turned off during standby. Therefore, options such as RKPM\_SLP\_ARMOFF\_LOGOFF, RKPM\_SLP\_PMU\_DIS\_OSC, and RKPM\_SLP\_PMU\_PMUALIVE\_32K should not be configured.
 
-##### <font style="color:rgb(0,0,0);">2.2 Wake-up Configuration
+##### 2.2 Wake-up Configuration
 
-`<font style="color:rgb(0,0,0);">rockchip,wakeup-config`The following configurations can be added:
+`rockchip,wakeup-config`The following configurations can be added:
 
 | RKPM\_GPIO\_WKUP\_EN      | GPIO0 WAKE UP                                                |
 | ------------------------- | ------------------------------------------------------------ |
@@ -2612,9 +2614,9 @@ The relevant configurations must be set based on the specific product wake-up so
 
 **This mode uses the internal timer of the PMU for wake-up. It generates an interrupt after a default timeout of 1 second and is generally used only during the development phase for testing sleep/wake functionality.**
 
-##### <font style="color:rgb(0,0,0);">2.3 IO Retention Configuration
+##### 2.3 IO Retention Configuration
 
-<font style="color:rgb(0,0,0);">In sleep scenarios where vdd\_logic is powered off, if you still wish to maintain the level of a specific IO, this attribute can be configured. Configuration:
+In sleep scenarios where vdd\_logic is powered off, if you still wish to maintain the level of a specific IO, this attribute can be configured. Configuration:
 
 ```c
 rockchip,sleep-io-ret-config = < (0
@@ -2624,7 +2626,7 @@ rockchip,sleep-io-ret-config = < (0
 >;
 ```
 
-<font style="color:rgb(0,0,0);">Configuration source:
+Configuration source:
 
 ```c
 // Support the configuration of the following io domain
@@ -3582,7 +3584,7 @@ A watchdog is essentially a count‑down timer driven by a hardware clock. Durin
 
 
 
-The watchdog driver source code is located in the kernel at:<font style="color:rgb(0,0,0);"> `<font style="color:rgb(0,0,0);">kernel/drivers/watchdog/dw_wdt.c`
+The watchdog driver source code is located in the kernel at: `kernel/drivers/watchdog/dw_wdt.c`
 
 #### 2\. Device Tree
 
@@ -4748,7 +4750,7 @@ The RK3588 VOP2 internally contains 4 Video Ports (VPs), each capable of indepen
 
 **⚠️Note: The RK3588 HDMI and DP interfaces support 8K output, but in 8K mode, they require the simultaneous occupation of both VP0 and VP1. If a product needs to support 8K display, do not connect other display interfaces to VP1.**
 
-**The connection relationship between<font style="color:rgb(0,0,0);">RK3588 VP ****<font style="color:rgb(0,0,0);">and the various display interfaces is as follows:**
+**The connection relationship betweenRK3588 VP ****and the various display interfaces is as follows:**
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776818967804_102c91de_b34a_4229_aac7_a04329d77dcc.jpeg)
 
