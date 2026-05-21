@@ -125,9 +125,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#id4">1. Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id5">2. Device Tree</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id6">3. Application</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#modifying-ip-address">3.1 Modifying IP Address</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#network-status">3.2 Network Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#network-connectivity">3.3 Network Connectivity</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#frequency">Frequency</a></li>
@@ -195,7 +192,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#id38">1. Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id39">2. Device Tree</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#usb-device-driver-support">3. USB Device Driver Support</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#hid-device-support">3.2 HID Device Support</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id40">4. Application</a></li>
 </ul>
 </li>
@@ -223,9 +219,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#id52">1. Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id53">2. Device Tree</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id54">3. Application</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ov13855-test">3.2 OV13855 Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ov5645-test">3.3 OV5645 Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#hdmi-in-test">3.4 HDMI IN Test</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#display">Display</a><ul>
@@ -242,8 +235,6 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#machine-learning">Machine Learning</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#npu">NPU</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id60">1. Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id62">3. Application</a></li>
 </ul>
 </li>
 </ul>
@@ -253,9 +244,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#packaging-the-user-program-into-the-image">1.1 Packaging the User Program into the Image</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#auto-starting-the-user-program">2. Auto-starting the User Program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#customized-logo">3. Customized Logo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rknpu-development">4. RKNPU Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#auto-starting-the-user-program">2. Auto-starting the User Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#customized-logo">3. Customized Logo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rknpu-development">4. RKNPU Development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#npu-description">4.1 NPU Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#development-environment-setup">4.2 Development Environment Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#model-deployment-examples">4.3 Model Deployment Examples</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rknn-toolkit2-supported-operator-list">4.4 RKNN Toolkit2 Supported Operator List</a></li>
 </ul>
@@ -1799,11 +1792,10 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </section>
 <section id="id6">
 <h4>3. Application<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
-</section>
 <section id="modifying-ip-address">
-<h4>3.1 Modifying IP Address<a class="headerlink" href="#modifying-ip-address" title="Link to this heading"></a></h4>
+<h5>3.1 Modifying IP Address<a class="headerlink" href="#modifying-ip-address" title="Link to this heading"></a></h5>
 <section id="dhcpc-ip">
-<h5>3.1.1 DHCPC IP<a class="headerlink" href="#dhcpc-ip" title="Link to this heading"></a></h5>
+<h6>3.1.1 DHCPC IP<a class="headerlink" href="#dhcpc-ip" title="Link to this heading"></a></h6>
 <p>Modify the following configuration file to set eth0 to obtain the IP automatically:<code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-eth0.network</span></code>.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">vi</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">network</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">eth0</span><span class="p">.</span><span class="n">network</span><span class="w">   	  </span><span class="c1">//Open the configuration file</span>
 <span class="p">[</span><span class="n">Match</span><span class="p">]</span>
@@ -1819,7 +1811,7 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </div>
 </section>
 <section id="static-ip">
-<h5>3.1.2 Static IP<a class="headerlink" href="#static-ip" title="Link to this heading"></a></h5>
+<h6>3.1.2 Static IP<a class="headerlink" href="#static-ip" title="Link to this heading"></a></h6>
 <p>You can modify the default IP address by modifying the following configuration file:<code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-eth0.network</span></code>。</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:/</span><span class="err">#</span><span class="w"> </span><span class="n">vi</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">network</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">eth0</span><span class="p">.</span><span class="n">network</span><span class="w">  </span>
 <span class="p">[</span><span class="n">Match</span><span class="p">]</span>
@@ -1842,10 +1834,10 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </section>
 </section>
 <section id="network-status">
-<h4>3.2 Network Status<a class="headerlink" href="#network-status" title="Link to this heading"></a></h4>
+<h5>3.2 Network Status<a class="headerlink" href="#network-status" title="Link to this heading"></a></h5>
 <p>Connect the network cable to the ETH0 port of the board before the test.</p>
 <section id="ifconfig">
-<h5>3.2.1 Ifconfig<a class="headerlink" href="#ifconfig" title="Link to this heading"></a></h5>
+<h6>3.2.1 Ifconfig<a class="headerlink" href="#ifconfig" title="Link to this heading"></a></h6>
 <p><code class="docutils literal notranslate"><span class="pre">ifconfig</span></code>is a classic Network Interface Configuration and Viewing Tools.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#View all network interface information.</span>
 <span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">ifconfig</span>
@@ -1870,7 +1862,7 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </div>
 </section>
 <section id="ethtool">
-<h5>3.2.2 Ethtool<a class="headerlink" href="#ethtool" title="Link to this heading"></a></h5>
+<h6>3.2.2 Ethtool<a class="headerlink" href="#ethtool" title="Link to this heading"></a></h6>
 <p><code class="docutils literal notranslate"><span class="pre">ethtool</span></code> is a necessary tool for Linux system to troubleshoot physical layer and driver layer problems. It provides more in-depth hardware-level information than the ifconfig <code class="docutils literal notranslate"><span class="pre">ifconfig</span></code>command.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp"># Show the basic settings of eth0</span>
 <span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">network</span><span class="err">#</span><span class="w"> </span><span class="n">ethtool</span><span class="w"> </span><span class="n">eth0</span>
@@ -1913,9 +1905,9 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </section>
 </section>
 <section id="network-connectivity">
-<h4>3.3 Network Connectivity<a class="headerlink" href="#network-connectivity" title="Link to this heading"></a></h4>
+<h5>3.3 Network Connectivity<a class="headerlink" href="#network-connectivity" title="Link to this heading"></a></h5>
 <section id="ping">
-<h5>3.3.1 Ping<a class="headerlink" href="#ping" title="Link to this heading"></a></h5>
+<h6>3.3.1 Ping<a class="headerlink" href="#ping" title="Link to this heading"></a></h6>
 <p>Configure the network IP according to your actual network conditions. Network connectivity can be tested using the ping command (it’s necessary to ping an IP within the same subnet).</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">network</span><span class="err">#</span><span class="w"> </span><span class="n">ping</span><span class="w"> </span><span class="mf">192.168.0.100</span>
 <span class="n">PING</span><span class="w"> </span><span class="mf">192.168.0.100</span><span class="w"> </span><span class="p">(</span><span class="mf">192.168.0.100</span><span class="p">)</span><span class="w"> </span><span class="mi">56</span><span class="p">(</span><span class="mi">84</span><span class="p">)</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">data</span><span class="p">.</span>
@@ -1932,7 +1924,7 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </div>
 </section>
 <section id="iperf3">
-<h5>3.3.2 Iperf3<a class="headerlink" href="#iperf3" title="Link to this heading"></a></h5>
+<h6>3.3.2 Iperf3<a class="headerlink" href="#iperf3" title="Link to this heading"></a></h6>
 <p>Configure the network IP according to your actual network conditions. The network throughput can be tested using theiperf3 tool.</p>
 <p>Server:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">iperf3</span><span class="p">.</span><span class="n">exe</span><span class="w"> </span><span class="o">-</span><span class="n">s</span>
@@ -1965,11 +1957,12 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 <p>The results indicate a stable bitrate between 948 - 953 Mbits/sec, confirming that the Gigabit network connection is functioning normally with good performance.</p>
 </section>
 <section id="sftp">
-<h5>3.3.3 SFTP<a class="headerlink" href="#sftp" title="Link to this heading"></a></h5>
+<h6>3.3.3 SFTP<a class="headerlink" href="#sftp" title="Link to this heading"></a></h6>
 <p>The OK3588 development board supports SFTP services, which are enabled automatically upon startup. Once the IP address is configured, the board can be used as an SFTP server. The following describes how to utilize the FTP tool for file transfer.</p>
 <p>Install the file Zilla tool on windows and follow the steps shown in the figure below. The user name and password are forlinx.</p>
 <p>Open the filezilla tool, click File, and select Site Manager.
 <img alt="Image" src="_images/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png" /></p>
+</section>
 </section>
 </section>
 </section>
@@ -2119,8 +2112,8 @@ root@OK3588-C-buildroot:~#<span class="w"> </span><span class="nb">echo</span><s
 <h4>3. Application<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
 <p>Please refer to the PinMUX table for the usage of the GPIO pins.</p>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>).</p>
-<p>Select the “OK3588-C/C2” or “OK3588S2-C” page according to the model no., then go to “DOCUMENTS” -&gt; “PinMUX” to view the pin multiplexing configuration.
-<img alt="Image" src="_images/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png" /></p>
+<p>Select the “OK3588-C/C2” or “OK3588S2-C” page according to the model no., then go to “DOCUMENTS” -&gt; “PinMUX” to view the pin multiplexing configuration.</p>
+<p><img alt="Image" src="_images/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png" /></p>
 <section id="id10">
 <h5>3.1 Native GPIO<a class="headerlink" href="#id10" title="Link to this heading"></a></h5>
 <section id="pin-calculation-method">
@@ -3573,12 +3566,11 @@ tcsetattr(fd, TCSANOW, &amp;options);
 </table>
 <p>The default kernel configuration includes support for common drivers. To enable or remove specific drivers, refer to Section 3.2.2.2 in the OS Development guide for configuring and compiling the kernel.</p>
 </section>
-</section>
 <section id="hid-device-support">
-<h4>3.2 HID Device Support<a class="headerlink" href="#hid-device-support" title="Link to this heading"></a></h4>
+<h5>3.2 HID Device Support<a class="headerlink" href="#hid-device-support" title="Link to this heading"></a></h5>
 <p>HID (Human Interface Device) is one of the most widely used USB device classes, covering input devices such as keyboards, mice, touchscreens, and game controllers.</p>
 <section id="kernel-configuration">
-<h5>3.2.1 Kernel Configuration<a class="headerlink" href="#kernel-configuration" title="Link to this heading"></a></h5>
+<h6>3.2.1 Kernel Configuration<a class="headerlink" href="#kernel-configuration" title="Link to this heading"></a></h6>
 <p>According to Section 3.5.3 of the RK official manual, the kernel configuration options for USB HID are as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Device Drivers ---&gt;
     [*] HID support
@@ -3589,7 +3581,7 @@ tcsetattr(fd, TCSANOW, &amp;options);
 </div>
 </section>
 <section id="vid-pid-list-and-kernel-source-path">
-<h5>3.2.3 VID/PID List and Kernel Source Path<a class="headerlink" href="#vid-pid-list-and-kernel-source-path" title="Link to this heading"></a></h5>
+<h6>3.2.2 VID/PID List and Kernel Source Path<a class="headerlink" href="#vid-pid-list-and-kernel-source-path" title="Link to this heading"></a></h6>
 <p>Each USB device is uniquely identified by its VID (Vendor ID) and PID (Product ID). The kernel loads the appropriate driver by matching the VID/PID. The kernel loads the appropriate driver by matching the VID/PID.</p>
 <p>The definitions for VID/PID and the driver source code related to HID devices are located in the following paths:</p>
 <table class="docutils align-default">
@@ -3623,6 +3615,7 @@ tcsetattr(fd, TCSANOW, &amp;options);
 <span class="n">OK</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">source$</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="s">&quot;LOGITECH&quot;</span><span class="w"> </span><span class="n">kernel</span><span class="o">/</span><span class="n">drivers</span><span class="o">/</span><span class="n">hid</span><span class="o">/</span><span class="n">hid</span><span class="o">-</span><span class="n">ids</span><span class="p">.</span><span class="n">h</span>
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 <section id="id40">
@@ -4384,9 +4377,8 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 <section id="uvc-camera-test">
 <h5>3.1 UVC Camera Test<a class="headerlink" href="#uvc-camera-test" title="Link to this heading"></a></h5>
 <p>Here, the Logitech C270 is used for testing. Plug the USB camera into the development board, and the UVC driver will be automatically installed.</p>
-</section>
 <section id="camera-detection-and-format-support-query">
-<h5>3.1.1 <strong>Camera Detection and Format Support Query</strong><a class="headerlink" href="#camera-detection-and-format-support-query" title="Link to this heading"></a></h5>
+<h6>3.1.1 <strong>Camera Detection and Format Support Query</strong><a class="headerlink" href="#camera-detection-and-format-support-query" title="Link to this heading"></a></h6>
 <p>Camera detection:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">v4l2</span><span class="o">-</span><span class="n">ctl</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">devices</span>
 <span class="n">UVC</span><span class="w"> </span><span class="n">Camera</span><span class="w"> </span><span class="p">(</span><span class="mo">046</span><span class="n">d</span><span class="o">:</span><span class="mi">0825</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">usb</span><span class="o">-</span><span class="n">fc800000</span><span class="p">.</span><span class="n">usb</span><span class="mi">-1</span><span class="p">)</span><span class="o">:</span>
@@ -4643,7 +4635,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="camera-capture-format-query">
-<h5>3.1.2 Camera Capture Format Query<a class="headerlink" href="#camera-capture-format-query" title="Link to this heading"></a></h5>
+<h6>3.1.2 Camera Capture Format Query<a class="headerlink" href="#camera-capture-format-query" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">v4l2</span><span class="o">-</span><span class="n">ctl</span><span class="w"> </span><span class="o">-</span><span class="n">V</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">video74</span>
 <span class="n">Format</span><span class="w"> </span><span class="n">Video</span><span class="w"> </span><span class="n">Capture</span><span class="o">:</span>
 <span class="w">        </span><span class="n">Width</span><span class="o">/</span><span class="n">Height</span><span class="w">      </span><span class="o">:</span><span class="w"> </span><span class="mi">640</span><span class="o">/</span><span class="mi">480</span>
@@ -4660,7 +4652,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="camera-preview-and-photo-capture">
-<h5>3.1.3 Camera Preview and Photo Capture<a class="headerlink" href="#camera-preview-and-photo-capture" title="Link to this heading"></a></h5>
+<h6>3.1.3 Camera Preview and Photo Capture<a class="headerlink" href="#camera-preview-and-photo-capture" title="Link to this heading"></a></h6>
 <p>Camera image preview:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w">  </span><span class="n">v4l2src</span><span class="w"> </span><span class="n">device</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">video74</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">videoconvert</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">raw</span><span class="p">,</span><span class="n">format</span><span class="o">=</span><span class="n">NV12</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">640</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 <span class="n">Setting</span><span class="w"> </span><span class="n">pipeline</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">PAUSED</span><span class="w"> </span><span class="p">...</span>
@@ -4690,7 +4682,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </section>
 </section>
 <section id="ov13855-test">
-<h4>3.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h4>
+<h5>3.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h5>
 <p>For raw sensors like OV13855, each sensor corresponds to 5 device nodes (e.g., /dev/videoX):</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">class</span><span class="o">/</span><span class="n">video4linux</span><span class="o">/</span><span class="n">video</span><span class="o">*/</span><span class="n">name</span>
 <span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">class</span><span class="o">/</span><span class="n">video4linux</span><span class="o">/</span><span class="n">video0</span><span class="o">/</span><span class="n">name</span><span class="o">:</span><span class="n">stream_cif_mipi_id0</span>
@@ -4729,7 +4721,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 <p><code class="docutils literal notranslate"><span class="pre">CAM1：</span></code>platform:rkisp0-vir0</p>
 <p><code class="docutils literal notranslate"><span class="pre">CAM2：</span></code>platform:rkisp0-vir1</p>
 <section id="id55">
-<h5>3.2.1 Camera Detection and Format Support Query<a class="headerlink" href="#id55" title="Link to this heading"></a></h5>
+<h6>3.2.1 Camera Detection and Format Support Query<a class="headerlink" href="#id55" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">v4l2</span><span class="o">-</span><span class="n">ctl</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">devices</span>
 <span class="n">rkisp_mainpath</span><span class="w"> </span><span class="p">(</span><span class="n">platform</span><span class="o">:</span><span class="n">rkisp0</span><span class="o">-</span><span class="n">vir0</span><span class="p">)</span><span class="o">:</span>
 <span class="w">        </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">video55</span>
@@ -4754,7 +4746,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="camera-photo-capture-using-main-path">
-<h5>3.2.2 Camera Photo Capture (Using Main Path)<a class="headerlink" href="#camera-photo-capture-using-main-path" title="Link to this heading"></a></h5>
+<h6>3.2.2 Camera Photo Capture (Using Main Path)<a class="headerlink" href="#camera-photo-capture-using-main-path" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">v4l2src</span><span class="w"> </span><span class="n">device</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">video55</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">videoconvert</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">raw</span><span class="p">,</span><span class="n">format</span><span class="o">=</span><span class="n">NV12</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1920</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">1080</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">autovideosink</span><span class="w"> </span><span class="n">sync</span><span class="o">=</span><span class="nb">false</span>
 <span class="n">Setting</span><span class="w"> </span><span class="n">pipeline</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">PAUSED</span><span class="w"> </span><span class="p">...</span>
 <span class="n">Using</span><span class="w"> </span><span class="n">mplane</span><span class="w"> </span><span class="n">plugin</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">capture</span>
@@ -4776,7 +4768,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="id56">
-<h5>3.2.3 Camera Photo Capture (Using Main Path)<a class="headerlink" href="#id56" title="Link to this heading"></a></h5>
+<h6>3.2.3 Camera Photo Capture (Using Main Path)<a class="headerlink" href="#id56" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">v4l2src</span><span class="w"> </span><span class="n">device</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">video55</span><span class="w"> </span><span class="n">num</span><span class="o">-</span><span class="n">buffers</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">raw</span><span class="p">,</span><span class="n">format</span><span class="o">=</span><span class="n">NV12</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">640</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppjpegenc</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">filesink</span><span class="w"> </span><span class="n">location</span><span class="o">=</span><span class="n">pic</span><span class="p">.</span><span class="n">jpg</span>
 <span class="n">Setting</span><span class="w"> </span><span class="n">pipeline</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">PAUSED</span><span class="w"> </span><span class="p">...</span>
 <span class="n">Using</span><span class="w"> </span><span class="n">mplane</span><span class="w"> </span><span class="n">plugin</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">capture</span>
@@ -4793,7 +4785,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="recording-h-264-video">
-<h5>3.2.4 Recording H.264 Video<a class="headerlink" href="#recording-h-264-video" title="Link to this heading"></a></h5>
+<h6>3.2.4 Recording H.264 Video<a class="headerlink" href="#recording-h-264-video" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">v4l2src</span><span class="w"> </span><span class="n">device</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">video55</span><span class="w"> </span><span class="n">num</span><span class="o">-</span><span class="n">buffers</span><span class="o">=</span><span class="mi">100</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">raw</span><span class="p">,</span><span class="n">format</span><span class="o">=</span><span class="n">NV12</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="o">=</span><span class="mi">640</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">tee</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="n">t</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mpph264enc</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">h264parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtmux</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">filesink</span><span class="w"> </span><span class="n">location</span><span class="o">=</span><span class="mi">13855</span><span class="n">_h264</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 <span class="n">Setting</span><span class="w"> </span><span class="n">pipeline</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">PAUSED</span><span class="w"> </span><span class="p">...</span>
 <span class="n">Using</span><span class="w"> </span><span class="n">mplane</span><span class="w"> </span><span class="n">plugin</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">capture</span>
@@ -4833,7 +4825,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </section>
 </section>
 <section id="ov5645-test">
-<h4>3.3 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h4>
+<h5>3.3 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h5>
 <p>Node corresponding to the camera</p>
 <p>Camera corresponding nodes</p>
 <p><code class="docutils literal notranslate"><span class="pre">CAM3</span> <span class="pre">：</span></code>rkcif-mipi-lvds2</p>
@@ -4841,7 +4833,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 <p><code class="docutils literal notranslate"><span class="pre">CAM5</span> <span class="pre">：</span></code>rkcif-mipi-lvds5</p>
 <p>Take testing CAM3 as an example:</p>
 <section id="camera-identification-and-detection">
-<h5>3.3.1 Camera Identification and Detection<a class="headerlink" href="#camera-identification-and-detection" title="Link to this heading"></a></h5>
+<h6>3.3.1 Camera Identification and Detection<a class="headerlink" href="#camera-identification-and-detection" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">v4l2</span><span class="o">-</span><span class="n">ctl</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">devices</span>
 <span class="n">rkisp</span><span class="o">-</span><span class="n">statistics</span><span class="w"> </span><span class="p">(</span><span class="n">platform</span><span class="o">:</span><span class="w"> </span><span class="n">rkisp</span><span class="p">)</span><span class="o">:</span>
 <span class="w">        </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">video62</span>
@@ -4911,7 +4903,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="supported-formats">
-<h5>3.3.2 Supported Formats<a class="headerlink" href="#supported-formats" title="Link to this heading"></a></h5>
+<h6>3.3.2 Supported Formats<a class="headerlink" href="#supported-formats" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">v4l2</span><span class="o">-</span><span class="n">ctl</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">formats</span><span class="o">-</span><span class="n">ext</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">video22</span>
 <span class="nl">ioctl</span><span class="p">:</span><span class="w"> </span><span class="n">VIDIOC_ENUM_FMT</span>
 <span class="w">        </span><span class="nl">Type</span><span class="p">:</span><span class="w"> </span><span class="n">Video</span><span class="w"> </span><span class="n">Capture</span><span class="w"> </span><span class="n">Multiplanar</span>
@@ -4936,7 +4928,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </div>
 </section>
 <section id="camera-preview">
-<h5>3.3.3 Camera Preview<a class="headerlink" href="#camera-preview" title="Link to this heading"></a></h5>
+<h6>3.3.3 Camera Preview<a class="headerlink" href="#camera-preview" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">v4l2src</span><span class="w"> </span><span class="n">device</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">video22</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="o">=</span><span class="n">NV12</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="o">=</span><span class="mi">1920</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">1080</span><span class="p">,</span><span class="w"> </span><span class="n">framerate</span><span class="o">=</span><span class="mi">30</span><span class="o">/</span><span class="mi">1</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 <span class="n">Setting</span><span class="w"> </span><span class="n">pipeline</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">PAUSED</span><span class="w"> </span><span class="p">...</span>
 <span class="n">Using</span><span class="w"> </span><span class="n">mplane</span><span class="w"> </span><span class="n">plugin</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">capture</span>
@@ -4951,10 +4943,10 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 </section>
 </section>
 <section id="hdmi-in-test">
-<h4>3.4 HDMI IN Test<a class="headerlink" href="#hdmi-in-test" title="Link to this heading"></a></h4>
+<h5>3.4 HDMI IN Test<a class="headerlink" href="#hdmi-in-test" title="Link to this heading"></a></h5>
 <section id="hdmiin-supported-format-queries">
-<h5>3.4.1 HDMIIN Supported Format Queries<a class="headerlink" href="#hdmiin-supported-format-queries" title="Link to this heading"></a></h5>
-<p><font style="color:rgb(41, 41, 41);">Camera Recognition Detection</p>
+<h6>3.4.1 HDMIIN Supported Format Queries<a class="headerlink" href="#hdmiin-supported-format-queries" title="Link to this heading"></a></h6>
+<p>Camera Recognition Detection</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">ok3588</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:/</span><span class="err">#</span><span class="w"> </span><span class="n">v4l2</span><span class="o">-</span><span class="n">ctl</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">devices</span><span class="w">    </span><span class="c1">// It can be seen that /dev/video73 is the HDMI IN node.</span>
 <span class="n">rk_hdmirx</span><span class="w"> </span><span class="p">(</span><span class="n">fdee0000</span><span class="p">.</span><span class="n">hdmirx</span><span class="o">-</span><span class="n">controller</span><span class="p">)</span><span class="o">:</span>
 <span class="w">        </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">video73</span>
@@ -4973,7 +4965,7 @@ dnsmasq<span class="w"> </span>-C<span class="w"> </span>/etc/dnsmasq.conf
 <span class="w">        </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">media4</span>
 </pre></div>
 </div>
-<p><font style="color:rgb(41, 41, 41);">Format Support Queries</p>
+<p>Format Support Queries</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video73//View HDMI RX Supported Formats
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture Multiplanar
@@ -4986,8 +4978,8 @@ ioctl: VIDIOC_ENUM_FMT
 </div>
 </section>
 <section id="camera-capture-format-queries-and-modifications">
-<h5>3.4.2 Camera Capture Format Queries and Modifications<a class="headerlink" href="#camera-capture-format-queries-and-modifications" title="Link to this heading"></a></h5>
-<p><font style="color:rgb(41, 41, 41);">Camera Capture Format Queries</p>
+<h6>3.4.2 Camera Capture Format Queries and Modifications<a class="headerlink" href="#camera-capture-format-queries-and-modifications" title="Link to this heading"></a></h6>
+<p>Camera Capture Format Queries</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588-buildroot:/# v4l2-ctl -V -d /dev/video73
 Format Video Capture Multiplanar:
         Width/Height      : 1920/1080
@@ -5006,7 +4998,7 @@ Format Video Capture Multiplanar:
 </div>
 </section>
 <section id="camera-image-preview">
-<h5>3.4.3 Camera Image Preview<a class="headerlink" href="#camera-image-preview" title="Link to this heading"></a></h5>
+<h6>3.4.3 Camera Image Preview<a class="headerlink" href="#camera-image-preview" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588-buildroot:/# gst-launch-1.0  v4l2src device=/dev/video73 ! videoconvert ! kmssink
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
@@ -5018,7 +5010,8 @@ Redistribute latency...
 0:00:22.1 / 99:99:99.
 </pre></div>
 </div>
-<p><strong><font style="color:rgb(41, 41, 41);">⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.</strong></p>
+<p><strong>⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.</strong></p>
+</section>
 </section>
 </section>
 </section>
@@ -5388,73 +5381,73 @@ Redistribute latency...
 <p>Table of hardware codec parameters for the OK3588 platform:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong><font style="color:rgb(41, 41, 41);">Video Decoder</strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(41, 41, 41);">Format</strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(41, 41, 41);">Profile</strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(41, 41, 41);">Resolution</strong></p></th>
-<th class="head"><p><strong><font style="color:rgb(41, 41, 41);">Frame rate</strong></p></th>
+<tr class="row-odd"><th class="head"><p><strong>Video Decoder</strong></p></th>
+<th class="head"><p><strong>Format</strong></p></th>
+<th class="head"><p><strong>Profile</strong></p></th>
+<th class="head"><p><strong>Resolution</strong></p></th>
+<th class="head"><p><strong>Frame rate</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">H.265</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">main 10</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">7680x4320</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>H.265</p></td>
+<td><p>main 10</p></td>
+<td><p>7680x4320</p></td>
+<td><p>60 fps</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">H.264</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">main 10</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">7680x4320</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">30 fps</p></td>
+<td><p>H.264</p></td>
+<td><p>main 10</p></td>
+<td><p>7680x4320</p></td>
+<td><p>30 fps</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">VP9</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">Profile 0/2</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">7680x4320</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>VP9</p></td>
+<td><p>Profile 0/2</p></td>
+<td><p>7680x4320</p></td>
+<td><p>60 fps</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">VP8</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">version2</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">1920x1080</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>VP8</p></td>
+<td><p>version2</p></td>
+<td><p>1920x1080</p></td>
+<td><p>60 fps</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">VC1</p></td>
+<td><p>VC1</p></td>
 <td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">1920x1080</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>1920x1080</p></td>
+<td><p>60 fps</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">MPEG-2</p></td>
+<td><p>MPEG-2</p></td>
 <td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">1920x1080</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>1920x1080</p></td>
+<td><p>60 fps</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">MPEG-1</p></td>
+<td><p>MPEG-1</p></td>
 <td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">1920x1080</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>1920x1080</p></td>
+<td><p>60 fps</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">H.263</p></td>
+<td><p>H.263</p></td>
 <td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">720x576</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">60 fps</p></td>
+<td><p>720x576</p></td>
+<td><p>60 fps</p></td>
 </tr>
-<tr class="row-even"><td><p><font style="color:rgb(41, 41, 41);">Video Encoder</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">H.264</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">BP/MP/HP&#64;level4.2</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">7680x4320</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">30 fps</p></td>
+<tr class="row-even"><td><p>Video Encoder</p></td>
+<td><p>H.264</p></td>
+<td><p>BP/MP/HP&#64;level4.2</p></td>
+<td><p>7680x4320</p></td>
+<td><p>30 fps</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p><font style="color:rgb(41, 41, 41);">H.265</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">MP&#64;level4.1</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">7680x4320</p></td>
-<td><p><font style="color:rgb(41, 41, 41);">30 fps</p></td>
+<td><p>H.265</p></td>
+<td><p>MP&#64;level4.1</p></td>
+<td><p>7680x4320</p></td>
+<td><p>30 fps</p></td>
 </tr>
 </tbody>
 </table>
@@ -5462,7 +5455,7 @@ Redistribute latency...
 <h4>1. Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h4>
 <section id="playing-audio-and-video-with-gst-play">
 <h5>1.1 Playing Audio and Video With Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h5>
-<p><font style="color:rgb(41, 41, 41);">Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.</p>
+<p>Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
 </pre></div>
 </div>
@@ -5488,7 +5481,7 @@ Redistribute latency...
 </section>
 <section id="video-hardware-encoding">
 <h4>2. Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h4>
-<p><font style="color:rgb(41, 41, 41);">OK3588 supports up to 8K &#64; 60fps/H.265 and 8K &#64; 60fps/H.264 video encoding.</p>
+<p>OK3588 supports up to 8K &#64; 60fps/H.265 and 8K &#64; 60fps/H.264 video encoding.</p>
 <section id="video-hardware-encoding-h-264">
 <h5>2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
@@ -5510,10 +5503,10 @@ Redistribute latency...
 </section>
 <section id="video-hardware-decoding">
 <h4>3. Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h4>
-<p><font style="color:rgb(41, 41, 41);">OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.</p>
-<p><font style="color:rgb(41, 41, 41);">OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.</p>
+<p>OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.</p>
+<p>OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.</p>
 <section id="decoding-and-playing-h-264-format-video">
-<h5><font style="color:rgb(41, 41, 41);">3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h5>
+<h5>3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h5>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">4</span><span class="n">k_60fps_h264</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">h264parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 </pre></div>
 </div>
@@ -5566,9 +5559,8 @@ Redistribute latency...
 <h3>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h3>
 <section id="npu">
 <h4>NPU<a class="headerlink" href="#npu" title="Link to this heading"></a></h4>
-</section>
 <section id="id60">
-<h4>1. Introduction<a class="headerlink" href="#id60" title="Link to this heading"></a></h4>
+<h5>1. Introduction<a class="headerlink" href="#id60" title="Link to this heading"></a></h5>
 <p>An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.</p>
 <p>The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment.</p>
 <p>Main features:</p>
@@ -5577,6 +5569,7 @@ Redistribute latency...
 <p>(3) Int4/int8/int16/FP16/BF16/TF32 data formats.</p>
 <p>The NPU (Neural Processing Unit) is a chip module specifically designed for executing AI inference tasks. Unlike general-purpose CPUs, NPUs excel at massive parallel matrix multiplication operations—precisely the core computation of neural networks.</p>
 <p>The OK3588 features an extremely powerful NPU module, supporting up to 6 TOPS of computational power. This enables the OK3588 to locally run relatively complex AI models in real-time without relying on cloud resources.</p>
+</section>
 <section id="id61">
 <h5>2. Device Tree<a class="headerlink" href="#id61" title="Link to this heading"></a></h5>
 <p>The device tree nodes related to the NPU are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code></p>
@@ -5624,9 +5617,8 @@ Redistribute latency...
 </pre></div>
 </div>
 </section>
-</section>
 <section id="id62">
-<h4>3. Application<a class="headerlink" href="#id62" title="Link to this heading"></a></h4>
+<h5>3. Application<a class="headerlink" href="#id62" title="Link to this heading"></a></h5>
 <p>To utilize the NPU, besides requiring kernel support, application-layer calls must go through the library files provided by Rockchip. This content is located in the<code class="docutils literal notranslate"><span class="pre">SDK/external/rknpu2/</span></code>and is represented as <code class="docutils literal notranslate"><span class="pre">/usr/lib/librknnrt.so</span></code>in the integrated file system.</p>
 <p>Since NPU access is implemented by calling library files, using the NPU requires converting models to the RKNN format suitable for the Rockchip platform via Rockchip conversion tools. This can be easily accomplished using Rockchip core development toolkit, RKNN-Toolkit2, which is also located in the <code class="docutils literal notranslate"><span class="pre">SDK/external/rknn-toolkit2/</span></code>. <strong>This section only tests interface availability. For specific model conversion tutorials, please refer to the NPU Development section in the Development Guide.</strong></p>
 <p>The filesystem includes an integrated<code class="docutils literal notranslate"><span class="pre">mobilenet_v1.rknn</span></code>model, which can be tested with the following command:</p>
@@ -5661,23 +5653,24 @@ Begin perf ...
 <p>The inference result suggests an 88.5% probability that the image contains a Borzoi (Russian Wolfhound).</p>
 <p>The image used for this test is shown below:
 <img alt="Image" src="_images/1774666440305_ad6f4a06_db24_4454_a635_c3b10fa0bec6.jpeg" /></p>
+</section>
 <section id="interface-call">
 <h5>Interface Call<a class="headerlink" href="#interface-call" title="Link to this heading"></a></h5>
 <p>To address the program’s development needs, this brief demo introduction explains how to call the image and the model. The demo’s source code can be referenced for further details.file.<code class="docutils literal notranslate"><span class="pre">SDK/external/rknpu2/examples/rknn_common_test/src/main.cc</span></code></p>
-<p>**<font style="color:rgb(26, 28, 31);">Reading the JPG image uses the OpenCV interface.<font style="color:rgb(26, 28, 31);">**The core steps are:</p>
+<p>**Reading the JPG image uses the OpenCV interface.**The core steps are:</p>
 <ul class="simple">
-<li><p><font style="color:rgb(26, 28, 31);">cv::imread(…)<font style="color:rgb(26, 28, 31);">：Read jpg file</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">cv::cvtColor(…)<font style="color:rgb(26, 28, 31);">：Convert OpenCV’s default BGR input to RGB.</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">cv::resize(…)<font style="color:rgb(26, 28, 31);">：Scale the image to the model input dimensions.</p></li>
+<li><p>cv::imread(…)：Read jpg file</p></li>
+<li><p>cv::cvtColor(…)：Convert OpenCV’s default BGR input to RGB.</p></li>
+<li><p>cv::resize(…)：Scale the image to the model input dimensions.</p></li>
 </ul>
-<p><strong><font style="color:rgb(26, 28, 31);">The RKNN model is called using the RKNN Runtime interface</strong>**<font style="color:rgb(26, 28, 31);">. The core is:**</p>
+<p><strong>The RKNN model is called using the RKNN Runtime interface</strong>**. The core is:**</p>
 <ul class="simple">
-<li><p><font style="color:rgb(26, 28, 31);">rknn_init(…)<font style="color:rgb(26, 28, 31);">：Load<font style="color:rgb(26, 28, 31);"> <font style="color:rgb(26, 28, 31);">.rknn<font style="color:rgb(26, 28, 31);"> <font style="color:rgb(26, 28, 31);">model</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">rknn_query(…)<font style="color:rgb(26, 28, 31);">：Query model input/output information.</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">rknn_create_mem(…)<font style="color:rgb(26, 28, 31);">：Request input/output tensor memory.</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">rknn_set_io_mem(…)<font style="color:rgb(26, 28, 31);">：Bind the memory to the model inputs and outputs.</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">rknn_run(…)<font style="color:rgb(26, 28, 31);">：Execute inference.</p></li>
-<li><p><font style="color:rgb(26, 28, 31);">rknn_destroy_mem(…)<font style="color:rgb(26, 28, 31);"> / <font style="color:rgb(26, 28, 31);">rknn_destroy(…)<font style="color:rgb(26, 28, 31);">：Free resources.</p></li>
+<li><p>rknn_init(…)：Load .rknn model</p></li>
+<li><p>rknn_query(…)：Query model input/output information.</p></li>
+<li><p>rknn_create_mem(…)：Request input/output tensor memory.</p></li>
+<li><p>rknn_set_io_mem(…)：Bind the memory to the model inputs and outputs.</p></li>
+<li><p>rknn_run(…)：Execute inference.</p></li>
+<li><p>rknn_destroy_mem(…) / rknn_destroy(…)：Free resources.</p></li>
 </ul>
 <p>In summary, the image reading and conversion in this demo are implemented using OpenCV, while the recognition and inference are implemented using RKNN.</p>
 </section>
@@ -5718,8 +5711,9 @@ user_application
 </pre></div>
 </div>
 <p>You can also modify the<code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/etc/forlinx.sh</span></code>in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.</p>
+</section>
 <section id="customized-logo">
-<h4>3. Customized Logo<a class="headerlink" href="#customized-logo" title="Link to this heading"></a></h4>
+<h3>3. Customized Logo<a class="headerlink" href="#customized-logo" title="Link to this heading"></a></h3>
 <p>You can modify the boot logo by replacing the specified files<code class="docutils literal notranslate"><span class="pre">logo.bmp</span></code> and <code class="docutils literal notranslate"><span class="pre">logo_kernel.bmp</span></code> in the kernel directory.</p>
 <p><strong>⚠️Note:</strong></p>
 <ul class="simple">
@@ -5730,9 +5724,9 @@ user_application
 </ul>
 </section>
 <section id="rknpu-development">
-<h4>4. RKNPU Development<a class="headerlink" href="#rknpu-development" title="Link to this heading"></a></h4>
+<h3>4. RKNPU Development<a class="headerlink" href="#rknpu-development" title="Link to this heading"></a></h3>
 <section id="npu-description">
-<h5>4.1 NPU Description<a class="headerlink" href="#npu-description" title="Link to this heading"></a></h5>
+<h4>4.1 NPU Description<a class="headerlink" href="#npu-description" title="Link to this heading"></a></h4>
 <p>An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.</p>
 <p>The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment. Main features:</p>
 <p>(1) 6 TOPS NPU, empowering various AI scenarios;</p>
@@ -5740,8 +5734,9 @@ user_application
 <p>(3) Int4/int8/int16/FP16/BF16/TF32 data formats.</p>
 <p>To help developers deploy AI models more quickly, Rockchip officially provides users with two toolchains for model conversion, inference, and performance evaluation on computers, including the RKNN toolchain and the RKLLM toolchain specifically designed for large language models. In addition, Rockchip officially provides the RKNN Model Zoo, developed based on the RKNPU SDK toolchain, which covers deployment examples for current mainstream algorithms. The examples include the process of exporting RKNN models and performing inference on RKNN models using the Python API and C API.</p>
 <section id="rknn-toolchain">
-<h6>4.1.1 RKNN Toolchain<a class="headerlink" href="#rknn-toolchain" title="Link to this heading"></a></h6>
-<p><strong>4.1.1.1 RKNN Software Stack Overview</strong></p>
+<h5>4.1.1 RKNN Toolchain<a class="headerlink" href="#rknn-toolchain" title="Link to this heading"></a></h5>
+<section id="rknn-software-stack-overview">
+<h6><strong>4.1.1.1 RKNN Software Stack Overview</strong><a class="headerlink" href="#rknn-software-stack-overview" title="Link to this heading"></a></h6>
 <p>The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below:
 <img alt="Image" src="_images/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png" /></p>
 <p>Figure 1-1 RKNN Software Stack</p>
@@ -6065,27 +6060,37 @@ user_application
 </tr>
 </tbody>
 </table>
-<p><strong>4.1.1.2 RKNN-Toolkit2</strong></p>
+</section>
+<section id="rknn-toolkit2">
+<h6><strong>4.1.1.2 RKNN-Toolkit2</strong><a class="headerlink" href="#rknn-toolkit2" title="Link to this heading"></a></h6>
 <p>With RKLLM-Toolkit2, developers can easily quantize and convert large language models on a computer. It provides a concise Python interface with the following core features:</p>
 <p>(1) Model Conversion: Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.</p>
 <p>(2) Quantization: Supports converting floating-point models into fixed-point models. Currently supported quantization types are w8a8 and w8a8 grouped quantization (with supported group sizes of 128, 256, and 512).</p>
 <p>RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to <a class="reference external" href="https://github.com/airockchip/rknn-toolkit2">https://github.com/airockchip/rknn-toolkit2</a> for the RKLLM-Toolkit2 details.</p>
-<p><strong>4.1.1.3 Features of RKLLM Runtime</strong></p>
+</section>
+<section id="features-of-rkllm-runtime">
+<h6><strong>4.1.1.3 Features of RKLLM Runtime</strong><a class="headerlink" href="#features-of-rkllm-runtime" title="Link to this heading"></a></h6>
 <p>RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.</p>
 <p>For details of RKLLM Runtime, refer to<code class="docutils literal notranslate"><span class="pre">rknn-llm\doc\</span> <span class="pre">Rockchip_RKLLM_SDK_CN_1.2.3.pdf</span></code>.</p>
 </section>
+</section>
 <section id="rkllm-toolchain">
-<h6>4.1.2 RKLLM Toolchain<a class="headerlink" href="#rkllm-toolchain" title="Link to this heading"></a></h6>
-<p><strong>4.1.2.1 RKLLM Software Stack Overview</strong></p>
+<h5>4.1.2 RKLLM Toolchain<a class="headerlink" href="#rkllm-toolchain" title="Link to this heading"></a></h5>
+<section id="rkllm-software-stack-overview">
+<h6><strong>4.1.2.1 RKLLM Software Stack Overview</strong><a class="headerlink" href="#rkllm-software-stack-overview" title="Link to this heading"></a></h6>
 <p>The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform.
 <img alt="Image" src="_images/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png" /></p>
 <p>Figure 1-2: RKLLM Software Stack.</p>
-<p><strong>4.1.2.2 RKNN-Toolkit Features</strong></p>
+</section>
+<section id="rknn-toolkit-features">
+<h6><strong>4.1.2.2 RKNN-Toolkit Features</strong><a class="headerlink" href="#rknn-toolkit-features" title="Link to this heading"></a></h6>
 <p>With RKLLM-Toolkit2, developers can efficiently perform quantization and conversion of large language models on a host computer. It provides a concise Python interface with the following core features:</p>
 <p>(1) Model Conversion: Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.</p>
 <p>(2) Quantization: Supports converting floating-point models into fixed-point models. Currently supported quantization types include w8a8 and w8a8 grouped quantization, with supported group sizes of 128, 256, and 512.</p>
 <p>Please refer to<code class="docutils literal notranslate"><span class="pre">rknn-llm\doc\Rockchip_RKLLM_SDK_CN_1.2.3.pdf</span></code>, for RKLLM-Toolkit2 details.</p>
-<p><strong>4.1.2.3 RKLLM Runtime Features</strong></p>
+</section>
+<section id="rkllm-runtime-features">
+<h6><strong>4.1.2.3 RKLLM Runtime Features</strong><a class="headerlink" href="#rkllm-runtime-features" title="Link to this heading"></a></h6>
 <p>RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.</p>
 <p>For details of RKLLM Runtime, refer to<code class="docutils literal notranslate"><span class="pre">rknn-llm\doc\</span> <span class="pre">Rockchip_RKLLM_SDK_CN_1.2.3.pdf</span></code>.</p>
 </section>
@@ -6120,13 +6125,15 @@ user_application
 </div>
 </section>
 </section>
+</section>
 <section id="development-environment-setup">
-<h5>4.2 Development Environment Setup<a class="headerlink" href="#development-environment-setup" title="Link to this heading"></a></h5>
+<h4>4.2 Development Environment Setup<a class="headerlink" href="#development-environment-setup" title="Link to this heading"></a></h4>
 <p>RKNN development needs to be carried out under Ubuntu. You may choose the build method provided in the manual.</p>
 <section id="installing-rknn-toolkit2">
-<h6>4.2.1 Installing RKNN-Toolkit2<a class="headerlink" href="#installing-rknn-toolkit2" title="Link to this heading"></a></h6>
+<h5>4.2.1 Installing RKNN-Toolkit2<a class="headerlink" href="#installing-rknn-toolkit2" title="Link to this heading"></a></h5>
 <p>There are two installation methods for RKNN-Toolkit2:<code class="docutils literal notranslate"><span class="pre">pip</span></code>and<code class="docutils literal notranslate"><span class="pre">Docker</span></code>. You can choose anyone to install.</p>
-<p><strong>4.2.1.1 Installing via Pip</strong></p>
+<section id="installing-via-pip">
+<h6><strong>4.2.1.1 Installing via Pip</strong><a class="headerlink" href="#installing-via-pip" title="Link to this heading"></a></h6>
 <p>Set up the Python Environment.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update
 forlinx@ubuntu:~$ sudo apt-get install python3 python3-dev python3-pip
@@ -6243,16 +6250,20 @@ person       0.334   [  79,  353,  122,  517]
 </pre></div>
 </div>
 </section>
+</section>
 <section id="installing-rkllm-toolkit">
-<h6>4.2.2 Installing RKLLM-Toolkit<a class="headerlink" href="#installing-rkllm-toolkit" title="Link to this heading"></a></h6>
-<p><strong>4.2.2.1 Install via Pip</strong></p>
+<h5>4.2.2 Installing RKLLM-Toolkit<a class="headerlink" href="#installing-rkllm-toolkit" title="Link to this heading"></a></h5>
+<section id="install-via-pip">
+<h6><strong>4.2.2.1 Install via Pip</strong><a class="headerlink" href="#install-via-pip" title="Link to this heading"></a></h6>
 <p>Set up the Python Environment.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update
 forlinx@ubuntu:~$ sudo apt-get install python3 python3-dev python3-pip
 forlinx@ubuntu:~$ sudo apt-get install libxslt1-dev zlib1g zlib1g-dev libglib2.0-0 libsm6 libgl1-mesa-glx libprotobuf-dev gcc
 </pre></div>
 </div>
-<p><strong>4.2.1.2 Installing the Miniforge Tool</strong></p>
+</section>
+<section id="installing-the-miniforge-tool">
+<h6><strong>4.2.1.2 Installing the Miniforge Tool</strong><a class="headerlink" href="#installing-the-miniforge-tool" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Download Mini forge installation package
 forlinx@ubuntu:~$ wget -c https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-Linux-x86_64.sh
 # Install Miniforge
@@ -6260,7 +6271,9 @@ forlinx@ubuntu:~$ chmod 777 Miniforge3-Linux-x86_64.sh
 forlinx@ubuntu:~$ bash Miniforge3-Linux-x86_64.sh
 </pre></div>
 </div>
-<p><strong>4.2.1.3 Creating RKLLM-Toolkit Conda Environment</strong></p>
+</section>
+<section id="creating-rkllm-toolkit-conda-environment">
+<h6><strong>4.2.1.3 Creating RKLLM-Toolkit Conda Environment</strong><a class="headerlink" href="#creating-rkllm-toolkit-conda-environment" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Switch to the Conda base environment
 forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation directory
 
@@ -6271,7 +6284,9 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 (base) forlinx@ubuntu:~$ conda activate RKLLM-Toolkit
 </pre></div>
 </div>
-<p><strong>4.2.1.4 Installing RKLLM-Toolkit</strong></p>
+</section>
+<section id="id63">
+<h6><strong>4.2.1.4 Installing RKLLM-Toolkit</strong><a class="headerlink" href="#id63" title="Link to this heading"></a></h6>
 <p>Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is:<a class="reference external" href="https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip">https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip</a>。</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(RKLLM-Toolkit) forlinx@ubuntu:~$ pip install rknn-llm/rkllm-toolkit/packages/rkllm_toolkit-1.2.2-cp38-cp38-linux_x86_64.whl
 </pre></div>
@@ -6355,8 +6370,8 @@ root@OK3588-C-buildroot:/home/forlinx/rknn_yolov5_demo# ./rknn_yolov5_demo model
 </section>
 <section id="deepseek-model-deployment">
 <h5>4.3.2 DeepSeek Model Deployment<a class="headerlink" href="#deepseek-model-deployment" title="Link to this heading"></a></h5>
-<section id="id63">
-<h6>4.3.2.1 Model Conversion<a class="headerlink" href="#id63" title="Link to this heading"></a></h6>
+<section id="id64">
+<h6>4.3.2.1 Model Conversion<a class="headerlink" href="#id64" title="Link to this heading"></a></h6>
 <p>Enter RKLLM-Toolkit Conda Environment</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation directory.
 (base) forlinx@ubuntu:~$ conda activate RKLLM-Toolkit
@@ -6378,8 +6393,8 @@ root@OK3588-C-buildroot:/home/forlinx/rknn_yolov5_demo# ./rknn_yolov5_demo model
 </pre></div>
 </div>
 </section>
-<section id="id64">
-<h6>4.3.2.2 Model Deployment<a class="headerlink" href="#id64" title="Link to this heading"></a></h6>
+<section id="id65">
+<h6>4.3.2.2 Model Deployment<a class="headerlink" href="#id65" title="Link to this heading"></a></h6>
 <p>Model Dependency Library Compilation.</p>
 <p>The DeepSeek model requires libgomp support. A compilation method is provided here. Please refer to the method below to compile the library file themselves and then place it into the board. Alternatively, you can find the DeepSeek content in the link, download the pre-compiled library file, and copy it into the board.</p>
 <p><a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a></p>

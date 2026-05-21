@@ -1526,9 +1526,9 @@ The device tree nodes for the OK3588S2-C network are located at: `arch/arm64/boo
 
 #### 3\. Application
 
-#### 3.1 Modifying IP Address
+##### 3.1 Modifying IP Address
 
-##### 3.1.1 DHCPC IP
+###### 3.1.1 DHCPC IP
 
 Modify the following configuration file to set eth0 to obtain the IP automatically:`/etc/systemd/network/10-eth0.network`.
 
@@ -1547,7 +1547,7 @@ After the settings are completed, restart the network service.
 root@OK3588-C-buildroot:/# systemctl restart systemd-networkd
 ```
 
-##### 3.1.2 Static IP
+###### 3.1.2 Static IP
 
 You can modify the default IP address by modifying the following configuration file:`/etc/systemd/network/10-eth0.network`。
 
@@ -1576,11 +1576,11 @@ Restart the network service after the setup is completed。
 root@OK3588-C-buildroot:/# systemctl restart systemd-networkd
 ```
 
-#### 3.2 Network Status
+##### 3.2 Network Status
 
 Connect the network cable to the ETH0 port of the board before the test.
 
-##### 3.2.1 Ifconfig
+###### 3.2.1 Ifconfig
 
 `ifconfig`is a classic Network Interface Configuration and Viewing Tools.
 
@@ -1606,7 +1606,7 @@ lo        Link encap:Local Loopback
 
 ```
 
-##### 3.2.2 Ethtool
+###### 3.2.2 Ethtool
 
 `ethtool` is a necessary tool for Linux system to troubleshoot physical layer and driver layer problems. It provides more in-depth hardware-level information than the ifconfig `ifconfig`command.
 
@@ -1649,9 +1649,9 @@ Settings for eth0:
         Link detected: yes
 ```
 
-#### 3.3 Network Connectivity
+##### 3.3 Network Connectivity
 
-##### 3.3.1 Ping
+###### 3.3.1 Ping
 
 Configure the network IP according to your actual network conditions. Network connectivity can be tested using the ping command (it’s necessary to ping an IP within the same subnet).
 
@@ -1669,7 +1669,7 @@ PING 192.168.0.100 (192.168.0.100) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.271/0.343/0.487/0.074 ms
 ```
 
-##### 3.3.2 Iperf3
+###### 3.3.2 Iperf3
 
 Configure the network IP according to your actual network conditions. The network throughput can be tested using theiperf3 tool.
 
@@ -1707,7 +1707,7 @@ iperf Done.
 
 The results indicate a stable bitrate between 948 - 953 Mbits/sec, confirming that the Gigabit network connection is functioning normally with good performance.
 
-##### 3.3.3 SFTP
+###### 3.3.3 SFTP
 
 The OK3588 development board supports SFTP services, which are enabled automatically upon startup. Once the IP address is configured, the board can be used as an SFTP server. The following describes how to utilize the FTP tool for file transfer.
 
@@ -1876,6 +1876,7 @@ Please refer to the PinMUX table for the usage of the GPIO pins.
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
 Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png)
 
 ##### 3.1 Native GPIO
@@ -3257,11 +3258,11 @@ According to Section 3.5 (USB Peripheral CONFIG) of the official Rockchip Linux 
 
 The default kernel configuration includes support for common drivers. To enable or remove specific drivers, refer to Section 3.2.2.2 in the OS Development guide for configuring and compiling the kernel.
 
-#### 3.2 HID Device Support
+##### 3.2 HID Device Support
 
 HID (Human Interface Device) is one of the most widely used USB device classes, covering input devices such as keyboards, mice, touchscreens, and game controllers.
 
-##### 3.2.1 Kernel Configuration
+###### 3.2.1 Kernel Configuration
 
 According to Section 3.5.3 of the RK official manual, the kernel configuration options for USB HID are as follows:
 
@@ -3273,7 +3274,7 @@ Device Drivers --->
         [*] /dev/hiddev raw HID device support
 ```
 
-##### 3.2.3 VID/PID List and Kernel Source Path
+###### 3.2.2 VID/PID List and Kernel Source Path
 
 Each USB device is uniquely identified by its VID (Vendor ID) and PID (Product ID). The kernel loads the appropriate driver by matching the VID/PID. The kernel loads the appropriate driver by matching the VID/PID.
 
@@ -4074,7 +4075,7 @@ The device tree file related to cameras for OK3588S2-C is:`arch/arm64/boot/dts/r
 
 Here, the Logitech C270 is used for testing. Plug the USB camera into the development board, and the UVC driver will be automatically installed.
 
-##### 3.1.1 **Camera Detection and Format Support Query**
+###### 3.1.1 **Camera Detection and Format Support Query**
 
 Camera detection:
 
@@ -4334,7 +4335,7 @@ ioctl: VIDIOC_ENUM_FMT
                         Interval: Discrete 0.200s (5.000 fps)
 ```
 
-##### 3.1.2 Camera Capture Format Query
+###### 3.1.2 Camera Capture Format Query
 
 ```c
 root@OK3588-C-buildroot:~# v4l2-ctl -V -d /dev/video74
@@ -4351,7 +4352,7 @@ Format Video Capture:
         Flags             :
 ```
 
-##### 3.1.3 Camera Preview and Photo Capture
+###### 3.1.3 Camera Preview and Photo Capture
 
 Camera image preview:
 
@@ -4384,7 +4385,7 @@ Freeing pipeline ...
 
 This will generate pic.jpg in the current directory.
 
-#### 3.2 OV13855 Test
+##### 3.2 OV13855 Test
 
 For raw sensors like OV13855, each sensor corresponds to 5 device nodes (e.g., /dev/videoX):
 
@@ -4432,7 +4433,7 @@ The testing method for OV13855 is basically the same as for the UVC camera. This
 
 `CAM2：`platform:rkisp0-vir1
 
-##### 3.2.1 Camera Detection and Format Support Query
+###### 3.2.1 Camera Detection and Format Support Query
 
 ```c
 root@OK3588-C-buildroot:~# v4l2-ctl --list-devices
@@ -4457,7 +4458,7 @@ rkisp_mainpath (platform:rkisp1-vir0):
         /dev/media6
 ```
 
-##### 3.2.2 Camera Photo Capture (Using Main Path)
+###### 3.2.2 Camera Photo Capture (Using Main Path)
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video55 ! videoconvert ! video/x-raw,format=NV12,width=1920,height=1080 ! autovideosink sync=false
@@ -4479,7 +4480,7 @@ Redistribute latency...
 0:00:06.7 / 99:99:99.
 ```
 
-##### 3.2.3 Camera Photo Capture (Using Main Path)
+###### 3.2.3 Camera Photo Capture (Using Main Path)
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
@@ -4496,7 +4497,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-##### 3.2.4 Recording H.264 Video
+###### 3.2.4 Recording H.264 Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
@@ -4538,7 +4539,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-#### 3.3 OV5645 Test
+##### 3.3 OV5645 Test
 
 Node corresponding to the camera
 
@@ -4552,7 +4553,7 @@ Camera corresponding nodes
 
 Take testing CAM3 as an example:
 
-##### 3.3.1 Camera Identification and Detection
+###### 3.3.1 Camera Identification and Detection
 
 ```c
 root@OK3588-C-buildroot:~# v4l2-ctl --list-devices
@@ -4622,7 +4623,7 @@ rkcif (platform:rkcif-mipi-lvds5):
         /dev/media4
 ```
 
-##### 3.3.2 Supported Formats
+###### 3.3.2 Supported Formats
 
 ```c
 root@OK3588-C-buildroot:~# v4l2-ctl --list-formats-ext -d /dev/video22
@@ -4647,7 +4648,7 @@ ioctl: VIDIOC_ENUM_FMT
                 Size: Stepwise 64x64 - 1920x1080 with step 8/8
 ```
 
-##### 3.3.3 Camera Preview
+###### 3.3.3 Camera Preview
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video22 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
@@ -4661,11 +4662,11 @@ Redistribute latency...
 0:00:03.4 / 99:99:99.
 ```
 
-#### 3.4 HDMI IN Test
+##### 3.4 HDMI IN Test
 
-##### 3.4.1 HDMIIN Supported Format Queries
+###### 3.4.1 HDMIIN Supported Format Queries
 
-<font style="color:rgb(41, 41, 41);">Camera Recognition Detection
+Camera Recognition Detection
 
 ```c
 root@ok3588-buildroot:/# v4l2-ctl --list-devices    // It can be seen that /dev/video73 is the HDMI IN node.
@@ -4686,7 +4687,7 @@ rkcif-mipi-lvds (platform:rkcif):
         /dev/media4
 ```
 
-<font style="color:rgb(41, 41, 41);">Format Support Queries
+Format Support Queries
 
 ```plain
 root@ok3588-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video73//View HDMI RX Supported Formats
@@ -4699,9 +4700,9 @@ ioctl: VIDIOC_ENUM_FMT
         [3]: 'NV12' (Y/CbCr 4:2:0)
 ```
 
-##### 3.4.2 Camera Capture Format Queries and Modifications
+###### 3.4.2 Camera Capture Format Queries and Modifications
 
-<font style="color:rgb(41, 41, 41);">Camera Capture Format Queries
+Camera Capture Format Queries
 
 ```plain
 root@ok3588-buildroot:/# v4l2-ctl -V -d /dev/video73
@@ -4720,7 +4721,7 @@ Format Video Capture Multiplanar:
            Size Image     : 6220800
 ```
 
-##### 3.4.3 Camera Image Preview
+###### 3.4.3 Camera Image Preview
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0  v4l2src device=/dev/video73 ! videoconvert ! kmssink
@@ -4734,7 +4735,7 @@ Redistribute latency...
 0:00:22.1 / 99:99:99.
 ```
 
-**<font style="color:rgb(41, 41, 41);">⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.**
+**⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.**
 
 ### Display
 
@@ -5006,24 +5007,24 @@ Video Encoding: H264, H.265, maximum support 8k@30fps
 
 Table of hardware codec parameters for the OK3588 platform:
 
-| **<font style="color:rgb(41, 41, 41);">Video Decoder** | **<font style="color:rgb(41, 41, 41);">Format** | **<font style="color:rgb(41, 41, 41);">Profile**       | **<font style="color:rgb(41, 41, 41);">Resolution** | **<font style="color:rgb(41, 41, 41);">Frame rate** |
-| ------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------- |
-|                                                        | <font style="color:rgb(41, 41, 41);">H.265      | <font style="color:rgb(41, 41, 41);">main 10           | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">60 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">H.264      | <font style="color:rgb(41, 41, 41);">main 10           | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">30 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">VP9        | <font style="color:rgb(41, 41, 41);">Profile 0/2       | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">60 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">VP8        | <font style="color:rgb(41, 41, 41);">version2          | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">VC1        |                                                        | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">MPEG-2     |                                                        | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">MPEG-1     |                                                        | <font style="color:rgb(41, 41, 41);">1920x1080      | <font style="color:rgb(41, 41, 41);">60 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">H.263      |                                                        | <font style="color:rgb(41, 41, 41);">720x576        | <font style="color:rgb(41, 41, 41);">60 fps         |
-| <font style="color:rgb(41, 41, 41);">Video Encoder     | <font style="color:rgb(41, 41, 41);">H.264      | <font style="color:rgb(41, 41, 41);">BP/MP/HP@level4.2 | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">30 fps         |
-|                                                        | <font style="color:rgb(41, 41, 41);">H.265      | <font style="color:rgb(41, 41, 41);">MP@level4.1       | <font style="color:rgb(41, 41, 41);">7680x4320      | <font style="color:rgb(41, 41, 41);">30 fps         |
+| **Video Decoder** | **Format** | **Profile**       | **Resolution** | **Frame rate** |
+| ----------------- | ---------- | ----------------- | -------------- | -------------- |
+|                   | H.265      | main 10           | 7680x4320      | 60 fps         |
+|                   | H.264      | main 10           | 7680x4320      | 30 fps         |
+|                   | VP9        | Profile 0/2       | 7680x4320      | 60 fps         |
+|                   | VP8        | version2          | 1920x1080      | 60 fps         |
+|                   | VC1        |                   | 1920x1080      | 60 fps         |
+|                   | MPEG-2     |                   | 1920x1080      | 60 fps         |
+|                   | MPEG-1     |                   | 1920x1080      | 60 fps         |
+|                   | H.263      |                   | 720x576        | 60 fps         |
+| Video Encoder     | H.264      | BP/MP/HP@level4.2 | 7680x4320      | 30 fps         |
+|                   | H.265      | MP@level4.1       | 7680x4320      | 30 fps         |
 
 #### 1\. Audio and Video Playback
 
 ##### 1.1 Playing Audio and Video With Gst-play
 
-<font style="color:rgb(41, 41, 41);">Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
+Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
 ```plain
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
@@ -5049,7 +5050,7 @@ root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080
 
 #### 2\. Video Hardware Encoding
 
-<font style="color:rgb(41, 41, 41);">OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.
+OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.
 
 ##### 2.1 Video Hardware Encoding H.264
 
@@ -5071,11 +5072,11 @@ root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw
 
 #### 3\. Video Hardware Decoding
 
-<font style="color:rgb(41, 41, 41);">OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.
+OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.
 
-<font style="color:rgb(41, 41, 41);">OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.
+OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.
 
-##### <font style="color:rgb(41, 41, 41);">3.1 Decoding and Playing H.264 Format Video
+##### 3.1 Decoding and Playing H.264 Format Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
@@ -5127,7 +5128,7 @@ root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p
 
 #### NPU
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.
 
@@ -5196,7 +5197,7 @@ It is recommended to modify the NPU settings within this node if changes are req
 };
 ```
 
-#### 3\. Application
+##### 3\. Application
 
 To utilize the NPU, besides requiring kernel support, application-layer calls must go through the library files provided by Rockchip. This content is located in the`SDK/external/rknpu2/`and is represented as `/usr/lib/librknnrt.so`in the integrated file system.
 
@@ -5246,20 +5247,20 @@ The image used for this test is shown below:
 
 To address the program's development needs, this brief demo introduction explains how to call the image and the model. The demo's source code can be referenced for further details.file.`SDK/external/rknpu2/examples/rknn_common_test/src/main.cc`
 
-**<font style="color:rgb(26, 28, 31);">Reading the JPG image uses the OpenCV interface.<font style="color:rgb(26, 28, 31);">**The core steps are:
+**Reading the JPG image uses the OpenCV interface.**The core steps are:
 
-+ <font style="color:rgb(26, 28, 31);">cv::imread(...)<font style="color:rgb(26, 28, 31);">：Read jpg file
-+ <font style="color:rgb(26, 28, 31);">cv::cvtColor(...)<font style="color:rgb(26, 28, 31);">：Convert OpenCV's default BGR input to RGB.
-+ <font style="color:rgb(26, 28, 31);">cv::resize(...)<font style="color:rgb(26, 28, 31);">：Scale the image to the model input dimensions.
++ cv::imread(...)：Read jpg file
++ cv::cvtColor(...)：Convert OpenCV's default BGR input to RGB.
++ cv::resize(...)：Scale the image to the model input dimensions.
 
-**<font style="color:rgb(26, 28, 31);">The RKNN model is called using the RKNN Runtime interface****<font style="color:rgb(26, 28, 31);">. The core is:**
+**The RKNN model is called using the RKNN Runtime interface****. The core is:**
 
-+ <font style="color:rgb(26, 28, 31);">rknn\_init(...)<font style="color:rgb(26, 28, 31);">：Load<font style="color:rgb(26, 28, 31);"> <font style="color:rgb(26, 28, 31);">.rknn<font style="color:rgb(26, 28, 31);"> <font style="color:rgb(26, 28, 31);">model
-+ <font style="color:rgb(26, 28, 31);">rknn\_query(...)<font style="color:rgb(26, 28, 31);">：Query model input/output information.
-+ <font style="color:rgb(26, 28, 31);">rknn\_create\_mem(...)<font style="color:rgb(26, 28, 31);">：Request input/output tensor memory.
-+ <font style="color:rgb(26, 28, 31);">rknn\_set\_io\_mem(...)<font style="color:rgb(26, 28, 31);">：Bind the memory to the model inputs and outputs.
-+ <font style="color:rgb(26, 28, 31);">rknn\_run(...)<font style="color:rgb(26, 28, 31);">：Execute inference.
-+ <font style="color:rgb(26, 28, 31);">rknn\_destroy\_mem(...)<font style="color:rgb(26, 28, 31);"> / <font style="color:rgb(26, 28, 31);">rknn\_destroy(...)<font style="color:rgb(26, 28, 31);">：Free resources.
++ rknn\_init(...)：Load .rknn model
++ rknn\_query(...)：Query model input/output information.
++ rknn\_create\_mem(...)：Request input/output tensor memory.
++ rknn\_set\_io\_mem(...)：Bind the memory to the model inputs and outputs.
++ rknn\_run(...)：Execute inference.
++ rknn\_destroy\_mem(...) / rknn\_destroy(...)：Free resources.
 
 In summary, the image reading and conversion in this demo are implemented using OpenCV, while the recognition and inference are implemented using RKNN.
 
@@ -5302,7 +5303,7 @@ exit 0
 
 You can also modify the`OK-linux-source/buildroot/board/rockchip/common/base/etc/forlinx.sh`in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.
 
-#### 3. Customized Logo
+### 3. Customized Logo
 
 You can modify the boot logo by replacing the specified files`logo.bmp` and `logo_kernel.bmp` in the kernel directory.
 
@@ -5316,9 +5317,9 @@ You can modify the boot logo by replacing the specified files`logo.bmp` and `log
 
 - **BMP format only supports 8-bit, 16-bit, 24-bit, and 32-bit color depths. To reduce the logo file size, only make adjustments within the above color depth ranges.**
 
-#### 4. RKNPU Development
+### 4. RKNPU Development
 
-##### 4.1 NPU Description
+#### 4.1 NPU Description
 
 An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.
 
@@ -5332,9 +5333,9 @@ The OK3588-C integrates a low-power, high-performance NPU, which possesses hardw
 
 To help developers deploy AI models more quickly, Rockchip officially provides users with two toolchains for model conversion, inference, and performance evaluation on computers, including the RKNN toolchain and the RKLLM toolchain specifically designed for large language models. In addition, Rockchip officially provides the RKNN Model Zoo, developed based on the RKNPU SDK toolchain, which covers deployment examples for current mainstream algorithms. The examples include the process of exporting RKNN models and performing inference on RKNN models using the Python API and C API.
 
-###### 4.1.1 RKNN Toolchain
+##### 4.1.1 RKNN Toolchain
 
-**4.1.1.1 RKNN Software Stack Overview**
+###### **4.1.1.1 RKNN Software Stack Overview**
 
 The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below:
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
@@ -5399,7 +5400,7 @@ The currently supported models are as follows:
 |      yamnet       |          yamnet\_3s          |               3s audio                |   FP16    |            RTF 0.004            |
 |     mms\_tts      |      mms\_tts\_eng\_200      |               token-200               |   FP16    |            RTF 0.069            |
 
-**4.1.1.2 RKNN-Toolkit2**
+###### **4.1.1.2 RKNN-Toolkit2**
 
 With RKLLM-Toolkit2, developers can easily quantize and convert large language models on a computer. It provides a concise Python interface with the following core features:
 
@@ -5409,22 +5410,22 @@ With RKLLM-Toolkit2, developers can easily quantize and convert large language m
 
 RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to [https://github.com/airockchip/rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2) for the RKLLM-Toolkit2 details.
 
-**4.1.1.3 Features of RKLLM Runtime**
+###### **4.1.1.3 Features of RKLLM Runtime**
 
 RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.
 
 For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3.pdf`.
 
-###### 4.1.2 RKLLM Toolchain
+##### 4.1.2 RKLLM Toolchain
 
-**4.1.2.1 RKLLM Software Stack Overview**
+###### **4.1.2.1 RKLLM Software Stack Overview**
 
 The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform. 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png)
 
 Figure 1-2: RKLLM Software Stack.
 
-**4.1.2.2 RKNN-Toolkit Features**
+###### **4.1.2.2 RKNN-Toolkit Features**
 
 With RKLLM-Toolkit2, developers can efficiently perform quantization and conversion of large language models on a host computer. It provides a concise Python interface with the following core features:
 
@@ -5434,7 +5435,7 @@ With RKLLM-Toolkit2, developers can efficiently perform quantization and convers
 
 Please refer to`rknn-llm\doc\Rockchip_RKLLM_SDK_CN_1.2.3.pdf`, for RKLLM-Toolkit2 details.
 
-**4.1.2.3 RKLLM Runtime Features**
+###### **4.1.2.3 RKLLM Runtime Features**
 
 RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.
 
@@ -5475,15 +5476,15 @@ rknn_model_zoo
 
 ```
 
-##### 4.2 Development Environment Setup
+#### 4.2 Development Environment Setup
 
 RKNN development needs to be carried out under Ubuntu. You may choose the build method provided in the manual.
 
-###### 4.2.1 Installing RKNN-Toolkit2
+##### 4.2.1 Installing RKNN-Toolkit2
 
 There are two installation methods for RKNN-Toolkit2:`pip`and`Docker`. You can choose anyone to install.
 
-**4.2.1.1 Installing via Pip**
+###### **4.2.1.1 Installing via Pip**
 
 Set up the Python Environment.
 
@@ -5633,9 +5634,9 @@ person       0.334   [  79,  353,  122,  517]
 
 ```
 
-###### 4.2.2 Installing RKLLM-Toolkit
+##### 4.2.2 Installing RKLLM-Toolkit
 
-**4.2.2.1 Install via Pip**
+###### **4.2.2.1 Install via Pip**
 
 Set up the Python Environment.
 
@@ -5645,7 +5646,7 @@ forlinx@ubuntu:~$ sudo apt-get install python3 python3-dev python3-pip
 forlinx@ubuntu:~$ sudo apt-get install libxslt1-dev zlib1g zlib1g-dev libglib2.0-0 libsm6 libgl1-mesa-glx libprotobuf-dev gcc
 ```
 
-**4.2.1.2 Installing the Miniforge Tool**
+###### **4.2.1.2 Installing the Miniforge Tool**
 
 ```plain
 # Download Mini forge installation package
@@ -5655,7 +5656,7 @@ forlinx@ubuntu:~$ chmod 777 Miniforge3-Linux-x86_64.sh
 forlinx@ubuntu:~$ bash Miniforge3-Linux-x86_64.sh
 ```
 
-**4.2.1.3 Creating RKLLM-Toolkit Conda Environment**
+###### **4.2.1.3 Creating RKLLM-Toolkit Conda Environment**
 
 ```plain
 # Switch to the Conda base environment
@@ -5668,7 +5669,7 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 (base) forlinx@ubuntu:~$ conda activate RKLLM-Toolkit
 ```
 
-**4.2.1.4 Installing RKLLM-Toolkit**
+###### **4.2.1.4 Installing RKLLM-Toolkit**
 
 Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is:[https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip](https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip)。
 
