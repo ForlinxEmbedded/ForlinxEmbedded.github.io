@@ -249,7 +249,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#development-guides">Development Guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#add-user-application">1. Add User Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-user-application">1. Adding User Application</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#packaging-the-user-program-into-the-image">1.1 Packaging the User Program into the Image</a></li>
 </ul>
 </li>
@@ -1123,7 +1123,7 @@ Directory structure (symbolic links point to actual source files):</p>
 </section>
 <section id="building-kernel">
 <h6>3.2.2.2 Building Kernel<a class="headerlink" href="#building-kernel" title="Link to this heading"></a></h6>
-<p>If only compiling the kernel,boot.img will be generated.</p>
+<p>If only compiling the kernel, boot.img will be generated.</p>
 <p>Path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/kernel-6.1/boot.img</span></code>.</p>
 <p>The command is as follows:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="n">build</span><span class="p">.</span><span class="n">sh</span><span class="w"> </span><span class="n">kernel</span>
@@ -1182,8 +1182,8 @@ Directory structure (symbolic links point to actual source files):</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">OK</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">source$</span><span class="p">.</span><span class="o">/</span><span class="n">build</span><span class="p">.</span><span class="n">sh</span><span class="w"> </span><span class="n">buildroot</span><span class="o">-</span><span class="n">config</span>
 </pre></div>
 </div>
-<p>This will enter the visual configuration menu of buildroot:
-<img alt="Image" src="_images/1773811752522_01c29ab3_d248_4791_9716_772f7260f7fb.png" /></p>
+<p>It will enter the visual configuration menu of buildroot:</p>
+<p><img alt="Image" src="_images/1773811752522_01c29ab3_d248_4791_9716_772f7260f7fb.png" /></p>
 <p>The meanings of each option are as follows:</p>
 <table class="docutils align-default">
 <thead>
@@ -1224,15 +1224,15 @@ Directory structure (symbolic links point to actual source files):</p>
 </tr>
 </tbody>
 </table>
-<p>Taking adding libraw as an example, within the menuconfig interface, navigate to Target packages —&gt; Libraries —&gt; Graphics —&gt;, find libraw and press y to select it, then exit and save the configuration.
-<img alt="Image" src="_images/1773812793183_f56f8b56_8fb6_4348_9d11_345211bc77c2.png" /></p>
+<p>Using libraw as an example, navigate within the menuconfig interface to Target packages —&gt; Libraries —&gt; Graphics —&gt;. Locate libraw and press ‘y’ to select it, then exit and save the configuration.</p>
+<p><img alt="Image" src="_images/1773812793183_f56f8b56_8fb6_4348_9d11_345211bc77c2.png" /></p>
 <p>Run the following command to compile buildroot individually:</p>
 <p>buildroot：</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="n">build</span><span class="p">.</span><span class="n">sh</span><span class="w"> </span><span class="n">buildroot</span>
 </pre></div>
 </div>
-<p>Compiling the Buildroot root filesystem alone typically takes 1 to 2 hours. The actual duration depends on the host performance and network conditions.</p>
-<p>Flash the compiled rootfs.img to the board via OTG, or flash it as part of a full system image after performing a full compilation. For flashing methods, please refer to the Flashing Firmware Image chapter（<font style="color:#DF2A3F;">provide a hyperlink)）.</p>
+<p>Compiling the Buildroot root filesystem usually takes between 1 to 2 hours. The exact duration may vary based on the performance of the host machine and the conditions of the network.</p>
+<p>You can flash the compiled rootfs.img to the board via OTG, or include it as part of a complete system image after performing a full compilation. For detailed methods on flashing, please refer to the “Flashing Firmware Image” chapter.</p>
 <p>You can see the corresponding libraw.so under /usr/lib directory.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="err">#</span><span class="w"> </span><span class="n">find</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="o">-</span><span class="n">name</span><span class="w"> </span><span class="s">&quot;*raw*&quot;</span>
 <span class="p">.</span><span class="o">/</span><span class="n">python3</span><span class="mf">.11</span><span class="o">/</span><span class="n">encodings</span><span class="o">/</span><span class="n">raw_unicode_escape</span><span class="p">.</span><span class="n">pyc</span>
@@ -1286,9 +1286,7 @@ Directory structure (symbolic links point to actual source files):</p>
 </pre></div>
 </div>
 <p>The result will show that a 64-bit ARM file is generated.</p>
-<ol class="arabic simple" start="4">
-<li><p>Copy the fltest _ watchdog generated by compiling to the board through U disk or FTP, for example, under the/root path. Take U disk as an example, copy it to the development board and run the test.</p></li>
-</ol>
+<p>4. Copy the fltest _ watchdog generated by compiling to the board through U disk or FTP, for example, under the/root path. Take U disk as an example, copy it to the development board and run the test.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">cp</span><span class="w"> </span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">sda1</span><span class="o">/</span><span class="n">fltest_watchdog</span><span class="w"> </span><span class="o">/</span><span class="n">root</span><span class="o">/</span>
 <span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="n">fltest_watchdog</span>
 <span class="n">Watchdog</span><span class="w"> </span><span class="n">Ticking</span><span class="w"> </span><span class="n">Away</span><span class="o">!</span>
@@ -1310,8 +1308,8 @@ Directory structure (symbolic links point to actual source files):</p>
 <img alt="Image" src="_images/1776824189000_2e7b00bd_af9b_4d9f_b785_8ef0f06ab008.png" /></p>
 <section id="g">
 <h5><strong>1. 4G</strong><a class="headerlink" href="#g" title="Link to this heading"></a></h5>
-<p>Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.
-<img alt="Image" src="_images/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png" /></p>
+<p>Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</p>
+<p><img alt="Image" src="_images/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png" /></p>
 <p>Once the module is connected and both the development board and the module are powered on, you can view the USB status using the lsusb command.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# lsusb
 Bus 005 Device 001: ID 1d6b:0002
@@ -1364,7 +1362,7 @@ udhcpc: lease of 10.98.203.144 obtained from 10.98.203.145, lease time 7200
 </div>
 <p>The ping domain name test.</p>
 <p>The network nodes of 4G.</p>
-<p><strong>⚠️Note: Please select the domain name to test according to the region of the user.</strong></p>
+<p><strong>⚠️Note: Please select the domain name to test according to the your region.</strong></p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">ping</span><span class="w"> </span><span class="o">-</span><span class="n">I</span><span class="w"> </span><span class="n">wwan0</span><span class="w"> </span><span class="n">www</span><span class="p">.</span><span class="n">forlinx</span><span class="p">.</span><span class="n">com</span><span class="w"> </span><span class="o">-</span><span class="n">c</span><span class="w"> </span><span class="mi">3</span>
 <span class="n">PING</span><span class="w"> </span><span class="n">s</span><span class="mf">-526319.</span><span class="n">gotocdn</span><span class="p">.</span><span class="n">com</span><span class="w"> </span><span class="p">(</span><span class="mf">211.149.226.120</span><span class="p">)</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="mf">10.98.203.144</span><span class="w"> </span><span class="n">wwan0</span><span class="o">:</span><span class="w"> </span><span class="mi">56</span><span class="p">(</span><span class="mi">84</span><span class="p">)</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">data</span><span class="p">.</span>
 <span class="mi">64</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="mf">211.149.226.120</span><span class="o">:</span><span class="w"> </span><span class="n">icmp_seq</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="n">ttl</span><span class="o">=</span><span class="mi">50</span><span class="w"> </span><span class="n">time</span><span class="o">=</span><span class="mi">312</span><span class="w"> </span><span class="n">ms</span>
@@ -1562,8 +1560,8 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 <h5><strong>3. Application</strong><a class="headerlink" href="#application" title="Link to this heading"></a></h5>
 <section id="voltage-input-test">
 <h6>3.1 Voltage Input Test<a class="headerlink" href="#voltage-input-test" title="Link to this heading"></a></h6>
-<p>Select saradc2 for testing. The ADC pin hardware schematic is as follows. The chip currently uses a 1.8V reference voltage, corresponding to a 12-bit ADC maximum value of 4095.
-<img alt="Image" src="_images/1773026170298_487ba0df_510f_411f_ac20_e43c19c63500.png" /></p>
+<p>Select saradc2 for testing. The ADC pin hardware schematic is as follows. The chip currently uses a 1.8V reference voltage, corresponding to a 12-bit ADC maximum value of 4095.</p>
+<p><img alt="Image" src="_images/1773026170298_487ba0df_510f_411f_ac20_e43c19c63500.png" /></p>
 <p>Short-circuit pin 1 of connector P12 and pin 2 of connector P13, then read the value of saradc2:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">bus</span><span class="o">/</span><span class="n">iio</span><span class="o">/</span><span class="n">devices</span><span class="o">/</span><span class="n">iio</span><span class="err">\</span><span class="o">:</span><span class="n">device0</span><span class="o">/</span>
 <span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:/</span><span class="n">sys</span><span class="o">/</span><span class="n">bus</span><span class="o">/</span><span class="n">iio</span><span class="o">/</span><span class="n">devices</span><span class="o">/</span><span class="n">iio</span><span class="o">:</span><span class="n">device0</span><span class="err">#</span><span class="w"> </span><span class="n">cat</span><span class="w"> </span><span class="n">in_voltage2_raw</span>
@@ -1578,8 +1576,8 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </section>
 <section id="adc-key-test">
 <h6>3.2 ADC Key Test<a class="headerlink" href="#adc-key-test" title="Link to this heading"></a></h6>
-<p>The saradc1 channel is used for the ADC key detection circuit, employing a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, resulting in different voltages read by the ADC. The program identifies specific keys by judging the voltage range. The principle is illustrated in the following diagram:
-<img alt="Image" src="_images/1774233416305_199112cd_eb5b_4be6_91cd_a54e14476846.png" /></p>
+<p>The saradc1 channel is utilized for the ADC key detection circuit, which operates on a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, leading to different voltages being read by the ADC. The program determines specific keys by evaluating the voltage ranges. This principle is illustrated in the diagram below:</p>
+<p><img alt="Image" src="_images/1774233416305_199112cd_eb5b_4be6_91cd_a54e14476846.png" /></p>
 <p>Use the<code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>command-line tool for key testing. Currently,<code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>supports testing the four keys on the baseboard: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">fltest_keytest</span>
 <span class="n">Available</span><span class="w"> </span><span class="n">devices</span><span class="o">:</span>
@@ -1597,7 +1595,7 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 <span class="n">key158</span><span class="w"> </span><span class="n">Released</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>The source code path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/app/forlinx/forlinx_cmd/fltest_keytest</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>ource code path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/app/forlinx/forlinx_cmd/fltest_keytest</span></code></p>
 </section>
 <section id="while-pressing-and-releasing-the-keys-sequentially-the-terminal-outputs-are">
 <h6>3.3 While pressing and releasing the keys sequentially, the terminal outputs are:<a class="headerlink" href="#while-pressing-and-releasing-the-keys-sequentially-the-terminal-outputs-are" title="Link to this heading"></a></h6>
@@ -1635,7 +1633,7 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 </pre></div>
 </div>
 <p><strong>3.3.1 Scanning and Locating the Key Device</strong></p>
-<p>The input device name corresponding to the OK3588 ADC keys is adc-keys <code class="docutils literal notranslate"><span class="pre">&quot;adc-keys&quot;</span></code>. Since there might be multiple event devices under <code class="docutils literal notranslate"><span class="pre">/dev/input/</span></code>, it’s necessary to first scan and find the correct device node.</p>
+<p>The input device name corresponding to the OK3588 ADC keys is <code class="docutils literal notranslate"><span class="pre">&quot;adc-keys&quot;</span></code>. Since there might be multiple event devices under <code class="docutils literal notranslate"><span class="pre">/dev/input/</span></code>, it’s necessary to first scan and find the correct device node.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">ndev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scandir</span><span class="p">(</span><span class="n">DEV_INPUT_EVENT</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">namelist</span><span class="p">,</span><span class="w"> </span><span class="n">is_event_device</span><span class="p">,</span><span class="w"> </span><span class="n">alphasort</span><span class="p">);</span>
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ndev</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
 <span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
@@ -1678,7 +1676,7 @@ udhcpc:<span class="w"> </span>lease<span class="w"> </span>of<span class="w"> <
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">read</span></code> Each read operation fetches one complete<code class="docutils literal notranslate"><span class="pre">input_event</span></code> (typically 16 or 24 bytes). The return value must be checked to ensure it equals <code class="docutils literal notranslate"><span class="pre">sizeof(t)</span></code>(struct input_event) to guarantee data integrity.</p>
+<p>Each <code class="docutils literal notranslate"><span class="pre">read</span></code> operation retrieves one complete <code class="docutils literal notranslate"><span class="pre">input_event</span></code>, which typically consists of 16 or 24 bytes. It’s crucial to check the return value to ensure it equals <code class="docutils literal notranslate"><span class="pre">sizeof(t)</span></code> (struct input_event) for data integrity.</p>
 <p><strong>3.3.4 Closing the Device</strong></p>
 <p>After completing key monitoring, close the device file descriptor to release resources.</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">close</span><span class="p">(</span><span class="n">keys_fd</span><span class="p">);</span>
@@ -5688,23 +5686,23 @@ Begin perf ...
 </section>
 <section id="development-guides">
 <h2>Development Guides<a class="headerlink" href="#development-guides" title="Link to this heading"></a></h2>
-<section id="add-user-application">
-<h3>1. Add User Application<a class="headerlink" href="#add-user-application" title="Link to this heading"></a></h3>
+<section id="adding-user-application">
+<h3>1. Adding User Application<a class="headerlink" href="#adding-user-application" title="Link to this heading"></a></h3>
 <section id="packaging-the-user-program-into-the-image">
 <h4>1.1 Packaging the User Program into the Image<a class="headerlink" href="#packaging-the-user-program-into-the-image" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
-<li><p>The<code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base</span></code> in the source code corresponds to the root directory of the board’s file system. You can directly copy their compiled user applicationuser_applicationto the subdirectory<code class="docutils literal notranslate"><span class="pre">usr/bin</span></code>under this directory.</p></li>
-<li><p>To modify system or service configurations, copy the configuration files to the specified <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/etc</span></code> directory.</p></li>
-<li><p>To add library files, copy <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/usr/lib</span></code> to the specified directory.</p></li>
+<li><p>The directory <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base</span></code> in the source code corresponds to the root directory of the board’s file system. You can directly copy your compiled user application, <code class="docutils literal notranslate"><span class="pre">user_application</span></code>, to the subdirectory <code class="docutils literal notranslate"><span class="pre">usr/bin</span></code> within this directory.</p></li>
+<li><p>To modify system or service configurations, copy the relevant configuration files to the directory <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/etc</span></code>.</p></li>
+<li><p>To add library files, copy them to the specified directory within <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/usr/lib</span></code>.</p></li>
 </ol>
-<p>After copying, execute the <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">user_application</span></code> to add executable permissions to the application.</p>
-<p>After completing the above steps, perform a full compilation in the source code directory, and program the compiled image to the board (refer to section 3.2.1 of the Build Guides for compilation instructions).。 After successful programming, you can manually run your own applicationuser_applicationon the board. For auto-start functionality, please refer to the next section.</p>
+<p>After copying the files, execute the command <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">user_application</span></code> to add executable permissions to the application.</p>
+<p>Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.2.1 of the Build Guides for compilation instructions). After successful programming, you can manually run your application, <code class="docutils literal notranslate"><span class="pre">user_application</span></code>, on the board. For information on enabling auto-start functionality, please refer to the next section.</p>
 </section>
 </section>
 <section id="auto-starting-the-user-program">
 <h3>2. Auto-starting the User Program<a class="headerlink" href="#auto-starting-the-user-program" title="Link to this heading"></a></h3>
-<p>The Linux system of the OK3588-C uses systemd as the initialization system and service manager, designed to achieve faster boot speed, better parallel processing capability, more powerful service management functions, and provide a unified system management interface.</p>
-<p>This image has a preset<code class="docutils literal notranslate"><span class="pre">forlinx.sh</span></code> script in the specified <code class="docutils literal notranslate"><span class="pre">/etc</span></code> directory, which is called and executed by<code class="docutils literal notranslate"><span class="pre">/etc/init.d/S90autorun.sh</span></code>. You can add custom applications to <code class="docutils literal notranslate"><span class="pre">forlinx.sh</span></code>to enable automatic startup of the application.</p>
+<p>The Linux system of the OK3588-C utilizes systemd as its initialization system and service manager. This design aims to achieve faster boot speeds, improved parallel processing capabilities, and enhanced service management functions, all while providing a unified system management interface.</p>
+<p>Within this system, there is a preset script named <code class="docutils literal notranslate"><span class="pre">forlinx.sh</span></code> located in the <code class="docutils literal notranslate"><span class="pre">/etc</span></code> directory. This script is called and executed by <code class="docutils literal notranslate"><span class="pre">/etc/init.d/S90autorun.sh</span></code>. Users can customize <code class="docutils literal notranslate"><span class="pre">forlinx.sh</span></code> to include their own applications, allowing for automatic startup of these applications.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~#<span class="w"> </span>cat<span class="w"> </span>/etc/forlinx.sh
 <span class="c1">#! /bin/sh</span>
 
