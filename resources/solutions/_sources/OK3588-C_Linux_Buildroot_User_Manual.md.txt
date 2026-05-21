@@ -2370,6 +2370,7 @@ RTC (Real-Time Clock) is a critical component that ensures the system maintains 
 The OK3588 utilizes the PCF8563 real-time clock module. The chip connects to the main processor via I2C5, with a device address of 0x51.
 
 Schematic: The RTC schematic is as shown below:
+
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773049363933_d0eb9079_7c06_4e79_a2af_300c0f96fc71.png)
 
 Driver Location: The RTC driver source code is located within the kernel at the specified path.`drivers/rtc/rtc-pcf8563.c`.
