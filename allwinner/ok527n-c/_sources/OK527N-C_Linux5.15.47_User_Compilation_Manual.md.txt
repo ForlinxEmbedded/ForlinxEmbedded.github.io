@@ -789,7 +789,7 @@ forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh brandy
 forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh pack
 ```
 
-Note: The content of uboot is not open source, and it will report an error when compiled separately. Just ignore it.
+**Note: The content of uboot is not open source, and it will report an error when compiled separately. Just ignore it.**
 
 #### <font style="color:black;">4.2.5 **Individual Filesystem Compilation**</font>
 
