@@ -577,7 +577,7 @@ Recommended Development Environment OS: Ubuntu 20.04 64-bit
 Cross toolchain: gcc-arm-10.3-2021.07-x86 \_ 64-aarch64-none-linux-gnu (kernel)
 
 ```plain
-aarch64-buildroot-linux-gnu_sdk-buildroot（应用）
+aarch64-buildroot-linux-gnu_sdk-buildroot（Application）
 ```
 
 Bootloader version: u-boot-2018.07
