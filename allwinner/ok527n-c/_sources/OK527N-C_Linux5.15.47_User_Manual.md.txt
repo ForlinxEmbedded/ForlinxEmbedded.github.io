@@ -743,7 +743,7 @@ Insert the UVC camera and click the start button.
 
 ![Image](./images/OK527N-C_Linux5.15.47_User_Manual/741afdefeab547d7af36ecf0bf2e730f.png)
 
-#### 3.24 English Input via USB Keyboard
+### 3.24 English Input via USB Keyboard
 
 Press **Alt+V** to switch between Chinese and English input methods.
 
@@ -2796,10 +2796,6 @@ Table of hardware decoder parameters for the OK527 platform:
 
 ```plain
 root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video1 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480,framerate=30/1 ! waylandsink
-
-.
-.
-.
 ```
 
 ![Image](./images/OK527N-C_Linux5.15.47_User_Manual/0c47f75b548e459faadbfe8c36864519.png)
