@@ -3004,7 +3004,7 @@ Image Path: 02-User Profile\\01-Software Profile\\03-Mirror \& Source Code\\01-I
 |----------|----------
 | t527\_linux\_okt527\_uart0.img| Factory default image (eMMC)
 
-Note: The provided image file has been compressed. Please decompress it before burning it.
+**Note: The provided image file has been compressed. Please decompress it before burning it.**
 
 ### 6.2 OTG Flashing
 
