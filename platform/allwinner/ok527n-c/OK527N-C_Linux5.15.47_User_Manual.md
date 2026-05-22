@@ -2990,11 +2990,6 @@ Video Preview
 
 ```plain
 root@OK527:/# gst-launch-1.0  filesrc location=/forlinx/1080p_30fps_h265.mp4  ! parsebin ! omxhevcvideodec ! waylandsink
-
-.
-.
-.
-
 ```
 
 ## 6\. System Flashing
