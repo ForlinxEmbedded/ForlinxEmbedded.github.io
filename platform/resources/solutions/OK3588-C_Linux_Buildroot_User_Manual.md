@@ -5349,59 +5349,59 @@ To use the built-in NPU of the OK3588-C, please first run the RKNN-Toolkit2 tool
 
 The currently supported models are as follows:
 
-|     **demo**      |       **model\_name**        | **inputs\_shape**** **** **** **** ** | **dtype** | **RK3588\*\*\*\*@single\_core** |
-| :---------------: | :--------------------------: | :-----------------------------------: | :-------: | :-----------------------------: |
-|     mobilenet     |        mobilenetv2-12        |           \[1, 3, 224, 224]           |   INT8    |              450.7              |
-|      resnet       |        resnet50-v2-7         |           \[1, 3, 224, 224]           |   INT8    |              110.1              |
-|      yolov5       |        yolov5s\_relu         |           \[1, 3, 640, 640]           |   INT8    |              66.1               |
-|                   |           yolov5n            |           \[1, 3, 640, 640]           |   INT8    |              82.5               |
-|                   |           yolov5s            |           \[1, 3, 640, 640]           |   INT8    |              48.4               |
-|                   |           yolov5m            |           \[1, 3, 640, 640]           |   INT8    |              20.9               |
-|      yolov6       |           yolov6n            |           \[1, 3, 640, 640]           |   INT8    |              106.4              |
-|                   |           yolov6s            |           \[1, 3, 640, 640]           |   INT8    |              36.4               |
-|                   |           yolov6m            |           \[1, 3, 640, 640]           |   INT8    |              17.8               |
-|      yolov7       |         yolov7-tiny          |           \[1, 3, 640, 640]           |   INT8    |              72.7               |
-|                   |            yolov7            |           \[1, 3, 640, 640]           |   INT8    |              11.4               |
-|      yolov8       |           yolov8n            |           \[1, 3, 640, 640]           |   INT8    |              73.5               |
-|                   |           yolov8s            |           \[1, 3, 640, 640]           |   INT8    |              38.0               |
-|                   |           yolov8m            |           \[1, 3, 640, 640]           |   INT8    |              16.2               |
-|    yolov8\_obb    |         yolov8n-obb          |           \[1, 3, 640, 640]           |   INT8    |              74.0               |
-|      yolov10      |           yolov10n           |           \[1, 3, 640, 640]           |   INT8    |              61.2               |
-|                   |           yolov10s           |           \[1, 3, 640, 640]           |   INT8    |              33.8               |
-|      yolo11       |           yolo11n            |           \[1, 3, 640, 640]           |   INT8    |              60.0               |
-|                   |           yolo11s            |           \[1, 3, 640, 640]           |   INT8    |              33.0               |
-|                   |           yolo11m            |           \[1, 3, 640, 640]           |   INT8    |              12.7               |
-|       yolox       |           yolox\_s           |           \[1, 3, 640, 640]           |   INT8    |              37.1               |
-|                   |           yolox\_m           |           \[1, 3, 640, 640]           |   INT8    |              16.0               |
-|      ppyoloe      |          ppyoloe\_s          |           \[1, 3, 640, 640]           |   INT8    |              32.5               |
-|                   |          ppyoloe\_m          |           \[1, 3, 640, 640]           |   INT8    |              15.8               |
-|    yolo\_world    |       yolo\_world\_v2s       |           \[1, 3, 640, 640]           |   INT8    |              22.1               |
-|                   |          clip\_text          |               \[1, 20]                |   FP16    |              95.8               |
-|   yolov8\_pose    |         yolov8n-pose         |           \[1, 3, 640, 640]           |   INT8    |              55.9               |
-|     deeplabv3     | deeplab-v3-plus-mobilenet-v2 |           \[1, 513, 513, 1]           |   INT8    |              34.0               |
-|    yolov5\_seg    |         yolov5n-seg          |           \[1, 3, 640, 640]           |   INT8    |              69.3               |
-|                   |         yolov5s-seg          |           \[1, 3, 640, 640]           |   INT8    |              36.8               |
-|                   |         yolov5m-seg          |           \[1, 3, 640, 640]           |   INT8    |              16.4               |
-|    yolov8\_seg    |         yolov8n-seg          |           \[1, 3, 640, 640]           |   INT8    |              60.8               |
-|                   |         yolov8s-seg          |           \[1, 3, 640, 640]           |   INT8    |              28.9               |
-|                   |         yolov8m-seg          |           \[1, 3, 640, 640]           |   INT8    |              12.6               |
-|       ppseg       |    ppseg\_lite\_1024x512     |           \[1, 3, 512, 512]           |   INT8    |              35.7               |
-|     mobilesam     |   mobilesam\_encoder\_tiny   |           \[1, 3, 448, 448]           |   FP16    |              10.0               |
-|                   |      mobilesam\_decoder      |           \[1, 1, 112, 112]           |   FP16    |              116.4              |
-|    RetinaFace     |    RetinaFace\_mobile320     |           \[1, 3, 320, 320]           |   INT8    |              227.2              |
-|                   |  RetinaFace\_resnet50\_320   |           \[1, 3, 320, 320]           |   INT8    |              49.2               |
-|      LPRNet       |            lprnet            |            \[1, 3, 24, 94]            |   FP16    |              586.4              |
-|     PPOCR-Det     |         ppocrv4\_det         |           \[1, 3, 480, 480]           |   INT8    |              50.7               |
-|     PPOCR-Rec     |         ppocrv4\_rec         |           \[1, 3, 48, 320]            |   FP16    |              73.9               |
-| lite\_transformer | lite-transformer-encoder-16  |        embedding-256, token-16        |   FP16    |              867.6              |
-|                   | lite-transformer-decoder-16  |        embedding-256, token-16        |   FP16    |              343.8              |
-|       clip        |         clip\_images         |           \[1, 3, 224, 224]           |   FP16    |               6.5               |
-|                   |          clip\_text          |               \[1, 20]                |   FP16    |              96.0               |
-|     wav2vec2      |  wav2vec2\_base\_960h\_20s   |               20s audio               |   FP16    |            RTF 0.133            |
-|      whisper      |      whisper\_base\_20s      |               20s audio               |   FP16    |            RTF 0.215            |
-|     zipformer     | zipformer-bilingual-zh-en-t  |            streaming audio            |   FP16    |            RTF 0.065            |
-|      yamnet       |          yamnet\_3s          |               3s audio                |   FP16    |            RTF 0.004            |
-|     mms\_tts      |      mms\_tts\_eng\_200      |               token-200               |   FP16    |            RTF 0.069            |
+|     **demo**      |       **model\_name**        |      inputs\_shape      | **dtype** | **RK3588@single\_core** |
+| :---------------: | :--------------------------: | :---------------------: | :-------: | :---------------------: |
+|     mobilenet     |        mobilenetv2-12        |    \[1, 3, 224, 224]    |   INT8    |          450.7          |
+|      resnet       |        resnet50-v2-7         |    \[1, 3, 224, 224]    |   INT8    |          110.1          |
+|      yolov5       |        yolov5s\_relu         |    \[1, 3, 640, 640]    |   INT8    |          66.1           |
+|                   |           yolov5n            |    \[1, 3, 640, 640]    |   INT8    |          82.5           |
+|                   |           yolov5s            |    \[1, 3, 640, 640]    |   INT8    |          48.4           |
+|                   |           yolov5m            |    \[1, 3, 640, 640]    |   INT8    |          20.9           |
+|      yolov6       |           yolov6n            |    \[1, 3, 640, 640]    |   INT8    |          106.4          |
+|                   |           yolov6s            |    \[1, 3, 640, 640]    |   INT8    |          36.4           |
+|                   |           yolov6m            |    \[1, 3, 640, 640]    |   INT8    |          17.8           |
+|      yolov7       |         yolov7-tiny          |    \[1, 3, 640, 640]    |   INT8    |          72.7           |
+|                   |            yolov7            |    \[1, 3, 640, 640]    |   INT8    |          11.4           |
+|      yolov8       |           yolov8n            |    \[1, 3, 640, 640]    |   INT8    |          73.5           |
+|                   |           yolov8s            |    \[1, 3, 640, 640]    |   INT8    |          38.0           |
+|                   |           yolov8m            |    \[1, 3, 640, 640]    |   INT8    |          16.2           |
+|    yolov8\_obb    |         yolov8n-obb          |    \[1, 3, 640, 640]    |   INT8    |          74.0           |
+|      yolov10      |           yolov10n           |    \[1, 3, 640, 640]    |   INT8    |          61.2           |
+|                   |           yolov10s           |    \[1, 3, 640, 640]    |   INT8    |          33.8           |
+|      yolo11       |           yolo11n            |    \[1, 3, 640, 640]    |   INT8    |          60.0           |
+|                   |           yolo11s            |    \[1, 3, 640, 640]    |   INT8    |          33.0           |
+|                   |           yolo11m            |    \[1, 3, 640, 640]    |   INT8    |          12.7           |
+|       yolox       |           yolox\_s           |    \[1, 3, 640, 640]    |   INT8    |          37.1           |
+|                   |           yolox\_m           |    \[1, 3, 640, 640]    |   INT8    |          16.0           |
+|      ppyoloe      |          ppyoloe\_s          |    \[1, 3, 640, 640]    |   INT8    |          32.5           |
+|                   |          ppyoloe\_m          |    \[1, 3, 640, 640]    |   INT8    |          15.8           |
+|    yolo\_world    |       yolo\_world\_v2s       |    \[1, 3, 640, 640]    |   INT8    |          22.1           |
+|                   |          clip\_text          |        \[1, 20]         |   FP16    |          95.8           |
+|   yolov8\_pose    |         yolov8n-pose         |    \[1, 3, 640, 640]    |   INT8    |          55.9           |
+|     deeplabv3     | deeplab-v3-plus-mobilenet-v2 |    \[1, 513, 513, 1]    |   INT8    |          34.0           |
+|    yolov5\_seg    |         yolov5n-seg          |    \[1, 3, 640, 640]    |   INT8    |          69.3           |
+|                   |         yolov5s-seg          |    \[1, 3, 640, 640]    |   INT8    |          36.8           |
+|                   |         yolov5m-seg          |    \[1, 3, 640, 640]    |   INT8    |          16.4           |
+|    yolov8\_seg    |         yolov8n-seg          |    \[1, 3, 640, 640]    |   INT8    |          60.8           |
+|                   |         yolov8s-seg          |    \[1, 3, 640, 640]    |   INT8    |          28.9           |
+|                   |         yolov8m-seg          |    \[1, 3, 640, 640]    |   INT8    |          12.6           |
+|       ppseg       |    ppseg\_lite\_1024x512     |    \[1, 3, 512, 512]    |   INT8    |          35.7           |
+|     mobilesam     |   mobilesam\_encoder\_tiny   |    \[1, 3, 448, 448]    |   FP16    |          10.0           |
+|                   |      mobilesam\_decoder      |    \[1, 1, 112, 112]    |   FP16    |          116.4          |
+|    RetinaFace     |    RetinaFace\_mobile320     |    \[1, 3, 320, 320]    |   INT8    |          227.2          |
+|                   |  RetinaFace\_resnet50\_320   |    \[1, 3, 320, 320]    |   INT8    |          49.2           |
+|      LPRNet       |            lprnet            |     \[1, 3, 24, 94]     |   FP16    |          586.4          |
+|     PPOCR-Det     |         ppocrv4\_det         |    \[1, 3, 480, 480]    |   INT8    |          50.7           |
+|     PPOCR-Rec     |         ppocrv4\_rec         |    \[1, 3, 48, 320]     |   FP16    |          73.9           |
+| lite\_transformer | lite-transformer-encoder-16  | embedding-256, token-16 |   FP16    |          867.6          |
+|                   | lite-transformer-decoder-16  | embedding-256, token-16 |   FP16    |          343.8          |
+|       clip        |         clip\_images         |    \[1, 3, 224, 224]    |   FP16    |           6.5           |
+|                   |          clip\_text          |        \[1, 20]         |   FP16    |          96.0           |
+|     wav2vec2      |  wav2vec2\_base\_960h\_20s   |        20s audio        |   FP16    |        RTF 0.133        |
+|      whisper      |      whisper\_base\_20s      |        20s audio        |   FP16    |        RTF 0.215        |
+|     zipformer     | zipformer-bilingual-zh-en-t  |     streaming audio     |   FP16    |        RTF 0.065        |
+|      yamnet       |          yamnet\_3s          |        3s audio         |   FP16    |        RTF 0.004        |
+|     mms\_tts      |      mms\_tts\_eng\_200      |        token-200        |   FP16    |        RTF 0.069        |
 
 ###### **4.1.1.2 RKNN-Toolkit2**
 
