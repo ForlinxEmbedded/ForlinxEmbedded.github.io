@@ -227,14 +227,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#id59">3. Application</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#encoding-and-decoding">Encoding and Decoding</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#audio-and-video-playback">1. Audio and Video Playback</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#video-hardware-encoding">2. Video Hardware Encoding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#video-hardware-decoding">3. Video Hardware Decoding</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="#machine-learning">Machine Learning</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#npu">NPU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id60">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id61">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id62">3. Application</a></li>
 </ul>
 </li>
 </ul>
@@ -5370,10 +5367,7 @@ Redistribute latency...
 <p>After completing the configuration, you can either:</p>
 <p>Press the number 1 to perform a reboot—the screen settings configured during the U-Boot stage will take effect afterrestarting.</p>
 <p>Or, simply press the reset button on the development board—the configuration will similarly be applied once the system restarts.</p>
-</section>
-</section>
-<section id="encoding-and-decoding">
-<h3>Encoding and Decoding<a class="headerlink" href="#encoding-and-decoding" title="Link to this heading"></a></h3>
+<p><strong>Encoding and Decoding</strong></p>
 <p>Some application layer software for audio and video on the OK3588 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form.</p>
 <p>The OK3588 platform has an internal video processing unit, the VPU, which supports hardware codecs for video in the following formats:</p>
 <p>Video Decoding: H264, H265, VP8, VP9, etc., maximum support 8K&#64;60fps</p>
@@ -5452,106 +5446,107 @@ Redistribute latency...
 </tbody>
 </table>
 <section id="audio-and-video-playback">
-<h4>1. Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h4>
+<h5>3.1. Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h5>
 <section id="playing-audio-and-video-with-gst-play">
-<h5>1.1 Playing Audio and Video With Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h5>
+<h6>3.1.1 Playing Audio and Video With Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h6>
 <p>Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
 </pre></div>
 </div>
 </section>
 <section id="playing-video-with-gst-launch">
-<h5>1.2 Playing Video With Gst-launch<a class="headerlink" href="#playing-video-with-gst-launch" title="Link to this heading"></a></h5>
+<h6>3.1.2 Playing Video With Gst-launch<a class="headerlink" href="#playing-video-with-gst-launch" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
 </pre></div>
 </div>
 </section>
 <section id="playing-audio-with-gst-launch">
-<h5>1.3 Playing Audio With Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h5>
+<h6>3.1.3 Playing Audio With Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
 </pre></div>
 </div>
 </section>
 <section id="playing-video-and-audio-with-gst-launch">
-<h5>1.4 Playing Video and Audio With Gst-launch<a class="headerlink" href="#playing-video-and-audio-with-gst-launch" title="Link to this heading"></a></h5>
+<h6>3.1.4 Playing Video and Audio With Gst-launch<a class="headerlink" href="#playing-video-and-audio-with-gst-launch" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
 </pre></div>
 </div>
 </section>
 </section>
 <section id="video-hardware-encoding">
-<h4>2. Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h4>
+<h5>3.2 Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h5>
 <p>OK3588 supports up to 8K &#64; 60fps/H.265 and 8K &#64; 60fps/H.264 video encoding.</p>
 <section id="video-hardware-encoding-h-264">
-<h5>2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h5>
+<h6>3.2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
 </pre></div>
 </div>
 </section>
 <section id="video-hardware-encoding-h-265">
-<h5>2.2 Video Hardware Encoding H.265<a class="headerlink" href="#video-hardware-encoding-h-265" title="Link to this heading"></a></h5>
+<h6>3.2.2 Video Hardware Encoding H.265<a class="headerlink" href="#video-hardware-encoding-h-265" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
 </pre></div>
 </div>
 </section>
 <section id="jpeg-hardware-encoding">
-<h5>2.3 JPEG Hardware Encoding<a class="headerlink" href="#jpeg-hardware-encoding" title="Link to this heading"></a></h5>
+<h6>3.2.3 JPEG Hardware Encoding<a class="headerlink" href="#jpeg-hardware-encoding" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
 </pre></div>
 </div>
 </section>
 </section>
 <section id="video-hardware-decoding">
-<h4>3. Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h4>
-<p>OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.</p>
+<h5>3.3 Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h5>
+<p>OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K&#64;30fps, while the H.265 decoder supports 8K&#64;60fps.</p>
 <p>OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.</p>
 <section id="decoding-and-playing-h-264-format-video">
-<h5>3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h5>
+<h6>3.3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">4</span><span class="n">k_60fps_h264</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">h264parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-h264-format-video-with-audio">
-<h5>3.2 Decoding and Playing H264 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h264-format-video-with-audio" title="Link to this heading"></a></h5>
+<h6>3.3.2 Decoding and Playing H264 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h264-format-video-with-audio" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">4</span><span class="n">k_60fps_h264</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="n">demux</span><span class="w"> </span><span class="n">demux</span><span class="p">.</span><span class="n">video_0</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">h264parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span><span class="w"> </span><span class="n">demux</span><span class="p">.</span><span class="n">audio_0</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">aacparse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">faad</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">alsasink</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-h265-format-video">
-<h5>3.3 Decoding and Playing H265 Format Video<a class="headerlink" href="#decoding-and-playing-h265-format-video" title="Link to this heading"></a></h5>
+<h6>3.3.3 Decoding and Playing H265 Format Video<a class="headerlink" href="#decoding-and-playing-h265-format-video" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">4</span><span class="n">k_60fps_h265</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">h265parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-h265-format-video-with-audio">
-<h5>3.4 Decoding and Playing H265 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h265-format-video-with-audio" title="Link to this heading"></a></h5>
+<h6>3.3.4 Decoding and Playing H265 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h265-format-video-with-audio" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">4</span><span class="n">k_60fps_h265</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="n">demux</span><span class="w"> </span><span class="n">demux</span><span class="p">.</span><span class="n">video_0</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">h265parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span><span class="w"> </span><span class="n">demux</span><span class="p">.</span><span class="n">audio_0</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">aacparse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">faad</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">alsasink</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp9-format-video">
-<h5>3.5 Decoding and Playing VP9 Format Video<a class="headerlink" href="#decoding-and-playing-vp9-format-video" title="Link to this heading"></a></h5>
+<h6>3.3.5 Decoding and Playing VP9 Format Video<a class="headerlink" href="#decoding-and-playing-vp9-format-video" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">1080</span><span class="n">p_60fps_vp9</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">vp9parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp9-format-video-with-audio">
-<h5>3.6 Decoding and Playing VP9 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp9-format-video-with-audio" title="Link to this heading"></a></h5>
+<h6>3.3.6 Decoding and Playing VP9 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp9-format-video-with-audio" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">1080</span><span class="n">p_60fps_vp9</span><span class="mi">-30</span><span class="n">S</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">qtdemux</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="n">demux</span><span class="w"> </span><span class="n">demux</span><span class="p">.</span><span class="n">video_0</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">vp9parse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span><span class="w"> </span><span class="n">demux</span><span class="p">.</span><span class="n">audio_0</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">aacparse</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">faad</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">alsasink</span><span class="w"> </span><span class="n">device</span><span class="o">=</span><span class="n">plughw</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp8-format-video">
-<h5>3.7 Decoding and Playing VP8 Format Video<a class="headerlink" href="#decoding-and-playing-vp8-format-video" title="Link to this heading"></a></h5>
+<h6>3.3.7 Decoding and Playing VP8 Format Video<a class="headerlink" href="#decoding-and-playing-vp8-format-video" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">1080</span><span class="n">p_30fps_vp8</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">matroskademux</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span>
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp8-format-video-with-audio">
-<h5>3.8 Decoding and Playing VP8 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp8-format-video-with-audio" title="Link to this heading"></a></h5>
+<h6>3.3.8 Decoding and Playing VP8 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp8-format-video-with-audio" title="Link to this heading"></a></h6>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span><span class="w"> </span><span class="n">gst</span><span class="o">-</span><span class="n">launch</span><span class="mf">-1.0</span><span class="w"> </span><span class="n">filesrc</span><span class="w"> </span><span class="n">location</span><span class="o">=/</span><span class="n">userdata</span><span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="mi">1080</span><span class="n">p_30fps_vp8</span><span class="p">.</span><span class="n">mp4</span><span class="w"> </span><span class="n">typefind</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">video</span><span class="o">/</span><span class="n">webm</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">matroskademux</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="n">dec</span><span class="w"> </span><span class="n">dec</span><span class="p">.</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">mppvideodec</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">waylandsink</span><span class="w"> </span><span class="n">dec</span><span class="p">.</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">queue</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">decodebin</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">audioconvert</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">audioresample</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">alsasink</span><span class="w"> </span><span class="n">device</span><span class="o">=</span><span class="n">plughw</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span>
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -5559,8 +5554,9 @@ Redistribute latency...
 <h3>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h3>
 <section id="npu">
 <h4>NPU<a class="headerlink" href="#npu" title="Link to this heading"></a></h4>
+</section>
 <section id="id60">
-<h5>1. Introduction<a class="headerlink" href="#id60" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id60" title="Link to this heading"></a></h4>
 <p>An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.</p>
 <p>The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment.</p>
 <p>Main features:</p>
@@ -5571,7 +5567,7 @@ Redistribute latency...
 <p>The OK3588 features an extremely powerful NPU module, supporting up to 6 TOPS of computational power. This enables the OK3588 to locally run relatively complex AI models in real-time without relying on cloud resources.</p>
 </section>
 <section id="id61">
-<h5>2. Device Tree<a class="headerlink" href="#id61" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id61" title="Link to this heading"></a></h4>
 <p>The device tree nodes related to the NPU are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>        rknpu: npu@fdab0000 {
                 compatible = &quot;rockchip,rk3588-rknpu&quot;;
@@ -5618,7 +5614,7 @@ Redistribute latency...
 </div>
 </section>
 <section id="id62">
-<h5>3. Application<a class="headerlink" href="#id62" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id62" title="Link to this heading"></a></h4>
 <p>To utilize the NPU, besides requiring kernel support, application-layer calls must go through the library files provided by Rockchip. This content is located in the<code class="docutils literal notranslate"><span class="pre">SDK/external/rknpu2/</span></code>and is represented as <code class="docutils literal notranslate"><span class="pre">/usr/lib/librknnrt.so</span></code>in the integrated file system.</p>
 <p>Since NPU access is implemented by calling library files, using the NPU requires converting models to the RKNN format suitable for the Rockchip platform via Rockchip conversion tools. This can be easily accomplished using Rockchip core development toolkit, RKNN-Toolkit2, which is also located in the <code class="docutils literal notranslate"><span class="pre">SDK/external/rknn-toolkit2/</span></code>. <strong>This section only tests interface availability. For specific model conversion tutorials, please refer to the NPU Development section in the Development Guide.</strong></p>
 <p>The filesystem includes an integrated<code class="docutils literal notranslate"><span class="pre">mobilenet_v1.rknn</span></code>model, which can be tested with the following command:</p>
@@ -5653,7 +5649,6 @@ Begin perf ...
 <p>The inference result suggests an 88.5% probability that the image contains a Borzoi (Russian Wolfhound).</p>
 <p>The image used for this test is shown below:</p>
 <p><img alt="Image" src="_images/1774666440305_ad6f4a06_db24_4454_a635_c3b10fa0bec6.jpeg" /></p>
-</section>
 <section id="interface-call">
 <h5>Interface Call<a class="headerlink" href="#interface-call" title="Link to this heading"></a></h5>
 <p>To address the program’s development needs, this brief demo introduction explains how to call the image and the model. The demo’s source code can be referenced for further details.file.<code class="docutils literal notranslate"><span class="pre">SDK/external/rknpu2/examples/rknn_common_test/src/main.cc</span></code></p>

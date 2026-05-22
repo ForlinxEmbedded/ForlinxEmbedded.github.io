@@ -4997,7 +4997,7 @@ Press the number 1 to perform a reboot—the screen settings configured during t
 
 Or, simply press the reset button on the development board—the configuration will similarly be applied once the system restarts.
 
-### Encoding and Decoding
+**Encoding and Decoding**
 
 Some application layer software for audio and video on the OK3588 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form.
 
@@ -5022,9 +5022,9 @@ Table of hardware codec parameters for the OK3588 platform:
 | Video Encoder     | H.264      | BP/MP/HP@level4.2 | 7680x4320      | 30 fps         |
 |                   | H.265      | MP@level4.1       | 7680x4320      | 30 fps         |
 
-#### 1\. Audio and Video Playback
+##### 3.1\. Audio and Video Playback
 
-##### 1.1 Playing Audio and Video With Gst-play
+###### 3.1.1 Playing Audio and Video With Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
@@ -5032,95 +5032,95 @@ Gplay is an audio/video player based on GStreamer that can automatically select 
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
 ```
 
-##### 1.2 Playing Video With Gst-launch
+###### 3.1.2 Playing Video With Gst-launch
 
 ```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
 ```
 
-##### 1.3 Playing Audio With Gst-launch
+###### 3.1.3 Playing Audio With Gst-launch
 
 ```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
 ```
 
-##### 1.4 Playing Video and Audio With Gst-launch
+###### 3.1.4 Playing Video and Audio With Gst-launch
 
 ```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
 ```
 
-#### 2\. Video Hardware Encoding
+##### 3.2 Video Hardware Encoding
 
 OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.
 
-##### 2.1 Video Hardware Encoding H.264
+###### 3.2.1 Video Hardware Encoding H.264
 
 ```plain
 root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
 ```
 
-##### 2.2 Video Hardware Encoding H.265
+###### 3.2.2 Video Hardware Encoding H.265
 
 ```plain
 root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
 ```
 
-##### 2.3 JPEG Hardware Encoding
+###### 3.2.3 JPEG Hardware Encoding
 
 ```plain
 root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
 ```
 
-#### 3\. Video Hardware Decoding
+##### 3\.3 Video Hardware Decoding
 
-OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K at 30fps, while the H.265 decoder supports 8K at 60fps.
+OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K@30fps, while the H.265 decoder supports 8K@60fps.
 
 OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.
 
-##### 3.1 Decoding and Playing H.264 Format Video
+###### 3.3.1 Decoding and Playing H.264 Format Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
 ```
 
-##### 3.2 Decoding and Playing H264 Format Video With Audio
+###### 3.3.2 Decoding and Playing H264 Format Video With Audio
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 ```
 
-##### 3.3 Decoding and Playing H265 Format Video
+###### 3.3.3 Decoding and Playing H265 Format Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
 ```
 
-##### 3.4 Decoding and Playing H265 Format Video With Audio
+###### 3.3.4 Decoding and Playing H265 Format Video With Audio
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 ```
 
-##### 3.5 Decoding and Playing VP9 Format Video
+###### 3.3.5 Decoding and Playing VP9 Format Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
 ```
 
-##### 3.6 Decoding and Playing VP9 Format Video With Audio
+###### 3.3.6 Decoding and Playing VP9 Format Video With Audio
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0
 ```
 
-##### 3.7 Decoding and Playing VP8 Format Video
+###### 3.3.7 Decoding and Playing VP8 Format Video
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 ! matroskademux ! queue ! mppvideodec ! waylandsink
 ```
 
-##### 3.8 Decoding and Playing VP8 Format Video With Audio
+###### 3.3.8 Decoding and Playing VP8 Format Video With Audio
 
 ```c
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:1,0
@@ -5130,7 +5130,7 @@ root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p
 
 #### NPU
 
-##### 1\. Introduction
+#### 1\. Introduction
 
 An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.
 
@@ -5148,7 +5148,7 @@ The NPU (Neural Processing Unit) is a chip module specifically designed for exec
 
 The OK3588 features an extremely powerful NPU module, supporting up to 6 TOPS of computational power. This enables the OK3588 to locally run relatively complex AI models in real-time without relying on cloud resources.
 
-##### 2\. Device Tree
+#### 2\. Device Tree
 
 The device tree nodes related to the NPU are located at:`arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
@@ -5199,7 +5199,7 @@ It is recommended to modify the NPU settings within this node if changes are req
 };
 ```
 
-##### 3\. Application
+#### 3\. Application
 
 To utilize the NPU, besides requiring kernel support, application-layer calls must go through the library files provided by Rockchip. This content is located in the`SDK/external/rknpu2/`and is represented as `/usr/lib/librknnrt.so`in the integrated file system.
 
