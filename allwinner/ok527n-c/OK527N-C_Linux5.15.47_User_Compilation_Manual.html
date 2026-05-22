@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux5.15.147_User’s Compilation Manual &mdash; Forlinx Embedded T527 Documentation  documentation</title>
+  <title>Linux5.15.147_User’s Compilation Manual_V1.1 &mdash; Forlinx Embedded T527 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Quick Boot" href="OK527_Quick_Boot.html" />
-    <link rel="prev" title="Linux5.15.147_User’s Manual" href="OK527N-C_Linux5.15.47_User_Manual.html" />
+    <link rel="prev" title="Linux5.15.147_User’s Manual_V1.1" href="OK527N-C_Linux5.15.47_User_Manual.html" />
    
 
   <!-- Load Font Awesome from CDN -->
@@ -64,8 +64,8 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="OK527N-C_Linux5.15.47_User_Manual.html">Linux5.15.147_User’s Manual</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.15.147_User’s Compilation Manual</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="OK527N-C_Linux5.15.47_User_Manual.html">Linux5.15.147_User’s Manual_V1.1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.15.147_User’s Compilation Manual_V1.1</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview"><font style="color:black;">Overview</font></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
@@ -97,8 +97,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#common-file-path-of-source-code"><font style="color:black;">4.1.3</font><font style="color:black;">  </font><font style="color:black;">Common File Path of Source Code</font></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#source-code-compilation"><font style="color:black;">4.2</font><font style="color:black;">  </font><font style="color:black;">Source Code Compilation</font></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#full-compilation"><font style="color:black;">4.2.1</font><font style="color:black;">  </font><font style="color:black;">Full Compilation</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code-compilation"><font style="color:black;">4.2</font><font style="color:black;">  </font>Source Code Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#full-compilation">4.2.1 Full Compilation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#individual-kernel-device-tree-compilation"><font style="color:black;">4.2.2</font><font style="color:black;">  </font><font style="color:black;">Individual Kernel </font><font style="color:black;">Device Tree Compilation</font></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#individual-test-program-compilation"><font style="color:black;">4.2.3</font><font style="color:black;">  </font><font style="color:black;"><strong>Individual Test Program Compilation</strong></font></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#individual-u-boot-compilation"><font style="color:black;">4.2.4  <strong>Individual U-Boot Compilation</strong></font></a></li>
@@ -140,7 +140,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Linux5.15.147_User’s Compilation Manual</li>
+      <li class="breadcrumb-item active">Linux5.15.147_User’s Compilation Manual_V1.1</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -149,8 +149,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="linux5-15-147-users-compilation-manual">
-<h1>Linux5.15.147_User’s Compilation Manual<a class="headerlink" href="#linux5-15-147-users-compilation-manual" title="Link to this heading"></a></h1>
+  <section id="linux5-15-147-users-compilation-manual-v1-1">
+<h1>Linux5.15.147_User’s Compilation Manual_V1.1<a class="headerlink" href="#linux5-15-147-users-compilation-manual-v1-1" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -211,6 +211,10 @@ OKT527-linux-sdk.tar.bz2
 <tr class="row-even"><td class="text-center"><p>28/04/2025</p></td>
 <td class="text-center"><p>V1.0</p></td>
 <td><p>User’s Compilation Manual Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>03/03/2026</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td><p>Revised Section 4.2.1 “Full Compilation” Description</p></td>
 </tr>
 </tbody>
 </table>
@@ -752,60 +756,39 @@ forlinx@ubuntu:~/work$ md5sum OKT527-linux-sdk1.3.tar.bz2.*
 </section>
 </section>
 <section id="source-code-compilation">
-<h3><font style="color:black;">4.2</font><font style="color:black;">  </font><font style="color:black;">Source Code Compilation</font><a class="headerlink" href="#source-code-compilation" title="Link to this heading"></a></h3>
+<h3><font style="color:black;">4.2</font><font style="color:black;">  </font>Source Code Compilation<a class="headerlink" href="#source-code-compilation" title="Link to this heading"></a></h3>
 <section id="full-compilation">
-<h4><font style="color:black;">4.2.1</font><font style="color:black;">  </font><font style="color:black;">Full Compilation</font><a class="headerlink" href="#full-compilation" title="Link to this heading"></a></h4>
-<p>Full compilation refers to the unified compilation of source code, including kernel source code, library files, applications, file system packaging, and so on.</p>
-<p>First select the configuration:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ cd /home/forlinx/work/OKT527-linux-sdk                    //Enter source code path
-forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh config                    //Execute configure commands
-</pre></div>
-</div>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh config
-========ACTION List: mk_config ;========
-options : 
-All available board:
-   0. okt527
-Choice [okt527]: 
-Setup BSP files
-.
+<h4>4.2.1 Full Compilation<a class="headerlink" href="#full-compilation" title="Link to this heading"></a></h4>
+<p>Full compilation refers to the unified compilation of source code, including the kernel source code, library files, applications, and filesystem packaging.</p>
+<p>First, select the configuration:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/home/forlinx/work/OKT527-linux-sdk<span class="w">                    </span><span class="c1"># Enter the source code directory</span>
+forlinx@ubuntu:~/work/OKT527-linux-sdk$<span class="w"> </span>./build.sh<span class="w"> </span>config<span class="w">                    </span><span class="c1"># Execute the configuration command</span>
+forlinx@ubuntu:~/work/OKT527-linux-sdk$<span class="w"> </span>./build.sh<span class="w"> </span><span class="nv">config</span>
+<span class="o">========</span>ACTION<span class="w"> </span>List:<span class="w"> </span>mk_config<span class="w"> </span><span class="p">;</span><span class="o">========</span>
+options<span class="w"> </span>:<span class="w"> </span>
+All<span class="w"> </span>available<span class="w"> </span>linux_dev:
+<span class="w">   </span><span class="m">0</span>.<span class="w"> </span>bsp
+<span class="w">   </span><span class="m">1</span>.<span class="w"> </span>dragonboard
+<span class="w">   </span><span class="m">2</span>.<span class="w"> </span>buildroot
+<span class="w">   </span><span class="m">3</span>.<span class="w"> </span>debian
+Choice<span class="w"> </span><span class="o">[</span>buildroot<span class="o">]</span>:<span class="w"> </span>
+All<span class="w"> </span>available<span class="w"> </span>board:
+<span class="w">   </span><span class="m">0</span>.<span class="w"> </span>OK527_UP4
+<span class="w">   </span><span class="m">1</span>.<span class="w"> </span>demo_linux_aiot
+<span class="w">   </span><span class="m">2</span>.<span class="w"> </span>demo_linux_aiot_nand
+<span class="w">   </span><span class="m">3</span>.<span class="w"> </span>demo_linux_aiot_spinand
+<span class="w">   </span><span class="m">4</span>.<span class="w"> </span>okt527
+Choice<span class="w"> </span><span class="o">[</span>okt527<span class="o">]</span>:<span class="w"> </span>
 
 …
-
 </pre></div>
 </div>
-<p>Run the compilation script for full compilation:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh
+<p>Run the compilation script to perform a full compilation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$<span class="w"> </span>./build.sh
 </pre></div>
 </div>
-<p><strong>Note: If compilation of qt_webengine stalls or results in errors, please switch to a more powerful host machine to run the virtual machine environment.</strong></p>
-<p><strong>or:</strong></p>
-<p><strong>Delete OKT527-linux-sdk1.3/out/t527/okt527/buildroot/buildroot/build/qt5webengine-5.15.8/ directory</strong></p>
-<p><strong>And switch to OKT527-linux-sdk1.3/buildroot/buildroot-202205/package/qt5/qt5webengine directory</strong></p>
-<p><strong>Modify the qt5web engine. mk films</strong></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**QT5WEBENGINE_ENV += NINJAFLAGS=&quot;-j32&quot;**
-</pre></div>
-</div>
-<p><strong>modify to</strong></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**QT5WEBENGINE_ENV += NINJAFLAGS=&quot;-j8&quot;**
-</pre></div>
-</div>
-<p><img alt="Image" src="_images/0679cdb4a7ef4503bc58f08daf758a84.png" /></p>
-<p><strong>Continue to execute the build. sh to compile.</strong></p>
-<p>After the source code is compiled you need to generate an image to package the various files and configuration files generated by the compilation.</p>
-<p>Execute the pack command to generate the image file:</p>
-<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/OKT527-linux-sdk$ ./build.sh pack
-
-…
-
-Dragon execute image.cfg SUCCESS !
-----------image is at----------
-
-655M    ~/work/OKT527-linux-sdk/out/t527_linux_okt527_uart0.img
-
-pack finish
-</pre></div>
-</div>
+<p>After the source code compilation is complete, an image needs to be generated by packaging the compiled files and configuration files.</p>
+<p>Execute the packaging command to generate the image file:</p>
 </section>
 <section id="individual-kernel-device-tree-compilation">
 <h4><font style="color:black;">4.2.2</font><font style="color:black;">  </font><font style="color:black;">Individual Kernel </font><font style="color:black;">Device Tree Compilation</font><a class="headerlink" href="#individual-kernel-device-tree-compilation" title="Link to this heading"></a></h4>

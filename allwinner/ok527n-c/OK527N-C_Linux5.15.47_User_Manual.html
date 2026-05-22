@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux5.15.147_User’s Manual &mdash; Forlinx Embedded T527 Documentation  documentation</title>
+  <title>Linux5.15.147_User’s Manual_V1.1 &mdash; Forlinx Embedded T527 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -24,7 +24,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Linux5.15.147_User’s Compilation Manual" href="OK527N-C_Linux5.15.47_User_Compilation_Manual.html" />
+    <link rel="next" title="Linux5.15.147_User’s Compilation Manual_V1.1" href="OK527N-C_Linux5.15.47_User_Compilation_Manual.html" />
     <link rel="prev" title="OK527N-C Manual" href="index.html" />
    
 
@@ -64,7 +64,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.15.147_User’s Manual</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux5.15.147_User’s Manual_V1.1</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#application-scope">Application Scope</a></li>
@@ -123,7 +123,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#opengl">3.20 OpenGL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#video-player">3.21 Video Player</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#can-test">3.22 CAN Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#npu-ai-camera">3.23 NPU_AI_CAMERA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#npu-ai-camera">3.23 NPU_AI_CAMERA</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#english-input-via-usb-keyboard">3.24 English Input via USB Keyboard</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ok527-command-line-function-test">4. OK527 Command Line Function Test</a><ul>
@@ -187,7 +190,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ok527-platform-multimedia-test">5. OK527 Platform Multimedia Test</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#uvc-play-test">5.1 UVC Play Test</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ov5645-acquisition-test">5.2 OV5645 Acquisition Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mipi-dsi-format-camera-capture-test">5.2 MIPI-DSI Format Camera Capture Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ov5645-test">5.2.1 OV5645 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ov13855-test">5.2.2 OV13855 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tp2815-with-ahd-camera-test">5.2.3 TP2815 with AHD Camera Test</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#video-hardware-decoding">5.3 Video Hardware Decoding</a></li>
 </ul>
 </li>
@@ -208,7 +216,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="OK527N-C_Linux5.15.47_User_Compilation_Manual.html">Linux5.15.147_User’s Compilation Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK527N-C_Linux5.15.47_User_Compilation_Manual.html">Linux5.15.147_User’s Compilation Manual_V1.1</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
 <ul>
@@ -230,7 +238,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Linux5.15.147_User’s Manual</li>
+      <li class="breadcrumb-item active">Linux5.15.147_User’s Manual_V1.1</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -239,8 +247,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="linux5-15-147-users-manual">
-<h1>Linux5.15.147_User’s Manual<a class="headerlink" href="#linux5-15-147-users-manual" title="Link to this heading"></a></h1>
+  <section id="linux5-15-147-users-manual-v1-1">
+<h1>Linux5.15.147_User’s Manual_V1.1<a class="headerlink" href="#linux5-15-147-users-manual-v1-1" title="Link to this heading"></a></h1>
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
@@ -305,6 +313,12 @@ mmcblk0p1  mmcblk0p5  mmcblk1p1
 <td class="text-center"><p>V1.1</p></td>
 <td class="text-center"><p>V1.1 and Above</p></td>
 <td><p>User’s Manual Initial Version</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>03/03/2026</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1</p></td>
+<td class="text-center"><p>V1.1 and Above</p></td>
+<td><p>1. Revised section 2.4.1 Dynamic Control of Uboot Menu<br/>2. Added OV5645 and OV13855 AHD camera preview support.<br/>3. Added USB keyboard English input functionality.</p></td>
 </tr>
 </tbody>
 </table>
@@ -521,8 +535,8 @@ root@OK527:~$
 <p>c)    HDMI automatically configures resolution based on edid.</p>
 <section id="dynamic-control-of-uboot-menu">
 <h4>2.4.1 Dynamic Control of Uboot Menu<a class="headerlink" href="#dynamic-control-of-uboot-menu" title="Link to this heading"></a></h4>
-<p>This method allows switching without recompiling and burn-in of existing supported screens.</p>
-<p>During the Uboot boot process, pressing the spacebar will enter the uboot menu.</p>
+<p>This method allows for screen switching without recompilation or reprogramming, based on currently supported screens.</p>
+<p>During the Uboot startup, press the <strong>Spacebar</strong> to enter the Uboot menu.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
 0:Exit to console
 1:Reboot
@@ -530,17 +544,21 @@ root@OK527:~$
 3:Display1 Type:hdmi
 4:Device PHY Type:none
 5:display primary screen: disp0_type
+6:sensor type: none
 ---------------------------------------------
 </pre></div>
 </div>
-<p>The menu options are as follows:</p>
-<p>Enter 0 to enter the uboot command line;</p>
-<p>Enter 1 to restart uboot;</p>
-<p>Enter 2 will cyclically select the Display0 Type screen;</p>
-<p>Enter 3 will cyclically select the Display1 Type screen;</p>
-<p>Enter 4 will cyclically select the multiplexing of PCIe and USB3.0.</p>
-<p>Enter 5 will cyclically select the main screen;</p>
-<p>Take the “LVDS 1280x800” and “HDMI” screens as an example. After entering the uboot menu, press the corresponding number until the following content is displayed, and then press 1 to restart.</p>
+<p>Menu options are as follows:</p>
+<ul class="simple">
+<li><p>Enter <strong>0</strong> to access the Uboot command line.</p></li>
+<li><p>Enter <strong>1</strong> to reboot Uboot.</p></li>
+<li><p>Enter <strong>2</strong> to cycle through <strong>Display0 Type</strong> screen options.</p></li>
+<li><p>Enter <strong>3</strong> to cycle through <strong>Display1 Type</strong> screen options.</p></li>
+<li><p>Enter <strong>4</strong> to toggle between PCIe and USB 3.0 multiplexing.</p></li>
+<li><p>Enter <strong>5</strong> to cycle through primary screen options.</p></li>
+<li><p>Enter <strong>6</strong> to toggle between <strong>OV13855</strong> and <strong>tp2815</strong>.</p></li>
+</ul>
+<p>To switch to screens like <strong>“lvds 1280x800”</strong> and <strong>“hdmi,”</strong> enter the Uboot menu and press the corresponding number key until the menu shows the desired configuration. Then, press <strong>1</strong> to reboot.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>---------------------------------------------
 0:Exit to console
 1:Reboot
@@ -548,13 +566,15 @@ root@OK527:~$
 3:Display1 Type:hdmi
 4:Device PHY Type:none
 5:display primary screen: disp0_type
+6:sensor type: none
 ---------------------------------------------
 </pre></div>
 </div>
-<p><strong>Note: The current version does not support DP 2560x1440 resolution and HDMI 3840 × 2160 resolution</strong></p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>	**The DP screen cannot be displayed alone**
-</pre></div>
-</div>
+<p><strong>Note:</strong></p>
+<ul class="simple">
+<li><p><strong>The current version does not support DP 2560x1440 resolution or HDMI 3840×2160 resolution；</strong></p></li>
+<li><p><strong>DP screens cannot function as the primary display.</strong></p></li>
+</ul>
 </section>
 <section id="qt-program-screen-switching">
 <h4>2.4.2 Qt Program Screen Switching<a class="headerlink" href="#qt-program-screen-switching" title="Link to this heading"></a></h4>
@@ -939,6 +959,11 @@ root@OK527:/# cangen awlink1
 <p>Insert the UVC camera and click the start button.</p>
 <p><strong>Note: NPU testing is only supported in the OK 527N-C version.</strong></p>
 <p><img alt="Image" src="_images/741afdefeab547d7af36ecf0bf2e730f.png" /></p>
+<section id="english-input-via-usb-keyboard">
+<h4>3.24 English Input via USB Keyboard<a class="headerlink" href="#english-input-via-usb-keyboard" title="Link to this heading"></a></h4>
+<p>Press <strong>Alt+V</strong> to switch between Chinese and English input methods.</p>
+<p><strong>Note:</strong> <strong>This method may occasionally experience lag or fail to switch to English input. It is provided for reference only.</strong></p>
+</section>
 </section>
 </section>
 <section id="ok527-command-line-function-test">
@@ -2798,9 +2823,157 @@ profile inference time=344865us, cycle=239992405
 </div>
 <p><img alt="Image" src="_images/0c47f75b548e459faadbfe8c36864519.png" /></p>
 </section>
-<section id="ov5645-acquisition-test">
-<h3>5.2 OV5645 Acquisition Test<a class="headerlink" href="#ov5645-acquisition-test" title="Link to this heading"></a></h3>
-<p>Command line collection of MIPI cameras is currently not supported, but can be collected using the Qt application.</p>
+<section id="mipi-dsi-format-camera-capture-test">
+<h3>5.2 MIPI-DSI Format Camera Capture Test<a class="headerlink" href="#mipi-dsi-format-camera-capture-test" title="Link to this heading"></a></h3>
+<section id="ov5645-test">
+<h4>5.2.1 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK527:/#<span class="w"> </span>gst-launch-1.0<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video4<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">1024</span>,height<span class="o">=</span><span class="m">600</span><span class="w"> </span>!<span class="w"> </span>videoconvert<span class="w"> </span>!<span class="w"> </span>waylandsink
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PAUSED<span class="w"> </span>...
+<span class="o">[</span><span class="w">   </span><span class="m">59</span>.259137<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">   </span><span class="m">59</span>.272863<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>ov5645_mipi_2<span class="w"> </span>cannot<span class="w"> </span>find<span class="w"> </span>the<span class="w"> </span>match<span class="w"> </span>sensor_helper
+<span class="o">[</span><span class="w">   </span><span class="m">59</span>.280981<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>ov5645_mipi_2<span class="w"> </span>cannot<span class="w"> </span>find<span class="w"> </span>the<span class="w"> </span>match<span class="w"> </span>sensor_helper
+<span class="o">[</span><span class="w">   </span><span class="m">59</span>.289080<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>ov5645_mipi_2<span class="w"> </span>cannot<span class="w"> </span>find<span class="w"> </span>the<span class="w"> </span>match<span class="w"> </span>sensor_helper
+<span class="o">[</span><span class="w">   </span><span class="m">59</span>.297179<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>ov5645_mipi_2<span class="w"> </span>cannot<span class="w"> </span>find<span class="w"> </span>the<span class="w"> </span>match<span class="w"> </span>sensor_helper
+<span class="o">[</span><span class="w">   </span><span class="m">59</span>.388343<span class="o">]</span><span class="w"> </span>ov5645<span class="w"> </span>id:5645
+Pipeline<span class="w"> </span>is<span class="w"> </span>live<span class="w"> </span>and<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>ne<span class="o">[</span><span class="w">   </span><span class="m">59</span>.392714<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+ed<span class="w"> </span>PREROLL<span class="w"> </span>...
+Pipeline<span class="w"> </span>is<span class="w"> </span>PREROLLED<span class="w"> </span>...
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PLAYING<span class="w"> </span>...
+New<span class="w"> </span>clock:<span class="w"> </span>GstSystem<span class="o">[</span><span class="w">   </span><span class="m">59</span>.409044<span class="o">]</span><span class="w"> </span><span class="o">===========</span>sensor_s_stream<span class="w"> </span>width:<span class="w"> </span><span class="m">1280</span><span class="w"> </span>height:960
+Clock
+Redistribute<span class="w"> </span>latency...
+<span class="m">0</span>:00:03.5<span class="w"> </span>/<span class="w"> </span><span class="m">99</span>:99:99.
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/wayland_screenshot_1970_01_01_08_07_39_1779438256791.png" /></p>
+</section>
+<section id="ov13855-test">
+<h4>5.2.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h4>
+<p>Switch to ov13855 in the UBOOT menu.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK527:/#<span class="w"> </span>gst-launch-1.0<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video8<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">1024</span>,height<span class="o">=</span><span class="m">600</span><span class="w"> </span>!<span class="w"> </span>videoconvert<span class="w"> </span>!<span class="w"> </span>waylandsink
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PAUSED<span class="w"> </span>...
+<span class="o">[</span><span class="w">  </span><span class="m">201</span>.279156<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">  </span><span class="m">201</span>.286887<span class="o">]</span><span class="w"> </span>PWR_ON!
+<span class="o">[</span><span class="w">  </span><span class="m">201</span>.319452<span class="o">]</span><span class="w"> </span>sensor_init
+<span class="o">[</span><span class="w">  </span><span class="m">201</span>.322408<span class="o">]</span><span class="w"> </span>eRet:0,<span class="w"> </span>0x300a:0x0,<span class="w"> </span>times_out:3
+<span class="o">[</span><span class="w">  </span><span class="m">201</span>.547379<span class="o">]</span><span class="w"> </span>eRet:0,<span class="w"> </span>0x300b:0xd8,<span class="w"> </span>times_out:3
+Pipeline<span class="w"> </span>is<span class="w"> </span>live<span class="w"> </span>and<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>ne<span class="o">[</span><span class="w">  </span><span class="m">201</span>.773540<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+ed<span class="w"> </span>PREROLL<span class="w"> </span>...
+Pipeline<span class="w"> </span>is<span class="w"> </span>PREROLLED<span class="w"> </span>...
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PLAYING<span class="w"> </span>...
+New<span class="w"> </span>clock:<span class="w"> </span>GstSystemClock
+<span class="o">[</span><span class="w">  </span><span class="m">201</span>.792846<span class="o">]</span><span class="w"> </span>sensor_s_stream<span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2112</span>*1568<span class="w"> </span>fps:<span class="w"> </span><span class="m">30</span><span class="w"> </span>code:<span class="w"> </span><span class="m">3007</span>
+Redistribute<span class="w"> </span>latency...
+<span class="m">0</span>:00:03.4<span class="w"> </span>/<span class="w"> </span><span class="m">99</span>:99:99.
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/wayland_screenshot_1970_01_01_08_06_32.png" /></p>
+</section>
+<section id="tp2815-with-ahd-camera-test">
+<h4>5.2.3 TP2815 with AHD Camera Test<a class="headerlink" href="#tp2815-with-ahd-camera-test" title="Link to this heading"></a></h4>
+<p>Switch to tp2815 in the UBOOT menu.</p>
+<p><strong>Note: TP2815 preview currently conflicts with OV5645. Do not preview OV5645 before using TP2815/TP2855.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>OKT527-linux-sdk1.3/device/config/chips/t527/configs/okt527/OKT527-C-Linux.dts
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/*
+<span class="w"> </span>*<span class="w"> </span>Forlinx<span class="w"> </span>Technology<span class="w"> </span>CO.,<span class="w"> </span>Ltd.<span class="w"> </span>okt527-c<span class="w"> </span>soc<span class="w"> </span>board.
+<span class="w"> </span>*
+<span class="w"> </span>*<span class="w"> </span>soc<span class="w"> </span>board<span class="w"> </span>support.
+<span class="w"> </span>*/
+/dts-v1/<span class="p">;</span>
+
+<span class="c1">#include &quot;OKT527-C-Common.dtsi&quot;</span>
+<span class="c1">#include &quot;OKT527-C-Common-TP2815.dtsi&quot;</span>
+//<span class="w"> </span><span class="c1">#include &quot;OKT527-C-Common-OV13855.dtsi&quot;</span>
+</pre></div>
+</div>
+<p>The preview method is as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK527:/#<span class="w"> </span>gst-launch-1.0<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video8<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">1024</span>,height<span class="o">=</span><span class="m">600</span><span class="w"> </span>!<span class="w"> </span>videoconvert<span class="w"> </span>!<span class="w"> </span>waylandsink
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PAUSED<span class="w"> </span>...
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.779606<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.823096<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor<span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>0x2855
+Pipeline<span class="w"> </span>is<span class="w"> </span>live<span class="w"> </span>and<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>ne<span class="o">[</span><span class="w">   </span><span class="m">65</span>.830924<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+ed<span class="w"> </span>PREROLL<span class="w"> </span>...
+Pipeline<span class="w"> </span>is<span class="w"> </span>PREROLLED<span class="w"> </span>...
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PLAYING<span class="w"> </span>...
+New<span class="w"> </span>clock:<span class="w"> </span>GstSystemClock
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.849144<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor_s_stream<span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">1280</span>*720<span class="w"> </span><span class="m">2006</span>
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.857439<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_hardware_init.
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.864364<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.875754<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.887419<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.898715<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.910416<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_mipi_out
+<span class="o">[</span><span class="w">   </span><span class="m">65</span>.918034<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>mipi<span class="w"> </span>clk<span class="w"> </span>is<span class="w"> </span>MIPI_4CH4LANE_594M
+Redistribute<span class="w"> </span>latency...
+<span class="m">0</span>:00:07.7<span class="w"> </span>/<span class="w"> </span><span class="m">99</span>:99:99.
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/wayland_screenshot_1970_01_01_08_02_35.png" /></p>
+<p>Four-camera simultaneous preview.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>root@OK527:/#<span class="w"> </span>gst-launch-1.0<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>videomixer<span class="w"> </span><span class="nv">name</span><span class="o">=</span>mixer<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>sink_0::xpos<span class="o">=</span><span class="m">0</span><span class="w"> </span>sink_0::ypos<span class="o">=</span><span class="m">0</span><span class="w"> </span>sink_0::zorder<span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>sink_1::xpos<span class="o">=</span><span class="m">640</span><span class="w"> </span>sink_1::ypos<span class="o">=</span><span class="m">0</span><span class="w"> </span>sink_1::zorder<span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>sink_2::xpos<span class="o">=</span><span class="m">0</span><span class="w"> </span>sink_2::ypos<span class="o">=</span><span class="m">400</span><span class="w"> </span>sink_2::zorder<span class="o">=</span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>sink_3::xpos<span class="o">=</span><span class="m">640</span><span class="w"> </span>sink_3::ypos<span class="o">=</span><span class="m">400</span><span class="w"> </span>sink_3::zorder<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">1280</span>,height<span class="o">=</span><span class="m">800</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>waylandsink<span class="w"> </span><span class="nv">sync</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="nv">async</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span>max-lateness<span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="nv">qos</span><span class="o">=</span><span class="nb">false</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video8<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">640</span>,height<span class="o">=</span><span class="m">400</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>mixer.sink_0<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video12<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">640</span>,height<span class="o">=</span><span class="m">400</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>mixer.sink_1<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video16<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">640</span>,height<span class="o">=</span><span class="m">400</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>mixer.sink_2<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>v4l2src<span class="w"> </span><span class="nv">device</span><span class="o">=</span>/dev/video17<span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>video/x-raw,format<span class="o">=</span>NV12,width<span class="o">=</span><span class="m">640</span>,height<span class="o">=</span><span class="m">400</span><span class="w"> </span><span class="se">\</span>
+&gt;<span class="w"> </span>!<span class="w"> </span>mixer.sink_3
+
+
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PAUSED<span class="w"> </span>...
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.350013<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.358413<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor<span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>0x2855
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.365341<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.371737<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor<span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>0x2855
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.378505<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.384846<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor<span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>0x2855
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.391627<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span>camera<span class="w"> </span>is<span class="w"> </span>on,<span class="w"> </span>close<span class="w"> </span>dfs
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.397808<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor<span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>0x2855
+Pipeline<span class="w"> </span>is<span class="w"> </span>live<span class="w"> </span>and<span class="w"> </span>does<span class="w"> </span>not<span class="w"> </span>ne<span class="o">[</span><span class="w">   </span><span class="m">79</span>.405656<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+ed<span class="w"> </span>PREROLL<span class="w"> </span>...
+Redistribute<span class="w"> </span>lat<span class="o">[</span><span class="w">   </span><span class="m">79</span>.405685<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.405888<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+ency...
+Pipeline<span class="w"> </span>is<span class="w"> </span>PREROLLED<span class="w"> </span>.<span class="o">[</span><span class="w">   </span><span class="m">79</span>.405905<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>WARN<span class="o">]</span>:<span class="w"> </span>sensor<span class="w"> </span>g_pixelaspect<span class="w"> </span>fail!
+..
+Setting<span class="w"> </span>pipeline<span class="w"> </span>to<span class="w"> </span>PLAYING<span class="w"> </span><span class="o">[</span><span class="w">   </span><span class="m">79</span>.408307<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>buffer<span class="w"> </span>count<span class="w"> </span>is<span class="w"> </span>invalid,<span class="w"> </span><span class="nb">set</span><span class="w"> </span>to<span class="w"> </span><span class="m">3</span>
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.408448<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>buffer<span class="w"> </span>count<span class="w"> </span>is<span class="w"> </span>invalid,<span class="w"> </span><span class="nb">set</span><span class="w"> </span>to<span class="w"> </span><span class="m">3</span>
+...
+New<span class="w"> </span>clock:<span class="w"> </span>GstSystemClock<span class="o">[</span><span class="w">   </span><span class="m">79</span>.410450<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>sensor_s_stream<span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">1920</span>*1080<span class="w"> </span><span class="m">2006</span>
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.410459<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_hardware_init.
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.423282<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.484389<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.497371<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.508702<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_decoder_init
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.520420<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>tp2815_mipi_out
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.528064<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>INFO<span class="o">]</span>:<span class="w"> </span><span class="o">[</span>tp2815_mipi<span class="o">]</span>mipi<span class="w"> </span>clk<span class="w"> </span>is<span class="w"> </span>MIPI_4CH4LANE_594M
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.537809<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>buffer<span class="w"> </span>count<span class="w"> </span>is<span class="w"> </span>invalid,<span class="w"> </span><span class="nb">set</span><span class="w"> </span>to<span class="w"> </span><span class="m">3</span>
+<span class="o">[</span><span class="w">   </span><span class="m">79</span>.538130<span class="o">]</span><span class="w"> </span>sunxi:vin:<span class="o">[</span>ERR<span class="o">]</span>:<span class="w"> </span>buffer<span class="w"> </span>count<span class="w"> </span>is<span class="w"> </span>invalid,<span class="w"> </span><span class="nb">set</span><span class="w"> </span>to<span class="w"> </span><span class="m">3</span>
+Redistribute<span class="w"> </span>latency...
+<span class="m">0</span>:00:01.6<span class="w"> </span>/<span class="w"> </span><span class="m">99</span>:99:99.
+</pre></div>
+</div>
+<p><img alt="Image" src="_images/wayland_screenshot_1970_01_01_08_03_14.png" /></p>
+</section>
 </section>
 <section id="video-hardware-decoding">
 <h3>5.3 Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h3>
