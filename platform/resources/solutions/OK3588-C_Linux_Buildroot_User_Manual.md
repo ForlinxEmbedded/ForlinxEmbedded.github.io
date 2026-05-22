@@ -371,7 +371,7 @@ Run it:
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
 
-Select the disk, and check `Upgrade Firmware`; and `update.img`. Click `Create`.
+Select the disk, and check `Upgrade Firmware`; and `update.img`. Click "Yes".
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776750905035_53c11e8b_5807_47cd_b55c_4317f8ca2406.png)
 
