@@ -1,4 +1,4 @@
-# Linux5.15.147\_User’s Manual
+# Linux5.15.147\_User’s Manual_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -59,7 +59,7 @@ This software manual applies to the Forlinx<font style="color:rgb(0,0,0);">OK527
 |  **Date**  | **Manual Version** | **SoM Version** | **Carrier Board Version** | **Revision History**          |
 | :--------: | :----------------: | :-------------: | :-----------------------: | ----------------------------- |
 | 28/04/2025 |        V1.0        |      V1.1       |      V1.1 and Above       | User's Manual Initial Version |
-
+|03/03/2026|V1.1|V1.1|V1.1 and Above|1. Revised section 2.4.1 Dynamic Control of Uboot Menu<br/>2. Added OV5645 and OV13855 AHD camera preview support.<br/>3. Added USB keyboard English input functionality.|
 ## 1. OK527 Development Board Description
 
 ### 1.1 OK527 Development Board Description
@@ -233,36 +233,9 @@ c)    HDMI automatically configures resolution based on edid.
 
 #### 2.4.1 Dynamic Control of Uboot Menu
 
-This method allows switching without recompiling and burn-in of existing supported screens.
+This method allows for screen switching without recompilation or reprogramming, based on currently supported screens.
 
-During the Uboot boot process, pressing the spacebar will enter the uboot menu.
-
-```plain
----------------------------------------------
-0:Exit to console
-1:Reboot
-2:Display0 Type:lvds 1280x800
-3:Display1 Type:hdmi
-4:Device PHY Type:none
-5:display primary screen: disp0_type
----------------------------------------------
-```
-
-The menu options are as follows:
-
-Enter 0 to enter the uboot command line;
-
-Enter 1 to restart uboot;
-
-Enter 2 will cyclically select the Display0 Type screen;
-
-Enter 3 will cyclically select the Display1 Type screen;
-
-Enter 4 will cyclically select the multiplexing of PCIe and USB3.0.
-
-Enter 5 will cyclically select the main screen;
-
-Take the "LVDS 1280x800" and "HDMI" screens as an example. After entering the uboot menu, press the corresponding number until the following content is displayed, and then press 1 to restart.
+During the Uboot startup, press the **Spacebar** to enter the Uboot menu.
 
 ```plain
 ---------------------------------------------
@@ -272,12 +245,39 @@ Take the "LVDS 1280x800" and "HDMI" screens as an example. After entering the ub
 3:Display1 Type:hdmi
 4:Device PHY Type:none
 5:display primary screen: disp0_type
+6:sensor type: none
 ---------------------------------------------
 ```
 
-**Note: The current version does not support DP 2560x1440 resolution and HDMI 3840 × 2160 resolution**
+Menu options are as follows:
 
-    	**The DP screen cannot be displayed alone**
+- Enter **0** to access the Uboot command line.
+- Enter **1** to reboot Uboot.
+- Enter **2** to cycle through **Display0 Type** screen options.
+- Enter **3** to cycle through **Display1 Type** screen options.
+- Enter **4** to toggle between PCIe and USB 3.0 multiplexing.
+- Enter **5** to cycle through primary screen options.
+- Enter **6** to toggle between **OV13855** and **tp2815**.
+
+To switch to screens like **"lvds 1280x800"** and **"hdmi,"** enter the Uboot menu and press the corresponding number key until the menu shows the desired configuration. Then, press **1** to reboot.
+
+```plain
+---------------------------------------------
+0:Exit to console
+1:Reboot
+2:Display0 Type:lvds 1280x800
+3:Display1 Type:hdmi
+4:Device PHY Type:none
+5:display primary screen: disp0_type
+6:sensor type: none
+---------------------------------------------
+```
+
+**Note:** 
+
+- **The current version does not support DP 2560x1440 resolution or HDMI 3840×2160 resolution；** 
+
+- **DP screens cannot function as the primary display.**
 
 #### 2.4.2 Qt Program Screen Switching
 
@@ -742,6 +742,12 @@ Insert the UVC camera and click the start button.
 **Note: NPU testing is only supported in the OK 527N-C version.**
 
 ![Image](./images/OK527NC_Linux51547_User_Manual/741afdefeab547d7af36ecf0bf2e730f.png)
+
+#### 3.24 English Input via USB Keyboard
+
+Press **Alt+V** to switch between Chinese and English input methods.
+
+**Note:** **This method may occasionally experience lag or fail to switch to English input. It is provided for reference only.**
 
 ## 4. OK527 Command Line Function Test
 
@@ -2798,9 +2804,169 @@ root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video1 ! videoconvert ! video/x
 
 ![Image](./images/OK527NC_Linux51547_User_Manual/0c47f75b548e459faadbfe8c36864519.png)
 
-### 5.2 OV5645 Acquisition Test
+### 5.2 MIPI-DSI Format Camera Capture Test
 
-Command line collection of MIPI cameras is currently not supported, but can be collected using the Qt application.
+#### 5.2.1 OV5645 Test
+
+```bash
+root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video4 ! video/x-raw,format=NV12,width=1024,height=600 ! videoconvert ! waylandsink
+Setting pipeline to PAUSED ...
+[   59.259137] sunxi:vin:[INFO]: camera is on, close dfs
+[   59.272863] sunxi:vin:[ERR]: ov5645_mipi_2 cannot find the match sensor_helper
+[   59.280981] sunxi:vin:[ERR]: ov5645_mipi_2 cannot find the match sensor_helper
+[   59.289080] sunxi:vin:[ERR]: ov5645_mipi_2 cannot find the match sensor_helper
+[   59.297179] sunxi:vin:[ERR]: ov5645_mipi_2 cannot find the match sensor_helper
+[   59.388343] ov5645 id:5645
+Pipeline is live and does not ne[   59.392714] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+ed PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystem[   59.409044] ===========sensor_s_stream width: 1280 height:960
+Clock
+Redistribute latency...
+0:00:03.5 / 99:99:99.
+```
+
+![wayland-screenshot-1970-01-01_08-07-39.png](wayland-screenshot-1970-01-01_08-07-39-1779438256791.png)
+
+#### 5.2.2 OV13855 Test
+
+Switch to ov13855 in the UBOOT menu.
+
+```bash
+root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video8 ! video/x-raw,format=NV12,width=1024,height=600 ! videoconvert ! waylandsink
+Setting pipeline to PAUSED ...
+[  201.279156] sunxi:vin:[INFO]: camera is on, close dfs
+[  201.286887] PWR_ON!
+[  201.319452] sensor_init
+[  201.322408] eRet:0, 0x300a:0x0, times_out:3
+[  201.547379] eRet:0, 0x300b:0xd8, times_out:3
+Pipeline is live and does not ne[  201.773540] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+ed PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+[  201.792846] sensor_s_stream on = 1, 2112*1568 fps: 30 code: 3007
+Redistribute latency...
+0:00:03.4 / 99:99:99.
+```
+
+![wayland-screenshot-1970-01-01_08-06-32.png](wayland-screenshot-1970-01-01_08-06-32.png)
+
+#### 5.2.3 TP2815 with AHD Camera Test
+
+Switch to tp2815 in the UBOOT menu.
+
+**Note: TP2815 preview currently conflicts with OV5645. Do not preview OV5645 before using TP2815/TP2855.**
+
+```bash
+OKT527-linux-sdk1.3/device/config/chips/t527/configs/okt527/OKT527-C-Linux.dts
+```
+
+```bash
+/*
+ * Forlinx Technology CO., Ltd. okt527-c soc board.
+ *
+ * soc board support.
+ */
+/dts-v1/;
+
+#include "OKT527-C-Common.dtsi"
+#include "OKT527-C-Common-TP2815.dtsi"
+// #include "OKT527-C-Common-OV13855.dtsi"
+```
+
+The preview method is as follows:
+
+```bash
+root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video8 ! video/x-raw,format=NV12,width=1024,height=600 ! videoconvert ! waylandsink
+Setting pipeline to PAUSED ...
+[   65.779606] sunxi:vin:[INFO]: camera is on, close dfs
+[   65.823096] sunxi:vin:[INFO]: [tp2815_mipi]sensor id = 0x2855
+Pipeline is live and does not ne[   65.830924] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+ed PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+[   65.849144] sunxi:vin:[INFO]: [tp2815_mipi]sensor_s_stream on = 1, 1280*720 2006
+[   65.857439] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_hardware_init.
+[   65.864364] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   65.875754] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   65.887419] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   65.898715] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   65.910416] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_mipi_out
+[   65.918034] sunxi:vin:[INFO]: [tp2815_mipi]mipi clk is MIPI_4CH4LANE_594M
+Redistribute latency...
+0:00:07.7 / 99:99:99.
+```
+
+![wayland-screenshot-1970-01-01_08-02-35.png](wayland-screenshot-1970-01-01_08-02-35.png)
+
+Four-camera simultaneous preview.
+
+```bash
+root@OK527:/# gst-launch-1.0 \
+> videomixer name=mixer \
+> sink_0::xpos=0 sink_0::ypos=0 sink_0::zorder=0 \
+> sink_1::xpos=640 sink_1::ypos=0 sink_1::zorder=1 \
+> sink_2::xpos=0 sink_2::ypos=400 sink_2::zorder=2 \
+> sink_3::xpos=640 sink_3::ypos=400 sink_3::zorder=3 \
+> ! video/x-raw,format=NV12,width=1280,height=800 \
+> ! waylandsink sync=false async=false max-lateness=0 qos=false \
+> \
+> v4l2src device=/dev/video8 \
+> ! video/x-raw,format=NV12,width=640,height=400 \
+> ! mixer.sink_0 \
+> \
+> v4l2src device=/dev/video12 \
+> ! video/x-raw,format=NV12,width=640,height=400 \
+> ! mixer.sink_1 \
+> \
+> v4l2src device=/dev/video16 \
+> ! video/x-raw,format=NV12,width=640,height=400 \
+> ! mixer.sink_2 \
+> \
+> v4l2src device=/dev/video17 \
+> ! video/x-raw,format=NV12,width=640,height=400 \
+> ! mixer.sink_3
+
+
+Setting pipeline to PAUSED ...
+[   79.350013] sunxi:vin:[INFO]: camera is on, close dfs
+[   79.358413] sunxi:vin:[INFO]: [tp2815_mipi]sensor id = 0x2855
+[   79.365341] sunxi:vin:[INFO]: camera is on, close dfs
+[   79.371737] sunxi:vin:[INFO]: [tp2815_mipi]sensor id = 0x2855
+[   79.378505] sunxi:vin:[INFO]: camera is on, close dfs
+[   79.384846] sunxi:vin:[INFO]: [tp2815_mipi]sensor id = 0x2855
+[   79.391627] sunxi:vin:[INFO]: camera is on, close dfs
+[   79.397808] sunxi:vin:[INFO]: [tp2815_mipi]sensor id = 0x2855
+Pipeline is live and does not ne[   79.405656] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+ed PREROLL ...
+Redistribute lat[   79.405685] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+[   79.405888] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+ency...
+Pipeline is PREROLLED .[   79.405905] sunxi:vin:[WARN]: sensor g_pixelaspect fail!
+..
+Setting pipeline to PLAYING [   79.408307] sunxi:vin:[ERR]: buffer count is invalid, set to 3
+[   79.408448] sunxi:vin:[ERR]: buffer count is invalid, set to 3
+...
+New clock: GstSystemClock[   79.410450] sunxi:vin:[INFO]: [tp2815_mipi]sensor_s_stream on = 1, 1920*1080 2006
+[   79.410459] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_hardware_init.
+[   79.423282] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+
+[   79.484389] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   79.497371] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   79.508702] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_decoder_init
+[   79.520420] sunxi:vin:[INFO]: [tp2815_mipi]tp2815_mipi_out
+[   79.528064] sunxi:vin:[INFO]: [tp2815_mipi]mipi clk is MIPI_4CH4LANE_594M
+[   79.537809] sunxi:vin:[ERR]: buffer count is invalid, set to 3
+[   79.538130] sunxi:vin:[ERR]: buffer count is invalid, set to 3
+Redistribute latency...
+0:00:01.6 / 99:99:99.
+
+```
+
+![wayland-screenshot-1970-01-01_08-03-14.png](wayland-screenshot-1970-01-01_08-03-14.png)
 
 ### 5.3 Video Hardware Decoding
 
