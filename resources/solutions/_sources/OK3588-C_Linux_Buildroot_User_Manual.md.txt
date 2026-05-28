@@ -5999,5 +5999,6 @@ For the list of ONNX operators, PyTorch operators, Caffe operators, TensorFlow o
 
 ## Resource Download
 
-Please visit www.forlinx.net/resources/download-center.html to download the product materials you need.
+You can find the necessary materials for your products at the [Forlinx Download Center](www.forlinx.net/resources/download-center.html).
+
 
