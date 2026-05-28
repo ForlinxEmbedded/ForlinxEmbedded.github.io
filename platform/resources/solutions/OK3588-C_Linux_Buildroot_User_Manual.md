@@ -1744,7 +1744,7 @@ Install the file Zilla tool on windows and follow the steps shown in the figure 
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
 
 **⚠️Note**: **FileZilla is provided as a compressed package, and the initial language may be Chinese. You can download FileZilla yourself, or after unzipping it, follow the steps below to change the language to English.**
 
@@ -1827,7 +1827,7 @@ The extended I/O pins are led out from the carrier board, located on P11.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png)
 
 
-![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1718954759014_d61c0905_7a0e_46a2_81b5_ba7ccfc72c9c.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1718954759014_d61c0905_7a0e_46a2_81b5_ba7ccfc72c9c.png)
 
 ##### 2\. Device Tree
 
@@ -2592,7 +2592,7 @@ The OK3588 platform supports system standby. The system standby process generall
 
 Key positions are as follows:
 
-![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
 
 The driver files related to system standby are:
 
