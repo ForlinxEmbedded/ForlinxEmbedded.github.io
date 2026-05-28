@@ -129,7 +129,7 @@ This manual is designed to help you quickly familiarize yourself with the produc
 Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. 
 
 As shown in the figure:
-![Image](1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
 
 ### 3\. Quick Start
 
