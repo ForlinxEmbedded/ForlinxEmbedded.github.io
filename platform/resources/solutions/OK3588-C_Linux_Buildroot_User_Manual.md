@@ -259,11 +259,11 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM m
 
 Click the “Driver Installation”. The text is `Driver Installation`.
 
-![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
 
 The driver is installed successfully. Click “OK“. 
 
-![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
 
 ##### 3.1.2 OTG Full Flashing
 
@@ -501,7 +501,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 Log in to your GitHub account. Click your profile picture in the top-right corner and go to `Settings->SSH and GPG keys`.
 
 Click the `New SSH key`. Fill in, copy the public key content generated in the above steps to the Key field, and add.
-![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
 
 ##### 1.3.3 Verifying the GitHub Connection
 
