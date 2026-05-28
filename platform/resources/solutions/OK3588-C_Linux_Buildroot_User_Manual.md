@@ -1,6 +1,4 @@
-# Linux6.1.18_User's Manual_V1.0
-
-Buildroot_Kernel-6.1_User's Manual_V1.0
+# Buildroot_Kernel-6.1_User's Manual_V1.0
 
 ## ﻿Open Box
 
