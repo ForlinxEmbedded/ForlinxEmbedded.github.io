@@ -63,7 +63,7 @@ FET3588J SoM
 
 FET3588S2 
 
-<img src="./images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png" alt="Image" style="zoom: 120%;" />
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripherals cannot be used on the FET3588-C. 
 
