@@ -12,7 +12,7 @@ This document is intended for the Forlinx OK3588-C platform running Linux versio
 
 | **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
 |:----------:|:----------:|:----------:|:----------:|:----------|
-| 03/04/2026| V1.0| 3588-C V1.1 / 3588S2-C V1.0/3588-C2 V1.0| V1.1 and above| OK3588-C\_Linux6.1.118\_Buildroot\_User Manual\_V1.0|
+| 03/04/2026| V1.0| 3588-C V1.1 / 3588S2-C V1.0/3588-C2 V1.0| V1.1 and above| OK3588-C\_Buildroot_Kernel-6.1_User's Manual_V1.0 |
 
 #### 1.3 OK3588-C Description
 
