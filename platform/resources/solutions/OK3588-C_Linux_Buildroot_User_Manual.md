@@ -1,4 +1,4 @@
-Buildroot_Kernel-6.1_User's Manual_V1.0
+# Buildroot_Kernel-6.1_User's Manual_V1.0
 
 ## ﻿Open Box
 
@@ -5991,4 +5991,4 @@ For the list of ONNX operators, PyTorch operators, Caffe operators, TensorFlow o
 
 ## Resource Download
 
-Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). 
+You can easily download the materials you need by visiting our [Resource Download Center](https://www.forlinx.net/resources/download-center.html).
