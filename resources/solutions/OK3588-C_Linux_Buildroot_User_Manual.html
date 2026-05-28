@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buildroot_Kernel-6.1_User’s Manual_V1.0 &mdash; Forlinx Embedded Documentation  documentation</title>
+  <title>﻿Open Box &mdash; Forlinx Embedded Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
@@ -64,116 +64,268 @@
               <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="T113_Linux5_4_OTA_Upgrade_Recovery_Solution.html">T113 Linux5.4_OTA Upgrade_Recovery_Solution</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Buildroot_Kernel-6.1_User’s Manual_V1.0</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#open-box">﻿Open Box</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#overview">1. Overview</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#application-scope">1.1 Application Scope</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#revision-history">1.2 Revision History</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ok3588-c-description">1.3 OK3588-C Description</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#main-frequency-settings-description">1.4 Main Frequency Settings Description</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">1.5 Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">﻿Open Box</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1. Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#application-scope">1.1 Application Scope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#revision-history">1.2 Revision History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ok3588-c-description">1.3 OK3588-C Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main-frequency-settings-description">1.4 Main Frequency Settings Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.5 Overview</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#packing-list">2. Packing List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#quick-start">3. Quick Start</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#interfaces">3.1 Interfaces</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#debug">3.2 Debug</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#upgrade-firmware">Upgrade Firmware</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">1. Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#obtaining-the-image">2. Obtaining the Image</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#firmware-flashing">3. Firmware Flashing</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#flashing-via-otg-windows">3.1 Flashing via OTG (Windows)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#flashing-firmware-via-tf-card">3.2 Flashing Firmware via TF Card</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#packing-list">2. Packing List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">3. Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#interfaces">3.1 Interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debug">3.2 Debug</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#serial-port-debug">3.2.1 Serial Port Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ethernet-debug-ssh">3.2.2 Ethernet Debug (SSH)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#os-development">OS Development</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#downloading-sdk-source-code">1. Downloading SDK Source Code</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#repo-tool-installation">1.1 Repo Tool Installation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fetching-source-code-using-repo">1.2 Fetching Source Code Using Repo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configuring-github-authentication">1.3 Configuring GitHub Authentication</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pre-downloaded-software-packages">1.4 Pre-downloaded Software Packages</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utility-tools">1.5 Utility Tools</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#configuring-sdk">2. Configuring SDK</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sdk-structure">2.1 SDK Structure</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdk-configuration">2.2 SDK Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#partitions">2.3 Partitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#upgrade-firmware">Upgrade Firmware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obtaining-the-image">2. Obtaining the Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#firmware-flashing">3. Firmware Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-via-otg-windows">3.1 Flashing via OTG (Windows)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installing-rockchip-usb-driver">3.1.1 Installing Rockchip USB Driver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-full-flashing">3.1.2 OTG Full Flashing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#otg-step-by-step-flashing">3.1.3 OTG Step-by-Step Flashing</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#building-sdk-images">3. Building SDK Images</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#preparation">3.1 Preparation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#compilation">3.2 Compilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#compiling-application">3.3 Compiling Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-firmware-via-tf-card">3.2 Flashing Firmware via TF Card</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#application-development">Application Development</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#peripheral-access">Peripheral Access</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#g-5g">4G/5G</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#adc">ADC</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ethernet">Ethernet</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#frequency">Frequency</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gpio">GPIO</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#i2c">I2C</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mmc">MMC</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pcle">PCle</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pwm">PWM</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rtc">RTC</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sd-card">SD Card</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#system-suspend">System Suspend</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#type-c">Type-C</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#uart">UART</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#usb2-0">USB2.0</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#wifi-bluetooth">Wifi_Bluetooth</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#watchdog">Watchdog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#os-development">OS Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-sdk-source-code">1. Downloading SDK Source Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#repo-tool-installation">1.1 Repo Tool Installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#system-requirements">1.1.1 System Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installing-the-repo-tool">1.1.2 Installing the Repo Tool</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#database">Database</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sqlite3">SQLite3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fetching-source-code-using-repo">1.2 Fetching Source Code Using Repo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-a-working-directory">1.2.1 Creating a Working Directory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#initializing-the-repo-repository">1.2.2 Initializing the Repo Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#synchronizing-the-code">1.2.3 Synchronizing the Code</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#multimedia">Multimedia</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#audio">Audio</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#camera">Camera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#display">Display</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#encoding-and-decoding">Encoding and Decoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-github-authentication">1.3 Configuring GitHub Authentication</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#generating-an-ssh-key-pair">1.3.1 Generating an SSH Key Pair</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-the-public-key-to-github">1.3.2 Adding the Public Key to GitHub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verifying-the-github-connection">1.3.3 Verifying the GitHub Connection</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#machine-learning">Machine Learning</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id59">1. Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id60">2. Device Tree</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id61">3. Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-downloaded-software-packages">1.4 Pre-downloaded Software Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#utility-tools">1.5 Utility Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#directory-structure">1.5.1 Directory Structure</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#development-guides">Development Guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#adding-user-application">1. Adding User Application</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#packaging-the-user-program-into-the-image">1.1 Packaging the User Program into the Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-sdk">2. Configuring SDK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sdk-structure">2.1 SDK Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sdk-configuration">2.2 SDK Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#partitions">2.3 Partitions</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#auto-starting-the-user-program">2. Auto-starting the User Program</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#customized-logo">3. Customized Logo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rknpu-development">4. RKNPU Development</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#npu-description">4.1 NPU Description</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#development-environment-setup">4.2 Development Environment Setup</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#model-deployment-examples">4.3 Model Deployment Examples</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#rknn-toolkit2-supported-operator-list">4.4 RKNN Toolkit2 Supported Operator List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-sdk-images">3. Building SDK Images</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation">3.1 Preparation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuring-the-build-environment">3.1.1 Configuring the Build Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuring-the-sdk-build-options">3.1.2 Configuring the SDK Build Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#compilation">3.2 Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#full-compilation">3.2.1 Full Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#partial-compilation">3.2.2 Partial Compilation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-application">3.3 Compiling Application</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installing-cross-compilation-toolchain">3.3.1 Installing Cross-compilation Toolchain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-the-application">3.3.2 Compiling the Application</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#resource-download">Resource Download</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#application-development">Application Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#peripheral-access">Peripheral Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#g-5g">4G/5G</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#g">1. 4G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">2. 5G</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#adc">ADC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#device-tree">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#application">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ethernet">Ethernet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#frequency">Frequency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">GPIO</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#i2c">I2C</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id11">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mmc">MMC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id14">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pcle">PCle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id17">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pwm">PWM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id20">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rtc">RTC</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id23">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id24">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id25">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sd-card">SD Card</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id26">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id27">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id28">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#system-suspend">System Suspend</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id29">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id30">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id31">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#type-c">Type-C</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id32">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id33">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id34">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#uart">UART</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id35">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id36">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id37">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#usb2-0">USB2.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id39">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id40">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-device-driver-support">3. USB Device Driver Support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id41">4. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi-bluetooth">Wifi_Bluetooth</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id42">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id43">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id44">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#watchdog">Watchdog</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id45">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id46">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id47">3. Application</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#database">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sqlite3">SQLite3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#multimedia">Multimedia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#audio">Audio</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id50">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id51">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id52">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#camera">Camera</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id53">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id54">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id55">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#display">Display</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id56">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id57">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id58">3. Application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#encoding-and-decoding">Encoding and Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#audio-and-video-playback">1. Audio and Video Playback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-hardware-encoding">2. Video Hardware Encoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-hardware-decoding">3. Video Hardware Decoding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#machine-learning">Machine Learning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id59">1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id60">2. Device Tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id61">3. Application</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#interface-call">3.1 Interface Call</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#development-guides">Development Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-user-application">1. Adding User Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#packaging-the-user-program-into-the-image">1.1 Packaging the User Program into the Image</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#auto-starting-the-user-program">2. Auto-starting the User Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customized-logo">3. Customized Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rknpu-development">4. RKNPU Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#npu-description">4.1 NPU Description</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rknn-toolchain">4.1.1 RKNN Toolchain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rkllm-toolchain">4.1.2 RKLLM Toolchain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rknn-model-zoo">4.1.3 RKNN Model Zoo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment-setup">4.2 Development Environment Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installing-rknn-toolkit2">4.2.1 Installing RKNN-Toolkit2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installing-rkllm-toolkit">4.2.2 Installing RKLLM-Toolkit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#board-side-npu-environment-preparation">4.2.3 Board-Side NPU Environment Preparation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#model-deployment-examples">4.3 Model Deployment Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#yolov5-model-deployment-example">4.3.1 YOLOv5 Model Deployment Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deepseek-model-deployment">4.3.2 DeepSeek Model Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rknn-toolkit2-supported-operator-list">4.4 RKNN Toolkit2 Supported Operator List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#resource-download">Resource Download</a></li>
 </ul>
 
         </div>
@@ -190,7 +342,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Buildroot_Kernel-6.1_User’s Manual_V1.0</li>
+      <li class="breadcrumb-item active">﻿Open Box</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -199,18 +351,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="buildroot-kernel-6-1-user-s-manual-v1-0">
-<h1>Buildroot_Kernel-6.1_User’s Manual_V1.0<a class="headerlink" href="#buildroot-kernel-6-1-user-s-manual-v1-0" title="Link to this heading"></a></h1>
+  <p>Buildroot_Kernel-6.1_User’s Manual_V1.0</p>
 <section id="open-box">
-<h2>﻿Open Box<a class="headerlink" href="#open-box" title="Link to this heading"></a></h2>
+<h1>﻿Open Box<a class="headerlink" href="#open-box" title="Link to this heading"></a></h1>
 <section id="overview">
-<h3>1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h3>
+<h2>1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <section id="application-scope">
-<h4>1.1 Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h4>
+<h3>1.1 Application Scope<a class="headerlink" href="#application-scope" title="Link to this heading"></a></h3>
 <p>This document is intended for the Forlinx OK3588-C platform running Linux version 6.1.118-buildroot. Although it may be useful for other platforms, please modify it to suit your specific conditions due to potential differences.</p>
 </section>
 <section id="revision-history">
-<h4>1.2 Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h4>
+<h3>1.2 Revision History<a class="headerlink" href="#revision-history" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p><strong>Date</strong></p></th>
@@ -231,7 +382,7 @@
 </table>
 </section>
 <section id="ok3588-c-description">
-<h4>1.3 OK3588-C Description<a class="headerlink" href="#ok3588-c-description" title="Link to this heading"></a></h4>
+<h3>1.3 OK3588-C Description<a class="headerlink" href="#ok3588-c-description" title="Link to this heading"></a></h3>
 <p>It is built around the Rockchip RK3588 processor, which utilizes the ARM64 architecture. It features four high-performance Cortex-A76 cores and four energy-efficient Cortex-A55 cores. Additionally, the RK3588 includes an independent NEON coprocessor and a dedicated Neural Processing Unit (NPU), ensuring a balance between high performance and low power consumption. This design makes the RK3588 ideal for applications in edge computing, artificial intelligence, multimedia processing, mobile internet devices, and various digital multimedia uses.</p>
 <p>FET3588 SoMs:</p>
 <table class="docutils align-default">
@@ -326,7 +477,7 @@
 <p><img alt="Image" src="_images/1773454975472_8f93d706_b9ce_49b3_8bc9_c8b0b0e9f873.png" /></p>
 </section>
 <section id="main-frequency-settings-description">
-<h4>1.4 Main Frequency Settings Description<a class="headerlink" href="#main-frequency-settings-description" title="Link to this heading"></a></h4>
+<h3>1.4 Main Frequency Settings Description<a class="headerlink" href="#main-frequency-settings-description" title="Link to this heading"></a></h3>
 <p>FET3588J-C and FET3588J-C2 SoM frequency description:</p>
 <table class="docutils align-default">
 <thead>
@@ -379,7 +530,7 @@
 <p>Switch to “normal mode”. You just need to add #include “rk3588j.dtsi” in the reference within the kernel device tree. The path is: OK3588_Linux_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi.</p>
 </section>
 <section id="id1">
-<h4>1.5 Overview<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<h3>1.5 Overview<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>This manual is designed to help you quickly familiarize yourself with the product. It covers the source code structure and compilation methods, firmware flashing techniques, usage and testing of development board interfaces, and troubleshooting methods for common issues.</p>
 <p><strong>Chapter 1: Product Overview</strong></p>
 <ul class="simple">
@@ -404,24 +555,24 @@
 </section>
 </section>
 <section id="packing-list">
-<h3>2. Packing List<a class="headerlink" href="#packing-list" title="Link to this heading"></a></h3>
+<h2>2. Packing List<a class="headerlink" href="#packing-list" title="Link to this heading"></a></h2>
 <p>Packing List: FET3588-C SoM, OK3588-C development board and accessory kit.</p>
 <p>As shown in the figure:
 <img alt="Image" src="_images/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png" /></p>
 </section>
 <section id="quick-start">
-<h3>3. Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading"></a></h3>
+<h2>3. Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading"></a></h2>
 <section id="interfaces">
-<h4>3.1 Interfaces<a class="headerlink" href="#interfaces" title="Link to this heading"></a></h4>
+<h3>3.1 Interfaces<a class="headerlink" href="#interfaces" title="Link to this heading"></a></h3>
 <p>OK3588-C Interfaces:</p>
 <p><img alt="Image" src="_images/1776329292214_981ff9ed_a11b_4e99_a1f2_48d6de365e5d.png" /></p>
 <p><img alt="Image" src="_images/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png" /></p>
 </section>
 <section id="debug">
-<h4>3.2 Debug<a class="headerlink" href="#debug" title="Link to this heading"></a></h4>
+<h3>3.2 Debug<a class="headerlink" href="#debug" title="Link to this heading"></a></h3>
 <p>Login methods: Serial login and network login.</p>
 <section id="serial-port-debug">
-<h5>3.2.1 Serial Port Debug<a class="headerlink" href="#serial-port-debug" title="Link to this heading"></a></h5>
+<h4>3.2.1 Serial Port Debug<a class="headerlink" href="#serial-port-debug" title="Link to this heading"></a></h4>
 <p>The OK3588 platform features a Type-C port for serial debugging and an on-board USB-to-UART chip. No additional USB-to-serial debugging tool is required（ CP210x）, making the setup simple and convenient.</p>
 <ul class="simple">
 <li><p>Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow;</p></li>
@@ -429,17 +580,17 @@
 <li><p>Hardware Requirements: Type-C, 12V.</p></li>
 </ul>
 <section id="serial-port-driver-installation">
-<h6>3.2.1.1 Serial Port Driver Installation<a class="headerlink" href="#serial-port-driver-installation" title="Link to this heading"></a></h6>
+<h5>3.2.1.1 Serial Port Driver Installation<a class="headerlink" href="#serial-port-driver-installation" title="Link to this heading"></a></h5>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model.  There is “CP210x_VCP_Windows_XP_Vista.zip” under “TOOLS”-&gt;“Driver Tool”. Download and extract it to your current directory, choose the appropriate executable file based on your computer’s configuration to install the driver.</p>
 <p><img alt="Image" src="_images/1776397661305_7bdb0536_0067_4a27_97a0_9869de92afb4.png" /></p>
 </section>
 <section id="installing-the-terminal-software-putty">
-<h6>3.2.1.2 Installing the Terminal Software PuTTY<a class="headerlink" href="#installing-the-terminal-software-putty" title="Link to this heading"></a></h6>
+<h5>3.2.1.2 Installing the Terminal Software PuTTY<a class="headerlink" href="#installing-the-terminal-software-putty" title="Link to this heading"></a></h5>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is PuTTY installation package “putty-64bit-0.71-installer” under “TOOLS”-&gt;“Debug Tool”. Download it to your computer and install PuTTY.</p>
 <p><img alt="Image" src="_images/1776402431048_40641e90_5e96_4e07_aa79_2da433c0b8e4.png" /></p>
 </section>
 <section id="usage-of-putty">
-<h6>3.2.1.3 <strong>Usage of PuTTY</strong><a class="headerlink" href="#usage-of-putty" title="Link to this heading"></a></h6>
+<h5>3.2.1.3 <strong>Usage of PuTTY</strong><a class="headerlink" href="#usage-of-putty" title="Link to this heading"></a></h5>
 <p>Take putty as an example to introduce the setting mode of the putty terminal:</p>
 <p>Step 1: Connect the PC to the Debug serial port of the OK3588-C using a Type-C cable. <img alt="Image" src="_images/1776411597715_082f849e_a92b_4b62_a437_cea45c07c0c3.png" /></p>
 <p>Open the Windows Device Manager and check the detected COM port number under “Ports (COM   &amp; LPT)” (e.g., COM3). Use the actual displayed port.</p>
@@ -449,23 +600,23 @@
 <p>Step 3: After completing the previous settings, enter the COM port number used by your computer in the “Saved Sessions” field (for example, use COM24). Save the configuration. When you reopen the serial port, you can simply click on the saved port number to apply the settings directly.</p>
 <p><img alt="Image" src="_images/1775868779548_2ddbeaff_d435_4c85_b7ee_8b9dac122e2b.png" /></p>
 <p>Step 4: Power on the development board. If the startup information appears as shown below, it indicates a successful boot. You can then press Enter to create a new command line.</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">Welcome</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">Forlinx</span><span class="w"> </span><span class="n">OK3588</span><span class="w"> </span><span class="n">Board</span>
+<div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Welcome to Forlinx OK3588 Board
 
-<span class="nl">Tel</span><span class="p">:</span><span class="w"> </span><span class="o">+</span><span class="mi">86</span><span class="w"> </span><span class="mi">312</span><span class="w"> </span><span class="mi">311</span><span class="w"> </span><span class="mi">9192</span>
-<span class="n">Linux</span><span class="w"> </span><span class="n">Support</span><span class="o">:</span><span class="w"> </span><span class="n">linux</span><span class="err">@</span><span class="n">forlinx</span><span class="p">.</span><span class="n">com</span>
-<span class="n">User</span><span class="w"> </span><span class="n">Manual</span><span class="o">:</span><span class="w"> </span><span class="n">https</span><span class="o">:</span><span class="c1">//www.forlinx.net/resources/download-center.html</span>
+Tel: +86 312 311 9192
+Linux Support: linux@forlinx.com
+User Manual: https://www.forlinx.net/resources/download-center.html
 
-<span class="n">Powered</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">Forlinx</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Enjoy</span><span class="o">!</span>
+Powered by Forlinx - Enjoy!
 
-<span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="w"> </span><span class="n">login</span><span class="o">:</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">(</span><span class="n">automatic</span><span class="w"> </span><span class="n">login</span><span class="p">)</span>
+OK3588-C-buildroot login: root (automatic login)
 
-<span class="n">root</span><span class="err">@</span><span class="n">OK3588</span><span class="o">-</span><span class="n">C</span><span class="o">-</span><span class="n">buildroot</span><span class="o">:~</span><span class="err">#</span>
+root@OK3588-C-buildroot:~#
 </pre></div>
 </div>
 </section>
 </section>
 <section id="ethernet-debug-ssh">
-<h5>3.2.2 Ethernet Debug (SSH)<a class="headerlink" href="#ethernet-debug-ssh" title="Link to this heading"></a></h5>
+<h4>3.2.2 Ethernet Debug (SSH)<a class="headerlink" href="#ethernet-debug-ssh" title="Link to this heading"></a></h4>
 <p>The OK3588-C development board supports SSH login via Ethernet.</p>
 <ul class="simple">
 <li><p>Connect the ETH0 network port on the development board and ensure that your computer can ping the board;</p></li>
@@ -485,28 +636,28 @@ root@OK3588-C-buildroot:~#
 </section>
 </section>
 <section id="upgrade-firmware">
-<h2>Upgrade Firmware<a class="headerlink" href="#upgrade-firmware" title="Link to this heading"></a></h2>
+<h1>Upgrade Firmware<a class="headerlink" href="#upgrade-firmware" title="Link to this heading"></a></h1>
 <section id="introduction">
-<h3>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h3>
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p>This section explains how to write the firmware image to the flash memory of the board. The OK3588-C development board supports flashing through both OTG and TF Card. You can find the required flashing tools in the user materials. You may choose either method to write the image.</p>
 </section>
 <section id="obtaining-the-image">
-<h3>2. Obtaining the Image<a class="headerlink" href="#obtaining-the-image" title="Link to this heading"></a></h3>
+<h2>2. Obtaining the Image<a class="headerlink" href="#obtaining-the-image" title="Link to this heading"></a></h2>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>).</p>
 <p>Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARES” → “Firmware Download.</p>
 <p><img alt="Image" src="_images/1776748292833_2143298a_d912_4f3b_9884_c6f2e3fa727b.png" /></p>
 </section>
 <section id="firmware-flashing">
-<h3>3. Firmware Flashing<a class="headerlink" href="#firmware-flashing" title="Link to this heading"></a></h3>
+<h2>3. Firmware Flashing<a class="headerlink" href="#firmware-flashing" title="Link to this heading"></a></h2>
 <section id="flashing-via-otg-windows">
-<h4>3.1 Flashing via OTG (Windows)<a class="headerlink" href="#flashing-via-otg-windows" title="Link to this heading"></a></h4>
+<h3>3.1 Flashing via OTG (Windows)<a class="headerlink" href="#flashing-via-otg-windows" title="Link to this heading"></a></h3>
 <p>Hardware requirements:</p>
 <ul class="simple">
 <li><p>Type-C data cable;</p></li>
 <li><p>12V DC power supply.</p></li>
 </ul>
 <section id="installing-rockchip-usb-driver">
-<h5>3.1.1 Installing Rockchip USB Driver<a class="headerlink" href="#installing-rockchip-usb-driver" title="Link to this heading"></a></h5>
+<h4>3.1.1 Installing Rockchip USB Driver<a class="headerlink" href="#installing-rockchip-usb-driver" title="Link to this heading"></a></h4>
 <p>Please download from the Resource Download page (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>).</p>
 <p>Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM model. There is DriverAssistant_v5.13.zip under “TOOLS”-&gt;“Driver Tool”. Download the zip package, extract it to any directory, and run the program with administrator privileges.</p>
 <!-- 这是一张图片，ocr 内容为： -->
@@ -517,7 +668,7 @@ root@OK3588-C-buildroot:~#
 <p><img alt="Image" src="_images/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png" /></p>
 </section>
 <section id="otg-full-flashing">
-<h5>3.1.2 OTG Full Flashing<a class="headerlink" href="#otg-full-flashing" title="Link to this heading"></a></h5>
+<h4>3.1.2 OTG Full Flashing<a class="headerlink" href="#otg-full-flashing" title="Link to this heading"></a></h4>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model. There is “RKDevTool_Release_v3.37.zip” under “TOOLS”-&gt;“Flashing Tool”. Download the zip package and extract it to the current directory.</p>
 <p><img alt="Image" src="_images/1776739556462_f89f01fd_5ac0_495b_88c8_129f51e080d4.png" /></p>
 <p>It is a development tool provided by Rockchip. Launch the application and connect the development board Type-C0 port to your computer host using a Type-C cable.</p>
@@ -535,7 +686,7 @@ root@OK3588-C-buildroot:~#
 <p><strong>⚠️Note: Do not click “Device Partition Table” while in Maskrom Mode, as this operation is invalid. Flashing individually in Maskrom Mode will not clear the U-Boot environment variables.</strong></p>
 </section>
 <section id="otg-step-by-step-flashing">
-<h5>3.1.3 OTG Step-by-Step Flashing<a class="headerlink" href="#otg-step-by-step-flashing" title="Link to this heading"></a></h5>
+<h4>3.1.3 OTG Step-by-Step Flashing<a class="headerlink" href="#otg-step-by-step-flashing" title="Link to this heading"></a></h4>
 <p>During R&amp;D, full reflashing is time-consuming. This section introduces OTG-based individual partition flashing. (⚠️<strong>Note: This function is only applicable in the Loader Flashing Mode.</strong>)</p>
 <p>After a full compilation, individual partition images can be found in the rockdev directory.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>linux-source/rockdev$ tree
@@ -604,7 +755,7 @@ root@OK3588-C-buildroot:~#
 </section>
 </section>
 <section id="flashing-firmware-via-tf-card">
-<h4>3.2 Flashing Firmware via TF Card<a class="headerlink" href="#flashing-firmware-via-tf-card" title="Link to this heading"></a></h4>
+<h3>3.2 Flashing Firmware via TF Card<a class="headerlink" href="#flashing-firmware-via-tf-card" title="Link to this heading"></a></h3>
 <p><strong>⚠️Note:</strong></p>
 <ul class="simple">
 <li><p><strong>Testing indicates that the maximum supported TF card capacity is 16 GB. Using a TF card of 32 GB or larger may result in flashing failure;</strong></p></li>
@@ -636,14 +787,14 @@ root@OK3588-C-buildroot:~#
 </section>
 </section>
 <section id="os-development">
-<h2>OS Development<a class="headerlink" href="#os-development" title="Link to this heading"></a></h2>
+<h1>OS Development<a class="headerlink" href="#os-development" title="Link to this heading"></a></h1>
 <section id="downloading-sdk-source-code">
-<h3>1. Downloading SDK Source Code<a class="headerlink" href="#downloading-sdk-source-code" title="Link to this heading"></a></h3>
+<h2>1. Downloading SDK Source Code<a class="headerlink" href="#downloading-sdk-source-code" title="Link to this heading"></a></h2>
 <section id="repo-tool-installation">
-<h4>1.1 Repo Tool Installation<a class="headerlink" href="#repo-tool-installation" title="Link to this heading"></a></h4>
+<h3>1.1 Repo Tool Installation<a class="headerlink" href="#repo-tool-installation" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">repo</span></code> is a Google-based command-line tool based on <code class="docutils literal notranslate"><span class="pre">Python</span></code>for managing large projects consisting of multiple Git repositories.</p>
 <section id="system-requirements">
-<h5>1.1.1 System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading"></a></h5>
+<h4>1.1.1 System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading"></a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">repo</span></code>is based on<code class="docutils literal notranslate"><span class="pre">Python3</span> <span class="pre">(3.6+)</span></code> and<code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">(2.x+)</span></code>. Please confirm before use.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ python3 --version
 forlinx@ubuntu:~$ git --version
@@ -655,10 +806,10 @@ forlinx@ubuntu:~$ git --version
 </div>
 </section>
 <section id="installing-the-repo-tool">
-<h5>1.1.2 Installing the Repo Tool<a class="headerlink" href="#installing-the-repo-tool" title="Link to this heading"></a></h5>
+<h4>1.1.2 Installing the Repo Tool<a class="headerlink" href="#installing-the-repo-tool" title="Link to this heading"></a></h4>
 <p>Refer to the following steps for<code class="docutils literal notranslate"><span class="pre">repo</span></code>installation.</p>
 <section id="getting-repo-source-code">
-<h6>1.1.2.1 Getting Repo Source Code<a class="headerlink" href="#getting-repo-source-code" title="Link to this heading"></a></h6>
+<h5>1.1.2.1 Getting Repo Source Code<a class="headerlink" href="#getting-repo-source-code" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update &amp;&amp; sudo apt-get install curl
 forlinx@ubuntu:~$ mkdir -p ~/.bin
 forlinx@ubuntu:~$ curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/.bin/repo
@@ -666,7 +817,7 @@ forlinx@ubuntu:~$ curl https://storage.googleapis.com/git-repo-downloads/repo &g
 </div>
 </section>
 <section id="setting-up-environment">
-<h6>1.1.2.2 Setting Up Environment<a class="headerlink" href="#setting-up-environment" title="Link to this heading"></a></h6>
+<h5>1.1.2.2 Setting Up Environment<a class="headerlink" href="#setting-up-environment" title="Link to this heading"></a></h5>
 <p>Make the <code class="docutils literal notranslate"><span class="pre">repo</span></code>script executable and add <code class="docutils literal notranslate"><span class="pre">~/.bin</span></code>to <code class="docutils literal notranslate"><span class="pre">PATH</span></code>:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ chmod a+rx ~/.bin/repo
 forlinx@ubuntu:~$ echo PATH=~/.bin:$PATH &gt;&gt; ~/.bashrc
@@ -677,7 +828,7 @@ forlinx@ubuntu:~$ source ~/.bashrc
 </section>
 </section>
 <section id="fetching-source-code-using-repo">
-<h4>1.2 Fetching Source Code Using Repo<a class="headerlink" href="#fetching-source-code-using-repo" title="Link to this heading"></a></h4>
+<h3>1.2 Fetching Source Code Using Repo<a class="headerlink" href="#fetching-source-code-using-repo" title="Link to this heading"></a></h3>
 <p>The Forlinx OK3588 BSP is managed through a manifest repository, which requires access permissions to retrieve the source code. If you’re uncertain about your access permissions, you can check by clicking the GitHub repository link below. If you can view the contents of the repository, it means you have the necessary permission. If not, please reach out to Forlinx to request access and join the team.</p>
 <p>When pulling from GitHub, please configure a key to establish a connection. If you have not yet set up GitHub authentication on your local machine, refer to Section 1.3 below for setup instructions.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># manifest repository address
@@ -686,20 +837,20 @@ https://github.com/FLembedded/manifests_linux
 </div>
 <p>Once all the above requirements are met, you can follow the following steps to pull the source code:</p>
 <section id="creating-a-working-directory">
-<h5>1.2.1 Creating a Working Directory<a class="headerlink" href="#creating-a-working-directory" title="Link to this heading"></a></h5>
+<h4>1.2.1 Creating a Working Directory<a class="headerlink" href="#creating-a-working-directory" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ mkdir rk3588
 forlinx@ubuntu:~$ cd rk3588
 </pre></div>
 </div>
 </section>
 <section id="initializing-the-repo-repository">
-<h5>1.2.2 Initializing the Repo Repository<a class="headerlink" href="#initializing-the-repo-repository" title="Link to this heading"></a></h5>
+<h4>1.2.2 Initializing the Repo Repository<a class="headerlink" href="#initializing-the-repo-repository" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:FLembedded/manifests_linux.git -m platforms/ok3588/ok3588-buildroot.xml
 </pre></div>
 </div>
 </section>
 <section id="synchronizing-the-code">
-<h5>1.2.3 Synchronizing the Code<a class="headerlink" href="#synchronizing-the-code" title="Link to this heading"></a></h5>
+<h4>1.2.3 Synchronizing the Code<a class="headerlink" href="#synchronizing-the-code" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/rk3588$ yes | repo sync
 </pre></div>
 </div>
@@ -714,10 +865,10 @@ forlinx@ubuntu:~$ cd rk3588
 </section>
 </section>
 <section id="configuring-github-authentication">
-<h4>1.3 Configuring GitHub Authentication<a class="headerlink" href="#configuring-github-authentication" title="Link to this heading"></a></h4>
+<h3>1.3 Configuring GitHub Authentication<a class="headerlink" href="#configuring-github-authentication" title="Link to this heading"></a></h3>
 <p>To successfully pull code using the repo tool, it’s essential to configure GitHub authentication on your local machine. Since this source repository is managed through SSH, only the SSH authentication method will be covered here.</p>
 <section id="generating-an-ssh-key-pair">
-<h5>1.3.1 Generating an SSH Key Pair<a class="headerlink" href="#generating-an-ssh-key-pair" title="Link to this heading"></a></h5>
+<h4>1.3.1 Generating an SSH Key Pair<a class="headerlink" href="#generating-an-ssh-key-pair" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ssh-keygen -t ed25519 -C &quot;user@email.com&quot;
 </pre></div>
 </div>
@@ -729,13 +880,13 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </div>
 </section>
 <section id="adding-the-public-key-to-github">
-<h5>1.3.2 Adding the Public Key to GitHub<a class="headerlink" href="#adding-the-public-key-to-github" title="Link to this heading"></a></h5>
+<h4>1.3.2 Adding the Public Key to GitHub<a class="headerlink" href="#adding-the-public-key-to-github" title="Link to this heading"></a></h4>
 <p>Log in to your GitHub account. Click your profile picture in the top-right corner and go to <code class="docutils literal notranslate"><span class="pre">Settings-&gt;SSH</span> <span class="pre">and</span> <span class="pre">GPG</span> <span class="pre">keys</span></code>.</p>
 <p>Click the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">SSH</span> <span class="pre">key</span></code>. Fill in, copy the public key content generated in the above steps to the Key field, and add.
 <img alt="Image" src="_images/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png" /></p>
 </section>
 <section id="verifying-the-github-connection">
-<h5>1.3.3 Verifying the GitHub Connection<a class="headerlink" href="#verifying-the-github-connection" title="Link to this heading"></a></h5>
+<h4>1.3.3 Verifying the GitHub Connection<a class="headerlink" href="#verifying-the-github-connection" title="Link to this heading"></a></h4>
 <p>Test if you can connect to GitHub via SSH using the following command:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ssh -T git@github.com
 </pre></div>
@@ -744,7 +895,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </section>
 </section>
 <section id="pre-downloaded-software-packages">
-<h4>1.4 Pre-downloaded Software Packages<a class="headerlink" href="#pre-downloaded-software-packages" title="Link to this heading"></a></h4>
+<h3>1.4 Pre-downloaded Software Packages<a class="headerlink" href="#pre-downloaded-software-packages" title="Link to this heading"></a></h3>
 <p>When compiling buildroot, the source code of the software package needs to be pulled. In order to shorten the time, Forlinx provides a pre-downloaded source code package with a size of 952 MB. You can pull it according to the following steps:</p>
 <p>Get the Pre-downloaded dl Package</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>OK-linux-source$ curl -O -L https://github.com/FLembedded/buildroot_dl/releases/download/source_packages/dl_packages.tar.gz
@@ -762,15 +913,15 @@ id_ed25519.pub			// Public key for uploading to GitHub
 <p>Buildroot will now recognize existing source packages in the local <code class="docutils literal notranslate"><span class="pre">dl</span></code> directory, skipping the download phase to use these local files for compilation.</p>
 </section>
 <section id="utility-tools">
-<h4>1.5 Utility Tools<a class="headerlink" href="#utility-tools" title="Link to this heading"></a></h4>
+<h3>1.5 Utility Tools<a class="headerlink" href="#utility-tools" title="Link to this heading"></a></h3>
 <p>The SDK contains executable tools for Linux, macOS, and Windows. However, the tools directory fetched in the previous step only includes the tools for Linux. To use the tools on macOS or Windows, please download via the link below.</p>
 <p><a class="reference external" href="https://github.com/FLembedded/buildroot_dl/releases/download/tools/tools.tar.xz">https://github.com/FLembedded/buildroot_dl/releases/download/tools/tools.tar.xz</a></p>
 <p>The compressed package size is 540 MB. The test speed is approximately 5 MB/s, with a download time of about 1 minute and 30 seconds. Typically, the download time ranges from 1 minute to 5 minutes.</p>
 <section id="directory-structure">
-<h5>1.5.1 Directory Structure<a class="headerlink" href="#directory-structure" title="Link to this heading"></a></h5>
+<h4>1.5.1 Directory Structure<a class="headerlink" href="#directory-structure" title="Link to this heading"></a></h4>
 <p>This section will separately describe the available tools under Windows, Linux, and Mac.</p>
 <section id="windows">
-<h6>1.5.1.1 Windows<a class="headerlink" href="#windows" title="Link to this heading"></a></h6>
+<h5>1.5.1.1 Windows<a class="headerlink" href="#windows" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>windows/
 ├── BoardProofTool_v1.01_20240823_02.zip # Anti-Cloning Tool, prevents PCB design from being copied or cloned
 ├── boot_merger_v1.32.zip # Tool for packing or unpacking loader files
@@ -797,7 +948,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </div>
 </section>
 <section id="linux">
-<h6>1.5.1.2 Linux<a class="headerlink" href="#linux" title="Link to this heading"></a></h6>
+<h5>1.5.1.2 Linux<a class="headerlink" href="#linux" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>linux/
 ├── boot_merger # Tool for packing or unpacking loader files
 ├── Firmware_Merger # SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
@@ -818,7 +969,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </div>
 </section>
 <section id="mac">
-<h6>1.5.1.3 Mac<a class="headerlink" href="#mac" title="Link to this heading"></a></h6>
+<h5>1.5.1.3 Mac<a class="headerlink" href="#mac" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>mac/
 ├── boot_merger # Tool for packing or unpacking loader files
 ├── rockdev # Command-line Packing Tool
@@ -832,9 +983,9 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </section>
 </section>
 <section id="configuring-sdk">
-<h3>2. Configuring SDK<a class="headerlink" href="#configuring-sdk" title="Link to this heading"></a></h3>
+<h2>2. Configuring SDK<a class="headerlink" href="#configuring-sdk" title="Link to this heading"></a></h2>
 <section id="sdk-structure">
-<h4>2.1 SDK Structure<a class="headerlink" href="#sdk-structure" title="Link to this heading"></a></h4>
+<h3>2.1 SDK Structure<a class="headerlink" href="#sdk-structure" title="Link to this heading"></a></h3>
 <p>OK3588-C source code structure:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>OK-linux-source$ tree -L 1
 .
@@ -862,7 +1013,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 </div>
 </section>
 <section id="sdk-configuration">
-<h4>2.2 SDK Configuration<a class="headerlink" href="#sdk-configuration" title="Link to this heading"></a></h4>
+<h3>2.2 SDK Configuration<a class="headerlink" href="#sdk-configuration" title="Link to this heading"></a></h3>
 <p>The configuration file path for the SDK is: (<code class="docutils literal notranslate"><span class="pre">OK-linux-source/device/rockchip/.chips/rk3588</span></code>). These files control the system compilation.</p>
 <p>The naming rule for the configuration files is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&lt;vendor&gt;_&lt;chip&gt;_&lt;model&gt;-&lt;extra&gt;_&lt;OS&gt;_defconfig
@@ -893,7 +1044,7 @@ RK_USE_FIT_IMG=y                            # Whether to use the FIT (Flattened 
 <p>The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, [chapter 3.2.2](#3.2.2 Partial Compilation).</p>
 </section>
 <section id="partitions">
-<h4>2.3 Partitions<a class="headerlink" href="#partitions" title="Link to this heading"></a></h4>
+<h3>2.3 Partitions<a class="headerlink" href="#partitions" title="Link to this heading"></a></h3>
 <p>The following parameter file configures the location of the firmware partitions, with the path: <code class="docutils literal notranslate"><span class="pre">OK-linux-source/device/rockchip/rk3588/parameter</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>FIRMWARE_VER: 1.0
 MACHINE_MODEL: RK3588
@@ -917,11 +1068,11 @@ uuid:boot=7A3F0000-0000-446A-8000-702F00006273
 </section>
 </section>
 <section id="building-sdk-images">
-<h3>3. Building SDK Images<a class="headerlink" href="#building-sdk-images" title="Link to this heading"></a></h3>
+<h2>3. Building SDK Images<a class="headerlink" href="#building-sdk-images" title="Link to this heading"></a></h2>
 <section id="preparation">
-<h4>3.1 Preparation<a class="headerlink" href="#preparation" title="Link to this heading"></a></h4>
+<h3>3.1 Preparation<a class="headerlink" href="#preparation" title="Link to this heading"></a></h3>
 <section id="configuring-the-build-environment">
-<h5>3.1.1 Configuring the Build Environment<a class="headerlink" href="#configuring-the-build-environment" title="Link to this heading"></a></h5>
+<h4>3.1.1 Configuring the Build Environment<a class="headerlink" href="#configuring-the-build-environment" title="Link to this heading"></a></h4>
 <p>It is recommended to use Ubuntu 22.04 or a later version for compilation.</p>
 <p>Execute the following commands in your build environment (the installation commands apply to Ubuntu 22.04):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>sudo apt update
@@ -942,7 +1093,7 @@ fakeroot p7zip-full gettext
 </ul>
 </section>
 <section id="configuring-the-sdk-build-options">
-<h5>3.1.2 Configuring the SDK Build Options<a class="headerlink" href="#configuring-the-sdk-build-options" title="Link to this heading"></a></h5>
+<h4>3.1.2 Configuring the SDK Build Options<a class="headerlink" href="#configuring-the-sdk-build-options" title="Link to this heading"></a></h4>
 <p>All RK3588 compilation is handled through the <strong>build.sh</strong> script in the SDK directory. The usage of build.sh:</p>
 <table class="docutils align-default">
 <thead>
@@ -1004,9 +1155,9 @@ Which one would you like? [1]: 3
 </section>
 </section>
 <section id="compilation">
-<h4>3.2 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h4>
+<h3>3.2 Compilation<a class="headerlink" href="#compilation" title="Link to this heading"></a></h3>
 <section id="full-compilation">
-<h5>3.2.1 Full Compilation<a class="headerlink" href="#full-compilation" title="Link to this heading"></a></h5>
+<h4>3.2.1 Full Compilation<a class="headerlink" href="#full-compilation" title="Link to this heading"></a></h4>
 <p>Execute the following command to perform a full compilation:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>OK-linux-source$./build.sh all
 </pre></div>
@@ -1032,9 +1183,9 @@ Directory structure (symbolic links point to actual source files):</p>
 <p>Among them, <code class="docutils literal notranslate"><span class="pre">update.img</span></code> is the fully packaged system image, suitable for complete system flashing via OTG or TF card.</p>
 </section>
 <section id="partial-compilation">
-<h5>3.2.2 Partial Compilation<a class="headerlink" href="#partial-compilation" title="Link to this heading"></a></h5>
+<h4>3.2.2 Partial Compilation<a class="headerlink" href="#partial-compilation" title="Link to this heading"></a></h4>
 <section id="building-u-boot">
-<h6>3.2.2.1 Building U-boot<a class="headerlink" href="#building-u-boot" title="Link to this heading"></a></h6>
+<h5>3.2.2.1 Building U-boot<a class="headerlink" href="#building-u-boot" title="Link to this heading"></a></h5>
 <p>If only compiling u-boot, uboot.img will be generated.</p>
 <p>Path: OK-linux-source/u-boot/uboot.img. The command is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>OK-linux-source$./build.sh uboot
@@ -1046,7 +1197,7 @@ Directory structure (symbolic links point to actual source files):</p>
 <p>The u-boot device tree file is:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/u-boot/arch/arm/dts/OK3588-C-Linux.dts</span></code></p>
 </section>
 <section id="building-kernel">
-<h6>3.2.2.2 Building Kernel<a class="headerlink" href="#building-kernel" title="Link to this heading"></a></h6>
+<h5>3.2.2.2 Building Kernel<a class="headerlink" href="#building-kernel" title="Link to this heading"></a></h5>
 <p>If only compiling the kernel, boot.img will be generated.</p>
 <p>Path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/kernel-6.1/boot.img</span></code>.</p>
 <p>The command is as follows:</p>
@@ -1098,7 +1249,7 @@ Directory structure (symbolic links point to actual source files):</p>
 </div>
 </section>
 <section id="building-buildroot">
-<h6>3.2.2.3 Building Buildroot<a class="headerlink" href="#building-buildroot" title="Link to this heading"></a></h6>
+<h5>3.2.2.3 Building Buildroot<a class="headerlink" href="#building-buildroot" title="Link to this heading"></a></h5>
 <p>If only compiling buildroot, rootfs.img will be generated.</p>
 <p>Path: <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/output/rockchip_ok3588-c/images/rootfs.ext2</span></code>.</p>
 <p>The buildroot configuration file is <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/configs/rockchip_ok3588-c_defconfig</span></code></p>
@@ -1175,10 +1326,10 @@ Directory structure (symbolic links point to actual source files):</p>
 </section>
 </section>
 <section id="compiling-application">
-<h4>3.3 Compiling Application<a class="headerlink" href="#compiling-application" title="Link to this heading"></a></h4>
+<h3>3.3 Compiling Application<a class="headerlink" href="#compiling-application" title="Link to this heading"></a></h3>
 <p>This chapter explains how to install the cross-compilation toolchain and compile custom applications, which is applicable for scenarios where you need to deploy your own business code to the development board.</p>
 <section id="installing-cross-compilation-toolchain">
-<h5>3.3.1 Installing Cross-compilation Toolchain<a class="headerlink" href="#installing-cross-compilation-toolchain" title="Link to this heading"></a></h5>
+<h4>3.3.1 Installing Cross-compilation Toolchain<a class="headerlink" href="#installing-cross-compilation-toolchain" title="Link to this heading"></a></h4>
 <p>Navigate to the home directory of your compilation environment and obtain thecross-compilation toolchain using the following command:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>wget &#39;https://github.com/FLembedded/buildroot_dl/releases/download/buildroot_sdk/buildroot-sdk.tar.gz&#39;
 </pre></div>
@@ -1193,7 +1344,7 @@ Directory structure (symbolic links point to actual source files):</p>
 </div>
 </section>
 <section id="compiling-the-application">
-<h5>3.3.2 Compiling the Application<a class="headerlink" href="#compiling-the-application" title="Link to this heading"></a></h5>
+<h4>3.3.2 Compiling the Application<a class="headerlink" href="#compiling-the-application" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Add the cross-compiler to your PATH:</p></li>
 </ul>
@@ -1248,17 +1399,17 @@ Watchdog Ticking Away!
 </section>
 </section>
 <section id="application-development">
-<h2>Application Development<a class="headerlink" href="#application-development" title="Link to this heading"></a></h2>
+<h1>Application Development<a class="headerlink" href="#application-development" title="Link to this heading"></a></h1>
 <section id="peripheral-access">
-<h3>Peripheral Access<a class="headerlink" href="#peripheral-access" title="Link to this heading"></a></h3>
+<h2>Peripheral Access<a class="headerlink" href="#peripheral-access" title="Link to this heading"></a></h2>
 <section id="g-5g">
-<h4>4G/5G<a class="headerlink" href="#g-5g" title="Link to this heading"></a></h4>
+<h3>4G/5G<a class="headerlink" href="#g-5g" title="Link to this heading"></a></h3>
 <p>The OK3588 supports 4G and 5G modules (4G is EM05-CE, and 5G is RM500U).</p>
 <p><strong>⚠️Note: The following test is based on the SIM card and module in China, and you need to configure it according to your local network mode.</strong></p>
 <p>The location of the 4G/5G module and SIM card.
 <img alt="Image" src="_images/1776824189000_2e7b00bd_af9b_4d9f_b785_8ef0f06ab008.png" /></p>
 <section id="g">
-<h5>1. 4G<a class="headerlink" href="#g" title="Link to this heading"></a></h5>
+<h4>1. 4G<a class="headerlink" href="#g" title="Link to this heading"></a></h4>
 <p>Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</p>
 <p><img alt="Image" src="_images/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png" /></p>
 <p>Once the module is connected and both the development board and the module are powered on, you can view the USB status using the lsusb command.</p>
@@ -1327,7 +1478,7 @@ rtt min/avg/max/mdev = 81.694/197.930/312.431/94.205 ms
 </div>
 </section>
 <section id="id2">
-<h5>2. 5G<a class="headerlink" href="#id2" title="Link to this heading"></a></h5>
+<h4>2. 5G<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
 <p>Connect the 5G module RM500U and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.</p>
 <p><img alt="Image" src="_images/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png" /></p>
 <ul class="simple">
@@ -1441,9 +1592,9 @@ PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes
 </section>
 </section>
 <section id="adc">
-<h4>ADC<a class="headerlink" href="#adc" title="Link to this heading"></a></h4>
+<h3>ADC<a class="headerlink" href="#adc" title="Link to this heading"></a></h3>
 <section id="id3">
-<h5>1. Introduction<a class="headerlink" href="#id3" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
 <p>An ADC (analog-to-digital converter) is an electronic device or circuit that converts a continuous analog signal into a discrete digital signal.</p>
 <p>There are 8 x built-in ADC. Among them, saradc2, saradc4, saradc5, saradc6, and saradc7 are led out from the carrier board connectors, while the saradc1 channel is used for the ADC key detection circuit.</p>
 <p>5 x ADC and the ADC keys on the board:
@@ -1452,7 +1603,7 @@ PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes
 <p>The source code location of the ADC key driver in the kernel:<code class="docutils literal notranslate"><span class="pre">drivers/input/keyboard/adc-keys.c</span></code>.</p>
 </section>
 <section id="device-tree">
-<h5>2. Device Tree<a class="headerlink" href="#device-tree" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#device-tree" title="Link to this heading"></a></h4>
 <p>The ADC device tree definitions are located in: <code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>	saradc: saradc@fec10000 {
 		compatible = &quot;rockchip,rk3588-saradc&quot;;
@@ -1512,9 +1663,9 @@ PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes
 </div>
 </section>
 <section id="application">
-<h5>3. Application<a class="headerlink" href="#application" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#application" title="Link to this heading"></a></h4>
 <section id="voltage-input-test">
-<h6>3.1 Voltage Input Test<a class="headerlink" href="#voltage-input-test" title="Link to this heading"></a></h6>
+<h5>3.1 Voltage Input Test<a class="headerlink" href="#voltage-input-test" title="Link to this heading"></a></h5>
 <p>Select saradc2 for testing. The ADC pin hardware schematic is as follows. The chip currently uses a 1.8V reference voltage, corresponding to a 12-bit ADC maximum value of 4095.</p>
 <p><img alt="Image" src="_images/1773026170298_487ba0df_510f_411f_ac20_e43c19c63500.png" /></p>
 <p>Short-circuit pin 1 of connector P12 and pin 2 of connector P13, then read the value of saradc2:</p>
@@ -1530,7 +1681,7 @@ root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 </div>
 </section>
 <section id="adc-key-test">
-<h6>3.2 ADC Key Test<a class="headerlink" href="#adc-key-test" title="Link to this heading"></a></h6>
+<h5>3.2 ADC Key Test<a class="headerlink" href="#adc-key-test" title="Link to this heading"></a></h5>
 <p>The saradc1 channel is utilized for the ADC key detection circuit, which operates on a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, leading to different voltages being read by the ADC. The program determines specific keys by evaluating the voltage ranges. This principle is illustrated in the diagram below:</p>
 <p><img alt="Image" src="_images/1774233416305_199112cd_eb5b_4be6_91cd_a54e14476846.png" /></p>
 <p>Use the<code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>command-line tool for key testing. Currently,<code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>supports testing the four keys on the baseboard: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:</p>
@@ -1553,7 +1704,7 @@ key158 Released
 <p><code class="docutils literal notranslate"><span class="pre">fltest_keytest</span></code>ource code path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/app/forlinx/forlinx_cmd/fltest_keytest</span></code></p>
 </section>
 <section id="application-programming">
-<h6>3.3 Application Programming<a class="headerlink" href="#application-programming" title="Link to this heading"></a></h6>
+<h5>3.3 Application Programming<a class="headerlink" href="#application-programming" title="Link to this heading"></a></h5>
 <p>In the OK3588, the input event node for ADC keys is located at /dev/input/eventX (where X is the specific device number). Applications must include the header file &lt;linux/input.h&gt;, which defines the structures and macros related to input events.</p>
 <p>The core data structure struct input_event is defined as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>struct input_event {
@@ -1641,9 +1792,9 @@ if(keys_fd&lt;=0)
 </section>
 </section>
 <section id="ethernet">
-<h4>Ethernet<a class="headerlink" href="#ethernet" title="Link to this heading"></a></h4>
+<h3>Ethernet<a class="headerlink" href="#ethernet" title="Link to this heading"></a></h3>
 <section id="id4">
-<h5>1. Introduction<a class="headerlink" href="#id4" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <p>The OK3588-C board is equipped with two Gigabit Ethernet ports. With an Ethernet cable connected, the factory default configuration sets eth0 to a static IP, while eth1 is not configured. Both network ports use theRTL8211FSI PHY chip. The driver source code is located within the kernel:<code class="docutils literal notranslate"><span class="pre">drivers/net/ethernet/stmicro/stmmac</span></code>.</p>
 <p>The wired network interface locations on the board are as follows:
 <img alt="Image" src="_images/1776415337495_05b56216_1f93_407f_98c7_894864b47cd5.png" /></p>
@@ -1681,7 +1832,7 @@ if(keys_fd&lt;=0)
 <p>OK3588-C uses config1.</p>
 </section>
 <section id="id5">
-<h5>2. Device Tree<a class="headerlink" href="#id5" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <p>The device tree nodes for the OK3588-C network are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&amp;mdio0 {
 	rgmii_phy0: phy@1 {
@@ -1750,9 +1901,9 @@ if(keys_fd&lt;=0)
 <p>The device tree nodes for the OK3588S2-C network are located at: <code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
 </section>
 <section id="id6">
-<h5>3. Application<a class="headerlink" href="#id6" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <section id="modifying-ip-address">
-<h6>3.1 Modifying IP Address<a class="headerlink" href="#modifying-ip-address" title="Link to this heading"></a></h6>
+<h5>3.1 Modifying IP Address<a class="headerlink" href="#modifying-ip-address" title="Link to this heading"></a></h5>
 <p><strong>3.1.1 DHCPC IP</strong></p>
 <p>Modify the following configuration file to set eth0 to obtain the IP automatically:<code class="docutils literal notranslate"><span class="pre">/etc/systemd/network/10-eth0.network</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# vi /etc/systemd/network/10-eth0.network   	  //Open the configuration file
@@ -1789,7 +1940,7 @@ DNS=114.114.114.114
 </div>
 </section>
 <section id="network-status">
-<h6>3.2 Network Status<a class="headerlink" href="#network-status" title="Link to this heading"></a></h6>
+<h5>3.2 Network Status<a class="headerlink" href="#network-status" title="Link to this heading"></a></h5>
 <p>Connect the network cable to the ETH0 port of the board before the test.</p>
 <p><strong>3.2.1 Ifconfig</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">ifconfig</span></code>is a classic Network Interface Configuration and Viewing Tools.</p>
@@ -1856,7 +2007,7 @@ Settings for eth0:
 </div>
 </section>
 <section id="network-connectivity">
-<h6>3.3 Network Connectivity<a class="headerlink" href="#network-connectivity" title="Link to this heading"></a></h6>
+<h5>3.3 Network Connectivity<a class="headerlink" href="#network-connectivity" title="Link to this heading"></a></h5>
 <p><strong>3.3.1 Ping</strong></p>
 <p>Configure the network IP according to your actual network conditions. Network connectivity can be tested using the ping command (it’s necessary to ping an IP within the same subnet).</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# ping 192.168.0.100
@@ -1907,29 +2058,19 @@ iperf Done.
 <p>The OK3588 development board supports SFTP services, which are enabled automatically upon startup. Once the IP address is configured, the board can be used as an SFTP server. The following describes how to utilize the FTP tool for file transfer.</p>
 <p>Install the file Zilla tool on windows and follow the steps shown in the figure below. The user name and password are forlinx.</p>
 <p>Open the filezilla tool, click File, and select Site Manager.</p>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-23-14.png" /></p>
+<p><img alt="Image" src="_images/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png" /></p>
 <p><strong>⚠️Note</strong>: <strong>FileZilla is provided as a compressed package, and the initial language may be Chinese. You can download FileZilla yourself, or after unzipping it, follow the steps below to change the language to English.</strong></p>
 <ul class="simple">
 <li><p>Click the second “Edit” option in the navigation bar to open the drop-down menu and select the Settings option;</p></li>
-</ul>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-01-58.png" /></p>
-<ul class="simple">
 <li><p>Enter the Settings interface, select the Language option in the left navigation bar, then choose the corresponding language on the right side. In the illustration, select English(en_US);</p></li>
-</ul>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-03-55.png" /></p>
-<ul class="simple">
 <li><p>After selecting the language, the change will take effect only after restarting FileZilla. Click OK and restart FileZilla;</p></li>
-</ul>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-04-40.png" /></p>
-<ul class="simple">
 <li><p>After restarting, the interface will switch to English.</p></li>
 </ul>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-16-29.png" /></p>
 </section>
 </section>
 </section>
 <section id="frequency">
-<h4>Frequency<a class="headerlink" href="#frequency" title="Link to this heading"></a></h4>
+<h3>Frequency<a class="headerlink" href="#frequency" title="Link to this heading"></a></h3>
 <p>The RK3588 uses a small and large core architecture and integrates four Cortex-A55 (small cores) and four Cortex-A76 (large cores).</p>
 <table class="docutils align-default">
 <thead>
@@ -1989,18 +2130,18 @@ root@OK3588-C-buildroot:~# echo 1800000 &gt; /sys/devices/system/cpu/cpu4/cpufre
 <p><strong>⚠️Note</strong>: <strong>The small core frequency cannot be lower than the large core frequency.</strong></p>
 </section>
 <section id="gpio">
-<h4>GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h4>
+<h3>GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
 <section id="id7">
-<h5>1. Introduction<a class="headerlink" href="#id7" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>GPIO (General-Purpose Input/Output) is a general-purpose digital signal pin on microcontrollers or SoCs, whose function can be flexibly configured by software at runtime to interact with external devices via simple digital signals.</p>
 <p>The extended I/O pins are led out from the carrier board, located on P11.
 <img alt="Image" src="_images/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png" /></p>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_17-10-56.png" /></p>
+<p><img alt="Image" src="_images/1718954759014_d61c0905_7a0e_46a2_81b5_ba7ccfc72c9c.png" /></p>
 </section>
 <section id="id8">
-<h5>2. Device Tree<a class="headerlink" href="#id8" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <section id="native-gpio">
-<h6>2.1 Native GPIO<a class="headerlink" href="#native-gpio" title="Link to this heading"></a></h6>
+<h5>2.1 Native GPIO<a class="headerlink" href="#native-gpio" title="Link to this heading"></a></h5>
 <p>The device tree node for native GPIO is located at <code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code>.</p>
 <p>Take gpio3 as an example:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>gpio3: gpio@fec40000 {
@@ -2049,7 +2190,7 @@ gt9xx_dsi0: gt9xx@14 {
 <p><strong>pinctrl node</strong>：&lt;3 RK_PB7 RK_FUNC_GPIO &amp;pcfg_pull_none&gt; indicates that GPIO3_B7 is configured for I/O functionality.</p>
 </section>
 <section id="extend-gpio">
-<h6>2.2 Extend GPIO<a class="headerlink" href="#extend-gpio" title="Link to this heading"></a></h6>
+<h5>2.2 Extend GPIO<a class="headerlink" href="#extend-gpio" title="Link to this heading"></a></h5>
 <p>The OK3588-C carrier board features a TCA6424 chip acting as an I/O expander, which provides an additional 24 x general-purpose input/output pins via the I²C bus to address the issue of insufficient GPIO pins on the host controller (such as a CPU or MCU).</p>
 <p>The device tree nodes for the GPIO expansion are located at:</p>
 <p>OK3588-C/3588-C2 ：<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code></p>
@@ -2076,13 +2217,13 @@ gt9xx_dsi0: gt9xx@14 {
 </section>
 </section>
 <section id="id9">
-<h5>3. Application<a class="headerlink" href="#id9" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
 <p>Please refer to the PinMUX table for the usage of the GPIO pins.</p>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>).</p>
 <p>Select the “OK3588-C/C2” or “OK3588S2-C” page according to the model no., then go to “Hardware Resources” -&gt; “DOCUMENTS” -&gt; “PinMUX” to view the pin multiplexing configuration.</p>
 <p><img alt="Image" src="_images/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png" /></p>
 <section id="id10">
-<h6>3.1 Native GPIO<a class="headerlink" href="#id10" title="Link to this heading"></a></h6>
+<h5>3.1 Native GPIO<a class="headerlink" href="#id10" title="Link to this heading"></a></h5>
 <p><strong>3.1.1 Pin Calculation Method</strong></p>
 <p>RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.</p>
 <p>The naming convention for GPIOs is GPIOn_xy, where x can be A, B, C, or D. In the GPIO numbering calculation, A corresponds to 1, B to 2, C to 3, and D to 4.</p>
@@ -2103,7 +2244,7 @@ User:/usr/bin/fltest_gpio.sh GPIO3_A7 1
 </div>
 </section>
 <section id="extended-gpio">
-<h6><strong>3.2 Extended GPIO</strong><a class="headerlink" href="#extended-gpio" title="Link to this heading"></a></h6>
+<h5><strong>3.2 Extended GPIO</strong><a class="headerlink" href="#extended-gpio" title="Link to this heading"></a></h5>
 <p>The extended IOs belong to bank chip6, with a numbering range of 485 to 508.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# cat /sys/kernel/debug/gpio | grep i2c
 gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:	
@@ -2121,13 +2262,13 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 </section>
 </section>
 <section id="i2c">
-<h4>I2C<a class="headerlink" href="#i2c" title="Link to this heading"></a></h4>
+<h3>I2C<a class="headerlink" href="#i2c" title="Link to this heading"></a></h3>
 <section id="id11">
-<h5>1. Introduction<a class="headerlink" href="#id11" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
 <p>The Rockchip series of chips offers a standard I2C bus, enabling control and access to various external devices. The I2C controller transfers data between connected devices through serial data (SDA) and serial clock (SCL) lines. Each device has a unique address—whether it is a microcontroller (MCU), LCD driver, memory, or keyboard interface—and can function as a transmitter or receiver depending on its design.</p>
 </section>
 <section id="id12">
-<h5>2. Device Tree<a class="headerlink" href="#id12" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id12" title="Link to this heading"></a></h4>
 <p>Device Tree Node Path for I2C:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>	i2c7: i2c@fec90000 {
 		compatible = &quot;rockchip,rk3588-i2c&quot;, &quot;rockchip,rk3399-i2c&quot;;
@@ -2167,10 +2308,10 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 </div>
 </section>
 <section id="id13">
-<h5>3. Application<a class="headerlink" href="#id13" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id13" title="Link to this heading"></a></h4>
 <p>I2C tools (commonly written as i2c-tools) is a toolkit specifically designed for debugging I2C (Inter-Integrated Circuit) buses and peripherals in Linux environments. It includes a set of command-line tools that allow you to directly communicate with I2C devices in user space, eliminating the need to write and compile driver code for each test.</p>
 <section id="i2cdetect">
-<h6>3.1 i2cdetect<a class="headerlink" href="#i2cdetect" title="Link to this heading"></a></h6>
+<h5>3.1 i2cdetect<a class="headerlink" href="#i2cdetect" title="Link to this heading"></a></h5>
 <p>Scan the I2C bus and detects connected device addresses, displaying them in a table format. <code class="docutils literal notranslate"><span class="pre">--</span></code>：No device present.<code class="docutils literal notranslate"><span class="pre">UU</span></code>:The address is occupied by a kernel driver; for example, to view devices on the I2C5 bus:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# i2cdetect -y 5
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -2187,7 +2328,7 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 <p>If you wish to manually operate a device using tools like i2cget or i2cset, you may first need to unload the corresponding kernel driver, or use the -f option to force access (this carries some risk).</p>
 </section>
 <section id="i2cget">
-<h6>3.2 i2cget<a class="headerlink" href="#i2cget" title="Link to this heading"></a></h6>
+<h5>3.2 i2cget<a class="headerlink" href="#i2cget" title="Link to this heading"></a></h5>
 <p>Reads an 8-bit value from a single register of a specified device.</p>
 <p>Example: Read the value from register 0x10 of the device at address 0x50 on bus 1.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>i2cget -y 1 0x50 0x10
@@ -2196,7 +2337,7 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 <p><strong>⚠️Note: This specific I2C device is not present on the OK3588-C board. This section only demonstrates the command usage.</strong></p>
 </section>
 <section id="i2cset">
-<h6>3.3 I2cset<a class="headerlink" href="#i2cset" title="Link to this heading"></a></h6>
+<h5>3.3 I2cset<a class="headerlink" href="#i2cset" title="Link to this heading"></a></h5>
 <p>Write a value to a single register of a specified device.</p>
 <p>Example: Write the value 0xAB to register 0x10 of the device at address 0x50 on bus 1.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>i2cset -y 1 0x50 0x10 0xAB
@@ -2207,9 +2348,9 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 </section>
 </section>
 <section id="mmc">
-<h4>MMC<a class="headerlink" href="#mmc" title="Link to this heading"></a></h4>
+<h3>MMC<a class="headerlink" href="#mmc" title="Link to this heading"></a></h3>
 <section id="id14">
-<h5>1. Introduction<a class="headerlink" href="#id14" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id14" title="Link to this heading"></a></h4>
 <p>The on-board eMMC storage chip on the OK3588 platform is connected to a dedicated high-speed SDHCI bus. Its features are as follows:</p>
 <table class="docutils align-default">
 <thead>
@@ -2261,7 +2402,7 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 <p>The location of the driver source code in the kernel:<code class="docutils literal notranslate"><span class="pre">drivers/mmc/host/dw_mmc-rockchip.c</span></code></p>
 </section>
 <section id="id15">
-<h5>2. Device Tree<a class="headerlink" href="#id15" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id15" title="Link to this heading"></a></h4>
 <p>Device tree configuration for the eMMC interface can be found here:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>sdhci: mmc@fe2e0000 {
     compatible = &quot;rockchip,rk3588-dwcmshc&quot;, &quot;rockchip,dwcmshc-sdhci&quot;;
@@ -2300,9 +2441,9 @@ gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:
 </div>
 </section>
 <section id="id16">
-<h5>3. Application<a class="headerlink" href="#id16" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id16" title="Link to this heading"></a></h4>
 <section id="extended-csd-register">
-<h6>3.1 Extended CSD Register<a class="headerlink" href="#extended-csd-register" title="Link to this heading"></a></h6>
+<h5>3.1 Extended CSD Register<a class="headerlink" href="#extended-csd-register" title="Link to this heading"></a></h5>
 <p>eMMC devices have an extensive amount of extra information and settings that are available via the Extended CSD registers. For a detailed list of the registers, please see manufacture datasheets.</p>
 <p>In the Linux userspace, you can query the registers and see:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# mmc extcsd read /dev/mmcblk0
@@ -2317,7 +2458,7 @@ HPI Features [HPI_FEATURE: 0x01]: implementation based on CMD13
 </div>
 </section>
 <section id="resizing-ext4-root-filesystem">
-<h6>3.2 Resizing Ext4 Root Filesystem<a class="headerlink" href="#resizing-ext4-root-filesystem" title="Link to this heading"></a></h6>
+<h5>3.2 Resizing Ext4 Root Filesystem<a class="headerlink" href="#resizing-ext4-root-filesystem" title="Link to this heading"></a></h5>
 <p>By default, the standard system images for the OK3588 platform automatically expand the root filesystem (rootfs) partition to its maximum capacity on the eMMC, and the filesystem is resized accordingly. Therefore, manual resizing is typically unnecessary when using the default firmware.</p>
 <p>This section aims to describe the process for resizing an ext4 root filesystem. If you flash a custom rootfs image that has not been expanded during development, or if you manually modify the underlying partition table, you can follow the standard procedures outlined below to adjust the filesystem size and fully utilize any remaining storage space.</p>
 <ul class="simple">
@@ -2340,9 +2481,9 @@ HPI Features [HPI_FEATURE: 0x01]: implementation based on CMD13
 </section>
 </section>
 <section id="pcle">
-<h4>PCle<a class="headerlink" href="#pcle" title="Link to this heading"></a></h4>
+<h3>PCle<a class="headerlink" href="#pcle" title="Link to this heading"></a></h3>
 <section id="id17">
-<h5>1. Introduction<a class="headerlink" href="#id17" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
 <p>PCIe (Peripheral Component Interconnect Express) is a high-speed serial computer expansion bus standard used to connect the motherboard to high-performance external devices.</p>
 <p>The OK3588-C board features 1 x PCIe 2.0 x1 and 1 x PCIe 3.0 x4 interface, as shown in the figure below.
 <img alt="Image" src="_images/1776413262533_6f5353cb_b41b_4c42_abb6_d98ea64e4e9d.png" /></p>
@@ -2351,7 +2492,7 @@ HPI Features [HPI_FEATURE: 0x01]: implementation based on CMD13
 <p>PCIe driver source code location in the kernel:<code class="docutils literal notranslate"><span class="pre">drivers/pci/controller/pcie-rockchip.c</span></code>.</p>
 </section>
 <section id="id18">
-<h5>2. Device Tree<a class="headerlink" href="#id18" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id18" title="Link to this heading"></a></h4>
 <p>OK3588-C/3588-C2 PCIe device tree node location:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>// Fixed regulator for PCIe 3.0 3.3V power supply
 vcc3v3_pcie30: vcc3v3_pcie30 {
@@ -2416,7 +2557,7 @@ vcc3v3_pcie20: vcc3v3-pcie20 {
 <p>⚠️<strong>Note</strong>: <strong>The WiFi module uses a PCIe interface.</strong></p>
 </section>
 <section id="id19">
-<h5>3. Application<a class="headerlink" href="#id19" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id19" title="Link to this heading"></a></h4>
 <p>Before powering on the system, insert the PCIe module into the PCIe slot on the carrier board. After power-on and startup, the successful enumeration of the corresponding device (ZHITAI TiPro5000 NVMe SSD) can be observed through<code class="docutils literal notranslate"><span class="pre">lspci</span></code>commands.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# lspci
 0002:20:00.0 PCI bridge: Rockchip Electronics Co., Ltd RK3588 (rev 01)
@@ -2452,15 +2593,15 @@ nvme0n1p1
 </section>
 </section>
 <section id="pwm">
-<h4>PWM<a class="headerlink" href="#pwm" title="Link to this heading"></a></h4>
+<h3>PWM<a class="headerlink" href="#pwm" title="Link to this heading"></a></h3>
 <section id="id20">
-<h5>1. Introduction<a class="headerlink" href="#id20" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id20" title="Link to this heading"></a></h4>
 <p>PWM is the abbreviation for Pulse Width Modulation. It is a technology that uses a digital signal (high and low levels) to produce analog-like effects. The core idea is to control the average output voltage or power by varying the proportion of time the signal stays high within a fixed period (i.e., the duty cycle).</p>
 <p>There are four PMW on OK3588-C, they are pwm2, pwm4, and pwm5 and pwm6. Where pwm4, pwm5, and pwm6 are used for backlight control of EDP, dsi0, and dsi1, respectively, and pwm2 is used for fan control.</p>
 <p>Location of the backlight driver source code in the kernel:<code class="docutils literal notranslate"><span class="pre">drivers/video/backlight/pwm_bl.c</span></code>.</p>
 </section>
 <section id="id21">
-<h5>2. Device Tree<a class="headerlink" href="#id21" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id21" title="Link to this heading"></a></h4>
 <p>Location of OK3588-C/3588-C2 PMW device tree node:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&amp;pwm2 { //FAN
 	status = &quot;okay&quot;;
@@ -2495,9 +2636,9 @@ backlight_dsi0: backlight-dsi0 {
 <p>Location of OK3588S2-C PWM device tree node:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
 </section>
 <section id="id22">
-<h5>3. Application<a class="headerlink" href="#id22" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id22" title="Link to this heading"></a></h4>
 <section id="screen-backlight-control">
-<h6>3.1 Screen Backlight Control<a class="headerlink" href="#screen-backlight-control" title="Link to this heading"></a></h6>
+<h5>3.1 Screen Backlight Control<a class="headerlink" href="#screen-backlight-control" title="Link to this heading"></a></h5>
 <p>The backlight brightness setting range is (0-255), where 255 represents the highest brightness and 0 indicates the backlight is turned off. After connecting an MIPI screen to the MIPI DSI0 interface and powering on,</p>
 <p>use the following command to view all backlight devices:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# ls /sys/class/backlight/
@@ -2521,9 +2662,9 @@ backlight-dsi0  backlight-dsi1  backlight-edp1
 </section>
 </section>
 <section id="rtc">
-<h4>RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h4>
+<h3>RTC<a class="headerlink" href="#rtc" title="Link to this heading"></a></h3>
 <section id="id23">
-<h5>1. Introduction<a class="headerlink" href="#id23" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id23" title="Link to this heading"></a></h4>
 <p>RTC (Real-Time Clock) is a critical component that ensures the system maintains an accurate time reference, and it is widely used in fields such as IoT devices, industrial control, consumer electronics, and automotive electronics.</p>
 <p>The OK3588 utilizes the PCF8563 real-time clock module. The chip connects to the main processor via I2C5, with a device address of 0x51.</p>
 <p>Schematic: The RTC schematic is as shown below:</p>
@@ -2531,7 +2672,7 @@ backlight-dsi0  backlight-dsi1  backlight-edp1
 <p>Driver Location: The RTC driver source code is located within the kernel at the specified path.<code class="docutils literal notranslate"><span class="pre">drivers/rtc/rtc-pcf8563.c</span></code>.</p>
 </section>
 <section id="id24">
-<h5>2. Device Tree<a class="headerlink" href="#id24" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id24" title="Link to this heading"></a></h4>
 <p>The PCF8563 is on I2C5, so its device tree node is placed under the i2c5 node.</p>
 <p>Path for OK3588-C/3588-C2: Refer to the specified device tree path<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <p>Path for OK3588S2-C: Refer to the specified device tree path<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
@@ -2551,7 +2692,7 @@ backlight-dsi0  backlight-dsi1  backlight-edp1
 <p><strong>⚠️Note: If a custom carrier board connects the RTC chip to a different I2C bus, the node must be moved under the corresponding I2C bus node in the device tree, ensuring the<code class="docutils literal notranslate"><span class="pre">rtc:</span> <span class="pre">pcf8563&#64;51</span></code>I2C address matches the hardware design.</strong></p>
 </section>
 <section id="id25">
-<h5>3. Application<a class="headerlink" href="#id25" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id25" title="Link to this heading"></a></h4>
 <p>Before RTC testing, ensure a coin cell battery is installed on the board and its voltage is normal. Testing primarily involves using the<code class="docutils literal notranslate"><span class="pre">date</span></code>date and<code class="docutils literal notranslate"><span class="pre">hwclock</span></code>tools to set system/RTC time and verify that the system clock reads the RTC clock correctly after a power cycle.</p>
 <p>Set the system time:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# date -s &quot;2025-10-27 10:05:02&quot;
@@ -2575,15 +2716,15 @@ Mon Oct 27 10:06:01 CST 2025
 </section>
 </section>
 <section id="sd-card">
-<h4>SD Card<a class="headerlink" href="#sd-card" title="Link to this heading"></a></h4>
+<h3>SD Card<a class="headerlink" href="#sd-card" title="Link to this heading"></a></h3>
 <section id="id26">
-<h5>1. Introduction<a class="headerlink" href="#id26" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id26" title="Link to this heading"></a></h4>
 <p>There is one TF (Micro SD) card slot on the OK3588-C development board using the RK3588 SDMMC controller interface for external removable storage. This interface supports hot-plug. After insertion, the SD card is managed as a standard block device. Location of TF Card Port:
 <img alt="Image" src="_images/1776583628115_fe45da11_8823_4fd3_9389_0b642243eb07.png" /></p>
 <p><strong>⚠️Note: Although hot-plug is hardware supported, you must unmount the device using umount before physically removing the SD card to prevent data loss or filesystem corruption.</strong></p>
 <p>Location of driver source code<code class="docutils literal notranslate"><span class="pre">drivers/mmc/host/dw_mmc-rockchip.c</span></code>.</p>
 <section id="device-node-mount-path">
-<h6>1.1 Device Node &amp; Mount Path<a class="headerlink" href="#device-node-mount-path" title="Link to this heading"></a></h6>
+<h5>1.1 Device Node &amp; Mount Path<a class="headerlink" href="#device-node-mount-path" title="Link to this heading"></a></h5>
 <p>After inserting the card, the kernel generates corresponding device nodes in <code class="docutils literal notranslate"><span class="pre">/dev</span></code> . The entire SD card can be accessed via the <code class="docutils literal notranslate"><span class="pre">/dev/mmcblk1</span></code> device node. Its partitions will appear as:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>/dev/mmcblk1p&lt;Y&gt;
 </pre></div>
@@ -2592,7 +2733,7 @@ Mon Oct 27 10:06:01 CST 2025
 <p>The default mount path is:<code class="docutils literal notranslate"><span class="pre">/run/media/mmcblk1p1</span></code>。</p>
 </section>
 <section id="actual-configuration">
-<h6>1.2 Actual Configuration<a class="headerlink" href="#actual-configuration" title="Link to this heading"></a></h6>
+<h5>1.2 Actual Configuration<a class="headerlink" href="#actual-configuration" title="Link to this heading"></a></h5>
 <p>Actual configuration parameters of OK3588-C development board SD Card:</p>
 <table class="docutils align-default">
 <thead>
@@ -2624,7 +2765,7 @@ Mon Oct 27 10:06:01 CST 2025
 </section>
 </section>
 <section id="id27">
-<h5>2. Device Tree<a class="headerlink" href="#id27" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id27" title="Link to this heading"></a></h4>
 <p>Location of OK3588-C/3588-C2 SD Card device tree node:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <p>Location of OK3588-C SD Card device tree node: <code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&amp;sdmmc {
@@ -2678,7 +2819,7 @@ Mon Oct 27 10:06:01 CST 2025
 </table>
 </section>
 <section id="id28">
-<h5>3. Application<a class="headerlink" href="#id28" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id28" title="Link to this heading"></a></h4>
 <p>The mounting node of the TF card is<code class="docutils literal notranslate"><span class="pre">/run/media/mmcblk1p1</span></code>, supporting hot plug, you can use the DD command to test the read and write speed of TF card.</p>
 <p>Write test:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/mmcblk1p1/test bs=1M count=500 conv=fsync
@@ -2702,12 +2843,12 @@ Mon Oct 27 10:06:01 CST 2025
 </section>
 </section>
 <section id="system-suspend">
-<h4>System Suspend<a class="headerlink" href="#system-suspend" title="Link to this heading"></a></h4>
+<h3>System Suspend<a class="headerlink" href="#system-suspend" title="Link to this heading"></a></h3>
 <section id="id29">
-<h5>1. Introduction<a class="headerlink" href="#id29" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id29" title="Link to this heading"></a></h4>
 <p>The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD _ arm/VDD _ log, and configuring the wake-up source.</p>
 <p>Key positions are as follows:</p>
-<p><img alt="Image" src="images/OK3588-C_Linux_Buildroot_User_Manual/transparent_final.png" /></p>
+<p><img alt="Image" src="_images/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png" /></p>
 <p>The driver files related to system standby are:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>kernel-6.1/drivers/soc/rockchip/rockchip_pm_config.c
 kernel-6.1/drivers/firmware/rockchip_sip.c
@@ -2716,7 +2857,7 @@ kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 </div>
 </section>
 <section id="id30">
-<h5>2. Device Tree<a class="headerlink" href="#id30" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id30" title="Link to this heading"></a></h4>
 <p>The system standby device tree node is located at:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rockchip_suspend: rockchip-suspend {
 	compatible = &quot;rockchip,pm-rk3588&quot;;
@@ -2743,7 +2884,7 @@ kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 </pre></div>
 </div>
 <section id="general-configuration">
-<h6>2.1 General Configuration<a class="headerlink" href="#general-configuration" title="Link to this heading"></a></h6>
+<h5>2.1 General Configuration<a class="headerlink" href="#general-configuration" title="Link to this heading"></a></h5>
 <p>The following<code class="docutils literal notranslate"><span class="pre">rockchip,sleep-mode-config</span></code>can be added:</p>
 <table class="docutils align-default">
 <thead>
@@ -2775,7 +2916,7 @@ kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 <p>The relevant configurations must be set based on the specific product wake-up source requirements. For example, if USB wake-up is required, the USB power and clock cannot be turned off during standby. Therefore, options such as RKPM_SLP_ARMOFF_LOGOFF, RKPM_SLP_PMU_DIS_OSC, and RKPM_SLP_PMU_PMUALIVE_32K should not be configured.</p>
 </section>
 <section id="wake-up-configuration">
-<h6>2.2 Wake-up Configuration<a class="headerlink" href="#wake-up-configuration" title="Link to this heading"></a></h6>
+<h5>2.2 Wake-up Configuration<a class="headerlink" href="#wake-up-configuration" title="Link to this heading"></a></h5>
 <p><code class="docutils literal notranslate"><span class="pre">rockchip,wakeup-config</span></code>The following configurations can be added:</p>
 <table class="docutils align-default">
 <thead>
@@ -2819,7 +2960,7 @@ kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 <p><strong>This mode uses the internal timer of the PMU for wake-up. It generates an interrupt after a default timeout of 1 second and is generally used only during the development phase for testing sleep/wake functionality.</strong></p>
 </section>
 <section id="io-retention-configuration">
-<h6>2.3 IO Retention Configuration<a class="headerlink" href="#io-retention-configuration" title="Link to this heading"></a></h6>
+<h5>2.3 IO Retention Configuration<a class="headerlink" href="#io-retention-configuration" title="Link to this heading"></a></h5>
 <p>In sleep scenarios where vdd_logic is powered off, if you still wish to maintain the level of a specific IO, this attribute can be configured. Configuration:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>rockchip,sleep-io-ret-config = &lt; (0
  | RKPM_VCCIO1_RET_EN
@@ -2843,7 +2984,7 @@ kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 <p><strong>⚠️Note: When you want to maintain the level of an IO, it is necessary to configure the IO domain to which that IO belongs. The power supply for that IO domain must not be cut off; otherwise, the level cannot be maintained.</strong></p>
 </section>
 <section id="enabling-the-node">
-<h6><strong>2.3 Enabling the Node</strong><a class="headerlink" href="#enabling-the-node" title="Link to this heading"></a></h6>
+<h5><strong>2.3 Enabling the Node</strong><a class="headerlink" href="#enabling-the-node" title="Link to this heading"></a></h5>
 <p><code class="docutils literal notranslate"><span class="pre">rockchip_suspend</span></code>The node is disabled by default. Please enable it in the corresponding Device Tree.</p>
 <p>The system standby Device Tree node for OK3588-C / 3588-C2 is located at:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&amp;rockchip_suspend {
@@ -2856,7 +2997,7 @@ kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 </section>
 </section>
 <section id="id31">
-<h5>3. Application<a class="headerlink" href="#id31" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id31" title="Link to this heading"></a></h4>
 <p>Short press PWRON, you can see:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>INFO:    BL31: v2.3():v2.3-942-g98eaeb2f3:derrick.huang, fwver: v1.53
 INFO:    enter: cfg=0x1000608, sleeptimes:2
@@ -2984,9 +3125,9 @@ I/TC: Secondary CPU 7 switching to normal world boot
 </section>
 </section>
 <section id="type-c">
-<h4>Type-C<a class="headerlink" href="#type-c" title="Link to this heading"></a></h4>
+<h3>Type-C<a class="headerlink" href="#type-c" title="Link to this heading"></a></h3>
 <section id="id32">
-<h5>1. Introduction<a class="headerlink" href="#id32" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id32" title="Link to this heading"></a></h4>
 <p>OK3588-C features two Type-C interfaces and supports DP display. Type-C0 supports automatic recognition of HOST/DEVICE mode.</p>
 <p>Type-C1 supports HOST mode only.</p>
 <p>In Host mode, you can connect standard USB devices. In Device mode, it can be used for flashing firmware, ADB file transfer, and debugging.</p>
@@ -3048,7 +3189,7 @@ I/TC: Secondary CPU 7 switching to normal world boot
 <p>For detailed usage information on the USB interfaces of the RK3588, please refer to the following documents:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/docs/rk3588/en/Common/USB/Rockchip_Developer_Guide_USB_EN.pdf</span></code>.</p>
 </section>
 <section id="id33">
-<h5>2. Device Tree<a class="headerlink" href="#id33" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id33" title="Link to this heading"></a></h4>
 <p>Location of OK3588-C/3588-C2 device tree nodes<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <p>Taking the Type-C0 interface as an example.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>// USB3.0 OTG0 DWC3/xHCI Controller
@@ -3178,15 +3319,15 @@ I/TC: Secondary CPU 7 switching to normal world boot
 <p>Location of OK3588-C device tree nodes<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
 </section>
 <section id="id34">
-<h5>3. Application<a class="headerlink" href="#id34" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id34" title="Link to this heading"></a></h4>
 <section id="device-mode">
-<h6>3.1 Device mode<a class="headerlink" href="#device-mode" title="Link to this heading"></a></h6>
+<h5>3.1 Device mode<a class="headerlink" href="#device-mode" title="Link to this heading"></a></h5>
 <p>This mode can be used for firmware flashing, ADB file transfer, and debugging. Host mode allows for connecting standard USB peripherals.</p>
 <p>Device Mode, when in Device mode, connect to a computer via a data cable. You will see “Android ADB Interface” in the computer’s Device Manager.
 <img alt="Image" src="_images/1718954755736_a5acc21c_f6b2_4915_9f89_0c5a95090beb.png" /></p>
 </section>
 <section id="host-mode">
-<h6>3.2 Host mode<a class="headerlink" href="#host-mode" title="Link to this heading"></a></h6>
+<h5>3.2 Host mode<a class="headerlink" href="#host-mode" title="Link to this heading"></a></h5>
 <p>In this mode, you can insert a USB drive (Type-C) for read/write tests.</p>
 <ul class="simple">
 <li><p>Check Mount Directory:</p></li>
@@ -3220,9 +3361,9 @@ I/TC: Secondary CPU 7 switching to normal world boot
 </section>
 </section>
 <section id="uart">
-<h4>UART<a class="headerlink" href="#uart" title="Link to this heading"></a></h4>
+<h3>UART<a class="headerlink" href="#uart" title="Link to this heading"></a></h3>
 <section id="id35">
-<h5>1. Introduction<a class="headerlink" href="#id35" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id35" title="Link to this heading"></a></h4>
 <p>There are UART interfaces: UART2, UART4, UART6, and UART9. They are defined as follows: UART2 (System Debug Console), UART4 (General-purpose TTL UART), UART6 (Bluetooth-dedicated UART), and UART9 (RS-485 Communication UART). On the development board, the default device names for UART4 and UART9 are /dev/ttyS4 and /dev/ttyS9, respectively.</p>
 <table class="docutils align-default">
 <thead>
@@ -3255,7 +3396,7 @@ I/TC: Secondary CPU 7 switching to normal world boot
 <p>Location of driver source code in the kernel:<code class="docutils literal notranslate"><span class="pre">drivers/tty/serial/8250/8250_dw.c</span></code>.</p>
 </section>
 <section id="id36">
-<h5>2. Device Tree<a class="headerlink" href="#id36" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id36" title="Link to this heading"></a></h4>
 <p>Location of the UART device tree node:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code>.</p>
 <p>Take uart4 as example:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>	uart4: serial@feb70000 {
@@ -3285,9 +3426,9 @@ I/TC: Secondary CPU 7 switching to normal world boot
 </div>
 </section>
 <section id="id37">
-<h5>3. Application<a class="headerlink" href="#id37" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id37" title="Link to this heading"></a></h4>
 <section id="test-method">
-<h6>3.1 Test Method<a class="headerlink" href="#test-method" title="Link to this heading"></a></h6>
+<h5>3.1 Test Method<a class="headerlink" href="#test-method" title="Link to this heading"></a></h5>
 <p>For this test, UART4 (ttyS4) is used, and the serial port functionality is verified through a loopback method. According to the development board schematic, short the TX and RX pins of UART4, which correspond to PIN7 and PIN10, respectively.</p>
 <p><img alt="Image" src="_images/1718954754043_49789947_2230_467b_94e8_811528fac838.png" /></p>
 <p>After short connection, launch the test program.</p>
@@ -3302,7 +3443,7 @@ forlinx_uart_test.1234567890...
 <p><code class="docutils literal notranslate"><span class="pre">fltest_uarttest</span></code>The source code path:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/app/forlinx/forlinx_cmd/fltest_uarttest</span></code></p>
 </section>
 <section id="id38">
-<h6>3.2 Application Programming<a class="headerlink" href="#id38" title="Link to this heading"></a></h6>
+<h5>3.2 Application Programming<a class="headerlink" href="#id38" title="Link to this heading"></a></h5>
 <p>In the OK3588 system, the device node for a UART is <code class="docutils literal notranslate"><span class="pre">/dev/ttySx</span></code>(where x is the serial port number, e.g.,  <code class="docutils literal notranslate"><span class="pre">/dev/ttyS4</span></code>). Applications need to include the header file <code class="docutils literal notranslate"><span class="pre">&lt;termios.h&gt;</span></code>, which defines the structures and functions related to serial port configuration.</p>
 <p><strong>3.2.1 Opening the Serial Port</strong></p>
 <p>The serial port device is opened using <code class="docutils literal notranslate"><span class="pre">open</span></code>function to obtain a file descriptor:</p>
@@ -3444,16 +3585,16 @@ tcsetattr(fd, TCSANOW, &amp;options);
 </section>
 </section>
 <section id="usb2-0">
-<h4>USB2.0<a class="headerlink" href="#usb2-0" title="Link to this heading"></a></h4>
+<h3>USB2.0<a class="headerlink" href="#usb2-0" title="Link to this heading"></a></h3>
 <section id="id39">
-<h5>1. Introduction<a class="headerlink" href="#id39" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id39" title="Link to this heading"></a></h4>
 <p>USB (Universal Serial Bus) is a standardized interface used for connecting computers to various peripheral devices. Its design goals are to simplify device connections, provide data transfer and power supply capabilities, and support hot-plugging (plug-and-play).</p>
 <p>OK3588 supports 1 x USB 2.0 interface. Please connect USB devices such as mice, keyboards, and flash drives to any onboard USB HOST port, with full hot-plug support for these devices.</p>
 <p>Location of the USB 2.0 interface:
 <img alt="Image" src="_images/1776583751844_8195f78a_313f_4b4e_99bc_ccd08df2cd42.png" /></p>
 </section>
 <section id="id40">
-<h5>2. Device Tree<a class="headerlink" href="#id40" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id40" title="Link to this heading"></a></h4>
 <p>Location of OK3588-C/3588-C2 USB2.0 device Tree：<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>// USB2.0 HOST0 EHCI Controller (USB2.0 protocol)
 &amp;usb_host0_ehci {
@@ -3474,9 +3615,9 @@ tcsetattr(fd, TCSANOW, &amp;options);
 <p>Location of OK3588S2-C USB2.0 device tree node:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code></p>
 </section>
 <section id="usb-device-driver-support">
-<h5>3. USB Device Driver Support<a class="headerlink" href="#usb-device-driver-support" title="Link to this heading"></a></h5>
+<h4>3. USB Device Driver Support<a class="headerlink" href="#usb-device-driver-support" title="Link to this heading"></a></h4>
 <section id="supported-device-types">
-<h6>3.1 Supported Device Types<a class="headerlink" href="#supported-device-types" title="Link to this heading"></a></h6>
+<h5>3.1 Supported Device Types<a class="headerlink" href="#supported-device-types" title="Link to this heading"></a></h5>
 <p>According to Section 3.5 (USB Peripheral CONFIG) of the official Rockchip Linux USB Development Guide, the RK3588 SDK kernel supports the following USB device class drivers. The development board can directly recognize and use the corresponding peripherals without additional configuration: The development board can directly identify and use the corresponding peripherals without additional configuration:</p>
 <table class="docutils align-default">
 <thead>
@@ -3527,7 +3668,7 @@ tcsetattr(fd, TCSANOW, &amp;options);
 <p>The default kernel configuration includes support for common drivers. To enable or remove specific drivers, refer to Section 3.2.2.2 in the OS Development guide for configuring and compiling the kernel.</p>
 </section>
 <section id="hid-device-support">
-<h6>3.2 HID Device Support<a class="headerlink" href="#hid-device-support" title="Link to this heading"></a></h6>
+<h5>3.2 HID Device Support<a class="headerlink" href="#hid-device-support" title="Link to this heading"></a></h5>
 <p>HID (Human Interface Device) is one of the most widely used USB device classes, covering input devices such as keyboards, mice, touchscreens, and game controllers.</p>
 <p><strong>3.2.1 Kernel Configuration</strong></p>
 <p>According to Section 3.5.3 of the RK official manual, the kernel configuration options for USB HID are as follows:</p>
@@ -3575,9 +3716,9 @@ OK-linux-source$ grep &quot;LOGITECH&quot; kernel/drivers/hid/hid-ids.h
 </section>
 </section>
 <section id="id41">
-<h5>4. Application<a class="headerlink" href="#id41" title="Link to this heading"></a></h5>
+<h4>4. Application<a class="headerlink" href="#id41" title="Link to this heading"></a></h4>
 <section id="usb-drive-test">
-<h6>4.1 USB Drive Test<a class="headerlink" href="#usb-drive-test" title="Link to this heading"></a></h6>
+<h5>4.1 USB Drive Test<a class="headerlink" href="#usb-drive-test" title="Link to this heading"></a></h5>
 <p>After the development board boots up, connect the USB flash drive to the USB host interface of the development board.<br />
 Check the mount directory:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# mount | grep &quot;sda1&quot;
@@ -3601,7 +3742,7 @@ Check the mount directory:</p>
 </div>
 </section>
 <section id="mouse-testing">
-<h6>4.2 Mouse Testing<a class="headerlink" href="#mouse-testing" title="Link to this heading"></a></h6>
+<h5>4.2 Mouse Testing<a class="headerlink" href="#mouse-testing" title="Link to this heading"></a></h5>
 <p>Connect the USB mouse to the USB port of the OK3588 platform and enter the following command to check the kernel logs:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# dmesg | tail -10
 [17111.992827] rockchip-hdptx-phy-hdmi fed60000.hdmiphy: hdptx phy lane locked!
@@ -3621,17 +3762,17 @@ Check the mount directory:</p>
 </section>
 </section>
 <section id="wifi-bluetooth">
-<h4>Wifi_Bluetooth<a class="headerlink" href="#wifi-bluetooth" title="Link to this heading"></a></h4>
+<h3>Wifi_Bluetooth<a class="headerlink" href="#wifi-bluetooth" title="Link to this heading"></a></h3>
 <p>⚠️<strong>Note: The network environment is different, so please set it according to the actual situation when you do this experiment.</strong></p>
 <section id="id42">
-<h5>1. Introduction<a class="headerlink" href="#id42" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id42" title="Link to this heading"></a></h4>
 <p>The OK3588 platform supports two types of Wi-Fi/Bluetooth combo modules: AW-XM458 and AW-CM276MA. The Wi‑Fi interface uses PCIe.</p>
 <p>The Bluetooth interface uses UART.</p>
 <p>Locations:
 <img alt="Image" src="_images/1776415581325_54693b05_ca54_4abf_a465_df47d3bd274a.png" /></p>
 </section>
 <section id="id43">
-<h5>2. Device Tree<a class="headerlink" href="#id43" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id43" title="Link to this heading"></a></h4>
 <p>The device tree nodes for Wi‑Fi and Bluetooth on OK3588‑C / 3588‑C2 are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>wireless-wlan {
         compatible = &quot;wlan-platdata&quot;;
@@ -3648,9 +3789,9 @@ wireless-bluetooth {
 <p>The device tree nodes for Wi‑Fi and Bluetooth on OK3588S2‑C are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
 </section>
 <section id="id44">
-<h5>3. Application<a class="headerlink" href="#id44" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
 <section id="wifi-sta-mode">
-<h6>3.1 WiFi STA Mode<a class="headerlink" href="#wifi-sta-mode" title="Link to this heading"></a></h6>
+<h5>3.1 WiFi STA Mode<a class="headerlink" href="#wifi-sta-mode" title="Link to this heading"></a></h5>
 <p>Before using Wi‑Fi, configure it with the following steps:</p>
 <ul class="simple">
 <li><p>Assume the Wi‑Fi hotspot SSID is ChinaNet‑Jvgv and the password is asdasd123.</p></li>
@@ -3669,7 +3810,7 @@ wireless-bluetooth {
 </div>
 </section>
 <section id="wifi-ap-mode">
-<h6>3.2 WiFi AP Mode<a class="headerlink" href="#wifi-ap-mode" title="Link to this heading"></a></h6>
+<h5>3.2 WiFi AP Mode<a class="headerlink" href="#wifi-ap-mode" title="Link to this heading"></a></h5>
 <p><strong>⚠️Note: Before performing this test, ensure the Gigabit Ethernet port eth0 is connected to the network and functioning normally.</strong></p>
 <ul class="simple">
 <li><p>Check the driver loading status (using the AW‑XM458 module as an example):</p></li>
@@ -3724,7 +3865,7 @@ dnsmasq -C /etc/dnsmasq.conf
 <p>The 5 GHz hotspot name and password can be viewed in the file:<code class="docutils literal notranslate"><span class="pre">/etc/hostapd-5g.conf</span></code></p>
 </section>
 <section id="bluetooth">
-<h6>3.3 Bluetooth<a class="headerlink" href="#bluetooth" title="Link to this heading"></a></h6>
+<h5>3.3 Bluetooth<a class="headerlink" href="#bluetooth" title="Link to this heading"></a></h5>
 <p>This section demonstrates data transfer between a mobile phone and the development board via Bluetooth (Bluetooth 5.0 supported).</p>
 <ul class="simple">
 <li><p>Bluetooth configuration:</p></li>
@@ -3832,15 +3973,15 @@ Transfer /org/bluez/obex/client/session1/transfer0
 </section>
 </section>
 <section id="watchdog">
-<h4>Watchdog<a class="headerlink" href="#watchdog" title="Link to this heading"></a></h4>
+<h3>Watchdog<a class="headerlink" href="#watchdog" title="Link to this heading"></a></h3>
 <section id="id45">
-<h5>1. Introduction<a class="headerlink" href="#id45" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id45" title="Link to this heading"></a></h4>
 <p>A watchdog is essentially a count‑down timer driven by a hardware clock. During normal system operation, the application must write a specific value (i.e., “kicking the dog”) to the watchdog’s dedicated register within a set timeout period (e.g., 1 second) to reset the counter to its initial value. If the program enters an infinite loop, crashes, or fails to kick the dog before the timeout, the counter decrements to 0, triggering a predefined action such as a system reset or a software exception alert.</p>
 <p>The OK3588‑C development board integrates an on‑chip watchdog.</p>
 <p>The watchdog driver source code is located in the kernel at: <code class="docutils literal notranslate"><span class="pre">kernel/drivers/watchdog/dw_wdt.c</span></code></p>
 </section>
 <section id="id46">
-<h5>2. Device Tree<a class="headerlink" href="#id46" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id46" title="Link to this heading"></a></h4>
 <p>The watchdog device‑tree node is located at:<code class="docutils literal notranslate"><span class="pre">kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>	wdt: watchdog@feaf0000 {
 		compatible = &quot;snps,dw-wdt&quot;;
@@ -3862,9 +4003,9 @@ Transfer /org/bluez/obex/client/session1/transfer0
 </div>
 </section>
 <section id="id47">
-<h5>3. Application<a class="headerlink" href="#id47" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id47" title="Link to this heading"></a></h4>
 <section id="id48">
-<h6>3.1 Test Method<a class="headerlink" href="#id48" title="Link to this heading"></a></h6>
+<h5>3.1 Test Method<a class="headerlink" href="#id48" title="Link to this heading"></a></h5>
 <p>This test provides two testing programs. The user should select one based on the actual scenario.</p>
 <p>With this<code class="docutils literal notranslate"><span class="pre">fltest_watchdog</span></code>, the command turns on the watchdog and performs a feed, so the system does not reboot.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# fltest_watchdog
@@ -3886,7 +4027,7 @@ Restart after 10 seconds
 <p>The source code paths for the two test routines are:<code class="docutils literal notranslate"><span class="pre">OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog</span></code>and<code class="docutils literal notranslate"><span class="pre">OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog/fltest_watchdogrestart</span></code>.</p>
 </section>
 <section id="id49">
-<h6>3.2 Application Programming<a class="headerlink" href="#id49" title="Link to this heading"></a></h6>
+<h5>3.2 Application Programming<a class="headerlink" href="#id49" title="Link to this heading"></a></h5>
 <p>The watchdog device node in OK3588 is<code class="docutils literal notranslate"><span class="pre">/dev/watchdog</span></code>. There should be header file &lt;linux/watchdog.h&gt; in the header file. It defines the ioctl command macros for the watchdog. Each different command macro represents a different operation requested from the device, as shown below:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>#define	WDIOC_GETSUPPORT	_IOR(WATCHDOG_IOCTL_BASE, 0, struct watchdog_info)
 #define	WDIOC_GETSTATUS		_IOR(WATCHDOG_IOCTL_BASE, 1, int)
@@ -3940,7 +4081,7 @@ fprintf(stderr, &quot;Watchdog device not enabled.\n&quot;);
 </div>
 </section>
 <section id="timeout-mechanism">
-<h6>3.3 Timeout Mechanism<a class="headerlink" href="#timeout-mechanism" title="Link to this heading"></a></h6>
+<h5>3.3 Timeout Mechanism<a class="headerlink" href="#timeout-mechanism" title="Link to this heading"></a></h5>
 <p>Regarding the timeout mechanism: The timeout value set from user space is not directly passed to the hardware. The Watchdog driver internally maintains a table of 16 preset timeout values. The driver selects the closest value from this table as the actual timeout according to the following rules:</p>
 <table class="docutils align-default">
 <thead>
@@ -3980,9 +4121,9 @@ fprintf(stderr, &quot;Watchdog device not enabled.\n&quot;);
 </section>
 </section>
 <section id="database">
-<h3>Database<a class="headerlink" href="#database" title="Link to this heading"></a></h3>
+<h2>Database<a class="headerlink" href="#database" title="Link to this heading"></a></h2>
 <section id="sqlite3">
-<h4>SQLite3<a class="headerlink" href="#sqlite3" title="Link to this heading"></a></h4>
+<h3>SQLite3<a class="headerlink" href="#sqlite3" title="Link to this heading"></a></h3>
 <p>SQLite3 is a lightweight, ACID-compliant relational database management system with low resource consumption. The OK3588-C development board uses version 3.44.2 of SQLite3. Using Method:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# sqlite3
 SQLite version 3.44.2 2023-11-24 11:41:44
@@ -4004,11 +4145,11 @@ sqlite&gt; .quit			//Exit the database (or use the .exit command)
 </section>
 </section>
 <section id="multimedia">
-<h3>Multimedia<a class="headerlink" href="#multimedia" title="Link to this heading"></a></h3>
+<h2>Multimedia<a class="headerlink" href="#multimedia" title="Link to this heading"></a></h2>
 <section id="audio">
-<h4>Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h4>
+<h3>Audio<a class="headerlink" href="#audio" title="Link to this heading"></a></h3>
 <section id="id50">
-<h5>1. Introduction<a class="headerlink" href="#id50" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
 <p>The OK3588-C development board is equipped with the NAU88C22YG audio codec chip, supporting both analog and digital audio output. The interface configuration is as follows:</p>
 <table class="docutils align-default">
 <thead>
@@ -4050,7 +4191,7 @@ sqlite&gt; .quit			//Exit the database (or use the .exit command)
 <p><strong>⚠️Note: The OK3588S2-C model does not have an HDMI RX interface.</strong></p>
 </section>
 <section id="id51">
-<h5>2. Device Tree<a class="headerlink" href="#id51" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
 <p>The audio-related device tree nodes for the OK3588-C/3588-C2 are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>//Sound card node: Core abstraction of the audio subsystem
 nau8822_sound: nau8822-sound {
@@ -4170,7 +4311,7 @@ nau8822_sound: nau8822-sound {
 <p>The audio-related device tree nodes for the OK3588S2-C are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 </section>
 <section id="id52">
-<h5>3. Application<a class="headerlink" href="#id52" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
 <p>To view the playback sound card:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:/etc/systemd/network# aplay -l
 **** List of PLAYBACK Hardware Devices ****
@@ -4256,9 +4397,9 @@ Playing WAVE &#39;test1.wav&#39; : Signed 16 bit Little Endian, Rate 44100 Hz, S
 </section>
 </section>
 <section id="camera">
-<h4>Camera<a class="headerlink" href="#camera" title="Link to this heading"></a></h4>
+<h3>Camera<a class="headerlink" href="#camera" title="Link to this heading"></a></h3>
 <section id="id53">
-<h5>1. Introduction<a class="headerlink" href="#id53" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
 <p>The OK3588 supports 5 x MIPI CSI camera interfaces, compatible with the OV13855 and OV5645 models. The corresponding relationships for each interface are as follows:</p>
 <table class="docutils align-default">
 <thead>
@@ -4289,7 +4430,7 @@ Playing WAVE &#39;test1.wav&#39; : Signed 16 bit Little Endian, Rate 44100 Hz, S
 <p><strong>⚠️Note: Due to a reduction in MIPI-CSI controllers in the RK3588S2 chip itself, the CAM1, CAM2, and CAM5 camera interfaces on the OK3588S2-C cannot be used.</strong></p>
 </section>
 <section id="id54">
-<h5>2. Device Tree<a class="headerlink" href="#id54" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id54" title="Link to this heading"></a></h4>
 <p>The device tree files related to cameras for OK3588-C / OK3588-C2 are:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-Camera.dtsi</span></code>.</p>
 <p>Taking the CAM1 interface as an example.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>//Physical layer interface
@@ -4340,9 +4481,9 @@ Playing WAVE &#39;test1.wav&#39; : Signed 16 bit Little Endian, Rate 44100 Hz, S
 <p>The device tree file related to cameras for OK3588S2-C is:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588S2-C-Camera.dtsi</span></code>.</p>
 </section>
 <section id="id55">
-<h5>3. Application<a class="headerlink" href="#id55" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id55" title="Link to this heading"></a></h4>
 <section id="uvc-camera-test">
-<h6>3.1 UVC Camera Test<a class="headerlink" href="#uvc-camera-test" title="Link to this heading"></a></h6>
+<h5>3.1 UVC Camera Test<a class="headerlink" href="#uvc-camera-test" title="Link to this heading"></a></h5>
 <p>Here, the Logitech C270 is used for testing. Plug the USB camera into the development board, and the UVC driver will be automatically installed.</p>
 <p><strong>3.1.1 Camera Detection and Format Support Query</strong></p>
 <p>Camera detection:</p>
@@ -4643,7 +4784,7 @@ Freeing pipeline ...
 <p>This will generate pic.jpg in the current directory.</p>
 </section>
 <section id="ov13855-test">
-<h6>3.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h6>
+<h5>3.2 OV13855 Test<a class="headerlink" href="#ov13855-test" title="Link to this heading"></a></h5>
 <p>For raw sensors like OV13855, each sensor corresponds to 5 device nodes (e.g., /dev/videoX):</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# grep &quot;&quot; /sys/class/video4linux/video*/name
 /sys/class/video4linux/video0/name:stream_cif_mipi_id0
@@ -4778,7 +4919,7 @@ Freeing pipeline ...
 </div>
 </section>
 <section id="ov5645-test">
-<h6>3.3 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h6>
+<h5>3.3 OV5645 Test<a class="headerlink" href="#ov5645-test" title="Link to this heading"></a></h5>
 <p>Node corresponding to the camera</p>
 <p>Camera corresponding nodes</p>
 <p><code class="docutils literal notranslate"><span class="pre">CAM3</span> <span class="pre">：</span></code>rkcif-mipi-lvds2</p>
@@ -4890,7 +5031,7 @@ Redistribute latency...
 </div>
 </section>
 <section id="hdmi-in-test">
-<h6>3.4 HDMI IN Test<a class="headerlink" href="#hdmi-in-test" title="Link to this heading"></a></h6>
+<h5>3.4 HDMI IN Test<a class="headerlink" href="#hdmi-in-test" title="Link to this heading"></a></h5>
 <p><strong>3.4.1 HDMIIN Supported Format Queries</strong></p>
 <p>Camera Recognition Detection</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@ok3588-buildroot:/# v4l2-ctl --list-devices    // It can be seen that /dev/video73 is the HDMI IN node.
@@ -4957,12 +5098,12 @@ Redistribute latency...
 </section>
 </section>
 <section id="display">
-<h4>Display<a class="headerlink" href="#display" title="Link to this heading"></a></h4>
+<h3>Display<a class="headerlink" href="#display" title="Link to this heading"></a></h3>
 <section id="id56">
-<h5>1. Introduction<a class="headerlink" href="#id56" title="Link to this heading"></a></h5>
+<h4>1. Introduction<a class="headerlink" href="#id56" title="Link to this heading"></a></h4>
 <p>The OK3588-C is based on the VOP2 (Video Output Processor 2.0) unified display architecture of the RK3588, supporting various display interfaces such as HDMI, eDP, MIPI DSI, and DP. It can drive up to four independent display outputs simultaneously.</p>
 <section id="overview-of-display-interfaces">
-<h6>1.1 Overview of Display Interfaces<a class="headerlink" href="#overview-of-display-interfaces" title="Link to this heading"></a></h6>
+<h5>1.1 Overview of Display Interfaces<a class="headerlink" href="#overview-of-display-interfaces" title="Link to this heading"></a></h5>
 <p>The RK3588 VOP2 internally contains 4 Video Ports (VPs), each capable of independently driving one display output:</p>
 <table class="docutils align-default">
 <thead>
@@ -4995,7 +5136,7 @@ Redistribute latency...
 <p><img alt="Image" src="_images/1776818967804_102c91de_b34a_4229_aac7_a04329d77dcc.jpeg" /></p>
 </section>
 <section id="specifications-of-each-display-interface">
-<h6>1.2 Specifications of Each Display Interface<a class="headerlink" href="#specifications-of-each-display-interface" title="Link to this heading"></a></h6>
+<h5>1.2 Specifications of Each Display Interface<a class="headerlink" href="#specifications-of-each-display-interface" title="Link to this heading"></a></h5>
 <p>The maximum output resolution and protocol standards for each RK3588 display interface are as follows:</p>
 <table class="docutils align-default">
 <thead>
@@ -5029,14 +5170,14 @@ Redistribute latency...
 </table>
 </section>
 <section id="ok3588-c-interface-location">
-<h6>1.3 OK3588-C Interface Location<a class="headerlink" href="#ok3588-c-interface-location" title="Link to this heading"></a></h6>
+<h5>1.3 OK3588-C Interface Location<a class="headerlink" href="#ok3588-c-interface-location" title="Link to this heading"></a></h5>
 <p>The HDMI and eDP interfaces are located on the front side of the board.
 <img alt="Image" src="_images/1776583943597_3510e877_ca87_4228_81d3_03a2ca4ce32a.png" /></p>
 <p>The MIPI DSI0 and MIPI DSI1 interfaces are located on the back side of the board.</p>
 <p><img alt="Image" src="_images/1776819807192_5cc2e454_d3f6_4cef_a33e_ab8026e39bba.png" /></p>
 </section>
 <section id="rk3588s2-differences">
-<h6>1.4 RK3588S2 Differences<a class="headerlink" href="#rk3588s2-differences" title="Link to this heading"></a></h6>
+<h5>1.4 RK3588S2 Differences<a class="headerlink" href="#rk3588s2-differences" title="Link to this heading"></a></h5>
 <p>Compared to the RK3588, the RK3588S2 has trimmed/cut down the following display interfaces:</p>
 <table class="docutils align-default">
 <thead>
@@ -5085,11 +5226,11 @@ Redistribute latency...
 </section>
 </section>
 <section id="id57">
-<h5>2. Device Tree<a class="headerlink" href="#id57" title="Link to this heading"></a></h5>
+<h4>2. Device Tree<a class="headerlink" href="#id57" title="Link to this heading"></a></h4>
 <p>The display-related Device Tree nodes for OK3588-C/3588-C2 are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi</span></code>.</p>
 <p>The display-related Device Tree nodes for OK3588S2-C are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi</span></code>.</p>
 <section id="forlinx-control-display-configuration-node">
-<h6>2.1 Forlinx-control Display Configuration Node<a class="headerlink" href="#forlinx-control-display-configuration-node" title="Link to this heading"></a></h6>
+<h5>2.1 Forlinx-control Display Configuration Node<a class="headerlink" href="#forlinx-control-display-configuration-node" title="Link to this heading"></a></h5>
 <p>Since OK3588 supports multiple display modes, the screen configuration can be specified via the Device Tree:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>	forlinx-control {
 		/***
@@ -5174,7 +5315,7 @@ Redistribute latency...
 <p><strong>⚠️Note: When modifying the device tree, strictly follow the constraints in the device tree comments to avoid resource conflicts. The driver layer will not verify the compliance of the <code class="docutils literal notranslate"><span class="pre">forlinx-control</span></code> node configuration. If the configuration is improper, the display will be abnormal. For the display interface whose parameter is set to  <code class="docutils literal notranslate"><span class="pre">&quot;OFF&quot;</span></code>, it is recommended to shield or delete the node, or keep the node, which will not affect the system operation. The four VPs do not all need to be enabled and can be configured according to the actual display interface requirements.</strong></p>
 </section>
 <section id="vop-node-configuration">
-<h6>2.2 VOP Node Configuration<a class="headerlink" href="#vop-node-configuration" title="Link to this heading"></a></h6>
+<h5>2.2 VOP Node Configuration<a class="headerlink" href="#vop-node-configuration" title="Link to this heading"></a></h5>
 <p>The VOP configuration in the OK3588-C device tree is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>&amp;vop {
 	status = &quot;okay&quot;;
@@ -5214,7 +5355,7 @@ Redistribute latency...
 </table>
 </section>
 <section id="layer-assignment">
-<h6>2.3 Layer Assignment<a class="headerlink" href="#layer-assignment" title="Link to this heading"></a></h6>
+<h5>2.3 Layer Assignment<a class="headerlink" href="#layer-assignment" title="Link to this heading"></a></h5>
 <p>Each VP has a fixed layer (Plane) bound to it for compositing the display:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>/* vp0 &amp; vp1 splice for 8K output */
 &amp;vp0 {
@@ -5260,7 +5401,7 @@ Redistribute latency...
 </section>
 </section>
 <section id="id58">
-<h5>3. Application<a class="headerlink" href="#id58" title="Link to this heading"></a></h5>
+<h4>3. Application<a class="headerlink" href="#id58" title="Link to this heading"></a></h4>
 <p>The factory firmware supports dynamic control of screen output via a menu in U-Boot,eliminating the need for recompilation and reflashing to switch screens. During U-Boot automatic startup, pressing<code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code>on the serial terminal will trigger a control menu:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Hit key to stop autoboot(&#39;CTRL+C&#39;):  0
 ---------------------------------------------
@@ -5314,7 +5455,7 @@ Select  display
 </section>
 </section>
 <section id="encoding-and-decoding">
-<h4>Encoding and Decoding<a class="headerlink" href="#encoding-and-decoding" title="Link to this heading"></a></h4>
+<h3>Encoding and Decoding<a class="headerlink" href="#encoding-and-decoding" title="Link to this heading"></a></h3>
 <p>Some application layer software for audio and video on the OK3588 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form.</p>
 <p>The OK3588 platform has an internal video processing unit, the VPU, which supports hardware codecs for video in the following formats:</p>
 <p>Video Decoding: H264, H265, VP8, VP9, etc., maximum support 8K&#64;60fps</p>
@@ -5393,103 +5534,103 @@ Select  display
 </tbody>
 </table>
 <section id="audio-and-video-playback">
-<h5>1. Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h5>
+<h4>1. Audio and Video Playback<a class="headerlink" href="#audio-and-video-playback" title="Link to this heading"></a></h4>
 <section id="playing-audio-and-video-with-gst-play">
-<h6>1.1.1 Playing Audio and Video With Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h6>
+<h5>1.1.1 Playing Audio and Video With Gst-play<a class="headerlink" href="#playing-audio-and-video-with-gst-play" title="Link to this heading"></a></h5>
 <p>Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
 </pre></div>
 </div>
 </section>
 <section id="playing-video-with-gst-launch">
-<h6>1.1.2 Playing Video With Gst-launch<a class="headerlink" href="#playing-video-with-gst-launch" title="Link to this heading"></a></h6>
+<h5>1.1.2 Playing Video With Gst-launch<a class="headerlink" href="#playing-video-with-gst-launch" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
 </pre></div>
 </div>
 </section>
 <section id="playing-audio-with-gst-launch">
-<h6>1.1.3 Playing Audio With Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h6>
+<h5>1.1.3 Playing Audio With Gst-launch<a class="headerlink" href="#playing-audio-with-gst-launch" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
 </pre></div>
 </div>
 </section>
 <section id="playing-video-and-audio-with-gst-launch">
-<h6>1.1.4 Playing Video and Audio With Gst-launch<a class="headerlink" href="#playing-video-and-audio-with-gst-launch" title="Link to this heading"></a></h6>
+<h5>1.1.4 Playing Video and Audio With Gst-launch<a class="headerlink" href="#playing-video-and-audio-with-gst-launch" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
 </pre></div>
 </div>
 </section>
 </section>
 <section id="video-hardware-encoding">
-<h5>2. Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h5>
+<h4>2. Video Hardware Encoding<a class="headerlink" href="#video-hardware-encoding" title="Link to this heading"></a></h4>
 <p>OK3588 supports up to 8K&#64;60fps/H.265 and 8K&#64;60fps/H.264 video encoding.</p>
 <section id="video-hardware-encoding-h-264">
-<h6>2.2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h6>
+<h5>2.2.1 Video Hardware Encoding H.264<a class="headerlink" href="#video-hardware-encoding-h-264" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
 </pre></div>
 </div>
 </section>
 <section id="video-hardware-encoding-h-265">
-<h6>2.2.2 Video Hardware Encoding H.265<a class="headerlink" href="#video-hardware-encoding-h-265" title="Link to this heading"></a></h6>
+<h5>2.2.2 Video Hardware Encoding H.265<a class="headerlink" href="#video-hardware-encoding-h-265" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
 </pre></div>
 </div>
 </section>
 <section id="jpeg-hardware-encoding">
-<h6>2.2.3 JPEG Hardware Encoding<a class="headerlink" href="#jpeg-hardware-encoding" title="Link to this heading"></a></h6>
+<h5>2.2.3 JPEG Hardware Encoding<a class="headerlink" href="#jpeg-hardware-encoding" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
 </pre></div>
 </div>
 </section>
 </section>
 <section id="video-hardware-decoding">
-<h5>3. Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h5>
+<h4>3. Video Hardware Decoding<a class="headerlink" href="#video-hardware-decoding" title="Link to this heading"></a></h4>
 <p>OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K&#64;30fps, while the H.265 decoder supports 8K&#64;60fps.</p>
 <p>OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.</p>
 <section id="decoding-and-playing-h-264-format-video">
-<h6>3.3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h6>
+<h5>3.3.1 Decoding and Playing H.264 Format Video<a class="headerlink" href="#decoding-and-playing-h-264-format-video" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-h264-format-video-with-audio">
-<h6>3.3.2 Decoding and Playing H264 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h264-format-video-with-audio" title="Link to this heading"></a></h6>
+<h5>3.3.2 Decoding and Playing H264 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h264-format-video-with-audio" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-h265-format-video">
-<h6>3.3.3 Decoding and Playing H265 Format Video<a class="headerlink" href="#decoding-and-playing-h265-format-video" title="Link to this heading"></a></h6>
+<h5>3.3.3 Decoding and Playing H265 Format Video<a class="headerlink" href="#decoding-and-playing-h265-format-video" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-h265-format-video-with-audio">
-<h6>3.3.4 Decoding and Playing H265 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h265-format-video-with-audio" title="Link to this heading"></a></h6>
+<h5>3.3.4 Decoding and Playing H265 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-h265-format-video-with-audio" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp9-format-video">
-<h6>3.3.5 Decoding and Playing VP9 Format Video<a class="headerlink" href="#decoding-and-playing-vp9-format-video" title="Link to this heading"></a></h6>
+<h5>3.3.5 Decoding and Playing VP9 Format Video<a class="headerlink" href="#decoding-and-playing-vp9-format-video" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp9-format-video-with-audio">
-<h6>3.3.6 Decoding and Playing VP9 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp9-format-video-with-audio" title="Link to this heading"></a></h6>
+<h5>3.3.6 Decoding and Playing VP9 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp9-format-video-with-audio" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp8-format-video">
-<h6>3.3.7 Decoding and Playing VP8 Format Video<a class="headerlink" href="#decoding-and-playing-vp8-format-video" title="Link to this heading"></a></h6>
+<h5>3.3.7 Decoding and Playing VP8 Format Video<a class="headerlink" href="#decoding-and-playing-vp8-format-video" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 ! matroskademux ! queue ! mppvideodec ! waylandsink
 </pre></div>
 </div>
 </section>
 <section id="decoding-and-playing-vp8-format-video-with-audio">
-<h6>3.3.8 Decoding and Playing VP8 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp8-format-video-with-audio" title="Link to this heading"></a></h6>
+<h5>3.3.8 Decoding and Playing VP8 Format Video With Audio<a class="headerlink" href="#decoding-and-playing-vp8-format-video-with-audio" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:1,0
 </pre></div>
 </div>
@@ -5498,9 +5639,9 @@ Select  display
 </section>
 </section>
 <section id="machine-learning">
-<h3>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h3>
+<h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h2>
 <section id="id59">
-<h4>1. Introduction<a class="headerlink" href="#id59" title="Link to this heading"></a></h4>
+<h3>1. Introduction<a class="headerlink" href="#id59" title="Link to this heading"></a></h3>
 <p>An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.</p>
 <p>The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment.</p>
 <p>Main features:</p>
@@ -5513,7 +5654,7 @@ Select  display
 <p>The OK3588 features an extremely powerful NPU module, supporting up to 6 TOPS of computational power. This enables the OK3588 to locally run relatively complex AI models in real-time without relying on cloud resources.</p>
 </section>
 <section id="id60">
-<h4>2. Device Tree<a class="headerlink" href="#id60" title="Link to this heading"></a></h4>
+<h3>2. Device Tree<a class="headerlink" href="#id60" title="Link to this heading"></a></h3>
 <p>The device tree nodes related to the NPU are located at:<code class="docutils literal notranslate"><span class="pre">arch/arm64/boot/dts/rockchip/rk3588s.dtsi</span></code></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>        rknpu: npu@fdab0000 {
                 compatible = &quot;rockchip,rk3588-rknpu&quot;;
@@ -5560,7 +5701,7 @@ Select  display
 </div>
 </section>
 <section id="id61">
-<h4>3. Application<a class="headerlink" href="#id61" title="Link to this heading"></a></h4>
+<h3>3. Application<a class="headerlink" href="#id61" title="Link to this heading"></a></h3>
 <p>To utilize the NPU, besides requiring kernel support, application-layer calls must go through the library files provided by Rockchip. This content is located in the<code class="docutils literal notranslate"><span class="pre">SDK/external/rknpu2/</span></code>and is represented as <code class="docutils literal notranslate"><span class="pre">/usr/lib/librknnrt.so</span></code>in the integrated file system.</p>
 <p>Since NPU access is implemented by calling library files, using the NPU requires converting models to the RKNN format suitable for the Rockchip platform via Rockchip conversion tools. This can be easily accomplished using Rockchip core development toolkit, RKNN-Toolkit2, which is also located in the <code class="docutils literal notranslate"><span class="pre">SDK/external/rknn-toolkit2/</span></code>. This section only tests interface availability. For specific model conversion tutorials, please refer to the NPU Development section in the Development Guide.</p>
 <p>The filesystem includes an integrated<code class="docutils literal notranslate"><span class="pre">mobilenet_v1.rknn</span></code>model, which can be tested with the following command:</p>
@@ -5601,7 +5742,7 @@ Begin perf ...
 <p>The image used for this test is shown below:</p>
 <p><img alt="Image" src="_images/1774666440305_ad6f4a06_db24_4454_a635_c3b10fa0bec6.jpeg" /></p>
 <section id="interface-call">
-<h5>3.1 Interface Call<a class="headerlink" href="#interface-call" title="Link to this heading"></a></h5>
+<h4>3.1 Interface Call<a class="headerlink" href="#interface-call" title="Link to this heading"></a></h4>
 <p>To address the program’s development needs, this brief demo introduction explains how to call the image and the model. The demo’s source code can be referenced for further details.file.<code class="docutils literal notranslate"><span class="pre">SDK/external/rknpu2/examples/rknn_common_test/src/main.cc</span></code></p>
 <p>Reading the JPG image uses the OpenCV interface.</p>
 <p>The core steps are:</p>
@@ -5626,11 +5767,11 @@ Begin perf ...
 </section>
 </section>
 <section id="development-guides">
-<h2>Development Guides<a class="headerlink" href="#development-guides" title="Link to this heading"></a></h2>
+<h1>Development Guides<a class="headerlink" href="#development-guides" title="Link to this heading"></a></h1>
 <section id="adding-user-application">
-<h3>1. Adding User Application<a class="headerlink" href="#adding-user-application" title="Link to this heading"></a></h3>
+<h2>1. Adding User Application<a class="headerlink" href="#adding-user-application" title="Link to this heading"></a></h2>
 <section id="packaging-the-user-program-into-the-image">
-<h4>1.1 Packaging the User Program into the Image<a class="headerlink" href="#packaging-the-user-program-into-the-image" title="Link to this heading"></a></h4>
+<h3>1.1 Packaging the User Program into the Image<a class="headerlink" href="#packaging-the-user-program-into-the-image" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>The directory <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base</span></code> in the source code corresponds to the root directory of the board’s file system. You can directly copy your compiled user application, <code class="docutils literal notranslate"><span class="pre">user_application</span></code>, to the subdirectory <code class="docutils literal notranslate"><span class="pre">usr/bin</span></code> within this directory;</p></li>
 <li><p>To modify system or service configurations, copy the relevant configuration files to the directory <code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/etc</span></code>;</p></li>
@@ -5641,7 +5782,7 @@ Begin perf ...
 </section>
 </section>
 <section id="auto-starting-the-user-program">
-<h3>2. Auto-starting the User Program<a class="headerlink" href="#auto-starting-the-user-program" title="Link to this heading"></a></h3>
+<h2>2. Auto-starting the User Program<a class="headerlink" href="#auto-starting-the-user-program" title="Link to this heading"></a></h2>
 <p>The Linux system of the OK3588-C utilizes systemd as its initialization system and service manager. This design aims to achieve faster boot speeds, improved parallel processing capabilities, and enhanced service management functions, all while providing a unified system management interface.</p>
 <p>Within this system, there is a preset script named <code class="docutils literal notranslate"><span class="pre">forlinx.sh</span></code> located in the <code class="docutils literal notranslate"><span class="pre">/etc</span></code> directory. This script is called and executed by <code class="docutils literal notranslate"><span class="pre">/etc/init.d/S90autorun.sh</span></code>. Users can customize <code class="docutils literal notranslate"><span class="pre">forlinx.sh</span></code> to include their own applications, allowing for automatic startup of these applications.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK3588-C-buildroot:~# cat /etc/forlinx.sh
@@ -5662,7 +5803,7 @@ exit 0
 <p>You can also modify the<code class="docutils literal notranslate"><span class="pre">OK-linux-source/buildroot/board/rockchip/common/base/etc/forlinx.sh</span></code>in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.</p>
 </section>
 <section id="customized-logo">
-<h3>3. Customized Logo<a class="headerlink" href="#customized-logo" title="Link to this heading"></a></h3>
+<h2>3. Customized Logo<a class="headerlink" href="#customized-logo" title="Link to this heading"></a></h2>
 <p>You can modify the boot logo by replacing the specified files<code class="docutils literal notranslate"><span class="pre">logo.bmp</span></code> and <code class="docutils literal notranslate"><span class="pre">logo_kernel.bmp</span></code> in the kernel directory.</p>
 <p><strong>⚠️Note:</strong></p>
 <ul class="simple">
@@ -5673,9 +5814,9 @@ exit 0
 </ul>
 </section>
 <section id="rknpu-development">
-<h3>4. RKNPU Development<a class="headerlink" href="#rknpu-development" title="Link to this heading"></a></h3>
+<h2>4. RKNPU Development<a class="headerlink" href="#rknpu-development" title="Link to this heading"></a></h2>
 <section id="npu-description">
-<h4>4.1 NPU Description<a class="headerlink" href="#npu-description" title="Link to this heading"></a></h4>
+<h3>4.1 NPU Description<a class="headerlink" href="#npu-description" title="Link to this heading"></a></h3>
 <p>An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.</p>
 <p>The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment. Main features:</p>
 <ul class="simple">
@@ -5685,9 +5826,9 @@ exit 0
 </ul>
 <p>To help developers deploy AI models more quickly, Rockchip officially provides users with two toolchains for model conversion, inference, and performance evaluation on computers, including the RKNN toolchain and the RKLLM toolchain specifically designed for large language models. In addition, Rockchip officially provides the RKNN Model Zoo, developed based on the RKNPU SDK toolchain, which covers deployment examples for current mainstream algorithms. The examples include the process of exporting RKNN models and performing inference on RKNN models using the Python API and C API.</p>
 <section id="rknn-toolchain">
-<h5>4.1.1 RKNN Toolchain<a class="headerlink" href="#rknn-toolchain" title="Link to this heading"></a></h5>
+<h4>4.1.1 RKNN Toolchain<a class="headerlink" href="#rknn-toolchain" title="Link to this heading"></a></h4>
 <section id="rknn-software-stack-overview">
-<h6><strong>4.1.1.1 RKNN Software Stack Overview</strong><a class="headerlink" href="#rknn-software-stack-overview" title="Link to this heading"></a></h6>
+<h5><strong>4.1.1.1 RKNN Software Stack Overview</strong><a class="headerlink" href="#rknn-software-stack-overview" title="Link to this heading"></a></h5>
 <p>The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below:
 <img alt="Image" src="_images/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png" /></p>
 <p>Figure 1-1 RKNN Software Stack</p>
@@ -6013,7 +6154,7 @@ exit 0
 </table>
 </section>
 <section id="rknn-toolkit2">
-<h6><strong>4.1.1.2 RKNN-Toolkit2</strong><a class="headerlink" href="#rknn-toolkit2" title="Link to this heading"></a></h6>
+<h5><strong>4.1.1.2 RKNN-Toolkit2</strong><a class="headerlink" href="#rknn-toolkit2" title="Link to this heading"></a></h5>
 <p>With RKLLM-Toolkit2, developers can easily quantize and convert large language models on a computer. It provides a concise Python interface with the following core features:</p>
 <ul class="simple">
 <li><p><strong>Model Conversion:</strong> Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform;</p></li>
@@ -6022,21 +6163,21 @@ exit 0
 <p>RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to <a class="reference external" href="https://github.com/airockchip/rknn-toolkit2">https://github.com/airockchip/rknn-toolkit2</a> for the RKLLM-Toolkit2 details.</p>
 </section>
 <section id="features-of-rkllm-runtime">
-<h6><strong>4.1.1.3 Features of RKLLM Runtime</strong><a class="headerlink" href="#features-of-rkllm-runtime" title="Link to this heading"></a></h6>
+<h5><strong>4.1.1.3 Features of RKLLM Runtime</strong><a class="headerlink" href="#features-of-rkllm-runtime" title="Link to this heading"></a></h5>
 <p>RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.</p>
 <p>For details of RKLLM Runtime, refer to<code class="docutils literal notranslate"><span class="pre">rknn-llm\doc\</span> <span class="pre">Rockchip_RKLLM_SDK_CN_1.2.3.pdf</span></code>.</p>
 </section>
 </section>
 <section id="rkllm-toolchain">
-<h5>4.1.2 RKLLM Toolchain<a class="headerlink" href="#rkllm-toolchain" title="Link to this heading"></a></h5>
+<h4>4.1.2 RKLLM Toolchain<a class="headerlink" href="#rkllm-toolchain" title="Link to this heading"></a></h4>
 <section id="rkllm-software-stack-overview">
-<h6><strong>4.1.2.1 RKLLM Software Stack Overview</strong><a class="headerlink" href="#rkllm-software-stack-overview" title="Link to this heading"></a></h6>
+<h5><strong>4.1.2.1 RKLLM Software Stack Overview</strong><a class="headerlink" href="#rkllm-software-stack-overview" title="Link to this heading"></a></h5>
 <p>The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform.
 <img alt="Image" src="_images/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png" /></p>
 <p>Figure 1-2: RKLLM Software Stack.</p>
 </section>
 <section id="rknn-toolkit-features">
-<h6><strong>4.1.2.2 RKNN-Toolkit Features</strong><a class="headerlink" href="#rknn-toolkit-features" title="Link to this heading"></a></h6>
+<h5><strong>4.1.2.2 RKNN-Toolkit Features</strong><a class="headerlink" href="#rknn-toolkit-features" title="Link to this heading"></a></h5>
 <p>With RKLLM-Toolkit2, developers can efficiently perform quantization and conversion of large language models on a host computer. It provides a concise Python interface with the following core features:</p>
 <ul class="simple">
 <li><p><strong>Model Conversion:</strong> Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.</p></li>
@@ -6045,13 +6186,13 @@ exit 0
 <p>Please refer to<code class="docutils literal notranslate"><span class="pre">rknn-llm\doc\Rockchip_RKLLM_SDK_CN_1.2.3.pdf</span></code>, for RKLLM-Toolkit2 details.</p>
 </section>
 <section id="rkllm-runtime-features">
-<h6><strong>4.1.2.3 RKLLM Runtime Features</strong><a class="headerlink" href="#rkllm-runtime-features" title="Link to this heading"></a></h6>
+<h5><strong>4.1.2.3 RKLLM Runtime Features</strong><a class="headerlink" href="#rkllm-runtime-features" title="Link to this heading"></a></h5>
 <p>RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.</p>
 <p>For details of RKLLM Runtime, refer to<code class="docutils literal notranslate"><span class="pre">rknn-llm\doc\</span> <span class="pre">Rockchip_RKLLM_SDK_CN_1.2.3.pdf</span></code>.</p>
 </section>
 </section>
 <section id="rknn-model-zoo">
-<h5>4.1.3 RKNN Model Zoo<a class="headerlink" href="#rknn-model-zoo" title="Link to this heading"></a></h5>
+<h4>4.1.3 RKNN Model Zoo<a class="headerlink" href="#rknn-model-zoo" title="Link to this heading"></a></h4>
 <p>RKNN Model Zoo is an edge AI model deployment resource library launched by Rockchip based on its RKNPU SDK toolchain. It aims to provide developers with a complete reference implementation for AI model deployment. It covers the entire workflow—from model conversion and quantization to running inference on Rockchip NPUs using both Python and C APIs. Built-in YOLO series detection/segmentation/pose, image classification, OCR, license plate recognition, speech recognition and other dozens of mainstream algorithms, each model provides pre-training weights, conversion scripts and sample codes that can be directly compiled and run to help developers quickly achieve high-performance NPU reasoning acceleration on Rockchip hardware.</p>
 <p>The rknn _ model _ zoo is a collection of converted and optimized mainstream model examples, providing a large number of ready-made RKNN models + complete pre-processing and post-processing + C/C + +/Python/Android reasoning demos for developers to run directly for verification or reference transplantation. <a class="reference external" href="https://github.com/airockchip/rknn_model_zoo">https://github.com/airockchip/rknn_model_zoo</a></p>
 <p>RKNN Model Zoo directory:</p>
@@ -6082,13 +6223,13 @@ exit 0
 </section>
 </section>
 <section id="development-environment-setup">
-<h4>4.2 Development Environment Setup<a class="headerlink" href="#development-environment-setup" title="Link to this heading"></a></h4>
+<h3>4.2 Development Environment Setup<a class="headerlink" href="#development-environment-setup" title="Link to this heading"></a></h3>
 <p>RKNN development needs to be carried out under Ubuntu. You may choose the build method provided in the manual.</p>
 <section id="installing-rknn-toolkit2">
-<h5>4.2.1 Installing RKNN-Toolkit2<a class="headerlink" href="#installing-rknn-toolkit2" title="Link to this heading"></a></h5>
+<h4>4.2.1 Installing RKNN-Toolkit2<a class="headerlink" href="#installing-rknn-toolkit2" title="Link to this heading"></a></h4>
 <p>There are two installation methods for RKNN-Toolkit2:<code class="docutils literal notranslate"><span class="pre">pip</span></code>and<code class="docutils literal notranslate"><span class="pre">Docker</span></code>. You can choose anyone to install.</p>
 <section id="installing-via-pip">
-<h6><strong>4.2.1.1 Installing via Pip</strong><a class="headerlink" href="#installing-via-pip" title="Link to this heading"></a></h6>
+<h5><strong>4.2.1.1 Installing via Pip</strong><a class="headerlink" href="#installing-via-pip" title="Link to this heading"></a></h5>
 <ul class="simple">
 <li><p>Set up the Python Environment</p></li>
 </ul>
@@ -6148,7 +6289,7 @@ pip install rknn-toolkit2 -i https://pypi.org/simple --upgrade
 </div>
 </section>
 <section id="installing-via-docker">
-<h6>4.2.1.2 Installing via Docker<a class="headerlink" href="#installing-via-docker" title="Link to this heading"></a></h6>
+<h5>4.2.1.2 Installing via Docker<a class="headerlink" href="#installing-via-docker" title="Link to this heading"></a></h5>
 <ul class="simple">
 <li><p>Install Docker Tools</p></li>
 </ul>
@@ -6225,9 +6366,9 @@ person       0.334   [  79,  353,  122,  517]
 </section>
 </section>
 <section id="installing-rkllm-toolkit">
-<h5>4.2.2 Installing RKLLM-Toolkit<a class="headerlink" href="#installing-rkllm-toolkit" title="Link to this heading"></a></h5>
+<h4>4.2.2 Installing RKLLM-Toolkit<a class="headerlink" href="#installing-rkllm-toolkit" title="Link to this heading"></a></h4>
 <section id="install-via-pip">
-<h6><strong>4.2.2.1 Install via Pip</strong><a class="headerlink" href="#install-via-pip" title="Link to this heading"></a></h6>
+<h5><strong>4.2.2.1 Install via Pip</strong><a class="headerlink" href="#install-via-pip" title="Link to this heading"></a></h5>
 <p>Set up the Python Environment.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ sudo apt-get update
 forlinx@ubuntu:~$ sudo apt-get install python3 python3-dev python3-pip
@@ -6236,7 +6377,7 @@ forlinx@ubuntu:~$ sudo apt-get install libxslt1-dev zlib1g zlib1g-dev libglib2.0
 </div>
 </section>
 <section id="installing-the-miniforge-tool">
-<h6><strong>4.2.1.2 Installing the Miniforge Tool</strong><a class="headerlink" href="#installing-the-miniforge-tool" title="Link to this heading"></a></h6>
+<h5><strong>4.2.1.2 Installing the Miniforge Tool</strong><a class="headerlink" href="#installing-the-miniforge-tool" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Download Mini forge installation package
 forlinx@ubuntu:~$ wget -c https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-Linux-x86_64.sh
 # Install Miniforge
@@ -6246,7 +6387,7 @@ forlinx@ubuntu:~$ bash Miniforge3-Linux-x86_64.sh
 </div>
 </section>
 <section id="creating-rkllm-toolkit-conda-environment">
-<h6><strong>4.2.1.3 Creating RKLLM-Toolkit Conda Environment</strong><a class="headerlink" href="#creating-rkllm-toolkit-conda-environment" title="Link to this heading"></a></h6>
+<h5><strong>4.2.1.3 Creating RKLLM-Toolkit Conda Environment</strong><a class="headerlink" href="#creating-rkllm-toolkit-conda-environment" title="Link to this heading"></a></h5>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Switch to the Conda base environment
 forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation directory
 
@@ -6259,7 +6400,7 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 </div>
 </section>
 <section id="id62">
-<h6><strong>4.2.1.4 Installing RKLLM-Toolkit</strong><a class="headerlink" href="#id62" title="Link to this heading"></a></h6>
+<h5><strong>4.2.1.4 Installing RKLLM-Toolkit</strong><a class="headerlink" href="#id62" title="Link to this heading"></a></h5>
 <p>Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is:<a class="reference external" href="https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip">https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip</a>。</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(RKLLM-Toolkit) forlinx@ubuntu:~$ pip install rknn-llm/rkllm-toolkit/packages/rkllm_toolkit-1.2.2-cp38-cp38-linux_x86_64.whl
 </pre></div>
@@ -6267,7 +6408,7 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 </section>
 </section>
 <section id="board-side-npu-environment-preparation">
-<h5>4.2.3 Board-Side NPU Environment Preparation<a class="headerlink" href="#board-side-npu-environment-preparation" title="Link to this heading"></a></h5>
+<h4>4.2.3 Board-Side NPU Environment Preparation<a class="headerlink" href="#board-side-npu-environment-preparation" title="Link to this heading"></a></h4>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Check the RKNPU driver version
 cat /sys/kernel/debug/rknpu/version
 
@@ -6278,14 +6419,14 @@ RKNPU driver: v0.9.8
 </section>
 </section>
 <section id="model-deployment-examples">
-<h4>4.3 Model Deployment Examples<a class="headerlink" href="#model-deployment-examples" title="Link to this heading"></a></h4>
+<h3>4.3 Model Deployment Examples<a class="headerlink" href="#model-deployment-examples" title="Link to this heading"></a></h3>
 <p>Forlinx provides pre-converted models and binary files for download. You can browse the following link to download the compressed package containing the corresponding models and binary files</p>
 <p><a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a></p>
 <p>After entering the webpage, select the model under “Software Resources -&gt; AI Demo”.</p>
 <section id="yolov5-model-deployment-example">
-<h5>4.3.1 YOLOv5 Model Deployment Example<a class="headerlink" href="#yolov5-model-deployment-example" title="Link to this heading"></a></h5>
+<h4>4.3.1 YOLOv5 Model Deployment Example<a class="headerlink" href="#yolov5-model-deployment-example" title="Link to this heading"></a></h4>
 <section id="model-conversion">
-<h6>4.3.1.1 Model Conversion<a class="headerlink" href="#model-conversion" title="Link to this heading"></a></h6>
+<h5>4.3.1.1 Model Conversion<a class="headerlink" href="#model-conversion" title="Link to this heading"></a></h5>
 <p>Transfer the RKNN Model Zoo project folder (rknn_model_zoo) to the virtual machine directory. The download address for the RKNN Model Zoo project files is <a class="reference external" href="https://github.com/airockchip/rknn_model_zoo">https://github.com/airockchip/rknn_model_zoo</a>:</p>
 <ul class="simple">
 <li><p>Enter the RKNN-Toolkit2 Conda Environment</p></li>
@@ -6312,7 +6453,7 @@ RKNPU driver: v0.9.8
 <p>The save path for the converted model is: <code class="docutils literal notranslate"><span class="pre">rknn_model_zoo/examples/yolov5/model/yolov5s_relu.rknn</span></code>.</p>
 </section>
 <section id="model-deployment">
-<h6>4.3.1.2 Model Deployment<a class="headerlink" href="#model-deployment" title="Link to this heading"></a></h6>
+<h5>4.3.1.2 Model Deployment<a class="headerlink" href="#model-deployment" title="Link to this heading"></a></h5>
 <p>Install the Cross Compiler.</p>
 <p><strong>⚠️Note: The cross compiler mentioned in this section is not the same as the cross-compilation toolchain described in the compilation manual. Please download the cross compiler dedicated to compiling this AI model as described below.</strong></p>
 <ul class="simple">
@@ -6357,9 +6498,9 @@ root@OK3588-C-buildroot:/home/forlinx/rknn_yolov5_demo# ./rknn_yolov5_demo model
 </section>
 </section>
 <section id="deepseek-model-deployment">
-<h5>4.3.2 DeepSeek Model Deployment<a class="headerlink" href="#deepseek-model-deployment" title="Link to this heading"></a></h5>
+<h4>4.3.2 DeepSeek Model Deployment<a class="headerlink" href="#deepseek-model-deployment" title="Link to this heading"></a></h4>
 <section id="id63">
-<h6>4.3.2.1 Model Conversion<a class="headerlink" href="#id63" title="Link to this heading"></a></h6>
+<h5>4.3.2.1 Model Conversion<a class="headerlink" href="#id63" title="Link to this heading"></a></h5>
 <ul class="simple">
 <li><p>Enter RKLLM-Toolkit Conda Environment</p></li>
 </ul>
@@ -6388,7 +6529,7 @@ root@OK3588-C-buildroot:/home/forlinx/rknn_yolov5_demo# ./rknn_yolov5_demo model
 </div>
 </section>
 <section id="id64">
-<h6>4.3.2.2 Model Deployment<a class="headerlink" href="#id64" title="Link to this heading"></a></h6>
+<h5>4.3.2.2 Model Deployment<a class="headerlink" href="#id64" title="Link to this heading"></a></h5>
 <p>Model Dependency Library Compilation.</p>
 <p>The DeepSeek model requires libgomp support. A compilation method is provided here. Please refer to the method below to compile the library file themselves and then place it into the board. Alternatively, you can find the DeepSeek content in the link, download the pre-compiled library file, and copy it into the board.</p>
 <p><a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a></p>
@@ -6472,15 +6613,14 @@ root@OK3588-C-buildroot:/home/forlinx/demo_Linux_aarch64# ./llm_demo model/DeepS
 </section>
 </section>
 <section id="rknn-toolkit2-supported-operator-list">
-<h4>4.4 RKNN Toolkit2 Supported Operator List<a class="headerlink" href="#rknn-toolkit2-supported-operator-list" title="Link to this heading"></a></h4>
+<h3>4.4 RKNN Toolkit2 Supported Operator List<a class="headerlink" href="#rknn-toolkit2-supported-operator-list" title="Link to this heading"></a></h3>
 <p>For the list of ONNX operators, PyTorch operators, Caffe operators, TensorFlow operators, and Darknet operators supported by RKNN Toolkit2, please refer to the relevant documentation<code class="docutils literal notranslate"><span class="pre">rknn-toolkit2\doc\RKNNToolKit2_OP_Support-2.3.2.md</span></code>.</p>
 </section>
 </section>
 </section>
 <section id="resource-download">
-<h2>Resource Download<a class="headerlink" href="#resource-download" title="Link to this heading"></a></h2>
+<h1>Resource Download<a class="headerlink" href="#resource-download" title="Link to this heading"></a></h1>
 <p>Please download from the Resource Download (<a class="reference external" href="https://www.forlinx.net/resources/download-center.html">https://www.forlinx.net/resources/download-center.html</a>).</p>
-</section>
 </section>
 
 
