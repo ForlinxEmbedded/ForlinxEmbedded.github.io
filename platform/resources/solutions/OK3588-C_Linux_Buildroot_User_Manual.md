@@ -140,9 +140,9 @@ OK3588-C Interfaces:
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776329292214_981ff9ed_a11b_4e99_a1f2_48d6de365e5d.png)
 
-![Image](1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png)
 
 
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png)
 
 #### 3.2 Debug
 
@@ -5999,6 +5999,4 @@ For the list of ONNX operators, PyTorch operators, Caffe operators, TensorFlow o
 
 ## Resource Download
 
-You can find the necessary materials for your products at the [Forlinx Download Center](www.forlinx.net/resources/download-center.html).
-
-
+Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). 
