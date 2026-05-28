@@ -1,4 +1,4 @@
-# Buildroot_Kernel-6.1_User's Manual_V1.0
+Buildroot_Kernel-6.1_User's Manual_V1.0
 
 ## ﻿Open Box
 
@@ -190,7 +190,7 @@ Step 3: After completing the previous settings, enter the COM port number used b
 
 Step 4: Power on the development board. If the startup information appears as shown below, it indicates a successful boot. You can then press Enter to create a new command line.
 
-```c
+```plain
 Welcome to Forlinx OK3588 Board
 
 Tel: +86 312 311 9192
@@ -1744,25 +1744,17 @@ Install the file Zilla tool on windows and follow the steps shown in the figure 
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-23-14.png)
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
 
 **⚠️Note**: **FileZilla is provided as a compressed package, and the initial language may be Chinese. You can download FileZilla yourself, or after unzipping it, follow the steps below to change the language to English.**
 
 * Click the second "Edit" option in the navigation bar to open the drop-down menu and select the Settings option;
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-01-58.png)
-
 * Enter the Settings interface, select the Language option in the left navigation bar, then choose the corresponding language on the right side. In the illustration, select English(en_US);
-
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-03-55.png)
 
 * After selecting the language, the change will take effect only after restarting FileZilla. Click OK and restart FileZilla;
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-04-40.png)
-
 * After restarting, the interface will switch to English.
-
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-16-29.png)
 
 #### Frequency
 
@@ -1835,7 +1827,7 @@ The extended I/O pins are led out from the carrier board, located on P11.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png)
 
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_17-10-56.png)
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1718954759014_d61c0905_7a0e_46a2_81b5_ba7ccfc72c9c.png)
 
 ##### 2\. Device Tree
 
@@ -2600,7 +2592,7 @@ The OK3588 platform supports system standby. The system standby process generall
 
 Key positions are as follows:
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/transparent_final.png)
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
 
 The driver files related to system standby are:
 
