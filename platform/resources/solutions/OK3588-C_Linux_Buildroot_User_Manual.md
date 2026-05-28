@@ -1,4 +1,6 @@
-# Linux\_Buildroot\_User Manual\_V1.0
+# Linux6.1.18_User's Manual_V1.0
+
+Buildroot_Kernel-6.1_User's Manual_V1.0
 
 ## ﻿Open Box
 
@@ -63,9 +65,7 @@ FET3588J SoM
 
 FET3588S2 
 
-
-
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)  
+<img src="./images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png" alt="Image" style="zoom: 120%;" />
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripherals cannot be used on the FET3588-C. 
 
@@ -106,32 +106,32 @@ Switch to "normal mode". You just need to add \#include "rk3588j.dtsi" in the re
 
 This manual is designed to help you quickly familiarize yourself with the product. It covers the source code structure and compilation methods, firmware flashing techniques, usage and testing of development board interfaces, and troubleshooting methods for common issues.
 
-Chapter 1: Product Overview
+**Chapter 1: Product Overview**
 
-Introduces the OK3588-C platform interface resources, hardware configurations of the five compatible SoMs, and system login methods;
+* Introduces the OK3588-C platform interface resources, hardware configurations of the five compatible SoMs, and system login methods;
 
-Chapter 2: System Flashing Guide
+**Chapter 2: System Flashing Guide**
 
-Describes how to obtain and flash the firmware;
+* Describes how to obtain and flash the firmware;
 
-Chapter 3: Compilation Guide
+**Chapter 3: Compilation Guide**
 
-Details how to obtain the source code, its structure, and compilation steps;
+* Details how to obtain the source code, its structure, and compilation steps;
 
-Chapter 4: Operation Guide
+**Chapter 4: Operation Guide**
 
-Explains the OK3588 interface resources and their testing methods;
+* Explains the OK3588 interface resources and their testing methods;
 
-Chapter 5: Development Guide
+**Chapter 5: Development Guide**
 
-Summarizes common issues encountered during development and their corresponding solutions.
+* Summarizes common issues encountered during development and their corresponding solutions.
 
 ### 2\. Packing List
 
 Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. 
 
 As shown in the figure:
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
+![Image](1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
 
 ### 3\. Quick Start
 
@@ -144,9 +144,9 @@ OK3588-C Interfaces:
 
 
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png)
+<img src="./images/OK3588-C_Linux_Buildroot_User_Manual/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png" alt="Image" style="zoom: 56%;" />
 
-#### 3.2 How to Debug
+#### 3.2 Debug
 
 Login methods: Serial login and network login.                                                              
 
@@ -170,7 +170,7 @@ Please download from the Resource Download ([https://www.forlinx.net/resources/d
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776402431048_40641e90_5e96_4e07_aa79_2da433c0b8e4.png)
 
-###### 3.2.1.3 How to Use PuTTY
+###### 3.2.1.3 **Usage of PuTTY**
 
 Take putty as an example to introduce the setting mode of the putty terminal:
 
@@ -195,9 +195,9 @@ Step 4: Power on the development board. If the startup information appears as sh
 ```c
 Welcome to Forlinx OK3588 Board
 
-Tel: 0312-3119192
+Tel: +86 312 311 9192
 Linux Support: linux@forlinx.com
-User Manual: https://forlinx-book.yuque.com/rh74yu/ok3588
+User Manual: https://www.forlinx.net/resources/download-center.html
 
 Powered by Forlinx - Enjoy!
 
@@ -222,7 +222,7 @@ To log in to the development board via SSH,
 
 After successful login, the following message is printed:
 
-```c
+```plain
 login as: root
 root@OK3588-C-buildroot:~#
 ```
@@ -259,13 +259,13 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM m
 <!-- 这是一张图片，ocr 内容为： -->
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
 
-Click the “Driver Installation”.
+Click the “Driver Installation”. The text is `Driver Installation`.
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
 
-The driver is installed successfully. Click “OK“.
+The driver is installed successfully. Click “OK“. 
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
 
 ##### 3.1.2 OTG Full Flashing
 
@@ -284,11 +284,14 @@ Press the Reset button to reset the system.
 After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : Found ONE LOADER Device.
      ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
 
-1\. Click “Upgrade Firmware”;
+- Click “Upgrade Firmware”;
 
-2\. Click “Firmware” and browse to locate the update.img file you wish to flash;
 
-3\. Click “Upgrade” to flash.
+- Click “Firmware” and browse to locate the update.img file you wish to flash;
+
+
+- Click “Upgrade” to flash.
+
 
 If the loader is damaged and cannot enter Loader Mode, you can force the board into Maskrom Mode. To do this, hold down the Maskrom button (located to the right of the RTC battery holder on the carrier board) and then press the Reset button. At this point, the system will indicate that a Maskrom device has been detected. The programming process in Maskrom Mode is the same as in Loader Mode. It is recommended to use the update.img file for programming.
 
@@ -300,8 +303,8 @@ During R\&D, full reflashing is time-consuming. This section introduces OTG-base
 
 After a full compilation, individual partition images can be found in the rockdev directory.
 
-```c
-qilinfeng@85d9c321e426:~/guowai/OK3588-linux-source/rockdev$ tree
+```plain
+linux-source/rockdev$ tree
 .
 ├── boot.img -> ../../kernel-6.1/boot.img
 ├── env.img -> ../env.img
@@ -381,11 +384,11 @@ After successfully creating the card, the following prompt will appear:
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)                    
 
-1. Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
+- Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
 
-2. Insert the prepared TF flashing card into the the development board, then power up. The system will automatically enter the flashing process;
+- Insert the prepared TF flashing card into the the development board, then power up. The system will automatically enter the flashing process;
 
-3. After flashing is complete, the serial terminal and display will output the following prompt information:
+- After flashing is complete, the serial terminal and display will output the following prompt information:
 
 `Please remove SD CARD!!!, wait for reboot.`
 
@@ -500,7 +503,7 @@ id_ed25519.pub			// Public key for uploading to GitHub
 Log in to your GitHub account. Click your profile picture in the top-right corner and go to `Settings->SSH and GPG keys`.
 
 Click the `New SSH key`. Fill in, copy the public key content generated in the above steps to the Key field, and add.
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
+![Image](images/OK3588-C_Linux_Buildroot_User_Manual/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
 
 ##### 1.3.3 Verifying the GitHub Connection
 
@@ -615,7 +618,7 @@ mac/
 
 OK3588-C source code structure:
 
-```c
+```plain
 OK-linux-source$ tree -L 1
 .
 ├── Makefile -> device/rockchip/common/Makefile
@@ -646,7 +649,7 @@ The configuration file path for the SDK is: (`OK-linux-source/device/rockchip/.c
 
 The naming rule for the configuration files is as follows:
 
-```c
+```plain
 <vendor>_<chip>_<model>-<extra>_<OS>_defconfig
 
 vendor: vendor of the product
@@ -662,7 +665,7 @@ OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK
 
 As an example, refer to the Buildroot SDK configuration file for OK3588-C/3588-C2:
 
-```c
+```plain
 RK_BUILDROOT_BASE_CFG="ok3588-c"            # set the config fragments to be used during buildroot compilation
 RK_ROOTFS_HOSTNAME_CUSTOM=y                 # Whether to customize the hostname of rootfs
 RK_ROOTFS_HOSTNAME="OK3588-C-buildroot"     # set the hostname of rootfs
@@ -676,13 +679,13 @@ RK_USE_FIT_IMG=y                            # Whether to use the FIT (Flattened 
 
 ```
 
-The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, chapter 3.2.2.<font style="color:#DF2A3F;"> (Provide hyperlink)
+The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, [chapter 3.2.2](#3.2.2 Partial Compilation).
 
 #### 2.3 Partitions
 
 The following parameter file configures the location of the firmware partitions, with the path: `OK-linux-source/device/rockchip/rk3588/parameter`.
 
-```c
+```plain
 FIRMWARE_VER: 1.0
 MACHINE_MODEL: RK3588
 MACHINE_ID: 007
@@ -715,7 +718,7 @@ It is recommended to use Ubuntu 22.04 or a later version for compilation.
 
 Execute the following commands in your build environment (the installation commands apply to Ubuntu 22.04):
 
-```c
+```plain
 sudo apt update
 sudo apt-get install openssh-server vim git fakeroot    //Necessary toolkit installation
 sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool expect expect-dev \
@@ -728,11 +731,12 @@ fakeroot p7zip-full gettext
 
 If compilation encounters errors, you can install the corresponding software packages based on the error messages. 
 
-1\. Python requires version 3.6 or higher;
+- Python requires version 3.6 or higher;
 
-2\. Make requires version 4.0 or higher;
 
-3\. lz4 requires version 1.7.3 or higher.
+- Make requires version 4.0 or higher;
+
+- lz4 requires version 1.7.3 or higher.
 
 ##### 3.1.2 Configuring the SDK Build Options
 
@@ -740,7 +744,7 @@ All RK3588 compilation is handled through the **build.sh** script in the SDK dir
 
 | ./build.sh chip| choose your chip|
 |----------|----------|
-| ./build.sh all| build images|
+| ./build.sh all| build and package all partition images. |
 | ./build.sh uboot| build u-boot|
 | ./build.sh kernel| build kernel|
 | ./build.sh kconfig| modify kernel defconfig|
@@ -748,13 +752,13 @@ All RK3588 compilation is handled through the **build.sh** script in the SDK dir
 | ./build.sh buildroot-config| modify buildroot defconfig|
 | ./build.sh updateimg| build update image|
 
-+ Navigate to the SDK root directory.
-+ Run `./build.sh chip`.
++ Navigate to the SDK root directory;
++ Run `./build.sh chip`;
 + Select the corresponding option based on the target SoM:
-  - For **OK3588-C / OK3588-C2**: Enter `3` for “OK3588_C_buildroot”
-  - For **OK3588S2-C**: Enter `1` for “OK3588S2_C_buildroot”
+  - For **OK3588-C / OK3588-C2**: Enter `3` for “OK3588_C_buildroot”;
+  - For **OK3588S2-C**: Enter `1` for “OK3588S2_C_buildroot”.
 
-```c
+```plain
 OK-linux-source$ ./build.sh chip
 Log colors: message notice warning error fatal
 
@@ -778,7 +782,7 @@ Which one would you like? [1]: 3
 
 Execute the following command to perform a full compilation:
 
-```c
+```plain
 OK-linux-source$./build.sh all
 ```
 
@@ -787,7 +791,7 @@ A full build typically takes **1–2 hours**, depending on host performance and 
 Once completed, system images are generated under `OK-linux-source/rockdev/`.
 Directory structure (symbolic links point to actual source files):
 
-```c
+```plain
 OK-linux-source/rockdev$ tree
 .
 ├── MiniLoaderAll.bin -> ../../u-boot/rk3588_spl_loader_v1.19.113.bin
@@ -813,7 +817,7 @@ If only compiling u-boot, uboot.img will be generated.
 
 Path: OK-linux-source/u-boot/uboot.img. The command is as follows:
 
-```c
+```plain
 OK-linux-source$./build.sh uboot
 ```
 
@@ -833,13 +837,13 @@ Path:`OK-linux-source/kernel-6.1/boot.img`.
 
 The command is as follows:
 
-```c
+```plain
 ./build.sh kernel
 ```
 
 Compiling the kernel alone takes about two minutes.
 
-The kernel device tree file directory is: `OK-linux-source/kernel-6.1/arch/arm64/boot/dts/rockchip`. 
+The kernel device tree file directory is: `OK-linux-source/kernel-6.1/arch/arm64/boot/dts/rockchip/`. 
 
 The device tree files are:
 
@@ -858,7 +862,7 @@ The kernel configuration file is:
 
 If you want to configure the kernel, a full compilation must be completed first. To enter the kernel’s menuconfig menu, execute the following operations in the source code directory:
 
-```c
+```plain
 OK-linux-source$./build.sh kconfig
 ```
 
@@ -872,7 +876,7 @@ The buildroot configuration file is `OK-linux-source/buildroot/configs/rockchip
 
 Run the following command to configure the buildroot menu:
 
-```c
+```plain
 OK-linux-source$./build.sh buildroot-config
 ```
 
@@ -903,7 +907,7 @@ Run the following command to compile buildroot individually:
 
 buildroot：
 
-```c
+```plain
 ./build.sh buildroot
 ```
 
@@ -913,7 +917,7 @@ You can flash the compiled rootfs.img to the board via OTG, or include it as par
 
 You can see the corresponding libraw.so under /usr/lib directory.
 
-```c
+```plain
 root@OK-C-buildroot:/usr/lib# find . -name "*raw*"
 ./python3.11/encodings/raw_unicode_escape.pyc
 ./python3.11/lib2to3/fixes/fix_raw_input.pyc
@@ -935,50 +939,75 @@ This chapter explains how to install the cross-compilation toolchain and compile
 
 Navigate to the home directory of your compilation environment and obtain thecross-compilation toolchain using the following command:
 
-```c
+```plain
 wget 'https://github.com/FLembedded/buildroot_dl/releases/download/buildroot_sdk/buildroot-sdk.tar.gz'
 ```
 
 Extract`buildroot-sdk.tar.gz`：
 
-```c
+```plain
 forlinx@ubuntu:~$ tar -zvxf  buildroot-sdk.tar.gz
 ```
 
 Enter `aarch64-buildroot-linux-gnu_sdk-buildroot `directory to execute relocate-sdk.sh
 
-```c
+```plain
 forlinx@ubuntu:~/aarch64-buildroot-linux-gnu_sdk-buildroot$ ./relocate-sdk.sh
 ```
 
 ##### 3.3.2 Compiling the Application
 
-1\. Add the cross-compiler to your PATH:
+- Add the cross-compiler to your PATH:
 
-```c
+
+```plain
 export PATH=/home/your-hostname/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/:$PATH
 ```
 
-2\. Cross compile, take the Forlinx watchdog test program as an example, and enter the directory  `OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog`：
+In addition, it is more recommended to directly use the environment setup script in the SDK. Proceed as follows.
 
-```c
+```plain
+aarch64-buildroot-linux-gnu_sdk-buildroot$ source environment-setup
+ _           _ _     _                 _
+| |__  _   _(_) | __| |_ __ ___   ___ | |_
+| '_ \| | | | | |/ _` | '__/ _ \ / _ \| __|
+| |_) | |_| | | | (_| | | | (_) | (_) | |_
+|_.__/ \__,_|_|_|\__,_|_|  \___/ \___/ \__|
+
+       Making embedded Linux easy!
+
+Some tips:
+* PATH now contains the SDK utilities
+* Standard autotools variables (CC, LD, CFLAGS) are exported
+* Kernel compilation variables (ARCH, CROSS_COMPILE, KERNELDIR) are exported
+* To configure do "./configure $CONFIGURE_FLAGS" or use
+  the "configure" alias
+* To build CMake-based projects, use the "cmake" alias
+```
+
+- Cross compile, take the Forlinx watchdog test program as an example, and enter the directory  `OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog`：
+
+
+```plain
 OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ ls
 Makefile  watchdog.c
 OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ aarch64-linux-gcc watchdog.c -o fltest_watchdog
 ```
 
-3\. Use the file command to check the generated file information:
+- Use the file command to check the generated file information:
 
-```c
+
+```plain
 OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$/usr/bin/file fltest_watchdog 
 fltest_watchdog: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, not stripped
 ```
 
 The result will show that a 64-bit ARM file is generated.
 
-4\. Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/root path. Take U disk as an example, copy it to the development board and run the test.
+- Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/root path. Take U disk as an example, copy it to the development board and run the test.
 
-```c
+
+```plain
 root@OK3588-buildroot:~# cp /run/media/sda1/fltest_watchdog /root/
 root@OK3588-buildroot:~# ./fltest_watchdog
 Watchdog Ticking Away!
@@ -997,7 +1026,7 @@ The OK3588 supports 4G and 5G modules (4G is EM05-CE, and 5G is RM500U).
 The location of the 4G/5G module and SIM card.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776824189000_2e7b00bd_af9b_4d9f_b785_8ef0f06ab008.png)
 
-##### **1\. 4G**
+##### 1\. 4G
 
 Connect the 4G module and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.
 
@@ -1065,7 +1094,7 @@ The network nodes of 4G.
 
 **⚠️Note: Please select the domain name to test according to the your region.**
 
-```c
+```plain
 root@OK3588-buildroot:~# ping -I wwan0 www.forlinx.com -c 3
 PING s-526319.gotocdn.com (211.149.226.120) from 10.98.203.144 wwan0: 56(84) bytes of data.
 64 bytes from 211.149.226.120: icmp_seq=1 ttl=50 time=312 ms
@@ -1077,15 +1106,16 @@ PING s-526319.gotocdn.com (211.149.226.120) from 10.98.203.144 wwan0: 56(84) byt
 rtt min/avg/max/mdev = 81.694/197.930/312.431/94.205 ms
 ```
 
-##### **2\. 5G**
+##### 2\. 5G
 
 Connect the 5G module RM500U and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774484133017_bb5670e1_315a_443f_abe1_167c967543b1.png)
 
-1\. Connect the module. After the development board and the module are powered on, you can check the USB status through the`lsusb`command:
+- Connect the module. After the development board and the module are powered on, you can check the USB status through the`lsusb`command:
 
-```shell
+
+```plain
 root@OK3588-buildroot:~# lsusb
 Bus 005 Device 001: ID 1d6b:0002
 Bus 003 Device 001: ID 1d6b:0002
@@ -1098,14 +1128,15 @@ Bus 002 Device 001: ID 1d6b:0003
 
 To view the device node status:
 
-```shell
+```plain
 root@OK3588-buildroot:~# ls /dev/ttyUSB*
 /dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2  /dev/ttyUSB3  /dev/ttyUSB4
 ```
 
-2\. After successful device identification, you can perform dial-up Internet access testing;
+- After successful device identification, you can perform dial-up Internet access testing;
 
-```shell
+
+```plain
 root@OK3588-buildroot:~# quectelCM &
 [1] 1357
 root@OK3588-buildroot:~# [01-24_22:54:18:540] Quectel_QConnectManager_Linux_V1.6.0.24
@@ -1177,13 +1208,13 @@ udhcpc: broadcasting select for 192.168.42.2, server 192.168.42.1
 udhcpc: lease of 192.168.42.2 obtained from 192.168.42.1, lease time 86400
 ```
 
-3. The ping domain name test.
+- The ping domain name test.
 
 The 5G network node is`eth2`.
 
 **⚠️Note: Please select the domain name to test according to the region of the user.**
 
-```c
+```plain
 root@OK3588-buildroot:~# ping -I eth2 www.forlinx.com -c 3
 PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes of data.
 [01-24_22:49:20:156] AT> AT+QNETDEVSTATUS=1
@@ -1197,7 +1228,7 @@ PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes
 
 #### ADC
 
-##### **1\. Introduction**
+##### 1\. Introduction
 
 An ADC (analog-to-digital converter) is an electronic device or circuit that converts a continuous analog signal into a discrete digital signal.
 
@@ -1210,11 +1241,11 @@ There are 8 x built-in ADC. Among them, saradc2, saradc4, saradc5, saradc6, and 
 
 The source code location of the ADC key driver in the kernel:`drivers/input/keyboard/adc-keys.c`.
 
-##### **2\. Device Tree**
+##### 2\. Device Tree
 
 The ADC device tree definitions are located in: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
-```c
+```plain
 	saradc: saradc@fec10000 {
 		compatible = "rockchip,rk3588-saradc";
 		reg = <0x0 0xfec10000 0x0 0x10000>;
@@ -1234,7 +1265,7 @@ OK3588-C/3588-C2 :`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
 OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 &saradc {
 	status = "okay";
 	vref-supply = <&vcc_1v8_s0>;
@@ -1243,7 +1274,7 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
 Where the saradc1 channel is used for ADC key detection, defined by the device tree node:
 
-```c
+```plain
 adc_keys: adc-keys {
 		compatible = "adc-keys";
 		io-channels = <&saradc 1>;
@@ -1277,7 +1308,7 @@ adc_keys: adc-keys {
 	};
 ```
 
-##### **3\. Application**
+##### 3\. Application
 
 ###### 3.1 Voltage Input Test
 
@@ -1287,7 +1318,7 @@ Select saradc2 for testing. The ADC pin hardware schematic is as follows. The ch
 
 Short-circuit pin 1 of connector P12 and pin 2 of connector P13, then read the value of saradc2:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# cd /sys/bus/iio/devices/iio\:device0/
 root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 3
@@ -1295,7 +1326,7 @@ root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 
 Short-circuit pin 1 of connector P12 and pin 1 of connector P13, then read the value ofsaradc2:
 
-```c
+```plain
 root@OK3588-C-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 4095
 ```
@@ -1308,7 +1339,7 @@ The saradc1 channel is utilized for the ADC key detection circuit, which operate
 
 Use the`fltest_keytest`command-line tool for key testing. Currently,`fltest_keytest`supports testing the four keys on the baseboard: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_keytest
 Available devices:
 /dev/input/event6:    adc-keys
@@ -1316,7 +1347,7 @@ Available devices:
 
 While pressing and releasing the keys sequentially, the terminal outputs are:
 
-```c
+```plain
 key115 Presse
 key115 Released
 key114 Presse
@@ -1329,13 +1360,13 @@ key158 Released
 
 `fltest_keytest`ource code path:`OK-linux-source/app/forlinx/forlinx_cmd/fltest_keytest`
 
-###### 3.3 While pressing and releasing the keys sequentially, the terminal outputs are:
+###### 3.3 Application Programming
 
 In the OK3588, the input event node for ADC keys is located at /dev/input/eventX (where X is the specific device number). Applications must include the header file \<linux/input.h>, which defines the structures and macros related to input events.
 
 The core data structure struct input\_event is defined as follows:
 
-```c
+```plain
 struct input_event {
     struct timeval time;  // Event timestamp
     __u16 type;           // Event type (e.g., EV_KEY)
@@ -1353,7 +1384,7 @@ Common values for the type field are defined by the following macros:
 
 The ioctl command used to get the device name:
 
-```c
+```plain
 ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 ```
 
@@ -1361,7 +1392,7 @@ ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 
 The input device name corresponding to the OK3588 ADC keys is `"adc-keys"`. Since there might be multiple event devices under `/dev/input/`, it’s necessary to first scan and find the correct device node.
 
-```c
+```plain
 ndev = scandir(DEV_INPUT_EVENT, &namelist, is_event_device, alphasort);
 if (ndev <= 0)
 	return NULL;
@@ -1369,7 +1400,7 @@ if (ndev <= 0)
 
 is\_event\_device serves as a filter function, only retaining devices whose filenames start with “event”:
 
-```c
+```plain
 static int is_event_device(const struct dirent *dir) {
     return strncmp(EVENT_DEV_NAME, dir->d_name, 5) == 0;
 }
@@ -1377,7 +1408,7 @@ static int is_event_device(const struct dirent *dir) {
 
 Traverse all event devices, read the device name via ioctl, and filter out the device named “adc-keys”.
 
-```c
+```plain
 ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 if (strncmp(name, "adc-keys", strlen("adc-keys")) != 0)
 	continue;
@@ -1387,7 +1418,7 @@ if (strncmp(name, "adc-keys", strlen("adc-keys")) != 0)
 
 Open the key device using the `open` function to obtain a file descriptor:
 
-```c
+```plain
 keys_fd = open(event_name, O_RDONLY);
 if(keys_fd<=0)
 {
@@ -1402,7 +1433,7 @@ Here, `event_name`  is the device node path obtained during the scanning phase, 
 
 After opening the device, use the `read` function in a loop to read the`struct input_event` and obtain key events:
 
-```c
+```plain
 while(1)
 {	
 	if(read(keys_fd,&t,sizeof(t))==sizeof(t)) {
@@ -1421,13 +1452,13 @@ Each `read` operation retrieves one complete `input_event`, which typically cons
 
 After completing key monitoring, close the device file descriptor to release resources.
 
-```c
+```plain
 close(keys_fd);
 ```
 
-### Ethernet
+#### Ethernet
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The OK3588-C board is equipped with two Gigabit Ethernet ports. With an Ethernet cable connected, the factory default configuration sets eth0 to a static IP, while eth1 is not configured. Both network ports use theRTL8211FSI PHY chip. The driver source code is located within the kernel:`drivers/net/ethernet/stmicro/stmmac`.
 
@@ -1439,7 +1470,7 @@ The wired network interface locations on the board are as follows:
 The RTL8211 schematic is shown below:
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1773044057275_606b8e8e_8670_4024_b3d8_f8d8cbc36cbb.png)
 
-##### 1.1 RGMII Mode
+**RGMII Mode**
 
 The RK3588 GMAC controller supports four RGMII clock configuration schemes:
 
@@ -1452,11 +1483,11 @@ The RK3588 GMAC controller supports four RGMII clock configuration schemes:
 
 OK3588-C uses config1.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 The device tree nodes for the OK3588-C network are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 &mdio0 {
 	rgmii_phy0: phy@1 {
 		compatible = "ethernet-phy-ieee802.3-c22";
@@ -1524,15 +1555,15 @@ Where mdio0 and gmac0 correspond to the device tree nodes of eth0, and mdio1 and
 
 The device tree nodes for the OK3588S2-C network are located at: `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 Modifying IP Address
+###### 3.1 Modifying IP Address
 
-###### 3.1.1 DHCPC IP
+**3.1.1 DHCPC IP**
 
 Modify the following configuration file to set eth0 to obtain the IP automatically:`/etc/systemd/network/10-eth0.network`.
 
-```c
+```plain
 root@OK3588-buildroot:~# vi /etc/systemd/network/10-eth0.network   	  //Open the configuration file
 [Match]
 Name=eth0
@@ -1543,15 +1574,15 @@ DHCP=yes
 
 After the settings are completed, restart the network service.
 
-```c
+```plain
 root@OK3588-C-buildroot:/# systemctl restart systemd-networkd
 ```
 
-###### 3.1.2 Static IP
+**3.1.2 Static IP**
 
 You can modify the default IP address by modifying the following configuration file:`/etc/systemd/network/10-eth0.network`。
 
-```c
+```plain
 root@OK3588-C-buildroot:/# vi /etc/systemd/network/10-eth0.network  
 [Match]
 Name=eth0
@@ -1572,19 +1603,19 @@ DNS is used to specify the name resolution server.
 
 Restart the network service after the setup is completed。
 
-```c
+```plain
 root@OK3588-C-buildroot:/# systemctl restart systemd-networkd
 ```
 
-##### 3.2 Network Status
+###### 3.2 Network Status
 
 Connect the network cable to the ETH0 port of the board before the test.
 
-###### 3.2.1 Ifconfig
+ **3.2.1 Ifconfig**
 
 `ifconfig`is a classic Network Interface Configuration and Viewing Tools.
 
-```c
+```plain
 #View all network interface information.
 root@OK3588-C-buildroot:~# ifconfig
 eth0      Link encap:Ethernet  HWaddr 2E:1E:A1:F4:D3:EE
@@ -1606,13 +1637,13 @@ lo        Link encap:Local Loopback
 
 ```
 
-###### 3.2.2 Ethtool
+**3.2.2 Ethtool**
 
 `ethtool` is a necessary tool for Linux system to troubleshoot physical layer and driver layer problems. It provides more in-depth hardware-level information than the ifconfig `ifconfig`command.
 
-```c
+```plain
 # Show the basic settings of eth0
-root@OK3588-C-buildroot:/etc/systemd/network# ethtool eth0
+root@OK3588-C-buildroot:~# ethtool eth0
 Settings for eth0:
         Supported ports: [ TP    MII ]
         Supported link modes:   10baseT/Half 10baseT/Full
@@ -1649,14 +1680,14 @@ Settings for eth0:
         Link detected: yes
 ```
 
-##### 3.3 Network Connectivity
+###### 3.3 Network Connectivity
 
-###### 3.3.1 Ping
+**3.3.1 Ping**
 
 Configure the network IP according to your actual network conditions. Network connectivity can be tested using the ping command (it’s necessary to ping an IP within the same subnet).
 
-```c
-root@OK3588-C-buildroot:/etc/systemd/network# ping 192.168.0.100
+```plain
+root@OK3588-C-buildroot:~# ping 192.168.0.100
 PING 192.168.0.100 (192.168.0.100) 56(84) bytes of data.
 64 bytes from 192.168.0.100: icmp_seq=1 ttl=128 time=0.320 ms
 64 bytes from 192.168.0.100: icmp_seq=2 ttl=128 time=0.305 ms
@@ -1669,21 +1700,21 @@ PING 192.168.0.100 (192.168.0.100) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.271/0.343/0.487/0.074 ms
 ```
 
-###### 3.3.2 Iperf3
+**3.3.2 Iperf3**
 
 Configure the network IP according to your actual network conditions. The network throughput can be tested using theiperf3 tool.
 
 Server:
 
-```c
+```plain
 iperf3.exe -s
 ```
 
 Client (Board):
 
-```c
+```plain
 # iperf3 -c IP_ADDRESS_OF_IPERF_SERVER
-root@OK3588-C-buildroot:/etc/systemd/network# iperf3 -c 192.168.0.100
+root@OK3588-C-buildroot:~# iperf3 -c 192.168.0.100
 Connecting to host 192.168.0.100, port 5201
 [  5] local 192.168.0.232 port 43934 connected to 192.168.0.100 port 5201
 [ ID] Interval           Transfer     Bitrate         Retr  Cwnd
@@ -1707,16 +1738,35 @@ iperf Done.
 
 The results indicate a stable bitrate between 948 - 953 Mbits/sec, confirming that the Gigabit network connection is functioning normally with good performance.
 
-###### 3.3.3 SFTP
+**3.3.3 SFTP**
 
 The OK3588 development board supports SFTP services, which are enabled automatically upon startup. Once the IP address is configured, the board can be used as an SFTP server. The following describes how to utilize the FTP tool for file transfer.
 
 Install the file Zilla tool on windows and follow the steps shown in the figure below. The user name and password are forlinx.
 
 Open the filezilla tool, click File, and select Site Manager.
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
 
-### Frequency
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-23-14.png)
+
+**⚠️Note**: **FileZilla is provided as a compressed package, and the initial language may be Chinese. You can download FileZilla yourself, or after unzipping it, follow the steps below to change the language to English.**
+
+* Click the second "Edit" option in the navigation bar to open the drop-down menu and select the Settings option;
+
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-01-58.png)
+
+* Enter the Settings interface, select the Language option in the left navigation bar, then choose the corresponding language on the right side. In the illustration, select English(en_US);
+
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-03-55.png)
+
+* After selecting the language, the change will take effect only after restarting FileZilla. Click OK and restart FileZilla;
+
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-04-40.png)
+
+* After restarting, the interface will switch to English.
+
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_14-16-29.png)
+
+#### Frequency
 
 The RK3588 uses a small and large core architecture and integrates four Cortex-A55 (small cores) and four Cortex-A76 (large cores). 
 
@@ -1729,51 +1779,57 @@ The RK3588 uses a small and large core architecture and integrates four Cortex-A
 
 Take setting the CPU4 frequency as an example:
 
-1. View all supported cpufreq governor types:
+- View all supported cpufreq governor types:
 
-```bash
+
+```plain
 root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_governors
 interactive conservative ondemand userspace powersave performance schedutil
 ```
 
-interactive：Designed for mobile devices such as Android.
+**interactive**：Designed for mobile devices such as Android.
 
-ondemand：Dynamically adjust based on current CPU usage.
+**ondemand**：Dynamically adjust based on current CPU usage.
 
-conservative：Similar to ondemand, but the frequency adjustment is smoother. The frequency is stepped up or down rather than jumping directly to the highest.
+**conservative**：Similar to ondemand, but the frequency adjustment is smoother. The frequency is stepped up or down rather than jumping directly to the highest.
 
-userspace：Delegate frequency control to userspace programs.
+**userspace**：Delegate frequency control to userspace programs.
 
-powersave：Set the CPU frequency to the minimum fixed value.
+**powersave**：Set the CPU frequency to the minimum fixed value.
 
-performance：Set the CPU frequency to the maximum fixed value.
+**performance**：Set the CPU frequency to the maximum fixed value.
 
-schedutil: Tightly integrated with the Linux scheduler (such as CFS), it dynamically adjusts frequency by leveraging the CPU utilization information (util\_avg) provided by the scheduler.
+**schedutil**: Tightly integrated with the Linux scheduler (such as CFS), it dynamically adjusts frequency by leveraging the CPU utilization information (util\_avg) provided by the scheduler.
 
-2\. Check the frequency steps supported by the current CPU:
+- Check the frequency steps supported by the current CPU:
 
-```bash
+
+```plain
 root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies
 408000 600000 816000 1008000 1200000 1416000 1608000 1800000 2016000 2208000 2352000
 ```
 
-3. Set the current mode to user mode and change the frequency to 1800000:
+- Set the current mode to user mode and change the frequency to 1800000:
 
-```bash
+
+```plain
 root@OK3588-C-buildroot:~# echo userspace > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 root@OK3588-C-buildroot:~# echo 1800000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 ```
 
-4. Check whether the frequency has been changed to 1800000:
+- Check whether the frequency has been changed to 1800000:
 
-```bash
+
+```plain
 root@OK3588-C-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
 1800000
 ```
 
-### GPIO
+**⚠️Note**: **The small core frequency cannot be lower than the large core frequency.**
 
-#### 1\. Introduction
+#### GPIO
+
+##### 1\. Introduction
 
 GPIO (General-Purpose Input/Output) is a general-purpose digital signal pin on microcontrollers or SoCs, whose function can be flexibly configured by software at runtime to interact with external devices via simple digital signals.
 
@@ -1781,17 +1837,17 @@ The extended I/O pins are led out from the carrier board, located on P11.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png)
 
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1718954759014_d61c0905_7a0e_46a2_81b5_ba7ccfc72c9c.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/Snipaste_2026-05-26_17-10-56.png)
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
-##### 2.1 Native GPIO
+###### 2.1 Native GPIO
 
 The device tree node for native GPIO is located at `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 Take gpio3 as an example:
 
-```c
+```plain
 gpio3: gpio@fec40000 {
 		compatible = "rockchip,gpio-bank";
 		reg = <0x0 0xfec40000 0x0 0x100>;
@@ -1808,7 +1864,7 @@ gpio3: gpio@fec40000 {
 
 If you need to configure an I/O pin as an external interrupt pin, you can refer to the device tree node configuration for the GT911 touchscreen. You can set GPIO3\_C0 as the interrupt pin, whilst designating GPIO3\_B7 as the reset pin for the touchscreen.
 
-```c
+```plain
 
 gt9xx_dsi0: gt9xx@14 {
         compatible = "goodix,gt911";
@@ -1834,12 +1890,15 @@ gt9xx_dsi0: gt9xx@14 {
 };
 ```
 
-+ interrupt-parent：Specifies the GPIO3 module as the interrupt controller.
-+ interrupts：Interrupt number and trigger type. RK\_PC0 denotes the PC0 pin of GPIO3, with the interrupt triggered by a falling edge.
-+ irq-gpio：Specifies the GPIO pin for the interrupt.
-+ pinctrl node：\<3 RK\_PB7 RK\_FUNC\_GPIO \&pcfg\_pull\_none> indicates that GPIO3\_B7 is configured for I/O functionality.
+**interrupt-parent**：Specifies the GPIO3 module as the interrupt controller.
 
-##### 2.2 Extend GPIO
+**interrupts**：Interrupt number and trigger type. RK\_PC0 denotes the PC0 pin of GPIO3, with the interrupt triggered by a falling edge.
+
+**irq-gpio**：Specifies the GPIO pin for the interrupt.
+
+**pinctrl node**：\<3 RK\_PB7 RK\_FUNC\_GPIO \&pcfg\_pull\_none> indicates that GPIO3\_B7 is configured for I/O functionality.
+
+###### 2.2 Extend GPIO
 
 The OK3588-C carrier board features a TCA6424 chip acting as an I/O expander, which provides an additional 24 x general-purpose input/output pins via the I²C bus to address the issue of insufficient GPIO pins on the host controller (such as a CPU or MCU).
 
@@ -1849,7 +1908,7 @@ OK3588-C/3588-C2 ：`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dts
 
 OK3588S2-C：`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &i2c2 {
 	status = "okay";
     //extend GPIO：TCA6424
@@ -1869,19 +1928,19 @@ OK3588S2-C：`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 };
 ```
 
-#### 3\. Application
+##### 3\. Application
 
 Please refer to the PinMUX table for the usage of the GPIO pins.
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
-Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
+Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "Hardware Resources" -> "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png)
 
-##### 3.1 Native GPIO
+###### 3.1 Native GPIO
 
-###### 3.1.1 Pin Calculation Method
+**3.1.1 Pin Calculation Method**
 
 RK3588 have 5 GPIO bank：GPIO0~GPIO4，Each group was numbered A0~A7, B0~B7, C0~C7, and D0~D7.
 
@@ -1889,54 +1948,54 @@ The naming convention for GPIOs is GPIOn\_xy, where x can be A, B, C, or D. In t
 
 Calculation Formula:
 
-```c
+```plain
 GPIOn_xy = n × 32 + (x - 1) × 8 + y
 ```
 
 Here is an example using GPIO3\_B0 to demonstrate the calculation of its GPIO number.
 
-```c
+```plain
 GPI03_B0 = 3 × 32 + (2 − 1) × 8 + 0 = 104
 ```
 
-###### 3.1.2 GPIO Test
+**3.1.2 GPIO Test**
 
 To test the native pins on the OK3588, please use:`fltest_gpio.sh`
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_gpio.sh -h
 /usr/bin/fltest_gpio.sh <GPIO_NAME> <1/0>
 User:/usr/bin/fltest_gpio.sh GPIO3_A7 1
 ```
 
-##### 3.2 Extended GPIO
+###### **3.2 Extended GPIO**
 
 The extended IOs belong to bank chip6, with a numbering range of 485 to 508.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# cat /sys/kernel/debug/gpio | grep i2c
 gpiochip6: GPIOs 485-508, parent: i2c/2-0023, 2-0023, can sleep:	
 ```
 
 Taking the GPIO\_P17 pin as an example for testing, to set GPIO\_P17 to a high level:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_extgpio.sh GPIO_P17 1
 ```
 
 To set GPIO\_P17 to a low level:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_extgpio.sh GPIO_P17 0
 ```
 
-### I2C
+#### I2C
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The Rockchip series of chips offers a standard I2C bus, enabling control and access to various external devices. The I2C controller transfers data between connected devices through serial data (SDA) and serial clock (SCL) lines. Each device has a unique address—whether it is a microcontroller (MCU), LCD driver, memory, or keyboard interface—and can function as a transmitter or receiver depending on its design.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Device Tree Node Path for I2C:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
@@ -1963,7 +2022,7 @@ OK3588-C/3588-C2 :`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
 OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &i2c7 {
 	status = "okay";
 	nau8822: nau8822@1a { #Using the I2C7 bus to communicate with the NAU8822
@@ -1981,11 +2040,11 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 };
 ```
 
-#### 3\. Application
+##### 3\. Application
 
 I2C tools (commonly written as i2c-tools) is a toolkit specifically designed for debugging I2C (Inter-Integrated Circuit) buses and peripherals in Linux environments. It includes a set of command-line tools that allow you to directly communicate with I2C devices in user space, eliminating the need to write and compile driver code for each test.
 
-##### 3.1 i2cdetect
+###### 3.1 i2cdetect
 
 Scan the I2C bus and detects connected device addresses, displaying them in a table format. `--`：No device present.`UU`:The address is occupied by a kernel driver; for example, to view devices on the I2C5 bus:
 
@@ -2004,7 +2063,7 @@ root@OK3588-C-buildroot:~# i2cdetect -y 5
 
 If you wish to manually operate a device using tools like i2cget or i2cset, you may first need to unload the corresponding kernel driver, or use the -f option to force access (this carries some risk).
 
-##### 3.2 i2cget
+###### 3.2 i2cget
 
 Reads an 8-bit value from a single register of a specified device.
 
@@ -2016,7 +2075,7 @@ i2cget -y 1 0x50 0x10
 
 **⚠️Note: This specific I2C device is not present on the OK3588-C board. This section only demonstrates the command usage.**
 
-##### 3.3 I2cset
+###### 3.3 I2cset
 
 Write a value to a single register of a specified device.
 
@@ -2028,9 +2087,9 @@ i2cset -y 1 0x50 0x10 0xAB
 
 **⚠️Note: This specific I2C device is not present on the OK3588-C board. This section only demonstrates the command usage.**
 
-### MMC
+#### MMC
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The on-board eMMC storage chip on the OK3588 platform is connected to a dedicated high-speed SDHCI bus. Its features are as follows: 
 
@@ -2062,17 +2121,19 @@ Based on the system initialization profile, the controller utilizes Advanced DMA
 
 Within the Linux system, the eMMC device is enumerated as mmcblk0 and exposes its internal hardware partitions:
 
-+ **User Data Area**: The primary storage partition for the root filesystem and user data.
-+ **Boot Partitions(mmcblk0boot0 and mmcblk0boot1)**: Dedicated hardware partitions typically used for storing bootloaders.
-+ **RPMB(mmcblk0rpmb, 4 MiB)**: Replay Protected Memory Block for secure data storage.
+**User Data Area**: The primary storage partition for the root filesystem and user data.
+
+**Boot Partitions(mmcblk0boot0 and mmcblk0boot1)**: Dedicated hardware partitions typically used for storing bootloaders.
+
+**RPMB(mmcblk0rpmb, 4 MiB)**: Replay Protected Memory Block for secure data storage.
 
 The location of the driver source code in the kernel:`drivers/mmc/host/dw_mmc-rockchip.c`
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Device tree configuration for the eMMC interface can be found here:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
-```c
+```plain
 sdhci: mmc@fe2e0000 {
     compatible = "rockchip,rk3588-dwcmshc", "rockchip,dwcmshc-sdhci";
     reg = <0x0 0xfe2e0000 0x0 0x10000>;
@@ -2099,7 +2160,7 @@ OK3588-C/3588-C2:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`�
 
 OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &sdhci {
     bus-width = <8>;
     no-sdio;
@@ -2112,9 +2173,9 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 };
 ```
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 Extended CSD Register
+###### 3.1 Extended CSD Register
 
 eMMC devices have an extensive amount of extra information and settings that are available via the Extended CSD registers. For a detailed list of the registers, please see manufacture datasheets.
 
@@ -2131,33 +2192,33 @@ HPI Features [HPI_FEATURE: 0x01]: implementation based on CMD13
 ...
 ```
 
-##### 3.2 Resizing Ext4 Root Filesystem
+###### 3.2 Resizing Ext4 Root Filesystem
 
 By default, the standard system images for the OK3588 platform automatically expand the root filesystem (rootfs) partition to its maximum capacity on the eMMC, and the filesystem is resized accordingly. Therefore, manual resizing is typically unnecessary when using the default firmware.
 
 This section aims to describe the process for resizing an ext4 root filesystem. If you flash a custom rootfs image that has not been expanded during development, or if you manually modify the underlying partition table, you can follow the standard procedures outlined below to adjust the filesystem size and fully utilize any remaining storage space.
 
-+ **Checking the Physical Partition Table:**
++ Check the Physical Partition Table:
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# parted /dev/mmcblk0 print
 ```
 
 You can resize the root partition to fully occupy the remaining disk space.
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# parted /dev/mmcblk0 resizepart 8 100%
 ```
 
-+ Checking Filesystem Mounts: 
++ Check Filesystem Mounts: 
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# df -h
 ```
 
-### PCle
+#### PCle
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 PCIe (Peripheral Component Interconnect Express) is a high-speed serial computer expansion bus standard used to connect the motherboard to high-performance external devices.
 
@@ -2170,11 +2231,11 @@ You can design PCIe bifurcation according to your specific requirements. For det
 
 PCIe driver source code location in the kernel:`drivers/pci/controller/pcie-rockchip.c`.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 OK3588-C/3588-C2 PCIe device tree node location:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 // Fixed regulator for PCIe 3.0 3.3V power supply
 vcc3v3_pcie30: vcc3v3_pcie30 {
 	compatible = "regulator-fixed";
@@ -2234,13 +2295,15 @@ vcc3v3_pcie20: vcc3v3-pcie20 {
 
 ```
 
-OK3588S2: PCIe device tree node location:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`. Note: The WiFi module uses a PCIe interface.
+OK3588S2: PCIe device tree node location:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`. 
 
-#### 3\. Application
+⚠️**Note**: **The WiFi module uses a PCIe interface.**
+
+##### 3\. Application
 
 Before powering on the system, insert the PCIe module into the PCIe slot on the carrier board. After power-on and startup, the successful enumeration of the corresponding device (ZHITAI TiPro5000 NVMe SSD) can be observed through`lspci`commands.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# lspci
 0002:20:00.0 PCI bridge: Rockchip Electronics Co., Ltd RK3588 (rev 01)
 0002:21:00.0 Non-Volatile memory controller: Yangtze Memory Technologies Co.,Ltd ZHITAI TiPro5000 NVMe SSD (rev 01)
@@ -2248,14 +2311,14 @@ root@OK3588-C-buildroot:~# lspci
 
 You can see the following NVMe nodes:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# ls /dev/nvme*
 /dev/nvme0  /dev/nvme0n1  /dev/nvme0n1p1  /dev/nvme0n1p2
 ```
 
 View the mount directory:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# ls /run/media/
 nvme0n1p1
 ```
@@ -2264,7 +2327,7 @@ Test the drive speed using dd:
 
 Write:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/nvme0n1p1/test bs=1M count=100 conv=fsync
 100+0 records in
 100+0 records out
@@ -2273,7 +2336,7 @@ root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/nvme0n1p1/test bs=1M co
 
 Read:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# dd if=/run/media/nvme0n1p1/test of=/dev/null bs=1M
 100+0 records in
 100+0 records out
@@ -2281,9 +2344,9 @@ root@OK3588-C-buildroot:~# dd if=/run/media/nvme0n1p1/test of=/dev/null bs=1M
 
 ```
 
-### PWM
+#### PWM
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 PWM is the abbreviation for Pulse Width Modulation. It is a technology that uses a digital signal (high and low levels) to produce analog-like effects. The core idea is to control the average output voltage or power by varying the proportion of time the signal stays high within a fixed period (i.e., the duty cycle).
 
@@ -2291,11 +2354,11 @@ There are four PMW on OK3588-C, they are pwm2, pwm4, and pwm5 and pwm6. Where pw
 
 Location of the backlight driver source code in the kernel:`drivers/video/backlight/pwm_bl.c`.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Location of OK3588-C/3588-C2 PMW device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 &pwm2 { //FAN
 	status = "okay";
 };
@@ -2328,15 +2391,15 @@ backlight_dsi0: backlight-dsi0 {
 
 Location of OK3588S2-C PWM device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 Screen Backlight Control
+###### 3.1 Screen Backlight Control
 
 The backlight brightness setting range is (0-255), where 255 represents the highest brightness and 0 indicates the backlight is turned off. After connecting an MIPI screen to the MIPI DSI0 interface and powering on,
 
 use the following command to view all backlight devices:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# ls /sys/class/backlight/
 backlight-dsi0  backlight-dsi1  backlight-edp1
 ```
@@ -2345,25 +2408,25 @@ Here, backlight-dsi0 corresponds to the DSI0 interface.
 
 To check the current backlight brightness value of the backlight-dsi0 device:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# cat /sys/class/backlight/backlight-dsi0/brightness
 ```
 
 To set the backlight brightness of the DSI0 screen to 0 (i.e., turn off the backlight), write 0 to the backlight device:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# echo 0 > /sys/class/backlight/backlight-dsi0/brightness
 ```
 
 To restore the backlight brightness of the DSI0 screen to 200, write 200 to the backlight device:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# echo 200 > /sys/class/backlight/backlight-dsi0/brightness
 ```
 
-### RTC
+#### RTC
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 RTC (Real-Time Clock) is a critical component that ensures the system maintains an accurate time reference, and it is widely used in fields such as IoT devices, industrial control, consumer electronics, and automotive electronics.
 
@@ -2375,7 +2438,7 @@ Schematic: The RTC schematic is as shown below:
 
 Driver Location: The RTC driver source code is located within the kernel at the specified path.`drivers/rtc/rtc-pcf8563.c`.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 The PCF8563 is on I2C5, so its device tree node is placed under the i2c5 node.
 
@@ -2383,7 +2446,7 @@ Path for OK3588-C/3588-C2: Refer to the specified device tree path`kernel-6.1/ar
 
 Path for OK3588S2-C: Refer to the specified device tree path`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 &i2c5 {
 	status = "okay";
 	pinctrl-names = "default";
@@ -2399,40 +2462,40 @@ Path for OK3588S2-C: Refer to the specified device tree path`kernel-6.1/arch/arm
 
 **⚠️Note: If a custom carrier board connects the RTC chip to a different I2C bus, the node must be moved under the corresponding I2C bus node in the device tree, ensuring the`rtc: pcf8563@51`I2C address matches the hardware design.**
 
-#### 3\. Application
+##### 3\. Application
 
 Before RTC testing, ensure a coin cell battery is installed on the board and its voltage is normal. Testing primarily involves using the`date`date and`hwclock`tools to set system/RTC time and verify that the system clock reads the RTC clock correctly after a power cycle.
 
 Set the system time: 
 
-```c
+```plain
 root@OK3588-C-buildroot:~# date -s "2025-10-27 10:05:02"
 Mon Oct 27 10:05:02 CST 2025
 ```
 
 Synchronize the system time to the hardware clock:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# hwclock -wu
 ```
 
 Display the current hardware clock time:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# hwclock -r
 Mon Oct 27 10:05:10 2025  0.000000 seconds
 ```
 
 After power cycling the board and booting the system, read the system time (date) to confirm synchronization.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# date
 Mon Oct 27 10:06:01 CST 2025
 ```
 
-### SD Card
+#### SD Card
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 There is one TF (Micro SD) card slot on the OK3588-C development board using the RK3588 SDMMC controller interface for external removable storage. This interface supports hot-plug. After insertion, the SD card is managed as a standard block device. Location of TF Card Port:
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583628115_fe45da11_8823_4fd3_9389_0b642243eb07.png)
@@ -2441,7 +2504,7 @@ There is one TF (Micro SD) card slot on the OK3588-C development board using the
 
 Location of driver source code`drivers/mmc/host/dw_mmc-rockchip.c`.
 
-##### 1.1 Device Node \& Mount Path
+###### 1.1 Device Node \& Mount Path
 
 After inserting the card, the kernel generates corresponding device nodes in `/dev` . The entire SD card can be accessed via the `/dev/mmcblk1` device node. Its partitions will appear as:
 
@@ -2453,7 +2516,7 @@ where X is the partition number (1 to the maximum supported). Each partition can
 
 The default mount path is:`/run/media/mmcblk1p1`。
 
-##### 1.2 Actual Configuration
+###### 1.2 Actual Configuration
 
 Actual configuration parameters of OK3588-C development board SD Card:
 
@@ -2466,13 +2529,13 @@ Actual configuration parameters of OK3588-C development board SD Card:
 | Write protection        | Disabled                        |
 | Hot plug detect         | **Supported**                   |
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Location of OK3588-C/3588-C2 SD Card device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 Location of OK3588-C SD Card device tree node: `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 &sdmmc {
     max-frequency = <150000000>;
     no-sdio;
@@ -2501,13 +2564,13 @@ DTS features description:
 | `vqmmc-supply`| IO power supply with 3.3 V ↔ 1.8 V automatic switching (required for UHS mode);|
 | `sdmmc_det`| SD card insertion/removal detection pin (CD pin), supports hot-swapping.|
 
-#### 3\. Application
+##### 3\. Application
 
 The mounting node of the TF card is`/run/media/mmcblk1p1`, supporting hot plug, you can use the DD command to test the read and write speed of TF card.
 
 Write test:
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/mmcblk1p1/test bs=1M count=500 conv=fsync
 500+0 records in
 500+0 records out
@@ -2518,7 +2581,7 @@ Read test:
 
 To ensure that the data is accurate, restart the board and retest the read speed.
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M
 500+0 records in
 500+0 records out
@@ -2527,33 +2590,33 @@ root@OK3588-C-buildroot:~# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M
 
 After testing, before ejecting the TF card, you need to use umount to uninstall the TF:
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# umount /run/media/mmcblk1p1
 ```
 
-### System Suspend
+#### System Suspend
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The OK3588 platform supports system standby. The system standby process generally includes the following operations: turning off the power domain, module IP, clock, PLL, DDR refresh, switching the system bus to the low-speed clock (24m or 32K), powering off the VDD \_ arm/VDD \_ log, and configuring the wake-up source.
 
 Key positions are as follows:
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/transparent_final.png)
 
 The driver files related to system standby are:
 
-```c
+```plain
 kernel-6.1/drivers/soc/rockchip/rockchip_pm_config.c
 kernel-6.1/drivers/firmware/rockchip_sip.c
 kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
 ```
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 The system standby device tree node is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
-```c
+```plain
 rockchip_suspend: rockchip-suspend {
 	compatible = "rockchip,pm-rk3588";
 	status = "disabled";
@@ -2578,7 +2641,7 @@ rockchip_suspend: rockchip-suspend {
 };
 ```
 
-##### 2.1 General Configuration
+###### 2.1 General Configuration
 
 The following`rockchip,sleep-mode-config`can be added:
 
@@ -2593,7 +2656,7 @@ The following`rockchip,sleep-mode-config`can be added:
 
 The relevant configurations must be set based on the specific product wake-up source requirements. For example, if USB wake-up is required, the USB power and clock cannot be turned off during standby. Therefore, options such as RKPM\_SLP\_ARMOFF\_LOGOFF, RKPM\_SLP\_PMU\_DIS\_OSC, and RKPM\_SLP\_PMU\_PMUALIVE\_32K should not be configured.
 
-##### 2.2 Wake-up Configuration
+###### 2.2 Wake-up Configuration
 
 `rockchip,wakeup-config`The following configurations can be added:
 
@@ -2622,11 +2685,11 @@ The relevant configurations must be set based on the specific product wake-up so
 
 **This mode uses the internal timer of the PMU for wake-up. It generates an interrupt after a default timeout of 1 second and is generally used only during the development phase for testing sleep/wake functionality.**
 
-##### 2.3 IO Retention Configuration
+###### 2.3 IO Retention Configuration
 
 In sleep scenarios where vdd\_logic is powered off, if you still wish to maintain the level of a specific IO, this attribute can be configured. Configuration:
 
-```c
+```plain
 rockchip,sleep-io-ret-config = < (0
  | RKPM_VCCIO1_RET_EN
  ...
@@ -2636,7 +2699,7 @@ rockchip,sleep-io-ret-config = < (0
 
 Configuration source:
 
-```c
+```plain
 // Support the configuration of the following io domain
 #define RKPM_EMMCIO_RET_EN BIT(0)
 #define RKPM_VCCIO1_RET_EN BIT(1)
@@ -2650,13 +2713,13 @@ Configuration source:
 
 **⚠️Note: When you want to maintain the level of an IO, it is necessary to configure the IO domain to which that IO belongs. The power supply for that IO domain must not be cut off; otherwise, the level cannot be maintained.**
 
-##### **2.3 Enabling the Node**
+###### **2.3 Enabling the Node**
 
 `rockchip_suspend`The node is disabled by default. Please enable it in the corresponding Device Tree.
 
 The system standby Device Tree node for OK3588-C / 3588-C2 is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 &rockchip_suspend {
 	status = "okay";
 	rockchip,sleep-debug-en = <1>;  
@@ -2665,11 +2728,11 @@ The system standby Device Tree node for OK3588-C / 3588-C2 is located at:`kernel
 
 The system standby Device Tree node for OK3588S2-C is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-#### 3\. Application
+##### 3\. Application
 
 Short press PWRON, you can see:
 
-```c
+```plain
 INFO:    BL31: v2.3():v2.3-942-g98eaeb2f3:derrick.huang, fwver: v1.53
 INFO:    enter: cfg=0x1000608, sleeptimes:2
 INFO:    armoff_logoff
@@ -2730,7 +2793,7 @@ PMU1_GRF_SOC_CON2(0x7777) PMU0_GRF_OS_REGS9(0xf392629e)
 
 Press PWRON again to wake up:
 
-```c
+```plain
 INFO:    pmu_power_domains_suspend 1207 pd_st=0x24dfffff repair_st=0xfa900001 idle_st=0xbffff qst=0x28000
 2abcINFO:    pvtm_32k_config:pvtm:
 con0=0x23, con1=0x200
@@ -2796,15 +2859,15 @@ I/TC: Secondary CPU 7 switching to normal world boot
 
 For information on other system standby and wake-up methods, please refer to `OK-linux-source/docs/rk3588/en/Common/TRUST/Rockchip_RK3308_Developer_Guide_System_Suspend_EN.pdf`.
 
-### Type-C
+#### Type-C
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 OK3588-C features two Type-C interfaces and supports DP display. Type-C0 supports automatic recognition of HOST/DEVICE mode.
 
-Type-C1 supports HOST mode only. In Device mode, it can be used for flashing firmware, ADB file transfer, and debugging.
+Type-C1 supports HOST mode only. 
 
-In Host mode, you can connect standard USB devices.
+In Host mode, you can connect standard USB devices. In Device mode, it can be used for flashing firmware, ADB file transfer, and debugging.
 
 The Type-C interfaces are located on the board as indicated in the diagram below:
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776415133399_9ff1972f_771f_41c0_ba37_871d78d26671.png)
@@ -2836,13 +2899,13 @@ In the device tree, the above modules are associated through endpoint connection
 
 For detailed usage information on the USB interfaces of the RK3588, please refer to the following documents:`OK-linux-source/docs/rk3588/en/Common/USB/Rockchip_Developer_Guide_USB_EN.pdf`.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Location of OK3588-C/3588-C2 device tree nodes`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 Taking the Type-C0 interface as an example.
 
-```c
+```plain
 // USB3.0 OTG0 DWC3/xHCI Controller
 &usbdrd3_0 {
 	status = "okay";
@@ -2969,49 +3032,54 @@ Taking the Type-C0 interface as an example.
 
 Location of OK3588-C device tree nodes`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 Device mode
+###### 3.1 Device mode
 
 This mode can be used for firmware flashing, ADB file transfer, and debugging. Host mode allows for connecting standard USB peripherals.
 
-Device Mode<font style="color:#000000;">, when in Device mode, connect to a computer via a data cable. You will see “Android ADB Interface” in the computer’s Device Manager.
+Device Mode, when in Device mode, connect to a computer via a data cable. You will see “Android ADB Interface” in the computer’s Device Manager.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1718954755736_a5acc21c_f6b2_4915_9f89_0c5a95090beb.png)
 
-##### 3.2 Host mode
+###### 3.2 Host mode
 
 In this mode, you can insert a USB drive (Type-C) for read/write tests.
 
-1\. Check Mount Directory:
+- Check Mount Directory:
 
-```c
+
+```plain
 root@OK3588-C-buildroot:~# mount | grep "sda1"
 /dev/sda1 on /run/media/sda1 type ext4 (rw,relatime)
 ```
 
 You can see that /run/media/sda1 is the mount path for the USB storage device.
 
-2\. Write Test, write speed is limited by the specific storage device.
+- Write Test
 
-```c
+Write speed is limited by the specific storage device.
+
+```plain
 root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 28.1033 s, 18.7 MB/s
 ```
 
-3\. Read Test: To ensure data accuracy, please restart the development board before retesting the read speed.
+- Read Test: 
 
-```c
+To ensure data accuracy, please restart the development board before retesting the read speed.
+
+```plain
 root@OK3588-C-buildroot:~# dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 21.5043 s, 24.4 MB/s
 ```
 
-### UART
+#### UART
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 There are UART interfaces: UART2, UART4, UART6, and UART9. They are defined as follows: UART2 (System Debug Console), UART4 (General-purpose TTL UART), UART6 (Bluetooth-dedicated UART), and UART9 (RS-485 Communication UART). On the development board, the default device names for UART4 and UART9 are /dev/ttyS4 and /dev/ttyS9, respectively.
 
@@ -3027,13 +3095,13 @@ UART4 (P11 pins 7 and 10) and 485 are located on the board as follows:
 
 Location of driver source code in the kernel:`drivers/tty/serial/8250/8250_dw.c`.
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Location of the UART device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 Take uart4 as example:
 
-```c
+```plain
 	uart4: serial@feb70000 {
 		compatible = "rockchip,rk3588-uart", "snps,dw-apb-uart";
 		reg = <0x0 0xfeb70000 0x0 0x100>;
@@ -3055,7 +3123,7 @@ OK3588-C/3588-C2 :`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
 OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &uart4 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart4m0_xfer>;
@@ -3063,9 +3131,9 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 };
 ```
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 Test Method
+###### 3.1 Test Method
 
 For this test, UART4 (ttyS4) is used, and the serial port functionality is verified through a loopback method. According to the development board schematic, short the TX and RX pins of UART4, which correspond to PIN7 and PIN10, respectively.
 
@@ -3074,7 +3142,7 @@ For this test, UART4 (ttyS4) is used, and the serial port functionality is verif
 
 After short connection, launch the test program.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_uarttest -d /dev/ttyS4
 Welcome to uart test
 Send test data:
@@ -3085,11 +3153,11 @@ forlinx_uart_test.1234567890...
 
 `fltest_uarttest`The source code path:`OK-linux-source/app/forlinx/forlinx_cmd/fltest_uarttest`
 
-##### 3.2 Application Programming
+###### 3.2 Application Programming
 
 In the OK3588 system, the device node for a UART is `/dev/ttySx`(where x is the serial port number, e.g.,  `/dev/ttyS4`). Applications need to include the header file `<termios.h>`, which defines the structures and functions related to serial port configuration.
 
-###### 3.2.1 Opening the Serial Port
+**3.2.1 Opening the Serial Port**
 
 The serial port device is opened using `open`function to obtain a file descriptor:
 
@@ -3109,7 +3177,7 @@ if (fd == -1) {
 | `O_RDWR`   | Opens the port for reading and writing.                      |
 | `O_NOCTTY` | Prevents the port from becoming the controlling terminal for the process. |
 
-###### 3.2.2 Configuring Serial Port Parameters
+**3.2.2 Configuring Serial Port Parameters**
 
 Use the`struct termios`structure to configure the baud rate, data bit, stop bit, check bit and other parameters: 
 
@@ -3168,7 +3236,7 @@ Common Baud Rate Macro Definitions:
 | `B3000000` | 3000000       |
 | `B4000000` | 4000000       |
 
-###### 3.2.3 Sending Data
+**3.2.3 Sending Data**
 
 Use `write` function to send data to the serial port:
 
@@ -3178,7 +3246,7 @@ Use `write` function to send data to the serial port:
 	write(fd, test, strlen(test) + 1);
 ```
 
-###### 3.2.4 Receiving Data
+**3.2.4 Receiving Data**
 
 Use the `read` function to read data from the serial port:
 
@@ -3198,17 +3266,17 @@ Use the `read` function to read data from the serial port:
 	}
 ```
 
-###### 3.2.5 Closing the Serial Port
+**3.2.5 Closing the Serial Port**
 
 Close the file descriptor after use:
 
-```c
+```plain
 close(fd);
 ```
 
-### USB2.0
+#### USB2.0
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 USB (Universal Serial Bus) is a standardized interface used for connecting computers to various peripheral devices. Its design goals are to simplify device connections, provide data transfer and power supply capabilities, and support hot-plugging (plug-and-play).
 
@@ -3217,11 +3285,11 @@ OK3588 supports 1 x USB 2.0 interface. Please connect USB devices such as mice, 
 Location of the USB 2.0 interface:
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583751844_8195f78a_313f_4b4e_99bc_ccd08df2cd42.png)
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 Location of OK3588-C/3588-C2 USB2.0 device Tree：`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
-```c
+```plain
 // USB2.0 HOST0 EHCI Controller (USB2.0 protocol)
 &usb_host0_ehci {
 	status = "okay";
@@ -3240,9 +3308,9 @@ Location of OK3588-C/3588-C2 USB2.0 device Tree：`arch/arm64/boot/dts/rockchip/
 
 Location of OK3588S2-C USB2.0 device tree node:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-#### 3\. USB Device Driver Support
+##### 3\. USB Device Driver Support
 
-##### 3.1 Supported Device Types
+###### 3.1 Supported Device Types
 
 According to Section 3.5 (USB Peripheral CONFIG) of the official Rockchip Linux USB Development Guide, the RK3588 SDK kernel supports the following USB device class drivers. The development board can directly recognize and use the corresponding peripherals without additional configuration: The development board can directly identify and use the corresponding peripherals without additional configuration:
 
@@ -3260,11 +3328,11 @@ According to Section 3.5 (USB Peripheral CONFIG) of the official Rockchip Linux 
 
 The default kernel configuration includes support for common drivers. To enable or remove specific drivers, refer to Section 3.2.2.2 in the OS Development guide for configuring and compiling the kernel.
 
-##### 3.2 HID Device Support
+###### 3.2 HID Device Support
 
 HID (Human Interface Device) is one of the most widely used USB device classes, covering input devices such as keyboards, mice, touchscreens, and game controllers.
 
-###### 3.2.1 Kernel Configuration
+**3.2.1 Kernel Configuration**
 
 According to Section 3.5.3 of the RK official manual, the kernel configuration options for USB HID are as follows:
 
@@ -3276,7 +3344,7 @@ Device Drivers --->
         [*] /dev/hiddev raw HID device support
 ```
 
-###### 3.2.2 VID/PID List and Kernel Source Path
+**3.2.2 VID/PID List and Kernel Source Path**
 
 Each USB device is uniquely identified by its VID (Vendor ID) and PID (Product ID). The kernel loads the appropriate driver by matching the VID/PID. The kernel loads the appropriate driver by matching the VID/PID.
 
@@ -3292,21 +3360,21 @@ The definitions for VID/PID and the driver source code related to HID devices ar
 
 To view the list of supported HID device VID/PID in the kernel source code, use the following command:
 
-```c
+```plain
 # View all defined HID vendor IDs
 OK-linux-source$ grep "USB_VENDOR_ID_" kernel/drivers/hid/hid-ids.h | head -20
 # View the device ID of a specific vendor (take Logitech as an example)
 OK-linux-source$ grep "LOGITECH" kernel/drivers/hid/hid-ids.h
 ```
 
-#### 4\. Application
+##### 4\. Application
 
-##### 4.1 USB Drive Test
+###### 4.1 USB Drive Test
 
 After the development board boots up, connect the USB flash drive to the USB host interface of the development board.   
 Check the mount directory:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# mount | grep "sda1"
 /dev/sda1 on /run/media/sda1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro)
 ```
@@ -3315,7 +3383,7 @@ You can see that /run/media/sda1 is the mount path for the USB storage device.
 
 Write test (write speed is limited by the specific storage device):
 
-```c
+```plain
 root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
 500+0 records in
 500+0 records out
@@ -3324,18 +3392,18 @@ root@OK3588-C-buildroot:~# dd if=/dev/zero of=/run/media/sda1/test bs=1M count=5
 
 Read test (to ensure data accuracy, restart the development board before re-running the read speed test):
 
-```c
+```plain
 root@OK3588-C-buildroot:~# dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 21.5043 s, 24.4 MB/s
 ```
 
-##### 4.2 Mouse Testing
+###### 4.2 Mouse Testing
 
 Connect the USB mouse to the USB port of the OK3588 platform and enter the following command to check the kernel logs:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# dmesg | tail -10
 [17111.992827] rockchip-hdptx-phy-hdmi fed60000.hdmiphy: hdptx phy lane locked!
 [17111.992881] rockchip-vop2 fdd90000.vop: [drm] vop enable intf:800
@@ -3351,11 +3419,11 @@ root@OK3588-C-buildroot:~# dmesg | tail -10
 
 An arrow cursor will appear on the screen, indicating that the mouse is functioning properly.
 
-### Wifi\_Bluetooth
+#### Wifi\_Bluetooth
 
 ⚠️**Note: The network environment is different, so please set it according to the actual situation when you do this experiment.**
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The OK3588 platform supports two types of Wi-Fi/Bluetooth combo modules: AW-XM458 and AW-CM276MA. The Wi‑Fi interface uses PCIe.
 
@@ -3364,11 +3432,11 @@ The Bluetooth interface uses UART.
 Locations:
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776415581325_54693b05_ca54_4abf_a465_df47d3bd274a.png)
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 The device tree nodes for Wi‑Fi and Bluetooth on OK3588‑C / 3588‑C2 are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 wireless-wlan {
         compatible = "wlan-platdata";
         wifi_chip_type = "mvl88w9098";
@@ -3383,44 +3451,45 @@ wireless-bluetooth {
 
 The device tree nodes for Wi‑Fi and Bluetooth on OK3588S2‑C are located at:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 WiFi STA Mode
+###### 3.1 WiFi STA Mode
 
 Before using Wi‑Fi, configure it with the following steps:
 
-1. Assume the Wi‑Fi hotspot SSID is ChinaNet‑Jvgv and the password is asdasd123.
+- Assume the Wi‑Fi hotspot SSID is ChinaNet‑Jvgv and the password is asdasd123.
 
 Enter the following command in the development board terminal:
 
 Enter the following command in the development board terminal:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_wifi.sh -i mlan0 -s "ChinaNet-Jvgv" -p asdasd123
 ```
 
 Parameters in the command:
 
-2. In the terminal, run the following command to check whether the network can be pinged:
+- In the terminal, run the following command to check whether the network can be pinged:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# ping www.forlinx.net -c 3
 ```
 
-##### 3.2 WiFi AP Mode
+###### 3.2 WiFi AP Mode
 
 **⚠️Note: Before performing this test, ensure the Gigabit Ethernet port eth0 is connected to the network and functioning normally.**
 
-1\. Check the driver loading status (using the AW‑XM458 module as an example):
+- Check the driver loading status (using the AW‑XM458 module as an example):
 
-```bash
+
+```plain
 root@OK3588-C-buildroot:~# lsmod
 Module                  Size  Used by
 moal                  806912  1
 mlan                  602112  1 moal
 ```
 
-2\. Configure the hotspot:
+- Configure the hotspot:
 
 Hotspot name:`OK3588_WIFI_2.4G_AP`
 
@@ -3428,7 +3497,7 @@ Password:`12345678`
 
 The hotspot name and password can be viewed with`/etc/hostapd-2.4g.conf`:
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# fltest_hostapd.sh
 killall: hostapd: no process killed
 killall: dnsmasq: no process killed
@@ -3440,7 +3509,7 @@ A mobile phone can now connect to this hotspot and access the internet.
 
 If you want to test the 5 GHz band, modify`/usr/bin/fltest_hostapd.sh`by disabling`hostapd /etc/hostapd-2.4g.conf &`and`hostapd /etc/hostapd-5g.conf &`.
 
-```bash
+```plain
 cnt=`ps aux | grep wpa_supplicant | grep -v grep  | wc -l`
 if [ "${cnt}" != "0" ];then
         killall wpa_supplicant > /dev/null
@@ -3469,13 +3538,13 @@ dnsmasq -C /etc/dnsmasq.conf
 
 The 5 GHz hotspot name and password can be viewed in the file:`/etc/hostapd-5g.conf`
 
-##### 3.3 Bluetooth
+###### 3.3 Bluetooth
 
 This section demonstrates data transfer between a mobile phone and the development board via Bluetooth (Bluetooth 5.0 supported).
 
-1. Bluetooth configuration:
+- Bluetooth configuration:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# bluetoothctl //Open the BlueZ Bluetooth tool
 hci0 new_settings: powered bondable ssp br/edr le secure-conn
 Agent registered
@@ -3495,13 +3564,13 @@ Agent is already registered
 Default agent request successful
 ```
 
-2\. Passive pairing on the development board:
+- Passive pairing on the development board
 
 Turn on Bluetooth search on the mobile phone; a device named`OK3588-buildroot`will appear. Select it to pair.
 
 Simultaneously, the following message will be printed on the development board; enter yes:
 
-```c
+```plain
 [bluetooth]# default-agent
 Default agent request successful
 hci0 B0:46:92:74:81:84 type BR/EDR connected eir_len 22
@@ -3519,9 +3588,9 @@ hci0 device_flags_changed: B0:46:92:74:81:84 (BR/EDR)
 [CHG] Device B0:46:92:74:81:84 Bonded: yes
 ```
 
-3\.View and remove connected devices:
+- View and remove connected devices:
 
-```c
+```plain
 [OPPO Reno5 K 5G]# devices
 Device B0:46:92:74:81:84 OPPO Reno5 K 5G
 [OPPO Reno5 K 5G]# remove B0:46:92:74:81:84
@@ -3542,7 +3611,7 @@ Device has been removed
 [bluetooth]#
 ```
 
-4. Receiving files on the development board:
+- Receiving files on the development board:
 
 After successful pairing, you can send a file from the mobile phone to the OK3588‑C development board via Bluetooth.
 
@@ -3550,16 +3619,16 @@ The received files are saved in the
 
 `/tmp/`.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# ls /tmp/*.jpg
 /tmp/Screenshot_2025-10-25-09-45-57-51_76eaced432273cd65da1ec13409568ff.jpg
 ```
 
-5. Sending files from the development board:
+- Sending files from the development board:
 
 You can send a file from the OK3588‑C development board to a mobile phone. Test as follows:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_obexctl.sh
 [NEW] Client /org/bluez/obex
 [obex]# connect B0:46:92:74:81:84
@@ -3582,23 +3651,21 @@ Transfer /org/bluez/obex/client/session1/transfer0
 
 **⚠️Note: Some mobile phones require files to have an extension; otherwise, the Android system will reject them. Therefore, please try to use files with extensions for testing. Apple iPhones do not support sending/receiving data via Bluetooth.**
 
-### Watchdog
+#### Watchdog
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 A watchdog is essentially a count‑down timer driven by a hardware clock. During normal system operation, the application must write a specific value (i.e., “kicking the dog”) to the watchdog’s dedicated register within a set timeout period (e.g., 1 second) to reset the counter to its initial value. If the program enters an infinite loop, crashes, or fails to kick the dog before the timeout, the counter decrements to 0, triggering a predefined action such as a system reset or a software exception alert. 
 
- The OK3588‑C development board integrates an on‑chip watchdog.
-
-
+The OK3588‑C development board integrates an on‑chip watchdog.
 
 The watchdog driver source code is located in the kernel at: `kernel/drivers/watchdog/dw_wdt.c`
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 The watchdog device‑tree node is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
-```c
+```plain
 	wdt: watchdog@feaf0000 {
 		compatible = "snps,dw-wdt";
 		reg = <0x0 0xfeaf0000 0x0 0x100>;
@@ -3615,21 +3682,21 @@ OK3588-C/3588-C2:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`�
 
 OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &wdt {
 	status = "okay";
 };
 ```
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 Test Method
+###### 3.1 Test Method
 
 This test provides two testing programs. The user should select one based on the actual scenario.
 
 With this`fltest_watchdog`, the command turns on the watchdog and performs a feed, so the system does not reboot.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_watchdog
 Watchdog Ticking Away!
 ```
@@ -3638,7 +3705,7 @@ When using`ctrl+c`end the test, stop feeding the dog, the watchdog is in the ope
 
 If you want to avoid a reset, enter the command to disable the watchdog within 10 seconds after closing the program.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_watchdog -d
 Watchdog card disabled.
 ```
@@ -3647,18 +3714,18 @@ Start watchdog, set reset time to 10 seconds, no feeding
 
 Execute the command`flteset_watchdogrestart`, this command will open the watchdog but will not perform petting operations. The system will reboot after 10 seconds.
 
-```c
+```plain
 root@OK3588-C-buildroot:~# fltest_watchdogrestart
 Restart after 10 seconds
 ```
 
 The source code paths for the two test routines are:`OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog`and`OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog/fltest_watchdogrestart`.
 
-##### 3.2 Application Programming
+###### 3.2 Application Programming
 
 The watchdog device node in OK3588 is`/dev/watchdog`. There should be header file \<linux/watchdog.h> in the header file. It defines the ioctl command macros for the watchdog. Each different command macro represents a different operation requested from the device, as shown below:
 
-```c
+```plain
 #define	WDIOC_GETSUPPORT	_IOR(WATCHDOG_IOCTL_BASE, 0, struct watchdog_info)
 #define	WDIOC_GETSTATUS		_IOR(WATCHDOG_IOCTL_BASE, 1, int)
 #define	WDIOC_GETBOOTSTATUS	_IOR(WATCHDOG_IOCTL_BASE, 2, int)
@@ -3680,48 +3747,48 @@ Commonly used commands include: WDIOC\_SETOPTIONS, WDIOC\_KEEPALIVE, WDIOC\_SETT
 | WDIOC\_SETTIMEOUT | Set the timeout period.|
 | WDIOC\_GETTIMEOUT | Get the current timeout period.|
 
-###### 3.2.1 Opening the Watchdog
+**3.2.1 Opening the Watchdog**
 
 You can use the open function to open the watchdog device and obtain a file descriptor:
 
-```c
+```plain
 fd = open("/dev/watchdog", O_WRONLY);
 if (fd == -1) {
 fprintf(stderr, "Watchdog device not enabled.\n");
 ```
 
-###### 3.2.2 Setting the Timeout Period
+**3.2.2 Setting the Timeout Period**
 
 Use the WDIOC\_SETTIMEOUT command to set the watchdog timeout period. The usage is as follows:
 
-```c
+```plain
 ioctl(fd,WDIOC_SETTIMEOUT,&flags);
 ```
 
 For the timeout setting mechanism specific to RK3588, please refer to the next subsection.
 
-###### 3.2.3 Petting the Watchdog
+**3.2.3 Petting the Watchdog**
 
 After the watchdog timer is started, please “pet the dog” before it times out. Otherwise, timer overflow will cause a system reset or generate an interrupt signal. Use the WDIOC\_KEEPALIVE command to perform the petting operation. The usage is as follows:
 
-```c
+```plain
 ioctl(fd, WDIOC_KEEPALIVE, &dummy);
 ```
 
-##### 3.3 Timeout Mechanism
+###### 3.3 Timeout Mechanism
 
 Regarding the timeout mechanism: The timeout value set from user space is not directly passed to the hardware. The Watchdog driver internally maintains a table of 16 preset timeout values. The driver selects the closest value from this table as the actual timeout according to the following rules:
 
-| *<font style="color:rgb(64, 64, 64);">The timeout period of the request** | **<font style="color:rgb(0, 0, 0);background-color:rgb(252, 252, 252);">Final timeout set by watchdog** |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <font style="color:rgb(64, 64, 64);">timeout_request > 89    | <font style="color:rgb(64, 64, 64);">timeout_set = timeout_request |
-| <font style="color:rgb(64, 64, 64);">44 < timeout_request <= 89 | <font style="color:rgb(64, 64, 64);">timeout_set = 89        |
-| <font style="color:rgb(64, 64, 64);">22 < timeout_request <= 44 | <font style="color:rgb(64, 64, 64);">timeout_set = 44        |
-| <font style="color:rgb(64, 64, 64);">11 < timeout_request <= 22 | <font style="color:rgb(64, 64, 64);">timeout_set = 22        |
-| <font style="color:rgb(64, 64, 64);">5 < timeout_request <= 11 | <font style="color:rgb(64, 64, 64);">timeout_set = 11        |
-| <font style="color:rgb(64, 64, 64);">2< timeout_request <= 5 | <font style="color:rgb(64, 64, 64);">timeout_set = 5         |
-| <font style="color:rgb(64, 64, 64);">timeout_request = 2     | <font style="color:rgb(64, 64, 64);">timeout_set = 2         |
-| <font style="color:rgb(64, 64, 64);">timeout_request = 1     | <font style="color:rgb(64, 64, 64);">timeout_set = 1         |
+| *The timeout period of the request* | *Final timeout set by watchdog* |
+| ----------------------------------- | ------------------------------- |
+| timeout_request > 89                | timeout_set = timeout_request   |
+| 44 < timeout_request <= 89          | timeout_set = 89                |
+| 22 < timeout_request <= 44          | timeout_set = 44                |
+| 11 < timeout_request <= 22          | timeout_set = 22                |
+| 5 < timeout_request <= 11           | timeout_set = 11                |
+| 2< timeout_request <= 5             | timeout_set = 5                 |
+| timeout_request = 2                 | timeout_set = 2                 |
+| timeout_request = 1                 | timeout_set = 1                 |
 
 ### Database
 
@@ -3729,7 +3796,7 @@ Regarding the timeout mechanism: The timeout value set from user space is not di
 
 SQLite3 is a lightweight, ACID-compliant relational database management system with low resource consumption. The OK3588-C development board uses version 3.44.2 of SQLite3. Using Method:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# sqlite3
 SQLite version 3.44.2 2023-11-24 11:41:44
 Enter ".help" for usage hints.
@@ -3772,7 +3839,7 @@ The OK3588-C development board is equipped with the NAU88C22YG audio codec chip,
 
 The audio-related device tree nodes for the OK3588-C/3588-C2 are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 //Sound card node: Core abstraction of the audio subsystem
 nau8822_sound: nau8822-sound {
 		status = "okay";
@@ -3894,7 +3961,7 @@ The audio-related device tree nodes for the OK3588S2-C are located at:`arch/arm6
 
 To view the playback sound card:
 
-```c
+```plain
 root@OK3588-C-buildroot:/etc/systemd/network# aplay -l
 **** List of PLAYBACK Hardware Devices ****
 card 1: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau8822-hifi-0 [dailink-multicodecs nau8822-hifi-0]
@@ -3910,7 +3977,7 @@ card 3: rockchipdp1 [rockchip,dp1], device 0: rockchip,dp1 spdif-hifi-0 [rockchi
 
 To view the record sound card:
 
-```c
+```plain
 root@OK3588-C-buildroot:/etc/systemd/network# arecord -l
 **** List of CAPTURE Hardware Devices ****
 card 1: rockchiphdmiin [rockchip,hdmiin], device 0: rockchip,hdmiin i2s-hifi-0 [rockchip,hdmiin i2s-hifi-0]
@@ -3921,42 +3988,44 @@ card 2: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau882
   Subdevice #0: subdevice #0
 ```
 
-1\. Playback and recording via 8822 sound card:
+- Playback and recording via 8822 sound card:
+
 
 Plug the headphones into the SPKOUT connector and play the audio with the following command:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:1,0"
 ```
 
 Recording via headphones:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# arecord -D hw:rockchipnau8822,0 -d 3 -f cd -t wav test1.wav
 Recording WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
 Play recorded audio:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# aplay -D plughw:2,0 test1.wav
 Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
-2\. Play through the HDMI sound card:
+- Play through the HDMI sound card:
+
 
 Connect the HDMI screen with audio playback function to the HDMITX interface, and execute the following command:
 
-```c
+```plain
 root@OK3588-C-buildroot:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
 ```
 
-3\. HDMI RX Audio Capture
+- HDMI RX Audio Capture
 
-Hardware Connection:
+**Hardware Connection:**
 
-+ Connect the HDMI output connector of the laptop to the HDMI RX connector of the OK3588 board using the HDMI cable.
-+ Connect headphones or speakers to the SPK OUT interface on the board.
+○ Connect the HDMI output connector of the laptop to the HDMI RX connector of the OK3588 board using the HDMI cable;
+○ Connect headphones or speakers to the SPK OUT interface on the board.
 
 Recording audio from HDMI RX input:
 
@@ -3982,13 +4051,18 @@ To play audio received from HDMI RX in real-time through the SPK OUT output, you
 root@OK3588-C-buildroot:~# arecord -D plughw:0,0 -f cd --buffer-size=2048 --period-size=1024 | aplay -D plughw:1,0 -f cd --buffer-size=2048 --period-size=1024
 ```
 
-Parameter description: -D plughw:0,0 specifies the HDMI RX sound card device.
+Parameter description:
 
--D plughw:1,0 specifies the onboard output sound card device.
+`-D plughw`:0,0 specifies the HDMI RX sound card device.
 
--f cd indicates CD quality audio (16bit/44100Hz/stereo). The actual sound card numbers may vary depending on the system configuration. You can confirm them using the commands arecord -l and aplay -l.
+`-D plughw`:1,0 specifies the onboard output sound card device.
 
-4\. DP Sound Card Test
+`-f cd`: indicates CD quality audio (16bit/44100Hz/stereo). 
+
+The actual sound card numbers may vary depending on the system configuration. You can confirm them using the commands arecord -l and aplay -l.
+
+- DP Sound Card Test
+
 
 The testing method for the DP sound card is similar to that for the 8822 sound card. You can complete the test by modifying the device parameter or the hw parameter in the test command to specify the DP sound card.
 
@@ -3996,9 +4070,9 @@ The testing method for the DP sound card is similar to that for the 8822 sound c
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
 ```
 
-### Camera
+#### Camera
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The OK3588 supports 5 x MIPI CSI camera interfaces, compatible with the OV13855 and OV5645 models. The corresponding relationships for each interface are as follows:
 
@@ -4017,13 +4091,13 @@ The camera interfaces are located at the following positions on the board:
 
 **⚠️Note: Due to a reduction in MIPI-CSI controllers in the RK3588S2 chip itself, the CAM1, CAM2, and CAM5 camera interfaces on the OK3588S2-C cannot be used.**
 
-#### 2\. Device Tree
+##### 2\. Device Tree
 
 The device tree files related to cameras for OK3588-C / OK3588-C2 are:`arch/arm64/boot/dts/rockchip/OK3588-C-Camera.dtsi`.
 
 Taking the CAM1 interface as an example.
 
-```c
+```plain
 //Physical layer interface
 &mipi_dcphy0 {     
     status = "okay";
@@ -4071,17 +4145,17 @@ Taking the CAM1 interface as an example.
 
 The device tree file related to cameras for OK3588S2-C is:`arch/arm64/boot/dts/rockchip/OK3588S2-C-Camera.dtsi`.
 
-#### 3\. Application
+##### 3\. Application
 
-##### 3.1 UVC Camera Test
+###### 3.1 UVC Camera Test
 
 Here, the Logitech C270 is used for testing. Plug the USB camera into the development board, and the UVC driver will be automatically installed.
 
-###### 3.1.1 **Camera Detection and Format Support Query**
+**3.1.1 Camera Detection and Format Support Query**
 
 Camera detection:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# v4l2-ctl --list-devices
 UVC Camera (046d:0825) (usb-fc800000.usb-1):
         /dev/video74
@@ -4091,7 +4165,7 @@ UVC Camera (046d:0825) (usb-fc800000.usb-1):
 
 Format support query:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# v4l2-ctl --list-formats-ext -d /dev/video74
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture
@@ -4337,9 +4411,9 @@ ioctl: VIDIOC_ENUM_FMT
                         Interval: Discrete 0.200s (5.000 fps)
 ```
 
-###### 3.1.2 Camera Capture Format Query
+**3.1.2 Camera Capture Format Query**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# v4l2-ctl -V -d /dev/video74
 Format Video Capture:
         Width/Height      : 640/480
@@ -4354,11 +4428,11 @@ Format Video Capture:
         Flags             :
 ```
 
-###### 3.1.3 Camera Preview and Photo Capture
+**3.1.3 Camera Preview and Photo Capture**
 
 Camera image preview:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0  v4l2src device=/dev/video74 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480  ! waylandsink
 Setting pipeline to PAUSED ...
 Pipeline is live and does not need PREROLL ...
@@ -4371,7 +4445,7 @@ Redistribute latency...
 
 Taking a photo:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video74 num-buffers=1 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
 Setting pipeline to PAUSED ...
 Pipeline is live and does not need PREROLL ...
@@ -4387,11 +4461,11 @@ Freeing pipeline ...
 
 This will generate pic.jpg in the current directory.
 
-##### 3.2 OV13855 Test
+###### 3.2 OV13855 Test
 
 For raw sensors like OV13855, each sensor corresponds to 5 device nodes (e.g., /dev/videoX):
 
-```c
+```plain
 root@OK3588-C-buildroot:~# grep "" /sys/class/video4linux/video*/name
 /sys/class/video4linux/video0/name:stream_cif_mipi_id0
 /sys/class/video4linux/video1/name:stream_cif_mipi_id1
@@ -4435,9 +4509,9 @@ The testing method for OV13855 is basically the same as for the UVC camera. This
 
 `CAM2：`platform:rkisp0-vir1
 
-###### 3.2.1 Camera Detection and Format Support Query
+**3.2.1 Camera Detection and Format Support Query**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# v4l2-ctl --list-devices
 rkisp_mainpath (platform:rkisp0-vir0):
         /dev/video55
@@ -4460,9 +4534,9 @@ rkisp_mainpath (platform:rkisp1-vir0):
         /dev/media6
 ```
 
-###### 3.2.2 Camera Photo Capture (Using Main Path)
+**3.2.2 Camera Photo Capture (Using Main Path)**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video55 ! videoconvert ! video/x-raw,format=NV12,width=1920,height=1080 ! autovideosink sync=false
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
@@ -4482,9 +4556,9 @@ Redistribute latency...
 0:00:06.7 / 99:99:99.
 ```
 
-###### 3.2.3 Camera Photo Capture (Using Main Path)
+**3.2.3 Camera Photo Capture (Using Main Path)**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
@@ -4499,9 +4573,9 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-###### 3.2.4 Recording H.264 Video
+**3.2.4 Recording H.264 Video**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
@@ -4522,7 +4596,7 @@ This will generate 13855\_h264.mp4 in the current directory.
 
 Playback 13855\_h264.mp4:
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=13855_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
 Setting pipeline to PAUSED ...
 Pipeline is PREROLLING ...
@@ -4541,7 +4615,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-##### 3.3 OV5645 Test
+###### 3.3 OV5645 Test
 
 Node corresponding to the camera
 
@@ -4555,9 +4629,9 @@ Camera corresponding nodes
 
 Take testing CAM3 as an example:
 
-###### 3.3.1 Camera Identification and Detection
+**3.3.1 Camera Identification and Detection**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# v4l2-ctl --list-devices
 rkisp-statistics (platform: rkisp):
         /dev/video62
@@ -4625,9 +4699,9 @@ rkcif (platform:rkcif-mipi-lvds5):
         /dev/media4
 ```
 
-###### 3.3.2 Supported Formats
+**3.3.2 Supported Formats**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# v4l2-ctl --list-formats-ext -d /dev/video22
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture Multiplanar
@@ -4650,9 +4724,9 @@ ioctl: VIDIOC_ENUM_FMT
                 Size: Stepwise 64x64 - 1920x1080 with step 8/8
 ```
 
-###### 3.3.3 Camera Preview
+**3.3.3 Camera Preview**
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video22 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
@@ -4664,13 +4738,13 @@ Redistribute latency...
 0:00:03.4 / 99:99:99.
 ```
 
-##### 3.4 HDMI IN Test
+###### 3.4 HDMI IN Test
 
-###### 3.4.1 HDMIIN Supported Format Queries
+**3.4.1 HDMIIN Supported Format Queries**
 
 Camera Recognition Detection
 
-```c
+```plain
 root@ok3588-buildroot:/# v4l2-ctl --list-devices    // It can be seen that /dev/video73 is the HDMI IN node.
 rk_hdmirx (fdee0000.hdmirx-controller):
         /dev/video73
@@ -4702,7 +4776,7 @@ ioctl: VIDIOC_ENUM_FMT
         [3]: 'NV12' (Y/CbCr 4:2:0)
 ```
 
-###### 3.4.2 Camera Capture Format Queries and Modifications
+**3.4.2 Camera Capture Format Queries and Modifications**
 
 Camera Capture Format Queries
 
@@ -4723,7 +4797,7 @@ Format Video Capture Multiplanar:
            Size Image     : 6220800
 ```
 
-###### 3.4.3 Camera Image Preview
+**3.4.3 Camera Image Preview**
 
 ```plain
 root@ok3588-buildroot:/# gst-launch-1.0  v4l2src device=/dev/video73 ! videoconvert ! kmssink
@@ -4739,30 +4813,30 @@ Redistribute latency...
 
 **⚠️Note: Please do not use the waylandsink display in the current version. And using gst-launch-1.0 encoding may have delay.**
 
-### Display
+#### Display
 
-#### 1\. Introduction
+##### 1\. Introduction
 
 The OK3588-C is based on the VOP2 (Video Output Processor 2.0) unified display architecture of the RK3588, supporting various display interfaces such as HDMI, eDP, MIPI DSI, and DP. It can drive up to four independent display outputs simultaneously.
 
-##### 1.1 Overview of Display Interfaces
+###### 1.1 Overview of Display Interfaces
 
 The RK3588 VOP2 internally contains 4 Video Ports (VPs), each capable of independently driving one display output:
 
-| **Video Port** | **Maximum Resolution | ****Connectable Display**                                    |
-| :------------- | :------------------- | :----------------------------------------------------------- |
-| VP0            | 7680×4320@60Hz       | HDMI0, eDP0, DP0, DP1, MIPI DSI0, MIPI DSI1                  |
-| VP1            | 4096×4320@60Hz       | HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1     |
-| VP2            | 4096×2160@60Hz       | HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1, RGB |
-| VP3            | 2048×1080@60Hz       | MIPI DSI0, MIPI DSI1, RGB                                    |
+| **Video Port** | Maximum Resolution | Connectable Display                                          |
+| :------------- | :----------------- | :----------------------------------------------------------- |
+| VP0            | 7680×4320@60Hz     | HDMI0, eDP0, DP0, DP1, MIPI DSI0, MIPI DSI1                  |
+| VP1            | 4096×4320@60Hz     | HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1     |
+| VP2            | 4096×2160@60Hz     | HDMI0, HDMI1, eDP0, eDP1, DP0, DP1, MIPI DSI0, MIPI DSI1, RGB |
+| VP3            | 2048×1080@60Hz     | MIPI DSI0, MIPI DSI1, RGB                                    |
 
 **⚠️Note: The RK3588 HDMI and DP interfaces support 8K output, but in 8K mode, they require the simultaneous occupation of both VP0 and VP1. If a product needs to support 8K display, do not connect other display interfaces to VP1.**
 
-**The connection relationship betweenRK3588 VP ****and the various display interfaces is as follows:**
+**The connection relationship betweenRK3588 VP and the various display interfaces is as follows:**
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776818967804_102c91de_b34a_4229_aac7_a04329d77dcc.jpeg)
 
-##### 1.2 Specifications of Each Display Interface
+###### 1.2 Specifications of Each Display Interface
 
 The maximum output resolution and protocol standards for each RK3588 display interface are as follows:
 
@@ -4774,7 +4848,7 @@ The maximum output resolution and protocol standards for each RK3588 display int
 | MIPI DSI          | 3840×2160@60Hz            | Dual MIPI, supporting DSI v1.1, DCS v1.1, DPHY v2.0, CPHY v1.1 |
 | RGB               | 1920×1080@60Hz            | Supports BT.656 / BT.1120                                    |
 
-##### 1.3 OK3588-C Interface Location
+###### 1.3 OK3588-C Interface Location
 
 The HDMI and eDP interfaces are located on the front side of the board.
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776583943597_3510e877_ca87_4228_81d3_03a2ca4ce32a.png)
@@ -4784,7 +4858,7 @@ The MIPI DSI0 and MIPI DSI1 interfaces are located on the back side of the board
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776819807192_5cc2e454_d3f6_4cef_a33e_ab8026e39bba.png)
 
-##### 1.4 RK3588S2 Differences
+###### 1.4 RK3588S2 Differences
 
 Compared to the RK3588, the RK3588S2 has trimmed/cut down the following display interfaces:
 
@@ -4803,17 +4877,17 @@ For detailed information about RK3588 display interfaces, please refer to the fo
 
 `OK-linux-source/docs/rk3588/en/Common/DISPLAY/DRM/Rockchip_Developer_Guide_DRM_Display_Driver_EN.pdf`
 
-#### 2. Device Tree
+##### 2. Device Tree
 
 The display-related Device Tree nodes for OK3588-C/3588-C2 are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 The display-related Device Tree nodes for OK3588S2-C are located at:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-##### 2.1 Forlinx-control Display Configuration Node
+###### 2.1 Forlinx-control Display Configuration Node
 
 Since OK3588 supports multiple display modes, the screen configuration can be specified via the Device Tree:
 
-```c
+```plain
 	forlinx-control {
 		/***
 		* hdmi0 and edp0 share same port, only one can be used.
@@ -4862,7 +4936,7 @@ The configuration parameters can be modified according to the actual requirement
 
 **⚠️Notes :**
 
-+ **<font style="color:rgb(15, 17, 21);"hdmi0 and edp0 share the same port. They are mutually exclusive and cannot be used at the same time.**
++ **hdmi0 and edp0 share the same port. They are mutually exclusive and cannot be used at the same time.**
 + **hdmi1 and edp1 share the same port. They are mutually exclusive and cannot be used at the same time.**
 + **The chip only contains four VPs (Video Processors), so up to four display interfaces can be activated at the same time.**
 + **HDMI, EDP, DP can only be bound to VP0, VP1 or VP2 outputs.**
@@ -4879,7 +4953,7 @@ According to the hardware constraints of the above display interfaces, the optio
 
 **⚠️Note: When modifying the device tree, strictly follow the constraints in the device tree comments to avoid resource conflicts. The driver layer will not verify the compliance of the `forlinx-control` node configuration. If the configuration is improper, the display will be abnormal. For the display interface whose parameter is set to  `"OFF"`, it is recommended to shield or delete the node, or keep the node, which will not affect the system operation. The four VPs do not all need to be enabled and can be configured according to the actual display interface requirements.**
 
-##### 2.2 VOP Node Configuration
+###### 2.2 VOP Node Configuration
 
 The VOP configuration in the OK3588-C device tree is as follows:
 
@@ -4901,7 +4975,7 @@ The VOP configuration in the OK3588-C device tree is as follows:
 | `aclk-normal-mode-rates`   | 500 MHz      | ACLK frequency in normal display mode             |
 | `aclk-advanced-mode-rates` | 800 MHz      | ACLK frequency in advanced display mode (e.g. 8K) |
 
-##### 2.3 Layer Assignment
+###### 2.3 Layer Assignment
 
 Each VP has a fixed layer (Plane) bound to it for compositing the display:
 
@@ -4935,11 +5009,11 @@ RK3588 VOP2 has 8 layers divided into two categories:
 | Cluster        | Cluster0 ~ Cluster3 | Support AFBC compression format, suitable for video overlay |
 | Esmart         | Esmart0 ~ Esmart3   | Support zooming, suitable for UI display                    |
 
-#### 3\. Application
+##### 3\. Application
 
 The factory firmware supports dynamic control of screen output via a menu in U-Boot,eliminating the need for recompilation and reflashing to switch screens. During U-Boot automatic startup, pressing`ctrl+c`on the serial terminal will trigger a control menu:
 
-```c
+```plain
 Hit key to stop autoboot('CTRL+C'):  0
 ---------------------------------------------
 0:Exit to console
@@ -4952,7 +5026,7 @@ Hit key to stop autoboot('CTRL+C'):  0
 
 Entering 2 in the terminal, you can access the Screen Control submenu.
 
-```c
+```plain
 ---------------------------------------------
 hdmi0 and edp0 share same port, only one can be used.
 hdmi1 and edp1 share same port, only one can be used.
@@ -4980,7 +5054,7 @@ Select  display
 
 According to the notes in the U-Boot menu, the display output configuration rules are as follows:
 
-```c
+```plain
 1.  HDMI0 and eDP0 share the same port, so only one of them can be used at a time.
 2.  HDMI1 and eDP1 share the same port, so only one of them can be used at a time.
 3.  There are only four internal VPs, so a maximum of four interfaces can be activated.
@@ -4997,7 +5071,7 @@ Press the number 1 to perform a reboot—the screen settings configured during t
 
 Or, simply press the reset button on the development board—the configuration will similarly be applied once the system restarts.
 
-**Encoding and Decoding**
+#### Encoding and Decoding
 
 Some application layer software for audio and video on the OK3588 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form.
 
@@ -5022,9 +5096,9 @@ Table of hardware codec parameters for the OK3588 platform:
 | Video Encoder     | H.264      | BP/MP/HP@level4.2 | 7680x4320      | 30 fps         |
 |                   | H.265      | MP@level4.1       | 7680x4320      | 30 fps         |
 
-##### 3.1\. Audio and Video Playback
+##### 1. Audio and Video Playback
 
-###### 3.1.1 Playing Audio and Video With Gst-play
+###### 1.1.1 Playing Audio and Video With Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
@@ -5032,47 +5106,47 @@ Gplay is an audio/video player based on GStreamer that can automatically select 
 root@OK3588-C-buildroot:~# gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
 ```
 
-###### 3.1.2 Playing Video With Gst-launch
+###### 1.1.2 Playing Video With Gst-launch
 
 ```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
 ```
 
-###### 3.1.3 Playing Audio With Gst-launch
+###### 1.1.3 Playing Audio With Gst-launch
 
 ```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
 ```
 
-###### 3.1.4 Playing Video and Audio With Gst-launch
+###### 1.1.4 Playing Video and Audio With Gst-launch
 
 ```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
 ```
 
-##### 3.2 Video Hardware Encoding
+##### 2. Video Hardware Encoding
 
-OK3588 supports up to 8K @ 60fps/H.265 and 8K @ 60fps/H.264 video encoding.
+OK3588 supports up to 8K@60fps/H.265 and 8K@60fps/H.264 video encoding.
 
-###### 3.2.1 Video Hardware Encoding H.264
+###### 2.2.1 Video Hardware Encoding H.264
 
 ```plain
 root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
 ```
 
-###### 3.2.2 Video Hardware Encoding H.265
+###### 2.2.2 Video Hardware Encoding H.265
 
 ```plain
 root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
 ```
 
-###### 3.2.3 JPEG Hardware Encoding
+###### 2.2.3 JPEG Hardware Encoding
 
 ```plain
 root@OK3588-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
 ```
 
-##### 3\.3 Video Hardware Decoding
+##### 3. Video Hardware Decoding
 
 OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K@30fps, while the H.265 decoder supports 8K@60fps.
 
@@ -5080,55 +5154,53 @@ OK3588 uses the mppvideodec component for hardware video decoding, and its outpu
 
 ###### 3.3.1 Decoding and Playing H.264 Format Video
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
 ```
 
 ###### 3.3.2 Decoding and Playing H264 Format Video With Audio
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 ```
 
 ###### 3.3.3 Decoding and Playing H265 Format Video
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
 ```
 
 ###### 3.3.4 Decoding and Playing H265 Format Video With Audio
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
 ```
 
 ###### 3.3.5 Decoding and Playing VP9 Format Video
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
 ```
 
 ###### 3.3.6 Decoding and Playing VP9 Format Video With Audio
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0
 ```
 
 ###### 3.3.7 Decoding and Playing VP8 Format Video
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 ! matroskademux ! queue ! mppvideodec ! waylandsink
 ```
 
 ###### 3.3.8 Decoding and Playing VP8 Format Video With Audio
 
-```c
+```plain
 root@OK3588-C-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:1,0
 ```
 
 ### Machine Learning
-
-#### NPU
 
 #### 1\. Introduction
 
@@ -5138,11 +5210,13 @@ The OK3588-C integrates a low-power, high-performance NPU, which possesses hardw
 
 Main features:
 
-(1) 6 TOPS NPU, empowering various AI scenarios;
+- 6 TOPS NPU, empowering various AI scenarios;
 
-(2) Triple-core architecture design;
+- Triple-core architecture design;
 
-(3) Int4/int8/int16/FP16/BF16/TF32 data formats.
+
+- Int4/int8/int16/FP16/BF16/TF32 data formats.
+
 
 The NPU (Neural Processing Unit) is a chip module specifically designed for executing AI inference tasks. Unlike general-purpose CPUs, NPUs excel at massive parallel matrix multiplication operations—precisely the core computation of neural networks.
 
@@ -5203,7 +5277,7 @@ It is recommended to modify the NPU settings within this node if changes are req
 
 To utilize the NPU, besides requiring kernel support, application-layer calls must go through the library files provided by Rockchip. This content is located in the`SDK/external/rknpu2/`and is represented as `/usr/lib/librknnrt.so`in the integrated file system.
 
-Since NPU access is implemented by calling library files, using the NPU requires converting models to the RKNN format suitable for the Rockchip platform via Rockchip conversion tools. This can be easily accomplished using Rockchip core development toolkit, RKNN-Toolkit2, which is also located in the `SDK/external/rknn-toolkit2/`. **This section only tests interface availability. For specific model conversion tutorials, please refer to the NPU Development section in the Development Guide.**
+Since NPU access is implemented by calling library files, using the NPU requires converting models to the RKNN format suitable for the Rockchip platform via Rockchip conversion tools. This can be easily accomplished using Rockchip core development toolkit, RKNN-Toolkit2, which is also located in the `SDK/external/rknn-toolkit2/`. This section only tests interface availability. For specific model conversion tutorials, please refer to the NPU Development section in the Development Guide.
 
 The filesystem includes an integrated`mobilenet_v1.rknn`model, which can be tested with the following command:
 
@@ -5229,15 +5303,20 @@ Begin perf ...
 Test Command Explanation:
 
 ```plain
-rknn_common_test																		# Test demo
+rknn_common_test											# Test demo
 /usr/share/model/RK3588/mobilenet_v1.rknn 					# rknn model
-/usr/share/model/dog_224x224.jpg										# Identify the image
+/usr/share/model/dog_224x224.jpg							# Identify the image
 ```
 
 The test uses a lightweight image classification network. It describes the version of the RKNPU library being called and the input (output) tensors. The final TOP5 classification results indicate:
 
 ```plain
---- Confidence (%)  --------- Class ID ----------ImageNet Class  88.5%                              156             Borzoi       5.4%                               155             Shih-Tzu      0.37%                              205       Labrador Retriever  0.30%                              284          Siamese Cat      0.02%                              285         Egyptian Cat     
+--- Confidence (%)  --------- Class ID ----------ImageNet Class
+		88.5%                   156           	   Borzoi
+        5.4%                    155            	   Shih-Tzu
+        0.37%                   205       		   Labrador Retriever
+        0.30%                   284         	   Siamese Cat
+        0.02%                   285        		   Egyptian Cat     
 ```
 
 The inference result suggests an 88.5% probability that the image contains a Borzoi (Russian Wolfhound).
@@ -5246,17 +5325,21 @@ The image used for this test is shown below:
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774666440305_ad6f4a06_db24_4454_a635_c3b10fa0bec6.jpeg)
 
-##### Interface Call
+###### 3.1 Interface Call
 
 To address the program's development needs, this brief demo introduction explains how to call the image and the model. The demo's source code can be referenced for further details.file.`SDK/external/rknpu2/examples/rknn_common_test/src/main.cc`
 
-**Reading the JPG image uses the OpenCV interface.**The core steps are:
+Reading the JPG image uses the OpenCV interface.
+
+The core steps are:
 
 + cv::imread(...)：Read jpg file
 + cv::cvtColor(...)：Convert OpenCV's default BGR input to RGB.
 + cv::resize(...)：Scale the image to the model input dimensions.
 
-**The RKNN model is called using the RKNN Runtime interface****. The core is:**
+**The RKNN model is called using the RKNN Runtime interface.**
+
+ The core is:
 
 + rknn\_init(...)：Load .rknn model
 + rknn\_query(...)：Query model input/output information.
@@ -5273,14 +5356,15 @@ In summary, the image reading and conversion in this demo are implemented using 
 
 #### 1\.1 Packaging the User Program into the Image
 
-1. The directory `OK-linux-source/buildroot/board/rockchip/common/base` in the source code corresponds to the root directory of the board's file system. You can directly copy your compiled user application, `user_application`, to the subdirectory `usr/bin` within this directory.
-2. To modify system or service configurations, copy the relevant configuration files to the directory `OK-linux-source/buildroot/board/rockchip/common/base/etc`.
+- The directory `OK-linux-source/buildroot/board/rockchip/common/base` in the source code corresponds to the root directory of the board's file system. You can directly copy your compiled user application, `user_application`, to the subdirectory `usr/bin` within this directory;
 
-3. To add library files, copy them to the specified directory within `OK-linux-source/buildroot/board/rockchip/common/base/usr/lib`.
+- To modify system or service configurations, copy the relevant configuration files to the directory `OK-linux-source/buildroot/board/rockchip/common/base/etc`;
+
+- To add library files, copy them to the specified directory within `OK-linux-source/buildroot/board/rockchip/common/base/usr/lib`;
 
 After copying the files, execute the command `chmod +x user_application` to add executable permissions to the application.
 
-Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.2.1 of the Build Guides for compilation instructions). After successful programming, you can manually run your application, `user_application`, on the board. For information on enabling auto-start functionality, please refer to the next section.
+Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.2.1 of the Build Guides for compilation instructions). After successful programming, you can manually run your application`user_application`, on the board. For information on enabling auto-start functionality, please refer to the next section.
 
 ### 2\. Auto-starting the User Program
 
@@ -5288,7 +5372,7 @@ The Linux system of the OK3588-C utilizes systemd as its initialization system a
 
 Within this system, there is a preset script named `forlinx.sh` located in the `/etc` directory. This script is called and executed by `/etc/init.d/S90autorun.sh`. Users can customize `forlinx.sh` to include their own applications, allowing for automatic startup of these applications.
 
-```bash
+```plain
 root@OK3588-C-buildroot:~# cat /etc/forlinx.sh
 #! /bin/sh
 
@@ -5328,11 +5412,13 @@ An NPU (Neural Processing Unit) is a hardware accelerator specifically designed 
 
 The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment. Main features:
 
-(1) 6 TOPS NPU, empowering various AI scenarios;
+- 6 TOPS NPU, empowering various AI scenarios;
 
-(2) Triple-core architecture design;
+- Triple-core architecture design;
 
-(3) Int4/int8/int16/FP16/BF16/TF32 data formats.
+
+- Int4/int8/int16/FP16/BF16/TF32 data formats.
+
 
 To help developers deploy AI models more quickly, Rockchip officially provides users with two toolchains for model conversion, inference, and performance evaluation on computers, including the RKNN toolchain and the RKLLM toolchain specifically designed for large language models. In addition, Rockchip officially provides the RKNN Model Zoo, developed based on the RKNPU SDK toolchain, which covers deployment examples for current mainstream algorithms. The examples include the process of exporting RKNN models and performing inference on RKNN models using the Python API and C API.
 
@@ -5407,9 +5493,9 @@ The currently supported models are as follows:
 
 With RKLLM-Toolkit2, developers can easily quantize and convert large language models on a computer. It provides a concise Python interface with the following core features:
 
-(1) Model Conversion: Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.
+- **Model Conversion:** Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform;
 
-(2) Quantization: Supports converting floating-point models into fixed-point models. Currently supported quantization types are w8a8 and w8a8 grouped quantization (with supported group sizes of 128, 256, and 512).
+- **Quantization:** Supports converting floating-point models into fixed-point models. Currently supported quantization types are w8a8 and w8a8 grouped quantization (with supported group sizes of 128, 256, and 512).
 
 RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to [https://github.com/airockchip/rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2) for the RKLLM-Toolkit2 details.
 
@@ -5432,9 +5518,8 @@ Figure 1-2: RKLLM Software Stack.
 
 With RKLLM-Toolkit2, developers can efficiently perform quantization and conversion of large language models on a host computer. It provides a concise Python interface with the following core features:
 
-(1) Model Conversion: Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.
-
-(2) Quantization: Supports converting floating-point models into fixed-point models. Currently supported quantization types include w8a8 and w8a8 grouped quantization, with supported group sizes of 128, 256, and 512.
+- **Model Conversion:** Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.
+- **Quantization:** Supports converting floating-point models into fixed-point models. Currently supported quantization types include w8a8 and w8a8 grouped quantization, with supported group sizes of 128, 256, and 512.
 
 Please refer to`rknn-llm\doc\Rockchip_RKLLM_SDK_CN_1.2.3.pdf`, for RKLLM-Toolkit2 details.
 
@@ -5444,7 +5529,7 @@ RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It a
 
 For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3.pdf`.
 
-###### 4.1.3 RKNN Model Zoo
+##### 4.1.3 RKNN Model Zoo
 
 RKNN Model Zoo is an edge AI model deployment resource library launched by Rockchip based on its RKNPU SDK toolchain. It aims to provide developers with a complete reference implementation for AI model deployment. It covers the entire workflow—from model conversion and quantization to running inference on Rockchip NPUs using both Python and C APIs. Built-in YOLO series detection/segmentation/pose, image classification, OCR, license plate recognition, speech recognition and other dozens of mainstream algorithms, each model provides pre-training weights, conversion scripts and sample codes that can be directly compiled and run to help developers quickly achieve high-performance NPU reasoning acceleration on Rockchip hardware.
 
@@ -5489,7 +5574,7 @@ There are two installation methods for RKNN-Toolkit2:`pip`and`Docker`. You can c
 
 ###### **4.2.1.1 Installing via Pip**
 
-Set up the Python Environment.
+* Set up the Python Environment
 
 ```plain
 forlinx@ubuntu:~$ sudo apt-get update
@@ -5497,7 +5582,7 @@ forlinx@ubuntu:~$ sudo apt-get install python3 python3-dev python3-pip
 forlinx@ubuntu:~$ sudo apt-get install libxslt1-dev zlib1g zlib1g-dev libglib2.0-0 libsm6 libgl1-mesa-glx libprotobuf-dev gcc
 ```
 
-Install the Miniforge Tool.
+* Install the Miniforge Tool
 
 ```plain
 # Download Mini forge installation package
@@ -5508,7 +5593,7 @@ forlinx@ubuntu:~$ bash Miniforge3-Linux-x86_64.sh
 
 ```
 
-Create the RKNN-Toolkit2 Conda Environment.
+* Create the RKNN-Toolkit2 Conda Environment
 
 ```plain
 # Switch to the Conda base environment
@@ -5520,7 +5605,7 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate 			// Miniforge installation 
 
 ```
 
-Install RKNN-Toolkit2.
+* Install RKNN-Toolkit2
 
 After activating the RKNN-Toolkit2 Conda environment, RKNN-Toolkit2 can be installed either from a`pip`source or via a local`wheel`package.
 
@@ -5532,7 +5617,8 @@ Install from a pip source.
 pip install rknn-toolkit2 -i https://pypi.org/simple --upgrade
 ```
 
-Install from a local wheel package.
+- Install from a local wheel package.
+
 
 Transfer the RKNN-Toolkit2 project folder (rknn-toolkit2) to the target directory`ubuntu/home/forlinx/`. The RKNN-Toolkit2 project file can be downloaded from: [https://github.com/airockchip/rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2).
 
@@ -5551,7 +5637,7 @@ Transfer the RKNN-Toolkit2 project folder (rknn-toolkit2) to the target director
 
 ###### 4.2.1.2 Installing via Docker
 
-Install Docker Tools.
+* Install Docker Tools
 
 Install Docker tools following the official Docker installation manual. Link:
 
@@ -5585,7 +5671,7 @@ Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ```
 
-Image Preparation.
+* Image Preparation
 
 Create the image environment via`Dockerfile`.
 
@@ -5603,7 +5689,7 @@ Querying Image Information.
 forlinx@ubuntu:~$ docker images
 ```
 
-Runn the Image.
+* Runn the Image
 
 Execute the following command to run the`Docker`image. After execution, you will enter the bash environment.
 
@@ -5617,7 +5703,7 @@ To map the code in the examples folder into the Docker environment, you can appe
 forlinx@ubuntu:~$ docker run -t -i --privileged -v /dev/bus/usb:/dev/bus/usb  -v /home/forlinx/rknn-toolkit2/examples:/examples rknn-toolkit2:2.3.2-cp38 /bin/bash
 ```
 
-Run the Demo.
+* Run the Demo
 
 ```plain
 root@6413d8f3c79d:/# cd examples/onnx/yolov5
@@ -5680,7 +5766,7 @@ Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine dire
 (RKLLM-Toolkit) forlinx@ubuntu:~$ pip install rknn-llm/rkllm-toolkit/packages/rkllm_toolkit-1.2.2-cp38-cp38-linux_x86_64.whl
 ```
 
-###### 4.2.3 Board-Side NPU Environment Preparation
+##### 4.2.3 Board-Side NPU Environment Preparation
 
 ```plain
 # Check the RKNPU driver version
@@ -5696,20 +5782,22 @@ Forlinx provides pre-converted models and binary files for download. You can bro
 
 [https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)
 
+After entering the webpage, select the model under "Software Resources -> AI Demo".
+
 ##### 4.3.1 YOLOv5 Model Deployment Example
 
 ###### 4.3.1.1 Model Conversion
 
 Transfer the RKNN Model Zoo project folder (rknn\_model\_zoo) to the virtual machine directory. The download address for the RKNN Model Zoo project files is [https://github.com/airockchip/rknn\_model\_zoo](https://github.com/airockchip/rknn_model_zoo):
 
-Enter the RKNN-Toolkit2 Conda Environment.
+* Enter the RKNN-Toolkit2 Conda Environment
 
 ```plain
 forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation directory
 (base) forlinx@ubuntu:~$ conda activate RKNN-Toolkit2
 ```
 
-Downloading the Model.
+* Downloading the Model
 
 ```plain
 (RKNN-Toolkit2) forlinx@ubuntu:~$ cd rknn_model_zoo/examples/yolov5/model 
@@ -5717,7 +5805,7 @@ Downloading the Model.
 (RKNN-Toolkit2) forlinx@ubuntu:~/rknn_model_zoo/examples/yolov5/model$ ./download_model.sh
 ```
 
-Model Conversion.
+* Model Conversion
 
 ```plain
 (RKNN-Toolkit2) forlinx@ubuntu:~$ cd rknn_model_zoo/examples/yolov5/python
@@ -5732,14 +5820,14 @@ Install the Cross Compiler.
 
 **⚠️Note: The cross compiler mentioned in this section is not the same as the cross-compilation toolchain described in the compilation manual. Please download the cross compiler dedicated to compiling this AI model as described below.**
 
-Install Cmake
+* Install Cmake
 
 ```plain
 forlinx@ubuntu:~$ sudo apt update # Update the package list
 forlinx@ubuntu:~$ sudo apt install cmake # Install cmake
 ```
 
-Install Compiler
+* Install Compiler
 
 The download address of GCC:
 
@@ -5755,7 +5843,7 @@ GCC_COMPILER=/home/forlinx/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin
 
 ```
 
-Compilation.
+* Compilation
 
 ```plain
 forlinx@ubuntu:~$ cd rknn_model_zoo
@@ -5763,7 +5851,7 @@ forlinx@ubuntu:~/rknn_model_zoo$ chmod +x build-linux.sh
 forlinx@ubuntu:~/rknn_model_zoo$ ./build-linux.sh -t rk3588 -a aarch64 -d yolov5
 ```
 
-Operation on Board.
+* Operation on Board
 
 Push the folder under the directory to the board-side directory.
 
@@ -5782,21 +5870,21 @@ The out. png of the output result image in the current directory is as follows:
 
 ###### 4.3.2.1 Model Conversion
 
-Enter RKLLM-Toolkit Conda Environment
+* Enter RKLLM-Toolkit Conda Environment
 
 ```plain
 forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation directory.
 (base) forlinx@ubuntu:~$ conda activate RKLLM-Toolkit
 ```
 
-Download the Model.
+* Download the Model
 
 Download the`DeepSeek-R1-Distill-Qwen-1.5B`model from [https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/tree/main.](about:blank)
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774663096796_fb21f11d_82ac_434c_990f_e1d6c60ed545.png)
 
 Name the downloaded folder as`DeepSeek-R1-Distill-Qwen-1.5B`, and transfer it to the virtual machine path`/home/forlinx/rknn-llm/examples`.
 
-Model Conversion
+* Model Conversion
 
 Navigate to the file path where the export\_rkllm.py script is located.
 
@@ -5822,11 +5910,11 @@ The DeepSeek model requires libgomp support. A compilation method is provided he
 
 The following describes how to compile it yourself.
 
-Set up the compilation environment.
+* Set up the compilation environment
 
 Refer to section 2-3.3.1 to obtain the cross-compilation toolchain and set up the compilation environment.
 
-Compilation
+* Compilation
 
 ```plain
 aarch64-buildroot-linux-gnu_sdk-buildroot$ mkdir work
@@ -5840,7 +5928,7 @@ libgomp/build$ make -j$(nproc)
 libgomp/build$ make install
 ```
 
-Port to the board.
+* Port to the board
 
 After completing the compilation according to the above method, the required library files will be generated in the`install/lib64/`directory.
 
@@ -5870,7 +5958,7 @@ libgomp/build$ scp install/lib64/libgomp.so.1.0.0 root@192.168.0.232:/usr/lib/li
 
 If you do not have the`scp`command, you can also copy the file from the host to the board using a USB drive. It should be noted that after copying to the board's`/usr/lib/`directory, you need to rename it.`libgomp.so.1`
 
-Installing the Cross Compiler.
+* Installing the Cross Compiler
 
 **⚠️Note: The cross compiler mentioned in this section is not the same as the cross-compilation toolchain described in the compilation manual. Please download the cross compiler dedicated to compiling this AI model as described below.**
 
@@ -5883,7 +5971,7 @@ forlinx@ubuntu:~/opts$ tar -xvf gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-g
 forlinx@ubuntu:~/opts$ ~/opts/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc --version
 ```
 
-Compilation.
+* Compilation
 
 ```plain
 forlinx@ubuntu:~/opts$ cd ~/rknn-llm/examples/rkllm_api_demo/deploy
@@ -5891,7 +5979,7 @@ forlinx@ubuntu:~/rknn-llm/examples/rkllm_api_demo/deploy$ chmod +x build-linux.s
 forlinx@ubuntu:~/rknn-llm/examples/rkllm_api_demo/deploy$ ./build-linux.sh
 ```
 
-Operation on Board.
+* Operation on Board
 
 Copy the model files `DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm `from the `rknn-llm/examples/rkllm_api_demo/export `directory to the specified `rknn-llm/examples/rkllm_api_demo/deploy/install` subdirectory, and then push the final folder`demo_Linux_aarch64`to the board-side`/home/forlinx/`directory.
 
@@ -5910,3 +5998,8 @@ The running results are as follows:
 #### 4.4 RKNN Toolkit2 Supported Operator List
 
 For the list of ONNX operators, PyTorch operators, Caffe operators, TensorFlow operators, and Darknet operators supported by RKNN Toolkit2, please refer to the relevant documentation`rknn-toolkit2\doc\RKNNToolKit2_OP_Support-2.3.2.md`.
+
+## Resource Download
+
+Please visit www.forlinx.net/resources/download-center.html to download the product materials you need.
+
