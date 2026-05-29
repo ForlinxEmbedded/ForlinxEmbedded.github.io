@@ -51,7 +51,7 @@ FET3588 SoM
 
 FET3588J SoM
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.pn)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
 
 FET3588S2 SOM
 
