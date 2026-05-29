@@ -570,20 +570,20 @@ windows/
 
 ```plain
 linux/
-├── boot_merger 											# Tool for packing or unpacking loader files
-├── Firmware_Merger 										# SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
-├── Linux_DDR_Bandwidth_Tool 								# DDR Bandwidth Statistics Tool
-├── Linux_Diff_Firmware 									# OTA Differential Package Tool
-├── Linux_Pack_Firmware 									# Firmware Packing Tool (packs into update.img)
-├── Linux_SecureBoot 										# Firmware Signing Tool
-├── Linux_SecurityAVB 										# AVB Signing Tool
-├── Linux_SecurityDM_v1_01.tar.gz 							# DM Signing Tool
-├── Linux_Upgrade_Tool 										# Firmware Flashing Tool
-├── PinDebug 												# GPIO Debug Tool
-├── programming_image_tool 									# Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
-├── rk_ddrbin_tool_V1.01.7z	 								# RK DDR Bin Debug Tool
-├── rk_sign_tool 											# SecureBoot Signing Tool
-├── rk_sign_tool_v1.42_linux.zip 							# (Same as above, version 1.42)
+├── boot_merger 									# Tool for packing or unpacking loader files
+├── Firmware_Merger 								# SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
+├── Linux_DDR_Bandwidth_Tool 						# DDR Bandwidth Statistics Tool
+├── Linux_Diff_Firmware 							# OTA Differential Package Tool
+├── Linux_Pack_Firmware 							# Firmware Packing Tool (packs into update.img)
+├── Linux_SecureBoot 								# Firmware Signing Tool
+├── Linux_SecurityAVB 								# AVB Signing Tool
+├── Linux_SecurityDM_v1_01.tar.gz 					# DM Signing Tool
+├── Linux_Upgrade_Tool 								# Firmware Flashing Tool
+├── PinDebug 										# GPIO Debug Tool
+├── programming_image_tool 							# Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
+├── rk_ddrbin_tool_V1.01.7z	 						# RK DDR Bin Debug Tool
+├── rk_sign_tool 									# SecureBoot Signing Tool
+├── rk_sign_tool_v1.42_linux.zip 					# (Same as above, version 1.42)
 └── ToolsRelease.txt
 ```
 
@@ -591,11 +591,11 @@ linux/
 
 ```plain
 mac/
-├── boot_merger 												# Tool for packing or unpacking loader files
-├── rockdev 													# Command-line Packing Tool
-├── sign_tool 													# SecureBoot Signing Tool
+├── boot_merger 									# Tool for packing or unpacking loader files
+├── rockdev 										# Command-line Packing Tool
+├── sign_tool 										# SecureBoot Signing Tool
 ├── ToolsRelease.txt
-└── upgrade_tool 												# Command-line Upgrade Tool
+└── upgrade_tool 									# Command-line Upgrade Tool
 ```
 
 ### 2. Configuring SDK 
@@ -650,16 +650,16 @@ OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK
 As an example, refer to the Buildroot SDK configuration file for OK3588-C/3588-C2:
 
 ```plain
-RK_BUILDROOT_BASE_CFG="ok3588-c"								# set the config fragments to be used during buildroot compilation
-RK_ROOTFS_HOSTNAME_CUSTOM=y										# Whether to customize the hostname of rootfs
+RK_BUILDROOT_BASE_CFG="ok3588-c"							# set the config fragments to be used during buildroot compilation
+RK_ROOTFS_HOSTNAME_CUSTOM=y								# Whether to customize the hostname of rootfs
 RK_ROOTFS_HOSTNAME="OK3588-C-buildroot"							# set the hostname of rootfs
-RK_WIFIBT_NXP=y													# Enable support for NXP WiFi/Bluetooth (BT) chips.
-RK_UBOOT_CFG="OK3588-C"											# set the config fragments to be used during uboot compilation
+RK_WIFIBT_NXP=y										# Enable support for NXP WiFi/Bluetooth (BT) chips.
+RK_UBOOT_CFG="OK3588-C"									# set the config fragments to be used during uboot compilation
 RK_KERNEL_CFG="OK3588-C-linux_defconfig"						# set the config fragments to be used during kernel compilation
-RK_KERNEL_DTS_NAME="OK3588-C-linux"								# set the dts to be used during kernel compilation
+RK_KERNEL_DTS_NAME="OK3588-C-linux"							# set the dts to be used during kernel compilation
 RK_EXTRA_PARTITION_NUM=1
 RK_EXTRA_PARTITION_1_SRC="rk3588"
-RK_USE_FIT_IMG=y												# Whether to use the FIT (Flattened Image Tree) image format.
+RK_USE_FIT_IMG=y									# Whether to use the FIT (Flattened Image Tree) image format.
 ```
 
 The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, [chapter 3.2.2](#3.2.2 Partial Compilation).
