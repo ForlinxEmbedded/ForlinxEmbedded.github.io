@@ -12,7 +12,7 @@ This document is intended for the Forlinx OK3588-C platform running Linux versio
 
 | **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
 |:----------:|:----------:|:----------:|:----------:|:----------|
-| 03/04/2026| V1.0| 3588-C V1.1 / 3588S2-C V1.0/3588-C2 V1.0| V1.1 and above| OK3588-C\_Buildroot_Kernel-6.1_User's Manual_V1.0 |
+| 03/04/2026| V1.0| 3588-C V1.1 / 3588S2-C V1.0 / 3588-C2 V1.0| V1.1 and above| OK3588-C\_Buildroot_Kernel-6.1_User's Manual_V1.0 |
 
 #### 1.3 OK3588-C Description
 
@@ -47,23 +47,15 @@ There are differences in the combination of CSI/DSI interfaces.
 
 FET3588 SoM
 
-
-
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/image_1779243519740.png)
-
-
+<img src="./images/OK3588-C_Linux_Buildroot_User_Manual/image_1779243519740.png"/>
 
 FET3588J SoM
 
+<img src="./images/OK3588-C_Linux_Buildroot_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png"/>
 
+FET3588S2 SOM
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
-
-
-
-FET3588S2 
-
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)
+<img src="./images/OK3588-C_Linux_Buildroot_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png"/>
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripherals cannot be used on the FET3588-C. 
 
@@ -146,7 +138,7 @@ OK3588-C Interfaces:
 
 #### 3.2 Debug
 
-Login methods: Serial login and network login.                                                              
+Login methods: Serial login and network login.
 
 ##### 3.2.1 Serial Port Debug
 
@@ -178,11 +170,9 @@ Open the Windows Device Manager and check the detected COM port number under “
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776747897279_d8f97a60_2ae3_4ad7_8e5c_ed3869dc9e8b.png)
 
-
-
 Step 2: Open PuTTY. Select “Session”, set the “Serial line” to the COM port used by your computer, and set the baud rate to 115200.
 
- ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png)
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566.png)
 
 Step 3: After completing the previous settings, enter the COM port number used by your computer in the “Saved Sessions” field (for example, use COM24). Save the configuration. When you reopen the serial port, you can simply click on the saved port number to apply the settings directly.
 
@@ -212,11 +202,10 @@ The OK3588-C development board supports SSH login via Ethernet.
 + The network interface is configured with a static IP address by default: 192.168.0.232;
 + Log in as the root user (no password required).
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776411283846_3174c193_eb9d_4393_8496_97fbf843c0a9.png)
-        
 
 To log in to the development board via SSH, 
 
-​                                          ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png)        
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png) 
 
 After successful login, the following message is printed:
 
@@ -235,7 +224,7 @@ This section explains how to write the firmware image to the flash memory of the
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
-Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARES” → “Firmware Download.
+Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARE” → “Buildroot“ Download.
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776748292833_2143298a_d912_4f3b_9884_c6f2e3fa727b.png)
 
@@ -253,8 +242,6 @@ Hardware requirements:
 Please download from the Resource Download page ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM model. There is DriverAssistant\_v5.13.zip under "TOOLS"->“Driver Tool”. Download the zip package, extract it to any directory, and run the program with administrator privileges. 
-
-<!-- 这是一张图片，ocr 内容为： -->
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
 
 Click the “Driver Installation”. The text is `Driver Installation`.
@@ -275,12 +262,12 @@ It is a development tool provided by Rockchip. Launch the application and connec
 
 The Type-C0 port, Recovery button, and Reset button are located on the board as shown in the following figure:
 
-Hold down the development board Recovery button and do not release it.
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/download.png)
 
-Press the Reset button to reset the system.
+Hold down the recovery button on the development board without releasing it, then press the reset button to reset the system. 
 
-After approximately two seconds, release the Recovery button. There will be prompts on the Rockchip development tool : Found ONE LOADER Device.
-     ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
+Once the Rockchip development tool displays "Found One LOADER Device," release the recovery button.
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
 
 - Click “Upgrade Firmware”;
 
@@ -349,6 +336,8 @@ Check the partition and check the address. The address is required to be consist
 
 ![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776742816548_23d8b85f_102b_43b7_960c_76e850eaaa97.png)
 
+If you encounter an issue, check the USB connection and restart the device; verify whether there is a case of overly small partition definition or excessively large image.
+
 #### 3.2 Flashing Firmware via TF Card
 
 **⚠️Note:**
@@ -380,7 +369,7 @@ Creating upgrade disk, Data will lose in the disk, yes or no? select "Yes".
 
 After successfully creating the card, the following prompt will appear:
 
-![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)                    
+![Image](./images/OK3588-C_Linux_Buildroot_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)
 
 - Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
 
@@ -444,8 +433,7 @@ The Forlinx OK3588 BSP is managed through a manifest repository, which requires 
 When pulling from GitHub, please configure a key to establish a connection. If you have not yet set up GitHub authentication on your local machine, refer to Section 1.3 below for setup instructions.
 
 ```plain
-# manifest repository address
-https://github.com/FLembedded/manifests_linux
+https://github.com/FLembedded/manifests_linux				// manifest repository address
 ```
 
 Once all the above requirements are met, you can follow the following steps to pull the source code:
@@ -492,8 +480,8 @@ When you execute the command, you can simply press Enter repeatedly to accept th
 
 ```plain
 forlinx@ubuntu:~$ ls ~/.ssh/
-id_ed25519   				// Private key, do not disclose
-id_ed25519.pub			// Public key for uploading to GitHub
+id_ed25519   								// Private key, do not disclose
+id_ed25519.pub								// Public key for uploading to GitHub
 ```
 
 ##### 1.3.2 Adding the Public Key to GitHub
@@ -555,47 +543,47 @@ This section will separately describe the available tools under Windows, Linux, 
 
 ```plain
 windows/
-├── BoardProofTool_v1.01_20240823_02.zip # Anti-Cloning Tool, prevents PCB design from being copied or cloned
-├── boot_merger_v1.32.zip # Tool for packing or unpacking loader files
-├── DDR_UserTool_v1.41.7z # DDR User Test Tool
-├── DriverAssitant_v5.13.zip # Driver Installation Assistant
-├── EfuseTool_v1.42.zip # eFuse Programming Tool
-├── FactoryTool_v1.91.zip # Mass Production Upgrade Tool
-├── ParameterTool_v1.2.zip # Partition Table Modification Tool
-├── pin_debug_tool_v1.18_20250322_win.zip # GPIO Debug Tool
-├── programmer_image_tool_v1.28.zip # Programmer Upgrade Tool
-├── rk_ddrBin_tool_V1.07.2.zip # DDR Bin Debug Tool
-├── RKDevInfoWriteTool-v1.3.7.zip # Serial Number Writing Tool (for SN, MAC, etc.)
-├── RKDevTool # Tool for discrete firmware upgrades and entire update.img upgrades
-├── RKDevTool_Release_v3.37.zip # Firmware Flashing Tool
-├── RKImageMaker_20230109.zip # Command-line Packing Tool
-├── RKPCBATool_V1.0.9.zip # PCBA Board Test Tool
-├── Rockchip_HdcpKey_Writer_V1.0.5.7z # HDCP Key Programming Tool
-├── Rockchip_USB_SQ_Tool # USB PHY Signal Quality Debug Tool
-├── Rockchip_USB_SQ_Tool_V1.5.7z # (Same as above, version 1.5)
-├── SDDiskTool_v1.78.zip # SD Card Boot/Upgrade Image Creation Tool
+├── BoardProofTool_v1.01_20240823_02.zip 						# Anti-Cloning Tool, prevents PCB design from being copied or cloned
+├── boot_merger_v1.32.zip 										# Tool for packing or unpacking loader files
+├── DDR_UserTool_v1.41.7z 										# DDR User Test Tool
+├── DriverAssitant_v5.13.zip 									# Driver Installation Assistant
+├── EfuseTool_v1.42.zip 										# eFuse Programming Tool
+├── FactoryTool_v1.91.zip 										# Mass Production Upgrade Tool
+├── ParameterTool_v1.2.zip 										# Partition Table Modification Tool
+├── pin_debug_tool_v1.18_20250322_win.zip 						# GPIO Debug Tool
+├── programmer_image_tool_v1.28.zip 							# Programmer Upgrade Tool
+├── rk_ddrBin_tool_V1.07.2.zip 									# DDR Bin Debug Tool
+├── RKDevInfoWriteTool-v1.3.7.zip 								# Serial Number Writing Tool (for SN, MAC, etc.)
+├── RKDevTool 													# Tool for discrete firmware upgrades and entire update.img upgrades
+├── RKDevTool_Release_v3.37.zip 								# Firmware Flashing Tool
+├── RKImageMaker_20230109.zip	 								# Command-line Packing Tool
+├── RKPCBATool_V1.0.9.zip 										# PCBA Board Test Tool
+├── Rockchip_HdcpKey_Writer_V1.0.5.7z 							# HDCP Key Programming Tool
+├── Rockchip_USB_SQ_Tool 										# USB PHY Signal Quality Debug Tool
+├── Rockchip_USB_SQ_Tool_V1.5.7z 								# (Same as above, version 1.5)
+├── SDDiskTool_v1.78.zip 										# SD Card Boot/Upgrade Image Creation Tool
 ├── ToolsRelease.txt
-└── upgrade_tool_v2.46.zip # Command-line Upgrade Tool
+└── upgrade_tool_v2.46.zip 										# Command-line Upgrade Tool
 ```
 
 ###### 1.5.1.2 Linux
 
 ```plain
 linux/
-├── boot_merger # Tool for packing or unpacking loader files
-├── Firmware_Merger # SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
-├── Linux_DDR_Bandwidth_Tool # DDR Bandwidth Statistics Tool
-├── Linux_Diff_Firmware # OTA Differential Package Tool
-├── Linux_Pack_Firmware # Firmware Packing Tool (packs into update.img)
-├── Linux_SecureBoot # Firmware Signing Tool
-├── Linux_SecurityAVB # AVB Signing Tool
-├── Linux_SecurityDM_v1_01.tar.gz # DM Signing Tool
-├── Linux_Upgrade_Tool # Firmware Flashing Tool
-├── PinDebug # GPIO Debug Tool
-├── programming_image_tool # Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
-├── rk_ddrbin_tool_V1.01.7z # RK DDR Bin Debug Tool
-├── rk_sign_tool # SecureBoot Signing Tool
-├── rk_sign_tool_v1.42_linux.zip # (Same as above, version 1.42)
+├── boot_merger 												# Tool for packing or unpacking loader files
+├── Firmware_Merger 											# SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
+├── Linux_DDR_Bandwidth_Tool 									# DDR Bandwidth Statistics Tool
+├── Linux_Diff_Firmware 										# OTA Differential Package Tool
+├── Linux_Pack_Firmware 										# Firmware Packing Tool (packs into update.img)
+├── Linux_SecureBoot 											# Firmware Signing Tool
+├── Linux_SecurityAVB 											# AVB Signing Tool
+├── Linux_SecurityDM_v1_01.tar.gz 								# DM Signing Tool
+├── Linux_Upgrade_Tool 											# Firmware Flashing Tool
+├── PinDebug 													# GPIO Debug Tool
+├── programming_image_tool 										# Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
+├── rk_ddrbin_tool_V1.01.7z	 									# RK DDR Bin Debug Tool
+├── rk_sign_tool 												# SecureBoot Signing Tool
+├── rk_sign_tool_v1.42_linux.zip 								# (Same as above, version 1.42)
 └── ToolsRelease.txt
 ```
 
@@ -603,11 +591,11 @@ linux/
 
 ```plain
 mac/
-├── boot_merger # Tool for packing or unpacking loader files
-├── rockdev # Command-line Packing Tool
-├── sign_tool # SecureBoot Signing Tool
+├── boot_merger 												# Tool for packing or unpacking loader files
+├── rockdev 													# Command-line Packing Tool
+├── sign_tool 													# SecureBoot Signing Tool
 ├── ToolsRelease.txt
-└── upgrade_tool # Command-line Upgrade Tool
+└── upgrade_tool 												# Command-line Upgrade Tool
 ```
 
 ### 2. Configuring SDK 
@@ -623,22 +611,20 @@ OK-linux-source$ tree -L 1
 ├── NOTICE
 ├── README.forlinx
 ├── app
-├── build.sh -> device/rockchip/common/scripts/build.sh        	# building script
-├── buildroot                                                  	# buildroot
+├── build.sh -> device/rockchip/common/scripts/build.sh			# building script
+├── buildroot 													# buildroot
 ├── device
-├── docs                                                       	# rockchip development documents
+├── docs														# rockchip development documents
 ├── external
 ├── hal
 ├── kernel -> kernel-6.1
-├── kernel-6.1                                                  # linux kernel
-├── prebuilts                                                   # prebuilt cross-compilation toolchain 
+├── kernel-6.1  												# linux kernel
+├── prebuilts  													# prebuilt cross-compilation toolchain 
 ├── rkbin
 ├── rkflash.sh -> device/rockchip/common/scripts/rkflash.sh
 ├── rtos
-├── tools                                                      	# some tools
-├── u-boot                                                      # u-boot
-
-
+├── tools														# some tools
+├── u-boot 														# u-boot
 ```
 
 #### 2.2 SDK Configuration
@@ -664,17 +650,16 @@ OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK
 As an example, refer to the Buildroot SDK configuration file for OK3588-C/3588-C2:
 
 ```plain
-RK_BUILDROOT_BASE_CFG="ok3588-c"            # set the config fragments to be used during buildroot compilation
-RK_ROOTFS_HOSTNAME_CUSTOM=y                 # Whether to customize the hostname of rootfs
-RK_ROOTFS_HOSTNAME="OK3588-C-buildroot"     # set the hostname of rootfs
-RK_WIFIBT_NXP=y                             # Enable support for NXP WiFi/Bluetooth (BT) chips.
-RK_UBOOT_CFG="OK3588-C"                     # set the config fragments to be used during uboot compilation
-RK_KERNEL_CFG="OK3588-C-linux_defconfig"    # set the config fragments to be used during kernel compilation
-RK_KERNEL_DTS_NAME="OK3588-C-linux"         # set the dts to be used during kernel compilation
+RK_BUILDROOT_BASE_CFG="ok3588-c"								# set the config fragments to be used during buildroot compilation
+RK_ROOTFS_HOSTNAME_CUSTOM=y										# Whether to customize the hostname of rootfs
+RK_ROOTFS_HOSTNAME="OK3588-C-buildroot"							# set the hostname of rootfs
+RK_WIFIBT_NXP=y													# Enable support for NXP WiFi/Bluetooth (BT) chips.
+RK_UBOOT_CFG="OK3588-C"											# set the config fragments to be used during uboot compilation
+RK_KERNEL_CFG="OK3588-C-linux_defconfig"						# set the config fragments to be used during kernel compilation
+RK_KERNEL_DTS_NAME="OK3588-C-linux"								# set the dts to be used during kernel compilation
 RK_EXTRA_PARTITION_NUM=1
 RK_EXTRA_PARTITION_1_SRC="rk3588"
-RK_USE_FIT_IMG=y                            # Whether to use the FIT (Flattened Image Tree) image format.
-
+RK_USE_FIT_IMG=y												# Whether to use the FIT (Flattened Image Tree) image format.
 ```
 
 The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, [chapter 3.2.2](#3.2.2 Partial Compilation).
@@ -718,7 +703,7 @@ Execute the following commands in your build environment (the installation comma
 
 ```plain
 sudo apt update
-sudo apt-get install openssh-server vim git fakeroot    //Necessary toolkit installation
+sudo apt-get install openssh-server vim git fakeroot
 sudo apt-get install repo git ssh make gcc libssl-dev liblz4-tool expect expect-dev \
 g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support \
 qemu-user-static live-build bison flex cmake gcc-multilib g++-multilib \
@@ -802,7 +787,6 @@ OK-linux-source/rockdev$ tree
 ├── uboot.img -> ../../u-boot/uboot.img
 ├── update.img -> ../update/Image/update.img
 └── userdata.img -> ../extra-parts/userdata.img
-
 ```
 
 Among them, `update.img` is the fully packaged system image, suitable for complete system flashing via OTG or TF card.
@@ -926,7 +910,6 @@ root@OK-C-buildroot:/usr/lib# find . -name "*raw*"
 ./libraw.so
 ./libraw_r.so.23.0.0
 ./libraw.so.23
-
 ```
 
 #### 3.3 Compiling Application
@@ -996,7 +979,7 @@ OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ aarch64-linux-gcc watch
 
 
 ```plain
-OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$/usr/bin/file fltest_watchdog 
+OK-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ /usr/bin/file fltest_watchdog 
 fltest_watchdog: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, not stripped
 ```
 
@@ -1037,7 +1020,7 @@ root@OK3588-buildroot:~# lsusb
 Bus 005 Device 001: ID 1d6b:0002
 Bus 003 Device 001: ID 1d6b:0002
 Bus 001 Device 001: ID 1d6b:0002
-Bus 005 Device 002: ID 2c7c:0125 //EM05 VID and PID
+Bus 005 Device 002: ID 2c7c:0125 					// EM05 VID and PID
 Bus 006 Device 001: ID 1d6b:0001
 Bus 004 Device 001: ID 1d6b:0001
 Bus 002 Device 001: ID 1d6b:0003
@@ -1088,12 +1071,12 @@ udhcpc: lease of 10.98.203.144 obtained from 10.98.203.145, lease time 7200
 
 The ping domain name test.
 
-The network nodes of 4G.
+The 4G network node is`wwan0`.
 
 **⚠️Note: Please select the domain name to test according to the your region.**
 
 ```plain
-root@OK3588-buildroot:~# ping -I wwan0 www.forlinx.com -c 3
+root@OK3588-buildroot:~# ping -I wwan0 www.forlinx.net -c 3
 PING s-526319.gotocdn.com (211.149.226.120) from 10.98.203.144 wwan0: 56(84) bytes of data.
 64 bytes from 211.149.226.120: icmp_seq=1 ttl=50 time=312 ms
 64 bytes from 211.149.226.120: icmp_seq=2 ttl=50 time=200 ms
@@ -1117,7 +1100,7 @@ Connect the 5G module RM500U and the antenna, insert the SIM card, and start the
 root@OK3588-buildroot:~# lsusb
 Bus 005 Device 001: ID 1d6b:0002
 Bus 003 Device 001: ID 1d6b:0002
-Bus 002 Device 002: ID 2c7c:0900 //RM500U 5G module node
+Bus 002 Device 002: ID 2c7c:0900 						// RM500U 5G module node
 Bus 001 Device 001: ID 1d6b:0002
 Bus 006 Device 001: ID 1d6b:0001
 Bus 004 Device 001: ID 1d6b:0001
@@ -1213,7 +1196,7 @@ The 5G network node is`eth2`.
 **⚠️Note: Please select the domain name to test according to the region of the user.**
 
 ```plain
-root@OK3588-buildroot:~# ping -I eth2 www.forlinx.com -c 3
+root@OK3588-buildroot:~# ping -I eth2 www.forlinx.net -c 3
 PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes of data.
 [01-24_22:49:20:156] AT> AT+QNETDEVSTATUS=1
 64 bytes from 211.149.226.120: icmp_seq=1 ttl=52 time=922 ms
@@ -1244,17 +1227,17 @@ The source code location of the ADC key driver in the kernel:`drivers/input/keyb
 The ADC device tree definitions are located in: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 ```plain
-	saradc: saradc@fec10000 {
-		compatible = "rockchip,rk3588-saradc";
-		reg = <0x0 0xfec10000 0x0 0x10000>;
-		interrupts = <GIC_SPI 398 IRQ_TYPE_LEVEL_HIGH>;
-		#io-channel-cells = <1>;
-		clocks = <&cru CLK_SARADC>, <&cru PCLK_SARADC>;
-		clock-names = "saradc", "apb_pclk";
-		resets = <&cru SRST_P_SARADC>;
-		reset-names = "saradc-apb";
-		status = "disabled";
-	};
+saradc: saradc@fec10000 {
+    compatible = "rockchip,rk3588-saradc";
+    reg = <0x0 0xfec10000 0x0 0x10000>;
+    interrupts = <GIC_SPI 398 IRQ_TYPE_LEVEL_HIGH>;
+    #io-channel-cells = <1>;
+    clocks = <&cru CLK_SARADC>, <&cru PCLK_SARADC>;
+    clock-names = "saradc", "apb_pclk";
+    resets = <&cru SRST_P_SARADC>;
+    reset-names = "saradc-apb";
+    status = "disabled";
+};
 ```
 
 By default, SARADC is disabled. Please enable saradc in the corresponding device tree:
@@ -1274,36 +1257,36 @@ Where the saradc1 channel is used for ADC key detection, defined by the device t
 
 ```plain
 adc_keys: adc-keys {
-		compatible = "adc-keys";
-		io-channels = <&saradc 1>;
-		io-channel-names = "buttons";
-		keyup-threshold-microvolt = <1800000>;
-		poll-interval = <100>;
+    compatible = "adc-keys";
+    io-channels = <&saradc 1>;
+    io-channel-names = "buttons";
+    keyup-threshold-microvolt = <1800000>;
+    poll-interval = <100>;
 
-		vol-up-key {
-			label = "volume up";
-			linux,code = <KEY_VOLUMEUP>;
-			press-threshold-microvolt = <17000>;
-		};
+    vol-up-key {
+        label = "volume up";
+        linux,code = <KEY_VOLUMEUP>;
+        press-threshold-microvolt = <17000>;
+    };
 
-		vol-down-key {
-			label = "volume down";
-			linux,code = <KEY_VOLUMEDOWN>;
-			press-threshold-microvolt = <417000>;
-		};
+    vol-down-key {
+        label = "volume down";
+        linux,code = <KEY_VOLUMEDOWN>;
+        press-threshold-microvolt = <417000>;
+    };
 
-		menu-key {
-			label = "menu";
-			linux,code = <KEY_MENU>;
-			press-threshold-microvolt = <890000>;
-		};
+    menu-key {
+        label = "menu";
+        linux,code = <KEY_MENU>;
+        press-threshold-microvolt = <890000>;
+    };
 
-		back-key {
-			label = "back";
-			linux,code = <KEY_BACK>;
-			press-threshold-microvolt = <1235000>;
-		};
-	};
+    back-key {
+        label = "back";
+        linux,code = <KEY_BACK>;
+        press-threshold-microvolt = <1235000>;
+    };
+};
 ```
 
 ##### 3\. Application
@@ -1479,7 +1462,7 @@ The RK3588 GMAC controller supports four RGMII clock configuration schemes:
 | RGMII Config 3 | PHY input 125MHz      | SoC PLL output 25MHz   |
 | RGMII Config 4 | PHY input 125MHz      | External crystal 25MHz |
 
-OK3588-C uses config1.
+OK3588-C uses RGMII Config 1.
 
 ##### 2\. Device Tree
 
@@ -1562,7 +1545,7 @@ The device tree nodes for the OK3588S2-C network are located at: `arch/arm64/boo
 Modify the following configuration file to set eth0 to obtain the IP automatically:`/etc/systemd/network/10-eth0.network`.
 
 ```plain
-root@OK3588-buildroot:~# vi /etc/systemd/network/10-eth0.network   	  //Open the configuration file
+root@OK3588-buildroot:~# vi /etc/systemd/network/10-eth0.network   	  // Open the configuration file
 [Match]
 Name=eth0
 KernelCommandLine=!root=/dev/nfs
@@ -1632,7 +1615,6 @@ lo        Link encap:Local Loopback
           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
-
 ```
 
 **3.2.2 Ethtool**
@@ -1855,7 +1837,6 @@ gpio3: gpio@fec40000 {
 If you need to configure an I/O pin as an external interrupt pin, you can refer to the device tree node configuration for the GT911 touchscreen. You can set GPIO3\_C0 as the interrupt pin, whilst designating GPIO3\_B7 as the reset pin for the touchscreen.
 
 ```plain
-
 gt9xx_dsi0: gt9xx@14 {
         compatible = "goodix,gt911";
     	reg = <0x14>;
@@ -1901,7 +1882,7 @@ OK3588S2-C：`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 ```plain
 &i2c2 {
 	status = "okay";
-    //extend GPIO：TCA6424
+	// extend GPIO：TCA6424
 	extio: tca6424@23 {
 		compatible = "ti,tca6424";
 		reg = <0x23>;
@@ -1990,20 +1971,20 @@ The Rockchip series of chips offers a standard I2C bus, enabling control and acc
 Device Tree Node Path for I2C:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
 ```plain
-	i2c7: i2c@fec90000 {
-		compatible = "rockchip,rk3588-i2c", "rockchip,rk3399-i2c";
-		reg = <0x0 0xfec90000 0x0 0x1000>;
-		clocks = <&cru CLK_I2C7>, <&cru PCLK_I2C7>;
-		clock-names = "i2c", "pclk";
-		interrupts = <GIC_SPI 324 IRQ_TYPE_LEVEL_HIGH>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&i2c7m0_xfer>;
-		resets = <&cru SRST_I2C7>, <&cru SRST_P_I2C7>;
-		reset-names = "i2c", "apb";
-		#address-cells = <1>;
-		#size-cells = <0>;
-		status = "disabled";
-	};
+i2c7: i2c@fec90000 {
+    compatible = "rockchip,rk3588-i2c", "rockchip,rk3399-i2c";
+    reg = <0x0 0xfec90000 0x0 0x1000>;
+    clocks = <&cru CLK_I2C7>, <&cru PCLK_I2C7>;
+    clock-names = "i2c", "pclk";
+    interrupts = <GIC_SPI 324 IRQ_TYPE_LEVEL_HIGH>;
+    pinctrl-names = "default";
+    pinctrl-0 = <&i2c7m0_xfer>;
+    resets = <&cru SRST_I2C7>, <&cru SRST_P_I2C7>;
+    reset-names = "i2c", "apb";
+    #address-cells = <1>;
+    #size-cells = <0>;
+    status = "disabled";
+};
 ```
 
 It is not enabled by default, and please turn on I2C in the corresponding device tree:
@@ -2349,20 +2330,20 @@ Location of the backlight driver source code in the kernel:`drivers/video/backli
 Location of OK3588-C/3588-C2 PMW device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 ```plain
-&pwm2 { //FAN
+&pwm2 { 										// FAN
 	status = "okay";
 };
 
-&pwm4 { //edp
+&pwm4 { 										// edp
 	status = "okay";
 };
 
-&pwm5 {//dsi0
+&pwm5 {											// dsi0
 	pinctrl-0 = <&pwm5m1_pins>;
 	status = "okay";
 };
 
-&pwm6 {//dsi1
+&pwm6 {											// dsi1
 	status = "okay";
 };
 
@@ -2610,9 +2591,9 @@ The system standby device tree node is located at:`kernel-6.1/arch/arm64/boot/dt
 rockchip_suspend: rockchip-suspend {
 	compatible = "rockchip,pm-rk3588";
 	status = "disabled";
-    // Suspend/resume log switch: 0 = disable log output, 1 = enable log output
+	// Suspend/resume log switch: 0 = disable log output, 1 = enable log output
 	rockchip,sleep-debug-en = <0>;
-    // Standard Configuration
+	// Standard Configuration
 	rockchip,sleep-mode-config = <
 		(0
 		| RKPM_SLP_ARMOFF_LOGOFF
@@ -2621,7 +2602,7 @@ rockchip_suspend: rockchip-suspend {
 		| RKPM_SLP_32K_EXT
 		)
 	>;
-    // Wake-up Source Configuration
+	// Wake-up Source Configuration
 	rockchip,wakeup-config = <
 		(0
 		| RKPM_GPIO_WKUP_EN
@@ -2778,7 +2759,6 @@ INFO:    PMU0_PWR_CON(0x0) PMU0_WAKEUP_INT_CON(0x0)
 PMU0_DDR_RET_CON(0x0 0x0)
 PMU1_GRF_SOC_CON2(0x7777) PMU0_GRF_OS_REGS9(0xf392629e)
 9aS
-
 ```
 
 Press PWRON again to wake up:
@@ -2844,7 +2824,6 @@ I/TC: Secondary CPU 6 initializing
 I/TC: Secondary CPU 6 switching to normal world boot
 I/TC: Secondary CPU 7 initializing
 I/TC: Secondary CPU 7 switching to normal world boot
-
 ```
 
 For information on other system standby and wake-up methods, please refer to `OK-linux-source/docs/rk3588/en/Common/TRUST/Rockchip_RK3308_Developer_Guide_System_Suspend_EN.pdf`.
@@ -2900,6 +2879,7 @@ Taking the Type-C0 interface as an example.
 &usbdrd3_0 {
 	status = "okay";
 };
+
 // DWC3 controller for USB3.0 OTG0 with OTG mode and role-switch support
 &usbdrd_dwc3_0 {
 	dr_mode = "otg";
@@ -2938,10 +2918,12 @@ Taking the Type-C0 interface as an example.
 		};
 	};
 };
+
 // Enable DP portion of USB3.0/DP Combo PHY0
 &usbdp_phy0_dp {
 	status = "okay";
 };
+
 // Enable USB3 portion of USB3.0/DP Combo PHY0
 &usbdp_phy0_u3 {
 	status = "okay";
@@ -2949,8 +2931,8 @@ Taking the Type-C0 interface as an example.
 
 &i2c2 {
 	status = "okay";
-// FUSB302 Type-C port controller at address 0x22
-    usbc0: fusb302@22 {
+	// FUSB302 Type-C port controller at address 0x22
+	usbc0: fusb302@22 {
 		compatible = "fcs,fusb302";
 		reg = <0x22>;
 		interrupt-parent = <&gpio1>;
@@ -3015,9 +2997,7 @@ Taking the Type-C0 interface as an example.
 			};
 		};
 	};
-
 };
-
 ```
 
 Location of OK3588-C device tree nodes`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
@@ -3092,19 +3072,19 @@ Location of the UART device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/r
 Take uart4 as example:
 
 ```plain
-	uart4: serial@feb70000 {
-		compatible = "rockchip,rk3588-uart", "snps,dw-apb-uart";
-		reg = <0x0 0xfeb70000 0x0 0x100>;
-		interrupts = <GIC_SPI 335 IRQ_TYPE_LEVEL_HIGH>;
-		clocks = <&cru SCLK_UART4>, <&cru PCLK_UART4>;
-		clock-names = "baudclk", "apb_pclk";
-		reg-shift = <2>;
-		reg-io-width = <4>;
-		dmas = <&dmac1 9>, <&dmac1 10>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&uart4m1_xfer>;
-		status = "disabled";
-	};
+uart4: serial@feb70000 {
+    compatible = "rockchip,rk3588-uart", "snps,dw-apb-uart";
+    reg = <0x0 0xfeb70000 0x0 0x100>;
+    interrupts = <GIC_SPI 335 IRQ_TYPE_LEVEL_HIGH>;
+    clocks = <&cru SCLK_UART4>, <&cru PCLK_UART4>;
+    clock-names = "baudclk", "apb_pclk";
+    reg-shift = <2>;
+    reg-io-width = <4>;
+    dmas = <&dmac1 9>, <&dmac1 10>;
+    pinctrl-names = "default";
+    pinctrl-0 = <&uart4m1_xfer>;
+    status = "disabled";
+};
 ```
 
 It is not enabled by default, and you need to open UART in the corresponding device tree:
@@ -3231,9 +3211,9 @@ Common Baud Rate Macro Definitions:
 Use `write` function to send data to the serial port:
 
 ```plain
-	char test[100]="forlinx_uart_test.1234567890...";
-	printf("Send test data:\n%s\n",test);
-	write(fd, test, strlen(test) + 1);
+char test[100]="forlinx_uart_test.1234567890...";
+printf("Send test data:\n%s\n",test);
+write(fd, test, strlen(test) + 1);
 ```
 
 **3.2.4 Receiving Data**
@@ -3241,19 +3221,19 @@ Use `write` function to send data to the serial port:
 Use the `read` function to read data from the serial port:
 
 ```plain
-	while(1)
-	{
-		int ret;
-		nread = read(fd, &buffer[n], 1);
-		if (strlen(test) == strlen(buffer))
-		{
-			printf("Read Test Data finished,Read:\n%s\n",buffer);
-			memset(buffer,0,sizeof(buffer));
-			tcflush(fd, TCIOFLUSH);
-			break;
-		}
-		n += nread;
+while(1)
+{
+    int ret;
+    nread = read(fd, &buffer[n], 1);
+    if (strlen(test) == strlen(buffer))
+    {
+        printf("Read Test Data finished,Read:\n%s\n",buffer);
+        memset(buffer,0,sizeof(buffer));
+        tcflush(fd, TCIOFLUSH);
+        break;
 	}
+    n += nread;
+}
 ```
 
 **3.2.5 Closing the Serial Port**
@@ -3523,7 +3503,6 @@ ifconfig uap0 192.168.42.1
 #hostapd /etc/hostapd-2.4g.conf &
 hostapd /etc/hostapd-5g.conf &
 dnsmasq -C /etc/dnsmasq.conf
-
 ```
 
 The 5 GHz hotspot name and password can be viewed in the file:`/etc/hostapd-5g.conf`
@@ -3535,20 +3514,20 @@ This section demonstrates data transfer between a mobile phone and the developme
 - Bluetooth configuration:
 
 ```plain
-root@OK3588-C-buildroot:~# bluetoothctl //Open the BlueZ Bluetooth tool
+root@OK3588-C-buildroot:~# bluetoothctl 				// Open the BlueZ Bluetooth tool
 hci0 new_settings: powered bondable ssp br/edr le secure-conn
 Agent registered
 [CHG] Controller 50:5A:65:51:A9:F1 Pairable: yes
-[bluetooth]# power on //Start the Bluetooth device
+[bluetooth]# power on 									// Start the Bluetooth device
 Changing power on succeeded
-[bluetooth]# pairable on  //Set to pairing mode
+[bluetooth]# pairable on  								// Set to pairing mode
 Changing pairable on succeeded
-[bluetooth]# discoverable on //Set to discoverable mode
+[bluetooth]# discoverable on 							// Set to discoverable mode
 hci0 new_settings: powered connectable bondable ssp br/edr le secure-conn
 hci0 new_settings: powered connectable discoverable bondable ssp br/edr le secure-conn
 Changing discoverable on succeeded
 [CHG] Controller 50:5A:65:51:A9:F1 Discoverable: yes
-[bluetooth]# agent on //Start the agent
+[bluetooth]# agent on 									// Start the agent
 Agent is already registered
 [bluetooth]# default-agent
 Default agent request successful
@@ -3656,14 +3635,14 @@ The watchdog driver source code is located in the kernel at: `kernel/drivers/wat
 The watchdog device‑tree node is located at:`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
 ```plain
-	wdt: watchdog@feaf0000 {
-		compatible = "snps,dw-wdt";
-		reg = <0x0 0xfeaf0000 0x0 0x100>;
-		clocks = <&cru TCLK_WDT0>, <&cru PCLK_WDT0>;
-		clock-names = "tclk", "pclk";
-		interrupts = <GIC_SPI 315 IRQ_TYPE_LEVEL_HIGH>;
-		status = "disabled";
-	};
+wdt: watchdog@feaf0000 {
+    compatible = "snps,dw-wdt";
+    reg = <0x0 0xfeaf0000 0x0 0x100>;
+    clocks = <&cru TCLK_WDT0>, <&cru PCLK_WDT0>;
+    clock-names = "tclk", "pclk";
+    interrupts = <GIC_SPI 315 IRQ_TYPE_LEVEL_HIGH>;
+    status = "disabled";
+};
 ```
 
 By default, the watchdog is disabled. To enable it, open the watchdog in the corresponding device tree by setting:
@@ -3792,16 +3771,16 @@ SQLite version 3.44.2 2023-11-24 11:41:44
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
-sqlite> create table tbl1 (one varchar(10), twwo smallint);	//Create table tbl1
-sqlite> insert into tbl1 values('hello!',10);	//Insert data "hello!" and 10 into table tbl1
-sqlite> insert into tbl1 values('goodbye',20);	//Insert data "goodbye" and 20 into table tbl1
-sqlite> select * from tbl1;	//Query the content of table tbl1
+sqlite> create table tbl1 (one varchar(10), twwo smallint);	// Create table tbl1
+sqlite> insert into tbl1 values('hello!',10);				// Insert data "hello!" and 10 into table tbl1
+sqlite> insert into tbl1 values('goodbye',20);				// Insert data "goodbye" and 20 into table tbl1
+sqlite> select * from tbl1;									// Query the content of table tbl1
 hello!|10
 goodbye|20
-sqlite> delete from tbl1 where one = 'hello!';	//Delete data
+sqlite> delete from tbl1 where one = 'hello!';				// Delete data
 sqlite> select * from tbl1;	//Query the content of table tbl1
 goodbye|20
-sqlite> .quit			//Exit the database (or use the .exit command)
+sqlite> .quit												// Exit the database (or use the .exit command)
 ```
 
 ### Multimedia
@@ -3830,7 +3809,7 @@ The OK3588-C development board is equipped with the NAU88C22YG audio codec chip,
 The audio-related device tree nodes for the OK3588-C/3588-C2 are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 ```plain
-//Sound card node: Core abstraction of the audio subsystem
+// Sound card node: Core abstraction of the audio subsystem
 nau8822_sound: nau8822-sound {
 		status = "okay";
 		compatible = "rockchip,multicodecs-card";
@@ -3918,7 +3897,7 @@ nau8822_sound: nau8822-sound {
 		rockchip,jack-det;
 	};
 
-//I2S controller node
+// I2S controller node
 &i2s0_8ch {
 	status = "okay";
 	pinctrl-0 = <&i2s0_lrck
@@ -3927,7 +3906,7 @@ nau8822_sound: nau8822-sound {
 		     &i2s0_sdo0>;
 };
 
-#nau8822
+// nau8822
 &i2c7 {
 	status = "okay";
 	nau8822: nau8822@1a {
@@ -4088,15 +4067,15 @@ The device tree files related to cameras for OK3588-C / OK3588-C2 are:`arch/arm6
 Taking the CAM1 interface as an example.
 
 ```plain
-//Physical layer interface
+// Physical layer interface
 &mipi_dcphy0 {     
     status = "okay";
 };
-//Rockchip Image Signal Processor
+// Rockchip Image Signal Processor
 &rkisp0 {     
     status = "okay";
 };
-//ISP Memory Management Unit
+// ISP Memory Management Unit
 &isp0_mmu {     
     status = "okay";
 };
@@ -4756,7 +4735,7 @@ rkcif-mipi-lvds (platform:rkcif):
 Format Support Queries
 
 ```plain
-root@ok3588-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video73//View HDMI RX Supported Formats
+root@ok3588-buildroot:/# v4l2-ctl --list-formats-ext -d /dev/video73			// View HDMI RX Supported Formats
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture Multiplanar
 
@@ -5551,7 +5530,6 @@ rknn_model_zoo
 │       ├── python   # Model conversion scripts and Python example code 
 │       └── README.md 
 └── ...
-
 ```
 
 #### 4.2 Development Environment Setup
@@ -5592,7 +5570,6 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate 			// Miniforge installation 
 (base) forlinx@ubuntu:~$ conda create -n RKNN-Toolkit2 python=3.8
 # Activate the RKNN-Toolkit2 Conda environment
 (base) forlinx@ubuntu:~$ conda activate RKNN-Toolkit2
-
 ```
 
 * Install RKNN-Toolkit2
@@ -5709,8 +5686,7 @@ person       0.884   [ 208,  244,  286,  506]
 person       0.868   [ 478,  236,  559,  528]
 person       0.825   [ 110,  238,  230,  533]
 person       0.334   [  79,  353,  122,  517]
-   bus         0.705   [  92,  128,  554,  467]
-
+ bus         0.705   [  92,  128,  554,  467]
 ```
 
 ##### 4.2.2 Installing RKLLM-Toolkit
@@ -5830,7 +5806,6 @@ Specify the GCC cross-compiler path in the build-linux. sh script under the rknn
 ```plain
 # Add to start of build-Linux. Sh script
 GCC_COMPILER=/home/forlinx/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu
-
 ```
 
 * Compilation
