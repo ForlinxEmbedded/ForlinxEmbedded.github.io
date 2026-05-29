@@ -544,46 +544,46 @@ This section will separately describe the available tools under Windows, Linux, 
 ```plain
 windows/
 ├── BoardProofTool_v1.01_20240823_02.zip 						# Anti-Cloning Tool, prevents PCB design from being copied or cloned
-├── boot_merger_v1.32.zip 										# Tool for packing or unpacking loader files
-├── DDR_UserTool_v1.41.7z 										# DDR User Test Tool
-├── DriverAssitant_v5.13.zip 									# Driver Installation Assistant
-├── EfuseTool_v1.42.zip 										# eFuse Programming Tool
-├── FactoryTool_v1.91.zip 										# Mass Production Upgrade Tool
-├── ParameterTool_v1.2.zip 										# Partition Table Modification Tool
+├── boot_merger_v1.32.zip 								# Tool for packing or unpacking loader files
+├── DDR_UserTool_v1.41.7z 								# DDR User Test Tool
+├── DriverAssitant_v5.13.zip 								# Driver Installation Assistant
+├── EfuseTool_v1.42.zip 								# eFuse Programming Tool
+├── FactoryTool_v1.91.zip 								# Mass Production Upgrade Tool
+├── ParameterTool_v1.2.zip 								# Partition Table Modification Tool
 ├── pin_debug_tool_v1.18_20250322_win.zip 						# GPIO Debug Tool
 ├── programmer_image_tool_v1.28.zip 							# Programmer Upgrade Tool
-├── rk_ddrBin_tool_V1.07.2.zip 									# DDR Bin Debug Tool
-├── RKDevInfoWriteTool-v1.3.7.zip 								# Serial Number Writing Tool (for SN, MAC, etc.)
-├── RKDevTool 													# Tool for discrete firmware upgrades and entire update.img upgrades
-├── RKDevTool_Release_v3.37.zip 								# Firmware Flashing Tool
-├── RKImageMaker_20230109.zip	 								# Command-line Packing Tool
-├── RKPCBATool_V1.0.9.zip 										# PCBA Board Test Tool
+├── rk_ddrBin_tool_V1.07.2.zip 								# DDR Bin Debug Tool
+├── RKDevInfoWriteTool-v1.3.7.zip 							# Serial Number Writing Tool (for SN, MAC, etc.)
+├── RKDevTool 										# Tool for discrete firmware upgrades and entire update.img upgrades
+├── RKDevTool_Release_v3.37.zip 							# Firmware Flashing Tool
+├── RKImageMaker_20230109.zip	 							# Command-line Packing Tool
+├── RKPCBATool_V1.0.9.zip 								# PCBA Board Test Tool
 ├── Rockchip_HdcpKey_Writer_V1.0.5.7z 							# HDCP Key Programming Tool
-├── Rockchip_USB_SQ_Tool 										# USB PHY Signal Quality Debug Tool
-├── Rockchip_USB_SQ_Tool_V1.5.7z 								# (Same as above, version 1.5)
-├── SDDiskTool_v1.78.zip 										# SD Card Boot/Upgrade Image Creation Tool
+├── Rockchip_USB_SQ_Tool 								# USB PHY Signal Quality Debug Tool
+├── Rockchip_USB_SQ_Tool_V1.5.7z 							# (Same as above, version 1.5)
+├── SDDiskTool_v1.78.zip 								# SD Card Boot/Upgrade Image Creation Tool
 ├── ToolsRelease.txt
-└── upgrade_tool_v2.46.zip 										# Command-line Upgrade Tool
+└── upgrade_tool_v2.46.zip 								# Command-line Upgrade Tool
 ```
 
 ###### 1.5.1.2 Linux
 
 ```plain
 linux/
-├── boot_merger 												# Tool for packing or unpacking loader files
+├── boot_merger 											# Tool for packing or unpacking loader files
 ├── Firmware_Merger 											# SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
-├── Linux_DDR_Bandwidth_Tool 									# DDR Bandwidth Statistics Tool
+├── Linux_DDR_Bandwidth_Tool 										# DDR Bandwidth Statistics Tool
 ├── Linux_Diff_Firmware 										# OTA Differential Package Tool
 ├── Linux_Pack_Firmware 										# Firmware Packing Tool (packs into update.img)
 ├── Linux_SecureBoot 											# Firmware Signing Tool
 ├── Linux_SecurityAVB 											# AVB Signing Tool
-├── Linux_SecurityDM_v1_01.tar.gz 								# DM Signing Tool
+├── Linux_SecurityDM_v1_01.tar.gz 									# DM Signing Tool
 ├── Linux_Upgrade_Tool 											# Firmware Flashing Tool
-├── PinDebug 													# GPIO Debug Tool
+├── PinDebug 												# GPIO Debug Tool
 ├── programming_image_tool 										# Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
 ├── rk_ddrbin_tool_V1.01.7z	 									# RK DDR Bin Debug Tool
-├── rk_sign_tool 												# SecureBoot Signing Tool
-├── rk_sign_tool_v1.42_linux.zip 								# (Same as above, version 1.42)
+├── rk_sign_tool 											# SecureBoot Signing Tool
+├── rk_sign_tool_v1.42_linux.zip 									# (Same as above, version 1.42)
 └── ToolsRelease.txt
 ```
 
@@ -611,10 +611,10 @@ OK-linux-source$ tree -L 1
 ├── NOTICE
 ├── README.forlinx
 ├── app
-├── build.sh -> device/rockchip/common/scripts/build.sh			# building script
+├── build.sh -> device/rockchip/common/scripts/build.sh								# building script
 ├── buildroot 													# buildroot
 ├── device
-├── docs														# rockchip development documents
+├── docs													# rockchip development documents
 ├── external
 ├── hal
 ├── kernel -> kernel-6.1
@@ -623,8 +623,8 @@ OK-linux-source$ tree -L 1
 ├── rkbin
 ├── rkflash.sh -> device/rockchip/common/scripts/rkflash.sh
 ├── rtos
-├── tools														# some tools
-├── u-boot 														# u-boot
+├── tools													# some tools
+├── u-boot 													# u-boot
 ```
 
 #### 2.2 SDK Configuration
@@ -2263,7 +2263,6 @@ vcc3v3_pcie20: vcc3v3-pcie20 {
 	vpcie3v3-supply = <&vcc3v3_pcie30>;
 	status = "disabled";
 };
-
 ```
 
 OK3588S2: PCIe device tree node location:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`. 
@@ -2312,7 +2311,6 @@ root@OK3588-C-buildroot:~# dd if=/run/media/nvme0n1p1/test of=/dev/null bs=1M
 100+0 records in
 100+0 records out
 104857600 bytes (105 MB, 100 MiB) copied, 0.0312363 s, 3.4 GB/s
-
 ```
 
 #### PWM
@@ -2348,16 +2346,16 @@ Location of OK3588-C/3588-C2 PMW device tree node:`kernel-6.1/arch/arm64/boot/dt
 };
 
 fan: pwm-fan {
-		compatible = "pwm-fan";
-		#cooling-cells = <2>;
-		pwms = <&pwm2 0 50000 0>;
-	};
+	compatible = "pwm-fan";
+	#cooling-cells = <2>;
+	pwms = <&pwm2 0 50000 0>;
+};
 
 backlight_dsi0: backlight-dsi0 {
-		compatible = "pwm-backlight";
-		pwms = <&pwm5 0 50000 0>;
-		status = "okay";
-    };
+	compatible = "pwm-backlight";
+	pwms = <&pwm5 0 50000 0>;
+	status = "okay";
+};
 ```
 
 Location of OK3588S2-C PWM device tree node:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
