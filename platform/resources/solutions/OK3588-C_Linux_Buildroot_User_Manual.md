@@ -544,45 +544,45 @@ This section will separately describe the available tools under Windows, Linux, 
 ```plain
 windows/
 ├── BoardProofTool_v1.01_20240823_02.zip 				# Anti-Cloning Tool, prevents PCB design from being copied or cloned
-├── boot_merger_v1.32.zip 								# Tool for packing or unpacking loader files
-├── DDR_UserTool_v1.41.7z 								# DDR User Test Tool
-├── DriverAssitant_v5.13.zip 								# Driver Installation Assistant
-├── EfuseTool_v1.42.zip 								# eFuse Programming Tool
-├── FactoryTool_v1.91.zip 								# Mass Production Upgrade Tool
-├── ParameterTool_v1.2.zip 								# Partition Table Modification Tool
+├── boot_merger_v1.32.zip 						# Tool for packing or unpacking loader files
+├── DDR_UserTool_v1.41.7z 						# DDR User Test Tool
+├── DriverAssitant_v5.13.zip 						# Driver Installation Assistant
+├── EfuseTool_v1.42.zip 						# eFuse Programming Tool
+├── FactoryTool_v1.91.zip 						# Mass Production Upgrade Tool
+├── ParameterTool_v1.2.zip 						# Partition Table Modification Tool
 ├── pin_debug_tool_v1.18_20250322_win.zip 				# GPIO Debug Tool
 ├── programmer_image_tool_v1.28.zip 					# Programmer Upgrade Tool
-├── rk_ddrBin_tool_V1.07.2.zip 							# DDR Bin Debug Tool
-├── RKDevInfoWriteTool-v1.3.7.zip 						# Serial Number Writing Tool (for SN, MAC, etc.)
-├── RKDevTool 										# Tool for discrete firmware upgrades and entire update.img upgrades
+├── rk_ddrBin_tool_V1.07.2.zip 						# DDR Bin Debug Tool
+├── RKDevInfoWriteTool-v1.3.7.zip 					# Serial Number Writing Tool (for SN, MAC, etc.)
+├── RKDevTool 								# Tool for discrete firmware upgrades and entire update.img upgrades
 ├── RKDevTool_Release_v3.37.zip 					# Firmware Flashing Tool
 ├── RKImageMaker_20230109.zip	 					# Command-line Packing Tool
-├── RKPCBATool_V1.0.9.zip 							# PCBA Board Test Tool
-├── Rockchip_HdcpKey_Writer_V1.0.5.7z 				# HDCP Key Programming Tool
-├── Rockchip_USB_SQ_Tool 							# USB PHY Signal Quality Debug Tool
+├── RKPCBATool_V1.0.9.zip 						# PCBA Board Test Tool
+├── Rockchip_HdcpKey_Writer_V1.0.5.7z 				        # HDCP Key Programming Tool
+├── Rockchip_USB_SQ_Tool 						# USB PHY Signal Quality Debug Tool
 ├── Rockchip_USB_SQ_Tool_V1.5.7z 					# (Same as above, version 1.5)
-├── SDDiskTool_v1.78.zip 							# SD Card Boot/Upgrade Image Creation Tool
+├── SDDiskTool_v1.78.zip 						# SD Card Boot/Upgrade Image Creation Tool
 ├── ToolsRelease.txt
-└── upgrade_tool_v2.46.zip 							# Command-line Upgrade Tool
+└── upgrade_tool_v2.46.zip 						# Command-line Upgrade Tool
 ```
 
 ###### 1.5.1.2 Linux
 
 ```plain
 linux/
-├── boot_merger 									# Tool for packing or unpacking loader files
-├── Firmware_Merger 								# SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
+├── boot_merger 							# Tool for packing or unpacking loader files
+├── Firmware_Merger 							# SPI NOR Firmware Packing Tool (generated firmware can be used with programmers)
 ├── Linux_DDR_Bandwidth_Tool 						# DDR Bandwidth Statistics Tool
-├── Linux_Diff_Firmware 							# OTA Differential Package Tool
-├── Linux_Pack_Firmware 							# Firmware Packing Tool (packs into update.img)
-├── Linux_SecureBoot 								# Firmware Signing Tool
-├── Linux_SecurityAVB 								# AVB Signing Tool
+├── Linux_Diff_Firmware 						# OTA Differential Package Tool
+├── Linux_Pack_Firmware 						# Firmware Packing Tool (packs into update.img)
+├── Linux_SecureBoot 							# Firmware Signing Tool
+├── Linux_SecurityAVB 							# AVB Signing Tool
 ├── Linux_SecurityDM_v1_01.tar.gz 					# DM Signing Tool
-├── Linux_Upgrade_Tool 								# Firmware Flashing Tool
-├── PinDebug 										# GPIO Debug Tool
-├── programming_image_tool 							# Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
-├── rk_ddrbin_tool_V1.01.7z	 						# RK DDR Bin Debug Tool
-├── rk_sign_tool 									# SecureBoot Signing Tool
+├── Linux_Upgrade_Tool 							# Firmware Flashing Tool
+├── PinDebug 								# GPIO Debug Tool
+├── programming_image_tool 						# Tool for packing SPI NOR/SPI NAND/SLC NAND/eMMC programmer firmware
+├── rk_ddrbin_tool_V1.01.7z	 					# RK DDR Bin Debug Tool
+├── rk_sign_tool 							# SecureBoot Signing Tool
 ├── rk_sign_tool_v1.42_linux.zip 					# (Same as above, version 1.42)
 └── ToolsRelease.txt
 ```
@@ -591,11 +591,11 @@ linux/
 
 ```plain
 mac/
-├── boot_merger 									# Tool for packing or unpacking loader files
-├── rockdev 										# Command-line Packing Tool
-├── sign_tool 										# SecureBoot Signing Tool
+├── boot_merger 							# Tool for packing or unpacking loader files
+├── rockdev 								# Command-line Packing Tool
+├── sign_tool 								# SecureBoot Signing Tool
 ├── ToolsRelease.txt
-└── upgrade_tool 									# Command-line Upgrade Tool
+└── upgrade_tool 							# Command-line Upgrade Tool
 ```
 
 ### 2. Configuring SDK 
@@ -611,20 +611,20 @@ OK-linux-source$ tree -L 1
 ├── NOTICE
 ├── README.forlinx
 ├── app
-├── build.sh -> device/rockchip/common/scripts/build.sh		     # building script
-├── buildroot 													# buildroot
+├── build.sh -> device/rockchip/common/scripts/build.sh		        # building script
+├── buildroot 								# buildroot
 ├── device
-├── docs													   # rockchip development documents
+├── docs								# rockchip development documents
 ├── external
 ├── hal
 ├── kernel -> kernel-6.1
-├── kernel-6.1  												# linux kernel
-├── prebuilts  													# prebuilt cross-compilation toolchain 
+├── kernel-6.1  							# linux kernel
+├── prebuilts  								# prebuilt cross-compilation toolchain 
 ├── rkbin
 ├── rkflash.sh -> device/rockchip/common/scripts/rkflash.sh
 ├── rtos
-├── tools													# some tools
-├── u-boot 													# u-boot
+├── tools								# some tools
+├── u-boot 								# u-boot
 ```
 
 #### 2.2 SDK Configuration
@@ -650,16 +650,16 @@ OK3588S2-C configuration file: `OK-linux-source/device/rockchip/.chips/rk3588/OK
 As an example, refer to the Buildroot SDK configuration file for OK3588-C/3588-C2:
 
 ```plain
-RK_BUILDROOT_BASE_CFG="ok3588-c"							# set the config fragments to be used during buildroot compilation
-RK_ROOTFS_HOSTNAME_CUSTOM=y								# Whether to customize the hostname of rootfs
-RK_ROOTFS_HOSTNAME="OK3588-C-buildroot"							# set the hostname of rootfs
-RK_WIFIBT_NXP=y										# Enable support for NXP WiFi/Bluetooth (BT) chips.
-RK_UBOOT_CFG="OK3588-C"									# set the config fragments to be used during uboot compilation
-RK_KERNEL_CFG="OK3588-C-linux_defconfig"						# set the config fragments to be used during kernel compilation
-RK_KERNEL_DTS_NAME="OK3588-C-linux"							# set the dts to be used during kernel compilation
+RK_BUILDROOT_BASE_CFG="ok3588-c"					# set the config fragments to be used during buildroot compilation
+RK_ROOTFS_HOSTNAME_CUSTOM=y						# Whether to customize the hostname of rootfs
+RK_ROOTFS_HOSTNAME="OK3588-C-buildroot"					# set the hostname of rootfs
+RK_WIFIBT_NXP=y								# Enable support for NXP WiFi/Bluetooth (BT) chips.
+RK_UBOOT_CFG="OK3588-C"							# set the config fragments to be used during uboot compilation
+RK_KERNEL_CFG="OK3588-C-linux_defconfig"				# set the config fragments to be used during kernel compilation
+RK_KERNEL_DTS_NAME="OK3588-C-linux"					# set the dts to be used during kernel compilation
 RK_EXTRA_PARTITION_NUM=1
 RK_EXTRA_PARTITION_1_SRC="rk3588"
-RK_USE_FIT_IMG=y									# Whether to use the FIT (Flattened Image Tree) image format.
+RK_USE_FIT_IMG=y							# Whether to use the FIT (Flattened Image Tree) image format.
 ```
 
 The paths for the uboot, kernel, and buildroot configuration files as well as the device tree files can be found in the Build SDK Images section, [chapter 3.2.2](#3.2.2 Partial Compilation).
