@@ -6226,7 +6226,7 @@ forlinx@ubuntu:~$ sudo apt-get install libxslt1-dev zlib1g zlib1g-dev libglib2.0
 </div>
 </section>
 <section id="installing-the-miniforge-tool">
-<h6><strong>4.2.1.2 Installing the Miniforge Tool</strong><a class="headerlink" href="#installing-the-miniforge-tool" title="Link to this heading"></a></h6>
+<h6><strong>4.2.2.2 Installing the Miniforge Tool</strong><a class="headerlink" href="#installing-the-miniforge-tool" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Download Mini forge installation package
 forlinx@ubuntu:~$ wget -c https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-Linux-x86_64.sh
 # Install Miniforge
@@ -6236,7 +6236,7 @@ forlinx@ubuntu:~$ bash Miniforge3-Linux-x86_64.sh
 </div>
 </section>
 <section id="creating-rkllm-toolkit-conda-environment">
-<h6><strong>4.2.1.3 Creating RKLLM-Toolkit Conda Environment</strong><a class="headerlink" href="#creating-rkllm-toolkit-conda-environment" title="Link to this heading"></a></h6>
+<h6><strong>4.2.2.3 Creating RKLLM-Toolkit Conda Environment</strong><a class="headerlink" href="#creating-rkllm-toolkit-conda-environment" title="Link to this heading"></a></h6>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># Switch to the Conda base environment
 forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation directory
 
@@ -6249,8 +6249,8 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 </div>
 </section>
 <section id="id62">
-<h6><strong>4.2.1.4 Installing RKLLM-Toolkit</strong><a class="headerlink" href="#id62" title="Link to this heading"></a></h6>
-<p>Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is:<a class="reference external" href="https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip">https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip</a>。</p>
+<h6><strong>4.2.2.4 Installing RKLLM-Toolkit</strong><a class="headerlink" href="#id62" title="Link to this heading"></a></h6>
+<p>Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is: <a class="reference external" href="https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip">https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip</a>.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(RKLLM-Toolkit) forlinx@ubuntu:~$ pip install rknn-llm/rkllm-toolkit/packages/rkllm_toolkit-1.2.2-cp38-cp38-linux_x86_64.whl
 </pre></div>
 </div>

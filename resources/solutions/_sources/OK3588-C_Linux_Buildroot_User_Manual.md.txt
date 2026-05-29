@@ -5725,7 +5725,7 @@ forlinx@ubuntu:~$ sudo apt-get install python3 python3-dev python3-pip
 forlinx@ubuntu:~$ sudo apt-get install libxslt1-dev zlib1g zlib1g-dev libglib2.0-0 libsm6 libgl1-mesa-glx libprotobuf-dev gcc
 ```
 
-###### **4.2.1.2 Installing the Miniforge Tool**
+###### **4.2.2.2 Installing the Miniforge Tool**
 
 ```plain
 # Download Mini forge installation package
@@ -5735,7 +5735,7 @@ forlinx@ubuntu:~$ chmod 777 Miniforge3-Linux-x86_64.sh
 forlinx@ubuntu:~$ bash Miniforge3-Linux-x86_64.sh
 ```
 
-###### **4.2.1.3 Creating RKLLM-Toolkit Conda Environment**
+###### **4.2.2.3 Creating RKLLM-Toolkit Conda Environment**
 
 ```plain
 # Switch to the Conda base environment
@@ -5748,9 +5748,9 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 (base) forlinx@ubuntu:~$ conda activate RKLLM-Toolkit
 ```
 
-###### **4.2.1.4 Installing RKLLM-Toolkit**
+###### **4.2.2.4 Installing RKLLM-Toolkit**
 
-Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is:[https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip](https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip)。
+Transfer the RKLLM-Toolkit project folder (rknn-llm) to the virtual machine directory. Under the RKLLM-Toolkit Conda environment, use the pip tool to directly install the provided toolchain wheel package. During the installation process, the installation tool will automatically download the required dependency packages for the RKLLM-Toolkit. The download address for the RKLLM-Toolkit project files is: [https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip](https://github.com/airockchip/rknn-llm/archive/refs/tags/release-v1.2.2.zip).
 
 ```plain
 (RKLLM-Toolkit) forlinx@ubuntu:~$ pip install rknn-llm/rkllm-toolkit/packages/rkllm_toolkit-1.2.2-cp38-cp38-linux_x86_64.whl
