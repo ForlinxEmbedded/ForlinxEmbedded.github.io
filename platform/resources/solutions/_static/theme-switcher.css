@@ -362,37 +362,38 @@ pre, code {
 
 /* ======================= 移动端修复：汉堡菜单吸顶与展开修正 ======================= */
 @media screen and (max-width: 768px) {
-    /* 1. 顶部横条吸顶 */
+    /* 1. 顶部横条：确保始终吸顶且在最上层 */
     .wy-nav-top {
         position: sticky !important;
         top: 0 !important;
-        z-index: 9990 !important;
+        z-index: 10001 !important;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 100% !important;
+        display: block !important;
     }
 
-   
-    /* 2. 覆盖默认会导致瞬间跳顶的 shift 类，并防止正文被向右推开 */
+    /* 2. 覆盖默认 shift 类：防止正文跳动和右移 */
     .wy-nav-content-wrap.shift {
         position: relative !important;
         height: auto !important;
         overflow: visible !important;
         top: auto !important;
-        left: 0 !important;          /* 👈 核心新增：强制正文原位不动，不向右偏移 */
-        transform: none !important;  /* 👈 核心新增：干掉任何可能导致位移的动画 */
+        left: 0 !important;
+        transform: none !important;
     }
-  
-/* 3. 左侧菜单在当前视口展开，不影响正文滚动位置，并限制宽度 */
-.wy-nav-side.shift {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 85% !important;        /* 限制宽度，不要铺满手机屏幕 */
-    max-width: 320px !important;  /* 即使在平板上，最大宽度也不超过 320px */
-    height: 100vh !important;
-    z-index: 10000 !important;
-    overflow-y: auto !important;
-    box-shadow: 5px 0 15px rgba(0,0,0,0.3) !important; /* 右侧阴影，产生抽屉的悬浮立体感 */
-}
+
+    /* 3. 侧边栏：避开顶部导航栏，防止遮挡汉堡菜单 */
+    .wy-nav-side.shift {
+        position: fixed !important;
+        top: 45px !important;  /* 👈 核心改动：向下挪动 45px，让出汉堡菜单的位置 */
+        left: 0 !important;
+        width: 85% !important;
+        max-width: 320px !important;
+        height: calc(100vh - 45px) !important; /* 👈 核心改动：高度相应扣除顶部 */
+        z-index: 9999 !important;
+        overflow-y: auto !important;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.3) !important;
+    }
 }
 
 /* ======================= 一键置顶按钮样式 ======================= */
