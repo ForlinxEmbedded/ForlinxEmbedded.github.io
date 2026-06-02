@@ -4,7 +4,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 ## Copyright
 
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+The copyright of this manual belongs to Baoding Forlinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
@@ -33,13 +33,13 @@ Use the default OK113I\_linux\_defconfig file, as it already includes the necess
 
 The recovery system needs to be manually configured. It cannot directly copy the main system's deconfig file, as a system with too large a filesystem will not boot. Later tests showed that the recovery system's filesystem must not exceed 11M; otherwise, the kernel will fail to boot.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160214130.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160214130.png)
 
 To implement this, simply modify the `buildroot/buildroot-201902/configs/OK113I_linux_recovery_defconfig` file by adding these settings. It’s based on the simplest defconfig file.
 
 <details class="lake-collapse"><summary id="u46e61825"><span class="ne-text" style="font-size: 14px">OK113I_linux_recovery_defconfig</span></summary><p id="u1f453e0d" class="ne-p" style="margin: 0; padding: 0; min-height: 24px"><span class="ne-text" style="font-size: 14px">BR2_arm=y<br></span><span class="ne-text" style="font-size: 14px">BR2_cortex_a7=y<br></span><span class="ne-text" style="font-size: 14px">BR2_SVN="svn"<br></span><span class="ne-text" style="font-size: 14px">BR2_TOOLCHAIN_EXTERNAL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TOOLCHAIN_EXTERNAL_LINARO_ARMSF=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_HOSTNAME="ok113i"<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_ISSUE="Welcome to Allwinner Longan Platform"<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_EUDEV=y<br></span><span class="ne-text" style="font-size: 14px">BR2_SYSTEM_BIN_SH_BASH=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_GETTY_PORT="ttyS0"<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_GENERIC_GETTY_BAUDRATE_115200=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_TZ_INFO=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_POST_BUILD_SCRIPT="$(TOPDIR)/../../platform/config/buildroot/post_build.sh"<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_BUSYBOX_SHOW_OTHERS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_ZLIB=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_ROOTFS_CPIO=y<br></span><span class="ne-text" style="font-size: 14px">BR2_TARGET_ROOTFS_CPIO_GZIP=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_DOSFSTOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_DTC=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_E2FSPROGS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_GENEXT2FS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_GENIMAGE=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_HOST_MTOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARCH_SUN55I=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARCH_SUN55IW6=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OTA_BURNBOOT=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_MTD=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_MTD_MKFSJFFS2=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_UBOOT_TOOLS=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCONFIG=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_SWUPDATE=y<br></span><span class="ne-text" style="font-size: 14px">SWUPDATE_CONFIG_MTD=y<br></span><span class="ne-text" style="font-size: 14px">SWUPDATE_CONFIG_UBIVOL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCEDARX=n<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCEDARC=n<br></span><span class="ne-text" style="font-size: 14px">BR2_ROOTFS_OVERLAY="/home/forlinx/work/recovery_rootfs_test"<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_UBOOT_TOOLS=y <br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OTA_BURNBOOT=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCONFIG=y <br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBCURL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_LIBRSYNC=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OPENSSL=y<br></span><span class="ne-text" style="font-size: 14px">BR2_ARM_EABI=y<br></span><span class="ne-text" style="font-size: 14px">BR2_PACKAGE_OPENSSH=y</span></p></details>
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160544401.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160544401.png)
 
 **Modify the default hard floating point to soft floating point.**
 
@@ -263,7 +263,7 @@ SSH allows remote OTA upgrades. Dependencies for SSH upgrading include BR2\_PACK
 
 Additionally, network configuration files must be added.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756375664987_c46782c3_33fe_4e5e_9f62_614fc077c516.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756375664987_c46782c3_33fe_4e5e_9f62_614fc077c516.webp)
 
 Place these network configuration files in the previously mentioned rootfs overlay folder. You can directly copy these files from the main system. If the customer uses a custom board without RTC, password expiration may occur. In such cases, modify the configuration file according to this link: https://forlinx-book.yuque.com/pxh4d1/gfqde1/blvtok3upvabt02c#UFTjs
 
@@ -276,9 +276,9 @@ BR2_TARGET_ROOTFS_CPIO_GZIP=y        # Gzip compress the cpio rootfs
 
 By default, buildroot generates rootfs.ext2 and rootfs.ext4 files. However, the kernel requires the .cpio.gz format. After making this adjustment, the generated filesystem will be in cpio.gz format.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112642177.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112642177.png)
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112646769.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112646769.png)
 
 **Note: The filesystem cannot exceed 11M. The current size is 9.3M.**
 
@@ -286,7 +286,7 @@ By default, buildroot generates rootfs.ext2 and rootfs.ext4 files. However, the 
 
 The make command is used based on the Makefile located in the specified path.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112650320.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112650320.png)
 
 Path: OK113i-linux-sdk/buildroot/buildroot-201902
 
@@ -347,7 +347,7 @@ After full compilation, the files are generated in the out directory.
 
 **Main System:**
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112655728.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112655728.png)
 
 ```
 /home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan/buildroot
@@ -355,7 +355,7 @@ After full compilation, the files are generated in the out directory.
 
 **Recovery System:**
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112659721.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112659721.png)
 
 ```
 /home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan_recover/buildroot
@@ -379,11 +379,11 @@ The deconfig files for both systems are available in the source code and can be 
 /home/forlinx/work/OK113i-linux-sdk/device/config/chips/t113_i/configs/ok113i/longan/BoardConfig.mk
 ```
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112703436.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112703436.png)
 
 This file specifies the configuration file used by the recovery system kernel, as found in the compilation script.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112707296.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112707296.png)
 
 **Main System:**
 
@@ -436,23 +436,23 @@ To save modifications to the source files, it is recommended to manually edit th
 
 In fact, the build process for recovery ultimately uses ./build.sh recovery.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112713145.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260303112713145.png)
 
 The compilation script only declares some environment variables. Ultimately, mkkernel processes both sets of environment variables, but the output path remains the same.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377259242_076680bc_5359_4f90_809b_003f5c6f0aa7_1775720834475.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377259242_076680bc_5359_4f90_809b_003f5c6f0aa7_1775720834475.webp)
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377262598_33a9f983_0903_41c1_869c_86504c4a9947.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377262598_33a9f983_0903_41c1_869c_86504c4a9947.webp)
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377270264_27d7b4f0_1fb4_4e4c_81ce_062052b9e757_1775720921435.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377270264_27d7b4f0_1fb4_4e4c_81ce_062052b9e757_1775720921435.webp)
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377273871_1612423c_0a6d_46f7_a8df_389f522f5e2c.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377273871_1612423c_0a6d_46f7_a8df_389f522f5e2c.webp)
 
 The system will ultimately generate the `boot.img` and `recovery.img` files in the path `/home/forlinx/work/OK113i-linux-sdk/out/t113_i/ok113i/longan`.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377283165_e2c5d51f_bb07_40a0_9948_608b31754a3a.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377283165_e2c5d51f_bb07_40a0_9948_608b31754a3a.webp)
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377286920_f063c287_4b95_4f06_a810_4ec12a45c1b9.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377286920_f063c287_4b95_4f06_a810_4ec12a45c1b9.webp)
 
 ### 2.3 Uboot Configuration
 
@@ -625,15 +625,15 @@ index 01136a2..032d1cc 100644
 
 Directly control the registers, as outlined in the 113 data manual. Simply follow the instructions in the manual.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429793453_1e2917f9_4955_4852_83f9_5e50109bb3cd.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429793453_1e2917f9_4955_4852_83f9_5e50109bb3cd.webp)
 
 Note that when controlling the registers, a key must be added before the parameters to be written.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429803167_4a00e283_5819_44ef_a064_b8416821e8a8.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429803167_4a00e283_5819_44ef_a064_b8416821e8a8.webp)
 
 The data manual specifies that without the key, modification cannot be done. Additionally, only certain timeout values for the watchdog are available.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429813554_4e3db7de_c71b_4262_bbe7_e01b5a170254.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756429813554_4e3db7de_c71b_4262_bbe7_e01b5a170254.webp)
 
 After making these changes, the watchdog will be triggered.
 
@@ -703,11 +703,11 @@ If the reset count exceeds the specified limit, the system will automatically bo
 
 Recovery System:
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image.png)
 
 Add ```bash "fw_setenv bootcount 0"``` to the boot script within the main system.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_1775783532130.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_1775783532130.png)
 
 ### 2.4 Creating the Upgrade Package
 
@@ -741,7 +741,7 @@ ${LICHEE_PLAT_OUT}/rootfs.ext4:rootfs
 )
 ```
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377470334_22c0316d_b888_4314_8a54_a2907453946b.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/1756377470334_22c0316d_b888_4314_8a54_a2907453946b.webp)
 
 **Configure the OTA Strategy Description File**
 
@@ -893,7 +893,7 @@ software = {
 
 For instance, /dev/mmcblk06 is the partition where the rootfs resides. You can check this with the cat /proc/cmdline command.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155730878.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155730878.png)
 
 Syntax can be referenced in the official swupdate documentation at: http://sbabic.github.io/swupdate.
 
@@ -910,7 +910,7 @@ source build/envsetup.sh
 swupdate_pack_swu -recovery
 ```
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155759643.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155759643.png)
 
 t113\_i\_evb1\_auto.swu is the generated OTA package. The swupdate\_pack\_swu command will automatically find the configuration file sw-subimg.cfg. If the configuration file is sw-subimg-ab.cfg, use the swupdate\_pack\_swu -ab command.
 
@@ -1053,7 +1053,7 @@ Since a new partition is added before rootfs, the main system's filesystem will 
 
 If you're unsure of the size to allocate, you can initially set a smaller size. During packaging, it will prompt you for the required size.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155915776.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155915776.png)
 
 After modification, it is directly packaged, and the image can be flashed for OTA upgrade.
 
@@ -1061,13 +1061,13 @@ After modification, it is directly packaged, and the image can be flashed for OT
 **./build.sh pack**
 ```
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155925761.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155925761.png)
 
 ### 2.6 OTA Upgrade
 
 After flashing, the system will boot into the main system by default. Upon reboot, it will enter the recovery system.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155939595.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155939595.png)
 
 Mount the usr partition to view the stored upgrade package.
 
@@ -1075,7 +1075,7 @@ Mount the usr partition to view the stored upgrade package.
 mount /dev/mmcblk0p7 /mnt**
 ```
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image.webp)
 
 Execute the upgrade script if there is no problem.
 
@@ -1083,13 +1083,13 @@ Execute the upgrade script if there is no problem.
 **/etc/swupdate_cmd.sh -i /mnt/t113_i_ok113i-recovery.swu -e stable,upgrade_recovery**
 ```
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155956122.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409155956122.png)
 
 Automatically restart after upgrade, and the file system of the main system can be used normally.
 
-![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160002869.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160002869.png)
 
-## 4\. Reproduction 
+## 3\. Reproduction 
 
 Place the compressed package from the attachment into the virtual machine's shared folder.
 
