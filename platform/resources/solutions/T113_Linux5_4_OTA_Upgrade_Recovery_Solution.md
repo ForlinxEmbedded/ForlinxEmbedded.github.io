@@ -4,7 +4,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 ## Copyright
 
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+The copyright of this manual belongs to Baoding Forlinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
@@ -1089,7 +1089,7 @@ Automatically restart after upgrade, and the file system of the main system can 
 
 ![Image](./images/T113_Linux5_4_OTA_Upgrade_Recovery_Solution/image_20260409160002869.png)
 
-## 4\. Reproduction 
+## 3\. Reproduction 
 
 Place the compressed package from the attachment into the virtual machine's shared folder.
 
