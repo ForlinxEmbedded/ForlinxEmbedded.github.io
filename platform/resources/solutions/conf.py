@@ -37,6 +37,8 @@ html_logo = '_static/forlinx-logo.png'
 html_favicon = '_static/forlinx.png'
 html_theme_options = {
     'logo_only': True,
+    'sticky_navigation': True,    
+    'collapse_navigation': False, 
 }
 
 html_css_files = [
@@ -45,10 +47,10 @@ html_css_files = [
 
 html_sidebars = {
     '**': [
-        'globaltoc.html',
+        'searchbox.html',
+        'navigation.html',
         'relations.html',
         'sourcelink.html',
-        'searchbox.html',
         'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
     ]
 }
