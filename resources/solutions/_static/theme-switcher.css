@@ -370,14 +370,16 @@ pre, code {
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    /* 2. 覆盖默认会导致瞬间跳顶的 shift 类 */
+   
+    /* 2. 覆盖默认会导致瞬间跳顶的 shift 类，并防止正文被向右推开 */
     .wy-nav-content-wrap.shift {
         position: relative !important;
         height: auto !important;
         overflow: visible !important;
         top: auto !important;
+        left: 0 !important;          /* 👈 核心新增：强制正文原位不动，不向右偏移 */
+        transform: none !important;  /* 👈 核心新增：干掉任何可能导致位移的动画 */
     }
-
   
 /* 3. 左侧菜单在当前视口展开，不影响正文滚动位置，并限制宽度 */
 .wy-nav-side.shift {
