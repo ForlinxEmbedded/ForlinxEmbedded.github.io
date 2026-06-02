@@ -59,7 +59,7 @@ FET3588S2 SOM
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripherals cannot be used on the FET3588-C. 
 
-For details, please refer to the interface section.
+For details, please refer to the section [Peripheral Access](#peripheral-access)
 
 OK3588-C
 
@@ -5962,6 +5962,18 @@ The running results are as follows:
 
 For the list of ONNX operators, PyTorch operators, Caffe operators, TensorFlow operators, and Darknet operators supported by RKNN Toolkit2, please refer to the relevant documentation`rknn-toolkit2\doc\RKNNToolKit2_OP_Support-2.3.2.md`.
 
-## Resource Download
+## Resource Download & Technical Support
 
-You can easily download the materials you need by visiting our <a href="https://www.forlinx.net/resources/download-center.html" target="_blank" rel="noopener noreferrer">Resource Download Center</a>.
+### **1. Accessing Resources**
+
+You can easily download the materials you need by visiting our <a href="https://www.forlinx.net/resources/download-center.html" target="_blank" rel="noopener noreferrer">Resource Download Center</a> 
+**(Note: Please obtain the download password from your designated sales representative.)**
+
+### **2. After-Sales & Technical Support**
+
+For any inquiries regarding after-sales service or technical support, please reach out to our dedicated team:
+
+- **Phone:** +86 312 3102650
+- **Email (General Support):** [support@forlinx.com](mailto:support@forlinx.com)
+- **Email (Linux Platform):** [linux@forlinx.com](mailto:linux@forlinx.com)
+- **Email (Android Platform):** [android@forlinx.com](mailto:android@forlinx.com)
