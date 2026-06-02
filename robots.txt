@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://forlinxembedded.github.io/sitemap_index.xml
