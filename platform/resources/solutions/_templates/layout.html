@@ -48,4 +48,32 @@
 
     </div>
   </div>
+  <button id="back-to-top" title="Back to Top" style="display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var mybutton = document.getElementById("back-to-top");
+      var scrollContainer = document.querySelector(".wy-nav-content-wrap");
+
+      if (scrollContainer && mybutton) {
+        scrollContainer.addEventListener("scroll", function() {
+          if (scrollContainer.scrollTop > 300) {
+            mybutton.style.display = "flex";
+          } else {
+            mybutton.style.display = "none";
+          }
+        });
+
+        mybutton.addEventListener("click", function() {
+          scrollContainer.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+  </script>
+  
 {% endblock %}
