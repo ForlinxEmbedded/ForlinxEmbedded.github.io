@@ -352,7 +352,8 @@ pre, code {
     #theme-switcher {
         top: 42px !important;
         right: 16px !important;
-        bottom: auto !important; /* 清除 bottom 定位 */
+        bottom: auto !important; 
+        z-index: 10005 !important;
     }
     #theme-switcher-btn {
         padding: 10px 14px;
