@@ -29,6 +29,7 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK3588-C_Linux_Buildroot_User_Manual
    OK3588-C_Linux5_10_209_User_Manual
    OK3588-C_Linux5_10_209_User_Compilation_Manual
    OK3588-C_Forlinx_Desktop22_04_User_Manual
