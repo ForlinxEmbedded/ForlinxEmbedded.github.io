@@ -3,15 +3,14 @@
 OK3588-C Manual
 ====================
 
-
 .. raw:: html
 
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; margin-top: 20px; margin-bottom: 40px; background-color: var(--theme-blockquote-bg); padding: 25px; border-radius: 8px; border-left: 4px solid #007acc;">
         
         <div style="flex: 1 1 350px;">
             <p style="font-size: 1.1em; margin-bottom: 20px; margin-top: 0; line-height: 1.6;">
-                Welcome to the official technical documentation for the <strong>Forlinx OK3588-C</strong>. 
-                Powered by the Rockchip RK3588 processor, engineered for high-performance AIoT, edge computing, and multi-display smart systems.
+                Welcome to the official technical documentation for the <strong>Forlinx OK3588-C</strong>.
+                Powered by the Rockchip RK3588 processor.
             </p>
             
             <div style="display: flex; gap: 12px; flex-wrap: wrap;">
@@ -19,8 +18,8 @@ OK3588-C Manual
                     <i class="fa-solid fa-microchip"></i> SoM Details
                 </a>
                 
-                <a href="https://www.forlinx.net/single-board-computer/rk3588-sbc-135.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" class="btn btn-info" style="text-decoration: none; padding: 6px 14px; font-size: 14px;">
-                    <i class="fa-solid fa-server"></i> Board Details
+                <a href="https://forlinxembedded.github.io/" class="btn btn-neutral" style="text-decoration: none; padding: 6px 14px; font-size: 14px;">
+                    <i class="fa-solid fa-house"></i> Home
                 </a>
                 
                 <a href="https://www.forlinx.net/resources/product/embedded-boards-and-systems.html#quote-section" target="_blank" class="btn" style="text-decoration: none; padding: 6px 14px; font-size: 14px; background-color: #28a745; color: white; border-color: #28a745;">
