@@ -68,7 +68,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -76,35 +76,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the setup file to enter the installation wizard.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57.png)
 
 Click “Next.”
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169299827_654af716_3d46_4609_97ff_054e119673bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169299827_654af716_3d46_4609_97ff_054e119673bb.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
 
 Check, then click “Next.”
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
 
 Click “Install.”
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png)
 
 Wait for the installation to complete.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
@@ -122,7 +122,7 @@ First, download the development environment provided by Forlinx. The development
 
 Generate the checksum and compare it with the value in the checksum file. If the checksums match, the downloaded file is valid. If they do not match, the file may be corrupted, and you should download it again.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730769768995_94fc9c91_8bff_4506_a222_04aa291b0abc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730769768995_94fc9c91_8bff_4506_a222_04aa291b0abc.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
@@ -134,7 +134,7 @@ The file "3568.vmx" in the "3568 Development Environment" folder is the virtual 
 
 Open the installed virtual machine software.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png)
 
 Navigate to the directory where the "3568.vmx" file was extracted, and double-click to open the startup file.
 
@@ -152,67 +152,67 @@ This chapter mainly explains the setup process of the Ubuntu system and the inst
 
 The installed Ubuntu version is 22.04, and all the introductions and development in this manual were carried out on Ubuntu 22.04. Download the “ubuntu-22.04.6-desktop-amd64.iso” version from https://releases.ubuntu.com/22.04/ (the specific version to download can be based on your own needs; here we use version 22.04.6 as an example).
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771033843_6436990d_2bc1_4115_a050_efa4c98863f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771033843_6436990d_2bc1_4115_a050_efa4c98863f7.png)
 
 #### **3.1.1 Creating an Ubuntu Virtual Machine**
 
 **Step 1**: Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png)
 
 **Step 2**: Select the compatibility for the corresponding VMware version (you can view the version under Help -> About VMware Workstation). After confirming, click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png)
 
 Choose “Installer disc image file (iso)” and click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png)
 
 Enter the full name, username, and password, then click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png)
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png)
 
 Configure the number of cores, then click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png)
 
 Configure at least 8GB of memory and select “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png)
 
 Set the network type, use the default NAT networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
 
 Use the recommended I/O controller and click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
 
 Use the recommended disk type and click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
 
 Use the default option, “Create a new virtual disk”, and click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
 
 Allocate a disk size of 200G and choose “Split virtual disk into multiple files”, then click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png)
 
 Use the default settings and click “Next”:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png)
 
 Click “Finish”.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
 
 At this point, the virtual machine creation is complete. Afterward, click “Power on this virtual machine” to start installing the image. Please wait patiently. With the above, the Ubuntu system installation is complete.
 
@@ -222,27 +222,27 @@ At this point, the virtual machine creation is complete. Afterward, click “Pow
 
 VMware Tools should be installed automatically after creating the virtual machine. If it is not successful, install it according to the following steps. Without this tool installed, you cannot use copy and paste or drag and drop files between the Windows host and the virtual machine. First, click “Virtual Machine” on the VMware navigation bar, then click “Install VMware Tools” in the dropdown menu.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png)
 
 After completion, enter Ubuntu. A VMware Tools CD will appear on the desktop; click to enter it.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771946460_47f93c8a_72e6_4e35_b501_dfae1b28a58b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771946460_47f93c8a_72e6_4e35_b501_dfae1b28a58b.png)
 
 After entering, you will see a compressed file VMware Tools-10.3.10-12406962. tar. gz (different virtual machine versions may be different), and copy the file to the home directory (that is, the directory of the home personal user name).
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771960270_018814b3_60d9_4ae2_bd26_807f2493d1cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771960270_018814b3_60d9_4ae2_bd26_807f2493d1cd.png)
 
 Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the command to extract it:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771978710_e52e76d9_b4bf_4cff_a694_c5cab42ba60e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771978710_e52e76d9_b4bf_4cff_a694_c5cab42ba60e.png)
 
 After extraction completes, a folder named “vmware-tools-distrib” will appear.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771995073_fec96427_d5e7_4ed1_bb8d_80f83a344e73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730771995073_fec96427_d5e7_4ed1_bb8d_80f83a344e73.png)
 
 Return to the terminal and type: cd vmware-tools-distrib to enter the directory. Then type: sudo ./vmware-install.pl and press Enter. Enter your password and the installation will begin. When prompted, type yes; otherwise, just press Enter to install the default settings.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772008675_66b60f70_4165_495d_8133_fe57d8f45842.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772008675_66b60f70_4165_495d_8133_fe57d8f45842.png)
 
 After VMware Tools installation is complete, file copy-paste between Windows and Ubuntu will be enabled.
 
@@ -250,17 +250,17 @@ After VMware Tools installation is complete, file copy-paste between Windows and
 
 If the virtual machine cannot display in full screen, you can click on “View”, select “Auto-Adjust Size”, and then click “Autofit Guest” to resolve the full-screen issue.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772026300_6bc60f00_11ba_4a9c_b734_f1bc161d9cc3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772026300_6bc60f00_11ba_4a9c_b734_f1bc161d9cc3.png)
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772043441_6f816146_3616_4a85_941a_9acdc4bee9db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772043441_6f816146_3616_4a85_941a_9acdc4bee9db.png)
 
 ##### **3.1.2.3 Virtual Machine Sleep Settings**
 
 Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -> Power -> Blank Screen and set it to “Never”.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772063231_ce05c24d_3dd9_4165_abc7_ed83fc88b9f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772063231_ce05c24d_3dd9_4165_abc7_ed83fc88b9f4.png)
 
 ### **3.1.3 Virtual Machine Swapfile Configuration**
 
@@ -272,13 +272,13 @@ When creating the virtual machine, 8GB of memory was allocated. If 8GB of memory
 
 By default, after the virtual machine installation is complete, the network connection mode is set to NAT, as shown in the figure below, sharing an IP address with the host machine. This setting does not need to be changed when installing dependency packages, compiling code, etc. In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png)
 
 **3.1.4.2 Bridged Connection Mode**
 
 When the VMware virtual network adapter device is in bridged mode, the host network card and the virtual machine network card communicate through a virtual network bridge. In the Ubuntu environment, you need to set a network IP in the same subnet as the host. To access the external network, you need to set the DNS to be consistent with the host network card. If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
 
 ## 4\. Compilation of Related Code
 
@@ -344,11 +344,11 @@ forlinx@ubuntu: ~/work/OK3506_Linux_Source$./build.sh chip
 
 After executing, there will be options to input, as shown in the picture. After entering "1", press Enter to continue.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1735270990627_a6d12dba_3f31_489d_a460_ed8b34fa4a35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1735270990627_a6d12dba_3f31_489d_a460_ed8b34fa4a35.png)
 
 Select an option from the box below and press Enter to continue.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1761268257677_53841608_d854_488f_83ab_975c2a05b53b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1761268257677_53841608_d854_488f_83ab_975c2a05b53b.png)
 
 **Note: The above configuration only needs to be done once.**
 
@@ -360,7 +360,7 @@ forlinx@ubuntu: ~/work/OK3506_Linux_Source$./build.sh
 
 After a successful compilation, the corresponding image files will be generated in the rockdev folder.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1735271219448_b053bff5_0f3b_4366_94e1_298e664a9acb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Compilation_Manual/1735271219448_b053bff5_0f3b_4366_94e1_298e664a9acb.png)
 
 **Note: The update.img file is for OTG flashing, while the other files are for step-by-step flashing.**
 
