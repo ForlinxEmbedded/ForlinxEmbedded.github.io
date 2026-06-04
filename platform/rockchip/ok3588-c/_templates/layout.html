@@ -1,12 +1,11 @@
 {% extends "!layout.html" %}
 
+{# --- 1. 在头部引入 Font Awesome 和 GA 分析代码 --- #}
 {% block extrahead %}
   {{ super() }}
 
-  <!-- Load Font Awesome from CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,4 +13,50 @@
     gtag('js', new Date());
     gtag('config', 'G-N8EJPNL8NR');
   </script>
+{% endblock %}
+
+
+{# --- 2. 替换或追加页脚代码 --- #}
+{% block footer %}
+  {{ super() }} 
+
+  {# 👇 核心变动：一句话引入你单独写好的 footer.html #}
+  {% include "footer.html" %}
+
+  <button id="back-to-top" title="Back to Top" style="display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var mybutton = document.getElementById("back-to-top");
+      var scrollContainer = document.querySelector(".wy-nav-content-wrap");
+
+      function checkScroll() {
+        var windowTop = window.scrollY || document.documentElement.scrollTop;
+        var containerTop = scrollContainer ? scrollContainer.scrollTop : 0;
+
+        if (windowTop > 300 || containerTop > 300) {
+          mybutton.style.display = "flex";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      if (mybutton) {
+        window.addEventListener("scroll", checkScroll);
+        if (scrollContainer) {
+          scrollContainer.addEventListener("scroll", checkScroll);
+        }
+
+        mybutton.addEventListener("click", function() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          if (scrollContainer) {
+            scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+      }
+    });
+  </script>
+
 {% endblock %}
