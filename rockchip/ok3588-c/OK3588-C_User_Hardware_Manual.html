@@ -9,7 +9,7 @@
   <title>User’s Hardware Manual_V1.5 &mdash; Forlinx Embedded RK3588 Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
-      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=a3c71d8a" />
+      <link rel="stylesheet" type="text/css" href="_static/theme-switcher.css?v=382d6b63" />
 
   
     <link rel="shortcut icon" href="_static/forlinx.png"/>
@@ -28,10 +28,8 @@
     <link rel="prev" title="OK3588-C Manual" href="index.html" />
    
 
-  <!-- Load Font Awesome from CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8EJPNL8NR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -130,15 +128,771 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">SOFTWARE</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html">Buildroot_Kernel-6.1_User’s Manual_V1.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html">Linux5.10.209_User’s Manual_V1.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html">Linux5.10.209_User’s Compilation Manual_V1.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html">Forlinx Desktop22.04_User’s Manual_V1.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html">Forlinx Desktop22.04_User’s Compilation Manual_V1.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html">Android14.0_User’s Manual_V1.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html">Android14.0_User’s Compilation Manual_V1.0</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html">Android 12.0_User’s Manual_V 1.3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html">Android 12.0_User’s Compilation Manual_V 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html">Buildroot_Kernel-6.1_User’s Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#open-box">﻿Open Box</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#overview">1. Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#application-scope">1.1 Application Scope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#revision-history">1.2 Revision History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#ok3588-c-description">1.3 OK3588-C Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#main-frequency-settings-description">1.4 Main Frequency Settings Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#id1">1.5 Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#packing-list">2. Packing List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#quick-start">3. Quick Start</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#interfaces">3.1 Interfaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#debug">3.2 Debug</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#upgrade-firmware">Upgrade Firmware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#introduction">1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#obtaining-the-image">2. Obtaining the Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#firmware-flashing">3. Firmware Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#flashing-via-otg-windows">3.1 Flashing via OTG (Windows)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#flashing-firmware-via-tf-card">3.2 Flashing Firmware via TF Card</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#os-development">OS Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#downloading-sdk-source-code">1. Downloading SDK Source Code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#repo-tool-installation">1.1 Repo Tool Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#fetching-source-code-using-repo">1.2 Fetching Source Code Using Repo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#configuring-github-authentication">1.3 Configuring GitHub Authentication</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#pre-downloaded-software-packages">1.4 Pre-downloaded Software Packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#utility-tools">1.5 Utility Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#configuring-sdk">2. Configuring SDK</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#sdk-structure">2.1 SDK Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#sdk-configuration">2.2 SDK Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#partitions">2.3 Partitions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#building-sdk-images">3. Building SDK Images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#preparation">3.1 Preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#compilation">3.2 Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#compiling-application">3.3 Compiling Application</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#application-development">Application Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#peripheral-access">Peripheral Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#g-5g">4G/5G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#adc">ADC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#ethernet">Ethernet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#frequency">Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#gpio">GPIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#i2c">I2C</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#mmc">MMC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#pcle">PCle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#pwm">PWM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#rtc">RTC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#sd-card">SD Card</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#system-suspend">System Suspend</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#type-c">Type-C</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#uart">UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#usb2-0">USB2.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#wifi-bluetooth">Wifi_Bluetooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#watchdog">Watchdog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#sqlite3">SQLite3</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#multimedia">Multimedia</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#audio">Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#camera">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#encoding-and-decoding">Encoding and Decoding</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#machine-learning">Machine Learning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#id59">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#id60">2. Device Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#id61">3. Application</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#development-guides">Development Guides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#adding-user-application">1. Adding User Application</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#packaging-the-user-program-into-the-image">1.1 Packaging the User Program into the Image</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#auto-starting-the-user-program">2. Auto-starting the User Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#customized-logo">3. Customized Logo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#rknpu-development">4. RKNPU Development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#npu-description">4.1 NPU Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#development-environment-setup">4.2 Development Environment Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#model-deployment-examples">4.3 Model Deployment Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#rknn-toolkit2-supported-operator-list">4.4 RKNN Toolkit2 Supported Operator List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#resource-download-technical-support">Resource Download &amp; Technical Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#accessing-resources"><strong>1. Accessing Resources</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux_Buildroot_User_Manual.html#after-sales-technical-support"><strong>2. After-Sales &amp; Technical Support</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html">Linux5.10.209_User’s Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ok3588-development-board-description">1. OK3588 Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#id1">1.1 OK3588 Development Board Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#cpu-gpu-npu-frequency-description">1.2 CPU/GPU/NPU Frequency Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#introduction-to-linux-5-10-209-system-software-resources">1.3 Introduction to Linux 5.10.209 System Software Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#emmc-memory-partition-table">1.4 EMMC Memory Partition Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#debugging-serial-driver-installation">2.2 Debugging Serial Driver Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#serial-login">2.3 Serial Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#serial-login-common-problems">2.3.2 Serial Login Common Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#network-login-methods">2.4 Network Login Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#network-connection-test">2.4.1 Network Connection Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ssh-server">2.4.2 SSH Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#sftp">2.4.3 SFTP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#screen-switching">2.5 Screen Switching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#dynamic-control-of-uboot-menu">2.5.1 Dynamic Control of Uboot Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#kernel-device-tree-specification">2.5.2 Kernel Device Tree Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#system-shutdown">2.6 System Shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#desktop-function-test">3. Desktop Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#introduction-to-interface-function">3.1 Introduction to Interface Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#hardware-decoding">3.2 Hardware Decoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#opengl-test">3.3 OpenGL Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#music-play-test">3.4 Music Play Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#g-5g-test">3.5 4G/5G Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#wifi-test">3.6 WiFi Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#network-configuration-test">3.7 Network Configuration Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ping-test">3.8 Ping Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#browser-test">3.9 Browser Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#watchdog-test">3.10 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#key-test">3.11 Key Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#rtc-test">3.12 RTC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#same-different-display">3.13 Same &amp; Different Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#uart-test">3.14 UART Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#database-test">3.15 Database Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#backlight-test">3.16 Backlight Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#uboot-menu">3.17 Uboot Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#web-services">3.18 Web Services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#abnormal-touch">3.19 Abnormal Touch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#tftp-upgrading-system">3.20 TFTP Upgrading System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#cpu-frequency-configuration-test">3.21 CPU Frequency Configuration Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#command-line-function-test">4. Command Line Function Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#system-information-queries">4.1 System Information Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#frequency-test">4.2 Frequency Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#temperature-test">4.3 Temperature Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ddr-test">4.4 DDR Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#id2">4.5 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#rtc-function-test">4.6 RTC Function Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#id3">4.7 Key Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#id4">4.8 UART Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#adc-test">4.9 ADC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#tf-card-test">4.10 TF Card Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#emmc-test">4.11 EMMC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#usb-mouse-test">4.12 USB Mouse Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#usb2-0">4.13 USB2.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#type-c-test">4.14 TYPE-C Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ethernet-configuration">4.15 Ethernet Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#id5">4.16 WiFi Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#bluetooth-test">4.17 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#g-5g">4.18 4G/5G</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-recording-test">4.19 Playing/Recording Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-sound-via-hdmi">3.2.19.1 Playing Sound via HDMI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-sound-via-spkout">3.2.19.2  Playing Sound via SPKOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#mic-input">3.2.19.3  MIC Input</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#lcd-backlight-adjustment">4.20 LCD Backlight Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#sleep-wake-up-test">4.21 Sleep &amp; Wake-up Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#pcie-test">4.22 PCIE Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#rknpu-test">4.23 RKNPU Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#sqlite3-test">4.24 SQLite3 Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#gpio-test">4.25 GPIO Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#adding-boot-up-scripts">4.26 Adding Boot-up Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ok3588-platform-multimedia-test">5. OK3588 Platform Multimedia Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#audio-and-video-playback">5.1 Audio and Video Playback</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-audio-and-video-with-gst-play">5.1.1 Playing Audio and Video With Gst-play</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-video-with-gst-launch">5.1.2 Playing Video With Gst-launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-audio-with-gst-launch">5.1.3 Playing Audio With Gst-launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#playing-video-and-audio-with-gst-launch">5.1.4 Playing Video and Audio With Gst-launch</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#video-hardware-encoding">5.2 Video Hardware Encoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#video-hardware-encoding-h-264">5.2.1 Video Hardware Encoding H.264</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#video-hardware-encoding-h-265">5.2.2 Video Hardware Encoding H.265</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#jpeg-hardware-encoding">5.2.3 JPEG Hardware Encoding</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#video-hardware-decoding">5.3 Video Hardware Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-h-264-format-video">5.3.1 Decoding and Playing H.264 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-h264-format-video-with-audio">5.3.2 Decoding and Playing H264 Format Video With Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-h265-format-video">5.3.3 Decoding and Playing H265 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-h265-format-video-with-audio">5.3.4 Decoding and Playing H265 Format Video With Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-vp9-format-video">5.3.5 Decoding and Playing VP9 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-vp9-format-video-with-audio">5.3.6 Decoding and Playing VP9 Format Video With Audio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-vp8-format-video">5.3.7 Decoding and Playing VP8 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#decoding-and-playing-vp8-format-video-with-audio">5.3.8 Decoding and Playing VP8 Format Video With Audio</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#camera-test">5.4 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#uvc-camera-test">5.4.1 UVC Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ov13855-test">5.4.2 OV13855 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#ov5645-test">5.4.3 OV5645 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#hdmi-in-test">5.4.4 HDMI IN Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#system-flashing">6. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#otg-flashing-system">6.1 OTG Flashing System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#otg-driver-installation">6.1.1 OTG Driver Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#otg-full-flashing-test">6.1.2 OTG Full Flashing Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Manual.html#tf-card-flashing">6.2 TF Card Flashing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html">Linux5.10.209_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#vmware-virtual-machine-installation">1. VMware Virtual Machine  Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#vmware-software-downloads-and-purchase"><font style="color:#000000;">1.1 VMware Software Downloads and Purchase</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#vmware-software-installation"><font style="color:#000000;">1.2 VMware Software Installation</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#ubuntu-development-environment-loading">2. Ubuntu Development Environment Loading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#ubuntu-system-setup"><font style="color:#000000;">3.1 Ubuntu System Setup </font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#creating-an-ubuntu-virtual-machine">3.1.1 Creating an Ubuntu Virtual Machine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#system-installation"><font style="color:#000000;">3.1.2 System Installation</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#ubuntu-basic-configuration"><font style="color:#000000;">3.1.3 Ubuntu Basic Configuration</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#network-settings-for-virtual-machine"><font style="color:#000000;">3.1.4 Network Settings for Virtual Machine</font></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#libraries-for-installing-linux-compilation-system">3.2 Libraries for Installing Linux Compilation System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#cross-compilation-chain-installation">3.3 Cross-compilation Chain Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#qt-creator-installation"><font style="color:#000000;">3.4 Qt Creator Installation</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#related-code-compilation">4. Related Code Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#preparation-before-compilation"><font style="color:#000000;">4.1 Preparation Before Compilation</font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#environment-description"><font style="color:#000000;">4.1.1 Environment Description</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#source-code-copy"><font style="color:#000000;">4.1.2 Source Code Copy  </font></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#source-code-compilation"><font style="color:#000000;">4.2 Source Code Compilation</font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#full-compilation-test"><font style="color:#000000;">4.2.1 Full Compilation Test</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#separate-compilation"><font style="color:#000000;">4.2.2 Separate Compilation</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#clearing-compilation-file"><font style="color:#000000;">4.2.3 Clearing Compilation File</font></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#image-file-use"><font style="color:#000000;">4.3 Image File Use</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#qt-creator-environment-configuration"><font style="color:#000000;">4.4 Qt Creator Environment Configuration</font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#cross-compiler-configuration">4.4.1 Cross Compiler Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#qt-versions-configuration">4.4.2 Qt Versions Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#kits-configuration">4.4.3 Kits Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#application-compilation-and-operation">4.5 Application Compilation and Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#command-line-application-compilation-and-operation">4.5.1 Command Line Application Compilation and Operation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Linux5_10_209_User_Compilation_Manual.html#qt-application-compilation-and-operation">4.5.2 QT Application Compilation and Operation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html">Forlinx Desktop22.04_User’s Manual_V1.1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ok3588-development-board-description">1. OK3588 Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ok3588-development-board-brief">1.1 OK3588 Development Board Brief</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#cpu-gpu-npu-frequency-description">1.2 CPU/GPU/NPU Frequency Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#introduction-to-linux-5-10-160-system-software-resources">1.3 Introduction to Linux 5.10.160 System Software Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#emmc-memory-partition-table">1.4 EMMC Memory Partition Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#preparation-before-startup">2.1 Preparation Before Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#debugging-serial-driver-installation">2.2 Debugging Serial Driver Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#serial-login">2.3 Serial Login</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#serial-login-common-problems">2.3.2 Serial Login Common Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#network-login-methods">2.4 Network Login Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#network-connection-test">2.4.1 Network Connection Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ssh-server">2.4.2 SSH Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#sftp">2.4.3 SFTP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#screen-switching">2.5 Screen Switching</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#uboot-menu-dynamic-control-o">2.5.1 Uboot Menu Dynamic Control o</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#kernel-device-tree-specification">2.5.2 Kernel Device Tree Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#system-shutdown">2.6 System Shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ok527-platform-interface-function-use-and-test">3. OK527 Platform Interface Function Use and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#desktop-function-test">3.1 Desktop Function Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#virtual-keyboard-test">3.1.1 Virtual Keyboard Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#audio-and-video-playback">3.1.2 Audio and Video Playback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#network-configuration-test">3.1.3 Network Configuration Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#multi-screen-mirror-and-joint-displays">3.1.4 Multi-screen Mirror and Joint Displays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#wifi-test">3.1.5 WiFi Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#bluetooth-test">3.1.6 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#qt-test">3.2 QT Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#g-5g-test">3.2.1 4G/5G Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#uart-test">3.2.2 UART Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#database-test">3.2.3 Database Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#opengl-test">3.2.4 OpenGL Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#rtc-test">3.2.5 RTC Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#key-test">3.2.6 Key Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#watchdog-test">3.2.7 Watchdog Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#backlight-test">3.2.8 Backlight Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ok3576-command-line-tool-application-and-test">4. OK3576 Command Line Tool Application and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#system-information-queries">4.1 System Information Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#frequency-test">4.2 Frequency Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#temperature-test">4.3 Temperature Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ddr-test">4.4 DDR Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#id1">4.5 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#rtc-function-test">4.6 RTC Function Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#id2">4.7 Key Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#id3">4.8 UART Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#adc-test">4.9 ADC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#tf-test">4.10 TF Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#emmc-test">4.11 EMMC Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#usb-mouse-test">4.12 USB Mouse Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#usb2-0">4.13 USB2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#type-c-test">4.14 Type-C Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ethernet-configuration">4.15 Ethernet Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#id4">4.16 WiFi Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#sta-mode">4.16.1 STA Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ap-mode">4.16.2 AP Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#id5">4.17 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#g-5g">4.18 4G/5G</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#play-record-test">4.19 Play/Record Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#hdmi-playback-sound">4.19.1 HDMI Playback Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#spkout-playback-sound">4.19.2 SPKOUT Playback Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#mic-input">4.19.3 MIC Input</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#lcd-backlight-adjustment">4.20 LCD Backlight Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#on-off-test">4.21 ON/OFF Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#pcie-test">4.22 PCIE Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#rknpu-test">4.23 RKNPU Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ok3588-platform-multimedia-test">5. OK3588 Platform Multimedia Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#id6">5.1 Audio and Video Playback</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#playing-audio-and-video-with-gst-play">5.1.1 Playing Audio and Video With Gst-play</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#playing-video-with-gst-launch">5.1.2 Playing Video With Gst-launch</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#video-hardware-encoding">5.2 Video Hardware Encoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#video-hardware-encoding-h-264">5.2.1 Video Hardware Encoding H.264</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#video-hardware-encoding-h-265">5.2.2 Video Hardware Encoding H.265</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#jpeg-hardware-encoding">5.2.3 JPEG Hardware Encoding</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#video-hardware-decoding">5.3 Video Hardware Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#decoding-and-playing-h264-format-video">5.3.1 Decoding and Playing H264 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#decoding-and-playing-h265-format-video">5.3.2 Decoding and Playing H265 Format Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#decoding-and-playing-vp9-format-video">5.3.3 Decoding and Playing VP9 Format Video</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#camera-test">5.4 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#uvc-camera-test">5.4.1 UVC Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ov13855-test">5.4.2 OV13855 Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#ov5645-test">5.4.3 OV5645 Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#hdmi-rx-test">5.5 HDMI RX Test</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#system-flashing">6. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#otg-system-flashing">6.1 OTG System Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#otg-driver-installation">6.1.1 OTG Driver Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#otg-flashing-test">6.1.2 OTG Flashing Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Manual.html#tf-card-flashing">6.2 TF Card Flashing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html">Forlinx Desktop22.04_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#vmware-software-downloads-and-purchase"><font style="color:#000000;">1.1 VMware Software Downloads and Purchase</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#vmware-software-installation"><font style="color:#000000;">1.2 VMware Software Installation</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#ubuntu-system-setting-up">3.1 Ubuntu System Setting up</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#ubuntu-basic-configuration">3.1.3 Ubuntu Basic Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#network-settings-for-virtual-machines">3.1.4 Network Settings for Virtual Machines</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#libraries-for-installing-linux-compilation-system">3.2 Libraries for Installing Linux Compilation System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#qt-creator-installation">3.3 Qt Creator Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#related-code-compilation">4. Related Code Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#preparation-before-compilation"><font style="color:#000000;">4.1 Preparation Before Compilation</font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#description-of-the-environment"><font style="color:#000000;">4.1.1 Description of the Environment</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#source-code-copy"><font style="color:#000000;">4.1.2 Source Code Copy  </font></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#source-code-compilation"><font style="color:#000000;">4.2 Source Code Compilation</font></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#full-compilation-test"><font style="color:#000000;">4.2.1 Full Compilation Test</font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#separate-compilation"><font style="color:#000000;"><font style="color:#000000;">4.2.2 Separate Compilation</font></font></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#clearing-compilation-file"><font style="color:#000000;"><font style="color:#000000;">4.2.3 Clearing Compilation File</font></font></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#image-file-use"><font style="color:#000000;">4.3 Image File Use</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#application-compilation-and-operation">4.4 Application Compilation and Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual.html#command-line-application-compilation-and-operation">4.4.1 Command Line Application Compilation and Operation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html">Android14.0_User’s Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#ok3588-development-board-description">1. OK3588 Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#cpu-gpu-npu-frequency-description">1.1 CPU/GPU/NPU Frequency Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#android14-0-system-software-resources-features"><strong>1.2 Android14.0 System Software Resources Features</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#emmc-memory-partition-table"><strong>1.3 EMMC Memory Partition Table</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#preparation-before-startup"><strong>2.1 Preparation Before Startup</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#debugging-serial-driver-installation"><strong>2.2 Debugging Serial Driver Installation</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#serial-port-login"><strong>2.3 Serial Port Login</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#serial-login">2.3.2 Serial Login</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#screen-switching"><strong>2.4 Screen Switching</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#dynamic-control-of-uboot-menu">2.4.1 Dynamic Control of Uboot Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#kernel-device-tree-specification">2.4.2 Kernel Device Tree Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#system-shutdown"><strong>2.5 System Shutdown</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#android-function-use-and-test">3. Android Function Use and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#main-interface-display">3.1 Main Interface Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#application">3.2 Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#language-settings">3.3 Language Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#picture-and-audio-view">3.4 Picture and Audio View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#multimedia-test">3.5 Multimedia Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#recording-supports-mic-input">3.6 Recording (Supports Mic Input)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#volume-adjustment">3.7 Volume Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#display-settings">3.8 Display Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#time-settings-rtc">3.9 Time Settings（RTC）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#ethernet-test">3.10 Ethernet Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#wifi-internet">3.11 WiFi Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#wifi-hotspot-test">3.12 WiFi Hotspot Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#g-5g-module-test">3.13 4G/5G Module Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#bluetooth-test">3.14 Bluetooth Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#key-test-sleep-wake-up">3.15 Key Test (Sleep Wake-up)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#tf-card-and-usb-storage-test">3.16 TF Card and USB Storage Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#usb-mouse-test">3.17 USB Mouse Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#usb-otg-interface-test">3.18 USB OTG Interface Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#serial-port-test">3.19 Serial Port Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#watchdog-test">3.20 Watchdog Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#camera-test">3.21 Camera Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#uvc-camera-test">3.21.1 UVC Camera Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#ov13855-camera-test">3.21.2 OV13855 Camera Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#hdmi-resolution-settings-test">3.22 HDMI Resolution Settings Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#factory-reset">3.23 Factory Reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#apk-installation-with-tf-card">3.24 APK Installation With TF Card</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#wifi-adb-test">3.25 WiFi ADB Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#navigation-and-status-bar-settings">3.26 Navigation and Status Bar Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#artificial-intelligence-test">3.27 Artificial Intelligence Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#screen-lock-test">3.28 Screen Lock Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#npu-test">3.29 NPU Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#hdmi-test">3.30 HDMI Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#serial-port-demo">3.30.1 Serial Port Demo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#spi-demo">3.30.2 SPI Demo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#i2c-demo">3.30.3 I2C Demo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#gpio-demo">3.30.4 GPIO Demo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#watchdog-demo">3.30.5 Watchdog Demo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#adc-demo">3.30.6 ADC Demo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#system-flashing">4. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#otg-system-flashing">4.1 OTG System Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#otg-driver-installation">4.1.1 OTG Driver Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#otg-flashing-test">4.1.2 OTG Flashing Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#tf-card-flashing">4.2 TF Card Flashing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#system-ota-upgrade-test">5. System OTA upgrade Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#ota-upgrade-package-compilation">5.1 OTA Upgrade Package Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#ota-local-upgrade">5.2 OTA Local Upgrade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#ota-network-upgrade">5.3 OTA Network Upgrade</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#multi-display-with-independent-touch-control">6. Multi-display with Independent Touch Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#primary-and-secondary-screens-settings">6.1 Primary and Secondary Screens Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#binding-between-display-and-vop-settings">6.2 Binding between Display and VOP Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#binding-between-display-and-touch-input-devices">6.3 Binding between Display and Touch (Input) Devices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#dpi-custom-settings">6.4 DPI Custom Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#app-display-on-different-screens">6.5 APP Display on Different Screens</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#root-permission-management">7. Root Permission Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#shell-permission-control">7.1 Shell Permission Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#adb-permission-control">7.2 ADB Permission Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Manual.html#app-permission-control">7.3 APP Permission Control</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html">Android14.0_User’s Compilation Manual_V1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#vmware-software-downloads-and-purchase"><font style="color:#000000;">1.1 VMware Software Downloads and Purchase</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#vmware-software-installation"><font style="color:#000000;">1.2 VMware Software Installation</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#ubuntu-basic-configuration">3.1.3 Ubuntu Basic Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#virtual-machine-network-settings">3.1.4 Virtual Machine Network Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#installation-of-the-necessary-libraries-for-android-compilation">3.2 Installation of the Necessary Libraries for Android Compilation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#android-system-compilation">4. Android System Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#software-configuration-file-path">4.1 Software Configuration File Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#id1">4.2 Android System Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#preparation-before-compilation">4.2.1 Preparation Before Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#source-code-copy-and-release">4.2.2 Source Code Copy and Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#id2">4.2.3 Android System Compilation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#android-application-development">5. Android Application Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#setting-up-the-android-application-development-environment">5.1 Setting up the Android Application Development Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#jdk-java-se-development-kit-download-and-installation">5.1.1 JDK（Java SE Development Kit）Download and Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#android-studio-installation">5.1.2 Android Studio Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#helloworld-project-creation">5.1.3 Helloworld Project Creation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#apk-platform-signature">5.2 Apk Platform Signature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_14_User_Compilation_Manual.html#pre-installation-method-of-apk-in-system">5.3 Pre - installation Method of APK in System</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html">Android 12.0_User’s Manual_V 1.3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#ok3588-development-board-description">1. OK3588 Development Board Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#cpu-gpu-npu-frequency-description">1.2 CPU/GPU/NPU Frequency Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#android12-system-software-resources-features">1.3 Android12 System Software Resources Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#emmc-memory-partition-table">1.4 EMMC Memory Partition Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#fast-startup">2. Fast Startup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#preparation-before-startup"><strong>2.1 Preparation Before Startup</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#debugging-serial-driver-installation"><strong>2.2 Debugging Serial Driver Installation</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#serial-port-login"><strong>2.3 Serial Port Login</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#serial-port-connection-settings">2.3.1 Serial Port Connection Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#serial-login">2.3.2 Serial Login</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#screen-switching"><strong>2.4 Screen Switching</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#uboot-menu-dynamic-control">2.4.1 Uboot Menu Dynamic Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#kernel-device-tree-specification">2.4.2 Kernel Device Tree Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#system-shutdown"><strong>2.5 System Shutdown</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#android-function-use-and-test">3. Android Function Use and Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#main-interface-display"><strong>3.1 Main Interface Display</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#application"><strong>3.2 Application</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#language-settings"><strong>3.3 Language Settings</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#picture-and-audio-view"><strong>3.4 Picture and Audio View</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#multimedia-test"><strong>3.5 Multimedia Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#recording-supports-mic-input"><strong>3.6 Recording (Supports Mic Input)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#volume-adjustment"><strong>3.7 Volume Adjustment</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#display-settings"><strong>3.8 Display Settings</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#time-setting-rtc"><strong>3.9 Time Setting（RTC）</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#ethernet-test"><strong>3.10 Ethernet Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#wifi-internet"><strong>3.11 WiFi Internet</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#wifi-hotspot-test"><strong>3.12 WiFi Hotspot Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#g-5g-module-test">3.13 4G/5G Module Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#bluetooth-test"><strong>3.14 Bluetooth Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#key-test-sleep-wake-up"><strong>3.15 Key Test (Sleep Wake-up)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#tf-card-and-usb-storage-test"><strong>3.16 TF Card and USB Storage Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#usb-mouse-test"><strong>3.17 USB Mouse Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#usb-otg-interface-test"><strong>3.18 USB OTG Interface Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#serial-port-test"><strong>3.19 Serial Port Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#watchdog-test"><strong>3.20 Watchdog Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#camera-test"><strong>3.21 Camera Test</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#uvc-camera-test"><strong>3.21.1 UVC Camera Test</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#ov13850-camera-test"><strong>3.21.2 OV13850 Camera Test</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#hdmi-resolution-setting-test"><strong>3.22 HDMI Resolution Setting Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#factory-reset"><strong>3.23 Factory Reset</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#apk-installation-with-tf-card"><strong>3.24 APK Installation with TF Card</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#wifi-adb-test"><strong>3.25 WiFi ADB Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#root-permission-test"><strong>3.26 ROOT Permission Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#navigation-bar-and-dropdown-bar-settings"><strong>3.27 Navigation Bar and Dropdown Bar Settings</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#displayhwconfig-test"><strong>3.28 DisplayHwConfig Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#artificial-intelligence-test"><strong>3.29 Artificial Intelligence Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#locking-screen-test"><strong>3.30 Locking Screen Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#npu-test"><strong>3.31 NPU Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#hdmi-rx-test"><strong>3.32 Hdmi rx Test</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#forlinx-sdk-test"><strong>3.33 Forlinx-SDK Test</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#serial-port-demo"><strong>3.33.1 SERIAL PORT DEMO</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#spi-demo"><strong>3.33.2 SPI DEMO</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#i2c-demo"><strong>3.33.3 I2C DEMO</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#gpio-demo"><strong>3.33.4 GPIO DEMO</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#watchdog-demo"><strong>3.33.5 WATCHDOG DEMO</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#adc-demo"><strong>3.33.6 ADC DEMO</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#can-demo"><strong>3.33.7 CAN DEMO</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#system-flashing">4. System Flashing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#otg-system-flashing"><strong>4.1 OTG System Flashing</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#otg-driver-installation"><strong>4.1.1 OTG Driver Installation</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#otg-flashing-test"><strong>4.1.2 OTG Flashing Test</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#tf-card-flashing"><strong>4.2 TF Card Flashing</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#system-ota-upgrade-test">5. System OTA Upgrade Test</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#ota-upgrade-package-compilation"><strong>5.1 OTA Upgrade Package Compilation</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#ota-local-upgrade"><strong>5.2 OTA Local Upgrade</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Manual.html#ota-network-upgrade"><strong>5.3 OTA Network Upgrade</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html">Android 12.0_User’s Compilation Manual_V 1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#application-scope">Application Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#revision-history">Revision History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#vmware-virtual-machine-software-installation">1. VMware Virtual Machine Software Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#vmware-software-downloads-and-purchase"><font style="color:#000000;">1.1 VMware Software Downloads and Purchase</font></a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#vmware-software-installation"><font style="color:#000000;">1.2 VMware Software Installation</font></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#loading-the-existing-ubuntu-development-environment">2. Loading the Existing Ubuntu Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#new-ubuntu-development-environment-setup">3. New Ubuntu Development Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#ubuntu-system-setup">3.1 Ubuntu System Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#ubuntu-virtual-machine-setup">3.1.1 Ubuntu Virtual Machine Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#system-installation">3.1.2 System Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#ubuntu-basic-configuration">3.1.3 Ubuntu Basic Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#network-settings-for-virtual-machines">3.1.4 Network Settings for Virtual Machines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#installation-of-the-library-needed-to-compile-android">3.2 Installation of the Library Needed to Compile Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#android-system-compilation">4. Android System Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#software-configuration-file-path">4.1 Software Configuration File Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#system-compilation">4.2 System Compilation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#preparation-before-compilation">4.2.1 Preparation Before Compilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#source-code-copy-and-release">4.2.2 Source Code Copy and Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#id1">4.2.3 Android System Compilation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#android-application-development">5. Android Application Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#android-application-development-environment-setup">5.1 Android Application Development Environment Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#jdk-java-se-development-kit-download-and-installation">5.1.1 JDK（Java SE Development Kit）Download and Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#android-studio-installation">5.1.2 Android Studio Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#helloworld-project-creation">5.1.3 Helloworld Project Creation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#apk-platform-signature">5.2 Apk Platform Signature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#pre-installation-method-of-apk-in-system">5.3 Pre - installation Method of APK in System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OK3588-C_Android_12_User_Compilation_Manual.html#method-for-app-to-obtain-root-permission">5.4 Method for App to Obtain Root Permission</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">APPLICATION NOTE</span></p>
 <ul>
@@ -6043,7 +6797,80 @@ Acceleration amplitude: 5 g</p>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+    
+
+  
+  <div class="forlinx-footer-social" style="margin-top: 15px; padding: 0 16px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+    <!-- 左侧版权信息 -->
+    <span style="font-size: 14px; color: #444;">
+      © <a href="https://www.forlinx.net/" target="_blank" style="color: inherit; text-decoration: none;">Forlinx Embedded</a>
+    </span>
+
+    <!-- 右侧社交图标 -->
+    <div>
+      <a href="https://www.facebook.com/Forlinx-Embedded-177890724336237" target="_blank">
+        <i class="fab fa-facebook fa-lg" style="margin: 0 6px; color:#3b5998;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/forlinx-embedded-technology-co-ltd/" target="_blank">
+        <i class="fab fa-linkedin fa-lg" style="margin: 0 6px; color:#0077b5;"></i>
+      </a>
+      <a href="https://x.com/ForlinxOfficial" target="_blank">
+        <i class="fab fa-x-twitter fa-lg" style="margin: 0 6px; color:#000;"></i>
+      </a>
+      <a href="https://www.youtube.com/@forlinxembedded" target="_blank">
+        <i class="fab fa-youtube fa-lg" style="margin: 0 6px; color:#FF0000;"></i>
+      </a>
+      <a href="https://github.com/ForlinxEmbedded" target="_blank">
+        <i class="fab fa-github fa-lg" style="margin: 0 6px; color:#333;"></i>
+      </a>
+      <a href="https://www.forlinx.net/" target="_blank">
+        <i class="fas fa-globe fa-lg" style="margin: 0 6px; color:#2274A5;"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  <button id="back-to-top" title="Back to Top" style="display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var mybutton = document.getElementById("back-to-top");
+      var scrollContainer = document.querySelector(".wy-nav-content-wrap");
+
+      function checkScroll() {
+        var windowTop = window.scrollY || document.documentElement.scrollTop;
+        var containerTop = scrollContainer ? scrollContainer.scrollTop : 0;
+
+        if (windowTop > 300 || containerTop > 300) {
+          mybutton.style.display = "flex";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      if (mybutton) {
+        window.addEventListener("scroll", checkScroll);
+        if (scrollContainer) {
+          scrollContainer.addEventListener("scroll", checkScroll);
+        }
+
+        mybutton.addEventListener("click", function() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          if (scrollContainer) {
+            scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+      }
+    });
+  </script>
+
+
 
 </body>
 </html>

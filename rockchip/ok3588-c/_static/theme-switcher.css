@@ -83,9 +83,13 @@ a:hover {
 }
 
 .wy-side-nav-search .logo img {
-    width: 150px;   /* 或根据你 logo 原始尺寸设置 */
-    height: auto;
-    display: block;
+    max-width: 80% !important;   /* 左右留点呼吸感 */
+    width: auto !important;
+    height: auto !important;
+    max-height: 60px !important; /* 限制最高高度，保证不突兀 */
+    margin: 10px auto !important;/* 强制居中，并增加上下间距 */
+    display: block !important;
+    object-fit: contain;
 }
 
 
@@ -348,7 +352,8 @@ pre, code {
     #theme-switcher {
         top: 42px !important;
         right: 16px !important;
-        bottom: auto !important; /* 清除 bottom 定位 */
+        bottom: auto !important; 
+        z-index: 10005 !important;
     }
     #theme-switcher-btn {
         padding: 10px 14px;
@@ -356,4 +361,75 @@ pre, code {
     }
 }
 
-  
+/* ======================= 移动端修复：汉堡菜单吸顶与展开修正 ======================= */
+@media screen and (max-width: 768px) {
+    /* 1. 顶部横条：确保始终吸顶且在最上层 */
+    .wy-nav-top {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 10001 !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* 2. 覆盖默认 shift 类：防止正文跳动和右移 */
+    .wy-nav-content-wrap.shift {
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+        top: auto !important;
+        left: 0 !important;
+        transform: none !important;
+    }
+
+    /* 3. 侧边栏：避开顶部导航栏，防止遮挡汉堡菜单 */
+    .wy-nav-side.shift {
+        position: fixed !important;
+        top: 45px !important;  /* 👈 核心改动：向下挪动 45px，让出汉堡菜单的位置 */
+        left: 0 !important;
+        width: 85% !important;
+        max-width: 320px !important;
+        height: calc(100vh - 45px) !important; /* 👈 核心改动：高度相应扣除顶部 */
+        z-index: 9999 !important;
+        overflow-y: auto !important;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.3) !important;
+    }
+}
+
+/* ======================= 一键置顶按钮样式 ======================= */
+#back-to-top {
+    display: none; /* 默认隐藏，由 JS 控制显示 */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: var(--theme-btn-bg); /* 使用你的主题变量 */
+    color: var(--theme-btn-fg);
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-to-top:hover {
+    background-color: var(--theme-btn-hover); /* 使用你的主题变量 */
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+}  
