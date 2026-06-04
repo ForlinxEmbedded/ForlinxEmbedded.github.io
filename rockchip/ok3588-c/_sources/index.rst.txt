@@ -82,10 +82,10 @@ APPLICATION NOTE
 
    RK Development Manual <https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html>
 
-   
 
+====================
 Contact & Support
-------------------
+====================
 If you require further technical assistance or have commercial inquiries, our team is ready to help:
 
 .. raw:: html
