@@ -12,7 +12,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Application Scope
 
-This manual is mainly applicable to the Android14.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions.
+This manual is mainly applicable to the Android14.0 operating system on the Forlinx OK3588-C platform. Other platforms can also refer to it, but there will be differences between different platforms. Please make modifications according to the actual conditions. 
 
 ## Revision History
 
