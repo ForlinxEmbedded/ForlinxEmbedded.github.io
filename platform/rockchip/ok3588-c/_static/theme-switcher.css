@@ -442,36 +442,52 @@ pre, code {
 }  
 
 @media screen and (max-width: 768px) {
-    /* 解除 iOS 对 sticky 的封印 */
-    body, .rst-content, .wy-nav-content {
-        overflow-x: visible !important; 
-    }
-    
-    /* 配合防横向滚动方案（如果页面出现左右摇晃再加这一段） */
-    html {
-        max-width: 100vw;
-        overflow-x: hidden; /* html 层的 hidden 有时不会影响 body 内的 sticky */
-    }
 
-    /* 1. 彻底清空全局默认外边距（杀掉最常见的 8px 白边） */
+    /* ===== 1. 彻底清除白边 ===== */
     html, body {
         margin: 0 !important;
         padding: 0 !important;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
-    /* 2. 消除外边距折叠（Margin Collapsing） */
-    /* 有时候导航栏内部的标题或图标带有 margin-top，会“穿透”到外面把导航栏顶下来 */
-    .wy-nav-top {
-        margin-top: 0 !important;
-        /* 触发 BFC，防止内部元素的 margin 溢出 */
-        display: flex !important; 
-        align-items: center; /* 确保内部汉堡图标和 Logo 垂直居中 */
-    }
-
-    /* 3. 清理 RTD 主题可能自带的网格顶部边距 */
     .wy-grid-for-nav {
         margin-top: 0 !important;
         padding-top: 0 !important;
     }
 
+    /* ===== 2. 顶部导航栏：吸顶 + 修复标题居中 ===== */
+    .wy-nav-top {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 10001 !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        margin-top: 0 !important;
+        padding: 0 !important; /* 清除可能的内边距 */
+    }
+
+    /* 汉堡图标固定宽度，不挤压标题 */
+    .wy-nav-top i {
+        flex-shrink: 0;
+        width: 44px;
+        text-align: center;
+    }
+
+    /* 标题居中 */
+    .wy-nav-top a {
+        flex: 1 !important;
+        text-align: center !important;
+        padding-right: 44px; /* 补偿左边汉堡图标宽度，让文字视觉居中 */
+    }
+
+    /* ===== 3. 防止 overflow:hidden 破坏 sticky ===== */
+    body, .rst-content, .wy-nav-content {
+        overflow-x: visible !important;
+    }
 }
