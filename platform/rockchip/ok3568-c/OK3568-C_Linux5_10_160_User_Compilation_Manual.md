@@ -73,7 +73,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -81,35 +81,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
 
 Click on "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
 
 Check and click on "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
 
 Click "Installation".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
 
 Wait for the installation to complete.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -126,23 +126,23 @@ First, download the development environment provided by Forlinx. In the developm
 
 Select the zip file to unzip together
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
 
 Select .vmx as the file to be opened by the virtual machine after the complete decompression.
 
 Open the virtual machine and select the extracted 3588 development environment.vmx
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 Development environment account no.: forlinx, password: forlinx; after filling in, select Sign in to log in.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -154,63 +154,63 @@ Development environment account no.: forlinx, password: forlinx; after filling i
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 Choose custom, and click “Next”.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 Select Install the operating system later and click “Next”.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 Leave the default and click “Next”.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Set the number of processors as appropriate.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Set the memory size according to the actual situation. It is recommended to use 16g
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 The default selection for the IO controller type here is LSI.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 The default selection here is also SCSI.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Choose to create a new virtual disk here.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 Specify the disk file, the default one here is fine.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 Click "Finish" by default.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 The virtual machine creation is now complete.
 
@@ -220,59 +220,59 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 The version of Ubuntu to install is 20.04. First of all, go to the official website of Ubuntu to get the Ubuntu 20.04 64-bit image. The download address is "ubuntu-20.04.6-desktop-amd64.iso" version.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
 
 After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 The system interface after the reboot is complete as shown below:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
 
 #### 3.1.3 Basic Ubuntu Installation
 
@@ -282,21 +282,21 @@ After installing the Ubuntu20.04 operating system, there are a few configuration
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
 
 Press the keyboard \[Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the sudo command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):
 
@@ -334,13 +334,13 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
 
 + **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -348,29 +348,29 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
 
 The network is set to dynamic ip.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 + **Bridge Mode:**
 
 If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -378,13 +378,13 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
 #### 3.1.6 Virtual Machine Basic Library Installation
 
@@ -450,42 +450,42 @@ Copy qt-creator-opensource-linux-x86\_64-4.7.0.run to any directory within the c
 forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run                   
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
 
 Then the installation window of the graphical interface will pop up, and install according to the instructions:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)
 
- ![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) 	
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) 	
 
 
 Users who install online need to register their own Qt account. Those who already have a Qt account can log in directly. Qt password requirements are: including capital letters, lowercase letters and numbers. After successful registration and login, click next.
 
 Users who install offline can skip it.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
 
 Click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 Users can set the installation path according to their own habits. It is set by default here, so click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
 To fully install, click "Next".
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
 
 Click Install and wait for the installation to complete.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
 
 When the installation is complete, click Finish. At this time, the Qt interface will be opened automatically. You can also start it through the command line. Execute the following command to open Qt Creator in the backstage. When the user opens it, the actual installation path shall prevail:
 
@@ -494,7 +494,7 @@ forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 forlinx@ubuntu:~$ ./qtcreator &
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
 
 The Qt Creator tool screen appears. Qt Creator is installed.
 
@@ -582,11 +582,11 @@ forlinx@forlinx-ubuntu:~/work/3568/OK3568_Linux_fs$ ./build.sh
 
 The final compilation effect is shown in the following figure (the path may be different according to the actual situation):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
 
 After successful compilation, the corresponding compilation project result file will be generated under the OK3568\_Linux\_fs/rockdev folder, find the image file there.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
 
 **Note:** 
 
@@ -626,7 +626,7 @@ The kernel in the update. img is not updated after successful compilation. Pleas
 
 **Note: After the user graphical interface configuration modifies the kernel configuration, such as adding the usb-to-serial ch340 driver, execute ./build.sh kernel, burn the boot.img image, and start the development board to find that the graphical configuration does not take effect. You can use one of the following methods to solve it:**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
 
 Method 1: Write the configuration directly to the kernel default configuration file/OK3568\_Linux\_fs/kernel/arch/arm64/configs/OK3568-C-
 
@@ -639,11 +639,11 @@ forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh kernel
 
 Method 2: Configure the kernel graphically, and comment out the source code device/rockchip/common/scripts/mk-kernel. sh the commands shown in the following figure.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
 
 Compile kernel/ Makefile file.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/kernel$ make ARCH=arm64 menuconfig
@@ -671,7 +671,7 @@ Found old config, override it? (y/n):y Select y to override the previous .config
 
 Method 2: Graphically configure the buildroot, and comment out the device/rockchip/common/scripts/mk-the location of the following figure in the buildroot. sh:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/buildroot/output/OK3568$ make menuconfig
@@ -723,11 +723,11 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 **Note: The output directory under buildroot needs the source code to be fully compiled before it can be generated.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
 
 4\. Follow the same method to add the GCC compiler, click “Add->GCC->C++” on the right, as shown in the figure:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
 
 #### 4.4.2 Qt Versions Configuration
 
@@ -737,7 +737,7 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 3\. Click open to add;
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
 
 4\. Then it will return to the Qt Version configuration box, and the Version name can be changed by itself;
 
@@ -755,7 +755,7 @@ Kits is a build kit for building and selecting development build environments us
 
 4\. Qt version selects the name entered when the Qt version was created.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
 
 5\. Then click Apply and OK.
 
@@ -805,30 +805,30 @@ Watchdog Ticking Away!
 
 Open Qt Creator in the development environment (users open it according to their actual path), click File->Open File or Project in Qt Creator, a pop-up window will appear, select /3568/OK3568\_Linux\_fs/app/forlinx/forlinx\_qt/watchdog/ watchdog.pro
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
 
 After opening the project, the interface is as follows: (If the page is not automatically changed, please select as shown in the screenshot).
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
 
 Click Configure Project to adapt to the build environment described in the “Qt Creator Environment Configuration” section of this manual.
 
 After selection, the interface is as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
 
 Click Build->Clean All to clear it. (If the intermediate file is not cleared, it can be deleted manually).
 
 Click Projects to uncheck Shadow build.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
 
 Then click Build-> Build All to compile.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
 
 After the Build progress bar in the lower right corner is finished, it means that the compilation is finished. At this time, you will see the newly generated binary file fltest\_qt\_watchdog in the /app/forlinx/forlinx\_qt/watchdog directory, as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
 
 Copy the executable file generated by compiling to the board through U disk or FTP, copy it to the development board, and run the test.

@@ -42,11 +42,11 @@ FET3568-C and FET3568-C2 SoM have the same pin definition and can share a common
 
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
 
 **Front**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
 
 **Back**
 
@@ -128,7 +128,7 @@ Number  Start (sector)    End (sector)  Size Name
 
 **Note: Be sure to install the Wifi antenna when startup.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278320996_e105caf3_f44c_4236_9713_8a433603e88c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278320996_e105caf3_f44c_4236_9713_8a433603e88c.png)
 
 ### 2.2 Debugging Serial Driver Installation
 
@@ -157,11 +157,11 @@ Step 1: Connect the serial port number of the computer---check the serial port n
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321563_33878f07_57ca_425b_9f07_0f6ad5325c03.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278321563_33878f07_57ca_425b_9f07_0f6ad5325c03.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321755_7f70b87a_57c6_4aab_ae10_4e27e83acf4d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278321755_7f70b87a_57c6_4aab_ae10_4e27e83acf4d.png)
 
 #### 2.3.2 Serial Login
 
@@ -169,17 +169,17 @@ After the terminal software on the PC side is set, connect the PC and the develo
 
 The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png)
 
 **Note: If the prompt shows \[root@buildroot]#, it indicates that this is the first reboot after the initial flashing is completed, and the system is currently writing some information. During this process, please do not perform any operations. Only when the system reboots automatically again does it mean the flashing is finished. \[root@OK3568-buildroot]#That's the normal state. This can be viewed through the uboot boot information.**
 
 First boot, recovery mode:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322192_c1627636_d731_4ba9_9f9c_95a77b1fa479.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278322192_c1627636_d731_4ba9_9f9c_95a77b1fa479.png)
 
 Normal boot:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322394_e0b77e8e_c261_48a1_9048_2aa975640069.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278322394_e0b77e8e_c261_48a1_9048_2aa975640069.png)
 
 ### 2.4 Network Login
 
@@ -195,13 +195,13 @@ OK3568 development board supports SSH service and automatically starts it during
 
 - **The following test is based on the development board IP address 172.16.0.76. Please modify it according to your actual situation. Use the command “ifconfig eth0 172.16.0.76” on the debugging serial terminal to make the change.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322647_f6dd874b_e614_4e71_b207_c4a903394ef8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278322647_f6dd874b_e614_4e71_b207_c4a903394ef8.png)
 
 Open the putty software and make the following settings (the actual IP shall prevail):
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278322854_2cc112b3_b2c3_47a4_9ba3_4f72e0948f19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278322854_2cc112b3_b2c3_47a4_9ba3_4f72e0948f19.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png)
 
 #### 2.4.2 FTP
 
@@ -217,9 +217,9 @@ Install the file Zilla tool on windows and set it up as shown in the following f
 
 - **The following test is based on the development board IP address 172.16.0.76. Please modify it according to your actual situation. Use the command ''ifconfig eth0 172.16.0.76" on the debugging serial terminal to make the change.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
 ### 2.5 Screen Switching
 
@@ -314,7 +314,7 @@ The device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi
 
 In the kernel source code, open the device dtsi file and find the following node:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323616_495a2d74_afea_4779_9f50_cd95a9a2031e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278323616_495a2d74_afea_4779_9f50_cd95a9a2031e.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -322,7 +322,7 @@ Examples:
 
 Close the hdmi, lvds screens, change the attribute to "off", and use edp to change the corresponding attribute to edp.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278323856_10f207f4_f416_4e2b_ac95_c93d21937917.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278323856_10f207f4_f416_4e2b_ac95_c93d21937917.png)
 
 After saving, recompile to generate the image.
 
@@ -344,7 +344,7 @@ OK3568 platform has perfect support for Qt, especially for multimedia related cl
 
 The desktop is displayed as follows after the development board booting:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png)
 
 #### 3.1.2 Introduction to Touch Functions
 
@@ -354,11 +354,11 @@ The LVDS and MIPI screen connected to the development board can be displayed and
 
 Click the desktop icon to open the video player.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278339578_041f1a51_7337_42e4_ab0c_8556cd86437f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278339578_041f1a51_7337_42e4_ab0c_8556cd86437f.png)
 
 Application Interfaces
 
@@ -368,17 +368,17 @@ Click the desktop icon to open the video player qcamera. The test program suppor
 
 **Note: The app needs to be connected to the camera before opening.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340062_4cee86c6_56eb_4b90_9157_7277150a77ec.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278340062_4cee86c6_56eb_4b90_9157_7277150a77ec.jpeg)
 
 Application Interfaces
 
 After opening the application, click UVC Camera to start the camera preview.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1722222638366_57fd39ef_cb1c_44bf_8d6d_3a5f4e4f575f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1722222638366_57fd39ef_cb1c_44bf_8d6d_3a5f4e4f575f.png)
 
 In Video Mode, you can click the record button to record, and click the recording button to stop recording. The generated video file is located in /userdata/VIDEO0.MOV.
 
@@ -386,15 +386,15 @@ Playback tests can be performed using the gst-play-1.0/userdata/VIDEO0.mov comma
 
 Click the Video Mode button to switch to the photo mode, and click Capture to take a photo.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png)
 
 The generated file is located in the/userdata path:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
 
 For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
 
 Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.
 
@@ -412,11 +412,11 @@ Alternatively, click the second `rkisp_mainpath` button in the QT interface to a
 
 OK3568 supports OpenGL ES3.2; click the desktop icon for OpenGL test.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341344_c3dbc479_6fe5_4eef_ab2d_734ac48de168.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278341344_c3dbc479_6fe5_4eef_ab2d_734ac48de168.png)
 
 Application Interfaces
 
@@ -424,11 +424,11 @@ Application Interfaces
 
 “music player" is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341744_96af593c_422a_4247_8683_76aa15092b2d.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278341744_96af593c_422a_4247_8683_76aa15092b2d.jpeg)
 
 Application Interfaces
 
@@ -444,11 +444,11 @@ root@OK3568-buildroot:/# gst-play-1.0/userdata/media/test.mp3 --audiosink="alsas
 
 The Audio recorder "is a recording test application that can be used to test whether the recording function of the sound card is normal:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342179_1c23083c_05e4_4330_b895_61fb77073d28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278342179_1c23083c_05e4_4330_b895_61fb77073d28.png)
 
 Application Interfaces
 
@@ -462,11 +462,11 @@ The "4G/5G" test program is used to test the OK3568 external 5G module (RM500U).
 
 Meanwhile, the test supports the 4G module (EM05-CE), inserts the 4G module and SIM card in the case of power failure, and opens the test application after powering up the system to start.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342568_ac49bc27_e9a0_4a3e_9d9d_9531859e9dc1.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278342568_ac49bc27_e9a0_4a3e_9d9d_9531859e9dc1.jpeg)
 
 Application Interfaces
 
@@ -478,11 +478,11 @@ Click the connect button, the program will automatically enter the dialing proce
 
 **Note: Be sure to install the WiFi antenna when startup.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278342968_2427f6a6_d21b_4a30_a759_482fda9f802f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278342968_2427f6a6_d21b_4a30_a759_482fda9f802f.jpeg)
 
 Application Interfaces
 
@@ -494,19 +494,19 @@ Open the Wifi test app, enter the correct network name and password, click CONNE
 
 After the connection is successful, click ping to test the network.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg)
 
 #### 3.1.10 Network Configuration Test
 
 When the OK3568 starts up, the default setting of the NIC is dhcp. The two modes of dhcp and static can be selected through the "Network" configuration application, and the static mode can be configured with ip address, subnet mask, gateway, and DNS.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png)
 
 Application Icons
 
 The interface is as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343711_d466a46d_345d_4d4c_a18c_a69c2871d95d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278343711_d466a46d_345d_4d4c_a18c_a69c2871d95d.png)
 
 Select eth0 or eth1, then select DHCP, and click "Application" at the bottom of the interface to restart the network and automatically obtain IP.
 
@@ -514,7 +514,7 @@ Click STATIC, select Set Static IP, enter the IP to be set in the IP column, ent
 
 After entering the URL and clicking the ping key, the result of the ping will prompt on the left, as follows:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278343972_0afb76db_63cb_45da_a6e5_d22b08cfd289.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278343972_0afb76db_63cb_45da_a6e5_d22b08cfd289.png)
 
 **Note: Information such as ip set in STATIC mode is saved to the relevant configuration file of the system so each reboot will use the network information set this time; network information configured in DHCP mode, on the other hand, does not need to care about this; ip addresses are dynamically assigned every reboot.**
 
@@ -522,13 +522,13 @@ After entering the URL and clicking the ping key, the result of the ping will pr
 
 "Simplebrowser" is a simple and practical web browser. Please ensure smooth network connection when using it, and make sure DNS is available before accessing external websites. By default, the browser launches and accesses the official website of Forlinx Embedded. Click the icon:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png)
 
 The interface is as follows:
 
 **Note: If the development board time is abnormal,  it will cause certificate problems. Do not shut down the power immediately after using the browser or the sync command at the command line. Otherwise, it may cause the browser to exit abnormally and not work properly, and can only be solved by re-burning.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
 
 Exit this browser via the upper navigation bar File->Quit.
 
@@ -536,11 +536,11 @@ Exit this browser via the upper navigation bar File->Quit.
 
 "WatchDog" is an application used to test the watchdog status.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345098_b4ecb513_38b6_4d9a_9d25_a8fadb05bd75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278345098_b4ecb513_38b6_4d9a_9d25_a8fadb05bd75.png)
 
 Application Interfaces
 
@@ -552,11 +552,11 @@ When unchecking feed dog, count down 6s and the system enters reboot. It indicat
 
 The "Keypad" is used to test whether the platform's own keys are available:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345454_3ec0497f_b53c_4d1b_b29b_3262851f300b.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278345454_3ec0497f_b53c_4d1b_b29b_3262851f300b.jpeg)
 
 Application Interfaces
 
@@ -568,11 +568,11 @@ Press "X" to exit the current routine and return to the system desktop.
 
 The "RTC" application allows you to view and set the current system time:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278345878_2faee878_578c_4126_b6e7_ad04ae576bb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278345878_2faee878_578c_4126_b6e7_ad04ae576bb2.png)
 
 Application Interfaces
 
@@ -586,19 +586,19 @@ Click on the desktop icon to use it to test the OK3568 on-board SPI interface. S
 
 Short the spi2 T/R pins according to the board schematic. The short circuit test does not need to consider the CS interface; if additional equipment is used for communication, the corresponding dev interface needs to be considered.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346060_8972ef99_0fee_40b3_b2e0_2559ce1d6f11.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278346060_8972ef99_0fee_40b3_b2e0_2559ce1d6f11.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346331_1852b31a_992b_4f43_84c8_40a466716f67.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278346331_1852b31a_992b_4f43_84c8_40a466716f67.png)
 
 Open the test program after the completion of short circuit, and click the send button to conduct the sending and receiving test.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346635_2b8f1646_2a6e_48b9_a713_15eada1cc349.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278346635_2b8f1646_2a6e_48b9_a713_15eada1cc349.png)
 
 Application Interfaces
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278346917_8e2caf6d_2081_430d_b4dd_369f0e4671b4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278346917_8e2caf6d_2081_430d_b4dd_369f0e4671b4.png)
 
 Click the Exit button to exit the test.
 
@@ -606,7 +606,7 @@ Click the Exit button to exit the test.
 
 Click on the desktop icon to use it to test the OK3568 on-board UART interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png)
 
 Application Icons
 
@@ -614,29 +614,29 @@ OK3568 serial port supports odd and even parity, 8 data bits and 1 stop bit.
 
 Please short the serial port to be tested before the serial port loopback test. UART3, UART4, UART5 and UART8 serial ports are indicated in the schematic diagram of OK3568 platform carrier board, in which UART2 is the debugging serial port and UART8 is the Bluetooth serial port. The default device names of UART3, UART4 and UART5 in the development board are ttyS3, ttyS4 and ttyS5 respectively. Here, take the test of UART4 serial port as an example. According to the schematic diagram of the development board, the transceiver pins of UART4 are short-circuited, corresponding to PIN29 and PIN30 respectively.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278347360_b24c7a70_e419_4bd6_8b07_25e3e8813f42.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278347360_b24c7a70_e419_4bd6_8b07_25e3e8813f42.png)
 
 Turn on the test program after the short circuit is completed.
 
 Click Settings on the right, select parameters such as serial port and baud rate, and click apply. Set parameter successfully. Then click the first button on the right to connect.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png)
 
 Application Interfaces
 
 Click the keyboard "1" to send automatically. Due to the problem of short circuit, the received "1" will also be displayed on the terminal.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png)
 
 #### 3.1.17 Backlight Test
 
 "BackLight" is the lcd backlight adjustment application:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png)
 
 Application Icons
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348704_ba67c57c_27b1_40c3_8206_4f722163f1ca.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278348704_ba67c57c_27b1_40c3_8206_4f722163f1ca.jpeg)
 
 Application Interfaces
 
@@ -646,13 +646,13 @@ Drag the slider in the interface to set the Lcd backlight brightness, level 0 is
 
 Click the desktop icon to enter the next menu:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png)**->**![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png)**->**![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png)
 
 Application Icons
 
 The main frequency of OK3568 CPU is up to 1.9 Ghz. By default, the CPU will dynamically adjust the main frequency according to the load. The main frequency of the CPU can also be fixed by setting.  Click the desktop Power icon to enter the CPU frequency setting page: 
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349339_bced7ad8_3cb7_438d_bc00_e5cf2f7ba5ba.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278349339_bced7ad8_3cb7_438d_bc00_e5cf2f7ba5ba.jpeg)
 
 Set Userspace Governor: Set the main frequency in the user mode
 
@@ -660,7 +660,7 @@ Set Frequency A55: Set the main frequency
 
 Take the setting of main frequency as an example. If it is necessary to set a fixed frequency, please click Set Userspace Governor, click run, return to the operation interface as shown in the figure above, and click Set Frequency A55 to set.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349538_3585a87e_e5ad_43fb_934a_f97477b071d2.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278349538_3585a87e_e5ad_43fb_934a_f97477b071d2.jpeg)
 
 Select the corresponding frequency for setting according to the requirements.
 
@@ -792,13 +792,13 @@ root@OK3568-buildroot:/# memory_bandwidth.sh
 
 Take OK3568-C as an example. As follows：
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278349807_b0062ff0_42e9_4dc0_953c_c6e41b1ddf7f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278349807_b0062ff0_42e9_4dc0_953c_c6e41b1ddf7f.png)
 
 The OK3568-C has a DDR4 write bandwidth of about 1480M/s and a read bandwidth of about 5100M/s.
 
 #### 4.1.5 Key Test
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350041_69289c78_69d0_4604_9725_f359e0d01c07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278350041_69289c78_69d0_4604_9725_f359e0d01c07.png)
 
 Use the keytest command line tool to test the keys. At present, keytest supports the test of the four keys V +, V-, Home and ESC on the backplane, and the key codes are 115, 114, 139 and 158 respectively. At this point, press the lift button in sequence, and the following can be output on the terminal:
 
@@ -824,7 +824,7 @@ OK3568 serial port supports odd and even parity, 8 data bits and 1 stop bit.
 
 Please short the serial port to be tested before the serial port loopback test. In the schematic diagram of the OK3568 platform, UART2, UART3, UART4, UART5, and UART8 are indicated as 5 serial ports, with UART2 being the debug port and UART8 being the Bluetooth port. The serial ports available to the user are UART3, UART4 and UART5, and the corresponding device names in the development board are ttyS3, ttyS4 and ttyS5. Take the test of UART4 serial port as an example, short-circuit the receiving and transmitting pins of UART4 according to the schematic diagram of the development board, corresponding to PIN29 and PIN30 respectively.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350392_6790a64b_37c7_4cda_95b6_f8ce5d08686a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278350392_6790a64b_37c7_4cda_95b6_f8ce5d08686a.png)
 
 Turn on the test program after the short circuit is completed.
 
@@ -843,7 +843,7 @@ If the serial port prints the above content after execution, it indicates that t
 
 2 x SPI interfaces are led out from the OK3568 carrier board, which are configured as spidev in the default software for loopback test. When testing, refer to the schematic for shorting MOSI (PIN15) and MISO (PIN16), and then use the commands below to test each.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350643_b70444ce_bf67_4e70_8a94_831eb688b494.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278350643_b70444ce_bf67_4e70_8a94_831eb688b494.png)
 
 Without shorting the SPI 2\_ MOSI and the SPI 2\_ MISO, execute the test command:
 
@@ -1044,7 +1044,7 @@ Request confirmation
 After successful pairing, you can share files from your phone to the development board via Bluetooth.
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278350913_df9c333d_0740_4ed5_931c_c055cae5b122.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278350913_df9c333d_0740_4ed5_931c_c055cae5b122.png)
 
 Type quit to exit bluetoothctl. The received file is located in the/root directory.
 
@@ -1072,7 +1072,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 [CHG] Transfer /org/bluez/obex/client/session0/transfer0 Transferred: 8046 (@8KB/s 09:57)
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351113_a7ae10ff_6f83_4923_8783_10849f874870.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278351113_a7ae10ff_6f83_4923_8783_10849f874870.png)
 
 **Note: The files received by some manufacturers' mobile phones must have suffixes, otherwise they will be rejected by the Android system. Therefore, when testing, please try to use files with suffix names for testing.**
 
@@ -1080,7 +1080,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 RTC testing is mainly done by using the date and hwclock tools to set the software and hardware time. The test checks if the software clock can read and synchronize with the RTC clock when the development board is powered off and on again (Note: Make sure that the button battery is already installed on the board).
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351323_70952562_19f7_4ff3_b7d6_77c0f64f0936.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278351323_70952562_19f7_4ff3_b7d6_77c0f64f0936.png)
 
 ```shell
 root@OK3568-buildroot:/# date -s "2022-2-9 10:50:00"		// Set the time
@@ -1122,11 +1122,11 @@ The arrow cursor on the screen disappears and the mouse is successfully removed.
 
 OK3568 supports two USB 2.0 and one USB 3.0 interfaces. You can connect USB devices such as a mouse, keyboard, or USB flash drive to any of the onboard USB host interfaces. The board also supports hot-plugging for the mentioned devices. Demonstration with a mounting USB flash drive; the current USB flash drive test support up to 128G, but no test for 128G or above.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351657_3fda5e10_b4c0_4a51_898b_6feff96a376a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278351657_3fda5e10_b4c0_4a51_898b_6feff96a376a.png)
 
 USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
 
 The terminal prints information about the USB flash drive, and since many types of USB flash drives exist, the information displayed may vary:
 
@@ -1345,7 +1345,7 @@ udhcpc: sending discover
 
 The OK3568 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png)
 
 **Note: To use this function properly, the network IP of the development board needs to be the same network segment as the network IP of the PC, or the PC is under the subnet of the network where the development board is located.**
 
@@ -1353,7 +1353,7 @@ The OK3568 development board comes with the lighttpd web server pre-installed, a
 
 Development board provides a standard 3.5mm audio jack and a XH2.54-2P white socket P25 for driving an 8Ω speaker with a maximum output power of 1.3W. Before conducting sound playback testing, please insert your headphones into the earpiece interface or plug the speaker into the corresponding slot on the carrier board. To perform the test, use the following command:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278352613_65d7016b_8ddc_45f2_925a_a4b172267b26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278352613_65d7016b_8ddc_45f2_925a_a4b172267b26.png)
 
 **Note: Plug the prepared microphone into the 3.5mm headphone jack before performing the recording test.**
 
@@ -1388,9 +1388,9 @@ OK3568 supports the 4G module. Connect the 4G module before starting the develop
 
 **Note: When testing, please pay attention to the direction of SIM insertion, there is a silkscreen marking on the carrier board, access to the antenna, and use the medium card for testing.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278352941_05f448d6_c980_4ea0_add9_ac501ceaeead.png)           ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278352941_05f448d6_c980_4ea0_add9_ac501ceaeead.png)           ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278353750_da665f9c_b6f0_40f5_a903_9f960f23925f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278353750_da665f9c_b6f0_40f5_a903_9f960f23925f.png)
 
 ```shell
 root@OK3568-buildroot:/# quectelCM &
@@ -1443,9 +1443,9 @@ The default model of the 5G module is the Remote RM500U.
 
 **Note: When testing, please pay attention to the direction of SIM insertion, there is a silkscreen marking on the carrier board, access to the antenna, and use the medium card for testing.**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278354286_e6598aea_92d6_4f12_9470_9d461beb46e9.png)     ![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278354610_75f79799_93f9_40e0_ae84_0061bb80b8a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278354286_e6598aea_92d6_4f12_9470_9d461beb46e9.png)     ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278354610_75f79799_93f9_40e0_ae84_0061bb80b8a9.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355063_66e3ac36_7487_4bf5_b45b_051b87b454f7.png)The 5G adapter card is equipped with RM500U5G module and connected with OK3568. The test method is as follows:
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278355063_66e3ac36_7487_4bf5_b45b_051b87b454f7.png)The 5G adapter card is equipped with RM500U5G module and connected with OK3568. The test method is as follows:
 
 Check the OK3568 console to see if the Remote RM500U 5G module is recognized successfully:
 
@@ -1715,7 +1715,7 @@ can0  00895441   [7]  11 22 33 4A AB BC CD
 
 The OK3568-C SoM has a controllable blue LED, and the OKT3568 SoM blue LED blinks when the board is powered up and started. The user can turn off the function, Just modify the device tree arch/arm64/boot/dts/rockchip/OK3568-C-common.dtsi to change the LEDs node attribute default-state = "on" to "off", linux,default-trigger to "none";
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355433_91bd1dd1_566c_4971_bf66_11d6dbe10ee2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278355433_91bd1dd1_566c_4971_bf66_11d6dbe10ee2.png)
 
 The testing method is as follows:
 
@@ -1758,13 +1758,13 @@ The OK3568-C includes a TYPE-C port, which can be used in Device mode for brushi
 
 USB3.0 and OTG are multiplexed and can be switched using a DIP switch. Please make sure that the DIP switch is set to the ON position when using the USB3.0 interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278355735_c0770c7c_23e1_412b_ae35_f136feef044c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278355735_c0770c7c_23e1_412b_ae35_f136feef044c.png)
 
 **Note: The current SDK version does not support the simultaneous use of Host/Device mode. Please do not insert the USB flash disk and Type-C cable into the USB 3.0 OTG at the same time**.
 
 Host Mode:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png)
 
 Device Mode:
 
@@ -1774,7 +1774,7 @@ Insert the TF card with the file system in FAT32 format into the card, and input
 root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stall=0 removable=1
 ```
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356261_13231759_c2d6_4b52_985f_fcbaeb92f13c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278356261_13231759_c2d6_4b52_985f_fcbaeb92f13c.png)
 
 The drive letter does not appear on this computer in the window. Plug and unplug the Type-C cable again.
 
@@ -1782,15 +1782,15 @@ The drive letter does not appear on this computer in the window. Plug and unplug
 
 Insert the minipcie module into the carrier board minipcie card slot before powering up the system. After powering on and starting Linux, you can see that the corresponding device is enumerated successfully through lspci.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png)
 
 Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.
 
 Take the E1000 PCIe card as an example, the Linux kernel already includes this driver by default. After plugging in the NIC, powering up, and booting, we can see the enumeration information with the Ethernet interface.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356661_e14347c6_4d21_4d8a_aca1_bb52a3a00591.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278356661_e14347c6_4d21_4d8a_aca1_bb52a3a00591.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
 
 #### 4.1.28 SQLite3 Test
 
@@ -2514,11 +2514,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click "Driver Installation”
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 #### 6.1.2 OTG Full Flashing Test
 
@@ -2530,25 +2530,25 @@ It is a development tool provided by Rockchip. Before use, please unzip it to a 
 
 **Note: The condition for recognition is that the development board is powered up and the recover key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. Pay attention to two points during OTG programming: 1. Link the OTG line. 2\. If OTG is multiplexed with the USB 3.0, it is necessary to modify the DIP switch, as shown in the following figure:**
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
 
 Click "Advanced Functions"-> "Erase All" to erase.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
 
 Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 **Note: After the upgrade is completed, the system will automatically restart twice. The first restart updates some information. The operating user is \[root @ buildroot]. Please wait patiently. The second restart can be used normally. The operating user is \[root @ OK3568-buildroot:/].**
 
@@ -2564,17 +2564,17 @@ FactoryTool is a factory batch OTG burning tool. It does not need to read the im
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start flashing.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
 Download firmware.
 
 If the upgrade is successful, the system will restart, and it needs to be powered on again, as shown below:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 #### 6.1.3 OTG Step-by-step Flashing Test
 
@@ -2584,35 +2584,35 @@ In the development phase, it is very time-consuming to burn all of them every ti
 
 First, after OK3568-linux-release is compiled, a separate partition image can be found in the rockdev directory.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373500_27a1231c_b0f0_4bf8_87d9_7276d40b3ce0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278373500_27a1231c_b0f0_4bf8_87d9_7276d40b3ce0.png)
 
 Take the separate flashing of the OEM and userdata partitions as examples to demonstrate the flashing method.
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 Click the "Device Partition Table" button, and the partition address will be read automatically.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
 The prompt asks if you want to update the download address. Clicking "Yes" will result in a successful reading of the partition table.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the right test area of the partition to select the partition mirror, and check the partition.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 Click the "Run" button will automatically burn and restart.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
 **Introduction to MASKROM mode**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the red Maskrom key and then press the reset key to enter the maskrom mode for flashing.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -2626,13 +2626,13 @@ TF Card Creation and Flashing Test
 
 Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 
@@ -2649,6 +2649,6 @@ During mass production, check the flashing status by SoM heartbeat light.  Heart
 
 Serial port information during the burning process:
 
-![Image](./images/OK3568-C_Linux5_10_160_User_Manual/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. As shown in the figure above, the burning process takes about 7 minutes. Please wait patiently during the burning process.
