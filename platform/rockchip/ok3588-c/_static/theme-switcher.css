@@ -440,3 +440,16 @@ pre, code {
         font-size: 16px;
     }
 }  
+
+@media screen and (max-width: 768px) {
+    /* 解除 iOS 对 sticky 的封印 */
+    body, .rst-content, .wy-nav-content {
+        overflow-x: visible !important; 
+    }
+    
+    /* 配合防横向滚动方案（如果页面出现左右摇晃再加这一段） */
+    html {
+        max-width: 100vw;
+        overflow-x: hidden; /* html 层的 hidden 有时不会影响 body 内的 sticky */
+    }
+}
