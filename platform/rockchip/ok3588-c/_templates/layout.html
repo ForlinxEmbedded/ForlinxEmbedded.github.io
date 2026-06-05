@@ -18,9 +18,8 @@
 
 {# --- 2. 替换或追加页脚代码 --- #}
 {% block footer %}
-  {{ super() }} 
+  {# ← 删掉了这里的 {{ super() }} #}
 
-  {# 👇 核心变动：一句话引入你单独写好的 footer.html #}
   {% include "footer.html" %}
 
   <button id="back-to-top" title="Back to Top" style="display: none;">
