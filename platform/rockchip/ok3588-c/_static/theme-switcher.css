@@ -509,3 +509,19 @@ pre, code {
         overflow-x: visible !important;
     }
 }
+
+/* ======================= 解决 Footer 顶部闪现与沉底问题 ======================= */
+.wy-nav-content-wrap {
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wy-nav-content {
+    flex: 1 0 auto !important; 
+}
+
+footer, .forlinx-footer-social {
+    flex-shrink: 0 !important;
+    margin-top: auto !important; 
+}
