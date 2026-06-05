@@ -363,11 +363,18 @@ pre, code {
 
 /* ======================= 移动端修复：汉堡菜单吸顶与展开修正 ======================= */
 @media screen and (max-width: 768px) {
+    
     /* 1. 顶部横条：确保始终吸顶且在最上层 */
     .wy-nav-top {
+        position: -webkit-sticky !important; /* 👈 核心修复：专门拯救 iOS WebKit 内核 */
         position: sticky !important;
         top: 0 !important;
         z-index: 10001 !important;
+        
+        /* 👈 核心优化：开启 iOS 硬件加速，防止滚动时导航栏闪烁或撕裂 */
+        -webkit-transform: translateZ(0); 
+        transform: translateZ(0);
+
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         width: 100% !important;
         display: block !important;
