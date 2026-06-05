@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -71,7 +71,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495299_799ee221_9dff_4815_b8d3_a685b32f971b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495299_799ee221_9dff_4815_b8d3_a685b32f971b.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -79,35 +79,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
 
 Click on "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496107_e2d70089_70d9_4c62_a773_15c510eb170d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496107_e2d70089_70d9_4c62_a773_15c510eb170d.png)
 
 Check and click on "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
 
 Click "Installation".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496717_f6f5d128_1585_41b0_83a6_c9bec52d7d15.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209496717_f6f5d128_1585_41b0_83a6_c9bec52d7d15.png)
 
 Wait for the installation to complete.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -124,25 +124,25 @@ First, download the development environment provided by Forlinx. In the developm
 
 Select the zip file to unzip together
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
 
 Select .vmx as the file to be opened by the virtual machine after the complete decompression.
 
 Open the virtual machine and select the extracted 3588 development environment.vmx
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 Development environment is forlinx, and the password is forlinx. After filling in the password, select "Sign in" to log in.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -154,59 +154,59 @@ Note: Beginners are not recommended to build the system by themselves. It is sug
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 Choose custom, and click “Next”.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 Select Install the operating system later and click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 Leave the default and click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Set the number of processors as appropriate.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Set the memory size according to the actual situation. It is recommended to use 16G.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 The default selection for the IO controller type here is LSI
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 The default selection here is also SCSI.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Choose to create a new virtual disk here.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click "Next" to finish.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 Specify the disk file, the default one here is fine.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 Click "Finish" by default.
 
@@ -232,53 +232,53 @@ After downloading the mirror image, you can proceed with the system installation
 
 Right-click on the created virtual machine name and select “Settings” from the pop-up menu.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889311_2d81dcbe_0cae_4c55_97c9_537521a15233.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889311_2d81dcbe_0cae_4c55_97c9_537521a15233.png)
 
 The “Virtual Machine Settings” menu will pop up. Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889395_57b816c7_f087_4484_b199_0ae4072b78a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889395_57b816c7_f087_4484_b199_0ae4072b78a9.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889505_af95223f_7c56_4ac1_91b2_d0b296a66d56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889505_af95223f_7c56_4ac1_91b2_d0b296a66d56.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890419_f63f9e4b_a842_4803_b4a0_14ba03114355.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890419_f63f9e4b_a842_4803_b4a0_14ba03114355.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. The default language of Ubuntu is English, but of course, you can also choose Others.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890557_18555bfc_fbf5_45d6_8e16_feac46c251c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890557_18555bfc_fbf5_45d6_8e16_feac46c251c5.png)
 
 The default selected language can also be reset at a later stage, after the selection is complete continue.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890734_0b3511e9_b2f6_4f36_bdd6_c31587e228c4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890734_0b3511e9_b2f6_4f36_bdd6_c31587e228c4.png)
 
 Next, select "Continue" as the default option to proceed with the installation. The installation process might be slow. Then, click "Continue" again.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890857_a70f3458_1cbc_4a95_b05a_b043523c2459.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890857_a70f3458_1cbc_4a95_b05a_b043523c2459.png)
 
 By default, when you click on "Install Now", a dialog box will appear as shown in the image. Simply click "Continue" to proceed.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890982_dbea3986_b673_407e_9503_1be99e3e94fc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890982_dbea3986_b673_407e_9503_1be99e3e94fc.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed.
 
 Finally, set your username and password. You can choose either automatic login or login with a username and password. Click "Continue" to start the automatic installation.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891072_cb8c2930_a9c8_49ed_8808_9031ac4d4639.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891072_cb8c2930_a9c8_49ed_8808_9031ac4d4639.png)
 
 If the internet connection is poor, you can Skip without affecting the installation process.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891156_8ffa342c_1e22_46b3_82f6_b83a8e086885.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891156_8ffa342c_1e22_46b3_82f6_b83a8e086885.png)
 
 Click “Restart” Now to reboot.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891244_2e59f99c_d450_4eb1_994a_581e1f12e959.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891244_2e59f99c_d450_4eb1_994a_581e1f12e959.png)
 
 The system interface after the reboot is complete.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891329_4c85569f_7904_478e_8988_52069ee388c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891329_4c85569f_7904_478e_8988_52069ee388c2.png)
 
 The ubuntu system installation is complete.
 
@@ -290,15 +290,15 @@ VMware Tools Installation:
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machine" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889588_bda78844_fce6_43a6_a75d_1404d2f9ad28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889588_bda78844_fce6_43a6_a75d_1404d2f9ad28.png)
 
 Once done, enter Ubuntu and the VMware Tools CD will appear on your desktop and click into it.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891407_959cc772_0a6c_4379_b8e2_5e5af5220e8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891407_959cc772_0a6c_4379_b8e2_5e5af5220e8a.png)
 
 Enter and see a compressed file VMwareTools-10.3.25-20206839.tar.gz (it may be different for different VM versions); copy the file under the home directory (i.e. the directory with the home personal username)
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889665_e29da06d_684b_43f3_95e7_723c8e0e49ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889665_e29da06d_684b_43f3_95e7_723c8e0e49ce.png)
 
 Press \[Ctrl+Alt+T] to bring up the Terminal Command Interface and enter the command:
 
@@ -306,17 +306,17 @@ Press \[Ctrl+Alt+T] to bring up the Terminal Command Interface and enter the com
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.25-20206839.tar.gz
 ```
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889754_5ef28ab4_bca1_4dd0_b8c4_c86632732fc7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889754_5ef28ab4_bca1_4dd0_b8c4_c86632732fc7.png)
 
 After the extraction is complete, a file named “vmware-tools-distrib" will appear.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889840_6772f25c_e453_43cc_bd60_d866a66ab021.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889840_6772f25c_e453_43cc_bd60_d866a66ab021.png)
 
 Go back to the terminal and type cd vmware-tools-distrib to enter the directory.
 
 Enter: sudo ./vmware-install.pl followed by pressing Enter. Then, enter your password and the installation process will begin. When prompted, you can input "yes" and press Enter to proceed. For any other inquiries, simply press Enter to go with the default installation settings.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889932_d60cd0ca_104a_4e8d_8a07_5b2ac92de3ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967889932_d60cd0ca_104a_4e8d_8a07_5b2ac92de3ed.png)
 
 Once the VMware tools is complete, we can implement file copy and paste between Windows and Ubuntu.
 
@@ -324,17 +324,17 @@ The virtual machine is displayed full screen:
 
 If the virtual machine is not able to be displayed in full screen, you can resolve this issue by clicking on "View" and selecting "Autofit Guest." This will adjust the display to fit the screen automatically, enabling you to have a full-screen experience in the virtual machine.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890068_b095fc4a_3c1b_4cbe_ba18_ac9c69d9fff9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890068_b095fc4a_3c1b_4cbe_ba18_ac9c69d9fff9.png)
 
 Make most of the system settings in the location shown. A lot of the setup requirements on Ubuntu can be done here.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890138_709b6bde_91ee_490c_984b_731cd8421348.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890138_709b6bde_91ee_490c_984b_731cd8421348.png)
 
 Virtual machine hibernation settings:
 
 Also, the default hibernation is 5min, if you don't want to set hibernation, just set it to Never by setting Power->Screen Blank.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891518_9640b2fc_00da_4b18_966e_7696f18aafae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967891518_9640b2fc_00da_4b18_966e_7696f18aafae.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -344,13 +344,13 @@ By default, after the virtual machine is installed, the network connection metho
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. In this mode the virtual NAT device and the host NIC are connected to communicate for Internet access. This is the most common way to access the external network.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890224_d642497d_9876_4d31_897d_02276b6462f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890224_d642497d_9876_4d31_897d_02276b6462f3.png)
 
 + **Bridge Mode:**
 
 When the VMware virtual NIC device is in bridge mode, the host NIC and the virtual machine NIC communicate through the virtual bridge, and the network IP and the host need to be set in the same network segment in the Ubuntu environment. If accessing an external network, you need to set the DNS to be consistent with the host NIC. If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890300_c8f1cdf9_6868_4ca0_95a1_41ca03dceff4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967890300_c8f1cdf9_6868_4ca0_95a1_41ca03dceff4.png)
 
 ### 3.2 Libraries for Installing Linux Compilation System
 
@@ -435,7 +435,7 @@ forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh defconfig
 
 After execution there will be options to enter as shown below, enter 3 and press enter to continue.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1743478942763_68265633_64e9_49f3_ac39_c6ff42aacd60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1743478942763_68265633_64e9_49f3_ac39_c6ff42aacd60.png)
 
 After completing the above configuration, use the command to perform a full compilation:
 
@@ -443,11 +443,11 @@ After completing the above configuration, use the command to perform a full comp
 forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh
 ```
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1743479316064_731d8384_6211_4515_b401_2d1d585dadc7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1743479316064_731d8384_6211_4515_b401_2d1d585dadc7.png)
 
 After successful compilation, the corresponding compilation project result file will be generated under the OK3568\_Linux\_fs/rockdev folder, find the image file there.
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893085_6993301c_972a_4cb2_ac2d_64e43e932d7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893085_6993301c_972a_4cb2_ac2d_64e43e932d7d.png)
 
 Note: The update. img is packaged for full programming of OTG or TF card, and other files are programmed step by step.
 
@@ -459,7 +459,7 @@ The user performs the operation in the kernel source code path.
 forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh kernel
 ```
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893180_f35264b3_2934_481f_ba51_cea6b23f3581.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893180_f35264b3_2934_481f_ba51_cea6b23f3581.png)
 
 The kernel in the update. img is not updated after successful compilation. Flash the kerndl/boot.img file step by step.
 
@@ -471,7 +471,7 @@ The user performs the operation in the kernel source code path.
 forlinx@ubuntu:~/3568/OK3568_Linux_fs$ ./build.sh cleanall
 ```
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893261_34870309_6fb4_4476_bda2_174341658293.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1740967893261_34870309_6fb4_4476_bda2_174341658293.png)
 
 This operation clears all intermediate files. However, it does not affect the source files, including those that have already had changes made to them.
 
@@ -614,13 +614,13 @@ Note that the library that needs to be configured for dynamic linking points to/
 root@ok3568:~# vi /etc/profile
 ```
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750813440772_cece3f1a_57cf_4868_8724_4c353438347d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750813440772_cece3f1a_57cf_4868_8724_4c353438347d.png)
 
 Run the cross-compiled program:
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814103651_1b9bcf60_4e10_481a_925e_8dad8b8c331f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814103651_1b9bcf60_4e10_481a_925e_8dad8b8c331f.png)
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814121476_f3f5fc73_f90d_493a_b273_6de85cda38c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814121476_f3f5fc73_f90d_493a_b273_6de85cda38c7.png)
 
 Import the same program source code into the development board and compile it:
 
@@ -635,9 +635,9 @@ g++ -c -pipe -O2 -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
 Run:
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814222619_ea489fc0_74e8_43d2_9662_5a4105228fa1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814222619_ea489fc0_74e8_43d2_9662_5a4105228fa1.png)
 
-![Image](./images/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814226922_7b19f518_91f0_4bc8_abb5_06e0e920f5a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1750814226922_7b19f518_91f0_4bc8_abb5_06e0e920f5a9.png)
 
 #### 5.1.5 Unmounting and Exiting
 
