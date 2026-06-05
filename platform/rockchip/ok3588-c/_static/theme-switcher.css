@@ -521,7 +521,23 @@ pre, code {
     flex: 1 0 auto !important; 
 }
 
+/* 让自带页脚和我们的社媒页脚都沉底 */
 footer, .forlinx-footer-social {
     flex-shrink: 0 !important;
     margin-top: auto !important; 
+}
+
+/* ======================= 解决 Footer 加载闪烁问题 ======================= */
+/* 1. 定义隐身动画 */
+@keyframes footerFadeIn {
+    0% { opacity: 0; }
+    99% { opacity: 0; } 
+    100% { opacity: 1; }
+}
+
+/* 2. 直接在 CSS 里给你的社媒组件绑定动画 */
+.forlinx-footer-social {
+    /* 初始状态透明，并执行 0.4秒 的隐身延迟 */
+    opacity: 0;
+    animation: footerFadeIn 0.4s ease forwards;
 }
