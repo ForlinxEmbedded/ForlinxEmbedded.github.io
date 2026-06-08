@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -61,11 +61,11 @@ OK3562-linux-source OK3562-linux-source.tar.bz2
 
 RK3562J is a low-power, high-performance processor based on the ARM64 architecture. It includes 4 Cortex-A53 cores and 1 Cortex-M0 core, along with an independent NEON coprocessor. It can be used in computers, mobile phones, personal mobile internet devices, and digital multimedia devices. The connection of OK3562 SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418437155_411d3da0_4c0d_4d73_a18a_c2bfac3554cc.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418437155_411d3da0_4c0d_4d73_a18a_c2bfac3554cc.jpeg)
 
 **Front**
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418437554_c4288f3d_892a_4c80_b8de_0bde8c386265.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418437554_c4288f3d_892a_4c80_b8de_0bde8c386265.png)
 
 **Back**
 
@@ -130,7 +130,7 @@ The debug serial port on the development board is a Type-C USB jack, so users ca
 + Network cable (for network login)
 + According to the development board interface to connect the screen (Based on display needs).
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1730773402955_b39ed59a_e86f_4f98_a7e1_ae880aedc5b4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1730773402955_b39ed59a_e86f_4f98_a7e1_ae880aedc5b4.png)
 
 **Note: The debug serial port marked in the diagram actually shares a Type-C interface between UART0 and UART9. UART9 serves as the debug serial port for the bare core when AMP (Asymmetric Multi-Processing) function is enabled (switch S4 needs to be set to UART mode).**
 
@@ -163,15 +163,15 @@ Let's take putty as an example to introduce the login method of serial port:
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417652369_c946e9c8_f6b4_450a_a2d9_c9cd0527ed2f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417652369_c946e9c8_f6b4_450a_a2d9_c9cd0527ed2f.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417652635_c2ca3610_6708_4704_ac4a_90416d6b9c76.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417652635_c2ca3610_6708_4704_ac4a_90416d6b9c76.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM24 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417652851_8f35def3_7095_4026_b2c3_e32f6294f73b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417652851_8f35def3_7095_4026_b2c3_e32f6294f73b.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -179,7 +179,7 @@ After the terminal software on the PC side is set, connect the PC and the develo
 
 The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198991322_c1ffe076_1793_48ba_9c3c_02bdbcc4f32b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198991322_c1ffe076_1793_48ba_9c3c_02bdbcc4f32b.png)
 
 ```plain
 ForlinxDesktop系统已有用户：
@@ -208,9 +208,9 @@ Before logging into the network, ensure that the direct network connection betwe
 
 3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198991407_a0f0f16c_569f_4730_8b2e_980664d1c861.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198991407_a0f0f16c_569f_4730_8b2e_980664d1c861.png)
 
 A data return indicates a normal network connection.
 
@@ -224,11 +224,11 @@ A data return indicates a normal network connection.
 
 1\. Use ssh to log in the development board;
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198991516_2fa13209_3492_46f5_a818_f43b3492c673.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198991516_2fa13209_3492_46f5_a818_f43b3492c673.png)
 
 Click "Open", the following dialog box will appear, click "Yes" to enter the login screen.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
 
 ```plain
 SSH into the account: ssh forlinx@192.168.0.123
@@ -272,11 +272,11 @@ Install the FileZilla tool on Windows and follow the steps shown in the image be
 
 Open the FileZilla tool, click on File and select Site Manager.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff.png)
 
 After successful login, you can upload and download.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switching
 
@@ -311,7 +311,7 @@ Device tree path: kernel/arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi
 
 In the kernel source code, open the device dtsi file and find the forlinx-control node as follows:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417655244_cf68dda2_b8e9_41e7_af19_85b8fea65d80.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417655244_cf68dda2_b8e9_41e7_af19_85b8fea65d80.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -328,7 +328,7 @@ Users need to change the setting parameters as required. After saving, it is nec
 
 Use the LVDS screen display.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417655456_cb2ffa1e_8431_4ab1_a170_b82bfb1dcdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417655456_cb2ffa1e_8431_4ab1_a170_b82bfb1dcdf9.png)
 
 After saving, recompile to generate the image.
 
@@ -346,69 +346,69 @@ Note: For products designed based on the SoM, if there are scenarios where accid
 
 After the development board is started for the first time, you need to enter the login password and click login. The login user is forlinx, and the password is forlinx. After entering the desktop, it is as follows:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198992956_ffefee3e_06e2_4fd5_8868_5a9545cade37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198992956_ffefee3e_06e2_4fd5_8868_5a9545cade37.png)
 
 #### 3.1.2 Virtual Keyboard Settings
 
 The system integrates a virtual keyboard. Click the icon in the upper corner and move the mouse to the virtual keyboard option to select the virtual keyboard.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993035_53b84893_adbd_4961_bac3_2c557c11efb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993035_53b84893_adbd_4961_bac3_2c557c11efb8.png)
 
 After selection, the virtual keyboard will pop up in the page.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993124_95e929ed_e157_44f5_a004_d6eee549c854.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993124_95e929ed_e157_44f5_a004_d6eee549c854.png)
 
 #### 3.1.3 WiFi Test
 
 The OK3562 platform has a 6221A-SRC (RTL8821CS) module onboard by default, which is a WiFi/Bluetooth integrated module to test the WiFi function. The WiFi module exists in the system in the form of wlan0 node, and this test corresponds to wlan0 (other corresponding nodes are used when there are multiple devices). To configure WiFi, use the mouse to click the network icon in the upper right corner:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993190_878ec347_60c3_4ab2_a4ec_402e4e0e1510.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993190_878ec347_60c3_4ab2_a4ec_402e4e0e1510.png)
 
 Click the WiFi name listed under the WiFi network, pop up the WiFi configuration interface, and enter the password:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993269_4c429d25_0bed_4094_92cf_0dc4cf408efa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993269_4c429d25_0bed_4094_92cf_0dc4cf408efa.png)
 
 Click "Connect" and the WiFi connection is completed:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993343_112e314b_4986_42a3_94fe_124f0097ae5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993343_112e314b_4986_42a3_94fe_124f0097ae5e.png)
 
 #### 3.1.4 Browser Test
 
 ForlinxDesktop integrates Google Chrome, etc. When using it, please make sure the network is smooth and dns is available before accessing the external network. Click on the Start menu in the lower left corner and select "Chromium Browser":
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993446_05e9b31a_9215_4780_b393_7aee47ba0656.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993446_05e9b31a_9215_4780_b393_7aee47ba0656.png)
 
 Enter the browser:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1740967878994_1de47657_ce2b_45d8_b440_65d7bf624fa5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1740967878994_1de47657_ce2b_45d8_b440_65d7bf624fa5.png)
 
 Click the search box to enter the website and visit the official website of Forlinx Embedded. The interface is as follows:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993540_8be33c8a_b3cf_4259_b0b0_968e8ddae079.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993540_8be33c8a_b3cf_4259_b0b0_968e8ddae079.png)
 
 #### 3.1.5 Bluetooth Test
 
 The default 6221A-SRC (RTL8821CS) module of OK3562 platform is a WiFi/Bluetooth integrated module to test the Bluetooth function. To configure Bluetooth, you need to right-click the Bluetooth icon in the lower right corner. Bluetooth is enabled by default:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993650_5e3f37b5_3823_47b7_b100_487e44e29189.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993650_5e3f37b5_3823_47b7_b100_487e44e29189.png)
 
 Select "Send Files to Device" and select the corresponding file:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993758_56ec19eb_6a86_4641_8b01_70d0035ca0d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993758_56ec19eb_6a86_4641_8b01_70d0035ca0d6.png)
 
 Click "OK" to select the corresponding equipment:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993833_be2537d2_85c3_4c68_9384_34a636e8b58b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993833_be2537d2_85c3_4c68_9384_34a636e8b58b.png)
 
 After clicking "OK", the file transfer starts:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993940_45c9ce10_014b_4b07_81a2_b66a7bfe5dc4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198993940_45c9ce10_014b_4b07_81a2_b66a7bfe5dc4.png)
 
 #### **3.1.6 File Manager**
 
 Click Home on the desktop to manage files:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994044_48d3ebca_e959_41c1_818b_47adb1c8035a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994044_48d3ebca_e959_41c1_818b_47adb1c8035a.png)
 
 ### 3.2 Command Line Function Test
 
@@ -596,7 +596,7 @@ UART0, UART2, UART8 and UART9 serial ports are indicated in the schematic diagra
 
 This test uses UART2 and UART9 to short 485 \_ B1 and 485 \_ B0, 485 \_ A1 and 485 \_ A0 in P36 port. GND \_ 485 \_ 0, GND \_ 485 \_ 1 pin header, as shown in the figure:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1722219092030_c1249903_b12e_48b0_8be6_51478d731f10.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1722219092030_c1249903_b12e_48b0_8be6_51478d731f10.png)
 
 Enter the following command in the serial port of the development board:
 
@@ -618,7 +618,7 @@ forlinx_uart_test.1234567890...
 
 OK3562-C development board is equipped with 13 x ADC, each channel can connect an adjustable resistor. For testing, select channel saradc0\_in5. The hardware diagram of the ADC pin is as follows: input voltage at pin 1 of P11. The current chip uses a 1.8V reference voltage corresponding to a 10-bit ADC maximum of 1024.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417683181_9552584f_5419_47e8_9307_1427849c8bae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417683181_9552584f_5419_47e8_9307_1427849c8bae.png)
 
 Take SARADC \_ VIN2 as an example to test the adjustable resistance value:
 
@@ -634,7 +634,7 @@ root@ok3562:/sys/bus/iio/devices/iio:device0# cat in_voltage5_raw
 
 1\. Insert the TF card into the TF card slot on the carrier board before powe-up . Then power up and start, run the command dmesg, and the terminal will have the following printed information:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994130_3f5b8ed2_81d4_445c_a8c0_1139a339896a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994130_3f5b8ed2_81d4_445c_a8c0_1139a339896a.png)
 
 2\. Check the mount directory:
 
@@ -699,7 +699,7 @@ root@ok3562:~# dd if=/test of=/dev/null bs=1M iflag=direct
 
 Connect the USB mouse to the USB interface of the OK3562 platform and use the dmesg command, the serial terminal prints the following information:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994225_93efa20e_72e1_4c33_8292_ca02496fd012.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994225_93efa20e_72e1_4c33_8292_ca02496fd012.png)
 
 At this time, the arrow cursor appears on the screen, the mouse can work normally.
 
@@ -711,7 +711,7 @@ The terminal prints information about the USB flash drive, and since many types 
 
 1. After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. Use the dmesg command to view and get information about the USB flash drive;
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994292_813f6bac_ec5b_421a_bda2_32a85b6da818.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994292_813f6bac_ec5b_421a_bda2_32a85b6da818.png)
 
 2. View the mount directory:
 
@@ -801,7 +801,7 @@ root@3562:/# ls /dev/ ttyXRUSB*
 
 3\. The mapping between the four extended serial ports and their corresponding device nodes is shown in the diagram below:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
 
 4\. Refer to “3.2.7 UART Test” for the test methods.
 
@@ -819,7 +819,7 @@ USB Host mode allows you to connect standard USB devices, while Device mode supp
 
 2\. Modify the device tree file arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi (default in factory image, no need to modify) to change the “dr\_mode” property of the “usbdrd\_dwc3” node to “host’, as shown in the following image.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417684738_0e90d5d6_c5d0_4484_806e_8fc65da65829.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417684738_0e90d5d6_c5d0_4484_806e_8fc65da65829.png)
 
 3\. Recompile the image and flash it into the development board;
 
@@ -894,7 +894,7 @@ root@ok3562:~# umount /run/media/sda1
 
 1\. Modify the usbdrd\_dwc3 node in the device tree; arch/arm64/boot/dts/rockchip/OK3562-C-common.dtsi, as shown in the following image;
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417684997_25146b9b_12f9_40f2_a6e2_3938db623bb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417684997_25146b9b_12f9_40f2_a6e2_3938db623bb8.png)
 
 2\. Recompile the image and flash it into the development board;
 
@@ -926,7 +926,7 @@ In Device mode, the S2 DIP switch on the carrier board needs to be set to the OF
 
 Connect the computer to the development board P35 USB-type C socket with the USB-a to USB-C cable, and restart the development board.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417685359_31c37e27_76b7_4b1f_acd6_01f0c457490a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417685359_31c37e27_76b7_4b1f_acd6_01f0c457490a.png)
 
 Rockchip development tool shows "found an ADB device", you can download files from the development board to the computer through ADB pull, and upload files from the computer to the development board through ADB push.
 
@@ -970,13 +970,13 @@ Before powering up the system, insert the PCIE module into the PCIE card slot on
 
 After powering up and booting, from lspci we can see that the corresponding device enumeration is successful.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994358_453da366_3386_489f_8f85_810a40fa3009.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994358_453da366_3386_489f_8f85_810a40fa3009.png)
 
 Due to the many types of pcie devices, it may not be supported by the kernel by default, so you need to add the corresponding driver for the compiled device by yourself.
 
 Take PCIe to M.2 SSD as an example, the Linux kernel by default already includes the driver for this type of SSD. After inserting and powering on, you will be able to see enumeration information and corresponding devices will appear.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994421_0a670412_4fca_4a92_bbf7_5787c390330e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994421_0a670412_4fca_4a92_bbf7_5787c390330e.png)
 
 #### 3.2.16 Ethernet Configuration
 
@@ -1158,7 +1158,7 @@ Default agent request successful
 
 At this time, open the PC Bluetooth search, and a "OK3562" device will appear. Select pairing.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994494_1226cc85_42fd_4cdf_94f7_6bbdf5074ee3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198994494_1226cc85_42fd_4cdf_94f7_6bbdf5074ee3.png)
 
 At the same time the printing message displays on the development board as follows, enter yes
 
@@ -1234,7 +1234,7 @@ Request confirmation
 
 After successful pairing, on the PC side, Bluetooth can send files to the OK3562-C.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417686733_a7c68469_02b0_45da_af81_789c0d2f93e3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417686733_a7c68469_02b0_45da_af81_789c0d2f93e3.png)
 
 Received files are saved in the /tmp directory.
 
@@ -1422,7 +1422,7 @@ OK3562-C platform has an industrial-grade configuration with two CAN bus interfa
 
 Short CAN0 and CAN1, short pins CAN1\_L and CAN0\_L, and CAN1\_H and CAN0\_H on port P36, as shown in the diagram:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417687199_550c88e4_6a67_4cac_a4bb_574c91738d6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417687199_550c88e4_6a67_4cac_a4bb_574c91738d6d.png)
 
 Execute the following command in the development board terminal:
 
@@ -1482,7 +1482,7 @@ root@ok3562:/# cansend can1 1F334455#1122334455667788
 
 In the OK3562 platform’s carrier board schematic, there is an SPI test pinout located at carrier board position P8.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417687846_dfff0204_6506_4d62_9a85_c3de443e5b21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720417687846_dfff0204_6506_4d62_9a85_c3de443e5b21.png)
 
 Short the SPI2\_MOSI\_MO and SPI2\_MISO\_M0 pins.
 
@@ -1874,7 +1874,7 @@ Releasing pipeline resources...
 
 For raw sensors such as OV13855, each sensor corresponds to 5 device nodes:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198996317_8da83a34_e128_4a5c_8258_35862238fd37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1749198996317_8da83a34_e128_4a5c_8258_35862238fd37.png)
 
 Mainpath, refers to an output node of Rockchip ISP, which can output full-resolution images, generally used to take photos and capture Raw images.
 
@@ -2244,11 +2244,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418372654_458dfae6_fe39_4e90_a884_b5c76a0d4659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418372654_458dfae6_fe39_4e90_a884_b5c76a0d4659.png)
 
 Click "Driver Installation”
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418372998_55b52477_7160_490a_9674_11b926fabb18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418372998_55b52477_7160_490a_9674_11b926fabb18.png)
 
 #### 5.1.2 OTG Full Flashing Test
 
@@ -2264,25 +2264,25 @@ It is a development tool provided by Rockchip Micro. Unzip it to a full English 
 + **Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory;**
 + **The OTG port is on the back of the development board.**
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1750401646610_08816be2_b951_49df_8683_dc9c7c2b2fa9.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1750401646610_08816be2_b951_49df_8683_dc9c7c2b2fa9.jpeg)
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373238_ded5a5da_5ef9_4382_9150_a8fccf92f309.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373238_ded5a5da_5ef9_4382_9150_a8fccf92f309.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373446_68f5d3be_afdc_4bdd_ac64_912497c76847.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373446_68f5d3be_afdc_4bdd_ac64_912497c76847.png)
 
 Click "Switch" to wait for the board to enter the LOADER mode, and click the "Upgrade" button to upgrade.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373687_e2ee7480_1523_4f1d_bba1_4836940ca5d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373687_e2ee7480_1523_4f1d_bba1_4836940ca5d5.png)
 
 **Introduction to MASKROM mode**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the BOOT key, then press the reset key to enter maskrom mode for burning.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373917_956f9b2d_54fd_48c6_b4e6_069c8e8488af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418373917_956f9b2d_54fd_48c6_b4e6_069c8e8488af.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -2302,13 +2302,13 @@ Factory Tool is a factory batch OTG flashing tool, which does not need to read t
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png)
 
 Click to select the firmware, and click to start. At this time to recognize the loader device will automatically start burning.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png)
 
 #### 5.1.3 OTG Step Flashing Test
 
@@ -2322,11 +2322,11 @@ Take separate programming boot.img (including device tree and startup logo) as a
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375129_89e69424_6ab1_40ec_a113_86f2437728d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375129_89e69424_6ab1_40ec_a113_86f2437728d9.png)
 
 Click the "Device Partition Table" button, which will automatically read the partition address, and prompt you to update the download address, click "Yes", will be reported to read the partition table successfully, click on the partition of the right test area to select the partition image, and check the partition.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375357_f7716cdb_bc83_43f5_83d6_717dff0f7495.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375357_f7716cdb_bc83_43f5_83d6_717dff0f7495.png)
 
 Click the "Execute" button will automatically burn and restart.
 
@@ -2338,11 +2338,11 @@ TF card flashing and testing.
 
 Copy SDDiskTool\_v1.76.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375573_2107d191_e37e_4a2c_96d2_442aa8f4b146.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375573_2107d191_e37e_4a2c_96d2_442aa8f4b146.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375797_0c018d08_61c7_48e9_9500_72810e54ce87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375797_0c018d08_61c7_48e9_9500_72810e54ce87.png)
 
 ![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418375991_5a26cc1b_497f_4931_a823_0e988fadcaf9.png)
 
@@ -2361,6 +2361,6 @@ During mass production, check the flashing status by SoM heartbeat light.  Heart
 
 Serial port information during the burning process:
 
-![Image](./images/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418376211_f91fcd64_b82e_4d38_bd9d_aa4f8d390be0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Manual/1720418376211_f91fcd64_b82e_4d38_bd9d_aa4f8d390be0.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.
