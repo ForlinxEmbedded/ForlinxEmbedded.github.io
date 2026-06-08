@@ -12,7 +12,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Application Scope
 
-It is only applicable to Forlinx OK3576-C development board..
+It is only applicable to Forlinx OK3576-C development board.
 
 ## Revision History
 
