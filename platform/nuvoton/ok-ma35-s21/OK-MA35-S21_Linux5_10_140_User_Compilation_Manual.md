@@ -61,7 +61,7 @@ This chapter mainly introduces the installation of VMware virtual machines, usin
 
 Visit Vmware official website [https://www.vmware.com/cn.html](https://www.vmware.com/cn.html) for downloading Workstation Pro and obtaining the product key. VMware is a paid software, you need to buy it yourself, or use the trial version provided by VMware.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822205_af9e963f_ead8_498e_92e7_3208486f2c24.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822205_af9e963f_ead8_498e_92e7_3208486f2c24.jpg)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -69,35 +69,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822295_9e42dc0e_e466_46d8_ac13_d11d067644dc.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822295_9e42dc0e_e466_46d8_ac13_d11d067644dc.jpg)
 
 Click on "Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822398_c3a35e52_7e01_4953_a7ed_15c823179813.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822398_c3a35e52_7e01_4953_a7ed_15c823179813.jpg)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822485_b4af7e60_11ed_400a_b4a7_0609d58dd838.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822485_b4af7e60_11ed_400a_b4a7_0609d58dd838.jpg)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822582_4f1e9473_4183_4c27_835d_82748f3a8dfb.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822582_4f1e9473_4183_4c27_835d_82748f3a8dfb.jpg)
 
 Check and click on "Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822696_9a6dd1b2_65ba_4241_b28e_306266f27c99.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822696_9a6dd1b2_65ba_4241_b28e_306266f27c99.jpg)
 
 Check the box to add a shortcut, then click "Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822823_bc603fa8_6bc1_4a7f_823c_35f4d5a5a888.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822823_bc603fa8_6bc1_4a7f_823c_35f4d5a5a888.jpg)
 
 Click "Installation".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822917_ba292b16_0c89_4caa_9335_aed18a8a9b08.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822917_ba292b16_0c89_4caa_9335_aed18a8a9b08.jpg)
 
 Wait for the installation to complete.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822998_86a6e012_0c30_4c20_86fc_c38b92bb0249.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790822998_86a6e012_0c30_4c20_86fc_c38b92bb0249.jpg)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -113,33 +113,33 @@ First, download the development environment provided by Forlinx. In the developm
 
 Select all compressed files and right-click to extract them to Nuvoton Ubuntu 20.04, as shown in the following figure:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824390_7eae1b4b_6fbe_40af_ae12_a5c82c76742d.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824390_7eae1b4b_6fbe_40af_ae12_a5c82c76742d.jpg)
 
 The MA35 Standard Environment folder appears after the decompression is complete, where .vmx is the file to be opened by the virtual machine.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824469_8696b737_a3dd_496a_91b6_d37b642868a8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824469_8696b737_a3dd_496a_91b6_d37b642868a8.png)
 
 Open the virtual machine and select the extracted file in the MA35 development environment: Nuvoton-Ubuntu 20.04.vmx
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824572_6a93c8bd_36d1_4013_b38b_a3af7a72c349.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824572_6a93c8bd_36d1_4013_b38b_a3af7a72c349.jpg)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824657_b2aeea91_7cc4_4f8e_bc60_75a70b9766a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824657_b2aeea91_7cc4_4f8e_bc60_75a70b9766a7.png)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824726_abecd732_3912_4234_b0bf_6b10a1dec667.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824726_abecd732_3912_4234_b0bf_6b10a1dec667.png)
 
 The account providing the development environment is “forlinx”, and the password is “forlinx”. After filling in the password, select Sign in to log in.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824797_6d14e9fd_be89_46c9_b3a0_886cf1251025.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824797_6d14e9fd_be89_46c9_b3a0_886cf1251025.jpg)
 
 **Note: If, after booting, the "Client OS CPU Disabled" is displayed. Shut down or reset the virtual machine. Restart the virtual machine. During the startup process, press and hold the shift key to pop up the grub menu. Select advanced options for ubuntu。 Then select linux 5.13.0-30-generic to boot.**
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824882_bd6b0846_1e19_4cf5_a4ad_698966c37cfa.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824882_bd6b0846_1e19_4cf5_a4ad_698966c37cfa.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824953_0d160266_9171_44dd_b66d_6206472f4c34.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790824953_0d160266_9171_44dd_b66d_6206472f4c34.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790825062_c66163f7_b12b_44dd_8b8a_5ad22fb51533.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790825062_c66163f7_b12b_44dd_8b8a_5ad22fb51533.jpg)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -151,63 +151,63 @@ The account providing the development environment is “forlinx”, and the pass
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826446_535bfcff_4ef2_4c4a_9c8a_a91d8aae50ac.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826446_535bfcff_4ef2_4c4a_9c8a_a91d8aae50ac.jpg)
 
 Choose custom, and click “Next”.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826531_23e888a8_82af_49d4_9608_e6c391d55c12.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826531_23e888a8_82af_49d4_9608_e6c391d55c12.jpg)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826664_b2dc2020_bb2c_459b_b48f_5ae902adc707.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826664_b2dc2020_bb2c_459b_b48f_5ae902adc707.jpg)
 
 Select Install the operating system later and click “Next”.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826733_30c16c1a_e3a1_4086_a246_a48e9bbec261.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826733_30c16c1a_e3a1_4086_a246_a48e9bbec261.jpg)
 
 Leave the default and click “Next”.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826831_17f1d65c_5ef0_46e1_88ac_4cd75031eedd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826831_17f1d65c_5ef0_46e1_88ac_4cd75031eedd.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826916_1a8ab513_20f4_42f8_b464_2662bd289480.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826916_1a8ab513_20f4_42f8_b464_2662bd289480.png)
 
 Set the number of processors as appropriate.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826987_e4d51f5b_075a_48d1_bcfe_a81a49b76108.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790826987_e4d51f5b_075a_48d1_bcfe_a81a49b76108.jpg)
 
 Also, set the memory size according to the actual situation; it is recommended to use 16G (adjusted according to the performance of your machine).
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827128_dc81f360_cdbc_4be2_ab28_12209bea6935.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827128_dc81f360_cdbc_4be2_ab28_12209bea6935.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827200_409cb15a_39f2_4494_959a_1507d0b8c16b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827200_409cb15a_39f2_4494_959a_1507d0b8c16b.png)
 
 The default selection for the IO controller type here is LSI.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827365_4c11ac8e_3d34_4840_9806_6aa5f3d76e4b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827365_4c11ac8e_3d34_4840_9806_6aa5f3d76e4b.png)
 
 The default selection here is also SCSI.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827428_9586ad46_164b_424d_871f_68ab3cb6cbbd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827428_9586ad46_164b_424d_871f_68ab3cb6cbbd.png)
 
 Choose to create a new virtual disk here.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827526_beea4fd8_ef46_4499_8cc0_de7c349fa185.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827526_beea4fd8_ef46_4499_8cc0_de7c349fa185.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click Next to finish.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827605_4c3ce394_a38c_4414_ae25_f27607ed7c47.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827605_4c3ce394_a38c_4414_ae25_f27607ed7c47.png)
 
 Specify the disk file, the default one here is fine.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827669_53ef8be5_1422_43c8_a95e_1686051ea4db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827669_53ef8be5_1422_43c8_a95e_1686051ea4db.png)
 
 Click Finish by default.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827733_b4218d06_a674_47d1_8043_062281cd3fca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827733_b4218d06_a674_47d1_8043_062281cd3fca.png)
 
 The virtual machine creation is now complete.
 
@@ -217,57 +217,57 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 The version of Ubuntu chosen to install is 20.04, first of all, go to the official website of Ubuntu to get the Ubuntu20.04 64-bit image,the download address is download "ubuntu-20.04.6-desktop-amd64.iso" version.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827796_7662c8fb_063b_42dc_8ce1_8c85f9381705.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827796_7662c8fb_063b_42dc_8ce1_8c85f9381705.jpg)
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827865_5ee59080_9d2d_4090_9db8_6252546aaed8.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827865_5ee59080_9d2d_4090_9db8_6252546aaed8.jpg)
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827941_b89bcc96_9095_4fab_9fa5_c177b5b003cc.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790827941_b89bcc96_9095_4fab_9fa5_c177b5b003cc.jpg)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828160_a11ca836_a830_4abd_9cc4_c0159be3bfb2.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828160_a11ca836_a830_4abd_9cc4_c0159be3bfb2.jpg)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828261_1256882c_65fa_46e0_93dc_00bd555dab80.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828261_1256882c_65fa_46e0_93dc_00bd555dab80.jpg)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828380_68fd77e4_67e6_46e4_9829_0c2e60fddd84.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828380_68fd77e4_67e6_46e4_9829_0c2e60fddd84.jpg)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828482_f29424d0_0417_4fe5_bc31_e9b15ba6b761.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828482_f29424d0_0417_4fe5_bc31_e9b15ba6b761.jpg)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828552_a220f7fc_5413_4dfa_bc1b_5843bf4322c3.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828552_a220f7fc_5413_4dfa_bc1b_5843bf4322c3.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828638_ceb4aadd_48a2_491d_8c78_8ee7c06e5c60.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828638_ceb4aadd_48a2_491d_8c78_8ee7c06e5c60.jpg)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828740_16883e62_e882_4315_a671_313eb3be7907.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828740_16883e62_e882_4315_a671_313eb3be7907.jpg)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828884_85b8f077_6871_4f31_8012_51cff28f7c39.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828884_85b8f077_6871_4f31_8012_51cff28f7c39.jpg)
 
 After the installation, click "Restart Now" to reboot (or click "Reboot Client"):
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828957_7593de8c_d633_4f37_8c8c_44ea15ffd67f.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790828957_7593de8c_d633_4f37_8c8c_44ea15ffd67f.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829054_1cce6b86_dbfc_4a31_b539_5942931a1e90.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829054_1cce6b86_dbfc_4a31_b539_5942931a1e90.jpg)
 
 The system interface after the reboot is complete as shown below:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829137_75de9a16_3cea_4d71_bd15_1a0253e76f2c.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829137_75de9a16_3cea_4d71_bd15_1a0253e76f2c.jpg)
 
 #### 3.1.3 Basic Ubuntu Installation
 
@@ -277,21 +277,21 @@ After installing the Ubuntu20.04 operating system, there are a few configuration
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829213_d1f1c00d_87f3_4cc4_bccf_df3b9166c3d3.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829213_d1f1c00d_87f3_4cc4_bccf_df3b9166c3d3.jpg)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829295_ba21503b_3c98_4404_99b3_4bb295daeb7c.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829295_ba21503b_3c98_4404_99b3_4bb295daeb7c.jpg)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829361_007f7d7c_1c5c_4f65_bfe5_5469d56b440f.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829361_007f7d7c_1c5c_4f65_bfe5_5469d56b440f.jpg)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829479_22a3d660_ecee_4629_8889_177d5bc45aeb.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829479_22a3d660_ecee_4629_8889_177d5bc45aeb.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829582_da3a2404_cbd0_4d43_81de_683cb43f7b08.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829582_da3a2404_cbd0_4d43_81de_683cb43f7b08.jpg)
 
 Press the keyboard \[Ctrl+Alt+T] to bring up the terminal command interface, use the tar command to unzip the VMwareTools installation package (using the sudo command will prompt you to enter the password, follow the prompt to enter the password and press Enter, Linux system password input has no echo, make sure the password is correct and press Enter to confirm):
 
@@ -329,13 +329,13 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto-resize Guest Display, and click Fit Guest Now to achieve the virtual machine. VMware tools installation is successful.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829673_793bfba7_97e2_4e50_906f_46b3aaad61f9.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829673_793bfba7_97e2_4e50_906f_46b3aaad61f9.jpg)
 
 **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829796_4a5375c4_ad9f_4eea_abca_8dd8e9100aec.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829796_4a5375c4_ad9f_4eea_abca_8dd8e9100aec.jpg)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -343,27 +343,27 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829987_18652420_2497_424f_8174_dbc3f381b047.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790829987_18652420_2497_424f_8174_dbc3f381b047.jpg)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830080_7f1e10d6_053f_4fd2_acd3_1c4c197a689e.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830080_7f1e10d6_053f_4fd2_acd3_1c4c197a689e.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830190_094e5261_4c9b_459b_99c0_94874e453dc5.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830190_094e5261_4c9b_459b_99c0_94874e453dc5.jpg)
 
 The network is set to dynamic IP.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830491_d7b932e4_851c_41ec_943e_0a813f05ce36.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830491_d7b932e4_851c_41ec_943e_0a813f05ce36.jpg)
 
 **Bridge Mode:**
 
 If TFTP, SFTP and other servers are used, the network contact mode of the virtual machine needs to be set as the bridge mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830724_3781a417_17b9_4452_b8f7_2d5da104e004.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790830724_3781a417_17b9_4452_b8f7_2d5da104e004.jpg)
 
 Set up static ip, at this time Ubuntu's IP and the host IP need to be set in the same network segment.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831068_0eaf6bc8_b53f_42a3_b43e_a27eb996c6fb.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831068_0eaf6bc8_b53f_42a3_b43e_a27eb996c6fb.jpg)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -371,13 +371,13 @@ Set up static ip, at this time Ubuntu's IP and the host IP need to be set in the
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831184_fc3d63d1_144b_49ea_9393_ddce8a5d3950.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831184_fc3d63d1_144b_49ea_9393_ddce8a5d3950.jpg)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831270_41f4104a_f3cd_4f45_a8f8_8999f3f03850.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831270_41f4104a_f3cd_4f45_a8f8_8999f3f03850.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831348_490bfc41_59b4_4a9b_a98f_53bb128a1ced.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831348_490bfc41_59b4_4a9b_a98f_53bb128a1ced.jpg)
 
 #### 3.1.6 Virtual Machine Basic Library Installation
 
@@ -408,17 +408,17 @@ These library files are the ones that need to be downloaded when compiling the L
 
 Click the icon similar to a package on the left side of the desktop to see some tools. You can also search for the tools we want. For example, download a VScode tool, which is very convenient for our daily coding.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831428_ac1cff1a_91fe_4bc4_ab96_a1ef4711dc64.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831428_ac1cff1a_91fe_4bc4_ab96_a1ef4711dc64.jpg)
 
 Please search for the tool you need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click "Launch" to run it.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831535_8d7c8212_80ba_4f35_bedc_52624e65e587.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831535_8d7c8212_80ba_4f35_bedc_52624e65e587.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831626_622d1600_2f75_417b_8a17_ec54fd3751a6.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831626_622d1600_2f75_417b_8a17_ec54fd3751a6.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831737_817dafba_97e4_47d3_b080_c2c1ef1cce36.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831737_817dafba_97e4_47d3_b080_c2c1ef1cce36.jpg)
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831819_15468199_1aa6_4d09_a2d8_0bc7e4ef904d.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831819_15468199_1aa6_4d09_a2d8_0bc7e4ef904d.jpg)
 
 #### 3.2.3 NFS Installation
 
@@ -428,7 +428,7 @@ The terminal executes the following command:
   forlinx@ubuntu:~$ sudo apt-get  install -y nfs-kernel-server nfs-common portmap  
 ```
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831910_3784468e_757b_4394_a2b3_12c98f127ef8.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790831910_3784468e_757b_4394_a2b3_12c98f127ef8.jpg)
 
 ### 3.3 QT Environment Setup and Use
 
@@ -449,39 +449,39 @@ Extract qt-creator-opensource-linux-x86\_64-4.7.0.zip, copy qt-opensource-linux-
 
 The following interface will pop up. Click "Next" to enter the next step:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832012_310acc4f_7416_40ff_aacb_ace07767e318.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832012_310acc4f_7416_40ff_aacb_ace07767e318.jpg)
 
 Click "Next" to go to the next step:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832112_371ed81a_1b23_49c1_b4a6_6fb471f30e62.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832112_371ed81a_1b23_49c1_b4a6_6fb471f30e62.jpg)
 
 Enter the email address and password, and click "Next" to continue:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832191_5ee291ac_165c_45fe_92b6_39577337173e.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832191_5ee291ac_165c_45fe_92b6_39577337173e.jpg)
 
 Check I have read … Click "Next" to continue:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832272_d2154e64_3aac_4401_828c_4967335bbf35.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832272_d2154e64_3aac_4401_828c_4967335bbf35.jpg)
 
 In the following interface, click "Browse..." to select the installation path of Qtcreator, after the selection is complete, click "Next" to enter the next step:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832339_79675137_36a6_4771_ac9a_414dffde1444.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832339_79675137_36a6_4771_ac9a_414dffde1444.jpg)
 
 In the following interface, select the first item and click "Next" to enter the next step:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832410_d1c0d8ff_2aa9_4782_bffa_f4b78d7e1abc.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832410_d1c0d8ff_2aa9_4782_bffa_f4b78d7e1abc.jpg)
 
 Agree to the agreement and click "Next":
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832485_38c8937c_4725_4a98_ba40_33ec3430ad3f.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832485_38c8937c_4725_4a98_ba40_33ec3430ad3f.jpg)
 
 Click “Install” to install:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832612_750a7f96_fa77_4bef_be0d_dbbc577b1b2d.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832612_750a7f96_fa77_4bef_be0d_dbbc577b1b2d.jpg)
 
 After the installation is completed, the following interface will be displayed. Uncheck the option "Launch Qt Creator" "and click" Finish "to complete the installation steps of Qt Creator:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832693_0acd29e8_509a_4bcf_942f_93b7e30ac0b9.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832693_0acd29e8_509a_4bcf_942f_93b7e30ac0b9.jpg)
 
 #### 3.3.2 Environment Configuration
 
@@ -493,17 +493,17 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 Start Qt Creator, and the Qt development interface will appear. Click Tools- > option:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832767_5fa37015_5610_4822_be92_53e0c79c06c8.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832767_5fa37015_5610_4822_be92_53e0c79c06c8.jpg)
 
 Enter the Options interface, click "Kits" on the left, then click the "Compilers" tab on the top of the middle, and click "Add-> GCC-> C + +" on the right, as shown in the figure:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832838_bdc67dc6_8c39_4c93_a74d_21b29e4c586c.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832838_bdc67dc6_8c39_4c93_a74d_21b29e4c586c.jpg)
 
 In the pop-up window below, select Compiler path and click Browser to find "aarch64-linux-g + +" under/opt/aarch64-nuvoton-linux-gnu \_ sdk -buildroot/bin, select it and click Open. And change the Name to "G + +".
 
 Follow the same method to add GCC compiler, click "Add->GCC->C" on the right side, as shown in the figure:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832926_bfc11396_3b11_495d_98ea_e2ef9bcc9a42.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790832926_bfc11396_3b11_495d_98ea_e2ef9bcc9a42.jpg)
 
 Click Browser and find "aarch64-oe-linux-gcc" under/opt/aarch64-nuvoton-linux-gnu \_ sdk-buildroot/bin, select it and click Open, and change the Name to "GCC"
 
@@ -511,7 +511,7 @@ Click Browser and find "aarch64-oe-linux-gcc" under/opt/aarch64-nuvoton-linux-gn
 
 Click the Debuggers tab, the following screen will pop up, click Add:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833040_e6197663_9fc0_44c2_839a_8c5ae94450dd.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833040_e6197663_9fc0_44c2_839a_8c5ae94450dd.jpg)
 
 In the pop-up window below, click Browser under the Path option and find "aarch64-linux-gdb" under/opt/aarch64-nuvoton-linux-gnu \_ sdk -buildroot/bin, select it and click Open. And change the Name to "debuggers".
 
@@ -519,7 +519,7 @@ In the pop-up window below, click Browser under the Path option and find "aarch6
 
 Click the Qt Versions tab and click Add:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833152_16c28766_0418_426d_a322_3f5df87d56ae.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833152_16c28766_0418_426d_a322_3f5df87d56ae.jpg)
 
 Find qmake under /opt/aarch64-buildroot-linux-gnu \_ sdk-buildroot/bin. Select it and click Open. After it is added, the interface shown below is displayed. Click “Apply”.
 
@@ -527,7 +527,7 @@ Find qmake under /opt/aarch64-buildroot-linux-gnu \_ sdk-buildroot/bin. Select i
 
 Click on the "Kits" tab, then click "Add" on the right side to add a new kit. Modify the settings according to the content in the image below, and click on "Apply" afterwards.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833230_43624074_d1e8_466b_9ab3_dcbf02543982.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790833230_43624074_d1e8_466b_9ab3_dcbf02543982.jpg)
 
 ## 4\. Linux Compilation
 
@@ -607,11 +607,11 @@ If the memory capacity is 512M:
 
 The final compilation effect is shown in the following figure (the path may be different according to the actual situation):
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790834838_3159ebbf_0664_4548_a512_d26a606e56b4.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790834838_3159ebbf_0664_4548_a512_d26a606e56b4.jpg)
 
 After successful compilation, the corresponding compilation project result file will be generated in the OKMA35-linux-sdk/images folder, and the image file will be found.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790834914_cd02399e_ccb2_4431_86d1_0174106aebb1.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790834914_cd02399e_ccb2_4431_86d1_0174106aebb1.jpg)
 
 **Note: pack-image-OKMA35-S2\_emmc-sdcard.bin is used for USB full flashing, other files are used for single-step flashing.**
 
@@ -733,34 +733,34 @@ Enter/home/forlinx/Qt5.12.8/Tools/QtCreator/bin, start Qt creator：
 forlinx@ubuntu:~/Qt5.12.8/Tools/QtCreator/bin$ ./qtcreator
 ```
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835078_33028446_0582_4aad_a5f8_877f5fd99b09.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835078_33028446_0582_4aad_a5f8_877f5fd99b09.jpg)
 
 Start the Qt Creator program, enter the Qt Creator interface, click New File or Project "to create a project, and select Application-> Qt Widgets Application". Then click "Choose" in the lower right corner:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835299_f562fe3b_33c7_49ff_9ee1_d1d5e92be52f.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835299_f562fe3b_33c7_49ff_9ee1_d1d5e92be52f.jpg)
 
 In the following interface, change the name of the new project to "helloworld", select the installation path /home/forlinx, and then click "Next":
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835370_a93baa1a_b8ee_4f2f_9727_9f5bdd6d81f7.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835370_a93baa1a_b8ee_4f2f_9727_9f5bdd6d81f7.jpg)
 
 Select qmake and click Next to continue.
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835448_d33e392f_e647_41f2_ba60_2d97da640a3e.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835448_d33e392f_e647_41f2_ba60_2d97da640a3e.jpg)
 
 In the following screen, change the class name to "helloworld", select the base class to "Qwidget", and then click "Next".
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835513_fbca9cb1_42fd_4a32_b74b_d86b0a2206df.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835513_fbca9cb1_42fd_4a32_b74b_d86b0a2206df.jpg)
 
 In the following screen, select "ma35" as the kit of the current project, and then click "Next":
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835609_3fcf0d95_e495_4065_825f_ec2983c9631b.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835609_3fcf0d95_e495_4065_825f_ec2983c9631b.jpg)
 
 In the following interface, click "Finish" to complete the new project:
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835694_1eb01fd6_ddec_41ae_9da9_18db96f0a457.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835694_1eb01fd6_ddec_41ae_9da9_18db96f0a457.jpg)
 
 After the new project is created, the following window will be displayed:   
 
-![Image](./images/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835804_a99535c3_d4fd_4937_89df_f82d1f491c42.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nuvoton/ok-ma35-s21/OK-MA35-S21_Linux5_10_140_User_Compilation_Manual/1733790835804_a99535c3_d4fd_4937_89df_f82d1f491c42.jpg)
 
 When the program is completed, click the hammer icon in the lower left corner to cross-compile. Copy the compiled executable program helloworld to the development board to test the application.
