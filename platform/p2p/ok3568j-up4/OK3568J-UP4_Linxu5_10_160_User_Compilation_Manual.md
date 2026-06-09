@@ -16,7 +16,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version Version.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -24,35 +24,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the setup file to enter the installation wizard.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
 
 Click “Next.”
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
 
 Check, then click “Next.”
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
 
 Click “Install.”
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
 
 Wait for the installation to complete.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
@@ -69,23 +69,23 @@ First, download the development environment provided by Forlinx. The development
 
 Extract the Compressed File:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278548687_41fb4543_911d_4ce3_9b88_09f7fb114c01.png)
 
 After the extraction is complete, select the .vmx file as the virtual machine file to open.
 
 Open the virtual machine and choose the extracted 3588 development environment.vmx file.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface."
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 The development environment account is: **forlinx**, and the password is : **forlinx**. After entering the password, select **Sign in** to log in
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278549733_cae28152_e433_4a1e_90ab_8a2479049af5.png)
 
 ## 3\. Setting Up a New Ubuntu Development Environment
 
@@ -97,63 +97,63 @@ The development environment account is: **forlinx**, and the password is : **for
 
 Open the VMware software and click “Create a New Virtual Machine”. Enter the following interface:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 Select ''Custom'' and click ''Next.''
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Choose the compatibility for the corresponding VMware version. The version can be found under Help ->About VMware Workstation. Click ''Next.''
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 Select install the operation later and click Select ''I will install the operating system later'' and click ''Next.''
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 Keep the default settings and click ''Next.''
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 Modify the virtual machine's name and installation location, then click ''Next.''
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Set the number of processors according to your needs.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Similarly, set the memory size according to your needs. It is recommended to use 16GB.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 Choose the default LSI for the IO controller type.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 Similarly, select SCSI as the default here.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Choose to create a new virtual disk:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Set the disk size to 200GB and select the disk's format, then click 'Next' to complete.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 Specify the disk file, the default setting is fine here.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 Click ''Finish'' by default to complete.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -165,60 +165,60 @@ The installed Ubuntu version is 20.04. First, go to the official Ubuntu website 
 
 . Download the version ubuntu-20.04.6-desktop-amd64.iso.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534726_3aa57e5a_99a5_4638_a835_5b80b82fc03d.png)
 
 Right-click the Ubuntu 64-bit virtual machine that was created and select "Settings" from the context menu.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
 
 The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click "OK".
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278535793_fd516f0e_e8ab_4dee_9119_5ad4232b0450.png)
 
 Select the language on the left side and click "Install Ubuntu." A language selection screen will pop up.  
 By default, Ubuntu's language is English, but you can also select Chinese. The selected language can be changed later during the installation. Once you've selected the language, click “Continue”.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click Continue again.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Click "Install Now" by default, and a prompt will appear. Click "Continue" to proceed.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue. Finally, set up your username and password. Click Continue, and the installation will begin automatically.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278537143_ccb45ffe_9c1d_42e6_a4ae_0da143112cbf.png)
 
 The installation process is shown in the figure below. If the network is not good, you can skip it without affecting the installation.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278537449_a7f018e6_bdb2_4867_9e95_42fa1c7d2cb1.png)
 
 After the installation is completed, as shown in the following figure, click "Restart Now" Restart " (or click" Restart Client "):
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278537830_e34fbcf1_8a51_4008_af9d_7f58d0899130.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 After restarting and logging in, the system interface is as shown below:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538378_ec2e5454_98ce_4802_820d_82c55f5ae9a8.png)
 
 #### 3.1.3 Basic Configuration of Ubuntu
 
@@ -228,21 +228,21 @@ After installing the Ubuntu 20.04 operating system, some configurations need to 
 
 Next, install VMware Tools. Without this tool, you won't be able to copy and paste or drag files between the Windows host and the virtual machine. First, click on Virtual Machine in the VMware navigation bar, then select Install VMware Tools from the dropdown menu.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538688_9700b495_f48a_4190_9391_8d970fdb36ec.png)
 
 After this, go to the Ubuntu desktop, where you will see the VMware Tools disk icon. Click to open it.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278538895_1625dbb7_305b_4f49_ac94_850a3b19510e.png)
 
 Inside, you will see a compressed file named VMwareTools-10.3.10-12406962.tar.gz (the version number may vary depending on the VMware version). 
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539134_a41b7a36_aa5c_4523_a560_8cfce32569f6.png)
 
 Copy the file to the home directory (i.e., the personal username directory).
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539323_74442df4_84e4_492a_8633_8ed6f333949c.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539510_050c7a0a_ec54_4cd5_85a1_9f5e81e426fa.png)
 
 Open a terminal by pressing Ctrl + Alt + T, and use the tar command to extract the VMware Tools installation package. Use sudo to run the command (you will be prompted to enter your password. Linux passwords do not show any feedback when typed, so ensure the password is correct and press Enter to confirm).
 
@@ -281,13 +281,13 @@ Do you still want to proceed with this installation? [no] yes			//输入yes
 
 After installation, VMware Tools will enable file copy/paste between Windows and Ubuntu, as well as full-screen adjustments for the virtual machine. If the virtual machine is not displaying in full-screen mode, click View, select Auto-resize guest display, and choose Fit Guest Now to solve the full-screen issue. This means VMware Tools has been successfully installed.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539710_8c366a71_823a_4180_8309_32189be7ce07.png)
 
 + **Basic Configuration:**
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 #### 3.1.4 Network Configuration of Ubuntu
 
@@ -295,31 +295,31 @@ Most system settings can be configured in the location shown in the figure. Many
 
 Before using the network, make sure that your virtual machine can connect to the internet. Open the virtual machine settings, and change the network adapter's network bridging mode to NAT Mode:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. 
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1.png)
 
 The network is set to dynamic IP.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 + **Bridge Mode：**
 
 If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode. When Vmware virtual network card is set to bridged mode, the host network card and the virtual machine network card communicate through a virtual bridge, and you need to ensure that the IP address of Ubuntu is in the same subnet as the host machine.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
 
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1_1775204326815.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1_1775204326815.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
@@ -327,13 +327,13 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.0, then click OK. As shown below, most modern computers support USB 3.0 ports. If not configured, the USB 3.0 device will not be connected to the virtual machine when inserted. As shown in the figure:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 After the virtual machine starts, insert the USB flash drive. An icon similar to a "USB drive" will appear in the lower-right corner of the virtual machine. Right-click it and select Connect. Then, you should see a new directory in the file system, indicating that the USB drive has been successfully loaded, as shown below:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
 #### 3.1.6 Basic Library Installation for the Virtual Machine
 
@@ -398,37 +398,37 @@ Copy the file qt-creator-opensource-linux-x86\_64-4.7.0.run to any directory in 
 forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run                   
 ```
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542788_a08554d9_9ff7_485a_a499_6a5b274fd48f.png)
 
 This will open a graphical installation window. Follow the prompts to install:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)		 
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)		 
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 Online users need to register for a Qt account. Existing Qt account holders can log in directly. The Qt password requires a mix of uppercase letters, lowercase letters, and numbers. After registering and logging in successfully, click Next.
 
 Offline users can click Skip.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
 
 Click “Next”:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 You can set the installation path according to your preferences; here use the default here. Click "Next".
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
 Choose Complete Installation and click "Next".
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
 
 Click Install and wait for the installation to complete.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
 
 After installation, click Finish. The Qt interface will automatically open, or you can launch it from the command line. To open Qt Creator in the background, use the following command, replacing it with your actual installation path:
 
@@ -437,7 +437,7 @@ forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 forlinx@ubuntu:~$ ./qtcreator &
 ```
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -530,11 +530,11 @@ forlinx@forlinx-ubuntu:~/work/3568/OK3568_Linux_fs$ ./build.sh
 
 The final compilation result will look like the image below (paths may vary based on the actual situation).
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278519464_b89aebf0_bcc5_4f08_85d7_7a0e0cea8f6a.png)
 
 After compilation, corresponding build files will be generated in the OK3568\_Linux\_fs/rockdev folder. You can find the image files there.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278519744_a17e751c_a98e_4d42_baa3_928eee7838b6.png)
 
 **Note:  **
 
@@ -586,7 +586,7 @@ After compilation, the kernel in update.img will not be updated. Flash the boot.
 
 - **If the graphical configuration doesn't take effect after booting the development board, you can use one of the following methods to resolve it:**  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278519952_52a94c0e_c1cd_4712_ace8_93361052f010.png)
 
 Method 1: Directly write the configuration to the kernel default configuration file: /OK3568\_Linux\_fs/kernel/arch/arm64/configs/OK3568-C-linux\_defconfig.  
 
@@ -597,11 +597,11 @@ forlinx@ubuntu: ~/3568/OK3568_Linux_fs$ ./build.sh kernel
 
 Method 2: Use the graphical interface to configure the kernel, and comment out the command in source/device/rockchip/common/scripts/mk-kernel.sh.  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1729748971129_8aaac971_6fc6_46b9_82b1_07ec208f8250.png)
 
 Edit the kernel/Makefile file.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1729748796793_7588d772_02d0_4b6e_a597_68abe1e049a6.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/kernel$ make ARCH=arm64 menuconfig
@@ -633,7 +633,7 @@ Choose 'y' to indicate that you want to overwrite the previous `.config` file.
 
 Method 2: Use the graphical interface to configure Buildroot, and comment out the corresponding command in device/rockchip/common/scripts/mk-buildroot.sh.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1729133678368_3f66e00b_a5eb_4e60_9d18_12bfe4052b4b.png)
 
 ```plain
 forlinx@ubuntu: ~/3568/OK3568_Linux_fs/buildroot/output/OK3568$ make menuconfig
@@ -696,11 +696,11 @@ Qt is a cross-platform graphics development library that supports multiple opera
 
 **Note: The output directory under Buildroot must be generated after full compilation.**  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278520399_97607db9_0b25_4da5_a25f_627035faf646.png)
 
 4. Add the GCC C++ compiler in the same way by clicking Add -> GCC -> C++. As shown below:
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278520769_d05d050c_d4eb_41fe_8191_f158b073c500.png)
 
 #### 4.4.2 Qt Versions Configuration
 
@@ -710,7 +710,7 @@ Qt is a cross-platform graphics development library that supports multiple opera
 
 3. Click Open to add it;
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521034_d7cf7714_3105_4689_9683_c4a8ed6c6efd.png)
 
 4. Return to the Qt Version configuration window, and you can change the Version name;
 
@@ -728,7 +728,7 @@ Kits are used to build and select the development environment for compiling proj
 
 4. Select the Qt version that you entered in the previous step; 
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521412_b439e3bd_e015_4425_affc_02a52c66f43c.png)
 
 5. Click "Apply and OK."
 
@@ -778,26 +778,26 @@ Watchdog Ticking Away!
 
 In the development environment, open Qt Creator (open according to your actual path). Click File -> Open File or Project, then select /3568/OK3568\_Linux\_fs/app/forlinx/forlinx\_qt/watchdog/watchdog.pro.  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521691_446f0d66_a6de_4eb4_b2b9_adbac3c23ffb.png)
 
 After opening the project, the interface should appear as shown. If the page doesn't change automatically, follow the screenshot instructions.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278521907_882537ff_aab0_4987_a170_8c64515f8de1.png)
 
 Click Configure Project, which will adapt to the compilation environment built in the "Qt Creator Environment Configuration" section.  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278522180_76d20235_a09d_4dff_9cb2_0135a93d5442.png)
 
 Then click Build -> Clean All to clean up the previous build files.  
 (If intermediate files are not cleaned, you can delete them manually.)  
 Uncheck Shadow build in the Projects section.  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278522421_8c6a5ab7_a9ce_4a72_88be_0902f222e58d.png)
 
 Click Build -> Build All to compile.  
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278522722_eccde718_c389_4662_ba54_bad05baaceb2.png)
 
 Once the build progress bar completes, the new executable file fltest\_qt\_watchdog will be located in the /app/forlinx/forlinx\_qt/watchdog directory.
 
-![Image](./images/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linxu5_10_160_User_Compilation_Manual/1719278523014_cd2cfd24_0659_4cda_be02_d2ebfe309ef1.png)
