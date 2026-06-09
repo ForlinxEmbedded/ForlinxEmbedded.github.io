@@ -43,7 +43,7 @@ The i.MX 93 series represents NXP’s latest power‑optimized processors, desig
 
 **i.MX 93 Processor**
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_17_18_01_48.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_17_18_01_48.png)
 
 ****
 
@@ -54,15 +54,15 @@ The i.MX 93 series represents NXP’s latest power‑optimized processors, desig
 
 **Front**
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/684a96b46529a400013adcf4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/684a96b46529a400013adcf4.png)
 
 **Back**
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93UP4V_1_1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/93UP4V_1_1.png)
 
 ### 2.2 FET-MX93xx-UP4 SoM Dimension Diagram
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_09_44_57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_09_44_57.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -157,11 +157,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 UP4 SoM Pin Schematic
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_14.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_14.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_28.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_20_10_35_34.png)
 
 #### 2.5.2 UP4 SoM Pin Function Description
 
@@ -313,13 +313,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/93.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/93_UP4_note_book.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/93_UP4_note_book.jpg)
 
 ### 3.2 OK-93xx-UP4 Development Board Dimension Diagram
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_09_18_25_23.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_09_18_25_23.png)
 
 PCB: 130mm×190mm
 
@@ -331,7 +331,7 @@ Power Voltage: DC 12V
 
 The OK-MX93xx-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2026_03_11_11_20_44.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2026_03_11_11_20_44.png)
 
 ### 3.3 Naming Rules
 
@@ -405,7 +405,7 @@ As shown, the power supply for the development board is 12V DC（from p28). VDD\
 
 PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_09_19_15_30_59.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_09_19_15_30_59.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -419,13 +419,13 @@ K6 on the carrier board is for waking up. After the board enters sleep mode pres
 
 The FET-MX93xx-UP4 SoM does not have the WAKEUP feature.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_16_56_44.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_16_56_44.png)
 
 #### 3.5.3 LRADC Button
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10kΩ resistor on the SoM.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/104742.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/104742.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -433,9 +433,9 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 The FET-MX93xx-UP4 SoM is equipped only with the DEBUG\_A and DEBUG\_M debug interfaces
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/110047.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/110047.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/110110.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/110110.png)
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
@@ -443,7 +443,7 @@ The FET-MX93xx-UP4 SoM is equipped only with the DEBUG\_A and DEBUG\_M debug int
 
 The carrier board features a single JTAG debugging interface for debugging the x core.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_05_38.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_05_38.png)
 
 #### 3.5.6 BOOT
 
@@ -451,21 +451,21 @@ There are two BOOT options on the carrier board, allowing the system to boot fro
 
 The FET-MX93xx-UP4 SoM supports only two boot methods: eMMC and TF.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/174515.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/174515.png)
 
 #### 3.5.7 RTC
 
 An RTC device is connected to the carrier board via the I2C\_A bus. It enables a compatible power supply from either VCC\_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/114208.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/114208.png)
 
 #### 3.5.8 TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card comes from the VCC\_3V3\_SD output of the SoM.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/093650.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/093650.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/094829.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/094829.png)
 
 **Note:** 
 
@@ -479,7 +479,7 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilises the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/103014.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/103014.png)
 
 #### 3.5.10 LVDS Display
 
@@ -487,39 +487,39 @@ The pin header P1 on the development board can be connected to the LVDS display 
 
 It supports 2\*4 lane LVDS connection, and I2C port touch screen.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_07_12.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_07_12.png)
 
 #### 3.5.11 LCD-RGB888
 
 Pin P4 on the development board is the LCD interface; it is an FPC socket that can be connected to an LCD screen and supports capacitive touchscreens.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_08_21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_08_21.png)
 
 #### 3.5.12 Resistive Touchscreen
 
 If a resistive touchscreen is required, a resistive touch circuit can be added and connected to pins 1, 2, 3 and 4 of the P4 (LCD interface).
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/111914.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/111914.png)
 
 #### 3.5.13 MIPI\_DSI
 
 The P11 on the development board is MIPI\_DSI port, supporting 4 Lane MIPI\_DSI.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/114926.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/114926.png)
 
 #### 3.5.14 MIPI\_CSI
 
 There is 1 x FPC socket (P7) on the development board for connecting a MIPI-CSI camera. It features a pitch of 0.5mm, a flip-down cover, and supports a 2-lane MIPI-CSI connection.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/150957.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/150957.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/163045.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/163045.png)
 
 #### 3.5.15 WiFi \& BT
 
 There is an onboard WiFi module (AW-CM358SM). The WiFi module features an SDIO interface, operates on dual bands of 2.4GHz and 5GHz, and complies with the IEEE 802.11a/b/g/n/ac standards. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_18_05.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_18_05.png)
 
 #### 3.5.16 USB2.0
 
@@ -529,9 +529,9 @@ In addition, a group of onboard USB2.0 HOST interfaces is led out from the SoM, 
 
 Another USB2.0 interface is connected to the standard interface of USB3.0-A, which supports master-slave switching.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_21_24.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_21_24.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_21_37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_21_37.png)
 
 #### 3.5.17 4G
 
@@ -541,21 +541,21 @@ P20 is a nano SIM card slot, which is self-ejecting. Pay attention to the insert
 
 Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/114400.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/114400.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/114420.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/114420.png)
 
 #### 3.5.18 Ethernet
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521sh chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/144123.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/144123.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/144249.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/144249.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_17_16_09_52.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_17_16_09_52.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/144725.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/144725.png)
 
 #### 3.5.19 CAN
 
@@ -563,43 +563,43 @@ The development board supports two native 1000m network ports, which are realize
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_28_47.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_28_47.png)
 
 #### 3.5.20 GPADC
 
 The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/161310.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/161310.png)
 
 #### 3.5.21 UART
 
 1 x five-wire UART is routed from the development board and powered by a 3.3V signal.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/165334.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/165334.png)
 
 #### 3.5.22 IO Expansion
 
 An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/114511.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/114511.png)
 
 #### 3.5.23 Audio
 
 A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_42_14.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_42_14.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_42_29.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_06_18_17_42_29.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Image_20251205101513.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Image_20251205101513.png)
 
 To ensure a high weld yield, please refer to the diagram below for the design of the packaging stencil:
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Image_20251208142354.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Image_20251208142354.png)
 
 I. Hole Opening Scheme
 
@@ -607,15 +607,15 @@ I. Hole Opening Scheme
 
 2. As shown in the figure below, the thickness of the steel mesh of the LCC pad around the carrier board is 0.15 mm, and the opening method is as shown in the figure, with width of 0.6 mm, length of 2.15 mm outward expansion and 0.3 mm inward contraction. The step range is shifted out 0.7 mm from the root to minimize the impact on the LGA pad.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/pic1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/pic1.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/pic2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/pic2.png)
 
 3. The opening thickness of the LGA pad in the middle is 0.1mm. The opening mode of the two rows of LGA pads on the left and right sides in the direction of the scraper is a round hole with a diameter of 0.5mm. The opening of the other LGA pads is as shown in the following figure. The opening diameter is 0.7 mm. The bridge with a width of 0.15 mm is set at the center of 45 °. The bridge center is a round indent with a diameter of 0.25 mm.
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/pic3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/pic3.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/pic4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/pic4.png)
 
 **Note:**
 
@@ -653,14 +653,14 @@ I. Hole Opening Scheme
 
 There are SoM, BOOT, power, debug serial port, system image flashing port. 
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_09.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_09.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_24.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_24.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_12_23_11_48_37.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_09_19_15_30_59.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/Snipaste_2025_09_19_15_30_59.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/162314.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/162314.png)
 
-![Image](./images/OK-MX9352-UP4_User_Hardware_Manual/162334.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/162334.png)
