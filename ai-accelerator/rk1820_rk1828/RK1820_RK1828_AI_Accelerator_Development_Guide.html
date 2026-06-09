@@ -604,26 +604,26 @@ python<span class="w"> </span>export_llm.py<span class="w">  </span>--quant<span
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.onnx</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">export_llm.py</span></code></p></td>
+<tr class="row-even"><td><p>.onnx</p></td>
+<td><p>export_llm.py</p></td>
 <td><p>Model architecture and weights</p></td>
 <td><p>No</p></td>
 <td><p>Intermediate product, input for <code class="docutils literal notranslate"><span class="pre">export_rknn.py</span></code> conversion.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.config.pkl</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">export_llm.py</span></code></p></td>
+<tr class="row-odd"><td><p>.config.pkl</p></td>
+<td><p>export_llm.py</p></td>
 <td><p>LLM architecture config (<code class="docutils literal notranslate"><span class="pre">vocab_size</span></code>, <code class="docutils literal notranslate"><span class="pre">hidden_size</span></code>, <code class="docutils literal notranslate"><span class="pre">chat_template</span></code>, etc.)</p></td>
 <td><p>No</p></td>
 <td><p>Intermediate product, required by <code class="docutils literal notranslate"><span class="pre">load_llm</span></code> in <code class="docutils literal notranslate"><span class="pre">export_rknn.py</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.tokenizer.gguf</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">export_llm.py</span></code></p></td>
+<tr class="row-even"><td><p>.tokenizer.gguf</p></td>
+<td><p>export_llm.py</p></td>
 <td><p>Tokenizer (vocabulary + merge rules, GGUF format)</p></td>
 <td><p><strong>Yes</strong></p></td>
 <td><p>Converts text to token ID on the device side.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.embed.bin</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">export_llm.py</span></code></p></td>
+<tr class="row-odd"><td><p>.embed.bin</p></td>
+<td><p>export_llm.py</p></td>
 <td><p>Embedding layer weights (FP16)</p></td>
 <td><p><strong>Yes</strong></p></td>
 <td><p>Token → embedding executed on the host side (OK3588-C board) due to limited RK182X DRAM, not on the coprocessor.</p></td>
