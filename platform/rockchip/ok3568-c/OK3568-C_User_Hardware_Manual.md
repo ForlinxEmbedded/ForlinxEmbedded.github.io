@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -82,7 +82,7 @@ The RK3568 supports five types of display interfaces, namely HDMI2.0, eDP, LVDS,
 
 **RK3568 Series Block Diagram**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720057089524_621b13ae_d324_4cf3_ac91_0a649076a0c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720057089524_621b13ae_d324_4cf3_ac91_0a649076a0c1.png)
 
 ## 2\. FET3568-C\&C2 SoM Description
 
@@ -92,21 +92,21 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **FET3568-C SoM**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055811011_982c1cc1_28c1_48de_8804_e652ac6eb636.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055811011_982c1cc1_28c1_48de_8804_e652ac6eb636.png)
 
 **Front**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055811708_fa436e60_f73b_46b6_a35a_61b622779042.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055811708_fa436e60_f73b_46b6_a35a_61b622779042.png)
 
 **Back**
 
 **FET3568-C2 SoM**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055812226_055763b0_79c6_42cb_8691_d626bbf1a8ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055812226_055763b0_79c6_42cb_8691_d626bbf1a8ef.png)
 
 **Front**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1.png)
 
 **Back**
 
@@ -116,7 +116,7 @@ The pin definitions of the connectors for the FET3568-C/FET3568J-C and FET3568-C
 
 **Front, Top, Perspective**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055813597_4d529188_7fef_4a33_8a7b_be5adc068455.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055813597_4d529188_7fef_4a33_8a7b_be5adc068455.png)
 
 **FET3568-C2 SoM Dimension Diagram**
 
@@ -134,9 +134,9 @@ Four mounting holes (2.2mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the design of the development board and use M2, L=2mm patch nuts on the carrier board. The fixed screw specifications used between the SoM and the carrier board are M2, L=4mm. The specifications of the patch nuts are shown in the following figure:
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055814219_26674965_242f_4a82_9c44_743672b7717c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055814219_26674965_242f_4a82_9c44_743672b7717c.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055814420_353fd943_ed70_45df_8c14_83919a1deea6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055814420_353fd943_ed70_45df_8c14_83919a1deea6.png)
 
 ### 2.3 Performance Parameters
 
@@ -225,13 +225,13 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 **The multiplexing relationships of the 3 groups of SerDes are illustrated in the following diagram:**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055814650_80c626c6_c591_4273_a70b_b9c301d7e7cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055814650_80c626c6_c591_4273_a70b_b9c301d7e7cb.png)
 
 ****
 
 **The RK3568 chip has a built-in VOP controller with three Port outputs, that is, the SoM can support up to three display outputs at the same time. The VOP and video interface output paths are shown in the following figure:**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055814977_2715ef71_89f4_45b6_9cd0_c478644d9053.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055814977_2715ef71_89f4_45b6_9cd0_c478644d9053.png)
 
 ****
 
@@ -241,13 +241,13 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 #### 2.5.1 FET3568-C/C2 SoM Pins Schematic
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055815350_281be05b_aa10_411d_a1c4_fac875ede454.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055815350_281be05b_aa10_411d_a1c4_fac875ede454.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055815662_0279c640_4e3e_44c2_a28f_9b2f757ae97e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055815662_0279c640_4e3e_44c2_a28f_9b2f757ae97e.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055815963_a74b25c0_0c5b_4a1b_ada2_0986512bbfc0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055815963_a74b25c0_0c5b_4a1b_ada2_0986512bbfc0.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055816273_8b778d3a_edc5_4564_add2_8292135341d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055816273_8b778d3a_edc5_4564_add2_8292135341d2.png)
 
 #### 2.5.2 FET3568-C/C2 SoM Pins Description
 
@@ -639,7 +639,7 @@ Please refer to the design of the development board and use M2, L=2mm patch nuts
 
 The **FET3568-C/C2** SoM integrates the power supply, reset monitoring circuit, and memory circuitry into a compact module. The required external circuitry is minimal. To build a basic system, only a 5V power supply, a reset button, and the boot configuration are needed for operation, as shown in the figure below:
 
-![Image](./images/OK3568-C_User_Hardware_Manual/5829ba0973ce6a84216018797d3261c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/5829ba0973ce6a84216018797d3261c.png)
 
 The schematic of the minimal system can be found in Appendix 4. In general usage, it is recommended to connect additional external devices beyond the minimal system, such as:
 
@@ -652,7 +652,7 @@ After implementing these basic functions, additional user-required features can 
 
 This product uses **M2 anti-fall screws** to secure the four pre-drilled mounting holes at the corners of the SoM. The tightening torque should be controlled at **0.15 N·m**. The assembly illustration is shown below.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/image_20251121110742356.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/image_20251121110742356.png)
 
 The design has been validated through vibration testing in accordance with **GB/T 2423.10-2008 / IEC 60068-2-6:1995**, achieving the following specifications:
 
@@ -671,11 +671,11 @@ FET3568-C and FET3568-C2 SoM have the same pin definition and can share a common
 
 The connection between SoM and the carrier board is board-to-board, and the main interfaces are shown as follows:
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055883947_faf5d185_e74b_4f7f_8681_812d14c0793f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055883947_faf5d185_e74b_4f7f_8681_812d14c0793f.jpeg)
 
 **Front**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055884357_c2893879_6d7c_42ec_9494_531f2ae04d86.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055884357_c2893879_6d7c_42ec_9494_531f2ae04d86.jpeg)
 
 **Back**
 
@@ -683,7 +683,7 @@ The connection between SoM and the carrier board is board-to-board, and the main
 
 OK3568-C/ C2C development board and antenna board are as follows:
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055884688_12e11c0e_1fad_4fee_aedb_6677bc501623.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055884688_12e11c0e_1fad_4fee_aedb_6677bc501623.png)
 
 Carrier board PCB size: 155mm × 155mm. For more detailed dimensions, please refer to the user information DXF file;
 
@@ -697,7 +697,7 @@ The antenna board is used for the installation and fixation of 4G and 5G antenna
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -760,13 +760,13 @@ A B-C+D E F :G-H
 
 #### 3.5.1 Carrier Board Power
 
-![Image](./images/OK3568-C_User_Hardware_Manual/5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/5.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/6.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/7.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/8.png)
 
 As shown in the figure, a 12V adapter provides power to the development board through the P34 power connector. VCC12V is stepped down to VDD5V via U24, supplying power to the SoM. After the SoM is powered on, it outputs the EMMC_BOOT signal, which controls the power-on of the carrier board VCC5V.
 
@@ -779,7 +779,7 @@ If the S1 DIP switch is removed due to structural requirements, you can solder r
 
 #### 3.5.2 Keys
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360607997_db8b99e6_922c_42cf_8e13_87767e5cd68f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360607997_db8b99e6_922c_42cf_8e13_87767e5cd68f.png)
 
 As shown in the figure, RESETn is the system reset button. Pressing it will cause the development board to power down and reset. RK809 \_ PWRON is the power on/off key. Short press it to enter the sleep state, and then short press it to wake up the system. Long press, the system shuts down. 
 
@@ -803,19 +803,19 @@ There are three methods for flashing the development board:
 
 3\. Before powering on, insert the prepared TF card for flashing into the OK3568-C carrier board, then power on to enter TF card flashing mode;
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360654539_6941aa73_4931_4278_8eb3_c5cd9db0216d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360654539_6941aa73_4931_4278_8eb3_c5cd9db0216d.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360753557_f6c67e57_cf88_404a_906a_f23b26a28f11.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360753557_f6c67e57_cf88_404a_906a_f23b26a28f11.png)
 
 Currently, the development board does not support FSPI Flash booting. Please do not connect storage devices to the FSPI controller to avoid system boot abnormalities. If users need to use the FSPI booting method, please contact a software engineer for configuration modifications.
 
 #### 3.5.4 Debugging Serial Port
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360803353_1ef632a3_bc65_4052_840f_84217619c88b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360803353_1ef632a3_bc65_4052_840f_84217619c88b.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360828353_438a0c68_e585_4eee_acba_7d2aa87018d3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360828353_438a0c68_e585_4eee_acba_7d2aa87018d3.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360842636_e4cd0f55_2283_402f_888e_b365a6e9511e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360842636_e4cd0f55_2283_402f_888e_b365a6e9511e.png)
 
 UART2 serves as the debug serial port for the SoM, with its TTL level signals routed through P19. For the convenience, the development board employs a USB-to-serial chip CP2102 to convert the debug serial port to a USB Type C interface.
 
@@ -833,13 +833,13 @@ You can also prepare your own UART-to-serial conversion cable for the computer s
 
 #### 3.5.5 General Serial Ports
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361016509_d3831f01_30f5_4b21_bbbc_22de0af28a41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361016509_d3831f01_30f5_4b21_bbbc_22de0af28a41.png)
 
 As shown in the figure above, the UART3/4/5 are functionally multiplexed with the LCD pins, which are led out through the carrier board P7 2.54 mm double row of pins.
 
 #### 3.5.6 CAN
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360942167_37104b20_47de_43e9_a9ac_f046ac7ff7f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360942167_37104b20_47de_43e9_a9ac_f046ac7ff7f4.png)
 
 The development board provides 2 x CAN with a maximum speed of 1 Mbps, 1500 VDC electrical isolation, and Level 4 electrostatic protection.
 
@@ -849,7 +849,7 @@ P23 and P41 wiring terminals are led out, and it is recommended to ground the eq
 
 #### 3.5.7 FSPI
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721360978145_66243adf_9c69_45e6_a731_400d63b8a704.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721360978145_66243adf_9c69_45e6_a731_400d63b8a704.png)
 
 The development board provides 1 x FSPI interface, which can be externally connected with NOR FLASH chip.
 
@@ -859,15 +859,15 @@ By default, when the SoM starts from the eMMC, the FSPI \_ D2 signal line is not
 
 #### 3.5.8 SPI
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361030745_191edf38_e6c4_43e5_9b98_6be1774c8338.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361030745_191edf38_e6c4_43e5_9b98_6be1774c8338.png)
 
 As shown in the figure above, SPI0 and SPI2 are multiplexed with the LCD pin function and are led out through a P7 2.54 mm pitch double row of pins.
 
 #### 3.5.9 TF Card
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361131738_97339069_a56c_477d_9a22_ffe54fea9658.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361131738_97339069_a56c_477d_9a22_ffe54fea9658.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361183973_ac8d4047_20c9_45aa_9544_1442f2ab9d83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361183973_ac8d4047_20c9_45aa_9544_1442f2ab9d83.png)
 
 As shown in the figure above, the TF Card of the development board is the SD0 channel of the CPU, which supports the TF card of UHS-I up to 104MB/s.
 
@@ -893,7 +893,7 @@ It supports the x 2 lane + x2 lane mode. The data of MIPI\_CSI\_RX\_D\[1:0] refe
 
 The MIPI \_ CSI on the development board is x4 lane mode, which is led out through P16 and can be connected to the OV13850 camera module.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361222187_99c0dabf_4d0b_4e3d_b736_e1f192d65881.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361222187_99c0dabf_4d0b_4e3d_b736_e1f192d65881.png)
 
 **Note:**
 
@@ -904,7 +904,7 @@ The MIPI \_ CSI on the development board is x4 lane mode, which is led out throu
 
 The SoM supports 2 x MIPI DSI. Among them, MIPI\_DSI0 is used for LVDS output, and MIPI\_DSI1 is output through the P6 terminal. Its maximum output resolution can reach 1920\*1080@60Hz. It is suitable for the 7-inch MIPI screen of Forlinx by default, and supports screen brightness adjustment and capacitive touch.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361306457_49b7529b_0e0e_40d4_a1c6_49edd3bffff4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361306457_49b7529b_0e0e_40d4_a1c6_49edd3bffff4.png)
 
 **Note:** 
 
@@ -916,13 +916,13 @@ The SoM supports 2 x MIPI DSI. Among them, MIPI\_DSI0 is used for LVDS output, a
 
 The MIPI\_DSI0 led out from the SoM is a MIPI\_DSI\_TX0 and LVDS\_TX Combo PHY. The development board uses it for LVDS output, which is led out through the P11 terminal. The pin - to - pin spacing is 2.0mm, and it can be adapted to the Forlinx 10.1 - inch LVDS screen, supporting screen brightness adjustment and capacitive touch.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361350129_0dad6cff_7fab_430d_8ab4_c634092e4a5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361350129_0dad6cff_7fab_430d_8ab4_c634092e4a5b.png)
 
 **Note: For LVDS, the data and clock lines need to be of equal length, and the differential impedance should be controlled at 100Ω.**
 
 #### 3.5.13 HDMI Interface
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721361391040_ca594c65_f3f6_43c5_a596_d96ea7838049.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721361391040_ca594c65_f3f6_43c5_a596_d96ea7838049.png)
 
 As shown in the figure above, 1 x HDMI is led out through P5 on the carrier board, supporting HDMI 2.0 with a display resolution up to 4096\*2160@60. The HDMI circuit includes a level - conversion circuit. Please refer to the development - board design.
 
@@ -936,7 +936,7 @@ As shown in the figure above, 1 x HDMI is led out through P5 on the carrier boar
 
 #### 3.5.14 eDP Interface
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443569487_25ef0f31_a725_4457_ad6f_6d18d0ecff58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443569487_25ef0f31_a725_4457_ad6f_6d18d0ecff58.png)
 
 There is an eDP interface on the development board, which is led out through the P8 terminal and is adapted to the Forlinx 10.1 - inch eDP screen. The backlight of the screen is provided by the P9 terminal.
 
@@ -948,15 +948,15 @@ The 3.5mm audio socket P32 is designed according to the CTIA standard. If an OMT
 
 The maximum power of the Speaker is 1.3W (8Ω). If you need to connect an external larger power amplifier, you can only obtain the signal from the headphone socket, not from the speaker interface.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443606989_f0ef7912_e4c9_4be1_b2fe_14745f9a9fac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443606989_f0ef7912_e4c9_4be1_b2fe_14745f9a9fac.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443639643_6e732654_e63b_45e8_9330_2ca72ef6acbb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443639643_6e732654_e63b_45e8_9330_2ca72ef6acbb.png)
 
 **Note:** 
 
 - **HP\_SNS serves as an internal offset reference. This pin needs to be externally connected to GND for reference. When HPOUT is used as LINEOUT to connect an external power amplifier, HPSNS can be grounded near RK809 - 5. In the case of headphone output, HPSNS needs to be routed separately to the headphone socket and connected to GND to reduce the level difference with the headphone GND. When routing, it should be routed between HPR/HPL to avoid interference from other signals. The routing is shown in the figure below;**
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055887569_933f811a_4b95_438a_a176_593a576f8132.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055887569_933f811a_4b95_438a_a176_593a576f8132.png)
 
 - **In addition, ESD devices need to be added to HPR\_OUT and HPL\_OUT to enhance the anti - static ability;**
 
@@ -969,17 +969,17 @@ The maximum power of the Speaker is 1.3W (8Ω). If you need to connect an extern
 
 #### 3.5.16 4G/5G
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443709979_e93f1b08_3068_4b5d_b929_f345590e38c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443709979_e93f1b08_3068_4b5d_b929_f345590e38c1.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443879846_b2fdfe6d_e6c8_4422_a798_4127b37b80e3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443879846_b2fdfe6d_e6c8_4422_a798_4127b37b80e3.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443891826_5312d1c6_4016_45e5_806d_e1f94ff019be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443891826_5312d1c6_4016_45e5_806d_e1f94ff019be.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443797850_c8151e04_dbf8_4cdb_972b_fd9e789a4b44.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443797850_c8151e04_dbf8_4cdb_972b_fd9e789a4b44.png)
 
 The development board can be externally connected with either a 4G module or a 5G module (choose one of the two). It supports the use of 4G/5G modules with an M.2 B-key socket. By default, the Quectel EM05 or RM500U modules are used. When you opt for Forlinx optional 4G module EM05, just connect the two provided 4G antennas to the Main and Rx-diversity ports.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720055888088_bd9ec9ad_be89_4b81_8888_b253dd01172f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720055888088_bd9ec9ad_be89_4b81_8888_b253dd01172f.png)
 
 The 4G and 5G modules share a DCDC power supply and a SIM card holder. Please install the module first and then power on the development board.
 
@@ -989,7 +989,7 @@ The RM500U is prone to unstable connections when operating at a low supply volta
 
 #### 3.5.17 WiFi\&Bluetooth
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443952450_53dc291d_f1e5_4920_89d3_133ab5031db3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443952450_53dc291d_f1e5_4920_89d3_133ab5031db3.png)
 
 Development board onboard WIFI\&BT module set, default welding AW-CM358SM, WLAN: IEEE 802.11 a/b/g/n/ac dual-band WIFI, up to 433.3 Mbps transceiver rate; Bluetooth: Bluetooth 5, up to 3Mbps speed. To enhance signal quality, use a 2.4 \& 5GHz dual-band antenna.
 
@@ -1005,7 +1005,7 @@ AW - CM358SM needs to configure registers through the SDIO bus. Even if only the
 
 #### 3.5.18 PCIE2.1 Interface
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721443996809_7c8a7bad_375b_4f02_a274_4d3197b3be0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721443996809_7c8a7bad_375b_4f02_a274_4d3197b3be0c.png)
 
 The development board supports one PCIE 2.1 X1 interface, which is led out through a PCIE X1 standard adapter card socket, making it convenient for you to connect various PCIE devices.
 
@@ -1027,7 +1027,7 @@ Since PCIE devices do not support hot - plug and have high requirements for powe
 
 #### 3.5.19 PCIE3.0 Interface
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444036958_2ebceff6_2dce_4689_a51a_c48e6ee33d89.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444036958_2ebceff6_2dce_4689_a51a_c48e6ee33d89.png)
 
 The development board supports one PCIE 3.0 X2 interface, which is led out through a PCIE X4 standard adapter card socket, making it convenient for you to connect various PCIE devices.
 
@@ -1047,7 +1047,7 @@ Since PCIE devices do not support hot - plug and have high requirements for powe
 
 #### 3.5.20 USB HOST Interface
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444072549_68827f9e_6296_4136_b8b7_acf37827ca31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444072549_68827f9e_6296_4136_b8b7_acf37827ca31.png)
 
 The development board provides two USB2.0 interfaces, which are led out through the USB Type-A socket with A current limit of 0.5A.
 
@@ -1059,7 +1059,7 @@ The development board provides two USB2.0 interfaces, which are led out through 
 
 #### 3.5.21 USB3.0 Interface
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444105086_2e1a3497_a4b7_4715_b5cc_09e0f1ad34a8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444105086_2e1a3497_a4b7_4715_b5cc_09e0f1ad34a8.png)
 
 As shown in the figure above, the USB 2.0 signal line in the USB3.0 interface is multiplexed with the download interface. Before the SoM is started, the USB3.0 OTG defaults to the device mode. When the USB 2.0 signal line is used to flash the image, the USB-TYPE-C line is connected to the P13 socket of the development board. There is no need to configure the ID pin. Press and hold the K2/K8 button and power on to enter the recovery/maskrom mode programming system.
 
@@ -1079,9 +1079,9 @@ After the SoM starts, you can switch between the host and device modes through S
 
 The development board supports 2 x Ethernet with 10/100/1000Mbps adaptive speed, which are led out through P14 and P15 respectively.
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444165974_c48e096d_0e75_4a6b_a64a_ca6b216abef0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444165974_c48e096d_0e75_4a6b_a64a_ca6b216abef0.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444187332_cd1ce4b1_a430_4224_ae43_5bfbf2da6358.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444187332_cd1ce4b1_a430_4224_ae43_5bfbf2da6358.png)
 
 **Note:**
 
@@ -1109,13 +1109,13 @@ The development board supports 2 x Ethernet with 10/100/1000Mbps adaptive speed,
 
 #### 3.5.23 LED
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444245770_e76ffa48_3ac1_42d3_8fc2_a7e712405ee6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444245770_e76ffa48_3ac1_42d3_8fc2_a7e712405ee6.png)
 
 The development board is designed with two LED lights, which are multiplexed with the LCD pins. You can customize their functions.
 
 #### 3.5.24 RTC
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444271391_8e840141_6da4_49a3_887e_0b738f582dd1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444271391_8e840141_6da4_49a3_887e_0b738f582dd1.png)
 
 As shown in the figure above, the carrier board is externally connected to the RTC device through I2C3, and the VCC3V3 and the button battery are compatible for power supply through D4, that is, after the carrier board is powered off, the button battery can maintain power supply for the RTC chip. The hardware is designed to be compatible with both RX8010SJ and PCF8563T/5. When using PCF8563T/5, pay attention to connect the OSCO pin to the external capacitor for empty soldering, otherwise, the probability that the time is not saved may occur.
 
@@ -1123,7 +1123,7 @@ As shown in the figure above, the carrier board is externally connected to the R
 
 #### 3.5.25 ADC
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444298143_9825bcc2_56e1_4a51_8e05_cf4cca3823e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444298143_9825bcc2_56e1_4a51_8e05_cf4cca3823e0.png)
 
 There are 8 x ADC with a sampling range of 0-1.8 V and a sampling resolution of 10 bits. ADC\_VIN0 is used as the key - value input sampling port and the Recovery mode button by default (cannot be modified). 
 
@@ -1193,7 +1193,7 @@ SoM Connector Dimension:
 
 Carrier board Connector Dimension:
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1720056471223_bd273a9e_e8cf_4493_957d_d306fe2c752e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1720056471223_bd273a9e_e8cf_4493_957d_d306fe2c752e.png)
 
 ## 6\. OK3568-C\&C2C Development Board Power Consumption Table
 
@@ -1240,28 +1240,28 @@ Table 3. Power Consumption of the Whole Machine Under OK3568-C2C Linux System
 
 ## 7\. Minimum System Schematic
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444490486_bf948b60_a2ea_4c3c_a64b_952149dd981d.png)![Image](./images/OK3568-C_User_Hardware_Manual/1721444495881_9988a9bf_d0cf_4adb_b3e6_0b6b06fbd9c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444490486_bf948b60_a2ea_4c3c_a64b_952149dd981d.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444495881_9988a9bf_d0cf_4adb_b3e6_0b6b06fbd9c0.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444501023_709ca76e_7056_4e5f_aede_e238d8e08b26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444501023_709ca76e_7056_4e5f_aede_e238d8e08b26.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444508022_73b5dc7f_215b_47dc_8849_f989a85ab731.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444508022_73b5dc7f_215b_47dc_8849_f989a85ab731.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444550702_37b6f5df_9dd0_4c4f_b0c1_55c06c3aea5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444550702_37b6f5df_9dd0_4c4f_b0c1_55c06c3aea5b.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444628191_a77b6455_2820_493d_b9e4_e276f331d508.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444628191_a77b6455_2820_493d_b9e4_e276f331d508.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444646908_78c687fa_c6d7_4f9a_8f4f_fa91555f3603.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444646908_78c687fa_c6d7_4f9a_8f4f_fa91555f3603.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444652805_e16e79cf_a50b_4118_a5d4_e8fe678642d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444652805_e16e79cf_a50b_4118_a5d4_e8fe678642d7.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444694839_36ec7fec_db42_4a09_9be0_5806d2881184.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444694839_36ec7fec_db42_4a09_9be0_5806d2881184.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444701944_d23ce42e_7d20_417b_9267_88e02359df42.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444701944_d23ce42e_7d20_417b_9267_88e02359df42.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444708677_88e13805_dabc_4373_90e7_4d136408fff0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444708677_88e13805_dabc_4373_90e7_4d136408fff0.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444742436_4f182d29_b827_40d6_b394_b1849acce925.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444742436_4f182d29_b827_40d6_b394_b1849acce925.png)
 
-![Image](./images/OK3568-C_User_Hardware_Manual/1721444763102_d96e05f6_1d8e_4946_8a2d_9c5e6c4e6b1b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_User_Hardware_Manual/1721444763102_d96e05f6_1d8e_4946_8a2d_9c5e6c4e6b1b.png)
 
 The above figure is only a schematic diagram. Please refer to the schematic diagram of the source file for the specific connection. To ensure the normal operation of the SoM, in addition to the power supply VDD5V, the following components are also required: the RESETn, RECOVERY, and EMMC\_BOOT buttons; a USB3\_OTG0\_ID DIP switch; either a USB3OTG0 interface or a TF card for convenient system flashing and booting; and a portion of the UART2 circuitry for verifying the proper functioning of the system and facilitating debugging.

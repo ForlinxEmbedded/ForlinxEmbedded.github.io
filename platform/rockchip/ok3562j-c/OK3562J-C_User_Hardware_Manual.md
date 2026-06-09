@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -51,7 +51,7 @@ Only the RK3562 has an NPU.
 
 **RK3562J Processor Block Diagram**
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491377948_e6f758e2_9028_421b_b443_37d46addfdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491377948_e6f758e2_9028_421b_b443_37d46addfdf9.png)
 
 ****
 
@@ -60,17 +60,17 @@ Only the RK3562 has an NPU.
 
 ### 2.1 FET3562J-C SoM Appearance
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491354712_9ab87fdf_7150_4848_b8ae_6abb3cdad3ab.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491354712_9ab87fdf_7150_4848_b8ae_6abb3cdad3ab.jpeg)
 
 **Front**
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491355097_ef420ba0_6611_4cac_8803_f0b480cbdf0b.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491355097_ef420ba0_6611_4cac_8803_f0b480cbdf0b.jpeg)
 
 **Back**
 
 ### 2.2 FET3562J-C SoM Dimension Diagram
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491355438_d5469aa4_d099_45c8_aca9_116ee7206b96.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491355438_d5469aa4_d099_45c8_aca9_116ee7206b96.png)
 
 Structure size: 36mm × 56mm, dimensional tolerance ± 0.13mm, refer to DXF file for more dimensional information.
 
@@ -161,11 +161,11 @@ It is recommended to select M2 \* 2mm patch nuts for fixing the SoM and the carr
 
 <font style="color:#FF0000;">(SoM connector schematic)</font>
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446517826_8ac736b2_64ae_4aeb_8dbc_744bd199c725.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446517826_8ac736b2_64ae_4aeb_8dbc_744bd199c725.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446523715_0bd68bf7_868e_49a5_9d42_416d77d6cb5d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446523715_0bd68bf7_868e_49a5_9d42_416d77d6cb5d.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446530646_a96056fe_3a97_4921_a7da_c5b07c1b3f34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446530646_a96056fe_3a97_4921_a7da_c5b07c1b3f34.png)
 
 #### 2.5.2 FET3562J-C SoM Pins Description
 
@@ -198,7 +198,7 @@ It includes the minimum system block diagram.
 
 FET3562J-C SoM integrates the power supply, reset monitoring circuit, and storage circuit into a compact module. The required external circuits are very simple. To form a minimal system, only a 5V power supply, as shown in the following figure:
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446544505_ec72ef24_31dd_43be_96a3_cc26c3d5b619.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446544505_ec72ef24_31dd_43be_96a3_cc26c3d5b619.png)
 
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, image flashing port, otherwise, users can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
@@ -208,7 +208,7 @@ Please refer to section 3.5 in “Chapter 3. OK3562J-C Carrier Board Description
 
 It uses M2 - sized thread - locking screws to fix the pre - set mounting holes at the four corners of the SoM. The tightening torque is controlled at 0.15 N·m. The specific assembly schematic diagram is as follows.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1763703157108_073d1c54_e66c_4da1_811d_f02b1ac42ff3.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1763703157108_073d1c54_e66c_4da1_811d_f02b1ac42ff3.jpeg)
 
 This design has passed the vibration test specified in the standards of GB/T 2423.10 - 2008 / IEC 60068 - 2 - 6:1995, reaching the following levels: 	Frequency range: 10 Hz to 150 Hz
 
@@ -226,13 +226,13 @@ The performance data listed in this manual is obtained from tests in a standard 
 
 The connection of OK3562J-C SoM and the carrier board is board-to-board, and the main interfaces are as follows:
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491366950_f7de534c_64a4_407c_a706_ae995db9910f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491366950_f7de534c_64a4_407c_a706_ae995db9910f.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491367485_1852bfe0_8cb2_437e_abde_c363e975a7b0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491367485_1852bfe0_8cb2_437e_abde_c363e975a7b0.png)
 
 ### 3.2 OK3562J-C SoM Dimension Diagram
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491367938_d451ca99_8486_4782_bd08_544dba0891d8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491367938_d451ca99_8486_4782_bd08_544dba0891d8.png)
 
 PCB Size: 130mm × 190mm
 
@@ -244,7 +244,7 @@ Power supply voltage: DC 12V.
 
 Two mounting holes with a diameter of 3.2mm are reserved on the carrier board. You can select and install the heat sink according to the site environment. Please add a layer of insulated heat-conducting silicone pad on the contact surface between the heat sink and the core board. 38Mm×38mm×10mm. For more detailed dimensions, please refer to the following figure.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1759195100202_a81a281d_c3f9_4b99_9310_f01947573173.png)
 
 ### 3.3 Carrier Board Naming Rules
 
@@ -314,13 +314,13 @@ As shown in the figure, a 12V DC power supply provides power to the development 
 
 The **VCC_3V3_SD** signal ensures that the SoM powers on before the carrier board, preventing latch-up effects that could potentially damage the CPU.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/2.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/3.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/4.png)
 
 #### 3.5.2 Switch & Reset Key
 
@@ -328,13 +328,13 @@ K6 on the carrier board is the development board reset key. Pressing it can real
 
 K7 on the carrier board is the development board power - on/off button. The board is set to start automatically when power is supplied by default. Long - press this button in the powered - on state to turn off the board, and then short - press it to turn it on.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446611167_73a8c6ae_568f_43ff_8528_a7ef9e0fd651.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446611167_73a8c6ae_568f_43ff_8528_a7ef9e0fd651.png)
 
 #### 3.5.3 SARADC Key
 
 The carrier board uses one SARADC signal to realize the function display of the sampling key value through the key and resistance voltage division. The SARADC0\_IN1\_KEY/RECOVERY on the SoM is pulled up to 1.8V through a 10K resistor.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446617650_21755fd8_f2ef_4911_a4e8_62d3c878ea6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446617650_21755fd8_f2ef_4911_a4e8_62d3c878ea6c.png)
 
 #### 3.5.4 BOOT Configuration
 
@@ -346,7 +346,7 @@ If you use a USB cable to connect the board to a computer for image flashing, pr
 
 If you use a TF Card to flash the image, you need to make a TF Card in advance. After inserting the card into the board and powering it on, the board will enter the TF - card flashing process. For the detailed flashing process, please refer to the software user manual.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446625491_7ee54dbf_9e1c_4b65_b808_494bdab66050.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446625491_7ee54dbf_9e1c_4b65_b808_494bdab66050.png)
 
 **Note: The SARADC0 \_ BOOT signal is not available for other functions.**
 
@@ -356,9 +356,9 @@ The carrier board integrates 2 x debug serial ports with one USB Type-C. Install
 
 UART9 is connected to both the debugging port and the RS485 port. You can use the DIP switch (reference designator S4) to select its function.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446633850_72ae21c0_50d2_4510_957d_5fc9df5782a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446633850_72ae21c0_50d2_4510_957d_5fc9df5782a2.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446638365_41fea2fc_6587_4082_bea3_21a9eb5c34d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446638365_41fea2fc_6587_4082_bea3_21a9eb5c34d0.png)
 
 **Note: To facilitate later debugging, please lead out these debug serial ports when designing the carrier board by yourselves.**
 
@@ -366,21 +366,21 @@ UART9 is connected to both the debugging port and the RS485 port. You can use th
 
 The development board supports two-wire JTAG/SWD interface, which is multiplexed with the TF card interface. Led out via a 2.54mm pitch pin.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446644184_2f4eee8c_9b86_4425_9b64_b4efbf8926ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446644184_2f4eee8c_9b86_4425_9b64_b4efbf8926ae.png)
 
 #### 3.5.7 RTC
 
 The carrier board is externally provided with RTC equipment through I2C1, and is supplied with power through D6 compatible with VCC \_ 3V3 and the button cell. After the carrier board is powered off, the button cell can maintain power supply for the RTC chip. The RX8010SJ chip design is used by default. The button cell model is CR2032.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446648977_23d74e8e_25f8_4df8_a12a_2d09aa529af7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446648977_23d74e8e_25f8_4df8_a12a_2d09aa529af7.png)
 
 #### 3.5.8 TF Card
 
 The TF Card on the development board uses the SDMMC0 channel of the CPU. The power supply for the TF card uses the VCC\_3V3\_SD output from the SoM.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446654373_1aca67f8_0da9_485b_a1b3_e15523cd953d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446654373_1aca67f8_0da9_485b_a1b3_e15523cd953d.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446658874_79413083_314b_489d_b5a5_f1437c262e58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446658874_79413083_314b_489d_b5a5_f1437c262e58.png)
 
 **Note:**
 
@@ -392,19 +392,19 @@ The TF Card on the development board uses the SDMMC0 channel of the CPU. The pow
 
 The SARADC is led out with 2.54mm - spaced pin headers. When paired with a sliding potentiometer, it can be directly connected via DuPont wires. The SoM has a total of 13 x SARADC, and the sampling voltage should not exceed 1.8V.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446671753_d37dc888_b4b0_4fff_838b_1bd35ecc4b04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446671753_d37dc888_b4b0_4fff_838b_1bd35ecc4b04.png)
 
 #### 3.5.10 Ethernet
 
 The development board supports 2 x native 1000M and 100M network ports. It uses the RGMII and RMII interfaces of the SoM, and is implemented in conjunction with the YT8521SH and YT8512H chips. These ports are led out through standard RJ45 sockets with network transformers, enabling external connection to network devices.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446677497_8cea3627_269e_43bb_aaee_1ada7134189c.png)![Image](./images/OK3562J-C_User_Hardware_Manual/1721446686001_d6b1f862_dca3_4f9a_8c78_4939c2294a78.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446677497_8cea3627_269e_43bb_aaee_1ada7134189c.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446686001_d6b1f862_dca3_4f9a_8c78_4939c2294a78.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446699737_761a4473_1be6_42c1_a63f_475c3498eb4b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446699737_761a4473_1be6_42c1_a63f_475c3498eb4b.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446709076_0613bb50_4d8e_45cd_b820_a86f9781b620.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446709076_0613bb50_4d8e_45cd_b820_a86f9781b620.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446714066_fb28d644_642c_4df6_8e98_83b9be9ec0e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446714066_fb28d644_642c_4df6_8e98_83b9be9ec0e7.png)
 
 #### 3.5.11 MIPI-CSI
 
@@ -412,7 +412,7 @@ There are three FPC sockets on the development board that can be connected to MI
 
 The P17 and P18 ports support 2lane MIPI - CSI connections, while the P16 port supports 4 lane MIPI - CSI connections.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446718757_b10e81e8_9e80_4776_a4d7_f115e5882729.png)![Image](./images/OK3562J-C_User_Hardware_Manual/1721446722242_2ae37c9d_3c79_4795_9da6_74c1ff84ffa6.png)![Image](./images/OK3562J-C_User_Hardware_Manual/1721446726773_2903a022_63df_4a6b_b888_2986f839af09.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446718757_b10e81e8_9e80_4776_a4d7_f115e5882729.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446722242_2ae37c9d_3c79_4795_9da6_74c1ff84ffa6.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446726773_2903a022_63df_4a6b_b888_2986f839af09.png)
 
 #### 3.5.12 MIPI-DSI
 
@@ -420,7 +420,7 @@ The FPC socket with the reference designator P19 on the development board can be
 
 It supports 4 - lane MIPI - DSI connections and touchscreens with I2C interfaces. MIPI-DSI and LVDS screens can only be used alternatively, not simultaneously.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446733917_6575166d_fc61_4300_87bd_13f0d658300d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446733917_6575166d_fc61_4300_87bd_13f0d658300d.png)
 
 #### 3.5.13 LVDS Display
 
@@ -428,7 +428,7 @@ The pin header P20 on the development board can be connected to an LVDS display 
 
 It supports 4 lane LVDS connectivity and I2C interface. MIPI-DSI and LVDS screens can only be used alternatively, not simultaneously.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446743763_1f0819f9_641f_449d_b8c3_058fb7aaaeb0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446743763_1f0819f9_641f_449d_b8c3_058fb7aaaeb0.png)
 
 #### 3.5.14 Audio
 
@@ -438,9 +438,9 @@ The P22 interface is a speaker interface, supporting mono Speaker, class-D, 1.3 
 
 P23 is an onboard MIC that enables mono recording.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446749396_55255c14_6f4e_4e24_9551_f4c4d3a629e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446749396_55255c14_6f4e_4e24_9551_f4c4d3a629e2.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446753737_2e924d3e_60d2_4690_be53_5d590d20b24f.png)![Image](./images/OK3562J-C_User_Hardware_Manual/1721446756971_d4539841_fb25_4600_a023_4dba2bf6c276.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446753737_2e924d3e_60d2_4690_be53_5d590d20b24f.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446756971_d4539841_fb25_4600_a023_4dba2bf6c276.png)
 
 #### 3.5.15 4G Module
 
@@ -450,9 +450,9 @@ P29 is a self - ejecting nanoSIM card slot. Please pay attention to the card ins
 
 Before using the 4G function, please power off the board first, install the 4G module and the SIM card, connect the 4G ipex jumper from the module to P26 on the board, and then an external antenna can be connected via the SMA interface of P25.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446766975_2cdc950d_ff69_41b8_9a22_5af94ea9e078.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446766975_2cdc950d_ff69_41b8_9a22_5af94ea9e078.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446771962_866688c7_efc5_480d_b4eb_28018a4b6a03.png)![Image](./images/OK3562J-C_User_Hardware_Manual/1721446775396_9606530f_c293_4d33_a7b6_75621b602368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446771962_866688c7_efc5_480d_b4eb_28018a4b6a03.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446775396_9606530f_c293_4d33_a7b6_75621b602368.png)
 
 ****
 
@@ -461,7 +461,7 @@ Before using the 4G function, please power off the board first, install the 4G m
 
 The development board is equipped with a built - in USB2.0 HUB, which expands four downstream USB HOST nodes. On the development board, these nodes are respectively connected to three standard USB2.0 - A interfaces and a mini - PCIE interface. The mini - PCIE interface can be connected to a 4G module.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446785860_e24b0d1a_24e8_46f4_91a1_ef38b423a915.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446785860_e24b0d1a_24e8_46f4_91a1_ef38b423a915.png)
 
 #### 3.5.17 USB3.0 \& PCIe
 
@@ -471,15 +471,15 @@ PCIE can only do RC mode.
 
 The USB3.0 supports master/slave mode, which is switched by a one-bit DIP switch.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446791531_479764ef_2c19_43a7_a09e_aba6b8561512.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446791531_479764ef_2c19_43a7_a09e_aba6b8561512.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446805819_c67d51f6_4b53_4901_97e0_5f54e40ebdce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446805819_c67d51f6_4b53_4901_97e0_5f54e40ebdce.png)
 
 #### 3.5.18 USB Download
 
 The USB Type-C of P35 on the back of the development board uses the P/N differential signal in the USB3.0 (P33) signal and is designed as a Type-C interface for the convenience of users to connect to the computer for image programming and debugging.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446814528_2effe422_c5c5_496a_88da_949767dca60b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446814528_2effe422_c5c5_496a_88da_949767dca60b.png)
 
 #### 3.5.19 WiFi \& Bluetooth
 
@@ -489,7 +489,7 @@ The WIFI uses SDIO interface, 2.4GHz and 5GHz dual-band, compliant with IEEE 802
 
  P34 is SMA interface for antenna, please use 2.4GHz \& 5GHz dual-band antenna.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446823808_ba945892_26cd_48f7_8fce_7c52fbf68ad2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446823808_ba945892_26cd_48f7_8fce_7c52fbf68ad2.png)
 
 #### 3.5.20 CAN
 
@@ -497,7 +497,7 @@ Two standard CAN interfaces are led out from the development board with CAN0 and
 
 The CAN signal is led out through the green terminals at 3.81 mm pitch and a 120 ohm termination resistor is installed using a jumper cap.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446832665_0f920d1a_0e97_4168_bb0b_481f65630231.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446832665_0f920d1a_0e97_4168_bb0b_481f65630231.png)
 
 #### 3.5.21 RS485
 
@@ -507,29 +507,29 @@ The RS485 signal is led out through a green terminal with a 3.81mm pitch. Use a 
 
 UART9 is connected to both the debugging port and the RS485 port. You can use the DIP switch (reference designator S4) to select its function.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446839380_9ffe36ac_c885_4fae_852c_36ae1d53ba92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446839380_9ffe36ac_c885_4fae_852c_36ae1d53ba92.png)
 
 #### 3.5.22 USER GPIO
 
 Connect GPIO4\_B7 to buttons and LED on the development board to demonstrate the functionality of GPIO.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446848917_c8ca7556_4f2f_41d6_97e3_dfeb51147f31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446848917_c8ca7556_4f2f_41d6_97e3_dfeb51147f31.png)
 
 #### 3.5.23 SPI
 
 The SPI2 is led out separately from the development board, and the box header connector with a pitch of 2.0mm can be used for external equipment.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446859759_8e0154a5_2c51_4c48_9aaa_0b6ed39dc119.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446859759_8e0154a5_2c51_4c48_9aaa_0b6ed39dc119.png)
 
 ## 4\. Connector Dimension Diagram
 
 SoM connector: Board-to-board, 0.5mm pitch, 80P, male socket, height 1.23 mm, with locating post.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491382901_967cde92_0cba_4f50_92a1_268e5054bc56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491382901_967cde92_0cba_4f50_92a1_268e5054bc56.png)
 
 Carrier board connector: Board-to-board, 0.5mm pitch, 80P, female socket, height 1.85 mm, with locating post.
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1720491383191_86a04112_c603_433d_9128_6262b9d3697e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1720491383191_86a04112_c603_433d_9128_6262b9d3697e.png)
 
 ## 5\. Development Board Linux System Whole - Machine Power Consumption Table
 
@@ -554,8 +554,8 @@ Carrier board connector: Board-to-board, 0.5mm pitch, 80P, female socket, height
 
 **The minimum system includes the SoM, power supply, debugging serial port, and system image flashing interface.** 
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446927974_2d08d8f7_6f40_4893_b059_92c37be13c81.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446927974_2d08d8f7_6f40_4893_b059_92c37be13c81.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446933461_a0e0ae13_b903_4d9d_8d42_cb30a4c79c7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446933461_a0e0ae13_b903_4d9d_8d42_cb30a4c79c7b.png)
 
-![Image](./images/OK3562J-C_User_Hardware_Manual/1721446939600_1bfffc7c_ca6e_4ae1_b0ce_ed9ccaedee63.png)![Image](./images/OK3562J-C_User_Hardware_Manual/1721446942913_a847db88_495c_4797_b2d9_8978bb3f57e1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446939600_1bfffc7c_ca6e_4ae1_b0ce_ed9ccaedee63.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_User_Hardware_Manual/1721446942913_a847db88_495c_4797_b2d9_8978bb3f57e1.png)

@@ -35,23 +35,19 @@ html_static_path = ['_static']
 # Logo (如果有，放在 _static 目录)
 html_logo = '_static/forlinx-logo.png'
 html_favicon = '_static/forlinx.png'
+
 html_theme_options = {
     'logo_only': True,
+    'sticky_navigation': True,    
+    'collapse_navigation': False, 
 }
 
 html_css_files = [
     'theme-switcher.css',
 ]
 
-html_sidebars = {
-    '**': [
-        'globaltoc.html',
-        'relations.html',
-        'sourcelink.html',
-        'searchbox.html',
-        'footer.html',  # 👈 关键：显式加载我们自定义的 footer 模板
-    ]
-}
+# 👇 关键调整：已经将 html_sidebars 字典彻底删除。
+# 这样 sphinx_rtd_theme 就会使用它内置的侧边栏逻辑，保证左侧目录的正常折叠和展开。
 
 html_show_sourcelink = False
 

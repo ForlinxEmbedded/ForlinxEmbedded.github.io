@@ -8,7 +8,7 @@ The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., 
 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
 
-The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives. 
 
 ## Revision History
 
@@ -42,11 +42,11 @@ OK1126B-S/OK1126BJ-S is a low-power, high-performance processor based on the ARM
 
 Stamp hole connection, the main interfaces are shown in the following figure:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382043008_819ef8b3_9593_4f1d_bf32_07a0b66839d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382043008_819ef8b3_9593_4f1d_bf32_07a0b66839d9.png)
 
 **Front**
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382043134_894c09dd_def0_4577_939f_fced87f831f0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382043134_894c09dd_def0_4577_939f_fced87f831f0.png)
 
 **Back**
 
@@ -134,7 +134,7 @@ Disk /dev/mmcblk0boot1 doesn't contain a valid partition table
 + 5V2A DC power cable
 + Debugging serial cable
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382044806_630e2cc3_c34c_41aa_b48a_41dc0948335a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382044806_630e2cc3_c34c_41aa_b48a_41dc0948335a.png)
 
 ### 2.2 Debugging Serial Driver Installation
 
@@ -157,15 +157,15 @@ In the following, we take the putty terminal software as an example to introduce
 
 Step 1: First, you need to confirm the serial port number connected to the computer. Check the serial port number in the Device Manager. The serial port with the ending “SERIAL - A” is the actual debugging serial port. In this document, the debugging serial port is COM61. The actual port number recognized by the computer shall prevail;
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382044958_e582b6d5_61d4_41b3_9347_eda86eb8093d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382044958_e582b6d5_61d4_41b3_9347_eda86eb8093d.png)
 
 Step 2: Open PuTTY and make settings. Set the “serial line” according to the actually recognized port number, and set the baud rate to 115200;
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045048_1dd66fbc_ad3b_48fa_b4a5_0ba6c9caf9bb.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045048_1dd66fbc_ad3b_48fa_b4a5_0ba6c9caf9bb.jpeg)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM61 as an example, save the settings, open the serial port again later, and click on the saved port number.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045160_1da2d235_3874_4fdc_a3a2_c46599d80255.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045160_1da2d235_3874_4fdc_a3a2_c46599d80255.png)
 
 #### 2.3.2 Serial Login
 
@@ -173,7 +173,7 @@ After the terminal software on the PC side is set, connect the PC and the develo
 
 The following startup information indicates that the startup is successful, and you can enter Enter to create a new command line:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045263_9d9b1b87_3b43_4b5e_ace2_ef55ca4f0b2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045263_9d9b1b87_3b43_4b5e_ace2_ef55ca4f0b2b.png)
 
 ### 2.4 Network Login
 
@@ -208,7 +208,7 @@ You can also use other terminal software that supports SSH login, such as PuTTY.
 
 Open the putty software and make the following settings (the actual IP shall prevail):
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045341_54e6afbd_db82_4adc_a27e_922cc3d8cb98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045341_54e6afbd_db82_4adc_a27e_922cc3d8cb98.png)
 
 #### 2.4.2 FTP
 
@@ -228,9 +228,9 @@ Install the file Zilla tool on windows and set it up as shown in the following f
 ifconfig eth0 172.20.0.129 netmask 255.255.255.0
 ```
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045449_8867433f_18c2_4eb2_99bc_f6227475514d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045449_8867433f_18c2_4eb2_99bc_f6227475514d.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045535_ce0ae701_db7f_4d6d_bb2a_b1e64be374e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045535_ce0ae701_db7f_4d6d_bb2a_b1e64be374e8.png)
 
 ### 2.5 Screen Switching
 
@@ -277,7 +277,7 @@ Device tree path: kernel/arch/arm64/boot/dts/rockchip/OK1126B-S-common.dtsi
 
 In the kernel source code, open the device dtsi file and find the following node:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045612_5a2f5152_e084_4019_a540_97d590741056.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045612_5a2f5152_e084_4019_a540_97d590741056.png)
 
 The node has a default disabled state and needs to be changed to an okay enabled node. Change according to screen requirements.
 
@@ -285,7 +285,7 @@ Examples:
 
 Turn on the RGB screen and change the attribute to 'rgb'.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045720_ebacc5d4_e15c_481a_bec4_90452b9d16d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382045720_ebacc5d4_e15c_481a_bec4_90452b9d16d9.png)
 
 After saving, recompile to generate the image.
 
@@ -311,13 +311,13 @@ It supports 4G module (EM05). Insert the 4G module and SIM card while the power 
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047384_be41b8c7_bd92_461b_9be7_c6e4e0e31a0b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047384_be41b8c7_bd92_461b_9be7_c6e4e0e31a0b.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047485_f62db731_6135_4363_8a18_b103d9284672.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047485_f62db731_6135_4363_8a18_b103d9284672.jpeg)
 
 Click the start button, and the program will automatically enter the dialing process and obtain IP settings, DNS, etc.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047622_3650689e_2f5a_4bcb_9450_e297bd3100c8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047622_3650689e_2f5a_4bcb_9450_e297bd3100c8.png)
 
 After successful dialing, you can use ping to test the serial port during debugging.
 
@@ -325,33 +325,33 @@ After successful dialing, you can use ping to test the serial port during debugg
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047770_177034a2_62d8_4658_b822_2ff41b5853c9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047770_177034a2_62d8_4658_b822_2ff41b5853c9.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047863_f8cd2ebc_1d87_4d45_95fd_457c16bad772.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047863_f8cd2ebc_1d87_4d45_95fd_457c16bad772.jpeg)
 
 Select wlan0, enter the router name(the one connected to wifi) in the SSID column, enter the router password in the PAWD column, click CONNECT to the router via wifi, enter a valid ip in the IP column, and then click ping to see if the currently used wifi network is smooth.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047986_a31988c3_10a9_4846_88a7_9db76518f173.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382047986_a31988c3_10a9_4846_88a7_9db76518f173.jpeg)
 
 Click ping to test the network after a successful connection.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048135_18442e97_b827_4208_b593_0819ae76bc54.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048135_18442e97_b827_4208_b593_0819ae76bc54.jpeg)
 
 ### 3.3 Network Configuration Test
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048327_c2ab4068_61d1_44b1_b7ba_18ee6a16ed07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048327_c2ab4068_61d1_44b1_b7ba_18ee6a16ed07.png)
 
 The DHCP mode interface is as follows:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048417_7d9b04af_508c_4c59_b203_e21931d24817.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048417_7d9b04af_508c_4c59_b203_e21931d24817.jpeg)
 
 Check DHCP, select the NIC device needing to be configured, and click Apply and Restart Network at the bottom of the interface to restart the network and get the ip automatically.
 
 The STATIC mode interface is as follows:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048514_2b0f4a5d_0f51_44c8_808f_e770829c5bb1.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048514_2b0f4a5d_0f51_44c8_808f_e770829c5bb1.jpeg)
 
 Select the NIC device to be configured in the interface, and enter the ip to be set in the ip field, enter the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.
 
@@ -361,19 +361,19 @@ Select the NIC device to be configured in the interface, and enter the ip to be 
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048614_d0b6e309_a184_4a3b_b046_3be345d3163f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048614_d0b6e309_a184_4a3b_b046_3be345d3163f.png)
 
 Write the target IP address in the "hostname" column. Click the "ping" button, and the "result" column will display the ping outcome. Click "stop" to end the ping test, and "clear" to erase the information in the "result" column.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048766_99ecaad0_38ed_4696_a42e_e8a8b034a453.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048766_99ecaad0_38ed_4696_a42e_e8a8b034a453.jpeg)
 
 ### 3.5 Watchdog Test
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048882_972b30db_ea47_4043_b015_46312d8544b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048882_972b30db_ea47_4043_b015_46312d8544b7.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048964_b6332394_071d_43d1_a0f6_b0d88c5971aa.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382048964_b6332394_071d_43d1_a0f6_b0d88c5971aa.jpeg)
 
 Click the “start” button and check the “Feed dog” option. At this time, the watchdog function will be activated, and the program will perform the dog - feeding operation. Under normal circumstances, the system will not restart. When the “Feed dog” option is unchecked, the program will stop the dog - feeding operation. After the countdown ends, the system will restart, indicating that the watchdog function is working properly.
 
@@ -381,9 +381,9 @@ Click the “start” button and check the “Feed dog” option. At this time, 
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049051_eb0ea5d4_ea7a_48d1_ae0c_c0fc2f75bcb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049051_eb0ea5d4_ea7a_48d1_ae0c_c0fc2f75bcb1.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049116_4dce91cd_1592_46fc_88f9_58e7b7d06950.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049116_4dce91cd_1592_46fc_88f9_58e7b7d06950.jpeg)
 
 Select the year, month, day, hour, minute, and second to set the time. After setting, click “apply” to complete the time setting.
 
@@ -395,9 +395,9 @@ This test is conducted by short circuiting the TX and RX of UART5. Please refer 
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049195_ccbc326b_3a20_48c0_a8d8_33710644cd8e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049195_ccbc326b_3a20_48c0_a8d8_33710644cd8e.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049261_d632ed22_d53c_497c_8fc4_8f854f18ea0d.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049261_d632ed22_d53c_497c_8fc4_8f854f18ea0d.jpeg)
 
 Click the settings button on the right sidebar (third small gear), and set the serial port parameters as follows:
 
@@ -410,21 +410,21 @@ Click the settings button on the right sidebar (third small gear), and set the s
 | Stop bits| Set stop bit (1 bit)|
 | Flow control| Set flow control (no flow control)|
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049341_522d41ef_264a_40f5_85da_1eaa30e7ae1b.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049341_522d41ef_264a_40f5_85da_1eaa30e7ae1b.jpeg)
 
 After setting the serial port parameters, click the connection button at the top of the right sidebar (the first button). At this time, the test program can conduct data sending and receiving tests.
 
 You can input in the black area. Each character you input will be displayed twice because the TX and RX are short - circuited, and the sent characters are received back.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049644_07097b82_3404_44ca_86ff_fb8f11e8744a.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049644_07097b82_3404_44ca_86ff_fb8f11e8744a.jpeg)
 
 ### 3.8 Backlight Test
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049730_169a7d68_529a_437b_bbcb_3780544e1c29.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049730_169a7d68_529a_437b_bbcb_3780544e1c29.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049811_7f9b1fb0_3c51_4cf4_a261_1dd6dcdba278.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049811_7f9b1fb0_3c51_4cf4_a261_1dd6dcdba278.jpeg)
 
 Select “Screen” to specify the screen backlight that needs to be adjusted. Drag the slider on the interface to set the backlight brightness. Level 5 is the lowest brightness, and level 200 is the highest brightness.
 
@@ -434,37 +434,37 @@ If you need to turn off the backlight, refer to section 4.2.13 “LCD backlight 
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049914_7506d096_91de_4142_bf63_aa638b448169.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049914_7506d096_91de_4142_bf63_aa638b448169.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049998_bfc965d4_c466_4710_b225_a081eb9d7a8a.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382049998_bfc965d4_c466_4710_b225_a081eb9d7a8a.jpeg)
 
 Short - circuit the MOSI and MISO of SPI1. For specific wiring, refer to section 4.2.6. Select “SPIDEV” as “spi1” and click the “send” button. The content in the lower input box will be sent out through MOSI and received back through MISO, and will be displayed in the “Receive” box above. At this time, unplug the jumper that short - circuits MOSI and MISO and click the “send” button again. You will find that the “Receive” box receives garbled characters.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050090_28228fb6_33e2_4d47_b919_cd2c978aafed.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050090_28228fb6_33e2_4d47_b919_cd2c978aafed.jpeg)
 
 ### 3.10. Playback Test
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050173_18636d60_4ccc_4d1d_94fc_bdc8de99c2bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050173_18636d60_4ccc_4d1d_94fc_bdc8de99c2bd.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050252_6234c567_392a_4348_8ca8_be7045c3da17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050252_6234c567_392a_4348_8ca8_be7045c3da17.png)
 
 Click the button with three dots in the lower - left corner, select the audio file you want to play, and then click “open”. The selected audio will start playing automatically.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050335_cb807160_cede_4e1f_862c_f42e1a901874.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050335_cb807160_cede_4e1f_862c_f42e1a901874.png)
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050423_190df503_745f_4af9_b1c1_be1e288faa4a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050423_190df503_745f_4af9_b1c1_be1e288faa4a.png)
 
 ### 3.11 Video Playback Test
 
 Click on the desktop icon to go to the next level menu:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050563_6037ed34_2cec_40db_ab4b_67cc4b3ebb82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050563_6037ed34_2cec_40db_ab4b_67cc4b3ebb82.png)
 
 After opening the application, the video will play automatically.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050668_e03835e4_7bd6_4252_8b1d_d979e43b0c6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382050668_e03835e4_7bd6_4252_8b1d_d979e43b0c6c.png)
 
 ## 4\. OK1126B - S Command - line Function Test
 
@@ -757,7 +757,7 @@ The UART of OK1126B - S/OK1126BJ - S supports odd and even parity, 8 data bits, 
 
 Before conducting the UART loop - back test, please short - circuit the serial port to be tested first. On the schematic diagram of the carrier board of the OK1126B - S/OK1126BJ - S platform, there are a total of 3 serial ports marked and led out, namely UART0, UART2, and UART5. Among them, UART0 is the debugging serial port, and UART2 is the Bluetooth serial port. The serial port available to users is UART5. UART5 uses TTL level, and its corresponding device name on the development board is ttyS5. Here, taking the test of the UART5 serial port as an example, short - circuit the sending and receiving pins of UART5 according to the schematic diagram of the development board, which correspond to pins 8 and 10 of P16 respectively.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052537_b3fd0748_d05b_47f6_b66a_a27be1378bc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052537_b3fd0748_d05b_47f6_b66a_a27be1378bc9.png)
 
 Turn on the test program after the short circuit is completed.
 
@@ -776,7 +776,7 @@ If the serial port prints the above content after execution, it indicates that t
 
 1 x SPI interface is led out from the carrier board. By default, it is configured as spidev in software for loop - back testing. When testing, refer to the schematic for shorting MOSI (PIN19) and MISO (PIN21), and then use the commands below to test each.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052628_ca18f828_c09d_4dd7_b03e_54d149e28275.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052628_ca18f828_c09d_4dd7_b03e_54d149e28275.png)
 
 When SPI1\_MOSI and SPI1\_MISO are short - circuited, execute the test command:
 
@@ -980,7 +980,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 RTC testing is mainly done by using the date and hwclock tools to set the software and hardware time. The test checks if the software clock can read and synchronize with the RTC clock when the development board is powered off and on again (Note: Make sure that the button battery is already installed on the board).
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052710_5b00b5cf_4a6e_4759_af6e_d297973ce3c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052710_5b00b5cf_4a6e_4759_af6e_d297973ce3c5.png)
 
 ```bash
 root@OK1126B-buildroot:/# date -s "2022-2-9 10:50:00"		//Set the time
@@ -1001,7 +1001,7 @@ OK1126B - S/OK1126BJ - S supports one USB2.0 and one USB3.0 interface. You can c
 
 The USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, please make sure the DIP switch is in the ON position. Here, the example of mounting a USB flash drive is used for demonstration.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052851_13442951_a739_4f64_a439_a090073d4cae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052851_13442951_a739_4f64_a439_a090073d4cae.png)
 
 The lower USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, please make sure the DIP switch is in the ON position.
 
@@ -1195,7 +1195,7 @@ root@OK1126B-buildroot:/# ifup -a							//Enable the configuration
 
 There is a white XH2.54-2P socket on the development board, labeled as P12, which can drive an 8Ω speaker with a maximum output power of 1.3W. Before conducting a sound playback test, please insert the speaker into the corresponding slot on the carrier board and use the following commands for testing:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052979_14b254a0_7e70_4c48_b12b_137de5e14cf5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382052979_14b254a0_7e70_4c48_b12b_137de5e14cf5.png)
 
 ```bash
 root@OK1126B-buildroot:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3
@@ -1292,7 +1292,7 @@ Rockchip provides a wealth of test cases, which can be compiled and tested by re
 
 The OK1126B-S/OK1126BJ-S SoM has a controllable blue LED. When the board is powered on and starts up, the blue LED on the SoM will flash. You can disable this function. Simply modify the device tree file “arch/arm64/boot/dts/rockchip/OK1126B-S-common.dtsi”. Add the attribute “default - state = “off”” to the “leds” node and change “linux,default - trigger” to “none”.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382053102_04b6b2ed_0a8c_47f6_9225_1fb55e587f72.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382053102_04b6b2ed_0a8c_47f6_9225_1fb55e587f72.png)
 
 The testing method is as follows:
 
@@ -1317,7 +1317,7 @@ root@OK1126B-buildroot:/sys/class/leds/work# echo heartbeat > trigger
 
 P17 is the led ADC pin as shown in the figure below, where SARADC0 \_ IN0-IN6 correspond to 0-6 of the ADC channel respectively.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382053171_c3b89097_f665_4a7d_845a_bb16fa9cf006.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382053171_c3b89097_f665_4a7d_845a_bb16fa9cf006.png)
 
 Enter the following command to observe the ADC channel value (range 0-8192):
 
@@ -1367,7 +1367,7 @@ The OK1126B/OK1126BJ-S supports the 4G module EM05 (connected via USB). Prepare 
 
 In the figure, the numerical labels from smallest to largest are: 12V power supply, power button, SIM card, USB cable, and 4G module EM05.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382053238_3517793e_f523_486d_bc16_b7a14d8c045f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382053238_3517793e_f523_486d_bc16_b7a14d8c045f.png)
 
 You can execute the “lsusb” command in the debug serial port of the development board to check if the module is recognized.
 
@@ -2025,11 +2025,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056402_8341b089_8bed_4a54_b041_c15b05b67462.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056402_8341b089_8bed_4a54_b041_c15b05b67462.png)
 
 Click "Driver Installation”.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056479_51bdbc6b_0a00_419e_a1d0_3e42df1cf773.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056479_51bdbc6b_0a00_419e_a1d0_3e42df1cf773.png)
 
 #### 6.1.2 OTG Full Flashing Test
 
@@ -2049,11 +2049,11 @@ This is a development tool provided by Rockchip. Before use, decompress it to th
 
 Open the Rockchip development tool:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056558_1b0a47a5_b9af_482c_a810_b0979e59852e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056558_1b0a47a5_b9af_482c_a810_b0979e59852e.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056628_2b37c61a_feb2_44f6_b3a2_4389189d621a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056628_2b37c61a_feb2_44f6_b3a2_4389189d621a.png)
 
 Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
@@ -2069,19 +2069,19 @@ FactoryTool is a tool used for batch OTG programming in the factory. It doesn't 
 
 Open the Rockchip development tool:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056697_92b274af_fa3b_45fd_be95_74a946c57705.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056697_92b274af_fa3b_45fd_be95_74a946c57705.png)
 
 Click to select the firmware, and click "Start". At this time, the identified MASKROM device will automatically start programming.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056767_77ab8f6e_ebd3_433c_9899_533da451907e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056767_77ab8f6e_ebd3_433c_9899_533da451907e.png)
 
 Download firmware:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056834_91d5eee7_f82c_4150_85f7_260b4b9408db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056834_91d5eee7_f82c_4150_85f7_260b4b9408db.png)
 
 If the upgrade is successful, the system will restart, and it needs to be powered on again, as shown below:
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056900_131abbe1_adac_42b5_bd59_36b02e55767b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056900_131abbe1_adac_42b5_bd59_36b02e55767b.png)
 
 #### 6.1.3 OTG Step-by-step Flashing Test
 
@@ -2095,29 +2095,29 @@ Take separate programming boot.img (including device tree and startup logo) as a
 
 Use the Type-C cable to connect the development board to the host. After the development board is started, execute the reboot loader, or press and hold the Ctrl + D key during power-on until the system prompts that the LOADER device is found.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056967_36746cdc_4774_4e17_a170_bfa378349508.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056967_36746cdc_4774_4e17_a170_bfa378349508.png)
 
 Click the "Device Partition Table" button to automatically read the partition address.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057058_946872c7_f0ad_4268_9572_9017ad0c4d71.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057058_946872c7_f0ad_4268_9572_9017ad0c4d71.png)
 
 The prompt asks if you want to update the download address. Clicking "Yes" will result in a successful reading of the partition table.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057130_4c028ee1_f1ce_42cc_9b40_59db05f4a158.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057130_4c028ee1_f1ce_42cc_9b40_59db05f4a158.png)
 
 Click the right test area of the partition to select the partition mirror, and check the partition.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057204_554fb646_ace1_4d53_a154_5f8b985c967a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057204_554fb646_ace1_4d53_a154_5f8b985c967a.png)
 
 Click the "Execute" button will automatically burn and restart.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057269_e29266c6_5ff5_44f6_91b0_ba5d28567865.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057269_e29266c6_5ff5_44f6_91b0_ba5d28567865.png)
 
 **Introduction to MASKROM mode**
 
 If the LOADER is damaged and cannot enter the LOADER mode, press and hold the UPDATE key and then press the reset key to enter the MASKROM mode for programming.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056558_1b0a47a5_b9af_482c_a810_b0979e59852e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382056558_1b0a47a5_b9af_482c_a810_b0979e59852e.png)
 
 At this time, the system will prompt that a MASKROM device is found. The programming process is consistent with the LOADER mode. It is better to use the update. img for programming.
 
@@ -2131,11 +2131,11 @@ TF Card Creation and Flashing Test
 
 Copy SDDiskTool\_v1.78.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057346_11058a28_8f62_48c7_813f_e9eab19a1d17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057346_11058a28_8f62_48c7_813f_e9eab19a1d17.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click "Start Creating".
 
-![Image](./images/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057440_fe489747_9bef_4111_86c3_cde053953b1c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Manual/1766382057440_fe489747_9bef_4111_86c3_cde053953b1c.png)
 
 Insert the TF card into the development board and start, the system will automatically enter the flashing process. When the flashing is complete, both the screen and the serial port will prompt:
 

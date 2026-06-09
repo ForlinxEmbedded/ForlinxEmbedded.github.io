@@ -4,7 +4,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 ## Copyright 
 
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.   
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.  
 
@@ -14,11 +14,11 @@ The RK3568 is a low-power, high-performance processor based on the ARM64 archite
 
 Connection method: Stamp hole. The main interfaces are shown in the figure below:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278381485_bb9a6037_390d_4576_aecf_008cc2ef4692.png)
 
 **Front**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
 
 **Back**
 
@@ -98,7 +98,7 @@ Number  Start (sector)    End (sector)  Size Name
 + 12V2A or 12V/3A DC power cable
 + Debug port cable
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/4jjgqgh3fudp9e4ptt622my7_1080X1440.jpg)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -126,15 +126,15 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step1: Identify the serial port number assigned to the PC. In Device Manager, locate the serial port with the name ending in “Ch A”, which corresponds to the actual debug UART. For example, this may appear as COM51; the port number should be based on the actual one detected by the system.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115 200.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115155121660.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115155121660.png)
 
 Step 3: After completing the above settings, the COM port used by the PC can be entered in Saved Sessions. The following figure uses COM51 as an example to save the settings. Then, when opening the serial port, simply click the saved port number.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115155251412.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115155251412.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -142,7 +142,7 @@ After setting up the PC terminal software, connect the serial cable between the 
 
 The following startup message indicates a successful start, allowing a new command line to be entered by pressing Enter:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278321964_f1970b22_1566_4579_aa6e_d305c114c7c3.png)
 
 **Note:** 
 
@@ -150,11 +150,11 @@ The following startup message indicates a successful start, allowing a new comma
 
 First Boot, Recovery Mode:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322192_c1627636_d731_4ba9_9f9c_95a77b1fa479.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322192_c1627636_d731_4ba9_9f9c_95a77b1fa479.png)
 
 Normal Boot:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322394_e0b77e8e_c261_48a1_9048_2aa975640069.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322394_e0b77e8e_c261_48a1_9048_2aa975640069.png)
 
 ### 2.4 Network Login
 
@@ -170,13 +170,13 @@ The OK3568 development board supports SSH services, which are enabled automatica
 
 - **The following is tested with the development board IP 172.16.0.76. Please modify it according to the actual situation. Use ifconfig eth0 172.16.0.76 to change it in the debugging serial port terminal.**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322647_f6dd874b_e614_4e71_b207_c4a903394ef8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322647_f6dd874b_e614_4e71_b207_c4a903394ef8.png)
 
 Open the putty software and make the following settings (the actual IP shall prevail):
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322854_2cc112b3_b2c3_47a4_9ba3_4f72e0948f19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278322854_2cc112b3_b2c3_47a4_9ba3_4f72e0948f19.png)
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323013_c3b34392_8085_47b9_b6b3_d8b65781387e.png)
 
 #### 2.4.2 FTP
 
@@ -192,9 +192,9 @@ Install the file Zilla tool on windows and set it up as shown in the following f
 
 - **The following is tested with the development board IP 172.16.0.76. Please modify it according to the actual situation. Use ifconfig eth0 172.16.0.76 to change it in the debugging serial port terminal.**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
 ### 2.5 Screen Switch
 
@@ -292,7 +292,7 @@ The device tree path is: kernel/arch/arm64/boot/dts/rockchip/OK-x-U40-common.dts
 
 In the kernel source code, open the device DTSI file and locate the following node:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115162849845.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115162849845.png)
 
 The node is disabled by default and needs to be changed to "okay" to enable it. Modify according to the screen requirements.
 
@@ -300,7 +300,7 @@ For example:
 
 To disable HDMI and LVDS screens, change their property to "off". For eDP, modify the corresponding property to "edp".
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115162932754.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115162932754.png)
 
 After saving, recompile to generate the image.
 
@@ -322,7 +322,7 @@ The OK3568-S platform provides excellent support for Qt, particularly for multim
 
 After booting, the development board will display the following desktop:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278338971_c5e0ddf0_4f33_4933_a69e_8219bde9d1ec.png)
 
 #### 3.1.2 Touch Function Overview
 
@@ -332,11 +332,11 @@ When the development board is connected to LVDS and MIPI screens, both display a
 
 Click the desktop icon to open the video player.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339248_4dabc742_6517_472d_9d30_4ec875b1fede.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339578_041f1a51_7337_42e4_ab0c_8556cd86437f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339578_041f1a51_7337_42e4_ab0c_8556cd86437f.png)
 
 Application Interface
 
@@ -346,17 +346,17 @@ Click the desktop icon to open the qcamera video player application. This test a
 
 **Note: The camera must be connected before opening the application.**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278339889_3486bbbd_ac5e_462d_8437_e215f06cf70e.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340062_4cee86c6_56eb_4b90_9157_7277150a77ec.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340062_4cee86c6_56eb_4b90_9157_7277150a77ec.jpeg)
 
 Application Interface
 
 Once the application is opened, click UVC Camera to start the camera preview.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1722222638366_57fd39ef_cb1c_44bf_8d6d_3a5f4e4f575f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1722222638366_57fd39ef_cb1c_44bf_8d6d_3a5f4e4f575f.png)
 
 In Video Mode, click the record button to begin recording. To stop recording, click the recording button. The generated video file will be saved at /userdata/VIDEO0.MOV.
 
@@ -364,15 +364,15 @@ Playback testing can be done using the command: gst-play-1.0 /userdata/VIDEO0.mo
 
 Click the Video Mode button to switch to photo mode, then click Capture to take a photo.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1722222669081_cdf60e5c_d112_40f1_a778_4dddde67669a.png)
 
 The generated files will be stored in the /userdata path.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340766_a3e88dca_ea75_4117_adb4_73cd307acadb.png)
 
 For sensors like the OV13850 and other raw sensors, each sensor corresponds to five device nodes:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278340953_79cdb1e4_186a_4746_bce0_5d95c9f32861.png)
 
 Mainpath: This is an output node from the Rockchip ISP capable of outputting full-resolution images, typically used for taking photos and capturing raw images.
 
@@ -386,11 +386,11 @@ Input-params: This node is used for setting 3A parameters.
 
 OK3568 supports OpenGL ES3.2, click the desktop icon for OpenGL testing.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341147_ea2bf015_ee77_4525_9d84_c299a481cac4.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341344_c3dbc479_6fe5_4eef_ab2d_734ac48de168.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341344_c3dbc479_6fe5_4eef_ab2d_734ac48de168.png)
 
 Application Interface
 
@@ -398,11 +398,11 @@ Application Interface
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341536_11a01c91_7a10_4660_8a6c_a46bc3f15f5e.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341744_96af593c_422a_4247_8683_76aa15092b2d.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341744_96af593c_422a_4247_8683_76aa15092b2d.jpeg)
 
 Application Interface
 
@@ -418,11 +418,11 @@ root@OK3568-buildroot:/# gst-play-1.0/userdata/media/test.mp3 --audiosink="alsas
 
 The "Audiorecorder" is an audio recording test application that can be used to verify if the sound card recording functionality is working properly:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342179_1c23083c_05e4_4330_b895_61fb77073d28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342179_1c23083c_05e4_4330_b895_61fb77073d28.png)
 
 Application Interface
 
@@ -436,11 +436,11 @@ Click **Exit** to exit this test.
 
 The “4G” test program is used to test the OK3568 external 4G module (EC20). Before testing, power off the development board, connect the 4G module, insert the SIM card, power on the development board, and open the test application.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/wayland_screenshot_1970_01_01_00_03_01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/wayland_screenshot_1970_01_01_00_03_01.png)
 
 Application Interface
 
@@ -450,11 +450,11 @@ Click the **Connect** button, and the program will automatically begin the diali
 
 “"WIFI" is a tool for configuring WiFi. The OK3568 platform comes with the AW-CM358 module onboard by default. The Wi-Fi module will appear as the mlan node in the system, with this test corresponding to mlan0 (use other nodes if there are multiple devices):
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342777_71fbf17c_b33f_45fa_8b54_58b2385e1a1f.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342968_2427f6a6_d21b_4a30_a759_482fda9f802f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278342968_2427f6a6_d21b_4a30_a759_482fda9f802f.jpeg)
 
 Application Interface
 
@@ -466,19 +466,19 @@ Open the WiFi test application, enter the correct network name and password, cli
 
 After the connection is successful, click ping to test the network.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343211_ff947899_2693_44bf_aeb9_1eac2e775a2f.jpeg)
 
 #### 3.1.10 Network Configuration Test
 
 When the OK3568 starts, the network card is set to DHCP by default. The "Network" configuration application allows you to choose between DHCP and static modes. In static mode, you can configure the IP address, subnet mask, gateway, and DNS.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343505_ef3b8313_7f9f_4046_9829_854446a777b8.png)
 
 Application Icons
 
 Interface:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343711_d466a46d_345d_4d4c_a18c_a69c2871d95d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343711_d466a46d_345d_4d4c_a18c_a69c2871d95d.png)
 
 Select eth0 or eth1, choose DHCP, and click Apply at the bottom of the interface to restart the network and automatically obtain an IP address.
 
@@ -486,7 +486,7 @@ Click STATIC, select Set Static IP, enter the desired IP address in the IP field
 
 After entering the URL, click ping. The result will be displayed in the left-side prompt box, as shown below:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343972_0afb76db_63cb_45da_a6e5_d22b08cfd289.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278343972_0afb76db_63cb_45da_a6e5_d22b08cfd289.png)
 
 **Note: The IP and other information configured in static mode will be saved in the system's relevant configuration files, so the network settings will persist after each reboot. However, the network information configured in DHCP mode does not need to be considered, as an IP address will be dynamically assigned each time the system restarts.**
 
@@ -494,13 +494,13 @@ After entering the URL, click ping. The result will be displayed in the left-sid
 
 "simplebrowser" is a simple and practical web browser. Ensure a stable network connection when using it, and confirm that DNS is available before accessing external websites. By default, the browser will access the Forlinx Embedded official website upon startup. Click the icon to launch:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344166_5e581467_5fca_46a1_b831_546f334a5bfa.png)
 
 Interface:
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
 
 To exit the browser, use the navigation bar: File -> Quit.
 
@@ -508,11 +508,11 @@ To exit the browser, use the navigation bar: File -> Quit.
 
 "WatchDog" is an application used to test the proper functioning of the watchdog:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278344842_75e227c5_74a1_4d36_8dd5_9570f5fef866.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345098_b4ecb513_38b6_4d9a_9d25_a8fadb05bd75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345098_b4ecb513_38b6_4d9a_9d25_a8fadb05bd75.png)
 
 Application Interface
 
@@ -524,11 +524,11 @@ When feed dog is unchecked, the countdown timer will begin (6 seconds), and the 
 
 "Keypad" is used to test the platform built-in keys:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345285_92ffe334_fb43_466f_b80a_e6e9bdfb6ffa.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/wayland_screenshot_1970_01_01_00_03_30.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/wayland_screenshot_1970_01_01_00_03_30.png)
 
 Application Interface
 
@@ -540,11 +540,11 @@ Press X to exit the current test and return to the system desktop.
 
 The "RTC" application allows you to view and set the current system time:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345659_69a69214_d59b_4f30_a277_79b4ae7638ce.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345878_2faee878_578c_4126_b6e7_ad04ae576bb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278345878_2faee878_578c_4126_b6e7_ad04ae576bb2.png)
 
 Application Interface
 
@@ -556,7 +556,7 @@ Click Auto for network time synchronization, and click apply to synchronize the 
 
 Click the desktop icon to test the UART interface on the OK3568 board:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278347128_407709e9_5608_4d5d_a510_2e6c4c88ca65.png)
 
 Application Icons
 
@@ -564,29 +564,29 @@ The OK3568 serial port supports odd/even parity, 8 data bits, and 1 stop bit.
 
 Before performing a serial loopback test, ensure the required serial port is shorted. There are UART0, UART2, UART8, and UART9 serial ports on the carrier board, as indicated in the carrier board schematic. UART2 is the debug serial port, and UART8 is for Bluetooth. The available serial ports for users are UART0 and UART9, where UART0 uses TTL levels, and UART9 uses RS485 levels. In the development board, they are represented as ttyS0 and ttyS9, respectively. For example, to test the UART0 port, short the UART0 transmit and receive pins as indicated in the development board schematic, corresponding to pins 2 and 4 on P35.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116092611519.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116092611519.png)
 
 Once the shorting is complete, open the test program.
 
 Click the settings on the right side, select the serial port and baud rate parameters, and click apply. The parameters will be set successfully. Next, click the first button on the right to establish a connection.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348053_af679c45_cbcf_40aa_8081_1046c17d4a48.png)
 
 Application Interface
 
 Click the "1" to automatically send the signal. Due to the shorting, the received "1" will also be displayed on the terminal.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348286_2c3fd0dd_574f_4aa5_98b8_52258308b532.png)
 
 #### 3.1.16 Backlight Test
 
 "BackLight" is the application for adjusting LCD backligh
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348482_f019814c_b412_485c_baf3_84bf915802e6.png)
 
 Application Icons
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348704_ba67c57c_27b1_40c3_8206_4f722163f1ca.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348704_ba67c57c_27b1_40c3_8206_4f722163f1ca.jpeg)
 
 Application Interface
 
@@ -596,13 +596,13 @@ Drag the slider in the interface to adjust the LCD backlight brightness. Level 0
 
 Click the desktop icon to enter the next menu:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png)**->**![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278348931_c1b9c9d6_80ba_4d86_8c81_5088e2175809.png)**->**![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349161_81e0b3d5_37d8_447e_8cf5_154d6f26b660.png)
 
 Application Icons
 
 The main frequency of OK3568 CPU is up to 1.9 Ghz. By default, the CPU will dynamically adjust the main frequency according to the load. The main frequency of the CPU can also be fixed by setting.  Click the desktop Power icon to enter the CPU frequency setting page: 
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349339_bced7ad8_3cb7_438d_bc00_e5cf2f7ba5ba.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349339_bced7ad8_3cb7_438d_bc00_e5cf2f7ba5ba.jpeg)
 
 Set Userspace Governor: Set the main frequency in the user status
 
@@ -610,7 +610,7 @@ Set Frequency A55: Set the main frequency
 
 Take the setting of main frequency as an example. If it is necessary to set a fixed frequency, please click Set Userspace Governor, click run, return to the operation interface as shown in the figure above, and click Set Frequency A55 to set.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349538_3585a87e_e5ad_43fb_934a_f97477b071d2.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278349538_3585a87e_e5ad_43fb_934a_f97477b071d2.jpeg)
 
 Select the corresponding frequency for setting according to the requirements.
 
@@ -739,13 +739,13 @@ root@OK3568-buildroot:/# memory_bandwidth.sh
 
 Taking OK3568-S as an example, the printed information is as follows:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115165035411.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250115165035411.png)
 
 The DDR4 write bandwidth is approximately 1480M/s, and the read bandwidth is approximately 5100M/s.
 
 #### 4.1.5 Key Test
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/6nn1mfxl0bv7d56sm7u90f2kp_1080X1440.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/6nn1mfxl0bv7d56sm7u90f2kp_1080X1440.jpg)
 
 Use the keytest command-line tool for keypad testing. Currently, keytest supports testing of the five keys on the carrier board: VOL+, VOL-, MENU, ENTER, and HOME, with key codes 115, 114, 139, 28, and 102, respectively. When the keys are pressed and released in sequence, the terminal will display the following output:
 
@@ -773,7 +773,7 @@ OK3568-S serial port supports odd and even parity, 8 data bits, and 1 stop bit.
 
 Before performing a serial loopback test, ensure the required serial port is shorted. There are UART0, UART2, UART8, and UART9 serial ports on the carrier board, as indicated in the carrier board schematic. UART2 is the debug serial port, and UART8 is for Bluetooth. The available serial ports for users are UART0 and UART9, where UART0 uses TTL levels, and UART9 uses RS485 levels. In the development board, they are represented as ttyS0 and ttyS9, respectively. For example, to test the UART0 port, short the UART0 transmit and receive pins as indicated in the development board schematic, corresponding to pins 2 and 4 on P35.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116092611519.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116092611519.png)
 
 Once the shorting is complete, open the test program.
 
@@ -792,7 +792,7 @@ Next, the test method for UART9\_485 is introduced:
 
 Connect the 485\_A0, 485\_B0, and GND\_485\_0 pins from the P23 port to the computer through a USB-to-485 module, as shown below:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116093341161.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116093341161.png)
 
 Input the following command and observe the information received by the serial port debugging tool:
 
@@ -803,7 +803,7 @@ Send test data:
 forlinx_uart_test.1234567890...
 ```
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116103947634.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116103947634.png)
 
 Send the data from the board back through the serial port debugging tool and observe the information received by the board:
 
@@ -983,7 +983,7 @@ ice C4:FE:5B:17:C7:78 ServicesResolved: yes
 After successful pairing, the files on the mobile phone can be shared to the development board through Bluetooth.
 ```
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278350913_df9c333d_0740_4ed5_931c_c055cae5b122.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278350913_df9c333d_0740_4ed5_931c_c055cae5b122.png)
 
 To exit bluetoothctl, type quit. The received files will be located in the /root directory.
 
@@ -1011,7 +1011,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 [CHG] Transfer /org/bluez/obex/client/session0/transfer0 Transferred: 8046 (@8KB/s 09:57)
 ```
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278351113_a7ae10ff_6f83_4923_8783_10849f874870.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278351113_a7ae10ff_6f83_4923_8783_10849f874870.png)
 
 **Note: For certain manufacturers' phones, received files must include a file extension; otherwise, they may be rejected by the Android system. Therefore, please try to use files with extensions for testing.**
 
@@ -1019,7 +1019,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 RTC Test, primarily involves setting the software and hardware clock using the date and hwclock tools. The test checks whether the software clock synchronizes with the RTC clock after the development board is powered off and then powered on again (Note: Ensure that a coin battery is installed on the board).
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116130949811.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116130949811.png)
 
 ```plain
 root@OK3568-buildroot:/# date -s "2022-2-9 10:50:00"      // Set the system time
@@ -1060,11 +1060,11 @@ At this point, the arrow cursor on the screen disappears, indicating that the mo
 
 The OK3568-S supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB devices such as USB mice, USB keyboards, and USB flash drives to any of the onboard USB HOST interfaces, and these devices support hot-plugging. Take mounting USB flash driver as an example:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132226258.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132226258.png)
 
 The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132643569.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132643569.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1284,7 +1284,7 @@ udhcpc: sending discover
 
 The OK3568-S development board comes pre-installed with the lighttpd web server. The lighttpd service starts automatically upon system boot. You can access the web server pages by entering the development board IP address in a web browser on the PC, as shown below:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278352301_9a9c652e_6632_4390_8e62_63297b6458da.png)
 
 **Note: The development board network IP must be in the same subnet as the PC network IP, or the PC must be in the same network subnet as the development board.**
 
@@ -1292,7 +1292,7 @@ The OK3568-S development board comes pre-installed with the lighttpd web server.
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P39) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116134440954.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116134440954.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1335,13 +1335,13 @@ The OK3568-S supports a 4G module. Connect the 4G module and insert the SIM card
 
 **Note: Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing.**
 
-  ![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161711327.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161711327.png)
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278353197_4e3becb0_3a56_485d_b311_76aae48c0b8a.png)
 
 
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161813469.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117161813469.png)
 
 ```plain
 root@OK3568-buildroot:/# quectelCM &
@@ -1495,7 +1495,7 @@ Manufacturer Documentation / Rockchip\_Develop\_Guide\_Can\_CN.pdf
 
 There is a controllable blue LED on the SoM. When the board is powered on, the LED blinks. You can disable this feature by modifying the device tree file arch/arm64/boot/dts/rockchip/OK-x-U40-common.dtsi to add the attribute default-state = "off" to the LEDs node, and change linux,default-trigger to "none".
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116142724617.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116142724617.png)
 
 Testing Procedure:
 
@@ -1526,13 +1526,13 @@ Power off the board, set the S2 DIP switch to ON, and configure it in Host mode.
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132643569.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250116132643569.png)
 
 **Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.**
 
 Host mode:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356066_21e3f70f_3252_4f10_b675_e571515d78f2.png)
 
 Device mode:
 
@@ -1543,7 +1543,7 @@ root@OK3568-buildroot:~# usbdevice stop
 root@OK3568-buildroot:/# modprobe g_mass_storage file=/dev/mmcblk1p1 luns=1 stall=0 removable=1
 ```
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356261_13231759_c2d6_4b52_985f_fcbaeb92f13c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356261_13231759_c2d6_4b52_985f_fcbaeb92f13c.png)
 
 If the drive letter does not appear in Windows, try unplugging and re-plugging the Type-C cable.
 
@@ -1551,21 +1551,21 @@ If the drive letter does not appear in Windows, try unplugging and re-plugging t
 
 Before powering on the system, insert the MiniPCIe module into the MiniPCIe slot on the carrier board. After powering on and starting Linux, use the lspci command to check that the device is enumerated successfully.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356445_44090118_cf1e_4fd3_956c_7e2904bdbda4.png)
 
 Due to the variety of PCIe devices, some may not be supported by default by the kernel and may require manual addition of the corresponding device driver.
 
 Take the E1000 PCIe network card as an example; the driver is already in the Linux kernel by default. After inserting the network card and powering on, you will see the enumeration information, and the Ethernet interface will appear.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356661_e14347c6_4d21_4d8a_aca1_bb52a3a00591.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356661_e14347c6_4d21_4d8a_aca1_bb52a3a00591.png)
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278356869_dd454fa2_ee1e_41e7_ad7e_2ef2434c41b1.png)
 
 #### 4.1.26 ADC Test
 
 The ADC pins are routed out from the P34, as shown below. GPADC\_A, GPADC\_B, and GPADC\_C correspond to ADC channels 1, 2, and 3, respectively:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117114318607.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/image_20250117114318607.png)
 
 Short the pins GPADC\_A, GPADC\_B, and GPADC\_C to pins 2 or 4 on P34. Below is an example using GPADC\_A, where GPADC\_A is shorted to pin 4. Adjust the potentiometer R357 and input the following command to observe the results:
 
@@ -2331,11 +2331,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click "Driver Installation”.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 6.1.2 OTG Full Flashing Test
 
@@ -2352,19 +2352,19 @@ OTG and USB3.0 are multiplexed, so the DIP switch must be adjusted.
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
 
 Click "Advanced Functions" -> "Erase All" to erase the operation.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
 
 Click the "Upgrade Firmware" button -> "Upgrade" to begin upgrading.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 **Note: After the upgrade is completed, the system will automatically restart twice. The first restart updates some information, and the user is \[root@buildroot]. Wait patiently. The second restart will allow the system to be used normally with the user \[root@OK3568-buildroot:/].**
 
@@ -2378,19 +2378,19 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
 After selecting the firmware, click “Start.” The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
 Downloading firmware:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373048_22012107_58e4_4093_85ac_ca9726722f00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373048_22012107_58e4_4093_85ac_ca9726722f00.png)
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 #### 6.1.2 OTG Step Flashing Test
 
@@ -2400,35 +2400,35 @@ During the development phase, performing full flashing every time can be time-co
 
 First, after OK3568-linux-release is compiled, a separate partition image can be found in the rockdev directory.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373500_27a1231c_b0f0_4bf8_87d9_7276d40b3ce0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373500_27a1231c_b0f0_4bf8_87d9_7276d40b3ce0.png)
 
 Take separate flashing boot. img (including device tree and startup logo) as an example to show the flashing method.
 
 Connect the development board and host using a Type-C cable, press and hold the recovery button, then press the reset button for system reset. After about two seconds, release the recovery button. The system will prompt “ Find Loader Device”.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the area on the right side of the partition to select the partition image and check the partition.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
 **MASKROM Mode Introduction**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the BOOT key, then press the reset key to enter maskrom mode for burning.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The burning process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -2446,13 +2446,13 @@ TF card making and testing.
 
 Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any directory on windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and start, the system will automatically enter the burning process. When the burning is complete, both the screen and the serial port will prompt:
 
@@ -2469,6 +2469,6 @@ At this time, remove the TF card, and the system will automatically restart (do 
 
 Serial port information during the burning process:
 
-![Image](./images/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375582_f434b9b5_a919_4466_a07c_492b79b49a23.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. As shown in the figure above, the burning process takes about 7 minutes. Please wait patiently during the burning process.

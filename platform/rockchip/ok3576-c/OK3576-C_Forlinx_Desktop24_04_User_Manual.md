@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -148,15 +148,15 @@ In the following, take the putty terminal software as an example to introduce th
 
 Step 1: Connect the serial port number of the computer---check the serial port number from the device manager (Based on the port actually recognized by the computer );
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214204934_9bb8a98b_75fb_4a89_bba4_b1acbe4a0c5c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214204934_9bb8a98b_75fb_4a89_bba4_b1acbe4a0c5c.png)
 
 Step 3: After the setting, input the COM port used by the computer in Saved Sessions. The following figure takes COM3 as an example, save the settings, open the serial port again later, and click on the saved port number;
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214205145_e2882ae8_1022_497a_95ea_aa583a02e011.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214205145_e2882ae8_1022_497a_95ea_aa583a02e011.png)
 
 Step 4: Turn on the development board's power switch. The serial port will print out the information output, including the username and password for Linux (no root privileges). If you need to use the root login, then the username and password are root and root, respectively.
 
@@ -271,13 +271,13 @@ Forlinx Desktop system is a desktop operating system built by Forlinx on the bas
 
 The desktop is displayed as follows after the board is booted
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407567_b3b7ced4_a2d5_4120_b660_eef975765b87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407567_b3b7ced4_a2d5_4120_b660_eef975765b87.png)
 
 #### 3.1.1 Virtual Keyboard Test
 
 In the desktop environment, a virtual keyboard is installed in the OK3576 Forlinx Ubuntu desktop environment to make it easier for customers to enter text without a physical keyboard. Click the icon in the upper left corner, select accessories, and click onboard.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407665_db580622_9dd3_46e8_aa03_f1e757bf2ab4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407665_db580622_9dd3_46e8_aa03_f1e757bf2ab4.png)
 
 #### 3.1.2 Network Configuration Test
 
@@ -287,7 +287,7 @@ Click the network settings icon in the upper right corner:
 
 If you want to configure eth0, click the "wired connection1" button. Set and configure in the Network option interface, click the "IPv4" tab, and configure in the "Manual" interface as follows.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407807_11475b95_6837_42d1_a119_07ec830e3b1a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407807_11475b95_6837_42d1_a119_07ec830e3b1a.png)
 
 Click save and restart the board to change to the static IP.
 
@@ -297,15 +297,15 @@ OK3576 platform supports 2 x WIFI Bluetooth 2-in-1 modules: AW-CM358. WIFI suppo
 
 Click on the network icon in the upper right corner and select Avallable networks.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407871_2943fe8b_cc54_443d_b7e6_e1c510287024.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407871_2943fe8b_cc54_443d_b7e6_e1c510287024.png)
 
 Select the wifi you want to connect to, take forlinx-wlan as an example, click forlinx-wlan and enter the password.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407954_47acee36_666d_4f70_b629_8868cba037ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624407954_47acee36_666d_4f70_b629_8868cba037ef.png)
 
 Click "connect" and the connection is completed:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408034_13f67fa7_247d_4efc_b2f8_d7e6b2eeb0cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408034_13f67fa7_247d_4efc_b2f8_d7e6b2eeb0cd.png)
 
 #### 3.14 Bluetooth Test
 
@@ -313,15 +313,15 @@ This section demonstrates the use of Bluetooth for data transmission between a m
 
 Click on the Bluetooth icon in the upper right corner.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408114_b9181d62_10d2_4b92_b140_d8325ceab252.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408114_b9181d62_10d2_4b92_b140_d8325ceab252.png)
 
 Click on adapters and select Always visible.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408188_1b0c64ef_f937_4773_9535_52b6f945eb43.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408188_1b0c64ef_f937_4773_9535_52b6f945eb43.png)
 
 Turn on your phone and pair it with 3576 Bluetooth. The device name is ok3576.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408264_655addc3_9103_4649_a9cb_f51e0d2c435d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408264_655addc3_9103_4649_a9cb_f51e0d2c435d.png)
 
 Click on the connection, and the following interface will pop up when connecting.
 
@@ -331,35 +331,35 @@ Start transmitting data below.
 
 **1\. Transfer files from mobile phone to board.**
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408408_b287852e_e171_434b_87d5_7d04a7d74d80.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408408_b287852e_e171_434b_87d5_7d04a7d74d80.png)
 
 After selecting the file on the phone and transferring it to the board, the interface shown in the figure above will pop up. Click accept to receive the file, and after the transfer is completed, it will be displayed as shown in the figure below:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408477_a6f84574_ca17_41dc_aa28_c45e5f938ef0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408477_a6f84574_ca17_41dc_aa28_c45e5f938ef0.png)
 
 The transferred files will be placed in/home/worldinx/Downloads:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408538_5ead769f_403e_42a1_8aa3_2d841df6a50c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408538_5ead769f_403e_42a1_8aa3_2d841df6a50c.png)
 
 **2\. Transfer files from the board to the mobile phone:**
 
 First, click on the Bluetooth icon and select “Send File to Device”.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408603_6c9e5d95_1b78_4dca_ba2e_98b279058f2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408603_6c9e5d95_1b78_4dca_ba2e_98b279058f2d.png)
 
 Enter the following interface:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408675_6ab244e1_7381_4cb9_9a16_cc24bccce537.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408675_6ab244e1_7381_4cb9_9a16_cc24bccce537.png)
 
 Select a file to send: Select a file under/home/worldinx or a file owned by forlinx, otherwise the transfer will fail.
 
 Here, select the file that was just transferred from the mobile phone to the board. Click the 1748056613406.jpg to display the following interface:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408750_0e4942f0_060f_434e_893d_5600ace5a427.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408750_0e4942f0_060f_434e_893d_5600ace5a427.png)
 
 Select my device (helloword).
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408826_780a7da3_6e6e_462b_ba13_546643904f0d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408826_780a7da3_6e6e_462b_ba13_546643904f0d.png)
 
 Wait for the transfer to complete and you will see the file on your phone.
 
@@ -371,11 +371,11 @@ The specific of operation is as follows:
 
 Click the icon in the upper right corner.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408899_5f73f6a4_a557_47d4_8e77_90536957af3c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408899_5f73f6a4_a557_47d4_8e77_90536957af3c.png)
 
 Click Inetrnet and select firefox Web Broser.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408981_2b307f93_5bc6_4ae9_ad31_671f912e67c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624408981_2b307f93_5bc6_4ae9_ad31_671f912e67c7.png)
 
 Then you can surf the Internet normally.
 
@@ -547,7 +547,7 @@ The schematic diagram of the OK3576 platform carrier board indicates the presenc
 
 Testing will use two RS485 ports, UART5 and UART6. Before testing, ensure proper connection of the two RS485 interfaces: connect A to A and B to B. The two RS485 carrier board interfaces are as follows:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410533_572d26d0_b28f_4a4d_81eb_646bfcd89445.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410533_572d26d0_b28f_4a4d_81eb_646bfcd89445.png)
 
 Receive end
 
@@ -573,7 +573,7 @@ Test effect:
 
 OK3576-C development board provides 8 x ADC internally, with saradc2, saradc4, saradc5, saradc6, and saradc7 accessible at port P18. These channels can be tested by connecting jumpers to the adjacent variable resistors. The hardware diagram of the ADC pins is as follows. The current chip uses a 1.8V reference voltage corresponding to a maximum value of 4096 for the 12-bit ADC. Select saradc4 for testing and use jumper caps to connect pins 3 and 4 of port P18.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410607_c07c6362_f715_4af1_9fd9_706d7c9636f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410607_c07c6362_f715_4af1_9fd9_706d7c9636f8.png)
 
 Test adjustable resistance value
 
@@ -589,7 +589,7 @@ root@localhost:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 
 1\. Insert the TF card into the TF card slot on the carrier board before powe-up . Then power up and start, run the command dmesg, and the terminal will have the following printed information:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1718954319110_be6979a7_9b12_4eb3_bd31_46c8ef047708.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1718954319110_be6979a7_9b12_4eb3_bd31_46c8ef047708.png)
 
 2\. Check the mount directory:
 
@@ -654,7 +654,7 @@ root@localhost:~# dd if=/test of=/dev/null bs=1M
 
 Connect the USB mouse to the USB interface of the OK3576 platform and use the dmesg command, the serial terminal prints the following information:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410666_cde5c787_464d_4b88_a517_22e933abc8b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410666_cde5c787_464d_4b88_a517_22e933abc8b7.png)
 
 At this time, the arrow cursor appears on the screen, the mouse can work normally.
 
@@ -666,7 +666,7 @@ The terminal prints information about the USB flash drive, and since many types 
 
 1\. After the development board booting, connect the USB interface disk to the USB host interface of the development board. The default log print information is low, so there will be no print information. Use the dmesg command to view and get information about the USB flash drive.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410725_7e412a05_c27e_4429_80a8_d678be8c6441.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410725_7e412a05_c27e_4429_80a8_d678be8c6441.png)
 
 2\. Check the mount directory:
 
@@ -912,11 +912,11 @@ key114 Released                                                       // VOL-rel
 
 The schematic diagram of the OK3576 platform carrier board indicates the presence of UART0, UART4, UART5, and UART6, totaling 4 serial ports. UART0 is designated as the debug port, UART4 as the Bluetooth port, and UART5 and UART6 as 485 ports.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410803_60803011_d8f8_4d61_8348_4ed4b9232462.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410803_60803011_d8f8_4d61_8348_4ed4b9232462.png)
 
 Testing will use two RS485 ports, UART5 and UART6. Before testing, ensure proper connection of the two RS485 interfaces: connect A to A and B to B. The two RS485 carrier board interfaces are as follows:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410870_60414dee_6ffb_403f_9503_5cb0e70dbcb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410870_60414dee_6ffb_403f_9503_5cb0e70dbcb2.png)
 
 Use two terminals to log in to the board, one UART0 debug port and the other using SSH.
 
@@ -1178,7 +1178,7 @@ The OK3576-C platform has two CAN bus interfaces and connection methods: Connect
 
 Short-circuit CAN0 and CAN1, as shown：
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410942_cdbb3d26_47c1_4690_9254_70de757cdb6a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1752624410942_cdbb3d26_47c1_4690_9254_70de757cdb6a.png)
 
 Execute the following command in the development board terminal:
 
@@ -1896,11 +1896,11 @@ Extract the above path file to any directory and run it with administrator privi
 
 Open DriverInstall.exe
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214251487_8975ec46_6ec0_47ed_9a87_15161a370c5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214251487_8975ec46_6ec0_47ed_9a87_15161a370c5e.png)
 
 Click "Driver Installation”
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214251723_98517c31_82d2_4e6d_9c09_9a214f28b101.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214251723_98517c31_82d2_4e6d_9c09_9a214f28b101.png)
 
 #### 6.1.2 OTG Full Flashing Test
 
@@ -1912,23 +1912,23 @@ It is a development tool provided by Rockchip Micro. Unzip it to a full English 
 
 **Note: The condition for recognition is that the development board is powered up and the RECOVER key is in the pressed state. Theoretically, Rockchip development tools have no requirements for the unzip directory. However, some users have feedback that the unzip directory should be in full English. If the tool doesn't match the following figure, please consider unzipping it in an English directory. During OTG flashing, it is necessary to link the OTG cable to the typeC port of the board, as shown in the following figure:**
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750318796237_22e349ae_0114_48aa_9d91_8d325204fb91.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750318796237_22e349ae_0114_48aa_9d91_8d325204fb91.png)
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319091973_df49a9b7_0487_45bb_ae0f_e17c6d58fb45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319091973_df49a9b7_0487_45bb_ae0f_e17c6d58fb45.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will be parsing the firmware, so wait a while.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319339986_e8e6060c_5e99_4928_a142_e56dfd22b0f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319339986_e8e6060c_5e99_4928_a142_e56dfd22b0f1.png)
 
 Click "Advanced Functions"-> "Erase All" to erase.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319533424_f65d5c86_78e3_4a0d_849b_f8900eb94eb0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319533424_f65d5c86_78e3_4a0d_849b_f8900eb94eb0.png)
 
 Click the "Upgrade Firmware" button-> "Upgrade" to upgrade.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319645988_ab89d472_d74b_4ef3_abdd_44fb5ac64af7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750319645988_ab89d472_d74b_4ef3_abdd_44fb5ac64af7.png)
 
 #### 6.1.3 OTG Step Programming Test
 
@@ -1942,29 +1942,29 @@ Take separate programming boot.img (including device tree and startup logo) as a
 
 Use the Type-C cable to connect the development board to the host. Press and hold the recover key and do not release it. Then press the reset key to reset the system. Release the recover key after about two seconds. The system will prompt to discover the loader device.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321145954_e538cc24_efea_42d3_ac79_f4dea297807d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321145954_e538cc24_efea_42d3_ac79_f4dea297807d.png)
 
 Click the "Device Partition Table" button to automatically read the partition address.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321169101_0b9fd528_7444_4dfd_80bf_8a3667939d1e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321169101_0b9fd528_7444_4dfd_80bf_8a3667939d1e.png)
 
 The prompt asks if you want to update the download address. Clicking "Yes" will result in a successful reading of the partition table.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321192039_f765e1ab_4b15_4520_977d_a882316605d1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321192039_f765e1ab_4b15_4520_977d_a882316605d1.png)
 
 Click the right test area of the partition to select the partition mirror, and check the partition.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321827091_49476e2a_c84f_428e_864a_ef66d28f5e78.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321827091_49476e2a_c84f_428e_864a_ef66d28f5e78.png)
 
 Click the "Execute" button will automatically burn and restart.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321680514_c4f87f44_cc37_4eea_9f59_8a19405c108f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321680514_c4f87f44_cc37_4eea_9f59_8a19405c108f.png)
 
 **Introduction to MASKROM mode**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the Maskrom key (On the right side of the RTC batter) and then press the reset key to enter the maskrom mode for flashing.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321945719_2ce43c88_a38d_42ca_9fc3_53eae15b4000.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1750321945719_2ce43c88_a38d_42ca_9fc3_53eae15b4000.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The flashing process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -1980,13 +1980,13 @@ Copy SDDiskTool \_ v1.76.zip from the user profile tool directory to any windows
 
 SD\_Firmware\_Tool.exe.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214252666_a91fc93c_b5bf_476b_bff2_ebe975b5ea7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214252666_a91fc93c_b5bf_476b_bff2_ebe975b5ea7b.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214252868_8740d473_a961_43fe_8444_8cc7f9e007ac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214252868_8740d473_a961_43fe_8444_8cc7f9e007ac.png)
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214253092_fcfe76c3_478e_41b5_bf25_b53b68a368d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214253092_fcfe76c3_478e_41b5_bf25_b53b68a368d6.png)
 
 Insert the TF card into the development board and start it, and the system will automatically enter the flashing process. After the programming is completed, the screen and serial port will prompt:
 
@@ -2006,6 +2006,6 @@ When mass production, you can judge whether the burn-in is completed or not acco
 
 Serial port information during the burning process:
 
-![Image](./images/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214253365_d2c3acc8_5556_408b_9a88_7b9305caf707.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Forlinx_Desktop24_04_User_Manual/1726214253365_d2c3acc8_5556_408b_9a88_7b9305caf707.png)
 
 If the automatic restart does not occur after removing the TF card, a manual restart can also complete the burning. Please be patient during the burning process.

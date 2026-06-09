@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.   
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
-The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.  
+The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
 ## Revision History
 
@@ -61,7 +61,7 @@ Connection method: Stamp hole+board to board. The main interfaces are shown in t
 
 **Front**
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1756975775208_046de95e_acfa_48b4_8f3c_ffa34704a665.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1756975775208_046de95e_acfa_48b4_8f3c_ffa34704a665.png)
 
 **Note: Hardware specifications are not covered in this software manual. Before development, please refer to the “ OK3506B-S12\_User’s Hardware Manual” to understand the product naming and hardware configuration.**
 
@@ -115,7 +115,7 @@ The debug serial port on the development board is a USB Type-C port. You can con
 + Ethernet cable (for network login)
 + Display screen — connect the screen according to the development board interface (optional if display is not needed)
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1756975776768_cab33d7a_0e8d_48b2_906f_5f9566572f03.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1756975776768_cab33d7a_0e8d_48b2_906f_5f9566572f03.png)
 
 ### 2.2 Driver Installation Failure
 
@@ -139,15 +139,15 @@ The following example uses PuTTY to illustrate the serial login procedure:
 
 Step 1: Confirm the serial port number connected to the computer, checking the port number in Device Manager, based on the actual port recognized by the computer;
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
 
 Step 2: Open PUTTY and set the serial line according to the computer’s COM port, with a baud rate of 115200;
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1736730512384_873b6eed_2f4f_4c7e_a0c6_74559ee3ba64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1736730512384_873b6eed_2f4f_4c7e_a0c6_74559ee3ba64.png)
 
 Step 3: After the above settings, input the computer’s COM port in Saved Sessions (e.g., COM85 as an example), save the settings. For subsequent serial port openings, simply click on the saved port number;
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1736730550283_79cf2052_3505_4631_828e_5f7c6735f691.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1736730550283_79cf2052_3505_4631_828e_5f7c6735f691.png)
 
 Step 4: Turn on the power switch of the development board. Boot messages will be displayed on the serial terminal, and the system will log in automatically without a password.
 
@@ -178,9 +178,9 @@ Before logging in over the network, make sure the direct network connection betw
 
 3\. Open a command prompt with administrator privileges using cmd, and use the ping command to test the network connection between the PC and the development board.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 If data is returned, the network connection is working properly.
 
@@ -193,11 +193,11 @@ If data is returned, the network connection is working properly.
 
 1\. Use SSH to log in to the development board.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735030561381_30515e56_282f_4641_9f6e_3ab5bc5e3a99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735030561381_30515e56_282f_4641_9f6e_3ab5bc5e3a99.png)
 
 Click "Open". When the dialog box shown below appears, click "Yes" to enter the login screen.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
 
 ```bash
 Login as：root
@@ -216,11 +216,11 @@ Install FileZilla on Windows and configure it as shown in the figure below. Both
 
 Open FileZilla, click File, and then select "Site Manager".
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
 
 After a successful login, you can upload and download files.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 System Shutdown
 
@@ -434,7 +434,7 @@ There are 2 x UART on the development board:
 
 This test uses UART1. Short the TXD and RXD pins of the 40-pin header with a jumper cap, as shown in the figure.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1756975778317_035df152_48fc_4d5b_b2b5_56baa64fbca8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1756975778317_035df152_48fc_4d5b_b2b5_56baa64fbca8.png)
 
 Enter the following command in the development board serial port to test UART receiving:
 
@@ -653,7 +653,7 @@ root@ok3506-buildroot:/# ls /dev/ttyXRUSB*
 
 3\. The mapping between the four extended serial ports and their device nodes is shown in the figure below;
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
 
 4\. For the test method, refer to Section 4.6 UART Test.
 
@@ -677,7 +677,7 @@ There is 1 x OTG device interface, which can be used for firmware flashing, ADB 
 
 The Rockchip development tool will show “An ADB device has been found.” You can then use ADB tools for debugging.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
 
 ### 3.12 Ethernet Configuration
 
@@ -792,7 +792,7 @@ Then recompile, repack, and flash the image again.
 
 There is a 40Pin header, which includes two I2C buses: I2C0 and I2C2.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1756975778438_e7f7be47_b315_4b09_98d6_231e517554d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1756975778438_e7f7be47_b315_4b09_98d6_231e517554d9.png)
 
 View I2C node:
 
@@ -805,7 +805,7 @@ root@ok3506-buildroot:/# ls /dev/i2c-*
 
 There is a 40Pin header, which includes two SPI buses: SPI0 and SPI1.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1756975778574_20c653e4_7153_4652_9f36_872a135e2e97.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1756975778574_20c653e4_7153_4652_9f36_872a135e2e97.png)
 
 View SPI node:
 
@@ -830,11 +830,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.Open DriverInstall.exe
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735267645818_f515fa0c_ce94_4d61_a5a0_664ed7c0640a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735267645818_f515fa0c_ce94_4d61_a5a0_664ed7c0640a.png)
 
 Click Install Driver.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735267671413_d07d1e53_8b6f_4559_969f_0d921a473a55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735267671413_d07d1e53_8b6f_4559_969f_0d921a473a55.png)
 
 #### 4.1.2 OTG Full Flashing Test
 
@@ -852,11 +852,11 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 
 Open the Rockchip development tool:
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735267787698_646f1b57_da67_431b_b28c_ad14f616217a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735267787698_646f1b57_da67_431b_b28c_ad14f616217a.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735267965892_2e0b0d71_79d8_463f_b66a_0f429fabe1a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735267965892_2e0b0d71_79d8_463f_b66a_0f429fabe1a1.png)
 
 Click the "Upgrade" button to upgrade.
 
@@ -864,7 +864,7 @@ Click the "Upgrade" button to upgrade.
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the MASKROM key, then press the reset key to enter maskrom mode for burning.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735268040103_4347a6c1_4838_4159_a130_c2190284c7e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735268040103_4347a6c1_4838_4159_a130_c2190284c7e2.png)
 
 At this time, the system will prompt the discovery of a maskrom device. The burning process is consistent with the loader mode, so it is best to use an update.img burning.
 
@@ -886,7 +886,7 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 After selecting the firmware, click Start. The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
 #### 4.1.3 OTG Step Flashing Test
 
@@ -902,6 +902,6 @@ Connect the development board and host using a Type-C cable, press and hold the 
 
 Click the Device Partition Table button. The partition addresses will be read automatically. When prompted whether to update the download address, click Yes. After the partition table is read successfully, select the partition image in the area on the right side of the partition entry and check the corresponding partition.
 
-![Image](./images/OK3506B-S12_Linux6_1_99_User_Manual/1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
 
 Click the “Execute” button to automatically flash and restart.

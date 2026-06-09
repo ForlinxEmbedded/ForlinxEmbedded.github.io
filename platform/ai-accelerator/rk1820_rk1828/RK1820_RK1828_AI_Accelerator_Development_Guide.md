@@ -5,7 +5,7 @@
 ---
 
 
-## 1\. Overview
+## 1. Overview
 
 This document is intended for developers who need to deploy AI models using the RK1820/RK1828 co-processor on the OK3588-C development board platform. It covers hardware architecture, development environment setup, model conversion, quantization, and deployment for CNN/LLM/VLM models, as well as the usage of the RKLLM3 Server.
 
@@ -23,7 +23,7 @@ RKNN3 is an independent toolchain from the previous RKNN-Toolkit / RKNN-Toolkit2
 
 ### 1.1 RKNN3 SDK Software Framework
 
-![Image](./images/RK1820_RK1828_AI_Accelerator_Development_Guide/1774855123996_079da0c4_487c_4457_87f4_adb38b07f5cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1774855123996_079da0c4_487c_4457_87f4_adb38b07f5cd.png)
 
 Core components of the board-side runtime environment:
 
@@ -404,12 +404,12 @@ python export_llm.py  --quant #AWQ+GRQ quantization (GPU)
 
 File / Module
 
-| File| Creator| Content| Deployed to Device?| Description|
-|----------|----------|----------|----------|----------|
-|  `.onnx`  | export\_llm.py | Model architecture and weights| No| Intermediate product, input for export\_rknn.py conversion.|
-|  `.config.pkl`  | export\_llm.py | LLM architecture config (vocab\_size, hidden\_size, chat\_template, etc.)| No| Intermediate product, required by load\_llm in export\_rknn.py.|
-|  `.tokenizer.gguf`  | export\_llm.py | Tokenizer (vocabulary + merge rules, GGUF format)| **Yes**| Converts text to token ID on the device side.|
-|  `.embed.bin`  | export\_llm.py | Embedding layer weights (FP16)| **Yes**| Token → embedding executed on the host side (OK3588-C board) due to limited RK182X DRAM, not on the coprocessor.|
+| File | Creator | Content | Deployed to Device? | Description |
+|---|---|---|---|---|
+| .onnx | export_llm.py | Model architecture and weights | No | Intermediate product, input for `export_rknn.py` conversion. |
+| .config.pkl | export_llm.py | LLM architecture config (`vocab_size`, `hidden_size`, `chat_template`, etc.) | No | Intermediate product, required by `load_llm` in `export_rknn.py`. |
+| .tokenizer.gguf | export_llm.py | Tokenizer (vocabulary + merge rules, GGUF format) | **Yes** | Converts text to token ID on the device side. |
+| .embed.bin | export_llm.py | Embedding layer weights (FP16) | **Yes** | Token → embedding executed on the host side (OK3588-C board) due to limited RK182X DRAM, not on the coprocessor. |
 
 **Step 2: Conversion to RKNN**
 
@@ -919,7 +919,7 @@ curl http://localhost:8080/v1/chat/completions \
 
 Results:
 
-![Image](./images/RK1820_RK1828_AI_Accelerator_Development_Guide/1776913942396_f07899be_18c3_4e13_b2bf_729817d37a96.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1776913942396_f07899be_18c3_4e13_b2bf_729817d37a96.png)
 
 **If testing remotely from a PC, replace localhost with the board IP.**
 
@@ -1192,7 +1192,7 @@ curl http://localhost:8080/v1/chat/completions \
 
 **Results:**
 
-![Image](./images/RK1820_RK1828_AI_Accelerator_Development_Guide/1776914595811_2a0b4e8c_de37_499f_aaf1_fc7eeb951002.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1776914595811_2a0b4e8c_de37_499f_aaf1_fc7eeb951002.png)
 
 In another terminal, use Python to send an image + text request:  
 
@@ -1224,7 +1224,7 @@ print(json.loads(resp.read()))
 
 **Results:**
 
-![Image](./images/RK1820_RK1828_AI_Accelerator_Development_Guide/1776914829674_9745f800_a529_4484_9647_6a6622be301e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1776914829674_9745f800_a529_4484_9647_6a6622be301e.png)
 
 ### 7.5 Performance Data
 
