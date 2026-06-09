@@ -11,7 +11,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 This document corresponds to the UP4 SoM product, describing the schematic design of the UP4 peripheral circuits, PCB design, troubleshooting approaches for common interface issues, design features of functional interfaces, and more. It assists engineers in quickly familiarizing themselves with the product, facilitating maintenance and development tasks.
 
-The designs provided in this document are for guidance only. During application design, please adapt your designs based on actual scenarios and conditions. For any inquiries, please contact our company’s technical support.
+The designs provided in this document are for guidance only. During application design, please adapt your designs based on actual scenarios and conditions. For any inquiries, please contact our company’s technical support. 
 
 ## Revision History
 
