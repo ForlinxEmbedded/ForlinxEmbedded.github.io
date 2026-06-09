@@ -442,7 +442,7 @@ The Forlinx OK3588 BSP is managed through a manifest repository, which requires 
 When pulling from GitHub, please configure a key to establish a connection. If you have not yet set up GitHub authentication on your local machine, refer to Section 1.3 below for setup instructions.
 
 ```plain
-https://github.com/FLembedded/manifests_linux				// manifest repository address
+https://github.com/Forlinx-Embedded/manifests_linux				// manifest repository address
 ```
 
 Once all the above requirements are met, you can follow the following steps to pull the source code:
@@ -457,7 +457,7 @@ forlinx@ubuntu:~$ cd rk3588
 ##### 1.2.2 Initializing the Repo Repository
 
 ```plain
-forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:FLembedded/manifests_linux.git -m platforms/ok3588/ok3588-buildroot.xml
+forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:Forlinx-Embedded/manifests_linux.git -m platforms/ok3588/ok3588-buildroot.xml
 ```
 
 ##### 1.2.3 Synchronizing the Code
@@ -517,7 +517,7 @@ When compiling buildroot, the source code of the software package needs to be pu
 Get the Pre-downloaded dl Package
 
 ```plain
-OK-linux-source$ curl -O -L https://github.com/FLembedded/buildroot_dl/releases/download/source_packages/dl_packages.tar.gz
+OK-linux-source$ curl -O -L https://github.com/Forlinx-Embedded/buildroot_dl/releases/download/source_packages/dl_packages.tar.gz
 ```
 
 The download time for the tar package depends on your network speed. In this test, it averaged about 5 MB/s and completed in roughly 3 minutes. Typically, the download should take between 2 and 10 minutes.
@@ -540,7 +540,7 @@ Buildroot will now recognize existing source packages in the local `dl` director
 
 The SDK contains executable tools for Linux, macOS, and Windows. However, the tools directory fetched in the previous step only includes the tools for Linux. To use the tools on macOS or Windows, please download via the link below.
 
-[https://github.com/FLembedded/buildroot\_dl/releases/download/tools/tools.tar.xz](https://github.com/FLembedded/buildroot_dl/releases/download/tools/tools.tar.xz)
+[https://github.com/Forlinx-Embedded/buildroot\_dl/releases/download/tools/tools.tar.xz](https://github.com/Forlinx-Embedded/buildroot_dl/releases/download/tools/tools.tar.xz)
 
 The compressed package size is 540 MB. The test speed is approximately 5 MB/s, with a download time of about 1 minute and 30 seconds. Typically, the download time ranges from 1 minute to 5 minutes.
 
@@ -930,7 +930,7 @@ This chapter explains how to install the cross-compilation toolchain and compile
 Navigate to the home directory of your compilation environment and obtain thecross-compilation toolchain using the following command:
 
 ```plain
-wget 'https://github.com/FLembedded/buildroot_dl/releases/download/buildroot_sdk/buildroot-sdk.tar.gz'
+wget 'https://github.com/Forlinx-Embedded/buildroot_dl/releases/download/buildroot_sdk/buildroot-sdk.tar.gz'
 ```
 
 Extract`buildroot-sdk.tar.gz`：
