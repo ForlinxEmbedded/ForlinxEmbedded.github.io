@@ -457,7 +457,7 @@ forlinx@ubuntu:~$ cd rk3588
 ##### 1.2.2 Initializing the Repo Repository
 
 ```plain
-forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:Forlinx-Embedded/manifests_linux.git -m platforms/ok3588/ok3588-buildroot.xml
+forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:Forlinx-Embedded/manifests_linux.git -b refs/tags/v1.0.0 -m platforms/ok3588/ok3588-buildroot.xml
 ```
 
 ##### 1.2.3 Synchronizing the Code
