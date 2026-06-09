@@ -45,23 +45,23 @@ Furthermore, the T153 series supports a combination of RGB/MIPI DSI/LVDS interfa
 
 **T153 Block Diagram**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704944333_c74ae5d9_e0fd_45b0_9625_ff795398226f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704944333_c74ae5d9_e0fd_45b0_9625_ff795398226f.png)
 
 ## 2\. FET153-S SoM Description
 
 ### 2.1 FET153-S Appearance Diagram
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704945818_3b65a999_65af_45d8_8676_4eda77eb4078.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704945818_3b65a999_65af_45d8_8676_4eda77eb4078.png)
 
 **Front (EMMC Version)**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704945936_e9b9812d_f97a_4ee1_bef5_a481ded70d5a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704945936_e9b9812d_f97a_4ee1_bef5_a481ded70d5a.png)
 
 **Back (EMMC Version)**
 
 ### 2.2 FET153-S SoM Dimension Diagram
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704946061_fade100f_e7ba_4777_a174_a8ffeb5c9415.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704946061_fade100f_e7ba_4777_a174_a8ffeb5c9415.png)
 
 Dimensions: 44mm × 35mm, dimensional tolerance ±0.13mm. 
 
@@ -161,9 +161,9 @@ The centre-to-centre pitch of the pin headers is 1 mm; the centre-to-centre pitc
 
 #### 2.5.1 FET153-S SoM Pin Schematic
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704946147_d0b4231a_cf23_427a_bfc3_312a9970121c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704946147_d0b4231a_cf23_427a_bfc3_312a9970121c.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704946213_a6a3d64d_0b58_46f4_b761_1a534ce94017.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704946213_a6a3d64d_0b58_46f4_b761_1a534ce94017.png)
 
 #### 2.5.2 FET153-S SoM Pin Function Description
 
@@ -190,7 +190,7 @@ For various functional expansion requirements, please refer to the user document
 
 **Note: The BOOT SEL pin is pulled up by default within the chip; when left floating, it is at a high level. The FET153-S SoM integrates the power supply, CPU and memory circuits onto a single compact module. The required external circuit is very simple; a minimal system requires only a 5V power supply, a reset button and a programming button to operate, as shown in the figure below:**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704946281_f9b1cc0e_2812_4672_a8a8_06089013c050.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704946281_f9b1cc0e_2812_4672_a8a8_06089013c050.png)
 
 Refer to “Appendix IV. Minimum System Diagram” However, in general, it is recommended to connect some external devices, such as a debug serial port, in addition to the minimum system. Otherwise, the you cannot determine whether the system has started. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
@@ -202,11 +202,11 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole + LGA. The main interfaces are shown in the figure below:
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704947912_cdfefef4_e71e_4243_b561_fa6fbfd026a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704947912_cdfefef4_e71e_4243_b561_fa6fbfd026a2.png)
 
 ### 3.2 OK153-S Development Board Dimension Diagram
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948050_174a234d_6a07_4afd_a845_686492e02168.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948050_174a234d_6a07_4afd_a845_686492e02168.png)
 
 PCB: 130mm×190mm
 
@@ -218,7 +218,7 @@ Power Voltage: DC 12V
 
 The OK153-S carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1759201465286_493981bb_0751_414e_8ace_e49068483575.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1759201465286_493981bb_0751_414e_8ace_e49068483575.png)
 
 ### 3.3 Naming Rules
 
@@ -292,15 +292,15 @@ VDD33 ensures that the SoM powers on first, followed by the carrier board, to pr
 
 **Note: For custom designs, follow this power sequence: SoM VDD33 enables carrier board DC-DC, ensuring SoM powers on before carrier board.**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948143_ca699b70_9e58_4a79_bfaf_21bbf57f4115.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948143_ca699b70_9e58_4a79_bfaf_21bbf57f4115.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948213_4e338db7_09d8_4a6f_96e0_f49f89809473.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948213_4e338db7_09d8_4a6f_96e0_f49f89809473.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948288_a8f88390_5edb_4e9a_987f_ae7095c5cfb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948288_a8f88390_5edb_4e9a_987f_ae7095c5cfb1.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948369_639035f9_ba1a_4fa2_b211_137e173bf747.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948369_639035f9_ba1a_4fa2_b211_137e173bf747.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948432_7bf7ae8b_cb25_4042_8aef_2f868feb83b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948432_7bf7ae8b_cb25_4042_8aef_2f868feb83b5.png)
 
 #### 3.5.2 BOOT
 
@@ -312,13 +312,13 @@ The boot sequence is configured by default to SDC0->SPI2\_NOR(4-wire)->SPI2\_NOR
 
 AP-RESET: System reset button. Press to reset and restart. FEL: Press to enter forced upgrade mode for system flashing via USB. The NMI is a CPU interrupt and is not used yet. LED \_ FET153-S is the heartbeat light of the SoM, which is led out from the carrier board for easy observation.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948491_06fac1b2_aa08_4b75_a4c1_df362076a636.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948491_06fac1b2_aa08_4b75_a4c1_df362076a636.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948554_46c64173_1124_4218_afe5_f4b9ede6f1bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948554_46c64173_1124_4218_afe5_f4b9ede6f1bb.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948627_153840e6_a517_4cd7_9fec_2ef3be0a75ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948627_153840e6_a517_4cd7_9fec_2ef3be0a75ef.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948695_1e86e891_6ab2_4707_addb_0d268c09848c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948695_1e86e891_6ab2_4707_addb_0d268c09848c.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -336,9 +336,9 @@ Open a terminal tool (e.g., Putty) with settings: 115200 baud, 8 data bits, no p
 
 Select the correct COM port and power on the board. Debug messages will appear.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948764_14511877_f842_4ca2_aa49_1bf557910904.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948764_14511877_f842_4ca2_aa49_1bf557910904.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948843_da080005_627b_43c5_abdf_07336126f3fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948843_da080005_627b_43c5_abdf_07336126f3fd.png)
 
 **Note:**
 
@@ -352,17 +352,17 @@ Select the correct COM port and power on the board. Debug messages will appear.
 
 The development board features 2.54 mm pins for JTAG and RJTAG, which are currently left unpopulated; these can be used to simulate two different cores via an emulator. In addition, JTAG, RJTAG, and SPI3 signals are multiplexed.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704948905_1f632dee_a756_4c78_aaec_394dd0715f70.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704948905_1f632dee_a756_4c78_aaec_394dd0715f70.png)
 
 #### 3.5.6 TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDC0 channel. Power for the TF card is supplied by the VDD33 output from the SoM. In addition, the device supports high and low speed card switching.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1768198991031_baee5f29_0222_45a3_8965_4f87e058652b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1768198991031_baee5f29_0222_45a3_8965_4f87e058652b.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949050_f79ab7c7_2104_4626_a196_3a6e70f3b35c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949050_f79ab7c7_2104_4626_a196_3a6e70f3b35c.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949166_e3c1550a_2ced_4fd7_971e_b6f00c799aa0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949166_e3c1550a_2ced_4fd7_971e_b6f00c799aa0.png)
 
 **Note: **
 
@@ -376,7 +376,7 @@ The TF card interface on the development board is connected to the CPU’s SDC0 
 
 An RTC device is connected to the carrier board via the TWI3 bus. The circuit uses D7 to enable compatible power supply from either VCC\_3V3 or a button cell battery. This ensures the RTC chip remains powered by the battery after the carrier board power is off. The RX8010SJ chip is used in the default design. Button battery: CR2032.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949266_a170731b_77e8_4b59_b219_1353e459ec8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949266_a170731b_77e8_4b59_b219_1353e459ec8b.png)
 
 #### 3.5.8 GPADC\*
 
@@ -384,7 +384,7 @@ The GPADC interface is led out via three 2.54 mm pitch 2\*3P headers, accompanie
 
 There are 4 x GPADC, with a maximum sampling voltage of 1.8 V.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949352_66e87a80_a9c7_4108_a369_28f5ee2837b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949352_66e87a80_a9c7_4108_a369_28f5ee2837b5.png)
 
 **Note:** 
 
@@ -404,17 +404,17 @@ There are 4 x GPADC, with a maximum sampling voltage of 1.8 V.
 
 The IR interface is connected to an HS0038B infrared receiver. Please send infrared signals to this receiver using a remote control. The received IR information will be displayed in the debugging serial port.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949543_2e6e3961_ad74_48a6_980d_4f2d529b430a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949543_2e6e3961_ad74_48a6_980d_4f2d529b430a.png)
 
 #### 3.5.10 Type-C Interface
 
 The Type-C interface on the carrier board is connected to the USB0 interface on the SoM. It supports OTG functionality, enabling connection to a computer for USB programming as well as connection to a USB flash drive for storage.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949628_5f5abd28_0ab4_4af0_a122_132d38d3e8a4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949628_5f5abd28_0ab4_4af0_a122_132d38d3e8a4.png)
 
 #### 3.5.11 USB2.0-A
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949719_68bddce1_8364_4db6_a814_1ab5b34d8ba2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949719_68bddce1_8364_4db6_a814_1ab5b34d8ba2.png)
 
 The OK153-S development board features an onboard USB 2.0 hub with four USB host ports. It is also equipped with three USB 2.0 Type-A standard ports and one mini-PCIe port. The mini-PCIe port can be used to connect an EC20 4G module, enabling 4G internet connectivity. The remaining ports can be used to connect other standard USB devices.
 
@@ -424,17 +424,17 @@ The OK153-S development board features an onboard USB 2.0 hub with four USB host
 
 The OK153-S development board features an integrated Wi-Fi and Bluetooth module, model number 6221A-SRC. The Wi-Fi module is connected via an SDIO interface and supports dual-band 2.4GHz and 5GHz; the Bluetooth module is connected UART and PCM interfaces and complies with the Bluetooth 4.2 specification.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949876_c440cff5_262b_4b90_a856_a5b152e75b5f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949876_c440cff5_262b_4b90_a856_a5b152e75b5f.png)
 
 **Note: The I2S signal used by this module is identical to that utilized by the AUDIO function; currently, the corresponding signal pin remains unpopulated.**
 
 #### 3.5.13 4G
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704949957_abe7ce3f_ba25_484c_a48a_e58a6c7fbba1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704949957_abe7ce3f_ba25_484c_a48a_e58a6c7fbba1.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950071_315455c1_a644_4dce_8fe1_a15c91d0d7f0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950071_315455c1_a644_4dce_8fe1_a15c91d0d7f0.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950155_cc01f453_f9d9_40fb_9eb3_b60b3a260208.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950155_cc01f453_f9d9_40fb_9eb3_b60b3a260208.png)
 
 The development board features an onboard mini-PCIE interface designed for connecting a 4G module (e.g., EC20). This interface has independently controllable power and an onboard SIM card slot. 
 
@@ -448,13 +448,13 @@ The development board features an onboard mini-PCIE interface designed for conne
 
 It supports 1 x native 10/100/1000 Mbps auto‑negotiation Ethernet port, implemented via the SoM RGMII interface and the YT8521SH PHY chip, and led out through a standard RJ45 connector with integrated magnetics, enabling LAN and WAN connectivity with network devices.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950247_6a2a5a32_71b0_4bf2_9a26_a63bc72b98f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950247_6a2a5a32_71b0_4bf2_9a26_a63bc72b98f6.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950338_e5b37054_c391_4e1d_8eed_5d755a1a1669.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950338_e5b37054_c391_4e1d_8eed_5d755a1a1669.png)
 
 #### 3.5.15 AUDIO
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950423_710b6556_06f0_4e0c_80a4_1154af1ecacd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950423_710b6556_06f0_4e0c_80a4_1154af1ecacd.png)
 
 The development board features an NAU88C22YG chip and utilises a standard 3.5mm headphone jack to support stereo headphone and microphone inputs.
 
@@ -462,79 +462,79 @@ The development board features an NAU88C22YG chip and utilises a standard 3.5mm 
 
 #### 3.5.16 LINEOUT Interface
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950526_6a02af72_146f_44cb_a0d4_f5b24018d0ac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950526_6a02af72_146f_44cb_a0d4_f5b24018d0ac.png)
 
 The development board utilizes the native differential LINEOUT signals. An external speaker interface is provided via the TPA6017A2PWP audio amplifier chip, designed to drive a 3Ω/2W speaker.
 
 #### 3.5.17 CAN-FD
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950607_4c87d7cd_1e09_4456_9abd_e99aa04537b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950607_4c87d7cd_1e09_4456_9abd_e99aa04537b2.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950693_fb771f8d_d67d_4bf6_8dba_87c6189303a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950693_fb771f8d_d67d_4bf6_8dba_87c6189303a9.png)
 
 2 x CAN interfaces are led out from the development board via native CAN-FD with TDH541SCANFD; these interfaces feature an isolation protection design, capable of meeting protection requirements in most scenarios.
 
 #### 3.5.18 485
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950780_60db0438_95bc_406a_ad21_f3e7f4d760cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950780_60db0438_95bc_406a_ad21_f3e7f4d760cf.png)
 
 2 x standard 485 are led out via native UART with TDH341S485S from the development board; these interfaces support automatic sending and receiving control and feature an isolation protection design, meeting the protection requirements for most scenarios.
 
 #### 3.5.19 LEDC
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950882_e84780d3_f8c3_4544_b3e6_79b891de922d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950882_e84780d3_f8c3_4544_b3e6_79b891de922d.png)
 
 The development board integrates two intelligent external-control LEDs. These can be simultaneously controlled via dedicated LEDC pins to drive cascaded WS2812B LEDs, enabling various lighting effects.
 
 #### 3.5.20 LED
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704950959_b40059f6_0c57_4426_a180_8b04cb3dfea0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704950959_b40059f6_0c57_4426_a180_8b04cb3dfea0.png)
 
 Two GPIO\_LED signals are reserved on the development board: 1.8V-level open-drain pins that are pulled up on the SoM.
 
 #### 3.5.21 KEY
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951033_a924f7f5_6e5a_4b45_af52_04338f57dbf3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951033_a924f7f5_6e5a_4b45_af52_04338f57dbf3.png)
 
 There is a user-configurable key on the development board. Different functions can be realized by controlling this GPIO pin. It is a 1.8 V level signal and is an open-drain pin, pulled up on the SoM.
 
 #### 3.5.22 LVDS Interface
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951111_f8dfbb8c_1686_45cc_a2dc_f326b3a5a6ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951111_f8dfbb8c_1686_45cc_a2dc_f326b3a5a6ea.png)
 
 LVDS signals are routed to a 2.0mm pitch, 2\*19P-pin header. This signal group is multiplexed with the MIPI and LCD signals. This interface is compatible with Forlinx standard 10.1-inch LVDS display. Furthermore, Forlinx standard 7-inch MIPI display can be connected using an LVDS-to-MIPI adapter board.
 
 #### 3.5.23 LCD-RGB666 Interface
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951190_b5aba5bc_2280_40f8_824a_e5213f1af6e4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951190_b5aba5bc_2280_40f8_824a_e5213f1af6e4.png)
 
 The LCD signals are led out from the development board via a 0.5mm pitch, 54P FPC connector. This signal group is multiplexed with the LVDS signals. Resistive touch signals are directly connected to the SoC. This interface can be used to connect Forlinx standard 7 LCD display (supporting resistive or capacitive touch). The resistive touch pins (TP-X1/X2; TP-Y1/Y2) are multiplexed with GPADC. Resistive touch is not supported by default; the series resistors for these pins are left unpopulated.
 
 #### 3.5.24 2X2-Lane-MCSI \& MCSI\_ACAM
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951332_e18075c6_631a_4fec_b7b2_bece13471302.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951332_e18075c6_631a_4fec_b7b2_bece13471302.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951418_fd2af6f5_0607_42c7_9971_2fa62eabda0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951418_fd2af6f5_0607_42c7_9971_2fa62eabda0e.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951519_a23ea2c2_0925_4817_943a_f3f7f84d0217.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951519_a23ea2c2_0925_4817_943a_f3f7f84d0217.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951603_d6edba77_7e9a_4076_bd4d_2d68b6456e0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951603_d6edba77_7e9a_4076_bd4d_2d68b6456e0c.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951685_61aae083_f8a8_41af_bbd8_cb64bb64d1ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951685_61aae083_f8a8_41af_bbd8_cb64bb64d1ed.png)
 
 The board supports two 2lane MIPI cameras (e.g., OV5645). Additionally, relevant 4-lane MIPI and control signals are available on a 2.0mm pitch, 2\*10P-pin header, supporting the use of an MIPI-to-Analog camera adapter board. However, since the CPU internally has only two Video Input Processing Pipelines (VIPPs), it can support a maximum of two analog cameras.
 
 #### 3.5.25 SPI
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951761_1903e2a4_023d_4095_a089_82be5a341335.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951761_1903e2a4_023d_4095_a089_82be5a341335.png)
 
 SPI signals are accessible via a 2.0mm pitch, 2\*5P pin box header. These SPI signals are multiplexed with RJTAG and JTAG signals.
 
 #### 3.5.26 TPCM\*
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951842_4f028eff_0e8c_4ccb_9573_b38778a5a353.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951842_4f028eff_0e8c_4ccb_9573_b38778a5a353.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951920_1aade700_9635_4fb3_9855_e80cd514585c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951920_1aade700_9635_4fb3_9855_e80cd514585c.png)
 
 TPCM refers to the SPI Trusted Platform Module (GS-1002-D100). Its enabling and the boot source selection (TPCM vs. SPI-NOR only) are currently controlled solely by the S2 DIP switch. If TPCM is enabled, the SPI-NOR flash will also be activated. 
 
@@ -549,7 +549,7 @@ Boot Measurement Process:
 
 #### 3.5.27 SPI-NOR\*
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704951996_b4157793_8a38_4161_92dd_f82756f6668d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704951996_b4157793_8a38_4161_92dd_f82756f6668d.png)
 
 If TPCM is not used, the development board can be configured via DIP switches to connect the SPI-NOR flash directly to the CPU and set it as a boot option.
 
@@ -561,7 +561,7 @@ For more detailed dimensions, please refer to the DXF files in the user document
 
 The following image shows the footprint diagram for the stamp hole connectors on the carrier board. For special design requirements regarding the stencil layer, please see the SoM Soldering Guide in the user documentation.
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704953691_bcd562c5_e163_42f8_9748_fa5c1bdf5b1a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704953691_bcd562c5_e163_42f8_9748_fa5c1bdf5b1a.png)
 
 ## 5\. OK153-S Development Board Linux Consumption Table
 
@@ -596,9 +596,9 @@ The following image shows the footprint diagram for the stamp hole connectors on
 
 **SoM:**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704956602_96e414e0_3814_4280_a788_2ea8df373cb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704956602_96e414e0_3814_4280_a788_2ea8df373cb6.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704956694_2ba8d1d4_4951_4aee_9138_4f25acfae336.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704956694_2ba8d1d4_4951_4aee_9138_4f25acfae336.png)
 
 **BOOT:**
 
@@ -606,21 +606,21 @@ The SoM has been configured with the default settings,BOOT-SEL\[0;1]=\[1;1]，BO
 
 **DEBUG:**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704956774_e31a4530_82fe_4ade_a7ac_84fc23a8e2a4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704956774_e31a4530_82fe_4ade_a7ac_84fc23a8e2a4.png)
 
 **POWER:**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704956871_20eccc8a_db8f_4260_86b8_ba31b373030d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704956871_20eccc8a_db8f_4260_86b8_ba31b373030d.png)
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704956973_5209f2a6_97d3_4c9c_b40e_4cf0f7b9685f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704956973_5209f2a6_97d3_4c9c_b40e_4cf0f7b9685f.png)
 
 **USB0:**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704957064_0634b28f_e69a_47c4_9835_246b94552880.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704957064_0634b28f_e69a_47c4_9835_246b94552880.png)
 
 **RST\&FEL:**
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704957171_588ff582_4d08_4773_8036_f148f3339f9b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704957171_588ff582_4d08_4773_8036_f148f3339f9b.png)
 
 ## 7\. Hardware Design Guide
 
@@ -628,7 +628,7 @@ The SoM has been configured with the default settings,BOOT-SEL\[0;1]=\[1;1]，BO
 
 BOOT SEL is pulled up by default inside the CPU, and it is at high level when pin is floating. BOOT-SEL configuration is integrated on the SoM. After the system is powered on or reset, different programming and startup modes can be selected by reading the voltage of the system startup configuration pin. BOOT-SEL\[0:1]=\[1:1]
 
-![Image](./images/OK153-S_User_Hardware_Manual/1758704958622_28a67904_4506_4f6d_a383_007afe909265.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704958622_28a67904_4506_4f6d_a383_007afe909265.png)
 
 ### 7.2 GPADC and PA Notes
 
