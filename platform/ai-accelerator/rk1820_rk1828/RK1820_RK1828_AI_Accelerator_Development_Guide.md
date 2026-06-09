@@ -5,7 +5,7 @@
 ---
 
 
-## 1\. Overview
+## 1. Overview
 
 This document is intended for developers who need to deploy AI models using the RK1820/RK1828 co-processor on the OK3588-C development board platform. It covers hardware architecture, development environment setup, model conversion, quantization, and deployment for CNN/LLM/VLM models, as well as the usage of the RKLLM3 Server.
 
