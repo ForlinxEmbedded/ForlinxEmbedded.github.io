@@ -264,7 +264,7 @@
 <section id="ok1046a-c2-development-board">
 <h2>1. OK1046A-C2 Development Board<a class="headerlink" href="#ok1046a-c2-development-board" title="Link to this heading"></a></h2>
 <p>The hardware parameters are not described in this software manual. Before referring to this manual for software development, please read the “OK1046A-C2 Hardware Manual” under the path of “Hardware Information User Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.  The OK1046A-C2 development board adopts a Som + carrier board structure and is designed based on NXP’s LS1046A quad-core processor with a main frequency of 1.8GHz and ARM Cortex-A72 architecture. The CPU natively supports 7 x Ethernets: 2 x SFP + interfaces (10Gb) and 5 x 1000Mbps. It supports PCIe 3.0, SATA3.0, USB3.0, UART, IIC and other functional interfaces, as well as Ubuntu and OpenWrt operating systems.</p>
-<p><img alt="Image" src="_images/1721723372862_6a90b7d2_6ba6_422d_be63_3d32ad1931c8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1721723372862_6a90b7d2_6ba6_422d_be63_3d32ad1931c8.png" /></p>
 <section id="ok1046a-c2-platform-description">
 <h3>1.1 OK1046A-C2 Platform Description<a class="headerlink" href="#ok1046a-c2-platform-description" title="Link to this heading"></a></h3>
 <table class="docutils align-default">
@@ -334,7 +334,7 @@
 <h3>1.3 Function Introduction of Dip Switch<a class="headerlink" href="#function-introduction-of-dip-switch" title="Link to this heading"></a></h3>
 <p><strong>Note: SerDes PLL1 on OK1046A-C2 software configuration provides clock for XFI, which must be 156.25 MHz. Please do not modify dial B.</strong></p>
 <p>OK1046A-C2 supports TF card and QSPI startup modes, and supports U disk flashing. DIP switch A is used to select the startup method and DIP switch B is used to select the reference clock of SerDes PLL1, which is not recommended to be modified by the customer. (QSPI startup as shown in the figure below)</p>
-<p><img alt="Image" src="_images/1757057654941_09d86902_9214_4811_9de7_81f47f000f27.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1757057654941_09d86902_9214_4811_9de7_81f47f000f27.png" /></p>
 <p>The default state of the dial switch A is OFF, indicating that uboot is started from the QSPI NOR Flash and can be programmed through the U disk. If the u-boot image in the QSPI flash is damaged and cannot boot properly, it is necessary to make a TF card to start u-boot, and use a USB flash drive for flashing. For detailed instructions, please refer to “Chapter 4. System Flashing”, for the specific operation steps.</p>
 <p>Description of S2 DIP Switch A:</p>
 <table class="docutils align-default">
@@ -372,7 +372,7 @@
 <p>In the network segment of the OK1046A-C2 software, the configuration supports network resources associated with the 1133_5a59. This setup includes 2 x SFP ports (fm1-mac9, fm1-mac10), 2 x RGMII ports (fm1-mac3, fm1-mac4), and 3 x SGMII ports (fm1-mac2, fm1-mac5, fm1-mac6), a total of seven network ports.</p>
 <p>The following figure shows the correspondence between fm1-macN and RJ45 in Linux.</p>
 <p>V1.x Carrier Board:</p>
-<p><img alt="Image" src="_images/1719394171862_6b7de931_e33d_484e_af3c_8bafa3ace412.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394171862_6b7de931_e33d_484e_af3c_8bafa3ace412.png" /></p>
 </section>
 </section>
 <section id="fast-startup">
@@ -392,7 +392,7 @@
 <li><p><font style="color:#000000;">Check the DIP switch of boot mode.</p></li>
 </ul>
 <p>Please check the dial switch on your development board to confirm that the desired startup mode has been set. For the startup mode setting, please refer to the chapter “Introduction to the Functions of the Dial Switch”.</p>
-<p><img alt="Image" src="_images/1721293237575_efa6041d_22bd_4031_bfd2_dc767cf5adb8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1721293237575_efa6041d_22bd_4031_bfd2_dc767cf5adb8.png" /></p>
 </section>
 <section id="port-login-methods">
 <h3>2.2 Port Login Methods<a class="headerlink" href="#port-login-methods" title="Link to this heading"></a></h3>
@@ -406,10 +406,10 @@
 </ul>
 <p>Here is an example using Putty to explain how to configure the terminal:</p>
 <p>Step 1: Connect the development board and the PC using a serial cable, and verify the serial port number recognized by the computer through the “Device Manager”. The port number recognized by the computer should be considered as the accurate one;</p>
-<p><img alt="Image" src="_images/1719394237223_8d84649f_66db_4752_b876_6768d42b2e5f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394237223_8d84649f_66db_4752_b876_6768d42b2e5f.png" /></p>
 <p>Step 2: Open the putty and set the serial line according to the COM port of the computer used. The baud rate is 115 200. After setting, click “Open” to enter the serial port.</p>
-<p><img alt="Image" src="_images/1719394237531_60424426_a7ef_4280_b339_e4cd729578ac.png" /></p>
-<p><img alt="Image" src="_images/1719394237765_a8d9f1fd_fccf_41fe_9237_46974edfeb67.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394237531_60424426_a7ef_4280_b339_e4cd729578ac.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394237765_a8d9f1fd_fccf_41fe_9237_46974edfeb67.png" /></p>
 <p>Step 3: Log in to the account named root, and press Enter directly without a password.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Ubuntu 18.04.1 LTS localhost ttyS0
 localhost login: root 
@@ -441,7 +441,7 @@ Linux version 4.14.47 (zyh@1ffe9f7b637e) (gcc version 7.5.0 (Ubuntu/Linaro 7.5.0
 <li><p><strong>The development board opens the fm1-mac3 network port (on P13) by default, and the default IP is 192.168.0.232;</strong></p></li>
 </ul>
 <p>The network port is shown as follows:</p>
-<p><img alt="Image" src="_images/1719394237985_a4b96b26_9da4_4fb9_9ae7_7875cd00fc1d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394237985_a4b96b26_9da4_4fb9_9ae7_7875cd00fc1d.png" /></p>
 <ul class="simple">
 <li><p><strong>Please note that the prerequisite for network login is that the PC and the board are on the same LAN at the same time;</strong></p></li>
 <li><p><strong>Default factory login account: forlinx, password: forlinx;</strong></p></li>
@@ -461,12 +461,12 @@ Linux version 4.14.47 (zyh@1ffe9f7b637e) (gcc version 7.5.0 (Ubuntu/Linaro 7.5.0
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>C:\Users\Administrator&gt;ping 192.168.0.232
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394238184_17ff7263_b4b0_4541_b326_8e1125f10ff6.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394238184_17ff7263_b4b0_4541_b326_8e1125f10ff6.png" /></p>
 <p>As shown in the figure above, the connection between the development board and the computer network is normal;</p>
 <p>The development board is accessed by the Windows host through putty as follows:</p>
-<p><img alt="Image" src="_images/1719394238458_420fa6a3_ff9e_4b99_9594_a1c443d39508.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394238458_420fa6a3_ff9e_4b99_9594_a1c443d39508.png" /></p>
 <p>Click “Open” to display the following dialog box, and click “Yes” to enter the login page.</p>
-<p><img alt="Image" src="_images/1719394238835_85790666_662a_455a_ae77_47a3281aa77b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394238835_85790666_662a_455a_ae77_47a3281aa77b.png" /></p>
 <p>After opening the serial port, enter the account: forlinx, password: forlinx</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>login as: forlinx
 root@192.168.0.232&#39;s password:      //Enter forlinx, no display, press Enter to enter the system
@@ -499,7 +499,7 @@ forlinx@localhost:~$
 </ul>
 <p>The OK1046A-C2 development board supports the telnet service, which is automatically enabled by default. After the IP address is set, it can be used as a telnet server. The default IP of the development board NIC is 192.168.0.232, and the IP of the test computer is 192.168.0.12 as an example.</p>
 <p>Log in to access the board via Putty Telnet while ensuring that the board can ping the computer. Putty serial port settings are as follows:</p>
-<p><img alt="Image" src="_images/1719394239127_4930f28c_7690_42ed_9bf5_f4f873505007.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394239127_4930f28c_7690_42ed_9bf5_f4f873505007.png" /></p>
 <p>Click “Open”, open the serial port and enter the account number: forlinx, password: forlinx</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Ubuntu 18.04.1 LTS
 localhost login: forlinx
@@ -1189,7 +1189,7 @@ sys     0m5.022s
 <section id="msata-interface-test">
 <h4>3.1.9 mSATA Interface Test<a class="headerlink" href="#msata-interface-test" title="Link to this heading"></a></h4>
 <p>The OK1046A-C2 platform supports one mSATA interface SATA protocol SSD. Before powering up the system, insert the mSATA SSD (KingBank SSD is used here as an example) into the mSATA HDD card slot on the carrier board, with the interface shown below:</p>
-<p><img alt="Image" src="_images/1719394210927_465fb9b3_63d1_4382_8a0d_24615e4fb0e6.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394210927_465fb9b3_63d1_4382_8a0d_24615e4fb0e6.png" /></p>
 <p>After powering on and starting Linux, you can see that the corresponding device is enumerated successfully through lspci.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# lsblk  //Display all block devices on a Linux system
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -1268,7 +1268,7 @@ tmpfs tmpfs 188M 0 188M 0% /run/user/0
 <section id="m-2-type-2230-interface-test">
 <h4>3.1.10 m. 2 Type 2230 Interface Test<a class="headerlink" href="#m-2-type-2230-interface-test" title="Link to this heading"></a></h4>
 <p>The OK1046A-C2 platform supports INTEL 3168NGW, INTEL 9260NGW, and RTL8822CE dual-band WiFi modules by default. Before the system is powered on, insert the module into the m.2 Type 2230 card slot on the backplane. Here, the INTEL 3168NGW module is taken as an example, as shown in the following figure:</p>
-<p><img alt="Image" src="_images/1719394211319_d17e2502_2b54_42e1_b826_e06bd9c1ce45.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394211319_d17e2502_2b54_42e1_b826_e06bd9c1ce45.png" /></p>
 <p>After the system is powered on and started, you can see that the corresponding device is enumerated successfully through lspci.</p>
 <p><font style="color:#333333;">INTEL 3168NGWmodule:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# lspci                    //Display all PCI bus devices
@@ -1283,10 +1283,10 @@ tmpfs tmpfs 188M 0 188M 0% /run/user/0
 <section id="network-test">
 <h4>3.1.11 Network Test<a class="headerlink" href="#network-test" title="Link to this heading"></a></h4>
 <p>In the network segment of the OK1046A-C2 software, the configuration supports network resources associated with the 1133_5a59. This setup includes 2 x SFP ports (fm1-mac9, fm1-mac10), 2 x RGMII ports (fm1-mac3, fm1-mac4), and 3 x SGMII ports (fm1-mac2, fm1-mac5, fm1-mac6), a total of seven network ports.</p>
-<p><img alt="Image" src="_images/1735956446221_9c68946f_7079_4f16_9485_4f3fb1a5b173.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1735956446221_9c68946f_7079_4f16_9485_4f3fb1a5b173.png" /></p>
 <p>By default, fm1-mac3 (on P13) is set to static IP: 192.168.0.232.</p>
 <p>The following figure shows the correspondence between fm1-macN and RJ45 in Linux.</p>
-<p><img alt="Image" src="_images/1719394211636_5b6eb012_8a0c_4a48_b49f_364d438b2a76.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394211636_5b6eb012_8a0c_4a48_b49f_364d438b2a76.png" /></p>
 <p>2 x RGMII interfaces, 3 x SGMII interfaces, 2 x SFP interfaces.</p>
 <p>Before testing, first configure the ls1046’s frame manager with the fmc for better network performance.</p>
 <p><strong>Note: The configuration has been completed automatically by default, and the user does not need to configure again.</strong></p>
@@ -1469,15 +1469,15 @@ iperf Done.
 <li><p>Path: OK10XX-C (LINUX) user profile\tool\FileZilla*</p></li>
 </ul>
 <p>Install the FileZilla tool on Windows and set it up as shown in the figure below.</p>
-<p><img alt="Image" src="_images/1719394212113_43b0bb20_4381_4aec_b2c3_551019205086.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394212113_43b0bb20_4381_4aec_b2c3_551019205086.png" /></p>
 <p>After successful login, you can upload and download.</p>
-<p><img alt="Image" src="_images/1719394212471_3523d000_c71e_4870_ad18_c750ee77a9f6.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394212471_3523d000_c71e_4870_ad18_c750ee77a9f6.png" /></p>
 <p>To upload the test, select the file to be uploaded in the local site and right click “Upload”.</p>
-<p><img alt="Image" src="_images/1719394212784_ed732cab_06a8_416b_b189_6f9c1f999ef2.png" /></p>
-<p><img alt="Image" src="_images/1719394213074_01dcad26_b8d4_46cd_a63f_af8c71970d26.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394212784_ed732cab_06a8_416b_b189_6f9c1f999ef2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394213074_01dcad26_b8d4_46cd_a63f_af8c71970d26.png" /></p>
 <p>To download the test, select the file to be downloaded in the remote site, and right click “Download”:</p>
-<p><img alt="Image" src="_images/1719394213361_b126946a_0967_49d8_ba54_6edce91fbe64.png" /></p>
-<p><img alt="Image" src="_images/1719394213719_96d6ff42_668f_4555_93d8_1c43979eefa1.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394213361_b126946a_0967_49d8_ba54_6edce91fbe64.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394213719_96d6ff42_668f_4555_93d8_1c43979eefa1.png" /></p>
 <p>If a file with the same name already exists in the local site, the local file will be “overwritten” by default. Click “OK” to start downloading.</p>
 </section>
 <section id="rtc-test">
@@ -1533,16 +1533,16 @@ Restart after 10 seconds
 </section>
 <section id="uart-test">
 <h4>3.1.15 UART Test<a class="headerlink" href="#uart-test" title="Link to this heading"></a></h4>
-<p><img alt="Image" src="_images/1719394214008_fb6e2cde_7b0a_497b_826e_2076798f8002.png" />Before performing a serial port loopback test, short the serial port to be tested first. UART1, UART2, UART3 and UART4 serial ports are marked in the schematic diagram of OK1046A-C2 platform carrier board, in which UART1 is the debugging serial port, and the default device names in the development board are ttyS0, ttyS1, ttyS2 and ttyS3 respectively. Connect the send and receive pins (3, 8) of UART2 to the computer through the TTL to USB module according to the schematic diagram of the development board. Enable data sending and receiving between the UART of the development board and the serial port tool software on the computer to conduct a serial port test.</p>
-<p><img alt="Image" src="_images/1719394214217_23503452_c241_4394_b46c_578303c6be04.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394214008_fb6e2cde_7b0a_497b_826e_2076798f8002.png" />Before performing a serial port loopback test, short the serial port to be tested first. UART1, UART2, UART3 and UART4 serial ports are marked in the schematic diagram of OK1046A-C2 platform carrier board, in which UART1 is the debugging serial port, and the default device names in the development board are ttyS0, ttyS1, ttyS2 and ttyS3 respectively. Connect the send and receive pins (3, 8) of UART2 to the computer through the TTL to USB module according to the schematic diagram of the development board. Enable data sending and receiving between the UART of the development board and the serial port tool software on the computer to conduct a serial port test.</p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394214217_23503452_c241_4394_b46c_578303c6be04.png" /></p>
 <ol class="arabic simple">
 <li><p>The UART2 of the development board is connected to the computer through the TTL to USB module. After the development board is powered on, it is identified as COM72 in the device manager of the computer (you can set the parameters according to his actual identification of the COM port):</p></li>
 </ol>
-<p><img alt="Image" src="_images/1719394214426_264556f7_6068_45ec_8cad_7744ad018840.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394214426_264556f7_6068_45ec_8cad_7744ad018840.png" /></p>
 <ol class="arabic simple" start="2">
 <li><p>On the computer side, open the serial port tool and select the COM port identified by the computer. The baud rate is 115 200, the data bit is 8, the stop bit is 1, there is no check, no flow control, and the string abcdefg is sent at a fixed time of 1s. After setting the parameters, open the serial port:</p></li>
 </ol>
-<p><img alt="Image" src="_images/1719394214630_063193e4_6d37_42dc_96c8_e0c2d52f1b29.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394214630_063193e4_6d37_42dc_96c8_e0c2d52f1b29.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>Open the test program on the development board terminal to conduct the receiving and sending test. The serial port parameter setting shall be consistent with the setting of the serial port tool. The test program will automatically send the string abcdefgh.</p></li>
 </ol>
@@ -1558,14 +1558,14 @@ asdf
 </pre></div>
 </div>
 <p>From the printing information, UART2 can receive the information sent by the serial port tool.</p>
-<p><img alt="Image" src="_images/1719394214852_57c6272c_5059_4fa6_995e_bbcdf4476f2b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394214852_57c6272c_5059_4fa6_995e_bbcdf4476f2b.png" /></p>
 <p>The serial port tool can receive the data sent by the test program.</p>
 </section>
 <section id="wifi-test">
 <h4>3.1.16 WIFI Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h4>
 <p>The OK1046A-C2 currently supports the INTEL 3168NGW dual-band WiFi module or the INTEL 9260NGW dual-band WiFi module. Take the INTEL 3168NGW module as an example.</p>
 <p>Connect the INTEL 3168NGW module to the development board and attach the antenna.</p>
-<p><img alt="Image" src="_images/1719394215131_f454b1d5_4a15_4bf6_ac55_713f93ffc81f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394215131_f454b1d5_4a15_4bf6_ac55_713f93ffc81f.png" /></p>
 <p>After powering on and starting Linux, you can check whether the device is enumerated successfully through lspci.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# lspci                                          //List all PCI device
 0000:00:00.0 PCI bridge: Freescale Semiconductor Inc Device 81c0 (rev 10)
@@ -1882,7 +1882,7 @@ run-parts: executing /usr/share/netfilter-persistent/plugins.d/25-ip6tables star
 </pre></div>
 </div>
 <p>Reboot the board, use the cell phone to search for the wifi signal “wifi_test” and connect to it with the password “12345678”.</p>
-<p><img alt="Image" src="_images/1719394215438_259cd5da_52c1_4d72_96d5_a810c2bb5e06.png" /><img alt="Image" src="_images/1719394215648_e37743d1_a648_4b40_8499_a6b136760ffa.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394215438_259cd5da_52c1_4d72_96d5_a810c2bb5e06.png" /><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394215648_e37743d1_a648_4b40_8499_a6b136760ffa.png" /></p>
 <p>You can use the browser to open the web page to test, and the mobile phone can access the Internet normally at this time.</p>
 <p>Turn off AP mode:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# rm /etc/iptables/*
@@ -1923,7 +1923,7 @@ root@localhost:~# reboot                                       //Restart the dev
 <li><p><strong>Quectel RM500Q-GL module identification</strong></p></li>
 </ul>
 <p>Insert the RM500Q-GL 5G module into the P4 interface of the M.2 B KEY of the carrier board, and connect the antenna, as shown in the figure:</p>
-<p><img alt="Image" src="_images/1719394215956_d2df35f5_a906_4763_8c5d_b8c38fdd841f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394215956_d2df35f5_a906_4763_8c5d_b8c38fdd841f.png" /></p>
 <p>Enter the lsusb command on the OK1046A-C2 console to see if the RM500Q-GL 5G module is successfully identified.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# lsusb                  
 Bus 006 Device 002: ID 2c7c:0800                 //Recogonize RM500Q-GL 5G module
@@ -2017,7 +2017,7 @@ rtt min/avg/max/mdev = 25.471/27.245/27.993/0.979 ms        //Packet loss rate i
 <li><p><strong>Quectel RM500U-CN module identification</strong></p></li>
 </ul>
 <p>Insert the RM500U-CN 5G module into the P4 interface of the M.2 B KEY of the carrier board, and connect the antenna, as shown in the figure:</p>
-<p><img alt="Image" src="_images/1719394216403_51bc8133_0e38_4656_9e4d_a700a54030d9.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394216403_51bc8133_0e38_4656_9e4d_a700a54030d9.png" /></p>
 <p>Enter the command on the console of OK1046A-C2 to check whether the RM500U-CN module is successfully identified.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# lsusb                  
 Bus 006 Device 002: ID 2c7c:0900                 //Recogonize Quectel RM500U-CN 5G module
@@ -2084,7 +2084,7 @@ rtt min/avg/max/mdev = 77.933/84.820/96.536/7.401 ms
 <section id="user-led-and-user-key-test">
 <h4>3.1.18 USER_LED and USER Key Test<a class="headerlink" href="#user-led-and-user-key-test" title="Link to this heading"></a></h4>
 <p>The OK1046A-C2 supports one user-defined USER_LED (USER_LED in the middle of D1) and one user-defined key USER (the key near the USB port). As follows:</p>
-<p><img alt="Image" src="_images/1719394216741_717e83c7_b765_47cd_a511_b66097547fcf.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394216741_717e83c7_b765_47cd_a511_b66097547fcf.png" /></p>
 <p>The testing method is as follows:</p>
 <ul class="simple">
 <li><p><strong>USER_LED light on and off</strong></p></li>
@@ -2327,11 +2327,11 @@ fm1-mac3: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
 </pre></div>
 </div>
 <p>Press the shortcut key combination “Windows + R” to open the Run dialog box, and type in “\192.168.0.232”, on a Windows computer within the same local area network.</p>
-<p><img alt="Image" src="_images/1719394217061_cf643754_ef3c_4850_a5d9_be88ef6bfa2a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394217061_cf643754_ef3c_4850_a5d9_be88ef6bfa2a.png" /></p>
 <p>Click “OK”, and the following serial port will pop up. Enter the access user name and password, both of which are “share”.</p>
-<p><img alt="Image" src="_images/1719394217420_dd2522a7_1fcb_4a9c_a268_5977d57e79db.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394217420_dd2522a7_1fcb_4a9c_a268_5977d57e79db.png" /></p>
 <p>Click “OK” to enter the shared folder and create the test file test.txt.</p>
-<p><img alt="Image" src="_images/1719394217625_de26b3c9_ec15_4f12_8999_8598980a9220.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394217625_de26b3c9_ec15_4f12_8999_8598980a9220.png" /></p>
 <p>After successful creation, view the newly added file on the development board.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# ls -l /boot                                  //View files in the/boot directory
 total 0                                                   //You can see the newly added file test.txt
@@ -2382,19 +2382,19 @@ fm1-mac3: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
 </pre></div>
 </div>
 <p>Open a browser and enter 192.168.0.100 in the address bar.</p>
-<p><img alt="Image" src="_images/1719394218059_73e899d8_4717_4928_bb12_34464f025247.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394218059_73e899d8_4717_4928_bb12_34464f025247.png" /></p>
 <p>Please follow the prompts to set the administrator account password and login, here you can set the password to 123456 as an example, you can set it according to the actual situation.</p>
-<p><img alt="Image" src="_images/1719394218448_87fbd3af_2e97_48b0_99e7_633e8b793161.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394218448_87fbd3af_2e97_48b0_99e7_633e8b793161.png" /></p>
 <p>Click Login to enter the system, and click the “File Management” menu to browse the files on the development board.</p>
 <p>Drag the test video file on Windows to the browser window to start uploading automatically.</p>
-<p><img alt="Image" src="_images/1719394218789_216eb15d_7e56_44a8_9f38_356fa5aef2fe.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394218789_216eb15d_7e56_44a8_9f38_356fa5aef2fe.png" /></p>
 <p>Right click on the uploaded file and select Open to play the video.</p>
-<p><img alt="Image" src="_images/1719394219142_0377cfb4_7407_4955_b764_6d8ee87d0b33.png" /></p>
-<p><img alt="Image" src="_images/1719394219610_17848244_7bfc_45dd_93a1_98259c010db3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394219142_0377cfb4_7407_4955_b764_6d8ee87d0b33.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394219610_17848244_7bfc_45dd_93a1_98259c010db3.png" /></p>
 <p>In addition to video files, it also supports playing audio files and editing text online. At the same time, all the functions supported by the PC can also be experienced on the mobile device. Connect the mobile phone to the same LAN, open the mobile browser, and enter 192.168.0.100 to experience.</p>
-<p><img alt="Image" src="_images/1719394219961_6972d2d0_16f5_4bb9_84ef_6ef9e98277de.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394219961_6972d2d0_16f5_4bb9_84ef_6ef9e98277de.png" /></p>
 <p>Enter the account password to log in to the system. After entering the system, you can see the video just uploaded. Other functions can be experienced by themselves.</p>
-<p><img alt="Image" src="_images/1719394220404_1b226b8d_1115_4f39_b389_c298a6d84356.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394220404_1b226b8d_1115_4f39_b389_c298a6d84356.png" /></p>
 </section>
 <section id="virtualization-test">
 <h4>3.2.5 Virtualization Test<a class="headerlink" href="#virtualization-test" title="Link to this heading"></a></h4>
@@ -2494,7 +2494,7 @@ bb52adbbfe3f        qoriq/arm64-ubuntu   &quot;bash -c &#39;lighttpd -…&quot; 
 <ol class="arabic simple" start="7">
 <li><p>Other hosts access the HTTP service in docker through a web browser;</p></li>
 </ol>
-<p><img alt="Image" src="_images/1719394220723_c9af12b1_3613_49ee_ad97_f8b1ab26479e.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394220723_c9af12b1_3613_49ee_ad97_f8b1ab26479e.png" /></p>
 <p>8. Other related commands.</p>
 <table class="docutils align-default">
 <thead>
@@ -2757,12 +2757,12 @@ root@localhost:~# mount -t hugetlbfs none /boot/hugetlbfs/
 earlyprintk&#39; -monitor stdio
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394221055_b3bdac28_8122_46f6_ad36_82a4498c68cb.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394221055_b3bdac28_8122_46f6_ad36_82a4498c68cb.png" /></p>
 <p>The cmd of the windows host on the same LAN uses telnet to log in to the virtual machine:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>telnet 192.168.1.105 4446
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394221640_f68484b1_4d59_46b6_8ad7_bbd48dd11aea.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394221640_f68484b1_4d59_46b6_8ad7_bbd48dd11aea.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>Configure the network;</p></li>
 </ol>
@@ -2770,7 +2770,7 @@ earlyprintk&#39; -monitor stdio
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# ifconfig fm1-mac6
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394221863_6af76e6f_5b71_453b_8a4b_1b94fd9d1a27.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394221863_6af76e6f_5b71_453b_8a4b_1b94fd9d1a27.png" /></p>
 <p>Configure the network bridge on OK1046A-C3. Take 192.168.1.105 as an example. Please refer to the actual IP (ensure that the development board uses the IP).</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# brctl addbr br0
 root@localhost:~# ifconfig br0 192.168.1.105 netmask 255.255.255.0
@@ -2788,7 +2788,7 @@ root@localhost:~# brctl addif br0 fm1-mac6
 earlyprintk&#39; -monitor stdio
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394222087_9c02758f_6897_4a65_b8c0_fa9a3340b4e0.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394222087_9c02758f_6897_4a65_b8c0_fa9a3340b4e0.png" /></p>
 <p>The cmd of a windows host in the same LAN uses telnet to log in to the virtual machine.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>telnet 192.168.1.105 4446
 </pre></div>
@@ -2825,7 +2825,7 @@ sit0      Link encap:IPv6-in-IPv4
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>/# ping 192.168.1.1 
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394222268_83b1ccf2_6ec7_4b80_8deb_0bb97a04c191.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394222268_83b1ccf2_6ec7_4b80_8deb_0bb97a04c191.png" /></p>
 <ol class="arabic simple" start="4">
 <li><p>Use a virtual disk;</p></li>
 </ol>
@@ -2843,7 +2843,7 @@ sit0      Link encap:IPv6-in-IPv4
 -monitor stdio
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394222506_0f0802b8_dc06_4e88_842d_fd6bdc9f8b1f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394222506_0f0802b8_dc06_4e88_842d_fd6bdc9f8b1f.png" /></p>
 <p>The cmd of the windows host on the same LAN uses telnet to log in to the virtual machine (IP of fm1-mac6)</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>telnet 192.168.1.105 4446
 </pre></div>
@@ -2853,7 +2853,7 @@ sit0      Link encap:IPv6-in-IPv4
 /dev/vdb
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394222769_398a701a_365d_4b51_8b3f_ed54b4a130b7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394222769_398a701a_365d_4b51_8b3f_ed54b4a130b7.png" /></p>
 <p>Partition the virtual disk using fdisk</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>/# fdisk /dev/vdb
 Welcome to fdisk (util-linux 2.27.1).
@@ -2930,7 +2930,7 @@ A virtual disk
 -append &#39;root=/dev/vda rw console=ttyAMA0 rootwait earlyprintk&#39; -monitor stdio
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394222983_64d6b993_d72e_491d_ae22_4aaac189e17a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394222983_64d6b993_d72e_491d_ae22_4aaac189e17a.png" /></p>
 <p>Log in to qemu using telnet on the cmd of a windows host on the same lan.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>telnet 192.168.1.105 4446
 </pre></div>
@@ -2940,7 +2940,7 @@ A virtual disk
 /dev/vdb   /dev/vdb1  /dev/vdb2  /dev/vdb3
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394223178_437423a6_7773_4536_800e_da85821e796f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394223178_437423a6_7773_4536_800e_da85821e796f.png" /></p>
 <p>The partitions vdb1, vdb2, and vdb3 correspond to mmcblk0p1, mmcblk0p2, and mmcblk0p3 on the OK1046A-C3 development board respectively. We will mount the first partition for testing.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>/# mount /dev/vdb2 /mnt
 /# ls /mnt/boot
@@ -2958,7 +2958,7 @@ fsl-ok1046a-1040-5506-c3.dtb  fsl-ok1046a-1133-5a59-c2.dtb  Image  ls1046ardb_bo
 -append &#39;root=/dev/vda rw console=ttyAMA0 rootwait earlyprintk&#39; -monitor stdio
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394223380_9ddbd639_deb4_48ec_94c7_d4aebbb2bd09.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394223380_9ddbd639_deb4_48ec_94c7_d4aebbb2bd09.png" /></p>
 <p>Log in to the board using telnet.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>telnet 192.168.1.105 4446 (Please refer to the actual IP address used for the development board to access the internet)
 </pre></div>
@@ -2967,18 +2967,18 @@ fsl-ok1046a-1040-5506-c3.dtb  fsl-ok1046a-1133-5a59-c2.dtb  Image  ls1046ardb_bo
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(qemu)info roms
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394223589_411841b2_b4ba_4acb_89dc_29832d4270a3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394223589_411841b2_b4ba_4acb_89dc_29832d4270a3.png" /></p>
 <p>View the register.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>(qemu)info registers
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394223875_f7ea42df_3bd0_4015_82a9_66e5744f74f7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394223875_f7ea42df_3bd0_4015_82a9_66e5744f74f7.png" /></p>
 </section>
 </section>
 <section id="op-tee-basic-environmental-test">
 <h4>3.2.6 OP-TEE Basic Environmental Test<a class="headerlink" href="#op-tee-basic-environmental-test" title="Link to this heading"></a></h4>
 <p>The basic idea behind TEE is to extract security services to run in an independent security environment. When the main system has security-related operations, it can obtain predefined services by launching requests to the security environment. Based on this, the OP-TEE can be divided into three parts: the TEE client and the TEE driver used to communicate with the security environment (these two parts are running in the main system Linux), as well as the TEE OS running in the security environment and the security application on it. See the following figure for details.</p>
-<p><img alt="Image" src="_images/1719394224265_63ab4912_eec6_418a_88d7_109da9b555a1.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394224265_63ab4912_eec6_418a_88d7_109da9b555a1.png" /></p>
 <p>The OP-TEE OS for the OK1046A-C2 platform is integrated in the ppa.itb firmware, and the following printout can be seen by booting the linux kernel:</p>
 <p>optee: probing for conduit method from DT.</p>
 <p>optee: initialized driver</p>
@@ -3052,7 +3052,7 @@ The Respond hash data from TA just like follow:
 0xa7, 0x55, 0xd2, 0xe2,
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394224574_877d1c4f_1827_4499_9c83_52a7ad3269b9.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394224574_877d1c4f_1827_4499_9c83_52a7ad3269b9.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~# mytest sha256
 Entry sha256 CA
 InitializeContext success
@@ -3074,7 +3074,7 @@ The Respond hash data from TA just like follow:
 0x55, 0x86, 0xeb, 0xfb, 0xe1, 0xa1, 0x46, 0xa8, 0xfd, 0x8c, 0xda, 0x46, 0x7b, 0x7f, 0x02, 0xc0,
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394224760_8150c7bc_f2b0_4add_9678_52564ec4464b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394224760_8150c7bc_f2b0_4add_9678_52564ec4464b.png" /></p>
 </section>
 <section id="openssl-basic-environment-test">
 <h4>3.2.7 OpenSSL Basic Environment Test<a class="headerlink" href="#openssl-basic-environment-test" title="Link to this heading"></a></h4>
@@ -3115,7 +3115,7 @@ root@localhost:~# diff test test.dec
 <p>The setting of this function is relatively complex, and it is recommended to be carried out on the basis of a certain network. You need to enable the kernel netfilter match ipsec function, otherwise iptables cannot be set up properly; if the prompt raw table fails, the raw table can not be imported, or the kernel configuration adds raw table.</p>
 <p>Gateway moon is OK1046A-C2 fm1-mac3 fm1-mac4 network port. Other clients are standard PC.</p>
 <p>Network topology:</p>
-<p><img alt="Image" src="_images/1719394224993_af342e77_141d_4ecc_82a6_f1bf7cf54c8b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394224993_af342e77_141d_4ecc_82a6_f1bf7cf54c8b.png" /></p>
 <p>Subnet 192.168.0.0/24 uses ipsec encrypted communication, and subnet 192.168.1.0/24 uses plaintext communication.</p>
 <ol class="arabic simple">
 <li><p>Reconfigure the kernel</p></li>
@@ -3145,7 +3145,7 @@ root@localhost:~# diff test test.dec
 <p>/etc/strongswan.conf</p>
 <p>/etc/ipsec.d/</p>
 <p>The ipsec. d directory holds the CA certificate, private key, and public key.</p>
-<p><img alt="Image" src="_images/1719394225204_7a5610e2_765d_4548_97cc_ddeb8ae4ea74.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394225204_7a5610e2_765d_4548_97cc_ddeb8ae4ea74.png" /></p>
 <ul class="simple">
 <li><p>Path: OK10XX-C（Linux）user’s profile\tools\ipsec</p></li>
 </ul>
@@ -3164,7 +3164,7 @@ root@localhost:~# ifconfig fm1-mac4 192.168.1.250
 <p>/etc/strongswan.conf</p>
 <p>/etc/ipsec.d/</p>
 <p>The ipsec. d directory holds the CA certificate, private key, and public key.</p>
-<p><img alt="Image" src="_images/1719394225424_db916c29_ca0b_497c_b9f0_8a91e622bd82.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394225424_db916c29_ca0b_497c_b9f0_8a91e622bd82.png" /></p>
 <ul class="simple">
 <li><p>Path: OK10XX-C（Linux）user’s profile\tools\ipsec</p></li>
 </ul>
@@ -3195,14 +3195,14 @@ root@localhost:~# sudo route add -net 192.168.0.0 gw 192.168.0.1 netmask 255.255
 root@localhost:~# ipsec up home
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394225671_8281ee69_dda5_417d_81b4_1a39733a035c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394225671_8281ee69_dda5_417d_81b4_1a39733a035c.png" /></p>
 <p>A connection “home” established successfully indicates that ipsec authentication is complete.</p>
 <ol class="arabic simple" start="7">
 <li><p>Ping communication between carol and alice</p></li>
 </ol>
 <p>At present, carol and alice, which are located in different network segments, have communication functions, and encrypted communication is used in the subnet where carol is located.</p>
 <p>A ping from the carol host to the alice host.</p>
-<p><img alt="Image" src="_images/1719394226029_2c392c0f_4bfc_4472_919c_f54932c73e53.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394226029_2c392c0f_4bfc_4472_919c_f54932c73e53.png" /></p>
 <p>Passed between gateways 192.168.0.1 and 192.168.0.100 is the ESP ciphertext, which is parsed to produce the plaintext of 192.168.1.107’s reply to 192.168.0.100.</p>
 </section>
 <section id="dpdk-basic-environment-test">
@@ -3238,7 +3238,7 @@ root@localhost:~# reboot
 <section id="layer-two-forwarding-test">
 <h5>3.2.9.1 Layer Two Forwarding Test<a class="headerlink" href="#layer-two-forwarding-test" title="Link to this heading"></a></h5>
 <p>The Layer two forwarding network topology is shown in the following figure:</p>
-<p><img alt="Image" src="_images/1737513630267_a8e1af74_5620_46d5_a57b_b623d666a44b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1737513630267_a8e1af74_5620_46d5_a57b_b623d666a44b.png" /></p>
 <p>Use OK1046A-C2 platform fm1-mac2 and fm1-mac3 to forward data between Linux Host and OK1012A-C. Linux Host and OK1012A-C. (Note: OK 1046A-C3 development board is used for Linux Host here)</p>
 <p>1133 5a59 configuration:</p>
 <p>fm1-mac2==port0      fm1-mac5==port3      fm1-mac10==port6</p>
@@ -3344,14 +3344,14 @@ forlinx@ubuntu~$ echo &quot;start&quot; &gt; /proc/net/pktgen/pgctrl
 </pre></div>
 </div>
 <p>View OK1046A-C2:</p>
-<p><img alt="Image" src="_images/1737522869363_1371d8af_dc43_4f7d_bc49_5316e1de9c58.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1737522869363_1371d8af_dc43_4f7d_bc49_5316e1de9c58.png" /></p>
 <p>View OK1012A-C:</p>
-<p><img alt="Image" src="_images/1737522905466_cb1f63f1_986f_4de2_912b_44b3f6ae16e2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1737522905466_cb1f63f1_986f_4de2_912b_44b3f6ae16e2.png" /></p>
 </section>
 <section id="layer-three-forwarding-test">
 <h5>3.2.9.2 Layer Three Forwarding Test<a class="headerlink" href="#layer-three-forwarding-test" title="Link to this heading"></a></h5>
 <p>The Layer three forwarding network topology is shown in the following figure:</p>
-<p><img alt="Image" src="_images/1737350256270_d97abaae_a2d6_4179_b046_624b651ab552.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1737350256270_d97abaae_a2d6_4179_b046_624b651ab552.png" /></p>
 <p>Use OK1046A-C2 to forward data between 192.168.1.0 network segment and 192.168.2.0 network segment. (Note: OK 1046A-C3 development board is used for Linux Host here)</p>
 <p>1133 5a59 configuration:</p>
 <p>fm1-mac2==port0      fm1-mac5==port3      fm1-mac10==port6</p>
@@ -3363,7 +3363,7 @@ forlinx@ubuntu~$ echo &quot;start&quot; &gt; /proc/net/pktgen/pgctrl
 <li><p>Source code path：OK10xx-linux-fs/flexbuild /packages/apps/dpdk/examples/l3fwd/l3fwd_lpm.c</p></li>
 </ul>
 <p>Modification:</p>
-<p><img alt="Image" src="_images/1736834799535_3415c2b0_8d43_4d07_a0a9_b702fa8e66d9.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1736834799535_3415c2b0_8d43_4d07_a0a9_b702fa8e66d9.png" /></p>
 <p>Packets with a destination address of 192.168.1.0/24 use port0 output.</p>
 <p>Packets with a destination address of 192.168.2.0/24 use port1 output.</p>
 <p>Use the flex-builder -C dpdk -a arm64 -m ls1046ardb command in the flex-build environment.</p>
@@ -3468,13 +3468,13 @@ forlinx@ubuntu~$ echo &quot;start&quot; &gt; /proc/net/pktgen/pgctrl
 </pre></div>
 </div>
 <p>View OK1012A-C:</p>
-<p><img alt="Image" src="_images/1737085394434_94c17e87_a44c_4e25_b76b_a47dae561fef.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1737085394434_94c17e87_a44c_4e25_b76b_a47dae561fef.png" /></p>
 </section>
 </section>
 <section id="ovs-dpdk-basic-environmental-test">
 <h4>3.2.10 OVS-DPDK Basic Environmental Test<a class="headerlink" href="#ovs-dpdk-basic-environmental-test" title="Link to this heading"></a></h4>
 <p>This section briefly introduces the use of ovs-dpdk to build a layer two switching environment as shown in the following figure.</p>
-<p><img alt="Image" src="_images/1719394227913_0348c9ab_df60_4fa9_bf32_f4caa37979ca.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394227913_0348c9ab_df60_4fa9_bf32_f4caa37979ca.png" /></p>
 <p><strong>Note: Refer to Section 3.2.9 Using the Device Tree fsl-ok1046a-usdpaa-1133-5a59-c2.dtb.</strong></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~#echo 256 &gt; /proc/sys/vm/nr_hugepages
 root@localhost:~#mkdir -p /mnt/hugepages
@@ -3534,7 +3534,7 @@ root@localhost:~#ovs-vsctl --no-wait set Open_vSwitch . other_config:emc-insert-
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@localhost:~#iperf3 -c 192.168.1.120 -i 1 -t 60
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1719394228148_f26b4205_8269_45ba_ae0e_31bda784b743.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394228148_f26b4205_8269_45ba_ae0e_31bda784b743.png" /></p>
 </section>
 </section>
 </section>
@@ -3580,7 +3580,7 @@ root@localhost:~#ovs-vsctl --no-wait set Open_vSwitch . other_config:emc-insert-
 </tbody>
 </table>
 <p>The following files are stored in the USB flash disk FAT32 partition:</p>
-<p><img alt="Image" src="_images/1719394191555_064a264b_b17d_4b4b_be8a_2ff923d930d4.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394191555_064a264b_b17d_4b4b_be8a_2ff923d930d4.png" /></p>
 <p>Either rootfs or firmware can be placed, or both can be placed. The config. Ini of the configuration file is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[config]
 platform=ok1046-c
@@ -3593,7 +3593,7 @@ emmcflash=true
 </div>
 <p><strong>Note: Only the Uboot, kernel and file system in the EMMC are updated when the default configuration is flashed. If you need to update the Uboot image in the QSPI Flash at the same time (the QSPI Flash only stores the Uboot), Please change the “qspiflash” field in the config. Ini file to “true”.</strong></p>
 <p>Insert the prepared USB disk into the USB port of the development board, as shown below:</p>
-<p><img alt="Image" src="_images/1719394191999_dcb78473_47db_474a_b6f2_e5491579d057.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394191999_dcb78473_47db_474a_b6f2_e5491579d057.png" /></p>
 <p>Power on and start the system to automatically enter the programming process, and some of the programming and printing information is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>==================================================================
 +---------------+------------------------------------------------+
@@ -3642,7 +3642,7 @@ flash, done.
 <p>The OK1046A-C2 Uboot is set to boot the system from the QSPI flash by default. However, when the QSPI flash fails to boot up the system properly, you will need to create a bootable TF card to initiate the system boot process. This can be done in conjunction with using a USB drive to write the system files onto the TF card.</p>
 <p>The OK1046A-C2 platform has a TF card interface, but it conflicts with the eMMC and cannot be used under normal circumstances. However, it can still be used to initiate the system boot process. After starting up the system with the TF card, you can remove it and the system will automatically switch to the eMMC. Of course, the premise is that we need to burn the firmware into the TF card. The following is the process of making the burned TF card.</p>
 <p>1. Insert the TF card into the host through the USB card reader and connect it to the virtual machine Ubuntu. (If the card reader is not recognized by the virtual machine, you can use the following method to recognize the card reader to the virtual machine.);</p>
-<p><img alt="Image" src="_images/1719394192332_7bf760a7_1061_4976_8bc1_f9251791866e.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394192332_7bf760a7_1061_4976_8bc1_f9251791866e.png" /></p>
 <p>2. View device nodes;</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~$ ls /dev/sdb*
 /dev/sdb /dev/sdb1
@@ -3664,7 +3664,7 @@ if=firmware_ls1046ardb_uboot_sdboot_1040_5506.img of=/dev/sdb seek=8 bs=512
 </div>
 <p>As shown above, the successful creation of the TF card indicates that the card is ready to be used as a system boot device. You can now use the TF card to boot the system and, if needed, use a USB flash drive for system installation.</p>
 <p>Insert the prepared TF card into the TF card slot and connect the prepared USB flash drive to the USB interface on the development board. Set DIP switch A to the ON position (as shown below). Start the development board and continuously press the space bar from the moment of powering on until the system stops at the uboot command line. Remove the TF card at this time, and the system will automatically switch to eMMC. Then, type in “boot” to enter the burning process.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                        ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394192619_1c25137e_8e5b_4dc4_be33_04fb1d21a5cd.png)&lt;font style=&quot;color:#000000;&quot;&gt;                                              ![Image](./images/OK1046A-C2_Linux4_1_14_User_Manual/1719394192865_0b818f10_0ef4_4fb1_a895_0cf068e86025.png)
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                        ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394192619_1c25137e_8e5b_4dc4_be33_04fb1d21a5cd.png)&lt;font style=&quot;color:#000000;&quot;&gt;                                              ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok1046a-c2/OK1046A-C2_Linux4_1_14_User_Manual/1719394192865_0b818f10_0ef4_4fb1_a895_0cf068e86025.png)
 </pre></div>
 </div>
 <p>DIP switch status during TF card writing.</p>
