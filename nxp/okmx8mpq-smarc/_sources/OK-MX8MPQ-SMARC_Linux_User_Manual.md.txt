@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -65,7 +65,7 @@ This software manual applies to the Forlinx OK-MX8MPQ-SMARC platform Linux6.1.36
 The OK-MX8MPQ-SMARC development board uses a SoM + carrier board architecture, designed based on the NXP i.MX 8M Plus industrial-grade processor. It features a quad-core Arm® Cortex®-A53 CPU with an integrated Neural Processing Unit (NPU) delivering up to 2.3 TOPS of performance and a maximum CPU frequency of 1.6GHz. Supports real-time control via Cortex-M7. Features a powerful control network with CAN FD and dual Gigabit Ethernet, supporting Time-Sensitive Networking (TSN).   
 The SoM comes in two options: 2GB LPDDR4 with 16GB eMMC, and 4GB LPDDR4 with 32GB eMMC. OK-MX8MPQ-SMARC development board is rich in interface resources, providing a variety of peripheral interfaces, such as NIC, audio Codec, ADC, TF Card, LVDS, MIPI, WIFI, 4G, 5G, PCIE, serial port, CAN and other functional interfaces.
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/a9804aee43214dd0b33e88968e4896ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/a9804aee43214dd0b33e88968e4896ce.png)
 
 **Note：**   
 
@@ -123,7 +123,7 @@ Hardware preparation before system startup:
 + According to the development board interface to connect the screen (Based on display needs);
 + Check the start mode DIP switch. Please check the DIP switch on your development board and make sure it is set to the desired boot mode. Please refer to the startup mode settings.“<font style="color:blue;">Flashing and Startup Configuration</font>”
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/56f0b93ed9b14635a2493d58a2625d36.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/56f0b93ed9b14635a2493d58a2625d36.png)
 
 ### 2.2 Serial Login
 
@@ -139,10 +139,10 @@ Here is an example using Putty to explain how to configure the terminal:
 **Step 1:** Connect the development board and the PC using a serial cable, and verify the serial port number recognized by the computer through the “Device Manager”. The port number recognized by the computer should be considered as the accurate one;   
 **Description:**
 
-+ Two serial ports will be generated, and SERIAL-B is the debugging serial port on the Linux side.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/f74afcf5864f4206beb4f7fd381a03a9.png)
++ Two serial ports will be generated, and SERIAL-B is the debugging serial port on the Linux side.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/f74afcf5864f4206beb4f7fd381a03a9.png)
 
-**Step 2:** Open and configure PuTTY; set the serial line to match the COM port of your computer with a baud rate of 115200.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/b20d8743bdab4355b9bed0f8f57c72ca.png)   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/ee413bb0c9bb4bac98a0b37dd328d753.png)
+**Step 2:** Open and configure PuTTY; set the serial line to match the COM port of your computer with a baud rate of 115200.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/b20d8743bdab4355b9bed0f8f57c72ca.png)   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/ee413bb0c9bb4bac98a0b37dd328d753.png)
 
 **Step 3:** Turn on the power switch of the development board, and serial port print information will be output until "Welcome to forlinx ok-mx8mpq-smarc" appears, indicating that the boot process is complete. The system defaults to the root account with no password, so you do not need to enter any login information.
 
@@ -178,15 +178,15 @@ Common problem troubleshooting points for logging in using the serial port are a
 
 Before login, ensure the network connection between the computer and the development board is normal, and use the ping command to test the connection status. The specific method of operation is as follows:
 
-1. Connect the development board's GBE1 port to the computer using an Ethernet cable. Power on the board and boot the kernel. Confirm the blue heartbeat LED is blinking. Check the network card connection, ensuring its LED flashes rapidly. Once confirmed, proceed with testing the network connection.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/4cd7a79e2c504f43a042671339689520.png)
+1. Connect the development board's GBE1 port to the computer using an Ethernet cable. Power on the board and boot the kernel. Confirm the blue heartbeat LED is blinking. Check the network card connection, ensuring its LED flashes rapidly. Once confirmed, proceed with testing the network connection.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/4cd7a79e2c504f43a042671339689520.png)
 
 2\. Close the computer firewall (General computer operations, not described here in detail), then open the computer's run command.
 
-**![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/0ddb4a6af9e74c2da69a786786ff152d.png)**
+**![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/0ddb4a6af9e74c2da69a786786ff152d.png)**
 
 3\. Use cmd to open the computer administrator interface, and use the ping command to test the network connection status of the computer and the development board.       
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/c52686a86ab84f85a682a667b78cb6b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/c52686a86ab84f85a682a667b78cb6b9.png)
 
 The data is returned, and the network connection is normal.
 
@@ -231,11 +231,11 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 root@ok-mx8mpq-smarc:~#
 ```
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/ddad511fe1494f42aa03345de6fa1fff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/ddad511fe1494f42aa03345de6fa1fff.png)
 
 Click "Open", the following dialog box will appear, click "accept" to enter the login interface.
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/572eadcc10da4bd6bdaf42f62baae62a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/572eadcc10da4bd6bdaf42f62baae62a.png)
 
 ```plain
 login as: root
@@ -245,7 +245,7 @@ root@ok-mx8mpq-smarc:~#
 
 Files can be copied via SFTP using FileZilla (software must be installed by yourself).
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/7fe8ae0d719c45bcbb45ade6f17e608c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/7fe8ae0d719c45bcbb45ade6f17e608c.png)
 
 ### 2.4 System Partition
 
@@ -304,8 +304,8 @@ This chapter mainly explains the usage of the expansion interfaces on the develo
 
 ### 3.1 Introduction to Interface Function
 
-The desktop is displayed as follows after the board is booted:![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/fca276e19857485ea823ac2240733228.png)   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/3fe290b781e24e7fa97a0a8790b0b7f5.png)**Note: Icon order may vary.**
+The desktop is displayed as follows after the board is booted:![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/fca276e19857485ea823ac2240733228.png)   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/3fe290b781e24e7fa97a0a8790b0b7f5.png)**Note: Icon order may vary.**
 
 ### 3.2 Network Configuration Test
 
@@ -315,7 +315,7 @@ The desktop is displayed as follows after the board is booted:![Image](./images/
 
 + **The set IP and other information will be saved to the relevant configuration file (/etc/systemd/network directory) of the system, so the network information set this time will be used every time the system is restarted.**   
 
-  Icon![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/e379b39da7af498591c0269c708f2e64.png)
+  Icon![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/e379b39da7af498591c0269c708f2e64.png)
 
    Clicking on the network configuration icon will open a interface program that supports two modes: STATIC and DHCP.
 
@@ -331,34 +331,34 @@ After clicking on the network configuration icon, select the STATIC mode as show
 | gateway| Set up the gateway
 | dns| Set DNS
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/4dd6869cddaf40d4a3705c0e49a53dec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/4dd6869cddaf40d4a3705c0e49a53dec.png)
 
 The DHCP mode interface is as follows:   
 **Note: The test must be conducted under a router that can automatically assign IP addresses.**
 
 Select DHCP, then choose the network card device to be configured in the "interface". Click "Apply and Restart Network" at the bottom of the interface, and the network will automatically restart and an IP address will be automatically obtained.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/53c9ce5ef90c4489aaa02ad4349714d5.png)Restart the development board, and you can see that the network configuration is in effect.   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/53c9ce5ef90c4489aaa02ad4349714d5.png)Restart the development board, and you can see that the network configuration is in effect.   
 **Note: If you configure eth0 with a static IP and eth1 with a dynamic IP simultaneously, it may cause routing abnormalities. If you encounter network connectivity issues, it is recommended to check the routing table. It is recommended to configure only one network port at a time.**
 
 ### 3.3 OpenGL Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/66713b0eb0d343a198dfcfc18082b674.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/66713b0eb0d343a198dfcfc18082b674.png)   
 OK-MX8MPQ-SMARC supports EGL 1.5，OpenGL ES2.0.   
-Click the icon to enter the OpenGL test interface.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/b08b70fb18954c80b3011c9ade6df31f.png)
+Click the icon to enter the OpenGL test interface.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/b08b70fb18954c80b3011c9ade6df31f.png)
 
 ### 3.4 4G/5G Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/c302b37888bc466b93657f9cb0416cea.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/c302b37888bc466b93657f9cb0416cea.png)   
 "4G" test program is used to test the OK-MX8MPQ-SMARC external 4G module (EM05-CE), 5G module (RM500U-CN, RM500Q-GL). Before the test, please power off the development board, connect the module, insert the SIM card (pay attention to the direction of the SIM card), toggle the switch (S4) to select the 4G, 5G mode, and start the development board to open the test application. This test takes 4G as an example:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/bf6d23106c734d989d656caf36b1eb84.png)  
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/1d8815feb87144f8987b180399645410.png)Click the "connect" button, the program will automatically enter the dial-up process and get the IP settings DNS, etc., wait a few seconds, and click the ping button to test.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/bf6d23106c734d989d656caf36b1eb84.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/1d8815feb87144f8987b180399645410.png)Click the "connect" button, the program will automatically enter the dial-up process and get the IP settings DNS, etc., wait a few seconds, and click the ping button to test.
 
 ### 3.5 UART Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/0ca48fd94c5a4d6797b2ebe24e630caf.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/0ca48fd94c5a4d6797b2ebe24e630caf.png)   
 In this test, the carrier board uart3 (ttymxc0) and the carrier board USB to UART (/dev/ttyCH343USB) are used, and the pins 1 and 2 of the pin header of the development board P27 are short-circuited with pins 4 and 5 respectively to conduct the serial port test.
 
-1. Click the UART test icon to enter the test application interface, click the gear icon![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/59930d73d0c14871b257e506207cd55f.png)setting button in the upper left corner, and set the serial port parameters as shown in the figure below:
+1. Click the UART test icon to enter the test application interface, click the gear icon![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/59930d73d0c14871b257e506207cd55f.png)setting button in the upper left corner, and set the serial port parameters as shown in the figure below:
 
 | **Relevant Parameter**| **Meaning**
 |----------|----------
@@ -369,9 +369,9 @@ In this test, the carrier board uart3 (ttymxc0) and the carrier board USB to UAR
 | Stop bits| Set stop bit (1 bit)
 | Flow control| Set flow control (no flow control)
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/ad247d08c1ae4b3d9693c663792115f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/ad247d08c1ae4b3d9693c663792115f9.png)
 
-2. After setting the serial port parameters, click the![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/4a237fb1ca8e42bf88561596781a58b2.png)connection button in the upper left corner. At this time, the test program can carry out the data receiving and sending test.   
+2. After setting the serial port parameters, click the![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/4a237fb1ca8e42bf88561596781a58b2.png)connection button in the upper left corner. At this time, the test program can carry out the data receiving and sending test.   
 
 3. Run the serial port send test command in the terminal. The received data will be displayed on the screen.
 
@@ -380,7 +380,7 @@ root@ok-mx8mpq-smarc:~# fltest_uarttest -d /dev/ttyCH343USB  -w
 tx_0: XEiNKcpIXrzQF4t9PqirDCTqWKgLnKoK
 ```
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/041d20cb846f40d2826c8865d1b3224e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/041d20cb846f40d2826c8865d1b3224e.png)
 
 4. Run the serial port receive test command in the terminal. When you click the test interface, a virtual keyboard will appear. After entering 32 consecutive characters, the terminal will print the data sent by QT.
 
@@ -390,7 +390,7 @@ rx_0: 12345678901234567890123456789012
 root@ok-mx8mpq-smarc:~#
 ```
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/2e18d1c3af614ea4b15ff01ab6ea9c3f.png)**Note: The data input by the soft keyboard will not be displayed on the test interface until the Enter key is pressed.**
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/2e18d1c3af614ea4b15ff01ab6ea9c3f.png)**Note: The data input by the soft keyboard will not be displayed on the test interface until the Enter key is pressed.**
 
 ### 3.6 WIFI Test
 
@@ -399,60 +399,60 @@ root@ok-mx8mpq-smarc:~#
 + **The OK-MX8MPQ-SMARC SoM is soldered with the AW-CM276 NF WiFi chip and supports 2.4 GHz/5 GHz.**
 
 "WIFI" is a tool for configuring and testing the STA (station) mode of Wi-Fi.   
-1\. Click on the icon![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/742cb59ecc034487862cf4fc45e28e47.png)to enter the test interface. From the dropdown menu, select the corresponding module. In the SSID, input the name of the router you want to connect. In the PAWD, input the router's password. Then, click "connect" to establish a WiFi connection with the router.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/7457f862f32c4cafa22bf848f223403a.png)2. “Click” ping to test the network after a successful connection.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/a92b68218fd644e8a6aa8ac8e7835bca.png)
+1\. Click on the icon![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/742cb59ecc034487862cf4fc45e28e47.png)to enter the test interface. From the dropdown menu, select the corresponding module. In the SSID, input the name of the router you want to connect. In the PAWD, input the router's password. Then, click "connect" to establish a WiFi connection with the router.   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/7457f862f32c4cafa22bf848f223403a.png)2. “Click” ping to test the network after a successful connection.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/a92b68218fd644e8a6aa8ac8e7835bca.png)
 
 ### 3.7 RTC Test
 
 **Note: Ensure that button cell batteries are installed on the board and the battery voltage is normal.** 
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/7be334d098f242b9898431e794dd0783.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/7be334d098f242b9898431e794dd0783.png)   
 RTC test includes setting time, power cycling, rerunning test software, and verifying RTC sync.   
 Run the RTC test software to view and set the current system time with the following interface:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/c3471066d6174a94a3f3ad733c707bc2.png)After SET, users can set the time and click Save to finish the settings. After powering off and waiting, reboot and rerun the RTC test software to synchronize and confirm the RTC test is normal.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/c3471066d6174a94a3f3ad733c707bc2.png)After SET, users can set the time and click Save to finish the settings. After powering off and waiting, reboot and rerun the RTC test software to synchronize and confirm the RTC test is normal.
 
 ### 3.8 Watchdog Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/8f7452581d4449eba74adcdca46891d1.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/8f7452581d4449eba74adcdca46891d1.png)   
 "WatchDog” tests the functionality of the watchdog feature. Interface as follows:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/2ca60485c1ee426abf97af970461bd8d.png)Check ” feed dog and click the open watchdog key, then the watchdog will be activated, the program will carry out the feeding operation, and the system will not reboot under normal circumstances; when unchecking ” feed dog and clicking open watchdog key, the watchdog function will be activated, the program will not carry out the feeding operation, and the system enters into a reboot after the watchdog is activated for about 10s, which indicates that the watchdog function is normal.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/2ca60485c1ee426abf97af970461bd8d.png)Check ” feed dog and click the open watchdog key, then the watchdog will be activated, the program will carry out the feeding operation, and the system will not reboot under normal circumstances; when unchecking ” feed dog and clicking open watchdog key, the watchdog function will be activated, the program will not carry out the feeding operation, and the system enters into a reboot after the watchdog is activated for about 10s, which indicates that the watchdog function is normal.
 
 ### 3.9 Ping Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/8f4272babe6e4561b56cd71515c91f5a.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/8f4272babe6e4561b56cd71515c91f5a.png)   
 "Ping" is a graphical tool for network testing, offering a user-friendly interface for ping operations.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/6cd5805bca584d97b3924104ae32c991.png)Write the target ip needing ping in the hostname field;  after clicking the ping button, the RESULT column will indicate the result, click stop to end the ping test and clear to clean the information in the result.   
-As shown in the figure, the network connection is smooth.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/5795aa925d9848d1b4eb0bf0ee27f2ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/6cd5805bca584d97b3924104ae32c991.png)Write the target ip needing ping in the hostname field;  after clicking the ping button, the RESULT column will indicate the result, click stop to end the ping test and clear to clean the information in the result.   
+As shown in the figure, the network connection is smooth.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/5795aa925d9848d1b4eb0bf0ee27f2ea.png)
 
 ### 3.10 Camera Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/9d10749908254e669faff8fb5c0eabca.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/9d10749908254e669faff8fb5c0eabca.png)   
 Click the icon to enter the camera test program and insert the USB camera.   
 **Note: if the CSI ov5645 camera is used, please disconnect the power and plug it; the current test program does not support basler \_ camera.**  
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/85bc01f11d844f52ace7ed9bcb0a22d3.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/85bc01f11d844f52ace7ed9bcb0a22d3.png)  
 Please select camera video to set the device node, camera resolution to set the resolution, click the start button to start camera acquisition, click the stop button to stop camera acquisition, click the picture button to take a picture, and save the path and file name of the picture.   
 Take the Logitech UVC camera as an example to conduct the camera test.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/25b71fb1d213427e8e61482213a745c4.png)After Start, click the picture button to take a picture, the file save directory is /home/root/, and the format is jpg, please select the appropriate tool on Windows to view.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/25b71fb1d213427e8e61482213a745c4.png)After Start, click the picture button to take a picture, the file save directory is /home/root/, and the format is jpg, please select the appropriate tool on Windows to view.
 
 ### 3.11 Backlight Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/2bfb421a89ee427cbe3201fdd16db27f.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/2bfb421a89ee427cbe3201fdd16db27f.png)   
 "BackLight" is an LCD backlight adjustment App with a left-right progress bar for brightness control. Click to open the interface as follows:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/5fea84effaf049d68df3c8588579c537.png)Drag the slider corresponding to the screen in the interface to set the Lcd backlight brightness, level 1 is the lowest brightness, and 255 is the highest brightness. Forlinx has made restrictions on this application. It is not allowed to use the QT application to completely turn off the backlight. If you want to completely turn off the backlight, please use the command line program or modify the QT test routine.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/5fea84effaf049d68df3c8588579c537.png)Drag the slider corresponding to the screen in the interface to set the Lcd backlight brightness, level 1 is the lowest brightness, and 255 is the highest brightness. Forlinx has made restrictions on this application. It is not allowed to use the QT application to completely turn off the backlight. If you want to completely turn off the backlight, please use the command line program or modify the QT test routine.
 
 ### 3.12 Play/Record Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/6db02299ab7542e8a584562c43e5e54c.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/6db02299ab7542e8a584562c43e5e54c.png)   
 Before conducting the audio recording test, please insert the prepared microphone into the mic port. Click the icon to enter the recording test application, which can be used to check if the sound card recording function is working properly.   
 Select the location to save the recording file, press the "Start" button to start recording, press the "Stop" button to stop recording, click the Audio Codec radio box to select "Wave", click the FILE Container radio box to select "Wave File", click the Channels radio box to select 2, and the interface is as follows:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/cd5162461b5045689677082f51b43b32.png)Click the Record button to test the recording. The recording file is saved to the/tmp/record \_ \*.wav file in the root directory.   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/cd5162461b5045689677082f51b43b32.png)Click the Record button to test the recording. The recording file is saved to the/tmp/record \_ \*.wav file in the root directory.   
 Note: The/TMP directory is tmpfs and the files in it are not saved after reboot.
 
 ### 3.13 Music Play Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/b34e77692264471988527cb2e87c698f.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/b34e77692264471988527cb2e87c698f.png)   
 "music player" is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/cfafef1663614d7bbffc52da985b7274.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/cfafef1663614d7bbffc52da985b7274.png)  
 Application interface 
 
 Click the button in the lower left corner and select Test Audio/home/forlinx/audio/test.mp3. 
@@ -461,17 +461,17 @@ Please note the audio device during playback, which is HDMI by default.
 
 ### 3.14 Qml Video Playback Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/7774e619f1ce44648ec60323aabdd162.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/7774e619f1ce44648ec60323aabdd162.png)   
 Qml Video supports video playback in H264 and H265 formats, with a maximum of 1080p 60fps.   
 The qml video test program can play video based on qml. Click the icon to enter the test program interface.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/c488930e0a724fae94b5dc493fde735b.png)Click Select File 1 at the top to select the video file. The path of the test video file is shown in the following figure:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/035e42ac7f5647ad9c9e4783e465c0a9.png)Click Full Screen-inverted to start playing the video in full screen.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/b463fb70f7a043b18153f78481d28cb3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/c488930e0a724fae94b5dc493fde735b.png)Click Select File 1 at the top to select the video file. The path of the test video file is shown in the following figure:   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/035e42ac7f5647ad9c9e4783e465c0a9.png)Click Full Screen-inverted to start playing the video in full screen.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/b463fb70f7a043b18153f78481d28cb3.png)
 
 ### 3.15 Browser Test
 
-Icon：![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/bf0c78842aaf42dfbf900dcbf0d61e97.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/bf0c78842aaf42dfbf900dcbf0d61e97.png)   
 **Note: Before testing, check whether the time of the development board is accurate. If the time of the development board is abnormal, it will cause certificate problems. Check the network.**   
-Click the icon to enter the browser interface and enter the official website of forlinx by default.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/dc6bbab62dd9405f83aff56fb9446a90.png)
+Click the icon to enter the browser interface and enter the official website of forlinx by default.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/dc6bbab62dd9405f83aff56fb9446a90.png)
 
 ## 4. Command Line Tool Application and Test
 
@@ -720,7 +720,7 @@ OK-MX8MPQ-SMARC development board is equipped with 4 UART ports, which are label
 The maximum baud rate supported by 485 is 4000000, supports parity check, CS5, CS6, CS7, CS8, and 1bit and 2bit stop bits.   
 In this test, ttymxc0 and ttymxc2 are used to test the serial port by short-circuiting pins 1 and 4, pins 2 and 5, pins 3 and 6 of P27 respectively.
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/177a3627aa8d486eadd18a41c8ca3dff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/177a3627aa8d486eadd18a41c8ca3dff.png)
 
 ```plain
 root@ok-mx8mpq-smarc:~# fltest_uarttest -d /dev/ttymxc0 -r &
@@ -1098,7 +1098,7 @@ Run iperf3 in server mode from the cmd command terminal on Windows:
 D:\iperf-3.1.3-win64\iperf-3.1.3-win64>iperf3.exe -s
 ```
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/7b398e50ab0d429ca1629c9add838679.png)Connect the network cable to the eth1 interface. After the system starts, eth1 will automatically obtain an IP address. Then, enter the following command in the OK-MX8MPQ-SMARC serial debugging terminal:
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/7b398e50ab0d429ca1629c9add838679.png)Connect the network cable to the eth1 interface. After the system starts, eth1 will automatically obtain an IP address. Then, enter the following command in the OK-MX8MPQ-SMARC serial debugging terminal:
 
 ```plain
 root@ok-mx8mpq-smarc:~# iperf3 -c 192.168.1.165       //Please fill in the server IP address according to the actual situation
@@ -1157,7 +1157,7 @@ The OK-MX8MPQ-SMARC eth1 Gigabit network achieved an upload bandwidth of 948 Mbp
 **Note: To properly use this feature, the PC's IP address must be in the same network segment as the development board's.**   
 OK-MX8MPQ-SMARC development board comes pre-installed with a lighttpd web server, which automatically starts on system boot. Simply input the development board's IP address in your browser to access the web pages. 
 
-As shown in the following figure:![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/64aed339158345ce8a6099077af53ea3.png)
+As shown in the following figure:![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/64aed339158345ce8a6099077af53ea3.png)
 
 #### 4.13.2 SFTP
 
@@ -1303,7 +1303,7 @@ Default agent request successful
 [bluetooth]#
 ```
 
-Development Board Passive Pairing. After the above settings, open the mobile phone Bluetooth search, and a device named "ok-mxmpq-smarc" will appear. Click this Bluetooth to try to pair.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/20a03c8d735d4041ae9f2cfca870f4f1.png)At the same time, the information printed on the development board is as follows. Enter yes:
+Development Board Passive Pairing. After the above settings, open the mobile phone Bluetooth search, and a device named "ok-mxmpq-smarc" will appear. Click this Bluetooth to try to pair.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/20a03c8d735d4041ae9f2cfca870f4f1.png)At the same time, the information printed on the development board is as follows. Enter yes:
 
 ```plain
 [CHG] Device 14:16:9E:62:39:BD Connected: yes
@@ -1414,7 +1414,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 root@ok-mx8mpq-smarc:~#
 ```
 
-The phone will receive the incoming file request and click Accept to transfer the file.![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/ee86c59858e148099e88dd27fd40c44d.png)
+The phone will receive the incoming file request and click Accept to transfer the file.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/ee86c59858e148099e88dd27fd40c44d.png)
 
 ### 4.15 4G/5G Test
 
@@ -1854,8 +1854,8 @@ The MD5 values are the same, indicating that the data written into the SPI flash
 
 The GPIO on the OK-MX8MPQ-SMARC carrier board are extended via an I2C-to-GPIO chip.   
 The GPIO on P32 are extended through chip5, and the GPIO on P34 are extended through chip6.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/50646b9387fa4ef484fb9b269e0586d5.png)  
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/9fbcc41185584f10b3d61017d64249f5.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/50646b9387fa4ef484fb9b269e0586d5.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/9fbcc41185584f10b3d61017d64249f5.png)  
 You can see both chips via a command.
 
 ```plain
@@ -1875,7 +1875,7 @@ The command format is: gpioset -C chipindex \< line = value >
 The chipindex is set to the specific chip serial number, the line is set to the gpio serial number under the chip, and the value is set to the output level.   
 
 1. Set GPIO on chip 5   
-   The pins are connected as follows:![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/a4a8701b93d348ce9b36a5ba5ef4d134.png)Take the setting of GPIO7 as an example. GPIO7 is the GPIO20 \_ EXP on the SoM TCA6424IO expansion chip, and the chip is mounted on I2C1. So the corresponding chipindex is 5; the line is calculated as tens digit of the sequence number × 8 + units digit. For GPIO20\_EXP, the line is 2 × 8 + 0 = 16.   
+   The pins are connected as follows:![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/a4a8701b93d348ce9b36a5ba5ef4d134.png)Take the setting of GPIO7 as an example. GPIO7 is the GPIO20 \_ EXP on the SoM TCA6424IO expansion chip, and the chip is mounted on I2C1. So the corresponding chipindex is 5; the line is calculated as tens digit of the sequence number × 8 + units digit. For GPIO20\_EXP, the line is 2 × 8 + 0 = 16.   
    To set GPIO7 to output a high level:
 
 ```plain
@@ -2177,7 +2177,7 @@ The OK-MX8MPQ-SMARC development board is equipped with an iMX8MPLUS processor, w
 TensorFlow Lite testing  
 Demo recognizes information such as people, animals, plants, and places in the input image (grace\_copper. bp).
 
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/d1763fc53fef4957957238a981b8f8d2.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/d1763fc53fef4957957238a981b8f8d2.png)  
 Run the demo on the CPU.
 
 ```plain
@@ -2824,7 +2824,7 @@ D:\work\8MP_SMARC\image>uuu.exe -b emmc ok-mx8mp-uboot.bin
 ```
 
 Flashing is completed as shown below:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/18137ab150f84950ba36ad576526deee.png)The uboot is flashed to boot0 partition in emmc.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/18137ab150f84950ba36ad576526deee.png)The uboot is flashed to boot0 partition in emmc.
 
 #### 7.2.2 Flashing Uboot to SD
 
@@ -2836,7 +2836,7 @@ D:\work\8MP_SMARC\image>uuu.exe -b sd ok-mx8mp-uboot.bin
 ```
 
 Flashing is completed as shown below:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/b653d90d15ee48d888c568e3e6612fbc.png)The uboot is flashed to a 32KB offset on the SD card.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/b653d90d15ee48d888c568e3e6612fbc.png)The uboot is flashed to a 32KB offset on the SD card.
 
 #### 7.2.3 Flashing Uboot to QSPIFLASH
 
@@ -2848,7 +2848,7 @@ D:\work\8MP_SMARC\image>uuu.exe -b qspi ok-mx8mp-uboot.bin
 ```
 
 Flashing is completed as shown below:   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/56f2b61ad2404e1c9facfd007f49b2de.png)The U-Boot is flashed to the 4KB offset of the QSPI flash.
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/56f2b61ad2404e1c9facfd007f49b2de.png)The U-Boot is flashed to the 4KB offset of the QSPI flash.
 
 ### 7.3 Flashing the File System via USB
 
@@ -2859,7 +2859,7 @@ The PC side runs the cmd program with administrator privileges. In the cmd progr
 D:\work\8MP_SMARC\image>uuu.exe -b emmc_all ok-mx8mp-uboot.bin ok8mp-linux-fs.sdcard
 ```
 
-Flashing is completed as shown below:![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/207cf91fd4e24debb1a6d6f334e540cc.png)
+Flashing is completed as shown below:![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/207cf91fd4e24debb1a6d6f334e540cc.png)
 
 ### 7.4 Flashing Uboot in File System
 
@@ -2931,7 +2931,7 @@ The flashing card is made and next you need to copy the image to the flashing ca
 #### 7.5.2 Copying the Required Image to The Flashing Card
 
 Copy ok-mx8mp-uboot.bin, ok8mp-linux-fs.sdcard.a\*, Image, ok-mx8mp-smarc-2gb.dtb, ok-mx8mp-smarc.dtb, ramdisk.img.gzto tf card.   
-![Image](./images/OKMX8MPQSMARC_Linux_User_Manual/40726eb041904298822ba3fca9d50b3c.png)ramdisk.img.gz is already packaged by Forlinx, with a built-in flash script update.sh, which will be executed by default during the file system initialisation process. Users can also make their own ramdsik through tools such as busybox.   
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Linux_User_Manual/40726eb041904298822ba3fca9d50b3c.png)ramdisk.img.gz is already packaged by Forlinx, with a built-in flash script update.sh, which will be executed by default during the file system initialisation process. Users can also make their own ramdsik through tools such as busybox.   
 Note: The kernel Image and dtb finally flashed into the eMMC are the ones packaged in ok8mp-linux-fs.sdcard.a. The kernel Image and dtb in the TF card are used for TF card flashing and booting. Users can also modify the flash script in ramdisk to copy the kernel Image and dtb from the tf card to the emmc after flashing the emmc.
 
 #### 7.5.3 Flashing EMMC With TF Card

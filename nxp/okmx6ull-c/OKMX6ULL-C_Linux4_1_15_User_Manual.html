@@ -240,12 +240,12 @@
 <section id="okmx6ull-c-development-board-description">
 <h2>1. OKMX6ULL-C Development Board Description<a class="headerlink" href="#okmx6ull-c-development-board-description" title="Link to this heading"></a></h2>
 <p>OKMX6ULL-C development board adopts the SoM + carrier board structure, designed based on NXP’s i.MX6ULL low-power processor, running at a main frequency of 800 MHz and ARM Cortex-A7 architecture. The unique power management architecture of the board results in lower power consumption compared to ARM9 series SoMs. The SoM offers a rich variety of peripheral interfaces, including CAN, WIFI, USB, UART, IIC, and Ethernet, providing ample resources for various functions.</p>
-<p><img alt="Image" src="_images/1715069614370_e30a3b51_a542_496f_9c2f_4b75287cb742.jpg" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069614370_e30a3b51_a542_496f_9c2f_4b75287cb742.jpg" /></p>
 <p><strong>Note: Hardware parameters are not described in this software manual. Before referring to this manual for software development, please read “OKMX6ULL-C_ Hardware Manual” under the path of “Hardware Data \ User Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
 <section id="flashing-and-booth-configuration">
 <h3>1.1 Flashing and Booth Configuration<a class="headerlink" href="#flashing-and-booth-configuration" title="Link to this heading"></a></h3>
 <p>OKMX6ULL-C supports two flashing methods, USB-OTG and TF card. It also supports EMMC boot mode, which can be differentiated using a DIP switch. The image below illustrates the EMMC boot configuration.</p>
-<p><img alt="Image" src="_images/1715069614821_1b53566f_b0a3_4b76_8400_ef40f910eb1a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069614821_1b53566f_b0a3_4b76_8400_ef40f910eb1a.png" /></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>DIP Switch</p></th>
@@ -392,10 +392,10 @@
 </ul>
 <p>Here is an example using Putty to explain how to configure the terminal:</p>
 <p>Step 1: Connect the development board and the PC using a serial cable, and verify the serial port number recognized by the computer through the “Device Manager”. The port number recognized by the computer should be considered as the accurate one;</p>
-<p><img alt="Image" src="_images/1731401772424_b5a55b61_f82c_4d9a_b7f2_9bb4f9b2f317.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401772424_b5a55b61_f82c_4d9a_b7f2_9bb4f9b2f317.png" /></p>
 <p>Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;</p>
-<p><img alt="Image" src="_images/1715069947297_8f188704_1a4a_44f6_8ec4_9eb0606b7607.png" /></p>
-<p><img alt="Image" src="_images/1715069947496_8163884e_22ef_4c71_b27a_6dd87210926e.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069947297_8f188704_1a4a_44f6_8ec4_9eb0606b7607.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069947496_8163884e_22ef_4c71_b27a_6dd87210926e.png" /></p>
 <p>Step 3: Log in with the username is “root” and no password.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Freescale i.MX Release Distro 4.1.15-2.0.1 fl-imx6ull /dev/ttymxc0
 fl-imx6ull login: root
@@ -423,15 +423,15 @@ Linux fl-imx6ull 4.1.15-00047-g6c1ab7a #3 SMP PREEMPT Wed Mar 9 09:42:35 CST 202
 <ol class="arabic simple">
 <li><p>Connect eth0 of the development board to the computer through the network and power up the development board. A blue light on the SoM will blink after the kernel starts, and the network card connected to the computer will blink quickly after normal startup. At this point, you can test the network connection;</p></li>
 </ol>
-<p><img alt="Image" src="_images/1715069947680_2f7089c1_6a94_4136_b57f_04247b1007ad.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069947680_2f7089c1_6a94_4136_b57f_04247b1007ad.png" /></p>
 <ol class="arabic simple" start="2">
 <li><p>Close the computer firewall, then open the computer’s run command;</p></li>
 </ol>
-<p><img alt="Image" src="_images/1715069948013_bc1593f9_d22f_4cfc_9a21_063a757d1e5d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948013_bc1593f9_d22f_4cfc_9a21_063a757d1e5d.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>Use cmd to open the computer administrator interface, and use the ping command to test the network connection status between the computer and the development board.</p></li>
 </ol>
-<p><img alt="Image" src="_images/1715069948262_703799dc_2146_4af2_ab2f_b3358fc1fe34.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948262_703799dc_2146_4af2_ab2f_b3358fc1fe34.png" /></p>
 <p>A data return indicates a normal network connection.</p>
 </section>
 <section id="ssh">
@@ -480,9 +480,9 @@ forlinx@ubuntu:~$                                  //SSH login can be successful
 <ul class="simple">
 <li><p><strong>Windows host access to development board via SSH</strong></p></li>
 </ul>
-<p><img alt="Image" src="_images/1715069948482_765da064_2917_416f_af25_5ed6695cb78a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948482_765da064_2917_416f_af25_5ed6695cb78a.png" /></p>
 <p>Click “Open”, the following dialog box will appear, click “Yes” to enter the login screen.</p>
-<p><img alt="Image" src="_images/1715069948834_a31d6c5e_16c4_4717_ae6f_16d89377f97b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069948834_a31d6c5e_16c4_4717_ae6f_16d89377f97b.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Login as：root
 -sh: /home/root: Is a directory
 root@fl-imx6ull:~#
@@ -496,7 +496,7 @@ root@fl-imx6ull:~#
 <p>Note: When using the 10.4 inch (800x600) resistance screen of Forlinx, please refer to 3.1.13.3 Touch section to modify, and the default is the touch direction of the 8-inch screen 800x600 resistor.</p>
 <p>LCD displays of different sizes and resolutions can be selected through the U-boot menu during the boot phase. The specific method is as follows:</p>
 <p>Open the serial port debugging terminal putty. After the development board is powered up, press the space bar to enter the menu home page:</p>
-<p><img alt="Image" src="_images/1715069949134_dd156b2d_59c9_4f88_b5fa_506d916ddc44.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069949134_dd156b2d_59c9_4f88_b5fa_506d916ddc44.png" /></p>
 <p>The uboot level 1 menu function options are listed in the table below:</p>
 <table class="docutils align-default">
 <thead>
@@ -520,11 +520,11 @@ root@fl-imx6ull:~#
 </tbody>
 </table>
 <p>Enter 1 to enter the screen selection menu (Switch panel), select the corresponding screen, and the system will restart.</p>
-<p><img alt="Image" src="_images/1715069949426_8cdf4ecd_e49e_4373_9b39_9d621c8054c8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069949426_8cdf4ecd_e49e_4373_9b39_9d621c8054c8.png" /></p>
 <p>According to the menu prompts, select the corresponding options to support LCD display with different sizes and resolutions. The first column is the selection number, the second column is the screen resolution, and the third column is the size and type of the system screen (where c and r correspond to capacitive and resistive screens, respectively). Example: If you need to select a 7-inch capacitive screen with a resolution of 800x480, you need to select option 1 and enter the number 1 on the terminal interface.</p>
 <p><strong>Note: If you are using our adaptive screen, the “Screen Selection Menu” will not be accessible.</strong></p>
 <p>Enter 2 to enter the screen calibration enable menu (Touch calibration), and select the corresponding option to start the system directly:</p>
-<p><img alt="Image" src="_images/1715069949682_c113cf18_39b5_4ae9_809f_b2ed6d2f5d97.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069949682_c113cf18_39b5_4ae9_809f_b2ed6d2f5d97.png" /></p>
 </section>
 <section id="touch-calibration">
 <h3>2.5 Touch Calibration<a class="headerlink" href="#touch-calibration" title="Link to this heading"></a></h3>
@@ -544,13 +544,13 @@ root@fl-imx6ull:~# sync
 <ol class="arabic simple">
 <li><p>After the board boots up, the screen display defaults to the QT desktop as shown below;</p></li>
 </ol>
-<p><img alt="Image" src="_images/1715069950058_95774bfb_0960_4c50_8a5c_8b4fe931309c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069950058_95774bfb_0960_4c50_8a5c_8b4fe931309c.png" /></p>
 <p>2. Click Forlinx in the menu bar, a drop-down menu will appear, select Utilities;</p>
-<p><img alt="Image" src="_images/1715069950394_6d81bbc7_0474_4f56_932d_4ab08c09d13b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069950394_6d81bbc7_0474_4f56_932d_4ab08c09d13b.png" /></p>
 <p>3. Select Calibrate Touchscreen to enter the screen calibration interface;</p>
-<p><img alt="Image" src="_images/1715069950645_4034961f_9dda_4ef8_a65c_63ce7cc7fda8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069950645_4034961f_9dda_4ef8_a65c_63ce7cc7fda8.png" /></p>
 <p>4. The following interface appears, touch the “+” position on the screen to complete the calibration:</p>
-<p><img alt="Image" src="_images/1715069951048_bf3c5de4_0253_4775_a560_77c7d521b172.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715069951048_bf3c5de4_0253_4775_a560_77c7d521b172.png" /></p>
 </section>
 </section>
 <section id="system-partition">
@@ -632,7 +632,7 @@ Swap:            0           0           0
 <li><p><strong>Different SD cards may display different information. Our company tested using a SanDisk 8GB SD card;</strong></p></li>
 <li><p><strong>The MMC data transfer modes supported by the CPU are as shown in the following diagram.</strong></p></li>
 </ul>
-<p><img alt="Image" src="_images/1715071202649_337b3949_4491_42f0_9d4b_1aba079ed5ea.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071202649_337b3949_4491_42f0_9d4b_1aba079ed5ea.png" /></p>
 <p>After inserting the SD card into the SD card slot on the development board, the system will automatically check and mount the SD card. Once the mounting is successful, you can perform read and write operations on the SD card.</p>
 <p>1. After inserting an 8GB SD card and successfully mounting it, the device name of the mounted SD card can be seen from the printed information. The printed information is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# mmc0: host does not support reading read-only switch, assuming write-enable
@@ -685,7 +685,7 @@ root@fl-imx6ull:~# cat /run/media/mmcblk0p1/test.txt			   //Read test. txt files
 <li><p><strong>At present, the U disk test supports 32g, and more than 32g is not tested;</strong></p></li>
 <li><p><strong>The mount directory of the USB flash disk is/run/media.</strong></p></li>
 </ul>
-<p><img alt="Image" src="_images/1715071202943_f54230db_1b8b_4868_8b08_75d9675c398f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071202943_f54230db_1b8b_4868_8b08_75d9675c398f.png" /></p>
 <p>There are three USB HOST interfaces on the development board, any one of which can be selected for testing. The terminal will print relevant information while inserting the U disk. As there are many kinds of U disks, the displayed information may be different, and the actual printed information is the main one. The system will automatically check and mount the U disk. After successful mounting, the U disk can be read and written.</p>
 <p>1. Insert the USB flash drive, and the following information will be displayed:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# usb 1-1.3: new high-speed USB device number 5 using ci_hdrc
@@ -1035,11 +1035,11 @@ root@fl-imx6ull:~# fec 20b4000.ethernet eth0: Link is Up - 100Mbps/Full - flow c
 </div>
 <p>2. Configure the computer’s ipv6 address</p>
 <p>Open Control Panel-&gt;Network and Internet-&gt;Change Adapter Options . The following screen appears:</p>
-<p><img alt="Image" src="_images/1715071203352_ff38579f_e937_45a4_a081_dbe1e62b374b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071203352_ff38579f_e937_45a4_a081_dbe1e62b374b.png" /></p>
 <p>Select Ethernet, right-click and select Properties.</p>
-<p><img alt="Image" src="_images/1715071203592_8279ab42_ed62_4cc7_a927_61545dde2adb.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071203592_8279ab42_ed62_4cc7_a927_61545dde2adb.png" /></p>
 <p>Turn off ipv4 and open ipv6, double click “Internet Protocol Version 6 (TCP/IPV6)” and modify the following figure:</p>
-<p><img alt="Image" src="_images/1715071203855_ae0c2cd2_7213_48cc_8178_f3b42322cd5b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071203855_ae0c2cd2_7213_48cc_8178_f3b42322cd5b.png" /></p>
 <p>Connect the development board and computer directly with a network cable, and use the ping6 command to test the following:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# ping6 2001:250:4000:2000::49
 PING 2001:250:4000:2000::49(2001:250:4000:2000::49) 56 data bytes
@@ -1055,7 +1055,7 @@ rtt min/avg/max/mdev = 0.399/0.640/1.432/0.398 ms
 </section>
 <section id="usb-to-network-test">
 <h5>3.1.3.3 USB to Network Test<a class="headerlink" href="#usb-to-network-test" title="Link to this heading"></a></h5>
-<p><img alt="Image" src="_images/1731401998755_0ab01e87_234d_470b_bc05_69f88583b692.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401998755_0ab01e87_234d_470b_bc05_69f88583b692.png" /></p>
 <p>1. Plug the USB to Ethernet into the USB host interface, and the recognition information is as follows:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>usb 1-1.3: new high-speed USB device number 8 using ci_hdrc
 asix 1-1.3:1.0 eth2: register &#39;asix&#39; at usb-ci_hdrc.1-1.3, ASIX AX88772B USB 2.0 Ethernet, 00:0e:c6:8f:9c:b7
@@ -1092,8 +1092,8 @@ passwd: password changed.
 </div>
 <p>2. The computer uses File Zilla to log in to the development board.</p>
 <p>To create a “new site”: 1. enter the IP address of the development board as the host; 2. choose the encryption method as plaintext FTP only; 3. choose the login type as normal; 4. choose the user and password as those of the development board; 5. click “Connect”.</p>
-<p><img alt="Image" src="_images/1715071206825_f8d85570_f705_4314_88a6_d26417d6fc78.png" /></p>
-<p><img alt="Image" src="_images/1715071207163_10633d88_6208_41d1_9baa_d69d5d3a4573.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071206825_f8d85570_f705_4314_88a6_d26417d6fc78.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071207163_10633d88_6208_41d1_9baa_d69d5d3a4573.png" /></p>
 </section>
 <section id="ssh-client-test">
 <h5>3.1.4.2 SSH Client Test<a class="headerlink" href="#ssh-client-test" title="Link to this heading"></a></h5>
@@ -1265,7 +1265,7 @@ RTL871X: module exit success
 <li><p><strong>The default router uses wpa encryption.</strong></p></li>
 </ul>
 <p>If the development board has an on-board WIFI WLAN card, solder it to the evaluation board as shown (8723du below):</p>
-<p><img alt="Image" src="_images/1715071207392_1eb42c6f_bde5_4f34_a8c9_0c14264d57d1.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071207392_1eb42c6f_bde5_4f34_a8c9_0c14264d57d1.png" /></p>
 <p>Step 1: Check whether the module has been soldered on the development board. The correct soldering is shown in the figure above; connect the antenna;</p>
 <p>Step 2: Power up the development board, start the Linux system, and use lsmod to view the module loading status:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# lsmod
@@ -1385,7 +1385,7 @@ wlan0: CTRL-EVENT-DISCONNECTED bssid=04:d7:a5:f9:26:1d reason=0
 <p><strong>Note: At present, the OKMX6ULL-C SoM supports the 4G module of the remote EC20.</strong></p>
 <section id="ec20-test">
 <h6>3.1.5.2.1 EC20 Test<a class="headerlink" href="#ec20-test" title="Link to this heading"></a></h6>
-<p><img alt="Image" src="_images/1715071207929_834799d2_cf96_44e1_9fee_bc47f57f8869.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071207929_834799d2_cf96_44e1_9fee_bc47f57f8869.png" /></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>4G indicator status</strong></p></th>
@@ -1604,7 +1604,7 @@ Fri May  3 17:50:51 2019  0.000000 seconds
 <section id="phone-mic-test">
 <h5>3.1.8.1  Phone/MIC Test<a class="headerlink" href="#phone-mic-test" title="Link to this heading"></a></h5>
 <p>There is a 3.5mm audio socket on the development board to support left and right channel playback and MIC recording</p>
-<p><img alt="Image" src="_images/1715071208339_711cc577_fe90_4705_823d_340c2223b9df.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071208339_711cc577_fe90_4705_823d_340c2223b9df.png" /></p>
 <ol class="arabic simple">
 <li><p>Set the parameters and enter the command in the following figure:</p></li>
 </ol>
@@ -1654,7 +1654,7 @@ Playing WAVE &#39;record.wav&#39; : Signed 16 bit Little Endian, Rate 44100 Hz, 
 <section id="speaker-test">
 <h5>3.1.8.2 Speaker Test<a class="headerlink" href="#speaker-test" title="Link to this heading"></a></h5>
 <p>The built - in Class D power amplifier output terminals of the audio chip WM8960 are led out through two white XH2.54 - 2P sockets P22 and P23, which can drive two 8Ω speakers with a maximum output power of 1W. If you need to connect an external larger power amplifier, you can only obtain the signal from the headphone socket, not from the speaker interface. When testing the speaker, do not insert the headphones. Use the following commands for testing:</p>
-<p><img alt="Image" src="_images/1715071208704_8f935fff_b3e4_445d_8ad0_0bc329040e7c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071208704_8f935fff_b3e4_445d_8ad0_0bc329040e7c.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@fl-imx6ull:~# mplayer /home/root/test.mp3
 </pre></div>
 </div>
@@ -1765,7 +1765,7 @@ Exiting... (End of file)
 <ol class="arabic simple" start="2">
 <li><p>On the computer side, open the serial port tool and select the COM port identified by the computer. The baud rate is 115 200, the data bit is 8, the stop bit is 1, there is no check, no flow control, and the string abcdefg is sent at a fixed time of 1s. After setting the parameters, open the serial port:</p></li>
 </ol>
-<p><img alt="Image" src="_images/1731401628328_32dc0aa4_24d3_463b_b6ba_0a7c65b81b2c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1731401628328_32dc0aa4_24d3_463b_b6ba_0a7c65b81b2c.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>Open the test program on the development board terminal to conduct the receiving and sending test. The serial port parameter setting shall be consistent with the setting of the serial port tool. The test program will automatically send the string abcdefgh.</p></li>
 </ol>
@@ -1784,7 +1784,7 @@ hex:0x61 0x62 0x63 0x64 0x65 0x66 0x67 0x68
 </pre></div>
 </div>
 <p>From the printing information, UART2 can receive the information sent by the serial port tool.</p>
-<p><img alt="Image" src="_images/1731402202240_298f0ff3_e49c_4f18_be26_033801771f6c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1731402202240_298f0ff3_e49c_4f18_be26_033801771f6c.png" /></p>
 <p>The serial port tool can receive the data sent by the test program.</p>
 </section>
 <section id="spi-interface-test">
@@ -1865,13 +1865,13 @@ Bus 001 Device 001: ID 1d6b:0002
 </pre></div>
 </div>
 <p>3. The mapping between the four extended serial ports and their corresponding device nodes is shown in the diagram below:</p>
-<p><img alt="Image" src="_images/1715071210068_8343e5c2_732f_4324_802c_0348d4a193aa.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071210068_8343e5c2_732f_4324_802c_0348d4a193aa.png" /></p>
 <p>4. Test method refer to “UART Serial Port Test”.</p>
 </section>
 <section id="flexcan">
 <h4>3.1.12 FlexCAN<a class="headerlink" href="#flexcan" title="Link to this heading"></a></h4>
 <p>Connect CAN1 to CAN2, H to H and L to L of the board.</p>
-<p><img alt="Image" src="_images/1715071210415_42da3c5f_407e_47d5_9759_e0072eb59d49.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071210415_42da3c5f_407e_47d5_9759_e0072eb59d49.png" /></p>
 <ol class="arabic simple">
 <li><p>Set the CAN1 service as follows:</p></li>
 </ol>
@@ -2032,7 +2032,7 @@ fi
 <h4>3.1.14 Bluetooth Test<a class="headerlink" href="#bluetooth-test" title="Link to this heading"></a></h4>
 <p>The development board integrates the wifi &amp; bt module and the RTL8723du module. Now test the Bluetooth function of the module.</p>
 <p>The 8723du module is shown in the figure below</p>
-<p><img alt="Image" src="_images/1715071210722_395ead9d_1e64_4591_a3ff_b36cd6c3c728.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071210722_395ead9d_1e64_4591_a3ff_b36cd6c3c728.png" /></p>
 <p>Use the tools from bluez5.37 for testing.</p>
 <ol class="arabic simple">
 <li><p>Turn on the bluez daemon</p></li>
@@ -2065,7 +2065,7 @@ Default agent request successful
 <section id="passive-pairing">
 <h5>3.1.14.1 Passive Pairing<a class="headerlink" href="#passive-pairing" title="Link to this heading"></a></h5>
 <p>After the above configuration, the Bluetooth device can be scanned on the mobile phone, and click the Bluetooth to try pairing</p>
-<p><img alt="Image" src="_images/1715071211015_7c26480d_b373_4837_baa4_21e1eae593f6.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211015_7c26480d_b373_4837_baa4_21e1eae593f6.png" /></p>
 <p>At the same time, the board end is printed as follows, enter yes:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[bluetooth]# rtk_btcoex: hci accept conn req
 rtk_btcoex: connected, handle 0005, status 0x00
@@ -2077,7 +2077,7 @@ Request confirmation
 </pre></div>
 </div>
 <p>Then click Bluetooth on the phone to pair:</p>
-<p><img alt="Image" src="_images/1715071211288_1914f79a_6794_47a3_b31e_13bd677078e8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211288_1914f79a_6794_47a3_b31e_13bd677078e8.png" /></p>
 <p>Print message appears again at board end</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[CHG] Device BC:2E:F6:57:30:68 UUIDs: 0000111f-0000-1000-8000-00805f9b34fb
 [CHG] Device BC:2E:F6:57:30:68 Modalias: bluetooth:v010Fp107Ed1436
@@ -2160,7 +2160,7 @@ Pairing successful
 <section id="files-receiving">
 <h5>3.1.14.3 Files Receiving<a class="headerlink" href="#files-receiving" title="Link to this heading"></a></h5>
 <p>The phone selects a file to send to the development board via Bluetooth (provided that a Bluetooth connection has been made).</p>
-<p><img alt="Image" src="_images/1715071211558_261cfe39_2605_460f_8b41_4e230af6c432.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211558_261cfe39_2605_460f_8b41_4e230af6c432.png" /></p>
 <p>After sending, you can see the sent image file in the/home/root/directory.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@imx6ulevk:~# ls
 IMG_20210710_103755.jpg  
@@ -2182,9 +2182,9 @@ Connection successful
 </pre></div>
 </div>
 <p>At this point, the phone receives an inquiry to accept the file.</p>
-<p><img alt="Image" src="_images/1715071211752_f8f67447_10e3_479c_b386_2bb7ba100348.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071211752_f8f67447_10e3_479c_b386_2bb7ba100348.png" /></p>
 <p>Click Accept to see that the file is already being transferred.</p>
-<p><img alt="Image" src="_images/1715071212067_ef348bd9_317a_4557_ba89_e27d49f50d2a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071212067_ef348bd9_317a_4557_ba89_e27d49f50d2a.png" /></p>
 <p>After the transmission, you can see the pictures on your mobile phone.</p>
 </section>
 <section id="led-test">
@@ -2322,13 +2322,13 @@ root@fl-imx6ull:~# echo 792000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling
 </ul>
 <p>The test program used in this section has been integrated in the Demo provided by Forlinx, so it will be operated directly without any description of the file source.</p>
 <p>In the Qt file system, the ported Qt is 5.6.2. It utilizes the X protocol for Qt display, and the desktop manager is matchbox. Upon booting the development board, the screen will first display the Forlinx logo, followed by a boot animation. Afterward, it will enter the Qt desktop interface shown in the image below:</p>
-<p><img alt="Image" src="_images/1715071395671_699172f3_2eb3_40dc_952f_67c4ac84c961.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071395671_699172f3_2eb3_40dc_952f_67c4ac84c961.png" /></p>
 <section id="nic-configuration">
 <h3>4.1 NIC Configuration<a class="headerlink" href="#nic-configuration" title="Link to this heading"></a></h3>
 <p>Click the small mouse button in the upper right corner of the desktop icon, select “Preferences”, and then click the Ethernet button on the left to configure the network. The default mode is DHCP, or static IP. Click the keyboard in the upper right corner to set it.</p>
-<p><img alt="Image" src="_images/1715071395928_dc9e9261_b788_4727_8cb1_d787baf0e63a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071395928_dc9e9261_b788_4727_8cb1_d787baf0e63a.png" /></p>
 <p>The IP setting interface is as follows:</p>
-<p><img alt="Image" src="_images/1715071396221_056c2ab1_e3ce_439a_ba84_dae61409e669.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071396221_056c2ab1_e3ce_439a_ba84_dae61409e669.png" /></p>
 <p>Configuration: Set the IP allocation method. DHCP – Set the dynamic IP allocation. MANUAL – Set the static IP.</p>
 <p>IP address: The static IP is valid, and the IP address is set.</p>
 <p>Netmask: Static IP is valid. Set the subnet mask.</p>
@@ -2337,16 +2337,16 @@ root@fl-imx6ull:~# echo 792000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling
 <section id="ping-test">
 <h3>4.2 PING Test<a class="headerlink" href="#ping-test" title="Link to this heading"></a></h3>
 <p>Run the PING test program Ping to enter the following interface (ensure that the network has been configured, enter the IP address or domain name to be tested in the hostname column, and then click the ping button. If the following interface appears, the network test is successful:</p>
-<p><img alt="Image" src="_images/1715071396512_d2b91fc9_0027_46fe_afbf_5ff3427b40ed.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071396512_d2b91fc9_0027_46fe_afbf_5ff3427b40ed.png" /></p>
 </section>
 <section id="g-module-test">
 <h3>4.3 4G Module Test<a class="headerlink" href="#g-module-test" title="Link to this heading"></a></h3>
 <p>At present, the supported 4G module is Quectel EC20. Click the Qt5 4G icon on the desktop to enter the 4G setting interface to test the 4G dial-up Internet access function.</p>
-<p><img alt="Image" src="_images/1715071396805_c232bb6c_784c_4c14_b9b4_ba7632765d95.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071396805_c232bb6c_784c_4c14_b9b4_ba7632765d95.png" /></p>
 <p>Connect the 4G module, power up the module, and the development board. Select the 4G module according to the actual situation. Take EC20 as an example. Click ec20 to dial. No information is printed during dialing. After dialing, there will be a prompt as shown in the following figure:</p>
-<p><img alt="Image" src="_images/1715071397052_2808f9e8_40f1_49a7_9f34_30c0c25e4bde.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071397052_2808f9e8_40f1_49a7_9f34_30c0c25e4bde.png" /></p>
 <p>After successful dialing, enter the IP of the same network segment in the IP column for ping test:</p>
-<p><img alt="Image" src="_images/1715071397256_eea9541f_58c7_46ca_8564_5d7baba7e53c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071397256_eea9541f_58c7_46ca_8564_5d7baba7e53c.png" /></p>
 </section>
 <section id="gprs-module-test">
 <h3>4.4 GPRS Module Test<a class="headerlink" href="#gprs-module-test" title="Link to this heading"></a></h3>
@@ -2356,12 +2356,12 @@ root@fl-imx6ull:~# echo 792000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling
 <p>Add the phone number of the other party in the Phone column, and click the call and msg-s buttons respectively to make a call and send a short message;</p>
 <p>GPRS Internet access function test: Click the GPRS button on the interface to dial up the Internet;</p>
 <p>The user can test whether the GPRS dialing is successful by clicking the Ping button:</p>
-<p><img alt="Image" src="_images/1715071397724_1a913745_f5cf_4104_acd5_e2b10407f1b5.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071397724_1a913745_f5cf_4104_acd5_e2b10407f1b5.png" /></p>
 </section>
 <section id="id1">
 <h3>4.5 Watchdog Test<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>Run the watchdog test program Watchdog to enter the following interface:</p>
-<p><img alt="Image" src="_images/1715071398000_24f75af2_ca5b_475b_a0ac_1048a13d8f0b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398000_24f75af2_ca5b_475b_a0ac_1048a13d8f0b.png" /></p>
 <p>The feed dog check box in the upper left corner can select whether to feed the dog. When the feed dog is checked, click the open watchdog in the lower part to open the watchdog. The application will feed the dog once in 10s, so the system will not restart.</p>
 <p>When feed dog is not checked, the system will be reset after open watchdog when time files reaches 60s.</p>
 </section>
@@ -2369,9 +2369,9 @@ root@fl-imx6ull:~# echo 792000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling
 <h3>4.6 WIFI Module Test<a class="headerlink" href="#wifi-module-test" title="Link to this heading"></a></h3>
 <p>This section describes how to test the on-board WIFI module rtl8723bu. Before testing, please make sure that the WIFI module has been soldered and the antenna has been connected.</p>
 <p>Run the Qt 5.6 WiFi test program and click on the keyboard icon in the top-right corner to open the virtual keyboard. Then, type in the username, password, and other necessary information.</p>
-<p><img alt="Image" src="_images/1715071398334_b96b2258_64ad_4997_8996_b51746a18c51.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398334_b96b2258_64ad_4997_8996_b51746a18c51.png" /></p>
 <p>“SSID” refers to the name of the WiFi hotspot while “PAWD” refers to the WiFi password. “IP” is the IP address that you want to test using ping. Once all of the necessary information has been inputted, simply click the “Connect” button to establish the connection. Once the connection is established, you can see the automatically obtained IP address in the left dialog box. At this point, you can click on the “Ping” button to perform a ping test.</p>
-<p><img alt="Image" src="_images/1715071398619_df9f31ab_f0e7_4f2a_877d_09c10fefc1f8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398619_df9f31ab_f0e7_4f2a_877d_09c10fefc1f8.png" /></p>
 </section>
 <section id="play-record-test">
 <h3>4.7 Play/Record Test<a class="headerlink" href="#play-record-test" title="Link to this heading"></a></h3>
@@ -2382,46 +2382,46 @@ root@fl-imx6ull:~# echo 792000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling
 <p>2. Playback test</p>
 <p>The internal D-class amplifier output of the WM8960 audio chip is connected to two XH2.54-2P white connectors labeled as P5 and P6. It can drive two 8Ω speakers, with a maximum output power of 1W. If you need to connect a larger power amplifier, you can only get the signal from the headphone jack and not from the speaker interface.</p>
 <p>You can choose to test with either headphones or speakers for the playback test. After connecting the device, click on the “Add” button to select the audio file that you want to play, and then click on the “Play” button. If you can hear the sound of the music, the playback is normal.</p>
-<p><img alt="Image" src="_images/1715071398918_b5651548_fef2_4402_80a4_d65c1effd131.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071398918_b5651548_fef2_4402_80a4_d65c1effd131.png" /></p>
 </section>
 <section id="id2">
 <h3>4.8 RTC Clock Drive Test<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p><strong>Note: Ensure that button cell batteries are installed on the board and the battery voltage is normal.</strong></p>
 <p>RTC testing is done by setting the time using testing software. After setting the time, you can disconnect the power and then power it up again. Run the testing software again and check if the RTC clock is synchronized.</p>
 <p>Run the RTC to test the software RTC, and the following interface appears:</p>
-<p><img alt="Image" src="_images/1715071399253_4965a0fe_da0f_4cd2_8ee2_838f80e0d645.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399253_4965a0fe_da0f_4cd2_8ee2_838f80e0d645.png" /></p>
 <p>Click set to set the system time, click save to save the time setting, and then you can power off and power on again after some time, run the RTC test software again to read the time, and you can see that the RTC time has been synchronized.</p>
 </section>
 <section id="serial-port-test">
 <h3>4.9 Serial Port Test<a class="headerlink" href="#serial-port-test" title="Link to this heading"></a></h3>
 <p>This test takes UART2 (ttymxc1) as an example to test the serial port by sending and receiving data between the UART of the development board and the computer serial port tool software.</p>
 <p>1. First, connect the development board and computer with the TTL to the USB module, then power up the development board and check in the computer’s device manager recognized as COM9 (users set the parameters with their actual recognized COM port);</p>
-<p><img alt="Image" src="_images/1715071399478_79590b35_b1a6_4aa1_a151_08d5e2b286e8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399478_79590b35_b1a6_4aa1_a151_08d5e2b286e8.png" /></p>
 <p>2. open the computer serial port tool, set the relevant serial port parameters, baud rate 9600, 8 data bits, 1 stop bit, no parity, no flow control, timed to send the string abcdefg, and set the completion of the open serial port:</p>
-<p><img alt="Image" src="_images/1715071399696_80da5d3d_0ce0_45c0_9290_819bb1a721ce.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399696_80da5d3d_0ce0_45c0_9290_819bb1a721ce.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>Click the Qt5 SerialPort serial port test program on the QT desktop, select the port number, and set the relevant serial port parameters to be consistent with the computer serial port tool parameters, as shown in the following figure:</p></li>
 </ol>
-<p><img alt="Image" src="_images/1715071399950_3e5eb121_c734_47bd_9528_17ff732fded7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071399950_3e5eb121_c734_47bd_9528_17ff732fded7.png" /></p>
 <p>4. Open the serial port, and receive the data sent by the computer serial port tool at the receiving serial port. Send window to write the data to be sent; click Send Data</p>
-<p><img alt="Image" src="_images/1715071400346_00a12ae6_1eb2_448a_bd69_f9b530327506.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071400346_00a12ae6_1eb2_448a_bd69_f9b530327506.png" /></p>
 <p>5. The computer serial port tool receives the data sent by the QT program, and the UART2 serial port of the development board receives and sends normally.</p>
-<p><img alt="Image" src="_images/1715071400573_0f199cbd_41fb_41f8_8e36_3ed2c30fe503.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071400573_0f199cbd_41fb_41f8_8e36_3ed2c30fe503.png" /></p>
 </section>
 <section id="flexcan-test">
 <h3>4.10 FlexCAN Test<a class="headerlink" href="#flexcan-test" title="Link to this heading"></a></h3>
 <p>The development board has two CANs, and this test uses CAN1 on the development board to connect with CAN1 on another development board to send data to each other. Connect H of development board CAN1 to H of CAN1 of another development board, and connect L to L. Users can use the CAN tool to test according to the actual situation.</p>
 <p>Open the desktop program Qt5 can, as shown in the following figure. CAN1 and CAN2 correspond to can0 and can1 respectively in the interface. Select can0 to open CAN1:</p>
-<p><img alt="Image" src="_images/1715071400790_2049942a_4eb3_4a68_8e16_835aa1b5d4df.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071400790_2049942a_4eb3_4a68_8e16_835aa1b5d4df.png" /></p>
 <p>The development board sends the data 123456, and the other end sends the data 654321. The 654321 of the data received by the development board is shown in the following figure.</p>
-<p><img alt="Image" src="_images/1715071401128_06a69d69_65be_48aa_8dd5_1f0ac4b7ce51.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071401128_06a69d69_65be_48aa_8dd5_1f0ac4b7ce51.png" /></p>
 <p>The CAN1 of another development board receives the data 123456 as follows</p>
-<p><img alt="Image" src="_images/1715071401400_e8b655f0_ec88_44b2_8e2f_3e3c8b63e7fa.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071401400_e8b655f0_ec88_44b2_8e2f_3e3c8b63e7fa.png" /></p>
 </section>
 <section id="rgb-screen-backlight-adjustment-test">
 <h3>4.11 RGB Screen Backlight Adjustment Test<a class="headerlink" href="#rgb-screen-backlight-adjustment-test" title="Link to this heading"></a></h3>
 <p>Adjust the progress bar left and right to adjust the backlight brightness as follows:</p>
-<p><img alt="Image" src="_images/1715071401624_af8ae54d_7fce_4e5b_8bba_2fe124aa8055.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071401624_af8ae54d_7fce_4e5b_8bba_2fe124aa8055.png" /></p>
 </section>
 </section>
 <section id="development-board-system-flashing">
@@ -2481,7 +2481,7 @@ root@fl-imx6ull:~# echo 792000 &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling
 <p>1. Format the TF card to FAT32 format using a formatting tool before use;</p>
 <p>2. Copy emmc-sdburn.tar.bz2 to any directory under ubuntu system to decompress it. For example/home/forlinx/work;</p>
 <p>3. Insert the TF card into the USB port of your computer using a USB card reader (VMware VM users can use the arrow pointing to the icon below to connect the flash drive to the VM if it is not recognized by the VM).</p>
-<p><img alt="Image" src="_images/1715071562786_e124b2b9_c2c0_4a4e_b393_a91e6c95d693.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071562786_e124b2b9_c2c0_4a4e_b393_a91e6c95d693.png" /></p>
 <p>4. Wait for the virtual machine to detect the TF card and display the directory. Then proceed with the following writing operations.** Enter /home/forlinx/work/nand-burnsd directory, execute script:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>forlinx@ubuntu:~/work/nand-burnsd$ sudo ./burn.sh
 </pre></div>
@@ -2594,13 +2594,13 @@ Operation Finished
 </pre></div>
 </div>
 <p>5. After the card-making process is completed, you should see two directories, “sdrun” and “target,” contained within the boot partition.</p>
-<p><img alt="Image" src="_images/1715071563149_92494df3_cf4a_4759_acd1_1c18b206b2b3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563149_92494df3_cf4a_4759_acd1_1c18b206b2b3.png" /></p>
 </section>
 <section id="introduction-to-flashing-card">
 <h4>5.2.2 Introduction to Flashing Card<a class="headerlink" href="#introduction-to-flashing-card" title="Link to this heading"></a></h4>
 <p><strong>Note: The eMMC file system is QT version by default. If the conslot version is used, the rootfs-console.tar.bz2 in the \ Linux \ image of the user data can be renamed as the rootfs.tar.bz2, replacing the file of the same name of the target.</strong></p>
 <p>The prepared burning card contains two folders, sdrun and target:</p>
-<p><img alt="Image" src="_images/1715071563423_0d9e25b5_b411_4255_a217_edb8441da5f8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563423_0d9e25b5_b411_4255_a217_edb8441da5f8.png" /></p>
 <p>1. The contents in the sdrun folder are used to program the boot system, and generally do not need to be modified;</p>
 <p>2. The contents of the “target” directory will be written to the flash memory chip. If the user has made modifications to the image and needs to replace the image file, they only need to replace the corresponding file in the “target” directory while maintaining the same file name. Afterward, the system can be re-flashed. Introduction of files in the “target” directory of the SD card burning:</p>
 <table class="docutils align-default">
@@ -2635,7 +2635,7 @@ Operation Finished
 <h4>5.2.3 TF Flashing Method<a class="headerlink" href="#tf-flashing-method" title="Link to this heading"></a></h4>
 <p>Insert the TF card made in the previous section and set the dial switch as shown in the following figure. 3. 4 is ON, and 1 and 2 are OFF, as shown in the figure below. At this time, flash the contents of the target in the TF card into the EMMC.</p>
 <p>It takes a long time to burn, and wait for the system to finish flashing, and then the serial port prints the information:</p>
-<p><img alt="Image" src="_images/1715071563672_09b36ce0_0507_4922_a78c_d8dbfc308ecc.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563672_09b36ce0_0507_4922_a78c_d8dbfc308ecc.png" /></p>
 <p>At the same time, the LED3 on the carrier board blinks.</p>
 <p>After the programming is completed, power off the device. Set the DIP switches 1, 2, 3, and 4 to the OFF position. Then power on the device again, and it will boot from the EMMC.</p>
 </section>
@@ -2691,13 +2691,13 @@ Operation Finished
 <li><p>The dip switches are set to 1 and 2 for ON and the others for OFF.</p></li>
 <li><p>Double-click on “mx6ull-4gemmc-512mddr-qt5.6.vbs” (the script has been written, directly burned), as shown below:</p></li>
 </ol>
-<p><img alt="Image" src="_images/1715071563899_edefe2e0_4524_467b_9a99_ea35e2e68007.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071563899_edefe2e0_4524_467b_9a99_ea35e2e68007.png" /></p>
 <p>4. Insert USB to Type-C to OTG socket, as shown below:</p>
-<p><img alt="Image" src="_images/1715071564120_4dc2aaa5_0ec9_449d_8dda_ed734f6aed38.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071564120_4dc2aaa5_0ec9_449d_8dda_ed734f6aed38.png" /></p>
 <p>5. The development board is powered on and automatically recognized as HID, as shown in the figure:</p>
-<p><img alt="Image" src="_images/1715071564418_a1c32a8d_e8d6_494a_a139_6dab3b21c7cd.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071564418_a1c32a8d_e8d6_494a_a139_6dab3b21c7cd.png" /></p>
 <p>6. Click start to start burning the system, in the middle of the pop-up formatting dialog box, click “Cancel” formatting options, or regardless of it, until the burning is complete. As shown in the picture:</p>
-<p><img alt="Image" src="_images/1715071564682_d4386c70_c542_44ee_98cb_47fcc50f17d5.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Manual/1715071564682_d4386c70_c542_44ee_98cb_47fcc50f17d5.png" /></p>
 <p>7. After the system is flashed, “Done” appears, and then click “Stop” to stop. Click “Exit” again to close the flashing tool. Power off, turn the DIP switch to 1, 2, 3 and 4 for OFF, power on again, and the EMMC starts.</p>
 </section>
 </section>
