@@ -226,7 +226,7 @@
 <p>Document classification: □ Top secret □ Secret □ Internal information ■ Open</p>
 <section id="copyright">
 <h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
-<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.<br />
+<p>The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.<br />
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.</p>
 </section>
@@ -298,7 +298,7 @@ mmcblk0p1  mmcblk0p6  mmcblk1p1
 <section id="ok536-development-board-description">
 <h2>1. OK536 Development Board Description<a class="headerlink" href="#ok536-development-board-description" title="Link to this heading"></a></h2>
 <p>The OK536 development board features an SoM + carrier board design built around the Allwinner T536 processor. Operating at 1.6GHz, it integrates a quad-core Cortex-A55 CPU and a 64-bit XuanTie E907 RISC-V MCU for efficient computing. Key features include a 2TOPS NPU, support for secure boot, national cryptographic algorithms, ECC, AMP, Linux RT, and a wide range of interfaces such as USB, Ethernet, CAN, SPI, and UART.</p>
-<p><img alt="Image" src="_images/1740982133299_c3df6fc4_845b_4d24_86a7_d1df982748bf.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982133299_c3df6fc4_845b_4d24_86a7_d1df982748bf.png" /></p>
 <p><strong>Note: This software manual will no longer describe hardware parameters. Before proceeding with software development using this manual, please read the “OK536-C_User’s Hardware Manual” to understand the product naming rules and the hardware configuration of your specific product, which will facilitate your use of this product.</strong></p>
 <section id="linux-5-10-198-system-software-resources">
 <h3>1.1 Linux 5.10.198 System Software Resources<a class="headerlink" href="#linux-5-10-198-system-software-resources" title="Link to this heading"></a></h3>
@@ -405,7 +405,7 @@ Hardware preparations before powering on the system:</p>
 <li><p>Display screen — connect the screen via the development board interface (It’s optional based on your actual requirement).</p></li>
 <li><p>Check the boot mode (if a TF card is inserted, the system will boot from the TF card by default; otherwise, it will boot from eMMC)</p></li>
 </ul>
-<p><img alt="Image" src="_images/1745803047340_a7755ec1_ba96_4ca1_a2dc_d3d7499f3cc3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1745803047340_a7755ec1_ba96_4ca1_a2dc_d3d7499f3cc3.png" /></p>
 </section>
 <section id="serial-port-login">
 <h3>2.2 Serial Port Login<a class="headerlink" href="#serial-port-login" title="Link to this heading"></a></h3>
@@ -415,9 +415,9 @@ Hardware preparations before powering on the system:</p>
 <p><strong>Software requirements: For Windows systems, the PC needs to have HyperTerminal software installed. There are various HyperTerminal alternatives available; one can use their preferred serial terminal software, such as PUTTY or MobaXterm.</strong></p>
 <p>Terminal Setup Using PuTTY （User profile\3-tools\putty-64-bit_x86.exe） as an Example:</p>
 <p>1. Connect the development board and PC using a serial cable. Confirm the serial port number connected to the computer by checking in “Device Manager”. The actual serial port number recognized by the computer shall prevail. Select “XR21V1414 USB UART Ch A”.</p>
-<p><img alt="Image" src="_images/1740982135085_aa15bc49_69da_44ef_aaca_05ef6ab300b4.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982135085_aa15bc49_69da_44ef_aaca_05ef6ab300b4.png" /></p>
 <p>2. Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;</p>
-<p><img alt="Image" src="_images/1740982135169_a60ff1ca_f20f_4365_b8e8_483fe05cecc0.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982135169_a60ff1ca_f20f_4365_b8e8_483fe05cecc0.png" /></p>
 <p>3. Power on and log in: Turn on the development board. The serial terminal will display boot-up messages. Once the prompt root&#64;OK536:/# appears, the system has fully booted. You are logged in automatically as the root user (no password required).</p>
 <section id="common-issues-serial-login">
 <h4>2.2.1 Common Issues (Serial Login)<a class="headerlink" href="#common-issues-serial-login" title="Link to this heading"></a></h4>
@@ -434,14 +434,14 @@ Hardware preparations before powering on the system:</p>
 <p><strong>The computer and the development board need to be in the same network segment during the test.</strong></p>
 <p>Before logging in to the network, you need to ensure that the network connection between the computer and the development board is normal. You can test the connection status between the computer and the development board through the ping command. Specific Operations:</p>
 <p>1. Connect the eth0 of the development board to the computer via a network cable, power on the development board, and after the kernel starts, the red heartbeat light on the SoM will flash. After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;</p>
-<p><img alt="Image" src="_images/1745803077533_1445b31b_2879_4ddb_848f_0ce0d302fe62.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1745803077533_1445b31b_2879_4ddb_848f_0ce0d302fe62.png" /></p>
 <p>2. Disable the computer firewall</p>
 <p>Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);</p>
-<p><img alt="Image" src="_images/1718852798819_2b9890db_2900_46fd_bb1d_34fb7ffc3c35.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718852798819_2b9890db_2900_46fd_bb1d_34fb7ffc3c35.png" /></p>
 <p>3. Open Command Prompt as administrator</p>
 <p>Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;</p>
 <p>Data is returned, indicating that the network connection is normal.</p>
-<p><img alt="Image" src="_images/1718852806972_0f90a319_5894_44cd_ac4c_5e7d58158bbb.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718852806972_0f90a319_5894_44cd_ac4c_5e7d58158bbb.png" /></p>
 </section>
 <section id="ssh-server">
 <h4>2.3.2 SSH Server<a class="headerlink" href="#ssh-server" title="Link to this heading"></a></h4>
@@ -449,9 +449,9 @@ Hardware preparations before powering on the system:</p>
 <p><strong>The default account for SSH login is “root” with the password “root”.</strong></p>
 <p><strong>The default IP address for the eth0 interface is 192.168.0.232.</strong></p>
 <p><strong>You can use the scp command for file transfers.</strong></p>
-<p><img alt="Image" src="_images/1718852828220_846ff8b1_62c5_46ac_9e26_8600a5dce468.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718852828220_846ff8b1_62c5_46ac_9e26_8600a5dce468.png" /></p>
 <p>After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.</p>
-<p><img alt="Image" src="_images/1718852834871_326d584b_b5d2_47ff_a6bc_2f4c325934fc.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718852834871_326d584b_b5d2_47ff_a6bc_2f4c325934fc.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>Login as：root
 root@192.168.0.232&#39;s password:               //按照提示输入开发板root账户的密码root
 root@OK536:~$
@@ -479,7 +479,7 @@ root@OK536:~$
 <p>Press 3: Cycles through and selects the multiplexing option for PCIe and USB 3.0.</p>
 <p><strong>When USB 3.0 is enabled, inserting a USB 3.0 device may occasionally cause a bus reset. A fix for this will be provided in subsequent releases.</strong></p>
 <p><strong>If you need to use USB 3.0 or PCIe, you need to set the DIP switch on the carrier board to the corresponding position and select it in the U-Boot menu.</strong></p>
-<p><img alt="Image" src="_images/1740982134968_fd14bca3_882f_4262_a091_3ddcfcf94cac.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982134968_fd14bca3_882f_4262_a091_3ddcfcf94cac.png" /></p>
 </section>
 <section id="resistive-touchscreen-recalibration">
 <h3>2.5 Resistive Touchscreen Recalibration<a class="headerlink" href="#resistive-touchscreen-recalibration" title="Link to this heading"></a></h3>
@@ -590,16 +590,16 @@ Swap:             0           0           0
 <section id="interface-function-description">
 <h3>3.1 Interface Function  Description<a class="headerlink" href="#interface-function-description" title="Link to this heading"></a></h3>
 <p>After the OK536 development board starts up, the desktop is displayed as follows:</p>
-<p><img alt="Image" src="_images/1753683635255_5c2ffef7_3dc2_496e_b8af_db40dd42947c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635255_5c2ffef7_3dc2_496e_b8af_db40dd42947c.png" /></p>
 <p>Click the arrow in the upper right corner to go to the next page.</p>
-<p><img alt="Image" src="_images/1753683635343_bb6f6dcc_b230_4e1f_b4e2_7dc2e60263a5.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635343_bb6f6dcc_b230_4e1f_b4e2_7dc2e60263a5.png" /></p>
 </section>
 <section id="network-configuration-test">
 <h3>3.2 Network Configuration Test<a class="headerlink" href="#network-configuration-test" title="Link to this heading"></a></h3>
 <p><strong>Note:</strong></p>
 <p><strong>The factory default only sets the eth0 network card to STATIC mode.</strong></p>
 <p><strong>The set IP and other information will be saved to the system’s relevant configuration file (/etc/network/interfaces), so each reboot will use the network information set this time.</strong></p>
-<p>Icon:<img alt="Image" src="_images/1753683634308_35ff6666_5126_4640_94cf_bf3a12cded61.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634308_35ff6666_5126_4640_94cf_bf3a12cded61.png" /></p>
 <p>Click the network configuration icon to enter the interface program, supporting both STATIC and DHCP modes.</p>
 <p>STATIC Mode</p>
 <p>Click the network configuration icon, select STATIC, as shown below: You can configure the IP address, subnet mask, gateway, and DNS. After setting the parameters, click “Apply and Restart Network”.</p>
@@ -627,30 +627,30 @@ Swap:             0           0           0
 </tr>
 </tbody>
 </table>
-<p><img alt="Image" src="_images/1753683635413_58af5670_c435_4290_afbc_246f927a13d2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635413_58af5670_c435_4290_afbc_246f927a13d2.png" /></p>
 </section>
 <section id="browser-test">
 <h3>3.3 Browser Test<a class="headerlink" href="#browser-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683634399_1be17c69_ee90_407b_93b5_cade5ca589a2.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634399_1be17c69_ee90_407b_93b5_cade5ca589a2.png" /></p>
 <p>Click the browser icon to enter the browser. Ensure the network is smooth during use, and ensure DNS is available before accessing external networks. The browser defaults to accessing the Forlinx Embedded official website upon startup, as shown below:</p>
-<p><img alt="Image" src="_images/1753683635501_07900ff2_bffe_4d6b_a8e7_3ab1a9109382.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635501_07900ff2_bffe_4d6b_a8e7_3ab1a9109382.png" /></p>
 <p><strong>Note: If the development board’s time is abnormal, it may cause certificate issues.</strong></p>
 </section>
 <section id="g-test">
 <h3>3.4 4G Test<a class="headerlink" href="#g-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683634475_d1a6f4cb_7486_4786_9d01_3c45a5d90f37.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634475_d1a6f4cb_7486_4786_9d01_3c45a5d90f37.png" /></p>
 <p>The “4G” test program is used to test the OK536 external 4G module (EC20). Before testing, power off the development board, switch DIP switch A to ON, connect the 4G module, insert the SIM card (pay attention to the SIM card direction), start the development board, and open the test application. This test uses EC20 as an example:</p>
-<p><img alt="Image" src="_images/1740982136692_13b4f03c_982b_439b_a028_8c0c0197757b.png" /></p>
-<p><img alt="Image" src="_images/1753683635568_1bac2846_360c_4d80_82bf_01da8e406998.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982136692_13b4f03c_982b_439b_a028_8c0c0197757b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635568_1bac2846_360c_4d80_82bf_01da8e406998.png" /></p>
 <p>Click the start button, and the program will automatically enter the dial-up process and obtain IP, set DNS, etc. Wait patiently for a few seconds.</p>
 </section>
 <section id="test">
 <h3>3.5 485 Test<a class="headerlink" href="#test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683634550_59449ef2_e3ff_44ad_8404_75703c94f5eb.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634550_59449ef2_e3ff_44ad_8404_75703c94f5eb.png" /></p>
 <p>This test uses UART8 (ttyAS8) and performs a serial port test with the serialTool.</p>
 <p><strong>Note: uart7 and uart8 on OKT536 are 485. Use a USB-to-485 converter on the computer to connect to OKT536 485 A B. uart8 is 485_0, uart7 is 485_1.</strong></p>
 <p>1. Click the Terminal test icon to enter the following interface and set serial port parameters:</p>
-<p><img alt="Image" src="_images/1718853168898_b3b1fca6_41b1_447b_a0ae_4082f1f75014.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853168898_b3b1fca6_41b1_447b_a0ae_4082f1f75014.png" /></p>
 <p>2. Click the settings button in the upper left corner and set the serial port parameters to be consistent with the computer-side serial port tool parameters, as shown below:</p>
 <table class="docutils align-default">
 <thead>
@@ -679,18 +679,18 @@ Swap:             0           0           0
 </tr>
 </tbody>
 </table>
-<p><img alt="Image" src="_images/1753683635638_5b67b522_9021_47df_ba72_abe20bfe2a58.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635638_5b67b522_9021_47df_ba72_abe20bfe2a58.png" /></p>
 <p>3. After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;</p>
 <p>4. Open the serial port tool on the computer, click on the black screen area in the test interface to pop up the soft keyboard, input characters and press Enter. The screen will then display the data received by the serial port.</p>
-<p><img alt="Image" src="_images/1753683635713_700352df_9f69_4e33_8040_8cbe1213c0bb.png" /><img alt="Image" src="_images/1753683635787_7228a9e8_3d4c_4620_aeb6_4184a907459e.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635713_700352df_9f69_4e33_8040_8cbe1213c0bb.png" /><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635787_7228a9e8_3d4c_4620_aeb6_4184a907459e.png" /></p>
 <p>5. In the serialTool send box, input the content to send, click send, and the test interface will display the received content.</p>
-<p><img alt="Image" src="_images/1753683635849_33d4f33f_bda4_44dc_bd5b_ea2c7764c643.png" /><img alt="Image" src="_images/1753683635937_f61ef1e4_4475_47e7_b8e3_907252fec079.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635849_33d4f33f_bda4_44dc_bd5b_ea2c7764c643.png" /><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635937_f61ef1e4_4475_47e7_b8e3_907252fec079.png" /></p>
 </section>
 <section id="adc-test">
 <h3>3.6 ADC Test<a class="headerlink" href="#adc-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683634614_5ff19761_5b29_4b7f_ab60_e62c47cbace3.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634614_5ff19761_5b29_4b7f_ab60_e62c47cbace3.png" /></p>
 <p>14 x GPADC are led out from the OK536 carrier boaard. All channels are floating by default. Short the corresponding pins to measure the potentiometer value. The maximum value 4096 corresponds to a voltage of 1.8V.</p>
-<p><img alt="Image" src="_images/1753683636009_1d1f6acc_d499_4d54_a6db_990db7528e47.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636009_1d1f6acc_d499_4d54_a6db_990db7528e47.png" /></p>
 </section>
 <section id="wifi-test">
 <h3>3.7 WiFi Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
@@ -699,87 +699,87 @@ Swap:             0           0           0
 <li><p><strong>The OK536 carrier board is soldered with the AW-CM358 chip.</strong></p></li>
 <li><p><strong>“WIFI” is a tool for configuring WiFi and can test the STA mode of WiFi.</strong></p></li>
 </ul>
-<p>1. Click the icon<img alt="Image" src="_images/1753683634710_810d3986_6d83_4c50_af39_3087499c0390.png" />to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field,</p>
+<p>1. Click the icon<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634710_810d3986_6d83_4c50_af39_3087499c0390.png" />to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field,</p>
 <p>enter the router password in the PASSWORD field, and click “Connect” to connect to the router via WiFi.</p>
-<p><img alt="Image" src="_images/1753683636130_bf968f31_8f1f_4b7d_b699_458dbe369da9.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636130_bf968f31_8f1f_4b7d_b699_458dbe369da9.png" /></p>
 <p>2. After a successful connection, set the IP and then click “ping” to perform a network test.</p>
-<p><img alt="Image" src="_images/1753683636210_95cac5e2_d0f7_4e11_b4bc_8f6e380aa0ee.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636210_95cac5e2_d0f7_4e11_b4bc_8f6e380aa0ee.png" /></p>
 </section>
 <section id="rtc-test">
 <h3>3.8 RTC Test<a class="headerlink" href="#rtc-test" title="Link to this heading"></a></h3>
 <p><strong>Note: Ensure that a button battery is installed on the board and the battery voltage is normal.</strong></p>
-<p>Icon:<img alt="Image" src="_images/1753683634810_446f2015_f29f_46f5_8e51_1172433d44a6.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634810_446f2015_f29f_46f5_8e51_1172433d44a6.png" /></p>
 <p>The RTC test involves setting the time via the test software, then powering off and restarting. Run the test software again to check if the RTC clock is synchronized.</p>
 <p>Run the RTC test software to view and set the current system time, as shown below:</p>
-<p><img alt="Image" src="_images/1753683636577_4138e54d_2913_47bd_ab33_c53654a81860.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636577_4138e54d_2913_47bd_ab33_c53654a81860.png" /></p>
 </section>
 <section id="key-test">
 <h3>3.9 Key Test<a class="headerlink" href="#key-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683634867_9e01bef6_9698_43b4_a847_4f00224c2794.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634867_9e01bef6_9698_43b4_a847_4f00224c2794.png" /></p>
 <p>“Keypad” is used to test whether the platform’s built-in keys are usable. It determines if the key functions normally by detecting whether the corresponding key turns blue after being pressed. The interface is as follows:</p>
-<p><img alt="Image" src="_images/1753683636643_8762cafb_9c53_4409_8b32_e3d86640cad3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636643_8762cafb_9c53_4409_8b32_e3d86640cad3.png" /></p>
 <p>There are four physical keys KEY1, KEY2, KEY3, KEY4 on the side of the OK536 carrier board. When a key is pressed, the corresponding key in the test application will turn blue, indicating the key functions normally.</p>
 </section>
 <section id="watchdog-test">
 <h3>3.10 Watchdog Test<a class="headerlink" href="#watchdog-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683634948_5b998e90_0bd0_4140_a72c_44787d10f607.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683634948_5b998e90_0bd0_4140_a72c_44787d10f607.png" /></p>
 <p>“WatchDog” is an application used to test whether the watchdog function is normal. The interface is as follows:</p>
-<p><img alt="Image" src="_images/1753683636730_5463efef_1c7d_4e8b_b0d7_98a07edcca26.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636730_5463efef_1c7d_4e8b_b0d7_98a07edcca26.png" /></p>
 <p>Check “feed dog”, click the “open watchdog” button, and the watchdog function will be started. The program will perform dog feeding operations, and normally the system will not reboot.</p>
 <p>Uncheck “feed dog”, click the “open watchdog” button, and the watchdog function will be started. The program does not perform dog feeding operations. About 10 seconds after opening the watchdog, the system reboots, indicating the watchdog function is normal.</p>
 </section>
 <section id="pingt-test">
 <h3>3.11 Pingt Test<a class="headerlink" href="#pingt-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1718853354578_726b52d8_008b_46fa_984a_6b28b5c2037b.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853354578_726b52d8_008b_46fa_984a_6b28b5c2037b.png" /></p>
 <p>“Ping” is an interface version of the commonly used network test command ping. The interface is as follows:</p>
-<p><img alt="Image" src="_images/1718853360248_4e364094_3548_4ccd_ad5a_a645e0618579.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853360248_4e364094_3548_4ccd_ad5a_a645e0618579.png" /></p>
 <p>In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.</p>
 <p>As shown in the figure, it indicates the network between them is smooth.</p>
-<p><img alt="Image" src="_images/1718853366769_58cb2cca_95e5_4cf7_8502_e6511b2e3e2d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853366769_58cb2cca_95e5_4cf7_8502_e6511b2e3e2d.png" /></p>
 </section>
 <section id="backlight-test">
 <h3>3.12 Backlight Test<a class="headerlink" href="#backlight-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683635020_8dc48e07_4365_433b_bec7_f3cfa4a32b43.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635020_8dc48e07_4365_433b_bec7_f3cfa4a32b43.png" /></p>
 <p>“BackLight” is an LCD backlight adjustment application. Adjust the progress bar left and right to adjust the backlight brightness. After opening, the interface is as follows:</p>
-<p><img alt="Image" src="_images/1753683636796_e41f1228_4cc5_45ca_ab24_a259ede2dcf0.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636796_e41f1228_4cc5_45ca_ab24_a259ede2dcf0.png" /></p>
 <p>Drag the slider in the interface to set the LCD backlight brightness. 1 is the dimmest, 255 is the brightest. 0 needs to be set via the command line. Refer to “4.21 LCD Backlight Adjustment”.</p>
 </section>
 <section id="music-playback-test">
 <h3>3.13 Music Playback Test<a class="headerlink" href="#music-playback-test" title="Link to this heading"></a></h3>
-<p>Use the application icon  “ <img alt="Image" src="_images/1753683635105_03b4b57a_20c2_4b88_889b_37b1f3b2f71c.png" /> ”  to test music playback.</p>
+<p>Use the application icon  “ <img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635105_03b4b57a_20c2_4b88_889b_37b1f3b2f71c.png" /> ”  to test music playback.</p>
 <p>“musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.</p>
-<p><img alt="Image" src="_images/1718853468214_c3aa49a4_25fd_4931_97e6_52a27aae6cb2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853468214_c3aa49a4_25fd_4931_97e6_52a27aae6cb2.png" /></p>
 <p>Application Interface</p>
 <p>Click the button in the lower left corner and select the test audio /forlinx/audio/30s.mp3</p>
 </section>
 <section id="cpu-frequency-configuration-test">
 <h3>3.14 CPU Frequency Configuration Test<a class="headerlink" href="#cpu-frequency-configuration-test" title="Link to this heading"></a></h3>
 <p>The OK536 cpu0-cpu3 maximum main frequency is 1.6GHz. By default, the CPU dynamically adjusts the main frequency according to load, but it can also be set to a fixed CPU main frequency.</p>
-<p>Click the desktop settings icon<img alt="Image" src="_images/1718853483156_0250fdcf_60f4_4065_b5fc_babdd8f886c2.png" />to enter the next-level menu:</p>
-<p><img alt="Image" src="_images/1740982137418_51c56481_54fa_4894_9827_f050b6567234.png" /></p>
-<p>Click the icon<img alt="Image" src="_images/1718853495816_aa3a65e6_63a7_49a6_8445_db7d202ae3c5.png" />to enter the CPU main frequency setting page.</p>
-<p><img alt="Image" src="_images/1740982137590_8a0a6a92_befd_499a_980b_3085ace10aa9.png" /></p>
+<p>Click the desktop settings icon<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853483156_0250fdcf_60f4_4065_b5fc_babdd8f886c2.png" />to enter the next-level menu:</p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982137418_51c56481_54fa_4894_9827_f050b6567234.png" /></p>
+<p>Click the icon<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853495816_aa3a65e6_63a7_49a6_8445_db7d202ae3c5.png" />to enter the CPU main frequency setting page.</p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982137590_8a0a6a92_befd_499a_980b_3085ace10aa9.png" /></p>
 <p>Set OnDemand Governor：Dynamically adjust the main frequency on demand.</p>
 <p>Set Userspace Governor：Set the main frequency in user space.</p>
 <p>Set Frequency CPU0-3：Set the small core main frequency.</p>
 <p>Take setting the small core frequency as an example: First click “Set Userspace Governor”, click “RUN” in the pop-up dialog,</p>
-<p><img alt="Image" src="_images/1718853509090_50711674_801f_456a_a2d4_59f3c8a571ef.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853509090_50711674_801f_456a_a2d4_59f3c8a571ef.png" /></p>
 <p>then click “Set Frequency CPU0-3” to set a fixed frequency. (Click the arrow in the upper right corner to return to the previous directory, click the icon in the upper right corner to return to the main directory).</p>
-<p><img alt="Image" src="_images/1740982137678_739ad9ec_8045_4ff6_bd0d_22c991f7f235.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982137678_739ad9ec_8045_4ff6_bd0d_22c991f7f235.png" /></p>
 <p>Select the corresponding frequency according to needs for setting.</p>
 </section>
 <section id="sqlite3-data-test">
 <h3>3.15 SQLite3 Data Test<a class="headerlink" href="#sqlite3-data-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1718853565604_5f62ec21_046b_4fa6_be63_59dfac10abb2.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718853565604_5f62ec21_046b_4fa6_be63_59dfac10abb2.png" /></p>
 <p>Click the icon to enter the database test interface.</p>
-<p><img alt="Image" src="_images/1753683636860_9f135e5c_c338_420b_9327_bbb11d53b955.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636860_9f135e5c_c338_420b_9327_bbb11d53b955.png" /></p>
 <p>Select the row that needs to be modified, and you can modify the value of each column.</p>
 </section>
 <section id="spi-test">
 <h3>3.16 SPI Test<a class="headerlink" href="#spi-test" title="Link to this heading"></a></h3>
-<p>Icon:<img alt="Image" src="_images/1753683635176_a5cfd670_0751_4a16_a3e0_398e3b2b94e1.png" /></p>
+<p>Icon:<img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683635176_a5cfd670_0751_4a16_a3e0_398e3b2b94e1.png" /></p>
 <p>Click the icon to enter the SPI test interface. Short the SPI0_MOSI and SPI0_MISO pins, click send below, and you can receive the sent data to complete the test.</p>
-<p><img alt="Image" src="_images/1753683636927_05413d52_d173_47e8_a984_b5e4856c00bd.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683636927_05413d52_d173_47e8_a984_b5e4856c00bd.png" /></p>
 </section>
 </section>
 <section id="ok536-command-function-test">
@@ -971,7 +971,7 @@ key148 Presse
 </tbody>
 </table>
 <p>This test uses 485_0 and 485_1 for loopback testing. Connect 485_A0 to 485_A1 and 485_B0 to 485_B1.</p>
-<p><img alt="Image" src="_images/1740982139276_e591d53c_0552_43f4_bab2_11f49cc5a3ac.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139276_e591d53c_0552_43f4_bab2_11f49cc5a3ac.png" /></p>
 <p>Enter the following command in the development board serial port:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:/# fltest_uarttest -d /dev/ttyAS8 -b 115200 -r &amp;
 [1] 1953
@@ -986,8 +986,8 @@ root@OK536:/#
 <section id="gpadc-test">
 <h3>4.8 GPADC Test<a class="headerlink" href="#gpadc-test" title="Link to this heading"></a></h3>
 <p>The development board exposes 14 channels of GPADC with a voltage sampling range of 0~1.8V. Short-circuit the test adc pin to pin 1 or 2 of the P42 terminal, and adjust the sampling voltage via the R259 potentiometer:</p>
-<p><img alt="Image" src="_images/1740982139420_25b212b7_45b7_472a_83dc_e59cc8f684c3.png" /></p>
-<p><img alt="Image" src="_images/1740982139529_ab7f23c6_2c97_4635_aa7a_11d02171c149.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139420_25b212b7_45b7_472a_83dc_e59cc8f684c3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139529_ab7f23c6_2c97_4635_aa7a_11d02171c149.png" /></p>
 <p>Run fltest_adc, enter 3 to read the /dev/input/event3 event, corresponding to GPADC1 channel8 (GPADC1-8 in the schematic).</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:/#fltest_adc
 Available devices:
@@ -1115,7 +1115,7 @@ mmcblk0p1  mmcblk0p6  mmcblk1p1  mmcblk1p5
 <li><p><strong>Note the difference between USB3.0 and USB2.0 interfaces.</strong></p></li>
 </ul>
 <p>The OK536 supports four USB2.0 interfaces, three of which are expanded via a USB hub and multiplexed with OTG. Toggle DIP switch A to switch between OTG and the USB hub. When DIP switch B is set to PCIe, the USB3.0 interface functions as USB2.0.</p>
-<p><img alt="Image" src="_images/1740982139603_8b6d2604_620e_4270_af2f_ec34ccf23f99.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139603_8b6d2604_620e_4270_af2f_ec34ccf23f99.png" /></p>
 <p>1. After booting the development board, connect a USB drive to the USB host interface on the board;</p>
 <p>Serial port information:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[ 4998.259219] usb 3-1.4: new high-speed USB device number 5 using sunxi-ehci
@@ -1289,7 +1289,7 @@ nameserver  8.8.8.8
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>D:\iperf-3.1.3-win64\iperf-3.1.3-win64&gt;iperf3.exe -s
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1718854539950_06c8eebd_c99a_4250_9310_1b437aaa0257.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718854539950_06c8eebd_c99a_4250_9310_1b437aaa0257.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:/# iperf3 -c 192.168.1.39            //Test upload bandwidth
 Connecting to host 192.168.1.39, port 5201
 [  5] local 192.168.1.11 port 55152 connected to 192.168.1.39 port 5201
@@ -1343,7 +1343,7 @@ root@OK536:/#
 <h4>4.14.1 Web Service<a class="headerlink" href="#web-service" title="Link to this heading"></a></h4>
 <p><strong>Note: The PC’s IP must be in the same subnet as the development board’s IP for normal operation.</strong></p>
 <p>The OK536 development board comes pre-installed with a lighttpd web server, and the service starts automatically at system boot. Enter the development board’s IP address in a browser to access the web pages on the board’s web server, as shown below:</p>
-<p><img alt="Image" src="_images/1753683638660_6a7693f1_d3de_48cc_abd4_ac4ad8063d7a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1753683638660_6a7693f1_d3de_48cc_abd4_ac4ad8063d7a.png" /></p>
 </section>
 <section id="sftp">
 <h4>4.14.2 SFTP<a class="headerlink" href="#sftp" title="Link to this heading"></a></h4>
@@ -1351,8 +1351,8 @@ root@OK536:/#
 <p>The OK536-C development board supports SFTP service, which is automatically enabled at system startup. Once the IP address is configured, it can function as an SFTP server. The following describes how to utilize the SFTP tool for file transfer.</p>
 <p>Install the FileZilla tool on Windows and set it up as shown in the figure below.</p>
 <p>Open the filezilla tool, click File, and select Site Manager.</p>
-<p><img alt="Image" src="_images/1740982139684_53a653a8_0e6e_498b_96c9_9ce4dadb42fc.png" /></p>
-<p><img alt="Image" src="_images/1718854578304_c6b101f0_d6c3_4756_91c1_fe5ae9b55718.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139684_53a653a8_0e6e_498b_96c9_9ce4dadb42fc.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718854578304_c6b101f0_d6c3_4756_91c1_fe5ae9b55718.png" /></p>
 <p>After successful login, upload and download operations can be performed.</p>
 </section>
 </section>
@@ -1433,7 +1433,7 @@ round-trip min/avg/max = 40.234/79.797/119.289 ms
 <li><p><strong>You can use the quectelCM –help command to view the meanings of related parameters.</strong></p></li>
 </ul>
 <p>1. Toggle switch A to ON, connect the module, and after powering on the development board and module, check the USB status via the lsusb command;</p>
-<p><img alt="Image" src="_images/1740982139765_23b24c2d_a739_475e_a9cd_fe631dfc49d3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139765_23b24c2d_a739_475e_a9cd_fe631dfc49d3.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:/# lsusb
 Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -1602,7 +1602,7 @@ root@OK536:/#
 </pre></div>
 </div>
 <p>Modify the file reference as follows (users need to modify according to their actual situation):</p>
-<p><img alt="Image" src="_images/1718854651415_ad525e3b_3519_432f_ad11_78ebde105f37.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718854651415_ad525e3b_3519_432f_ad11_78ebde105f37.png" /></p>
 <p>2. After modification, save and exit, then add execution permission to the script;</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:/#chmod +x /autorun.sh
 </pre></div>
@@ -1616,7 +1616,7 @@ root@OK536:/#
 <p>To add a startup script when flashing the image, modifications need to be made in the development environment source code. The operation method is as follows:</p>
 <p>1. Enter the OK536-linux-sdk source code package, and create an autorun.sh file at the path: buildroot/package/auto/forlinx/root.</p>
 <p>Content format reference as follows; please modify according to your actual needs:</p>
-<p><img alt="Image" src="_images/1718854671764_11a6e703_7780_404e_9e7f_1a2c5189ef6c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718854671764_11a6e703_7780_404e_9e7f_1a2c5189ef6c.png" /></p>
 <p>Use the chmod +x autorun.sh command to add execution permission to the file.</p>
 <p>2. Add the following at the end of the buildroot/package/auto/forlinx/root/etc/init.d/rcS file:</p>
 <p>/autorun.sh &amp;</p>
@@ -1716,7 +1716,7 @@ sunxi_soc_ver    : 0x1
 <h3>4.25 CAN Test<a class="headerlink" href="#can-test" title="Link to this heading"></a></h3>
 <p>There are 4 x CANFD, which are led out to the P35 socket.</p>
 <p>Using CAN1 and CAN2 as an example, short-circuit the H, L, and GND lines of CAN1 and CAN2 for testing.</p>
-<p><img alt="Image" src="_images/1740982139860_87a5621f_f81d_4c0f_8e9c_09dc33c6f2d2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139860_87a5621f_f81d_4c0f_8e9c_09dc33c6f2d2.png" /></p>
 <p>1. CAN FD Testing</p>
 <p>Start CAN FD service.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:~# ip link set can1 down
@@ -1766,7 +1766,7 @@ root@OK536:~# cangen can1
 <section id="id6">
 <h3>4.26 SPI Test<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>There is a spi4 led out from the development board, which is on the P12 terminal.</p>
-<p><img alt="Image" src="_images/1740982139947_9d4a52e3_c141_472e_9060_1cdb340c01c1.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982139947_9d4a52e3_c141_472e_9060_1cdb340c01c1.png" /></p>
 <p>Test by short-circuiting SPI4_MOSI and SPI4_MISO.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:~# fltest_spidev_test -D /dev/spidev4.0 
 spi mode: 0
@@ -1785,7 +1785,7 @@ F0 0D
 </section>
 <section id="gpio-test">
 <h3>4.27 GPIO Test<a class="headerlink" href="#gpio-test" title="Link to this heading"></a></h3>
-<p><img alt="Image" src="_images/1740982140079_2f2f97f5_f425_4369_bccd_e1cd7037abbb.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140079_2f2f97f5_f425_4369_bccd_e1cd7037abbb.png" /></p>
 <p>Using PA3 as an example: GPIO number formula: (A-1)*32 + nr. For PA3, A=1, nr=3, so the number is 3.</p>
 <p>1. Set as Output.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:/# echo 3 &gt; /sys/class/gpio/export 
@@ -1809,7 +1809,7 @@ root@OK536:/# echo 3 &gt; /sys/class/gpio/unexport
 <section id="usb3-0">
 <h3>4.28 USB3.0<a class="headerlink" href="#usb3-0" title="Link to this heading"></a></h3>
 <p>USB 3.0 and PCIe on the OK536-C are multiplexed functions and cannot work simultaneously. Function must be switched in the U-Boot menu.</p>
-<p><img alt="Image" src="_images/1740982140151_5efe8a73_8c50_46ea_b781_bc87d30d441d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140151_5efe8a73_8c50_46ea_b781_bc87d30d441d.png" /></p>
 <p>Change the carrier board DIP switch to select USB3.0.</p>
 <p>After powering on the board, press the spacebar to enter the U-Boot menu.</p>
 <p>Press 3 to cycle between “PCIE” and “USB3”. Select “USB3”.</p>
@@ -2029,7 +2029,7 @@ Default agent request successful
 </div>
 <p>1. Board Passive Pairing (Standard pairing process).</p>
 <p>After the above settings, open your computer and search for Bluetooth. Click “Add Bluetooth or Other Devices”, and a device named “OKT536” will appear. Click on this Bluetooth to attempt pairing,</p>
-<p><img alt="Image" src="_images/1718854751055_40b40021_d9a9_4094_a8da_bf3e33ded013.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718854751055_40b40021_d9a9_4094_a8da_bf3e33ded013.png" /></p>
 <p>The print information on the development board is as follows. Enter “yes”:</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[CHG] Device 2C:DB:07:C7:4F:F6 Connected: yes
 Request confirmation
@@ -2084,20 +2084,20 @@ Pairing successful
 <p>4. Development board receives files</p>
 <p>After successful pairing, on the computer side, you can use Bluetooth to send files to the board side.</p>
 <p>Click “Send or receive files via Bluetooth”.</p>
-<p><img alt="Image" src="_images/1718855264803_546e43f0_8bac_4568_9251_aba4739cd77a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718855264803_546e43f0_8bac_4568_9251_aba4739cd77a.png" /></p>
 <p>Select OKT536.</p>
-<p><img alt="Image" src="_images/1740982140260_7f89d98d_82a7_464c_b328_18e97ba98a52.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140260_7f89d98d_82a7_464c_b328_18e97ba98a52.png" /></p>
 <p>Select the file to send.</p>
-<p><img alt="Image" src="_images/1718855311685_52169b3c_eae7_4cc7_a967_26ba5922d0b9.png" /></p>
-<p><img alt="Image" src="_images/1740982140350_8a62ea19_d472_481d_a0ab_d284ff619e82.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718855311685_52169b3c_eae7_4cc7_a967_26ba5922d0b9.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140350_8a62ea19_d472_481d_a0ab_d284ff619e82.png" /></p>
 <p>Waiting for sending to complete.</p>
-<p><img alt="Image" src="_images/1740982140429_033ffbeb_be28_4029_8db6_737940fc7ab0.png" /></p>
-<p><img alt="Image" src="_images/1740982140512_02fd3af9_a0ab_4209_89b7_a56ee0173727.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140429_033ffbeb_be28_4029_8db6_737940fc7ab0.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140512_02fd3af9_a0ab_4209_89b7_a56ee0173727.png" /></p>
 <p>The received file is saved in the /tmp directory.</p>
 <p>5. Send files from the development board</p>
 <p>Similarly, you can use the development board to send files to the computer. The test method is as follows:</p>
 <p>Select “Receive File” on the computer side.</p>
-<p><img alt="Image" src="_images/1718855360798_c018e7d4_f48b_4af9_86da_3b6f4e6741df.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718855360798_c018e7d4_f48b_4af9_86da_3b6f4e6741df.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>root@OK536:~# bluetoothctl 
 Agent registered
 [CHG] Controller E8:FB:1C:66:FA:A6 Pairable: yes
@@ -2184,9 +2184,9 @@ awnn_uninit total: 0.55 ms.
 </pre></div>
 </div>
 <p>Test picture:</p>
-<p><img alt="Image" src="_images/1740982140593_2448a137_4b4c_43f8_9d9c_0ef712809e52.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140593_2448a137_4b4c_43f8_9d9c_0ef712809e52.png" /></p>
 <p>Output picture:</p>
-<p><img alt="Image" src="_images/1740982140695_2a281494_abdc_4520_97b5_7d6458b13625.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140695_2a281494_abdc_4520_97b5_7d6458b13625.png" /></p>
 </section>
 <section id="g2d-test">
 <h3>4.33 G2D Test<a class="headerlink" href="#g2d-test" title="Link to this heading"></a></h3>
@@ -2237,9 +2237,9 @@ DEBUG  : ionAlloc &lt;ion_alloc_palloc_base:426&gt;: alloc succeed, addr_phy: 0x
 </pre></div>
 </div>
 <p>Before rotation:</p>
-<p><img alt="Image" src="_images/1740982140781_93d8e2c5_ca64_452f_924c_746fcd5c733d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140781_93d8e2c5_ca64_452f_924c_746fcd5c733d.png" /></p>
 <p>After rotation:</p>
-<p><img alt="Image" src="_images/1740982140876_674a5ae5_48da_4b85_93d8_2e728932f490.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982140876_674a5ae5_48da_4b85_93d8_2e728932f490.png" /></p>
 </section>
 <section id="sleep-wakeup">
 <h3>4.34 Sleep Wakeup<a class="headerlink" href="#sleep-wakeup" title="Link to this heading"></a></h3>
@@ -2430,16 +2430,16 @@ Freeing pipeline ...
 <p>1 Tool Path: 3-Tools\PhoenixSuit_v1.13.zip</p>
 <p>Unzip PhoenixSuit_v1.13.zip. Connect the board to the PC via a Type-C cable.</p>
 <p>Important: Set the function switch to OTG mode.</p>
-<p><img alt="Image" src="_images/1740982144276_ff0ecfab_e37c_48ec_91e3_b4048e77b0e3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982144276_ff0ecfab_e37c_48ec_91e3_b4048e77b0e3.png" /></p>
 <p>Connect the board’s USB0 to the host PC via a Type-C cable.</p>
 <p>Press and hold the FEL button. While holding FEL, press and release the RESET button. Wait about 2 seconds, then release the FEL button.</p>
 <p><strong>Note: Release RESET first, wait, then release FEL.</strong></p>
 <p>Open the Windows Device Manager and you will find an unknown device with a yellow exclamation mark. Select “Manually install driver”, right-click on the unknown device, and choose “Update driver”</p>
-<p><img alt="Image" src="_images/1718865053037_e5f86fbc_1486_4659_92bb_e76cd757b12d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865053037_e5f86fbc_1486_4659_92bb_e76cd757b12d.png" /></p>
 <p>After selecting “Browse my computer to find the driver”, choose the unzipped PhoenixSuit_v1.13 directory.</p>
-<p><img alt="Image" src="_images/1718865068116_92a779fe_a126_4e2b_b070_bcac89d74dca.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865068116_92a779fe_a126_4e2b_b070_bcac89d74dca.png" /></p>
 <p>After driver installation, run PhoenixSuit.exe. The bottom-left should show “Device connected successfully”.</p>
-<p><img alt="Image" src="_images/1740982144422_297d7dcb_05a9_4e39_9b37_7282ab394021.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982144422_297d7dcb_05a9_4e39_9b37_7282ab394021.png" /></p>
 </section>
 <section id="otg-flashing-methods">
 <h4>6.2.2 OTG Flashing Methods<a class="headerlink" href="#otg-flashing-methods" title="Link to this heading"></a></h4>
@@ -2447,54 +2447,54 @@ Freeing pipeline ...
 <p><strong>Note: Do NOT interrupt flashing (power off, disconnect OTG, etc.), as this may brick the board. Recovery requires making a TF recovery card (see 6.3.1). For recovery methods, refer to the section “6.3.1 Making TF Programming Card”.</strong></p>
 <p>This programming method will program the entire img image.</p>
 <p>In the following interface, click “One-click Flash” and then click “Browse” to select the firmware image file.</p>
-<p><img alt="Image" src="_images/1740982144573_31b7319e_9981_4b3c_8595_4840c70b7a60.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982144573_31b7319e_9981_4b3c_8595_4840c70b7a60.png" /></p>
 <p>Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button.</p>
 <p><strong>Note: Make sure to press the FEL button when the power is off.</strong></p>
 <p>In the following interface, click “Yes” to enter the formatting upgrade mode:</p>
-<p><img alt="Image" src="_images/1740982144656_33c3f09c_c5a7_4482_8aa5_dd8560042e99.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982144656_33c3f09c_c5a7_4482_8aa5_dd8560042e99.png" /></p>
 <p>Wait for the programming to complete. Then, the following interface will pop up:</p>
-<p><img alt="Image" src="_images/1740982144775_853678c4_5852_47f5_b3a7_147b816af0c7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982144775_853678c4_5852_47f5_b3a7_147b816af0c7.png" /></p>
 <p>After the flashing, the board will automatically power on</p>
 <p>2. Partial Image Updates</p>
 <p>a) OTG U-Boot Update Only:</p>
 <p>In the following interface, check the checkbox “Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)”, then check the “BOOT-RESOURCE” and “ENV” checkboxes.</p>
-<p><img alt="Image" src="_images/1740982144886_0461da28_2cc5_44ad_8bcc_0d89ce88205d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982144886_0461da28_2cc5_44ad_8bcc_0d89ce88205d.png" /></p>
 <p>Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:</p>
 <p><strong>Note: Make sure to press the FEL button when the power is off.</strong></p>
-<p><img alt="Image" src="_images/1740982145056_1f7e6a8d_b921_4eab_addd_2b974c463009.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145056_1f7e6a8d_b921_4eab_addd_2b974c463009.png" /></p>
 <p>2）OTG Flashing Kernel Image and Device Tree DTB File</p>
 <p>In the following interface, check the checkbox “Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)”, then check “BOOT-RESOURCE” and “BOOT”.</p>
 <p>The kernel image is placed in the “BOOT” partition.</p>
-<p><img alt="Image" src="_images/1740982145192_ef732f51_c45b_4e7c_b908_2a982737453c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145192_ef732f51_c45b_4e7c_b908_2a982737453c.png" /></p>
 <p>Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:</p>
 <p><strong>Note: Make sure to press the FEL button when the power is off.</strong></p>
-<p><img alt="Image" src="_images/1740982145443_ac61d194_a674_4800_b932_886750d459e5.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145443_ac61d194_a674_4800_b932_886750d459e5.png" /></p>
 <p>3 ）OTG System Flashing</p>
 <p>In the following interface, check the checkbox “Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)”, then check “ROOTFS”.</p>
-<p><img alt="Image" src="_images/1740982145586_386769ff_e4ef_42bc_8d4f_5b79504573ac.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145586_386769ff_e4ef_42bc_8d4f_5b79504573ac.png" /></p>
 <p>Connect the USB0 of the development board to the host using a Type-A to Type-C cable. Do not power on the board initially. Press the FEL button and then power on the board. Release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:</p>
 <p><strong>Note: Make sure to press the FEL button when the power is off.</strong></p>
-<p><img alt="Image" src="_images/1740982145687_283aaf0f_f7f0_4a7b_9c1e_438e266a180e.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145687_283aaf0f_f7f0_4a7b_9c1e_438e266a180e.png" /></p>
 </section>
 <section id="common-otg-flashing-issues">
 <h4>6.2.3 Common OTG Flashing Issues<a class="headerlink" href="#common-otg-flashing-issues" title="Link to this heading"></a></h4>
 <p>1. Driver Installation Failure</p>
 <p>After following the manual to install the USB driver, some users still see an “Unknown device” in Device Manager. When expanding the “Unknown device” details, a message appears indicating that the third-party INF does not contain digital signature information, as shown in the figure below:</p>
-<p><img alt="Image" src="_images/1718865268647_add5cacc_0f39_44ca_9e28_1a9e532154e2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865268647_add5cacc_0f39_44ca_9e28_1a9e532154e2.png" /></p>
 <p>This issue occurs because some Windows systems, in order to prevent third-party programs from affecting system stability, block unsigned drivers from passing verification, causing the driver installation to fail. First disable the driver signature enforcement setting on the computer, and then proceed with the driver installation according to the manual.</p>
 <p>(1) Solution for “Third-party INF does not contain digital signature information” issue.</p>
 <p>1). First press and hold Shift + Restart;</p>
-<p><img alt="Image" src="_images/1718865282319_8e077ae9_9f5c_4549_9a2e_0d5549cd10c2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865282319_8e077ae9_9f5c_4549_9a2e_0d5549cd10c2.png" /></p>
 <p>2). When starting up, select Troubleshoot → Advanced Options → Startup Settings;</p>
-<p><img alt="Image" src="_images/1718865476235_8a469de9_3ad1_45a9_929c_fa82a67562a1.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865476235_8a469de9_3ad1_45a9_929c_fa82a67562a1.png" /></p>
 <p>3). On the Startup Settings screen, click Restart in the bottom right corner. After restarting and entering Startup Settings, press the number key 7 or function key F7 to disable driver signature enforcemen.</p>
-<p><img alt="Image" src="_images/1718865487473_58ad1236_653d_426e_af69_5631e1e5fce0.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865487473_58ad1236_653d_426e_af69_5631e1e5fce0.png" /></p>
 <p>2. Incorrect use of FEL button</p>
 <p>When flashing, do not power on the board first. Press and hold the FEL button, then power on the board, and then release the FEL button.</p>
 <p>3. Device name appears but the board still cannot be recognized</p>
-<p><img alt="Image" src="_images/1718865537070_3e0d4969_1a2b_4c8b_a31b_7d31f69dd091.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865537070_3e0d4969_1a2b_4c8b_a31b_7d31f69dd091.png" /></p>
 <p>This may be because there are many unknown devices in Device Manager, and selecting the wrong one could cause the driver to be installed to another device. First right-click the device item mentioned above, select “Uninstall device”, and check “Delete the driver software for this device”.</p>
-<p><img alt="Image" src="_images/1718865547495_2c3fbd23_dae1_4b61_bfc4_199fab45dab0.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1718865547495_2c3fbd23_dae1_4b61_bfc4_199fab45dab0.png" /></p>
 <p>After uninstalling, disconnect other USB devices connected to the host, put the development board into flashing mode and connect it to the host, then repeat the above steps for installation.</p>
 </section>
 </section>
@@ -2506,11 +2506,11 @@ Freeing pipeline ...
 <p>1. Insert an 8GB/16GB/32GB TF card into the PC’s USB interface via a card reader.</p>
 <p>2. Copy the flashing tool PhoenixCard_V4.1.9.zip to any Windows directory, and double-click PhoenixCard.exe in the PhoenixCard_V4.1.9 folder.</p>
 <p>The following interface will appear:</p>
-<p><img alt="Image" src="_images/1740982145804_043db503_19e0_4ccc_bd20_d020cad1cc15.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145804_043db503_19e0_4ccc_bd20_d020cad1cc15.png" /></p>
 <p>Note: If the TF card has multiple partitions, click “Restore Card” first, then click “Burn Card”; otherwise, the burning process may fail.</p>
 <p>3. Click “Firmware” to browse and select the OK536 firmware image, select “Mass Production Card”, and click “Burn Card”.</p>
 <p>Wait for the burning process to complete, as shown in the following interface:</p>
-<p><img alt="Image" src="_images/1740982145906_e69aedd6_3ed5_4eda_9196_ef3a5671cd1d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145906_e69aedd6_3ed5_4eda_9196_ef3a5671cd1d.png" /></p>
 </section>
 <section id="tf-card-flashing-method">
 <h4>6.3.2 TF Card Flashing Method<a class="headerlink" href="#tf-card-flashing-method" title="Link to this heading"></a></h4>
@@ -2542,7 +2542,7 @@ SUNXI_UPDATE_NEXT_ACTION_SHUTDOWN
 </section>
 <section id="restoring-the-tf-card">
 <h4>6.3.3 Restoring the TF Card<a class="headerlink" href="#restoring-the-tf-card" title="Link to this heading"></a></h4>
-<p><img alt="Image" src="_images/1740982145985_dafffa8f_e8f3_4fe0_9624_9c84210c6ba7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/ok536-c/OK536x-C_Linux5_10_198_User_Manual/1740982145985_dafffa8f_e8f3_4fe0_9624_9c84210c6ba7.png" /></p>
 </section>
 </section>
 </section>
