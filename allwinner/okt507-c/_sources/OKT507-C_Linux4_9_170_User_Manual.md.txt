@@ -6,7 +6,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
-Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
+Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -45,7 +45,7 @@ Chapter 6. is the image update of the product, which mainly describes the method
 
 The OKT507-C development board adopts SoM+carrier board structure. It is designed and developed based on Allwinner T507 quad-core automotive-grade processor, Cortex with Cortex-A53 architecture, running at a frequency of 1.5GHz. It integrates a G31 GPU, 2GB DDR3L memory, and 8GB eMMC storage. The OKT507-C development board provides a rich set of functional interfaces, including dual Ethernet, CPU-integrated audio codec, IIS external audio codec, ADC, TF Card, LVDS, RGB, HDMI, WIFI, Bluetooth, 4G, MIPI\_CSI, DVP\_CSI, and other interfaces. It also reserves interfaces for installing 4-channel AHD camera to MIPI\_CSI module, and optional modules designed by Forlinx, facilitating the development and verification of AHD camera functions.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935004391_99cd9d49_dc0b_4b1d_b5c7_c5d7cb95f065.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935004391_99cd9d49_dc0b_4b1d_b5c7_c5d7cb95f065.jpeg)
 
 **Note: The software manual no longer includes hardware parameter details. Prior to software development, please read the "OKT507-C\_Hardware User’s Manual" located at "Hardware Information\\User Manual" path. This manual clarifies product naming conventions and specific hardware configuration. It aids in understanding and utilizing the product effectively.**
 
@@ -88,7 +88,7 @@ The OKT507-C development board adopts SoM+carrier board structure. It is designe
 
 The OKT507 board is equipped with a BOOT DIP switch, which supports system flashing via TF card and USB OTG, and boot modes of eMMC and TF. The DIP switch is used to distinguish between these modes (The position of the DIP switch for eMMC boot is shown in the figure below). For the specific flashing operation process, please refer to the section "[System Flashing](https://forlinx-book.yuque.com/pxh4d1/ngtapw/zq4ceyo7z4iw07xi)".
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935004893_8ae584e5_7266_4b8a_b39a_d2ac26e9daf1.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935004893_8ae584e5_7266_4b8a_b39a_d2ac26e9daf1.jpeg)
 
 | DIP Switch       | **1**  | **2** | **3** | **4**  |
 | ---------------- | :----: | :---: | :---: | :----: |
@@ -117,7 +117,7 @@ The debug serial port on the development board is equipped with a DB9 male conne
 
 Please check the DIP switch on your development board and make sure it is set to the desired boot mode. Please refer to “1.3 Flashing and Boot Configuration” for the startup mode settings.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935011928_fa1d7642_9e30_4548_8476_a9d5716a8f4c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935011928_fa1d7642_9e30_4548_8476_a9d5716a8f4c.png)
 
 ### 2.2  Serial Login Method
 
@@ -133,13 +133,13 @@ Here is an example using Putty to explain how to configure the terminal:
 
 Step 1: Connect the development board and the PC using a serial cable, and verify the serial port number recognized by the computer through the “Device Manager”. The port number recognized by the computer should be considered as the accurate one;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935012349_1fcdd0a3_ea02_4f0a_9d28_2b6b5407c1cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935012349_1fcdd0a3_ea02_4f0a_9d28_2b6b5407c1cf.png)
 
 Step 2: Open and set up putty, then set the“ line according to the COM port of the computer used, baud rate 115200;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935012815_7e37182d_f685_4711_b784_4430bd2d37be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935012815_7e37182d_f685_4711_b784_4430bd2d37be.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935013140_f1493e4d_0d69_4ac9_bcaa_8c56aa6d5107.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935013140_f1493e4d_0d69_4ac9_bcaa_8c56aa6d5107.png)
 
 Step 3: When you power on the development board, print information will display on the serial port until “root@forlinx~/$” appears, indicating startup completion. The system defaults to the root account without a password, eliminating the need for login credentials.
 
@@ -162,15 +162,15 @@ Before logging into the network, ensure that the direct network connection betwe
 
 1\. Connect the development board's eth0 interface to the computer using an Ethernet cable. Power on the board and boot the kernel. Confirm the blue heartbeat LED is blinking. Check the network card connection, ensuring its LED flashes rapidly. Once confirmed, proceed with testing the network connection;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935013662_38f62af8_3827_4fe5_a718_3142f711a228.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935013662_38f62af8_3827_4fe5_a718_3142f711a228.png)
 
 2\. Close the computer firewall (General computer operations, not described here in detail), then open the computer's run command;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935013973_e77e10d1_73d8_466d_8357_632d8580d9cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935013973_e77e10d1_73d8_466d_8357_632d8580d9cb.png)
 
 3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935014219_df6ce18d_c48c_4523_9da8_acfde731ca79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935014219_df6ce18d_c48c_4523_9da8_acfde731ca79.png)
 
 A data return indicates a normal network connection.
 
@@ -182,11 +182,11 @@ A data return indicates a normal network connection.
 + **The default factory IP for eth0 is 192.168.0.232;**
 + **File transfers can be performed with scp.**
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935014491_af18accf_bb59_4c47_8931_bacf8815e64c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935014491_af18accf_bb59_4c47_8931_bacf8815e64c.png)
 
 Click "Open", the following dialog box will appear, click "Yes" to enter the login screen.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935014680_395f6649_986a_4f8c_9797_38f4199bfe19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935014680_395f6649_986a_4f8c_9797_38f4199bfe19.png)
 
 ```plain
 Login as：root
@@ -196,7 +196,7 @@ root@forlinx~/root$
 
 You can use WinSCP (software needs to be installed separately) to copy files
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935014866_a0b2f531_4a58_4602_8a2b_e4c0285388cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935014866_a0b2f531_4a58_4602_8a2b_e4c0285388cc.png)
 
 ### 2.4 Screen Switching
 
@@ -207,11 +207,11 @@ You can use WinSCP (software needs to be installed separately) to copy files
 
 OKT507 comes with a default setting of dual-screen asynchronous display, with the logo being displayed on the HDMI screen.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935015075_87c1e377_288a_40e3_83c9_245c224b4ebd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935015075_87c1e377_288a_40e3_83c9_245c224b4ebd.png)
 
 The LCD displays the main interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935015307_c9770add_379b_4dc9_90ee_9fb9251ad956.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935015307_c9770add_379b_4dc9_90ee_9fb9251ad956.png)
 
 OKT507 supports multiple screen interfaces, such as RGB and HDMI. It can achieve both mirrored (same content on both screens) and extended (different content on each screen) display modes simultaneously. Additionally, HDMI interface can be flexibly assigned to support 4K output. Currently, there are three methods for screen switching control: specified by the kernel device tree, dynamically controlled via the U-Boot menu, and through the QT interface UbootMenu application.
 
@@ -225,7 +225,7 @@ This method can set the system default screen display to the desired way without
 
 In the kernel source code, open the device dtsi file and find the following node:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935015642_812d597b_7e7d_4421_b98c_1636b3682f4d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935015642_812d597b_7e7d_4421_b98c_1636b3682f4d.png)
 
 **Parameter Description:**
 
@@ -250,7 +250,7 @@ Where the disp \_ lcd type (describing the type of LCD interface) represents the
 
 Configured in synchronous display mode, the main screen is a capacitive screen with a resolution of 1280x800, and the secondary screen is an HDMI interface screen with a resolution of 4096x2160P50.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935015831_5df71fc5_79c8_4d4e_86ad_3102a3ad69b4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935015831_5df71fc5_79c8_4d4e_86ad_3102a3ad69b4.png)
 
 Change the setup parameters according to the actual needs, and after saving, please recompile to generate the image.
 
@@ -398,31 +398,31 @@ Here is the explanation for switching to a single screen display with LVDS 1280x
 
 During the U-Boot auto-start process, if you press the space key on the serial terminal, you will enter the U-Boot menu interface.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935016042_71b28a6e_1881_4dfd_9c4a_24410ec654e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935016042_71b28a6e_1881_4dfd_9c4a_24410ec654e2.png)
 
 Select 2 to enter the LCD Screen Control submenu
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935016238_946edb14_9bd2_4dfb_9ebb_c1453a6d6528.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935016238_946edb14_9bd2_4dfb_9ebb_c1453a6d6528.png)
 
 Select 1 as shown in the figure above to enter the LCD configuration submenu
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935016436_8ab11568_89d9_4da1_bcec_e025f12f4eb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935016436_8ab11568_89d9_4da1_bcec_e025f12f4eb1.png)
 
 Select 1 to set to LVDS 1280x800, and then select 0 to return to the previous menu
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935016673_c66188d6_08d5_4978_ab4a_43b872fb8bd0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935016673_c66188d6_08d5_4978_ab4a_43b872fb8bd0.png)
 
 Select 5 to enter the display mode parameter configuration menu.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935016870_f9ac6fc2_f5aa_4e8d_9683_1008450a6bb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935016870_f9ac6fc2_f5aa_4e8d_9683_1008450a6bb6.png)
 
 Based on the image above, select option 5 to enter the Display Mode Configuration submenu.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935017113_fd5b6c88_dfa8_4e59_9c5c_fb8eb3e7f44d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935017113_fd5b6c88_dfa8_4e59_9c5c_fb8eb3e7f44d.png)
 
 Select 1, set up LCD single display, then select 0 to return to the previous menu.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935017342_3212cdb7_154c_47cc_a6a6_0abefee609a5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935017342_3212cdb7_154c_47cc_a6a6_0abefee609a5.png)
 
 After making the selection, press the reset key to restart the device ( Alternatively, you can follow the menu prompts to return to the first-level U-Boot menu and select “reboot” to restart the device). The changes you made will take effect after the device restarts.
 
@@ -449,11 +449,11 @@ The following table is the eMMC memory partition information of Linux operating 
 
 The command "df" is used to check the disk usage on a system. When used with the flag "-m", it displays the file system disk space usage in megabytes (MB). The following image depicts the default disk usage upon factory settings (using the QT file system). Please note that this is for reference only, and actual parameters may vary.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935017573_8c459dcd_9fcb_4305_a698_b6c268449ef2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935017573_8c459dcd_9fcb_4305_a698_b6c268449ef2.png)
 
 Using the free command to check memory usage. The following image illustrates the memory usage without any external devices connected. Please note that this is for reference only, and actual parameters may vary.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935017749_2bbfadc0_7533_43cb_bf54_2034693e6c0f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935017749_2bbfadc0_7533_43cb_bf54_2034693e6c0f.png)
 
 ### 2.7 System Shutdown
 
@@ -478,37 +478,37 @@ This chapter mainly explains the usage of the expansion interfaces on the develo
 
 The desktop is displayed as follows after the development board is booted:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935027183_52ee4531_f984_4daf_a129_f654fb30666a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935027183_52ee4531_f984_4daf_a129_f654fb30666a.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935027464_9685b464_7d93_4168_8018_b28354dce3d6.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935027464_9685b464_7d93_4168_8018_b28354dce3d6.jpeg)
 
 ### 3.2 Audio and Video Playback Experience
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935027670_942d1873_f831_4205_9897_a2cdc7a9562b.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935027670_942d1873_f831_4205_9897_a2cdc7a9562b.png)
 
 Click on the audio and video playback icon to enter the video player, which allows you to play both music and videos. The default sound is output from Line Out (optional output interface), and Line Out can be connected to headphones or speakers.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935027953_27a9e7a4_1923_4b62_9d53_659757b2354c.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935027953_27a9e7a4_1923_4b62_9d53_659757b2354c.jpeg)
 
 Click on the video player icon on the left side to enter the video player interface, then click on the search button. Choose either "/forlinx/media/1080p\_60fps\_h264.mp4" or "/forlinx/media/1080p\_60fps\_h265.mp4" to perform a playback test.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935028141_49feb77a_1e37_4ff0_92df_51fc31ef89d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935028141_49feb77a_1e37_4ff0_92df_51fc31ef89d7.png)
 
 Click the audio player icon on the right side
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935028388_017318b8_3681_4da2_a87b_77f0c21a192d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935028388_017318b8_3681_4da2_a87b_77f0c21a192d.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935028685_f20644bf_db68_4d92_8835_213a4fc564a1.png)Represents using LINEOUT to play music.![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935028887_258fc186_f82e_490a_b212_02e76eb4a617.png)Represents using HeadPhone to play music.
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935028685_f20644bf_db68_4d92_8835_213a4fc564a1.png)Represents using LINEOUT to play music.![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935028887_258fc186_f82e_490a_b212_02e76eb4a617.png)Represents using HeadPhone to play music.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935029155_2d58344c_a843_446b_9a8f_dbd339ab2db6.png)Playing music using HDMI.
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935029155_2d58344c_a843_446b_9a8f_dbd339ab2db6.png)Playing music using HDMI.
 
 ### 3.3 OpenGL Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935029363_f324376d_884c_40e5_9680_6791bd0e7371.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935029363_f324376d_884c_40e5_9680_6791bd0e7371.png)
 
 OKT507 supports up to OpenGL ESv3.2. Please click on the OpenGL icon to perform the test.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935029603_ec6e8ad6_f5ae_4368_bda5_8fe69a7de53e.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935029603_ec6e8ad6_f5ae_4368_bda5_8fe69a7de53e.jpeg)
 
 Click on "File" in the top left corner and select "Exit” and return to the main interface.
 
@@ -519,7 +519,7 @@ Click on "File" in the top left corner and select "Exit” and return to the mai
 + **The default factory setting is to configure only the eth0 network interface in STATIC mode, while the eth1 network interface is not configured;**
 + **The IP and network configuration will be stored in the system file (/etc/network/interfaces), ensuring the settings persist across system restarts.**
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935029816_a9ac65f5_619d_48dc_a614_df6f46ada805.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935029816_a9ac65f5_619d_48dc_a614_df6f46ada805.png)
 
 Clicking on the network configuration icon will open a interface program that supports two modes: STATIC and DHCP.
 
@@ -534,7 +534,7 @@ After clicking on the network configuration icon, select the STATIC mode as show
 | gateway                | Set the gateway      |
 | dns                    | Set the DNS          |
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935030119_8c0fea49_701f_4e85_87de_c0c3961e7659.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935030119_8c0fea49_701f_4e85_87de_c0c3961e7659.jpeg)
 
 + DHCP mode
 
@@ -542,49 +542,49 @@ After clicking on the network configuration icon, select the STATIC mode as show
 
 Check DHCP, select the NIC device needing to be configured, and click “Apply and Restart Network” at the bottom of the interface to restart the network and get the ip automatically.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935030357_db8197a1_4358_4c74_afe5_d2d4f95f55fd.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935030357_db8197a1_4358_4c74_afe5_d2d4f95f55fd.jpeg)
 
 ### 3.5 Browser Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935030522_128af5df_ee6e_4af5_a300_eac4352165ac.jpeg)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935030522_128af5df_ee6e_4af5_a300_eac4352165ac.jpeg)
 
 Click the browser icon and ensure a smooth network connection with available DNS before accessing external sites. Upon browser startup, it defaults to visiting Forlinx Embedded's official website, as shown below:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935030785_235c2515_5985_44a0_89d6_12e69f393bb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935030785_235c2515_5985_44a0_89d6_12e69f393bb1.png)
 
 **Note: If the development board time is abnormal, it will cause certificate problems.**
 
 ### 3.6 4G Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935031094_34e37d8a_e0a3_49ae_9b40_11b2855e33b1.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935031094_34e37d8a_e0a3_49ae_9b40_11b2855e33b1.png)
 
 The "4G" test program is used to test the OKT507 external 4G module (ME909S and EC20). Before testing, power off the development board, insert the SIM card into the 4G module (ensure correct SIM direction), and launch the test application. This test employs the EC20 module as a reference.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935031331_2a89dbb5_8938_4e7a_8f5b_871e89e7dac6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935031331_2a89dbb5_8938_4e7a_8f5b_871e89e7dac6.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935031552_09e3871e_6a04_41b4_9519_2113698d2f57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935031552_09e3871e_6a04_41b4_9519_2113698d2f57.png)
 
 Click the CONNECT button then the program will automatically enter the dialing process and get the IP to set the DNS, etc. After waiting patiently for a few seconds, click the ping button to test it.
 
 ### 3.7 UART Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935031783_572d6933_6b3a_4260_be6f_a718e0bef5b2.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935031783_572d6933_6b3a_4260_be6f_a718e0bef5b2.png)
 
 This test uses UART5 (ttyS5) to perform serial port test by sending and receiving data between the development board's UART and the computer's serial port tool software.
 
 1\. After connecting the development board and the computer via a TTL to USB module, power on the development board. Check in the computer's device manager, it should be recognized as COM4 (please adjust the settings according to the actual COM port recognized);
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935032012_03d95e26_515c_47bd_ade8_e6bfdc5df8c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935032012_03d95e26_515c_47bd_ade8_e6bfdc5df8c7.png)
 
 2\. Open the computer serial port tool, set the serial port parameters: baud rate 115200, 8 data bits, 1 stop bit, no parity, no flow control, and open the serial port;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935032280_17dcf6c0_381b_4bd2_9633_811ce66d9332.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935032280_17dcf6c0_381b_4bd2_9633_811ce66d9332.png)
 
 3\. Click the UART test icon to enter the following interface to set the serial port parameters:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935032555_4824fff2_c0ca_492c_a464_9d8a7aa42150.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935032555_4824fff2_c0ca_492c_a464_9d8a7aa42150.jpeg)
 
-Click the setup button in the upper left corner![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935032769_f49dd79e_fc57_4a8c_bc04_4d1d21233834.png)to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:
+Click the setup button in the upper left corner![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935032769_f49dd79e_fc57_4a8c_bc04_4d1d21233834.png)to set the serial port parameters to be consistent with the parameters of the serial port tool on the computer side, as shown below:
 
 | **Relevant Parameter** | **Meaning**                                    |
 | ---------------------- | ---------------------------------------------- |
@@ -595,67 +595,67 @@ Click the setup button in the upper left corner![Image](./images/OKT507-C_Linux4
 | Stop bits              | Set the stop bit (1 bit)                       |
 | Flow control           | Set the flow control (no flow control)         |
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935032992_c5465c3b_b22c_4084_93c6_994f5cb5ef5f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935032992_c5465c3b_b22c_4084_93c6_994f5cb5ef5f.jpeg)
 
-After setting the serial port parameters, click the connect button in the upper left corner![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935033182_42e2e8e4_5bf2_42db_8315_76055b2ed99d.png), then the program can conduct data sending and receiving tests.
+After setting the serial port parameters, click the connect button in the upper left corner![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935033182_42e2e8e4_5bf2_42db_8315_76055b2ed99d.png), then the program can conduct data sending and receiving tests.
 
 4\. The serial port tool of the computer sends: "forlinx\_uart\_test.1234567890..."; the test interface will receive the data:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935033521_53bf2f0c_ee4b_451e_b61c_dd42e28862a9.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935033521_53bf2f0c_ee4b_451e_b61c_dd42e28862a9.jpeg)
 
 Click the test interface to pop up the soft keyboard, enter "abcdefg", press Enter on the soft keyboard to send data to the serial port tool on the computer side:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935033757_21f26374_2c48_411b_8afa_52bf4506432f.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935033757_21f26374_2c48_411b_8afa_52bf4506432f.jpeg)
 
 The data received by the serial port tool on the computer side:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935034082_8de83c9b_8fc7_43eb_a040_fd378352e9ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935034082_8de83c9b_8fc7_43eb_a040_fd378352e9ef.png)
 
 ### 3.8 ADC Test
 
 Icon：
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935034365_84e76029_0e99_4416_83f1_ce18b83c17f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935034365_84e76029_0e99_4416_83f1_ce18b83c17f2.png)
 
 On the carrier board of OKT507-C, GPADC, 3 channels are connected to a variable resistor. The resistance value of the variable resistor changes correspondingly. Max value of 4096 corresponds to a voltage of 1.8V. Click the ADC test icon to test GPADC 3-channel by adjusting the variable resistor.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935034605_f1597a58_ca19_4088_8911_23a110ee2e2d.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935034605_f1597a58_ca19_4088_8911_23a110ee2e2d.jpeg)
 
 ### 3.9 WIFI Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935034830_bd2f850d_52f8_4637_bee4_ba8ce9df15ee.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935034830_bd2f850d_52f8_4637_bee4_ba8ce9df15ee.png)
 
 "WIFI" is a tool for configuring and testing the STA (station) mode of Wi-Fi.
 
 Click on the icon to enter the test interface. From the dropdown menu, select the corresponding module. In the SSID, input the name of the router you want to connect. In the PAWD, input the router's password. Then, click "connect" to establish a WiFi connection with the router.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935035117_738b20ce_9cce_405d_9268_594a13692b89.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935035117_738b20ce_9cce_405d_9268_594a13692b89.png)
 
 2\. After the connection is successful, click "ping" to test the network after setting the IP.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935035412_e6ba5f3f_21c5_408b_acbd_6f9aac9238cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935035412_e6ba5f3f_21c5_408b_acbd_6f9aac9238cc.png)
 
 ### 3.10 RTC Test
 
 **Note: Ensure button cell batteries are installed \& voltage is normal.**
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935035726_d073b352_fa62_4513_9b18_675c9c1cde7d.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935035726_d073b352_fa62_4513_9b18_675c9c1cde7d.png)
 
 RTC test includes setting time, power cycling, rerunning test software, and verifying RTC sync.
 
 Run the RTC test software to view and set the current system time with the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935035970_9ebe02f6_4416_4e7f_af8f_4a003432d1ba.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935035970_9ebe02f6_4416_4e7f_af8f_4a003432d1ba.jpeg)
 
 After SET, you can set the time and click Save to finish the settings. After powering off and waiting, reboot and rerun the RTC test software to synchronize and confirm the RTC test is normal.
 
 ### 3.11 Key Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935036205_d09c2668_f9d9_4559_9040_9f83e3aa83ea.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935036205_d09c2668_f9d9_4559_9040_9f83e3aa83ea.png)
 
 "Keypad" tests platform buttons' availability by checking if pressed buttons turn blue. Interface shown below.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935036403_041ee2b0_184c_4d09_88af_3e97ea503de2.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935036403_041ee2b0_184c_4d09_88af_3e97ea503de2.jpeg)
 
 The OKT507 platform has five physical buttons: VOL-, VOL+, MENU, ENTER, and HOME, which correspond to V-, V+, Home, Menu, and Enter respectively. When a button is pressed, the corresponding button in the testing application will turn blue, indicating that the button function is working properly.
 
@@ -663,11 +663,11 @@ The OKT507 platform has five physical buttons: VOL-, VOL+, MENU, ENTER, and HOME
 
 ### 3.12 Watchdog Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935036648_1c1c3cfd_f9a2_4017_861f_28b060316bb0.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935036648_1c1c3cfd_f9a2_4017_861f_28b060316bb0.png)
 
 “WatchDog" tests the functionality of the watchdog feature. Interface as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935036876_7edbd3d3_532b_4621_ab5f_7d779cd32fc6.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935036876_7edbd3d3_532b_4621_ab5f_7d779cd32fc6.jpeg)
 
 Checking "feed dog" \& clicking "open watchdog" starts watchdog function with dog-feeding. System shouldn't restart under normal conditions.
 
@@ -675,21 +675,21 @@ Unchecking "Feed Dog" \& clicking "Activate Watchdog” starts watchdog function
 
 ### 3.13 Ping Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935037195_6236cc9e_c637_4949_9778_334d87678a2f.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935037195_6236cc9e_c637_4949_9778_334d87678a2f.png)
 
 "Ping" is a graphical tool for network testing, offering a user-friendly interface for ping operations.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935037430_b6102612_ac77_4b88_aed1_166bb5d3d6d8.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935037430_b6102612_ac77_4b88_aed1_166bb5d3d6d8.jpeg)
 
 In the hostname, enter the target IP address you wish to ping. After clicking the “Ping” button, the results will appear in the “result”. A successful ping will indicate smooth network connectivity, as shown in the figure. Click “Stop” to stop the ping test, and “Clear” to remove information from the “result”.
 
 ### 3.14 Camera Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935037674_544af84d_9cd7_4938_a870_b7f2a9682c63.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935037674_544af84d_9cd7_4938_a870_b7f2a9682c63.png)
 
 Click the icon to enter the camera test program. The test program is compatible with MIPI and DVP interfaces. .
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935037844_b5f3fc8a_649a_4cf9_a2ec_9965c2928afb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935037844_b5f3fc8a_649a_4cf9_a2ec_9965c2928afb.png)
 
 Choose the camera video device node;
 
@@ -707,43 +707,43 @@ Save the photo with a name and at a chosen path.
 
 Take ov5640\_mipi camera as an example for test.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935038156_dd84924b_71a0_4f95_a896_9cffd035bd57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935038156_dd84924b_71a0_4f95_a896_9cffd035bd57.png)
 
 Click "Picture" to take photos and save them in /root/. Use Windows built-in image viewer to view them.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935038511_c729bb8c_1d34_4a68_afa8_69c324a5727a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935038511_c729bb8c_1d34_4a68_afa8_69c324a5727a.png)
 
 ### 3.15 Backlight Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935038807_21987aa6_0f55_4df5_a578_7aaede9280f3.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935038807_21987aa6_0f55_4df5_a578_7aaede9280f3.png)
 
 "BackLight" is an LCD backlight adjustment App with a left-right progress bar for brightness control. Click to open the interface as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935038995_7e751b2c_69fe_47d4_9e4f_64253fc8c025.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935038995_7e751b2c_69fe_47d4_9e4f_64253fc8c025.jpeg)
 
 Drag the slider in the interface to set the LCD backlight brightness, 0 level for weak backlight, 255 (150 level) for maximum brightness.
 
 ### 3.16 Recording Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935039213_1d2c7f64_b628_45c0_87ce_bf61c402ed00.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935039213_1d2c7f64_b628_45c0_87ce_bf61c402ed00.png)
 
 Before conducting the audio recording test, please insert the prepared microphone into the mic port. Click the icon to enter the recording test application, which can be used to check if the sound card recording function is working properly.
 
 Please choose the location to save the recording file. The "Start" button is used to begin recording, while the "Stop" button is used to stop it. The interface is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935039401_f305d854_0646_4dd1_8053_96a7089b054a.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935039401_f305d854_0646_4dd1_8053_96a7089b054a.jpeg)
 
 ### 3.17 CPU Frequency Configuration Test
 
 OKT507 CPU frequency is up to 1.5 GHz. By default, the CPU will dynamically adjust the main frequency according to the load or fix the CPU main frequency by settings.
 
-Click the desktop setting icon to![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935039679_541e08e3_1716_41e7_86f4_46dcab113b90.png)enter the next menu:
+Click the desktop setting icon to![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935039679_541e08e3_1716_41e7_86f4_46dcab113b90.png)enter the next menu:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935039898_51dc12f7_fb05_4c6a_a85c_d84aae9d16cc.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935039898_51dc12f7_fb05_4c6a_a85c_d84aae9d16cc.jpeg)
 
-Click the desktop icon![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935040162_fb56c646_a7d0_4c29_b36d_24e3fbf7322b.png)to enter the CPU main frequency setting page:
+Click the desktop icon![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935040162_fb56c646_a7d0_4c29_b36d_24e3fbf7322b.png)to enter the CPU main frequency setting page:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935040447_afa1d909_b0da_44cb_8de7_b1d66f8a99ea.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935040447_afa1d909_b0da_44cb_8de7_b1d66f8a99ea.jpeg)
 
 Set OnDemand Governor：Dynamically adjust the main frequency on demand.
 
@@ -753,43 +753,43 @@ Set Frequency: Set the core main frequency
 
 Take the setting of main core frequency as an example: first click "Set Userspace Governor" ", select "run" in the pop-up dialog box, and then click "Set Frequency" to set the fixed frequency. (Click the arrow in the top right corner to return to the previous directory, and click the icon in the top right corner to return to the main directory).
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935040631_87be5778_4dfa_47d7_b9a7_0e79d913f934.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935040631_87be5778_4dfa_47d7_b9a7_0e79d913f934.jpeg)
 
 Select the desired frequency for configuration based on the needs.
 
 ### 3.18 SQLite3 Database Test
 
-Icon：![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935040880_15c2bcbd_7dad_464f_9c8a_0e0e7e95a149.jpeg)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935040880_15c2bcbd_7dad_464f_9c8a_0e0e7e95a149.jpeg)
 
 Click on the icon to access the database testing interface.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935041103_c2c88eba_067a_446d_b2c1_f05c65390c17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935041103_c2c88eba_067a_446d_b2c1_f05c65390c17.png)
 
 Select the column that needs to be modified, and click on an empty area after making the changes.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935041487_748e4dbc_d200_4dcf_9859_8c336c9854f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935041487_748e4dbc_d200_4dcf_9859_8c336c9854f2.png)
 
 ### 3.19 UBOOT Menu Configuration Test
 
-Click the![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935041742_4a39b862_6062_4853_ab0b_a984cda567bc.png)icon to enter the UBOOT menu configuration test interface.
+Click the![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935041742_4a39b862_6062_4853_ab0b_a984cda567bc.png)icon to enter the UBOOT menu configuration test interface.
 
 In the UBOOT menu configuration test program, you can configure parameters such as LCD screen resolution, HDMI resolution, camera device, display mode, etc.
 
 LCD screen configuration interface is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935041939_ef5f5e5b_8ecb_4d7b_a88a_6276a3a4fb60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935041939_ef5f5e5b_8ecb_4d7b_a88a_6276a3a4fb60.png)
 
 HDMI configuration interface is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935042154_59c99250_0ceb_4161_b635_678961cbab7c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935042154_59c99250_0ceb_4161_b635_678961cbab7c.png)
 
 Camera configuration interface is as follows: You can choose to use the OV5640 MIPI camera or the TP2854M 4-in-1 MIPI analog camera.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935042324_1e4e584f_6a03_4340_b4a9_9a5282586dec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935042324_1e4e584f_6a03_4340_b4a9_9a5282586dec.png)
 
 The display mode configuration interface is as follows: The four options respectively represent: Single Display LCD, Single Display HDMI, Dual Display, and Clone Display.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935042532_004adf66_f051_49b3_98d3_d963d73c80cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935042532_004adf66_f051_49b3_98d3_d963d73c80cc.png)
 
 After the configuration is completed, exit the program, and then restart the development board, and the settings will take effect.
 
@@ -876,9 +876,9 @@ root@forlinx~/$ memory_bandwidth.sh
 
 Printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935051515_4cf22cea_13e0_4c75_a6e4_7f5adc230a0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935051515_4cf22cea_13e0_4c75_a6e4_7f5adc230a0e.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935051744_bbdf2d3d_0ea1_406c_a566_b123b123e4ac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935051744_bbdf2d3d_0ea1_406c_a566_b123b123e4ac.png)
 
 The DDR3 bandwidth of the OKT507-C, as shown in the above figure, is approximately 1480 MB/s for read bandwidth and around 1000 MB/s for read-write bandwidth.
 
@@ -969,15 +969,15 @@ OKT507-C development board is equipped with 3 UART ports, which are labeled on t
 
 This test uses UART5 (ttyS5) to perform serial port test by sending and receiving data between the development board's UART and the computer's serial port tool software.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935052047_b36ea73e_0a86_460e_9008_96211ebee53a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935052047_b36ea73e_0a86_460e_9008_96211ebee53a.png)
 
 1\. After connecting the development board and the computer via a TTL to USB module, power on the development board. Check in the computer's device manager, it should be recognized as COM4 (please adjust the settings according to the actual COM port recognized);
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935052354_cd87cc7f_4800_4118_882b_ead97952b464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935052354_cd87cc7f_4800_4118_882b_ead97952b464.png)
 
 2\. Open the computer serial port tool, set the serial port parameters: baud rate 115200, 8 data bits, 1 stop bit, no parity, no flow control, and open the serial port;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935052633_52e13d3b_9335_4a28_b6e9_68f0abae2a92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935052633_52e13d3b_9335_4a28_b6e9_68f0abae2a92.png)
 
 Enter the following command into the serial port of the development board (the test program has a fixed baud rate of 115200):
 
@@ -995,7 +995,7 @@ forlinx_uart_test.1234567890...                                             //Se
 
 The test program automatically se"forlinx\_uart\_test.1234567890...". The message is received when the serial aide is viewed:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935052941_7da79984_afa6_4db3_950d_5a6693b9b369.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935052941_7da79984_afa6_4db3_950d_5a6693b9b369.png)
 
 PC serial tool sends "forlinx\_uart\_test.1234567890...". At this point, the development board receives the message and the related printout is as follows:
 
@@ -1015,7 +1015,7 @@ The development board offers 4 x GPADC (General Purpose Analog-to-Digital Conver
 root@forlinx~/$ fltest_adc
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935053224_2f45cbcc_3ad4_48da_93d4_909b325c53c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935053224_2f45cbcc_3ad4_48da_93d4_909b325c53c0.png)
 
 ### 4.10 TF Card Test
 
@@ -1204,11 +1204,11 @@ OKT507-C board includes an OTG (On-The-Go) interface. In Device mode, it can be 
 
 Device Mode:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935053449_15f705af_4829_444a_a296_61cf50b5cf10.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935053449_15f705af_4829_444a_a296_61cf50b5cf10.png)
 
 Host Mode:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935053770_c4773011_ad3d_44a5_8002_ef1bbccf8440.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935053770_c4773011_ad3d_44a5_8002_ef1bbccf8440.png)
 
 ### 4.15 Ethernet Configuration
 
@@ -1234,7 +1234,7 @@ netmask: Used to set the subnet mask;
 
 gateway: Used to specify a gateway;
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935053984_9f93068e_6741_49d3_aa75_20aaa0ac889d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935053984_9f93068e_6741_49d3_aa75_20aaa0ac889d.png)
 
 To ensure the configuration changes take effect, users need to adjust settings as needed, save and exit, synchronize using "sync," and then either restart the development board or use "ifdown -a" followed by "ifup -a" commands to restart the configuration.
 
@@ -1244,7 +1244,7 @@ To ensure the configuration changes take effect, users need to adjust settings a
 
 Please refer to"4.15.1 Gigabit Ethernet Fixed IP Method"for the setting method. Take setting the ip of eth1 as 192.168.1.232 as an example, the configuration file after modification is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935054166_3555c2b9_b29d_432b_b143_1701dbde174b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935054166_3555c2b9_b29d_432b_b143_1701dbde174b.png)
 
 After users adjust settings according to their needs, save and exit, sync using "sync," and then either restart the development board or use "ifdown eth1" followed by "ifup eth1" commands to restart the configuration, the configuration file will take effect.
 
@@ -1267,7 +1267,7 @@ iface eth1 inet dhcp
 
 The modified configuration file is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935054381_94a52915_975a_4ecd_9165_8df2a127b657.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935054381_94a52915_975a_4ecd_9165_8df2a127b657.png)
 
 After saving and exiting, use sync to synchronize and reboot the board for the configuration file to take effect.
 
@@ -1280,7 +1280,7 @@ After saving and exiting, use sync to synchronize and reboot the board for the c
 
 Test the OKT507-C carrier board eth0/eth1 network speed by using the network speed test tool iperf3. View the IP address 192.168.0.233 via the ifconfig command in the Ubuntu virtual
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935054599_2110e400_b52e_44ec_97c3_5c2e9cddbc44.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935054599_2110e400_b52e_44ec_97c3_5c2e9cddbc44.png)
 
 Ubuntu virtual machines run in server mode:
 
@@ -1288,7 +1288,7 @@ Ubuntu virtual machines run in server mode:
 forlinx@ubuntu:~$ sudo iperf3 –s
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935054880_914e7d62_2738_4489_b5ca_081246c63880.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935054880_914e7d62_2738_4489_b5ca_081246c63880.png)
 
 1\. eth0 Gigabit Ethernet port speed test;
 
@@ -1298,7 +1298,7 @@ Default factory eth0 ip is 192.168.0.232, in the OKT507 serial debugging termina
 root@forlinx~/$ iperf3 -c 192.168.0.233 -t 60 -i 1         //Please fill in the server IP address according to the actual situation
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935055091_17548a55_aeeb_4982_93f2_6f3b9c326343.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935055091_17548a55_aeeb_4982_93f2_6f3b9c326343.png)
 
 OKT507-C Gigabit network transmission bandwidth of 811Mb/s
 
@@ -1310,7 +1310,7 @@ Close eth0, set the IP of eth1 to 192.168.0.232, and enter the following in the 
 root@forlinx~/$ iperf3 -c 192.168.0.233 -t 60 -i 1         //Please fill in the server IP address according to the actual situation
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935055301_1ba5a229_8e96_4c1d_8523_2c287ca2a2e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935055301_1ba5a229_8e96_4c1d_8523_2c287ca2a2e0.png)
 
 The bandwidth of OKT507-C for 100Mbps network transmission is 95Mb/s.
 
@@ -1326,7 +1326,7 @@ The bandwidth of OKT507-C for 100Mbps network transmission is 95Mb/s.
 
 The OKT507 development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935055623_f83ba49a_97f2_44bc_8130_edeabee53b84.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935055623_f83ba49a_97f2_44bc_8130_edeabee53b84.png)
 
 #### 4.16.2 SFTP
 
@@ -1338,9 +1338,9 @@ Install FileZilla tool on Windows and follow the steps shown in the image below 
 
 Open the filezilla tool, click on File and select Site Manager.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935055946_ccabc00f_9328_42dc_94e1_5a0ababe25a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935055946_ccabc00f_9328_42dc_94e1_5a0ababe25a1.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935056189_ae814f2d_4fa2_46b2_b9d3_a1e0aa174f64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935056189_ae814f2d_4fa2_46b2_b9d3_a1e0aa174f64.png)
 
 After successful login, you can upload and download.
 
@@ -1483,7 +1483,7 @@ Default agent request successful
 
 After the above settings, open the mobile phone Bluetooth search, a "BlueZ 5.50" device will appear, click this Bluetooth to try to pair.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935056454_f9fa572b_34da_4455_84b9_4a672ce92f2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935056454_f9fa572b_34da_4455_84b9_4a672ce92f2b.png)
 
 At the same time the printing message displays on the development board as follows, enter yes
 
@@ -1538,7 +1538,7 @@ At the same time, a pairing request will appear on the phone interface. Tap on i
 
 After successful pairing, on the mobile side, you can use Bluetooth to send files to OKT507-C.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935056697_d3bf8d5c_555b_48b7_92b1_85bee6b12e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935056697_d3bf8d5c_555b_48b7_92b1_85bee6b12e49.png)
 
 Received files are saved in the /root directory.
 
@@ -1557,7 +1557,7 @@ Connection successful
 [C4:E1:A1:BA:A4:9E]# send /forlinx/media/test.mp3	      //Send file
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935056980_6b3a368f_01d4_451e_9c5c_ee4713defc5d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935056980_6b3a368f_01d4_451e_9c5c_ee4713defc5d.png)
 
 The phone will receive the incoming file request, click Accept to transfer the file.
 
@@ -1920,7 +1920,7 @@ root@forlinx:/# xplayerdemo /forlinx/media/1080p_30fps_h265.mp4 -s 1 -w 800 -h 4
 
 -w, -h, -x, and -y represent the width, height, x - direction offset of the initial display position, and y - direction offset of the initial display position of the video respectively.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1735972219565_a2df3a13_85de_4611_8956_563094e4044d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1735972219565_a2df3a13_85de_4611_8956_563094e4044d.png)
 
 4\. Switch audio output;
 
@@ -1940,7 +1940,7 @@ root@forlinx:/# vi /etc/profile.d/env.sh
 
 **Note: QT\_QPA\_EGLFS\_ROTATION = 90 means rotating the desktop 90 degrees clockwise. You can set the actual rotation degree according to your needs. MEDIA\_FOLLOWS\_QT\_ROTATION = 1 indicates that the video will rotate following the rotation angle of QT.**
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1735972219641_b561a729_5be9_42e4_b5bf_4eebf89ea7d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1735972219641_b561a729_5be9_42e4_b5bf_4eebf89ea7d4.png)
 
 #### 4.23.2 Video Playback with a Dual-screen Display
 
@@ -1954,25 +1954,25 @@ w, h, x, and y are the offset parameters for the LCD respectively.
 
 W, H, X, and Y are the offset parameters for the HDMI respectively.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1735972219701_f9e1186c_6288_450e_8580_9c01ad5e227d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1735972219701_f9e1186c_6288_450e_8580_9c01ad5e227d.png)
 
 ```plain
 root@forlinx:/# xplayerdemo /forlinx/media/1080p_30fps_h265.mp4 -d 0 -s 1 -w 600 -h 440 -x 100 -y 100
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1735972219800_62205864_09eb_436d_b6d1_6a316cc2db54.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1735972219800_62205864_09eb_436d_b6d1_6a316cc2db54.png)
 
 ```plain
 root@forlinx:/# xplayerdemo /forlinx/media/1080p_30fps_h265.mp4 -d 1 -s 1  -W 600 -H 400 -X 150 -Y 150 
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1735972219875_030967f9_6238_4d48_ab2f_efe5428c5947.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1735972219875_030967f9_6238_4d48_ab2f_efe5428c5947.png)
 
 ### 4.24 IR Test
 
 OKT507-C board has a soldered infrared probe. The kernel is configured with NEC protocol by default, which allows testing with remote controllers that support the NEC protocol, such as the one shown in the image below.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935057311_289caf39_e6ac_4338_a1c9_8b407408a216.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935057311_289caf39_e6ac_4338_a1c9_8b407408a216.png)
 
 The testing method is as follows:
 
@@ -1982,17 +1982,17 @@ root@forlinx~/$ evtest
 
 Choose 7 sunxi-ir
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935057584_f0a26da9_651f_45d7_af6c_1ac80c998add.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935057584_f0a26da9_651f_45d7_af6c_1ac80c998add.png)
 
 When a button on the remote controller is pressed, a corresponding key value will be reported.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935057851_6f687ee3_7b23_444b_80c6_3a70a1fbc130.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935057851_6f687ee3_7b23_444b_80c6_3a70a1fbc130.png)
 
 ### 4.25 LED Test
 
 The OKT507-C SoM has a controllable blue LED light. When the board is powered on, the blue LED light will blink. If the user wants to disable this feature, they would need to modify the device tree file in the source code: kernel/linux-4.9/arch/arm64/boot/dts/sunxi/OKT507-C-Common.dtsi. They should change the "state = "on"" attribute of the "leds" node to "off", and change "linux,trigger="heartbeat"" to "none".
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935058066_2deb9426_b9cd_4afa_9bf8_1167176fcf5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935058066_2deb9426_b9cd_4afa_9bf8_1167176fcf5b.png)
 
 The testing method is as follows:
 
@@ -2058,7 +2058,7 @@ root@forlinx~/$ vi /usr/bin/while.sh
 
 Modify the file reference as follows (users need to modify according to the actual situation):
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935058318_dd1c9925_74f1_4265_add2_8b0c86dd5bfa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935058318_dd1c9925_74f1_4265_add2_8b0c86dd5bfa.png)
 
 2\. After modification, save and exit, and add execution permission to the script
 
@@ -2080,7 +2080,7 @@ Add a startup script during image flashing, you need to modify the source code i
 
 The format is as follows for reference, and users can modify it according to their actual needs:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935058514_a730d132_d23c_4086_8655_84c43a606db0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935058514_a730d132_d23c_4086_8655_84c43a606db0.png)
 
 2\. Use thechmod +x while.sh command to add execute permissions to a file;
 
@@ -2114,7 +2114,7 @@ root@forlinx~/$ coremark.exe
 
 Printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935058709_31b691d9_30aa_4f4a_a90d_e8e5569be8fc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935058709_31b691d9_30aa_4f4a_a90d_e8e5569be8fc.png)
 
 OKT507-C coremark performance score 4900
 
@@ -2138,7 +2138,7 @@ root@forlinx~/$ echo 50000000 | dhrystone         //Run the dhrystone test 50000
 
 Printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935058926_60ddcba9_74be_42d0_9e17_5924b62fa117.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935058926_60ddcba9_74be_42d0_9e17_5924b62fa117.png)
 
 Dhrystone test result:
 
@@ -2159,7 +2159,7 @@ root@forlinx~/$ fltest_malitest
 
 The test interface is shown in the figure below:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935059204_e3269784_d244_468c_9d42_13ab283d94f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935059204_e3269784_d244_468c_9d42_13ab283d94f7.png)
 
 After the test, press ctrl + c to exit the test program.
 
@@ -2177,9 +2177,9 @@ root@forlinx~/$ fltest_qt_cameraui
 
 The test interface is shown in the figure below:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935059513_3629760f_ea6d_44b1_9557_083f468f58dd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935059513_3629760f_ea6d_44b1_9557_083f468f58dd.png)
 
-Click on "Start Preview" in the top left corner of the interface to display the camera preview screen, as shown in the image above. Click on the![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935060183_9e288ab2_89d7_4899_8338_5f6b5fd710dd.png)icon to switch between the cameras used for preview display.
+Click on "Start Preview" in the top left corner of the interface to display the camera preview screen, as shown in the image above. Click on the![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935060183_9e288ab2_89d7_4899_8338_5f6b5fd710dd.png)icon to switch between the cameras used for preview display.
 
 After the test, press ctrl + c to exit the test program.
 
@@ -2218,11 +2218,11 @@ OKT507 current OV5640\_MIPI supports resolutions of 640x480, 1280x720, 1920x1080
 root@forlinx~/$ csi_test_display -f video2 -o 1       //Turn on the device node to be displayed by HDMI
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935069960_d328d794_ad7a_4137_bf21_125ced1d7393.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935069960_d328d794_ad7a_4137_bf21_125ced1d7393.png)
 
 Parameter Description:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935070244_e3005ef8_2050_411c_b0b1_38c6aae9c35d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935070244_e3005ef8_2050_411c_b0b1_38c6aae9c35d.png)
 
 | **Parameter** | **Meaning**                                                  |
 | :-----------: | ------------------------------------------------------------ |
@@ -2244,7 +2244,7 @@ Parameter Description:
 root@forlinx~/$ csi_test_display -f video2 -o 1 -w 1920 -h 1080
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935070417_46e5db2e_4e83_48b7_8810_e1afa699daa8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935070417_46e5db2e_4e83_48b7_8810_e1afa699daa8.png)
 
 3. Camera test
 
@@ -2254,11 +2254,11 @@ root@forlinx~/$ csi_test_display -f video2 -o 1 -w 1920 -h 1080 -E 1
 
 Terminal printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935070612_608cae6a_6046_4faf_b026_aae6b68b5f50.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935070612_608cae6a_6046_4faf_b026_aae6b68b5f50.png)
 
 When the above printing is displayed, press the Enter key to take a photo. The printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935070819_e7fa24f6_1964_4f54_a1dc_6b251b93b4e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935070819_e7fa24f6_1964_4f54_a1dc_6b251b93b4e7.png)
 
 When the above printing is displayed, press Enter to continue taking photos, and press Ctrl+C to exit.
 
@@ -2272,15 +2272,15 @@ root@forlinx~/$ csi_test_display -f video2 -o 1 -w 1920 -h 1080 -E 2
 
 Press enter; terminal printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935071022_05c7ec22_1e8f_4b7a_81a4_c4cf6c4f9657.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935071022_05c7ec22_1e8f_4b7a_81a4_c4cf6c4f9657.png)
 
 When the display is printed as above, press the Enter key at this time to start coding and the printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935071255_bb440159_a2e4_4099_87eb_2137044f371f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935071255_bb440159_a2e4_4099_87eb_2137044f371f.png)
 
 Press enter again to end the code:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935071464_f17202b1_7b13_47a5_9a4d_64ba6e31b3ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935071464_f17202b1_7b13_47a5_9a4d_64ba6e31b3ad.png)
 
 When the above printing information is displayed, press Enter to continue coding, and press Ctrl+C to exit.
 
@@ -2292,7 +2292,7 @@ Save the encoded file to the current directory with the filename "video\_encode\
 root@forlinx~/$ csi_test_display -f video2 -s 1 -x 0 -y 0 -W 640 -H 480 -o 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935071809_46663802_73f0_40be_a770_136c09e9e118.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935071809_46663802_73f0_40be_a770_136c09e9e118.png)
 
 ### 5.2 OV5640\_DVP Playback Test
 
@@ -2311,11 +2311,11 @@ OKT507 current OV5640\_dvp supports resolutions of 640x480, 1280x720, 1920x1080,
 root@forlinx~/$ csi_test_display -f video3 -o 1                //Turn on the device node to be displayed by HDMI
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935072162_5433d593_8cfb_4436_8bcd_720c6e8171e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935072162_5433d593_8cfb_4436_8bcd_720c6e8171e2.png)
 
 Parameter Description:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935072488_9469ab42_3f13_4801_9da3_1d33d41e445a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935072488_9469ab42_3f13_4801_9da3_1d33d41e445a.png)
 
 | **Parameter** | **Meaning**                                                  |
 | :-----------: | ------------------------------------------------------------ |
@@ -2337,7 +2337,7 @@ Parameter Description:
 root@forlinx~/$ csi_test_display -f video3 -o 1 -w 1920 -h 1080
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935072668_00549ee7_cfbb_4e65_9e03_755d268895b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935072668_00549ee7_cfbb_4e65_9e03_755d268895b7.png)
 
 3. Camera test
 
@@ -2347,11 +2347,11 @@ root@forlinx~/$ csi_test_display -f video3 -o 1 -w 1920 -h 1080 -E 1
 
 Terminal printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935072867_83d42e4b_6c23_405b_baa1_0cee22ddb708.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935072867_83d42e4b_6c23_405b_baa1_0cee22ddb708.png)
 
 When the above printing is displayed, press the Enter key to take a photo. The printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935073076_f248d960_0a73_4c70_9962_009c35af432a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935073076_f248d960_0a73_4c70_9962_009c35af432a.png)
 
 When the above printing is displayed, press Enter to continue taking photos, and press Ctrl+C to exit.
 
@@ -2365,15 +2365,15 @@ root@forlinx~/$ csi_test_display -f video3 -o 1 -w 1920 -h 1080 -E 2
 
 Press enter; terminal printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935073285_c489f60b_dcc4_436a_b71c_4163994b8e43.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935073285_c489f60b_dcc4_436a_b71c_4163994b8e43.png)
 
 When the display is printed as above, press the Enter key at this time to start coding and the printing information is as follows:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935073529_5016a7db_321a_4a07_9bd3_5b1a1d27f2f5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935073529_5016a7db_321a_4a07_9bd3_5b1a1d27f2f5.png)
 
 Press enter again to end the code:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935073782_6dd5f071_3a43_41dd_b8cb_90d319e494e4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935073782_6dd5f071_3a43_41dd_b8cb_90d319e494e4.png)
 
 When the above printing information is displayed, press Enter to continue coding, and press Ctrl+C to exit.
 
@@ -2385,7 +2385,7 @@ Save the encoded file to the current directory with the filename "video\_encode\
 root@forlinx~/$ csi_test_display -f video3 -s 1 -x 0 -y 0 -W 640 -H 480 -o 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935074091_63c47ce6_1a44_47cd_bfda_e037644b85b4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935074091_63c47ce6_1a44_47cd_bfda_e037644b85b4.png)
 
 ### 5.3 TP2854M Test
 
@@ -2423,9 +2423,9 @@ Encode YUV420SP video to H.264 format video
 root@forlinx~/$ encoderTest    
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935074386_a9fb6feb_ee07_46a3_bc37_612ca6d80e38.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935074386_a9fb6feb_ee07_46a3_bc37_612ca6d80e38.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935074587_c47f0e42_f23e_49cb_9ae4_24ee00346d99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935074587_c47f0e42_f23e_49cb_9ae4_24ee00346d99.png)
 
 Test H.264 encoding and JPG compression using the encTest.sh script, enter the following command in the terminal:
 
@@ -2433,9 +2433,9 @@ Test H.264 encoding and JPG compression using the encTest.sh script, enter the f
 root@forlinx~/$ fltest_encTest.sh
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935074789_0315f7df_e376_4715_bd02_ddede5418d1a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935074789_0315f7df_e376_4715_bd02_ddede5418d1a.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935075011_fe4bc166_fa41_4b0c_a861_2175c3a33b00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935075011_fe4bc166_fa41_4b0c_a861_2175c3a33b00.png)
 
 ### 5.6 Video Hardware Decoding
 
@@ -2451,7 +2451,7 @@ After decoding H.264 format video, save it as yv12 format.
 root@forlinx~/$ decoderTest -i /forlinx/media/HistoryOfTI-480p.264 -o /h264 -p 4 -f 0 -w 0 -t 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935075233_c7835a6e_1d18_4dcd_b157_9f5d537e65c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935075233_c7835a6e_1d18_4dcd_b157_9f5d537e65c0.png)
 
 After decoding H.264 format video, save it as nv21 format.
 
@@ -2459,7 +2459,7 @@ After decoding H.264 format video, save it as nv21 format.
 root@forlinx~/$ decoderTest -i /forlinx/media/HistoryOfTI-480p.264 -o /h264 -p 5 -f 0 -w 0 -t 1 
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935075412_ddf3e62f_284a_4874_af20_b75b7856ccb7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935075412_ddf3e62f_284a_4874_af20_b75b7856ccb7.png)
 
 2 .H265 hardware decoding
 
@@ -2469,7 +2469,7 @@ After decoding H.265 format video, save it as yv12 format.
 root@forlinx~/$ decoderTest -i /forlinx/media/TearOfSteel-Short-1280x720.265 -o /h265 -p 4 -f 2 -w 0 -t 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935075625_959d9945_a8cd_4e13_8f98_5f36f53f36ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935075625_959d9945_a8cd_4e13_8f98_5f36f53f36ad.png)
 
 After decoding H.265 format video, save it as nv21 format.
 
@@ -2477,7 +2477,7 @@ After decoding H.265 format video, save it as nv21 format.
 root@forlinx~/$ decoderTest -i /forlinx/media/TearOfSteel-Short-1280x720.265 -o /h265 -p 5 -f 2 -w 0 -t 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935075843_1d3a1174_8667_4ba1_9a02_741c6bc6427a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935075843_1d3a1174_8667_4ba1_9a02_741c6bc6427a.png)
 
 3\. MPEG hardware decoding
 
@@ -2487,7 +2487,7 @@ Decode jpg format pictures into nv21 format video:
 root@forlinx~/$ decoderTest -i /forlinx/media/dogs.jpg -o /dogs -p 5 -f 1 -w 0 -t 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935076071_b502b209_bc74_4f04_8559_43b69f08ac46.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935076071_b502b209_bc74_4f04_8559_43b69f08ac46.png)
 
 Decode jpg format pictures into yv12 format video:
 
@@ -2495,7 +2495,7 @@ Decode jpg format pictures into yv12 format video:
 root@forlinx~/$ decoderTest -i /forlinx/media/dogs.jpg -o /dogs -p 4 -f 1 -w 0 -t 1
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935076306_48397f43_31f9_4e78_bbfb_89bd71dcc72e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935076306_48397f43_31f9_4e78_bbfb_89bd71dcc72e.png)
 
 ## 6\. System Flashing
 
@@ -2531,23 +2531,23 @@ Open the Windows Device Manager and you will find an unknown device with a yello
 
 As shown in the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935086047_df000e68_ff22_4aaf_8cb8_51b8f5766c50.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935086047_df000e68_ff22_4aaf_8cb8_51b8f5766c50.png)
 
 Right click on "Unknown Device" and"Update Driver".
 
 In the following interface, click on "Browse my computer for drivers".
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935086774_8b3af300_8213_4b97_b4e3_48b74a0b2692.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935086774_8b3af300_8213_4b97_b4e3_48b74a0b2692.png)
 
 In the following interface, select the previously extracted directory "USBDriver\_64".
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935087014_ad5f2843_5ba5_4d6f_8051_c9b5f59fc66c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935087014_ad5f2843_5ba5_4d6f_8051_c9b5f59fc66c.png)
 
 Click on "Next" and wait for the driver installation to complete.
 
 As shown in the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935087337_0edda707_b144_4ae2_a776_8510c2e63c6b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935087337_0edda707_b144_4ae2_a776_8510c2e63c6b.png)
 
 #### 6.2.2 OTG Flashing Method
 
@@ -2561,11 +2561,11 @@ Copy the PhoenixSuit\_v1.13.zip file from the user tool directory to any directo
 
 As shown in the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935087637_53550b55_1633_4a16_9319_e9ab8019eaf6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935087637_53550b55_1633_4a16_9319_e9ab8019eaf6.png)
 
 In the following interface, click on “One-click Flash” and then click on “Browse” to select the firmware image file.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935088043_6a8b05fe_2a04_4b8c_841d_724e21516230.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935088043_6a8b05fe_2a04_4b8c_841d_724e21516230.png)
 
 Connect the development board to the host using a Micro USB cable, power the board, and simultaneously press the FEL button and RESET button. Release the RESET button first, and then release the FEL button.
 
@@ -2573,11 +2573,11 @@ Connect the development board to the host using a Micro USB cable, power the boa
 
 In the following interface, click “Yes” to enter the formatting upgrade mode.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935088505_c2f0cd0f_f916_43f4_b0e3_41ecd63a8ec8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935088505_c2f0cd0f_f916_43f4_b0e3_41ecd63a8ec8.png)
 
 After flashing, as shown in the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935088877_e646a29f_5003_4bc9_a308_d9ceb66b3ab3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935088877_e646a29f_5003_4bc9_a308_d9ceb66b3ab3.png)
 
 After writing is complete, unplug the Micro USB cable, switch the BOOT DIP switch to 1001, and power on to start the OKT507 board.
 
@@ -2587,37 +2587,37 @@ After writing is complete, unplug the Micro USB cable, switch the BOOT DIP switc
 
 In the following interface, check the check box “Single or multiple partition download (check this option if you want the flashing tool to download your selected partitions)”, and check the check boxes for “BOOT-RESOURCE” and “ENV”.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935089180_e69940d8_ebdf_4f98_ba9b_f16b20c07775.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935089180_e69940d8_ebdf_4f98_ba9b_f16b20c07775.png)
 
 Connect the development board to the host using a Micro USB cable, power the board, and simultaneously press the FEL button and RESET button. Release the RESET button first, and then release the FEL button. Wait for flashing to finish, the following interface will pop up:
 
 **Note: Make sure to release the RESET button first, then release the FEL button.**
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935089513_65853084_5e15_4185_b75f_4ea690c1efd2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935089513_65853084_5e15_4185_b75f_4ea690c1efd2.png)
 
 2\) Flash the kernel image and device tree (dtb) file via OTG
 
 In the following interface, check the checkbox "Single or multiple partition download (check this option if you want the flashing tool to download your selected partitions)", and check "BOOT"
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935089844_05b0cf91_3645_47b6_8de7_1cd5f6773d41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935089844_05b0cf91_3645_47b6_8de7_1cd5f6773d41.png)
 
 Connect the development board to the host using a Micro USB cable, power the board, and simultaneously press the FEL button and RESET button. Release the RESET button first, and then release the FEL button. Wait for flashing to finish, the following interface will pop up:
 
 **Note: Make sure to release the RESET button first, then release the FEL button.**
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935090152_023a1b25_2e72_4d1d_b683_177d5a939e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935090152_023a1b25_2e72_4d1d_b683_177d5a939e49.png)
 
 3\) OTG Burning File System
 
 In the following interface, check the checkbox "Single or multiple partition download (check this option if you want the flashing tool to download your selected partitions)", and check "ROOTFS"
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935090475_4d136f97_b3d0_4695_81a6_6c1a834a3a8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935090475_4d136f97_b3d0_4695_81a6_6c1a834a3a8b.png)
 
 Connect the development board to the host using a Micro USB cable, power the board, and simultaneously press the FEL button and RESET button. Release the RESET button first, and then release the FEL button. Wait for flashing to finish, the following interface will pop up:
 
 **Note: Make sure to release the RESET button first, then release the FEL button.**
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935090712_6253cbeb_8c7a_4a0c_bd12_ac3dbeb84bc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935090712_6253cbeb_8c7a_4a0c_bd12_ac3dbeb84bc9.png)
 
 #### 6.2.3 OTG Flashing Common Issues
 
@@ -2625,7 +2625,7 @@ Connect the development board to the host using a Micro USB cable, power the boa
 
 Some users still see the device listed as an "unknown device" after installing the USB driver following the methods in the manual. When they click on the unknown device, they get a message stating that the third - party INF does not contain digital signature information, as shown in the following figure:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935090984_cb31c68b_8d34_4cbc_ae0d_e2ddf7a6dbf6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935090984_cb31c68b_8d34_4cbc_ae0d_e2ddf7a6dbf6.png)
 
 This occurs because some Windows systems disallow unsigned drivers to ensure system stability, resulting in failed installation of unsigned drivers. Users need to disable driver signature enforcement on their computers before installing drivers according to the manual.
 
@@ -2645,7 +2645,7 @@ During flashing, press RESET and FEL buttons together. Release RESET first, then
 
 As shown in the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935091242_7bbd03ac_677a_4f77_907b_cebe24c5319a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935091242_7bbd03ac_677a_4f77_907b_cebe24c5319a.png)
 
 **Note: When there are multiple partitions on the TF card, please click on “Restore Card” first, and then click on “Burn Card”. Otherwise, it may result in a failed burn process.**
 
@@ -2653,7 +2653,7 @@ As shown in the following interface:
 
 After flashing, as shown in the following interface:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935091466_0e9dd3ef_d9d1_47a2_bf6c_003550b51cf7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935091466_0e9dd3ef_d9d1_47a2_bf6c_003550b51cf7.png)
 
 #### 6.3.2 TF Flashing Method
 
@@ -2682,7 +2682,7 @@ During mass production, check the burning status by SoM green light. Green light
 
 Insert the TF card into the Windows host and run PhoenixCard.exe as an administrator.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935091725_5c1a1472_03b6_4dae_b3c6_06446f4becb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935091725_5c1a1472_03b6_4dae_b3c6_06446f4becb9.png)
 
 Click on "Restore Card" to restore the TF card back to a regular TF card.
 
@@ -2703,19 +2703,19 @@ $ cd longan
 $ ./build.sh config
 ```
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935097711_631caff4_c9d1_42dc_af3b_9978d48ae96f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935097711_631caff4_c9d1_42dc_af3b_9978d48ae96f.png)
 
 Terminal input 1, select Linux.
 
 Select the IC platform
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935097884_e9de574e_5778_4471_846a_4e6c327c4e62.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935097884_e9de574e_5778_4471_846a_4e6c327c4e62.png)
 
 Enter 0 at the terminal and select okt507.
 
 Select Flash Boot Mode
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935098152_e391c2e1_c0cc_4cdb_8c0a_f4e1402e6c79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935098152_e391c2e1_c0cc_4cdb_8c0a_f4e1402e6c79.png)
 
 Enter 0 at the terminal and select default.
 
@@ -2730,15 +2730,15 @@ Note: The size of the logo cannot exceed the values of fbX\_width and fbX\_heigh
 
 Set the values of fbX\_width and fbX\_height attributes in the device tree located at kernel/linux-4.9/arch/arm64/boot/dts/sunxi/OKT507-C-Linux.dts, as shown in the diagram below:
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935098375_dbc95bd2_4bce_4dd5_943f_be7d3ebdc7c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935098375_dbc95bd2_4bce_4dd5_943f_be7d3ebdc7c1.png)
 
 ## Appendix 2: GPIO Configuration in Uboot Phase
 
 To set GPIO output levels in U-Boot, refer to Forlinx’s LVDS power pin configuration in the device tree.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935103499_77befb4c_989f_46fa_a5f0_3baa078354a5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935103499_77befb4c_989f_46fa_a5f0_3baa078354a5.png)
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935103789_e5e8d468_567e_4d14_9362_ab2fbb8c1d4c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935103789_e5e8d468_567e_4d14_9362_ab2fbb8c1d4c.png)
 
 Currently, 2 pins from gpio0 to gpio31 are supported for configuration. For the meaning of pinctrl, please refer to the document “T507\_pinctrl Interface Usage Manual” provided by Forlinx.
 
@@ -2748,7 +2748,7 @@ You can modify the contents of the longan20/device/product/configs/okt507/longan
 
 Modify the existing rootfs partition size to 4GB, 4 \* *1024* \* 1024 \* 1024/512 = 8388608. Simply modify the size to 8388608 sectors and recompile the file system, then flash it.
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935107709_b459222f_f637_4bd8_af6a_38fc67930767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935107709_b459222f_f637_4bd8_af6a_38fc67930767.png)
 
 ```plain
 $ cd longan
@@ -2761,7 +2761,7 @@ Flash the firmware longan/out/t507 \_ Linux \_ okt507 \_ uart0.img.
 
 Add a new partition with a private size of 1GB. Add a new entry under rootfs and count the number of sectors. Note: The total partition size cannot exceed the eMMC capacity, and the partition size should be an integer multiple of 16M. Recompile the package and flash the image
 
-![Image](./images/OKT507-C_Linux4_9_170_User_Manual/1718935107886_2aa49d8a_fb55_440f_874a_0b4478a1ebb5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935107886_2aa49d8a_fb55_440f_874a_0b4478a1ebb5.png)
 
 ## Appendix 4: Adding New Files to the File System
 

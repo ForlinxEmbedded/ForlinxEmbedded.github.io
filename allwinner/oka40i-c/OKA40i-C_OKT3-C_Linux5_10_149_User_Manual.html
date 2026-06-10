@@ -247,7 +247,7 @@
 <section id="oka40i-development-board-description">
 <h2>1. OKA40i Development Board Description<a class="headerlink" href="#oka40i-development-board-description" title="Link to this heading"></a></h2>
 <p>The OKA40i development board uses a structure of a carrier board + SoM. It is designed based on the Allwinner’s quad - core Cortex - A7 A40i processor for the industrial control industry platform. The processor has a main frequency of 1.2 GHz, integrates a Mali400MP2 GPU, and comes with 1GB/2GB DDR3L memory and 8GB EMMC storage. It supports the decoding of most currently popular video and image formats. It has the advantages of stable and reliable industrial - grade product performance, high cost - effectiveness, and low power consumption. It is suitable for industrial control products based on visual interaction. The target applications include embedded devices, intelligent terminals, industrial control, data acquisition, machine vision, industrial Internet of Things, mobile Internet devices, digital signage, etc.</p>
-<p><img alt="Image" src="_images/1718954456770_de1768f1_af69_4877_9d14_04f3fd54238b.jpeg" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954456770_de1768f1_af69_4877_9d14_04f3fd54238b.jpeg" /></p>
 <p><strong>Note：</strong></p>
 <p><strong>Hardware parameters are not described in this software manual. Before referring to this manual for software development, please read the “Hardware Manual” under the path of “Hardware Data \ User Manual” to understand the product naming rules and the hardware configuration information of the product you use, which is helpful for you to use this product.</strong></p>
 <section id="linux5-10-149-system-software-resources-features">
@@ -362,12 +362,12 @@
 <li><p><strong>DIP switch</strong></p></li>
 </ul>
 <p>Please find the figure below to see the DIP switches. When the DIP switch is in the on position, the device will start up using the EMMC (default) state. Conversely, when the DIP switch is in the off position, the device will start up using the SD card burning (startup) state. Additionally, it’s possible to do OTG burning in either of the two states.</p>
-<p><img alt="Image" src="_images/1718954457115_8dd274ab_b68f_4df4_8d6b_a6079fac1512.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954457115_8dd274ab_b68f_4df4_8d6b_a6079fac1512.png" /></p>
 <ul class="simple">
 <li><p><strong>Flashing key</strong></p></li>
 </ul>
 <p>The mode for OTG burning is determined by the state of the K3 key when the device is powered on. If the K3 key is pressed during power-up, it indicates the OTG burning mode. Conversely, if the K3 key is released during power-up, it indicates the EMMC or SD card boot mode. To restart the device, you can press the K7 key. During OTG burning, you can hold the K3 key, press the K7 key once and then release the K3 key. You do not need to press the K3 key to burn the SD card. Refer to Chapter 4. for the specific flashing process.</p>
-<p><img alt="Image" src="_images/1718954457380_f8a9d656_d8da_411e_94e3_50b5f071f43c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954457380_f8a9d656_d8da_411e_94e3_50b5f071f43c.png" /></p>
 </section>
 </section>
 <section id="fast-startup">
@@ -392,13 +392,13 @@
 <li><p><strong>The PC Windows system is required to install the serial port terminal software, a set of USB to RS232 and a cross serial port line.</strong></p></li>
 </ul>
 <p>First, connect the DEBUG port of the PC and the development board through the USB to RS232 and the cross serial port line. You need to confirm the serial port number of the connected computer. Open your computer’s device manager:</p>
-<p><img alt="Image" src="_images/1718954460822_25b03970_f166_40e7_bcb4_226a022b6250.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954460822_25b03970_f166_40e7_bcb4_226a022b6250.png" /></p>
 <p>Open the terminal debugging software installed on the computer and select putty.</p>
 <p>The specific settings are as follows:</p>
 <p>Serial port setting: First select Serial, then enter the port number recognized on the computer, here is com21, enter the baud rate of 115 200, and finally click open. The operation contents are shown in the figure below:</p>
-<p><img alt="Image" src="_images/1718954461070_20ee644e_322a_4380_a596_cc18124813c2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954461070_20ee644e_322a_4380_a596_cc18124813c2.png" /></p>
 <p>After the setup is completed, you can start to see the debugging information. As shown in the figure below:</p>
-<p><img alt="Image" src="_images/1718954461364_8b73fb78_49dc_45c7_8012_30acafe65c1f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954461364_8b73fb78_49dc_45c7_8012_30acafe65c1f.png" /></p>
 </section>
 <section id="serial-port-login">
 <h4>2.2.2 Serial Port Login<a class="headerlink" href="#serial-port-login" title="Link to this heading"></a></h4>
@@ -479,7 +479,7 @@ passwd: password for root changed by root
 </table>
 <p><strong>ssh login：</strong></p>
 <p>The IP address of the development board is 192.168.0.232. Open putty in Windows, and the IP address is 192.168.0.232. After entering the command window, enter the user name root and the password 123, as shown in the following figure. After logging in, you can view the development board information.</p>
-<p><img alt="Image" src="_images/1718954461600_820240cb_c250_4866_87e5_24bbe2390af1.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954461600_820240cb_c250_4866_87e5_24bbe2390af1.png" /></p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>login as : root
 root@192.168.0.232’s password : 123
 #
@@ -624,9 +624,9 @@ Swap:		0			0			0
 <p>No support for RTL8723bu; the USB WIFI of RTL8723du is used as follows:</p>
 <p><strong>Note: In this section, the WiFi connection tests are all examples of connecting to a WiFi router. The network environment is different, so please set it according to the actual situation when you do this experiment.</strong></p>
 <p><strong>If the development board has an on-board WIFI wireless LAN card, it should be soldered to the evaluation board as shown in the figure. At present, Forlinx provides 8723du, but not 8723bu.</strong></p>
-<p><img alt="Image" src="_images/1718954468422_f789af0e_2a56_45e3_ad3f_cc649f0146eb.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954468422_f789af0e_2a56_45e3_ad3f_cc649f0146eb.png" /></p>
 <p>After the board is powered on, the 8723du module is already powered on. The power - on control is in the /etc/init.d/S98bluetoothd file.</p>
-<p><img alt="Image" src="_images/1718954468775_3bb89946_3318_4982_b1f6_e2c74e51ce24.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954468775_3bb89946_3318_4982_b1f6_e2c74e51ce24.png" /></p>
 <p>The power supply of the module is controlled by GPIO. The development board uses PB10 to control the power supply of the 8723du module.</p>
 <p>The calculation formula for the GPIO number is:</p>
 <p>port*32+num（PA：0，PB：1， PC：2 …）</p>
@@ -720,7 +720,7 @@ Changing power on succeeded
 <li><p>Development Board Passive Pairing.</p></li>
 </ol>
 <p>After the above settings, open the mobile phone Bluetooth search, a “BlueZ 5.54” device will appear, click this Bluetooth to pair:</p>
-<p><img alt="Image" src="_images/1718954469022_60478357_edf1_4b70_9019_df9718339922.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954469022_60478357_edf1_4b70_9019_df9718339922.png" /></p>
 <p>At the same time, the information printed on the development board is as follows, enter yes.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span>[NEW] Device 14:16:9E:62:39:BD zzy
 Request confirmation
@@ -783,7 +783,7 @@ Pairing successful
 <li><p>The development board receives the file.</p></li>
 </ol>
 <p>After successful pairing, on the mobile side, you can use Bluetooth to send files to OKA40i.</p>
-<p><img alt="Image" src="_images/1718954469283_3c5a61f1_3238_4737_8c81_f301cda70934.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954469283_3c5a61f1_3238_4737_8c81_f301cda70934.png" /></p>
 <p>Received files are saved in the /tmp directory.</p>
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># ls /tmp/ -l
 total 4848
@@ -829,7 +829,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 </pre></div>
 </div>
 <p>After that, the mobile phone will receive the file sent by the board.</p>
-<p><img alt="Image" src="_images/1718954469500_97cc6027_4dc8_458d_871e_4b6a6679acc8.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954469500_97cc6027_4dc8_458d_871e_4b6a6679acc8.png" /></p>
 </section>
 </section>
 <section id="sdhc-tf-driver-test">
@@ -861,7 +861,7 @@ drwxrwxrwx		4 root		root		1024	Jan		1	00:30	..
 <section id="usb-host-interface-storage-test">
 <h4>3.3.1 USB Host Interface Storage Test<a class="headerlink" href="#usb-host-interface-storage-test" title="Link to this heading"></a></h4>
 <p>Demonstration with a mounting USB flash drive; the current USB flash drive test support up to 32G, but no test for 32G or above. The physical connection between the USB flash drive and the development board is as shown in the diagram:</p>
-<p><img alt="Image" src="_images/1718954469930_7e61e93d_1773_48b2_b0cf_c46e4f40e48f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954469930_7e61e93d_1773_48b2_b0cf_c46e4f40e48f.png" /></p>
 <p>At the same time, the terminal will print the information about the USB flash disk. As there are many kinds of USB flash disks, the displayed information may be different.</p>
 <p>Step 1: Connect a USB flash drive to the USB host interface. It will be automatically mounted to the /run/media/sdx1 directory;</p>
 <p>Step 2: Check the USB storage device;</p>
@@ -899,7 +899,7 @@ drwxrwxrwx		5	root		root		1024	Jan	1	00:38	..
 <ol class="arabic simple">
 <li><p>The ADB service is enabled by default on the development board, and the Micro USB data cable is used to connect the ADB on the PC side;</p></li>
 </ol>
-<p><img alt="Image" src="_images/1718954470235_ace801fc_729a_4edd_8301_ca8f40c3e55a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954470235_ace801fc_729a_4edd_8301_ca8f40c3e55a.png" /></p>
 <ol class="arabic simple" start="2">
 <li><p>Use the otg to host line to connect to the otg port, insert the U disk, and enter the following command to read the contents of the U disk. Mount the USB flash drive to the/run/media/sdx1 directory.</p></li>
 </ol>
@@ -907,7 +907,7 @@ drwxrwxrwx		5	root		root		1024	Jan	1	00:38	..
 # cat /sys/bus/platform/devices/soc@1c00000:usbc0@0/usb_device  // Execute this command to manually convert OTG to USB_DEVICE, so that ADB connection can be used.
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1718954470466_25ccefd4_3d1b_4b04_8df0_bd5cceef993b.jpeg" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954470466_25ccefd4_3d1b_4b04_8df0_bd5cceef993b.jpeg" /></p>
 </section>
 </section>
 <section id="ethernet-drive-test">
@@ -1026,9 +1026,9 @@ Settings for eth0:
 </ul>
 <p>Refer to “2.3.2 SSHD Services Use” to modify the configuration file, user name and password.</p>
 <p>Assuming the password is set as “root” and selecting the SFTP protocol, input the IP address and the username/password as “root” and “root” respectively, as shown in the following image:</p>
-<p><img alt="Image" src="_images/1718954470725_5e35e2aa_6dc7_48cc_b459_db8d9043be22.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954470725_5e35e2aa_6dc7_48cc_b459_db8d9043be22.png" /></p>
 <p>The interface after successful login is as shown below:</p>
-<p><img alt="Image" src="_images/1718954471084_e8c1bc51_2acc_4749_8f30_d056147272de.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954471084_e8c1bc51_2acc_4749_8f30_d056147272de.png" /></p>
 </section>
 <section id="vsftp">
 <h4>3.5.2 VSFTP<a class="headerlink" href="#vsftp" title="Link to this heading"></a></h4>
@@ -1038,9 +1038,9 @@ Settings for eth0:
 <p>When the system is started, the FTP service has been automatically started. You can use the FTP software on the computer to access it. The user name is root, and the password is set to root (before the test, you need to use the password command to set the password, which is set to root here). The default IP of the development board is 192.168.0.232.</p>
 <p>The following figure shows the operation of using FileZilla to access the ftp of the development board on a PC. Open the File/Site Manager and make the following settings.</p>
 <p>Here the computer is the client and the development board is the server.</p>
-<p><img alt="Image" src="_images/1718954471297_a8398978_502b_4985_894e_0bd0ea6babc7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954471297_a8398978_502b_4985_894e_0bd0ea6babc7.png" /></p>
 <p>After the connection is completed, you can see the development board file.</p>
-<p><img alt="Image" src="_images/1718954471488_b6d4a1ec_4d5f_48c5_adb7_1389967b698c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954471488_b6d4a1ec_4d5f_48c5_adb7_1389967b698c.png" /></p>
 <ul class="simple">
 <li><p><strong>The development board acts as a client.</strong></p></li>
 </ul>
@@ -1300,9 +1300,9 @@ round-trip min/avg/max = 44.181/56.408/66.671 ms
 <div class="highlight-plain notranslate"><div class="highlight"><pre><span></span># fltest_uart /dev/ttyS3 9600			//The device is/dev/ttyS3, which is serial port 3, and the baud rate is 9600
 </pre></div>
 </div>
-<p><img alt="Image" src="_images/1718954471730_d01c81c7_c359_4888_a634_90c0d9b6f27c.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954471730_d01c81c7_c359_4888_a634_90c0d9b6f27c.png" /></p>
 <p>Take UART2 as an example, the triangle arrow points to the first pin, the third pin is TX, and the eighth pin is RX.</p>
-<p><img alt="Image" src="_images/1718954472060_97987b08_430f_4d29_9512_1a891fc50903.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954472060_97987b08_430f_4d29_9512_1a891fc50903.png" /></p>
 </section>
 <section id="rs485-test">
 <h3>3.12 RS485 Test<a class="headerlink" href="#rs485-test" title="Link to this heading"></a></h3>
@@ -1313,7 +1313,7 @@ round-trip min/avg/max = 44.181/56.408/66.671 ms
 </pre></div>
 </div>
 <p>Computer serial port assistant (in User Profile \ Tools \ Serial Port Assistant), after sending abcdefg, receive the abcdefg sent by RS485.</p>
-<p><img alt="Image" src="_images/1718954472279_5c35ae99_5d44_42e8_8b62_94f4a8d8be54.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954472279_5c35ae99_5d44_42e8_8b62_94f4a8d8be54.png" /></p>
 </section>
 <section id="database-test">
 <h3>3.13 Database Test<a class="headerlink" href="#database-test" title="Link to this heading"></a></h3>
@@ -1504,14 +1504,14 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </ul>
 <p>After clicking on the network configuration icon, select the STATIC mode as shown in the figure. You can then configure the IP address, subnet mask, gateway, and DNS settings. Once you have set the parameters,</p>
 <p>Click “Apply and Restart Network”.</p>
-<p><img alt="Image" src="_images/1718954482147_bcede650_b9a1_46a5_87e2_afb858453ce2.png" /></p>
-<p><img alt="Image" src="_images/1718954482385_cde78491_b9ad_4760_b16a_d5b2d51bc61d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954482147_bcede650_b9a1_46a5_87e2_afb858453ce2.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954482385_cde78491_b9ad_4760_b16a_d5b2d51bc61d.png" /></p>
 <ul class="simple">
 <li><p><strong>DHCP mode</strong></p></li>
 </ul>
 <p><strong>Note: Testing must be done on a router that supports automatic IP</strong></p>
 <p>Check DHCP, select the NIC device needing to be configured, and click “Apply and Restart Network” at the bottom of the interface to restart the network and get the IP.</p>
-<p><img alt="Image" src="_images/1718954482617_429036af_3739_4425_ae24_a12c0c3ef765.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954482617_429036af_3739_4425_ae24_a12c0c3ef765.png" /></p>
 </section>
 <section id="g-test">
 <h3>4.2 4G Test<a class="headerlink" href="#g-test" title="Link to this heading"></a></h3>
@@ -1519,8 +1519,8 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>The “4G” test program is used to test the OKA40i external 4G module (EC20). Before testing, power off the development board, insert the SIM card into the 4G module (ensure correct SIM direction), and launch the test application. This test employs the EC20 module as a reference.</p>
-<p><img alt="Image" src="_images/1718954482836_43c41331_9369_4500_a406_c32fcaf85499.png" /></p>
-<p><img alt="Image" src="_images/1718954483201_1bee571d_e668_467a_8f6d_3ec926226129.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954482836_43c41331_9369_4500_a406_c32fcaf85499.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954483201_1bee571d_e668_467a_8f6d_3ec926226129.png" /></p>
 <p>Click the “connect” button, the program will automatically enter the dial-up process and get the IP settings DNS, etc., wait a few seconds, and click the ping test buttons.</p>
 </section>
 <section id="ping-test">
@@ -1529,10 +1529,10 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>“Ping” is a graphical tool for network testing, offering a user-friendly interface for ping operations.</p>
-<p><img alt="Image" src="_images/1718954483462_c4f45941_d8ba_42ed_b1ea_f0438e6744ee.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954483462_c4f45941_d8ba_42ed_b1ea_f0438e6744ee.png" /></p>
 <p>Write the target ip needing ping in the hostname field; after clicking the ping button, the RESULT column will indicate the result, click stop to end the ping test and clear to clean the information in the result.</p>
 <p>As shown in the figure, the network connection is smooth.</p>
-<p><img alt="Image" src="_images/1718954483780_daa84607_9603_4275_a421_339315182d8d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954483780_daa84607_9603_4275_a421_339315182d8d.png" /></p>
 </section>
 <section id="wifi-test">
 <h3>4.4 WiFi Test<a class="headerlink" href="#wifi-test" title="Link to this heading"></a></h3>
@@ -1544,9 +1544,9 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 <p>“WIFI” is a tool for configuring and testing the STA (station) mode of Wi-Fi.</p>
 <p>1. Click icon to enter test interface, select module from dropdown, enter SSID for Wi-Fi connection.</p>
 <p>Enter router name &amp; password in PAWD, click “connect” to WiFi；</p>
-<p><img alt="Image" src="_images/1718954484116_69f905b7_2855_4c18_98ca_dabf577ac25f.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954484116_69f905b7_2855_4c18_98ca_dabf577ac25f.png" /></p>
 <p>2. After the connection is successful, click “ping” to test the network after setting the IP.</p>
-<p><img alt="Image" src="_images/1718954484338_0dd9d6df_0669_4d6c_92ba_c16165867ce7.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954484338_0dd9d6df_0669_4d6c_92ba_c16165867ce7.png" /></p>
 </section>
 <section id="browser-test">
 <h3>4.5 Browser Test<a class="headerlink" href="#browser-test" title="Link to this heading"></a></h3>
@@ -1554,7 +1554,7 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>Click the browser icon to enter the browser. Please ensure that the network is smooth. Before accessing the external network, you need to ensure that the DNS is available. When the browser is started, the default access is to the official website of Forlinx embedded. The interface is as follows:</p>
-<p><img alt="Image" src="_images/1718954484782_6ff63353_405b_45e6_b894_fd19a0e64cbe.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954484782_6ff63353_405b_45e6_b894_fd19a0e64cbe.png" /></p>
 <p>Note: If the time of the development board is abnormal, it will cause problems with the certificate.</p>
 </section>
 <section id="rtc-test">
@@ -1565,7 +1565,7 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 <p><strong>Note: Make sure that the coin cell battery has been installed on the board and that the battery voltage is normal.</strong></p>
 <p>RTC test includes setting time, power cycling, rerunning test software, and verifying RTC sync.</p>
 <p>Run the RTC test software to view and set the current system time with the following interface:</p>
-<p><img alt="Image" src="_images/1718954485150_8e827c1a_66d4_4211_87c2_965a97793f95.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954485150_8e827c1a_66d4_4211_87c2_965a97793f95.png" /></p>
 <p>Click “set” to adjust the time settings, then click “save” to finish the settings. Then power off and power on after a period of time. Run the RTC test software again to read the time automatically. It can be seen that the RTC time has been synchronized and the RTC test is normal.</p>
 </section>
 <section id="id1">
@@ -1574,7 +1574,7 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>The “Keypad” is used to test whether the built - in keys of the platform are available. By detecting whether the corresponding keys turn blue after being pressed, you can check whether the key functions are normal. The interface is as follows:</p>
-<p><img alt="Image" src="_images/1718954485347_dbbc2f93_4aae_4bd6_8cac_4a84f863e48b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954485347_dbbc2f93_4aae_4bd6_8cac_4a84f863e48b.png" /></p>
 <p>The OKA40i platform has five physical keys: VOL-, VOL+, and HOME, which correspond to V-, V+, and Home respectively. When a key is pressed, the corresponding key in the test application will turn blue, indicating that the key function is normal.</p>
 <p><strong>Note:</strong> <strong>The application can only report the key value when the key is pressed.</strong></p>
 </section>
@@ -1584,7 +1584,7 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>Click the OpenGL icon to test.</p>
-<p><img alt="Image" src="_images/1718954485540_6c6f238e_c6e9_4abf_9b02_4a641a5569d3.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954485540_6c6f238e_c6e9_4abf_9b02_4a641a5569d3.png" /></p>
 <p>Click on “File” in the top left corner and select “Exit” and return to the main interface.</p>
 </section>
 <section id="id2">
@@ -1593,7 +1593,7 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>“BackLight” is an LCD backlight adjustment App with a left-right progress bar for brightness control. Click to open the interface as follows:</p>
-<p><img alt="Image" src="_images/1718954485767_d398e588_1ccb_422f_b5ae_c084197d6a4b.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954485767_d398e588_1ccb_422f_b5ae_c084197d6a4b.png" /></p>
 <p>Drag the slider in the interface to set the LCD backlight brightness. Level 0 is no backlight and level 255（150） is the highest level.</p>
 </section>
 <section id="sqlite3-database-test">
@@ -1602,9 +1602,9 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>Click on the icon to access the database testing interface.</p>
-<p><img alt="Image" src="_images/1718954486017_389d4e64_a290_49f1_ae39_f3940b3fac47.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954486017_389d4e64_a290_49f1_ae39_f3940b3fac47.png" /></p>
 <p>Select the column that needs to be modified, and click on an empty area after making the changes.</p>
-<p><img alt="Image" src="_images/1718954486280_98982cef_5439_4c59_a022_829502d1bd0a.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954486280_98982cef_5439_4c59_a022_829502d1bd0a.png" /></p>
 </section>
 <section id="watchdog">
 <h3>4.11 Watchdog<a class="headerlink" href="#watchdog" title="Link to this heading"></a></h3>
@@ -1612,7 +1612,7 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 </pre></div>
 </div>
 <p>“WatchDog” tests the functionality of the watchdog feature. Interface as follows:</p>
-<p><img alt="Image" src="_images/1718954486574_9fe4e9eb_e165_4888_994d_44f4e04f4b9d.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954486574_9fe4e9eb_e165_4888_994d_44f4e04f4b9d.png" /></p>
 <p>Check “feed dog” and click the “open watchdog” button. At this time, the watchdog function will start, and the program will feed the dog. Under normal circumstances, the system will not restart.</p>
 <p>When unchecking “feed dog”, click the “open watchdog” button, the watchdog function will be started, and the program will not feed the dog. After opening the watchdog for about 10 seconds, the system will restart, indicating that the watchdog function is normal.</p>
 </section>
@@ -1644,21 +1644,21 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 <section id="flashing-with-sd-card">
 <h3>5.1 Flashing with SD Card<a class="headerlink" href="#flashing-with-sd-card" title="Link to this heading"></a></h3>
 <p>After the SD card tool (Linux\tools\PhoenixCard4.2.4.7z.rar) is unzipped and installed under Windows, double click the card-making tool PhoenixCard.exe to open the tool.</p>
-<p><img alt="Image" src="_images/1718954495275_44d256b6_000b_4785_984b_84894c3bbb85.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954495275_44d256b6_000b_4785_984b_84894c3bbb85.png" /></p>
 <p>Insert the SD card reader into the USB port of the computer, click [Firmware], select the firmware image of the A40i, select [Card Mass Production], and click [Burn Card].</p>
-<p><img alt="Image" src="_images/1718954495479_0352e97d_0c6d_4056_8298_9db5d24d5f81.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954495479_0352e97d_0c6d_4056_8298_9db5d24d5f81.png" /></p>
 <p>After making the SD card, insert the SD card into the card slot of the development board and power up. Wait for the programming to be completed.</p>
 <p><strong>Note: Set the DIP switch to “SD card boot”(OFF) for flashing, and after the flashing process is complete, switch it back to “EMMC boot” (ON)</strong></p>
 <p>After the flashing process is complete, the status is as follows:</p>
-<p><img alt="Image" src="_images/1718954495656_6c18fe3b_c3f6_4d17_b212_e436a8f06486.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954495656_6c18fe3b_c3f6_4d17_b212_e436a8f06486.png" /></p>
 </section>
 <section id="flashing-with-otg">
 <h3>5.2 Flashing with OTG<a class="headerlink" href="#flashing-with-otg" title="Link to this heading"></a></h3>
 <p>Unzip the OTG programming tool (Linux \ Tools \ Phoenix Suit. Zip) on the computer, and double-click the installer to run the installation. After installation, double-click the PhoenixSuit. exe to open the OTG programming tool, as shown in the following figure:</p>
-<p><img alt="Image" src="_images/1718954495918_42e23e05_a9ea_4bcc_ad5a_b4200cb77ee6.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954495918_42e23e05_a9ea_4bcc_ad5a_b4200cb77ee6.png" /></p>
 <p>Click [One-click Flash], click [Browse], and select the image of the firmware to be flashed;</p>
 <p>Connect the OTG port of the development board to the USB port of the computer using a data cable. When powering on, you need to press and hold the FEL (K3) key. Then, click the RESET (K7) button. The burning tool will pop up a window indicating that the SoM has entered the OTG burning mode. After that, release the FEL (K3) key to start the burning process. The burning tool will pop up a window prompting you to click “Yes”. After the burning is completed, the situation is as follows:</p>
-<p><img alt="Image" src="_images/1718954496242_6526646b_b2a4_4a0f_98bc_1faee1514964.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954496242_6526646b_b2a4_4a0f_98bc_1faee1514964.png" /></p>
 <p><strong>Note:</strong></p>
 <p><strong>1. If the programming tool cannot identify the device, please check the device manager to see if there is a problem with the driver. If there is a yellow exclamation mark, you need to reinstall the driver. If there is no identification, please install the driver or check the programming line;</strong></p>
 <p><strong>2. During the test, it was found that some Windows PCs cannot complete the burning process after installing the OTG burning tool. You can try replacing the computer for testing. Alternatively, open any virtual system in the computer’s VMware and then use PhoenixSuit.exe, and the burning process should work properly.</strong></p>
@@ -1715,28 +1715,28 @@ tmpfs						tmpfs			375.3M	200.0K	375.1M		0%		/run
 <li><p>The selected USB cable must be a data cable. All data cables have a trident logo. If it has a lightning logo, you need to replace it with a data cable;</p></li>
 <li><p>Check the Device Manager to see if there are any problems with the driver. If the driver cannot be recognized or there is an abnormal indicator, you need to reinstall the driver. You can reinstall the programming tool. On some computers, reinstalling the programming tool can automatically install the driver. If this method doesn’t work, you can download the driver and manually reinstall it. After entering the programming mode, the driver is as follows:</p></li>
 </ol>
-<p><img alt="Image" src="_images/1718954496600_f3258060_26b7_4108_8df1_a4ff0a921712.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954496600_f3258060_26b7_4108_8df1_a4ff0a921712.png" /></p>
 <p>If there is a problem with the driver, it can be installed as follows:</p>
 <p>Extract the driver file, (USBDriver_64.zip or USBDriver.rar in the Linux\Tools\ directory)</p>
 <p>Open windows device manager and find an unknown device with a yellow exclamation mark (or a recognized driver with a yellow exclamation mark).</p>
 <p>As shown in the following interface:</p>
-<p><img alt="Image" src="_images/1718954496871_743c3953_488a_4783_bef0_02e99fafcaef.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954496871_743c3953_488a_4783_bef0_02e99fafcaef.png" /></p>
 <p>Right click on “Unknown Device” and”Update Driver”.</p>
 <p>In the following interface, click on “Browse my computer for drivers”.</p>
-<p><img alt="Image" src="_images/1718954497072_6df206df_ec15_4bc6_84dc_c815ef3d8e94.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954497072_6df206df_ec15_4bc6_84dc_c815ef3d8e94.png" /></p>
 <p>In the following interface, select the previously extracted directory “USBDriver_64”.</p>
-<p><img alt="Image" src="_images/1718954497255_fea0ca2c_3b4d_49aa_9299_6d93e31114fa.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954497255_fea0ca2c_3b4d_49aa_9299_6d93e31114fa.png" /></p>
 <p>Click on “Next” and wait for the driver installation to complete. After the installation is completed, the following interface is shown:</p>
-<p><img alt="Image" src="_images/1718954497472_47e8ecc6_c155_495f_87fa_4a46cc714162.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954497472_47e8ecc6_c155_495f_87fa_4a46cc714162.png" /></p>
 <p>You can change the PC settings if the following problems occur.</p>
-<p><img alt="Image" src="_images/1718954497703_bf6e86b4_ca61_45c1_ba8c_ad1e01d2b063.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954497703_bf6e86b4_ca61_45c1_ba8c_ad1e01d2b063.png" /></p>
 <p>First press and hold Shift + to restart.</p>
-<p><img alt="Image" src="_images/1718954497917_e6a2c8a2_c67b_4e5e_9381_9fb8f3887487.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954497917_e6a2c8a2_c67b_4e5e_9381_9fb8f3887487.png" /></p>
 <p>At startup, select Troubleshooting – Advanced Options – Startup Settings,</p>
-<p><img alt="Image" src="_images/1718954498336_e828897d_38e9_4dbd_b7bc_8cf029954392.png" /> <img alt="Image" src="_images/1718954498804_e8d57893_60df_45b0_b176_1fb114827c05.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954498336_e828897d_38e9_4dbd_b7bc_8cf029954392.png" /> <img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954498804_e8d57893_60df_45b0_b176_1fb114827c05.png" /></p>
 <p>In the startup setting interface, click Restart in the lower right corner.</p>
 <p>Restart to enter the startup settings. You can disable the driver forced signature through the number key 7 or the function key F7.</p>
-<p><img alt="Image" src="_images/1718954499397_1ed661d3_1d53_43f0_a0f0_faf74059e0eb.png" /></p>
+<p><img alt="Image" src="https://www.forlinx.net/docs_assets/images/platform/allwinner/oka40i-c/OKA40i-C_OKT3-C_Linux5_10_149_User_Manual/1718954499397_1ed661d3_1d53_43f0_a0f0_faf74059e0eb.png" /></p>
 <p>After the system is started, reinstall the driver according to the previous steps.</p>
 <ol class="arabic simple" start="3">
 <li><p>If you cannot enter the programming mode, please check your operation. Press the keys K3 (FEL) and K7 (RESET) on the development board. When operating, ensure that the K3 key is pressed and not released. At this time, power on (power dial on) or power on again (press K7). After entering the programming mode, release K3.</p></li>
