@@ -12,7 +12,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Overview
 
-<font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the</font>user's understanding, mainly for practical use. Please refer to “OK527N-C \_ Linux 5.15.147 + Qt5.15.8 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction.
+<font style="color:#333333;">This manual is designed to help users quickly familiarize themselves with the product, and understand the interface functions and testing methods. It primarily covers the testing of interface functions on the development board, the methods for flashing images, and troubleshooting procedures for common issues encountered in use. In the process of testing, some commands are annotated to facilitate the</font>user's understanding, mainly for practical use. Please refer to “OK527N-C \_ Linux 5.15.147 + Qt5.15.8 User’s Compilation Manual” provided by Forlinx for kernel compilation, related application compilation methods and development environment construction. 
 
 There are total six parts:
 
