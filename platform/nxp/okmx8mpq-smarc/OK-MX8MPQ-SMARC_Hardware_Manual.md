@@ -40,11 +40,11 @@ The i.MX 8M Plus series processors focus on machine learning, vision, advanced m
 - Real-time control is handled by a Cortex-M7 core, supporting dual CAN FD, dual Gigabit Ethernet, and Time-Sensitive Networking (TSN) functionality；  
 - Designed for high industrial reliability, supporting DRAM inline ECC.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/6e9c9552c17a4110894efeba569b442a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/6e9c9552c17a4110894efeba569b442a.png)
 
 The FET-MX8MPQ-SMARC SoM is compatible with the CPU models listed in the table below, with the default model being MIMX8ML8CVNKZAB:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/93f7664592494313ab7b0f44df8085b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/93f7664592494313ab7b0f44df8085b2.png)
 
 For more details about the MX8M Plus series, please visit the official NXP website:
 
@@ -55,11 +55,11 @@ For more details about the MX8M Plus series, please visit the official NXP websi
 
 ### 2.1 SoM Appearance
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/56cb26ad7a75406fab91666674e3fa58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/56cb26ad7a75406fab91666674e3fa58.png)
 
 Front
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e015c43758954a63b31c820ad880c0d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/e015c43758954a63b31c820ad880c0d0.png)
 
 Back
 
@@ -195,9 +195,9 @@ Size: 50 x82 mm
 
 ### 2.3 FET-MX8MPQ-SMARC Module Structure
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/d93d62070e6847f48e0bb8ee3ef0f68d.png)Figure 2-3：FET-MX8MPQ-SMARC (Top)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/d93d62070e6847f48e0bb8ee3ef0f68d.png)Figure 2-3：FET-MX8MPQ-SMARC (Top)
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/ee16e760f47d4028b9b19c68ae64d37d.png)Figure 2-4：FET-MX8MPQ-SMARC 
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/ee16e760f47d4028b9b19c68ae64d37d.png)Figure 2-4：FET-MX8MPQ-SMARC 
 
 To prevent the board from warping, a solder pad with a diameter of 6 mm is reserved inside the bottom layer of the board and connected to the GND network.
 
@@ -214,7 +214,7 @@ When designing the carrier board, appropriate fixing posts can be added at the s
 - PCB thickness: 1.2mm
 
 
-Connector 314p Gold Finger for detailed dimensions of the module structure, refer to “SMARC 2.1.1 Specification 2020-05-20” 5.3 Module Outline – 82x50mm Module.![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a565f2b0773f46318987b18ca2c550fd.png)
+Connector 314p Gold Finger for detailed dimensions of the module structure, refer to “SMARC 2.1.1 Specification 2020-05-20” 5.3 Module Outline – 82x50mm Module.![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/a565f2b0773f46318987b18ca2c550fd.png)
 
 Figure 2-5: SMARC 2.1.1 82 x 50mm Module Outline
 
@@ -222,7 +222,7 @@ When using connectors of different heights, please consider that according to th
 
 ### 2.4 FET-MX8MPQ-SMARC Block Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/b4f4c260ef204d758137ccba4c89c1dc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/b4f4c260ef204d758137ccba4c89c1dc.png)
 
 Figure 2-6: FET-MX8MPQ-SMARC Block Diagram
 
@@ -233,7 +233,7 @@ Figure 2-6: FET-MX8MPQ-SMARC Block Diagram
 
 #### 3.1.1 Golden-finger
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/14a63d1ed6f14b07868cf61865c400ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/14a63d1ed6f14b07868cf61865c400ad.png)
 
 Figure 3-1 SoM Connector
 
@@ -241,7 +241,7 @@ Figure 3-1 SoM Connector
 
 The carrier board connector is a 314-pin, 0.5mm pitch right-angle component, designed for use with a 1.2mm thick PCB and features an appropriate edge finger pattern. This connector is commonly used in MXM3 graphics cards. The SMARC module uses this connector differently than the MXM3 standard.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a9a69d8d841149e6a91d54d0545bc1ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/a9a69d8d841149e6a91d54d0545bc1ef.png)
 
 Figure 3-2 MXM 3.0 Carrier Board Connector
 
@@ -250,11 +250,11 @@ Figure 3-2 MXM 3.0 Carrier Board Connector
 I-PEX MHF4 Connector Socket (20449) Main： Wi-Fi --> TX/RX  
 Aux： Wi-Fi/Bluetooth --> TX/RX
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/19ae03a975664170b3284b0b9a3731db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/19ae03a975664170b3284b0b9a3731db.png)
 
 Figure 3-3 Module Antenna Configuration
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/ece919dd84234b1dbeed70bb0edef4a3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/ece919dd84234b1dbeed70bb0edef4a3.png)
 
 Figure 3-4 Module Antenna Configuration
 
@@ -263,7 +263,7 @@ Figure 3-4 Module Antenna Configuration
 The processor’s JTAG interface is connected via a 7Pin, 1mm pitch connector.   
 The JTAG IO voltage level is 1.8V.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e982c42b5099418c89925ef2bfe2e03e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/e982c42b5099418c89925ef2bfe2e03e.png)
 
 Figure 3-5 JTAG Connector Line Sequence
 
@@ -752,7 +752,7 @@ The MIPI Display Serial Interface (DSI) is a flexible, high-performance core tha
 
 #### 4.3.2 Block Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e89c58ae65c9434baa8281dcc0ced4f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/e89c58ae65c9434baa8281dcc0ced4f6.png)
 
 Figure 4-1 MIPI DSI Master System Block Diagram
 
@@ -1862,13 +1862,13 @@ Forlinx can provide a heatsink for the FET-MX8MP-SMARC module, but please keep i
 
 ### 8.1 Development Board Interface Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/8d46fa22b58145f0b488f8c226c771e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/8d46fa22b58145f0b488f8c226c771e2.png)
 
 Figure 8-1  OK-MX8MPQ-SMARC Embedded Development Platform Interface Diagram
 
 ### 8.2 Development Board Dimension
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/c7588ee02b324c128a13d38e6542d629.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/c7588ee02b324c128a13d38e6542d629.png)
 
 Figure 8-2 OK-MX8MPQ-SMARC Development Board Dimension Diagram
 
@@ -1928,7 +1928,7 @@ Note: The parameters in the table are the theoretical values of hardware design 
 
 ### 8.5 Development Board  Resources Block Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/5b6f3c29e63a4196a856db02410d7ac1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/5b6f3c29e63a4196a856db02410d7ac1.png)
 
 Figure 8-3 OK-MX8MPQ-SMARC Development Board Resources Block Diagram
 
@@ -1942,31 +1942,31 @@ default**
 
 DC 12V Power Supply: A 12V adapter is connected via P5, and after being switched on by S1, power passes through a TVS diode, resettable fuse, reverse protection diode, and filter capacitors to supply power to the subsequent circuits, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/fcbde94f07e04595929516e7fb34e463.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/fcbde94f07e04595929516e7fb34e463.png)
 
 Figure 9-1 12V Adapter Power Input
 
 The VCC12V\_DCIN voltage is converted to VSYS\_5V by the switching power supply U2, providing direct power to the SoM, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/13df717fda2346cbbb94b1fa00eecf9c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/13df717fda2346cbbb94b1fa00eecf9c.png)
 
 Figure 9-2 Switching Power Supply Output VSYS\_5V to SoM
 
 Once the SoM is successfully powered on, the CARRIER\_PWR\_ON\_1.8V power control signal from the SoM goes high, sequentially enabling transistor Q1 and PMOS chip U8. The PMOS chip subsequently outputs VCC\_5V to power the peripherals of the development board. If the VCC\_5V power supply is functioning properly, LED D3 will light up, indicating that the development board is powered normally. As shown in the figure below:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/b7b4ffbd4f2945ffa5f9813916763cd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/b7b4ffbd4f2945ffa5f9813916763cd5.png)
 
 Figure 9-3: MOS Switch Output VCC\_5V to Power Carrier Board Peripherals
 
 VCC\_5V is converted by the switching regulator U3 to produce VCC\_3V3, which powers certain peripherals on the development board and also provides input power for downstream linear regulators. No additional enable control is needed for the U3 chip. As shown in the figure below:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/0e91bb45812042b297d790f942af0ea8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/0e91bb45812042b297d790f942af0ea8.png)
 
 Figure 9-4: Switching Power Supply Output VCC\_3V3 to Power Carrier Board Peripherals
 
 The VCC\_3V3 voltage passes through the low-dropout linear regulator U1 to generate the VCC\_1V8 voltage. The driving capability of VCC\_1V8 is relatively weak, and it is mainly used to provide a 1.8V pull-up voltage for the signal lines on the development board. As shown in the figure below:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/c8cb5c9705b94fc0935d9b6e17317d22.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/c8cb5c9705b94fc0935d9b6e17317d22.png)
 
 Figure 9-5: LDO Switch Output VCC\_1V8 to Provide Pull-up Power for Carrier Board Peripherals
 
@@ -1990,19 +1990,19 @@ Press the power control button for more than 6 seconds to realize the startup an
 
 The reset and power-on/off signals have been reserved for 1.8 V pull-up in the SoM version, so there is no need to add a pull-up level on the development board, and only need to consider anti-jitter and anti-static treatment. As shown in the figure below:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/f0ec22a093084f5fa52eb60ffbc525c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/f0ec22a093084f5fa52eb60ffbc525c5.png)
 
 Figure 9.2-1 Reset Button
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/78f2084a054644d8b9c986104c598c1c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/78f2084a054644d8b9c986104c598c1c.png)
 
 Figure 9.2-2 On/off Button
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/00d1f8e71d8f486384793740df83d9f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/00d1f8e71d8f486384793740df83d9f2.png)
 
 ### 9.3 Boot Configuration
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/8b4feb6bb7c74a8f8bf49c46b90b94ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/8b4feb6bb7c74a8f8bf49c46b90b94ed.png)
 
 Figure 9.3-1 BOOT DIP Switch Mode Selection
 
@@ -2034,13 +2034,13 @@ The UART2 of SMARC interface is from UART4 of I.MX8MP, which is for debugging Co
 
 The digital level converter U10 plays a role in equal level conversion and isolation protection, preventing external power from entering the SoM through debugging when the development board is powered off. U9 is a linear regulator that provides isolated power supply for level converters, and the DEBUG\_5V power supply comes from external devices. This part of the circuit is shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/7a326207df71420bbde19a972ed60759.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/7a326207df71420bbde19a972ed60759.png)
 
 Figure 9.4-1 Debug External Power Supply and Level Conversion
 
 The development board converts two common debug serial ports into USB signals through U11, and the USB signals are led out from the Type-C socket (P2). In this way, only 1 x Type-C interface can be used to debug 2 x debug ports. Positive and negative sensing is not required, so two CC pins can be pulled down to ground. The circuit for converting two serial ports to USB is shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/7d7a166ba37441b4b6a32cac4f9e221c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/7d7a166ba37441b4b6a32cac4f9e221c.png)
 
 Figure 9.4-2 Dual TTL Serial Port to USB
 
@@ -2069,17 +2069,17 @@ Table 9.4-1 P2 Interface Pin Function Description
 
 The OK-MX8MPQ-SMARC development board supports 1 x USB 3.0 Type-A interface P18, as shown in Figure 6.5-1. Only used for HOST function. Add TVS devices to the USB signal cable and USB power supply for electrostatic protection and plug and unplug protection, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/cd710ed6964340b29d0813ba29098e09.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/cd710ed6964340b29d0813ba29098e09.png)
 
 Figure 9.5-1 USB 3.0 Type-A Interface
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a6db99da4fb54dd5a54b14e257d491b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/a6db99da4fb54dd5a54b14e257d491b5.png)
 
 Figure 9.5-2 Static Protection of USB 3.0 Interface
 
 The external power supply voltage of the USB3.0 Type-A interface on the development board is from VCC \_ 5V, and the VCC \_ 5V performs 1A overcurrent protection on the USB output power supply voltage USB3 \_ PWR \_ 5V through the load switch U19. USB3 \_ EN \_ OC # is normally output to the CPU at high level. When the overcurrent event occurs, the signal is pulled low, and the CPU will control the GPIO \_ P10 \_ USB3 \_ EN signal to cut off the external output of the USB3.0 Type-A interface, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a0de7d31b12149eb83d2fbf640ab70a4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/a0de7d31b12149eb83d2fbf640ab70a4.png)
 
 Figure 9.5.3 USB Load Switch
 
@@ -2107,27 +2107,27 @@ The OK-MX8 MPQ-SMARC development board supports 3 x USB2.0 Type-A interfaces P20
 
 The power supply voltage of each USB2.0 Type-A interface is from VCC \_ 5V, and the overvoltage and overcurrent load switch provides 0.5A current limiting protection for the USB2.0 Type-A interface. If an overcurrent situation occurs, the normally high OC pin will pull low to alert the CPU, and the CPU will perform power-off protection on the load switch. As shown in the figure, there are three sets of USB 2.0 Type-A interfaces and load switch protection circuits that are externally connected.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/d78905baa8084597a5186b81a73e2552.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/d78905baa8084597a5186b81a73e2552.png)
 
 Figure 9.6-1 USB 2.0-1 Type-A Interface
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/47e7f706b0c341e6acb8c4f464d2f86a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/47e7f706b0c341e6acb8c4f464d2f86a.png)
 
 Figure 9.6-2 USB 2.0-1 USB Load Switch
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/14fcc79150414c009b8d4287f09f43ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/14fcc79150414c009b8d4287f09f43ad.png)
 
 Figure 9.6-3 USB 2.0-4 Type-A Interface
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/1b80a867026a42a28293c7560bf2e0f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/1b80a867026a42a28293c7560bf2e0f1.png)
 
 Figure 9.6-4 USB 2.0-4 USB Load Switch
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e9081054db8e4c3285afaee092b54705.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/e9081054db8e4c3285afaee092b54705.png)
 
 Figure 9.6-5 USB 2.0-5 Type-A Interface
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/f9adb4d2c6554d398017a0543325c279.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/f9adb4d2c6554d398017a0543325c279.png)
 
 Figure 9.6-6 USB 2.0-5 USB Load Switch
 
@@ -2176,19 +2176,19 @@ Table 9.6-3 P22 Interface Pin Function Description
 
 The OK-MX8MPQ-SMARC development board supports 1 x USB 2.0 OTG connection to a micro USB interface. Add TVS devices to USB signal cables and USB power supplies for electrostatic protection and plug and unplug protection. As shown in the figure below:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/331ce5d58161480d856612ce4881ec18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/331ce5d58161480d856612ce4881ec18.png)
 
 Figure 9.7-1 USB 2.0 Type-C Interface
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/39352191133f4c59baa980fe6aa2dfa5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/39352191133f4c59baa980fe6aa2dfa5.png)
 
 Figure 9.7-2 Selection of DIP Switch Mode
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/b407697caa9d44ca806a7832efec78d1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/b407697caa9d44ca806a7832efec78d1.png)
 
 Figure 9.7-3 VBUS External Power Supply
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/1dac101484d345baa86242ee871dd88a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/1dac101484d345baa86242ee871dd88a.png)
 
 Figure 9.7-4 VBUS Voltage Detection
 
@@ -2204,15 +2204,15 @@ Optional 5G module Quectel-RM500Q\_5G, transmitting data through USB 3.0 signal,
 
 The switch power supply controlled by dip switch S4 is shown in the diagram.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/2454a4bbe21e4a28932a2d0a71aaab76.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/2454a4bbe21e4a28932a2d0a71aaab76.png)
 
 Figure 9.8-1 Switching Power Supply Output VCC \_ 4G/5G
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/fcf4b0eec80f4129bc1835fcea494956.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/fcf4b0eec80f4129bc1835fcea494956.png)
 
 Figure 9.8-2 4G/5G Module M.2 \_ B-KEY Slot
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/b41b6fc4e09e4488a142bef822dac311.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/b41b6fc4e09e4488a142bef822dac311.png)
 
 Figure 9.8-3 Micro SIM Card Slot
 
@@ -2220,17 +2220,17 @@ Figure 9.8-3 Micro SIM Card Slot
 
 The OK-MX8MPQ-SMARC development board supports dual 1000M/100M/10M network ports, and the PHY of the Gigabit network port is integrated on the SoM. Therefore, only the differential pair of the MDI interface needs to be led out through the RJ45 interface with its own isolation transformer, and TVS devices need to be added for electrostatic protection.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/f909b5b6ea4b45f5b548dab42cb71d35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/f909b5b6ea4b45f5b548dab42cb71d35.png)
 
 Figure 9.9-1 GBE0 Interface Connection Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/50b8f7a3846149b8897b409b859fb70a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/50b8f7a3846149b8897b409b859fb70a.png)
 
 Figure 9.9-2 GBE1 Interface Connection Diagram
 
 According to the SMARC protocol, the 2 x LED on the RJ45 connector are the link activity indicator and the 1 x Gbps/100 Mbps link speed indicator. Series resistors are reserved on the GBE\_LINK100# and GBE\_LINK1000# signals to provide current-limiting protection, though they also reduce the brightness of the Ethernet port LEDs. This design is based on the SMARC design guidelines, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a9bfd0894e424b6cba5c2e4318aadc40.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/a9bfd0894e424b6cba5c2e4318aadc40.png)
 
 Figure 9.9-3: Ethernet Port Connection in the SMARC Design Guide
 
@@ -2282,7 +2282,7 @@ Table 9.9-2 P10 Interface Pin Function Description
 
 The OK - MX8MPQ - SMARC development board is equipped with the NAU88C22 24 - bit stereo audio codec U29. It externally provides a stereo headphone with a built - in microphone, a microphone, and 2 x 1W 8Ω speaker outputs. These are led out through the XH2.54 white terminal. The corresponding circuit is shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/37fc76fc8fae4686a316924874ff52f5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/37fc76fc8fae4686a316924874ff52f5.png)
 
 Figure 9.10-1 Audio Circuit Diagram
 
@@ -2321,7 +2321,7 @@ Table 9.10-3 P29 Interface Pin Function Description
 
 In accordance with the SMARC specification, the development board is only required to provide the RTC backup power supply, VDD\_RTC. Both the RTC chip and the crystal oscillator are installed on the SoM.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/125d08b104444be686a16c15315b5c9b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/125d08b104444be686a16c15315b5c9b.png)
 
 Figure 9.11-1: CR2032 Battery Holder
 
@@ -2333,7 +2333,7 @@ The OK-MX8MPQ-SMARC development board supports dual LVDS outputs routed to 2.0mm
 
 The other 4-lane LVDS0 channel shares the data path with DSI0 and switches between them via a Switch chip (see Section 11.13).
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/a0756013fcc54cc58f24aceee1e08c27.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/a0756013fcc54cc58f24aceee1e08c27.png)
 
 Figure 9.12-1 Independent 4-lane LVDS Connector
 
@@ -2388,23 +2388,23 @@ According to the SMARC protocol specification, DSI0 and LVDS0 share a set of cha
 
 **Note: For more information on the SMARC protocol, please refer to”Smart  Mobility  ARChitecture  Hardware  Specification”**
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/95cbf5f349ac43ef86fa7f39010b6029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/95cbf5f349ac43ef86fa7f39010b6029.png)
 
 Figure 9.13-1 SMARC Hardware Specification Interface Description
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/6161e818e17e42398fa114f94d304d6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/6161e818e17e42398fa114f94d304d6c.png)
 
 Figure 9.13-2 LVDS0 and DSI0 Data Channel Switching Chip
 
 The separated LVDS0 differential signal group is connected to a 2.0mm spacing dual pin, compatible with Forlinx 10.1-inch LVDS screen, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/86fe2a1aae874941af906eae7e49815c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/86fe2a1aae874941af906eae7e49815c.png)
 
 Figure 9.13-3 Separated 4-lane LVDS0 Connector
 
 The separated DSI0 differential signal group is connected to the FPC seat to adapt to the 7-inch MIPI screen of Forlinx, as shown in the figure.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/c3705b22bab74340a3022319dca4eb1d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/c3705b22bab74340a3022319dca4eb1d.png)
 
 Figure 9.13-4 Separated 4-lane DS0 Connector
 
@@ -2498,11 +2498,11 @@ The MIPI CSI1 with single ISP 4-lane is connected to the Molex075783 connector, 
 
 Using dual ISP, the maximum supported is 1080p@80fps. For more detailed description, please refer to Chapter 13 of the 'i.MX 8M Plus Applications Processor Reference Manual' on the NXP official website.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/34c6e85679cd4ef6985024f274c3a47c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/34c6e85679cd4ef6985024f274c3a47c.png)
 
 Figure 9.14-1 MIPI CSI0 Connector Schematic
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/f35928c17c00475980ea6a9153dec52a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/f35928c17c00475980ea6a9153dec52a.png)
 
 Figure 9.14-2 IMX8MP-EVK Camera Module Connector
 
@@ -2592,15 +2592,15 @@ The OK-MX8MPQ-SMARC development board is equipped with a standard PCIe x1 slot, 
 
 It supports both RC (Root Complex) and EP (Endpoint) modes, with a maximum link speed of Gen3 (8 GT/s).
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/f62e997efc0b4d0e812298964eadd926.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/f62e997efc0b4d0e812298964eadd926.png)
 
 Figure 9.15-1 PCIE x1 Connector
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/873c14fa7b2a47b49319b9150dd00723.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/873c14fa7b2a47b49319b9150dd00723.png)
 
 Figure 9.15-2 Switching Power Supply Output PCIE\_3V3 Power for PCIe Module
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/301f6a3d9fe942cd9093a4fc4118d160.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/301f6a3d9fe942cd9093a4fc4118d160.png)
 
 Figure 9.15-3 MOSFET Used as a Switch to Output 12V Power for PCIe Module
 
@@ -2662,15 +2662,15 @@ The CANFD circuit complies with or exceeds the technical specifications of the I
 
 RS485 is an isolated half-duplex enhanced transceiver that complies with the TIA/EIA-485A standard. The bus receiver uses a 1/8 unit load design, allowing a bus load capacity of up to 256 nodes, meeting the requirements of multi-node designs. The bus transmission rate can reach up to 4 Mbps.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/0954710209dd4e6fb89a7eb9c0e0e0ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/0954710209dd4e6fb89a7eb9c0e0e0ed.png)
 
 Figure 9.16-1 CANFD Module Circuit Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/2f86d2bb4a214919b68a7717400b775a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/2f86d2bb4a214919b68a7717400b775a.png)
 
 Figure 9.16-2 RS485 Module Circuit Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/58ba908fbca64b99806d08682da99ad3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/58ba908fbca64b99806d08682da99ad3.png)
 
 Figure 9.16-3 2EDGRC-3.81 Connector Outputting CANFD and RS485 Signals
 
@@ -2700,7 +2700,7 @@ The OK-MX8MPQ-SMARC development board provides 1 x HDMI output via P14, supporti
 
 Although the MIMX8ML8CVNKZAB processor's HDMI interface supports the HDMI 2.1 eARC feature, the development board removes the eARC functionality to comply with the SMARC specification requirements.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/4b1892272a964b36a3ef0ede85480f63.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/4b1892272a964b36a3ef0ede85480f63.png)
 
 Figure 9.17-1 HDMI Interface and Protection Circuit
 
@@ -2735,13 +2735,13 @@ Table 9.17-1 P14 HDMI Interface Pin Function Description
 
 The OK-MX8MPQ-SMARC development board reserves a TF card slot, with added electrostatic protection components. Signal lines include reserved 0Ω resistors for debugging purposes.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/3777451b826f44ee98d9906733aa0b66.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/3777451b826f44ee98d9906733aa0b66.png)
 
 Figure 9.18-1 TF Card Connector Interfaces
 
 The 3.3V power supply for the TF card is controlled by two sets of MOSFET switches, managed by the reset output signal RESET\_OUT#\_3.3V (active low) and the power enable signal SDIO\_PWR\_EN.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/09e4195f996941dea850a005f4b92568.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/09e4195f996941dea850a005f4b92568.png)
 
 Figure 9.18-2 TF Card Power Supply Circuit
 
@@ -2769,11 +2769,11 @@ Table 9.18-1 P27 TF Card Interface Pin Function Description
 
 The OK-MX8MPQ-SMARC development board is equipped with 2 x 16MB FLASH memory chips, using QSPI and SPI interfaces respectively.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/3f27b10c83034f72a391e371ae647333.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/3f27b10c83034f72a391e371ae647333.png)
 
 Figure 9.19-1 QSPI Module Circuit Diagram
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/89e4835fd56b4fd6b545939dc42585ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/89e4835fd56b4fd6b545939dc42585ef.png)
 
 Figure 9.19-2 SPI Module Circuit Diagram
 
@@ -2781,7 +2781,7 @@ Figure 9.19-2 SPI Module Circuit Diagram
 
 The OK-MX8MPQ-SMARC development board outputs a PWM breathing light signal through the GPIO5\_PWM\_OUT\_1.8V pin to control an NPN transistor that lights an LED. The LED brightness can be adjusted by changing the PWM duty cycle.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e866396d3bc1476fb63c471c5dff7e43.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/e866396d3bc1476fb63c471c5dff7e43.png)
 
 Figure 9.20-1 PWM LED Circuit Diagram
 
@@ -2789,7 +2789,7 @@ Figure 9.20-1 PWM LED Circuit Diagram
 
 The soM's available I/O pins are insufficient to meet the development board's pin requirements, so a GPIO expansion chip is used on the SoM.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/f13676df21034bfa8941511bfeca8ce1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/f13676df21034bfa8941511bfeca8ce1.png)
 
 Figure 9.21-1 GPIO Expansion Chip
 
@@ -2797,7 +2797,7 @@ Figure 9.21-1 GPIO Expansion Chip
 
 The FAN speed is controlled using the GPIO5\_PWM\_OUT\_1.8V pin.
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/2b196cdf32854aa5a443bd7a246cbf89.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/2b196cdf32854aa5a443bd7a246cbf89.png)
 
 Figure 9.22-1 FAN Control Circuit
 
@@ -2843,11 +2843,11 @@ Figure 9.22-1 FAN Control Circuit
 
 Carrier Board Connector Model: AS0B821-S78B, SoM Dimension:
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/e8f7cf3d16bf40a690b1e2c2471be0dc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/e8f7cf3d16bf40a690b1e2c2471be0dc.png)
 
 Figure 11.1-1 MXM 3.0 Connector Dimension
 
-![Image](./images/OKMX8MPQSMARC_UsersHardwareManual_V10/627f486ea198413eb29bcb3be2000900.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx8mpq-smarc/OK-MX8MPQ-SMARC_Hardware_Manual/627f486ea198413eb29bcb3be2000900.png)
 
 Figure 11.1-2 MXM 3.0 Carrier Packaging Connector
 

@@ -37,7 +37,7 @@ The manual is mainly divided into four chapters:
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130552795_1efff5fc_4341_43b9_aeb1_bd723941779d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130552795_1efff5fc_4341_43b9_aeb1_bd723941779d.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -45,35 +45,35 @@ After the download is complete, double-click the installation file to start the 
 
 Double-click the startup program to enter the installation wizard.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553055_61c21413_07de_4beb_bed5_891acde85934.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553055_61c21413_07de_4beb_bed5_891acde85934.png)
 
 Click on "Next".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553376_df065571_fcfa_4fde_83f1_e25539acc3b4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553376_df065571_fcfa_4fde_83f1_e25539acc3b4.png)
 
 Check the terms in the license agreement that I accept, then click "Next".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553578_781988f3_7dac_4da4_ab14_4ffc52417275.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553578_781988f3_7dac_4da4_ab14_4ffc52417275.png)
 
 Modify the installation location to the partition where you want to install the software on your computer, then click '"Next".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553799_5e6fd4d4_9d73_41e7_b325_2e3b3a3423cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130553799_5e6fd4d4_9d73_41e7_b325_2e3b3a3423cf.png)
 
 Check and click on "Next".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554136_cf6e6cf5_3ff8_4e60_b72f_7d96205b4ce7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554136_cf6e6cf5_3ff8_4e60_b72f_7d96205b4ce7.png)
 
 Check the box to add a shortcut, then click "Next".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554602_7f51a899_ebcf_4dd9_bad3_1be0b24bd24f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554602_7f51a899_ebcf_4dd9_bad3_1be0b24bd24f.png)
 
 Click "Installation".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554863_0a8ad89a_74aa_4fb0_8ed5_e8ae0bfe9798.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130554863_0a8ad89a_74aa_4fb0_8ed5_e8ae0bfe9798.png)
 
 Wait for the installation to complete.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130555089_e26d12b8_7cc4_4afe_b9e1_3ff3d86cc4ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130555089_e26d12b8_7cc4_4afe_b9e1_3ff3d86cc4ae.png)
 
 Click "Finish" to try it out. If users need to use it for a long time, they need to buy it from the official and fill in the license.
 
@@ -88,35 +88,35 @@ There are two ways to use a virtual machine environment in VMware: one is to dir
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130667841_7dd3f795_e862_4ab5_9123_97a4322a44b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130667841_7dd3f795_e862_4ab5_9123_97a4322a44b8.png)
 
 Select all the compressed packages and right click to extract them to MX6UL\&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668092_deb6353e_c58e_47a8_8f2c_0494bcde9373.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668092_deb6353e_c58e_47a8_8f2c_0494bcde9373.png)
 
 After the decompression is completed, as shown in the figure below:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668390_1271091f_6304_4c3e_9d51_b2f46e4384ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668390_1271091f_6304_4c3e_9d51_b2f46e4384ef.png)
 
 The file "Ubuntu18.04 64-bit.vmx" in the MX6UL\&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04 folder is the file that needs to be opened by the virtual machine.
 
 Open the installed virtual machine.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668618_c3be439a_e840_4e42_a78f_1544448e447f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668618_c3be439a_e840_4e42_a78f_1544448e447f.png)
 
 Navigate to the directory where the recently extracted MX6UL\&MX6ULL-linux4.1.15-VM15.1.0-ubuntu18.04 virtual machine file is located, and double-click on the startup file to open it.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668821_8323be81_5bc8_49df_abf1_3bdff8e0afb4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130668821_8323be81_5bc8_49df_abf1_3bdff8e0afb4.png)
 
 Turn on this virtual machine after loading is complete to run it and enter the system's interface.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669055_44003c55_25ea_4813_a29a_21ae2bb43ac1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669055_44003c55_25ea_4813_a29a_21ae2bb43ac1.png)
 
 The development environment is: forlinx, and the password is: forlinx. After filling in the password, select Sign in to log in.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669360_9f42398a_117a_414d_bb81_dbe1dbfbe120.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669360_9f42398a_117a_414d_bb81_dbe1dbfbe120.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669640_b1da4f71_0317_425c_962b_04428e1b57bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130669640_b1da4f71_0317_425c_962b_04428e1b57bc.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -130,61 +130,61 @@ This chapter mainly explains the process of setting up the Ubuntu system, instal
 
 Open the VMware software, click on create a new virtual machine. Enter the following interface
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130873710_b80a1010_8d6a_4ba1_8849_570651261519.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130873710_b80a1010_8d6a_4ba1_8849_570651261519.png)
 
 Choose custom, and click “Next”.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130873998_716f2d13_f787_45ab_8034_3684dd19f526.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130873998_716f2d13_f787_45ab_8034_3684dd19f526.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click “Next”.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874359_e15e9c36_4757_4c02_9d31_2b1f6621e444.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874359_e15e9c36_4757_4c02_9d31_2b1f6621e444.png)
 
 Select Install the operating system later and click “Next”.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874643_3c1b5ca9_329e_4aee_bff3_3cbe693f69a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874643_3c1b5ca9_329e_4aee_bff3_3cbe693f69a2.png)
 
 Leave the default and click “Next”.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874873_6a547ee4_c88f_4467_aa57_6f62406eef17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130874873_6a547ee4_c88f_4467_aa57_6f62406eef17.png)
 
 Modify the virtual machine name and installation location, click "Next".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875136_bf052855_fc99_4273_8e0e_30c7e6de4c5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875136_bf052855_fc99_4273_8e0e_30c7e6de4c5e.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875393_5d7c2ff3_a199_44b9_93cc_384f20420379.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875393_5d7c2ff3_a199_44b9_93cc_384f20420379.png)
 
 Again, set the memory size as appropriate.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875638_fb0ecd2e_a95f_45cc_95b8_033ac8bed1c4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875638_fb0ecd2e_a95f_45cc_95b8_033ac8bed1c4.png)
 
 Set the network type, the default is NAT mode, click Next. Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875870_58ea3361_855b_4639_b0f5_923e361758bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130875870_58ea3361_855b_4639_b0f5_923e361758bd.png)
 
 The default selection for the IO controller type here is LSI.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876113_0bc98951_16b5_4084_90c8_37d896225d4b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876113_0bc98951_16b5_4084_90c8_37d896225d4b.png)
 
 The default selection here is also SCSI.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876355_b630e6a2_e66c_4629_bad9_95a5142f811e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876355_b630e6a2_e66c_4629_bad9_95a5142f811e.png)
 
 Choose to create a new virtual disk here.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876565_ef041689_7337_4abc_9d05_63b82dfd2f92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876565_ef041689_7337_4abc_9d05_63b82dfd2f92.png)
 
 Set the disk size to 200 gigabytes and select the form in which the disk exists, then click “Next” to finish.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876873_7c0856e0_6814_46f2_b1c3_4777c3f1ba82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130876873_7c0856e0_6814_46f2_b1c3_4777c3f1ba82.png)
 
 Specify the disk file, the default one here is fine.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877128_50148b1b_37d8_4af0_9227_6bf60c93f956.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877128_50148b1b_37d8_4af0_9227_6bf60c93f956.png)
 
 Click “Finish” by default.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877325_cd17f07f_bb68_4ef0_bf8d_bcffdcef5d5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877325_cd17f07f_bb68_4ef0_bf8d_bcffdcef5d5e.png)
 
 The virtual machine creation is now complete.
 
@@ -194,63 +194,63 @@ In the next section, we will introduce the installation of Ubuntu system in the 
 
 The Ubuntu version chosen to install is 18.04. First, go to the official Ubuntu website to obtain the 64-bit image of Ubuntu 18.04. The download address is: http://releases.ubuntu.com/18.04/. Download the version: “ubuntu-18.04.5-desktop-amd64.iso”.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877616_c0116c9e_13fd_4dca_8aca_cd910dcc7df4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877616_c0116c9e_13fd_4dca_8aca_cd910dcc7df4.png)
 
 Right-click on the newly created Ubuntu 64-bit and select Settings from the pop-up menu.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877889_7e5b736b_ed71_4266_9d79_2af0c01d3ea4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130877889_7e5b736b_ed71_4266_9d79_2af0c01d3ea4.png)
 
 The "Virtual Machine Settings Menu" pops up as shown below:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878173_7f3b9c86_a789_4b74_9139_237498289208.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878173_7f3b9c86_a789_4b74_9139_237498289208.png)
 
 Click on CD/DVD (SATA), select “Use ISO image file,” browse and choose the previously downloaded Ubuntu image, then click “OK” to confirm.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878386_465f332a_846b_4654_9492_c7b334ae6452.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878386_465f332a_846b_4654_9492_c7b334ae6452.png)
 
 After setting up the image, ensure that the network is available. Then, start the virtual machine and proceed with the installation of the Ubuntu image.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878629_7b9c4978_111f_4d6a_87c8_d74e18db979f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878629_7b9c4978_111f_4d6a_87c8_d74e18db979f.png)
 
 After starting the virtual machine, wait for the installation interface to appear as shown below.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878872_dfd1e144_c565_4bf5_ae65_96165fdfd0ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130878872_dfd1e144_c565_4bf5_ae65_96165fdfd0ee.png)
 
 After selecting the language on the left side as shown in the image, click “Install Ubuntu”, and the language selection interface will pop up. Ubuntu default language is English, of course, you can also choose others, the default choice of language in the later stage can also be reset,after selection then click continue.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879162_c887a891_5473_4470_8744_ea601caa884c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879162_c887a891_5473_4470_8744_ea601caa884c.png)
 
 Next, by default, select continue to finish the installation, the installation process will be very slow, then click "continue":
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879424_f22b6351_4139_46ed_a5ae_9f07a0395579.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879424_f22b6351_4139_46ed_a5ae_9f07a0395579.png)
 
 Next, select continue by default to continue the installation, the installation process will be very slow, and then click “continue”:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879621_48c81c07_77b7_42ba_9252_bf0b57d67089.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879621_48c81c07_77b7_42ba_9252_bf0b57d67089.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879995_f2e16814_cf7c_4fc5_9bab_7c617fadd3e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130879995_f2e16814_cf7c_4fc5_9bab_7c617fadd3e2.png)
 
 Next, select the timezone. You can either click on the Shanghai timezone or enter "Shanghai" (or choose the appropriate timezone based on your location). Then, click "Continue" to proceed. Finally, set your username and password and click "continue" to automatically install the program:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880702_8f6f15db_0b72_41bb_baf3_8223b6f98062.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880702_8f6f15db_0b72_41bb_baf3_8223b6f98062.png)
 
 The installation process is shown in the figure below, you can skip it if the network is bad, it will not affect the installation.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880992_5934d52d_df50_4438_812a_6ae5fb555a22.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130880992_5934d52d_df50_4438_812a_6ae5fb555a22.png)
 
 After the installation is completed, as shown in the following figure, click "Restart Now" (or click" Restart Guest "):
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881280_a25cd0ea_662d_4a5e_804d_c3409035be54.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881280_a25cd0ea_662d_4a5e_804d_c3409035be54.png)
 
 After the reboot, you need to log in with your username and password, and the system interface is shown below after logging in:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881517_50069bf3_e74b_42b5_902c_37145d6f82d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881517_50069bf3_e74b_42b5_902c_37145d6f82d0.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881840_80f09913_0c90_45a6_8bcc_f8bf91fa6d34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130881840_80f09913_0c90_45a6_8bcc_f8bf91fa6d34.png)
 
 Above, the Ubuntu system installation is completed by the following figure configuration, click "OK", and then re-open the virtual machine to see if you can start Ubuntu normally.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882093_342df8a6_a76b_4820_8df6_adae03cb2607.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882093_342df8a6_a76b_4820_8df6_adae03cb2607.png)
 
 #### 3.1.3 Basic Ubuntu Installation
 
@@ -260,21 +260,21 @@ After installing the Ubuntu 18.04 operating system, there are a few configuratio
 
 Next, install VMware Tools. Without installing this tool, you won't be able to copy and paste and drag file between the Windows host and the virtual machine. First click on "Virtual Machines" on the VMware navigation bar, then click "Install VMware Tools" in the drop-down box.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882334_203d6ed3_4c69_471f_a20f_24af1b7ad171.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882334_203d6ed3_4c69_471f_a20f_24af1b7ad171.png)
 
 Once done, enter Ubuntu and the VMware Tools CD icon will appear on your desktop, click into it:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882614_15de9f87_5997_40c0_b7a7_9e650e40ef7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882614_15de9f87_5997_40c0_b7a7_9e650e40ef7d.png)
 
 Double-click on the VMwareTools icon, go to it and see a zip file VMwareTools-10.3.10-12406962.tar.gz (it may be different for different VM versions).
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882882_b3eed435_b12d_4198_8a78_38d7a42a441e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130882882_b3eed435_b12d_4198_8a78_38d7a42a441e.png)
 
 Copy the file under the home directory (i.e., the directory of the home personal username):
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883102_6095e86b_ed29_4116_9acd_043e3dc27af8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883102_6095e86b_ed29_4116_9acd_043e3dc27af8.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883509_768a0307_4af6_4ee0_88af_6715ef57e4b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883509_768a0307_4af6_4ee0_88af_6715ef57e4b2.png)
 
 Press \[Ctrl+Alt+T] to bring up the terminal command interface, and use the tar command to decompress the VMware tools installation package (using the sudo command will prompt for the password, according to the prompts directly enter the password enter can be used, Linux system password input does not show):
 
@@ -312,13 +312,13 @@ Do you still want to proceed with this installation? [no] yes			//Enter yes
 
 After completing the VMware tools tool, you can achieve file copy and paste, virtual machine adaptive full display and other functions between Windows and Ubuntu. If the virtual machine cannot be displayed in full screen, you can click View, select Auto Resize, and click Auto Adapt to Client to display the virtual machine in full screen. VMware tools is installed successfully.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883706_0b9259e7_9335_4895_9e6a_47c8b270fd70.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130883706_0b9259e7_9335_4895_9e6a_47c8b270fd70.png)
 
 + **Basic Settings:**
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884066_fcfdc4c4_9b74_4e9a_ae37_bb38cddbc0a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884066_fcfdc4c4_9b74_4e9a_ae37_bb38cddbc0a7.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -326,31 +326,31 @@ Make most of the system settings in the location shown below. A lot of the setup
 
 Before using the network, make sure that our virtual machine can connect to the Internet, open the virtual machine settings, and change the network bridge mode in the network adapter to “NAT mode”:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884252_18d04452_e6c6_4ac7_a7be_b8243e124e2a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884252_18d04452_e6c6_4ac7_a7be_b8243e124e2a.png)
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884514_a79f3fb8_e9a6_4c0e_aaeb_e84b5e134598.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884514_a79f3fb8_e9a6_4c0e_aaeb_e84b5e134598.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884669_ee6af497_3c2b_4699_b5fa_aa7473a56744.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884669_ee6af497_3c2b_4699_b5fa_aa7473a56744.png)
 
 The network is set to dynamic ip.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884910_31b3ff36_944c_4dcd_803b_61d261fc56a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130884910_31b3ff36_944c_4dcd_803b_61d261fc56a2.png)
 
 + **Bridge Mode:**
 
 If TFTP, SFTP and other servers are used, it is necessary to set the network connection mode of the virtual machine as bridging mode. When the VMware virtual NIC is set to bridge mode, the host NIC and the VM NIC communicate via a virtual bridge, which requires the Ubuntu IP to be set to the same network segment as the host IP.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885296_2e06ca75_268a_48ca_b8d8_d3e0df3cf340.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885296_2e06ca75_268a_48ca_b8d8_d3e0df3cf340.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885782_8a8f38ca_28f0_4339_ad00_929b39697312.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885782_8a8f38ca_28f0_4339_ad00_929b39697312.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885969_280935cf_acc5_4e8e_a155_b8ef4ea3c9ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130885969_280935cf_acc5_4e8e_a155_b8ef4ea3c9ce.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886234_d7029515_ec37_4f72_b240_d70dd584f554.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886234_d7029515_ec37_4f72_b240_d70dd584f554.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -358,13 +358,13 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open VM Settings, USB Controller, select USB 3.0 in Compatibility and “OK”. As shown in the picture below, since most computers nowadays support USB3.0 ports, if we don't set it up, when we plug in the USB3.0 port, we can't connect to the virtual machine. The principle is as follows:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886408_8d3ca670_ba9e_4095_8922_fa0612b8ebbb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886408_8d3ca670_ba9e_4095_8922_fa0612b8ebbb.png)
 
 After the virtual machine boot, insert the U disk, the virtual machine will be more in the lower right corner of the icon similar to the "U disk", right-click --> connect, and then you can see in the file system to see more than a directory, that the U disk loaded successfully, as shown in the figure:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886606_5c2f1d8f_b5b5_41b9_9380_b4658f50c8ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886606_5c2f1d8f_b5b5_41b9_9380_b4658f50c8ae.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886802_39cd79c3_8476_4aee_840b_4909dfce8097.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130886802_39cd79c3_8476_4aee_840b_4909dfce8097.png)
 
 #### 3.1.6 Required Library Installation
 
@@ -397,7 +397,7 @@ The command line prompts: Enter target directory for SDK (default): /opt/fsl-imx
 
 Press the Enter key twice in a row, the program will automatically install the cross-compilation toolchain (the cross-compilation toolchain can be installed once, you don't need to reinstall it when you change terminals or reboot the system). Make sure that the network is open during the installation process and that the Ubuntu system has access to an extranet.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887061_4376335c_6c90_4aad_9262_a497d7a8515b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887061_4376335c_6c90_4aad_9262_a497d7a8515b.png)
 
 You can determine whether the installation was successful by outputting the printed information.
 
@@ -415,13 +415,13 @@ The main purpose of setting up the compilation environment is to specify the tar
 poky-linux-gnueabi
 ```
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887289_6e9810ff_f2ba_441c_8935_c2f4ea2ccd2e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887289_6e9810ff_f2ba_441c_8935_c2f4ea2ccd2e.png)
 
 Then use the command arm-poky-linux-gnueabi-gcc -v to determine if the setup was successful (note: -v is preceded by a space):
 
 Normally the gcc version information is printed, gcc version 5.3.0 (GCC):
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887554_e8c33fab_d0c2_4eb8_90aa_a6d4ed1279c9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887554_e8c33fab_d0c2_4eb8_90aa_a6d4ed1279c9.png)
 
 ### 3.3 Qt Creator Installation
 
@@ -437,7 +437,7 @@ cs/linux-oe-g++/qmake.conf
 
 Remove the line include(...) from the file qmake.conf. /oe-device-extra.pri) line in the qmake.conf file.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887910_04ba5e0d_3874_4ee5_9d51_5c49feb0ffc8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130887910_04ba5e0d_3874_4ee5_9d51_5c49feb0ffc8.png)
 
 Save and exit after making changes
 
@@ -452,9 +452,9 @@ forlinx@ubuntu:~/work$ ./qt-creator-opensource-linux-x86_64-3.2.1.run
 
 Then the installation window of the graphical interface will pop up, and install according to the instructions:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888223_7286e0f2_c770_4453_b3ca_ea4551750c0b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888223_7286e0f2_c770_4453_b3ca_ea4551750c0b.png)
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888466_f4e7734a_41e3_4822_b570_e3363bdf6067.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888466_f4e7734a_41e3_4822_b570_e3363bdf6067.png)
 
 Users can set the installation path according to their own habits.
 
@@ -464,7 +464,7 @@ Execute the following command to open Qt Creator in the background, and users sh
 forlinx@ubuntu:~$ /home/forlinx/qtcreator-3.2.1/bin/ qtcreator.sh &
 ```
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888709_cd7f89bb_5f27_400b_aaca_60fe98366722.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130888709_cd7f89bb_5f27_400b_aaca_60fe98366722.png)
 
 The Qt Creator tool screen appears. Qt Creator is installed.
 
@@ -485,7 +485,7 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 3\. Compiler Path Click Browse to select the path of the cross-compiler as: /opt/fsl-imx-x11/4.1.15-2.0.0/sysroots/x86\_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ As shown in the following figure:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889406_5c81a0f9_9e69_47ba_8799_704f8bc84dbe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889406_5c81a0f9_9e69_47ba_8799_704f8bc84dbe.png)
 
 4\. Then click Apply and OK
 
@@ -497,11 +497,11 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 3\. Click open to add.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889611_4726e704_8541_4f90_8ce1_73cc86ddb01b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889611_4726e704_8541_4f90_8ce1_73cc86ddb01b.png)
 
 4\. It will then return to the Qt Version configuration box, and the Version name will be entered in the Qt 5.6.2.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889900_7c9610ab_ef88_4567_a6b1_4f4e6667766b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130889900_7c9610ab_ef88_4567_a6b1_4f4e6667766b.png)
 
 5\. Then click "Apply and OK".
 
@@ -519,7 +519,7 @@ Kits is a build kit for building and selecting development build environments us
 
 5\. Qt mkspec write linux-oe-g++.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890194_90666ddb_0adf_48a6_a4fd_3cb5316845c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890194_90666ddb_0adf_48a6_a4fd_3cb5316845c5.png)
 
 6\. Then click "Apply and OK".
 
@@ -542,7 +542,7 @@ sudo apt-get  install libgstreamer-plugins-base0.10-dev
 
  2\. Open the project file in Qt Creator with an ordinary account, and there is a write permission error;
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890507_fa6a691a_3d47_466a_bbb7_84abdbd1f630.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715130890507_fa6a691a_3d47_466a_bbb7_84abdbd1f630.png)
 
 Solutions:
 
@@ -577,11 +577,11 @@ There are many kinds of file transfers between ubuntu and Windows hosts. After i
 
 Click "Virtual Machine" in the menu bar and select "Settings".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131102725_8c309a2c_faeb_452b_b442_009fea435688.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131102725_8c309a2c_faeb_452b_b442_009fea435688.png)
 
 Click "Options", enable "Shared Folders", set the shared directory on the Windows host, and click "OK".
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131102937_07075d0b_532f_48f2_947d_8aaa50a98e27.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131102937_07075d0b_532f_48f2_947d_8aaa50a98e27.png)
 
 After the virtual machine's file sharing is set up, put the following items for testing: the kernel source code linux-4.1.15.tar.bz2, the file system (rootfs-console.tar.bz2 is used as an example in this section), the command line test program wdttest.c, and the QT test program audio into the shared folder on the Windows host.
 
@@ -638,7 +638,7 @@ Reset the environment variables after switching accounts:
 
 . /opt/fsl-imx-x11/4.1.15-2.0.0/environment-setup-cortexa7hf-neon-poky-linux-gnueabi
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103158_a0d86cd0_3f4e_4591_a938_bcac008e5789.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103158_a0d86cd0_3f4e_4591_a938_bcac008e5789.png)
 
 #### 4.2.1 Linux-4.1.15 Kernel Full Compilation
 
@@ -656,7 +656,7 @@ root@ubuntu:/home/forlinx/work/linux-4.1.15# ./imx6ull_c_build.sh
 
 After executing the compilation, there is a lot of information generated, so only the last part need to be captured.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103434_1d844066_f8c6_4f4b_ad84_6c45d2684478.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103434_1d844066_f8c6_4f4b_ad84_6c45d2684478.png)
 
 After a successful compilation, module files with the extension ".ko" will be generated. In the directory "linux-4.1.15/arch/arm/boot/", a file named "zImage" will be generated. In the directory "linux-4.1.15/arch/arm/boot/dts/", related dtb (Device Tree Blob) files will be generated. Please refer to the separate section on compiling Device Trees for detailed information.
 
@@ -704,7 +704,7 @@ After successful compilation, the corresponding .ko file will be generated under
 
 Use the command "make modules\_install INSTALL\_MOD\_PATH=/home/forlinx/work/" to export the modules to the specified directory /home/forlinx/work/, and then compress and package the exported modules as modules.tar.bz2, and replace the same file in the burning tool when burning.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103730_2aec4ee9_1abb_4a35_a281_69c556fb0c13.png)![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103941_36e20512_d247_402d_a586_7d259e77385b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103730_2aec4ee9_1abb_4a35_a281_69c556fb0c13.png)![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131103941_36e20512_d247_402d_a586_7d259e77385b.png)
 
 ### 4.3 Creating the File System
 
@@ -847,37 +847,37 @@ Click File->Open File or Project in Qt Creator, a pop-up window will appear, sel
 
 The principle is as follows:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104216_6d917100_4bbe_49fc_beb7_c90a784bc990.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104216_6d917100_4bbe_49fc_beb7_c90a784bc990.png)
 
 Click "Open".
 
 A pop-up window will appear to indicate whether to keep the original environment settings, select no, as follows:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104467_b45ec108_2b76_45dc_80e3_d137b571fcd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104467_b45ec108_2b76_45dc_80e3_d137b571fcd6.png)
 
 The Configure Project window pops up as follows:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104680_ad195f5a_417c_470d_9fcd_8d2e5cc0c619.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104680_ad195f5a_417c_470d_9fcd_8d2e5cc0c619.png)
 
 Click “Configure Project”.
 
 After opening the project, the interface is as follows:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104939_4923c2ae_79fb_4abf_9fe3_1117eff0da68.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131104939_4923c2ae_79fb_4abf_9fe3_1117eff0da68.png)
 
 Click Build->Clean All to clear it. (If the intermediate file is not cleared, it can be deleted manually)
 
 Click Projects to uncheck Shadow build
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105189_2a6a8767_a29b_4424_84b8_cb96aa54ef21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105189_2a6a8767_a29b_4424_84b8_cb96aa54ef21.png)
 
 Then click Build-> Build All to compile.
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105485_41b7d280_eb3b_4ec7_a439_e84675b3784a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105485_41b7d280_eb3b_4ec7_a439_e84675b3784a.png)
 
 After the Build progress bar in the lower right corner is finished, you will see the newly generated audio binary file in the /files/audio/ directory as follows:
 
-![Image](./images/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105880_d25368ef_b526_437d_9b80_9ccfb6ea02c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/okmx6ull-c/OKMX6ULL-C_Linux4_1_15_User_Compilation_Manual/1715131105880_d25368ef_b526_437d_9b80_9ccfb6ea02c3.png)
 
 ##### **4.4.2.2 QT Application Running**
 
