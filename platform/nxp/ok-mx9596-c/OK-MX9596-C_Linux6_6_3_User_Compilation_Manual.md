@@ -44,7 +44,7 @@ Common virtual machine software includes VMware (VMWare ACE), Virtual Boxand Vir
 
 Go to the VMware website https://www.vmware.com/cn.html to download Workstation Pro and get the product key. VMware is a paid software that requires purchasing, or you can choose to use a trial version.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
 
 After the download is complete, double-click the installation file to start the installation program.
 
@@ -52,31 +52,31 @@ After the download is complete, double-click the installation file to start the 
 
 Step 1: Double-click the startup program to enter the installation wizard, and click "Next";
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389043_f74bf566_192f_491f_ba86_ba89ac4d3387.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389043_f74bf566_192f_491f_ba86_ba89ac4d3387.png)
 
 Step 2: Check "I accept the terms in the license agreement (A)" and click "Next";
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389490_5a3d20ca_4d31_48be_8616_ab0a75e3ec49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389490_5a3d20ca_4d31_48be_8616_ab0a75e3ec49.png)
 
 Step 3: You can modify the installation location, install it to the partition where your computer installs the software, and click "Next";
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389680_112bd577_2c6d_49d7_a926_14c37f5cf801.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389680_112bd577_2c6d_49d7_a926_14c37f5cf801.png)
 
 Step 4: Decide whether to check the two check boxes and click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389918_74426b44_42fd_43f9_9d6b_fb9233a1f8e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869389918_74426b44_42fd_43f9_9d6b_fb9233a1f8e7.png)
 
 Step 5: Check the option to add the shortcuts and click "Next";
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869390105_1692ed6e_6a20_4ea9_96c7_34b88610d161.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869390105_1692ed6e_6a20_4ea9_96c7_34b88610d161.png)
 
 Step 6: Click "Install";
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869390345_53dd7b59_4eb1_4675_93af_06dfe3f840d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869390345_53dd7b59_4eb1_4675_93af_06dfe3f840d6.png)
 
 Step 7: Wait for the installation to complete;
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
 
 Step 8: After the installation is completed, you can click "Finish" for trial. If you need to use it for a long time, please buy it from the official and fill in the license. Go to the license activation page and enter the purchased license key.
 
@@ -100,7 +100,7 @@ Forlinx provides an installed Ubuntu development environment, which customers ca
 
 First, download the development environment provided by Forlinx. In the development environment documentation, there should be an MD5 checksum file. After downloading the development environment, you should verify the integrity of the compressed package using the MD5 checksum. (You can use an on-line MD5 checksum tool or download a specific MD5 checksum tool for this purpose). To check if the checksum in the verification file matches the checksum of the file itself. If they match, the file download is successful. If they don't match, it suggests that the file may be corrupt, and you should consider downloading it again.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903286776_8db2dd9f_cd3e_40e8_97ee_4774654f5fef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903286776_8db2dd9f_cd3e_40e8_97ee_4774654f5fef.png)
 
 Select all the compressed packages and right click to extract them to the ok-mx95 development environment:
 
@@ -108,17 +108,17 @@ Select all the compressed packages and right click to extract them to the ok-mx9
 
 Open the installed virtual machine.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869480763_8f97fe83_3047_4f3a_8ff2_dbcdb1a3e088.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869480763_8f97fe83_3047_4f3a_8ff2_dbcdb1a3e088.png)
 
 Select the directory where the newly extracted OK-MX95xx-VM17.5.2-Ubuntu20.04 virtual machine file is located, and double-click to open the startup file.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287119_7d92fa2b_e116_43df_b6d9_46db2081943f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287119_7d92fa2b_e116_43df_b6d9_46db2081943f.png)
 
 After loading, click to start the virtual machine to run. Enter the system's interface.
 
 The provided development environment account is: forlinx and the password is: forlinx, fill in the password and select Sign in to log in.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287361_c6af7a47_eb0f_476a_a7af_824fcdc90a53.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903287361_c6af7a47_eb0f_476a_a7af_824fcdc90a53.png)
 
 So far, you have successfully entered the development environment provided by Forlinx, and customers can put the source code in the user information folder into the development environment to start compiling and other operations ([**See 4. Linux Compilation**](https://forlinx-book.yuque.com/okypkp/dfmrkd/lz5rggkcvtu8pgk8))
 
@@ -140,7 +140,7 @@ The version of Ubuntu we chose to install is 22.04, and the introduction and dev
 
 Download "Ubuntu-22.04.1-desktop-amd64.iso" (you can download the version that you actually need; this is just an example with 22.04.1).
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583250_18390b4b_1196_4c82_8307_9f22c4e71d8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583250_18390b4b_1196_4c82_8307_9f22c4e71d8f.png)
 
 #### 3.1.1 Vmware Ubuntu Image Installation
 
@@ -148,79 +148,79 @@ If customers want to learn to build their own virtual machines, they can choose 
 
 Step 1: Open the VMware software and click on "Create New Virtual Machine". Enter the following interface, check "Customize (Advanced)" and click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583459_8dfde8cf_89c3_42ef_b2b5_7f7ce4d7a604.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583459_8dfde8cf_89c3_42ef_b2b5_7f7ce4d7a604.png)
 
 Step 2: Select the compatibility of the corresponding VMware version. The version can be viewed in Help-> About VMware Workstation. Click "Next" after confirmation:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583744_1f8c88f2_57f3_4baa_b596_74af1fb215f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869583744_1f8c88f2_57f3_4baa_b596_74af1fb215f1.png)
 
 Select “Install program from disc image file”, then click “Next”；
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584192_6793524b_482b_43e1_aeb3_db1dec72da60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584192_6793524b_482b_43e1_aeb3_db1dec72da60.png)
 
 Enter the virtual machine name and configuration installation location, and click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694.png)
 
 To configure the number of cores, click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584636_4fe029f5_73d3_42cf_8d01_5d8266c5aefe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584636_4fe029f5_73d3_42cf_8d01_5d8266c5aefe.png)
 
 Configure appropriate memory space and select "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584848_750d03fd_581d_4130_9966_9ef1025939cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869584848_750d03fd_581d_4130_9966_9ef1025939cb.png)
 
 Set the network type, use the default NAT form for networking, and click "Next". Keep the default values for the remaining steps until you reach the step to specify the disk capacity.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585093_76b7f0ed_f7a1_40e9_8509_7e6039bea53a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585093_76b7f0ed_f7a1_40e9_8509_7e6039bea53a.png)
 
 Using the recommended I/O controller, click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585428_016b5a4f_3818_4a68_a631_d2498120bc8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585428_016b5a4f_3818_4a68_a631_d2498120bc8f.png)
 
 Using the recommended disk type, click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585713_c06b7cbe_d288_4f2a_af55_7d6e99107012.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585713_c06b7cbe_d288_4f2a_af55_7d6e99107012.png)
 
 Using the default options, create a new virtual disk and click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585907_c658e5b0_f32e_4662_a9fe_c5ffb3748d94.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869585907_c658e5b0_f32e_4662_a9fe_c5ffb3748d94.png)
 
 Allocate a disk size of 80G and divide the virtual disk into multiple files, and click "Next":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586141_7e8a4dab_0ff2_4645_84e9_323fd7008529.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586141_7e8a4dab_0ff2_4645_84e9_323fd7008529.png)
 
 Click "Next" by default:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586324_4ae2f79f_159f_4d43_901d_a38b1efba18b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586324_4ae2f79f_159f_4d43_901d_a38b1efba18b.png)
 
 Click "Finish":
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586503_50bcaff6_9a7f_4ac5_a5ce_a3a1c9638117.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586503_50bcaff6_9a7f_4ac5_a5ce_a3a1c9638117.png)
 
 Once the virtual machine is powered on, select Try to Install Ubuntu.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586970_cffad2de_72c1_4f4e_a8af_eb5808a32729.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869586970_cffad2de_72c1_4f4e_a8af_eb5808a32729.png)
 
 Select the language and select install Ubuntu
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587201_dffb2ce0_3826_49ec_8ff8_1e8505780671.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587201_dffb2ce0_3826_49ec_8ff8_1e8505780671.png)
 
 Select a keyboard layout
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587425_cd6dfdfd_fb60_4bb3_a9ac_1ceddaa0360c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587425_cd6dfdfd_fb60_4bb3_a9ac_1ceddaa0360c.png)
 
 Select to upgrade and install the software, and continue by default
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587693_96841510_6f1d_4cbb_8226_5f6b08b525fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587693_96841510_6f1d_4cbb_8226_5f6b08b525fb.png)
 
 Select the installation method and hard disk partition. The default is to install now and continue.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587952_9463364d_3878_4b10_9ce8_295d6494a33c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869587952_9463364d_3878_4b10_9ce8_295d6494a33c.png)
 
 Enter the account no.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588554_7e9e7f72_e56f_4f8b_a02e_bdcf739a95fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588554_7e9e7f72_e56f_4f8b_a02e_bdcf739a95fb.png)
 
 After that, the virtual machine starts to install the image and wait patiently.
 
@@ -228,21 +228,21 @@ After that, the virtual machine starts to install the image and wait patiently.
 
 **Error 1**: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
 
 Solution: Right click on my computer to manage services and application services, and turn on all services related to VMware. After the service has started successfully, restart the virtual machine; or hang the virtual machine first, wait for it to start, and then continue to run the hung virtual machine.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
 
 **Error 2**: Internal error.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589342_acc3167f_f1bc_4e26_ab17_5e9f35b7591e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589342_acc3167f_f1bc_4e26_ab17_5e9f35b7591e.png)
 
 Solution: Refer to error 1.
 
 **Error 3**: Unable to install service VMware Authorization Service (VMAuthdService):
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589591_d34021d8_fca9_461e_a9e0_cb7d0e3a072f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589591_d34021d8_fca9_461e_a9e0_cb7d0e3a072f.png)
 
 Solution:
 
@@ -250,25 +250,25 @@ win+R
 
 Enter services.msc
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589803_7188217b_8454_464a_8b10_89f5dcfdc279.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869589803_7188217b_8454_464a_8b10_89f5dcfdc279.png)
 
 Then find the service and start it up as an authorization and authentication service for starting and accessing virtual machines.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590078_8aef4460_79c2_4763_8e7d_118c2d5983cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590078_8aef4460_79c2_4763_8e7d_118c2d5983cc.png)
 
 WMI must be started first:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590418_2f8e53a5_c2fc_4757_9953_c9e4fb189590.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590418_2f8e53a5_c2fc_4757_9953_c9e4fb189590.png)
 
 **Error 4**: Failed to install the hcmon driver
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590665_c36e2101_6100_454f_8aa5_3ca6957f749a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869590665_c36e2101_6100_454f_8aa5_3ca6957f749a.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then install again.
 
 **Error 5**: Intel VT-x is disabled.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
 
 Solution:
 
@@ -280,7 +280,7 @@ If that doesn't work, just turn the firewall off and reopen the VM. (varies by m
 
 Error 6: The virtual machine appears to be in use... Acquiring Ownership (T)
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591243_c7dee38e_bc9a_4e75_b107_7cf10d254f4f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591243_c7dee38e_bc9a_4e75_b107_7cf10d254f4f.png)
 
 Solution:
 
@@ -288,13 +288,13 @@ Solution:
 2. Enter the storage directory of the virtual machine and delete the \*.lck file. The lck represents the locked file.
 3. Open the Windows Task Manager and kill the VMware process
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591535_d122dbda_6632_4026_9d63_23db9d4537f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591535_d122dbda_6632_4026_9d63_23db9d4537f2.png)
 
 4. Restart the virtual machine
 
 Error 7: Failed to lock file.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591887_144b4cd3_ddb0_449d_a2f2_f40a3001899e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869591887_144b4cd3_ddb0_449d_a2f2_f40a3001899e.png)
 
 Solution:
 
@@ -308,7 +308,7 @@ Solution:
 
 The virtual machine does not have enough memory to run the image's maximum requirements； increase the virtual machine's memory and reboot the virtual machine
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592129_f2e6097d_9937_4a53_b0b3_1bbe72566871.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592129_f2e6097d_9937_4a53_b0b3_1bbe72566871.png)
 
 ### 3.2 Ubuntu Common Software Installation
 
@@ -316,17 +316,17 @@ The virtual machine does not have enough memory to run the image's maximum requi
 
 Click the icon similar to a package on the left side of the desktop to see some tools. We can also search for the tools we want. For example, we download a VScode tool, which is very convenient for our daily coding.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592379_88da66b9_82c5_4005_8e7f_edb58d0aa2ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592379_88da66b9_82c5_4005_8e7f_edb58d0aa2ea.png)
 
 Please search for the tool we need, click in to view details, click install to download, wait for the download to complete automatic installation, and then click "Launch" to run it.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592679_2fb3764d_0037_41e4_9af4_58ea85585a1b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592679_2fb3764d_0037_41e4_9af4_58ea85585a1b.png)
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592939_3b9a36d8_33cd_41b2_91fc_c6a49f4e81d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869592939_3b9a36d8_33cd_41b2_91fc_c6a49f4e81d7.png)
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593272_13fb8849_88df_47ef_85a3_4acb70beaee3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593272_13fb8849_88df_47ef_85a3_4acb70beaee3.png)
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593542_98dcaa2a_5828_4e6c_823d_050f711a226e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593542_98dcaa2a_5828_4e6c_823d_050f711a226e.png)
 
 #### 3.2.2 NFS Installation
 
@@ -336,7 +336,7 @@ The terminal executes the following command:
 forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 ```
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
 
 #### 3.2.3 FTP Server
 
@@ -369,19 +369,19 @@ Path: OK-MX9352-C (Linux) User Profile/Tools/FileZilla\_3.24.0.0\_win64-setup.ex
 
 After the installation is completed, open the client and the following interface appears:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png)
 
 Click File-site Management
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594367_8db7e0ba_7198_4c04_86e7_c07b526c2c82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594367_8db7e0ba_7198_4c04_86e7_c07b526c2c82.png)
 
 Add the IP address under the Ubuntu system to the host, user name: forlinx, password: forlinx. Click Connection
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png)
 
 After a successful connection, you can display the directory structure under the Ubuntu system and transfer files from the Windows system to the Ubuntu system via network.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594908_3a664d89_3204_4023_92fa_5e5222d18baf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1718869594908_3a664d89_3204_4023_92fa_5e5222d18baf.png)
 
 ### 3.3 Cross-compilation Environment
 
@@ -533,7 +533,7 @@ Compile application app cross compilation tool chain
 
 ### 4.2 Compilation
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903290919_e8b8d732_16a2_4a66_b7f7_f32a3016323f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Compilation_Manual/1754903290919_e8b8d732_16a2_4a66_b7f7_f32a3016323f.png)
 
 #### 4.2.1 Instructions for Using the SDK Path and Files
 

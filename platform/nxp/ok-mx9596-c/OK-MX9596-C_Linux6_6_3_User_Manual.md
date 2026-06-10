@@ -43,7 +43,7 @@ The NXP i.MX 95 processor supports ARM Mail-G310 GPU, 4KVPU, and NPU (2.0TOP/s).
 
 The FET-MX9596-C SoM supports 8GB LPDDR4x memory and 64GB eMMC. OK-OK-MX9596-C-C development board is rich in functional interface resources, providing a variety of peripheral interfaces, such as network card, audio Codec, TF Card, LVDS, MIPI, WIFI, 4G, PCIE, USB2.0, USB3.0 TYPE-C, serial port, can and other functional interfaces.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1761201832366_80ca7da3_ef7a_4e93_a1b2_b3b54cf1fcec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1761201832366_80ca7da3_ef7a_4e93_a1b2_b3b54cf1fcec.png)
 
 **Note:**
 
@@ -131,12 +131,12 @@ Here is an example using Putty to explain how to configure the terminal:
 
 **\- Ch D: Unused**
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267289_ea2bcbc4_44fc_4a13_b9a4_752432d5d226.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267289_ea2bcbc4_44fc_4a13_b9a4_752432d5d226.png)
 
 **Step 2:** Open and configure Putty; set the serial line to match the COM port of your computer with a baud rate of 115200.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267378_2e06ba56_39b4_49e5_ad6c_f763d4044684.png)  
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267503_1997083b_eb10_4562_ba4c_e7a611dbb68a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267378_2e06ba56_39b4_49e5_ad6c_f763d4044684.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267503_1997083b_eb10_4562_ba4c_e7a611dbb68a.png)
 
 **Step 3:** Turn on the development board. The serial port will output log messages until "Welcome to forlinx ok-mx95-C ttyLP0" appears, indicating the startup is complete.  
 
@@ -174,7 +174,7 @@ Forlinx provides a serial driver for WIN10, located at:
 **Case 4:** The port recognized by the device manager is abnormal.
 
 Error message: This device is not working properly because Windows cannot load the drivers required for this device. (Code 31), as shown below:  
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267600_8a55a8d1_1b9e_45c5_aeb1_9835bfd8a1e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267600_8a55a8d1_1b9e_45c5_aeb1_9835bfd8a1e2.png)
 
 Close all open terminal programs, then unplug and reconnect the serial cable.
 
@@ -191,15 +191,15 @@ Before logging into the network, ensure that the direct network connection betwe
 
 1\. Connect the development board's eth0 port to the computer using an Ethernet cable. Power on the board and boot the kernel. Confirm the blue heartbeat LED is blinking. Check the network card connection, ensuring its LED flashes rapidly. Once confirmed, proceed with testing the network connection.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267725_91e48bad_b96e_4651_8d32_cf52bcadba8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267725_91e48bad_b96e_4651_8d32_cf52bcadba8a.png)
 
 2\. Close the computer firewall (General computer operations, not described here in detail), then open the computer's run command.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267848_5fc2bca3_d21d_4229_855f_98fd3048988e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267848_5fc2bca3_d21d_4229_855f_98fd3048988e.png)
 
 3\. Use cmd to open the administrator interface , and the ping command to test the network connection status of the computer and the development board.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267968_34c0c381_ca10_43dd_af85_96d7cb1c1f36.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903267968_34c0c381_ca10_43dd_af85_96d7cb1c1f36.png)
 
 A data return indicates a normal network connection.
 
@@ -250,11 +250,11 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903268110_21b6fea4_16b3_4ba0_a68e_d3e9cccadd7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903268110_21b6fea4_16b3_4ba0_a68e_d3e9cccadd7d.png)
 
 Click "Open", the following dialog box will appear, click "accept" to enter the login interface.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903268202_a3990bb7_86d1_4314_87f2_a30802922d64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903268202_a3990bb7_86d1_4314_87f2_a30802922d64.png)
 
 ```bash
 login as: root
@@ -264,7 +264,7 @@ root@ok-mx95-c:~#
 
 You can use FileZilla (installation package provided by Forlinx: User Documents\\Software Documents\\3-Tools) to transfer files via SFTP.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903268308_e5565f19_9dcb_4169_9d3b_9607e604fe5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903268308_e5565f19_9dcb_4169_9d3b_9607e604fe5b.png)
 
 ### 2.4 System Partition
 
@@ -351,8 +351,8 @@ This chapter mainly explains the usage of the expansion interfaces on the develo
 
 The desktop is displayed as follows after the board booting:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903269899_9860a5c0_fab8_47c0_9729_bc1c81514ea1.png)  
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270016_1006737c_f470_47b2_96ba_79ff708d747c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903269899_9860a5c0_fab8_47c0_9729_bc1c81514ea1.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270016_1006737c_f470_47b2_96ba_79ff708d747c.png)
 
  **Note: Icon order may vary.**
 
@@ -363,7 +363,7 @@ The desktop is displayed as follows after the board booting:
 + **By factory default, only the eth0 network card is set to STATIC mode;**
 + **The set IP and other information will be saved to the relevant configuration file (/etc/systemd/network directory) of the system, so the network information set this time will be used every time the system is restarted.**
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270159_26f2c097_4552_4d8d_8a81_0b7b8c278906.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270159_26f2c097_4552_4d8d_8a81_0b7b8c278906.png)
 
 Clicking on the network configuration icon will open a interface program that supports two modes: STATIC and DHCP.
 
@@ -379,7 +379,7 @@ After clicking on the network configuration icon, select the STATIC mode as show
 |        gateway         |   Set up the gateway    |
 |          dns           |         Set DNS         |
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270383_40464c27_8b40_4616_a6fc_f3ff68367f17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270383_40464c27_8b40_4616_a6fc_f3ff68367f17.png)
 
 + DHCP mode:
 
@@ -387,37 +387,37 @@ After clicking on the network configuration icon, select the STATIC mode as show
 
 Select DHCP, select the network card device to be configured in Interface, and click “Apply and Restart Network” at the bottom of the interface to apply the settings and restart the network.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270512_13a917e4_17b9_450a_a73b_0dbef6ebba79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270512_13a917e4_17b9_450a_a73b_0dbef6ebba79.png)
 
 ### 3.3 OpenGL Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270614_ee1ca143_3190_4495_a960_f32669f498a8.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270614_ee1ca143_3190_4495_a960_f32669f498a8.png)
 
 OK-MX9596-C supports EGL 1.5，OpenGL ES2.
 
 Click the icon to enter the OpenGL test interface.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270699_ae3e3977_7a5b_49a1_9ce8_fb4bae244918.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270699_ae3e3977_7a5b_49a1_9ce8_fb4bae244918.png)
 
 ### 3.4 4G/5G Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270784_799358de_3de6_4977_a7cd_258f9c926a7a.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270784_799358de_3de6_4977_a7cd_258f9c926a7a.png)
 
 The 4G test program is used to test the external 4G module (EC20) on the OK-MX95xx-C. Before the test, please power off the development board, connect the module and insert the SIM card (pay attention to the direction of the SIM card), and start the development board Test：
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270876_fda5b862_3b63_4662_be10_cb4f1ddafe09.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270876_fda5b862_3b63_4662_be10_cb4f1ddafe09.png)
 
 Click the CONNECT button then the program will automatically enter the dialing process and get the IP to set the DNS, etc. After waiting patiently for a few seconds, click the ping button to test it.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270980_ffea2585_196c_4d82_a96c_b038e024d3ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903270980_ffea2585_196c_4d82_a96c_b038e024d3ad.png)
 
 ### 3.5 UART Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271069_a3934db0_27b3_4e9b_92e7_cd998068f01f.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271069_a3934db0_27b3_4e9b_92e7_cd998068f01f.png)
 
 In this test, ttyLP5 and ttyLP7 are used to test the serial port by short-circuiting pins 1 and 5, pins 2 and 6, pins 3 and 7 of P48 respectively.
 
-1. Click the UART test icon to enter the test application interface, click the gear icon![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271150_47db5c45_2643_4915_8bf6_19c228f7f3f5.png)setting button in the upper left corner, and set the serial port parameters as shown in the figure below:
+1. Click the UART test icon to enter the test application interface, click the gear icon![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271150_47db5c45_2643_4915_8bf6_19c228f7f3f5.png)setting button in the upper left corner, and set the serial port parameters as shown in the figure below:
 
    | **Relevant Parameter** |             **Meaning**             |
    | :--------------------: | :---------------------------------: |
@@ -430,9 +430,9 @@ In this test, ttyLP5 and ttyLP7 are used to test the serial port by short-circui
 
 
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271233_bb0ae15b_2f9c_4bc6_9b6c_1908a52b6c2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271233_bb0ae15b_2f9c_4bc6_9b6c_1908a52b6c2d.png)
 
-2\. After setting the serial port parameters, click the connection button "![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271338_d0076494_ffaf_44bf_8552_d959472d1398.png)" in the upper left corner. At this time, the test program can carry out the data receiving and sending test.
+2\. After setting the serial port parameters, click the connection button "![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271338_d0076494_ffaf_44bf_8552_d959472d1398.png)" in the upper left corner. At this time, the test program can carry out the data receiving and sending test.
 
 3\. Run the serial port send test command in the terminal. The received data will be displayed on the screen.
 
@@ -441,7 +441,7 @@ root@ok-mx95-c:~# fltest_uarttest -d /dev/ttyLP5 -b 115200 -w
 tx_0: NmROqBVoYMoWf3aodGUCUnyDkdmYDpIY
 ```
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271444_e3ac62e7_48c7_4acf_8df9_60cf0c7859e3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271444_e3ac62e7_48c7_4acf_8df9_60cf0c7859e3.png)
 
 Run the serial port receive test command in the terminal. When you click the test interface, a virtual keyboard will appear. After entering 32 consecutive characters, the terminal will print the data sent by QT.
 
@@ -451,7 +451,7 @@ rx_0: 12345678901234567890123456789012
 root@ok-mx95-c:~#
 ```
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271571_700e6179_a2f4_414d_abc2_e25d0d917cba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271571_700e6179_a2f4_414d_abc2_e25d0d917cba.png)
 
 **Note: The data entered via the virtual keyboard will only appear on the test interface after pressing “Enter”. Please enter “01234567890123456789012345678901” continuously, then press “Enter” on the virtual keyboard.**
 
@@ -461,37 +461,37 @@ root@ok-mx95-c:~#
 
 "WIFI" is a tool for configuring and testing the STA (station) mode of Wi-Fi.
 
-1\. Click icon![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271712_faeb0077_0e3c_45be_a369_4defef375dae.png)to enter test interface, select module from dropdown, enter SSID for Wi-Fi connection.
+1\. Click icon![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271712_faeb0077_0e3c_45be_a369_4defef375dae.png)to enter test interface, select module from dropdown, enter SSID for Wi-Fi connection.
 
 Router name, enter the router password in the PAWD column, click "connect" to connect to the router through WiFi.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271892_5c3c9af0_ad90_4d70_af18_b4d82a180b0f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271892_5c3c9af0_ad90_4d70_af18_b4d82a180b0f.png)
 
 2\. After the connection is successful, click "ping" to test the network after setting the IP.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271984_1158c6a5_4bcb_4f9c_9a80_97ca3150ae12.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903271984_1158c6a5_4bcb_4f9c_9a80_97ca3150ae12.png)
 
 ### 3.7 RTC Test
 
 **Note: Ensure button cell batteries are installed \& voltage is normal.**
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272081_563f9ec0_4696_47b8_9042_ab87264d3a95.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272081_563f9ec0_4696_47b8_9042_ab87264d3a95.png)
 
 RTC test includes setting time, power cycling, rerunning test software, and verifying RTC sync.
 
 Run the RTC test software to view and set the current system time with the following interface:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272157_ec4348c8_95e5_4158_aa2f_528ce1025d7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272157_ec4348c8_95e5_4158_aa2f_528ce1025d7a.png)
 
 Click “set” to adjust the time settings, then click “save” to finish the settings. After powering off and waiting, reboot and rerun the RTC test software to synchronize and confirm the RTC test is normal.
 
 ### 3.8 Watchdog Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272280_2859e84b_22c3_4310_8f0e_9bee7cfca385.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272280_2859e84b_22c3_4310_8f0e_9bee7cfca385.png)
 
 “Watchdog" tests the functionality of the watchdog feature. Interface as follows:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272379_c7489100_960a_4fd9_8fe8_d66e2de8edb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272379_c7489100_960a_4fd9_8fe8_d66e2de8edb6.png)
 
 Checking "feed dog" \& clicking "open watchdog" starts watchdog function with dog-feeding. System shouldn't restart under normal conditions.
 
@@ -499,27 +499,27 @@ Unchecking "Feed Dog" \& clicking "Activate Watchdog” starts watchdog function
 
 ### 3.9 Ping Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272499_bbc30104_4df8_4a6f_8cf1_3b4eb8986fb0.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272499_bbc30104_4df8_4a6f_8cf1_3b4eb8986fb0.png)
 
 "Ping" is a graphical tool for network testing, offering a user-friendly interface for ping operations.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272634_dc39a9fb_887f_4911_9bf5_0ec420ead424.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272634_dc39a9fb_887f_4911_9bf5_0ec420ead424.png)
 
 Write the target ip needing ping in the hostname field; after clicking the ping button, the RESULT column will indicate the result, click stop to end the ping test and clear to clean the information in the result.
 
 As shown in the figure, the network connection is smooth.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272731_2e3e16e2_0655_4625_8152_55705ed5ed1a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272731_2e3e16e2_0655_4625_8152_55705ed5ed1a.png)
 
 ### 3.10 Camera Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272823_298ac0d0_4425_46e7_9f54_b3e22ada553f.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903272823_298ac0d0_4425_46e7_9f54_b3e22ada553f.png)
 
 Click the icon to enter the camera test program and insert the USB camera.
 
 **Note: Currently, only UVC cameras are supported; MIPICSI cameras are not yet supported.**
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273050_041334e7_0d58_487a_8c3d_26dab19b2727.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273050_041334e7_0d58_487a_8c3d_26dab19b2727.png)
 
 Choose the camera video device node;
 
@@ -533,13 +533,13 @@ Click "Picture" to take a photo;
 
 Take the Logitech UVC camera as an example to conduct the camera test.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273207_6e4ad8f0_6836_4c2c_b7b8_cb2d8adf417e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273207_6e4ad8f0_6836_4c2c_b7b8_cb2d8adf417e.png)
 
 Click the Picture button to take a photo. The file is saved in /home/root/in jpg format. Use an appropriate tool on Windows to view it.
 
 ### 3.11 Backlight Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273332_e16c74c9_4eb5_4b31_94d5_181539bf1046.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273332_e16c74c9_4eb5_4b31_94d5_181539bf1046.png)
 
 "BackLight" is an LCD backlight adjustment App with a left-right progress bar for brightness control. Click to open the interface as follows:
 
@@ -547,7 +547,7 @@ Drag the slider for the corresponding screen to adjust the backlight brightness.
 
 ### 3.12 Play/Record Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273620_ec8a47e0_b9c8_4842_9752_782d36389991.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273620_ec8a47e0_b9c8_4842_9752_782d36389991.png)
 
 Before starting the recording test, plug a prepared headset into the carrier board's headphone jack. The carrier board mic and headset mic correspond to the left and right recording channels. Click the icon to open the recording test application to check if the sound card recording function is working properly.
 
@@ -561,7 +561,7 @@ FILE Container: "Wave File"
 Channels: 2  
 The interface will appear as shown below.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273802_5cd44160_8d35_4575_85b6_808db27c7cb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903273802_5cd44160_8d35_4575_85b6_808db27c7cb6.png)
 
 Click the Record button to test the recording. The recording file is saved to the/tmp/record \_ \*.wav file in the root directory.
 
@@ -569,7 +569,7 @@ Click the Record button to test the recording. The recording file is saved to th
 
 ### 3.13 Music Play Test
 
-Icon: ![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274021_22e00371_d44b_4d37_bb95_f5eb496763a8.png)
+Icon: ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274021_22e00371_d44b_4d37_bb95_f5eb496763a8.png)
 
 "music player" is a simple audio test application that can be used to test the function of the sound card or as a simple audio player.
 
@@ -581,28 +581,28 @@ There is currently a problem with the Select Sound button, which may cause the i
 
 ### 3.14 QML Video Playback Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274388_cc91239b_6516_4ace_8e6c_40859e461400.png)   
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274388_cc91239b_6516_4ace_8e6c_40859e461400.png)   
 **Note: Currently, only Video Modes are supported. Camera Modes are not supported.**   
 Qml Video supports video playback in H264 and H265 formats, with a maximum of 4k 60fps.   
 The qml video test program can play video based on qml. Click the icon to enter the test program interface.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274503_8e55c17a_9d47_4f87_9623_1b9a60dde526.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274503_8e55c17a_9d47_4f87_9623_1b9a60dde526.png)
 
 Click Select File 1 at the top, select the video file, and test the video file path:/home/forlinx/video/
 
 Click Full Screen-inverted to start playing the video in full screen.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274677_5641c4dc_a617_4970_bf15_db882508a133.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274677_5641c4dc_a617_4970_bf15_db882508a133.png)
 
 ### 3.15 Browser Test
 
-Icon：![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274842_2f917d84_c9b0_44c0_b773_730617b5dff3.png)
+Icon：![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274842_2f917d84_c9b0_44c0_b773_730617b5dff3.png)
 
 **Note: Before testing, check whether the time of the development board is accurate, and check the network situation. Note: If the development board time is abnormal, it will cause certificate problems.**
 
 Click the icon to enter the browser interface and enter the official website of forlinx by default.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274939_fe188164_2548_4913_8896_172d833369ff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903274939_fe188164_2548_4913_8896_172d833369ff.png)
 
 ## 4\. OK- MX9596-C Command Line Function Test
 
@@ -892,7 +892,7 @@ OK-MX9596-C development board is equipped with 4 x UART, as shown in the followi
 
 In this test, ttyLP5 and ttyLP7 are used to test the serial port by short-circuiting pins 1 and 5, pins 2 and 6, pins 3 and 7 of P48 respectively.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903276675_2ae625e4_3659_47b0_a741_2ca2b2104bfa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903276675_2ae625e4_3659_47b0_a741_2ca2b2104bfa.png)
 
 ```bash
 root@ok-mx95-c:~# fltest_uarttest -d /dev/ttyLP5 -r &
@@ -1152,7 +1152,7 @@ $3}'`/kernel/drivers/usb/gadget/legacy/g_mass_storage.ko removable=1 file=/dev/m
 
 It can be found that the PC will mount the mmcblk0p1 partition as a USB flash drive.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277293_6d68b046_5e14_4165_9158_bb7aa0fe9357.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277293_6d68b046_5e14_4165_9158_bb7aa0fe9357.png)
 
 ### 4.12 Ethernet Configuration
 
@@ -1210,7 +1210,7 @@ Run the iperf3 server on the cmd command terminal of Windows:
 D:\iperf-3.13.64_64>iperf3.exe -s
 ```
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277565_3fb15777_57d7_4d25_9c1c_1b329694a4ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277565_3fb15777_57d7_4d25_9c1c_1b329694a4ec.png)
 
 Connect the network cable to the eth1 interface. After the system is started, eth1 automatically obtains the IP. Enter the command at the serial port debugging terminal of the development board to test the sending rate of the network port:
 
@@ -1314,7 +1314,7 @@ After the test is completed, the rates of the six test flows are added to obtain
 **Note: To properly use this feature, the PC's IP address must be in the same network segment as the development board's.**   
 The OK-MX9596-C development board comes with the lighttpd web server pre-installed, and the lighttpd service has been automatically started at system startup. Enter the IP address of the board into the PC browser to view the web pages in the board's webserver, as shown in the following figure:
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277724_34462292_9237_490c_b122_46621bb596bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277724_34462292_9237_490c_b122_46621bb596bc.png)
 
 #### 4.13.2 SFTP
 
@@ -1703,7 +1703,7 @@ The mipi screen backlight node is/sys/class/backlight/mipi-backlight/, and the t
 
 #### 4.20.2 FAN
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277858_faa772f1_da04_41dd_935e_4d6b369d474b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277858_faa772f1_da04_41dd_935e_4d6b369d474b.png)
 
 The schematic diagram of the fan is shown above, which supports adjusting the fan speed through PWM function. Forlinx has added the fan PWM to the temperature control strategy, and the duty cycle of TPM5 \_ CH2 will change with the CPU temperature. See the thermal \_ zones node in the device tree for specific values.   
 By default, the fan does not have the function to adjust the rotation speed. If you need to adjust the fan rotation speed, please use a fan that supports speed adjustment.
@@ -1716,7 +1716,7 @@ There are 5 x CAN on the carrier board, all of which support CANFD and are led o
 
 The maximum bitrate supported is 1m
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277994_1be89087_d3f9_49d1_83ca_986d0785b8bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903277994_1be89087_d3f9_49d1_83ca_986d0785b8bc.png)
 
 Short H, L, and GND of can2 and can3, respectively, to test. The register address corresponding to can1 is larger, so can1, can2, can3, can4, and can5 correspond to the kernel device numbers can4, can0, can1, can2, and can3, respectively. Other can interface test methods are the same and will not be repeated here.
 
@@ -1872,7 +1872,7 @@ The development board provides 12 x ADC with single-ended inputs. Voltage sampli
 
 All ADC are led out at the carrier board P11. Refer to the schematic to connect the ADC pins before testing.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903278080_89ed05b1_a212_4b76_bdd6_971bdaeb1060.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903278080_89ed05b1_a212_4b76_bdd6_971bdaeb1060.png)
 
  **Note: In order to protect the board, please plug and unplug the board after power off.**
 
@@ -1895,7 +1895,7 @@ root@ok-mx95-c:~# cat /sys/bus/iio/devices/iio\:device0/in_voltage0_raw
 An SPI3 interface is led out from the OK-MX9596-C carrier board, and the default software configures it as spidev for loopback test. When testing, refer to the schematic to short SOUT to SIN and then test with the command below.   
 Confirm the name of the SPI device before testing.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903278166_24280a6c_302e_47c4_8245_ac274b3c956a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903278166_24280a6c_302e_47c4_8245_ac274b3c956a.png)
 
 ```bash
 root@ok-mx95-c:~# fltest_spidev_test -D /dev/spidev0.0
@@ -1956,7 +1956,7 @@ Turn on Bluetooth on your phone and search for devices. A device named "ok-mx95-
 
 If pairing fails, please check whether pairable and discoverable are enabled.
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903278266_325f6321_48e1_448b_acc9_ac8a351e89f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903278266_325f6321_48e1_448b_acc9_ac8a351e89f4.png)
 
 ```bash
 [  CHG  ] Controller A8:41:F4:8B:B0:96 Discoverable: yes
@@ -2380,7 +2380,7 @@ i.MX95 CPU integrates a machine learning acceleration NPU internally, with a com
 
 Demo to recognize information such as people, animals, plants, locations, etc., in the input image (grace\_hopper.bmp).
 
-![Image](./images/OK-MX9596-C_Linux6_6_3_User_Manual/1754903280095_4a693803_4aca_4f81_a90b_2c21cedda8c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9596-c/OK-MX9596-C_Linux6_6_3_User_Manual/1754903280095_4a693803_4aca_4f81_a90b_2c21cedda8c1.png)
 
 grace\_hopper.bmp
 
