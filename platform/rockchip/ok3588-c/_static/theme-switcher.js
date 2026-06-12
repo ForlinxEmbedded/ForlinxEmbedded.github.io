@@ -146,8 +146,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         
         var link = document.createElement('a');
         link.href = '#' + heading.id;
-        // 擦除 Sphinx 默认自带的那个难看的段落符号 '¶'
-        link.innerText = heading.innerText.replace('¶', '').trim(); 
+        
+        // 🌟 终极防乱码提取逻辑：深度克隆节点，并删掉 Sphinx 隐藏的锚点图标
+        var clone = heading.cloneNode(true);
+        var headerlink = clone.querySelector('.headerlink');
+        if (headerlink) headerlink.remove(); // 物理剥离隐藏图标
+        
+        // 提取纯净文字，并用正则清理任何可能残留的不可见特殊符号
+        link.innerText = clone.textContent.replace(/[¶?]/g, '').trim();
         
         listItem.appendChild(link);
         tocList.appendChild(listItem);
