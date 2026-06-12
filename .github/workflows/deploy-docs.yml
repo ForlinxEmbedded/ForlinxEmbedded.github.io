@@ -179,7 +179,7 @@ jobs:
         find ./docs_build -type f -name ".buildinfo" -exec rm -f {} +
 
         # 4. 🌟 核心瘦身：既然 CSS 里已经有了线上字体，直接把 platform 下所有的本地重复字体斩草除根！
-        find ./docs_build/platform -type d -name "fonts" -exec rm -rf {} +
+        rm -rf ./docs_build/*/*/_static/fonts || true
         
         echo "✅ 大扫除完成！现在的真实纯净体积是："
         du -sh ./docs_build
