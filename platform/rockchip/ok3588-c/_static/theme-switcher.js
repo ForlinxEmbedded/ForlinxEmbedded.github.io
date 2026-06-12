@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 if (matchItem) {
                     matchItem.classList.add('active');
                     currentActiveItem = matchItem;
+                    matchItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
             }
         });
