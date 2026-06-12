@@ -103,10 +103,18 @@ If you require further technical assistance or have commercial inquiries, our te
         var sidebar = document.querySelector(".wy-menu-vertical");
         if (sidebar) {
             var contactMenu = `
+                <style>
+                    /* 彻底修复侧边栏在日间/暗黑模式下发白、突兀的问题 */
+                    #custom-contact-ul { background-color: transparent !important; margin-bottom: 0; }
+                    #custom-contact-li { background-color: transparent !important; }
+                    #custom-contact-link { background-color: transparent !important; }
+                    /* 添加适配任何主题的微弱半透明 hover 效果 */
+                    #custom-contact-link:hover { background-color: rgba(128, 128, 128, 0.15) !important; }
+                </style>
                 <p class="caption" role="heading"><span class="caption-text">CONTACT & SUPPORT</span></p>
-                <ul>
-                    <li class="toctree-l1">
-                        <a class="reference internal" href="#contact-support">Contact Us</a>
+                <ul id="custom-contact-ul">
+                    <li class="toctree-l1" id="custom-contact-li">
+                        <a id="custom-contact-link" href="#contact-support">Contact Us</a>
                     </li>
                 </ul>
             `;
