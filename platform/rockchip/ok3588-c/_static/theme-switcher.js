@@ -132,6 +132,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     
     var tocList = document.createElement('ul');
 
+    var currentActiveItem = null;
+    var isClickScrolling = false;
+
     // 3. 循环将标题映射到右侧目录中
     headings.forEach(function(heading, index) {
         // 如果标题没有 ID（锚点），帮它自动生成一个
@@ -154,6 +157,20 @@ document.addEventListener("DOMContentLoaded", async function () {
         
         // 提取纯净文字，并用正则清理任何可能残留的不可见特殊符号
         link.innerText = clone.textContent.replace(/[¶?]/g, '').trim();
+
+        link.addEventListener('click', function(e) {
+            isClickScrolling = true; // 上锁
+            
+            if (currentActiveItem) {
+                currentActiveItem.classList.remove('active');
+            }
+            listItem.classList.add('active'); // 瞬间变蓝
+            currentActiveItem = listItem;
+            
+            setTimeout(function() {
+                isClickScrolling = false; // 800毫秒后解锁
+            }, 800);
+        });
         
         listItem.appendChild(link);
         tocList.appendChild(listItem);
@@ -162,8 +179,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     tocContainer.appendChild(tocList);
     document.body.appendChild(tocContainer);
 
-    // 4. 🌟 高性能滚动监听 (ScrollSpy)
-    var currentActiveItem = null;
+
 
     var observerOptions = {
         root: null,
@@ -173,6 +189,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
 
     var observer = new IntersectionObserver(function(entries) {
+
+        if (isClickScrolling) return;
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
                 var targetId = entry.target.id;
