@@ -108,3 +108,86 @@ document.addEventListener("DOMContentLoaded", async function () {
     applyTheme(currentTheme);
     createButton();
 });
+
+
+/* ==========================================================================
+   🌟 新增：右侧智能浮动目录生成与滚动监听 (ScrollSpy) 引擎
+   ========================================================================== */
+   document.addEventListener("DOMContentLoaded", function() {
+    var mainContent = document.querySelector('.rst-content');
+    if (!mainContent) return; // 如果没有正文区域，直接退出
+
+    // 1. 抓取正文中所有的 H2 和 H3 标题
+    var headings = mainContent.querySelectorAll('h2, h3');
+    if (headings.length === 0) return; // 如果页面没有标题，不生成目录
+
+    // 2. 动态创建右侧 TOC 结构
+    var tocContainer = document.createElement('div');
+    tocContainer.id = 'right-side-toc';
+    
+    var tocTitle = document.createElement('div');
+    tocTitle.id = 'right-side-toc-title';
+    tocTitle.innerText = 'ON THIS PAGE';
+    tocContainer.appendChild(tocTitle);
+    
+    var tocList = document.createElement('ul');
+
+    // 3. 循环将标题映射到右侧目录中
+    headings.forEach(function(heading, index) {
+        // 如果标题没有 ID（锚点），帮它自动生成一个
+        if (!heading.id) {
+            heading.id = 'heading-link-' + index;
+        }
+        
+        var listItem = document.createElement('li');
+        // 根据是 H2 还是 H3 赋予不同的 class，CSS 里 H3 会自动向右缩进
+        listItem.className = heading.tagName.toLowerCase() === 'h2' ? 'toc-h2' : 'toc-h3';
+        listItem.setAttribute('data-target', heading.id);
+        
+        var link = document.createElement('a');
+        link.href = '#' + heading.id;
+        // 擦除 Sphinx 默认自带的那个难看的段落符号 '¶'
+        link.innerText = heading.innerText.replace('¶', '').trim(); 
+        
+        listItem.appendChild(link);
+        tocList.appendChild(listItem);
+    });
+    
+    tocContainer.appendChild(tocList);
+    document.body.appendChild(tocContainer);
+
+    // 4. 🌟 高性能滚动监听 (ScrollSpy)
+    var currentActiveItem = null;
+
+    var observerOptions = {
+        root: null,
+        // 这里的 Margin 非常关键：它把屏幕分为一块“黄金高亮区”，标题滚动到距离顶部 80px 时才触发高亮
+        rootMargin: '-80px 0px -70% 0px', 
+        threshold: 0
+    };
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                var targetId = entry.target.id;
+                
+                // 取消上一个高亮
+                if (currentActiveItem) {
+                    currentActiveItem.classList.remove('active');
+                }
+                
+                // 激活当前最新滚到的高亮
+                var matchItem = tocList.querySelector('li[data-target="' + targetId + '"]');
+                if (matchItem) {
+                    matchItem.classList.add('active');
+                    currentActiveItem = matchItem;
+                }
+            }
+        });
+    }, observerOptions);
+
+    // 开始指挥观察器盯着每一个正文标题
+    headings.forEach(function(heading) {
+        observer.observe(heading);
+    });
+});

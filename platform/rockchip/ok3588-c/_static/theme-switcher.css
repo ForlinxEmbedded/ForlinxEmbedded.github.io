@@ -510,3 +510,90 @@ pre, code {
     }
 }
 
+
+/* ==========================================================================
+   🌟 新增：右侧智能浮动目录 (TOC) 宽屏布局样式
+   ========================================================================== */
+   @media (min-width: 1200px) {
+    /* 为右侧固定目录腾出 260px 空间，保持正文排版不被挤压 */
+    .wy-nav-content-wrap {
+        padding-right: 260px !important;
+    }
+    
+    /* 右侧悬浮目录主容器 */
+    #right-side-toc {
+        position: fixed;
+        top: 80px;
+        right: 30px;
+        width: 210px;
+        max-height: calc(100vh - 140px);
+        overflow-y: auto;
+        padding: 10px 0 10px 15px;
+        border-left: 1px solid var(--theme-border);
+        font-size: 13px;
+        z-index: 998; /* 确保层级低于置顶按钮和主题按钮 */
+    }
+    
+    /* 目录小标题 */
+    #right-side-toc-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+        color: var(--theme-link);
+    }
+    
+    #right-side-toc ul {
+        list-style: none !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    #right-side-toc li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    
+    /* H3 三级标题向内缩进，体现层级结构 */
+    #right-side-toc li.toc-h3 {
+        padding-left: 12px;
+    }
+    
+    #right-side-toc a {
+        color: var(--theme-fg);
+        opacity: 0.65;
+        transition: all 0.2s ease;
+        display: block;
+        word-break: break-all;
+    }
+    
+    #right-side-toc a:hover {
+        opacity: 1;
+        color: #0071e3 !important;
+        text-decoration: none;
+    }
+
+    /* 🌟 核心高亮：当滑动到正文对应标题时，由 JS 自动激活的样式 */
+    #right-side-toc li.active a {
+        color: #0071e3 !important; /* 浅色模式激活时变成飞凌/苹果蓝 */
+        opacity: 1 !important;
+        font-weight: 700;
+        border-left: 2px solid #0071e3;
+        padding-left: 8px;
+        margin-left: -16px;
+    }
+    
+    /* 暗色模式下激活的高亮色彩自动微调 */
+    .theme-dark #right-side-toc li.active a {
+        color: var(--theme-link) !important;
+        border-left-color: var(--theme-link);
+    }
+}
+
+/* 窄屏、平板或移动端下，右侧目录自动隐形，确保主体阅读宽度 */
+@media (max-width: 1199px) {
+    #right-side-toc {
+        display: none !important;
+    }
+}
