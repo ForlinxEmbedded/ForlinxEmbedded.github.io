@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # 授予写入权限，以便将改写后的纯文本 MD 文件安全 push 回仓库
+      pages: write     # 赋予官方部署 Pages 的权限
+      id-token: write  # 官方部署必须
 
     steps:
     # 1️⃣ Checkout 仓库
@@ -164,10 +166,12 @@ jobs:
     - name: Add CNAME file
       run: echo "docs.forlinx.net" > ./docs_build/CNAME
         
-    # 1️⃣4️⃣ 最终将无图的超轻量前端资产发布至 GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
+    # 1️⃣4️⃣ 官方原生：只上传纯粹的静态网页文件夹（绝不夹带 .git 历史包袱）
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs_build
-        publish_branch: gh-pages
+        path: ./docs_build
+
+    # 1️⃣5️⃣ 官方原生：正式发布到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
