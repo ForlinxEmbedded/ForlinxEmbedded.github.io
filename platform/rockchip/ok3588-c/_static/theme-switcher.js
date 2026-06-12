@@ -117,8 +117,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     var mainContent = document.querySelector('.rst-content');
     if (!mainContent) return; // 如果没有正文区域，直接退出
 
-    // 1. 抓取正文中所有的 H2 和 H3 标题
-    var headings = mainContent.querySelectorAll('h2, h3');
+    // 1. 抓取正文中所有的 H2、H3 和 🌟新增的 H4 标题
+    var headings = mainContent.querySelectorAll('h2, h3, h4');
     if (headings.length === 0) return; // 如果页面没有标题，不生成目录
 
     // 2. 动态创建右侧 TOC 结构
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         
         var listItem = document.createElement('li');
         // 根据是 H2 还是 H3 赋予不同的 class，CSS 里 H3 会自动向右缩进
-        listItem.className = heading.tagName.toLowerCase() === 'h2' ? 'toc-h2' : 'toc-h3';
+        listItem.className = 'toc-' + heading.tagName.toLowerCase();
         listItem.setAttribute('data-target', heading.id);
         
         var link = document.createElement('a');

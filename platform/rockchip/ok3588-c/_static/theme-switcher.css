@@ -515,9 +515,9 @@ pre, code {
    🌟 新增：右侧智能浮动目录 (TOC) 宽屏布局样式
    ========================================================================== */
    @media (min-width: 1200px) {
-    /* 为右侧固定目录腾出 260px 空间，保持正文排版不被挤压 */
+    /* 为右侧固定目录腾出 360px 空间，保持正文排版不被挤压 */
     .wy-nav-content-wrap {
-        padding-right: 260px !important;
+        padding-right: 360px !important;
     }
     
     /* 右侧悬浮目录主容器 */
@@ -525,7 +525,7 @@ pre, code {
         position: fixed;
         top: 80px;
         right: 80px;
-        width: 210px;
+        width: 260px;
         max-height: calc(100vh - 200px);
         overflow-y: auto;
         padding: 10px 0 10px 15px;
@@ -558,6 +558,11 @@ pre, code {
     /* H3 三级标题向内缩进，体现层级结构 */
     #right-side-toc li.toc-h3 {
         padding-left: 12px;
+    }
+
+    #right-side-toc li.toc-h4 {
+        padding-left: 24px;
+        font-size: 12.5px; 
     }
     
     #right-side-toc a {
