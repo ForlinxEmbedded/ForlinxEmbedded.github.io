@@ -83,18 +83,11 @@ APPLICATION NOTE
    RK Development Manual <https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html>
 
 
-.. toctree::
-   :caption: CONTACT & SUPPORT
-   :maxdepth: 1
+.. _contact-support:
 
-   Contact Us <index.html#contact-support>
-
-
-.. _contact_support:
-
-====================
 Contact & Support
-====================
+-------------------
+
 If you require further technical assistance or have commercial inquiries, our team is ready to help:
 
 .. raw:: html
@@ -104,6 +97,23 @@ If you require further technical assistance or have commercial inquiries, our te
         <li><i class="fa-solid fa-briefcase" style="color: #007acc; width: 20px;"></i> <strong>Sales Inquiries:</strong> <a href="mailto:sales@forlinx.com">sales@forlinx.com</a></li>
         <li><i class="fa-solid fa-globe" style="color: #007acc; width: 20px;"></i> <strong>Website:</strong> <a href="https://www.forlinx.net" target="_blank">www.forlinx.net</a></li>
     </ul>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var sidebar = document.querySelector(".wy-menu-vertical");
+        if (sidebar) {
+            var contactMenu = `
+                <p class="caption" role="heading"><span class="caption-text">CONTACT & SUPPORT</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="#contact-support">Contact Us</a>
+                    </li>
+                </ul>
+            `;
+            sidebar.insertAdjacentHTML("beforeend", contactMenu);
+        }
+    });
+    </script>
 
 ----
 
