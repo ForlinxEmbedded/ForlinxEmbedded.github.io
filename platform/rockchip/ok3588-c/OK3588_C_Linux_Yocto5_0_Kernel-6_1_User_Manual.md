@@ -63,21 +63,21 @@ There are differences in the combination of CSI/DSI interfaces.
 
 FET3588 SoM
 
-![Image](images/image_1779243519740.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1779243519740.png)
 
 FET3588J SoM
 
-![Image](images/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
 
 FET3588S2 SoM
 
-![Image](images/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)
 
 Board-to-board connections enable extensive peripheral interfaces such as RTC, MIPI, USB, DISPLAY, CAN, and PCIe. These resources can be directly utilized for product development and validation, significantly accelerating the R\&D process. Some of the peripheral FET3588S2-C cannot be used. Refer to the [Peripheral Access](#peripheral-access) chapter for details.
 
 OK3588-C
 
-![Image](images/1773454975472_8f93d706_b9ce_49b3_8bc9_c8b0b0e9f873.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1773454975472_8f93d706_b9ce_49b3_8bc9_c8b0b0e9f873.png)
 
 #### 1.4 Main Frequency Setting Description
 
@@ -112,7 +112,7 @@ Download from the Resource Download ([https://www.forlinx.net/resources/download
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding Rockchip documentations under Software Resources"->“Rockchip Linux Software Development” Please read the readme \_ en. md for details.
 
-![Image](images/image-20260606112534297.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260606112534297.png)
 
 #### 1.6 Overview
 
@@ -170,7 +170,7 @@ Summarizes common issues encountered during development and their corresponding 
 
 Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. As shown in the figure:
 
-![Image](images/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
 
 ### 3\. Quick Start
 
@@ -178,9 +178,9 @@ Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. As sh
 
 OK3588-C Interface Diagram: 
 
-![Image](images/1776329292214_981ff9ed_a11b_4e99_a1f2_48d6de365e5d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776329292214_981ff9ed_a11b_4e99_a1f2_48d6de365e5d.png)
 
-![Image](images/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776584150967_bcd1d06f_03da_4366_92b4_8ea33f4b9041.png)
 
 #### 3.2 Debug Methods
 
@@ -198,13 +198,13 @@ The OK3588 platform uses a Type-C interface for its debug serial port, featuring
 
 Please download from the Resource Download page ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). On this page, select the "**OK3588-C/C2**" or "**OK3588S2-C**" page based on your processor board model. Under "**TOOLS**" -> "**Driver Tool**", you will find the tool "**CP210x\_VCP\_Windows\_XP\_Vista.zip**". Download this compressed package and extract it to the current directory. Depending on your computer's configuration, run either **CP210xVCPInstaller\_x64.exe** or **CP210xVCPInstaller\_x86.exe**. This will install the corresponding driver on your computer.
 
-![1776397661305\_7bdb0536\_0067\_4a27\_97a0\_9869de92afb4](images/1776397661305_7bdb0536_0067_4a27_97a0_9869de92afb4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776397661305_7bdb0536_0067_4a27_97a0_9869de92afb4.png)
 
 ###### 3.2.1.2 Install the terminal software PuTTY
 
 Please download it from the Resource Download page ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). On this page, select the "OK3588-C/C2" or "OK3588S2-C" page based on your processor board model. Under "TOOLS" -> "Debug Tool", you will find the installation package for the PuTTY terminal software: "putty-64bit-0.71-installer". Download it to your computer and install PuTTY.
 
-![1776402431048\_40641e90\_5e96\_4e07\_aa79\_2da433c0b8e4](images/1776402431048_40641e90_5e96_4e07_aa79_2da433c0b8e4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776402431048_40641e90_5e96_4e07_aa79_2da433c0b8e4.png)
 
 ###### 3.2.1.3 PuTTY Usage
 
@@ -212,17 +212,17 @@ The following describes the serial login method using the PuTTY terminal softwar
 
 **Step 1 :** Use a Type-C cable to connect the PC to the debug serial port of the OK3588-C. The debug interface is located on the board as shown in the following position:
 
-![1776411597715\_082f849e\_a92b\_4b62\_a437\_cea45c07c0c3](images/1776411597715_082f849e_a92b_4b62_a437_cea45c07c0c3.png)Open Windows Device Manager and check the recognized COM port number (e.g., COM3) under "Ports (COM \& LPT)". The actual displayed port shall prevail.
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776411597715_082f849e_a92b_4b62_a437_cea45c07c0c3.png)Open Windows Device Manager and check the recognized COM port number (e.g., COM3) under "Ports (COM \& LPT)". The actual displayed port shall prevail.
 
-![1776747897279\_d8f97a60\_2ae3\_4ad7\_8e5c\_ed3869dc9e8b](images/1776747897279_d8f97a60_2ae3_4ad7_8e5c_ed3869dc9e8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776747897279_d8f97a60_2ae3_4ad7_8e5c_ed3869dc9e8b.png)
 
 **Step 2 :** Open the PuTTY terminal software, select "Session", set the "Serial line" according to the COM port used by your computer, and set the baud rate to **115200**.
 
-![1775869085036\_c87d748c\_a581\_4738\_af6e\_e99b3b0c3566](images/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566-1780371464661.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566_1780371464661.png)
 
 **Step 3:** After completing the above settings, you can enter the COM port used by your computer in the "Saved Sessions" field. The figure below uses COM24 as an example. Save the settings. When opening the serial port again later, you can directly click the saved port number.
 
-![1775869085036\_c87d748c\_a581\_4738\_af6e\_e99b3b0c3566](images/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566-1780371428861.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566_1780371428861.png)
 
 **Step 4:** Turn on the power switch of the development board. The startup information shown below indicates a successful boot. Login and Password is forlinx.
 
@@ -244,11 +244,11 @@ The OK3588-C supports SSH login over Ethernet.
 + The network interface is configured with a static IP address by default: 192.168.0.232;
 + Login and password are forlinx.
 
-![1776411283846\_3174c193\_eb9d\_4393\_8496\_97fbf843c0a9](images/1776411283846_3174c193_eb9d_4393_8496_97fbf843c0a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776411283846_3174c193_eb9d_4393_8496_97fbf843c0a9.png)
 
 **SSH login to the development board:**
 
-![1776409587424\_280ed0ff\_6a11\_4f1d\_ad5d\_50cd26a30289](images/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776409587424_280ed0ff_6a11_4f1d_ad5d_50cd26a30289.png)
 
 After successful login, the following prompt is displayed: 
 
@@ -272,7 +272,7 @@ Download from the Resource Download (https://www.forlinx.net/resources/download-
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARE”->“Yocto”.
 
-![1776748292833\_2143298a\_d912\_4f3b\_9884\_c6f2e3fa727b](images/1776748292833_2143298a_d912_4f3b_9884_c6f2e3fa727b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776748292833_2143298a_d912_4f3b_9884_c6f2e3fa727b.png)
 
 ### 3\. Image Flashing
 
@@ -289,31 +289,31 @@ Download the driver from the Resource Download page ([https://www.forlinx.net/re
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM model. There is DriverAssistant\_v5.13.zip under "TOOLS"->“Driver Tool”. Download the zip package, extract it to any directory, and run the`DriverInstall.exe` with administrator privileges.
 
-![1776743702899\_b33be381\_d931\_436c\_b2cd\_bbe043ecd706](images/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
 
 Click `Driver Installation`.
 
-![1772256499931\_393b981a\_36e8\_45c1\_87d2\_735c03018473](images/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1772256499931_393b981a_36e8_45c1_87d2_735c03018473.png)
 
 The driver is installed successfully. Click OK.
 
-![1776747796826\_1bf0eb6e\_41df\_4a3b\_af09\_c54a3d0c9beb](images/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776747796826_1bf0eb6e_41df_4a3b_af09_c54a3d0c9beb.png)
 
 ##### 3.1.2 Complete OTG Flashing
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model, . There is “RKDevTool\_Release\_v3.37.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
 
-![1776739556462\_f89f01fd\_5ac0\_495b\_88c8\_129f51e080d4](images/1776739556462_f89f01fd_5ac0_495b_88c8_129f51e080d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776739556462_f89f01fd_5ac0_495b_88c8_129f51e080d4.png)
 
 It is a development tool provided by Rockchip. Launch the application and connect the development board Type-C0 port to your computer host using a Type-C cable.
 
 The Type-C0 port, Recovery button, and Reset button are located on the board as shown in the following position:
 
-![download](images/download.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/download.png)
 
 Press and hold the Recovery button on the development board. Then, press the Reset button to reboot the system. Once the Rockchip development tool displays “Found One LOADER Device”, you can release the Recovery button.
 
-![1776740683969\_23d45d81\_3305\_4cf6\_bfd3\_2aa804d5ca10](images/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
 
 Step1:  Click “Upgrade Firmware”;
 
@@ -368,19 +368,19 @@ Step 4: Copy the compiled userdata.img image file to the local directory on the 
 
 Step 5: Change the name field in the last row to userdata and click`Dev Partition`. The system will automatically read the corresponding partition address.
 
-![1776742712849\_9a6e1cb0\_6fac\_47f7\_8434\_8ce8de69b36f](images/1776742712849_9a6e1cb0_6fac_47f7_8434_8ce8de69b36f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776742712849_9a6e1cb0_6fac_47f7_8434_8ce8de69b36f.png)
 
 A prompt asking whether to update the download link will appear; click`是（Y）`.
 
-![1776750522300\_4055cd65\_37ae\_493b\_8ddf\_ddec358a8660](images/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
 
 A message appears indicating that the partition table has been successfully read. Click`确定`.
 
-![1776750533466\_23854857\_1e02\_490c\_8e91\_ff506995bfa2](images/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
 
 Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click the`Run`to automatically flash and restart.
 
-![1776742816548\_23d8b85f\_102b\_43b7\_960c\_76e850eaaa97](images/1776742816548_23d8b85f_102b_43b7_960c_76e850eaaa97.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776742816548_23d8b85f_102b_43b7_960c_76e850eaaa97.png)
 
 If you encounter any issues, please check the USB connection and restart the device, and check whether the partition is too small or the image is too large.
 
@@ -399,21 +399,21 @@ Before flashing firmware via USB OTG, ensure you have the following hardware rea
 
 Please download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). Navigate to either the “OK3588-C/C2” or “OK3588S2-C” section based on your SoM model, . There is “SDDiskTool\_v1.78.zip” under "TOOLS"->“Flashing Tool”. Download the zip package and extract it to the current directory.
 
-![1776750706410\_398ea4cd\_ba1d\_470f\_842d\_747b90bd8288](images/1776750706410_398ea4cd_ba1d_470f_842d_747b90bd8288.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750706410_398ea4cd_ba1d_470f_842d_747b90bd8288.png)
 
 Run it:
 
 Select the disk device, tick`Upgrade Firmware`and click`Firmware`select update.img'. Click`Create`to create.
 
-![1776750894180\_f7dabcb2\_9047\_46ab\_b130\_e78d3cdccc3b](images/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
 
 Creating upgrade disk,Data will lose in the disk,yes or no?select Y.
 
-![1776750905035\_53c11e8b\_5807\_47cd\_b55c\_4317f8ca2406](images/1776750905035_53c11e8b_5807_47cd_b55c_4317f8ca2406.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750905035_53c11e8b_5807_47cd_b55c_4317f8ca2406.png)
 
 After successfully creating the card, the following prompt will appear:
 
-![1776751151322\_327bbfce\_8422\_4651\_bdb4\_fc48fdb209fd](images/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)
 
 Step1: Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
 
@@ -421,7 +421,7 @@ Step2:  Insert the prepared TF flashing card into the the development board, the
 
 Step3:  After flashing is complete, the serial terminal and display will output the following prompt information:
 
-![Image](images/image-20251225165733238.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20251225165733238.png)
 
 When prompted, pull out the TF card, and the system will automatically restart (please do not power off directly).
 
@@ -435,7 +435,7 @@ The Yocto Project is an open-source collaborative initiative led by the Linux Fo
 
 The project offers a flexible toolset and collaboration platform, enabling embedded developers worldwide to share technical solutions, software stacks, configuration parameters, and best practices. This allows for the efficient creation of Linux images for embedded devices, IoT terminals, and other customized scenarios.
 
-![Image](images/image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image.png)
 
 #### 1.2 Core Components
 
@@ -591,7 +591,7 @@ Click the `New SSH key`.
 
 Fill in, copy the public key content generated in the above steps to the Key field, and add.
 
-![Image](images/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774835297247_9c527d87_7122_4cd5_8724_1bee4b0b7816.png)
 
 ##### 2.1.3 Verifying the GitHub Connection
 
@@ -701,7 +701,7 @@ As Yocto needs to fetch the source code for the required packages during compila
 
 Please go to Resource Download（[https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)）. On that page, select " OK3588-C/C2" or "OK3588S2-C" page. Under "RESOURCES" -> "Yocto Packages", you will find "downloads.tar.xz". Extract the downloaded source package into the OK-yocto-source directory.
 
-![Image](images/image-1780388922283.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780388922283.png)
 
 #### 2.5 Utility Tools
 
@@ -1065,7 +1065,7 @@ The OK3588-C development board features 8 x ADC: saradc2, saradc4, saradc5, sara
 
 5 x ADC and ADC button locations:
 
-![Image](images/1776583288280_8d7c5cca_1896_4bdc_bad0_553869c3518f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776583288280_8d7c5cca_1896_4bdc_bad0_553869c3518f.png)
 
 **⚠️Note: The OK3588S2-C does not support saradc6 and saradc7.**
 
@@ -1144,7 +1144,7 @@ adc_keys: adc-keys {
 
 Select the SARADC2 for testing. The ADC pins are shown in the hardware diagram below. Currently, the chip uses a 1.8 V reference voltage for the 12-bit ADC, with a maximum value of 4095.
 
-![Image](images/image-1780400098329.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780400098329.png)
 
 Connect pin 1 on P12 to pin 2 on P13. The right-hand pin on P12 is pin 1, and the left-hand pin on P13 is also pin 1.
 
@@ -1167,7 +1167,7 @@ forlinx@ok3588:/sys/bus/iio/devices/iio:device0$ cat in_voltage2_raw
 
 The saradc1 channel is used as an ADC key detection circuit, employing a resistor voltage divider structure. When different keys are pressed, the voltage division ratio changes, resulting in different voltages read by the ADC. The program identifies specific keys by determining the voltage range. The principle is illustrated in the diagram below:
 
-![Image](images/image-1780400100975.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780400100975.png)
 
 Use the `fltest_keytest` command-line tool for key testing. Currently, `fltest_keytest` supports testing the four keys on the carrier board: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:
 
@@ -1355,11 +1355,11 @@ GPIO (General-Purpose Input/Output) is a type of general-purpose digital signal 
 
 The extended I/O pins are led out from the carrier board, located on P11. The location on the board:
 
-![Image](images/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776412631066_5412e195_0e3f_4e87_a0d3_18fe5abf31ce.png)
 
 The schematic is shown below:
 
-![img](images/image-1780400108956.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780400108956.png)
 
 ##### 3.2 Device Tree
 
@@ -1452,7 +1452,7 @@ Download from the Resource Download (https://www.forlinx.net/resources/download-
 
 Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
 
-![1776755452912\_aeed3a0f\_89f5\_46ad\_aec3\_f1ecfc2f2159](images/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png)
 
 ###### 3.3.1 Native GPIO
 
@@ -1619,7 +1619,7 @@ There are 4 x UART interfaces: UART2, UART4, UART6, and UART9. They are defined 
 
 UART4 (P11 pins 7 and 10) and 485 are located on the board as follows:
 
-![Image](images/1776412986017_f3ea5e72_7023_4dc1_94ca_699df31678d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776412986017_f3ea5e72_7023_4dc1_94ca_699df31678d9.png)
 
 Location of the driver source code within the kernel: `drivers/tty/serial/8250/8250_dw.c`.
 
@@ -1665,7 +1665,7 @@ OK3588S2-C: `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
 This test utilises UART4 (ttyS4) and employs a loopback method to test the serial port. In accordance with the development board schematic, the transmit and receive pins of UART4—corresponding to PIN7 and PIN10 respectively—are short-circuited.
 
-![Image](images/image-1780400207808.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780400207808.png)
 
 After completing the short-circuit, launch the test program.
 
@@ -1907,7 +1907,7 @@ RTC (Real-Time Clock) is a critical component that ensures the system maintains 
 
 The schematic for the RTC is as follows:
 
-![Image](images/image-1780400213642.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780400213642.png)
 
 The RTC driver source code is located in the kernel at:  `drivers/rtc/rtc-pcf8563.c`.
 
@@ -2282,7 +2282,7 @@ The OK3588-C development board features 1 x TF card (Micro SD) slot, which utili
 
 TF Card interface:
 
-![Image](images/1776583628115_fe45da11_8823_4fd3_9389_0b642243eb07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776583628115_fe45da11_8823_4fd3_9389_0b642243eb07.png)
 
 ⚠️ **Note: Although the hardware supports hot-plugging, before physically removing the SD card, you must first perform an `umount` unmount operation. Otherwise, it may lead to data loss or filesystem corruption.**
 
@@ -2388,7 +2388,7 @@ The OK3588 supports one USB2.0 interface. Users can connect USB mice, USB keyboa
 
 The location of the USB2.0 interface is as shown in the following figure:
 
-![Image](images/1776583751844_8195f78a_313f_4b4e_99bc_ccd08df2cd42.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776583751844_8195f78a_313f_4b4e_99bc_ccd08df2cd42.png)
 
 ##### 11.2 Device Tree
 
@@ -2545,7 +2545,7 @@ Type-C1 supports HOST mode only. This mode can be used for firmware flashing, AD
 
 The Type-C interfaces are located on the board as indicated in the diagram below:
 
-![Image](images/1776415133399_9ff1972f_771f_41c0_ba37_871d78d26671.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776415133399_9ff1972f_771f_41c0_ba37_871d78d26671.png)
 
 The OK3588-C features two Type-C ports; the functions of these two ports are compared in the table below.
 
@@ -2711,7 +2711,7 @@ Device mode allows it to be used for flashing, ADB file transfer, and debugging;
 
 In Device mode, when connected to a computer via a data cable, the Android ADB Interface will be visible in the computer's Device Manager.
 
-![1718954755736\_a5acc21c\_f6b2\_4915\_9f89\_0c5a95090beb](images/1718954755736_a5acc21c_f6b2_4915_9f89_0c5a95090beb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1718954755736_a5acc21c_f6b2_4915_9f89_0c5a95090beb.png)
 
 ###### 12.3.2 Host mode
 
@@ -2752,7 +2752,7 @@ PCIe (Peripheral Component Interconnect Express) is a high-speed serial computer
 
 The OK3588-C board features 1 x PCIe 2.0 x1 and 1 x PCIe 3.0 x4 interface, as shown in the figure below.
 
-![Image](images/1776413262533_6f5353cb_b41b_4c42_abb6_d98ea64e4e9d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776413262533_6f5353cb_b41b_4c42_abb6_d98ea64e4e9d.png)
 
 You can design PCIe bifurcation according to your specific requirements. For detailed information, please refer to the following documentation:`en/Common/PCIe/Rockchip_Developer_Guide_PCIe_EN.pdf`
 
@@ -2922,13 +2922,13 @@ Location of the driver source code within the kernel: `drivers/net/ethernet/stmi
 
 The wired network interface locations on the board are as follows:
 
-![Image](images/1776415337495_05b56216_1f93_407f_98c7_894864b47cd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776415337495_05b56216_1f93_407f_98c7_894864b47cd5.png)
 
 **⚠️Note: Since the RK3588S2 chip lacks an Ethernet controller, the OK3588S2-C only has one gigabit network card. When the network cable is plugged in for internet connection, eth0 is configured with a static IP by default, and the P38 network port is unavailable.**
 
 The RTL8211 schematic is shown below:
 
-![Image](images/image-1780400286102.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780400286102.png)
 
 ###### 14.1.1 RGMII Mode
 
@@ -3216,7 +3216,7 @@ Install the file Zilla tool on windows and follow the steps shown in the figure 
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![1776582624967\_415c9b14\_fc30\_44b0\_9689\_15b2dc9e50dc](images/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776582624967_415c9b14_fc30_44b0_9689_15b2dc9e50dc.png)
 
 #### 15\. WiFi \& Bluetooth
 
@@ -3228,7 +3228,7 @@ The OK3588 platform supports two types of Wi-Fi and Bluetooth combo modules: **A
 
 The hardware is located on the board at the following position:
 
-![Image](images/1776415581325_54693b05_ca54_4abf_a465_df47d3bd274a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776415581325_54693b05_ca54_4abf_a465_df47d3bd274a.png)
 
 ##### 15.2 Device Tree
 
@@ -3463,7 +3463,7 @@ The OK3588 supports 4G and 5G modules (4G is EM05-CE, and 5G is RM500U).
 
 The location of the 4G/5G module and SIM card.
 
-![Image](images/1776824189000_2e7b00bd_af9b_4d9f_b785_8ef0f06ab008-1780718934976.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776824189000_2e7b00bd_af9b_4d9f_b785_8ef0f06ab008_1780718934976.png)
 
 ##### 16.1 4G
 
@@ -3667,7 +3667,7 @@ The OK3588 platform supports system standby. The system standby process generall
 
 Key positions are as follows:
 
-![Image](images/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1775868325076_c4c81497_e153_499c_ad6c_3cf13ad3f54d.png)
 
 The driver files related to system standby are:
 
@@ -3941,7 +3941,7 @@ The OK3588-C development board is equipped with the NAU88C22YG audio codec chip,
 | HDMI Audio| HDMI Interface Output| P30| Digital audio transmission via HDMI|
 | DP Audio| DisplayPort Interface Output| P22| Digital audio transmission via DP|
 
-![Image](images/1776416102123_e1661ef3_d5d0_475f_92b2_4f32c9328ae3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776416102123_e1661ef3_d5d0_475f_92b2_4f32c9328ae3.png)
 
 **⚠️Note: The OK3588S2-C model does not have an HDMI RX interface.**
 
@@ -4191,7 +4191,7 @@ The OK3588 supports 5 x MIPI CSI camera interfaces and is compatible with both t
 
 Camera interface location:
 
-![Image](images/1776581822909_043cb82d_a902_49d6_989c_66dcc7c73fda.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776581822909_043cb82d_a902_49d6_989c_66dcc7c73fda.png)
 
 Because the RK3588S2 chip does not integrate an MIPI-CSI controller, the CAM1, CAM2, and CAM5 interfaces on the OK3588S2-C development board do not currently support camera functionality.
 
@@ -4942,7 +4942,7 @@ The RK3588 VOP2 integrates four independent Video Ports (VP), each capable of dr
 
 The connection relationship between RK3588 VP and the various display interfaces is as follows:
 
-![Image](images/yuque_mind.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/yuque_mind.jpeg)
 
 ###### 3.1.2 Display Interfaces Specification
 
@@ -4960,11 +4960,11 @@ The maximum output resolution and protocol standards for each RK3588 display int
 
 The HDMI and eDP interfaces are located on the front side of the board.
 
-![1776583943597\_3510e877\_ca87\_4228\_81d3\_03a2ca4ce32a](images/1776583943597_3510e877_ca87_4228_81d3_03a2ca4ce32a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776583943597_3510e877_ca87_4228_81d3_03a2ca4ce32a.png)
 
 The MIPI DSI0 and MIPI DSI1 interfaces are located on the back side of the board.
 
-![Image](images/1776819807192_5cc2e454_d3f6_4cef_a33e_ab8026e39bba-1780719099228.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776819807192_5cc2e454_d3f6_4cef_a33e_ab8026e39bba_1780719099228.png)
 
 ###### 3.1.4 RK3588S2 Differences
 
@@ -5268,7 +5268,7 @@ To help developers deploy AI models more quickly, Rockchip officially provides u
 
 ###### **4.1.1.1 RKNN Software Stack Overview**
 
-The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below: ![1774660235640\_939bbe87\_348c\_45e8\_bb14\_1663c8824934](images/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
+The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below: ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
 
 Figure 1-1 RKNN Software Stack
 
@@ -5350,7 +5350,7 @@ For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3
 
 ###### **4.1.2.1 RKLLM Software Stack Overview**
 
-The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform. ![1774661414438\_70dcd11d\_5601\_48f2\_9438\_8816729c4552](images/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png)
+The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform. ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png)
 
 Figure 1-2: RKLLM Software Stack.
 
@@ -5714,7 +5714,7 @@ forlinx@ubuntu:~$ source ~/miniforge3/bin/activate # Miniforge installation dire
 
 * Download the Model
 
-Download the`DeepSeek-R1-Distill-Qwen-1.5B`model from [https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/tree/main.](about:blank "1774663096796_fb21f11d_82ac_434c_990f_e1d6c60ed545") ![](images/1774663096796_fb21f11d_82ac_434c_990f_e1d6c60ed545.png)
+Download the`DeepSeek-R1-Distill-Qwen-1.5B`model from [https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/tree/main.](about:blank "1774663096796_fb21f11d_82ac_434c_990f_e1d6c60ed545") ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774663096796_fb21f11d_82ac_434c_990f_e1d6c60ed545.png)
 
 Name the downloaded folder as`DeepSeek-R1-Distill-Qwen-1.5B`, and transfer it to the virtual machine path`/home/forlinx/rknn-llm/examples`.
 
@@ -5726,7 +5726,7 @@ Navigate to the file path where the export\_rkllm.py script is located.
 (RKLLM-Toolkit) forlinx@ubuntu:~$ cd /home/forlinx/rknn-llm/examples/rkllm_api_demo/export
 ```
 
-Modify the model path in the`export_rkllm.py`script to the actual path, and confirm the target platform and the number of NPU cores. ![1774663201167\_bbc069d4\_86e0\_4940\_a86d\_72df079c7404](images/1774663201167_bbc069d4_86e0_4940_a86d_72df079c7404-1780719320647.png)
+Modify the model path in the`export_rkllm.py`script to the actual path, and confirm the target platform and the number of NPU cores. ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774663201167_bbc069d4_86e0_4940_a86d_72df079c7404_1780719320647.png)
 
 ```plain
 (RKLLM-Toolkit) forlinx@ubuntu:~/rknn-llm/examples/rkllm_api_demo/export$ python3 generate_data_quant.py -m /home/forlinx/rknn-llm/examples/DeepSeek-R1-Distill-Qwen-1.5B
@@ -5825,7 +5825,7 @@ forlinx@ok3588:/home/forlinx/demo_Linux_aarch64# ./llm_demo model/DeepSeek-R1-Di
 
 The running results are as follows:
 
-![1774848609915\_67945df0\_b31b\_42b4\_8324\_7b4c82fe8bdb](images/1774848609915_67945df0_b31b_42b4_8324_7b4c82fe8bdb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774848609915_67945df0_b31b_42b4_8324_7b4c82fe8bdb.png)
 
 #### 4.4 RKNN Toolkit2 Supported Operator List
 
