@@ -38,15 +38,15 @@ FET3588J-C2
 
 FET3588S2-C
 
-| **SoM**| **Main Control Chip**| **Memory**| **工商级**|
+| **SoM**| **Main Control Chip**| **Memory**| **Level** |
 |----------|----------|----------|----------|
-| FET3588-C| RK3588| LPDDR4/LPDDR4x| Commercial level|
+| FET3588-C| RK3588| LPDDR4/LPDDR4x| Commercial Level |
 | FET3588J-C| RK3588J| LPDDR4/LPDDR4x| Industrial Level|
-| FET3588-C2| RK3588| LPDDR5| Commercial level|
+| FET3588-C2| RK3588| LPDDR5| Commercial Level |
 | FET3588J-C2| RK3588J| LPDDR5| Industrial Level|
-| FET3588S2-C| RK3588S2| LPDDR5| Commercial level|
+| FET3588S2-C| RK3588S2| LPDDR5| Commercial Level |
 
-**Note: The performance of RK3588 and RK3588S2 is nearly identical; however, the RK3588S2 has fewer interfaces compared to the RK3588 (e.g., lacking PCIe 3.0, USB OTG1, HDMI RX 2.0, ETH1, etc.).**
+**⚠️Note: The performance of RK3588 and RK3588S2 is nearly identical; however, the RK3588S2 has fewer interfaces compared to the RK3588 (e.g., lacking PCIe 3.0, USB OTG1, HDMI RX 2.0, ETH1, etc.).**
 
 Key Differences Table:
 
@@ -102,7 +102,7 @@ Frequency Specifications for RK3588 and RK3588S2 Commercial-Grade SoMs:
 | Maximum GPU Frequency| 1 GHz|
 | Maximum NPU Frequency| 1 GHz|
 
-**Note: The default factory firmware and source code for the industrial-grade RK3588J System-on-Module (SoM) are configured to operate in overclocking mode. This setting is intended for maximum performance testing of the System-on-Chip (SoC). If you do not have specific performance requirements, it is advisable to switch to normal mode to ensure long-term stability.**
+**⚠️Note: The default factory firmware and source code for the industrial-grade RK3588J System-on-Module (SoM) are configured to operate in overclocking mode. This setting is intended for maximum performance testing of the System-on-Chip (SoC). If you do not have specific performance requirements, it is advisable to switch to normal mode to ensure long-term stability.**
 
 Switch to "normal mode". You just need to add `#include "rk3588j.dtsi"` in the reference within the kernel device tree. The path is:  `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
@@ -110,22 +110,29 @@ Switch to "normal mode". You just need to add `#include "rk3588j.dtsi"` in the r
 
 Download from the Resource Download ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
-Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding Rockchip documentations under Software Resources"->“Rockchip Linux Software Development” Please read the readme \_ en. md for details.
+Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding Rockchip documentations under Software Resources"->“Rockchip Linux Software Development” .
+
+Please read the readme \_ en. md for details.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260606112534297.png)
 
 #### 1.6 Overview
 
 This manual is designed to help you quickly familiarize yourselves with the product.   
+
 It covers:
 
-Source code structure and compilation methods;
+- Source code structure and compilation methods;
 
-Firmware flashing methods;
 
-Usage and testing of development board interfaces;
+- Firmware flashing methods;
 
-Troubleshooting approaches for common issues.
+
+- Usage and testing of development board interfaces;
+
+
+- Troubleshooting approaches for common issues.
+
 
 **Chapter 1: Open Box**
 
@@ -168,7 +175,9 @@ Summarizes common issues encountered during development and their corresponding 
 
 ### 2\. Packing List
 
-Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. As shown in the figure:
+Packing List: FET3588-C SoM, OK3588-C development board and accessory kit. 
+
+As shown in the figure:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774856225187_5874b054_8055_4f01_bfd3_8bc703fc6af3.png)
 
@@ -184,23 +193,23 @@ OK3588-C Interface Diagram:
 
 #### 3.2 Debug Methods
 
-There are two ways of interacting with OK3588. The first is by Serial Port, the other is by Ethernet SSH.
+There are two ways to interact with the OK3588 platform: **via Serial Port** and **via Ethernet SSH**.
 
 ##### 3.2.1 Serial Port
 
 The OK3588 platform uses a Type-C interface for its debug serial port, featuring an onboard USB-to-UART chip (CP210x). This eliminates the need for customers to purchase an external USB-to-serial debug tool, making the setup extremely simple and convenient.
 
-+ **Hardware Requirements**: Type-C cable, 12V power supply
-+ **Software Requirements**: A terminal emulator is required on the PC side (Windows OS). Various terminal software options are available; you may use any serial terminal tool you are familiar with. Here we are using Putty.
-+ **Serial Port Settings**: Baud rate 115200, 8 data bits, 1 stop bit, no parity, no flow control
++ **Hardware Requirements**: Type-C cable, 12V power supply;
++ **Software Requirements**: A terminal emulator is required on the PC side (Windows OS). Various terminal software options are available; you may use any serial terminal tool you are familiar with. Here we are using Putty;
++ **Serial Port Settings**: Baud rate 115200, 8 data bits, 1 stop bit, no parity, no flow control.
 
-###### 3.2.1.1 Install Serial Driver
+###### 3.2.1.1 Installing Serial Driver
 
 Please download from the Resource Download page ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). On this page, select the "**OK3588-C/C2**" or "**OK3588S2-C**" page based on your processor board model. Under "**TOOLS**" -> "**Driver Tool**", you will find the tool "**CP210x\_VCP\_Windows\_XP\_Vista.zip**". Download this compressed package and extract it to the current directory. Depending on your computer's configuration, run either **CP210xVCPInstaller\_x64.exe** or **CP210xVCPInstaller\_x86.exe**. This will install the corresponding driver on your computer.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776397661305_7bdb0536_0067_4a27_97a0_9869de92afb4.png)
 
-###### 3.2.1.2 Install the terminal software PuTTY
+###### 3.2.1.2 Installing PuTTY Terminal Software
 
 Please download it from the Resource Download page ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)). On this page, select the "OK3588-C/C2" or "OK3588S2-C" page based on your processor board model. Under "TOOLS" -> "Debug Tool", you will find the installation package for the PuTTY terminal software: "putty-64bit-0.71-installer". Download it to your computer and install PuTTY.
 
@@ -242,7 +251,7 @@ The OK3588-C supports SSH login over Ethernet.
 
 + Connect the ETH0 network port on the development board. Ensure that your PC can ping the development board;
 + The network interface is configured with a static IP address by default: 192.168.0.232;
-+ Login and password are forlinx.
++ Login and password are "forlinx".
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776411283846_3174c193_eb9d_4393_8496_97fbf843c0a9.png)
 
@@ -287,7 +296,7 @@ Before flashing firmware via USB OTG, ensure you have the following hardware rea
 
 Download the driver from the Resource Download page ([https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)).
 
-Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM model. There is DriverAssistant\_v5.13.zip under "TOOLS"->“Driver Tool”. Download the zip package, extract it to any directory, and run the`DriverInstall.exe` with administrator privileges.
+Select either the “OK3588-C/C2” or “OK3588S2-C” page based on your SoM model. There is DriverAssistant\_v5.13.zip under "TOOLS"->“Driver Tool”. Download the zip package, extract it to any directory, and run the `DriverInstall.exe` with administrator privileges.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776743702899_b33be381_d931_436c_b2cd_bbe043ecd706.png)
 
@@ -315,21 +324,21 @@ Press and hold the Recovery button on the development board. Then, press the Res
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776740683969_23d45d81_3305_4cf6_bfd3_2aa804d5ca10.png)
 
-Step1:  Click “Upgrade Firmware”;
+**Step1:**  Click “Upgrade Firmware”;
 
-Step2:  Click “Firmware” and browse to locate the update.img file you wish to flash;
+**Step2:**  Click “Firmware” and browse to locate the update.img file you wish to flash;
 
-Step3:  Click ““Upgrade” to flash.
+**Step3:**  Click “Upgrade” to flash.
 
 If the loader is damaged and cannot enter Loader Mode, you can force the board into Maskrom Mode by holding down the Maskrom button (located to the right of the RTC battery holder on the carrier board) and then pressing the Reset button. At this point, the system will indicate that a MaskROM device has been detected. You can then proceed with the flashing process, which is the same.
 
-**Note: Do not click “Device Partition Table” while in Maskrom Mode, as this operation is invalid. Flashing individually in Maskrom Mode will not clear the U-Boot environment variables.**
+**⚠️Note: Do not click “Device Partition Table” while in Maskrom Mode, as this operation is invalid. Flashing individually in Maskrom Mode will not clear the U-Boot environment variables.**
 
 ##### 3.1.3 OTG Step-by-Step Flashing
 
 During R\&D, full reflashing is time-consuming. This section introduces OTG-based individual partition flashing. (Note: This function is only applicable in the Loader Flashing Mode.)
 
-After a full compilation, individual partition images can be found in the`build/latest`.
+After a full compilation, individual partition images can be found in the `build/latest`.
 
 ```c
 OK-yocto-source/build/latest$ tree
@@ -358,27 +367,27 @@ Function Description
 
 Take the separate burning userdata partition as an example to demonstrate the burning method, which also uses the RKDevTool \_ Release \_ v3.37 for burning.
 
-Step 1: Connect the board’s TypeC0 interface to the host computer’s USB port using a Type-C data cable;
+**Step 1:** Connect the board’s TypeC0 interface to the host computer’s USB port using a Type-C data cable;
 
-Step 2: Press and hold the Recovery button on the development board. Then, while holding it, short press the Reset button to trigger a system reboot;
+**Step 2:** Press and hold the Recovery button on the development board. Then, while holding it, short press the Reset button to trigger a system reboot;
 
-Step 3: Release the Recovery button approximately 2 seconds after the system reboots. At this point, the host computer should display a prompt indicating “Loader Device Found,” confirming that the board has successfully entered Loader mode for firmware flashing;
+**Step 3:** Release the Recovery button approximately 2 seconds after the system reboots. At this point, the host computer should display a prompt indicating “Loader Device Found,” confirming that the board has successfully entered Loader mode for firmware flashing;
 
-Step 4: Copy the compiled userdata.img image file to the local directory on the host computer where it is to be flashed, and prepare to flash the device.
+**Step 4:** Copy the compiled userdata.img image file to the local directory on the host computer where it is to be flashed, and prepare to flash the device.
 
-Step 5: Change the name field in the last row to userdata and click`Dev Partition`. The system will automatically read the corresponding partition address.
+**Step 5:** Change the name field in the last row to userdata and click `Dev Partition`. The system will automatically read the corresponding partition address.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776742712849_9a6e1cb0_6fac_47f7_8434_8ce8de69b36f.png)
 
-A prompt asking whether to update the download link will appear; click`是（Y）`.
+A prompt asking whether to update the download link will appear; click "Yes".
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750522300_4055cd65_37ae_493b_8ddf_ddec358a8660.png)
 
-A message appears indicating that the partition table has been successfully read. Click`确定`.
+A message appears indicating that the partition table has been successfully read. Click "Yes".
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750533466_23854857_1e02_490c_8e91_ff506995bfa2.png)
 
-Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click the`Run`to automatically flash and restart.
+Check the partition and check the address. The address is required to be consistent with the userdata partition address 0x0007a000 read from the partition. Click ② to select the partition image for the selected area. Click the `Run` to automatically flash and restart.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776742816548_23d8b85f_102b_43b7_960c_76e850eaaa97.png)
 
@@ -386,9 +395,9 @@ If you encounter any issues, please check the USB connection and restart the dev
 
 #### 3.2 Flashing Firmware via TF Card
 
-**Note:**
+**⚠️Note:**
 
-+ **Testing indicates that the maximum supported TF card capacity is 16 GB. Using a TF card of 32 GB or larger may result in flashing failure.**
++ **Testing indicates that the maximum supported TF card capacity is 16 GB. Using a TF card of 32 GB or larger may result in flashing failure;**
 + **The device will also enter command-line mode while the TF card is being programmed. Please wait until the process is complete.**
 
 Before flashing firmware via USB OTG, ensure you have the following hardware ready:
@@ -403,11 +412,11 @@ Please download from the Resource Download ([https://www.forlinx.net/resources/d
 
 Run it:
 
-Select the disk device, tick`Upgrade Firmware`and click`Firmware`select update.img'. Click`Create`to create.
+Select the disk device, tick "Create".
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750894180_f7dabcb2_9047_46ab_b130_e78d3cdccc3b.png)
 
-Creating upgrade disk,Data will lose in the disk,yes or no?select Y.
+Creating upgrade disk, Data will lose in the disk, yes or no? select "Yes".
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776750905035_53c11e8b_5807_47cd_b55c_4317f8ca2406.png)
 
@@ -415,11 +424,11 @@ After successfully creating the card, the following prompt will appear:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776751151322_327bbfce_8422_4651_bdb4_fc48fdb209fd.png)
 
-Step1: Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
+**Step1:** Connect the DEBUG serial port of the development board to the host using a Type‑C data cable, and open a serial terminal tool to monitor the flashing progress;
 
-Step2:  Insert the prepared TF flashing card into the the development board, then power up. The system will automatically enter the flashing process;
+**Step2:**  Insert the prepared TF flashing card into the the development board, then power up. The system will automatically enter the flashing process;
 
-Step3:  After flashing is complete, the serial terminal and display will output the following prompt information:
+**Step3:**  After flashing is complete, the serial terminal and display will output the following prompt information:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20251225165733238.png)
 
@@ -441,10 +450,10 @@ The project offers a flexible toolset and collaboration platform, enabling embed
 
 The Yocto Project primarily consists of the following core tools and subprojects:
 
-+ BitBake: The build engine, similar to `make` a task scheduler, responsible for parsing metadata and executing build tasks.
-+ OpenEmbedded-Core: A collection of fundamental meta-layers that contain the metadata required for software building (excluding the source code itself).
-+ BSP (Board Support Package) Layer: Maintained by SoC manufacturers and community contributors, providing board-level hardware support.
-+ Poky: The official reference distribution of Yocto, integrating multiple core projects and tools, serving as a starting point for building new distributions.
++ **BitBake:** The build engine, similar to `make` a task scheduler, responsible for parsing metadata and executing build tasks;
++ **OpenEmbedded-Core:** A collection of fundamental meta-layers that contain the metadata required for software building (excluding the source code itself);
++ **BSP (Board Support Package) Layer:** Maintained by SoC manufacturers and community contributors, providing board-level hardware support;
++ **Poky:** The official reference distribution of Yocto, integrating multiple core projects and tools, serving as a starting point for building new distributions.
 
 The Yocto source directory structure for OK3588-C is as follows:
 
@@ -620,7 +629,7 @@ If it is not installed, install it using the following command.
 forlinx@ubuntu:~$ sudo apt-get update && sudo apt-get install python3 git -y
 ```
 
-##### 2.2.2 Installing the repo Tool
+##### 2.2.2 Installing 
 
 Refer to the following steps for`repo`installation..
 
@@ -689,7 +698,7 @@ Use the`repo sync`command to synchronise the code.
 forlinx@ubuntu:~/rk3588$ repo sync
 ```
 
-**Note:**
+**⚠️Note:**
 
 + **The first synchronization may take a long time, depending on the project size and your network conditions;**
 + **If synchronization is interrupted, simply re-run repo sync`repo sync` ; it supports resumption from the point of failure;**
@@ -699,17 +708,17 @@ forlinx@ubuntu:~/rk3588$ repo sync
 
 As Yocto needs to fetch the source code for the required packages during compilation, the process takes quite a long time. To reduce compilation time, Forlinx provides pre-downloaded source code packages, which you can use as follows:
 
-Please go to Resource Download（[https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)）. On that page, select " OK3588-C/C2" or "OK3588S2-C" page. Under "RESOURCES" -> "Yocto Packages", you will find "downloads.tar.xz". Extract the downloaded source package into the OK-yocto-source directory.
+Please go to Resource Download（[https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html). On that page, select " OK3588-C/C2" or "OK3588S2-C" page. Under "RESOURCES" -> "Yocto Packages", you will find "downloads.tar.xz". Extract the downloaded source package into the OK-yocto-source directory.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1780388922283.png)
 
 #### 2.5 Utility Tools
 
-The SDK contains executable tools for Linux, macOS, and Windows. However, the tools directory fetched in the previous step only includes the tools for Linux. To use the tools on macOS or Windows, please download via the link below.
+The SDK contains executable tools for Linux, macOS, and Windows. However, the tools directory fetched in the previous step only includes the tools for Linux. To use the tools on macOS or Windows, please download via the link below:
 
 [https://github.com/FLembedded/buildroot\_dl/releases/download/tools/tools.tar.xz](https://github.com/FLembedded/buildroot_dl/releases/download/tools/tools.tar.xz)
 
-### 3\. Building Yocto Step by Step
+### 3. Step-by-Step Guide to Building Yocto
 
 #### 3.1 Host Setup
 
@@ -760,7 +769,7 @@ Once executed, the current working directory will automatically switch to `build
 
 Before the initial build, you should check the following two configuration files, using the rk3588 as an example.
 
-1. Check `build/conf/local.conf`: 
+- Check `build/conf/local.conf`: 
 
 ```c
 # Forlinx Add
@@ -777,7 +786,7 @@ BB_DANGLINGAPPENDS_WARNONLY = "1"
 | `DISTRO`| Distribution, using the Forlinx distribution customised by Forlinx|
 | `BB_DANGLINGAPPENDS_WARNONLY`| When set to `1`, unmatched `.bbappend`will trigger an alert but not an error.|
 
-2. Open`build/conf/bblayers.conf`and check `BBLAYERS` whether it contains the necessary layers, such as meta-forlinx-rk:
+- Open `build/conf/bblayers.conf` and check `BBLAYERS` whether it contains the necessary layers, such as meta-forlinx-rk:
 
 ```c
 BBLAYERS ?= " \
@@ -850,33 +859,44 @@ Function Description
 
 ###### 3.2.3.1 Build u-boot
 
-If only compiling u-boot, uboot.img will be generated. Path:`OK-yocto-source/build/latest/uboot.img`. The command is as follows:
+If you compile only **u-boot**, you will get `uboot.img`. The file path is:
+`OK-yocto-source/build/latest/uboot.img`.
+The command is:
 
 ```plain
 OK-yocto-source/build$ bitbake u-boot-rockchip
 ```
 
-Compiling u-boot alone takes about one minute.
+Compiling u-boot alone takes approximately one minute.
 
-The u-boot source directory is:`OK-yocto-source/build/tmp/work/ok3588-forlinx-linux/u-boot-rockchip/2017.09/git`
+The u-boot source directory is:
+`OK-yocto-source/build/tmp/work/ok3588-forlinx-linux/u-boot-rockchip/2017.09/git`
 
-The U-Boot configuration file is:`configs/OK3588-C_defconfig`or`OK3588S2-C_defconfig`Alternatively, this is the board-specific default configuration file for U-Boot, which defines the operating parameters for U-Boot on the OK3588-C.
+The u-boot configuration file is:
+`configs/OK3588-C_defconfig` or `OK3588S2-C_defconfig`.
+These are the board-level default configuration files for u-boot, which define the runtime parameters for U-Boot on OK3588-C.
 
-The u-boot device tree file is:`arch/arm/dts/OK3588-C-Linux.dts`
+The u-boot device tree file is:
+`arch/arm/dts/OK3588-C-Linux.dts`.
 
-###### 3.2.3.2 Build Kernel
+###### 3.2.3.2 Building Kernel
 
-If you compile`kernel`only, you get`boot.img` Path:`OK-linux-source/kernel-6.1/boot.img`. The command is as follows:
+If you compile only the **kernel**, you will get `boot.img`. The file path is:
+`OK-linux-source/kernel-6.1/boot.img`.
+The command is:
 
 ```c
 OK-yocto-source/build$ bitbake linux-rockchip
 ```
 
-Compiling the kernel alone takes about two minutes.
+Compiling the kernel alone takes approximately two minutes.
 
-The source directory of the kernel is`OK-yocto-source/build/tmp/work-shared/ok3588/kernel-source`:
+The kernel source directory is:
+`OK-yocto-source/build/tmp/work-shared/ok3588/kernel-source`
 
-The kernel device tree file directory is:`arch/arm64/boot/dts/rockchip`. The device tree files are:
+The kernel device tree file directory is:
+`arch/arm64/boot/dts/rockchip`.
+The device tree files are:
 
 | Platform| Device Tree File Path| Description|
 |----------|----------|----------|
@@ -899,7 +919,7 @@ Take adding libraw as an example:
 IMAGE_INSTALL:append = " libraw"
 ```
 
-Note: The space before the`"libraw"` must not be omitted; this is a requirement of the BitBake append syntax. Omitting the space will result in an error when concatenating the package name with the previous entry.
+**⚠️Note: The space before the`"libraw"` must not be omitted; this is a requirement of the BitBake append syntax. Omitting the space will result in an error when concatenating the package name with the previous entry.**
 
 Once saved, rebuild the image; the new packages will be automatically included in the root filesystem. After flashing the image, check whether the package is present in the /usr/lib directory:
 
@@ -910,7 +930,7 @@ libraw.so.23        libraw.so.23.0.0    libraw_r.so.23      libraw_r.so.23.0.0
 
 #### 3.3 Compiling Application
 
-This section outlines Forlinx hardware testing recipe`forlinx-demo`and explains how to install a cross-compilation toolchain and compile custom applications; it is intended for scenarios where you need to deploy your own business code onto the development board.
+This section outlines Forlinx hardware testing file`forlinx-demo`and explains how to install a cross-compilation toolchain and compile custom applications; it is intended for scenarios where you need to deploy your own business code onto the development board.
 
 ##### 3.3.1 Forlinx Test Programm Procedure
 
@@ -981,7 +1001,7 @@ You can compile this recipe using the following command:
 bitbake forlinx-demo
 ```
 
-Once the full image has been compiled and flashed to the development board, the test programme mentioned above will be automatically installed in the /usr/bin/ directory and can be invoked directly from the command line.。
+Once the full image has been compiled and flashed to the development board, the test programme mentioned above will be automatically installed in the /usr/bin/ directory and can be invoked directly from the command line.
 
 ##### 3.3.2 Compiling using a Cross-compilation Toolchain
 
@@ -1036,7 +1056,7 @@ Compile it using the following command:
 $CC -o helloworld helloworld.c
 ```
 
-Copy the compiled`helloworld`program to the board for execution:
+Copy the compiled `helloworld` program to the board for execution:
 
 ```c
 ./helloworld
