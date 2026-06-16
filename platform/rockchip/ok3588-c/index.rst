@@ -61,6 +61,7 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual
    OK3588-C_Linux_Buildroot_User_Manual
    OK3588-C_Linux5_10_209_User_Manual
    OK3588-C_Linux5_10_209_User_Compilation_Manual
