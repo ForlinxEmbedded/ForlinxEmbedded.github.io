@@ -54,4 +54,5 @@ html_show_sourcelink = False
 html_js_files = [
     'theme-switcher.js',
     'logo-link.js',
+    'custom_sidebar.js',
 ]

@@ -84,9 +84,11 @@ APPLICATION NOTE
    RK Development Manual <https://forlinxembedded.github.io/rockchip/rk-development-manual/index.html>
 
 
-====================
+.. _contact-support:
+
 Contact & Support
-====================
+-------------------
+
 If you require further technical assistance or have commercial inquiries, our team is ready to help:
 
 .. raw:: html
@@ -96,6 +98,7 @@ If you require further technical assistance or have commercial inquiries, our te
         <li><i class="fa-solid fa-briefcase" style="color: #007acc; width: 20px;"></i> <strong>Sales Inquiries:</strong> <a href="mailto:sales@forlinx.com">sales@forlinx.com</a></li>
         <li><i class="fa-solid fa-globe" style="color: #007acc; width: 20px;"></i> <strong>Website:</strong> <a href="https://www.forlinx.net" target="_blank">www.forlinx.net</a></li>
     </ul>
+
 
 ----
 
