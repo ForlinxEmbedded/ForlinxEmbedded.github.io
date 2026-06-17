@@ -5294,7 +5294,9 @@ You can modify the boot logo by replacing the specified files `logo.bmp` and `lo
 
 An NPU (Neural Processing Unit) is a hardware accelerator specifically designed for neural network computing tasks. It aims to improve the operational efficiency and speed of artificial intelligence (AI) tasks. Compared to CPUs and GPUs, the NPU demonstrates higher energy efficiency when processing AI tasks, enabling it to complete the same scale of computation at lower power consumption.
 
-The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment. Main features:
+The OK3588-C integrates a low-power, high-performance NPU, which possesses hardware-level neural network inference acceleration capabilities and can efficiently run AI algorithms. It is well-suited for AIoT scenarios such as intelligent security, industrial vision, and robotics, making it an optimal solution for edge-side AI deployment. 
+
+**Main features:**
 
 - 6 TOPS NPU, empowering various AI scenarios;
 
@@ -5308,7 +5310,7 @@ To help developers deploy AI models more quickly, Rockchip officially provides u
 
 ###### **4.1.1.1 RKNN Software Stack Overview**
 
-The RKNN software stack helps users quickly deploy AI models to the OK3588-C. The overall framework is shown below: ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
+The RKNN software stack helps you quickly deploy AI models to the OK3588-C. The overall framework is shown below: ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
 
 Figure 1-1 RKNN Software Stack
 
@@ -5380,36 +5382,13 @@ With RKLLM-Toolkit2, developers can easily quantize and convert large language m
 
 RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to [https://github.com/airockchip/rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2) for the RKLLM-Toolkit2 details.
 
-###### **4.1.1.3 Features of RKLLM Runtime**
+###### **4.1.1.3 RKLLM Runtime Features**
 
 RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.
 
 For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3.pdf`.
 
-##### 4.1.2 RKLLM Toolchain
-
-###### **4.1.2.1 RKLLM Software Stack Overview**
-
-The RKNN software stack enables rapid deployment of AI models to the OK3588-C platform. ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774661414438_70dcd11d_5601_48f2_9438_8816729c4552.png)
-
-Figure 1-2: RKLLM Software Stack.
-
-###### **4.1.2.2 RKNN-Toolkit Features**
-
-With RKLLM-Toolkit2, developers can efficiently perform quantization and conversion of large language models on a host computer. It provides a concise Python interface with the following core features:
-
-- **Model Conversion:** Supports converting LLMs from Hugging Face and GGUF formats to the RKLLM format. The converted RKLLM models can be loaded and used on the OK3588-C NPU platform.
-- **Quantization:** Supports converting floating-point models into fixed-point models. Currently supported quantization types include w8a8 and w8a8 grouped quantization, with supported group sizes of 128, 256, and 512.
-
-Please refer to`rknn-llm\doc\Rockchip_RKLLM_SDK_CN_1.2.3.pdf`, for RKLLM-Toolkit2 details.
-
-###### **4.1.2.3 RKLLM Runtime Features**
-
-RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.
-
-For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3.pdf`.
-
-##### 4.1.3 RKNN Model Zoo
+##### 4.1.2 RKNN Model Zoo
 
 RKNN Model Zoo is an edge AI model deployment resource library launched by Rockchip based on its RKNPU SDK toolchain. It aims to provide developers with a complete reference implementation for AI model deployment. It covers the entire workflow—from model conversion and quantization to running inference on Rockchip NPUs using both Python and C APIs. Built-in YOLO series detection/segmentation/pose, image classification, OCR, license plate recognition, speech recognition and other dozens of mainstream algorithms, each model provides pre-training weights, conversion scripts and sample codes that can be directly compiled and run to help developers quickly achieve high-performance NPU reasoning acceleration on Rockchip hardware.
 
