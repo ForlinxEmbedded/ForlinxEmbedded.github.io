@@ -1089,7 +1089,7 @@ The OK3588-C development board features 8 x ADC: saradc2, saradc4, saradc5, sara
 
 **⚠️Note: The OK3588S2-C does not support saradc6 and saradc7.**
 
-Location of the ADC button driver source code:`drivers/input/keyboard/adc-keys.c`.
+The ADC button driver source code are located in:`drivers/input/keyboard/adc-keys.c`.
 
 ##### 1.2 Device Tree
 
@@ -1213,7 +1213,7 @@ key158 Released
 
 ###### 1.3.3 Application Programming
 
-In OK3588, the input event node for the ADC button is located at /dev/input/eventX (where X is the specific number). The application must include the header file \<linux/input.h>, which defines the structures and macros related to input events.
+In OK3588, the input event node for the ADC button is located at` /dev/input/eventX` (where X is the specific number). The application must include the header file `<linux/input.h>`, which defines the structures and macros related to input events.
 
 The core data structure struct input\_event is defined as follows:
 
@@ -1240,6 +1240,7 @@ ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 ```
 
 **1.3.3.1 Scanning and Locating Key Devices**
+
 The input device corresponding to the OK3588 ADC keys is named `"adc-keys"`. Since there may be multiple event devices under `/dev/input/`, it is necessary to first scan and find the correct device node:
 
 ```c
@@ -1265,6 +1266,7 @@ if (strncmp(name, "adc-keys", strlen("adc-keys")) != 0)
 ```
 
 **1.3.3.2 Opening the Key Device**
+
 Use the `open` function to open the key device and obtain the file descriptor:
 
 ```c
@@ -1279,6 +1281,7 @@ if(keys_fd<=0)
 Where `event_name` is the device node path obtained during the scanning phase, for example `/dev/input/event3`.
 
 **1.3.3.3 Reading Key Events**
+
 After opening the device, use the `read` function in a loop to read the `struct input_event` structure and obtain key events:
 
 ```c
@@ -1297,6 +1300,7 @@ while(1)
 `read` reads one complete `input_event` structure each time (typically 16 or 24 bytes). It is necessary to check whether the return value equals `sizeof(t)` to ensure data integrity.
 
 **1.3.3.4 Closing the Device**
+
 After key monitoring is complete, close the device file descriptor to release resources:
 
 ```c
@@ -1641,11 +1645,11 @@ UART4 (P11 pins 7 and 10) and 485 are located on the board as follows:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776412986017_f3ea5e72_7023_4dc1_94ca_699df31678d9.png)
 
-Location of the driver source code within the kernel: `drivers/tty/serial/8250/8250_dw.c`.
+The driver source code within the kernel are located in: `drivers/tty/serial/8250/8250_dw.c`.
 
 ##### 5.2 Device Tree
 
-Location of the UART device tree node: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
+The UART device tree node is located in: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 Take uart4 as example:
 
@@ -1705,6 +1709,7 @@ The source code path for `fltest_uarttest` is located at: `OK-yocto-source/build
 In OK3588, the device node for UART is `/dev/ttySx` (where x is the serial port number, e.g., `/dev/ttyS4`). Applications need to include the header file `<termios.h>`, which defines structures and functions related to serial port configuration.
 
 **5.3.2.1 Opening the Serial Port**  
+
 Use the `open` function to open the serial port device and obtain a file descriptor:
 
 ```plain
@@ -1724,6 +1729,7 @@ Parameter description:
 | `O_NOCTTY`| Do not use this serial port as the process's control terminal.|
 
 **5.3.2.2 Configuring Serial Port Parameters**  
+
 Use the `struct termios` structure to configure parameters such as baud rate, data bits, stop bits, and parity:
 
 ```plain
@@ -1782,6 +1788,7 @@ Common baud rate macro definitions:
 | `B4000000`| 4000000|
 
 **5.3.2.3 Sending Data**
+
 Use the `write` function to send data to the serial port:
 
 ```plain
@@ -1791,6 +1798,7 @@ write(fd, test, strlen(test) + 1);
 ```
 
 **5.3.2.4 Receiving Data**
+
 Use the `read` function to read data from the serial port:
 
 ```plain
@@ -1810,6 +1818,7 @@ while(1)
 ```
 
 **5.3.2.5 Closing the Serial Port**
+
 Close the file descriptor after use:
 
 ```c
@@ -1964,20 +1973,23 @@ Before testing the RTC, ensure that the button cell battery is installed on the 
 
 The RTC test primarily involves using the `date` and `hwclock` tools to set software/hardware time, verifying whether the software clock reads the RTC clock correctly after the board is powered off and on again.
 
-**Set the system software time:**
+- Set the system software time:
+
 
 ```c
 forlinx@ok3588:~$ sudo date -s "2025-10-27 10:05:02"
 Mon Oct 27 10:05:02 UTC 2025
 ```
 
-**Synchronize system time to hardware clock:**
+- Synchronize system time to hardware clock:
+
 
 ```c
 forlinx@ok3588:~$ sudo hwclock -wu
 ```
 
-**Display the current hardware clock time:**
+- Display the current hardware clock time:
+
 
 ```c
 forlinx@ok3588:~$ sudo hwclock -r
@@ -2040,7 +2052,8 @@ OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
 This test provides two test programs; you can choose one based on your actual needs.
 
-**Using `fltest_watchdog`**:
+- Use `fltest_watchdog`:
+
 This command opens the watchdog and performs feeding operations, so the system will not restart.
 
 ```c
@@ -2057,7 +2070,8 @@ forlinx@ok3588:~$ sudo fltest_watchdog -d
 Watchdog card disabled.
 ```
 
-**Start the watchdog with a 10-second reset timeout, no feeding**:
+- Start the watchdog with a 10-second reset timeout, no feeding:
+
 
 Execute the command `fltest_watchdogrestart`, which opens the watchdog but does not perform feeding operations; the system will restart after 10 seconds.
 
@@ -2100,9 +2114,8 @@ In OK3588, the watchdog device node is `/dev/watchdog`. In applications, include
 | WDIOC\_SETTIMEOUT| Set the timeout period.|
 | WDIOC\_GETTIMEOUT| Get the current timeout period.|
 
-8.3.2.1 Opening the Watchdog
-
 **8.3.2.1 Opening the Watchdog**
+
 The watchdog device can be opened using the `open()` function to obtain a file descriptor:
 
 ```c
@@ -2112,6 +2125,7 @@ fprintf(stderr, "Watchdog device not enabled.\n");
 ```
 
 **8.3.2.2 Setting the Timeout**
+
 The **WDIOC_SETTIMEOUT** command macro can be used to set the watchdog timeout. Usage is as follows:
 
 ```c
@@ -2121,6 +2135,7 @@ ioctl(fd,WDIOC_SETTIMEOUT,&flags);
 For details on the timeout setting mechanism for RK3588, refer to the next section.
 
 **8.3.2.3 Feeding the Watchdog**
+
 After the watchdog timer is started, it must be “fed” before the timeout expires; otherwise, a timer overflow will cause a system reset or generate an interrupt signal. Feeding can be performed using the **WDIOC_KEEPALIVE** command macro as follows:
 
 ```c
@@ -2129,7 +2144,7 @@ ioctl(fd, WDIOC_KEEPALIVE, &dummy);
 
 ##### 8.3.3 Timeout Mechanism
 
-Regarding the timeout mechanism: the timeout set by user space is not directly passed to the hardware. The watchdog driver internally maintains a table of 16 preset timeout values and selects the closest match according to the following rules as the actual timeout:
+Regarding the timeout mechanism: The timeout set by user space is not directly passed to the hardware. The watchdog driver internally maintains a table of 16 preset timeout values and selects the closest match according to the following rules as the actual timeout:
 
 | **The timeout period of the request**| **Final timeout set by watchdog**|
 |----------|----------|
@@ -2251,7 +2266,7 @@ By default, the standard system images for the OK3588 platform have already auto
 
 This section is provided primarily to describe the methodology for resizing an ext4 root filesystem. If you flash a custom, unexpanded rootfs image during development, or if you manually modify the underlying partition table, you can follow the standard procedures below to adjust the filesystem size and fully utilize any remaining storage space.
 
-+ **Checking the physical partition table:**
++ Checking the physical partition table:
 
 ```bash
 forlinx@ok3588:~$ parted /dev/mmcblk0 print
@@ -2279,7 +2294,7 @@ You can resize the root partition to fully occupy the remaining disk space.
 forlinx@ok3588:~$ sudo parted /dev/mmcblk0 resizepart 8 100%
 ```
 
-+ **Checking filesystem mounts:** 
++ Checking filesystem mounts:
 
 ```bash
 forlinx@ok3588:~$ df -h
@@ -2412,8 +2427,6 @@ The location of the USB2.0 interface is as shown in the following figure:
 
 ##### 11.2 Device Tree
 
-##### 11.2 Device Tree
-
 The USB 2.0 device tree nodes for the OK3588-C/3588-C2 are located in:  
 `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
@@ -2439,7 +2452,7 @@ The USB 2.0 device tree nodes for the OK3588S2-C are located in:
 
 ##### 11.3 USB Device Driver Support
 
-###### 11.3.1 Supported Device Types
+###### 11.3.1 Device Types Support
 
 According to Section 3.5 (USB Peripheral CONFIG) of the official *Rockchip Linux USB Development Guide*, the RK3588 SDK kernel supports the following USB device class drivers. The development board can directly recognize and use the corresponding peripherals without additional configuration: The development board can directly identify and use the corresponding peripherals without additional configuration:
 
@@ -2584,10 +2597,10 @@ The OK3588-C features two Type-C ports; the functions of these two ports are com
 
 The Type-C interface of RK3588 is composed of the following five core modules:
 
-- **USB 3.1/DP Combo PHY** — Physical layer, responsible for multiplexed transmission of USB SuperSpeed (5Gbps) and DP high-speed signals, supports flexible allocation of 4 lanes, but is **not compatible with USB 2.0**.
-- **USB 2.0 PHY** — Responsible for USB 2.0 (480Mbps) signal transmission (D+/D-). Combined with the Combo PHY, it supports the complete USB protocol (USB 3.1 backward compatible with USB 2.0).
-- **USB Controller (DWC3/xHCI)** — Implements the full USB protocol stack, supports OTG mode.
-- **DP Controller** — Implements the DisplayPort 1.4 protocol, responsible for video signal output.
+- **USB 3.1/DP Combo PHY** — Physical layer, responsible for multiplexed transmission of USB SuperSpeed (5Gbps) and DP high-speed signals, supports flexible allocation of 4 lanes, but is **not compatible with USB 2.0**;
+- **USB 2.0 PHY** — Responsible for USB 2.0 (480Mbps) signal transmission (D+/D-). Combined with the Combo PHY, it supports the complete USB protocol (USB 3.1 backward compatible with USB 2.0);
+- **USB Controller (DWC3/xHCI)** — Implements the full USB protocol stack, supports OTG mode;
+- **DP Controller** — Implements the DisplayPort 1.4 protocol, responsible for video signal output;
 - **Type-C Controller (FUSB302)** — External chip, connected to the SoC via I2C, responsible for CC detection, flip orientation recognition, role negotiation, and DP Alt Mode capability exchange.
 
 In the Device Tree, these modules are associated through endpoint connections and property configurations to form a complete Type-C interface functionality description.
@@ -3496,7 +3509,7 @@ forlinx@ok3588:~# lsusb
 Bus 005 Device 001: ID 1d6b:0002
 Bus 003 Device 001: ID 1d6b:0002
 Bus 001 Device 001: ID 1d6b:0002
-Bus 005 Device 002: ID 2c7c:0125                                // EM05的VID和PID
+Bus 005 Device 002: ID 2c7c:0125                                // EM05 VID and PID
 Bus 006 Device 001: ID 1d6b:0001
 Bus 004 Device 001: ID 1d6b:0001
 Bus 002 Device 001: ID 1d6b:0003
@@ -3573,7 +3586,7 @@ Connect the module. After the development board and the module are powered on, y
 forlinx@ok3588:~# lsusb
 Bus 005 Device 001: ID 1d6b:0002
 Bus 003 Device 001: ID 1d6b:0002
-Bus 002 Device 002: ID 2c7c:0900 	                        // RM500U 5G模块节点
+Bus 002 Device 002: ID 2c7c:0900 	                        // RM500U 5G module node
 Bus 001 Device 001: ID 1d6b:0002
 Bus 006 Device 001: ID 1d6b:0001
 Bus 004 Device 001: ID 1d6b:0001
@@ -3739,13 +3752,13 @@ The following `rockchip, sleep-mode-config`can be added:
 | RKPM\_SLP\_ARMOFF\_PMUOFF| Power off vdd\_arm and vdd\_log, and power off the PMU1 power domain, requires hardware circuit design support.|
 | RKPM\_SLP\_PMU\_PMUALIVE\_32K| Use the 32K clock source as the system clock during standby.|
 | RKPM\_SLP\_PMU\_DIS\_OSC| Turn off the 24M crystal oscillator; can be enabled in the lowest power mode, requires use in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K.|
-| RKPM\_SLP\_32K\_EXT| Select whether to use an external 32K clock source as the 32K clock source during sleep. If this option is not configured, the internal 32K clock source is used by default. This setting must be used in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K.|
+| RKPM\_SLP\_32K\_EXT| Select whether to use an external 32K clock source as the 32K clock source during sleep. If this option is not configured, the internal 32K clock source is used by default. <br />This setting must be used in conjunction with RKPM\_SLP\_PMU\_PMUALIVE\_32K. |
 
 The relevant configurations must be set based on the specific product wake-up source requirements. For example, if USB wake-up is required, the USB power and clock cannot be turned off during standby. Therefore, options such as RKPM\_SLP\_ARMOFF\_LOGOFF, RKPM\_SLP\_PMU\_DIS\_OSC, and RKPM\_SLP\_PMU\_PMUALIVE\_32K should not be configured.
 
 ###### 17.2.2 Wake-up Configuration
 
-`rockchip,wakeup-config`The following configurations can be added:
+The following configurations can be added in `rockchip,wakeup-config` :
 
 | RKPM\_GPIO\_WKUP\_EN| GPIO0 WAKE UP|
 |----------|----------|
@@ -3967,7 +3980,7 @@ The OK3588-C development board is equipped with the NAU88C22YG audio codec chip,
 
 ##### 1.2 Device Tree
 
-The audio-related device tree nodes for the OK3588-C/3588-C2 are located at:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
+The audio-related device tree nodes for the OK3588-C/3588-C2 are located at: `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
 ```c
 // Sound card node: Core abstraction of the audio subsystem
@@ -4120,7 +4133,8 @@ card 1: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau882
   Subdevice #0: subdevice #0
 ```
 
-Playback and recording via 8822 sound card:
+- Playback and recording via 8822 sound card:
+
 
 Plug the headphones into the SPKOUT connector and play the audio with the following command:
 
@@ -4142,7 +4156,8 @@ forlinx@ok3588:~# aplay -D plughw:2,0 test1.wav
 Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
-Play through the HDMI sound card:
+- Play through the HDMI sound card:
+
 
 Connect the HDMI screen with audio playback function to the HDMITX interface, and execute the following command:
 
@@ -4150,12 +4165,14 @@ Connect the HDMI screen with audio playback function to the HDMITX interface, an
 forlinx@ok3588:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
 ```
 
-HDMI RX Audio Capture
+- HDMI RX Audio Capture
 
-Hardware Connection:
 
-+ Connect the HDMI output connector of the laptop to the HDMI RX connector of the OK3588 board using the HDMI cable;
-+ Connect headphones or speakers to the SPK OUT interface on the board.
+**Hardware Connection:**
+
+​       ○ Connect the HDMI output connector of the laptop to the HDMI RX connector of the OK3588 board using the HDMI cable;
+
+​       ○ Connect headphones or speakers to the SPK OUT interface on the board.
 
 Recording audio from HDMI RX input:
 
@@ -4181,13 +4198,16 @@ To play audio received from HDMI RX in real-time through the SPK OUT output, you
 forlinx@ok3588:~# arecord -D plughw:0,0 -f cd --buffer-size=2048 --period-size=1024 | aplay -D plughw:1,0 -f cd --buffer-size=2048 --period-size=1024
 ```
 
-Parameter description: -D plughw:0,0 specifies the HDMI RX sound card device.
+Parameter Explanation:  
 
--D plughw:1,0 specifies the onboard output sound card device.
+​       ○ `-D plughw:0,0` corresponds to the HDMI RX sound card device.  
+​       ○ `-D plughw:1,0` corresponds to the built‑in output sound card device.  
+​       ○ `-f cd` indicates CD‑quality audio (16‑bit / 44.1 kHz / stereo).
 
--f cd indicates CD quality audio (16bit/44100Hz/stereo). The actual sound card numbers may vary depending on the system configuration. You can confirm them using the commands arecord -l and aplay -l.
+The actual sound card numbering may vary depending on the system configuration. You can verify the correct device numbers using the commands `arecord -l` and `aplay -l`.
 
-DP Sound Card Test
+- DP sound card test
+
 
 The testing method for the DP sound card is similar to that for the 8822 sound card. You can complete the test by modifying the device parameter or the hw parameter in the test command to specify the DP sound card.
 
@@ -4281,7 +4301,7 @@ Test using the Logitech C270: plug the USB webcam into the development board and
 
 **2.3.1.1** **Camera Recognition and Format Support Query** 
 
-Camera recognition detection:
+Camera Recognition Detection:
 
 ```c
 forlinx@ok3588:~$ v4l2-ctl --list-devices
@@ -4559,7 +4579,7 @@ Format Video Capture:
 
 **2.3.1.3 Camera Preview and Photo Capture** 
 
-Camera image preview:
+Camera Image Preview:
 
 ```c
 forlinx@ok3588:~$ gst-launch-1.0  v4l2src device=/dev/video74 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480  ! waylandsink
@@ -4572,7 +4592,7 @@ Redistribute latency...
 0:00:04.6 / 99:99:99.
 ```
 
-Take a photo:
+Taking a Photo:
 
 ```c
 forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video74 num-buffers=1 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
@@ -4635,9 +4655,9 @@ forlinx@ok3588:~# grep "" /sys/class/video4linux/video*/name
 
 The testing method for OV13855 is basically the same as for the UVC camera. This section uses the CAM1 interface as an example:
 
-`CAM1: platform:rkisp0-vir0
+`CAM1:`platform:rkisp0-vir0
 
-`CAM2: platform:rkisp0-vir1
+`CAM2:`platform:rkisp0-vir1
 
 **2.3.2.1 Camera Recognition and Format Support Query**
 
