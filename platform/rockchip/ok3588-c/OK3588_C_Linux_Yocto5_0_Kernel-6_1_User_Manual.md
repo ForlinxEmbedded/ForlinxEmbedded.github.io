@@ -5718,7 +5718,7 @@ forlinx@ok3588:/home/forlinx/rknn_yolov5_demo# ./rknn_yolov5_demo model/yolov5s_
 
 The out. png of the output result image in the current directory is as follows:
 
-![image-20260617111400545](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260617111400545.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260617111400545.png)
 
 ##### 4.3.2 DeepSeek Model Deployment
 
