@@ -459,11 +459,13 @@ This chapter mainly describes the compiling method of the source code related to
 Create a working directory.
 
 ```plain
-forlinx@ubuntu:~$ mkdir -p /home/forlinx/3588  // Create the working directory in sequence
-Copy the source code files `OK3588_Linux_fs.tar.bz2.0*` from the user documentation to the `/home/forlinx/3588` directory of the virtual machine.
-forlinx@ubuntu:~$ cd /home/forlinx/3588  // Switch to the working directory
-forlinx@ubuntu:~/3588$ cat OK3588_Linux_fs.tar.bz2.0* > OK3588_Linux_fs.tar.bz2
-forlinx@ubuntu:~/3588$ tar -xvf OK3588_Linux_fs.tar.bz2  // Extract the compressed package at the current location
+forlinx@ubuntu:~$ mkdir -p /home/forlinx/3588                      // Create the working directory sequentially
+Copy the source file OK3588_Linux_fs.tar.bz2.0* from user resources to the virtual machine directory /home/forlinx/3588.
+forlinx@ubuntu:~$ cd /home/forlinx/3588                           // Switch to the working directory
+forlinx@ubuntu:~/3588$ cat OK3588_Linux_fs.tar.bz2.0* > OK3588_Linux_fs.tar.bz2 (Source for R1-R3)
+forlinx@ubuntu:~/3588$ cat OK3588-linux-source.tar.bz2.0* > OK3588-linux-source.tar.bz2 (Source for R4-R5)
+forlinx@ubuntu:~/3588$ tar -xvf OK3588_Linux_fs.tar.bz2           // Extract the R1-R3 source archive in the current location
+forlinx@ubuntu:~/3588$ tar -xvf OK3588-Linux-source.tar.bz2       // Extract the R4-R5 source archive in the current location
 ```
 
 Just run the command and wait for it to complete.
@@ -480,20 +482,21 @@ Just run the command and wait for it to complete.
 
 #### <font style="color:#000000;">4.2.1 Full Compilation Test</font>
 
-In the source code path, the compilation script build. sh is provided. Run the script to compile the entire source code. You need to switch to the decompressed source code path at the terminal and find the build. Sh films.
+In the source code path, the compilation script build. sh is provided. Run the script to compile the entire source code. You need to switch to the decompressed source code path at the terminal and find the build. sh films.
 
 ```plain
-forlinx@ubuntu:~$ cd /home/forlinx/3588/OK3588_Linux_fs
+forlinx@ubuntu:~$ cd /home/forlinx/3588/OK3588_Linux_fs				//（R1-R3 source code）
+forlinx@ubuntu:~$ cd /home/forlinx/3588/OK3588-Linux-source		//（R4-R5 source code）
 ```
 
 The following operations need to be operated under the source code directory, and the full compilation method is:
 
 1\. Generate the configuration required for compilation (the forlinx user password is required at this time, and the password is also forlinx);
 
-**PS：linux5.10.209（R4）kernel doesn’s need this step.**
+**PS：linux5.10.209（R4-R5）kernel doesn’s need this step.**
 
 ```plain
-forlinx@ubuntu: ~/3588/OK3588-linux-source$ ./build.sh BoardConfig-ubuntu-ok3588.mk
+forlinx@ubuntu: ~/3588/OK3588-linux-fs$ ./build.sh BoardConfig-ubuntu-ok3588.mk
 ```
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_Forlinx_Desktop22_04_User_Compilation_Manual/1718951655263_0b8cdd0b_b93f_480f_9944_6a645f773702.png)
