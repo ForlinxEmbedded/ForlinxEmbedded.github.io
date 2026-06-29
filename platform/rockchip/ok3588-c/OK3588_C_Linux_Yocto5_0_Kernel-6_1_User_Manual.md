@@ -1300,7 +1300,7 @@ The RK3588 features a big.LITTLE architecture, combining four Cortex-A55 (small 
 | Cortex-A55 (small cores)| cpu0 ~ cpu3| Share the same frequency domain; adjusting the frequency of any one core causes the other three cores to change synchronously|
 | Cortex-A76 (large cores)| cpu4 ~ cpu7| Each core is tuned independently, without affecting the others.|
 
-**⚠️Note: The operating frequency of the A55 small core must not be lower than that of the A76 large core; please bear this constraint in mind when configuring. **
+⚠️**Note: The operating frequency of the A55 small core must not be lower than that of the A76 large core; please bear this constraint in mind when configuring.** 
 
 Taking the configuration of CPU4 frequency as an example:
 
