@@ -105,7 +105,7 @@ Normal mode indicates that the chip is operating at a safe voltage and frequency
 Overclocking mode will bring higher frequency, and the corresponding voltage will also increase. When running in overclocking mode for a long time, the life of the chip may be shortened, especially in high temperature conditions.
 
 
-To switch to "normal mode", you need to add the following to the reference in the kernel device tree #include "rk3588j.dtsi", path: OK3588\_Linux\_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
+To switch to "normal mode", you need to add the following to the reference in the kernel device tree #include "rk3588j.dtsi", path: OK3588-linux-source/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_Forlinx_Desktop22_04_User_Manual/1718953696103_03432661_8fbd_4519_b42f_5c27f8638daa.png)
 
@@ -462,7 +462,7 @@ After saving, recompile to generate the image.
 
 In general, the power can be turned off directly. If there is data storage, function use, or other operations, avoid turning off the power arbitrarily during operation to prevent irreversible damage to the file. In such cases, only re-flashing the firmware can resolve the issue. To ensure that data is not completely written, enter the sync command to complete data synchronization before turning off the power.
 
-Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.
+**Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.**
 
 ## 3\. OK527 Platform Interface Function Use and Test
 

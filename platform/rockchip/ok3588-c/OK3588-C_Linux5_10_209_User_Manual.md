@@ -102,7 +102,7 @@ Overclocking mode will bring higher frequency, and the corresponding voltage wil
 
 To switch to "normal mode", you need to add the following to the reference in the kernel device tree #include "rk3588j.dtsi",             
 
-path: OK3588\_Linux\_fs/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
+path: OK3588-linux-source/kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_Linux5_10_209_User_Manual/1718954717604_ba8c8389_6605_43fe_8331_d12b42f92b2a.png)
 
