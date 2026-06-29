@@ -53,11 +53,11 @@ There are differences in the combination of CSI/DSI interfaces.
 
 FET3588-C SoM
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1779243519740.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_17792435197401.png)
 
 FET3588J-C SoM
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e24461.png)
 
 FET3588-C2 SoM
 
