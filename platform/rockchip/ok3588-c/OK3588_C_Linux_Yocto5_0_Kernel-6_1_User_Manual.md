@@ -112,7 +112,7 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM mo
 
 Please read the readme \_ en. md for details.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624134200914.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260624134200914.png)
 
 #### 1.6 Overview
 
@@ -263,7 +263,7 @@ Download from the Resource Download (https://www.forlinx.net/resources/download-
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARE”->“Yocto”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624224554293.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260624224554293.png)
 
 ### 3\. Image Flashing
 
@@ -1460,7 +1460,7 @@ Download from the Resource Download (https://www.forlinx.net/resources/download-
 
 Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624144902765.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260624144902765.png)
 
 ###### 3.3.1 Native GPIO
 
@@ -6071,7 +6071,7 @@ forlinx@ok3588:/home/forlinx/demo_Linux_aarch64# ./llm_demo model/DeepSeek-R1-Di
 
 The running results are as follows:
 
-![image-20260624112353400](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624112353400.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260624112353400.png)
 
 #### 4.4 RKNN Toolkit2 Supported Operator List
 
