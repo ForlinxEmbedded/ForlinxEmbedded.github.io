@@ -1,4 +1,4 @@
-# Yocto5.0\_Kernel-6.1\_User's Manual\_V1.0
+Yocto5.0\_Kernel-6.1\_User's Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -28,16 +28,6 @@ It is designed based on the Rockchip RK3588 processor. The RK3588 is built on th
 
 The FET3588 SoM series includes the following models:
 
-FET3588-C
-
-FET3588J-C
-
-FET3588-C2
-
-FET3588J-C2
-
-FET3588S2-C
-
 | **SoM**| **Main Control Chip**| **Memory**| **Level** |
 |----------|----------|----------|----------|
 | FET3588-C| RK3588| LPDDR4/LPDDR4x| Commercial Level |
@@ -55,21 +45,29 @@ Key Differences Table:
 | GPU| Mali-G610 MC4| Mali-G610 MP4| Suffixes differ (MC4 vs MP4), but both feature a quad-core configuration.|
 | Memory Support| LPDDR4/LPDDR4X/LPDDR5| LPDDR4/LPDDR4X/LPDDR5/LPDDR5X| RK3588S2 supports **LPDDR5X**|
 | USB Interface| • USB OTG0 3.1/2.0/Typec <br /> • USB OTG1 3.1/2.0/Typec <br /> • 2x USB Host 2.0| • USB OTG 3.1/2.0/Typec <br />• 2x USB Host 2.0| Only 1 x USB OTG interface is retained on RK3588S2.|
-| PCIe/SATA| •SATA3/PCIe2.1/USB3Host（1 group）<br /> • 2x SATA3/PCIe2.1 <br /> • **PCIe3.0（Independent）** | • SATA3/PCIe2.1/USB3Host（1 group）<br /> • SATA3/PCIe2.1（1 group） <br /> • **No-independent PCIe3.0**| 1 x SATA/PCIe combined interface and the independent PCIe 3.0 controller are removed from the RK3588S2.|
+| PCIe/SATA| • SATA3/PCIe2.1/USB3Host（1 group）<br /> • 2x SATA3/PCIe2.1 <br /> • **PCIe3.0（Independent）** | • SATA3/PCIe2.1/USB3Host（1 group）<br /> • SATA3/PCIe2.1（1 group） <br /> • **No-independent PCIe3.0**| 1 x SATA/PCIe combined interface and the independent PCIe 3.0 controller are removed from the RK3588S2.|
 | Ethernet| 2x Giga-Ethernet| 1x Giga-Ethernet| 1 x single Gigabit Ethernet MAC is reserved on the RK3588S2.|
-| Multimedia Interfaces| •2x MIPI-CSI D/CPHY <br /> • 2x MIPI-DSI DPHY <br /> • 2x HDMI2.1 TX/eDP1.3<br />• 2x DP1.4 (Combo with USB3)  <br /><br />**• HDMI RX 2.0** | • 1x MIPI-CSI DPHY 4L/CPHY 3L<br /> • 4x MIPI-CSI DPHY 2L  <br /> • 2x MIPI-DSI DPHY 4 Lane  <br /> • HDMI2.1 TX/eDP1.3 4 Lane <br /> • DP1.4 4 Lane (Combo with USB3)  <br /> • **No HDMI RX** | The RK3588 features a unique HDMI RX input function, which is not supported on the RK3588S2.  |
+| Multimedia Interfaces| • 2x MIPI-CSI D/CPHY <br /> • 2x MIPI-DSI DPHY <br /> • 2x HDMI2.1 TX/eDP1.3<br />• 2x DP1.4 (Combo with USB3)  <br /><br />**• HDMI RX 2.0** | • 1x MIPI-CSI DPHY 4L/CPHY 3L<br /> • 4x MIPI-CSI DPHY 2L  <br /> • 2x MIPI-DSI DPHY 4 Lane  <br /> • HDMI2.1 TX/eDP1.3 4 Lane <br /> • DP1.4 4 Lane (Combo with USB3)  <br /> • **No HDMI RX** | The RK3588 features a unique HDMI RX input function, which is not supported on the RK3588S2.  |
 
 There are differences in the combination of CSI/DSI interfaces.
 
-FET3588 SoM
+FET3588-C SoM
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_1779243519740.png)
 
-FET3588J SoM
+FET3588J-C SoM
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774251741608_9f8f3ffd_207a_452d_a915_9b780f2e2446.png)
 
-FET3588S2 SoM
+FET3588-C2 SoM
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/12.png)
+
+FET3588J-C2 SoM
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/335.png)
+
+FET3588S2-C SoM
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776674664196_fec0878c_bbcb_44d0_9f81_683efa511466.png)
 
@@ -114,7 +112,7 @@ Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM mo
 
 Please read the readme \_ en. md for details.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20260606112534297.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624134200914.png)
 
 #### 1.6 Overview
 
@@ -133,41 +131,25 @@ It covers:
 
 - Troubleshooting approaches for common issues.
 
-
 **Chapter 1: Open Box**
 
-* Product Overview
-  
-
-Introduces the OK3588-C platform interface resources, hardware configurations of the five compatible SoMs, and system login methods;
+*  Introduces the OK3588-C platform interface resources, hardware configurations of the five compatible SoMs, and system login methods.
 
 **Chapter 2: Upgrade Firmware**
 
-* System Flashing Guide
-  
-
-Describes how to obtain and flash the firmware;
+* Describes how to obtain and flash the firmware.
 
 **Chapter 3: OS Development**
 
-* Compilation Guide
-  
-
-Details how to obtain the source code, its structure, and compilation steps;
+*  Details how to obtain the source code, its structure, and compilation steps.
 
 **Chapter 4: Application Development**
 
-* Operation Guide
-  
-
-Explains the OK3588 interface resources and their testing methods;
+* Explains the OK3588 interface resources and their testing methods.
 
 **Chapter 5: Development Guides**
 
-* Development Guide
-  
-
-Summarizes common issues encountered during development and their corresponding solutions.
+* Summarizes common issues encountered during development and their corresponding solutions.
 
 **Chapter 6: Resource Download \& Technical Support**
 
@@ -237,7 +219,7 @@ The following describes the serial login method using the PuTTY terminal softwar
 
 Press Enter to create a new command line:
 
-```c
+```plain
 ok3588 login: forlinx
 Password:
 Forlinx Embedded Linux (Poky-based Yocto)
@@ -261,7 +243,7 @@ The OK3588-C supports SSH login over Ethernet.
 
 After successful login, the following prompt is displayed: 
 
-```c
+```plain
 login as: forlinx
 forlinx@192.168.0.232's password:
 Forlinx Embedded Linux (Poky-based Yocto)
@@ -281,7 +263,7 @@ Download from the Resource Download (https://www.forlinx.net/resources/download-
 
 Select either the “OK3588-C/C2” or “OK3588S2-C” page based on the SoM model. There is corresponding standard images under “FIRMWARE”->“Yocto”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776748292833_2143298a_d912_4f3b_9884_c6f2e3fa727b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624224554293.png)
 
 ### 3\. Image Flashing
 
@@ -340,7 +322,7 @@ During R\&D, full reflashing is time-consuming. This section introduces OTG-base
 
 After a full compilation, individual partition images can be found in the `build/latest`.
 
-```c
+```plain
 OK-yocto-source/build/latest$ tree
 .
 ├── boot.img -> boot.img--6.1-r0-ok3588-20260428031547.bin
@@ -371,7 +353,7 @@ Take the separate burning userdata partition as an example to demonstrate the bu
 
 **Step 2:** Press and hold the Recovery button on the development board. Then, while holding it, short press the Reset button to trigger a system reboot;
 
-**Step 3:** Release the Recovery button approximately 2 seconds after the system reboots. At this point, the host computer should display a prompt indicating “Loader Device Found,” confirming that the board has successfully entered Loader mode for firmware flashing;
+**Step 3:** After the system reboots, when the RKDevTool displays the 'Loader Device Found' prompt, release the Recovery button. This indicates that the board has successfully entered Loader mode for firmware flashing.
 
 **Step 4:** Copy the compiled userdata.img image file to the local directory on the host computer where it is to be flashed, and prepare to flash the device.
 
@@ -457,7 +439,7 @@ The Yocto Project primarily consists of the following core tools and subprojects
 
 The Yocto source directory structure for OK3588-C is as follows:
 
-```c
+```plain
 OK-yocto-source$ tree -L 2
 .
 ├── setup-environment -> sources/base/setup-environment
@@ -527,24 +509,24 @@ To build `meta-forlinx-rk` ,the following Yocto Layers are required:
 meta-forlinx-rk/
 ├── conf/                                # Configuration files directory
 ├── recipes-bsp/                         # BSP-related recipes
-│   ├── logo/logo-forlinx.bb             #   Boot logo partition image
-│   ├── misc/misc-forlinx.bb             #   Misc partition image
-│   └── u-boot/                          #   U-Boot related recipes
-│       ├── env-forlinx.bb               #     U-Boot environment partition image
-│       └── u-boot-rockchip.bbappend     #     U-Boot customization patch
+│   ├── logo/logo-forlinx.bb             # Boot logo partition image
+│   ├── misc/misc-forlinx.bb             # Misc partition image
+│   └── u-boot/                          # U-Boot related recipes
+│       ├── env-forlinx.bb               # U-Boot environment partition image
+│       └── u-boot-rockchip.bbappend     # U-Boot customization patch
 ├── recipes-core/                        # Core system recipes
-│   ├── base-files/                      #   Login prompt customization
-│   ├── images/                          #   Image definitions
-│   │   ├── core-image-minimal.bbappend  #     Minimal console image extension
-│   │   ├── core-image-weston.bbappend   #     Weston desktop image extension
-│   │   ├── forlinx-recovery-image.bb    #     Recovery image
-│   │   └── forlinx-recovery-initramfs.bb #    Recovery initramfs
-│   └── userdata/userdata-forlinx.bb     #   Userdata partition image
+│   ├── base-files/                      # Login prompt customization
+│   ├── images/                          # Image definitions
+│   │   ├── core-image-minimal.bbappend  # Minimal console image extension
+│   │   ├── core-image-weston.bbappend   # Weston desktop image extension
+│   │   ├── forlinx-recovery-image.bb    # Recovery image
+│   │   └── forlinx-recovery-initramfs.bb # Recovery initramfs
+│   └── userdata/userdata-forlinx.bb     # Userdata partition image
 ├── recipes-graphics/                    # Graphics-related recipes
-│   └── wayland/weston-init/             #   Weston configuration files
-│       ├── weston.ini                   #     Compositor configuration
-│       ├── weston.env                   #     Environment variables
-│       └── weston.service               #     Systemd service unit
+│   └── wayland/weston-init/             # Weston configuration files
+│       ├── weston.ini                   # Compositor configuration
+│       ├── weston.env                   # Environment variables
+│       └── weston.service               # Systemd service unit
 ├── recipes-kernel/                      # Kernel customization recipes
 │   └── linux/
 └── wic/
@@ -588,8 +570,8 @@ After executing the command, you can press Enter all the way to use the default 
 
 ```plain
 forlinx@ubuntu:~$ ls ~/.ssh/
-id_ed25519                  // Private key — do not share
-id_ed25519.pub             // Public key — used for uploading to GitHub
+id_ed25519                      // Private key — do not share
+id_ed25519.pub                  // Public key — used for uploading to GitHub
 ```
 
 ##### 2.1.2 Adding the Public Key to GitHub
@@ -631,7 +613,7 @@ forlinx@ubuntu:~$ sudo apt-get update && sudo apt-get install python3 git -y
 
 ##### 2.2.2 Installing 
 
-Refer to the following steps for`repo`installation..
+Refer to the following steps for`repo`installation.
 
 ###### 2.2.2.1 Getting Repo Source Code
 
@@ -687,7 +669,7 @@ forlinx@ubuntu:~$ cd rk3588
 Initialise the project repository; once this has been successfully completed, a hidden folder will be created`.repo`.
 
 ```plain
-forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:FLembedded/manifests_yocto.git -m soc/rockchip/forlinx-rk.xml
+forlinx@ubuntu:~/rk3588$ repo init -u git@github.com:Forlinx-Embedded/manifests_yocto.git -b refs/tags/rk3588_release_v1.0 -m soc/rockchip/forlinx-rk.xml
 ```
 
 ##### 2.3.3 Synchronizing the Code
@@ -726,7 +708,7 @@ It is recommended to use Ubuntu 22.04 or a later version for compilation.
 
 Execute the following commands in your build environment (the installation commands apply to Ubuntu 22.04):
 
-```c
+```plain
 sudo apt update
 sudo apt-get -f -y install \
   git build-essential diffstat texinfo gawk chrpath socat doxygen \
@@ -771,7 +753,7 @@ Before the initial build, you should check the following two configuration files
 
 - Check `build/conf/local.conf`: 
 
-```c
+```plain
 # Forlinx Add
 MACHINE = "ok3588"
 CHIP = "rk3588"
@@ -788,7 +770,7 @@ BB_DANGLINGAPPENDS_WARNONLY = "1"
 
 - Open `build/conf/bblayers.conf` and check `BBLAYERS` whether it contains the necessary layers, such as meta-forlinx-rk:
 
-```c
+```plain
 BBLAYERS ?= " \
   ${TOPDIR}/../poky/meta \
   ${TOPDIR}/../poky/meta-poky \
@@ -801,7 +783,6 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-browser/meta-chromium \
   ${TOPDIR}/../meta-lts-mixins \
   ${TOPDIR}/../meta-forlinx-rk \
-  ${TOPDIR}/../meta-qt6 \
   "
 ```
 
@@ -830,7 +811,7 @@ OK-yocto-source/build$ bitbake core-image-minimal
 
 Once compilation is complete, the system image update.img will be generated in the `build/latest` directory. The specific directory structure is as follows (where each image file is a symbolic link pointing to the source file):
 
-```c
+```plain
 OK-yocto-source/build/latest$ tree
 .
 ├── boot.img -> boot.img--6.1-r0-ok3588-20260428031547.bin
@@ -879,13 +860,13 @@ These are the board-level default configuration files for u-boot, which define t
 The u-boot device tree file is:
 `arch/arm/dts/OK3588-C-Linux.dts`.
 
-###### 3.2.3.2 Building Kernel
+###### 3.2.3.2 Build Kernel
 
 If you compile only the **kernel**, you will get `boot.img`. The file path is:
 `OK-linux-source/kernel-6.1/boot.img`.
 The command is:
 
-```c
+```plain
 OK-yocto-source/build$ bitbake linux-rockchip
 ```
 
@@ -915,7 +896,7 @@ To add additional packages to the image, compile `build/conf/local.conf`and use 
 
 Take adding libraw as an example:
 
-```c
+```plain
 IMAGE_INSTALL:append = " libraw"
 ```
 
@@ -923,7 +904,7 @@ IMAGE_INSTALL:append = " libraw"
 
 Once saved, rebuild the image; the new packages will be automatically included in the root filesystem. After flashing the image, check whether the package is present in the /usr/lib directory:
 
-```c
+```plain
 forlinx@ok3588:/usr/lib$ ls libraw
 libraw.so.23        libraw.so.23.0.0    libraw_r.so.23      libraw_r.so.23.0.0
 ```
@@ -936,7 +917,7 @@ This section outlines Forlinx hardware testing file`forlinx-demo`and explains ho
 
 The board-level hardware test programs provided by Forlinx (ADC, GPIO, SPI, UART, Watchdog, RPMSG, etc.) are uniformly packaged in the `forlinx-demo` recipe, with source code hosted in a GitHub repository. If you wish to compile and add your own applications, you can refer to this recipe. Path:`meta-forlinx-rk/recipes-bsp/forlinx-demo/forlinx-demo_1.0.bb`.
 
-```c
+```plain
 SUMMARY     = "Forlinx demo tools (hardware test binaries)"
 DESCRIPTION = "Collection of board hardware-test programs (ADC/GPIO/SPI/UART/\
 watchdog/rpmsg) shipped as one package."
@@ -990,14 +971,14 @@ do_install() {
 
 Add this recipe to`forlinx-image-packages.inc`, the path is`OK-yocto-source/meta-forlinx-rk/recipes-core/images`:
 
-```c
+```plain
 # Forlinx test demos.
 IMAGE_INSTALL:append = " forlinx-demo"
 ```
 
 You can compile this recipe using the following command:
 
-```c
+```plain
 bitbake forlinx-demo
 ```
 
@@ -1013,13 +994,13 @@ Please download the cross-compilation toolchain via the following link:
 
 Copy the downloaded SDK installation script `forlinx-glibc-x86_64-forlinx-image-weston-cortexa76-cortexa55-ok3588-toolchain-v1.0.sh` to the user’s home directory on the host machine, then run the following command to install it:
 
-```c
- ./forlinx-glibc-x86_64-forlinx-image-weston-cortexa76-cortexa55-ok3588-toolchain-v1.0.sh
+```plain
+./forlinx-glibc-x86_64-forlinx-image-weston-cortexa76-cortexa55-ok3588-toolchain-v1.0.sh
 ```
 
 During the installation process, you will be prompted to select an installation path. Simply press Enter to use the default path.
 
-```c
+```plain
 Forlinx Embedded Linux (Poky-based Yocto) SDK installer version v1.0
 ====================================================================
 Enter target directory for SDK (default: /opt/forlinx/v1.0):
@@ -1032,7 +1013,7 @@ Once installation is complete, the toolchain will be located in the `/opt/forlin
 
 Configure the cross-compilation environment using the following command:
 
-```c
+```plain
 source /opt/forlinx/v1.0/environment-setup-cortexa76-cortexa55-forlinx-linux
 ```
 
@@ -1040,7 +1021,7 @@ source /opt/forlinx/v1.0/environment-setup-cortexa76-cortexa55-forlinx-linux
 
 Taking a Hello World program as an example, create the file `helloworld.c`:
 
-```c
+```plain
 #include <stdio.h>
 
 int main(void)
@@ -1052,20 +1033,20 @@ int main(void)
 
 Compile it using the following command:
 
-```c
+```plain
 $CC -o helloworld helloworld.c
 ```
 
 Copy the compiled `helloworld` program to the board for execution:
 
-```c
+```plain
 ./helloworld
 Hello, Embedded World!
 ```
 
 If you want to put the compiled application in the system image, you can create a bin directory under the`OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/usr`:
 
-```c
+```plain
 OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/usr$ mkdir bin
 ```
 
@@ -1074,6 +1055,8 @@ Copy the compiled application to the`OK-yocto-source/sources/meta-forlinx-rk/ove
 ## Application Development
 
 ### Peripheral Access
+
+⚠️**Note: The source code used in this section is located in the BSP at `OK-yocto-source/build/tmp/work-shared/ok3588/kernel-source/`. All subsequent references to the kernel path are based on this location and will not be repeated.**
 
 #### 1\. ADC
 
@@ -1095,7 +1078,7 @@ The ADC button driver source code are located in:`drivers/input/keyboard/adc-key
 
 The ADC device tree definitions are located in:`arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
-```c
+```plain
 saradc: saradc@fec10000 {
     compatible = "rockchip,rk3588-saradc";
     reg = <0x0 0xfec10000 0x0 0x10000>;
@@ -1115,7 +1098,7 @@ OK3588-C/3588-C2 :`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
 OK3588S2-C:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &saradc {
 	status = "okay";
 	vref-supply = <&vcc_1v8_s0>;
@@ -1124,7 +1107,7 @@ OK3588S2-C:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
 In this case, the saradc1 channel is used for ADC button detection, and the device tree node is: 
 
-```c
+```plain
 adc_keys: adc-keys {
 		compatible = "adc-keys";
 		io-channels = <&saradc 1>;
@@ -1170,7 +1153,7 @@ Connect pin 1 on P12 to pin 2 on P13. The right-hand pin on P12 is pin 1, and th
 
 View saradc2 value:
 
-```c
+```plain
 forlinx@ok3588:~$ cd /sys/bus/iio/devices/iio\:device0/
 forlinx@ok3588:/sys/bus/iio/devices/iio:device0$ cat in_voltage2_raw
 2
@@ -1178,7 +1161,7 @@ forlinx@ok3588:/sys/bus/iio/devices/iio:device0$ cat in_voltage2_raw
 
 Short pin 1 of P12 and pin 1 of P13 to see the value of saradc2:
 
-```c
+```plain
 forlinx@ok3588:/sys/bus/iio/devices/iio:device0$ cat in_voltage2_raw
 4095
 ```
@@ -1191,7 +1174,7 @@ The saradc1 channel is used as an ADC key detection circuit, employing a resisto
 
 Use the `fltest_keytest` command-line tool for key testing. Currently, `fltest_keytest` supports testing the four keys on the carrier board: VOL+, VOL-, MENU, and ESC, with key codes 115, 114, 139, and 158 respectively. Execute the following command:
 
-```c
+```plain
 forlinx@ok3588:~$ fltest_keytest
 Available devices:
 /dev/input/event5:    adc-keys
@@ -1199,7 +1182,8 @@ Available devices:
 
 At this point, press and release the button sequentially, and the terminal will output the followings:
 
-```c
+```plain
+key115 Presse
 key115 Released
 key114 Presse
 key114 Released
@@ -1217,7 +1201,7 @@ In OK3588, the input event node for the ADC button is located at` /dev/input/eve
 
 The core data structure struct input\_event is defined as follows:
 
-```c
+```plain
 struct input_event {
     struct timeval time;  // Event timestamp
     __u16 type;           // Event type (e.g., EV_KEY)
@@ -1235,7 +1219,7 @@ Common values for the type field are defined by the following macros:
 
 The ioctl command used to get the device name:
 
-```c
+```plain
 ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 ```
 
@@ -1243,7 +1227,7 @@ ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 
 The input device corresponding to the OK3588 ADC keys is named `"adc-keys"`. Since there may be multiple event devices under `/dev/input/`, it is necessary to first scan and find the correct device node:
 
-```c
+```plain
 ndev = scandir(DEV_INPUT_EVENT, &namelist, is_event_device, alphasort);
 if (ndev <= 0)
 	return NULL;
@@ -1251,7 +1235,7 @@ if (ndev <= 0)
 
 `is_event_device` serves as a filter function, retaining only device files whose names begin with “event”:
 
-```c
+```plain
 static int is_event_device(const struct dirent *dir) {
     return strncmp(EVENT_DEV_NAME, dir->d_name, 5) == 0;
 }
@@ -1259,7 +1243,7 @@ static int is_event_device(const struct dirent *dir) {
 
 Traverse all event devices, read the device name via `ioctl`, and filter out the device named `"adc-keys"`:
 
-```c
+```plain
 ioctl(fd, EVIOCGNAME(sizeof(name)), name);
 if (strncmp(name, "adc-keys", strlen("adc-keys")) != 0)
 	continue;
@@ -1269,7 +1253,7 @@ if (strncmp(name, "adc-keys", strlen("adc-keys")) != 0)
 
 Use the `open` function to open the key device and obtain the file descriptor:
 
-```c
+```plain
 keys_fd = open(event_name, O_RDONLY);
 if(keys_fd<=0)
 {
@@ -1284,7 +1268,7 @@ Where `event_name` is the device node path obtained during the scanning phase, f
 
 After opening the device, use the `read` function in a loop to read the `struct input_event` structure and obtain key events:
 
-```c
+```plain
 while(1)
 {
 	if(read(keys_fd,&t,sizeof(t))==sizeof(t)) {
@@ -1303,7 +1287,7 @@ while(1)
 
 After key monitoring is complete, close the device file descriptor to release resources:
 
-```c
+```plain
 close(keys_fd);
 ```
 
@@ -1316,14 +1300,14 @@ The RK3588 features a big.LITTLE architecture, combining four Cortex-A55 (small 
 | Cortex-A55 (small cores)| cpu0 ~ cpu3| Share the same frequency domain; adjusting the frequency of any one core causes the other three cores to change synchronously|
 | Cortex-A76 (large cores)| cpu4 ~ cpu7| Each core is tuned independently, without affecting the others.|
 
-**⚠️Note: The operating frequency of the A55 small core must not be lower than that of the A76 large core; please bear this constraint in mind when configuring. Before starting the test, you must use`sudo -i` the command to obtain root privileges.**
+**⚠️Note: The operating frequency of the A55 small core must not be lower than that of the A76 large core; please bear this constraint in mind when configuring. **
 
 Taking the configuration of CPU4 frequency as an example:
 
 - View all supported cpufreq governor types:
 
 ```plain
-root@ok3588:~# cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_governors
+forlinx@ok3588:~$ cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_governors
 interactive conservative ondemand userspace powersave performance schedutil
 ```
 
@@ -1340,34 +1324,34 @@ interactive conservative ondemand userspace powersave performance schedutil
 - View the frequency steps supported by your current CPU:
 
 ```plain
-root@ok3588:~# cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies
+forlinx@ok3588:~$ cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies
 408000 600000 816000 1008000 1200000 1416000 1608000 1800000 2016000 2208000 2256000
 ```
 
 - Set the current mode to user mode:
 
 ```plain
-root@ok3588:~# echo userspace | sudo tee /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+forlinx@ok3588:~$ echo userspace | sudo tee /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 ```
 
 - View current frequency:
 
 ```plain
-root@ok3588:~# cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
+forlinx@ok3588:~$ sudo cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
 2352000
 ```
 
 - Set the frequency of CPU4 to 1,800,000:
 
 ```plain
-root@ok3588:~# echo 1800000 | sudo tee /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
+forlinx@ok3588:~$ echo 1800000 | sudo tee /sys/devices/system/cpu/cpu4/cpufreq/scaling_setspeed
 1800000
 ```
 
 - Check if the modified frequency is 1,800,000.
 
 ```plain
-root@ok3588:~# cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
+forlinx@ok3588:~$ sudo cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cur_freq
 1800000
 ```
 
@@ -1391,7 +1375,7 @@ The schematic is shown below:
 
 The native GPIO device tree node is located in `arch/arm64/boot/dts/rockchip/rk3588s.dtsi`. Taking `gpio3` as an example:
 
-```c
+```plain
 gpio3: gpio@fec40000 {
 		compatible = "rockchip,gpio-bank";
 		reg = <0x0 0xfec40000 0x0 0x100>;
@@ -1408,7 +1392,7 @@ gpio3: gpio@fec40000 {
 
 If you need to configure an IO pin as an external interrupt pin, you can refer to the device tree node configuration of the GT911 touchscreen. For example, you can set `GPIO3_C0` as an interrupt pin and designate `GPIO3_B7` as the reset pin for the touchscreen.
 
-```c
+```plain
 gt9xx_dsi0: gt9xx@14 {
         compatible = "goodix,gt911";
     	reg = <0x14>;
@@ -1448,7 +1432,7 @@ OK3588-C/3588-C2 : `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 
 OK3588S2-C: `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 &i2c2 {
 	status = "okay";
         //extend GPIO: TCA6424
@@ -1476,7 +1460,7 @@ Download from the Resource Download (https://www.forlinx.net/resources/download-
 
 Select the "OK3588-C/C2" or "OK3588S2-C" page according to the model no., then go to "DOCUMENTS" -> "PinMUX" to view the pin multiplexing configuration.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776755452912_aeed3a0f_89f5_46ad_aec3_f1ecfc2f2159.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624144902765.png)
 
 ###### 3.3.1 Native GPIO
 
@@ -1519,6 +1503,8 @@ Use the script to test the OK3588 native `fltest_gpio.sh `pins.
 forlinx@ok3588:~$ fltest_gpio.sh -h
 /usr/bin/fltest_gpio.sh <GPIO_NAME> <1/0>
 User:/usr/bin/fltest_gpio.sh GPIO3_A7 1
+forlinx@ok3588:~$ sudo fltest_gpio.sh GPIO3_A7 1
+===GPIO3_A7===1
 ```
 
 ###### 3.3.3.2 Extend GPIO
@@ -1528,7 +1514,7 @@ To test the extended IO of OK3588, use the `fltest_extgpio.sh` script.
 Taking GPIO_P17 pin as an example for testing, to set GPIO_P17 to high level:
 
 ```bash
-forlinx@ok3588:~$ fltest_extgpio.sh GPIO_P17 1
+forlinx@ok3588:~$ sudo fltest_extgpio.sh GPIO_P17 1
 485
 17
 500
@@ -1538,7 +1524,7 @@ forlinx@ok3588:~$ fltest_extgpio.sh GPIO_P17 1
 To set GPIO\_P17 to a low level:
 
 ```bash
-forlinx@ok3588:~$ fltest_extgpio.sh GPIO_P17 0
+forlinx@ok3588:~$ sudo fltest_extgpio.sh GPIO_P17 0
 485
 17
 500
@@ -1563,7 +1549,7 @@ The device tree node for the PWM of the OK3588-C/3588-C2 is located at:
 The device tree node for the OK3588S2-C PWM is located at:
 `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`:
 
-```c
+```plain
 &pwm2 { 										// FAN
 	status = "okay";
 };
@@ -1591,7 +1577,7 @@ backlight_dsi0: backlight-dsi0 {
 		compatible = "pwm-backlight";
 		pwms = <&pwm5 0 50000 0>;
 		status = "okay";
-   };
+};
 ```
 
 ##### 4.3 Application
@@ -1602,7 +1588,7 @@ The backlight brightness setting range is (0-255), where 255 represents the high
 
 Use the following command to view all backlight devices:
 
-```c
+```plain
 forlinx@ok3588:~$ ls /sys/class/backlight/
 backlight-dsi0  backlight-dsi1  backlight-edp1
 ```
@@ -1611,21 +1597,21 @@ Here, backlight-dsi0 corresponds to the DSI0 interface.
 
 To check the current backlight brightness value of the backlight-dsi0 device:
 
-```c
+```plain
 forlinx@ok3588:~$ cat /sys/class/backlight/backlight-dsi0/brightness
 200
 ```
 
 To set the backlight brightness of the DSI0 screen to 0 (i.e., turn off the backlight), write 0 to the backlight device:
 
-```c
-forlinx@ok3588:~$ echo 0 > /sys/class/backlight/backlight-dsi0/brightness
+```plain
+forlinx@ok3588:~$ sudo bash -c 'echo 0 > /sys/class/backlight/backlight-dsi0/brightness'
 ```
 
 To restore the backlight brightness of the DSI0 screen to 200, write 200 to the backlight device:
 
-```c
-forlinx@ok3588:~$ echo 200 > /sys/class/backlight/backlight-dsi0/brightness
+```plain
+forlinx@ok3588:~$ sudo bash -c 'echo 200 > /sys/class/backlight/backlight-dsi0/brightness'
 ```
 
 #### 5\. UART
@@ -1649,11 +1635,11 @@ The driver source code within the kernel are located in: `drivers/tty/serial/825
 
 ##### 5.2 Device Tree
 
-The UART device tree node is located in: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
+The UART device tree node is located in: `arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 Take uart4 as example:
 
-```c
+```plain
 uart4: serial@feb70000 {
     compatible = "rockchip,rk3588-uart", "snps,dw-apb-uart";
     reg = <0x0 0xfeb70000 0x0 0x100>;
@@ -1671,11 +1657,11 @@ uart4: serial@feb70000 {
 
 It is not enabled by default, and you need to open UART in the corresponding device tree:
 
-OK3588-C/3588-C2 : `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`。
+OK3588-C/3588-C2 : `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`。
 
-OK3588S2-C: `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
+OK3588S2-C: `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &uart4 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart4m0_xfer>;
@@ -1693,7 +1679,7 @@ This test utilises UART4 (ttyS4) and employs a loopback method to test the seria
 
 After completing the short-circuit, launch the test program.
 
-```c
+```plain
 forlinx@ok3588:~$ fltest_uarttest -d /dev/ttyS4
 Welcome to uart test
 Send test data:
@@ -1821,7 +1807,7 @@ while(1)
 
 Close the file descriptor after use:
 
-```c
+```plain
 close(fd);
 ```
 
@@ -1833,7 +1819,7 @@ The Rockchip series of chips provides customers with a standard I2C bus that all
 
 ##### 6.2 Device Tree
 
-I2C device tree node path: `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
+I2C device tree node path: `arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
 ```plain
 i2c7: i2c@fec90000 {
@@ -1854,11 +1840,11 @@ i2c7: i2c@fec90000 {
 
 It is not enabled by default, and please enable I2C in the corresponding device tree.
 
-OK3588-C/3588-C2 : `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
+OK3588-C/3588-C2 : `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-OK3588S2-C: `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
+OK3588S2-C: `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &i2c7 {
 	status = "okay";
 	nau8822: nau8822@1a { 	// Using the I2C7 bus to communicate with the NAU8822
@@ -1909,7 +1895,7 @@ If you wish to manually operate a device using tools like i2cget or i2cset, you 
 Read the 8-bit value of a single register in a specified device; for example, read the value of register 0x10 in the device located at address 0x50 on bus 1.
 
 ```plain
-i2cget -y 1 0x50 0x10
+forlinx@ok3588:~$ sudo i2cget -y 1 0x50 0x10
 ```
 
 **⚠️Note: This specific I2C device is not present on the OK3588-C board. This section only demonstrates the command usage.**
@@ -1921,7 +1907,7 @@ Writes a value to a single register of a specified device.
 Example: Write value `0xAB` to register `0x10` of the device with address `0x50` on bus `1`:
 
 ```
-i2cset -y 1 0x50 0x10 0xAB
+forlinx@ok3588:~$ sudo i2cset -y 1 0x50 0x10 0xAB
 ```
 
 **⚠️Note: This specific I2C device is not present on the OK3588-C board. This section only demonstrates the command usage.**
@@ -1945,17 +1931,17 @@ The RTC driver source code is located in the kernel at:  `drivers/rtc/rtc-pcf856
 The **pcf8563** is connected under **I2C5**, so the RTC device node is placed under the `i2c5` node in the device tree.
 
 - **OK3588-C / OK3588-C2** device tree path:
-  `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
+  `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`
 - **OK3588S2-C** device tree path:
-  `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
+  `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &i2c5 {
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&i2c5m2_xfer>;
 
-    rtc: pcf8563@51 {
+	rtc: pcf8563@51 {
 		compatible = "nxp,pcf8563";
 		reg = <0x51>;
 		status = "okay";
@@ -1976,7 +1962,7 @@ The RTC test primarily involves using the `date` and `hwclock` tools to set soft
 - Set the system software time:
 
 
-```c
+```plain
 forlinx@ok3588:~$ sudo date -s "2025-10-27 10:05:02"
 Mon Oct 27 10:05:02 UTC 2025
 ```
@@ -1984,21 +1970,21 @@ Mon Oct 27 10:05:02 UTC 2025
 - Synchronize system time to hardware clock:
 
 
-```c
+```plain
 forlinx@ok3588:~$ sudo hwclock -wu
 ```
 
 - Display the current hardware clock time:
 
 
-```c
+```plain
 forlinx@ok3588:~$ sudo hwclock -r
 2025-10-27 10:06:32.161747+00:00
 ```
 
 Then, power off the board and turn it back on. After entering the system, read the system time again to verify that the time has been synchronized correctly.
 
-```c
+```plain
 forlinx@ok3588:~$ date
 Mon Oct 27 10:07:16 UTC 2025
 ```
@@ -2014,16 +2000,16 @@ If the program enters an infinite loop, crashes, or fails to feed the dog before
 The **OK3588-C development board** integrates an on-chip watchdog.
 
 The watchdog driver source code is located in the kernel at:
-`kernel/drivers/watchdog/dw_wdt.c`
+`drivers/watchdog/dw_wdt.c`
 
 ##### 8.2 Device Tree
 
 The watchdog device tree node is located in:
-`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
+`arch/arm64/boot/dts/rockchip/rk3588s.dtsi`
 
 **Example Device Tree Node (rk3588s.dtsi):**
 
-```c
+```plain
 wdt: watchdog@feaf0000 {
     compatible = "snps,dw-wdt";
     reg = <0x0 0xfeaf0000 0x0 0x100>;
@@ -2036,11 +2022,11 @@ wdt: watchdog@feaf0000 {
 
 By default, it is disabled; you need to enable the watchdog in the corresponding device tree:
 
-OK3588-C/3588-C2:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`。
+OK3588-C/3588-C2:`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`。
 
-OK3588S2-C:`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
+OK3588S2-C:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &wdt {
 	status = "okay";
 };
@@ -2056,7 +2042,7 @@ This test provides two test programs; you can choose one based on your actual ne
 
 This command opens the watchdog and performs feeding operations, so the system will not restart.
 
-```c
+```plain
 forlinx@ok3588:~$ sudo fltest_watchdog
 Watchdog Ticking Away!
 ```
@@ -2065,7 +2051,7 @@ When terminating the test program with `ctrl + c`, feeding stops while the watch
 
 To avoid the reset, enter the command to disable the watchdog within 10 seconds after ending the program:
 
-```c
+```plain
 forlinx@ok3588:~$ sudo fltest_watchdog -d
 Watchdog card disabled.
 ```
@@ -2075,7 +2061,7 @@ Watchdog card disabled.
 
 Execute the command `fltest_watchdogrestart`, which opens the watchdog but does not perform feeding operations; the system will restart after 10 seconds.
 
-```c
+```plain
 forlinx@ok3588:~$ sudo fltest_watchdogrestart
 Restart after 10 seconds
 ```
@@ -2089,7 +2075,7 @@ and
 
 In OK3588, the watchdog device node is `/dev/watchdog`. In applications, include the header file `linux/watchdog.h`, which defines the ioctl command macros for the watchdog. Each different command macro represents a request to perform a different operation on the device, as shown below:
 
-```c
+```plain
 #define	WDIOC_GETSUPPORT	_IOR(WATCHDOG_IOCTL_BASE, 0, struct watchdog_info)
 #define	WDIOC_GETSTATUS		_IOR(WATCHDOG_IOCTL_BASE, 1, int)
 #define	WDIOC_GETBOOTSTATUS	_IOR(WATCHDOG_IOCTL_BASE, 2, int)
@@ -2118,7 +2104,7 @@ In OK3588, the watchdog device node is `/dev/watchdog`. In applications, include
 
 The watchdog device can be opened using the `open()` function to obtain a file descriptor:
 
-```c
+```plain
 fd = open("/dev/watchdog", O_WRONLY);
 if (fd == -1) {
 fprintf(stderr, "Watchdog device not enabled.\n");
@@ -2128,7 +2114,7 @@ fprintf(stderr, "Watchdog device not enabled.\n");
 
 The **WDIOC_SETTIMEOUT** command macro can be used to set the watchdog timeout. Usage is as follows:
 
-```c
+```plain
 ioctl(fd,WDIOC_SETTIMEOUT,&flags);
 ```
 
@@ -2138,7 +2124,7 @@ For details on the timeout setting mechanism for RK3588, refer to the next secti
 
 After the watchdog timer is started, it must be “fed” before the timeout expires; otherwise, a timer overflow will cause a system reset or generate an interrupt signal. Feeding can be performed using the **WDIOC_KEEPALIVE** command macro as follows:
 
-```c
+```plain
 ioctl(fd, WDIOC_KEEPALIVE, &dummy);
 ```
 
@@ -2176,7 +2162,7 @@ The on-board eMMC storage chip on the OK3588 platform is connected to a dedicate
 mmc0 is the device node for the eMMC:
 
 ```plain
-forlinx@ok3588:~# dmesg | grep mmc0
+forlinx@ok3588:~$ dmesg | grep mmc0
 [    5.305417] mmc0: CQHCI version 5.10
 [    5.336474] mmc0: SDHCI controller on fe2e0000.mmc [fe2e0000.mmc] using ADMA
 [    5.449117] mmc0: Command Queue Engine enabled
@@ -2201,7 +2187,7 @@ The location of the driver source code in the kernel:`drivers/mmc/host/dw_mmc-ro
 
 Device tree configuration for the eMMC interface can be found here: `arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
-```c
+```plain
 sdhci: mmc@fe2e0000 {
     compatible = "rockchip,rk3588-dwcmshc", "rockchip,dwcmshc-sdhci";
     reg = <0x0 0xfe2e0000 0x0 0x10000>;
@@ -2228,7 +2214,7 @@ OK3588-C/3588-C2: `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`。
 
 OK3588S2-C: `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`
 
-```c
+```plain
 &sdhci {
     bus-width = <8>;
     no-sdio;
@@ -2250,7 +2236,7 @@ eMMC devices have an extensive amount of extra information and settings that are
 In the Linux userspace, you can query the registers and see:
 
 ```plain
-forlinx@ok3588:~$ mmc extcsd read /dev/mmcblk0
+forlinx@ok3588:~$ sudo mmc extcsd read /dev/mmcblk0
 =============================================
   Extended CSD rev 1.8 (MMC 5.1)
 =============================================
@@ -2354,7 +2340,7 @@ The SD Card device tree node for OK3588-C/3588-C2 is located at: `kernel-6.1/arc
 
 The SD Card device tree node for OK3588S2-C is located at: `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 &sdmmc {
     max-frequency = <150000000>;
     no-sdio;
@@ -2404,7 +2390,7 @@ To ensure that the data is accurate, restart the board and retest the read speed
 forlinx@ok3588:~$ dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M
 500+0 records in
 500+0 records out
-524288000 bytes (524 MB, 500 MiB) copied, 0.0624663 s, 8.4 GB/s
+524288000 bytes (524 MB, 500 MiB) copied, 7.93527 s, 66.1 MB/s
 ```
 
 After using the TF card, before ejecting it, you need to unmount it using the umount command:
@@ -2433,7 +2419,7 @@ The USB 2.0 device tree nodes for the OK3588-C/3588-C2 are located in:
 The USB 2.0 device tree nodes for the OK3588S2-C are located in:  
 `arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 // USB2.0 HOST0 EHCI Controller (USB2.0 protocol)
 &usb_host0_ehci {
 	status = "okay";
@@ -2502,11 +2488,11 @@ The definitions for VID/PID and the driver source code related to HID devices ar
 
 To view the list of supported HID device VID/PID in the kernel source code, use the following command:
 
-```c
+```plain
 # View all defined HID vendor ID
-OK-linux-source$ grep "USB_VENDOR_ID_" kernel/drivers/hid/hid-ids.h | head -20
+kernel-source$ grep "USB_VENDOR_ID_" kernel/drivers/hid/hid-ids.h | head -20
 # View device ID for a specific vendor (using Logitech as an example)
-OK-linux-source$ grep "LOGITECH" kernel/drivers/hid/hid-ids.h
+kernel-source$ grep "LOGITECH" kernel/drivers/hid/hid-ids.h
 ```
 
 ##### 11.4 Application
@@ -2517,7 +2503,7 @@ After the development board boots up, connect the USB flash drive to the USB hos
 
 Check the mount directory:
 
-```c
+```plain
 forlinx@ok3588:~$ mount | grep "sda1"
 /dev/sda1 on /run/media/sda1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro)
 ```
@@ -2526,7 +2512,7 @@ You can see `/run/media/sda1` is the mount path for the USB storage device.
 
 Write test (write speed is limited by the specific storage device):
 
-```c
+```plain
 forlinx@ok3588:~$ dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
 500+0 records in
 500+0 records out
@@ -2535,7 +2521,7 @@ forlinx@ok3588:~$ dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=f
 
 Read test (to ensure data accuracy, restart the development board before re-running the read speed test):
 
-```c
+```plain
 forlinx@ok3588:~$ dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
 500+0 records in
 500+0 records out
@@ -2544,7 +2530,7 @@ forlinx@ok3588:~$ dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
 
 After using the USB drive, use umount to unmount it before unplugging:
 
-```c
+```plain
 forlinx@ok3588:~$ sudo umount /dev/sda1
 ```
 
@@ -2552,7 +2538,7 @@ forlinx@ok3588:~$ sudo umount /dev/sda1
 
 Connect the USB mouse to the USB port of the OK3588 platform and enter the following command to check the kernel logs:
 
-```c
+```plain
 forlinx@ok3588:~$ dmesg | tail -10
 [ 2402.092278] FAT-fs (sda1): utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!
 [ 2402.096073] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
@@ -2613,7 +2599,7 @@ The Device Tree nodes for OK3588S2-C are located in `arch/arm64/boot/dts/rockchi
 
 Taking type-C0 as an example:
 
-```c
+```plain
 // USB3.0 OTG0 DWC3/xHCI Controller
 &usbdrd3_0 {
 	status = "okay";
@@ -2667,8 +2653,8 @@ Taking type-C0 as an example:
 
 &i2c2 {
 	status = "okay";
-// FUSB302 Type-C port controller at address 0x22
-    usbc0: fusb302@22 {
+		// FUSB302 Type-C port controller at address 0x22
+		usbc0: fusb302@22 {
 		compatible = "fcs,fusb302";
 		reg = <0x22>;
 		interrupt-parent = <&gpio1>;
@@ -2752,7 +2738,7 @@ In this mode, you can insert a USB drive (Type-- C) for read/write tests.
 
 View the mount directory:
 
-```c
+```plain
 forlinx@ok3588:~$ mount | grep sda1
 /dev/sda1 on /run/media/sda1 type vfat (rw,relatime,gid=6,fmask=0007,dmask=0007,allow_utime=0020,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro)
 ```
@@ -2761,7 +2747,7 @@ You can see`/run/media/sda1` is the mount path for the USB storage device.
 
 Write test (write speed is limited by the specific storage device):
 
-```c
+```plain
 forlinx@ok3588:~$ dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=fsync
 500+0 records in
 500+0 records out
@@ -2770,7 +2756,7 @@ forlinx@ok3588:~$ dd if=/dev/zero of=/run/media/sda1/test bs=1M count=500 conv=f
 
 Read test (to ensure data accuracy, restart the development board before re-running the read speed test):
 
-```c
+```plain
 forlinx@ok3588:~$ dd if=/run/media/sda1/test of=/dev/null bs=1M iflag=direct
 500+0 records in
 500+0 records out
@@ -2787,7 +2773,7 @@ The OK3588-C board features 1 x PCIe 2.0 x1 and 1 x PCIe 3.0 x4 interface, as sh
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1776413262533_6f5353cb_b41b_4c42_abb6_d98ea64e4e9d.png)
 
-You can design PCIe bifurcation according to your specific requirements. For detailed information, please refer to the following documentation:`en/Common/PCIe/Rockchip_Developer_Guide_PCIe_EN.pdf`
+You can design PCIe bifurcation according to your specific requirements. For detailed information, please visit the <a href="https://www.forlinx.net/resources/download-center.html" target="_blank" rel="noopener noreferrer">Resource Download Center</a> page, find the "Rockchip Linux Software Development Guide" document, and locate the file `en/Common/PCIe/Rockchip_Developer_Guide_PCIe_EN.pdf`.
 
 **⚠️Note: Since the RK3588S2 chip itself has fewer PCIe controllers, neither the P45 nor P46 PCIe interfaces on the OK3588S2-C board are unusable.**
 
@@ -2795,9 +2781,9 @@ PCIe driver source code location in the kernel: `drivers/pci/controller/pcie-roc
 
 ##### 13.2 Device Tree
 
-OK3588-C/3588-C2 PCIe device tree node location: `kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
+OK3588-C/3588-C2 PCIe device tree node location: `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 // Fixed regulator for PCIe 3.0 3.3V power supply
 vcc3v3_pcie30: vcc3v3_pcie30 {
 	compatible = "regulator-fixed";
@@ -2866,7 +2852,7 @@ Before powering on the system, insert the PCIe module into the PCIe slot on the 
 
 After powering on and starting, use the `lspci  `command to check that the device is enumerated successfully.
 
-```c
+```plain
 forlinx@ok3588:~$ lspci
 0002:20:00.0 PCI bridge: Rockchip Electronics Co., Ltd RK3588 (rev 01)
 0002:21:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller (rev 15)
@@ -2877,7 +2863,7 @@ forlinx@ok3588:~$ lspci
 
 You can see the following NVMe nodes `eth2`:
 
-```c
+```plain
 forlinx@ok3588:~$ ifconfig
 eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         ether b2:9c:e6:c7:a0:63  txqueuelen 1000  (Ethernet)
@@ -2925,13 +2911,13 @@ mlan0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 Configure the network node:
 
-```c
+```plain
 forlinx@ok3588:~$ sudo ifconfig eth2 192.168.0.233 netmask 255.255.255.0
 ```
 
 Configure the network IP according to your actual network conditions. Network connectivity can be tested using the ping command (it’s necessary to ping an IP within the same subnet).
 
-```c
+```plain
 forlinx@ok3588:~$ ping 192.168.0.100 -I eth2 -c 5
 PING 192.168.0.100 (192.168.0.100) 56(84) bytes of data.
 64 bytes from 192.168.0.100: icmp_seq=1 ttl=128 time=0.320 ms
@@ -2980,7 +2966,7 @@ The OK3588-C employs the RGMII Config 1 clocking scheme.
 
 The device tree nodes for the OK3588-C network are located at: `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 &mdio0 {
 	rgmii_phy0: phy@1 {
 		compatible = "ethernet-phy-ieee802.3-c22";
@@ -3056,7 +3042,7 @@ The device tree nodes for the OK3588S2-C network are located at: `arch/arm64/boo
 
 Modify the following configuration file to set eth0 to automatically obtain an IP address:`/etc/systemd/network/10-eth0.network`.
 
-```c
+```plain
 forlinx@ok3588:~$ sudo vi /etc/systemd/network/10-eth0.network   	  // Open the configuration file
 [Match]
 Name=eth0
@@ -3067,7 +3053,7 @@ DHCP=yes
 
 After the settings are completed, restart the network service.
 
-```c
+```plain
 forlinx@ok3588:~$ sudo systemctl restart systemd-networkd
 ```
 
@@ -3075,7 +3061,7 @@ forlinx@ok3588:~$ sudo systemctl restart systemd-networkd
 
 You can modify the default IP address by editing the following configuration file:`/etc/systemd/network/10-eth0.network`.
 
-```c
+```plain
 forlinx@ok3588:~$ sudo vi /etc/systemd/network/10-eth0.network
 [Match]
 Name=eth0
@@ -3098,7 +3084,7 @@ After configuring the settings, restart the network service.
 
 Restart the network service after the setup is completed.
 
-```c
+```plain
 forlinx@ok3588:~$ sudo systemctl restart systemd-networkd
 ```
 
@@ -3110,7 +3096,7 @@ Connect the network cable to the ETH0 port of the board before the test.
 
 The `ifconfig` is a classic tool for configuring and viewing network interfaces in Linux and Unix systems.
 
-```c
+```plain
 // View all network interface information.
 forlinx@ok3588:~$ ifconfig
 eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
@@ -3137,14 +3123,13 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 11450  bytes 711970 (695.2 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
 ```
 
 **14.3.2.2 Ethtool**
 
 The `ethtool` command is an essential tool in Linux systems for troubleshooting physical layer and driver-level issues. It provides more in-depth hardware-level information than the ifconfig command. It provides more in-depth hardware-level information than the `ifconfig`command.
 
-```c
+```plain
 // Show the basic settings of eth0
 forlinx@ok3588:~$ sudo ethtool  eth0
 Settings for eth0:
@@ -3189,7 +3174,7 @@ Settings for eth0:
 
 After configuring the network IP according to your actual network environment, you can use the ping command to test network connectivity (you need to ping an IP address within the same subnet).
 
-```c
+```plain
 forlinx@ok3588:~$ ping 192.168.0.100 -c 5
 PING 192.168.0.100 (192.168.0.100) 56(84) bytes of data.
 64 bytes from 192.168.0.100: icmp_seq=1 ttl=128 time=0.320 ms
@@ -3209,13 +3194,13 @@ After configuring the network IP according to your actual network environment, y
 
 Server Side:
 
-```c
+```plain
 iperf3.exe -s
 ```
 
 Client (Board):
 
-```c
+```plain
 // iperf3 -c IP_ADDRESS_OF_IPERF_SERVER
 forlinx@ok3588:~$ iperf3 -c 192.168.0.100
 Connecting to host 192.168.0.100, port 5201
@@ -3269,7 +3254,7 @@ The device tree nodes for Wi‑Fi and Bluetooth on OK3588‑C / 3588‑C2 are lo
 
 The device tree nodes for Wi‑Fi and Bluetooth on OK3588S2‑C are located at:`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
-```c
+```plain
 wireless-wlan {
         compatible = "wlan-platdata";
         wifi_chip_type = "mvl88w9098";
@@ -3318,16 +3303,16 @@ Generate the configuration for the WIFI you want to connect to:
 root@ok3588:~# wpa_passphrase "forlinx-wlan" "fl03123102650" > /tmp/wpa.conf
 ```
 
-Connect to WIFI:：
+Connect to WIFI:
 
-```c
+```plain
 root@ok3588:~# wpa_supplicant -B -i mlan0 -c /tmp/wpa.conf
 Successfully initialized wpa_supplicant
 ```
 
 Wait three seconds, then check if an IP address has been assigned:
 
-```c
+```plain
 root@ok3588:~# ip addr show mlan0
 6: mlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
     link/ether f8:54:f6:b6:cd:de brd ff:ff:ff:ff:ff:ff
@@ -3335,13 +3320,20 @@ root@ok3588:~# ip addr show mlan0
        valid_lft 1799sec preferred_lft 1799sec
     inet6 fe80::fa54:f6ff:feb6:cdde/64 scope link proto kernel_ll
        valid_lft forever preferred_lft forever
-
 ```
 
 Test the network connection:
 
-```c
-root@ok3588:~# ping -c 3 www.forlinx.com -I  mlan0
+```plain
+root@ok3588:~# ping -c 3 www.forlinx.net -I mlan0
+PING www.forlinx.net (172.67.155.191) from 10.10.16.92 mlan0: 56(84) bytes of data.
+64 bytes from 172.67.155.191: icmp_seq=1 ttl=52 time=308 ms
+64 bytes from 172.67.155.191: icmp_seq=2 ttl=52 time=331 ms
+64 bytes from 172.67.155.191: icmp_seq=3 ttl=52 time=253 ms
+
+--- www.forlinx.net ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2000ms
+rtt min/avg/max/mdev = 252.799/297.311/331.418/32.928 ms
 ```
 
 ###### 15.3.2 WiFi AP Mode
@@ -3365,13 +3357,13 @@ Password: `12345678`
 
 Enable AP node:
 
-```c
+```plain
 root@ok3588:~# wifi-ap start
 ```
 
 View AP node:
 
-```c
+```plain
 root@ok3588:~# ip addr show uap0
 ```
 
@@ -3381,8 +3373,8 @@ This section demonstrates data transfer between a mobile phone and the developme
 
 Bluetooth configuration:
 
-```c
-forlinx@ok3588:~# bluetoothctl                                                 // Open the BlueZ Bluetooth tool
+```plain
+forlinx@ok3588:~# bluetoothctl                                                          // Open the BlueZ Bluetooth tool
 hci0 new_settings: powered bondable ssp br/edr le secure-conn
 Agent registered
 [CHG] Controller 50:5A:65:51:A9:F1 Pairable: yes
@@ -3407,7 +3399,7 @@ Turn on Bluetooth search on the mobile phone; a device named`ok3588`will appear.
 
 The print information on the development board is as follows. Enter "yes":
 
-```c
+```plain
 [bluetooth]# default-agent
 Default agent request successful
 hci0 B0:46:92:74:81:84 type BR/EDR connected eir_len 22
@@ -3427,7 +3419,7 @@ hci0 device_flags_changed: B0:46:92:74:81:84 (BR/EDR)
 
 View and remove connected devices:
 
-```c
+```plain
 [OPPO Reno5 K 5G]# devices
 Device B0:46:92:74:81:84 OPPO Reno5 K 5G
 [OPPO Reno5 K 5G]# remove B0:46:92:74:81:84
@@ -3452,12 +3444,10 @@ Development board receives files
 
 After successful pairing, you can send a file from the mobile phone to the OK3588‑C development board via Bluetooth.
 
-The received files are saved in the
+The received files are saved in the`/tmp/`.
 
-`/tmp/`.
-
-```c
-forlinx@ok3588:~# ls /tmp/*.jpg
+```plain
+forlinx@ok3588:~$ ls /tmp/*.jpg
 /tmp/Screenshot_2025-10-25-09-45-57-51_76eaced432273cd65da1ec13409568ff.jpg
 ```
 
@@ -3465,25 +3455,27 @@ Send files from the development board
 
 You can send a file from the OK3588‑C development board to a mobile phone. Test as follows:
 
-```c
-forlinx@ok3588:~# fltest_obexctl.sh
+```plain
+forlinx@ok3588:~$ echo "test bt send" > test.txt
+forlinx@ok3588:~$ systemctl --user start obex
+forlinx@ok3588:~$ obexctl
 [NEW] Client /org/bluez/obex
 [obex]# connect B0:46:92:74:81:84
 Attempting to connect to B0:46:92:74:81:84
-[NEW] Session /org/bluez/obex/client/session1 [default]
-[NEW] ObjectPush /org/bluez/obex/client/session1
+[NEW] Session /org/bluez/obex/client/session0 [default]
+[NEW] ObjectPush /org/bluez/obex/client/session0
 Connection successful
-[B0:46:92:74:81:84]# send /userdata/media/1080p_30fps_vp8.mp4
-Attempting to send /userdata/media/1080p_30fps_vp8.mp4 to /org/bluez/obex/client/session1
-[NEW] Transfer /org/bluez/obex/client/session1/transfer0
-Transfer /org/bluez/obex/client/session1/transfer0
+[B0:46:92:74:81:84]# send /home/forlinx/test.txt
+Attempting to send /home/forlinx/test.txt to /org/bluez/obex/client/session0
+[NEW] Transfer /org/bluez/obex/client/session0/transfer0
+Transfer /org/bluez/obex/client/session0/transfer0
 [B0:46:9Status: queued
-[B0:46:9Name: 1080p_30fps_vp8.mp4
-[B0:46:9Size: 20137363
-[B0:46:9Filename: /userdata/media/1080p_30fps_vp8.mp4
-[B0:46:9Session: /org/bluez/obex/client/session1
-[CHG] Transfer /org/bluez/obex/client/session1/transfer0 Status: active
-[CHG] Transfer /org/bluez/obex/client/session1/transfer0 Transferred: 8024 (@8KB/s 41:48)
+[B0:46:9Name: test.txt
+[B0:46:9Size: 1484]#
+[B0:46:9Filename: /home/forlinx/test.txt
+[B0:46:9Session: /org/bluez/obex/client/session0
+[CHG] Transfer /org/bluez/obex/client/session0/transfer0 Status: complete
+[DEL] Transfer /org/bluez/obex/client/session0/transfer0
 ```
 
 **⚠️Note: Some mobile phones require files to have an extension; otherwise, the Android system will reject them. Therefore, please try to use files with extensions for testing. Apple iPhones do not support sending/receiving data via Bluetooth.**
@@ -3525,37 +3517,35 @@ forlinx@ok3588:~# ls /dev/ttyUSB*
 After successful device identification, you can perform dial-up Internet access testing;
 
 ```plain
-forlinx@ok3588:~# quectelCM &
-[1] 1320
-forlinx@ok3588:~# [01-24_22:46:46:004] Quectel_QConnectManager_Linux_V1.6.0.24
-[01-24_22:46:46:004] Find /sys/bus/usb/devices/5-1 idVendor=0x2c7c idProduct=0x125, bus=0x005, dev=0x002
-[01-24_22:46:46:005] Auto find qmichannel = /dev/cdc-wdm0
-[01-24_22:46:46:005] Auto find usbnet_adapter = wwan0
-[01-24_22:46:46:005] netcard driver = qmi_wwan, driver version = 6.1.118
-[01-24_22:46:46:005] Modem works in QMI mode
-[01-24_22:46:46:007] cdc_wdm_fd = 7
-[01-24_22:46:46:091] Get clientWDS = 5
-[01-24_22:46:46:124] Get clientDMS = 1
-[01-24_22:46:46:155] Get clientNAS = 2
-[01-24_22:46:46:187] Get clientUIM = 1
-[01-24_22:46:46:219] Get clientWDA = 1
-[01-24_22:46:46:251] requestBaseBandVersion EM05CNFDR08A03M1G_ND
-[01-24_22:46:46:379] requestGetSIMStatus SIMStatus: SIM_READY
-[01-24_22:46:46:411] requestGetProfile[1] 3gnet///0
-[01-24_22:46:46:444] requestRegistrationState2 MCC: 460, MNC: 1, PS: Attached, DataCap: LTE
-[01-24_22:46:46:476] requestQueryDataCall IPv4ConnectionStatus: DISCONNECTED
-[01-24_22:46:46:476] ifconfig wwan0 0.0.0.0
-[01-24_22:46:46:478] ifconfig wwan0 down
-[01-24_22:46:46:538] requestSetupDataCall WdsConnectionIPv4Handle: 0x86d1b800
-[01-24_22:46:46:667] ifconfig wwan0 up
-[01-24_22:46:46:670] busybox udhcpc -f -n -q -t 5 -i wwan0
-udhcpc: started, v1.36.1
-udhcpc: broadcasting discover
-udhcpc: broadcasting select for 10.98.203.144, server 10.98.203.145
-udhcpc: lease of 10.98.203.144 obtained from 10.98.203.145, lease time 7200
-[01-24_22:46:46:836] deleting routers
-[01-24_22:46:46:849] adding dns 202.99.160.68
-[01-24_22:46:46:849] adding dns 202.99.166.4
+forlinx@ok3588:~$ sudo quectel-CM &
+[1] 884
+forlinx@ok3588:~$ [06-12_03:03:37:362] QConnectManager_Linux_V1.6.7
+[06-12_03:03:37:363] Find /sys/bus/usb/devices/3-1 idVendor=0x2c7c idProduct=0x125, bus=0x003, dev=0x002
+[06-12_03:03:37:363] Auto find qmichannel = /dev/cdc-wdm0
+[06-12_03:03:37:363] Auto find usbnet_adapter = wwan0
+[06-12_03:03:37:363] netcard driver = qmi_wwan_q, driver version = V1.2.9
+[06-12_03:03:37:363] Modem works in QMI mode
+[06-12_03:03:37:371] cdc_wdm_fd = 7
+[06-12_03:03:37:451] Get clientWDS = 5
+[06-12_03:03:37:485] Get clientDMS = 1
+[06-12_03:03:37:516] Get clientNAS = 2
+[06-12_03:03:37:548] Get clientUIM = 1
+[06-12_03:03:37:580] Get clientWDA = 1
+[06-12_03:03:37:612] requestBaseBandVersion EM05CNFDR08A03M1G_ND
+[06-12_03:03:37:740] requestGetSIMStatus SIMStatus: SIM_READY
+[06-12_03:03:37:804] requestGetProfile[pdp:1 index:1] ctnet///0/IPV4V6
+[06-12_03:03:37:836] requestRegistrationState2 MCC: 460, MNC: 11, PS: Attached, DataCap: LTE
+[06-12_03:03:37:867] requestQueryDataCall IPv4ConnectionStatus: DISCONNECTED
+[06-12_03:03:37:867] ip addr flush dev wwan0
+[06-12_03:03:37:871] ip link set dev wwan0 down
+[06-12_03:03:37:931] requestSetupDataCall WdsConnectionIPv4Handle: 0x86d14f70
+[06-12_03:03:38:059] ip link set dev wwan0 up
+[06-12_03:03:38:064] busybox udhcpc -f -n -q -t 5 -i wwan0
+sh: line 1: busybox: command not found
+[06-12_03:03:38:065] ip -4 address flush dev wwan0
+[06-12_03:03:38:067] ip -4 address add 100.126.50.85/30 dev wwan0
+[06-12_03:03:38:071] ip -4 route add default via 100.126.50.86 dev wwan0
+[06-12_03:03:38:075] fopen /etc/resolv.conf fail, errno:2 (No such file or directory)
 ```
 
 The ping domain name test.
@@ -3564,114 +3554,145 @@ The 4G network node is `wwan0`.
 
 **⚠️Note: Please select the domain name to test according to the region of the user.**
 
-```c
-forlinx@ok3588:~# ping -I wwan0 www.forlinx.com -c 3
-PING s-526319.gotocdn.com (211.149.226.120) from 10.98.203.144 wwan0: 56(84) bytes of data.
-64 bytes from 211.149.226.120: icmp_seq=1 ttl=50 time=312 ms
-64 bytes from 211.149.226.120: icmp_seq=2 ttl=50 time=200 ms
-64 bytes from 211.149.226.120: icmp_seq=3 ttl=50 time=81.7 ms
+```plain
+forlinx@ok3588:~$ ping www.forlinx.net -I wwan0 -c 3
+PING www.forlinx.net (104.21.40.175) from 100.126.50.85 wwan0: 56(84) bytes of data.
+64 bytes from 104.21.40.175: icmp_seq=1 ttl=52 time=388 ms
+64 bytes from 104.21.40.175: icmp_seq=2 ttl=52 time=446 ms
+64 bytes from 104.21.40.175: icmp_seq=3 ttl=52 time=468 ms
 
---- s-526319.gotocdn.com ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 8841ms
-rtt min/avg/max/mdev = 81.694/197.930/312.431/94.205 ms
+--- www.forlinx.net ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 388.423/434.002/468.062/33.517 ms
 ```
 
 ##### 16.2 5G
 
 Connect the 5G module RM500U and the antenna, insert the SIM card, and start the development board. Please note the direction of the SIM. The logo is silk-screened on the carrier board.
 
+**⚠️NOTE：5G is very sensitive to signal strength. During testing, please connect all four antennas required by the module.**
+
 Connect the module. After the development board and the module are powered on, you can check the USB status through the`lsusb`command:
 
 ```shell
-forlinx@ok3588:~# lsusb
-Bus 005 Device 001: ID 1d6b:0002
-Bus 003 Device 001: ID 1d6b:0002
-Bus 002 Device 002: ID 2c7c:0900 	                        // RM500U 5G module node
-Bus 001 Device 001: ID 1d6b:0002
-Bus 006 Device 001: ID 1d6b:0001
-Bus 004 Device 001: ID 1d6b:0001
-Bus 002 Device 001: ID 1d6b:0003
+forlinx@ok3588:~$ lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 002 Device 002: ID 2c7c:0900 Quectel Wireless Solutions Co., Ltd. RM500U-CNV	// RM500U 5G module
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 ```
 
 `/dev`To view the device node status:
 
 ```shell
-forlinx@ok3588:~# ls /dev/ttyUSB*
+forlinx@ok3588:~$ ls /dev/ttyUSB*
 /dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2  /dev/ttyUSB3  /dev/ttyUSB4
 ```
 
 After successful device identification, you can perform dial-up Internet access testing.
 
 ```shell
-forlinx@ok3588:~# quectelCM &
-[1] 1357
-forlinx@ok3588:~# [01-24_22:54:18:540] Quectel_QConnectManager_Linux_V1.6.0.24
-[01-24_22:54:18:540] Find /sys/bus/usb/devices/2-1 idVendor=0x2c7c idProduct=0x900, bus=0x002, dev=0x002
-[01-24_22:54:18:541] Auto find qmichannel = /dev/ttyUSB2
-[01-24_22:54:18:541] Auto find usbnet_adapter = eth2
-[01-24_22:54:18:541] netcard driver = cdc_ncm, driver version = 6.1.118
-[01-24_22:54:18:541] Modem works in ECM_RNDIS_NCM mode
-[01-24_22:54:18:543] atc_fd = 7
-[01-24_22:54:18:544] AT> ATE0Q0V1
-[01-24_22:54:18:553] AT< OK
-[01-24_22:54:19:553] AT> AT+QCFG="NAT",1
-[01-24_22:54:19:571] AT< OK
-[01-24_22:54:19:571] AT> AT+QCFG="usbnet"
-[01-24_22:54:19:575] AT< +QCFG: "usbnet",5
-[01-24_22:54:19:575] AT< OK
-[01-24_22:54:19:575] AT> AT+QNETDEVCTL=?
-[01-24_22:54:19:575] AT< +QNETDEVCTL: (1-8),(0-3),(0,1)
-[01-24_22:54:19:575] AT< OK
-[01-24_22:54:19:576] AT> AT+CGREG=2
-[01-24_22:54:19:578] AT< OK
-[01-24_22:54:19:578] AT> AT+QNETDEVSTATUS=?
-[01-24_22:54:19:579] AT< +QNETDEVSTATUS: (1-8)
-[01-24_22:54:19:579] AT< OK
-[01-24_22:54:19:579] AT> AT+CGMR
-[01-24_22:54:19:580] AT< RM500UCNVAAR03A06M2G_01.001.01.001
-[01-24_22:54:19:580] AT< OK
-[01-24_22:54:19:580] AT> AT+CPIN?
-[01-24_22:54:19:581] AT< +CPIN: READY
-[01-24_22:54:19:581] AT< OK
-[01-24_22:54:19:581] AT> AT+QCCID
-[01-24_22:54:19:582] AT< +QCCID: 89860124801390444928
-[01-24_22:54:19:582] AT< OK
-[01-24_22:54:19:582] requestGetICCID 89860124801390444928
-[01-24_22:54:19:582] AT> AT+CIMI
-[01-24_22:54:19:583] AT< 460013273321298
-[01-24_22:54:19:583] AT< OK
-[01-24_22:54:19:583] requestGetIMSI 460013273321298
-[01-24_22:54:19:583] AT> AT+COPS=3,0;+COPS?;+COPS=3,1;+COPS?;+COPS=3,2;+COPS?
-[01-24_22:54:19:587] AT< +COPS: 0,0,"CHN-UNICOM",7
-[01-24_22:54:19:590] AT< +COPS: 0,1,"CUCC",7
-[01-24_22:54:19:594] AT< +COPS: 0,2,"46001",7
-[01-24_22:54:19:594] AT< OK
-[01-24_22:54:19:594] AT> AT+QNETDEVSTATUS=1
-[01-24_22:54:19:662] AT< +CME ERROR: 3
-[01-24_22:54:19:662] requestQueryDataCall err=0, call_state=1
-[01-24_22:54:19:662] ifconfig eth2 0.0.0.0
-[01-24_22:54:19:667] ifconfig eth2 down
-[01-24_22:54:19:672] AT> AT+QNETDEVCTL=1,1,0
-[01-24_22:54:19:916] AT< OK
-[01-24_22:54:19:916] AT> AT+QNETDEVSTATUS=1
-[01-24_22:54:19:983] AT< +QNETDEVSTATUS: 10.152.154.83,255.255.255.0,10.152.154.1,,202.99.160.68,202.99.166.4,2408:841e:52e0:8e25:1884:a2db:f42c:dd27,,,,2408:8888:0000:8888:0000:0000:0000:0008,2408:8899:0000:8899:0000:0000:0000:0008
-[01-24_22:54:19:983] AT< OK
-[01-24_22:54:19:983] requestSetupDataCall err=0
-[01-24_22:54:19:983] AT> AT+QNETDEVSTATUS=1
-[01-24_22:54:20:042] AT< +QNETDEVSTATUS: 10.152.154.83,255.255.255.0,10.152.154.1,,202.99.160.68,202.99.166.4,2408:841e:52e0:8e25:1884:a2db:f42c:dd27,,,,2408:8888:0000:8888:0000:0000:0000:0008,2408:8899:0000:8899:0000:0000:0000:0008
-[01-24_22:54:20:042] AT< OK
-[01-24_22:54:20:042] requestGetIPAddress 10.152.154.83
-[01-24_22:54:20:042] requestGetIPAddress err=0
-[01-24_22:54:20:043] AT> AT+QNETDEVSTATUS=1
-[01-24_22:54:20:118] AT< +QNETDEVSTATUS: 10.152.154.83,255.255.255.0,10.152.154.1,,202.99.160.68,202.99.166.4,2408:841e:52e0:8e25:1884:a2db:f42c:dd27,,,,2408:8888:0000:8888:0000:0000:0000:0008,2408:8899:0000:8899:0000:0000:0000:0008
-[01-24_22:54:20:118] AT< OK
-[01-24_22:54:20:118] requestQueryDataCall err=0, call_state=2
-[01-24_22:54:20:118] ifconfig eth2 up
-[01-24_22:54:20:123] busybox udhcpc -f -n -q -t 5 -i eth2
-udhcpc: started, v1.36.1
-udhcpc: broadcasting discover
-udhcpc: broadcasting select for 192.168.42.2, server 192.168.42.1
-udhcpc: lease of 192.168.42.2 obtained from 192.168.42.1, lease time 86400
+forlinx@ok3588:~$ sudo quectel-CM &
+[1] 915
+forlinx@ok3588:~$ [06-12_03:17:32:215] QConnectManager_Linux_V1.6.7
+[06-12_03:17:32:215] Find /sys/bus/usb/devices/2-1 idVendor=0x2c7c idProduct=0x900, bus=0x002, dev=0x003
+[06-12_03:17:32:216] Auto find qmichannel = /dev/ttyUSB2
+[06-12_03:17:32:216] Auto find usbnet_adapter = eth2
+[06-12_03:17:32:216] netcard driver = cdc_ncm, driver version = 6.1.118-rockchip-standard
+[06-12_03:17:32:216] Modem works in ECM_RNDIS_NCM mode
+[06-12_03:17:32:219] atc_fd = 7
+[06-12_03:17:32:219] AT> ATE0Q0V1
+[06-12_03:17:32:226] AT< OK
+[06-12_03:17:33:226] AT> AT+QCFG="usbnet"
+[06-12_03:17:33:231] AT< +QCFG: "usbnet",5
+[06-12_03:17:33:231] AT< OK
+[06-12_03:17:33:231] AT> AT+QNETDEVCTL=?
+[06-12_03:17:33:235] AT< +QNETDEVCTL: (1-8),(0-3),(0,1)
+[06-12_03:17:33:235] AT< OK
+[06-12_03:17:33:235] AT> AT+CGREG=2
+[06-12_03:17:33:239] AT< OK
+[06-12_03:17:33:239] AT> AT+CEREG=2
+[06-12_03:17:33:244] AT< OK
+[06-12_03:17:33:244] AT> AT+C5GREG=2
+[06-12_03:17:33:248] AT< OK
+[06-12_03:17:33:248] AT> AT+QNETDEVSTATUS=?
+[06-12_03:17:33:252] AT< +QNETDEVSTATUS: (1-8)
+[06-12_03:17:33:252] AT< OK
+[06-12_03:17:33:252] AT> AT+QCFG="NAT"
+[06-12_03:17:33:258] AT< +QCFG: "nat",0
+[06-12_03:17:33:258] AT< OK
+[06-12_03:17:33:258] AT> AT+CGMR
+[06-12_03:17:33:259] AT< RM500UCNVAAR03A10M2G_01.001.01.001
+[06-12_03:17:33:259] AT< OK
+[06-12_03:17:33:259] AT> AT+CPIN?
+[06-12_03:17:33:260] AT< +CPIN: READY
+[06-12_03:17:33:260] AT< OK
+[06-12_03:17:33:260] AT> AT+QCCID
+[06-12_03:17:33:261] AT< +QCCID: 89860325743124903042
+[06-12_03:17:33:261] AT< OK
+[06-12_03:17:33:261] requestGetICCID 89860325743124903042
+[06-12_03:17:33:261] AT> AT+CIMI
+[06-12_03:17:33:262] AT< 460115766317141
+[06-12_03:17:33:262] AT< OK
+[06-12_03:17:33:262] requestGetIMSI 460115766317141
+[06-12_03:17:33:262] AT> AT+QICSGP=1
+[06-12_03:17:33:264] AT< +QICSGP: 3,"ctnet","","",0
+[06-12_03:17:33:264] AT< OK
+[06-12_03:17:33:264] requestGetProfile[1] ctnet///0/IPV4V6
+[06-12_03:17:33:264] AT> AT+COPS=3,0;+COPS?;+COPS=3,1;+COPS?;+COPS=3,2;+COPS?
+[06-12_03:17:33:268] AT< +COPS: 0,0,"CHN-TELECOM",7
+[06-12_03:17:33:271] AT< +COPS: 0,1,"CTCC",7
+[06-12_03:17:33:275] AT< +COPS: 0,2,"46011",7
+[06-12_03:17:33:275] AT< OK
+[06-12_03:17:33:275] AT> AT+CEREG?
+[06-12_03:17:33:276] AT< +CEREG: 2,1,"1680","022FB422",7
+[06-12_03:17:33:276] AT< OK
+[06-12_03:17:33:276] AT> AT+QNETDEVSTATUS=1
+[06-12_03:17:33:350] AT< +CME ERROR: 3
+[06-12_03:17:33:350] AT> at+cops?
+[06-12_03:17:33:357] AT< +COPS: 0,2,"46011",7
+[06-12_03:17:33:357] AT< OK
+[06-12_03:17:33:357] AT> at+qeng="servingcell"
+[06-12_03:17:33:381] AT< +QENG: "servingcell","CONNECT","LTE","FDD",460,11,22FB422,9,1506,3,3,3,1680,-107,-12,-97,-3,8,23,18
+[06-12_03:17:33:381] AT< OK
+[06-12_03:17:33:382] ip addr flush dev eth2
+[06-12_03:17:33:386] ip link set dev eth2 down
+[06-12_03:17:33:390] AT> AT+QNETDEVCTL=1,1,1
+[06-12_03:17:33:728] AT< OK
+[06-12_03:17:33:728] AT> AT+QNETDEVSTATUS=1
+[06-12_03:17:33:817] AT< +QNETDEVSTATUS: 100.100.130.127,255.255.255.0,100.100.130.1,,222.222.222.222,222.222.202.202,240e:0441:5224:3b5d:18b8:370e:a9a8:f72c,,,,240e:004c:4008:0000:0000:0000:0000:0001,240e:004c:4808:0000:0000:0000:0000:0001
+[06-12_03:17:33:817] AT< OK
+[06-12_03:17:33:817] AT> AT+QNETDEVSTATUS=1
+[06-12_03:17:33:910] AT< +QNETDEVSTATUS: 100.100.130.127,255.255.255.0,100.100.130.1,,222.222.222.222,222.222.202.202,240e:0441:5224:3b5d:18b8:370e:a9a8:f72c,,,,240e:004c:4008:0000:0000:0000:0000:0001,240e:004c:4808:0000:0000:0000:0000:0001
+[06-12_03:17:33:910] AT< OK
+[06-12_03:17:33:910] requestGetIPAddress 100.100.130.127
+[06-12_03:17:33:910] AT> at+cops?
+[06-12_03:17:33:917] AT< +COPS: 0,2,"46011",7
+[06-12_03:17:33:917] AT< OK
+[06-12_03:17:33:918] AT> at+qeng="servingcell"
+[06-12_03:17:33:930] AT< +QENG: "servingcell","CONNECT","LTE","FDD",460,11,22FB422,9,1506,3,3,3,1680,-107,-10,-98,-2,9,23,18
+[06-12_03:17:33:930] AT< OK
+[06-12_03:17:33:930] AT> AT+QNETDEVSTATUS=1
+[06-12_03:17:34:004] AT< +QNETDEVSTATUS: 100.100.130.127,255.255.255.0,100.100.130.1,,222.222.222.222,222.222.202.202,240e:0441:5224:3b5d:18b8:370e:a9a8:f72c,,,,240e:004c:4008:0000:0000:0000:0000:0001,240e:004c:4808:0000:0000:0000:0000:0001
+[06-12_03:17:34:004] AT< OK
+[06-12_03:17:34:004] ip link set dev eth2 up
+[06-12_03:17:34:009] busybox udhcpc -f -n -q -t 5 -i eth2
+sh: line 1: busybox: command not found
+[06-12_03:17:34:012] ERROR: IP from udhcpc (0.0.0.0) is different to IP from ATC (100.100.130.127)!
+[06-12_03:17:34:012] netcard carrier = 0
+[06-12_03:17:34:285] AT< +QNETDEVSTATUS: 1,1,"IPV4V6",0
+[06-12_03:17:34:285] AT> at+cops?
+[06-12_03:17:34:291] AT< +COPS: 0,2,"46011",7
+[06-12_03:17:34:291] AT< OK
+[06-12_03:17:34:292] AT> at+qeng="servingcell"
+[06-12_03:17:34:300] AT< +QENG: "servingcell","CONNECT","LTE","FDD",460,11,22FB422,9,1506,3,3,3,1680,-107,-10,-98,-1,9,23,18
+[06-12_03:17:34:300] AT< OK
+[06-12_03:17:34:300] AT> AT+QNETDEVSTATUS=1
+[06-12_03:17:34:365] AT< +QNETDEVSTATUS: 100.100.130.127,255.255.255.0,100.100.130.1,,222.222.222.222,222.222.202.202,240e:0441:5224:3b5d:18b8:370e:a9a8:f72c,,,,240e:004c:4008:0000:0000:0000:0000:0001,240e:004c:4808:0000:0000:0000:0000:0001
+[06-12_03:17:34:365] AT< OK
 ```
 
 The ping domain name test.
@@ -3680,16 +3701,25 @@ The 5G network node is `eth2`.
 
 **⚠️Note: Please select the domain name to test according to the region of the user.**
 
-```c
-forlinx@ok3588:~# ping -I eth2 www.forlinx.com -c 3
-PING s-526319.gotocdn.com (211.149.226.120) from 192.168.42.2 eth2: 56(84) bytes of data.
-[01-24_22:49:20:156] AT> AT+QNETDEVSTATUS=1
-64 bytes from 211.149.226.120: icmp_seq=1 ttl=52 time=922 ms
-64 bytes from 211.149.226.120: icmp_seq=2 ttl=52 time=60.1 ms
-64 bytes from 211.149.226.120: icmp_seq=3 ttl=52 time=60.0 ms
+```plain
+forlinx@ok3588:~$ ping www.forlinx.net -I eth2 -c 3
+PING www.forlinx.net (2606:4700:3035::6815:28af) from 240e:441:5224:3b5d:748d:1aff:fe0c:b58a eth2: 56 data bytes
+64 bytes from 2606:4700:3035::6815:28af: icmp_seq=1 ttl=53 time=1102 ms
+64 bytes from 2606:4700:3035::6815:28af: icmp_seq=2 ttl=53 time=596 ms
+[06-12_03:18:19:629] AT> at+cops?
+[06-12_03:18:19:637] AT< +COPS: 0,2,"46011",7
+[06-12_03:18:19:637] AT< OK
+[06-12_03:18:19:637] AT> at+qeng="servingcell"
+[06-12_03:18:19:650] AT< +QENG: "servingcell","CONNECT","LTE","FDD",460,11,22FB422,9,1506,3,3,3,1680,-107,-11,-97,-1,9,23,18
+[06-12_03:18:19:650] AT< OK
+[06-12_03:18:19:650] AT> AT+QNETDEVSTATUS=1
+[06-12_03:18:19:735] AT< +QNETDEVSTATUS: 100.100.130.127,255.255.255.0,100.100.130.1,,222.222.222.222,222.222.202.202,240e:0441:5224:3b5d:18b8:370e:a9a8:f72c,,,,240e:004c:4008:0000:0000:0000:0000:0001,240e:004c:4808:0000:0000:0000:0000:0001
+[06-12_03:18:19:735] AT< OK
+64 bytes from 2606:4700:3035::6815:28af: icmp_seq=3 ttl=53 time=1425 ms
 
---- s-526319.gotocdn.com ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 9644ms
+--- www.forlinx.net ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2013ms
+rtt min/avg/max/mdev = 596.428/1040.876/1424.571/340.806 ms, pipe 2
 ```
 
 #### 17\. System Suspend
@@ -3704,19 +3734,19 @@ Key positions are as follows:
 
 The driver files related to system standby are:
 
-```c
-kernel-6.1/drivers/soc/rockchip/rockchip_pm_config.c
-kernel-6.1/drivers/firmware/rockchip_sip.c
-kernel-6.1/include/dt-bindings/suspend/rockchip-rk3588.h
+```plain
+drivers/soc/rockchip/rockchip_pm_config.c
+drivers/firmware/rockchip_sip.c
+include/dt-bindings/suspend/rockchip-rk3588.h
 ```
 
 ##### 17.2 Device Tree
 
 The system standby device tree node is located at: 
 
-`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
+`arch/arm64/boot/dts/rockchip/rk3588s.dtsi`.
 
-```c
+```plain
 rockchip_suspend: rockchip-suspend {
 	compatible = "rockchip,pm-rk3588";
 	status = "disabled";
@@ -3789,7 +3819,7 @@ The following configurations can be added in `rockchip,wakeup-config` :
 
 In a sleep scenario where `vdd_logic` is powered off, if you still want to maintain the level of a specific GPIO, you can configure its corresponding property.
 
-```c
+```plain
 rockchip,sleep-io-ret-config = < (0
  | RKPM_VCCIO1_RET_EN
  ...
@@ -3799,7 +3829,7 @@ rockchip,sleep-io-ret-config = < (0
 
 The configuration options are as follows:
 
-```c
+```plain
 // Eight GPIO domains are supported:
 #define RKPM_EMMCIO_RET_EN BIT(0)
 #define RKPM_VCCIO1_RET_EN BIT(1)
@@ -3819,9 +3849,9 @@ The configuration options are as follows:
 
 The system standby device tree node for OK3588-C / 3588-C2 is located at: 
 
-`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
+`arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 &rockchip_suspend {
 	status = "okay";
 	rockchip,sleep-debug-en = <1>;
@@ -3830,7 +3860,7 @@ The system standby device tree node for OK3588-C / 3588-C2 is located at:
 
 The system standby Device Tree node for OK3588S2-C is located at:
 
-`kernel-6.1/arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
+`arch/arm64/boot/dts/rockchip/OK3588S2-C-common.dtsi`.
 
 ##### 17.3 Application
 
@@ -3846,7 +3876,6 @@ Reload the systemd service:
 
 ```plain
 forlinx@ok3588:~$ sudo systemctl daemon-reload
-
 ```
 
 Restart the systemd-logind service immediately to apply the new power button configuration:
@@ -3857,7 +3886,7 @@ forlinx@ok3588:~$ sudo systemctl restart systemd-logind
 
 Short press the PWRON; the result is as follows:
 
-```c
+```plain
 INFO:    BL31: v2.3():v2.3-942-g98eaeb2f3:derrick.huang, fwver: v1.53
 INFO:    enter: cfg=0x1000608, sleeptimes:1
 INFO:    armoff_logoff
@@ -3916,7 +3945,7 @@ PMU1_GRF_SOC_CON2(0x7777) PMU0_GRF_OS_REGS9(0x4b8847bb)
 
 Press the PWRON button again to wake the system:
 
-```c
+```plain
 INFO:    wake up status: 0x100
 INFO:    the wake up information:
 INFO:    GPIO0 interrupt wakeup
@@ -3956,7 +3985,7 @@ I/TC: Secondary CPU 7 initializing
 I/TC: Secondary CPU 7 switching to normal world boot
 ```
 
-For information on other system standby and wake-up methods, please refer to `en/Common/TRUST/Rockchip_RK3308_Developer_Guide_System_Suspend_EN.pdf`.
+For information on other system standby and wake-up methods, please visit the <a href="https://www.forlinx.net/resources/download-center.html" target="_blank" rel="noopener noreferrer">Resource Download Center</a> page, find the "Rockchip Linux Software Development Guide" document, and locate the file `en/Common/TRUST/Rockchip_RK3308_Developer_Guide_System_Suspend_EN.pdf`.
 
 ### Multimedia
 
@@ -3982,7 +4011,7 @@ The OK3588-C development board is equipped with the NAU88C22YG audio codec chip,
 
 The audio-related device tree nodes for the OK3588-C/3588-C2 are located at: `arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi`.
 
-```c
+```plain
 // Sound card node: Core abstraction of the audio subsystem
 nau8822_sound: nau8822-sound {
 		status = "okay";
@@ -4106,7 +4135,7 @@ The audio-related device tree nodes for the OK3588S2-C are located at:
 
 To view the playback sound card:
 
-```c
+```plain
 forlinx@ok3588:~$ aplay -l
  List of PLAYBACK Hardware Devices
 card 1: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau8822-hifi-0 [dailink-multicodecs nau8822-hifi-0]
@@ -4122,7 +4151,7 @@ card 3: rockchipdp1 [rockchip,dp1], device 0: rockchip,dp1 spdif-hifi-0 [rockchi
 
 To view the record sound card:
 
-```c
+```plain
 forlinx@ok3588:~$ arecord -l
  List of CAPTURE Hardware Devices
 card 0: rockchiphdmiin [rockchip,hdmiin], device 0: rockchip,hdmiin i2s-hifi-0 [rockchip,hdmiin i2s-hifi-0]
@@ -4138,21 +4167,21 @@ card 1: rockchipnau8822 [rockchip-nau8822], device 0: dailink-multicodecs nau882
 
 Plug the headphones into the SPKOUT connector and play the audio with the following command:
 
-```c
-forlinx@ok3588:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:1,0"
+```plain
+forlinx@ok3588:~$ gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:1,0"
 ```
 
 Recording via headphones:
 
-```c
-forlinx@ok3588:~# arecord -D hw:rockchipnau8822,0 -d 3 -f cd -t wav test1.wav
+```plain
+forlinx@ok3588:~$ arecord -D hw:rockchipnau8822,0 -d 3 -f cd -t wav test1.wav
 Recording WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
 Play recorded audio:
 
-```c
-forlinx@ok3588:~# aplay -D plughw:2,0 test1.wav
+```plain
+forlinx@ok3588:~$ aplay -D plughw:2,0 test1.wav
 Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
@@ -4161,12 +4190,11 @@ Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 
 Connect the HDMI screen with audio playback function to the HDMITX interface, and execute the following command:
 
-```c
-forlinx@ok3588:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
+```plain
+forlinx@ok3588:~$ gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
 ```
 
 - HDMI RX Audio Capture
-
 
 **Hardware Connection:**
 
@@ -4179,7 +4207,7 @@ Recording audio from HDMI RX input:
 Play audio on your laptop, then execute the following command on the OK3588 board to start recording:
 
 ```plain
-forlinx@ok3588:~# arecord -D plughw:0,0 -f cd --buffer-size=2048 --period-size=1024  test1.wav
+forlinx@ok3588:~$ arecord -D plughw:0,0 -f cd --buffer-size=2048 --period-size=1024  test1.wav
 ```
 
 Press `Ctrl+C` to stop recording.
@@ -4187,7 +4215,7 @@ Press `Ctrl+C` to stop recording.
 Playback the recorded test.wav file via the onboard sound card `test1.wav`:
 
 ```plain
-forlinx@ok3588:~# gst-play-1.0 test1.wav --audiosink="alsasink device=plughw:1,0"
+forlinx@ok3588:~$ gst-play-1.0 test1.wav --audiosink="alsasink device=plughw:1,0"
 ```
 
 Real-time forwarding and playback:
@@ -4195,7 +4223,7 @@ Real-time forwarding and playback:
 To play audio received from HDMI RX in real-time through the SPK OUT output, you can pipe the recording and playback commands together:
 
 ```plain
-forlinx@ok3588:~# arecord -D plughw:0,0 -f cd --buffer-size=2048 --period-size=1024 | aplay -D plughw:1,0 -f cd --buffer-size=2048 --period-size=1024
+forlinx@ok3588:~$ arecord -D plughw:0,0 -f cd --buffer-size=2048 --period-size=1024 | aplay -D plughw:1,0 -f cd --buffer-size=2048 --period-size=1024
 ```
 
 Parameter Explanation:  
@@ -4212,7 +4240,7 @@ The actual sound card numbering may vary depending on the system configuration. 
 The testing method for the DP sound card is similar to that for the 8822 sound card. You can complete the test by modifying the device parameter or the hw parameter in the test command to specify the DP sound card.
 
 ```plain
-forlinx@ok3588:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
+forlinx@ok3588:~$ gst-play-1.0 /userdata/piano2-CoolEdit.mp3 --audiosink="alsasink device=plughw:2,0"
 ```
 
 #### 2\. Camera
@@ -4243,7 +4271,7 @@ The device tree files related to cameras for OK3588-C / OK3588-C2 are:
 
 Take the CAM1 interface as an example:
 
-```c
+```plain
 // Physical layer interface
 &mipi_dcphy0 {
     status = "okay";
@@ -4303,7 +4331,7 @@ Test using the Logitech C270: plug the USB webcam into the development board and
 
 Camera Recognition Detection:
 
-```c
+```plain
 forlinx@ok3588:~$ v4l2-ctl --list-devices
 ......
 UVC Camera (046d:0825) (usb-fc800000.usb-1):
@@ -4314,7 +4342,7 @@ UVC Camera (046d:0825) (usb-fc800000.usb-1):
 
 Format Support Query：
 
-```c
+```plain
 forlinx@ok3588:~$ v4l2-ctl --list-formats-ext -d /dev/video74
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture
@@ -4562,7 +4590,7 @@ ioctl: VIDIOC_ENUM_FMT
 
 **2.3.1.2 Camera Capture Format Query**
 
-```c
+```plain
 forlinx@ok3588:~$ v4l2-ctl -V -d /dev/video74
 Format Video Capture:
         Width/Height      : 640/480
@@ -4581,7 +4609,7 @@ Format Video Capture:
 
 Camera Image Preview:
 
-```c
+```plain
 forlinx@ok3588:~$ gst-launch-1.0  v4l2src device=/dev/video74 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480  ! waylandsink
 Setting pipeline to PAUSED ...
 Pipeline is live and does not need PREROLL ...
@@ -4594,7 +4622,7 @@ Redistribute latency...
 
 Taking a Photo:
 
-```c
+```plain
 forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video74 num-buffers=1 ! videoconvert ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
 Setting pipeline to PAUSED ...
 Pipeline is live and does not need PREROLL ...
@@ -4616,8 +4644,8 @@ This will generate pic.jpg in the current directory.
 
 For sensors like the OV13855 and other raw sensors, each sensor corresponds to five device nodes:
 
-```c
-forlinx@ok3588:~# grep "" /sys/class/video4linux/video*/name
+```plain
+forlinx@ok3588:~$ grep "" /sys/class/video4linux/video*/name
 /sys/class/video4linux/video0/name:stream_cif_mipi_id0
 /sys/class/video4linux/video1/name:stream_cif_mipi_id1
 /sys/class/video4linux/video10/name:rkcif_tools_id2
@@ -4643,6 +4671,55 @@ forlinx@ok3588:~# grep "" /sys/class/video4linux/video*/name
 /sys/class/video4linux/video29/name:rkcif_scale_ch3
 /sys/class/video4linux/video3/name:stream_cif_mipi_id3
 /sys/class/video4linux/video30/name:rkcif_tools_id0
+/sys/class/video4linux/video31/name:rkcif_tools_id1
+/sys/class/video4linux/video32/name:rkcif_tools_id2
+/sys/class/video4linux/video33/name:stream_cif_mipi_id0
+/sys/class/video4linux/video34/name:stream_cif_mipi_id1
+/sys/class/video4linux/video35/name:stream_cif_mipi_id2
+/sys/class/video4linux/video36/name:stream_cif_mipi_id3
+/sys/class/video4linux/video37/name:rkcif_scale_ch0
+/sys/class/video4linux/video38/name:rkcif_scale_ch1
+/sys/class/video4linux/video39/name:rkcif_scale_ch2
+/sys/class/video4linux/video4/name:rkcif_scale_ch0
+/sys/class/video4linux/video40/name:rkcif_scale_ch3
+/sys/class/video4linux/video41/name:rkcif_tools_id0
+/sys/class/video4linux/video42/name:rkcif_tools_id1
+/sys/class/video4linux/video43/name:rkcif_tools_id2
+/sys/class/video4linux/video44/name:stream_cif_mipi_id0
+/sys/class/video4linux/video45/name:stream_cif_mipi_id1
+/sys/class/video4linux/video46/name:stream_cif_mipi_id2
+/sys/class/video4linux/video47/name:stream_cif_mipi_id3
+/sys/class/video4linux/video48/name:rkcif_scale_ch0
+/sys/class/video4linux/video49/name:rkcif_scale_ch1
+/sys/class/video4linux/video5/name:rkcif_scale_ch1
+/sys/class/video4linux/video50/name:rkcif_scale_ch2
+/sys/class/video4linux/video51/name:rkcif_scale_ch3
+/sys/class/video4linux/video52/name:rkcif_tools_id0
+/sys/class/video4linux/video53/name:rkcif_tools_id1
+/sys/class/video4linux/video54/name:rkcif_tools_id2
+/sys/class/video4linux/video55/name:rkisp_mainpath
+/sys/class/video4linux/video56/name:rkisp_selfpath
+/sys/class/video4linux/video57/name:rkisp_fbcpath
+/sys/class/video4linux/video58/name:rkisp_iqtool
+/sys/class/video4linux/video59/name:rkisp_rawrd0_m
+/sys/class/video4linux/video6/name:rkcif_scale_ch2
+/sys/class/video4linux/video60/name:rkisp_rawrd2_s
+/sys/class/video4linux/video61/name:rkisp_rawrd1_l
+/sys/class/video4linux/video62/name:rkisp-statistics
+/sys/class/video4linux/video63/name:rkisp-input-params
+/sys/class/video4linux/video64/name:rkisp_mainpath
+/sys/class/video4linux/video65/name:rkisp_selfpath
+/sys/class/video4linux/video66/name:rkisp_fbcpath
+/sys/class/video4linux/video67/name:rkisp_iqtool
+/sys/class/video4linux/video68/name:rkisp_rawrd0_m
+/sys/class/video4linux/video69/name:rkisp_rawrd2_s
+/sys/class/video4linux/video7/name:rkcif_scale_ch3
+/sys/class/video4linux/video70/name:rkisp_rawrd1_l
+/sys/class/video4linux/video71/name:rkisp-statistics
+/sys/class/video4linux/video72/name:rkisp-input-params
+/sys/class/video4linux/video73/name:stream_hdmirx
+/sys/class/video4linux/video8/name:rkcif_tools_id0
+/sys/class/video4linux/video9/name:rkcif_tools_id1
 ```
 
 `Mainpath: `An output node of the Rockchip ISP, capable of outputting full-resolution images, typically used for capturing photos or raw images.
@@ -4661,8 +4738,8 @@ The testing method for OV13855 is basically the same as for the UVC camera. This
 
 **2.3.2.1 Camera Recognition and Format Support Query**
 
-```c
-forlinx@ok3588:~# v4l2-ctl --list-devices
+```plain
+forlinx@ok3588:~$ v4l2-ctl --list-devices
 rkisp_mainpath (platform:rkisp0-vir0):
         /dev/video55
         /dev/video56
@@ -4686,8 +4763,8 @@ rkisp_mainpath (platform:rkisp1-vir0):
 
 **2.3.2.2 Capturing a Photo**
 
-```c
-forlinx@ok3588:~# gst-launch-1.0 v4l2src device=/dev/video55 ! videoconvert ! video/x-raw,format=NV12,width=1920,height=1080 ! autovideosink sync=false
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video55 ! videoconvert ! video/x-raw,format=NV12,width=1920,height=1080 ! autovideosink sync=false
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
 Pipeline is live and does not need PREROLL ...
@@ -4708,59 +4785,61 @@ Redistribute latency...
 
 **2.3.2.3 Capturing a Photo**
 
-```c
-forlinx@ok3588:~# gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
 Setting pipeline to PAUSED ...
-Using mplane plugin for capture
 Pipeline is live and does not need PREROLL ...
 Pipeline is PREROLLED ...
 Setting pipeline to PLAYING ...
 New clock: GstSystemClock
+rga_api version 1.9.3_[2]
 Redistribute latency...
 Got EOS from element "pipeline0".
-Execution ended after 0:00:00.271908779
+Execution ended after 0:00:00.175504000
 Setting pipeline to NULL ...
 Freeing pipeline ...
+forlinx@ok3588:~$ ls
+pic.jpg 
 ```
 
 **2.3.2.4 Recording H.264 Video**
 
-```c
-forlinx@ok3588:~# gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=100 ! video/x-raw,format=NV12, width=1920,height=1080 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
 Setting pipeline to PAUSED ...
-Using mplane plugin for capture
 Pipeline is live and does not need PREROLL ...
 Pipeline is PREROLLED ...
 Setting pipeline to PLAYING ...
 New clock: GstSystemClock
+rga_api version 1.9.3_[2]
 Redistribute latency...
 Redistribute latency...
 Redistribute latency...
 Got EOS from element "pipeline0".
-Execution ended after 0:00:06.892603226
+Execution ended after 0:00:03.486861293
 Setting pipeline to NULL ...
 Freeing pipeline ...
+forlinx@ok3588:~$ ls
+13855_h264.mp4  pic.jpg
 ```
 
 This will generate 13855\_h264.mp4 in the current directory.
 
 Playback 13855\_h264.mp4:
 
-```c
-forlinx@ok3588:~# gst-launch-1.0 filesrc location=13855_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=13855_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink                                                     
 Setting pipeline to PAUSED ...
 Pipeline is PREROLLING ...
 Redistribute latency...
 Redistribute latency...
-mpp[1834]: h264d_api: is_avcC=1
 Pipeline is PREROLLED ...
 Prerolled, waiting for async message to finish...
 Setting pipeline to PLAYING ...
 Redistribute latency...
 New clock: GstSystemClock
-^Chandling interrupt. (37.6 %)
-Interrupt: Stopping pipeline ...
-Execution ended after 0:00:02.530370525
+Got EOS from element "pipeline0".
+Execution ended after 0:00:03.339379460
 Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
@@ -4779,8 +4858,8 @@ Take testing CAM3 as an example:
 
 **2.3.3.1 Camera Recognition and Detection**
 
-```c
-forlinx@ok3588:~# v4l2-ctl --list-devices
+```plain
+forlinx@ok3588:~$ v4l2-ctl --list-devices
 rkisp-statistics (platform: rkisp):
         /dev/video62
         /dev/video63
@@ -4849,8 +4928,8 @@ rkcif (platform:rkcif-mipi-lvds5):
 
 **2.3.3.2 Viewing Supported Formats**
 
-```c
-forlinx@ok3588:~# v4l2-ctl --list-formats-ext -d /dev/video22
+```plain
+forlinx@ok3588:~$ v4l2-ctl --list-formats-ext -d /dev/video22
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture Multiplanar
 
@@ -4874,8 +4953,8 @@ ioctl: VIDIOC_ENUM_FMT
 
 **2.3.3.3 Camera Preview**
 
-```c
-forlinx@ok3588:~# gst-launch-1.0 v4l2src device=/dev/video22 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video22 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
 Pipeline is live and does not need PREROLL ...
@@ -4892,8 +4971,8 @@ Redistribute latency...
 
 Camera Recognition Detection
 
-```c
-forlinx@ok3588:/# v4l2-ctl --list-devices    // It can be seen that /dev/video73 is the HDMI IN node.
+```plain
+forlinx@ok3588:~$ v4l2-ctl --list-devices    // It can be seen that /dev/video73 is the HDMI IN node.
 rk_hdmirx (fdee0000.hdmirx-controller):
         /dev/video73
 
@@ -4914,7 +4993,7 @@ rkcif-mipi-lvds (platform:rkcif):
 Format Support Queries
 
 ```plain
-forlinx@ok3588:/# v4l2-ctl --list-formats-ext -d /dev/video73            // View the formats supported by the HDMI receiver
+forlinx@ok3588:~$ v4l2-ctl --list-formats-ext -d /dev/video73            // View the formats supported by the HDMI receiver
 ioctl: VIDIOC_ENUM_FMT
         Type: Video Capture Multiplanar
 
@@ -4929,7 +5008,7 @@ ioctl: VIDIOC_ENUM_FMT
 Camera Capture Format Queries
 
 ```plain
-forlinx@ok3588:/# v4l2-ctl -V -d /dev/video73
+forlinx@ok3588:~$ v4l2-ctl -V -d /dev/video73
 Format Video Capture Multiplanar:
         Width/Height      : 1920/1080
         Pixel Format      : 'BGR3' (24-bit BGR 8-8-8)
@@ -4948,7 +5027,7 @@ Format Video Capture Multiplanar:
 **2.3.4.3 Camera Image Preview**
 
 ```plain
-forlinx@ok3588:/# gst-launch-1.0  v4l2src device=/dev/video73 ! videoconvert ! kmssink
+forlinx@ok3588:~$ gst-launch-1.0  v4l2src device=/dev/video73 ! videoconvert ! kmssink
 Setting pipeline to PAUSED ...
 Using mplane plugin for capture
 Pipeline is live and does not need PREROLL ...
@@ -5021,9 +5100,7 @@ Compared to the RK3588, the RK3588S2 has trimmed/cut down the following display 
 | MIPI DSI0| ✅ Available| ✅ Available|
 | MIPI DSI1| ✅ Available| ✅ Available|
 
-For detailed information about RK3588 display interfaces, please refer to the following documentation:
-
-`OK-linux-source/docs/rk3588/en/Common/DISPLAY/DRM/Rockchip_Developer_Guide_DRM_Display_Driver_EN.pdf`
+For detailed information about RK3588 display interfaces, please visit the [Resource Download Center](https://www.forlinx.net/resources/download-center.html) page, find the "Rockchip Linux Software Development Guide" document, and locate the file `en/Common/DISPLAY/DRM/Rockchip_Developer_Guide_DRM_Display_Driver_EN.pdf`.
 
 ##### 3.2 Device Tree
 
@@ -5035,33 +5112,33 @@ The display-related Device Tree nodes for OK3588S2-C are located at: `arch/arm64
 
 Since OK3588 supports multiple display modes, the screen configuration can be specified via the Device Tree:
 
-```c
-	forlinx-control {
-		/***
-		* hdmi0 and edp0 share same port, only one can be used.
-		* hdmi1 and edp1 share same port, only one can be used.
-		* only four VPs internally, so up to four interfaces can be activated
-		* hdmi edp dp can only be displayed on VP0 or VP1 or VP2.
-		* dsi0 dsi1 can only be displayed on VP2 or  VP3.
-		* rgb can only be displayed on VP3.
-		***/
+```plain
+forlinx-control {
+        /***
+        * hdmi0 and edp0 share same port, only one can be used.
+        * hdmi1 and edp1 share same port, only one can be used.
+        * only four VPs internally, so up to four interfaces can be activated
+        * hdmi edp dp can only be displayed on VP0 or VP1 or VP2.
+        * dsi0 dsi1 can only be displayed on VP2 or  VP3.
+        * rgb can only be displayed on VP3.
+        ***/
 
-		// if "disabled" , display is controlled by uboot
-		status = "disabled";
+        // if "disabled" , display is controlled by uboot
+        status = "disabled";
 
-		HDMI0 	= "VP0";
-		// HDMI1 	= "OFF";
-		// EDP0 	= "OFF";
-		// EDP1 	= "VP1";
-		// DP0 	= "OFF";
-		// DP1 	= "OFF";
-		MIPI0 	= "VP2";
-		// MIPI1 	= "VP3";
-		// RGB 	= "OFF";
-		primary_display = "MIPI0";
-		primary_display_resolution = "1920x1080p60";
-		disp_type = "sync";
-	};
+        HDMI0 	= "VP0";
+        // HDMI1 	= "OFF";
+        // EDP0 	= "OFF";
+        // EDP1 	= "VP1";
+        // DP0 	= "OFF";
+        // DP1 	= "OFF";
+        MIPI0 	= "VP2";
+        // MIPI1 	= "VP3";
+        // RGB 	= "OFF";
+        primary_display = "MIPI0";
+        primary_display_resolution = "1920x1080p60";
+        disp_type = "sync";
+};
 ```
 
 The forlinx-control node is disabled by default (`status = "disabled"`). In this state, display configuration is controlled by U-Boot. To fix the display configuration at the kernel stage, change the `status` to `"okay"`.
@@ -5159,7 +5236,7 @@ RK3588 VOP2 has 8 layers divided into two categories:
 
 The factory firmware supports dynamic control of screen output via a menu in U-Boot,eliminating the need for recompilation and reflashing to switch screens. During U-Boot automatic startup, pressing`ctrl+c`on the serial terminal will trigger a control menu:
 
-```c
+```plain
 Hit key to stop autoboot('CTRL+C'):  0
 ---------------------------------------------
 0:Exit to console
@@ -5172,7 +5249,7 @@ Hit key to stop autoboot('CTRL+C'):  0
 
 Input 2 on the terminal to enter the screen control submenu.
 
-```c
+```plain
 ---------------------------------------------
 hdmi0 and edp0 share same port, only one can be used.
 hdmi1 and edp1 share same port, only one can be used.
@@ -5200,7 +5277,7 @@ Select  display
 
 According to the notes in the U-Boot menu, the display output configuration rules are as follows:
 
-```c
+```plain
 1.  HDMI0 and eDP0 share the same port, so only one of them can be used at a time.
 2.  HDMI1 and eDP1 share the same port, so only one of them can be used at a time.
 3.  There are only four internal VPs, so a maximum of four interfaces can be activated.
@@ -5213,11 +5290,153 @@ When configuring display output, enter the number corresponding to the display i
 
 Once configuration is complete, you can press number 1 to reboot. The screen options set during the Uboot stage will take effect after the reboot. Alternatively, you can directly press the reset button on the development board to reboot, and the configuration will also take effect after the system automatically starts up.
 
+#### 4.Encoding and Decoding
+
+Some application layer software for audio and video on the OK3588 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form.
+
+The OK3588 platform has an internal video processing unit, the VPU, which supports hardware codecs for video in the following formats:
+
+Video Decoding: H264, H265, VP8, VP9, etc., maximum support 8K@60fps
+
+Video Encoding: H264, H.265, maximum support 8k@30fps
+
+Table of hardware codec parameters for the OK3588 platform:
+
+| **Video Decoder** | **Format** | **Profile**       | **Resolution** | **Frame rate** |
+| ----------------- | ---------- | ----------------- | -------------- | -------------- |
+|                   | H.265      | main 10           | 7680x4320      | 60 fps         |
+|                   | H.264      | main 10           | 7680x4320      | 30 fps         |
+|                   | VP9        | Profile 0/2       | 7680x4320      | 60 fps         |
+|                   | VP8        | version2          | 1920x1080      | 60 fps         |
+|                   | VC1        |                   | 1920x1080      | 60 fps         |
+|                   | MPEG-2     |                   | 1920x1080      | 60 fps         |
+|                   | MPEG-1     |                   | 1920x1080      | 60 fps         |
+|                   | H.263      |                   | 720x576        | 60 fps         |
+| Video Encoder     | H.264      | BP/MP/HP@level4.2 | 7680x4320      | 30 fps         |
+|                   | H.265      | MP@level4.1       | 7680x4320      | 30 fps         |
+
+**You can download the required audio and video files via the following links:
+https://1drv.ms/f/c/23029b2da42212cf/IgAxil4Bp87QT4YNlFgkH89EAcy6KDgafqKB9GkclKHlOr0?e=rrPRMN
+https://1drv.ms/f/c/23029b2da42212cf/IgC303MC3x2lTL1ouMZk1WTEAQfIBhycZJrp3I82J5W8ChQ?e=ccZEkh
+and place them in the \**`/userdata/media`\** directory on the board. Set permissions using the following command:**
+
+```
+forlinx@ok3588:~$ sudo chmod 644 /userdata/media/*
+```
+
+##### 4.1 Audio and Video Playback
+
+###### 4.1.1 Playing Audio and Video With Gst-play
+
+Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
+
+```plain
+forlinx@ok3588:~$ gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
+```
+
+###### 4.1.2 Playing Video With Gst-launch
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
+```
+
+###### 4.1.3 Playing Audio With Gst-launch
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
+```
+
+###### 4.1.4 Playing Video and Audio With Gst-launch
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
+```
+
+##### 4.2. Video Hardware Encoding
+
+OK3588 supports up to 8K@60fps/H.265 and 8K@60fps/H.264 video encoding.
+
+###### 4.2.1 Video Hardware Encoding H.264
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
+```
+
+###### 4.2.2 Video Hardware Encoding H.265
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
+```
+
+###### 4.2.3 JPEG Hardware Encoding
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
+```
+
+##### 4.3. Video Hardware Decoding
+
+OK3588 supports hardware decoding for H.264, H.265, VP8, and VP9 video formats. The H.264 decoder supports 8K@30fps, while the H.265 decoder supports 8K@60fps.
+
+OK3588 uses the mppvideodec component for hardware video decoding, and its output formats are NV12, I420, and YV12.
+
+###### 4.3.1 Decoding and Playing H.264 Format Video
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
+```
+
+###### 4.3.2 Decoding and Playing H264 Format Video With Audio
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
+```
+
+###### 4.3.3 Decoding and Playing H265 Format Video
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
+```
+
+###### 4.3.4 Decoding and Playing H265 Format Video With Audio
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
+```
+
+###### 4.3.5 Decoding and Playing VP9 Format Video
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
+```
+
+###### 4.3.6 Decoding and Playing VP9 Format Video With Audio
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0
+```
+
+###### 4.3.7 Decoding and Playing VP8 Format Video
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 ! matroskademux ! queue ! mppvideodec ! waylandsink
+```
+
+###### 4.3.8 Decoding and Playing VP8 Format Video With Audio
+
+```plain
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:1,0
+```
+
+
+
+
+
 ### SQLite3
 
 SQLite3 is a lightweight database; it is an ACID-compliant relational database management system with low resource requirements. The OK3588-C development board uses version 3.44.2 of SQLite3. Using Method:
 
-```c
+```plain
 forlinx@ok3588:~$ sqlite3
 SQLite version 3.45.3 2024-04-15 13:34:05
 Enter ".help" for usage hints.
@@ -5251,28 +5470,32 @@ After copying the files, execute the command `chmod +x user_application` to add 
 
 Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.2.1 of the Build Guides for compilation instructions). After successful programming, you can manually run your application`user_application`, on the board. For information on enabling auto-start functionality, please refer to the next section.
 
+
+
+- To allow users to conveniently customize their own applications, an overlay mechanism has been created in the BSP source code. Users can navigate to the path `OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588` and directly place their `user_application` into `usr/sbin`. If users wish to place it in other directories, they can simply create the corresponding directories there.
+- To modify system or service configurations, copy the relevant configuration files to the directory `OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/etc`;
+- To add library files, copy them to the specified directory within `OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/usr/lib`;
+
+After copying the files, execute the command `chmod +x user_application` to add executable permissions to the application.
+
+Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.3 of the Build Guides for compilation instructions). After successful programming, you can manually run your application`user_application`, on the board. For information on enabling auto-start functionality, please refer to the next section.
+
+
+
 ### 2\. Auto-starting the User Program
 
 The Linux system of the OK3588-C utilizes systemd as its initialization system and service manager. This design aims to achieve faster boot speeds, improved parallel processing capabilities, and enhanced service management functions, all while providing a unified system management interface.
 
-Within this system, there is a preset script named `forlinx.sh` located in the `/etc` directory. This script is called and executed by `/etc/init.d/S90autorun.sh`. Users can customize `forlinx.sh` to include their own applications, allowing for automatic startup of these applications.
+Within this system, there is a preset script named `forlinx.sh` located in the `/etc` directory. This script is called and executed by `/etc/profile`. Users can customize `forlinx.sh` to include their own applications, allowing for automatic startup of these applications.
 
 ```plain
 forlinx@ok3588:~# cat /etc/forlinx.sh
-#! /bin/sh
+#!/bin/bash
 
-if [ -d "/userdata/aging_test" ];then
-        chmod 755 /userdata/aging_test/*
-        /userdata/aging_test/aging.sh &
-fi
-
-# user command
-user_application
-
-exit 0
+# Forlinx autorun script
 ```
 
-You can also modify the `OK-linux-source/buildroot/board/rockchip/common/base/etc/forlinx.sh` in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.
+You can also modify the`OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/etc/forlinx.sh`in the source code directory, then perform a full compilation to generate an image file that supports user program auto-start.
 
 ### 3\. Customized Logo
 
@@ -5310,7 +5533,8 @@ To help developers deploy AI models more quickly, Rockchip officially provides u
 
 ###### **4.1.1.1 RKNN Software Stack Overview**
 
-The RKNN software stack helps you quickly deploy AI models to the OK3588-C. The overall framework is shown below: ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
+The RKNN software stack helps you quickly deploy AI models to the OK3588-C. The overall framework is shown below:
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774660235640_939bbe87_348c_45e8_bb14_1663c8824934.png)
 
 Figure 1-1 RKNN Software Stack
 
@@ -5380,19 +5604,21 @@ With RKLLM-Toolkit2, developers can easily quantize and convert large language m
 
 - **Quantization:** Supports converting floating-point models into fixed-point models. Currently supported quantization types are w8a8 and w8a8 grouped quantization (with supported group sizes of 128, 256, and 512).
 
-RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to [https://github.com/airockchip/rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2) for the RKLLM-Toolkit2 details.
+RKNN-Toolkit2 is the core development toolkit for Rockchip NPU, providing end-to-end development support for model conversion (ONNX/TF/PyTorch → RKNN), quantization, PC simulation inference, performance evaluation, accuracy validation, and model optimization. Please refer to [rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2) for the RKLLM-Toolkit2 details.
 
 ###### **4.1.1.3 RKLLM Runtime Features**
 
 RKLLM Runtime loads models converted by RKNN-Toolkit into the RKLLM format. It accelerates inference on the OK3588-C NPU by calling the board-side NPU driver. During inference, developers can customize model parameters and text generation strategies, and continuously receive outputs through preset callback functions.
 
-For details of RKLLM Runtime, refer to`rknn-llm\doc\ Rockchip_RKLLM_SDK_CN_1.2.3.pdf`.
+For details of RKLLM Runtime, refer to`rknn-llm\doc\Rockchip_RKLLM_SDK_CN_1.2.3.pdf`.
 
-##### 4.1.2 RKNN Model Zoo
+##### 4.1.2 RKNN Model Zoo 
 
 RKNN Model Zoo is an edge AI model deployment resource library launched by Rockchip based on its RKNPU SDK toolchain. It aims to provide developers with a complete reference implementation for AI model deployment. It covers the entire workflow—from model conversion and quantization to running inference on Rockchip NPUs using both Python and C APIs. Built-in YOLO series detection/segmentation/pose, image classification, OCR, license plate recognition, speech recognition and other dozens of mainstream algorithms, each model provides pre-training weights, conversion scripts and sample codes that can be directly compiled and run to help developers quickly achieve high-performance NPU reasoning acceleration on Rockchip hardware.
 
-The rknn \_ model \_ zoo is a collection of converted and optimized mainstream model examples, providing a large number of ready-made RKNN models + complete pre-processing and post-processing + C/C + +/Python/Android reasoning demos for developers to run directly for verification or reference transplantation. [https://github.com/airockchip/rknn\_model\_zoo](https://github.com/airockchip/rknn_model_zoo)
+The rknn \_ model \_ zoo is a collection of converted and optimized mainstream model examples, providing a large number of ready-made RKNN models + complete pre-processing and post-processing + C/C + +/Python/Android reasoning demos for developers to run directly for verification or reference transplantation. [rknn_model_zoo](https://github.com/airockchip/rknn_model_zoo)
+
+
 
 RKNN Model Zoo directory:
 
@@ -5476,7 +5702,7 @@ pip install rknn-toolkit2 -i https://pypi.org/simple --upgrade
 
 - Install from a local wheel package.
 
-Transfer the RKNN-Toolkit2 project folder (rknn-toolkit2) to the target directory`ubuntu/home/forlinx/`. The RKNN-Toolkit2 project file can be downloaded from: [https://github.com/airockchip/rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2).
+Transfer the RKNN-Toolkit2 project folder (rknn-toolkit2) to the target directory`ubuntu/home/forlinx/`. The RKNN-Toolkit2 project file can be downloaded from: [rknn-toolkit2](https://github.com/airockchip/rknn-toolkit2).
 
 ```plain
 (RKNN-Toolkit2) forlinx@ubuntu:~$ pip install -r rknn-toolkit2/packages/x86_64/requirements_cp38-2.3.2.txt
@@ -5635,7 +5861,7 @@ RKNPU driver: v0.9.8
 
 Forlinx provides pre-converted models and binary files for download. You can browse the following link to download the compressed package containing the corresponding models and binary files
 
-[https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)
+[<a href="https://www.forlinx.net/resources/download-center.html" target="_blank" rel="noopener noreferrer">Resource Download Center</a>](https://www.forlinx.net/resources/download-center.html)
 
 After entering the webpage, select the model under "Software Resources -> AI Demo".
 
@@ -5758,41 +5984,42 @@ Model Dependency Library Compilation.
 
 The DeepSeek model requires libgomp support. A compilation method is provided here. Please refer to the method below to compile the library file themselves and then place it into the board. Alternatively, you can find the DeepSeek content in the link, download the pre-compiled library file, and copy it into the board.
 
-[https://www.forlinx.net/resources/download-center.html](https://www.forlinx.net/resources/download-center.html)
+[<a href="https://www.forlinx.net/resources/download-center.html" target="_blank" rel="noopener noreferrer">Resource Download Center</a>](https://www.forlinx.net/resources/download-center.html)
 
 The following describes how to compile it yourself.
 
 * Set up the compilation environment
 
-Refer to section 2-3.3.1 to obtain the cross-compilation toolchain and set up the compilation environment.
+Refer to section 3-3.3.2 to obtain the cross-compilation toolchain and set up the compilation environment.
 
 * Compilation
 
 ```plain
-aarch64-buildroot-linux-gnu_sdk-buildroot$ mkdir work
-aarch64-buildroot-linux-gnu_sdk-buildroot$ cd work
-aarch64-buildroot-linux-gnu_sdk-buildroot/work$ wget https://ftp.gnu.org/gnu/gcc/gcc-12.4.0/gcc-12.4.0.tar.xz
-aarch64-buildroot-linux-gnu_sdk-buildroot/work$ tar xf gcc-12.4.0.tar.xz
-aarch64-buildroot-linux-gnu_sdk-buildroot/work$ cd gcc-12.4.0/libgomp/
-work/gcc-12.4.0/libgomp$ mkdir build && cd build
-libgomp/build$ ../configure --host=aarch64-buildroot-linux-gnu --prefix=$PWD/install --disable-multilib
+$ mkdir work
+$ cd work
+$ wget https://ftp.gnu.org/gnu/gcc/gcc-12.4.0/gcc-12.4.0.tar.xz
+$ tar xf gcc-12.4.0.tar.xz
+$ cd gcc-12.4.0/libgomp/
+libgomp$ mkdir build && cd build
+libgomp/build$ ../configure --prefix=$PWD/install --host=aarch64-forlinx-linux --disable-multilib
 libgomp/build$ make -j$(nproc)
 libgomp/build$ make install
 ```
 
 * Port to the board
 
-After completing the compilation according to the above method, the required library files will be generated in the`install/lib64/`directory.
+After completing the compilation according to the above method, the required library files will be generated in the`install/lib/`directory.
 
 ```plain
-$ ls -l install/lib64/
+$ ls -l install/lib/
 total 824
--rw-r--r-- 1 forlinx forlinx 513206  4月  2 17:42 libgomp.a
--rwxr-xr-x 1 forlinx forlinx   1071  4月  2 17:42 libgomp.la
-lrwxrwxrwx 1 forlinx forlinx     16  4月  2 17:42 libgomp.so -> libgomp.so.1.0.0
-lrwxrwxrwx 1 forlinx forlinx     16  4月  2 17:42 libgomp.so.1 -> libgomp.so.1.0.0
--rwxr-xr-x 1 forlinx forlinx 316176  4月  2 17:42 libgomp.so.1.0.0
--rw-r--r-- 1 forlinx forlinx    169  4月  2 17:42 libgomp.spec
+drwxrwxr-x 3 forlinx forlinx    4096  6月 12 17:44 gcc
+-rw-r--r-- 1 forlinx forlinx 2713574  6月 12 17:44 libgomp.a
+-rwxr-xr-x 1 forlinx forlinx    1013  6月 12 17:44 libgomp.la
+lrwxrwxrwx 1 forlinx forlinx      16  6月 12 17:44 libgomp.so -> libgomp.so.1.0.0
+lrwxrwxrwx 1 forlinx forlinx      16  6月 12 17:44 libgomp.so.1 -> libgomp.so.1.0.0
+-rwxr-xr-x 1 forlinx forlinx 1350208  6月 12 17:44 libgomp.so.1.0.0
+-rw-r--r-- 1 forlinx forlinx     169  6月 12 17:44 libgomp.spec
 ```
 
 You can see that the generated library files are all linked to`libgomp.so.1.0.0`. You only need to copy this library file to the appropriate`/usr/lib/libgomp.so.1`location on the board.
@@ -5844,7 +6071,7 @@ forlinx@ok3588:/home/forlinx/demo_Linux_aarch64# ./llm_demo model/DeepSeek-R1-Di
 
 The running results are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1774848609915_67945df0_b31b_42b4_8324_7b4c82fe8bdb.png)
+![image-20260624112353400](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image-20260624112353400.png)
 
 #### 4.4 RKNN Toolkit2 Supported Operator List
 
