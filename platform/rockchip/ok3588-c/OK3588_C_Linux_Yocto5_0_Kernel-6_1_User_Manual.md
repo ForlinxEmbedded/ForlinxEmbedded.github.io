@@ -461,7 +461,7 @@ OK-yocto-source$ tree -L 2
 | **Directory / Files**| **Function Description**|
 |:----------|:----------|
 | bitbake| The BitBake build engine source code directory, serving as Yocto’s task scheduler and metadata interpreter.|
-| oe-init-build-env| Create an environment initialisation script. Once executed `source oe-init-build-env build`, a working directory (e.g.`build`) will be created automatically, and environment variables such as `PATH`, `BBPATH`, `BBLAYERS`,and will be set, preparing the system for subsequent BitBake commands.|
+| oe-init-build-env| Create an environment initialisation script. Once executed `source setup-environment`, a working directory (e.g.`build`) will be created automatically, and environment variables such as `PATH`, `BBPATH`, `BBLAYERS`,and will be set, preparing the system for subsequent BitBake commands.|
 | scripts| Used to store various utility scripts provided by the Yocto project.|
 | build| The actual working directory for the build process.|
 
@@ -530,7 +530,7 @@ meta-forlinx-rk/
 ├── recipes-kernel/                      # Kernel customization recipes
 │   └── linux/
 └── wic/
-    └── ok3588-gptdisk.wks.in            # GPT partition layout definition
+    └── forlinx-gptdisk.wks.in            # GPT partition layout definition
 ```
 
 ##### 1.3.3 Version Features
