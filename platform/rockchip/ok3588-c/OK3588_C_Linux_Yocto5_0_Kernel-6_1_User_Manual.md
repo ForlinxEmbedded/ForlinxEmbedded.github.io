@@ -461,7 +461,7 @@ OK-yocto-source$ tree -L 2
 | **Directory / Files**| **Function Description**|
 |:----------|:----------|
 | bitbake| The BitBake build engine source code directory, serving as Yocto’s task scheduler and metadata interpreter.|
-| oe-init-build-env| Create an environment initialisation script. Once executed `source setup-environment`, a working directory (e.g.`build`) will be created automatically, and environment variables such as `PATH`, `BBPATH`, `BBLAYERS`,and will be set, preparing the system for subsequent BitBake commands.|
+| setup-environment | Create an environment initialisation script. Once executed `source setup-environment`, a working directory (e.g.`build`) will be created automatically, and environment variables such as `PATH`, `BBPATH`, `BBLAYERS`,and will be set, preparing the system for subsequent BitBake commands.|
 | scripts| Used to store various utility scripts provided by the Yocto project.|
 | build| The actual working directory for the build process.|
 
