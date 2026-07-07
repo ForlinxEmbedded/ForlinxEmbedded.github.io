@@ -727,6 +727,7 @@ Default Function——Please don’t make any modifications for all SoM pin func
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
 |:----------:|:----------:|:----------:|:----------:|:----------:|
 | SoM startup mode switching| PMIC\_VDC| I| When the pin is left floating (unconnected), <br />the SoM will power on and boot up by default. |P3\_10|
+
 When the pin is pulled low, the SoM will not power on and boot up automatically; pressing the PWRON\_L button will initiate the startup process.
 
 #### 2.7.4 Flashing Control Pin Reset
