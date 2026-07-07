@@ -52,7 +52,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   OK3588-C_User_Hardware_Manual
+   OK3572-C_User_Hardware_Manual
+   
 
 
 SOFTWARE 
