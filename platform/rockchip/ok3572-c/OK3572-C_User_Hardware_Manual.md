@@ -692,7 +692,7 @@ Default Function——Please don’t make any modifications for all SoM pin func
 | 98| 1C12| MIPI\_DPHY\_CSI3\_RX\_CLKN| ——| ——| MIPI\_DPHY\_CSI3\_RX\_CLKN clock +| MIPI\_DPHY\_CSI3\_RX\_CLKN|
 | 100| ——| GND| ——| ——| Ground| GND|
 
-#### 2.7 FET3572-C SoM Pin Description (by Function)
+### 2.7 FET3572-C SoM Pin Description (by Function)
 
 **Note:** 
 
