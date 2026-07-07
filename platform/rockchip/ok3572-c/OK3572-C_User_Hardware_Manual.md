@@ -1780,7 +1780,7 @@ The corresponding carrier board connector specifications are as follows:
 
 A = 22.6 mm, B = 19.6 mm, C = 3.2 mm, D = 1.45 mm, Contacts = 100.
 
-## ![](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/image-1783387943563.png)
+## ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/image_1783387943563.png)
 
 ## 6\. OK3572-C Development Board Power Consumption Table 
 
