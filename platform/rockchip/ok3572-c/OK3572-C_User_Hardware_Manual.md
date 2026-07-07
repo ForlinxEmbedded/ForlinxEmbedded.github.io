@@ -999,7 +999,7 @@ When the pin is pulled low, the SoM will not power on and boot up automatically;
 The FET3572-C SoM integrates power supply and storage circuits into a compact module, requiring minimal external circuitry. To form a minimal system, only a 5-13V power supply, a reset button, a programming SD card, and boot configuration are needed, as illustrated below:   
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781506331347_2c874845_9ee7_4181_b58a_c19e212987e1.png)Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is recommended to connect some external peripherals beyond the minimal system. For instance, connecting a debug serial port can be used to view printed information, while reserving an OTG interface allows for debugging information output. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
-For the design of the SoM's peripheral circuits, please refer to Section 3.5, "OK3572-C Carrier Board Description".
+For the design of the SoM's peripheral circuits, please refer to Section "3.5 OK3572-C Carrier Board Description".
 
 ## 3\. OK3572-C Embedded Development Description
 
@@ -1773,13 +1773,15 @@ The SoM connector specifications are as follows:
 
 A = 21.52 mm, B = 19.6 mm, C = 3.2 mm, Contacts = 100.
 
-  ![](image.png)
+  ![](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/image.png)
 
 The corresponding carrier board connector specifications are as follows:  
 
 A = 22.6 mm, B = 19.6 mm, C = 3.2 mm, D = 1.45 mm, Contacts = 100.
 
-## ![](image-1783387943563.png)6\. OK3572-C Development Board Power Consumption Table 
+## ![](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/image-1783387943563.png)
+
+## 6\. OK3572-C Development Board Power Consumption Table 
 
 **Table 1 Power Consumption under Linux**
 
