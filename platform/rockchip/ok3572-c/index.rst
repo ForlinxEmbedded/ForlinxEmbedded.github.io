@@ -1,6 +1,6 @@
 
 ====================
-OK3588-C Manual 
+OK3572-C Manual 
 ====================
 
 .. raw:: html
@@ -9,12 +9,12 @@ OK3588-C Manual
         
         <div style="flex: 1 1 350px;">
             <p style="font-size: 1.1em; margin-bottom: 20px; margin-top: 0; line-height: 1.6;">
-                Welcome to the official technical documentation for the <strong>Forlinx OK3588-C</strong>.
-                Powered by the Rockchip RK3588 processor.
+                Welcome to the official technical documentation for the <strong>Forlinx OK3572-C</strong>.
+                Powered by the Rockchip RK3572 processor.
             </p>
             
             <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                <a href="https://www.forlinx.net/product/rk3588-som-134.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" class="btn btn-info" style="text-decoration: none; padding: 6px 14px; font-size: 14px;">
+                <a href="https://www.forlinx.net/product/rk3572-som-fet3572-c-179.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" class="btn btn-info" style="text-decoration: none; padding: 6px 14px; font-size: 14px;">
                     <i class="fa-solid fa-microchip"></i> SoM Details
                 </a>
                 
@@ -31,13 +31,13 @@ OK3588-C Manual
         <div style="flex: 0 1 380px; display: flex; gap: 20px; justify-content: center; align-items: flex-end;">
             
             <div style="text-align: center;">
-                <img src="https://forlinx.net/image/som/FET3588-C.png" alt="FET3588-C SoM" style="max-width: 140px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
-                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">FET3588-C SoM</div>
+                <img src="https://forlinx.net/image/som/FET3576-C.png" alt="FET3572-C SoM" style="max-width: 140px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">FET3572-C SoM</div>
             </div>
 
             <div style="text-align: center;">
-                <img src="https://forlinx.net/image/sbc-interface/OK3588-C.png" alt="OK3588-C Dev Board" style="max-width: 180px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
-                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">OK3588-C Board</div>
+                <img src="https://forlinx.net/image/sbc-interface/OK3576-C.png" alt="OK3572-C Dev Board" style="max-width: 180px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">OK3572-C Board</div>
             </div>
             
         </div>

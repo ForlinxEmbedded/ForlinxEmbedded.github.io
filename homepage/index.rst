@@ -46,6 +46,18 @@ Rockchip Series
    </div>
 
    <div class="product-card">
+     <a href="rockchip/ok3572-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/rockchip/OK3572-C.webp" alt="ok3572-c" class="product-image" />
+     </a>
+     <h3 class="product-title">OK3572-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/rk3572-som-fet3572-c-179.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="rockchip/ok3572-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+
+   <div class="product-card">
      <a href="rockchip/ok1126bx-s/index.html" target="_blank" rel="noopener noreferrer">
        <img src="_static/images/rockchip/OK1126Bx-S.png" alt="ok1126bx-s" class="product-image" />
      </a>
