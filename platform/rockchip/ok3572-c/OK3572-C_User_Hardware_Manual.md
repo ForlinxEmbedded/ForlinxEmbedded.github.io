@@ -63,37 +63,37 @@ Target Applications:
 
 **RK3572 Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/49874024/1781503479279-3411ce6e-7b3d-459f-aaa9-d9e03a5c64ae.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503479279_3411ce6e_7b3d_459f_aaa9_d9e03a5c64ae.jpg)
 
 ## 2\. FET3572-C SoM Description
 
 ### 2.1 FET3572-C Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481055-1b346a57-d4b9-457c-a6bf-d65d4dd1e123.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481055_1b346a57_d4b9_457c_a6bf_d65d4dd1e123.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481234-c1da43a2-3c97-4d00-91d6-4e850cd5a1ba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481234_c1da43a2_3c97_4d00_91d6_4e850cd5a1ba.png)
 
 **Back**
 
 ### 2.2 FET3572-C SoM Block Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481387-1ccb6b3f-5cb0-440e-90d0-9d0626b14ba1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481387_1ccb6b3f_5cb0_440e_90d0_9d0626b14ba1.png)
 
 ### 2.3 FET3572-C SoM Dimension Diagram
 
 **FET3572-C SoM Dimension Diagram：**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481529-fc513b40-70df-475d-8880-5b7275c1f979.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481529_fc513b40_70df_475d_8880_5b7275c1f979.png)
 
 **Top Layer Dimension Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481650-544191c1-7cdc-436e-add5-86aa4727a7a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481650_544191c1_7cdc_436e_add5_86aa4727a7a7.png)
 
 **Bottom Layer Dimension Diagram**
 
-Unit: mm![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724670-67922326-0c33-478e-af0b-7de83224e418.png)
+Unit: mm![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1721199724670_67922326_0c33_478e_af0b_7de83224e418.png)
 
 Dimensions: 68mm × 50mm, dimensional tolerance ±0.15mm. For more dimensional details, please refer to the DXF file.
 
@@ -105,9 +105,9 @@ Four mounting holes (2.1mm) are reserved at the four corners of the SoM to facil
 
 Please refer to the development board design and use M2, L=1.5mm patch nuts on the carrier board, please refer to the diagram below for the specifications of the surface-mount nuts.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199724879-e1bbcd19-a64f-483a-8ca0-679afb0b8a85.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1721199724879_e1bbcd19_a64f_483a_8ca0_679afb0b8a85.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199725152-9e128ca2-4ffc-4042-bff0-0c58c7aff308.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1721199725152_9e128ca2_4ffc_4042_bff0_0c58c7aff308.png)
 
 ### 2.4 Performance Parameter
 
@@ -219,13 +219,13 @@ The interface resources of FET3572-C SoM are supported in the following table:
 
 #### 2.6.1 FET3572-C SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481755-242cff73-cd2b-444f-8a0f-8acd9a086fa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481755_242cff73_cd2b_444f_8a0f_8acd9a086fa6.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481860-fbb7a19b-44db-41cb-90b0-199d4fa37776.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481860_fbb7a19b_44db_41cb_90b0_199d4fa37776.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481992-4360b4b0-ab44-4b62-948d-8f275e6c2966.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503481992_4360b4b0_ab44_4b62_948d_8f275e6c2966.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503482104-2ff072fa-e1ae-446c-bd40-fc3eeab4ccd1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503482104_2ff072fa_e1ae_446c_bd40_fc3eeab4ccd1.png)
 
 #### 2.6.2 FET3572-C SoM Pin Function Description
 
@@ -997,7 +997,7 @@ When the pin is pulled low, the SoM will not power on and boot up automatically;
 #### 2.8.1 SoM Circuit Design Guidelines
 
 The FET3572-C SoM integrates power supply and storage circuits into a compact module, requiring minimal external circuitry. To form a minimal system, only a 5-13V power supply, a reset button, a programming SD card, and boot configuration are needed, as illustrated below:   
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1781506331347-2c874845-9ee7-4181-b58a-c19e212987e1.png)Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is recommended to connect some external peripherals beyond the minimal system. For instance, connecting a debug serial port can be used to view printed information, while reserving an OTG interface allows for debugging information output. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781506331347_2c874845_9ee7_4181_b58a_c19e212987e1.png)Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is recommended to connect some external peripherals beyond the minimal system. For instance, connecting a debug serial port can be used to view printed information, while reserving an OTG interface allows for debugging information output. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
 For the design of the SoM's peripheral circuits, please refer to Section 3.5, "OK3572-C Carrier Board Description".
 
@@ -1007,15 +1007,15 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Board-to-board. 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/49874024/1781503488130-bd711ec1-c8ee-4dbc-89fc-a1cb26d67e38.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503488130_bd711ec1_c8ee_4dbc_89fc_a1cb26d67e38.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/49874024/1781503488593-494c99a7-743b-4bff-93a5-ef3ca4cecbe1.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503488593_494c99a7_743b_4bff_93a5_ef3ca4cecbe1.jpg)
 
 ### 3.2 OK3572-C Development Board Dimension Diagram
 
 OK3572-C Development Board Dimension Diagram：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503488796-c9349dee-ad4d-43fa-8b70-3469851f27f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503488796_c9349dee_ad4d_43fa_8b70_3469851f27f6.png)
 
 Carrier Board PCB size: 130mm × 190mm, for more detailed dimensions, please refer to the user information DXF document;
 
@@ -1029,7 +1029,7 @@ The antenna bracket is used to mount and secure 4G and 5G antennas. Dimensions: 
 
 The OK3572-C carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759195475334-74e0d2de-1b14-4865-b9fb-0d2d27069ed0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1759195475334_74e0d2de_1b14_4865_b9fb_0d2d27069ed0.png)
 
 ### 3.3 Naming Rules
 
@@ -1090,21 +1090,21 @@ ABC-D+IK:M
 
 It uses a 12V power adapter for the power supply, and the power connector is a DC005 socket. The DIP switch S1 serves as the power switch for the development board. Move the switch in the direction indicated on the carrier board to turn it on or off. A TVS diode is connected in parallel after switch S1 for ESD protection. Fuse F1 provides overcurrent protection. Diode D1 works alongside F1 to offer reverse-connection protection. VCC12V\_DCIN supplies power to both the FET3572 SoM and other peripherals on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503488905-7bfb1584-9c42-4315-a746-62ebb2b91bd0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503488905_7bfb1584_9c42_4315_a746_62ebb2b91bd0.png)
 
 VCC12V\_DCIN is stepped down to VCC\_5V via U3 (DC-DC converter). VCC\_5V powers other peripherals on the carrier board. (Note: When selecting the 12V-to-5V DC-DC chip, ensure its output power is sufficiently high. It is recommended to support an output current of 6A or above to guarantee adequate current supply for downstream stages.)
 
 After the SoM starts up normally with 12V power supply, it outputs a high level via the CARRIER\_BOARD\_EN pin to enable U3, thereby outputting VCC\_5V to power certain peripherals on the development board. (This signal level is 3.3V with a drive capability of 1kΩ pull-up. If the enabled device’s enable pin requires drive capability beyond this range, buffers or gate circuits should be added to enhance drive capability, ensuring proper power-up of both the SoM and the carrier board.)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489129-23532c8a-acf6-46b9-bc0f-a74d149f2552.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489129_23532c8a_acf6_46b9_bc0f_a74d149f2552.png)
 
 VCC\_5V is further stepped down to VCC\_3V3 via U4 (DC-DC converter). VCC\_3V3 supplies power to certain devices on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489254-4122e9e6-8488-4da7-b56d-cc8406d379a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489254_4122e9e6_8488_4da7_b56d_cc8406d379a2.png)
 
 VCC\_3V3 is then stepped down to VCC\_1V8 via U2 (LDO). VCC\_1V8 supplies power to certain devices on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489399-81f71d48-0fb9-4fa8-b41d-27f8523e2307.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489399_81f71d48_0fb9_4fa8_b41d_27f8523e2307.png)
 
 **Note:**
 
@@ -1116,13 +1116,13 @@ VCC\_3V3 is then stepped down to VCC\_1V8 via U2 (LDO). VCC\_1V8 supplies power 
 
 RESET\_L is SoM resetting signal input connected to the key for convenient debugging
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489488-964ede35-5840-41b5-9412-f728eed2d05b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489488_964ede35_5840_41b5_9412_f728eed2d05b.png)
 
 PWRON\_L is an On/Off signal input connected to the key for convenient debugging
 
 Additionally, one 2.54mm pitch terminal block is reserved for the PWRON\_L signal, which is left unpopulated by default to facilitate expansion.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489585-da635209-06c1-486a-9467-9b0e2a5a8655.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489585_da635209_06c1_486a_9467_9b0e2a5a8655.png)
 
 Please pay attention to the PMIC\_VDC signal on pin P3\_10 of the System on Module (SoM) connector. This signal can toggle between two power-on modes for the SoM: automatic power-on boot or button-triggered boot.
 
@@ -1168,13 +1168,13 @@ The boot order of the RK3572 can be configured using the SARADC\_VIN0\_BOOT Pin 
 
 On the SoM, SARADC\_VIN0\_BOOT is configured with a 10 kΩ pull‑up and an 88.7 kΩ pull‑down resistor. Thus, the SoM boots from eMMC by default. Pull-down resistors can be connected in parallel on the carrier board to achieve other sequencing arrangements. OK3572-C connects SARADC\_VIN0\_BOOT to GND via a touch button to enable Maskrom mode.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489682-d3887bbd-55f8-4d4a-93f5-7683dc996dde.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489682_d3887bbd_55f8_4d4a_93f5_7683dc996dde.png)
 
 SARADC\_ VIN1 is used to enter the recovery state due to a short circuit to the ground, and the SoM pulls it up  to a 1.8V power supply using a 10K resistor. On OK3572-C, the key array adopts a parallel type, which can adjust  the input key value by increasing or decreasing the keys and adjusting the proportion of the voltage divider resistor to achieve multi-key input to meet customer product requirements.
 
 It is recommended in the design that any two key values must be greater than ± 35, i.e. the center voltage difference must be greater than 123mV. As shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014670-c0334437-31a8-4831-8c3a-bca3ff78bb6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1751880014670_c0334437_31a8_4831_8c3a_bca3ff78bb6c.png)
 
 **Note:**
 
@@ -1190,9 +1190,9 @@ SDMMC0\_DET\_L (PIN: P3\_90) (default function: SDMMC\_DET): Determines whether 
 
 The JTAG and SDMMC functions of the FET3572 are multiplexed; the IOMUX function is switched via the SDMMC0\_DET\_L pin. Consequently, this pin must also be configured before power-up; otherwise, the absence of an output from the JTAG function will affect debugging during the boot phase, whilst the absence of an output from SDMMC0 will affect the SDMMC0 boot function.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489769-78aae136-56ed-4e6c-bec2-f23249d484b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489769_78aae136_56ed_4e6c_bec2_f23249d484b6.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503489902-23f8cba7-1eac-47b5-b47a-113c326a5a83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503489902_23f8cba7_1eac_47b5_b47a_113c326a5a83.png)
 
 - If this pin is detected as high, the corresponding I/O pin switches to JTAG mode;
 - When this pin detects low level (Most SD cards inserted will pull down this pin, if not need special treatment),  the corresponding IO switches to SDMMC0 function;
@@ -1220,14 +1220,14 @@ The JTAG interface is described in the table below:
 
 The RK3572 has two JTAG multiplexes: JTAG\_TCK\_M0/JTAG\_TMS\_M0 is located in the VCCIO1 domain and is multiplexed with SDMMC0 via the IOMUX; JTAG\_TCK\_M1/JTAG\_TMS\_M1 is located in the PMUIO1 domain and is multiplexed with UART\_Debug—UART0\_M0. The IOMUX multiplexing configuration is shown in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490084-7d0d3f7d-6445-4d3a-b7bd-458eb616bc7c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490084_7d0d3f7d_6445_4d3a_b7bd_458eb616bc7c.png)
 
 The UART Debug is set by default to UART0\_TX\_M0\_DEBUG (P2\_7)/UART0\_RX\_M0\_DEBUG (P2\_9). UART Debug signal needs to be connected with 100ohm resistor in series, if plug-in is used, and TVS tube  
 needs to be added near the plug-in position.
 
 To facilitate user debugging, OK3572-C uses a USB to UART chip to convert the UART signal into a USB signal and leads it out through a Type-C socket. Users can connect OK3572-C P16 to PC with USB Type-A to UAB Type-C cable and install a CP2102 driver. The schematic is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490193-0fec7a78-71d0-4be1-a32d-bd6117911bdd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490193_0fec7a78_71d0_4be1_a32d_bd6117911bdd.png)
 
 **Note:**
 
@@ -1239,13 +1239,13 @@ To facilitate user debugging, OK3572-C uses a USB to UART chip to convert the UA
 
 To introduce more diverse interfaces, the enable and reset signals of the carrier board are completed by the IIC to IO chip U5. At the same time, the U5 spare part of IO is led by P17 to facilitate user expansion. The principle is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490346-12c241ad-63f4-46c9-b8b9-8ed49218eec0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490346_12c241ad_63f4_46c9_b8b9_8ed49218eec0.png)
 
 #### 3.5.7 SARADC Interface
 
 OK3572-C routes SARADC\_VIN4/VIN5/VIN7 via P18; R371 is a variable resistor. By short-circuiting SARADC\_VIN4/VIN5/VIN7 to pins 4 and 6 of P18, the voltage changes can be read via the ADC whilst adjusting the resistance value of the R371 variable resistor. As shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490589-d55162f3-7aa6-44d1-8def-586bc8097b76.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490589_d55162f3_7aa6_44d1_8def_586bc8097b76.png)
 
 **Note:**
 
@@ -1255,7 +1255,7 @@ OK3572-C routes SARADC\_VIN4/VIN5/VIN7 via P18; R371 is a variable resistor. By 
 
 The carrier board P20 is a TF Card interface, which can support system boot and burn.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490692-92815255-a0cd-4ac3-b57e-7f3e54c2e5de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490692_92815255_a0cd_4ac3_b57e_7f3e54c2e5de.png)
 
 **Note:**
 
@@ -1269,15 +1269,15 @@ The carrier board P20 is a TF Card interface, which can support system boot and 
 
 The OK3572-C provides an on-board external RTC function for more accurate timing and lower power consumption. As shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490777-3c0240f0-e5e4-4ae1-814b-021ddb9ed3e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490777_3c0240f0_e5e4_4ae1_814b_021ddb9ed3e8.png)
 
 #### 3.5.10 Ethernet Circuit
 
 The carrier board supports dual 1000/100/10M Ethernet interfaces, which are led out via RJ45.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490874-a2de7e53-95b3-4f4f-be4d-25689fd3891d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490874_a2de7e53_95b3_4f4f_be4d_25689fd3891d.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503490969-2b89e4c5-cc6d-4c3a-a4fc-06b4511ddb3a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503490969_2b89e4c5_cc6d_4c3a_a4fc_06b4511ddb3a.png)
 
 The RK3572 RGMII/RMII interface design is as follows:
 
@@ -1330,7 +1330,7 @@ Bus ESD protection capability up to 15 kV (HBM).
 
 Transient immunity > 25 kV/µs. Meanwhile, the OK3572-C carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491080-2719e325-b8fb-4994-a00a-4bfac4f868a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491080_2719e325_b8fb_4994_a00a_4bfac4f868a2.png)
 
 #### 3.5.12 CAN Interface
 
@@ -1340,7 +1340,7 @@ CAN0\_RX\_M2\_3V3 and CAN0\_TX\_M2\_3V3 are native CAN signals directly routed f
 
 CAN3\_RX\_M2\_3V3 and CAN3\_TX\_M2\_3V3 are routed through a level‑shifting chip (U1).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491305-bde989ba-0281-40e5-806c-add5a1a9a985.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491305_bde989ba_0281_40e5_806c_add5a1a9a985.png)
 
 Compliant with CAN \& CAN FD specifications.
 
@@ -1350,19 +1350,19 @@ Supports standard \& extended frame transmission.
 
 The OK3572-C development board supports two CAN interfaces utilizing isolated CAN transceivers. The isolation withstand voltage is as high as 5000VDC, with bus electrostatic discharge protection capability reaching 15kV (HBM) and a transient immunity of >25kV/μs. Meanwhile, the OK3572-C carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491465-77805cb3-793b-4638-83ac-eb7e6f3cfe9a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491465_77805cb3_793b_4638_83ac_eb7e6f3cfe9a.png)
 
 #### 3.5.13 Audio
 
 The OK3572-C has an I2S interface Codec chip U31 on board, which supports MIC input, headphone output, and 1W 8Ω speaker output. The principle shown as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491564-f0bafc56-c7e2-42b0-8272-3bda62640812.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491564_f0bafc56_c7e2_42b0_8272_3bda62640812.png)
 
 #### 3.5.14 4G\&5G Interface
 
 The OK3572-C integrates an M.2 Key-B interface that is compatible with 4G and 5G modules. Since 4G and 5G modules have different power supply voltages, we need to dip S2 to select the corresponding power supply voltage.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491689-31b503da-dbc2-42b7-aaa3-213fb9814971.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491689_31b503da_dbc2_42b7_aaa3_213fb9814971.png)
 
 #### 3.5.15 USB2.0/USB3.0/PCIe2.0/SATA3.0 Circuit
 
@@ -1376,47 +1376,47 @@ COMBO\_PHY1 multiplexing options: PCIe0\_M1 / SATA0\_M1 / USB3\_DRD1.
 
 Both COMBO\_PHY0 and COMBO\_PHY1 share the controllers PCIe0, SATA0, USB3\_DRD0, and USB3\_DRD1 (as shown in the block diagram below).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491795-ec2175be-ad61-4f10-b070-7f0908830eb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491795_ec2175be_ad61_4f10_b070_7f0908830eb8.png)
 
 From the above block diagram, it can be seen that COMBO\_PHY0 and COMBO\_PHY1 share the same PCIe0 and SATA0 controllers. Therefore, these two PHYs cannot be configured simultaneously for the PCIe0 function or the SATA0 function. Please pay special attention to this constraint:
 
 COMBO\_PHY0 can be configured into the following three modes:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491892-8768b5cf-8df0-4bfc-8ebd-2378bc28ea17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491892_8768b5cf_8df0_4bfc_8ebd_2378bc28ea17.png)
 
 COMBO\_PHY1 can be configured into the following three modes:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503491987-d9608715-9be8-4b8d-9663-0eec4b0676fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503491987_d9608715_9be8_4b8d_9663_0eec4b0676fd.png)
 
 The corresponding SoM pins are as follows:
 
 COMBO\_PHY0：P2\_82, 84, 88, 90, 94, 96
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492251-522fcaa7-9319-4372-bae9-f5df49abcee2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492251_522fcaa7_9319_4372_bae9_f5df49abcee2.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492346-eda5e51e-97ac-4a7b-b2ef-e57a4a21ca31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492346_eda5e51e_97ac_4a7b_b2ef_e57a4a21ca31.png)
 
 COMBO\_PHY1：P2\_83, 85, 89, 91, 95, 97
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492508-35d081c4-41c8-4531-8bb9-02544a19249e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492508_35d081c4_41c8_4531_8bb9_02544a19249e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492609-d4af863e-e072-4b3c-bc63-c6b903d31cab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492609_d4af863e_e072_4b3c_bc63_c6b903d31cab.png)
 
 COMBO\_PHY2 multiplexing with PCIe1/SATA1
 
 The controller corresponding to COMBO \_ PHY2 is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492711-81786df1-d6d2-49e8-84c1-fd6aeee7baaa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492711_81786df1_d6d2_49e8_84c1_fd6aeee7baaa.png)
 
 COMBO \_ PHY2 can be configured in the following two cases:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492873-47c62a12-6065-46cd-9cf5-87a568835dd2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492873_47c62a12_6065_46cd_9cf5_87a568835dd2.png)
 
 The corresponding SoM pins are as follows: P2 \_ 64, 66, 70, 72, 76, 78.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503492974-bc475bba-ddc4-4e92-872a-69cfee66da33.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503492974_bc475bba_ddc4_4e92_872a_69cfee66da33.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493131-25ce529c-6abf-428c-b4cc-a971919d46e1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493131_25ce529c_6abf_428c_b4cc_a971919d46e1.png)
 
 The default configuration of the OK3572-C:
 
@@ -1428,19 +1428,19 @@ COMBO\_PHY2：PCIe1;
 
 PCIe0 \_ M0 is led out through M.2 interface, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493228-1138e718-2282-4af5-85a1-955e1824f61a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493228_1138e718_2282_4af5_85a1_955e1824f61a.png)
 
 PCIe1 is led out via PCIe X 1 slot:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493327-44f9fe95-df5e-43c5-b4f1-4a30ba3fe644.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493327_44f9fe95_df5e_43c5_b4f1_4a30ba3fe644.png)
 
 USB3\_DRD1 and USB2\_DRD1 are combined to form a complete USB3 interface. This interface is connected to an external USB HUB chip for USB port expansion.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493414-6fc61337-28fb-409a-a8b8-9be9a32dc419.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493414_6fc61337_28fb_409a_a8b8_9be9a32dc419.png)
 
 All three USB 3.0 ports on the USB hub chip are equipped with USB power-supply current-limiting switch chips, providing a stable power supply and current-limiting protection for the Type-A ports:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493508-6f55ba1d-b5bf-4e7c-bd57-f766ed2b9fe8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493508_6f55ba1d_b5bf_4e7c_bd57_f766ed2b9fe8.png)
 
 **Note:**
 
@@ -1450,7 +1450,7 @@ All three USB 3.0 ports on the USB hub chip are equipped with USB power-supply c
 
 USB2\_DRD0 is routed via a standard Type-C interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493681-55c17600-1eed-4a0f-942f-c5a1be257e09.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493681_55c17600_1eed_4a0f_942f_c5a1be257e09.png)
 
 **Note: USB\_DRD0\_DP/USB\_DRD0\_DM supports firmware download. If the product does not utilise this interface, it must be left accessible during debugging and production. Please note: USB2\_OTG0\_VBUSDET must also be connected!**
 
@@ -1545,11 +1545,11 @@ USB2\_DRD0 is routed via a standard Type-C interface.
 
 FET3572 has two MIPI DPHY CSI RX, both support MIPI V1.2 version, the maximum data rate of each channel is 2.5Gbps.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493771-c44b83a5-747f-41ea-98fc-6575bcc53427.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493771_c44b83a5_747f_41ea_98fc_6575bcc53427.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503493892-af7f9699-1b0c-45a3-9479-15be81875542.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503493892_af7f9699_1b0c_45a3_9479_15be81875542.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494021-9f11550c-00bf-4170-be94-5d103021729f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494021_9f11550c_00bf_4170_be94_5d103021729f.png)
 
 **MIPI DPHY CSI0 / 1 RX interface** **mode:**
 
@@ -1569,21 +1569,21 @@ MIPI DPHY CSI2\_RX\_D\[1:0] data reference MIPI\_DPHY\_CSI2\_RX\_CLK
 
 MIPI DPHY CSI3\_RX\_D\[1:0] data reference MIPI\_DPHY\_CSI3\_RX\_CLK
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494123-778612fd-f10c-4e77-b1b7-1fe5d1ad335f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494123_778612fd_f10c_4e77_b1b7_1fe5d1ad335f.png)
 
 The OK3572-C is configured with four Camera interfaces by default. For user convenience during debugging, two switch chips (U45 and U52) are used on the carrier board to group the signals, as shown in the circuit diagram below:
 
 Additionally, resistors R105, R106, R127, and R140 are reserved to enable switching of the DVDD voltage for P23 and P45. The default setting is 1.2V, but you can select either 1.2V or 1.5V based on your actual requirements.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494331-0fc0474f-6510-408f-871f-5f3a3d2e7497.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494331_0fc0474f_6510_408f_871f_5f3a3d2e7497.png)
 
 The schematic diagram of the four camera interfaces is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494469-f74e76d6-81c4-4069-9a32-f22d0ee4b6c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494469_f74e76d6_81c4_4069_9a32_f22d0ee4b6c7.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494634-19a9f4a4-98d2-4760-b9fb-078af03dee33.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494724-9b0d85d6-5e7b-4357-85c7-5c4f0083c851.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494634_19a9f4a4_98d2_4760_b9fb_078af03dee33.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494724_9b0d85d6_5e7b_4357_85c7_5c4f0083c851.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494826-daaf63d8-bf21-4631-9b18-b42e6427f746.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494826_daaf63d8_bf21_4631_9b18_b42e6427f746.png)
 
 **Please note in the MIPI RX design:**
 
@@ -1608,7 +1608,7 @@ Supports dual-screen independent display configurations, for example, one screen
 
 VOP and video interface output path diagram:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503494915-ac2f78ba-3b6c-47f4-8a69-c9ecb78630f5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503494915_ac2f78ba_3b6c_47f4_8a69_c9ecb78630f5.png)
 
 The OK3572-C development board supports two display output interfaces: MIPI\_DSI and HDMI.
 
@@ -1622,9 +1622,9 @@ MIPI\_DPHY\_TX supports a maximum resolution of 2560x1600@60Hz.
 
 Corresponding SoM connectors: P3\_57, 59, 63, 65, 69, 71, 75, 77, 81, 83
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495009-0243f205-70c3-4096-aa70-7c8cb6d87512.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495009_0243f205_70c3_4096_aa70_7c8cb6d87512.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495099-fcd9322e-6e08-4a90-a19b-706e8b77cbfd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495099_fcd9322e_6e08_4a90_a19b_706e8b77cbfd.png)
 
 **Please note in design:**
 
@@ -1649,7 +1649,7 @@ HDMI/eDP TX Combo PHY supports the following two modes:
 - HDMI TX Mode: Supports up to HDMI 2.1, including the HDMI FRL mode with backward compatibility for HDMI TMDS mode. It supports formats such as RGB/YUV444/YUV422/YUV420 (up to 10-bit);
 - eDP TX Mode: Supports up to eDP 1.3, with a maximum resolution of 4K@60Hz. It supports RGB/YUV444/YUV422 (up to 10-bit) formats.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495188-d27e9a1f-c080-4303-8f65-dce88909834c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495188_d27e9a1f_c080_4303_8f65_dce88909834c.png)
 
 RK3572 supports HDMI 2.1 and downward for HDMI 2.0, compatible with HDMI 1.4. Because HDMI 2.1 works in FRL mode and works in TMDS mode, when switching to HDMI 2.0 and below, it will work in TMDS mode, so the AC coupled voltage mode driver is used.
 
@@ -1663,7 +1663,7 @@ When operating in HDMI 2.0 or lower mode, HDMI\_TX\_ON\_H is configured to high 
 
 **If it only needs to support HDMI 2.0 and below mode, Q15, Q16, Q17, and Q18 also can not be omitted; it needs to ensure that the machine is not power-on, the tube can not be on, as HDMI CTS Test ID 7-3 TMDS Voff test item requires that the DUT is not power-on, Voff voltage must be within AVcc +- 10mV, or this test item can not pass.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495284-6af859e0-17bb-467a-a557-d931681eff3f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495284_6af859e0_17bb_467a_a557_d931681eff3f.png)
 
 FRL mode: In the traditional TMDS architecture, a separate channel is used to transmit the Clock. But in the FRL architecture, the Clock is embedded in the Data channel, and the Clock is resolved at the Sink side through the Clock Recovery.
 
@@ -1680,7 +1680,7 @@ FRL rate vs. channel relationship:
 
 ARC/eARC is supported by routing the HDMI\_TX\_SBD\_P/ HDMI\_TX\_SBD\_N signals to the internal RK3572 for audio data extraction.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495390-c05af63e-b6f2-47b0-855f-c0e84b87e4f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495390_c05af63e_b6f2_47b0_855f_c0e84b87e4f7.png)
 
 HDMI\_TX\_HPD is the HDMI TX controller’s Hot Plug Detect signal, multiplexed onto a standard GPIO. Its logic level corresponds to the voltage of its assigned power domain. If the power supply voltage of this domain is changed, the pull-up resistor voltage on the external circuit must be adjusted accordingly.
 
@@ -1688,11 +1688,11 @@ HDMI\_TX\_CEC is the HDMI controller’s Consumer Electronics Control function, 
 
 The CEC protocol specifies a 3.3V level. However, the protocol requires that the leakage should not exceed 1.8uA when adding 3.3V to the CEC pin through a 27K resistor.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1751880014995-370ec6fa-918a-47e7-8d07-ce829b7d9407.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1751880014995_370ec6fa_918a_47e7_8d07_ce829b7d9407.png)
 
 RK3572 IO Domain Leakage will occur if there is a voltage at IO in the power-down state. For example, the RK3572 is a power failure, and its HDMI cable is in connection to the Sink side (TV or monitor); meanwhile, the CEC at the Sink side has power and leaks through the HDMI cable to the RK3572 IO, which will cause the CEC to leak more than 1.8uA, so an external isolation circuit is necessary. We can not modify the R189 resistance at will, and we need to use 27Kohm, Q19 default, and selection 2SK3018. If needing to change other models, the junction capacitor must be the equivalent, if not, it will not only affect the work but will also affect the certification through.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495502-422654b0-beaf-4ee1-988a-d164a0a2ad58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495502_422654b0_beaf_4ee1_988a_d164a0a2ad58.png)
 
 HDMI\_TX\_SCL and HDMI\_TX\_SDA are the I2C/DDC buses of the HDMI transmitter (TX) controller. Their functions are multiplexed onto standard GPIO pins. The voltage levels for these signals depend on the power domain’s supply voltage. If the supply voltage of the power domain changes, the power supply for the pull-up resistors in the peripheral circuitry must also be adjusted accordingly.
 
@@ -1704,7 +1704,7 @@ The D6 diode cannot be removed and is used to prevent leakage from the Sink side
 
 1K in series between MOS gate for SDA signal level conversion and power supply; A 100pF is connected in parallel between the MOS gate and source to improve the timing and can not be removed.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503495605-cd77dfa8-65ff-411a-b349-716fa613bbb7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_User_Hardware_Manual/1781503495605_cd77dfa8_65ff_411a_b349_716fa613bbb7.png)
 
 HDMI holder Pin18 voltage needs to be kept between 4.8-5.3V, 1uF decoupling capacitor needs to be placed on the pin, which must not be deleted, and the layout is placed close to the HDMI holder pin.
 
