@@ -1768,7 +1768,7 @@ The schematic is as follows:
   · Excessive inrush current during power-on.
   · Device failure to boot.
   · In the worst-case scenario, irreversible damage to the processor.
-## 5\. Hardware Design Guide
+## 5\. Connector Dimension 
 
 The SoM connector specifications are as follows:  
 
