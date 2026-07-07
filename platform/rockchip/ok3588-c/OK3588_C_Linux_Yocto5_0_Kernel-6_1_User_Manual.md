@@ -727,7 +727,7 @@ sudo apt-get -f -y install \
 Before compiling, you need to set the shell environment variables. You need to do this every time you open a new shell to start a build:
 
 ```plain
-OK-yocto-source$ source oe-init-build-env
+source setup-environment
 
 ========================================
   Forlinx Yocto Build Environment Setup
@@ -863,7 +863,7 @@ The u-boot device tree file is:
 ###### 3.2.3.2 Build Kernel
 
 If you compile only the **kernel**, you will get `boot.img`. The file path is:
-`OK-linux-source/kernel-6.1/boot.img`.
+`OK-yocto-source/build/latest/boot.img`.
 The command is:
 
 ```plain
@@ -5290,7 +5290,7 @@ When configuring display output, enter the number corresponding to the display i
 
 Once configuration is complete, you can press number 1 to reboot. The screen options set during the Uboot stage will take effect after the reboot. Alternatively, you can directly press the reset button on the development board to reboot, and the configuration will also take effect after the system automatically starts up.
 
-#### 4.Encoding and Decoding
+#### 4. Encoding and Decoding
 
 Some application layer software for audio and video on the OK3588 platform uses Gstreamer, which supports hardware codecs. All examples in this section based on the GStreamer command line form.
 
@@ -5315,62 +5315,59 @@ Table of hardware codec parameters for the OK3588 platform:
 | Video Encoder     | H.264      | BP/MP/HP@level4.2 | 7680x4320      | 30 fps         |
 |                   | H.265      | MP@level4.1       | 7680x4320      | 30 fps         |
 
-**You can download the required audio and video files via the following links:
-https://1drv.ms/f/c/23029b2da42212cf/IgAxil4Bp87QT4YNlFgkH89EAcy6KDgafqKB9GkclKHlOr0?e=rrPRMN
-https://1drv.ms/f/c/23029b2da42212cf/IgC303MC3x2lTL1ouMZk1WTEAQfIBhycZJrp3I82J5W8ChQ?e=ccZEkh
-and place them in the \**`/userdata/media`\** directory on the board. Set permissions using the following command:**
+**You can download the required audio and video files via the following links: [Media](https://1drv.ms/f/c/23029b2da42212cf/IgAO-AHbQTXuSp0_h17cqqhjAdH6-CFnJKUy32vaImiIjgk?e=nhYHsD) and place them in the \**`/userdata/media`\** directory on the board. Set permissions using the following command:**
 
-```
-forlinx@ok3588:~$ sudo chmod 644 /userdata/media/*
+``` 
+forlinx@ok3588:~$ sudo chmod 644 /userdata/media/* -R
 ```
 
-##### 4.1 Audio and Video Playback
+##### 4.1 Audio and Video Playback[](https://docs.forlinx.net/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual.html#audio-and-video-playback)
 
 ###### 4.1.1 Playing Audio and Video With Gst-play
 
 Gplay is an audio/video player based on GStreamer that can automatically select the right plugin for audio/video play according to the hardware, and it is easy to run.
 
-```plain
-forlinx@ok3588:~$ gst-play-1.0 /userdata/media/1080p_60fps_h265-30S.mp4
+```
+forlinx@ok3588:~$ gst-play-1.0 /userdata/media/video/1080-h265-60fps.mp4
 ```
 
 ###### 4.1.2 Playing Video With Gst-launch
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-h265-60fps.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
 ```
 
 ###### 4.1.3 Playing Audio With Gst-launch
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/audio/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink device=plughw:1,0
 ```
 
 ###### 4.1.4 Playing Video and Audio With Gst-launch
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-h265-60fps.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink device=plughw:1,0
 ```
 
-##### 4.2. Video Hardware Encoding
+##### 4.2 Video Hardware Encoding
 
 OK3588 supports up to 8K@60fps/H.265 and 8K@60fps/H.264 video encoding.
 
 ###### 4.2.1 Video Hardware Encoding H.264
 
-```plain
+```
 forlinx@ok3588:~$ gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
 ```
 
 ###### 4.2.2 Video Hardware Encoding H.265
 
-```plain
+```
 forlinx@ok3588:~$ gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
 ```
 
 ###### 4.2.3 JPEG Hardware Encoding
 
-```plain
+```
 forlinx@ok3588:~$ gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
 ```
 
@@ -5382,55 +5379,63 @@ OK3588 uses the mppvideodec component for hardware video decoding, and its outpu
 
 ###### 4.3.1 Decoding and Playing H.264 Format Video
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/4K-h264-30fps.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
 ```
 
 ###### 4.3.2 Decoding and Playing H264 Format Video With Audio
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/4K-h264-30fps.mp4 ! qtdemux name=demux   demux.video_0 ! queue ! h264parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! audioconvert ! audioresample ! alsasink device=hw:1,0
 ```
 
 ###### 4.3.3 Decoding and Playing H265 Format Video
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/4K-h265-30fps.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
 ```
 
 ###### 4.3.4 Decoding and Playing H265 Format Video With Audio
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/4k_60fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/4K-h265-30fps.mp4 ! qtdemux name=demux   demux.video_0 ! queue ! h265parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! audioconvert ! audioresample ! alsasink device=hw:1,0
 ```
 
 ###### 4.3.5 Decoding and Playing VP9 Format Video
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-vp9-50fps.webm ! matroskademux name=demux   demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsin
 ```
 
 ###### 4.3.6 Decoding and Playing VP9 Format Video With Audio
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:1,0
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-vp9-50fps.webm !  matroskademux name=demux   demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! vorbisdec ! audioconvert ! audioresample ! alsasink device=hw:1,0
 ```
 
 ###### 4.3.7 Decoding and Playing VP8 Format Video
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 ! matroskademux ! queue ! mppvideodec ! waylandsink
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-vp8-50fps.webm ! matroskademux name=demux   demux.video_0 ! queue ! mppvideodec ! waylandsink
 ```
 
 ###### 4.3.8 Decoding and Playing VP8 Format Video With Audio
 
-```plain
-forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_vp8.mp4 typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:1,0
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-vp8-50fps.webm typefind=true ! video/webm ! matroskademux name=dec dec. ! queue ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! audioconvert ! audioresample ! alsasink device=plughw:1,0
 ```
 
+###### 4.3.9 Decoding and Playing VP8 Format Video With Audio
 
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-mjpeg-30fps.avi ! avidemux name=demux   demux.video_0 ! queue ! jpegparse ! mppjpegdec ! videoconvert ! waylandsink
+```
 
+###### 4.3.9 Decoding and Playing mpeg Format Video With Audio
 
+```
+forlinx@ok3588:~$ gst-launch-1.0 filesrc location=/userdata/media/video/1080-mjpeg-30fps.avi ! avidemux name=demux   demux.video_0 ! queue ! jpegparse ! mppjpegdec ! videoconvert ! waylandsink   demux.audio_0 ! queue ! mpegaudioparse ! mpg123audiodec ! audioconvert ! audioresample ! alsasink device=hw:1,0
+```
 
 ### SQLite3
 
@@ -5469,18 +5474,6 @@ sqlite> .quit			                                // Exit the database (or use the
 After copying the files, execute the command `chmod +x user_application` to add executable permissions to the application.
 
 Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.2.1 of the Build Guides for compilation instructions). After successful programming, you can manually run your application`user_application`, on the board. For information on enabling auto-start functionality, please refer to the next section.
-
-
-
-- To allow users to conveniently customize their own applications, an overlay mechanism has been created in the BSP source code. Users can navigate to the path `OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588` and directly place their `user_application` into `usr/sbin`. If users wish to place it in other directories, they can simply create the corresponding directories there.
-- To modify system or service configurations, copy the relevant configuration files to the directory `OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/etc`;
-- To add library files, copy them to the specified directory within `OK-yocto-source/sources/meta-forlinx-rk/overlay/overlay-ok3588/usr/lib`;
-
-After copying the files, execute the command `chmod +x user_application` to add executable permissions to the application.
-
-Once you have completed these steps, perform a full compilation in the source code directory, and program the compiled image to the board (please refer to section 3.3 of the Build Guides for compilation instructions). After successful programming, you can manually run your application`user_application`, on the board. For information on enabling auto-start functionality, please refer to the next section.
-
-
 
 ### 2\. Auto-starting the User Program
 
