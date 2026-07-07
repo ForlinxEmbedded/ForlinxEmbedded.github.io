@@ -1,4 +1,4 @@
-# OK3572-C\_User’s Hardware Manual\_V1.0
+# User’s Hardware Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
@@ -30,7 +30,7 @@ This hardware manual applies to the OK3572-C Forlinx Development
 ## Revision History
 
 | **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|:----------:|:----------:|----------||
+|:----------:|:----------:|:----------:|:----------:|----------|
 | 15/06/2026| V1.0| V1.0| V1.0| Initial Version|
 
 ## 1\. RK3572 Description
@@ -83,7 +83,7 @@ Target Applications:
 
 ### 2.3 FET3572-C SoM Dimension Diagram
 
-FET3572-C SoM Dimension Diagram：
+**FET3572-C SoM Dimension Diagram：**
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781503481529-fc513b40-70df-475d-8880-5b7275c1f979.png)
 
@@ -200,6 +200,7 @@ The interface resources of FET3572-C SoM are supported in the following table:
 | PWM| ≤16| Supports up to 16 on-chip PWM with interrupt-based operation and capture mode;|
 | ADC| ≤8| Supports 8 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s; |
 | GPIO| n| · All GPIOs can be used to generate interrupts;<br />· Supports level-triggered and edge-triggered interrupts;<br />· Supports configuration of level-triggered polarity;<br />· Supports rising-edge, falling-edge and dual-edge interrupts;<br />· Supports configuration of pull-up/pull-down (weak pull-up and weak pull-down);<br />· Supports configuration of drive capability, configurable drive strength. |
+
 **Note:** 
 
 - **The parameters in the table are based on hardware design or theoretical CPU values;**
@@ -246,6 +247,7 @@ The interface resources of FET3572-C SoM are supported in the following table:
 | \[2]| The default pin level is 1.8 V.|
 | \[3]| Pins are CPU boot-related pins, which are not recommended for IO.|
 | \[4]| Special-purpose pins and can not be used as IO.|
+
 Pin Description—— SoM Pin Signal Descriptions
 Default Function——Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. Please contact us with any questions in time.
 
@@ -692,7 +694,7 @@ Default Function——Please don’t make any modifications for all SoM pin func
 
 #### 2.7 FET3572-C SoM Pin Description (by Function)
 
-**Note: **
+**Note:** 
 
 - **Default Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. Please contact us with any questions in time;**
 
@@ -724,8 +726,8 @@ Default Function——Please don’t make any modifications for all SoM pin func
 
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
 |:----------:|:----------:|:----------:|:----------:|:----------:|
-| SoM startup mode switching| PMIC\_VDC| I| When the pin is left floating (unconnected), the SoM will power on and boot up by default. |
-When the pin is pulled low, the SoM will not power on and boot up automatically; pressing the PWRON\_L button will initiate the startup process.| P3\_10|
+| SoM startup mode switching| PMIC\_VDC| I| When the pin is left floating (unconnected), <br />the SoM will power on and boot up by default. |P3\_10|
+When the pin is pulled low, the SoM will not power on and boot up automatically; pressing the PWRON\_L button will initiate the startup process.
 
 #### 2.7.4 Flashing Control Pin Reset
 
@@ -765,13 +767,13 @@ When the pin is pulled low, the SoM will not power on and boot up automatically;
 #### 2.7.7 SD Interface Control Pins
 
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
-|:----------:|:----------:|:----------:|:----------:|:----------:||
+|:----------:|:----------:|:----------:|:----------:|:----------:|
 | SDIO| SDMMC0\_D0| I/O| SDIO data bit 0| P1\_5|
 | | SDMMC0\_D1| I/O| SDIO data bit 1| P1\_3|
 | | SDMMC0\_D2| I/O| SDIO data bit 2| P1\_13|
-| | SDMMC0\_D3| I/O| SDIO data bit 3| P1\_11||
+| | SDMMC0\_D3| I/O| SDIO data bit 3| P1\_11|
 | | SDMMC0\_CLK| O| SDIO clock| P1\_7|
-| | SDMMC0\_CMD| I/O| SDIO Command Signal| P1\_9||
+| | SDMMC0\_CMD| I/O| SDIO Command Signal| P1\_9|
 | | SDMMC0\_DET\_L| I| SD Card Plug Detection| P3\_90|
 
 #### 2.7.8 WIFI Interface Control Pins
@@ -1077,7 +1079,7 @@ ABC-D+IK:M
 
 ### 3.5 OK3572-C Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by 
   default;**
@@ -1148,7 +1150,7 @@ Boot Sequence Selection:
 
 The boot order of the RK3572 can be configured using the SARADC\_VIN0\_BOOT Pin (PIN: P1\_28). By applying different pull-up or pull-down resistor values to this pin, various peripheral boot sequences can be set. The hardware design supports 11 boot modes (Config1–Config11), which are defined below. It is important to select the appropriate configuration based on the specific application requirements.
 
-Table 3.5.3.1 Boot Sequence Configuration 
+**Table 3.5.3.1 Boot Sequence Configuration** 
 
 | **Item**| **Rup**| **Rdown**| **ADC**| **BOOT MODE**|
 |:----------:|:----------:|:----------:|:----------:|----------|
@@ -1197,7 +1199,7 @@ The JTAG and SDMMC functions of the FET3572 are multiplexed; the IOMUX function 
 - After the system is up, it can be switched to have registers to control IOMUX, then the pin can bereleased;
 - For easy reference, the configuration status of this pin corresponds to its function shown as follows:
 
-Table 3.5.4.1 FET3572 System Initialization Configuration Signal Description
+**Table 3.5.4.1 FET3572 System Initialization Configuration Signal Description**
 
 | **Signal Name**| **Internal Pull-up\&down**| **Description**|
 |:----------:|:----------:|----------|
@@ -1209,7 +1211,7 @@ The JTAG interface on the RK3572 chip complies with the IEEE 1149.1 standard; a 
 
 The JTAG interface is described in the table below:
 
-Table 3.5.5.1 FET3572 JTAG Debug Interface Signals
+**Table 3.5.5.1 FET3572 JTAG Debug Interface Signals**
 
 | **Signal Name**| **Description**|
 |:----------:|:----------:|
