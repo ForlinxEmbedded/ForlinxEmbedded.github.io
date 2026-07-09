@@ -72,11 +72,11 @@ RK3572 is a low-power, high-performance processor based on the ARM64 architectur
 
 Connection method: Board-to-board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512294298-de6b9bb0-676c-49ab-a239-e5a7ab4502b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512294298_de6b9bb0_676c_49ab_a239_e5a7ab4502b1.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512294464-e5259bd2-b1ab-4eca-99d6-659ea1cc755a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512294464_e5259bd2_b1ab_4eca_99d6_659ea1cc755a.png)
 
 **Back**
 
@@ -193,7 +193,7 @@ Step 1: Confirm the serial port number connected to the computer, checking the p
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 1500000.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296307-895ae6fa-8397-4d94-b60c-c7b61b8c8729.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296307_895ae6fa_8397_4d94_b60c_c7b61b8c8729.png)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
@@ -242,13 +242,13 @@ Before logging in to the network, you need to ensure that the network connection
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296417-9d165084-a0ea-45ee-99aa-bd105c193f86.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296417_9d165084_a0ea_45ee_99aa_bd105c193f86.png)
 
 3\. Open Command Prompt as administrator;
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296546-dcf80fee-b667-4901-8420-eb5ce7573163.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296546_dcf80fee_b667_4901_8420_eb5ce7573163.png)
 
 #### 2.4.2 SSH the server
 
@@ -259,9 +259,9 @@ Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt a
 
 1\. Use SSH to log in to the development board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296693-0eb986ab-dfe6-4fdd-b5a4-631d2f2e3022.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296693_0eb986ab_dfe6_4fdd_b5a4_631d2f2e3022.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296764-8e25b7f3-782b-40c7-a489-1ee123381f9d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296764_8e25b7f3_782b_40c7_a489_1ee123381f9d.png)
 
 #### 2.4.3 SFTP
 
@@ -274,9 +274,9 @@ Path: User Profiles\\3-Tools\\FileZilla\* Install the FileZilla tool on Windows 
 + **For this function, you need to connect a network cable to the development board. The host IP setting and the client are in the same network segment. Make sure that the host and the client are in the same LAN. The user name is root and the password is root;**
 + **The following is tested with the development board IP 192.168.0.232. Please modify it according to the actual situation.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296844-2966c136-de13-43cb-9f76-7580ea51993d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296844_2966c136_de13_43cb_9f76_7580ea51993d.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512296918-3390d446-9e3a-480f-899e-d7d7756a136a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296918_3390d446_9e3a_480f_899e_d7d7756a136a.png)
 
 ### 2.5 Switching Between Screens and Cameras
 
@@ -1309,7 +1309,7 @@ The default 5G module model supported is the Quectel RM500U.
 
 + **Use S2 on the carrier baord to switch to 5G.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106162023190.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512299311-090a00d5-86ef-4f48-bcc2-315175bc97f5.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512299403-c434cb47-9444-40c1-9404-adcc5ff8292d.png)
+![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106162023190.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512299311_090a00d5_86ef_4f48_bcc2_315175bc97f5.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512299403_c434cb47_9444_40c1_9404_adcc5ff8292d.png)
 
 1\. After connecting the module and powering on the development board and module, you can check the USB status using the lsusb command.
 
@@ -2598,11 +2598,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303257-70997101-0aaa-45b3-80e6-4bd1645f410e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303257_70997101_0aaa_45b3_80e6_4bd1645f410e.png)
 
 Click Install Driver.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303336-ef70726a-6dff-4a14-8a15-b1e4567e618d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303336_ef70726a_6dff_4a14_8a15_b1e4567e618d.png)
 
 #### 5.1.2 Complete OTG Flashing
 
@@ -2621,19 +2621,19 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 + **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters;**
 + **When performing an OTG flash, ensure that the OTG cable is connected to the Type-C port on the board, as shown in the figure below:**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303420-173004f4-506d-4f5a-8c23-6be561abf52d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303420_173004f4_506d_4f5a_8c23_6be561abf52d.png)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303520-5a3fd9ce-afd3-4ffa-b554-1b6dc3a6a151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303520_5a3fd9ce_afd3_4ffa_b554_1b6dc3a6a151.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303611-bf0dd65a-60b1-4c1f-8cf0-9d2041503d34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303611_bf0dd65a_60b1_4c1f_8cf0_9d2041503d34.png)
 
 Click the "Upgrade" button to upgrade. The flashing process will take some time; the system will restart automatically once the update is complete.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303732-19800e1f-5990-4268-852b-fb05035f4a39.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303732_19800e1f_5990_4268_852b_fb05035f4a39.png)
 
 **5.1.2.2 FactoryTool Flashing Test**
 
@@ -2645,19 +2645,19 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303827-d24f38d4-c6f0-4863-88ea-16310a908b7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303827_d24f38d4_c6f0_4863_88ea_16310a908b7a.png)
 
 After selecting the firmware, click “Start.” The loader device will be detected, and the flashing process will begin automatically.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512303906-fe9af8a6-b79f-45bc-aeea-44bb058dcd58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303906_fe9af8a6_b79f_45bc_aeea_44bb058dcd58.png)
 
 Downloading firmware:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304025-2b6bc4b1-aede-408d-a566-a8c41734cc74.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304025_2b6bc4b1_aede_408d_a566_a8c41734cc74.png)
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304137-e21ce864-497a-4aab-ad04-7593242c5f8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304137_e21ce864_497a_4aab_ad04_7593242c5f8a.png)
 
 #### 5.1.3 OTG Step-by-Step Flashing Test
 
@@ -2685,31 +2685,31 @@ Take the separate flashing boot partition as an example to demonstrate the flash
 
 Connect the development board and host using a Type-C cable, press and hold the recovery button, then press the reset button for system reset. After about two seconds, release the recovery button. The system will prompt “ Find Loader Device”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304251-d5863396-6b1f-4078-a151-2c6ccff6698a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304251_d5863396_6b1f_4078_a151_2c6ccff6698a.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304338-ccedbef2-bda2-4d5f-bec2-e3888f6e38a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304338_ccedbef2_bda2_4d5f_bec2_e3888f6e38a7.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304459-32b83df0-e335-4b99-a541-4ddd3e8cda9b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304459_32b83df0_e335_4b99_a541_4ddd3e8cda9b.png)
 
 Click the area to the right of the partition to select the partition image, and tick the partition.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304568-d694d2e5-bdbd-4550-9b56-75a577c2ccca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304568_d694d2e5_bdbd_4550_9b56_75a577c2ccca.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304686-45496aec-aae0-42ea-a843-462804137c65.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304686_45496aec_aae0_42ea_a843_462804137c65.png)
 
 **MASKROM Mode Introduction**
 
 If the loader is damaged and cannot enter the Loader mode, press and hold the maskrom key (next to the RTC battery) and then press the reset key to enter the maskrom mode for programming.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512304845-32d9a73e-536a-49d4-b8d9-98142a017afb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304845_32d9a73e_536a_49d4_b8d9_98142a017afb.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512305179-66e2974b-9729-4f2c-a380-5bedd53b1866.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305179_66e2974b_9729_4f2c_a380_5bedd53b1866.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming. When flashing a partition, in addition to selecting the image to be flashed, you must also add MiniLoaderAll.bin.
 
@@ -2725,13 +2725,13 @@ Copy SDDiskTool \_ v1.8.zip from the user profile tool directory to any windows 
 
 SD\_Firmware\_Tool.exe.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512305374-8a84d15b-c1ab-4296-884d-91e66c63e681.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305374_8a84d15b_c1ab_4296_884d_91e66c63e681.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512305585-80cb75de-f7e6-482a-ba05-9e2c7cb3454e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305585_80cb75de_f7e6_482a_ba05_9e2c7cb3454e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512305864-50abc6ba-da70-4a96-aa09-0d22c8193fbd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305864_50abc6ba_da70_4a96_aa09_0d22c8193fbd.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
