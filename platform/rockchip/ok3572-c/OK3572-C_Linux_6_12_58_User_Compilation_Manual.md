@@ -67,7 +67,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![Image](1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -75,35 +75,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the programme to launch the installation wizard, then click “Next”.
 
-![Image](1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
 
 Check, then click “Next.”
 
-![Image](1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
 
 Click “Install.”
 
-![Image](1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
 
 Wait for the installation to complete.
 
-![Image](1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
-![Image](1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
 
 <font style="color:#000000;">     </font>
 
@@ -127,7 +127,7 @@ The file 35XX.vmx in the OK35XX-linux6.1-VM17-ubuntu22.04 development environmen
 
 Open the installed virtual machine software.
 
-![Image](1726291989979_2b8d681a_40e2_4572_8cb0_35d6320a4abc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291989979_2b8d681a_40e2_4572_8cb0_35d6320a4abc.png)
 
 Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine file is located, and double-click the startup file to open it
 
@@ -135,7 +135,7 @@ Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.0
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
-![Image](1726291990450_b1f74516_c288_4574_baf3_ab9f4d6c3ebd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291990450_b1f74516_c288_4574_baf3_ab9f4d6c3ebd.png)
 
 Development Environment Account: forlinx; password: forlinx
 
@@ -151,15 +151,15 @@ Development Environment Account: forlinx; password: forlinx
 
 Open the VMware software and click “Create a New Virtual Machine”. Enter the following interface:
 
-![Image](1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
 
 Select ''Custom'' and click ''Next.''
 
-![Image](1726291996662_59902e0c_a9fd_4a7c_aebb_9c825cc1a759.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996662_59902e0c_a9fd_4a7c_aebb_9c825cc1a759.png)
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click "Next".
 
-![Image](1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e-1783653515013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e-1783653515013.png)
 
 Select Install the operating system later and click "Next".
 
@@ -167,43 +167,42 @@ Select Install the operating system later and click "Next".
 
 Keep the default settings and click ''Next.''
 
-![Image](1726291997449_e9665fd6_38ca_490b_ab72_91f7c783eb18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291997449_e9665fd6_38ca_490b_ab72_91f7c783eb18.png)
 
 Modify the virtual machine's name and installation location, then click ''Next.''
 
-![Image](1726291997629_8dbe5f95_19c8_45f5_af0a_f3b373534742.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291997629_8dbe5f95_19c8_45f5_af0a_f3b373534742.png)
 
 Set the number of processors according to your needs.
 
-![Image](1726291997860_f391be4d_7d2f_4d92_a1db_90dd94208b7f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291997860_f391be4d_7d2f_4d92_a1db_90dd94208b7f.png)
 
 Similarly, set the memory size according to your needs. It is recommended to use 16GB.
-
-![Image](1726291998076_65147b0e_e965_47f5_9b9c_5d3815292955.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998076_65147b0e_e965_47f5_9b9c_5d3815292955.png)
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](1726291998283_b3431f5b_4dbf_4775_abf7_333e6e29413c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998283_b3431f5b_4dbf_4775_abf7_333e6e29413c.png)
 
 Choose the default LSI for the IO controller type.
 
-![Image](1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9.png)
 
 Similarly, select SCSI as the default here.
 
-![Image](1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9-1783654738538.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9-1783654738538.png)
 
 Choose to create a new virtual disk:
 
-![Image](1726291998756_bdaa4dd0_eb22_423f_b558_4bb3f8f07563-1783654756783.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998756_bdaa4dd0_eb22_423f_b558_4bb3f8f07563-1783654756783.png)
 
 Set the disk size to 200GB and select the disk's format, then click "Next" to complete.
 
-![Image](1726291998967_827fe271_3974_4f53_becf_0be10af4a52a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998967_827fe271_3974_4f53_becf_0be10af4a52a.png)
 
 Specify the disk file, the default setting is fine here.
 
-![Image](1726291999485_de6c555b_c557_4f25_8b33_44810fdc22cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291999485_de6c555b_c557_4f25_8b33_44810fdc22cc.png)
 
 Click ''Finish'' by default to complete.
 
@@ -217,19 +216,19 @@ The installed Ubuntu version is 22.04. First, go to the official Ubuntu website 
 
 Right-click the Ubuntu 64-bit virtual machine that was created and select "Settings" from the context menu.
 
-![Image](28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/28.png)
 
 The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
-![Image](29.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/29.png)
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click "OK".
 
-![Image](29-1783655084630.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/29-1783655084630.png)
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image.
 
-![Image](30.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/30.png)
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
@@ -283,7 +282,7 @@ sudo apt install open-vm-tools open-vm-tools-desktop
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![Image](1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 #### 3.1.4 Network Configuration of Ubuntu
 
@@ -291,29 +290,29 @@ Most system settings can be configured in the location shown in the figure. Many
 
 Before using the network, make sure that your virtual machine can connect to the internet. Open the virtual machine settings, and change the network adapter's network bridging mode to NAT Mode:
 
-![Image](1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. This is the most commonly used method for the virtual machine to access the external network.
 
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1.png)
 
 The network is set to dynamic IP.
 
-![Image](1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 + **Bridge Mode：**
 
 If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode. When Vmware virtual network card is set to bridged mode, the host network card and the virtual machine network card communicate through a virtual bridge, and you need to ensure that the IP address of Ubuntu is in the same subnet as the host machine.
 
-![Image](1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99-1783655281485.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99-1783655281485.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](1-1783655315226.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1-1783655315226.png)
 
-![Image](1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f-1783655325812.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f-1783655325812.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
@@ -321,13 +320,13 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.0, then click OK. As shown below, most modern computers support USB 3.0 ports. If not configured, the USB 3.0 device will not be connected to the virtual machine when inserted. As shown in the figure:
 
-![Image](1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 After the virtual machine starts, insert the USB flash drive. An icon similar to a "USB drive" will appear in the lower-right corner of the virtual machine. Right-click it and select Connect. Then, you should see a new directory in the file system, indicating that the USB drive has been successfully loaded, as shown below:
 
-![Image](1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
-![Image](1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
 #### 3.1.6 Basic Library Installation for the Virtual Machine
 
