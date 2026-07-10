@@ -2648,7 +2648,7 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 After selecting the firmware, click “Start.” The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e-1783665464482.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e_1783665464482.png)
 
 Downloading firmware.
 
