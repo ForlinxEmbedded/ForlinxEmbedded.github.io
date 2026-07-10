@@ -160,7 +160,7 @@ Select ''Custom'' and click ''Next.''
 
 Select the compatibility with the corresponding version of VMware, which can be found in Help->About VMware Workstation, and click "Next".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e-1783653515013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e_1783653515013.png)
 
 Select Install the operating system later and click "Next".
 
@@ -192,11 +192,11 @@ Choose the default LSI for the IO controller type.
 
 Similarly, select SCSI as the default here.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9-1783654738538.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998524_8ae2b9e4_31b7_4720_b517_8649ff9fe0b9_1783654738538.png)
 
 Choose to create a new virtual disk:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998756_bdaa4dd0_eb22_423f_b558_4bb3f8f07563-1783654756783.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998756_bdaa4dd0_eb22_423f_b558_4bb3f8f07563_1783654756783.png)
 
 Set the disk size to 200GB and select the disk's format, then click "Next" to complete.
 
@@ -226,7 +226,7 @@ The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click "OK".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/29-1783655084630.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/29_1783655084630.png)
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image.
 
@@ -306,13 +306,13 @@ If using servers like TFTP or SFTP, you need to set the virtual machine's networ
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99-1783655281485.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99_1783655281485.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1-1783655315226.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1_1783655315226.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f-1783655325812.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f_1783655325812.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
