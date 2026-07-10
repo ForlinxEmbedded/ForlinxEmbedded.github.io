@@ -63,6 +63,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK3572-C_Linux_6_12_58_User_Manual
+   OK3572-C_Linux_6_12_58_User_Compilation_Manual
 
    
 
