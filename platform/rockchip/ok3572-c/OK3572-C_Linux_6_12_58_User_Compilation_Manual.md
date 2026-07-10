@@ -35,13 +35,14 @@ Additionally, the manual includes explanations of some symbols and formats.
 | Black font on a gray background| Serial output information after command input|
 | **Black Bold font on a gray background**| Key information in the serial output:|
 | //| Explanation of input commands or output information:|
-| Username@Hostname| root@ok3572-buildroot:/# : Development board serial port and network login account information, Ubuntu account information. You can use this information to determine the functional operating environment.|
+| Username@Hostname| root@ok3572-buildroot:/# : Development board serial port and network login account information, Ubuntu account information.<br />You can use this information to determine the functional operating environment. |
 
 Example: After packaging the file system, use the ls command to view the generated files.
 
 ```bash
 forlinx@ubuntu:~/3572$ ls //List the files in this directory
-OK3572-linux-source.tar.bz2 OK3572-linux-source.tar.bz2.00 OK3572-linux-source.tar.bz2.01 OK3572-linux-source.tar.bz2.02 OK3572-linux-source.tar.bz2.03 OK3572-linux-source.tar.bz2.04
+OK3572-linux-source.tar.bz2 OK3572-linux-source.tar.bz2.00 OK3572-linux-source.tar.bz2.01
+OK3572-linux-source.tar.bz2.02 OK3572-linux-source.tar.bz2.03 OK3572-linux-source.tar.bz2.04
 ```
 
 + forlinx@ubuntu: The username is forlinx, and the hostname is ubuntu, indicating that the operation is being performed in the development environment on Ubuntu.
@@ -178,6 +179,7 @@ Set the number of processors according to your needs.
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291997860_f391be4d_7d2f_4d92_a1db_90dd94208b7f.png)
 
 Similarly, set the memory size according to your needs. It is recommended to use 16GB.
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291998076_65147b0e_e965_47f5_9b9c_5d3815292955.png)
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
@@ -260,8 +262,6 @@ The installation process is shown in the figure below. If the network is not goo
 After installation is complete, the screen will look like the image below. Click “Restart Now” to reboot (or click “Restart Guest”).
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512266723_5722a4f0_1db0_4cc8_ae8a_5f808d4a1d21.png)
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 After restarting and logging in, the system interface is as shown below:
 
@@ -542,8 +542,10 @@ make: Entering directory '/home/forlinx/work/OK3572-linux-source/u-boot'
   CLEAN   tools/env
   CLEAN   tools
   CLEAN   tools/generated
-  CLEAN   spl/arch spl/board spl/boot spl/cmd spl/common spl/disk spl/drivers spl/dts spl/env spl/fs spl/lib spl/u-boot-spl spl/u-boot-spl-dtb.bin spl/u-boot-spl-nodtb.bin spl/u-boot-spl.bin spl/u-boot-spl.dtb spl/u-boot-spl.lds spl/u-boot-spl.map spl/u-boot-spl.sym spl/u-boot.cfg
-  CLEAN   include/autoconf.mk include/autoconf.mk.dep include/bmp_logo.h include/bmp_logo_data.h include/config.h include/generated/env.in include/generated/env.txt drivers/video/u_boot_logo.S tools/version.h u-boot-nodtb.bin u-boot.lds u-boot.dtb u-boot-initial-env u-boot.map u-boot.srec u-boot.cfg u-boot.bin u-boot-dtb.bin u-boot u-boot.sym System.map bl31.elf bl31_0x40040000.bin bl31_0x4005a000.bin bl31_0x40056000.bin bl31_0x400e0000.bin
+  CLEAN   spl/arch spl/board spl/boot spl/cmd spl/common spl/disk spl/drivers spl/dts spl/env spl/fs spl/lib spl/u-boot-spl spl/u-boot-spl-dtb.bin spl/u-boot-spl-nodtb.bin
+spl/u-boot-spl.bin spl/u-boot-spl.dtb spl/u-boot-spl.lds spl/u-boot-spl.map spl/u-boot-spl.sym spl/u-boot.cfg
+  CLEAN   include/autoconf.mk include/autoconf.mk.dep include/bmp_logo.h include/bmp_logo_data.h include/config.h include/generated/env.in include/generated/env.txt drivers/video/u_boot_logo.S tools/version.h u-boot-nodtb.bin
+u-boot.lds u-boot.dtb u-boot-initial-env u-boot.map u-boot.srec u-boot.cfg u-boot.bin u-boot-dtb.bin u-boot u-boot.sym System.map bl31.elf bl31_0x40040000.bin bl31_0x4005a000.bin bl31_0x40056000.bin bl31_0x400e0000.bin
   CLEAN   scripts/basic
   CLEAN   scripts/dtc
   CLEAN   scripts/kconfig
