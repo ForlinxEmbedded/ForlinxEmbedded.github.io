@@ -1,4 +1,4 @@
-# Linux 6.12.58\_User’s Compilation Manual Initial Version\_V1.0
+# Linux 6.12.58\_User’s Compilation Manual_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open    
 
