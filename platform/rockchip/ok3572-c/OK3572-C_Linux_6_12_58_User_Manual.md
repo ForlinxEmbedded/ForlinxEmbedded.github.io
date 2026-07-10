@@ -1,4 +1,4 @@
-# Linux 6.12.58_User’s Manual\_V1.0
+Linux 6.12.58_User’s Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
@@ -242,13 +242,13 @@ Before logging in to the network, you need to ensure that the network connection
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296417_9d165084_a0ea_45ee_99aa_bd105c193f86.png)
+![Image](1718954728414_9f9a202c_0ba7_47f1_a14e_b10aa678fa01.png)
 
 3\. Open Command Prompt as administrator;
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296546_dcf80fee_b667_4901_8420_eb5ce7573163.png)
+![Image](1718954728585_22cc0ffd_0558_45ae_90c2_d581345a261a.png)
 
 #### 2.4.2 SSH the server
 
@@ -274,9 +274,7 @@ Path: User Profiles\\3-Tools\\FileZilla\* Install the FileZilla tool on Windows 
 + **For this function, you need to connect a network cable to the development board. The host IP setting and the client are in the same network segment. Make sure that the host and the client are in the same LAN. The user name is root and the password is root;**
 + **The following is tested with the development board IP 192.168.0.232. Please modify it according to the actual situation.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296844_2966c136_de13_43cb_9f76_7580ea51993d.png)
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512296918_3390d446_9e3a_480f_899e_d7d7756a136a.png)
+![Image](1718954729099_282246fe_f588_46d3_b4ea_4c670fb661bc.png)
 
 ### 2.5 Switching Between Screens and Cameras
 
@@ -2604,11 +2602,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303257_70997101_0aaa_45b3_80e6_4bd1645f410e.png)
+![Image](1735267645818_f515fa0c_ce94_4d61_a5a0_664ed7c0640a.png)
 
 Click Install Driver.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303336_ef70726a_6dff_4a14_8a15_b1e4567e618d.png)
+![Image](1735267671413_d07d1e53_8b6f_4559_969f_0d921a473a55.png)
 
 #### 5.1.2 Complete OTG Flashing
 
@@ -2631,15 +2629,13 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 
 Open the Rockchip development tool:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303520_5a3fd9ce_afd3_4ffa_b554_1b6dc3a6a151.png)
+![Image](1735267787698_646f1b57_da67_431b_b28c_ad14f616217a.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303611_bf0dd65a_60b1_4c1f_8cf0_9d2041503d34.png)
+![Image](1735267965892_2e0b0d71_79d8_463f_b66a_0f429fabe1a1.png)
 
 Click the "Upgrade" button to upgrade. The flashing process will take some time; the system will restart automatically once the update is complete.
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303732_19800e1f_5990_4268_852b_fb05035f4a39.png)
 
 **5.1.2.2 FactoryTool Flashing Test**
 
@@ -2648,22 +2644,15 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 **Note:** 
 
 - **Device detection occurs when the recovery button is pressed during the power-on of the development board;**                                       
-
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303827_d24f38d4_c6f0_4863_88ea_16310a908b7a.png)
 
 After selecting the firmware, click “Start.” The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512303906_fe9af8a6_b79f_45bc_aeea_44bb058dcd58.png)
+![Image](1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e-1783665464482.png)
 
-Downloading firmware:
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304025_2b6bc4b1_aede_408d_a566_a8c41734cc74.png)
+Downloading firmware.
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304137_e21ce864_497a_4aab_ad04_7593242c5f8a.png)
 
 #### 5.1.3 OTG Step-by-Step Flashing Test
 
@@ -2691,23 +2680,23 @@ Take the separate flashing boot partition as an example to demonstrate the flash
 
 Connect the development board and host using a Type-C cable, press and hold the recovery button, then press the reset button for system reset. After about two seconds, release the recovery button. The system will prompt “ Find Loader Device”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304251_d5863396_6b1f_4078_a151_2c6ccff6698a.png)
+![Image](1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304338_ccedbef2_bda2_4d5f_bec2_e3888f6e38a7.png)
+![Image](1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304459_32b83df0_e335_4b99_a541_4ddd3e8cda9b.png)
+![Image](1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the area to the right of the partition to select the partition image, and tick the partition.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304568_d694d2e5_bdbd_4550_9b56_75a577c2ccca.png)
+![Image](1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304686_45496aec_aae0_42ea_a843_462804137c65.png)
+![Image](1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
 **MASKROM Mode Introduction**
 
@@ -2715,7 +2704,7 @@ If the loader is damaged and cannot enter the Loader mode, press and hold the ma
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512304845_32d9a73e_536a_49d4_b8d9_98142a017afb.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305179_66e2974b_9729_4f2c_a380_5bedd53b1866.png)
+![Image](1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming. When flashing a partition, in addition to selecting the image to be flashed, you must also add MiniLoaderAll.bin.
 
@@ -2725,19 +2714,21 @@ At this time, the system will prompt that a maskrom device is found. The program
 
 Flashing TF card making and testing.
 
-Note: The maximum capacity of TF cards tested is 32GB; using a TF card with a capacity greater than 32GB may result in a write failure.
+**Note:** 
 
-Copy SDDiskTool \_ v1.8.zip from the user profile tool directory to any windows directory. Run as administrator
+- **The maximum capacity of TF cards tested is 32GB; using a TF card with a capacity greater than 32GB may result in a write failure;**
+
+- **Copy SDDiskTool \_ v1.8.zip from the user profile tool directory to any windows directory. Run as administrator.**
 
 SD\_Firmware\_Tool.exe.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305374_8a84d15b_c1ab_4296_884d_91e66c63e681.png)
+![Image](1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305585_80cb75de_f7e6_482a_ba05_9e2c7cb3454e.png)
+![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512305864_50abc6ba_da70_4a96_aa09_0d22c8193fbd.png)
+![Image](1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
