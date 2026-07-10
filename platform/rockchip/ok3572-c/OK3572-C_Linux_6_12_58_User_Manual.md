@@ -24,10 +24,10 @@ Additionally, the manual includes explanations of some symbols and formats.
 
 | **Format**| **Meaning**|
 |:----------:|----------|
-| ⁉️| Note or particularly important information must be read carefully.|
-| | Relevant explanations regarding the testing section|
-| ️| Related paths.|
-| Blue font on grey background| Refers to the command entered on the command line, which needs to be entered manually.|
+| **Note** | Note or particularly important information must be read carefully.|
+| 📚 | Relevant explanations regarding the testing section|
+| ️️🛤️ ️ | Related paths.|
+| <font style="color:blue;">Blue font on gray background</font> | Refers to the command entered on the command line, which needs to be entered manually.|
 | Black font on a gray background| Serial output information after command input|
 | **Black Bold font on a gray background**| Key information in the serial output:|
 | //| Explanation of input commands or output information:|
@@ -53,8 +53,8 @@ mlan                  585728  1 moal
 
 + root@ok3572-buildroot: Indicates the username is root and the hostname is ok3572-buildroot, meaning the operation is performed on the development board using the root account;
 + //: Denotes explanatory notes about commands or printed information; no input required;
-+ lsmod: Displayed with gray background and blue text, indicating commands that need to be manually entered;
-+ moal 876544 0: Text with gray background and black font represents the output after entering the command. Bolded text indicates key information, showing in this case that the module driver has been loaded.
++ <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">lsmod</font></font>: Displayed with gray background and blue text, indicating commands that need to be manually entered;
++ **moal 876544 0:** Text with gray background and black font represents the output after entering the command. Bolded text indicates key information, showing in this case that the module driver has been loaded.
 
 ## Application Scope
 
@@ -180,7 +180,7 @@ To install the driver, please use the driver package CP210x\_Windows\_Drivers.zi
 
 + **Settings: Baud rate 1500000, 8 data bits, 1 stop bit, no parity/flow;**
 
-+ **Hardware Requirements: **
++ **Hardware Requirements:** 
 
   **Type-C for connecting PC and development board;**
 
@@ -671,11 +671,13 @@ root@ok3572-buildroot:/# fltest_watchdog -e
 
 ### 3.8 WiFi Test
 
-**Note: Due to varying network environments, please configure according to your actual situation when conducting this experiment.**
+**Note: **
 
-The OK3572 platform supports the AW-CM358 Wi-Fi and Bluetooth combo module.
+- **Due to varying network environments, please configure according to your actual situation when conducting this experiment.**
 
-**Note: The device can only operate in one mode (STA mode or AP mode) at any one time; it does not support simultaneous operation in both STA and AP modes.**
+- **The OK3572 platform supports the AW-CM358 Wi-Fi and Bluetooth combo module;**
+
+- **The device can only operate in one mode (STA mode or AP mode) at any one time; it does not support simultaneous operation in both STA and AP modes.**
 
 #### 3.8.1 STA Modes
 
@@ -1222,7 +1224,7 @@ If you do not plug in headphones, the sound will be played through the speaker s
 
 The OK3572 supports a 4G module. Connect the 4G module and insert the SIM card before powering on the development board.
 
-**Note: **
+**Note:** 
 
 - **Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing;**
 
@@ -1303,13 +1305,17 @@ rtt min/avg/max/mdev = 68.659/74.924/78.241/4.432 ms
 
 The default 5G module model supported is the Quectel RM500U.
 
-**Note: **
+**Note:** 
 
 - **Ensure the correct insertion direction for the SIM card, as there are printed markings on the carrier board. Also, connect the antenna and use a micro SIM card for testing;**
 
 + **Use S2 on the carrier baord to switch to 5G.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106162023190.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512299311-090a00d5-86ef-4f48-bcc2-315175bc97f5.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512299403-c434cb47-9444-40c1-9404-adcc5ff8292d.png)
+![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106162023190.png)
+
+![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512299311-090a00d5-86ef-4f48-bcc2-315175bc97f5.png)
+
+![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512299403-c434cb47-9444-40c1-9404-adcc5ff8292d.png)
 
 1\. After connecting the module and powering on the development board and module, you can check the USB status using the lsusb command.
 
