@@ -571,7 +571,7 @@ Loop 1:
 
 ### 3.5 Key Test
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106161121829.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106161121829.png)
 
 Use the fltest\_keytest command-line tool to test the keys. Currently, fltest\_keytest supports testing the four keys on the base plate: VOL+, VOL-, MENU and ESC, with key codes 115, 114, 139 and 158 respectively.
 
@@ -609,7 +609,7 @@ The UART supports a maximum baud rate of 8M; actual testing showed 4M. It suppor
 
 The UART9 and UART11 RS485 are used for the test. Before the test, the pins A and B of the two RS485 interfaces shall be connected, with A connected to A and B connected to B. The carrier board interfaces for the two RS485 are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-1783583730899.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-1783583730899.png)
 
 Configure UART9 for reading and UART11 for writing data:
 
@@ -1187,7 +1187,7 @@ Once the configuration is complete, you can manually modify the network interfac
 
 The OK3572 features a NAU88C22YG chip, one standard 3.5mm audio socket and one white PH2.0-4P socket (pin 34), capable of driving an 8Ω speaker, with a maximum output power of 1W. Before conducting playback tests, please plug your headphones into the headphone jack or connect a speaker to the corresponding socket on the base plate for testing. Use the following command to perform the test:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106161632530.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106161632530.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1230,7 +1230,7 @@ The OK3572 supports a 4G module. Connect the 4G module and insert the SIM card b
 
 - **Use S2 on the carrier baord to switch to 4G.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106161655958.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106161655959.png)![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106162007999.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106161655958.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106161655959.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106162007999.png)
 
 1\. After connecting the module and powering on the development board and module, you can check the USB status using the lsusb command.
 
@@ -1311,7 +1311,7 @@ The default 5G module model supported is the Quectel RM500U.
 
 + **Use S2 on the carrier baord to switch to 5G.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106162023190.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106162023190.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/1781512299311_090a00d5_86ef_4f48_bcc2_315175bc97f5.png)
 
@@ -1466,7 +1466,7 @@ rtt min/avg/max/mdev = 61.061/85.913/119.619/24.712 ms
 
 Short-circuit CAN0 and CAN1, as shown in the diagram:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-1783583730897.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-1783583730897.png)
 
 Execute the following command in the terminal on the development board:
 
@@ -1595,7 +1595,7 @@ The OK3572 features one Type-C port, with automatic detection of TYPE-C HOST/DEV
 
 Device mode:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image.png)
 
 Host mode:
 
@@ -1740,7 +1740,7 @@ sqlite> .quit
 
 The OK3572 development board features eight internal ADC channels; the saradc4, saradc5 and saradc7 channels are available on port P18. These can be tested by connecting them to pin 4 of the adjacent adjustable resistor using DuPont wires. The hardware diagram for the ADC pins is shown below. The current chip uses a 1.8V reference voltage, corresponding to the 12-bit ADC’s maximum value of 4096. Select saradc4 for testing, and use a DuPont wire to connect pins 1 and 4 of port P18.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image-20251106174325530.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image-20251106174325530.png)
 
 Testing the value of an adjustable resistor
 
@@ -1754,7 +1754,7 @@ root@ok3572-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 
 The extended I/O pins are led out from the carrier board, located on P17.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/image_20260520184416.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Manual/image_20260520184416.png)
 
 Taking the GPIO\_P17 pin as an example for testing:
 
