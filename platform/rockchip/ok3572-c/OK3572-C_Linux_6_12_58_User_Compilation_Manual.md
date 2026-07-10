@@ -119,7 +119,7 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512262705-ab537e45-63b1-4551-9583-5cbb059c167e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512262705_ab537e45_63b1_4551_9583_5cbb059c167e.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory: After extraction, you will obtain the development environment folder 35XX.
 
@@ -131,7 +131,7 @@ Open the installed virtual machine software.
 
 Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine file is located, and double-click the startup file to open it
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512263178-137cfa8f-f0e7-402d-87b0-6df824638cd7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512263178_137cfa8f_f0e7_402d_87b0_6df824638cd7.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -139,7 +139,7 @@ Once it has finished loading, click to start the virtual machine, and you will b
 
 Development Environment Account: forlinx; password: forlinx
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512263469-14d32479-0808-41b4-ad17-78f17711d279.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512263469_14d32479_0808_41b4_ad17_78f17711d279.png)
 
 ## 3\. Setting Up a New Ubuntu Development Environment
 
@@ -163,7 +163,7 @@ Select the compatibility with the corresponding version of VMware, which can be 
 
 Select Install the operating system later and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512265731-9fe1675d-4eb8-4b8d-820a-c130ad73eb58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512265731_9fe1675d_4eb8_4b8d_820a_c130ad73eb58.png)
 
 Keep the default settings and click ''Next.''
 
@@ -233,40 +233,40 @@ After configuring the image, ensure that the network is working, and then start 
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512266328-d690cbe0-2ea1-4feb-a313-26c85709d46b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512266328_d690cbe0_2ea1_4feb_a313_26c85709d46b.png)
 
 Select the language on the left side and click "Install Ubuntu." A language selection screen will pop up.  
 By default, Ubuntu's language is English, but you can also select Chinese. The selected language can be changed later during the installation. Once you've selected the language, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click Continue again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Click Install Now by default, and a prompt will appear. Click Continue to proceed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue. Finally, set up your username and password. Click Continue, and the installation will begin automatically.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512266486-52626a1c-3325-43cc-bbe6-8d001d7bdee9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512266486_52626a1c_3325_43cc_bbe6_8d001d7bdee9.png)
 
 The installation process is shown in the figure below. If the network is not good, you can skip it without affecting the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512266556-6c43c4b8-db50-409e-bb84-35e4a5cf53eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512266556_6c43c4b8_db50_409e_bb84_35e4a5cf53eb.png)
 
 After installation is complete, the screen will look like the image below. Click “Restart Now” to reboot (or click “Restart Guest”).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512266723-5722a4f0-1db0-4cc8-ae8a-5f808d4a1d21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512266723_5722a4f0_1db0_4cc8_ae8a_5f808d4a1d21.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278538153-32d91128-59b7-4c50-9745-84b3186f5a51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 After restarting and logging in, the system interface is as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512266942-4afcee48-98f1-4ef1-97f1-dd01a602eace.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1781512266942_4afcee48_98f1_4ef1_97f1_dd01a602eace.png)
 
 #### 3.1.3 Basic Configuration of Ubuntu
 
