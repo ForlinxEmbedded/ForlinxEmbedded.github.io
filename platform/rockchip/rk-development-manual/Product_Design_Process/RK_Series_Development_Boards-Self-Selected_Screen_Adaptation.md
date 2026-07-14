@@ -27,11 +27,11 @@ VOP 1.0 and VOP 2.0. VOP.
 
 ### VOP 1.0
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760666471129-bf3cc013-dc41-4bae-8dab-ea3ff698ec31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760666471129_bf3cc013_dc41_4bae_8dab_ea3ff698ec31.png)
 
 ### VOP 2.0
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760666487387-b785110d-5c82-4149-a5e7-428cdbe9f53c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760666487387_b785110d_5c82_4149_a5e7_428cdbe9f53c.png)
 
 The key difference between the two VOP generations lies in whether the display panel is managed by VOP or by VP.   
 The adaptation for self-selected screen only requires changes to the display parameters at the outermost layer of the display subsystem (DSS), particularly in the panel section.
@@ -44,7 +44,7 @@ User documentation source code /docs/cn/Common/DISPLAY/Rockchip\_DRM\_Panel\_Por
 
 ### Display Parameters
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760667560817-0dfa2283-f345-4277-ad4d-cc6b641a398c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760667560817_0dfa2283_f345_4277_ad4d_cc6b641a398c.png)
 
 ### Display Parameter Acquisition and Modification
 
@@ -64,29 +64,29 @@ Below describes the locations for entering parameters for different interfaces a
 
 ### RGB Interface
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760667420431-5fbb9910-60c9-4db3-ad14-72e49066979b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760667420431_5fbb9910_60c9_4db3_ad14_72e49066979b.png)
 
 #### RGB Signal Format Switching:
 
 The file drivers/gpu/drm/rockchip/rockchip\_drm\_vop2.c defines the following optional RGB signal formats: RGB565, RGB666 and RGB888.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668122283-afe158f4-1af4-4170-a812-ef5656e1f9b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668122283_afe158f4_1af4_4170_a812_ef5656e1f9b5.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668125785-737cef29-a4fa-4049-a6fc-aa6b9b66f3e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668125785_737cef29_a4fa_4049_a6fc_aa6b9b66f3e0.png)
 
 ### RGB Pin Connection Mapping
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1762563956496-98512ec7-2861-426c-8424-f57bf0390566.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762563956496_98512ec7_2861_426c_8424_f57bf0390566.png)
 
 ### LVDS Interface
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668179266-25d120d2-e990-4468-bc2c-c5e93d7a304a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668179266_25d120d2_e990_4468_bc2c_c5e93d7a304a.png)
 
 ### LVDS Signal Format Switching:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668235626-26b07741-a7a8-447b-94eb-f7e2b0718051.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668235626_26b07741_a7a8_447b_94eb_f7e2b0718051.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668239702-943cde95-df15-48c6-937e-d93d7844d743.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668239702_943cde95_df15_48c6_937e_d93d7844d743.png)
 
 The property 1X7X3 indicates three pairs of data lanes, typically referred to as Single-Six/Dual-Six signal format screens.
 
@@ -94,7 +94,7 @@ The property 1X7X4 indicates four pairs of data lanes, typically referred to as 
 
 ### LVDS Single/Dual Channel Switching:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668510093-21c4a27d-1164-4714-82a2-de32d6278ab3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668510093_21c4a27d_1164_4714_82a2_de32d6278ab3.png)
 
 Configure the output channel mode under the Video Output Controller (DSS connector-level node — refer to display subsystem diagrams for questions).
 
@@ -102,17 +102,17 @@ Default is single channel; add `dual-channel;` to switch to dual channel.
 
 ### MIPI Interface
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668687578-db7637cf-1520-4fb9-afd8-8f8683f164b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668687578_db7637cf_1520_4fb9_afd8_8f8683f164b1.png)
 
 ### MIPI Initialization Sequence Acquisition:
 
 Screen manufacturers generally provide an initialization sequence for MIPI screens, similar to the example below.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760668981866-4fc49c08-5f13-43a8-85cd-f2dd8643a9ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760668981866_4fc49c08_5f13_43a8_85cd_f2dd8643a9ce.png)
 
 Please convert this sequence into the format reserved in Rockchip’s display subsystem.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760669245934-18846b76-5dba-4a6a-a327-2f4ef49a0737.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760669245934_18846b76_5dba_4a6a_a327_2f4ef49a0737.png)
 
 ### Initialization Sequence Conversion Rules:
 
@@ -140,7 +140,7 @@ Command types include the following three:
 
 Use VSCode or Notepad++ to achieve the formatting effect shown in the diagram, using the shortcut `shift+alt+mouse click`
 
-#### ![](https://cdn.nlark.com/yuque/0/2025/gif/45387297/1760670229643-92806468-937e-4e65-abd1-ec487828d373.gif)
+#### ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760670229643_92806468_937e_4e65_abd1_ec487828d373.gif)
 
 ### MIPI Single/Dual Channel Switching:
 
@@ -165,7 +165,7 @@ Use the display-timings structure, writing the timing directly into the DTS file
 
 After successfully setting a fixed resolution via the device tree, the following print will appear during the U-Boot boot phase: `using display timing dts`
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1760672621457-1bb9a20f-589a-4032-9697-7e5843c0fb19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1760672621457_1bb9a20f_589a_4032_9697_7e5843c0fb19.png)
 
 ### Display Issue Debugging Methods:
 
@@ -180,9 +180,9 @@ USB touch devices are generally plug-and-play, requiring no driver installation.
 
 I2C touch follows the standard Linux I2C chip adaptation process:   
 A. Add a description of the I2C chip to the device tree.   
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1762585780199-e0c82297-6240-4b9a-93ad-6c2ca95a7837.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762585780199_e0c82297_6240_4b9a_93ad_6c2ca95a7837.png)  
 B. Add the corresponding driver to the kernel and compile it into the kernel.  
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1762585860921-2d76aa96-9d16-49db-9a01-98407ad8a603.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762585860921_2d76aa96_9d16_49db_9a01_98407ad8a603.png)
 
 Capacitive touch does not require calibration; touch orientation is specified via driver configuration.
 
