@@ -1238,7 +1238,7 @@ Bus 002 Device 002: ID 04b4:6500
 Bus 001 Device 001: ID 1d6b:0002 Linux 6.12.58-g33eaeba6eab7 xhci-hcd xHCI Host Controller
 Bus 001 Device 002: ID 04b4:6502
 Bus 002 Device 001: ID 1d6b:0003 Linux 6.12.58-g33eaeba6eab7 xhci-hcd xHCI Host Controller
-Bus 001 Device 003: ID 2c7c:0125 Quectel EM05-CN                 //EM05的VID和PID
+Bus 001 Device 003: ID 2c7c:0125 Quectel EM05-CN                 //EM05 VID and PID
 ```
 
 Check the device node status under /dev.
