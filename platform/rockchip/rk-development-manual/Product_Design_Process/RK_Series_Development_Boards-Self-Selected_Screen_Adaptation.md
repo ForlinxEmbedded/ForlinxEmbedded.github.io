@@ -155,7 +155,7 @@ HDMI \& eDP typically auto-detect EDID, requiring no manual modification of disp
 Of course, there are also methods for setting a fixed resolution   
 Reference links for setting a fixed HDMI resolution:
 
-[OK3568 4.19.206 Buildroot HDMI Resolution](https://forlinx-book.yuque.com/rh74yu/rkword/gv7ion3ukip11bwg)
+[OK3568 4.19.206 Buildroot Fixed HDMI Resolution — Forlinx Embedded RK Development Manual documentation](https://docs.forlinx.net/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_HDMI_Resolution.html)
 
 eDP Fixed Resolution Method Reference:
 
