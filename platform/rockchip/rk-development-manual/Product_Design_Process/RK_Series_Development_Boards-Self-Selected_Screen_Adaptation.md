@@ -12,7 +12,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 This article describes the methods and principles for screen adaptation using various interfaces of Forlinx’s RK series products. By referring to it, you can gain insights into considerations and reference methods for adapting self-selected screens.
 
-Revision History
+## Revision History
 
 | **Date**| **Version**| **Revision History**|
 |----------|----------|----------|
@@ -51,9 +51,9 @@ User documentation source code /docs/cn/Common/DISPLAY/Rockchip\_DRM\_Panel\_Por
 | Common Description| Device Tree Property| Meaning/Source|
 |----------|----------|----------|
 | Synchronization Signals| hsync / vsync| Display parameters / Panel manual|
-| 后肩| hback / vback| Display parameters / Panel manual|
+| Hback | hback / vback| Display parameters / Panel manual|
 | Resolution| hactive / vactive| Display parameters / Panel manual|
-| 前肩| hfront / vfront| Display parameters / Panel manual|
+| Hfront | hfront / vfront| Display parameters / Panel manual|
 | Signal| bus-format| Display parameters / Panel manual|
 | Initialisation Sequence| panel-init-sequence| Required only for MIPI screens / to be provided by the screen manufacturer|
 | Clock| clock-frequency| Pixel Clock (PCLK) / Display Panel Manual|
@@ -196,7 +196,7 @@ Only resistive touch requires calibration.
 
 ### Q: MIPI screen shows no backlight at all.
 
-1. Confirm if the initialization sequence is being sent correctly. You can communicate with the screen vendor to obtain a gamma test sequence. The screen should display as long as the test sequence is sent.
+1. Confirm if the initialization sequence is being sent correctly. You can communicate with the screen vendor to obtain a gamma test sequence. The screen should display as long as the test sequence is sent;
 2. Confirm the MIPI signal pin order is correct. The MIPI initialization sequence is only sent via the DSI0 differential pair. If connected incorrectly, the initialization sequence cannot be sent.
 
 ### Q: MIPI screen displays the logo and then the image disappears.
