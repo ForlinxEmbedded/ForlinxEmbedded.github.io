@@ -98,7 +98,7 @@ The property 1X7X4 indicates four pairs of data lanes, typically referred to as 
 
 Configure the output channel mode under the Video Output Controller (DSS connector-level node — refer to display subsystem diagrams for questions).
 
-Default is single channel; add `dual-channel;` to switch to dual channel.
+Default is single channel; add `dual-channel`; to switch to dual channel.
 
 ### MIPI Interface
 
@@ -146,7 +146,7 @@ Use VSCode or Notepad++ to achieve the formatting effect shown in the diagram, u
 
 Modify the rockchip, lane-rate property value in the device tree. A value greater than 4 represents the MIPI signal mode/lanes. Change it directly to match the screen’s required number of lanes.
 
-**PS: During actual screen debugging, the provided screen documentation may not be entirely accurate. For example, when the screen displays abnormally (color distortion, misalignment), the normal approach is to adjust the pixel format and fine-tune the clock. Consider an alternative perspective: during initial debugging, if the screen’s clock frequency is uncertain or its range is unknown, but the display is basically functional, then the clock setting is likely approximately correct. If abnormal screen display persists and the normal adjustment approach yields insignificant results, try adjusting the screen’s frame rate: e.g., from 60fps to 30fps, or other values. The main idea is to make a broad adjustment to the clock frequency.**
+**Note: During the actual screen adjustment process, the provided screen specifications may not be entirely accurate. For example, when the display appears abnormal (such as color distortion or misalignment), the normal approach is to adjust the pixel format and fine-tune the clock. However, an alternative way of thinking can be considered: In the initial screen adjustment stage, the exact screen clock frequency or its valid range might be uncertain. If the screen displays basically normal, the clock frequency is likely to be roughly correct. Conversely, if the screen displays abnormally and the normal adjustment approach yields limited improvement, adjusting the screen’s frame rate may be helpful—for instance, reducing it from 60fps to 30fps, or other values. The core idea is to adjust the clock frequency over a broader range in order to troubleshoot.**
 
 ### HDMI \& eDP Interface:
 
@@ -169,40 +169,46 @@ After successfully setting a fixed resolution via the device tree, the following
 
 ### Display Issue Debugging Methods:
 
-1. `cat /sys/kernel/debug/dri/0/summary` Check the VP status to see if it is outputting.
+1. `cat /sys/kernel/debug/dri/0/summary` Check the VP status to see if it is outputting;
 2. Under the`/sys/class/drm/`, force output the controller status, or view the connection status and resolution information recognized by the controller.
 
 ### Touch Adaptation
 
-Touch-related devices are distinguished by their interface and type. USB Touch / I2C Touch: Different interfaces correspond to different touch controller chips. Resistive Touch / Capacitive Touch: Different types offer varying precision and sensitivity.
+**Touch devices are differentiated by interface and type.**  
 
-USB touch devices are generally plug-and-play, requiring no driver installation.
+USB touch / I2C touch — different interfaces are configured with different touch chips.  
+Resistive touch / capacitive touch — different types have distinct accuracy and sensitivity characteristics.  
+
+USB touch devices are generally plug-and-play (driver-free).
 
 I2C touch follows the standard Linux I2C chip adaptation process:   
 A. Add a description of the I2C chip to the device tree.   
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762585780199_e0c82297_6240_4b9a_93ad_6c2ca95a7837.png)  
-B. Add the corresponding driver to the kernel and compile it into the kernel.  
+
+B. Add the corresponding driver to the kernel and compile it into the kernel. 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762585860921_2d76aa96_9d16_49db_9a01_98407ad8a603.png)
 
-Capacitive touch does not require calibration; touch orientation is specified via driver configuration.
+Capacitive touchscreens do not require touch calibration; their touch orientation is set through driver configuration.
 
-Resistive touch requires calibration; touch orientation is configured through the calibration process.
+Resistive touchscreens require touch calibration; their touch orientation is configured via the calibration process.
 
 ### Touch Calibration
 
-Only resistive touch requires calibration.
+Only resistive touchscreens require touch calibration.
+
+[Calibration Method for USB Resistive Touchscreens](https://forlinx-book.yuque.com/rh74yu/rkword/pgviackpg2d0g36f)
 
 ## Potential Issues:
 
 ### Q: MIPI screen shows no backlight at all.
 
-1. Confirm if the initialization sequence is being sent correctly. You can communicate with the screen vendor to obtain a gamma test sequence. The screen should display as long as the test sequence is sent;
-2. Confirm the MIPI signal pin order is correct. The MIPI initialization sequence is only sent via the DSI0 differential pair. If connected incorrectly, the initialization sequence cannot be sent.
+1. **Confirm that the initialization sequence is sent correctly.** You can communicate with the screen manufacturer to obtain a gamma test sequence. The screen will display as long as this test sequence is successfully sent;
+2. **Confirm the pin order of the MIPI signal lines is correct.** The MIPI initialization sequence is sent only through the DSI0 differential pair. If connected incorrectly, the initialization sequence cannot be sent.
 
 ### Q: MIPI screen displays the logo and then the image disappears.
 
-1. Confirm if the MIPI screen’s reset pin level changes during startup. Issues have been encountered where, due to pin definition conflicts, after the system sends the initialization sequence during boot, the screen’s reset pin is pulled low, causing the screen to reset and requiring re-sending of the sequence. However, since the system has already booted, this leads to only the logo being displayed, with no subsequent system display;
-2. Confirm the screen parameters. Feedback has been received that incorrect screen parameters can cause the image to slowly disappear.
+1. **Confirm whether the reset pin of the MIPI screen changes level during the boot process.** Issues have been encountered where, due to pin definition conflicts, the screen’s reset pin is pulled low after the system starts and sends the initialization sequence, causing the screen to reset and requiring the sequence to be resent. However, because the system has already booted, this results in only the logo being displayed, with the subsequent system interface failing to appear;
+2. **Confirm the screen parameters (timings).** Feedback has been received indicating that incorrect screen parameters can lead to phenomena such as the image slowly fading away..
 
 ### Q: eDP displays intermittently (probability issue).
 
