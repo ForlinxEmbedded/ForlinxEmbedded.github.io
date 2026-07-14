@@ -12,11 +12,11 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 Enter the ls/sys/class/DRM command to view the display device 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45447432/1752153189356-eb3d5c1f-0996-413f-ab2c-dff28c72dee2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_HDMI_Resolution/1752153189356_eb3d5c1f_0996_413f_ab2c_dff28c72dee2.png)
 
 View supported resolution.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45447432/1752153209700-b7415ae3-a77e-4d53-9ab7-3cbb6af182a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3568/OK3568_4_19_206_Buildroot_Fixed_HDMI_Resolution/1752153209700_b7415ae3_a77e_4d53_9ab7_3cbb6af182a7.png)
 
 Modify /etc/xdg/weston/weston.ini.
 
