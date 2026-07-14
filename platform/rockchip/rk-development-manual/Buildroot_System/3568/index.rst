@@ -68,6 +68,7 @@
    OK3568_4_19_206_Buildroot_Rapid_Deployment_of_CODESYS_Runtime
    OK3568_4_19_232_LinuxRT_Buildroot_Porting_for_EtherCAT
    OK3568_5_10_160_Buildroot_New_Partition_Addition
+   OK3568_4_19_206_Buildroot_Fixed_HDMI_Resolution
 
 
 
