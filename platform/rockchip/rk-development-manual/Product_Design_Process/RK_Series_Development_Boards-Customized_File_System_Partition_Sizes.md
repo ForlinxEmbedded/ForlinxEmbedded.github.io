@@ -55,7 +55,7 @@ The partition size in the partition table is in hexadecimal format, while the pa
 
 ## **2\. Modification of the Partition Table**
 
- Note: Write “:grow” in the parentheses of the last partition!
+ **Note: Write “:grow” in the parentheses of the last partition!**
 
 ### 2.1 Fix the size of the userdata partition and allocate all the remaining space to the root partition
 
