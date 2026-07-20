@@ -24,7 +24,7 @@ vi /etc/xdg/weston/weston.ini
 
 Delete the **<font style="color:#DF2A3F;"># symbols and spaces </font>** from these two entries in the image below, carry out the standard configuration, and then restart.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45471259/1730533444293-2e3b0c1d-471b-4bdc-b1e6-ddfaf1587fb1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/TP/USB_Resistive_Touch_Calibration_Method/1730533444293_2e3b0c1d_471b_4bdc_b1e6_ddfaf1587fb1.png)
 
 2. After restarting, use the command below to launch the calibration programme and calibrate the four points; the touch position will then return to normal without the need for any further configuration.
 
@@ -71,7 +71,7 @@ Option "CalibrationMatrix" "0 1 0 -1 0 1 0 0 1
 
 It can be modified according to the following form as required:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45471259/1730970597953-fb35bb29-0fa7-4a89-a126-a8dc5ca6af7e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/TP/USB_Resistive_Touch_Calibration_Method/1730970597953_fb35bb29_0fa7_4a89_a126_a8dc5ca6af7e.png)
 
 
 
