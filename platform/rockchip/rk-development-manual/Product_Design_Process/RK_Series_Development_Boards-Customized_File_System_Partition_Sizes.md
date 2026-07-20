@@ -83,7 +83,7 @@ Here, taking the example of adding a test partition in 3562. By default, the tes
 
 ```plain
 [……]
-// 添加test分区： 0x00100000@0x00cba000(test)，修改userdata分区： -@0x00dba000(userdata:grow)
+// Add test partition: 0x00100000@0x00cba000(test), modify userdata partition: -@0x00dba000(userdata:grow)
 CMDLINE: mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x00008000(boot),0x00040000@0x00028000(recovery),0x00010000@0x00068000(backup),0x00c00000@0x00078000(rootfs),0x00040000@0x00c78000(oem),0x00002000@0x00cb8000(amp),0x00100000@0x00cba000(test),-@0x00dba000(userdata:grow)
 [……]
 ```
