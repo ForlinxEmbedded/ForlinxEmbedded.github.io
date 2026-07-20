@@ -186,6 +186,7 @@ A. Add a description of the I2C chip to the device tree.
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762585780199_e0c82297_6240_4b9a_93ad_6c2ca95a7837.png)  
 
 B. Add the corresponding driver to the kernel and compile it into the kernel. 
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Product_Design_Process/RK_Series_Development_Boards-Self-Selected_Screen_Adaptation/1762585860921_2d76aa96_9d16_49db_9a01_98407ad8a603.png)
 
 Capacitive touchscreens do not require touch calibration; their touch orientation is set through driver configuration.
