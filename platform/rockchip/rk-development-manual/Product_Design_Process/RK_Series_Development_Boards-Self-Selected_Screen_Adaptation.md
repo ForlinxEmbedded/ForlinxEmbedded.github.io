@@ -196,7 +196,7 @@ Resistive touchscreens require touch calibration; their touch orientation is con
 
 Only resistive touchscreens require touch calibration.
 
-[Calibration Method for USB Resistive Touchscreens](https://forlinx-book.yuque.com/rh74yu/rkword/pgviackpg2d0g36f)
+[USB Resistive Touch Calibration Method — Forlinx Embedded RK Development Manual documentation](https://docs.forlinx.net/rockchip/rk-development-manual/Interfaces/BSP/TP/USB_Resistive_Touch_Calibration_Method.html)
 
 ## Potential Issues:
 
