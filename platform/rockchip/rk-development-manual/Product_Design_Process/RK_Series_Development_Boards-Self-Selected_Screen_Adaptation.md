@@ -213,4 +213,4 @@ Only resistive touchscreens require touch calibration.
 
 ### Q: eDP displays intermittently (probability issue).
 
-[OK3568 5.10.160 Uboot eDP Repeated Training (eDP may not display intermittently) — Forlinx Embedded RK Development Manual documentation](https://docs.forlinx.net/rockchip/rk-development-manual/Interfaces/Uboot/OK3568_5_10_160_Uboot_eD_ Repeated_Training.html)
+[OK3568 5.10.160 Uboot eDP Repeated Training — Forlinx Embedded RK Development Manual documentation](https://docs.forlinx.net/rockchip/rk-development-manual/Interfaces/Uboot/OK3568_5_10_160_Uboot_eD_Repeated_Training.html)
