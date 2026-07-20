@@ -1,6 +1,9 @@
+# OK3588 5.10.66 Buildroot Fixed HDMI Resolution
+
 <font style="color:red;"> Note: All modifications are made in the file/OK3588-linux-source/kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi-qp.c</font>
 
 ## 1. Choose HDMI as the screen in U-Boot;
+
 ## 2. Modify DW-HDMI. C films;
 Add <font style="color:red;">edid = NULL;</font>
 
