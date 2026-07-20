@@ -21,7 +21,7 @@ When certain screen hardware parameters are at critical thresholds, intermittent
 Since these screens are still capable of successful Training, implementing repeated Training operations via software until success can temporarily resolve this intermittent issue. However, the underlying cause remains the signal quality being at a critical level; therefore, it is recommended to replace the screen with another model. Moreover, if the hardware screen’s signal quality further degrades to the point where Training cannot succeed, the issue may reoccur. As such, this method is provided for reference only.
 
 The relevant log information for the issue is as follows:  
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1741664249890-00d64160-2e17-41e6-a837-f474555ff6b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/Uboot/OK3568_5_10_160_Uboot_eD_ Repeated_Training/1741664249890_00d64160_2e17_41e6_a837_f474555ff6b5.png)
 
 ## 2. Solution
 
@@ -72,7 +72,7 @@ index 70cd620f..6b9dc0be 100644
 
 After applying the modification, the log output is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45387297/1741664298391-ee7cd0ec-2d4f-4f2f-8547-8c44bd3e7827.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/Uboot/OK3568_5_10_160_Uboot_eD_ Repeated_Training/1741664298391_ee7cd0ec_2d4f_4f2f_8547_8c44bd3e7827.png)
 
 [Corresponding display now functions normally.]
 
