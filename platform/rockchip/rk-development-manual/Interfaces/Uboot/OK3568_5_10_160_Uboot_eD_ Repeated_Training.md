@@ -54,7 +54,7 @@ index 70cd620f..6b9dc0be 100644
  			break;
  		case CLOCK_RECOVERY:
 -			retval = analogix_dp_process_clock_recovery(dp);
-+			for (num = 0;num < 5;num ++){  //重复5次，num视硬件情况可适当修改
++			for (num = 0;num < 5;num ++){  //Repeat for 5 times. Num can be modified appropriately according to the hardware conditions.
 +				retval = analogix_dp_process_clock_recovery(dp);
 +				dev_err(dp->dev, "LT link failed num=%d!\n",num);
 +				if (!retval)
