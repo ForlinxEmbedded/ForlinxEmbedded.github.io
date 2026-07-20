@@ -1,4 +1,4 @@
-# OK3568 5.10.160 Uboot eDP Repeated Training (eDP may not display intermittently)
+# OK3568 5.10.160 Uboot eDP Repeated Training 
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open   
 
