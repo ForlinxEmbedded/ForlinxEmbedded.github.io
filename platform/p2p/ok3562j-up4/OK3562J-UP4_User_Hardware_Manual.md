@@ -462,8 +462,8 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 **Note:**
 
-- **The bus pull-up resistors have already been configured on the SoM, and it can’t be configured on the carrier board;  **
-- **The TF card is a hot-swappable device. Please implement ESD protection;  **
+- **The bus pull-up resistors have already been configured on the SoM, and it can’t be configured on the carrier board;**  
+- **The TF card is a hot-swappable device. Please implement ESD protection;**  
 - **The SD signals should be equalized.**
 
 #### 3.5.7 USB Download
