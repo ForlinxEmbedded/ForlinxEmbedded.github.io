@@ -52,23 +52,23 @@ RK3562J features a high-performance memory interface (LPDDR4/LPDDR4X), capable o
 
 **RK3562 Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213050057-8831d991-3f4e-4b48-ab8c-ff1d3f28e611.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213050057_8831d991_3f4e_4b48_ab8c_ff1d3f28e611.png)
 
 ## 2\. FET3562J-UP4 SoM Description
 
 ### 2.1 FET3562J-UP4 Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213051584-1b5bc691-2900-4deb-9506-0bf17877d345.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213051584_1b5bc691_2900_4deb_9506_0bf17877d345.png)
 
 Front
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213051790-41793c86-3b1f-4e9f-b233-c3882cb2fe55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213051790_41793c86_3b1f_4e9f_b233_c3882cb2fe55.png)
 
 Back
 
 ### 2.2 FET3562J-UP4 SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213051954-8774440f-869e-4c32-b4d3-c98ed7ff153c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213051954_8774440f_869e_4c32_b4d3_c98ed7ff153c.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -169,11 +169,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 FET3562J-UP4 SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213052073-3acb2c34-767d-449c-b098-cd99e56d9602.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213052073_3acb2c34_767d_449c_b098_cd99e56d9602.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213052222-a40d1c2c-ab68-428e-bb49-5bb37f69289e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213052222_a40d1c2c_ab68_428e_bb49_5bb37f69289e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1773213052344-8a0795b1-a03c-4d02-8c7e-1eb4e6875f63.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213052344_8a0795b1_a03c_4d02_8c7e_1eb4e6875f63.png)
 
 #### 2.5.2 FET3562J-UP4 SoM Pin Function Description
 
@@ -331,13 +331,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 Connection method: Stamp hole + LGA.   
 The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213054594-2161b33e-8d96-48b9-86de-69e929720368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213054594_2161b33e_8d96_48b9_86de_69e929720368.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213054869-5c84eb00-5b80-40e6-982a-62f3f9144ac4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213054869_5c84eb00_5b80_40e6_982a_62f3f9144ac4.png)
 
 ### 3.2 OK3562J-UP4 Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055013-7dd0e76a-7d0a-45ef-881d-9ecf6212c0b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055013_7dd0e76a_7d0a_45ef_881d_9ecf6212c0b8.png)
 
 PCB: 130mm×190mm
 
@@ -349,7 +349,7 @@ Power Voltage: DC 12V
 
 The OK3562J-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 38mm × 38mm × 10mm. See below for details.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055089-bac201d7-c499-4a9f-ab40-93fcc6665d18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055089_bac201d7_c499_4a9f_ab40_93fcc6665d18.png)
 
 ### 3.3 Naming Rules
 
@@ -412,7 +412,7 @@ As shown, the power supply for the development board is 12V DC （from P28). VDD
 
 EXTP\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055154-644bff9a-97f7-4c1c-bde3-54e5b9e34be9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055154_644bff9a_97f7_4c1c_bde3_54e5b9e34be9.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -426,13 +426,13 @@ K6 on the carrier board is for waking up. After the board enters sleep mode pres
 
 The FET3562J-UP4 SoM does not have the WAKEUP feature.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055236-a6f99942-e48a-441c-b3a8-9728d18c4c98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055236_a6f99942_e48a_441c_b3a8_9728d18c4c98.png)
 
 #### 3.5.3 LRADC Button
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470690083-7dcb1a4d-d280-4767-91cb-fc738eebb5c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470690083_7dcb1a4d_d280_4767_91cb_fc738eebb5c2.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -440,9 +440,9 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 Only the DEBUG\_A debug serial port is led out from the FET3562J-UP4 SoM.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470712663-d242e396-07f7-4f65-9587-d3812998fdcc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470712663_d242e396_07f7_4f65_9587_d3812998fdcc.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470732066-f94a6ae3-cb80-470a-ba3b-27726bada3c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470732066_f94a6ae3_cb80_470a_ba3b_27726bada3c6.png)
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
@@ -450,15 +450,15 @@ Only the DEBUG\_A debug serial port is led out from the FET3562J-UP4 SoM.
 
 An RTC device is connected to the carrier board via the I2C\_A bus. It enables a compatible power supply from either VCC\_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470755136-1f657d5b-c49d-4eba-a1e2-f54498e76637.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470755136_1f657d5b_c49d_4eba_a1e2_f54498e76637.png)
 
 #### 3.5.6 TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card is supplied by the VCC\_3V3\_SD output from the SoM.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470777630-ab7cebba-b16e-4e42-a449-5316c5cf864b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470777630_ab7cebba_b16e_4e42_a449_5316c5cf864b.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470824905-b74660c2-2e86-4b92-ae46-b6537dff68c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470824905_b74660c2_2e86_4b92_ae46_b6537dff68c0.png)
 
 **Note:**
 
@@ -470,13 +470,13 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilizes the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470864690-f281cdfb-2e50-4f91-99cb-ad7fd6c1a4d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470864690_f281cdfb_2e50_4f91_99cb_ad7fd6c1a4d4.png)
 
 #### 3.5.8 MIPI\_DSI
 
 The P11 on the development board is MIPI\_DSI port, supporting 4 Lane MIPI\_DSI.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470887348-2637fcf3-8fe7-4361-996a-0af1184eec1e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470887348_2637fcf3_8fe7_4361_996a_0af1184eec1e.png)
 
 #### 3.5.9 MIPI\_CSI
 
@@ -486,27 +486,27 @@ P7 and P8 supports 2lane MIPI-CSI connections.
 
 The P6 port supports 4lane MIPI-CSI connection and multiplexes a signal line with the P9 port. The P9 port is used to connect up to four analogue camera modules. It is not possible to use the P6 and P9 ports for both functions simultaneously.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055316-a26c7830-4e72-47bd-91ff-ca7e4c46f006.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055316_a26c7830_4e72_47bd_91ff_ca7e4c46f006.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773471375913-93d9edba-db06-451d-a291-cace295f0488.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773471375913_93d9edba_db06_451d_a291_cace295f0488.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055389-71a35fde-c1c3-4bce-a263-2152415b83b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055389_71a35fde_c1c3_4bce_a263_2152415b83b8.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055459-f53714f0-a7f5-4448-bbd3-0f95d0291db2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055459_f53714f0_a7f5_4448_bbd3_0f95d0291db2.png)
 
 #### 3.5.10 WIFI\&BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. The Wi-Fi module utilizes an SDIO interface, supports dual-band operation in 2.4GHz and 5GHz, and complies with IEEE 802.11a/b/g/n/ac standards. The Bluetooth module uses UART \& PCM interfaces and complies with Bluetooth 5.2 specifications. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055547-9ae7927e-47c0-4412-9039-e600efe2d530.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055547_9ae7927e_47c0_4412_9039_e600efe2d530.png)
 
 #### 3.5.11 USB2.0
 
 There is an onboard USB 2.0 HUB on the development board, which is expanded to two downstream USB HOST ports, connecting a standard USB 2.0-A interface and a mini-PCIE interface. The mini-PCIE interface can connect the 4G module.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055656-db29e6a0-3b5f-401a-821b-269820359e11.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055656_db29e6a0_3b5f_401a_821b_269820359e11.png)
 
 #### 3.5.12 4G
 
@@ -516,29 +516,29 @@ P20 is a nanoSIM card slot, which is self-ejecting. Pay attention to the inserti
 
 Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470924476-830049cf-2a25-4256-a25d-f775657aca64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470924476_830049cf_2a25_4256_a25d_f775657aca64.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470942308-891178f6-5b04-4a72-aafb-c7e99a6d7a18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470942308_891178f6_5b04_4a72_aafb_c7e99a6d7a18.png)
 
 #### 3.5.13 USB3.0
 
 The development board features an onboard USB 3.0 interface, which is the native USB 3.0 from the SoM. A standard USB 3.0 Type-A interface is connected on the development board. Port A supports OTG, controlled by the DIP switch S3: OFF for Device mode, ON for Host mode.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055755-ed281cb8-2690-47be-8cd4-d0cbb2559e81.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055755_ed281cb8_2690_47be_8cd4_d0cbb2559e81.png)
 
 #### 3.5.14 Ethernet
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521SH chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055841-ea941aba-58e5-4852-9869-a225af6a5692.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055841_ea941aba_58e5_4852_9869_a225af6a5692.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773470975646-bb009f3e-ebed-4bb4-875f-cf90cac6d4f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773470975646_bb009f3e_ebed_4bb4_875f_cf90cac6d4f3.png)
 
 The development board supports one native 100M Ethernet port, implemented using the SoM RMII interface with the YT8512H chip. It is connected to external network devices via a standard RJ45 connector equipped with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055910-1ca4d23f-c6c5-4994-bbff-29b02baecc57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055910_1ca4d23f_c6c5_4994_bbff_29b02baecc57.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213055983-60dbd223-2b6b-4903-a028-24631caf4453.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213055983_60dbd223_2b6b_4903_a028_24631caf4453.png)
 
 #### 3.5.15 CAN
 
@@ -546,7 +546,7 @@ The development board supports one native 100M Ethernet port, implemented using 
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056068-148c76d1-d97c-4e46-90e4-c7130fd3b5bf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213056068_148c76d1_d97c_4e46_90e4_c7130fd3b5bf.png)
 
 #### 3.5.16 485
 
@@ -554,31 +554,31 @@ The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056142-1270bfb6-4ad9-4ed2-941b-db6b0f752949.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213056142_1270bfb6_4ad9_4ed2_941b_db6b0f752949.png)
 
 #### 3.5.17 GPADC
 
 The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773471424072-7b1ce0e2-2a29-4212-95ef-898afbf49756.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773471424072_7b1ce0e2_2a29_4212_95ef_898afbf49756.png)
 
 #### 3.5.18 UART
 
 1 x five-wire UART is routed from the development board and powered by a 3.3V signal.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773471077165-88f07312-dd8d-47d9-8822-618fb7f1f15a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773471077165_88f07312_dd8d_47d9_8822_618fb7f1f15a.png)
 
 #### 3.5.19 SPI
 
 A five-wire SPI interface is led out from the SoM (5V power supply)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056216-fa0bbf1a-8ce2-40c9-8db9-4dd35a20d54e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213056216_fa0bbf1a_8ce2_40c9_8db9_4dd35a20d54e.png)
 
 #### 3.5.20 IO Expansion
 
 An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773471105706-0e167923-28d4-48a9-a459-a6ce77186c3a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773471105706_0e167923_28d4_48a9_a459_a6ce77186c3a.png)
 
 #### 3.5.21 Audio
 
@@ -586,21 +586,21 @@ The development board features a standard 3.5mm headphone jack (CTIA internation
 
 The P39 is a speaker port that supports stereo speakers, Class D, with 1.3W of power;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773471131750-7fb2a14c-2b03-4d7a-a9e5-32c80baa70cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773471131750_7fb2a14c_2b03_4d7a_a9e5_32c80baa70cc.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773471152960-bf8aaa58-655f-459f-a223-3238686a02e1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773471152960_bf8aaa58_655f_459f_a223_3238686a02e1.png)
 
 A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056294-3350d278-af60-467e-b32e-1196d56ef0d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213056294_3350d278_af60_467e_b32e_1196d56ef0d0.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213056372-10ef5c0d-d617-4073-bffe-0d1218a60d04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213056372_10ef5c0d_d617_4073_bffe_0d1218a60d04.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633273437-f7368261-afda-403a-9257-adc3ea7f5d25.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1778633273437_f7368261_afda_403a_9257_adc3ea7f5d25.png)
 
 To ensure soldering yield, please refer to the following specifications for stencil design:
 
@@ -612,9 +612,9 @@ LCC Pad Aperture: The opening width should be 0.6mm, and the length should exten
 
 Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support bridge at the center. Square LGA pads: Openings with dimensions of 0.83mm × 0.83mm.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633273553-94cadaa1-5abb-412c-b703-89e516dcfce3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1778633273553_94cadaa1_5abb_412c_b703_89e516dcfce3.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633273650-bb5ffc52-08e9-47ed-8760-217a9edbbe0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1778633273650_bb5ffc52_08e9_47ed_8760_217a9edbbe0c.png)
 
 **Note:**
 
@@ -642,12 +642,12 @@ Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support
 
 **It has SoM, power, debug serial port, system image flashing port.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213062045-2a843151-09b2-461d-9968-17415d41d88c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213062045_2a843151_09b2_461d_9968_17415d41d88c.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213062128-e432381c-6fdf-4cb5-b719-43f524392901.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213062128_e432381c_6fdf_4cb5_b719_43f524392901.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213062205-6a7f64ef-5185-4cee-a06b-d50f597971e5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213062205_6a7f64ef_5185_4cee_a06b_d50f597971e5.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213062277-0fb85d56-fd3a-4636-b856-3275a34db785.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773213062277_0fb85d56_fd3a_4636_b856_3275a34db785.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773216005229-c9ff459e-fb90-4482-919d-42d64843c9a6.png)![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773216036055-e7a7853b-a3ba-41b8-bc1d-a9f9c5037202.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773216005229_c9ff459e_fb90_4482_919d_42d64843c9a6.png)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_User_Hardware_Manual/1773216036055_e7a7853b_a3ba_41b8_bc1d_a9f9c5037202.png)
