@@ -407,7 +407,7 @@ Select the network card device to be configured in the Interface. Enter the desi
 
 **Note: The IP and other information configured in static mode will be saved in the system's relevant configuration files, so the network settings will persist after each reboot. However, the network information configured in DHCP mode does not need to be considered, as an IP address will be dynamically assigned each time the system restarts.**
 
-#### 3.1 Ping Test
+#### 3.1.8 Ping Test
 
 “Ping” is a GUI version of the commonly used network testing command ping:
 
