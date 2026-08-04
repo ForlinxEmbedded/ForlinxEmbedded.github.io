@@ -55,7 +55,7 @@ The OK-x-UP4 development board currently offers documentation for the Linux oper
 
 RK3562J is a low-power, high-performance processor based on the ARM64 architecture. It integrates four ortex-A53 cores, one Conrtex-M0 core, and an independent NEON coprocessor, making it suitable for applications in computers, mobile phones, personal mobile internet devices, and digital multimedia equipment. Connection method: Stamp hole. The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213028960-4d2f9d07-af5f-47eb-918e-a4c7b7016c79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213028960_4d2f9d07_af5f_47eb_918e_a4c7b7016c79.png)
 
 **Front**
 
@@ -121,7 +121,7 @@ The debug serial port on the development board is a USB Type-C port. You can con
 + Ethernet cable (for network login)
 + Display screen — connect the screen according to the development board interface (optional if display is not needed)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213030654-5c1085b6-a120-4e9f-80d0-19cf6b1a4d61.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030654_5c1085b6_a120_4e9f_80d0_19cf6b1a4d61.png)
 
 ### 2.2 Driver Installation Failure
 
@@ -145,15 +145,15 @@ The following example uses PuTTY to illustrate the serial login procedure:
 
 Step 1: Confirm the serial port number connected to the computer, checking the port number in Device Manager, based on the actual port recognized by the computer;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213030762-0f8f72f0-9a7b-4b8c-ba18-490645b3cfe3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030762_0f8f72f0_9a7b_4b8c_ba18_490645b3cfe3.png)
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213030853-8fc3b2a0-4e27-4d07-8c5e-50497f17a55b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030853_8fc3b2a0_4e27_4d07_8c5e_50497f17a55b.png)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure, using COM43 as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213030985-290e3b67-0b4b-413b-9449-ce9403f448d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030985_290e3b67_0b4b_413b_9449_ce9403f448d7.png)
 
 Step 4: Turn on the power switch of the development board. Boot messages will be displayed on the serial terminal, and the system will log in automatically without a password.
 
@@ -195,9 +195,9 @@ Temporarily disable the computer’s firewall (this is a general operation; spec
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653045-77232463-9341-42e0-99fd-fff6c8c185f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653364-4f5e0630-f435-4a4d-9c88-23a027ea9bcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -211,11 +211,11 @@ Data is returned, indicating that the network connection is normal.
 
 1\. Use SSH to log in to the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417653640-cd0cf583-62bc-4715-824a-58f2939f6143.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417653640_cd0cf583_62bc_4715_824a_58f2939f6143.png)
 
 After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654059-94355051-1e28-4cfd-8a4b-f559d4ff136a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654059_94355051_1e28_4cfd_8a4b_f559d4ff136a.png)
 
 ```bash
 Login as：forlinx
@@ -235,11 +235,11 @@ Install the file Zilla tool on windows and follow the steps shown in the figure 
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654405-e51665a5-81c7-4442-a2ae-e8cc99e78fff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff.png)
 
 After successful login, upload and download operations can be performed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417654928-2b604387-bb81-4ac6-a13d-02437d5c0800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switch
 
@@ -274,7 +274,7 @@ The device tree path is: kernel/arch/arm64/boot/dts/rockchip/OK-x-UP4-common.dts
 
 In the kernel source code, open the specified DTSI file and locate the forlinx-control node, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213031075-1958261e-3b7d-4065-945c-390195998621.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213031075_1958261e_3b7d_4065_945c_390195998621.png)
 
 The node is disabled by default and needs to be changed to "okay" to enable it. Modify according to the screen requirements.
 
@@ -307,17 +307,17 @@ The OK3562J-UP4 platform provides excellent support for Qt, particularly for mul
 
 After booting, the development board will display the following desktop:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417666181-97e8edf0-a899-44c8-a864-e5e77c6f2276.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417666181_97e8edf0_a899_44c8_a864_e5e77c6f2276.png)
 
 #### 3.1.2 Hardware Decoding Experience
 
 Click the desktop icon to open the video player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417666490-b1592cbf-8e29-4d12-bdb1-8fad5e6947ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417666490_b1592cbf_8e29_4d12_bdb1_8fad5e6947ee.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417666946-d492a7d7-638a-4d45-916e-53f5a6d86da1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417666946_d492a7d7_638a_4d45_916e_53f5a6d86da1.png)
 
 **Note: The directory where the test video file is located:/userdata/media/.mp4.**
 
@@ -325,21 +325,21 @@ Application Icons
 
 OK3562J-UP4 supports OpenGL ES3.2, click the desktop icon for OpenGL testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417667252-b669ae1a-e4b1-4d6e-9375-3d551571ea04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417667252_b669ae1a_e4b1_4d6e_9375_3d551571ea04.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417667643-205cee09-c967-46fa-910a-e6f5507c97cc.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417667643_205cee09_c967_46fa_910a_e6f5507c97cc.jpeg)
 
 #### 3.1.4 Music Playback Test
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417667864-988c35ee-7595-49ff-8c34-bcbd534ab54f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417667864_988c35ee_7595_49ff_8c34_bcbd534ab54f.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417668047-619205fa-d4bb-4973-9442-0f2ec7c83d4c.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417668047_619205fa_d4bb_4973_9442_0f2ec7c83d4c.jpeg)
 
 Application Interface
 
@@ -351,29 +351,29 @@ Click the button in the lower left corner and select the audio test file /userda
 
 The test supports the 4G module (EC20). Insert the 4G module and SIM card in case of power failure, and open the test application after the power-on system is started.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417668348-585760c6-d57a-4312-a9f8-286595ed0d0f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417668348_585760c6_d57a_4312_a9f8_286595ed0d0f.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417668538-6c3dab1c-2eff-4bec-8297-5e79bb4855bf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417668538_6c3dab1c_2eff_4bec_8297_5e79bb4855bf.png)
 
 Click the connect button, and the program will automatically enter the dial-up process and obtain IP settings, DNS, etc.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417668807-5dbde941-f04f-42a2-af8d-3af71f8867b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417668807_5dbde941_f04f_42a2_af8d_3af71f8867b7.png)
 
 Click the ping button to test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417669155-ecacded0-2bcd-408b-9a47-cbcff79124f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417669155_ecacded0_2bcd_408b_9a47_cbcff79124f3.png)
 
 #### 3.1.6 WiFiTest
 
 “"WIFI" is a tool for configuring WiFi. The OK- x- UP4 platform comes with the AW-CM358 module onboard by default. The wifi module will exist in the form of mlan node in the system, and this test corresponds to mlan0:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417669341-739a22d7-ace1-4f5b-9db5-e21cb35038ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417669341_739a22d7_ace1_4f5b_9db5_e21cb35038ce.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213032706-61a0ab29-d4be-4eea-a691-6312ee0eb2ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213032706_61a0ab29_d4be_4eea_a691_6312ee0eb2ae.png)
 
 Application Interface
 
@@ -383,25 +383,25 @@ Open the Wifi test application, enter the correct network name and password, and
 
 After a successful connection, click “ping” to perform a network test.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213032834-48677749-8878-41c8-9844-a8f21f2cb49f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213032834_48677749_8878_41c8_9844_a8f21f2cb49f.png)
 
 #### 3.1.7 Network Configuration Test
 
 Upon startup, the eth0 interface on the OK3562J-UP4 is configured by default with a static IP address. You can select between DHCP and static modes via the system’s “Network” configuration application. In static mode, the following network parameters are configurable: IP address, subnet mask, gateway, and DNS servers.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417670236-95f31c04-1439-4dae-bd45-8cb27d6a5717.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417670236_95f31c04_1439_4dae_bd45_8cb27d6a5717.png)
 
 Application Icons
 
 DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417670841-cdf93cc4-07a3-4d22-92d3-bfe765899391.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417670841_cdf93cc4_07a3_4d22_92d3_bfe765899391.jpeg)
 
 Select DHCP, choose the network card device to be configured in the “interface” section, and click “Apply and Restart Network” at the bottom of the interface to automatically restart the network and obtain an IP address.
 
 Static Mode Configuration Interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417671088-cd701fbb-b498-49fe-a689-bb0f128f8a8d.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417671088_cd701fbb_b498_49fe_a689_bb0f128f8a8d.jpeg)
 
 Select the network card device to be configured in the Interface. Enter the desired IP address in the IP field. Enter the subnet mask in the Netmask field. Enter the gateway address in the Gateway field. Enter the DNS server address , in the Gateway field, .
 
@@ -411,11 +411,11 @@ Select the network card device to be configured in the Interface. Enter the desi
 
 “Ping” is a GUI version of the commonly used network testing command ping:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417671316-6cd27dc4-35ea-4210-a228-3f9e3bd4cf24.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417671316_6cd27dc4_35ea_4210_a228_3f9e3bd4cf24.png)
 
 In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417671577-2a67d0ff-3784-490d-b011-185caee8256a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417671577_2a67d0ff_3784_490d_b011_185caee8256a.png)
 
 #### 3.1.9 Browser Test
 
@@ -423,7 +423,7 @@ In the hostname field, write the target IP to ping. After clicking the “ping�
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417671857-74ed84ea-6805-42e5-989d-474e1c4e91aa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417671857_74ed84ea_6805_42e5_989d_474e1c4e91aa.png)
 
 To exit the browser, use the navigation bar: File -> Quit.
 
@@ -431,11 +431,11 @@ To exit the browser, use the navigation bar: File -> Quit.
 
 "WatchDog" is an application used to test the proper functioning of the watchdog:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417672177-e78efff9-8460-476b-bc51-217d84bb258a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417672177_e78efff9_8460_476b_bc51_217d84bb258a.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417672436-3e31ca5e-1b33-4d74-a750-5b8b2eb5f815.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417672436_3e31ca5e_1b33_4d74_a750_5b8b2eb5f815.jpeg)
 
 Application Interface
 
@@ -447,11 +447,11 @@ If you uncheck the “feed dog” option and then click the “open watchdog” 
 
 "Keypad" is used to test the platform built-in keys:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417672658-04c01b7c-a3a7-4ca1-88fc-38f2858709de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417672658_04c01b7c_a3a7_4ca1_88fc_38f2858709de.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213032920-ee768158-f22f-4034-81ab-d6efbee0c00e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213032920_ee768158_f22f_4034_81ab_d6efbee0c00e.png)
 
 Application Interface
 
@@ -463,11 +463,11 @@ Press Exit to exit the current test and return to the system desktop.
 
 The "RTC" application allows you to view and set the current system time:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417673244-81838d8f-0c72-47e6-b63b-6ac8d9e821d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417673244_81838d8f_0c72_47e6_b63b_6ac8d9e821d6.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417673493-22d3d302-ed26-4b4d-b7fc-4a50a3764fa3.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417673493_22d3d302_ed26_4b4d_b7fc_4a50a3764fa3.jpeg)
 
 Application Interface
 
@@ -481,15 +481,15 @@ Click the desktop icon to open the Camera. This test application supports both U
 
 **Note: The camera must be connected before opening the application.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417673759-9cf0f95f-7979-491a-b458-d5517100e3bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417673759_9cf0f95f_7979_491a_b458_d5517100e3bd.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417673981-ab8ce1a2-a069-4571-8d99-cda8fa26f30c.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417673981_ab8ce1a2_a069_4571_8d99_cda8fa26f30c.jpeg)
 
 Once the application is opened, click UVC Camera to start the camera preview.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1722218411300-e4824847-5eeb-40e7-9ea6-6d8d8cf9c669.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1722218411300_e4824847_5eeb_40e7_9ea6_6d8d8cf9c669.png)
 
 In Video Mode, click the record button to begin recording. To stop recording, click the recording button. The generated video file will be saved at /userdata/VIDEO0.MOV.
 
@@ -497,15 +497,15 @@ Playback testing can be done using the command: gst-play-1.0 /userdata/VIDEO0.mo
 
 Click the Video Mode button to switch to photo mode, then click Capture to take a photo.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45576790/1722218425115-0b9f51f2-5300-463e-99de-3688a456611a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1722218425115_0b9f51f2_5300_463e_99de_3688a456611a.png)
 
 The generated file is located at /userdata/PIC0.jpg
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417675235-d9e50c99-9ff6-4a35-8468-6c5fee72c104.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417675235_d9e50c99_9ff6_4a35_8468_6c5fee72c104.png)
 
 #### 3.1.14 UART Test
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417675445-75a88339-39db-44d0-8e0b-fa22bbfb8f74.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417675445_75a88339_39db_44d0_8e0b_fa22bbfb8f74.png)
 
 Application Icons
 
@@ -513,7 +513,7 @@ In this test, a serial loopback test was carried out by short-circuiting the UAR
 
 Click the UART test icon to enter the following interface for serial port parameter configuration;
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417675669-65b7392d-6502-4a9c-b25d-5b378d404585.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417675669_65b7392d_6502_4a9c_b25d_5b378d404585.jpeg)
 
 Click the settings button in the upper left corner and set the serial port parameters to be consistent with the computer-side serial port tool parameters, as shown below:
 
@@ -526,33 +526,33 @@ Click the settings button in the upper left corner and set the serial port param
 | Stop bits| Set stop bits (1 bit)|
 | Flow control| Set flow control (no flow control)|
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213033002-e27f8a5e-069d-4a3c-8359-dbc25629c1fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213033002_e27f8a5e_069d_4a3c_8359_dbc25629c1fb.png)
 
 After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;
 
 Click the "1" to automatically send the signal. Due to the shorting, the received "1" will also be displayed on the terminal.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213033093-fa12a6ac-b8e4-4057-92d0-2d5b1f84d88c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213033093_fa12a6ac_b8e4_4057_92d0_2d5b1f84d88c.png)
 
 #### 3.1.15 Data Test
 
 Click the desktop icon to use the SQLite test database.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417676999-a26c436c-2b6b-43a5-ac34-061022a7b9ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417676999_a26c436c_2b6b_43a5_ac34_061022a7b9ea.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677226-5613cd21-0ac5-4fee-9c03-7c5281487fe0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417677226_5613cd21_0ac5_4fee_9c03_7c5281487fe0.png)
 
 #### 3.1.16 Backlight Test
 
 "BackLight" is the application for adjusting LCD backligh
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677503-ce25fa41-3c86-4b58-8a69-b97342e9b73d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417677503_ce25fa41_3c86_4b58_8a69_b97342e9b73d.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677716-64116b20-28e6-407b-b818-94daa5ac90a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417677716_64116b20_28e6_407b_b818_94daa5ac90a1.png)
 
 Slide the bar in the interface to set the LCD backlight brightness. Level 0 represents the lowest brightness, and level 255 represents the highest brightness.
 
@@ -560,7 +560,7 @@ Slide the bar in the interface to set the LCD backlight brightness. Level 0 repr
 
 #### 3.1.17 Uboot Menu
 
-Click the desktop icon![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417677943-fb582525-076e-45bc-a77c-8cebe5ad2667.png)to launch the Uboot menu configuration tool.
+Click the desktop icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417677943_fb582525_076e_45bc_a77c_8cebe5ad2667.png)to launch the Uboot menu configuration tool.
 
 disp\_type Tab: Select the display screen.
 
@@ -586,17 +586,17 @@ USB: combphy multiplexing as USB function
 
 Configuration changes are saved automatically. A board restart is required for the new settings to take effect.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213033191-13c76178-1417-4628-87ee-6a61472a2050.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213033191_13c76178_1417_4628_87ee_6a61472a2050.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417678430-81a084f5-0d93-419a-9b4a-8bb02bf23f01.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417678430_81a084f5_0d93_419a_9b4a_8bb02bf23f01.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213033300-a526a5f8-c1bc-4c0a-a718-8f2474d0c8f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213033300_a526a5f8_c1bc_4c0a_a718_8f2474d0c8f8.png)
 
 #### 3.1.18 Web Service
 
 The OK3562J-UP4 development board comes pre-installed with the Lighttpd web server, and the service is automatically started upon system boot. To access the web pages hosted on the board’s webserver, simply enter the board’s IP address in a web browser on your PC.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679107-12d1f44a-8fba-4165-a4fe-ba2b015f28a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417679107_12d1f44a_8fba_4165_a4fe_ba2b015f28a7.png)
 
 **Note: The development board network IP must be in the same subnet as the PC network IP, or the PC must be in the same network subnet as the development board.**
 
@@ -612,11 +612,11 @@ GPADC\_B corresponds to saradc0\_in3
 GPADC\_C corresponds to saradc0\_in4  
 For this test, select saradc0\_in2. Apply the input voltage to Pin 1 of connector P34, as shown in the ADC pin hardware diagram below. The chip uses a 1.8V reference voltage, corresponding to a maximum digital value of 1024 for its 10-bit ADC.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213033392-de0b283c-c58c-48e6-872b-ad000fbe5c40.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213033392_de0b283c_c58c_48e6_872b_ad000fbe5c40.png)
 
-Run the QT ADC![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679554-156d7ae2-e065-46d6-9c57-64c76b6bfc6f.png)application to view the test results.
+Run the QT ADC![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417679554_156d7ae2_e065_46d6_9c57_64c76b6bfc6f.png)application to view the test results.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213033483-a7a0df5d-7b71-4dc1-879e-7b50743cfb43.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213033483_a7a0df5d_7b71_4dc1_879e_7b50743cfb43.png)
 
 #### 3.1.20 TFTP System Upgrade
 
@@ -631,7 +631,7 @@ Run the QT ADC![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679554-
 - Install and run Tftpd64.4.64.exe;
 - Turn on Tftpd64.4.64.exe to test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417679978-d7fe01c5-7320-4e80-99cf-77b53dc1772d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417679978_d7fe01c5_7320_4e80_99cf_77b53dc1772d.png)
 
 CurrentDirectory: Set to the path containing the OK-x-UP4 partition firmware files.
 
@@ -639,9 +639,9 @@ Server interfaces: Select your PC’s local IP address.
 
 **Note: Temporarily disable the Windows Firewall for testing. Users should verify TFTP file download functionality independently.**
 
-Open the desktop “Tftp Update” icon![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417680230-85b319c8-f19d-4966-9000-aaacc308263b.png)on the development board.
+Open the desktop “Tftp Update” icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417680230_85b319c8_f19d_4966_9000_aaacc308263b.png)on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417680441-fabc1d48-0621-4c0a-9800-b1bbfa3f7ba1.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417680441_fabc1d48_0621_4c0a_9800_b1bbfa3f7ba1.jpeg)
 
 Fill in the configuration fields according to your actual setup and select the firmware to be updated. 
 
@@ -649,7 +649,7 @@ Click “Tftp:Off” to change it to “Tftp:On”, then restart the board.
 
 Serial Port Print information as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417680673-7b21e433-6173-4ed2-ba79-62d3d45120c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417680673_7b21e433_6173_4ed2_ba79_62d3d45120c3.png)
 
 #### 3.1.21 CPU Frequency Configuration Test
 
@@ -657,14 +657,14 @@ Serial Port Print information as follows:
 
 Click the desktop icon to access the submenu:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417681023-ee7bea0e-f25f-4ec2-be12-3580bff6f6e7.png)**->**![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417681224-3d726585-e187-49e3-9e1a-06953e06559c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417681023_ee7bea0e_f25f_4ec2_be12_3580bff6f6e7.png)**->**![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417681224_3d726585_e187_49e3_9e1a_06953e06559c.png)
 
 Application Icons
 
 The OK3562J-UP4 CPU clock is up to 2.0 GHz. By default, the CPU will dynamically adjust the clock speed according to the load, but a fixed CPU clock speed can also be set.   
 Click the desktop Power icon to enter the CPU frequency settings page:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417681462-a08c0939-ae79-4034-8ea4-4da675d8f09b.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417681462_a08c0939_ae79_4034_8ea4_4da675d8f09b.jpeg)
 
 Set Userspace Governor：Set the main clock in user space.
 
@@ -672,13 +672,13 @@ Set FrequencyCPU0-3：Set the main clock.
 
 Take setting the main frequency as an example. If you need to set a fixed frequency, first click Set Userspace Governor, then click Run. Afterward, return to the interface shown above and click Set Frequency CPU0-3 to configure the desired frequency.
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417681695-f3a43e8f-34e2-4593-a70f-87260bd357e8.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417681695_f3a43e8f_34e2_4593_a70f_87260bd357e8.jpeg)
 
 Select the corresponding frequency according to needs for setting.
 
 #### 3.1.22 Recording Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417681925-8a69aa3a-5bf4-4727-87c2-035e69ef3ce5.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417681925_8a69aa3a_5bf4_4727_87c2_035e69ef3ce5.png)
 
 Connect the microphone to the MIC jack.
 
@@ -688,17 +688,17 @@ Select a save location for the recording, then click "Start" to begin and "Stop"
 
 Click the “Input Device” radio button to select “alsa:sysdefault:CARD=rockchiprk809”, then click the “Channels” radio button to select “2”. The interface is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720417682239-d0793e27-2ace-4398-bb45-1ee1ca099016.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417682239_d0793e27_2ace_4398_bb45_1ee1ca099016.jpeg)
 
 Click the Record button to start the test. The audio file is saved to the root directory as /clip\_XXXX.avi.
 
 #### 3.1.23 SPI Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417682440-b869fc6d-7106-4ff7-b299-c35c55dc0c37.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417682440_b869fc6d_7106_4ff7_b299_c35c55dc0c37.png)
 
 Click the icon to enter the SPI test interface. Short the SPI2\_MOSI\_M0 and SPI2\_MISO\_M0 pins, click send below, and you can receive the sent data to complete the test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417682692-9a531955-6bdb-4c5f-beec-1e2c0d5d078f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417682692_9a531955_6bdb_4c5f_beec_1e2c0d5d078f.png)
 
 ## 4\. OK3562J-UP4 Command Line Function Test
 
@@ -910,7 +910,7 @@ Mon Dec 12 17:23:20 CST 2022
 
 #### 4.1.7 Key Test
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035220-c1968536-f9ae-4397-ba30-c8a7bb52820b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035220_c1968536_f9ae_4397_ba30_c8a7bb52820b.png)
 
 Use the fltest\_keytest command-line tool to test the keys. Currently, fltest\_keytest supports testing the five keys on the carrier board: VOL+, VOL-, MENU and ENTER, HOME, with key codes, 115, 114, 139, 158 and 102 respectively.
 
@@ -953,7 +953,7 @@ UART3 \& UART5: Function as general-purpose Serial/UART ports. Supports baud rat
 
 Taking the UART3 serial port as an example, short-circuit the UART3 transmit and receive pins—which correspond to PIN2 and PIN4 respectively—in accordance with the development board’s schematic diagram.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035362-443b8406-7ad4-4d7a-946e-b1e9858df568.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035362_443b8406_7ad4_4d7a_946e_b1e9858df568.png)
 
 Enter the following command in the development board serial port:
 
@@ -970,7 +970,7 @@ rx_0: dYalODr7wVnRsPHLlktSduGxsP8fqlAR
 
 The OK3562-UP4 development board features 13 x ADC internally, with one adjustable resistor connectable to each channel. Select “saradc0\_in2” for testing. The hardware diagram of the ADC pins is shown below; apply the input voltage to pin 1 of P34. The chip uses a 1.8V reference voltage, corresponding to a maximum digital value of 1024 for its 10-bit ADC.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035558-b6f18cce-58b3-4dae-b431-2d470ad822f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035558_b6f18cce_58b3_4dae_b431_2d470ad822f1.png)
 
 The following section uses the SARADC\_VIN2 as an example to test the values of adjustable resistors:
 
@@ -986,7 +986,7 @@ root@OK-x-UP4:/sys/bus/iio/devices/iio:device0# cat in_voltage2_raw
 
 Before powering on, insert the TF card into the TF card slot on the carrier board. Power on the board, run the command “dmesg”, and the following information will be displayed in the terminal:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035706-5d50a40d-6f42-47ea-b7be-886c92b2b457.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035706_5d50a40d_6f42_47ea_b7be_886c92b2b457.png)
 
 Check the mount directory:
 
@@ -1051,7 +1051,7 @@ root@OK-x-UP4:/# dd if=/test of=/dev/null bs=1M iflag=direct
 
 Connect a USB mouse to the USB port on the OK3562-UP4 platform and use the “dmesg” command; the output on the serial terminal is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035793-45ee6f9e-7b87-4bad-b76f-ea7b290c0906.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035793_45ee6f9e_7b87_4bad_b76f_ea7b290c0906.png)
 
 <font style="color:#000000;">An arrow cursor will appear on the screen, indicating that the mouse is functioning properly.</font>
 
@@ -1063,7 +1063,7 @@ The terminal will print information about the USB drive. Since there are various
 
 After the development board boots, connect a USB flash drive to the board USB HOST interface. Since the default log level is relatively low, no message may be printed directly; You can use the dmesg command to view messages and locate the USB-drive-related information.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035879-fef7aae1-72d7-4b29-bf8f-47f6a9dd27cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035879_fef7aae1_72d7_4b29_bf8f_47f6a9dd27cb.png)
 
 View the mount directory:
 
@@ -1153,7 +1153,7 @@ root@OK-x-UP4:/# ls /dev/ ttyXRUSB*
 
 The correspondence between the four extended serial ports and the device nodes is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684392-b4febc8c-5724-401d-a9a4-20165a269a9c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417684392_b4febc8c_5724_401d_a9a4_20165a269a9c.png)
 
 For the test method, refer to Section 3.2.8 UART Test.
 
@@ -1180,7 +1180,7 @@ Set the carrier board DIP switch S2 to the ON position;
 
 Edit the device tree file “arch/arm64/boot/dts/rockchip/OK-x-UP4-common.dtsi” (this is the default setting in the factory image, so no changes are required) and set the “dr\_mode” attribute of the “usbdrd\_dwc3” node to “host”, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684738-0e90d5d6-c5d0-4484-806e-8fc65da65829.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417684738_0e90d5d6_c5d0_4484_806e_8fc65da65829.png)
 
 Recompile the kernel image and flash it to the development board;
 
@@ -1256,7 +1256,7 @@ root@OK-x-UP4:~# umount /run/media/sda1
 
 Modify the “usbdrd\_dwc3” node in the device tree file “arch/arm64/boot/dts/rockchip/OK-x-UP4-common.dtsi”, as shown in the figure below：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417684997-25146b9b-12f9-40f2-a6e2-3938db623bb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417684997_25146b9b_12f9_40f2_a6e2_3938db623bb8.png)
 
 Recompile the kernel image and flash it to the development board;
 
@@ -1290,7 +1290,7 @@ For Device mode, set DIP switch S2 on the carrier board to OFF.
 
 Connect your computer to the P35 USB-C socket on the development board using a USB-A to USB-C cable, then simply restart the development board.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417685359-31c37e27-76b7-4b1f-acd6-01f0c457490a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417685359_31c37e27_76b7_4b1f_acd6_01f0c457490a.png)
 
 Once the Rockchip development tools display the message “An ADB device is detected”, you can use “adb pull” to download files from the development board to your computer, and “adb push” to upload files from your computer to the development board.
 
@@ -1502,7 +1502,7 @@ Board Passive Pairing (Standard pairing process).
 
 Now, open the Bluetooth search function on your PC; a device named “OK3562-UP4” will appear. Select it to pair.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213035959-8882fe3e-47bd-4478-961a-117e22d35da9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035959_8882fe3e_47bd_4478_961a_117e22d35da9.png)
 
 The print information on the development board is as follows. Enter "yes":
 
@@ -1573,7 +1573,7 @@ Development board receives files
 
 After successful pairing, on the computer side, you can use Bluetooth to send files to the OK-x-UP4.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213036059-7c4af9d2-068b-4a82-a5b3-8bde17cef21b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213036059_7c4af9d2_068b_4a82_a5b3_8bde17cef21b.png)
 
 The received file is saved in the /tmp directory.
 
@@ -1594,7 +1594,7 @@ Connection successful
 [C4:E1:A1:BA:A4:9E]# send /userdata/media/test.mp3	      		   //Send files
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720417686966-110c7eef-9546-4571-a9b6-be4a5f29c69c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417686966_110c7eef_9546_4571_a9b6_be4a5f29c69c.png)
 
 Your mobile phone will receive a request to receive a file; tap “Accept” to transfer the file.
 
@@ -1818,7 +1818,7 @@ The CAN\_L terminal is connected to the L terminal of other CAN devices.
 
 Short-circuit CAN0 and CAN1, and short-circuit the CAN1\_L, CAN0\_L, CAN1\_H and CAN0\_H pin headers on port P23, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213036175-dfc532b8-1883-476d-a110-3d3af0043bf8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213036175_dfc532b8_1883_476d_a110_3d3af0043bf8.png)
 
 Execute the following command in the terminal on the development board:
 
@@ -1880,11 +1880,11 @@ The OK3562-UP4 platform supports sleep-to-wake functionality; the sleep-to-wake 
 
 Short press PWRON:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213036256-ae8c3ad0-3eec-4728-b2bd-80b417aec8d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213036256_ae8c3ad0_3eec_4728_b2bd_80b417aec8d2.png)
 
 Short press the PWRon key to wake up again:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213036351-92768dca-d117-46f0-9dce-c9ba23936f59.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213036351_92768dca_d117_46f0_9dce_c9ba23936f59.png)
 
 #### 4.1.24 SQLite3 Test
 
@@ -1913,7 +1913,7 @@ root@OK-x-UP4:/#
 
 The SPI test pin is led out from the OK3562-UP4 carrier board; it is located at P31.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213036437-94a343c7-e6db-4a4c-8179-284037c13ddd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213036437_94a343c7_e6db_4a4c_8179_284037c13ddd.png)
 
 Short-circuit the SPI\_A\_MOSI and SPI\_A\_MISO pins.
 
@@ -2328,7 +2328,7 @@ Freeing pipeline ...
 
 For sensors like the OV13855 and other raw sensors, each sensor corresponds to five device nodes:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213038257-7f533a1f-8ac1-47d4-9e65-773fcb6e10a8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213038257_7f533a1f_8ac1_47d4_9e65_773fcb6e10a8.png)
 
 Mainpath: This is an output node from the Rockchip ISP capable of outputting full-resolution images, typically used for taking photos and capturing raw images.
 
@@ -2557,7 +2557,7 @@ root@OK-x-UP4:/#  gst-launch-1.0 uridecodebin uri=file:///oem/SampleVideo_1280x7
 
 Screen display result:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45781369/1720421272829-c87e727b-555c-4c7f-8bd4-ab16f9a33c94.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720421272829_c87e727b_555c_4c7f_8bd4_ab16f9a33c94.jpeg)
 
 **Note: During multi-channel decoding and playback of H264 1080P60 and H265 4KP30 videos, playback stuttering occurs, caused by insufficient decoding capability.**
 
@@ -2644,11 +2644,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418372654-458dfae6-fe39-4e90-a884-b5c76a0d4659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418372654_458dfae6_fe39_4e90_a884_b5c76a0d4659.png)
 
 Click Install Driver.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418372998-55b52477-7160-490a-9674-11b926fabb18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418372998_55b52477_7160_490a_9674_11b926fabb18.png)
 
 #### 6.1.2 Complete OTG Flashing
 
@@ -2663,27 +2663,27 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 + **Device detection occurs when the VOL+ button is pressed during the power-on of the development board;**
 + **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213040054-240c9f55-12b0-4471-9b56-7d1b68bbed06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213040054_240c9f55_12b0_4471_9b56_7d1b68bbed06.png)
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373238-ded5a5da-5ef9-4382-9150-a8fccf92f309.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418373238_ded5a5da_5ef9_4382_9150_a8fccf92f309.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373446-68f5d3be-afdc-4bdd-ac64-912497c76847.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418373446_68f5d3be_afdc_4bdd_ac64_912497c76847.png)
 
 Tap “Switch” and wait for the board to enter LOADER mode, then tap the “Upgrade” button to proceed with the upgrade.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373687-e2ee7480-1523-4f1d-bba1-4836940ca5d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418373687_e2ee7480_1523_4f1d_bba1_4836940ca5d5.png)
 
 **MASKROM Mode Introduction**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the USBLOAD key, then press the reset key to enter maskrom mode for burning.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213040377-7e4625d6-6ced-437f-9c3d-a1985fbb7d07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213040377_7e4625d6_6ced_437f_9c3d_a1985fbb7d07.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418373917-956f9b2d-54fd-48c6-b4e6-069c8e8488af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418373917_956f9b2d_54fd_48c6_b4e6_069c8e8488af.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming.
 
@@ -2701,13 +2701,13 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 + **Device detection occurs when the VOL+ button is pressed during the power-on of the development board;**
 + **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374138-b6613de5-c4e7-4c57-ab8b-6d41d165e5c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418374138_b6613de5_c4e7_4c57_ab8b_6d41d165e5c3.png)
 
 After selecting the firmware, click Start. The loader device will be detected, and the flashing process will begin automatically.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374490-7567e660-737f-4218-8cfa-3b7c9be57d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418374807-bd102591-2c43-41da-83b9-2f7307977ca3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418374807_bd102591_2c43_41da_83b9_2f7307977ca3.png)
 
 #### 6.1.3 OTG Step-by-Step Flashing Test
 
@@ -2721,11 +2721,11 @@ Take separate flashing boot. img (including device tree and startup logo) as an 
 
 Connect the development board to the host using a Type-C cable, hold down the VOL+ key without releasing it, then press the reset key to perform a system reset. Release the VOL+ key after approximately two seconds. The system will prompt “ Find Loader Device”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375129-89e69424-6ab1-40ec-a113-86f2437728d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418375129_89e69424_6ab1_40ec_a113_86f2437728d9.png)
 
 Click the Device Partition Table button. The partition addresses will be read automatically. When prompted whether to update the download address, click Yes. After the partition table is read successfully, select the partition image in the area on the right side of the partition entry and check the corresponding partition.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375357-f7716cdb-bc83-43f5-83d6-717dff0f7495.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418375357_f7716cdb_bc83_43f5_83d6_717dff0f7495.png)
 
 Click the “Execute” button to automatically flash and restart.
 
@@ -2737,13 +2737,13 @@ Flashing TF card making and testing.
 
 Copy SDDiskTool\_v1.76.zip from the user profile tool directory to any windows directory. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375573-2107d191-e37e-4a2c-96d2-442aa8f4b146.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418375573_2107d191_e37e_4a2c_96d2_442aa8f4b146.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375797-0c018d08-61c7-48e9-9500-72810e54ce87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418375797_0c018d08_61c7_48e9_9500_72810e54ce87.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1720418375991-5a26cc1b-497f-4931-a823-0e988fadcaf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418375991_5a26cc1b_497f_4931_a823_0e988fadcaf9.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
@@ -2760,6 +2760,6 @@ At this time, remove the TF card, and the system will automatically restart (do 
 
 Serial port information during the flashing process:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213040605-214bd911-2b8c-402d-9986-34abd0ddb47a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213040605_214bd911_2b8c_402d_9986_34abd0ddb47a.png)
 
 If the device does not restart automatically after removing the TF card, you can complete the flashing process by restarting it manually. Please wait patiently whilst the data is being written.
