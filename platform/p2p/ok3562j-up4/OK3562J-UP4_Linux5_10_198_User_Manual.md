@@ -138,7 +138,7 @@ The OK3562J-UP4 platform features a Type-C port for serial debugging and an onbo
 
 #### 2.3.1 Serial Connection Settings
 
- **Note:**
+**Note:**
 
 + **Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow;**
 + **The serial terminal supports password-free login;**
