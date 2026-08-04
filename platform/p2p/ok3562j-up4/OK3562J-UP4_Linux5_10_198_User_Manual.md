@@ -27,6 +27,7 @@ There are five chapters:
 |----------|----------|
 | //| Explanation of input commands or output information:|
 | Username@Hostname| root@OK-x-UP4: Development Board Serial Port Login Account;<br />forlinx@OK-x-UP4: Development Board Remote Login Account;<br />forlinx@LinuxLinux: Development Environment Account information. <br />Use these credentials to identify the appropriate operational environment. |
+
 Example: Checking the Loading Status of the AW-CM358 Module Driver
 
 ```bash
