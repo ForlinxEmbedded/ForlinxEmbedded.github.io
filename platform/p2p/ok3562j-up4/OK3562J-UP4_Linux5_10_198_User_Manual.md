@@ -1,6 +1,4 @@
-
-
-# Linux5.10.198\_User’s Manual\_V1.0
+Linux5.10.198\_User’s Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -62,7 +60,9 @@ RK3562J is a low-power, high-performance processor based on the ARM64 architectu
 
 **Front**
 
-![](3562UP4%E6%8E%A5%E5%8F%A3%E5%9B%BE%E8%83%8C%E9%9D%A2.png)**Back**
+![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213029103-f9fc9cf3-60f9-4a8b-9293-765ef88f9720.png)
+
+**Back**
 
 **Note: Hardware specifications are not covered in this software manual. Before development, please refer to the "User’s Hardware Manual" to understand the product naming and hardware configuration.**
 
@@ -113,8 +113,7 @@ The table below details the eMMC storage partition information for the Linux ope
 
 ### 2.1 Preparation Before Startup
 
-Development Login methods: Serial login and network login.                                                              
-Hardware preparations before powering on the system:
+Development Login methods: Serial login and network login.                                                              Hardware preparations before powering on the system:
 
 + 12V3A DC power
 + Debugging Serial Cable (Serial Login Use)
@@ -152,11 +151,11 @@ Step 1: Confirm the serial port number connected to the computer, checking the p
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030853_8fc3b2a0_4e27_4d07_8c5e_50497f17a55b.png)
+![Image](1736730512384_873b6eed_2f4f_4c7e_a0c6_74559ee3ba64.png)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure, using COM43 as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030985_290e3b67_0b4b_413b_9449_ce9403f448d7.png)
+![Image](1736730550283_79cf2052_3505_4631_828e_5f7c6735f691.png)
 
 Step 4: Turn on the power switch of the development board. Boot messages will be displayed on the serial terminal, and the system will log in automatically without a password.
 
@@ -198,9 +197,9 @@ Temporarily disable the computer’s firewall (this is a general operation; spec
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](1.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
+![Image](2.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -238,11 +237,11 @@ Install the file Zilla tool on windows and follow the steps shown in the figure 
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654405_e51665a5_81c7_4442_a2ae_e8cc99e78fff.png)
+![Image](1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
 
 After successful login, upload and download operations can be performed.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
+![Image](1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switch
 
@@ -368,7 +367,7 @@ Click the ping button to test.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417669155_ecacded0_2bcd_408b_9a47_cbcff79124f3.png)
 
-#### 3.1.6 WiFiTest
+#### 3.1.6 WiFi Test
 
 “"WIFI" is a tool for configuring WiFi. The OK- x- UP4 platform comes with the AW-CM358 module onboard by default. The wifi module will exist in the form of mlan node in the system, and this test corresponds to mlan0:
 
@@ -1504,8 +1503,6 @@ Default agent request successful
 Board Passive Pairing (Standard pairing process).
 
 Now, open the Bluetooth search function on your PC; a device named “OK3562-UP4” will appear. Select it to pair.
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213035959_8882fe3e_47bd_4478_961a_117e22d35da9.png)
 
 The print information on the development board is as follows. Enter "yes":
 
