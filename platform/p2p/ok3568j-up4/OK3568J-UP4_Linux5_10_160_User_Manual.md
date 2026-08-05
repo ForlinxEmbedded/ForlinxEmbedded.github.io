@@ -2386,8 +2386,6 @@ After selecting the firmware, click “Start.” The loader device will be detec
 
 Downloading firmware:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373048_22012107_58e4_4093_85ac_ca9726722f00.png)
-
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
@@ -2449,8 +2447,6 @@ Copy SDDiskTool\_v1.69.zip from the user profile tools directory to any director
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, check "Firmware Upgrade" and select update.img. Click Start Creating.
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3568j-up4/OK3568J-UP4_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
