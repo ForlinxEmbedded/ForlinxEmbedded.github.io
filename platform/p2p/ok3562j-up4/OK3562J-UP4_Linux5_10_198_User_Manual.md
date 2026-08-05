@@ -60,7 +60,7 @@ RK3562J is a low-power, high-performance processor based on the ARM64 architectu
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213029103-f9fc9cf3-60f9-4a8b-9293-765ef88f9720.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213029103_f9fc9cf3_60f9_4a8b_9293_765ef88f9720.png)
 
 **Back**
 
@@ -151,11 +151,11 @@ Step 1: Confirm the serial port number connected to the computer, checking the p
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200.
 
-![Image](1736730512384_873b6eed_2f4f_4c7e_a0c6_74559ee3ba64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1736730512384_873b6eed_2f4f_4c7e_a0c6_74559ee3ba64.png)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure, using COM43 as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
-![Image](1736730550283_79cf2052_3505_4631_828e_5f7c6735f691.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1736730550283_79cf2052_3505_4631_828e_5f7c6735f691.png)
 
 Step 4: Turn on the power switch of the development board. Boot messages will be displayed on the serial terminal, and the system will log in automatically without a password.
 
@@ -197,9 +197,9 @@ Temporarily disable the computer’s firewall (this is a general operation; spec
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1.png)
 
-![Image](2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/2.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -237,11 +237,11 @@ Install the file Zilla tool on windows and follow the steps shown in the figure 
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![Image](1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
 
 After successful login, upload and download operations can be performed.
 
-![Image](1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switch
 
