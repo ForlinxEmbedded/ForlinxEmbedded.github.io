@@ -19,7 +19,9 @@ There are five chapters:
 + Chapter 2. describes two login methods: serial port login and network login;
 + Chapter 3. covers the desktop functions and QT interface functional testing, conducted via command-line operations;
 + Chapter 4. includes camera playback tests and video hardware encoding/decoding tests;
-+ Chapter 5. details methods for updating the image to storage devices, allowing you to choose the appropriate flashing method based on your actual needs. Additionally, the manual includes explanations of some symbols and formats.
++ Chapter 5. details methods for updating the image to storage devices, allowing you to choose the appropriate flashing method based on your actual needs. 
+
+Additionally, the manual includes explanations of some symbols and formats.
 
 | **Format**| **Meaning**|
 |----------|----------|
