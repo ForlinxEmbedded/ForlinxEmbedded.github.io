@@ -115,7 +115,8 @@ The table below details the eMMC storage partition information for the Linux ope
 
 ### 2.1 Preparation Before Startup
 
-Development Login methods: Serial login and network login.                                                              Hardware preparations before powering on the system:
+Development Login methods: Serial login and network login.                                                              
+Hardware preparations before powering on the system:
 
 + 12V3A DC power
 + Debugging Serial Cable (Serial Login Use)
