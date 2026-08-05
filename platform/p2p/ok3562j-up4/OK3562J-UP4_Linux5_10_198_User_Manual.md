@@ -125,7 +125,7 @@ The debug serial port on the development board is a USB Type-C port. You can con
 + Ethernet cable (for network login)
 + Display screen — connect the screen according to the development board interface (optional if display is not needed)
 
-![Image](1773213030654_5c1085b6_a120_4e9f_80d0_19cf6b1a4d61.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030654_5c1085b6_a120_4e9f_80d0_19cf6b1a4d61.png)
 
 ### 2.2 Driver Installation Failure
 
@@ -243,7 +243,7 @@ Open the filezilla tool, click File, and select Site Manager.
 
 After successful login, upload and download operations can be performed.
 
-![Image](1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800-1785912045619.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800_1785912045619.png)
 
 ### 2.5 Screen Switch
 
@@ -427,7 +427,7 @@ In the hostname field, write the target IP to ping. After clicking the “ping�
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1.png)
 
 To exit the browser, use the navigation bar: File -> Quit.
 
@@ -1294,7 +1294,7 @@ For Device mode, set DIP switch S2 on the carrier board to OFF.
 
 Connect your computer to the P35 USB-C socket on the development board using a USB-A to USB-C cable, then simply restart the development board.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506-s12-mini/OK3506B-S12_Linux6_1_99_User_Manual/1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
 
 Once the Rockchip development tools display the message “An ADB device is detected”, you can use “adb pull” to download files from the development board to your computer, and “adb push” to upload files from your computer to the development board.
 
@@ -1575,7 +1575,7 @@ Development board receives files
 
 After successful pairing, on the computer side, you can use Bluetooth to send files to the OK-x-UP4.
 
-![Image](1718935056697_d3bf8d5c_555b_48b7_92b1_85bee6b12e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1718935056697_d3bf8d5c_555b_48b7_92b1_85bee6b12e49.png)
 
 The received file is saved in the /tmp directory.
 
@@ -1596,7 +1596,7 @@ Connection successful
 [C4:E1:A1:BA:A4:9E]# send /userdata/media/test.mp3	      		   //Send files
 ```
 
-![Image](1718935056980_6b3a368f_01d4_451e_9c5c_ee4713defc5d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1718935056980_6b3a368f_01d4_451e_9c5c_ee4713defc5d.png)
 
 Your mobile phone will receive a request to receive a file; tap “Accept” to transfer the file.
 
@@ -2646,11 +2646,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![Image](1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click Install Driver.
 
-![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 #### 6.1.2 Complete OTG Flashing
 
@@ -2669,15 +2669,15 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 
 Open the Rockchip development tool:
 
-![Image](1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
-![Image](1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 Tap “Switch” and wait for the board to enter LOADER mode, then tap the “Upgrade” button to proceed with the upgrade.
 
-![Image](1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1731548994367_66e6de27_538b_4c85_846f_8b31ffcf140d.png)
 
 **MASKROM Mode Introduction**
 
@@ -2685,7 +2685,7 @@ If Loader mode is inaccessible (loader problem, etc.), press and hold the USBLOA
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213040377_7e4625d6_6ced_437f_9c3d_a1985fbb7d07.png)
 
-![Image](1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming.
 
@@ -2703,11 +2703,11 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 + **Device detection occurs when the VOL+ button is pressed during the power-on of the development board;**
 + **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![Image](1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
 After selecting the firmware, click Start. The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 #### 6.1.3 OTG Step-by-Step Flashing Test
 
@@ -2721,7 +2721,7 @@ Take separate flashing boot. img (including device tree and startup logo) as an 
 
 Connect the development board to the host using a Type-C cable, hold down the VOL+ key without releasing it, then press the reset key to perform a system reset. Release the VOL+ key after approximately two seconds. The system will prompt “ Find Loader Device”.
 
-![Image](1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the Device Partition Table button. The partition addresses will be read automatically. When prompted whether to update the download address, click Yes. After the partition table is read successfully, select the partition image in the area on the right side of the partition entry and check the corresponding partition.
 
@@ -2735,13 +2735,13 @@ Flashing TF card making and testing.
 
 Copy SDDiskTool\_v1.76.zip from the user profile tool directory to any windows directory. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
