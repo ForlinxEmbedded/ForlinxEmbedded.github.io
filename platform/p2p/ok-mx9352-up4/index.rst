@@ -6,9 +6,8 @@
 
    🔗 Official product overview:
    
-   `FET-MX9352-C System On Module <https://www.forlinx.net/product/i.mx-9352-som-133.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
+   `FET-MX9352-UP4 System On Module <https://www.forlinx.net/product/fetmx9352-up4-nxp-imx93-184.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs>`_
 
-   **FET-MX9352-UP4 System On Module** (Coming Soon)
 
 
 =====================
