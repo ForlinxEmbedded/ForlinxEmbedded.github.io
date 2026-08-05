@@ -62,7 +62,7 @@ RK3562J is a low-power, high-performance processor based on the ARM64 architectu
 
 **Front**
 
-![Image](1773213029103_f9fc9cf3_60f9_4a8b_9293_765ef88f9720.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213029103_f9fc9cf3_60f9_4a8b_9293_765ef88f9720.png)
 
 **Back**
 
@@ -125,7 +125,7 @@ The debug serial port on the development board is a USB Type-C port. You can con
 + Ethernet cable (for network login)
 + Display screen — connect the screen according to the development board interface (optional if display is not needed)
 
-![Image](1773213030654_5c1085b6_a120_4e9f_80d0_19cf6b1a4d61.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213030654_5c1085b6_a120_4e9f_80d0_19cf6b1a4d61.png)
 
 ### 2.2 Driver Installation Failure
 
@@ -2703,7 +2703,7 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 + **Device detection occurs when the VOL+ button is pressed during the power-on of the development board;**
 + **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![Image](1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
 After selecting the firmware, click Start. The loader device will be detected, and the flashing process will begin automatically.
 
