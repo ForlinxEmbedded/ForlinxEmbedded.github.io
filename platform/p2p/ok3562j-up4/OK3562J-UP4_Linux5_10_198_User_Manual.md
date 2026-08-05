@@ -62,7 +62,7 @@ RK3562J is a low-power, high-performance processor based on the ARM64 architectu
 
 **Front**
 
-![Image](1773213029103_f9fc9cf3_60f9_4a8b_9293_765ef88f9720.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213029103_f9fc9cf3_60f9_4a8b_9293_765ef88f9720.png)
 
 **Back**
 
