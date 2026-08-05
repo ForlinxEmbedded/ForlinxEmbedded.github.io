@@ -199,9 +199,9 @@ Temporarily disable the computer’s firewall (this is a general operation; spec
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/3.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -427,7 +427,7 @@ In the hostname field, write the target IP to ping. After clicking the “ping�
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/2.png)
 
 To exit the browser, use the navigation bar: File -> Quit.
 
@@ -2683,7 +2683,7 @@ Tap “Switch” and wait for the board to enter LOADER mode, then tap the “Up
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the USBLOAD key, then press the reset key to enter maskrom mode for burning.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213040377_7e4625d6_6ced_437f_9c3d_a1985fbb7d07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1773213040377_7e4625d6_6ced_437f_9c3d_a1985fbb7d07-1785918808674.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
