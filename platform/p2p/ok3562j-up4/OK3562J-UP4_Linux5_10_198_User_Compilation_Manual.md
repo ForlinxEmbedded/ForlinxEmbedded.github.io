@@ -218,7 +218,7 @@ Afterward, click “Power on this virtual machine” to start installing the ima
 
 With the above, the Ubuntu system installation is complete.
 
-#### **3.1.**2 Ubuntu Basic Configuration 
+#### 3.1.2 Ubuntu Basic Configuration
 
 **3.1.2.1 VMware Tools Installation**
 
