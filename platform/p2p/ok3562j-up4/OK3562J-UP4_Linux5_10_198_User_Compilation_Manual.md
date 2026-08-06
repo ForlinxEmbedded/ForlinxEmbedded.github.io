@@ -66,35 +66,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the setup file to enter the installation wizard.
 
-![Image](1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57-1785996948378.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57-1785996948378.png)
 
 Click “Next.”
 
-![Image](1720169299827_654af716_3d46_4609_97ff_054e119673bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169299827_654af716_3d46_4609_97ff_054e119673bb.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
 
 Check, then click “Next.”
 
-![Image](1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
 
 Click “Install.”
 
-![Image](1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png)
 
 Wait for the installation to complete.
 
-![Image](1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
@@ -126,7 +126,7 @@ The file "3568.vmx" in the "3568 Development Environment" folder is the virtual 
 
 Open the installed virtual machine software.
 
-![Image](1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png)
 
 Navigate to the directory where the "3568.vmx" file was extracted, and double-click to open the startup file.
 
@@ -134,7 +134,7 @@ Navigate to the directory where the "3568.vmx" file was extracted, and double-cl
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
-![Image](1730770392113_46f60b0b_8a73_4880_bb2c_316b0b3f8e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730770392113_46f60b0b_8a73_4880_bb2c_316b0b3f8e49.png)
 
 The provided development environment is set to automatically log in to the account forlinx on startup by default.
 
@@ -156,59 +156,59 @@ Download the “ubuntu-22.04.6-desktop-amd64.iso” version (the specific versio
 
 **Step** **1:** Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:
 
-![Image](1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png)
 
 **Step** **2:** Select the compatibility for the corresponding VMware version (you can view the version under Help -> About VMware Workstation). After confirming, click “Next”:
 
-![Image](1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png)
 
 Choose “Installer disc image file (iso)” and click “Next”:
 
-![Image](1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png)
 
 Enter the full name, username, and password, then click “Next”:
 
-![Image](1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png)
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![Image](1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png)
 
 Configure the number of cores, then click “Next”:
 
-![Image](1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png)
 
 Configure at least 8GB of memory and select “Next”:
 
-![Image](1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png)
 
 Set the network type, use the default NAT networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
 
 Use the recommended I/O controller and click “Next”:
 
-![Image](1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
 
 Use the recommended disk type and click “Next”:
 
-![Image](1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
 
 Use the default option, “Create a new virtual disk”, and click “Next”:
 
-![Image](1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
 
 Allocate a disk size of 200GB and choose “Split virtual disk into multiple files”, then click “Next”:
 
-![Image](1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png)
 
 Use the default settings and click “Next”:
 
-![Image](1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png)
 
 Click “Finish”:
 
-![Image](1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
 
@@ -293,13 +293,13 @@ By default, after the virtual machine installation is complete, the network conn
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.
 
-![Image](1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png)
 
 **3.1.4.2 Bridged Connection Mode**
 
 When the VMware virtual network adapter device is in bridged mode, the host network card and the virtual machine network card communicate through a virtual network bridge. In the Ubuntu environment, you need to set a network IP in the same subnet as the host. To access the external network, you need to set the DNS to be consistent with the host network card. If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode.
 
-![Image](1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
 
 ### 3.2 Installing Toolkits
 
