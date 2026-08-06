@@ -66,7 +66,7 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the setup file to enter the installation wizard.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57-1785996948378.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57.png)
 
 Click “Next.”
 
