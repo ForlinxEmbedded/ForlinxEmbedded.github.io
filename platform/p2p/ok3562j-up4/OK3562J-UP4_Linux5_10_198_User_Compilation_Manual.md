@@ -56,7 +56,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 ### 1.1 Downloading and Purchasing VMware Software
 
-Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
+Visit the VMware official website at [VMware Global Website (English)](https://www.vmware.com/)to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
 
