@@ -462,7 +462,7 @@ forlinx@ubuntu:~$ mkdir -p /home/forlinx/work	//Create the working directory in 
 Copy the source code files OK3562-UP4-source.tar.bz2.\* from the user’s home directory to the /home/forlinx/work directory on the virtual machine.
 
 ```bash
-forlinx@ubuntu:~$ cd /home/forlinx/work														//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work						      //Switch to the working directory
 forlinx@ubuntu:~/work$ cat OK-x-UP4-source.tar.bz2.* > OK-x-UP4-source.tar.bz2
 forlinx@ubuntu:~/work$ tar -xvf OK-x-UP4-source.tar.bz2				//Extract the compressed file to its default location
 ```
