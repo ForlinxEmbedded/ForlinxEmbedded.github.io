@@ -58,7 +58,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Linux5_10_198_User_Compilation_Manual/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -112,11 +112,11 @@ First, download the development environment provided by Forlinx. The development
 
 Generate the checksum and compare it with the value in the checksum file. If the checksums match, the downloaded file is valid. If they do not match, the file may be corrupted, and you should download it again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730769768995-94fc9c91-8bff-4506-a222-04aa291b0abc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730769768995_94fc9c91_8bff_4506_a222_04aa291b0abc.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730769837121-d47df3f6-5507-4694-8dba-ba7ea0804ebe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730769837121_d47df3f6_5507_4694_8dba_ba7ea0804ebe.png)
 
 Once the extraction is complete, you will obtain a folder named “3568 Development Environment.”
 
@@ -130,7 +130,7 @@ Open the installed virtual machine software.
 
 Navigate to the directory where the "3568.vmx" file was extracted, and double-click to open the startup file.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730770320441-2cf924a2-dca8-4310-9c90-9c74ed10cf7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730770320441_2cf924a2_dca8_4310_9c90_9c74ed10cf7b.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -150,7 +150,7 @@ The installed Ubuntu version is 22.04, and all the introductions and development
 
 Download the “ubuntu-22.04.6-desktop-amd64.iso” version (the specific version to download can be based on your own needs; here we use version 22.04.6 as an example).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771033843-6436990d-2bc1-4115-a050-efa4c98863f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771033843_6436990d_2bc1_4115_a050_efa4c98863f7.png)
 
 #### 3.1.1 Creating an Ubuntu Virtual Machine
 
@@ -210,7 +210,7 @@ Click “Finish”:
 
 ![Image](1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Compilation_Manual/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -228,15 +228,15 @@ Without this tool installed, you cannot use copy and paste or drag and drop file
 
 First, click “Virtual Machine” on the VMware navigation bar, then click “Install VMware Tools” in the dropdown menu.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Compilation_Manual/1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png)
 
 After completion, enter Ubuntu. A VMware Tools CD will appear on the desktop; click to enter it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771946460-47f93c8a-72e6-4e35-b501-dfae1b28a58b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771946460_47f93c8a_72e6_4e35_b501_dfae1b28a58b.png)
 
 After entering, you will see a compressed file VMware Tools-10.3.10-12406962. tar. gz (different virtual machine versions may be different), and copy the file to the home directory (that is, the directory of the home personal user name).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771960270-018814b3-60d9-4ae2-bd26-807f2493d1cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771960270_018814b3_60d9_4ae2_bd26_807f2493d1cd.png)
 
 Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the command to extract it:
 
@@ -244,17 +244,17 @@ Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the com
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.10-12406962.tar.gz
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771978710-e52e76d9-b4bf-4cff-a694-c5cab42ba60e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771978710_e52e76d9_b4bf_4cff_a694_c5cab42ba60e.png)
 
 After extraction completes, a folder named “vmware-tools-distrib” will appear.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730771995073-fec96427-d5e7-4ed1-bb8d-80f83a344e73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730771995073_fec96427_d5e7_4ed1_bb8d_80f83a344e73.png)
 
 Return to the terminal and type: cd vmware-tools-distrib to enter the directory.
 
 Then type: sudo ./vmware-install.pl and press Enter. Enter your password and the installation will begin. When prompted, type yes; otherwise, just press Enter to install the default settings.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772008675-66b60f70-4165-495d-8133-fe57d8f45842.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772008675_66b60f70_4165_495d_8133_fe57d8f45842.png)
 
 After VMware Tools installation is complete, file copy-paste between Windows and Ubuntu will be enabled.
 
@@ -262,17 +262,17 @@ After VMware Tools installation is complete, file copy-paste between Windows and
 
 If the virtual machine cannot display in full screen, you can click on “View”, select “Auto-Adjust Size”, and then click “Autofit Guest” to resolve the full-screen issue.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3562j-c/OK3562J-C_Forlinx_Desktop22_04_User_Compilation_Manual/1730772026300_6bc60f00_11ba_4a9c_b734_f1bc161d9cc3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772026300_6bc60f00_11ba_4a9c_b734_f1bc161d9cc3.png)
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772043441-6f816146-3616-4a85-941a-9acdc4bee9db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772043441_6f816146_3616_4a85_941a_9acdc4bee9db.png)
 
 **3.1.2.3 Virtual Machine Sleep Settings**
 
 Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -> Power -> Blank Screen and set it to “Never”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772063231-ce05c24d-3dd9-4165-abc7-ed83fc88b9f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772063231_ce05c24d_3dd9_4165_abc7_ed83fc88b9f4.png)
 
 #### 3.1.3 Virtual Machine Swapfile Configuration
 
@@ -323,31 +323,31 @@ forlinx@ubuntu:~$ ./qt-opensource-linux-x64-5.12.9.run
 
 The following interface will pop up. Click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772140571-5f45f676-0d34-4581-bcd9-f5e399a90912.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772140571_5f45f676_0d34_4581_bcd9_f5e399a90912.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772156283-7396a37b-7226-485b-9e1c-4b2fc23924d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772156283_7396a37b_7226_485b_9e1c_4b2fc23924d6.png)
 
 In the following screen, click "Browse …" Select the installation path of Qtcreator, and then click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772180821-2960413d-d39b-478e-935d-3103f658c810.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772180821_2960413d_d39b_478e_935d_3103f658c810.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772195855-8eba793b-65dc-437c-893b-1c33081c6af3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772195855_8eba793b_65dc_437c_893b_1c33081c6af3.png)
 
 Agree to the license agreement and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772216086-955943c0-44a3-453e-b835-4698822d527f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772216086_955943c0_44a3_453e_b835_4698822d527f.png)
 
 Click “Install”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772235873-7cd2765b-583b-4f36-a14a-ab778190ca3f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772235873_7cd2765b_583b_4f36_a14a_ab778190ca3f.png)
 
 After the installation is completed, the following interface will be displayed. Uncheck the option "Launch Qt Creator" "and click " Finish" to complete the installation of Qt Creator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772263266-0a2eadd1-d398-42fb-b6c6-07b945b4c997.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772263266_0a2eadd1_d398_42fb_b6c6_07b945b4c997.png)
 
 Navigate to the actual Qt Creator installation directory: /home/forlinx/Qt5.12.9/Tools/QtCreator/bin/
 
@@ -364,7 +364,7 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772283225-2f5e83b9-9ca5-42f8-aafe-33f8401db616.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772283225_2f5e83b9_9ca5_42f8_aafe_33f8401db616.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -411,29 +411,29 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 
 Start the Qt Creator program and click Tools- > option:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772317485-7b380dc7-35cb-4479-af70-51055512ed01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772317485_7b380dc7_35cb_4479_af70_51055512ed01.png)
 
 Enter the Options interface, click "Kits" on the left, then click the "Compilers" tab on the top of the middle, and click "Add-> GCC-> C + +" on the right, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213045020-cdaa4a45-9caa-4d12-8791-69eb1d902462.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213045020_cdaa4a45_9caa_4d12_8791_69eb1d902462.png)
 
 Locate “aarch64-linux-g++” in the /opt/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin directory, select it, click “Open”, and change the “Name”.
 
 Add the GCC compiler using the same method, and click "Add->GCC->C" on the right, as shown in the image:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213045113-ab9b95fa-b708-4205-99df-d9f6a0a40ea2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213045113_ab9b95fa_b708_4205_99df_d9f6a0a40ea2.png)
 
 Locate “aarch64-linux-gcc” in the /opt/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin directory, select it, click “Open”, and change the Name.
 
 Click the “Qt Versions” tab, then click “Add”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45201767/1730772447003-b50771bb-f0a0-4e39-9970-f535526eaf75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1730772447003_b50771bb_f0a0_4e39_9970_f535526eaf75.png)
 
 Locate “qmake” in the /opt/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin directory, select it and click “Open”. Once added, the screen will appear as shown below; click “Apply”.
 
 Click the “Kits” tab, click “Add” on the right to add a new Kit. Modify the contents according to the figure below and click “Apply”
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213045209-81fdbbd3-9e49-4ae9-8cf5-60333e4cb862.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213045209_81fdbbd3_9e49_4ae9_8cf5_60333e4cb862.png)
 
 ## 4\. Compilation of Related Code
 
@@ -492,13 +492,13 @@ forlinx@ubuntu: ~/work/OK-x-UP4-source$./build.sh all
 
 After executing, there will be options to input, as shown in the picture. After entering "1", press Enter to continue.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213046758-8d5c785b-ad35-4db4-8c5c-fb9713f6336c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213046758_8d5c785b_ad35_4db4_8c5c_fb9713f6336c.png)
 
 **Note: If the prompt mentioned above does not appear, the configuration is complete and you can proceed to compile as normal; this is not a mandatory step.**
 
 After a successful compilation, the corresponding image files will be generated in the rockdev folder.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213046876-6384d111-8025-4fe1-ac74-e183283564dc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213046876_6384d111_8025_4fe1_ac74_e183283564dc.png)
 
 Note: update.img is a pre-packaged file intended for full flashing via OTG or a TF card; the other files are for step-by-step flashing.
 
@@ -605,18 +605,18 @@ Open Qt Creator in the development environment (please open it according to the 
 
 Choose the OK3562-UP4 cross-compilation toolchain, then click Configure Project. For detailed cross-compilation toolchain configuration, refer to “3.4 Qt Compilation Environment Configuration”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213046962-f008b482-96ea-4f00-b4d9-e8658e2f2321.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213046962_f008b482_96ea_4f00_b4d9_e8658e2f2321.png)
 
 Click the Project option and uncheck Shadow build on the left.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213047054-452c451f-754d-4f80-9a50-c65b49071b6a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213047054_452c451f_754d_4f80_9a50_c65b49071b6a.png)
 
 Next, click Build → Build All Projects from the menu bar to start compilation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213047133-be14ff0e-c233-4982-b991-85e6edbc4c37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213047133_be14ff0e_c233_4982_b991_85e6edbc4c37.png)
 
 Once the progress bar at the bottom right (Build) completes, the compilation is finished. At this point, a newly generated binary file named fltest\_qt\_watchdog can be found in the directory ~/forlinx\_qt\_demo/fltest\_qt\_watchdog.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1773213047235-5ea87231-66c9-47d5-ad30-7aab4fd09680.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Compilation_Manual/1773213047235_5ea87231_66c9_47d5_ad30_7aab4fd09680.png)
 
 Copy the compiled fltest\_qt\_watchdog to the development board to run the test.
