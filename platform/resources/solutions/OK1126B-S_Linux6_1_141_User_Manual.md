@@ -135,8 +135,6 @@ Disk /dev/mmcblk0boot1 doesn't contain a valid partition table
 
 ### 2.2 Debugging Serial Port Driver Installation
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20251222131216628.png)
-
 OK1126B-S/ The OK1126BJ-S platform features a Type-C port for serial debugging and an onboard USB-to-UART chip. No additional USB-to-serial debugging tool is required, making the setup simple and convenient.
 
 To install the driver, please use the driver package CH343SER.EXE provided in the \\” Table of Contents Tools directory of the software materials.
