@@ -2204,7 +2204,7 @@ Click the "Device Partition Table" button to automatically read the partition . 
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c-1786092028075.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c_1786092028075.png)
 
 Click the area to the right of the partition to select the partition image, and tick the partition.
 
