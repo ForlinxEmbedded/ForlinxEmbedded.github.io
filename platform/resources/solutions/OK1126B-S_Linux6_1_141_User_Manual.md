@@ -147,7 +147,7 @@ To install the driver, please use the driver package CH343SER.EXE provided in th
 
 + **Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow control;**
 
-+ **Hardware Requirements: **
++ **Hardware Requirements:** 
 
   **Type-C for connecting PC and development board.**
 
