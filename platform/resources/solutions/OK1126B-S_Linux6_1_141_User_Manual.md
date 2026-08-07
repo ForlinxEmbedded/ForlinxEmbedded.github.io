@@ -172,6 +172,8 @@ After the PC terminal software is configured, connect the PC and the development
 
 The following startup message indicates a successful boot, and you can press Enter to create a new command line:
 
+![](C:/Users/1/Desktop/image.png)
+
 ### 2.4 Network Login
 
 OK1126B-S/ In addition to using the debug UART for login, the OK1126BJ-S supports SSH network login to the development board, as well as SFTP file transfer.. Take the development board IP 172.20.0.129 as an example to introduce the network tool. The network IP can be modified through ifconfig eth0 172.20.0.129, and then the development board and the PC are connected to the same switch or directly connected through the network cable.
