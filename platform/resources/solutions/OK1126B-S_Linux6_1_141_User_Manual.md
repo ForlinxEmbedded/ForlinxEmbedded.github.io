@@ -127,11 +127,11 @@ Disk /dev/mmcblk0boot1 doesn't contain a valid partition table
 + 5V2A DC Power Cable
 + Debug port cable
 
-![](images/image-20251222131216628.png)
+![](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20251222131216628.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
-![](images/image-20251222131216628.png)
+![](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20251222131216628.png)
 
 OK1126B-S/ The OK1126BJ-S platform features a Type-C port for serial debugging and an onboard USB-to-UART chip. No additional USB-to-serial debugging tool is required, making the setup simple and convenient.
 
@@ -158,7 +158,7 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step1: Identify the serial port number assigned to the PC. In Device Manager, locate the serial port with the name ending in “SERIAL-”, which corresponds to the actual debug UART. For example, this may appear as COM61; the port number should be based on the actual one detected by the system. 
 
-![Image](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200. 
 
@@ -227,9 +227,9 @@ root@OK1126B-S-debian12:~# nmcli con modify eth0 ipv4.method manual ipv4.address
 root@OK1126B-S-debian12:~# nmcli con up eth0
 ```
 
-![image-20260727103315682](images/image-20260727103315682.png)
+![image-20260727103315682](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103315682.png)
 
-![image-20260727103532430](images/image-20260727103532430.png)
+![image-20260727103532430](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103532430.png)
 
 ### 2.5 Screen Switch
 
@@ -356,11 +356,17 @@ A connection dialog will appear. Click “Confirm” and simultaneously perform 
 
 Board Receiving File Test
 
-On the mobile device, choose “Send via Bluetooth” to transfer a file to the development board. The received file will be saved in the /tmp directory on the board. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783050763358_a0df993d_fcd0_4486_abdf_10fd468a47d7.png)
+On the mobile device, choose “Send via Bluetooth” to transfer a file to the development board. The received file will be saved in the /tmp directory on the board. 
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783050763358_a0df993d_fcd0_4486_abdf_10fd468a47d7.png)
 
 Board Sending File Test
 
-Left-click “Send File” on the page, then select the file to send. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783059627669_c09b9585_6026_41e9_9668_1da1a89f8dec.png)Accept the file on the mobile device to complete the file transfer from the development board. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783059694926_59bb1036_6fdc_4f03_8f36_508c35686812.png)
+Left-click “Send File” on the page, then select the file to send. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783059627669_c09b9585_6026_41e9_9668_1da1a89f8dec.png)
+
+Accept the file on the mobile device to complete the file transfer from the development board. 
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783059694926_59bb1036_6fdc_4f03_8f36_508c35686812.png)
 
 ### 3.2 Qt-related Tests
 
@@ -898,7 +904,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 Mainly use the date and hwclock tools to set the software and hardware time. Test whether the software clock is synchronized with the RTC clock when the development board is powered off and then powered on. (Note: Ensure that a button battery is installed on the board and the battery voltage is normal.)
 
-![image-20260727115255234](images/image-20260727115255234.png)
+![image-20260727115255234](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727115255234.png)
 
 ```bash
 root@OK1126B-S-debian12:~# date -s "2026-7-9 10:50:00"     // Set system time
@@ -926,7 +932,7 @@ Setting S2 to ON: Activates Host Mode. In this mode, both the USB 3.0 and USB 2.
 
 The following demonstration will use the USB 3.0 interface in Host Mode to mount a USB drive as an example:
 
-![image-20260727134119243](images/image-20260727134119243.png)
+![image-20260727134119243](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727134119243.png)
 
 The USB 3.0 and OTG functions are multiplexed and switched via a DIP switch. When using the USB 3.0 interface in host mode (e.g., for a USB drive), please ensure the S2 switch is in the ON position.
 
@@ -1225,7 +1231,7 @@ root@OK1126B-S-debian12:~# nmcli connection up "eth0"     //Restart the eth0 con
 
 The development board features one white XH2.54-2P socket (P12), capable of driving an 8Ω speaker with a maximum output power of 1.3W. Before conducting an audio playback test, please plug the speaker into the corresponding socket on the carrier board and use the following command to perform the test:
 
-![image-20260727140912558](images/image-20260727140912558.png)
+![image-20260727140912558](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727140912558.png)
 
 ```bash
 root@OK1126B-S-debian12:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3
@@ -2120,11 +2126,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![Image](1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click Install Driver.
 
-![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 #### 6.1.2 Complete OTG Flashing
 
@@ -2144,7 +2150,7 @@ OTG and USB3.0 are multiplexed, so the DIP switch must be adjusted.**
 
 Open the Rockchip development tool:
 
-![Image](1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1735268293437_d10c6629_d1b4_437f_9503_0f35995b4bf9.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
@@ -2184,7 +2190,7 @@ Take separate flashing boot. img (including device tree and startup logo) as an 
 
 Connect the development board to the host computer using a Type-C cable. Once the development board has booted, run reboot loader, or hold down Ctrl+D whilst powering on until the system prompts that a LOADER device has been detected.
 
-![Image](1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
@@ -2192,19 +2198,19 @@ Click the "Device Partition Table" button to automatically read the partition . 
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c-1786092028075.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c-1786092028075.png)
 
 Click the area to the right of the partition to select the partition image, and tick the partition.
 
 Click the “Execute” button to automatically flash and restart.
 
-![Image](1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 **MASKROM Mode Introduction**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the UPDATE key, then press the reset key to enter maskrom mode for flashing.
 
-![Image](1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this point, the system will display a message indicating that a MASKROM device has been detected; the flashing procedure is the same as for LOADER mode, and it is best to use update.img for flashing.
 
@@ -2218,11 +2224,11 @@ TF card making and testing.
 
 Copy SDDiskTool\_v1.78.zip from the user profile tool directory to any windows directory. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
