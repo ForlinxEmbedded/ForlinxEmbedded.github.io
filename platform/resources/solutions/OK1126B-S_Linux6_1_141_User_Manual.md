@@ -37,15 +37,19 @@ There are six chapters:
 
 The OK1126B-S/OK1126BJ-S is a low-power, high-performance processor based on the ARM64 architecture. It integrates a quad-core Cortex-A53 CPU, along with NEON, FPU, NPU, and MCU units, offering NPU computing power up to 3.0 TOPS. It is suitable for AI applications such as intelligent vision.
 
-Connection method: Stamp hole. The main interfaces are shown in the figure below:
+Connection method: Stamp hole. 
 
-Front
+The main interfaces are shown in the figure below:
 
-Back
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1.png)
 
-Note:
+**Front**
 
-Hardware parameters are not discussed further in this software manual. Before proceeding with software development based on this manual, please read the “OK1126B-S/OK1126BJ-S Hardware Manual” located in the “Hardware Resources\\User Manual” directory. This will help you understand the product naming conventions and the hardware configuration of the unit you are using, thereby facilitating your effective use of this product.
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/2.png)
+
+**Back**
+
+**Note: Hardware parameters are not discussed further in this software manual. Before proceeding with software development based on this manual, please read the “OK1126B-S/OK1126BJ-S Hardware Manual” located in the “Hardware Resources\\User Manual” directory. This will help you understand the product naming conventions and the hardware configuration of the unit you are using, thereby facilitating your effective use of this product.**
 
 ### 1.2 Linux 6.1.141 System Software Resources
 
@@ -127,11 +131,11 @@ Disk /dev/mmcblk0boot1 doesn't contain a valid partition table
 + 5V2A DC Power Cable
 + Debug port cable
 
-![](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20251222131216628.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20251222131216628.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
-![](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20251222131216628.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20251222131216628.png)
 
 OK1126B-S/ The OK1126BJ-S platform features a Type-C port for serial debugging and an onboard USB-to-UART chip. No additional USB-to-serial debugging tool is required, making the setup simple and convenient.
 
