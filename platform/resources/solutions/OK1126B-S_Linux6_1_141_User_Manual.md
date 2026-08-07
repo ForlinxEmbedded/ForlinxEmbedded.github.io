@@ -131,7 +131,7 @@ Disk /dev/mmcblk0boot1 doesn't contain a valid partition table
 + 5V2A DC Power Cable
 + Debug port cable
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20251222131216628.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image_20251222131216628.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
