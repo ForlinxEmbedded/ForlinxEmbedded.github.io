@@ -162,7 +162,7 @@ Step1: Identify the serial port number assigned to the PC. In Device Manager, lo
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200. 
 
-![](https://cdn.nlark.com/yuque/0/2025/jpeg/50461850/1766382045048-1dd66fbc-ad3b-48fa-b4a5-0ba6c9caf9bb.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382045048_1dd66fbc_ad3b_48fa_b4a5_0ba6c9caf9bb.jpeg)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure, using COM61 as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
@@ -206,7 +206,7 @@ You can also use other terminal programmes that support SSH logins, such as PuTT
 
 Open the PuTTY software and configure the following settings (please use your actual IP address): 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382045341-54e6afbd-db82-4adc-a27e-922cc3d8cb98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382045341_54e6afbd_db82_4adc_a27e_922cc3d8cb98.png)
 
 #### 2.4.2 FTP
 
@@ -282,7 +282,7 @@ For example:
 
 Turn on the RGB screen and change the property to “rgb”.
 
- ![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382045720-ebacc5d4-e15c-481a-bec4-90452b9d16d9.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382045720_ebacc5d4_e15c_481a_bec4_90452b9d16d9.png)
 
 After saving, recompile to generate the image.
 
@@ -310,25 +310,25 @@ Qt Version:`Qt5.15.11`
 
 The Debian system is a desktop operating system developed by Forlinx based on Debian 12. It is fully compatible with Debian 12 and supports tools such as apt-get, making it more user-friendly than more traditional Linux systems.
 
-After booting, the development board will display the following desktop: ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048341820-e59cd1ec-2ad4-4680-ad6e-ae836300e03d.png)
+After booting, the development board will display the following desktop: ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048341820_e59cd1ec_2ad4_4680_ad6e_ae836300e03d.png)
 
 #### 3.1.1 Virtual Keyboard Testing
 
-In the desktop environment, the Onboard virtual keyboard plugin has been installed on the OK1126B running Debian to enable users to type without a physical keyboard. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048374807-fa2c5e52-84fe-466f-a911-5310c0496780.png)
+In the desktop environment, the Onboard virtual keyboard plugin has been installed on the OK1126B running Debian to enable users to type without a physical keyboard. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048374807_fa2c5e52_84fe_466f_a911_5310c0496780.png)
 
-Tap the icon in the bottom-left corner, select “Universal Access”, then tap the “Onboard” button. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048447313-2d4d643e-d54f-46fb-8ac6-703603fdb428.png)
+Tap the icon in the bottom-left corner, select “Universal Access”, then tap the “Onboard” button. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048447313_2d4d643e_d54f_46fb_8ac6_703603fdb428.png)
 
 #### 3.1.2 Network Configuration Test
 
 The OK1126B board starts up with a static IP address configured by default. To set the IP address for the eth0 interface, follow these steps:
 
-Right-click the network icon in the bottom-right corner and click the “Edit Connections” button. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048692574-b3adaf6f-df43-4904-ab80-a3bcd6f7cdee.png)
+Right-click the network icon in the bottom-right corner and click the “Edit Connections” button. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048692574_b3adaf6f_df43_4904_ab80_a3bcd6f7cdee.png)
 
-Double-click the network card you wish to modify. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048726943-d4daf43d-3b6d-4189-8bcb-6c5904712f15.png)
+Double-click the network card you wish to modify. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048726943_d4daf43d_3b6d_4189_8bcb_6c5904712f15.png)
 
-Taking eth0 as an example, proceed to the network settings interface. Click the “IPv4” tab. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048940069-5a98ba62-b2bf-479b-9c3f-e210bcd99fa9.png)
+Taking eth0 as an example, proceed to the network settings interface. Click the “IPv4” tab. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048940069_5a98ba62_b2bf_479b_9c3f_e210bcd99fa9.png)
 
-Configure your IP address according to the following steps, or choose automatic connection mode if preferred. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783048961467-5acc1647-8f4c-4cde-aa26-86c8e4b6a5ee.png)
+Configure your IP address according to the following steps, or choose automatic connection mode if preferred. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783048961467_5acc1647_8f4c_4cde_aa26_86c8e4b6a5ee.png)
 
 After saving the settings, restart the board to apply the new IP address.
 
@@ -336,31 +336,31 @@ After saving the settings, restart the board to apply the new IP address.
 
 The OK1126B platform supports an onboard 6221ASRC (RTL8821CS) Wi-Fi/Bluetooth combo module.
 
-Left-click the network icon in the bottom-right corner.  ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783049474000-80198892-c61a-4d88-a971-dd4dc57c572f.png)
+Left-click the network icon in the bottom-right corner.  ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783049474000_80198892_c61a_4d88_a971_dd4dc57c572f.png)
 
-Select the Wi-Fi network you wish to connect to, enter the password, and click Connect. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783049498699-04b72e60-f33e-40a6-97dd-b9979c88d8d2.png)
+Select the Wi-Fi network you wish to connect to, enter the password, and click Connect. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783049498699_04b72e60_f33e_40a6_97dd_b9979c88d8d2.png)
 
 #### 3.1.4 Bluetooth Test
 
 The OK1126B platform supports an onboard 6221ASRC (RTL8821CS) Wi-Fi/Bluetooth combo module.
 
-Left-click the Bluetooth icon in the bottom-right corner. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783049624546-a77b56ac-439e-4aaf-9b60-0b44808484cc.png)
+Left-click the Bluetooth icon in the bottom-right corner. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783049624546_a77b56ac_439e_4aaf_9b60_0b44808484cc.png)
 
 Click the “Search” button in the top-left corner on the adapter page to scan for devices.
 
-Before each search, please toggle the Bluetooth function by clicking the Bluetooth icon in the top-right corner twice (off and on again). ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783049880188-79aa1d35-9f83-48af-9f20-4f6f533c64c7.png)
+Before each search, please toggle the Bluetooth function by clicking the Bluetooth icon in the top-right corner twice (off and on again). ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783049880188_79aa1d35_9f83_48af_9f20_4f6f533c64c7.png)
 
-After clicking “Search”, the scanned Bluetooth devices will be displayed on the page. Right-click the device you wish to connect to and select “Connect”. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783050081717-a83889e8-6a4b-405e-94d2-44bbc2b0ba7f.png)
+After clicking “Search”, the scanned Bluetooth devices will be displayed on the page. Right-click the device you wish to connect to and select “Connect”. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783050081717_a83889e8_6a4b_405e_94d2_44bbc2b0ba7f.png)
 
 A connection dialog will appear. Click “Confirm” and simultaneously perform the pairing operation on your mobile device.
 
 Board Receiving File Test
 
-On the mobile device, choose “Send via Bluetooth” to transfer a file to the development board. The received file will be saved in the /tmp directory on the board. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783050763358-a0df993d-fcd0-4486-abdf-10fd468a47d7.png)
+On the mobile device, choose “Send via Bluetooth” to transfer a file to the development board. The received file will be saved in the /tmp directory on the board. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783050763358_a0df993d_fcd0_4486_abdf_10fd468a47d7.png)
 
 Board Sending File Test
 
-Left-click “Send File” on the page, then select the file to send. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783059627669-c09b9585-6026-41e9-9668-1da1a89f8dec.png)Accept the file on the mobile device to complete the file transfer from the development board. ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783059694926-59bb1036-6fdc-4f03-8f36-508c35686812.png)
+Left-click “Send File” on the page, then select the file to send. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783059627669_c09b9585_6026_41e9_9668_1da1a89f8dec.png)Accept the file on the mobile device to complete the file transfer from the development board. ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783059694926_59bb1036_6fdc_4f03_8f36_508c35686812.png)
 
 ### 3.2 Qt-related Tests
 
@@ -384,14 +384,14 @@ After short connection, launch the test program.
 
 ```bash
 forlinx@OK1126B-S-debian12:~# sudo fltest_qt_terminal
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783329569787-f95c40ae-6246-445d-be14-3878519ed60b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783329569787_f95c40ae_6246_445d_be14_3878519ed60b.png)
 ```
 
 Click the Settings button in the top-left corner to configure the serial port parameters, as shown in the figure below:
 
 After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783329679207-acc5d73c-5930-48b7-b637-9b87fc60012f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783329679207_acc5d73c_5930_48b7_b637_9b87fc60012f.png)
 
 You can enter text in the black area; each character entered will be displayed twice. This is because the TX and RX pins are short-circuited, so the characters sent out are received back.
 
@@ -403,7 +403,7 @@ The OK1126B platform features an on-board RX8010 RTC chip; use the following com
 forlinx@OK1126B-S-debian12:~# sudo fltest_qt_rtc
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783330076049-3f323983-3003-4355-9481-cee609bdca8e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783330076049_3f323983_3003_4355_9481_cee609bdca8e.png)
 
 Click the “Set” button, change the time, then click “Save”.
 
@@ -417,7 +417,7 @@ This application is designed to test whether the watchdog function is working co
 forlinx@OK1126B-S-debian12:~# sudo fltest_qt_watchdog
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1783329812507-cba82d23-cb1e-4964-b37d-e26f686469ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783329812507_cba82d23_cb1e_4964_b37d_e26f686469ec.png)
 
 Check the “feed dog” option and click the “open watchdog” button. This will activate the watchdog function, and the program will continue to feed the dog. Normally, the system should not restart during this time. 
 
@@ -629,7 +629,7 @@ UART2 is used for Bluetooth communication. The user-available serial port is UAR
 
 For example, to test the UART5 port, short the UART5 transmit and receive pins as indicated in the development board schematic, corresponding to pins 8 and 10 on P16.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382052537-b3fd0748-d05b-47f6-b66a-a27be1378bc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382052537_b3fd0748_d05b_47f6_b66a_a27be1378bc9.png)
 
 Once the shorting is complete, open the test program.
 
@@ -648,7 +648,7 @@ If the following content is printed on the serial port after execution, it indic
 
 One SPI interface is routed out from the carrier board. By default, the software configures it as spidev for loopback testing. During testing, please refer to the schematic diagram and short-circuit MOSI (PIN19) to MISO (PIN21), then carry out the test using the commands below.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382052628-ca18f828-c09d-4dd7-b03e-54d149e28275.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382052628_ca18f828_c09d_4dd7_b03e_54d149e28275.png)
 
 Without shorting SPI1\_MOSI to SPI1\_MISO, execute the test command:
 
@@ -1322,7 +1322,7 @@ Rockchip provides a comprehensive set of test cases; please refer to the NPU sec
 
 The OK1126B-S/OK1126BJ-S SoM features a controllable blue LED; this LED flashes when the board is powered up. You can disable this feature by simply editing the device tree file arch/arm64/boot/dts/rockchip/FET1126B-S.dtsi and changing the linux,default-trigger value for the leds node to "none".
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382053102-04b6b2ed-0a8c-47f6-9225-1fb55e587f72.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382053102_04b6b2ed_0a8c_47f6_9225_1fb55e587f72.png)
 
 Testing Procedure:
 
@@ -1347,7 +1347,7 @@ root@OK1126B-S-debian12:/sys/class/leds/work# echo heartbeat > trigger
 
 P17 is the ADC pin as shown in the figure below, where SARADC0 \_ IN0-IN6 correspond to 0-6 of the ADC channel respectively.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382053171-c3b89097-f665-4a7d-845a-bb16fa9cf006.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382053171_c3b89097_f665_4a7d_845a_bb16fa9cf006.png)
 
 Enter the following command to view the value of the ADC channel (range 0–8192):
 
@@ -1395,7 +1395,7 @@ USB Cable Connector
 
 4G Module EM05
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382053238-3517793e-f523-486d-bc16-b7a14d8c045f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1766382053238_3517793e_f523_486d_bc16_b7a14d8c045f.png)
 
 After the development board boots, execute the lsusb command in the debug serial console to verify module detection.
 
@@ -2148,7 +2148,7 @@ Open the Rockchip development tool:
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 Click the "Upgrade Firmware" button -> "Upgrade" to begin upgrading.
 
@@ -2162,7 +2162,7 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/8.png)
 
 Click to select the firmware, then click “Start”; the system will automatically begin flashing the MASKROM device once it has been detected.
 
@@ -2170,7 +2170,7 @@ Downloading firmware:
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 #### 6.1.3 OTG Step-by-Step Flashing Test
 
@@ -2188,7 +2188,7 @@ Connect the development board to the host computer using a Type-C cable. Once th
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3562j-up4/OK3562J-UP4_Linux5_10_198_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
@@ -2224,7 +2224,7 @@ Select the disk device, tick the “Firmware Update” box, and select update.im
 
 ![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
