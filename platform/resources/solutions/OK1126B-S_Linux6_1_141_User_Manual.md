@@ -172,7 +172,7 @@ After the PC terminal software is configured, connect the PC and the development
 
 The following startup message indicates a successful boot, and you can press Enter to create a new command line:
 
-![](C:/Users/1/Desktop/image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image.png)
 
 ### 2.4 Network Login
 
