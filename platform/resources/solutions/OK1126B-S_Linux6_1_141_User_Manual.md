@@ -231,9 +231,9 @@ root@OK1126B-S-debian12:~# nmcli con modify eth0 ipv4.method manual ipv4.address
 root@OK1126B-S-debian12:~# nmcli con up eth0
 ```
 
-![image-20260727103315682](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103315682.png)
+![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103315682.png)
 
-![image-20260727103532430](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103532430.png)
+![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103532430.png)
 
 ### 2.5 Screen Switch
 
