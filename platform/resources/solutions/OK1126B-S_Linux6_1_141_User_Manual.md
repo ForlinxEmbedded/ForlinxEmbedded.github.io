@@ -231,9 +231,9 @@ root@OK1126B-S-debian12:~# nmcli con modify eth0 ipv4.method manual ipv4.address
 root@OK1126B-S-debian12:~# nmcli con up eth0
 ```
 
-![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103315682.png)
+![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20260727103315682.png)
 
-![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727103532430.png)
+![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20260727103532430.png)
 
 ### 2.5 Screen Switch
 
@@ -908,7 +908,7 @@ Transfer /org/bluez/obex/client/session0/transfer0
 
 Mainly use the date and hwclock tools to set the software and hardware time. Test whether the software clock is synchronized with the RTC clock when the development board is powered off and then powered on. (Note: Ensure that a button battery is installed on the board and the battery voltage is normal.)
 
-![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727115255234.png)
+![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20260727115255234.png)
 
 ```bash
 root@OK1126B-S-debian12:~# date -s "2026-7-9 10:50:00"     // Set system time
@@ -936,7 +936,7 @@ Setting S2 to ON: Activates Host Mode. In this mode, both the USB 3.0 and USB 2.
 
 The following demonstration will use the USB 3.0 interface in Host Mode to mount a USB drive as an example:
 
-![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727134119243.png)
+![image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20260727134119243.png)
 
 The USB 3.0 and OTG functions are multiplexed and switched via a DIP switch. When using the USB 3.0 interface in host mode (e.g., for a USB drive), please ensure the S2 switch is in the ON position.
 
@@ -1235,7 +1235,7 @@ root@OK1126B-S-debian12:~# nmcli connection up "eth0"     //Restart the eth0 con
 
 The development board features one white XH2.54-2P socket (P12), capable of driving an 8Ω speaker with a maximum output power of 1.3W. Before conducting an audio playback test, please plug the speaker into the corresponding socket on the carrier board and use the following command to perform the test:
 
-![image-20260727140912558](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/images/image-20260727140912558.png)
+![image-20260727140912558](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/image-20260727140912558.png)
 
 ```bash
 root@OK1126B-S-debian12:~# gst-play-1.0 /userdata/piano2-CoolEdit.mp3
