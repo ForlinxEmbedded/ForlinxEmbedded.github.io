@@ -399,7 +399,7 @@ forlinx@OK1126B-S-debian12:~# sudo fltest_qt_terminal
 
 Click the Settings button in the top-left corner to configure the serial port parameters, as shown in the figure below:
 
-After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;
+After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126B-S_Linux6_1_141_User_Manual/1783329679207_acc5d73c_5930_48b7_b637_9b87fc60012f.png)
 
