@@ -57,7 +57,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![Image](1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d_1767171625516.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d_1767171625516.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -66,35 +66,35 @@ After the download is complete, double-click the setup file to launch the instal
 Double-click the programme to launch the installation wizard, then click “Next”.
 
 
-![Image](1731053236062_e6163fc5_83f0_49e5_929c_eebc92b1a120.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/731053236062_e6163fc5_83f0_49e5_929c_eebc92b1a120.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278513616_4d573560_c60f_4f95_a2bf_7b0a38394f83.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278513807_4fea4ba5_6c3f_4774_9046_4ac308ae7838.png)
 
 Check, then click “Next.”
 
-![Image](1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278513983_81c57db7_35b1_4416_bb29_36120e02a747.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278514135_8b46b82c_621d_44fc_89d8_d33018b427f4.png)
 
 Click “Install.”
 
-![Image](1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278514310_369d17b9_d01f_4d95_a676_04fb377558fd.png)
 
 Wait for the installation to complete.
 
-![Image](1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278514482_82865f12_b42f_4c32_aca1_30a96a2fa309.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
-![Image](1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278514655_325d6ab7_c6cd_4de5_a879_6248cd24fcde.png)
 
 ## 2\. Loading an Existing Ubuntu Development Environment
 
@@ -117,7 +117,7 @@ The file 35XX.vmx in the OK35XX-linux6.1-VM17-ubuntu22.04 development environmen
 
 Open the installed virtual machine software.
 
-![Image](1766382060335_6b9be91f_fc9c_4874_86ef_2e5e4b37e5bf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382060335_6b9be91f_fc9c_4874_86ef_2e5e4b37e5bf.png)
 
 Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine file is located, and double-click the startup file to open it
 
@@ -126,11 +126,11 @@ Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.0
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
-![Image](1766382060472_c64edde3_62fb_4d3c_9239_9e55cb61a8d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382060472_c64edde3_62fb_4d3c_9239_9e55cb61a8d4.png)
 
 Development Environment Account: forlinx; password: forlinx.
 
-![Image](1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
 
 The existing Ubuntu development environment does not include a cross-compilation toolchain or Qt Creator. If required, please refer to sections “3.2 Installing the Cross-compilation Toolchain” and “3.3 Installing Qt Creator” in the user compilation manual.
@@ -145,36 +145,36 @@ The existing Ubuntu development environment does not include a cross-compilation
 
 Open the VMware software and click “Create a New Virtual Machine”. Enter the following interface:
 
-![Image](1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 Select ''Custom'' and click ''Next.''
 
-![Image](1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Choose the compatibility for the corresponding VMware version. The version can be found under Help ->About VMware Workstation. Click ''Next.''
 
-![Image](1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf-1786347722894.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf-1786347722894.png)
 
 Select instal the operation later and click Select 'I will install the operating system later' and click ''Next.''
 
 
-![Image](1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 Keep the default settings and click ''Next.''
 
-![Image](1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 Modify the virtual machine's name and installation location, then click ''Next.''
 
-![Image](1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Set the number of processors according to your needs.
 
-![Image](1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Similarly, set the memory size according to your needs. It is recommended to use 16GB.
 
-![Image](1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
 
@@ -183,27 +183,27 @@ Set the network type, the default is NAT mode, and click "Next." Subsequent step
 Choose the default LSI for the IO controller type.
 
 
-![Image](1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 Similarly, select SCSI as the default here.
 
-![Image](1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Choose to create a new virtual disk:
 
-![Image](1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Set the disk size to 200GB and select the disk's format, then click 'Next' to complete.
 
-![Image](1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 Specify the disk file, the default setting is fine here.
 
-![Image](1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 Click ''Finish'' by default to complete.
 
-![Image](1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278534538_0cb90337_6bc8_4fc5_8009_267ab1d2617c.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -215,19 +215,19 @@ The installed Ubuntu version is 22.04. First, go to the official Ubuntu website 
 
 Right-click the Ubuntu 64-bit virtual machine that was created and select "Settings" from the context menu.
 
-![Image](1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278534926_94943ef2_c4d9_4ddd_91e9_50c5088dfacc.png)
 
 The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
-![Image](1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click OK.
 
-![Image](1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image.
 
-![Image](1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
@@ -269,7 +269,7 @@ After installation is complete, the screen will look like the image below. Click
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382062949_be55a3f4_2047_4102_b96b_3c11d505d5e5.png)
 
 
-![Image](1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
 
 After restarting and logging in, the system interface is as shown below:
 
@@ -291,7 +291,7 @@ sudo apt install open-vm-tools open-vm-tools-desktop
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![Image](1740967890138_709b6bde_91ee_490c_984b_731cd8421348.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1740967890138_709b6bde_91ee_490c_984b_731cd8421348.png)
 
 #### 3.1.4 Network Configuration of Ubuntu
 
@@ -299,26 +299,26 @@ Most system settings can be configured in the location shown in the figure. Many
 
 Before using the network, make sure that your virtual machine can connect to the internet. Open the virtual machine settings, and change the network adapter's network bridging mode to NAT Mode:
 
-![Image](1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. This is the most commonly used method for the virtual machine to access the external network.
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1.png)
 
 The network is set to dynamic IP.
 
-![Image](1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f.png)
 
 + **Bridge Mode：**
 
 If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode. When Vmware virtual network card is set to bridged mode, the host network card and the virtual machine network card communicate through a virtual bridge, and you need to ensure that the IP address of Ubuntu is in the same subnet as the host machine.
 
-![Image](1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](1-1786348336646.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1-1786348336646.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
@@ -326,11 +326,11 @@ Set the static IP. At this time, the Ubuntu IP and the host IP should be set in 
 
 Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.0, then click OK. As shown below, most modern computers support USB 3.0 ports. If not configured, the USB 3.0 device will not be connected to the virtual machine when inserted. As shown in the figure:
 
-![Image](1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 After starting the virtual machine, insert the USB drive. A "USB icon" will appear in the lower-right corner of the virtual machine. Right-click on it and select “Connect”. You will then see an additional directory in the file system, indicating the USB drive has been successfully mounted, as shown in the following figure:
 
-![Image](1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
@@ -608,7 +608,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh updateimg
 ```
 
 
-![](images/image-20260409170435009.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409170435009.png)
 
 #### 4.2.3 Cleaning up Generated Files
 
@@ -663,7 +663,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh kernel
 ```
 
 
-![](images/image-20251107130639683.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20251107130639683.png)
 
 **Method 2: Manually edit the default configuration file**
 
@@ -678,7 +678,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh kernel
 ```
 
 
-![](images/image-20251107130639683.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20251107130639683.png)
 
 #### 4.3.3 Configuring and Compiling Buildroot
 
@@ -727,7 +727,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh edit-parts
 ```
 
 
-![](images/image-20260409165259358.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409165259358.png)
 
 Change the userdata to 0x00600000, where 0x00600000 represents the partition size in units of 512 bytes. Once you have made the change, save and exit. Then recompile image.
 
@@ -779,7 +779,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh edit-parts
 ```
 
 
-![](images/image-20260409170248548.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409170248548.png)
 
 Add the information shown in the figure, save and exit, then recompile the image.
 
@@ -995,7 +995,7 @@ forlinx@ubuntu:~/work/Linux_Pack_Firmware/rockdev$
 ```
 
 
-![](images/image-20260409180430532.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180430532.png)
 
 Execute the command to unpack the files.
 
@@ -1004,12 +1004,12 @@ forlinx@ubuntu:~/work/Linux_Pack_Firmware/rockdev$ ./unpack.sh
 ```
 
 
-![](images/image-20260409180500935.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180500935.png)
 
 Press q to exit; the extracted image files are located in the output directory. Navigate to the output directory and run the following command to package the operation.
 
 
-![](images/image-20260409180525380.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180525380.png)
 
 ```bash
 forlinx@ubuntu:~/work/Linux_Pack_Firmware/rockdev/output$ ../afptool -pack ./ tmp.img || pause
@@ -1026,19 +1026,19 @@ Unzip RKDevTool\_Release\_v3.37.zip on Windows. The tool path is: User Data\\3-T
 Open the Rockchip development tool, go to Advanced Features, select the update.img file you wish to unpack, and click Unpack to proceed.
 
 
-![](images/image-20260409180737709.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180737709.png)
 
 The unpacked image file is located in the output\\Android directory.
 
 
-![](images/image-20260409180756416.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180756416.png)
 
 To package the files, you will need to use RKDevTool, which can be found in User Data\\3-Tools\\RKDevTool.tar.
 
 After extracting the files, navigate to the rockdev directory and create an Image folder, then copy all the files from the output\\Android directory (generated by the extraction process) into the Image folder.
 
 
-![](images/image-20260409180816630.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180816630.png)
 
 Open Windows PowerShell in the current directory and enter the following command.
 
@@ -1049,6 +1049,6 @@ G:\RKDevTool\rockdev\Image> ..\rkImageMaker.exe -RK110F .\MiniLoaderAll.bin .\tm
 ```
 
 
-![](images/image-20260409180851024.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409180851024.png)
 
 Once the packaging is complete, an update.img file will be generated in the current directory.
