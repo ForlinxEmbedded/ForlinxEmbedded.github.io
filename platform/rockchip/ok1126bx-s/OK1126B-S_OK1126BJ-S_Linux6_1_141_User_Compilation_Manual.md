@@ -1,4 +1,4 @@
-# Linux6.1.141\_User’s Compilation Manual\_V1.0
+Linux6.1.141\_User’s Compilation Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -133,7 +133,7 @@ Turn on this virtual machine after loading is complete to run it and enter the s
 
 The default automatic login account is "forlinx", and the password is "forlinx".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1731053238308_7897f6cc_11b8_43dc_9aea_19646fa266ec.png)
+![Image](1719278549464_41fc41e5_d024_4e97_a993_d6b193bc8aae.png)
 
 ## 3\. New Ubuntu Development Environment Setup
 
@@ -278,7 +278,7 @@ sudo apt install open-vm-tools open-vm-tools-desktop
 
 Make most of the system settings in the location shown below. A lot of the setup requirements on Ubuntu can be done here.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1740967890138_709b6bde_91ee_490c_984b_731cd8421348.png)
 
 #### 3.1.4 Ubuntu Network Settings
 
@@ -290,9 +290,7 @@ Before using the network, make sure that our virtual machine can connect to the 
 
 When the VMware virtual NIC is set to NAT mode in a virtual machine, the network in the Ubuntu environment can be set to dynamic IP. The virtual NAT device and the host NIC are connected to communicate for Internet access in this mode. This is the most common way for our VM to get on the extranet.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278540394_95e15661_d1d0_427e_93ed_e365eb39c296.png)
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278540571_3d28eb06_aea3_4fda_8397_e821b2b7fca1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1.png)
 
 The network is set to dynamic IP.
 
@@ -304,13 +302,13 @@ If TFTP, SFTP and other servers are used, the network contact mode of the virtua
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278541277_05740351_022e_45fc_96c7_06caac0e068d.png)
+![Image](1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99_1783655281485.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278541434_9c36b6f6_6539_4295_8eec_4df165beb02c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1_1783655315226.png)
 
 Set a static IP, where Ubuntu's IP and host IP need to be set in the same network segment.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278541630_bf5fd69d_adc1_407d_915f_2503b2055225.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f_1783655325812.png)
 
 **Note: The IP and DNS involved in the network settings section should be set according to the user's own actual environment, the manual is an example.**
 
@@ -341,7 +339,7 @@ forlinx@ubuntu:~$ sudo apt-get install net-tools                 // Network conf
 #### 3.1.7 Installation of Necessary Libraries for Compiling OK1126B Linux Source Code
 
 ```bash
-forlinx@ubuntu:~$ sudo apt-get update                                       //Update apt-get download source
+forlinx@ubuntu:~$ sudo apt-get update                    //Update apt-get download source
 forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot libsqlite3-dev          //Installation of the necessary tool kit
 forlinx@ubuntu:~$ sudo apt-get update && sudo apt-get install git ssh make gcc libssl-dev \
 liblz4-tool expect expect-dev g++ patchelf chrpath gawk texinfo chrpath \
@@ -381,9 +379,13 @@ forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run
 
 Then the installation window of the graphical interface will pop up, and install according to the instructions:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png)
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 If you install online, you need to register your own Qt account. If you already have a Qt account, you can log in directly. The requirements for the Qt password are: it should include capital letters, lowercase letters, and numbers. After successful registration and login, click "Next‘.
 
@@ -531,7 +533,7 @@ Qt is a cross-platform graphics development library, which supports many operati
 
 #### 4.4.1 Cross Compiler Configuration
 
-Note: The default development environment does not have the cross - compilation chain installed. You need to refer to 3.3 Install the Cross - Compilation Chain to install it (the recommended installation path is /home/forlinx/aarch64 - buildroot - linux - gnu\_sdk - buildroot).
+**Note: The default development environment does not have the cross - compilation chain installed. You need to refer to 3.3 Install the Cross - Compilation Chain to install it (the recommended installation path is /home/forlinx/aarch64 - buildroot - linux - gnu\_sdk - buildroot).**
 
 **Note: Enter aarch64-buildroot-linux-gnu\_sdk-buildroot to execute relocate-sdk.sh.**
 
@@ -539,24 +541,29 @@ Note: The default development environment does not have the cross - compilation 
 forlinx@ubuntu:~/aarch64-buildroot-linux-gnu_sdk-buildroot$ ./relocate-sdk.sh
 ```
 
-1\. Enter the installation path of qtcreator and open qtcreator;
+- Enter the installation path of qtcreator and open qtcreator;
+
 
 ```bash
 forlinx@ubuntu:~/qtcreator-4.7.0/bin$ ./qtcreator
 ```
 
-2\. Click Tools-> Options-> Kits-> Compilers in Qt Creator, and then click Add-> GCC-> C;
+- Click Tools-> Options-> Kits-> Compilers in Qt Creator, and then click Add-> GCC-> C;
 
-3\. Name enters GCC;
 
-4\. Paste the path of the compilation chain to the Compiler Path, as shown in the following figure:
+- Name enters GCC;
+
+
+- Paste the path of the compilation chain to the Compiler Path, as shown in the following figure:
+
 
 - Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux-gcc
 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065325_5e782e89_6cef_430a_950f_f53deb46bd3b.png)
 
-5\. Follow the same method to add the GCC compiler, click “Add->GCC->C++” on the right, as shown in the figure:
+- Follow the same method to add the GCC compiler, click “Add->GCC->C++” on the right, as shown in the figure:
+
 
 - Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux-g++
 
@@ -565,15 +572,20 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$ ./qtcreator
 
 #### 4.4.2 Qt Versions Configuration
 
-1\. Click Tools- > Options- > Qt Versions in Qt Creator;
+- Click Tools- > Options- > Qt Versions in Qt Creator;
 
-2\. Then click Add to pop up a dialog box to select /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/qmake;
 
-3\. Click open to add;
+- Then click Add to pop up a dialog box to select /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/qmake;
 
-4\. Then it will return to the Qt Version configuration box, and the Version name can be changed by itself;
 
-5\. Then click "Apply and OK".
+- Click open to add;
+
+
+- Then it will return to the Qt Version configuration box, and the Version name can be changed by itself;
+
+
+- Then click "Apply and OK".
+
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065550_14f7a743_402d_4bdd_84ba_00f069d1c974.png)
 
@@ -581,15 +593,20 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$ ./qtcreator
 
 Kits is a build kit for building and selecting development build environments useful for projects with multiple QT libraries. Add the previously added cross-compiler and QT Version to Kits to build a compilation environment suitable for the development board.
 
-1\. Click Tools- > Options- > Kits in Qt Creator, and then click Add to display the configuration section;
+- Click Tools- > Options- > Kits in Qt Creator, and then click Add to display the configuration section;
 
-2\. Name changes by itself;
 
-3\. Compiler selects GCC;
+- Name changes by itself;
 
-4\. Qt version selects the name entered when the Qt version was created;
 
-5\. Then click "Apply and OK".
+- Compiler selects GCC;
+
+
+- Qt version selects the name entered when the Qt version was created;
+
+
+- Then click "Apply and OK".
+
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065647_1ca23892_98fa_45dc_852f_bd63156eca6a.png)
 
@@ -599,20 +616,23 @@ Kits is a build kit for building and selecting development build environments us
 
 In this section, the watchdog test program is used. By default, the source code is copied to the /home/forlinx/work directory.
 
-1\. Use the cd command to enter the test source code directory;
+- Use the cd command to enter the test source code directory;
+
 
 ```bash
 forlinx@ubuntu:~$ cd /home/forlinx/work/OK1126B-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog
 ```
 
-2\. Add the cross-compiler path and use make to cross-compile;
+- Add the cross-compiler path and use make to cross-compile;
+
 
 ```bash
 forlinx@ubuntu:~/work/OK1126B-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ export PATH=/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/:$PATH
 forlinx@ubuntu:~/work/OK1126B-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ aarch64-linux-gcc watchdog.c -o fltest_watchdog
 ```
 
-3\. Use the file command to view the generated file information.
+- Use the file command to view the generated file information;
+
 
 ```bash
 forlinx@ubuntu:~/work/OK1126B-linux-source/app/forlinx/forlinx_cmd/fltest_watchdog$ /usr/bin/file fltest_watchdog 
@@ -621,7 +641,8 @@ fltest_watchdog: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), d
 
 From the result, you can see that the compiled 64-bit ARM file.
 
-4\. Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/forlinx path. Take the TF card as an example, and copy it to the development board and run the test.
+- Copy the fltest \_ watchdog generated by compiling to the board through U disk or FTP, for example, under the/forlinx path. Take the TF card as an example, and copy it to the development board and run the test.
+
 
 ```bash
 root@OK1126B-buildroot:~# cp /run/media/sda1/fltest_watchdog /root/
