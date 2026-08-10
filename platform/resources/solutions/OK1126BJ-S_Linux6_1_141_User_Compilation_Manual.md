@@ -109,7 +109,7 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382060256-61fea8f4-1836-4bc3-8430-1a1e3a2b7169.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382060256_61fea8f4_1836_4bc3_8430_1a1e3a2b7169.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory: After extraction, you will obtain the development environment folder 35XX.
 
@@ -122,7 +122,7 @@ Open the installed virtual machine software.
 Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine file is located, and double-click the startup file to open it
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382060407-2cc177c9-24c3-4989-9698-ca1bad96d584.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382060407_2cc177c9_24c3_4989_9698_ca1bad96d584.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -178,7 +178,7 @@ Similarly, set the memory size according to your needs. It is recommended to use
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 Choose the default LSI for the IO controller type.
 
@@ -232,41 +232,41 @@ After configuring the image, ensure that the network is working, and then start 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062740-8d4fffe6-3f92-47ff-82a5-9a738edd68c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382062740_8d4fffe6_3f92_47ff_82a5_9a738edd68c3.png)
 
 Select the language on the left side and click "Install Ubuntu." A language selection screen will pop up.  
 By default, Ubuntu's language is English, but you can also select Chinese. The selected language can be changed later during the installation. Once you've selected the language, click “Continue”.
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click Continue again.
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Click Install Now by default, and a prompt will appear. Click Continue to proceed.
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue. Finally, set up your username and password. Click Continue, and the installation will begin automatically.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062807-b52339a1-ad54-46c0-aa7c-6bf5f0d357b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382062807_b52339a1_ad54_46c0_aa7c_6bf5f0d357b8.png)
 
 The installation process is shown in the figure below. If the network is not good, you can skip it without affecting the installation.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062878-28446a75-0c69-4238-be5a-68b2dfa643d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382062878_28446a75_0c69_4238_be5a_68b2dfa643d6.png)
 
 After installation is complete, the screen will look like the image below. Click “Restart Now” to reboot (or click “Restart Guest”).
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062949-be55a3f4-2047-4102-b96b-3c11d505d5e5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382062949_be55a3f4_2047_4102_b96b_3c11d505d5e5.png)
 
 
 ![Image](1719278538153_32d91128_59b7_4c50_9745_84b3186f5a51.png)
@@ -274,7 +274,7 @@ After installation is complete, the screen will look like the image below. Click
 After restarting and logging in, the system interface is as shown below:
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382063027-f48e7115-ead7-4aef-9d2e-d8450621631c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382063027_f48e7115_ead7_4aef_9d2e_d8450621631c.png)
 
 #### 3.1.3 Basic Configuration of Ubuntu
 
@@ -302,7 +302,7 @@ Before using the network, make sure that your virtual machine can connect to the
 ![Image](1719278540173_d56c3ec8_1d83_49da_99f7_6bbd9a9b6830.png)
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. This is the most commonly used method for the virtual machine to access the external network.
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1.png)
 
 The network is set to dynamic IP.
 
@@ -333,7 +333,7 @@ After starting the virtual machine, insert the USB drive. A "USB icon" will appe
 ![Image](1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
 #### 3.1.6 Basic Library Installation for the Virtual Machine
 
@@ -394,44 +394,44 @@ forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run
 
 This will open a graphical installation window. Follow the prompts to install:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542977-d1772186-fa60-442a-8cf2-6e5cffefaae2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543199-cbc234c5-2d49-43aa-864e-4daf0abe7a4c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543389-eaacabb8-9343-4e45-8626-9a68c043e0a0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543608-c9d367f7-56c3-44b6-829c-04f29286f63d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 
 Online users need to register for a Qt account. Existing Qt account holders can log in directly. The Qt password requires a mix of uppercase letters, lowercase letters, and numbers. After registering and logging in successfully, click "Next".
 
 Offline users can click Skip.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543830-11d43ecf-8d67-4bd0-a472-fc52383a77b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
 
 
 
 
 Click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544047-02ae511b-f6df-49fc-94ad-50606afa9ac1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 
 
 
 You can set the installation path according to your preferences; we use the default here. Click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544274-25984f38-7e0d-4029-97ec-25fc13e82651.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
 Choose Complete Installation and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544480-43ea98bb-67e7-4632-a1cf-b917e22a17eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544690-a23e2f5f-b76b-46c9-8ebc-ef0ddc395677.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
 
 Click "Install" and wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544902-6e395fac-45b1-428e-b5ed-dd3045ed1597.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
 
 After installation, click Finish. The Qt interface will automatically open, or you can launch it from the command line. To open Qt Creator in the background, use the following command, replacing it with your actual installation path:
 
@@ -441,7 +441,7 @@ forlinx@ubuntu:~$ ./qtcreator &
 ```
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278545088-f7954df3-4aa6-40d1-9046-723786b916af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -544,12 +544,12 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh
 ```
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382064881-3a068219-95c8-4feb-96c4-d3b505267669.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382064881_3a068219_95c8_4feb_96c4_d3b505267669.png)
 
 Once the compilation is complete, the system image will be generated in the rockdev folder, as shown in the figure below:
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382064975-3caccdb5-8262-491c-86cb-8a953348dada.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382064975_3caccdb5_8262_491c_86cb_8a953348dada.png)
 
 Actual file paths and descriptions:
 
@@ -582,7 +582,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh kernel
 ```
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065083-1d080843-e960-401a-84df-66948f623b6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065083_1d080843_e960_401a_84df_66948f623b6c.png)
 
 After compilation, the kernel in update.img will not be updated. Please follow the step-by-step instructions to flash the kernel/boot.img file.
 
@@ -595,7 +595,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$  ./build.sh rootfs
 If a message similar to the following appears, this indicates that the file system is being compiled:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/46863139/1772523772244-37853205-bb39-4206-8075-b360e58365b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1772523772244_37853205_bb39_4206_8075_b360e58365b8.png)
 
 After compilation, the kernel in update.img will not be updated.
 
@@ -619,7 +619,7 @@ forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh cleanall
 ```
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065175-a5de4356-0ed8-4d3a-acd8-7d1b39a9687a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065175_a5de4356_0ed8_4d3a_acd8_7d1b39a9687a.png)
 
 This operation removes all intermediate files but does not affect the source files, including any modified source files. However, it does not affect the source files, including those that have already been modified.
 
@@ -851,7 +851,7 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$ ./qtcreator
 Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux-gcc
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065325-5e782e89-6cef-430a-950f-f53deb46bd3b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065325_5e782e89_6cef_430a_950f_f53deb46bd3b.png)
 
 - Add the GCC compiler using the same method, and click "Add->GCC->C" on the right, as shown in the image:
 
@@ -859,7 +859,7 @@ Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux
 Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux-g++
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065472-071286a0-07ff-4c35-a1bf-224dfd005874.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065472_071286a0_07ff_4c35_a1bf_224dfd005874.png)
 
 #### 4.4.2 Qt Versions Configuration
 
@@ -874,7 +874,7 @@ Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux
 - Click Apply and then OK.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065550-14f7a743-402d-4bdd-84ba-00f069d1c974.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065550_14f7a743_402d_4bdd_84ba_00f069d1c974.png)
 
 #### 4.4.3 Kits Configuration
 
@@ -892,7 +892,7 @@ Kits are a set of build tools used to configure and select development environme
 - Click Apply and then OK.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065647-1ca23892-98fa-45dc-852f-bd63156eca6a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065647_1ca23892_98fa_45dc_852f_bd63156eca6a.png)
 
 ### 4.5 Application Compilation and Running
 
@@ -944,17 +944,17 @@ forlinx@ubuntu~/qtcreator-4.7.0/bin$ ./qtcreator &
 ```
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065759-68535180-827b-401c-9f5c-02ae512b187c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065759_68535180_827b_401c_9f5c_02ae512b187c.png)
 
 After opening the project, the interface should appear as follows: (If the page does not change automatically, please select according to the screenshot.)
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065860-f672a529-25ec-4069-9d2f-c0bed8e9b081.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065860_f672a529_25ec_4069_9d2f_c0bed8e9b081.png)
 
 Clicking Configure Project will apply the compilation environment built in the “Qt Creator Environment Configuration” chapter of this manual.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065976-06b8a5a1-ce6b-4e63-9e96-f4a5bdaf8fa7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382065976_06b8a5a1_ce6b_4e63_9e96_f4a5bdaf8fa7.png)
 
 Click Build-> Clean All to clear. (If the intermediate file is not cleared, it can be deleted manually).
 
@@ -966,14 +966,14 @@ Click Build -> Build All to compile.
 Once the build progress bar completes, the new executable file fltest\_qt\_watchdog will be located in the /app/forlinx/forlinx\_qt/watchdog directory.
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382066079-0da61d98-b203-4c14-ab16-fab371086756.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382066079_0da61d98_b203_4c14_ab16_fab371086756.png)
 
 Then, click Build → Build All to start the compilation.
 
 Once the Build progress bar in the bottom-right corner has completed, this indicates that the compilation is finished. At this point, you will see the newly generated binary file fltest\_qt\_watchdog in the directory /home/forlinx/work/OK1126B-linux-source/app/forlinx/flapp\_out/\`, as shown below:
 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382066173-3aa58730-665e-42a5-9ead-2ff89ef1938f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1766382066173_3aa58730_665e_42a5_9ead_2ff89ef1938f.png)
 
 Copy the compiled executable file to the board via a USB drive, FTP, or other methods. Once copied to the development board, run the test.
 
