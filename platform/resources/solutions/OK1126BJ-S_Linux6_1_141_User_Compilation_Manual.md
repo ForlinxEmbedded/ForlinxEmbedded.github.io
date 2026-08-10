@@ -1,4 +1,4 @@
-# Linux 6.1.141\_User’s Compilation Manual\_V1.0
+Linux 6.1.141\_User’s Compilation Manual\_V1.0
 
 ## Copyright
 
@@ -67,7 +67,7 @@ After the download is complete, double-click the setup file to launch the instal
 Double-click the programme to launch the installation wizard, then click “Next”.
 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/731053236062_e6163fc5_83f0_49e5_929c_eebc92b1a120.png)
+![Image](1719278513453_fcba4324_b61c_4700_a5a0_0dffae59dbbd.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
