@@ -154,7 +154,7 @@ Select ''Custom'' and click ''Next.''
 
 Choose the compatibility for the corresponding VMware version. The version can be found under Help ->About VMware Workstation. Click ''Next.''
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf-1786347722894.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf_1786347722894.png)
 
 Select instal the operation later and click Select 'I will install the operating system later' and click ''Next.''
 
@@ -319,7 +319,7 @@ If using servers like TFTP or SFTP, you need to set the virtual machine's networ
 
 Set the static IP. At this time, the Ubuntu IP and the host IP should be set in the same network segment.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1-1786348336646.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/1_1786348336646.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
