@@ -32,6 +32,7 @@ Additionally, the manual includes explanations of some symbols and formats.
 | **Black Bold**| Key information in the serial output:|
 | //| Explanation of input commands or output information:|
 | Username@Hostname| root@OK3568-buildroot:~# : Development board login account information;<br />forlinx@ubuntu: Ubuntu account information in the development environment.   <br/>You can use this information to determine the operating environment for functional operations. |
+
 Example: After packaging the file system, use the ls command to view the generated files.
 
 ```bash
