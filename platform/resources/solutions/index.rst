@@ -40,7 +40,7 @@ SOFTWARE
    T113_Linux5_4_OTA_Upgrade_Recovery_Solution
    OK3588-C_Linux_Buildroot_User_Manual
    OK1126B-S_Linux6_1_141_User_Manual
-   OK1126B-S_Linux6_1_141_User_Compilation_Manual
+   OK1126BJ-S_Linux6_1_141_User_Compilation_Manual
 
 
 
