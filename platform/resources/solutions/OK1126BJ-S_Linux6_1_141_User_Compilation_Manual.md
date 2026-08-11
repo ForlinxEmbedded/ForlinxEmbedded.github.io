@@ -767,9 +767,6 @@ Navigate to the SDK root directory and run the following command.
 forlinx@ubuntu:~/work/OK1126B-linux-source$ ./build.sh edit-parts
 ```
 
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK1126BJ-S_Linux6_1_141_User_Compilation_Manual/image-20260409170248548.png)
-
 Add the information shown in the figure, save and exit, then recompile the image.
 
 ```bash
