@@ -532,7 +532,7 @@ case ${TARGET_SOC} in
 esac
 ```
 
-Product Path Rules：`install/${TARGET_SOC}_linux_${TARGET_ARCH}/rknn_${DEMO}_demo`，e.g.`install/rk3572_linux_aarch64/rknn_yolov6_demo`。
+Product Path Rules：`install/${TARGET_SOC}_linux_${TARGET_ARCH}/rknn_${DEMO}_demo`，e.g.`install/rk3572_linux_aarch64/rknn_yolov6_demo`.
 
 ---
 
