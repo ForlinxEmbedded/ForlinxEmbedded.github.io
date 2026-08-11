@@ -309,7 +309,7 @@ adb shell chmod +x /usr/bin/rknn3-server
 adb shell sync
 ```
 
-Regarding**`rknn3-server`**whether it must be started: it is defined as the service that handles consecutive board inference requests from the PC. If you are simply pushing a compiled C/C++ programme to the board for local execution (without performing on-board inference), `rknn3-server`is not essential;
+Regarding `rknn3-server` whether it must be started: it is defined as the service that handles consecutive board inference requests from the PC. If you are simply pushing a compiled C/C++ programme to the board for local execution (without performing on-board inference), `rknn3-server`is not essential;
 
 ## 3\. Model Conversion (PC Toolkit)
 
