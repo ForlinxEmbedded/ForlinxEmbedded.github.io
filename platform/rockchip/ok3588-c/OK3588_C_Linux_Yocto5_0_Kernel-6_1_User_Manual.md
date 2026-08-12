@@ -772,23 +772,23 @@ BB_DANGLINGAPPENDS_WARNONLY = "1"
 
 ```plain
 BBLAYERS ?= " \
-  ${TOPDIR}/../poky/meta \
-  ${TOPDIR}/../poky/meta-poky \
-  ${TOPDIR}/../meta-rockchip \
-  ${TOPDIR}/../meta-clang \
-  ${TOPDIR}/../meta-openembedded/meta-oe \
-  ${TOPDIR}/../meta-openembedded/meta-python \
-  ${TOPDIR}/../meta-openembedded/meta-networking \
-  ${TOPDIR}/../meta-openembedded/meta-multimedia \
-  ${TOPDIR}/../meta-browser/meta-chromium \
-  ${TOPDIR}/../meta-lts-mixins \
-  ${TOPDIR}/../meta-forlinx-rk \
+  ${TOPDIR}/../sources/poky/meta \
+  ${TOPDIR}/../sources/poky/meta-poky \
+  ${TOPDIR}/../sources/meta-rockchip \
+  ${TOPDIR}/../sources/meta-clang \
+  ${TOPDIR}/../sources/meta-openembedded/meta-oe \
+  ${TOPDIR}/../sources/meta-openembedded/meta-python \
+  ${TOPDIR}/../sources/meta-openembedded/meta-networking \
+  ${TOPDIR}/../sources/meta-openembedded/meta-multimedia \
+  ${TOPDIR}/../sources/meta-browser/meta-chromium \
+  ${TOPDIR}/../sources/meta-lts-mixins \
+  ${TOPDIR}/../sources/meta-forlinx-rk \
   "
 ```
 
 ##### 3.2.2 Full Compilation
 
-Forlinx offers two types of distribution versions for specifying the target image; their configuration is located in the `OK-yocto-source/meta-forlinx-rk/recipes-core/images` directory. This distribution definition determines the specific combination of Linux kernel variants, system tools, runtime libraries and additional software packages used in the final image.
+Forlinx offers two types of distribution versions for specifying the target image; their configuration is located in the `OK-yocto-source/sources/meta-forlinx-rk/recipes-core/images` directory. This distribution definition determines the specific combination of Linux kernel variants, system tools, runtime libraries and additional software packages used in the final image.
 
 OK3588 distribution versions:
 
@@ -969,7 +969,7 @@ do_install() {
 }
 ```
 
-Add this recipe to`forlinx-image-packages.inc`, the path is`OK-yocto-source/meta-forlinx-rk/recipes-core/images`:
+Add this recipe to `forlinx-image-packages.inc`, the path is `OK-yocto-source/sources/meta-forlinx-rk/recipes-core/images`:
 
 ```plain
 # Forlinx test demos.
