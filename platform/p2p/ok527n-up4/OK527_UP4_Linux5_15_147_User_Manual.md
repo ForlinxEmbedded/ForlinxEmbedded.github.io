@@ -59,7 +59,7 @@ This software manual applies to Forlinx OK527-UP4 and OK527N-UP4 development boa
 
 The OK527\_UP4 development board features a SoM + carrier board structural design, developed based on the Allwinner T527 processor. The processor features a multi-core heterogeneous architecture comprising ARM Cortex-A55 CPU, a 2 TOPS NPU, a HiFi4 DSP, and a G57 MC1 GPU. It consists of four small cores running at 1.4 GHz and four large cores running at 1.8 GHz. It is available in two configurations: one with 4GB LPDDR4 RAM and 32GB eMMC storage, and another with 2GB LPDDR4 RAM and 16GB eMMC storage. The OK527\_UP4 development board offers rich functional interface resources and provides a variety of peripheral interfaces. The key interfaces such as Ethernet, the CPU’s built-in audio Codec, GPADC, LRADC, TF Card, LVDS, HDMI, DP, RGB, Wi-Fi, 4G, PCIe, and MIPI-CSI are routed out.
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/50461850/1772504987401-4ba4a64a-982b-4df1-a139-a6fd1f065ddf.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504987401_4ba4a64a_982b_4df1_a139_a6fd1f065ddf.jpg)
 
 ![](527.png)
 
@@ -120,7 +120,7 @@ Display screen — connect the screen according to the development board interfa
 
 Check the boot mode (if a TF card is inserted, the system will boot from the TF card by default; otherwise, it will boot from eMMC).
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/50461850/1772504989191-e4e3407d-3b77-4706-a452-8f96dcd5f36e.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504989191_e4e3407d_3b77_4706_a452_8f96dcd5f36e.jpg)
 
 ### 2.2 Serial Port Login
 
@@ -139,11 +139,11 @@ The following section uses PuTTY (02-User Files\\01-Software Files\\04-Tools\\pu
 Connect the development board and PC using a serial cable. Confirm the serial port number connected to the computer by checking in "Device Manager". 
 The actual serial port number recognized by the computer shall prevail. Select “USB-Enhanced-SERIAL-A CH342”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852752540-9e2cca09-69df-41fe-9a59-ca302f92aae7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852752540_9e2cca09_69df_41fe_9a59_ca302f92aae7.png)
 
 Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852766412-cf849bee-2bee-4277-9e11-bcba90fd3e14.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852766412_cf849bee_2bee_4277_9e11_bcba90fd3e14.png)
 
 Power on and log in: Turn on the development board. 
 The serial terminal will display boot-up messages. Once the prompt root@OK527\_UP4:/# appears, the system has fully booted. You are logged in automatically as the root user (no password required).
@@ -170,13 +170,13 @@ Connect the eth0 of the development board to the computer via a network cable, p
 
 After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852786972-2c6fb190-a002-4aaa-a36d-36d1f6d5864e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852786972_2c6fb190_a002_4aaa_a36d_36d1f6d5864e.png)
 
 Disable the computer firewall.
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852798819-2b9890db-2900-46fd-bb1d-34fb7ffc3c35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852798819_2b9890db_2900_46fd_bb1d_34fb7ffc3c35.png)
 
 Open Command Prompt as administrator.
 
@@ -184,7 +184,7 @@ Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt a
 
 Data is returned, indicating that the network connection is normal.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852806972-0f90a319-5894-44cd-ac4c-5e7d58158bbb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852806972_0f90a319_5894_44cd_ac4c_5e7d58158bbb.png)
 
 #### 2.3.2 SSH the server
 
@@ -194,11 +194,11 @@ Data is returned, indicating that the network connection is normal.
 - **The default IP address for the eth0 interface is 192.168.0.232;**  
 - **You can use the scp command for file transfers.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852828220-846ff8b1-62c5-46ac-9e26-8600a5dce468.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852828220_846ff8b1_62c5_46ac_9e26_8600a5dce468.png)
 
 After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852834871-326d584b-b5d2-47ff-a6bc-2f4c325934fc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718852834871_326d584b_b5d2_47ff_a6bc_2f4c325934fc.png)
 
 ```bash
 Login as：root
@@ -356,11 +356,11 @@ This section mainly explains the usage of the development board’s extended int
 
 After the OK527\_UP4 development board starts up, the desktop is displayed as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504990946-3615d400-eaf3-44dc-ba09-b836e2773bd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504990946_3615d400_eaf3_44dc_ba09_b836e2773bd5.png)
 
 Click the arrow in the upper right corner to go to the next page.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504991162-6eb222e9-274c-4941-84df-dbaba2919750.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991162_6eb222e9_274c_4941_84df_dbaba2919750.png)
 
 The current version does not support the Video Player.
 
@@ -371,7 +371,7 @@ The current version does not support the Video Player.
 - **By default, only the eth0 network interface is set to STATIC mode;  **
 - **The IP address and other details configured are saved to the relevant system configuration file (/etc/network/interfaces), so the network settings configured will be used every time the system is restarted.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504991274-39917999-99e1-44ba-a847-ad687ef225cb.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991274_39917999_99e1_44ba_a847_ad687ef225cb.png)
 
 Click the network configuration icon to enter the interface program, supporting both STATIC and DHCP modes.
 
@@ -387,7 +387,7 @@ Click the network configuration icon, select STATIC, as shown below: You can con
 | Gateway| Set gateway|
 | DNS| Set DNS|
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853099491-6d4df335-a44e-43e1-846b-a7a5432797aa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853099491_6d4df335_a44e_43e1_846b_a7a5432797aa.png)
 
 **DHCP Mode:**
 
@@ -395,39 +395,39 @@ Click the network configuration icon, select STATIC, as shown below: You can con
 
 Select DHCP, choose the network card device to be configured in the “interface” section, and click “Apply and Restart Network” at the bottom of the interface to automatically restart the network and obtain an IP address.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853107651-99014da8-43c3-4819-a6c4-ddeedb9885a3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853107651_99014da8_43c3_4819_a6c4_ddeedb9885a3.png)
 
 ### 3.3 Browser Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504991457-e0518468-224b-40b0-80b4-e5d98c41761b.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991457_e0518468_224b_40b0_80b4_e5d98c41761b.png)
 
 Click the browser icon to enter the browser. Ensure the network is smooth during use, and ensure DNS is available before accessing external networks. The browser defaults to accessing the Forlinx Embedded official website upon startup, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853119024-492a4d35-8742-4cfb-a9b6-34f07b3e773c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853119024_492a4d35_8742_4cfb_a9b6_34f07b3e773c.png)
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues.**
 
 ### 3.4 4G Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504991618-7072dab2-01c4-417b-b0f9-46cc9938cb74.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991618_7072dab2_01c4_417b_b0f9_46cc9938cb74.png)
 
 The “4G” test program is used to test the OK527 external 4G module (EC20). Before testing, please power off the development board, insert the 4G module, insert the SIM card (pay attention to the SIM card direction), then power on the development board and open the test application. This test uses the EC20 module as an example:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853134759-967d5501-a0c1-4067-a933-5a9818759cb4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853134759_967d5501_a0c1_4067_a933_5a9818759cb4.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853141138-17bcdf9c-b5db-451c-908a-4db324ea4496.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853141138_17bcdf9c_b5db_451c_908a_4db324ea4496.png)
 
 Click the “connect” button; the program will automatically initiate the dial-up process and obtain IP, set DNS, etc. After waiting a few seconds patiently, click the “ping” button to perform the test.
 
 ### 3.5 UART Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504991803-ade9d9ff-46df-4c78-978a-cdec9279e95f.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991803_ade9d9ff_46df_4c78_978a_cdec9279e95f.png)
 
 This test uses UART4 (ttyAS4) and performs a serial port test with the serialTool.
 
 Click the UART test icon to enter the following interface for serial port parameter configuration;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853168898-b3b1fca6-41b1-447b-a0ae-4082f1f75014.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853168898_b3b1fca6_41b1_447b_a0ae_4082f1f75014.png)
 
 Click the settings button in the upper left corner and set the serial port parameters to be consistent with the computer-side serial port tool parameters, as shown below:
 
@@ -440,29 +440,29 @@ Click the settings button in the upper left corner and set the serial port param
 | Stop bits| Set stop bits (1 bit)|
 | Flow control| Set flow control (no flow control)|
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853204104-9e9fe1f3-1252-43c7-8fbe-62cd15e131f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853204104_9e9fe1f3_1252_43c7_8fbe_62cd15e131f2.png)
 
 After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;
 
 Open the serial port tool on your computer; the screen will then display the data received via the serial port.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853216116-4c5a8a52-e55a-46d1-a07a-8d4e3b395589.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853216116_4c5a8a52_e55a_46d1_a07a_8d4e3b395589.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853223109-9f91d3ea-d2d4-47ca-b272-3b06f556c49a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853223109_9f91d3ea_d2d4_47ca_b272_3b06f556c49a.png)
 
 Tap the black area in the centre of the test screen to bring up the on-screen keyboard; once you have entered 32 characters in succession, the information displayed by the serial port tool will be the data sent by Qt.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853229802-89276bbe-be07-4fdd-ba99-0e93f6e40661.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853229802_89276bbe_be07_4fdd_ba99_0e93f6e40661.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853235153-75db29ed-035a-44fd-8980-cc5f352e09f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853235153_75db29ed_035a_44fd_8980_cc5f352e09f2.png)
 
 ### 3.6 ADC Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504991887-44b172ab-4791-4f21-8cb7-68fca65f46ef.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991887_44b172ab_4791_4f21_8cb7_68fca65f46ef.png)
 
 The OK527\_UP4 supports 24 channels; 14 GPADC pins are routed out from the OK-x-UP4 carrier board. By default, all channels are left floating; shorting the corresponding pin headers allows the potentiometer values to be measured. The maximum value 4096 corresponds to a voltage of 1.8V.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853255909-9c70b203-9121-45a9-80d5-aa93e148bce8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853255909_9c70b203_9121_45a9_80d5_aa93e148bce8.png)
 
 ### 3.7 WiFi Test
 
@@ -470,47 +470,47 @@ The OK527\_UP4 supports 24 channels; 14 GPADC pins are routed out from the OK-x-
 
 “WIFI” is a tool for configuring WiFi and can test the STA mode of WiFi.
 
-Click the icon![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504992126-d4793c58-aeda-44ca-a337-d11a48bf81b5.png)to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field,
+Click the icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504992126_d4793c58_aeda_44ca_a337_d11a48bf81b5.png)to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field,
 
 enter the router password in the PASSWORD field, and click "Connect" to connect to the router via WiFi.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853283016-a9c7ff04-05bd-4de8-a0f9-a6470ad95792.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853283016_a9c7ff04_05bd_4de8_a0f9_a6470ad95792.png)
 
 After a successful connection, set the IP and then click “ping” to perform a network test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853291238-2d7a4589-42f6-44c7-9ad1-1fe78bfc79dd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853291238_2d7a4589_42f6_44c7_9ad1_1fe78bfc79dd.png)
 
 ### 3.8 RTC Test
 
 **Note: Ensure that a button battery is installed on the board and the battery voltage is normal.**
 
-Icon: ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504992411-63528e43-58a3-4e2f-9389-558c7edb4e5b.png)
+Icon: ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504992411_63528e43_58a3_4e2f_9389_558c7edb4e5b.png)
 
 To test the RTC, configure the time via the test software, power cycle the device, and then re-run the software to confirm RTC synchronization.
 
 Run the RTC test software to view and set the current system time RTC, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853301881-2e302918-8fd7-4566-9a09-a5325d549ec7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853301881_2e302918_8fd7_4566_9a09_a5325d549ec7.png)
 
 Click "Set" to configure the time, then click "Save" to apply the changes. You can then switch off the power, wait a while, switch it back on, and run the RTC test software again to automatically read the time. You will see that the RTC time has been synchronised and that the RTC is functioning correctly.
 
 ### 3.9 Key Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504992609-fcce17e8-3aa8-4a98-ad06-215df547f91b.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504992609_fcce17e8_3aa8_4a98_ad06_215df547f91b.png)
 
 The “Keypad” is used to test the functionality of the built-in keys by verifying whether the corresponding key turns blue when pressed. The interface is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853340133-a92e9fb9-82d6-497c-b5f6-e520b1b6c3a3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853340133_a92e9fb9_82d6_497c_b5f6_e520b1b6c3a3.png)
 
 The OK527\_UP4 carrier board features five physical buttons on the side: VOL+, VOL-, HOME, MENU and ENTER, which correspond to V+, V-, Home, Menu and Enter in the test programme respectively. When a button is pressed, the corresponding button in the test application will turn blue, indicating that the button is functioning correctly.
 
 ### 3.10 Watchdog Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504992773-e6487dca-0042-42ff-ab1d-448ae0675336.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504992773_e6487dca_0042_42ff_ab1d_448ae0675336.png)
 
 “WatchDog” is an application used to test whether the watchdog function is normal. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853348560-a54150d7-f789-4642-b8dc-c433b6e646ba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853348560_a54150d7_f789_4642_b8dc_c433b6e646ba.png)
 
 Check “feed dog”, click the “open watchdog” button, and the watchdog function will be started. The program will perform dog feeding operations, and normally the system will not reboot.
 
@@ -518,25 +518,25 @@ Uncheck “feed dog”, click the “open watchdog” button, and the watchdog f
 
 ### 3.11 Pingt Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504992932-c2402b2b-648c-441c-834e-2fd00114856f.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504992932_c2402b2b_648c_441c_834e_2fd00114856f.png)
 
 “Ping” is an interface version of the commonly used network test command ping. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853360248-4e364094-3548-4ccd-ad5a-a645e0618579.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853360248_4e364094_3548_4ccd_ad5a_a645e0618579.png)
 
 In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.
 
 As shown in the figure, it indicates the network between them is smooth.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853366769-58cb2cca-95e5-4cf7-8502-e6511b2e3e2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853366769_58cb2cca_95e5_4cf7_8502_e6511b2e3e2d.png)
 
 ### 3.12 Camera Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993020-d91d1029-2a21-4d18-913f-78fa259be448.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993020_d91d1029_2a21_4d18_913f_78fa259be448.png)
 
 Tap the icon to launch the camera test programme, which supports MIPI CSI interfaces and UVC cameras. During testing, you must first connect either the UVC camera or the MIPI OV5645. The UVC device is identified as /dev/video1; the MIPI OV5645 on P48 of the backplane is identified as /dev/video0; and the MIPI OV5645 on P49 of the backplane is identified as /dev/video4. Open the QT test programme.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853377923-3353cea2-6e2d-4214-9a1e-3b539ac83ea6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853377923_3353cea2_6e2d_4214_9a1e_3b539ac83ea6.png)
 
 First, select the camera video device node and the camera resolution setting. Click the "start" button to start capturing camera data, and click the "stop" button to stop capturing camera data. Click the "picture" button to take a picture, and specify the save path and file name for the captured image.
 
@@ -544,30 +544,30 @@ First, select the camera video device node and the camera resolution setting. Cl
 
 Taking the MiPiOV5645 camera as an example, the camera testing will be carried out.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993191-2f937b3d-11e1-456d-8da2-b2272ddf5ecd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993191_2f937b3d_11e1_456d_8da2_b2272ddf5ecd.png)
 
 Click "Picture" to take a photo. 
 The captured image is saved to the /root directory and can be viewed using the standard Windows image viewer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993510-7ac55b91-2bef-4631-b416-7cef7f01ada9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993510_7ac55b91_2bef_4631_b416_7cef7f01ada9.png)
 
 The MIPI OV5645 module currently supports resolutions of 1280x960, 1920x1080 and 2592x1944. The following test is based on an OV5645 module connected to the P48 socket on the backplane, operating at a resolution of 2592x1944.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993700-fa19c89b-1e6d-48ff-aa27-517bbe847d44.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993700_fa19c89b_1e6d_48ff_aa27_517bbe847d44.png)
 
 ### 3.13 Backlight Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993831-68fec2b4-f96d-4c4e-b49e-6555075e5b9c.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993831_68fec2b4_f96d_4c4e_b49e_6555075e5b9c.png)
 
 “BackLight” is an LCD backlight adjustment application. Adjust the progress bar left and right to adjust the backlight brightness. After opening, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853428224-e115fd38-6d75-465e-86da-4c6d1426b7ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853428224_e115fd38_6d75_465e_86da_4c6d1426b7ec.png)
 
 Drag the slider in the interface to set the LCD backlight brightness. 1 is the dimmest, 255 is the brightest. 0 needs to be set via the command line. Refer to “4.21 LCD Backlight Adjustment”.
 
 ### 3.14 Recording Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993900-db19bcb8-d26a-466b-9133-de9cbffab812.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993900_db19bcb8_d26a_466b_9133_de9cbffab812.png)
 
 Connect the microphone to the MIC jack.
 
@@ -577,19 +577,19 @@ Select a save location for the recording, then click "Start" to begin and "Stop"
 
 Interface:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853445711-275349cf-e1e2-4199-85ba-4358217ee8bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853445711_275349cf_e1e2_4199_85ba_4358217ee8bd.png)
 
 Click the Record button to start the test. The audio files are saved in the root directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853455096-0cce15e5-8919-4f53-a050-7a2134926bc7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853455096_0cce15e5_8919_4f53_a050_7a2134926bc7.png)
 
 ### 3.15 Music Playback Test
 
-Use the application icon “ ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504993966-9ac60d06-afdd-4fc8-be7d-5bd14f9ba35d.png) ” to test music playback.
+Use the application icon “ ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504993966_9ac60d06_afdd_4fc8_be7d_5bd14f9ba35d.png) ” to test music playback.
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853468214-c3aa49a4-25fd-4931-97e6-52a27aae6cb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853468214_c3aa49a4_25fd_4931_97e6_52a27aae6cb2.png)
 
 Application Interface
 
@@ -599,13 +599,13 @@ Click the button in the bottom left-hand corner and select the test audio file /
 
 OK527: CPU 0–3 have a maximum clock speed of 1.4 GHz, whilst CPU 4–7 have a maximum clock speed of 1.8 GHz. By default, the CPUs dynamically adjust their clock speeds according to the load, but it is also possible to set a fixed clock speed for the CPUs.
 
-Click the desktop settings icon![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994044-49b4b755-d432-4e34-9218-9473b692e946.png)to enter the next-level menu:
+Click the desktop settings icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994044_49b4b755_d432_4e34_9218_9473b692e946.png)to enter the next-level menu:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853489823-98ab8bb8-1a52-4bcb-85ec-5b4b9b994427.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853489823_98ab8bb8_1a52_4bcb_85ec_5b4b9b994427.png)
 
-Click the icon![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853495816-aa3a65e6-63a7-49a6-8445-db7d202ae3c5.png)to enter the CPU main frequency setting page.
+Click the icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853495816_aa3a65e6_63a7_49a6_8445_db7d202ae3c5.png)to enter the CPU main frequency setting page.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853502932-0d761d48-f870-491d-a7d2-e4c4437417e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853502932_0d761d48_f870_491d_a7d2_e4c4437417e8.png)
 
 Set OnDemand Governor：Dynamically adjust the main clock on demand.
 
@@ -617,39 +617,39 @@ Set Frequency CPU4-7: Set the main frequency.
 
 Take setting the small core frequency as an example: First click “Set Userspace Governor”, click “RUN” in the pop-up dialog,
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853509090-50711674-801f-456a-a2d4-59f3c8a571ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853509090_50711674_801f_456a_a2d4_59f3c8a571ef.png)
 
 then click “Set Frequency CPU0-3” to set a fixed frequency. (Click the arrow in the upper right corner to return to the previous directory, click the icon in the upper right corner to return to the main directory).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853519884-69dc2680-f28c-451e-8bcb-5b7185a9cd94.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853519884_69dc2680_f28c_451e_8bcb_5b7185a9cd94.png)
 
 Select the corresponding frequency according to needs for setting.
 
 ### 3.17 SQLite3 Data Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994118-cbdf2cf8-b7d1-4141-b49c-6cd554379061.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994118_cbdf2cf8_b7d1_4141_b49c_6cd554379061.png)
 
 Click the icon to enter the database test interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853570775-ce85234a-a570-4d1e-97b8-2d575987aed5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853570775_ce85234a_a570_4d1e_97b8_2d575987aed5.png)
 
 Select the section you want to modify, and then click on the blank area after making the changes.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853575981-1469680b-6b04-44e1-8925-123f54a951cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853575981_1469680b_6b04_44e1_8925_123f54a951cc.png)
 
 ### 3.18 SPI Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994187-181d6d8b-2da5-4e65-8064-08f42ddca0ce.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994187_181d6d8b_2da5_4e65_8064_08f42ddca0ce.png)
 
 Click the icon to enter the SPI test interface. Short the SPI0\_MOSI and SPI0\_MISO pins, click send below, and you can receive the sent data to complete the test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853586101-d2dd1036-2853-426a-a763-204ee8b303e3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718853586101_d2dd1036_2853_426a_a763_204ee8b303e3.png)
 
 Short-circuit the SPI0\_MOSI and SPI0\_MISO pins, then click “Send” below to receive the transmitted data, thereby completing the test.
 
 ### 3.19 Switching the Screen Display
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994267-c377bfc4-e6fd-4166-a1b7-d890abee0491.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994267_c377bfc4_e6fd_4166_a1b7_d890abee0491.png)
 
 Click the icon to open the interface, then click the relevant button to change the display settings. Click “Apply” to save the configuration; the changes will take effect the next time the system is restarted.
 
@@ -667,33 +667,33 @@ In addition, the following rules must be observed regarding screen configuration
 - HDMI automatically configures the resolution based on EDID.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994338-825eafe6-713a-4d52-a69b-ed4ea06608c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994338_825eafe6_713a_4d52_a69b_ed4ea06608c0.png)
 
 ### 3.20 OpenGL
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994417-87d22fae-c386-45a9-85f7-4799cd282f7b.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994417_87d22fae_c386_45a9_85f7_4799cd282f7b.png)
 
 The frame rate is currently only 20 frames per second.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994485-2d82ba5d-3b8b-4b26-bed5-65a33b8300a8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994485_2d82ba5d_3b8b_4b26_bed5_65a33b8300a8.png)
 
 ### 3.21 Video Player
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994581-37b6247e-d87c-4ab4-b0e7-706480a68ed2.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994581_37b6247e_d87c_4ab4_b0e7_706480a68ed2.png)
 
 Click “Open File” to select a test video and play it.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994694-4bca9e65-8aab-4219-9b4a-5e231f569779.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994694_4bca9e65_8aab_4219_9b4a_5e231f569779.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504994789-7e9c6c7d-9e24-422f-a6f3-cbd95c1ed88b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504994789_7e9c6c7d_9e24_422f_a6f3_cbd95c1ed88b.png)
 
 ### 3.22 CAN Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504995019-9ccfd1f4-4f80-410e-9cd6-24cf665712c4.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504995019_9ccfd1f4_4f80_410e_9cd6_24cf665712c4.png)
 
 Configure can0 as shown in the figure below：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504995152-5de9dbe8-8a67-444c-a646-fdad5d3c61b3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504995152_5de9dbe8_8a67_444c_a646_fdad5d3c61b3.png)
 
 ```bash
 root@OK527:/# ip link set awlink1 up type can bitrate 500000
@@ -704,17 +704,17 @@ root@OK527:/# cangen awlink1
 
 Configure CAN1 to transmit via the command line on the development board, and check whether CAN0 has received any data on the interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504995269-101df60c-50b5-421d-8d28-aa0e6883d646.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504995269_101df60c_50b5_421d_8d28_aa0e6883d646.png)
 
 ### 3.23 NPU\_AI\_CAMERA
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504995346-efacb185-18fc-408e-a2c3-e30e8bc984e0.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504995346_efacb185_18fc_408e_a2c3_e30e8bc984e0.png)
 
 Plug in the UVC camera and simply press the “Start” button.
 
 **Note: NPU testing is only supported in the OK 527N-UP4 version.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504995452-b681cd03-bd7b-4224-a3b0-939b81097ef8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504995452_b681cd03_bd7b_4224_a3b0_939b81097ef8.png)
 
 ### 3.24 Chinese Input via USB Keyboard
 
@@ -722,7 +722,7 @@ Ctrl+V to switch between Chinese and English input
 
 **Note: This method sometimes freezes and fails to switch to Chinese; it is provided for reference only.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504995597-68e8e82f-3f19-4715-868f-a7823e1415cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504995597_68e8e82f_3f19_4715_868f_a7823e1415cc.png)
 
 ## 4\. OK527\_UP4 Command Line Function Testing
 
@@ -1054,7 +1054,7 @@ The current version of the SDK supports a maximum of 1.5 Mbps.
 
 This test utilised UART4 and UART7, with the UART-to-485 converter employed for the serial port testing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854482534-9ac50873-3327-4ebe-b044-552742963dd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854482534_9ac50873_3327_4ebe_b044_552742963dd6.png)
 
 Enter the following command in the development board serial port:
 
@@ -1114,7 +1114,7 @@ root@OK527:/# ls /dev/ttyXRUSB*
 
 The correspondence between the four extended serial ports and the device nodes is shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854501284-ac1f795f-cf05-4062-98fc-3b552a167b5c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854501284_ac1f795f_cf05_4062_98fc_3b552a167b5c.png)
 
 For testing methods, please refer to “UART Testing”.
 
@@ -1387,7 +1387,7 @@ Run the following command in server mode using iperf3 in the Windows Command Pro
 D:\iperf-3.1.3-win64\iperf-3.1.3-win64>iperf3.exe -s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854539950-06c8eebd-c99a-4250-9310-1b437aaa0257.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854539950_06c8eebd_c99a_4250_9310_1b437aaa0257.png)
 
 The IP address of eth0 on the development board is 192.168.1.11, and the IP address of the Windows computer is 192.168.1.39. Enter the following in the OK527 serial debugging terminal:
 
@@ -1452,7 +1452,7 @@ eth1: 948 Mbps upload, 945 Mbps download
 
 The OK527 development board comes pre-installed with a lighttpd web server, and the service starts automatically at system boot. Enter the development board’s IP address in a browser to access the web pages on the board’s web server, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504997482-3c06388d-40e3-4f61-aed8-abcf9244ac63.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504997482_3c06388d_40e3_4f61_aed8_abcf9244ac63.png)
 
 #### 4.16.2 SFTP
 
@@ -1464,9 +1464,9 @@ Install the FileZilla tool on Windows and configure it by following the steps sh
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854565907-d6d577e4-3f10-40b1-be75-c0af16720c56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854565907_d6d577e4_3f10_40b1_be75_c0af16720c56.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854578304-c6b101f0-d6c3-4756-91c1-fe5ae9b55718.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854578304_c6b101f0_d6c3_4756_91c1_fe5ae9b55718.png)
 
 After successful login, upload and download operations can be performed.
 
@@ -1872,7 +1872,7 @@ root@OK527:/# vi /etc/autorun.sh
 
 Modify the file reference as follows (users need to modify according to their actual situation):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854651415-ad525e3b-3519-432f-ad11-78ebde105f37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854651415_ad525e3b_3519_432f_ad11_78ebde105f37.png)
 
 After modification, save and exit, then add execution permission to the script;
 
@@ -1894,7 +1894,7 @@ Navigate to the OK527-linux-sdk source package and create an autorun.sh file in 
 
 Content format reference as follows; please modify according to your actual needs:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854671764-11a6e703-7780-404e-9e7f-1a2c5189ef6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854671764_11a6e703_7780_404e_9e7f_1a2c5189ef6c.png)
 
 Use the chmod +x autorun.sh command to add execution permission to the file.
 
@@ -2046,7 +2046,7 @@ There are 2 x CAN on the carrier board, which are routed to the P41 connector.
 
 Short-circuit H, L, and GND of can0 and can1 respectively to perform the test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854704682-13284de8-3806-4254-b731-2a29092d7d3a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854704682_13284de8_3806_4254_b731_2a29092d7d3a.png)
 
 Start CAN service.
 
@@ -2104,7 +2104,7 @@ Board Passive Pairing (Standard pairing process).
 
 After the above settings, open your computer and search for Bluetooth. Click "Add Bluetooth or Other Devices", and a device named "OKT527" will appear. Click on this Bluetooth to attempt pairing,
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854751055-40b40021-d9a9-4094-a8da-bf3e33ded013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718854751055_40b40021_d9a9_4094_a8da_bf3e33ded013.png)
 
 The print information on the development board is as follows. Enter "yes":
 
@@ -2171,27 +2171,27 @@ After successful pairing, on the computer side, you can use Bluetooth to send fi
 
 Click "Send or receive files via Bluetooth".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855264803-546e43f0-8bac-4568-9251-aba4739cd77a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855264803_546e43f0_8bac_4568_9251_aba4739cd77a.png)
 
 Select the file to send.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855270605-f7d30193-7a16-4d98-8dc8-9ebfd6d2c998.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855270605_f7d30193_7a16_4d98_8dc8_9ebfd6d2c998.png)
 
 Select OKT527.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855278104-bf7b4b2e-47fa-4617-a410-a38274db9230.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855278104_bf7b4b2e_47fa_4617_a410_a38274db9230.png)
 
 Select the file to send.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855311685-52169b3c-eae7-4cc7-a967-26ba5922d0b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855311685_52169b3c_eae7_4cc7_a967_26ba5922d0b9.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855332997-62ca2ac1-a48c-4274-a517-4a1fbdef84c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855332997_62ca2ac1_a48c_4274_a517_4a1fbdef84c2.png)
 
 Waiting for sending to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855339406-1f5060a0-9b8c-4600-8b72-a0bf7a216a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855339406_1f5060a0_9b8c_4600_8b72_a0bf7a216a6d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855349195-a5a5d2db-09dc-4203-80c4-b9f46e2fe68f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855349195_a5a5d2db_09dc_4203_80c4_b9f46e2fe68f.png)
 
 The received file is saved in the /tmp directory.
 
@@ -2201,7 +2201,7 @@ Similarly, you can use the development board to send files to the computer. The 
 
 Select "Receive File" on the computer side.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855360798-c018e7d4-f48b-4af9-86da-3b6f4e6741df.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1718855360798_c018e7d4_f48b_4af9_86da_3b6f4e6741df.png)
 
 ```bash
 root@OK527:~# bluetoothctl 
@@ -2305,7 +2305,7 @@ root@OK527:/# gst-launch-1.0 v4l2src device=/dev/video1 ! videoconvert ! video/x
 .
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772504999893-9fdf782c-dead-44d8-8f90-71e3f884e137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504999893_9fdf782c_dead_44d8_8f90_71e3f884e137.png)
 
 ### 5.2 MIPI\_dsi Format Camera Acquisition Testing
 
@@ -2330,7 +2330,7 @@ Redistribute latency...
 0:00:03.5 / 99:99:99.
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505000247-d1730e38-4805-490c-8f4e-185449ec7eee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772505000247_d1730e38_4805_490c_8f4e_185449ec7eee.png)
 
 #### 5.2.2 OV13855 Test
 
@@ -2354,7 +2354,7 @@ Redistribute latency...
 0:00:03.4 / 99:99:99.
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505000483-5f1dcffd-9a60-45f3-a512-02f0aa47e22e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772505000483_5f1dcffd_9a60_45f3_a512_02f0aa47e22e.png)
 
 #### 5.2.3 Testing the TP2815 with an AHD Camera
 
@@ -2384,7 +2384,7 @@ Redistribute latency...
 0:00:07.7 / 99:99:99.
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505000704-cbb510a2-bb04-49be-acb1-81fa646951b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772505000704_cbb510a2_bb04_49be_acb1_81fa646951b1.png)
 
 Simultaneous preview from four cameras.
 
@@ -2449,7 +2449,7 @@ Redistribute latency...
 0:00:01.6 / 99:99:99.
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505000890-7b6ebf48-61b3-4ca0-83f2-484a4ccf824f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772505000890_7b6ebf48_61b3_4ca0_83f2_484a4ccf824f.png)
 
 ### 5.3 Video Hardware Decoding
 
