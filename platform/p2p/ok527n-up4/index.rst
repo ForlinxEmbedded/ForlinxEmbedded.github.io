@@ -34,6 +34,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK527_UP4_Linux5_15_147_User_Manual
+
 
 
 
