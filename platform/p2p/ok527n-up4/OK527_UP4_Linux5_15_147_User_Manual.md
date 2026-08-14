@@ -61,7 +61,7 @@ The OK527\_UP4 development board features a SoM + carrier board structural desig
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504987401_4ba4a64a_982b_4df1_a139_a6fd1f065ddf.jpg)
 
-![](527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/527.png)
 
 **Note: Hardware specifications are not covered in this software manual. Before development, please refer to the “ User’s Hardware Manual” to understand the product naming and hardware configuration.**
 
@@ -2506,11 +2506,11 @@ Unzip the drivers and tools, then connect the development board to your computer
 
 Open the Device Manager on the computer. If an unknown device appears, manually install the driver by right-clicking on it and selecting “Update driver”.
 
-![Image](e5f86fbc1486465992bbe76cd757b12d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/e5f86fbc1486465992bbe76cd757b12d.png)
 
 After selecting "Browse my computer to find the driver", choose the unzipped PhoenixSuit\_V1.10 directory.
 
-![Image](92a779fea1264e2bb070bcac89d74dca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/92a779fea1264e2bb070bcac89d74dca.png)
 
 Select the USBDriver\_64 directory that you just extracted:
 
@@ -2518,7 +2518,7 @@ Click "Next" and wait for the driver installation to complete.
 
 The following interface will appear:
 
-!![Image](48ee2faa0d544b98b7f5b783cbf42f3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/48ee2faa0d544b98b7f5b783cbf42f3e.png)
 
 #### 6.2.2 OTG Flashing Methods
 
@@ -2528,11 +2528,11 @@ This programming method will program the entire img image.
 
 The following interface will appear:
 
-![Image](75907aa320fc4c73b2c2d53ad293a073.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/75907aa320fc4c73b2c2d53ad293a073.png)
 
 In the following interface, click "One-click Flash" and then click "Browse" to select the firmware image file.
 
-![Image](b9d6ce35261d45989b61599133445b73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/b9d6ce35261d45989b61599133445b73.png)
 
 Connect the development board and the host using a Type-A to Type-C cable, power the board, and press and hold the FEL and RESET buttons simultaneously. Release the RESET button first, then release the FEL button.
 
@@ -2540,11 +2540,11 @@ Connect the development board and the host using a Type-A to Type-C cable, power
 
 In the following interface, click "Yes" to enter the formatting upgrade mode:
 
-![Image](9e841ac83db74c3f8252cd462c7c9b8e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/9e841ac83db74c3f8252cd462c7c9b8e.png)
 
 Wait for the programming to complete. Then, the following interface will pop up:
 
-![Image](25e5db4bcd224c4b90932f18ba8fadf7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/25e5db4bcd224c4b90932f18ba8fadf7.png)
 
 Power up and start the OK527 _ UP4 card.
 
@@ -2558,37 +2558,37 @@ In the following interface, check the checkbox "Single or multi-partition downlo
 
 Check the “BOOT-RESOURCE” and “ENV” tick boxes.
 
-![Image](cdd682f28efa43f3948b34cf987a980f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/cdd682f28efa43f3948b34cf987a980f.png)
 
 Connect the development board to the host computer using a Micro USB cable to power the board. Press the FEL and RESET buttons simultaneously; release the RESET  
 button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:   
 **Note: Release RESET first, then release FEL.**
 
-![Image](f58585e7e2e5409e9916f7fecc70266b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/f58585e7e2e5409e9916f7fecc70266b.png)
 
 OTG Flashing Kernel Image and Device Tree DTB File
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check "BOOT".
 
-![Image](897c8fbb003944ceb6cf8fe34b68de83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/897c8fbb003944ceb6cf8fe34b68de83.png)
 
 Connect the development board to the host computer using a Micro USB cable to power the board. Press the FEL and RESET buttons simultaneously; release the RESET  
 button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:   
 **Note: Release RESET first, then release FEL.**
 
-![Image](0b2663ee9100475daac085b38192c22d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/0b2663ee9100475daac085b38192c22d.png)
 
 OTG System Flashing
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check "ROOTFS".
 
-![Image](cd45f3bab23048ec97c58521e9db720c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/cd45f3bab23048ec97c58521e9db720c.png)
 
 Connect the development board to the host computer using a Micro USB cable to power the board. Press the FEL and RESET buttons simultaneously; release the RESET  
 button first, then release the FEL button. Wait for the programming to complete. Then, the following interface will pop up:   
 **Note: Release RESET first, then release FEL.**
 
-![Image](10322ba26a994533b0a79b6f331f16af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/10322ba26a994533b0a79b6f331f16af.png)
 
 #### 6.2.3 Common OTG Flashing Issues
 
@@ -2596,7 +2596,7 @@ Driver Installation Failure
 
 Some users still see an "Unknown Device" in Device Manager after installing the USB driver according to the manual. When they click on this device, an error message appears stating that "the third-party INF file does not contain digital signature information," as shown in the figure below:
 
-![Image](add5cacc0f3944ca9e281a9e532154e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/add5cacc0f3944ca9e281a9e532154e2.png)
 
  This occurs because some Windows systems, to prevent third-party programs from affecting system stability, block unsigned drivers from passing verification, which results in driver installation failure. The user must first disable driver signature enforcement on the computer, then proceed to install the driver following the instructions in the manual.
 
@@ -2604,11 +2604,11 @@ Some users still see an "Unknown Device" in Device Manager after installing the 
 
 First press and hold Shift + Restart;
 
-![Image](8e077ae99f5c45499a2e0d5549cd10c2.png)
+!![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/8e077ae99f5c45499a2e0d5549cd10c2.png)
 
 At startup, select Troubleshoot -- Advanced options -- Startup Settings;
 
-![Image](8a469de93ad145a9929cfa82a67562a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/8a469de93ad145a9929cfa82a67562a1.png)
 
 In the startup settings interface, click Restart in the lower right corner to restart and enter the startup settings. You can then disable driver signature enforcement using the number key 7 or the function key F7.
 
@@ -2618,11 +2618,11 @@ When programming, you need to press the RESET key and the FEL key at the same ti
 
 Device name appears but the board still cannot be recognized
 
-![Image](3e0d49691a2b4c8ba31b7d31f69dd091.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/3e0d49691a2b4c8ba31b7d31f69dd091.png)
 
 This may be because there are many unknown devices in Device Manager, and selecting the wrong one could cause the driver to be installed to another device. First right-click the device item mentioned above, select "Uninstall device", and check "Delete the driver software for this device".
 
-![Image](2c3fbd23dae14b61bfc4199fab45dab0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/2c3fbd23dae14b61bfc4199fab45dab0.png)
 
 After uninstalling, disconnect other USB devices connected to the host, put the development board into flashing mode and connect it to the host, then repeat the above steps for installation.
 
@@ -2638,7 +2638,7 @@ Copy the flashing tool PhoenixCard\_V4.1.9.zip to any Windows directory, and dou
 
 The following interface will appear:
 
-![Image](ca21e82750e0406d9531ad7baec66c5a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/ca21e82750e0406d9531ad7baec66c5a.png)
 
 **Note: If the TF card has multiple partitions, click "Restore Card" first, then click "Burn Card"; otherwise, the burning process may fail.**
 
@@ -2646,7 +2646,7 @@ Click "Firmware" to browse and select the OK527 firmware image, select "Mass Pro
 
 Wait until the entire burn process is complete, as shown in the interface below:
 
-![Image](564b183a3bb54e87ab1b8cd8e33b8445.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/564b183a3bb54e87ab1b8cd8e33b8445.png)
 
 #### 6.3.2 TF Card Flashing Method
 
@@ -2714,4 +2714,4 @@ Insert the TF card into a Windows host and run PhoenixCard.exe as an administrat
 
 Click “Restore Card” to restore the programmed TF card to a standard TF card.
 
-![Image](564b183a3bb54e87ab1b8cd8e33b8445-1786697383669.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/564b183a3bb54e87ab1b8cd8e33b8445-1786697383669.png)
