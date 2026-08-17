@@ -380,7 +380,7 @@ Pin-to-Pin UP4 Series
      </a>
      <h3 class="product-title">OK-MX9352-UP4</h3>
      <div class="btn-group">
-       <a href="p2p/ok-mx9352-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="https://www.forlinx.net/product/fetmx9352-up4-nxp-imx93-som-184.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="p2p/ok-mx9352-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -391,7 +391,7 @@ Pin-to-Pin UP4 Series
      </a>
      <h3 class="product-title">OK3568J-UP4</h3>
      <div class="btn-group">
-       <a href="p2p/ok3568j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="https://www.forlinx.net/product/fet3568-up4-rockchip-rk3568-som-183.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="p2p/ok3568j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
@@ -402,8 +402,32 @@ Pin-to-Pin UP4 Series
      </a>
      <h3 class="product-title">OK3562J-UP4</h3>
      <div class="btn-group">
-       <a href="p2p/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="https://www.forlinx.net/product/fet3562-up4-rockchip-rk3562-som-182.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
        <a href="p2p/ok3562j-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+
+    <div class="product-card">
+     <a href="p2p/ok536-up4/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/p2p/OK536-UP4.png" alt="OK536-UP4" class="product-image" />
+     </a>
+     <h3 class="product-title">OK536-UP4</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/fet536-up4-allwinner-t536-som-186.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="p2p/ok536-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
+
+    <div class="product-card">
+     <a href="p2p/ok527n-up4/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/p2p/OK527N-UP4.png" alt="OK527N-UP4" class="product-image" />
+     </a>
+     <h3 class="product-title">OK527N-UP4</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/fet527n-up4-allwinner-t527-som-185.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="p2p/ok527n-up4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
 
