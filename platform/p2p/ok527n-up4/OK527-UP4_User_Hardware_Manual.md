@@ -125,7 +125,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | ESD HBM(ESDA/JEDEC JS-001-2017)| -2000| +2000| V| Applicable to all pins of the SoM|
 | ESD CDM(ESDA/JEDEC JS-002-2018)| -250| +250| V| Applicable to all pins of the SoM|
 
-**Note: **
+**Note:** 
 
 - **The above data is from the chip manual;**
 - **All signal led out from the SoM are electrostatic discharge (ESD) sensitive. When designing carrier board, adequate ESD protection measures must be implemented for the interfaces. Additionally, proper ESD precautions should be observed during the transportation, assembly, and usage of the SoM.**
@@ -419,7 +419,7 @@ A-B-C+D E F :G-H
 
 ### 3.5 OK527-UP4 Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  
   default;**
