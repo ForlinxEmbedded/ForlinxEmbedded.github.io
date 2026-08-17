@@ -2714,4 +2714,4 @@ Insert the TF card into a Windows host and run PhoenixCard.exe as an administrat
 
 Click “Restore Card” to restore the programmed TF card to a standard TF card.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/564b183a3bb54e87ab1b8cd8e33b8445-1786697383669.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/564b183a3bb54e87ab1b8cd8e33b8445_1786697383669.png)
