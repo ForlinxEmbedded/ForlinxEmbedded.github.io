@@ -66,21 +66,21 @@ Industrial PC
 
 T527 Block Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505017478-75d6f3e5-8872-4c02-ad9a-00f092071694.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505017478_75d6f3e5_8872_4c02_ad9a_00f092071694.png)
 
 ## 2\. FET527-UP4 SoM Description
 
 #### 2.1 FET527-UP4 Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505020637-e4197f80-f42b-465f-8ddc-7e15b0930aad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505020637_e4197f80_f42b_465f_8ddc_7e15b0930aad.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505020831-5010ddc3-5800-4070-ba1f-343e407911b8.png)**Back**
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505020831_5010ddc3_5800_4070_ba1f_343e407911b8.png)**Back**
 
 ### 2.2 FET527-UP4 SoM Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505021044-db380cb3-a05c-4271-925e-95cf723e6745.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505021044_db380cb3_a05c_4271_925e_95cf723e6745.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -188,11 +188,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 FET527-UP4 SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505021341-352fe01c-f50b-453d-b3fa-e758bd595044.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505021341_352fe01c_f50b_453d_b3fa_e758bd595044.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505021611-b1be8326-c83e-40c0-842f-71ed34afa742.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505021611_b1be8326_c83e_40c0_842f_71ed34afa742.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505021899-ca50a163-f16a-4db2-b1ca-5724fb613d20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505021899_ca50a163_f16a_4db2_b1ca_5724fb613d20.png)
 
 #### 2.5.2 FET527-UP4 SoM Pin Function Description
 
@@ -347,13 +347,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 Connection method: Stamp hole + LGA.   
 The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/50461850/1772505023947-86049d34-ead9-4b04-a1aa-70d1e0005177.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505023947_86049d34_ead9_4b04_a1aa_70d1e0005177.jpg)
 
 ![](527.png)
 
 ### 3.2 OK527-UP4 Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505024969-88fa4870-07a6-4372-9158-7cb631b1d88b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505024969_88fa4870_07a6_4372_9158_7cb631b1d88b.png)
 
 PCB: 130mm×190mm
 
@@ -365,7 +365,7 @@ Power Voltage: DC 12V
 
 The OK527x-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 39mm × 39mm × 23mm. See below for details.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025059-339b828a-e830-4ae6-8827-85182f9a2c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025059_339b828a_e830_4ae6_8827_85182f9a2c20.png)
 
 ### 3.3 Naming Rules
 
@@ -431,7 +431,7 @@ As shown, the power supply for the development board is 12V DC （from P28). VDD
 
 PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025162-6df4adb6-572e-48c6-b694-47b81b031fc7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025162_6df4adb6_572e_48c6_b694_47b81b031fc7.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -445,7 +445,7 @@ K6 on the carrier board is for waking up. After the board enters sleep mode pres
 
 The FET527x-UP4 SoM does not support the WAKEUP function.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025283-4d6e733c-9c1c-4325-8693-b4d06c0da454.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025283_4d6e733c_9c1c_4325_8693_b4d06c0da454.png)
 
 #### 3.5.3 LRADC Button
 
@@ -467,7 +467,7 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 The carrier board features a single JTAG debugging interface for debugging the x-core
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025397-b8fd8d10-f59b-42f5-b9b1-2dd8571fc844.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025397_b8fd8d10_f59b_42f5_b9b1_2dd8571fc844.png)
 
 #### 3.5.6 RTC
 
@@ -514,17 +514,17 @@ Pins P2 and P3 on the development board can be connected to an eDP display; P2 i
 
 The P44 header on the development board is a 2×15-pin header with a 2.0 pitch, used for I/O testing. The OK527-UP4 carrier board does not support RGB functionality.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025624-1354781f-83a0-4065-8978-b78bfb089d5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025624_1354781f_83a0_4065_8978_b78bfb089d5e.png)
 
 #### 3.5.12 HDMI Display
 
 The P5 port on the development board is a standard HDMI port and supports HDMI 2.0.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025900-22dd523f-1a25-4e0c-941e-f57264d3e067.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025900_22dd523f_1a25_4e0c_941e_f57264d3e067.png)
 
 ![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20113047.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026008-db039353-6ead-42f4-b7ba-51b4b979a829.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026008_db039353_6ead_42f4_b7ba_51b4b979a829.png)
 
 #### 3.5.13  MIPI\_DSI
 
@@ -540,21 +540,21 @@ P7 and P8 supports 2lane MIPI-CSI connections.
 
 The P6 port supports 4lane MIPI-CSI connection and multiplexes a signal line with the P9 port. The P9 port is used to connect up to four analogue camera modules. It is not possible to use the P6 and P9 ports for both functions simultaneously.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026134-8fff92f1-2cc0-41ab-ae41-e42bb13f63bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026134_8fff92f1_2cc0_41ab_ae41_e42bb13f63bc.png)
 
 ![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20162755.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026216-6b0fddb3-124c-4ffb-83d1-39e26a507151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026216_6b0fddb3_124c_4ffb_83d1_39e26a507151.png)
 
 ![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-10%20150703.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026308-bbf52ea3-cad9-4616-b621-bd2628923309.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026308_bbf52ea3_cad9_4616_b621_bd2628923309.png)
 
 #### 3.5.15 WIFI\&BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. The Wi-Fi module utilizes an SDIO interface, supports dual-band operation in 2.4GHz and 5GHz, and complies with IEEE 802.11a/b/g/n/ac standards. The Bluetooth module uses UART \& PCM interfaces and complies with Bluetooth 5.2 specifications. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026407-b712734d-7ccf-4d39-916b-d0d8131c239c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026407_b712734d_7ccf_4d39_916b_d0d8131c239c.png)
 
 #### 3.5.16 USB2.0\&USB3.0
 
@@ -562,9 +562,9 @@ There is an onboard USB 2.0 HUB on the development board, which is expanded to t
 
 The development board features one USB 3.0 port, which is the SoM’s native USB 3.0 port. A dual-layer USB 3.0 \& 2.0 Type-A standard connector is connected to the development board; the Type-A 3.0 port supports OTG, whilst the Type-C 2.0 port (HOST) is routed to the upper layer of the dual-layer USB socket. Route A is controlled by the S3 DIP switch; “OFF” corresponds to “Device” and “ON” to “HOST”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026545-1f9965f8-ca22-47ae-8096-abdd3fb6bc89.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026545_1f9965f8_ca22_47ae_8096_abdd3fb6bc89.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026928-b09d3981-4aa5-4451-bc66-26e4e9f1354c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505026928_b09d3981_4aa5_4451_bc66_26e4e9f1354c.png)
 
 #### 3.5.17 4G
 
@@ -582,13 +582,13 @@ Before using the 4G function, please power off the board, install the 4G module,
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521SH chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027053-f7647a51-8f47-4632-8d30-ec90ffe248cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027053_f7647a51_8f47_4632_8d30_ec90ffe248cf.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027188-6dd09afa-2e83-4d3f-8f23-d561305dda91.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027188_6dd09afa_2e83_4d3f_8f23_d561305dda91.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027276-a731c496-eac5-40fe-a6c9-e547ac6d8b36.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027276_a731c496_eac5_40fe_a6c9_e547ac6d8b36.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027364-978554a0-3221-412f-b864-bf7b22df2e9e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027364_978554a0_3221_412f_b864_bf7b22df2e9e.png)
 
 #### 3.5.19 CAN
 
@@ -596,7 +596,7 @@ The development board features the native CAN0 and CAN1 pins to provide two stan
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027445-649d6bbb-898f-4b5f-8023-5b8d477285eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027445_649d6bbb_898f_4b5f_8023_5b8d477285eb.png)
 
 #### 3.5.20 485
 
@@ -604,7 +604,7 @@ The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027526-37a4c92f-45d2-4eb7-be19-4083b2e3b445.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027526_37a4c92f_45d2_4eb7_be19_4083b2e3b445.png)
 
 #### 3.5.21 GPADC
 
@@ -622,7 +622,7 @@ The GPADC is connected via 2.54 mm pitch pins. It can be connected directly usin
 
 A five-wire SPI interface is led out from the SoM (5V power supply).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027651-3da512a4-b4fd-4907-b0df-c2d6601b574b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027651_3da512a4_b4fd_4907_b0df_c2d6601b574b.png)
 
 #### 3.5.24 IO Expansion
 
@@ -640,19 +640,19 @@ The P39 and P38 ports are speaker ports, supporting stereo speakers, Class D, wi
 
 ![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-17%20154753.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027850-eaa88e6b-be7e-4869-9a60-8210db35fad7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505027850_eaa88e6b_be7e_4869_9a60_8210db35fad7.png)
 
 A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505028040-77adba38-eea5-494f-b566-22d76341b240.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505028040_77adba38_eea5_494f_b566_22d76341b240.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505028157-3c80c5a4-c3e3-4764-9604-0bd50ffcb767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505028157_3c80c5a4_c3e3_4764_9604_0bd50ffcb767.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633273437-f7368261-afda-403a-9257-adc3ea7f5d25.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1778633273437_f7368261_afda_403a_9257_adc3ea7f5d25.png)
 
 To ensure soldering yield, please refer to the following specifications for stencil design:
 
@@ -664,9 +664,9 @@ LCC Pad Aperture: The opening width should be 0.6mm, and the length should exten
 
 Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support bridge at the center. Square LGA pads: Openings with dimensions of 0.83mm × 0.83mm.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633273553-94cadaa1-5abb-412c-b703-89e516dcfce3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1778633273553_94cadaa1_5abb_412c_b703_89e516dcfce3.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633273650-bb5ffc52-08e9-47ed-8760-217a9edbbe0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1778633273650_bb5ffc52_08e9_47ed_8760_217a9edbbe0c.png)
 
 **Note:**
 
@@ -698,16 +698,16 @@ Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support
 
 **It has SoM, power, debug serial port, system image flashing port.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505034049-52d5b001-063a-4717-b089-a9525841a341.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505034049_52d5b001_063a_4717_b089_a9525841a341.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505034135-30946337-a887-49ae-aa8d-9efd74626522.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505034135_30946337_a887_49ae_aa8d_9efd74626522.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505034233-21982a7a-ba38-48ea-8db5-c3a045c60924.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505034233_21982a7a_ba38_48ea_8db5_c3a045c60924.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505034406-e8300be1-a6bf-414a-915f-9f051911dc75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505034406_e8300be1_a6bf_414a_915f_9f051911dc75.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505034626-d28aee7f-3c63-4cbc-a0cb-20cacfad2a26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505034626_d28aee7f_3c63_4cbc_a0cb_20cacfad2a26.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505034824-f22e8912-1722-4cca-bee9-a53bbe472dfd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505034824_f22e8912_1722_4cca_bee9_a53bbe472dfd.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505035073-6f58700a-786b-4f13-b3c2-7db7c9763762.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505035073_6f58700a_786b_4f13_b3c2_7db7c9763762.png)
