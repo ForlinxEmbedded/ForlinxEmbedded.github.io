@@ -451,15 +451,15 @@ The FET527x-UP4 SoM does not support the WAKEUP function.
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20104742.png)
+![](104742.png)
 
 #### 3.5.4 Debugging Serial Port
 
 The carrier board features a single USB Type-C port with 3 x integrated debug serial ports. Install the XR21V1414IM48 driver on your computer, connect the P36 port to the computer, and select the DEBUG\_A debug serial port to start debugging.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20110047.png)
+![](110047.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20110110.png)
+![](110110.png)
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
@@ -473,15 +473,15 @@ The carrier board features a single JTAG debugging interface for debugging the x
 
 An RTC device is connected to the carrier board via the I2C\_A bus. It enables a compatible power supply from either VCC\_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-21%20114208.png)
+![](114208.png)
 
 #### 3.5.7 TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card is supplied by the VCC\_3V3\_SD output from the SoM
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20093650.png)
+![](093650.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20094829.png)
+![](094829.png)
 
 **Note:** 
 
@@ -494,7 +494,7 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilizes the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20103014.png)
+![](103014.png)
 
 #### 3.5.9 LVDS Display
 
@@ -502,13 +502,13 @@ The pin header P1 on the development board can be connected to the LVDS display 
 
 It supports 2\*4 lane LVDS connection, and I2C port touch screen.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20114744.png)
+![](114744.png)
 
 #### 3.5.10 EDP Display
 
 Pins P2 and P3 on the development board can be connected to an eDP display; P2 is with a 2.0mm pitch.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-23%20140412.png)
+![](140412.png)
 
 #### 3.5.11 IO
 
@@ -522,7 +522,7 @@ The P5 port on the development board is a standard HDMI port and supports HDMI 2
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505025900-22dd523f-1a25-4e0c-941e-f57264d3e067.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20113047.png)
+![](113047.png)
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026008-db039353-6ead-42f4-b7ba-51b4b979a829.png)
 
@@ -530,7 +530,7 @@ The P5 port on the development board is a standard HDMI port and supports HDMI 2
 
 The P11 on the development board is MIPI\_DSI port, supporting 4 Lane MIPI\_DSI.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20114926.png)
+![](114926.png)
 
 #### 3.5.14 MIPI\_CSI
 
@@ -542,11 +542,11 @@ The P6 port supports 4lane MIPI-CSI connection and multiplexes a signal line wit
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026134-8fff92f1-2cc0-41ab-ae41-e42bb13f63bc.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-12%20162755.png)
+![](162755.png)
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026216-6b0fddb3-124c-4ffb-83d1-39e26a507151.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-10%20150703.png)
+![](150703.png)
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505026308-bbf52ea3-cad9-4616-b621-bd2628923309.png)
 
@@ -574,9 +574,9 @@ P20 is a nanoSIM card slot, which is self-ejecting. Pay attention to the inserti
 
 Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20114400.png)
+![](114400.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20114420.png)
+![](114420.png)
 
 #### 3.5.18 Ethernet
 
@@ -610,13 +610,13 @@ The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20161310.png)
+![](161310.png)
 
 #### 3.5.22 UART
 
 1 x five-wire UART is routed from the development board and powered by a 3.3V signal.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-14%20165334.png)
+![](165334.png)
 
 #### 3.5.23 SPI
 
@@ -628,7 +628,7 @@ A five-wire SPI interface is led out from the SoM (5V power supply).
 
 An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-17%20114511.png)
+![](114511.png)
 
 #### 3.5.25 Audio
 
@@ -636,9 +636,9 @@ The development board features a standard 3.5mm headphone jack (CTIA internation
 
 The P39 and P38 ports are speaker ports, supporting stereo speakers, Class D, with a power output of 1.3W;
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-17%20154728.png)
+![](154728.png)
 
-![](%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-02-17%20154753.png)
+![](154753.png)
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1772505027850-eaa88e6b-be7e-4869-9a60-8210db35fad7.png)
 
