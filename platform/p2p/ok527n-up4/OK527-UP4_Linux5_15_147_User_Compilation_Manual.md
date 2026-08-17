@@ -59,7 +59,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079121244-b1781bd8-d4da-4103-bf22-b85ea7b85834.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079121244_b1781bd8_d4da_4103_bf22_b85ea7b85834.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -67,35 +67,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the setup file to enter the installation wizard.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079142871-4a15056b-c774-4cdf-8285-2bb081323c93.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079142871_4a15056b_c774_4cdf_8285_2bb081323c93.png)
 
 Click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079159587-f1bc696a-cc53-4b7d-8df1-9f0660cc88c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079159587_f1bc696a_cc53_4b7d_8df1_9f0660cc88c5.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079174511-f70aee38-d83e-4d75-b875-bbc0968ef617.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079174511_f70aee38_d83e_4d75_b875_bbc0968ef617.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079184114-1cdf6c73-4a92-4713-9595-47a8c36c164c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079184114_1cdf6c73_4a92_4713_9595_47a8c36c164c.png)
 
 Check, then click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079198669-5c9c9b4c-9a51-41ef-9bcb-c157ed98e036.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079198669_5c9c9b4c_9a51_41ef_9bcb_c157ed98e036.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079209843-fb94bed8-c4c3-40e6-badd-a9336c61b81d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079209843_fb94bed8_c4c3_40e6_badd_a9336c61b81d.png)
 
 Click “Install.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079221521-57505963-3f30-4034-ab79-3febbe1b8959.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079221521_57505963_3f30_4034_ab79_3febbe1b8959.png)
 
 Wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1723079233778-a6d19fda-9c5c-40cf-853b-c76a62f3f3b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1723079233778_a6d19fda_9c5c_40cf_853b_c76a62f3f3b6.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
@@ -112,11 +112,11 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment materials include an MD5 checksum file. After downloading the materials, please first perform an MD5 checksum on the development environment archive (located in 3-Tools\\md5sums-1.2.zip) to verify if the checksum matches the one in the checksum file. If they match, the download is successful; if not, the file may be corrupted and needs to be re-downloaded.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948365948-5822150f-e7ea-483d-8743-ea64e4ab08fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948365948_5822150f_e7ea_483d_8743_ea64e4ab08fd.png)
 
 Select OK527-VM15.5.6-ubuntu20.04, right-click, and extract it to the current folder or your desired directory:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948388548-5aa3ea5e-8d97-4cab-98ec-f9689e6e2f7f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948388548_5aa3ea5e_8d97_4cab_98ec_f9689e6e2f7f.png)
 
 After extraction, you will obtain the development environment folder OK527-VM15.5.6-ubuntu20.04.
 
@@ -124,15 +124,15 @@ The file OK527-VM15.5.6-ubuntu20.04.vmx inside the OK527-VM15.5.6-ubuntu20.04 fo
 
 Open the installed virtual machine software.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948433154-61bdd056-eea7-412e-bb47-2ca27326221e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948433154_61bdd056_eea7_412e_bb47_2ca27326221e.png)
 
 Select the directory where the newly extracted OK527-VM15.5.6-ubuntu20.04 virtual machine file is located, and double-click the startup file to open it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948455858-24fdc770-800f-4c2b-8a57-4541461a3d0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948455858_24fdc770_800f_4c2b_8a57_4541461a3d0c.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948476623-d85ceac2-9abb-47c0-bf44-8b57fe5189bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948476623_d85ceac2_9abb_47c0_bf44_8b57fe5189bc.png)
 
 The provided development environment is set to automatically log in to the account forlinx on startup by default.
 
@@ -148,67 +148,67 @@ The Ubuntu version to install is 20.04. The descriptions and development in this
 
 Download the “ubuntu-20.04.6-desktop-amd64.iso” version (the specific version to download can be based on your own needs; here we use version 20.04.6 as an example).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948846066-ec162f18-7e2d-4487-ac4d-e38cdc5ed1fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948846066_ec162f18_7e2d_4487_ac4d_e38cdc5ed1fa.png)
 
 #### 3.1.1 Creating an Ubuntu Virtual Machine
 
 **Step 1**: Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948893126-e3590cfb-7439-4651-924f-a2d10374da9f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948893126_e3590cfb_7439_4651_924f_a2d10374da9f.png)
 
 **Step 2**: Select the compatibility for the corresponding VMware version (you can view the version under Help -> About VMware Workstation). After confirming, click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948932428-9511048d-e2d7-4f7a-8395-0821cef9cb79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948932428_9511048d_e2d7_4f7a_8395_0821cef9cb79.png)
 
 Choose “Installer disc image file (iso)” and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948970851-e5167620-f7bc-4451-9278-0138cdc7719c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948970851_e5167620_f7bc_4451_9278_0138cdc7719c.png)
 
 Enter the full name, username, and password, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718948988345-6bc05b9f-e9f7-4f69-9958-6601680f096b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718948988345_6bc05b9f_e9f7_4f69_9958_6601680f096b.png)
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949004063-573e7818-db79-447f-87be-7300ada8564f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949004063_573e7818_db79_447f_87be_7300ada8564f.png)
 
 Configure the number of cores, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949028219-34f18366-f692-4a22-b57b-54d17b6c25ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949028219_34f18366_f692_4a22_b57b_54d17b6c25ad.png)
 
 Configure at least 8GB of memory and select “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949106542-abdb4dd3-94ff-4717-aae8-49ff1552ddc5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949106542_abdb4dd3_94ff_4717_aae8_49ff1552ddc5.png)
 
 Set the network type, use the default NAT networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949123407-6494b5a1-1357-440c-95d5-99782ec611f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949123407_6494b5a1_1357_440c_95d5_99782ec611f7.png)
 
 Use the recommended I/O controller and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949139079-ff464474-be29-4f7a-8bd4-947d20c6330c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949139079_ff464474_be29_4f7a_8bd4_947d20c6330c.png)
 
 Use the recommended disk type and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949153183-98ee5751-ae4f-4587-94b0-471fc1a3ae2a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949153183_98ee5751_ae4f_4587_94b0_471fc1a3ae2a.png)
 
 Use the default option, “Create a new virtual disk”, and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949166693-8782adbb-56d4-4831-bb1c-31b4156f3740.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949166693_8782adbb_56d4_4831_bb1c_31b4156f3740.png)
 
 Allocate a disk size of 80GB and choose “Split virtual disk into multiple files”, then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949181244-213bc0ba-c5c3-4af7-b2bf-e376f015b5c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949181244_213bc0ba_c5c3_4af7_b2bf_e376f015b5c7.png)
 
 Use the default settings and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949199722-746f65a3-37d5-4f62-947b-a5569544f780.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949199722_746f65a3_37d5_4f62_947b_a5569544f780.png)
 
 Click “Finish”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949214671-bc902643-637a-486d-9ac4-61a49f72171d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949214671_bc902643_637a_486d_9ac4_61a49f72171d.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949231445-fcd76a84-fea5-451c-ad59-800cd108292e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949231445_fcd76a84_fea5_451c_ad59_800cd108292e.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -226,15 +226,15 @@ Without this tool, copy-paste and file drag-and-drop between the Windows host an
 
 First, click “Virtual Machine” on the VMware navigation bar, then click “Install VMware Tools” in the dropdown menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949273811-f3e92114-4eea-4b65-862c-dbb8304364f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949273811_f3e92114_4eea_4b65_862c_dbb8304364f9.png)
 
 After completion, enter Ubuntu. A VMware Tools CD will appear on the desktop; click to enter it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949359798-ba856cf3-7059-41d2-96ed-a599e55d10fc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949359798_ba856cf3_7059_41d2_96ed_a599e55d10fc.png)
 
 After entering, you will see a compressed file VMware Tools-10.3.10-12406962. tar. gz (different virtual machine versions may be different), and copy the file to the home directory (that is, the directory of the home personal user name).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949385494-91210da6-b0d4-4d43-a4b7-60b589eaf39f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949385494_91210da6_b0d4_4d43_a4b7_60b589eaf39f.png)
 
 Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the command to extract it:
 
@@ -242,11 +242,11 @@ Press \[Ctrl+Alt+T] to bring up the terminal command interface and enter the com
 forlinx@ubuntu:~$ sudo tar xvf VMwareTools-10.3.10-12406962.tar.gz
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949403392-ae4f707b-f5e8-49ae-ad9a-70858568cbe2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949403392_ae4f707b_f5e8_49ae_ad9a_70858568cbe2.png)
 
 After extraction completes, a folder named “vmware-tools-distrib” will appear.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949418780-e8c547ab-60de-4c4c-a5bb-9f73fff7b700.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949418780_e8c547ab_60de_4c4c_a5bb_9f73fff7b700.png)
 
 Return to the terminal and enter:
 
@@ -264,7 +264,7 @@ sudo ./vmware-install.pl
 
 Press Enter, enter your password, and the installation will begin. When prompted, enter “yes”; for other prompts, press Enter to accept the default installation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949432279-4216de1f-7cf9-4c48-9d11-262568195cdb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949432279_4216de1f_7cf9_4c48_9d11_262568195cdb.png)
 
 After VMware Tools installation is complete, file copy-paste between Windows and Ubuntu will be enabled.
 
@@ -272,17 +272,17 @@ After VMware Tools installation is complete, file copy-paste between Windows and
 
 If the virtual machine cannot display in full screen, you can click on “View”, select “Auto-Adjust Size”, and then click “Autofit Guest” to resolve the full-screen issue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949460433-abac797c-fb21-47c2-90a5-951390afdaee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949460433_abac797c_fb21_47c2_90a5_951390afdaee.png)
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949472087-a7f61941-4de2-49c9-acc8-4e93358132b0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949472087_a7f61941_4de2_49c9_acc8_4e93358132b0.png)
 
 **3.1.2.3 Virtual Machine Sleep Settings**
 
 Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -> Power -> Blank Screen and set it to “Never”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949527824-2c751878-01cd-4e46-ad0f-9af78af1ccaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949527824_2c751878_01cd_4e46_ad0f_9af78af1ccaf.png)
 
 #### 3.1.3 Virtual Machine Swapfile Configuration
 
@@ -303,13 +303,13 @@ By default, after the virtual machine installation is complete, the network conn
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949560787-ecabd604-18e6-4ed4-8e99-14b964deb1c9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949560787_ecabd604_18e6_4ed4_8e99_14b964deb1c9.png)
 
 **3.1.4.2 Bridged Connection Mode**
 
 When the VMware virtual network adapter device is in bridged mode, the host network card and the virtual machine network card communicate through a virtual network bridge. In the Ubuntu environment, you need to set a network IP in the same subnet as the host. To access the external network, you need to set the DNS to be consistent with the host network card. If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949577128-36c6f2e1-80d0-4fa6-8fad-8e99fe54be14.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949577128_36c6f2e1_80d0_4fa6_8fad_8e99fe54be14.png)
 
 ### 3.2 Installing Toolkits
 
@@ -337,31 +337,31 @@ forlinx@ubuntu:~$ ./qt-opensource-linux-x64-5.12.9.run
 
 The following interface will pop up. Click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949644183-8f03f041-918e-488f-b607-c28206d44892.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949644183_8f03f041_918e_488f_b607_c28206d44892.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949656133-5a89edca-94ba-4209-913a-f43bf8b6d99c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949656133_5a89edca_94ba_4209_913a_f43bf8b6d99c.png)
 
 In the following screen, click "Browse …" Select the installation path of Qtcreator, and then click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949673168-caaa5ebb-5e95-44fc-b70f-cfae68a38a59.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949673168_caaa5ebb_5e95_44fc_b70f_cfae68a38a59.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949687856-8c7d69c6-1815-4e7b-ad12-c64a75c87cbf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949687856_8c7d69c6_1815_4e7b_ad12_c64a75c87cbf.png)
 
 Agree to the license agreement and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949701721-f1d0408a-296a-4e43-b693-d158f2c84508.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949701721_f1d0408a_296a_4e43_b693_d158f2c84508.png)
 
 Click “Install”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949715223-eea00453-23fc-48c2-81e2-47f755e7a935.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949715223_eea00453_23fc_48c2_81e2_47f755e7a935.png)
 
 After the installation is completed, the following interface will be displayed. Uncheck the option "Launch Qt Creator" "and click " Finish" to complete the installation of Qt Creator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949729984-de2da63e-1e6d-4d0c-bdba-c87880e5c665.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949729984_de2da63e_1e6d_4d0c_bdba_c87880e5c665.png)
 
 Navigate to the actual Qt Creator installation directory: /home/forlinx/Qt5.12.9/Tools/QtCreator/bin/
 
@@ -378,7 +378,7 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949849986-73e1f541-6fdf-461c-b19b-f0b884b4a91b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949849986_73e1f541_6fdf_461c_b19b_f0b884b4a91b.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -425,53 +425,53 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 
 Start the Qt Creator program and click Tools- > option:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949891654-e1cd171c-54a1-4fab-8ca5-7de0fc03a81b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949891654_e1cd171c_54a1_4fab_8ca5_7de0fc03a81b.png)
 
 Enter the Options interface, click "Kits" on the left, then click the "Compilers" tab on the top of the middle, and click "Add-> GCC-> C + +" on the right, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949906693-7d70ad42-e602-48fd-9b66-ba34c623c2b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949906693_7d70ad42_e602_48fd_9b66_ba34c623c2b5.png)
 
 Locate “aarch64-linux-g++” in the /opt/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin directory, select it, click “Open”, and change the “Name”
 
 Add the GCC compiler using the same method, and click "Add->GCC->C" on the right, as shown in the image:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949927007-0955d7d7-9ade-437d-8805-adcee501f531.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949927007_0955d7d7_9ade_437d_8805_adcee501f531.png)
 
 Locate “aarch64-none-linux-gnu-gcc” in the opt/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin directory, select it, click “Open”, and change the Name.
 
 Click the “Qt Versions” tab, then click “Add”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949939127-fb02b8cc-2b2b-4eff-b65e-a1810f3958c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949939127_fb02b8cc_2b2b_4eff_b65e_a1810f3958c6.png)
 
 Locate “qmake” in the /opt/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin directory, select it and click “Open”. Once added, the screen will appear as shown below; click “Apply”.
 
 Click the “Kits” tab, click “Add” on the right to add a new Kit. Modify the contents according to the figure below and click “Apply”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718949959747-8303d04c-8ca8-4850-8baf-a0f6ce192f32.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718949959747_8303d04c_8ca8_4850_8baf_a0f6ce192f32.png)
 
 ### 3.5 VMware Error Resolution
 
 Error 1: Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950065962-b1270a23-8379-465e-8ebb-074c27535b1b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950065962_b1270a23_8379_465e_8ebb_074c27535b1b.png)
 
 Solution:
 
 My Computer -> Right-click -> Manage -> Services and Applications -> Services: Start all VMware-related services.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950090751-c1daea0f-13a9-4afe-b694-89126fbb76a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950090751_c1daea0f_13a9_4afe_b694_89126fbb76a2.png)
 
 After the services start successfully, restart the virtual machine; or suspend the virtual machine first, then after the services start, resume the suspended virtual machine.
 
 Error 2: Internal Error
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950103214-a7871f85-aa0b-41e9-a60d-1f1ad1d485b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950103214_a7871f85_aa0b_41e9_a60d_1f1ad1d485b5.png)
 
 Solution: Refer to Solution 1
 
 Error 3: Unable to install the VMware Authorization Service (VMAuthdService)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950118552-6d413624-2cac-4adf-870d-859727b1d73f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950118552_6d413624_2cac_4adf_870d_859727b1d73f.png)
 
 Solution:
 
@@ -479,25 +479,25 @@ win+R
 
 Enter services.msc
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950135095-dcf3ba1f-5104-40fd-a040-cec6bed9d893.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950135095_dcf3ba1f_5104_40fd_a040_cec6bed9d893.png)
 
 Then find the service and start it because this service is used for authorization and authentication to start and access virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950195578-21d1856a-834a-4efe-8807-3d190d83ebdf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950195578_21d1856a_834a_4efe_8807_3d190d83ebdf.png)
 
 The WMI service must be started first.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950209258-c350c7e6-c2cb-49e6-a5b5-501d59205fd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950209258_c350c7e6_c2cb_49e6_a5b5_501d59205fd5.png)
 
 Error 4: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950243863-dc11008b-5c1e-4f28-90bb-265e2b879287.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950243863_dc11008b_5c1e_4f28_90bb_265e2b879287.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then reinstall.
 
 Error 5: Intel VT-x is disabled
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950313530-3343a477-e16a-4f01-b661-072c7cd3620f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950313530_3343a477_e16a_4f01_b661_072c7cd3620f.png)
 
 Solution:
 
@@ -512,7 +512,7 @@ If it still doesn’t work, turn off the firewall and restart the virtual machin
 
 Error 6: The virtual machine appears to be in use… Take Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950333783-0d094cf5-34e2-401e-b8cb-600a9a4006e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950333783_0d094cf5_34e2_401e_b8cb_600a9a4006e0.png)
 
 Solution:
 
@@ -523,14 +523,14 @@ Solution:
 - Open Windows Task Manager and kill all VMware processes.
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950354133-3b24662e-114f-4a86-b27e-ed85982cf247.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950354133_3b24662e_114f_4a86_b27e_ed85982cf247.png)
 
 - Restart the virtual machine.
 
 
 Error 7: Failed to lock the file
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950365534-20b50f59-a57a-4be7-acf4-667c16512c5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950365534_20b50f59_a57a_4be7_acf4_667c16512c5e.png)
 
 Solution:
 
@@ -547,7 +547,7 @@ Solution:
 
 The host does not have enough memory to meet the maximum requirements of the virtual machine image. Increase the virtual machine’s memory and restart it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950502280-738cd080-0319-4274-b239-59c91a70a889.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950502280_738cd080_0319_4274_b239_59c91a70a889.png)
 
 ## 4\. Linux Compilation
 
@@ -596,11 +596,11 @@ A common method for file transfer between Ubuntu and the Windows host is to set 
 
 Setup method: Click on the “Virtual Machine” and select “Settings.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950783159-aa38c988-c012-4406-8082-6a9a28411890.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950783159_aa38c988_c012_4406_8082_6a9a28411890.png)
 
 Click on “Options,” enable “Shared Folders,” set the shared directory on the Windows host, and click “OK.”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950804162-7efbad0f-793c-4665-ba22-9b194e4fd765.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950804162_7efbad0f_793c_4665_ba22_9b194e4fd765.png)
 
 Once the virtual machine’s file sharing is set up, place the source code package OKT527-linux-sdk1.3.tar.bz2 into the Windows host’s shared folder. Here, it is named share.
 
@@ -834,37 +834,37 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$ sudo ./qtcreator
 
 Launch the Qt Creator program and enter the Qt Creator interface. Click "File" -> "New File or Project" to create a new project. Select "Application (Qt)" -> "Qt Widgets Application", and then click "Choose" in the lower right corner.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950862335-48648f4d-29e4-48b2-8bec-96a15102c9ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950862335_48648f4d_29e4_48b2_8bec_96a15102c9ca.png)
 
 In the following interface, set the project name to “helloworld”. Set the installation path to /home/forlinx, then click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950877270-ef232c40-5d0d-40bf-8e2e-4d37f996f4d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950877270_ef232c40_5d0d_40bf_8e2e_4d37f996f4d0.png)
 
 Select “qmake” and click “Next” to continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950886144-54b37456-de62-48c7-b7cc-b2df962488b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950886144_54b37456_de62_48c7_b7cc_b2df962488b2.png)
 
 In the following interface, you can modify the Class name and Base class as needed. Here, we'll use the default settings and then click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950897755-f70676a4-65e7-4835-9c32-b977524dc66d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950897755_f70676a4_65e7_4835_9c32_b977524dc66d.png)
 
 Choose the file to be translated. If you require multilingual support, you can select the language. Here, use the default and click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950910018-0542302c-e7a7-4851-884b-53bd0b717a00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950910018_0542302c_e7a7_4851_884b_53bd0b717a00.png)
 
 In the following interface, select the previously added “OK527” as the kit for the current project, then click “Next”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950921104-6b1d4af7-5ea5-4eaa-95c6-9402a26bca74.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950921104_6b1d4af7_5ea5_4eaa_95c6_9402a26bca74.png)
 
 In the following interface, click “Finish” to complete the project creation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950932773-3bf58552-1a8c-4ee2-a872-fc9ea2d124ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950932773_3bf58552_1a8c_4ee2_a872_fc9ea2d124ae.png)
 
 Once the project is created, the following window will appear:
 
 Project created successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950947708-0c81ca78-c489-44cd-aff2-714c433cbc67.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950947708_0c81ca78_c489_44cd_aff2_714c433cbc67.png)
 
 After writing the program, click the hammer icon in the bottom left corner to perform cross-compilation.
 
@@ -874,7 +874,7 @@ Copy the compiled executable to the development board for application testing.
 
 Open the QtCreator integrated development environment from the command line or shortcut. After starting, you will see an interface similar to the one below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950971164-9e266495-0250-4eb7-8f3b-dfb8feadda73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950971164_9e266495_0250_4eb7_8f3b_dfb8feadda73.png)
 
 The design button, project button, and build debug area on the left will only become available after a project is opened or created.
 
@@ -886,13 +886,13 @@ The default output panel selects 1 (Issues). If you need to view compilation inf
 
 Build and debug.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718950991143-dd0cec48-825b-49c9-a6a3-fe7388b5959b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718950991143_dd0cec48_825b_49c9_a6a3_fe7388b5959b.png)
 
 If the Run button in Qt Creator is greyed out, the solution is as follows:
 
 This problem occurs because there was an issue with configuring the C, C++, and Qt versions in the kits package. It could be a path problem or an incomplete compilation. Changing the editor language should resolve the issue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718951003967-0782cdbd-fbb6-4ac2-9db9-f96e8c8b37f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_Linux5_15_147_User_Compilation_Manual/1718951003967_0782cdbd_fbb6_4ac2_9db9_f96e8c8b37f1.png)
 
 Check that the cross-compiler path configuration in the box is correct.
 
