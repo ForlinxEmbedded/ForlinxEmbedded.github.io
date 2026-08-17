@@ -18,6 +18,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK527-UP4_User_Hardware_Manual
+
 
 
 
@@ -35,6 +37,7 @@ SOFTWARE
    :maxdepth: 2
 
    OK527_UP4_Linux5_15_147_User_Manual
+   OK527-UP4_Linux5_15_147_User_Compilation_Manual
 
 
 
