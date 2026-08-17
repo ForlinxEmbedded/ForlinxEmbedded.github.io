@@ -76,7 +76,9 @@ T527 Block Diagram
 
 **Front**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505020831_5010ddc3_5800_4070_ba1f_343e407911b8.png)**Back**
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505020831_5010ddc3_5800_4070_ba1f_343e407911b8.png)
+
+**Back**
 
 ### 2.2 FET527-UP4 SoM Dimension Diagram
 
