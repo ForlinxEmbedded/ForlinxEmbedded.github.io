@@ -1,9 +1,10 @@
 # Linux6.1.14\_User’s Manual\_V1.0
 
-## Copyright
+Document classification: □ Top secret □ Secret □ Internal information ■ Open                                                                                                              
 
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+## Copyright 
 
+The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.   
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
@@ -112,7 +113,7 @@ Hardware preparations before powering on the system:
 
 Debug Serial Cable (for serial port login)
 
-The debug serial port on the development board is a USB Type-C port. Users can connect the development board to a PC using a Type-A to Type-C cable to check the board's status information.
+The debug serial port on the development board is a USB Type-C port. You can connect the development board to a PC using a Type-A to Type-C cable to check the board's status information.
 
 Ethernet cable (for network login)
 
@@ -218,9 +219,11 @@ In addition, the following rules must be observed regarding screen configuration
 
 When outputting to a single screen, the other disp\_type must be none, and disp\_pri\_type must be the same as the output.
 
-- display0 includes “lcd 1024x600”, “mipi 1024x600” and “lvds 1280x800”. Note: The current carrier board does not support LCD interfaces that have not been provided;
+- display0 includes “lcd 1024x600”, “mipi 1024x600” and “lvds 1280x800”. 
 
-- display1 includes “dp 1080P60”, “dp 2.5k” and “hdmi”;     
+**Note: The current carrier board does not support LCD interfaces that have not been provided.**
+
+- display1 includes “dp 1080P60”, “dp 2.5k” and “hdmi”. 
 
 **Note: HDMI resolution is adaptive; the carrier board does not support DP ports, and the EDP port is currently unavailable.**
 
@@ -368,7 +371,8 @@ The current version does not support the Video Player.
 
 **Note:**
 
-- **By default, only the eth0 network interface is set to STATIC mode;  **
+- **By default, only the eth0 network interface is set to STATIC mode;**  
+
 - **The IP address and other details configured are saved to the relevant system configuration file (/etc/network/interfaces), so the network settings configured will be used every time the system is restarted.**
 
 Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527_UP4_Linux5_15_147_User_Manual/1772504991274_39917999_99e1_44ba_a847_ad687ef225cb.png)
@@ -996,7 +1000,7 @@ root@OK527:/# fltest_watchdog -t 10
 
 ### 4.6 Functional Testing
 
-Note: Ensure that a button battery is installed on the board and the battery voltage is normal.
+**Note: Ensure that a button battery is installed on the board and the battery voltage is normal.**
 
 RTC testing mainly involves using the date and hwclock tools to set software and hardware times. The purpose is to test whether the software clock reads the RTC clock synchronously when the board is powered off and then back on. Then power off and on the board again. After entering the system, read the system time to confirm synchronization.
 
