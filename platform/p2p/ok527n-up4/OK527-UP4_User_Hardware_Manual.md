@@ -82,7 +82,7 @@ T527 Block Diagram
 
 ### 2.2 FET527-UP4 SoM Dimension Diagram
 
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -367,7 +367,7 @@ Power Voltage: DC 12V
 
 The OK527x-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 39mm × 39mm × 23mm. See below for details.
 
-![Image](2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/2.png)
 
 ### 3.3 Naming Rules
 
@@ -459,7 +459,7 @@ The carrier board is configured with 1 x LRADC signal, utilizing a button and a 
 
 The carrier board features a single USB Type-C port with 3 x integrated debug serial ports. Install the XR21V1414IM48 driver on your computer, connect the P36 port to the computer, and select the DEBUG\_A debug serial port to start debugging.
 
-![Image](3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/3.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/110110.png)
 
@@ -469,7 +469,7 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 The carrier board features a single JTAG debugging interface for debugging the x-core
 
-![Image](4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/4.png)
 
 #### 3.5.6 RTC
 
@@ -510,7 +510,7 @@ It supports 2\*4 lane LVDS connection, and I2C port touch screen.
 
 Pins P2 and P3 on the development board can be connected to an eDP display; P2 is with a 2.0mm pitch.
 
-![Image](5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/5.png)
 
 #### 3.5.11 IO
 
@@ -526,7 +526,7 @@ The P5 port on the development board is a standard HDMI port and supports HDMI 2
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/113047.png)
 
-![Image](6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/6.png)
 
 #### 3.5.13  MIPI\_DSI
 
@@ -630,7 +630,7 @@ A five-wire SPI interface is led out from the SoM (5V power supply).
 
 An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.
 
-![Image](7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/7.png)
 
 #### 3.5.25 Audio
 
@@ -668,7 +668,7 @@ Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1778633273553_94cadaa1_5abb_412c_b703_89e516dcfce3.png)
 
-![Image](8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/8.png)
 
 **Note:**
 
