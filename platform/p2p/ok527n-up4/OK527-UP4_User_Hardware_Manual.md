@@ -25,9 +25,9 @@ Additionally, the manual includes explanations of some symbols and formats.
 
 | **Format**| **Meaning**|
 |:----------:|----------|
-| ⁉️| Note or particularly important information must be read carefully.|
-| | Relevant explanations regarding the testing section|
-| ️| Related paths.|
+| **Note** | Note or particularly important information must be read carefully.|
+| 📚 | Relevant explanations regarding the testing section|
+| ️🛤️ | Related paths.|
 
 ## Application Scope
 
