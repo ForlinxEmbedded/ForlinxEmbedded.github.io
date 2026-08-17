@@ -467,7 +467,7 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 The carrier board features a single JTAG debugging interface for debugging the x-core
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025397_b8fd8d10_f59b_42f5_b9b1_2dd8571fc844-1786947389515.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok527n-up4/OK527-UP4_User_Hardware_Manual/1772505025397_b8fd8d10_f59b_42f5_b9b1_2dd8571fc844_1786947389515.png)
 
 #### 3.5.6 RTC
 
