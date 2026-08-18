@@ -599,7 +599,7 @@ Square LGA pads: Openings with dimensions of 0.83mm × 0.83mm.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/1784270602058_f78a8f53_f2e9_4f24_a57f_0b00496a5773.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/1-1786960521171.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/1.png)
 
 **Note:**
 
