@@ -63,7 +63,7 @@ The i.MX 93 is particularly well‑suited for:
 
 ### 2.2 FET-MX9352-UP4 SoM Dimension Diagram
 
-![](2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/2.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -319,7 +319,7 @@ The main interfaces are shown in the figure below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/1784270598087_88289c98_1324_4bf2_a453_ca175f0a391b.png)
 
-![](93.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/93.png)
 
 ### 3.2 OK-MX9352-UP4 Development Board Dimension Diagram
 
@@ -416,7 +416,7 @@ The FET-MX9352-UP4 SoM does not have the WAKEUP feature.
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
-![](4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/4.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -434,7 +434,7 @@ The FET-MX9352-UP4 SoM is equipped only with the DEBUG\_A and DEBUG\_M debug int
 
 The carrier board features a single JTAG debugging interface for debugging the x-core
 
-![](3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/3.png)
 
 #### 3.5.6 BOOT
 
@@ -599,7 +599,7 @@ Square LGA pads: Openings with dimensions of 0.83mm × 0.83mm.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/1784270602058_f78a8f53_f2e9_4f24_a57f_0b00496a5773.png)
 
-![](1-1786960521171.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_User_Hardware_Manual/1-1786960521171.png)
 
 **Note:**
 
