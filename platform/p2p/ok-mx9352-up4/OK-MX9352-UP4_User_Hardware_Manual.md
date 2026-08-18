@@ -28,7 +28,7 @@ Additionally, the manual includes explanations of some symbols and formats.
 
 ## Revision History
 
-| **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision |History**|
+| **Date**| **Version**| **SoM Version**| **Carrier Board Version**| Revision History |
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 17/07/2026| V1.0| V1.1| V1.3 and above| Initial Version|
 
@@ -385,10 +385,9 @@ A-B-C+D E F :G-H
 
 ### 3.5 OK-MX9352-UP4 Carrier Board Description
 
-**Note: **
+**Note:** 
 
-- **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  
-  default;**
+- **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by default;**
 - **The schematic diagrams in this manual are only for interface descriptions. Please refer to the source file materials for hardware design.**
 
 #### 3.5.1 Carrier Board Power
@@ -417,7 +416,7 @@ The FET-MX9352-UP4 SoM does not have the WAKEUP feature.
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
-![]
+![](4.png)
 
 #### 3.5.4 Debugging Serial Port
 
@@ -627,7 +626,7 @@ Linux system
 
 **Note: The SoM configuration is 1GB memory + 8GB eMMC, the 4G module is Quectel EC20, and the screen is an Forlinx optional product. SoM power supply: 5V; and the carrier board is 12V;**
 
-Power consumption is for reference only**.**
+Power consumption is for reference only.
 
 ## 6\. Minimum System Diagram
 
