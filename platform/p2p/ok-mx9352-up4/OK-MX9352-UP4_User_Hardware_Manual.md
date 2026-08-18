@@ -28,7 +28,7 @@ Additionally, the manual includes explanations of some symbols and formats.
 
 ## Revision History
 
-| **Date**| **Version**| **SoM Version**| **Carrier Board Version**| Revision History |
+| Date| Version | SoM Version | Carrier Board Version | Revision History |
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 17/07/2026| V1.0| V1.1| V1.3 and above| Initial Version|
 
