@@ -117,7 +117,7 @@ The following section uses PuTTY as an example to explain how to configure a ter
 
 Step 1: Connect the development board to the PC using a serial cable. Check the serial port number used by the computer; you can find this in ‘Device Manager’. Use the port number actually recognised by the computer as the correct one. SERIAL-A is the serial port for the A core, and SERIAL-B is the serial port for the M core;
 
-![Image](1718868285685_12ed1a25_4652_4965_8f94_a3d556fa75d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868285685_12ed1a25_4652_4965_8f94_a3d556fa75d9.png)
 
 Step 2: Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
