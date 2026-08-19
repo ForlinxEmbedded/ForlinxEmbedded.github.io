@@ -35,7 +35,7 @@ The FET-MX9352-UP4 SoM is based on the NXP-i.MX93 processor design and features 
 
 OK-MX9352-UP4 Development Board Interface Diagram:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270572804-c820090d-9c84-4fc3-aeef-8cc891622080.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270572804_c820090d_9c84_4fc3_aeef_8cc891622080.png)
 
 **Note: Hardware specifications are not covered in this software manual. Before development, please refer to the “ User’s Hardware Manual” to understand the product naming and hardware configuration.**
 
@@ -77,13 +77,13 @@ OK-MX9352-UP4 Development Board Interface Diagram:
 
 The OK-MX9352-UP4 supports both TF card flashing and OTG flashing, as well as booting from eMMC and TF card. As shown in the figure below, the DIP switch is set for eMMC boot:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270573097-43a729cb-8642-4b9a-a99b-b58026310f99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270573097_43a729cb_8642_4b9a_a99b_b58026310f99.png)
 
 As shown in the figure below, the DIP switch is set for OTG flashing:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270573254-26ccabe7-02ed-4dd5-adc3-a1e360a1f1a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270573254_26ccabe7_02ed_4dd5_adc3_a1e360a1f1a9.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270573345-1ba50923-5bc4-4975-a000-86648a6791c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270573345_1ba50923_5bc4_4975_a000_86648a6791c6.png)
 
 ## 2\. Fast Startup
 
@@ -100,7 +100,7 @@ Hardware preparations before powering on the system:
 
 Please check the black DIP switch on your development board to ensure it is set to the desired boot mode. For details on boot mode settings, please refer to "[**1.3 Flashing and Startup Configuration**](https://forlinx-book.yuque.com/okypkp/dfmrkd/mxqqmnut8c0vsnq0#VqzEt)"[.](https://forlinx-book.yuque.com/okypkp/dfmrkd/mxqqmnut8c0vsnq0#VqzEt)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270575074-0c8174f5-6cc0-410e-94dc-0ec31fa7ef0a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270575074_0c8174f5_6cc0_410e_94dc_0ec31fa7ef0a.png)
 
 ### 2.2  Configuring HyperTerminal
 
@@ -121,9 +121,9 @@ Step 1: Connect the development board to the PC using a serial cable. Check the 
 
 Step 2: Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868286151-4eb32799-9a45-4fb4-bf70-f66126e54be6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868286151_4eb32799_9a45_4fb4_bf70_f66126e54be6.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868286352-9ecfe6ec-ab95-4ea7-ba01-5bac40654b07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868286352_9ecfe6ec_ab95_4ea7_ba01_5bac40654b07.png)
 
 Step 3: Log in using the username ‘root’ and leave the password blank; Press Enter.
 
@@ -189,7 +189,7 @@ Before logging in to the network, you need to ensure that the network connection
 
 Connect the eth0 of the development board to the computer via a network cable, power on the development board, and after the kernel starts, the Blue heartbeat light on the SoM will flash. After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270575204-edbfa90c-73f9-474d-8ad8-289bf1c5eee3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270575204_edbfa90c_73f9_474d_8ad8_289bf1c5eee3.png)
 
 Disable the computer firewall
 
@@ -215,11 +215,11 @@ The OK-MX9352-UP4 development board supports SSH services, which are automatical
 + **The default IP address for the eth0 interface is 192.168.0.232;**
 + **You can use the scp command for file transfers.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287408-0765c77b-cc50-44fe-b5ac-d3f4e96f3ab9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868287408_0765c77b_cc50_44fe_b5ac_d3f4e96f3ab9.png)
 
 After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287652-adac51d6-d52d-4606-8e8f-3e3b866af200.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868287652_adac51d6_d52d_4606_8e8f_3e3b866af200.png)
 
 ```bash
 login as: root //Enter the board root account as prompted
@@ -228,11 +228,11 @@ root@ok-mx93:~#
 
 When logging in using PuTTY, the following error message appears. This is due to an issue with the PuTTY version, so you will need to update PuTTY:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868287828-39612725-1534-4b5f-bd71-c829bb7852d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868287828_39612725_1534_4b5f_bd71_c829bb7852d5.png)
 
 You can use WinSCP (which you will need to install yourself) to copy files. Log in as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288045-335115f4-af04-4c9f-8f46-9e3de611c25c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868288045_335115f4_af04_4c9f_8f46_9e3de611c25c.png)
 
 Login was successful to the /home/root directory, as shown below:
 
@@ -248,7 +248,7 @@ On a Windows system, the command-line procedure is as follows:
 C:\Users\Administrator>ssh root@192.168.0.232
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288709-ea693b29-fc26-47a9-b264-7e69f748e3be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868288709_ea693b29_fc26_47a9_b264_7e69f748e3be.png)
 
 When logging in for the first time, you will need to type “yes” as prompted to confirm the connection; to log out, type “exit”.
 
@@ -258,13 +258,13 @@ Taking the example of copying the “Image” folder from the current directory 
 C:\Users\Administrator>ssh root@192.168.0.232
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868288930-1004e89d-727f-4ccc-8553-c6a76141098c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868288930_1004e89d_727f_4ccc_8553_c6a76141098c.png)
 
 **Note: If SSH is not supported on your PC, please install it yourself.**
 
 If the following error message appears, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868289152-0d7f0fe6-3994-4dce-93fe-7df96abda5ce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868289152_0d7f0fe6_3994_4dce_93fe_7df96abda5ce.png)
 
 This situation indicates that you have previously logged in via SSH to another development board with the same IP address; consequently, the above error is reported when attempting to log in to a development board on a different platform. To resolve this, enter the following two commands:
 
@@ -411,7 +411,7 @@ The device tree path is: OKMX93-linux-sdk/OKMX93-linux-kernel/arch/arm64/boot/dt
 
 In this mode, the default screen display of the system can be set as the expected mode, and it is not necessary to connect the serial port terminal for selection, which is suitable for mass production. However, manual modification of the device tree is required, followed by regeneration of the system image. The priority of this mode is higher than dynamic control of uboot menu.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868289997-a23611c1-51a6-4e4e-870f-9b6737e3cac9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868289997_a23611c1_51a6_4e4e_870f_9b6737e3cac9.png)
 
 In the kernel source code, open the OK-MX9352-S.dts file and locate the forlinx\_control node:
 
@@ -466,13 +466,13 @@ The Qt examples provided by Forlinx are primarily intended as a reference for ha
 
 After booting, the development board will display the following desktop:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868396012-57b0747c-c3cf-46ce-9a30-f34221beff31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868396012_57b0747c_c3cf_46ce_9a30_f34221beff31.png)
 
 ### 3.2 Recording Test
 
-The “audiorecorder(![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868396333-1049bf27-9428-4c7c-ac21-17dc2d49189a.png))” icon on the desktop is a simple audio recording test application that can be used to check whether the headphone microphone is working properly. The interface is shown below.
+The “audiorecorder(![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868396333_1049bf27_9428_4c7c_ac21_17dc2d49189a.png))” icon on the desktop is a simple audio recording test application that can be used to check whether the headphone microphone is working properly. The interface is shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868396563-f2b01764-a817-46e9-88d9-2c93d998a96e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868396563_f2b01764_a817_46e9_88d9_2c93d998a96e.png)
 
 Set the AudioCodec to Wave and the File Container to Wave file.
 
@@ -486,33 +486,33 @@ Tap “exit”to close the app.
 
 ### 3.3 Music Playback Test
 
-“Musicplayer（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868396801-2946af6a-1029-46dc-a20b-ef717153f983.png)）” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio,：
+“Musicplayer（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868396801_2946af6a_1029_46dc_a20b_ef717153f983.png)）” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio,：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397002-3058accc-9de8-4876-b59c-9a92a64c2548.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868397002_3058accc_9de8_4876_b59c_9a92a64c2548.png)
 
 Click the “Open” button in the bottom left-hand corner and select the test audio file /home/forlinx/audio/test.mp3
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397230-09bc2642-3332-498b-8deb-64e573bb69b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868397230_09bc2642_3332_498b_8deb_64e573bb69b1.png)
 
 **Note: If you find that there is no sound coming from your headphones or speakers, please refer to the “Audio Testing” section in Chapter 4 to enable the headphones and turn up the volume.**
 
 ### 3.4 4G Test
 
-The “4G（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397441-b4683422-49e5-4a9b-8477-92ac3def8412.png)）” test program is used to test the OK-MX93 external 4G module (EC20). Before testing, please switch off the development board, connect the external module, insert the SIM card (a China Unicom SIM card was used for this test), and then switch on the development board and open the test application.
+The “4G（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868397441_b4683422_49e5_4a9b_8477_92ac3def8412.png)）” test program is used to test the OK-MX93 external 4G module (EC20). Before testing, please switch off the development board, connect the external module, insert the SIM card (a China Unicom SIM card was used for this test), and then switch on the development board and open the test application.
 
 Click the connect button, and the program will automatically enter the dial-up process and obtain IP settings, DNS, etc..
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397722-a468965f-bea0-4af7-87ec-07965e64993e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868397722_a468965f_bea0_4af7_87ec_07965e64993e.png)
 
 Once the connection has been established, you can click the “ping” button to run a ping test.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868397956-87533dbb-24e9-41d4-bf0e-febd549f4faa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868397956_87533dbb_24e9_41d4_bf0e_febd549f4faa.png)
 
 Click the “Exit” button to exit the test.
 
 ### 3.5 WIFI Test
 
-“WIFI（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868398178-81f1eb90-2217-4dae-abbb-3fc4bc4ca09b.png)）” is a tool for configuring WiFi and can test the STA mode of WiFi.
+“WIFI（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868398178_81f1eb90_2217_4dae_abbb_3fc4bc4ca09b.png)）” is a tool for configuring WiFi and can test the STA mode of WiFi.
 
 **This feature is not currently supported.**
 
@@ -524,29 +524,29 @@ Upon start-up, the OK-MX9352’s network card is set to DHCP by default. You can
 
 DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868399308-f144db19-3bbc-46e6-96e9-749adea6d2c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868399308_f144db19_3bbc_46e6_96e9_749adea6d2c3.png)
 
 Select DHCP, choose the network card device to be configured in the “interface” section, and click “Apply and Restart Network” at the bottom of the interface to automatically restart the network and obtain an IP address.
 
 STATIC mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868399538-7b5503a7-7a21-487a-9424-caf24cffeb2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868399538_7b5503a7_7a21_487a_9424_caf24cffeb2b.png)
 
 Select the network card device to be configured in the Interface. Enter the desired IP address in the IP field. Enter the subnet mask in the Netmask field. Enter the gateway address in the Gateway field. Enter the DNS server address , in the Gateway field, . Once you have filled in all the details above, click “Apply and Restart Network” at the bottom of the screen to configure a static IP address based on the settings above.
 
 ### 3.7 Ping Test
 
-Ping（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868399732-94918491-b4b1-4e73-997f-9316dbcc2240.png)）” is an interface version of the commonly used network test command ping. The interface is as follows:
+Ping（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868399732_94918491_b4b1_4e73_997f_9316dbcc2240.png)）” is an interface version of the commonly used network test command ping. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868400078-165cdd99-c534-4fb8-bc15-17f171696af9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868400078_165cdd99_c534_4fb8_bc15_17f171696af9.png)
 
 Enter the target IP address you wish to ping in the “hostname” field. Once you click the “Ping” button, the results will be displayed in the “Result” field; as shown in the figure, this indicates that the network connection between the two is working properly. Click “Stop” to stop the ping test; click “clear” to clear the information in ‘result’.
 
 ### 3.8 Watchdog Test
 
-“WatchDog（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868400311-1f676a74-6193-4c49-a55c-82d986f86ae0.png)）” is an application used to test whether the watchdog function is normal. The interface is as follows:
+“WatchDog（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868400311_1f676a74_6193_4c49_a55c_82d986f86ae0.png)）” is an application used to test whether the watchdog function is normal. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868400567-9509a9ab-6fe9-4c35-8948-c053f2023e75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868400567_9509a9ab_6fe9_4c35_8948_c053f2023e75.png)
 
 Tick the “feed dog” box and click the “open watchdog” button; the watchdog function will then be activated and the programme will perform the ‘feed dog’ operation. Under normal circumstances, the system will not restart. Click the “close watchdog” button; the programme will then stop the “feed dog” operation, but the watchdog will remain active, and the system will restart after 10 seconds.
 
@@ -554,7 +554,7 @@ Uncheck “feed dog”, click the “open watchdog” button, and the watchdog f
 
 ### 3.9 RTC Test
 
-“RTC（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868400846-ac3b98fb-74ac-4f91-9467-503a04b8f8dc.png)）” test software to view and set the current system System Developer Clock, as shown below:
+“RTC（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868400846_ac3b98fb_74ac_4f91_9467_503a04b8f8dc.png)）” test software to view and set the current system System Developer Clock, as shown below:
 
 Click "Set" to configure the time, then click "Save" to apply the changes.
 
@@ -562,33 +562,33 @@ With the RTC backup battery installed, you can reboot the development board to c
 
 ### 3.10 Serial Port Test
 
-“Terminal（![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868401297-4b7fdea6-1817-4d64-88d5-1924466d48d0.png)）”, this feature is not available.
+“Terminal（![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868401297_4b7fdea6_1817_4d64_88d5_1924466d48d0.png)）”, this feature is not available.
 
 ### 3.11 Backlight Test
 
 “BackLight()” is an app for adjusting the LCD backlight; when you tap to open it, the interface appears as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403263-bad3aa15-055c-4b12-8db0-b61da44985b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868403263_bad3aa15_055c_4b12_8db0_b61da44985b9.png)
 
 Drag the slider on the interface to adjust the screen backlight brightness; level 0 is the lowest brightness (with a backlight value of 1), whilst level 255 is the highest brightness.
 
 ### 3.12 Camera Test
 
-Click the “Camera”( ![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403458-dea9eea0-9d96-46a9-a408-30a8cdeb2b7c.png) ) icon on the desktop to test it.
+Click the “Camera”( ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868403458_dea9eea0_9d96_46a9_a408_30a8cdeb2b7c.png) ) icon on the desktop to test it.
 
 Tap “Camera Video” to select a camera device.
 
 Note: In the absence of an MIPI camera, the UVC camera corresponds to the device /dev/video0; if an MIPI camera is present, the UVC camera corresponds to /dev/video1. Please select the appropriate device based on the actual hardware configuration.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403696-e9f1287c-3416-4b9b-84c0-1e6fefde29a4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868403696_e9f1287c_3416_4b9b_84c0_1e6fefde29a4.png)
 
 Click camera resolution to select the desired resolution.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868403920-dbf1663d-f8d9-4477-82e9-4c53f96c52ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868403920_dbf1663d_f8d9_4477_82e9_4c53f96c52ae.png)
 
 After configuring the device and resolution, click Start to begin preview. The preview effect is shown in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868404244-b3a07a74-7ec7-4a2d-8096-39aab5cb05ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868404244_b3a07a74_7ec7_4a2d_8096_39aab5cb05ee.png)
 
 Click picture to capture a photo, which will be saved in the /home/root/ directory.
 
@@ -598,13 +598,13 @@ Click “Stop” to end the preview.
 
 ### 3.13 U-Boot Menu Configuration
 
-Click the UbootMenu(![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868404521-9ac74c72-029c-4f03-8de6-1707fc39bb67.png)) icon to enter the U-Boot menu configuration interface for testing.
+Click the UbootMenu(![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868404521_9ac74c72_029c_4f03_8de6_1707fc39bb67.png)) icon to enter the U-Boot menu configuration interface for testing.
 
 In the test programme configuration menu of U-Boot, you can configure the LCD screen resolution, LVDS screen resolution, single or dual-screen mode, display mode and so on.
 
 The display screen configuration interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868404755-e4ecabf8-ede0-4789-b79c-6a11fad79586.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868404755_e4ecabf8_ede0_4789_b79c_6a11fad79586.png)
 
 When LVDS is configured, the desktop is displayed via LVDS. Once the configuration is complete, click “Exit” to exit; the configuration will take effect after a restart.
 
@@ -740,7 +740,7 @@ Click the serial port to wake up:
 
 The development board provides 4 x ADC; all four ADC pipelines can be connected to the same potentiometer, R171, via the P16 pins on the backplane. Please refer to the schematic diagram. As shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270578399-bf1ef6d8-0a6e-4568-9c53-9755e25458f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270578399_bf1ef6d8_0a6e_4568_9c53_9755e25458f4.png)
 
 Taking the ADC0 as an example, refer to the silkscreen marking to the right of P34 on the carrier board and the schematic diagram, and short-circuit pins 1 and 6. Enter the following command at the command line:
 
@@ -772,7 +772,7 @@ Change the led-0 node properties:
 
 \- Change linux,default-trigger = "heartbeat” to "none".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270578492-c787d3d4-0599-41b3-859b-dade0a70d366.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270578492_c787d3d4_0599_41b3_859b_dade0a70d366.png)
 
 You can also manually change the LED status as follows:
 
@@ -1271,11 +1271,11 @@ root@ok-mx93:~# modprobe g_mass_storage file=/dev/mmcblk0p1 removable=1
 
 The PC recognizes the mmcblk0p1 partition of the eMMC on the OK-MX9352-UP4 development board as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868579563-31f3037b-d2d1-4e87-8429-3c08820d4fe3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868579563_31f3037b_d2d1_4e87_8429_3c08820d4fe3.png)
 
 The content of the opened file is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868579759-e6b41f09-ff2f-49fd-a466-12efc183c2ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868579759_e6b41f09_ff2f_49fd_a466_12efc183c2ad.png)
 
 ### 4.11 LCD Backlight Adjustment
 
@@ -1804,7 +1804,7 @@ DHCP=yes
 
 The OK-MX9352-UP4 development board comes pre-installed with a lighttpd web server, and the service starts automatically at system boot. Enter the development board’s IP（ IP address in a browser to access the web pages on the board’s web server, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580021-087a9622-28f6-43db-9694-28bd181b2bed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868580021_087a9622_28f6_43db_9694_28bd181b2bed.png)
 
 ### 4.18 4G
 
@@ -2024,7 +2024,7 @@ The OK-MX9352-UP4 carrier board features GPIO pins on P44, as shown in the figur
 
 **Note: The GPIO on P44 conflicts with the RGB display pins.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270578575-a7520154-9c1b-4fc3-8dc0-087071cdbb64.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1784270578575_a7520154_9c1b_4fc3_8dc0_087071cdbb64.png)
 
 As the GPIO on pin P44 is already in use by the RGB display driver, you must change the “status” of “board\_gpio” in “OK-MX93-S.dts” to “status = "okay"”, then recompile and replace the device tree before proceeding with the tests below. Please note that you must not use the RGB display at this stage; please switch off the display or switch to an LVDS or MIPI display.
 
@@ -2042,9 +2042,9 @@ gpiochip3 [47400080.gpio] (32 lines)
 
 As can be seen from the device tree pin configuration, the GPIO corresponding to P44 is gpio@43810080 in the device tree, i.e. gpiochip0.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580603-5ff07df5-e8d1-49c8-86a9-6199226813af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868580603_5ff07df5_e8d1_49c8_86a9_6199226813af.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718868580824-cc7d1166-c089-46c6-b5f6-c67f375924ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868580824_cc7d1166_c089_46c6_b5f6_c67f375924ee.png)
 
 As can be seen from the schematic diagram, GPIO0 corresponds to pin 28 on the P44. Use the following command to set GPIO0 to a high level.
 
