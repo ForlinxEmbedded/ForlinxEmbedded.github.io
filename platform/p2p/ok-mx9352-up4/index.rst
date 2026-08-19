@@ -64,6 +64,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   OK-MX9352-UP4_Linux6_1_36_User_Manual
+
 
 
 APPLICATION NOTE
