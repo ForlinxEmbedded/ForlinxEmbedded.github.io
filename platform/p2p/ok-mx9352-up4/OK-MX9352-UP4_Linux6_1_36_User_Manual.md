@@ -73,7 +73,7 @@ OK-MX9352-UP4 Development Board Interface Diagram:
 
 ### 1.2 Flashing \& Boot Setup
 
-![](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1.png)
 
 The OK-MX9352-UP4 supports both TF card flashing and OTG flashing, as well as booting from eMMC and TF card. As shown in the figure below, the DIP switch is set for eMMC boot:
 
@@ -195,13 +195,13 @@ Disable the computer firewall
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);
 
-![Image](1718868286939_52aef679_ddf1_49fc_b2ae_d5df7bb4f2f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868286939_52aef679_ddf1_49fc_b2ae_d5df7bb4f2f7.png)
 
 Open Command Prompt as administrator
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator;
 
-![Image](1718868287145_7c25d76b_b8c7_46f2_b049_341cbb75c810.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868287145_7c25d76b_b8c7_46f2_b049_341cbb75c810.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -236,11 +236,11 @@ You can use WinSCP (which you will need to install yourself) to copy files. Log 
 
 Login was successful to the /home/root directory, as shown below:
 
-![Image](1718868288245_ed83e1aa_0697_4a69_85de_1695527126fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868288245_ed83e1aa_0697_4a69_85de_1695527126fa.png)
 
 Change to the home directory as follows:
 
-![Image](1718868288489_c59e5ebf_7a7c_48ef_955b_ed86ecf9e1f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868288489_c59e5ebf_7a7c_48ef_955b_ed86ecf9e1f7.png)
 
 On a Windows system, the command-line procedure is as follows:
 
@@ -283,11 +283,11 @@ The OK-MX9352-UP4 development board supports FTP services, which are automatical
 
 Install the FileZilla tool on Windows and configure it by following the steps shown in the image below. The username and password are both “forlinx”; you can also log in using the username “root” with no password.
 
-![Image](1718868289463_85b091a2_d53c_4775_8a06_7533fb7ece0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868289463_85b091a2_d53c_4775_8a06_7533fb7ece0e.png)
 
 After successful login, upload and download operations can be performed.
 
-![Image](1718868289767_f854a82f_6f89_4ec5_8d95_40673e32c187.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Manual/1718868289767_f854a82f_6f89_4ec5_8d95_40673e32c187.png)
 
 ### 2.4 eMMC Storage Partition Table
 
