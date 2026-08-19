@@ -27,7 +27,7 @@ This software manual is applicable to the OK-MX9352-UP4 development board with 1
 
 | **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
 |:----------:|:----------:|:----------:|:----------:|:----------:|
-| 14/072026 | V1.0| V1.1| V1.3 and above| User’s Manual Initial Version|
+| 14/07/2026 | V1.0| V1.1| V1.3 and above| User’s Manual Initial Version|
 
 ## 1\. OK-MX9352-UP4 Development Board Description
 
