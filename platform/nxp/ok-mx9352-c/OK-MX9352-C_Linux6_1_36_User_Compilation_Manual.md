@@ -436,7 +436,7 @@ Step 4：Execute the following command to install:
 forlinx@ubuntu:~$ ./fsl-imx-xwayland-glibc-x86_64-meta-toolchain-qt6-armv8a-imx93evk-toolchain-6.1-mickledore.sh
 NXP i.MX Release Distro SDK installer version 6.1-mickledore ============================================================ 
 Enter target directory for SDK (default: /opt/fsl-imx-xwayland/6.1-mickledore): You are about to install the SDK to "/opt/fsl-imx-xwayland/6.1-mickledore". Proceed [Y/n]? Y
-[sudo] forlinx 的密码：forlinx                                            //Enter the password for the forlinx user
+[sudo] forlinx password: forlinx                                            //Enter the password for the forlinx user
 Extracting SDK.............................................................................................................................................................................................................................................................................................................................................................................................................done 
 Setting it up...done
 SDK has been successfully set up and is ready to be used. 
@@ -457,7 +457,7 @@ QtGui/qtgui-config.h
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1721784641202_09bd3467_efd3_4e0c_9b45_d3eb95fa7076.png)
 
-Modify to
+Modify to:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1721784664032_02aaf006_3d2f_431d_82fb_cdc8b20643ee.png)
 
@@ -505,7 +505,8 @@ forlinx@ubuntu:~$ sudo apt-get install openssh-server vim git fakeroot make auto
 
 + Path: OK-MX9352-C (Linux) user profile\\tools\\qt-creator-opensource-linux-x86\_64-8.0.2.run
   
-  Copy qt-creator-opensource-linux-x86\_64-8.0.2.run to any directory in the current user's home directory and execute it:
+
+Copy qt-creator-opensource-linux-x86\_64-8.0.2.run to any directory in the current user's home directory and execute it:
 
 ```plain
 forlinx@ubuntu:~/ok-mx93$ chmod 777 ./qt-creator-opensource-linux-x86_64-8.0.2.run
@@ -536,7 +537,7 @@ Agree to the agreement and click "Next":
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869596399_0e3ea346_20de_45ef_917e_91d3202ec93b.png)
 
-Click Install to install:
+Click "Install" to install:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/OK-MX9352-C_Linux6_1_36_User_Compilation_Manual/1718869596646_6b25adf6_0c2c_46c5_99b2_9ac0dddef58a.png)
 
