@@ -124,7 +124,7 @@ First, download the development environment provided by Forlinx. The development
 
 Select all compressed files, right-click, and choose “Extract to ok-mx93 development environment”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869480561_28a51d86_9c7a_4ee1_8669_47c154e57a72-1787295872569.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869480561_28a51d86_9c7a_4ee1_8669_47c154e57a72_1787295872569.png)
 
 After extraction, locate the file ok-mx93 development environment.vmx inside the “ok-mx93 development environment” folder. This is the file to open in VMware.
 
@@ -190,7 +190,7 @@ Choose “Installer disc image file (iso)” and click “Next”:
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694-1787295999282.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694_1787295999282.png)
 
 Configure the number of cores, then click “Next”:
 
