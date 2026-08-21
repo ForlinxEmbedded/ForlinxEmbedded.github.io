@@ -54,7 +54,7 @@ Popular virtualization software includes VMware (VMware ACE), VirtualBox, and Vi
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![Image](1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -62,43 +62,43 @@ After the download is complete, double-click the setup file to launch the instal
 
 Step 1: Double-click the programme to launch the installation wizard, then click “Next”;
 
-![Image](1718869389043_f74bf566_192f_491f_ba86_ba89ac4d3387.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869389043_f74bf566_192f_491f_ba86_ba89ac4d3387.png)
 
 Step 2: Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](1718869389490_5a3d20ca_4d31_48be_8616_ab0a75e3ec49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869389490_5a3d20ca_4d31_48be_8616_ab0a75e3ec49.png)
 
 Step 3: Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](1718869389680_112bd577_2c6d_49d7_a926_14c37f5cf801.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869389680_112bd577_2c6d_49d7_a926_14c37f5cf801.png)
 
 Step 4: Decide whether to check the two checkboxes based on your needs, then click “Next”;
 
-![Image](1718869389918_74426b44_42fd_43f9_9d6b_fb9233a1f8e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869389918_74426b44_42fd_43f9_9d6b_fb9233a1f8e7.png)
 
 Step 5: Check the option to add shortcuts, then click “Next”.
 
-![Image](1718869390105_1692ed6e_6a20_4ea9_96c7_34b88610d161.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869390105_1692ed6e_6a20_4ea9_96c7_34b88610d161.png)
 
 Step 6: Click “Install”;
 
-![Image](1718869390345_53dd7b59_4eb1_4675_93af_06dfe3f840d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869390345_53dd7b59_4eb1_4675_93af_06dfe3f840d6.png)
 
 Step 7: Wait for the installation to complete;
 
-![Image](1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869391636_8bdb6e34_2add_4c4f_bb15_ba7e6d267c51.png)
 
 Step 8: After installation, click “Finish” to start a trial. For long-term use, please purchase from the official website and enter the license key. You will then enter the license activation page, where you can enter your purchased license key.
 
-![Image](1718869391907_b9518f16_956c_46bd_b992_1b861689c91a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869391907_b9518f16_956c_46bd_b992_1b861689c91a.png)
 
-![Image](1718869392115_6aa81085_4ef3_4290_a489_4bd4b65ae433.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869392115_6aa81085_4ef3_4290_a489_4bd4b65ae433.png)
 
 You can also click "Skip." After completion, open the VMware software, click on "Help" in the top menu bar, and enter the license key in the pop-up window.
 
-![Image](1718869393116_048ac61f_998e_4c35_9c13_033f04e39e01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869393116_048ac61f_998e_4c35_9c13_033f04e39e01.png)
 
-![Image](1718869393464_5f491171_240d_4973_8247_732c7e0c02a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869393464_5f491171_240d_4973_8247_732c7e0c02a9.png)
 
 ### 1.3 VMware Network Connection Method
 
@@ -106,7 +106,7 @@ By default, after the virtual machine installation is complete, the network conn
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.
 
-![Image](1718869393704_9ebd2008_6f6b_4d92_b0f0_f0a80afd18db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869393704_9ebd2008_6f6b_4d92_b0f0_f0a80afd18db.png)
 
 ## 2\. Importing Forlinx Development Environment
 
@@ -124,13 +124,13 @@ First, download the development environment provided by Forlinx. The development
 
 Select all compressed files, right-click, and choose “Extract to ok-mx93 development environment”.
 
-![Image](1718869480561_28a51d86_9c7a_4ee1_8669_47c154e57a72-1787295872569.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869480561_28a51d86_9c7a_4ee1_8669_47c154e57a72-1787295872569.png)
 
 After extraction, locate the file ok-mx93 development environment.vmx inside the “ok-mx93 development environment” folder. This is the file to open in VMware.
 
 Open the installed virtual machine software.
 
-![Image](1718869480763_8f97fe83_3047_4f3a_8ff2_dbcdb1a3e088.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869480763_8f97fe83_3047_4f3a_8ff2_dbcdb1a3e088.png)
 
 Select the directory containing the “ok-mx93 development environment” virtual machine files that were just extracted, then double-click to open the startup file:
 
@@ -138,7 +138,7 @@ Select the directory containing the “ok-mx93 development environment” virtua
 
 Once loading is complete, click “Start this virtual machine” to run it. Enter the system interface:
 
-![Image](1718869481174_f9c5f34e_7fbc_47de_9f8e_a0191695a3de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869481174_f9c5f34e_7fbc_47de_9f8e_a0191695a3de.png)
 
 Development Environment Account: forlinx; password: forlinx：
 
@@ -178,55 +178,55 @@ If you want to learn how to set up a virtual machine themselves, please install 
 
 Step 1: Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:
 
-![Image](1718869583459_8dfde8cf_89c3_42ef_b2b5_7f7ce4d7a604.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869583459_8dfde8cf_89c3_42ef_b2b5_7f7ce4d7a604.png)
 
 Step 2: Select the compatibility for the corresponding VMware version (you can view the version under Help -> About VMware Workstation). After confirming, click “Next”:
 
-![Image](1718869583744_1f8c88f2_57f3_4baa_b596_74af1fb215f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869583744_1f8c88f2_57f3_4baa_b596_74af1fb215f1.png)
 
 Choose “Installer disc image file (iso)” and click “Next”:
 
-![Image](1718869584192_6793524b_482b_43e1_aeb3_db1dec72da60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869584192_6793524b_482b_43e1_aeb3_db1dec72da60.png)
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![Image](1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694-1787295999282.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869584398_5d249503_a64d_4a3f_8489_e54a4a9eb694-1787295999282.png)
 
 Configure the number of cores, then click “Next”:
 
-![Image](1718869584636_4fe029f5_73d3_42cf_8d01_5d8266c5aefe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869584636_4fe029f5_73d3_42cf_8d01_5d8266c5aefe.png)
 
 Allocate the appropriate amount of memory, then select “Next”:
 
-![Image](1718869584848_750d03fd_581d_4130_9966_9ef1025939cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869584848_750d03fd_581d_4130_9966_9ef1025939cb.png)
 
 Set the network type, use the default NAT networking, and click “Next”. Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](1718869585093_76b7f0ed_f7a1_40e9_8509_7e6039bea53a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869585093_76b7f0ed_f7a1_40e9_8509_7e6039bea53a.png)
 
 Use the recommended I/O controller and click “Next”:
 
-![Image](1718869585428_016b5a4f_3818_4a68_a631_d2498120bc8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869585428_016b5a4f_3818_4a68_a631_d2498120bc8f.png)
 
 Use the recommended disk type and click “Next”:
 
-![Image](1718869585713_c06b7cbe_d288_4f2a_af55_7d6e99107012.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869585713_c06b7cbe_d288_4f2a_af55_7d6e99107012.png)
 
 Use the default option, “Create a new virtual disk”, and click “Next”:
 
-![Image](1718869585907_c658e5b0_f32e_4662_a9fe_c5ffb3748d94.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869585907_c658e5b0_f32e_4662_a9fe_c5ffb3748d94.png)
 
 Allocate a disk size of 80GB and choose “Split virtual disk into multiple files”, then click “Next”:
 
-![Image](1718869586141_7e8a4dab_0ff2_4645_84e9_323fd7008529.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869586141_7e8a4dab_0ff2_4645_84e9_323fd7008529.png)
 
 Use the default settings and click “Next”:
 
-![Image](1718869586324_4ae2f79f_159f_4d43_901d_a38b1efba18b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869586324_4ae2f79f_159f_4d43_901d_a38b1efba18b.png)
 
 Click “Finish”:
 
-![Image](1718869586503_50bcaff6_9a7f_4ac5_a5ce_a3a1c9638117.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869586503_50bcaff6_9a7f_4ac5_a5ce_a3a1c9638117.png)
 
 Once the virtual machine has booted up, select “Try to Install Ubuntu”.
 
@@ -266,13 +266,13 @@ Solution: Right-click “My Computer”, select “Manage”, then go to “Serv
 
 **Error 2**: Internal Error.
 
-![Image](1718869589342_acc3167f_f1bc_4e26_ab17_5e9f35b7591e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869589342_acc3167f_f1bc_4e26_ab17_5e9f35b7591e.png)
 
 Solution: Refer to Error 1
 
 Error **3**: Unable to install the VMware Authorization Service (VMAuthdService)
 
-![Image](1718869589591_d34021d8_fca9_461e_a9e0_cb7d0e3a072f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869589591_d34021d8_fca9_461e_a9e0_cb7d0e3a072f.png)
 
 Solution:
 
@@ -282,7 +282,7 @@ win+R
 Enter services.msc
 ```
 
-![](Image_20260821151237.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/Image_20260821151237.png)
 
 Then find the service and start it because this service is used for authorization and authentication to start and access virtual machines.
 
@@ -300,7 +300,7 @@ Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then reinstall.
 
 Error 5: Intel VT-x is disabled
 
-![Image](1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
 
 Solution:
 
@@ -404,7 +404,7 @@ Execute the following command in the terminal:
 forlinx@ubuntu:~$ sudo apt-get install -y nfs-kernel-server nfs-common portmap
 ```
 
-![Image](1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869593819_49fb6680_cb15_4789_b1ea_4743a3407d96.png)
 
 #### 3.2.4 FTP the Server
 
@@ -437,13 +437,13 @@ forlinx@ubuntu:~$ sudo /etc/init.d/vsftpd restart
 
 Once installation is complete, open the client to see the following screen:
 
-![Image](1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869594191_62172235_1998_4ed9_a19c_e134416074e6.png)
 
 Click “File” – “Site Management”.
 
 Enter the IP address on the host running Ubuntu; username: forlinx, password: forlinx. Click “Connect.”
 
-![Image](1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869594622_0a022d2f_e436_4806_afe1_7800463e9bae.png)
 
 Once connected, Ubuntu’s directory structure will be displayed, allowing file transfers between systems.
 
@@ -1303,7 +1303,7 @@ Power on the development board and mount it to the development environment.
 
 **It is recommended to check “Remember my choice, do not ask again in the future.”**
 
-![Image](1718869727168_e7e138ad_8ae3_4ae0_b0ef_fdffef545296.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869727168_e7e138ad_8ae3_4ae0_b0ef_fdffef545296.png)
 
 Step 3: Enter the flashing command in the Linux host.
 
@@ -1358,7 +1358,7 @@ forlinx@ubuntu:~/OKMX93-linux-image$ cat ok-mx93-linux-fs.sdcard.a* > rootfs.bin
 
 After copying, the files in the UUU directory should look like this:
 
-![Image](1718869729608_ce3bdca8_7909_441a_aa3c_7f762c865836.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869729608_ce3bdca8_7909_441a_aa3c_7f762c865836.png)
 
 Flash u-boot, kernel, and filesystem to eMMC:
 
