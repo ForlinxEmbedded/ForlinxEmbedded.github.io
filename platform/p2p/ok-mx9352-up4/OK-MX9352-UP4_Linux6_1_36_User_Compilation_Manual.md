@@ -276,11 +276,9 @@ Error **3**: Unable to install the VMware Authorization Service (VMAuthdService)
 
 Solution:
 
-```bash
 win+R
 
 Enter services.msc
-```
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/Image_20260821151237.png)
 
@@ -478,7 +476,8 @@ forlinx@ubuntu:~$ ./fsl-imx-xwayland-glibc-x86_64-meta-toolchain-qt6-armv8a-imx9
 NXP i.MX Release Distro SDK installer version 6.1-mickledore ============================================================ 
 Enter target directory for SDK (default: /opt/fsl-imx-xwayland/6.1-mickledore): You are about to install the SDK to "/opt/fsl-imx-xwayland/6.1-mickledore". Proceed [Y/n]? Y
 [sudo] forlinx password: forlinx                                            //Enter the password for the "forlinx" user
-Extracting SDK.............................................................................................................................................................................................................................................................................................................................................................................................................done 
+Extracting 
+SDK.............................................................................................................................................................................................................................................................................................................................................................................................................done 
 Setting it up...done
 SDK has been successfully set up and is ready to be used. 
 Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
