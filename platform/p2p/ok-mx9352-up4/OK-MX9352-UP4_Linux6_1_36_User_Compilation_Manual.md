@@ -52,7 +52,7 @@ Popular virtualization software includes VMware (VMware ACE), VirtualBox, and Vi
 
 ### 1.1 Downloading and Purchasing VMware Software
 
-Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
+Visit the VMware official website at [VMware Official Website](https://www.vmware.com/cn.html) to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869388755_5131c433_6e67_401b_b5b4_c170c04079d5.png)
 
