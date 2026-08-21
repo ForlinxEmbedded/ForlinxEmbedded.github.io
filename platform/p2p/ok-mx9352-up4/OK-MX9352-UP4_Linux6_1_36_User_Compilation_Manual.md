@@ -120,7 +120,7 @@ Forlinx provides a pre-installed Ubuntu development environment that customers c
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480341-fd356203-20ec-4038-9252-fcfd7d8b07e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869480341_fd356203_20ec_4038_9252_fcfd7d8b07e6.png)
 
 Select all compressed files, right-click, and choose “Extract to ok-mx93 development environment”.
 
@@ -134,7 +134,7 @@ Open the installed virtual machine software.
 
 Select the directory containing the “ok-mx93 development environment” virtual machine files that were just extracted, then double-click to open the startup file:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869480974-13f1ba72-0ea4-4d9b-b2de-1565bd59fdc1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869480974_13f1ba72_0ea4_4d9b_b2de_1565bd59fdc1.png)
 
 Once loading is complete, click “Start this virtual machine” to run it. Enter the system interface:
 
@@ -142,7 +142,7 @@ Once loading is complete, click “Start this virtual machine” to run it. Ente
 
 Development Environment Account: forlinx; password: forlinx：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869481385-39aa46fb-8fd4-43d8-a799-58da81ec3f3d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869481385_39aa46fb_8fd4_43d8_a799_58da81ec3f3d.png)
 
 You have now successfully entered the development environment provided by Forlinx. You can place the source code from the user data folder into the development environment to begin compilation and other operations. (Refer to 04\_Linux Compilation Section for details.)
 
@@ -170,7 +170,7 @@ The installed Ubuntu version is 22.04, and all the introductions and development
 
 Download the “ubuntu-22.04.1-desktop-amd64.iso” version (the specific version to download can be based on your own needs; here we use version 22.04.1 as an example).
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869583250-18390b4b-1196-4c82-8307-9f22c4e71d8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869583250_18390b4b_1196_4c82_8307_9f22c4e71d8f.png)
 
 #### 3.1.1 Installing the Ubuntu image on VMware
 
@@ -230,27 +230,27 @@ Click “Finish”:
 
 Once the virtual machine has booted up, select “Try to Install Ubuntu”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869586970-cffad2de-72c1-4f4e-a8af-eb5808a32729.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869586970_cffad2de_72c1_4f4e_a8af_eb5808a32729.png)
 
 Select a language, then select “Install Ubuntu”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587201-dffb2ce0-3826-49ec-8ff8-1e8505780671.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869587201_dffb2ce0_3826_49ec_8ff8_1e8505780671.png)
 
 Select a keyboard layout.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587425-cd6dfdfd-fb60-4bb3-a9ac-1ceddaa0360c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869587425_cd6dfdfd_fb60_4bb3_a9ac_1ceddaa0360c.png)
 
 Select “Upgrade and install software”, leave the default settings as they are, then click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587693-96841510-6f1d-4cbb-8226-5f6b08b525fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869587693_96841510_6f1d_4cbb_8226_5f6b08b525fb.png)
 
 Select the installation method and hard drive partitions; the default settings are fine. Click “Install now” to continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869587952-9463364d-3878-4b10-9ce8-295d6494a33c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869587952_9463364d_3878_4b10_9ce8_295d6494a33c.png)
 
 Enter account details.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869588554-7e9e7f72-e56f-4f8b-a02e-bdcf739a95fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869588554_7e9e7f72_e56f_4f8b_a02e_bdcf739a95fb.png)
 
 The virtual machine will then begin installing the image; please wait patiently.
 
@@ -258,11 +258,11 @@ The virtual machine will then begin installing the image; please wait patiently.
 
 Error **1:** Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869588749-a1495548-d40f-4bae-904f-8bbbc2fe79c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
 
 Solution: Right-click “My Computer”, select “Manage”, then go to “Services and Applications” and enable all services related to VMware. After the services start successfully, restart the virtual machine; or suspend the virtual machine first, then after the services start, resume the suspended virtual machine.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869589005-ef1fc363-0dd2-4630-9776-43ba22bbf91c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
 
 **Error 2**: Internal Error.
 
@@ -286,15 +286,15 @@ Enter services.msc
 
 Then find the service and start it because this service is used for authorization and authentication to start and access virtual machines.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590078-8aef4460-79c2-4763-8e7d-118c2d5983cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869590078_8aef4460_79c2_4763_8e7d_118c2d5983cc.png)
 
 The WMI service must be started first
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590418-2f8e53a5-c2fc-4757-9953-c9e4fb189590.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869590418_2f8e53a5_c2fc_4757_9953_c9e4fb189590.png)
 
 Error 4: Failed to install the hcmon driver
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869590665-c36e2101-6100-454f-8aa5-3ca6957f749a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869590665_c36e2101_6100_454f_8aa5_3ca6957f749a.png)
 
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then reinstall.
 
@@ -312,7 +312,7 @@ If it still doesn’t work, turn off the firewall and restart the virtual machin
 
 Error 6: The virtual machine appears to be in use… Take Ownership (T)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591243-c7dee38e-bc9a-4e75-b107-7cf10d254f4f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591243_c7dee38e_bc9a_4e75_b107_7cf10d254f4f.png)
 
 Solution:
 
@@ -320,13 +320,13 @@ Solution:
 - Go to the virtual machine's storage directory and delete the **.lck files (lck stands for lock files);
 - Open Windows Task Manager and end the VMware process;
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591535-d122dbda-6632-4026-9d63-23db9d4537f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591535_d122dbda_6632_4026_9d63_23db9d4537f2.png)
 
 - Restart the virtual machine.
 
 Error 7: Failed to lock the file
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869591887-144b4cd3-ddb0-449d-a2f2-f40a3001899e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591887_144b4cd3_ddb0_449d_a2f2_f40a3001899e.png)
 
 Solution:
 
@@ -340,7 +340,7 @@ Solution:
 
 The host does not have enough memory to meet the maximum requirements of the virtual machine image. Increase the virtual machine’s memory and restart it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592129-f2e6097d-9937-4a53-b0b3-1bbe72566871.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869592129_f2e6097d_9937_4a53_b0b3_1bbe72566871.png)
 
 ### 3.2 Installing Common Software in Ubuntu
 
@@ -348,17 +348,17 @@ The host does not have enough memory to meet the maximum requirements of the vir
 
 Click on the package-like icon on the left side of the desktop to see some tools. You can also search for the tool you want. For example, download the VSCode tool, which is very convenient for daily code writing.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592379-88da66b9-82c5-4005-8e7f-edb58d0aa2ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869592379_88da66b9_82c5_4005_8e7f_edb58d0aa2ea.png)
 
 Search for the tool you need, click to view the details, click “Install” to download, wait for the download to complete and install automatically, then click “Launch” to run it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592679-2fb3764d-0037-41e4-9af4-58ea85585a1b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869592679_2fb3764d_0037_41e4_9af4_58ea85585a1b.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869592939-3b9a36d8-33cd-41b2-91fc-c6a49f4e81d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869592939_3b9a36d8_33cd_41b2_91fc_c6a49f4e81d7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593272-13fb8849-88df-47ef-85a3-4acb70beaee3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869593272_13fb8849_88df_47ef_85a3_4acb70beaee3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869593542-98dcaa2a-5828-4e6c-823d-050f711a226e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869593542_98dcaa2a_5828_4e6c_823d_050f711a226e.png)
 
 #### 3.2.2 Specifying a Download Source with the APT Command
 
@@ -496,11 +496,11 @@ forlinx@ubuntu:~$ sudo vi /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-p
 QtGui/qtgui-config.h
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721784641202-09bd3467-efd3-4e0c-9b45-d3eb95fa7076.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1721784641202_09bd3467_efd3_4e0c_9b45_d3eb95fa7076.png)
 
 Modify to
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721784664032-02aaf006-3d2f-431d-82fb-cdc8b20643ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1721784664032_02aaf006_3d2f_431d_82fb_cdc8b20643ee.png)
 
 #### 3.3.2 Setting Environment Variables
 
@@ -552,35 +552,35 @@ forlinx@ubuntu:~/ok-mx93$ ./qt-creator-opensource-linux-x86_64-8.0.2.run
 
 The following screen will appear. Enter your Qt account details and click “Next” to proceed to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595129-2c47b18c-f7d4-44de-aa48-f85bc89b896a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869595129_2c47b18c_f7d4_44de_aa48_f85bc89b896a.png)
 
 Agree to the terms, then click "Next" to proceed to the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595340-47905606-270f-46e2-8ef2-e76eb9d09968.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869595340_47905606_270f_46e2_8ef2_e76eb9d09968.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595613-4820d0e4-d6ba-4615-a58a-42bfa5aad177.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869595613_4820d0e4_d6ba_4615_a58a_42bfa5aad177.png)
 
 In the following screen, click "Browse …" Select the installation path of Qtcreator, and then click "Next" to enter the next step:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869595845-430e2d1a-8db2-4da7-917e-219b156a9e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869595845_430e2d1a_8db2_4da7_917e_219b156a9e49.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596171-be3b6e90-527a-4cb3-b106-9e32f482ff4a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869596171_be3b6e90_527a_4cb3_b106_9e32f482ff4a.png)
 
 Agree to the license agreement and click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596399-0e3ea346-20de-45ef-917e-91d3202ec93b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869596399_0e3ea346_20de_45ef_917e_91d3202ec93b.png)
 
 Click “Install”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596646-6b25adf6-0c2c-46c5-99b2-9ac0dddef58a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869596646_6b25adf6_0c2c_46c5_99b2_9ac0dddef58a.png)
 
 After the installation is completed, the following interface will be displayed. Uncheck the option "Launch Qt Creator" "and click " Finish" to complete the installation of Qt Creator:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869596923-f2d87052-c711-4661-ac02-b5adf1160842.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869596923_f2d87052_c711_4661_ac02_b5adf1160842.png)
 
 Navigate to the actual installation directory of Qt Creator:  
 **/home/forlinx/qtcreator-8.0.2/Tools/QtCreator/bin/**
@@ -597,7 +597,7 @@ forlinx@ubuntu: ~/qtcreator-8.0.2/bin $ sudo ./qtcreator
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869597142-13b4d91d-fe35-418a-9e8c-35cdf1ebd754.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869597142_13b4d91d_fe35_418a_9e8c_35cdf1ebd754.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -614,11 +614,11 @@ Qt is a cross-platform graphics development library that supports multiple opera
 
 Launch Qt Creator; the Qt development interface will appear. Click Tools → External → Configure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869597448-dcfa9764-a5a2-4057-91c8-b22fde2be1fe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869597448_dcfa9764_a5a2_4057_91c8_b22fde2be1fe.png)
 
 Go to the Preferences screen, click “Kits” on the left, then click the “Compilers” tab at the top centre, and click “Add → GCC → C++” on the right, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869597838-fc8c102d-51cf-4da6-aa1b-7c6218ddc4c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869597838_fc8c102d_51cf_4da6_aa1b_7c6218ddc4c6.png)
 
 The following window will pop up. For the “Compiler path” option, click “Browser,” navigate to the SDK package and locate aarch64-poky-linux-g++ in /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86\_64-pokysdk-linux/usr/bin/aarch64-poky-linux/. Select it, click “Open,” and change the “Name” to “G++”.
 
@@ -626,7 +626,7 @@ Similarly, add the GCC compiler by clicking “Add -> GCC -> C” on the right, 
 
 In the SDK package, locate aarch64-poky-linux-gcc in /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86\_64-pokysdk-linux/usr/bin/aarch64-poky-linux/, select it, click “Open,” and set the “Name” to “GCC”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598324-0cf95d69-e7e0-4b9d-a96a-cfbfd9363658.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869598324_0cf95d69_e7e0_4b9d_a96a_cfbfd9363658.png)
 
 **3.4.2.2 Debugger Configuration**
 
@@ -634,7 +634,7 @@ Click the “Debuggers” tab to open the following interface, then click “Add
 
 In the pop-up window, navigate to the SDK package and find aarch64-poky-linux-gdb in /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86\_64-pokysdk-linux/usr/bin/aarch64-poky-linux/. Select it, click “Open,” and rename the “Name” to “debuggers”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598620-474a8c3a-7648-48f5-a95e-060630110d41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869598620_474a8c3a_7648_48f5_a95e_060630110d41.png)
 
 **3.4.2.3 Qt Version Configuration**
 
@@ -642,17 +642,17 @@ Click the “Qt Versions” tab and then click “Add”:
 
 Find qmake in the directory /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86\_64-pokysdk-linux/usr/bin, select it, and click “Open”. After adding, the following interface will be displayed. Click “Apply”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869598822-b09b53a1-5215-46b0-85dc-7add81077c41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869598822_b09b53a1_5215_46b0_85dc_7add81077c41.png)
 
 If the environment variables are correctly configured, they will appear as configured, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869599056-689d1e1b-e71b-4c82-9f9f-ed6aa233a3af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869599056_689d1e1b_e71b_4c82_9f9f_ed6aa233a3af.png)
 
 **3.4.2.4 Kits Configuration**
 
 Click the “Kits” tab, click “Add” on the right to add a new Kit. Modify the contents according to the figure below and click “Apply”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869599282-a044f438-f7a0-4ab9-bc84-5ae4497cf0e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869599282_a044f438_f7a0_4ab9_bc84_5ae4497cf0e8.png)
 
 ## 4\. Linux Compilation
 
@@ -1070,21 +1070,21 @@ forlinx@ubuntu: ~/ok-mx93/qtcreator-8.0.2//bin $ sudo ./qtcreator
 
 Click on File -> Open File or Project in Qt Creator. A window will pop up. Select /home/forlinx/ok-mx93/OKMX93-linux-sdk/appsrc/forlinx-qt/fltest\_qt\_backlight/fltest\_qt\_backlight.pro, then click Open. The Configure Project window will appear. Select the previously configured okmx93 kit as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869651633-bd12e26c-79fe-4765-997f-545c616d4246.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869651633_bd12e26c_79fe_4765_997f_545c616d4246.png)
 
 Then click Configure Project. The interface will then appear as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869651904-d30a8d4e-114a-405e-885d-836fb30f2c38.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869651904_d30a8d4e_114a_405e_885d_836fb30f2c38.png)
 
-Right-click on fltest\_qt\_backlight and select Clean to perform a clean build. When the Clean progress bar in the bottom-right corner turns green, it indicates the clean is complete.![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652121-925ead7a-9924-4c6f-abf9-92b116b8b512.png)
+Right-click on fltest\_qt\_backlight and select Clean to perform a clean build. When the Clean progress bar in the bottom-right corner turns green, it indicates the clean is complete.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869652121_925ead7a_9924_4c6f_abf9_92b116b8b512.png)
 
 Right-click on fltest\_qt\_backlight and select Build to compile it.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652425-acda70ff-6b4c-4472-9224-239ac9ed1b5a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869652425_acda70ff_6b4c_4472_9224_239ac9ed1b5a.png)
 
 When the Build progress bar in the bottom-right corner completes, the compilation is finished. At this point, you will see the newly generated binary file fltest\_qt\_backlight in the directory /home/forlinx/ok-mx93/OKMX93-linux-sdk/appsrc/forlinx-qt/fltest\_qt\_backlight/, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652755-8d906d62-fba5-4476-a6b9-755e16202fce.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869652755_8d906d62_fba5_4476_a6b9_755e16202fce.png)
 
 Method to replace an existing Qt program running on the desktop:
 
@@ -1170,41 +1170,41 @@ forlinx@ubuntu:~ /qtcreator-8.0.2/bin $ sudo ./qtcreator
 
 Launch the Qt Creator program and enter the Qt Creator interface. Click “Create Project” to create a new project.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869652979-8c049000-bb2c-43f7-9fe0-c4a92d63dd68.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869652979_8c049000_bb2c_43f7_9fe0_c4a92d63dd68.png)
 
 Select “Application” -> “Qt Widgets Application”, then click “Choose” in the bottom-right corner:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653265-35d0f946-a53a-43ae-9938-91b46c0c0405.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869653265_35d0f946_a53a_43ae_9938_91b46c0c0405.png)
 
 In the following interface, set the project name to “helloworld”. Set the installation path to /home/forlinx, then click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653494-318f883a-f096-4c67-aa84-9dff77203007.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869653494_318f883a_f096_4c67_aa84_9dff77203007.png)
 
 Select “qmake” and click “Next” to continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653686-ee02a772-e1e4-4df2-aec7-23dac4728d54.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869653686_ee02a772_e1e4_4df2_aec7_23dac4728d54.png)
 
 In the following interface, change the “Class name” to “helloworld”, select “QWidget” as the “Base class”, and then click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869653934-e470b647-6b89-4496-b428-c94022a99646.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869653934_e470b647_6b89_4496_b428_c94022a99646.png)
 
 The following interface does not need to be configured. Click "Next" directly:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654119-4cf5f0f7-1892-4115-b0fa-b17c1beac3f5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869654119_4cf5f0f7_1892_4115_b0fa_b17c1beac3f5.png)
 
 In the following interface, select the previously added “okmx93” as the kit for the current project, then click “Next”
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654359-f2861d6d-ecf6-46e9-8aba-a08f5c335c4f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869654359_f2861d6d_ecf6_46e9_8aba_a08f5c335c4f.png)
 
 In the following interface, click “Finish” to complete the project creation.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654592-4449be79-f33b-4387-ba29-ef42598d69f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869654592_4449be79_f33b_4387_ba29_ef42598d69f8.png)
 
 Once the project is created, the following window will appear:
 
 Project created successfully.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869654859-08bbaf5b-340e-457e-a2c3-d8d341ee4ff7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869654859_08bbaf5b_340e_457e_a2c3_d8d341ee4ff7.png)
 
 Once the programme has been written, click on the hammer icon in the bottom left-hand corner to perform a cross-compilation. Copy the compiled executable file “helloworld” to the development board, and you can then test the application.
 
@@ -1230,15 +1230,15 @@ Start creating a customised TF card.
 $sudo ./mksdboot.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869723016-c7c3eeca-4246-4569-9357-826d0303e8d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869723016_c7c3eeca_4246_4569_9357_826d0303e8d4.png)
 
 Select the TF card device; in this example, we’ll use 1. Enter 1 to select the sdb device.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869723715-f5eb1df9-6c15-486a-8f69-a8d5f84e9121.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869723715_f5eb1df9_6c15_486a_8f69_a8d5f84e9121.png)
 
 Type “y” to confirm, allowing the TF card to be repartitioned and formatted.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869724369-18f4178d-458d-45e4-8a81-b4655d30fb11.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869724369_18f4178d_458d_45e4_8a81_b4655d30fb11.png)
 
 Production complete.
 
@@ -1250,7 +1250,7 @@ The above image may also be replaced with an image of the same name compiled by 
 
 Set the OK-MX9352-UP4 DIP switch to SD card boot mode (1 OFF, 2 ON), insert the programmed TF card, and power on the device;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270589634-0e0ad3fd-011a-47f1-8d7c-1a73a5725244.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270589634_0e0ad3fd_011a_47f1_8d7c_1a73a5725244.png)
 
 When a TF card is inserted, the system will, by default, load the “ramdisk.img.gz” file and the kernel image from the TF card, and boot via a virtual file system; Once the ramdisk it booted, it will automatically write the file system “ok-mx93-linux-fs.sdcard.a\*” to the eMMC. If the script is not run automatically, you will need to run /update.sh manually.
 
@@ -1289,17 +1289,17 @@ forlinx@ubuntu:/usr/bin$ sudo chmod 777 uuu               //Grant uuu execute pe
 
 Step 2: Connect the OTG cable to the USB port of the Linux host; Set the DIP switch to OTG boot mode, and set OTG DIP switch S3 to slave mode. Then, power on the development board. DIP switch settings are shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270589827-8726e03b-f3b1-4969-a1fb-4e1e565f324d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270589827_8726e03b_f3b1_4969_a1fb_4e1e565f324d.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270589914-ebf8417b-2c65-4ec3-8629-5ccc868b6fb4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270589914_ebf8417b_2c65_4ec3_8629_5ccc868b6fb4.png)
 
 OTG port location is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270589995-a007de97-77d3-496c-bfa7-2d308f2845ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270589995_a007de97_77d3_496c_bfa7_2d308f2845ef.png)
 
 Power on the development board and mount it to the development environment.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869726866-2f3588d8-65cb-4382-b5cd-f97e45bf05cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869726866_2f3588d8_65cb_4382_b5cd_f97e45bf05cd.png)
 
 **It is recommended to check “Remember my choice, do not ask again in the future.”**
 
@@ -1326,7 +1326,7 @@ forlinx@ubuntu:~/OKMX93-linux-image$ sudo uuu -b emmc ok-mx93-uboot.bin
 
 Successful flashing example is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/44591882/1718869727813-026b43fd-0b55-48c6-b254-13fcd59eb4a6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869727813_026b43fd_0b55_48c6_b254_13fcd59eb4a6.png)
 
 #### 5.2.2 Using UUU on Windows
 
@@ -1338,13 +1338,13 @@ Copy uuu.exe from the disc materials to the D:\\uuu directory.
 
 Step 2: Connect the computer’s USB port to the development board’s OTG port using a Type-C data cable. Set the DIP switch to OTG boot mode, and set OTG DIP switch S3 to slave mode. Then, power on the development board; DIP switch settings are shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270589827-8726e03b-f3b1-4969-a1fb-4e1e565f324d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270589827_8726e03b_f3b1_4969_a1fb_4e1e565f324d.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270589914-ebf8417b-2c65-4ec3-8629-5ccc868b6fb4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270589914_ebf8417b_2c65_4ec3_8629_5ccc868b6fb4.png)
 
 OTG port location is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784270590072-f52cb6b8-419d-4a37-817d-4f672f05383d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1784270590072_f52cb6b8_419d_4a37_817d_4f672f05383d.png)
 
 Step 3: Copy the images;
 
@@ -1373,7 +1373,7 @@ D:\uuu>uuu.exe -b emmc_all ok-mx93-uboot.bin rootfs.bin
 
 Successful flashing example is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721804454203-4be12765-a6ae-4cf4-ba01-967583707784.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1721804454203_4be12765_a6ae_4cf4_ba01_967583707784.png)
 
 Successful flashing example is shown below:
 
@@ -1388,7 +1388,7 @@ D:\uuu>uuu.exe -b emmc ok-mx93-uboot.bin
 
 Successful flashing example is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/22794272/1721804563797-7a891711-6e29-4ccf-a053-41157446f6c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1721804563797_7a891711_6e29_4ccf_a053_41157446f6c2.png)
 
 ### 5.3 Updating Images Separately
 
