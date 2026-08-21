@@ -146,7 +146,7 @@ Development Environment Account: forlinx; password: forlinx：
 
 You have now successfully entered the development environment provided by Forlinx. You can place the source code from the user data folder into the development environment to begin compilation and other operations. (Refer to 04\_Linux Compilation Section for details.)
 
-### 3\. Manually Setting Up the Development Environment
+## 3\. Manually Setting Up the Development Environment
 
 Ubuntu is a Linux operating system distribution primarily focused on desktop applications. Ubuntu offers numerous advantages and has its own strengths compared to other versions of Linux distributions. First, the system installation is very straightforward, requiring minimal setup and fully comparable to Windows desktop systems.
 
@@ -258,11 +258,7 @@ The virtual machine will then begin installing the image; please wait patiently.
 
 Error **1:** Unable to connect to MKS: Too many socket connection attempts; giving up.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869588749_a1495548_d40f_4bae_904f_8bbbc2fe79c3.png)
-
 Solution: Right-click “My Computer”, select “Manage”, then go to “Services and Applications” and enable all services related to VMware. After the services start successfully, restart the virtual machine; or suspend the virtual machine first, then after the services start, resume the suspended virtual machine.
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869589005_ef1fc363_0dd2_4630_9776_43ba22bbf91c.png)
 
 **Error 2**: Internal Error.
 
@@ -284,11 +280,7 @@ Enter services.msc
 
 Then find the service and start it because this service is used for authorization and authentication to start and access virtual machines.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869590078_8aef4460_79c2_4763_8e7d_118c2d5983cc.png)
-
 The WMI service must be started first
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869590418_2f8e53a5_c2fc_4757_9953_c9e4fb189590.png)
 
 Error 4: Failed to install the hcmon driver
 
@@ -297,8 +289,6 @@ Error 4: Failed to install the hcmon driver
 Solution: Delete C:\\Windows\\System32\\drivers\\hcmon.sys, then reinstall.
 
 Error 5: Intel VT-x is disabled
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591003_b756d65f_933d_4574_8baf_f6cfe2aeabb5.png)
 
 Solution:
 
@@ -310,21 +300,15 @@ If it still doesn’t work, turn off the firewall and restart the virtual machin
 
 Error 6: The virtual machine appears to be in use… Take Ownership (T)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591243_c7dee38e_bc9a_4e75_b107_7cf10d254f4f.png)
-
 Solution:
 
 - Shut down the virtual machine;
 - Go to the virtual machine's storage directory and delete the **.lck files (lck stands for lock files);
 - Open Windows Task Manager and end the VMware process;
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591535_d122dbda_6632_4026_9d63_23db9d4537f2.png)
-
 - Restart the virtual machine.
 
 Error 7: Failed to lock the file
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869591887_144b4cd3_ddb0_449d_a2f2_f40a3001899e.png)
 
 Solution:
 
@@ -337,8 +321,6 @@ Error 8: The virtual machine could not be started because there was not enough m
 Solution:
 
 The host does not have enough memory to meet the maximum requirements of the virtual machine image. Increase the virtual machine’s memory and restart it.
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok-mx9352-up4/OK-MX9352-UP4_Linux6_1_36_User_Compilation_Manual/1718869592129_f2e6097d_9937_4a53_b0b3_1bbe72566871.png)
 
 ### 3.2 Installing Common Software in Ubuntu
 
