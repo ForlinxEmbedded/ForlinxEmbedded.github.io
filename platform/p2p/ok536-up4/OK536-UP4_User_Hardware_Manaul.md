@@ -61,7 +61,7 @@ Furthermore, the T536 series supports a combination of RGB/MIPI DSI/LVDS interfa
 
 ### 2.2 FET536-UP4 SoM Dimension Diagram
 
-![](1778633266633-1391fe70-6ae9-4b04-b8ce-232f40cb86fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1778633266633-1391fe70-6ae9-4b04-b8ce-232f40cb86fb.png)
 
 Dimensions: 40mm × 40mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -104,7 +104,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | ESD HBM(ESDA/JEDEC JS-001-2017)| -2000| +2000| V| Applicable to all pins of the SoM|
 | ESD CDM(ESDA/JEDEC JS-002-2018)| -250| +250| V| Applicable to all pins of the SoM|
 
-**Note: **
+**Note:** 
 
 - **The above data is from the chip manual;**
 - **As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.**
@@ -334,7 +334,7 @@ The main interfaces are shown in the figure below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252866759_6c1deebe_99de_4ae9_8d35_efb6cf5419f9.png)
 
-![](../OK536-UP4%20%E7%A1%AC%E4%BB%B6%E6%89%8B%E5%86%8C/1784252866960-5e8ec53e-7671-4bf7-a57a-5f5531bc412f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252866960-5e8ec53e-7671-4bf7-a57a-5f5531bc412f-1787563386959.jpg)
 
 ### 3.2 OK536-UP4 Development Board Dimension Diagram
 
@@ -350,7 +350,7 @@ Power Voltage: DC 12V
 
 The OK536x-UP4 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 39mm × 39mm × 23mm. See below for details.
 
-![](1784252867171-2fa984f5-33e5-4d45-abd1-f23256b62952.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867171-2fa984f5-33e5-4d45-abd1-f23256b62952.png)
 
 ### 3.3 Naming Rules
 
@@ -448,7 +448,7 @@ The carrier board features a single USB Type-C port with 3 x integrated debug se
 
 The carrier board features a single JTAG debugging interface for debugging the x-core.
 
-![](1784252867375-718ad681-3afb-4615-ac2f-160de8a3a6c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867375-718ad681-3afb-4615-ac2f-160de8a3a6c5.png)
 
 #### 3.5.6 RTC
 
@@ -625,7 +625,7 @@ Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252871403_b152697f_45c3_4a8e_b99b_2bfadc842287.png)
 
-![](1784252871523-549cb84f-ea3d-4583-97e7-4496754b6726.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252871523-549cb84f-ea3d-4583-97e7-4496754b6726.png)
 
 **Note:**
 
