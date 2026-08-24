@@ -21,6 +21,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK536-UP4_User_Hardware_Manaul
+
    
 
 
