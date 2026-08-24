@@ -671,4 +671,4 @@ Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875802_03503dfd_da2c_42ac_9894_804a25a617e1.png)
 
-!\[屏幕截图 2025-02-18 162334](images\\屏幕截图 2025-02-18 162334.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/162334.png)
