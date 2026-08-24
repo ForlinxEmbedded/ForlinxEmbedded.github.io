@@ -45,17 +45,17 @@ Furthermore, the T536 series supports a combination of RGB/MIPI DSI/LVDS interfa
 
 **T536 Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/50461850/1784252861822-e2777d5e-f774-4059-a99e-bf24cfe1ccee.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252861822_e2777d5e_f774_4059_a99e_bf24cfe1ccee.jpg)
 
 ## 2\. FET536-UP4 SoM Description
 
 ### 2.1 FET536-UP4 Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633266187-1343c584-7f9d-44db-99ad-cc2d8e293c93.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1778633266187_1343c584_7f9d_44db_99ad_cc2d8e293c93.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633266492-33441650-6e19-4920-948f-f8da066b3c7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1778633266492_33441650_6e19_4920_948f_f8da066b3c7b.png)
 
 **Back**
 
@@ -174,11 +174,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 FET536-UP4 SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633266823-32d05bd9-ae6b-4f70-a61e-446a4685d270.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1778633266823_32d05bd9_ae6b_4f70_a61e_446a4685d270.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633266928-1dbc72e7-a725-4f0d-be00-15015608a071.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1778633266928_1dbc72e7_a725_4f0d_be00_15015608a071.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633267027-58c8602c-bf79-45cd-9769-0173e0986a53.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1778633267027_58c8602c_bf79_45cd_9769_0173e0986a53.png)
 
 #### 2.5.2 FET536-UP4 SoM Pin Function Description
 
@@ -332,13 +332,13 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 Connection method: Stamp hole + LGA.   
 The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252866759-6c1deebe-99de-4ae9-8d35-efb6cf5419f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252866759_6c1deebe_99de_4ae9_8d35_efb6cf5419f9.png)
 
 ![](../OK536-UP4%20%E7%A1%AC%E4%BB%B6%E6%89%8B%E5%86%8C/1784252866960-5e8ec53e-7671-4bf7-a57a-5f5531bc412f.png)
 
 ### 3.2 OK536-UP4 Development Board Dimension Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867081-0e3c42de-a802-48bf-a186-916113763a63.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867081_0e3c42de_a802_48bf_a186_916113763a63.png)
 
 PCB: 130mm×190mm
 
@@ -414,7 +414,7 @@ As shown, the power supply for the development board is 12V DC （from P28). VDD
 
 PMIC\_EXT\_EN ensure to power on the SoM first, followed by the carrier board, to prevent latch-up effects that could damage the CPU.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867263-f6a6ca6a-9bcf-48ba-9fb1-07c8451fe830.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867263_f6a6ca6a_9bcf_48ba_9fb1_07c8451fe830.png)
 
 #### 3.5.2 Power/Reset Keys
 
@@ -432,15 +432,15 @@ The FET536-UP4 SoM does not have the WAKEUP feature.
 
 The carrier board is configured with 1 x LRADC signal, utilizing a button and a resistor voltage divider to enable key value sampling. The LRADC is pulled up to 1.8V via a 10K resistor on the SoM.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784253983162-e9e43b11-8d19-4c19-a7a6-697c35b810e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784253983162_e9e43b11_8d19_4c19_a7a6_697c35b810e9.png)
 
 #### 3.5.4 Debugging Serial Port
 
 The carrier board features a single USB Type-C port with 3 x integrated debug serial ports. Install the XR21V1414IM48 driver on your computer, connect the P36 port to the computer, and select the DEBUG\_A debug serial port to start debugging.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254006782-49d781a0-ef15-4d9c-94b9-89901cf326f5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254006782_49d781a0_ef15_4d9c_94b9_89901cf326f5.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254020583-8a72c88c-f00e-4d25-b0d2-38c593475aac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254020583_8a72c88c_f00e_4d25_b0d2_38c593475aac.png)
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
@@ -454,15 +454,15 @@ The carrier board features a single JTAG debugging interface for debugging the x
 
 An RTC device is connected to the carrier board via the I2C\_A bus. It enables a compatible power supply from either VCC\_3V3 or a button cell battery via D10, which ensures the RTC chip remains powered by the battery after the carrier board is powered off. The RX8010SJ chip is used in the default design. Button battery: CR1220.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254044997-9c038867-501e-4d70-99cc-283484ae6c55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254044997_9c038867_501e_4d70_99cc_283484ae6c55.png)
 
 #### 3.5.7 TF Card
 
 The TF card interface on the development board is connected to the CPU’s SDMMC0 channel. Power for the TF card is supplied by the VCC\_3V3\_SD output from the SoM
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254069536-ea19d903-c91a-49dc-8254-dfe76319ed7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254069536_ea19d903_c91a_49dc_8254_dfe76319ed7d.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254084008-6180cd24-a31b-450c-9cdb-67b871a8ade6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254084008_6180cd24_a31b_450c_9cdb_67b871a8ade6.png)
 
 **Note:**
 
@@ -475,7 +475,7 @@ The TF card interface on the development board is connected to the CPU’s SDMMC
 
 There is a USB Type-C port located at P42 on the back of the development board. It utilizes the P/N differential signals from the USB 3.0\_A (pin P19) signal, facilitating connection to a computer for flashing and debugging.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254126695-7276d5d5-4819-4b1f-9343-155533679cdc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254126695_7276d5d5_4819_4b1f_9343_155533679cdc.png)
 
 #### 3.5.9 LVDS Display
 
@@ -483,7 +483,7 @@ The pin header P1 on the development board can be connected to the LVDS display 
 
 It supports 2\*4 lane LVDS connection, and I2C port touch screen.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254145900-f0dc55ed-fa19-45cc-b1fa-589373ae7bee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254145900_f0dc55ed_fa19_45cc_b1fa_589373ae7bee.png)
 
 #### 3.5.10 IO
 
@@ -491,13 +491,13 @@ Pin P4 on the development board is the LCD interface; it is an FPC socket that c
 
 The FET536-UP4 SoM does not feature an LCD; the carrier board is fitted only with a P44 header for I/O testing.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867470-8457f249-94f8-4135-9204-8d23c54d4be8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867470_8457f249_94f8_4135_9204_8d23c54d4be8.png)
 
 #### 3.5.11 MIPI\_DSI
 
 The P11 on the development board is MIPI\_DSI port, supporting 4 Lane MIPI\_DSI.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254177967-5448c2fb-2c98-4c0a-bdba-6009e422d83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254177967_5448c2fb_2c98_4c0a_bdba_6009e422d83b.png)
 
 #### 3.5.12 MIPI\_CSI
 
@@ -507,27 +507,27 @@ P7 and P8 supports 2lane MIPI-CSI connections.
 
 The P6 port supports 4lane MIPI-CSI connection and multiplexes a signal line with the P9 port. The P9 port is used to connect up to four analogue camera modules. It is not possible to use the P6 and P9 ports for both functions simultaneously.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867569-a54b595e-df23-455d-a29b-38d38c20d4f5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867569_a54b595e_df23_455d_a29b_38d38c20d4f5.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254210462-331492ae-f1f8-4792-8155-c3a819a6243f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254210462_331492ae_f1f8_4792_8155_c3a819a6243f.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867651-e54a83b5-bf1b-4ed1-9ed3-085acf5c1e41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867651_e54a83b5_bf1b_4ed1_9ed3_085acf5c1e41.png)
 
 !\[](images\\屏幕截图 2025-02-12 163045.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867756-96a02b42-8f78-4b97-b35c-d35109f16054.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867756_96a02b42_8f78_4b97_b35c_d35109f16054.png)
 
 #### 3.5.13 WIFI\&BT
 
 The development board comes with an integrated Wi-Fi \& Bluetooth module, model number AW-CM358SM. The Wi-Fi module utilizes an SDIO interface, supports dual-band operation in 2.4GHz and 5GHz, and complies with IEEE 802.11a/b/g/n/ac standards. The Bluetooth module uses UART \& PCM interfaces and complies with Bluetooth 5.2 specifications. P10 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867853-1fe8908d-a2f8-4840-afad-ff9402ca1c77.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867853_1fe8908d_a2f8_4840_afad_ff9402ca1c77.png)
 
 #### 3.5.14 USB2.0
 
 There is an onboard USB 2.0 HUB on the development board, which is expanded to two downstream USB HOST ports, connecting a standard USB 2.0-A interface and a mini-PCIE interface. The mini-PCIE interface can connect the 4G module.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252867945-aed02f3e-ef74-4a8b-8e2a-ccb3f635aa51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252867945_aed02f3e_ef74_4a8b_8e2a_ccb3f635aa51.png)
 
 #### 3.5.15 4G
 
@@ -537,27 +537,27 @@ P20 is a nanoSIM card slot, which is self-ejecting. Pay attention to the inserti
 
 Before using the 4G function, please power off the board, install the 4G module, the SIM card, and the 4G ipex jumper from the module to the board P15, so that the antenna can be externally connected through the SMA interface of P16.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254247390-33295960-fc97-4e44-8654-959235a94c5c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254247390_33295960_fc97_4e44_8654_959235a94c5c.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254259676-a7ca5ba6-e813-4c0c-9584-9206ff8cd757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254259676_a7ca5ba6_e813_4c0c_9584_9206ff8cd757.png)
 
 #### 3.5.16 USB3.0
 
 The development board features an onboard USB 3.0 interface, which is the native USB 3.0 from the SoM. A standard USB 3.0 Type-A interface is connected on the development board. Port A supports OTG, controlled by the DIP switch S3: OFF for Device mode, ON for Host mode.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868034-edf282e9-94b8-4f19-9eac-cc297a2be0d4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868034_edf282e9_94b8_4f19_9eac_cc297a2be0d4.png)
 
 #### 3.5.17 Ethernet
 
 The development board supports two native 1000m network ports, which are realized by using the RGMII of the SoM and the YT8521SH chip, and can be connected to the external network equipment through the standard RJ45 socket with a network transformer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868123-a24da481-d3a3-46fb-a76f-1a9447b4603f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868123_a24da481_d3a3_46fb_a76f_1a9447b4603f.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868241-841b3029-aec1-4f76-aefb-4d6f261c0668.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868241_841b3029_aec1_4f76_aefb_4d6f261c0668.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868361-117c7038-9c43-421a-a1df-bcbb2d0500d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868361_117c7038_9c43_421a_a1df_bcbb2d0500d2.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868480-134619c2-39e9-4be6-8c59-c26ab58ce133.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868480_134619c2_39e9_4be6_8c59_c26ab58ce133.png)
 
 #### 3.5.18 CAN
 
@@ -565,7 +565,7 @@ The development board features the native CAN0 and CAN1 pins to provide two stan
 
 The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868558-a9da9d42-349d-4c5c-b6f3-10c308292160.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868558_a9da9d42_349d_4c5c_b6f3_10c308292160.png)
 
 #### 3.5.19 485
 
@@ -573,45 +573,45 @@ The CAN signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm ter
 
 The 485 signal is routed via green terminals with a 3.81 mm pitch; a 120-ohm terminating resistor is installed using a jumper cap.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868645-9b812926-2eb0-4d77-a26c-06ef825932ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868645_9b812926_2eb0_4d77_a26c_06ef825932ea.png)
 
 #### 3.5.20 GPADC
 
 The GPADC is connected via 2.54 mm pitch pins. It can be connected directly using DuPont wires via a potentiometer. The SoM features a total of 3 x GPADC, with a maximum sampling voltage of 1.8 V.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254282972-d0248c8b-4ea8-4182-8c03-cd72140ca90f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254282972_d0248c8b_4ea8_4182_8c03_cd72140ca90f.png)
 
 #### 3.5.21 UART
 
 1 x five-wire UART is routed from the development board and powered by a 3.3V signal.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254309358-cc301602-5cf3-47b1-9ff8-42bd22635ea3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254309358_cc301602_5cf3_47b1_9ff8_42bd22635ea3.png)
 
 #### 3.5.22 SPI
 
 A five-wire SPI interface is led out from the SoM (5V power supply).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868762-c8fc5602-420b-4db6-bf75-402efb6f698a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868762_c8fc5602_420b_4db6_bf75_402efb6f698a.png)
 
 #### 3.5.23 IO Expansion
 
 An IO expansion chip is led out from the development board via I2C. 24 additional I/O pins can be expanded for expanding control signals and resetting signals.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784254328697-f0f5789d-7a10-4877-9098-a6b156c04cac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784254328697_f0f5789d_7a10_4877_9098_a6b156c04cac.png)
 
 #### 3.5.24 Audio
 
 A single I2S signal is routed from the carrier board to the NAU88C22YG CODEC chip, which provides a standard 3.5mm headphone jack and separate left and right channel amplifiers.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868871-78efe5db-0ec8-4caf-88ea-f0f0ea5b4b1f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868871_78efe5db_0ec8_4caf_88ea_f0f0ea5b4b1f.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252868960-fd4c7977-d294-4d32-8aaf-230e414f7f5a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252868960_fd4c7977_d294_4d32_8aaf_230e414f7f5a.png)
 
 ## 4\. Package Dimensions Diagram
 
 Package: LCC+LGA
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252871281-08346fa8-a834-4d38-893e-9bce9e6098ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252871281_08346fa8_a834_4d38_893e_9bce9e6098ec.png)
 
 To ensure soldering yield, please refer to the following specifications for stencil design:
 
@@ -623,7 +623,7 @@ LCC Pad Aperture: The opening width should be 0.6mm, and the length should exten
 
 Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support bridge at the center. Square LGA pads: Openings with dimensions of 0.83mm × 0.83mm.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252871403-b152697f-45c3-4a8e-b99b-2bfadc842287.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252871403_b152697f_45c3_4a8e_b99b_2bfadc842287.png)
 
 ![](1784252871523-549cb84f-ea3d-4583-97e7-4496754b6726.png)
 
@@ -659,16 +659,16 @@ Circular LGA pads: Openings with a diameter of 0.85mm, with a 0.2mm-wide support
 
 **It has SoM, power, debug serial port, system image flashing port.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252875017-7b14cc7f-c4c3-47de-95d9-7d09e0d650eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875017_7b14cc7f_c4c3_47de_95d9_7d09e0d650eb.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252875260-d8a88b15-6839-48b6-8f4e-bbf4f4cb1e79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875260_d8a88b15_6839_48b6_8f4e_bbf4f4cb1e79.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252875401-09ba4876-847b-4d60-a415-c9230b20384d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875401_09ba4876_847b_4d60_a415_c9230b20384d.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252875531-f0385dad-deaf-4d6d-bd95-9290a1cde85e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875531_f0385dad_deaf_4d6d_bd95_9290a1cde85e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252875725-1a4a7772-99a6-469e-9a47-cc1bcff6f88b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875725_1a4a7772_99a6_469e_9a47_cc1bcff6f88b.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252875802-03503dfd-da2c-42ac-9894-804a25a617e1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_User_Hardware_Manaul/1784252875802_03503dfd_da2c_42ac_9894_804a25a617e1.png)
 
 !\[屏幕截图 2025-02-18 162334](images\\屏幕截图 2025-02-18 162334.png)
