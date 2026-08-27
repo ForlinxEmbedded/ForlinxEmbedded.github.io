@@ -391,7 +391,7 @@ Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/
 
 ### 3.7 WiFi Test
 
-**Note: **
+**Note:**
 
 - **The OK536 carrier board is soldered with the AW-CM358 chip;**
 
