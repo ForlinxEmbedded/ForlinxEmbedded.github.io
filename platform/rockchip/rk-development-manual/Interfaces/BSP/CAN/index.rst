@@ -7,7 +7,7 @@ CAN
 .. toctree::
    :maxdepth: 2
 
-   OK3588_ CAN_Issues_Summary
+   OK3588_CAN_Issues_Summary
 
 
 
