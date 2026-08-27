@@ -109,7 +109,7 @@ Hardware preparations before powering on the system:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838551_33321164_a0f3_42d5_961f_ebd9e4ed03f4.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838771-eede658e-7f57-4bd8-873e-05c734eefa03.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838771_eede658e_7f57_4bd8_873e_05c734eefa03.jpg)
 
 **Note: The USB programming port is for programming purposes only; the USB Type-C programming port and the USB 3.0 port cannot be used simultaneously.**
 
