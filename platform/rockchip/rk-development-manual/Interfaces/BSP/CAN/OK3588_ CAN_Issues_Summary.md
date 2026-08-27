@@ -22,7 +22,7 @@ The CAN box sends a data frame with frame ID 701. Upon receiving it, the motor r
 
 On the 3588 side, when receiving data, running `ip -d -s link show can0` shows that dropped packets are occurring.
 
-![Image](1725006701441-5ad4ab29-14b6-437c-a294-af11dddb74db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/1725006701441_5ad4ab29_14b6_437c_a294_af11dddb74db.png)
 
 After a period of time, the debugging serial port enters an unresponsive state.
 
@@ -30,17 +30,17 @@ After stopping the motor, the debugging serial port recovers.
 
 At this time, checking the 3588 status shows high CPU load on a single core.
 
-![Image](1725006688112-044bea4b-e1e3-4f01-b91c-3afcce494f60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/1725006688112_044bea4b_e1e3_4f01_b91c_3afcce494f60.png)
 
 Observing the system interrupts reveals a sharp increase in CAN-triggered interrupt counts, increasing by hundreds of thousands.
 
-![Image](1725006739469-8685a8ce-c95c-4411-a27d-7398a4c47332-1787810516965.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/1725006739469_8685a8ce_c95c_4411_a27d_7398a4c47332_1787810516965.png)
 
 Checking the CAN register status shows `fifo_overflow`.
 
-![Image](1725006786129-bd120d49-6575-4e4e-ad58-5df809f6b94c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/1725006786129_bd120d49_6575_4e4e_ad58_5df809f6b94c.png)
 
-![Image](1725006794447-b997502b-5a56-4f63-9efc-1a2e47046eaa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/1725006794447_b997502b_5a56_4f63_9efc_1a2e47046eaa.png)
 
 System-level packet dropping and frequent interrupts lead to system lag or even freezing.
 
