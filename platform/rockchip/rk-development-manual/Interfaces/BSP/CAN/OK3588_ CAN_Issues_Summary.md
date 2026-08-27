@@ -22,7 +22,7 @@ The CAN box sends a data frame with frame ID 701. Upon receiving it, the motor r
 
 On the 3588 side, when receiving data, running `ip -d -s link show can0` shows that dropped packets are occurring.
 
-![](images/1731900868_20326.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1725006701441-5ad4ab29-14b6-437c-a294-af11dddb74db.png)
 
 After a period of time, the debugging serial port enters an unresponsive state.
 
@@ -30,17 +30,17 @@ After stopping the motor, the debugging serial port recovers.
 
 At this time, checking the 3588 status shows high CPU load on a single core.
 
-![](images/1731900868_20327.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1725006688112-044bea4b-e1e3-4f01-b91c-3afcce494f60.png)
 
 Observing the system interrupts reveals a sharp increase in CAN-triggered interrupt counts, increasing by hundreds of thousands.
 
-![](images/1731900868_20328.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1725006739469-8685a8ce-c95c-4411-a27d-7398a4c47332.png)
 
 Checking the CAN register status shows `fifo_overflow`.
 
-![](images/1731900868_20329.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1725006786129-bd120d49-6575-4e4e-ad58-5df809f6b94c.png)
 
-![](images/1731900868_20330.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1725006794447-b997502b-5a56-4f63-9efc-1a2e47046eaa.png)
 
 System-level packet dropping and frequent interrupts lead to system lag or even freezing.
 
