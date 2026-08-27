@@ -60,7 +60,7 @@ This software manual is applicable to the OK536-UP4 platform with Linux5.10.198 
 
 The OK536-UP4 development board features an SoM + carrier board design built around the Allwinner T536 processor. Operating at 1.6GHz, it integrates a quad-core Cortex-A55 CPU and a 64-bit XuanTie E907 RISC-V MCU for efficient computing. Key features include a 2TOPS NPU, support for secure boot, national cryptographic algorithms, ECC, AMP, Linux RT, and a wide range of interfaces such as USB, Ethernet, CAN, SPI, and UART.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252836912-ef6c6dff-ebac-431d-a270-aa952215797a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252836912_ef6c6dff_ebac_431d_a270_aa952215797a.png)
 
 **Note: Hardware specifications are not covered in this software manual. Before development, please refer to the “ User’s Hardware Manual” to understand the product naming and hardware configuration.**
 
@@ -107,7 +107,7 @@ Hardware preparations before powering on the system:
 + Display screen — connect the screen according to the development board interface (optional if display is not needed)
 + Check the boot mode (if a TF card is inserted, the system will boot from the TF card by default; otherwise, it will boot from eMMC).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252838551-33321164-a0f3-42d5-961f-ebd9e4ed03f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838551_33321164_a0f3_42d5_961f_ebd9e4ed03f4.png)
 
 ![](1784252838771-eede658e-7f57-4bd8-873e-05c734eefa03.jpg)
 
@@ -130,11 +130,11 @@ Connect the development board and PC using a serial cable. Confirm the serial po
 
 The actual serial port number recognized by the computer shall prevail. Select the accurate one.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/okt507-c/OKT507-C_Linux4_9_170_User_Manual/1718935012349_1fcdd0a3_ea02_4f0a_9d28_2b6b5407c1cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935012349_1fcdd0a3_ea02_4f0a_9d28_2b6b5407c1cf.png)
 
 Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982135169-a60ff1ca-f20f-4365-b8e8-483fe05cecc0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982135169_a60ff1ca_f20f_4365_b8e8_483fe05cecc0.png)
 
 Power on and log in: Turn on the development board. 
 
@@ -162,13 +162,13 @@ Connect the eth0 of the development board to the computer via a network cable, p
 
 After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252838931-0a7725da-ccff-4a2f-8079-8eeb6f16ffc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838931_0a7725da_ccff_4a2f_8079_8eeb6f16ffc9.png)
 
 Disable the computer firewall.
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version);
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852798819-2b9890db-2900-46fd-bb1d-34fb7ffc3c35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718852798819_2b9890db_2900_46fd_bb1d_34fb7ffc3c35.png)
 
 Open Command Prompt as administrator.
 
@@ -186,11 +186,11 @@ Data is returned, indicating that the network connection is normal.
 - **The default IP address for the eth0 interface is 192.168.0.232;**
 - **You can use the scp command for file transfers.**
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852828220-846ff8b1-62c5-46ac-9e26-8600a5dce468.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718852828220_846ff8b1_62c5_46ac_9e26_8600a5dce468.png)
 
 After clicking “Open”, a dialog box will appear. Click “Yes” to proceed to the login interface.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718852834871-326d584b-b5d2-47ff-a6bc-2f4c325934fc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718852834871_326d584b_b5d2_47ff_a6bc_2f4c325934fc.png)
 
 ```bash
 Login as：root
@@ -292,11 +292,11 @@ This section mainly explains the usage of the development board’s extended int
 
 After the OK536 development board starts up, the desktop is displayed as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842180-2f0a340d-d16c-45a7-99b2-83c7c01ddd5f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842180_2f0a340d_d16c_45a7_99b2_83c7c01ddd5f.png)
 
 Click the arrow in the upper right corner to go to the next page.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842336-ccefd85c-a22d-4a3a-b8c3-d76e2087524d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842336_ccefd85c_a22d_4a3a_b8c3_d76e2087524d.png)
 
 ### 3.2 Network Configuration Test
 
@@ -306,7 +306,7 @@ Click the arrow in the upper right corner to go to the next page.
 
 - **The set IP and other information will be saved to the system’s relevant configuration file (/etc/network/interfaces), so each reboot will use the network information set this time.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252840766-c633e545-b3c1-4983-b724-3ffd345f860b.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252840766_c633e545_b3c1_4983_b724_3ffd345f860b.png)
 
 Click the network configuration icon to enter the interface program, supporting both STATIC and DHCP modes.
 
@@ -322,33 +322,33 @@ Click the network configuration icon, select STATIC, as shown below: You can con
 | Gateway| Set gateway|
 | DNS| Set DNS|
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842412-cee10d97-bcd2-4c0c-a377-4d1eef4dc7e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842412_cee10d97_bcd2_4c0c_a377_4d1eef4dc7e0.png)
 
 ### 3.3 Browser Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252840864-62a8e4cc-4556-48ee-9dcc-aabe7eddce96.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252840864_62a8e4cc_4556_48ee_9dcc_aabe7eddce96.png)
 
 Click the browser icon to enter the browser. Ensure the network is smooth during use, and ensure DNS is available before accessing external networks. The browser defaults to accessing the Forlinx Embedded official website upon startup, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842497-5cd4694c-0ec2-4522-a03d-c58be0ec5a5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842497_5cd4694c_0ec2_4522_a03d_c58be0ec5a5b.png)
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues.**
 
 ### 3.4 4G Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252840988-64806e29-1f24-4e58-847c-b52d6948be1d.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252840988_64806e29_1f24_4e58_847c_b52d6948be1d.png)
 
 The “4G” test program is used to test the OK536-UP4 external 4G module (EC20). Before testing, power off the development board, switch DIP switch A to ON, connect the 4G module, insert the SIM card (pay attention to the SIM card direction), start the development board, and open the test application. This test uses EC20 as an example:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982136692-13b4f03c-982b-439b-a028-8c0c0197757b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982136692_13b4f03c_982b_439b_a028_8c0c0197757b.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842599-fc3f105b-cab8-462d-b59f-20af4fd09056.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842599_fc3f105b_cab8_462d_b59f_20af4fd09056.png)
 
 Click the start button, and the program will automatically enter the dial-up process and obtain IP, set DNS, etc. Wait patiently for a few seconds.
 
 ### 3.5 485 \& UART Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841117-a729595e-6377-49ab-925e-2ccd0ab4622f.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841117_a729595e_6377_49ab_925e_2ccd0ab4622f.png)
 
 This test uses UART6 (ttyAS6) and performs a serial port test with the serialTool.
 
@@ -356,7 +356,7 @@ This test uses UART6 (ttyAS6) and performs a serial port test with the serialToo
 
 Click the Terminal test icon to enter the following interface and set serial port parameters:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853168898-b3b1fca6-41b1-447b-a0ae-4082f1f75014.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853168898_b3b1fca6_41b1_447b_a0ae_4082f1f75014.png)
 
 Click the settings button in the upper left corner and set the serial port parameters to be consistent with the computer-side serial port tool parameters, as shown below:
 
@@ -369,25 +369,25 @@ Click the settings button in the upper left corner and set the serial port param
 | Stop bits| Set stop bits (1 bit)|
 | Flow control| Set flow control (no flow control)|
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842679-46d308a5-ad2e-41f4-94df-5629786d8559.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842679_46d308a5_ad2e_41f4_94df_5629786d8559.png)
 
 After setting the serial port parameters, click the connect button in the upper left corner. At this point, the test program can perform data transmission and receiving tests;
 
 Open the serial port tool on the computer, click on the black screen area in the test interface to pop up the soft keyboard, input characters and press Enter. The screen will then display the data received by the serial port.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842759-d28b8a11-0549-452c-a7ef-a9043bf61812.png)![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842866-d1eac5a8-caaf-45ac-a262-eeabd0f1a142.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842759_d28b8a11_0549_452c_a7ef_a9043bf61812.png)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842866_d1eac5a8_caaf_45ac_a262_eeabd0f1a142.png)
 
 In the serialTool send box, input the content to send, click send, and the test interface will display the received content.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842990-5cbc0873-c779-469d-95bd-7eca5290fa00.png)![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843093-b29a33a0-72fa-4c9a-9d12-be1bfbc75926.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842990_5cbc0873_c779_469d_95bd_7eca5290fa00.png)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843093_b29a33a0_72fa_4c9a_9d12_be1bfbc75926.png)
 
 ### 3.6 ADC Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841227-c3185b59-8a77-40cb-8ec7-bb951606163d.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841227_c3185b59_8a77_40cb_8ec7_bb951606163d.png)
 
 14 x GPADC are led out from the OK536 carrier board. All channels are floating by default. Short the corresponding pins to measure the potentiometer value. The maximum value 4096 corresponds to a voltage of 1.8V.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843267-4b5be179-2dee-418b-8d9d-6f48bc76a63a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843267_4b5be179_2dee_418b_8d9d_6f48bc76a63a.png)
 
 ### 3.7 WiFi Test
 
@@ -397,43 +397,43 @@ Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841227-c3185b59-
 
 - **“WIFI” is a tool for configuring WiFi and can test the STA mode of WiFi.**
 
-Click the icon![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841362-fbbc09af-8101-4bb6-94d6-e006a4974757.png)to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field, enter the router password in the PASSWORD field, and click "Connect" to connect to the router via WiFi.
+Click the icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841362_fbbc09af_8101_4bb6_94d6_e006a4974757.png)to enter the test interface, select the corresponding module from the drop-down menu, enter the router name to be connected via WiFi in the SSID field, enter the router password in the PASSWORD field, and click "Connect" to connect to the router via WiFi.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843396-b5a9bbe3-3546-419f-b860-4f0c433e218b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843396_b5a9bbe3_3546_419f_b860_4f0c433e218b.png)
 
 After a successful connection, set the IP and then click “ping” to perform a network test.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843545-ca377f38-dda0-463b-bf42-463f233e8173.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843545_ca377f38_dda0_463b_bf42_463f233e8173.png)
 
 ### 3.8 RTC Test
 
 **Note: Ensure that a button battery is installed on the board and the battery voltage is normal.**
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841487-e8d9a187-e824-4393-8018-228bbaa495e9.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841487_e8d9a187_e824_4393_8018_228bbaa495e9.png)
 
 To test the RTC, configure the time via the test software, power cycle the device, and then re-run the software to confirm RTC synchronization.
 
 Run the RTC test software to view and set the current system time, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843692-d8024eff-9a76-4a13-905a-179dfe1a4319.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843692_d8024eff_9a76_4a13_905a_179dfe1a4319.png)
 
 ### 3.9 Key Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841571-d56aa9c5-2ec6-435c-8f49-9687dc5a274b.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841571_d56aa9c5_2ec6_435c_8f49_9687dc5a274b.png)
 
 The “Keypad” is used to test the functionality of the built-in keys by verifying whether the corresponding key turns blue when pressed. The interface is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843792-ff3b970a-5fc1-4895-9a2a-4a1f2d4a1b27.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843792_ff3b970a_5fc1_4895_9a2a_4a1f2d4a1b27.png)
 
 There are four physical keys KEY1, KEY2, KEY3, KEY4 on the side of the OK536 carrier board. When a key is pressed, the corresponding key in the test application will turn blue, indicating the key functions normally.
 
 ### 3.10 Watchdog Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841719-5cfdc508-eedc-4e31-b2bf-d3920606968c.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841719_5cfdc508_eedc_4e31_b2bf_d3920606968c.png)
 
 “WatchDog” is an application used to test whether the watchdog function is normal. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252843886-b5a6d16b-bda6-4561-9238-b716e9425c25.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252843886_b5a6d16b_bda6_4561_9238_b716e9425c25.png)
 
 Check “feed dog”, click the “open watchdog” button, and the watchdog function will be started. The program will perform dog feeding operations, and normally the system will not reboot.
 
@@ -441,35 +441,35 @@ Uncheck “feed dog”, click the “open watchdog” button, and the watchdog f
 
 ### 3.11 Ping Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853354578-726b52d8-008b-46fa-984a-6b28b5c2037b.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853354578_726b52d8_008b_46fa_984a_6b28b5c2037b.png)
 
 “Ping” is an interface version of the commonly used network test command ping. The interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853360248-4e364094-3548-4ccd-ad5a-a645e0618579.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853360248_4e364094_3548_4ccd_ad5a_a645e0618579.png)
 
 In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.
 
 As shown in the figure, it indicates the network between them is smooth.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853366769-58cb2cca-95e5-4cf7-8502-e6511b2e3e2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853366769_58cb2cca_95e5_4cf7_8502_e6511b2e3e2d.png)
 
 ### 3.12 Backlight Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841859-ef4a42b2-a2dd-4721-8492-2ebb074d8fb3.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841859_ef4a42b2_a2dd_4721_8492_2ebb074d8fb3.png)
 
 “BackLight” is an LCD backlight adjustment application. Adjust the progress bar left and right to adjust the backlight brightness. After opening, the interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252844135-feed395b-8018-4b6b-90f1-45c2d45335e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252844135_feed395b_8018_4b6b_90f1_45c2d45335e2.png)
 
 Drag the slider in the interface to set the LCD backlight brightness. 1 is the dimmest, 255 is the brightest. 0 needs to be set via the command line. Refer to “4.21 LCD Backlight Adjustment”.
 
 ### 3.13 Music Playback Test
 
-Use the application icon “ ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252841958-a44a0fcd-f45a-4e11-b98c-184ad6053b89.png) ” to test music playback.
+Use the application icon “ ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252841958_a44a0fcd_f45a_4e11_b98c_184ad6053b89.png) ” to test music playback.
 
 “musicplayer” is a simple audio test application that can be used to test whether the sound card functions normally and also serves as a simple audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853468214-c3aa49a4-25fd-4931-97e6-52a27aae6cb2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853468214_c3aa49a4_25fd_4931_97e6_52a27aae6cb2.png)
 
 Application Interface
 
@@ -479,13 +479,13 @@ Click the button in the lower left corner and select the test audio /forlinx/aud
 
 The OK536 cpu0-cpu3 maximum main frequency is 1.6GHz. By default, the CPU dynamically adjusts the main frequency according to load, but it can also be set to a fixed CPU main frequency.
 
-Click the desktop settings icon![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853483156-0250fdcf-60f4-4065-b5fc-babdd8f886c2.png)to enter the next-level menu:
+Click the desktop settings icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853483156_0250fdcf_60f4_4065_b5fc_babdd8f886c2.png)to enter the next-level menu:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982137418-51c56481-54fa-4894-9827-f050b6567234.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982137418_51c56481_54fa_4894_9827_f050b6567234.png)
 
-Click the icon![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853495816-aa3a65e6-63a7-49a6-8445-db7d202ae3c5.png)to enter the CPU main frequency setting page.
+Click the icon![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853495816_aa3a65e6_63a7_49a6_8445_db7d202ae3c5.png)to enter the CPU main frequency setting page.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982137590-8a0a6a92-befd-499a-980b-3085ace10aa9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982137590_8a0a6a92_befd_499a_980b_3085ace10aa9.png)
 
 Set OnDemand Governor：Dynamically adjust the main clock on demand.
 
@@ -495,31 +495,31 @@ Set Frequency CPU0-3：Set the small core main frequency.
 
 Take setting the small core frequency as an example: First click “Set Userspace Governor”, click “RUN” in the pop-up dialog,
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853509090-50711674-801f-456a-a2d4-59f3c8a571ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853509090_50711674_801f_456a_a2d4_59f3c8a571ef.png)
 
 then click “Set Frequency CPU0-3” to set a fixed frequency. (Click the arrow in the upper right corner to return to the previous directory, click the icon in the upper right corner to return to the main directory).
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982137678-739ad9ec-8045-4ff6-bd0d-22c991f7f235.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982137678_739ad9ec_8045_4ff6_bd0d_22c991f7f235.png)
 
 Select the corresponding frequency according to needs for setting.
 
 ### 3.15 SQLite3 Data Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718853565604-5f62ec21-046b-4fa6-be63-59dfac10abb2.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718853565604_5f62ec21_046b_4fa6_be63_59dfac10abb2.png)
 
 Click the icon to enter the database test interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252844388-a31bc7da-80ee-4089-b218-5a74b4b19628.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252844388_a31bc7da_80ee_4089_b218_5a74b4b19628.png)
 
 Select the row that needs to be modified, and you can modify the value of each column.
 
 ### 3.16 SPI Test
 
-Icon:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252842046-6c05b563-b08b-435a-970b-c5b400a331df.png)
+Icon:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252842046_6c05b563_b08b_435a_970b_c5b400a331df.png)
 
 Click the icon to access the SPI test interface, select the device, short-circuit the MOSI and MISO pins, and click “Send” at the bottom to receive the transmitted data, thereby completing the test.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784252844539-f2ab95fd-dd81-4b9f-b3a0-7acc63a94f95.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252844539_f2ab95fd_dd81_4b9f_b3a0_7acc63a94f95.png)
 
 ## 4\. OK536-UP4 Command Line Function Test
 
@@ -734,9 +734,9 @@ This test uses 485\_0 and 485\_1 for loopback testing. Connect 485\_A0 to 485\_A
 
 **Note:** **UART testing is similar to that of RS-485: the RX and TX pins are connected to other TTL serial ports, and commands are used to read and write data.**
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139276-e591d53c-0552-43f4-bab2-11f49cc5a3ac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982139276_e591d53c_0552_43f4_bab2_11f49cc5a3ac.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633247608-7a937b69-9224-4808-9fc2-8b8dbd2f5ab8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633247608_7a937b69_9224_4808_9fc2_8b8dbd2f5ab8.png)
 
 Enter the following command in the development board serial port:
 
@@ -754,9 +754,9 @@ root@OK536:/#
 
 Three GPADC are routed out from the development board, with a voltage sampling range of 0–1.8 V. The sampling voltage is adjusted via the R357 potentiometer:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633247718-97d27536-3344-497a-9126-4a6683dc9e72.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633247718_97d27536_3344_497a_9126_4a6683dc9e72.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633247827-23cfad93-9ed6-44be-8573-e10de324f04e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633247827_23cfad93_9ed6_44be_8573_e10de324f04e.png)
 
 Taking GPADC\_A as an example, short-circuit pins 1 and 6 on P34, run “fltest\_adc”, enter 2, and read the event from “/dev/input/event2”, which corresponds to channel 7 of GPADC1.
 
@@ -893,7 +893,7 @@ root@OK536:/# dd if=/root/data.img of=/dev/null bs=1M count=500 iflag=direct
 
 The OK536 supports one USB 2.0 port and one USB 3.0 port.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633247930-9c63b678-200d-4b0a-9a60-52c55041d9a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633247930_9c63b678_200d_4b0a_9a60_52c55041d9a1.png)
 
 After booting the development board, connect a USB drive to the USB host interface on the board.
 
@@ -1043,7 +1043,7 @@ Run the following command in server mode using iperf3 in the Windows Command Pro
 D:\iperf-3.1.3-win64\iperf-3.1.3-win64>iperf3.exe -s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854539950-06c8eebd-c99a-4250-9310-1b437aaa0257.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718854539950_06c8eebd_c99a_4250_9310_1b437aaa0257.png)
 
 The IP address of eth0 on the development board is 192.168.1.11, and the IP address of the Windows computer is 192.168.1.39. Enter the following in the OK536 serial debugging terminal:
 
@@ -1102,7 +1102,7 @@ root@OK536:/#
 
 The OK536-UP4 development board comes pre-installed with a lighttpd web server, and the service starts automatically at system boot. Enter the development board’s IP address in a browser to access the web pages on the board’s web server, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633248046-3a081a6c-c544-40ee-89d5-396950320675.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633248046_3a081a6c_c544_40ee_89d5_396950320675.png)
 
 #### 4.13.2 SFTP
 
@@ -1114,9 +1114,9 @@ Install the FileZilla tool on Windows and configure it by following the steps sh
 
 Open the filezilla tool, click File, and select Site Manager.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982139684-53a653a8-0e6e-498b-96c9-9ce4dadb42fc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982139684_53a653a8_0e6e_498b_96c9_9ce4dadb42fc.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854578304-c6b101f0-d6c3-4756-91c1-fe5ae9b55718.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718854578304_c6b101f0_d6c3_4756_91c1_fe5ae9b55718.png)
 
 After successful login, upload and download operations can be performed.
 
@@ -1427,7 +1427,7 @@ root@OK536:/# vi /autorun.sh
 
 Modify the file reference as follows (users need to modify according to their actual situation):
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854651415-ad525e3b-3519-432f-ad11-78ebde105f37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718854651415_ad525e3b_3519_432f_ad11_78ebde105f37.png)
 
 After modification, save and exit, then add execution permission to the script;
 
@@ -1449,7 +1449,7 @@ Enter the OK536-linux-sdk source code package, and create an autorun.sh file at 
 
 Content format reference as follows; please modify according to your actual needs:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854671764-11a6e703-7780-404e-9e7f-1a2c5189ef6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718854671764_11a6e703_7780_404e_9e7f_1a2c5189ef6c.png)
 
 Use the chmod +x autorun.sh command to add execution permission to the file.
 
@@ -1562,7 +1562,7 @@ There are 2 x CANFD, which are led out to the P23 socket.
 
 Short-circuit H, L, and GND of can0 and can1 respectively to perform the test.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633248187-81217fcf-c049-441d-99bf-4870e27ed397.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633248187_81217fcf_c049_441d_99bf_4870e27ed397.png)
 
 CAN FD Testing
 
@@ -1623,7 +1623,7 @@ root@OK536:~# cangen can0
 
 There is a spi2, spi3 led out from the carrier board, which is on the P32, P31 terminal.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633248303-c809425e-0330-4813-837c-40932f8f4a89.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633248303_c809425e_0330_4813_837c_40932f8f4a89.png)
 
 Short-circuit SPI\_B\_MOSI and SPI\_B\_MISO for testing
 
@@ -1644,7 +1644,7 @@ F0 0D
 
 ### 4.26 GPIO Test
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778633248426-a3f9489f-3d8c-476f-adbd-06467cc3dc4d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1778633248426_a3f9489f_3d8c_476f_adbd_06467cc3dc4d.png)
 
 Taking PB14 as an example, the GPIO number is (A-1)\*32+nr, where A is 2 and nr is 14, so the number is 46.
 
@@ -1700,7 +1700,7 @@ Board Passive Pairing (Standard pairing process).
 
 After the above settings, open your computer and search for Bluetooth. Click "Add Bluetooth or Other Devices", and a device named "OKT536" will appear. Click on this Bluetooth to attempt pairing,
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718854751055-40b40021-d9a9-4094-a8da-bf3e33ded013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718854751055_40b40021_d9a9_4094_a8da_bf3e33ded013.png)
 
 The print information on the development board is as follows. Enter "yes":
 
@@ -1767,23 +1767,23 @@ After successful pairing, on the computer side, you can use Bluetooth to send fi
 
 Click "Send or receive files via Bluetooth".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855264803-546e43f0-8bac-4568-9251-aba4739cd77a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718855264803_546e43f0_8bac_4568_9251_aba4739cd77a.png)
 
 Select OKT536.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140260-7f89d98d-82a7-464c-b328-18e97ba98a52.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140260_7f89d98d_82a7_464c_b328_18e97ba98a52.png)
 
 Select the file to send.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855311685-52169b3c-eae7-4cc7-a967-26ba5922d0b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718855311685_52169b3c_eae7_4cc7_a967_26ba5922d0b9.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140350-8a62ea19-d472-481d-a0ab-d284ff619e82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140350_8a62ea19_d472_481d_a0ab_d284ff619e82.png)
 
 Waiting for sending to complete.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140429-033ffbeb-be28-4029-8db6-737940fc7ab0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140429_033ffbeb_be28_4029_8db6_737940fc7ab0.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140512-02fd3af9-a0ab-4209-89b7-a56ee0173727.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140512_02fd3af9_a0ab_4209_89b7_a56ee0173727.png)
 
 The received file is saved in the /tmp directory.
 
@@ -1795,7 +1795,7 @@ The test method is as follows:
 
 Select "Receive File" on the computer side.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718855360798-c018e7d4-f48b-4af9-86da-3b6f4e6741df.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718855360798_c018e7d4_f48b_4af9_86da_3b6f4e6741df.png)
 
 ```bash
 root@OK536:~# bluetoothctl 
@@ -1890,11 +1890,11 @@ awnn_uninit total: 0.55 ms.
 
 Test picture:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140593-2448a137-4b4c-43f8-9d9c-0ef712809e52.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140593_2448a137_4b4c_43f8_9d9c_0ef712809e52.png)
 
 Output picture:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140695-2a281494-abdc-4520-97b5-7d6458b13625.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140695_2a281494_abdc_4520_97b5_7d6458b13625.png)
 
 ### 4.29 G2D Test
 
@@ -1949,11 +1949,11 @@ DEBUG  : ionAlloc <ion_alloc_palloc_base:426>: alloc succeed, addr_phy: 0xfec000
 
 Before rotation:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140781-93d8e2c5-ca64-452f-924c-746fcd5c733d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140781_93d8e2c5_ca64_452f_924c_746fcd5c733d.png)
 
 After rotation:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740982140876-674a5ae5-48da-4b85-93d8-2e728932f490.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1740982140876_674a5ae5_48da_4b85_93d8_2e728932f490.png)
 
 ### 4.30 Sleep Wakeup
 
@@ -2158,11 +2158,11 @@ Connect the development board to the host computer using a Type-C cable. First, 
 
 Open the Windows Device Manager and you will find an unknown device with a yellow exclamation mark. Select "Manually install driver", right-click on the unknown device, and choose "Update driver"
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865053037-e5f86fbc-1486-4659-92bb-e76cd757b12d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718865053037_e5f86fbc_1486_4659_92bb_e76cd757b12d.png)
 
 After selecting "Browse my computer to find the driver", choose the unzipped PhoenixSuit\_v1.13 directory.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865068116-92a779fe-a126-4e2b-b070-bcac89d74dca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718865068116_92a779fe_a126_4e2b_b070_bcac89d74dca.png)
 
 After driver installation, run PhoenixSuit.exe. The bottom-left should show “Device connected successfully”.
 
@@ -2242,7 +2242,7 @@ Connect the development board to the host computer using a Type-A to Type-C cabl
 
 After following the manual to install the USB driver, some users still see an "Unknown device" in Device Manager. When expanding the "Unknown device" details, a message appears indicating that the third-party INF does not contain digital signature information, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45383109/1718865268647-add5cacc-0f39-44ca-9e28-1a9e532154e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718865268647_add5cacc_0f39_44ca_9e28_1a9e532154e2.png)
 
 This issue occurs because some Windows systems, in order to prevent third-party programs from affecting system stability, block unsigned drivers from passing verification, causing the driver installation to fail. First disable the driver signature enforcement setting on the computer, and then proceed with the driver installation according to the manual.
 
