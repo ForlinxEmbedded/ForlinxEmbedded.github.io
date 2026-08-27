@@ -109,7 +109,7 @@ Hardware preparations before powering on the system:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838551_33321164_a0f3_42d5_961f_ebd9e4ed03f4.png)
 
-![](1784252838771-eede658e-7f57-4bd8-873e-05c734eefa03.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1784252838771-eede658e-7f57-4bd8-873e-05c734eefa03.jpg)
 
 **Note: The USB programming port is for programming purposes only; the USB Type-C programming port and the USB 3.0 port cannot be used simultaneously.**
 
@@ -176,7 +176,7 @@ Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt a
 
 Data is returned, indicating that the network connection is normal.
 
-![Image](1718935014219_df6ce18d_c48c_4523_9da8_acfde731ca79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935014219_df6ce18d_c48c_4523_9da8_acfde731ca79.png)
 
 #### 2.3.2 SSH Server
 
@@ -2166,7 +2166,7 @@ After selecting "Browse my computer to find the driver", choose the unzipped Pho
 
 After driver installation, run PhoenixSuit.exe. The bottom-left should show “Device connected successfully”.
 
-![Image](48ee2faa0d544b98b7f5b783cbf42f3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/48ee2faa0d544b98b7f5b783cbf42f3e.png)
 
 #### 6.2.2 OTG Flashing Methods
 
@@ -2176,7 +2176,7 @@ This programming method will program the entire img image.
 
 In the following interface, click "One-click Flash" and then click "Browse" to select the firmware image file.
 
-![Image](1718935088043_6a8b05fe_2a04_4b8c_841d_724e21516230.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935088043_6a8b05fe_2a04_4b8c_841d_724e21516230.png)
 
 Connect the development board to the host computer using a Type-A to Type-C cable. Do not power on the board initially; press the USBLOAD button, then power on the board, and finally release the USBLOAD button.
 
@@ -2184,11 +2184,11 @@ Connect the development board to the host computer using a Type-A to Type-C cabl
 
 In the following interface, click "Yes" to enter the formatting upgrade mode:
 
-![Image](1718935088505_c2f0cd0f_f916_43f4_b0e3_41ecd63a8ec8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935088505_c2f0cd0f_f916_43f4_b0e3_41ecd63a8ec8.png)
 
 Wait for the programming to complete. Then, the following interface will pop up:
 
-![Image](1718935088877_e646a29f_5003_4bc9_a308_d9ceb66b3ab3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935088877_e646a29f_5003_4bc9_a308_d9ceb66b3ab3.png)
 
 After the flashing, the board will automatically power on
 
@@ -2199,13 +2199,13 @@ Partial Image Updates
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check the "BOOT-RESOURCE" and "ENV" checkboxes.
 
-![Image](1718935089180_e69940d8_ebdf_4f98_ba9b_f16b20c07775.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935089180_e69940d8_ebdf_4f98_ba9b_f16b20c07775.png)
 
 Connect the development board to the host computer using a Type-A to Type-C cable. Do not power on the board initially; press the USBLOAD button, then power on the board, and finally release the USBLOAD button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: You must press the USBLOAD button whilst the power is off.**
 
-![Image](1718935089513_65853084_5e15_4185_b75f_4ea690c1efd2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935089513_65853084_5e15_4185_b75f_4ea690c1efd2.png)
 
 - OTG Flashing Kernel Image and Device Tree DTB File
 
@@ -2214,26 +2214,26 @@ In the following interface, check the checkbox "Single or multi-partition downlo
 
 The kernel image is placed in the "BOOT" partition.
 
-![Image](1718935089844_05b0cf91_3645_47b6_8de7_1cd5f6773d41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935089844_05b0cf91_3645_47b6_8de7_1cd5f6773d41.png)
 
 Connect the development board to the host computer using a Type-A to Type-C cable. Do not power on the board initially; press the USBLOAD button, then power on the board, and finally release the USBLOAD button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: You must press the USBLOAD button whilst the power is off.**
 
-![Image](1718935090152_023a1b25_2e72_4d1d_b683_177d5a939e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935090152_023a1b25_2e72_4d1d_b683_177d5a939e49.png)
 
 - OTG System Flashing
 
 
 In the following interface, check the checkbox "Single or multi-partition download (select this option, the flashing tool will download the partitions you have selected)", then check "ROOTFS".
 
-![Image](1718935090475_4d136f97_b3d0_4695_81a6_6c1a834a3a8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935090475_4d136f97_b3d0_4695_81a6_6c1a834a3a8b.png)
 
 Connect the development board to the host computer using a Type-A to Type-C cable. Do not power on the board initially; press the USBLOAD button, then power on the board, and finally release the USBLOAD button. Wait for the programming to complete. Then, the following interface will pop up:
 
 **Note: You must press the USBLOAD button whilst the power is off.**
 
-![Image](1718935090712_6253cbeb_8c7a_4a0c_bd12_ac3dbeb84bc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718935090712_6253cbeb_8c7a_4a0c_bd12_ac3dbeb84bc9.png)
 
 #### 6.2.3 Common OTG Flashing Issues
 
@@ -2250,15 +2250,15 @@ Solution for "Third-party INF does not contain digital signature information" is
 
 First press and hold Shift + Restart;
 
-![Image](1718866238274_075bc947_bdcd_4620_855a_0c95bfa44538.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718866238274_075bc947_bdcd_4620_855a_0c95bfa44538.png)
 
 When starting up, select Troubleshoot → Advanced Options → Startup Settings;
 
-![Image](1718866253443_59f16aef_b17c_4912_a4dc_caf794b0d77b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718866253443_59f16aef_b17c_4912_a4dc_caf794b0d77b.png)
 
 On the Startup Settings screen, click Restart in the bottom right corner. After restarting and entering Startup Settings, press the number key 7 or function key F7 to disable driver signature enforcemen.
 
-![Image](1718866281185_e9f19813_5dac_468d_886d_344d25f02a04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718866281185_e9f19813_5dac_468d_886d_344d25f02a04.png)
 
 - Incorrect use of the USBLOAD button
 
@@ -2266,11 +2266,11 @@ When programming, do not power the board initially; press the USBLOAD button, th
 
 - Device name appears but the board still cannot be recognized
 
-![Image](1718866319190_98aa2922_4d0e_4411_ad50_c613af903440.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718866319190_98aa2922_4d0e_4411_ad50_c613af903440.png)
 
 This may be because there are many unknown devices in Device Manager, and selecting the wrong one could cause the driver to be installed to another device. First right-click the device item mentioned above, select "Uninstall device", and check "Delete the driver software for this device".
 
-![Image](1718866333297_cacc0e47_11f4_49e3_bf13_a3cc63c7952c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1718866333297_cacc0e47_11f4_49e3_bf13_a3cc63c7952c.png)
 
 After uninstalling, disconnect other USB devices connected to the host, put the development board into flashing mode and connect it to the host, then repeat the above steps for installation.
 
@@ -2286,7 +2286,7 @@ Tool path: 3-Tools\\PhoenixCard\_V4.1.9.zip
 
 The following interface will appear:
 
-![Image](1758703952416_1014280d_83bf_48eb_a2c4_ed0d2e1cd885.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1758703952416_1014280d_83bf_48eb_a2c4_ed0d2e1cd885.png)
 
 **Note: If the TF card has multiple partitions, click "Restore Card" first, then click "Burn Card"; otherwise, the burning process may fail.**
 
@@ -2295,7 +2295,7 @@ The following interface will appear:
 
 Wait for the burning process to complete, as shown in the following interface:
 
-![Image](1758703952498_23d3d95d_2c25_4e1b_b866_045f184c1f58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536_UP4_Linux5_10_198_User_Manual/1758703952498_23d3d95d_2c25_4e1b_b866_045f184c1f58.png)
 
 #### 6.3.2 TF Card Flashing Method
 
