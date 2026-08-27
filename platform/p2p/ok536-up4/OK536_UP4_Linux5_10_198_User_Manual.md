@@ -17,7 +17,7 @@ Chapter 1. briefly introduces the development board’s interface resources, rel
 
 Chapter 2. describes two login methods: serial port login and network login;
 
-Chapter 3. covers functional testing of the QT interface
+Chapter 3. covers functional testing of the QT interface;
 
 Chapter 4. explains how to perform functional tests using command line operations;
 
