@@ -22,7 +22,7 @@ The CAN box sends a data frame with frame ID 701. Upon receiving it, the motor r
 
 On the 3588 side, when receiving data, running `ip -d -s link show can0` shows that dropped packets are occurring.
 
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/1.png)
 
 After a period of time, the debugging serial port enters an unresponsive state.
 
@@ -30,17 +30,17 @@ After stopping the motor, the debugging serial port recovers.
 
 At this time, checking the 3588 status shows high CPU load on a single core.
 
-![Image](2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/2.png)
 
 Observing the system interrupts reveals a sharp increase in CAN-triggered interrupt counts, increasing by hundreds of thousands.
 
-![Image](3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/3.png)
 
 Checking the CAN register status shows `fifo_overflow`.
 
-![Image](4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/4.png)
 
-![Image](5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3588_ CAN_Issues_Summary/5.png)
 
 System-level packet dropping and frequent interrupts lead to system lag or even freezing.
 
