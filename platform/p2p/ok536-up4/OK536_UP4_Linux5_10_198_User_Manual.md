@@ -1136,10 +1136,10 @@ Enter the following command in the development board terminal:
 
 The meanings of relevant parameters in the command are as follows:
 
-| **Parameter**||||| **Meaning**|||||
+| **Parameter**| **Meaning**|
 |:----------:|:----------:|
-| -i| Wireless network card node name|||
-| -s| The actual Wi-Fi hotspot name to connect to.||
+| -i| Wireless network card node name|
+| -s| The actual Wi-Fi hotspot name to connect to.|
 | -p| The parameter following -p refers to the password of the actual Wi-Fi hotspot to connect to; if the hotspot has no password, write NONE after -p.|
 
 Serial port prints as follows:
@@ -2000,7 +2000,7 @@ Press pwron to wake up.
 
 There are 3 x MIPI CSI interfaces on the development board located in P6 P7 P8, appearing as /dev/video0, /dev/video4, /dev/video8. Taking the OV13855 as an example, when testing the OV5645, use the OV13855 as a reference and simply change the device node name to /dev/video4 or /dev/video8.
 
-1\. Camera Preview
+Camera Preview
 
 ```bash
 root@OK536:~# gst-launch-1.0 v4l2src device=/dev/video0  !  video/x-raw,format=NV21, width=1920,height=1080 ! videoconvert !  kmssink
