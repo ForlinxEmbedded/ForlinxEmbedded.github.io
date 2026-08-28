@@ -30,7 +30,7 @@ Additionally, the manual includes explanations of some symbols and formats.
 | **Format**| **Meaning**|
 |:----------:|----------|
 | //| Explanation of input commands or output information:|
-| Username@Hostname| root@forlinx: Development board login account information; forlinx@ubuntu: Ubuntu account information in the development environment. You can use this information to determine the operating environment for functional operations.|
+| Username@Hostname| root@forlinx: Development board login account information;<br />forlinx@ubuntu: Ubuntu account information in the development environment. <br />You can use this information to determine the operating environment for functional operations. |
 
 Example: When copying the source code, view the source code file through the ls command:
 
