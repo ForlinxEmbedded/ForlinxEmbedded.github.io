@@ -135,7 +135,7 @@ Select the directory where the newly extracted OK536-VM15.5.6-ubuntu20.04 virtua
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
-![Image](12.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_Linux5_10_198_User_Compilation_Manual/12.png)
 
 The provided development environment is set to automatically log in to the account forlinx on startup by default.
 
@@ -472,7 +472,7 @@ win+R
 
 Enter services.msc.
 
-![](Image_20260828152747.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok536-up4/OK536-UP4_Linux5_10_198_User_Compilation_Manual/Image_20260828152747.png)
 
 Then find the service and start it because this service is used for authorization and authentication to start and access virtual machines.
 
