@@ -464,7 +464,7 @@ In general, the power can be turned off directly. If there is data storage, func
 
 **Note: For products designed based on the SoM, if there are scenarios where accidental power loss causes the system to shut down unexpectedly, measures such as adding power-loss protection can be incorporated into the design.**
 
-## 3\. OK527 Platform Interface Function Use and Test
+## 3\. OK3588 Platform Interface Function Use and Test
 
 This section explains how to use extended interfaces on the development board in desktop operating systems and QT interfaces. The provided testing program is for reference only; users should adjust it as needed.
 
@@ -772,7 +772,7 @@ Check feed dog and click the open watchdog key, then the watchdog will be activa
 
 Drag the slider in the interface to set the Lcd backlight brightness, level 0 is no backlight, level 255 is the highest level.
 
-## 4\. OK3576 Command Line Tool Application and Test
+## 4\. OK3588 Command Line Tool Application and Test
 
 OK3588 platform has various built-in command line tools available to users.
 
