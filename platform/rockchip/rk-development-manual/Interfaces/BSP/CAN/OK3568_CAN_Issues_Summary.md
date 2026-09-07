@@ -90,14 +90,18 @@ rockchip driver:
 If there is a problem with CAN communication, use a CAN box to test the transmission and reception separately to verify whether a specific device is not communicating. Prioritise identifying whether the issue lies with the software, the hardware link or a specific device;
 
 Actually grasp the CAN bus waveform, use the oscilloscope, two channels, two probes, one connected to H and the other connected to L (for the oscilloscope with CAN bus analysis function, directly connect the probe to H and the grounding clamp to L), and then test the CAN frame with the CAN box to check the actual situation of the waveform, whether there is a steep slope, slow descent, step and spike, and modify the waveform by hardware means.  An example of a poor bus waveform: 
+<<<<<<< HEAD
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087553-fb2e6dfa-2642-429c-8e1d-ac037cef373d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087843-1d4b229f-1263-410b-9850-bc4d19afe6a2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087739-5091477d-c5cd-4e94-be55-219245fa54c5.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087821-4771e06d-a5b2-4350-a51c-53629c1c873a.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801088098-1685c93b-be08-47c9-b1bc-647845748cd3.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801088012-272400d2-760a-4254-b26f-1e99bedd4901.png)
+=======
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801087553_fb2e6dfa_2642_429c_8e1d_ac037cef373d.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801087843_1d4b229f_1263_410b_9850_bc4d19afe6a2.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801087739_5091477d_c5cd_4e94_be55_219245fa54c5.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801087821_4771e06d_a5b2_4350_a51c_53629c1c873a.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801088098_1685c93b_be08_47c9_b1bc_647845748cd3.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801088012_272400d2_760a_4254_b26f_1e99bedd4901.png)
+>>>>>>> 5f24bb1b82e830fa5db516944f4e65225fc42555
 
 Use the command `ip -d -s link show can0` to view the configuration of the software-defined CAN controller  
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801113117-80cf238d-a392-4d90-abd5-bc76789d0314.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801113117_80cf238d_a392_4d90_abd5_bc76789d0314.png)
 
 Use the `io-4 -l 0x300 0xfe580000 `command to view the CAN controller register status. Read out the register value and compare it with the register description on page 2185 of the Rockchip RK3568 TRM Part2 V1.1-20210301.pdf manual. Whether the current register status is normal.
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801127222-6f93a9a6-66ef-4091-958f-f6542c28189f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801127222_6f93a9a6_66ef_4091_958f_f6542c28189f.png)
 
 The socket can easily generate a "no buffer space" error.  
 This is because the upper-layer software configuration is enabled; when the CANsend software sends a data packet,  
@@ -112,13 +116,13 @@ In this case, there are only two possible causes:
 - The actual physical link is not connected, and there is no ACK response from the CAN device, causing the controller to keep trying to resend.
 
 You can use the `ifconfig` command to check the queue length.  
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801142306-28809689-fd6b-41de-ba6d-b40692953e6e.png)  If the first scenario is identified, you can increase the transmission queue length using `ifconfig can0 txqueuelen 1000`.
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801142306_28809689_fd6b_41de_ba6d_b40692953e6e.png)  If the first scenario is identified, you can increase the transmission queue length using `ifconfig can0 txqueuelen 1000`.
 
 If testing reveals communication issues with only a specific device, which may manifest as either complete frame loss or intermittent packet drops, it could indicate that the counterpart device has CAN clock frequency drift. As the receiving end, you can attempt to increase the Synchronization Jump Width (SJW) value in the CAN driver to broaden the threshold for frame analysis at the receiving side.
 `ip link set can0 type can sjw 10`
 The adjustable range for the SJW attribute can be viewed using the command: `ip -d -s link show can0`.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801151129-b08c1846-8a10-400f-a195-e2e1cad8708c.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801151129_b08c1846_8a10_400f_a195_e2e1cad8708c.png)  
 
 The maximum value of SJW is the smaller one of seg1 and seg2. This is related to the calculation of the sampling point. Generally, the default sampling point in the triple sampling map is: sample-point is 0.875. The calculation method of the sampling point is: sample-point = (prop-seg + phase-seg1 + 1) / (prop-seg + phase-seg1 + phase-seg2 + 1).
 
