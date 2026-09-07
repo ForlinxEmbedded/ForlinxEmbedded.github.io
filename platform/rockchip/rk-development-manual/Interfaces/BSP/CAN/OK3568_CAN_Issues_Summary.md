@@ -90,6 +90,7 @@ rockchip driver:
 If there is a problem with CAN communication, use a CAN box to test the transmission and reception separately to verify whether a specific device is not communicating. Prioritise identifying whether the issue lies with the software, the hardware link or a specific device;
 
 Actually grasp the CAN bus waveform, use the oscilloscope, two channels, two probes, one connected to H and the other connected to L (for the oscilloscope with CAN bus analysis function, directly connect the probe to H and the grounding clamp to L), and then test the CAN frame with the CAN box to check the actual situation of the waveform, whether there is a steep slope, slow descent, step and spike, and modify the waveform by hardware means.  An example of a poor bus waveform: 
+
 ![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087553-fb2e6dfa-2642-429c-8e1d-ac037cef373d.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087843-1d4b229f-1263-410b-9850-bc4d19afe6a2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087739-5091477d-c5cd-4e94-be55-219245fa54c5.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801087821-4771e06d-a5b2-4350-a51c-53629c1c873a.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801088098-1685c93b-be08-47c9-b1bc-647845748cd3.png)![](https://cdn.nlark.com/yuque/0/2024/png/45387297/1718801088012-272400d2-760a-4254-b26f-1e99bedd4901.png)
 
 Use the command `ip -d -s link show can0` to view the configuration of the software-defined CAN controller  
