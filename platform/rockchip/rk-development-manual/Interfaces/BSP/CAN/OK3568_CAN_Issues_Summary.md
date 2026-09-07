@@ -1,4 +1,6 @@
-# Issues Identified by RK Officials Regarding the RKCAN Controller
+# OK3568 CAN Issues Summary
+
+## Issues Identified by RK Officials Regarding the RKCAN Controller
 
 [RK3568-CAN-Errata Notice-20240420154900-9ziivy5.pdf](https://forlinx-book.yuque.com/attachments/yuque/0/2024/pdf/45387297/1725346793327-92aa3e34-f558-4a6c-bc1d-3cf597578190.pdf)
 
