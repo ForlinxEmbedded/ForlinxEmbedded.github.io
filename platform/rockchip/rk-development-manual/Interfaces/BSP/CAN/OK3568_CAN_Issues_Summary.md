@@ -117,7 +117,9 @@ In this case, there are only two possible causes:
 - The actual physical link is not connected, and there is no ACK response from the CAN device, causing the controller to keep trying to resend.
 
 You can use the `ifconfig` command to check the queue length.  
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801142306_28809689_fd6b_41de_ba6d_b40692953e6e.png)  If the first scenario is identified, you can increase the transmission queue length using `ifconfig can0 txqueuelen 1000`.
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3568_CAN_Issues_Summary/1718801142306_28809689_fd6b_41de_ba6d_b40692953e6e.png)  
+
+If the first scenario is identified, you can increase the transmission queue length using `ifconfig can0 txqueuelen 1000`.
 
 If testing reveals communication issues with only a specific device, which may manifest as either complete frame loss or intermittent packet drops, it could indicate that the counterpart device has CAN clock frequency drift. As the receiving end, you can attempt to increase the Synchronization Jump Width (SJW) value in the CAN driver to broaden the threshold for frame analysis at the receiving side.
 `ip link set can0 type can sjw 10`
