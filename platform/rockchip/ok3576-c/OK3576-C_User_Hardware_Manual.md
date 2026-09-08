@@ -1,4 +1,4 @@
-# OK3576-C_User's Hardware Manual_V1.5
+# OK3576-C&OK3576-C21_User's Hardware Manual_V1.6
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
