@@ -82,11 +82,11 @@ Target Applications:
 
 **FET3576-C Back**
 
-![image-20251219134144553.png](image-20251219134144553.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/image_20251219134144553.png)
 
 **FET3576-C2 Front**
 
-![image-20251219134157522.png](image-20251219134157522.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/image_20251219134157522.png)
 
 **FET3576-C2 Back**
 
@@ -100,11 +100,11 @@ Target Applications:
 
 **FET3576-C SoM Dimension Diagram** 
 
-![image-20251219135154862.png](image-20251219135154862.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/image_20251219135154862.png)
 
 **FET3576-C2 SoM Dimension Diagram**
 
-![image-20251219135124911.png](image-20251219135124911.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/image_20251219135124911.png)
 
 **Bottom Layer Dimension Diagram**
 
