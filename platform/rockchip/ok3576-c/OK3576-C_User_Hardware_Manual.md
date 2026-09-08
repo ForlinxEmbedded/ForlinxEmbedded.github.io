@@ -18,6 +18,7 @@ It is only applicable to Forlinx OK3576-C development board.
 
 | Date       |               User Manual Version                |                   SoM Version                    |              Carrier Board Version               | Revision History                                             |
 | ---------- | :----------------------------------------------: | :----------------------------------------------: | :----------------------------------------------: | ------------------------------------------------------------ |
+| 06/05/2026 |                       V1.6                       |          FET3576-C V1.3/FET3576-C2 V1.0          |                     **V1.4**                     | Adding FET3576-C2 SoM description.                           |
 | 01/12/2025 |                       V1.5                       | <font style="color:rgb(51, 51, 51);">V1.3</font> | <font style="color:rgb(51, 51, 51);">V1.4</font> | Adding SoM power management upgrade solution:<br />Expanding the voltage input range from 12V to a wide voltage 5V-13V,<br/>refer PCN20251030-063 for the detailsand updating the voltage<br />input parameters of the SoM in the section “2. FET3576 - C SoM Description". |
 | 21/11/2025 |      <font style="color:black;">V1.4</font>      | <font style="color:rgb(51, 51, 51);">V1.3</font> | <font style="color:rgb(51, 51, 51);">V1.4</font> | Adding section 2.8.2: Design Guide for Vibration Resistance of the SoM. |
 | 07/05/2025 | <font style="color:rgb(51, 51, 51);">V1.3</font> | <font style="color:rgb(51, 51, 51);">V1.3</font> | <font style="color:rgb(51, 51, 51);">V1.4</font> | 1. Carrier board design updating: (Refer to the latest schematic for details; <br />1) Changing the P2_63 pin of the carrier board connector from GND to floating for FET3588 - C SoM compatibility;<br />2) Adopting independent power supply for the carrier board WIFI module to enable WIFI&BT sleep - wake function;<br />3) Rectifying the USB wiring sequence of female USB3.0_A sockets P28 and P29;<br />4) Adding an ESD tube to the key signal line to enhance electrostatic protection;<br />5) Adjusting the position of series magnetic beads for the 2.8V power supply of 5 x CSI cameras to optimize interference suppression from autofocus motors;<br />6) Leading out a PMIC_VDC signal from the P3_10 pin of the SoM connector to enable mode - switching between power - on and key - boot for the SoM;<br />7 ) Reserving a terminal block for the PWRON_L signal to facilitate user expansion.<br />2. Updating power consumption parameters of the Android system. |
@@ -69,17 +70,25 @@ Target Applications:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1720593601656_0670391a_b653_4230_aede_3ea9e26b9868.png)
 
-## 2\. FET3588-C SoM Description
+## 2\. FET3576-C&FET3576-C2 SoM Description
 
-### 2.1 FET3576-C SoM
+### 2.1 FET3576-C/FET3576-C2 SoM 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1733456740203_4f819259_1c63_45b2_8917_a806d32b2885.png)
 
-**Front**
+**FET3576-C Front**
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1733456699798_361c5272_c28d_45c5_8b73_ad736e028066.png)
 
-**Back**
+**FET3576-C Back**
+
+![image-20251219134144553.png](image-20251219134144553.png)
+
+**FET3576-C2 Front**
+
+![image-20251219134157522.png](image-20251219134157522.png)
+
+**FET3576-C2 Back**
 
 ### 2.2 FET3576-C SoM Dimension Diagram
 
@@ -87,15 +96,15 @@ Target Applications:
 
 **SoM**
 
-### 2.3 FET3576-C SoM Dimension Diagram
+### 2.3 FET3576-C/FET3576-C2 SoM Dimension Diagram
 
-FET3576-C SoM Dimension Diagram 
+**FET3576-C SoM Dimension Diagram** 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199723926_1b8554b0_e9fd_4294_a0ba_44d3349e636f.png)
+![image-20251219135154862.png](image-20251219135154862.png)
 
-**Top Layer Dimension Diagram**
+**FET3576-C2 SoM Dimension Diagram**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_User_Hardware_Manual/1721199724248_c9d3447b_4655_46be_9ad4_38beb6c92363.png)
+![image-20251219135124911.png](image-20251219135124911.png)
 
 **Bottom Layer Dimension Diagram**
 
@@ -119,12 +128,20 @@ Please refer to the development board design and use SMT nuts of M2 with a lengt
 
 #### 2.4.1 System Main Frequency
 
-| **Name**| **Specification**| | | | **Description**|
-|:----------:|:----------:|----------|----------|----------|:----------:|
-| | **Minimum**| **Typical**| **Maximum**| **Unit**|
-| System Frequency Arm® Cortex®-A72| \-| \-| 2300| MHz| \-|
-| System Frequency Arm® Cortex®-A53| \-| \-| 2200| MHz|
-| System Frequency Arm® Cortex®-M0| \-| \-| \-| \-| \-|
+|           **Name**            | **Specification** |             |             |          |    **Description**     |
+| :---------------------------: | :---------------: | ----------- | ----------- | -------- | :--------------------: |
+|                               |    **Minimum**    | **Typical** | **Maximum** | **Unit** |                        |
+| System Clock Arm® Cortex®-A72 |         -         | -           | 2200        | MHz      |           c            |
+| System ClockArm® Cortex®-A53  |         -         | -           | 2000        | MHz      | Wide-temperature grade |
+|  System ClockArm® Cortex®-M0  |         -         | -           | -           | -        |           -            |
+
+
+|           **Name**           | **Specification** |             |             |          | **Description**  |
+| :--------------------------: | :---------------: | ----------- | ----------- | -------- | :--------------: |
+|                              |    **Minimum**    | **Typical** | **Maximum** | **Unit** |                  |
+| System ClockArm® Cortex®-A72 |         -         | -           | 2100        | MHz      | Industrial-grade |
+| System ClockArm® Cortex®-A53 |         -         | -           | 1900        | MHz      | Industrial-grade |
+| System ClockArm® Cortex®-M0  |                   |             |             |          |                  |
 
 #### 2.4.2 Power Parameter
 
@@ -135,26 +152,28 @@ Please refer to the development board design and use SMT nuts of M2 with a lengt
 
 #### 2.4.3 Operating Environment
 
-| **Parameter**| | **Specification**| | | | **Description**|
-|:----------:|----------|:----------:|----------|----------|----------|:----------:|
-| | | **Minimum**| **Typical**| **Maximum**| **Unit**|
-| Operating Temperature| Operating Environment| 0| 25| 80| ℃| Commercial level|
-| | Storage Environment| -40| 25| +125| ℃|
-| Humidity| Operating Environment| 10| \-| 90| ％RH| No condensation|
-| | Storage Environment| 5| \-| 95| ％RH|
+|     **Parameter**     |                       |             | **Specification** |             |          |    **Description**    |
+| :-------------------: | --------------------- | :---------: | ----------------- | ----------- | -------- | :-------------------: |
+|                       |                       | **Minimum** | **Typical**       | **Maximum** | **Unit** |                       |
+| Operating Temperature | Operating Environment |      0      | 25                | +80         | ℃        | Commercial-grade<br/> |
+|                       | Storage Environment   |     -40     | 25                | +125        | ℃        |                       |
+|                       | Operating Environment |     -40     | 25                | +85         | ℃        | Industrial-grade<br/> |
+|                       | Storage Environment   |     -40     | 25                | +125        | ℃        |                       |
+|       Humidity        | Operating Environment |     10      | -                 | 90          | ％RH     | No condensation<br/>  |
+|                       | Storage Environment   |      5      | -                 | 95          | ％RH     |                       |
 
 #### 2.4.4 SoM Interface Speed
 
-| **Parameter**| **Specification**| | | | **Description**|
-|:----------:|:----------:|----------|----------|----------|:----------:|
-| | **Minimum**| **Typical**| **Maximum**| **Unit**|
-| Serial Port Communication Speed| \-| 115200| 4M| bps| \-|
-| SPI Clock Frequncey| \-| \-| 50| MHz| \-|
-| I2C Communication Speed| \-| 100| 400| Kbps| \-|
-| USB3.0 Interface Speed| \-| \-| 5| Gbps| \-|
-| USB2.0 Interface Speed| \-| \-| 480| Mbps| \-|
-| CAN Communication Speed| \-| \-| 1| Mbps| \-|
-| PCIe2.1| \-| \-| 5| Gbps| \-|
+|          **Parameter**          | **Specification** |             |         |          | **Description** |
+| :-----------------------------: | :---------------: | ----------- | ------- | -------- | :-------------: |
+|                                 |      **Min**      | **Typical** | **Max** | **Unit** |                 |
+| Serial Port Communication Speed |         -         | 115,200     | 4M      | bps      |        -        |
+|       SPI Clock Frequency       |         -         | -           | 50      | MHz      |        -        |
+|     I2C Communication Speed     |         -         | 100         | 400     | Kbps     |        -        |
+|     USB 3.0 Interface Speed     |         -         | -           | 5       | Gbps     |        -        |
+|     USB 2.0 Interface Speed     |         -         | -           | 480     | Mbps     |        -        |
+|     CAN Communication Speed     |         -         | -           | 1       | Mbps     |        -        |
+|            PCIe 2.1             |         -         | -           | 5       | Gbps     |        -        |
 
 #### 2.4.5 ESD  Features
 
