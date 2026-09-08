@@ -9,11 +9,11 @@ OK3562 supports SPI-to-CANFD conversion. There is already a driver for SPI-to-CA
 - There is already a MCP2518 driver file in the kernel, which needs to be configured into the kernel via the configuration file;
 - Open the graphical configuration interface in the kernel using `make menuconfig ARCH=arm64`.
 
- ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254592897-2562b229-09a2-418d-96d2-c884ffe5a3b4.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254592897_2562b229_09a2_418d_96d2_c884ffe5a3b4.png)
 
 The CAN _ MCP251XFD in the figure above is the driver for the MCP2518 module.
 
- ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593035-9b37e2c7-e8fb-4b61-a4e8-2c0547e155ec.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593035_9b37e2c7_e8fb_4b61_a4e8_2c0547e155ec.png)
 
 - `/mcp251` search MCP2518 driver;  
 - Select "2" to compile it into the kernel as `*`;  
@@ -23,7 +23,7 @@ The CAN _ MCP251XFD in the figure above is the driver for the MCP2518 module.
 
 The OK3562 has a set of SPI pins exposed. 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593117-2ee94b56-2d66-459c-a5c4-ef978dd15d83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593117_2ee94b56_2d66_459c_a5c4_ef978dd15d83.png)
 - After the driver is configured, the device tree file to be configured is: `OK3562-C-common.dtsi`;
 - The specific configuration information is as follows:
 
@@ -109,13 +109,13 @@ forlinx@ubuntu:~/3562/OK3562-linux-source$ ./build.sh kernel
   ○ Connect the PC to the Type-C0 port on the bottom of the development board using a Type-C cable;
   ○ Hold down the Recovery button on the development board and do not release it; then restart the development board;
   ○ Note that the tool will detect whether the development board has entered flashing mode .
-  ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593188-00715e4e-cd3a-4866-af62-d01e0a2b25ca.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593188_00715e4e_cd3a_4866_af62_d01e0a2b25ca.png)
 - Select the pre-compiled `boot.img` image file, tick the box next to the "boot"option, click "Execute" to flash the image; once flashing is complete, the development board will restart automatically.
 
 ## 4. Function Test
 Search for CAN nodes on the development board using the `ifconfig -a` command.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593251-c2ba92bc-85c5-4154-894f-ad4bf906f606.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593251_c2ba92bc_85c5_4154_894f_ad4bf906f606.png)
 
 You can see the generated "can0" node.
 
@@ -135,7 +135,7 @@ ifconfig can0 up 	//Open the CAN0 device
 candump can0&		//Set the can0 device as the server
 ```
 
- ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593323-7a3ce379-cf07-4fd9-9f4b-9652643702e2.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593323_7a3ce379_cf07_4fd9_9f4b_9652643702e2.png)
 
 Configure CAN0 on the OK3568 as a client to send messages to CAN0 on the OK3562.
 
@@ -146,11 +146,11 @@ ifconfig can0 up
 cansend can0 123#1122334aabbccd		//Send a message
 ```
 
- ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593385-51c0b180-4d55-488a-8e68-57acba6a12bb.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593385_51c0b180_4d55_488a_8e68_57acba6a12bb.png)
 
 OK3562 will receive a message from OK3568 .
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593461-6124a3b2-7f07-4ef6-af9b-4b20bc90796a.png) 
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593461_6124a3b2_7f07_4ef6_af9b_4b20bc90796a.png) 
 
 P.S.: The error shown in the image above is due to an issue with the MCP2518 driver; this will not affect communication during testing.
 
@@ -158,7 +158,7 @@ P.S.: The error shown in the image above is due to an issue with the MCP2518 dri
 
 Configuration of the baud rate and other settings is carried out as described above; when configuring functions, use the `cansend` command to send data.
 
- ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593523-f50b7c60-6f97-4cc2-b3ec-a759592f4161.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593523_f50b7c60_6f97_4cc2_b3ec_a759592f4161.png)
 
 Configure OK3568 as a server to receive data, following the method used for OK3562.
 
@@ -169,7 +169,7 @@ ifconfig can0 up
 candump can0&
 ```
 
- ![](https://cdn.nlark.com/yuque/0/2024/png/45444988/1727254593607-a3168180-18d9-4edf-93f3-804bc604c0fe.png)
+ ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Interfaces/BSP/CAN/OK3562_5_10_96_Adaptation_for_MCP2518_CANFD/1727254593607_a3168180_18d9_4edf_93f3_804bc604c0fe.png)
 
 The above is the whole process of OK3562 adapting and testing MCP2518 module. If you have any questions, please contact Forlinx Technical Support.
 
