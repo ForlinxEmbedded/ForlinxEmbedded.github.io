@@ -722,10 +722,8 @@ Default Function — All pin functions on the SoM are defined according to the �
 
 **Note:** 
 
-- **Default Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. If you have any questions, please contact our sales or technical support promptly;**
-
+- **The default functions for all pins on the SoM are predefined and fixed in the table below. To ensure compatibility with the factory drivers, please strictly adhere to this default configuration and do not make any modifications. If you have any questions, please feel free to contact our sales or technical support team for assistance;**
 - **When you have multiple functional expansion requirements, please refer to the “FET3576 SoM Pin Multiplexing Comparison Table” in the materials. However, for more detailed information, please refer to the relevant documentation, chip datasheets, and user manuals;**
-
 - **The “Signal Name” column lists the default pin names corresponding to the SoM connections to the carrier board.**
 
 #### 2.7.1 Power Pin
