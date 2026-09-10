@@ -254,11 +254,11 @@ The parameters in the table are based on hardware design or theoretical CPU valu
 
 **Note:**
 
-**Num ——**SoM connector pin no.:
+**Num ——SoM connector pin no.:**
 
 Ball —— CPU pin ball no.
 
-**GPIO ——**CPU pin general I/O port serial number
+**GPIO ——CPU pin general I/O port serial number;**
 
 Vol —— Pin signal electrical level
 
