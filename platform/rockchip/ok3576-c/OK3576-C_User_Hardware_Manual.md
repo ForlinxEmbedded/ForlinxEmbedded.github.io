@@ -720,7 +720,7 @@ Default Function — All pin functions on the SoM are defined according to the �
 
 ### 2.7 FET3576-C/ FET3576-C2 SoM Pin Description (by Function)
 
-**Note: **
+**Note:** 
 
 - **Default Please don’t make any modifications for all SoM pin functions regulated in the “default functions” of the following table, otherwise, it may have conflicts with the factory driver. If you have any questions, please contact our sales or technical support promptly;**
 
@@ -744,7 +744,7 @@ Default Function — All pin functions on the SoM are defined according to the �
 
 #### 2.7.2 Control Pin Reset
 
-| **Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number|
+| **Function**| **Signal Name**| **I/O**| **Default Function**| Pin Number |
 |:----------:|:----------:|:----------:|:----------:|:----------:|
 | SoM Reset| RESET\_L| I| SoM power-off reset, low level active| P2\_100|
 
@@ -846,7 +846,7 @@ Default Function — All pin functions on the SoM are defined according to the �
 #### 2.7.9 UART Interface Control Pins
 
 | **Default Function**| **Signal Name**| **I/O**| **Default Function**| **Pin Number**|
-|:----------:|:----------:|:----------:|:----------:|:----------:|||||||||||
+|:----------:|:----------:|:----------:|:----------:|:----------:|
 | UART0| UART0\_TX\_M0\_DEBUG| O| UART0 data sending| P2\_7|
 | | UART0\_RX\_M0\_DEBUG| I| UART0 data receiving| P2\_9|
 | UART5| UART5\_TX\_M1| O| UART5 data sending| P2\_39|
@@ -1173,7 +1173,7 @@ ABC-D+IK:M
 
 ### 3.5 OK3576-C/ OK3576-C21 Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **The component UID with "\_DNP" mark in the diagram below represents it is not soldered by  default;**
 
@@ -1293,9 +1293,7 @@ Table 3.5.4.1 FET3576 System Initialization Configuration Signal Description
 
 | **Signal Name**| **Internal Pull-up\&down**| **Description**|
 |:----------:|:----------:|----------|
-| SDMMC0\_DET\_L| Pull-up| SDMMC/ARM JTAG Pin Multiplexing Selection Control Signal:   0: Recognized as SD card inserted, SDMMC/JTAG pins are multiplexed for SDMMC0 function.|
-
-Not recognized as SD card inserted, SDMMC/JTAG pins are multiplexed for JTAG function (Default).
+| SDMMC0\_DET\_L| Pull-up| **SDMMC/ARM JTAG Pin Multiplexing Selection Control Signal:**<br/>**0:** Recognized as SD card insertion. The SDMMC/JTAG pins are multiplexed to SDMMC0 function;<br/>**1:** Not recognized as SD card insertion. The SDMMC/JTAG pins are multiplexed to JTAG function (Default). |
 
 #### 3.5.5 JTAG and UART Debug Circuits
 
