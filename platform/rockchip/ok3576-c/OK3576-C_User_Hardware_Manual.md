@@ -2025,7 +2025,7 @@ The schematic is as follows:
 - **SDIO impedance requirements: Single‑ended impedance: 50ohm;**
 - **Signal length matching tolerance: ±50 mil.**
 
-## User Hardware Design Guide\_V1.04
+## User Hardware Design Guide\_V1.4
 
 - **I2C Requirements:**
 
