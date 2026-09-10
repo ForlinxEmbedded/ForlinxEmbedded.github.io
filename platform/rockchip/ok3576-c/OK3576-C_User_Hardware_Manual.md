@@ -218,6 +218,7 @@ FET3576-C/FET3576-C2 The interface resources of SoM are supported in the followi
 | PWM| ≤16| Supports up to 16 on-chip PWM with interrupt-based operation and capture mode;|
 | ADC| ≤8| · Supports 8 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s;|
 | GPIO| n| • All **GPIOs** can be used to generate interrupts  <br/>• Supports **level-triggered** and **edge-triggered** interrupts  <br/>• Supports configuration of **level trigger polarity**  <br/>• Supports **rising edge**, **falling edge**, and **both edge** triggered interrupts  <br/>• Supports configuration of **pull-up/down** (weak pull-up and weak pull-down)  <br/>• Supports configuration of **drive strength** |
+
 **Note:   
 The parameters in the table are based on hardware design or theoretical CPU values.**
 
