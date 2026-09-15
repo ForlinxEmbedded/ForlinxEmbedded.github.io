@@ -999,7 +999,7 @@ The P5 is the TF Card interface that supports system boot and programming. The p
 
 The OK3588-UP5 features an on-board external RTC function to enable more accurate timing and lower power consumption. The schematic diagram is shown below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026-02-03_17-53-58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_17_53_58.png)
 
 #### 3.5.11 Ethernet Circuit
 
