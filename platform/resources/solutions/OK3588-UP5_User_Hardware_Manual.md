@@ -1136,12 +1136,7 @@ This USB3.0/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard
 
 - Configuration 2: USB2.0 OTG+DP 4Lane（Swap OFF）
 
-<<<<<<< HEAD
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/333.jpg)
-=======
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/333.jpg)
->>>>>>> 1c7f7cd9eb9c96f5f0efb2f2b3e733391529b232
-
 - Configuration 3: USB2.0 OTG+DP 4Lane(Swap ON)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_13_35_38.png)
