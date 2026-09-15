@@ -999,7 +999,7 @@ The P5 is the TF Card interface that supports system boot and programming. The p
 
 The OK3588-UP5 features an on-board external RTC function to enable more accurate timing and lower power consumption. The schematic diagram is shown below:
 
-![Image](C:/Users/1/Desktop/Snipaste_2026-02-03_17-53-58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/Snipaste_2026-02-03_17-53-58.png)
 
 ### 3.5.11 Ethernet Circuit
 
@@ -1136,7 +1136,7 @@ This USB3.0/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard
 
 - Configuration 2: USB2.0 OTG+DP 4Lane（Swap OFF）
 
-![Image](333.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/333.jpg)
 
 - Configuration 3: USB2.0 OTG+DP 4Lane(Swap ON)
 
