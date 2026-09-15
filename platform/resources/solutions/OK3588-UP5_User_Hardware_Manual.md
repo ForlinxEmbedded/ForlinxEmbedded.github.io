@@ -27,17 +27,17 @@ Target Applications:
 
 ### 2.1 FET3588-UP5 Appearance Diagram
 
-![](SoM.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/SoM.png)
 
 **Front**
 
-![DSC\_8929](images/DSC_8929.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/DSC_8929.png)
 
 **Back**
 
 ### 2.2 FET3588-UP5 SoM Dimension Diagram
 
-![Snipaste\_2026-08-27\_15-53-19](images/Snipaste_2026-08-27_15-53-19.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_08_27_15_53_19.png)
 
 Unit: mm
 
@@ -174,13 +174,13 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 #### 2.5.1 FET3588x-UP5 SoM Pin Schematic
 
-![Snipaste\_2026-02-25\_15-36-52](images/Snipaste_2026-02-25_15-36-52.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_15_36_52.png)
 
-![Snipaste\_2026-02-25\_15-37-56](images/Snipaste_2026-02-25_15-37-56.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_15_37_56.png)
 
-![Snipaste\_2026-02-25\_15-38-35](images/Snipaste_2026-02-25_15-38-35.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_15_38_35.png)
 
-![Snipaste\_2026-02-25\_15-39-30](images/Snipaste_2026-02-25_15-39-30.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_15_39_30.png)
 
 #### 2.5.2 FET3588x-UP5 SoM Pin Function Description
 
@@ -743,17 +743,17 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection method: Stamp hole+board to board. The main interfaces are shown in the figure below:
 
-![6a84079f97da38000109ca3b](images/6a84079f97da38000109ca3b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/6a84079f97da38000109ca3b.png)
 
 **Front**
 
-![](Interface.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Interface.png)
 
 **Back**
 
 #### 3.2 OK3588-UP5 Development Board Dimension Diagram
 
-![Snipaste\_2026-08-27\_18-06-03](images/Snipaste_2026-08-27_18-06-03.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_08_27_18_06_03.png)
 
 PCB: 190mm×130mm
 
@@ -762,7 +762,7 @@ Mounting hole dimensions: Pitch: 180mm × 120mm, hole diameter: 3.2mm.
 Plate making process: 1.6mm thickness, 4-layer PCB.
 
 The OK3588-C carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 39mm × 39mm × 23mm. See below for details.
-![](https://cdn.nlark.com/yuque/0/2025/png/58486295/1759195521043-59deb5fa-b59a-4b42-a4b3-316c81c02858.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/1759195521043_59deb5fa_b59a_4b42_a4b3_316c81c02858.png)
 
 #### 3.3 Naming Rules
 
@@ -825,31 +825,31 @@ A - B - C + D E F : G - H
 
 It uses a 12V power adapter for the power supply, and the power connector is a DC050 socket. The DIP switch S2 serves as the power switch for the development board. Move the switch in the direction indicated on the carrier board to turn it on or off. A TVS diode is connected in parallel after switch S2 for ESD protection. Fuse F10 provides overcurrent protection. Diode D3 works alongside F10 to offer reverse-connection protection. VCC12V\_DCIN supplies power to both the FET3588 SoM and other peripherals on the carrier board.
 
-![Snipaste\_2026-02-03\_09-45-57](images/Snipaste_2026-02-03_09-45-57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_09_45_57.png)
 
 VCC12V\_DCIN is stepped down to VCC\_5V via U62 (DC-DC converter). VCC\_5V powers other peripherals on the carrier board. (Note: When selecting the 12V-to-5V DC-DC chip, ensure its output power is sufficiently high. It is recommended to support an output current of 6A or above to guarantee adequate current supply for downstream stages.)
 
 After the SoM is powered on normally by 12V, it outputs a high level via the EXTP\_EN pin to control U62 and enable the output of VCC\_5V to power some peripherals on the development board. (This signal level is 3.3V with a drive capability of 1K pull-up. If the enabled device’s enable pin requires drive capability beyond this range, buffers or gate circuits should be added to enhance drive capability, ensuring proper power-up of both the SoM and the carrier board.)
 
-![Snipaste\_2026-08-28\_10-08-44](images/Snipaste_2026-08-28_10-08-44.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_08_28_10_08_44.png)
 
 U39 outputs VCC\_5V\_USB as a dedicated USB power rail to supply the USB interfaces and HUB.
 
-![Snipaste\_2026-08-28\_10-09-57](images/Snipaste_2026-08-28_10-09-57.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_08_28_10_09_57.png)
 
 VCC\_5V is further stepped down to VCC\_3V3 via U40 (DC-DC converter). VCC\_3V3 supplies power to certain devices on the development board.
 
-![Snipaste\_2026-02-03\_09-58-35](images/Snipaste_2026-02-03_09-58-35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_09_58_35.png)
 
 VCC\_3V3 is stepped down to VCC\_1V8 through U41, U65, and U66 (LDOs). VCC\_1V8 supplies power to certain devices on the development board.
 
-![Snipaste\_2026-02-03\_09-59-57](images/Snipaste_2026-02-03_09-59-57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_09_59_57.png)
 
 VCC12V\_DCIN is stepped down to VCC5V\_S via U42 (DC‑DC). VCC5V\_S supplies the carrier board display interface.
 
 After the SoM starts up normally from the 12V supply, it outputs a high level through the STANDBY pin to control U42 and enable the output of VCC5V\_S to power some peripherals on the development board. (This signal is at 3.3 V and is a “standby‑keep‑alive” pin, which allows the carrier boaard display interface to remain powered even when the SoM enters sleep mode.)
 
-![Snipaste\_2026-02-03\_10-14-56](images/Snipaste_2026-02-03_10-14-56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_10_14_56.png)
 
 **Note:**
 
@@ -860,11 +860,11 @@ After the SoM starts up normally from the 12V supply, it outputs a high level th
 
 nRESET is the SoM reset‑signal input. For debugging convenience, it is connected to a physical button.
 
-![Snipaste\_2026-02-03\_10-37-54](images/Snipaste_2026-02-03_10-37-54.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_10_37_54.png)
 
 PWRON\_L serves as the power-on/power-off signal input for the SoM; for ease of debugging, it is connected to a pushbutton.
 
-![Snipaste\_2026-02-03\_10-46-13](images/Snipaste_2026-02-03_10-46-13.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_10_46_13.png)
 
 #### 3.5.3 Boot Configuration
 
@@ -896,11 +896,11 @@ Table 3.5.2.1 Boot Sequence Configuration Table
 
 On the SoM, BOOT\_SARADC\_IN0 is configured with a 10 kΩ pull‑up resistor, so the SoM boots from eMMC by default. A pull‑down resistor can be added on the carrier baord to implement other boot sequences. Based on the LEVEL1 setting, the OK3588‑UP5 connects FORCE\_USBLOAD to GND via a tactile switch to enter Maskrom mode.
 
-![Snipaste\_2026-02-03\_10-55-57](images/Snipaste_2026-02-03_10-55-57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_10_55_57.png)
 
 LRADC is used to enter Recovery state by shorting to GND. The SoM pulls it up to 1.8 V through a 10 kΩ resistor. On OK3576-UP5, the key array is of parallel type, and the input key value can be adjusted by increasing or decreasing the keys and adjusting the proportion of the divider resistor, so as to realize multi-key input to meet the customer's product requirements; it is recommended in the design that the key value of any two keys must be greater than ± 35, that is, the center voltage difference must be greater than 123 mV. As shown in the figure:
 
-![Snipaste\_2026-02-03\_11-49-36](images/Snipaste_2026-02-03_11-49-36.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_11_49_36.png)
 
 **Note:**
 
@@ -916,9 +916,9 @@ GPIO0\_A4 (PIN 86) (Default function: SDMMC\_DET): Determines whether pins 88, 8
 
 The ARM JTAG function of the RK3588 is multiplexed with the SDMMC function, and the IOMUX function is switched via the SDMMC\_DET pin. Therefore, this pin must also be configured before power‑on. Otherwise:
 
-![Snipaste\_2026-02-26\_16-41-35](images/Snipaste_2026-02-26_16-41-35.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_26_16_41_35.png)
 
-![Snipaste\_2026-02-26\_16-42-42](images/Snipaste_2026-02-26_16-42-42.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_26_16_42_42.png)
 
 · If this pin is detected as high, the corresponding I/O pin switches to ARM JTAG mode;
 
@@ -957,7 +957,7 @@ FET3588 UART Debug defaults to UART2\_TX\_M0\_DEBUG (Pin 80) / UART2\_RX\_M0\_DE
 
 OK3588 development board uses a USB-to-UART chip to convert the UART Debug signal into a USB signal for user-friendly debugging, which is then routed out through a Type-C socket. You can connect OK3588-C's P10 to a PC with a USB Type-A to USB Type-C cable and install the XR21V1414 driver. The schematic is as follows:
 
-![Snipaste\_2026-02-26\_16-59-44](images/Snipaste_2026-02-26_16-59-44.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_26_16_59_44.png)
 
 **Note:**
 
@@ -969,25 +969,25 @@ OK3588 development board uses a USB-to-UART chip to convert the UART Debug signa
 
 To expose richer interfaces, the enable and reset signals on the carrier board are implemented by an I2C-to-IO converter chip U3, as shown in the schematic below.
 
-![Snipaste\_2026-02-03\_16-56-32](images/Snipaste_2026-02-03_16-56-32.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_16_56_32.png)
 
 #### 3.5.7 SARADC Interface
 
 OK3588-UP5 routes SARADC\_VIN4/VIN5/VIN6 via P2; R13 is a variable resistor. By short-circuiting SARADC\_VIN4/VIN5/VIN6 to pins 3, 5 and 6 of P2, the voltage changes can be read via the ADC whilst adjusting the resistance value of the R371 variable resistor. As shown in the figure below：
 
-![Snipaste\_2026-02-03\_17-00-42](images/Snipaste_2026-02-03_17-00-42.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_17_00_42.png)
 
 #### 3.5.8 FAN Interface
 
 There is a fan interface is reserved on the OK3588-UP5. As shown in the figure below：
 
-![Snipaste\_2026-08-28\_10-43-18](images/Snipaste_2026-08-28_10-43-18.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_08_28_10_43_18.png)
 
 #### 3.5.9 TF Card
 
 The P5 is the TF Card interface that supports system boot and programming. The power for the TF card is supplied by the SoM.
 
-![Snipaste\_2026-02-03\_17-46-56](images/Snipaste_2026-02-03_17-46-56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_17_46_56.png)
 
 **Note:**
 
@@ -1004,13 +1004,13 @@ The OK3588-UP5 features an on-board external RTC function to enable more accurat
 
 Supports 1000/100/10M adaptive network port, led out via RJ45.
 
-![Snipaste\_2026-02-26\_17-40-34](images/Snipaste_2026-02-26_17-40-34.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_26_17_40_34.png)
 
-![Snipaste\_2026-02-03\_17-57-21](images/Snipaste_2026-02-03_17-57-21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_17_57_21.png)
 
-![Snipaste\_2026-02-03\_17-57-34](images/Snipaste_2026-02-03_17-57-34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_17_57_34.png)
 
-![Snipaste\_2026-02-03\_17-57-46](images/Snipaste_2026-02-03_17-57-46.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_03_17_57_46.png)
 
 **Note：**
 
@@ -1046,7 +1046,7 @@ The RS485 transceiver chips U27 and U28 are TDH341S485H, which feature:
 - Transient immunity > 25 kV/µs. Meanwhile, the OK3576-UP5 carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
 
-![Snipaste\_2026-02-04\_10-16-14](images/Snipaste_2026-02-04_10-16-14.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_04_10_16_14.png)
 
 #### 3.5.13 CAN Interface
 
@@ -1079,19 +1079,19 @@ For board-to-board connections via connectors, it is recommended to include seri
 
 The OK3588-UP5 development board supports two CAN interfaces utilizing isolated CAN transceivers. The isolation withstand voltage is as high as 5000VDC, with bus electrostatic discharge protection capability reaching 15kV (HBM) and a transient immunity of >25kV/μs. Meanwhile, the OK3588-UP5 carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![Snipaste\_2026-02-27\_10-04-50](images/Snipaste_2026-02-27_10-04-50.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_10_04_50.png)
 
 #### 3.5.13 Audio
 
 The OK3588 features an on-board I2S-interface Codec chip U43, supporting MIC input, headphone output, and 1W 8Ω speaker output. As shown in the figure below：
 
-![Snipaste\_2026-02-27\_10-12-30](images/Snipaste_2026-02-27_10-12-30.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_10_12_30.png)
 
 #### 3.5.14 4G\&5G Interface
 
 The OK3588-UP5 integrates an M.2 Key-B interface, compatible with 4G and 5G modules. Since 4G and 5G modules operate at different supply voltages, the switch S2 must be toggled to select the corresponding power supply voltage.
 
-![Snipaste\_2026-02-04\_10-26-38](images/Snipaste_2026-02-04_10-26-38.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_04_10_26_38.png)
 
 #### 3.5.15  USB2.0/USB3.0 Circuit
 
@@ -1113,7 +1113,7 @@ The embedded USB2.0 (HS/FS/LS) signals use a USB2.0 OTG PHY, with signal names i
 
 Only the TYPEC0\_OTG\_DM/TYPEC0\_OTG\_DP pins currently support Firmware Download. This interface must be reserved in designs (and TYPEC0\_USB20\_VBUSDET must also be connected).
 
-![Snipaste\_2026-02-27\_10-17-42](images/Snipaste_2026-02-27_10-36-52.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_10_36_52.png)
 
 USB3.0 SuperSpeed (SS) Signals (5Gbps):
 
@@ -1121,7 +1121,7 @@ Share multiplexing with DP1.4 via a USB/DP Combo PHY.
 
 Signal names are indicated within the red box in the diagram below.
 
-![Snipaste\_2026-02-27\_10-36-52](images/Snipaste_2026-02-27_10-42-39.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_10_42_39.png)
 
 Since the USB3.0 OTG and USB2.0 OTG share the same USB3.0 controller, the USB3.0 and USB2.0 OTG functions can only operate simultaneously as either Device or Host. It is not possible for the USB3.0 OTG to act as a Host while the USB2.0 OTG acts as a Device, or vice versa.
 
@@ -1131,7 +1131,7 @@ This USB3.0/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard
 
 - Configuration 1: Type-C 4-Lane (with DP function)
 
-![Snipaste\_2026-02-27\_10-42-39](images/Snipaste_2026-02-27_11-49-00.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_11_49_00.png)
 
 - Configuration 2: USB2.0 OTG+DP 4Lane（Swap OFF）
 
@@ -1139,21 +1139,21 @@ This USB3.0/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard
 
 - Configuration 3: USB2.0 OTG+DP 4Lane(Swap ON)
 
-![RK3588 Hardware Design Guide-V1](images/Snipaste_2026-02-27_13-35-38.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_13_35_38.png)
 
 - Configuration 4: USB3.0 OTG0+DP 2Lane（Swap OFF）
 
-![Snipaste\_2026-02-27\_13-35-38](images/Snipaste_2026-02-27_14-18-01.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_14_18_01.png)
 
 - Configuration 5: USB3.0 OTG+DP 2Lane（Swap ON）
 
-![Snipaste\_2026-02-27\_14-18-01](images/Snipaste_2026-02-27_14-18-35.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_14_18_35.png)
 
 The default configuration of OK3588-UP5 is dual Type-C 4Lane (with DP function), and the schematic diagram is as follows:
 
-![Snipaste\_2026-02-27\_14-18-35](images/image-20260828105215493.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828105215493.png)
 
-![image-20260828105215493](images/image-20260828105446723.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828105446723.png)
 
 USB3.0 HOST Controller supports only USB3.0 Host functionality and does not have an embedded USB2.0 Host.
 
@@ -1164,15 +1164,15 @@ USB2.0 HOST Controller 0 (Configuration 2) The internal link block diagram is as
 
 Configuration 1: USB3.0 HOST2+USB2.0 HOST1
 
-![image-20260828105446723](images/Snipaste_2026-02-27_14-41-11.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_14_41_11.png)
 
 Configuration 2: USB3.0 HOST2+USB2.0 HOST0
 
-![Snipaste\_2026-02-27\_14-41-11](images/Snipaste_2026-02-27_14-41-54.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_14_41_54.png)
 
 USB2.0 HOST Controller uses the USB2.0 HOST0 PHY. The signals within the red box in the diagram below form the USB2.0 Host interface:
 
-![Snipaste\_2026-02-27\_14-41-54](images/Snipaste_2026-02-27_14-51-28.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_14_51_28.png)
 
 **Note:**
 
@@ -1226,19 +1226,19 @@ The RK3588 chip features three SATA3.0 controllers and multiplexes PIPE PHY0/1/2
 
 - It also supports eSATA.
 
-![Snipaste\_2026-02-27\_14-51-28](images/Snipaste_2026-02-27_15-48-13.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_15_48_13.png)
 
 SATA0 controller uses PIPE \_ PHY0 (multiplexed with PCIe 3.0 x1 \_ 2 Controller) 
 
-![Snipaste\_2026-02-27\_15-48-13](images/Snipaste_2026-02-27_15-56-23.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_15_56_23.png)
 
 SATA1 controller uses PIPE \_ PHY1 (which is multiplexed with the PCIe3.0 x1 \_ 0 Controller). 
 
-![Snipaste\_2026-02-27\_15-56-23](images/Snipaste_2026-02-27_15-59-16.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_15_59_16.png)
 
 SATA2 controller uses PIPE \_ PHY2 (which is multiplexed with the PCIe 3.0 x1 \_ 1 Controller and the USB30 HOST2 Controller).
 
-![Snipaste\_2026-02-27\_15-59-16](images/Snipaste_2026-02-27_16-00-16.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_00_16.png)
 
 The control IOs related to the SATA0/ 1/2 controllers are as follows:
 
@@ -1280,7 +1280,7 @@ Three PCIe 2.0 Combo PHYs, Data Bit 1 Lane, PCIe 2.0/SATA 3.0 Combo PHY0, PCIe 2
 
 Mapping diagram between Controller and PHY:
 
-![Snipaste\_2026-02-27\_16-00- 16](images/Snipaste_2026-02-27_16-05-32.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_05_32.png)
 
 - Controller 0 (4L) Lane0 can only be combined with PCIe3.0 PHY0 Lane0;
 
@@ -1361,7 +1361,7 @@ Based on the above explanation, RK3588 can support multiple modes. Therefore, if
 
 The following figure shows the various combination modes of RK3588 PCIe:
 
-![Snipaste\_2026-02-27\_16-05-32](images/Snipaste_2026-02-27_16-15-17.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_15_17.png)
 
 PCIE20-REFCLKP/N supports both output and input, with default output provided to EP devices.  
 
@@ -1381,19 +1381,19 @@ PCIE30-REF\_CLKP/N only supports input:
 
 PCIe3.0 PHY0 x2Lane + PCIe3.0 PHY1 x2LanePCIe2.0/SATA3.0 PHY0 x1Lane + PCIe2.0/SATA3.0 PHY1 x1Lane
 
-![Snipaste\_2026-02-27\_16-15-17](images/Snipaste_2026-02-27_16-53-14.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_53_14.png)
 
 It should be noted that CLK0\_CON-P/N, CLK1\_CON-P/N, PCIE.A.CLK K-P/N, and PCIE.B.CLK K-P/N are generated by clock chip U22, as shown in the following diagram:
 
-![Snipaste\_2026-02-27\_16-53-14](images/Snipaste_2026-02-27_16-53-45.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_53_45.png)
 
 PCIe2.0/SATA3.0 PHY0 x1Lane + PCIe2.0/SATA3.0 PHY1 x1Lane
 
-![Snipaste\_2026-02-27\_16-53-45](images/Snipaste_2026-02-27_16-56-10.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_56_10.png)
 
 PCIe2.0/SATA3.0/USB3.0 PHY2 x1Lane
 
-![Snipaste\_2026-02-27\_16-56-10](images/image-20260828105721320.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828105721320.png)
 
 **PCIe2.0 Design Note:**
 
@@ -1429,7 +1429,7 @@ PCIe2.0/SATA3.0/USB3.0 PHY2 x1Lane
 - **For the PCIe3.0 interface, the TX0P/N and TX1P/N differential signal lines should be connected in series with 220nF AC coupling capacitors. It is recommended to use 0201 package capacitors for these AC coupling capacitors to achieve lower ESR and ESL, which also helps reduce impedance variations on the signal traces;**
 - **The correspondence between the control signals PCIE30\_CLKREQn, PCIE30\_WAKEn, PCIE30\_PERSTn, PCIE30X4\_BUTTON\_RSTN and the controller is shown in the figure below:**
 
-![image-20260828105721320](images/Snipaste_2026-02-27_17-08-44.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_08_44.png)
 
 - **PCIE30\_CLKREQn and PCIE30\_WAKEn must use dedicated function pins and cannot be replaced by GPIO. Special note: When selecting the function pin mode, both must be set to the same mode group (e.g., both must be \_M0, both \_M1, or both \_M2), and not a mix such as one \_M0 and one \_M1;**
 - **PCIE30\_PERSTn can be configured as either a dedicated function pin or replaced by a GPIO. If using a dedicated function pin, it must belong to the same \_Mx group as PCIE30\_CLKREQn and PCIE30\_WAKEn;**
@@ -1472,7 +1472,7 @@ RK3588 video input interfaces are MIPI RX, CIF, and HDMI. The MIPI RX includes t
 
 RK3588 features two MIPI DPHY CSI RX, both support MIPI V1.2 version, the maximum data rate of each channel is 2.5Gbps. The following diagram shows the pin layout of FET3588-UP5 MIPI DPHY CSI RX:
 
-![Snipaste\_2026-02-27\_17-08-44](images/Snipaste_2026-02-27_17-16-42.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_16_42.png)
 
 Supported interface modes for MIPI DPHY CSI0 RX:
 
@@ -1516,9 +1516,9 @@ The RK3588 is equipped with two MIPI D-PHY/C-PHY CSI RX Combo PHYs.
 
 The OK3588 is configured for D-PHY functionality by default. For signal pins, refer to the diagram below. If configuration to C-PHY is required, the key multiplexing details can be found in the Pin Mux table.
 
-![Snipaste\_2026-02-27\_17-16-42](images/Snipaste_2026-02-27_17-20-54.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_20_54.png)
 
-![Snipaste\_2026-02-27\_17-20-54](images/Snipaste_2026-02-27_17-21-20.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_21_20.png)
 
 Supported D-PHY and C-PHY Configuration Modes:
 
@@ -1552,9 +1552,9 @@ MIPI D/C-PHY1 mode support when operating in C-PHY:
 
 OK3588-UP5 is configured with four camera interfaces by default, namely MIPI-DPHY0-RX 4Lane, MIPI CSI0 2Lane+2Lane, and MIPI CSI1 2Lane. The schematic diagram is as shown below:
 
-![Snipaste\_2026-02-27\_17-21-20](images/Snipaste_2026-02-27_17-33-37.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_33_37.png)
 
-![Snipaste\_2026-02-27\_17-33-37](images/Snipaste_2026-02-27_17-33-54.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_33_54.png)
 
 MIPI RX Design Note:
 
@@ -1678,17 +1678,17 @@ The RK3588 chip supports HDMI2.0 RX and is backward compatible with HDMI1.4b. It
 
 The HDMI RX TMDS signals are shown in the figure below. It is required to reserve 2.2Ω resistors close to the HDMI RX connector. These must not be removed, as they enhance resistance against ESD and surge events.
 
-![Snipaste\_2026-02-27\_17-33-54](images/Snipaste_2026-02-27_17-44-18.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_44_18.png)
 
 HDMI\_RX\_HPDOUT is a function where the HDMI RX controller is multiplexed onto a regular GPIO. Its logic level depends on the voltage of its associated power domain. For details on which specific pins can be multiplexed and their corresponding voltage levels, please refer to the Pin Mux table.
 
 Since the HDMI RX controller does not support hardware detection of Source device hot-plugging, detection must be implemented in software. The recommended hardware circuit for this purpose is as follows:
 
-![Snipaste\_2026-02-27\_17-44-18](images/Snipaste_2026-02-27_17-44-58.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_44_58.png)
 
 Upon detecting a low-level signal at HDMI\_RX\_DET\_L, the HDMI\_RX\_HPDOUT output pulls high, turning on Q6. This allows VCC5V\_HDMIRX\_PORT to supply 5V to HDMI\_RX\_HPD\_PORT, completing the handshake with the Source device.
 
-![Snipaste\_2026-02-27\_17-44-58](images/Snipaste_2026-02-28_08-48-19.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_08_48_19.png)
 
 HDMI\_RX\_CEC is the HDMI controller’s CEC function multiplexed onto a general-purpose GPIO. For available pin assignments, refer to the Pin Mux table.
 
@@ -1702,7 +1702,7 @@ To prevent backflow, an isolation circuit is required externally.
 
 Q7 defaults to 2SK3018. If substituting with another model, ensure the junction capacitance is comparable. Excessive junction capacitance may disrupt operation and fail certification. (Reference schematic provided)
 
-![Snipaste\_2026-02-28\_08-48-19](images/Snipaste_2026-02-27_17-49-53.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_49_53.png)
 
 HDMI\_RX\_DDC\_SCL and HDMI\_RX\_DDC\_SDA are the HDMI RX controller’s I²C/DDC bus lines, multiplexed onto general-purpose GPIOs. For available pin assignments, refer to the Pin Mux table.
 
@@ -1714,7 +1714,7 @@ The DDC\_SCL/DDC\_SDA protocol specifies a 5V logic level. Since the RK3588 IO d
 
 The pull-up resistors should be set according to their default values and not altered arbitrarily.
 
-![Snipaste\_2026-02-27\_17-49-53](images/Snipaste_2026-02-27_17-50-32.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_50_32.png)
 
 **Please note in design:**
 
@@ -1746,7 +1746,7 @@ HDMI TX Mode: Supports a maximum resolution of 8K@60Hz, with formats including R
 
 eDP TX Mode: Supports a maximum resolution of 4K@60Hz, with formats including RGB/YUV422 (up to 10-bit).
 
-![Snipaste\_2026-02-27\_17-50-32](images/Snipaste_2026-02-28_10-57-30.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_10_57_30.png)
 
 <img src="images/Snipaste_2026-02-28_10-57-52.bmp" alt="Snipaste_2026-02-28_10-57-52" style="zoom:80%;" />
 
@@ -1768,7 +1768,7 @@ Please note in design:
 
 If it only needs to support HDMI 2.0 and below mode, Q17, Q18, Q19, and Q20 also can not be omitted; it needs to ensure that the machine is not power-on, the tube can not be on, as HDMI CTS Test ID 7-3 TMDS Voff test item requires that the DUT is not power-on, Voff voltage must be within AVcc +- 10mV, or this test item can not pass.
 
-![Snipaste\_2026-02-28\_10-57-30](images/Snipaste_2026-02-28_11-06-18.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_11_06_18.png)
 
 FRL mode: In a traditional TMDS architecture, a separate channel is used to transmit the clock signal; however, in the FRL architecture, the clock is embedded within the data channel and is extracted at the sink end via clock recovery.
 
@@ -1785,7 +1785,7 @@ The table below shows the relationship between FRL rates and channels:
 
 Support ARC/eARC to parse audio data internally into RK3588 through HDMI-TX-SBD\_P/HDMI-TX-SBD\_N signals.
 
-![Snipaste\_2026-02-28\_11-06-18](images/Snipaste_2026-02-28_11-11-01.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_11_11_01.png)
 
 HDMI-TX0-HPD is a common GPIO multiplexed by the HDMI TX controller, and its level varies with the voltage of the power domain it is in. The power supply voltage in the power domain has changed, and the pull-up resistor power supply in the peripheral circuit must also be adjusted synchronously.
 
@@ -1795,7 +1795,7 @@ The CEC protocol specifies a 3.3 V logic level; however, the protocol requires t
 
 When the RK3588 IO Domain is not powered, if there is voltage on the IO, leakage current may occur. For example, after the RK3588 is powered off, if the HDMI cable is still connected to the sink device (such as a TV or monitor), the CEC signal from the sink device carries voltage, which can leak to the RK3588 IO through the HDMI cable. This can cause CEC leakage current to exceed 1.8µA. Therefore, an external isolation circuit is required. The resistance value of R158 must not be modified arbitrarily and must be set to 27 kΩ. For Q15, the default selection is the 2SK3018. If another model is to be used, its junction capacitance must be comparable. If the junction capacitance is too large, it will not only affect operation but also fail certification.
 
-![Snipaste\_2026-02-28\_11-11-01](images/Snipaste_2026-02-28_11-23-44.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_11_23_44.png)
 
 HDMI-TX0/1 DDC\_SCL/DCD\_SDA is the I2C/DDC bus of the HDMI TX0/1 controller, which is functionally multiplexed onto ordinary GPIO. The level varies with the voltage of the power domain, and the power supply voltage of the power domain changes. The pull-up resistor of the peripheral circuit must also be synchronously adjusted.
 
@@ -1807,7 +1807,7 @@ Diode D11 must not be omitted; it is used to prevent leakage current from the Si
 
 For the level shifting of the SDA signal, a 1K resistor must be connected in series between the MOSFET gate and the power supply, and a 100pF capacitor must be placed in parallel between the MOSFET gate and source to improve timing characteristics. These components must not be removed.
 
-![Snipaste\_2026-02-28\_11-23-44](images/Snipaste_2026-02-28_11-27-52.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_11_27_52.png)
 
 The voltage on Pin 18 of the HDMI connector must be maintained between 4.8V and 5.3V. A 1μF decoupling capacitor must be placed for this pin and cannot be omitted. During layout, this capacitor must be positioned close to the HDMI connector pin.
 
@@ -1845,7 +1845,7 @@ Taking eDP TX0 as an example, eDP TX1 and eDP TX0 are consistent.
 
 EDP\_TX0-D0P/D0N, eDP\_TX0-D1P/D1N, eDP\_TX0-D2P/D2N, eDP\_TX0-D3P/D3N require a 100nF AC coupling capacitor to be connected in series. It is recommended to use 0201 packaging for the AC coupling capacitor, which has lower ESR and ESL, and can also reduce impedance changes on the circuit. When laying it out, place it near the FET3588-UP5 pin.
 
-![Snipaste\_2026-02-28\_11-27-52](images/Snipaste_2026-02-28_11-36-38.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_11_36_38.png)
 
 **Please note in design:**
 
@@ -1863,7 +1863,7 @@ The RK3588 features two MIPI D-PHY/C-PHY Combo PHY TX:
 
 - D-PHY supports version 1.1, with 0/1/2 Trio modes and 3 wires per Trio A/B/C. The maximum data transmission rate is 5.7Gbps/Terio (2.5Gsps).
 
-![Snipaste\_2026-02-28\_11-36-38](images/Snipaste_2026-02-28_11-52-26.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_11_52_26.png)
 
 Supported D-PHY and C-PHY Configuration Modes:
 
@@ -1889,7 +1889,7 @@ MIPI D/C-PHY1 mode support when operating in C-PHY:
 
 OK3588-UP5 is configured with 2 MIPI \_ DSI interfaces by default, which are MIPI \_ DPHY0 \_ TX \_ D \[3:0] x4Lane and MIPI \_ DPHY1 \_ TX \_ D \[3:0] x4Lane. The schematic diagram is as shown below:
 
-![Snipaste\_2026-02-28\_11-52-26](images/Snipaste_2026-02-28_13-54-42.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_13_54_42.png)
 
 **Please note in design:**
 
@@ -1996,13 +1996,13 @@ BT1120 output interface data correspondence, supports YC Swap.
 
 #### 4.1 SoM Pin Layout Diagram
 
-![Snipaste\_2026-02-28\_13-54-42](images/image-20260828112807262.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828112807262.png)
 
 ### 4.2 Packaging Design Diagram
 
 The SoM is packaged using LGA packaging method, with units in millimeters. Please refer to the following diagram for packaging design:
 
-![image-20260828112807262](images/image-20260828112719529.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828112719529.png)
 
 **Note: This product uses stepped steel mesh for welding. To ensure welding yield, please refer to the "UP5 Series SoM Mass Production Operation Manual" for the design of the encapsulated steel mesh**
 
@@ -2024,33 +2024,33 @@ Table 1 Linux System Power Consumption
 
 ## 6\. Minimum System Diagram
 
-![image-20260828112719529](images/Snipaste_2026-02-28_14-55-26.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_14_55_26.png)
 
-![Snipaste\_2026-02-28\_14-55-26](images/Snipaste_2026-02-28_14-55-38.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_14_55_38.png)
 
-![Snipaste\_2026-02-28\_14-55-38](images/Snipaste_2026-02-28_14-55-52.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_14_55_52.png)
 
-![Snipaste\_2026-02-28\_14-55-52](images/Snipaste_2026-02-28_14-56-17.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_28_14_56_17.png)
 
-![Snipaste\_2026-02-28\_14-56-17](images/Snipaste_2026-02-24_16-47-42.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_24_16_47_42.png)
 
-![Snipaste\_2026-02-24\_16-47-42](images/image-20260828135140728.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828135140728.png)
 
-![image-20260828135140728](images/image-20260828135159479.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828135159479.png)
 
-![image-20260828135159479](images/image-20260828135213639.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828135213639.png)
 
-![image-20260828135213639](images/Snipaste_2026-02-25_09-49-39.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_09_49_39.png)
 
-![Snipaste\_2026-02-25\_09-49-39](images/Snipaste_2026-02-25_09-57-38.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_09_57_38.png)
 
-![Snipaste\_2026-02-25\_09-57-38](images/Snipaste_2026-02-25_09-57-58.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_09_57_58.png)
 
-![Snipaste\_2026-02-25\_09-57-58](images/Snipaste_2026-02-25_09-58-38.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_25_09_58_38.png)
 
-![Snipaste\_2026-02-25\_09-58-38](images/image-20260828105215493.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/image_20260828105215493.png)
 
-![image-20260828105215493](images/Snipaste_2026-02-27_16-53-45.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_16_53_45.png)
 
 **Note:**
 
