@@ -21,7 +21,7 @@ Target Applications:
 ……
 
 **RK3588 Block Diagram**
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1720683826106-a8519d36-1ac2-4b5f-abf4-8f83c9803edd.png)
+!![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/1720683826106-a8519d36-1ac2-4b5f-abf4-8f83c9803edd.png)
 
 ## 2\. FET3588-UP5 SoM Description
 
