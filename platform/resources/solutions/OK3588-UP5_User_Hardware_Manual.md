@@ -27,7 +27,7 @@ Target Applications:
 
 ### 2.1 FET3588-UP5 Appearance Diagram
 
-![3588UP5 SoM](images/3588UP5%E6%A0%B8%E5%BF%83%E6%9D%BF.png)
+![](SoM.png)
 
 **Front**
 
@@ -747,7 +747,7 @@ Connection method: Stamp hole+board to board. The main interfaces are shown in t
 
 **Front**
 
-![3588UP5 Interface](images/3588UP5%E6%8E%A5%E5%8F%A3%E5%9B%BE.png)
+![](Interface.png)
 
 **Back**
 
