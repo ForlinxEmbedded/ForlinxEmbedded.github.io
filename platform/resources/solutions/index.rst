@@ -42,6 +42,7 @@ SOFTWARE
    OK1126B-S_Linux6_1_141_User_Manual
    OK1126BJ-S_Linux6_1_141_User_Compilation_Manual
    RK3572 AI_User's Manual_V1.0
+   OK3588-UP5_User_Hardware_Manual
 
 
 
