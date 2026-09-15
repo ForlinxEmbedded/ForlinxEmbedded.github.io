@@ -308,10 +308,10 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 | UP5 Standard Int|erface Functions| FET3588x-UP5 Pinout Functions| Num| Ball| GPIO| Vol| Pin Description|
 |----------|----------|----------|----------|----------|----------|----------|
-| MIPI\_DSI\_TP\_RST| GPIO0\_B2\_u-3V3| 439| K29| GPIO0\_B2\_u| 3.3V| MIPI\_DSI reset|
-| MIPI\_PWR\_EN| GPIO0\_B0\_z-3V3| 192| L30| GPIO0\_B0\_z| 3.3V| MIPI\_DSI enable signal|
+| MIPI\_DSI\_TP\_RST| GPIO0\_B2\_u-3V3| 439| K29| GPIO0\_B2\_u|3.3V| MIPI\_DSI reset|
+| MIPI\_PWR\_EN| GPIO0\_B0\_z-3V3| 192| L30| GPIO0\_B0\_z|3.3V| MIPI\_DSI enable signal|
 | PWM\_D| PWM3\_IR\_M1| 193| AE28| GPIO3\_B2\_d| 3.3V| PWM3|
-| MIPI\_DSI\_B\_TP\_INT| GPIO1\_A4\_d| 181| B25| GPIO1\_A4\_d| 3.3V| MIPI\_DSI interrupt|
+| MIPI\_DSI\_B\_TP\_INT| GPIO1\_A4\_d| 181| B25| GPIO1\_A4\_d|3.3V| MIPI\_DSI interrupt|
 | MIPI\_DSI\_B\_CLK\_P| MIPI\_DPHY1\_TX\_CLKP| 183| AN20| \-| \-| MIPI\_DPHY 1 send clock+|
 | MIPI\_DSI\_B\_CLK\_N| MIPI\_DPHY1\_TX\_CLKN| 184| AP20| \-| \-| MIPI\_DPHY 1 send clock-|
 | MIPI\_DSI\_B\_D0\_P| MIPI\_DPHY1\_TX\_D0P| 433| AN18| \-| \-| MIPI\_DPHY 1 send data 0+|
@@ -784,14 +784,14 @@ A - B - C + D E F : G - H
 | \-| Hyphen| \-| Grade Mark Connector|
 | H| Grade Identification| PC| Prototype Sample|
 | | | Blank| Mass Production|
-| | | SC| Dedicated – Only modified on a per-project basis according to specific customer requirements (e.g., replacing a component to alter a certain function).|
+| | | SC| Dedicated – Only modified on a per-project basis according to specific customer requirements <br />(e.g., replacing a component to alter a certain function). |
 
 #### 3.4 Carrier Board Interfaces
 
 | **Function**| **Quantity**| **Parameter**|
 |:----------:|:----------:|----------|
-| MIPI CSI| 4| 1 x MIPI DPHY V1.2 4-lane interface, supporting up to 2.5 Gbps per lane; connected via a 26-pin FPC socket, with the OV13850 camera mounted by default; 3 x MIPI DPHY V1.2 2-lane interfaces, supporting up to 2.5 Gbps per lane; brought out via three 26-pin FPC sockets; pre-mounted with an OV5645 camera by default;|
-| MIPI DSI| 2| · Each MIPI interface supports 4 lanes of output, with a maximum resolution of 4K@60fps; compatible with Forlinx 7-inch MIPI display, with a resolution of 1024 x 600@30fps; supports separate display and touch functionality.|
+| MIPI CSI| 4| · 1 x MIPI DPHY V1.2 4-lane interface, supporting up to 2.5 Gbps per lane; connected via a 26-pin FPC socket, with the OV13850 camera mounted by default;<br />· 3 x MIPI DPHY V1.2 2-lane interfaces, supporting up to 2.5 Gbps per lane; brought out via three 26-pin FPC sockets; pre-mounted with an OV5645 camera by default. |
+| MIPI DSI| 2| · Each MIPI interface supports 4 lanes of output, with a maximum resolution of 4K@60fps; compatible with Forlinx 7-inch MIPI display, <br />with a resolution of 1024 x 600@30fps; supports separate display and touch functionality. |
 | HDMI RX| 1| · Led out via a standard HDMI connector; · Supports up to 4K@60Hz.  |
 | HDMI TX| 1| · Led out via a standard HDMI connector;  · Supports up to 7680x4320@60Hz. |
 | eDP TX| 1| · Compatible with 1080p@60Hz displays; · Supports up to 4K@60Hz.  |
@@ -999,8 +999,9 @@ The P5 is the TF Card interface that supports system boot and programming. The p
 
 The OK3588-UP5 features an on-board external RTC function to enable more accurate timing and lower power consumption. The schematic diagram is shown below:
 
-<img src="images/Snipaste_2026-02-03_17-53-58.png" alt="Snipaste_2026-02-03_17-53-58" style="zoom:75%;" />
-#### 3.5.11 Ethernet Circuit
+![Image](C:/Users/1/Desktop/Snipaste_2026-02-03_17-53-58.png)
+
+### 3.5.11 Ethernet Circuit
 
 Supports 1000/100/10M adaptive network port, led out via RJ45.
 
@@ -1135,7 +1136,7 @@ This USB3.0/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard
 
 - Configuration 2: USB2.0 OTG+DP 4Lane（Swap OFF）
 
-![Snipaste\_2026-02-27\_11-49-00](images/RK3588%20Hardware%20Design%20Guide-V1.jpg)
+![Image](333.jpg)
 
 - Configuration 3: USB2.0 OTG+DP 4Lane(Swap ON)
 
@@ -1304,7 +1305,7 @@ Mapping diagram between Controller and PHY:
 - Controller 1 (2L) + PCIe3.0 PHY1 forms a 2-Lane PCIe3.0 x2 RC mode.  It is also compatible with PCIe3.0 x1 RC mode.
 
 | FET3588 PECI Signal| | PCIe3.0 x 2Lane RC| PCIe3.0 x 1Lane RC|
-|----------|----------|:----------:|:----------:||
+|----------|----------|:----------:|:----------:|
 | Port1| PCIE30\_PORT1\_TX0P/N| ✔| ✔|
 | | PCIE30\_PORT1\_RX0P/N| ✔| ✔|
 | | PCIE30\_PORT1\_TX1P/N| ✔| ✘|
@@ -1420,7 +1421,7 @@ PCIe2.0/SATA3.0/USB3.0 PHY2 x1Lane
 - **Data routing impedance control differential 85ohm ±10%;**
 - **Clock routing impedance control differential 100ohm±10%;**
 
-- **Inter-Pair Skew maximum ＜3mil; **
+- **Inter-Pair Skew maximum ＜3mil;** 
 - **Differential pair space is better than or equal to 4 times the PCI-E line width.**
 
 **PCIe3.0 Design Note:**
@@ -1556,23 +1557,16 @@ OK3588-UP5 is configured with four camera interfaces by default, namely MIPI-DPH
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/Snipaste_2026_02_27_17_33_54.png)
 
-MIPI RX Design Note:
+**MIPI RX Design Note:**
 
-1\. The wiring impedance requires a differential of 100ohm ± 10%;
-
-2\. The impedance requirement for wiring is 50 ohms ± 10% for a single end;
-
-3\. Maximum intra-pair delay skew within a differential pair: \<3 mils;
-
-4\. The length between clock and data is less than 6mil;
-
-5\. It is recommended that the distance between differential pairs be greater than 4 times the MIPI line width, and at least 3 times the MIPI line width is required;
-
-6\. It is recommended that the distance between MIPI and other signals be greater than 4 times the MIPI line width, and at least 3 times the MIPI line width is required;
-
-7\. When configured as CPHY, the maximum delay difference within the group (TRIO\_A\\TRIO\_B\\TRIO\_C) is less than 3 mil;
-
-8\. Inter group (TRIO0 \\ TRIO1 \\ TRIO2) equal length requirement\<50mil;
+- **The wiring impedance requires a differential of 100ohm ± 10%;**
+- **The impedance requirement for wiring is 50 ohms ± 10% for a single end;**
+- **Maximum intra-pair delay skew within a differential pair: \<3 mils;**
+- **The length between clock and data is less than 6mil;**
+- **It is recommended that the distance between differential pairs be greater than 4 times the MIPI line width, and at least 3 times the MIPI line width is required;**
+- **It is recommended that the distance between MIPI and other signals be greater than 4 times the MIPI line width, and at least 3 times the MIPI line width is required;**
+- **When configured as CPHY, the maximum delay difference within the group (TRIO\_A\\TRIO\_B\\TRIO\_C) is less than 3 mil;**
+- **Inter group (TRIO0 \\ TRIO1 \\ TRIO2) equal length requirement\<50mil.**
 
 **3.5.18.3 CIF Interface**
 
@@ -1960,25 +1954,25 @@ The reuse relationship between BT1120 and BT656 is shown in the following table:
 
 BT1120 output interface data correspondence, supports YC Swap.
 
-| Pin Name| Default Mode| | Swap Open|
-|:----------:|:----------:|----------|:----------:|----------|
-| | Pixel #0| Pixel #1| Pixel #0| Pixel #1|
-| BT1120\_D0| Y0\[0]| Y1\[0]| Cb0\[0]| Cr0\[0]|
-| BT1120\_D1| Y0\[1]| Y1\[1]| Cb0\[1]| Cr0\[1]|
-| BT1120\_D2| Y0\[2]| Y1\[2]| Cb0\[2]| Cr0\[2]|
-| BT1120\_D3| Y0\[3]| Y1\[3]| Cb0\[3]| Cr0\[3]|
-| BT1120\_D4| Y0\[4]| Y1\[4]| Cb0\[4]| Cr0\[4]|
-| BT1120\_D5| Y0\[5]| Y1\[5]| Cb0\[5]| Cr0\[5]|
-| BT1120\_D6| Y0\[6]| Y1\[6]| Cb0\[6]| Cr0\[6]||
-| BT1120\_D7| Y0\[7]| Y1\[7]| Cb0\[7]| Cr0\[7]|
-| BT1120\_D8| Cb0\[0]| Cr0\[0]| Y0\[0]| Y1\[0]|
-| BT1120\_D9| Cb0\[1]| Cr0\[1]| Y0\[1]| Y1\[1]|
-| BT1120\_D10| Cb0\[2]| Cr0\[2]| Y0\[2]| Y1\[2]|
-| BT1120\_D11| Cb0\[3]| Cr0\[3]| Y0\[3]| Y1\[3]|
-| BT1120\_D12| Cb0\[4]| Cr0\[4]| Y0\[4]| Y1\[4]|
-| BT1120\_D13| Cb0\[5]| Cr0\[5]| Y0\[5]| Y1\[5]|
-| BT1120\_D14| Cb0\[6]| Cr0\[6]| Y0\[6]| Y1\[6]|
-| BT1120\_D15| Cb0\[7]| Cr0\[7]| Y0\[7]| Y1\[7]|
+|  Pin Name  | Default Mode |          | Swap On  |
+| :--------: | :----------: | -------- | :------: |
+|            |   Pixel #0   | Pixel #1 | Pixel #0 |
+| BT1120_D0  |    Y0[0]     | Y1[0]    |  Cb0[0]  |
+| BT1120_D1  |    Y0[1]     | Y1[1]    |  Cb0[1]  |
+| BT1120_D2  |    Y0[2]     | Y1[2]    |  Cb0[2]  |
+| BT1120_D3  |    Y0[3]     | Y1[3]    |  Cb0[3]  |
+| BT1120_D4  |    Y0[4]     | Y1[4]    |  Cb0[4]  |
+| BT1120_D5  |    Y0[5]     | Y1[5]    |  Cb0[5]  |
+| BT1120_D6  |    Y0[6]     | Y1[6]    |  Cb0[6]  |
+| BT1120_D7  |    Y0[7]     | Y1[7]    |  Cb0[7]  |
+| BT1120_D8  |    Cb0[0]    | Cr0[0]   |  Y0[0]   |
+| BT1120_D9  |    Cb0[1]    | Cr0[1]   |  Y0[1]   |
+| BT1120_D10 |    Cb0[2]    | Cr0[2]   |  Y0[2]   |
+| BT1120_D11 |    Cb0[3]    | Cr0[3]   |  Y0[3]   |
+| BT1120_D12 |    Cb0[4]    | Cr0[4]   |  Y0[4]   |
+| BT1120_D13 |    Cb0[5]    | Cr0[5]   |  Y0[5]   |
+| BT1120_D14 |    Cb0[6]    | Cr0[6]   |  Y0[6]   |
+| BT1120_D15 |    Cb0[7]    | Cr0[7]   |  Y0[7]   |
 
 **Please note in Design:**
 
@@ -2011,7 +2005,7 @@ The SoM is packaged using LGA packaging method, with units in millimeters. Pleas
 Table 1 Linux System Power Consumption
 
 | **No.**| **Test Item**| **SoM Power (W)**| **Development Board Power (W)**|
-|:----------:|:----------:|:----------:|:----------:||
+|:----------:|:----------:|:----------:|:----------:|
 | 1| No-load startup peak power| 7.77| 9.78|
 | 2| Sleep mode power consumption| 0.34| 0.36|
 | 3| Standby power consumption with no load| 2.46| 3.66|
