@@ -306,22 +306,22 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 ##### MIPI\_DSI\_B
 
-| UP5 Standard Int|erface Functions| FET3588x-UP5 Pinout Functions| Num| Ball| GPIO| Vol| Pin Description|
-|----------|----------|----------|----------|----------|----------|----------|
-| MIPI\_DSI\_TP\_RST| GPIO0\_B2\_u-3V3| 439| K29| GPIO0\_B2\_u|3.3V| MIPI\_DSI reset|
-| MIPI\_PWR\_EN| GPIO0\_B0\_z-3V3| 192| L30| GPIO0\_B0\_z|3.3V| MIPI\_DSI enable signal|
-| PWM\_D| PWM3\_IR\_M1| 193| AE28| GPIO3\_B2\_d| 3.3V| PWM3|
-| MIPI\_DSI\_B\_TP\_INT| GPIO1\_A4\_d| 181| B25| GPIO1\_A4\_d|3.3V| MIPI\_DSI interrupt|
-| MIPI\_DSI\_B\_CLK\_P| MIPI\_DPHY1\_TX\_CLKP| 183| AN20| \-| \-| MIPI\_DPHY 1 send clock+|
-| MIPI\_DSI\_B\_CLK\_N| MIPI\_DPHY1\_TX\_CLKN| 184| AP20| \-| \-| MIPI\_DPHY 1 send clock-|
-| MIPI\_DSI\_B\_D0\_P| MIPI\_DPHY1\_TX\_D0P| 433| AN18| \-| \-| MIPI\_DPHY 1 send data 0+|
-| MIPI\_DSI\_B\_D0\_N| MIPI\_DPHY1\_TX\_D0N| 434| AP18| \-| \-| MIPI\_DPHY 1 send data 0-|
-| MIPI\_DSI\_B\_D1\_P| MIPI\_DPHY1\_TX\_D1P| 311| AN19| \-| \-| MIPI\_DPHY 1 send data 1+|
-| MIPI\_DSI\_B\_D1\_N| MIPI\_DPHY1\_TX\_D1N| 312| AP19| \-| \-| MIPI\_DPHY 1 send data 1-|
-| MIPI\_DSI\_B\_D2\_P| MIPI\_DPHY1\_TX\_D2P| 430| AN21| \-| \-| MIPI\_DPHY 1 send data 2+|
-| MIPI\_DSI\_B\_D2\_N| MIPI\_DPHY1\_TX\_D2N| 431| AP21| \-| \-| MIPI\_DPHY 1 send data 2-|
-| MIPI\_DSI\_B\_D3\_P| MIPI\_DPHY1\_TX\_D3P| 308| AN22| \-| \-| MIPI\_DPHY 1 send data 3+|
-| MIPI\_DSI\_B\_D3\_N| MIPI\_DPHY1\_TX\_D3N| 309| AP22| \-| \-| MIPI\_DPHY 1 send data 3-|
+| UP5 Standard Interface | FET3588x-UP5 Pinout Default Function | Num  | Ball | GPIO       | Vol  | Pin Description          |
+| ---------------------- | ------------------------------------ | ---- | ---- | ---------- | ---- | ------------------------ |
+| MIPI_DSI_TP_RST        | GPIO0_B2_u-3V3                       | 439  | K29  | GPIO0_B2_u | 3.3V | MIPI_DSI Reset           |
+| MIPI_PWR_EN            | GPIO0_B0_z-3V3                       | 192  | L30  | GPIO0_B0_z | 3.3V | MIPI_DSI Enable Signal   |
+| PWM_D                  | PWM3_IR_M1                           | 193  | AE28 | GPIO3_B2_d | 3.3V | PWM3                     |
+| MIPI_DSI_B_TP_INT      | GPIO1_A4_d                           | 181  | B25  | GPIO1_A4_d | 3.3V | MIPI_DSI Interrupt       |
+| MIPI_DSI_B_CLK_P       | MIPI_DPHY1_TX_CLKP                   | 183  | AN20 | -          | -    | MIPI_DPHY 1 Send Clock+  |
+| MIPI_DSI_B_CLK_N       | MIPI_DPHY1_TX_CLKN                   | 184  | AP20 | -          | -    | MIPI_DPHY 1 Send Clock-  |
+| MIPI_DSI_B_D0_P        | MIPI_DPHY1_TX_D0P                    | 433  | AN18 | -          | -    | MIPI_DPHY 1 Send Data 0+ |
+| MIPI_DSI_B_D0_N        | MIPI_DPHY1_TX_D0N                    | 434  | AP18 | -          | -    | MIPI_DPHY 1Send Data 0-  |
+| MIPI_DSI_B_D1_P        | MIPI_DPHY1_TX_D1P                    | 311  | AN19 | -          | -    | MIPI_DPHY 1 Send Data 1+ |
+| MIPI_DSI_B_D1_N        | MIPI_DPHY1_TX_D1N                    | 312  | AP19 | -          | -    | MIPI_DPHY 1Send Data 1-  |
+| MIPI_DSI_B_D2_P        | MIPI_DPHY1_TX_D2P                    | 430  | AN21 | -          | -    | MIPI_DPHY 1Send Data 2+  |
+| MIPI_DSI_B_D2_N        | MIPI_DPHY1_TX_D2N                    | 431  | AP21 | -          | -    | MIPI_DPHY 1 Send Data 2- |
+| MIPI_DSI_B_D3_P        | MIPI_DPHY1_TX_D3P                    | 308  | AN22 | -          | -    | MIPI_DPHY 1Send Data 3+  |
+| MIPI_DSI_B_D3_N        | MIPI_DPHY1_TX_D3N                    | 309  | AP22 | -          | -    | MIPI_DPHY 1 Send Data 3- |
 
 ##### eDP
 
