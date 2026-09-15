@@ -21,7 +21,7 @@ Target Applications:
 ……
 
 **RK3588 Block Diagram**
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/1720683826106-a8519d36-1ac2-4b5f-abf4-8f83c9803edd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/1720683826106_a8519d36_1ac2_4b5f_abf4_8f83c9803edd.png)
 
 ## 2\. FET3588-UP5 SoM Description
 
@@ -1136,7 +1136,11 @@ This USB3.0/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard
 
 - Configuration 2: USB2.0 OTG+DP 4Lane（Swap OFF）
 
+<<<<<<< HEAD
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/333.jpg)
+=======
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-UP5_User_Hardware_Manual/333.jpg)
+>>>>>>> 1c7f7cd9eb9c96f5f0efb2f2b3e733391529b232
 
 - Configuration 3: USB2.0 OTG+DP 4Lane(Swap ON)
 
