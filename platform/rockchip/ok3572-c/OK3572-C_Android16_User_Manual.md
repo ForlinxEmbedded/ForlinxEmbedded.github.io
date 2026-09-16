@@ -423,7 +423,7 @@ Enter www.forlinx.net in the address bar to test the network.
 
 ### 3.11 WiFi Test
 
-**Note: **
+**Note:** 
 
 - **Network priority: Ethernet > Wi-Fi > Mobile Network;**
 
@@ -461,7 +461,7 @@ Tap “Hotspot \& tethering”
 
 Tap “Wi-Fi hotspot”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778827780016_ba0dedb2_3bb5_48a2_a224_1ef2d34c25f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image.png)
 
 Enable the Wi-Fi hotspot and set the hotspot name and password.
 
@@ -536,7 +536,10 @@ This development board features a total of 7 keys: VOL+, VOL-, MENU, ESC, PWRON,
 By default, the board is set to not automatically sleep. A short press of the PWRON key will turn off the screen and put the system into sleep mode (note: do not connect any wake-up sources, such as USB OTG, to the bottom board during this test). The following log message indicates successful entry into sleep mode:
 
 ```bash
-130|console:/sdcard $ [  498.148783][  T360] type=1400 audit(1778819566.832:195): avc:  denied  { sys_nice } for  comm="binder:709_3" capability=23  scontext=u:r:hal_power_default:s0 tcontext=u:r:hal_power_default:s0 tclass=capability permissive=0
+130|console:/sdcard $ [  498.148783][  T360] type=1400 audit(1778819566.832:195): avc:  denied  { sys_nice } for  comm="binder:709_3" capability=23
+ 
+ scontext=u:r:hal_power_default:s0 tcontext=u:r:hal_power_default:s0 tclass=capability permissive=0
+
 [  498.298714][  T408] rockchip-vop2 27500000.vop: [drm:vop2_crtc_atomic_disable] Crtc atomic disable vp1
 [  498.317108][  T408] [WLAN_RFKILL]: wlan_early_suspend :enter
 [  498.444878][  T155] rk3x-i2c 2c040000.i2c: timeout, ipd: 0x30, state: 3
@@ -1010,11 +1013,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![Image](1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click Install Driver.
 
-![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 ### **4.1.2** OTG Flashing Test
 
@@ -1030,19 +1033,19 @@ The extraction directory for Rockchip's development tools can be arbitrary, but 
 
 Open the Rockchip development tool:
 
-![Image](1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
-![Image](1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
 
 Click "Advanced Functions" -> "Erase All" to erase the operation.
 
-![Image](1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
 
 Click the "Upgrade Firmware" button -> "Upgrade" to begin upgrading.
 
-![Image](1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 **MASKROM Mode Introduction**
 
@@ -1073,11 +1076,11 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.
 
-![Image](1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
 After selecting the firmware, click Start. The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
 ### 4.2 TF System Flashing
 
@@ -1087,13 +1090,13 @@ Flashing TF card making and testing
 
 Copy SDDiskTool\_v1.69.zip from the user profile tool directory to any windows directory. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
