@@ -64,6 +64,7 @@ SOFTWARE
 
    OK3572-C_Linux_6_12_58_User_Manual
    OK3572-C_Linux_6_12_58_User_Compilation_Manual
+   OK3572-C_Android16_User_Manual
 
    
 
