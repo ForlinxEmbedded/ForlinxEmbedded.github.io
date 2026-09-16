@@ -69,11 +69,11 @@ The RK3572 is a low-power, high-performance processor based on the ARM64 archite
 
 Connection method: Board-to-board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512294298-de6b9bb0-676c-49ab-a239-e5a7ab4502b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1781512294298_de6b9bb0_676c_49ab_a239_e5a7ab4502b1.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1781512294464-e5259bd2-b1ab-4eca-99d6-659ea1cc755a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1781512294464_e5259bd2_b1ab_4eca_99d6_659ea1cc755a.png)
 
 **Back**
 
@@ -170,11 +170,11 @@ Step 1: Confirm the serial port number connected to the computer, checking the p
 
 Step 2: Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to **1500000**;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778825266830-503fbc41-1a54-4e2d-b67f-1a34451381a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778825266830_503fbc41_1a54_4e2d_b67f_1a34451381a7.png)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure, using COM59 as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778825331824-d3887a53-4a9f-44a4-9bda-271edc710cc1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778825331824_d3887a53_4a9f_44a4_9bda_271edc710cc1.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -285,7 +285,7 @@ Long-pressing “PWRON” for 6 seconds will force a power-off.
 
 ### 3.1 Home Screen Display
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778825548905-92158658-bbc6-414d-aad9-920f99c81c80.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778825548905_92158658_bbc6_414d_aad9_920f99c81c80.png)
 
 ### 3.2 App Drawer
 
@@ -327,11 +327,11 @@ Open the “Music” app from the App Drawer.
 
 Tap “Songs” on this interface to enter the song list interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778826086053-ca4b5ab5-376b-4495-b6e3-e281c616b974.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778826086053_ca4b5ab5_376b_4495_b6e3_e281c616b974.png)
 
 Tap to play music, entering the playback interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778826131842-29729e6a-5b54-44e0-ab7e-dc11d4034d82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778826131842_29729e6a_5b54_44e0_ab7e_dc11d4034d82.png)
 
 You can adjust the volume using the physical VOL+ and VOL- buttons on the development board’s carrier board.
 
@@ -341,15 +341,15 @@ Open the “Recorder” app from the App Drawer.
 
 Tap the “Circle button” to start recording. (Note: The indicator will swing according to sound levels during normal recording.)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778826257601-b438d529-d6a3-4629-8db2-827655a00f3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778826257601_b438d529_d6a3_4629_8db2_827655a00f3e.png)
 
 Tap the “Square button” to stop recording, then finally tap the “Save” button to save the recording.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778826321640-6ae587c0-29ca-4382-bc63-46a22b57b091.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778826321640_6ae587c0_29ca_4382_bc63_46a22b57b091.png)
 
-Tap the “![](https://cdn.nlark.com/yuque/0/2024/jpg/49874024/1730793553665-5074b3ec-8add-4e87-9fd8-afd11a911166.jpg)” at the bottom to display previously recorded audio files.
+Tap the “![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1730793553665_5074b3ec_8add_4e87_9fd8_afd11a911166.jpg)” at the bottom to display previously recorded audio files.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778826345018-cb74b561-f458-4862-97f2-beb00d965924.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778826345018_cb74b561_f458_4862_97f2_beb00d965924.png)
 
 Tap the audio file you want to play to start playback.
 
@@ -461,7 +461,7 @@ Tap “Hotspot \& tethering”
 
 Tap “Wi-Fi hotspot”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778827780016-ba0dedb2-3bb5-48a2-a224-1ef2d34c25f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778827780016_ba0dedb2_3bb5_48a2_a224_1ef2d34c25f9.png)
 
 Enable the Wi-Fi hotspot and set the hotspot name and password.
 
@@ -661,7 +661,7 @@ The K3572 carrier board features five serial ports: UART0, UART4, UART8, UART9 a
 
 The UART9 and UART11 RS485 are used for the test. Before the test, the pins A and B of the two RS485 interfaces shall be connected, with A connected to A and B connected to B. The carrier board interfaces for the two RS485 are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778833922151-42872f73-eb4e-49ae-97b8-2a0d70287a25.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778833922151_42872f73_eb4e_49ae_97b8_2a0d70287a25.png)
 
 Open the "Serial Port Test" app in the application drawer and click the "Setup" button.
 
@@ -671,7 +671,7 @@ Set the "Baud rate" to "115200".
 
 Set 'Display format' to "char".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834088299-64191367-114e-4f7d-abbf-8f6b4f8368e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834088299_64191367_114e_4f7d_abbf_8f6b4f8368e9.png)
 
 Click on the "CONSOLE" option in the previous menu to perform a sending and receiving test.
 
@@ -687,7 +687,7 @@ console:/ #
 
 At this point, the app received data from ttyS6, as shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834134398-9fd70950-bae3-4cf4-9a1d-83d1a689502e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834134398_9fd70950_bae3_4cf4_9a1d_83d1a689502e.png)
 
 Open ttyS11 in the command line terminal to receive data.
 
@@ -699,7 +699,7 @@ console:/ # cat /dev/ttyS11
 
 Enter the data to be sent in the Emission text box in the app, click SEND to send, as shown in the figure.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834201789-b678dd77-7362-4116-a1b6-f954979c3c37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834201789_b678dd77_7362_4116_a1b6_f954979c3c37.png)
 
 The command line terminal can receive data from ttyS11.
 
@@ -716,23 +716,23 @@ At present, it supports OV13855 (connected to CAM1 and CAM4 interfaces), OV5645 
 
 Open the "Camera" app in the application drawer interface and configure relevant permissions.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834324004-b8d1332e-d184-420d-87e4-783999da1f83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834324004_b8d1332e_d184_420d_87e4_783999da1f83.png)
 
 Preview interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834347625-3e6f0b60-5cd7-46ee-a6da-ca05646dee55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834347625_3e6f0b60_5cd7_46ee_a6da_ca05646dee55.png)
 
 Swipe up the bottom right corner of the preview interface to record, and you can choose to take a photo or video
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834430906-f5127e2b-6432-41d0-a642-15d5e16ef268.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834430906_f5127e2b_6432_41d0_a642_15d5e16ef268.png)
 
-Swipe left on the preview interface and click on the first icon![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834469659-5e530739-16e6-4bb9-83d9-5aba60705d3f.png)to switch cameras (this camera app only supports two cameras).
+Swipe left on the preview interface and click on the first icon![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834469659_5e530739_16e6_4bb9_83d9_5aba60705d3f.png)to switch cameras (this camera app only supports two cameras).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834562400-03e733d5-9790-4769-9376-950b10bf75cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834562400_03e733d5_9790_4769_9376_950b10bf75cd.png)
 
 Open the "MultipleCamera" app in the application drawer interface to display multiple camera images (640 \* 480) simultaneously.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778834594402-cd562326-b8ec-4281-bec0-3be8cefd0fcf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778834594402_cd562326_b8ec_4281_bec0_3be8cefd0fcf.png)
 
 #### 3.21 HDMI Setting Resolution Test
 
@@ -810,7 +810,7 @@ This toggle controls root permissions, including:
 
 Open the “RootChecker” app from the app drawer to test whether a system app can obtain root permission.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778838052994-d60bb7a0-0bb3-4ac2-81c8-9a86dfa64ea1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778838052994_d60bb7a0_0bb3_4ac2_81c8_9a86dfa64ea1.png)
 
 ### 3.25 Screen Lock Test
 
@@ -846,17 +846,17 @@ Tap “CAN”.
 
 Set the baud rate and mode for can0 and can1.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778838266059-84ecb275-11d5-4422-b896-50be4c3c707c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778838266059_84ecb275_11d5_4422_b896_50be4c3c707c.png)
 
 Short the H and L lines for can0 and can1 respectively.
 
 Open the “can” app from the app drawer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839013583-3b4e3a69-5601-46c3-b55e-4b80dab5a74d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839013583_3b4e3a69_5601_46c3_b55e_4b80dab5a74d.png)
 
 Tap “SETTING” to configure CAN parameters, then tap “CAN\_ON” to enable CAN.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839045120-1bdda404-0221-49fd-8901-eab4ebe22f9d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839045120_1bdda404_0221_49fd_8901_eab4ebe22f9d.png)
 
 Now, execute the cangen command in the terminal (requires root permission), and data will be visible in the app.
 
@@ -869,7 +869,7 @@ console:/ # cangen -vv -n 5 can1
   can1  778   [4]  0D 0D 59 32
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839079060-f7f895a1-9541-44cd-92d8-4f9a3f1c4280.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839079060_f7f895a1_9541_44cd_92d8_4f9a3f1c4280.png)
 
 Execute the candump command in the terminal. Input hexadecimal data in the app’s bottom text box, then click “SEND” to transmit. Data can then be received in the terminal.
 
@@ -880,11 +880,11 @@ console:/ # candump can1
   can1  123   [4]  12 34 56 78 
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839138802-b9bca387-e777-40db-974b-5919dd437d5f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839138802_b9bca387_e777_40db_974b_5919dd437d5f.png)
 
 For CAN FD testing, the CAN FD mode key needs to be set at boot. 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839355577-39399a79-ba1f-41b6-9dd7-c783bf0b2d35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839355577_39399a79_ba1f_41b6_9dd7_c783bf0b2d35.png)
 
 The testing method is the same as for standard CAN. You can test this independently, and details are omitted here.
 
@@ -894,13 +894,13 @@ Open the “WatchdogTest” app from the app drawer.
 
 Set the timeout period and click “Start” to activate the watchdog. Click “Feed” to feed the watchdog. If it is not fed within the timeout period, the development board will reboot.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839442242-e948c41f-2fc5-4142-aae6-36ccb5b6ebdd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839442242_e948c41f_2fc5_4142_aae6_36ccb5b6ebdd.png)
 
 ### 3.28 ADC Test
 
 Open the “ADCTest” app from the app drawer. The displayed value is the reading from the ADC.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839460640-885f5bda-a46e-4b34-ab77-7397aab699ff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839460640_885f5bda_a46e_4b34_ab77_7397aab699ff.png)
 
 ### 3.29 GPIO Test
 
@@ -926,13 +926,13 @@ pin\_number = 515 + 1 \* 8 + 2 = 525
 
 Open the “GPIOTest” app from the app drawer. Enter the calculated pin\_number in the “pin number” text box, click “open” to open the GPIO, and then you can perform read, set to 1, or clear to 0 operations.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1778839495232-4c550a73-f446-4e4f-83fa-5d37c64a011c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1778839495232_4c550a73_f446_4e4f_83fa_5d37c64a011c.png)
 
 ### 3.30 I2C Test
 
 Open the “FltestI2C” app from the app drawer. Click the “Read” button to read the time from the i2c4 RX8010 RTC chip.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779068751807-c7657695-84d7-40e6-aac9-d508567e7e41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779068751807_c7657695_84d7_40e6_aac9_d508567e7e41.png)
 
 ### 3.31 Navigation Bar Settings
 
@@ -968,7 +968,7 @@ Change the value of config\_navBarInteractionMode to 2.
 
 Open the “OK3572ForlinxHwConfig” app from the app drawer to configure functions like screen switching and the main display.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779690210390-b9119095-47a7-42ea-8a35-de071217864a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779690210390_b9119095_47a7_42ea_8a35_de071217864a.png)
 
 vp0 screen display:   Currently only supports HDMI.
 
@@ -986,15 +986,15 @@ Automatic Doze mode after wake-up and reboot:  Default is OFF.
 
 Open the “SilentInstallTest” app from the app drawer.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779690560886-cf85c724-dfcb-412e-bfd1-dba21bd48c92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779690560886_cf85c724_dfcb_412e_bfd1_dba21bd48c92.png)
 
 Click “Select APK file” to choose the app to install.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779690727083-eac2fa47-6898-413a-af51-29ead3d92144.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779690727083_eac2fa47_6898_413a_af51_29ead3d92144.png)
 
 Click “Silent Install.”
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779691049560-0edcb51b-4587-40fc-87ce-e110fd51753c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779691049560_0edcb51b_4587_40fc_87ce_e110fd51753c.png)
 
 Currently only supports regular user apps.
 
@@ -1139,15 +1139,15 @@ adb push ok3572_c-ota.zip /storage/emulated/0/update.zip
 
 After uploading the upgrade package via ADB, restart the development board to trigger the system to detect the upgrade package. Click “Install”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779081464472-77ff4c34-d853-41c3-bc01-0faebecf5840.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779081464472_77ff4c34_d853_41c3_bc01_0faebecf5840.png)
 
 Click “Install”
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779081546280-9685613f-f4cf-4ac6-ba2d-d1d87ac365b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1779081546280_9685613f_f4cf_4ac6_ba2d_d1d87ac365b6.png)
 
 The debug window will display the following information:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpg/49874024/1730793568499-cd64dd67-8f70-4804-a9cc-fd572e141bd3.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1730793568499_cd64dd67_8f70_4804_a9cc_fd572e141bd3.jpg)
 
 Afterward, the system will automatically reboot into Recovery mode and complete the OTA package upgrade. Do not power off during this process. 
 
