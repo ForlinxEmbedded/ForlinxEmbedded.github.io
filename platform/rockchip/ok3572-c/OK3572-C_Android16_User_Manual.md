@@ -291,7 +291,7 @@ Long-pressing “PWRON” for 6 seconds will force a power-off.
 
 Swipe up on the home screen to display the following interface.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548333802.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548333802.png)
 
 **Note: There may be minor differences after a software version update. The provided images are for reference only and do not represent the exact interface for every subsequent version update.**
 
@@ -299,15 +299,15 @@ Swipe up on the home screen to display the following interface.
 
 Open the “Settings” app from the App Drawer and tap “System”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548358431.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548358431.png)
 
 Tap “Languages \& input” to enter the language settings interface.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548403430.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548403430.png)
 
 Here, you can select the desired language to set.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548417291.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548417291.png)
 
 ### 3.4 Viewing Images and Videos
 
@@ -317,7 +317,7 @@ Open the “Gallery” app from the App Drawer.
 
 Configure permissions as needed.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548428088.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548428088.png)
 
 ### 3.5 Audio Test
 
@@ -357,25 +357,25 @@ Tap the audio file you want to play to start playback.
 
 Open the “Settings” app from the App Drawer, tap “Sound \& vibration” to enter the volume settings interface.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548496078.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548496078.png)
 
 On this interface, you can adjust the volume for various parts and also use the physical VOL- and VOL+ buttons on the baseboard to adjust media volume.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548507197.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548507197.png)
 
 ### 3.8 Display Settings
 
 Open the “Settings” app from the App Drawer, tap “Display” to enter the display settings interface.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548522257.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548522257.png)
 
 Tap “Brightness” to adjust the MIPI screen brightness.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548534236.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548534236.png)
 
 The OK3572 is set to “Never” for screen timeout by default. If you need the screen to turn off automatically, tap “Screen timeout” and select a duration.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548543636.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548543636.png)
 
 If there is no operation on the interface within the set timeout period, the screen will enter sleep mode. A short press of the “PWRON” button on the baseboard will wake the screen.
 
@@ -383,15 +383,15 @@ If there is no operation on the interface within the set timeout period, the scr
 
 Open the “Settings” app from the App Drawer and tap “System”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548557405.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548557405.png)
 
 Tap “Date \& time”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548566860.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548566860.png)
 
 Turn off “Automatic date \& time” to use the RTC time. Here you can change the date and time, and the time will remain synchronized and updated after a power cycle (ensure the coin cell battery is installed).
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548585280.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548585280.png)
 
 ### 3.10 Ethernet Test
 
@@ -401,17 +401,17 @@ The OK3572 board features two onboard Gigabit Ethernet ports (Ethernet ETH0 and 
 
 After inserting an Ethernet cable, open the “Settings” app from the App Drawer and tap “Network \& internet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548606896.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548606896.png)
 
 Tap “Ethernet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548617840.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548617840.png)
 
 The default IP acquisition method is “DHCP”.
 
 To set a static IP, tap “Ethernet IP mode” and select “Static” to configure a static IP (IPv4 only).
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548632935.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548632935.png)
 
 Tap “Connect” to complete the configuration.
 
@@ -431,15 +431,15 @@ Enter www.forlinx.net in the address bar to test the network.
 
 Open the “Settings” app from the App Drawer and tap “Network \& internet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548805694.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548805694.png)
 
 Tap “Internet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548818419.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548818419.png)
 
 Turn on the “Wi-Fi” switch, select an SSID, and enter the password.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548829183.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548829183.png)
 
 After a successful connection, open the “Chromium” app from the App Drawer.
 
@@ -453,11 +453,11 @@ The OK3572 supports sharing an Ethernet or mobile network connection via Wi-Fi, 
 
 Open the “Settings” app from the App Drawer and tap “Network \& internet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548862651.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548862651.png)
 
 Tap “Hotspot \& tethering”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548874672.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548874672.png)
 
 Tap “Wi-Fi hotspot”.
 
@@ -465,7 +465,7 @@ Tap “Wi-Fi hotspot”.
 
 Enable the Wi-Fi hotspot and set the hotspot name and password.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548899509.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548899509.png)
 
 After a mobile phone connects to the hotspot, it should be able to access the internet normally.
 
@@ -481,11 +481,11 @@ The OK3572 carrier board supports the 4G module (EM05) and the 5G module (RM500U
 
 Open the “Settings” app from the App Drawer and tap “Network \& internet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548941277.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548941277.png)
 
 At this point, you should see a successful connection, for example, to “China Telecom”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548952662.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548952662.png)
 
 After a successful connection, open the “Chromium” app from the App Drawer.
 
@@ -501,23 +501,23 @@ Testing with a Bluetooth mouse is as follows:
 
 Open the “Settings” app from the App Drawer and tap “Connected devices”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548976838.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548976838.png)
 
 Tap “Pair new device”, and simultaneously put the Bluetooth mouse into pairing mode.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548987451.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548987451.png)
 
 Tap the corresponding device name (e.g., the mouse).
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548997902.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789548997902.png)
 
 Tap “Pair”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549008456.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549008456.png)
 
 After a successful connection, proceed with file transfer or other operations.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549018963.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549018963.png)
 
 ### 3.15 Keypad Test (Sleep/Wake)
 
@@ -607,17 +607,17 @@ Select the TF card.
 
 Tap “Files” to manage files on the TF card.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549092240.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549092240.png)
 
 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549103341.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549103341.png)
 
 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549113409.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549113409.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549122660.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549122660.png)
 
 ### 3.17 USB Mouse Test
 
@@ -629,23 +629,23 @@ The OK3572 development board supports the USB OTG function.
 
 Connect the board to a computer using the Type-C port.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549136038.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549136038.png)
 
 Open the “Settings” app from the App Drawer and tap “Connected devices”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549146333.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549146333.png)
 
 Tap “USB”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549172168.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549172168.png)
 
 Select “File Transfer.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549182739.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549182739.png)
 
 On the computer, open “This PC” (or equivalent file explorer). You should see a device named “ok3572\_c” and can now transfer files.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549193214.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549193214.png)
 
 ### 3.19 Serial Port Test
 
@@ -738,17 +738,17 @@ Open the "MultipleCamera" app in the application drawer interface to display mul
 
 Open the "Settings" app in the application drawer interface, click "Display"
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549263811.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549263811.png)
 
 Click on "HDMI" to switch resolution.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549275418.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549275418.png)
 
 Click the first "Resolution Settings" button to modify the HDMI resolution.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549288445.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549288445.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549299339.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549299339.png)
 
 ### 3.22 Restoring Factory Settings
 
@@ -756,15 +756,15 @@ The OK3572 platform supports restoring factory settings.
 
 Open the “Settings” app from the App Drawer and tap “System”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549310591.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549310591.png)
 
 Click “Reset Options”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549321331.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549321331.png)
 
 Select the data to be reset according to your specific circumstances, and wait for the OK3572 to restore its factory settings. Please do not disconnect the power supply whilst the factory reset is in progress.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549330648.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549330648.png)
 
 ### 3.23 Installing APK via TF Card
 
@@ -772,33 +772,33 @@ Copy the APK file to the TF card. Open the “Files” app and navigate to the T
 
 Click on the APK file, a pop-up window will appear. Click “Settings.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549341639.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549341639.png)
 
 Click “Continue.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549351117.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549351117.png)
 
 ### 3.24 ROOT Authorization Test
 
 From the app drawer, open the “Settings” app, tap “About tablet.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549361984.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549361984.png)
 
 Continuously tap on “Build number” 7 times.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549371036.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549371036.png)
 
 Return to the previous menu, tap “System.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549381119.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549381119.png)
 
 Tap “Developer options.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549389487.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549389487.png)
 
 Find the “Root authorization” setting.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549398119.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549398119.png)
 
 This toggle controls root permissions, including:
 
@@ -818,17 +818,17 @@ Open the “RootChecker” app from the app drawer to test whether a system app 
 
 Open “Settings” from the app drawer, tap “Security \& privacy.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549419135.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549419135.png)
 
 Tap “Device unlock.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549428752.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549428752.png)
 
 Tap “Screen lock.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549438271.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549438271.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549446981.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549446981.png)
 
 ### **3.26** CAN Test
 
@@ -838,11 +838,11 @@ CAN parameters can be configured in the “Settings” app or via the dedicated 
 
 Open the “Settings” the App Drawer and tap “Network \& internet”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549458570.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549458570.png)
 
 Tap “CAN”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549469985.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549469985.png)
 
 Set the baud rate and mode for can0 and can1.
 
@@ -940,23 +940,23 @@ The current version supports switching between gesture and button navigation bar
 
 Open “Settings” from the app drawer.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549523098.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549523098.png)
 
 Swipe down and tap “Accessibility.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549531947.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549531947.png)
 
 Tap “System controls.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549551384.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549551384.png)
 
 Tap “Navigation mode.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549560520.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549560520.png)
 
 Select “Gesture navigation” to test it.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789549593658.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image_1789549593658.png)
 
 To modify the default factory setting for the navigation bar mode:
 
