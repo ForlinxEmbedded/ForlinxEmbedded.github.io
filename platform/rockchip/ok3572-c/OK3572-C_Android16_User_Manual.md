@@ -1210,4 +1210,4 @@ The contents of the document are as follows:
 
 gohttpserver\_1.1.4\_windows\_amd64 is a simple HTTP server tool available at: https://github.com/codeskyblue/gohttpserver](https://github.com/codeskyblue/gohttpserver)
 
-It meets OTA usage requirements. For specific usage, refer to its README.
+It meets OTA usage requirements. For specific usage, refer to https://github.com/codeskyblue/gohttpserver
