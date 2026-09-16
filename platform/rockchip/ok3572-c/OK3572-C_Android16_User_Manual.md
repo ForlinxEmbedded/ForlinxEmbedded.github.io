@@ -307,7 +307,7 @@ Tap “Languages \& input” to enter the language settings interface.
 
 Here, you can select the desired language to set.
 
-!![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548417291.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/image-1789548417291.png)
 
 ### 3.4 Viewing Images and Videos
 
