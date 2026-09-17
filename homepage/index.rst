@@ -68,6 +68,16 @@ Rockchip Series
      </div>
    </div>
 
+   <div class="product-card">
+     <a href="rockchip/ok1126bx-c/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/rockchip/OK1126Bx-C.webp" alt="ok1126bx-c" class="product-image" />
+     </a>
+     <h3 class="product-title">OK1126Bx-C</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/rv1126b-som-fet1126bx-c-195.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="rockchip/ok1126bx-c/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
 
    <div class="product-card">
      <a href="rockchip/ok3506j-c/index.html" target="_blank" rel="noopener noreferrer">

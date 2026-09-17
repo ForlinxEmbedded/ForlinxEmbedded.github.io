@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Forlinx Embedded RK3572 Documentation'
+project = 'Forlinx Embedded RV1126B/RV1126BJ Documentation'
 author = 'Forlinx Embedded'
 copyright = f'{datetime.date.today().year}, Forlinx Embedded'
 
@@ -20,7 +20,7 @@ extensions = [
 ]
 
 # sphinx_sitemap 必需的配置
-html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3572-c/"
+html_baseurl = "https://forlinxembedded.github.io/rockchip/ok1126bx-c/"
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store'] # 添加了常见的忽略目录
