@@ -60,7 +60,7 @@ The RV1126B supports high-performance external DRAM (DDR3/DDR3L/DDR4/LPDDR3/LPDD
 AOV (Always On Video) enables 24-hour continuous low-frame-rate recording based on a sleep-wake mechanism. It can switch back to normal frame rate mode when triggered by events such as AI detection, PIR trigger, or Wi‑Fi wake-up. The scenarios are described as follows:
 
 
-![](1784702076492-7d0bc2a4-5122-4fad-9a52-f6e849525bcf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702076492-7d0bc2a4-5122-4fad-9a52-f6e849525bcf.png)
 
 Normal Frame Rate Mode: Activated during remote preview, PIR events, or human detection events. Requires functions such as recording and network connectivity.
 
@@ -87,7 +87,7 @@ AOA (Always On Audio) utilizes SRAM to cache audio data during sleep, enabling 2
 ### 2.2 FET1126B-C SoM Dimension Diagram
 
 **FET1126B-C SoM Dimension Diagram: **
-![](1784702078644-54f74bf8-e0cf-4e86-84cf-6f92cc26ef22.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702078644-54f74bf8-e0cf-4e86-84cf-6f92cc26ef22.png)
 
 Dimensions: 56mm × 36mm, dimensional tolerance ±0.13mm. For more dimensional details, please refer to the DXF file.
 
@@ -227,7 +227,7 @@ For various functional expansion requirements, please refer to the user document
 The FET1126B-C SoM integrates power, reset monitoring, and storage circuits, requiring only minimal external circuitry. A complete minimum system can be powered and run with a single 5V supply.
 
 
-![](1784702079385-014cf450-db8d-4ff9-aa8f-7bc0960f9009.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702079385-014cf450-db8d-4ff9-aa8f-7bc0960f9009.png)
 
 Refer to “Appendix VI. Minimum System Diagram” However, in most cases, it is recommended to connect some external devices—such as a debugging serial port and a port for flashing images—in addition to the minimal system. Otherwise, you can not check whether the system has booted. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
@@ -382,7 +382,7 @@ A debug UART is routed out from the development board via a USB Type‑C interfa
 An RTC device is connected externally via I2C4. Power to the RTC is designed to be compatible between VCC\_3V3 and a backup coin cell battery (through D6), ensuring that the RTC remains powered after the main board is turned off. The RX8010SJ chip is used in the default design. Button battery: CR2032.
 
 
-![](1784702082109-bfc21793-2abc-41c5-9c76-2ef860e9faef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082109-bfc21793-2abc-41c5-9c76-2ef860e9faef.png)
 
 #### 3.5.7 TF Card
 
@@ -406,7 +406,7 @@ The TF card on the development board is connected to the SDMMC0 channel on the C
 A USB 2.0 port on the carrier board is connected through the USB 2.0 section of the USB-A dual-socket P3, with a current limit of 0.5 A.
 
 
-![](1784702082443-1e9a3c8e-5491-42d7-8c0b-a0f6d62a8db8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082443-1e9a3c8e-5491-42d7-8c0b-a0f6d62a8db8.png)
 
 **Note:**
 
@@ -434,7 +434,7 @@ After the SoM has fully booted, the host/device mode can be toggled via switch S
 To use USB 3.0 functionality, set S1 to ON and insert the USB device into socket P21.
 
 
-![](1784702082562-a6fc961f-5595-4bca-96bc-47a4afcc7408.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082562-a6fc961f-5595-4bca-96bc-47a4afcc7408.png)
 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082829_31a4afcd_44e9_470d_a984_d06b418d4f01.png)
@@ -456,14 +456,14 @@ To use USB 3.0 functionality, set S1 to ON and insert the USB device into socket
 The SoM supports a 4‑lane MIPI DSI interface, with a maximum data rate of 1.5 Gbps per lane and support for resolutions up to 1920 × 1080 @ 60 Hz. The development board features a universal LCD display interface through a 0.5 mm pitch, 30‑pin FPC connector (P20), compatible with Forlinx MIPI capacitive touch screens. Note: The MIPI‑DSI and LCD screen interfaces are mutually exclusive (only one can be used at a time)..
 
 
-![](1784702082960-8acb371c-d9dc-4710-a7c2-0ea199ac15ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082960-8acb371c-d9dc-4710-a7c2-0ea199ac15ec.png)
 
 #### 3.5.11 LCD
 
 The development board features an LCD interface supporting parallel 24‑bit RGB mode, with a maximum output resolution of 1920 × 1080 @ 60 Hz. The interface is routed out through a 25×2, 2.54 mm pitch pin header (P1). Using an adapter board provided by Forlinx, it can be converted to a 0.5 mm pitch, 54‑pin FPC connector, allowing connection to capacitive touch screens of various specifications produced by Forlinx.
 
 
-![](1784702083049-52aabc04-4979-40ee-827f-0ff5f4301c6b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702083049-52aabc04-4979-40ee-827f-0ff5f4301c6b.png)
 
 #### 3.5.12 MIPI CSI
 
@@ -472,10 +472,10 @@ The development board supports two 4‑lane MIPI CSI interfaces, both compliant 
 The MIPI CSI functionality is routed out via 30‑pin FPC connectors P8 and P9, which are powered by an independent power supply and are compatible with the OS04A10 camera module.
 
 
-![](1784702083222-a1b60c8b-94a0-404f-940f-482d107689cb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702083222-a1b60c8b-94a0-404f-940f-482d107689cb.png)
 
 
-![](1784702083385-b679a706-babd-4200-a519-b74f1abb6655.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702083385-b679a706-babd-4200-a519-b74f1abb6655.png)
 
 **Note: When the MIPI CSI interface is required to operate in AOV/AOA sleep modes, the related power rails for this interface must remain powered during sleep (must not be shut down).**
 
@@ -484,7 +484,7 @@ The MIPI CSI functionality is routed out via 30‑pin FPC connectors P8 and P9, 
 The development board supports one 100 Mbps Ethernet port, provided by the CPU’s integrated FEPHY and routed out via an RJ45 connector (model: FC62115BNL), which includes a built‑in isolation transformer.
 
 
-![](1784702083500-ceae5908-2182-4b7b-a36d-52eacf9017ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702083500-ceae5908-2182-4b7b-a36d-52eacf9017ea.png)
 
 **Note:**
 
@@ -500,7 +500,7 @@ The development board supports one 100 Mbps Ethernet port, provided by the CPU�
 The development board supports a native 1000M Ethernet port. This is implemented using the SoM’s RGMII interface in conjunction with the MAE0621A-Q3C PHY chip, and is routed through the standard RJ45 connector P14, which integrates a network transformer, for connection to external network devices.
 
 
-![](1784702083753-473ac31d-2e6c-4237-b6a9-f8e499951e86.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702083753-473ac31d-2e6c-4237-b6a9-f8e499951e86.png)
 
 **Note:**
 
@@ -513,10 +513,10 @@ One DSM audio signal is routed out from the development board through an RC low�
 A board‑mounted microphone is provided for convenient debugging, supporting monophonic audio recording.
 
 
-![](1784702084241-cbe16094-adcf-4264-b22b-5e6253eee439.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702084241-cbe16094-adcf-4264-b22b-5e6253eee439.png)
 
 
-![](1784702084366-8e6b4524-ee3b-441f-865a-30b0495baa02.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702084366-8e6b4524-ee3b-441f-865a-30b0495baa02.png)
 
 **Note:**
 
@@ -530,7 +530,7 @@ The development board features an onboard WiFi \& Bluetooth combo module, model 
 P16 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-band antenna.
 
 
-![](1784702084458-95845a3d-e3a5-42aa-b045-c6fe3b6c68bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702084458-95845a3d-e3a5-42aa-b045-c6fe3b6c68bd.png)
 
 **Note:**
 
@@ -541,7 +541,7 @@ P16 is an SMA interface for antenna connection. Please use a 2.4GHz\&5GHz dual-b
 A 40-pin header (P16) is reserved on the carrier board that is compatible with the Raspberry Pi 40-pin definition. Each pin is equipped with ESD protection.
 
 
-![](1784702084546-20459776-f339-4dbb-b42d-f6b517aafcdb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702084546-20459776-f339-4dbb-b42d-f6b517aafcdb.png)
 
 **Note: This interface includes GPIOs that can operate normally during sleep (AOV/AOA) scenarios, such as GPIO0\_B2.**
 
@@ -550,7 +550,7 @@ A 40-pin header (P16) is reserved on the carrier board that is compatible with t
 A physical WAKE UP button is reserved on the carrier board to enable physical wake-up from sleep mode.
 
 
-![](1784702084641-27d0c11d-3a53-49fe-9953-9e93f046e4a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702084641-27d0c11d-3a53-49fe-9953-9e93f046e4a1.png)
 
 **Note: This pin must use a GPIO with sleep-preservation. For details on sleep‑immune GPIOs, refer to the Pin Multiplexing Table.**
 
@@ -637,10 +637,10 @@ Note: The reset button must not include a pull‑up resistor in its design.
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090963_5f9713aa_3b8f_4b1c_a98f_bee51be05adf.png)
 
 
-![](1784702091062-bb3d7430-01e7-4569-a15d-75e26565f76f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702091062-bb3d7430-01e7-4569-a15d-75e26565f76f.png)
 
 
-![](1784702091177-6e93945f-8c7f-4f09-b18c-0e1a648681e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702091177-6e93945f-8c7f-4f09-b18c-0e1a648681e9.png)
 
 ## 7\. User Hardware Design Guide
 
