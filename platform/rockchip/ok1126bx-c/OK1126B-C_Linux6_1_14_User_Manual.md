@@ -43,12 +43,12 @@ The OK1126B-C/OK1126BJ-C is a low-power, high-performance processor based on the
 Connection method: Board to board. The main interfaces are shown in the figure below:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702042722-83070d96-6621-416b-9968-5f94eb575300.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702042722_83070d96_6621_416b_9968_5f94eb575300.png)
 
 **Front**
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702042882-f5dd00e5-a0c0-427e-a128-6618a6c1fbad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702042882_f5dd00e5_a0c0_427e_a128_6618a6c1fbad.png)
 
 **Back**
 
@@ -136,7 +136,7 @@ Disk /dev/mmcblk0boot1 doesn't contain a valid partition table
 + Debug port cable
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702044799-1f551b2a-ea62-4137-a7fc-069dde831900.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702044799_1f551b2a_ea62_4137_a7fc_069dde831900.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -166,12 +166,12 @@ Step1: Identify the serial port number assigned to the PC. In Device Manager, lo
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200.  
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702045105-26bbd681-9e08-4d05-9b10-0f9080c9c123.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702045105_26bbd681_9e08_4d05_9b10_0f9080c9c123.jpeg)
 
 Step 3: After completing the above settings, enter the COM port number used by your computer in the “Saved Sessions” field (as shown in the following figure, using COM61 as an example), and save the configuration. Subsequently, when reopening the serial port, simply click the saved port number to directly apply the settings.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702045212-b2fd0590-7a64-4e4f-8960-c37361beeb20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702045212_b2fd0590_7a64_4e4f_8960_c37361beeb20.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -180,7 +180,7 @@ After the PC terminal software is configured, connect the PC and the development
 The following startup message indicates a successful boot, and you can press Enter to create a new command line:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702045292-228be4d8-a652-4db8-96f9-cd51739b049f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702045292_228be4d8_a652_4db8_96f9_cd51739b049f.png)
 
 ### 2.4 Network Login
 
@@ -217,7 +217,7 @@ You can also use other terminal programmes that support SSH logins, such as PuTT
 Open the PuTTY software and configure the following settings (please use your actual IP address): 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702045409-adcbe3da-61ae-48a7-98c2-4720c1d26d68.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702045409_adcbe3da_61ae_48a7_98c2_4720c1d26d68.png)
 
 #### 2.4.2 FTP
 
@@ -287,7 +287,7 @@ The device tree path is: kernel/arch/arm64/boot/dts/rockchip/OK1126B-C-common.dt
 In the kernel source code, open the device DTSI file and locate the following node:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702045937-1782cf56-ac1b-4ff0-90f1-38471279c845.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702045937_1782cf56_ac1b_4ff0_90f1_38471279c845.png)
 
 The node is disabled by default and needs to be changed to "okay" to enable it. Modify according to the screen requirements.
 
@@ -296,7 +296,7 @@ For example:
 Turn on the RGB screen and change the property to “rgb”. 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702046254-20b4373f-b8dd-4ab5-b8f2-82b9b4d946f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702046254_20b4373f_b8dd_4ab5_b8f2_82b9b4d946f7.png)
 
 After saving, recompile to generate the image.
 
@@ -321,7 +321,7 @@ Note: For applications that cannot launch the on-screen keyboard, you may connec
 After booting, the system will automatically enter the desktop as shown in the figure below:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702048311-f4206db7-4fe6-4cb2-af1f-a626cad6ac90.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702048311_f4206db7_4fe6_4cb2_af1f_a626cad6ac90.png)
 
 ### 3.1 4G Test
 
@@ -330,15 +330,15 @@ The test supports the 4G module (EM05). Insert the 4G module and SIM card in cas
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702048453-b45a22d9-db84-487b-b575-c49b17186ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702048453_b45a22d9_db84_487b_b575_c49b17186ccd.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702048563-103f67e6-2921-41f7-9897-c0c03354d4eb.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702048563_103f67e6_2921_41f7_9897_c0c03354d4eb.jpeg)
 
 Click the start button, and the program will automatically enter the dial-up process and obtain IP, set DNS, etc. 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702048746-32b9db8a-18b7-40dc-a18e-3c8f59c9952f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702048746_32b9db8a_18b7_40dc_a18e_3c8f59c9952f.png)
 
 After successful dialing, you can use ping to test the debugging serial port.
 
@@ -347,19 +347,19 @@ After successful dialing, you can use ping to test the debugging serial port.
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702048878-f0e97e1b-cc4e-47f3-bc90-248009044b6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702048878_f0e97e1b_cc4e_47f3_bc90_248009044b6c.png)
 
 DHCP mode interface is as follows:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702048982-48f69033-01f3-4bc4-895a-92c173c96f06.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702048982_48f69033_01f3_4bc4_895a_92c173c96f06.jpeg)
 
 Select DHCP, choose the network card device to be configured in the “interface” section, and click “Apply and Restart Network” at the bottom of the interface to automatically restart the network and obtain an IP address.
 
 STATIC mode interface is as follows:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702049165-08fd3182-683a-401c-b69c-df7708a67ed1.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049165_08fd3182_683a_401c_b69c_df7708a67ed1.jpeg)
 
 Select the network card device to be configured in the Interface. Enter the desired IP address in the IP field. Enter the subnet mask in the Netmask field. Enter the gateway address in the Gateway field. Enter the DNS server address , in the Gateway field, .
 
@@ -370,22 +370,22 @@ Note: The IP and other information configured in static mode will be saved in th
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702049281-563f449b-2349-409e-81da-a53f691c6737.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049281_563f449b_2349_409e_81da_a53f691c6737.png)
 
 In the hostname field, write the target IP to ping. After clicking the “ping” button, the result field will show the ping result. Click stop to stop the ping test, and click “clear” to clear the information in result.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702049371-e5b6ce61-06d9-4d17-bc13-a560e6137d00.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049371_e5b6ce61_06d9_4d17_bc13_a560e6137d00.jpeg)
 
 ### 3.4 Watchdog Test
 
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702049490-8e5d943b-fb33-4bbd-b792-e9a2174239fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049490_8e5d943b_fb33_4bbd_b792_e9a2174239fa.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702049576-a233b9ca-4e4b-4fcd-9f30-3d1187aa8481.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049576_a233b9ca_4e4b_4fcd_9f30_3d1187aa8481.jpeg)
 
 Click the “Start” button and tick the “Feed dog” box; the watchdog function will then be activated and the programme will feed dog. Under normal circumstances, the system will not reboot. When the “Feed dog” box is unticked, the programme will not feed dog, and once the countdown has ended, the system will reboot, indicating that the watchdog function is working correctly.
 
@@ -394,10 +394,10 @@ Click the “Start” button and tick the “Feed dog” box; the watchdog funct
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702049675-4db870a8-694a-47e9-9b76-f5b8bc538bda.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049675_4db870a8_694a_47e9_9b76_f5b8bc538bda.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702049772-db8155fa-e2b4-41d2-b107-48f0f4c49ea5.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049772_db8155fa_e2b4_41d2_b107_48f0f4c49ea5.jpeg)
 
 Select the year, month, day, hour, minute and second to set the time. Once you have finished, click “Apply” to complete the setting.
 
@@ -410,10 +410,10 @@ This test is carried out by short-circuiting the TX and RX pins of UART5; please
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702049898-9f7c1412-5f0f-476d-83a3-dee21cc5a7e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702049898_9f7c1412_5f0f_476d_83a3_dee21cc5a7e0.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702050001-83288080-cf98-4463-a899-aedadf2398c6.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050001_83288080_cf98_4463_a899_aedadf2398c6.jpeg)
 
 Click the settings button (the third small gear icon) on the right sidebar, and configure the serial port parameters as follows:
 
@@ -427,24 +427,24 @@ Click the settings button (the third small gear icon) on the right sidebar, and 
 | Flow control| Set flow control (no flow control)|
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702050111-ee33fd80-7bcc-474b-8033-3ea294507c3e.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050111_ee33fd80_7bcc_474b_8033_3ea294507c3e.jpeg)
 
 After configuring the serial port parameters, click the connect button at the top of the right sidebar (the first button). At this point, the test program can proceed with data transmission and reception testing.
 
 You can enter text in the black area; each character entered will be displayed twice. This is because the TX and RX pins are short-circuited, so the characters sent out are received back.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702050231-034a131b-eece-478e-aa0f-0893d54e7044.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050231_034a131b_eece_478e_aa0f_0893d54e7044.jpeg)
 
 ### 3.7 Backlight Test
 
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702050366-ab3f100c-ecbe-4e40-91c2-85fe2201817b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050366_ab3f100c_ecbe_4e40_91c2_85fe2201817b.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702050468-8d2bf5c9-b8e0-4486-89d7-1109c76bf25e.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050468_8d2bf5c9_b8e0_4486_89d7_1109c76bf25e.jpeg)
 
 Select “Screen” to specify the screen backlight you wish to adjust, then drag the slider on the interface to set the backlight brightness; level 5 is the lowest brightness and level 200 is the highest.
 
@@ -455,69 +455,69 @@ To turn off the backlight, refer to Section 4.12 (LCD Backlight Adjustment) and 
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702050581-b564bb60-ec3b-4f29-8b2e-b3eb6b30daf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050581_b564bb60_ec3b_4f29_8b2e_b3eb6b30daf9.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702050675-3cf7f7c1-b1e9-4cb9-a83c-e2905c076299.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050675_3cf7f7c1_b1e9_4cb9_a83c_e2905c076299.jpeg)
 
 Short-circuit the MOSI and MISO pins of SPI1 (refer to Section 4.6 for the specific wiring).
 
 Select SPIDEV as spi1 and click the Send button. The content in the lower input box will be transmitted through MOSI and received back via MISO, displaying in the upper Receive box.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1784702050794-cb7f5bb1-0bf5-46e6-b22c-6ee161c94a79.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050794_cb7f5bb1_0bf5_46e6_b22c_6ee161c94a79.jpeg)
 
 ### 3.9 Audio Playback Test
 
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702050908-85c9b410-edad-47fc-b699-ed606152bd21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050908_85c9b410_edad_47fc_b699_ed606152bd21.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702050990-4d70b507-959c-4082-94c5-7ac301a0eab9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702050990_4d70b507_959c_4082_94c5_7ac301a0eab9.png)
 
 Click the three-dot button in the bottom-left corner to select the audio file you want to play, then click Open. The selected audio will start playing automatically.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702051085-1d9efec0-a5d6-41e3-aa8c-350fa78862e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702051085_1d9efec0_a5d6_41e3_aa8c_350fa78862e2.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702051202-3875f53e-b711-4842-b45b-1407acfc6c16.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702051202_3875f53e_b711_4842_b45b_1407acfc6c16.png)
 
 ### 3.10 Video Playback Test
 
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702051354-f3971a89-a872-4687-a4fa-604dc13b7c7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702051354_f3971a89_a872_4687_a4fa_604dc13b7c7b.png)
 
 The video will automatically start playing upon launching the application.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702051545-f6d1411b-8acb-42ba-be75-44fa91697be9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702051545_f6d1411b_8acb_42ba_be75_44fa91697be9.png)
 
 ### 3.11 Recording Test
 
 Click the desktop icon to access the program:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702051775-f2badd34-ffe6-423e-bca1-8bdb1ba95ec5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702051775_f2badd34_ffe6_423e_bca1_8bdb1ba95ec5.png)
 
 After opening, enter the recording test program.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702051906-6d7292f8-0eb0-4b20-8e12-f8b3d3890a19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702051906_6d7292f8_0eb0_4b20_8e12_f8b3d3890a19.png)
 
 Click "SaveFile" to set the filename of the recording file (which can be modified in the "output file dir" section), and click "Record" to start recording
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702052008-f1a9c46c-0bf9-4ebc-9b98-a3d9528eaa8d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702052008_f1a9c46c_0bf9_4ebc_9b98_a3d9528eaa8d.png)
 
 Click "Stop" to end the recording
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702052106-0e558717-eef8-467d-94ea-bbaa7cca4d88.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702052106_0e558717_eef8_467d_94ea_bbaa7cca4d88.png)
 
 Finally, you can find the audio file test.mp3 under /userdata/.
 
@@ -841,7 +841,7 @@ UART0 is designated as the debug console.
 UART2 is used for Bluetooth communication. The user-available serial port is UART5, which operates at TTL levels. On the development board, its corresponding device name is ttyS5. For example, to test the UART5 port, short the UART5 transmit and receive pins as indicated in the development board schematic, corresponding to pins 8 and 10 on P16.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702054150-29d97562-c554-4e2f-b821-bd0390249af6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702054150_29d97562_c554_4e2f_b821_bd0390249af6.png)
 
 Once the shorting is complete, open the test program.
 
@@ -861,7 +861,7 @@ If the following content is printed on the serial port after execution, it indic
 One SPI interface is routed out from the carrier board. By default, the software configures it as spidev for loopback testing. During testing, please refer to the schematic diagram and short-circuit MOSI (PIN19) to MISO (PIN21), then carry out the test using the commands below.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702054327-98b39230-fef5-4b2e-a155-5ed188648f9a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702054327_98b39230_fef5_4b2e_a155_5ed188648f9a.png)
 
 Without shorting SPI1\_MOSI to SPI1\_MISO, execute the test command:
 
@@ -932,7 +932,7 @@ This command will activate the watchdog but will not feed the dog. The system wi
 Mainly use the date and hwclock tools to set the software and hardware time. Test whether the software clock is synchronized with the RTC clock when the development board is powered off and then powered on. (Note: Ensure that a button battery is installed on the board and the battery voltage is normal.)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702054422-4b20a06a-bf64-49db-97a7-a84841a46c67.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702054422_4b20a06a_bf64_49db_97a7_a84841a46c67.png)
 
 ```bash
 root@OK1126B-C-buildroot:/# date -s "2022-2-9 10:50:00"  // Set the time
@@ -954,7 +954,7 @@ OK1126B-C/OK1126BJ-C supports one USB2.0 and one USB3.0 interface. You can conne
 USB3.0 and OTG are multiplexed and can be switched for use through a DIP switch. When using the USB3.0 interface, please confirm that the DIP switch is in the ON position. Here, mounting a USB flash drive for demonstration.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702054603-5339f094-f8bf-4ee7-88f6-39f84bae234e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702054603_5339f094_f8bf_4ee7_88f6_39f84bae234e.png)
 
 The USB 3.0 and OTG are multiplexed, and switching is done via a DIP switch. When using the USB 3.0 interface, ensure the DIP switch is in the ON position:
 
@@ -1148,7 +1148,7 @@ DHCP=yes
 The development board features one white XH2.54-2P socket (P11), capable of driving an 4Ω speaker with a maximum output power of 3.3W. Before conducting an audio playback test, please plug the speaker into the corresponding socket on the carrier board and use the following command to perform the test:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702054777-a7cb1ec5-c55f-4486-8499-91cd51292213.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702054777_a7cb1ec5_c55f_4486_8499_91cd51292213.png)
 
 ```bash
 root@OK1126B-C-buildroot:/# gst-play-1.0 /userdata/piano2-CoolEdit.mp3
@@ -1202,7 +1202,7 @@ Rockchip provides a comprehensive set of test cases; please refer to the NPU sec
 The OK1126B-C/OK1126BJ-C SoM features a controllable blue LED; this LED flashes when the board is powered up. You can disable this feature by modifying the device tree file arch/arm64/boot/dts/rockchip/FET1126B-C.dtsi to add the attribute default-state = "off" to the LEDs node, and change linux,default-trigger to "none".
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702054988-a307c706-0718-48ee-bcef-209abbc720c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702054988_a307c706_0718_48ee_bcef_209abbc720c5.png)
 
 Testing Procedure:
 
@@ -1228,7 +1228,7 @@ root@OK1126B-buildroot:/sys/class/leds/work# echo heartbeat > trigger
 P7 is the ADC pin as shown in the figure below, where SARADC0 \_ IN0-IN6 correspond to 0-6 of the ADC channel respectively.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702055199-a93fede0-3e23-4547-aa8b-d6a7bcb504c8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702055199_a93fede0_3e23_4547_aa8b_d6a7bcb504c8.png)
 
 Enter the following command to view the value of the ADC channel (range 0–8192):
 
@@ -1291,7 +1291,7 @@ USB Cable Connector
 4G Module EM05
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702055358-6908481e-3a37-47b5-be76-b35d012ad80d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702055358_6908481e_3a37_47b5_be76_b35d012ad80d.png)
 
 After the development board boots, execute the lsusb command in the debug serial console to verify module detection.
 
@@ -2022,7 +2022,7 @@ Take separate flashing boot. img (including device tree and startup logo) as an 
 Connect the development board to the host computer using a Type-C cable. Once the development board has booted, run reboot loader, or hold down Ctrl+D whilst powering on until the system prompts that a LOADER device has been detected.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702059588-9f44fe20-646c-46b9-a89c-49c7cf45e8ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1784702059588_9f44fe20_646c_46b9_a89c_49c7cf45e8ee.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
