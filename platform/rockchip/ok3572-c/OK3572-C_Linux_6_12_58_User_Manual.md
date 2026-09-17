@@ -66,7 +66,7 @@ This software manual is designed for the OK3572 platform running Linux6.12.58. W
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 16/06/2026| V1.0| V1.0| V1.0| Initial Version|
 
-1\. OK3572 Development Board Description
+## 1\. OK3572 Development Board Description
 
 RK3572 is a low-power, high-performance processor based on the ARM64 architecture. It integrates six Cortex-A53 cores, two Cortex-A73 cores, and an independent NEON coprocessor, making it suitable for applications in computers, mobile phones, personal mobile internet devices, and digital multimedia equipment.
 
