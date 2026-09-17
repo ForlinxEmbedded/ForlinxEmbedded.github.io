@@ -161,7 +161,7 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 Step1: Identify the serial port number assigned to the PC. In Device Manager, locate the serial port with the name ending in “SERIAL-”, which corresponds to the actual debug UART. For example, this may appear as COM61; the port number should be based on the actual one detected by the system. 
 
 
-![Image](1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200.  
 
@@ -236,10 +236,10 @@ ifconfig eth0 172.20.0.129 netmask 255.255.255.0
 ```
 
 
-![Image](1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1736821815147_143e5974_7597_4afc_8d80_0717468acfee.png)
 
 
-![Image](1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1720417654928_2b604387_bb81_4ac6_a13d_02437d5c0800.png)
 
 ### 2.5 Screen Switch
 
@@ -1930,12 +1930,12 @@ Extract the file above to any directory and run it with administrator privileges
 Open the DriverInstall.exe program.
 
 
-![Image](1735267645818_f515fa0c_ce94_4d61_a5a0_664ed7c0640a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1735267645818_f515fa0c_ce94_4d61_a5a0_664ed7c0640a.png)
 
 Click Install Driver.
 
 
-![Image](1735267671413_d07d1e53_8b6f_4559_969f_0d921a473a55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1735267671413_d07d1e53_8b6f_4559_969f_0d921a473a55.png)
 
 #### 6.1.2 Complete OTG Flashing
 
@@ -1953,12 +1953,12 @@ This is a development tool provided by Rockchip. Before use, unzip it into a dir
 
 Open the Rockchip development tool:
 
-![Image](1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
 
-![Image](1735267965892_2e0b0d71_79d8_463f_b66a_0f429fabe1a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1735267965892_2e0b0d71_79d8_463f_b66a_0f429fabe1a1.png)
 
 Click the "Upgrade Firmware" button -> "Upgrade" to begin upgrading.
 
@@ -1972,16 +1972,16 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
 
-![Image](1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1720418374490_7567e660_737f_4218_8cfa_3b7c9be57d3e.png)
 
 Click to select the firmware, then click “Start”; the system will automatically begin flashing the MASKROM device once it has been detected.
 
-![Image](1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
 Downloading firmware:
 
 
-![Image](1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
@@ -1998,34 +1998,34 @@ Take separate flashing boot. img (including device tree and startup logo) as an 
 Connect the development board to the host computer using a Type-C cable. Once the development board has booted, run reboot loader, or hold down Ctrl+D whilst powering on until the system prompts that a LOADER device has been detected.
 
 
-![Image](1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
 
-![Image](1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
 
-![Image](1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
 Click the area to the right of the partition to select the partition image, and tick the partition.
 
 
-![Image](1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the “Execute” button to automatically flash and restart.
 
 
-![Image](1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 **MASKROM Mode Introduction**
 
 If Loader mode is inaccessible (loader problem, etc.), press and hold the UPDATE key, then press the reset key to enter maskrom mode for flashing.
 
 
-![Image](1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this point, the system will display a message indicating that a MASKROM device has been detected; the flashing procedure is the same as for LOADER mode, and it is best to use update.img for flashing.
 
@@ -2040,13 +2040,13 @@ TF card making and testing.
 Copy SDDiskTool\_v1.78.zip from the user profile tool directory to any windows directory. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
 
-![Image](1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
