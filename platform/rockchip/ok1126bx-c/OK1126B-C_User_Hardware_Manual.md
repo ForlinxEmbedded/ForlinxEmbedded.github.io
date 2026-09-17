@@ -53,7 +53,7 @@ The H.264/H.265 video decoder on the RV1126B supports 4Kp30 decoding for both H.
 The RV1126B supports high-performance external DRAM (DDR3/DDR3L/DDR4/LPDDR3/LPDDR4/4X), meeting high-bandwidth memory requirements.
 
 **RV1126B Block Diagram**
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702076399-93726cdb-08d3-4c10-a4fc-4e076fc04b6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702076399_93726cdb_08d3_4c10_a4fc_4e076fc04b6c.png)
 
 ### 1.2 Introduction to AOV/AOA
 
@@ -79,10 +79,10 @@ AOA (Always On Audio) utilizes SRAM to cache audio data during sleep, enabling 2
 ### 2.1 FET1126B-C Appearance Diagram
 
 **Front**
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702078330-1d51b550-2326-4525-80ba-1b8b5d6a0cd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702078330_1d51b550_2326_4525_80ba_1b8b5d6a0cd5.png)
 
 **Back**
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702078538-ebf25fd0-5a77-4bdb-9f95-8ba1313ee86c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702078538_ebf25fd0_5a77_4bdb_9f95_8ba1313ee86c.png)
 
 ### 2.2 FET1126B-C SoM Dimension Diagram
 
@@ -116,8 +116,8 @@ Gender: Female socket, with positioning pillars
 See Section 04 for the connector dimension drawings.
 
 Four 2.2 mm diameter mounting holes are reserved at the four corners of the SoM; when the product is used in a vibration environment, fixing screws can be installed to improve the reliability of product connection. You may refer to the development board design for implementation. On the carrier board, use M2 surface-mount nuts with a length of 2mm. The mounting screws used between the SoM and the carrier board should be M2 screws with a length of 4mm. Please refer to the following illustration for specifications of the surface-mount nuts:
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702078716-1e6f0af0-47b4-422a-9aad-76eb5904701a.png)
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702078822-3e5dd64c-1902-4d51-98cf-59110491b443.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702078716_1e6f0af0_47b4_422a_9aad_76eb5904701a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702078822_3e5dd64c_1902_4d51_98cf_59110491b443.png)
 
 ### 2.3 Performance Parameter
 
@@ -187,15 +187,15 @@ Four 2.2 mm diameter mounting holes are reserved at the four corners of the SoM;
 
 #### 2.5.1 FET1126B-C SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702079009-74efca88-eee2-453b-97d4-a687bff3206f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702079009_74efca88_eee2_453b_97d4_a687bff3206f.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702079159-e2f94cb3-6cca-4313-bd15-6259e94f7602.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702079159_e2f94cb3_6cca_4313_bd15_6259e94f7602.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702079253-634488a3-cb7e-4f02-91c2-8c0565c9aa65.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702079253_634488a3_cb7e_4f02_91c2_8c0565c9aa65.png)
 
 #### 2.5.2 FET1126B-C SoM Pin Function Description
 
@@ -240,10 +240,10 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 The Forlinx OK1126B-C development board features board-to-board connectors and is compatible with multiple RV1126-series System on Modules (SoMs). Consequently, the PCB silkscreen and this document may use the general designation OK1126Bx-C to refer to this compatible CPU series family. The primary interfaces of the board are illustrated in the figure below.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702084903-364c7cfe-ca53-4e3c-82a0-e9271eee6a0f.png)**Front**
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702084903_364c7cfe_ca53_4e3c_82a0_e9271eee6a0f.png)**Front**
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702085074-a9b67f8c-c6e5-49ef-a14b-3e1e5f03dc01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702085074_a9b67f8c_c6e5_49ef_a14b_3e1e5f03dc01.png)
 
 Back
 
@@ -252,7 +252,7 @@ Back
 OK1126Bx-C Development Board Dimension Diagram: 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081360-05885b8a-19b0-4063-afc3-ed393f1cb988.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081360_05885b8a_19b0_4063_afc3_ed393f1cb988.png)
 
 PCB: 120mm×75mm
 
@@ -323,13 +323,13 @@ As shown in the figure, the development board is powered by a 5V DC power supply
 FET\_VCC\_3V3 ensures that the SoM is powered up before the carrier board, preventing latch‑up effects that could damage the CPU. SOC\_PWREN serves as the enable control pin for the carrier‑board power rail that must remain continuously powered during sleep (AOV/AOA) scenarios.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081451-6ba026ad-1163-4957-ba96-8de397723264.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081451_6ba026ad_1163_4957_ba96_8de397723264.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081553-3ade3def-1f23-43cc-8ade-ed55339973c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081553_3ade3def_1f23_43cc_8ade_ed55339973c0.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081636-485630e4-90be-4d1d-8e1a-44799af8a94c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081636_485630e4_90be_4d1d_8e1a_44799af8a94c.png)
 
 **Note:**
 
@@ -340,7 +340,7 @@ FET\_VCC\_3V3 ensures that the SoM is powered up before the carrier board, preve
 K1 on the development board is the CPU reset button. Pressing it will reset the CPU.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081714-c3b5588a-9064-485a-a19f-14f8085c1ccf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081714_c3b5588a_9064_485a_a19f_14f8085c1ccf.png)
 
 #### 3.5.3 Boot Configuration
 
@@ -357,7 +357,7 @@ TF Card Burning: First, prepare a TF card with the appropriate burn files. Inser
  For detailed burning procedures, please refer to the Software User Manual.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081791-bf6d3567-4627-4de7-b9c5-ed92d0f1b479.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081791_bf6d3567_4627_4de7_b9c5_ed92d0f1b479.png)
 
 **Note: The SARADC0\_IN7\_BOOT signal must not be used for any other purpose.**
 
@@ -366,14 +366,14 @@ TF Card Burning: First, prepare a TF card with the appropriate burn files. Inser
 The development board supports 7 ADC channels, which are routed out via a 2.54mm‑pitch pin header P7. Among these, SARADC0\_IN0 is pulled up to 1.8V through a 10kΩ resistor on the SoM.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081907-459458bb-bc2f-4d76-a396-41d1e2f1d531.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081907_459458bb_bc2f_4d76_a396_41d1e2f1d531.png)
 
 #### 3.5.5 Debugging Serial Port
 
 A debug UART is routed out from the development board via a USB Type‑C interface. After installing the CH342 driver on your computer, connecting the P6 port to the PC will enable debugging.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702081986-c39aafed-df7a-481d-8617-7b0207f072b0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702081986_c39aafed_df7a_481d_8617_7b0207f072b0.png)
 
 **Note: To facilitate debugging later, please ensure that the debugging serial port is led out when designing your own carrier board.**
 
@@ -389,7 +389,7 @@ An RTC device is connected externally via I2C4. Power to the RTC is designed to 
 The TF card on the development board is connected to the SDMMC0 channel on the CPU and supports system boot and flashing. The VCC\_3V3\_SD power supply for the TF card must be regulated; please refer to the carrier board circuit diagram.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702082283-cb99d1cc-83c3-44ac-bfef-8135670e1db0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082283_cb99d1cc_83c3_44ac_bfef_8135670e1db0.png)
 
 **Note:**
 
@@ -437,7 +437,7 @@ To use USB 3.0 functionality, set S1 to ON and insert the USB device into socket
 ![](1784702082562-a6fc961f-5595-4bca-96bc-47a4afcc7408.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702082829-31a4afcd-44e9-470d-a984-d06b418d4f01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702082829_31a4afcd_44e9_470d_a984_d06b418d4f01.png)
 
 **Note:**
 
@@ -559,17 +559,17 @@ A physical WAKE UP button is reserved on the carrier board to enable physical wa
 SoM connector: surface-mount, 0.5mm pitch, 80P, male, 1.23mm height, with locating posts.
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720491382901-967cde92-0cba-4f50-92a1-268e5054bc56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1720491382901_967cde92_0cba_4f50_92a1_268e5054bc56.png)
 
 Carrier board connector: surface-mount, 0.5mm pitch, 80P, female socket, 1.85mm height, with locating posts.
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533430/1720491383191-86a04112-c603-433d-9128-6262b9d3697e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1720491383191_86a04112_c603_433d_9128_6262b9d3697e.png)
 
 SoM connector location map:
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702087283-9c55831a-6a94-48f6-a77a-1eb0790a5b5d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702087283_9c55831a_6a94_48f6_a77a_1eb0790a5b5d.png)
 
 ## 5\. OK1126Bx-C Development Board Power Consumption Table
 
@@ -616,25 +616,25 @@ During SoM design, power-on startup is supported as long as the 5V main power of
 Note: The reset button must not include a pull‑up resistor in its design.
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090436-7f5908a7-8b97-4c93-b247-80b27b080cc3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090436_7f5908a7_8b97_4c93_b247_80b27b080cc3.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090534-312ea010-55c9-425b-adf3-e20eb8c6abc2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090534_312ea010_55c9_425b_adf3_e20eb8c6abc2.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090620-93ec018b-745c-4305-afd6-8649dc2488cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090620_93ec018b_745c_4305_afd6_8649dc2488cf.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090709-0485916b-24a9-49fb-b3f5-42cbd215d052.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090709_0485916b_24a9_49fb_b3f5_42cbd215d052.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090784-92a074ea-bfd0-4651-9743-4b8ff2b14f97.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090784_92a074ea_bfd0_4651_9743_4b8ff2b14f97.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090877-5a1e77cc-5521-4760-b306-92baddbe463b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090877_5a1e77cc_5521_4760_b306_92baddbe463b.png)
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1784702090963-5f9713aa-3b8f-4b1c-a98f-bee51be05adf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_User_Hardware_Manual/1784702090963_5f9713aa_3b8f_4b1c_a98f_bee51be05adf.png)
 
 
 ![](1784702091062-bb3d7430-01e7-4569-a15d-75e26565f76f.png)
