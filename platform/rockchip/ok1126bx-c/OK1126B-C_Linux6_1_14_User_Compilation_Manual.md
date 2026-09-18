@@ -330,7 +330,7 @@ If using servers like TFTP or SFTP, you need to set the virtual machine's networ
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99-1789714412585.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1719278539972_31f94d63_6f34_4904_846e_cd72975c7e99_1789714412585.png)
 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1-1789714423521.png)
@@ -338,7 +338,7 @@ If using servers like TFTP or SFTP, you need to set the virtual machine's networ
  Set a static IP address. At this time, the IP address of Ubuntu and the host IP address should be set in the same network segment.
 
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f-1789714455702.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f_1789714455702.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
