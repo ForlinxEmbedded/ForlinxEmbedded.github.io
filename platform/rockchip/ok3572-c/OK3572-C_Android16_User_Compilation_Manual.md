@@ -119,19 +119,19 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780452108965-5531d0a1-e207-4df6-9c20-45a97daaaf45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780452108965_5531d0a1_e207_4df6_9c20_45a97daaaf45.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780453638297-243ff165-5ebf-4e1f-b4a5-a5adfa925da4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780453638297_243ff165_5ebf_4e1f_b4a5_a5adfa925da4.png)
 
 Once the files have been extracted, you will have a development environment `OK3572-VM17-ubuntu22_04`, which includes the virtual machine files `OK3572.vmx`.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780454608533-0dc4a27f-5cd0-4781-8a87-ac967b0d43bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780454608533_0dc4a27f_5cd0_4781_8a87_ac967b0d43bb.png)
 
 Open your installed virtualization software (e.g., VMware, VirtualBox), select the newly extracted virtual machine, and double-click the startup file.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780454543047-3f97e174-d019-49e9-abf3-91103225f15a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780454543047_3f97e174_d019_49e9_abf3_91103225f15a.png)
 
 After loading, click to run and enter the system interface.
 
@@ -230,19 +230,19 @@ After configuring the image, ensure that the network is working, and then start 
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229347-0783b665-ffd3-42b5-935f-9d3c45fd1eb7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229347_0783b665_ffd3_42b5_935f_9d3c45fd1eb7.png)
 
 After selecting the language on the left side of the image, click `Install Ubuntu` to open the language selection interface. The default language of Ubuntu is English, but others can also be selected. The default language can be changed later. After making your selection, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229421-67855201-9acb-4c81-8590-3f8826645d2a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229421_67855201_9acb_4c81_8590_3f8826645d2a.png)
 
 Then, use the default keyboard layout and click Continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229511-2186fdfb-726d-4641-b0e3-2b7ea6f1ec58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229511_2186fdfb_726d_4641_b0e3_2b7ea6f1ec58.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229593-be840ab7-8bfc-488a-8386-320ecfdb591c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229593_be840ab7_8bfc_488a_8386_320ecfdb591c.png)
 
 Click “Next”.
 
@@ -391,7 +391,7 @@ The generated `v1.0--v2.0.zip` is the incremental upgrade package from v1.0 to v
 
 Rename `v1.0--v2.0.zip`to`update.zip` , and it can be used for an incremental OTA upgrade (provided the development board is running the v1.0 version system).
 
-If you encounter failures while generating OTA packages in the virtual machine, you can adjust line 3328 of the file build/make/tools/releasetools/common.py to increase the default timeout.![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780373285882-bd20e4f6-d60b-424f-8c47-3d7858a75a5f.png)
+If you encounter failures while generating OTA packages in the virtual machine, you can adjust line 3328 of the file build/make/tools/releasetools/common.py to increase the default timeout.![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780373285882_bd20e4f6_d60b_424f_8c47_3d7858a75a5f.png)
 
 ## 5\. Android Application Development
 
@@ -402,75 +402,75 @@ This chapter explains how to set up an Android application development environme
 Open `3-tools\android-studio-panda2-windows.exe`  
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077134865-ad7b6839-eb98-4aec-9880-1cc15745f778.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077134865_ad7b6839_eb98_4aec_9880_1cc15745f778.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077141668-7121b4f8-7c49-40c1-b041-47d42b51cb3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077141668_7121b4f8_7c49_40c1_b041_47d42b51cb3e.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077397900-2ff5640e-b949-4ee9-a71a-0d42a9e6262c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077397900_2ff5640e_b949_4ee9_a71a_0d42a9e6262c.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077277299-8a3832a1-eae3-403a-b458-9997e097a3ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077277299_8a3832a1_eae3_403a_b458_9997e097a3ed.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077433893-fb71ccfe-c4f9-447b-92c2-86baaf9c056b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077433893_fb71ccfe_c4f9_447b_92c2_86baaf9c056b.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077441667-cfe05dcf-32cc-463f-a815-fc31ed164fc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077441667_cfe05dcf_32cc_463f_a815_fc31ed164fc9.png)
 
 Installation is complete.
 
 Configure the SDK. Click the small gear icon.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077534874-cd12d206-126b-4de1-8d78-6b718fc943bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077534874_cd12d206_126b_4de1_8d78_6b718fc943bd.png)
 
 Click "SDK Manager".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077574553-76d56e7b-04c5-49c7-83a4-f232c8566ce1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077574553_76d56e7b_04c5_49c7_83a4_f232c8566ce1.png)
 
 Click "Apply".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077688240-e38ad252-437a-41ed-935f-a5948e919dac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077688240_e38ad252_437a_41ed_935f_a5948e919dac.png)
 
 Click “OK”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779077719262-982135b3-d21f-4561-953b-7a54370a039e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077719262_982135b3_d21f_4561_953b_7a54370a039e.png)
 
 Wait for the download to complete, then click “Finish”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779079421237-1c39ecff-f7d1-462f-98a5-f8bae243104a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779079421237_1c39ecff_f7d1_462f_98a5_f8bae243104a.png)
 
 ### 5.2 Creating a New Project
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779081063944-c9e9cc9e-2c34-4832-8e7a-d4208f7b18ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081063944_c9e9cc9e_2c34_4832_8e7a_d4208f7b18ae.png)
 
 Select `Empty View Acticity`.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779081080056-0801b56f-6015-4d27-9a6f-33985c3ce826.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081080056_0801b56f_6015_4d27_9a6f_33985c3ce826.png)
 
 Modify project name and other information, then click `Finish`.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779074825043-3733d440-7765-40d4-8151-a97cb5123164.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779074825043_3733d440_7765_40d4_8151_a97cb5123164.png)
 
 The first time you create a project, the relevant SDK and tools will be downloaded automatically, indicated by a prompt in the status bar.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779081130401-facde13a-0bdd-49ad-907e-2a5cf4d300f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081130401_facde13a_0bdd_49ad_907e_2a5cf4d300f8.png)
 
 If there are JDK-related errors, click `Setup SDK` and select the first option.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779081154001-7c665c28-6a29-4aa5-b880-642b95108d95.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081154001_7c665c28_6a29_4aa5_b880_642b95108d95.png)
 
 Connect the development board to the computer, ensure adb works normally. Click the run button in the title bar to compile the project and install/run it on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779083197324-97fa779c-48a3-445b-a34d-db60d8b293a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083197324_97fa779c_48a3_445b_a34d_db60d8b293a7.png)
 
 ### 5.3 APK Platform Signature
 
@@ -510,17 +510,17 @@ Open the Android Studio project and add a shared UID in `AndroidManifest.xml`, f
 
 Click `File` -> `Project Structure`:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779083432699-fda45b7f-5a73-4029-b3a1-ae86e94bb1b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083432699_fda45b7f_5a73_4029_b3a1_ae86e94bb1b2.png)
 
 Click `OK`.
 
 Click the small `+` sign, fill in `release` in the same way as debug.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779083564676-8382dc9a-249b-4474-9d15-ffc0a164ebe9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083564676_8382dc9a_249b_4474_9d15_ffc0a164ebe9.png)
 
 After modification, recompile and run the app. Now, using the `ps` command, you can see the app is running as the `system` user `system_app`.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779083665935-335e594e-d2db-4301-8986-8c635aec0bd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083665935_335e594e_d2db_4301_8986_8c635aec0bd6.png)
 
 ### 5.4 Method for System Pre-installed APK
 
