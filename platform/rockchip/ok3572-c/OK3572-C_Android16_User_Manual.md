@@ -1019,7 +1019,7 @@ Click Install Driver.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
-### **4.1.2** OTG Flashing Test
+##### **4.1.2** OTG Flashing Test
 
 **4.1.2.1 RKDevTool Flashing Test**
 
