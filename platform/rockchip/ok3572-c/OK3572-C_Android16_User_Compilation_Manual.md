@@ -119,19 +119,19 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780452108965-5531d0a1-e207-4df6-9c20-45a97daaaf45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780452108965-5531d0a1-e207-4df6-9c20-45a97daaaf45.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780453638297-243ff165-5ebf-4e1f-b4a5-a5adfa925da4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780453638297-243ff165-5ebf-4e1f-b4a5-a5adfa925da4.png)
 
 Once the files have been extracted, you will have a development environment `OK3572-VM17-ubuntu22_04`, which includes the virtual machine files `OK3572.vmx`.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780454608533-0dc4a27f-5cd0-4781-8a87-ac967b0d43bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780454608533-0dc4a27f-5cd0-4781-8a87-ac967b0d43bb.png)
 
 Open your installed virtualization software (e.g., VMware, VirtualBox), select the newly extracted virtual machine, and double-click the startup file.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780454543047-3f97e174-d019-49e9-abf3-91103225f15a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780454543047-3f97e174-d019-49e9-abf3-91103225f15a.png)
 
 After loading, click to run and enter the system interface.
 
@@ -391,7 +391,7 @@ The generated `v1.0--v2.0.zip` is the incremental upgrade package from v1.0 to v
 
 Rename `v1.0--v2.0.zip`to`update.zip` , and it can be used for an incremental OTA upgrade (provided the development board is running the v1.0 version system).
 
-If you encounter failures while generating OTA packages in the virtual machine, you can adjust line 3328 of the file build/make/tools/releasetools/common.py to increase the default timeout.![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1780373285882-bd20e4f6-d60b-424f-8c47-3d7858a75a5f.png)
+If you encounter failures while generating OTA packages in the virtual machine, you can adjust line 3328 of the file build/make/tools/releasetools/common.py to increase the default timeout.![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780373285882-bd20e4f6-d60b-424f-8c47-3d7858a75a5f.png)
 
 ## 5\. Android Application Development
 
@@ -520,7 +520,7 @@ Click the small `+` sign, fill in `release` in the same way as debug.
 
 After modification, recompile and run the app. Now, using the `ps` command, you can see the app is running as the `system` user `system_app`.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/63045368/1779083665935-335e594e-d2db-4301-8986-8c635aec0bd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779083665935-335e594e-d2db-4301-8986-8c635aec0bd6.png)
 
 ### 5.4 Method for System Pre-installed APK
 
