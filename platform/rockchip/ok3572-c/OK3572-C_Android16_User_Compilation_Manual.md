@@ -222,7 +222,7 @@ The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click “OK”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/29-1789700978029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/29_1789700978029.png)
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image
 
