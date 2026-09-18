@@ -67,41 +67,41 @@ This chapter focuses on the installation of VMware virtual machines, using `VMwa
 
 Visit the VMware official website at https://www.vmware.com to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version Version.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292018801_8230a6f7_bdc2_4fd7_a6ac_9b9051a28f3d.png)
 
 ### 1.2 VMware Software Installation
 
 Double-click the setup file to enter the installation wizard.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
 
 Check, then click “Next.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
 
 Wait for the installation to complete.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key
 
@@ -119,19 +119,19 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780452108965-5531d0a1-e207-4df6-9c20-45a97daaaf45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780452108965-5531d0a1-e207-4df6-9c20-45a97daaaf45.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780453638297-243ff165-5ebf-4e1f-b4a5-a5adfa925da4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780453638297-243ff165-5ebf-4e1f-b4a5-a5adfa925da4.png)
 
 Once the files have been extracted, you will have a development environment `OK3572-VM17-ubuntu22_04`, which includes the virtual machine files `OK3572.vmx`.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780454608533-0dc4a27f-5cd0-4781-8a87-ac967b0d43bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780454608533-0dc4a27f-5cd0-4781-8a87-ac967b0d43bb.png)
 
 Open your installed virtualization software (e.g., VMware, VirtualBox), select the newly extracted virtual machine, and double-click the startup file.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780454543047-3f97e174-d019-49e9-abf3-91103225f15a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780454543047-3f97e174-d019-49e9-abf3-91103225f15a.png)
 
 After loading, click to run and enter the system interface.
 
@@ -150,63 +150,63 @@ This chapter mainly explains the setup process of the Ubuntu system.
 
 Open VMware software and click File`-> `New Virtual Machine to enter the following interface:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
 
 Choose "Custom" and click ''Next.''
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996662_59902e0c_a9fd_4a7c_aebb_9c825cc1a759.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726291996662_59902e0c_a9fd_4a7c_aebb_9c825cc1a759.png)
 
 Select compatibility for the corresponding VMware version. The version can be viewed in `Help`-> `About VMwareVMware Workstation`. Click ''Next.''
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e_1783653515013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726291996865_5c88406f_2ad2_4afe_9f13_e6096bcc0e4e_1783653515013.png)
 
 Choose to install the operating system later, and click ''Next.'’
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/16.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/16.png)
 
 Keep the default settings and click ''Next.''
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/17.png)
 
 Modify the virtual machine's name and installation location, then click ''Next.''
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/18.png)
 
 Set the number of processors according to your needs.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/19.png)
 
 Similarly, set the memory size according to the actual situation (it is recommended to adjust the memory size to be more than 20GB).
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/20.png)
 
 Set the network type, the default is NAT mode, and click "Next."
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/21.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/21.png)
 
 Keep the default settings and click ''Next.''
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/22.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/22.png)
 
 Keep the default settings and click ''Next.'’
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/23.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/23.png)
 
 Choose to create a new virtual disk:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/24.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/24.png)
 
 Set the disk size to 500GB and select the disk's format, then click ''Next'' to complete.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/25.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/25.png)
 
 Specify the disk file, the default setting is fine here.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/26.png)
 
 Click ''Finish'' by default.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/27.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/27.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -216,37 +216,37 @@ The installed Ubuntu version is 22.04, and all the introductions and development
 
 Right-click the Ubuntu 64-bit virtual machine that was created and select "Settings" from the context menu.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/28.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/28.png)
 
 The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click “OK”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/29-1789700978029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/29-1789700978029.png)
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/30.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/30.png)
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229347-0783b665-ffd3-42b5-935f-9d3c45fd1eb7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229347-0783b665-ffd3-42b5-935f-9d3c45fd1eb7.png)
 
 After selecting the language on the left side of the image, click `Install Ubuntu` to open the language selection interface. The default language of Ubuntu is English, but others can also be selected. The default language can be changed later. After making your selection, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229421-67855201-9acb-4c81-8590-3f8826645d2a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229421-67855201-9acb-4c81-8590-3f8826645d2a.png)
 
 Then, use the default keyboard layout and click Continue.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/49874024/1730964229511-2186fdfb-726d-4641-b0e3-2b7ea6f1ec58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229511-2186fdfb-726d-4641-b0e3-2b7ea6f1ec58.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1730964229593-be840ab7-8bfc-488a-8386-320ecfdb591c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1730964229593-be840ab7-8bfc-488a-8386-320ecfdb591c.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292002173_2d36ed67_6b29_41d8_8ca7_ec1aa50d8a84.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292002173_2d36ed67_6b29_41d8_8ca7_ec1aa50d8a84.png)
 
 Set a username and password, click, and wait for the installation to complete.
 
@@ -266,7 +266,7 @@ forlinx@ubuntu:~$ sudo swapon /swapfile
 
 #### 3.3.2 Network Configuration
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1726292003563_ef1f0816_9727_475a_9115_1f2df7b52969.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1726292003563_ef1f0816_9727_475a_9115_1f2df7b52969.png)
 
 **3.3.2.1 NAT (Network Address Translation) Connection Mode**
 
@@ -391,7 +391,7 @@ The generated `v1.0--v2.0.zip` is the incremental upgrade package from v1.0 to v
 
 Rename `v1.0--v2.0.zip`to`update.zip` , and it can be used for an incremental OTA upgrade (provided the development board is running the v1.0 version system).
 
-If you encounter failures while generating OTA packages in the virtual machine, you can adjust line 3328 of the file build/make/tools/releasetools/common.py to increase the default timeout.![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1780373285882-bd20e4f6-d60b-424f-8c47-3d7858a75a5f.png)
+If you encounter failures while generating OTA packages in the virtual machine, you can adjust line 3328 of the file build/make/tools/releasetools/common.py to increase the default timeout.![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1780373285882-bd20e4f6-d60b-424f-8c47-3d7858a75a5f.png)
 
 ## 5\. Android Application Development
 
@@ -402,75 +402,75 @@ This chapter explains how to set up an Android application development environme
 Open `3-tools\android-studio-panda2-windows.exe`  
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077134865-ad7b6839-eb98-4aec-9880-1cc15745f778.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077134865-ad7b6839-eb98-4aec-9880-1cc15745f778.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077141668-7121b4f8-7c49-40c1-b041-47d42b51cb3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077141668-7121b4f8-7c49-40c1-b041-47d42b51cb3e.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077397900-2ff5640e-b949-4ee9-a71a-0d42a9e6262c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077397900-2ff5640e-b949-4ee9-a71a-0d42a9e6262c.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077277299-8a3832a1-eae3-403a-b458-9997e097a3ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077277299-8a3832a1-eae3-403a-b458-9997e097a3ed.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077433893-fb71ccfe-c4f9-447b-92c2-86baaf9c056b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077433893-fb71ccfe-c4f9-447b-92c2-86baaf9c056b.png)
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077441667-cfe05dcf-32cc-463f-a815-fc31ed164fc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077441667-cfe05dcf-32cc-463f-a815-fc31ed164fc9.png)
 
 Installation is complete.
 
 Configure the SDK. Click the small gear icon.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077534874-cd12d206-126b-4de1-8d78-6b718fc943bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077534874-cd12d206-126b-4de1-8d78-6b718fc943bd.png)
 
 Click "SDK Manager".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077574553-76d56e7b-04c5-49c7-83a4-f232c8566ce1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077574553-76d56e7b-04c5-49c7-83a4-f232c8566ce1.png)
 
 Click "Apply".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077688240-e38ad252-437a-41ed-935f-a5948e919dac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077688240-e38ad252-437a-41ed-935f-a5948e919dac.png)
 
 Click “OK”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779077719262-982135b3-d21f-4561-953b-7a54370a039e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779077719262-982135b3-d21f-4561-953b-7a54370a039e.png)
 
 Wait for the download to complete, then click “Finish”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779079421237-1c39ecff-f7d1-462f-98a5-f8bae243104a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779079421237-1c39ecff-f7d1-462f-98a5-f8bae243104a.png)
 
 ### 5.2 Creating a New Project
 
 Click “Next”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779081063944-c9e9cc9e-2c34-4832-8e7a-d4208f7b18ae.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081063944-c9e9cc9e-2c34-4832-8e7a-d4208f7b18ae.png)
 
 Select `Empty View Acticity`.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779081080056-0801b56f-6015-4d27-9a6f-33985c3ce826.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081080056-0801b56f-6015-4d27-9a6f-33985c3ce826.png)
 
 Modify project name and other information, then click `Finish`.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779074825043-3733d440-7765-40d4-8151-a97cb5123164.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779074825043-3733d440-7765-40d4-8151-a97cb5123164.png)
 
 The first time you create a project, the relevant SDK and tools will be downloaded automatically, indicated by a prompt in the status bar.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779081130401-facde13a-0bdd-49ad-907e-2a5cf4d300f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081130401-facde13a-0bdd-49ad-907e-2a5cf4d300f8.png)
 
 If there are JDK-related errors, click `Setup SDK` and select the first option.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779081154001-7c665c28-6a29-4aa5-b880-642b95108d95.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779081154001-7c665c28-6a29-4aa5-b880-642b95108d95.png)
 
 Connect the development board to the computer, ensure adb works normally. Click the run button in the title bar to compile the project and install/run it on the development board.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779083197324-97fa779c-48a3-445b-a34d-db60d8b293a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083197324-97fa779c-48a3-445b-a34d-db60d8b293a7.png)
 
 ### 5.3 APK Platform Signature
 
@@ -510,17 +510,17 @@ Open the Android Studio project and add a shared UID in `AndroidManifest.xml`, f
 
 Click `File` -> `Project Structure`:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779083432699-fda45b7f-5a73-4029-b3a1-ae86e94bb1b2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083432699-fda45b7f-5a73-4029-b3a1-ae86e94bb1b2.png)
 
 Click `OK`.
 
 Click the small `+` sign, fill in `release` in the same way as debug.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779083564676-8382dc9a-249b-4474-9d15-ffc0a164ebe9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083564676-8382dc9a-249b-4474-9d15-ffc0a164ebe9.png)
 
 After modification, recompile and run the app. Now, using the `ps` command, you can see the app is running as the `system` user `system_app`.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Linux_6_12_58_User_Compilation_Manual/1779083665935-335e594e-d2db-4301-8986-8c635aec0bd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3572-c/OK3572-C_Android16_User_Compilation_Manual/1779083665935-335e594e-d2db-4301-8986-8c635aec0bd6.png)
 
 ### 5.4 Method for System Pre-installed APK
 
