@@ -314,9 +314,6 @@ Before using the network, make sure that your virtual machine can connect to the
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. This is the most commonly used method for the virtual machine to access the external network.
 
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_Linux6_1_14_User_Compilation_Manual/1.png)
-
 The network is set to dynamic IP.
 
 
