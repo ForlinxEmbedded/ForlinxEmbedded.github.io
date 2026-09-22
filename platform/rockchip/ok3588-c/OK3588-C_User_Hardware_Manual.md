@@ -1,4 +1,4 @@
-# User's Hardware Manual_V1.5
+# User's Hardware Manual_V1.6
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -14,6 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 | Date       |                     User Manual Version                      |                         SoM Version                          | Carrier Board Version | Revision History                                             |
 | ---------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :-------------------: | ------------------------------------------------------------ |
+|05/01/2026|	V1.6	|FET3588-C V1.1, FET3588-C2 V1.0	|V1.1 and above|Added FET3588-C2 SoM description.|
 | 17/12/2025 | <font style="color:rgb(0,0,0);">V1.</font><font style="color:rgb(0,0,0);">5</font> | <font style="color:rgb(51,51,51);">V1.</font><font style="color:rgb(51,51,51);">1</font> |    V1.1 and above     | Adding SoM power management upgrade solution:<br />Expanding the voltage input range from 12V to a wide voltage 5V-13V,<br />and updating the voltage<br />input parameters of the SoM<br />in the section “2. FET3588 - C SoM Description". |
 | 21/11/2025 |                             V1.4                             |                             V1.1                             |    V1.1 and above     | Adding section 2.6.2: Design Guide for Vibration Resistance of the SoM |
 | 12/06/2024 |                             V1.3                             |                             V1.1                             |    V1.1 and above     | 1. Updating the manual format;<br />2. Deleting the naming convention and ordering information of the SoM;<br /> 3. Deleting the section on SoM pin descriptions (categorized by function);<br />4. Adding the "Overview" and "Documentation Description" sections;<br />5. Updating the power consumption table. |
@@ -66,15 +67,27 @@ Target Applications:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1720683826106_a8519d36_1ac2_4b5f_abf4_8f83c9803edd.png)
 
-## 2\. FET3588-C SoM Description
+## 2\. FET3588-C&FET3588-C2 SoM Description
 
-### 2.1 FET3588-C SoM
+FET3588-C and FET3588-C2 SoMs have identical connector pin definitions. 
+
+Their key differences are: FET3588-C uses DDR4 memory, while FET3588-C2 uses DDR5 memory.
+
+### 2.1 FET3588-C/FET3588-C2 SoM
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1738804876668_b204cab4_12a8_4c91_b1b2_e1165d4b811c.png)
 
 **Front**
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1738804893584_3eb3e211_68a0_42da_bb6e_a30682b9b0de.png)
+
+**Back**
+
+![img](2.png)
+
+**Front**
+
+![img](3.png)
 
 **Back**
 
@@ -90,7 +103,7 @@ Target Applications:
 
 Structure size: 68mm × 50mm, dimensional tolerance ± 0.15mm, refer to DXF file for more dimensional information.
 
-Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
+Plate making process: 1.6mm thickness, 10-layer immersion gold PCB for the FET3588-C, and 12-layer embedded gold PCB for the FET3588-C2.
 
 Connectors: Four 0.4mm pitch, 100pin board-to-board connectors.  See the appendix for the connector dimension drawing.
 
@@ -102,12 +115,19 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 
 #### 2.3.1 System Main Frequency
 
-| **Name**| **Specification**| | | | **Description**|
-|:----------:|:----------:|----------|----------|----------|:----------:|
-| | **Minimum**| **Typical**| **Maximum** | **Unit**||
-| System Frequency Arm® Cortex®-A76| \-| \-| 2400 | MHz| \-|
-| System Frequency Arm® Cortex®-A55| \-| \-| 1800 | MHz||
-| System Frequency Arm® Cortex®-M0| \-| \-| \-| \-| \-|
+|               Name                | Specification |             |             |          | **Description**  |
+| :-------------------------------: | :-----------: | :---------- | :---------- | :------- | :--------------: |
+|                                   |  **Minimum**  | **Typical** | **Maximum** | **Unit** |                  |
+| System Frequency Arm® Cortex®-A76 |       -       | -           | 2400        | MHz      | Commercial-grade |
+| System Frequency Arm® Cortex®-A55 |       -       | -           | 1800        | MHz      | Commercial-grade |
+| System Frequency Arm® Cortex®-M0  |       -       | -           | -           | -        |        -         |
+
+|               Name                | Specification |             |             |          | **Description**  |
+| :-------------------------------: | :-----------: | :---------- | :---------- | :------- | :--------------: |
+|                                   |  **Minimum**  | **Typical** | **Maximum** | **Unit** |                  |
+| System Frequency Arm® Cortex®-A76 |       -       | -           | 1600        | MHz      | Industrial-grade |
+| System Frequency Arm® Cortex®-A55 |       -       | -           | 1300        | MHz      | Industrial-grade |
+| System Frequency Arm® Cortex®-M0  |       -       | -           | -           | -        |        -         |
 
 #### 2.3.2 Power Parameter
 
@@ -198,15 +218,19 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 
 2\. USB3.1, PCIe2.0 and SATA 3.0 are multiplexed, please refer to the following carrier board design chapters for more information.
 
-### 2.5 FET3588-C SoM Pins Definition
+### 2.5 FET3588-C/FET3588-C2 SoM Pins Definition
 
-#### 2.5.1 FET3588-C SoM Pins Schematic
+### 2.5.1 FET3588-C/FET3588-C2 SoM Pins Schematic
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113531371_84d644b8_4d0a_4d15_9a16_ef3876f188c7.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/47801913/1731113531371-84d644b8-4d0a-4d15-9a16-ef3876f188c7.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113584306_017c855b_7f11_403c_a4ea_f9cee7ce3855.png)
+![](https://cdn.nlark.com/yuque/0/2024/png/47801913/1731113584306-017c855b-7f11-403c-a4ea-f9cee7ce3855.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113605303_fc695008_b9d8_45e9_b417_0f04c945d461.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113605445_29e69de6_b757_4fa6_ba64_e7e8bffa0cc9.png)
+![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765955917537-690725af-e4b7-41a1-96b7-4ecbbd873ab1.png)
+
+![](https://cdn.nlark.com/yuque/0/2024/png/47801913/1731113605445-29e69de6-b757-4fa6-ba64-e7e8bffa0cc9.png)
+
+
 
 #### 2.5.2 FET3588-C SoM Pins Description
 
@@ -674,13 +698,13 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 
 #### 2.6.1 SoM Circuit Design Guide
 
-The FET3588-C SoM integrates power and storage circuits into a compact module, requiring minimal external circuitry. A minimum system can operate with just power supply and boot configuration, as shown in the figure below:
+The FET3588-C&FET3588-C2 SoM integrates power and storage circuits into a compact module, requiring minimal external circuitry. A minimum system can operate with just power supply and boot configuration, as shown in the figure below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113696186_d39edf18_814b_4b5e_8b24_68de432ba81c.png)
 
 Please refer to “Appendix IV“ for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, otherwise, the user can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
-Please refer to section 3.5 in “Chapter 3. OK3588-C Carrier Board Description” for the peripheral circuits.
+Please refer to section 3.5 in “Chapter 3. OK3588-C&OK3588-C21 Carrier Board Description” for the peripheral circuits.
 
 #### 2.6.2 Design Guide for Vibration Resistance of the SoM
 
@@ -697,13 +721,19 @@ Acceleration amplitude: 5 g
 
 The performance data listed in this manual is based on tests conducted in a standard laboratory environment and is applicable to general industrial equipment. The performance in actual applications may vary due to factors such as the installation method and combined stress.
 
-## 3\. OK3588-C Development Platform Description
+## 3\. OK3588-C&OK3588-C21 Development Platform Description
 
-### 3.1 OK3588-C Development Board Interface Diagram
+### 3.1 OK3588-C&OK3588-C21 Development Board Interface Diagram
 
-Connection method is board-to-board, and main interfaces are shown in the figure below:
+FET3588-C and FET3588-C2 SoMs have identical pin definitions and share a common carrier board:
+- **FET3588-C SoM + OK3588-C carrier board → OK3588-C development board**
+- **FET3588-C2 SoM + OK3588-C carrier board → OK3588-C21 development board**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1720683836169_b4d7f262_e3d0_4181_ae83_16af963b0d08.jpeg)
+On the Forlinx OK3588-C/OK3588-C21 platform, the SoM and carrier board connect via a board-to-board connector. Key interfaces are shown below:
+
+![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533304/1720683836169-b4d7f262-e3d0-4181-ae83-16af963b0d08.jpeg)
+
+![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1767579295457-385b1e08-5cf4-4847-96da-eac29b233145.jpeg)
 
 **Front**
 
@@ -711,7 +741,7 @@ Connection method is board-to-board, and main interfaces are shown in the figure
 
 **Back**
 
-### 3.2 OK3588-C SoM Dimension Diagram
+### 3.2 OK3588-C&OK3588-C21 SoM Dimension Diagram
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1720683836940_572b12c8_c893_41a5_bbd7_4a949dece8fa.png)
 
@@ -778,7 +808,7 @@ A - B - C + D E F : G - H
 - **"TBD" means the function has not been developed in this phase;**
 - **The parameters in the table are hardware design or theoretical CPU values.**
 
-### 3.5 OK3588-C Carrier Board Description
+### 3.5 OK3588-C&OK3588-C21 Carrier Board Description
 
 **Note: The component UID with "\_DNP" mark in the diagram below represents it is not soldered by default**.
 
@@ -1297,7 +1327,7 @@ It is necessary to provide clocking requirements to meet PCIe 3.0 or higher
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731064295180_ed9aeb2e_c941_40bd_bdc5_a2c019805399.png)
 
-**OK3588-C development board configuration is as follows:**
+**OK3588-C&OK3588-C21 development board configuration is as follows:**
 
 Controller 0(4L) + PCIe3.0 PHY0 + PCIe3.0 PHY1 to form PCIe3.0 X4Lane RC or EP mode for 4Lane. The principle is as follows:
 
@@ -1954,7 +1984,7 @@ Carrier board Connector Dimension:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1720685535697_d69ef192_a7d4_4e83_895e_54dbf684b36f.png)
 
-## 5\. OK3588-C Development Board Power Consumption Table
+## 5\. OK3588-C&OK3588-C21 Development Board Power Consumption Table
 
 Table1. Android System Consumption
 
@@ -1975,6 +2005,17 @@ Table 2. Linux system power consumption
 |    3    | CPU Stress + Memory + eMMC Read/Write Stress Test |       6.98        |              10.00               |
 |    4    |       PWRPN\_L key sleep power consumption        |       0.59        |               2.53               |
 
+OK3588-C21 Power Consumption Table
+
+Table 3 Linux System Power Consumption Table
+
+| **Number** | **Test Item**                   | **SoM Power (W)** | **Development Board Power (W)** |
+| :--------: | :------------------------------ | :---------------: | :-----------------------------: |
+|     1      | No-Load Startup Peak Power      |       6.048       |              8.58               |
+|     2      | No-Load Standby Power           |       0.768       |              2.952              |
+|     3      | CPU + Memory + eMMC Stress Test |       4.44        |              6.216              |
+|     4      | PWRON_L Button Sleep Mode Power |       0.36        |              2.508              |
+
 **Note:**
 
 - **Peak Current: Maximum current value during booting;**
@@ -1985,14 +2026,20 @@ Table 2. Linux system power consumption
 
 ## 6\. Minimum System Schematic
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609426616_4790d3d7_876e_4f8e_8467_db7b4d54c14b.png)
+![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698596628-7bcd8466-4747-47cd-ba2d-96fba6c4069c.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609548442_50922fdd_267f_4088_946d_ce5e92d6fc8e.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609552427_91b3f9b0_a747_49e9_9881_4b44cff9fb06.png)
+![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698609410-f5ac96d4-7e69-4419-9197-8d502db0f667.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609574321_e24d5b40_2960_4883_b7e1_25f64fe23fb1.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609591009_4a4881f9_3a16_4bec_93fe_f6a287ae7237.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609575250_3c121a2a_920d_454f_ac19_3568ff1bb567.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609575180_6c688743_9882_4a91_a6c2_8379a790fb5b.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609575863_3e99ed8a_720b_4446_afc4_14498c83813f.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609577925_f53c20a0_53a9_4969_b0d9_65611609538e.png)
+![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698618119-8a9d90b7-5034-4cc7-8c29-5b18cf4a0f69.png)
+
+![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698625194-bb71913e-db53-48f3-b18e-b6e8fcc9d81a.png)
+
+
+
+![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609591009-4a4881f9-3a16-4bec-93fe-f6a287ae7237.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609575250-3c121a2a-920d-454f-ac19-3568ff1bb567.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609575180-6c688743-9882-4a91-a6c2-8379a790fb5b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609575863-3e99ed8a-720b-4446-afc4-14498c83813f.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609577925-f53c20a0-53a9-4969-b0d9-65611609538e.png)
 
 **Note:** 
 
 - **The minimum system includes SoM power supply, system flash circuit, and debugging serial port circuit;**
-- **The factory image of OK3588 - C will load the PCIE3.0 driver during startup. At this time, it will detect the two external clock input signals PCIE30\_PORT0\\1\_REFCLK\_IN\_P\\N;**
+- **The factory image of OK3588-C/OK3588-C21 will load the PCIE3.0 driver during startup. At this time, it will detect the two external clock input signals PCIE30\_PORT0\\1\_REFCLK\_IN\_P\\N;**
 - **If these two clock inputs are not available, the system will be stuck in the process and fail to start. When the PCIE3.0 clock circuit is not designed, you can simply disable the corresponding function in the device tree.**
