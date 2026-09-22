@@ -83,11 +83,11 @@ Their key differences are: FET3588-C uses DDR4 memory, while FET3588-C2 uses DDR
 
 **Back**
 
-![img](2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/2.png)
 
 **Front**
 
-![img](3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/3.png)
 
 **Back**
 
@@ -222,13 +222,13 @@ You can refer to the development board design and use M2, L=1.5mm patch nuts on 
 
 ### 2.5.1 FET3588-C/FET3588-C2 SoM Pins Schematic
 
-![](https://cdn.nlark.com/yuque/0/2024/png/47801913/1731113531371-84d644b8-4d0a-4d15-9a16-ef3876f188c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113531371_84d644b8_4d0a_4d15_9a16_ef3876f188c7.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/47801913/1731113584306-017c855b-7f11-403c-a4ea-f9cee7ce3855.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113584306_017c855b_7f11_403c_a4ea_f9cee7ce3855.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1765955917537-690725af-e4b7-41a1-96b7-4ecbbd873ab1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1765955917537_690725af_e4b7_41a1_96b7_4ecbbd873ab1.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/47801913/1731113605445-29e69de6-b757-4fa6-ba64-e7e8bffa0cc9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1731113605445_29e69de6_b757_4fa6_ba64_e7e8bffa0cc9.png)
 
 
 
@@ -731,9 +731,9 @@ FET3588-C and FET3588-C2 SoMs have identical pin definitions and share a common 
 
 On the Forlinx OK3588-C/OK3588-C21 platform, the SoM and carrier board connect via a board-to-board connector. Key interfaces are shown below:
 
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/45533304/1720683836169-b4d7f262-e3d0-4181-ae83-16af963b0d08.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1720683836169_b4d7f262_e3d0_4181_ae83_16af963b0d08.jpeg)
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/50461850/1767579295457-385b1e08-5cf4-4847-96da-eac29b233145.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1767579295457_385b1e08_5cf4_4847_96da_eac29b233145.jpeg)
 
 **Front**
 
@@ -2026,17 +2026,17 @@ Table 3 Linux System Power Consumption Table
 
 ## 6\. Minimum System Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698596628-7bcd8466-4747-47cd-ba2d-96fba6c4069c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1772698596628_7bcd8466_4747_47cd_ba2d_96fba6c4069c.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698609410-f5ac96d4-7e69-4419-9197-8d502db0f667.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1772698609410_f5ac96d4_7e69_4419_9197_8d502db0f667.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698618119-8a9d90b7-5034-4cc7-8c29-5b18cf4a0f69.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1772698618119_8a9d90b7_5034_4cc7_8c29_5b18cf4a0f69.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45533316/1772698625194-bb71913e-db53-48f3-b18e-b6e8fcc9d81a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1772698625194_bb71913e_db53_48f3_b18e_b6e8fcc9d81a.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609591009-4a4881f9-3a16-4bec-93fe-f6a287ae7237.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609575250-3c121a2a-920d-454f-ac19-3568ff1bb567.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609575180-6c688743-9882-4a91-a6c2-8379a790fb5b.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609575863-3e99ed8a-720b-4446-afc4-14498c83813f.png)![](https://cdn.nlark.com/yuque/0/2024/png/45533304/1721609577925-f53c20a0-53a9-4969-b0d9-65611609538e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609591009_4a4881f9_3a16_4bec_93fe_f6a287ae7237.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609575250_3c121a2a_920d_454f_ac19_3568ff1bb567.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609575180_6c688743_9882_4a91_a6c2_8379a790fb5b.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609575863_3e99ed8a_720b_4446_afc4_14498c83813f.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588-C_User_Hardware_Manual/1721609577925_f53c20a0_53a9_4969_b0d9_65611609538e.png)
 
 **Note:** 
 
