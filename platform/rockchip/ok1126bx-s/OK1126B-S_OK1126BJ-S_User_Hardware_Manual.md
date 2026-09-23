@@ -1,4 +1,4 @@
-User’s Hardware Manual\_V1.2
+# User’s Hardware Manual\_V1.2
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
