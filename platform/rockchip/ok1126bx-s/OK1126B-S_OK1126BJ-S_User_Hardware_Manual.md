@@ -53,7 +53,7 @@ The RV1126B is equipped with high - performance external DRAM (DDR3/DDR3L/DDR4/L
 
 **RV1126B Processor Block Diagram**
 
-![](1126.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1126.png)
 
 ## 2\. FET1126B-S SoM Description
 
@@ -61,11 +61,11 @@ The RV1126B is equipped with high - performance external DRAM (DDR3/DDR3L/DDR4/L
 
 **Front**
 
-![](DSC_5772.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/DSC_5772.png)
 
 **Back**
 
-![](V1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/V1.png)
 
 ### 2.2 FET1126B-S SoM Dimension Diagram
 
@@ -434,10 +434,10 @@ The pin compatible with the Raspberry Pi 40pin header are reserved on the carrie
 
 The following image shows the pin numbers of the Footprint for the stamp hole connector on the carrier board:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45533839/1777104849238-2f0cc214-0530-415b-8589-63da2749977c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1777104849238_2f0cc214_0530_415b_8589_63da2749977c.png)
 
 The following image shows the pin numbers of the Footprint for the stamp hole connector on the carrier board:
-![](https://cdn.nlark.com/yuque/0/2026/png/45533839/1777104881260-c9cf5fdc-2579-4d2a-ba8e-4f8ce319f658.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1777104881260_c9cf5fdc_2579_4d2a_ba8e_4f8ce319f658.png)
 
 To ensure good soldering yield, please refer to the following guidelines for the stencil design:
 
@@ -448,7 +448,7 @@ To ensure good soldering yield, please refer to the following guidelines for the
 - Circular LGA openings: Diameter 0.85 mm, with a 0.2 mm wide bridge at the center. 
   Square LGA pads: Open a 0.83 × 0.83 mm square hole.
 
-![](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/image.png)
 
 
 
