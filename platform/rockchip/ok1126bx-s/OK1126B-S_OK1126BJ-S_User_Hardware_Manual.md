@@ -1,4 +1,4 @@
-# User’s Hardware Manual\_V1.0
+User’s Hardware Manual\_V1.2
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -18,9 +18,11 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 ## Revision History
 
-| **Date**| **Manual Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|:----------:|:----------:|----------|
-| 22/12/2025 | V1.0| V1.0| V1.1| Initial Version|
+|  **Date**  | **Manual Version** | SoM Version | Carrier Board Version | **Revision History**                                         |
+| :--------: | :----------------: | :---------: | :-------------------: | ------------------------------------------------------------ |
+| 22/12/2025 |        V1.0        |    V1.0     |         V1.1          | Initial Version                                              |
+| 30/04/2026 |        V1.1        |    V1.0     |         V1.1          | Per the manufacturer’s suggestion, updated the description of the ISP performance parameter for <br />the main controller FET1126B-S/FET1126BJ-S from 12M@30fps to 12M@20fps |
+| 04/06/2026 |        V1.2        |    V1.0     |         V1.1          | 1. Removed information about pre-soldering on the SoM; <br />2. Updated the stencil opening design in the package dimension diagram<br />3. Updated the schematic at the 1000M Ethernet port in section 3.5.14 “1000M Ethernet”, R122 is not populated. |
 
 ## Overview
 
@@ -51,7 +53,7 @@ The RV1126B is equipped with high - performance external DRAM (DDR3/DDR3L/DDR4/L
 
 **RV1126B Processor Block Diagram**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382068952_869a3988_cdaf_40eb_9039_13a1dfc4fab3.png)
+![](1126.png)
 
 ## 2\. FET1126B-S SoM Description
 
@@ -59,11 +61,11 @@ The RV1126B is equipped with high - performance external DRAM (DDR3/DDR3L/DDR4/L
 
 **Front**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070646_096438b3_ae7f_48ec_9d1d_11ef05bcda55.png)
+![](DSC_5772.png)
 
 **Back**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382070753_4c2ba4d4_9677_48b1_8b3f_5a84836528db.png)
+![](V1.png)
 
 ### 2.2 FET1126B-S SoM Dimension Diagram
 
@@ -426,30 +428,56 @@ The pin compatible with the Raspberry Pi 40pin header are reserved on the carrie
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-s/OK1126B-S_OK1126BJ-S_User_Hardware_Manual/1766382074345_f01af64e_3a04_455d_944b_c0c5755df91d.png)
 
-## 4\. OK1126Bx-S Development Board Linux System Power Consumption Table
+## 4\. Connector Dimensions
 
-| No.| Test Item| SoM Power| Development board power (including SoM)|
-|:----------:|----------|:----------:|:----------:|
-| 1| Starting peak power without load | 1.69W| 2.69W|
-| 2| Standby without load| 0.505 W| 1.27W|
-| 3| Sleep| 0.39 W| 0.9W|
-| 4| USB Read and Write| 0.59 W| 1.775W|
-| 5| TF Read and Write| 0.98 W| 1.835W|
-| 6| PING Network| 0.735 W| 1.815W|
-| 7| Operating with camera| 0.9W| 2.26W|
-| 8| Operating with 7-inch MIPI screen + playing video| 1.025 W| 4.15W|
-| 9| Operating with camera + 7-inch MIPI screen + playing video| 1.34 W| 4.66W|
-| 10| CPU usage rate 100%.| 1.51 W| 2.24W|
-| 11| Memory usage rate 100%.| 1.045 W| 1.835W|
-| 12| EMMC Read and Write| 1.16 W| 1.93W|
-| 13| CPU pressure + memory pressure + eMMC read/write pressure test power| 1.97 W| 2.635W|
+**Connector Dimensions:**
 
-**Note：**
+The following image shows the pin numbers of the Footprint for the stamp hole connector on the carrier board:
 
-- **Test conditions: The SoM configuration is 4GB memory+64GB eMMC, and the screen is the optional product of Forlinx. SoM power supply is 5V and carrier board is 5V;**
+![](https://cdn.nlark.com/yuque/0/2026/png/45533839/1777104849238-2f0cc214-0530-415b-8589-63da2749977c.png)
+
+The following image shows the pin numbers of the Footprint for the stamp hole connector on the carrier board:
+![](https://cdn.nlark.com/yuque/0/2026/png/45533839/1777104881260-c9cf5fdc-2579-4d2a-ba8e-4f8ce319f658.png)
+
+To ensure good soldering yield, please refer to the following guidelines for the stencil design:
+
+**Opening Scheme:**
+
+- Thickness: Use a 0.1 mm / 0.15 mm step stencil, with the overall SoM points set at a 0.15 mm upper step;
+- LCC pad openings: Width 0.6 mm, length extended outward by 2.15 mm along the edge of the pad;
+- Circular LGA openings: Diameter 0.85 mm, with a 0.2 mm wide bridge at the center. 
+  Square LGA pads: Open a 0.83 × 0.83 mm square hole.
+
+![](image.png)
+
+
+
+![](%E5%9B%BE%E7%89%871-1778569908304.png)
+
+## **5. OK1126Bx-S Development Board Linux System Total Power Consumption Table**
+
+| **ID** | **Test Item**                                                | **SoM Power** | **Development Board Power (Including SoM)** |
+| :----: | ------------------------------------------------------------ | :-----------: | :-----------------------------------------: |
+|   1    | No-load Startup Peak Power                                   |     1.69W     |                    2.69W                    |
+|   2    | No-load Standby                                              |    0.505W     |                    1.27W                    |
+|   3    | Hibernation                                                  |     0.39W     |                    0.9W                     |
+|   4    | USB Read/Write                                               |     0.59W     |                   1.775W                    |
+|   5    | TF Card Read/Write                                           |     0.98W     |                   1.835W                    |
+|   6    | Ethernet Port PING                                           |    0.735W     |                   1.815W                    |
+|   7    | Loaded with Camera                                           |     0.9W      |                    2.26W                    |
+|   8    | Loaded with 7-inch MIPI Screen + Video Playback              |    1.025 W    |                    4.15W                    |
+|   9    | Loaded with Camera + Loaded with 7-inch MIPI Screen + Video Playback |     1.34W     |                    4.66W                    |
+|   10   | 100% CPU Occupancy                                           |     1.51W     |                    2.24W                    |
+|   11   | 100% Memory Occupancy                                        |    1.045W     |                   1.835W                    |
+|   12   | eMMC Read/Write                                              |     1.16W     |                    1.93W                    |
+|   13   | CPU Stress + Memory Stress + eMMC Read/Write Stress Test Power Consumption |     1.97W     |                   2.635W                    |
+
+**Note:**
+
+- **The SoM configuration is 4GB RAM + 64GB eMMC, and the display screen is a selected accessory product by Forlinx. The SoM is powered by 5V, and the carrier board is powered by 5V;**
 - **Power consumption is for reference only.**
 
-## 5\. Minimum System Schematic
+## 6. Minimum System Schematic
 
 The minimum system includes the SoM, power supply, debugging serial port, and system image flashing interface.
 
