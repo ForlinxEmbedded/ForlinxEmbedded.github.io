@@ -1,4 +1,4 @@
-# OK3506J-C\_User’s Hardware Manual\_V1.0
+# OK3506J-C\_User’s Hardware Manual\_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -36,7 +36,7 @@ A description of some of the symbols and formats in the manual:
 | Date| Manual Version| SoM Version| Carrier Board Version| Revision History|
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 30/07/2025 | V1.0| V1.0| V1.0| Initial Version|
-
+| 21/11/2025 | V1.1| V1.0| V1.0| Add section 2.6.2 SoM Anti-Vibration Design Guide.|
 ## 1\. Rockchip RK3506J RK3506B Description
 
 RK3506 is a high - performance application processor launched by Rockchip. It uses a 22nm advanced process technology and integrates 3 x ARM Cortex-A7 cores with a clock speed of up to 1.5GHz. It also features a 200MHz M0 core, specifically designed for smart voice interaction, audio input/output processing, image output processing, and other digital multimedia applications.
@@ -124,7 +124,7 @@ Two connectors for 160 PINs.
 | ACODEC| ≤1| RK3506 has built-in ACODEC and supports 1 pair of differential MIC inputs|
 | PDM| ≤1| Up to 8 channels, sampling rate up to 192KHz, master receive mode|
 | SPDIF| ≤1||
-| CAN| ≤2| Support CAN2.0 B, data rate 8Mbps|
+| CAN| ≤2| Support CAN FD, data rate 8Mbps |
 | PWM| ≤11||
 | RM\_IO| ≤32| RM \_ IO is an IO matrix of 32 pins|
 | GPIO<sup>(6)</sup>| ≤93||
@@ -154,6 +154,8 @@ When you have multiple functional expansion requirements, you can refer to the u
 
 ### 2.6 SoM Hardware Design Description
 
+#### 2.6.1 SoM Circuit Design Guide
+
 **Power Pin**
 
 | **Function**| **Signal Name**| **I/O**| **Default Function**| **Connector**| **Pin Number**
@@ -178,6 +180,22 @@ FET3506J/FET3506B-C SoM integrates the power supply, reset monitoring circuit, a
 Please refer to “Appendix IV. for the minimal system schematic diagram However, in most cases, it is recommended to connect some external devices in addition to the minimal system, such as a debugging serial port, image flashing port, otherwise, users can not check whether the system is booted. After completing these steps, additional user-specific functions can be added based on the default interface definitions provided by Forlinx for the SoM.
 
 Please refer to section 3.5 in “Chapter 3.OK3506x Carrier Board Description” for the peripheral circuits.
+
+#### 2.6.2 SoM Anti-Vibration Design Guide
+
+This product utilizes M2 specification anti-loosening screws to secure the SoM through pre-installed mounting holes at its four corners. The tightening torque is controlled at 0.15 N·m. A specific assembly schematic is provided below. ![img](image-20251121110304540-1790231467556.png) 
+
+This design has been validated through vibration testing in accordance with the standards GB/T 2423.10-2008 / IEC 60068-2-6:1995, achieving the following levels:
+
+- Frequency Range: 10 Hz ~ 150 Hz
+
+- Test Axes: X, Y, Z three axes
+
+- Displacement Amplitude: 0.35 mm
+
+- Acceleration Amplitude: 5 g
+
+The performance data listed in this manual is based on tests conducted in a standard laboratory environment and is suitable for general industrial equipment. Actual performance in practical applications may vary due to factors such as installation methods and combined stresses.
 
 ## 3\. OK3506J-C FET3506B-C Development Platform Description
 
@@ -443,7 +461,7 @@ The development board includes an on-board WiFi \& Bluetooth module, model BL-M8
 
 #### 3.5.17 CAN
 
-The development board uses the native CAN0 and CAN1 to lead out 2 x CAN FD interfaces. It supports the CAN 2.0B protocol and is designed with electrical isolation, which can meet the protection requirements in most scenarios. 
+The development board uses the native CAN0 and CAN1 to lead out 2 x CAN FD interfaces. It supports the CAN FD protocol and is designed with electrical isolation, which can meet the protection requirements in most scenarios. 
 
 The CAN signal is led out through a green terminal with a 3.81mm pitch. Use a jumper cap to install a 120 - ohm terminal resistor.
 
@@ -464,6 +482,30 @@ The carrier board reserves an SPI interface for external storage circuitry. The 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-C_User_Hardware_Manual/1753940846829_9f125539_278b_4138_99c7_c6bbd11ff5a7.png)
 
 ## 4\. Connector Dimension Diagram
+
+**. SoM Stamp-hole Dimensions**
+
+For more detailed dimensions, please refer to the DXF file in the user documentation.
+
+The figure below shows the pin numbers for the Footprint of the stamped-hole connector:
+
+
+
+
+
+![](image.png)
+
+
+
+The following diagram displays the Footprint size for the stamp hole connector:
+
+
+
+![](image.png)
+
+
+
+- **3506_C SoM Connector Dimensions**
 
 SoM connector: Board-to-board, 0.5mm pitch, 80P, male socket, height 1.25 mm, with locating post.
 
