@@ -183,7 +183,7 @@ Please refer to section 3.5 in “Chapter 3.OK3506x Carrier Board Description”
 
 #### 2.6.2 SoM Anti-Vibration Design Guide
 
-This product utilizes M2 specification anti-loosening screws to secure the SoM through pre-installed mounting holes at its four corners. The tightening torque is controlled at 0.15 N·m. A specific assembly schematic is provided below. ![img](image-20251121110304540-1790231467556.png) 
+This product utilizes M2 specification anti-loosening screws to secure the SoM through pre-installed mounting holes at its four corners. The tightening torque is controlled at 0.15 N·m. A specific assembly schematic is provided below. ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-C_User_Hardware_Manual/image_20251121110304540_1790231467556.png) 
 
 This design has been validated through vibration testing in accordance with the standards GB/T 2423.10-2008 / IEC 60068-2-6:1995, achieving the following levels:
 
@@ -493,7 +493,7 @@ The figure below shows the pin numbers for the Footprint of the stamped-hole con
 
 
 
-![](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-C_User_Hardware_Manual/image.png)
 
 
 
@@ -501,7 +501,7 @@ The following diagram displays the Footprint size for the stamp hole connector:
 
 
 
-![](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-C_User_Hardware_Manual/image.png)
 
 
 
