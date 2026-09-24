@@ -529,10 +529,10 @@ Carrier board connector: Board-to-board, 0.5mm pitch, 80P, femal socket, height 
 | 8| Load 7-inch MIPI screen power| 38.07℃| CPU usage: 39.3%  DDR usage: 11%| CPU frequency: FM DDR frequency: 750MHz| 0.47136| 4.1112816
 | 9| CPU pressure + memory pressure + eMMC read/write pressure test power| 39.85℃| CPU usage: 100%  DDR usage: 97.6%| CPU frequency: 1512000 DDR frequency: 750MHz| 0.767534| 2.177694
 
-+ **Note：**
+**Note: **
 
 - **Test conditions: The SoM configuration is 256MB memory + +256MB NAND; the 4G module is Quectel EC20, and the screen is an optional product. SoM power supply is 5V and carrier board is 12V;**
-- **U-BOOT：U-Boot 2017.09-gd76af45 #zmx (Apr 03 2025 - 11:08:12 +0800)** 
+- **U-BOOT: U-Boot 2017.09-gd76af45 #zmx (Apr 03 2025 - 11:08:12 +0800)** 
   **Kernel: Linux ok3506-buildroot 6.1.99 #1 SMP PREEMPT Thu Apr  3 11:23:18 CST 2025 armv7l GNU/Linux;**
 - **Power consumption is for reference only.**
 
