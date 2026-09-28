@@ -223,13 +223,13 @@ Disable the computer firewall.
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version).
 
-![Image](1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
 Open Command Prompt as administrator.
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator.
 
-![Image](1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 #### 2.4.2 SSH the server
 
@@ -258,9 +258,9 @@ Install FileZilla tool on Windows and follow the steps shown in the figure below
 
 - **The following is tested with the development board IP 192.168.0.232. Please modify it according to the actual situation.**
 
-![Image](1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
-![Image](1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
 ### 2.5 Screen Switch
 
