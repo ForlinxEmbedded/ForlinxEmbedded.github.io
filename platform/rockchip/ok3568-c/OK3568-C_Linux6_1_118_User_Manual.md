@@ -75,7 +75,7 @@ Connection method: Board-to-board.
 
 **Front**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278381902_b0dd9d04_67b0_48a5_b8c8_745f4c6f103a.png)
+![image-20260928163610258](image-20260928163610258.png)
 
 **Back**
 
@@ -177,7 +177,7 @@ Once the files have been extracted, run CP210xVCPInstaller\_x86.exe on a 32-bit 
 
 + **Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow control;**
 
-+ **Hardware Requirements: **
++ **Hardware Requirements:** 
 
   **Type-C for connecting PC and development board;**
 
@@ -1271,7 +1271,7 @@ The OK3568 supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB 
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
+![Image](1719278355735-c0770c7c-23e1-412b-ae35-f136feef044c.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1394,7 +1394,7 @@ Under normal circumstances, the following information will be printed:
 By default, the TF card is mounted to the /run/media/ directory in the file system.
 
 ```bash
-root@OK3568-C-buildroot:~# mount | grep mmcblk1  //查看挂载目录
+root@OK3568-C-buildroot:~# mount | grep mmcblk1  //View the mounted directory
 /dev/mmcblk1p1 on /run/media/mmcblk1p1 type ext4 (rw,relatime)
 ```
 
@@ -1412,7 +1412,7 @@ Read test:
 **Note: To ensure the accuracy of the data, please restart the development board to test the reading speed.**
 
 ```bash
-root@OK3568-C-buildroot:~# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M //读取测试
+root@OK3568-C-buildroot:~# dd if=/run/media/mmcblk1p1/test of=/dev/null bs=1M //Read test
 500+0 records in
 500+0 records out
 524288000 bytes (524 MB, 500 MiB) copied, 7.89507 s, 66.4 MB/s
@@ -1516,7 +1516,7 @@ root@OK3568-C-buildroot:~# systemctl restart systemd-networkd
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P25) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278352613-65d7016b-8ddc-45f2-925a-a4b172267b26.png)
+![Image](1719278352613-65d7016b-8ddc-45f2-925a-a4b172267b26.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1852,7 +1852,7 @@ Power off the power, set the S2 DIP switch to ON to configure it to Host mode, a
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278355735-c0770c7c-23e1-412b-ae35-f136feef044c.png)
+![Image](1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
 
 **Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.**
 
