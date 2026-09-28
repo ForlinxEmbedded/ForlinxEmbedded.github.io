@@ -75,7 +75,7 @@ Connection method: Board-to-board.
 
 **Front**
 
-![image-20260928163610258](image-20260928163610258.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/image-20260928163610258.png)
 
 **Back**
 
@@ -188,7 +188,7 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step 1: Confirm the serial port number connected to the computer, checking the port number in Device Manager, based on the actual port recognized by the computer;
 
-![Image](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 Step 2: Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
@@ -223,13 +223,13 @@ Disable the computer firewall.
 
 Temporarily disable the computer’s firewall (this is a general operation; specific steps depend on your Windows version).
 
-![Image](1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
 Open Command Prompt as administrator.
 
 Press Win + R, type cmd, then press Ctrl + Shift + Enter to run Command Prompt as administrator.
 
-![Image](1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 #### 2.4.2 SSH the server
 
@@ -258,9 +258,9 @@ Install FileZilla tool on Windows and follow the steps shown in the figure below
 
 - **The following is tested with the development board IP 192.168.0.232. Please modify it according to the actual situation.**
 
-![Image](1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
-![Image](1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
 ### 2.5 Screen Switch
 
@@ -629,7 +629,7 @@ Interface:
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![Image](1719278344475_8254f288_d525_423d_a733_826149a47378.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278344475_8254f288_d525_423d_a733_826149a47378.png)
 
 To exit the browser, use the navigation bar: File -> Quit.
 
@@ -1271,7 +1271,7 @@ The OK3568 supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB 
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](1719278355735-c0770c7c-23e1-412b-ae35-f136feef044c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278355735-c0770c7c-23e1-412b-ae35-f136feef044c.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1516,7 +1516,7 @@ root@OK3568-C-buildroot:~# systemctl restart systemd-networkd
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P25) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![Image](1719278352613-65d7016b-8ddc-45f2-925a-a4b172267b26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278352613-65d7016b-8ddc-45f2-925a-a4b172267b26.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1852,7 +1852,7 @@ Power off the power, set the S2 DIP switch to ON to configure it to Host mode, a
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278351981_a705799e_6294_4750_b08a_8deeb641beaf.png)
 
 **Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.**
 
@@ -2762,7 +2762,7 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
 
 Open the Rockchip development tool:
 
