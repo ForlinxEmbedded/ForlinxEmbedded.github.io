@@ -1271,7 +1271,7 @@ The OK3568 supports two USB 2.0 and two USB 3.0 interfaces. You can connect USB 
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/3.png)
 
 The terminal will print information about the USB drive. Since there are various USB drives, the displayed information may vary.
 
@@ -1516,7 +1516,7 @@ root@OK3568-C-buildroot:~# systemctl restart systemd-networkd
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P25) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![Image](4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/4.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1852,7 +1852,7 @@ Power off the power, set the S2 DIP switch to ON to configure it to Host mode, a
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![Image](3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/3.png)
 
 **Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.**
 
