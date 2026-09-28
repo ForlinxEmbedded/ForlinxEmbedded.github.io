@@ -188,7 +188,7 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step 1: Confirm the serial port number connected to the computer, checking the port number in Device Manager, based on the actual port recognized by the computer;
 
-![Image](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 Step 2: Configure PuTTY: Open PuTTY. In the “Serial line” field, enter the identified COM port and set the baud rate to 115200;
 
