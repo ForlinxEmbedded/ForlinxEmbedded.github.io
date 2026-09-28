@@ -71,7 +71,7 @@ The FET3568-C and FET3568-C2 SoMs share the same pin definitions and can be used
 
 Connection method: Board-to-board.
 
-![img](OK3568-C.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/OK3568-C.png)
 
 **Front**
 
@@ -156,7 +156,7 @@ Number  Start (sector)    End (sector)  Size Name
 
 **Note: Ensure the Wi-Fi antenna is properly installed before switching on the device.**
 
-![](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -1516,7 +1516,7 @@ root@OK3568-C-buildroot:~# systemctl restart systemd-networkd
 
 There is a standard 3.5mm audio socket on the development board (1 XH2.54-2P white socket at P25) that can drive an 8Ω speaker with a maximum output power of 1.3W. Before performing the audio playback test, please plug in your prepared headphones into the audio jack or connect the speaker to the corresponding slot on the carrier board. Use the following command for testing:
 
-![](1719278352613-65d7016b-8ddc-45f2-925a-a4b172267b26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278352613-65d7016b-8ddc-45f2-925a-a4b172267b26.png)
 
 **Note: Before performing the recording test, please plug in the prepared microphone into the 3.5mm headphone jack.**
 
@@ -1852,7 +1852,7 @@ Power off the power, set the S2 DIP switch to ON to configure it to Host mode, a
 
 USB3.0 and OTG are multiplexed and can be switched using the DIP switch. When using the USB3.0 interface, make sure the DIP switch is in the ON position:
 
-![](1719278355735-c0770c7c-23e1-412b-ae35-f136feef044c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278355735-c0770c7c-23e1-412b-ae35-f136feef044c.png)
 
 **Note: The current SDK version does not support using Host/Device modes simultaneously. Do not plug both a USB flash drive into the USB3.0 OTG port and a Type-C cable at the same time.**
 
@@ -2738,11 +2738,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![Image](1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 Click Install Driver.
 
-![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 #### 6.1.2 Complete OTG Flashing
 
@@ -2760,25 +2760,25 @@ It is a development tool provided by Rockchip. Extract it to a directory with on
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters;**
 - **When performing OTG flashing, two things must be noted: Link the OTG. OTG and USB3.0 are multiplexed, so the DIP switch must be adjusted.**
 
-![Image](1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278371449_903b6c4b_4ee3_41dd_8a02_409291bc87de.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1748310399916_dc0359c2_87ff_4a7b_9700_5c630c9eb91e.png)
 
 Open the Rockchip development tool:
 
-![Image](1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278371737_4281eb50_d44c_4429_a0fa_88f574b8da8f.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The programme will analyse the firmware, so please wait a moment.
 
-![Image](1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278371916_79c15f7c_10ef_4aa4_81d7_9ec9e3b01fd5.png)
 
 Click "Advanced Functions" -> "Erase All" to erase the operation.
 
-![Image](1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278372133_1cf4ef2c_8e32_401a_9542_f9cec3cd639b.png)
 
 Click the "Upgrade Firmware" button -> "Upgrade" to begin upgrading.
 
-![Image](1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278372340_48a49afa_af0a_4e29_8b4b_eadc70da5820.png)
 
 ##### 6.1.2.2 FactoryTool Flashing Test
 
@@ -2790,17 +2790,17 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 - **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
-![Image](1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
 After selecting the firmware, click “Start.” The loader device will be detected, and the flashing process will begin automatically.
 
-![Image](1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278372817_87ac617a_eae6_4889_bdaa_080eaf0ea09d.png)
 
 Downloading firmware:
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
-![Image](1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 #### 6.1.3 OTG Step-by-Step Flashing Test
 
@@ -2816,29 +2816,29 @@ Taking the userdata partition as an example, here is the method for flashing it:
 
 Connect the development board and host using a Type-C cable, press and hold the recovery button, then press the reset button for system reset. After about two seconds, release the recovery button. The system will prompt “ Find Loader Device”. Change the name field in the last row to userdata.
 
-![Image](1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278373708_bdf8dc9f_cc02_4fed_b2cf_9591ae9f3c87.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![Image](1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278373900_a316251a_0f98_4b69_a2ae_f7eeba24f552.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278374098_1e8ed88d_ec1b_4839_9831_a5d20a5f1a8c.png)
 
 Click the area to the right of the partition to select the partition image, and tick the partition.
 
-![Image](1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![Image](1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278374639_0858efb1_ae3b_4768_af77_983c9286aaff.png)
 
 **MASKROM Mode Introduction**
 
 If the loader is corrupted and unable to enter Loader mode, you can press and hold the Maskrom button, then press the Reset button to enter Maskrom mode for re-flashing.
 
-![Image](1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278374849_c9e0d481_4360_4856_a155_88cd30e07767.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming.
 
@@ -2856,13 +2856,13 @@ TF card making and testing.
 
 Copy User Data\\3-Tools\\SDDiskTool\_v1.78.zip to any directory on Windows Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278375046_ccb93f8c_d97c_4c76_811c_4f0eda82c2e2.png)
 
 Select the disk device, tick the “Firmware Update” box, and select update.img. Click to start creating.
 
-![Image](1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278375213_b0a0a76e_38c8_46a3_8dee_dbd887313527.png)
 
-![Image](1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278375372_2a2e23f1_1e24_43f9_ba08_803a28b79464.png)
 
 Insert the TF card into the development board and power it on; the system will automatically begin the flashing process. Once the flashing is complete, both the screen and the serial port will display the following message:
 
