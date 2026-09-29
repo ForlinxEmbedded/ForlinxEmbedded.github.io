@@ -49,7 +49,7 @@ OK3568-linux-source.tar.bz2 OK3568-linux-source.tar.bz2.00 OK3568-linux-source.t
 
 + forlinx@ubuntu: The username is forlinx, and the hostname is ubuntu, indicating that the operation is being performed in the development environment on Ubuntu.
 + //: Explanation of the command. No need to enter this when typing the command.
-+ Ls: blue font with gray background, indicating the relevant command that needs to be entered manually
++ <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">ls</font></font>: blue font with gray background, indicating the relevant command that needs to be entered manually
 + **OK3568-linux-source.tar.bz2**<font style="color:#000000;">: The output information after inputting the command is shown in black font, and the key information is in bold font. In this case, it refers to the packaged file system.</font>
 
 ## Application Scope
@@ -61,6 +61,7 @@ This software manual is designed for the OK3568-C platform running Linux6.1.118.
 | **Date**| **Version**| **Revision History**|
 |:----------:|:----------:|----------|
 | 18/05/2026| <font style="color:#000000;">V1.0</font>| User’s Compilation Manual Initial Version;   |
+
 **Note: This Compilation Manual is only applicable to OK3568 development board of Forlinx.**
 
 ## 1\. VMware Virtual Machine Software Installation
@@ -384,9 +385,13 @@ forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run
 
 This will open a graphical installation window. Follow the prompts to install:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png)
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 Online users need to register for a Qt account. Existing Qt account holders can log in directly. The Qt password requires a mix of uppercase letters, lowercase letters, and numbers. After registering and logging in successfully, click Next.
 
@@ -396,9 +401,12 @@ Offline users can click Skip.
 
 Click “Next”:
 
+
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 You can set the installation path according to your preferences; we use the default here. Click "Next".
+
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
