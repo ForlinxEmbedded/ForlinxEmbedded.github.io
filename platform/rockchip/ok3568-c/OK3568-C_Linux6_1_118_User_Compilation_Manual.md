@@ -22,7 +22,7 @@ There are total 4 chapters:
 
 + Chapter 1 covers the installation of VMware, specifically version Workstation 17 Pro v17.0.0. VMware must be installed before setting up the Ubuntu development environment;
 + Chapter 2 explains how to load the Ubuntu development environment provided by Feilin. The environment is based on 64-bit Ubuntu 22.04;
-+ Chapter 3 outlines the process of setting up a new Ubuntu development environment. Using 64-bit Ubuntu 22.04 as an example, this chapter describes the creation of the environment. Due to potential differences in computer configurations, unforeseen issues may arise. Beginners are advised to use the pre-configured environment to avoid complications.3. Setting Up a New Ubuntu Development Environment; This section takes the 64-bit Ubuntu 22.04 as an example to describe in detail the process of setting up an Ubuntu development environment. Due to the varied configurations of individual computers, unexpected issues may arise during the setup process. Therefore, it is recommended that beginners directly use our pre-configured development environment for more efficient subsequent work.
++ Chapter 3 mainly introduces the methods to set up a new Ubuntu development environment. This section takes the 64-bit Ubuntu 22.04 as an example to describe the setup process of the Ubuntu system. Since computer configurations vary from person to person, unexpected issues may occur during the deployment process. It is recommended that beginners directly use the pre-configured environment we provide;
 + Chapter 4 explains how to compile source code for the development board.
 
 The manual includes explanations of some symbols and formats.
