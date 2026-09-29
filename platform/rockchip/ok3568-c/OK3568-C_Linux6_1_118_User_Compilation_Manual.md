@@ -121,7 +121,7 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074935335-2e9a961f-fa58-479e-afd5-fff2aaaf56a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074935335_2e9a961f_fa58_479e_afd5_fff2aaaf56a7.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory: After extraction, you will obtain the development environment folder 35XX.
 
@@ -133,7 +133,7 @@ Open the installed virtual machine software.
 
 Select the directory where the newly extracted - OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine file is located, and double-click the startup file to open it
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074935534-0eee62ec-c630-4fdc-a1db-b17e8b1c56da.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074935534_0eee62ec_c630_4fdc_a1db_b17e8b1c56da.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -141,7 +141,7 @@ Once it has finished loading, click to start the virtual machine, and you will b
 
 The default account for auto-login upon system boot in the development environment is: “forlinx”, with the password: “forlinx.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074935696-ad89ca8a-9c1c-4538-8541-0b0c4bc19fbe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074935696_ad89ca8a_9c1c_4538_8541_0b0c4bc19fbe.png)
 
 ## 3\. Setting Up a New Ubuntu Development Environment
 
@@ -181,7 +181,7 @@ Set the number of processors according to your needs.
 
 Similarly, set the memory size according to your needs. It is recommended to use 16GB.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Forlinx_Desktop22_04_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
 
@@ -223,7 +223,7 @@ Right-click the Ubuntu 64-bit virtual machine that was created and select "Setti
 
 The "Virtual Machine Settings Menu" will pop up as shown in the image below.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click on CD/DVD (SATA), select Use ISO image file, then browse and select the previously downloaded Ubuntu ISO image, and click “OK”.
 
@@ -231,42 +231,42 @@ Click on CD/DVD (SATA), select Use ISO image file, then browse and select the pr
 
 After configuring the image, ensure that the network is working, and then start the virtual machine to begin installing the Ubuntu image.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux5_10_160_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074939161-b522a748-25e0-4c08-bfee-edbeda7fe615.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074939161_b522a748_25e0_4c08_bfee_edbeda7fe615.png)
 
 Select the language on the left side and click "Install Ubuntu." A language selection screen will pop up.  
 By default, Ubuntu's language is English, but you can also select Chinese. The selected language can be changed later during the installation. Once you've selected the language, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click Continue again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Click Install Now by default, and a prompt will appear. Click Continue to proceed.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue. Finally, set up your username and password. Click Continue, and the installation will begin automatically.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074939340-40476459-4415-4706-bfd4-8f1719103f7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074939340_40476459_4415_4706_bfd4_8f1719103f7d.png)
 
 The installation process is shown in the figure below. If the network is not good, you can skip it without affecting the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074939455-72678fce-59fb-4a00-b71f-c9cf932616ba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074939455_72678fce_59fb_4a00_b71f_c9cf932616ba.png)
 
 After installation is complete, the screen will look like the image below. Click “Restart Now” to reboot (or click “Restart Guest”).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074939602-d94a77cd-d058-40c1-98ee-750ec860b571.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074939602_d94a77cd_d058_40c1_98ee_750ec860b571.png)
 
 After restarting and logging in, the system interface is as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074939706-daf27d61-ef08-4639-b411-552e3b4aece3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074939706_daf27d61_ef08_4639_b411_552e3b4aece3.png)
 
 #### 3.1.3 Basic Configuration of Ubuntu
 
@@ -384,33 +384,33 @@ forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run
 
 This will open a graphical installation window. Follow the prompts to install:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278542977-d1772186-fa60-442a-8cf2-6e5cffefaae2.png)![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543199-cbc234c5-2d49-43aa-864e-4daf0abe7a4c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278542977_d1772186_fa60_442a_8cf2_6e5cffefaae2.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543199_cbc234c5_2d49_43aa_864e_4daf0abe7a4c.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543389-eaacabb8-9343-4e45-8626-9a68c043e0a0.png) ![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543608-c9d367f7-56c3-44b6-829c-04f29286f63d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543389_eaacabb8_9343_4e45_8626_9a68c043e0a0.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543608_c9d367f7_56c3_44b6_829c_04f29286f63d.png)
 
 Online users need to register for a Qt account. Existing Qt account holders can log in directly. The Qt password requires a mix of uppercase letters, lowercase letters, and numbers. After registering and logging in successfully, click Next.
 
 Offline users can click Skip.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278543830-11d43ecf-8d67-4bd0-a472-fc52383a77b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278543830_11d43ecf_8d67_4bd0_a472_fc52383a77b1.png)
 
 Click “Next”:
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544047-02ae511b-f6df-49fc-94ad-50606afa9ac1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544047_02ae511b_f6df_49fc_94ad_50606afa9ac1.png)
 
 You can set the installation path according to your preferences; we use the default here. Click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544274-25984f38-7e0d-4029-97ec-25fc13e82651.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544274_25984f38_7e0d_4029_97ec_25fc13e82651.png)
 
 Choose Complete Installation and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544480-43ea98bb-67e7-4632-a1cf-b917e22a17eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544480_43ea98bb_67e7_4632_a1cf_b917e22a17eb.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544690-a23e2f5f-b76b-46c9-8ebc-ef0ddc395677.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544690_a23e2f5f_b76b_46c9_8ebc_ef0ddc395677.png)
 
 Click Install and wait for the installation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278544902-6e395fac-45b1-428e-b5ed-dd3045ed1597.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278544902_6e395fac_45b1_428e_b5ed_dd3045ed1597.png)
 
 After installation, click Finish. The Qt interface will automatically open, or you can launch it from the command line. To open Qt Creator in the background, use the following command, replacing it with your actual installation path:
 
@@ -419,7 +419,7 @@ forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 forlinx@ubuntu:~$ ./qtcreator &
 ```
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278545088-f7954df3-4aa6-40d1-9046-723786b916af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1719278545088_f7954df3_4aa6_40d1_9046_723786b916af.png)
 
 The Qt Creator tool interface will appear. Qt Creator installation is now complete.
 
@@ -486,11 +486,11 @@ Perform a full compilation.
 forlinx@ubuntu:~/work/OK3568-linux-source$ ./build.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074941558-cb4b0ec2-5b67-4833-ace9-3bfffd115eab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074941558_cb4b0ec2_5b67_4833_ace9_3bfffd115eab.png)
 
 Once the compilation is complete, the system image will be generated in the rockdev folder, as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074941704-cbc856ea-6887-40cd-9d5d-f353ed3c931d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074941704_cbc856ea_6887_40cd_9d5d_f353ed3c931d.png)
 
 Please note: update.img is a pre-packaged file intended for full flashing via OTG or a TF card; the other files are for step-by-step flashing.
 
@@ -506,7 +506,7 @@ You can operate in the kernel source directory.
 forlinx@ubuntu:~/work/OK3568-linux-source$ ./build.sh kernel
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074941794-a005d01a-b98c-47e6-ac57-69fa92a02f1d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074941794_a005d01a_b98c_47e6_ac57_69fa92a02f1d.png)
 
 After compilation, the kernel in update.img will not be updated. Please follow the step-by-step instructions to flash the kernel/boot.img file.
 
@@ -518,7 +518,7 @@ You can operate in the kernel source directory.
 forlinx@ubuntu:~/work/OK3568-linux-source$ ./build.sh cleanall
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074941942-9267c39a-1539-4017-9156-42eec3bf7fd9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074941942_9267c39a_1539_4017_9156_42eec3bf7fd9.png)
 
 This operation removes all intermediate files but does not affect the source files, including any modified source files. However, it does not affect the source files, including those that have already been modified.
 
@@ -569,13 +569,13 @@ Paste the path to the build chain into the Compiler Path field, as shown in the 
 
 Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux-gcc
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942139-bc81d5d1-44c1-4bc3-ae78-4990e46c24a7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942139_bc81d5d1_44c1_4bc3_ae78_4990e46c24a7.png)
 
 Add the GCC compiler using the same method, and click "Add->GCC->C" on the right, as shown in the image:
 
 Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux-g++
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942326-65748314-2a7b-4e0e-a454-84154e722744.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942326_65748314_2a7b_4e0e_a454_84154e722744.png)
 
 #### 4.4.2 Qt Versions Configuration
 
@@ -590,7 +590,7 @@ Path: /home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/aarch64-linux
 - Click "Apply and then OK".
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942483-f48e81e9-97d8-4389-aadb-8054eb7923de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942483_f48e81e9_97d8_4389_aadb_8054eb7923de.png)
 
 #### 4.4.3 Kits Configuration
 
@@ -606,7 +606,7 @@ Kits are a set of build tools used to configure and select development environme
 
 - Click "Apply and then OK".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942607-fd9c0011-b79d-464e-a360-018c9cb35906.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942607_fd9c0011_b79d_464e_a360_018c9cb35906.png)
 
 ### 4.5 Application Compilation and Running
 
@@ -653,15 +653,15 @@ forlinx@ubuntu:~$ cd qtcreator-4.7.0/bin/
 forlinx@ubuntu~/qtcreator-4.7.0/bin$ ./qtcreator &
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942717-26e6b447-050d-4562-926f-9e1027e9dd45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942717_26e6b447_050d_4562_926f_9e1027e9dd45.png)
 
 After opening the project, the interface should appear as follows: (If the page does not change automatically, please select according to the screenshot.)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942810-7fae24f2-effc-4da0-90b5-65f1a5bf0deb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942810_7fae24f2_effc_4da0_90b5_65f1a5bf0deb.png)
 
 Clicking Configure Project will apply the compilation environment built in the “Qt Creator Environment Configuration” chapter of this manual.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942889-ccec03ba-feb2-4db3-ab01-59b8bae9ed6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942889_ccec03ba_feb2_4db3_ab01_59b8bae9ed6c.png)
 
 Click Build-> Clean All to clear. (If the intermediate file is not cleared, it can be deleted manually).
 
@@ -672,12 +672,12 @@ Uncheck Shadow build in the Projects section.
 Click Build -> Build All to compile.  
 Once the build progress bar completes, the new executable file fltest\_qt\_watchdog will be located in the /app/forlinx/forlinx\_qt/watchdog directory.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074942961-2ea5ca43-2a0e-4991-bb7e-f1607f133830.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074942961_2ea5ca43_2a0e_4991_bb7e_f1607f133830.png)
 
 Then, click Build → Build All to start the compilation.
 
 Once the Build progress bar in the bottom-right corner has completed, this indicates that the compilation is finished. At this point, you will see the newly generated binary file fltest\_qt\_watchdog in the directory /home/forlinx/work/OK3568-linux-source/app/forlinx/flapp\_out/\`, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1779074943072-6c38e19a-56d3-4e48-b74a-b72f1b5ddd9c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Compilation_Manual/1779074943072_6c38e19a_56d3_4e48_b74a_b72f1b5ddd9c.png)
 
 Copy the compiled executable file to the board via a USB drive, FTP, or other methods. Once copied to the development board, run the test.
