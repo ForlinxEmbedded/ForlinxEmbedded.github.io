@@ -8,6 +8,44 @@ The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.  
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.  
 
+## Overview
+
+This manual is designed to help you quickly get familiar with the product, understand interface functions and test methods. It mainly introduces the testing of the development board's interface functions, image flashing procedures, and troubleshooting solutions for common issues encountered during usage. Comments are added for part of the commands in the testing process to facilitate user understanding, with a focus on practicality. For content related to kernel compilation, relevant application compilation methods and development environment setup, please refer to *OK3568-UP4_Linux5.10.160_User Compilation Manual* provided by Forlinx.
+
+There are 5 chapters:
+- Chapter 1 provides a general overview of the product, briefly introducing the development board's interface resources, corresponding driver paths in the kernel source code, supported flashing and booting modes, and descriptions of key sections in the documentation package;
+- Chapter 2 covers the quick boot-up of the product, which supports two login methods: serial port login and network login;
+- Chapter 3 introduces functional testing of the product's desktop and QT interface, conducted via command-line operations;
+- Chapter 4 describes the product's multimedia testing, including camera playback testing and video hardware encoding/decoding testing;
+- Chapter 5 is about product image update, which mainly describes the methods of flashing images to storage devices. You can choose the appropriate flashing method according to your actual needs.
+
+Additionally, the manual includes explanations of some symbols and formats.
+
+| **Presentation Form** | **Meaning**                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| //                    | Explanatory notes for input commands or output information   |
+| Username@Hostname     | root@OK3568-buildroot: Development board serial port login credential <br> root@OK3568-buildroot: Development board remote login credential <br> forlinx@Linux: Linux account credential for development environment <br> Users can confirm the operating environment of specific functions through this information |
+
+Example: Check the driver loading status of AW-CM358 module:
+```bash
+root@OK3568-buildroot:/# lsmod
+Module                  Size  Used by      //View loaded modules
+moal                  696320  0
+mlan                  487424  1 moal
+```
+- root@OK3568-buildroot: Username is root, hostname is OK3568-buildroot, indicating that the operation is performed as the root user on the development board;
+- // : Explanatory notes for command operations or printout information, which do not need to be entered.
+
+## Application Scope
+The OK3568-UP4 development board currently offers documentation for the Linux operating system. This manual details how to test the functions related to Linux 5.10.160; please select documentation that matches the image installed on the development board. You can access software and hardware documentation through the cloud storage link provided by our company (please ask your sales representative for the download link).
+
+**Note: For detailed documentation, please refer to the OK3568-UP4 Linux User Documentation. The directory path of the user documentation mentioned in this article takes the OK3568-UP4 Linux User Documentation as the root directory.**
+
+## Revision History
+| **Date**   | **Manual Version** | **Core Board Version** | **Base Board Version**  | **Update Content**               |
+| ---------- | ------------------ | ---------------------- | ----------------------- | -------------------------------- |
+| 06/07/2026 | V1.0               | V1.0                   | V1.3 and later versions | First release of the user manual |
+
 ## 1\. OK3568 Development Board Description
 
 The RK3568 is a low-power, high-performance processor based on the ARM64 architecture. It features a quad-core Cortex-A55 CPU, an independent NEON coprocessor, and a Neural Network Processor Unit (NPU), making it suitable for applications in computers, smartphones, personal mobile internet devices, and digital multimedia equipment.
