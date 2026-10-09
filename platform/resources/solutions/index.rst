@@ -43,6 +43,8 @@ SOFTWARE
    OK1126BJ-S_Linux6_1_141_User_Compilation_Manual
    RK3572 AI_User's Manual_V1.0
    OK3588-UP5_User_Hardware_Manual
+   FCU1501_User_Manual_FlBase22_04
+   FCU1501_User_Compilation_Manual_FlBase22_04
 
 
 
