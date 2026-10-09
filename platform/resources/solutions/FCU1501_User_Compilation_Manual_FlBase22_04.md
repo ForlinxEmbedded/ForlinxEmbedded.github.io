@@ -16,7 +16,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![Image](1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169299281_de348f8a_1c6b_48b0_8f4c_925f8e300cd0.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -24,35 +24,35 @@ After the download is complete, double-click the setup file to launch the instal
 
 Double-click the programme to launch the installation wizard, then click “Next”.
 
-![Image](1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169299518_51ef1955_87b5_4d9c_ab23_6722043e1d57.png)
 
 Check “I accept the terms in the license agreement” and click “Next.”
 
-![Image](1720169299827_654af716_3d46_4609_97ff_054e119673bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169299827_654af716_3d46_4609_97ff_054e119673bb.png)
 
 Modify the installation location to the partition on your computer where software is typically installed, then click “Next.”
 
-![Image](1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169300116_b1714f26_bb47_4caf_9cc4_1eee167c5d18.png)
 
 Check, then click “Next.”
 
-![Image](1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169300391_9f8d9ab4_de5b_47d0_ad38_1174177cefb9.png)
 
 Check “Add shortcuts” and click “Next.”
 
-![Image](1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169300593_5bb0cd62_818b_4c31_90a9_c9dfffd00ea9.png)
 
 Click “Install.”
 
-![Image](1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169300791_4ae43a4d_510b_4f3e_b97a_b2bc70ee5a04.png)
 
 Wait for the installation to complete.
 
-![Image](1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169301003_be55046d_f49a_43ec_ba8a_b5374c82dfb6.png)
 
 After clicking “Finish,” you can start the trial. For long-term use, please purchase from the official website and enter the license key.
 
-![Image](1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720169301226_f10b8e88_6191_4ecf_ba68_8d4b33278162.png)
 
 <font style="color:#000000;">     </font>
 
@@ -83,7 +83,7 @@ Once the extraction is complete, you will obtain a folder named “ELF-RK3506\_U
 
 Open the installed virtual machine software.
 
-![Image](1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1720168594803_02ccb0b5_49ce_405e_a982_05e8e19f6759.png)
 
 The file "3506.vmx" in the "3506 Development Environment" folder is the virtual machine file that needs to be opened.
 
@@ -91,7 +91,7 @@ The file "3506.vmx" in the "3506 Development Environment" folder is the virtual 
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
-![Image](1730770392113_46f60b0b_8a73_4880_bb2c_316b0b3f8e49.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730770392113_46f60b0b_8a73_4880_bb2c_316b0b3f8e49.png)
 
 The default account for auto-login upon system boot in the development environment is: “forlinx”, with the password: “forlinx..
 
@@ -112,63 +112,63 @@ The installed Ubuntu version is 22.04.5 LTS, and all the introductions and devel
 
 Step 1: Open the VMware software and click “Create a New Virtual Machine”. On the following screen, check “Custom (advanced)” and click “Next”:
 
-![Image](1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771838296_01415610_068d_4ba7_9267_09ed32dae4b8.png)
 
 Step 2: Choose the compatibility for the corresponding VMware version. The version can be found under Help ->About VMware Workstation. Click ''Next.''
 
-![Image](1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771870249_10b484a8_ba3a_40fa_95f6_2c02a0fd3d3e.png)
 
 Choose “Installer disc image file (iso)” and click “Next”:
 
-![Image](1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771137989_9e9d0e8c_e015_469c_8a26_8317cb9b1097.png)
 
 Enter the full name, username, and password, then click “Next”:
 
-![Image](1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771173023_0cf7d4a4_8d05_413b_a619_ec4a22d1c7a2.png)
 
 Enter the virtual machine name and configure the installation location, then click “Next”:
 
-![Image](1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771243922_1e572b96_3307_4ecd_9195_6a43af7510ff.png)
 
 Set the number of processors according to your needs.
 
-![Image](1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771288477_46b84221_b5ba_47d9_8290_44ea8d9b24d9.png)
 
 Configure at least 8GB of memory and select “Next”:
 
-![Image](1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771323581_06a409ed_9b7e_4556_b756_13ec10650f37.png)
 
 Similarly, set the memory size according to your needs. It is recommended to use 16GB.
 
-![Image](1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771350370_a2b56a01_a884_4708_9a99_cfaa88269611.png)
 
 Set the network type, the default is NAT mode, and click "Next." Subsequent steps remain at their default values until the disk capacity step is specified.
 
-![Image](1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771380620_e67fd0b6_0d04_4311_abdf_3950d7457943.png)
 
 Choose the default LSI for the IO controller type.
 
-![Image](1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771409290_939fac95_52fb_4b3b_928f_190a882b601a.png)
 
 Similarly, select SCSI as the default here.
 
-![Image](1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771437575_1e6469fa_2570_4cf5_9c1d_cf248ece01e2.png)
 
 Choose to create a new virtual disk:
 
-![Image](1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771537119_3de308b8_38d8_4371_959f_9b41d9bc9c92.png)
 
 Set the disk size to 200GB and select the disk's format, then click 'Next' to complete.
 
-![Image](1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771561349_40a86987_5983_4b89_83f4_a244e936e55e.png)
 
 Specify the disk file, the default setting is fine here.
 
-![Image](1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771580713_c82bd0e0_f186_4d03_b6cb_10fb405bec2d.png)
 
 Click ''Finish'' by default to complete.
 
-![Image](1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771631305_f669a381_7597_4f46_bba4_bedddb71a310.png)
 
 At this point, the virtual machine creation is complete.
 
@@ -246,7 +246,7 @@ Full-screen display for the virtual machine:
 
 If the virtual machine cannot display in full screen, you can click on “View”, select “Auto-Adjust Size”, and then click “Autofit Guest” to resolve the full-screen issue.
 
-![Image](1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730771929996_f0425a36_2ebd_4581_9e35_d1b39be33837.png)
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
@@ -266,13 +266,13 @@ By default, after the virtual machine installation is complete, the network conn
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device connects and communicates with the host’s network card for internet access. This is the most commonly used method for the virtual machine to access the external network.
 
-![Image](1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730772087100_ab80fe3b_3415_4524_9f09_a94042347a41.png)
 
 #### 3.1.3.2 Bridged Connection Mode
 
 When the VMware virtual network adapter device is in bridged mode, the host network card and the virtual machine network card communicate through a virtual network bridge. In the Ubuntu environment, you need to set a network IP in the same subnet as the host. To access the external network, you need to set the DNS to be consistent with the host network card. If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode.
 
-![Image](1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1730772113434_77bab373_f8a3_4f12_9d58_4a721f1be151.png)
 
 ## 4. Compilation of Related Code
 
