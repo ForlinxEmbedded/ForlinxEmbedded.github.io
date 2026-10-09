@@ -110,7 +110,7 @@ In addition to the above basic functions, the extended version of FCU1501 embedd
 
 The figure below shows the enclosure dimension drawing of FCU1501.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715235311-e28381d3-c0d6-447b-9cb7-96ce09e88b1d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235311_e28381d3_c0d6_447b_9cb7_96ce09e88b1d.png)
 
 **Note: The overall dimensions are 187mm × 151.84mm × 45mm (Length × Width × Height), including the thickness of the antenna base and snap fits.**
 
@@ -122,15 +122,15 @@ The specific operations are as follows:
 
 DIN Rail Mounting: Use two M3×6 countersunk screws to secure the DIN rail.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715235421-7d518b27-77b2-4ae0-a8e6-2aca9590521a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235421_7d518b27_77b2_4ae0_a8e6_2aca9590521a.png)
 
 Mounting Ear Installation: Use four M3×4 countersunk screws to secure the two mounting ears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715235503-66637b40-122d-4788-8ecc-50090f6c7b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235503_66637b40_122d_4788_8ecc_50090f6c7b7b.png)
 
 Front Mounting Ear Installation: Use four M3×4 countersunk screws to secure the two mounting ears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715235584-87cb2cb8-e8d3-4a18-93be-7f0af831ab2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235584_87cb2cb8_e8d3_4a18_93be_7f0af831ab2b.png)
 
 **Note: After the terminal blocks are inserted, they may interfere with fixing the mounting ears. Therefore, install the mounting ears first, and then connect the terminal blocks.**
 
@@ -142,7 +142,7 @@ The interface schematic of the FCU1501 embedded control unit is shown as follows
 
 Top Interface Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715235668-ae91a95b-b68a-4b5f-a528-d705f2ad098c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235668_ae91a95b_b68a_4b5f_a528_d705f2ad098c.png)
 
 FCU1501 Top Interface Diagram
 
@@ -182,11 +182,11 @@ The terminal definitions are as follows:
 
 Front Interface Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715236152-03c498ab-e69a-42b8-ab49-1cbce1d31160.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236152_03c498ab_e69a_42b8_ab49_1cbce1d31160.png)
 
 FCU1501 Front Interface Diagram (Basic Version)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715236287-4f784df0-94ab-4d55-92d1-1be54b813e88.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236287_4f784df0_94ab_4d55_92d1_1be54b813e88.png)
 
 FCU1501 Front Interface Diagram（Extended Version）
 
@@ -286,11 +286,11 @@ Default username: root; Password: no password.
 
 Open a terminal tool (taking MobaXterm as an example), configure it as follows and click Open:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715237706-ea9ef972-2705-460c-958d-f7fe1d2136e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237706_ea9ef972_2705_460c_958d_f7fe1d2136e0.png)
 
 Click “OK”. When logging in, enter the username (root) — there is no default password.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715237901-1593a210-2a11-42b4-b188-f2298436ab69.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237901_1593a210_2a11_42b4_b188_f2298436ab69.png)
 
 #### 2.3.2 Debug Serial Port Login
 
@@ -298,7 +298,7 @@ To use this serial port for debugging, it is necessary to connect the TYPE-C int
 
 The location of the DEBUG debug serial port is shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715237981-a6a15a71-7d32-4a32-aa84-1fcfd1da7223.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237981_a6a15a71_7d32_4a32_aa84_1fcfd1da7223.png)
 
 #### 2.3.3 View System Logs
 
@@ -531,7 +531,7 @@ Mon Dec 12 17:24:39 UTC 2026
 
 The FCU1501 is equipped with 8 system indicator lights, which are the 4G network light, power (PWR) light, system error (ERR) light, system operation (RUN) light, and two user-defined indicator lights (D1 and D2), as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238091-d9138f9a-01be-4d02-8d1d-4afa1b3f2603.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238091_d9138f9a_01be_4d02_8d1d_4afa1b3f2603.png)
 
 The PWR (Power) indicator light serves as the power supply indicator for the system. It automatically turns on when power is supplied and turns off when power is cut.
 
@@ -576,7 +576,7 @@ root@FCU1501:/# systemctl unmask emergency.target      # Enable emergency mode
 
 RESET button: Used for one-click reset of network parameters, as shown in the red box in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238171-f185bbf8-54cb-43ee-9049-a1f66f019d74.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238171_f185bbf8_54cb_43ee_9049_a1f66f019d74.png)
 
 The reset button can directly reset the connection parameters of the network node. Using the evtest tool, you can get detailed information on various event types, including those triggered by keyboard presses, generated by mouse movements, and caused by touch-screen interactions, all of which can be accurately captured and displayed. You can also trigger custom events according to their application requirements.
 
@@ -642,7 +642,7 @@ exit 0
 
 The serial port connection structure is shown in the red box in the diagram.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238274-d4339377-dbd3-4851-b5ad-8c21e6a0c620.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238274_d4339377_dbd3_4851_b5ad_8c21e6a0c620.png)
 
 #### 2.12.2 Correspondence Between Software and Hardware
 
@@ -663,7 +663,7 @@ This test method uses communication with a computer as an example. If you have a
 
 Connect the RS232 to RS485 module to the RS485\_2 interface of the FCU1501. The connection method is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238371-e38c0997-8471-45df-8361-ce8c322a5de1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238371_e38c0997_8471_45df_8361_ce8c322a5de1.png)
 
 RS485\_2 will send a randomly generated test character stream to the PC at a baud rate of 115200. At the same time, manually send “Forlinx ok” from the PC terminal serial port assistant software to the FCU1501. Debug information is as follows:
 
@@ -675,7 +675,7 @@ root@FCU1501:~# rx_0: forlinxforlinxforlinxforlinxforl
 
 Serial port assistant software on the PC side: The data sent and received are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238451-724f1d59-e139-42f2-91ba-0f26ff01d2be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238451_724f1d59_e139_42f2_91ba_0f26ff01d2be.png)
 
 In the FCU1501 serial port, enter the following command to perform the UART transmission test:
 
@@ -688,7 +688,7 @@ tx_0: KaLKchczYFbc21YbhV5xYf2SotoVobK8
 
 Check the received information on the PC side:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238613-f1e4eeee-aeca-4fc4-96c1-9715168e48c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238613_f1e4eeee_aeca_4fc4_96c1_9715168e48c2.png)
 
 ### 2.13 Ethernet Usage
 
@@ -709,7 +709,7 @@ Type "ping 192.168.1.232" in the Windows Command Prompt window.
 
 **Note: For Windows 10, right-click the Start icon and select “Command Prompt” from the pop-up menu to access the command window.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238825-1a4b7a72-605a-475f-9607-973f9bf5ea54.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238825_1a4b7a72_605a_475f_9607_973f9bf5ea54.png)
 
 A successful ping connection between the PC and FCU1501, followed by a valid SSH login, verifies the normal operation of the network adapter.
 
@@ -880,7 +880,7 @@ The FCU1501 natively supports the Nginx web server. Nginx is a high-efficiency w
 
 The Nginx service is set to start automatically upon system boot. Enter the IP address of the FCU1501 in the IE browser to access the web pages hosted on the control unit’s web server. The figure below is a screenshot of the page displayed in the Edge browser.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715238940-c1db5fe6-d9b4-403e-bfe2-2de41a9d3c36.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238940_c1db5fe6_d9b4_403e_bfe2_2de41a9d3c36.png)
 
 #### 2.13.5 Reverse Proxy Function
 
@@ -1085,7 +1085,7 @@ Mobile terminals such as smartphones can connect to the FCU1501’s AP hotspot v
 
 Prior to the Bluetooth test, connect the dedicated Bluetooth antenna as shown in the red-boxed wiring diagram.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239357-9b7e097a-cbe8-4c8a-a237-2209a18314bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239357_9b7e097a_cbe8_4c8a_a237_2209a18314bb.png)
 
 The carrier board Wi-Fi/Bluetooth combo module integrates full Bluetooth functionality. This section demonstrates point-to-point data transmission between a smartphone and the FCU1501 over Bluetooth.
 
@@ -1110,7 +1110,7 @@ Changing discoverable on succeeded
 
 Enable Bluetooth on your smartphone and start a nearby device scan. A device named “FCU1501” (or “BlueZ 5.64”) will appear in the scan list, select it to start pairing.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239470-b7c9cee3-0ad5-45a1-9a8b-8cc0abcf4192.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239470_b7c9cee3_0ad5_45a1_9a8b_8cc0abcf4192.png)
 
 The terminal will output the following prompt message, enter yes to confirm.
 
@@ -1163,7 +1163,7 @@ Request confirmation
 
 After successful pairing, you can use the Bluetooth function on the smartphone to send files to the FCU1501.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239570-14968251-0daf-4ebb-9436-844742fb6f60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239570_14968251_0daf_4ebb_9436_844742fb6f60.png)
 
 All received files are saved in the /tmp directory.
 
@@ -1182,7 +1182,7 @@ Connection successful
 [14:99:3E:03:1B:E4]# send /tmp/1773477298236.png	        //Send files
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239664-9193c701-2645-4c90-9717-d778386408a5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239664_9193c701_2645_4c90_9717_d778386408a5.png)
 
 Your mobile phone will receive a request to receive a file; tap “Accept” to transfer the file.
 
@@ -1190,9 +1190,9 @@ Your mobile phone will receive a request to receive a file; tap “Accept” to 
 
 The FCU1501 system supports 4G cellular networks. Actual 4G availability is subject to your specific purchase configuration. After power-on, the 4G module is powered on by default and its driver is preloaded. The positions of the external antenna interface and SIM card slot on the FCU1501 are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239770-c76198b5-fcc2-4e38-a071-18808c77d6ee.png)  
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239862-24fa63ab-acfb-4de7-bdf7-c6c3f8524194.png)  
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715239936-d3809c5e-de2d-45e3-8e22-7b1b8b1c8abb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239770_c76198b5_fcc2_4e38_a071_18808c77d6ee.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239862_24fa63ab_acfb_4de7_bdf7_c6c3f8524194.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239936_d3809c5e_de2d_45e3_8e22_7b1b8b1c8abb.png)
 
 #### 2.16.1 4G Communication Test
 
@@ -1351,9 +1351,9 @@ It can be seen from the above that database creation, reading and writing work n
 
 #### 2.18.1 Interface Description
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240059-9d37de02-2559-4000-8b64-b7830bea918a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240059_9d37de02_2559_4000_8b64_b7830bea918a.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240132-42bac61c-8ade-4d90-97a3-eb52b0d19822.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240132_42bac61c_8ade_4d90_97a3_eb52b0d19822.png)
 
 #### 2.18.2 Correspondence Between Software and Hardware
 
@@ -1411,7 +1411,7 @@ FCU1501 provides two CAN interfaces, taking CAN2 as an example as shown below.
 
 | Schematic Diagram| Description|
 |----------|----------|
-| ![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240264-4c1f48c4-1b67-45f6-808e-ff8b1f5eb23f.png)|
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240264_4c1f48c4_1b67_45f6_808e_ff8b1f5eb23f.png)|
 
 #### 2.19.2 Correspondence Between Software and Hardware
 
@@ -1790,9 +1790,9 @@ root@FCU1501:/tmp# ls
 cron  cron.cnlByD  cron_test.log  dbus  dhcpd.leases  dhcpd.leases~  dnsmasq.leases  md5.txt  nginx
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240336-12e83c36-f910-4b8a-bc3d-4da4e8f83d2c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240336_12e83c36_f910_4b8a_bc3d_4da4e8f83d2c.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240416-c6422473-3af8-4497-8557-03a920efb47a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240416_c6422473_3af8_4497_8557_03a920efb47a.png)
 
 ### 2.36 Ntpdate
 
@@ -1866,35 +1866,35 @@ Software Materials\\3-Usage Tools\\System Update Tools\\SDDiskTool\_cn\_v1.74.ra
 
 Step 1: Unzip SDDiskTool\_cn\_v1.74.rar to any path without Chinese characters
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240499-f05003f1-808e-43fe-942a-7d3e423deb17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240499_f05003f1_808e_43fe_942a_7d3e423deb17.png)
 
 Step 2: Insert the USB drive or TF card via USB card reader into the computer’s USB port.
 
 **Note: The maximum capacity of the test U disk card is 32G. If the capacity is more than 32G, the burning may fail. It is recommended to use 16G.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240568-9b8e9699-9da9-40aa-be44-d75cbb7d7483.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240568_9b8e9699_9da9_40aa_be44_d75cbb7d7483.png)
 
 Step 3: Select the removable device to recognize the specified USB drive or card reader.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240657-d93f78cd-13e2-4724-846a-0fb1b71dd4cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240657_d93f78cd_13e2_4724_846a_0fb1b71dd4cc.png)
 
 Select your target device and check the “Firmware Update” option.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240730-6de1aa09-beaa-4272-878d-490d753b0fdc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240730_6de1aa09_beaa_4272_878d_490d753b0fdc.png)
 
 Step 4: Select the firmware image.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240820-6f19d4de-2cd1-43c2-a9ae-663624809289.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240820_6f19d4de_2cd1_43c2_a9ae_663624809289.png)
 
 Select the path of the firmware image to be flashed.
 
 Step 5: Start creation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715240991-2656f15d-c8e5-4f91-967f-f390e0fe2244.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240991_2656f15d_c8e5_4f91_967f_f390e0fe2244.png)
 
 Select “Yes” and wait for the creation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715241088-77aae687-ea5e-4f68-86d7-ecd8322fcff6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241088_77aae687_ea5e_4f68_86d7_ecd8322fcff6.png)
 
 Click “OK”.
 
@@ -1963,11 +1963,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715241202-d01c103d-2a17-474d-95b0-886d424ee4f0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241202_d01c103d_2a17_474d_95b0_886d424ee4f0.png)
 
 Click Install Driver.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715241281-ee7515d6-aad2-49d2-9079-ccda0009826f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241281_ee7515d6_aad2_49d2_9079_ccda0009826f.png)
 
 #### 3.2.2 Complete OTG Flashing
 
@@ -1981,15 +1981,15 @@ This is a development tool provided by Rockchip. Before use, extract it to a ful
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715241455-e2916dc5-bd90-451d-adc4-faccce777b75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241455_e2916dc5_bd90_451d_adc4_faccce777b75.png)
 
 Select the path where the specified flashing firmware image is stored.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715241538-fee46392-7766-490c-a163-d0208fbac834.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241538_fee46392_7766_490c_a163_d0208fbac834.png)
 
 Press and hold the BOOT button while powering on the device, release the button once the MASKROM device is detected, then select the Upgrade option to start flashing, and wait for the firmware download to complete successfully.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787715241620-f65691a6-d743-4aad-94df-5e001da9d671.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241620_f65691a6_d743_4aad_94df_5e001da9d671.png)
 
 **Note: Don't click "Device Partition Table" in maskrom mode, it is invalid.**
 

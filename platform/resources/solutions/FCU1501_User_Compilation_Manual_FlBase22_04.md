@@ -68,11 +68,11 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413769912-71c167ff-9700-4807-9556-11e82aeb58fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413769912_71c167ff_9700_4807_9556_11e82aeb58fd.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413770237-65e87c87-e47e-4a5d-a560-b9120084f93e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413770237_65e87c87_e47e_4a5d_a560_b9120084f93e.png)
 
 Once the extraction is complete, you will obtain a folder named “ELF-RK3506\_Ubuntu22.04”.
 
@@ -87,7 +87,7 @@ Open the installed virtual machine software.
 
 The file "3506.vmx" in the "3506 Development Environment" folder is the virtual machine file that needs to be opened.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413770904-6eb4cc3d-0762-4bea-8b55-a5bd7b276b75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413770904_6eb4cc3d_0762_4bea_8b55_a5bd7b276b75.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -106,7 +106,7 @@ The default account for auto-login upon system boot in the development environme
 
 The installed Ubuntu version is 22.04.5 LTS, and all the introductions and development in this manual were carried out on it. Download the “ubuntu-22.04.5-desktop-amd64.iso” version from [https://releases.ubuntu.com/22.04/](https://releases.ubuntu.com/22.04/) (the specific version to download can be based on your own needs; here we use version Ubuntu22.04.5 LTS as an example).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413771706-93083072-49eb-446a-b1c8-8e9d05575c11.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413771706_93083072_49eb_446a_b1c8_8e9d05575c11.png)
 
 ### 3.1.1 Creating an Ubuntu Virtual Machine
 
@@ -176,53 +176,53 @@ Once the virtual machine is created, wait for the installation interface to appe
 
 The default language of Ubuntu is English, but others can also be selected. 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413776620-c1d8e32f-8fb1-45a7-895a-da3afa648a4a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413776620_c1d8e32f_8fb1_45a7_895a_da3afa648a4a.png)
 
 The default language can be changed later. After making your selection, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413777070-55cdb910-13aa-4258-861b-294753332fba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413777070_55cdb910_13aa_4258_861b_294753332fba.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click “Continue” again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413777410-0f94958a-7fc5-498e-bcec-2e267d47baf6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413777410_0f94958a_7fc5_498e_bcec_2e267d47baf6.png)
 
 Click Install Now by default, and a prompt will appear. Click “Continue”. In any subsequent pop-up windows, simply click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413777766-7db3a590-7e7c-4f93-9b8d-c872064a2d7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413777766_7db3a590_7e7c_4f93_9b8d_c872064a2d7d.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue.
 
 Finally, set your username and password, choose between automatic login and logging in with your username and password, and click “Continue” to start the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413778082-432116c0-8070-470b-8f2d-ab7e84167fa2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413778082_432116c0_8070_470b_8f2d_ab7e84167fa2.png)
 
 If your internet connection is poor, you can click “Skip”—this won’t affect the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413778431-62795cf4-c08e-45f3-9e5d-20f74ffbbb1f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413778431_62795cf4_c08e_45f3_9e5d_20f74ffbbb1f.png)
 
 Click “Restart Now” to restart the system.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413778904-b8194e83-3347-4c33-ab31-cc8cc780bd5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413778904_b8194e83_3347_4c33_ab31_cc8cc780bd5b.png)
 
 Once Ubuntu starts up, click “Skip” when this pop-up appears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413779240-43b5482f-a8be-45a8-ae60-a4889df41b0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413779240_43b5482f_a8be_45a8_ae60_a4889df41b0c.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413779599-482e227e-cbaa-4186-884e-fbb1d8e198ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413779599_482e227e_cbaa_4186_884e_fbb1d8e198ed.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413780050-e8cd07f6-4d7f-40c5-822e-f6d80b3acc4f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413780050_e8cd07f6_4d7f_40c5_822e_f6d80b3acc4f.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413780402-fbe4e7c3-55df-4fc5-a795-c87565bdc6eb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413780402_fbe4e7c3_55df_4fc5_a795_c87565bdc6eb.png)
 
 Click “done”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413780886-684b7b41-8c4a-4b55-930f-b1a4f95c20bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413780886_684b7b41_8c4a_4b55_930f_b1a4f95c20bc.png)
 
 Ubuntu is successfully installed.
 
@@ -238,7 +238,7 @@ Ubuntu 22.04 uses Wayland by default, but the copy-and-paste functionality of VM
 
 From the menu that appears when Ubuntu starts, select “Ubuntu on Xorg” or “Xorg”
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413781297-d38a173a-e5f3-487b-a587-7aa5a0f90e42.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413781297_d38a173a_e5f3_487b_a587_7aa5a0f90e42.png)
 
 to enable copying and pasting files between Windows and Ubuntu.
 
@@ -250,13 +250,13 @@ If the virtual machine cannot display in full screen, you can click on “View�
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413782044-ccd50506-78d8-4625-9a0f-e2206a3e9c06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413782044_ccd50506_78d8_4625_9a0f_e2206a3e9c06.png)
 
 Virtual Machine Sleep Settings：
 
 Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -> Power -> Blank Screen and set it to “Never”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413782400-c6291236-40e3-4fa3-a413-9a52d94f6dc3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413782400_c6291236_40e3_4fa3_a413_9a52d94f6dc3.png)
 
 #### 3.1.3 Virtual Machine Network Configuration
 
@@ -331,11 +331,11 @@ forlinx@ubuntu: ~/work/fcu1501-linux-source$./build.sh chip
 
 After executing, there will be options to input, as shown in the picture. After entering "1", press Enter to continue.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413783411-d1d437b7-0452-4508-941e-65a00cefd961.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413783411_d1d437b7_0452_4508_941e_65a00cefd961.png)
 
 After executing, there will be options to input, as shown in the picture. After entering "1", press Enter to continue.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413783668-b8375c83-3d3e-45a4-add1-b2cf396c3182.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413783668_b8375c83_3d3e_45a4_add1_b2cf396c3182.png)
 
 Enter the corresponding number for the relevant board, then press Enter to continue.
 
@@ -356,7 +356,7 @@ You can operate in the kernel source directory.
 forlinx@ubuntu: ~/work/fcu1501-linux-source$ ./build.sh kernel 
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413784100-ac3ea955-6a47-4aac-bf53-6165272fe010.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413784100_ac3ea955_6a47_4aac_bf53_6165272fe010.png)
 
 After compilation, the kernel in update.img will not be updated. Please follow the step-by-step instructions to flash the kernel/boot.img file.
 
@@ -370,13 +370,13 @@ You can operate in the source directory.
 forlinx@ubuntu: ~/work/fcu1501-linux-source$ vi build.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413784373-b2bb4188-0b8d-43fe-9f6e-01126571347d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413784373_b2bb4188_0b8d_43fe_9f6e_01126571347d.png)
 
 ```plain
 forlinx@ubuntu: ~/work/fcu1501-linux-source$./build.sh cleanall
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413784667-056e45dc-fdff-4b9c-aad9-71bb5319abf2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413784667_056e45dc_fdff_4b9c_aad9_71bb5319abf2.png)
 
 This operation removes all intermediate files but does not affect the source files, including any modified source files. However, it does not affect the source files, including those that have already been modified.
 
@@ -464,9 +464,9 @@ Makefile  fltest_watchdog  fltest_watchdog.c
 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413784899-7f38568f-2361-450e-9030-4e636b4bf389.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413784899_7f38568f_2361_450e_9030_4e636b4bf389.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788413785231-11294695-3d29-4746-bbed-b2b138b4df89.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Compilation_Manual_FlBase22_04/1788413785231_11294695_3d29_4746_bbed_b2b138b4df89.png)
 
 Unmount and exit.
 
