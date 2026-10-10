@@ -709,7 +709,7 @@ Type "ping 192.168.1.232" in the Windows Command Prompt window.
 
 **Note: For Windows 10, right-click the Start icon and select “Command Prompt” from the pop-up menu to access the command window.**
 
-![Image](1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78-1791603202267.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78-1791603202267.png)
 
 A successful ping connection between the PC and FCU1501, followed by a valid SSH login, verifies the normal operation of the network adapter.
 
