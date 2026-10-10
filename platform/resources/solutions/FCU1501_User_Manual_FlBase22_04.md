@@ -150,13 +150,13 @@ FCU1501 Top Interface Diagram
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715235752-8b1fd0cb-bb5f-4eff-8aac-c5ff15bfa757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235752-8b1fd0cb-bb5f-4eff-8aac-c5ff15bfa757.png)
 
 9–36V wide-voltage output, with the output voltage the same as the input voltage; the default output is DC 12V；
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715235832-53497b8a-9d72-4e59-86a7-f739cfd8ff8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235832-53497b8a-9d72-4e59-86a7-f739cfd8ff8b.png)
 
 Bluetooth antenna position;
 
@@ -172,13 +172,13 @@ RESET button: Used for one-click reset of network parameters (customizable).
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715235929-596ff88e-2d86-4b54-a415-22dc2d1be585.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235929-596ff88e-2d86-4b54-a415-22dc2d1be585.png)
 
 2 x D1, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715236013-a1e62f34-0948-413c-9f42-f797062a7e58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236013-a1e62f34-0948-413c-9f42-f797062a7e58.png)
 
 Front Interface Diagram
 
@@ -196,65 +196,65 @@ FCU1501 Front Interface Diagram（Extended Version）
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715236373-87937e93-4c7c-4b9a-8e1c-149adf101262.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236373-87937e93-4c7c-4b9a-8e1c-149adf101262.png)
 
 3 x DO, 3.81 mm pitch 
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715236546-1410c252-7e12-44aa-86e3-8c759a1744ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236546-1410c252-7e12-44aa-86e3-8c759a1744ed.png)
 
 3 x DO, 3.81 mm pitch 
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715236678-59b86b4c-35d5-4d29-be7c-2e26d01c585c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236678-59b86b4c-35d5-4d29-be7c-2e26d01c585c.png)
 
 1 x CAN, 3.81mm pitch;
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715236816-8f917a35-8526-4693-b3ab-bddc8271023f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236816-8f917a35-8526-4693-b3ab-bddc8271023f.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715236930-0f2e6ae5-a614-4ae1-955a-f05432cb1b7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236930-0f2e6ae5-a614-4ae1-955a-f05432cb1b7a.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237033-11bfcd84-984f-4852-819c-bbac32b6dac6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237033-11bfcd84-984f-4852-819c-bbac32b6dac6.png)
 
 LED indicator:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237107-fad91e57-bc32-4a3c-965c-63dc65f2b20a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237107-fad91e57-bc32-4a3c-965c-63dc65f2b20a.png)
 
 1 x CAN, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237197-7b7a97cc-595f-4c1c-b5c8-d096e01aeed0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237197-7b7a97cc-595f-4c1c-b5c8-d096e01aeed0.png)
 
 1 x multiplexed RS485/RS232, 3.81 mm pitch；
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237271-2ce9900e-3ca8-439d-aa7e-25951ba33223.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237271-2ce9900e-3ca8-439d-aa7e-25951ba33223.png)
 
 1 x multiplexed RS485/RS232, 3.81 mm pitch；
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237349-4d845bb3-4a80-4d29-986e-d3cc27a8990a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237349-4d845bb3-4a80-4d29-986e-d3cc27a8990a.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237426-8f9be66c-ae0a-4d5d-8a86-92f237444100.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237426-8f9be66c-ae0a-4d5d-8a86-92f237444100.png)
 
 Type-C interface for DEBUG.
 
@@ -268,11 +268,11 @@ The factory default IP address is ETH0: 192.168.0.232; ETH1: 192.168.1.232;
 
 This product supports rated DC 12V input and features 9-36V wide-voltage input, with built-in reverse polarity protection. After the whole device is powered on, the power indicator light marked “POW” will be on.
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237537-88a1d8c6-42de-4f8c-8daa-494890e681b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237537-88a1d8c6-42de-4f8c-8daa-494890e681b7.png)
 
 The external power supply provides 9~36V wide-voltage output, whose voltage remains consistent with the input voltage, with a default output of DC 12V. As shown in the figure below:
 
-![](../FCU1501%20Forlinx%20Base%2022.04/1787715237615-4fffd8da-f234-4410-ba66-8b91b32b5785.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237615-4fffd8da-f234-4410-ba66-8b91b32b5785.png)
 
 ### 2.3 User Login
 
