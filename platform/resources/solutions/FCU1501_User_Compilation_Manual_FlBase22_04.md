@@ -97,7 +97,7 @@ The default account for auto-login upon system boot in the development environme
 
 ## 3\. New Ubuntu Development Environment Setup
 
-**Note: **
+**Note:** 
 
 - **It is not recommended for beginners to build the system by themselves. It is recommended to use the existing virtual machine environment. This section can be skipped if there is no need to build the environment;**
 - **This chapter mainly explains the setup process of the Ubuntu system.**
