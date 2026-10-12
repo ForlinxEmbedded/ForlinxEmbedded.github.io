@@ -376,7 +376,7 @@ Nuvoton Series
 
 ----
 
-Pin-to-Pin UP4 Series
+Pin-to-Pin UP Series
 ==========================
 
 
@@ -447,7 +447,27 @@ Pin-to-Pin UP4 Series
 
 ----
 
+Embedded Computer
+==================
 
+.. raw:: html
+
+   <div class="products-container">
+
+   <div class="product-card">
+     <a href="embedded-pc/fcu1501/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/embedded-pc/FCU1501.webp" alt="FCU1501" class="product-image" />
+     </a>
+     <h3 class="product-title">FCU1501</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/fcu1501-embedded-computer-178.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="embedded-pc/fcu1501/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+   </div>
+
+
+----
 
 
 
