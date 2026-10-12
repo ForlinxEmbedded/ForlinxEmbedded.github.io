@@ -936,7 +936,7 @@ The system automatically starts the vsftpd service at boot, with its version bei
 
 Use the FileZilla software on your PC to connect to the FTP service of the FCU1501. Enter the FTP login credentials in the box shown below (the default password for the root user is root). The connection uses the ETH2 interface by default.
 
-![image-20261009165437796](../FCU1501%20Forlinx%20Base%2022.04/image-20261009165437796.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/image-20261009165437796.png)
 
 Click “OK” on any pop-up prompt that appears during the process.
 
