@@ -100,7 +100,7 @@ In addition to the above basic functions, the extended version of FCU1501 embedd
 
 The figure below shows the enclosure dimension drawing of FCU1501.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716450226-05714b69-9811-4455-8e42-31f3eda74cfc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716450226_05714b69_9811_4455_8e42_31f3eda74cfc.png)
 
 **Note: The overall dimensions are 187mm × 151.84mm × 45mm (Length × Width × Height), including the thickness of the antenna base and snap fits.**
 
@@ -110,15 +110,15 @@ Forlinx provides three optional installation methods for you: DIN rail mounting,
 
 DIN Rail Mounting: Use two M3×6 countersunk screws to secure the DIN rail.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716450327-7d1c1085-314b-4fe9-870c-f5e6528d93fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716450327_7d1c1085_314b_4fe9_870c_f5e6528d93fd.png)
 
 Mounting Ear Installation: Use four M3×4 countersunk screws to secure the two mounting ears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716450417-2610f62f-e046-4c11-a743-a32e4b50915b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716450417_2610f62f_e046_4c11_a743_a32e4b50915b.png)
 
 Front Mounting Ear Installation: Use four M3×4 countersunk screws to secure the two mounting ears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716450532-dfc9c52d-6575-4048-8a20-17b4cd1ef572.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716450532_dfc9c52d_6575_4048_8a20_17b4cd1ef572.png)
 
 **Note: After the terminal blocks are inserted, they may interfere with fixing the mounting ears. Therefore, install the mounting ears first, and then connect the terminal blocks.**
 
@@ -130,7 +130,7 @@ The interface schematic of the FCU1501 embedded control unit is shown as follows
 
 Top Interface Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716450622-dd1bd6ca-b4f3-4ad4-ac22-ea5724cee0f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716450622_dd1bd6ca_b4f3_4ad4_ac22_ea5724cee0f6.png)
 
 FCU1501 Top Interface Diagram
 
@@ -170,11 +170,11 @@ The terminal definitions are as follows:
 
 Front Interface Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716451096-7788365e-90e4-4308-adec-6da8b33dbd31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716451096_7788365e_90e4_4308_adec_6da8b33dbd31.png)
 
 FCU1501 Front Interface Diagram (Basic Version)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716451187-f1f5041b-361a-44e9-97a3-5d4e4086e640.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716451187_f1f5041b_361a_44e9_97a3_5d4e4086e640.png)
 
 FCU1501 Front Interface Diagram（Extended Version）
 
@@ -274,11 +274,11 @@ Default username: root; Password: no password.
 
 Open a terminal tool (taking MobaXterm as an example), configure it as follows and click Open:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716452560-f245c5cb-7f9b-459f-a154-fdd33af524f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716452560_f245c5cb_7f9b_459f_a154_fdd33af524f3.png)
 
 Click “OK”. When logging in, enter the username (root) — there is no default password.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716452666-1e89641b-37be-49d7-a639-772e3c6416a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716452666_1e89641b_37be_49d7_a639_772e3c6416a2.png)
 
 #### 2.3.2 Debug Serial Port Login
 
@@ -286,7 +286,7 @@ To use this serial port for debugging, it is necessary to connect the TYPE-C int
 
 The location of the DEBUG debug serial port is shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716452777-52534844-db8c-4cd3-b2d9-3a7e6621aefa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716452777_52534844_db8c_4cd3_b2d9_3a7e6621aefa.png)
 
 #### 2.3.3 View System Logs
 
@@ -547,7 +547,7 @@ Mon Dec 12 17:24:39 UTC 2022
 
 The FCU1501 is equipped with 8 system indicator lights, which are the 4G network light, power (PWR) light, system error (ERR) light, system operation (RUN) light, and two user-defined indicator lights (D1 and D2), as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716452894-8c23e383-d585-40f3-8471-d16b0577bfc5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716452894_8c23e383_d585_40f3_8471_d16b0577bfc5.png)
 
 The PWR (Power) indicator light serves as the power supply indicator for the system. It automatically turns on when power is supplied and turns off when power is cut.
 
@@ -584,7 +584,7 @@ root@FCU1501:/# echo 0 > /sys/class/leds/D1/brightness  # Turn off, the LED ligh
 
 RESET button: Used for one-click reset of network parameters, as shown in the red box in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716452999-dc602417-95f7-49e4-94b8-d240408e3c95.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716452999_dc602417_95f7_49e4_94b8_d240408e3c95.png)
 
 The reset button can directly reset the connection parameters of the network node. Using the evtest tool, you can get detailed information on various event types, including those triggered by keyboard presses, generated by mouse movements, and caused by touch-screen interactions, all of which can be accurately captured and displayed. You can also trigger custom events according to their application requirements.
 
@@ -660,7 +660,7 @@ root@FCU1501:/#
 
 The serial port connection structure is shown in the red box in the diagram.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716453096-bf3298b7-bcfe-46ea-a304-0e11a366af8a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716453096_bf3298b7_bcfe_46ea_a304_0e11a366af8a.png)
 
 #### 2.11.2 Correspondence Between Software and Hardware
 
@@ -681,7 +681,7 @@ This test method uses communication with a computer as an example. If you have a
 
 Connect the RS232 to RS485 module to the RS485\_2 interface of the FCU1501. The connection method is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716453239-a5f1f902-b16a-4409-a21b-e3d10a1e04c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716453239_a5f1f902_b16a_4409_a21b_e3d10a1e04c2.png)
 
 RS485\_2 will send a randomly generated test character stream to the PC at a baud rate of 115200. At the same time, manually send “Forlinx ok” from the PC terminal serial port assistant software to the FCU1501. Debug information is as follows:
 
@@ -693,7 +693,7 @@ root@FCU1501:~# rx_0: forlinxforlinxforlinxforlinxforl
 
 Serial port assistant software on the PC side: The data sent and received are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716453419-ce0fb20c-0715-43b0-bb76-90c112658c37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716453419_ce0fb20c_0715_43b0_bb76_90c112658c37.png)
 
 In the FCU1501 serial port, enter the following command to perform the UART transmission test:
 
@@ -706,7 +706,7 @@ tx_0: KaLKchczYFbc21YbhV5xYf2SotoVobK8
 
 Check the received information on the PC side:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716453606-f5083f47-4a8f-4022-bedd-10b9d27cfb6a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716453606_f5083f47_4a8f_4022_bedd_10b9d27cfb6a.png)
 
 ### 2.12 Ethernet Usage
 
@@ -898,7 +898,7 @@ The FCU1501 natively supports the Nginx web server. Nginx is a high-efficiency w
 
 The Nginx service is set to start automatically upon system boot. Enter the IP address of the FCU1501 in the IE browser to access the web pages hosted on the control unit’s web server. The figure below is a screenshot of the page displayed in the Edge browser.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716453849-a67e4b4e-da03-4285-8f9a-d1f304980c96.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716453849_a67e4b4e_da03_4285_8f9a_d1f304980c96.png)
 
 #### 2.12.5 Reverse Proxy Function
 
@@ -1090,7 +1090,7 @@ STA-AP Test
 
 This example describes the process of connecting the wireless network interface wlan1 to a router. After configuring the Ethernet, you need to test whether wlan1 can access the external network. If it can connect to the external network (refer to the previous section “STA Test” for the testing method), please continue to follow the operation steps. If it cannot connect, please check whether the Ethernet or the router connection is working properly. Note: Close and restart the web application before running this test.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454216-5bb0bb32-19e7-4d98-91d3-ebf2ef1e7511.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454216_5bb0bb32_19e7_4d98_91d3_ebf2ef1e7511.png)
 
 When operating in AP mode, devices such as mobile phones can connect directly to the module.
 
@@ -1121,7 +1121,7 @@ Mobile terminals such as smartphones can connect to the FCU1501’s AP hotspot v
 
 Prior to the Bluetooth test, connect the dedicated Bluetooth antenna as shown in the red-boxed wiring diagram.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454303-2cd19451-e2ef-4b35-ab96-f6420f34c04b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454303_2cd19451_e2ef_4b35_ab96_f6420f34c04b.png)
 
 The carrier board WIFI/BL module integrates the Bluetooth function. This section demonstrates the data transmission between the mobile phone and FCU1501 via Bluetooth.
 
@@ -1146,7 +1146,7 @@ Changing discoverable on succeeded
 
 At this time, open the mobile phone Bluetooth search, a "BlueZ 5.77" device will appear, and select pairing.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454389-57f5e735-6869-451b-bcd2-93975c2e3ed9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454389_57f5e735_6869_451b_bcd2_93975c2e3ed9.png)
 
 The terminal will output the following prompt message, enter yes to confirm.
 
@@ -1211,7 +1211,7 @@ Request confirmation
 
 After successful pairing, you can use the Bluetooth function on the smartphone to send files to the FCU1501.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454481-3d8fcc62-72a8-4219-9f1d-f79f4ae4b446.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454481_3d8fcc62_72a8_4219_9f1d_f79f4ae4b446.png)
 
 All received files are saved in the /tmp directory.
 
@@ -1230,7 +1230,7 @@ Connection successful
 [14:99:3E:03:1B:E4]# send /tmp/1731915958275.png	        // Transmit the target image file
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454598-9f9841bc-0a57-49f1-a694-29e6af92f3d3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454598_9f9841bc_0a57_49f1_a694_29e6af92f3d3.png)
 
 Your mobile phone will receive a request to receive a file; tap “Accept” to transfer the file.
 
@@ -1238,9 +1238,9 @@ Your mobile phone will receive a request to receive a file; tap “Accept” to 
 
 The FCU1501 system supports 4G cellular networks. Actual 4G availability is subject to your specific purchase configuration. After power-on, the 4G module is powered on by default and its driver is preloaded. The positions of the external antenna interface and SIM card slot on the FCU1501 are shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454701-0bc6cc1c-19bf-4e1b-9897-45424298eaf7.png)  
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716454783-66a6adae-e690-4935-abae-0020aaa50c46.png)  
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455019-bcd6c0f8-7425-4063-b6fd-9373180ce5d3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454701_0bc6cc1c_19bf_4e1b_9897_45424298eaf7.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454783_66a6adae_e690_4935_abae_0020aaa50c46.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455019_bcd6c0f8_7425_4063_b6fd_9373180ce5d3.png)
 
 #### 2.15.1 4G Communication Test
 
@@ -1374,9 +1374,9 @@ It can be seen from the above that database creation, reading and writing work n
 
 #### 2.17.1 Interface Description
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455106-be8e62a9-2531-41a9-a624-dbc606f5c894.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455106_be8e62a9_2531_41a9_a624_dbc606f5c894.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455254-57fca58c-d621-4abf-9980-b4762cccee88.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455254_57fca58c_d621_4abf_9980_b4762cccee88.png)
 
 #### 2.17.2 Correspondence Between Software and Hardware
 
@@ -1445,7 +1445,7 @@ FCU1501 provides two CAN FD interfaces, taking CAN2 as an example as shown below
 
 | Schematic Diagram| Description|
 |----------|----------|
-| ![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455337-28f5dfcc-2ed9-4b8a-aff4-9ff9193991ee.png)| |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455337_28f5dfcc_2ed9_4b8a_aff4_9ff9193991ee.png)| |
 
 #### 2.18.2 Correspondence Between Software and Hardware
 
@@ -1587,7 +1587,7 @@ root@FCU1501:/# vi /etc/network/interfaces
 
 Delete the content within the red box in the image below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455487-4fe0086e-11ff-40ab-b792-f4d725ec4a41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455487_4fe0086e_11ff_40ab_b792_f4d725ec4a41.png)
 
 To configure DNS, add the following to /etc/resolv.conf:
 
@@ -1789,9 +1789,9 @@ root@FCU1501:/tmp# ls
 cron  cron.cnlByD  cron_test.log  dbus  dhcpd.leases  dhcpd.leases~  dnsmasq.leases  md5.txt  nginx
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455649-19faeccd-c723-421c-b5d1-831a53726252.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455649_19faeccd_c723_421c_b5d1_831a53726252.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455820-ea9fce3f-a05e-45c5-95c9-ef40a28f9c30.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455820_ea9fce3f_a05e_45c5_95c9_ef40a28f9c30.png)
 
 ### 2.32 Ntpdate
 
@@ -1868,35 +1868,35 @@ Software Materials\\3-Usage Tools\\System Update Tools\\SDDiskTool\_cn\_v1.74.ra
 
 Step 1: Unzip SDDiskTool\_cn\_v1.74.rar to any path without Chinese characters
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455978-73e6f344-4740-407f-8049-152811da9fb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716455978_73e6f344_4740_407f_8049_152811da9fb6.png)
 
 Step 2: Insert the USB drive or TF card via USB card reader into the computer’s USB port.
 
 Note: The maximum capacity of the test U disk card is 32G. If the capacity is more than 32G, the burning may fail. It is recommended to use 16G.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716456136-7f5a94c5-dcff-415d-855d-f18f0388a2f0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716456136_7f5a94c5_dcff_415d_855d_f18f0388a2f0.png)
 
 Step 3: Select the removable device to recognize the specified USB drive or card reader.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716456318-599b4ac7-3f14-4c67-8a49-42289312c920.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716456318_599b4ac7_3f14_4c67_8a49_42289312c920.png)
 
 Select your target device and check the “Firmware Update” option.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716456429-27bab858-c178-464d-b353-757b884a20a6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716456429_27bab858_c178_464d_b353_757b884a20a6.png)
 
 Step 4: Select the firmware image.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716456517-b06d2ec5-a20b-49b8-bc10-005e5309cf3f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716456517_b06d2ec5_a20b_49b8_bc10_005e5309cf3f.png)
 
 Select the path of the firmware image to be flashed.
 
 Step 5: Start creation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716456644-74cac1ac-038b-4234-8795-544758d2f4c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716456644_74cac1ac_038b_4234_8795_544758d2f4c6.png)
 
 Select “Yes” and wait for the creation to complete.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716456934-53f9e4bb-f97b-4178-b1b2-aafb88f9c6e4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716456934_53f9e4bb_f97b_4178_b1b2_aafb88f9c6e4.png)
 
 Click “OK”.
 
@@ -1967,11 +1967,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716457051-31abd091-3c90-4b03-bb22-9c7459d93c1e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716457051_31abd091_3c90_4b03_bb22_9c7459d93c1e.png)
 
 Click Install Driver.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716457389-294044d2-891f-41e8-868d-33ec8fa61ba2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716457389_294044d2_891f_41e8_868d_33ec8fa61ba2.png)
 
 #### 3.2.2 Complete OTG Flashing
 
@@ -1985,15 +1985,15 @@ This is a development tool provided by Rockchip. Before use, extract it to a ful
 
 Open the Rockchip development tool:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716457479-2a87d2f0-4a7a-456b-95d7-60bce46fad0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716457479_2a87d2f0_4a7a_456b_95d7_60bce46fad0e.png)
 
 Select the path where the specified flashing firmware image is stored.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716457555-a73aed25-ef62-4c0f-91c0-12b4681e4876.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716457555_a73aed25_ef62_4c0f_91c0_12b4681e4876.png)
 
 Press and hold the BOOT button while powering on the device, release the button once the MASKROM device is detected, then select the Upgrade option to start flashing, and wait for the firmware download to complete successfully.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716457646-a3c47b77-2e8d-4817-8196-6927f58b7e26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716457646_a3c47b77_2e8d_4817_8196_6927f58b7e26.png)
 
 **Note:**
 
