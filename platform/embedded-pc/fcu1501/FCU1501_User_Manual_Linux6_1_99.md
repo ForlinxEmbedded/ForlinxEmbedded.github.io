@@ -147,13 +147,13 @@ FCU1501 Top Interface Diagram
 
 The terminal definitions are as follows:
 
-![Image](1787715235752_8b1fd0cb_bb5f_4eff_8aac_c5ff15bfa757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/787715235752_8b1fd0cb_bb5f_4eff_8aac_c5ff15bfa757.png)
 
 9–36V wide-voltage output, with the output voltage the same as the input voltage; the default output is DC 12V；
 
 The terminal definitions are as follows:
 
-![Image](1787715235832_53497b8a_9d72_4e59_86a7_f739cfd8ff8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715235832_53497b8a_9d72_4e59_86a7_f739cfd8ff8b.png)
 
 Bluetooth antenna position;
 
@@ -169,7 +169,7 @@ RESET button: Used for one-click reset of network parameters (customizable).
 
 The terminal definitions are as follows:
 
-![Image](1787715235929_596ff88e_2d86_4b54_a415_22dc2d1be585.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715235929_596ff88e_2d86_4b54_a415_22dc2d1be585.png)
 
 2 x D1, 3.81 mm pitch
 
