@@ -1155,8 +1155,6 @@ Changing discoverable on succeeded
 
 At this time, open the mobile phone Bluetooth search, a "BlueZ 5.77" device will appear, and select pairing.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454389_57f5e735_6869_451b_bcd2_93975c2e3ed9.png)
-
 The terminal will output the following prompt message, enter yes to confirm.
 
 ```plain
@@ -1220,8 +1218,6 @@ Request confirmation
 
 After successful pairing, you can use the Bluetooth function on the smartphone to send files to the FCU1501.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454481_3d8fcc62_72a8_4219_9f1d_f79f4ae4b446.png)
-
 All received files are saved in the /tmp directory.
 
 #### 2.14.5 Sending Files
@@ -1238,8 +1234,6 @@ Attempting to connect to 14:99:3E:03:1B:E4
 Connection successful
 [14:99:3E:03:1B:E4]# send /tmp/1731915958275.png	        // Transmit the target image file
 ```
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787716454598_9f9841bc_0a57_49f1_a694_29e6af92f3d3.png)
 
 Your mobile phone will receive a request to receive a file; tap “Accept” to transfer the file.
 
