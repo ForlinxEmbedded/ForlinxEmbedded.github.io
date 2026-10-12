@@ -175,7 +175,7 @@ The terminal definitions are as follows:
 
 The terminal definitions are as follows:
 
-![Image](1787715236013_a1e62f34_0948_413c_9f42_f797062a7e58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715236013_a1e62f34_0948_413c_9f42_f797062a7e58.png)
 
 Front Interface Diagram
 
@@ -193,65 +193,65 @@ FCU1501 Front Interface Diagram（Extended Version）
 
 The terminal definitions are as follows:
 
-![Image](1787715236373_87937e93_4c7c_4b9a_8e1c_149adf101262.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715236373_87937e93_4c7c_4b9a_8e1c_149adf101262.png)
 
 3 x DO, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715236546_1410c252_7e12_44aa_86e3_8c759a1744ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715236546_1410c252_7e12_44aa_86e3_8c759a1744ed.png)
 
 3 x DO, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715236678_59b86b4c_35d5_4d29_be7c_2e26d01c585c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715236678_59b86b4c_35d5_4d29_be7c_2e26d01c585c.png)
 
 1 x CAN, 3.81mm pitch;
 
 The terminal definitions are as follows:
 
-![Image](1787715236816_8f917a35_8526_4693_b3ab_bddc8271023f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715236816_8f917a35_8526_4693_b3ab_bddc8271023f.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715236930_0f2e6ae5_a614_4ae1_955a_f05432cb1b7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715236930_0f2e6ae5_a614_4ae1_955a_f05432cb1b7a.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715237033_11bfcd84_984f_4852_819c_bbac32b6dac6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237033_11bfcd84_984f_4852_819c_bbac32b6dac6.png)
 
 LED indicator:
 
-![Image](1787715237107_fad91e57_bc32_4a3c_965c_63dc65f2b20a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237107_fad91e57_bc32_4a3c_965c_63dc65f2b20a.png)
 
 1 x CAN, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715237197_7b7a97cc_595f_4c1c_b5c8_d096e01aeed0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237197_7b7a97cc_595f_4c1c_b5c8_d096e01aeed0.png)
 
 1 x multiplexed RS485/RS232, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715237271_2ce9900e_3ca8_439d_aa7e_25951ba33223.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237271_2ce9900e_3ca8_439d_aa7e_25951ba33223.png)
 
 1 x multiplexed RS485/RS232, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715237349_4d845bb3_4a80_4d29_986e_d3cc27a8990a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237349_4d845bb3_4a80_4d29_986e_d3cc27a8990a.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](1787715237426_8f9be66c_ae0a_4d5d_8a86_92f237444100.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237426_8f9be66c_ae0a_4d5d_8a86_92f237444100.png)
 
 Type-C interface for DEBUG.
 
@@ -265,11 +265,11 @@ The factory default IP address is ETH0: 192.168.0.232; ETH1: 192.168.1.232;
 
 This product supports rated DC 12V input and features 9-36V wide-voltage input, with built-in reverse polarity protection. After the whole device is powered on, the power indicator light marked “POW” will be on.
 
-![Image](1787715237537_88a1d8c6_42de_4f8c_8daa_494890e681b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237537_88a1d8c6_42de_4f8c_8daa_494890e681b7.png)
 
 The external power supply provides 9~36V wide-voltage output, whose voltage remains consistent with the input voltage, with a default output of DC 12V. As shown in the figure below:
 
-![Image](1787715237615_4fffd8da_f234_4410_ba66_8b91b32b5785.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715237615_4fffd8da_f234_4410_ba66_8b91b32b5785.png)
 
 ### 2.3 User Login
 
@@ -736,7 +736,7 @@ Type "ping 192.168.1.232" in the Windows Command Prompt window.
 
 **Note: For Windows 10, right-click the Start icon and select “Command Prompt” from the pop-up menu to access the command window.**
 
-![Image](1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78_1791603202267.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78_1791603202267.png)
 
 A successful ping connection between the PC and FCU1501, followed by a valid SSH login, verifies the normal operation of the network adapter.
 
@@ -963,7 +963,7 @@ The system automatically starts the vsftpd service at boot, with its version bei
 
 Use the FileZilla software on your PC to connect to the FTP service of the FCU1501. Enter the FTP login credentials in the red box shown below (the default password for the root user is root). The connection uses the ETH2 interface by default.
 
-![Image](image-20261009165437796.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/image-20261009165437796.png)
 
 Click “OK” on any pop-up prompt that appears during the process.
 
