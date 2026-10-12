@@ -147,7 +147,7 @@ FCU1501 Top Interface Diagram
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/787715235752_8b1fd0cb_bb5f_4eff_8aac_c5ff15bfa757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_Linux6_1_99/1787715235752_8b1fd0cb_bb5f_4eff_8aac_c5ff15bfa757.png)
 
 9–36V wide-voltage output, with the output voltage the same as the input voltage; the default output is DC 12V；
 
