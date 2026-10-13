@@ -298,9 +298,9 @@ forlinx@ubuntu:~$ mkdir -p /home/forlinx/work						//Create the working director
 Copy the source code file fcu1501-linux-source.tar.bz2.0\* from the user’s home directory to the /home/forlinx/work directory on the virtual machine.
 
 ```plain
-forlinx@ubuntu:~$ cd /home/forlinx/work														//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work					//Switch to the working directory
 forlinx@ubuntu:~/work$ cat fcu1501-linux-source.tar.bz2.0* > fcu1501-linux-source.tar.bz2.0
-forlinx@ubuntu:~/work$ tar -xvf fcu1501-linux-source.tar.bz2.0			//Extract the compressed file to its default location
+forlinx@ubuntu:~/work$ tar -xvf fcu1501-linux-source.tar.bz2.0	//Extract the compressed file to its default location
 forlinx@ubuntu:~/work$ cd /home/forlinx/work/fcu1501-linux-source/buildroot
 forlinx@ubuntu:~/work/fcu1501-linux-source/buildroot$ tar -vxf ../../dl.tar.bz2	//Unzip dl.tar.bz2 under buildroot
 ```
