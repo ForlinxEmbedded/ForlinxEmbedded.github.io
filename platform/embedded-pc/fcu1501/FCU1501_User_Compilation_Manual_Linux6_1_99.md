@@ -8,7 +8,7 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 Visit the VMware official website at https://www.vmware.com/cn.html to download Workstation Pro and obtain the product key. VMware is paid software that requires individual purchase, or you can choose to use a trial version.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414452367-ba3f1362-5262-4a29-bd49-89e338c764df.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414452367_ba3f1362_5262_4a29_bd49_89e338c764df.png)
 
 After the download is complete, double-click the setup file to launch the installer.
 
@@ -60,11 +60,11 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414455462-c87f746f-0b1c-41b4-887a-b8c540995e38.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414455462_c87f746f_0b1c_41b4_887a_b8c540995e38.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414455747-4965331d-3dbf-4132-98b2-2a444242ee2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414455747_4965331d_3dbf_4132_98b2_2a444242ee2b.png)
 
 Once the extraction is complete, you will obtain a folder named “ELF-RK3506\_Ubuntu22.04”.
 
@@ -78,7 +78,7 @@ Open the installed virtual machine software.
 
 The file "3506.vmx" in the "3506 Development Environment" folder is the virtual machine file that needs to be opened.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414456336-11272b6a-2f5a-41b5-981f-9a687d5e231e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414456336_11272b6a_2f5a_41b5_981f_9a687d5e231e.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -96,7 +96,7 @@ The default account for auto-login upon system boot in the development environme
 
 The installed Ubuntu version is 22.04.5 LTS, and all the introductions and development in this manual were carried out on it. Download the “ubuntu-22.04.5-desktop-amd64.iso” version from [https://releases.ubuntu.com/22.04/](https://releases.ubuntu.com/22.04/)(the specific version to download can be based on your own needs; here we use version Ubuntu22.04.5 LTS as an example).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414456996-cd5d2646-003d-44e8-91cf-e5ed4574dba8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414456996_cd5d2646_003d_44e8_91cf_e5ed4574dba8.png)
 
 #### 3.1.1 Creating an Ubuntu Virtual Machine
 
@@ -166,53 +166,53 @@ Once the virtual machine is created, wait for the installation interface to appe
 
 The default language of Ubuntu is English, but others can also be selected.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414462161-b971cb29-fa98-4b6e-a331-1ca8e2c61e26.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414462161_b971cb29_fa98_4b6e_a331_1ca8e2c61e26.png)
 
 The default language can be changed later. After making your selection, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414462478-cf866540-7b45-4c4a-8a6e-50a81b5522e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414462478_cf866540_7b45_4c4a_8a6e_50a81b5522e7.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click “Continue” again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414462826-abec62d8-df23-4f74-8705-67e1a2ed4d6b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414462826_abec62d8_df23_4f74_8705_67e1a2ed4d6b.png)
 
 Click Install Now by default, and a prompt will appear. Click “Continue”. In any subsequent pop-up windows, simply click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414463220-7c7cb959-7503-439e-9ff7-1b429055249b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414463220_7c7cb959_7503_439e_9ff7_1b429055249b.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue.
 
 Finally, set your username and password, choose between automatic login and logging in with your username and password, and click “Continue” to start the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414463561-6afffd42-5c43-42ee-a78a-7b5a36542547.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414463561_6afffd42_5c43_42ee_a78a_7b5a36542547.png)
 
 If your internet connection is poor, you can click “Skip”—this won’t affect the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414463831-1105b728-3f1f-4329-aa17-83da9f3f3598.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414463831_1105b728_3f1f_4329_aa17_83da9f3f3598.png)
 
 Click “Restart Now” to restart the system.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414464259-610e7194-0b1e-4e2f-b2d9-66199bfb2172.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414464259_610e7194_0b1e_4e2f_b2d9_66199bfb2172.png)
 
 Once Ubuntu starts up, click “Skip” when this pop-up appears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414464566-47b1638e-8bf6-4fd2-81e1-c0f008f6c898.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414464566_47b1638e_8bf6_4fd2_81e1_c0f008f6c898.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414464949-703505ee-358b-492d-a56f-92731d18a96f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414464949_703505ee_358b_492d_a56f_92731d18a96f.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414465300-e3c72a7d-57a4-40a8-9a08-45d204d9474e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414465300_e3c72a7d_57a4_40a8_9a08_45d204d9474e.png)
 
 Click “Next”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414465681-6b57b26d-5c57-4eed-9cc2-4b29b1fcb4b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414465681_6b57b26d_5c57_4eed_9cc2_4b29b1fcb4b8.png)
 
 Click “done”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414466087-2419e29b-533b-4fac-b858-150ebc8028a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414466087_2419e29b_533b_4fac_b858_150ebc8028a1.png)
 
 Ubuntu is successfully installed.
 
@@ -228,7 +228,7 @@ Ubuntu 22.04 uses Wayland by default, but the copy-and-paste functionality of VM
 
 From the menu that appears when Ubuntu starts, select “Ubuntu on Xorg” or “Xorg”
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414466398-d6da769c-fdba-42c3-a34f-fa3d9730b2c5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414466398_d6da769c_fdba_42c3_a34f_fa3d9730b2c5.png)
 
 to enable copying and pasting files between Windows and Ubuntu.
 
@@ -240,13 +240,13 @@ If the virtual machine cannot display in full screen, you can click on “View�
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414467069-1cbd3c28-5b0e-4333-b763-adca75059e4b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414467069_1cbd3c28_5b0e_4333_b763_adca75059e4b.png)
 
 Virtual Machine Sleep Settings：
 
 Additionally, the default sleep setting is 5 minutes. If you do not want the system to go to sleep, go to Settings -> Power -> Blank Screen and set it to “Never”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414467521-52bea689-ee5d-4b8a-80db-9b673f251a37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414467521_52bea689_ee5d_4b8a_80db_9b673f251a37.png)
 
 #### 3.1.3 Virtual Machine Network Configuration
 
@@ -331,11 +331,11 @@ forlinx@ubuntu: ~/work/fcu1501-linux-source$./build.sh chip
 
 After executing, there will be options to input, as shown in the picture. After entering "1", press Enter to continue.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414468312-f9575b71-e643-44e3-8172-7cea12616166.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414468312_f9575b71_e643_44e3_8172_7cea12616166.png)
 
 After executing, there will be options to input, as shown in the picture. After entering "1", press Enter to continue.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1788414468652-fab81bc4-0e87-4871-b202-a662827979f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Compilation_Manual_Linux6_1_99/1788414468652_fab81bc4_0e87_4871_b202_a662827979f6.png)
 
 Enter the corresponding number for the relevant board, then press Enter to continue.
 
