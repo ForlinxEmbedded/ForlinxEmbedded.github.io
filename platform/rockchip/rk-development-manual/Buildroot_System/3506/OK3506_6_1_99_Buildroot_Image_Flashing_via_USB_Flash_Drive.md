@@ -261,7 +261,7 @@ Replace the `uboot.img` and `rk3506_spl_loader_v1.04.110.bin` files under `sourc
 
 ⚠️ Back up the original `uboot.img` and `rk3506_spl_loader_v1.04.110.bin` files before replacement.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1751536050209-7ed1ffe9-ccbd-4b6b-8be5-71d72aa82bef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3506/OK3506_6_1_99_Buildroot_Image_Flashing_via_USB_Flash_Drive/1751536050209_7ed1ffe9_ccbd_4b6b_8be5_71d72aa82bef.png)
 
 Compile the kernel
 
@@ -293,7 +293,7 @@ forlinx@ubuntu:~/3506/OK3506-linux-source$ ./build.sh updateimg
 
 The packaged update image is located at `OK3506-linux-source/output/update/Image`.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1751536130701-77f04d74-ebf1-4c6f-941b-19a6822ae9ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3506/OK3506_6_1_99_Buildroot_Image_Flashing_via_USB_Flash_Drive/1751536130701_77f04d74_ebf1_4c6f_941b_19a6822ae9ad.png)
 
 ## 4. USB Flash Drive Flashing Verification
 
@@ -305,9 +305,9 @@ Follow the USB drive preparation steps in the link; ignore the subsequent flashi
 
 After flashing the patched image to the SoM and preparing the flashing USB drive, plug the USB drive into the USB2.0 port on the OK3506 baseboard. Press the reset button to reboot the development board. Connect the debug port of the board to view debug logs. The appearance of the following log messages indicates that the board has entered the flashing process.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1751536164456-bcca8071-8496-4885-adb7-61864cc00094.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3506/OK3506_6_1_99_Buildroot_Image_Flashing_via_USB_Flash_Drive/1751536164456_bcca8071_8496_4885_adb7_61864cc00094.png)
 
 If the following message appears, this indicates that the flashing process is complete; remove the USB stick and the system will restart automatically. Flashing complete.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/45444988/1751536173302-808908b9-e576-4d2f-9e12-9429bcd369d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3506/OK3506_6_1_99_Buildroot_Image_Flashing_via_USB_Flash_Drive/1751536173302_808908b9_e576_4d2f_9e12_9429bcd369d2.png)
 
