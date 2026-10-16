@@ -25,7 +25,7 @@ Navigate to the source code directory, and add the reference `#include "rk3588j.
 forlinx@ubuntu20:~/3588/OK3588_Linux_fs$ vi kernel/arch/arm64/boot/dts/rockchip/OK3588-C-common.dtsi
 ```
 
-Modify the .dtsi file as shown below.
+Modify the .dtsi file as shown below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955358351-95f678d7-d3da-4f22-9e2e-6334e1b058c0.png)
 
