@@ -27,7 +27,7 @@ forlinx@ubuntu20:~/3588/OK3588_Linux_fs$ vi kernel/arch/arm64/boot/dts/rockchip/
 
 Modify the .dtsi file as shown below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955358351-95f678d7-d3da-4f22-9e2e-6334e1b058c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955358351_95f678d7_d3da_4f22_9e2e_6334e1b058c0.png)
 
 Perform a full compilation to generate the target image:
 
@@ -35,7 +35,7 @@ Perform a full compilation to generate the target image:
 
 After the compilation, the system image will be generated in the `rockdev` folder, as shown in the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955358579-bdb13747-959b-4112-b176-aa7d974ade02.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955358579_bdb13747_959b_4112_b176_aa7d974ade02.png)
 
 ## Test
 
@@ -47,6 +47,6 @@ root@ok3588:/# cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_freque
 
 Before the switch, that is, under the overclocking mode, the tested frequencies are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955596996-beb86908-8b76-47b1-bc83-957cb6ec04a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955596996_beb86908_8b76_47b1_bc83_957cb6ec04a1.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955607774-da52ff69-64ee-4c51-885b-8051169a1a15.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note/1721955607774_da52ff69_64ee_4c51_885b_8051169a1a15.png)
