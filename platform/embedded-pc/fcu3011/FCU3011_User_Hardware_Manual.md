@@ -14,7 +14,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 ### 1.1 FCU3011简介
 FCU3011嵌入式控制单元基于NVIDIA公司的JetsonOrinNano模块设计，主频最高1.5GHz，支持至高40TOPS算力（8G版本）。支持5G移动网络，千兆网，USB3.0，CAN，RS485，DI，DO等丰富外设接口，支持Ubuntu操作系统。
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722374443-2399a99b-8517-413a-a7f2-c38f7952b346.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374443_2399a99b_8517_413a_a7f2_c38f7952b346.jpg)
 
 产品特点：
 
@@ -44,9 +44,9 @@ FCU3011嵌入式控制单元基于NVIDIA公司的JetsonOrinNano模块设计，�
 边缘AI计算网关、 智能物联网、智慧城市、工业自动化、视频监控、机器人等应用领域。
 
 ### 1.3 接口示意图
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722374554-886b6477-122b-4008-a8a2-f97f31f7e243.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374554_886b6477_122b_4008_a8a2_f97f31f7e243.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722374668-ae2547d1-f633-45bc-b92b-502200cf89e3.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374668_ae2547d1_f633_45bc_b92b_502200cf89e3.jpg)
 
 ### 1.4 硬件参数
 | 设备 | 描述 |
@@ -88,7 +88,7 @@ FCU3011嵌入式控制单元基于NVIDIA公司的JetsonOrinNano模块设计，�
 
 U盘挂载目录为/meidia/“用户名”/
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722374782-52a079bb-0033-4fc3-9614-914add8528b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374782_52a079bb_0033_4fc3_9614_914add8528b1.png)
 
 FCU3011上有四个USB HOST接口，如红框所示，两个蓝色接口为USB3.0，白色接口为USB2.0。可选择任意一个进行测试，插入U盘系统文件浏览器自动显示U盘内容。
 
@@ -101,7 +101,7 @@ FCU3011内部集成五口网络交换，对外有四个千兆以太网，任意�
 
 FCU3011网卡名为eth0，首次开机无默认IP。
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722374875-fd1a0022-2d26-4acb-84ea-0c25f99b6b34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374875_fd1a0022_2d26_4acb_84ea_0c25f99b6b34.png)
 
 ### 2.3 4G/5G上网
 说明：
@@ -110,12 +110,12 @@ FCU3011网卡名为eth0，首次开机无默认IP。
 
 确保FCU3011内部安装了4G/5G模块，并连接了4G/5G天线，插入SIM卡。SIM卡扣位置如图红框。
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722374971-2cdda1f5-1c23-42c5-b9f0-a9d05fc25472.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374971_2cdda1f5_1c23_42c5_b9f0_a9d05fc25472.png)
 
 ### 2.4 RS485
 RS485接口位置如图红框所示：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375060-dc06f037-0aa6-4b35-b79c-387b61254ac9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375060_dc06f037_0aa6_4b35_b79c_387b61254ac9.png)
 
 按照标记A、B和对端设备连接。
 
@@ -124,29 +124,29 @@ RS485接口位置如图红框所示：
 ### 2.5 CAN
 FCU3011有一路CAN总线，按照L、H对应关系和对端设备连接。接口位置如下图：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375146-0b80f13d-ca5b-4348-b66d-581160b334e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375146_0b80f13d_ca5b_4348_b66d_581160b334e9.png)
 
 ### 2.6 HDMI
 HDMI接口如下图红框所示：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375230-0095398b-b0c7-4c97-9e55-70f3bc182181.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375230_0095398b_b0c7_4c97_9e55_70f3bc182181.png)
 
 HDMI支持自适应分辨率，最大支持到4K分辨率。
 
 ### 2.7 LED
 FCU3011仅有一个LED可供用户控制，位置如图：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375324-2fb5cb7f-ab84-4e11-93b0-ec9c43ca2da0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375324_2fb5cb7f_ab84_4e11_93b0_ec9c43ca2da0.png)
 
 ### 2.8 DI
 FCU3011有两组数字量输入IN1、IN2，公共端为IGND。如下图
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375425-5c7b0352-636e-4a87-a82b-6774bac076ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375425_5c7b0352_636e_4a87_a82b_6774bac076ee.png)
 
 ### 2.9 DO
 FCU3011有两组数字量输出，分别为DO1、DO2
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375503-b582d03f-481c-4164-84fd-2a194337d1ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375503_b582d03f_481c_4164_84fd_2a194337d1ca.png)
 
 DO1两个引脚：A-1、A-2
 
