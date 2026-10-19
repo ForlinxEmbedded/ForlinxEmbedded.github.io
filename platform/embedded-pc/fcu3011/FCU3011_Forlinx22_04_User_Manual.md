@@ -293,9 +293,7 @@ The contents of the mass storage are as follows:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361843_eb4e3186_2c89_423c_89ae_e611b5b4f827.png)
 
-Check the serial port number via Device Manager:
-
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361931_091e06c6_594a_48fc_be7a_da29067b8951.png)
+Check the serial port number via Device Manager.
 
 As shown in the figure above, the serial port number is COM4. You can log in to the FCU3011 by opening this serial port with PuTTY. The serial port mode must be set to 8N1, that is, 8 data bits, no parity bit, and 1 stop bit (the explanation of the 8N1 serial port setting in READ-usb-dev-mode.txt is incorrect).
 
