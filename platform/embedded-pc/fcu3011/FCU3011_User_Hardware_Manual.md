@@ -1,4 +1,4 @@
-# FCU3011\_User's Hardware Manual\_V1.0
+# User's Hardware Manual\_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
