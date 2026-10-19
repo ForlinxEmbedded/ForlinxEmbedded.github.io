@@ -1,4 +1,4 @@
-# FCU1501\_Linux6.1.99\_V1.0_User's Compilation Manual\_V1.0
+# Linux6.1.99\_V1.0_User's Compilation Manual\_V1.0
 
 ## 1 . VMware Virtual Machine Software Installation
 
