@@ -18,7 +18,7 @@ The FCU3011 embedded control unit is designed based on NVIDIA’s Jetson Orin NX
 
 Link to the official NVIDIA manual: [https://docs.nvidia.com/jetson/archives/r36.3/DeveloperGuide/index.html](https://docs.nvidia.com/jetson/archives/r36.3/DeveloperGuide/index.html)
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722356252-6905e692-3573-42c1-9ea0-20fd6ffd37ab.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356252_6905e692_3573_42c1_9ea0_20fd6ffd37ab.jpg)
 
 **Product Features:**
 
@@ -52,7 +52,7 @@ Preparation Before Startup:
 
 Power interface as illustrated below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722356370-d93ec883-4497-4134-af6d-4ca94802ccd5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356370_d93ec883_4497_4134_af6d_4ca94802ccd5.png)
 
 Choose either graphical configuration or serial port configuration
 
@@ -66,45 +66,45 @@ Choose either graphical configuration or serial port configuration
 
 The first interface that appears on the HDMI monitor after power-on is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722356475-d176e4cb-9802-4642-b193-e53603b7bb70.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356475_d176e4cb_9802_4642_b193_e53603b7bb70.png)
 
 Check the box for “I accept the terms of these licenses”, then click the “Continue” button at the bottom right to enter the next configuration interface.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722356583-ab130c4b-cac1-4748-a69b-1e1ec1644cff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356583_ab130c4b_cac1_4748_a69b_1e1ec1644cff.png)
 
 Language selection: Choose as needed. Generally, the default setting is sufficient, click “Continue”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722356694-a2238d4d-1bb6-4ab6-9cc7-069a42af5f90.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356694_a2238d4d_1bb6_4ab6_9cc7_069a42af5f90.png)
 
 Time zone selection: Click on the map according to the actual situation. 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722356809-d591fd0c-c552-40c8-9807-4a643cf26511.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356809_d591fd0c_c552_40c8_9807_4a643cf26511.png)
 
 Set the initial username and password. 
 
 This manual uses “forlinx” as an example, with the reference configuration as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722356929-8ac1cce2-cd4c-4cca-8563-d1b677af5cd1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722356929_8ac1cce2_cd4c_4cca_8563_d1b677af5cd1.png)
 
 Then click “Continue” (this interface does not appear after OTG flashing).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357059-3f24f0f7-3302-4147-97c4-3a06131268fe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357059_3f24f0f7_3302_4147_97c4_3a06131268fe.png)
 
 Click “Continue” with the default settings.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357179-ea04aedf-7c5e-46c7-8145-d823533ca0fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357179_ea04aedf_7c5e_46c7_8145_d823533ca0fa.png)
 
 The system will enter the automatic configuration process. After the configuration is completed, the login interface will pop up. Enter the previously set username and password to access the system.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357286-6a76c290-e7d3-46ef-9dc3-6bcb744a279a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357286_6a76c290_e7d3_46ef_9dc3_6bcb744a279a.png)
 
 Click “forlinx”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357379-e52daf6b-1928-49b5-ba3b-a92314db1484.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357379_e52daf6b_1928_49b5_ba3b_a92314db1484.png)
 
 After entering the password, click “Sign In”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357475-e4309325-b978-4bf5-b4db-55b03832ffc0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357475_e4309325_b978_4bf5_b4db_55b03832ffc0.png)
 
 When entering the system for the first time, two interfaces with system operation guides will pop up—just close them. The power-on configuration is completed.
 
@@ -118,125 +118,125 @@ Power on the device, and connect the OTG port to a Windows 10 computer via a mic
 
 Set up Putty to open the USB virtual serial port:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357692-e26a14c5-c11a-49ab-a3b5-998f0ca067fd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357692_e26a14c5_c11a_49ab_a3b5_998f0ca067fd.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357793-30ed3ef3-ffb6-4b5d-bfe0-d7cfb506d460.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357793_30ed3ef3_ffb6_4b5d_bfe0_d7cfb506d460.png)
 
 The serial port will print the first interface of the system configuration:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357893-5255efdf-071e-4899-af7a-e88ebada1d6b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357893_5255efdf_071e_4899_af7a_e88ebada1d6b.png)
 
 Press Enter, and the License interface will appear:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722357990-3cd58378-7635-4ad6-8f7d-6a8e1871085d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722357990_3cd58378_7635_4ad6_8f7d_6a8e1871085d.png)
 
 Press ESC to exit the License interface, and the language selection interface will appear. Select according to actual needs—here take English as an example:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358092-9dcdaad6-2514-4a00-8efd-6d9e804f0f81.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358092_9dcdaad6_2514_4a00_8efd_6d9e804f0f81.png)
 
 Press Enter to enter the location selection. The location is related to the accuracy of the time zone. It needs to be selected according to the actual situation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358182-bc7bd4be-41bb-44d0-b707-4aa9a6e7c6ff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358182_bc7bd4be_41bb_44d0_b707_4aa9a6e7c6ff.png)
 
 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358301-999e9e0a-cad3-4857-bcfa-f019d67c41db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358301_999e9e0a_cad3_4857_bcfa_f019d67c41db.png)
 
 Press Enter, and find “Asia” (as you needed) in the new interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358398-2b8fc0d1-d4e6-49f0-97dc-04d159eb7ace.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358398_2b8fc0d1_d4e6_49f0_97dc_04d159eb7ace.png)
 
 Press Enter, and find “Your Country” in the new interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358545-5f635df8-095f-4636-bec2-3de9ffa932e1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358545_5f635df8_095f_4636_bec2_3de9ffa932e1.png)
 
 Press Enter to enter the character encoding selection interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358639-9ff2a8c6-cdb3-40dc-bd2b-2cc38491c7c0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358639_9ff2a8c6_cdb3_40dc_bd2b_2cc38491c7c0.png)
 
 Use the default en\_US.UTF-8 (if Chinese display is needed, select zh\_CN by yourself), then press Enter to enter the keyboard layout interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358733-0f949a71-7a8a-4e08-8c2d-016534c94375.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358733_0f949a71_7a8a_4e08_8c2d_016534c94375.png)
 
 Use the default setting, press Enter to enter the second keyboard layout interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358864-10294fa2-5966-429a-90d6-cc7f2cabf898.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358864_10294fa2_5966_429a_90d6_cc7f2cabf898.png)
 
 Use the default setting, press Enter to enter the UTC clock enable/disable interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722358994-bd5be435-e9a9-4463-ac50-2b474efea444.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722358994_bd5be435_e9a9_4463_ac50_2b474efea444.png)
 
 Select “Yes” and press Enter to enter the username setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359112-9d2bc0d3-ca19-4928-9ff8-34eee32f43f2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359112_9d2bc0d3_ca19_4928_9ff8_34eee32f43f2.png)
 
 Enter according to actual needs:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359300-25935dce-1447-40f2-81b7-74001e8669b0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359300_25935dce_1447_40f2_81b7_74001e8669b0.png)
 
 Press Enter to enter the login username setting interface, enter according to the actual situation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359433-d0529766-af29-4ecc-8152-52e3471edd4a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359433_d0529766_af29_4ecc_8152_52e3471edd4a.png)
 
 Press Enter to reach the password input interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359570-15f2a3ae-5424-4faf-b35e-08d1c0d945d7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359570_15f2a3ae_5424_4faf_b35e_08d1c0d945d7.png)
 
 After entering the password according to actual needs, press Enter to enter the password confirmation interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359698-673b3d4e-8b8c-4057-a621-6ebea2bc9f2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359698_673b3d4e_8b8c_4057_a621_6ebea2bc9f2b.png)
 
 Enter the same password again and press Enter. If the password is set too simple, the following interface will pop up:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359839-69665abb-a28c-4274-9a3c-dd23b25c0e7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359839_69665abb_a28c_4274_9a3c_dd23b25c0e7b.png)
 
 If you still want to keep the simple password, press the left key on the PC keyboard to move the cursor to “Yes”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722359930-f46a4b08-1b28-4ea4-9e12-bc18687a5a50.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722359930_f46a4b08_1b28_4ea4_9e12_bc18687a5a50.png)
 
 Press Enter to enter the APP partition size setting interface. The default is the maximum available value, no modification is needed (if you need to reserve space, subtract the reserved value here. This interface does not appear after OTG flashing): 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360017-d00e9570-6a08-4473-8e47-d4f02f2da5ec.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360017_d00e9570_6a08_4473_8e47_d4f02f2da5ec.png)
 
 Press Enter, you will enter the network port selection interface for network configuration:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360161-bd7f918e-93fd-445d-9356-ac12a93b2fcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360161_bd7f918e_93fd_445d_9356_ac12a93b2fcb.png)
 
 Do not configure it for now, use the default setting and press Enter:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360389-3826acd7-776c-4d68-9ca3-31bf613c9ba5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360389_3826acd7_776c_4d68_9ca3_31bf613c9ba5.png)
 
 Wait for the automatic network configuration to fail, and the following interface will pop up:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360497-229a5f3b-93a6-4103-8333-a4644772a57c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360497_229a5f3b_93a6_4103_8333_a4644772a57c.png)
 
 After pressing Enter, the network configuration interface will pop up:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360588-1beba6a9-f6e4-4192-9650-69e5f321c35d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360588_1beba6a9_f6e4_4192_9650_69e5f321c35d.png)
 
 Move the cursor to the last option to skip network configuration temporarily (if you need to configure the network, select “Configure network manually” in this interface), press Enter to enter the hostname setting interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360674-ec0e879c-87ad-45df-b562-ea7ce5923c2c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360674_ec0e879c_87ad_45df_b562_ea7ce5923c2c.png)
 
 After setting the hostname according to the actual situation, press Enter to enter the NVIDIA power consumption configuration interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360779-05ac1ede-b83c-4ec2-90c2-fb194d842df8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360779_05ac1ede_b83c_4ec2_90c2_fb194d842df8.png)
 
 Select according to actual needs. The maximum power consumption is 15W—higher power consumption brings better performance but also more heat. After making the selection, press Enter, and the system will start automatic configuration:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722360900-6f372876-e67a-4588-a68b-756a1409270a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722360900_6f372876_e67a_4588_a68b_756a1409270a.png)
 
 After the configuration is completed, the USB virtual serial port will disconnect:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361014-772ac483-524f-4aef-8b43-73db13220feb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361014_772ac483_524f_4aef_8b43_73db13220feb.png)
 
 Click the “OK” button, then click the top left corner and select to reconnect the virtual serial port from the pop-up interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361113-d5ef8643-96ef-4862-a363-798ab26d42ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361113_d5ef8643_96ef_4862_a363_798ab26d42ee.png)
 
 At this point, the configuration is completed, and you can log in to the system through the USB virtual serial port using the username and password set above.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361253-968eed5e-ab17-4a6d-9da3-efe06f608d3f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361253_968eed5e_ab17_4a6d_9da3_efe06f608d3f.png)
 
 ## 3\. FCU3011 Embedded Control Unit Interface
 
@@ -253,17 +253,17 @@ This chapter mainly describes how to use the peripheral interface of the FCU3011
 - **Currently, USB flash drive testing supports capacities up to 124 GB; capacities above 124 GB have not been tested;**
 - **The mount directory for USB flash drives is /media/"username"/.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361356-0921941a-54ad-4ada-953a-4fd296c04b4e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361356_0921941a_54ad_4ada_953a_4fd296c04b4e.png)
 
 The FCU3011 is equipped with four USB HOST interfaces, as indicated by the red box. The two blue interfaces are USB 3.0 ports, and the white ones are USB 2.0 ports. Any of the interfaces can be selected for testing. When a USB flash drive is inserted, the system’s file browser will automatically display the contents of the drive.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361495-5f820408-8830-45e9-b519-1b01457d31c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361495_5f820408_8830_45e9_b519_1b01457d31c6.png)
 
 Read-write Speed Test：
 
 Write test:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361638-d586ccca-b8f6-40f6-9767-c0df54eaf2cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361638_d586ccca_b8f6_40f6_9767_c0df54eaf2cd.png)
 
 ```plain
 forlinx@forlinx-desktop:~$ dd if=/dev/zero of=/media/forlinx/0142-170E/test.bin  bs=1M  count=1024 conv=fsync
@@ -274,7 +274,7 @@ forlinx@forlinx-desktop:~$ dd if=/dev/zero of=/media/forlinx/0142-170E/test.bin 
 
 Read test:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361741-d0003cfc-d1a9-41fd-af59-3c873a6640e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361741_d0003cfc_d1a9_41fd_af59_3c873a6640e7.png)
 
 ```plain
 forlinx@forlinx-desktop:~$ dd if=/media/forlinx/0142-170E/test.bin of=/dev/null
@@ -291,25 +291,25 @@ Connect the OTG port to a Windows 10 PC via a micro USB cable. After successful 
 
 The contents of the mass storage are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361843-eb4e3186-2c89-423c-89ae-e611b5b4f827.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361843_eb4e3186_2c89_423c_89ae_e611b5b4f827.png)
 
 Check the serial port number via Device Manager:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722361931-091e06c6-594a-48fc-be7a-da29067b8951.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722361931_091e06c6_594a_48fc_be7a_da29067b8951.png)
 
 As shown in the figure above, the serial port number is COM4. You can log in to the FCU3011 by opening this serial port with PuTTY. The serial port mode must be set to 8N1, that is, 8 data bits, no parity bit, and 1 stop bit (the explanation of the 8N1 serial port setting in READ-usb-dev-mode.txt is incorrect).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362024-eb8c664a-c967-491e-87da-de595f73f1c9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362024_eb8c664a_c967_491e_87da_de595f73f1c9.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362140-d29daf3c-2330-4cb7-8cce-50d13c380a7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362140_d29daf3c_2330_4cb7_8cce_50d13c380a7a.png)
 
 Click "Open", it prompts to enter the username and password:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362241-c30e2309-e053-46d7-a821-c576596274b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362241_c30e2309_e053_46d7_a821_c576596274b6.png)
 
 Enter the username and password to successfully log in to the system.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362378-f5196871-8cbb-4406-9a99-b07d6cd105aa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362378_f5196871_8cbb_4406_9a99_b07d6cd105aa.png)
 
 #### 3.2.3 USB Camera Test
 
@@ -326,7 +326,7 @@ The FCU3011 integrates a 5-port network switch internally, with four Gigabit Eth
 - **The examples in this section are tested under Forlinx Embedded’s internal network environment. Since actual network conditions may vary in deployment, perform configurations according to the specific on-site network environment;**
 - **The network interface name of the FCU3011 is eth0, and there is no default IP address upon first startup.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362523-2e3eb44b-7e63-454e-8c5e-fd639c43045b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362523_2e3eb44b_7e63_454e_8c5e_fd639c43045b.png)
 
 #### 3.2.1 IPv4 Dynamic IP
 
@@ -356,7 +356,7 @@ forlinx@forlinx-desktop:~$
 
 If a static IP was configured previously, the system will prompt Do you also want to clear ”ipv4.addresses“? \[yes]:, enter y to confirm.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362660-1b3e8b8d-3cb9-4326-9c9b-80304c99afd4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362660_1b3e8b8d_3cb9_4326_9c9b_80304c99afd4.png)
 
 #### 3.2.2 IPv4 Static IP
 
@@ -379,7 +379,7 @@ forlinx@forlinx-desktop:~$ sudo nmcli connection up Wired\ connection\ 1
 Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/4)
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362805-758b2e62-7a6e-4f54-adac-2c9ba1110a15.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362805_758b2e62_7a6e_4f54_adac_2c9ba1110a15.png)
 
 #### 3.2.3 MAC Address Modification
 
@@ -402,7 +402,7 @@ forlinx@forlinx-desktop:~$ sudo nmcli connection up Wired\ connection\ 1
 Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/5)
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722362947-233f7508-99cb-46ac-b06a-77df56b40589.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722362947_233f7508_99cb_46ac_b06a_77df56b40589.png)
 
 #### 3.2.4 IPV6
 
@@ -421,7 +421,7 @@ The SSH service is enabled by default. After the IP address is configured, you c
 - **The FCU3011 supports the Quectel EM05-CE 4G module, Quectel RM500Q-GL 5G module, and Quectel RM500U-CN 5G module;**
 - **Ensure that the 4G/5G module is installed inside the FCU3011, the 4G/5G antenna is connected, and a SIM card is inserted. The position of the SIM card holder is indicated by the red box in the figure.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363056-38e4d469-e47f-449c-95a3-178b1c53c5bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363056_38e4d469_e47f_449c_95a3_178b1c53c5bb.png)
 
 3.4.1.1 4G/5G Recognition Check
 
@@ -589,7 +589,7 @@ Ensure that the RTL8822CE WiFi module is installed inside the FCU3011. It suppor
 forlinx@forlinx-desktop:~$ nmcli device wifi
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363170-06769015-fbc1-401a-b9c2-fe35a6cd81b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363170_06769015_fbc1_401a_b9c2_fe35a6cd81b8.png)
 
 SSID refers to the name of the nearby AP, and BARS represents the signal strength value.
 
@@ -603,11 +603,11 @@ forlinx@forlinx-desktop:~$ sudo nmcli device wifi connect bjfl password "1234567
 （Enter sudo password）
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363284-1d1b9dd9-e4b5-489c-b008-a6fb261d002c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363284_1d1b9dd9_e4b5_489c_b008_a6fb261d002c.png)
 
 Test connectivity.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363384-a5654928-c3f8-4ab2-8689-c1b79a25de17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363384_a5654928_c3f8_4ab2_8689_c1b79a25de17.png)
 
 #### 3.4.3 AP Mode
 
@@ -625,7 +625,7 @@ Execute fltest\_ap.sh — this script sets the Ethernet IP, configures the netwo
 forlinx@forlinx-desktop:~$ sudo fltest_ap.sh
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363523-34b6570d-6e73-4e4c-989c-0ac7b9d8c1e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363523_34b6570d_6e73_4e4c_989c_0ac7b9d8c1e8.png)
 
 Mobile terminals such as smartphones can connect to the FCU3011’s WiFi hot spot. The hot spot name is FCU3011 and the password is 12345678. The password can be changed to another value in /etc/hostapd/hostapd.conf.
 
@@ -645,7 +645,7 @@ wlan0: STA xx:xx:xx:xx:xx:xx WPA: pairwise key handshake completed (RSN)
 
 The RS485 interface is located in the position marked by the red box in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363633-02ed91f3-0e32-4884-b9e7-c6bd4172035f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363633_02ed91f3_0e32_4884_b9e7_c6bd4172035f.png)
 
 Connect to the peer device according to the labeled A and B pins.
 
@@ -663,7 +663,7 @@ forlinx@forlinx-desktop:~$sudo bash -c "echo xxx > /dev/ttyTHS1"     (发)
 
 Connect the A and B wires to the pins of a USB-to-485 module. On the PC side, open the serial port tool, select the COM port recognized by the PC, set the baud rate to 115200, data bits to 8, stop bits to 1, no parity, no flow control, and set it to send the string abcdefg at 1-second intervals. After configuring the parameters, open the serial port.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363715-1301c340-100a-48d8-8f61-26a5e916f807.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363715_1301c340_100a_48d8_8f61_26a5e916f807.png)
 
 Input characters in the console of FCU3011, and the PC tool can receive them. Send characters to the FCU3011 with the PC tool, which can also be displayed in the console:
 
@@ -673,7 +673,7 @@ The serial port tool can receive the data sent by the test program.
 
 The FCU3011 has one CAN bus channel. Connect to the peer device following the corresponding L (Low) and H (High) pins. The interface position is shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363820-192c887a-fc1a-4d99-8d61-7855564625c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363820_192c887a_fc1a_4d99_8d61_7855564625c1.png)
 
 Connectivity test:
 
@@ -706,17 +706,17 @@ CAN0 received data:
 can0  000   [8]  00 01 02 03 04 05 06 07
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722363911-384ecd5f-e453-4ac0-a018-c90eae0306d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722363911_384ecd5f_e453_4ac0_a018_c90eae0306d9.png)
 
 PC side
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364003-3bf1ef0e-3f62-4cb6-9830-7d6cd7faa887.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364003_3bf1ef0e_3f62_4cb6_9830_7d6cd7faa887.png)
 
 ### 3.7 HDMI
 
 The HDMI interface is shown in the red box in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364095-5c276078-3019-4132-a657-27a44cc26d1b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364095_5c276078_3019_4132_a657_27a44cc26d1b.png)
 
 HDMI supports adaptive resolution, with a maximum resolution of 4K.
 
@@ -724,7 +724,7 @@ HDMI supports adaptive resolution, with a maximum resolution of 4K.
 
 The FCU3011 has only one user-controllable LED, whose position is shown in the figure.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364189-8e319e92-13cb-4c93-82cc-bfca261a6983.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364189_8e319e92_13cb_4c93_82cc_bfca261a6983.png)
 
 Turn off the LED:
 
@@ -742,7 +742,7 @@ forlinx@forlinx-desktop:~$sudo fltest_led.sh on
 
 The FCU3011 has two sets of digital inputs, IN1 and IN2, with a common terminal IGND. As shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364325-2fd3843c-6513-4187-9982-67159d7f5eba.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364325_2fd3843c_6513_4187_9982_67159d7f5eba.png)
 
 Query the status of DI1:
 
@@ -766,7 +766,7 @@ IN1 state: 1
 
 The FCU3011 has two sets of digital outputs, respectively DO1 and DO2
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364440-4cafd815-a84a-4031-8919-5d976f46bf99.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364440_4cafd815_a84a_4031_8919_5d976f46bf99.png)
 
 DO1 has two pins: A-1 and A-2.
 
@@ -800,7 +800,7 @@ forlinx@forlinx-desktop:~$ fltest_do.sh DO2 off
 
 If an NVMe solid-state drive is installed inside the FCU3011, it will be automatically mounted after the system boots, and can be operated in both the graphical desktop and command line. Verified model: Intel SSD 760p.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364538-94086a6b-ad0c-4a68-8d18-d465328dd887.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364538_94086a6b_ad0c_4a68_8d18_d465328dd887.png)
 
 View the model via the command line:
 
@@ -810,7 +810,7 @@ forlinx@forlinx-desktop:~$  lspci
 0005:01:00.0 Non-Volatile memory controller: Intel Corporation SSD Pro 7600p/760p/E 6100p Series (rev 03)
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364664-a1690432-1176-48c3-be59-d5061bb26be5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364664_a1690432_1176_48c3_be59_d5061bb26be5.png)
 
 Command-line speed test (note that the speed test will damage data on the hard drive, please back up data in advance or conduct the test in file-based mode):
 
@@ -823,7 +823,7 @@ forlinx@forlinx-desktop:~$ sudo dd if=/dev/zero of=/dev/nvme0n1 bs=1024M count=2
 2147483648 bytes (2.1 GB, 2.0 GiB) copied, 2.17506 s, 987 MB/s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364763-f2bd592a-9ea3-4d0e-ad19-17d6bbf280b3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364763_f2bd592a_9ea3_4d0e_ad19_17d6bbf280b3.png)
 
 Read test (it is recommended to restart the system before testing to get the actual speed):
 
@@ -835,7 +835,7 @@ forlinx@forlinx-desktop:~$  sudo dd if=/dev/nvme0n1 of=/dev/null bs=1M count=204
 2147483648 bytes (2.1 GB, 2.0 GiB) copied, 2.06022 s, 1.0 GB/s
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364853-dffdfb9b-4ab3-4c2f-a8aa-2485836dd9b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364853_dffdfb9b_4ab3_4c2f_a8aa_2485836dd9b8.png)
 
 ## 4\. GPU Computing Applications \& Deep Learning
 
@@ -860,7 +860,7 @@ NVIDIA’s CUDA Toolkit provides everything needed to develop GPU-accelerated ap
 
 CUDA accelerates applications across a wide range of fields, from image processing to deep learning, data analytics and computational science.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722364944-d04f457b-d99e-47d6-a999-ab27a5023fcd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722364944_d04f457b_d99e_47d6_a999_ab27a5023fcd.png)
 
 Upload the cuda-samples folder to the device, and run the image denoising sample in the cuda-samples directory to verify that CUDA is installed successfully.
 
@@ -872,7 +872,7 @@ forlinx@forlinx-desktop:~/cuda-samples/Samples/2_Concepts_and_Techniques/imageDe
 forlinx@forlinx-desktop:~/cuda-samples/bin/aarch64/linux/release$ ./imageDenoising
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722365047-645899a3-6a3e-49cb-bc4e-abd6573c19b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365047_645899a3_6a3e_49cb_bc4e_abd6573c19b6.png)
 
 ### 4.3 cuDNN
 
@@ -944,7 +944,7 @@ TensorRT is built on NVIDIA’s parallel programming model, CUDA, and can help y
 
 TensorRT provides INT8 and FP16 optimizations for production deployment of various deep learning inference applications, such as video streaming, speech recognition, recommendation and natural language processing. The reduced inference precision can significantly cut down application latency, which exactly meets the requirements of many real-time services, autonomous and embedded applications.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722365156-2f5096d0-160b-4593-83cc-1a66adb70ab9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365156_2f5096d0_160b_4593_83cc_1a66adb70ab9.png)
 
 Run the TensorRT handwritten character recognition test program on FCU3011.
 
@@ -1084,7 +1084,7 @@ During the cmake process, a prompt will pop up asking whether to install PyTorch
 
 You can choose to install it if you need to train models on the Jetson, but in most cases, models are trained on a PC or in the cloud.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722365320-67bea1fd-fdab-4908-a233-db6b35c06808.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365320_67bea1fd_fdab_4908_a233_db6b35c06808.png)
 
 After configuration is completed, the following information will be output:
 
@@ -1186,7 +1186,7 @@ forlinx@forlinx-desktop:~/jetson-inference/build$ cd aarch64/bin/
 forlinx@forlinx-desktop:~/jetson-inference/build$ sudo ./imagenet /images/orange_0.jpg output_0.jpg
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722365410-cc34cc93-027c-4d49-a53f-40615fd353dc.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365410_cc34cc93_027c_4d49_a53f_40615fd353dc.jpg)
 
 Use DetectNet to perform object detection on images.
 
@@ -1195,7 +1195,7 @@ forlinx@forlinx-desktop:~/jetson-inference/build$ cd aarch64/bin/
 forlinx@forlinx-desktop:~/jetson-inference/build$ sudo ./detectnet /images/peds_0.jpg output_2.jpg
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722365532-8d545f9e-6548-4f8a-a23d-7dc3f7fd6726.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365532_8d545f9e_6548_4f8a_a23d_7dc3f7fd6726.jpg)
 
 Use SegNet to perform semantic segmentation on images.
 
@@ -1204,7 +1204,7 @@ forlinx@forlinx-desktop:~/jetson-inference/build$ cd aarch64/bin/
 forlinx@forlinx-desktop:~/jetson-inference/build$ sudo ./segnet /images/city_0.jpg output_3.jpg
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722365656-ffb38b70-e3cb-4aea-862d-dd0b8fd2264a.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365656_ffb38b70_e3cb_4aea_862d_dd0b8fd2264a.jpg)
 
 Insert the USB camera into the USB port of FCU3011 and execute the program. All of the above models are capable of performing camera data inference. 
 
@@ -1213,7 +1213,7 @@ forlinx@forlinx-desktop:~/jetson-inference/build$ cd aarch64/bin/
 forlinx@forlinx-desktop:~/jetson-inference/build$ sudo ./segnet /dev/video0
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722365781-c886c1dd-12b6-4eb9-80f0-c498466ce2ab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365781_c886c1dd_12b6_4eb9_80f0_c498466ce2ab.png)
 
 ### 4.6 TensorFlow
 
@@ -1272,7 +1272,7 @@ Enter exit() to exit the python3 command line.
 
 FCU3011 delivers excellent video encoding and decoding performance. Its feature parameters are listed in the table below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722365877-783acff7-b164-4b1c-a3f7-cd9e8130ef83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365877_783acff7_b164_4b1c_a3f7_cd9e8130ef83.png)
 
 Test materials are located at:
 
@@ -1509,7 +1509,7 @@ forlinx@forlinx-desktop:~$ date                                     # Read the c
 Sat Aug 14 20:37:17 CST 2021
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722365978-517aead7-f9ee-4231-bd5d-56181b23e5d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1787722365978_517aead7_f9ee_4231_bd5d_56181b23e5d0.png)
 
 Then power off and power on the board. After entering the system, read the system time, and you can see that the time is synchronized.
 
