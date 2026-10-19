@@ -114,7 +114,7 @@ This configuration method is suitable for scenarios without a monitor to perform
 
 Power on the device, and connect the OTG port to a Windows 10 computer via a micro USB cable. Open Device Manager and wait for the virtual serial port to be recognized. After the COM port (as shown in the figure below) appears in Device Manager, go to next step. The COM port number varies depending on the specific computer and port used.
 
-![Image](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_Forlinx22_04_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 Set up Putty to open the USB virtual serial port:
 
