@@ -170,7 +170,7 @@ The device features an M.2 Key-E drive slot and supports the NVMe protocol.
 
 Table 1 FCU3011 Development Board Overall Power Consumption
 
-| No.| Test Item| Development Board Power (including SoM) (W)|
+| No.| Test Item| Development Board Power<br />(including SoM) (W) |
 |----------|----------|----------|
 | 1| No-load startup peak power| 13.8|
 | 2| No-load standby power| 8.3|
