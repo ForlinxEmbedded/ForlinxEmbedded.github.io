@@ -49,6 +49,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   FCU3011_User_Hardware_Manual
+
 
 
 
