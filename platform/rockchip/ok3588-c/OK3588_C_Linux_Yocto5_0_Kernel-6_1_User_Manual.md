@@ -213,7 +213,7 @@ The following describes the serial login method using the PuTTY terminal softwar
 
 **Step 3:** After completing the above settings, you can enter the COM port used by your computer in the "Saved Sessions" field. The figure below uses COM24 as an example. Save the settings. When opening the serial port again later, you can directly click the saved port number.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/1775869085036_c87d748c_a581_4738_af6e_e99b3b0c3566_1780371428861.png)
+![image-20261020173104479](image-20261020173104479.png)
 
 **Step 4:** Turn on the power switch of the development board. The startup information shown below indicates a successful boot. Login and Password is forlinx.
 
@@ -3127,7 +3127,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 **14.3.2.2 Ethtool**
 
-The `ethtool` command is an essential tool in Linux systems for troubleshooting physical layer and driver-level issues. It provides more in-depth hardware-level information than the ifconfig command. It provides more in-depth hardware-level information than the `ifconfig`command.
+The `ethtool` command is an essential tool in Linux systems for troubleshooting physical layer and driver-level issues. It provides more in-depth hardware-level information than the `ifconfig`command.
 
 ```plain
 // Show the basic settings of eth0
@@ -4783,7 +4783,7 @@ Redistribute latency...
 0:00:06.7 / 99:99:99.
 ```
 
-**2.3.2.3 Capturing a Photo**
+**2.3.2.3 Camera Preview**
 
 ```plain
 forlinx@ok3588:~$ gst-launch-1.0 v4l2src device=/dev/video55 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
