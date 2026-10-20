@@ -213,7 +213,7 @@ The following describes the serial login method using the PuTTY terminal softwar
 
 **Step 3:** After completing the above settings, you can enter the COM port used by your computer in the "Saved Sessions" field. The figure below uses COM24 as an example. Save the settings. When opening the serial port again later, you can directly click the saved port number.
 
-![image-20261020173104479](image-20261020173104479.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3588-c/OK3588_C_Linux_Yocto5_0_Kernel-6_1_User_Manual/image_20261020173104479.png)
 
 **Step 4:** Turn on the power switch of the development board. The startup information shown below indicates a successful boot. Login and Password is forlinx.
 
