@@ -562,17 +562,11 @@ For full dimensional details, please refer to the DXF file in the user documenta
 
 The figure below illustrates the pin numbers of the footprint for the stamp hole connector on the carrier board.
 
-![](image.png)
-
-
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1774681002760-d6d30764-65ad-4999-9602-6d8d5ddb1843.png)
 
 The figure below shows the dimension drawing of the footprint for the stamp hole connector on the baseboard.
 
-
-
-![](image.png)
-
-
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/image-1792573853445.png)
 
 ## 5\. OK153-S Development Board Linux Consumption Table
 
@@ -722,7 +716,7 @@ For GPADC channels that are multiplexed with other IOs or TPADC, due to the SOC 
 
 To minimize the error caused by leakage current, the resistance value of the external voltage divider resistor (i.e. the output impedance of the measured voltage source) needs to be restricted. Its equivalent model is shown in the figure below, where the output impedance of the measured voltage source = (R1+R2)//R3.
 
-![img](20261021.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/20261021.png)
 
 These three types of GPADCs have different requirements for the output impedance of the measured voltage source, and the allowable GPADC sampling rate also needs to be adapted according to the error requirements. The specific restrictions are shown in the table below.
 
@@ -764,4 +758,4 @@ Restrictions for Category ③, High-impedance GPADC:
 - When using the resistance voltage divider method for voltage acquisition, the value of the external voltage divider resistor must meet the resistance requirements specified in the usage restriction table. The resistance value of the used voltage divider resistor should be as small as possible; otherwise, the sampling frequency cannot be increased, and the small current signal will be extremely sensitive to external interference, which will make the measurement result deviate from the expected value;
 - In scenarios where a larger voltage divider resistor must be used, the trace length from the voltage divider point to the SOC pin should be kept as short as possible. In addition, it is recommended to add a voltage follower to reduce the output impedance of the measured point and improve the current driving capability. The follower shall be placed close to the resistor voltage divider point, as shown in the figure below:
 
-![](20261022.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/20261022.png)
