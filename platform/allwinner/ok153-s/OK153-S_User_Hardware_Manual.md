@@ -1,4 +1,4 @@
-# OK153-S\_User's Hardware Manual\_V1.1
+# User's Hardware Manual\_V1.2
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -12,8 +12,9 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 |  **Date**  | **Version** | **SoM Version** | **Carrier Board Version** | **Revision History**                                         |
 | :--------: | :---------: | :-------------: | :-----------------------: | ------------------------------------------------------------ |
+| 03/07/2026 |    V1.2     |      V1.1       |      V1.2 and above       | 1. Added the description of IO domain pin muxing usage related to GPADC; <br />2. Added the precautions for Localbus interface design; <br />3. Added the precautions for using GPIO pins involving boot media, etc.; <br />4. Added the description of GPADC usage restrictions. |
+| 12/01/2026 |    V1.1     |      V1.1       |      V1.2 and above       | Updated “3.5.6 TF Card”: Fixed occasional abnormal TF card startup issues when booting from TF card with environment variables added. |
 | 24/09/2025 |    V1.0     |      V1.1       |      V1.1 and above       | Initial Version                                              |
-| 12/01/2026 |    V1.1     |      V1.1       |      V1.2 and above       | Updating “3.5.6 TF Card”: Fixing occasional abnormal TF card startup issues when booting from TF card with environment variables added. |
 
 ## Overview
 
@@ -553,15 +554,25 @@ Boot Measurement Process:
 
 If TPCM is not used, the development board can be configured via DIP switches to connect the SPI-NOR flash directly to the CPU and set it as a boot option.
 
-**\* It is currently not supported.**
+**Note: It is currently not supported.**
 
 ## 4\. Connector Specification Diagram
 
-For more detailed dimensions, please refer to the DXF files in the user documentation.
+For full dimensional details, please refer to the DXF file in the user documentation set. For special design requirements for the stencil layer, see the SoM Soldering Guideline in the user documentation.
 
-The following image shows the footprint diagram for the stamp hole connectors on the carrier board. For special design requirements regarding the stencil layer, please see the SoM Soldering Guide in the user documentation.
+The figure below illustrates the pin numbers of the footprint for the stamp hole connector on the carrier board.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1758704953691_bcd562c5_e163_42f8_9748_fa5c1bdf5b1a.png)
+![](image.png)
+
+
+
+The figure below shows the dimension drawing of the footprint for the stamp hole connector on the baseboard.
+
+
+
+![](image.png)
+
+
 
 ## 5\. OK153-S Development Board Linux Consumption Table
 
@@ -575,17 +586,11 @@ The following image shows the footprint diagram for the stamp hole connectors on
 
 **Note：**
 
-**1. Test conditions:** 
-
-**\- SoM Configuration: DDR (256 MB) + NAND (256 MB);**
-
-**\- 4G Module: Quectel EC20;** 
-
-**\- Display: Forlinx standard product (optional);**
-
-**\- Power Supply: SoM – 5 V, Development Board – 12 V;**
-
-**2. Power consumption is for reference only.**
+- **SoM Configuration: DDR (256 MB) + NAND (256 MB);**
+- **4G Module: Quectel EC20;** 
+- **Display: Forlinx standard product (optional);**
+- **Power Supply: SoM – 5 V, Development Board – 12 V;**
+- **Power consumption is for reference only.**
 
 ---
 
@@ -632,13 +637,13 @@ BOOT SEL is pulled up by default inside the CPU, and it is at high level when pi
 
 ### 7.2 GPADC and PA Notes
 
-GPADC supports a detection voltage range of 0–1.8 V.
-
-When PA4PA23 is used as GPIO, it supports 3.3 V IO level;                                                                         
-
-When PA0PA3 is used as GPIO, it only supports 1.8 V IO level and does not support 3.3 V.
-
-PA4 ~ PA23, it is not recommended to use some of them as GPADC, and some of them are multiplexed into high-speed signals. Only multiplexing into general GPIO is supported.
+- The detectable voltage range supported by GPADC is 0-1.8V;
+- Since PA0-PA3 are multiplexed for TPADC function, when used as general-purpose GPIO or LBUS interface pins, their maximum supported IO level is 1.8V, and 3.3V is not supported;
+- When the GPADC on PA ports are used in a mixed scenario with GPIO or digital interfaces, pay attention to the following points in application:
+  Prioritize connecting static non-changing signals such as EN (enable) and RST (reset), under this condition there are no restrictions on the corresponding application.
+  If level switching is required, prioritize configuring the pins as outputs. The signal frequency must be lower than the sampling frequency of the GPADC channel, and it is best not to be a periodic signal (any overlap between the signal frequency and the ADC sampling rate will affect ADC performance).
+  If level switching is required and periodic signals need to be connected, the signal frequency must be lower than the sampling frequency of the GPADC channel. The signal traces must be kept away from GPADC channel traces, ensure full ground shielding for the entire GPADC signal routing path, and ADC signals with low precision requirements can be arranged on PA ports.
+  It is recommended to give priority to using the GPADC2 channels of PA0-PA3. For example, if RGMII0 on PA ports is used to connect a Gigabit Ethernet port, it is advised to select the four channels of GPADC2 as the GPADC channels in this scenario.
 
 ### 7.3 TF-CARD Design Guide
 
@@ -654,13 +659,35 @@ When using an audio power amplifier chip, it is recommended to add a pull-down r
 
 ### 7.5 Local Bus Design Guide
 
-Command lines (e.g., BURST, WR, RD signals) and address/data lines (LD\[31:0]) should be length-matched with reference to the clock signal.
+- Command lines (e.g., BURST, WR, RD signals) and address/data lines (LD\[31:0]) should be length-matched with reference to the clock signal; for a 150 MHz design, length variation is recommended to be controlled within 300 mil, and must not exceed 500 mil;
 
-For a 150 MHz design, length variation is recommended to be controlled within 300 mil, and must not exceed 500 mil.
 
-Adhere to the 3W/2W rule. The number of vias on signal lines should be as consistent as possible.
+- Adhere to the 3W/2W rule. The number of vias on signal lines should be as consistent as possible;
 
-Ensure the reference plane is complete/unbroken.
+
+- Ensure the reference plane is complete/unbroken;
+
+- It supports 8/16/32-bit Localbus parallel interface, with both synchronous and asynchronous modes available.
+
+In synchronous mode, **LBUS-CLK, LBUS-ALE, LBUS-WR, and LBUS-OE** are mandatory signals and cannot be omitted.
+
+When operating in 16-bit mode, the LBUS-LD bus uses the lower 16 bits, i.e. LBUS-LD[15:0].
+When operating in 8-bit mode, the LBUS-LD bus uses the lower 8 bits, i.e. LBUS-LD[7:0].
+
+LBUS-CS is the chip select signal, direction: Host → Slave; LBUS-READY is the data valid signal, direction: Slave → Host. The two signals must be used in pair. If the host uses the CS0 signal to select the slave device, the slave must correspondingly use the READY0 signal to send the response signal to the host.
+
+LBUS-LBE is the data byte enable signal, with one LBE corresponding to every 8-bit data. For example, LBUS-LD[15:0] corresponds to LBE[1:0]; LBUS-LD[31:16] corresponds to LBE[3:2].
+
+LBUS-DP[3:0] is the data parity bus. Part of the signals can be trimmed according to the following parity modes:
+
+- For per-byte parity, 1 parity bit is output for every 8-bit data. The parity bit of LBUS-LD[7:0] is transmitted via LBUS-DP0, and the parity bit of LBUS-LD[15:8] is transmitted via LBUS-DP1.
+- For overall bus parity, only 1 parity bit is output, which means only LBUS-DP0 is required.
+
+LBUS-DE is the data enable signal, which indicates the start timing of the data phase. When LBUS-WR is 1, LBUS-DE indicates valid write data; when LBUS-WR is 0, LBUS-DE indicates valid read data.
+
+The Localbus interface is multiplexed across multiple GPIO bank groups at present. Pay special attention to verifying the voltage level compatibility of relevant GPIOs during application.
+
+If the Localbus interface is used to connect to an FPGA, note that LBUS-CLK shall be connected to the global clock input pin of the corresponding FPGA BANK.
 
 ### 7.6 Impedance Requirements for Selected Signals
 
@@ -679,3 +706,62 @@ Ensure the reference plane is complete/unbroken.
 | MIPI-CSI| Intra-pair \< 5 mil, Inter-pair ≤ 300 mil| ≥15mil| ≤2|
 | SDIO| D0~D3, CMD matched to CLK within ≤ 300 mil| ≥9mil| D0~D3 via count should be as consistent as possible|
 
+### 7.8 Notes on GPIO Usage Related to Boot Media
+
+The SDC0 interface mapped to pins PF0-PF5 and the SPI2 interface mapped to pins PE1-PE8 are boot media interfaces. These interfaces will poll boot media during power-up, and the IOs will output high-level signals in this process. It is not recommended to use these GPIOs as function indicators, speakers, or EN pins for display/peripheral power supply, to avoid functional failures or abnormality in the power-on/power-off sequence of subsequent stages.
+
+### 7.9 Description of GPADC Usage Restrictions
+
+For GPADC channels that are multiplexed with other IOs or TPADC, due to the SOC process characteristics, the internal leakage current will increase as the junction temperature rises. Therefore, restrictions must be applied to the usage of these GPADC channels.
+
+| **Category** | **Multiplexing Relationship**                                |
+| :----------: | :----------------------------------------------------------- |
+|     (1)      | Low-impedance GPADC, a total of 9 channels: GPADC0_0, GPADC0_[7:2], GPADC1_[5:4] |
+|     (2)      | Ultra-low-impedance GPADC, all channels of GPADC2            |
+|     (3)      | High-impedance GPADC, a total of 11 channels: GPADC0_1, GPADC0_[9:8], GPADC1_[9:0] |
+
+To minimize the error caused by leakage current, the resistance value of the external voltage divider resistor (i.e. the output impedance of the measured voltage source) needs to be restricted. Its equivalent model is shown in the figure below, where the output impedance of the measured voltage source = (R1+R2)//R3.
+
+![img](20261021.png)
+
+These three types of GPADCs have different requirements for the output impedance of the measured voltage source, and the allowable GPADC sampling rate also needs to be adapted according to the error requirements. The specific restrictions are shown in the table below.
+
+Restrictions for Category ①, Low-impedance GPADC:
+
+| **Error Requirement at Point A** | **Allowable Output Impedance of Measured Voltage Source** | **Allowable GPADC Sampling Rate** |
+| :------------------------------: | :-------------------------------------------------------: | :-------------------------------: |
+|              <70mV               |                           <66KΩ                           |             13K~120K              |
+|              <25mV               |                           <33KΩ                           |             120K~220K             |
+|              <15mV               |                           <6KΩ                            |             220K~650K             |
+|               <5mV               |                           <3KΩ                            |               850k                |
+
+Restrictions for Category ②, Ultra-low-impedance GPADC:
+
+| **Error Requirement at Point A** | **Allowable Output Impedance of Measured Voltage Source** | **Allowable GPADC Sampling Rate** |
+| :------------------------------: | :-------------------------------------------------------: | :-------------------------------: |
+|              <70mV               |                           <5KΩ                            |               650K                |
+|              <25mV               |                           <3KΩ                            |               850K                |
+|              <15mV               |                           <6KΩ                            |                1M                 |
+
+Restrictions for Category ③, High-impedance GPADC:
+
+|     **Sampling Rate**      |  **Allowable Output Impedance of Measured Voltage Source**   |
+| :------------------------: | :----------------------------------------------------------: |
+|    Sampling rate ≤8.8k     | ≤1MΩ (The output impedance must meet this requirement no matter how small the sampling rate is) |
+| 8.8k < Sampling rate ≤14k  |                            ≤660kΩ                            |
+|  14k < Sampling rate ≤40k  |                            ≤215kΩ                            |
+| 40k < Sampling rate ≤100k  |                            ≤82kΩ                             |
+| 100k < Sampling rate ≤400k |                            ≤15kΩ                             |
+| 400k < Sampling rate ≤500k |                            ≤11kΩ                             |
+| 500k < Sampling rate ≤600k |                             ≤8kΩ                             |
+| 600k < Sampling rate ≤700k |                            ≤5.8kΩ                            |
+| 600k < Sampling rate ≤800k |                            ≤4.3kΩ                            |
+| 800k < Sampling rate ≤900k |                            ≤2.9kΩ                            |
+|  900k < Sampling rate ≤1M  |                            ≤2.1kΩ                            |
+
+### Usage Recommendations:
+
+- When using the resistance voltage divider method for voltage acquisition, the value of the external voltage divider resistor must meet the resistance requirements specified in the usage restriction table. The resistance value of the used voltage divider resistor should be as small as possible; otherwise, the sampling frequency cannot be increased, and the small current signal will be extremely sensitive to external interference, which will make the measurement result deviate from the expected value;
+- In scenarios where a larger voltage divider resistor must be used, the trace length from the voltage divider point to the SOC pin should be kept as short as possible. In addition, it is recommended to add a voltage follower to reduce the output impedance of the measured point and improve the current driving capability. The follower shall be placed close to the resistor voltage divider point, as shown in the figure below:
+
+![](20261022.png)
