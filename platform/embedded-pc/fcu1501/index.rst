@@ -62,6 +62,8 @@ SOFTWARE
 
    FCU1501_User_Manual_Linux6_1_99
    FCU1501_User_Compilation_Manual_Linux6_1_99
+   FCU1501_User_Manual_FlBase22_04
+   FCU1501_User_Compilation_Manual_FlBase22_04
 
 
 
