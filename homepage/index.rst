@@ -384,6 +384,17 @@ Pin-to-Pin UP Series
 
    <div class="products-container">
 
+    <div class="product-card">
+     <a href="p2p/ok3576j-up5/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/p2p/OK3576J-UP5.webp" alt="OK3576J-UP5" class="product-image" />
+     </a>
+     <h3 class="product-title">OK3576J-UP5</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/fet3576j-up5-rockchip-rk3576-som-198.html" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="p2p/ok3576j-up5/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
    <div class="product-card">
      <a href="p2p/ok-mx9352-up4/index.html" target="_blank" rel="noopener noreferrer">
        <img src="_static/images/p2p/OK-MX9352-UP4.png" alt="OK-MX9352-UP4" class="product-image" />
