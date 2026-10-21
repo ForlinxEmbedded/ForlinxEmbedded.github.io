@@ -564,7 +564,7 @@ The figure below illustrates the pin numbers of the footprint for the stamp hole
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/1774681002760-d6d30764-65ad-4999-9602-6d8d5ddb1843.png)
 
-The figure below shows the dimension drawing of the footprint for the stamp hole connector on the baseboard.
+The figure below shows the dimension drawing of the footprint for the stamp hole connector on the carrier board.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/image-1792573853445.png)
 
