@@ -110,7 +110,7 @@ In addition to the above basic functions, the extended version of FCU1501 embedd
 
 The figure below shows the enclosure dimension drawing of FCU1501.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235311_e28381d3_c0d6_447b_9cb7_96ce09e88b1d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235311_e28381d3_c0d6_447b_9cb7_96ce09e88b1d.png)
 
 **Note: The overall dimensions are 187mm × 151.84mm × 45mm (Length × Width × Height), including the thickness of the antenna base and snap fits.**
 
@@ -122,15 +122,15 @@ The specific operations are as follows:
 
 DIN Rail Mounting: Use two M3×6 countersunk screws to secure the DIN rail.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235421_7d518b27_77b2_4ae0_a8e6_2aca9590521a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235421_7d518b27_77b2_4ae0_a8e6_2aca9590521a.png)
 
 Mounting Ear Installation: Use four M3×4 countersunk screws to secure the two mounting ears.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235503_66637b40_122d_4788_8ecc_50090f6c7b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235503_66637b40_122d_4788_8ecc_50090f6c7b7b.png)
 
 Front Mounting Ear Installation: Use four M3×4 countersunk screws to secure the two mounting ears.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235584_87cb2cb8_e8d3_4a18_93be_7f0af831ab2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235584_87cb2cb8_e8d3_4a18_93be_7f0af831ab2b.png)
 
 **Note: After the terminal blocks are inserted, they may interfere with fixing the mounting ears. Therefore, install the mounting ears first, and then connect the terminal blocks.**
 
@@ -142,7 +142,7 @@ The interface schematic of the FCU1501 embedded control unit is shown as follows
 
 Top Interface Diagram
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235668_ae91a95b_b68a_4b5f_a528_d705f2ad098c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235668_ae91a95b_b68a_4b5f_a528_d705f2ad098c.png)
 
 FCU1501 Top Interface Diagram
 
@@ -150,13 +150,13 @@ FCU1501 Top Interface Diagram
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235752_8b1fd0cb_bb5f_4eff_8aac_c5ff15bfa757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235752_8b1fd0cb_bb5f_4eff_8aac_c5ff15bfa757.png)
 
 9–36V wide-voltage output, with the output voltage the same as the input voltage; the default output is DC 12V；
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235832_53497b8a_9d72_4e59_86a7_f739cfd8ff8b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235832_53497b8a_9d72_4e59_86a7_f739cfd8ff8b.png)
 
 Bluetooth antenna position;
 
@@ -172,21 +172,21 @@ RESET button: Used for one-click reset of network parameters (customizable).
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715235929_596ff88e_2d86_4b54_a415_22dc2d1be585.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715235929_596ff88e_2d86_4b54_a415_22dc2d1be585.png)
 
 2 x D1, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236013_a1e62f34_0948_413c_9f42_f797062a7e58.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236013_a1e62f34_0948_413c_9f42_f797062a7e58.png)
 
 Front Interface Diagram
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236152_03c498ab_e69a_42b8_ab49_1cbce1d31160.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236152_03c498ab_e69a_42b8_ab49_1cbce1d31160.png)
 
 FCU1501 Front Interface Diagram (Basic Version)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236287_4f784df0_94ab_4d55_92d1_1be54b813e88.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236287_4f784df0_94ab_4d55_92d1_1be54b813e88.png)
 
 FCU1501 Front Interface Diagram（Extended Version）
 
@@ -196,65 +196,65 @@ FCU1501 Front Interface Diagram（Extended Version）
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236373_87937e93_4c7c_4b9a_8e1c_149adf101262.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236373_87937e93_4c7c_4b9a_8e1c_149adf101262.png)
 
 3 x DO, 3.81 mm pitch 
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236546_1410c252_7e12_44aa_86e3_8c759a1744ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236546_1410c252_7e12_44aa_86e3_8c759a1744ed.png)
 
 3 x DO, 3.81 mm pitch 
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236678_59b86b4c_35d5_4d29_be7c_2e26d01c585c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236678_59b86b4c_35d5_4d29_be7c_2e26d01c585c.png)
 
 1 x CAN, 3.81mm pitch;
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236816_8f917a35_8526_4693_b3ab_bddc8271023f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236816_8f917a35_8526_4693_b3ab_bddc8271023f.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715236930_0f2e6ae5_a614_4ae1_955a_f05432cb1b7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715236930_0f2e6ae5_a614_4ae1_955a_f05432cb1b7a.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237033_11bfcd84_984f_4852_819c_bbac32b6dac6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237033_11bfcd84_984f_4852_819c_bbac32b6dac6.png)
 
 LED indicator:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237107_fad91e57_bc32_4a3c_965c_63dc65f2b20a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237107_fad91e57_bc32_4a3c_965c_63dc65f2b20a.png)
 
 1 x CAN, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237197_7b7a97cc_595f_4c1c_b5c8_d096e01aeed0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237197_7b7a97cc_595f_4c1c_b5c8_d096e01aeed0.png)
 
 1 x multiplexed RS485/RS232, 3.81 mm pitch；
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237271_2ce9900e_3ca8_439d_aa7e_25951ba33223.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237271_2ce9900e_3ca8_439d_aa7e_25951ba33223.png)
 
 1 x multiplexed RS485/RS232, 3.81 mm pitch；
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237349_4d845bb3_4a80_4d29_986e_d3cc27a8990a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237349_4d845bb3_4a80_4d29_986e_d3cc27a8990a.png)
 
 2 x RS485, 3.81 mm pitch
 
 The terminal definitions are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237426_8f9be66c_ae0a_4d5d_8a86_92f237444100.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237426_8f9be66c_ae0a_4d5d_8a86_92f237444100.png)
 
 Type-C interface for DEBUG.
 
@@ -268,11 +268,11 @@ The factory default IP address is ETH0: 192.168.0.232; ETH1: 192.168.1.232;
 
 This product supports rated DC 12V input and features 9-36V wide-voltage input, with built-in reverse polarity protection. After the whole device is powered on, the power indicator light marked “POW” will be on.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237537_88a1d8c6_42de_4f8c_8daa_494890e681b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237537_88a1d8c6_42de_4f8c_8daa_494890e681b7.png)
 
 The external power supply provides 9~36V wide-voltage output, whose voltage remains consistent with the input voltage, with a default output of DC 12V. As shown in the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237615_4fffd8da_f234_4410_ba66_8b91b32b5785.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237615_4fffd8da_f234_4410_ba66_8b91b32b5785.png)
 
 ### 2.3 User Login
 
@@ -286,11 +286,11 @@ Default username: root; Password: no password.
 
 Open a terminal tool (taking MobaXterm as an example), configure it as follows and click Open:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237706_ea9ef972_2705_460c_958d_f7fe1d2136e0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237706_ea9ef972_2705_460c_958d_f7fe1d2136e0.png)
 
 Click “OK”. When logging in, enter the username (root) — there is no default password.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237901_1593a210_2a11_42b4_b188_f2298436ab69.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237901_1593a210_2a11_42b4_b188_f2298436ab69.png)
 
 #### 2.3.2 Debug Serial Port Login
 
@@ -298,7 +298,7 @@ To use this serial port for debugging, it is necessary to connect the TYPE-C int
 
 The location of the DEBUG debug serial port is shown in the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715237981_a6a15a71_7d32_4a32_aa84_1fcfd1da7223.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715237981_a6a15a71_7d32_4a32_aa84_1fcfd1da7223.png)
 
 #### 2.3.3 View System Logs
 
@@ -531,7 +531,7 @@ Mon Dec 12 17:24:39 UTC 2026
 
 The FCU1501 is equipped with 8 system indicator lights, which are the 4G network light, power (PWR) light, system error (ERR) light, system operation (RUN) light, and two user-defined indicator lights (D1 and D2), as shown in the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238091_d9138f9a_01be_4d02_8d1d_4afa1b3f2603.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238091_d9138f9a_01be_4d02_8d1d_4afa1b3f2603.png)
 
 The PWR (Power) indicator light serves as the power supply indicator for the system. It automatically turns on when power is supplied and turns off when power is cut.
 
@@ -576,7 +576,7 @@ root@FCU1501:/# systemctl unmask emergency.target      # Enable emergency mode
 
 RESET button: Used for one-click reset of network parameters, as shown in the red box in the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238171_f185bbf8_54cb_43ee_9049_a1f66f019d74.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238171_f185bbf8_54cb_43ee_9049_a1f66f019d74.png)
 
 The reset button can directly reset the connection parameters of the network node. Using the evtest tool, you can get detailed information on various event types, including those triggered by keyboard presses, generated by mouse movements, and caused by touch-screen interactions, all of which can be accurately captured and displayed. You can also trigger custom events according to their application requirements.
 
@@ -642,7 +642,7 @@ exit 0
 
 The serial port connection structure is shown in the red box in the diagram.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238274_d4339377_dbd3_4851_b5ad_8c21e6a0c620.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238274_d4339377_dbd3_4851_b5ad_8c21e6a0c620.png)
 
 #### 2.12.2 Correspondence Between Software and Hardware
 
@@ -663,7 +663,7 @@ This test method uses communication with a computer as an example. If you have a
 
 Connect the RS232 to RS485 module to the RS485\_2 interface of the FCU1501. The connection method is as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238371_e38c0997_8471_45df_8361_ce8c322a5de1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238371_e38c0997_8471_45df_8361_ce8c322a5de1.png)
 
 RS485\_2 will send a randomly generated test character stream to the PC at a baud rate of 115200. At the same time, manually send “Forlinx ok” from the PC terminal serial port assistant software to the FCU1501. Debug information is as follows:
 
@@ -675,7 +675,7 @@ root@FCU1501:~# rx_0: forlinxforlinxforlinxforlinxforl
 
 Serial port assistant software on the PC side: The data sent and received are as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238451_724f1d59_e139_42f2_91ba_0f26ff01d2be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238451_724f1d59_e139_42f2_91ba_0f26ff01d2be.png)
 
 In the FCU1501 serial port, enter the following command to perform the UART transmission test:
 
@@ -688,7 +688,7 @@ tx_0: KaLKchczYFbc21YbhV5xYf2SotoVobK8
 
 Check the received information on the PC side:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238613_f1e4eeee_aeca_4fc4_96c1_9715168e48c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238613_f1e4eeee_aeca_4fc4_96c1_9715168e48c2.png)
 
 ### 2.13 Ethernet Usage
 
@@ -709,7 +709,7 @@ Type "ping 192.168.1.232" in the Windows Command Prompt window.
 
 **Note: For Windows 10, right-click the Start icon and select “Command Prompt” from the pop-up menu to access the command window.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78_1791603202267.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1718850025209_a11e503d_f886_4c1c_8c6f_f5a54d47fb78_1791603202267.png)
 
 A successful ping connection between the PC and FCU1501, followed by a valid SSH login, verifies the normal operation of the network adapter.
 
@@ -880,7 +880,7 @@ The FCU1501 natively supports the Nginx web server. Nginx is a high-efficiency w
 
 The Nginx service is set to start automatically upon system boot. Enter the IP address of the FCU1501 in the IE browser to access the web pages hosted on the control unit’s web server. The figure below is a screenshot of the page displayed in the Edge browser.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715238940_c1db5fe6_d9b4_403e_bfe2_2de41a9d3c36.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715238940_c1db5fe6_d9b4_403e_bfe2_2de41a9d3c36.png)
 
 #### 2.13.5 Reverse Proxy Function
 
@@ -936,7 +936,7 @@ The system automatically starts the vsftpd service at boot, with its version bei
 
 Use the FileZilla software on your PC to connect to the FTP service of the FCU1501. Enter the FTP login credentials in the box shown below (the default password for the root user is root). The connection uses the ETH2 interface by default.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/image_20261009165437796.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/image_20261009165437796.png)
 
 Click “OK” on any pop-up prompt that appears during the process.
 
@@ -1085,7 +1085,7 @@ Mobile terminals such as smartphones can connect to the FCU1501’s AP hotspot v
 
 Prior to the Bluetooth test, connect the dedicated Bluetooth antenna as shown in the red-boxed wiring diagram.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239357_9b7e097a_cbe8_4c8a_a237_2209a18314bb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239357_9b7e097a_cbe8_4c8a_a237_2209a18314bb.png)
 
 The carrier board Wi-Fi/Bluetooth combo module integrates full Bluetooth functionality. This section demonstrates point-to-point data transmission between a smartphone and the FCU1501 over Bluetooth.
 
@@ -1110,7 +1110,7 @@ Changing discoverable on succeeded
 
 Enable Bluetooth on your smartphone and start a nearby device scan. A device named “FCU1501” (or “BlueZ 5.64”) will appear in the scan list, select it to start pairing.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239470_b7c9cee3_0ad5_45a1_9a8b_8cc0abcf4192.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239470_b7c9cee3_0ad5_45a1_9a8b_8cc0abcf4192.png)
 
 The terminal will output the following prompt message, enter yes to confirm.
 
@@ -1163,7 +1163,7 @@ Request confirmation
 
 After successful pairing, you can use the Bluetooth function on the smartphone to send files to the FCU1501.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239570_14968251_0daf_4ebb_9436_844742fb6f60.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239570_14968251_0daf_4ebb_9436_844742fb6f60.png)
 
 All received files are saved in the /tmp directory.
 
@@ -1182,7 +1182,7 @@ Connection successful
 [14:99:3E:03:1B:E4]# send /tmp/1773477298236.png	        //Send files
 ```
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239664_9193c701_2645_4c90_9717_d778386408a5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239664_9193c701_2645_4c90_9717_d778386408a5.png)
 
 Your mobile phone will receive a request to receive a file; tap “Accept” to transfer the file.
 
@@ -1190,9 +1190,9 @@ Your mobile phone will receive a request to receive a file; tap “Accept” to 
 
 The FCU1501 system supports 4G cellular networks. Actual 4G availability is subject to your specific purchase configuration. After power-on, the 4G module is powered on by default and its driver is preloaded. The positions of the external antenna interface and SIM card slot on the FCU1501 are shown in the following figure:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239770_c76198b5_fcc2_4e38_a071_18808c77d6ee.png)  
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239862_24fa63ab_acfb_4de7_bdf7_c6c3f8524194.png)  
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715239936_d3809c5e_de2d_45e3_8e22_7b1b8b1c8abb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239770_c76198b5_fcc2_4e38_a071_18808c77d6ee.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239862_24fa63ab_acfb_4de7_bdf7_c6c3f8524194.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715239936_d3809c5e_de2d_45e3_8e22_7b1b8b1c8abb.png)
 
 #### 2.16.1 4G Communication Test
 
@@ -1351,9 +1351,9 @@ It can be seen from the above that database creation, reading and writing work n
 
 #### 2.18.1 Interface Description
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240059_9d37de02_2559_4000_8b64_b7830bea918a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240059_9d37de02_2559_4000_8b64_b7830bea918a.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240132_42bac61c_8ade_4d90_97a3_eb52b0d19822.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240132_42bac61c_8ade_4d90_97a3_eb52b0d19822.png)
 
 #### 2.18.2 Correspondence Between Software and Hardware
 
@@ -1411,7 +1411,7 @@ FCU1501 provides two CAN interfaces, taking CAN2 as an example as shown below.
 
 | Schematic Diagram| Description|
 |----------|----------|
-| ![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240264_4c1f48c4_1b67_45f6_808e_ff8b1f5eb23f.png)|
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240264_4c1f48c4_1b67_45f6_808e_ff8b1f5eb23f.png)|
 
 #### 2.19.2 Correspondence Between Software and Hardware
 
@@ -1790,9 +1790,9 @@ root@FCU1501:/tmp# ls
 cron  cron.cnlByD  cron_test.log  dbus  dhcpd.leases  dhcpd.leases~  dnsmasq.leases  md5.txt  nginx
 ```
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240336_12e83c36_f910_4b8a_bc3d_4da4e8f83d2c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240336_12e83c36_f910_4b8a_bc3d_4da4e8f83d2c.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240416_c6422473_3af8_4497_8557_03a920efb47a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240416_c6422473_3af8_4497_8557_03a920efb47a.png)
 
 ### 2.36 Ntpdate
 
@@ -1866,35 +1866,35 @@ Software Materials\\3-Usage Tools\\System Update Tools\\SDDiskTool\_cn\_v1.74.ra
 
 Step 1: Unzip SDDiskTool\_cn\_v1.74.rar to any path without Chinese characters
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240499_f05003f1_808e_43fe_942a_7d3e423deb17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240499_f05003f1_808e_43fe_942a_7d3e423deb17.png)
 
 Step 2: Insert the USB drive or TF card via USB card reader into the computer’s USB port.
 
 **Note: The maximum capacity of the test U disk card is 32G. If the capacity is more than 32G, the burning may fail. It is recommended to use 16G.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240568_9b8e9699_9da9_40aa_be44_d75cbb7d7483.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240568_9b8e9699_9da9_40aa_be44_d75cbb7d7483.png)
 
 Step 3: Select the removable device to recognize the specified USB drive or card reader.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240657_d93f78cd_13e2_4724_846a_0fb1b71dd4cc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240657_d93f78cd_13e2_4724_846a_0fb1b71dd4cc.png)
 
 Select your target device and check the “Firmware Update” option.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240730_6de1aa09_beaa_4272_878d_490d753b0fdc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240730_6de1aa09_beaa_4272_878d_490d753b0fdc.png)
 
 Step 4: Select the firmware image.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240820_6f19d4de_2cd1_43c2_a9ae_663624809289.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240820_6f19d4de_2cd1_43c2_a9ae_663624809289.png)
 
 Select the path of the firmware image to be flashed.
 
 Step 5: Start creation.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715240991_2656f15d_c8e5_4f91_967f_f390e0fe2244.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715240991_2656f15d_c8e5_4f91_967f_f390e0fe2244.png)
 
 Select “Yes” and wait for the creation to complete.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241088_77aae687_ea5e_4f68_86d7_ecd8322fcff6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715241088_77aae687_ea5e_4f68_86d7_ecd8322fcff6.png)
 
 Click “OK”.
 
@@ -1963,11 +1963,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe program.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241202_d01c103d_2a17_474d_95b0_886d424ee4f0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715241202_d01c103d_2a17_474d_95b0_886d424ee4f0.png)
 
 Click Install Driver.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241281_ee7515d6_aad2_49d2_9079_ccda0009826f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715241281_ee7515d6_aad2_49d2_9079_ccda0009826f.png)
 
 #### 3.2.2 Complete OTG Flashing
 
@@ -1981,15 +1981,15 @@ This is a development tool provided by Rockchip. Before use, extract it to a ful
 
 Open the Rockchip development tool:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241455_e2916dc5_bd90_451d_adc4_faccce777b75.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715241455_e2916dc5_bd90_451d_adc4_faccce777b75.png)
 
 Select the path where the specified flashing firmware image is stored.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241538_fee46392_7766_490c_a163_d0208fbac834.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715241538_fee46392_7766_490c_a163_d0208fbac834.png)
 
 Press and hold the BOOT button while powering on the device, release the button once the MASKROM device is detected, then select the Upgrade option to start flashing, and wait for the firmware download to complete successfully.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/FCU1501_User_Manual_FlBase22_04/1787715241620_f65691a6_d743_4aad_94df_5e001da9d671.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1501/FCU1501_User_Manual_FlBase22_04/1787715241620_f65691a6_d743_4aad_94df_5e001da9d671.png)
 
 **Note: Don't click "Device Partition Table" in maskrom mode, it is invalid.**
 
