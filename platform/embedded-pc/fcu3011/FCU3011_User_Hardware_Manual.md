@@ -16,7 +16,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 The FCU3011 embedded control unit is designed based on NVIDIA’s Jetson Orin Nano module, with a maximum main frequency of 1.5GHz, and supports a computing power of up to 40TOPS (for the 8GB version). It is equipped with rich peripheral interfaces including 5G mobile network, Gigabit Ethernet, USB3.0, CAN, RS485, DI, DO, etc., and supports the Ubuntu operating system.
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722374443-2399a99b-8517-413a-a7f2-c38f7952b346.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374443_2399a99b_8517_413a_a7f2_c38f7952b346.jpg)
 
 **Product Features:**
 
@@ -48,9 +48,9 @@ Edge AI computing gateways, smart IoT, smart cities, industrial automation, vide
 
 ### 1.3 Interface Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722374554-886b6477-122b-4008-a8a2-f97f31f7e243.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374554_886b6477_122b_4008_a8a2_f97f31f7e243.jpg)
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/45205328/1787722374668-ae2547d1-f633-45bc-b92b-502200cf89e3.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374668_ae2547d1_f633_45bc_b92b_502200cf89e3.jpg)
 
 ### 1.4 Software Parameter
 
@@ -91,7 +91,7 @@ This section primarily explains how to use the FCU3011 peripheral interfaces.
 - **Currently, USB flash drive testing supports up to 128 GB. Capacities exceeding 128 GB are not tested;**
 - **The mount directory for USB flash drives is /media/"username"/.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722374782-52a079bb-0033-4fc3-9614-914add8528b1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374782_52a079bb_0033_4fc3_9614_914add8528b1.png)
 
 The FCU3011 is equipped with four USB HOST interfaces, as indicated by the red box. The two blue interfaces are USB 3.0 ports, and the white ones are USB 2.0 ports. Any of the interfaces can be selected for testing. When a USB flash drive is inserted, the system’s file browser will automatically display the contents of the drive.
 
@@ -104,7 +104,7 @@ The FCU3011 integrates a 5-port network switch internally, with four Gigabit Eth
 - **The examples in this section are tested under Forlinx Embedded’s internal network environment. Since actual network conditions may vary in deployment, perform configurations according to the specific on-site network environment;**
 - **The network interface name of the FCU3011 is eth0, and there is no default IP address upon first startup.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722374875-fd1a0022-2d26-4acb-84ea-0c25f99b6b34.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374875_fd1a0022_2d26_4acb_84ea_0c25f99b6b34.png)
 
 ### 2.3 4G/5G
 
@@ -112,13 +112,13 @@ The FCU3011 integrates a 5-port network switch internally, with four Gigabit Eth
 
 Ensure that the 4G/5G module is installed inside the FCU3011, the 4G/5G antenna is connected, and a SIM card is inserted. The position of the SIM card holder is indicated by the red box in the figure.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722374971-2cdda1f5-1c23-42c5-b9f0-a9d05fc25472.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722374971_2cdda1f5_1c23_42c5_b9f0_a9d05fc25472.png)
 
 ### 2.4 RS485
 
 The RS485 interface is located in the position marked by the red box in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375060-dc06f037-0aa6-4b35-b79c-387b61254ac9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375060_dc06f037_0aa6_4b35_b79c_387b61254ac9.png)
 
 Connect to the peer device according to the labeled A and B pins.
 
@@ -128,13 +128,13 @@ This interface corresponds to the device /dev/ttyTHS0 in the system. If RS485 is
 
 The FCU3011 has one CAN bus channel. Connect to the peer device following the corresponding L (Low) and H (High) pins. The interface position is shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375146-0b80f13d-ca5b-4348-b66d-581160b334e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375146_0b80f13d_ca5b_4348_b66d_581160b334e9.png)
 
 ### 2.6 HDMI
 
 The HDMI interface is shown in the red box in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375230-0095398b-b0c7-4c97-9e55-70f3bc182181.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375230_0095398b_b0c7_4c97_9e55_70f3bc182181.png)
 
 HDMI supports adaptive resolution, with a maximum resolution of 4K.
 
@@ -142,19 +142,19 @@ HDMI supports adaptive resolution, with a maximum resolution of 4K.
 
 The FCU3011 has only one user-controllable LED, whose position is shown in the figure.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375324-2fb5cb7f-ab84-4e11-93b0-ec9c43ca2da0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375324_2fb5cb7f_ab84_4e11_93b0_ec9c43ca2da0.png)
 
 ### 2.8 DI
 
 The FCU3011 has two sets of digital inputs, IN1 and IN2, with a common terminal IGND. As shown in the figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375425-5c7b0352-636e-4a87-a82b-6774bac076ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375425_5c7b0352_636e_4a87_a82b_6774bac076ee.png)
 
 ### 2.9 DO
 
 The FCU3011 has two sets of digital outputs, respectively DO1 and DO2
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787722375503-b582d03f-481c-4164-84fd-2a194337d1ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3011/FCU3011_User_Hardware_Manual/1787722375503_b582d03f_481c_4164_84fd_2a194337d1ca.png)
 
 DO1 has two pins: A-1 and A-2.
 
