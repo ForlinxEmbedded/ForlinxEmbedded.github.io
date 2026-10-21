@@ -566,7 +566,7 @@ The figure below illustrates the pin numbers of the footprint for the stamp hole
 
 The figure below shows the dimension drawing of the footprint for the stamp hole connector on the baseboard.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/image-1792573853445.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok153-s/OK153-S_User_Hardware_Manual/image_1792573853445.png)
 
 ## 5\. OK153-S Development Board Linux Consumption Table
 
