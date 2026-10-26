@@ -72,17 +72,17 @@ Target Applications:
 
 **RK3576 Block Diagram**
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535903750-ded114e7-1c78-46be-9001-4d37cf04010f.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535903750_ded114e7_1c78_46be_9001_4d37cf04010f.png)
 
 # 2. FET3576-UP5 SoM Description
 
 ## 2.1 FET3576-UP5 Appearance Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535905428-84608c59-0b12-43d9-8381-2b91b21f222c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905428_84608c59_0b12_43d9_8381_2b91b21f222c.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535905584-2a433531-45f5-4bfd-a7e1-19ae91d9f232.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905584_2a433531_45f5_4bfd_a7e1_19ae91d9f232.png)
 
 **Back**
 
@@ -90,7 +90,7 @@ Target Applications:
 
 FET3576-UP5 SoM Dimension Diagram：
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535905683-d775d8b9-3a77-4f90-a6d1-f7f8e05c6dd6.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905683_d775d8b9_3a77_4f90_a6d1_f7f8e05c6dd6.png)
 
 Unit: mm
 
@@ -221,13 +221,13 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 ### 2.5.1 FET3576x-UP5 SoM Pin Schematic
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535905796-2e5c8e00-125d-487f-a128-cf70338ef97f.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905796_2e5c8e00_125d_487f_a128_cf70338ef97f.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535905903-78af8972-e66e-4c4e-bedd-e3753ece4a4b.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905903_78af8972_e66e_4c4e_bedd_e3753ece4a4b.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535906099-3929f8dd-6b15-4542-a382-eb45c4c97db7.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535906099_3929f8dd_6b15_4542_a382_eb45c4c97db7.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535906216-e63779e8-583b-4078-b776-363c7db2d885.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535906216_e63779e8_583b_4078_b776_363c7db2d885.png)
 
 ### 2.5.2 FET3576-UP5 SoM Pin Function Description
 
@@ -734,7 +734,7 @@ SDIO_B
 
 The FET3576x-UP5 SoM integrates power, reset monitoring, and storage circuits, requiring only minimal external circuitry. A complete minimum system can be powered and run with a single 12V supply.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535906358-d50bb43a-17ce-4f64-b790-a38e79e83ccc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535906358_d50bb43a_17ce_4f64_b790_a38e79e83ccc.png)
 
 Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is recommended to connect some external devices—such as a debugging serial port and a port for flashing images—in addition to the minimal system. Otherwise, you can not check whether the system has booted. After completing these steps, you can then add the required functions based on the SoM's default interface definition provided by Forlinx.
 
@@ -746,15 +746,15 @@ For the design of the SoM's peripheral circuits, please refer to Section 3.5, "O
 
 Connection: LGA soldered
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535909731-f44b8bf5-fc82-4d44-85eb-38d4354f307c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535909731_f44b8bf5_fc82_4d44_85eb_38d4354f307c.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535909895-7898b8de-f6ce-47e2-a5ee-fe04866eac17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535909895_7898b8de_f6ce_47e2_a5ee_fe04866eac17.png)
 
 ## 3.2 OK3576-UP5 Development Board Dimension Diagram
 
 OK3576-UP5 Development Board Dimension Diagram：
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535910028-ce01c4ae-2d6e-4441-8ac1-2a7f06f30ace.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910028_ce01c4ae_2d6e_4441_8ac1_2a7f06f30ace.png)
 
 Carrier Board PCB Size: 130mm × 190mm, for more detailed dimensions, please refer to the user information DXF document;
 
@@ -766,7 +766,7 @@ Power Voltage: DC 12V
 
 The OK3576x-UP5 carrier board is equipped with two mounting holes for heat sinks (3.2 mm in diameter). You may choose to install a heat sink according to the on-site environment. Please add a insulating thermal pad between the contact surface of the heat sink and the SoM. Recommended heat sink: 39mm × 39mm × 23mm. See below for details.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535910146-ca25457b-cb71-423e-8d60-0ccc47a55801.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910146_ca25457b_cb71_423e_8d60_0ccc47a55801.png)
 
 ## 3.3 Naming Rules
 
@@ -828,27 +828,27 @@ It uses a 12V power adapter for the power supply, and the power connector is a D
 
 VCC12V_DCIN supplies power to both the FET3576 SoM and other peripherals on the carrier board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535910262-142ac4e9-da69-4518-9fc2-5b54c6f46342.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910262_142ac4e9_da69_4518_9fc2_5b54c6f46342.png)
 
 VCC12V_DCIN is stepped down to VCC_5V via U62 (DC-DC converter). VCC_5V powers other peripherals on the carrier board. (Note: When selecting the 12V-to-5V DC-DC chip, ensure its output power is sufficiently high. It is recommended to support an output current of 6A or above to guarantee adequate current supply for downstream stages.)
 
-After the SoM is powered on normally by 12V, it outputs a high level via the EXTP_EN pin to control U62 and enable the output of VCC_5V to power some peripherals on the development board. (This signal operates at 3.3V with 1K pull-up driving capability. If the driving capacity required by the enable pin of the enabled device exceeds this range, a buffer or gate circuit shall be added to boost the driving capacity, so as to ensure the normal power-on of both the SoM and the carrier board.)![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535910418-6ffe6211-8baa-4d10-b704-741c9c4e938f.bmp)
+After the SoM is powered on normally by 12V, it outputs a high level via the EXTP_EN pin to control U62 and enable the output of VCC_5V to power some peripherals on the development board. (This signal operates at 3.3V with 1K pull-up driving capability. If the driving capacity required by the enable pin of the enabled device exceeds this range, a buffer or gate circuit shall be added to boost the driving capacity, so as to ensure the normal power-on of both the SoM and the carrier board.)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910418_6ffe6211_8baa_4d10_b704_741c9c4e938f.png)
 
 U39 outputs VCC_5V_USB as a dedicated USB power rail to supply the USB interfaces and HUB.
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535910707-c88f9bde-b68e-4977-ac59-fa5baeb66304.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910707_c88f9bde_b68e_4977_ac59_fa5baeb66304.png)
 
 VCC_5V is further stepped down to VCC_3V3 via U40 (DC-DC converter). VCC_3V3 powers some devices on the SoM.  
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535910830-b58c3a10-b8fb-465a-86a1-5671cf25a818.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910830_b58c3a10_b8fb_465a_86a1_5671cf25a818.png)
 
 VCC_3V3 is stepped down to VCC_1V8 through U41, U65, and U66 (LDOs). VCC_1V8 powers some devices on the development board.  
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535910921-bdf0b848-2d11-4af5-b5a9-59c4004d3c32.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910921_bdf0b848_2d11_4af5_b5a9_59c4004d3c32.png)
 
 VCC12V_DCIN is stepped down to VCC5V_S via U42 (DC‑DC). VCC5V_S supplies the carrier board display interface.
 
 After the SoM starts up normally from the 12V supply, it outputs a high level through the STANDBY pin to control U42 and enable the output of VCC5V_S to power some peripherals on the development board. (This signal is at 3.3 V and is a “standby‑keep‑alive” pin, which allows the carrier boaard display interface to remain powered even when the SoM enters sleep mode.)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911059-34fa0e05-494e-4d2b-995b-7b5f0db1a0c7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911059_34fa0e05_494e_4d2b_995b_7b5f0db1a0c7.png)
 
 <font color="black">**Note:**</font>
 
@@ -859,11 +859,11 @@ After the SoM starts up normally from the 12V supply, it outputs a high level th
 
 nRESET is the SoM reset‑signal input. For debugging convenience, it is connected to a physical button.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916834-eef16a30-f04b-46cf-871b-6cc138e3607a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916834_eef16a30_f04b_46cf_871b_6cc138e3607a.png)
 
 PWRON_L serves as the power-on/power-off signal input for the SoM; for ease of debugging, it is connected to a pushbutton.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916953-91e7a947-e78c-4bc0-bc01-65e20e90259e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916953_91e7a947_e78c_4bc0_bc01_65e20e90259e.png)
 
 <font color="black">**Note: To facilitate reset and power-on/off operations, it is recommended that these two buttons be routed out on the design of the carrier board.**</font>
 
@@ -900,11 +900,11 @@ Table 3.5.3.1 Boot Sequence Configuration
 
 The FORCE_USBLOAD setting on the SoM is set with a 10K pull-up resistor, which means the SoM boots from the eMMC by default. A pull‑down resistor can be added on the carrier baord to implement other boot sequences. According to the Config1 settings, the OK3576-UP5 device connects the FORCE_USBLOAD to GND by pressing the button to enter Maskrom mode. 
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535917065-47c201a8-0175-4116-8868-f6b641afddea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535917065_47c201a8_0175_4116_8868_f6b641afddea.png)
 
 The LRADC is utilized to enter Recovery mode by shorting KEY1 to ground, while the SoM pulls it up to the 1.8 V supply using a 10 K resistor. On the OK3576-UP5, the key array operates in a parallel configuration. The input key values can be adjusted by changing the number of keys and modifying the proportions of the divider resistances. This allows for multi-key input to meet specific customer product requirements, as illustrated in the following figure.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911160-c874d16a-ef59-4bd1-8a3e-99af804da8af.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911160_c874d16a_ef59_4bd1_8a3e_99af804da8af.png)
 
 <font color="black">**Note:**</font>
 
@@ -920,7 +920,7 @@ SDMMC0_DET_L (Pin No. 86, Default Function: SDMMC_DET)
 
 It determines the function assignment of IOs in the VCCIO1 power domain, which can be configured as either SDMMC0 peripheral or JTAG debug peripheral.
 
-The JTAG function and SDMMC0 function of FET3576 are hardware-bound pin multiplexing pairs, and the function switching is completed by configuring the IOMUX (IO Multiplexer) via the SDMMC0_DET_L pin. Therefore, this pin must be pre-configured before power-up. Failure to meet the configuration timing requirement will directly result in no valid output from the JTAG interface, blocking debug operations during the chip boot phase. It will also cause abnormal SDMMC0 interface behavior, breaking the normal flow of the SDMMC0 boot functionality.![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199746968-31a0ba65-3cf8-430b-9802-8456f1540d06.png)
+The JTAG function and SDMMC0 function of FET3576 are hardware-bound pin multiplexing pairs, and the function switching is completed by configuring the IOMUX (IO Multiplexer) via the SDMMC0_DET_L pin. Therefore, this pin must be pre-configured before power-up. Failure to meet the configuration timing requirement will directly result in no valid output from the JTAG interface, blocking debug operations during the chip boot phase. It will also cause abnormal SDMMC0 interface behavior, breaking the normal flow of the SDMMC0 boot functionality.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199746968_31a0ba65_3cf8_430b_9802_8456f1540d06.png)
 
 - If this pin is detected as high, the corresponding I/O pin switches to JTAG mode;
 
@@ -950,19 +950,19 @@ Table 3.5.5.1 FET3576 JTAG Debug Interface Signals
 | JTAG_TMS_M0/M1| SWD Mode Data Input/Output|
 
 The RK3576 has two JTAG multiplexes: JTAG_TCK_M0/JTAG_TMS_M0 is located in the VCCIO1 domain and is multiplexed with SDMMC0 via the IOMUX; JTAG_TCK_M1/JTAG_TMS_M1 is located in the PMUIO1 domain and is multiplexed with UART_Debug—UART0_M0. The IOMUX multiplexing configuration is shown in the figure below.  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199747347-cfe2f817-3baa-4f5a-a336-290e0a729450.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199747347_cfe2f817_3baa_4f5a_a336_290e0a729450.png)
 
 The default UART debug settings for the FET3576 are UART_DEBUG_A_TX (80) and UART_DEBUG_A_RX (79). If the UART Debug signal is brought out via a plug-in connector, a series 100ohm resistor should be added, and a TVS diode should be placed near the connector.
 
 OK3576-UP5 development board uses a USB-to-UART chip to convert the UART Debug signal into a USB signal for user-friendly debugging, which is then routed out through a Type-C socket. You can connect OK3576-UP5's P4 to a PC with a USB Type-A to USB Type-C cable and install the XR21V1414 driver. The schematic is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911359-03fc1c8a-c174-4829-b4f0-f6f01d36d79e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911359_03fc1c8a_c174_4829_b4f0_f6f01d36d79e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911442-caf976c8-7307-44f6-974b-e3285f143a41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911442_caf976c8_7307_44f6_974b_e3285f143a41.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911541-d174d81f-8c76-4e8b-97be-c221335bc05f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911541_d174d81f_8c76_4e8b_97be_c221335bc05f.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911647-6ccefd66-54e1-4f69-b09c-c7f9e356fdee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911647_6ccefd66_54e1_4f69_b09c_c7f9e356fdee.png)
 
 <font color="black">**Note:**</font>
 
@@ -974,19 +974,19 @@ OK3576-UP5 development board uses a USB-to-UART chip to convert the UART Debug s
 
 To expose richer interfaces, the enable and reset signals on the carrier board are implemented by an I2C-to-IO converter chip U3, as shown in the schematic below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911734-434522b4-635e-4fce-bc46-5cabcc821d32.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911734_434522b4_635e_4fce_bc46_5cabcc821d32.png)
 
 ### 3.5.7 SARADC Interface
 
 OK3576-UP5 routes SARADC_VIN4/VIN5/VIN6 via P2; R13 is a variable resistor. By short-circuiting SARADC_VIN4/VIN5/VIN6 to pins 3, 5 and 6 of P2, the voltage changes can be read via the ADC whilst adjusting the resistance value of the R371 variable resistor. As shown in the figure below：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535911814-262c63b3-ad3e-4037-8ab1-4d40f6a91d53.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911814_262c63b3_ad3e_4037_8ab1_4d40f6a91d53.png)
 
 ### 3.5.8 TF Card
 
 The P5 is the TF Card interface that supports system boot and programming. The power for the TF card is supplied by the SoM.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912020-b35070e6-c46f-4075-8dd4-ca8d131c8d46.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912020_b35070e6_c46f_4075_8dd4_ca8d131c8d46.png)
 
 <font color="black">**Note:**</font>
 
@@ -1002,19 +1002,19 @@ The P5 is the TF Card interface that supports system boot and programming. The p
 
 The OK3576-UP5 features an on-board external RTC function to enable more accurate timing and lower power consumption. The schematic diagram is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912127-175fe759-a191-4e8c-b91e-708896ac4c48.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912127_175fe759_a191_4e8c_b91e_708896ac4c48.png)
 
 ### 3.5.10 Ethernet Circuit
 
 It supports 1000/100/10M adaptive network port, led out via RJ45.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912224-52716792-c956-46a7-b3e1-bb5e589ed258.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912224_52716792_c956_46a7_b3e1_bb5e589ed258.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912315-a5c135ea-1e44-49da-87b1-6f1f68f363f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912315_a5c135ea_1e44_49da_87b1_6f1f68f363f6.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912395-5e0934cd-f7a4-4d1a-958d-bcc7b8788f14.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912395_5e0934cd_f7a4_4d1a_958d_bcc7b8788f14.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912485-15547652-e3f5-4604-97b5-32d197656da0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912485_15547652_e3f5_4604_97b5_32d197656da0.png)
 
 <font color="black">**Note：**</font>
 
@@ -1048,7 +1048,7 @@ Bus ESD protection capability up to 15 kV (HBM).
 
 Transient immunity > 25 kV/µs. Meanwhile, the OK3576-UP5 carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912571-55b88cff-f9d2-4d1c-beb6-d39f7d6dac19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912571_55b88cff_f9d2_4d1c_beb6_d39f7d6dac19.png)
 
 ### 3.5.12 CAN Interface
 
@@ -1060,17 +1060,17 @@ The FET3576-UP5 SoM supports up to 2 x CAN, namely CAN0 and CAN1:
 
 The OK3576-UP5 development board supports two CAN interfaces utilizing isolated CAN transceivers. The isolation withstand voltage is as high as 5000VDC, with bus electrostatic discharge protection capability reaching 15kV (HBM) and a transient immunity of >25kV/μs. Meanwhile, the OK357-UP5 carrier board is compatible with a higher level of surge pulse group multi-level protection circuit, as shown in the following figure:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912689-1fdbc223-b6db-4903-b7f9-4e37bcf122e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912689_1fdbc223_b6db_4903_b7f9_4e37bcf122e9.png)
 
 ### 3.5.13 Audio
 
-The OK3576-UP5 features an on-board I2S-interface Codec chip U43, supporting MIC input, headphone output, and 1W 8Ω speaker output. As shown in the figure below:![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912787-eb3744c7-f500-46b5-a68b-fd3e943a2f58.png)
+The OK3576-UP5 features an on-board I2S-interface Codec chip U43, supporting MIC input, headphone output, and 1W 8Ω speaker output. As shown in the figure below:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912787_eb3744c7_f500_46b5_a68b_fd3e943a2f58.png)
 
 ### 3.5.14 4G&5G Interface
 
 The OK3576-UP5 integrates an M.2 Key-B interface, compatible with 4G and 5G modules. Since 4G and 5G modules operate at different supply voltages, the switch S2 must be toggled to select the corresponding power supply voltage.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535912899-5ba1d6e7-ea4f-4ed2-8c61-327c2c76a15e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912899_5ba1d6e7_ea4f_4ed2_8c61_327c2c76a15e.png)
 
 ### 3.5.15 USB2.0/USB3.0_A/Type-C USB3.0 Circuit
 
@@ -1078,17 +1078,17 @@ The RK3576 chip integrates two USB3 OTG controllers. Both USB3 controllers embed
 
 **The USB 3.0 OTG 0/DP 1.4 interface is used as follows:**
 
-A USB 3.2 Gen 1 x1 OTG0/DP 1.4 combo PHY; the internal multiplexing diagram for the USB 3 OTG0 controller and the PHY is shown below:![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199749403-c919cbe6-c1e1-4069-9b1b-967b039ca5e8.png)
+A USB 3.2 Gen 1 x1 OTG0/DP 1.4 combo PHY; the internal multiplexing diagram for the USB 3 OTG0 controller and the PHY is shown below:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199749403_c919cbe6_c1e1_4069_9b1b_967b039ca5e8.png)
 
 The USB 3.0 OTG controller supports SS, HS, FS and LS modes. The embedded USB 2.0 (HS, FS and LS) signals utilise a USB 2.0 OTG PHY; the signal names are shown within the red boxes in the figure below. The RK3576 uses this interface by default for Fireware downloads; please ensure that this interface is reserved for this purpose in your application.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535913030-04d46872-10f6-4c16-85dd-47d9656daa7a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913030_04d46872_10f6_4c16_85dd_47d9656daa7a.png)
 
 <font color="black">**Note: USB2_OTG0_DP/USB2_OTG0_DM supports firmware download. If the product does not utilise this interface, it must be left accessible during debugging and production. Please note: USB2_OTG0_VBUSDET must also be connected!**</font>
 
 The USB 3.2 SS signals (5 Gbps) are multiplexed with DP1.4, utilizing a USB/DP Combo PHY. The signals are indicated within the red boxes in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535913125-41947d33-49cc-414e-9d3b-8c40e18dcccf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913125_41947d33_49cc_414e_9d3b_8c40e18dcccf.png)
 
 Since the USB3 OTG and USB2.0 OTG share the same USB3 controller, the USB3 and USB2.0 OTG functions can only operate simultaneously as either Device or Host. It is not possible for the USB3 OTG to act as a Host while the USB2.0 OTG acts as a Device, or vice versa.
 
@@ -1096,31 +1096,31 @@ The USB3 OTG0 Controller and DP1.4 Controller are combined into a complete Type-
 
 This USB3/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard Type-C port can be configured in the following five ways:
 
-Configuration 1: Type-C 4-Lane (with DP function)![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750214-784ef4f2-cd92-48f7-a2f7-6fb9d1ade09a.png)
+Configuration 1: Type-C 4-Lane (with DP function)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750214_784ef4f2_cd92_48f7_a2f7_6fb9d1ade09a.png)
 
 Configuration 2: USB2.0 OTG+DP1.4 4Lane(Swap OFF)  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750576-7b815bee-410a-4b1a-a090-70399bdf21e3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750576_7b815bee_410a_4b1a_a090_70399bdf21e3.png)
 
 Configuration 3: USB2.0 OTG+DP1.4 4Lane(Swap ON)  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199750805-b58f70e5-7c73-4601-aabe-543b544778d8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750805_b58f70e5_7c73_4601_aabe_543b544778d8.png)
 
 Configuration 4: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap OFF)  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751194-8ade452f-cd52-4726-b814-44611043dd94.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751194_8ade452f_cd52_4726_b814_44611043dd94.png)
 
 Configuration 5: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751492-e286b0e5-02c1-4e07-adc6-c020d9e6df67.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751492_e286b0e5_02c1_4e07_adc6_c020d9e6df67.png)
 
 <font color="black">**Note: The RK3576 supports firmware download via the USB3_OTG0_SSRX1P/N and USB3_OTG0_SSTX1P/N signals from the USB 3.2 Gen1x1 OTG0 interface. To support USB3.0 firmware upgrade and also require 2-Lane DP support, the USB3.2 Gen1x1 OTG0 + DP 2Lane (Swap ON) configuration must be used.**</font>
 
 <font color="black">**The USB3 OTG1 interface is used as follows:**</font>
 
-The PCIe1 / SATA1 / USB3 OTG1 form a Combo PHY1. The internal multiplexing diagram between the USB3 OTG1 controller and the PHY is as shown below:![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199751928-51d12731-e560-4d7b-a52a-c681951a05e9.png)
+The PCIe1 / SATA1 / USB3 OTG1 form a Combo PHY1. The internal multiplexing diagram between the USB3 OTG1 controller and the PHY is as shown below:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751928_51d12731_e560_4d7b_a52a_c681951a05e9.png)
 
 The USB3 OTG1 controller supports SS/HS/FS/LS. The embedded USB2.0 (HS/FS/LS) signals constitute the PCIe1/SATA1/USB3 OTG1 COMBO PHY1. The pin distribution is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535913212-185ac645-d622-413c-924e-b824080d8780.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913212_185ac645_d622_413c_924e_b824080d8780.png)
 
-The pin assignment for the USB20 OTG1 is shown in the figure below (the FET3576-UP5 supports HOST functionality only):![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535913307-1ca7f430-779c-4fed-85e5-4f13a06dc995.png)
+The pin assignment for the USB20 OTG1 is shown in the figure below (the FET3576-UP5 supports HOST functionality only):![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913307_1ca7f430_779c_4fed_85e5_4f13a06dc995.png)
 
 Since the USB3 OTG1 and USB2.0 OTG1 share the same USB3 controller, the USB3 and USB2.0 OTG1 functions can only operate simultaneously as either Device or Host. It is not possible for the USB3 OTG to act as a Host while the USB2.0 OTG acts as a Device, or vice versa.
 
@@ -1129,12 +1129,12 @@ Since the USB3 OTG1 and USB2.0 OTG1 share the same USB3 controller, the USB3 and
 The application modes for USB3 OTG1 within the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 are as follows:
 
 Configuration 1: USB3.2 Gen1x1 OTG1  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199752841-aed730f1-62db-4d12-8a38-52fb8a1cf90c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199752841_aed730f1_62db_4d12_8a38_52fb8a1cf90c.png)
 
 Configuration 2: USB2 OTG1  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199753203-2d61f0bb-3af6-43af-8758-b77777ecff50.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199753203_2d61f0bb_3af6_43af_8758_b77777ecff50.png)
 
-Configuration 3: Both USB2/USB3 unused (specific application methods for PCIe and SATA are detailed in the PCIe and SATA chapters).![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199753594-efb29133-8ec0-4630-8581-5b8ee4c453a6.png)
+Configuration 3: Both USB2/USB3 unused (specific application methods for PCIe and SATA are detailed in the PCIe and SATA chapters).![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199753594_efb29133_8ec0_4630_8581_5b8ee4c453a6.png)
 
 The OK3576-UP5 development board features a USB hub chip to split a single USB 2.0/USB 3.0 host port into two ports. One of these USB 3.0 ports is connected to a Type-A socket for customer use, providing a maximum current output of 1A, whilst the other USB 3.0 port is reserved for use by the 4G and 5G modules.
 
@@ -1142,17 +1142,17 @@ The FET3576 supports one USB/DP combo interface, supporting USB 3.2 Gen1x1 and D
 
 The figure below shows the circuit for the USB3.0 Hub section:
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535913396-3fda47d8-6628-43cb-ab53-ff299e3be3bf.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913396_3fda47d8_6628_43cb_ab53_ff299e3be3bf.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535913541-409c27aa-9938-4e9a-8aa6-6b7112bb9cbc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913541_409c27aa_9938_4e9a_8aa6_6b7112bb9cbc.png)
 
 Two additional switching power supplies are used to provide 3.3V and 1.2V power to the USB Hub chip.
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535913654-cd735c8d-495d-42ff-9d14-d91e5514c482.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913654_cd735c8d_495d_42ff_9d14_d91e5514c482.png)
 
 The USB hub chip features one USB 3.0 port, which is a Type-A connector.
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535913759-07e37f25-eab3-42b6-9066-5331a1314b28.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913759_07e37f25_eab3_42b6_9066_5331a1314b28.png)
 
 <font color="black">**Note:** </font>
 
@@ -1162,13 +1162,13 @@ The USB hub chip features one USB 3.0 port, which is a Type-A connector.
 
 The following diagram shows the circuit of the Type-C USB 3.0 interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535913924-006cd513-085e-4173-9817-d89c88cc8cd4.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913924_006cd513_085e_4173_9817_d89c88cc8cd4.png)
 
 The diagram above shows the circuit for the Type-C interface CC protocol chip, which is used to support functions such as Type-C reversible plug recognition.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914046-07584939-8253-431c-b35e-ede3796cacd0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914046_07584939_8253_431c_b35e_ede3796cacd0.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914125-834deb71-aac1-4969-9dab-bec25be1dc31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914125_834deb71_aac1_4969_9dab_bec25be1dc31.png)
 
 The diagram above shows the differential signal circuit and ESD protection components for a USB 3.0 Type-C connector.
 
@@ -1206,15 +1206,15 @@ The diagram above shows the differential signal circuit and ESD protection compo
 
 The RK3576 chip is equipped with two SATA3.1 controllers, which share Comb PHY0/1 with the PCIe and USB3_OTG1 controllers. For specific routing, please refer to the diagram below.
 
-It supports SATA Power Management (PM) functionality, with each port capable of supporting up to five devices. It also supports SATA speeds of 1.5 Gb/s, 3.0 Gb/s, and 6.0 Gb/s, as well as eSATA.![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199754911-78d25391-5ff3-45fa-adcd-8998e3113de1.png)
+It supports SATA Power Management (PM) functionality, with each port capable of supporting up to five devices. It also supports SATA speeds of 1.5 Gb/s, 3.0 Gb/s, and 6.0 Gb/s, as well as eSATA.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199754911_78d25391_5ff3_45fa_adcd_8998e3113de1.png)
 
 The SATA0 controller utilizes Comb PHY0 (shared with the PCIe0 controller).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914247-c1b318f8-f77d-4497-ac94-38bd183ad2c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914247_c1b318f8_f77d_4497_ac94_38bd183ad2c1.png)
 
 The SATA1 controller utilizes Comb PHY1 (shared with the PCIe1 controller and the USB3_OTG1 controller).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914345-439b207a-46c9-468f-811a-7f8f7b5ce824.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914345_439b207a_46c9_468f_811a_7f8f7b5ce824.png)
 
 The control IOs related to the SATA0/1 controllers are as follows:
 
@@ -1252,21 +1252,21 @@ Two PCIe 2.1 controllers, together with SATA 3.1 and USB 3.2 Gen 1 x1, form two 
 
 Combo PHY0, and the other is the PCIe 2.1/SATA 3.1/USB 3.2 Gen 1 x1 Combo PHY1.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199755793-9a41442f-01a0-4562-bff9-71b57d527988.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199755793_9a41442f_01a0_4562_bff9_71b57d527988.png)
 
 The PCIe0 controller (RC) and SATA0 controller share the PCIe2.1/SATA3.1 Combo PHY0. The corresponding package pins are shown in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914247-c1b318f8-f77d-4497-ac94-38bd183ad2c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914247_c1b318f8_f77d_4497_ac94_38bd183ad2c1.png)
 
 The PCIe1 controller (RC), SATA1 controller, and USB3 OTG1 controller share the PCIe2.1/SATA3.1/USB3.2_Gen1x1
 
 Combo PHY1. The corresponding package pins are shown in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914345-439b207a-46c9-468f-811a-7f8f7b5ce824.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914345_439b207a_46c9_468f_811a_7f8f7b5ce824.png)
 
-PCIE0/1_REFCLKP/N supports both output and input modes. By default, it outputs clock signals to EP (Endpoint) devices, as illustrated in the diagram below.![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756620-4d3bd48a-0664-46d6-980d-fa970165b429.png)
+PCIE0/1_REFCLKP/N supports both output and input modes. By default, it outputs clock signals to EP (Endpoint) devices, as illustrated in the diagram below.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199756620_4d3bd48a_0664_46d6_980d_fa970165b429.png)
 
-If PCIE0/1_REFCLKP/N is configured as an input, the schematic is as shown below.![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199756823-3cc4b6a5-4196-4b14-90dc-0f8f1acf2ead.png)
+If PCIE0/1_REFCLKP/N is configured as an input, the schematic is as shown below.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199756823_3cc4b6a5_4196_4b14_90dc_0f8f1acf2ead.png)
 
 There is a PCIe0 lane on the development board is connected to a PCIe x4 slot and operates in PCIe 2.0 ×1 Lane mode.
 
@@ -1274,9 +1274,9 @@ It supports the PCIe Gen1 (2.4 GT/s) protocol. The other PCIe1 lane is multiplex
 
 The circuit design for the PCIe0 PCIe 2.0 ×1 Lane is illustrated below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914448-578ffab5-d62c-44c1-9388-b1a88e607779.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914448_578ffab5_d62c_44c1_9388_b1a88e607779.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914554-9536f621-a036-4ef7-926a-a3cd5572708a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914554_9536f621_a036_4ef7_926a_a3cd5572708a.png)
 
 <font color="black">**PCIe2.1 Design Note:**</font>
 
@@ -1325,9 +1325,9 @@ Ensure that the corresponding device tree (dts) configuration is disabled in the
 
 FET3576 has two MIPI DPHY CSI RX, both support MIPI V1.2 version, the maximum data rate of each channel is 2.5Gbps.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914693-99812fdc-02c7-44ec-a8e1-7c2e464dc22b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914693_99812fdc_02c7_44ec_a8e1_7c2e464dc22b.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535914893-2eef0499-b6c1-47f0-bb7b-54062993855f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914893_2eef0499_b6c1_47f0_bb7b_54062993855f.png)
 
 **MIPI DPHY CSI1 / 2 RX interface** mode:
 
@@ -1336,7 +1336,7 @@ FET3576 has two MIPI DPHY CSI RX, both support MIPI V1.2 version, the maximum da
 
   - MIPI DPHY CSI1_RX_D[1:0] data reference MIPI_DPHY_CSI1_RX_CLK
 
-  - MIPI DPHY CSI2_RX_D[1:0] data reference MIPI_DPHY_CSI2_RX_CLK![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199758787-79ab42f0-e089-4db2-91fa-9003c8de622d.png)
+  - MIPI DPHY CSI2_RX_D[1:0] data reference MIPI_DPHY_CSI2_RX_CLK![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199758787_79ab42f0_e089_4db2_91fa_9003c8de622d.png)
 
 MIPI DPHY CSI3 / 4 RX interface mode: 
 
@@ -1345,7 +1345,7 @@ MIPI DPHY CSI3 / 4 RX interface mode:
 
   - MIPI DPHY CSI3_RX_D[1:0] data reference MIPI_DPHY_CSI3_RX_CLK
 
-  - MIPI DPHY CSI4_RX_D[1:0] data reference MIPI_DPHY_CSI4_RX_CLK![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759172-54b658d7-1142-4beb-a9b9-c652e4369e07.png)
+  - MIPI DPHY CSI4_RX_D[1:0] data reference MIPI_DPHY_CSI4_RX_CLK![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199759172_54b658d7_1142_4beb_a9b9_c652e4369e07.png)
 
 **Interface Details of MIPI_DCPHY_CSI_RX**
 
@@ -1357,7 +1357,7 @@ The C-PHY supports Version 1.1. In DPHY mode, it has up to 4 lanes, with a maxim
 
 In CPHY mode, it has up to 3 trios, with a maximum data rate of 5.7Gbps/Trio.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535915012-fcd93a10-24cc-46f3-858f-270abcce79d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915012_fcd93a10_24cc_46f3_858f_270abcce79d6.png)
 
 Supported DPHY and CPHY Configuration Modes: 
 
@@ -1380,7 +1380,7 @@ Both as DPHY TX and DPHY RX mode, or Both as CPHY TX and CPHY RX mode. It does n
 
 The OK3576-UP5 is configured by default with four camera interfaces, namely: MIPI_DPHY_CSI0_RX 4Lane, MIPI_DPHY_CSI1_RX 2Lane, MIPI_DPHY_CSI2_RX 2Lane, MIPI_DPHY_CSI3_RX 2Lane. The schematic diagram is as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535915208-43a9f768-b877-4470-933e-cc3d56a0a82f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915208_43a9f768_b877_4470_933e_cc3d56a0a82f.png)
 
 <font color="black">**Please note in design:**</font>
 
@@ -1405,7 +1405,7 @@ Maximum video output capabilities:
 - Dual-screen independent display configurations, for example, one screen at 4096x2160@120Hz, 2560x1600@60Hz.
 
 VOP and video interface output path diagram:  
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199759959-45e326a1-9929-466e-8fac-cd5697432fa8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199759959_45e326a1_9929_466e_8fac_cd5697432fa8.png)
 
 The OK3576-UP5 development board supports three display output interfaces: DP, MIPI_DSI and HDMI.
 
@@ -1416,7 +1416,7 @@ The FET3576 features one MIPI D-PHY/C-PHY Combo PHY TX：
 - **D-PHY:** supports version 2.0. D-PHY modes include 0, 1, 2 and 3 lanes, with two wires per lane; the maximum data rate is 2.5Gbps/Lane. MIPI_DPHY_TX supports a maximum resolution of 2560x1600@60Hz.
 - **C-PHY:** supports version V1.1. The C-PHY modes are 0, 1 and 2 Trio, with each Trio comprising three lines (A, B and C); the maximum data rate is 1.7Gsps/Trio. MIPI_CPHY_TX supports a maximum resolution of 2560x1600@60Hz.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535915320-91f00f07-afc4-488c-b10e-47c8a489b3a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915320_91f00f07_afc4_488c_b10e_47c8a489b3a9.png)
 
 DPHY and CPHY Configuration Support:
 
@@ -1434,7 +1434,7 @@ The TX and RX of the MIPI D-PHY/C-PHY Combo PHY can only be configured simultane
 
 The MIPI_DSI interface on the OK3576-UP5 development board uses a configuration comprising one clock channel and four data channels; the schematic is shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535915423-2cc5d0af-1c8c-4211-82aa-2bc4ea821afb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915423_2cc5d0af_1c8c_4211_82aa_2bc4ea821afb.png)
 
 <font color="black">**Please note in design:**</font>
 
@@ -1460,7 +1460,7 @@ HDMI/eDP TX Combo PHY supports the following two modes:
 
 - **eDP TX Mode:** Supports up to eDP 1.3, with a maximum resolution of 4K@60Hz. It supports RGB/YUV444/YUV422 (up to 10bit) formats.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535915532-89764b44-b6d2-4ec3-a212-4622e2806748.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915532_89764b44_b6d2_4ec3_a212_4622e2806748.png)
 
 RK3576 supports HDMI 2.1 and downward for HDMI 2.0, compatible with HDMI 1.4. Because HDMI 2.1 works in FRL mode and works in TMDS mode, when switching to HDMI 2.0 and below, it will work in TMDS mode, so the AC coupled voltage mode driver is used.
 
@@ -1474,7 +1474,7 @@ When operating in HDMI 2.0 or lower mode, HDMI_TX_ON_H is configured to high lev
 
 <font color="black">**If it only needs to support HDMI 2.0 and below mode, Q17, Q18, Q19, and Q20 also can not be omitted; it needs to ensure that the machine is not power-on, the tube can not be on, as HDMI CTS Test ID 7-3 TMDS Voff test item requires that the DUT is not power-on, Voff voltage must be within AVcc +- 10mV, or this test item can not pass.**</font>
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535915659-da45f485-1ae4-483f-836b-f465614b8609.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915659_da45f485_1ae4_483f_836b_f465614b8609.png)
 
 FRL mode: In a traditional TMDS architecture, a separate channel is used to transmit the clock signal; however, in the FRL architecture, the clock is embedded within the data channel and is extracted at the sink end via clock recovery.
 
@@ -1491,7 +1491,7 @@ The table below shows the relationship between FRL rates and channels:
 
 ARC/eARC is supported by routing the HDMI_TX_SBD_P/ HDMI_TX_SBD_N signals to the internal RK3576 for audio data extraction.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535915781-bc6b6703-c123-4c1f-8f72-5cfb849ec7d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915781_bc6b6703_c123_4c1f_8f72_5cfb849ec7d6.png)
 
 HDMI_TX_HPD is the HDMI TX controller’s Hot Plug Detect signal, multiplexed onto a standard GPIO. Its logic level corresponds to the voltage of its assigned power domain. If the power supply voltage of this domain is changed, the pull-up resistor voltage on the external circuit must be adjusted accordingly.
 
@@ -1501,7 +1501,7 @@ The CEC protocol specifies a 3.3 V logic level; however, the protocol requires t
 
 When the RK3576 IO Domain is not powered, if there is voltage on the IO, leakage current may occur. For example, after the RK3576 is powered off, if the HDMI cable is still connected to the sink device (such as a TV or monitor), the CEC signal from the sink device carries voltage, which can leak to the RK3576 IO through the HDMI cable. This can cause CEC leakage current to exceed 1.8µA. Therefore, an external isolation circuit is required. The resistance value of R521, R635 must not be modified arbitrarily and must be set to 27 kΩ. For Q19, the default selection is the 2SK3018. If another model is to be used, its junction capacitance must be comparable. If the junction capacitance is too large, it will not only affect operation but also fail certification.
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535915902-c2faca17-0fdd-4e18-81b5-01e572dfdd03.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915902_c2faca17_0fdd_4e18_81b5_01e572dfdd03.png)
 
 HDMI_TX_SCL and HDMI_TX_SDA are the I2C/DDC buses of the HDMI transmitter (TX) controller. Their functions are multiplexed onto standard GPIO pins. The voltage levels for these signals depend on the power domain’s supply voltage. If the supply voltage of the power domain changes, the power supply for the pull-up resistors in the peripheral circuitry must also be adjusted accordingly.
 
@@ -1513,7 +1513,7 @@ Diode D11 must not be omitted; it is used to prevent leakage current from the Si
 
 For the level shifting of the SDA signal, a 1K resistor must be connected in series between the MOSFET gate and the power supply, and a 100pF capacitor must be placed in parallel between the MOSFET gate and source to improve timing characteristics. These components must not be removed.
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535916021-efe11d3c-af36-41c6-b1e3-9c28f0b71bf1.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916021_efe11d3c_af36_41c6_b1e3_9c28f0b71bf1.png)
 
 The voltage on Pin 18 of the HDMI connector must be maintained between 4.8V and 5.3V. A 1μF decoupling capacitor must be placed for this pin and cannot be omitted. During layout, this capacitor must be positioned close to the HDMI connector pin.
 
@@ -1548,11 +1548,11 @@ The RK3576 supports one DP1.4 TX PHY (combo with USB3 OTG0), capable of a maximu
 
 - Supports Multi-Stream Transport (MST);
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916142-e293fe4c-078c-40e1-aa68-754cffaa65f4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916142_e293fe4c_078c_40e1_aa68_754cffaa65f4.png)
 
-Supports both Swap On and Swap Off modes;![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199762249-be61200b-5c45-485e-83fc-3c3a92e83cb3.png)
+Supports both Swap On and Swap Off modes;![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199762249_be61200b_5c45_485e_83fc_3c3a92e83cb3.png)
 
-Supports MST (Multi-Stream Transport) display with 3 channels. The maximum capability for three-screen independent display under MST is: 4096x2160@60Hz, 2560x1600@60Hz, and 1920x1080@60Hz.![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721199762544-9dab7aad-2307-4119-827c-052673fd9e9b.png)
+Supports MST (Multi-Stream Transport) display with 3 channels. The maximum capability for three-screen independent display under MST is: 4096x2160@60Hz, 2560x1600@60Hz, and 1920x1080@60Hz.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199762544_9dab7aad_2307_4119_827c_052673fd9e9b.png)
 
 Refer to Section 3.5.15 for pin multiplexing relationships with USB.
 
@@ -1624,11 +1624,11 @@ It is recommended to connect a resistor with a certain resistance value in serie
 
 The SPI0 and SPI4 are routed out from the carrier board; the power domains are PMUIO1 and VCCIO6 respectively, with a 3.3V level.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916323-176d6b50-7540-47b8-b323-03606a32d8f8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916323_176d6b50_7540_47b8_b323_03606a32d8f8.png)
 
 Signals are directly routed out via pins with a 2.54mm pitch, and the schematic diagram is shown in the red box in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916415-aa4f34af-aa00-4e2a-84ac-8c2eab406bbb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916415_aa4f34af_aa00_4e2a_84ac_8c2eab406bbb.png)
 
 ### 3.5.22 UART Interface Circuit
 
@@ -1646,7 +1646,7 @@ The automatic transmit-receive function of RS485 means that when the SoC communi
 
 When UART communicates with RS485, there are 3-wire mode and 4-wire mode, as shown in the figure below. In 3-wire mode, the RTSN pin of UART is connected to the RE and DE pins of RS485 together. In 4-wire mode, RTSN is connected to the DE pin of RS485, and CTSN is connected to the RE pin of RS485.
 
-![](https://cdn.nlark.com/yuque/0/2026/jpg/50461850/1791535916502-391d9610-e538-4dd7-9b2b-11e6fdc55298.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916502_391d9610_e538_4dd7_9b2b_11e6fdc55298.jpg)
 
 Considering the application flexibility of different products, the 12 UARTs are respectively multiplexed in several different power domains, with the suffixes _M0/_M1/_M2/_M3 used to distinguish different multiplexing positions. _M0/_M1/_M2/_M3 cannot be used at the same time. Only one set can be selected during allocation. It is not allowed to assign some signals to M0, some to M1, and others to M2 — this function is not supported.
 
@@ -1699,11 +1699,11 @@ The recommended pull-up/down and matching designs for the UART interface are as 
 
 The FET3576-UP5 features a five-wire serial port operating at 3.3 V logic levels.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916615-8a023286-7960-4bd1-91ee-b50198e737fa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916615_8a023286_7960_4bd1_91ee_b50198e737fa.png)
 
 The signals are routed out directly via pins with a 2.54 mm pitch, as shown in the red box in the diagram below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535916741-44644c88-744d-4718-becd-cd297daa102d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916741_44644c88_744d_4718_becd_cd297daa102d.png)
 
 # 4. Hardware Design Guide
 
@@ -1738,17 +1738,17 @@ It is strongly recommended that when designing the carrier board, please refer t
 
 ## 5.1 SoM Pin Layout Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535920816-1823d853-eea1-42db-acde-c7e3b6dd58cf.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535920816_1823d853_eea1_42db_acde_c7e3b6dd58cf.png)
 
 ## 5.2 Packaging Design Diagram
 
 The SoM is packaged using LGA packaging method, with units in millimeters. Please refer to the following diagram for packaging design:
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535920969-d20288f6-a0a4-4785-9ec9-4d43ced3fd92.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535920969_d20288f6_a0a4_4785_9ec9_4d43ced3fd92.png)
 
 ## 5.3 Steel Mesh Design Drawing
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535921132-b09f73ec-764f-4fc8-8552-cf3c37a574e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535921132_b09f73ec_764f_4fc8_8552_cf3c37a574e8.png)
 
 <font color="black">**Note: This product uses stepped steel mesh for welding. To ensure welding yield, please refer to the "UP5 Series SoM Mass Production Operation Manual" for the design of the encapsulated steel mesh**</font>
 
@@ -1773,32 +1773,32 @@ The SoM is packaged using LGA packaging method, with units in millimeters. Pleas
 
 # 7. Minimum System Diagram
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535925485-ce6ce5c2-e18c-42f4-b9cc-205843d735db.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535925485_ce6ce5c2_e18c_42f4_b9cc_205843d735db.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535925626-c9d3f3ca-cf0a-49de-8196-972c0d31abc8.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535925626_c9d3f3ca_cf0a_49de_8196_972c0d31abc8.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535925715-c14fa4ec-4dc3-4fb5-8a22-bf55a2b4d9fa.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535925715_c14fa4ec_4dc3_4fb5_8a22_bf55a2b4d9fa.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535925816-9c809d05-2103-4332-b648-76ea5372fd73.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535925816_9c809d05_2103_4332_b648_76ea5372fd73.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535925926-ddcceec1-c287-4e82-a0be-3ae07bf00061.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535925926_ddcceec1_c287_4e82_a0be_3ae07bf00061.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535926011-f5cac08e-bdc3-40a9-8a60-49f7cf5f0df6.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535926011_f5cac08e_bdc3_40a9_8a60_49f7cf5f0df6.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535926136-9b87be52-b471-49a0-9390-144edd66e1ea.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535926136_9b87be52_b471_49a0_9390_144edd66e1ea.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1791535926252-34e5aae6-b8cd-4568-bbbd-545da12a68c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535926252_34e5aae6_b8cd_4568_bbbd_545da12a68c3.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535926340-e755d3ba-46ff-4da5-947a-5102cbd71d43.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535926340_e755d3ba_46ff_4da5_947a_5102cbd71d43.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535926678-60a71d17-e924-47af-9e66-a14c3c6c0e1e.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535926678_60a71d17_e924_47af_9e66_a14c3c6c0e1e.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535926953-cbfcec7d-3467-4321-8146-33b70762fc54.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535926953_cbfcec7d_3467_4321_8146_33b70762fc54.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535927114-57984b95-2424-4399-b11a-c38350ba3c5a.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535927114_57984b95_2424_4399_b11a_c38350ba3c5a.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45533325/1721202586705-41cde625-2184-463f-ba3d-48247cf83ec2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721202586705_41cde625_2184_463f_ba3d_48247cf83ec2.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/bmp/50461850/1791535927210-d5c2d7d4-e0a3-4878-8fb1-84cf97d26044.bmp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535927210_d5c2d7d4_e0a3_4878_8fb1_84cf97d26044.png)
 
 The diagram above is for illustrative purposes only; please refer to the schematic in the source file for the actual connections. To ensure the proper operation of the SoM, the minimum system includes the SoM power supply circuit, system programming/burning circuit, and debug serial port circuit.
