@@ -206,17 +206,20 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | PWM| ≤16| Supports up to 16 on-chip PWM with interrupt-based operation and capture mode;|
 | ADC| ≤8| Supports 8 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s|
 | GPIO| n| All GPIOs can be used to generate interrupts;<br />Supports level-triggered and edge-triggered interrupts; <br />Supports configuration of level-triggered polarity;<br />Supports rising-edge, falling-edge and dual-edge interrupts;<br />Supports configuration of pull-up/pull-down (weak pull-up and weak pull-down);<br />Supports configuration of drive capability. |
-<font color="black">**Note:** The parameters in the table are based on hardware design or theoretical CPU values.</font>
 
-<font color="black">**The interface employs GPIO multiplexing, representing the theoretical maximum connections.**</font>
+**<font color="black">Note: **
+
+- **The parameters in the table are based on hardware design or theoretical CPU values;</font>**
+
+- <font color="black">**The interface employs GPIO multiplexing, representing the theoretical maximum connections.**</font>
 
 - <font color="black">**\*Video Port**</font>
-  - <font color="black">Video Port0 supports up to 4K@120Hz with 10 bit data</font>
-  - <font color="black">Video Port1 supports up to 2560x1600@60Hz with 10-bit data</font>
-  - <font color="black">Video Port2 supports up to 1920x1080@60Hz with 8-bit data</font>
-  - <font color="black">Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</font>
-  - <font color="black">Port1 and Port2 may connect to parallel output interface</font>
-- <font color="black">**\*The maximum design clock frequency for a single TDM bus is 50MHz.** When using TDM mode, the theoretically supported number of audio channels can be calculated by combining the audio sampling frequency and resolution to assess whether it meets the project requirements.</font>
+  - **<font color="black">Video Port0 supports up to 4K@120Hz with 10 bit data</font>**
+  - **<font color="black">Video Port1 supports up to 2560x1600@60Hz with 10-bit data</font>**
+  - **<font color="black">Video Port2 supports up to 1920x1080@60Hz with 8-bit data</font>**
+  - **<font color="black">Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</font>**
+  - **<font color="black">Port1 and Port2 may connect to parallel output interface</font>**
+- <font color="black">**\*The maximum design clock frequency for a single TDM bus is 50MHz.** **When using TDM mode, the theoretically supported number of audio channels can be calculated by combining the audio sampling frequency and resolution to assess whether it meets the project requirements.</font>**
 
 ## 2.5 FET3576x-UP5 SoM Pin Definitions
 
