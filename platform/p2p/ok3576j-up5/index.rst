@@ -52,6 +52,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK3576-UP5_User_Hardware_Manual
+
 
 
 
