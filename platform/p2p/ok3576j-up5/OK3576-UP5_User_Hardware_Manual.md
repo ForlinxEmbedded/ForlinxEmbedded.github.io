@@ -183,11 +183,11 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 |:----------:|:----------:|----------|
 | MIPI CSI| 5| Supports 5 x CSI-2 interfaces;<br />4 of the interfaces feature 2 data lanes (D-PHY v1.2, 2.4 Gbps per lane);<br />These 4 interfaces can be combined to form 2 interfaces with 4 data lanes each;<br />The remaining 1 x interface supports either 4 D-PHY data lanes or 3 C-PHY trios;<br />D-PHY v2.0 supports lane speed up to 4.5 Gbps;<br />C-PHY v1.1 supports trio speed up to 2.4 Gsps. |
 | DVP| 1| Standard DVP interface (8/10/12/16-bit, up to 150 Mhz); <br />Supports BT.601, BT.656, and BT.1120 VI interfaces |
-| HDMI/eDP TX| 1 *****<sup>**1**</sup>| Supports 1 x HDMI/eDP TX combo port;<br />HDMI port: HDMI v2.1, supports up to 4K@120Hz;      <br />Supported data formats:RGB/YUV444/YUV422/YUV420 8/10-bit; <br />Supports CEC and ARC; <br />HDCP v2.3 and HDCP v1.4; <br />eDP port: eDP v1.3, supports up to 4K@60Hz;      <br />HDCP v1.3 |
-| DP TX| 1 *****<sup>**1**</sup>| Supports 1 x USB/DP combo port; <br />USB port: USB 3.2 Gen 1 x1; <br />Dual-Role Device (DRD); <br />DisplayPort TX port: DisplayPort v1.4;<br />Supports 1/2/4 channels, with channel speeds of 1.62, 2.7, 5.4 and 8.1 Gbps; Supports up to 4K@120Hz; <br />Supports Multi-Stream Transport (MST) for 3 displays; <br />Supports DP Altmode on USB Type-C;<br />Supports HDCP v2.3 and HDCP v1.3. |
-| MIPI DSI| 1 *****<sup>**1**</sup>| Supports 1 x MIPI DSI-2 TX interface;<br />D-PHY v2.0 or C-PHY v1.1;<br />4 x data lanes on D-PHY;<br />3 data trios on C-PHY;<br />Supports up to 2560 × 1600@60 Hz;<br />Data format: RGB (up to 10-bit). |
-| Parallel| 1 *****<sup>**1**</sup>| Supports 1 x parallel output interface;<br />Supports RGB/BT.656/BT1120;<br />Supports up to 1920 × 1080@60 Hz;Data format: RGB (up to 10-bit). |
-| EBC| 1 *****<sup>**1**</sup>| Supports 1 EBC output interface;<br />Supports E-ink EPD (Electronic Paper Display);<br />Supports 2560 × 1920 hardware decoding;<br />Data bus width: 16-bit;<br />Supports up to 32-level gray scale;<br />Supports Direct mode, LUT mode, 3-window mode;<br />Supports window display mode. |
+| HDMI/eDP TX| 1 | Supports 1 x HDMI/eDP TX combo port;<br />HDMI port: HDMI v2.1, supports up to 4K@120Hz;      <br />Supported data formats:RGB/YUV444/YUV422/YUV420 8/10-bit; <br />Supports CEC and ARC; <br />HDCP v2.3 and HDCP v1.4; <br />eDP port: eDP v1.3, supports up to 4K@60Hz;      <br />HDCP v1.3 |
+| DP TX| 1 | Supports 1 x USB/DP combo port; <br />USB port: USB 3.2 Gen 1 x1; <br />Dual-Role Device (DRD); <br />DisplayPort TX port: DisplayPort v1.4;<br />Supports 1/2/4 channels, with channel speeds of 1.62, 2.7, 5.4 and 8.1 Gbps; Supports up to 4K@120Hz; <br />Supports Multi-Stream Transport (MST) for 3 displays; <br />Supports DP Altmode on USB Type-C;<br />Supports HDCP v2.3 and HDCP v1.3. |
+| MIPI DSI| 1 | Supports 1 x MIPI DSI-2 TX interface;<br />D-PHY v2.0 or C-PHY v1.1;<br />4 x data lanes on D-PHY;<br />3 data trios on C-PHY;<br />Supports up to 2560 × 1600@60 Hz;<br />Data format: RGB (up to 10-bit). |
+| Parallel| 1 | Supports 1 x parallel output interface;<br />Supports RGB/BT.656/BT1120;<br />Supports up to 1920 × 1080@60 Hz;Data format: RGB (up to 10-bit). |
+| EBC| 1 | Supports 1 EBC output interface;<br />Supports E-ink EPD (Electronic Paper Display);<br />Supports 2560 × 1920 hardware decoding;<br />Data bus width: 16-bit;<br />Supports up to 32-level gray scale;<br />Supports Direct mode, LUT mode, 3-window mode;<br />Supports window display mode. |
 | SAI| ≤5| Supports 5 x SAI interfaces;<br />SAI 2/3/4 support 1 TX lane and 1 RX lane;<br />Supports I2S/TDM/PCM modes;<br />Supports a maximum sample rate of 192 kHz;<br />Supports audio resolution from 16 bits to 32 bits. |
 | SPDIF TX| ≤2| Supports 2 x SPDIF TX ports;|
 | SPDIF RX| ≤2| Supports 2 x SPDIF RX ports; |
@@ -207,7 +207,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | ADC| ≤8| Supports 8 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s|
 | GPIO| n| All GPIOs can be used to generate interrupts;<br />Supports level-triggered and edge-triggered interrupts; <br />Supports configuration of level-triggered polarity;<br />Supports rising-edge, falling-edge and dual-edge interrupts;<br />Supports configuration of pull-up/pull-down (weak pull-up and weak pull-down);<br />Supports configuration of drive capability. |
 
-**<font color="black">Note: **
+**Note: **
 
 - **The parameters in the table are based on hardware design or theoretical CPU values;</font>**
 
