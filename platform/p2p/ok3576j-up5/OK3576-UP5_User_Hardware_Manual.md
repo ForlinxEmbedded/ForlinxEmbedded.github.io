@@ -836,16 +836,20 @@ VCC12V_DCIN supplies power to both the FET3576 SoM and other peripherals on the 
 
 VCC12V_DCIN is stepped down to VCC_5V via U62 (DC-DC converter). VCC_5V powers other peripherals on the carrier board. (Note: When selecting the 12V-to-5V DC-DC chip, ensure its output power is sufficiently high. It is recommended to support an output current of 6A or above to guarantee adequate current supply for downstream stages.)
 
-After the SoM is powered on normally by 12V, it outputs a high level via the EXTP_EN pin to control U62 and enable the output of VCC_5V to power some peripherals on the development board. (This signal operates at 3.3V with 1K pull-up driving capability. If the driving capacity required by the enable pin of the enabled device exceeds this range, a buffer or gate circuit shall be added to boost the driving capacity, so as to ensure the normal power-on of both the SoM and the carrier board.)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910418_6ffe6211_8baa_4d10_b704_741c9c4e938f.png)
+After the SoM is powered on normally by 12V, it outputs a high level via the EXTP_EN pin to control U62 and enable the output of VCC_5V to power some peripherals on the development board. (This signal operates at 3.3V with 1K pull-up driving capability. If the driving capacity required by the enable pin of the enabled device exceeds this range, a buffer or gate circuit shall be added to boost the driving capacity, so as to ensure the normal power-on of both the SoM and the carrier board.)
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910418_6ffe6211_8baa_4d10_b704_741c9c4e938f.png)
 
 U39 outputs VCC_5V_USB as a dedicated USB power rail to supply the USB interfaces and HUB.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910707_c88f9bde_b68e_4977_ac59_fa5baeb66304.png)
 
 VCC_5V is further stepped down to VCC_3V3 via U40 (DC-DC converter). VCC_3V3 powers some devices on the SoM.  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910830_b58c3a10_b8fb_465a_86a1_5671cf25a818.png)
 
 VCC_3V3 is stepped down to VCC_1V8 through U41, U65, and U66 (LDOs). VCC_1V8 powers some devices on the development board.  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910921_bdf0b848_2d11_4af5_b5a9_59c4004d3c32.png)
 
 VCC12V_DCIN is stepped down to VCC5V_S via U42 (DC‑DC). VCC5V_S supplies the carrier board display interface.
@@ -924,7 +928,9 @@ SDMMC0_DET_L (Pin No. 86, Default Function: SDMMC_DET)
 
 It determines the function assignment of IOs in the VCCIO1 power domain, which can be configured as either SDMMC0 peripheral or JTAG debug peripheral.
 
-The JTAG function and SDMMC0 function of FET3576 are hardware-bound pin multiplexing pairs, and the function switching is completed by configuring the IOMUX (IO Multiplexer) via the SDMMC0_DET_L pin. Therefore, this pin must be pre-configured before power-up. Failure to meet the configuration timing requirement will directly result in no valid output from the JTAG interface, blocking debug operations during the chip boot phase. It will also cause abnormal SDMMC0 interface behavior, breaking the normal flow of the SDMMC0 boot functionality.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199746968_31a0ba65_3cf8_430b_9802_8456f1540d06.png)
+The JTAG function and SDMMC0 function of FET3576 are hardware-bound pin multiplexing pairs, and the function switching is completed by configuring the IOMUX (IO Multiplexer) via the SDMMC0_DET_L pin. Therefore, this pin must be pre-configured before power-up. Failure to meet the configuration timing requirement will directly result in no valid output from the JTAG interface, blocking debug operations during the chip boot phase. It will also cause abnormal SDMMC0 interface behavior, breaking the normal flow of the SDMMC0 boot functionality.
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199746968_31a0ba65_3cf8_430b_9802_8456f1540d06.png)
 
 - If this pin is detected as high, the corresponding I/O pin switches to JTAG mode;
 
@@ -954,6 +960,7 @@ Table 3.5.5.1 FET3576 JTAG Debug Interface Signals
 | JTAG_TMS_M0/M1| SWD Mode Data Input/Output|
 
 The RK3576 has two JTAG multiplexes: JTAG_TCK_M0/JTAG_TMS_M0 is located in the VCCIO1 domain and is multiplexed with SDMMC0 via the IOMUX; JTAG_TCK_M1/JTAG_TMS_M1 is located in the PMUIO1 domain and is multiplexed with UART_Debug—UART0_M0. The IOMUX multiplexing configuration is shown in the figure below.  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199747347_cfe2f817_3baa_4f5a_a336_290e0a729450.png)
 
 The default UART debug settings for the FET3576 are UART_DEBUG_A_TX (80) and UART_DEBUG_A_RX (79). If the UART Debug signal is brought out via a plug-in connector, a series 100ohm resistor should be added, and a TVS diode should be placed near the connector.
@@ -1068,7 +1075,9 @@ The OK3576-UP5 development board supports two CAN interfaces utilizing isolated 
 
 ### 3.5.13 Audio
 
-The OK3576-UP5 features an on-board I2S-interface Codec chip U43, supporting MIC input, headphone output, and 1W 8Ω speaker output. As shown in the figure below:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912787_eb3744c7_f500_46b5_a68b_fd3e943a2f58.png)
+The OK3576-UP5 features an on-board I2S-interface Codec chip U43, supporting MIC input, headphone output, and 1W 8Ω speaker output. As shown in the figure below:
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912787_eb3744c7_f500_46b5_a68b_fd3e943a2f58.png)
 
 ### 3.5.14 4G&5G Interface
 
@@ -1082,7 +1091,9 @@ The RK3576 chip integrates two USB3 OTG controllers. Both USB3 controllers embed
 
 **The USB 3.0 OTG 0/DP 1.4 interface is used as follows:**
 
-A USB 3.2 Gen 1 x1 OTG0/DP 1.4 combo PHY; the internal multiplexing diagram for the USB 3 OTG0 controller and the PHY is shown below:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199749403_c919cbe6_c1e1_4069_9b1b_967b039ca5e8.png)
+A USB 3.2 Gen 1 x1 OTG0/DP 1.4 combo PHY; the internal multiplexing diagram for the USB 3 OTG0 controller and the PHY is shown below:
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199749403_c919cbe6_c1e1_4069_9b1b_967b039ca5e8.png)
 
 The USB 3.0 OTG controller supports SS, HS, FS and LS modes. The embedded USB 2.0 (HS, FS and LS) signals utilise a USB 2.0 OTG PHY; the signal names are shown within the red boxes in the figure below. The RK3576 uses this interface by default for Fireware downloads; please ensure that this interface is reserved for this purpose in your application.
 
@@ -1100,31 +1111,41 @@ The USB3 OTG0 Controller and DP1.4 Controller are combined into a complete Type-
 
 This USB3/DP1.4 Combo PHY supports lane swapping (SWAP). Therefore, a standard Type-C port can be configured in the following five ways:
 
-Configuration 1: Type-C 4-Lane (with DP function)![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750214_784ef4f2_cd92_48f7_a2f7_6fb9d1ade09a.png)
+Configuration 1: Type-C 4-Lane (with DP function)
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750214_784ef4f2_cd92_48f7_a2f7_6fb9d1ade09a.png)
 
 Configuration 2: USB2.0 OTG+DP1.4 4Lane(Swap OFF)  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750576_7b815bee_410a_4b1a_a090_70399bdf21e3.png)
 
 Configuration 3: USB2.0 OTG+DP1.4 4Lane(Swap ON)  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199750805_b58f70e5_7c73_4601_aabe_543b544778d8.png)
 
 Configuration 4: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap OFF)  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751194_8ade452f_cd52_4726_b814_44611043dd94.png)
 
 Configuration 5: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751492_e286b0e5_02c1_4e07_adc6_c020d9e6df67.png)
 
 <font color="black">**Note: The RK3576 supports firmware download via the USB3_OTG0_SSRX1P/N and USB3_OTG0_SSTX1P/N signals from the USB 3.2 Gen1x1 OTG0 interface. To support USB3.0 firmware upgrade and also require 2-Lane DP support, the USB3.2 Gen1x1 OTG0 + DP 2Lane (Swap ON) configuration must be used.**</font>
 
 <font color="black">**The USB3 OTG1 interface is used as follows:**</font>
 
-The PCIe1 / SATA1 / USB3 OTG1 form a Combo PHY1. The internal multiplexing diagram between the USB3 OTG1 controller and the PHY is as shown below:![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751928_51d12731_e560_4d7b_a52a_c681951a05e9.png)
+The PCIe1 / SATA1 / USB3 OTG1 form a Combo PHY1. The internal multiplexing diagram between the USB3 OTG1 controller and the PHY is as shown below:
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751928_51d12731_e560_4d7b_a52a_c681951a05e9.png)
 
 The USB3 OTG1 controller supports SS/HS/FS/LS. The embedded USB2.0 (HS/FS/LS) signals constitute the PCIe1/SATA1/USB3 OTG1 COMBO PHY1. The pin distribution is as follows:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913212_185ac645_d622_413c_924e_b824080d8780.png)
 
-The pin assignment for the USB20 OTG1 is shown in the figure below (the FET3576-UP5 supports HOST functionality only):![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913307_1ca7f430_779c_4fed_85e5_4f13a06dc995.png)
+The pin assignment for the USB20 OTG1 is shown in the figure below (the FET3576-UP5 supports HOST functionality only):
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913307_1ca7f430_779c_4fed_85e5_4f13a06dc995.png)
 
 Since the USB3 OTG1 and USB2.0 OTG1 share the same USB3 controller, the USB3 and USB2.0 OTG1 functions can only operate simultaneously as either Device or Host. It is not possible for the USB3 OTG to act as a Host while the USB2.0 OTG acts as a Device, or vice versa.
 
@@ -1133,12 +1154,16 @@ Since the USB3 OTG1 and USB2.0 OTG1 share the same USB3 controller, the USB3 and
 The application modes for USB3 OTG1 within the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 are as follows:
 
 Configuration 1: USB3.2 Gen1x1 OTG1  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199752841_aed730f1_62db_4d12_8a38_52fb8a1cf90c.png)
 
 Configuration 2: USB2 OTG1  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199753203_2d61f0bb_3af6_43af_8758_b77777ecff50.png)
 
-Configuration 3: Both USB2/USB3 unused (specific application methods for PCIe and SATA are detailed in the PCIe and SATA chapters).![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199753594_efb29133_8ec0_4630_8581_5b8ee4c453a6.png)
+Configuration 3: Both USB2/USB3 unused (specific application methods for PCIe and SATA are detailed in the PCIe and SATA chapters).
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199753594_efb29133_8ec0_4630_8581_5b8ee4c453a6.png)
 
 The OK3576-UP5 development board features a USB hub chip to split a single USB 2.0/USB 3.0 host port into two ports. One of these USB 3.0 ports is connected to a Type-A socket for customer use, providing a maximum current output of 1A, whilst the other USB 3.0 port is reserved for use by the 4G and 5G modules.
 
@@ -1210,7 +1235,9 @@ The diagram above shows the differential signal circuit and ESD protection compo
 
 The RK3576 chip is equipped with two SATA3.1 controllers, which share Comb PHY0/1 with the PCIe and USB3_OTG1 controllers. For specific routing, please refer to the diagram below.
 
-It supports SATA Power Management (PM) functionality, with each port capable of supporting up to five devices. It also supports SATA speeds of 1.5 Gb/s, 3.0 Gb/s, and 6.0 Gb/s, as well as eSATA.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199754911_78d25391_5ff3_45fa_adcd_8998e3113de1.png)
+It supports SATA Power Management (PM) functionality, with each port capable of supporting up to five devices. It also supports SATA speeds of 1.5 Gb/s, 3.0 Gb/s, and 6.0 Gb/s, as well as eSATA.
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199754911_78d25391_5ff3_45fa_adcd_8998e3113de1.png)
 
 The SATA0 controller utilizes Comb PHY0 (shared with the PCIe0 controller).
 
@@ -1270,7 +1297,9 @@ Combo PHY1. The corresponding package pins are shown in the figure below.
 
 PCIE0/1_REFCLKP/N supports both output and input modes. By default, it outputs clock signals to EP (Endpoint) devices, as illustrated in the diagram below.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199756620_4d3bd48a_0664_46d6_980d_fa970165b429.png)
 
-If PCIE0/1_REFCLKP/N is configured as an input, the schematic is as shown below.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199756823_3cc4b6a5_4196_4b14_90dc_0f8f1acf2ead.png)
+If PCIE0/1_REFCLKP/N is configured as an input, the schematic is as shown below.
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199756823_3cc4b6a5_4196_4b14_90dc_0f8f1acf2ead.png)
 
 There is a PCIe0 lane on the development board is connected to a PCIe x4 slot and operates in PCIe 2.0 ×1 Lane mode.
 
@@ -1340,7 +1369,9 @@ FET3576 has two MIPI DPHY CSI RX, both support MIPI V1.2 version, the maximum da
 
   - MIPI DPHY CSI1_RX_D[1:0] data reference MIPI_DPHY_CSI1_RX_CLK
 
-  - MIPI DPHY CSI2_RX_D[1:0] data reference MIPI_DPHY_CSI2_RX_CLK![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199758787_79ab42f0_e089_4db2_91fa_9003c8de622d.png)
+  - MIPI DPHY CSI2_RX_D[1:0] data reference MIPI_DPHY_CSI2_RX_CLK
+
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199758787_79ab42f0_e089_4db2_91fa_9003c8de622d.png)
 
 MIPI DPHY CSI3 / 4 RX interface mode: 
 
@@ -1349,7 +1380,9 @@ MIPI DPHY CSI3 / 4 RX interface mode:
 
   - MIPI DPHY CSI3_RX_D[1:0] data reference MIPI_DPHY_CSI3_RX_CLK
 
-  - MIPI DPHY CSI4_RX_D[1:0] data reference MIPI_DPHY_CSI4_RX_CLK![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199759172_54b658d7_1142_4beb_a9b9_c652e4369e07.png)
+  - MIPI DPHY CSI4_RX_D[1:0] data reference MIPI_DPHY_CSI4_RX_CLK
+
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199759172_54b658d7_1142_4beb_a9b9_c652e4369e07.png)
 
 **Interface Details of MIPI_DCPHY_CSI_RX**
 
@@ -1409,6 +1442,7 @@ Maximum video output capabilities:
 - Dual-screen independent display configurations, for example, one screen at 4096x2160@120Hz, 2560x1600@60Hz.
 
 VOP and video interface output path diagram:  
+
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199759959_45e326a1_9929_466e_8fac_cd5697432fa8.png)
 
 The OK3576-UP5 development board supports three display output interfaces: DP, MIPI_DSI and HDMI.
@@ -1554,9 +1588,13 @@ The RK3576 supports one DP1.4 TX PHY (combo with USB3 OTG0), capable of a maximu
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916142_e293fe4c_078c_40e1_aa68_754cffaa65f4.png)
 
-Supports both Swap On and Swap Off modes;![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199762249_be61200b_5c45_485e_83fc_3c3a92e83cb3.png)
+Supports both Swap On and Swap Off modes;
 
-Supports MST (Multi-Stream Transport) display with 3 channels. The maximum capability for three-screen independent display under MST is: 4096x2160@60Hz, 2560x1600@60Hz, and 1920x1080@60Hz.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199762544_9dab7aad_2307_4119_827c_052673fd9e9b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199762249_be61200b_5c45_485e_83fc_3c3a92e83cb3.png)
+
+Supports MST (Multi-Stream Transport) display with 3 channels. The maximum capability for three-screen independent display under MST is: 4096x2160@60Hz, 2560x1600@60Hz, and 1920x1080@60Hz.
+
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199762544_9dab7aad_2307_4119_827c_052673fd9e9b.png)
 
 Refer to Section 3.5.15 for pin multiplexing relationships with USB.
 
