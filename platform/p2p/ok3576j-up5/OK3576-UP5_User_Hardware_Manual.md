@@ -174,6 +174,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | PWM| 2| Supports up to 2 on-chip PWM with interrupt-based operation and capture mode;|
 | ADC| 4| Supports 4 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s;|
 | GPIO| 16| All GPIOs can be used to generate interrupts; <br />Supports level-triggered and edge-triggered interrupts; <br />Supports configuration of level-triggered polarity; <br />Supports rising-edge, falling-edge and dual-edge interrupts; <br />Supports configuration of pull-up/pull-down (weak pull-up and weak pull-down);<br />Supports configuration of drive capability. |
+
 <font color="black">**Note: The UP5 definition includes a RESERVE area. This area's function is divided according to the platform. It has different functions. If you have a need, please check the “REFERENCE FOR REUSAGE” table.**</font>
 
 ### 2.4.2 FET3576-UP5 CPU Interfaces
