@@ -508,7 +508,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | SD_A_D3| SDMMC0_D3| 93| B23| GPIO2_A3_D| 3.3V/1.8V| SD/MMC Interface Data Signal 3|
 | SD_A_CD| SDMMC0_DET_L| 86| 1U21| GPIO0_A7_U| 3.3V/1.8V| SDMMC card detection signal|
 
-SDIO_B
+**SDIO_B**
 
 | **UP5 Standard Interface Functions**| **FET3576x-UP5 Pinout Functions**| **Num**| **Ball**| **GPIO**| **Vol**| **Pin Description**|
 |----------|----------|----------|----------|----------|----------|----------|
@@ -546,7 +546,7 @@ SDIO_B
 **UART_B**
 
 | **UP5 Standard Interface Functions**| **FET3576x-UP5 Pinout Functions**| **Num**| **Ball**| **GPIO**| **Vol**| **Pin Description**|
-|----------|----------|----------|----------|----------|----------|----------||
+|----------|----------|----------|----------|----------|----------|----------|
 | UART_B_TX| UART8_TX_M0| 587| 1D7| GPIO3_C6_D| 3.3V| UART8 Send Data|
 | UART_B_RX| UART8_RX_M0| 588| 1B9| GPIO3_C5_D| 3.3V| UART8 receive data|
 | UART_B_RTS| UART8_RTSN_M0| 361| 1C7| GPIO3_C7_D| 3.3V| UART8 send request|
@@ -649,7 +649,7 @@ SDIO_B
 **PCIE_C/D**
 
 | **UP5 Standard Interface Functions**| **FET3576x-UP5 Pinout Functions**| **Num**| **Ball**| **GPIO**| **Vol**| **Pin Description**|
-|----------|----------|----------|----------|----------|----------|----------||
+|----------|----------|----------|----------|----------|----------|----------|
 | PCIE_C/D| NC| -| -| -| -| -|
 
 **SERDES**
