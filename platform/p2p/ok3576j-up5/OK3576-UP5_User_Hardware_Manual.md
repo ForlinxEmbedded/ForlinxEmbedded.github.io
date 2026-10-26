@@ -207,7 +207,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | ADC| ≤8| Supports 8 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s|
 | GPIO| n| All GPIOs can be used to generate interrupts;<br />Supports level-triggered and edge-triggered interrupts; <br />Supports configuration of level-triggered polarity;<br />Supports rising-edge, falling-edge and dual-edge interrupts;<br />Supports configuration of pull-up/pull-down (weak pull-up and weak pull-down);<br />Supports configuration of drive capability. |
 
-**Note: **
+**Note:**
 
 - **The parameters in the table are based on hardware design or theoretical CPU values;</font>**
 
