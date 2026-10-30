@@ -129,15 +129,15 @@ Path:`CP210x_VCP_Windows_XP_Vista.zip driver package in User Materials\3-Tools`
 
 After decompression, directly run CP210xVCPInstaller \_ x64.exe, the following interface will pop up, and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633374-df5d0eb4-7303-41e3-a36d-c106d53ac9f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350633374_df5d0eb4_7303_41e3_a36d_c106d53ac9f9.png)
 
 Check "I accept this agreement" and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633464-df760b99-1655-4fcb-ae01-61d1ac52d5e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350633464_df760b99_1655_4fcb_ae01_61d1ac52d5e8.png)
 
 Click “Finish”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633557-cf912983-7761-4b6a-ae40-6e579866a44f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350633557_cf912983_7761_4b6a_ae40_6e579866a44f.png)
 
 To ensure that the latest driver is installed, please click Uninstall Driver before installing the driver.
 
@@ -161,11 +161,11 @@ Take PuTTY as an example to introduce the setting mode of the putty terminal:
 
 - Open the PuTTY configuration interface. Set the “Serial line” field to the COM port number of your PC, and select 115200 as the baud rate.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633761-2af4faf1-931a-4d93-9161-0a73113119c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350633761_2af4faf1_931a_4d93_9161_0a73113119c2.png)
 
 - After completing the above settings, enter the PC’s active COM port number in the “Saved Sessions” field. Taking COM42 as an example in the figure below, save the configuration. When you open the serial port next time, directly select the saved port number and click “Open” to establish the connection.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633855-3aea7145-3c07-4b29-b410-7087569c2846.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350633855_3aea7145_3c07_4b29_b410_7087569c2846.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -173,7 +173,7 @@ After the PC terminal software is configured, connect the PC and the development
 
 The following startup message indicates a successful boot, and you can press Enter to create a new command line:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633955-368b4dcf-925d-4561-a12f-622f78d0586e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350633955_368b4dcf_925d_4561_a12f_622f78d0586e.png)
 
 ### 2.4 Network Login
 
@@ -211,15 +211,15 @@ Data is returned, indicating that the network connection is normal.
 
 Logging into the development board via SSH.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350634304-8864122d-7029-4f9b-aa7e-ebf1a1ea4fb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350634304_8864122d_7029_4f9b_aa7e_ebf1a1ea4fb8.png)
 
 Click “Accept”.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350634417-e4d4c597-fe06-4302-9375-a2e53e5a6737.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350634417_e4d4c597_fe06_4302_9375_a2e53e5a6737.png)
 
 Open the window and enter the account root.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350634513-d1b6fe10-ffe5-40c2-bb64-2c6f2b869577.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350634513_d1b6fe10_ffe5_40c2_bb64_2c6f2b869577.png)
 
 #### 2.4.3 SFTP
 
@@ -304,7 +304,7 @@ The device tree path is: `arch/arm64/boot/dts/rockchip/OK3576-UP5-common.dtsi`
 
 In the kernel source code, open the device DTSI file and locate the following node:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350635173-4b575acd-9121-496d-850a-948f64493b8c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350635173_4b575acd_9121_496d_850a_948f64493b8c.png)
 
 The node is disabled by default and needs to be changed to "okay" to enable it. Modify according to the screen requirements.
 
@@ -312,7 +312,7 @@ For example:
 
 Switch off the HDMI screen.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350635266-1640bbca-219d-4e03-aef3-aa666d165f0e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350635266_1640bbca_219d_4e03_aef3_aa666d165f0e.png)
 
 After saving, recompile to generate the image.
 
@@ -439,17 +439,17 @@ Qt Version:`Qt5.15.11`
 
 After booting, the development board will display the following desktop:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637049-4e4b9c47-b57e-46dd-9ee7-b409a8ee7ac8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350637049_4e4b9c47_b57e_46dd_9ee7_b409a8ee7ac8.png)
 
 ### 3.2 Video Playback Test
 
 Launch the video player by clicking the desktop icon`video player`:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637178-efb09d2e-10d3-453c-9abb-e25cc635490b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350637178_efb09d2e_10d3_453c_9abb_e25cc635490b.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637293-c7a76041-6b7d-4e07-af81-4ab600a2ab01.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350637293_c7a76041_6b7d_4e07_af81_4ab600a2ab01.png)
 
 **Note: Test video files are stored in the directory: /userdata/media/\*.mp4**
 
@@ -457,11 +457,11 @@ Click app icon:
 
 `musicplayer` is a lightweight audio test application, designed to verify the normal function of the sound card, and can also be used as a basic audio player.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278341970-5c6cd369-0684-4285-9340-adfa65217a71.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278341970_5c6cd369_0684_4285_9340_adfa65217a71.png)
 
 Click the application icon to bring up the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637399-4aa897d8-b1fe-4da2-b53c-3f8230996581.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350637399_4aa897d8_b1fe_4da2_b53c_3f8230996581.png)
 
 Tap the button at the bottom left corner to select the test audio file.`/userdata/piano2-CoolEdit.mp3`
 
@@ -473,11 +473,11 @@ Tap the button at the bottom left corner to select the test audio file.`/userdat
 
 The test supports the 4G module (EM05). Insert the 4G module and SIM card in case of power failure, and open the test application after the power-on system is started.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278342369-aae4c7ce-35ea-4a39-9d07-a58b76a04fb3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278342369_aae4c7ce_35ea_4a39_9d07_a58b76a04fb3.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637483-ededab21-2bb2-472c-8637-5089a9e2789f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350637483_ededab21_2bb2_472c_8637_5089a9e2789f.png)
 
 Click the Start button, and the program will automatically initiate the dial-up process to obtain an IP address, configure DNS, etc. Please wait for a few seconds. Once an IP address is displayed on the screen, you may exit the application. Refer to the Browser Test chapter for testing. If the application can successfully access the Forlinx Embedded official website, it indicates a successful connection..
 
@@ -485,13 +485,13 @@ Click the Start button, and the program will automatically initiate the dial-up 
 
 The OK3576-UP5 supports selecting between DHCP and Static modes through the "`Network`" network configuration application. In Static mode, you can configure the IP address, subnet mask, gateway, and DNS.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637564-30856ec4-c452-425e-93d4-bbb9d87695ac.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350637564_30856ec4_c452_425e_93d4_bbb9d87695ac.png)
 
 Click app icon:
 
 DHCP mode interface is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638103-81ac2b8d-215c-47a2-a195-d3617a47acdc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638103_81ac2b8d_215c_47a2_a195_d3617a47acdc.png)
 
 Select eth0 or eth1, choose DHCP, and click “Setting” at the bottom of the interface to restart the network and automatically obtain an IP address.
 
@@ -501,7 +501,7 @@ Clicking “Setting” will automatically tick the “Enable”, indicating that
 
 After entering the URL, click ping. The result will be displayed in the left-side prompt box, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789959803534-61ba7780-e305-4e98-8cf3-e9e85b71c89e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789959803534_61ba7780_e305_4e98_8cf3_e9e85b71c89e.png)
 
 **Note: The IP and other information configured in static mode will be saved in the system's relevant configuration files, so the network settings will persist after each reboot. However, the network information configured in DHCP mode does not need to be considered, as an IP address will be dynamically assigned each time the system restarts.**
 
@@ -511,7 +511,7 @@ After entering the URL, click ping. The result will be displayed in the left-sid
 
 **Note: If the development board’s time is abnormal, it may cause certificate issues. After using the browser, avoid turning off the power immediately. If you need to turn off the power, run the sync command in the command line first, otherwise, the browser may crash and fail to operate properly, requiring a re-flash to resolve the issue.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638409-bd701728-03a4-4bab-8ede-ad91dbaed543.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638409_bd701728_03a4_4bab_8ede_ad91dbaed543.png)
 
 Click app icon:
 
@@ -523,11 +523,11 @@ Click app icon:
 
 `Watchdog`is an application designed to test whether the watchdog function is working correctly.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638584-55c483cd-9351-4db8-ae16-b49f8044bfd8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638584_55c483cd_9351_4db8_ae16_b49f8044bfd8.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638672-3c485f52-a7be-4e80-a8eb-280543dd6dcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638672_3c485f52_a7be_4e80_a8eb_280543dd6dcb.png)
 
 Check the Feed dog box, then click the Start button: the watchdog will be enabled, and the program will automatically feed the dog periodically. Under normal conditions, the system will not reboot.
 
@@ -537,11 +537,11 @@ Uncheck the Feed dog box, then click Start: the watchdog will still run normally
 
 `Keypad`is used to test whether the platform’s built-in buttons are functional:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638752-6a745dfd-1200-4615-89ad-92aca9777757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638752_6a745dfd_1200_4615_89ad_92aca9777757.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638842-fee7b126-6062-4366-988d-1e0e86e2794f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638842_fee7b126_6062_4366_988d_1e0e86e2794f.png)
 
 On the OK3576-UP5 platform, the 5 physical buttons are mapped by default as: V+ for Volume+, V- for Volume-, the HOME button, MENU button, and ENTER button. When a key is pressed, the corresponding button in the test application will turn blue, indicating that the key function is working properly.
 
@@ -549,11 +549,11 @@ On the OK3576-UP5 platform, the 5 physical buttons are mapped by default as: V+ 
 
 Using the`RTC`, you can view and set the current system time:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350638923-6cde796b-5f90-4717-b86b-6e370b7967ea.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350638923_6cde796b_5f90_4717_b86b_6e370b7967ea.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639003-7dd68295-fde5-4dde-96a7-039c7544fcfa.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639003_7dd68295_fde5_4dde_96a7_039c7544fcfa.png)
 
 In Manual mode, enter the target time and click the Apply button to complete the configuration.
 
@@ -563,7 +563,7 @@ With the RTC backup battery installed, power off and restart the development boa
 
 `Terminal` is a tool for testing the on-board UART interface of the OK3576-UP5 board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639107-b6d9d1cc-b62a-42f1-8cc6-1b07065ebd6e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639107_b6d9d1cc_b62a_42f1_8cc6_1b07065ebd6e.png)
 
 4 x UART are routed out in total:   
 UART0, UART2, UART5 and UART8.
@@ -586,27 +586,27 @@ UART8 is a TTL level serial port.
 
 This test utilises UART8 (ttyS8) and requires a loopback connection (via jumper caps or DuPont wires) to perform the serial port test. According to the carrier board schematic, short the SPI2 transmit (TX) and receive (RX) pins, which correspond to PIN20 and PIN22 respectively.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639191-0958efab-114e-4418-8df7-2ca894903701.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639191_0958efab_114e_4418_8df7_2ca894903701.png)
 
 Once the shorting is complete, open the test program.
 
 In the interface, set the ttyS8, with a baud rate of 115200, 8 data bits and 1 stop bit. Click “Apply”. The parameters will be set successfully. Next, click the first button on the right to establish a connection.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639269-dd4e0516-3d59-4d0d-99ad-ff3c3b52024b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639269_dd4e0516_3d59_4d0d_99ad_ff3c3b52024b.png)
 
 Pressing the “1” key on the keyboard triggers automatic transmission; due to a short circuit, the application will receive the “1” and display it on the terminal.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639401-b613d983-c40e-4293-8510-419e9ce8ff46.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639401_b613d983_c40e_4293_8510_419e9ce8ff46.png)
 
 ### 3.11 Backlight Test
 
 `BackLight`is mipi screen backlight adjustment application:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639488-6d0ffd2b-96d4-45bf-8867-9f8e87589c37.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639488_6d0ffd2b_96d4_45bf_8867_9f8e87589c37.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789959837795-30bc9744-5bee-43fc-961c-813bd95c180e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789959837795_30bc9744_5bee_43fc_961c_813bd95c180e.png)
 
 Drag the slider on the screen to adjust the backlight brightness of the MIPI display; within the app, the minimum brightness setting is 5 and the maximum is 200. If the brightness you wish to adjust falls outside this range, you can adjust it via the command line or refer to the `4. Command Line Function Test/LCD Backlight Adjustment`settings.
 
@@ -614,21 +614,21 @@ Drag the slider on the screen to adjust the backlight brightness of the MIPI dis
 
 `Sqlite`is a SQLite database testing application.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639700-6869fc3a-33c5-4798-916f-7a0dc28eb2e1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639700_6869fc3a_33c5_4798_916f_7a0dc28eb2e1.png)
 
 Click app icon:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639776-f0c391d3-9c5e-4322-9efc-6220f555fda3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350639776_f0c391d3_9c5e_4322_9efc_6220f555fda3.png)
 
 ### 3.13 System Information Test
 
 Clicking the desktop icon displays system information.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778231447024-7a9d5dc7-3bd7-4e33-a951-ad52c5f04e91.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1778231447024_7a9d5dc7_3bd7_4e33_a951_ad52c5f04e91.png)
 
 Application Icons
 
-![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778231447150-25235b70-078c-4c8c-831b-e0f86ef34a31.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1778231447150_25235b70_078c_4c8c_831b_e0f86ef34a31.png)
 
 ## 4\. OK3576-UP5 Command Line Test
 
@@ -894,7 +894,7 @@ UART8 is a TTL level serial port.
 
 This test utilises UART8 (ttyS8) and requires a loopback connection (via jumper caps or DuPont wires) to perform the serial port test. According to the carrier board schematic, short the SPI2 transmit (TX) and receive (RX) pins, which correspond to PIN20 and PIN22 respectively.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607364257-c8489e3b-e653-4774-a981-b12565017b2b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607364257_c8489e3b_e653_4774_a981_b12565017b2b.png)
 
 Once the shorting is complete, open the test program.
 
@@ -913,9 +913,9 @@ If the following content is printed on the serial port after execution, it indic
 
 The test uses two RS485 ports, UART2 and UART5, for mutual testing. Before testing, you need to connect the A and B pins of the two RS485 interfaces: connect A to A, B to B, and GND to GND. The two RS485 ports are as follows: UART2 corresponds to PIN2 and PIN3 of P29, while UART5 corresponds to PIN2 and PIN3 of P31.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607364426-20d43cd9-b8c3-4790-8696-b1d6d929ad55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607364426_20d43cd9_b8c3_4790_8696_b1d6d929ad55.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607364593-0754d2f9-82f0-4605-ae42-2dc145a7d17d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607364593_0754d2f9_82f0_4605_ae42_2dc145a7d17d.png)
 
 Use two terminals to log in to the development board: one via the UART0 debug port, and the other via SS	
 
@@ -1150,7 +1150,7 @@ An arrow cursor appears on the screen, and the mouse is now working properly.
 
 The OK3576-UP5 development board features eight internal ADC channels. An adjustable resistor is connected to the saradc4, saradc5 and saradc6 channels. For the purposes of this test, saradc4 has been selected. The hardware diagram of the ADC pins is shown below; the input voltage is applied to pin 1 of P2. The chip uses a 1.8V reference voltage, corresponding to a maximum digital value of 4096 for its 12-bit ADC.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607364751-c97feb94-544d-4b13-8bde-461afd88597b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607364751_c97feb94_544d_4b13_8bde_461afd88597b.png)
 
 | **GPADC\_A**| **saradc4**|
 |:----------:|:----------:|
@@ -1202,9 +1202,9 @@ The OK3576-UP5 platform features two CAN bus interfaces. The CAN wiring method i
 
 Short-circuit CAN0 and CAN1, as shown in the diagram:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607364860-7772cf6d-cd07-4922-a1df-cd79a0e505f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607364860_7772cf6d_cd07_4922_a1df_cd79a0e505f9.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607364979-1a075f0c-cf69-4dfe-8257-8154720acc9b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607364979_1a075f0c_cf69_4dfe_8257_8154720acc9b.png)
 
 Short-circuit CAN0 and CAN1, then execute the following command in the development board terminal to view CAN network devices:
 
@@ -1978,15 +1978,15 @@ The OK3576-UP5 supports a 4G moduleEM05-CE. Connect the 4G module and insert the
 
 4G Module Installation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789959914853-6a8124fe-cd1f-4d2b-a6df-973935fe90f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789959914853_6a8124fe_cd1f_4d2b_a6df_973935fe90f3.png)
 
 SIM card type:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365078-72355395-c1b0-47b7-ae99-434a7c2af9a3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607365078_72355395_c1b0_47b7_ae99_434a7c2af9a3.png)
 
 Installation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789959929541-2047a4ed-cebb-4cfe-b21d-d8e9cde993cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789959929541_2047a4ed_cebb_4cfe_b21d_d8e9cde993cf.png)
 
 After connecting the module and powering on the development board and module, you can check the USB status using the lsusb command.
 
@@ -2064,15 +2064,15 @@ The OK3576-UP5 supports a 5G moduleRM500U. Connect the 5G module and insert the 
 
 5G Module Installation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789960060034-1f26eabc-7d32-4d58-8320-7822cf7c976d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789960060034_1f26eabc_7d32_4d58_8320_7822cf7c976d.png)
 
 SIM card type:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365293-31b68e03-23d0-4889-b96f-1505fb7d78e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607365293_31b68e03_23d0_4889_b96f_1505fb7d78e6.png)
 
 Installation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789960381007-9a0a70ed-9715-4d51-9798-ffb46f6035f7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789960381007_9a0a70ed_9715_4d51_9798_ffb46f6035f7.png)
 
 After connecting the module and powering on the development board and module, you can check the USB status using the lsusb command.：
 
@@ -2231,7 +2231,7 @@ The OK3576-UP5 features two Type-C ports, with automatic detection of Type-C HOS
 
 Plug in the USB disk to view the insertion details
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365533-34a1c78e-2724-4a72-996a-ef5a990df7a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607365533_34a1c78e_2724_4a72_996a_ef5a990df7a9.png)
 
 #### 4.22.2 Device Mode
 
@@ -2275,7 +2275,7 @@ C:\platform-tools-latest-windows\platform-tools> adb pull /root/iperf3.exe ./
 
 Two routed SPI channels: SPIA and SPIB are marked on the schematic of the OK3576 platform The default device names of SPIA and SPIB on the development board are spidev0.0 and spidev4.0 respectively.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365755-39bdb51b-8884-40e4-a322-f0fe27fecea3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607365755_39bdb51b_8884_40e4_a322_f0fe27fecea3.png)
 
 After short-circuiting, launch the test program. The following takes SPIA as an example to demonstrate the test procedure:
 
@@ -2395,11 +2395,11 @@ The OK3576-UP5 platform supports wake-up from sleep mode.
 
 Short press the power key:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365881-0e310eba-e965-4d2c-b805-507277b3eea3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607365881_0e310eba_e965_4d2c_b805_507277b3eea3.png)
 
 Short press the power key (KEY3) again to wake up the device:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365987-41294e09-ae7b-4dc2-ad49-dd91455a24d1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1789607365987_41294e09_ae7b_4dc2_ad49_dd91455a24d1.png)
 
 ### 4.28 Adding a Startup Script
 
@@ -3098,7 +3098,7 @@ Freeing pipeline ...
 
 For sensors like the OV13855 and other raw sensors, each sensor corresponds to five device nodes:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350647524-3e313d33-b0f7-47e8-be30-851a73f61941.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350647524_3e313d33_b0f7_47e8_be30_851a73f61941.png)
 
 `Mainpath:`An output node of the Rockchip ISP, capable of outputting full-resolution images, typically used for capturing photos or raw images.
 
@@ -3477,7 +3477,7 @@ The RK3576 VOP2 integrates four independent Video Ports (VP), each capable of dr
 
 The connection diagram for the RK3576 VP and the various display interfaces is as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350649172-31dd131c-7ef3-4c32-87fc-5fd2f51f176e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350649172_31dd131c_7ef3_4c32_87fc_5fd2f51f176e.png)
 
 ### 7.3 Specifications of Each Display Interface
 
@@ -3607,7 +3607,7 @@ During the development phase, performing full flashing every time can be time-co
 
 Firstly, once the OK3576-linux-source compilation is complete, the system image will be generated in the OK3576-linux-source/output/update/Image/ directory, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350652808-c09f8fc2-c809-4849-964d-fc8665b9d5bd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350652808_c09f8fc2_c809_4849_964d_fc8665b9d5bd.png)
 
 Taking the userdata partition as an example, here is the method for flashing it:
 
@@ -3679,6 +3679,6 @@ At this time, remove the TF card, and the system will automatically restart (do 
 
 Serial port information during the flashing process:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350654582-1845743c-1168-40ab-8418-0763a3ceb1da.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1786350654582_1845743c_1168_40ab_8418_0763a3ceb1da.png)
 
 If the device does not restart automatically after removing the TF card, you can complete the flashing process by restarting it manually. Please wait patiently whilst the data is being written.
