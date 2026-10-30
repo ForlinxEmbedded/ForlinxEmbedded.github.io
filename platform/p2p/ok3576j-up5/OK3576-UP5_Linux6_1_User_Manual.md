@@ -58,7 +58,7 @@ mlan                  667648  1 moal
 - root@OK3576-UP5-buildroot: Username “root”, hostname “forlinx”. This denotes executing operations with root privileges on the Forlinx development board.
 - //: Denotes explanatory notes about commands or printed information; no input required.
 
-# 1\. OK3576-UP5 Development Board Description
+## 1\. OK3576-UP5 Development Board Description
 
 The RK3576 is a low-power, high-performance processor based on the ARM64 architecture. It comprises four Cortex-A53 cores and four Cortex-A72 cores, as well as a dedicated NEON coprocessor and a neural network processing unit (NPU), and is suitable for use in computers, mobile phones, personal mobile internet devices and digital multimedia devices.
 
