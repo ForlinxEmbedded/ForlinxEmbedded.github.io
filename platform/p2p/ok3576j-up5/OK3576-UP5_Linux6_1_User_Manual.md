@@ -64,13 +64,13 @@ The RK3576 is a low-power, high-performance processor based on the ARM64 archite
 
 Connection method: Board-to-board.
 
-![](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image.png)
 
 
 
 **Front**
 
-![](image-1793349435307.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_1793349435307.png)
 
 **Back** 
 
@@ -157,7 +157,7 @@ Take PuTTY as an example to introduce the setting mode of the putty terminal:
 
 - Confirm the serial port number connected to the computer, checking the port number in Device Manager, based on the actual port recognized by the computer;
 
-![Image](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 - Open the PuTTY configuration interface. Set the “Serial line” field to the COM port number of your PC, and select 115200 as the baud rate.
 
@@ -194,11 +194,11 @@ Specific Operations:
 - Connect the eth0 of the development board to the computer via a network cable, power on the development board, and after the kernel starts, the Blue heartbeat light on the SoM will flash. After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;
 - Disable your computer’s firewall (this process will not be elaborated here, as it follows general operating procedures for computers). Press the Win+R shortcut keys to open the Run window, type “cmd”, and then click "OK";
 
-![Image](1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1720417653045_77232463_9341_42e0_99fd_fff6c8c185f3.png)
 
 - Use the ping command to test the network connection between the computer and the development board.
 
-![Image](1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1720417653364_4f5e0630_f435_4a4d_9c88_23a027ea9bcb.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -231,9 +231,9 @@ Path: Install the file Zilla tool on windows and set it up as shown in the follo
 
 Install FileZilla on Windows, open the program, and click on “Site Manager”.
 
-![Image](1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278323255_21c94a98_fc27_402d_b5a2_70a423c00aab.png)
 
-![Image](1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278323417_a7df861d_c88e_49c5_a0f1_a343c9f3270a.png)
 
 Once connecting, the directory structures of the PC and the development board will be displayed.
 
@@ -3526,11 +3526,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe programme and click “Install Drivers”.
 
-![Image](1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 The driver is installed successfully. Click “OK”.
 
-![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 #### 8.2.2 OTG Full Flashing Test
 
@@ -3590,11 +3590,11 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 Click to select the firmware.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368.png)
 
 Click “Start”; once the loader device is detected, the flashing process will begin automatically.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3568-c/OK3568-C_Linux6_1_118_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 Downloading firmware.
 
