@@ -64,13 +64,13 @@ The RK3576 is a low-power, high-performance processor based on the ARM64 archite
 
 Connection method: Board-to-board.
 
-![OK3588-UP5 board front](OK3576-UP5.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/OK3576-UP5.webp)
 
 
 
 **Front**
 
-![OK3588-UP5 board back](OK3576-UP5-back.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/OK3576-UP5-back.webp)
 
 **Back** 
 
@@ -119,7 +119,7 @@ Hardware preparation before system startup:
 
 - Display screen — connect the screen according to the development board interface (optional if display is not needed)
 
-  ![](image-003.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-003.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -157,7 +157,7 @@ Take PuTTY as an example to introduce the setting mode of the putty terminal:
 
 - Confirm the serial port number connected to the computer, checking the port number in Device Manager, based on the actual port recognized by the computer;
 
-![Image](1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1726214204730_e2277f30_f460_4c2b_8965_b807e4ac62ef.png)
 
 - Open the PuTTY configuration interface. Set the “Serial line” field to the COM port number of your PC, and select 115200 as the baud rate.
 
@@ -194,11 +194,11 @@ Specific Operations:
 - Connect the eth0 of the development board to the computer via a network cable, power on the development board, and after the kernel starts, the Blue heartbeat light on the SoM will flash. After the network card connected to the computer starts normally, the network card light will flash rapidly. At this point, you can test the network connection;
 - Disable your computer’s firewall (this process will not be elaborated here, as it follows general operating procedures for computers). Press the Win+R shortcut keys to open the Run window, type “cmd”, and then click "OK";
 
-![](Image_20261029145559.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/Image_20261029145559.png)
 
 - Use the ping command to test the network connection between the computer and the development board.
 
-![Image](1718954728585_22cc0ffd_0558_45ae_90c2_d581345a261a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1718954728585_22cc0ffd_0558_45ae_90c2_d581345a261a.png)
 
 Data is returned, indicating that the network connection is normal.
 
@@ -231,7 +231,7 @@ Path: Install the file Zilla tool on windows and set it up as shown in the follo
 
 Install FileZilla on Windows, open the program, and click on “Site Manager”.
 
-![Image](1718954729099_282246fe_f588_46d3_b4ea_4c670fb661bc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1718954729099_282246fe_f588_46d3_b4ea_4c670fb661bc.png)
 
 Once connecting, the directory structures of the PC and the development board will be displayed.
 
@@ -515,7 +515,7 @@ After entering the URL, click ping. The result will be displayed in the left-sid
 
 Click app icon:
 
-![Image](1718954745936_2b14cb7c_5b24_4d52_b285_03c603531ff6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1718954745936_2b14cb7c_5b24_4d52_b285_03c603531ff6.png)
 
 **Note: Click File-> Quit above to exit the browser.**
 
@@ -2236,7 +2236,7 @@ Plug in the USB disk to view the insertion details
 
 Connect the Type-C0 port on the development board to a PC using a USB cable; the development board will be recognised by the PC as a slave device. You can interact with the device or transfer files via ADB.
 
-![Image](1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1718954727852_9c9b1c4a_e1c9_4599_b47f_7248258645a1.png)
 
 📌 Path:`User Materials/3-Tools/platform-tools-latest-windows.zip`
 
@@ -3524,11 +3524,11 @@ Extract the file above to any directory and run it with administrator privileges
 
 Open the DriverInstall.exe programme and click “Install Drivers”.
 
-![Image](1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278371049_36807242_44b2_4463_b794_e1bc53500a6d.png)
 
 The driver is installed successfully. Click “OK”.
 
-![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
 #### 8.2.2 OTG Full Flashing Test
 
@@ -3554,21 +3554,21 @@ The extraction directory for Rockchip's development tools can be arbitrary, but 
 
 Open the Rockchip development tool:
 
-![Image](image-070.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-070.png)
 
 Click "Advanced Functions" -> "Erase All" to erase the operation.
 
-![Image](image-071.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-071.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will analyse the firmware, so please wait a moment. After the firmware is loaded, click "Upgrade".
 
-![Image](image-072.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-072.png)
 
 **MASKROM Mode Flashing：**
 
 If the loader is corrupted and the device fails to enter Loader mode, press and hold the maskrom key (KEY5) on the carrier board, then press the reset key to enter maskrom mode for flashing.
 
-![Image](image-073.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-073.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming.
 
@@ -3588,11 +3588,11 @@ FactoryTool is used for batch OTG flashing in the factory. It does not require r
 
 Click to select the firmware.
 
-![Image](1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368-1793259731058.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278372564_b2d07d5e_1a3a_489b_833e_a89f8b946368-1793259731058.png)
 
 Click “Start”; once the loader device is detected, the flashing process will begin automatically.
 
-![Image](1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1719278373317_68796c78_84ac_4218_92c9_0a30ec517c45.png)
 
 Downloading firmware.
 
@@ -3614,23 +3614,23 @@ Taking the userdata partition as an example, here is the method for flashing it:
 
 Use the Type-C cable to connect the development board and the host, press and hold the recovery key (key1) without releasing, then press the reset key (key4) to reset the system, and release the recovery key after about two seconds. The system will prompt “ Find Loader Device”.
 
-![Image](image-080.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-080.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![Image](image-081.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-081.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](image-082.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-082.png)
 
 Check the partition, and click the right test area of the partition to select the partition mirror.
 
-![Image](image-083.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-083.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![Image](image-084.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-084.png)
 
 **8.2.3.2 Independent Partition Overwriting in MASKROM Mode**
 
