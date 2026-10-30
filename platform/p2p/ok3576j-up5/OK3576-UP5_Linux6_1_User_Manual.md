@@ -119,7 +119,7 @@ Hardware preparation before system startup:
 
 - Display screen — connect the screen according to the development board interface (optional if display is not needed)
 
-  ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-003.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_003.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -3554,21 +3554,21 @@ The extraction directory for Rockchip's development tools can be arbitrary, but 
 
 Open the Rockchip development tool:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-070.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_070.png)
 
 Click "Advanced Functions" -> "Erase All" to erase the operation.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-071.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_071.png)
 
 Click the "Upgrade Firmware" tab, click the "Firmware" button to select the full upgrade image update.img. The program will analyse the firmware, so please wait a moment. After the firmware is loaded, click "Upgrade".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-072.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_072.png)
 
 **MASKROM Mode Flashing：**
 
 If the loader is corrupted and the device fails to enter Loader mode, press and hold the maskrom key (KEY5) on the carrier board, then press the reset key to enter maskrom mode for flashing.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-073.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_073.png)
 
 At this time, the system will prompt that a maskrom device is found. The programming process is consistent with the loader mode. It is better to use the update. img for programming.
 
@@ -3614,23 +3614,23 @@ Taking the userdata partition as an example, here is the method for flashing it:
 
 Use the Type-C cable to connect the development board and the host, press and hold the recovery key (key1) without releasing, then press the reset key (key4) to reset the system, and release the recovery key after about two seconds. The system will prompt “ Find Loader Device”.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-080.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_080.png)
 
 Click the "Device Partition Table" button to automatically read the partition . address.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-081.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_081.png)
 
 It will ask if you want to update the download address. Click "Yes," and the partition table will be read successfully.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-082.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_082.png)
 
 Check the partition, and click the right test area of the partition to select the partition mirror.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-083.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_083.png)
 
 Click the “Execute” button to automatically flash and restart.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-084.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_084.png)
 
 **8.2.3.2 Independent Partition Overwriting in MASKROM Mode**
 
