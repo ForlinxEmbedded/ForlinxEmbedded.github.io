@@ -3659,11 +3659,11 @@ Tool path:`User Materials/3-Tools/SDDiskTool_v1.78.zip`
 
 Copy SDDiskTool\_v1.78.zip to any directory on Windows. Run SD\_Firmware\_Tool.exe with administrator privileges.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-087.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_087.png)
 
 Select the disk device, tick the`Firmware Upgrade`, and select update.img. Click to start creating.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image-088.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/image_088.png)
 
 Format the TF card, then click “Yes”.
 
