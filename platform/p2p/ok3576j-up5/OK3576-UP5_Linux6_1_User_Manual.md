@@ -42,9 +42,9 @@ Additionally, the manual includes explanations of some symbols and formats.、
 | **Note** | Note or particularly important information must be read carefully.|
 | 📚 | Relevant explanations regarding the testing section|
 | ️🛤️ ️ | Related paths.|
-| <font style="color:blueBlue font on gray background | Serial output information after command input|
+| <font style="color:#0000FF;"><font style="color:blue;background-color:#e5e5e5;">Blue font on gray background</font></font> | Serial output information after command input|
 | // | Explanation of input commands or output information:|
-| Username@Hostname| root@OK3576-UP5-buildroot:~# : Development board serial port and network login account information, Ubuntu account information. <br />You can use this information to determine the functional operating environment. |
+| Username@Hostname| root@OK3576-UP5-buildroot:~#：<br />Development board serial port and network login account information, Ubuntu account information. <br />You can use this information to determine the functional operating environment. |
 
 Example: Checking the Loading Status of the AW-CM358 Module Driver
 
@@ -147,8 +147,8 @@ To ensure that the latest driver is installed, please click Uninstall Driver bef
 
  **Note:**
 
-- **Hardware Requirements: Type-C for connecting PC and development board.**
-- **Software Requirements:  A serial terminal application must be installed on the PC Windows. There are various terminal programs available, and you may choose any one you are familiar with.**
+- **Hardware Requirements: Type-C for connecting PC and development board;**
+- **Software Requirements:  A serial terminal application must be installed on the PC Windows. There are various terminal programs available, and you may choose any one you are familiar with;**
 - **Settings: Baud rate 115200, 8 data bits, 1 stop bit, no parity/flow.**
 - **Serial Port: Used for terminal login;  
 Login User: The serial terminal automatically logs in as the root user.**
@@ -631,7 +631,6 @@ Application Icons
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Manual/1778231447150_25235b70_078c_4c8c_831b_e0f86ef34a31.png)
 
 ## 4\. OK3576-UP5 Command Line Test
-
 The OK3576-UP5 platform offers a comprehensive set of command-line programs for reference purposes. You can use these programs to verify the interfaces and functions of the development board. However, because these test programs have limited capabilities, it is not advisable to use Forlinx’s test programs directly for developing end products. Instead, it's recommended to create your own applications tailored to actual usage scenarios.
 
 📌 Path to the executable file on the development board:`/usr/bin/*`
@@ -1172,10 +1171,10 @@ root@OK3576-UP5-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 
 **Note: There is currently an issue with byte alignment between CAN and DMA in 3576, which prevents CAN from using DMA. If you need to use the CAN protocol on the RK3576, please bear the following two points in mind:**
 
-**CAN Initialisation  
+CAN Initialisation:  
 To use the standard CAN protocol (not CAN-FD), the following two configurations are required:   
-Device Tree Configuration  
-Locate the “can0” and “can1” nodes in the “rk3576.dtsi” file and add the following properties:**
+Device Tree Configuration:  
+Locate the “can0” and “can1” nodes in the “rk3576.dtsi” file and add the following properties:
 
 ```bash
 rockchip,rx-max-data = <4>;
@@ -1515,7 +1514,7 @@ Settings for eth0:
 
 #### 4.16.2 Static IP Setting
 
-**Note: **
+**Note:** 
 
 - **This method sets a static network IP. Once configured, the network interface card (NIC) should obtain the corresponding network IP, which indicates normal operation. If the network is unreachable (ping fails), ensure that multiple NIC in the same subnet are configured correctly. Adjust the routing based on the scenario or use different subnets by default;**
 
@@ -1767,7 +1766,7 @@ Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 
 ### 4.18 WiFi Test
 
-**Note: **
+**Note:** 
 
 - **Due to varying network environments, please configure according to your actual situation when conducting this experiment;**
 - **The OK3576-UP5 platform supports the AW-CM358 Wi-Fi and Bluetooth combo module;**
@@ -1827,7 +1826,7 @@ PING s-526319.gotocdn.com (211.149.226.120) 56(84) bytes of data.
 rtt min/avg/max/mdev = 31.530/32.232/33.500/0.635 ms
 ```
 
-To stop, press Ctrl+C. If the ping is successful, it indicates that the network is now working properly.
+Press Ctrl+C to stop. If the ping is successful, it indicates that the network is now working properly.
 
 #### 4.18.2 AP Mode
 
@@ -3579,9 +3578,11 @@ At this time, the system will prompt that a maskrom device is found. The program
 
 FactoryTool is used for batch OTG flashing in the factory. It does not require reading an image file and can batch-flash large images. If RKDevTool does not meet compatibility requirements, this method can also be attempted. Before using, extract it to a directory with only English characters. Connect the development board and host using a Type-C cable. Press and hold the recovery button, press the reset button for the system reset, and after about two seconds, release the recovery button. There will be prompts on the Rockchip development tool : loader device found
 
-**Note: Device detection occurs when the recovery button is pressed during the power-on of the development board.**
+**Note: **
 
-Note: The extraction directory for Rockchip's development **tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
+- **Device detection occurs when the recovery button is pressed during the power-on of the development board;**
+
+- **The extraction directory for Rockchip's development tools can be arbitrary, but users have reported that the directory should contain only English characters. If the development tool interface does not match the image shown below, consider extracting it to a directory with only English characters.**
 
 📌 Path:`User Materials\3-Tools\FactoryTool_v1.91.zip`
 
@@ -3647,8 +3648,10 @@ Once parameter.txt is selected, it will automatically populate the addresses for
 
 TF card making and testing.
 
-- Note: Testing indicates that the **maximum supported TF card capacity is 16 GB. Using a TF** card of 32 GB or larger may result in flashing failure.
-- **Note: When flashing via TF card, the system will enter the command-line interface with the user root@buildroot. Please wait patiently for the flashing process to complete.**
+**Note:**
+
+- **Testing indicates that the maximum supported TF card capacity is 16 GB. Using a TF card of 32 GB or larger may result in flashing failure;**
+- **When flashing via TF card, the system will enter the command-line interface with the user root@buildroot. Please wait patiently for the flashing process to complete.**
 
 Tool path:`User Materials/3-Tools/SDDiskTool_v1.78.zip`
 
