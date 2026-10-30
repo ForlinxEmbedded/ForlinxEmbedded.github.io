@@ -2,7 +2,7 @@
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
-# Copyright
+## Copyright
 
 The copyright of this manual belongs to Baoding Forlinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
@@ -32,17 +32,17 @@ Additionally, the manual includes explanations of some symbols and formats.
 | 📚 | Relevant explanations regarding the testing section. |
 | 🛤️ ️️ | Related paths.|
 
-# Application Scope
+## Application Scope
 
 This hardware manual applies to Forlinx development board and FET3576-UP5 SoM (version 1.1 and above).
 
-# Revision History
+## Revision History
 
 | **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 09/10/2026 | V1.0| V1.1| V1.2 and above| Initial Version|
 
-# 1. RK3576 Description
+## 1. RK3576 Description
 
 It is a high - performance, low - power application processor chip that integrates four Cortex - A72 cores, four Cortex - A53 cores, and an independent NEON coprocessor. It is suitable for ARM PC, edge computing, personal mobile Internet devices, and other multimedia products.
 
@@ -74,9 +74,9 @@ Target Applications:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535903750_ded114e7_1c78_46be_9001_4d37cf04010f.png)
 
-# 2. FET3576-UP5 SoM Description
+## 2. FET3576-UP5 SoM Description
 
-## 2.1 FET3576-UP5 Appearance Diagram
+### 2.1 FET3576-UP5 Appearance Diagram
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905428_84608c59_0b12_43d9_8381_2b91b21f222c.png)
 
@@ -86,7 +86,7 @@ Target Applications:
 
 **Back**
 
-## 2.2 FET3576-UP5 SoM Dimension Diagram
+### 2.2 FET3576-UP5 SoM Dimension Diagram
 
 FET3576-UP5 SoM Dimension Diagram：
 
@@ -98,9 +98,9 @@ Dimensions: 50mm × 50mm, dimensional tolerance ±0.15mm. For more dimensional d
 
 Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
-## 2.3 Performance Parameter
+### 2.3 Performance Parameter
 
-### 2.3.1 System Frequency
+#### 2.3.1 System Frequency
 
 | **Name**| **Specification**| | | | **Description**|
 |:----------:|:----------:|----------|----------|:--------:|:----------:|
@@ -109,14 +109,14 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | System Clock Arm® Cortex®-A53| -| -| 2200| MHz||
 | System Clock Arm® Cortex®-M0| -| -| -| -| -|
 
-### 2.3.2 Power Parameter
+#### 2.3.2 Power Parameter
 
 | **Parameter**| **Pin No.**| **Specification**| | | | **Description**|
 |:----------:|:----------:|:----------:|:--------:|----------|----------|:----------:|
 | | | **Minimum**| **Typical** | **Maximum**| **Unit**||
 | Main Power Voltage| 12V| 5| 12| 13| V| -|
 
-### 2.3.3 Working Environment
+#### 2.3.3 Working Environment
 
 | **Parameter**| | **Specification**| | | | **Description**|
 |:----------:|----------|:----------:|:--------:|:--------:|----------|:----------:|
@@ -126,7 +126,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | Humidity| Working Environment| 10| -| 90| ％RH| No Condensation|
 | | Storage Environment| 5| -| 95| ％RH||
 
-### 2.3.4 SoM Interface Speed
+#### 2.3.4 SoM Interface Speed
 
 | **Parameter**| **Specification**| | | | **Description**|
 |:----------:|:----------:|----------|:--------:|----------|:----------:|
@@ -139,7 +139,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | CAN Communication Speed| -| -| 1| Mbps| -|
 | PCIe2.1| -| -| 5| Gbps| -|
 
-### 2.3.5 ESD Features
+#### 2.3.5 ESD Features
 
 | **Parameter**| **Specification**| | **Unit**| **Application Scope**|
 |:----------:|:----------:|----------|:----------:|:----------:|
@@ -147,15 +147,15 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | ESD HBM(ESDA/JEDEC JS-001-2017)| -2000| 2000| V| All signals routed out from the SoM.|
 | ESD CDM(ESDA/JEDEC JS-002-2018)| -250| 250| V| All signals routed out from the SoM.|
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**The above data is provided by Rockchip;**</font>
+- **The above data is provided by Rockchip;**
 
-- <font color="black">**As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.**</font>
+- **As all the signals exported from SoM are electrostatic sensitive signals, the interfaces should be well protected from static electricity in the carrier board design and the SoM transportation, assembling, and use.**
 
-## 2.4 SoM Interfaces
+### 2.4 SoM Interfaces
 
-### 2.4.1 FET3576x-UP5 SoM Interfaces
+#### 2.4.1 FET3576x-UP5 SoM Interfaces
 
 | **Function**| **Quantity**| **Parameter**|
 |:----------:|:----------:|----------|
@@ -175,9 +175,9 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | ADC| 4| Supports 4 x 12bit single-ended input SAR-ADC with sampling rate up to 1MS/s;|
 | GPIO| 16| All GPIOs can be used to generate interrupts; <br />Supports level-triggered and edge-triggered interrupts; <br />Supports configuration of level-triggered polarity; <br />Supports rising-edge, falling-edge and dual-edge interrupts; <br />Supports configuration of pull-up/pull-down (weak pull-up and weak pull-down);<br />Supports configuration of drive capability. |
 
-<font color="black">**Note: The UP5 definition includes a RESERVE area. This area's function is divided according to the platform. It has different functions. If you have a need, please check the “REFERENCE FOR REUSAGE” table.**</font>
+**Note: The UP5 definition includes a RESERVE area. This area's function is divided according to the platform. It has different functions. If you have a need, please check the “REFERENCE FOR REUSAGE” table.**
 
-### 2.4.2 FET3576-UP5 CPU Interfaces
+#### 2.4.2 FET3576-UP5 CPU Interfaces
 
 | **Function**| **Quantity**| **Parameter**|
 |:----------:|:----------:|----------|
@@ -211,19 +211,19 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 - **The parameters in the table are based on hardware design or theoretical CPU values;</font>**
 
-- <font color="black">**The interface employs GPIO multiplexing, representing the theoretical maximum connections.**</font>
+- **The interface employs GPIO multiplexing, representing the theoretical maximum connections.**
 
-- <font color="black">**\*Video Port**</font>
-  - **<font color="black">Video Port0 supports up to 4K@120Hz with 10 bit data</font>**
-  - **<font color="black">Video Port1 supports up to 2560x1600@60Hz with 10-bit data</font>**
-  - **<font color="black">Video Port2 supports up to 1920x1080@60Hz with 8-bit data</font>**
-  - **<font color="black">Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</font>**
-  - **<font color="black">Port1 and Port2 may connect to parallel output interface</font>**
-- <font color="black">**\*The maximum design clock frequency for a single TDM bus is 50MHz.** **When using TDM mode, the theoretically supported number of audio channels can be calculated by combining the audio sampling frequency and resolution to assess whether it meets the project requirements.</font>**
+- **\*Video Port**
+  - **Video Port0 supports up to 4K@120Hz with 10 bit data</font>**
+  - **Video Port1 supports up to 2560x1600@60Hz with 10-bit data</font>**
+  - **Video Port2 supports up to 1920x1080@60Hz with 8-bit data</font>**
+  - **Each Video Port may connect to any of HDMI/eDP/DP/DSI-2</font>**
+  - **Port1 and Port2 may connect to parallel output interface</font>**
+- **\*The maximum design clock frequency for a single TDM bus is 50MHz.** **When using TDM mode, the theoretically supported number of audio channels can be calculated by combining the audio sampling frequency and resolution to assess whether it meets the project requirements.**
 
-## 2.5 FET3576x-UP5 SoM Pin Definitions
+### 2.5 FET3576x-UP5 SoM Pin Definitions
 
-### 2.5.1 FET3576x-UP5 SoM Pin Schematic
+#### 2.5.1 FET3576x-UP5 SoM Pin Schematic
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535905796_2e5c8e00_125d_487f_a128_cf70338ef97f.png)
 
@@ -233,27 +233,27 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535906216_e63779e8_583b_4078_b776_363c7db2d885.png)
 
-### 2.5.2 FET3576-UP5 SoM Pin Function Description
+#### 2.5.2 FET3576-UP5 SoM Pin Function Description
 
-<font color="black">**Note:**</font>
+**Note:**
 
-<font color="black">**Num ——SoM connector pin no.:**</font>
+**Num ——SoM connector pin no.:**
 
-<font color="black">**Ball —— CPU pin ball no.**</font>
+**Ball —— CPU pin ball no.**
 
-<font color="black">**GPIO ——CPU pin general I/O port serial number**</font>
+**GPIO ——CPU pin general I/O port serial number**
 
-<font color="black">**Vol —— Pin signal electrical level**</font>
+**Vol —— Pin signal electrical level**
 
-<font color="black">**Note:**</font>
+**Note:**
 
-<font color="black">**Signal Name — The network name on the SoM Connector.** </font>
+**Signal Name — The network name on the SoM Connector.** 
 
-<font color="black">**Pin Description — Description of the SoM pin signal name.**</font>
+**Pin Description — Description of the SoM pin signal name.**
 
-<font color="black">**For various functional expansion requirements, please refer to the user document "FET3576x- UP5 Pin Multiplexing Table". However, for more detailed information, it is recommended that you consult the relevant documentation, the chip datasheet, and the reference manual.**</font>
+**For various functional expansion requirements, please refer to the user document "FET3576x- UP5 Pin Multiplexing Table". However, for more detailed information, it is recommended that you consult the relevant documentation, the chip datasheet, and the reference manual.**
 
-<font color="black">**SYSTEM**</font>
+**SYSTEM**
 
 | **UP5 Standard Interface Functions**| **FET3576x-UP5 Pinout Functions**| **Num**| **Ball**| **GPIO**| **Vol**| **Pin Description**|
 |----------|----------|----------|----------|----------|----------|----------|
@@ -717,7 +717,7 @@ Plate making process: 1.6mm thickness, 10-layer immersion gold PCB.
 | RES30| NC| -| -| -| -| -|
 | RES31| NC| -| -| -| -| -|
 
-## 2.6 SoM Hardware Design Description
+### 2.6 SoM Hardware Design Description
 
 **Power Pin**
 
@@ -744,9 +744,9 @@ Refer to “Appendix IV. Minimum System Diagram” However, in most cases, it is
 
 For the design of the SoM's peripheral circuits, please refer to Section 3.5, "OK3576x-UP5 Carrier Board Description".
 
-# 3. OK3576- UP5 Embedded Development Platform Description
+## 3. OK3576- UP5 Embedded Development Platform Description
 
-## 3.1 OK3576-UP5 Development Board Interface Diagram
+### 3.1 OK3576-UP5 Development Board Interface Diagram
 
 Connection: LGA soldered
 
@@ -754,7 +754,7 @@ Connection: LGA soldered
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535909895_7898b8de_f6ce_47e2_a5ee_fe04866eac17.png)
 
-## 3.2 OK3576-UP5 Development Board Dimension Diagram
+### 3.2 OK3576-UP5 Development Board Dimension Diagram
 
 OK3576-UP5 Development Board Dimension Diagram：
 
@@ -772,7 +772,7 @@ The OK3576x-UP5 carrier board is equipped with two mounting holes for heat sinks
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535910146_ca25457b_cb71_423e_8d60_0ccc47a55801.png)
 
-## 3.3 Naming Rules
+### 3.3 Naming Rules
 
 A-B-C+D E F :G-H
 
@@ -793,7 +793,7 @@ A-B-C+D E F :G-H
 | -| Hyphen| -| Grade Mark Connector|
 | H| Grade Identification| Blank| Mass Production|
 
-## 3.4 Carrier Board Interfaces
+### 3.4 Carrier Board Interfaces
 
 | **Function**| **Quantity**| **Parameter**|
 |:----------:|:----------:|----------|
@@ -816,17 +816,17 @@ A-B-C+D E F :G-H
 | SPI| 2| Led out via 2.54 mm pitch pins|
 | FAN| 1| On-board fan connector |
 
-<font color="black">**Note: The parameters in the table are the theoretical values of hardware design or CPU;**</font>
+**Note: The parameters in the table are the theoretical values of hardware design or CPU;**
 
-## 3.5 OK3576x-UP5 Carrier Board Description
+### 3.5 OK3576x-UP5 Carrier Board Description
 
-<font color="black">**Note: **</font>
+**Note: **
 
 - **The component UID with "_DNP" mark in the diagram below represents it is not soldered by default;**
   
 - **The screenshots in this chapter are provided only for the convenience of carrier board function description. They may not fully conform to the actual principles. Please strictly follow the original schematic files for the design.**
 
-### 3.5.1 Carrier Board Power
+#### 3.5.1 Carrier Board Power
 
 It uses a 12V power adapter for the power supply, and the power connector is a DC050 socket. The DIP switch S2 serves as the power switch for the development board. Move the switch in the direction indicated on the carrier board to turn it on or off. A TVS diode is connected in parallel after switch S2 for ESD protection. Fuse F10 provides overcurrent protection. Diode D3 works alongside F10 to offer reverse-connection protection.
 
@@ -858,12 +858,12 @@ After the SoM starts up normally from the 12V supply, it outputs a high level th
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911059_34fa0e05_494e_4d2b_995b_7b5f0db1a0c7.png)
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**When designing independently, please strictly adhere to the power-up sequencing;**</font>
-- <font color="black">**The selection of step-up/step-down converter chips and their external layout must refer to the corresponding chip manuals to ensure proper power return paths.**</font>
+- **When designing independently, please strictly adhere to the power-up sequencing;**
+- **The selection of step-up/step-down converter chips and their external layout must refer to the corresponding chip manuals to ensure proper power return paths.**
 
-### 3.5.2 Reset and On/Off Signal
+#### 3.5.2 Reset and On/Off Signal
 
 nRESET is the SoM reset‑signal input. For debugging convenience, it is connected to a physical button.
 
@@ -873,9 +873,9 @@ PWRON_L serves as the power-on/power-off signal input for the SoM; for ease of d
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916953_91e7a947_e78c_4bc0_bc01_65e20e90259e.png)
 
-<font color="black">**Note: To facilitate reset and power-on/off operations, it is recommended that these two buttons be routed out on the design of the carrier board.**</font>
+**Note: To facilitate reset and power-on/off operations, it is recommended that these two buttons be routed out on the design of the carrier board.**
 
-### 3.5.3 Boot Configuration
+#### 3.5.3 Boot Configuration
 
 RK3576 supports multiple boot modes. After the chip reset is completed, the built-in boot code can boot from the following interface devices. The specific boot sequence can be selected according to actual application requirements:
 
@@ -884,7 +884,7 @@ RK3576 supports multiple boot modes. After the chip reset is completed, the buil
 - UFS
 - SDMMC0 Card
 
-If no boot code is detected in the above devices, system code can be downloaded to these devices via the USB2.0 OTG0 interface using the USB2_OTG0_DP/DM signals. It also supports firmware burning through the USB 3.2 Gen1x1 OTG0 interface using the USB3_OTG0_SSRX1P/N and USB3_OTG0_SSTX1P/N signals. <font color="black">**Note: If USB3.0 firmware upgrade is required while supporting 2Lane DP, the USB3.2 Gen1x1 OTG0 + DP 2‑Lane (Swap ON) solution must be adopted.**</font>
+If no boot code is detected in the above devices, system code can be downloaded to these devices via the USB2.0 OTG0 interface using the USB2_OTG0_DP/DM signals. It also supports firmware burning through the USB 3.2 Gen1x1 OTG0 interface using the USB3_OTG0_SSRX1P/N and USB3_OTG0_SSTX1P/N signals. **Note: If USB3.0 firmware upgrade is required while supporting 2Lane DP, the USB3.2 Gen1x1 OTG0 + DP 2‑Lane (Swap ON) solution must be adopted.**
 
 **Boot Sequence Selection:**
 
@@ -914,13 +914,13 @@ The LRADC is utilized to enter Recovery mode by shorting KEY1 to ground, while t
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911160_c874d16a_ef59_4bd1_8a3e_99af804da8af.png)
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**When doing key acquisition, ESD protection is required near the keys. And 0 key value must be connected in series with a 100ohm resistor to strengthen the anti-static surge capacity (If there is only one button, ESD must be close to the button, ESD → 100ohm resistor → 1nF → chip pin);**</font>
+- **When doing key acquisition, ESD protection is required near the keys. And 0 key value must be connected in series with a 100ohm resistor to strengthen the anti-static surge capacity (If there is only one button, ESD must be close to the button, ESD → 100ohm resistor → 1nF → chip pin);**
 
-- <font color="black">**To ensure that USB programming can be performed normally, please design the carrier board with two buttons connected to the USB OTG interface for programming purposes.**</font>
+- **To ensure that USB programming can be performed normally, please design the carrier board with two buttons connected to the USB OTG interface for programming purposes.**
 
-### 3.5.4 System Initialization Configuration Signal
+#### 3.5.4 System Initialization Configuration Signal
 
 In FET3576, there is an important signal that affects the system boot configuration. It must be configured before power‑on and kept stable.
 
@@ -944,7 +944,7 @@ Table 3.5.4.1 FET3576 System Initialization Configuration Signal Description
 |:----------:|:----------:|----------|
 | SDMMC0_DET_L| Pull-up| SDMMC/ARM JTAG Pin Multiplexing Selection Control Signal:   <br />0: Recognized as SD card inserted, SDMMC/JTAG pins are multiplexed for SDMMC0 function.<br />1: Not recognized as SD card inserted, SDMMC/JTAG pins are multiplexed for JTAG function (Default). |
 
-### 3.5.5 JTAG and UART Debug Circuits
+#### 3.5.5 JTAG and UART Debug Circuits
 
 The JTAG interface on the RK3576 chip complies with the IEEE 1149.1 standard; a PC can connect to the DSTREAM emulator via SWD mode (two-wire mode) to debug the ARM core within the chip.
 
@@ -975,47 +975,47 @@ OK3576-UP5 development board uses a USB-to-UART chip to convert the UART Debug s
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911647_6ccefd66_54e1_4f69_b09c_c7f9e356fdee.png)
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**For future debugging convenience, route out these debug ports on custom carrier boards;**</font>
+- **For future debugging convenience, route out these debug ports on custom carrier boards;**
 
-- <font color="black">**It is recommended to retain U1 to effectively prevent current from flowing back to the CPU through DEBUG_TX/RX when the core module is not powered, which could affect startup or even cause damage.**</font>
+- **It is recommended to retain U1 to effectively prevent current from flowing back to the CPU through DEBUG_TX/RX when the core module is not powered, which could affect startup or even cause damage.**
 
-### 3.5.6 IIC Expanded for IO
+#### 3.5.6 IIC Expanded for IO
 
 To expose richer interfaces, the enable and reset signals on the carrier board are implemented by an I2C-to-IO converter chip U3, as shown in the schematic below.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911734_434522b4_635e_4fce_bc46_5cabcc821d32.png)
 
-### 3.5.7 SARADC Interface
+#### 3.5.7 SARADC Interface
 
 OK3576-UP5 routes SARADC_VIN4/VIN5/VIN6 via P2; R13 is a variable resistor. By short-circuiting SARADC_VIN4/VIN5/VIN6 to pins 3, 5 and 6 of P2, the voltage changes can be read via the ADC whilst adjusting the resistance value of the R371 variable resistor. As shown in the figure below：
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535911814_262c63b3_ad3e_4037_8ab1_4d40f6a91d53.png)
 
-### 3.5.8 TF Card
+#### 3.5.8 TF Card
 
 The P5 is the TF Card interface that supports system boot and programming. The power for the TF card is supplied by the SoM.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912020_b35070e6_c46f_4075_8dd4_ca8d131c8d46.png)
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**SDIO impedance requirements:**</font>
+- **SDIO impedance requirements:**
 
-  - <font color="black">Single‑ended impedance: 50ohm.</font>
+  - Single‑ended impedance: 50ohm.
 
-  - <font color="black">Signal length matching tolerance: ±50 mil.</font>
+  - Signal length matching tolerance: ±50 mil.
 
-- <font color="black">**The VDD pin on the SD card is supplied with a voltage of 3.3 V; the decoupling capacitor must not be omitted and should be placed close to the card socket during layout.**</font>
+- **The VDD pin on the SD card is supplied with a voltage of 3.3 V; the decoupling capacitor must not be omitted and should be placed close to the card socket during layout.**
 
-### 3.5.9 RTC Circuit
+#### 3.5.9 RTC Circuit
 
 The OK3576-UP5 features an on-board external RTC function to enable more accurate timing and lower power consumption. The schematic diagram is shown below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912127_175fe759_a191_4e8c_b91e_708896ac4c48.png)
 
-### 3.5.10 Ethernet Circuit
+#### 3.5.10 Ethernet Circuit
 
 It supports 1000/100/10M adaptive network port, led out via RJ45.
 
@@ -1027,27 +1027,27 @@ It supports 1000/100/10M adaptive network port, led out via RJ45.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912485_15547652_e3f5_4604_97b5_32d197656da0.png)
 
-<font color="black">**Note：**</font>
+**Note：**
 
-- <font color="black">**In RGMII mode, the internal TX/RX clock path of RK3576 chip integrates delayline, which supports adjustment; default configuration of the reference chart: the timing between TXCLK and data is controlled by the MAC, the timing between RXCLK and data is controlled by PHY(If using RTL8211F/FI, i.e. RXCLK, 2nS delay is enabled by default, and other PHYs should note this configuration);**</font>
-- <font color="black">**Both the GMAC0 and GMAC1 interfaces default to 3.3V signal levels. Note whether the power supply voltage of the RGMII signal power domain of the PHY chip matches the level of the GMACx interface;**</font>
-- <font color="black">**Ethernet PHY Reset signal needs to be controlled by GPIO, and the level of GPIO must match the PHY IO level; 100nF capacitor must be added near the PHY pin to strengthen the anti-static capability, note: the reset pin of RTL8211F/FI only supports 3.3V level;**</font>
+- **In RGMII mode, the internal TX/RX clock path of RK3576 chip integrates delayline, which supports adjustment; default configuration of the reference chart: the timing between TXCLK and data is controlled by the MAC, the timing between RXCLK and data is controlled by PHY(If using RTL8211F/FI, i.e. RXCLK, 2nS delay is enabled by default, and other PHYs should note this configuration);**
+- **Both the GMAC0 and GMAC1 interfaces default to 3.3V signal levels. Note whether the power supply voltage of the RGMII signal power domain of the PHY chip matches the level of the GMACx interface;**
+- **Ethernet PHY Reset signal needs to be controlled by GPIO, and the level of GPIO must match the PHY IO level; 100nF capacitor must be added near the PHY pin to strengthen the anti-static capability, note: the reset pin of RTL8211F/FI only supports 3.3V level;**
 
-- <font color="black">**TXD0- TXD3, TXCLK, TXEN need to reserve 0ohm resistors at the FET3576 to improve signal quality according to actual situation;**</font>
+- **TXD0- TXD3, TXCLK, TXEN need to reserve 0ohm resistors at the FET3576 to improve signal quality according to actual situation;**
 
-- <font color="black">**0-ohm resistors must be connected in series at the PHY end for RXD0–RXD3, RXCLK and RXDV; where practical, signal quality should be improved;**</font>
+- **0-ohm resistors must be connected in series at the PHY end for RXD0–RXD3, RXCLK and RXDV; where practical, signal quality should be improved;**
 
-- <font color="black">**When PHY uses an external crystal, please select the crystal capacitance according to the load capacitance value of the actual crystal used, and control the frequency deviation within ±20ppm;**</font>
+- **When PHY uses an external crystal, please select the crystal capacitance according to the load capacitance value of the actual crystal used, and control the frequency deviation within ±20ppm;**
 
-- <font color="black">**MDIO must be externally added with a pull-up resistor (recommended 1.5-1.8Kohm), and the pull-up power supply must be consistent with the IO power supply;**</font>
+- **MDIO must be externally added with a pull-up resistor (recommended 1.5-1.8Kohm), and the pull-up power supply must be consistent with the IO power supply;**
 
-- <font color="black">**PCB Layout needs to ensure the integrity of the RGMII signal reference plane and the PHY chip peripheral power reference plane;**</font>
+- **PCB Layout needs to ensure the integrity of the RGMII signal reference plane and the PHY chip peripheral power reference plane;**
 
-- <font color="black">**Equivalent length requirement: the receiving and sending of RGMII can be grouped into equal lengths, with an equal length requirement ≤ 12.4 mil;**</font>
+- **Equivalent length requirement: the receiving and sending of RGMII can be grouped into equal lengths, with an equal length requirement ≤ 12.4 mil;**
 
-- <font color="black">**Impedance requirements: single-ended 50ohm.**</font>
+- **Impedance requirements: single-ended 50ohm.**
 
-### 3.5.11 RS485 Interface
+#### 3.5.11 RS485 Interface
 
 OK3576-UP5 supports dual RS485 interfaces.
 
@@ -1061,7 +1061,7 @@ Transient immunity > 25 kV/µs. Meanwhile, the OK3576-UP5 carrier board is com
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912571_55b88cff_f9d2_4d1c_beb6_d39f7d6dac19.png)
 
-### 3.5.12 CAN Interface
+#### 3.5.12 CAN Interface
 
 The FET3576-UP5 SoM supports up to 2 x CAN, namely CAN0 and CAN1:
 
@@ -1073,19 +1073,19 @@ The OK3576-UP5 development board supports two CAN interfaces utilizing isolated 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912689_1fdbc223_b6db_4903_b7f9_4e37bcf122e9.png)
 
-### 3.5.13 Audio
+#### 3.5.13 Audio
 
 The OK3576-UP5 features an on-board I2S-interface Codec chip U43, supporting MIC input, headphone output, and 1W 8Ω speaker output. As shown in the figure below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912787_eb3744c7_f500_46b5_a68b_fd3e943a2f58.png)
 
-### 3.5.14 4G&5G Interface
+#### 3.5.14 4G&5G Interface
 
 The OK3576-UP5 integrates an M.2 Key-B interface, compatible with 4G and 5G modules. Since 4G and 5G modules operate at different supply voltages, the switch S2 must be toggled to select the corresponding power supply voltage.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535912899_5ba1d6e7_ea4f_4ed2_8c61_327c2c76a15e.png)
 
-### 3.5.15 USB2.0/USB3.0_A/Type-C USB3.0 Circuit
+#### 3.5.15 USB2.0/USB3.0_A/Type-C USB3.0 Circuit
 
 The RK3576 chip integrates two USB3 OTG controllers. Both USB3 controllers embed USB2.0 OTG functionality.
 
@@ -1099,7 +1099,7 @@ The USB 3.0 OTG controller supports SS, HS, FS and LS modes. The embedded USB 2.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913030_04d46872_10f6_4c16_85dd_47d9656daa7a.png)
 
-<font color="black">**Note: USB2_OTG0_DP/USB2_OTG0_DM supports firmware download. If the product does not utilise this interface, it must be left accessible during debugging and production. Please note: USB2_OTG0_VBUSDET must also be connected!**</font>
+**Note: USB2_OTG0_DP/USB2_OTG0_DM supports firmware download. If the product does not utilise this interface, it must be left accessible during debugging and production. Please note: USB2_OTG0_VBUSDET must also be connected!**
 
 The USB 3.2 SS signals (5 Gbps) are multiplexed with DP1.4, utilizing a USB/DP Combo PHY. The signals are indicated within the red boxes in the figure below.
 
@@ -1131,9 +1131,9 @@ Configuration 5: USB3.2 Gen1x1 OTG0+DP1.4 2Lane(Swap ON)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1721199751492_e286b0e5_02c1_4e07_adc6_c020d9e6df67.png)
 
-<font color="black">**Note: The RK3576 supports firmware download via the USB3_OTG0_SSRX1P/N and USB3_OTG0_SSTX1P/N signals from the USB 3.2 Gen1x1 OTG0 interface. To support USB3.0 firmware upgrade and also require 2-Lane DP support, the USB3.2 Gen1x1 OTG0 + DP 2Lane (Swap ON) configuration must be used.**</font>
+**Note: The RK3576 supports firmware download via the USB3_OTG0_SSRX1P/N and USB3_OTG0_SSTX1P/N signals from the USB 3.2 Gen1x1 OTG0 interface. To support USB3.0 firmware upgrade and also require 2-Lane DP support, the USB3.2 Gen1x1 OTG0 + DP 2Lane (Swap ON) configuration must be used.**
 
-<font color="black">**The USB3 OTG1 interface is used as follows:**</font>
+**The USB3 OTG1 interface is used as follows:**
 
 The PCIe1 / SATA1 / USB3 OTG1 form a Combo PHY1. The internal multiplexing diagram between the USB3 OTG1 controller and the PHY is as shown below:
 
@@ -1149,7 +1149,7 @@ The pin assignment for the USB20 OTG1 is shown in the figure below (the FET3576-
 
 Since the USB3 OTG1 and USB2.0 OTG1 share the same USB3 controller, the USB3 and USB2.0 OTG1 functions can only operate simultaneously as either Device or Host. It is not possible for the USB3 OTG to act as a Host while the USB2.0 OTG acts as a Device, or vice versa.
 
-<font color="black">**Note: When the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 is configured for PCIe or SATA functionality, the USB3 OTG1 function cannot be used, and the USB2.0 PHY1 also becomes unavailable. Therefore, to use USB2.0 OTG1, the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 must be configured for USB3 functionality!**</font>
+**Note: When the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 is configured for PCIe or SATA functionality, the USB3 OTG1 function cannot be used, and the USB2.0 PHY1 also becomes unavailable. Therefore, to use USB2.0 OTG1, the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 must be configured for USB3 functionality!**
 
 The application modes for USB3 OTG1 within the PCIe1/SATA1/USB3 OTG1 COMBO PHY1 are as follows:
 
@@ -1183,11 +1183,11 @@ The USB hub chip features one USB 3.0 port, which is a Type-A connector.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535913759_07e37f25_eab3_42b6_9066_5331a1314b28.png)
 
-<font color="black">**Note:** </font>
+**Note:** 
 
-- <font color="black">**All USB data cables must be designed with a differential impedance of 90Ω;**</font>
+- **All USB data cables must be designed with a differential impedance of 90Ω;**
 
-- <font color="black">**Please select suitable ESD protection components.**</font>
+- **Please select suitable ESD protection components.**
 
 The following diagram shows the circuit of the Type-C USB 3.0 interface:
 
@@ -1201,15 +1201,15 @@ The diagram above shows the circuit for the Type-C interface CC protocol chip, w
 
 The diagram above shows the differential signal circuit and ESD protection components for a USB 3.0 Type-C connector.
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**USB2_OTG0_DN/USB2_OTG0_DP is the system firmware programming port. If the product does not use this interface, it must be reserved during debugging and production; otherwise, debugging and firmware burning will not be possible;**</font>
-- <font color="black">**USB2_OTG0_ID features an internal pull-up resistor of approximately 12 kΩ to 1.8 V;**</font>
-- <font color="black">**USB2_OTG0_VBUSDET is the OTG and Device mode detection pin; the chip contains an internal 40 kΩ pull-down resistor. A high level indicates DEVICE mode (2.7–3.3 V, typical: 3.0 V); it is recommended to place a 100 nF capacitor on this pin;**</font>
+- **USB2_OTG0_DN/USB2_OTG0_DP is the system firmware programming port. If the product does not use this interface, it must be reserved during debugging and production; otherwise, debugging and firmware burning will not be possible;**
+- **USB2_OTG0_ID features an internal pull-up resistor of approximately 12 kΩ to 1.8 V;**
+- **USB2_OTG0_VBUSDET is the OTG and Device mode detection pin; the chip contains an internal 40 kΩ pull-down resistor. A high level indicates DEVICE mode (2.7–3.3 V, typical: 3.0 V); it is recommended to place a 100 nF capacitor on this pin;**
 
-- <font color="black">**The OTG mode can be configured to one of the following three modes:**</font>
-  - **<font color="black">OTG Mode: Automatically switches between device mode and HOST mode according to the ID pin state — ID high selects device mode, ID pulled low selects HOST mode. In device mode, the VBUSDET pin is additionally checked: only when it is high (above 2.3 V) will DP be pulled up and enumeration begin;</font>**
-  - **<font color="black">Device Mode: When this mode is selected, the ID pin is not required; only the VBUSDET pin is checked. Only when it is high (above 2.3 V) will DP be pulled up and enumeration begin;</font>**
+- **The OTG mode can be configured to one of the following three modes:**
+  - **OTG Mode: Automatically switches between device mode and HOST mode according to the ID pin state — ID high selects device mode, ID pulled low selects HOST mode. In device mode, the VBUSDET pin is additionally checked: only when it is high (above 2.3 V) will DP be pulled up and enumeration begin;</font>**
+  - **Device Mode: When this mode is selected, the ID pin is not required; only the VBUSDET pin is checked. Only when it is high (above 2.3 V) will DP be pulled up and enumeration begin;</font>**
   - **HOST Mode: When this mode is selected, neither the ID nor the VBUSDET state needs to be monitored. (If the product only requires HOST mode: since USB2_OTG0_DN/USB2_OTG0_DP is the only system firmware programming port and must be used during both debugging and production, and flashing and ADB debugging require device mode, the USB2_OTG0_VBUSDET signal must also be connected.);**
   - **If a Type-C connector is used, the USB2_OTG0_VBUSDET signal only needs to be pulled up to 3.3 V through a 4.7 K resistor.**
 
@@ -1231,7 +1231,7 @@ The diagram above shows the differential signal circuit and ESD protection compo
 
 - **USB 3.0 differential impedance: 90 Ω ± 10 %, intra‑pair skew \< 3 mil.**
 
-### 3.5.16 SATA3.1 Interface
+#### 3.5.16 SATA3.1 Interface
 
 The RK3576 chip is equipped with two SATA3.1 controllers, which share Comb PHY0/1 with the PCIe and USB3_OTG1 controllers. For specific routing, please refer to the diagram below.
 
@@ -1263,14 +1263,14 @@ SATA_CPDET, SATA_MPSWIT, and SATA_CPPOD are shared interfaces for SATA0 and SATA
 
 SATA0_ACTLED and SATA1_ACTLED are multiplexed to two locations: one in the VCCIO6 power domain and the other in the VCCIO4 power domain.
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**Peripheral circuits and power supplies must meet the specification requirements in Slot design;**</font>
-- <font color="black">**A single SATA interface connected to a SATA Port Multiplier supports at most 5 ports; it does not support multiple multipliers exceeding 6 ports in total;**</font>
-- <font color="black">**On SATA TXP/N and RXP/N differential pairs, 10 nF AC‑coupling capacitors are required. Use 0201‑size capacitors for lower ESR/ESL and reduced impedance variation;**</font>
-- <font color="black">**All signals of an eSATA connector must have ESD protection placed close to the connector. The ESD parasitic capacitance must not exceed 0.4 pF.**</font>
+- **Peripheral circuits and power supplies must meet the specification requirements in Slot design;**
+- **A single SATA interface connected to a SATA Port Multiplier supports at most 5 ports; it does not support multiple multipliers exceeding 6 ports in total;**
+- **On SATA TXP/N and RXP/N differential pairs, 10 nF AC‑coupling capacitors are required. Use 0201‑size capacitors for lower ESR/ESL and reduced impedance variation;**
+- **All signals of an eSATA connector must have ESD protection placed close to the connector. The ESD parasitic capacitance must not exceed 0.4 pF.**
 
-### 3.5.17 PCIE2.1 Circuit
+#### 3.5.17 PCIE2.1 Circuit
 
 The RK3576 features two PCIe 2.1 controllers, both of which only support RC mode (RC stands for Root Complex) and do not support EP, as follows:
 
@@ -1311,19 +1311,19 @@ The circuit design for the PCIe0 PCIe 2.0 ×1 Lane is illustrated below:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535914554_9536f621_a036_4ef7_926a_a3cd5572708a.png)
 
-<font color="black">**PCIe2.1 Design Note:**</font>
+**PCIe2.1 Design Note:**
 
-<font color="black">**Peripheral circuits and power supplies must meet the specification requirements in Slot design;**</font>
+**Peripheral circuits and power supplies must meet the specification requirements in Slot design;**
 
-<font color="black">**A 100nF AC coupling capacitor must be connected in series on the TXP/N differential signal lines of the PCIe 2.1 interface. It is recommended to use 0201 package size capacitors for the AC coupling, as they have lower ESR and ESL, which also helps reduce impedance variations on the trace;**</font>
+**A 100nF AC coupling capacitor must be connected in series on the TXP/N differential signal lines of the PCIe 2.1 interface. It is recommended to use 0201 package size capacitors for the AC coupling, as they have lower ESR and ESL, which also helps reduce impedance variations on the trace;**
 
-<font color="black">**The PCIE0/1_CLKREQN pin must be used as a dedicated function pin and cannot be replaced by a GPIO;**</font>
+**The PCIE0/1_CLKREQN pin must be used as a dedicated function pin and cannot be replaced by a GPIO;**
 
-<font color="black">**For the signals PCIE0/1_PERSTN, WAKEN, and PRSNT on the RK3576, no specific dedicated I/O are assigned. Standard GPIO with compatible voltage levels can be used directly as control function pins;**</font>
+**For the signals PCIE0/1_PERSTN, WAKEN, and PRSNT on the RK3576, no specific dedicated I/O are assigned. Standard GPIO with compatible voltage levels can be used directly as control function pins;**
 
-<font color="black">**In a standard PCIe slot, the signals PCIEx_CLKREQN, PCIEx_WAKEN, and PCIEx_PERSTN operate at 3.3V logic levels. Ensure proper voltage level matching is implemented on the RK3576 side accordingly;**</font>
+**In a standard PCIe slot, the signals PCIEx_CLKREQN, PCIEx_WAKEN, and PCIEx_PERSTN operate at 3.3V logic levels. Ensure proper voltage level matching is implemented on the RK3576 side accordingly;**
 
-<font color="black">**When the PCIe function is enabled, the multiplexed SATA and USB functions cannot be used simultaneously. For details on the corresponding SATA/USB functions, refer to the respective module specifications;**</font>
+**When the PCIe function is enabled, the multiplexed SATA and USB functions cannot be used simultaneously. For details on the corresponding SATA/USB functions, refer to the respective module specifications;**
 
 If the PCIe 2.1 function module is not used:
 
@@ -1354,7 +1354,7 @@ Ensure that the corresponding device tree (dts) configuration is disabled in the
 
 **Differential pair space is better than or equal to 4 times the PCI-E line width;**
 
-### 3.5.18 Video Input Interface
+#### 3.5.18 Video Input Interface
 
 FET3576 has two MIPI DPHY CSI RX, both support MIPI V1.2 version, the maximum data rate of each channel is 2.5Gbps.
 
@@ -1419,18 +1419,18 @@ The OK3576-UP5 is configured by default with four camera interfaces, namely: MIP
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915208_43a9f768_b877_4470_933e_cc3d56a0a82f.png)
 
-<font color="black">**Please note in design:**</font>
+**Please note in design:**
 
-- <font color="black">**Differential impedance: 100ohm±10%;**</font>
-- <font color="black">**Single-ended impedance: 50ohn±10%;**</font>
-- <font color="black">**Intra-pair skew (within a differential pair): \< 3 mils;**</font>
-- <font color="black">**Equal length between clock and data \< 6 mil;**</font>
-- <font color="black">**Spacing between differential pairs be greater than four times the MIPI line width, and at least three times the MIPI line width;**</font>
-- <font color="black">**Spacing between MIPI and other signals be greater than four times the MIPI line width, and at least three times the MIPI line width.**</font>
-- <font color="black">**When configured as CPHY, the maximum delay difference within the group (TRIO_A, TRIO_B, TRIO_C) is less than 3 mils;**</font>
-- <font color="black">**The equal-length requirement between groups (TRIO0, TRIO1, TRIO2) must be less than 50 mil.**</font>
+- **Differential impedance: 100ohm±10%;**
+- **Single-ended impedance: 50ohn±10%;**
+- **Intra-pair skew (within a differential pair): \< 3 mils;**
+- **Equal length between clock and data \< 6 mil;**
+- **Spacing between differential pairs be greater than four times the MIPI line width, and at least three times the MIPI line width;**
+- **Spacing between MIPI and other signals be greater than four times the MIPI line width, and at least three times the MIPI line width.**
+- **When configured as CPHY, the maximum delay difference within the group (TRIO_A, TRIO_B, TRIO_C) is less than 3 mils;**
+- **The equal-length requirement between groups (TRIO0, TRIO1, TRIO2) must be less than 50 mil.**
 
-### 3.5.19 Video Output Interface
+#### 3.5.19 Video Output Interface
 
 The RK3576 chip features a VOP (Video Output Processor), which reads video data and UI data from the frame buffer in system memory, performs corresponding processing (such as cropping, color space conversion, scaling, and overlaying), and outputs the processed data to each high-speed display interface.
 
@@ -1474,19 +1474,19 @@ The MIPI_DSI interface on the OK3576-UP5 development board uses a configuration 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915423_2cc5d0af_1c8c_4211_82aa_2bc4ea821afb.png)
 
-<font color="black">**Please note in design:**</font>
+**Please note in design:**
 
-- <font color="black">**Routing impedance control differential 100ohm ± 10%;**</font>
-- <font color="black">**Intra-pair skew (within a differential pair): \< 3 mils**</font>
-- <font color="black">**Equal length between clock and data \< 6 mil;**</font>
-- <font color="black">**It is recommended that the spacing between differential pairs be at least four times the MIPI line width, and no less than three times the MIPI line width;**</font>
-- <font color="black">**It is recommended that the spacing between MIPI and other signals be at least four times the MIPI line width, and no less than three times the MIPI line width;**</font>
-- <font color="black">**When configured as CPHY, the impedance of single-ended traces is controlled to 50ohm±10%;**</font>
-- <font color="black">**The inter-group delay difference is \<3mil (TRIO0\TRIO1\TRIO2);**</font>
-- <font color="black">**Equal length between groups (TRIO0 \ TRIO1 \ TRIO2) \< 50mil.**</font>
-- <font color="black">**The number of permissible holes for each signal is recommended to be no more than 2;**</font>
-- <font color="black">**It is recommended that the spacing between traces be at least four times the MIPI trace width;**</font>
-- <font color="black">**It is recommended that the spacing between MPI and other signals be at least four times the MIPI line width.**</font>
+- **Routing impedance control differential 100ohm ± 10%;**
+- **Intra-pair skew (within a differential pair): \< 3 mils**
+- **Equal length between clock and data \< 6 mil;**
+- **It is recommended that the spacing between differential pairs be at least four times the MIPI line width, and no less than three times the MIPI line width;**
+- **It is recommended that the spacing between MIPI and other signals be at least four times the MIPI line width, and no less than three times the MIPI line width;**
+- **When configured as CPHY, the impedance of single-ended traces is controlled to 50ohm±10%;**
+- **The inter-group delay difference is \<3mil (TRIO0\TRIO1\TRIO2);**
+- **Equal length between groups (TRIO0 \ TRIO1 \ TRIO2) \< 50mil.**
+- **The number of permissible holes for each signal is recommended to be no more than 2;**
+- **It is recommended that the spacing between traces be at least four times the MIPI trace width;**
+- **It is recommended that the spacing between MPI and other signals be at least four times the MIPI line width.**
 
 #### 3.5.19.2 HDMI_TX Interface
 
@@ -1508,9 +1508,9 @@ When operating in HDMI 2.1 mode, HDMI_TX_ON_H is configured to low level, and tr
 
 When operating in HDMI 2.0 or lower mode, HDMI_TX_ON_H is configured to high level, and transistors Q17, Q18, Q19, Q20 are turned on. The 499ohm resistors to ground form a DC bias of approximately 3V with the 50ohm pull-up resistors on the sink side.
 
-<font color="black">**Please note in design:**</font>
+**Please note in design:**
 
-<font color="black">**If it only needs to support HDMI 2.0 and below mode, Q17, Q18, Q19, and Q20 also can not be omitted; it needs to ensure that the machine is not power-on, the tube can not be on, as HDMI CTS Test ID 7-3 TMDS Voff test item requires that the DUT is not power-on, Voff voltage must be within AVcc +- 10mV, or this test item can not pass.**</font>
+**If it only needs to support HDMI 2.0 and below mode, Q17, Q18, Q19, and Q20 also can not be omitted; it needs to ensure that the machine is not power-on, the tube can not be on, as HDMI CTS Test ID 7-3 TMDS Voff test item requires that the DUT is not power-on, Voff voltage must be within AVcc +- 10mV, or this test item can not pass.**
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535915659_da45f485_1ae4_483f_836b_f465614b8609.png)
 
@@ -1557,22 +1557,22 @@ The voltage on Pin 18 of the HDMI connector must be maintained between 4.8V and 
 
 To enhance antistatic capability, ESD devices must be reserved on the signals. The ESD parasitic capacitance for HDMI 2.1 signals must not exceed 0.2pF, and it is recommended that the ESD parasitic capacitance for other signals not exceed 1pF.
 
-<font color="black">**Please note in design:**</font>
+**Please note in design:**
 
-- <font color="black">**Control MOS tube Coss can not be too large, otherwise it will affect the signal quality, it is recommended to follow the reference chart model or the corresponding Coss value;**</font>
+- **Control MOS tube Coss can not be too large, otherwise it will affect the signal quality, it is recommended to follow the reference chart model or the corresponding Coss value;**
 
-- <font color="black">**Routing impedance control differential 100ohm ± 10%;**</font>
+- **Routing impedance control differential 100ohm ± 10%;**
 
-- <font color="black">**Inter-Pair Skew maximum ＜3mil;**</font>
+- **Inter-Pair Skew maximum ＜3mil;**
 
-- <font color="black">**Differential inter-pair equivalence requirement \<200mil;**</font>
+- **Differential inter-pair equivalence requirement \<200mil;**
 
-- <font color="black">**Differential inter-pair space is recommended to be more than or equal to 7 times the HDMI line width;**</font>
+- **Differential inter-pair space is recommended to be more than or equal to 7 times the HDMI line width;**
 
-- <font color="black">**HDMI and other signal space is recommended to be more than or equal to 7 times the HDMI line width;**</font>
-- <font color="black">**It is recommended not to add an over-hole;**</font>
+- **HDMI and other signal space is recommended to be more than or equal to 7 times the HDMI line width;**
+- **It is recommended not to add an over-hole;**
 
-- <font color="black">**I/O capacitance to ground does not exceed 0.2pF.**</font>
+- **I/O capacitance to ground does not exceed 0.2pF.**
 
 #### 3.5.19.3 DP_TX Interface
 
@@ -1598,37 +1598,37 @@ Supports MST (Multi-Stream Transport) display with 3 channels. The maximum capab
 
 Refer to Section 3.5.15 for pin multiplexing relationships with USB.
 
-<font color="black">**Please note in DP sign:**</font>
+**Please note in DP sign:**
 
-- <font color="black">**The following DP lane pairs—DP0_TX_D0P/D0N, DP0_TX_D1P/D1N, DP0_TX_D2P/D2N, DP0_TX_D3P/D3N, DP1_TX_D0P/D0N, DP1_TX_D1P/D1N, DP1_TX_D2P/D2N, DP1_TX_D3P/D3N—must be series-connected with 100nF AC-coupling capacitors. Capacitors in 0201 package size are recommended for lower ESR and ESL, as well as reduced impedance variation on the line. Place them close to the RK3576-C pins during layout;**</font>
-- <font color="black">**Differential pair trace impedance should be controlled at 100Ω ±10% (for DP-only interface, no multiplexing) or 95Ω ±10% (for USB3.0/DP1.4 multiplexed interface);**</font>
-- <font color="black">**Differential pair internal delay difference \< 3 mils;**</font>
+- **The following DP lane pairs—DP0_TX_D0P/D0N, DP0_TX_D1P/D1N, DP0_TX_D2P/D2N, DP0_TX_D3P/D3N, DP1_TX_D0P/D0N, DP1_TX_D1P/D1N, DP1_TX_D2P/D2N, DP1_TX_D3P/D3N—must be series-connected with 100nF AC-coupling capacitors. Capacitors in 0201 package size are recommended for lower ESR and ESL, as well as reduced impedance variation on the line. Place them close to the RK3576-C pins during layout;**
+- **Differential pair trace impedance should be controlled at 100Ω ±10% (for DP-only interface, no multiplexing) or 95Ω ±10% (for USB3.0/DP1.4 multiplexed interface);**
+- **Differential pair internal delay difference \< 3 mils;**
 
-- <font color="black">**Differential inter-pair equivalence requirement \<500mil;**</font>
+- **Differential inter-pair equivalence requirement \<500mil;**
 
-- <font color="black">**Differential inter-pair space is recommended to be more than or equal to 6 times the DP line width;**</font>
+- **Differential inter-pair space is recommended to be more than or equal to 6 times the DP line width;**
 
-- <font color="black">**DP and other signal space is recommended to be more than or equal to 6 times the DP line width;**</font>
-- <font color="black">**The number of permissible holes for each signal is recommended to be no more than 2;**</font>
+- **DP and other signal space is recommended to be more than or equal to 6 times the DP line width;**
+- **The number of permissible holes for each signal is recommended to be no more than 2;**
 
-- <font color="black">**I/O capacitance to ground does not exceed 0.2pF.**</font>
+- **I/O capacitance to ground does not exceed 0.2pF.**
 
-### 3.5.20 WIFI/BT Module Circuit
+#### 3.5.20 WIFI/BT Module Circuit
 
 The OK3576-UP5 board comes with an on-board AzureWave AW-CM358SM WIFI & BT module, supporting Wi-Fi 2.4G/5G and Bluetooth 5.0. The Wi-Fi/BT antenna is connected via an SMA interface, and the module interfaces with the main controller through SDIO, PDM, and UART.
 
-<font color="black">**Note: In low-power application scenarios, if you need to maintain the Wi-Fi module’s network connection during the process of putting the RK3576 into sleep mode and then waking it up (without requiring the Wi-Fi module to reconnect), it is necessary to power the Wi-Fi module’s 3.3V and 1.8V supplies from a dedicated 12V input power source. You can refer to this specific design in the OK3576-UP5.**</font>
+**Note: In low-power application scenarios, if you need to maintain the Wi-Fi module’s network connection during the process of putting the RK3576 into sleep mode and then waking it up (without requiring the Wi-Fi module to reconnect), it is necessary to power the Wi-Fi module’s 3.3V and 1.8V supplies from a dedicated 12V input power source. You can refer to this specific design in the OK3576-UP5.**
 
 The schematic is as follows:
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**The power supply to the WIFI card must be controlled; refer to the carrier board circuit for implementation;**</font>
+- **The power supply to the WIFI card must be controlled; refer to the carrier board circuit for implementation;**
 
-- <font color="black">**SDIO impedance requirements: Single‑ended impedance: 50ohm;**</font>
-- <font color="black">**Signal length matching tolerance: ±50 mil.**</font>
+- **SDIO impedance requirements: Single‑ended impedance: 50ohm;**
+- **Signal length matching tolerance: ±50 mil.**
 
-### 3.5.21 SPI Interface Circuit
+#### 3.5.21 SPI Interface Circuit
 
 In addition to the FSPI controller, the RK3576 chip also features five general-purpose SPI controllers, supporting the following functions:
 
@@ -1672,7 +1672,7 @@ Signals are directly routed out via pins with a 2.54mm pitch, and the schematic 
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916415_aa4f34af_aa00_4e2a_84ac_8c2eab406bbb.png)
 
-### 3.5.22 UART Interface Circuit
+#### 3.5.22 UART Interface Circuit
 
 The RK3576 chip is equipped with 12 UART controllers, which support the following functions:
 
@@ -1747,7 +1747,7 @@ The signals are routed out directly via pins with a 2.54 mm pitch, as shown in t
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535916741_44644c88_744d_4718_becd_cd297daa102d.png)
 
-# 4. Hardware Design Guide
+### 4. Hardware Design Guide
 
 **I2C Requirements**
 
@@ -1776,25 +1776,25 @@ It is strongly recommended that when designing the carrier board, please refer t
 - In the worst case, irreversible damage to the processor.
 
 
-# 5. Package Dimensions Diagram
+## 5. Package Dimensions Diagram
 
-## 5.1 SoM Pin Layout Diagram
+### 5.1 SoM Pin Layout Diagram
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535920816_1823d853_eea1_42db_acde_c7e3b6dd58cf.png)
 
-## 5.2 Packaging Design Diagram
+### 5.2 Packaging Design Diagram
 
 The SoM is packaged using LGA packaging method, with units in millimeters. Please refer to the following diagram for packaging design:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535920969_d20288f6_a0a4_4785_9ec9_4d43ced3fd92.png)
 
-## 5.3 Steel Mesh Design Drawing
+### 5.3 Steel Mesh Design Drawing
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535921132_b09f73ec_764f_4fc8_8552_cf3c37a574e8.png)
 
-<font color="black">**Note: This product uses stepped steel mesh for welding. To ensure welding yield, please refer to the "UP5 Series SoM Mass Production Operation Manual" for the design of the encapsulated steel mesh**</font>
+**Note: This product uses stepped steel mesh for welding. To ensure welding yield, please refer to the "UP5 Series SoM Mass Production Operation Manual" for the design of the encapsulated steel mesh**
 
-# 6. OK3576-UP5 Development Board Power Consumption Table
+## 6. OK3576-UP5 Development Board Power Consumption Table
 
 **Table 1 Linux System Power Consumption**
 
@@ -1805,15 +1805,15 @@ The SoM is packaged using LGA packaging method, with units in millimeters. Pleas
 | 3| Standby power consumption with no load| 1.55| 3.87|
 | 4| CPU stress + memory stress + eMMC read/write stress test power consumption.| 5.83| 8.30|
 
-<font color="black">**Note:**</font>
+**Note:**
 
-- <font color="black">**Peak current: The maximum current value during the start-up process;**</font>
+- **Peak current: The maximum current value during the start-up process;**
 
-- <font color="black">**Stable current: The current value that remains on the startup interface after startup;**</font>
+- **Stable current: The current value that remains on the startup interface after startup;**
 
-- <font color="black">**The SoM is configured with 2 GB of RAM and 8 GB of eMMC; the SoM and carrier board are powered by 12 V.**</font>
+- **The SoM is configured with 2 GB of RAM and 8 GB of eMMC; the SoM and carrier board are powered by 12 V.**
 
-# 7. Minimum System Diagram
+## 7. Minimum System Diagram
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_User_Hardware_Manual/1791535925485_ce6ce5c2_e18c_42f4_b9cc_205843d735db.png)
 

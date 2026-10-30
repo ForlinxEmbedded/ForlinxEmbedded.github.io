@@ -10,17 +10,17 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives. 
 
-# Application Scope
+## Application Scope
 
 This software manual is designed for the OK3576-UP5 platform running Linux6.1. While other platforms may also reference this manual, there could be differences that require adjustments for the specific use.
 
-# Revision History
+## Revision History
 
 | **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 09/10/2026| V1.0| V1.1| V1.2 and above| OK3576-UP5 Linux6.1 User’s Manual Initial Version.|
 
-# Overview
+## Overview
 
 This manual is designed to help you quickly familiarize yourselves with the product, understand interface functions, and learn testing methods. It primarily covers the testing of development board interface functions, methods for flashing the image, and troubleshooting common issues encountered during use. During testing, certain commands have been annotated for better understanding, focusing on practicality and adequacy. 
 
@@ -76,7 +76,7 @@ Connection method: Board-to-board.
 
 **Note: Hardware specifications are not covered in this software manual. Before development, please refer to the “ User’s Hardware Manual” to understand the product naming and hardware configuration.**
 
-## 1.1 Linux 6.1 System Software Resources
+### 1.1 Linux 6.1 System Software Resources
 
 | Chip or device| Driver path| Device Nodes|
 |----------|----------|----------|
@@ -103,9 +103,9 @@ Connection method: Board-to-board.
 | SPI| drivers/spi/spi-rockchip.c| /dev/spidevX|
 | PWM| drivers/video/backlight/pwm\_bl.c| /sys/class/pwm/pwmchipX|
 
-# 2\. Fast Startup
+## 2\. Fast Startup
 
-## 2.1 Preparation Before Startup
+### 2.1 Preparation Before Startup
 
 Development login methods: serial login and network login.
 
@@ -121,7 +121,7 @@ Hardware preparation before system startup:
 
   ![](image-003.png)
 
-## 2.2 Debugging Serial Port Driver Installation
+### 2.2 Debugging Serial Port Driver Installation
 
 The OK3576-UP5 platform features a Type-C port for serial debugging and an onboard USB-to-UART chip. No additional USB-to-serial debugging tool is required, making the setup simple and convenient.
 
@@ -141,9 +141,9 @@ Click “Finish”.
 
 To ensure that the latest driver is installed, please click Uninstall Driver before installing the driver.
 
-## 2.3 Serial Port Login
+### 2.3 Serial Port Login
 
-### 2.3.1 Serial Connection Settings
+#### 2.3.1 Serial Connection Settings
 
  **Note:**
 
@@ -167,7 +167,7 @@ Take PuTTY as an example to introduce the setting mode of the putty terminal:
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633855-3aea7145-3c07-4b29-b410-7087569c2846.png)
 
-### 2.3.2 Serial Port Login
+#### 2.3.2 Serial Port Login
 
 After the PC terminal software is configured, connect the PC and the development board using a serial cable, then power on the device after connecting the power supply. The startup information can be viewed through the terminal software.
 
@@ -175,9 +175,9 @@ The following startup message indicates a successful boot, and you can press Ent
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350633955-368b4dcf-925d-4561-a12f-622f78d0586e.png)
 
-## 2.4 Network Login
+### 2.4 Network Login
 
-### 2.4.1 Network Login Test
+#### 2.4.1 Network Login Test
 
 **Note: When leaving the factory, the default configuration of the network card is static IP, and the IP address is 192.168.0.232. For the method of changing the static IP, please refer to the "Ethernet Configuration" test section.**
 
@@ -202,11 +202,11 @@ Specific Operations:
 
 Data is returned, indicating that the network connection is normal.
 
-### 2.4.2 SSH the server
+#### 2.4.2 SSH the server
 
  **Note:**
 
-- The network card is configured with a static IP address (192.168.0.232) by default when it leaves the factory. For instructions on how to change the static IP address, please refer to the ‘Testing’ section.
+- **The network card is configured with a static IP address (192.168.0.232) by default when it leaves the factory. For instructions on how to change the static IP address, please refer to the “Testing” section;**
 - **Log in as the root user (no password required).**
 
 Logging into the development board via SSH.
@@ -221,7 +221,7 @@ Open the window and enter the account root.
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350634513-d1b6fe10-ffe5-40c2-bb64-2c6f2b869577.png)
 
-### 2.4.3 SFTP
+#### 2.4.3 SFTP
 
 Path: Install the file Zilla tool on windows and set it up as shown in the following figure.
 
@@ -235,11 +235,11 @@ Install FileZilla on Windows, open the program, and click on “Site Manager”.
 
 Once connecting, the directory structures of the PC and the development board will be displayed.
 
-## 2.5 Screen Switch
+### 2.5 Screen Switch
 
 The OK3576-UP5 supports a variety of display interfaces, including HDMI, MIPI and DisplayPort, and can display the same or different content on three screens simultaneously. Currently, the display switching can be controlled in two ways: 1. Dynamic control via the U-Boot menu; 2. Static control specified in the kernel device tree.
 
-### 2.5.1 Dynamic Control via U-Boot Menu
+#### 2.5.1 Dynamic Control via U-Boot Menu
 
 This method allows you to switch between supported display screens without recompiling or re-flashing the system.
 
@@ -294,7 +294,7 @@ After selecting the screen, you can also press the reset button on the developme
 
 **Note: It is best not to set HDMI as the primary display, as hot-plugging the HDMI cable whilst the system is booting may cause the QT application to close.**
 
-### 2.5.2 Kernel Device Tree Specification
+#### 2.5.2 Kernel Device Tree Specification
 
 This method does not require a serial terminal connection. The system image is configured with the default desired settings, making it suitable for mass production. However, manual modification of the device tree is required, followed by regeneration of the system image.
 
@@ -318,7 +318,7 @@ After saving, recompile to generate the image.
 
 For MIPI screens, there are many types, and the existing timing and control words may not meet the requirements. You may need to manually modify the display-timings under the DSI node. However, any display-related node's status property should be handled as per the default settings, as the program will automatically control it.
 
-## 2.6 Printing-level Adjustment
+### 2.6 Printing-level Adjustment
 
 OK3576-UP5 supports dynamic control of the kernel verbosity level via the U-Boot menu during the U-Boot phase.
 
@@ -346,7 +346,7 @@ The default kernel print level is 1; press the number 3 to set the kernel print 
 
 Press the number 1 to restart the system.
 
-## 2.7 eMMC Storage Partition Table
+### 2.7 eMMC Storage Partition Table
 
 The table below details the eMMC storage partition information for the Linux operating system (The size of a block is 512 bytes when calculating.):
 
@@ -417,13 +417,13 @@ Mem:           3.8Gi       156Mi       3.4Gi       7.0Mi       211Mi       3.6Gi
 Swap:             0B          0B          0B
 ```
 
-## 2.8 System Shutdown
+### 2.8 System Shutdown
 
 In general, you can directly power off the system. However, if operations such as data storage or functional usage are in progress, avoid cutting power abruptly to prevent irreversible file damage, which may require re-flashing the firmware. To ensure that the data is written completely, you may enter a `sync` command to complete the data synchronisation before switching off the power.
 
 **Note: For products designed based on the SoM:, if unexpected power loss during use leads to system abnormalities, consider implementing measures such as power-loss protection in the design.**
 
-# 3\. OK3576-UP5 Interface Function Test
+## 3\. OK3576-UP5 Interface Function Test
 
 The display screen must be connected for proper operation; if there are no display requirements, you can skip it. The OK3576-UP5 platform provides excellent support for Qt, particularly for multimedia-related classes such as video decoding and playback, camera integration, video recording, etc. It achieves optimal performance by utilizing hardware encoding/decoding and OpenGL.
 
@@ -435,13 +435,13 @@ Qt Version:`Qt5.15.11`
 
 📌 Path to the source code of the executable file: `User Materials\5-Demos and Patches\qt_demos`
 
-## 3.1 Interface Function Description
+### 3.1 Interface Function Description
 
 After booting, the development board will display the following desktop:
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350637049-4e4b9c47-b57e-46dd-9ee7-b409a8ee7ac8.png)
 
-## 3.2 Video Playback Test
+### 3.2 Video Playback Test
 
 Launch the video player by clicking the desktop icon`video player`:
 
@@ -453,7 +453,7 @@ Click app icon:
 
 **Note: Test video files are stored in the directory: /userdata/media/\*.mp4**
 
-## 3.3 Music Playback Test
+### 3.3 Music Playback Test
 
 `musicplayer` is a lightweight audio test application, designed to verify the normal function of the sound card, and can also be used as a basic audio player.
 
@@ -465,7 +465,7 @@ Click the application icon to bring up the following interface:
 
 Tap the button at the bottom left corner to select the test audio file.`/userdata/piano2-CoolEdit.mp3`
 
-## 3.4 4G/5G Test
+### 3.4 4G/5G Test
 
 **Note: This test requires inserting a SIM card with internet access. Please refer to section “ Command Line Function Test (4G/5G)”.**
 
@@ -481,7 +481,7 @@ Click app icon:
 
 Click the Start button, and the program will automatically initiate the dial-up process to obtain an IP address, configure DNS, etc. Please wait for a few seconds. Once an IP address is displayed on the screen, you may exit the application. Refer to the Browser Test chapter for testing. If the application can successfully access the Forlinx Embedded official website, it indicates a successful connection..
 
-## 3.5 Network Configuration Test
+### 3.5 Network Configuration Test
 
 The OK3576-UP5 supports selecting between DHCP and Static modes through the "`Network`" network configuration application. In Static mode, you can configure the IP address, subnet mask, gateway, and DNS.
 
@@ -505,7 +505,7 @@ After entering the URL, click ping. The result will be displayed in the left-sid
 
 **Note: The IP and other information configured in static mode will be saved in the system's relevant configuration files, so the network settings will persist after each reboot. However, the network information configured in DHCP mode does not need to be considered, as an IP address will be dynamically assigned each time the system restarts.**
 
-## 3.6 Browser Test
+### 3.6 Browser Test
 
 `DemoBrowser`is a simple and practical web browser. Please ensure you have a stable internet connection whilst using it, and that your DNS is functioning correctly before accessing external websites. Upon launch, the browser will by default open the Forlinx Embedded official website:
 
@@ -519,7 +519,7 @@ Click app icon:
 
 **Note: Click File-> Quit above to exit the browser.**
 
-## 3.7 Watchdog Test
+### 3.7 Watchdog Test
 
 `Watchdog`is an application designed to test whether the watchdog function is working correctly.
 
@@ -533,7 +533,7 @@ Check the Feed dog box, then click the Start button: the watchdog will be enable
 
 Uncheck the Feed dog box, then click Start: the watchdog will still run normally, but the program will stop feeding the dog. Approximately 5 seconds after clicking, the system will reboot automatically — this confirms the watchdog function works properly.
 
-## 3.8 Key Test
+### 3.8 Key Test
 
 `Keypad`is used to test whether the platform’s built-in buttons are functional:
 
@@ -545,7 +545,7 @@ Click app icon:
 
 On the OK3576-UP5 platform, the 5 physical buttons are mapped by default as: V+ for Volume+, V- for Volume-, the HOME button, MENU button, and ENTER button. When a key is pressed, the corresponding button in the test application will turn blue, indicating that the key function is working properly.
 
-## 3.9 RTC Test
+### 3.9 RTC Test
 
 Using the`RTC`, you can view and set the current system time:
 
@@ -559,7 +559,7 @@ In Manual mode, enter the target time and click the Apply button to complete the
 
 With the RTC backup battery installed, power off and restart the development board to verify that the RTC clock has been set correctly.
 
-## 3.10 UART Test
+### 3.10 UART Test
 
 `Terminal` is a tool for testing the on-board UART interface of the OK3576-UP5 board.
 
@@ -598,7 +598,7 @@ Pressing the “1” key on the keyboard triggers automatic transmission; due to
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639401-b613d983-c40e-4293-8510-419e9ce8ff46.png)
 
-## 3.11 Backlight Test
+### 3.11 Backlight Test
 
 `BackLight`is mipi screen backlight adjustment application:
 
@@ -608,9 +608,9 @@ Click app icon:
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789959837795-30bc9744-5bee-43fc-961c-813bd95c180e.png)
 
-Drag the slider on the screen to adjust the backlight brightness of the MIPI display; within the app, the minimum brightness setting is 5 and the maximum is 200. If the brightness you wish to adjust falls outside this range, you can adjust it via the command line or refer to the`4. Command Line Function Test/LCD Backlight Adjustment`settings.
+Drag the slider on the screen to adjust the backlight brightness of the MIPI display; within the app, the minimum brightness setting is 5 and the maximum is 200. If the brightness you wish to adjust falls outside this range, you can adjust it via the command line or refer to the `4. Command Line Function Test/LCD Backlight Adjustment`settings.
 
-## 3.12 Database Test
+### 3.12 Database Test
 
 `Sqlite`is a SQLite database testing application.
 
@@ -620,7 +620,7 @@ Click app icon:
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350639776-f0c391d3-9c5e-4322-9efc-6220f555fda3.png)
 
-## 3.13 System Information Test
+### 3.13 System Information Test
 
 Clicking the desktop icon displays system information.
 
@@ -630,7 +630,7 @@ Application Icons
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/50461850/1778231447150-25235b70-078c-4c8c-831b-e0f86ef34a31.png)
 
-# 4\. OK3576-UP5 Command Line Test
+## 4\. OK3576-UP5 Command Line Test
 
 The OK3576-UP5 platform offers a comprehensive set of command-line programs for reference purposes. You can use these programs to verify the interfaces and functions of the development board. However, because these test programs have limited capabilities, it is not advisable to use Forlinx’s test programs directly for developing end products. Instead, it's recommended to create your own applications tailored to actual usage scenarios.
 
@@ -638,7 +638,7 @@ The OK3576-UP5 platform offers a comprehensive set of command-line programs for 
 
 📌 Path to the source code of the executable file:`User Materials\5-Demos and Patches\cmd_demos`
 
-## 4.1 System Information Query
+### 4.1 System Information Query
 
 To view kernel and CPU information, enter the following command:
 
@@ -695,7 +695,7 @@ GST_VIDEO_DECODER_QOS=0
 _=/usr/bin/env
 ```
 
-## 4.2 Frequency Test
+### 4.2 Frequency Test
 
 **Note: The RK3576 utilises a big.LITTLE architecture, integrating four Cortex-A53 cores (LITTLE) and four Cortex-A72 cores (BIG).** 
 The core numbers and clock speed rules are as follows:
@@ -753,7 +753,7 @@ root@OK3576-UP5-buildroot:~# cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_cu
 1416000
 ```
 
-## 4.3 Temperature Test
+### 4.3 Temperature Test
 
 To view temperature values:
 
@@ -764,7 +764,7 @@ root@OK3576-UP5-buildroot:~# cat /sys/class/thermal/thermal_zone0/temp
 
 The CPU temperature is 48.076℃.
 
-## 4.4 DDR Test
+### 4.4 DDR Test
 
 ```bash
 root@OK3576-UP5-buildroot:~# memory_bandwidth.sh
@@ -842,7 +842,7 @@ L2 cache bandwidth cp test
 0.131072 9297.58
 ```
 
-## 4.5 Key Test
+### 4.5 Key Test
 
 Use the fltest \_ keytest command line tool to test the keys. Currently, the`fltest_keytest`supports the test of the five keys VOL + (KEY1), VOL- (KEY2), MENU (K1), ENTER (K2), and HOME (K3) on the carrier board is supported, and the key codes are 115, 114, 139, 28, and 102 respectively.
 
@@ -869,7 +869,7 @@ key102 Presse
 key102 Released
 ```
 
-## 4.6 UART 485 Test
+### 4.6 UART 485 Test
 
 4 x UART are routed out in total:   
 UART0, UART2, UART5 and UART8.
@@ -890,7 +890,7 @@ UART8 is a TTL level serial port.
 | UART5| /dev/ttyS5| RS485| P31|
 | UART8| /dev/ttyS8| TTL level serial port, led out on P3, can be used for test| P3|
 
-### 4.6.1 UART Test
+#### 4.6.1 UART Test
 
 This test utilises UART8 (ttyS8) and requires a loopback connection (via jumper caps or DuPont wires) to perform the serial port test. According to the carrier board schematic, short the SPI2 transmit (TX) and receive (RX) pins, which correspond to PIN20 and PIN22 respectively.
 
@@ -909,7 +909,7 @@ forlinx_uart_test.1234567890...
 
 If the following content is printed on the serial port after execution, it indicates that the serial communication is working normally.
 
-### 4.6.2 485 Interface Test
+#### 4.6.2 485 Interface Test
 
 The test uses two RS485 ports, UART2 and UART5, for mutual testing. Before testing, you need to connect the A and B pins of the two RS485 interfaces: connect A to A, B to B, and GND to GND. The two RS485 ports are as follows: UART2 corresponds to PIN2 and PIN3 of P29, while UART5 corresponds to PIN2 and PIN3 of P31.
 
@@ -960,7 +960,7 @@ root@OK3576-UP5-buildroot:~# echo asdsa > /dev/ttyS2
 root@OK3576-UP5-buildroot:~# asdsa                    // Data received on the SSH terminal
 ```
 
-## 4.7 Watchdog Test
+### 4.7 Watchdog Test
 
 A watchdog is a feature frequently used in embedded systems; the device node for the watchdog in the OK3576-UP5 is`/dev/watchdog`. There are two test programs, you can choose any one according to your actual needs.
 
@@ -1005,7 +1005,7 @@ root@OK3576-UP5-buildroot:~# fltest_watchdogrestart
 
 Therefore, the application request time-out is 10 seconds, whilst the actual final watchdog reset time is 11 seconds.
 
-## 4.8 RTC Function Test
+### 4.8 RTC Function Test
 
 **Note: Before testing the RTC, please ensure that a button cell battery has been fitted to the board and that the battery voltage is within the normal range.**
 
@@ -1038,7 +1038,7 @@ root@OK3576-UP5-buildroot:~# date
 Wed May 27 10:06:32 UTC 2026
 ```
 
-## 4.9 USB3.0
+### 4.9 USB3.0
 
 OK3576-UP5 supports 1 x USB3.0 interface. Please connect USB devices such as mice, keyboards, and flash drives to any onboard USB HOST port, with full hot-plug support for these devices. Here, mounting a USB flash drive is used as an example. USB flash drive testing has currently been verified up to 32 GB; capacities above 32 GB have not been tested.
 
@@ -1098,7 +1098,7 @@ root@OK3576-UP5-buildroot:/# umount /run/media/sda1
 
 **Note: Exit the mount path before unplugging the USB drive.**
 
-## 4.10 LCD Backlight Adjustment
+### 4.10 LCD Backlight Adjustment
 
 The backlight brightness setting range is (0— 200), where 200 represents the highest brightness and 0 indicates the backlight is turned off. After connecting a MIPI display to the MIPI DSI A, power up to start the system. Enter the following command in the terminal after system startup for backlight testing.
 
@@ -1130,7 +1130,7 @@ root@OK3576-UP5-buildroot:~# echo 0 > /sys/class/backlight/backlight/brightness
 root@OK3576-UP5-buildroot:~# echo 200 > /sys/class/backlight/backlight/brightness
 ```
 
-## 4.11 USB Mouse Test
+### 4.11 USB Mouse Test
 
 Connect a USB mouse to the USB port on the OK3576-UP5 platform and use the “dmesg” command; the output on the serial terminal is as follows:
 
@@ -1146,7 +1146,7 @@ root@OK3576-UP5-buildroot:~# dmesg | grep -i mouse
 
 An arrow cursor appears on the screen, and the mouse is now working properly.
 
-## 4.12 ADC Test
+### 4.12 ADC Test
 
 The OK3576-UP5 development board features eight internal ADC channels. An adjustable resistor is connected to the saradc4, saradc5 and saradc6 channels. For the purposes of this test, saradc4 has been selected. The hardware diagram of the ADC pins is shown below; the input voltage is applied to pin 1 of P2. The chip uses a 1.8V reference voltage, corresponding to a maximum digital value of 4096 for its 12-bit ADC.
 
@@ -1168,14 +1168,14 @@ root@OK3576-UP5-buildroot:/sys/bus/iio/devices/iio:device0# cat in_voltage4_raw
 2455
 ```
 
-## 4.13 CAN Test
+### 4.13 CAN Test
 
-Note: There is currently an issue with byte alignment between CAN and DMA in 3576, which prevents CAN from using DMA. If you need to use the CAN protocol on the RK3576, please bear the following two points in mind:
+**Note: There is currently an issue with byte alignment between CAN and DMA in 3576, which prevents CAN from using DMA. If you need to use the CAN protocol on the RK3576, please bear the following two points in mind:**
 
-CAN Initialisation  
+**CAN Initialisation  
 To use the standard CAN protocol (not CAN-FD), the following two configurations are required:   
 Device Tree Configuration  
-Locate the “can0” and “can1” nodes in the “rk3576.dtsi” file and add the following properties:
+Locate the “can0” and “can1” nodes in the “rk3576.dtsi” file and add the following properties:**
 
 ```bash
 rockchip,rx-max-data = <4>;
@@ -1336,7 +1336,7 @@ root@OK3576-UP5-buildroot:~# cansend can1 1F334455#1122334455667788
 root@OK3576-UP5-buildroot:~#   can0  1F334455   [8]  11 22 33 44 55 66 77 88
 ```
 
-## 4.14 TF Test
+### 4.14 TF Test
 
 **Note: The SD card mounting directory`/run/media/`supports hot swapping, and currently supports formats including FAT32, exFAT, ext4, etc.**
 
@@ -1396,7 +1396,7 @@ root@OK3576-UP5-buildroot:~# umount /run/media/mmcblk1p1
 
 **Note: Exit the TF card mount path before removing the TF card.**
 
-## 4.15 eMMC Test
+### 4.15 eMMC Test
 
 The eMMC on the OK3576-UP5 platform operates by default in HS400 mode at a clock speed of 200 MHz. Below is a brief test of the eMMC’s read and write speeds, using the ext4 file system as an example.
 
@@ -1441,11 +1441,11 @@ root@OK3576-UP5-buildroot:~# dd if=/test of=/dev/null bs=1M
 524288000 bytes (524 MB, 500 MiB) copied, 0.17755 s, 3.0 GB/s
 ```
 
-## 4.16 Ethernet Configuration
+### 4.16 Ethernet Configuration
 
 The OK3576-UP5 board is equipped with two Gigabit Ethernet ports. With an Ethernet cable connected, the factory default configuration sets eth0 to a static IP, while eth1 is not configured.
 
-### 4.16.1 Network Card Test
+#### 4.16.1 Network Card Test
 
 - Use the ifconfig command to view network interface information.
 
@@ -1513,7 +1513,7 @@ Settings for eth0:
         Link detected: yes
 ```
 
-### 4.16.2 Static IP Setting
+#### 4.16.2 Static IP Setting
 
 **Note: **
 
@@ -1543,7 +1543,7 @@ Restart the network service after the setup is completed.
 root@OK3576-UP5-buildroot:~# systemctl restart systemd-networkd
 ```
 
-### 4.16.3 Obtaining a Dynamic IP Address
+#### 4.16.3 Obtaining a Dynamic IP Address
 
 **Note: This method sets eth1 to obtain an IP address automatically. If you wish to use eth0, simply set the Name field to eth0**.
 
@@ -1562,7 +1562,7 @@ Restart the network service after the setup is completed
 root@OK3576-UP5-buildroot:~# systemctl restart systemd-networkd
 ```
 
-### 4.16.4 Testing Network Performance
+#### 4.16.4 Testing Network Performance
 
 📌 Path:`User Materials/3-Tools/iperf3.21_64.zip`
 
@@ -1625,11 +1625,11 @@ iperf Done.
 
 The throughput test for the eth0 Gigabit Ethernet port reaches approximately 950 Mbits/sec, which meets the network performance requirements.
 
-## 4.17 Playback/Recording Test
+### 4.17 Playback/Recording Test
 
 The OK3576-UP5 is equipped with the NAU88C22YG audio codec chip, which integrates one standard 3.5mm audio jack (P38) and two PH2.0-2P white sockets (P36, P37). It supports driving an 8Ω speaker with a maximum output power of 1W. Before starting the playback test, insert a prepared headphone into the handset jack, or connect the speaker to the corresponding slot on the carrier board to proceed with the test.
 
-### 4.17.1 HDMI Playback
+#### 4.17.1 HDMI Playback
 
 - View the playback audio device:
 
@@ -1659,7 +1659,7 @@ Redistribute latency...
 Reached end of play list.
 ```
 
-### 4.17.2 SPKOUT Playback
+#### 4.17.2 SPKOUT Playback
 
 - View the playback audio device:
 
@@ -1736,7 +1736,7 @@ Reached end of play list.
 
 Plug a headphone into the SPKOUT interface, and you will hear the corresponding audio output.
 
-### 4.17.3 MIC Input
+#### 4.17.3 MIC Input
 
 View the recording audio device:
 
@@ -1765,7 +1765,7 @@ root@OK3576-UP5-buildroot:~# aplay test1.wav
 Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 ```
 
-## 4.18 WiFi Test
+### 4.18 WiFi Test
 
 **Note: **
 
@@ -1773,7 +1773,7 @@ Playing WAVE 'test1.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
 - **The OK3576-UP5 platform supports the AW-CM358 Wi-Fi and Bluetooth combo module;**
 - **The device can only operate in one mode (STA mode or AP mode) at any one time; it does not support simultaneous operation in both STA and AP modes.**
 
-### 4.18.1 STA Mode
+#### 4.18.1 STA Mode
 
 Before using the Wi-Fi functionality, follow these steps to configure it:
 
@@ -1829,7 +1829,7 @@ rtt min/avg/max/mdev = 31.530/32.232/33.500/0.635 ms
 
 To stop, press Ctrl+C. If the ping is successful, it indicates that the network is now working properly.
 
-### 4.18.2 AP Mode
+#### 4.18.2 AP Mode
 
 Before using the hotspot functionality, ensure that the network interface is connected and can access the internet.
 
@@ -1853,7 +1853,7 @@ WIFI hotspot password: 12345678
 
 At this point, a mobile phone can connect to this hotspot and access the internet.
 
-## 4.19 Bluetooth Testing
+### 4.19 Bluetooth Testing
 
 In the OK3576-UP5 development board, the carrier board AW-CM358 module integrates Bluetooth functionality. This section demonstrates data transmission between a mobile phone and the development board via Bluetooth, which supports Bluetooth 5.0. Please note that before testing Bluetooth, you must first complete the installation of the Wi-Fi module and firmware in accordance with the previous section, Wi-Fi Testing..
 
@@ -1968,9 +1968,9 @@ Transfer /org/bluez/obex/client/session0/transfer0
 [CHG] Transfer /org/bluez/obex/client/session0/transfer0 Transferred: 8024 (@8KB/s 00:11)
 ```
 
-Note: For certain manufacturers' phones, received files must include a file extension; otherwise, they may be rejected by the Android system. Therefore, please try to use files with extensions for testing.
+**Note: For certain manufacturers' phones, received files must include a file extension; otherwise, they may be rejected by the Android system. Therefore, please try to use files with extensions for testing.**
 
-## 4.20 Quectel EM05-CE Module Test
+### 4.20 Quectel EM05-CE Module Test
 
 The OK3576-UP5 supports a 4G moduleEM05-CE. Connect the 4G module and insert the SIM card before powering on the development board.
 
@@ -2056,7 +2056,7 @@ PING s-526319.gotocdn.com (211.149.226.120) from 10.6.110.29 wwan0: 56(84) bytes
 rtt min/avg/max/mdev = 105.732/122.930/144.579/16.168 ms
 ```
 
-## 4.21 Quectel RM500U-5G Module Test
+### 4.21 Quectel RM500U-5G Module Test
 
 The OK3576-UP5 supports a 5G moduleRM500U. Connect the 5G module and insert the SIM card before powering on the development board.
 
@@ -2223,17 +2223,17 @@ Stop the dial-up:
 root@OK3576-UP5-buildroot:~# pkill quectelCM
 ```
 
-## 4.22 Type-C Test
+### 4.22 Type-C Test
 
 The OK3576-UP5 features two Type-C ports, with automatic detection of Type-C HOST/DEVICE modes. Device mode can be used for flashing the device, ADB file transfers and debugging, whilst Host mode allows you to connect a standard USB device.
 
-### 4.22.1 Host Mode
+#### 4.22.1 Host Mode
 
 Plug in the USB disk to view the insertion details
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365533-34a1c78e-2724-4a72-996a-ef5a990df7a9.png)
 
-### 4.22.2 Device Mode
+#### 4.22.2 Device Mode
 
 Connect the Type-C0 port on the development board to a PC using a USB cable; the development board will be recognised by the PC as a slave device. You can interact with the device or transfer files via ADB.
 
@@ -2271,7 +2271,7 @@ C:\platform-tools-latest-windows\platform-tools> adb pull /root/iperf3.exe ./
 /root/iperf3.exe: 1 file pulled. 25.7 MB/s (468748 bytes in 0.017s)
 ```
 
-## 4.23 SPI Test
+### 4.23 SPI Test
 
 Two routed SPI channels: SPIA and SPIB are marked on the schematic of the OK3576 platform The default device names of SPIA and SPIB on the development board are spidev0.0 and spidev4.0 respectively.
 
@@ -2294,7 +2294,7 @@ DE AD BE EF BA AD
 F0 0D
 ```
 
-## 4.24 PCIE Test
+### 4.24 PCIE Test
 
 The OK3576-UP5 board features 1 x PCIE 3.0 x2 interface.
 
@@ -2342,7 +2342,7 @@ root@OK3576-UP5-buildroot:~# dd if=/run/media/nvme0n1p1/test of=/dev/null bs=1M
 104857600 bytes (105 MB, 100 MiB) copied, 0.255024 s, 411 MB/s
 ```
 
-## 4.25 SQLite3 Test
+### 4.25 SQLite3 Test
 
 SQLite3 is a lightweight database system, an ACID-compliant relational database management system with low resource consumption. The OK3576-UP5 development board uses version 3.21.0 of SQLite3.
 
@@ -2366,7 +2366,7 @@ sqlite> .quit			                                    // Quit the database (or use
 root@OK3576-UP5-buildroot:~#			        
 ```
 
-## 4.26 RKNPU Test
+### 4.26 RKNPU Test
 
 The NPU demo routines are available in the Linux file system for running tests.
 
@@ -2389,7 +2389,7 @@ Begin perf ...
 0.000172 - 285
 ```
 
-## 4.27 Sleep and Wake-Up Test
+### 4.27 Sleep and Wake-Up Test
 
 The OK3576-UP5 platform supports wake-up from sleep mode.
 
@@ -2401,7 +2401,7 @@ Short press the power key (KEY3) again to wake up the device:
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789607365987-41294e09-ae7b-4dc2-ad49-dd91455a24d1.png)
 
-## 4.28 Adding a Startup Script
+### 4.28 Adding a Startup Script
 
 - **To add a temporary auto-start script:**
 
@@ -2428,7 +2428,7 @@ Modify buildroot/board/rockchip/rk3576/fs-overlay/etc/forlinx.sh
 
 Then recompile, repack, and flash the image.
 
-## 4.29 Changing the Boot Logo
+### 4.29 Changing the Boot Logo
 
 OK3576-UP5 supports changing the custom boot logo without recompiling the system image.
 
@@ -2458,9 +2458,9 @@ root@OK3576-up5-buildroot:~# reboot
 
 **Once you have restarted the system, you will see that the logo has changed.**
 
-# 5\. OK3576-UP5 Codec Test
+## 5\. OK3576-UP5 Codec Test
 
-## 5.1 Introduction to Codec
+### 5.1 Introduction to Codec
 
 The OK3576-UP5 platform uses Gstreamer for audio and video applications, which supports hardware-accelerated encoding and decoding. All examples in this section are based on Gstreamer commands. If you need a player with a GUI, you can also use Qt multimedia classes, which also support hardware-accelerated encoding. Please refer to the Qt test section for more details.
 
@@ -2482,9 +2482,9 @@ OK3576-UP5 Hardware Encoding and Decoding Parameter Table
 | Video Encoder| H.264| multi-stream| 4K@60fps|
 | Video Encoder| H.265| multi-stream| 4K@60fps|
 
-## 5.2 Audio and Video Playback Experience
+### 5.2 Audio and Video Playback Experience
 
-### 5.2.1 Playing Video and Audio via Gst-play
+#### 5.2.1 Playing Video and Audio via Gst-play
 
 Gplay is an audio and video player based on Gstreamer. It automatically selects the appropriate plugins for audio and video playback based on the hardware, and it is very easy to use.
 
@@ -2500,7 +2500,7 @@ Redistribute latency...
 0:00:01.6 / 0:00:30.0
 ```
 
-### 5.2.2 Playing Video via Gst-launch
+#### 5.2.2 Playing Video via Gst-launch
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! queue ! h265parse ! mppvideodec ! waylandsink
@@ -2520,7 +2520,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.2.3 Playing Audio via Gst-launch 
+#### 5.2.3 Playing Audio via Gst-launch 
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/piano2-CoolEdit.mp3 ! id3demux ! mpegaudioparse ! mpg123audiodec ! alsasink
@@ -2538,7 +2538,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.2.4 Playing Video \& Audio via Gst-launch
+#### 5.2.4 Playing Video \& Audio via Gst-launch
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location= /userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux name=dec dec. ! queue ! h265parse ! mppvideodec ! waylandsink dec. ! queue ! decodebin ! alsasink
@@ -2560,11 +2560,11 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 5.3 Video Hardware Encoding
+### 5.3 Video Hardware Encoding
 
 OK3576-UP5 maximum support 8K@60fps /H. 265 and 8K@60fps /H. 264 video encoding.
 
-### 5.3.1 Video Hardware Encoding H.264
+#### 5.3.1 Video Hardware Encoding H.264
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph264enc ! h264parse ! mp4mux ! filesink location=test.mp4
@@ -2583,7 +2583,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.3.2 Video Hardware Encoding H.265
+#### 5.3.2 Video Hardware Encoding H.265
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=600 ! video/x-raw,framerate=30/1,width=7680,height=4320 ! mpph265enc ! h265parse ! mp4mux ! filesink location=test.mp4
@@ -2598,7 +2598,7 @@ New clock: GstSystemClock
 0:00:00.8 / 0:00:20.0 (4.3 %)
 ```
 
-### 5.3.3 JPEG Hardware Encoding
+#### 5.3.3 JPEG Hardware Encoding
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 videotestsrc num-buffers=1 ! video/x-raw,framerate=1/1,width=7680,height=4320 ! mppjpegenc ! jpegparse ! queue ! filesink location=test.jpeg
@@ -2615,9 +2615,9 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 5.4 Video Hardware Decoding
+### 5.4 Video Hardware Decoding
 
-### 5.4.1 H264 Video Decoding and Playback
+#### 5.4.1 H264 Video Decoding and Playback
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h264-30S.mp4 ! qtdemux ! h264parse ! mppvideodec ! waylandsink
@@ -2641,7 +2641,7 @@ handling interrupt..0 (19.7 %)
 
 ```
 
-### 5.4.2 H264 Video Decoding and Playback with Audio
+#### 5.4.2 H264 Video Decoding and Playback with Audio
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h264-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h264parse ! mppvideodec  ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
@@ -2666,7 +2666,7 @@ New clock: GstAudioSinkClock
 handling interrupt..0 (18.3 %)
 ```
 
-### 5.4.3 H265 Video Decoding and Playback
+#### 5.4.3 H265 Video Decoding and Playback
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink
@@ -2689,7 +2689,7 @@ New clock: GstSystemClock
 handling interrupt..0 (8.7 %)
 ```
 
-### 5.4.4 H265 Video Decoding and Playback with Audio
+#### 5.4.4 H265 Video Decoding and Playback with Audio
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_30fps_h265-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! h265parse ! mppvideodec  ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink
@@ -2718,7 +2718,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 5.4.5 VP9 Video Decoding and Playback
+#### 5.4.5 VP9 Video Decoding and Playback
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4  ! qtdemux ! vp9parse ! mppvideodec ! waylandsink
@@ -2742,7 +2742,7 @@ New clock: GstSystemClock
 handling interrupt..0 (8.3 %)
 ```
 
-### 5.4.6 VP9 Video Decoding and Playback with Audio
+#### 5.4.6 VP9 Video Decoding and Playback with Audio
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_vp9-30S.mp4 ! qtdemux name=demux demux.video_0 ! queue ! vp9parse ! mppvideodec ! waylandsink demux.audio_0 ! queue ! aacparse ! faad ! alsasink device=plughw:2,0
@@ -2768,9 +2768,9 @@ New clock: GstAudioSinkClock
 handling interrupt..0 (20.4 %)
 ```
 
-# 6\. OK3576-UP5 Camera Test
+## 6\. OK3576-UP5 Camera Test
 
-## 6.1 Camera Input Interfaces
+### 6.1 Camera Input Interfaces
 
 The OK3576-UP5 supports 4 x MIPI CSI camera interfaces and is compatible with both the OV13855 and OV5645 models. The correspondence between the interfaces is as follows:
 
@@ -2781,11 +2781,11 @@ The OK3576-UP5 supports 4 x MIPI CSI camera interfaces and is compatible with bo
 | P14| OV5645|
 | P13| OV5645|
 
-## 6.2 UVC Camera Test
+### 6.2 UVC Camera Test
 
 The OK3576-UP5 supports the OV13855, OV5645MIPI camera and also supports UVC cameras. First test UVC camera, using the Logitech C270 as an example. Insert the USB camera into the development board, and the uvc driver will automatically install.
 
-### 6.2.1 Camera Detection and Format Support Query
+#### 6.2.1 Camera Detection and Format Support Query
 
 Camera Recognition
 
@@ -3045,7 +3045,7 @@ ioctl: VIDIOC_ENUM_FMT
                         Interval: Discrete 0.200s (5.000 fps)
 ```
 
-### 6.2.2 Camera Capture Format Query and Modification
+#### 6.2.2 Camera Capture Format Query and Modification
 
 Capture Format Query
 
@@ -3063,7 +3063,7 @@ Format Video Capture:
         Quantization      : Default (maps to Limited Range)
 ```
 
-### 6.2.3 Camera Image Preview and Capture
+#### 6.2.3 Camera Image Preview and Capture
 
 Camera Image Preview
 
@@ -3094,7 +3094,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 6.3 OV13855 Test
+### 6.3 OV13855 Test
 
 For sensors like the OV13855 and other raw sensors, each sensor corresponds to five device nodes:
 
@@ -3112,7 +3112,7 @@ The testing method for OV13855 is basically the same as for the UVC camera. This
 
 `P33:`rkcif\_mipi\_lvds
 
-### 6.3.1 Camera Detection and Format Support Query
+#### 6.3.1 Camera Detection and Format Support Query
 
 ```bash
 root@OK3576-UP5-buildroot:~# v4l2-ctl --list-devices
@@ -3161,7 +3161,7 @@ rkvpss_scale0 (platform:rkvpss-vir0):
         /dev/media5
 ```
 
-### 6.3.2 Viewing Supported Formats
+#### 6.3.2 Viewing Supported Formats
 
 ```bash
 root@OK3576-UP5-buildroot:~#  v4l2-ctl --list-formats-ext -d /dev/video44
@@ -3184,7 +3184,7 @@ ioctl: VIDIOC_ENUM_FMT
                 Size: Stepwise 32x32 - 800x600 with step 8/8
 ```
 
-### 6.3.3 Camera Preview
+#### 6.3.3 Camera Preview
 
 ```bash
 root@OK3576-up5-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video44 ! videoconvert ! video/x-raw,format=NV12,width=1920,height=1080 ! autovideosink sync=false
@@ -3206,7 +3206,7 @@ Redistribute latency...
 0:00:06.7 / 99:99:99.
 ```
 
-### 6.3.4 Camera Photo Capture (Using Main Path)
+#### 6.3.4 Camera Photo Capture (Using Main Path)
 
 ```bash
 root@OK3576-up5-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video44 num-buffers=1 ! video/x-raw,format=NV12,width=640,height=480 ! mppjpegenc ! filesink location=pic.jpg
@@ -3223,7 +3223,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 6.3.5 Recording H.264 Video
+#### 6.3.5 Recording H.264 Video
 
 ```bash
 root@OK3576-up5-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video44 num-buffers=100 ! video/x-raw,format=NV12, width=640,height=480 ! tee name=t ! queue ! mpph264enc ! queue ! h264parse ! qtmux ! filesink location=13855_h264.mp4 t. ! queue ! waylandsink
@@ -3242,7 +3242,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 6.3.6 Playing H264 Video
+#### 6.3.6 Playing H264 Video
 
 ```bash
 root@OK3576-up5-buildroot:~# gst-launch-1.0 filesrc location=13855_h264.mp4 ! qtdemux ! queue ! h264parse ! mppvideodec ! waylandsink
@@ -3263,7 +3263,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-## 6.4 OV5645 Test
+### 6.4 OV5645 Test
 
 **Node corresponding to the camera**
 
@@ -3275,7 +3275,7 @@ Freeing pipeline ...
 
 Take testing P15 as an example:
 
-### 6.4.1 Camera Identification and Detection
+#### 6.4.1 Camera Identification and Detection
 
 ```bash
 root@OK3576-UP5-buildroot:~# v4l2-ctl --list-devices
@@ -3346,7 +3346,7 @@ rkvpss_scale0 (platform:rkvpss-vir0):
         /dev/media5
 ```
 
-### 6.4.2 Viewing Supported Formats
+#### 6.4.2 Viewing Supported Formats
 
 ```bash
 root@OK3576-up5-buildroot:~# v4l2-ctl --list-formats-ext -d /dev/video11
@@ -3371,7 +3371,7 @@ ioctl: VIDIOC_ENUM_FMT
                 Size: Stepwise 64x64 - 1920x1080 with step 8/8
 ```
 
-### 6.4.3 Camera Preview
+#### 6.4.3 Camera Preview
 
 ```bash
 root@OK3576-up5-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw, format=NV12, width=1920,height=1080, framerate=30/1 ! waylandsink
@@ -3385,7 +3385,7 @@ Redistribute latency...
 0:00:03.8 / 99:99:99.
 ```
 
-### 6.4.4 Camera Photo Capture (Using Main Path)
+#### 6.4.4 Camera Photo Capture (Using Main Path)
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video11 num-buffers=1 ! video/x-raw,format=NV12,width=1920,height=1080 ! jpegenc ! filesink location="picture.jpg"
@@ -3402,7 +3402,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 6.4.5 Recording H.264 Video
+#### 6.4.5 Recording H.264 Video
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw,format=NV12,width=1920,height=1080,framerate=30/1 ! mpph264enc ! filesink location="video.h264"
@@ -3430,7 +3430,7 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-### 6.4.6 H.264 Video Playback
+#### 6.4.6 H.264 Video Playback
 
 ```bash
 root@OK3576-UP5-buildroot:~# gst-launch-1.0 filesrc location="video.h264" ! h264parse ! mppvideodec ! waylandsink
@@ -3456,13 +3456,13 @@ Setting pipeline to NULL ...
 Freeing pipeline ...
 ```
 
-# 7\. OK3576-UP5 Display Interface Test
+## 7\. OK3576-UP5 Display Interface Test
 
-## 7.1 Display interface
+### 7.1 Display interface
 
 The OK3576-UP5 is based on the VOP2 (Video Output Processor 2.0) unified display architecture of the RK3576, supporting various display interfaces such as HDMI, eDP, MIPI DSI, and DP. It can drive up to four independent display outputs simultaneously.
 
-## 7.2 Overview of Display Controller
+### 7.2 Overview of Display Controller
 
 The RK3576 VOP2 integrates four independent Video Ports (VP), each capable of driving a separate display output channel:
 
@@ -3479,7 +3479,7 @@ The connection diagram for the RK3576 VP and the various display interfaces is a
 
 ![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350649172-31dd131c-7ef3-4c32-87fc-5fd2f51f176e.png)
 
-## 7.3 Specifications of Each Display Interface
+### 7.3 Specifications of Each Display Interface
 
 The maximum output resolution and protocol standards for each RK3576 display interface are as follows:
 
@@ -3491,11 +3491,11 @@ The maximum output resolution and protocol standards for each RK3576 display int
 | MIPI DSI| 3840x2160@60Hz| Dual MIPI, supporting DSI v1.1, DCS v1.1, DPHY v2.0, CPHY v1.1|
 | RGB| 1920×1080@60Hz| Supports BT.656 / BT.1120|
 
-## 7.4 Display Interface Test
+### 7.4 Display Interface Test
 
 You may refer to the section on screen switching in Chapter 2.5 to carry out testing and verification of the various display interfaces.
 
-## 7.5 Waylandsink Fixed Position Test
+### 7.5 Waylandsink Fixed Position Test
 
 All tests in this chapter for display are done using the waylandsink plugin from Gstreamer. By default, the video or camera window will pop up randomly on the desktop. If you want to display it in a specific position, you can specify the coordinates.
 
@@ -3505,19 +3505,19 @@ For example, coordinates (0,0), width 480, height 360.
 root@OK3576-up5-buildroot:~# gst-launch-1.0 filesrc location=/userdata/media/1080p_60fps_h265-30S.mp4 ! qtdemux ! h265parse ! mppvideodec ! waylandsink  "render-rectangle=<0,0,480,360>"
 ```
 
-# 8\. Flashing the System
+## 8\. Flashing the System
 
 The OK3576-UP5 development board currently supports flashing via OTG and TF Card. The corresponding programming tool is provided in the user profile, and you can choose any one of the methods for image programming.
 
-## 8.1 Factory Prebuilt Image
+### 8.1 Factory Prebuilt Image
 
 User documentation includes Forlinx's validated factory image for system flashing tests and factory resets.
 
 📌 Path:`User Materials\2-Source Code and Images\0-Images\update.img`
 
-## 8.2 OTG System Flashing
+### 8.2 OTG System Flashing
 
-### 8.2.1 OTG Driver Installation
+#### 8.2.1 OTG Driver Installation
 
 📌 Path:`User Materials\3-Tools\DriverAssitant_v5.13.zip`
 
@@ -3531,9 +3531,9 @@ The driver is installed successfully. Click “OK”.
 
 ![Image](1719278371239_c88b99ca_e7f1_452b_a2e9_5e6bfea8bb73.png)
 
-### 8.2.2 OTG Full Flashing Test
+#### 8.2.2 OTG Full Flashing Test
 
-#### 8.2.2.1 RKDevTool Flashing Test
+**8.2.2.1 RKDevTool Flashing Test**
 
 **Note: You must use version 3.37 or later of the RKDevTool\_Release tool for flashing.**
 
@@ -3575,7 +3575,7 @@ At this time, the system will prompt that a maskrom device is found. The program
 
 **Note: Don't click "Device Partition Table" in maskrom mode, it is invalid.**
 
-#### 8.2.2.2 FactoryTool Flashing Test
+**8.2.2.2 FactoryTool Flashing Test**
 
 FactoryTool is used for batch OTG flashing in the factory. It does not require reading an image file and can batch-flash large images. If RKDevTool does not meet compatibility requirements, this method can also be attempted. Before using, extract it to a directory with only English characters. Connect the development board and host using a Type-C cable. Press and hold the recovery button, press the reset button for the system reset, and after about two seconds, release the recovery button. There will be prompts on the Rockchip development tool : loader device found
 
@@ -3597,9 +3597,9 @@ Downloading firmware.
 
 Upgrade successful. The system will not automatically restart and will require a power cycle to restart.
 
-### 8.2.3 OTG Step-by-Step Flashing Test
+#### 8.2.3 OTG Step-by-Step Flashing Test
 
-#### 8.2.3.1 Overwriting a Single Partition In Loader Mode
+**8.2.3.1 Overwriting a Single Partition In Loader Mode**
 
 During the development phase, performing full flashing every time can be time-consuming. Therefore, here it introduces how to use OTG flashing tools to flash individual partitions.
 
@@ -3631,7 +3631,7 @@ Click the “Execute” button to automatically flash and restart.
 
 ![Image](image-084.png)
 
-#### 8.2.3.2 Independent Partition Overwriting in MASKROM Mode
+**8.2.3.2 Independent Partition Overwriting in MASKROM Mode**
 
 Compared with independent partition flashing in Loader mode, MASKROM mode requires only two extra files to be selected: MiniLoaderAll.bin and parameter.txt.
 
@@ -3643,7 +3643,7 @@ Once parameter.txt is selected, it will automatically populate the addresses for
 
 ![](image-086.png)
 
-## 8.3 TF System Flashing
+### 8.3 TF System Flashing
 
 TF card making and testing.
 
