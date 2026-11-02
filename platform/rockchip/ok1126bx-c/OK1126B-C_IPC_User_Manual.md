@@ -44,11 +44,11 @@ OK1126B-C/OK1126BJ-C is a low-power and high-performance processor based on the 
 
 Connection method: Board to board. The main interfaces are shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1787119696416-ee9b3e05-0f9f-4d2e-ba4b-a3a296b568b2.png?x-oss-process=image%2Fformat%2Cwebp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1787119696416_ee9b3e05_0f9f_4d2e_ba4b_a3a296b568b2.png)
 
 **Front**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1787119696547-e1268aed-def8-43fb-af21-af76561e217f.png?x-oss-process=image%2Fformat%2Cwebp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1787119696547_e1268aed_def8_43fb_af21_af76561e217f.png)
 
 **Back**
 
@@ -96,7 +96,7 @@ The table below details the eMMC storage partition information for the Linux ope
 + 5V2A DC Power Cable
 + Debug port cable
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784014689323-f6d189dc-8913-4653-8fc6-1aafabd74794.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784014689323_f6d189dc_8913_4653_8fc6_1aafabd74794.png)
 
 ### 2.2 Debugging Serial Port Driver Installation
 
@@ -119,15 +119,15 @@ Take putty as an example to introduce the setting mode of the putty terminal:
 
 Step1: Identify the serial port number assigned to the PC. In Device Manager, locate the serial port with the name ending in “SERIAL-”, which corresponds to the actual debug UART. For example, this may appear as COM61; the port number should be based on the actual one detected by the system.
 
-![Image](1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1735029360193_d064cec3_c29b_4931_93d7_837a464359d5.png)
 
 Step2: Open the putty and set the serial line according to the com port of the computer used. The baud rate is 115200.
 
-![](https://cdn.nlark.com/yuque/0/2026/jpeg/12459611/1784014986751-cf6a99b1-56aa-42fc-abde-5115f9cfeab8.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784014986751_cf6a99b1_56aa_42fc_abde_5115f9cfeab8.jpeg)
 
 Step 3: After the above settings, input the computer’s COM port in Saved Sessions (e.g., COM61 as an example), save the settings. For subsequent serial port openings, simply click on the saved port number;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784016821110-7feca63b-bf4a-46e0-98af-f65ad9d71684.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784016821110_7feca63b_bf4a_46e0_98af_f65ad9d71684.png)
 
 #### 2.3.2 Serial Port Login
 
@@ -267,7 +267,7 @@ umount /mnt/sdcard
 
 Set the DIP switch S1 on the development board to the OFF position, and ADB will run automatically after power-on. The ADB device will be seen in the Device Manager on the PC.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784018900398-80fd5e64-c53a-40a5-851a-5199e2accd00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784018900398_80fd5e64_c53a_40a5_851a_5199e2accd00.png)
 
 Execute the following command on the PC side to connect to the ADB device:
 
@@ -536,7 +536,7 @@ Check if it is consistent with the set system software time. With the RTC batter
 
 The UART available for using on the development board is uart5, located at pins 8 and 10 of P18, as shown in the figure below.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784019796452-cab0d170-e6d0-4933-b8ea-f3b007abcc84.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784019796452_cab0d170_e6d0_4933_b8ea_f3b007abcc84.png)
 
 Copy User Materials/2-Images and Source Codes/2-Test Programs/uart/fltest\_uarttest to the /userdata path of the development board (via TF card, U disk or ADB, please refer to the corresponding sections for operations).
 
@@ -576,7 +576,7 @@ The corresponding relationships are as follows:
 | 24| CS0|
 | 26| CS1|
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784019987242-ad7f6d65-23f6-4818-9da0-30f41d40da17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784019987242_ad7f6d65_23f6_4818_9da0_30f41d40da17.png)
 
 Copy User Materials/2-Images and Source Codes/2-Test Programs/spi/fltest\_spidev\_test to the /userdata path of the development board (via TF card, U disk or ADB, please refer to the corresponding sections for operations).
 
@@ -719,25 +719,25 @@ In sysdrv/source/kernel/arch/arm64/boot/dts/rockchip/OK1126B-C-common.dtsi:
 
 Comment out this part of the code below
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784021620549-62b09ef1-d8c5-48fe-8a32-be4d53f22d44.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784021620549_62b09ef1_d8c5_48fe_8a32_be4d53f22d44.png)
 
 Uncomment this part of the code below
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784021640495-ec0976d2-9984-454d-adbe-0a3cbc7f58d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784021640495_ec0976d2_9984_454d_adbe_0a3cbc7f58d9.png)
 
 Change the status of the rgmii\_phy node to disabled
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784021657151-db1af10c-1cae-448f-8130-2c79e3447b29.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784021657151_db1af10c_1cae_448f_8130_2c79e3447b29.png)
 
 Change the status of rmii\_phy to okay
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784021675945-e5c9a184-2771-46eb-b4a5-00e968434284.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784021675945_e5c9a184_2771_46eb_b4a5_00e968434284.png)
 
 The pictures above are screenshots before modification, that is, in the state of enabling Gigabit Ethernet. The following shows the modified state (in the state of enabling Fast Ethernet):
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784021697250-2496bd81-1487-4ed3-8916-b3b2e2ec79d5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784021697250_2496bd81_1487_4ed3_8916_b3b2e2ec79d5.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784021710292-9cdb9997-f7c3-48ad-8ba9-79da6f841cdd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784021710292_9cdb9997_f7c3_48ad_8ba9_79da6f841cdd.png)
 
 After that, perform a full recompilation and burn the image to the development board. Note that when using Fast Ethernet, the network cable should be connected to the Fast Ethernet socket, which is P12.
 
@@ -791,7 +791,7 @@ After waking up, the board supports recognizing the following voice commands:
 
 Example: Say “Xiao Rui Xiao Rui” to the on-board MIC. After hearing the response “I am here”, say the command “Turn on the light” to the on-board MIC. The debug serial port will print characters similar to the content in the corresponding figure, indicating that the “Turn on the light” command has been recognized.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784022163139-7beb312d-ca42-4b54-b02b-a679cb0cb8f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784022163139_7beb312d_ca42_4b54_b02b_a679cb0cb8f1.png)
 
 ### 4.2 AOV（Always On Video）
 
@@ -807,7 +807,7 @@ sample_aov_vi_iva_venc -w 1920 -h 1080 -a /etc/iqfiles/ --suspend_time 1000 --lo
 
 Program flow:
 
-![](flowchart_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/flowchart_en.png)
 
 Code path: project/app/aov\_sample/sample\_aov\_vi\_iva\_venc.c
 
@@ -854,28 +854,28 @@ It is recommended to use a 4G module that supports low power consumption, with a
 
 This module is connected via a USB-A to Type-C adapter cable, which means the module is powered through USB. Therefore, make sure to toggle the switch on the 4G development board to the “ON” position;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785399969385-7e1dc75c-2738-419a-a158-c2ab1b1b6c36.png)![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785399975833-62e36b17-29f2-49ad-9c42-a097f0e579b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785399969385_7e1dc75c_2738_419a_a158_c2ab1b1b6c36.png)![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785399975833_62e36b17_29f2_49ad_9c42_a097f0e579b9.png)
 
 The default logic level of Air780EPT is 1.8V. If you need to modify the level to 3.3V, connect PIN100: IO\_Volt\_Set to ground via a Dupont wire (Note: Connecting PIN100: IO\_Volt\_Set to ground must be completed before powering on the device to take effect);
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400000905-8ed0964e-38e1-4c30-bce6-79274fff15c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400000905_8ed0964e_38e1_4c30_bce6_79274fff15c1.png)
 
 Connection method for wake-up pins:
 
 + Air780EPT Development Board: PIN19 (UART\_DTR) is commonly used as the pin for the external SOC to wake the module from sleep state; PIN20 (UART\_RI) is commonly used as the pin for the 4G module to wake the external SOC from sleep state.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400119398-b8c4aa30-8966-4421-8c93-f56deecc2647.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400119398_b8c4aa30_8966_4421_8c93_f56deecc2647.png)
 
 + OK1126Bx-C Development Board: Pin header P18\_13: GPIO7\_A0 is the signal for the SOC to wake the module; Pin header P18\_16 is the signal for the module to wake the SOC.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400139860-91c17344-45be-4d77-a6e9-cd606199f500.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400139860_91c17344_45be_4d77_a6e9_cd606199f500.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/49874024/1787653380149-19023fce-d19a-485a-bfd0-5ed4f692e6b7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1787653380149_19023fce_d19a_485a_bfd0_5ed4f692e6b7.png)
 
 + Connect the module’s PIN19 (UART\_DTR) pin to P18\_13 pin header: This realizes the function of the external SOC waking the module from sleep state;
 + Connect the module’s PIN20（UART\_RI）pin to P18\_16 pin header: This realizes the function of the external SOC waking the module from sleep state;
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400176912-e4d01d55-1f84-46ce-ab23-cfe899fdfeca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400176912_e4d01d55_1f84_46ce_ab23_cfe899fdfeca.png)
 
 For the 4G module to wake up the CPU, you can directly connect to the existing wake-up pin, GPIO0\_A2 (available at the P18\_12 header). This pin is already configured for wake-up via a button on the baseboard. If you wish to use pin P18\_16 instead, you must modify the device tree to add it as a wake-up source, as shown below:
 
@@ -883,15 +883,15 @@ Open sysdrv/source/kernel/arch/arm64/boot/dts/rockchip/OK1126B-C-common.dtsi
 
 Add the following content to gpio-keys:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400234215-22ecd44c-1ce9-48df-9018-907a90a28b83.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400234215_22ecd44c_1ce9_48df_9018_907a90a28b83.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400243280-a267a800-826c-41e3-92a6-b846ee42e9d1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400243280_a267a800_826c_41e3_92a6_b846ee42e9d1.png)
 
 Open sysdrv/source/kernel/arch/arm64/boot/dts/rockchip/FET1126B-C.dtsi
 
 Change the sleep-state configuration of GPIO0\_B2 to pull-up:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1785400263569-a7bc48de-0d78-4385-9c44-8bc74bec6d74.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1785400263569_a7bc48de_0d78_4385_9c44_8bc74bec6d74.png)
 
 #### **4.4.3 Test Method**
 
@@ -1083,7 +1083,7 @@ lsmod
 
 The results are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784022553071-abb42928-1ab5-479f-a2e6-bbf3110d319e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784022553071_abb42928_1ab5_479f_a2e6_bbf3110d319e.png)
 
 View video devices
 
@@ -1139,7 +1139,7 @@ v4l2-ctl -d /dev/video23 --stream-mmap=3 --stream-poll
 
 The results are as follows:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784022599926-084af399-6b19-49cc-8aa8-3d23ed806ee5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1784022599926_084af399_6b19_49cc_8aa8_3d23ed806ee5.png)
 
 ## 6\. Flashing the System
 
@@ -1155,4 +1155,4 @@ Press and hold the UPDATE key on the development board, then power on the board.
 
 Select the firmware upgrade tab, click the firmware button to choose the \`update.img\` file, and then click the upgrade button to begin the flashing process; the development board will automatically restart once the flashing is complete.
 
-![Image](1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Manual/1719278374299_664b1139_5d46_477e_8ec7_3640a0573c20.png)
