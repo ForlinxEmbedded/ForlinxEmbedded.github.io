@@ -13,9 +13,9 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 This manual is a software manual for the IPC SDK, which carries out relevant functional tests and descriptions targeting the IPC SDK Linux 6.1.157 kernel. Please select the materials consistent with the image in the development board for operations. You can access software and hardware documentation through the cloud storage link provided by our company (please ask your sales representative for the download link).
 
-**Note:
+**Note:**
 
-+ **The OK1126B-C development board comes pre-flashed with the default Linux version 6.1.147. However, this version is not the IPC SDK Linux version 6.1.157 mentioned in this document. Before any operations, you must re-flash the board with the IPC SDK Linux 6.1.157 image. Please refer to the section on "System Flashing" for the flashing instructions. Once the flashing is complete, you can verify the kernel version information by following the steps outlined in "Serial Port Login"; 
++ **The OK1126B-C development board comes pre-flashed with the default Linux version 6.1.147. However, this version is not the IPC SDK Linux version 6.1.157 mentioned in this document. Before any operations, you must re-flash the board with the IPC SDK Linux 6.1.157 image. Please refer to the section on "System Flashing" for the flashing instructions. Once the flashing is complete, you can verify the kernel version information by following the steps outlined in "Serial Port Login"; **
 
 + **For detailed information, please refer to the OK1126B-C User Materials. All file paths for user materials mentioned in this document are relative to the root directory of the OK1126B-C User Materials.**
 
