@@ -10,6 +10,17 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives. 
 
+## Application Scope
+
++ The OK1126B-C board ships with a pre-installed Linux image. Before use, verify the system is Linux. If not, re-flash the Linux image following the “Flashing the System” guide. After flashing, use the “Serial Port Login” steps to check the kernel version.
++ For detailed information, please refer to the OK1126B-C User Materials. All file paths for user materials mentioned in this document are relative to the root directory of the OK1126B-C User Materials.
+
+## Revision History
+
+|  **Date**  | **Version** | **SoM Version** | **Carrier Board Version** |     **Revision History**      |
+| :--------: | :---------: | --------------- | ------------------------- | :---------------------------: |
+| 22/07/2026 |    V1.0     | V1.1            | V1.1                      | User’s Manual Initial Version |
+
 ## Overview
 
 This manual is designed to help you quickly familiarize yourselves with the product, understand interface functions, and learn testing methods. It primarily covers the testing of development board interface functions, methods for flashing the image, and troubleshooting common issues encountered during use. During testing, certain commands have been annotated for better understanding, focusing on practicality and adequacy. For kernel compilation, related application compilation methods, and development environment setup, please refer to the “User’s Compilation Manual” provided by Forlinx...
@@ -22,17 +33,6 @@ There are six chapters:
 + Chapter 4. explains how to perform functional tests using command line operations;
 + Chapter 5. includes camera playback tests and video hardware encoding/decoding tests;
 + Chapter 6. details methods for updating the image to storage devices, allowing you to choose the appropriate flashing method based on your actual needs.
-
-## Application Scope
-
-+ The OK1126B-C board ships with a pre-installed Linux image. Before use, verify the system is Linux. If not, re-flash the Linux image following the “Flashing the System” guide. After flashing, use the “Serial Port Login” steps to check the kernel version.
-+ For detailed information, please refer to the OK1126B-C User Materials. All file paths for user materials mentioned in this document are relative to the root directory of the OK1126B-C User Materials.
-
-## Revision History
-
-| **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|----------|----------|:----------:|
-| 22/07/2026 | V1.0| V1.1| V1.1| User’s Manual Initial Version|
 
 ## 1\. OK1126B-C Development Board Description
 

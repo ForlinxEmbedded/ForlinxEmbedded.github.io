@@ -10,6 +10,16 @@ Forlinx adheres to copyrights of all graphics and texts used in all publications
 
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives. 
 
+## Application Scope
+
+This hardware manual applies to Forlinx OK1126B-C\&OK1126BJ-C development board (version 1.1 and above) and FET1126B-C, FET1126B-C\&FET1126BJ-C SoM (version 1.1 and above).
+
+## Revision History
+
+| **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
+|:----------:|:----------:|:----------:|:----------:|----------|
+| 22/07/2026| V1.0| V1.1| V1.1| Initial Version|
+
 ## Overview
 
 This manual aims to help you quickly get familiar with the product, understand interface functions and configurations. It covers the interface functions and introductions of the development board, product power consumption, and methods for troubleshooting issues during use. Some commands are annotated in the description for user convenience, with a focus on practicality. For information on pin function multiplexing and hardware design guidelines, please refer to Forlinx's “FET1126B-C\& FET1126BJ-C Pin Multiplexing Comparison Table".
@@ -23,21 +33,11 @@ There are four main chapters:
 
 Additionally, the manual includes explanations of some symbols and formats.
 
-| **Format**| **Meaning**|
-|:----------:|:-----------|
-| **Note** | Note or particularly important information must be read carefully.|
-| 📚 | Relevant explanations regarding the testing section|
-| ️🛤️ | Related paths.|
-
-### Application Scope
-
-This hardware manual applies to Forlinx OK1126B-C\&OK1126BJ-C development board (version 1.1 and above) and FET1126B-C, FET1126B-C\&FET1126BJ-C SoM (version 1.1 and above).
-
-## Revision History
-
-| **Date**| **Version**| **SoM Version**| **Carrier Board Version**| **Revision History**|
-|:----------:|:----------:|:----------:|:----------:|----------|
-| 22/07/2026| V1.0| V1.1| V1.1| Initial Version|
+| **Format** | **Meaning**                                                  |
+| :--------: | :----------------------------------------------------------- |
+|  **Note**  | Note or particularly important information must be read carefully. |
+|     📚      | Relevant explanations regarding the testing section          |
+|     ️🛤️      | Related paths.                                               |
 
 ## 1\. Rockchip RV1126B Description
 
