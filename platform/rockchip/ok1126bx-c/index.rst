@@ -66,6 +66,7 @@ SOFTWARE
 
    OK1126B-C_Linux6_1_14_User_Manual.md
    OK1126B-C_Linux6_1_14_User_Compilation_Manual
+   OK1126B-C_IPC_User_Manual
 
 
 
