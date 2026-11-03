@@ -297,7 +297,7 @@ The network is set to dynamic IP.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278540815_009829ab_476a_45b8_b02e_d7f42bfbe34f_1790660964244.png)
 
-+ **Bridge Mode: **
++ **Bridge Mode:** 
 
 If using servers like TFTP or SFTP, you need to set the virtual machine's network connection to Bridged Mode. When Vmware virtual network card is set to bridged mode, the host network card and the virtual machine network card communicate through a virtual bridge, and you need to ensure that the IP address of Ubuntu is in the same subnet as the host machine.
 
@@ -456,7 +456,7 @@ This operation removes all intermediate files but does not affect the source fil
 
 ### 4.3 Use of Image Files
 
-Note: The update.img file is for OTG flashing, while the other files are for step-by-step flashing. The Image file generated from separate compilation will not be updated in update.img. Use step-by-step flashing (refer to the OTG flashing section in the user manual).
+**Note: The update.img file is for OTG flashing, while the other files are for step-by-step flashing. The Image file generated from separate compilation will not be updated in update.img. Use step-by-step flashing (refer to the OTG flashing section in the user manual).**
 
 ### 4.4 Application Compilation and Running
 
