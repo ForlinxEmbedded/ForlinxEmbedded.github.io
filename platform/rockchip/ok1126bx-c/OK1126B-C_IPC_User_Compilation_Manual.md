@@ -117,7 +117,7 @@ There are two ways to use the virtual machine environment in VMware: one is to d
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1787636628014-c66dae29-6faf-4773-8da3-b4b2c63aebb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1787636628014_c66dae29_6faf_4773_8da3_b4b2c63aebb9.png)
 
 Select all the compressed packages and right click to extract them to the current folder or your own directory: After extraction, you will obtain the development environment folder.
 
@@ -129,7 +129,7 @@ Open the installed virtual machine software.
 
 Select the directory where the newly extracted - OK1126B-linux6.1-VM17-ubuntu22.04 virtual machine file is located, and double-click the startup file to open it.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1787637473679-3ecb52df-0eb4-47ce-9a09-f97cb07edb07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1787637473679_3ecb52df_0eb4_47ce_9a09_f97cb07edb07.png)
 
 Once it has finished loading, click to start the virtual machine, and you will be able to run it and enter the system interface.
 
@@ -137,7 +137,7 @@ Once it has finished loading, click to start the virtual machine, and you will b
 
 The default account for auto-login upon system boot in the development environment is: ''forlinx'', with the password: ''forlinx''.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1787637607212-3f31ab54-1396-4ee4-b17d-e57190f22b70.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1787637607212_3f31ab54_1396_4ee4_b17d_e57190f22b70.png)
 
 ## 3\. Setting Up a New Ubuntu Development Environment
 
@@ -231,38 +231,38 @@ After configuring the image, ensure that the network is working, and then start 
 
 Once the virtual machine starts, wait for the installation interface to appear as shown below.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062740-8d4fffe6-3f92-47ff-82a5-9a738edd68c3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1766382062740_8d4fffe6_3f92_47ff_82a5_9a738edd68c3.png)
 
 Select the language on the left side and click "Install Ubuntu." A language selection screen will pop up.  
 By default, Ubuntu's language is English, but you can also select Chinese. The selected language can be changed later during the installation. Once you've selected the language, click ''Continue''.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536000-eb047135-c38a-4252-8c28-ab4160903086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278536000_eb047135_c38a_4252_8c28_ab4160903086.png)
 
 Next, choose the default option, click Continue to proceed with the installation. The process will take some time. Then click Continue again.
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536210-5beb2cde-35d4-44aa-b6b6-4e9c8e760b06.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278536210_5beb2cde_35d4_44aa_b6b6_4e9c8e760b06.png)
 
 Click "Install Now", and a prompt will appear. Click "Continue".
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536401-c42c25c7-6384-4061-a7e2-76c6349c64be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278536401_c42c25c7_6384_4061_a7e2_76c6349c64be.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/45781369/1719278536688-120370eb-2370-46c6-805f-a2041fe0149c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278536688_120370eb_2370_46c6_805f_a2041fe0149c.png)
 
 Choose your timezone. Here, you can click Shanghai or type Shanghai to select the timezone (choose a different timezone based on your location if needed), and click Continue. Finally, set up your username and password. Click Continue, and the installation will begin automatically.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062807-b52339a1-ad54-46c0-aa7c-6bf5f0d357b8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1766382062807_b52339a1_ad54_46c0_aa7c_6bf5f0d357b8.png)
 
 The installation process is shown in the figure below. If the network is not good, you can skip it without affecting the installation.
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062878-28446a75-0c69-4238-be5a-68b2dfa643d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1766382062878_28446a75_0c69_4238_be5a_68b2dfa643d6.png)
 
 After installation is complete, the screen will look like the image below. Click ''Restart Now'' to reboot (or click ''Restart Guest'').
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382062949-be55a3f4-2047-4102-b96b-3c11d505d5e5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1766382062949_be55a3f4_2047_4102_b96b_3c11d505d5e5.png)
 
 After restarting and logging in, the system interface is as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382063027-f48e7115-ead7-4aef-9d2e-d8450621631c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1766382063027_f48e7115_ead7_4aef_9d2e_d8450621631c.png)
 
 #### 3.1.3 Basic Configuration of Ubuntu
 
@@ -414,7 +414,7 @@ First, select the compilation configuration and choose 0:
 forlinx@ubuntu:~/work/ok1126b-linux-source$ ./build.sh lunch
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1784094609134-45ec514f-6974-4303-9827-b800cce413cf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1784094609134_45ec514f_6974_4303_9827_b800cce413cf.png)
 
 Perform a full compilation.
 
@@ -434,7 +434,7 @@ Follow the steps below to compile the kernel separately.
 forlinx@ubuntu:~/work/ok1126b-linux-source$ ./build.sh kernel
 ```
 
-![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1766382065083-1d080843-e960-401a-84df-66948f623b6c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1766382065083_1d080843_e960_401a_84df_66948f623b6c.png)
 
 After compilation, the kernel in update.img will not be updated. Please follow the step-by-step instructions to flash the ‘output/image/boot.img’ file.
 
