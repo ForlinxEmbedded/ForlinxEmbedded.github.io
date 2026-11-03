@@ -89,7 +89,7 @@ Check, then click ''Next''.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719209496107_e2d70089_70d9_4c62_a773_15c510eb170d.png)
 
-Check ''Add shortcuts'' and click ''Next''.
+Check ''Add shortcuts'' and click Next''.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
 
