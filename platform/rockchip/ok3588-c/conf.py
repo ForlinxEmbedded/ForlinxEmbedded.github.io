@@ -15,7 +15,7 @@ extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3588-c/"
+html_baseurl = "https://docs.forlinx.net/rockchip/ok3588-c/"
 
 
 templates_path = ['_templates']
