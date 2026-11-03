@@ -268,7 +268,7 @@ After restarting and logging in, the system interface is as shown below:
 
 After installing the Ubuntu 22.04 operating system, some configurations need to be done.
 
-+ **VMware Tools Installation: **
++ **VMware Tools Installation:** 
 
 ```bash
 sudo apt update
