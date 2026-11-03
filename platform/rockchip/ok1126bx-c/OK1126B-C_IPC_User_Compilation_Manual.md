@@ -315,11 +315,11 @@ When configuring a static IP, the Ubuntu IP must be set in the same subnet as th
 
 Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.0, then click ''OK''. As shown below, most modern computers support USB 3.0 ports. If not configured, the USB 3.0 device will not be connected to the virtual machine when inserted. As shown in the figure:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca-1793682613743.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca_1793682613743.png)
 
 After starting the virtual machine, insert the USB drive. A "USB icon" will appear in the lower-right corner of the virtual machine. Right-click on it and select ''Connect''. You will then see an additional directory in the file system, indicating the USB drive has been successfully mounted, as shown in the following figure:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2-1793682638159.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2_1793682638159.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok1126bx-c/OK1126B-C_IPC_User_Compilation_Manual/1719278542337_c0fe4886_515f_4fe1_9446_22882a83577e.png)
 
