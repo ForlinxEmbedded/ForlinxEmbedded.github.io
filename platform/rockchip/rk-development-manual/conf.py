@@ -15,7 +15,7 @@ extensions = [
     'myst_parser',         # 支持 Markdown
     'sphinx_sitemap',      # 添加 sitemap 扩展
 ]
-html_baseurl = "https://forlinxembedded.github.io/rockchip/rk-development-manual/"
+html_baseurl = "https://docs.forlinx.net/rockchip/rk-development-manual/"
 
 templates_path = ['_templates']
 exclude_patterns = []

@@ -20,7 +20,7 @@ extensions = [
 ]
 
 # sphinx_sitemap 必需的配置
-html_baseurl = "https://forlinxembedded.github.io/rockchip/ok3572-c/"
+html_baseurl = "https://docs.forlinx.net/rockchip/ok3572-c/"
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store'] # 添加了常见的忽略目录
