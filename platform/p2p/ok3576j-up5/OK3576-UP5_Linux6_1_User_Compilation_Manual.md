@@ -64,21 +64,21 @@ This chapter mainly introduces the installation of the VMware virtual machine, u
 
 After registering for and logging into your BROADCOM website account, visit [https://support.broadcom.com/group/ecx/downloads](https://support.broadcom.com/group/ecx/downloads) to download VMware workstation pro.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350505056-e43fd6f7-bccd-4a64-bebf-490ea89ea1de.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350505056_e43fd6f7_bccd_4a64_bebf_490ea89ea1de.png)
 
 Enter "VMware Workstation" to search, then click on the VMware Workstation Pro that appears in the search results.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350505213-3a1630c8-9424-429e-be75-6cf13cbdc64b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350505213_3a1630c8_9424_429e_be75_6cf13cbdc64b.png)
 
 Download the corresponding version of VMware Workstation Pro.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350505349-b5970ca1-f20c-4f79-b61c-6c132553581a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350505349_b5970ca1_f20c_4f79_b61c_6c132553581a.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350505480-a8a9cec6-5543-4a3f-a287-c4163e8f4915.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350505480_a8a9cec6_5543_4a3f_a287_c4163e8f4915.png)
 
 Click "Yes", fill in your personal information, then click "Submit".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350505739-e8348ba0-1cac-40db-8ea1-fa00121d9aa2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350505739_e8348ba0_1cac_40db_8ea1_fa00121d9aa2.png)
 
 ### 1.2 VMware Software Installation
 
@@ -130,19 +130,19 @@ There are two methods for using a virtual machine environment in VMware: you can
 
 First, download the development environment provided by Forlinx. The development environment package includes an MD5 checksum file. After downloading the package, you should verify the integrity of the compressed file by performing an MD5 checksum check. You can either use an online MD5 verification tool or download a dedicated MD5 verification tool, depending on your preference. Compare the checksum that you generate with the one listed in the checksum file. If they match, the downloaded file is intact. If they do not match, the file may be corrupted, and you will need to download it again.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508028-eb50916c-0d53-4426-bdf4-7b2c0cbb967e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508028_eb50916c_0d53_4426_bdf4_7b2c0cbb967e.png)
 
 Press and hold the Shift key, then right-click the blank area and select "Open PowerShell window here" to bring up the following interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508111-8e6f7eef-a074-4516-8852-b5d9dc38dd3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508111_8e6f7eef_a074_4516_8852_b5d9dc38dd3e.png)
 
 Enter the command certutil -hashfile \[file name] md5 to verify each archive package one by one, and compare the generated value with the MD5 checksum recorded in the checksums.md5 file. If any checksum does not match, re-download it (please ask your sales representative for the download link).
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508189-f8828937-87fd-4370-ba85-2e286d6438d9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508189_f8828937_87fd_4370_ba85_2e286d6438d9.png)
 
 Once all archive packages pass the verification, select all, right-click and extract them to the current folder. After the extraction completes, you will obtain the 3576 development environment.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508272-0f6dffcf-4741-4522-85bf-ce00f097c2b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508272_0f6dffcf_4741_4522_85bf_ce00f097c2b6.png)
 
 ### 2.2 Launching the Development Environment
 
@@ -152,7 +152,7 @@ Open the VMware Workstation software and click "Open Virtual Machine".
 
 Navigate to the directory where the newly extracted OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine files are stored, select the OK35XX.vmx file, then click "Open".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508423-a7074335-a73f-46ac-a58f-c5ab58c43c5b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508423_a7074335_a73f_46ac_a58f_c5ab58c43c5b.png)
 
 Once the loading is complete", click "Power on this virtual machine".
 
@@ -166,11 +166,11 @@ Username: forlinx
 
 Password: forlinx
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508688-9aa1b4ae-741f-4247-bec9-0ce8dae12d61.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508688_9aa1b4ae_741f_4247_bec9_0ce8dae12d61.png)
 
 The system will display the following interface after successful boot:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350508780-63eea62c-f151-492e-af02-ed56cdffddcd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350508780_63eea62c_f151_492e_af02_ed56cdffddcd.png)
 
 ## 3\. Setting Up a New Ubuntu Development Environment
 
@@ -182,7 +182,7 @@ The system will display the following interface after successful boot:
 
 Open VMware Workstation software and click "Create New Virtual Machine".
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3576-c/OK3576-C_Linux6_1_84_User_Compilation_Manual/1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726291996421_80355a1a_1a92_46e3_9818_8b3496d88bb9.png)
 
 When you enter the following interface, select "Custom (Advanced)", then click "Next".
 
@@ -250,7 +250,7 @@ The installation process on a physical machine is similar to the one on a virtua
 
 The selected Ubuntu version for installation is 22.04. Please contact your sales representative to obtain the download link. Download the exact version named ubuntu-22.04.5-desktop-amd64.iso.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350512606-1dfcd8a6-5976-4cc9-837e-6262bfb28c18.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350512606_1dfcd8a6_5976_4cc9_837e_6262bfb28c18.png)
 
 **3.1.2.2 Installing the Image**
 
@@ -274,37 +274,37 @@ Click "Yes".
 
 After the virtual machine boots up, wait for the installation interface to appear, then click "Install Ubuntu" on the right side.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513266-09505bc7-fd7b-4a75-9909-8f997ea8ed22.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513266_09505bc7_fd7b_4a75_9909_8f997ea8ed22.png)
 
 The default language of Ubuntu is English, but you can also select other languages. Note that the selected language can still be reconfigured later in the system. After making your selection, click "Continue".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513356-612e6ab6-f40e-43f6-b284-7b69fb9b166f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513356_612e6ab6_f40e_43f6_b284_7b69fb9b166f.png)
 
 Select "Normal installation" (corrected the original typo installtation), then click "Continue".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513438-3cbb5c3d-5afe-4ef7-a997-d469f4b6dd88.png)Select "Erase disk and install Ubuntu", then click "Install Now".
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513438_3cbb5c3d_5afe_4ef7_a997_d469f4b6dd88.png)Select "Erase disk and install Ubuntu", then click "Install Now".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513531-2ce9594a-1d90-47a5-9939-54e5336c409d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513531_2ce9594a_1d90_47a5_9939_54e5336c409d.png)
 
 Click "Continue".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513617-70b15aa1-891c-4703-8cc7-23a956cd289e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513617_70b15aa1_891c_4703_8cc7_23a956cd289e.png)
 
 Click the territory of your country or enter city to set the time zone, then click "Continue".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513696-ef285b6d-a9a8-4423-a438-7e7b480e7a6f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513696_ef285b6d_a9a8_4423_a438_7e7b480e7a6f.png)
 
 Set your full name, computer name, user account and password (then confirm the password), then click "Continue".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513781-c041b103-92bc-4053-8a27-a119bfabe00a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513781_c041b103_92bc_4053_8a27_a119bfabe00a.png)
 
 After the installation finishes, the system interface shown below will appear. Click the account forlinx and enter the password forlinx to log in.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513908-7f8887b9-6421-4bf5-9614-74a758772b79.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513908_7f8887b9_6421_4bf5_9614_74a758772b79.png)
 
 You will then enter the system desktop interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350513983-4cf1b7ce-6a0a-4c16-9b60-6de821610dc2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350513983_4cf1b7ce_6a0a_4c16_9b60_6de821610dc2.png)
 
 #### 3.1.3 Basic Configuration of Ubuntu
 
@@ -327,7 +327,7 @@ After installing the open-vm-tools, restart the virtual machine. Then click "Vie
 
 Most system settings can be configured in the location shown in the figure. Many settings requirements on Ubuntu can be completed here.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350514198-940dbbe7-e9e5-4d7c-8dd6-c10ee51e9c82.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350514198_940dbbe7_e9e5_4d7c_8dd6_c10ee51e9c82.png)
 
 #### 3.1.4 Network Configuration of Ubuntu
 
@@ -343,15 +343,15 @@ In the virtual machine, when the VMware virtual network adapter is set to NAT mo
 
 Open "Settings":
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350514510-91ecbb49-181e-48c8-ae60-b882a5ac2f17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350514510_91ecbb49_181e_48c8_ae60_b882a5ac2f17.png)
 
 Set the Internet:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350514587-60eda762-af47-4a04-b4e8-aa8ff5075128.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350514587_60eda762_af47_4a04_b4e8_aa8ff5075128.png)
 
 Set the network to obtain an IP address automatically, and configure the DNS as 8.8.8.8, then click "Apply" to save the settings.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350514663-f9af697b-4ca0-4ed6-9767-40ed0d6cfee5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350514663_f9af697b_4ca0_4ed6_9767_40ed0d6cfee5.png)
 
 **3.1.4.2 Bridge Mode**
 
@@ -363,17 +363,17 @@ Change the network bridging mode in the network adapter to "Bridge Mode":
 
 Open "Settings":
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350514510-91ecbb49-181e-48c8-ae60-b882a5ac2f17.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350514510_91ecbb49_181e_48c8_ae60_b882a5ac2f17.png)
 
 Set the Internet:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350515118-2b8a8d89-e6a5-4335-8513-0f465ceb5785.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350515118_2b8a8d89_e6a5_4335_8513_0f465ceb5785.png)
 
 Setting a Static IP Address
 
 When configuring a static IP, the Ubuntu IP must be set in the same subnet as the host machine’s IP.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350515244-faf411d3-120e-4eda-9fc1-d02659af86a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350515244_faf411d3_120e_4eda_9fc1_d02659af86a1.png)
 
 **Note: The IP and DNS settings mentioned in the network configuration section should be configured based on the user's actual environment. The manual provides examples for illustration.**
 
@@ -387,11 +387,11 @@ After the virtual machine starts, insert the USB drive. An icon resembling a "US
 
 ![Image](1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516045-4dfbf3f3-045b-4325-bd7f-a600107b0dfc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516045_4dfbf3f3_045b_4325_bd7f_a600107b0dfc.png)
 
 Click the USB drive icon to enter its internal directory.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516133-0a753b31-b403-45f7-a9b1-ff2e86c4ddb8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516133_0a753b31_b403_45f7_a9b1_ff2e86c4ddb8.png)
 
 #### 3.1.6 Basic Library Installation for the Virtual Machine
 
@@ -450,35 +450,35 @@ forlinx@ubuntu:~$ ./qt-creator-opensource-linux-x86_64-4.7.0.run
 
 Then a graphical installation window will pop up, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516208-e29bc1d2-9ad6-4a04-bd07-fa3848846028.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516208_e29bc1d2_9ad6_4a04_bd07_fa3848846028.png)
 
 If you already have a Qt account, enter your account and password in the Login input field; if you do not have a Qt account, fill in your account email, password and confirm password in the Sign-up section, check the terms of service, and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516287-f10acac9-55b1-4401-af1b-fc6b43c3f91d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516287_f10acac9_55b1_4401_af1b_fc6b43c3f91d.png)
 
 Click "Next":
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516362-56cfc6b6-c107-4811-b06b-5c20a45ada93.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516362_56cfc6b6_c107_4811_b06b_5c20a45ada93.png)
 
 You can set the installation path according to your preferences; here, we’ll use the default settings and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516437-44fb27fb-26ed-4263-b5b2-6998e2f104b9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516437_44fb27fb_26ed_4263_b5b2_6998e2f104b9.png)
 
 Installation finishes, click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516516-50862acf-f1d7-4266-b871-9d62895d6218.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516516_50862acf_f1d7_4266_b871_9d62895d6218.png)
 
 Choose "I agree to the License Agreement" and click "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516591-3836cda0-ef29-4893-8d83-a6eab708f65c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516591_3836cda0_ef29_4893_8d83_a6eab708f65c.png)
 
 Click "Install" to start the installation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516687-8e075c79-e8cb-40e1-9522-d5b1db422b95.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516687_8e075c79_e8cb_40e1_9522_d5b1db422b95.png)
 
 Launch Qt Creator and click "Finish".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516771-c520fcce-db97-404a-82a8-3e0815e43a97.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516771_c520fcce_db97_404a_82a8_3e0815e43a97.png)
 
 The Qt interface will automatically open, or you can launch it from the command line. To open Qt Creator in the background, use the following command, replacing it with your actual installation path:
 
@@ -489,7 +489,7 @@ forlinx@ubuntu:~$ ./qtcreator &
 
 Interface:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1786350516843-14901225-c9a0-4bca-b629-622dfdf0ea65.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516843_14901225_c9a0_4bca_b629_622dfdf0ea65.png)
 
 ## 4\. SDK Source Code Compilation Development
 
@@ -585,11 +585,11 @@ OK3576-linux-source/prebuilts/forlinx/rk3576/buildroot/rootfs.ext4
 
 If you need to compile the file system on your own, simply delete or move this file out of the directory.**
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608227526-ddbc2fb0-284a-4bcd-8fa9-4fb6afd567a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608227526_ddbc2fb0_284a_4bcd_8fa9_4fb6afd567a1.png)
 
 After successful compilation, the system image will be generated under the path OK3576-linux-source/output/update/Image/, as shown below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608227665-7081933a-7e27-4dd6-8344-46411eee2982.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608227665_7081933a_7e27_4dd6_8344_46411eee2982.png)
 
 Description of Generated Files:
 
@@ -623,7 +623,7 @@ Compile the script to operate under the source code path.
 forlinx@ubuntu: ~/work/OK3576-linux-source$ ./build.sh cleanall
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608227778-0957501c-1228-4a2e-9e5b-e811759ba606.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608227778_0957501c_1228_4a2e_9e5b_e811759ba606.png)
 
 This operation deletes all temporary files, but does not affect the source files, including those that have already been modified.
 
@@ -710,27 +710,27 @@ forlinx@ubuntu:~/work/OK3576-linux-source$ ./build.sh kconfig
 
 After adding and modifying the configuration, save and exit, and then you can compile directly.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608227858-f516458a-b8a2-4ada-bfc0-650ed657dc16.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608227858_f516458a_b8a2_4ada_bfc0_650ed657dc16.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608227940-dc8b5c0a-28e4-4e7b-b4fd-33a1e8bb1791.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608227940_dc8b5c0a_28e4_4e7b_b4fd_33a1e8bb1791.png)
 
 Press the / key to activate the quick search function. After entering USB\_SERIAL\_CH341 and pressing Enter, the option information corresponding to CH341 will be displayed.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608228034-3b874a07-9a0e-4db6-8707-0d0029b0b7ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608228034_3b874a07_9a0e_4db6_8707_0d0029b0b7ad.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608228284-05ce867b-1f6f-465a-96cd-e56deb4bc36a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608228284_05ce867b_1f6f_465a_96cd_e56deb4bc36a.png)
 
 Press 1 to access the specific configuration menu:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608228453-05d167ff-03a0-4362-bd9a-a7480e52dc59.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608228453_05d167ff_03a0_4362_bd9a_a7480e52dc59.png)
 
 You can see that this driver is not selected in the current configuration. Move the cursor to the CH341 item and press the Space key to complete the selection. The configuration is successful when the item is marked with`<*>`or`<M>`. Here,`<*>`means the driver is compiled directly into the kernel and cannot be unloaded after system startup;`<M>`means it is compiled as a kernel module, which is loaded dynamically at system power-on, and users can also manually unload the module driver.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608228565-c6d716f9-6bd7-4b42-993d-68231c93a45e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608228565_c6d716f9_6bd7_4b42_993d_68231c93a45e.png)
 
 At this point, the CH341 configuration is completed. Move the cursor left and right to select "Ok", press Enter to confirm saving and exit the menu.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608228684-5600c095-08b0-4fc0-8205-cbc72256e6a3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608228684_5600c095_08b0_4fc0_8205_cbc72256e6a3.png)
 
 Method 2: Modify the default configuration file
 
@@ -740,7 +740,7 @@ Add "USB\_SERIAL\_CH341" to the kernel configuration on the development board.
 forlinx@ubuntu:~/work/OK3576-linux-source$ vi kernel/arch/arm64/configs/OK3576-UP5-linux_defconfig 
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608228953-4f4694f9-4185-4d40-8dae-3a7e9178f8e9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608228953_4f4694f9_4185_4d40_8dae_3a7e9178f8e9.png)
 
 Add the USB\_SERIAL\_CH341 configuration directly to the configuration file:
 
@@ -817,27 +817,27 @@ If you want to configure buildroot, you must first complete a full compilation, 
 forlinx@ubuntu:~/work/OK3576-linux-source$ ./build.sh bconfig
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229167-05cdf8b3-eb56-44fa-89ca-48f79339a2cd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229167_05cdf8b3_eb56_44fa_89ca_48f79339a2cd.png)
 
 After execution, the following page appears.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229256-ae9a9ab8-4ea9-44d6-813f-6ede981a9bf8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229256_ae9a9ab8_4ea9_44d6_813f_6ede981a9bf8.png)
 
 Press / to perform a quick search, enter BR2\_PACKAGE\_GDB and press Enter, then the option information corresponding to GDB will be displayed.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229348-b64edb0b-9af5-441b-a251-794e0339ed76.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229348_b64edb0b_9af5_441b_a251_794e0339ed76.png)
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229446-e78e08fc-e762-4f55-aeff-42b9de186c07.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229446_e78e08fc_e762_4f55_aeff_42b9de186c07.png)
 
 Press 1 to access the specific configuration menu:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229526-035a05e5-8a05-4aff-9a68-61e4eba2ed62.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229526_035a05e5_8a05_4aff_9a68_61e4eba2ed62.png)
 
-You can see that the current configuration is not selected. Press the space bar at the gdb position to select it. When it becomes`[*]`, the selection is successful![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229607-136ddee4-89b9-4c2c-a5ae-9bb5f7c28d79.png)
+You can see that the current configuration is not selected. Press the space bar at the gdb position to select it. When it becomes`[*]`, the selection is successful![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229607_136ddee4_89b9_4c2c_a5ae_9bb5f7c28d79.png)
 
 It can be seen that when gdb becomes`[*]`, gdbserver will automatically become below`-*-`. At this time, the gdbserver selection is successful. Move the cursor to`< Save>`, press Enter to select Ok, save and exit.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229707-b4ebc681-331b-412a-9de2-4d22cc2eed25.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229707_b4ebc681_331b_412a_9de2_4d22cc2eed25.png)
 
 **Method 2: Modify the default configuration file**
 
@@ -847,8 +847,8 @@ Add the GDB configuration BR2\_PACKAGE\_GDB to the buildroot configuration of th
 forlinx@ubuntu:~/work/OK3576-linux-source$ vi buildroot/configs/rockchip_ok3576-up5_defconfig
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229786-3b119cd4-b4ca-4c67-9224-5b3f47cca69a.png)Open the configuration file and add the GDB configuration. After adding the GDB configuration, the GDBSERVER feature will automatically be available.  
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608229875-7b0472e4-0e08-4f13-bc44-c216fabd47d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229786_3b119cd4_b4ca_4c67_9224_5b3f47cca69a.png)Open the configuration file and add the GDB configuration. After adding the GDB configuration, the GDBSERVER feature will automatically be available.  
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608229875_7b0472e4_0e08_4f13_bc44_c216fabd47d6.png)
 
 After selecting the features, compile buildroot separately.
 
@@ -1003,7 +1003,7 @@ forlinx@ubuntu:~$ ls demo
 demo
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608351937-2539f16c-17df-4c47-9fb9-46aca83adc5c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608351937_2539f16c_17df_4c47_9fb9_46aca83adc5c.png)
 
 **Environment Setup:**
 
@@ -1013,7 +1013,7 @@ Ensure that the Ubuntu host and the development board are on the same network an
 
 Set the host IP according to 3.1.4 of the compilation manual.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352031-5c104c5b-cf63-4cfc-a517-ba008dc41329.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352031_5c104c5b_cf63_4cfc_a517_ba008dc41329.png)
 
 **Development board IP Settings:**
 
@@ -1031,7 +1031,7 @@ Put the test demo on the development board, and execute gdbserver in the corresp
 root@OK3576-UP5-buildroot:~# gdbserver 172.20.0.176:1234 demo
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352150-75d3e34e-73fd-4419-a092-3bd48728a217.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352150_75d3e34e_73fd_4419_a092_3bd48728a217.png)
 
 **Host:**
 
@@ -1064,7 +1064,7 @@ Connect to the development board end.
 (gdb) target remote 172.20.0.145:1234
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352247-8840ccb6-f310-485d-b502-4fdfcb191950.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352247_8840ccb6_f310_485d_b502_4fdfcb191950.png)
 
 After the connection is successful, you can start debugging officially.
 
@@ -1085,7 +1085,7 @@ Select the debugging file.
 (gdb) file demo
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352338-950ff305-3427-4641-b225-a2bd661c1537.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352338_950ff305_3427_4641_b225_a2bd661c1537.png)
 
 View the file content.
 
@@ -1093,7 +1093,7 @@ View the file content.
 (gdb) l
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352445-4bbeab1f-d28c-4c53-bfe6-50f1b22fece8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352445_4bbeab1f_d28c_4c53_bfe6_50f1b22fece8.png)
 
 Insert breakpoints and view breakpoints.
 
@@ -1112,15 +1112,15 @@ Num     Type           Disp Enb Address            What
 
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352549-654d2739-8ab6-4edf-b11c-6be2e333210e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352549_654d2739_8ab6_4edf_b11c_6be2e333210e.png)
 
 Enter c to execute to the breakpoint until the execution ends.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352735-b55c59ff-d4ab-4940-9dca-b0605e9317a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352735_b55c59ff_d4ab_4940_9dca_b0605e9317a9.png)
 
 Print on the development board end:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608352959-bc6f8247-dbb9-473c-81ad-7b58272dde9a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608352959_bc6f8247_dbb9_473c_81ad_7b58272dde9a.png)
 
 ### 5.3 Qt Creator Environment Configuration
 
@@ -1136,41 +1136,41 @@ forlinx@ubuntu:~/qtcreator-4.7.0/bin$ ./qtcreator
 
 Access to Tools – Options on the Qt Creator menu bar (as shown in the figure below):
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353042-43e13eba-eac7-4556-b510-d53a46885701.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353042_43e13eba_eac7_4556_b510_d53a46885701.png)
 
 Selection of Kits, Compilers, followed by Add – GCC – C (as shown in the figure below):
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353165-70c2c3e4-c852-400f-88bb-d552130708ed.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353165_70c2c3e4_c852_400f_88bb_d552130708ed.png)
 
 Input of "GCC" in the Name field, input of the following path in the Compiler path field, and click on "Apply".
 
 Path:`/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-gcc`
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353289-bd2a7a8a-41d0-41a5-862d-06fe7fd410f6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353289_bd2a7a8a_41d0_41a5_862d_06fe7fd410f6.png)
 
 Selection of Kits, Compilers, followed by Add – GCC – C++:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353454-94be0c90-e913-4268-9834-a365a2f72bf4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353454_94be0c90_e913_4268_9834_a365a2f72bf4.png)
 
 Input of "G++" in the Name field, input of the following path in the Compiler path field, and click on "Apply":
 
 Path:`/home/forlinx/aarch64-buildroot-linux-gnu_sdk-buildroot/bin/aarch64-linux-g++`
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353578-50a82140-3280-4538-b514-061cc8ad8d32.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353578_50a82140_3280_4538_b514_061cc8ad8d32.png)
 
 #### 5.3.2 Configuration of Qt Versions
 
 Selection of kits and qt versions, followed by the add operation:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353683-f9fb9274-f1a3-4525-a6a9-08c8b08b61a0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353683_f9fb9274_f1a3_4525_a6a9_08c8b08b61a0.png)
 
 Selection of <font style="color:#0000ff;">/home/forlinx/aarch64-buildroot-linux-gnu\_sdk-buildroot/bin/qmake </font>in the pop-up dialog box and click on "Open".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353825-6666b529-dd2f-4e87-893c-c32557203d92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353825_6666b529_dd2f_4e87_893c_c32557203d92.png)
 
 Input of QMAKE in the Version name field within the Qt Versions configuration box, then click "Apply".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354009-c087f9de-a2b8-4385-9344-dd325426f757.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354009_c087f9de_a2b8_4385_9344_dd325426f757.png)
 
 #### 5.3.3 Configuration of Kits
 
@@ -1178,11 +1178,11 @@ Kits are a set of build tools used to configure and select development environme
 
 Click "Kits" and then the "Add" to bring up the configuration section.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354133-1295e209-fc22-478c-932f-f5ac612b079b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354133_1295e209_fc22_478c_932f_f5ac612b079b.png)
 
 Self-modification of the Name; selection of GCC and G++ for the Compiler; selection of QMAKE for Qt Version; followed by the clicks on "Apply" and "OK"
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354218-835cc8e9-3b93-4aaa-8181-b622d8992b90.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354218_835cc8e9_3b93_4aaa_8181_b622d8992b90.png)
 
 ### 5.4 Compilation, Operation and Debugging of Qt Projects
 
@@ -1236,31 +1236,31 @@ forlinx@ubuntu~/qtcreator-4.7.0/bin$ ./qtcreator &
 
 Click on File – Open File or Project in Qt Creator
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354305-4b3e70f0-124f-4057-b0ce-257419cb8959.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354305_4b3e70f0_124f_4057_b0ce_257419cb8959.png)
 
 Selection of the watchdog.pro project in the pop-up window and click on "Open".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354412-2fc6e70c-3378-4c69-9aac-04572f91ae35.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354412_2fc6e70c_3378_4c69_9aac_04572f91ae35.png)
 
 Configuration of the project suite: Select 35XXLinux and click on Configure Project.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354760-ef6e40e4-0e41-41b6-8a0a-6ba096966fd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354760_ef6e40e4_0e41_41b6_8a0a_6ba096966fd6.png)
 
 The project interface is displayed as shown in the figure below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354875-c25592bf-6da9-4230-ad47-2f442b449f81.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354875_c25592bf_6da9_4230_ad47_2f442b449f81.png)
 
 Click on Build – Clean All to clean the project.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354963-b1b796c2-7f6d-4e59-b19a-344a758312a1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354963_b1b796c2_7f6d_4e59_b19a_344a758312a1.png)
 
 Click on Projects and Build, then deselect Shadow build.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355070-ca6bf3ef-096c-4d97-878b-daf41a7ca56f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355070_ca6bf3ef_096c_4d97_878b_daf41a7ca56f.png)
 
 Click on the "hammer icon" to start compilation.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355173-ca0044d3-cf04-430c-aca2-1ce4bd23d75f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355173_ca0044d3_cf04_430c_aca2_1ce4bd23d75f.png)
 
 Once the Build progress bar in the bottom-right corner has completed, this indicates that the compilation is finished. At this point, you will see the newly generated binary files in the specified directory, as shown below:
 
@@ -1299,57 +1299,57 @@ Add the gdb tool.
 
 Access to Tools – Options on the Qt Creator menu bar (as shown in the figure below):
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608353042-43e13eba-eac7-4556-b510-d53a46885701.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608353042_43e13eba_eac7_4556_b510_d53a46885701.png)
 
-Click Kits-->Debuggers-->Add.![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355270-291368f9-8a2f-4a81-9a2f-52bb86f70a03.png)
+Click Kits-->Debuggers-->Add.![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355270_291368f9_8a2f_4a81_9a2f_52bb86f70a03.png)
 
 Configuration of "GDB" as the Name, configuration of "/usr/bin/gdb-multiarch" as the Path, and click on "Apply"
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355355-a5207c3f-01d0-4eda-bd8b-66a64549b5a6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355355_a5207c3f_01d0_4eda_bd8b_66a64549b5a6.png)
 
 Configure devices.
 
 Tools->options->Devices->Devices->Add
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355479-7144261a-1708-40df-a771-60a815a83db3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355479_7144261a_1708_40df_a771_60a815a83db3.png)
 
 Select "Generic Linux Device" and click on "Start Wizard".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355578-70eb973f-004e-49ca-8fdb-606f8cd7a743.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355578_70eb973f_004e_49ca_8fdb_606f8cd7a743.png)
 
 Input "Generic Linux Device", the IP address of the development board, and the SSH account and password of the development board, then click on "Next".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355670-ceaeafd2-e389-4e9b-b3ed-712b8db2c2a5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355670_ceaeafd2_e389_4e9b_b3ed_712b8db2c2a5.png)
 
 Click "Finish".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608355791-cf482e90-c617-433d-a5d5-032e1a4eef27.png)The figure below indicates the normal connection between the Ubuntu virtual machine and the development board, then click on "Close"
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608355791_cf482e90_c617_433d_a5d5_032e1a4eef27.png)The figure below indicates the normal connection between the Ubuntu virtual machine and the development board, then click on "Close"
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1787563244991-eea8280f-3323-493c-9a56-5c24915c195c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1787563244991_eea8280f_3323_493c_9a56_5c24915c195c.png)
 
 Click "Apply".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356018-a495d37e-cc0a-4a35-9aad-a14da80d93b5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356018_a495d37e_cc0a_4a35_9aad_a14da80d93b5.png)
 
 Configure the Kit Suite.
 
 Open the project file and select the Kit package you set up earlier.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356141-b58d37f8-7809-4cb8-8a1d-266de547928b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356141_b58d37f8_7809_4cb8_8a1d_266de547928b.png)
 
 Open the project.
 
 Click "File" and select "Open File or Project".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356241-ef88fe23-902e-4215-80af-7fa9902faa84.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356241_ef88fe23_902e_4215_80af_7fa9902faa84.png)
 
 Select the watchdog. pro project and click "Open".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356338-599f127c-e067-4b4b-bdad-a674d41c14f9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356338_599f127c_e067_4b4b_bdad_a674d41c14f9.png)
 
 Select the 35XX Linux suite to configure the project.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608354760-ef6e40e4-0e41-41b6-8a0a-6ba096966fd6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608354760_ef6e40e4_0e41_41b6_8a0a_6ba096966fd6.png)
 
 **Note: To compile and debug this demo remotely, please make modifications to the source code.**
 
@@ -1361,7 +1361,7 @@ QMAKE_CXXFLAGS += -g
 QMAKE_CXXFLAGS_DEBUG += -O0
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356440-08cec970-b1bf-40a1-83dd-0aa29c88fcd8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356440_08cec970_b1bf_40a1_83dd_0aa29c88fcd8.png)
 
 Comment out the following content in buildout.pri:
 
@@ -1369,22 +1369,22 @@ Comment out the following content in buildout.pri:
 #appdata.files = $$PWD/../resource/*
 ```
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356534-1d402475-5ca2-4434-a849-3b8cb186508d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356534_1d402475_5ca2_4434_a849_3b8cb186508d.png)
 
 Save the file.
 
 Configuration of the project:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356633-8171bb73-6bbb-4ba7-a8df-949e894a2ef3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356633_8171bb73_6bbb_4ba7_a8df_949e894a2ef3.png)
 
 Compiling and run the application:
 
 Click on the "hammer icon" to compile the project, then click on the "triangle icon" to run the program on the development board.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356740-5fb76bc8-ed16-4072-b823-a20d65fad446.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356740_5fb76bc8_ed16_4072_b823_a20d65fad446.png)
 
 The corresponding Qt demo will be displayed after the operation on the development board.  
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608356896-fff6e69e-7070-4ba5-a88e-72c6b1b30d56.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608356896_fff6e69e_7070_4ba5_a88e_72c6b1b30d56.png)
 
 ```bash
 root@OK3576-UP5-buildroot:~# cd /var/run
@@ -1396,26 +1396,26 @@ Close the application:
 
 Click on the cross icon to close the application.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608357022-3d89f224-ea79-4b79-8b7e-ddb49489a611.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608357022_3d89f224_ea79_4b79_8b7e_ddb49489a611.png)
 
 Click on "Force Quit".
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608357155-98ce642a-9d51-45bf-babb-1c84ff007b55.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608357155_98ce642a_9d51_45bf_babb_1c84ff007b55.png)
 
 **Remote Debugging the Application:**
 
 Set a breakpoint at the line number on the left side of the codes:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608357273-4d847391-38e4-47c6-a17e-a2294f4014be.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608357273_4d847391_38e4_47c6_a17e_a2294f4014be.png)
 
 Click on the triangle-and-bug icon to start code debugging:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608357413-6aa95106-9eed-4527-b1e5-7ecd222ce8ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608357413_6aa95106_9eed_4527_b1e5_7ecd222ce8ca.png)
 
 Click on the icon below to proceed with breakpoint debugging:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608357592-3960e005-e7b3-48a7-b4c3-04babda7f750.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608357592_3960e005_e7b3_48a7_b4c3_04babda7f750.png)
 
 Click on the button below to stop debugging:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/12459611/1789608357724-9707e04c-4cec-461c-9618-d292fd0349e6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1789608357724_9707e04c_4cec_461c_9618_d292fd0349e6.png)
