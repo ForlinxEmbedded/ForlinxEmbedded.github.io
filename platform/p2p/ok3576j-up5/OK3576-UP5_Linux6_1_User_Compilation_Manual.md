@@ -31,14 +31,23 @@ A minimum of 6 GB of RAM is recommended. This allows you to allocate at least 2 
 This manual consists of five chapters:
 
 - **Chapter 1: Installing VMware**
+  
   This chapter describes how to install VMware, specifically VMware® Workstation 17 Pro (Version 17.0.0). VMware must be installed before proceeding with the Ubuntu development environment setup.
+  
 - **Chapter 2: Loading the Pre-configured Ubuntu Development Environment**
+
   This chapter explains how to load the Ubuntu development environment provided by Forlinx. The pre-configured environment is based on 64-bit Ubuntu 22.04.
+  
 - **Chapter 3: Setting Up a New Ubuntu Development Environment**
+  
   This chapter describes the process of setting up a new Ubuntu development environment, using 64-bit Ubuntu 22.04 as an example. It provides step-by-step instructions for completing the setup. Since computer hardware configurations vary, unexpected issues may arise during the installation and configuration process. Therefore, beginners are encouraged to use the pre-configured development environment provided by Forlinx to get started quickly and improve development efficiency.
+  
 - **Chapter 4: Compiling Source Code for the Development Board**
+  
   This chapter explains how to compile source code for the target development board.
+  
 - **Chapter 5: Compiling C and Qt Applications**
+  
   This chapter focuses on compiling C and Qt applications for the development board.
 
 Additionally, the manual includes explanations of some symbols and formats.
