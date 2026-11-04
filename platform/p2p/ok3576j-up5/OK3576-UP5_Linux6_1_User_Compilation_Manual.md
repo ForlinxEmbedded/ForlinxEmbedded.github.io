@@ -530,28 +530,31 @@ Wait for the copy process to complete after running the command.
 #### 4.1.3 Directory Structure
 
 ```bash
+
 forlinx@ubuntu:~/work/OK3576-linux-source$ tree -L 1
 .
-├── app																	                          // 	
-├── buildroot                                                   	// Related to the buildroot system
-├── build.sh -> device/rockchip/common/scripts/build.sh           // Compilation script
-├── common -> device/rockchip/common            
-├── debian                                                        // Related to the debian system
-├── device															  
-├── docs															                          	// Rockchip development documents
-├── external                                                      // Third-party libraries and external components
-├── hal 															
-├── kernel -> kernel-6.1											
-├── kernel-6.1															                      // Kernel source code
-├── Makefile -> device/rockchip/common/Makefile										
-├── prebuilts															                        // Precompilation
-├── README.md -> device/rockchip/common/README.md						      // Project description file
-├── rkbin																                          // DDR initialization code
-├── rkflash.sh -> device/rockchip/common/scripts/rkflash.sh			
-├── rtos																                          // Related to the rtos system
-├── tools																                          // Tools
-├── u-boot																                        // U-Boot source code
-└── yocto																                          // Related to the yocto system
+├── app
+├── buildroot                    // Related to the buildroot system
+├── build.sh -> device/rockchip/common/scripts/build.sh
+│                                // Compilation script
+├── common -> device/rockchip/common
+├── debian                       // Related to the debian system
+├── device
+├── docs                         // Rockchip development documents
+├── external                     // Third-party libraries and external components
+├── hal
+├── kernel -> kernel-6.1
+├── kernel-6.1                   // Kernel source code
+├── Makefile -> device/rockchip/common/Makefile
+├── prebuilts                    // Precompilation
+├── README.md -> device/rockchip/common/README.md
+│                                // Project description file
+├── rkbin                        // DDR initialization code
+├── rkflash.sh -> device/rockchip/common/scripts/rkflash.sh
+├── rtos                         // Related to the rtos system
+├── tools                        // Tools
+├── u-boot                       // U-Boot source code
+└── yocto                        // Related to the yocto system
 ```
 
 #### 4.1.4 Common Source Code File Paths
