@@ -1175,7 +1175,7 @@ The unused signal pins of the SoM can be left floating, but please make sure to 
 
 **9. Power - on Sequence**
 
-It is strongly recommended to refer to the design of the development board when designing the carrier board, use the EXT \_ EN output by the SoM as the power-on enable of the carrier board, and strictly control the power-on sequence. Or it may have the following influences:
+It is strongly recommended to refer to the design of the development board when designing the carrier board, use the EMMC_BOOT output by the SoM as the power-on enable of the carrier board, and strictly control the power-on sequence. Or it may have the following influences:
 
 ·Excessive current during the power - on phase.
 
