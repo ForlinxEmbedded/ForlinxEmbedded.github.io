@@ -529,9 +529,13 @@ Program source code:
 Create Working Directory:
 
 ```bash
-forlinx@ubuntu:~$ cd /home/forlinx/work			//Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work
+                                    //Switch to the working directory
+
 forlinx@ubuntu:~/work$ cat OK3576-linux-source.tar.bz2.* > OK3576-linux-source.tar.bz2
-forlinx@ubuntu:~/work$ tar -xvf OK3576-linux-source.tar.bz2			//Unzip the compressed file at the current location
+
+forlinx@ubuntu:~/work$ tar -xvf OK3576-linux-source.tar.bz2
+                                    //Unzip the compressed file at the current location
 ```
 
 Wait for the copy process to complete after running the command.
