@@ -18,19 +18,28 @@ This software manual is designed for the OK3576-UP5 platform running Linux6.1. W
 |:----------:|:----------:|:----------:|:----------:|----------|
 | 09/10/2026| V1.0| V1.1| V1.2 and above| OK3576-UP5 Linux6.1 User’s Compilation Manual Initial Version |
 
-This manual is designed to help you quickly understand the compilation process and become the compilation methods. Before running applications on the development board, they must be cross-compiled on a Linux operating system. By following the methods outlined in this manual and engaging in hands-on exercises, you will be able to compile their own software code.
+This manual is intended to help you quickly understand the software compilation process and become familiar with the relevant compilation procedures. Before applications can be run on the development board, they must first be cross-compiled on a Linux operating system. By following the instructions and completing the hands-on exercises provided in this manual, you will learn how to compile your own software.
 
-The manual will explain the environment setup process. Some unpredictable issues may arise during environment setup, so it is recommended that beginners directly use the pre-configured development environment Forlinx provide to get started quickly and reduce development time.
+This manual also describes how to set up the required development environment. Since unexpected issues may arise during the setup process, beginners are encouraged to use the pre-configured development environment provided by Forlinx. This approach allows you to get started quickly while minimizing setup time and potential troubleshooting efforts.
 
-There are there installation methods: dual-boot on a physical machine, single-boot on a physical machine, or in a virtual machine. Each installation method has its advantages and disadvantages. This manual only provides a method for setting up Ubuntu in a virtual machine. Hardware Requirements: A minimum of 6GB of RAM is recommended. This will allow you to allocate 2GB or more to the virtual machine while still performing other tasks in Windows. Using less RAM may negatively impact the performance of Windows.
+There are three common ways to install Ubuntu: dual-boot installation on a physical machine, single-boot installation on a physical machine, and installation in a virtual machine. Each approach has its own advantages and disadvantages. This manual focuses exclusively on installing Ubuntu in a virtual machine.
 
-There are total 5 chapters:
+**Hardware Requirements**:
 
-+ Chapter 1. covers the installation of VMware, specifically version VMware® Workstation 17 Pro v17.0.0. VMware must be installed before setting up the Ubuntu development environment;
-+ Chapter 2. explains how to load the Ubuntu development environment provided by Feilin. The environment is based on 64-bit Ubuntu 22.04;
-+ Chapter 3. outlines the process of setting up a new Ubuntu development environment. This section takes the 64-bit Ubuntu 22.04 as an example to describe in detail the process of setting up an Ubuntu development environment. Due to the varied configurations of individual computers, unexpected issues may arise during the setup process. Therefore, it is recommended that beginners directly use our pre-configured development environment for more efficient subsequent work;
-+ Chapter 4. explains how to compile source code for the development board;
-+ Chapter 5. mainly covers how to compile C and Qt applications.
+A minimum of 6 GB of RAM is recommended. This allows you to allocate at least 2 GB of memory to the virtual machine while keeping sufficient resources available for other tasks in Windows. Using a system with less RAM may affect overall Windows performance and result in a less responsive development environment.
+
+This manual consists of five chapters:
+
+- **Chapter 1: Installing VMware**
+  This chapter describes how to install VMware, specifically VMware® Workstation 17 Pro (Version 17.0.0). VMware must be installed before proceeding with the Ubuntu development environment setup.
+- **Chapter 2: Loading the Pre-configured Ubuntu Development Environment**
+  This chapter explains how to load the Ubuntu development environment provided by Forlinx. The pre-configured environment is based on 64-bit Ubuntu 22.04.
+- **Chapter 3: Setting Up a New Ubuntu Development Environment**
+  This chapter describes the process of setting up a new Ubuntu development environment, using 64-bit Ubuntu 22.04 as an example. It provides step-by-step instructions for completing the setup. Since computer hardware configurations vary, unexpected issues may arise during the installation and configuration process. Therefore, beginners are encouraged to use the pre-configured development environment provided by Forlinx to get started quickly and improve development efficiency.
+- **Chapter 4: Compiling Source Code for the Development Board**
+  This chapter explains how to compile source code for the target development board.
+- **Chapter 5: Compiling C and Qt Applications**
+  This chapter focuses on compiling C and Qt applications for the development board.
 
 Additionally, the manual includes explanations of some symbols and formats.
 
@@ -56,7 +65,7 @@ OK3576-linux-source.tar.bz2 OK3576-linux-source.tar.bz2.00 OK3576-linux-source.t
 + //: Explanation of the command. No need to enter this when typing the command.
 + For detailed information, please refer to the OK3576-UP5 User Materials. All file paths for user materials mentioned in this document are relative to the root directory of the OK3576-UP5 User Materials.
 
-## 1\. VMware Virtual Machine Software Installation
+## 1\. Installing VMware
 
 This chapter mainly introduces the installation of the VMware virtual machine, using VMware Workstation 17 Pro v17.0.0 as an example to demonstrate the operating system installation and configuration process.
 
@@ -114,7 +123,7 @@ When the installation is complete, click "Finish"; or click "License" to enter t
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
 
-## 2\. Loading an Existing Ubuntu Development Environment
+## 2\. Loading the Pre-configured Ubuntu Development Environment
 
 ### 2.1 Downloading and Verifying The Development Environment
 
@@ -491,7 +500,7 @@ Interface:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516843_14901225_c9a0_4bca_b629_622dfdf0ea65.png)
 
-## 4\. SDK Source Code Compilation Development
+## 4\. Compiling Source Code for the Development Board
 
 ### 4.1 Preparation Before Compilation
 
@@ -905,7 +914,7 @@ forlinx@ubuntu:~/work/OK3576-linux-source$ ./build.sh updateimg
 
 Please completely flash the OK3576-linux-source/output/update/Image/update.img file.
 
-## 5\. Application Compilation and Development
+## 5\. Compiling C and Qt Applications
 
 ### 5.1 Redirection of the Cross Compiler
 
