@@ -43,7 +43,7 @@ Additionally, the manual includes explanations of some symbols and formats.
 |         <font style="color:black;">Black font</font>         | Serial port output message after entering a command          |
 |       **<font style="color:black;">Bold black</font>**       | Key information in the serial port output message            |
 |                              //                              | Interpretation of input instructions or output information   |
-|                      Username@Hostname                       | root@OK3576-buildroot:~# : Development board serial port and network login account information, Ubuntu account information. You can use this information to determine the functional operating environment. |
+|                      Username@Hostname                       | root@OK3576-buildroot:~# : Development board serial port and network login account information, Ubuntu account information. <br />You can use this information to determine the functional operating environment. |
 
 Example: After packaging the file system, use the ls command to view the generated files.
 
@@ -84,35 +84,35 @@ Click "Yes", fill in your personal information, then click "Submit".
 
 Double-click the downloaded VMware Workstation Pro to enter the installation wizard. When the following interface pops up, click "Next".
 
-![Image](1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292019102_966a3de3_90e4_43c5_8d09_638579d0a5ad.png)
 
 Check "I accept the terms in the license agreement" and click "Next."
 
-![Image](1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292019326_bbe7eaef_ef8c_420c_9a24_c318002f625b.png)
 
 Change the installation location — you can customize the installation path, then click "Next".
 
-![Image](1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292019516_d327a170_62c9_4921_8243_13806619bec3.png)
 
 Check the options for product updates and the "Customer Experience Improvement Program", then click "Next".
 
-![Image](1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292019727_ca602d71_8eb8_479d_836a_433822d8404f.png)
 
 Check the option to create a shortcut, then click "Next".
 
-![Image](1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292019978_f50a4b96_86f6_4b81_b46a_24aeb5e39e8f.png)
 
 Click "Install."
 
-![Image](1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292020296_68686b42_4114_438d_bd79_cc171fa88b02.png)
 
 Wait for the installation to complete.
 
-![Image](1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292020500_b5aec052_b5fe_4a5a_84a0_cf4630dec74d.png)
 
 When the installation is complete, click "Finish"; or click "License" to enter the license key.
 
-![Image](1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726292020748_89dabfcd_6ac8_48a9_85db_74c39c551c00.png)
 
 ## 2\. Loading an Existing Ubuntu Development Environment
 
@@ -148,7 +148,7 @@ Once all archive packages pass the verification, select all, right-click and ext
 
 Open the VMware Workstation software and click "Open Virtual Machine".
 
-![Image](1726291989979_2b8d681a_40e2_4572_8cb0_35d6320a4abc.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726291989979_2b8d681a_40e2_4572_8cb0_35d6320a4abc.png)
 
 Navigate to the directory where the newly extracted OK35XX-linux6.1-VM17-ubuntu22.04 virtual machine files are stored, select the OK35XX.vmx file, then click "Open".
 
@@ -156,7 +156,7 @@ Navigate to the directory where the newly extracted OK35XX-linux6.1-VM17-ubuntu2
 
 Once the loading is complete", click "Power on this virtual machine".
 
-![Image](1726291990280_09eace25_36da_4f07_8e8e_f479dd385778.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1726291990280_09eace25_36da_4f07_8e8e_f479dd385778.png)
 
 Select the option "I copied this virtual machine" when prompted.
 
@@ -188,55 +188,55 @@ When you enter the following interface, select "Custom (Advanced)", then click "
 
 Set the hardware compatibility to "Workstation 17.x", then click "Next"
 
-![Image](1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Select "I will install the operating system later", then click "Next".
 
-![Image](1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 For guest operating system selection, pick "Linux", set the version to "Ubuntu 64-bit", then click "Next"
 
-![Image](1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278532371_cd7442c7_21c1_4c8a_8463_24ea3de5f6c1.png)
 
 You can customize the virtual machine name and its installation storage path, then click "Next".
 
-![Image](1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278532534_39687568_6ee3_4284_b373_2104df01f0fb.png)
 
 Set the number of processors to 4, and the number of cores per processor to 1, then click "Next".
 
-![Image](1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Allocate the virtual machine memory to 16384MB, then click "Next".
 
-![Image](1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Select "Use network address translation (NAT)", then click "Next".
 
-![Image](1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Select "LSI Logic" as the virtual disk adapter, then click "Next".
 
-![Image](1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 Set the virtual disk type to "SCSI", then click "Next".
 
-![Image](1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 Select "Create a new virtual disk", then click "Next".
 
-![Image](1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Set the maximum disk size to 200GB, check the option "Split virtual disk into multiple files", then click "Next".
 
-![Image](1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Keep the default disk file name, then click "Next".
 
-![Image](1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278534210_b2fc7391_1c76_4148_80c8_855cd9174698.png)
 
 Click "Finish".
 
-![Image](1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278534358_9585162d_5c54_42eb_be37_f9361aebf91d.png)
 
 You can see the basic configuration of the current Ubuntu development environment on the left side of VMware Workstation.
 
@@ -256,19 +256,19 @@ The selected Ubuntu version for installation is 22.04. Please contact your sales
 
 After downloading the image, click "Edit Virtual Machine Settings".
 
-![Image](1740967889311_2d81dcbe_0cae_4c55_97c9_537521a15233.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1740967889311_2d81dcbe_0cae_4c55_97c9_537521a15233.png)
 
 The pop-up Virtual Machine Settings menu is shown in the figure below:
 
-![Image](1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click "CD/DVD (SATA)", select the option "Use ISO image file", browse and select the previously downloaded ubuntu-22.04.5-desktop-amd64.iso image, then click "OK".
 
-![Image](1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After mounting the image, ensure the network connection is available, then click "Power on this virtual machine" to start the Ubuntu image installation process.
 
-![Image](1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711-1793773748273.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711-1793773748273.png)
 
 Click "Yes".
 
@@ -321,7 +321,7 @@ forlinx@ubuntu:~$ sudo apt-get install open-vm-tools open-vm-tools-desktop //Ins
 
 After installing the open-vm-tools, restart the virtual machine. Then click "View" on the menu bar, select Auto-Resize, and click "Fit Guest Now" to enable full-screen display of the virtual machine interface.
 
-![Image](1779074939706_daf27d61_ef08_4639_b411_552e3b4aece3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1779074939706_daf27d61_ef08_4639_b411_552e3b4aece3.png)
 
 **3.1.3.2 Basic Configuration**
 
@@ -337,7 +337,7 @@ Before using the network, first confirm that the virtual machine can access the 
 
 Change the network mode of the Network Adapter to "NAT Mode":
 
-![Image](1740967890224_d642497d_9876_4d31_897d_02276b6462f3-1793773924346.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1740967890224_d642497d_9876_4d31_897d_02276b6462f3-1793773924346.png)
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. This is the most commonly used method for the virtual machine to access the external network.
 
@@ -359,7 +359,7 @@ If using servers like TFTP or SFTP, you need to set the virtual machine's networ
 
 Change the network bridging mode in the network adapter to "Bridge Mode":
 
-![Image](1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
 Open "Settings":
 
@@ -381,11 +381,11 @@ When configuring a static IP, the Ubuntu IP must be set in the same subnet as th
 
 Open the virtual machine settings, go to USB Controller, and in the compatibility section, choose USB 3.1, then click "OK". As shown below, most modern computers support USB 3.1 ports. If not configured, the USB 3.1 device will not be connected to the virtual machine when inserted. As shown in the figure:
 
-![Image](1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278541851_33d6ec29_11c4_499b_867c_528314eef0ca.png)
 
 After the virtual machine starts, insert the USB drive. An icon resembling a "USB drive" will appear in the lower-right corner of the virtual machine. Right-click it --> select "Connect", then you can see the USB drive icon in the taskbar, as shown in the figure below:
 
-![Image](1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278542123_ad4e8176_1557_40a0_b545_a4aa290b16d2.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1786350516045_4dfbf3f3_045b_4325_bd7f_a600107b0dfc.png)
 
@@ -744,7 +744,7 @@ forlinx@ubuntu:~/work/OK3576-linux-source$ vi kernel/arch/arm64/configs/OK3576-U
 
 Add the USB\_SERIAL\_CH341 configuration directly to the configuration file:
 
-![](image-20260327164458183.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/image-20260327164458183.png)
 
 After adding the configuration via either of the two methods above, you need to separately compile the device tree and kernel to generate the new Image file. The modification will take effect after you replace the corresponding Image file on the development board.
 
