@@ -268,7 +268,7 @@ Click "CD/DVD (SATA)", select the option "Use ISO image file", browse and select
 
 After mounting the image, ensure the network connection is available, then click "Power on this virtual machine" to start the Ubuntu image installation process.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711-1793773748273.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711_1793773748273.png)
 
 Click "Yes".
 
@@ -337,7 +337,7 @@ Before using the network, first confirm that the virtual machine can access the 
 
 Change the network mode of the Network Adapter to "NAT Mode":
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1740967890224_d642497d_9876_4d31_897d_02276b6462f3-1793773924346.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/1740967890224_d642497d_9876_4d31_897d_02276b6462f3_1793773924346.png)
 
 In the virtual machine, when the VMware virtual network adapter is set to NAT mode, the network in the Ubuntu environment should be set to dynamic IP. In this mode, the virtual NAT device and the host network card are connected. This is the most commonly used method to connect the virtual machine to the external network. This is the most commonly used method for the virtual machine to access the external network.
 
@@ -744,7 +744,7 @@ forlinx@ubuntu:~/work/OK3576-linux-source$ vi kernel/arch/arm64/configs/OK3576-U
 
 Add the USB\_SERIAL\_CH341 configuration directly to the configuration file:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/image-20260327164458183.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/p2p/ok3576j-up5/OK3576-UP5_Linux6_1_User_Compilation_Manual/image_20260327164458183.png)
 
 After adding the configuration via either of the two methods above, you need to separately compile the device tree and kernel to generate the new Image file. The modification will take effect after you replace the corresponding Image file on the development board.
 
