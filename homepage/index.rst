@@ -465,6 +465,18 @@ Embedded Computer
 
    <div class="products-container">
 
+
+  <div class="product-card">
+     <a href="embedded-pc/fcu3502/index.html" target="_blank" rel="noopener noreferrer">
+       <img src="_static/images/embedded-pc/FCU3502.webp" alt="FCU3502" class="product-image" />
+     </a>
+     <h3 class="product-title">FCU3502</h3>
+     <div class="btn-group">
+       <a href="https://www.forlinx.net/product/fcu3502-edge-ai-computing-box-203.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="embedded-pc/fcu3502/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+     </div>
+   </div>
+
    <div class="product-card">
      <a href="embedded-pc/fcu3011/index.html" target="_blank" rel="noopener noreferrer">
        <img src="_static/images/embedded-pc/FCU3011.webp" alt="FCU3011" class="product-image" />
