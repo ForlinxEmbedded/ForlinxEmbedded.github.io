@@ -949,8 +949,6 @@ Bye
 
 ### 2.15 Basic OpenSSL Environment Testing
 
-#### 2.15.1 Basic OpenSSL Environment Testing
-
 The Secure Sockets Layer (SSL) protocol is the most widely used application protocol. It encrypts data using cryptographic algorithms such as AES, DES, and 3DES to protect data during transmission.
 
 Please set up the environment variables before using OpenSSL.
