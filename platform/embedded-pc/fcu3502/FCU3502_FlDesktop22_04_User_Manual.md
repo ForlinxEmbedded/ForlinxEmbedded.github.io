@@ -968,7 +968,11 @@ Doing 1024 bits public rsa's for 10s: 243329 1024 bits public RSA's in 9.99s
 OpenSSL 1.1.1f  31 Mar 2020
 built on: Mon Feb  6 17:57:17 2023 UTC
 options:bn(64,64) rc4(char) des(int) aes(partial) blowfish(ptr)
-compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -fdebug-prefix-map=/build/openssl-0kQqA1/openssl-1.1.1f=. -fstack-protector-strong -Wformat -Werror=formaL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -Wd
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -
+g -O2 -fdebug-prefix-map=/build/openssl-0kQqA1/openssl-1.1.1f=. -fstack-
+protector-strong -Wformat -Werror=formaL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -
+DSHA512_ASM -DKECCAK1600_ASM -DVPAES_ASM -DECP_NISTZ256_ASM -
+DPOLY1305_ASM -DNDEBUG -Wd
                   sign    verify    sign/s verify/s
 rsa 1024 bits 0.000804s 0.000041s   1244.3  24357.3
 ```
