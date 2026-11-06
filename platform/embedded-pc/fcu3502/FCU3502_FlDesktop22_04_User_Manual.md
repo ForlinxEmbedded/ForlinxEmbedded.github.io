@@ -129,11 +129,11 @@ The FCU3502's default IP address on ETH0 is 192.168.0.232. The FCU3502 uses the 
 
 Open a terminal tool (taking MobaXterm as an example), configure it as follows and click "Open":
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214546242-8635b55d-5356-46ba-ad42-dab91a51514c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214546242_8635b55d_5356_46ba_ad42_dab91a51514c.png)
 
 Click ''OK''. Account: forlinx; password: forlinx.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214546696-29e5e412-7357-4e5a-9033-b1537765d65f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214546696_29e5e412_7357_4e5a_9033_b1537765d65f.png)
 
 #### 2.2.2 Debug Serial Port Login
 
@@ -250,7 +250,7 @@ This test method is demonstrated by communication with a computer. Connect the R
 
 Open the putty.exe software on the computer, set the serial port and baud rate, then launch the software:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214548483-7705e4f9-b909-446a-bd45-8c2a66169106.png) ![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214548767-1f56707e-bac0-4b20-a687-a0a64200feb0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214548483_7705e4f9_b909_446a_bd45_8c2a66169106.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214548767_1f56707e_bac0_4b20_a687_a0a64200feb0.png)
 
 RS485\_1 Interface Send Test
 
@@ -268,7 +268,7 @@ root@FCU3502:~# echo "forlinx_485_test" > /dev/ttyS4
 
 RS485\_1 will send ''forlinx\_485\_test'' to the PC at a baud rate of 115200, and it will be received in the computer's Putty.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214548989-47ece110-d889-4a28-b8a9-081e8771092c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214548989_47ece110_d889_4a28_b8a9_081e8771092c.png)
 
 RS485\_1 Interface Receive Test
 
@@ -278,11 +278,11 @@ root@FCU3502:~# cat /dev/ttyS4
 
 Enter a message in the computer's Putty software:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214549279-00f94f3f-8b52-4e8f-a262-dd8aa21a83c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214549279_00f94f3f_8b52_4e8f_a262_dd8aa21a83c2.png)
 
 The computer will send ''abcdefg'' to the PC at a baud rate of 115200, and it will be received by the FCU3502's RS485\_1.
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214549700-83e1b610-c52e-4c46-a0e1-6d308cff81ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214549700_83e1b610_c52e_4c46_a0e1_6d308cff81ee.png)
 
 ### 2.7 Ethernet Usage
 
@@ -341,7 +341,7 @@ device interrupt 80
 
 Open the iperf3 software on the PC via the command line (tool\\iperf-3.1.3-win64\\iperf3.exe) and set it to listening mode:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214550234-3b260e0a-e242-4607-8378-100d58818428.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214550234_3b260e0a_e242_4607_8378_100d58818428.png)
 
 Enter the following command on the FCU3502 terminal to perform the test:
 
@@ -351,11 +351,11 @@ root@FCU3502:~# iperf3 -c 192.168.0.110 -i 5 -t 60
 
 The print information on the PC side is:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214550649-38ec6cb4-6d71-4e05-8a0c-af1be71d9d97.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214550649_38ec6cb4_6d71_4e05_8a0c_af1be71d9d97.png)
 
 The print information on the FCU3502 is:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214551076-f7b2b62b-ad8f-4434-9910-189e069a7473.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214551076_f7b2b62b_ad8f_4434_9910_189e069a7473.png)
 
 ### 2.8 WiFi Usage Guide
 
@@ -572,7 +572,7 @@ Device nodes corresponding to 4G and 5G modules are as follows:
 
 The 4G and 5G modules use a standard pop-up SIM card slot; press the SIM card to eject it, as shown in the image below:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214552073-7b120794-d7d9-4d7f-9706-68a2a2666402.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214552073_7b120794_d7d9_4d7f_9706_68a2a2666402.png)
 
 #### 2.10.1 4G/5G Identification and Determination
 
@@ -1378,7 +1378,7 @@ Software Materials\\3-Usage Tools\\System Update Tools\\SDDiskTool\_cn\_v1.74.ra
 
 Step 1: Unzip SDDiskTool\_cn\_v1.74.rar to any path without Chinese characters
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1787716455978-73e6f344-4740-407f-8049-152811da9fb6.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_20%2Ctext_Rm9ybGlueA%3D%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1787716455978_73e6f344_4740_407f_8049_152811da9fb6.png)
 
 Step 2: Insert the USB drive or TF card via USB card reader into the computer's USB port.
 
@@ -1429,7 +1429,7 @@ Preparation for programming: The eMMC indicator light is off:
 
 Serial port information during the flashing process:
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1790214554598-3e6d024f-4806-44cc-b373-58be04740ec7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214554598_3e6d024f_4806_44cc_b373_58be04740ec7.png)
 
 If the device does not restart automatically after removing the TF card, you can complete the flashing process by restarting it manually. As shown in the figure above, the burning process takes about 28 minutes. Please wait patiently during the burning process.
 
