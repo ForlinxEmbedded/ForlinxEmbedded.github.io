@@ -46,6 +46,7 @@ SOFTWARE
    FCU1501_User_Manual_FlBase22_04
    FCU1501_User_Compilation_Manual_FlBase22_04
    OK3588-C-3588J_Switch_Frequency_to_Normal_Mode_Application_Note
+   rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide
 
 
 
