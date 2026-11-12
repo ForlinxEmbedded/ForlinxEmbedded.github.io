@@ -33,7 +33,7 @@ This hardware design guide applies only to the Forlinx FET-MX93xx-C and FET-MX91
 
 The FET-MX93xx-C / FET-MX91xx-C SoMs integrate the power supplies, reset-monitoring circuitry, and storage circuitry into one compact module, so the external circuitry required is minimal. A minimum system needs only a 5V power supply, a reset button, and boot configuration to run, as shown below.
 
-![Image](1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/1.png)
 
 In most cases, however, we recommend connecting a few external devices beyond the minimum system — for example, a debug serial port so you can view console output, and a reserved OTG port so you can flash the system. Once these are in place, add the functions you need on top, following the SoM's default interface pin definitions provided by Forlinx.
 
@@ -96,7 +96,7 @@ The boot configuration pins have on-board pull-ups/pull-downs; the default state
 
 The reference circuit is shown in the figure below.
 
-![Image](image-1794474758976.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474758976.png)
 
 ### 1.5 Reset Signals
 
@@ -125,7 +125,7 @@ The FET-MX93xx-C / FET-MX91xx-C SoM uses the SD2 signal group for TF card flashi
 
 The reference design is shown in the figure below.
 
-![Image](image-1794474816607.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474816607.png)
 
 #### 1.7.2 OTG Flashing
 
@@ -138,7 +138,7 @@ The SoM's native USB 2.0 port USB1 supports flashing the system over USB. The US
 - **The USB data lines must be length-matched;**
 - **The USB1_VBUS_3V3 pin voltage is 3.3V — make sure the voltage division is handled correctly.**
 
-![Image](image-1794474833203.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474833203.png)
 
 ### 1.8 Debug Serial Ports
 
@@ -146,7 +146,7 @@ The SoM provides two debug serial ports: UART1 for debugging the Cortex-A55 core
 
 The reference design is shown in the figure below.
 
-![Image](image-1794474862515.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474862515.png)
 
 ### 1.9 Interface Design
 
@@ -250,11 +250,11 @@ The FET-MX93xx-C / FET-MX91xx-C SoM supports up to 1 × 2-lane MIPI camera at up
 
 - For differential pairs, make left and right bends consistent, and keep entries into pads and vias symmetric, as shown in the figure below;
 
-  ![Image](image-1794474901419.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474901419.png)
 
 - When length-tuning (serpentining) traces, keep the width of each turning segment at least equal to the trace width. If this is unavoidable, make sure the trace width and spacing at the corners still meet the rules, as shown in the figure below;
 
-  ![Image](image-1794474909559.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474909559.png)
 
 - Place filter capacitors at the chip's power input, as close to the pins as possible.
 
@@ -262,7 +262,7 @@ The FET-MX93xx-C / FET-MX91xx-C SoM supports up to 1 × 2-lane MIPI camera at up
 
 - The bus topology is shown below;
 
-  ![Image](image-1794474940655.png)
+  ![Image](https://www.forlinx.net/docs_assets/images/platform/nxp/ok-mx9352-c/ok-mx9352-c-hardware-design-guide/image_1794474940655.png)
 
 - Place I2C pull-up resistors as close to the source as possible;
 - If an I2C device on the bus is sensitive to glitches (even small glitches can trigger it falsely, and once such a device is attached it can disrupt more sensitive devices on the same bus), add an RC filter at the device end. The capacitor should be in the pF range, and the bus carrying that device should be routed as short as possible — guard the clock line where possible.
