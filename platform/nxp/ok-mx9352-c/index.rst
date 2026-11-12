@@ -21,6 +21,7 @@ HARDWARE
    :maxdepth: 2
 
    OK-MX9352-C_User_Hardware_Manual
+   ok-mx9352-c-hardware-design-guide
 SOFTWARE 
 ---------
 .. toctree::
