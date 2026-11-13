@@ -1860,11 +1860,11 @@ Open RKDevTool:
 
 Select the firmware image to flash:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/36_L1863_1787727808102-58289181-548e-497a-9df7-874e491a1ef7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/36_L1863_1787727808102-58289181-548e-497a-9df7-874e491a1ef7.png)
 
 Hold the BOOT button while powering on; once MASKROM is detected, release the button and click **Upgrade**. Wait for the download to complete:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/37_L1867_1787727808457-72982945-1f9f-45af-927c-8c41f1ef8de0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/37_L1867_1787727808457-72982945-1f9f-45af-927c-8c41f1ef8de0.png)
 
 **Note: in MASKROM mode, do not click "Device partition table" — it has no effect. flashing individual partitions in MASKROM mode does not clear the U-Boot environment variables.**
 
