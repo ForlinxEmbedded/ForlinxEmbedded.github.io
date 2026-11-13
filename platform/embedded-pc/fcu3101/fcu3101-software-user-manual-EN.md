@@ -67,7 +67,7 @@ The base configuration of the FCU3101 is listed below.
 
 ### 1.3 Enclosure Dimensions
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/1787727794603-905b4477-e59e-43da-9866-492b7b4866c1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/01_L70_1787727794603-905b4477-e59e-43da-9866-492b7b4866c1)
 
 L: 202 mm · W: 123 mm · H: 42 mm
 
@@ -77,9 +77,9 @@ L: 202 mm · W: 123 mm · H: 42 mm
 
 ### 2.1 Interface Overview
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/02_L80_1787727795378-36855f25-7c17-4d3a-a738-d9e5ce16b46e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/02_L80_1787727795378-36855f25-7c17-4d3a-a738-d9e5ce16b46e.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/03_L82_1787727796363-3bf03354-b227-4890-afc2-28df1a93e4d0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/03_L82_1787727796363-3bf03354-b227-4890-afc2-28df1a93e4d0.png)
 
 **FCU3101 Interface Overview:**
 
@@ -117,11 +117,11 @@ At boot, ETH0 defaults to 192.168.0.232 and ETH1 to 192.168.1.232. **Use ETH1 fo
 
 Open a terminal program (MobaXterm is used here), configure the session as shown, and click **Open**:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/04_L120_1787727797100-b6815252-995e-484f-a317-cbf7c771bd7f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/04_L120_1787727797100-b6815252-995e-484f-a317-cbf7c771bd7f.png)
 
 Click **OK**. When prompted, enter the user name `root` and leave the password empty.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/05_L124_1787727797509-2462b104-0215-4d0d-a1c8-1d5859583460.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/05_L124_1787727797509-2462b104-0215-4d0d-a1c8-1d5859583460.png)
 
 #### 2.3.2 Serial Console Login
 
@@ -129,7 +129,7 @@ For the early development phase of the device, serial console access is availabl
 
 The DEBUG port is located as shown below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/06_L132_1787727797917-00590e64-6db8-46a5-b410-8a5a48538548.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/06_L132_1787727797917-00590e64-6db8-46a5-b410-8a5a48538548.png)
 
 #### 2.3.3 Viewing System Logs
 
@@ -264,7 +264,7 @@ Options:
 
 Changing the color in `breath` mode: the default service uses blue (`0000FF`). Use a color picker to sample the target color's RGB value and pass it directly to the utility.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/07_L267_1787727798232-800514ab-c026-454f-ae65-cdaa410b9ad5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/07_L267_1787727798232-800514ab-c026-454f-ae65-cdaa410b9ad5.png)
 
 Some common colors for testing:
 
@@ -458,7 +458,7 @@ Mon Dec 12 17:24:39 UTC 2025
 
 The FCU3101 has four system LEDs: power (PWR), system running (RUN), and two user-definable LEDs (LED1 and LED2).
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/08_L461_1787727798688-5b052ad3-1e79-4fe4-8a77-97c357a6e621.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/08_L461_1787727798688-5b052ad3-1e79-4fe4-8a77-97c357a6e621.png)
 
 - **PWR** indicates system power: it lights up automatically at power-on and goes out at power-off.
 - **RUN** has two behaviors:
@@ -487,7 +487,7 @@ root@FCU3101-buildroot:/# echo 0 > /sys/class/leds/LED1/brightness  # Off
 
 The RESET button restores network parameters with a single press:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/09_L490_1787727799079-fa4070dd-1a80-40f7-b59c-049e9afd7012.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/09_L490_1787727799079-fa4070dd-1a80-40f7-b59c-049e9afd7012.png)
 
 The button triggers a reset of the network node's connection parameters. With `evtest` you can inspect every event type — key presses, mouse movement, touchscreen events — all captured and reported precisely. You can also trigger custom events from your own application.
 
@@ -556,7 +556,7 @@ if [ -e /etc/gen_partiton_dev.sh ];then /etc/gen_partiton_dev.sh;fi
 
 The serial wiring is shown in the highlighted area:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/10_L559_1787727799929-abda6753-3e3d-4d72-8747-953af36f353e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/10_L559_1787727799929-abda6753-3e3d-4d72-8747-953af36f353e.png)
 
 #### 2.12.2 Device Mapping
 
@@ -583,7 +583,7 @@ root@FCU3101-buildroot:~# rx_0: forlinxforlinxforlinxforlinxforl
 
 The serial terminal on the PC shows the data sent and received:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/11_L586_1787727800301-ff75d134-3b5b-446a-b349-dece7280f927.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/11_L586_1787727800301-ff75d134-3b5b-446a-b349-dece7280f927.png)
 
 To test transmission from the FCU3101:
 
@@ -596,7 +596,7 @@ tx_0: KaLKchczYFbc21YbhV5xYf2SotoVobK8
 
 The PC receives the data:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/12_L599_1787727800692-8ab735b7-9153-40e7-81da-96b4b8975728.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/12_L599_1787727800692-8ab735b7-9153-40e7-81da-96b4b8975728.png)
 
 ### 2.13 Ethernet
 
@@ -617,7 +617,7 @@ Connect the PC to an FCU3101 Ethernet port and assign the PC a static IP. ETH1 i
 
 Run `ping 192.168.1.232` from a Windows command prompt:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/13_L620_1787727801039-6437921a-9e00-4446-ad9d-f48e0fd7535f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/13_L620_1787727801039-6437921a-9e00-4446-ad9d-f48e0fd7535f.png)
 
 If the PC can ping the FCU3101 and an SSH login succeeds, the NIC is working.
 
@@ -785,7 +785,7 @@ The FCU3101 includes an Nginx web server. Nginx is an efficient multi-tasking HT
 
 Nginx starts automatically at boot. Enter the FCU3101's IP address in a browser to view the pages served from the control unit. The screenshot below shows the page in Microsoft Edge:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/14_L788_1787727801297-158c6097-817b-42d8-a4af-8ffdc79cbfe4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/14_L788_1787727801297-158c6097-817b-42d8-a4af-8ffdc79cbfe4.png)
 
 #### 2.13.5 Reverse Proxy
 
@@ -842,15 +842,15 @@ With this configuration and the backend service running, browsing to `http://192
 
 Connect from a PC with FileZilla, entering the FTP credentials in the highlighted fields (the `root` account has no password by default). ETH1 is used by default:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/15_L845_1787727801628-ef199730-b4fe-45f9-a371-e0f23b7002c6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/15_L845_1787727801628-ef199730-b4fe-45f9-a371-e0f23b7002c6.png)
 
 Click **OK** in the intermediate dialog:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/16_L849_1787727801903-9e21014a-1c2e-4174-b4c4-f4205f732016.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/16_L849_1787727801903-9e21014a-1c2e-4174-b4c4-f4205f732016.png)
 
 The FCU3101 directory tree is then available:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/17_L853_1787727802216-3d2df0fc-5ebb-4f75-9238-8785ed54658a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/17_L853_1787727802216-3d2df0fc-5ebb-4f75-9238-8785ed54658a.png)
 
 ### 2.14 Wi-Fi
 
@@ -1019,7 +1019,7 @@ Changing discoverable on succeeded
 
 Open Bluetooth settings on the phone and scan; the device "FCU3101-buildroot" appears. Select it to pair.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/18_L1022_1787727802503-c3c64d51-2b6e-47f0-86b7-7e10dc50d37a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/18_L1022_1787727802503-c3c64d51-2b6e-47f0-86b7-7e10dc50d37a.png)
 
 The terminal prints the pairing request; enter `yes`:
 
@@ -1093,7 +1093,7 @@ Request confirmation14]#
 
 Once paired, send a file from the phone to the FCU3101 over Bluetooth.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/19_L1096_1787727802852-ca77d0f9-e6a9-4c13-bc0c-1742bbd52f19.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/19_L1096_1787727802852-ca77d0f9-e6a9-4c13-bc0c-1742bbd52f19.png)
 
 Received files are stored in `/tmp`.
 
@@ -1113,7 +1113,7 @@ Connection successful
 [FC:5B:8C:1A:A8:66]# send /userdata/belle-nuit-testchart-1080p.png    # Send the file
 ```
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/20_L1116_1787727803228-95ff6811-31aa-4888-b9b5-e4bde233b02f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/20_L1116_1787727803228-95ff6811-31aa-4888-b9b5-e4bde233b02f.png)
 
 The phone receives an incoming-file request; accept it to start the transfer.
 
@@ -1121,9 +1121,9 @@ The phone receives an incoming-file request; accept it to start the transfer.
 
 The FCU3101 supports 4G networking; the installed configuration depends on your order. At boot the 4G module is powered and its driver is loaded. The external antenna connector and SIM slot are shown below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/21_L1124_1787727803614-902d39e2-fabd-4165-a9fe-b4c33add9627.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/21_L1124_1787727803614-902d39e2-fabd-4165-a9fe-b4c33add9627.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/22_L1126_1787727804012-2b60c010-b558-47f7-adb7-d3ae5af5ca78.png)![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/23_L1126_1787727804285-daadddf8-a32f-4b6a-b28f-1e7503e5eaf2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/22_L1126_1787727804012-2b60c010-b558-47f7-adb7-d3ae5af5ca78.png)![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/23_L1126_1787727804285-daadddf8-a32f-4b6a-b28f-1e7503e5eaf2.png)
 
 #### 2.16.1 4G Communication Test
 
@@ -1277,7 +1277,7 @@ Creating, reading, and writing the database all work normally.
 
 #### 2.18.1 Interface
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/24_L1280_1787727804719-46124a59-2ae2-48cf-ba74-f4e2a1e00b1a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/24_L1280_1787727804719-46124a59-2ae2-48cf-ba74-f4e2a1e00b1a.png)
 
 #### 2.18.2 Device Mapping
 
@@ -1590,7 +1590,7 @@ root@FCU3101-buildroot:/tmp# ls
 1.txt
 ```
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/25_L1593_1787727804956-69853146-d922-4c01-9391-152a2d4fd27f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/25_L1593_1787727804956-69853146-d922-4c01-9391-152a2d4fd27f.png)
 
 ### 2.33 Ntpdate
 
@@ -1732,35 +1732,35 @@ Required tool:
 
 **Step 1:** extract `SDDiskTool_cn_v1.74.rar` to a path that contains no Chinese characters.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/26_L1735_1787727805193-b3bd3ec8-43cc-4955-9a32-d7bf97638f4e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/26_L1735_1787727805193-b3bd3ec8-43cc-4955-9a32-d7bf97638f4e.png)
 
 **Step 2:** insert the TF card into the PC through a USB drive or USB card reader.
 
 **⚠️ Note: the maximum supported card capacity is 32 GB; larger cards may fail to flash. 16 GB is recommended.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/27_L1741_1787727805483-8ee43831-f000-43b5-89b9-c0dfb99a0fd7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/27_L1741_1787727805483-8ee43831-f000-43b5-89b9-c0dfb99a0fd7.png)
 
 **Step 3:** select the removable device that corresponds to your USB drive or card reader.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/28_L1745_1787727805811-ee5e8d65-98db-4081-b6ac-0a57f96e9bc1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/28_L1745_1787727805811-ee5e8d65-98db-4081-b6ac-0a57f96e9bc1.png)
 
 Select your device and tick **Firmware upgrade**:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/29_L1749_1787727806019-d5cfba28-cafa-4ee8-8219-add89c162800.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/29_L1749_1787727806019-d5cfba28-cafa-4ee8-8219-add89c162800.png)
 
 **Step 4:** select the firmware image.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/30_L1753_1787727806362-fa9bd627-2a6b-441c-b78a-1fdb5a587ecd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/30_L1753_1787727806362-fa9bd627-2a6b-441c-b78a-1fdb5a587ecd.png)
 
 Browse to the image you want to flash.
 
 **Step 5:** click **Create**.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/31_L1759_1787727806764-acc3f8e8-3a98-4a72-a688-3e1d1415bced.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/31_L1759_1787727806764-acc3f8e8-3a98-4a72-a688-3e1d1415bced.png)
 
 Click **Yes** and wait for the process to finish:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/32_L1763_1787727807070-bf79f24a-6b6f-4517-ae93-0c11078535a9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/32_L1763_1787727807070-bf79f24a-6b6f-4517-ae93-0c11078535a9.png)
 
 Click **OK** to complete.
 
@@ -1838,11 +1838,11 @@ Extract the archive to any directory and run it with administrator privileges.
 
 Open `DriverInstall.exe`:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/33_L1841_1787727807326-0455b4d2-d755-4729-98bc-d225de82ed41.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/33_L1841_1787727807326-0455b4d2-d755-4729-98bc-d225de82ed41.png)
 
 Click **Driver install**:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/34_L1845_1787727807596-1db60625-96f0-487b-a52c-98653b6ba06a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/34_L1845_1787727807596-1db60625-96f0-487b-a52c-98653b6ba06a.png)
 
 #### 3.2.2 Full OTG Flash Test
 
@@ -1856,15 +1856,15 @@ RKDevTool is Rockchip's development tool. Extract it to a path containing only A
 
 Open RKDevTool:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/35_L1859_1787727807861-58808228-c768-4c13-b536-8e8913e4d1e3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/35_L1859_1787727807861-58808228-c768-4c13-b536-8e8913e4d1e3.png)
 
 Select the firmware image to flash:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/36_L1863_1787727808102-58289181-548e-497a-9df7-874e491a1ef7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/36_L1863_1787727808102-58289181-548e-497a-9df7-874e491a1ef7.png)
 
 Hold the BOOT button while powering on; once MASKROM is detected, release the button and click **Upgrade**. Wait for the download to complete:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/images_en/37_L1867_1787727808457-72982945-1f9f-45af-927c-8c41f1ef8de0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/37_L1867_1787727808457-72982945-1f9f-45af-927c-8c41f1ef8de0.png)
 
 **Note: in MASKROM mode, do not click "Device partition table" — it has no effect. flashing individual partitions in MASKROM mode does not clear the U-Boot environment variables.**
 
