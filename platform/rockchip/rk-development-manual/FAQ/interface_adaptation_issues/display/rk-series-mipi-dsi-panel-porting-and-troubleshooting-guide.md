@@ -64,7 +64,7 @@ The MIPI protocol is in fact a family of interface protocols, covering LCD, came
 
 The figure below shows its interface definition:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide/mipi_dsi_interface_definition_1794467329836.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/FAQ/interface_adaptation_issues/display/rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide/mipi_dsi_interface_definition_1794467329836.png)
 
 ### 1.3 Related Configuration
 
@@ -642,11 +642,11 @@ check the color format first; do not adjust the Timing first.
 
 This is how the original image appears:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide/image_1794465282136_1794467367696.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/FAQ/interface_adaptation_issues/display/rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide/image_1794465282136_1794467367696.png)
 
 And this is the display effect presented on the customer’s device:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/resources/solutions/rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide/image_1794465282170_1794467384789.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/FAQ/interface_adaptation_issues/display/rk-series-mipi-dsi-panel-porting-and-troubleshooting-guide/image_1794465282170_1794467384789.png)
 
 When encountering this scenario, check if there are extra hardware configuration pins on the display side. This phenomenon occurs because the display IC has a pin that sets the scan direction of its internal registers. The display effect can be corrected by changing the high/low level state of this pin.
 
