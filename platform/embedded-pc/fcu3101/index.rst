@@ -63,6 +63,7 @@ SOFTWARE
    :maxdepth: 2
 
    fcu3101-software-user-manual-EN
+   fcu3101-ai-algorithm-user-manual-EN
 
 
 
