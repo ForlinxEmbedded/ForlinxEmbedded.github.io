@@ -67,7 +67,7 @@ The base configuration of the FCU3101 is listed below.
 
 ### 1.3 Enclosure Dimensions
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/01_L70_1787727794603-905b4477-e59e-43da-9866-492b7b4866c1)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3101/fcu3101-software-user-manual-EN/01_L70_1787727794603-905b4477-e59e-43da-9866-492b7b4866c1.png)
 
 L: 202 mm · W: 123 mm · H: 42 mm
 
