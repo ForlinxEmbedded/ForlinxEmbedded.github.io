@@ -465,52 +465,97 @@ Embedded Computer
 
    <div class="products-container">
 
+    <div class="product-card">
+      <a href="embedded-pc/fcu3502/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU3502.webp" alt="FCU3502" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU3502</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu3502-edge-ai-computing-box-203.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu3502/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
 
-  <div class="product-card">
-     <a href="embedded-pc/fcu3502/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/embedded-pc/FCU3502.webp" alt="FCU3502" class="product-image" />
-     </a>
-     <h3 class="product-title">FCU3502</h3>
+    <div class="product-card">
+      <a href="embedded-pc/fcu3011/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU3011.webp" alt="FCU3011" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU3011</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu3011-ai-edge-computing-box-173.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu3011/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="embedded-pc/fcu3501/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU3501.webp" alt="FCU3501" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU3501</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu3501-embedded-computer-166.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu3501/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="embedded-pc/fcu2601/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU2601.webp" alt="FCU2601" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU2601</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu2601-embedded-computer-146.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu2601/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="embedded-pc/fcu3101/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU3101.webp" alt="FCU3101" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU3101</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu3101-edge-ai-computing-box-194.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu3101/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="embedded-pc/fcu1501/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU1501.webp" alt="FCU1501" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU1501</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu1501-embedded-computer-178.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu1501/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="embedded-pc/fcu1104/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="_static/images/embedded-pc/FCU1104.webp" alt="FCU1104" class="product-image" />
+      </a>
+      <h3 class="product-title">FCU1104</h3>
+      <div class="btn-group">
+        <a href="https://www.forlinx.net/product/fcu1104-embedded-computer-114.html?utm_source=forlinxdocs&amp;utm_medium=organic&amp;utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+        <a href="embedded-pc/fcu1104/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+      </div>
+    </div>
+
+
+
+
+
+
+   </div>
+
+
      <div class="btn-group">
-       <a href="https://www.forlinx.net/product/fcu3502-edge-ai-computing-box-203.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
-       <a href="embedded-pc/fcu3502/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
+       <a href="https://www.forlinx.net/product/fcu3101-edge-ai-computing-box-194.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
+       <a href="embedded-pc/fcu3101/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
      </div>
    </div>
-
-   <div class="product-card">
-     <a href="embedded-pc/fcu3011/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/embedded-pc/FCU3011.webp" alt="FCU3011" class="product-image" />
-     </a>
-     <h3 class="product-title">FCU3011</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/fcu3011-ai-edge-computing-box-173.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
-       <a href="embedded-pc/fcu3011/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
    </div>
-
-
-   <div class="product-card">
-     <a href="embedded-pc/fcu1501/index.html" target="_blank" rel="noopener noreferrer">
-       <img src="_static/images/embedded-pc/FCU1501.webp" alt="FCU1501" class="product-image" />
-     </a>
-     <h3 class="product-title">FCU1501</h3>
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/fcu1501-embedded-computer-178.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
-       <a href="embedded-pc/fcu1501/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-
-
-
-
-
-
-
-
-
-   </div>
-
-
 ----
 
 

@@ -32,8 +32,8 @@ FCU1104 Embedded Computer Manual
         <div style="flex: 0 1 380px; display: flex; gap: 20px; justify-content: center; align-items: flex-end;">
             
             <div style="text-align: center;">
-                <img src="https://www.forlinx.net/image/embedded-pc/FCU1104-front.webp" alt="FCU3501 Embedded Computer" style="max-width: 140px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
-                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">FCU3501 Edge AI Computing Box</div>
+                <img src="https://www.forlinx.net/image/embedded-pc/FCU1104-front.webp" alt="FCU1104 Embedded Computer" style="max-width: 140px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
+                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">FCU1104 Embedded Computer</div>
             </div>
             
         </div>
