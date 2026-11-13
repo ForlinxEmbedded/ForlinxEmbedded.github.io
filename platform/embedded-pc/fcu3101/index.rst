@@ -62,6 +62,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   fcu3101-software-user-manual-EN
+
 
 
 
