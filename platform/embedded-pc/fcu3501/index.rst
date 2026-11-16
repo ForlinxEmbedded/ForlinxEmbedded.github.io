@@ -64,6 +64,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   FCU3501_Forlinx_Desktop_User_Manual-EN
+
 
 
 
