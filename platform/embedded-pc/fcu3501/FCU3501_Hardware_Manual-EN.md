@@ -16,7 +16,7 @@ The FCU3501 Embedded Control Unit is based on the Rockchip RK3588/RK3588J proces
 The FCU3501 Embedded Control Unit combines the FET3588J-C System-on-Module (SoM) with a carrier board and offers a rich set of industrial-grade peripherals, including RS485, RS232, USB, RGMII, HDMI, PCIe, I2S, SDIO, DI, and DO interfaces. It supports multiple modules—AI accelerator cards, 4G/5G modules, M.2 SSDs, and more—so you can choose options that fit your application.
 
 ## 2. Interface Diagram
-![](images_en/059.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/059.png)
 
 **Figure 1 Front Panel Interface Diagram**
 
@@ -60,7 +60,7 @@ The terminal pin definitions, from left to right, are as follows:
 | Definition | COM | B[1:0] | A[1:0] |
 
 
-![](images_en/060.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/060.png)
 
 Figure 2 Rear Panel Interface Diagram
 
@@ -93,7 +93,7 @@ The terminal pin definitions, from left to right, are as follows:
 
 Device grounding point, connected to the enclosure and the power supply PE;
 
-![](images_en/061.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/061.png)
 
 Figure 3 Side Interface Diagram
 
@@ -101,7 +101,7 @@ Figure 3 Side Interface Diagram
 
 1 x SIM card slot; insert a SIM card for use with the 5G/4G module;
 
-![](images_en/062.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/062.png)
 
 Figure 4 Bottom Interface Diagram
 
@@ -141,7 +141,7 @@ This product takes a rated DC 24 V input and supports a wide DC 9~36 V range.
 
 | Board Photo | Description |
 | :---: | --- |
-| ![](images_en/063.png) |  |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/063.png) |  |
 
 
 
@@ -158,22 +158,22 @@ This product takes a rated DC 24 V input and supports a wide DC 9~36 V range.
 
 
 ## 6. Mechanical Dimensions
-![](images_en/064.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/064.png)
 
 **Front View Dimensions**
 
-![](images_en/065.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/065.png)
 
 **Top View Dimensions**
 
 ## Appendix A
 Recommended Tools for Opening the Enclosure
 
-![](images_en/066.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/066.png)
 
 Figure A.1
 
-![](images_en/067.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hardware_Manual-EN/067.png)
 
 Figure A.2
 
