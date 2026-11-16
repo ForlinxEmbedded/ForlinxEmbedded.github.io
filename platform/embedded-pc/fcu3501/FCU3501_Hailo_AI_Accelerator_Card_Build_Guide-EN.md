@@ -21,26 +21,26 @@ Converting to a HEF file takes about three steps:
 ### 1.2 System Requirements for Model Conversion
 Environment dependencies required by Dataflow Compiler v3.28.0 (hailo.ai) v3.28
 
-![](images_en/001.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/001.png)
 
-![](images_en/002.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/002.png)
 
 ### 1.3 Required Libraries and Packages for the Dataflow Compiler Model Converter
 Dataflow Compiler installs and runs Tensorflow. However, when Tensorflow is installed from PyPi and runs on a CPU, AVX instruction support is also required. Therefore, use a CPU that supports AVX instructions and meets the requirements below. Alternatively, build Tensorflow from source without AVX.
 
-![](images_en/003.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/003.png)
 
 sudo apt install python3-virtualenv  python3-tk   graphviz libgraphviz-dev python3-pygraphviz
 
 ### 1.4 Python Venv Environment Setup
-![](images_en/004.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/004.png)
 
 This environment is set up on a pc running ubuntu20 or Ubuntu22.
 
 ### 1.5 Detailed Steps for Using the Dataflow Compiler
-![](images_en/005.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/005.png)
 
-![](images_en/006.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/006.png)
 
 The program uses from hailo_sdk_client import ClientRunner.
 
@@ -141,6 +141,6 @@ The blue sections in the program can be enabled or disabled. When disabled, the 
 ### 1.6 Source Code for the Conversion Steps
 In the hailo_DFC folder, the three steps of compilation, quantization, and conversion are provided. Run them in numerical order.
 
-![](images_en/007.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN/007.png)
 
 The code takes the yolov5s.onnx to hef conversion as an example and produces yolov5s.hef as output.
