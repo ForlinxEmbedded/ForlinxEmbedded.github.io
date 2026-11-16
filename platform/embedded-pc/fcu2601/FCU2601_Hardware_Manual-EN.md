@@ -16,7 +16,7 @@ The FCU2601 Embedded Control Unit is built on our FET3568J-C quad-core industria
 The product uses a System-on-Module (SoM), carrier board, and expansion board design to reduce total system cost, and supports a wide range of hardware peripherals, including RS485, RS232, CAN, USB, Ethernet, 4G, Wi-Fi, DI, DO, mSATA, and HDMI interfaces and modules. The FCU2601 measures within 190 x 140 x 45 mm and comes in Base and Extended versions. Both versions are planned to share the same enclosure size but offer different numbers of interfaces, so you can select one based on your application.
 
 ## 2. Interface Diagram
-![](images_en/069.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/069.png)
 
 Figure 1 Front-Panel Interface Diagram
 
@@ -66,7 +66,7 @@ The terminal block pinout is as follows:
 | Definition | A9 | B9 | G9 |
 
 
-![](images_en/070.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/070.png)
 
 Figure 2 Rear-Panel Interface Diagram
 
@@ -106,13 +106,13 @@ Protective Earth
 
 2 x antenna connectors for the main and secondary 4G antennas
 
-![](images_en/071.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/071.png)
 
 Figure 4 Side Interface Diagram
 
 1 x self-ejecting Micro SIM card slot for SIM card installation and 1 microSD card slot for flashing or data storage
 
-![](images_en/072.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/072.png)
 
 Figure 5 Bottom View
 
@@ -153,7 +153,7 @@ The product has a rated DC 24 V input and supports a wide DC 9~36 V input range.
 
 | Board Photo | Description |
 | --- | --- |
-| ![](images_en/073.png) |  |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/073.png) |  |
 
 
 ## 5. Electromagnetic Compatibility (EMC)
@@ -177,23 +177,23 @@ Insulation resistance, dielectric strength, and impulse voltage comply with the 
 FCC, CE, RoHS, Kaipu telecontrol standard EMC certification, relay protection standard EMC testing, etc.
 
 ## 6. Mechanical Dimensions
-![](images_en/074.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/074.png)
 
 Overall Dimensions
 
 ## Appendix A
 Recommended Tools for Opening the Enclosure
 
-![](images_en/075.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/075.png)
 
 Figure A.1
 
-![](images_en/076.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/076.png)
 
 Figure A.2
 
 For the enclosure removal screws (M3 countersunk) shown in Figure A.1 and Figure A.2, a PH2 screwdriver (6.5 mm diameter) is recommended.
 
-![](images_en/077.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Hardware_Manual-EN/077.png)
 
 Figure A.3
