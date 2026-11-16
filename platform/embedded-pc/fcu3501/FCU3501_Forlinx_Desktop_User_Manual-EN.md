@@ -93,12 +93,12 @@ The product has a rated DC 24 V input and supports a wide DC 9~36 V input range.
 
 | Board Photo | Description |
 | --- | --- |
-| ![](images_en/009.png) |  |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/009.png) |  |
 
 
 The power indicator shows both the power supply status and the system status, as shown below:
 
-![](images_en/010.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/010.png)
 
 When the FCU3501 is powered on, the PWR red LED stays lit, indicating the operating power status of the Embedded Control Unit;
 
@@ -122,7 +122,7 @@ The FCU3501 supports two ways to log in to the system: debug serial port and net
 #### 2.2.1 Debug Serial Port
 The FCU3501 debug serial port is labeled Debug on the panel, as shown below:
 
-![](images_en/011.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/011.png)
 
 The Debug serial port is used only to view board runtime information during debugging; it is not intended for any other purpose.
 
@@ -132,10 +132,10 @@ The Debug serial port is used only to view board runtime information during debu
 
 Select the COM port that matches your serial connection and configure the relevant settings in the Serial menu on the left.
 
-![](images_en/012.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/012.png)
 
-![](images_en/013.png)  
-![](images_en/014.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/013.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/014.png)
 
 **Note: The baud rate used here is 115200 with 8 data bits, no parity, 1 stop bit, and no flow control. After configuration, power on the FCU3501 to see the debug messages.**
 
@@ -246,7 +246,7 @@ forlinx@FCU3501:~$
 #### 3.1.1 Interface Description
 The DI/DO interfaces are shown below:
 
-![](images_en/015.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/015.png)
 
 The digital input interfaces default to a high level; grounding one switches it to a low level.
 
@@ -293,8 +293,8 @@ As you can see, both DIs now read low.
 #### 3.2.1 Interface Description
 Board Photo
 
-![](images_en/016.png)  
-![](images_en/017.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/016.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/017.png)
 
 #### 3.2.2 Hardware-to-Software Mapping
 | Hardware Terminal | Device Accessed by the Application | Remarks |
@@ -312,13 +312,13 @@ Using RS485_1 as an example: to test other RS485 interfaces, simply change the d
 
 This test uses communication with a PC as an example. Connect an RS232-to-RS485 module to the FCU3501 RS485_1 interface as shown below:
 
-![](images_en/018.png)  
-![](images_en/019.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/018.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/019.png)
 
 Open putty.exe on the PC, set the serial port and baud rate, then open the software:
 
-![](images_en/020.png)  
-![](images_en/021.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/020.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/021.png)
 
 RS485_1 Interface Transmit Test:
 
@@ -336,7 +336,7 @@ root@FCU3501:~# echo "forlinx_485_test" > /dev/ttyS4
 
 RS485_1 sends "forlinx_485_test" to the PC at 115200 baud, and it is received in putty on the PC.
 
-![](images_en/022.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/022.png)
 
 RS485_1 Interface Receive Test:
 
@@ -348,18 +348,18 @@ root@FCU3501:~# cat /dev/ttyS4
 
 Enter data in putty on the PC:
 
-![](images_en/023.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/023.png)
 
 The PC sends "abcdefg" at 115200 baud, and the FCU3501 RS485_1 interface receives it:
 
-![](images_en/024.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/024.png)
 
 ### 3.3 System Reset
 Press the Reset button and the system reboots immediately. The debug serial port also prints the boot messages.
 
 The Reset button is shown below:
 
-![](images_en/025.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/025.png)
 
 ### 3.4 USB Interface Test
 #### 3.4.1 USB HOST Interface Storage Test
@@ -367,7 +367,7 @@ The USB terminals are shown below:
 
 .
 
-![](images_en/026.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/026.png)
 
 Use a USB flash drive to test the USB function. Insert the drive into a USB port on the FCU3501 Embedded Control Unit, then check where it is mounted:
 
@@ -413,7 +413,7 @@ If the USB flash drive mounts automatically under /run/media/sdxx and its conten
 ### 3.5 Wired Ethernet Test
 The FCU3501 provides two 10M/100M/1000M auto-negotiating Ethernet ports with RJ45 connectors, as shown below:
 
-![](images_en/027.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/027.png)
 
 #### 3.5.1 Hardware-to-Software Mapping
 | Hardware Terminal | Device Accessed by the Application | Remarks |
@@ -443,7 +443,7 @@ root@ok3588:~# nmcli con mod 'Wired connection 1' ipv4.method manual ipv4.addres
 192.168.0.232/24 ipv4.gateway 192.168.0.1 ipv4.dns 8.8.8.8 connection.autoconnect yes
 ```
 
-![](images_en/028.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/028.png)
 
 Activate the network connection to apply the settings.
 
@@ -467,7 +467,7 @@ device interrupt 80
 
 From a cmd window on the PC, start iperf3 (Tools\iperf-3.1.3-win64\iperf3.exe in the supplied materials) in listen mode:
 
-![](images_en/029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/029.png)
 
 Run the following command on the FCU3501 terminal:
 
@@ -477,11 +477,11 @@ root@FCU3501:~# iperf3 -c 192.168.0.110 -i 5 -t 60
 
 The PC output is:
 
-![](images_en/030.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/030.png)
 
 The FCU3501 output is:
 
-![](images_en/031.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/031.png)
 
 ### 3.6 4G/5G Test
 The FCU3501 supports the EM05 4G module and the RM500U and RM500Q 5G modules. Run the tests for the module you selected.
@@ -497,7 +497,7 @@ The device nodes for the 4G and 5G modules are:
 
 The 4G and 5G modules use a standard push-to-eject SIM slot; press the SIM card to eject it, as shown below:
 
-![](images_en/032.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/032.png)
 
 #### 3.6.1 4G/5G Module Detection
 
@@ -647,7 +647,7 @@ rtt min/avg/max/mdev = 109.127/119.767/144.044/13.396 ms
 ### 3.7 WiFi Test
 The WiFi antenna marking on the enclosure is shown below:
 
-![](images_en/033.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/033.png)
 
 #### 3.7.1 Onboard Wi-Fi Test
 The FCU3501 ships with an onboard 8723DU Wi-Fi/Bluetooth combo module. This section tests the Wi-Fi function; the module appears in the system as the mlan0 node targeted by this test.
@@ -910,47 +910,47 @@ The FCU3501 supports one HDMI display and runs Forlinx Desktop 22.04, a customiz
 
 After connecting an HDMI display to the FCU3501, click login on the first boot. The desktop is shown below:
 
-![](images_en/034.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/034.png)
 
 #### 3.11.2 Network Configuration Settings
 At startup, the FCU3501 runs dhclient on eth0 by default. To set a static IP, use the following settings.
 
 Click the network settings icon in the top-right corner:
 
-![](images_en/035.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/035.png)
 
 Click the "Wired Settings" button.
 
-![](images_en/036.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/036.png)
 
-![](images_en/037.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/037.png)
 
 #### 3.11.3 Wi-Fi Test
 The FCU3501 has an onboard RTL8723DU module for Wi-Fi testing. The Wi-Fi module appears as a wlan node in the system; this test uses wlan0 (use the corresponding node when multiple devices are present). To configure Wi-Fi, right-click the network icon in the top-right corner with the mouse:
 
-![](images_en/038.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/038.png)
 
 Click the Wi-Fi name listed under Select Networks to open the Wi-Fi configuration window, then enter the password using the on-screen keyboard:
 
-![](images_en/039.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/039.png)
 
-![](images_en/040.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/040.png)
 
 Click "Connect" to complete the Wi-Fi connection:
 
 #### 3.11.4 Browser Test
 ForlinxDesktop includes Google Chrome and other browsers. Ensure the network is connected and dns is available before accessing the Internet. Click the Start menu in the top-left corner and select "Chromium Browser":
 
-![](images_en/041.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/041.png)
 
 In the browser, click the search box, enter the URL, and visit the Forlinx Embedded official website. The page is shown below:
 
-![](images_en/042.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/042.png)
 
 #### 3.11.5 File Manager
 Click the "File Manager PCManFM" file manager in the top-left corner to manage files:
 
-![](images_en/043.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/043.png)
 
 ### 3.12 Common Service Tests
 The preinstalled services below take up about 1000 MB of file system space.
@@ -1100,11 +1100,11 @@ Bye
 #### 3.12.3 FTP Service Feature Overview
 The vsftpd service starts automatically at boot. In the address bar of File Explorer on your PC, enter ftp://192.168.0.123/ to connect. A login dialog appears; use username `forlinx` and password `forlinx`.
 
-![](images_en/044.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/044.png)
 
 The screenshot below shows ftp accessed from File Explorer on a PC:
 
-![](images_en/045.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/045.png)
 
 #### 3.12.4 ModBus Feature Overview
 Modbus is a communication protocol used to transfer data in automation systems. It is widely used in industrial control and monitoring for
@@ -1388,13 +1388,13 @@ The FCU3501 platform can use a microSD card to flash the system to the eMMC for 
 
 Copy SDDiskTool_v1.69.zip from the tools directory in the user materials to any directory on Windows. Run SD_Firmware_Tool.exe as administrator.
 
-![](images_en/046.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/046.png)
 
 Select the disk device, check "Firmware Upgrade", choose update.img, and click Start to create.
 
-![](images_en/047.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/047.png)
 
-![](images_en/048.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/048.png)
 
 Insert the microSD card into the board and power it on; the system enters the flashing process automatically. When flashing finishes, both the screen and the serial console show:
 
@@ -1414,6 +1414,6 @@ In mass production, use the heartbeat LED on the SoM to tell whether flashing is
 
 Serial console output during flashing:
 
-![](images_en/049.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Forlinx_Desktop_User_Manual-EN/049.png)
 
 If the system does not reboot automatically after you remove the microSD card, a manual reboot also completes the flashing. As shown above, flashing takes about 28 minutes; wait for it to finish.
