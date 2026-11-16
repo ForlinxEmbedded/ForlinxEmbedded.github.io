@@ -49,6 +49,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   FCU2601_Hardware_Manual-EN
+
 
 
 
