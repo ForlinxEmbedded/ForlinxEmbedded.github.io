@@ -49,6 +49,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   FCU3501_Hardware_Manual-EN
+
 
 
 
