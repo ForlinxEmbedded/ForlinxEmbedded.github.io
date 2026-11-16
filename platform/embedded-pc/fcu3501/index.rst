@@ -65,6 +65,7 @@ SOFTWARE
    :maxdepth: 2
 
    FCU3501_Forlinx_Desktop_User_Manual-EN
+   FCU3501_Hailo_AI_Accelerator_Card_Build_Guide-EN
 
 
 
