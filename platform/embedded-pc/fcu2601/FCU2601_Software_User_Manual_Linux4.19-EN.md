@@ -51,17 +51,17 @@ The product uses a System-on-Module (SoM) plus carrier board plus expansion boar
 
 
 ### 1.2 Interface Diagram
-![](images_en/156.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/156.png)
 
-Figure 1 Front ![](images_en/157.png)
+Figure 1 Front ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/157.png)
 
 Figure 2 Back
 
-![](images_en/158.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/158.png)
 
 Figure 3 Side
 
-![](images_en/159.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/159.png)
 
 Figure 4 Bottom 
 
@@ -175,7 +175,7 @@ The terminal block pinout is defined as follows:
 
 
 ### 1.4 Mechanical Dimensions
-![](images_en/160.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/160.png)
 
 Overall Dimensions
 
@@ -273,12 +273,12 @@ The product is rated for a DC 24 V input and supports a wide DC 9~36 V input ran
 
 | Board Photo | Description |
 | --- | --- |
-| ![](images_en/161.png) |  |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/161.png) |  |
 
 
 Power supply status and system status are indicated by the power LED, as shown below:
 
-![](images_en/162.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/162.png)
 
 When the FCU2601 is powered on, the red PWR LED stays on, indicating the Embedded Control Unit's operating power status;
 
@@ -310,7 +310,7 @@ The FCU2601 supports two ways to log in: via the debug serial port or over the n
 
 On the FCU2601, the debug serial port is labeled Debug on the panel, as shown below:
 
-![](images_en/163.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/163.png)
 
 The Debug serial port is used to view board runtime information only; it serves as a debug port and is not used for other purposes.
 
@@ -320,10 +320,10 @@ The Debug serial port is used to view board runtime information only; it serves 
 
 Select the COM port according to your serial connection, then configure the related settings in the "Serial" menu on the left.
 
-![](images_en/164.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/164.png)
 
-![](images_en/165.png)  
-![](images_en/166.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/165.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/166.png)
 
 **Note: The baud rate here is 115200, with 8 data bits, no parity, 1 stop bit, and no flow control. Once configured, power on the FCU2601 control unit to see the debug output.**
 
@@ -389,9 +389,9 @@ forlinx@FCU2601:~$
 #### 3.1.1 Interface Description
 The interfaces for DI, DO, the user-defined Key, and the user-defined LEDs LED1-4 are shown below:
 
-![](images_en/167.png)  
-![](images_en/168.png)  
-![](images_en/169.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/167.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/168.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/169.png)
 
 Of these, the digital input interfaces are high by default; connect them to ground to set them low.
 
@@ -500,8 +500,8 @@ POW_DET now reads high, meaning the system has lost power; handle it promptly ba
 #### 3.2.1 Interface Description
 Board Photo:
 
-![](images_en/170.png)  
-![](images_en/171.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/170.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/171.png)
 
 **Note:** 
 
@@ -530,13 +530,13 @@ Using RS485_1 as an example; to test other RS485 interfaces, just change the cor
 
 This test uses PC communication as an example. Connect an RS232-to-RS485 converter to the FCU2601 RS485_1 interface as shown below:
 
-![](images_en/172.png)  
-![](images_en/173.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/172.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/173.png)
 
 On the PC, open putty.exe, set the serial port and baud rate, then open the connection:
 
-![](images_en/174.png)  
-![](images_en/175.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/174.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/175.png)
 
 RS485_1 Interface Transmit Test:
 
@@ -554,7 +554,7 @@ root@FCU2601:/# echo "forlinx_485_test" > /dev/ttyS9
 
 RS485_1 sends "forlinx_485_test" to the PC at 115200 baud, which then appears in putty on the PC.
 
-![](images_en/176.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/176.png)
 
 RS485_1 Interface Receive Test:
 
@@ -566,18 +566,18 @@ root@FCU2601:/# cat /dev/ttyS9
 
 Enter data in putty on the PC:
 
-![](images_en/177.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/177.png)
 
 The PC sends "abcdefg" at 115200 baud, which is then received on the FCU2601 RS485_1 interface:
 
-![](images_en/178.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/178.png)
 
 ### 3.3 System Reset
 Press the Reset button to reboot the system immediately; the debug serial port also prints the boot messages.
 
 The Reset button is shown below:
 
-![](images_en/179.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/179.png)
 
 ### 3.4 USB Interface Test
 #### 3.4.1 USB HOST Interface Storage Test
@@ -585,7 +585,7 @@ The USB connector is shown below:
 
 .
 
-![](images_en/180.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/180.png)
 
 Use a USB flash drive to test the USB function. Insert the drive into a USB port on the FCU2601 Embedded Control Unit, then check its mount point:
 
@@ -628,7 +628,7 @@ If the USB drive mounts automatically under /run/media/sdxx and its contents can
 ### 3.5 Wired Ethernet Test
 The FCU2601 supports two RJ45 10M/100M/1000M auto-negotiation Ethernet ports and two RJ45 10M/100M auto-negotiation Ethernet ports, as shown below:
 
-![](images_en/181.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/181.png)
 
 #### 3.5.1 Hardware-to-Software Mapping
 | Hardware Terminal | Device Accessed by the Application | Remarks |
@@ -662,7 +662,7 @@ Take testing the NET0 port as an example: connect the PC to the FCU2601's NET0 p
 
 From a cmd window on the PC, start iperf3 (Tools\iperf-3.1.3-win64\iperf3.exe in the supplied materials) in listen mode:
 
-![](images_en/182.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/182.png)
 
 Enter the following command on the FCU2601 terminal to run the test:
 
@@ -672,11 +672,11 @@ root@FCU2601:/# iperf3 -c 192.168.0.110 -i 5 -t 10
 
 The PC output is:
 
-![](images_en/183.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/183.png)
 
 The FCU2601 output is:
 
-![](images_en/184.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/184.png)
 
 ### 3.6 4G Module Test
 The FCU2601 supports three 4G modules: Quectel EC200N, EC20, and EC25. Run the tests for the module you selected.
@@ -692,11 +692,11 @@ The device nodes for the 4G and 5G modules are:
 
 The 4G module comes with one antenna, as shown below:
 
-![](images_en/185.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/185.png)
 
 The 4G module uses a standard push-to-eject SIM slot; press the SIM card to eject it, as shown below:
 
-![](images_en/186.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/186.png)
 
 #### 3.6.1 4G Module Detection
 Quectel EC20 module
@@ -950,7 +950,7 @@ rtt min/avg/max/mdev = 109.127/119.767/144.044/13.396 ms
 ### 3.7 WiFi Test
 The Wi-Fi antenna is marked on the enclosure as follows:
 
-![](images_en/187.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/187.png)
 
 #### 3.7.1 Onboard Wi-Fi Test
 The FCU2601 carries an AW-AM510 Wi-Fi/Bluetooth combo module by default; this section tests its Wi-Fi function. The module appears in the system as the mlan0 node, so this test targets mlan0.
@@ -1302,16 +1302,16 @@ The FCU2601 supports one HDMI display and runs a Linuxfs system customized with 
 
 After the FCU2601 boots, the desktop appears as shown below:
 
-![](images_en/188.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/188.png)
 
 #### 3.14.2 WiFi Test
 "WIFI" is a tool for configuring Wi-Fi. The FCU2601 has an onboard AW-AM510 module by default. The Wi-Fi module appears as an mlan node in the system; this test uses mlan0 (use the corresponding node when multiple devices are present):
 
-![](images_en/189.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/189.png)
 
 App icon
 
-![](images_en/190.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/190.png)
 
 App interface
 
@@ -1321,24 +1321,24 @@ Open the Wi-Fi test app, enter the correct network name and password, click conn
 
 After connecting, click ping to run a network test.
 
-![](images_en/191.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/191.png)
 
 #### 3.14.3 Network Configuration Test
 The FCU2601 supports dhcp and static modes through the "Network" configuration app. In static mode, you can configure the IP address, subnet mask, gateway, and DNS.
 
-![](images_en/192.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/192.png)
 
 App icon
 
 The DHCP mode screen is shown below:
 
-![](images_en/193.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/193.png)
 
 Select DHCP, choose the network interface to configure in the interface field, then click Apply and Restart Network at the bottom of the screen. The network restarts and obtains an IP automatically.
 
 The static mode screen is shown below:
 
-![](images_en/194.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/194.png)
 
 Select the network interface to configure in the interface field, then enter the desired IP in the ip field, the subnet mask in the netmask field, the gateway in the geteway field, and DNS in the dns field.
 
@@ -1347,11 +1347,11 @@ Select the network interface to configure in the interface field, then enter the
 #### 3.14.4 Ping Test
 "Ping" is a GUI version of the ping command commonly used for network testing:
 
-![](images_en/195.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/195.png)
 
 App icon
 
-![](images_en/196.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/196.png)
 
 App interface
 
@@ -1362,18 +1362,18 @@ Enter the target IP to ping in the hostname field and click the ping button; the
 
 **Note: An incorrect board time causes certificate errors. After using the browser, either do not power off immediately or run the sync command from the command line before powering off; otherwise the browser may exit abnormally and fail to run, and the only fix is to reflash the image.**
 
-![](197.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/197.png)
 
 Exit the browser via File->Quit in the top navigation bar.
 
 #### 3.14.6 RTC Test
 Use the "RTC" app to view and set the current system time:
 
-![](images_en/198.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/198.png)
 
 App icon
 
-![](images_en/199.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/199.png)
 
 App interface
 
@@ -1384,7 +1384,7 @@ With the RTC backup battery installed, reboot the board to confirm the RTC clock
 #### 3.14.7 UART Test
 Click the desktop icon to test the onboard UART interfaces of the FCU2601.
 
-![](images_en/200.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/200.png)
 
 Application Icon
 
@@ -1392,13 +1392,13 @@ The FCU2601 serial ports support odd and even parity, 8 data bits, and 1 stop bi
 
 Open the test program.
 
-![](images_en/201.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/201.png)
 
 Application Interface
 
-![](images_en/202.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/202.png)
 
-![](images_en/203.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/203.png)
 
 Click the Connect button in the upper-left corner, then press "g" on the keyboard to send automatically.
 
@@ -1407,8 +1407,8 @@ Click the desktop icon to open the submenu:
 
 ->
 
-![](images_en/204.png)  
-![](images_en/205.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/204.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/205.png)
 
 Application Icon
 
@@ -1416,7 +1416,7 @@ The FCU2601 CPU runs at up to 1.9 GHz. By default the CPU scales its frequency d
 
 Click the Power icon on the desktop to open the CPU frequency settings page:
 
-![](images_en/206.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/206.png)
 
 Set Userspace Governor: Set the CPU frequency in user space.
 
@@ -1424,7 +1424,7 @@ Set Frequency A55: Set the CPU frequency.
 
 For example, to set a fixed frequency, first click Set Userspace Governor, click run, then return to the screen above and click Set Frequency A55 to make the change.
 
-![](images_en/207.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/207.png)
 
 Select the frequency you need and apply it.
 
@@ -1666,15 +1666,15 @@ The vsftpd service starts automatically at boot. Enter [ftp://192.168.0.232/](ft
 
 The screenshot below shows FTP access from File Explorer on a PC:
 
-![](images_en/208.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/208.png)
 
 By default, the connection uses an anonymous login with no read or write permission. To log in as forlinx, right-click in a blank area and select Login.
 
-![](images_en/209.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/209.png)
 
 A login window then pops up. In the authentication dialog, enter username forlinx and password forlinx;
 
-![](images_en/210.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/210.png)
 
 ### 3.16 Changing the Boot Logo
 FCU2601 supports changing to a custom boot logo without rebuilding the image.
@@ -1722,13 +1722,13 @@ The FCU2601 platform can flash the system to eMMC from a microSD card for system
 
 Copy SDDiskTool_v1.69.zip from the tools directory of the user materials to any directory in Windows. Run SD_Firmware_Tool.exe as administrator.
 
-![](images_en/211.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/211.png)
 
 Select the disk device, check "Firmware Upgrade", and select update.img. Click Start Creating.
 
-![](images_en/212.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/212.png)
 
-![](images_en/213.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/213.png)
 
 Insert the microSD card into the board and boot; the system starts flashing automatically. When flashing finishes, both the screen and the serial console show:
 
@@ -1749,6 +1749,6 @@ In mass production, use the heartbeat LED on the SoM to check whether flashing i
 - Flashing status on the serial console:
 
 
-![](images_en/214.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_Linux4.19-EN/214.png)
 
 If the system does not reboot automatically after removing the microSD card, a manual reboot also completes the flash. As shown above, flashing takes about 6 minutes; wait patiently for it to finish.

@@ -58,11 +58,11 @@ There are two ways to use a VM environment in VMware: load an existing one or cr
 
 First, download the development environment from Forlinx; the package includes an MD5 checksum file. After downloading, verify the MD5 checksum of the archive (use an online MD5 tool or a local MD5 utility, whichever suits you) and compare it with the value in the checksum file. If they match, the download is intact; if not, the file may be corrupted, so download it again.
 
-![](images_en/085.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/085.png)
 
 Select all the archives, right-click, and extract them to the current folder or a directory of your choice:
 
-![](images_en/086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/086.png)
 
 After extraction, you get the development environment OK3568-VM15.1.0-ubuntu18.04
 
@@ -79,7 +79,7 @@ Open the installed VMware Workstation.
 
 Select the directory containing the extracted 3568.vmx virtual machine file, then double-click the startup file
 
-![](images_en/088.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/088.png)
 
 After loading, click Power On This Virtual Machine to boot into the system.
 
@@ -110,11 +110,11 @@ Select "Installer disc image file" and click "Next":
 
 Enter your full name, username, and password, then click "Next":
 
-![](images_en/094.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/094.png)
 
 Enter the virtual machine name and choose its location, then click "Next":
 
-![](images_en/095.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/095.png)
 
 Set the number of processor cores, then click "Next":
 
@@ -146,11 +146,11 @@ Set the disk size to 200 GB, split the virtual disk into multiple files, then cl
 
 Keep the defaults and click "Next":
 
-![](images_en/103.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/103.png)
 
 Click Finish:
 
-![](images_en/104.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/104.png)
 
 The virtual machine is now created. Click Power On This Virtual Machine to start installing the image, and wait for it to finish. The Ubuntu installation is complete. The next section explains how to install Ubuntu in the virtual machine; the procedure is similar on a physical machine. This section covers installing Ubuntu in a virtual machine.
 
@@ -163,7 +163,7 @@ Step 1: First, get the 64-bit Ubuntu18.04 image from the Ubuntu website:
 
 Right-click the created virtual machine and select Settings from the menu.
 
-![](images_en/105.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/105.png)
 
 The "Virtual Machine Settings" dialog opens.
 
@@ -179,45 +179,45 @@ After setting the image, make sure the network is available, then power on the v
 
 After the virtual machine starts, wait for the following installation screen:
 
-![](images_en/109.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/109.png)
 
 Select a language from the list on the left, then click "Install Ubuntu" to open the language selection screen. Ubuntu defaults to English, but you can choose Chinese instead; the default language can also be changed later. After selecting, click continue.
 
 
 
-![](images_en/110.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/110.png)
 
 Next, keep the default and click continue to proceed; the installation takes a while, then click "continue":
 
 
 
-![](images_en/111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/111.png)
 
 Keep the defaults, click Install Now, and in the dialog that appears, click continue:
 
-![](images_en/112.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/112.png)
 
-![](images_en/113.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/113.png)
 
 Next, select the time zone: click the Shanghai time zone or type Shanghai (choose the time zone that applies to you), then click Continue.
 
 Finally, set the username and password, choose automatic login or password login, then click continue to start the automatic installation.
 
-![](images_en/114.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/114.png)
 
 If the network is poor, click Skip; it does not affect the installation.
 
-![](images_en/115.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/115.png)
 
 Click Restart Now to reboot.
 
-![](images_en/116.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/116.png)
 
-![](images_en/117.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/117.png)
 
 The system desktop after the reboot.
 
-![](images_en/118.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/118.png)
 
 This completes the Ubuntu installation.
 
@@ -228,15 +228,15 @@ VMware Tools Installation:
 
 Next, install VMware Tools. Without it, you cannot copy/paste or drag files between the Windows host and the virtual machine. First, click "Virtual Machine" on the VMware menu bar, then click "Install VMware Tools" in the drop-down list.
 
-![](images_en/119.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/119.png)
 
 When done, switch to Ubuntu. A VMware Tools CD appears on the desktop; click to open it.
 
-![](images_en/120.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/120.png)
 
 Inside, you will find an archive named VMwareTools-10.3.10-12406962.tar.gz (the name may vary with the VMware version). Copy it to the home directory (the home/<username> directory).
 
-![](images_en/121.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/121.png)
 
 Press Ctrl+Alt+T to open a terminal and enter the command:
 
@@ -244,17 +244,17 @@ Press Ctrl+Alt+T to open a terminal and enter the command:
 | --- |
 
 
-![](images_en/122.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/122.png)
 
 After extraction, a vmware-tools-distrib directory appears.
 
-![](images_en/123.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/123.png)
 
 Back in the terminal, enter cd vmware-tools-distrib to move into that directory.
 
 Then enter sudo ./vmware-install.pl, press Enter, and type your password to start the installation. Enter yes when prompted and press Enter to accept the defaults for everything else.
 
-![](images_en/124.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/124.png)
 
 Once VMware Tools is installed, you can copy and paste files between Windows and Ubuntu.
 
@@ -262,19 +262,19 @@ Virtual Machine Full-Screen Display:
 
 If the virtual machine does not display in full screen, click View, select Auto Resize, then click Fit Guest to enable full-screen display.
 
-![](images_en/125.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/125.png)
 
 
 
 Most system settings are configured at the location shown. Most Ubuntu configuration needs can be handled here.
 
-![](images_en/126.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/126.png)
 
 Virtual Machine Sleep Settings:
 
 Also, the default sleep timeout is 5min. To disable sleep, set Power->Blank screen to Never.
 
-![](images_en/127.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/127.png)
 
 ### 3.1.4 Virtual Machine Network Settings
 #### 3.1.4.1 NAT Connection Mode
@@ -330,41 +330,41 @@ Copy qt-creator-opensource-linux-x86_64-4.1.0.run to any directory under the cur
 
 forlinx@ubuntu:~/3588$ ./qt-creator-opensource-linux-x86_64-4.7.0.run                      
 
-![](images_en/130.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/130.png)
 
 The graphical installation window then opens; follow the prompts to install:
 
-![](images_en/131.png)	
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/131.png)	
 
-![](images_en/132.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/132.png)
 
-![](images_en/133.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/133.png)
 
-![](images_en/134.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/134.png)
 
 For online installation, register a Qt account, or just log in if you already have one. The Qt password must contain uppercase letters, lowercase letters, and digits. After registering and logging in, click next.
 
 For offline installation, click Skip.
 
-![](images_en/135.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/135.png)
 
 Click "Next".
 
-![](images_en/136.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/136.png)
 
 If needed, change the installation path; here we keep the default. Click ""Next"".
 
-![](images_en/137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/137.png)
 
 Select Full installation and click "Next".
 
-![](images_en/138.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/138.png)
 
-![](images_en/139.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/139.png)
 
 Click install and wait for the installation to finish.
 
-![](images_en/140.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/140.png)
 
 Once installation finishes, click finish. The Qt interface opens automatically. You can also launch Qt Creator from the command line in the background with the commands below; use your actual installation path:
 
@@ -372,7 +372,7 @@ forlinx@ubuntu:~$ cd /home/forlinx/qtcreator-4.7.0/bin
 
 forlinx@ubuntu:~$ ./qtcreator &
 
-![](images_en/141.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/141.png)
 
 The Qt Creator interface appears. Qt Creator is now installed.
 
@@ -434,17 +434,17 @@ forlinx@ubuntu: ~/work/OK3568-linux-source$ ./build.sh
 
 The command prompts for a selection as shown below. Enter 1 and press Enter to continue.
 
-![](images_en/142.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/142.png)
 
 **Note: If the prompt below does not appear, configuration is already complete and the build will finish normally. This step is optional.**
 
 After compiling for a while, the screen below appears and requires a selection. From the information shown, choose 1800000 for VCCIO4 and VCCIO6 and 3300000 for the rest. Use the up/down arrow keys to select an option and press Enter to confirm.
 
-![](images_en/143.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/143.png)
 
 After a successful build, the system image containing the buildroot-built file system is generated in the Image folder, as shown below:
 
-![](images_en/144.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/144.png)
 
 **Note: update.img is the packaged image for full flashing via OTG or a TF card; the other files are for step-by-step flashing**
 
@@ -493,11 +493,11 @@ Qt is a cross-platform graphics development library that supports many operating
 
 **Note: The buildroot output directory is generated only after a full source build.**
 
-![](images_en/145.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/145.png)
 
 - Add the GCC compiler the same way: click "Add->GCC->C++" on the right, as shown below:
 
-![](images_en/146.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/146.png)
 
 
 
@@ -508,7 +508,7 @@ Qt is a cross-platform graphics development library that supports many operating
 
 - Click open to add it;
 
-![](images_en/147.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/147.png)
 
 - You will return to the Qt Version configuration dialog, where you can change the Version name as needed;
 
@@ -529,7 +529,7 @@ Kits is a build suite for building and selecting development and build environme
 
 
 
-![](images_en/148.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/148.png)
 
 ### 4.5 Compiling and Running Applications
 #### 4.5.1 Compiling and Running a Command-Line Application
@@ -579,30 +579,30 @@ See the "Watchdog Test" section of the User Manual for the test procedure.
 #### 4.5.2 Compile and Run a QT Application
 Open Qt Creator in the development environment (open it from your own path), then click Qt Creator's File->Open File or Project. In the window that opens, select /work/OK3568-linux-source/app/forlinx/forlinx_qt/watchdog/watchdog.pro
 
-![](images_en/149.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/149.png)
 
 After opening the project, the interface appears as shown below (if the page does not switch automatically, select it as shown in the screenshot).
 
-![](images_en/150.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/150.png)
 
 Click Configure Project to use the build environment set up in the "Qt Creator Environment Configuration" section of this manual.
 
 After selection, the interface appears as shown below:
 
-![](images_en/151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/151.png)
 
 Click Build->Clean All to clean up. (If intermediate files remain, delete them manually.)
 
 Click Projects and uncheck Shadow build.
 
-![](images_en/152.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/152.png)
 
 Then click Build->Build All to compile.
 
-![](images_en/153.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/153.png)
 
 When the Build progress bar in the lower-right corner finishes, the build is complete. The newly generated binary fltest_qt_watchdog then appears in /app/forlinx/forlinx_qt/watchdog, as shown below:
 
-![](images_en/154.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/154.png)
 
 Copy the compiled executable to the development board via USB drive, ftp, or similar, then run the test.
