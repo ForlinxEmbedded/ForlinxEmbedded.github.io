@@ -67,7 +67,7 @@ index 67c3658be..053663a14 100644
 
 Depending on the upper-layer bootcontrol configuration, there are two boot modes: successful_boot and reset retry. The two modes are compared below:
 
-![](01_Boot_Modes_Comparison_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3576/OK3576_Buildroot_AB_Partitioning_6.1.118-EN/01_Boot_Modes_Comparison_EN.png)
 
 Here we configure it as reset retry mode in Buildroot.
 
@@ -163,7 +163,7 @@ Flash sdk/rockdev/update.img
 
 Read the device partition table to see the A/B images and system.
 
-![](02_Rockchip_Development_Tool_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3576/OK3576_Buildroot_AB_Partitioning_6.1.118-EN/02_Rockchip_Development_Tool_EN.png)
 
 Replacing the updateEngine Tool
 
@@ -242,7 +242,7 @@ A/B-slot: _a, successful: 1, tries-remain: 0
 strings /usr/bin/updateEngine | grep slotsuffix
 ```
 
-![img](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3576/OK3576_Buildroot_AB_Partitioning_6.1.118-EN/image.png)
 
 If the output does not contain **android_slotsuffix**, it is an old, incorrect binary.
 
