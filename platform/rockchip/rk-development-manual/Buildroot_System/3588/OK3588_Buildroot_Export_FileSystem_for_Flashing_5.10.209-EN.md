@@ -42,25 +42,25 @@ Prepare a microSD card of 64 GB or larger (depending on the image size) and form
 
 Copy ntfs-3g, update.sh and Image_pack_tools to the microSD card.
 
-![](images_ok3588_export_fs_en/001_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/001_EN.png)
 
 Unpack the entire update package.
 
-![](images_ok3588_export_fs_en/002_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/002_EN.png)
 
 Copy MiniLoaderAll.bin, package-file and parameter.txt from Output/Android to the Image_pack_tools folder.
 
-![](images_ok3588_export_fs_en/003_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/003_EN.png)
 
 Copy misc.img, oem.img, recovery.img and uboot.img from Output/Android/Image to the Image_pack_tools folder.
 
-![](images_ok3588_export_fs_en/004_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/004_EN.png)
 
 If you have modified the kernel image, copy your generated boot.img to Image_pack_tools. Otherwise, copy the unpacked boot.img to Image_pack_tools.
 
 After copying, the Image_pack_tools folder contains the following files:
 
-![](images_ok3588_export_fs_en/005_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/005_EN.png)
 
 ## 2. Enter the Recovery System on the Board and Copy the Exported Partition Images
 Insert the USB flash drive into the board and enter the recovery system.
@@ -77,7 +77,7 @@ root@ok3588-recovery:/# chmod 777 update.sh
 root@ok3588-recovery:/# ./update.sh
 ```
 
-![](images_ok3588_export_fs_en/006_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/006_EN.png)
 
 After the copy is complete, the blue LED on the core board changes from steady on to a heartbeat pattern.
 
@@ -126,17 +126,17 @@ forlinx@ubuntu:~/test$ cd Image_pack_tools
 forlinx@ubuntu:~/test/Image_pack_tools$ ls
 ```
 
-![](images_ok3588_export_fs_en/007_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/007_EN.png)
 
 ```bash
 forlinx@ubuntu:~/test/Image_pack_tools$ ./rk3588-mkupdate.sh   # Run rk3588-mkupdate.sh
 ```
 
-![](images_ok3588_export_fs_en/008_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/008_EN.png)
 
 Finally, update.img is generated in the Image_pack_tools/Image directory.
 
-![](images_ok3588_export_fs_en/009_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Buildroot_System/3588/OK3588_Buildroot_Export_FileSystem_for_Flashing_5.10.209-EN/009_EN.png)
 
 Flash the generated image to the development board and check whether it is consistent.
 
