@@ -64,6 +64,9 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
+   FCU2601_Software_User_Manual_Linux4.19-EN
+   FCU2601_User_Build_Guide_Linux4.19-EN
+
 
 
 
