@@ -58,11 +58,11 @@ There are two ways to use a VM environment in VMware: load an existing one or cr
 
 First, download the development environment from Forlinx; the package includes an MD5 checksum file. After downloading, verify the MD5 checksum of the archive (use an online MD5 tool or a local MD5 utility, whichever suits you) and compare it with the value in the checksum file. If they match, the download is intact; if not, the file may be corrupted, so download it again.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/085.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/085.png)
 
 Select all the archives, right-click, and extract them to the current folder or a directory of your choice:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/086.png)
 
 After extraction, you get the development environment OK3568-VM15.1.0-ubuntu18.04
 
@@ -110,11 +110,11 @@ Select "Installer disc image file" and click "Next":
 
 Enter your full name, username, and password, then click "Next":
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/094.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/094.png)
 
 Enter the virtual machine name and choose its location, then click "Next":
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/095.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/095.png)
 
 Set the number of processor cores, then click "Next":
 
@@ -146,11 +146,11 @@ Set the disk size to 200 GB, split the virtual disk into multiple files, then cl
 
 Keep the defaults and click "Next":
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/103.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/103.png)
 
 Click Finish:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/104.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/104.png)
 
 The virtual machine is now created. Click Power On This Virtual Machine to start installing the image, and wait for it to finish. The Ubuntu installation is complete. The next section explains how to install Ubuntu in the virtual machine; the procedure is similar on a physical machine. This section covers installing Ubuntu in a virtual machine.
 
@@ -163,7 +163,7 @@ Step 1: First, get the 64-bit Ubuntu18.04 image from the Ubuntu website:
 
 Right-click the created virtual machine and select Settings from the menu.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/FCU2601_User_Build_Guide_Linux4.19-EN/105.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_Linux4.19-EN/105.png)
 
 The "Virtual Machine Settings" dialog opens.
 
