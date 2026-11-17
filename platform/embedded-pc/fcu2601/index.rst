@@ -66,6 +66,7 @@ SOFTWARE
 
    FCU2601_Software_User_Manual_Linux4.19-EN
    FCU2601_User_Build_Guide_Linux4.19-EN
+   FCU2601_Software_User_Manual_FlDesktop20.04-EN
 
 
 
