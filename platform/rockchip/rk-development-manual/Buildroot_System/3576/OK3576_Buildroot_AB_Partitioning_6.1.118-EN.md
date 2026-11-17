@@ -8,23 +8,23 @@ The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms.
 The drivers and utilities used for the components are subject to the copyrights of the respective manufacturers. The license conditions of the respective manufacturer are to be adhered to. Related license expenses for the operating system and applications should be calculated/declared separately by the related party or its representatives.
 
-# **Overview**
+## **Overview**
 OK3576 6.1.118 Buildroot System Using A/B Partitions
 
-# Notes
+## Notes
 **Do not mix the updateEngine tool with the one used on 6.1.84 systems**
 
-# **Revision History**
+## **Revision History**
 | **Date** | **Document Version** | **Changes** |
 | --- | --- | --- |
 | 11/05/2026 | V1.0 | Initial release |
 
 
-# Reference Documents
+## Reference Documents
 sdk/docs/cn/Linux/Recovery/Rockchip_Developer_Guide_Linux_Upgrade_CN.pdf
 
-# Modifications
-## U-Boot Modifications
+## Modifications
+### U-Boot Modifications
 Patch changes
 
 ```plain
@@ -45,7 +45,7 @@ index 3176a61fa..6ed2d2e26 100644
 
 A/B partitioning requires U-Boot support. If you need A/B partitioning, contact your sales representative to request a suitable U-Boot image.
 
-## Buildroot Modifications
+### Buildroot Modifications
 ```shell
 diff --git a/buildroot/configs/rockchip_ok3576-c_defconfig b/buildroot/configs/rockchip_ok3576-c_defconfig
 index 67c3658be..053663a14 100644
@@ -71,8 +71,8 @@ Depending on the upper-layer bootcontrol configuration, there are two boot modes
 
 Here we configure it as reset retry mode in Buildroot.
 
-## Device Modifications
-### Modifying the defconfig File
+### Device Modifications
+#### Modifying the defconfig File
 ```shell
 diff --git a/device/rockchip/.chips/rk3576/OK3576_C_buildroot_defconfig b/device/rockchip/.chips/rk3576/OK3576_C_buildroot_defconfig
 index c47e958c4..e4e51623c 100644
@@ -91,7 +91,7 @@ index c47e958c4..e4e51623c 100644
 
 ```
 
-### Adding the update-ab.img Packaging Rule Configuration File
+#### Adding the update-ab.img Packaging Rule Configuration File
 ```shell
 diff --git a/device/rockchip/.chips/rk3576/package-file-ab b/device/rockchip/.chips/rk3576/package-file-ab
 new file mode 100644
@@ -113,7 +113,7 @@ index 000000000..f8787167e
 +userdata       userdata.img
 ```
 
-### Modifying the Partition Table Description File
+#### Modifying the Partition Table Description File
 ```shell
 
 diff --git a/device/rockchip/.chips/rk3576/parameter-ab.txt b/device/rockchip/.chips/rk3576/parameter-ab.txt
@@ -133,7 +133,7 @@ index efae0c58f..b33b68ea5 100644
 
 ```
 
-## Modifying the updateEngine Application
+#### Modifying the updateEngine Application
 ```shell
 diff --git a/external/recovery/update_engine/rktools.c b/external/recovery/update_engine/rktools.c
 index cd909df82..06bd82e30 100644
@@ -150,7 +150,7 @@ index cd909df82..06bd82e30 100644
 
 ```
 
-# Verification
+## Verification
 Rebuild the image.
 
 **Note: Delete OK3576-linux-source/prebuilts/forlinx/rk3576/buildroot/rootfs.ext4 and rebuild the file system so that the updateEngine tool is updated.**
@@ -195,7 +195,9 @@ Procedure:
 **Note: The updateEngine program sets this automatically after an OTA upgrade; no manual setting is needed.**
 
 ## Tips
-### reset retry Mode
+
+### Reset retry Mode
+
 Note that the default configuration is reset retry mode, so in the U-Boot log (the red line below), successful_boot is always 0. This indicates a healthy state, not a failure to mark the boot as successful.
 
 The actual "boot health counter" is **tries_remain**. Each normal boot of slot **A** decrements it by 1 and writes the value back;
@@ -229,6 +231,7 @@ FIT: no signed, no conf required
 ```
 
 ### Successful_boot Mode
+
 In this mode, after one successful boot, running updateEngine --misc=now permanently marks the boot as successful and disables rollback.
 
 The U-Boot log then shows:
@@ -246,7 +249,7 @@ strings /usr/bin/updateEngine | grep slotsuffix
 
 If the output does not contain **android_slotsuffix**, it is an old, incorrect binary.
 
-## Automatically Marking a Successful Boot at Startup
+### Automatically Marking a Successful Boot at Startup
 In reset retry mode, to automatically mark a successful boot when the system starts, configure a startup script.
 
 ```shell
