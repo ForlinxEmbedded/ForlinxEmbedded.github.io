@@ -303,9 +303,9 @@ forlinx@ubuntu:~$ sudo apt-get install -y expect time build-essential kmod pytho
 
 ```bash
 The network configuration tools and menuconfig also require the following libraries:
-forlinx@ubuntu:~$ sudo apt-get update      // Update repository information\n
+forlinx@ubuntu:~$ sudo apt-get update                           // Update repository information\n
 forlinx@ubuntu:~$ sudo apt-get install libncurses*             // Used to generate text-based user interfaces\n
-forlinx@ubuntu:~$ sudo apt-get install net-tools               // Network configuration tools
+forlinx@ubuntu:~$ sudo apt-get install net-tools              // Network configuration tools
 ```
 
 ### 3.3 Install the Cross-Compilation Toolchain
@@ -404,7 +404,7 @@ forlinx@ubuntu:~$ mkdir -p /home/forlinx/work						// Create the working directo
 
 Copy the source archive OK3588_Linux_fs.tar.bz2.0* from the user materials to the /home/forlinx/3588 directory in the virtual machine.
 
-forlinx@ubuntu:~$ cd /home/forlinx/work									// Switch to the working directory
+forlinx@ubuntu:~$ cd /home/forlinx/work								// Switch to the working directory
 
 forlinx@ubuntu:~/work$ cat OK3568-linux-source.tar.bz2.0* > OK3568-linux-source.tar.bz2
 
