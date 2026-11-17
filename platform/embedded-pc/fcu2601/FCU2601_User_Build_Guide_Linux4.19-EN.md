@@ -16,34 +16,34 @@ This chapter shows how to install VMware Workstation and configure a virtual mac
 ### 1.1 Downloading and Purchasing VMware Software
 [Visit the VMware website](https://www.vmware.com/cn.html) to download Workstation Pro and get a product key. VMware is paid software; purchase a license, or use the trial version.
 
-![Image](1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278513268_e1e3d73c_ea58_4db6_86b2_2bcb430bf195.png)
 
 Once the download finishes, double-click the setup file to start the installation.
 
 ### 1.2 Installing VMware Software
 Double-click the setup file to open the installation wizard, then click "Next".
 
-![Image](1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
 
 Select "I accept the terms in the License Agreement" and click "Next".
 
-![Image](1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
 
 Change the install location to the partition where you install software, click "Next", then uncheck the boxes and click "Next"
 
-![Image](1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
 
 Check the shortcut options and click "Next".
 
-![Image](1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
 
 Click Install and wait for the installation to finish.
 
-![Image](1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
 
 Click Finish to start the trial. For long-term use, purchase a license from the official site and enter the key.
 
-![Image](1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
 
 ​     
 
@@ -75,7 +75,7 @@ After extraction, you get the development environment OK3568-VM15.1.0-ubuntu18.0
 
 Open the installed VMware Workstation.
 
-![Image](1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 Select the directory containing the extracted 3568.vmx virtual machine file, then double-click the startup file
 
@@ -85,7 +85,7 @@ After loading, click Power On This Virtual Machine to boot into the system.
 
 The development environment logs in automatically at boot as "forlinx" with password "forlinx".
 
-![Image](1779074935696_ad89ca8a_9c1c_4538_8541_0b0c4bc19fbe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1779074935696_ad89ca8a_9c1c_4538_8541_0b0c4bc19fbe.png)
 
 ## 3. Setting Up a New Ubuntu Development Environment
 **Note: Beginners should use the provided VM environment instead of building their own; skip this section if you do not need to set up an environment.**
@@ -98,15 +98,15 @@ The Ubuntu version used here is 18.04.3 LTS, and all descriptions and developmen
 #### 3.1.1 Creating an Ubuntu Virtual Machine
 Step 1: Open VMware and click Create a New Virtual Machine. In the following screen, select "Custom (Advanced)" and click "Next":
 
-![Image](1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278531825_28237039_37c8_4a5f_8597_f64b71e7e312.png)
 
 Step 2: Select the compatibility for your VMware version (check the version under Help -> About VMware Workstation), then click "Next":
 
-![Image](1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278532008_920d71ea_3371_425c_9b27_a15b1789fdf9.png)
 
 Select "Installer disc image file" and click "Next":
 
-![Image](1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278532173_48b35578_2a3d_4aff_9888_513f9b66eaaf.png)
 
 Enter your full name, username, and password, then click "Next":
 
@@ -118,31 +118,31 @@ Enter the virtual machine name and choose its location, then click "Next":
 
 Set the number of processor cores, then click "Next":
 
-![Image](1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278532718_2cd2ea2a_0f97_46d5_ad8b_4f004e889a20.png)
 
 Allocate at least 8 GB of memory, then click "Next":
 
-![Image](1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278532900_dd3f7357_07c5_4dc4_9fd1_7d367c7a7111.png)
 
 Set the network type to the default NAT mode, then click "Next". Keep the defaults for the remaining steps until you reach the disk capacity step.
 
-![Image](1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278533112_8f49bb5a_64b5_47df_8798_044888bfa83b.png)
 
 Use the recommended I/O controller type, then click "Next":
 
-![Image](1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278533381_8dc68236_561d_4840_abb7_3512def5cecf.png)
 
 Use the recommended disk type, then click "Next":
 
-![Image](1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278533635_d54cda44_50e2_4643_b3d3_54dc41a1bfa6.png)
 
 Keep the default option, Create a new virtual disk, then click "Next":
 
-![Image](1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278533807_86b2d601_916f_4f7d_b7c0_4a672e97d659.png)
 
 Set the disk size to 200 GB, split the virtual disk into multiple files, then click "Next":
 
-![Image](1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278534036_c400a9dc_bdac_4dde_bd52_d4e721fb4ccd.png)
 
 Keep the defaults and click "Next":
 
@@ -167,15 +167,15 @@ Right-click the created virtual machine and select Settings from the menu.
 
 The "Virtual Machine Settings" dialog opens.
 
-![Image](1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d.png)
 
 Click CD/DVD (SATA), select Use ISO image file, browse to the Ubuntu image downloaded earlier, then click OK.
 
-![Image](1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278535409_a8fcb60d_f0a2_428c_8be7_0e124dcbc137.png)
 
 After setting the image, make sure the network is available, then power on the virtual machine to install the Ubuntu image.
 
-![Image](1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
 After the virtual machine starts, wait for the following installation screen:
 
@@ -280,12 +280,12 @@ Also, the default sleep timeout is 5min. To disable sleep, set Power->Blank scre
 #### 3.1.4.1 NAT Connection Mode
 By default, after the virtual machine is installed, its network connection mode is NAT as shown below, sharing one IP address with the host. You do not need to change it for tasks such as installing dependency packages or compiling code. In the virtual machine, when the VMware virtual network adapter is set to NAT mode, configure the Ubuntu network with a dynamic IP. In this mode, the virtual NAT device connects to the host network adapter to access the internet. This is the most common way for the virtual machine to access the external network.
 
-![Image](1740967890224_d642497d_9876_4d31_897d_02276b6462f3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1740967890224_d642497d_9876_4d31_897d_02276b6462f3.png)
 
 #### 3.1.4.2 Bridged Connection Mode
 When the VMware virtual network adapter is in bridged mode, the host NIC and the virtual machine NIC communicate through a virtual bridge. Set the Ubuntu network IP in the same subnet as the host, and set the DNS to match the host NIC if internet access is needed. When using servers such as TFTP or SFTP, set the virtual machine's network connection mode to bridged.
 
-![Image](1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/1719278541083_4d9634db_a591_45be_ad82_f0c7b1e12e3e.png)
 
 ### 3.2 Install Libraries Required to Build the Linux System
 **Note: If you use the development environment we provide, you can skip this section.**
