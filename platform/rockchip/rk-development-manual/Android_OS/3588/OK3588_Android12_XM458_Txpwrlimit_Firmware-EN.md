@@ -72,11 +72,11 @@ See the attached 2458_txpwrlimit_cfg_9098.conf.
 
 You can also set different power values for different regions.
 
-![Image](image-20261117142626424.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Android_OS/3588/OK3588_Android12_XM458_Txpwrlimit_Firmware-EN/image_20261117142626424.png)
 
 Here, 11b, 11g, 11n, and 11ax refer to different Wi-Fi protocols and standards. 11 Mbps, 54 Mbps, HT20 MCS7, and similar values belong to modulation and coding schemes (MCS), which are groups used in wireless communications to describe different modulation methods and data rates. MCS groups organize modulation methods and data rates together for configuration and management in wireless communication systems.
 
-![Image](image-20261117142648333.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/rk-development-manual/Android_OS/3588/OK3588_Android12_XM458_Txpwrlimit_Firmware-EN/image_20261117142648333.png)
 
 For 11b (11 Mbps), the index is 0 and the RF power is 18.
 
