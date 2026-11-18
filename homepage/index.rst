@@ -550,12 +550,7 @@ Embedded Computer
    </div>
 
 
-     <div class="btn-group">
-       <a href="https://www.forlinx.net/product/fcu3101-edge-ai-computing-box-194.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" rel="noopener noreferrer" class="btn btn-website">Specs</a>
-       <a href="embedded-pc/fcu3101/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-doc">Docs</a>
-     </div>
-   </div>
-   </div>
+ 
 ----
 
 
