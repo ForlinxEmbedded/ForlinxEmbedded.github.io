@@ -57,7 +57,7 @@ Figure 1 Front
 
 Figure 2 Back!
 
-[Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_FlDesktop20.04-EN/003.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_FlDesktop20.04-EN/003.png)
 
 Figure 3 Side 
 
@@ -274,7 +274,6 @@ This product has a rated DC 24 V input and supports a wide DC 9~36 V input range
 
 | Board Photo | Description |
 | --- | --- |
-
 | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_FlDesktop20.04-EN/006.png) |  |
 
 
@@ -609,8 +608,6 @@ The Reset button is shown below:
 #### 3.4.1 USB Host Storage Test
 The USB connector is shown below:
 
-.
-
 ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Software_User_Manual_FlDesktop20.04-EN/025.png)
 
 Use a USB flash drive to test the USB port. Insert it into a USB port on the FCU2601 Embedded Control Unit and check where it mounts:
@@ -666,7 +663,6 @@ The FCU2601 provides two RJ45 10/100/1000M auto-negotiating Ethernet ports and t
 | ETH1 | eth1 | Gigabit wired network |
 | ETH2 | eth2 | 100M wired network |
 | ETH3 | eth3 | 100M wired network |
-
 
 #### 3.5.2 Ethernet Test
 On the FCU2601, the default network rules are configured by editing files under /etc/systemd/network. Modify them as needed.
@@ -772,7 +768,6 @@ Bus 001 Device 003: ID 05e3:0747 Genesys Logic, Inc.
 Bus 001 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
-
 Use ifconfig to confirm that the Quectel EC200N-CN module creates the node usb0.
 
 **Quectel EC25-EUX Module**
