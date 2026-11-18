@@ -76,6 +76,10 @@ APPLICATION NOTES
    :caption: APPLICATION NOTES
    :maxdepth: 2
 
+   FCU3501_Firmware_Modification_FlDesktop22.04-EN
+   FCU3501_Samba_Network_Share_Configuration-EN
+   FCU3501_Hailo_Deployment_and_Applications-EN
+
 
 
 
