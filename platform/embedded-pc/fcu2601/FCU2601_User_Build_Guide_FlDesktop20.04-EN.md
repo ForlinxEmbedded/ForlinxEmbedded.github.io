@@ -170,7 +170,7 @@ Right-click the created VM name and select Settings from the menu.
 
 The Virtual Machine Settings dialog opens.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_FlDesktop20.04-EN/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d-1794982021635.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_User_Build_Guide_FlDesktop20.04-EN/1719278535121_beaef4c9_b729_4a86_8299_02e28a716d2d_1794982021635.png)
 
 Click CD/DVD (SATA), select Use ISO image file, browse to the Ubuntu image downloaded earlier, then click OK.
 
