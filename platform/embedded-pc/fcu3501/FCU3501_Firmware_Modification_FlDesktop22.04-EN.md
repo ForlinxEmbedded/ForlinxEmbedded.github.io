@@ -55,7 +55,7 @@ afptool  rk3588-mkupdate.sh  rkImageMaker  unpack.sh
 forlinx@ubuntu:~/pxy/fcu3501/Image_pack_tools$ ./unpack.sh 
 ```
 
-![](images_en/048.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Firmware_Modification_FlDesktop22.04-EN/048.png)
 
 ### Modify the File System
 In the terminal, enter the Image folder created during unpacking, use the following command to create a new directory, and then mount rootfs.img.
@@ -73,7 +73,7 @@ forlinx@ubuntu:~/pxy/fcu3501/Image_pack_tools$ cd target/
 forlinx@ubuntu:~/pxy/fcu3501/Image_pack_tools/target$ 
 ```
 
-![](images_en/049.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Firmware_Modification_FlDesktop22.04-EN/049.png)
 
 Modifying the target directory directly modifies the final file system.
 
@@ -109,6 +109,6 @@ forlinx@ubuntu:~/pxy/fcu3501/Image_pack_tools$ sudo umount target
 $ ./rk3588-mkupdate.sh 
 ```
 
-![](images_en/050.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Firmware_Modification_FlDesktop22.04-EN/050.png)
 
-![](images_en/051.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Firmware_Modification_FlDesktop22.04-EN/051.png)

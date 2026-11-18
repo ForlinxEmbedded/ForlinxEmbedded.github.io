@@ -260,7 +260,7 @@ Expected: ports 445 and 139 are listening on `127.0.0.1` and `172.20.2.184` (**n
 ## 4.3 Windows-Side Verification
 Press Win + R and access \172.20.2.184\share
 
-![](images_en/052.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Samba_Network_Share_Configuration-EN/052.png)
 
 **Test result: directory listing, writing, reading back, creating directories, and deleting directories all passed, with no password prompt throughout.**
 

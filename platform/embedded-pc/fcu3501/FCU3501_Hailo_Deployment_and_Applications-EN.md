@@ -21,7 +21,7 @@ Inference model: yolov8s_pose_mz.hef
 
 This corresponds to the pyhaiort content.
 
-![](images_en/030.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/030.png)
 
 The main APIs used are as follows:
 
@@ -61,7 +61,7 @@ raw_detections = infer_pipeline.infer(input_data)
 
 Overall Inference Steps
 
-![](images_en/031.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/031.png)
 
 Inference stages
 
@@ -82,7 +82,7 @@ python  inference.py  -n  yolov8.hef    -i  zidan.jpg
 
 The output is as follows:
 
-![](images_en/032.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/032.png)
 
 ## Yolov8 Real-Time Camera Detection
 Open the folder User Materials->hailodemo ->python ->object_detection .
@@ -91,14 +91,14 @@ Transfer yolov8m.hef and object_detection_camera.py to the 3501 board, then run 
 
 python  object_detection_camera.py  -n  yolov8.hef
 
-![](images_en/033.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/033.png)
 
 ## Image Semantic Segmentation - fc8-restnet Road
 Open the folder User Materials->hailodemo ->python ->semantic_segmentation .
 
 Check whether the folder contains the content in the red box:
 
-![](images_en/034.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/034.png)
 
 Transfer that content to the 3501 board.
 
@@ -110,7 +110,7 @@ Then run the command:
 
 python3 sementic_seg_fcn8_city_mp4.py fcn8_resnet_v1_18.hef  -i  full_mov_slow.mp4
 
-![](images_en/035.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/035.png)
 
 - **Image Semantic Segmentation - unet Cat Segmentation**
 
@@ -120,7 +120,7 @@ Command to segment the cat using UNet:
 
 python3 sementic_seg_unet_cat.py -hef  unet_mobilenet_v2.hef
 
-![](images_en/036.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/036.png)
 
 **Instance Segmentation with yolov5seg and yolov8seg**
 
@@ -128,7 +128,7 @@ Open the folder User Materials->hailodemo ->python ->instance_segmentation.
 
 The folder contains the following:
 
-![](images_en/037.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/037.png)
 
 If the folder does not contain yolov5m_seg.hef and yolov8s_seg.hef, you can run ./get_sources.sh to download the resources mentioned in the file, deploy them to the 3501 board, and perform image recognition. Use yolov5 to segment the image.
 
@@ -140,15 +140,15 @@ The parameters above specify the yolov5m_seg.hef model and the input image dog_b
 
 The architecture is v5, and the output path is the current directory ".".
 
-![](images_en/038.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/038.png)
 
 Original Image
 
-![](images_en/039.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/039.jpg)
 
 yolov5 Segmentation Output
 
-![](images_en/040.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/040.png)
 
 yolov8s seg Output
 
@@ -164,7 +164,7 @@ The default model is yolov8s.
 
 The real-time recognition image is as follows:
 
-![](images_en/041.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/041.png)
 
 **FastSam Segment Anything**
 
@@ -180,13 +180,13 @@ The USB camera is     cap = cv2.VideoCapture('/dev/video1')
 
 The real-time recognition image is as follows:
 
-![](images_en/042.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/042.png)
 
 **Pose Estimation**
 
 Open the folder User Materials->hailodemo ->python ->pose_estimation.
 
-![](images_en/043.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/043.png)
 
 Use the hailortcli tool to test the yolov8s_pose_mz.hef model:
 
@@ -237,7 +237,7 @@ except:
                     input_data = {input_vstream_info.name: np.expand_dims(processed_image, axis=0).astype(np.float32)}
 ```
 
-![](images_en/044.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/044.png)
 
 If using a USB camera, confirm the device number.
 
@@ -245,7 +245,7 @@ Run the program python3  yolov8_pose_inference_camera.py  yolov8s_pose_mz.hef
 
 The following parameter specifies using yolov8s_pose_mz.hef as the pose detection model.
 
-![](images_en/045.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/045.png)
 
 Inference speed for a single frame, single thread, and single batch is 30 ms. In a continuous 1-hour test, no frames were dropped and there was no lag.
 
@@ -261,6 +261,6 @@ python3   mono_inference_fastdepth.py   fast_depth.hef    -i  IMG_0186.jpg
 
 The image is:
 
-![](images_en/046.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/046.png)
 
-![](images_en/047.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Hailo_Deployment_and_Applications-EN/047.png)
