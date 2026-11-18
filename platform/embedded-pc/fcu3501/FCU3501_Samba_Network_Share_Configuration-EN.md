@@ -57,7 +57,7 @@ ping -c 2 archive.ubuntu.com  # Confirm internet access (for package installatio
 **The shared directory must be placed under **`/userdata`**.** If you take the easy route and put it in `/home` or `/opt` (both on the root partition), a colleague copying a few videos into it can fill up the root partition. At best, services malfunction; at worst, the system fails to boot. This is one of the common triggers of "crash-type" issues.
 >
 
-# 1. Installing the Samba Server
+## 1. Installing the Samba Server
 The FCU3501 ships with only `samba-libs`; you need to install the server:
 
 ```bash
@@ -87,7 +87,7 @@ which smbd nmbd smbpasswd testparm
 smbd --version              # Version 4.15.13-Ubuntu
 ```
 
-# 2. Creating the Shared Directory
+## 2. Creating the Shared Directory
 ```bash
 sudo mkdir -p /userdata/share
 sudo chown -R forlinx:forlinx /userdata/share
@@ -97,8 +97,8 @@ sudo chmod -R 0777 /userdata/share
 + **Set the owner to **`forlinx`**: This matches the `force user = forlinx` setting in the configuration below, ensuring that files written over the network are also owned by forlinx locally. After SSH login you can read and write them directly, avoiding permission conflicts where "the network can modify them but the local system cannot."
 + **Permissions 0777**: Required for the open anonymous solution. If you use the authentication solution in Chapter 6, you can tighten this to 0775 or 0770.
 
-# 3. Writing the Samba Configuration
-## 3.1 Backing Up the Original Configuration
+## 3. Writing the Samba Configuration
+### 3.1 Backing Up the Original Configuration
 ```bash
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 ```
@@ -107,7 +107,7 @@ sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.orig
 `[ -f /etc/samba/smb.conf.orig ] || sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.orig`
 >
 
-## 3.2 Writing the Configuration
+### 3.2 Writing the Configuration
 ```bash
 sudo tee /etc/samba/smb.conf > /dev/null <<'EOF'
 #======================= Global Settings =======================
@@ -156,7 +156,7 @@ sudo tee /etc/samba/smb.conf > /dev/null <<'EOF'
 EOF
 ```
 
-## 3.3 Key Configuration Options Explained
+### 3.3 Key Configuration Options Explained
 Field FAEs should focus on this section so they know which line to change when requirements change.
 
 **Required combination for anonymous write access** (all are mandatory; this is the most common source of misconfiguration):
@@ -202,7 +202,7 @@ Field FAEs should focus on this section so they know which line to change when r
 | `load printers = no` and the other three lines | FCU3501 has no printer attached; disabling the printing service reduces unnecessary overhead and exposure |
 
 
-## 3.4 Validating the Syntax and Starting the Service
+### 3.4 Validating the Syntax and Starting the Service
 ```bash
 sudo testparm -s /etc/samba/smb.conf     # Syntax self-check; this must pass first
 sudo systemctl enable smbd nmbd          # Enable start at boot
@@ -220,8 +220,8 @@ Server role: ROLE_STANDALONE
 > Here, `Weak crypto is allowed` appears because SMB1/NTLM compatibility is enabled. It is an expected message, not an error.
 >
 
-# 4. Verification
-## 4.1 Local Self-Test on the Device (Rule Out Server-Side Issues First)
+## 4. Verification
+### 4.1 Local Self-Test on the Device (Rule Out Server-Side Issues First)
 ```bash
 # List shares
 smbclient -L localhost -N
@@ -249,7 +249,7 @@ The free block count on the last line works out to about **84 G**, consistent wi
 > `SMB1 disabled -- no workgroup available` is a notice from smbclient itself and does not affect use of the share.
 >
 
-## 4.2 Checking Listening Ports and the Firewall
+### 4.2 Checking Listening Ports and the Firewall
 ```bash
 ss -lntp | grep -E ":445|:139"
 sudo iptables -L INPUT -n | head -3
@@ -257,15 +257,15 @@ sudo iptables -L INPUT -n | head -3
 
 Expected: ports 445 and 139 are listening on `127.0.0.1` and `172.20.2.184` (**no docker bridge addresses such as 172.17.x / 172.18.x should appear** — if they do, `bind interfaces only` is not in effect); the `iptables` INPUT chain policy is `ACCEPT`, and the factory system does not have `ufw` installed, so no extra allow rules are needed.
 
-## 4.3 Windows-Side Verification
+### 4.3 Windows-Side Verification
 Press Win + R and access \172.20.2.184\share
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3501/FCU3501_Samba_Network_Share_Configuration-EN/052.png)
 
 **Test result: directory listing, writing, reading back, creating directories, and deleting directories all passed, with no password prompt throughout.**
 
-# 5. Client Access Methods
-## 5.1 Windows
+## 5. Client Access Methods
+### 5.1 Windows
 **Method 1 (temporary access):** Press `Win + R` or type into the File Explorer address bar:
 
 ```plain
@@ -280,7 +280,7 @@ net use Z: \\172.20.2.184\share /persistent:yes
 
 To remove the mapping: `net use Z: /delete`
 
-## 5.2 Linux
+### 5.2 Linux
 ```bash
 sudo apt install cifs-utils
 sudo mkdir -p /mnt/fcu3501
@@ -296,18 +296,18 @@ To mount automatically at boot, add to `/etc/fstab`:
 > The `_netdev,nofail` options **must be included**: the former makes the system wait until the network is ready before mounting, and the latter ensures that an unreachable share will not stall the boot process — otherwise the client may fail to boot when the device is offline.
 >
 
-## 5.3 macOS
+### 5.3 macOS
 Finder → `Command + K` → enter `smb://172.20.2.184/share` → select "Guest" as the connection identity.
 
-## 5.4 Android / Industrial HMI
+### 5.4 Android / Industrial HMI
 Use a file manager that supports SMB (such as ES File Explorer or Solid Explorer), add an SMB/LAN server with address `172.20.2.184`, and enable anonymous/guest login.
 
-# 6. Security Hardening (Optional)
+## 6. Security Hardening (Optional)
 The main scheme in this document is **completely anonymous and open**, meaning **any device on the same subnet (including temporarily connected guest PCs and phones) can read, write, and delete any file in the share, with no audit trail of operations at all**.
 
 **This scheme is only suitable for a completely closed production line network / lab test network.** If the shared content involves customer data, algorithm models, or production data, or if there are uncontrolled endpoints on the network, apply one of the approaches below.
 
-## 6.1 Switching to Username/Password Authentication (Recommended)
+### 6.1 Switching to Username/Password Authentication (Recommended)
 **Step 1**, create a Samba account (Samba has its own password database, separate from Linux system passwords):
 
 ```bash
@@ -359,7 +359,7 @@ sudo chmod -R 0770 /userdata/share
 
 On first access, Windows will pop up an account/password dialog; after entering the credentials, you can check "Remember my credentials".
 
-## 6.2 Anonymous Read-Only + Authenticated Write
+### 6.2 Anonymous Read-Only + Authenticated Write
 This balances convenience with protection against accidental deletion: anyone can view and download, while only authenticated users can write and delete.
 
 ```properties
@@ -376,7 +376,7 @@ This balances convenience with protection against accidental deletion: anyone ca
 
 As before, you first need to run `sudo smbpasswd -a forlinx` to create the Samba password.
 
-## 6.3 Other Recommendations
+### 6.3 Other Recommendations
 + **Restrict source subnets** (configured in `[global]` or `[share]`):
 
 ```properties
@@ -387,8 +387,8 @@ hosts deny = ALL
 + **Disable SMB1**: if all on-site clients are Windows 10/11 or mainstream Linux, change `server min protocol` to `SMB2` and remove `ntlm auth = yes`.
 + **Regular cleanup**: a shared directory easily becomes a dumping ground. It is recommended to set up `cron` to periodically remove expired files, or add an alert for `/userdata` usage in your monitoring system.
 
-# 7. Troubleshooting Common Problems
-## 7.1 General Troubleshooting Principle: Distinguish Client-Side from Server-Side Issues First
+## 7. Troubleshooting Common Problems
+### 7.1 General Troubleshooting Principle: Distinguish Client-Side from Server-Side Issues First
 **Key criterion: check whether the server received the request.**
 
 ```bash
@@ -408,7 +408,7 @@ sudo tail -50 /var/log/samba/log.<client IP>
 `sudo sed -i '/^   log level = 3$/d' /etc/samba/smb.conf && sudo systemctl restart smbd nmbd`
 >
 
-## 7.2 Windows Reports "System Error 67, Network Name Cannot Be Found"
+### 7.2 Windows Reports "System Error 67, Network Name Cannot Be Found"
 First check whether the network layer is reachable:
 
 ```powershell
@@ -424,7 +424,7 @@ Test-NetConnection -ComputerName 172.20.2.184 -Port 445
 The correct approach is to write the test command into a `.ps1` script file and run it with `powershell -File xxx.ps1`, completely avoiding shell escaping.
 >
 
-## 7.3 Windows Reports "You Cannot Access This Shared Folder Because Your Organization's Security Policies Block Unauthenticated Guest Access"
+### 7.3 Windows Reports "You Cannot Access This Shared Folder Because Your Organization's Security Policies Block Unauthenticated Guest Access"
 Windows 10/11 may disable insecure guest logons by default. Check:
 
 ```powershell
@@ -447,7 +447,7 @@ AllowInsecureGuestAuth = 1  (DWORD)
 > **Note**: this must be set individually on **every** Windows client that accesses the share. If there are many on-site clients, or if domain policies enforce unified control (changes will be reverted by the policy), **it is simpler to just switch to the username/password authentication scheme in Chapter 6**.
 >
 
-## 7.4 Share Opens but Cannot Be Written To / Prompts "Permission Required"
+### 7.4 Share Opens but Cannot Be Written To / Prompts "Permission Required"
 Check in this order:
 
 ```bash
@@ -460,7 +460,7 @@ mount | grep userdata             # check whether it is mounted read-only (ro)
 > **Known issue in the FCU series**: after an abnormal power loss, the `/userdata` partition may fail to mount automatically because fsck fails, which shows up as the shared directory "suddenly losing data" or becoming empty. If this happens, first run `mount | grep userdata` to confirm whether the partition is actually mounted.
 >
 
-## 7.5 Share Not Visible in Network Neighborhood (but Accessible via IP)
+### 7.5 Share Not Visible in Network Neighborhood (but Accessible via IP)
 Windows network discovery relies on NetBIOS/WSD broadcasts; it will not show up across subnets or when network discovery is disabled, which is normal.
 
 ```bash
@@ -469,7 +469,7 @@ sudo systemctl status nmbd        # Verify nmbd is running (handles NetBIOS broa
 
 **Accessing directly via the IP path** (`\\172.20.2.184\share`) and mapping it as a network drive is far more stable than relying on network discovery.
 
-## 7.6 Share Fails After Reboot
+### 7.6 Share Fails After Reboot
 ```bash
 sudo systemctl is-enabled smbd nmbd   # Should show enabled enabled
 sudo systemctl status smbd            # Check the failure reason
@@ -478,7 +478,7 @@ journalctl -u smbd -b --no-pager | tail -30
 
 If the device obtains its IP via DHCP and the address changes, `interfaces = lo eth0` still works (it binds by interface name rather than IP), but **the client-side IP path will fail**; configure a static IP for the device.
 
-# 8. Restoration and Uninstallation
+## 8. Restoration and Uninstallation
 **Restore the Factory Samba Configuration**:
 
 ```bash
