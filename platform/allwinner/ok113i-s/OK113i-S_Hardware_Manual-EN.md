@@ -1,4 +1,4 @@
-# OK113i-S_User's Hardware Manual_V1.0
+# User's Hardware Manual_V1.0
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -500,7 +500,7 @@ As shown above, CPU_RST is the system reset button; pressing it resets and reboo
 
 One onboard GPIO button is provided, whose function can be user-defined.
 
-Note: The CPU_RST pin has capacitors and a TVS diode on the SoM; do not add other circuitry on the carrier board, as it may affect the SoM's startup timing.SoM
+**Note: The CPU_RST pin has capacitors and a TVS diode on the SoM; do not add other circuitry on the carrier board, as it may affect the SoM's startup timing.**
 
 #### 3.5.4 Debug Serial Port
 ![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/013_EN.png)
