@@ -33,8 +33,6 @@ T113-i is an advanced application processor designed for multimedia decoding pla
 **Key Features:**
 
 - Supports decoding in all formats, including H.265, H.264, MPEG-1/2/4, and JPEG. A standalone encoder can encode in JPEG or MJPEG.
-
-
 + The T113-i integrates H.265/H.264 4K decoding and SmartColor2.0 post-processing, delivering an excellent video entertainment experience.
 + Integrated ADCs/DACs and I2S/PCM/DMIC/OWA audio interfaces work seamlessly with the CPU, accelerating multimedia algorithms and improving user experience.
 + The T113-i supports RGB/LVDS/MIPI DSI/CVBS OUT display output interfaces to meet various display requirements.
@@ -79,7 +77,7 @@ Structural dimensions: 44mm×35mm. For more detailed dimensions, see the dxf str
 
 Fabrication process: 1.2mm thickness, 8-layer immersion gold PCB.
 
-The SoM uses castellated holes, bringing out 146 pins with a 1mm pin center spacing.
+Stamp hole connection, bringing out 146 pins with a 1mm pin center spacing.
 
 Single pin size: 1.4mm x 0.6mm
 
@@ -451,7 +449,7 @@ A   B  C-D+IK:M
 | 4G | 1 | miniPCIE socket, 4G module with USB2.0 protocol, onboard SMA antenna connector;<br/>SIM card uses a nanoSIM card slot |
 | WiFi | 1 | RTL8723DU onboard by default; onboard SMA antenna connector with a shared single antenna;<br/>IEEE 802.11 a/b/g/n WIFI, up to 150Mbps transmit/receive rate;<br/>Bluetooth v2.1+EDR/4.2, up to 3Mbps |
 | Bluetooth | 1 | |
-| Audio | / | 1 4-pole headphone jack, CTIA standard, stereo, with microphone;<br/>1 onboard electret microphone;<br/>1 LINEIN jack;<br/>1 FMIN jack;<br/>2 stereo speaker interfaces, supporting 4Ω up to 1.9W |
+| Audio | / | 1 x 4-pole headphone jack, CTIA standard, stereo, with microphone;<br/>1 x onboard electret microphone;<br/>1 x LINEIN jack;<br/>1 x FMIN jack;<br/>2 x stereo speaker interfaces, supporting 4Ω up to 1.9W |
 | GPADC | 2 | Routed to a pin header, can be connected to an onboard rheostat for testing |
 | KEYADC | 5 | ADC dedicated to keys; using voltage-divider sampling, 1 ADC is used to design 5 keys |
 | RTC | 1 | Onboard independent RTC chip; when the Carrier board is powered off, time can be kept by a coin cell battery. |
