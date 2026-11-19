@@ -33,6 +33,6 @@ dpkg-reconfigure locales
 
 After installing locales, run this command, scroll to the bottom of the list, press Space to select zh_CN.UTF-8 UTF-8, and press Enter to start the automatic installation.
 
-![](images_en/029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_SSH_Chinese_Encoding_FlDesktop20.04-EN/029.png)
 
 After installation, simply reboot and the encoding will be applied automatically. You can then use SSH to access the system remotely and view files with Chinese names normally.

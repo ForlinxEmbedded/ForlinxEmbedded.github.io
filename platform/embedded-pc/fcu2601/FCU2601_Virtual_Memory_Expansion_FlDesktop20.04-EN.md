@@ -64,11 +64,11 @@ root@FCU2601:~# free -h
 
 Virtual memory not expanded:
 
-![](images_en/017.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Virtual_Memory_Expansion_FlDesktop20.04-EN/017.png)
 
 Virtual memory expanded:
 
-![](images_en/018.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Virtual_Memory_Expansion_FlDesktop20.04-EN/018.png)
 
 ## 4. Common Issues
 On the first run, the script creates the swap partition file. Because the file is large, the command line may appear unable to accept input.

@@ -32,7 +32,7 @@ It also provides a logging feature, so if the 4G network is interrupted, you can
 ### 2.1 Running the 4G Daemon
 First, create the log directory; the program will report an error and exit if the directory does not exist.
 
-![](images_en/019.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/019.png)
 
 Use the following command to create the directory:
 
@@ -48,14 +48,14 @@ root@FCU2601:~# fl_4g &
 
 If dial-up succeeds, the printed information is shown below:
 
-![](images_en/020.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/020.png)
 
 ### 2.2 Checking the 4G Network Connectivity 
 By default, after starting the 4G daemon, it attempts to ping 8.8.8.8 every 50 seconds. If 5 consecutive attempts fail, the 4G network is considered interrupted, and the module is reset and redialed.
 
 The figure below shows the normal ping output to the external network after 4G dial-up completes:
 
-![](images_en/021.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/021.png)
 
 This feature can be modified in the following configuration file:
 
@@ -65,7 +65,7 @@ root@FCU2601:~# vi /etc/wiet/daemon_4g.conf
 
 The setting to modify is in the following field:
 
-![](images_en/022.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/022.png)
 
 To disable this feature, set ping_func = 0.
 
@@ -84,7 +84,7 @@ root@FCU2601:~# vi /etc/wiet/daemon_4g.conf
 
 The log storage location is set in the following field and can be changed to another path:
 
-![](images_en/023.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/023.png)
 
 Using this directory as an example, use the following command to view fl_4g's log information:
 
@@ -94,7 +94,7 @@ root@FCU2601:~# cat /home/root/daemon_4g/wireless_log.txt
 
 Common issues, such as failure to detect the SIM card, are recorded in this log:
 
-![](images_en/024.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/024.png)
 
 ## 3. Common Issues
 - fl_4g's log information is not written to the log file wireless_log.txt in real time, so you may see a "SIM card not present" message in the printed output that does not appear in the log file;
@@ -152,7 +152,7 @@ AT+QCFG="nwscanmode",0  // Set it to 0 to allow 4G/3G/2G switching and avoid no 
 - Both fl_4g and quectel-CM support only QMI mode. If the following error occurs, switch the module's working mode:
 
 
-![](images_en/025.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN/025.png)
 
 The AT command to switch modes:
 

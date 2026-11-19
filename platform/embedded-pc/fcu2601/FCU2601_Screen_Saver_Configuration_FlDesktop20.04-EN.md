@@ -25,30 +25,30 @@ The screen saver itself uses significant CPU and memory. If you do not want to u
 ## 2. Modification Method
 First, open the screen saver settings by clicking the Start button in the lower-left corner -> Preferences -> Screensaver
 
-![](images_en/001.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN/001.jpg)
 
 ### 2.1 Disabling the Screen Saver
 After a moment, the screen saver settings panel opens. Click the position shown below and select a mode:
 
-![](images_en/002.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN/002.png)
 
 Select "Disable Screen Saver" shown below, then close the window. The screen saver will no longer be enabled:
 
-![](images_en/003.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN/003.png)
 
 ### 2.2 Using a Blank Black Screen Saver Only
 If you need a screen saver but do not want it to consume resources, select "Blank Screen Only" shown below in the settings panel to use a solid black screen:
 
-![](images_en/004.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN/004.png)
 
 ### 2.3 Changing the Screen Saver Start Time and Cycle Time
 This setting specifies how long after no input the screen saver starts:
 
-![](images_en/005.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN/005.png)
 
 This setting specifies how long after the screen saver is enabled before it switches programs:
 
-![](images_en/006.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN/006.png)
 
 ### 2.4 Applying the Change in the Image
 The screen saver configuration file is stored locally in the file system as text:

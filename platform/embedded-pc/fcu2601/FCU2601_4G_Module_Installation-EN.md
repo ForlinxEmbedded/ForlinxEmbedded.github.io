@@ -12,7 +12,7 @@ This document describes how to install the 4G module in the FCU2601. Power off t
 
 1. Turn the product upside down on a platform, remove the screws, and take off the cover, as shown in Figure 1.
 
-![](images_en/011.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Module_Installation-EN/011.png)
 
                           Figure 1
 
@@ -20,13 +20,13 @@ This document describes how to install the 4G module in the FCU2601. Power off t
 
 First remove the two screws on the "4G"-marked side, then plug the 4G module into the connector and secure it to the board with the removed screws, as shown in Figures 2 and 3. 
 
-![](images_en/012.png)     ![](images_en/013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Module_Installation-EN/012.png)     ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Module_Installation-EN/013.png)
 
                          Figure 2                                   Figure 3
 
 1. Plug the reserved antenna cable's IPEX connector into the 4G module's IPEX socket and fasten it securely, as shown in Figures 4 and 5.
 
-![](images_en/014.png)![](images_en/015.png)![](images_en/016.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Module_Installation-EN/014.png)![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Module_Installation-EN/015.png)![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_4G_Module_Installation-EN/016.png)
 
                 Figure 4                             Figure 5                            Figure 6
 

@@ -86,7 +86,7 @@ Use the following command to create the necessary symbolic links so the service 
 root@FCU2601:~# systemctl enable start
 ```
 
-![](images_en/007.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Startup_Script_FlDesktop20.04-EN/007.png)
 
 Save and reboot. The start.local script will then run at system startup.
 
@@ -104,7 +104,7 @@ root@FCU2601:~# systemctl disable start
 ## 3. Verification Method
 The example startup script above already saves the test text to the /usr/local/text.log file. You can use the cat command to check whether the corresponding information exists in that file.
 
-![](images_en/008.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Startup_Script_FlDesktop20.04-EN/008.png)
 
 As shown in the figure, if it exists, the startup script has been created successfully.
 

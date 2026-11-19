@@ -12,18 +12,18 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 1. Remove the Protective Baffle
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1789627478302-48c95d77-0f83-4740-814d-0771b9a4752c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_TF_Card_and_SIM_Card_Installation_Guide_EN/1789627478302_48c95d77_0f83_4740_814d_0771b9a4752c.png)
 
 A PH2 screwdriver (6.5 mm diameter) is recommended for removing the baffle. After removing the baffle, two slots are visible — the upper slot is for the TF card, and the lower slot is for the SIM card.
 
 2. Install the TF Card
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1789627845467-c5898e6d-dd84-4391-9c40-d94701e05199.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_TF_Card_and_SIM_Card_Installation_Guide_EN/1789627845467_c5898e6d_dd84_4391_9c40_d94701e05199.png)
 
 Install the TF card in the correct orientation as shown in the figure above.
 
 3. Install the SIM Card
 
-![](https://cdn.nlark.com/yuque/0/2026/png/45205328/1789627869050-36b477cf-eb87-480f-837b-1fe752597f0c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_TF_Card_and_SIM_Card_Installation_Guide_EN/1789627869050_36b477cf_eb87_480f_837b_1fe752597f0c.png)
 
 Install the SIM card in the correct orientation as shown in the figure above.

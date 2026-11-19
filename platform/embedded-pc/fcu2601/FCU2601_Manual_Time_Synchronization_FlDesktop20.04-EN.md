@@ -30,7 +30,7 @@ This service is the automatic time sync service enabled by default. Whenever the
 
 The command above removes the service's configuration symlink and disables the service from starting at boot.
 
-![](images_en/009.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Manual_Time_Synchronization_FlDesktop20.04-EN/009.png)
 
 ### 2.2 Manual Time Sync
 Run the following commands in order to install the time sync program:
@@ -55,7 +55,7 @@ ntpd -gq
 ```
 
 ### 2.3 Saving the Time to RTC
-![](images_en/010.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu2601/FCU2601_Manual_Time_Synchronization_FlDesktop20.04-EN/010.png)
 
 After performing a manual sync with ntp, only the system time is corrected. Decide for yourself whether to save the time to the RTC chip.
 
