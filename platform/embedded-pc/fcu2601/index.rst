@@ -4,36 +4,36 @@ FCU2601 Embedded Computer Manual
 
 .. raw:: html
 
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; margin-top: 20px; margin-bottom: 40px; background-color: var(--theme-blockquote-bg); padding: 25px; border-radius: 8px; border-left: 4px solid #007acc;">
+    <div style=display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; margin-top: 20px; margin-bottom: 40px; background-color: var(--theme-blockquote-bg); padding: 25px; border-radius: 8px; border-left: 4px solid #007acc;>
         
-        <div style="flex: 1 1 350px;">
-            <p style="font-size: 1.1em; margin-bottom: 20px; margin-top: 0; line-height: 1.6;">
+        <div style=flex: 1 1 350px;>
+            <p style=font-size: 1.1em; margin-bottom: 20px; margin-top: 0; line-height: 1.6;>
                 Welcome to the official technical documentation for the <strong>Forlinx FCU2601 Embedded Computer</strong>.
                 Powered by the Rockchip Rockchip RK3568J SoC.
             </p>
             
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div style=display: flex; gap: 12px; flex-wrap: wrap;>
 
-                <a href="https://www.forlinx.net/product/fcu2601-embedded-computer-146.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs" target="_blank" class="btn btn-info" style="text-decoration: none; padding: 6px 14px; font-size: 14px;">
-                    <i class="fa-solid fa-server"></i> PC Details
+                <a href=https://www.forlinx.net/product/fcu2601-embedded-computer-146.html?utm_source=forlinxdocs&utm_medium=organic&utm_campaign=docs target=_blank class=btn btn-info style=text-decoration: none; padding: 6px 14px; font-size: 14px;>
+                    <i class=fa-solid fa-server></i> PC Details
                 </a>
 
                 
-                <a href="https://forlinxembedded.github.io/" class="btn btn-neutral" style="text-decoration: none; padding: 6px 14px; font-size: 14px;">
-                    <i class="fa-solid fa-house"></i> Home
+                <a href=https://forlinxembedded.github.io/ class=btn btn-neutral style=text-decoration: none; padding: 6px 14px; font-size: 14px;>
+                    <i class=fa-solid fa-house></i> Home
                 </a>
                 
-                <a href="https://www.forlinx.net/product/fcu2601-embedded-computer-146.html#product-detail4" target="_blank" class="btn" style="text-decoration: none; padding: 6px 14px; font-size: 14px; background-color: #28a745; color: white; border-color: #28a745;">
-                    <i class="fa-solid fa-envelope-open-text"></i> Request Quote
+                <a href=https://www.forlinx.net/product/fcu2601-embedded-computer-146.html#product-detail4 target=_blank class=btn style=text-decoration: none; padding: 6px 14px; font-size: 14px; background-color: #28a745; color: white; border-color: #28a745;>
+                    <i class=fa-solid fa-envelope-open-text></i> Request Quote
                 </a>
             </div>
         </div>
 
-        <div style="flex: 0 1 380px; display: flex; gap: 20px; justify-content: center; align-items: flex-end;">
+        <div style=flex: 0 1 380px; display: flex; gap: 20px; justify-content: center; align-items: flex-end;>
             
-            <div style="text-align: center;">
-                <img src="https://www.forlinx.net/image/embedded-pc/FCU2601-front.webp" alt="FCU3501 Embedded Computer" style="max-width: 140px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
-                <div style="font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;">FCU3501 Edge AI Computing Box</div>
+            <div style=text-align: center;>
+                <img src=https://www.forlinx.net/image/embedded-pc/FCU2601-front.webp alt=FCU3501 Embedded Computer style=max-width: 140px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));>
+                <div style=font-size: 13px; color: var(--theme-fg); margin-top: 10px; font-weight: 600; opacity: 0.8;>FCU3501 Edge AI Computing Box</div>
             </div>
             
         </div>
@@ -78,16 +78,16 @@ APPLICATION NOTES
    :caption: APPLICATION NOTES
    :maxdepth: 2
 
-   FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN.md"
-   FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN.md"
-   FCU2601_Virtual_Memory_Expansion_FlDesktop20.04-EN.md"
-   FCU2601_Startup_Script_FlDesktop20.04-EN.md"
-   FCU2601_Manual_Time_Synchronization_FlDesktop20.04-EN.md"
-   FCU2601_Reboot_Logic_After_Power_Loss_FlDesktop20.04-EN.md"
-   FCU2601_SSH_Chinese_Encoding_FlDesktop20.04-EN.md"
-   FCU2601_microSD_AutoMount_Disable_FlDesktop20.04-EN.md"
-   FCU2601_TF_Card_and_SIM_Card_Installation_Guide_EN.md"
-   FCU2601_TF_Card_Auto-mount_Disable_FlDesktop20.04_EN.md"
+   FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN.md
+   FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN.md
+   FCU2601_Virtual_Memory_Expansion_FlDesktop20.04-EN.md
+   FCU2601_Startup_Script_FlDesktop20.04-EN.md
+   FCU2601_Manual_Time_Synchronization_FlDesktop20.04-EN.md
+   FCU2601_Reboot_Logic_After_Power_Loss_FlDesktop20.04-EN.md
+   FCU2601_SSH_Chinese_Encoding_FlDesktop20.04-EN.md
+   FCU2601_microSD_AutoMount_Disable_FlDesktop20.04-EN.md
+   FCU2601_TF_Card_and_SIM_Card_Installation_Guide_EN.md
+   FCU2601_TF_Card_Auto-mount_Disable_FlDesktop20.04_EN.md
 
 
 
