@@ -72,7 +72,11 @@ SOFTWARE
 
 
 
-
+APPLICATION NOTES 
+------------------
+.. toctree::
+   :caption: APPLICATION NOTES
+   :maxdepth: 2
 
 
 
