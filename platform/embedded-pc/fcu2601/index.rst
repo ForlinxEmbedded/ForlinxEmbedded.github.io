@@ -78,6 +78,17 @@ APPLICATION NOTES
    :caption: APPLICATION NOTES
    :maxdepth: 2
 
+   FCU2601_4G_Daemon_Usage_Guide_FlDesktop20.04-EN.md"
+   FCU2601_Screen_Saver_Configuration_FlDesktop20.04-EN.md"
+   FCU2601_Virtual_Memory_Expansion_FlDesktop20.04-EN.md"
+   FCU2601_Startup_Script_FlDesktop20.04-EN.md"
+   FCU2601_Manual_Time_Synchronization_FlDesktop20.04-EN.md"
+   FCU2601_Reboot_Logic_After_Power_Loss_FlDesktop20.04-EN.md"
+   FCU2601_SSH_Chinese_Encoding_FlDesktop20.04-EN.md"
+   FCU2601_microSD_AutoMount_Disable_FlDesktop20.04-EN.md"
+   FCU2601_TF_Card_and_SIM_Card_Installation_Guide_EN.md"
+   FCU2601_TF_Card_Auto-mount_Disable_FlDesktop20.04_EN.md"
+
 
 
 
