@@ -20,6 +20,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   OK113i-S_Hardware_Manual-EN
+
 
 
 
