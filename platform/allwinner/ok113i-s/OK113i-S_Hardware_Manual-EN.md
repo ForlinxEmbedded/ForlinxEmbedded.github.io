@@ -51,20 +51,20 @@ T113-i is an advanced application processor designed for multimedia decoding pla
 
 T113-i application processor block diagram
 
-![](images_ok113i_hw_en/001_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/001_EN.png)
 
 ## 2. FET113i-S SoM Introduction
 
 ### 2.1 FET113i-S SoM Appearance
-![](images_ok113i_hw_en/002_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/002_EN.png)
 
 eMMC configuration front view
 
-![](images_ok113i_hw_en/003_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/003_EN.png)
 
 Nand configuration front view
 
-![](images_ok113i_hw_en/004_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/004_EN.png)
 
 Back view
 
@@ -73,7 +73,7 @@ The FET113i-S SoM dimensions are shown below:
 
 
 
-![](images_ok113i_hw_en/005_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/005_EN.png)
 
 Structural dimensions: 44mm×35mm. For more detailed dimensions, see the dxf structure file in the user documentation.
 
@@ -183,7 +183,7 @@ The FET113i-S SoM interface resources are listed in the table below:
 
 ### 2.5 FET113i-S SoM Pin Definitions
 #### 2.5.1 FET113i-S SoM Pin Schematic
-![](images_ok113i_hw_en/006_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/006_EN.png)
 
 #### 2.5.2 FET113i-S SoM Pin Function Description
 **Note 1:**
@@ -361,7 +361,7 @@ Table 1  SoM Stamp Hole Connector Interface Pin Definitions
 ### 2.6 SoM Hardware Design Notes
 The FET113i-S SoM integrates the power supply, reset circuit, and storage circuit into a compact module, so the required external circuitry is very simple; a minimal system needs only a 5V power supply and a reset button to operate, as shown in the figure below:
 
-![](images_ok113i_hw_en/007_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/007_EN.png)
 
 The minimal system schematic can be found in Appendix 4. In general, however, besides the minimal system, it is recommended to connect some external devices, such as a debug UART to view printed debug messages, and to reserve a USB0 interface for system programming. Once these are in place, add the functions you need based on the SoM default interface definitions provided by Forlinx.
 
@@ -402,14 +402,14 @@ On the Forlinx OK113i-S development platform, the SoM and carrier board are conn
 
 
 
-![](images_ok113i_hw_en/008_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/008_EN.png)
 
 ### 3.2 OK113i-S Development Board Dimensions
 The OK113i-S development board dimensions are as follows:
 
 
 
-![](images_ok113i_hw_en/009_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/009_EN.png)
 
 Carrier board PCB dimensions: 130mm×190mm; for more detailed dimensions, see the dxf file in the user materials;
 
@@ -472,9 +472,9 @@ A   B  C-D+IK:M
 The schematics in this chapter are for reference only and may change; please base your design strictly on the latest source schematics.
 
 #### 3.5.1 Carrier Board Power Supply
-![](images_ok113i_hw_en/010_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/010_EN.png)
 
-![](images_ok113i_hw_en/011_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/011_EN.png)
 
 As shown above, a 12V adapter powers the development board through power jack P1. VDD_5V supplies the SoM; once the SoM powers on, it outputs VDD_3V3 to enable carrier board U5.
 
@@ -496,7 +496,7 @@ Since the TF card boots before EMMC, when booting from an inserted card in non-p
 #### 3.5.3 Function Buttons
 
 
-![](images_ok113i_hw_en/012_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/012_EN.png)
 
 As shown above, CPU_RST is the system reset button; pressing it resets and reboots the system. Pressing FEL forces the development board into upgrade mode, allowing system programming via a PC USB connection.
 
@@ -505,9 +505,9 @@ One onboard GPIO button is provided, whose function can be user-defined.
 Note: The CPU_RST pin has capacitors and a TVS diode on the SoM; do not add other circuitry on the carrier board, as it may affect the SoM's startup timing.SoM
 
 #### 3.5.4 Debug Serial Port
-![](images_ok113i_hw_en/013_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/013_EN.png)
 
-![](images_ok113i_hw_en/014_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/014_EN.png)
 
 UART0 on the SoM is the debug serial port.
 
@@ -525,34 +525,34 @@ Then use a USB-to-Type-C cable to connect P7 on the development board to a PC US
 - **SoM2. The carrier board debug serial port has a leakage-protection design; users are advised to follow this design.**
 
 #### 3.5.5 ADC Button
-![](images_ok113i_hw_en/015_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/015_EN.png)
 
-![](images_ok113i_hw_en/016_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/016_EN.png)
 
 The carrier board uses one ADCKEY signal; each button has a corresponding voltage-divider resistor, and the ADC samples different voltages to detect which button is pressed.
 
 The SoM already has a 51K resistor pulling up to 1.8V, so the carrier board only needs the corresponding pull-down resistors.
 
 #### 3.5.6 GPADC
-![](images_ok113i_hw_en/017_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/017_EN.png)
 
-![](images_ok113i_hw_en/018_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/018_EN.png)
 
 The development board provides 2 GPADC sampling channels with a maximum sampling voltage of 1.8V; a jumper cap can be fitted to select the ADC connector's rheostat for functional debugging.
 
 #### 3.5.7 LED
 
 
-![](images_ok113i_hw_en/019_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/019_EN.png)
 
-![](images_ok113i_hw_en/020_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/020_EN.png)
 
 As shown above, the development board has 1 LED controlled by GPIO, whose function can be user-defined; setting PG11 high turns the LED on.
 
 #### 3.5.8 CAN
 
 
-![](images_ok113i_hw_en/021_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/021_EN.png)
 
 The development board provides 2 electrically isolated CAN channels supporting CAN2.0B. P24 and P25 are 2.54mm-pitch caps for the termination resistors (120Ω); when used as a terminating device, install the jumper caps.
 
@@ -561,24 +561,24 @@ Connections are exposed through the P23 terminal block. When using CAN communica
 #### 3.5.9 RS485
 
 
-![](images_ok113i_hw_en/022_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/022_EN.png)
 
 The development board provides 2 electrically isolated RS485 channels, with hardware-configured automatic transmit/receive direction control. P27 and P29 are jumper caps for the 120Ω termination resistors on the AB lines. Connections are exposed through the P23 terminal block; when using RS485 communication, it is recommended to common-ground the devices. G3 and G4 are the reference grounds for the corresponding RS485 signals, and PE is the protective earth.
 
 #### 3.5.10 SPI&UART&GPIO
-![](images_ok113i_hw_en/023_EN.png)![](images_ok113i_hw_en/024_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/023_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/024_EN.png)
 
 As shown above, the development board routes out SPI1, UART4, and GPIO through the 2.54mm P3 header for connecting external module devices.
 
 #### 3.5.11 JTAG Interface
-![](images_ok113i_hw_en/025_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/025_EN.png)
 
 As shown above, the development board exposes the JTAG interface via TP points; if this feature is not used, simply leave these pins floating.
 
 #### 3.5.12 TF Card
 
 
-![](images_ok113i_hw_en/026_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/026_EN.png)
 
 As shown above, the development board's TF Card uses the CPU's SDC0 channel. The TF card supply current must be no less than 400mA.
 
@@ -590,21 +590,21 @@ As shown above, the development board's TF Card uses the CPU's SDC0 channel. The
 - **SD signals must be routed to equal length.**
 
 #### 3.5.13 TV-OUT Interface
-![](images_ok113i_hw_en/027_EN.png)![](images_ok113i_hw_en/028_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/027_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/028_EN.png)
 
 An RCA connector exposes the analog video output signal.
 
 #### 3.5.14 TV-IN Interface
-![](images_ok113i_hw_en/029_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/029_EN.png)
 
-![](images_ok113i_hw_en/030_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/030_EN.png)
 
 The analog video input signal is routed out via an RCA connector.
 
 #### 3.5.15 LVDS Interface
 The development board exposes both 8-lane LVDS signal groups through 2.0mm-pitch headers, compatible with Forlinx 10.1-inch LVDS displays, and supports screen brightness adjustment and capacitive touch. When using a Forlinx display, align the plug's red wire with pin 1 on the carrier board.
 
-![](images_ok113i_hw_en/031_EN.png)![](images_ok113i_hw_en/032_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/031_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/032_EN.png)
 
 **Note:** 
 
@@ -612,9 +612,9 @@ The development board exposes both 8-lane LVDS signal groups through 2.0mm-pitch
 - **LVDS and LCD functions cannot be used at the same time.**
 
 #### 3.5.16 LCD Interface
-![](images_ok113i_hw_en/033_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/033_EN.png)
 
-![](images_ok113i_hw_en/034_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/034_EN.png)
 
 The development board exposes LCD RGB666 signals through an FPC connector with 0.5mm pin pitch, compatible with Forlinx LCD displays, and supports screen brightness adjustment and resistive/capacitive touch.
 
@@ -630,12 +630,12 @@ The Speaker amplifier delivers a maximum power of 1.9W (4Ω).
 
 MIC_IN1 demonstrates the speaker echo cancellation solution.
 
-![](images_ok113i_hw_en/035_EN.png)![](images_ok113i_hw_en/036_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/035_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/036_EN.png)
 
 #### 3.5.18 4G
-![](images_ok113i_hw_en/037_EN.png)![](images_ok113i_hw_en/038_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/037_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/038_EN.png)
 
-![](images_ok113i_hw_en/039_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/039_EN.png)
 
 The development board supports 4G connectivity and 4G modules using the miniPCIE socket with the USB2.0 protocol.
 
@@ -644,9 +644,9 @@ When using a nanoSIM card, pay attention to the insertion direction. The onboard
 **Note: The jumper-cable connection used for the development board's 4G antenna is for demonstration only. Considering RF antenna loss, we recommend using an integrated ipex-to-SMA cable in your own design.**
 
 #### 3.5.19 WiFi&Bluetooth
-![](images_ok113i_hw_en/040_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/040_EN.png)
 
-![](images_ok113i_hw_en/041_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/041_EN.png)
 
 The development board has an onboard WiFi&BT module, using RTL8723DU by default, and an onboard SMA antenna connector; WiFi and Bluetooth share a single antenna;
 
@@ -655,7 +655,7 @@ IEEE 802.11 a/b/g/n WIFI, with transmission rates up to 150Mbps;
 Bluetooth v2.1+EDR/4.2, up to 3Mbps. To enhance signal quality, please use a 2.4&5GHz dual-band antenna.
 
 #### 3.5.20 USB HOST Interface
-![](images_ok113i_hw_en/042_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/042_EN.png)
 
 The development board expands 4 USB2.0 ports via the USB HUB FE1.1S, of which 2 are exposed through USB Type-A connectors.
 
@@ -666,9 +666,9 @@ The development board expands 4 USB2.0 ports via the USB HUB FE1.1S, of which 2 
 - **Select appropriate ESD devices in your design.**
 
 #### 3.5.21 USB2.0 Type-C Interface
-![](images_ok113i_hw_en/043_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/043_EN.png)
 
-![](images_ok113i_hw_en/044_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/044_EN.png)
 
 As shown above, the development board supports 1 USB2.0 Type-C interface with host and device modes, which can be used for system programming.
 
@@ -681,13 +681,13 @@ As shown above, the development board supports 1 USB2.0 Type-C interface with ho
 - **PG4_USB_VBUSDET must detect a voltage for the USB function to be enabled normally.**
 
 #### 3.5.22 Ethernet Interface
-![](images_ok113i_hw_en/045_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/045_EN.png)
 
 P13 on the development board is an RJ45 connector supporting 10/100/1000Mbps auto-negotiation.
 
 The SoM's RGMII interface connects to a YT8521S PHY chip, and the RJ45 connector used has a built-in network transformer, whose internal structure is shown below:
 
-![](images_ok113i_hw_en/046_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/046_EN.png)
 
 **Note:**
 
@@ -702,9 +702,9 @@ The SoM's RGMII interface connects to a YT8521S PHY chip, and the RJ45 connector
 - **It is recommended to copy the development board design directly for this part of the schematic and PCB.**
 
 #### 3.5.23 RTC
-![](images_ok113i_hw_en/047_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/047_EN.png)
 
-![](images_ok113i_hw_en/048_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/048_EN.png)
 
 As shown above, the carrier board connects an RTC device via TWI3, and D4 enables compatible power supply from VCC_3V3 and a coin cell, so the coin cell maintains power to the RTC chip after the carrier board is powered off. The default design uses the PCF8563T/5 chip. The coin cell model is CR2032.
 
@@ -746,7 +746,7 @@ For more detailed dimensions, see the dxf file in the user materials.
 
 The figure below shows the Footprint schematic of the carrier board's castellated connector.
 
-![](images_ok113i_hw_en/049_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/049_EN.png)
 
 ## 6. OK113i-S Development Board Power Consumption Table
 
@@ -769,10 +769,10 @@ Table 1 Power Consumption of the Whole Board under Linux
 
 ## 7. Minimum System Schematic
 
-![](images_ok113i_hw_en/050_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/050_EN.png)
 
-![](images_ok113i_hw_en/051_EN.png)![](images_ok113i_hw_en/052_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/051_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/052_EN.png)
 
-![](images_ok113i_hw_en/053_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/allwinner/ok113i-s/OK113i-S_Hardware_Manual-EN/053_EN.png)
 
 The figure above is for illustration only; for specific connections, see the source schematic. For the SoM to work properly, in addition to the VSYS_5V power supply, a CPU_RST button and OTG or SD card are needed to facilitate system programming and booting, as well as a UART0 debug serial port circuit to confirm whether the system is working properly and to facilitate debugging.
