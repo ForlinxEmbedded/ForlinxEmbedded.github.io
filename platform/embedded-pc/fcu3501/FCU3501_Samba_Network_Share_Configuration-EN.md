@@ -191,7 +191,7 @@ Field FAEs should focus on this section so they know which line to change when r
 
 | Option | Effect |
 | --- | --- |
-| `server min protocol = NT1`   `ntlm auth = yes` | Compatible with clients that only speak SMB1/NTLMv1, such as some older industrial HMIs, legacy Android devices, and old printers.<br /> **If all on-site clients are Win10/11 or newer, change to **`server min protocol = SMB2` to improve security (SMB1 has known vulnerabilities and is a common entry point for ransomware) |
+| `server min protocol = NT1`   `ntlm auth = yes` | Compatible with clients that only speak SMB1/NTLMv1, such as some older industrial HMIs, legacy Android devices, and old printers.<br /> If all on-site clients are Win10/11 or newer, change to server min protocol = SMB2` to improve security (SMB1 has known vulnerabilities and is a common entry point for ransomware) |
 
 **Operational details**:
 
@@ -217,8 +217,8 @@ Loaded services file OK.
 Server role: ROLE_STANDALONE
 ```
 
-> Here, `Weak crypto is allowed` appears because SMB1/NTLM compatibility is enabled. It is an expected message, not an error.
->
+Here, `Weak crypto is allowed` appears because SMB1/NTLM compatibility is enabled. It is an expected message, not an error.
+
 
 ### 4. Verification
 #### 4.1 Local Self-Test on the Device (Rule Out Server-Side Issues First)
@@ -246,8 +246,8 @@ putting file _t.txt as \_smbtest.txt (5.1 kb/s)
 
 The free block count on the last line works out to about **84 G**, consistent with `df -h /userdata`, confirming that the share does point to the large partition.
 
-> `SMB1 disabled -- no workgroup available` is a notice from smbclient itself and does not affect use of the share.
->
+`SMB1 disabled -- no workgroup available` is a notice from smbclient itself and does not affect use of the share.
+
 
 #### 4.2 Checking Listening Ports and the Firewall
 ```bash

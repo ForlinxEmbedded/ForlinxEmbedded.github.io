@@ -65,13 +65,13 @@ Overall Inference Steps
 
 Inference stages
 
-• Initiation • Import the model and initialize the Hailo device
+• Initiation: Import the model and initialize the Hailo device
 
-• Configuration • Configure the model group and its corresponding input/output streams, and activate the network model
+• Configuration: Configure the model group and its corresponding input/output streams, and activate the network model
 
-• Process /Inference • Perform inference using virtual streams
+• Process /Inference: Perform inference using virtual streams
 
-• Release • Release resources
+• Release: Release resources
 
 ## Yolov8 Object Detection
 Open the folder User Materials->hailodemo ->python ->object_detection .
