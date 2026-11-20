@@ -43,7 +43,7 @@ Extended version: RS485, RS232, CAN, and DI/DO interfaces. Because 4G, Wi-Fi, an
 
 - Two additional isolated relay DO outputs, contact rating 5 A @ 250 VAC / 5 A @ 30 VDC
 
-![](images_en/001.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/001.png)
 
 
 ### 1.2 Applications
@@ -106,11 +106,11 @@ In addition to the Base configuration, the Extended version provides:
 #### 1.5.1 Enclosure Drawing
 The enclosure dimensions of the FCU1104 are shown below (all dimensions in mm).
 
-![](images_en/002.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/002.jpg)
 
 FCU1104 enclosure dimensions (Base version)
 
-![](images_en/003.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/003.jpg)
 
 FCU1104 enclosure dimensions (Extended version)
 
@@ -120,41 +120,41 @@ Two mounting options: DIN-rail mounting and wall-mount brackets.
 - Clip mounting. The clips supplied by Forlinx fit a standard 35 mm industrial DIN rail:
 
 
-![](images_en/004.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/004.png)
 
 You can also source clips yourself. The mounting-hole positions for the Forlinx clips are shown below:
 
-![](images_en/005.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/005.png)
 
 FCU1104 clip mounting-hole dimensions
 
 - Wall-mount bracket mounting:
 
 
-![](images_en/006.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/006.png)
 
-![](images_en/007.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/007.png)
 
 **Note: The mounting holes in the brackets supplied by Forlinx are 3 mm in diameter.**
 
 #### 1.5.3 Nameplate Dimensions
 The enclosure nameplate is shown below (all dimensions in mm).
 
-![](images_en/008.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/008.png)
 
 ## 2. FCU1104 Functions
 ### 2.1 Connector Layout
 The connector layout of the FCU1104 is shown below. The front-panel connectors differ between the Base and Extended versions; the rear-panel connectors are in the same position on both.
 
-![](images_en/009.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/009.jpg)
 
 Front (Base version)
 
-![](images_en/010.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/010.jpg)
 
 Front (Extended version)
 
-![](images_en/011.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/011.jpg)
 
 Back
 
@@ -163,12 +163,12 @@ The unit accepts a wide 9–36 V DC input and ships with a 12 V DC / 2 A adapter
 
 | Diagram | Description |
 | --- | --- |
-| ![](images_en/012.png) | ![](images_en/013.png) |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/012.png) | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/013.png) |
 
 
 With the Forlinx XED-NVR2010S2-B-02 adapter, the plain black lead is positive and the lead with white printing is negative, as shown below:
 
-![](images_en/014.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/014.png)
 
 **Note:**
 
@@ -198,22 +198,22 @@ Default credentials — username: root; password: forlinx.
 
 Open putty.exe (User Materials/Tools/putty.exe), configure it as shown below, and click Open.
 
-![](images_en/015.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/015.png)
 
 On the first login a security warning appears; click Yes to continue.
 
-![](images_en/016.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/016.png)
 
 At the login prompt, enter the username (root) and password (forlinx).
 
-![](images_en/017.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/017.png)
 
 #### 2.3.2 Debug Serial Login
 The debug serial port is accessible only with the enclosure removed, so it is intended for early development. For field commissioning and maintenance, use network login instead. The credentials are the same as for SSH.
 
 The TTL debug serial header is located as shown below:
 
-![](images_en/018.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/018.jpg)
 
 #### 2.3.3 Viewing the System Log
 After boot, kernel messages are available in /var/log/messages or through the dmesg command.
@@ -237,7 +237,7 @@ Apr 26 22:05:49 fl-imx6ull syslogd 1.5.1: restart.
 
 The FCU1104 has four system LEDs: 4G network (4G), power (POW), system error (ERR), and system running (RUN), as shown below:
 
-![](images_en/019.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/019.png)
 
 POW is the power indicator; it lights automatically at power-on and goes out when power is removed.
 
@@ -255,7 +255,7 @@ RUN has two indications:
 
 RESET resets the system. BOOT is the firmware-programming button and cannot be reassigned, as shown below:
 
-![](images_en/020.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/020.png)
 
 #### 2.5.1 Reset Button Test
 Press RESET and the system restarts immediately. RUN stays off during boot and blinks as a heartbeat indicator once boot is complete.
@@ -267,7 +267,7 @@ BOOT and RESET work together for firmware updates. For details, see "TF Card Sys
 #### 2.6.1 Connector Description
 | Connector Diagram | Connector Diagram |
 | :-- | :-- |
-| ![](images_en/021.png) | ![](images_en/022.png) |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/021.png) | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/022.png) |
 |  |  |
 | **Note: The transceiving status of RS485/RS232 can be indicated via the status indicator LED.** | **Note: The transceiving status of RS485/RS232 can be indicated via the status indicator LED.** |
 
@@ -292,7 +292,7 @@ This procedure uses RS485_1. To test another RS485 port, simply substitute its d
 
 Connect an RS232-to-RS485 converter to the RS485_1 port of the FCU1104 as shown below:
 
-![](images_en/023.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/023.png)
 
 RS485_1 sends "Forlinx test" to the PC at 9600 baud. At the same time, use a serial-port assistant on the PC to send "Forlinx ok" to the FCU1104. The console output is shown below:
 
@@ -320,7 +320,7 @@ sendTotal=  108 num =    9 send = Forlinx test
 
 The serial-port assistant on the PC (User Materials/Tools/sscom5131) shows the transmitted and received data as follows:
 
-![](images_en/024.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/024.png)
 
 ### 2.6.4 Modbus Test
 For the Modbus source code, build procedure, and test, see User Materials/Linux/Applications/09_Modbus.
@@ -342,7 +342,7 @@ In a Windows command window, run ping 192.168.0.232.
 
 **Note: In Windows 10, right-click the Start button and select Command Prompt to open a command window.**
 
-![](images_en/025.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/025.png)
 
 If the PC can ping the FCU1104 and an SSH login succeeds, the Ethernet port is working.
 
@@ -517,15 +517,15 @@ Configure an IPv6 address on the PC
 
 Open Control Panel > Network and Internet > Change adapter options; the following window appears.
 
-![](images_en/026.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/026.png)
 
 Select Ethernet, right-click it, and choose Properties.
 
-![](images_en/027.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/027.png)
 
 Disable IPv4, enable IPv6, then double-click Internet Protocol Version 6 (TCP/IPv6) and change the settings as shown below.
 
-![](images_en/028.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/028.png)
 
 Connect the board directly to the PC with an Ethernet cable and test with ping6:
 
@@ -549,22 +549,22 @@ The FCU1104 includes the Boa web server. Boa is a small, efficient, single-task 
 
 Boa starts automatically at boot. Enter the FCU1104 IP address in a browser to view the pages hosted on the board. The screenshot below was taken in Microsoft Edge:
 
-![](images_en/029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/029.png)
 
 #### 2.7.7 FTP Server Test
 The vsftpd service (version 3.0.2) starts automatically at boot.
 
 Use FileZilla on the PC to connect to the board FTP service. Enter the FTP login details in the fields highlighted in red below (the default root password is forlinx). The connection uses ETH2 by default:
 
-![](images_en/030.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/030.png)
 
 Click OK on the confirmation dialog that appears:
 
-![](images_en/031.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/031.png)
 
 You can then browse the FCU1104 file system:
 
-![](images_en/032.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/032.png)
 
 ### 2.8 Wi-Fi Test
 At boot, the Wi-Fi module is enabled and its driver is loaded. Wi-Fi uses the 4G module antenna.
@@ -719,9 +719,9 @@ Phones and other mobile devices can now connect to the FCU1104 AP over Wi-Fi and
 ### 2.9 4G/5G Test
 The FCU1104 supports 4G Cat.1 or 5G Sub-6 networks; the installed module depends on the configuration ordered. At boot, the 4G/5G module is powered and its driver is loaded. The external antenna connectors and SIM slot are shown below:
 
-![](images_en/033.png)  
-![](images_en/034.png)  
-![](images_en/035.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/033.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/034.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/035.png)
 
 **Note: A 5G module uses two antennas and therefore occupies both the GPS and 4G antenna connectors.**
 
@@ -875,14 +875,14 @@ IP: 192.168.0.100
 Gateway: 192.168.0.232
 
 ### 2.10 LoRa Test
-![](images_en/036.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/036.png)
 
 **Note: The system supports the E32 and E22 LoRa modules. Run the test that matches the module fitted.**
 
 #### 2.10.1 E32 LoRa Module Test
 At boot, the module is powered and in normal (mode 0) operation. Its default parameters are shown below:
 
-![](images_en/037.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/037.png)
 
 **2.10.1.1 Power the module off and on**
 
@@ -959,7 +959,7 @@ Test transparent reception between the FCU1104 and a PC. All registers use the d
 
 The FCU1104 communicates with module A, which is connected to the PC through a USB-to-TTL adapter. Run the lorar command below on the FCU1104 and send data from the PC with sscom5131:
 
-![](images_en/038.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/038.png)
 
 ```plain
 root@fl-imx6ull:~# fltest_lorar /dev/ttymxc5
@@ -988,12 +988,12 @@ Sent successfully.
 
 sscom5131 on the PC then receives the data as shown below:
 
-![](images_en/039.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/039.png)
 
 #### 2.10.2 E22 LoRa Module Test
 At boot, the module is powered and in normal (mode 0) operation. Its default parameters are shown below:
 
-![](images_en/040.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/040.png)
 
 **2.10.2.1 Power the module off and on**
 
@@ -1077,7 +1077,7 @@ Test transparent reception between the FCU1104 and a PC. All registers use the d
 
 The FCU1104 communicates with module A, which is connected to the PC through a USB-to-TTL adapter. Run the lorar command below on the FCU1104 and send data from the PC with sscom5131:
 
-![](images_en/041.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/041.png)
 
 ```plain
 root@fl-imx6ull:~# fltest_lorar /dev/ttymxc5
@@ -1106,7 +1106,7 @@ Sent successfully.
 
 sscom5131 on the PC then receives the data as shown below:
 
-![](images_en/042.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/042.png)
 
 ### 2.11 RTC Test
 This test uses the date and hwclock utilities to set the system and hardware clocks, then verifies after a reboot that the system clock has been synchronized from the RTC. A coin cell is fitted to the FCU1104 by default.
@@ -1158,7 +1158,7 @@ Thu Jan 21 03:20:44 UTC 2021
 ```
 
 ### 2.12 TF Card Test
-![](images_en/043.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/043.png)
 
 The TF card slot is indicated by the red arrow in the figure above. Inserting a card mounts it automatically under /run/media, and the console prints details of the card. Output varies between card models.
 
@@ -1278,8 +1278,8 @@ root@fl-imx6ull:~# cat /sys/class/gpio/gpio67/value
 #### 2.16.1 Connector Description
 | Interface | Diagram |
 | --- | --- | --- |
-| DI | ![](images_en/044.png) |
-| DO | ![](images_en/045.png) |
+| DI | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/044.png) |
+| DO | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/045.png) |
 
 
 #### 2.16.2 Device Node to Hardware Mapping
@@ -1334,7 +1334,7 @@ The FCU1104 provides one CAN interface, shown below.
 
 | Diagram |
 | --- | --- |
-| ![](images_en/046.png) |
+| ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/046.png) |
 
 
 #### 2.17.2 Device Node to Hardware Mapping
@@ -1364,7 +1364,7 @@ root@fl-imx6ull:~# cansend can0 123#123456789123456789
 
 The host PC receives the CAN data:
 
-![](images_en/047.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/047.png)
 
 Receive CAN data:
 
@@ -1375,7 +1375,7 @@ root@fl-imx6ull:~# root@fl-imx6ull:~# candump can0  &
 
 Send data from the host PC:
 
-![](images_en/048.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/048.png)
 
 ### 2.18 Python 3.6 Test (Extended Version)
 Reference: User Materials/Linux/Applications/11_Python3.6.9/Readme.txt.
@@ -1491,7 +1491,7 @@ neo@ubuntu:~/work$ ./imx6ull_build.sh
 
 The build produces extensive output; only the last part is shown here:
 
-![](images_en/049.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/049.png)
 
 A successful build generates the .ko module files and zImage under linux-4.1.15/arch/arm/boot/.
 
@@ -1543,9 +1543,9 @@ On success, the corresponding .ko files are created in each driver directory.
 
 Run make modules_install INSTALL_MOD_PATH=/home/forlinx/work/ to export the modules to /home/forlinx/work/, package them as modules.tar.bz2, and replace the file of the same name in the flashing tool.
 
-![](images_en/050.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/050.png)
 
-![](images_en/051.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/051.png)
 
 #### 3.3.3 Building the Root File System
 
@@ -1709,7 +1709,7 @@ neo@ubuntu:~/work$ tar -jxvf fcu1104-nand-burn.tar.bz2
 
 Step 2: Insert the TF card into a USB card reader on the PC. (In VMware, if the USB device is not passed through to the virtual machine, use the icon indicated by the arrow below to connect it.)
 
-![](images_en/052.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/052.png)
 
 Step 3: Once the virtual machine detects the card and its folder opens, go to /home/neo/work/fcu1104burn and run the script below:
 
@@ -1725,15 +1725,15 @@ In this example:
 
 Select 1 and press Enter.
 
-![](images_en/053.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/053.png)
 
 Enter y, press Enter, and wait for card creation to finish.
 
-![](images_en/054.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/054.png)
 
 If the output does not contain the information highlighted in the red box below, the SD card was not mounted; unmount and remount it in Ubuntu.
 
-![](images_en/055.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/055.png)
 
 When the card is ready, the boot partition contains the sdrun and target directories. sdrun boots the flashing process and needs no changes; the contents of target are written to the flash chip. To replace an image, overwrite the corresponding file in target with the same filename and flash the system again.
 
@@ -1852,7 +1852,7 @@ vi /etc/rc.local
 - Delete the content highlighted in the red box below:
 
 
-![](images_en/056.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/056.png)
 
 - Set the DNS server.
 
