@@ -1,4 +1,4 @@
-# OK3506J-C\_User’s Hardware Manual\_V1.1
+# User’s Hardware Manual\_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
