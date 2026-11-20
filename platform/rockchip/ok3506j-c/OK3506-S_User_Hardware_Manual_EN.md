@@ -1,4 +1,4 @@
-# OK3506-S_User's Hardware Manual_V1.3
+# OK3506J-S_User's Hardware Manual_V1.3
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
