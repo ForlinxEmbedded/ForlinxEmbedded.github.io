@@ -1333,7 +1333,7 @@ Each time DI-2 is connected to COM, the command above prints "0".
 The FCU1104 provides one CAN interface, shown below.
 
 | Diagram |
-| --- | --- |
+| --- | 
 | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/046.png) |
 
 
