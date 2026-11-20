@@ -1277,7 +1277,7 @@ root@fl-imx6ull:~# cat /sys/class/gpio/gpio67/value
 ### 2.16 DO/DI Test (Extended Version)
 #### 2.16.1 Connector Description
 | Interface | Diagram |
-| --- | --- | --- |
+| --- | --- |
 | DI | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/044.png) |
 | DO | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/045.png) |
 
