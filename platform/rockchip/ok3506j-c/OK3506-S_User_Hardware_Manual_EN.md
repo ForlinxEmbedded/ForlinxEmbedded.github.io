@@ -1,4 +1,4 @@
-# User's Hardware Manual_V1.3
+# OK3506-S_User's Hardware Manual_V1.3
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
@@ -44,8 +44,6 @@ The chip embeds rich peripheral interfaces such as I2S, PCM, TDM, PDM, SPDIF, Au
 **RK3506B/J Processor Block Diagram**
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740550549558-b504786d-99b6-4b79-9359-93114694c4c4.png)
-
----
 
 ## 2. FET3506J-S/FET3506B-S SoM Introduction
 
@@ -276,7 +274,7 @@ A-B-C+DEF:G-H
 
 ### 3.5 OK3506x-S Carrier Board Description
 
-**Note: **
+**Note:** 
 
 - **Components marked with "_DNP" in the figures below are not soldered by default;**
 - **The schematics in this manual are for interface description only. For hardware design, please refer to the source files.**
@@ -368,7 +366,7 @@ Component soldering details for the Ethernet design are shown in the table below
 | PHY1 | YT8512H | 3.3V | Keep default |
 | PHY2 | YT8512H | 3.3V | Keep default |
 | PHY2 | YT8522H | 3.3V | Solder R64 R124 R132 on top of the default configuration |
-| PHY2 | YT8522H | 1.8V | Solder R64 R71 R124 R132 R192 R193 R194 R197 R202 R204; leave Q11 Q12 Q13 unmounted; solder R47 R66 R129 R140 R195 |
+| PHY2 | YT8522H | 1.8V | Solder R64 R71 R124 R132 R192 R193 R194 R197 R202 R204;<br />leave Q11 Q12 Q13 unmounted; solder R47 R66 R129 R140 R195 |
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/50461850/1740550554879-000e253e-0897-4208-a0bd-d7aa01529b04.png)
 
