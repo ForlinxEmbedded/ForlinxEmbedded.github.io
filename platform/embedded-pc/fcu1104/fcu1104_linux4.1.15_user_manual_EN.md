@@ -72,7 +72,7 @@ The Base configuration provides:
 | BOOT button | 1, used together with the reset button for firmware updates |
 | Power-loss protection | A supercapacitor supplies the CPU for a further 30 s after external power is lost |
 | Power | 12 V DC nominal, 9–36 V DC wide-range input; reverse-polarity and overcurrent protection |
-| Environment | Humidity: 5%–95% RH, non-condensing; operating temperature: -25°C to 85°C (eMMC version), -40°C to 85°C (NAND version); Wi-Fi module: 0°C to 70°C; storage temperature: -40°C to 85°C |
+| Environment | Humidity: 5%–95% RH, non-condensing; <br />Operating Temperature: -25°C to 85°C (eMMC version), -40°C to 85°C (NAND version); Wi-Fi Module: 0°C to 70°C; <br />Storage Temperature: -40°C to 85°C |
 
 
 #### 1.3.2 Extended Configuration
@@ -80,10 +80,10 @@ In addition to the Base configuration, the Extended version provides:
 
 | Item | Description |
 | --- | --- |
-| RS485/RS232 | 4 ports (one is multiplexed with RS232), 1.5 kV isolation, ESD level 3 |
-| DI | 2 dry-contact inputs, isolated design |
-| DO | 2 relay outputs, contact rating 5 A @ 250 VAC / 5 A @ 30 VDC |
-| CAN | 1 port, 1.5 kV isolation, ESD level 3 |
+| RS485/RS232 | 4 x (one is multiplexed with RS232), 1.5 kV isolation, ESD level 3 |
+| DI | 2 x dry-contact inputs, isolated design |
+| DO | 2 x relay outputs, contact rating 5 A @ 250 VAC / 5 A @ 30 VDC |
+| CAN | 1 x, 1.5 kV isolation, ESD level 3 |
 
 
 ### 1.4 Software Specifications
@@ -1281,8 +1281,8 @@ root@fl-imx6ull:~# cat /sys/class/gpio/gpio67/value
 | DI | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/044.png) |
 | DO | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/045.png) |
 
-
 #### 2.16.2 Device Node to Hardware Mapping
+
 | Device node | Hardware label |
 | --- | --- |
 | DO1-1 and DO1-2 | do0 |
