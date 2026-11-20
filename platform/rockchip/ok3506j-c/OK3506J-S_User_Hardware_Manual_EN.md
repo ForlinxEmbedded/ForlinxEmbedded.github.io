@@ -43,7 +43,7 @@ The chip embeds rich peripheral interfaces such as I2S, PCM, TDM, PDM, SPDIF, Au
 
 **RK3506B/J Processor Block Diagram**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550549558_b504786d_99b6_4b79_9359_93114694c4c4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550549558_b504786d_99b6_4b79_9359_93114694c4c4.png)
 
 ## 2. FET3506J-S/FET3506B-S SoM Introduction
 
@@ -51,11 +51,11 @@ The chip embeds rich peripheral interfaces such as I2S, PCM, TDM, PDM, SPDIF, Au
 
 FET3506J-S/FET3506B-S SoM (NAND version) Front View
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550551059_ad3cc7d2_01b2_46b0_9541_261580f4b2b3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551059_ad3cc7d2_01b2_46b0_9541_261580f4b2b3.png)
 
 FET3506J-S/FET3506B-S SoM Back View
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550551216_fde9c5c7_b7ac_4a12_b202_6b7389ebc94b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551216_fde9c5c7_b7ac_4a12_b202_6b7389ebc94b.png)
 
 ### 2.2 FET3506J-S/FET3506B-S SoM Dimensions
 
@@ -138,13 +138,13 @@ Stamp-hole package with 146 PINs in total.
 
 #### 2.5.1 SoM Pin Schematic
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550551449_ba9d3b59_d697_4211_8d7d_3dc5d40ab0ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551449_ba9d3b59_d697_4211_8d7d_3dc5d40ab0ee.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550551522_d2f26f8b_a040_4305_94dc_554ae2068da9.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551522_d2f26f8b_a040_4305_94dc_554ae2068da9.png)
 
 #### 2.5.2 SoM Pin Function Description
 
-Users with multiple function expansion requirements can refer to the "OK3506-S Pin Multiplexing Table" in the user materials. For more detailed information, it is recommended to consult the related documentation as well as the chip datasheet and reference manual.
+Users with multiple function expansion requirements can refer to the "OK3506J-S Pin Multiplexing Table" in the user materials. For more detailed information, it is recommended to consult the related documentation as well as the chip datasheet and reference manual.
 
 ### 2.6 SoM Hardware Design Guide
 
@@ -169,7 +169,7 @@ Users with multiple function expansion requirements can refer to the "OK3506-S P
 
 The FET3506J-S/FET3506B-S SoM integrates the power supply, reset monitoring circuit and storage circuit on a compact module, requiring very simple external circuitry — a minimum system needs only a 5 V power supply to run, as shown below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550551596_d6549cf6_e70a_4606_a0dc_3c2cd5d35a30.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551596_d6549cf6_e70a_4606_a0dc_3c2cd5d35a30.png)
 
 The minimum system schematic can be found in Appendix 4. Generally, however, besides the minimum system it is recommended to connect some external devices, such as a debug serial port and an image flashing port; otherwise the user cannot determine whether the system has started. After that, add the functions you need based on Forlinx's default SoM interface definitions.
 
@@ -179,7 +179,7 @@ The design of the SoM peripheral circuit can refer to section 3.5 "OK3506x-S Car
 
 Mechanical limiting holes are added at the mid-section positions on both sides of the SoM on the carrier board. Fixing the carrier board to the equipment with screws can effectively improve the overall structural rigidity, thereby enhancing performance stability in vibration environments. The assembly diagram is as follows.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1763703033835_432db838_fb9e_4e37_b4ab_e5b39cc9566a.jpeg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1763703033835_432db838_fb9e_4e37_b4ab_e5b39cc9566a.jpeg)
 
 This design has been verified by the vibration test specified in GB/T 2423.10-2008 / IEC 60068-2-6:1995, meeting the following ratings:
 
@@ -196,11 +196,11 @@ The performance data listed in this manual were obtained under standard laborato
 
 The Forlinx OK3506x-S development platform connects the SoM and carrier board via stamp holes. The main interfaces are shown in the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1748221226194_deac0a9a_6753_425a_94af_bd15fd4ab2b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221226194_deac0a9a_6753_425a_94af_bd15fd4ab2b6.png)
 
 ### 3.2 OK3506x-S Development Board Dimensions
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1748221240280_b8c1ff76_c77c_4866_8648_1f7d737cb195.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221240280_b8c1ff76_c77c_4866_8648_1f7d737cb195.png)
 
 PCB dimensions: 130 mm × 190 mm.
 
@@ -212,7 +212,7 @@ Power supply voltage: DC 12 V.
 
 The OK3506x-S carrier board reserves 2 mounting holes of 3.2 mm diameter for heat sinks. Users can optionally install a heat sink according to the on-site environment; please add an insulating thermally conductive silicone pad between the heat sink and the SoM. The SoM heat sink selected by Forlinx measures 38 mm × 38 mm × 10 mm; for more details see the figure below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1755142680443_eca49f39_991c_4354_a005_4f678db42918.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1755142680443_eca49f39_991c_4354_a005_4f678db42918.png)
 
 ### 3.3 Carrier Board Naming Convention
 
@@ -285,21 +285,21 @@ The carrier board is powered by DC 12 V, introduced through the DC-005 socket (P
 
 VDD_5V is converted to VCC5V0_SYS through two parallel 0-ohm resistors R8 and R13. VCC5V0_SYS is the 5 V power supply of the SoM. After the SoM powers up, it outputs a 3.3 V DC voltage as the carrier board power enable signal, net name VCC_3V3_EN.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550553431_c24c64f2_36f7_4b86_9b28_d543089c2a7d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550553431_c24c64f2_36f7_4b86_9b28_d543089c2a7d.png)
 
 When VCC_3V3_EN goes high, Q1 turns on. After Q1 turns on, U2 turns on, connecting VDD_5V to the VCC_5V net, and the whole carrier board powers up.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550553504_392bd44b_7a0a_4d98_aa42_3d879836cdc2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550553504_392bd44b_7a0a_4d98_aa42_3d879836cdc2.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550553581_c88feedf_e95d_4059_813c_6a254eaf09db.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550553581_c88feedf_e95d_4059_813c_6a254eaf09db.png)
 
 This circuit ensures that the SoM powers up first and the carrier board second, preventing latch-up damage to the CPU.
 
 The carrier board's 3.3 V DC is provided by two independent DC-DC converters and one LDO. The 3.3 V DC supply for the 4G module is converted from 5 V DC via a DC-DC, net name VCC_3V3_4G. The 3.3 V DC for the audio section is derived from 5 V DC via an LDO, supplying the audio section separately with a clean power rail, net name VCC_3V3_CODEC. The remaining 3.3 V DC of the carrier board is converted from 5 V DC through another DC-DC, net name VCC_3V3.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550553670_f248d8f7_3441_430b_b2c8_f49e1842444d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550553670_f248d8f7_3441_430b_b2c8_f49e1842444d.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550553748_6fee63e9_8ec6_49f5_b805_669935f74a5f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550553748_6fee63e9_8ec6_49f5_b805_669935f74a5f.png)
 
 #### 3.5.2 Buttons
 
@@ -307,13 +307,13 @@ NPOR_L is the system reset button, located at the middle of the right side of th
 
 SARADC_IN0_BOOT is the MASKROM button, located at the middle of the right side of the carrier board, silkscreened "MASKROM". Press this button while the board is powered off and then power on — the system enters MASKROM flashing mode.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550553849_b7c18ae5_a93a_4e03_9560_f8f06bb294e5.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550553849_b7c18ae5_a93a_4e03_9560_f8f06bb294e5.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554046_5ecb8296_ca98_49ef_a27f_324cf8dafd46.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554046_5ecb8296_ca98_49ef_a27f_324cf8dafd46.png)
 
 SARADC_IN1_RECOVER/KEY is the system user button and boot item selection button. KEY1 is the RECOVERY/V+ button: press it while the board is powered off and then power on — the system enters BOOTLOADER mode; after the system starts, users can customize it as a volume-up key. KEY2 is the V- button, which users can configure as a volume-down key. KEY3 is MENU, configurable as a menu key. KEY4 is ESC, configurable as a back key. All four buttons are on the right side of the development board, facing right.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554150_cb7303f9_1b84_4bd6_a414_dc38aa34ce0b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554150_cb7303f9_1b84_4bd6_a414_dc38aa34ce0b.png)
 
 #### 3.5.3 BOOT Configuration
 
@@ -321,13 +321,13 @@ Besides being a button, SARADC_IN0_BOOT is also the system boot item selection p
 
 Since the eMMC and the TF card share the same data bus, only one of them can be used at a time. On a SoM with eMMC, the TF card cannot be used as the system boot medium nor as a storage device.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554231_f1f79948_eaa4_45e0_9184_10cc6c14f3bf.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554231_f1f79948_eaa4_45e0_9184_10cc6c14f3bf.png)
 
 #### 3.5.4 Debug Serial Port
 
 The carrier board uses a USB Type-C port as the debug serial port. Connect it to a PC with a data cable and select the corresponding serial port to start debugging.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1748221302081_177f3c5d_479f_4562_9636_9b8abab4f253.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221302081_177f3c5d_479f_4562_9636_9b8abab4f253.png)
 
 **Note: For convenient debugging, please export this debug serial port when designing your own carrier board.**
 
@@ -339,17 +339,17 @@ P8 is a self-ejecting nano SIM card slot. Follow the board's label for the inser
 
 Before using the 4G function, power off the board, install the 4G module, install the SIM card, and move the 4G IPEX jumper cable from the module to P10 on the board; then an antenna can be connected externally via the SMA connector P9.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554329_1cacb2fc_3b27_4508_8c81_2f8f648041fe.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554329_1cacb2fc_3b27_4508_8c81_2f8f648041fe.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554460_fd30182b_fd26_481e_a5ea_a80b6eb4c22e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554460_fd30182b_fd26_481e_a5ea_a80b6eb4c22e.png)
 
 #### 3.5.6 USB Download/OTG
 
 The P14 USB Type-C port at the upper-left corner of the development board supports firmware flashing and OTG functions. The function of this Type-C port is selected by S2: when S2 is on, the USB is HOST and can be used as a host; when S2 is off, the USB is Device, and the development board image can be flashed by connecting it to a PC with a data cable.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554603_be02d755_b1ad_4e5c_b314_cf8441087f29.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554603_be02d755_b1ad_4e5c_b314_cf8441087f29.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554698_12dd652f_f895_4b69_b791_b526c0667fd8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554698_12dd652f_f895_4b69_b791_b526c0667fd8.png)
 
 ![](../1748221355267-9b29e459-05d9-411f-bb02-eb7989a84994.png)
 
@@ -368,15 +368,15 @@ Component soldering details for the Ethernet design are shown in the table below
 | PHY2 | YT8522H | 3.3V | Solder R64 R124 R132 on top of the default configuration |
 | PHY2 | YT8522H | 1.8V | Solder R64 R71 R124 R132 R192 R193 R194 R197 R202 R204;<br />leave Q11 Q12 Q13 unmounted; solder R47 R66 R129 R140 R195 |
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554879_000e253e_0897_4208_a0bd_d7aa01529b04.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554879_000e253e_0897_4208_a0bd_d7aa01529b04.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550554958_55997869_d358_485f_a328_11cb706926b3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554958_55997869_d358_485f_a328_11cb706926b3.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555044_c9ea3b7f_341a_4c29_8707_66e960f3a559.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555044_c9ea3b7f_341a_4c29_8707_66e960f3a559.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555121_6701aab4_a832_45d2_ad73_b91ec512e09d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555121_6701aab4_a832_45d2_ad73_b91ec512e09d.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1752633984453_d15b4df4_9fcc_45c5_b41f_1d6f7a379f2a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1752633984453_d15b4df4_9fcc_45c5_b41f_1d6f7a379f2a.png)
 
 **Note: In PCB design, ensure the PHY chip has a complete ground plane.**
 
@@ -384,19 +384,19 @@ Component soldering details for the Ethernet design are shown in the table below
 
 The carrier board provides a JTAG debug interface (P17), allowing users to debug the RK3506 with an emulator via 2.54 mm pitch pin headers.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555284_fdcc49a9_c578_409e_a47d_014b794313e7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555284_fdcc49a9_c578_409e_a47d_014b794313e7.png)
 
 #### 3.5.9 RTC
 
 The carrier board connects an external RTC device via I2C2, and uses D12 to combine the VCC_3V3 supply with the coin cell battery supply, so that after the carrier board is powered off, the coin cell keeps the RTC chip powered. The RX8010SJ chip is used by default. The coin cell model is CR2032.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555360_3fe560f0_fae9_44df_9d6c_1a06ba0f4c4d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555360_3fe560f0_fae9_44df_9d6c_1a06ba0f4c4d.png)
 
 #### 3.5.10 TF Card
 
 The development board's TF Card uses the CPU's SDMMC channel, which is also used by the SoM's eMMC; therefore the TF Card cannot be used on a development board with an eMMC configuration.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555435_ae5730d2_00c4_4397_b3e6_46319c4a2919.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555435_ae5730d2_00c4_4397_b3e6_46319c4a2919.png)
 
 **Note:**
 
@@ -410,19 +410,19 @@ The FPC connector P20 on the development board can connect a MIPI-DSI display; t
 
 Supports a 2-lane MIPI-DSI connection at 1.5 Gbps/lane, and touch screens with an I2C interface. The MIPI-DSI and LCD screens can only be used alternatively.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555515_441620a5_10d5_4aa5_b4ee_a1abb20cd5f1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555515_441620a5_10d5_4aa5_b4ee_a1abb20cd5f1.png)
 
 #### 3.5.12 LCD Display
 
 The CPU supports a parallel 24-bit LCD, up to RGB888 24-bit, with a maximum resolution of 1280 × 1280 and a refresh rate of 60 Hz. The FPC connector P21 on the development board can connect an LCD display; the connector is 54P, 0.5 mm pitch, bottom-contact flip type, compatible with Forlinx's capacitive touch screens. The LCD interface uses RGB888 24-bit mode wiring. The MIPI-DSI and LCD screens can only be used alternatively.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555585_d7cff198_8426_4223_a4e2_1ac6f88c6b88.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555585_d7cff198_8426_4223_a4e2_1ac6f88c6b88.png)
 
 #### 3.5.13 DSMC
 
 The pin header P27 on the development board reserves the DSMC interface. This interface is multiplexed with the LCD data lines; users can choose the function themselves.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555671_026c48d9_c1ba_4eea_bf6e_15290d7f768a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555671_026c48d9_c1ba_4eea_bf6e_15290d7f768a.png)
 
 #### 3.5.14 Audio
 
@@ -430,23 +430,23 @@ The development board provides a standard 3.5 mm headphone jack (CTIA internatio
 
 P26 is the onboard MIC, enabling mono recording.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555747_60ef92e1_656d_4856_9311_c25537200066.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555747_60ef92e1_656d_4856_9311_c25537200066.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555839_f4a61ae2_116d_439c_b3c2_faf94b5b7467.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555839_f4a61ae2_116d_439c_b3c2_faf94b5b7467.png)
 
 #### 3.5.15 USB2.0
 
 The development board has an onboard USB2.0 HUB (reference designator U10), expanding to four downstream USB HOST nodes: on the development board, two USB2.0-A standard ports (reference designator P13), one mini-PCIE interface and the WiFi module are connected; the mini-PCIE interface can host a 4G module.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555916_b68fa112_8fd7_4947_a5c5_e98e1818b6d1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555916_b68fa112_8fd7_4947_a5c5_e98e1818b6d1.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550555991_4b9b8b0d_4ebc_469f_a66d_83d30a31716b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550555991_4b9b8b0d_4ebc_469f_a66d_83d30a31716b.png)
 
 #### 3.5.16 WiFi & Bluetooth
 
 The development board has an onboard WiFi & Bluetooth combo module, model BL-M8723DU. The WiFi uses a USB2.0 interface, 2.4 GHz band, compliant with IEEE 802.11b/g/n, with a theoretical maximum rate of 150 Mbps. The Bluetooth controller complies with the Bluetooth V4.2 standard. P16 is the SMA connector for the antenna.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550556061_c6e88f8a_c2ee_498b_9584_3c58eeb3dad2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550556061_c6e88f8a_c2ee_498b_9584_3c58eeb3dad2.png)
 
 #### 3.5.17 CAN
 
@@ -454,9 +454,9 @@ The development board uses the native CAN0 and CAN1 to provide two CAN FD interf
 
 CAN signals are exported through 3.81 mm pitch green terminals; the 120-ohm termination resistor is installed with a jumper cap.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550556132_ca54d702_0df5_4471_8373_4fc1fd5b63d6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550556132_ca54d702_0df5_4471_8373_4fc1fd5b63d6.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550556199_d749bef6_d786_44c2_a873_dbc4aa95d91a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550556199_d749bef6_d786_44c2_a873_dbc4aa95d91a.png)
 
 **Note: whether the capacitors after the common-mode inductors need to be soldered depends on on-site testing; it is recommended to reserve capacitor positions in the design.**
 
@@ -466,13 +466,13 @@ The development board uses the native UART2 to provide one standard RS485 interf
 
 RS485 signals are exported through 3.81 mm pitch green terminals; the 120-ohm termination resistor is installed with a jumper cap.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550556272_f03e4027_b689_4cce_b653_da3f464aac51.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550556272_f03e4027_b689_4cce_b653_da3f464aac51.png)
 
 #### 3.5.19 SPI
 
 The carrier board reserves an SPI external storage circuit. The SPI data lines are shared with the NAND FLASH on the SoM; the two cannot be used at the same time.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550556344_2f7dc7ba_adb6_4f39_a522_5c221c34b8a2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550556344_2f7dc7ba_adb6_4f39_a522_5c221c34b8a2.png)
 
 ## 4. Connector Dimension Drawings
 
@@ -480,11 +480,11 @@ For more detailed dimensions, see the DXF files in the user materials.
 
 - The figure below shows the pin numbers of the carrier board stamp-hole connector footprint.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1776837076042_7e15a0f6_2b0d_4a6c_96b6_19eca92f20b6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1776837076042_7e15a0f6_2b0d_4a6c_96b6_19eca92f20b6.png)
 
 - The figure below shows the dimensions of the carrier board stamp-hole connector footprint.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1776837151955_2f8d17c2_1fb1_491e_96ce_709bfc94bf11.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1776837151955_2f8d17c2_1fb1_491e_96ce_709bfc94bf11.png)
 
 ## 5. OK3506X-S Development Board Linux System Power Consumption Table
 
@@ -510,20 +510,20 @@ For more detailed dimensions, see the DXF files in the user materials.
 
 **The minimum system includes the SoM, power supply, debug serial port and system image flashing interface.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1748221697975_a935d2cb_b95a_4d65_bd47_1a2f894a259b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221697975_a935d2cb_b95a_4d65_bd47_1a2f894a259b.png)
 
 ![](../1740550560758-31b2e8dc-02ca-479c-8e85-27948cc46c92.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550560894_0541479a_e4bf_4253_9c67_307e4c0e22ab.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550560894_0541479a_e4bf_4253_9c67_307e4c0e22ab.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550561012_83193ccd_d7b1_4531_80b8_580cb94ae4e8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550561012_83193ccd_d7b1_4531_80b8_580cb94ae4e8.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550561201_c52690aa_569a_4594_9aaf_864464d61f5e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550561201_c52690aa_569a_4594_9aaf_864464d61f5e.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550561404_c93027b9_2fe2_48ff_b906_48476311ecff.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550561404_c93027b9_2fe2_48ff_b906_48476311ecff.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550561603_6f67d173_1ff0_4a66_a5d0_ee51dd05a3b4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550561603_6f67d173_1ff0_4a66_a5d0_ee51dd05a3b4.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506-S_User_Hardware_Manual_EN/1740550561693_948c1e79_7813_4a83_a5c4_46bab31b48d8.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550561693_948c1e79_7813_4a83_a5c4_46bab31b48d8.png)
 
 ![](../1748223343086-eee11fef-c522-4836-8444-11b00e416ab2.png)
