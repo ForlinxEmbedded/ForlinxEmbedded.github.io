@@ -21,7 +21,7 @@ HARDWARE
    :maxdepth: 2
 
    OK3506J-C_User_Hardware_Manual
-   OK3506-S_User_Hardware_Manual_EN
+   OK3506J-S_User_Hardware_Manual_EN
 
 
 
