@@ -59,7 +59,7 @@ FET3506J-S/FET3506B-S SoM Back View
 
 ### 2.2 FET3506J-S/FET3506B-S SoM Dimensions
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551367-68ba1556-2aa9-4d18-a638-610d980b1906.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550551367_68ba1556_2aa9_4d18_a638_610d980b1906.png)
 
 Mechanical dimensions: 44 mm × 35 mm, dimension tolerance ±0.13 mm. For more dimension details, see the DXF file.
 
@@ -351,7 +351,7 @@ The P14 USB Type-C port at the upper-left corner of the development board suppor
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550554698_12dd652f_f895_4b69_b791_b526c0667fd8.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221355267-9b29e459-05d9-411f-bb02-eb7989a84994.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221355267_9b29e459_05d9_411f_bb02_eb7989a84994.png)
 
 #### 3.5.7 Dual 100 Mbps Ethernet
 
@@ -512,7 +512,7 @@ For more detailed dimensions, see the DXF files in the user materials.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748221697975_a935d2cb_b95a_4d65_bd47_1a2f894a259b.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550560758-31b2e8dc-02ca-479c-8e85-27948cc46c92.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550560758_31b2e8dc_02ca_479c_8e85_27948cc46c92.png)
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550560894_0541479a_e4bf_4253_9c67_307e4c0e22ab.png)
 
@@ -526,4 +526,4 @@ For more detailed dimensions, see the DXF files in the user materials.
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1740550561693_948c1e79_7813_4a83_a5c4_46bab31b48d8.png)
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748223343086-eee11fef-c522-4836-8444-11b00e416ab2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/rockchip/ok3506j-c/OK3506J-S_User_Hardware_Manual_EN/1748223343086_eee11fef_c522_4836_8444_11b00e416ab2.png)
