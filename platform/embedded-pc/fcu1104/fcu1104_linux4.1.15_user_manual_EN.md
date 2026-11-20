@@ -1333,7 +1333,7 @@ Each time DI-2 is connected to COM, the command above prints "0".
 The FCU1104 provides one CAN interface, shown below.
 
 | Diagram |
-| --- | 
+| --- |
 | ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu1104/fcu1104_linux4.1.15_user_manual_EN/046.png) |
 
 
@@ -1793,7 +1793,9 @@ root@freescale ~$ sync
 ```
 
 ## Appendix
+
 ### Appendix 1  Adding Startup Commands
+
 - Start 4G dial-up automatically at boot.
 
 The startup script is /etc/rc.local; add any commands that must run at boot there. To start the 4G dial-up script automatically, allow 3–5 s after boot for the module to initialize before dialing. Add the following to /etc/rc.local:
@@ -1820,7 +1822,7 @@ chmod 777 /etc/rc5.d/S99test.sh
 
 S99 sets the startup priority to 99; adjust it as needed.
 
-## Appendix 2  IP Address Configuration
+### Appendix 2  IP Address Configuration
 
 Open /etc/network/interfaces and edit the configuration
 
