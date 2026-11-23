@@ -15,22 +15,27 @@ The drivers and utilities used for the components are subject to the copyrights 
 - Module level features
 
    ▫️ Monitor registration, attachment, and dial-up status; on anomalies, redial, reset, or reboot the module according to the policy.
+
    ▫️ Check SIM card status; if no SIM card is detected, reset or reboot the module according to the reset policy so that it searches for the card again.
 
 - Application level features
 
    ▫️ Check the current network status via ping; if ping gets no reply for n consecutive times, recheck the module-level status. The feature can be enabled or disabled, the ping interval, target address, and count are configurable, and the action taken when ping fails is configurable.
+
    ▫️ Periodically check whether received data packets are increasing; if they do not grow within the timeout, recheck the module-level status. The timeout and data-growth threshold are configurable, as is the action taken when no data is detected.
 
 - Log storage
 
    ▫️ Record normal and abnormal operation information after startup, important AT interaction commands, network registration status changes, dial-up status changes.
+
    ▫️ Cover redials and the reasons that triggered them, and reboots and the reasons that triggered them.
+
    ▫️ Timestamps are formatted as [year-month-day hour:minute:second]; a single log file holds up to 2MB, and two files are used cyclically.
 
 - Information storage
 
    ▫️ Read the module serial number, SIM card serial number, and detailed module information.
+
    ▫️ Collect operator information, access point information, and other related data, then store all data in a local file.
 
 - Debug output management
