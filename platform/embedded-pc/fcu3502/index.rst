@@ -70,6 +70,18 @@ SOFTWARE
 
 
 
+Application Notes 
+------------------
+.. toctree::
+   :caption: Application Notes 
+   :maxdepth: 2
+
+   fcu3502_4g_daemon_guide_en
+
+
+
+
+
 
 
 
