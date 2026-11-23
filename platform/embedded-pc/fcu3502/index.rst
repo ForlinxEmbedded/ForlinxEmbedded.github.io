@@ -62,7 +62,7 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
-   FCU3502_FlDesktop22_04_User_Manual
+   fcu3502_fldesktop22_04_user_manual-en
    fcu3502_embedded_control_unit_installation_user_manual-en
 
 

@@ -87,7 +87,7 @@ The functions of the FCU3502 Embedded Control Unit (Basic Edition) are as shown 
 
 ### 1.5 Enclosure Dimensions
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/4.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/4.png)
 
 ## 2\. FCU3502 Product Features
 
@@ -95,7 +95,7 @@ The functions of the FCU3502 Embedded Control Unit (Basic Edition) are as shown 
 
 The FCU3502 interface layout is shown below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/file.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/file.webp)
 
 FCU3502 Interface Diagram:
 
@@ -129,11 +129,11 @@ The FCU3502's default IP address on ETH0 is 192.168.0.232. The FCU3502 uses the 
 
 Open a terminal tool (taking MobaXterm as an example), configure it as follows and click "Open":
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214546242_8635b55d_5356_46ba_ad42_dab91a51514c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214546242_8635b55d_5356_46ba_ad42_dab91a51514c.png)
 
 Click ''OK''. Account: forlinx; password: forlinx.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214546696_29e5e412_7357_4e5a_9033_b1537765d65f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214546696_29e5e412_7357_4e5a_9033_b1537765d65f.png)
 
 #### 2.2.2 Debug Serial Port Login
 
@@ -215,7 +215,7 @@ Watchdog card enabled.
 
 ### 2.5 RESET Button Input
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/file.webp)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/file.webp)
 
 As shown in the figure, when you click the RESET button, the system restarts immediately, whilst the debug serial port prints the system start-up information.
 
@@ -225,7 +225,7 @@ As shown in the figure, when you click the RESET button, the system restarts imm
 
 The serial port connection structure is shown in the red box in the diagram.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1.png)
 
 #### 2.6.2 Correspondence Between Software and Hardware
 
@@ -244,13 +244,13 @@ Taking RS485\_1 as an example, if you need to test other RS485 interfaces, simpl
 
 This test method is demonstrated by communication with a computer. Connect the RS232-to-RS485 module to the RS485\_1 interface of the FCU3502 as follows:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/2.png)
 
 **FCU3502**
 
 Open the putty.exe software on the computer, set the serial port and baud rate, then launch the software:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214548483_7705e4f9_b909_446a_bd45_8c2a66169106.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214548767_1f56707e_bac0_4b20_a687_a0a64200feb0.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214548483_7705e4f9_b909_446a_bd45_8c2a66169106.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214548767_1f56707e_bac0_4b20_a687_a0a64200feb0.png)
 
 RS485\_1 Interface Send Test
 
@@ -268,7 +268,7 @@ root@FCU3502:~# echo "forlinx_485_test" > /dev/ttyS4
 
 RS485\_1 will send ''forlinx\_485\_test'' to the PC at a baud rate of 115200, and it will be received in the computer's Putty.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214548989_47ece110_d889_4a28_b8a9_081e8771092c.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214548989_47ece110_d889_4a28_b8a9_081e8771092c.png)
 
 RS485\_1 Interface Receive Test
 
@@ -278,11 +278,11 @@ root@FCU3502:~# cat /dev/ttyS4
 
 Enter a message in the computer's Putty software:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214549279_00f94f3f_8b52_4e8f_a262_dd8aa21a83c2.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214549279_00f94f3f_8b52_4e8f_a262_dd8aa21a83c2.png)
 
 The computer will send ''abcdefg'' to the PC at a baud rate of 115200, and it will be received by the FCU3502's RS485\_1.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214549700_83e1b610_c52e_4c46_a0e1_6d308cff81ee.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214549700_83e1b610_c52e_4c46_a0e1_6d308cff81ee.png)
 
 ### 2.7 Ethernet Usage
 
@@ -317,7 +317,7 @@ root@FCU3502:~# nmcli con mod 'Wired connection 1' ipv4.method manual ipv4.addre
 192.168.0.232/24 ipv4.gateway 192.168.0.1 ipv4.dns 8.8.8.8 connection.autoconnect yes
 ```
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/nmcli_params_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/nmcli_params_en.png)
 
 Activate the network connection after configuration to make the settings take effect.
 
@@ -341,7 +341,7 @@ device interrupt 80
 
 Open the iperf3 software on the PC via the command line (tool\\iperf-3.1.3-win64\\iperf3.exe) and set it to listening mode:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214550234_3b260e0a_e242_4607_8378_100d58818428.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214550234_3b260e0a_e242_4607_8378_100d58818428.png)
 
 Enter the following command on the FCU3502 terminal to perform the test:
 
@@ -351,11 +351,11 @@ root@FCU3502:~# iperf3 -c 192.168.0.110 -i 5 -t 60
 
 The print information on the PC side is:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214550649_38ec6cb4_6d71_4e05_8a0c_af1be71d9d97.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214550649_38ec6cb4_6d71_4e05_8a0c_af1be71d9d97.png)
 
 The print information on the FCU3502 is:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214551076_f7b2b62b_ad8f_4434_9910_189e069a7473.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214551076_f7b2b62b_ad8f_4434_9910_189e069a7473.png)
 
 ### 2.8 WiFi Usage Guide
 
@@ -475,7 +475,7 @@ Changing discoverable on succeeded
 
 Now, turn on your mobile phone's Bluetooth and search for a device named ''FCU3502''; select it to pair.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/bt_settings_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/bt_settings_en.png)
 
 The terminal will output the following prompt message, enter ''yes to confirm.''.
 
@@ -554,7 +554,7 @@ Request confirmation14]#
 
 After successful pairing, you can use the Bluetooth function on the smartphone to send files to the FCU3502.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/bt_transfer_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/bt_transfer_en.png)
 
 All received files are saved in the /tmp directory.
 
@@ -572,7 +572,7 @@ Device nodes corresponding to 4G and 5G modules are as follows:
 
 The 4G and 5G modules use a standard pop-up SIM card slot; press the SIM card to eject it, as shown in the image below:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214552073_7b120794_d7d9_4d7f_9706_68a2a2666402.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214552073_7b120794_d7d9_4d7f_9706_68a2a2666402.png)
 
 #### 2.10.1 4G/5G Identification and Determination
 
@@ -724,7 +724,7 @@ rtt min/avg/max/mdev = 109.127/119.767/144.044/13.396 ms
 
 #### 2.11.1 Interface Description
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/3.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/3.png)
 
 #### 2.11.2 Correspondence Between Software and Hardware
 
@@ -1003,11 +1003,11 @@ root@FCU3502:~# diff test test.dec
 
 The vsftpd service is automatically started upon system boot. You can access it by entering [ftp://192.168.0.232/](ftp://192.168.0.123/) in the address bar of the File Explorer on your computer, which will bring up an authentication interface. The username is forlinx, and the password is forlinx.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/Image_20261106093520.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/Image_20261106093520.png)
 
 Example screenshot of accessing FTP via the Windows File Explorer:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/Image_20261106093601.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/Image_20261106093601.png)
 
 ### 2.17 ModBus
 
@@ -1265,7 +1265,7 @@ Take the breath mode as an example to change the color:
 
 The default startup service uses 0000FF for blue. To set a new color, use a color picker or other tools to extract the RGB value of the target color, and apply it directly to the program parameters.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/color_picker_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/color_picker_en.png)
 
 Several common colors for testing:
 
@@ -1380,35 +1380,35 @@ Software Materials\\3-Usage Tools\\System Update Tools\\SDDiskTool\_cn\_v1.74.ra
 
 Step 1: Unzip SDDiskTool\_cn\_v1.74.rar to any path without Chinese characters
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1787716455978_73e6f344_4740_407f_8049_152811da9fb6.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1787716455978_73e6f344_4740_407f_8049_152811da9fb6.png)
 
 Step 2: Insert the USB drive or TF card via USB card reader into the computer's USB port.
 
 **Note: The maximum capacity of the test TF card is 32G. If the capacity is more than 32G, the burning may fail. It is recommended to use 16G.**
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/sd_tool_0_explorer_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/sd_tool_0_explorer_en.png)
 
 Step 3: Select a removable device recognised on the specified TF card.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/sd_tool_1_select_device_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/sd_tool_1_select_device_en.png)
 
 Select your target device and check the ''Firmware Update'' option.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/sd_tool_2_select_mode_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/sd_tool_2_select_mode_en.png)
 
 Step 4: Select the firmware image.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/sd_tool_3_select_firmware_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/sd_tool_3_select_firmware_en.png)
 
 Select the path of the firmware image to be flashed.
 
 Step 5: Start creation.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/sd_tool_4_confirm_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/sd_tool_4_confirm_en.png)
 
 Select ''Yes'' and wait for the creation to complete.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/sd_tool_5_created_en.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/sd_tool_5_created_en.png)
 
 Click ''OK''.
 
@@ -1431,7 +1431,7 @@ Preparation for programming: The eMMC indicator light is off:
 
 Serial port information during the flashing process:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/FCU3502_FlDesktop22_04_User_Manual/1790214554598_3e6d024f_4806_44cc_b373_58be04740ec7.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_user_manual-en/1790214554598_3e6d024f_4806_44cc_b373_58be04740ec7.png)
 
 If the device does not restart automatically after removing the TF card, you can complete the flashing process by restarting it manually. As shown in the figure above, the burning process takes about 28 minutes. Please wait patiently during the burning process.
 
