@@ -101,7 +101,7 @@ Revision: EC800KCNLCR07A04M04
 OK
 ```
 
-![](images_en_n03_4g/012_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_4g_daemon_guide_en/012_EN.png)
 
 **Quectel EC800K**, an LTE Cat.1 all-carrier 4G module with firmware EC800KCNLCR07A04M04 (China region version)
 
@@ -120,7 +120,7 @@ root@FCU1501:/userdata# [12900.990599] usb 2-1.1: new high-speed USB device numb
 [12902.650211] usb 2-1.1: GSM modem (1-port) converter now attached to ttyUSB2 # Network interface re-creation finished
 ```
 
-![](images_en_n03_4g/013_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_4g_daemon_guide_en/013_EN.png)
 
 ```plain
 root@FCU1501:/userdata# ls /dev/ttyUSB* # Confirm module status
@@ -154,7 +154,7 @@ Return values:
 
 
 
-![](images_en_n03_4g/014_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_4g_daemon_guide_en/014_EN.png)
 
 ### 2.3 Dial-Up Networking
 
@@ -177,7 +177,7 @@ collisions:0 txqueuelen:1000
 RX bytes:3560 (3.4 KiB) TX bytes:5038 (4.9 KiB) # The public IP address and other details were obtained
 ```
 
-![](images_en_n03_4g/015_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_4g_daemon_guide_en/015_EN.png)
 
 ### 2.4 4G Daemon
 Test the daemon:
@@ -213,7 +213,7 @@ udhcpc: lease of 10.75.183.13 obtained from 169.254.0.1, lease time 86400
 [09-14_01:50:44:079] adding dns 111.11.1.3
 ```
 
-![](images_en_n03_4g/016_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_4g_daemon_guide_en/016_EN.png)
 
 Enable automatic startup of the 4G daemon
 
@@ -240,7 +240,7 @@ echo "usb0 not ready after 60s, mobilemgmt skipped"
 fi# If the module is not detected as ready, print a message indicating the process did not start
 ```
 
-![](images_en_n03_4g/017_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_4g_daemon_guide_en/017_EN.png)
 
 At this point, the 4G daemon is functional. You can perform stability testing by repeatedly soft- and hard-resetting the module and adjusting the 4G antenna.
 
