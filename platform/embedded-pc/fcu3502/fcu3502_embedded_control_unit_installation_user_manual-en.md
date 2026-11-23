@@ -29,11 +29,11 @@ Application scenarios: smart cockpit, in-vehicle vision, intelligent transportat
 
 
 
-![](images_en_m01_install/001_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_embedded_control_unit_installation_user_manual-en/001_EN.png)
 
 ### 2.2 Interface Diagram
 
-![](images_en_m01_install/002_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_embedded_control_unit_installation_user_manual-en/002_EN.png)
 
 HDMI IN: Video input interface
 
@@ -104,7 +104,7 @@ LED: indicator light
 
 
 ## 4. Mechanical Dimensions
-L：233mm   W：141mm   H：66mm![](images_en_m01_install/003_EN.png)![](images_en_m01_install/004_EN.png)
+L：233mm   W：141mm   H：66mm![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_embedded_control_unit_installation_user_manual-en/003_EN.png)![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_embedded_control_unit_installation_user_manual-en/004_EN.png)
 
 Overall dimensions diagram
 
