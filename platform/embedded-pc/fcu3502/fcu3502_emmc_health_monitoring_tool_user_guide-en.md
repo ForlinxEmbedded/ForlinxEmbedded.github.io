@@ -42,18 +42,18 @@ Alarm messages are printed in red on the debug serial port.
 
 If the eMMC has exceeded its service life, replace it with a new one.
 
-![](images_en_n01_emmc/005_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_emmc_health_monitoring_tool_user_guide-en/005_EN.png)
 
 If the host's total writes to the eMMC in the last check period exceed the threshold and this continues, the eMMC cannot be guaranteed to reach its expected service life.
 
-![](images_en_n01_emmc/006_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_emmc_health_monitoring_tool_user_guide-en/006_EN.png)
 
 If the number of eMMC bad blocks has increased, check the file system integrity.
 
 ## 5. Usage Examples
 Using an 8 GB Longsys eMMC as an example, run the eMMC health monitoring tool; the resulting health.info is as follows:
 
-![](images_en_n01_emmc/007_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_emmc_health_monitoring_tool_user_guide-en/007_EN.png)
 
 ## 6. Follow-up Checks
 To determine whether the eMMC has reached the end of its service life or is damaged, check two main points:

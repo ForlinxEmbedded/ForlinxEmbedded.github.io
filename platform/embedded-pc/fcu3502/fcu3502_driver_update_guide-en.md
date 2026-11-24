@@ -16,7 +16,7 @@ rknn3_transfer_proxy devices
 
 This command queries the hardware AI accelerator on the PCIe interface; you can confirm it by its unique ID.
 
-![](images_en_n02_driver/008_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_driver_update_guide-en/008_EN.png)
 
 ### 1.2 Updating the RKNN Driver
 #### 1.2.1 Prerequisites
@@ -60,16 +60,16 @@ After rebooting, query from the command line; both the device hardware version a
 rknn-smi info
 ```
 
-![](images_en_n02_driver/009_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_driver_update_guide-en/009_EN.png)
 
 ```plain
 rknn-smi --version
 ```
 
-![](images_en_n02_driver/010_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_driver_update_guide-en/010_EN.png)
 
 You can then continue deploying large models such as QWEN3.5.
 
-![](images_en_n02_driver/011_EN.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_driver_update_guide-en/011_EN.png)
 
 
