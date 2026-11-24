@@ -38,7 +38,7 @@ cd /tmp && tar xzf installer.tgz && ./install.sh
 
 - Copy the pcie-rkep-build.sh script to the RK35XX platform SDK directory.
 
-![](image-1795503470399.png)  
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_driver_and_firmware_installation_guide/image_1795503470399.png)  
 
 - Run the pcie-rkep-build.sh script to compile. 
 
@@ -48,7 +48,7 @@ cd /tmp && tar xzf installer.tgz && ./install.sh
 
 - Once compilation is complete, the corresponding ko file will be generated.
 
-![](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_driver_and_firmware_installation_guide/image.png)
 
 - Deploy the compiled  pcie-rkep.ko driver file to:  /usr/lib/modules/pcie-rkep.ko , load the 
 
@@ -71,5 +71,5 @@ crw------- 1 root root 10, 121 Jan 1 12:02 /dev/pcie-rkep-0001:11:00.0
 ## Environment Verification
 After RK1820/RK1828 starts, you can use rknn-smi to obtain information:
 
-![](image-1795507757483.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_driver_and_firmware_installation_guide/image_1795507757483.png)
 
