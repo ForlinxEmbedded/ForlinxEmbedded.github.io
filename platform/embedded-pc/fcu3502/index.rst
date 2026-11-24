@@ -42,6 +42,17 @@ FCU3502 Embedded Computer Manual
 
 
 
+RK1820 & RK1828
+----------------
+
+.. toctree::
+   :caption: RK1820 & RK1828
+   :maxdepth: 2
+
+
+
+
+
 HARDWARE
 ---------
 
