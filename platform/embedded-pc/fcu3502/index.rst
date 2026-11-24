@@ -77,6 +77,8 @@ Application Notes
    :maxdepth: 2
 
    fcu3502_4g_daemon_guide_en
+   fcu3502_driver_update_guide-en
+   fcu3502_emmc_health_monitoring_tool_user_guide-en
 
 
 
