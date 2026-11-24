@@ -18,7 +18,7 @@ The drivers and utilities used for the components are subject to the copyrights 
 
 | Process name: mmcinfo       <br/>Usage: ./mmcinfo device [options]… … | | |
 | --- | --- | --- |
-| **Brief description:** Place the manuid.conf file in the board's /etc directory. If the file is missing or does not contain the manuid for the corresponding eMMC vendor, the program will report an error.<br/>Startup methods: boot-time autostart script check, scheduled task (each platform deploys its own scheduled service, e.g., a check run daily at 2:00 a.m.) | | |
+| **Brief description:** Place the manuid.conf file in the board's /etc directory. <br />If the file is missing or does not contain the manuid for the corresponding eMMC vendor, the program will report an error.<br/>Startup methods: boot-time autostart script check, scheduled task (each platform deploys its own scheduled service, e.g., a check run daily at 2:00 a.m.) | | |
 | [options] | device [-y] [-debug] [-v] | |
 | **Parameter** | **Meaning** | **Description** |
 | device | Mount node | **Note: This is not the partition name, but the eMMC disk name.**<br/>Example: /dev/mmcblk0, /dev/mmcblk2 |
