@@ -38,7 +38,7 @@ cd /tmp && tar xzf installer.tgz && ./install.sh
 
 - Copy the pcie-rkep-build.sh script to the RK35XX platform SDK directory.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/rk182x_driver_and_firmware_installation_guide-en/image_1795503470399.png)  
+![](image-1795503470399.png)  
 
 - Run the pcie-rkep-build.sh script to compile. 
 
@@ -48,7 +48,7 @@ cd /tmp && tar xzf installer.tgz && ./install.sh
 
 - Once compilation is complete, the corresponding ko file will be generated.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/rk182x_driver_and_firmware_installation_guide-en/image.png)
+![](image.png)
 
 - Deploy the compiled  pcie-rkep.ko driver file to:  /usr/lib/modules/pcie-rkep.ko , load the 
 
@@ -71,5 +71,5 @@ crw------- 1 root root 10, 121 Jan 1 12:02 /dev/pcie-rkep-0001:11:00.0
 ## Environment Verification
 After RK1820/RK1828 starts, you can use rknn-smi to obtain information:
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/rk182x_driver_and_firmware_installation_guide-en/image_1795503896774.png)
+![](image-1795507757483.png)
 
