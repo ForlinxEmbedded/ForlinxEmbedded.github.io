@@ -49,6 +49,8 @@ RK1820 & RK1828
    :caption: RK1820 & RK1828
    :maxdepth: 2
 
+   rk182x_driver_and_firmware_installation_guide-en
+
 
 
 
