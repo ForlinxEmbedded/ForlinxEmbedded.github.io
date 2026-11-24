@@ -49,7 +49,7 @@ RK1820 & RK1828
    :caption: RK1820 & RK1828
    :maxdepth: 2
 
-   rk182x_driver_and_firmware_installation_guide-en
+   RK1820 & RK1828 Manuals <https://docs.forlinx.net/ai-accelerator/rk1820_rk1828/index.html>
 
 
 
