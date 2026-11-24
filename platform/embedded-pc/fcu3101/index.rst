@@ -62,8 +62,8 @@ SOFTWARE
    :caption: SOFTWARE
    :maxdepth: 2
 
-   fcu3101-software-user-manual-EN
-   fcu3101-ai-algorithm-user-manual-EN
+   fcu3101-software-user-manual-en
+   fcu3101-ai-algorithm-user-manual-en
 
 
 
@@ -74,6 +74,8 @@ APPLICATION NOTES
 .. toctree::
    :caption: APPLICATION NOTES
    :maxdepth: 2
+
+   fcu3101_application_update_manual_linux6.1.141_en
 
 
 
