@@ -1,4 +1,4 @@
-# RK1820/RK1828 AI Accelerator Development Guide
+# AI Accelerator Development Guide
 
 > Based on OK3588-C development board + RK182X co-processor architecture, RKNN3 SDK V1.0.0 \| Test data based on RK1828
 
@@ -518,7 +518,7 @@ This chapter uses YOLOv8s to demonstrate the complete workflow from download, co
 
 ### 5.1 Model Acquisition \& Conversion
 
-**1\. Download Pre-converted Model**
+- Download Pre-converted Model
 
 ```bash
 cd Projects/rknn3-model-zoo/examples/yolov8/model
@@ -527,7 +527,7 @@ cd Projects/rknn3-model-zoo/examples/yolov8/model
 
 The model with the `_rknn3` suffix is a version specifically optimized for RK182X, where the YOLO post-processing (decoding, NMS) is built into the coprocessor side. If you need to use custom-trained YOLOv8 weights, you can export ONNX based on the `yolov8-postprocess.tar.gz` project.
 
-**2\. ONNX → RKNN Conversion**
+- ONNX → RKNN Conversion
 
 ```bash
 cd ../python
@@ -552,7 +552,8 @@ rknn.export_rknn(rknn_path)
 
 ### 5.2 C++ Interface Deployment
 
-1\. Compilation
+- Compilation
+
 
 ```bash
 cd Projects/rknn3-model-zoo
@@ -560,7 +561,8 @@ export GCC_COMPILER=Projects/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/b
 ./build-linux.sh -t rk3588 -a aarch64 -b Release -d yolov8
 ```
 
-2\. Source Code Analysis
+- Source Code Analysis
+
 
 CNN inference follows the standard RKNN3 C++ API flow:
 
@@ -623,7 +625,8 @@ int main(int argc, char **argv)
 }
 ```
 
-3\. Board-side Execution
+- Board-side Execution
+
 
 ```bash
 adb push install/rk3588_linux_aarch64/rknn_yolov8_demo /rknn_yolov8_demo
@@ -652,7 +655,7 @@ person @ (109 235 224 536) 0.853
 
 The Python inference on the device board is implemented using `rknn3-toolkit-lite`. The lite package must first be installed on the board (refer to section 3.3 for installation methods, using the appropriate whl package for the target board).
 
-**CNN Python Inference (Device Board):**
+CNN Python Inference (Device Board):
 
 ```python
 from rknnlite.api import RKNNLite
@@ -708,7 +711,8 @@ This chapter uses Qwen2.5-3B-Instruct to demonstrate the complete LLM model depl
 
 ### 6.1 Model Acquisition \& Conversion
 
-1\. Export ONNX + Supporting Files
+- Export ONNX + Supporting Files
+
 
 ```bash
 cd Projects/rknn3-model-zoo
@@ -723,7 +727,8 @@ Output：`Qwen2.5-3B-Instruct.onnx` + `.config.pkl` + `.tokenizer.gguf` + `.embe
 
 > AWQ+GRQ quantization offers higher accuracy and does not require a calibration dataset for RKNN conversion. 3B model conversion is recommended with 24GB+ physical RAM + GPU.
 
-2\. ONNX → RKNN Conversion
+- ONNX → RKNN Conversion
+
 
 ```bash
 python export_rknn.py \
@@ -735,14 +740,16 @@ python export_rknn.py \
 
 ### 6.2 C++ Interface Deployment
 
-1\. Compilation
+- Compilation
+
 
 ```bash
 cd Projects/rknn3-model-zoo
 ./build-linux.sh -t rk3588 -a aarch64 -b Release -d Qwen2_5
 ```
 
-2\. Source Code Analysis 
+- Source Code Analysis 
+
 
 LLM deployment introduces callback-driven execution:
 
@@ -836,7 +843,8 @@ int main(int argc, char **argv)
 }
 ```
 
-3\. Board-side Execution
+- Board-side Execution
+
 
 ```bash
 adb push install/rk3588_linux_aarch64/rknn_Qwen2_5_demo/ /rknn_Qwen2_5_demo/
@@ -921,7 +929,7 @@ Results:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1776913942396_f07899be_18c3_4e13_b2bf_729817d37a96.png)
 
-**If testing remotely from a PC, replace localhost with the board IP.**
+If testing remotely from a PC, replace localhost with the board IP.
 
 ```bash
 curl http://:8080/v1/chat/completions \
@@ -1106,7 +1114,7 @@ free(img_embeds);
 delete tokenizer;
 ```
 
-**3\) Run**
+Run
 
 ```bash
 ./rknn_qwen2_5_vl_demo \
@@ -1167,7 +1175,7 @@ rknn_llm.release()
 
 ### 7.4 OpenAI Interface Deployment
 
-**Start the Server**
+Start the server.
 
 ```bash
 rkllm3-server -m model/Qwen2.5-VL-3B-llm.rknn \
@@ -1182,7 +1190,7 @@ rkllm3-server -m model/Qwen2.5-VL-3B-llm.rknn \
   --img-width 392 --img-height 392
 ```
 
-**First, test with plain text to confirm the server is functioning correctly.**
+First, test with plain text to confirm the server is functioning correctly.
 
 ```bash
 curl http://localhost:8080/v1/chat/completions \
@@ -1190,7 +1198,7 @@ curl http://localhost:8080/v1/chat/completions \
   -d '{"messages":[{"role":"user","content":"你好"}],"max_tokens":64}'
 ```
 
-**Results:**
+Results:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1776914595811_2a0b4e8c_de37_499f_aaf1_fc7eeb951002.png)
 
@@ -1222,7 +1230,7 @@ print(json.loads(resp.read()))
 "
 ```
 
-**Results:**
+Results:
 
 ![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/RK1820_RK1828_AI_Accelerator_Development_Guide/1776914829674_9745f800_a529_4484_9647_6a6622be301e.png)
 
