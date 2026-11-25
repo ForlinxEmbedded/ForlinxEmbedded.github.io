@@ -343,7 +343,7 @@ rknn3_transfer_proxy devices
 
 This command queries the hardware compute card on the PCIe interface, which can be identified by its unique ID.
 
-![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22.04_application_update_manual-en/images_fcu3502_desktop22_en/img174.png)
+![Image](img174.png)
 
 ### 5.2 Updating the rknn3 Driver
 #### 5.2.1 Prerequisites
