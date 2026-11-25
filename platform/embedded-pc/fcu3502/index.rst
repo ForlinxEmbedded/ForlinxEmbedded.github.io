@@ -77,6 +77,7 @@ SOFTWARE
    :maxdepth: 2
 
    fcu3502_fldesktop22_04_user_manual-en
+   fcu3502_fldesktop22.04_application_update_manual-en
    fcu3502_fldesktop22_04_algorithm_user_manual-en
    
 
