@@ -18,6 +18,8 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
+   rk182x_assembly_power_on_guide-en
+
    
 
 
@@ -31,7 +33,7 @@ HARDWARE
 
 
 RKNN3 SDK 
----------
+----------
 .. toctree::
    :caption: RKNN3 SDK 
    :maxdepth: 2
