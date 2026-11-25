@@ -18,7 +18,7 @@ HARDWARE
    :caption: HARDWARE
    :maxdepth: 2
 
-   RK1820_RK1828_AI_Accelerator_Development_Guide
+   rk1820_rk1828_ai_accelerator_development_guide-en
 
 
 
@@ -30,11 +30,13 @@ HARDWARE
    
 
 
-SOFTWARE 
+RKNN3 SDK 
 ---------
 .. toctree::
-   :caption: SOFTWARE
+   :caption: RKNN3 SDK 
    :maxdepth: 2
+
+   rk182x_driver_and_firmware_installation_guide-en
 
 
 
