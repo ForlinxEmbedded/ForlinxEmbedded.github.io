@@ -96,7 +96,7 @@ ps aux | grep mosquitto
 
 Before logging in, set an accessible IP address for the device. Once you can reach that IP (for example, by pinging it), open a browser and enter http://IP to access the web interface.
 
-![](images_fcu3502_desktop22_en/img010.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img010.png)
 
 The account and password fields on the login page display the initial account and password. Enter the username and password as prompted, then click the Login button.
 
@@ -108,25 +108,25 @@ After the page stops requesting backend APIs, the backend keeps the login valid 
 ### 2.3 Home Page
 The home page displays the monitoring dashboard, including camera online status, real-time alarms, camera previews, and various statistics.
 
-![](images_fcu3502_desktop22_en/img011.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img011.png)
 
-The monitoring dashboard on the home page supports full-screen display. Click the full-screen button to the left of the time in the upper right ![](images_fcu3502_desktop22_en/img012.png) to display the content in full screen:
+The monitoring dashboard on the home page supports full-screen display. Click the full-screen button to the left of the time in the upper right ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img012.png) to display the content in full screen:
 
-![](images_fcu3502_desktop22_en/img013.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img013.png)
 
 Press Esc or click the icon again to exit full-screen mode.
 
 The live monitoring on the home page also supports double-clicking a frame to display it full screen (showing only the live monitoring frame).
 
-![](images_fcu3502_desktop22_en/img014.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img014.png)
 
 The upper-right corner of the live view shows three vertically arranged dots (also available in full-screen mode). Click them to display a camera list overlay, where you can select multiple cameras for preview.
 
-![](images_fcu3502_desktop22_en/img015.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img015.png)
 
 The preview feature mainly shows inference results; the annotations in the upper-left corner of the bounding boxes in the frame indicate the inference status.
 
-![](images_fcu3502_desktop22_en/img016.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img016.png)
 
 As shown above, with the Fall Detection algorithm enabled and the inference results including both person object detection and human pose detection, the bounding boxes and pose keypoint connections are drawn.
 
@@ -134,9 +134,9 @@ As shown above, with the Fall Detection algorithm enabled and the inference resu
 #### 2.4.1 Algorithm Types
 Algorithm types group algorithms into categories, so that when selecting an algorithm for a camera you can first choose a category and then an algorithm. On the algorithm category page, you can add, edit, and delete categories.
 
-![](images_fcu3502_desktop22_en/img017.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img017.png)
 
-![](images_fcu3502_desktop22_en/img018.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img018.png)
 
 The display order is sorted by number in ascending order.
 
@@ -148,7 +148,7 @@ The algorithm list maintains the algorithms in the system. Adding and editing al
 
 To add an algorithm:
 
-![](images_fcu3502_desktop22_en/img019.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img019.png)
 
 The algorithm name summarizes the algorithm's function and helps users identify it.
 
@@ -168,7 +168,7 @@ Default parameters are filled in automatically according to the selected paramet
 
 For example, the smoke alarm algorithm is configured as follows:
 
-![](images_fcu3502_desktop22_en/img020.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img020.png)
 
 For algorithm development, contact us to obtain example code.
 
@@ -176,15 +176,15 @@ After adding an algorithm, you can enable or disable it using the Enable/Disable
 
 The model file management interface is as follows:
 
-![](images_fcu3502_desktop22_en/img021.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img021.png)
 
 First click "Select File", choose an xxx.rknn file, then click Upload. If the file name matches an existing model name, a dialog will ask whether to continue:
 
-![](images_fcu3502_desktop22_en/img022.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img022.png)
 
 Click Confirm to update the file. If no file with the same name exists, an upload success message appears directly.
 
-![](images_fcu3502_desktop22_en/img023.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img023.png)
 
 Once the algorithm is ready, click Export to export its xxx.algo file. Send the file to users for import; they can then use the algorithm to configure cameras.
 
@@ -192,7 +192,7 @@ Once the algorithm is ready, click Export to export its xxx.algo file. Send the 
 #### 2.5.1 Face Library
 The face library page maintains the information required for face recognition. Photos should preferably resemble ID photos, with the face occupying most of the image.
 
-![](images_fcu3502_desktop22_en/img024.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img024.png)
 
 Add: Click Add to enter the name, gender, and other information for the face, upload a face image (jpg/png supported), then click Save.
 
@@ -206,16 +206,16 @@ Prepare the face images and compress them to a width of 600 pixels, then convert
 
 ### 2.6 Cameras
 #### 2.6.1 Camera List
-![](images_fcu3502_desktop22_en/img025.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img025.png)
 
 The camera list page displays all configured cameras.
 
 #### 2.6.2 Adding a Camera
 Click Add Camera:
 
-![](images_fcu3502_desktop22_en/img026.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img026.png)
 
-![](images_fcu3502_desktop22_en/img027.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img027.png)
 
 As shown above, **<font style="color:#0000FF;">Name</font>** can be filled in according to the camera's location or function.
 
@@ -231,7 +231,7 @@ You can also click the Select button below the connection address field to add a
 
 After entering the connection address, click the Snapshot (Test Camera) button to take a snapshot and verify that the camera works, then click "Get Parameters Below":
 
-![](images_fcu3502_desktop22_en/img028.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img028.png)
 
 **<font style="color:#0000FF;">Encoding format, frame size, and frame rate</font>** are all detected after clicking this button.
 
@@ -239,15 +239,15 @@ After entering the connection address, click the Snapshot (Test Camera) button t
 
 **<font style="color:#0000FF;">Enabled Algorithms</font>**: Click the category tabs below to switch between algorithms in each category. If there are many algorithms, you can also enter a name to filter them. Once you find the algorithm you want to add, click its name to add it to Enabled Algorithms:
 
-![](images_fcu3502_desktop22_en/img029.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img029.png)
 
 **Note: Once added, an algorithm no longer appears in the categories below but is shown under Enabled Algorithms above.**
 
 After an algorithm is added, its parameters are displayed below. Click the algorithm name under Algorithm Parameters to expand and view the detailed parameters.
 
-![](images_fcu3502_desktop22_en/img030.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img030.png)
 
-![](images_fcu3502_desktop22_en/img031.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img031.png)
 
 The specific parameters depend on each algorithm; see the Algorithm Introduction chapter for details.
 
@@ -270,7 +270,7 @@ The buttons in the camera Operation column are described below:
 
 **Recorded Video List**: Click the More button next to a camera, then click Recorded Video List. In the dialog, click Send Recording Request; another window opens where you enter the recording duration in minutes (1-10) and confirm. After the specified time has elapsed, reopen this list to see the recorded videos, which can be played, downloaded, or deleted:
 
-![](images_fcu3502_desktop22_en/img032.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img032.png)
 
 **<font style="color:#FF0000;">Note: While recording, inference is paused and no inference boxes appear in the live view.</font>**
 
@@ -289,68 +289,68 @@ The buttons in the camera Operation column are described below:
 #### 2.6.3 Live View
 Click the Camera > Live View menu on the left to open the live view page, which displays the first enabled camera by default.
 
-![](images_fcu3502_desktop22_en/img033.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img033.png)
 
 This page is mainly used to check camera capture status and alarm algorithm hits. When an alarm algorithm hits a target, the inference bounding box information is pushed to the live view for display.
 
 When different frames are selected, the backend automatically tiles them according to the count. 4-grid, 9-grid, and 16-grid layouts are supported.
 
-![](images_fcu3502_desktop22_en/img034.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img034.png)
 
 **<font style="color:#FF0000;">Note: A detected target does not necessarily trigger an alarm. Alarms are generated according to the algorithm's threshold parameters. For example, safety helmet detection may require several hits (configurable) to produce one alarm, and only one alarm is generated within a given time interval.</font>**
 
 #### 2.6.4 Real-Time Alarms
 Click the Play button to the left of the avatar on the page to toggle real-time alarm display:
 
-![](images_fcu3502_desktop22_en/img035.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img035.png)
 
-![](images_fcu3502_desktop22_en/img036.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img036.png)
 
 After the Play button is clicked, it changes to a Pause button with two vertical bars. When a real-time alarm occurs, a message box pops up on the left side of the page.
 
-![](images_fcu3502_desktop22_en/img037.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img037.png)
 
 If the Pause button is clicked, it switches back to the Play button. In this state, a real-time alarm is indicated only by a number on the small bell icon:
 
-![](images_fcu3502_desktop22_en/img038.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img038.png)
 
 #### 2.6.5 Alarm List
 Click the small alarm bell in the upper-right corner of the page, or click the Alarms > Alarm List menu on the left, to open the alarm list page. This page shows the historical alarm records for all cameras.
 
-![](images_fcu3502_desktop22_en/img039.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img039.png)
 
 Click the Details button on the right to view more detailed information, including a preview of the alarm video (if the alarm video feature is enabled on the device).
 
-![](images_fcu3502_desktop22_en/img040.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img040.png)
 
 To enable alarm video, set app.alarm_mp4_enable to true in the application configuration /web/bin/cfg/config.json, then restart all services on the Application > Application Monitor page (or run /web/shell/restart.sh in the device's SSH terminal).
 
 On this page, you can acknowledge, mark as false alarm, or delete alarm records.
 
-![](images_fcu3502_desktop22_en/img041.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img041.png)
 
 Select the checkboxes on the left and click the corresponding buttons in the upper right to perform batch operations.
 
-![](images_fcu3502_desktop22_en/img042.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img042.png)
 
-**<font style="color:#FF0000;">Note: The last button</font>![](images_fcu3502_desktop22_en/img043.png)<font style="color:#FF0000;"> clears all alarm records. It is typically used after deployment testing passes and before going live. Use with caution!!</font>**
+**<font style="color:#FF0000;">Note: The last button</font>![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img043.png)<font style="color:#FF0000;"> clears all alarm records. It is typically used after deployment testing passes and before going live. Use with caution!!</font>**
 
 #### 2.6.6 Discovering Cameras via ONVIF
 This feature requires one of the network interface's IP addresses to be on the same subnet as the camera. For example, if the camera address is 192.168.1.xxx, configure an IP in that subnet on the device. The new web interface provides a method for setting multiple IPs, as shown below:
 
-![](images_fcu3502_desktop22_en/img044.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img044.png)
 
 After setting an IP in the same subnet, click the Edit button next to a camera on the camera list page, or click Add Camera, then click the Select button below the connection address:
 
 In the dialog, select the ONVIF tab, choose an IP in the same subnet (be sure to select the one you configured), and click "Discover ONVIF Devices". The camera drop-down list will be populated. Select the camera to bind and enter the username and password set on the camera's ONVIF page. Note that these must be the ONVIF credentials, not the platform login credentials. The protocol-binding user interface typically looks like the screenshots below:
 
-![](images_fcu3502_desktop22_en/img045.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img045.png)
 
-![](images_fcu3502_desktop22_en/img046.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img046.png)
 
 However, the camera's own management user does not mention the word "protocol", as shown below:
 
-![](images_fcu3502_desktop22_en/img047.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img047.png)
 
 After entering the correct username and password, click Get RTSP Address and wait a few seconds; the RTSP address field will be populated.
 
@@ -378,24 +378,24 @@ default via 10.10.23.254 dev wlx387acc708d34 proto dhcp metric 20604
 
 We can see that 192.168.1.0/24 exists on both eth0 and eth1. Set eth1 to a different subnet and enable it to automatically remove that route. After removal, repeat the operation to obtain the RTSP address, as shown below:
 
-![](images_fcu3502_desktop22_en/img048.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img048.png)
 
 Click OK to return to the Edit Camera page, then click Snapshot to verify the correct camera is selected. Click "Get Parameters Below" to obtain the frame rate, fill in the frame-skip count accordingly, select the appropriate algorithm, and save.
 
 #### 2.6.7 Selecting a GB28181 Camera
 First configure the server parameters as described in the GB28181 Configuration section below, as shown:
 
-![](images_fcu3502_desktop22_en/img049.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img049.png)
 
 Configure GB28181 on the camera side accordingly, as shown:
 
-![](images_fcu3502_desktop22_en/img050.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img050.png)
 
 After configuration, wait about 1 minute.
 
 On the camera list page, click Add Camera or Edit a camera, click the Select button in the drawer, and select the GB28181 tab to see the list of online cameras. Choose the appropriate camera; the remaining steps are the same as for adding an RTSP address camera.
 
-![](images_fcu3502_desktop22_en/img051.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img051.png)
 
 #### 2.6.8 IP Configuration
 Different FCU devices use different operating systems. Depending on the IP management tools available in each system, you can choose different methods to set the device IP manually. This method does not rely on the web interface and is suitable for users familiar with Linux system configuration or those who want to control the network through scripts.
@@ -455,25 +455,25 @@ Version 1.0.1 adds video inference. Usage is as follows:
 
 Click the Edit button on the Camera > Camera List page, then enter the video's absolute path in the field below the connection address in the drawer on the right (if you know where the .mp4 file is on the device), or click the Select button at the lower-left of the field (if the video has not yet been transferred to the device).
 
-![](images_fcu3502_desktop22_en/img052.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img052.png)
 
 After clicking Select, open the MP4/JPG tab in the new dialog to see the list of uploaded files. Video inference supports videos or images in mp4/jpg/png format. Click Upload to select a video or image; after uploading, select the uploaded video (file names are changed, so note the approximate file size to identify it).
 
-![](images_fcu3502_desktop22_en/img053.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img053.png)
 
 After selection, the connection address is filled with the file's absolute path. For a video, you can also click "Get Parameters Below" to obtain the frame rate and fill in the frame-skip parameter accordingly. The remaining steps are the same as for a normal camera; after adding the desired algorithm, click Save.
 
 After saving, if the status is Disabled, click the "Disabled" label to switch to "Enabled". Once enabled, wait a few seconds and click the Refresh button above to see the "Inferring" status:
 
-![](images_fcu3502_desktop22_en/img054.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img054.png)
 
 The Refresh button is at the top of the page, as shown:
 
-![](images_fcu3502_desktop22_en/img055.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img055.png)
 
 After waiting for the video duration (i.e., until playback finishes), click Refresh again. The camera will show as Enabled but offline (playback complete), with a blue Play button next to the connection address:
 
-![](images_fcu3502_desktop22_en/img056.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img056.png)
 
 Click the Play button to preview the mp4 playback or download the file directly. On the FCU3501, videos are saved as mp4 files, which browsers can play directly for preview. To download, right-click the previewed video and select "Save video as" to save it locally. On the FCU3101, videos are saved in avi format and downloaded directly by the browser. Note that operations may differ between browsers, so the button names you see may vary.
 
@@ -483,22 +483,22 @@ For a single image, refresh the page two seconds after enabling the camera to se
 #### 2.7.1 User Management
 On the User Management page, you can add, edit, and delete users.
 
-![](images_fcu3502_desktop22_en/img057.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img057.png)
 
 Username, password, name, and role can all be modified.
 
-![](images_fcu3502_desktop22_en/img058.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img058.png)
 
 The built-in accounts at the bottom cannot be deleted and their roles cannot be changed, to prevent accidental loss of all manageable web accounts.
 
-![](images_fcu3502_desktop22_en/img059.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img059.png)
 
 **<font style="color:#FF0000;">Note: The Role drop-down list is populated from the Role Permission Management page. If you do not need detailed user differentiation, simply use the built-in admin account.</font>**
 
 #### 2.7.2 Role Management
 If you need to differentiate user permissions, open the Role Permission page, add several roles, and configure different page and button operation permissions for each role, as shown:
 
-![](images_fcu3502_desktop22_en/img060.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img060.png)
 
 
 
@@ -506,42 +506,42 @@ The first and second levels correspond to the first- and second-level menu names
 
 **<font style="color:#FF0000;">Note: The super administrator role does not appear in the role list. This user is not subject to permission control and has all operation permissions by default.</font>**
 
-![](images_fcu3502_desktop22_en/img061.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img061.png)
 
 ### 2.8 Network
 #### 2.8.1 Wired Network
 The Wired Network page displays the network interface's MAC address, IP address, and other information.
 
-![](images_fcu3502_desktop22_en/img062.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img062.png)
 
 Click the Settings button to configure the network. The new web interface supports setting multiple IPs, allowing you to bind different subnet IPs to the same network interface. However, if IP addresses are not scarce on site, it is recommended to use a single IP for management.
 
 The new web interface lets you set the enabled status of an IP. If Auto Connect is grayed out, the interface will not be enabled automatically after saving or rebooting. Disable or enable it as needed. **<font style="color:#FF0000;">If the interface contains the IP used to access the web interface, this option must be colored (enabled), or the network will be disconnected immediately or after reboot.</font>**
 
-![](images_fcu3502_desktop22_en/img063.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img063.png)
 
 The old interface is shown below; only one IP can be entered:
 
-![](images_fcu3502_desktop22_en/img064.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img064.png)
 
 There is no limit on DNS settings; generally 1-2 are sufficient.
 
 #### 2.8.2 Wireless Network
 The Network > Wireless Network menu shows all supported wireless networks, typically 1-2 networks depending on the FCU type.
 
-![](images_fcu3502_desktop22_en/img065.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img065.png)
 
 Click the Connect button to see all scanned wireless networks in the dialog.
 
-![](images_fcu3502_desktop22_en/img066.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img066.png)
 
-![](images_fcu3502_desktop22_en/img067.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img067.png)
 
 Click the Connect button, enter the Wi-Fi password in the dialog, and click Confirm to connect to the Wi-Fi network.
 
 After connection, the status shows Connected.
 
-![](images_fcu3502_desktop22_en/img068.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img068.png)
 
 <font style="color:#FF0000;">**Note: Once a Wi-Fi network is connected successfully, the system will reconnect to it automatically after each reboot.**</font>
 
@@ -550,17 +550,17 @@ For a standard IoT SIM card, no username or authentication method is required. K
 
 Likewise, set Auto Connect and save to let the backend process maintain the mobile network connection.
 
-![](images_fcu3502_desktop22_en/img069.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img069.png)
 
 ### 2.9 Applications
 #### 2.9.1 Application Monitor
 The Application Monitor page shows whether the applications required by the services are running normally, as shown:
 
-![](images_fcu3502_desktop22_en/img070.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img070.png)
 
 The processes shown above are briefly described in the Description column; hover over the description text to see detailed information.
 
-![](images_fcu3502_desktop22_en/img071.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img071.png)
 
 #### 2.9.2 Application Upgrade
 The Application Upgrade page only requires uploading a valid zip archive whose root directory contains an update.sh shell script that performs the upgrade operations. Application upgrade is therefore general-purpose: in addition to upgrading the web management program, it can upgrade all other applications.
@@ -571,21 +571,21 @@ echo "OK" > /tmp/test_upgrade.txt
 
 Then compress update.sh into a zip file:
 
-![](images_fcu3502_desktop22_en/img072.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img072.png)
 
 On the page, click Select File:
 
-![](images_fcu3502_desktop22_en/img073.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img073.png)
 
-![](images_fcu3502_desktop22_en/img074.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img074.png)
 
 Select update.zip and click Open:
 
-![](images_fcu3502_desktop22_en/img075.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img075.png)
 
 Click Start Upgrade to see the success message:
 
-![](images_fcu3502_desktop22_en/img076.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img076.png)
 
 Run the following command in the device's shell terminal:
 
@@ -605,7 +605,7 @@ There are four tabs at the top of System Settings: **<font style="color:#548DD4;
 #### System Settings
 System Settings lets you configure the platform name, company name, daily reboot time, and many other items. After changing a setting, a Save button appears next to the input field; click it to save.
 
-![](images_fcu3502_desktop22_en/img077.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img077.png)
 
 Platform Name: The title displayed above the username field on the login page and in the upper-left corner after login.
 
@@ -625,23 +625,23 @@ Local Alarm Retention: Disk Free Space 2 only deletes older alarm images and vid
 
 DingTalk Notification URL: After creating a group chat in DingTalk, open Group Settings and find the Bot option to add a bot:
 
-![](images_fcu3502_desktop22_en/img078.png) ![](images_fcu3502_desktop22_en/img079.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img078.png) ![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img079.png)
 
 Select Custom (connect a custom service via Webhook):
 
-![](images_fcu3502_desktop22_en/img080.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img080.png)
 
 Click Add:
 
-![](images_fcu3502_desktop22_en/img081.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img081.png)
 
 Set the bot name and keywords (you can also set an IP address range if you have a fixed public IP), check "I have read and agree to the Custom Bot Service and Disclaimer", then click Done:
 
-![](images_fcu3502_desktop22_en/img082.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img082.png)
 
 A Webhook address is generated. Click the Copy button next to it:
 
-![](images_fcu3502_desktop22_en/img083.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img083.png)
 
 Enter the copied address in DingTalk Notification URL and enable the DingTalk Notification toggle (colored) to receive notifications when an alarm occurs or Disk Free Space 1 is exceeded (1 message per minute, handled by alarm_notify).
 
@@ -649,17 +649,17 @@ Enable DingTalk Notification: A toggle switch; click to change its state and see
 
 WeCom Notification URL: Similar to DingTalk group notification settings, but the procedure differs and may vary with WeCom versions. First create a WeCom group chat (you are the group owner), click the three-dot icon in the upper-right of the group window, then click Message Push:
 
-![](images_fcu3502_desktop22_en/img084.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img084.png)
 
 
 
 In the Message Push Settings window, click Add:
 
-![](images_fcu3502_desktop22_en/img085.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img085.png)
 
 Enter a name, copy the Webhook address, and click Save (the icon and description can be customized or left unset):
 
-![](images_fcu3502_desktop22_en/img086.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img086.png)
 
 Set the copied Webhook address in WeCom Notification URL and enable the WeCom Notification toggle (colored) to receive notifications when an alarm occurs or Disk Free Space 1 is exceeded (1 message per minute, handled by alarm_notify).
 
@@ -669,7 +669,7 @@ Enable WeCom Notification: Enable (colored) this option for the WeCom Notificati
 
 Click the Export Configuration tab to open the export interface:
 
-![](images_fcu3502_desktop22_en/img087.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img087.png)
 
 Details of Export Configuration:
 
@@ -711,15 +711,15 @@ Select the configurations to export as needed, or keep the default Select All, t
 
 Procedure:
 
-![](images_fcu3502_desktop22_en/img088.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img088.png)
 
 Click the Import Configuration tab to open the import interface, then click "Select Backup File" to open the file dialog. Select an exported configuration (zip file) and click Open:
 
-![](images_fcu3502_desktop22_en/img089.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img089.png)
 
 You will see which items are included in the previously exported configuration file:
 
-![](images_fcu3502_desktop22_en/img090.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img090.png)
 
 If an item was deselected during export, it cannot be selected during import, as shown:
 
@@ -728,20 +728,20 @@ On the web interface, you can easily set the system time or configure NTP synchr
 
 For manual synchronization, simply click "Sync Local Time to System", as shown:
 
-![](images_fcu3502_desktop22_en/img091.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img091.png)
 
 If the device can access the Internet or a standard NTP server is deployed on the LAN, you can configure NTP synchronization, as shown:
 
-![](images_fcu3502_desktop22_en/img092.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img092.png)
 
 Be sure to enable the Enable Service option; otherwise the configuration only applies when you manually click Sync Now, and the backend webservice process will not synchronize periodically at the configured frequency (hours).
 
 #### 2.10.3 Cloud Platform
-![](images_fcu3502_desktop22_en/img093.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img093.png)
 
 Hover over the settings area to display a floating tooltip:
 
-![](images_fcu3502_desktop22_en/img094.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img094.png)
 
 Among these, Device Name, Cloud Platform SSH Port, and Push Alarms to Cloud Platform do not affect the device's MQTT communication with the cloud platform, so they can also be modified on the cloud platform side.
 
@@ -752,7 +752,7 @@ This system supports sending alarm announcements to "Danmai Paike" sound columns
 
 After receiving the speaker, ask customer service for a documentation link, install the software as described, and set the speaker's IP address so that it can be pinged from the AI system. Then open the Sound Column Settings page in the web interface:
 
-![](images_fcu3502_desktop22_en/img095.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img095.png)
 
 Set the sound column URL, enable the Enable button, and click Save. Once configured, the sound column announces alarms when they occur.
 
@@ -788,7 +788,7 @@ The watchdog can be set to application feeding or kernel feeding. When applicati
 
 If another application should feed the watchdog, disable application feeding here and manage it in that application instead.
 
-![](images_fcu3502_desktop22_en/img096.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img096.png)
 
 #### 2.10.6 GB28181 Configuration
 To support GB28181, ensure gb28181_encode is true in /web/bin/cfg/config.json.
@@ -797,7 +797,7 @@ Click System > GB28181 Configuration. The configuration includes two directions:
 
 **Pull Stream:** Supports pulling streams from cameras for inference and alarm determination. Configure the areas shown in the following screenshot:
 
-![](images_fcu3502_desktop22_en/img097.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img097.png)
 
 Server ID: A 20-digit code, of which the first 10 digits should be the server domain code.
 
@@ -811,13 +811,13 @@ Server Password: An access password; it can be left empty. Note that if some cam
 
 After the above configuration is set, configure the GB28181 parameters on all connected cameras. For example, the following is the GB28181 configuration of a camera (note that the UDP protocol must be selected; testing has shown that the TCP protocol of some cameras cannot establish communication with the server).
 
-![](images_fcu3502_desktop22_en/img098.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img098.png)
 
 **Push Stream:** Supports pushing locally captured video to the cloud.
 
 **<font style="color:#FF0000;">Note: This feature requires setting pusher_enable to true in /web/bin/cfg/config.json. Once set to true, live views cannot be viewed on the device's web management page; they can only be viewed through the cloud service receiving the pushed stream.</font>**
 
-![](images_fcu3502_desktop22_en/img099.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img099.png)
 
 All configuration items correspond one-to-one with those for stream pulling, except that "Upper-level" is prefixed to the parameter names. Configure these according to the upper-level server settings, just as the pull-stream settings are entered in the camera configuration.
 
@@ -829,46 +829,46 @@ Windows or Linux deployment URL: [https://www.easygbs.com/docs/down/user-guide#2
 
 After installing the server, open http://IP:10000/ and log in with username admin and password admin. Select Basic Configuration at the top of the page and enter the server IP (the IP through which cameras access the server).
 
-![](images_fcu3502_desktop22_en/img100.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img100.png)
 
 Then click GB28181 on the left and configure the SIP ID and other information. You may also keep all defaults, but this configuration must correspond one-to-one with the push-stream configuration described above.
 
 Once configured, the FCU device appears in the device list and you can preview the stream pushed from the FCU.
 
-![](images_fcu3502_desktop22_en/img101.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img101.png)
 
-![](images_fcu3502_desktop22_en/img102.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img102.png)
 
-![](images_fcu3502_desktop22_en/img103.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img103.png)
 
 #### 2.10.7 SSH Terminal
 The SSH Terminal page is used to log in to the device's SSH console with a password or private key.
 
-![](images_fcu3502_desktop22_en/img104.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img104.png)
 
 A successful login is shown below. Usage is identical to an SSH client, but transfer tools such as sz/rz are not supported (files cannot be transferred to the device).
 
-![](images_fcu3502_desktop22_en/img105.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img105.png)
 
 Tip: If the device will be exposed to the Internet, set a 16-character password mixing digits, upper- and lower-case letters, and punctuation to prevent brute-force attacks from external users (especially users in some other countries). Alternatively, disable password login and keep only SSH key certificate login.
 
 #### 2.10.8 Resource Usage
 The System Resources page displays system status by section, including system information, resource consumption, wired network, wireless network, and CPU usage monitoring.
 
-![](images_fcu3502_desktop22_en/img106.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img106.png)
 
 The CPU/NPU/RGA usage curves update periodically, so by staying on the page long enough you can observe resource usage fluctuations over that period.
 
-![](images_fcu3502_desktop22_en/img107.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img107.png)
 
 #### 2.10.9 EMMC Monitoring
 Because most devices use EMMC storage, it is necessary to enable Health Monitoring in EMMC Monitoring. Configure as follows:
 
-![](images_fcu3502_desktop22_en/img108.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img108.png)
 
 Once Health Monitoring is enabled, webservice calls mmcinfo once daily to check the configured device node. This page shows MMC read/write information and wear.
 
-![](images_fcu3502_desktop22_en/img109.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img109.png)
 
 The most important values are the average erase count and the remaining erase count (industry default is 3000). The excess count is estimated based on the default service life. If the excess count keeps growing, the EMMC usage will not reach the currently configured service life.
 
@@ -876,12 +876,12 @@ The most important values are the average erase count and the remaining erase co
 #### 2.11.1 Application Logs
 Application Logs shows all files in the /web/bin/log directory, which by default stores logs for appwatching, applogging, and Wi-Fi connections.
 
-![](images_fcu3502_desktop22_en/img110.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img110.png)
 
 #### 2.11.2 Operation Logs
 Operation Logs records key operations performed by users through the web interface. Delete and Clear functions are supported.
 
-![](images_fcu3502_desktop22_en/img111.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_fldesktop22_04_algorithm_user_manual-en/img111.png)
 
 
 

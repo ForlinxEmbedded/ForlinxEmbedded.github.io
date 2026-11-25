@@ -19,42 +19,42 @@ Virtual machine installation is demonstrated using VMware Workstation 15 Pro v15
 #### 1.2.1 Downloading and Purchasing VMware Software
 Visit VMware's official global website https://www.vmware.com/ to download to download Workstation Pro and obtain the product key. VMware is paid software that must be purchased, or you can use the trial version provided by VMware.
 
-![Image](1719209495299_799ee221_9dff_4815_b8d3_a685b32f971b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209495299_799ee221_9dff_4815_b8d3_a685b32f971b.png)
 
 After the download completes, double-click the executable file to launch the installer.
 
 #### 1.2.2 Installing VMware Software
 Double-click the installer to open the installation wizard.
 
-![Image](1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209495516_2577c76e_b873_4413_bd12_9cdb9bb35cd1.png)
 
 Click "Next".
 
-![Image](1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209495744_b2803b4e_0808_49a0_a39c_37b0e1bb062e.png)
 
 Select "I accept the terms in the license agreement" and click "Next".
 
-![Image](1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209495901_47b073cf_6bcf_4610_9da4_eabfb0dcd192.png)
 
 Change the installation location to the partition where you install software on your computer, then click "Next".
 
-![Image](1719209496107_e2d70089_70d9_4c62_a773_15c510eb170d.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209496107_e2d70089_70d9_4c62_a773_15c510eb170d.png)
 
 Select the option and click "Next".
 
-![Image](1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209496313_08157317_dbf5_40e0_a9cf_610e2526d95f.png)
 
 Select to add shortcuts and click "Next".
 
-![Image](1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209496500_20204188_b425_4016_b17c_de930587ae2e.png)
 
 Click "Install".
 
-![Image](1719209496717_f6f5d128_1585_41b0_83a6_c9bec52d7d15.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209496717_f6f5d128_1585_41b0_83a6_c9bec52d7d15.png)
 
 Wait for the installation to complete.
 
-![Image](1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719209497041_1df7c12a_752d_4fa8_9730_2a07c6cafa98.png)
 
 After installation, click "Finish" to start the trial. For long-term use, purchase a license from the official website and enter the license key.
 
@@ -70,29 +70,29 @@ First, download the development environment provided by Forlinx. The development
 
 Select the archives and extract them together:
 
-![](images_fcu3502_desktop22_en/img146.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img146.png)
 
 After extraction, a "3568 Standard Environment" folder appears. The .vmx file is the file to open for the virtual machine.
 
-![](images_fcu3502_desktop22_en/img147.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img147.png)
 
 Open the virtual machine and select the extracted 3568.vmx:
 
-![Image](1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719278548894_5a126d86_d30f_4f1c_906b_1d615fdf2e0a.png)
 
 After loading, click "Start this virtual machine" to run it and enter the system interface.
 
-![Image](1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719278535587_6fcfdee5_51f1_4e1c_9906_d39fc0048711.png)
 
-![Image](1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/1719278549304_2128d94e_45fa_4091_83c8_678157602b7b.png)
 
 The account for the provided development environment is forlinx and the password is forlinx. After entering the password, select Sign in to log in.
 
-![](images_fcu3502_desktop22_en/img151.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img151.png)
 
 After logging in successfully.
 
-![](images_fcu3502_desktop22_en/img152.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img152.png)
 
 ## 2. FCU3502 Linux Application Compilation
 ### 2.1 Configuring the Application Compilation Environment
@@ -124,7 +124,7 @@ forlinx@ubuntu:~/work/toolchain/host$ source ./environment-setup
 
 The environment variables related to the cross-compilation toolchain are now automatically configured in the current terminal. You can use the env command to view them.
 
-![](images_fcu3502_desktop22_en/img153.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img153.png)
 
 **Note: A terminal with configured environment variables cannot be used to build the full source code; doing so will cause errors. Open a new terminal to build the full source code!**
 
@@ -195,15 +195,15 @@ Unpacking tool path:
 
 Extract Image_pack_tools.rar as shown below
 
-![](images_fcu3502_desktop22_en/img154.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img154.png)
 
 Then copy these files to the working directory in the virtual machine
 
-![](image.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/image.png)
 
 Copy the flashing image update.img to this directory, or to any path
 
-![](image-1795591553866.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/image_1795591553866.png)
 
 Run the following command:
 
@@ -211,7 +211,7 @@ Run the following command:
 ./myunpack.sh ./update.img
 ```
 
-![](images_fcu3502_desktop22_en/img157.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img157.png)
 
 Unpack completed successfully. Files are in: Image indicates a successful unpack.
 
@@ -219,26 +219,26 @@ Unpack completed successfully. Files are in: Image indicates a successful unpack
 
 After unpacking, an Image directory is created in the working directory, and the unpacked component packages are also stored there.
 
-![](image-1795591569182.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/image_1795591569182.png)
 
 The unpacking is now complete.
 
 ### 3.2 Mounting the Root Filesystem
 Create a rootfs mount point in the working directory
 
-![](image-1795591582725.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/image_1795591582725.png)
 
 Perform the mount with sudo privileges. If using the virtual machine provided by Forlinx, the password is forlinx.
 
-![](images_fcu3502_desktop22_en/img160.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img160.png)
 
 After a successful mount, a mounted disk appears on the desktop, and you can also verify it with ls.
 
-![](images_fcu3502_desktop22_en/img161.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img161.png)
 
 Enter rootfs and view its contents. You can manually update or replace applications as needed.
 
-![](images_fcu3502_desktop22_en/img162.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img162.png)
 
 The root filesystem is now mounted.
 
@@ -247,19 +247,19 @@ This example demonstrates how to add an application. First, write the applicatio
 
 Take the application hello.c as an example:
 
-![](images_fcu3502_desktop22_en/img163.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img163.png)
 
 Configure the cross-compilation toolchain in the current terminal. For details, refer to the cross-compilation toolchain configuration in section 3.3;
 
-![](images_fcu3502_desktop22_en/img164.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img164.png)
 
 Compile the application by running $CC hello.c in the current terminal. By default, this generates an executable named a.out.
 
-![](images_fcu3502_desktop22_en/img165.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img165.png)
 
 Copy a.out to the filesystem mount path, that is, the system root directory. You can add it to a specific path as needed.
 
-![](images_fcu3502_desktop22_en/img166.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img166.png)
 
 The application is now added.
 
@@ -268,7 +268,7 @@ After completing **updates, modifications, replacements, and additions** to appl
 
 Run sudo  umount  ./rootfs ;
 
-![](images_fcu3502_desktop22_en/img167.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img167.png)
 
 The root filesystem is now unmounted.
 
@@ -277,7 +277,7 @@ This step is the reverse of unpacking. It packages the unpacked component packag
 
 Run ./mymkupdate.sh -o ./undate-v2.img; the -o option specifies the filename of the generated image.
 
-![](images_fcu3502_desktop22_en/img168.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img168.png)
 
 Successfully generated: ./undate-v2.img indicates that the undate-v2.img image was successfully created.
 
@@ -285,7 +285,7 @@ The new image file is now ready for direct flashing. For detailed flashing steps
 
 After flashing, restart the system for verification. The a.out executable is visible in the root directory and runs as expected.
 
-![](images_fcu3502_desktop22_en/img169.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img169.png)
 
 The filesystem application update verification is now complete.
 
@@ -301,11 +301,11 @@ Qt is a cross-platform graphical development library that supports many operatin
 
 - For Compiler Path, click Browse and select the cross-compiler paths: arm-buildroot-linux-gnueabihf-gc and arm-buildroot-linux-gnueabihf-g++, as shown below:
 
-![](images_fcu3502_desktop22_en/img170.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img170.png)
 
 Add the GCC compiler in the same way by clicking "Add -> GCC -> C++" on the right, as shown below:
 
-![](images_fcu3502_desktop22_en/img171.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img171.png)
 
 ### 4.2 Qt Versions Configuration
 - In Qt Creator, click Tools -> Options -> Qt Versions, 
@@ -314,7 +314,7 @@ Add the GCC compiler in the same way by clicking "Add -> GCC -> C++" on the righ
 
 - Click Open to add it.
 
-![](images_fcu3502_desktop22_en/img172.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img172.png)
 
 - You will return to the Qt Version configuration dialog. You can change the Version name as needed.
 
@@ -331,7 +331,7 @@ A Kit is a build suite used to build and select the development and compilation 
 
 - For Qt version, select the name you entered when creating the Qt version.
 
-![](images_fcu3502_desktop22_en/img173.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img173.png)
 
 - Then click Apply and OK.
 
@@ -386,17 +386,17 @@ After rebooting, query via the command line. Both the device hardware version an
 rkmm-smi info
 ```
 
-![](images_fcu3502_desktop22_en/img175.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img175.png)
 
 ```plain
 rknn-smi --version
 ```
 
-![](images_fcu3502_desktop22_en/img176.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img176.png)
 
 You can now proceed to deploy large models such as QWEN3.5.
 
-![](images_fcu3502_desktop22_en/img177.png)
+![Image](https://www.forlinx.net/docs_assets/images/platform/embedded-pc/fcu3502/fcu3502_application_update_manual_fldesktop22.04/img177.png)
 
 
 
