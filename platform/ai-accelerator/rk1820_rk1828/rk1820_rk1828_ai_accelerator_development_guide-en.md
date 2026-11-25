@@ -1,4 +1,4 @@
-# AI Accelerator Development Guide
+# AI Accelerator Development Guide_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 

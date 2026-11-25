@@ -1,4 +1,4 @@
-# Driver and Firmware Installation Guide_V1.0
+# Driver and Firmware Installation Guide_V1.1
 
 Document classification: □ Top secret □ Secret □ Internal information ■ Open
 
