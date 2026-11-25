@@ -24,22 +24,22 @@ This procedure was tested and verified on the OK3588-C platform. Users of the OK
 
 Required materials: one OK3588-C V1.3 development board, one RK182X AI accelerator card, one M.2 adapter board, two 12V/3A power adapters, one GH1.25-4P to DC-022B cable, and one M2 pan-head screw, as shown below:
 
-![](images_rk182x_en/img002.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_assembly_power_on_guide-en/img002.jpg)
 
 Insert the GH1.25 end of the cable into the RK182X AI accelerator card, as shown below:
 
-![](images_rk182x_en/img003.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_assembly_power_on_guide-en/img003.jpg)
 
 Insert the RK182X AI accelerator card into the M.2 adapter board and secure it with the M2 pan-head screw, as shown below:
 
-![](images_rk182x_en/img004.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_assembly_power_on_guide-en/img004.jpg)
 
 Insert the entire RK182X AI accelerator card module into the PCIE X1 slot on the OK3588-C V1.3 development board, as shown below:
 
-![](images_rk182x_en/img005.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_assembly_power_on_guide-en/img005.jpg)
 
 Connect the two power adapters to the DC-022B end of the cable and the DC005 socket on the OK3588-C V1.3 development board, respectively, as shown below:
 
-![](images_rk182x_en/img006.jpg)
+![Image](https://www.forlinx.net/docs_assets/images/platform/ai-accelerator/rk1820_rk1828/rk182x_assembly_power_on_guide-en/img006.jpg)
 
 Power on both the development board and the AI accelerator card. Power up the RK182X AI accelerator card first, then toggle on the power switch of the OK3588-C V1.3 development board. This completes the full assembly and proper power-on sequence for the RK182X AI accelerator card.
