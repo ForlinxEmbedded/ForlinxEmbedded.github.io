@@ -19,7 +19,6 @@ HARDWARE
    :maxdepth: 2
 
    rk182x_assembly_power_on_guide-en
-
    
 
 
