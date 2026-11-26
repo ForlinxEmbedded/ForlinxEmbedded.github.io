@@ -4,7 +4,7 @@ Document classification: □ Top secret □ Secret □ Internal information ■ 
 
 ## Copyright
 
-The copyright of this manual belongs to Baoding Folinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
+The copyright of this manual belongs to Baoding Forlinx Embedded Technology Co., Ltd. Without the written permission of our company, no organizations or individuals have the right to copy, distribute, or reproduce any part of this manual in any form, and violators will be held legally responsible.
 
 Forlinx adheres to copyrights of all graphics and texts used in all publications in original or license-free forms. 
 
@@ -30,11 +30,11 @@ This software manual is applicable to the OKA40i platform Linux 5.10 operating s
 ## Revision History
 
 | Date| User Manual Version| Revision History|
-   |----------|:----------:|----------|
-   | 15/04/2025| V1.0| OKA40i\_Linux5.10.149+Qt5.15.8\_User’s Compilation Manual Initial Version|
-   | 07/11/2023 | V1.1| 1\. Modifying the path of common source code files;<br/> 2. Adding a separate compilation method for the application;<br/> 3. Adding an adding method for the application. |
-   | 21/03/2024| V1.2| 1\. Modifying the compilation description and code path; <br/> 2. Canceling the./build. sh. config selection configuration step. |
-   | 19/06/2024 | V1.3| 1. Replacing some pictures in the manual;<br/> 2. Correcting the layout of the manual. |
+|----------|:----------:|----------|
+| 15/04/2025| V1.0| OKA40i\_Linux5.10.149+Qt5.15.8\_User’s Compilation Manual Initial Version|
+| 07/11/2023 | V1.1| 1\. Modifying the path of common source code files;<br/> 2. Adding a separate compilation method for the application;<br/> 3. Adding an adding method for the application. |
+| 21/03/2024| V1.2| 1\. Modifying the compilation description and code path; <br/> 2. Canceling the./build. sh. config selection configuration step. |
+| 19/06/2024 | V1.3| 1. Replacing some pictures in the manual;<br/> 2. Correcting the layout of the manual. |
 
 
 ## 1\. VMware Virtual Machine Software Installation
